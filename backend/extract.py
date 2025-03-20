@@ -10,10 +10,46 @@ from data_io import read_all_meta_data
 API_KEY = "586b36330a8d459fbd4cae2459a1da29.OFoMugBBw7H2RA7M"  # 替换为你的 API key
 client = ZhipuAI(api_key=API_KEY)
 
+# 读取示例文件
+def load_example():
+    """加载示例文件作为 in-context learning 例子"""
+    example_path = "backend/examples/01.json"
+    try:
+        with open(example_path, "r") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Warning: Could not load example file: {e}")
+        return None
+
 def extract_paper_info(title, abstract):
     """使用智谱 API 从论文标题和摘要中提取关键信息"""
+    # 加载示例
+    example = load_example()
+    
+    # 构建包含示例的提示词
+    example_prompt = ""
+    if example:
+        example_prompt = f"""
+        示例论文:
+        标题: {example['title']}
+        摘要: {example['abstract']}
+        
+        提取结果:
+        {{
+            "code_links": "{example.get('Code links', 'None')}",
+            "tasks": {json.dumps(example.get('Tasks', ['None']), ensure_ascii=False)},
+            "datasets": {json.dumps(example.get('Datasets', ['None']), ensure_ascii=False)},
+            "methods": {json.dumps(example.get('Methods', ['None']), ensure_ascii=False)},
+            "results": {json.dumps(example.get('Results', ['None']), ensure_ascii=False)}
+        }}
+        
+        现在，请你以相同的格式分析下面这篇论文:
+        """
+    
     prompt = f"""
-    请从以下论文的标题和摘要中提取以下关键信息：
+    请从论文的标题和摘要中提取关键信息：
+
+    {example_prompt}
     
     标题: {title}
     摘要: {abstract}
@@ -26,7 +62,7 @@ def extract_paper_info(title, abstract):
     5. Results: 关键结果和指标，例如 "BLEU: 56.7"
     
     请使用简洁的术语或短语回答，不要有冗余描述。如果某一项信息不存在，请标记为"None"。
-    以JSON格式返回结果。
+    以JSON格式返回结果，确保每个字段都是列表形式。
     """
     
     try:
@@ -51,20 +87,20 @@ def extract_paper_info(title, abstract):
                 # 如果找不到 JSON，则手动构建结构
                 result = {
                     "code_links": "None",
-                    "tasks": "None",
-                    "datasets": "None",
-                    "methods": "None",
-                    "results": "None",
+                    "tasks": ["None"],
+                    "datasets": ["None"],
+                    "methods": ["None"],
+                    "results": ["None"],
                     "raw_response": content
                 }
         except json.JSONDecodeError:
             # 如果 JSON 解析失败，则手动构建结构
             result = {
                 "code_links": "None",
-                "tasks": "None",
-                "datasets": "None",
-                "methods": "None",
-                "results": "None",
+                "tasks": ["None"],
+                "datasets": ["None"],
+                "methods": ["None"],
+                "results": ["None"],
                 "raw_response": content
             }
             
@@ -73,10 +109,10 @@ def extract_paper_info(title, abstract):
         print(f"Error extracting information: {e}")
         return {
             "code_links": "None",
-            "tasks": "None",
-            "datasets": "None", 
-            "methods": "None",
-            "results": "None",
+            "tasks": ["None"],
+            "datasets": ["None"], 
+            "methods": ["None"],
+            "results": ["None"],
             "error": str(e)
         }
 

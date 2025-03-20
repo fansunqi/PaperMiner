@@ -1,9 +1,25 @@
 {
-  "Code links": "None",
-  "Tasks": "Convergence Properties of Optimal AdaBoost",
-  "Datasets": "high dimensional real-world datasets",
-  "Methods": "Optimal AdaBoost, Dynamical System, Ergodic Theory",
-  "Results": "Almost universal existence of time averages, Convergence of classifier, generalization error, margins, Ergodic dynamical system, Cycling behavior",
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "AdaBoost Convergence Analysis"
+  ],
+  "datasets": [
+    "high dimensional real-world datasets"
+  ],
+  "methods": [
+    "Optimal AdaBoost as a dynamical system",
+    "ergodic theory",
+    "constructive proofs of approximations",
+    "ergodic dynamical system analysis"
+  ],
+  "results": [
+    "almost universal existence of time averages",
+    "convergence of classifier, generalization error, and margins",
+    "evidence for AdaBoost cycling and being an ergodic dynamical system",
+    "quick stabilization of time averages"
+  ],
   "paper_id": "5c610804da56297340b23f2f",
   "title": "On the Convergence Properties of Optimal AdaBoost",
   "abstract": "  AdaBoost is one of the most popular ML algorithms. It is simple to implement and often found very effective by practitioners, while still being mathematically elegant and theoretically sound. AdaBoost's interesting behavior in practice still puzzles the ML community. We address the algorithm's stability and establish multiple convergence properties of \"Optimal AdaBoost,\" a term coined by Rudin, Daubechies, and Schapire in 2004. We prove, in a reasonably strong computational sense, the almost universal existence of time averages, and with that, the convergence of the classifier itself, its generalization error, and its resulting margins, among many other objects, for fixed data sets under arguably reasonable conditions. Specifically, we frame Optimal AdaBoost as a dynamical system and, employing tools from ergodic theory, prove that, under a condition that Optimal AdaBoost does not have ties for best weak classifier eventually, a condition for which we provide empirical evidence from high dimensional real-world datasets, the algorithm's update behaves like a continuous map. We provide constructive proofs of several arbitrarily accurate approximations of Optimal AdaBoost; prove that they exhibit certain cycling behavior in finite time, and that the resulting dynamical system is ergodic; and establish sufficient conditions for the same to hold for the actual Optimal-AdaBoost update. We believe that our results provide reasonably strong evidence for the affirmative answer to two open conjectures, at least from a broad computational-theory perspective: AdaBoost always cycles and is an ergodic dynamical system. We present empirical evidence that cycles are hard to detect while time averages stabilize quickly. Our results ground future convergence-rate analysis and may help optimize generalization ability and alleviate a practitioner's burden of deciding how long to run the algorithm. "
