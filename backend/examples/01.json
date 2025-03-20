@@ -1,0 +1,19 @@
+{
+    "title": "Agentic Keyframe Search for Video Question Answering",
+    "abstract": "Video question answering (VideoQA) enables machines to extract and comprehend key information from videos through natural language interaction, which is a critical step towards achieving intelligence. However, the demand for a thorough understanding of videos and high computational costs still limit the widespread applications of VideoQA. To address it, we propose Agentic Keyframe Search (AKEYS), a simple yet powerful algorithm for identifying keyframes in the VideoQA task. It can effectively distinguish key information from redundant, irrelevant content by leveraging modern language agents to direct classical search algorithms. Specifically, we first segment the video and organize it as a tree structure. Then, AKEYS uses a language agent to estimate heuristics and movement costs while dynamically expanding nodes. Finally, the agent determines if sufficient keyframes have been collected based on termination conditions and provides answers. Extensive experiments on the EgoSchema and NExT-QA datasets show that AKEYS outperforms all previous methods with the highest keyframe searching efficiency, which means it can accurately identify key information and conduct effective visual reasoning with minimal computational overhead. For example, on the EgoSchema subset, it achieves 1.8% higher accuracy while processing only 43.5% of the frames compared to VideoTree. We believe that AKEYS represents a significant step towards building intelligent agents for video understanding. The code is publicly available at https://github.com/fansunqi/AKeyS.",
+    "Code links": "https://github.com/fansunqi/AKeyS",
+    "Tasks": [
+        "Video question answering"
+    ],
+    "Datasets": [
+        "EgoSchema",
+        "NExT-QA"
+    ],
+    "Methods": [
+        "Agentic Keyframe Search. It uses a language agent to estimate costs while dynamically expanding nodes."
+    ],
+    "Results": [
+        "AKeyS outperforms all previous methods with the highest keyframe searching efficiency",
+        "On the EgoSchema subset, it achieves 1.8% higher accuracy while processing only 43.5% of the frames compared to VideoTree",
+    ]
+}
