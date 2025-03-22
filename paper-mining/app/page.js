@@ -21,22 +21,36 @@ export default function Home() {
       })
       .catch((error) => console.error("API 请求失败:", error));
   }, []);
+  
 
-  // 解析数学公式（仅 $$...$$ 内的内容）
   const renderMath = (text) => {
     if (!text) return null;
-    return text.split(/(\$\$.*?\$\$)/g).map((part, index) => {
+  
+    // 正则表达式：匹配块级公式和内联公式
+    const regex = /(\$\$.*?\$\$|\$.*?\$)/g;
+  
+    return text.split(regex).map((part, index) => {
+      // 处理块级公式
       if (part.startsWith("$$") && part.endsWith("$$")) {
-        return <MathJax key={index} className="block text-center">{part}</MathJax>; // 居中渲染数学公式
-      } else {
-        return part; // 其余文本保持原样
+        return <MathJax key={index} className="math-block">{part}</MathJax>; // 块级公式
+      }
+      // 处理内联公式
+      else if (part.startsWith("$") && part.endsWith("$")) {
+        return <MathJax key={index} className="math-inline">{part}</MathJax>; // 内联公式
+      }
+      // 处理非公式文本
+      else {
+        return part;
       }
     });
   };
+  
 
   // 切换摘要的展开/收起状态
   const toggleAbstract = (paperId) => {
-    setExpandedAbstract(prevState => (prevState === paperId ? null : paperId));
+    setExpandedAbstract(prevState => {
+      return prevState === paperId ? null : paperId; // 如果点击的是已展开的摘要，则收起它，否则展开
+    });
   };
 
   return (
@@ -95,10 +109,9 @@ export default function Home() {
                     <span className="mr-2">📜</span> 摘要:
                   </span>
                   <p className="text-gray-600 mt-2 leading-relaxed">
-                    {renderMath(
-                      expandedAbstract === paper.paper_id
-                        ? paper.abstract || "暂无摘要"
-                        : (paper.abstract?.substring(0, 150) || "暂无摘要") + "..."
+                    {renderMath(expandedAbstract === paper.paper_id 
+                      ? paper.abstract || "暂无摘要"
+                      : (paper.abstract?.substring(0, 150) || "暂无摘要") + "..."
                     )}
                   </p>
                   {/* 摘要展开按钮 */}
