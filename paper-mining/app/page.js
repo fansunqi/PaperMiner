@@ -55,11 +55,14 @@ export default function Home() {
                     { icon: "📊", label: "数据集", value: paper.datasets?.join(", ") || "无数据集" },
                     { icon: "📈", label: "实验结果", value: paper.results?.join("; ") || "无实验结果" }
                   ].map(({ icon, label, value }, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <span className="flex-shrink-0 text-lg font-medium text-gray-700">{icon}</span>
-                      <div>
-                        <span className="text-sm text-gray-500">{label}:</span>
-                        <p className="text-gray-600 mt-1">{renderMath(value)}</p>
+                    <div key={index} className="flex flex-col space-y-2">
+                      <span className="text-lg font-medium text-gray-700">{icon} {label}:</span>
+                      <div className="flex flex-wrap gap-2">
+                        {value.split(",").map((item, index) => (
+                          <span key={index} className="px-4 py-2 bg-blue-100 text-blue-800 text-sm rounded-full">
+                            {renderMath(item.trim())}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   ))}
