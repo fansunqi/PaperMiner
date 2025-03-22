@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <MathJaxContext config={{ tex: { displayMath: [["$$", "$$"]], inlineMath: [["$", "$"]] } }}>
-      <div className="container mx-auto px-6 py-10">
+      <div className="container mx-auto px-6 py-12">
         <h1 className="text-5xl font-extrabold text-center mb-12 text-gray-900">📚 论文列表</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,35 +43,36 @@ export default function Home() {
             const codeLinks = Array.isArray(paper.code_links) ? paper.code_links : [];
 
             return (
-              <div key={paper.paper_id ?? Math.random()} className="bg-white shadow-md hover:shadow-xl transition-shadow duration-300 rounded-lg p-6 border border-gray-200">
+              <div key={paper.paper_id ?? Math.random()} className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-8 border border-gray-200">
                 {/* 论文标题 */}
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">{paper.title ?? "未知标题"}</h2>
+                <h2 className="text-3xl font-semibold text-gray-900 mb-6">{paper.title ?? "未知标题"}</h2>
 
                 {/* 研究信息 */}
-                <div className="space-y-2">
+                <div className="space-y-4">
                   {[
                     { icon: "🔍", label: "研究任务", value: paper.tasks?.join(", ") || "无任务" },
                     { icon: "🛠", label: "研究方法", value: paper.methods?.join(", ") || "无方法" },
                     { icon: "📊", label: "数据集", value: paper.datasets?.join(", ") || "无数据集" },
                     { icon: "📈", label: "实验结果", value: paper.results?.join("; ") || "无实验结果" }
                   ].map(({ icon, label, value }, index) => (
-                    <div key={index} className="flex items-start">
-                      <span className="flex-shrink-0 w-24 font-medium text-gray-700 flex items-center">
-                        <span className="mr-2">{icon}</span> {label}:
-                      </span>
-                      <span className="text-gray-600 flex-1">{renderMath(value)}</span>
+                    <div key={index} className="flex items-start space-x-3">
+                      <span className="flex-shrink-0 text-lg font-medium text-gray-700">{icon}</span>
+                      <div>
+                        <span className="text-sm text-gray-500">{label}:</span>
+                        <p className="text-gray-600 mt-1">{renderMath(value)}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
 
                 {/* 代码链接 */}
                 {codeLinks.length > 0 && codeLinks[0] !== "None" && (
-                  <div className="mt-4 mb-4 flex items-center">
-                    <span className="flex-shrink-0 w-24 font-medium text-gray-700">💻 代码链接:</span>
-                    <div className="flex space-x-2">
+                  <div className="mt-6 flex items-center space-x-4">
+                    <span className="flex-shrink-0 text-lg font-medium text-gray-700">💻 代码链接:</span>
+                    <div className="flex space-x-3">
                       {codeLinks.map((link, index) => (
                         <a key={index} href={link} target="_blank" rel="noopener noreferrer"
-                          className="px-3 py-1 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition duration-200">
+                          className="px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition duration-200">
                           🔗 Link {index + 1}
                         </a>
                       ))}
@@ -80,17 +81,17 @@ export default function Home() {
                 )}
 
                 {/* 摘要 */}
-                <div className="mt-4">
-                  <span className="flex-shrink-0 w-24 font-medium text-gray-700 flex items-center">
+                <div className="mt-6">
+                  <span className="text-lg font-medium text-gray-700 flex items-center">
                     <span className="mr-2">📜</span> 摘要:
                   </span>
-                  <p className="text-gray-600 leading-relaxed mt-1">
+                  <p className="text-gray-600 mt-2 leading-relaxed">
                     {renderMath(paper.abstract?.substring(0, 150) || "暂无摘要")}...
                   </p>
                 </div>
 
                 {/* 详情按钮 */}
-                <a href={`/paper/${paper.paper_id}`} className="mt-4 block text-center px-4 py-2 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
+                <a href={`/paper/${paper.paper_id}`} className="mt-6 block text-center px-6 py-3 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
                   📖 查看详情 →
                 </a>
               </div>
