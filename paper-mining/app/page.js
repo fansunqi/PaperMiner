@@ -1,6 +1,7 @@
 "use client"; // 让 Next.js 运行在客户端
 
 import { useState, useEffect } from "react";
+import '../src/app/globals.css';
 
 export default function Home() {
   const [papers, setPapers] = useState([]);
