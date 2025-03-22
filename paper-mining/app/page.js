@@ -46,31 +46,31 @@ export default function Home() {
             return (
               <div key={paper.paper_id ?? Math.random()} className="bg-white shadow-lg rounded-xl p-6 border">
                 {/* 论文标题 */}
-                <h2 className="text-2xl font-semibold text-gray-900">{paper.title ?? "未知标题"}</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">{paper.title ?? "未知标题"}</h2>
 
                 {/* 研究任务 */}
-                <p className="text-gray-600 mt-2">
+                <p className="text-gray-600 leading-relaxed mb-3">
                   <strong className="text-gray-800">🔍 研究任务:</strong> {renderMath(paper.tasks?.join(", ") || "无任务")}
                 </p>
 
                 {/* 研究方法 */}
-                <p className="text-gray-600">
+                <p className="text-gray-600 leading-relaxed mb-3">
                   <strong className="text-gray-800">🛠️ 研究方法:</strong> {renderMath(paper.methods?.join(", ") || "无方法")}
                 </p>
 
                 {/* 数据集 */}
-                <p className="text-gray-600">
+                <p className="text-gray-600 leading-relaxed mb-3">
                   <strong className="text-gray-800">📊 数据集:</strong> {renderMath(paper.datasets?.join(", ") || "无数据集")}
                 </p>
 
                 {/* 实验结果 */}
-                <p className="text-gray-600">
+                <p className="text-gray-600 leading-relaxed mb-3">
                   <strong className="text-gray-800">📈 实验结果:</strong> {renderMath(paper.results?.join("; ") || "无实验结果")}
                 </p>
 
                 {/* 代码链接 */}
                 {codeLinks.length > 0 && codeLinks[0] !== "None" && (
-                  <div className="mt-3">
+                  <div className="mt-3 mb-3">
                     <strong className="text-gray-800">💻 代码链接:</strong>{" "}
                     {codeLinks.map((link, index) => (
                       <a
@@ -87,7 +87,7 @@ export default function Home() {
                 )}
 
                 {/* 摘要（自动解析 $$ 数学公式） */}
-                <p className="text-gray-600 mt-3">
+                <p className="text-gray-600 leading-relaxed mb-3">
                   <strong className="text-gray-800">📜 摘要:</strong> {renderMath(paper.abstract?.substring(0, 150) || "暂无摘要")}...
                 </p>
 
