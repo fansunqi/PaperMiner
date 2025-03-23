@@ -10,7 +10,7 @@ const MathJax = dynamic(() => import("better-react-mathjax").then(mod => mod.Mat
 
 export default function Home() {
   const [papers, setPapers] = useState([]);
-  const [expandedAbstract, setExpandedAbstract] = useState(null); // 追踪哪个论文的摘要被展开
+  const [expandedAbstracts, setExpandedAbstracts] = useState([]); // 追踪哪些论文的摘要被展开
   const [selectedTab, setSelectedTab] = useState("metadata"); // 追踪当前选中的标签
   const API_URL = "http://localhost:8000/papers/"; // 后端 API 地址
 
@@ -50,8 +50,14 @@ export default function Home() {
 
   // 切换摘要的展开/收起状态
   const toggleAbstract = (paperId) => {
-    setExpandedAbstract(prevState => {
-      return prevState === paperId ? null : paperId; // 如果点击的是已展开的摘要，则收起它，否则展开
+    setExpandedAbstracts(prevState => {
+      if (prevState.includes(paperId)) {
+        // 如果摘要已展开，则收起它
+        return prevState.filter(id => id !== paperId);
+      } else {
+        // 如果摘要未展开，则展开它
+        return [...prevState, paperId];
+      }
     });
   };
 
@@ -131,7 +137,7 @@ export default function Home() {
                     <span className="mr-2">📜</span> 摘要:
                   </span>
                   <p className="text-gray-600 mt-2 leading-relaxed">
-                    {renderMath(expandedAbstract === paper.paper_id 
+                    {renderMath(expandedAbstracts.includes(paper.paper_id) 
                       ? paper.abstract || "暂无摘要"
                       : (paper.abstract?.substring(0, 150) || "暂无摘要") + "..."
                     )}
@@ -141,7 +147,7 @@ export default function Home() {
                     onClick={() => toggleAbstract(paper.paper_id)}
                     className="text-blue-500 hover:underline mt-2"
                   >
-                    {expandedAbstract === paper.paper_id ? "收起摘要" : "展开摘要"}
+                    {expandedAbstracts.includes(paper.paper_id) ? "收起摘要" : "展开摘要"}
                   </button>
                 </div>
 
