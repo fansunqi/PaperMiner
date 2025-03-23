@@ -39,29 +39,28 @@ def read_all_meta_data():
         data += read_json_file(file_path)
     return data
 
-def extract_title_and_abstract_from_pdf(pdf_path):
+def extract_abstract_from_pdf(pdf_path):
     import fitz
     import re
-    doc = fitz.open(pdf_path)
-    text = doc[0].get_text("text")  # 获取第一页文本
     
-    lines = text.split("\n")
-    title = lines[0].strip() if lines else None
-
-    text = " ".join(doc[0].get_text("text").split())  # 获取第一页文本，去掉多余空格
+    try:
+        doc = fitz.open(pdf_path)
+        text = " ".join(doc[0].get_text("text").split())  # 获取第一页文本，去掉多余空格
+        # 尝试找到 "Abstract" 关键字
+        match = re.search(r"(?i)\babstract\b[:\s]?", text)
     
-    # 尝试找到 "Abstract" 关键字
-    match = re.search(r"(?i)\babstract\b[:\s]?", text)
+        if match:
+            abstract = text[match.end():].strip()  # Abstract 之后作为摘要
+            abstract = re.split(r"\n{2,}|\.\s{2,}", abstract)[0]  
+        else:
+            sentences = re.split(r"(?<=[.!?])\s+", text)  
+            abstract = " ".join(sentences[1:]) if len(sentences) > 1 else None
     
-    if match:
-        abstract = text[match.end():].strip()  # Abstract 之后作为摘要
-        abstract = re.split(r"\n{2,}|\.\s{2,}", abstract)[0]  
-    else:
-        # sentences = re.split(r"(?<=[.!?])\s+", text)  
-        # abstract = " ".join(sentences[1:]) if len(sentences) > 1 else "Unknown Abstract"
-        abstract = None
+    except Exception as e:
+        print(f"Error extracting abstract: {e}")
+        return None
     
-    return title, abstract
+    return abstract
 
 
 if __name__ == '__main__':

@@ -3,6 +3,13 @@
 python3 -m venv pm_env
 source pm_env/bin/activate
 ```
+
+or
+
+```
+conda create --name pm python=3.9
+conda activate pm
+```
 提取信息：
 ```
 python backend/extract.py
