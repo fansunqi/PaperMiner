@@ -10,6 +10,7 @@ from data_io import read_all_meta_data
 API_KEY = "586b36330a8d459fbd4cae2459a1da29.OFoMugBBw7H2RA7M"  # 替换为你的 API key
 client = ZhipuAI(api_key=API_KEY)
 
+
 # 读取示例文件
 def load_example():
     """加载示例文件作为 in-context learning 例子"""
@@ -21,36 +22,37 @@ def load_example():
         print(f"Warning: Could not load example file: {e}")
         return None
 
-def extract_paper_info(title, abstract):
-    """使用智谱 API 从论文标题和摘要中提取关键信息"""
-    # 加载示例
-    example = load_example()
+
+# 加载示例
+example = load_example()
+# 构建包含示例的提示词
+example_prompt = ""
+if example:
+    example_prompt = f"""
+    示例论文:
+    标题: {example['title']}
+    摘要: {example['abstract']}
     
-    # 构建包含示例的提示词
-    example_prompt = ""
-    if example:
-        example_prompt = f"""
-        示例论文:
-        标题: {example['title']}
-        摘要: {example['abstract']}
-        
-        提取结果:
-        {{
-            "code_links": "{example.get('Code links', 'None')}",
-            "tasks": {json.dumps(example.get('Tasks', ['None']), ensure_ascii=False)},
-            "datasets": {json.dumps(example.get('Datasets', ['None']), ensure_ascii=False)},
-            "methods": {json.dumps(example.get('Methods', ['None']), ensure_ascii=False)},
-            "results": {json.dumps(example.get('Results', ['None']), ensure_ascii=False)}
-        }}
-        
-        现在，请你以相同的格式分析下面这篇论文:
-        """
+    提取结果:
+    {{
+        "code_links": "{example.get('Code links', 'None')}",
+        "tasks": {json.dumps(example.get('Tasks', ['None']), ensure_ascii=False)},
+        "datasets": {json.dumps(example.get('Datasets', ['None']), ensure_ascii=False)},
+        "methods": {json.dumps(example.get('Methods', ['None']), ensure_ascii=False)},
+        "results": {json.dumps(example.get('Results', ['None']), ensure_ascii=False)}
+    }}
+    """
+
+
+def extract_paper_info(title, abstract):
     
     prompt = f"""
     请从论文的标题和摘要中提取关键信息：
 
     {example_prompt}
     
+    现在，请你以相同的格式分析下面这篇论文:
+
     标题: {title}
     摘要: {abstract}
     
@@ -195,13 +197,5 @@ def aggregate_results(output_dir):
 if __name__ == "__main__":
     main()
 
-    # 打印解析后的数据
-    # for item in data:
-    #     print(f"Title: {item['title']}")
-    #     print(f"ID: {item['_id']}")
-    #     print(f"Author: {item['author']}")
-    #     print(f"Abstract: {item['abstract']}\n")
-
-    #     pdb.set_trace()
 
 # TODO 增加 systerm
