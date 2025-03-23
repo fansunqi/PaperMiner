@@ -1,6 +1,7 @@
 "use client"; // Next.js 运行在客户端
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import '../src/app/globals.css';
 
 // 动态加载 MathJax，防止 SSR 影响
@@ -57,6 +58,20 @@ export default function Home() {
     <MathJaxContext config={{ tex: { displayMath: [["$$", "$$"]], inlineMath: [["$", "$"]] } }}>
       <div className="container mx-auto px-6 py-12">
         <h1 className="text-5xl font-extrabold text-center mb-12 text-gray-900">📚 论文列表</h1>
+
+        {/* 添加两个链接 */}
+        <div className="flex justify-center space-x-4 mb-8">
+          <Link href="/" legacyBehavior>
+            <a className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200">
+              从元数据提取的论文信息
+            </a>
+          </Link>
+          <Link href="/pdf-papers" legacyBehavior>
+            <a className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200">
+              从 PDF 提取的论文信息
+            </a>
+          </Link>
+        </div>
 
         <div className="grid grid-cols-1 gap-8">
           {papers.map((paper) => {
