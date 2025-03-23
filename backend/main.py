@@ -28,6 +28,9 @@ GLM_API_KEY = os.getenv("GLM_API_KEY")
 # 加载 JSON 数据
 with open("../outputs/paper_extractions/all_results.json", "r", encoding="utf-8") as f:
     papers_data = json.load(f)
+    
+with open("../outputs/pdf/all_results.json", "r", encoding="utf-8") as f:
+    pdf_data = json.load(f)
 
 @app.get("/")
 def read_root():
@@ -38,3 +41,8 @@ def read_root():
 def get_papers():
     """返回所有论文数据"""
     return papers_data
+
+@app.get("/pdf-papers/")
+def get_pdf_papers():
+    """返回所有 PDF 论文数据"""
+    return pdf_data

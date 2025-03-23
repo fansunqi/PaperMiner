@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import '../src/app/globals.css';
+import '../../src/app/globals.css';
 
 // 动态加载 MathJax，防止 SSR 影响
 const MathJaxContext = dynamic(() => import("better-react-mathjax").then(mod => mod.MathJaxContext), { ssr: false });
@@ -11,8 +11,8 @@ const MathJax = dynamic(() => import("better-react-mathjax").then(mod => mod.Mat
 export default function Home() {
   const [papers, setPapers] = useState([]);
   const [expandedAbstract, setExpandedAbstract] = useState(null); // 追踪哪个论文的摘要被展开
-  const [selectedTab, setSelectedTab] = useState("metadata"); // 追踪当前选中的标签
-  const API_URL = "http://localhost:8000/papers/"; // 后端 API 地址
+  const [selectedTab, setSelectedTab] = useState("pdf"); // 追踪当前选中的标签
+  const API_URL = "http://localhost:8000/pdf-papers/"; // 后端 API 地址
 
   useEffect(() => {
     fetch(API_URL)
