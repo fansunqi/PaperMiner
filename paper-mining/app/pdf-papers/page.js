@@ -23,39 +23,26 @@ export default function Home() {
       })
       .catch((error) => console.error("API 请求失败:", error));
   }, []);
-  
 
   const renderMath = (text) => {
     if (!text) return null;
-  
-    // 正则表达式：匹配块级公式和内联公式
     const regex = /(\$\$.*?\$\$|\$.*?\$)/g;
-  
     return text.split(regex).map((part, index) => {
-      // 处理块级公式
       if (part.startsWith("$$") && part.endsWith("$$")) {
-        return <MathJax key={index} className="math-block">{part}</MathJax>; // 块级公式
-      }
-      // 处理内联公式
-      else if (part.startsWith("$") && part.endsWith("$")) {
-        return <MathJax key={index} className="math-inline">{part}</MathJax>; // 内联公式
-      }
-      // 处理非公式文本
-      else {
+        return <MathJax key={index} className="math-block">{part}</MathJax>;
+      } else if (part.startsWith("$") && part.endsWith("$")) {
+        return <MathJax key={index} className="math-inline">{part}</MathJax>;
+      } else {
         return part;
       }
     });
   };
-  
 
-  // 切换摘要的展开/收起状态
   const toggleAbstract = (paperId) => {
-    setExpandedAbstracts(prevState => {
+    setExpandedAbstracts((prevState) => {
       if (prevState.includes(paperId)) {
-        // 如果摘要已展开，则收起它
-        return prevState.filter(id => id !== paperId);
+        return prevState.filter((id) => id !== paperId);
       } else {
-        // 如果摘要未展开，则展开它
         return [...prevState, paperId];
       }
     });
@@ -65,8 +52,6 @@ export default function Home() {
     <MathJaxContext config={{ tex: { displayMath: [["$$", "$$"]], inlineMath: [["$", "$"]] } }}>
       <div className="container mx-auto px-6 py-12">
         <h1 className="text-5xl font-extrabold text-center mb-12 text-gray-900">📚 论文列表</h1>
-
-        {/* 添加两个链接 */}
         <div className="flex justify-center space-x-4 mb-8">
           <Link href="/" legacyBehavior>
             <a
@@ -85,18 +70,17 @@ export default function Home() {
             </a>
           </Link>
         </div>
-
         <div className="grid grid-cols-1 gap-8">
-          {papers.map((paper) => {
+          {papers.map((paper, index) => {
             const codeLinks = Array.isArray(paper.code_links) ? paper.code_links : [];
-
+            const paperId = paper.paper_id ?? `temp-${index}`;
+            const isExpanded = expandedAbstracts.includes(paperId);
             return (
-              <div key={paper.paper_id ?? Math.random()} className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-8 border border-gray-200">
-                {/* 论文标题 */}
+              <div key={paperId} className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-8 border border-gray-200">
                 <h2 className="text-3xl font-semibold text-gray-900 mb-6">{paper.title ?? "未知标题"}</h2>
 
-                {/* 研究信息 */}
-                <div className="space-y-4">
+                 {/* 研究信息 */}
+                 <div className="space-y-4">
                   {[
                     { icon: "🔍", label: "研究任务", value: paper.tasks?.join(", ") || "无任务" },
                     { icon: "🛠", label: "研究方法", value: paper.methods?.join(", ") || "无方法" },
@@ -137,22 +121,19 @@ export default function Home() {
                     <span className="mr-2">📜</span> 摘要:
                   </span>
                   <p className="text-gray-600 mt-2 leading-relaxed">
-                    {renderMath(expandedAbstracts.includes(paper.paper_id) 
+                    {renderMath(isExpanded 
                       ? paper.abstract || "暂无摘要"
                       : (paper.abstract?.substring(0, 150) || "暂无摘要") + "..."
                     )}
                   </p>
-                  {/* 摘要展开按钮 */}
                   <button
-                    onClick={() => toggleAbstract(paper.paper_id)}
+                    onClick={() => toggleAbstract(paperId)}
                     className="text-blue-500 hover:underline mt-2"
                   >
-                    {expandedAbstracts.includes(paper.paper_id) ? "收起摘要" : "展开摘要"}
+                    {isExpanded ? "收起摘要" : "展开摘要"}
                   </button>
                 </div>
-
-                {/* 详情按钮 */}
-                <a href={`/paper/${paper.paper_id}`} className="mt-6 block text-center px-6 py-3 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
+                <a href={`/paper/${paperId}`} className="mt-6 block text-center px-6 py-3 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
                   📖 查看详情 →
                 </a>
               </div>
