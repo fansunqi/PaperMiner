@@ -26,9 +26,24 @@ GLM_API_URL = "https://open.bigmodel.cn/api/fileqa"
 GLM_API_KEY = os.getenv("GLM_API_KEY")
 
 # 加载 JSON 数据
-with open("../outputs/paper_extractions/all_results.json", "r", encoding="utf-8") as f:
-    papers_data = json.load(f)
-    
+# with open("../outputs/paper_extractions/all_results.json", "r", encoding="utf-8") as f:
+#     papers_data = json.load(f)
+OUTPUT_META_DATA_PATH = "../outputs/meta"
+
+def load_meta_data(directory):
+    meta_data_list = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.json'):
+                file_path = os.path.join(root, file)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    meta_data_list.append(data)
+    return meta_data_list
+
+meta_data = load_meta_data(OUTPUT_META_DATA_PATH)
+
+ 
 with open("../outputs/pdf/all_results.json", "r", encoding="utf-8") as f:
     pdf_data = json.load(f)
 
@@ -40,7 +55,7 @@ def read_root():
 @app.get("/papers/")
 def get_papers():
     """返回所有论文数据"""
-    return papers_data
+    return meta_data
 
 @app.get("/pdf-papers/")
 def get_pdf_papers():
