@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/christophebedard/ros2-message-flow-analysis"
+  ],
+  "tasks": [
+    "Message flow analysis in distributed ROS 2 systems"
+  ],
+  "datasets": [
+    "synthetic robotic systems",
+    "real robotic systems"
+  ],
+  "methods": [
+    "Extended ros2_tracing with analysis and visualization of message flow",
+    "Detection of one-to-many and many-to-many causal links",
+    "User-level annotations for indirect causal links"
+  ],
+  "results": [
+    "Low runtime overhead",
+    "Ability to extract additional metrics and high-level results",
+    "Provides valuable timing and scheduling information"
+  ],
+  "paper_id": "62620f1d5aee126c0f686dfa",
+  "title": "Message Flow Analysis with Complex Causal Links for Distributed ROS 2\n  Systems",
+  "abstract": "  Distributed robotic systems rely heavily on the publish-subscribe communication paradigm and middleware frameworks that support it, such as the Robot Operating System (ROS), to efficiently implement modular computation graphs. The ROS 2 executor, a high-level task scheduler which handles ROS 2 messages, is a performance bottleneck. We extend ros2_tracing, a framework with instrumentation and tools for real-time tracing of ROS 2, with the analysis and visualization of the flow of messages across distributed ROS 2 systems. Our method detects one-to-many and many-to-many causal links between input and output messages, including indirect causal links through simple user-level annotations. We validate our method on both synthetic and real robotic systems, and demonstrate its low runtime overhead. Moreover, the underlying intermediate execution representation database can be further leveraged to extract additional metrics and high-level results. This can provide valuable timing and scheduling information to further study and improve the ROS 2 executor as well as optimize any ROS 2 system. The source code is available at: https://github.com/christophebedard/ros2-message-flow-analysis. "
+}

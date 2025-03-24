@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/zshicode/Attention-CLX-stock-prediction"
+  ],
+  "tasks": [
+    "Stock prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Attention-based CNN-LSTM",
+    "XGBoost hybrid model",
+    "ARIMA preprocessing",
+    "Pretraining-finetuning framework"
+  ],
+  "results": [
+    "Hybrid model is more effective with high prediction accuracy",
+    "Helps in decision-making for expanding return and avoiding risk"
+  ],
+  "paper_id": "624e569e5aee126c0f7f8f8c",
+  "title": "Attention-based CNN-LSTM and XGBoost hybrid model for stock prediction",
+  "abstract": "  Stock market plays an important role in the economic development. Due to the complex volatility of the stock market, the research and prediction on the change of the stock price, can avoid the risk for the investors. The traditional time series model ARIMA can not describe the nonlinearity, and can not achieve satisfactory results in the stock prediction. As neural networks are with strong nonlinear generalization ability, this paper proposes an attention-based CNN-LSTM and XGBoost hybrid model to predict the stock price. The model constructed in this paper integrates the time series model, the Convolutional Neural Networks with Attention mechanism, the Long Short-Term Memory network, and XGBoost regressor in a non-linear relationship, and improves the prediction accuracy. The model can fully mine the historical information of the stock market in multiple periods. The stock data is first preprocessed through ARIMA. Then, the deep learning architecture formed in pretraining-finetuning framework is adopted. The pre-training model is the Attention-based CNN-LSTM model based on sequence-to-sequence framework. The model first uses convolution to extract the deep features of the original stock data, and then uses the Long Short-Term Memory networks to mine the long-term time series features. Finally, the XGBoost model is adopted for fine-tuning. The results show that the hybrid model is more effective and the prediction accuracy is relatively high, which can help investors or institutions to make decisions and achieve the purpose of expanding return and avoiding risk. Source code is available at https://github.com/zshicode/Attention-CLX-stock-prediction. "
+}

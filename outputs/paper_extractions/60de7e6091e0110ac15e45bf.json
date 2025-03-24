@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Protecting time series data",
+    "Minimizing forecast loss due to anonymization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "$k$-nearest Time Series ($k$-nTS) Swapping",
+    "$k$-means Time Series ($k$-mTS) Shuffling",
+    "Integer programming for perfect matching"
+  ],
+  "results": [
+    "Maintains forecasts and patterns (level, trend, and seasonality) well compared to standard data protection methods",
+    "Addresses the challenge of protecting time series data for forecasting"
+  ],
+  "paper_id": "60de7e6091e0110ac15e45bf",
+  "title": "Protecting Time Series Data with Minimal Forecast Loss",
+  "abstract": "  Forecasting could be negatively impacted due to anonymization requirements in data protection legislation. To measure the potential severity of this problem, we derive theoretical bounds for the loss to forecasts from additive exponential smoothing models using protected data. Following the guidelines of anonymization from the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA), we develop the $k$-nearest Time Series ($k$-nTS) Swapping and $k$-means Time Series ($k$-mTS) Shuffling methods to create protected time series data that minimizes the loss to forecasts while preventing a data intruder from detecting privacy issues. For efficient and effective decision making, we formally model an integer programming problem for a perfect matching for simultaneous data swapping in each cluster. We call it a two-party data privacy framework since our optimization model includes the utilities of a data provider and data intruder. We apply our data protection methods to thousands of time series and find that it maintains the forecasts and patterns (level, trend, and seasonality) of time series well compared to standard data protection methods suggested in legislation. Substantively, our paper addresses the challenge of protecting time series data when used for forecasting. Our findings suggest the managerial importance of incorporating the concerns of forecasters into the data protection itself. "
+}

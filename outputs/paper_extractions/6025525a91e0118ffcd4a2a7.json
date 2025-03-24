@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Bone age assessment"
+  ],
+  "datasets": [
+    "hand radiographs"
+  ],
+  "methods": [
+    "Doctor Imitator (DI)",
+    "Graph-based deep learning framework",
+    "Anatomy-based Group Convolution",
+    "Dual Graph-based Attention module"
+  ],
+  "results": [
+    "Excellent performance with sparse parameters",
+    "More interpretability"
+  ],
+  "paper_id": "6025525a91e0118ffcd4a2a7",
+  "title": "Doctor Imitator: Hand-Radiography-based Bone Age Assessment by Imitating\n  Scoring Methods",
+  "abstract": "  Bone age assessment is challenging in clinical practice due to the complicated bone age assessment process. Current automatic bone age assessment methods were designed with rare consideration of the diagnostic logistics and thus may yield certain uninterpretable hidden states and outputs. Consequently, doctors can find it hard to cooperate with such models harmoniously because it is difficult to check the correctness of the model predictions. In this work, we propose a new graph-based deep learning framework for bone age assessment with hand radiographs, called Doctor Imitator (DI). The architecture of DI is designed to learn the diagnostic logistics of doctors using the scoring methods (e.g., the Tanner-Whitehouse method) for bone age assessment. Specifically, the convolutions of DI capture the local features of the anatomical regions of interest (ROIs) on hand radiographs and predict the ROI scores by our proposed Anatomy-based Group Convolution, summing up for bone age prediction. Besides, we develop a novel Dual Graph-based Attention module to compute patient-specific attention for ROI features and context attention for ROI scores. As far as we know, DI is the first automatic bone age assessment framework following the scoring methods without fully supervised hand radiographs. Experiments on hand radiographs with only bone age supervision verify that DI can achieve excellent performance with sparse parameters and provide more interpretability. "
+}

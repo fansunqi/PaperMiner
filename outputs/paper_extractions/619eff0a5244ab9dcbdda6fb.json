@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Crowdsourcing label inference"
+  ],
+  "datasets": [
+    "synthetic datasets",
+    "real datasets"
+  ],
+  "methods": [
+    "d-type specialization model",
+    "label inference algorithms"
+  ],
+  "results": [
+    "outperforms existing algorithms",
+    "achieves order-wise optimal limit"
+  ],
+  "paper_id": "619eff0a5244ab9dcbdda6fb",
+  "title": "A Worker-Task Specialization Model for Crowdsourcing: Efficient\n  Inference and Fundamental Limits",
+  "abstract": "  Crowdsourcing system has emerged as an effective platform for labeling data with relatively low cost by using non-expert workers. Inferring correct labels from multiple noisy answers on data, however, has been a challenging problem, since the quality of the answers varies widely across tasks and workers. Many existing works have assumed that there is a fixed ordering of workers in terms of their skill levels, and focused on estimating worker skills to aggregate the answers from workers with different weights. In practice, however, the worker skill changes widely across tasks, especially when the tasks are heterogeneous. In this paper, we consider a new model, called $d$-type specialization model, in which each task and worker has its own (unknown) type and the reliability of each worker can vary in the type of a given task and that of a worker. We allow that the number $d$ of types can scale in the number of tasks. In this model, we characterize the optimal sample complexity to correctly infer the labels within any given accuracy, and propose label inference algorithms achieving the order-wise optimal limit even when the types of tasks or those of workers are unknown. We conduct experiments both on synthetic and real datasets, and show that our algorithm outperforms the existing algorithms developed based on more strict model assumptions. "
+}

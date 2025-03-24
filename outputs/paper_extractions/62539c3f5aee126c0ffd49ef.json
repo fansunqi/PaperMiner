@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/liuchunsense/PLGP-Dataset"
+  ],
+  "tasks": [
+    "Grasp detection in cluttered scenes"
+  ],
+  "datasets": [
+    "Pixel-Level Grasp Pose Dataset (PLGP-Dataset)"
+  ],
+  "methods": [
+    "On-policy grasp detection",
+    "Parallel-Depth Grasp Generation (PDG-Generation)",
+    "Flatness detection, force-closure metric, collision detection",
+    "Pixel-level grasp detection networks with data augmentation"
+  ],
+  "results": [
+    "Overcome the gap between simulation and reality",
+    "State-of-the-art performance in grasp detection"
+  ],
+  "paper_id": "62539c3f5aee126c0ffd49ef",
+  "title": "On-Policy Pixel-Level Grasping Across the Gap Between Simulation and\n  Reality",
+  "abstract": "  Grasp detection in cluttered scenes is a very challenging task for robots. Generating synthetic grasping data is a popular way to train and test grasp methods, as is Dex-net and GraspNet; yet, these methods generate training grasps on 3D synthetic object models, but evaluate at images or point clouds with different distributions, which reduces performance on real scenes due to sparse grasp labels and covariate shift. To solve existing problems, we propose a novel on-policy grasp detection method, which can train and test on the same distribution with dense pixel-level grasp labels generated on RGB-D images. A Parallel-Depth Grasp Generation (PDG-Generation) method is proposed to generate a parallel depth image through a new imaging model of projecting points in parallel; then this method generates multiple candidate grasps for each pixel and obtains robust grasps through flatness detection, force-closure metric and collision detection. Then, a large comprehensive Pixel-Level Grasp Pose Dataset (PLGP-Dataset) is constructed and released; distinguished with previous datasets with off-policy data and sparse grasp samples, this dataset is the first pixel-level grasp dataset, with the on-policy distribution where grasps are generated based on depth images. Lastly, we build and test a series of pixel-level grasp detection networks with a data augmentation process for imbalance training, which learn grasp poses in a decoupled manner on the input RGB-D images. Extensive experiments show that our on-policy grasp method can largely overcome the gap between simulation and reality, and achieves the state-of-the-art performance. Code and data are provided at https://github.com/liuchunsense/PLGP-Dataset. "
+}

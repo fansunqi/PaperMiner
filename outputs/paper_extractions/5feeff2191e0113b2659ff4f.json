@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Interval scheduling",
+    "Approximate interval scheduling",
+    "Weighted interval scheduling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Partitioning and grouping jobs based on starting and ending times",
+    "Fully dynamic algorithm for (1+\u03b5)-approximation",
+    "Local computation algorithm",
+    "Deterministic algorithm for weighted intervals"
+  ],
+  "results": [
+    "Fully dynamic algorithm with O(log{n}/\u03b5) update and O(log{n}) query time",
+    "Local computation algorithm with O(log{N}/\u03b5) queries",
+    "Deterministic algorithm with poly(log n, 1/\u03b5) update and query time",
+    "Exponential improvement in 1/\u03b5 over previous randomized algorithm",
+    "Extension to M machines setting"
+  ],
+  "paper_id": "5feeff2191e0113b2659ff4f",
+  "title": "New Partitioning Techniques and Faster Algorithms for Approximate\n  Interval Scheduling",
+  "abstract": "  Interval scheduling is a basic problem in the theory of algorithms and a classical task in combinatorial optimization. We develop a set of techniques for partitioning and grouping jobs based on their starting and ending times, that enable us to view an instance of interval scheduling on many jobs as a union of multiple interval scheduling instances, each containing only a few jobs. Instantiating these techniques in dynamic and local settings of computation leads to several new results.   For $(1+\\varepsilon)$-approximation of job scheduling of $n$ jobs on a single machine, we develop a fully dynamic algorithm with $O(\\frac{\\log{n}}{\\varepsilon})$ update and $O(\\log{n})$ query worst-case time. Further, we design a local computation algorithm that uses only $O(\\frac{\\log{N}}{\\varepsilon})$ queries when all jobs are length at least $1$ and have starting/ending times within $[0,N]$. Our techniques are also applicable in a setting where jobs have rewards/weights. For this case we design a fully dynamic deterministic algorithm whose worst-case update and query time are $\\operatorname{poly}(\\log n,\\frac{1}{\\varepsilon})$. Equivalently, this is the first algorithm that maintains a $(1+\\varepsilon)$-approximation of the maximum independent set of a collection of weighted intervals in $\\operatorname{poly}(\\log n,\\frac{1}{\\varepsilon})$ time updates/queries. This is an exponential improvement in $1/\\varepsilon$ over the running time of a randomized algorithm of Henzinger, Neumann, and Wiese ~[SoCG, 2020], while also removing all dependence on the values of the jobs' starting/ending times and rewards, as well as removing the need for any randomness.   We also extend our approaches for interval scheduling on a single machine to examine the setting with $M$ machines. "
+}

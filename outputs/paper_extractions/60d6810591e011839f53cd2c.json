@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Construction of Compressed Suffix Arrays and Suffix Trees"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "New compressed suffix array and tree",
+    "o(n)-time construction algorithms",
+    "Prefix rank and prefix selection queries"
+  ],
+  "results": [
+    "Structures take O(n log \u03c3) bits",
+    "Support SA queries and full suffix tree functionality in O(log^\u03b5 n) time per operation",
+    "Can be constructed in O(n min(1, log \u03c3 / \u221alog n)) time using O(n log \u03c3) bits of working space"
+  ],
+  "paper_id": "60d6810591e011839f53cd2c",
+  "title": "Breaking the $O(n)$-Barrier in the Construction of Compressed Suffix\n  Arrays and Suffix Trees",
+  "abstract": "  The suffix array and the suffix tree are the two most fundamental data structures for string processing. For a length-$n$ text, however, they use $\\Theta(n \\log n)$ bits of space, which is often too costly. To address this, Grossi and Vitter [STOC 2000] and, independently, Ferragina and Manzini [FOCS 2000] introduced space-efficient versions of the suffix array, known as the compressed suffix array (CSA) and the FM-index. Sadakane [SODA 2002] then showed how to augment them to obtain the compressed suffix tree (CST). For a length-$n$ text over an alphabet of size $\\sigma$, these structures use only $O(n\\log\\sigma)$ bits. The biggest remaining open question is how efficiently they can be constructed. After two decades, the fastest algorithms still run in $O(n)$ time [Hon et al., FOCS 2003], which is $\\Theta(\\log_{\\sigma} n)$ factor away from the lower bound of $\\Omega(n/\\log_{\\sigma}n)$.   In this paper, we make the first in 20 years improvement in $n$ for this problem by proposing a new compressed suffix array and a new compressed suffix tree which admit $o(n)$-time construction algorithms while matching the space bounds and the query times of the original CSA/CST and the FM-index. More precisely, our structures take $O(n\\log\\sigma)$ bits, support SA queries and full suffix tree functionality in $O(\\log^{\\epsilon}n)$ time per operation, and can be constructed in $O(n \\min(1,\\log\\sigma/\\sqrt{\\log n}))$ time using $O(n\\log\\sigma)$ bits of working space. We derive this result as a corollary from a much more general reduction: We prove that all parameters of a compressed suffix array/tree (query time, space, construction time, and construction working space) can essentially be reduced to those of a data structure answering new query types that we call prefix rank and prefix selection. Using the novel techniques, we also develop a new index for pattern matching. "
+}

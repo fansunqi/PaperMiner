@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Post-Quantum Security of Bitcoin",
+    "Hardness of finding chain of PoWs against quantum strategies"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantum Multi-Solution Bernoulli Search",
+    "Threshold Direct Product Theorem extension",
+    "Recording technique simplification"
+  ],
+  "results": [
+    "Security of Bitcoin backbone holds under quantum honest majority assumption",
+    "Quantum query worth $O(p^{-1/2})$ classical queries",
+    "Quantum vs classical safe settlement time matches"
+  ],
+  "paper_id": "5fef0a3391e0113b265a004b",
+  "title": "Quantum Multi-Solution Bernoulli Search with Applications to Bitcoin's\n  Post-Quantum Security",
+  "abstract": "  A proof of work (PoW) is an important cryptographic construct enabling a party to convince others that they invested some effort in solving a computational task. Arguably, its main impact has been in the setting of cryptocurrencies such as Bitcoin and its underlying blockchain protocol, which received significant attention in recent years due to its potential for various applications as well as for solving fundamental distributed computing questions in novel threat models. PoWs enable the linking of blocks in the blockchain data structure and thus the problem of interest is the feasibility of obtaining a sequence (chain) of such proofs. In this work, we examine the hardness of finding such chain of PoWs against quantum strategies. We prove that the chain of PoWs problem reduces to a problem we call multi-solution Bernoulli search, for which we establish its quantum query complexity. Effectively, this is an extension of a threshold direct product theorem to an average-case unstructured search problem. Our proof, adding to active recent efforts, simplifies and generalizes the recording technique of Zhandry (Crypto'19). As an application, we revisit the formal treatment of security of the core of the Bitcoin consensus protocol, the Bitcoin backbone (Eurocrypt'15), against quantum adversaries, while honest parties are classical and show that protocol's security holds under a quantum analogue of the classical ``honest majority'' assumption. Our analysis indicates that the security of Bitcoin backbone is guaranteed provided the number of adversarial quantum queries is bounded so that each quantum query is worth $O(p^{-1/2})$ classical ones, where $p$ is the success probability of a single classical query to the protocol's underlying hash function. Somewhat surprisingly, the wait time for safe settlement in the case of quantum adversaries matches the safe settlement time in the classical case. "
+}

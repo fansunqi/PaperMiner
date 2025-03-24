@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monolingual End-to-End Automatic Speech Recognition",
+    "Continual Learning for ASR"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hybrid CTC-Transformer model",
+    "Various Continual Learning methods"
+  ],
+  "results": [
+    "Best CL method closes the gap between fine-tuned model and joint-trained model by >40%",
+    "Requires access to only 0.6% of the original data"
+  ],
+  "paper_id": "61bff4295244ab9dcb79c97e",
+  "title": "Continual Learning for Monolingual End-to-End Automatic Speech\n  Recognition",
+  "abstract": "  Adapting Automatic Speech Recognition (ASR) models to new domains results in a deterioration of performance on the original domain(s), a phenomenon called Catastrophic Forgetting (CF). Even monolingual ASR models cannot be extended to new accents, dialects, topics, etc. without suffering from CF, making them unable to be continually enhanced without storing all past data. Fortunately, Continual Learning (CL) methods, which aim to enable continual adaptation while overcoming CF, can be used. In this paper, we implement an extensive number of CL methods for End-to-End ASR and test and compare their ability to extend a monolingual Hybrid CTC-Transformer model across four new tasks. We find that the best performing CL method closes the gap between the fine-tuned model (lower bound) and the model trained jointly on all tasks (upper bound) by more than 40%, while requiring access to only 0.6% of the original data. "
+}

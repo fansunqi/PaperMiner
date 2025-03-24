@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Flexible Peak Storm Surge Prediction"
+  ],
+  "datasets": [
+    "Texas coast synthetic hurricanes",
+    "Alaskan coast historical surge events"
+  ],
+  "methods": [
+    "Multi-stage surrogate model",
+    "Independent point prediction formulation"
+  ],
+  "results": [
+    "Accurately matches ADCIRC predictions on synthetic storms",
+    "Similar performance to ADCIRC on real events (Hurricanes Ike, Harvey, Typhoon Merbok)",
+    "Many orders of magnitude faster than ADCIRC"
+  ],
+  "paper_id": "626b49615aee126c0fffce9b",
+  "title": "A Framework for Flexible Peak Storm Surge Prediction",
+  "abstract": "  Storm surge is a major natural hazard in coastal regions, responsible both for significant property damage and loss of life. Accurate, efficient models of storm surge are needed both to assess long-term risk and to guide emergency management decisions. While high-fidelity regional- and global-ocean circulation models such as the ADvanced CIRCulation (ADCIRC) model can accurately predict storm surge, they are very computationally expensive. Here we develop a novel surrogate model for peak storm surge prediction based on a multi-stage approach. In the first stage, points are classified as inundated or not. In the second, the level of inundation is predicted . Additionally, we propose a new formulation of the surrogate problem in which storm surge is predicted independently for each point. This allows for predictions to be made directly for locations not present in the training data, and significantly reduces the number of model parameters. We demonstrate our modeling framework on two study areas: the Texas coast and the northern portion of the Alaskan coast. For Texas, the model is trained with a database of 446 synthetic hurricanes. The model is able to accurately match ADCIRC predictions on a test set of synthetic storms. We further present a test of the model on Hurricanes Ike (2008) and Harvey (2017). For Alaska, the model is trained on a dataset of 109 historical surge events. We test the surrogate model on actual surge events including the recent Typhoon Merbok (2022) that take place after the events in the training data. For both datasets, the surrogate model achieves similar performance to ADCIRC on real events when compared to observational data. In both cases, the surrogate models are many orders of magnitude faster than ADCIRC. "
+}

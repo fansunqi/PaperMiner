@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/LithiumDA/PINN-without-Stacked-BP"
+  ],
+  "tasks": [
+    "Solving partial differential equations (PDE) using Physics-Informed Neural Networks (PINN)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Parameterizing PDE solution by Gaussian smoothed model",
+    "Efficient calculation of second-order derivatives using Stein's Identity",
+    "Variance reduction methods for derivative estimation"
+  ],
+  "results": [
+    "Competitive error compared to standard PINN training",
+    "Significantly faster training than standard PINN"
+  ],
+  "paper_id": "6213029d5aee126c0f42a9e2",
+  "title": "Learning Physics-Informed Neural Networks without Stacked\n  Back-propagation",
+  "abstract": "  Physics-Informed Neural Network (PINN) has become a commonly used machine learning approach to solve partial differential equations (PDE). But, facing high-dimensional secondorder PDE problems, PINN will suffer from severe scalability issues since its loss includes second-order derivatives, the computational cost of which will grow along with the dimension during stacked back-propagation. In this work, we develop a novel approach that can significantly accelerate the training of Physics-Informed Neural Networks. In particular, we parameterize the PDE solution by the Gaussian smoothed model and show that, derived from Stein's Identity, the second-order derivatives can be efficiently calculated without back-propagation. We further discuss the model capacity and provide variance reduction methods to address key limitations in the derivative estimation. Experimental results show that our proposed method can achieve competitive error compared to standard PINN training but is significantly faster. Our code is released at https://github.com/LithiumDA/PINN-without-Stacked-BP. "
+}

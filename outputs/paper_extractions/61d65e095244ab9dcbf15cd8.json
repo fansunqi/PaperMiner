@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding Quality Challenges of Federated Learning for Neural Networks",
+    "Robustness Analysis of FL"
+  ],
+  "datasets": [
+    "Generic Image Datasets",
+    "Real-world Federated Medical Image Dataset"
+  ],
+  "methods": [
+    "Large-scale Empirical Study",
+    "Robust Aggregation Techniques",
+    "Model Poisoning Attacks",
+    "Data Poisoning Attacks",
+    "Ensemble of Aggregators"
+  ],
+  "results": [
+    "Most mutators have negligible effect on final model in generic datasets",
+    "One mutator effective in medical dataset",
+    "Model poisoning attacks more effective than data poisoning",
+    "Robust FL aggregator choice depends on attacks and datasets",
+    "Ensemble of aggregators best in 75% of cases"
+  ],
+  "paper_id": "61d65e095244ab9dcbf15cd8",
+  "title": "Towards Understanding Quality Challenges of the Federated Learning for\n  Neural Networks: A First Look from the Lens of Robustness",
+  "abstract": "  Federated learning (FL) is a distributed learning paradigm that preserves users' data privacy while leveraging the entire dataset of all participants. In FL, multiple models are trained independently on the clients and aggregated centrally to update a global model in an iterative process. Although this approach is excellent at preserving privacy, FL still suffers from quality issues such as attacks or byzantine faults. Recent attempts have been made to address such quality challenges on the robust aggregation techniques for FL. However, the effectiveness of state-of-the-art (SOTA) robust FL techniques is still unclear and lacks a comprehensive study. Therefore, to better understand the current quality status and challenges of these SOTA FL techniques in the presence of attacks and faults, we perform a large-scale empirical study to investigate the SOTA FL's quality from multiple angles of attacks, simulated faults (via mutation operators), and aggregation (defense) methods. In particular, we study FL's performance on the image classification tasks and use DNNs as our model type. Furthermore, we perform our study on two generic image datasets and one real-world federated medical image dataset. We also investigate the effect of the proportion of affected clients and the dataset distribution factors on the robustness of FL. After a large-scale analysis with 496 configurations, we find that most mutators on each user have a negligible effect on the final model in the generic datasets, and only one of them is effective in the medical dataset. Furthermore, we show that model poisoning attacks are more effective than data poisoning attacks. Moreover, choosing the most robust FL aggregator depends on the attacks and datasets. Finally, we illustrate that a simple ensemble of aggregators achieves a more robust solution than any single aggregator and is the best choice in 75% of the cases. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unbalanced Optimal Transport"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalization of Sinkhorn algorithm to unbalanced transport",
+    "Alternating between Sinkhorn updates and contractive function application"
+  ],
+  "results": [
+    "Proof of linear convergence for entropic transport solvers in all settings",
+    "(Unbalanced) Sinkhorn divergences are differentiable, positive, definite, convex, statistically robust, and avoid entropic bias"
+  ],
+  "paper_id": "5db961993a55ace818d7b481",
+  "title": "Sinkhorn Divergences for Unbalanced Optimal Transport",
+  "abstract": "  Optimal transport induces the Earth Mover's (Wasserstein) distance between probability distributions, a geometric divergence that is relevant to a wide range of problems. Over the last decade, two relaxations of optimal transport have been studied in depth: unbalanced transport, which is robust to the presence of outliers and can be used when distributions don't have the same total mass; entropy-regularized transport, which is robust to sampling noise and lends itself to fast computations using the Sinkhorn algorithm. This paper combines both lines of work to put robust optimal transport on solid ground. Our main contribution is a generalization of the Sinkhorn algorithm to unbalanced transport: our method alternates between the standard Sinkhorn updates and the pointwise application of a contractive function. This implies that entropic transport solvers on grid images, point clouds and sampled distributions can all be modified easily to support unbalanced transport, with a proof of linear convergence that holds in all settings. We then show how to use this method to define pseudo-distances on the full space of positive measures that satisfy key geometric axioms: (unbalanced) Sinkhorn divergences are differentiable, positive, definite, convex, statistically robust and avoid any \"entropic bias\" towards a shrinkage of the measures' supports. "
+}

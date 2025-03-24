@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Supervised learning from many independent sequences (trajectories)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-trajectory setup",
+    "Linear least-squares regression",
+    "Statistical efficiency analysis"
+  ],
+  "results": [
+    "Worst-case error rate: \u0398(n / m T) when m \u2273 n",
+    "Lower bound: \u03a9(n^2 / m^2 T) when m \u2272 n",
+    "Error rate behaves as if examples were independent when trajectories reset"
+  ],
+  "paper_id": "62466dd45aee126c0f8b7cfc",
+  "title": "Learning from many trajectories",
+  "abstract": "  We initiate a study of supervised learning from many independent sequences (\"trajectories\") of non-independent covariates, reflecting tasks in sequence modeling, control, and reinforcement learning. Conceptually, our multi-trajectory setup sits between two traditional settings in statistical learning theory: learning from independent examples and learning from a single auto-correlated sequence. Our conditions for efficient learning generalize the former setting--trajectories must be non-degenerate in ways that extend standard requirements for independent examples. Notably, we do not require that trajectories be ergodic, long, nor strictly stable.   For linear least-squares regression, given $n$-dimensional examples produced by $m$ trajectories, each of length $T$, we observe a notable change in statistical efficiency as the number of trajectories increases from a few (namely $m \\lesssim n$) to many (namely $m \\gtrsim n$). Specifically, we establish that the worst-case error rate of this problem is $\\Theta(n / m T)$ whenever $m \\gtrsim n$. Meanwhile, when $m \\lesssim n$, we establish a (sharp) lower bound of $\\Omega(n^2 / m^2 T)$ on the worst-case error rate, realized by a simple, marginally unstable linear dynamical system. A key upshot is that, in domains where trajectories regularly reset, the error rate eventually behaves as if all of the examples were independent, drawn from their marginals. As a corollary of our analysis, we also improve guarantees for the linear system identification problem. "
+}

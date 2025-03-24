@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Uniform sampling of simple graphs with prescribed degrees"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Edge Switching Markov Chain (ES-MC)",
+    "Global Edge Switching Markov Chain (G-ES-MC)",
+    "Shared-memory parallel algorithms"
+  ],
+  "results": [
+    "G-ES-MC requires fewer switches than ES-MC",
+    "Efficient and scalable parallel G-ES-MC implementation"
+  ],
+  "paper_id": "6184a0d35244ab9dcb28c2aa",
+  "title": "Parallel Global Edge Switching for the Uniform Sampling of Simple Graphs\n  with Prescribed Degrees",
+  "abstract": "  The uniform sampling of simple graphs matching a prescribed degree sequence is an important tool in network science, e.g. to construct graph generators or null-models. Here, the Edge Switching Markov Chain (ES-MC) is a common choice. Given an arbitrary simple graph with the required degree sequence, ES-MC carries out a large number of small changes, called edge switches, to eventually obtain a uniform sample. In practice, reasonably short runs efficiently yield approximate uniform samples.   In this work, we study the problem of executing edge switches in parallel. We discuss parallelizations of ES-MC, but find that this approach suffers from complex dependencies between edge switches. For this reason, we propose the Global Edge Switching Markov Chain (G-ES-MC), an ES-MC variant with simpler dependencies. We show that G-ES-MC converges to the uniform distribution and design shared-memory parallel algorithms for ES-MC and G-ES-MC. In an empirical evaluation, we provide evidence that G-ES-MC requires not more switches than ES-MC (and often fewer), and demonstrate the efficiency and scalability of our parallel G-ES-MC implementation. "
+}

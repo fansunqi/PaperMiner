@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/mrinal054/teethSeg_sr2f2u-net.git"
+  ],
+  "tasks": [
+    "teeth segmentation"
+  ],
+  "datasets": [
+    "benchmark dataset containing 1500 dental panoramic X-ray images"
+  ],
+  "methods": [
+    "S-R2U-Net",
+    "S-R2F2U-Net",
+    "S-R2F2-Attn-U-Net",
+    "hybrid loss function (cross-entropy loss and dice loss)"
+  ],
+  "results": [
+    "S-R2F2U-Net outperforms state-of-the-art models",
+    "accuracy: 97.31%",
+    "dice score: 93.26%",
+    "reduces around 45% of model parameters compared to R2U-Net"
+  ],
+  "paper_id": "624e569f5aee126c0f7f91aa",
+  "title": "S-R2F2U-Net: A single-stage model for teeth segmentation",
+  "abstract": "  Precision tooth segmentation is crucial in the oral sector because it provides location information for orthodontic therapy, clinical diagnosis, and surgical treatments. In this paper, we investigate residual, recurrent, and attention networks to segment teeth from panoramic dental images. Based on our findings, we suggest three single-stage models: Single Recurrent R2U-Net (S-R2U-Net), Single Recurrent Filter Double R2U-Net (S-R2F2U-Net), and Single Recurrent Attention Enabled Filter Double (S-R2F2-Attn-U-Net). Particularly, S-R2F2U-Net outperforms state-of-the-art models in terms of accuracy and dice score. A hybrid loss function combining the cross-entropy loss and dice loss is used to train the model. In addition, it reduces around 45% of model parameters compared to the R2U-Net model. Models are trained and evaluated on a benchmark dataset containing 1500 dental panoramic X-ray images. S-R2F2U-Net achieves 97.31% of accuracy and 93.26% of dice score, showing superiority over the state-of-the-art methods. Codes are available at https://github.com/mrinal054/teethSeg_sr2f2u-net.git. "
+}

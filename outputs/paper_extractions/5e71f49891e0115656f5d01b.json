@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Defining information-extractors from documents"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Extraction grammars (extension of context-free grammars)"
+  ],
+  "results": [
+    "Context-free spanners are more expressive than regular spanners",
+    "Extraction grammars can be evaluated with polynomial data complexity",
+    "Enumeration algorithm for unambiguous extraction grammars with constant delay after quintic preprocessing"
+  ],
+  "paper_id": "5e71f49891e0115656f5d01b",
+  "title": "Grammars for Document Spanners",
+  "abstract": "  We propose a new grammar-based language for defining information-extractors from documents (text) that is built upon the well-studied framework of document spanners for extracting structured data from text. While previously studied formalisms for document spanners are mainly based on regular expressions, we use an extension of context-free grammars, called {extraction grammars}, to define the new class of context-free spanners. Extraction grammars are simply context-free grammars extended with variables that capture interval positions of the document, namely spans. While regular expressions are efficient for tokenizing and tagging, context-free grammars are also efficient for capturing structural properties. Indeed, we show that context-free spanners are strictly more expressive than their regular counterparts. We reason about the expressive power of our new class and present a pushdown-automata model that captures it. We show that extraction grammars can be evaluated with polynomial data complexity. Nevertheless, as the degree of the polynomial depends on the query, we present an enumeration algorithm for unambiguous extraction grammars that, after quintic preprocessing, outputs the results sequentially, without repetitions, with a constant delay between every two consecutive ones. "
+}

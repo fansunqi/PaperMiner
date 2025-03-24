@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/CogComp/event-linking"
+  ],
+  "tasks": [
+    "Event Linking"
+  ],
+  "datasets": [
+    "Wikipedia (training set)",
+    "Wikipedia domain (evaluation set)",
+    "Real-world news domain (evaluation set)"
+  ],
+  "methods": [
+    "EVELINK (event-specific linking system)"
+  ],
+  "results": [
+    "Challenges of event linking demonstrated by retrained SOTA entity linking models",
+    "Competitive results by EVELINK"
+  ],
+  "paper_id": "61baae695244ab9dcb644011",
+  "title": "Event Linking: Grounding Event Mentions to Wikipedia",
+  "abstract": "  Comprehending an article requires understanding its constituent events. However, the context where an event is mentioned often lacks the details of this event. A question arises: how can the reader obtain more knowledge about this particular event in addition to what is provided by the local context in the article?   This work defines Event Linking, a new natural language understanding task at the event level. Event linking tries to link an event mention appearing in an article to the most appropriate Wikipedia page. This page is expected to provide rich knowledge about what the event mention refers to. To standardize the research in this new direction, we contribute in four-fold. First, this is the first work in the community that formally defines Event Linking task. Second, we collect a dataset for this new task. Specifically, we automatically gather training set from Wikipedia, and then create two evaluation sets: one from the Wikipedia domain, reporting the in-domain performance, and a second from the real-world news domain, to evaluate out-of-domain performance. Third, we retrain and evaluate two state-of-the-art (SOTA) entity linking models, showing the challenges of event linking, and we propose an event-specific linking system EVELINK to set a competitive result for the new task. Fourth, we conduct a detailed and insightful analysis to help understand the task and the limitation of the current model. Overall, as our analysis shows, Event Linking is a considerably challenging and essential task requiring more effort from the community. Data and code are available here: https://github.com/CogComp/event-linking. "
+}

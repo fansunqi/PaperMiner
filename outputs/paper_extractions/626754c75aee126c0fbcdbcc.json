@@ -1,0 +1,26 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Real-time Speech Emotion Recognition"
+  ],
+  "datasets": [
+    "IEMOCAP",
+    "MSP-Improv",
+    "RAVDESS"
+  ],
+  "methods": [
+    "Syllable-level feature extraction",
+    "Formant attention",
+    "Noise-gate filtering",
+    "Rolling normalization contexts",
+    "Single hidden layer neural network"
+  ],
+  "results": [
+    "Real-time latency",
+    "Cross-corpus unweighted accuracy of 47.6% for IE to MI",
+    "Cross-corpus unweighted accuracy of 56.2% for MI to IE"
+  ],
+  "paper_id": "626754c75aee126c0fbcdbcc",
+  "title": "Real-time Speech Emotion Recognition Based on Syllable-Level Feature\n  Extraction",
+  "abstract": "  Speech emotion recognition systems have high prediction latency because of the high computational requirements for deep learning models and low generalizability mainly because of the poor reliability of emotional measurements across multiple corpora. To solve these problems, we present a speech emotion recognition system based on a reductionist approach of decomposing and analyzing syllable-level features. Mel-spectrogram of an audio stream is decomposed into syllable-level components, which are then analyzed to extract statistical features. The proposed method uses formant attention, noise-gate filtering, and rolling normalization contexts to increase feature processing speed and tolerance to adversity. A set of syllable-level formant features is extracted and fed into a single hidden layer neural network that makes predictions for each syllable as opposed to the conventional approach of using a sophisticated deep learner to make sentence-wide predictions. The syllable level predictions help to achieve the real-time latency and lower the aggregated error in utterance level cross-corpus predictions. The experiments on IEMOCAP (IE), MSP-Improv (MI), and RAVDESS (RA) databases show that the method archives real-time latency while predicting with state-of-the-art cross-corpus unweighted accuracy of 47.6% for IE to MI and 56.2% for MI to IE. "
+}

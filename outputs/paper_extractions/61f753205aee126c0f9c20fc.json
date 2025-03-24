@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/sapien-simulator/sapien"
+  ],
+  "tasks": [
+    "Active stereovision depth sensor simulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-grounded simulation pipeline",
+    "Material acquisition",
+    "Ray-tracing-based IR image rendering",
+    "IR noise simulation",
+    "Depth estimation"
+  ],
+  "results": [
+    "Perception algorithms and RL policies transfer well to real-world without fine-tuning",
+    "High realism allows use as a testbed for evaluating algorithm performance"
+  ],
+  "paper_id": "61f753205aee126c0f9c20fc",
+  "title": "Close the Optical Sensing Domain Gap by Physics-Grounded Active Stereo\n  Sensor Simulation",
+  "abstract": "  In this paper, we focus on the simulation of active stereovision depth sensors, which are popular in both academic and industry communities. Inspired by the underlying mechanism of the sensors, we designed a fully physics-grounded simulation pipeline that includes material acquisition, ray-tracing-based infrared (IR) image rendering, IR noise simulation, and depth estimation. The pipeline is able to generate depth maps with material-dependent error patterns similar to a real depth sensor in real time. We conduct real experiments to show that perception algorithms and reinforcement learning policies trained in our simulation platform could transfer well to the real-world test cases without any fine-tuning. Furthermore, due to the high degree of realism of this simulation, our depth sensor simulator can be used as a convenient testbed to evaluate the algorithm performance in the real world, which will largely reduce the human effort in developing robotic algorithms. The entire pipeline has been integrated into the SAPIEN simulator and is open-sourced to promote the research of vision and robotics communities. "
+}

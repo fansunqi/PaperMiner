@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://gittables.github.io"
+  ],
+  "tasks": [
+    "Relational table tasks",
+    "Data preparation",
+    "Table search"
+  ],
+  "datasets": [
+    "GitTables",
+    "T2Dv2"
+  ],
+  "methods": [
+    "Extraction of relational tables from GitHub",
+    "Annotation with semantic types and hierarchical relations"
+  ],
+  "results": [
+    "Annotation pipeline performance on par with human annotations",
+    "Value demonstrated in semantic type detection, schema completion, and table-to-KG matching"
+  ],
+  "paper_id": "60cacf6791e011b3293740c4",
+  "title": "GitTables: A Large-Scale Corpus of Relational Tables",
+  "abstract": "  The success of deep learning has sparked interest in improving relational table tasks, like data preparation and search, with table representation models trained on large table corpora. Existing table corpora primarily contain tables extracted from HTML pages, limiting the capability to represent offline database tables. To train and evaluate high-capacity models for applications beyond the Web, we need resources with tables that resemble relational database tables. Here we introduce GitTables, a corpus of 1M relational tables extracted from GitHub. Our continuing curation aims at growing the corpus to at least 10M tables. Analyses of GitTables show that its structure, content, and topical coverage differ significantly from existing table corpora. We annotate table columns in GitTables with semantic types, hierarchical relations and descriptions from Schema.org and DBpedia. The evaluation of our annotation pipeline on the T2Dv2 benchmark illustrates that our approach provides results on par with human annotations. We present three applications of GitTables, demonstrating its value for learned semantic type detection models, schema completion methods, and benchmarks for table-to-KG matching, data search, and preparation. We make the corpus and code available at https://gittables.github.io. "
+}

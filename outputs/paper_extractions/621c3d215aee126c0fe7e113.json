@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving NNetEn entropy calculation for short and noisy time series"
+  ],
+  "datasets": [
+    "Real-time biosignal EEG data"
+  ],
+  "methods": [
+    "Modified LogNNet neural network classification model",
+    "6 reservoir filling methods (including stretching time series)",
+    "Analysis of noise and constant bias influence"
+  ],
+  "results": [
+    "NNetEn entropy calculation errors < 10% when SNR > 30 dB",
+    "Entropy decreases with increase in bias component",
+    "NNetEn shows robustness under low-amplitude noise"
+  ],
+  "paper_id": "621c3d215aee126c0fe7e113",
+  "title": "Novel techniques for improving NNetEn entropy calculation for short and\n  noisy time series",
+  "abstract": "  Entropy is a fundamental concept in the field of information theory. During measurement, conventional entropy measures are susceptible to length and amplitude changes in time series. A new entropy metric, neural network entropy (NNetEn), has been developed to overcome these limitations. NNetEn entropy is computed using a modified LogNNet neural network classification model. The algorithm contains a reservoir matrix of N=19625 elements that must be filled with the given data. The contribution of this paper is threefold. Firstly, this work investigates different methods of filling the reservoir with time series (signal) elements. The reservoir filling method determines the accuracy of the entropy estimation by convolution of the study time series and LogNNet test data. The present study proposes 6 methods for filling the reservoir for time series. Two of them (Method 3 and Method 6) employ the novel approach of stretching the time series to create intermediate elements that complement it, but do not change its dynamics. The most reliable methods for short time series are Method 3 and Method 5. The second part of the study examines the influence of noise and constant bias on entropy values. Our study examines three different time series data types (chaotic, periodic, and binary) with different dynamic properties, Signal to Noise Ratio (SNR), and offsets. The NNetEn entropy calculation errors are less than 10% when SNR is greater than 30 dB, and entropy decreases with an increase in the bias component. The third part of the article analyzes real-time biosignal EEG data collected from emotion recognition experiments. The NNetEn measures show robustness under low-amplitude noise using various filters. Thus, NNetEn measures entropy effectively when applied to real-world environments with ambient noise, white noise, and 1/f noise. "
+}

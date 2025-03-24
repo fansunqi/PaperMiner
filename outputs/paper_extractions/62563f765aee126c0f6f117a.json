@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/GGchen1997/STEPS_Bioinformatics"
+  ],
+  "tasks": [
+    "Protein representation learning",
+    "Protein classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Structure-aware protein self-supervised learning",
+    "Graph neural network (GNN) model",
+    "Pseudo bi-level optimization scheme"
+  ],
+  "results": [
+    "Effectiveness verified on several supervised downstream tasks"
+  ],
+  "paper_id": "62563f765aee126c0f6f117a",
+  "title": "Structure-aware Protein Self-supervised Learning",
+  "abstract": "  Protein representation learning methods have shown great potential to yield useful representation for many downstream tasks, especially on protein classification. Moreover, a few recent studies have shown great promise in addressing insufficient labels of proteins with self-supervised learning methods. However, existing protein language models are usually pretrained on protein sequences without considering the important protein structural information. To this end, we propose a novel structure-aware protein self-supervised learning method to effectively capture structural information of proteins. In particular, a well-designed graph neural network (GNN) model is pretrained to preserve the protein structural information with self-supervised tasks from a pairwise residue distance perspective and a dihedral angle perspective, respectively. Furthermore, we propose to leverage the available protein language model pretrained on protein sequences to enhance the self-supervised learning. Specifically, we identify the relation between the sequential information in the protein language model and the structural information in the specially designed GNN model via a novel pseudo bi-level optimization scheme. Experiments on several supervised downstream tasks verify the effectiveness of our proposed method.The code of the proposed method is available in \\url{https://github.com/GGchen1997/STEPS_Bioinformatics}. "
+}

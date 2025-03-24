@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Single Image Defogging"
+  ],
+  "datasets": [
+    "synthetic and real-world datasets"
+  ],
+  "methods": [
+    "Quad-Path Cycle Consistent Adversarial Network (QPC-Net)",
+    "Fog2Fogfree block",
+    "Fogfree2Fog block",
+    "color-texture recovery model",
+    "atmospheric scattering model",
+    "sky segmentation network"
+  ],
+  "results": [
+    "QPC-Net outperforms state-of-the-art defogging methods in quantitative accuracy and subjective visual quality"
+  ],
+  "paper_id": "621454535aee126c0f200512",
+  "title": "Unpaired Quad-Path Cycle Consistent Adversarial Networks for Single\n  Image Defogging",
+  "abstract": "  Adversarial learning-based image defogging methods have been extensively studied in computer vision due to their remarkable performance. However, most existing methods have limited defogging capabilities for real cases because they are trained on the paired clear and synthesized foggy images of the same scenes. In addition, they have limitations in preserving vivid color and rich textual details in defogging. To address these issues, we develop a novel generative adversarial network, called quad-path cycle consistent adversarial network (QPC-Net), for single image defogging. QPC-Net consists of a Fog2Fogfree block and a Fogfree2Fog block. In each block, there are three learning-based modules, namely, fog removal, color-texture recovery, and fog synthetic, which sequentially compose dual-path that constrain each other to generate high quality images. Specifically, the color-texture recovery model is designed to exploit the self-similarity of texture and structure information by learning the holistic channel-spatial feature correlations between the foggy image with its several derived images. Moreover, in the fog synthetic module, we utilize the atmospheric scattering model to guide it to improve the generative quality by focusing on an atmospheric light optimization with a novel sky segmentation network. Extensive experiments on both synthetic and real-world datasets show that QPC-Net outperforms state-of-the-art defogging methods in terms of quantitative accuracy and subjective visual quality. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Low-rank tensor completion",
+    "Tensor robust principal component analysis"
+  ],
+  "datasets": [
+    "Synthetic data",
+    "Real data"
+  ],
+  "methods": [
+    "Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization"
+  ],
+  "results": [
+    "Sharper rank proxy for low-rank tensor recovery compared to nuclear norm",
+    "Tighter error bound with sharper regularizer",
+    "For LRTC on d-order tensors, p=1/d better than p>1/d in generalization ability",
+    "Recovery error bound for small p in Schatten-p quasi-norm for TRPCA"
+  ],
+  "paper_id": "5fcf62aa91e011f4c80badc9",
+  "title": "Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank\n  Tensor Completion and Tensor Robust Principal Component Analysis",
+  "abstract": "  The nuclear norm and Schatten-$p$ quasi-norm are popular rank proxies in low-rank matrix recovery. However, computing the nuclear norm or Schatten-$p$ quasi-norm of a tensor is hard in both theory and practice, hindering their application to low-rank tensor completion (LRTC) and tensor robust principal component analysis (TRPCA). In this paper, we propose a new class of tensor rank regularizers based on the Euclidean norms of the CP component vectors of a tensor and show that these regularizers are monotonic transformations of tensor Schatten-$p$ quasi-norm. This connection enables us to minimize the Schatten-$p$ quasi-norm in LRTC and TRPCA implicitly via the component vectors. The method scales to big tensors and provides an arbitrarily sharper rank proxy for low-rank tensor recovery compared to the nuclear norm. On the other hand, we study the generalization abilities of LRTC with the Schatten-$p$ quasi-norm regularizer and LRTC with the proposed regularizers. The theorems show that a relatively sharper regularizer leads to a tighter error bound, which is consistent with our numerical results. Particularly, we prove that for LRTC with Schatten-$p$ quasi-norm regularizer on $d$-order tensors, $p=1/d$ is always better than any $p>1/d$ in terms of the generalization ability. We also provide a recovery error bound to verify the usefulness of small $p$ in the Schatten-$p$ quasi-norm for TRPCA. Numerical results on synthetic data and real data demonstrate the effectiveness of the regularization methods and theorems. "
+}

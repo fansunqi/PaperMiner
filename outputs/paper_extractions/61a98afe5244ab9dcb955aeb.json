@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Modality Representation Learning"
+  ],
+  "datasets": [
+    "RGB-Depth SOD",
+    "RGB-NIR object ReID"
+  ],
+  "methods": [
+    "MutualFormer",
+    "Cross-Diffusion Attention (CDA)"
+  ],
+  "results": [
+    "Extensive experiments demonstrate the effectiveness of the proposed MutualFormer"
+  ],
+  "paper_id": "61a98afe5244ab9dcb955aeb",
+  "title": "MutualFormer: Multi-Modality Representation Learning via Cross-Diffusion\n  Attention",
+  "abstract": "  Aggregating multi-modality data to obtain reliable data representation attracts more and more attention. Recent studies demonstrate that Transformer models usually work well for multi-modality tasks. Existing Transformers generally either adopt the Cross-Attention (CA) mechanism or simple concatenation to achieve the information interaction among different modalities which generally ignore the issue of modality gap. In this work, we re-think Transformer and extend it to MutualFormer for multi-modality data representation. Rather than CA in Transformer, MutualFormer employs our new design of Cross-Diffusion Attention (CDA) to conduct the information communication among different modalities. Comparing with CA, the main advantages of the proposed CDA are three aspects. First, the crossaffinities in CDA are defined based on the individual modality affinities in the metric space which thus can naturally avoid the issue of modality/domain gap in feature based CA definition. Second, CDA provides a general scheme which can either be used for multimodality representation or serve as the post-optimization for existing CA models. Third, CDA is implemented efficiently. We successfully apply the MutualFormer on different multi-modality learning tasks (i.e., RGB-Depth SOD, RGB-NIR object ReID). Extensive experiments demonstrate the effectiveness of the proposed MutualFormer. "
+}

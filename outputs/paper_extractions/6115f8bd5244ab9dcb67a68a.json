@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Study theoretical properties of orthogonal convolutional layers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Orthogonal convolutional transform",
+    "Regularization term for orthogonality",
+    "Link between regularization term and orthogonality measures"
+  ],
+  "results": [
+    "Orthogonal convolutional transforms exist for almost all practical architectures with 'circular' padding",
+    "Regularization strategy is stable with respect to numerical and optimization errors",
+    "Convolutional layers remain close to isometric in presence of small errors and large signal/image size",
+    "Tradeoff between accuracy and orthogonality can be tuned for both accuracy and robustness"
+  ],
+  "paper_id": "6115f8bd5244ab9dcb67a68a",
+  "title": "Existence, Stability and Scalability of Orthogonal Convolutional Neural\n  Networks",
+  "abstract": "  Imposing orthogonality on the layers of neural networks is known to facilitate the learning by limiting the exploding/vanishing of the gradient; decorrelate the features; improve the robustness. This paper studies the theoretical properties of orthogonal convolutional layers.We establish necessary and sufficient conditions on the layer architecture guaranteeing the existence of an orthogonal convolutional transform. The conditions prove that orthogonal convolutional transforms exist for almost all architectures used in practice for 'circular' padding.We also exhibit limitations with 'valid' boundary conditions and 'same' boundary conditions with zero-padding.Recently, a regularization term imposing the orthogonality of convolutional layers has been proposed, and impressive empirical results have been obtained in different applications (Wang et al. 2020).The second motivation of the present paper is to specify the theory behind this.We make the link between this regularization term and orthogonality measures. In doing so, we show that this regularization strategy is stable with respect to numerical and optimization errors and that, in the presence of small errors and when the size of the signal/image is large, the convolutional layers remain close to isometric.The theoretical results are confirmed with experiments and the landscape of the regularization term is studied. Experiments on real data sets show that when orthogonality is used to enforce robustness, the parameter multiplying the regularization termcan be used to tune a tradeoff between accuracy and orthogonality, for the benefit of both accuracy and robustness.Altogether, the study guarantees that the regularization proposed in Wang et al. (2020) is an efficient, flexible and stable numerical strategy to learn orthogonal convolutional layers. "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/neergaard/msed.git"
+  ],
+  "tasks": [
+    "multi-modal sleep event detection",
+    "clinical sleep analysis"
+  ],
+  "datasets": [
+    "1653 individual recordings",
+    "1000 separate hold-out recordings"
+  ],
+  "methods": [
+    "deep neural network event detection model",
+    "joint model vs single-event models"
+  ],
+  "results": [
+    "F1 scores: 0.70 (arousals), 0.63 (leg movements), 0.62 (sleep disordered breathing) for joint model",
+    "F1 scores: 0.65, 0.61, 0.60 for single-event models",
+    "Index values correlation ($r^2$): 0.73, 0.77, 0.78",
+    "Improved temporal difference metrics with joint model",
+    "Overall increase in F1 score compared to previous state-of-the-art models",
+    "97.5% reduction in model size"
+  ],
+  "paper_id": "5ff831cd91e0116ed225e2db",
+  "title": "MSED: a multi-modal sleep event detection model for clinical sleep\n  analysis",
+  "abstract": "  Clinical sleep analysis require manual analysis of sleep patterns for correct diagnosis of sleep disorders. However, several studies have shown significant variability in manual scoring of clinically relevant discrete sleep events, such as arousals, leg movements, and sleep disordered breathing (apneas and hypopneas). We investigated whether an automatic method could be used for event detection and if a model trained on all events (joint model) performed better than corresponding event-specific models (single-event models). We trained a deep neural network event detection model on 1653 individual recordings and tested the optimized model on 1000 separate hold-out recordings. F1 scores for the optimized joint detection model were 0.70, 0.63, and 0.62 for arousals, leg movements, and sleep disordered breathing, respectively, compared to 0.65, 0.61, and 0.60 for the optimized single-event models. Index values computed from detected events correlated positively with manual annotations ($r^2$ = 0.73, $r^2$ = 0.77, $r^2$ = 0.78, respectively). We furthermore quantified model accuracy based on temporal difference metrics, which improved overall by using the joint model compared to single-event models. Our automatic model jointly detects arousals, leg movements and sleep disordered breathing events with high correlation with human annotations. Finally, we benchmark against previous state-of-the-art multi-event detection models and found an overall increase in F1 score with our proposed model despite a 97.5% reduction in model size. Source code for training and inference is available at https://github.com/neergaard/msed.git. "
+}

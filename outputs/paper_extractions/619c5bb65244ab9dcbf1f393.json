@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning",
+    "Domain Generalization"
+  ],
+  "datasets": [
+    "various datasets"
+  ],
+  "methods": [
+    "FedADG",
+    "federated adversarial learning",
+    "distribution alignment",
+    "reference distribution generation"
+  ],
+  "results": [
+    "comparable performance with the state-of-the-art"
+  ],
+  "paper_id": "619c5bb65244ab9dcbf1f393",
+  "title": "Federated Learning with Domain Generalization",
+  "abstract": "  Federated Learning (FL) enables a group of clients to jointly train a machine learning model with the help of a centralized server. Clients do not need to submit their local data to the server during training, and hence the local training data of clients is protected. In FL, distributed clients collect their local data independently, so the dataset of each client may naturally form a distinct source domain. In practice, the model trained over multiple source domains may have poor generalization performance on unseen target domains. To address this issue, we propose FedADG to equip federated learning with domain generalization capability. FedADG employs the federated adversarial learning approach to measure and align the distributions among different source domains via matching each distribution to a reference distribution. The reference distribution is adaptively generated (by accommodating all source domains) to minimize the domain shift distance during alignment. In FedADG, the alignment is fine-grained since each class is aligned independently. In this way, the learned feature representation is supposed to be universal, so it can generalize well on the unseen domains. Intensive experiments on various datasets demonstrate that FedADG has comparable performance with the state-of-the-art. "
+}

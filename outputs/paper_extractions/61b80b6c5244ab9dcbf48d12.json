@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Industrial bin picking of entangled wire harnesses"
+  ],
+  "datasets": [
+    "Real-world data for wire harness picking"
+  ],
+  "methods": [
+    "Grasp and extract following a circle-like trajectory",
+    "Policy learning from visual observation"
+  ],
+  "results": [
+    "Overall 84.6% success rate compared to 49.2% in baseline",
+    "Effective under different clutter scenarios with unseen wire harness types"
+  ],
+  "paper_id": "61b80b6c5244ab9dcbf48d12",
+  "title": "Learning Efficient Policies for Picking Entangled Wire Harnesses: An\n  Approach to Industrial Bin Picking",
+  "abstract": "  Wire harnesses are essential connecting components in manufacturing industry but are challenging to be automated in industrial tasks such as bin picking. They are long, flexible and tend to get entangled when randomly placed in a bin. This makes it difficult for the robot to grasp a single one in dense clutter. Besides, training or collecting data in simulation is challenging due to the difficulties in modeling the combination of deformable and rigid components for wire harnesses. In this work, instead of directly lifting wire harnesses, we propose to grasp and extract the target following a circle-like trajectory until it is untangled. We learn a policy from real-world data that can infer grasps and separation actions from visual observation. Our policy enables the robot to efficiently pick and separate entangled wire harnesses by maximizing success rates and reducing execution time. To evaluate our policy, we present a set of real-world experiments on picking wire harnesses. Our policy achieves an overall 84.6% success rate compared with 49.2% in baseline. We also evaluate the effectiveness of our policy under different clutter scenarios using unseen types of wire harnesses. Results suggest that our approach is feasible for handling wire harnesses in industrial bin picking. "
+}

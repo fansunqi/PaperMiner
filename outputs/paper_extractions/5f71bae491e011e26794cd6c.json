@@ -1,0 +1,20 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "assembly planning",
+    "connected assembly partitioning"
+  ],
+  "datasets": "None",
+  "methods": [
+    "Fixed-parameter tractable algorithm",
+    "Dynamic programming",
+    "Graph-based approach"
+  ],
+  "results": [
+    "Proved NP-completeness for 3D assembly planning with connectivity",
+    "Developed FPT algorithm for 2D assembly planning"
+  ],
+  "paper_id": "5f71bae491e011e26794cd6c",
+  "title": "On Two-Handed Planar Assembly Partitioning with Connectivity Constraints",
+  "abstract": "  Assembly planning is a fundamental problem in robotics and automation, which involves designing a sequence of motions to bring the separate constituent parts of a product into their final placement in the product. Assembly planning is naturally cast as a disassembly problem, giving rise to the assembly partitioning problem: Given a set $A$ of parts, find a subset $S\\subset A$, referred to as a subassembly, such that $S$ can be rigidly translated to infinity along a prescribed direction without colliding with $A\\setminus S$. While assembly partitioning is efficiently solvable, it is further desirable for the parts of a subassembly to be easily held together. This motivates the problem that we study, called connected-assembly-partitioning, which additionally requires each of the two subassemblies, $S$ and $A\\setminus S$, to be connected. We show that this problem is NP-complete, settling an open question posed by Wilson et al. (1995) a quarter of a century ago, even when $A$ consists of unit-grid squares (i.e., $A$ is polyomino-shaped). Towards this result, we prove the NP-hardness of a new Planar 3-SAT variant having an adjacency requirement for variables appearing in the same clause, which may be of independent interest. On the positive side, we give an $O(2^k n^2)$-time fixed-parameter tractable algorithm (requiring low degree polynomial-time pre-processing) for an assembly $A$ consisting of polygons in the plane, where $n=|A|$ and $k=|S|$. We also describe a special case of unit-grid square assemblies, where a connected partition can always be found in $O(n)$-time. "
+}

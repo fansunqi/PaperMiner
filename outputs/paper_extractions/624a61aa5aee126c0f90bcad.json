@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "2D Visual Localization"
+  ],
+  "datasets": [
+    "ZInD",
+    "Structured3D"
+  ],
+  "methods": [
+    "LASER: Latent Space Rendering",
+    "Monte Carlo Localization",
+    "Rendering Codebook Scheme",
+    "Metric Learning"
+  ],
+  "results": [
+    "State-of-the-art performance on large-scale indoor localization datasets",
+    "Significantly outperforms existing learning-based methods in speed",
+    "Latent space rendering runs at speeds above 10KHz"
+  ],
+  "paper_id": "624a61aa5aee126c0f90bcad",
+  "title": "LASER: LAtent SpacE Rendering for 2D Visual Localization",
+  "abstract": "  We present LASER, an image-based Monte Carlo Localization (MCL) framework for 2D floor maps. LASER introduces the concept of latent space rendering, where 2D pose hypotheses on the floor map are directly rendered into a geometrically-structured latent space by aggregating viewing ray features. Through a tightly coupled rendering codebook scheme, the viewing ray features are dynamically determined at rendering-time based on their geometries (i.e. length, incident-angle), endowing our representation with view-dependent fine-grain variability. Our codebook scheme effectively disentangles feature encoding from rendering, allowing the latent space rendering to run at speeds above 10KHz. Moreover, through metric learning, our geometrically-structured latent space is common to both pose hypotheses and query images with arbitrary field of views. As a result, LASER achieves state-of-the-art performance on large-scale indoor localization datasets (i.e. ZInD and Structured3D) for both panorama and perspective image queries, while significantly outperforming existing learning-based methods in speed. "
+}

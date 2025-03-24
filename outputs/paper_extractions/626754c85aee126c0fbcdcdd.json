@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Orienteering Problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Decomposition into Knapsack Problem (KP) and Traveling Salesman Problem (TSP)",
+    "Dual-population coevolutionary algorithm (DPCA) for KP",
+    "Dynamic pointer network (DYPN) for TSP",
+    "Reinforcement learning for training"
+  ],
+  "results": [
+    "Outperforms conventional approaches in training, inference, and generalization ability"
+  ],
+  "paper_id": "626754c85aee126c0fbcdcdd",
+  "title": "Deep Reinforcement Learning for Orienteering Problems Based on\n  Decomposition",
+  "abstract": "  This paper presents a new method for solving an orienteering problem (OP) by breaking it down into two parts: a knapsack problem (KP) and a traveling salesman problem (TSP). A KP solver is responsible for picking nodes, while a TSP solver is responsible for designing the proper path and assisting the KP solver in judging constraint violations. To address constraints, we propose a dual-population coevolutionary algorithm (DPCA) as the KP solver, which simultaneously maintains both feasible and infeasible populations. A dynamic pointer network (DYPN) is introduced as the TSP solver, which takes city locations as inputs and immediately outputs a permutation of nodes. The model, which is trained by reinforcement learning, can capture both the structural and dynamic patterns of the given problem. The model can generalize to other instances with different scales and distributions. Experimental results show that the proposed algorithm can outperform conventional approaches in terms of training, inference, and generalization ability. "
+}

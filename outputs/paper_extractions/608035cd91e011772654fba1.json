@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating inertial properties of unknown objects"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Learning-based approach",
+    "Neural network for estimating joint torques from encoder discrepancies",
+    "Closed-form relation derivation",
+    "Weighted least squares for mass and COM identification",
+    "Attention model for joint weights"
+  ],
+  "results": [
+    "Accurate estimation of mass and COM without force/torque sensors",
+    "Demonstrated on a 4 DOF robot arm"
+  ],
+  "paper_id": "608035cd91e011772654fba1",
+  "title": "A Learning-Based Approach for Estimating Inertial Properties of Unknown\n  Objects from Encoder Discrepancies",
+  "abstract": "  Many robots utilize commercial force/torque sensors to identify inertial properties of unknown objects. However, such sensors can be difficult to apply to small-sized robots due to their weight, size, and cost. In this paper, we propose a learning-based approach for estimating the mass and center of mass (COM) of unknown objects without using force/torque sensors at the end-effector or on the joints. In our method, a robot arm carries an unknown object as it moves through multiple discrete configurations. Measurements are collected when the robot reaches each discrete configuration and stops. A neural network is designed to estimate joint torques from encoder discrepancies. Given multiple samples, we derive the closed-form relation between joint torques and the object's inertial properties. Based on the derivation, the mass and COM of object are identified by weighted least squares. In order to improve the accuracy of inferred inertial properties, an attention model is designed to generate weights of joints, which indicate the relative importance for each joint. Our framework requires only encoder measurements without using any force/torque sensors, but still maintains accurate estimation capability. The proposed approach has been demonstrated on a 4 degree of freedom (DOF) robot arm. "
+}

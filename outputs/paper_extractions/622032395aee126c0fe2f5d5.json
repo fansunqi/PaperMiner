@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Protein structure prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FastFold",
+    "Dynamic Axial Parallelism",
+    "Duality Async Operations",
+    "AutoChunk"
+  ],
+  "results": [
+    "Reduces AlphaFold training time from 11 days to 67 hours",
+    "7.5X - 9.5X speedup for long-sequence inference",
+    "512 GPUs achieve 6.02 PetaFLOP/s with 90.1% parallel efficiency"
+  ],
+  "paper_id": "622032395aee126c0fe2f5d5",
+  "title": "FastFold: Reducing AlphaFold Training Time from 11 Days to 67 Hours",
+  "abstract": "  Protein structure prediction helps to understand gene translation and protein function, which is of growing interest and importance in structural biology. The AlphaFold model, which used transformer architecture to achieve atomic-level accuracy in protein structure prediction, was a significant breakthrough. However, training and inference of the AlphaFold model are challenging due to its high computation and memory cost. In this work, we present FastFold, an efficient implementation of AlphaFold for both training and inference. We propose Dynamic Axial Parallelism and Duality Async Operations to improve the scaling efficiency of model parallelism. Besides, AutoChunk is proposed to reduce memory cost by over 80% during inference by automatically determining the chunk strategy. Experimental results show that FastFold reduces overall training time from 11 days to 67 hours and achieves 7.5X - 9.5X speedup for long-sequence inference. Furthermore, we scale FastFold to 512 GPUs and achieve an aggregate throughput of 6.02 PetaFLOP/s with 90.1% parallel efficiency. "
+}

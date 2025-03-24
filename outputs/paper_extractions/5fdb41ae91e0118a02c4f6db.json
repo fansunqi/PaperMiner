@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Software obfuscation",
+    "Protection against reverse engineering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ROPfuscator",
+    "Return-oriented programming (ROP)",
+    "Opaque predicates",
+    "Instruction hiding"
+  ],
+  "results": [
+    "Thorough evaluation under a unified threat model",
+    "Addresses code coverage, overhead, correctness, robustness, and practicality challenges"
+  ],
+  "paper_id": "5fdb41ae91e0118a02c4f6db",
+  "title": "ROPfuscator: Robust Obfuscation with ROP",
+  "abstract": "  Software obfuscation plays a crucial role in protecting intellectual property in software from reverse engineering attempts. While some obfuscation techniques originate from the obfuscation-reverse engineering arms race, others stem from different research areas, such as binary software exploitation. Return-oriented programming (ROP) gained popularity as one of the most effective exploitation techniques for memory error vulnerabilities. ROP interferes with our natural perception of a process control flow, inspiring us to repurpose ROP as a robust and effective form of software obfuscation. Although previous work already explores ROP's effectiveness as an obfuscation technique, evolving reverse engineering research raises the need for principled reasoning to understand the strengths and limitations of ROP-based mechanisms against man-at-the-end (MATE) attacks. To this end, we present ROPfuscator, a compiler-driven obfuscation pass based on ROP for any programming language supported by LLVM. We incorporate opaque predicates and constants and a novel instruction hiding technique to withstand sophisticated MATE attacks. More importantly, we introduce a realistic and unified threat model to thoroughly evaluate ROPfuscator and provide principled reasoning on ROP-based obfuscation techniques that answer to code coverage, incurred overhead, correctness, robustness, and practicality challenges. "
+}

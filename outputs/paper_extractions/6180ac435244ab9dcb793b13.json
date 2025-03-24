@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Detecting and mitigating malicious source code encoding vulnerabilities"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Trojan Source attack exploitation of text-encoding standards",
+    "Compiler-level defenses",
+    "Mitigating controls in editors, repositories, and build pipelines"
+  ],
+  "results": [
+    "Working examples of Trojan Source attacks in multiple programming languages",
+    "Industry-wide coordinated disclosure of vulnerabilities",
+    "Documentation of response strategies from various stakeholders"
+  ],
+  "paper_id": "6180ac435244ab9dcb793b13",
+  "title": "Trojan Source: Invisible Vulnerabilities",
+  "abstract": "  We present a new type of attack in which source code is maliciously encoded so that it appears different to a compiler and to the human eye. This attack exploits subtleties in text-encoding standards such as Unicode to produce source code whose tokens are logically encoded in a different order from the one in which they are displayed, leading to vulnerabilities that cannot be perceived directly by human code reviewers. 'Trojan Source' attacks, as we call them, pose an immediate threat both to first-party software and of supply-chain compromise across the industry. We present working examples of Trojan Source attacks in C, C++, C#, JavaScript, Java, Rust, Go, Python, SQL, Bash, Assembly, and Solidity. We propose definitive compiler-level defenses, and describe other mitigating controls that can be deployed in editors, repositories, and build pipelines while compilers are upgraded to block this attack. We document an industry-wide coordinated disclosure for these vulnerabilities; as they affect most compilers, editors, and repositories, the exercise teaches how different firms, open-source communities, and other stakeholders respond to vulnerability disclosure. "
+}

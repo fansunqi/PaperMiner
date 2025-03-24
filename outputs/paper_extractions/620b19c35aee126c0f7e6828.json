@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Captioning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "I-Tuning",
+    "I-Tuning cross-attention module",
+    "GPT2",
+    "CLIP-ViT"
+  ],
+  "results": [
+    "Comparable or better performance than large-scale baseline systems",
+    "Up to 10 times fewer trainable parameters",
+    "Much fewer data required for training compared to state-of-the-art baselines"
+  ],
+  "paper_id": "620b19c35aee126c0f7e6828",
+  "title": "I-Tuning: Tuning Frozen Language Models with Image for Lightweight Image\n  Captioning",
+  "abstract": "  Image Captioning is a traditional vision-and-language task that aims to generate the language description of an image. Recent studies focus on scaling up the model size and the number of training data, which significantly increase the cost of model training. Different to these heavy-cost models, we introduce a lightweight image captioning framework (I-Tuning), which contains a small number of trainable parameters. We design a novel I-Tuning cross-attention module to connect the non-trainable pre-trained language decoder GPT2 and vision encoder CLIP-ViT. Since most parameters are not required to be updated during training, our framework is lightweight and fast. Experimental results conducted on three image captioning benchmarks reveal that our framework achieves comparable or better performance than the large-scale baseline systems. But our models contain up to 10 times fewer trainable parameters and require much fewer data for training compared with state-of-the-art baselines. "
+}

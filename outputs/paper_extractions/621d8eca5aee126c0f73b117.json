@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Depth Estimation"
+  ],
+  "datasets": [
+    "nuScenes"
+  ],
+  "methods": [
+    "Radar Inference Experiment",
+    "Radar Supervision Experiment"
+  ],
+  "results": [
+    "Model using only sparse radar can detect surroundings shape in predicted depth",
+    "Monocular depth estimation model supervised by radar achieves good performance compared to sparse lidar baseline"
+  ],
+  "paper_id": "621d8eca5aee126c0f73b117",
+  "title": "How Much Depth Information can Radar Contribute to a Depth Estimation\n  Model?",
+  "abstract": "  Recently, several works have proposed fusing radar data as an additional perceptual signal into monocular depth estimation models because radar data is robust against varying light and weather conditions. Although improved performances were reported in prior works, it is still hard to tell how much depth information radar can contribute to a depth estimation model. In this paper, we propose radar inference and supervision experiments to investigate the intrinsic depth potential of radar data using state-of-the-art depth estimation models on the nuScenes dataset. In the inference experiment, the model predicts depth by taking only radar as input to demonstrate the inference capability using radar data. In the supervision experiment, a monocular depth estimation model is trained under radar supervision to show the intrinsic depth information that radar can contribute. Our experiments demonstrate that the model using only sparse radar as input can detect the shape of surroundings to a certain extent in the predicted depth. Furthermore, the monocular depth estimation model supervised by preprocessed radar achieves a good performance compared to the baseline model trained with sparse lidar supervision. "
+}

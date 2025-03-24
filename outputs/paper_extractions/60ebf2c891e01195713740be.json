@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning structured approximations for combinatorial optimization problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Equivariant layers for machine learning pipelines",
+    "Learning approach for training with instances only",
+    "Statistical learning theory for convergence speed proof"
+  ],
+  "results": [
+    "Retains approximation ratio guarantee if encodable by pipeline",
+    "On network design problem, matches best approximation algorithm's guarantee and best heuristic's efficiency"
+  ],
+  "paper_id": "60ebf2c891e01195713740be",
+  "title": "Learning structured approximations of combinatorial optimization\n  problems",
+  "abstract": "  Machine learning pipelines that include a combinatorial optimization layer can give surprisingly efficient heuristics for difficult combinatorial optimization problems. Three questions remain open: which architecture should be used, how should the parameters of the machine learning model be learned, and what performance guarantees can we expect from the resulting algorithms? Following the intuitions of geometric deep learning, we explain why equivariant layers should be used when designing such pipelines, and illustrate how to build such layers on routing, scheduling, and network design applications. We introduce a learning approach that enables to learn such pipelines when the training set contains only instances of the difficult optimization problem and not their optimal solutions, and show its numerical performance on our three applications. Finally, using tools from statistical learning theory, we prove a theorem showing the convergence speed of the estimator. As a corollary, we obtain that, if an approximation algorithm can be encoded by the pipeline for some parametrization, then the learned pipeline will retain the approximation ratio guarantee. On our network design problem, our machine learning pipeline has the approximation ratio guarantee of the best approximation algorithm known and the numerical efficiency of the best heuristic. "
+}

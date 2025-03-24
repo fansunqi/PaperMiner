@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Advanced Tucker-based lossy compression of dense multidimensional numerical data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hybrid truncation scheme combining Tucker rank truncation and TTHRESH quantization",
+    "Parallelized quantization and encoding scheme",
+    "ST-HOSVD procedure using only a single transposition"
+  ],
+  "results": [
+    "Maintains state-of-the-art Tucker compression rates",
+    "Average speed-up factors of 2.2-3.5",
+    "Halves memory usage",
+    "Precise error control, deviating only 1.4% from requested error on average",
+    "Higher compression than non-Tucker-based compressors in high-error domain"
+  ],
+  "paper_id": "60e42cf4dfae54001623be14",
+  "title": "ATC: an Advanced Tucker Compression library for multidimensional data",
+  "abstract": "  We present ATC, a C++ library for advanced Tucker-based lossy compression of dense multidimensional numerical data in a shared-memory parallel setting, based on the sequentially truncated higher-order singular value decomposition (ST-HOSVD) and bit plane truncation. Several techniques are proposed to improve speed, memory usage, error control and compression rate. First, a hybrid truncation scheme is described which combines Tucker rank truncation and TTHRESH quantization [Ballester-Ripoll et al., IEEE Trans. Visual. Comput. Graph., 2020]. We derive a novel expression to approximate the error of truncated Tucker decompositions in the case of core and factor perturbations. Furthermore, we parallelize the quantization and encoding scheme and adjust this phase to improve error control. Moreover, implementation aspects are described, such as an ST-HOSVD procedure using only a single transposition. We also discuss several usability features of ATC, including the presence of multiple interfaces, extensive data type support and integrated downsampling of the decompressed data. Numerical results show that ATC maintains state-of-the-art Tucker compression rates, while providing average speed-up factors of 2.2-3.5 and halving memory usage. Furthermore, our compressor provides precise error control, only deviating 1.4% from the requested error on average. Finally, ATC often achieves higher compression than non-Tucker-based compressors in the high-error domain. "
+}

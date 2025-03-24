@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Distributional Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unconstrained Monotonic Neural Networks (UMNN)",
+    "Unconstrained Monotonic Deep Q-Network (UMDQN)",
+    "Learning PDF, CDF, and QF representations of random return distribution"
+  ],
+  "results": [
+    "Empirical comparison of Kullback-Leibler divergence, Cramer distance, and Wasserstein distance",
+    "Highlights strengths and weaknesses of each probability metric",
+    "Identifies limitation of Wasserstein distance"
+  ],
+  "paper_id": "60c191da91e0112cf43c20a0",
+  "title": "Distributional Reinforcement Learning with Unconstrained Monotonic\n  Neural Networks",
+  "abstract": "  The distributional reinforcement learning (RL) approach advocates for representing the complete probability distribution of the random return instead of only modelling its expectation. A distributional RL algorithm may be characterised by two main components, namely the representation of the distribution together with its parameterisation and the probability metric defining the loss. The present research work considers the unconstrained monotonic neural network (UMNN) architecture, a universal approximator of continuous monotonic functions which is particularly well suited for modelling different representations of a distribution. This property enables the efficient decoupling of the effect of the function approximator class from that of the probability metric. The research paper firstly introduces a methodology for learning different representations of the random return distribution (PDF, CDF and QF). Secondly, a novel distributional RL algorithm named unconstrained monotonic deep Q-network (UMDQN) is presented. To the authors' knowledge, it is the first distributional RL method supporting the learning of three, valid and continuous representations of the random return distribution. Lastly, in light of this new algorithm, an empirical comparison is performed between three probability quasi-metrics, namely the Kullback-Leibler divergence, Cramer distance, and Wasserstein distance. The results highlight the main strengths and weaknesses associated with each probability metric together with an important limitation of the Wasserstein distance. "
+}

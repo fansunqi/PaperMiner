@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/Schizophreni/MSResNet-TRNR"
+  ],
+  "tasks": [
+    "Image rain and noise removal"
+  ],
+  "datasets": [
+    "Rain100H"
+  ],
+  "methods": [
+    "TRNR (Task-Driven Image Rain and Noise Removal)",
+    "Patch analysis strategy",
+    "N-frequency-K-shot learning",
+    "MSResNet (Multi-Scale Residual Network)"
+  ],
+  "results": [
+    "TRNR enables MSResNet to learn more effectively when data is scarce",
+    "MSResNet trained with a few images using TRNR outperforms most recent deep learning methods trained on large labeled datasets"
+  ],
+  "paper_id": "61ad7f4f5244ab9dcbc6cff4",
+  "title": "TRNR: Task-Driven Image Rain and Noise Removal with a Few Images Based\n  on Patch Analysis",
+  "abstract": "  The recent success of learning-based image rain and noise removal can be attributed primarily to well-designed neural network architectures and large labeled datasets. However, we discover that current image rain and noise removal methods result in low utilization of images. To alleviate the reliance of deep models on large labeled datasets, we propose the task-driven image rain and noise removal (TRNR) based on a patch analysis strategy. The patch analysis strategy samples image patches with various spatial and statistical properties for training and can increase image utilization. Furthermore, the patch analysis strategy encourages us to introduce the N-frequency-K-shot learning task for the task-driven approach TRNR. TRNR allows neural networks to learn from numerous N-frequency-K-shot learning tasks, rather than from a large amount of data. To verify the effectiveness of TRNR, we build a Multi-Scale Residual Network (MSResNet) for both image rain removal and Gaussian noise removal. Specifically, we train MSResNet for image rain removal and noise removal with a few images (for example, 20.0\\% train-set of Rain100H). Experimental results demonstrate that TRNR enables MSResNet to learn more effectively when data is scarce. TRNR has also been shown in experiments to improve the performance of existing methods. Furthermore, MSResNet trained with a few images using TRNR outperforms most recent deep learning methods trained data-driven on large labeled datasets. These experimental results have confirmed the effectiveness and superiority of the proposed TRNR. The source code is available on \\url{https://github.com/Schizophreni/MSResNet-TRNR}. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving partial differential equations",
+    "Learning finite difference methods"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-informed neural networks (PINNs)",
+    "Five-point stencil CNNs (FCNNs)"
+  ],
+  "results": [
+    "FCNNs achieve low relative errors for diverse reaction-diffusion evolutions",
+    "FCNNs can be trained well with noisy data"
+  ],
+  "paper_id": "61d7af785244ab9dcb50a091",
+  "title": "Learning finite difference methods for reaction-diffusion type equations\n  with FCNN",
+  "abstract": "  In recent years, Physics-informed neural networks (PINNs) have been widely used to solve partial differential equations alongside numerical methods because PINNs can be trained without observations and deal with continuous-time problems directly. In contrast, optimizing the parameters of such models is difficult, and individual training sessions must be performed to predict the evolutions of each different initial condition. To alleviate the first problem, observed data can be injected directly into the loss function part. To solve the second problem, a network architecture can be built as a framework to learn a finite difference method. In view of the two motivations, we propose Five-point stencil CNNs (FCNNs) containing a five-point stencil kernel and a trainable approximation function for reaction-diffusion type equations including the heat, Fisher's, Allen-Cahn, and other reaction-diffusion equations with trigonometric function terms. We show that FCNNs can learn finite difference schemes using few data and achieve the low relative errors of diverse reaction-diffusion evolutions with unseen initial conditions. Furthermore, we demonstrate that FCNNs can still be trained well even with using noisy data. "
+}

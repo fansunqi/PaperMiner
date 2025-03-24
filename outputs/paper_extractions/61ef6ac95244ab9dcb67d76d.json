@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "FPGA-accelerated middlebox development"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Rosebud framework",
+    "Decoupling hardware-accelerator implementation and software-application programming",
+    "Standardized hardware/software interface"
+  ],
+  "results": [
+    "Firewall built in less than a month",
+    "Serves ~200 Gbps of traffic",
+    "Adds only 0.7-7 microseconds of latency"
+  ],
+  "paper_id": "61ef6ac95244ab9dcb67d76d",
+  "title": "Rosebud: Making FPGA-Accelerated Middlebox Development More Pleasant",
+  "abstract": "  We introduce an approach to designing FPGA-accelerated middleboxes that simplifies development, debugging, and performance tuning by decoupling the tasks of hardware-accelerator implementation and software-application programming. Rosebud is a framework that links hardware accelerators to a high-performance packet processing pipeline through a standardized hardware/software interface. This separation of concerns allows hardware developers to focus on optimizing custom accelerators while freeing software programmers to reuse, configure, and debug accelerators in a fashion akin to software libraries. We show the benefits of the Rosebud framework by building a firewall based on a large blacklist and porting the Pigasus IDS pattern-matching accelerator in less than a month. Our experiments demonstrate that Rosebud delivers high performance, serving ~200 Gbps of traffic while adding only 0.7-7 microseconds of latency. "
+}

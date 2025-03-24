@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/cscribano/DCT-Former-Public"
+  ],
+  "tasks": [
+    "Efficient Self-Attention for NLP and Computer Vision"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DCT-Former using Discrete Cosine Transform for attention approximation"
+  ],
+  "results": [
+    "Less memory usage with same performance",
+    "Drastically reduced inference time",
+    "Suitable for real-time contexts on embedded platforms"
+  ],
+  "paper_id": "622032395aee126c0fe2fa99",
+  "title": "DCT-Former: Efficient Self-Attention with Discrete Cosine Transform",
+  "abstract": "  Since their introduction the Trasformer architectures emerged as the dominating architectures for both natural language processing and, more recently, computer vision applications. An intrinsic limitation of this family of \"fully-attentive\" architectures arises from the computation of the dot-product attention, which grows both in memory consumption and number of operations as $O(n^2)$ where $n$ stands for the input sequence length, thus limiting the applications that require modeling very long sequences. Several approaches have been proposed so far in the literature to mitigate this issue, with varying degrees of success. Our idea takes inspiration from the world of lossy data compression (such as the JPEG algorithm) to derive an approximation of the attention module by leveraging the properties of the Discrete Cosine Transform. An extensive section of experiments shows that our method takes up less memory for the same performance, while also drastically reducing inference time. This makes it particularly suitable in real-time contexts on embedded platforms. Moreover, we assume that the results of our research might serve as a starting point for a broader family of deep neural models with reduced memory footprint. The implementation will be made publicly available at https://github.com/cscribano/DCT-Former-Public "
+}

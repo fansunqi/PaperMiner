@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LoSAC: locally update the estimate for the global full gradient after each regular local model update"
+  ],
+  "results": [
+    "Improves communication efficiency by more than 100% on average",
+    "Mitigates model divergence",
+    "Equips with defense ability against DLG"
+  ],
+  "paper_id": "61baae695244ab9dcb643f93",
+  "title": "LoSAC: An Efficient Local Stochastic Average Control Method for\n  Federated Optimization",
+  "abstract": "  Federated optimization (FedOpt), which targets at collaboratively training a learning model across a large number of distributed clients, is vital for federated learning. The primary concerns in FedOpt can be attributed to the model divergence and communication efficiency, which significantly affect the performance. In this paper, we propose a new method, i.e., LoSAC, to learn from heterogeneous distributed data more efficiently. Its key algorithmic insight is to locally update the estimate for the global full gradient after {each} regular local model update. Thus, LoSAC can keep clients' information refreshed in a more compact way. In particular, we have studied the convergence result for LoSAC. Besides, the bonus of LoSAC is the ability to defend the information leakage from the recent technique Deep Leakage Gradients (DLG). Finally, experiments have verified the superiority of LoSAC comparing with state-of-the-art FedOpt algorithms. Specifically, LoSAC significantly improves communication efficiency by more than $100\\%$ on average, mitigates the model divergence problem and equips with the defense ability against DLG. "
+}

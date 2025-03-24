@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Privacy-preserving computation on encrypted data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HeLayers framework",
+    "Tile Tensors",
+    "Homomorphic Encryption",
+    "Novel 2D convolution algorithm"
+  ],
+  "results": [
+    "AlexNet implementation runs in three minutes",
+    "Several orders of magnitude faster than state-of-the-art HE solutions"
+  ],
+  "paper_id": "5fa28b9391e011cda13f502a",
+  "title": "HeLayers: A Tile Tensors Framework for Large Neural Networks on\n  Encrypted Data",
+  "abstract": "  Privacy-preserving solutions enable companies to offload confidential data to third-party services while fulfilling their government regulations. To accomplish this, they leverage various cryptographic techniques such as Homomorphic Encryption (HE), which allows performing computation on encrypted data. Most HE schemes work in a SIMD fashion, and the data packing method can dramatically affect the running time and memory costs. Finding a packing method that leads to an optimal performant implementation is a hard task.   We present a simple and intuitive framework that abstracts the packing decision for the user. We explain its underlying data structures and optimizer, and propose a novel algorithm for performing 2D convolution operations. We used this framework to implement an HE-friendly version of AlexNet, which runs in three minutes, several orders of magnitude faster than other state-of-the-art solutions that only use HE. "
+}

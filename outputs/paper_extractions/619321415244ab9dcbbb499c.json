@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/kongzhecn/cfd-pad"
+  ],
+  "tasks": [
+    "Fingerprint Presentation Attack Detection"
+  ],
+  "datasets": [
+    "LivDet 2017"
+  ],
+  "methods": [
+    "Channel-wise Feature Denoising (CFD-PAD)",
+    "PA-Adaptation loss"
+  ],
+  "results": [
+    "2.53% average classification error (ACE)",
+    "93.83% true detection rate at 1.0% false detection rate (TDR@FDR=1%)",
+    "Outperforms best single-model-based methods (ACE: 2.53% vs. 4.56%, TDR@FDR=1%: 93.83% vs. 73.32%)",
+    "74.76% reduction in computation time compared to state-of-the-art multiple-model-based method"
+  ],
+  "paper_id": "619321415244ab9dcbbb499c",
+  "title": "Fingerprint Presentation Attack Detection by Channel-wise Feature\n  Denoising",
+  "abstract": "  Due to the diversity of attack materials, fingerprint recognition systems (AFRSs) are vulnerable to malicious attacks. It is thus important to propose effective fingerprint presentation attack detection (PAD) methods for the safety and reliability of AFRSs. However, current PAD methods often exhibit poor robustness under new attack types settings. This paper thus proposes a novel channel-wise feature denoising fingerprint PAD (CFD-PAD) method by handling the redundant noise information ignored in previous studies. The proposed method learns important features of fingerprint images by weighing the importance of each channel and identifying discriminative channels and \"noise\" channels. Then, the propagation of \"noise\" channels is suppressed in the feature map to reduce interference. Specifically, a PA-Adaptation loss is designed to constrain the feature distribution to make the feature distribution of live fingerprints more aggregate and that of spoof fingerprints more disperse. Experimental results evaluated on the LivDet 2017 dataset showed that the proposed CFD-PAD can achieve a 2.53% average classification error (ACE) and a 93.83% true detection rate when the false detection rate equals 1.0% (TDR@FDR=1%). Also, the proposed method markedly outperforms the best single-model-based methods in terms of ACE (2.53% vs. 4.56%) and TDR@FDR=1%(93.83% vs. 73.32%), which demonstrates its effectiveness. Although we have achieved a comparable result with the state-of-the-art multiple-model-based methods, there still is an increase in TDR@FDR=1% from 91.19% to 93.83%. In addition, the proposed model is simpler, lighter and more efficient and has achieved a 74.76% reduction in computation time compared with the state-of-the-art multiple-model-based method. The source code is available at https://github.com/kongzhecn/cfd-pad. "
+}

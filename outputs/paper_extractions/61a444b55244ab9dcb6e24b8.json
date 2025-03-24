@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Finding champions in tournament graphs",
+    "Information Retrieval",
+    "Recommender System",
+    "Question Answering",
+    "Conversational Search"
+  ],
+  "datasets": [
+    "public data"
+  ],
+  "methods": [
+    "Asymptotically-optimal deterministic algorithm",
+    "Low number of model inferences"
+  ],
+  "results": [
+    "Speeds up retrieval of the champion up to 13x compared to state-of-the-art full tournament algorithm"
+  ],
+  "paper_id": "61a444b55244ab9dcb6e24b8",
+  "title": "An Optimal Algorithm for Finding Champions in Tournament Graphs",
+  "abstract": "  A tournament graph is a complete directed graph, which can be used to model a round-robin tournament between $n$ players. In this paper, we address the problem of finding a champion of the tournament, also known as Copeland winner, which is a player that wins the highest number of matches. In detail, we aim to investigate algorithms that find the champion by playing a low number of matches. Solving this problem allows us to speed up several Information Retrieval and Recommender System applications, including question answering, conversational search, etc. Indeed, these applications often search for the champion inducing a round-robin tournament among the players by employing a machine learning model to estimate who wins each pairwise comparison. Our contribution, thus, allows finding the champion by performing a low number of model inferences. We prove that any deterministic or randomized algorithm finding a champion with constant success probability requires $\\Omega(\\ell n)$ comparisons, where $\\ell$ is the number of matches lost by the champion. We then present an asymptotically-optimal deterministic algorithm matching this lower bound without knowing $\\ell$, and we extend our analysis to three variants of the problem. Lastly, we conduct a comprehensive experimental assessment of the proposed algorithms on a question answering task on public data. Results show that our proposed algorithms speed up the retrieval of the champion up to $13\\times$ with respect to the state-of-the-art algorithm that perform the full tournament. "
+}

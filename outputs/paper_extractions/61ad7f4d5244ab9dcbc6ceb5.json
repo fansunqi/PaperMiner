@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/EnyaHermite/Picasso"
+  ],
+  "tasks": [
+    "3D surface parsing",
+    "geometric feature learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mesh convolution with continuous filters",
+    "Mesh decimation",
+    "Mesh (un)pooling"
+  ],
+  "results": [
+    "Highly competitive performance for 3D surface perception",
+    "Effective hierarchical neural network PicassoNet++"
+  ],
+  "paper_id": "61ad7f4d5244ab9dcbc6ceb5",
+  "title": "Mesh Convolution with Continuous Filters for 3D Surface Parsing",
+  "abstract": "  Geometric feature learning for 3D surfaces is critical for many applications in computer graphics and 3D vision. However, deep learning currently lags in hierarchical modeling of 3D surfaces due to the lack of required operations and/or their efficient implementations. In this paper, we propose a series of modular operations for effective geometric feature learning from 3D triangle meshes. These operations include novel mesh convolutions, efficient mesh decimation and associated mesh (un)poolings. Our mesh convolutions exploit spherical harmonics as orthonormal bases to create continuous convolutional filters. The mesh decimation module is GPU-accelerated and able to process batched meshes on-the-fly, while the (un)pooling operations compute features for up/down-sampled meshes. We provide open-source implementation of these operations, collectively termed Picasso. Picasso supports heterogeneous mesh batching and processing. Leveraging its modular operations, we further contribute a novel hierarchical neural network for perceptual parsing of 3D surfaces, named PicassoNet++. It achieves highly competitive performance for shape analysis and scene segmentation on prominent 3D benchmarks. The code, data and trained models are available at https://github.com/EnyaHermite/Picasso. "
+}

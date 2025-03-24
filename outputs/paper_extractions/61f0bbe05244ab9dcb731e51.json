@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Segmentation of calcified and non-calcified plaques"
+  ],
+  "datasets": [
+    "CCTA-CPR scans"
+  ],
+  "methods": [
+    "Masking of the artery wall",
+    "Deep learning-based vessel detector"
+  ],
+  "results": [
+    "Prominent boost in segmentation performance",
+    "Accurate plaque shapes for non-calcified plaques",
+    "Segmentation of difficult cases like stenosis"
+  ],
+  "paper_id": "61f0bbe05244ab9dcb731e51",
+  "title": "Improving segmentation of calcified and non-calcified plaques on\n  CCTA-CPR scans via masking of the artery wall",
+  "abstract": "  The presence of plaques in the coronary arteries is a major risk to the patients' life. In particular, non-calcified plaques pose a great challenge, as they are harder to detect and more likely to rupture than calcified plaques. While current deep learning techniques allow precise segmentation of real-life images, the performance in medical images is still low. This is caused mostly by blurriness and ambiguous voxel intensities of unrelated parts that fall on the same value range. In this paper, we propose a novel methodology for segmenting calcified and non-calcified plaques in CCTA-CPR scans of coronary arteries. The input slices are masked so only the voxels within the wall vessel are considered for segmentation, thus, reducing ambiguity. This mask can be automatically generated via a deep learning-based vessel detector, that provides not only the contour of the outer artery wall, but also the inner contour. For evaluation, we utilized a dataset in which each voxel is carefully annotated as one of five classes: background, lumen, artery wall, calcified plaque, or non-calcified plaque. We also provide an exhaustive evaluation by applying different types of masks, in order to validate the potential of vessel masking for plaque segmentation. Our methodology results in a prominent boost in segmentation performance, in both quantitative and qualitative evaluation, achieving accurate plaque shapes even for the challenging non-calcified plaques. Furthermore, when using highly accurate masks, difficult cases such as stenosis become segmentable. We believe our findings can lead the future research for high-performance plaque segmentation. "
+}

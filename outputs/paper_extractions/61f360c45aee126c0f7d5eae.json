@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Benign Overfitting Analysis",
+    "Regression",
+    "Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Minimum-norm interpolating predictor for regression",
+    "Max-margin predictor for classification",
+    "Asymptotic bias analysis"
+  ],
+  "results": [
+    "Minimum-norm predictor biased towards inconsistent solution in regression",
+    "Max-margin predictor biased towards minimizing weighted squared hinge loss in classification",
+    "Benign overfitting generally not occur in non-well-specified linear regression",
+    "Benign overfitting can occur in classification under certain conditions"
+  ],
+  "paper_id": "61f360c45aee126c0f7d5eae",
+  "title": "The Implicit Bias of Benign Overfitting",
+  "abstract": "  The phenomenon of benign overfitting, where a predictor perfectly fits noisy training data while attaining near-optimal expected loss, has received much attention in recent years, but still remains not fully understood beyond well-specified linear regression setups. In this paper, we provide several new results on when one can or cannot expect benign overfitting to occur, for both regression and classification tasks. We consider a prototypical and rather generic data model for benign overfitting of linear predictors, where an arbitrary input distribution of some fixed dimension $k$ is concatenated with a high-dimensional distribution. For linear regression which is not necessarily well-specified, we show that the minimum-norm interpolating predictor (that standard training methods converge to) is biased towards an inconsistent solution in general, hence benign overfitting will generally not occur. Moreover, we show how this can be extended beyond standard linear regression, by an argument proving how the existence of benign overfitting on some regression problems precludes its existence on other regression problems. We then turn to classification problems, and show that the situation there is much more favorable. Specifically, we prove that the max-margin predictor (to which standard training methods are known to converge in direction) is asymptotically biased towards minimizing a weighted \\emph{squared hinge loss}. This allows us to reduce the question of benign overfitting in classification to the simpler question of whether this loss is a good surrogate for the misclassification error, and use it to show benign overfitting in some new settings. "
+}

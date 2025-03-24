@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model fusion of heterogeneous neural networks"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "CIFAR100",
+    "Tiny-ImageNet"
+  ],
+  "methods": [
+    "CLAFusion (Cross-Layer Alignment Fusion)",
+    "Dynamic programming for cross-layer alignment",
+    "Layer-wise model fusion via optimal transport (OTFusion)"
+  ],
+  "results": [
+    "Improves accuracy of residual networks with extra finetuning",
+    "Practical usage for model compression and knowledge distillation in teacher-student setting"
+  ],
+  "paper_id": "617f5a9f5244ab9dcbaa6dc2",
+  "title": "On Cross-Layer Alignment for Model Fusion of Heterogeneous Neural\n  Networks",
+  "abstract": "  Layer-wise model fusion via optimal transport, named OTFusion, applies soft neuron association for unifying different pre-trained networks to save computational resources. While enjoying its success, OTFusion requires the input networks to have the same number of layers. To address this issue, we propose a novel model fusion framework, named CLAFusion, to fuse neural networks with a different number of layers, which we refer to as heterogeneous neural networks, via cross-layer alignment. The cross-layer alignment problem, which is an unbalanced assignment problem, can be solved efficiently using dynamic programming. Based on the cross-layer alignment, our framework balances the number of layers of neural networks before applying layer-wise model fusion. Our experiments indicate that CLAFusion, with an extra finetuning process, improves the accuracy of residual networks on the CIFAR10, CIFAR100, and Tiny-ImageNet datasets. Furthermore, we explore its practical usage for model compression and knowledge distillation when applying to the teacher-student setting. "
+}

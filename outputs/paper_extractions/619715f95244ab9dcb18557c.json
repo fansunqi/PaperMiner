@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Low Mach Navier-Stokes Pressure Solving"
+  ],
+  "datasets": [
+    "Nalu-Wind",
+    "PeleLM"
+  ],
+  "methods": [
+    "ILU Smoothers",
+    "Row Scaling",
+    "Richardson Iteration",
+    "ILUT Schur Complement Smoother"
+  ],
+  "results": [
+    "Improved parallel strong-scaling",
+    "GMRES+AMG executes at least 5x faster with iterative triangular solves on GPUs"
+  ],
+  "paper_id": "619715f95244ab9dcb18557c",
+  "title": "ILU Smoothers for Low Mach Navier-Stokes Pressure Solvers",
+  "abstract": "  Incomplete LU (ILU) smoothers are effective in the algebraic multigrid (AMG) $V$-cycle for reducing high-frequency components of the error. However, the requisite direct triangular solves are comparatively slow on GPUs. Previous work by Antz et al. (2015) demonstrated the advantages of Jacobi iteration as an alternative to direct solution of these systems. Depending on the threshold and fill-level parameters chosen, the factors can be highly non-normal and, in this case, Jacobi is unlikely to converge in a low number of iterations. We demonstrate that row scaling can reduce the departure from normality, allowing us to replace the inherently sequential solve with a rapidly converging Richardson iteration. There are several advantages beyond the lower compute time. Scaling is performed locally for a diagonal block of the global matrix because it is applied directly to the factor. Further, an ILUT Schur complement smoother maintains a constant GMRES iteration count as the number of MPI ranks increases, and thus parallel strong-scaling, is improved. Our algorithms have been incorporated into hypre, and we demonstrate improved time to solution for Nalu-Wind and PeleLM pressure solvers. For large problem sizes, GMRES$+$AMG executes at least five times faster when using iterative triangular solves compared with direct solves on massively-parallel GPUs. "
+}

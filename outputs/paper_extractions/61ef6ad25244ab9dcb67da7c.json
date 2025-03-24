@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/MantangGuo/CW4VS"
+  ],
+  "tasks": [
+    "View Synthesis"
+  ],
+  "datasets": [
+    "light field datasets with wide baselines",
+    "multi-view datasets"
+  ],
+  "methods": [
+    "Content-aware warping",
+    "Learnable warping module",
+    "Confidence-based blending",
+    "Feature-assistant spatial refinement",
+    "Weight-smoothness loss term"
+  ],
+  "results": [
+    "Significantly outperforms state-of-the-art methods both quantitatively and visually"
+  ],
+  "paper_id": "61ef6ad25244ab9dcb67da7c",
+  "title": "Content-aware Warping for View Synthesis",
+  "abstract": "  Existing image-based rendering methods usually adopt depth-based image warping operation to synthesize novel views. In this paper, we reason the essential limitations of the traditional warping operation to be the limited neighborhood and only distance-based interpolation weights. To this end, we propose content-aware warping, which adaptively learns the interpolation weights for pixels of a relatively large neighborhood from their contextual information via a lightweight neural network. Based on this learnable warping module, we propose a new end-to-end learning-based framework for novel view synthesis from a set of input source views, in which two additional modules, namely confidence-based blending and feature-assistant spatial refinement, are naturally proposed to handle the occlusion issue and capture the spatial correlation among pixels of the synthesized view, respectively. Besides, we also propose a weight-smoothness loss term to regularize the network. Experimental results on light field datasets with wide baselines and multi-view datasets show that the proposed method significantly outperforms state-of-the-art methods both quantitatively and visually. The source code will be publicly available at https://github.com/MantangGuo/CW4VS. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimation of the Rate-Distortion Function",
+    "Operational Source Coding"
+  ],
+  "datasets": [
+    "popular image datasets"
+  ],
+  "methods": [
+    "Neural Estimation of Rate-Distortion (NERD)",
+    "Re-formulation of rate-distortion objective using neural networks"
+  ],
+  "results": [
+    "NERD accurately estimates the rate-distortion function",
+    "DNN compressors' rate-distortion within several bits of the rate-distortion function",
+    "Competitive performance with DNN compressors in operational one-shot lossy compression"
+  ],
+  "paper_id": "624bb3a35aee126c0fea509d",
+  "title": "Neural Estimation of the Rate-Distortion Function With Applications to\n  Operational Source Coding",
+  "abstract": "  A fundamental question in designing lossy data compression schemes is how well one can do in comparison with the rate-distortion function, which describes the known theoretical limits of lossy compression. Motivated by the empirical success of deep neural network (DNN) compressors on large, real-world data, we investigate methods to estimate the rate-distortion function on such data, which would allow comparison of DNN compressors with optimality. While one could use the empirical distribution of the data and apply the Blahut-Arimoto algorithm, this approach presents several computational challenges and inaccuracies when the datasets are large and high-dimensional, such as the case of modern image datasets. Instead, we re-formulate the rate-distortion objective, and solve the resulting functional optimization problem using neural networks. We apply the resulting rate-distortion estimator, called NERD, on popular image datasets, and provide evidence that NERD can accurately estimate the rate-distortion function. Using our estimate, we show that the rate-distortion achievable by DNN compressors are within several bits of the rate-distortion function for real-world datasets. Additionally, NERD provides access to the rate-distortion achieving channel, as well as samples from its output marginal. Therefore, using recent results in reverse channel coding, we describe how NERD can be used to construct an operational one-shot lossy compression scheme with guarantees on the achievable rate and distortion. Experimental results demonstrate competitive performance with DNN compressors. "
+}

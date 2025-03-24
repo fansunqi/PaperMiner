@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Gaussian Process Regression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Maximum Likelihood Estimation"
+  ],
+  "results": [
+    "Identifies scenarios where MLE fails to be well-posed",
+    "Predictive distributions are not Lipschitz in data with respect to Hellinger distance",
+    "Failure cases occur in noiseless data setting for any GP with stationary covariance function"
+  ],
+  "paper_id": "6233f88d5aee126c0f94b50b",
+  "title": "Maximum Likelihood Estimation in Gaussian Process Regression is\n  Ill-Posed",
+  "abstract": "  Gaussian process regression underpins countless academic and industrial applications of machine learning and statistics, with maximum likelihood estimation routinely used to select appropriate parameters for the covariance kernel. However, it remains an open problem to establish the circumstances in which maximum likelihood estimation is well-posed, that is, when the predictions of the regression model are insensitive to small perturbations of the data. This article identifies scenarios where the maximum likelihood estimator fails to be well-posed, in that the predictive distributions are not Lipschitz in the data with respect to the Hellinger distance. These failure cases occur in the noiseless data setting, for any Gaussian process with a stationary covariance function whose lengthscale parameter is estimated using maximum likelihood. Although the failure of maximum likelihood estimation is part of Gaussian process folklore, these rigorous theoretical results appear to be the first of their kind. The implication of these negative results is that well-posedness may need to be assessed post-hoc, on a case-by-case basis, when maximum likelihood estimation is used to train a Gaussian process model. "
+}

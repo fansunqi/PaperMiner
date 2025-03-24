@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding minimal and effective test cases for simulation-based systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DoLesS (Domination with Least Squares Approximation)",
+    "Inverted least squares approximation"
+  ],
+  "results": [
+    "DoLesS performs as well or better than prior state-of-the-art",
+    "Runs 80-360 times faster on average"
+  ],
+  "paper_id": "61ad7f445244ab9dcbc6c996",
+  "title": "What Not to Test (for Cyber-Physical Systems)",
+  "abstract": "  For simulation-based systems, finding a set of test cases with the least cost by exploring multiple goals is a complex task. Domain-specific optimization goals (e.g. maximize output variance) are useful for guiding the rapid selection of test cases via mutation. But evaluating the selected test cases via mutation (that can distinguish the current program from something else) is a different goal to domain-specific optimizations. While the optimization goals can be used to guide the mutation analysis, that guidance should be viewed as a weak indicator since it can hurt the mutation effectiveness goals by focusing too much on the optimization goals. Based on the above, this paper proposes DoLesS (Domination with Least Squares Approximation) that selects the minimal and effective test cases by averaging over a coarse-grained grid of the information gained from multiple optimizations goals. DoLesS applies an inverted least squares approximation approach to find a minimal set of tests that can distinguish better from worse parts of the optimization goals. When tested on multiple simulation-based systems, DoLesS performs as well or even better as the prior state-of-the-art, while running 80-360 times faster on average (seconds instead of hours). "
+}

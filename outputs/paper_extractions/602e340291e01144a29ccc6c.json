@@ -1,0 +1,24 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Epistemic Uncertainty Prediction",
+    "Interactive Learning",
+    "Reinforcement Learning Exploration",
+    "Probabilistic Image Classification",
+    "Drug Combination Synergy Prediction"
+  ],
+  "datasets": "None",
+  "methods": [
+    "Direct Epistemic Uncertainty Prediction (DEUP)",
+    "Learning a secondary predictor for generalization error",
+    "Subtracting estimate of aleatoric uncertainty"
+  ],
+  "results": [
+    "Improves existing methods in sequential model optimization with DEUP's epistemic uncertainty estimates",
+    "Enhances exploration in reinforcement learning with DEUP",
+    "Evaluates quality of DEUP's uncertainty estimates for probabilistic image classification and drug combination synergies"
+  ],
+  "paper_id": "602e340291e01144a29ccc6c",
+  "title": "DEUP: Direct Epistemic Uncertainty Prediction",
+  "abstract": "  Epistemic Uncertainty is a measure of the lack of knowledge of a learner which diminishes with more evidence. While existing work focuses on using the variance of the Bayesian posterior due to parameter uncertainty as a measure of epistemic uncertainty, we argue that this does not capture the part of lack of knowledge induced by model misspecification. We discuss how the excess risk, which is the gap between the generalization error of a predictor and the Bayes predictor, is a sound measure of epistemic uncertainty which captures the effect of model misspecification. We thus propose a principled framework for directly estimating the excess risk by learning a secondary predictor for the generalization error and subtracting an estimate of aleatoric uncertainty, i.e., intrinsic unpredictability. We discuss the merits of this novel measure of epistemic uncertainty, and highlight how it differs from variance-based measures of epistemic uncertainty and addresses its major pitfall. Our framework, Direct Epistemic Uncertainty Prediction (DEUP) is particularly interesting in interactive learning environments, where the learner is allowed to acquire novel examples in each round. Through a wide set of experiments, we illustrate how existing methods in sequential model optimization can be improved with epistemic uncertainty estimates from DEUP, and how DEUP can be used to drive exploration in reinforcement learning. We also evaluate the quality of uncertainty estimates from DEUP for probabilistic image classification and predicting synergies of drug combinations. "
+}

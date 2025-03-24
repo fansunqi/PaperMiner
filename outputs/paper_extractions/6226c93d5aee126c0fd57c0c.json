@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/haomo-ai/OverlapTransformer"
+  ],
+  "tasks": [
+    "Place recognition",
+    "Loop closing in SLAM",
+    "Global localization"
+  ],
+  "datasets": [
+    "KITTI",
+    "Ford Campus",
+    "Novel dataset (LiDAR sequences)"
+  ],
+  "methods": [
+    "OverlapTransformer",
+    "Yaw-angle-invariant architecture",
+    "Transformer network"
+  ],
+  "results": [
+    "Fast execution with less than 2 ms per frame",
+    "Effective loop closure detection",
+    "Generalizes well across different environments"
+  ],
+  "paper_id": "6226c93d5aee126c0fd57c0c",
+  "title": "OverlapTransformer: An Efficient and Rotation-Invariant Transformer\n  Network for LiDAR-Based Place Recognition",
+  "abstract": "  Place recognition is an important capability for autonomously navigating vehicles operating in complex environments and under changing conditions. It is a key component for tasks such as loop closing in SLAM or global localization. In this paper, we address the problem of place recognition based on 3D LiDAR scans recorded by an autonomous vehicle. We propose a novel lightweight neural network exploiting the range image representation of LiDAR sensors to achieve fast execution with less than 2 ms per frame. We design a yaw-angle-invariant architecture exploiting a transformer network, which boosts the place recognition performance of our method. We evaluate our approach on the KITTI and Ford Campus datasets. The experimental results show that our method can effectively detect loop closures compared to the state-of-the-art methods and generalizes well across different environments. To evaluate long-term place recognition performance, we provide a novel dataset containing LiDAR sequences recorded by a mobile robot in repetitive places at different times. The implementation of our method and dataset are released here: https://github.com/haomo-ai/OverlapTransformer "
+}

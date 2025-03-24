@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fault-tolerant graph algorithms",
+    "Derandomization of central results"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deterministic Replacement Path Covering",
+    "Efficient deterministic constructions of (L,f)-RPCs"
+  ],
+  "results": [
+    "Covering values almost match the randomized ones",
+    "Time and value bounds improve over Parter (DISC 2019)",
+    "Almost matching lower bound for the value of coverings",
+    "Preprocessing and query time of deterministic algorithm nearly match the randomized bounds"
+  ],
+  "paper_id": "5f351b5791e011d4254d0329",
+  "title": "Deterministic Replacement Path Covering",
+  "abstract": "  In this article, we provide a unified and simplified approach to derandomize central results in the area of fault-tolerant graph algorithms. Given a graph $G$, a vertex pair $(s,t) \\in V(G)\\times V(G)$, and a set of edge faults $F \\subseteq E(G)$, a replacement path $P(s,t,F)$ is an $s$-$t$ shortest path in $G \\setminus F$. For integer parameters $L,f$, a replacement path covering (RPC) is a collection of subgraphs of $G$, denoted by $\\textit{G}_{L,f}=\\{G_1,\\ldots, G_r \\}$, such that for every set $F$ of at most $f$ faults (i.e., $|F|\\le f$) and every replacement path $P(s,t,F)$ of at most $L$ edges, there exists a subgraph $G_i\\in \\textit{G}_{L,f}$ that contains all the edges of $P$ and does not contain any of the edges of $F$. The covering value of the RPC $\\textit{G}_{L,f}$ is then defined to be the number of subgraphs in $\\textit{G}_{L,f}$.   We present efficient deterministic constructions of $(L,f)$-RPCs whose covering values almost match the randomized ones, for a wide range of parameters. Our time and value bounds improve considerably over the previous construction of Parter (DISC 2019). We also provide an almost matching lower bound for the value of these coverings. A key application of our above deterministic constructions is the derandomization of the algebraic construction of the distance sensitivity oracle by Weimann and Yuster (FOCS 2010). The preprocessing and query time of the our deterministic algorithm nearly match the randomized bounds. This resolves the open problem of Alon, Chechik and Cohen (ICALP 2019). "
+}

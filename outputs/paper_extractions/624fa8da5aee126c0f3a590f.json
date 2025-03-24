@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated Sleep Staging"
+  ],
+  "datasets": [
+    "Sleep Heart Health Study"
+  ],
+  "methods": [
+    "Parallel Frequency-Cut Attention",
+    "Time-Frequency Patch Extraction",
+    "Attention-Based Architecture"
+  ],
+  "results": [
+    "F1 scores: 0.93 (wake), 0.88 (N2), 0.87 (N3)",
+    "Inter-rater reliability: 0.80 kappa"
+  ],
+  "paper_id": "624fa8da5aee126c0f3a590f",
+  "title": "Automated Sleep Staging via Parallel Frequency-Cut Attention",
+  "abstract": "  This paper proposes a novel framework for automatically capturing the time-frequency nature of electroencephalogram (EEG) signals of human sleep based on the authoritative sleep medicine guidance. The framework consists of two parts: the first part extracts informative features by partitioning the input EEG spectrograms into a sequence of time-frequency patches. The second part is constituted by an attention-based architecture to efficiently search for the correlation between partitioned time-frequency patches and defining factors of sleep stages in parallel. The proposed pipeline is validated on the Sleep Heart Health Study dataset with new state-of-the-art results for the stages wake, N2, and N3, obtaining respective F1 scores of 0.93, 0.88, and 0.87, with only EEG signals used. The proposed method also has a high inter-rater reliability of 0.80 kappa. We also visualize the correspondence between sleep staging decisions and features extracted by the proposed method, providing strong interpretability for our model. "
+}

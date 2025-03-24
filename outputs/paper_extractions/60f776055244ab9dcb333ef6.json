@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "String compression algorithm sensitivity analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Worst-case multiplicative sensitivity analysis",
+    "Lempel-Ziv 77 compressors",
+    "Smallest bidirectional scheme b",
+    "Grammar-based compressor GCIS",
+    "String repetitiveness measures (smallest string attractor size \u03b3, substring complexity \u03b4)"
+  ],
+  "results": [
+    "Worst-case multiplicative sensitivity of Lempel-Ziv 77 is upper bounded by a small constant",
+    "Matching lower bounds for Lempel-Ziv 77",
+    "Sensitivity of GCIS is a small constant",
+    "Worst-case sensitivity of substring complexity \u03b4 is a small constant",
+    "Non-trivial upper bounds for sensitivities of important string compressors and repetitiveness measures (\u03b3, r, LZ-End, RePair, LongestMatch, AVL-grammar)"
+  ],
+  "paper_id": "60f776055244ab9dcb333ef6",
+  "title": "Sensitivity of string compressors and repetitiveness measures",
+  "abstract": "  The sensitivity of a string compression algorithm $C$ asks how much the output size $C(T)$ for an input string $T$ can increase when a single character edit operation is performed on $T$. This notion enables one to measure the robustness of compression algorithms in terms of errors and/or dynamic changes occurring in the input string. In this paper, we analyze the worst-case multiplicative sensitivity of string compression algorithms, which is defined by $\\max_{T \\in \\Sigma^n}\\{C(T')/C(T) : ed(T, T') = 1\\}$, where $ed(T, T')$ denotes the edit distance between $T$ and $T'$. For the most common versions of the Lempel-Ziv 77 compressors, we prove that the worst-case multiplicative sensitivity is upper bounded by a small constant, and give matching lower bounds. We generalize these results to the smallest bidirectional scheme $b$. In addition, we show that the sensitivity of a grammar-based compressor called GCIS is also a small constant. Further, we extend the notion of the worst-case sensitivity to string repetitiveness measures such as the smallest string attractor size $\\gamma$ and the substring complexity $\\delta$, and show that the worst-case sensitivity of $\\delta$ is also a small constant. These results contrast with the previously known related results such that the size $z_{\\rm 78}$ of the Lempel-Ziv 78 factorization can increase by a factor of $\\Omega(n^{1/4})$ [Lagarde and Perifel, 2018], and the number $r$ of runs in the Burrows-Wheeler transform can increase by a factor of $\\Omega(\\log n)$ [Giuliani et al., 2021] when a character is prepended to an input string of length $n$. By applying our sensitivity bounds of $\\delta$ or the smallest grammar to known results (c.f. [Navarro, 2021]), some non-trivial upper bounds for the sensitivities of important string compressors and repetitiveness measures including $\\gamma$, $r$, LZ-End, RePair, LongestMatch, and AVL-grammar are derived. "
+}

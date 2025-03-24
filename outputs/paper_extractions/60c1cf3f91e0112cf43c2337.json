@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving semidefinite programs (SDPs)",
+    "Estimating ground state energies",
+    "Calculating excited states of Hamiltonians",
+    "Finding lowest energy of symmetry constrained Hamiltonians",
+    "Determining optimal measurements for quantum state discrimination"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Noisy intermediate-scale quantum (NISQ) algorithm",
+    "SDP based formulation of Hamiltonian ground state problem",
+    "NISQ eigensolver with convex classical optimization program"
+  ],
+  "results": [
+    "NISQ SDP improves estimation of ground state energies",
+    "Efficiently solves constrained problems",
+    " Finds largest eigenvalue of up to $2^{1000}$ dimensional matrices",
+    "Solves graph problems related to quantum contextuality"
+  ],
+  "paper_id": "60c1cf3f91e0112cf43c2337",
+  "title": "Noisy intermediate-scale quantum algorithm for semidefinite programming",
+  "abstract": "  Semidefinite programs (SDPs) are convex optimization programs with vast applications in control theory, quantum information, combinatorial optimization and operational research. Noisy intermediate-scale quantum (NISQ) algorithms aim to make an efficient use of the current generation of quantum hardware. However, optimizing variational quantum algorithms is a challenge as it is an NP-hard problem that in general requires an exponential time to solve and can contain many far from optimal local minima. Here, we present a current term NISQ algorithm for solving SDPs. The classical optimization program of our NISQ solver is another SDP over a lower dimensional ansatz space. We harness the SDP based formulation of the Hamiltonian ground state problem to design a NISQ eigensolver. Unlike variational quantum eigensolvers, the classical optimization program of our eigensolver is convex, can be solved in polynomial time with the number of ansatz parameters and every local minimum is a global minimum. We find numeric evidence that NISQ SDP can improve the estimation of ground state energies in a scalable manner. Further, we efficiently solve constrained problems to calculate the excited states of Hamiltonians, find the lowest energy of symmetry constrained Hamiltonians and determine the optimal measurements for quantum state discrimination. We demonstrate the potential of our approach by finding the largest eigenvalue of up to $2^{1000}$ dimensional matrices and solving graph problems related to quantum contextuality. We also discuss NISQ algorithms for rank-constrained SDPs. Our work extends the application of NISQ computers onto one of the most successful algorithmic frameworks of the past few decades. "
+}

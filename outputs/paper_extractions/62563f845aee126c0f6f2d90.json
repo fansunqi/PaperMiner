@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning the solution of partial differential equations (PDEs) with neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Training an ensemble of physics-informed neural networks (PINNs)",
+    "Ensemble agreement for gradual expansion of the solution interval"
+  ],
+  "results": [
+    "Stabilizes PINN training",
+    "Competitive performance to recent PINN variants trained with time adaptation"
+  ],
+  "paper_id": "62563f845aee126c0f6f2d90",
+  "title": "Improved Training of Physics-Informed Neural Networks with Model\n  Ensembles",
+  "abstract": "  Learning the solution of partial differential equations (PDEs) with a neural network is an attractive alternative to traditional solvers due to its elegance, greater flexibility and the ease of incorporating observed data. However, training such physics-informed neural networks (PINNs) is notoriously difficult in practice since PINNs often converge to wrong solutions. In this paper, we address this problem by training an ensemble of PINNs. Our approach is motivated by the observation that individual PINN models find similar solutions in the vicinity of points with targets (e.g., observed data or initial conditions) while their solutions may substantially differ farther away from such points. Therefore, we propose to use the ensemble agreement as the criterion for gradual expansion of the solution interval, that is including new points for computing the loss derived from differential equations. Due to the flexibility of the domain expansion, our algorithm can easily incorporate measurements in arbitrary locations. In contrast to the existing PINN algorithms with time-adaptive strategies, the proposed algorithm does not need a pre-defined schedule of interval expansion and it treats time and space equally. We experimentally show that the proposed algorithm can stabilize PINN training and yield performance competitive to the recent variants of PINNs trained with time adaptation. "
+}

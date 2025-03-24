@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Maximum Cut",
+    "Minimum Bisection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Local message passing algorithm"
+  ],
+  "results": [
+    "Cut value: nk/4 + nP_star*sqrt(k/4) + err(n,k,L)",
+    "Nearly optimal on random k-regular graphs",
+    "Random regular graphs have nearly minimum max-cut and nearly maximum min-bisection"
+  ],
+  "paper_id": "6191cfa05244ab9dcb16bf1b",
+  "title": "Local algorithms for Maximum Cut and Minimum Bisection on locally\n  treelike regular graphs of large degree",
+  "abstract": "  Given a graph $G$ of degree $k$ over $n$ vertices, we consider the problem of computing a near maximum cut or a near minimum bisection in polynomial time. For graphs of girth $2L$, we develop a local message passing algorithm whose complexity is $O(nkL)$, and that achieves near optimal cut values among all $L$-local algorithms. Focusing on max-cut, the algorithm constructs a cut of value $nk/4+ n\\mathsf{P}_\\star\\sqrt{k/4}+\\mathsf{err}(n,k,L)$, where $\\mathsf{P}_\\star\\approx 0.763166$ is the value of the Parisi formula from spin glass theory, and $\\mathsf{err}(n,k,L)=o_n(n)+no_k(\\sqrt{k})+n \\sqrt{k} o_L(1)$ (subscripts indicate the asymptotic variables). Our result generalizes to locally treelike graphs, i.e., graphs whose girth becomes $2L$ after removing a small fraction of vertices.   Earlier work established that, for random $k$-regular graphs, the typical max-cut value is $nk/4+ n\\mathsf{P}_\\star\\sqrt{k/4}+o_n(n)+no_k(\\sqrt{k})$. Therefore our algorithm is nearly optimal on such graphs. An immediate corollary of this result is that random regular graphs have nearly minimum max-cut, and nearly maximum min-bisection among all regular locally treelike graphs. This can be viewed as a combinatorial version of the near-Ramanujan property of random regular graphs. "
+}

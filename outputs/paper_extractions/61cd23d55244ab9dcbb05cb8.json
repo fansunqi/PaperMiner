@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stencil computation acceleration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Casper near-cache accelerator",
+    "Specialized stencil compute units connected to LLC",
+    "Exploiting regular data access patterns"
+  ],
+  "results": [
+    "Performance improvement by 1.65x",
+    "Energy reduction by 35%",
+    "Enhanced performance-per-area by 37x"
+  ],
+  "paper_id": "61cd23d55244ab9dcbb05cb8",
+  "title": "Casper: Accelerating Stencil Computation using Near-cache Processing",
+  "abstract": "  Stencil computation is one of the most used kernels in a wide variety of scientific applications, ranging from large-scale weather prediction to solving partial differential equations. Stencil computations are characterized by three unique properties: (1) low arithmetic intensity, (2) limited temporal data reuse, and (3) regular and predictable data access pattern. As a result, stencil computations are typically bandwidth-bound workloads, which only experience limited benefits from the deep cache hierarchy of modern CPUs. In this work, we propose Casper, a near-cache accelerator consisting of specialized stencil compute units connected to the last-level cache (LLC) of a traditional CPU. Casper is based on two key ideas: (1) avoiding the cost of moving rarely reused data through the cache hierarchy, and (2) exploiting the regularity of the data accesses and the inherent parallelism of the stencil computation to increase the overall performance.   With minimal changes in LLC address decoding logic and data placement, Casper performs stencil computations at the peak bandwidth of the LLC. We show that, by tightly coupling lightweight stencil compute units near to LLC, Casper improves the performance of stencil kernels by 1.65x on average, while reducing the energy consumption by 35% compared to a commercial high-performance multi-core processor. Moreover, Casper provides a 37x improvement in performance-per-area compared to a state-of-the-art GPU. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Detecting DeFi Securities Violations"
+  ],
+  "datasets": [
+    "new dataset (verified ground truth dataset for tokens involved in securities violations, set of legitimate tokens from a reputable DeFi aggregator)"
+  ],
+  "methods": [
+    "logistic regression",
+    "random forest classifier",
+    "feature extraction from smart contract code"
+  ],
+  "results": [
+    "logistic regression model: 98.9% F-1 score",
+    "random forest classifier: 98.6% F1-score",
+    "high reliance on a single feature"
+  ],
+  "paper_id": "61aed0d85244ab9dcb3a70a1",
+  "title": "Detecting DeFi Securities Violations from Token Smart Contract Code",
+  "abstract": "  Decentralized Finance (DeFi) is a system of financial products and services built and delivered through smart contracts on various blockchains. In the past year, DeFi has gained popularity and market capitalization. However, it has also been connected to crime, in particular, various types of securities violations. The lack of Know Your Customer requirements in DeFi poses challenges to governments trying to mitigate potential offending in this space. This study aims to uncover whether this problem is suited to a machine learning approach, namely, whether we can identify DeFi projects potentially engaging in securities violations based on their tokens' smart contract code. We adapt prior work on detecting specific types of securities violations across Ethereum, building classifiers based on features extracted from DeFi projects' tokens' smart contract code. The final logistic regression model achieves a 98.9% F-1 score; the final random forest classifier achieves a 98.6% F1-score. From further feature-level analysis, we find a single feature makes this a highly detectable problem. The high reliance on a single feature means that, at this stage, a complex machine learning model may not be necessary or desirable for this problem. However, this may change as DeFi securities violations become more sophisticated. Another contribution of our study is a new dataset, comprised of (a) a verified ground truth dataset for tokens involved in securities violations and (b) a set of legitimate tokens from a reputable DeFi aggregator. This paper further discusses the potential use of a model like ours by prosecutors in enforcement efforts and connects it to the wider legal context. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Regularized Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized Policy Mirror Descent (GPMD)",
+    "Bregman divergence"
+  ],
+  "results": [
+    "Linear convergence to global solution",
+    "Stable performance under inexact policy evaluation and imperfect updates"
+  ],
+  "paper_id": "60acd25f91e011a837673642",
+  "title": "Policy Mirror Descent for Regularized Reinforcement Learning: A\n  Generalized Framework with Linear Convergence",
+  "abstract": "  Policy optimization, which finds the desired policy by maximizing value functions via optimization techniques, lies at the heart of reinforcement learning (RL). In addition to value maximization, other practical considerations arise as well, including the need of encouraging exploration, and that of ensuring certain structural properties of the learned policy due to safety, resource and operational constraints. These can often be accounted for via regularized RL, which augments the target value function with a structure-promoting regularizer.   Focusing on discounted infinite-horizon Markov decision processes, we propose a generalized policy mirror descent (GPMD) algorithm for solving regularized RL. As a generalization of policy mirror descent (arXiv:2102.00135), our algorithm accommodates a general class of convex regularizers and promotes the use of Bregman divergence in cognizant of the regularizer in use. We demonstrate that our algorithm converges linearly to the global solution over an entire range of learning rates, in a dimension-free fashion, even when the regularizer lacks strong convexity and smoothness. In addition, this linear convergence feature is provably stable in the face of inexact policy evaluation and imperfect policy updates. Numerical experiments are provided to corroborate the appealing performance of GPMD. "
+}

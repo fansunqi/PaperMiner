@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online generalized linear regression",
+    "Heteroscedastic bandits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Follow-the-regularized-leader (FTRL) algorithm",
+    "Variance-aware regret bound"
+  ],
+  "results": [
+    "Regret upper bound: O(\u03c3\u00b2d log T) + o(log T)",
+    "Lower bound: \u03a9(\u03c3\u00b2d log(T/d))",
+    "First variance-aware regret bound for generalized linear bandits"
+  ],
+  "paper_id": "621d8ecd5aee126c0f73b3a9",
+  "title": "Optimal Online Generalized Linear Regression with Stochastic Noise and\n  Its Application to Heteroscedastic Bandits",
+  "abstract": "  We study the problem of online generalized linear regression in the stochastic setting, where the label is generated from a generalized linear model with possibly unbounded additive noise. We provide a sharp analysis of the classical follow-the-regularized-leader (FTRL) algorithm to cope with the label noise. More specifically, for $\\sigma$-sub-Gaussian label noise, our analysis provides a regret upper bound of $O(\\sigma^2 d \\log T) + o(\\log T)$, where $d$ is the dimension of the input vector, $T$ is the total number of rounds. We also prove a $\\Omega(\\sigma^2d\\log(T/d))$ lower bound for stochastic online linear regression, which indicates that our upper bound is nearly optimal. In addition, we extend our analysis to a more refined Bernstein noise condition. As an application, we study generalized linear bandits with heteroscedastic noise and propose an algorithm based on FTRL to achieve the first variance-aware regret bound. "
+}

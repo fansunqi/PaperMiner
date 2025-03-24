@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/scafi/ScaFi"
+  ],
+  "tasks": [
+    "Programming distributed systems in IoT and large-scale CPS"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Computation against a neighbour",
+    "Neighbours calculus (NC)",
+    "ScaFi implementation"
+  ],
+  "results": [
+    "NC supports declarative specification of interaction with neighbours",
+    "Expressiveness demonstrated by a case study in edge computing"
+  ],
+  "paper_id": "5fdb24df91e0118a02c4f4c2",
+  "title": "Computation Against a Neighbour: Addressing Large-Scale Distribution and\n  Adaptivity with Functional Programming and Scala",
+  "abstract": "  Recent works in contexts like the Internet of Things (IoT) and large-scale Cyber-Physical Systems (CPS) propose the idea of programming distributed systems by focussing on their global behaviour across space and time. In this view, a potentially vast and heterogeneous set of devices is considered as an \"aggregate\" to be programmed as a whole, while abstracting away the details of individual behaviour and exchange of messages, which are expressed declaratively. One such a paradigm, known as aggregate programming, builds on computational models inspired by field-based coordination. Existing models such as the field calculus capture interaction with neighbours by a so-called \"neighbouring field\" (a map from neighbours to values). This requires ad-hoc mechanisms to smoothly compose with standard values, thus complicating programming and introducing clutter in aggregate programs, libraries and domain-specific languages (DSLs). To address this key issue we introduce the novel notion of \"computation against a neighbour\", whereby the evaluation of certain subexpressions of the aggregate program are affected by recent corresponding evaluations in neighbours. We capture this notion in the neighbours calculus (NC), a new field calculus variant which is shown to smoothly support declarative specification of interaction with neighbours, and correspondingly facilitate the embedding of field computations as internal DSLs in common general-purpose programming languages -- as exemplified by a Scala implementation, called ScaFi. This paper formalises NC, thoroughly compares it with respect to the classic field calculus, and shows its expressiveness by means of a case study in edge computing, developed in ScaFi. "
+}

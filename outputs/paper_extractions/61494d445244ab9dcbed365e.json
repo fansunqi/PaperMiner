@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning volume-preserving dynamics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Locally-symplectic neural networks (LocSympNets)",
+    "Symmetric locally-symplectic neural networks (SymLocSympNets)",
+    "Symplectic gradient modules from SympNets"
+  ],
+  "results": [
+    "High accuracy in learning linear and nonlinear volume-preserving dynamics",
+    "Accurate learning of linear traveling wave solutions, periodic trajectories, and quasi-periodic solutions",
+    "Absolute relative errors below 1% for quadratic invariants in rigid body dynamics",
+    "Good long-time predictions with SymLocSympNets",
+    "Accurate short-time predictions of quasi-periodic solutions"
+  ],
+  "paper_id": "61494d445244ab9dcbed365e",
+  "title": "Locally-symplectic neural networks for learning volume-preserving\n  dynamics",
+  "abstract": "  We propose locally-symplectic neural networks LocSympNets for learning the flow of phase volume-preserving dynamics. The construction of LocSympNets stems from the theorem of the local Hamiltonian description of the divergence-free vector field and the splitting methods based on symplectic integrators. Symplectic gradient modules of the recently proposed symplecticity-preserving neural networks SympNets are used to construct invertible locally-symplectic modules. To further preserve properties of the flow of a dynamical system LocSympNets are extended to symmetric locally-symplectic neural networks SymLocSympNets, such that the inverse of SymLocSympNets is equal to the feed-forward propagation of SymLocSympNets with the negative time step, which is a general property of the flow of a dynamical system. LocSympNets and SymLocSympNets are studied numerically considering learning linear and nonlinear volume-preserving dynamics. We demonstrate learning of linear traveling wave solutions to the semi-discretized advection equation, periodic trajectories of the Euler equations of the motion of a free rigid body, and quasi-periodic solutions of the charged particle motion in an electromagnetic field. LocSympNets and SymLocSympNets can learn linear and nonlinear dynamics to a high degree of accuracy even when random noise is added to the training data. When learning a single trajectory of the rigid body dynamics locally-symplectic neural networks can learn both quadratic invariants of the system with absolute relative errors below 1%. In addition, SymLocSympNets produce qualitatively good long-time predictions, when the learning of the whole system from randomly sampled data is considered. LocSympNets and SymLocSympNets can produce accurate short-time predictions of quasi-periodic solutions, which is illustrated in the example of the charged particle motion in an electromagnetic field. "
+}

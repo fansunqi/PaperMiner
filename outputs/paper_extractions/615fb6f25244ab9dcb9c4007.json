@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Markov Decision Processes with strategic adversary"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MDP-Expert",
+    "MDP-Online Oracle Expert (MDP-OOE)",
+    "Algorithm for last-round convergence to NE"
+  ],
+  "results": [
+    "MDP-Expert achieves policy regret bound of O(\u221a(T log(L)) + \u03c4\u00b2\u221a(T log(|A|)))",
+    "MDP-OOE achieves policy regret bound of O(\u221a(T log(L)) + \u03c4\u00b2\u221a(T k log(k)))",
+    "First work leading to last iteration result in OMDPs"
+  ],
+  "paper_id": "615fb6f25244ab9dcb9c4007",
+  "title": "Online Markov Decision Processes with Non-oblivious Strategic Adversary",
+  "abstract": "  We study a novel setting in Online Markov Decision Processes (OMDPs) where the loss function is chosen by a non-oblivious strategic adversary who follows a no-external regret algorithm. In this setting, we first demonstrate that MDP-Expert, an existing algorithm that works well with oblivious adversaries can still apply and achieve a policy regret bound of $\\mathcal{O}(\\sqrt{T \\log(L)}+\\tau^2\\sqrt{ T \\log(|A|)})$ where $L$ is the size of adversary's pure strategy set and $|A|$ denotes the size of agent's action space. Considering real-world games where the support size of a NE is small, we further propose a new algorithm: MDP-Online Oracle Expert (MDP-OOE), that achieves a policy regret bound of $\\mathcal{O}(\\sqrt{T\\log(L)}+\\tau^2\\sqrt{ T k \\log(k)})$ where $k$ depends only on the support size of the NE. MDP-OOE leverages the key benefit of Double Oracle in game theory and thus can solve games with prohibitively large action space. Finally, to better understand the learning dynamics of no-regret methods, under the same setting of no-external regret adversary in OMDPs, we introduce an algorithm that achieves last-round convergence result to a NE. To our best knowledge, this is first work leading to the last iteration result in OMDPs. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving partial differential equations on surfaces"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Shallow physics-informed neural network",
+    "Use of level set function",
+    "Integration of traditional Cartesian differential operators"
+  ],
+  "results": [
+    "Accurate simulation of surfactant transport on droplet surface",
+    "Comparable performance to static cases",
+    "Enhanced understanding of dynamic surface interactions"
+  ],
+  "paper_id": "6221834e5aee126c0f23c2a5",
+  "title": "A shallow physics-informed neural network for solving partial\n  differential equations on surfaces",
+  "abstract": "  In this paper, we introduce a shallow (one-hidden-layer) physics-informed neural network for solving partial differential equations on static and evolving surfaces. For the static surface case, with the aid of level set function, the surface normal and mean curvature used in the surface differential expressions can be computed easily. So instead of imposing the normal extension constraints used in literature, we write the surface differential operators in the form of traditional Cartesian differential operators and use them in the loss function directly. We perform a series of performance study for the present methodology by solving Laplace-Beltrami equation and surface diffusion equation on complex static surfaces. With just a moderate number of neurons used in the hidden layer, we are able to attain satisfactory prediction results. Then we extend the present methodology to solve the advection-diffusion equation on an evolving surface with given velocity. To track the surface, we additionally introduce a prescribed hidden layer to enforce the topological structure of the surface and use the network to learn the homeomorphism between the surface and the prescribed topology. The proposed network structure is designed to track the surface and solve the equation simultaneously. Again, the numerical results show comparable accuracy as the static cases. As an application, we simulate the surfactant transport on the droplet surface under shear flow and obtain some physically plausible results. "
+}

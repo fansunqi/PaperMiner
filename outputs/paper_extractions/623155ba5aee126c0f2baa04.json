@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continual Semantic Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Self-Attention Transfer",
+    "Class-specific region pooling"
+  ],
+  "results": [
+    "Effectively alleviates catastrophic forgetting",
+    "Significantly outperforms state-of-the-art solutions"
+  ],
+  "paper_id": "623155ba5aee126c0f2baa04",
+  "title": "SATS: Self-Attention Transfer for Continual Semantic Segmentation",
+  "abstract": "  Continually learning to segment more and more types of image regions is a desired capability for many intelligent systems. However, such continual semantic segmentation suffers from the same catastrophic forgetting issue as in continual classification learning. While multiple knowledge distillation strategies originally for continual classification have been well adapted to continual semantic segmentation, they only consider transferring old knowledge based on the outputs from one or more layers of deep fully convolutional networks. Different from existing solutions, this study proposes to transfer a new type of information relevant to knowledge, i.e. the relationships between elements (Eg. pixels or small local regions) within each image which can capture both within-class and between-class knowledge. The relationship information can be effectively obtained from the self-attention maps in a Transformer-style segmentation model. Considering that pixels belonging to the same class in each image often share similar visual properties, a class-specific region pooling is applied to provide more efficient relationship information for knowledge transfer. Extensive evaluations on multiple public benchmarks support that the proposed self-attention transfer method can further effectively alleviate the catastrophic forgetting issue, and its flexible combination with one or more widely adopted strategies significantly outperforms state-of-the-art solutions. "
+}

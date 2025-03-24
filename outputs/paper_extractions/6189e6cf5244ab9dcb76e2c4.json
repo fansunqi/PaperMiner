@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning Partial Differential Equations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-Informed Neural Operator (PINO)",
+    "Combines data and PDE constraints",
+    "Incorporates data and PDE constraints at different resolutions",
+    "Neural-operator framework for discretization-invariance",
+    "Optimizes PDE constraints on multiple instances"
+  ],
+  "results": [
+    "Overcomes limitations of data-driven and physics-based methods",
+    "No degradation in accuracy on high-resolution test instances",
+    "Succeeds in purely physics setting where no data is available",
+    "Significant improvements in segmentation performance"
+  ],
+  "paper_id": "6189e6cf5244ab9dcb76e2c4",
+  "title": "Physics-Informed Neural Operator for Learning Partial Differential\n  Equations",
+  "abstract": "  In this paper, we propose physics-informed neural operators (PINO) that uses available data and/or physics constraints to learn the solution operator of a family of parametric Partial Differential Equation (PDE). This hybrid approach allows PINO to overcome the limitations of purely data-driven and physics-based methods. For instance, data-driven methods fail to learn when data is of limited quantity and/or quality, and physics-based approaches fail to optimize on challenging PDE constraints. By combining both data and PDE constraints, PINO overcomes all these challenges. Additionally, a unique property that PINO enjoys over other hybrid learning methods is its ability to incorporate data and PDE constraints at different resolutions. This allows us to combine coarse-resolution data, which is inexpensive to obtain from numerical solvers, with higher resolution PDE constraints, and the resulting PINO has no degradation in accuracy even on high-resolution test instances. This discretization-invariance property in PINO is due to neural-operator framework which learns mappings between function spaces and allows evaluation at different resolutions without the need for re-training. Moreover, PINO succeeds in the purely physics setting, where no data is available, while other approaches such as the Physics-Informed Neural Network (PINN) fail due to optimization challenges, e.g. in multi-scale dynamic systems such as Kolmogorov flows. This is because PINO learns the solution operator by optimizing PDE constraints on multiple instances while PINN optimizes PDE constraints of a single PDE instance. Further, in PINO, we incorporate the Fourier neural operator (FNO) architecture which achieves orders-of-magnitude speedup over numerical solvers and also allows us to compute explicit gradients on function spaces efficiently. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Derivative-Free Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Curvature-Aware Random Search (CARS)",
+    "Cubic Regularized CARS (CARS-CR)"
+  ],
+  "results": [
+    "CARS converges linearly for strongly convex functions",
+    "CARS-CR converges at a rate of O(k^-1) without strong convexity assumption",
+    "CARS and CARS-CR match or exceed state-of-the-arts on benchmark problem sets"
+  ],
+  "paper_id": "6153e0335244ab9dcb39c14a",
+  "title": "Curvature-Aware Derivative-Free Optimization",
+  "abstract": "  The paper discusses derivative-free optimization (DFO), which involves minimizing a function without access to gradients or directional derivatives, only function evaluations. Classical DFO methods, which mimic gradient-based methods, such as Nelder-Mead and direct search have limited scalability for high-dimensional problems. Zeroth-order methods have been gaining popularity due to the demands of large-scale machine learning applications, and the paper focuses on the selection of the step size $\\alpha_k$ in these methods. The proposed approach, called Curvature-Aware Random Search (CARS), uses first- and second-order finite difference approximations to compute a candidate $\\alpha_{+}$. We prove that for strongly convex objective functions, CARS converges linearly provided that the search direction is drawn from a distribution satisfying very mild conditions. We also present a Cubic Regularized variant of CARS, named CARS-CR, which converges in a rate of $\\mathcal{O}(k^{-1})$ without the assumption of strong convexity. Numerical experiments show that CARS and CARS-CR match or exceed the state-of-the-arts on benchmark problem sets. "
+}

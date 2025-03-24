@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/bamboo-bft/bamboo"
+  ],
+  "tasks": [
+    "BFT consensus for decentralized systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Egalitarian BFT (EBFT)",
+    "EBFT-Syn",
+    "EBFT-PSyn",
+    "EBFT-Turbo"
+  ],
+  "results": [
+    "EBFT-PSyn achieves better throughput and latency than HotStuff",
+    "EBFT-Syn achieves a latency of 6 seconds",
+    "EBFT-PSyn achieves a latency of 1 second",
+    "Optimized EBFT-PSyn processes up to 3.6k transactions per second with a latency of 8 seconds"
+  ],
+  "paper_id": "5fca07eb91e011654d99e6d9",
+  "title": "EBFT: Simplifying BFT Consensus Through Egalitarianism",
+  "abstract": "  We present Egalitarian BFT (EBFT), a simple and high-performance framework of BFT consensus protocols for decentralized systems like blockchains. The key innovation in EBFT is egalitarian block generation: nodes randomly and non-interactively propose blocks containing client transactions, rather than relying on a leader to do so. Apart from deterministic safety and liveness guarantees standard in BFT protocols, the egalitarian design provides two novel features: (i) EBFT is resilient to attacks targeting the leader, such as bribery and targeted DoS attacks, and (ii) EBFT does not require any fail-over protocol to detect and replace the faulty leader. EBFT consists of three protocols: EBFT-Syn for synchronous networks, EBFT-PSyn for partially synchronous networks, and EBFT-Turbo that builds on EBFT for high performance.   We implement EBFT and evaluate its performance on AWS. To compare EBFT with state-of-the-art BFT protocols, we build EBFT-PSyn based on Bamboo, an open-source platform for prototyping partially synchronous BFT protocols. We evaluate EBFT-PSyn and HotStuff on EC2 with up to 16 nodes. The evaluation shows that EBFT-PSyn achieves better throughput and latency than HotStuff. To demonstrate its simplicity and practicality, we build EBFT on the Go version of Bitcoin, btcd. We implemented EBFT-Syn, EBFT-PSyn and EBFT-Turbo in about 920 LoCs in total. This indicates that EBFT can be built on top of existing blockchains with relatively little effort. We evaluate these protocols on EC2 instances with up to 256 nodes. Our evaluation shows that EBFT-Syn (resp. EBFT-PSyn) achieves a latency of 6 (resp. 1) seconds, and an optimized version of EBFT-PSyn processes up to 3.6k transactions per second and has a latency of 8 seconds. "
+}

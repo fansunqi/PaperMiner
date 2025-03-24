@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computationally Efficient Approximations for Matrix-based Renyi's Entropy"
+  ],
+  "datasets": [
+    "synthetic data",
+    "real-world data"
+  ],
+  "methods": [
+    "Taylor approximation",
+    "Chebyshev approximation",
+    "Lanczos approximation",
+    "exploiting clustering and block low-rank structure"
+  ],
+  "results": [
+    "reduced complexity to less than O(n^2)",
+    "promising speedup with negligible loss in accuracy"
+  ],
+  "paper_id": "61ca80365244ab9dcba69bba",
+  "title": "Computationally Efficient Approximations for Matrix-based Renyi's\n  Entropy",
+  "abstract": "  The recently developed matrix based Renyi's entropy enables measurement of information in data simply using the eigenspectrum of symmetric positive semi definite (PSD) matrices in reproducing kernel Hilbert space, without estimation of the underlying data distribution. This intriguing property makes the new information measurement widely adopted in multiple statistical inference and learning tasks. However, the computation of such quantity involves the trace operator on a PSD matrix $G$ to power $\\alpha$(i.e., $tr(G^\\alpha)$), with a normal complexity of nearly $O(n^3)$, which severely hampers its practical usage when the number of samples (i.e., $n$) is large. In this work, we present computationally efficient approximations to this new entropy functional that can reduce its complexity to even significantly less than $O(n^2)$. To this end, we leverage the recent progress on Randomized Numerical Linear Algebra, developing Taylor, Chebyshev and Lanczos approximations to $tr(G^\\alpha)$ for arbitrary values of $\\alpha$ by converting it into matrix-vector multiplications problem. We also establish the connection between the matrix-based Renyi's entropy and PSD matrix approximation, which enables exploiting both clustering and block low-rank structure of $G$ to further reduce the computational cost. We theoretically provide approximation accuracy guarantees and illustrate the properties of different approximations. Large-scale experimental evaluations on both synthetic and real-world data corroborate our theoretical findings, showing promising speedup with negligible loss in accuracy. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "PageRank"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Information Transmitting Algorithm (ITA)",
+    "Parallel PageRank"
+  ],
+  "results": [
+    "ITA is 1.5-4 times faster than the power method",
+    "ITA has higher convergence rate and generates less calculations",
+    "ITA converges more uniformly"
+  ],
+  "paper_id": "61b95d2d5244ab9dcbf14f76",
+  "title": "An Advanced Parallel PageRank Algorithm",
+  "abstract": "  Initially used to rank web pages, PageRank has now been applied in many fields. In general case, there are plenty of special vertices such as dangling vertices and unreferenced vertices in the graph. Existing PageRank algorithms usually consider them as `bad` vertices since they may take troubles. However, in this paper, we propose a parallel PageRank algorithm which can take advantage of these special vertices. For this end, we firstly interpret PageRank from the information transmitting perspective and give a constructive definition of PageRank. Then, based on the information transmitting interpretation, a parallel PageRank algorithm which we call the Information Transmitting Algorithm(ITA) is proposed. We prove that the dangling vertices can increase ITA's convergence rate and the unreferenced vertices and weak unreferenced vertices can decrease ITA's calculations. Compared with the MONTE CARLO method, ITA has lower bandwidth requirement. Compared with the power method, ITA has higher convergence rate and generates less calculations. Finally, experimental results on four data sets demonstrate that ITA is 1.5-4 times faster than the power method and converges more uniformly. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/jimmy-dq/DMT"
+  ],
+  "tasks": [
+    "3D single object tracking"
+  ],
+  "datasets": [
+    "KITTI",
+    "NuScenes"
+  ],
+  "methods": [
+    "DMT (Detector-free Motion-prediction-based 3D Tracking)",
+    "Motion prediction module",
+    "Explicit voting module"
+  ],
+  "results": [
+    "~10% improvement over the NuScenes dataset",
+    "72 FPS tracking speed"
+  ],
+  "paper_id": "62281ae95aee126c0f7aaec8",
+  "title": "A Lightweight and Detector-free 3D Single Object Tracker on Point Clouds",
+  "abstract": "  Recent works on 3D single object tracking treat the task as a target-specific 3D detection task, where an off-the-shelf 3D detector is commonly employed for the tracking. However, it is non-trivial to perform accurate target-specific detection since the point cloud of objects in raw LiDAR scans is usually sparse and incomplete. In this paper, we address this issue by explicitly leveraging temporal motion cues and propose DMT, a Detector-free Motion-prediction-based 3D Tracking network that completely removes the usage of complicated 3D detectors and is lighter, faster, and more accurate than previous trackers. Specifically, the motion prediction module is first introduced to estimate a potential target center of the current frame in a point-cloud-free manner. Then, an explicit voting module is proposed to directly regress the 3D box from the estimated target center. Extensive experiments on KITTI and NuScenes datasets demonstrate that our DMT can still achieve better performance (~10% improvement over the NuScenes dataset) and a faster tracking speed (i.e., 72 FPS) than state-of-the-art approaches without applying any complicated 3D detectors. Our code is released at \\url{https://github.com/jimmy-dq/DMT} "
+}

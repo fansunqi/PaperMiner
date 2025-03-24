@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Incremental Class Learning",
+    "Similarity Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Variational Autoencoders (VAEs)",
+    "iCaRL",
+    "EWC",
+    "EBLL",
+    "Angular loss",
+    "Contrastive loss",
+    "Center loss",
+    "Triplet loss"
+  ],
+  "results": [
+    "VAE-based method outperforms iCaRL, EWC, and EBLL",
+    "Angular loss least affected by catastrophic forgetting",
+    "No need for stored images for incremental learning with similarity learning"
+  ],
+  "paper_id": "615bc2735244ab9dcbdbce90",
+  "title": "Incremental Class Learning using Variational Autoencoders with\n  Similarity Learning",
+  "abstract": "  Catastrophic forgetting in neural networks during incremental learning remains a challenging problem. Previous research investigated catastrophic forgetting in fully connected networks, with some earlier work exploring activation functions and learning algorithms. Applications of neural networks have been extended to include similarity learning. Understanding how similarity learning loss functions would be affected by catastrophic forgetting is of significant interest. Our research investigates catastrophic forgetting for four well-known similarity-based loss functions during incremental class learning. The loss functions are Angular, Contrastive, Center, and Triplet loss. Our results show that the catastrophic forgetting rate differs across loss functions on multiple datasets. The Angular loss was least affected, followed by Contrastive, Triplet loss, and Center loss with good mining techniques. We implemented three existing incremental learning techniques, iCaRL, EWC, and EBLL. We further proposed a novel technique using Variational Autoencoders (VAEs) to generate representation as exemplars passed through the network's intermediate layers. Our method outperformed three existing state-of-the-art techniques. We show that one does not require stored images (exemplars) for incremental learning with similarity learning. The generated representations from VAEs help preserve regions of the embedding space used by prior knowledge so that new knowledge does not ``overwrite'' it. "
+}

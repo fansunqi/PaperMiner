@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Embedding",
+    "Link Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pseudo-Euclidean Attract-Repel Embeddings",
+    "Dot Product in Attract Vectors",
+    "Subtract Dot Product in Repel Vectors"
+  ],
+  "results": [
+    "Efficient network compression",
+    "Multiple notions of nearest neighbors",
+    "Improved link prediction in existing models"
+  ],
+  "paper_id": "60cdad4691e011329faa257b",
+  "title": "Pseudo-Euclidean Attract-Repel Embeddings for Undirected Graphs",
+  "abstract": "  Dot product embeddings take a graph and construct vectors for nodes such that dot products between two vectors give the strength of the edge. Dot products make a strong transitivity assumption, however, many important forces generating graphs in the real world lead to non-transitive relationships. We remove the transitivity assumption by embedding nodes into a pseudo-Euclidean space - giving each node an attract and a repel vector. The inner product between two nodes is defined by taking the dot product in attract vectors and subtracting the dot product in repel vectors. Pseudo-Euclidean embeddings can compress networks efficiently, allow for multiple notions of nearest neighbors each with their own interpretation, and can be `slotted' into existing models such as exponential family embeddings or graph neural networks for better link prediction. "
+}

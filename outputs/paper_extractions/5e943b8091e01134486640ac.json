@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Blockchain Sharding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "$p/2$ Adversary Power Resistant Blockchain Sharding"
+  ],
+  "results": [
+    "Outperforms existing blockchain sharding approaches in security, transaction throughput, and flexibility",
+    "Does not require honest participants to create multiple nodes",
+    "Requires less node reassignment when nodes leave",
+    "Can prevent system halting"
+  ],
+  "paper_id": "5e943b8091e01134486640ac",
+  "title": "A $p/2$ Adversary Power Resistant Blockchain Sharding Approach",
+  "abstract": "  Blockchain Sharding is a blockchain performance enhancement approach. By splitting a blockchain into several parallel-run committees (shards), it helps increase transaction throughput, reduce computational resources required, and increase reward expectation for participants. Recently, several flexible sharding methods that can tolerate up to $n/2$ Byzantine nodes ($n/2$ security level) have been proposed. However, these methods suffer from three main drawbacks. First, in a non-sharding blockchain, nodes can have different weight (power or stake) to create a consensus, and as such an adversary needs to control half of the overall weight in order to manipulate the system ($p/2$ security level). In blockchain sharding, all nodes carry the same weight. Thus, it is only under the assumption that honest participants create as many nodes as they should that a $n/2$ security level blockchain sharding reaches the $p/2$ security level. Second, when some nodes leave the system, other nodes need to be reassigned, frequently, from shard to shard in order to maintain the security level. This has an adverse effect on system performance. Third, while some $n/2$ approaches can maintain data integrity with up to $n/2$ Byzantine nodes, their systems can halt with a smaller number of Byzantine nodes. In this paper, we present a $p/2$ security level blockchain sharding approach that does not require honest participants to create multiple nodes, requires less node reassignment when some nodes leave the system, and can prevent the system from halting. Our experiments show that our new approach outperforms existing blockchain sharding approaches in terms of security, transaction throughput and flexibility. "
+}

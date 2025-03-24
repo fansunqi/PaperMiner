@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Evaluating deep generative models of images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Objective tests of images output by GANs",
+    "Stochastic context models (SCMs) for image features",
+    "Statistical classifiers for detecting specific effects of arrangement rules"
+  ],
+  "results": [
+    "Ensembles of generated images can appear accurate but lack known spatial arrangements",
+    "GANs do not respect the prevalence of spatial orders in training data",
+    "SCMs can quantify errors per image affecting subsequent use of GAN-generated images"
+  ],
+  "paper_id": "619eff0a5244ab9dcbdda7ac",
+  "title": "A Method for Evaluating Deep Generative Models of Images via Assessing\n  the Reproduction of High-order Spatial Context",
+  "abstract": "  Deep generative models (DGMs) have the potential to revolutionize diagnostic imaging. Generative adversarial networks (GANs) are one kind of DGM which are widely employed. The overarching problem with deploying GANs, and other DGMs, in any application that requires domain expertise in order to actually use the generated images is that there generally is not adequate or automatic means of assessing the domain-relevant quality of generated images. In this work, we demonstrate several objective tests of images output by two popular GAN architectures. We designed several stochastic context models (SCMs) of distinct image features that can be recovered after generation by a trained GAN. Several of these features are high-order, algorithmic pixel-arrangement rules which are not readily expressed in covariance matrices. We designed and validated statistical classifiers to detect specific effects of the known arrangement rules. We then tested the rates at which two different GANs correctly reproduced the feature context under a variety of training scenarios, and degrees of feature-class similarity. We found that ensembles of generated images can appear largely accurate visually, and show high accuracy in ensemble measures, while not exhibiting the known spatial arrangements. Furthermore, GANs trained on a spectrum of distinct spatial orders did not respect the given prevalence of those orders in the training data. The main conclusion is that SCMs can be engineered to quantify numerous errors, per image, that may not be captured in ensemble statistics but plausibly can affect subsequent use of the GAN-generated images. "
+}

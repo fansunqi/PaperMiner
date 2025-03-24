@@ -1,0 +1,26 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Polyp segmentation"
+  ],
+  "datasets": [
+    "unseen datasets",
+    "datasets across different domains"
+  ],
+  "methods": [
+    "PlutoNet",
+    "Modified partial decoder",
+    "Decoder consistency training",
+    "Shared encoder",
+    "Auxiliary decoder",
+    "Combined loss"
+  ],
+  "results": [
+    "PlutoNet requires only 2,626,537 parameters",
+    "Significantly better performance than state-of-the-art models",
+    "Reduces uncertainty and false positive rates"
+  ],
+  "paper_id": "62539c3e5aee126c0ffd4844",
+  "title": "PlutoNet: An Efficient Polyp Segmentation Network with Modified Partial\n  Decoder and Decoder Consistency Training",
+  "abstract": "  Deep learning models are used to minimize the number of polyps that goes unnoticed by the experts and to accurately segment the detected polyps during interventions. Although state-of-the-art models are proposed, it remains a challenge to define representations that are able to generalize well and that mediate between capturing low-level features and higher-level semantic details without being redundant. Another challenge with these models is that they require too many parameters, which can pose a problem with real-time applications. To address these problems, we propose PlutoNet for polyp segmentation which requires only 2,626,537 parameters, less than 10\\% of the parameters required by its counterparts. With PlutoNet, we propose a novel \\emph{decoder consistency training} approach that consists of a shared encoder, the modified partial decoder which is a combination of the partial decoder and full-scale connections that capture salient features at different scales without being redundant, and the auxiliary decoder which focuses on higher-level relevant semantic features. We train the modified partial decoder and the auxiliary decoder with a combined loss to enforce consistency, which helps improve the encoders representations. This way we are able to reduce uncertainty and false positive rates. We perform ablation studies and extensive experiments which show that PlutoNet performs significantly better than the state-of-the-art models, particularly on unseen datasets and datasets across different domains. "
+}

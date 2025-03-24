@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Representation learning for sequence-to-sequence problems",
+    "Semantic parsing",
+    "Machine translation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-filter encoder-decoder model",
+    "Self-enhancing mechanism using reinforcement learning"
+  ],
+  "results": [
+    "Outperforms most benchmarks by at least 5%",
+    "Self-enhancing mechanism improves performance by over 10%",
+    "Positive correlation between model's performance and latent space clustering"
+  ],
+  "paper_id": "6153e0205244ab9dcb39a740",
+  "title": "Self-Enhancing Multi-filter Sequence-to-Sequence Model",
+  "abstract": "  Representation learning is important for solving sequence-to-sequence problems in natural language processing. Representation learning transforms raw data into vector-form representations while preserving their features. However, data with significantly different features leads to heterogeneity in their representations, which may increase the difficulty of convergence. We design a multi-filter encoder-decoder model to resolve the heterogeneity problem in sequence-to-sequence tasks. The multi-filter model divides the latent space into subspaces using a clustering algorithm and trains a set of decoders (filters) in which each decoder only concentrates on the features from its corresponding subspace. As for the main contribution, we design a self-enhancing mechanism that uses a reinforcement learning algorithm to optimize the clustering algorithm without additional training data. We run semantic parsing and machine translation experiments to indicate that the proposed model can outperform most benchmarks by at least 5\\%. We also empirically show the self-enhancing mechanism can improve performance by over 10\\% and provide evidence to demonstrate the positive correlation between the model's performance and the latent space clustering. "
+}

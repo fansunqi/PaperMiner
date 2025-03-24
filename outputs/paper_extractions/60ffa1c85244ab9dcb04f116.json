@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Causal Inference"
+  ],
+  "datasets": [
+    "Two large medical claims databases"
+  ],
+  "methods": [
+    "Compute summary statistics locally using propensity scores",
+    "Aggregate statistics across sites for point and variance estimators"
+  ],
+  "results": [
+    "Estimators are consistent and asymptotically normal",
+    "Aggregation schemes account for heterogeneity in treatment assignments and outcomes"
+  ],
+  "paper_id": "60ffa1c85244ab9dcb04f116",
+  "title": "Federated Causal Inference in Heterogeneous Observational Data",
+  "abstract": "  We are interested in estimating the effect of a treatment applied to individuals at multiple sites, where data is stored locally for each site. Due to privacy constraints, individual-level data cannot be shared across sites; the sites may also have heterogeneous populations and treatment assignment mechanisms. Motivated by these considerations, we develop federated methods to draw inference on the average treatment effects of combined data across sites. Our methods first compute summary statistics locally using propensity scores and then aggregate these statistics across sites to obtain point and variance estimators of average treatment effects. We show that these estimators are consistent and asymptotically normal. To achieve these asymptotic properties, we find that the aggregation schemes need to account for the heterogeneity in treatment assignments and in outcomes across sites. We demonstrate the validity of our federated methods through a comparative study of two large medical claims databases. "
+}

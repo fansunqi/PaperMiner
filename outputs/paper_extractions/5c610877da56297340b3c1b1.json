@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fast processing of large-scale graphs",
+    "Fundamental graph problems in distributed computing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "k-machine model",
+    "Generic methodology for efficient algorithms in k-machine model using CONGEST model algorithms",
+    "Algorithms for connectivity, minimum spanning trees, shortest paths, maximal independent sets, and finding subgraphs"
+  ],
+  "results": [
+    "Many graph problems solved in O(n/k) rounds",
+    "Speedup nearly linear in k",
+    "Lower bound of Omega(n/k) rounds for spanning tree computation",
+    "Lower bound of Omega(n/k^2) for connectivity and related problems"
+  ],
+  "paper_id": "5c610877da56297340b3c1b1",
+  "title": "Distributed Algorithms for Large-Scale Graphs",
+  "abstract": "  Motivated by the increasing need for fast processing of large-scale graphs, we study a number of fundamental graph problems in a message-passing model for distributed computing, called $k$-machine model, where we have $k$ machines that jointly perform computations on $n$-node graphs. The graph is assumed to be partitioned in a balanced fashion among the $k$ machines, a common implementation in many real-world systems. Communication is point-to-point via bandwidth-constrained links, and the goal is to minimize the round complexity, i.e., the number of communication rounds required to finish a computation.   We present a generic methodology that allows to obtain efficient algorithms in the $k$-machine model using distributed algorithms for the classical CONGEST model of distributed computing. Using this methodology, we obtain algorithms for various fundamental graph problems such as connectivity, minimum spanning trees, shortest paths, maximal independent sets, and finding subgraphs, showing that many of these problems can be solved in $\\tilde{O}(n/k)$ rounds; this shows that one can achieve speedup nearly linear in $k$.   To complement our upper bounds, we present lower bounds on the round complexity that quantify the fundamental limitations of solving graph problems distributively. We first show a lower bound of $\\Omega(n/k)$ rounds for computing a spanning tree of the input graph. This result implies the same bound for other fundamental problems such as computing a minimum spanning tree, breadth-first tree, or shortest paths tree. We also show a $\\tilde \\Omega(n/k^2)$ lower bound for connectivity, spanning tree verification and other related problems. The latter lower bounds follow from the development and application of novel results in a random-partition variant of the classical communication complexity model. "
+}

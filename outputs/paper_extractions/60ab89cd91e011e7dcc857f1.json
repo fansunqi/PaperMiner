@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantifying mini-batching error in Bayesian inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Langevin dynamics",
+    "Unadjusted discretizations of Langevin dynamics",
+    "Dynamical friction correction for mini-batching noise"
+  ],
+  "results": [
+    "Investigated practical relevance of assumptions underpinning Adaptive Langevin",
+    "Quantified bias induced by mini-batching in Bayesian inference",
+    "Suggested extension of AdL to reduce bias on posterior distribution"
+  ],
+  "paper_id": "60ab89cd91e011e7dcc857f1",
+  "title": "Quantifying the mini-batching error in Bayesian inference for Adaptive\n  Langevin dynamics",
+  "abstract": "  Bayesian inference allows to obtain useful information on the parameters of models, either in computational statistics or more recently in the context of Bayesian Neural Networks. The computational cost of usual Monte Carlo methods for sampling posterior laws in Bayesian inference scales linearly with the number of data points. One option to reduce it to a fraction of this cost is to resort to mini-batching in conjunction with unadjusted discretizations of Langevin dynamics, in which case only a random fraction of the data is used to estimate the gradient. However, this leads to an additional noise in the dynamics and hence a bias on the invariant measure which is sampled by the Markov chain. We advocate using the so-called Adaptive Langevin dynamics, which is a modification of standard inertial Langevin dynamics with a dynamical friction which automatically corrects for the increased noise arising from mini-batching. We investigate the practical relevance of the assumptions underpinning Adaptive Langevin (constant covariance for the estimation of the gradient, Gaussian minibatching noise), which are not satisfied in typical models of Bayesian inference, and quantify the bias induced by minibatching in this case. We also suggest a possible extension of AdL to further reduce the bias on the posterior distribution, by considering a dynamical friction depending on the current value of the parameter to sample. "
+}

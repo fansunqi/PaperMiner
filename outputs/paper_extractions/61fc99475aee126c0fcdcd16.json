@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/dixantmittal/ExPoSe"
+  ],
+  "tasks": [
+    "Online tree-based search",
+    "Decision-making problems"
+  ],
+  "datasets": [
+    "Atari games",
+    "Sokoban",
+    "Hamiltonian cycle search in sparse graphs"
+  ],
+  "methods": [
+    "Exploratory Policy Gradient Search (ExPoSe)",
+    "Information sharing among states",
+    "Explicit exploration mechanism"
+  ],
+  "results": [
+    "ExPoSe consistently outperforms other popular online search algorithms across all domains"
+  ],
+  "paper_id": "61fc99475aee126c0fcdcd16",
+  "title": "ExPoSe: Combining State-Based Exploration with Gradient-Based Online\n  Search",
+  "abstract": "  Online tree-based search algorithms iteratively simulate trajectories and update action-values for a set of states stored in a tree structure. It works reasonably well in practice but fails to effectively utilise the information gathered from similar states. Depending upon the smoothness of the action-value function, one approach to overcoming this issue is through online learning, where information is interpolated among similar states; Policy Gradient Search provides a practical algorithm to achieve this. However, Policy Gradient Search lacks an explicit exploration mechanism, which is a key feature of tree-based online search algorithms. In this paper, we propose an efficient and effective online search algorithm called Exploratory Policy Gradient Search (ExPoSe), which leverages information sharing among states by updating the search policy parameters directly, while incorporating a well-defined exploration mechanism during the online search process. We evaluate ExPoSe on a range of decision-making problems, including Atari games, Sokoban, and Hamiltonian cycle search in sparse graphs. The results demonstrate that ExPoSe consistently outperforms other popular online search algorithms across all domains. The ExPoSe source code is available at \\textit{\\url{https://github.com/dixantmittal/ExPoSe}}. "
+}

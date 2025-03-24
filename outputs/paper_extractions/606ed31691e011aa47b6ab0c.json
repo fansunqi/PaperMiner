@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Gastritis detection"
+  ],
+  "datasets": [
+    "gastric X-ray images"
+  ],
+  "methods": [
+    "self-supervised learning",
+    "teacher-student architecture",
+    "SimSiam",
+    "BYOL",
+    "PIRL-jigsaw",
+    "PIRL-rotation",
+    "SimCLR"
+  ],
+  "results": [
+    "harmonic mean score of sensitivity and specificity: 0.875 (10 patients)",
+    "harmonic mean score of sensitivity and specificity: 0.911 (20 patients)",
+    "harmonic mean score of sensitivity and specificity: 0.915 (30 patients)",
+    "harmonic mean score of sensitivity and specificity: 0.931 (40 patients)",
+    "outperformed all comparative methods"
+  ],
+  "paper_id": "606ed31691e011aa47b6ab0c",
+  "title": "Self-Supervised Learning for Gastritis Detection with Gastric X-ray\n  Images",
+  "abstract": "  Purpose: Manual annotation of gastric X-ray images by doctors for gastritis detection is time-consuming and expensive. To solve this, a self-supervised learning method is developed in this study. The effectiveness of the proposed self-supervised learning method in gastritis detection is verified using a few annotated gastric X-ray images. Methods: In this study, we develop a novel method that can perform explicit self-supervised learning and learn discriminative representations from gastric X-ray images. Models trained based on the proposed method were fine-tuned on datasets comprising a few annotated gastric X-ray images. Five self-supervised learning methods, i.e., SimSiam, BYOL, PIRL-jigsaw, PIRL-rotation, and SimCLR, were compared with the proposed method. Furthermore, three previous methods, one pretrained on ImageNet, one trained from scratch, and one semi-supervised learning method, were compared with the proposed method. Results: The proposed method's harmonic mean score of sensitivity and specificity after fine-tuning with the annotated data of 10, 20, 30, and 40 patients were 0.875, 0.911, 0.915, and 0.931, respectively. The proposed method outperformed all comparative methods, including the five self-supervised learning and three previous methods. Experimental results showed the effectiveness of the proposed method in gastritis detection using a few annotated gastric X-ray images. Conclusions: This paper proposes a novel self-supervised learning method based on a teacher-student architecture for gastritis detection using gastric X-ray images. The proposed method can perform explicit self-supervised learning and learn discriminative representations from gastric X-ray images. The proposed method exhibits potential clinical use in gastritis detection using a few annotated gastric X-ray images. "
+}

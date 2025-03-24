@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object rearrangement",
+    "Stack rearrangement",
+    "Multi-robot motion planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Rubik Tables",
+    "Column/row shuffles",
+    "Constant-factor optimal algorithm"
+  ],
+  "results": [
+    "Reconfiguration of items in Rubik Table using at most $2n$ column/row shuffles",
+    "For $nd$ items in $n$ stacks, $O(nd)$ stack pop-push operations sufficient",
+    "Low-polynomial time algorithms for multi-robot motion planning under high density"
+  ],
+  "paper_id": "5e451e433a55acfaed73882c",
+  "title": "Rubik Tables and Object Rearrangement",
+  "abstract": "  A great number of robotics applications demand the rearrangement of many mobile objects, e.g., organizing products on shelves, shuffling containers at shipping ports, reconfiguring fleets of mobile robots, and so on. To boost the throughput in systems designed for solving these rearrangement problems, it is essential to minimize the number of atomic operations, e.g., the pick-n-places of individual objects. However, this optimization task poses a rather difficult challenge due to complex inter-dependency between objects, especially in high-density settings.   In tackling the aforementioned challenges, we develop a novel algorithmic tool, Rubik Tables, that provides a clean abstraction of object rearrangement problems as the proxy problem of shuffling items stored in a table or lattice. In its basic form, a Rubik Table is an $n\\times n$ table containing $n^2$ items. We show that the reconfiguration of items in such a Rubik Table can be achieved using at most $2n$ column/row shuffles in the partially labeled setting, where each column (resp., row) shuffle may arbitrarily permute the items stored in a column (resp., row) of the table. When items are fully distinguishable, additional $n$ shuffles are needed. Rubik Tables allow many generalizations, e.g., to higher dimensions.   Using Rubik Table, we have designed a first constant-factor optimal algorithm for stack rearrangement problems. We show that, for $nd$ items stored in $n$ stacks of depth $d$ each, using one empty stack as the swap space, $O(nd)$ stack pop-push operations are sufficient for an arbitrary reconfiguration of the stacks where $d \\le n^{\\frac{m}{2}}$ for arbitrary fixed $m >0$. Rubik Table results also allow the development of constant-factor optimal solutions for solving multi-robot motion planning problems under extreme robot density. These algorithms based on Rubik Table results run in low-polynomial time. "
+}

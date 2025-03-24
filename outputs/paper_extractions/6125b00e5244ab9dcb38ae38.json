@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Text Attacks"
+  ],
+  "datasets": [
+    "IMDB",
+    "AG's News",
+    "Yahoo! Answers"
+  ],
+  "methods": [
+    "Bigram and Unigram based adaptive Semantic Preservation Optimization (BU-SPO)",
+    "Hybrid method using synonyms and sememe candidates",
+    "Semantic Preservation Optimization (SPO)",
+    "SPO with semantic Filter (SPOF)"
+  ],
+  "results": [
+    "Highest attack success rates and semantics rates",
+    "Smallest number of word changes compared to existing methods"
+  ],
+  "paper_id": "6125b00e5244ab9dcb38ae38",
+  "title": "Semantic-Preserving Adversarial Text Attacks",
+  "abstract": "  Deep neural networks (DNNs) are known to be vulnerable to adversarial images, while their robustness in text classification is rarely studied. Several lines of text attack methods have been proposed in the literature, including character-level, word-level, and sentence-level attacks. However, it is still a challenge to minimize the number of word changes necessary to induce misclassification, while simultaneously ensuring lexical correctness, syntactic soundness, and semantic similarity. In this paper, we propose a Bigram and Unigram based adaptive Semantic Preservation Optimization (BU-SPO) method to examine the vulnerability of deep models. Our method has four major merits. Firstly, we propose to attack text documents not only at the unigram word level but also at the bigram level which better keeps semantics and avoids producing meaningless outputs. Secondly, we propose a hybrid method to replace the input words with options among both their synonyms candidates and sememe candidates, which greatly enriches the potential substitutions compared to only using synonyms. Thirdly, we design an optimization algorithm, i.e., Semantic Preservation Optimization (SPO), to determine the priority of word replacements, aiming to reduce the modification cost. Finally, we further improve the SPO with a semantic Filter (named SPOF) to find the adversarial example with the highest semantic similarity. We evaluate the effectiveness of our BU-SPO and BU-SPOF on IMDB, AG's News, and Yahoo! Answers text datasets by attacking four popular DNNs models. Results show that our methods achieve the highest attack success rates and semantics rates by changing the smallest number of words compared with existing methods. "
+}

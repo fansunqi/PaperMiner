@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training Neural ODEs faster"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Continuous Deep Equilibrium Models",
+    "Infinite time neural ODE",
+    "Skip and Skip Reg. DEQ (IMEX layer)"
+  ],
+  "results": [
+    "Training cost reduced by 2-4x over standard neural ODE",
+    "Training time decreased by 1.11-3.19x with explicit predictor"
+  ],
+  "paper_id": "61f753235aee126c0f9c24fd",
+  "title": "Continuous Deep Equilibrium Models: Training Neural ODEs faster by\n  integrating them to Infinity",
+  "abstract": "  Implicit models separate the definition of a layer from the description of its solution process. While implicit layers allow features such as depth to adapt to new scenarios and inputs automatically, this adaptivity makes its computational expense challenging to predict. In this manuscript, we increase the \"implicitness\" of the DEQ by redefining the method in terms of an infinite time neural ODE, which paradoxically decreases the training cost over a standard neural ODE by 2-4x. Additionally, we address the question: is there a way to simultaneously achieve the robustness of implicit layers while allowing the reduced computational expense of an explicit layer? To solve this, we develop Skip and Skip Reg. DEQ, an implicit-explicit (IMEX) layer that simultaneously trains an explicit prediction followed by an implicit correction. We show that training this explicit predictor is free and even decreases the training time by 1.11-3.19x. Together, this manuscript shows how bridging the dichotomy of implicit and explicit deep learning can combine the advantages of both techniques. "
+}

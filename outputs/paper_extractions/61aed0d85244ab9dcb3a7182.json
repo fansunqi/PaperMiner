@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/GuYuanjie/Deep-Retinex-fusion"
+  ],
+  "tasks": [
+    "Adaptive Infrared and Visible Image Super-Resolution Fusion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Retinex Fusion (DRF)",
+    "Generative networks (ZipperNet, LightingNet, AdjustingNet)",
+    "Adaptive fusion loss functions based on Retinex theory"
+  ],
+  "results": [
+    "DRF achieves the best super-resolution fusion performance without any dataset",
+    "Adaptively balances IR and VIS information",
+    "Good noise immunity"
+  ],
+  "paper_id": "61aed0d85244ab9dcb3a7182",
+  "title": "Physics Driven Deep Retinex Fusion for Adaptive Infrared and Visible\n  Image Fusion",
+  "abstract": "  Convolutional neural networks have turned into an illustrious tool for image fusion and super-resolution. However, their excellent performance cannot work without large fixed-paired datasets; and additionally, these high-demanded ground truth data always cannot be obtained easily in fusion tasks. In this study, we show that, the structures of generative networks capture a great deal of image feature priors, and then these priors are sufficient to reconstruct high-quality fused super-resolution result using only low-resolution inputs. By this way, we propose a novel self-supervised dataset-free method for adaptive infrared (IR) and visible (VIS) image super-resolution fusion named Deep Retinex Fusion (DRF). The key idea of DRF is first generating component priors which are disentangled from physical model using our designed generative networks ZipperNet, LightingNet and AdjustingNet, then combining these priors which captured by networks via adaptive fusion loss functions based on Retinex theory, and finally reconstructing the super-resolution fusion results. Furthermore, in order to verify the effectiveness of our reported DRF, both qualitative and quantitative experiments via comparing with other state-of-the-art methods are performed using different test sets. These results prove that, comparing with large datasets trained methods, DRF which works without any dataset achieves the best super-resolution fusion performance; and more importantly, DRF can adaptively balance IR and VIS information and has good noise immunity. DRF codes are open source available at https://github.com/GuYuanjie/Deep-Retinex-fusion. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/huangdonghere/FastMICE"
+  ],
+  "tasks": [
+    "Multi-view clustering"
+  ],
+  "datasets": [
+    "22 multi-view datasets"
+  ],
+  "methods": [
+    "FastMICE",
+    "Random view groups",
+    "Hybrid early-late fusion strategy",
+    "View-sharing bipartite graphs",
+    "Fast graph partitioning"
+  ],
+  "results": [
+    "Almost linear time and space complexity",
+    "No dataset-specific tuning",
+    "Advantages in scalability, superiority, and simplicity over state-of-the-art"
+  ],
+  "paper_id": "623a900f5aee126c0f36cf28",
+  "title": "Fast Multi-view Clustering via Ensembles: Towards Scalability,\n  Superiority, and Simplicity",
+  "abstract": "  Despite significant progress, there remain three limitations to the previous multi-view clustering algorithms. First, they often suffer from high computational complexity, restricting their feasibility for large-scale datasets. Second, they typically fuse multi-view information via one-stage fusion, neglecting the possibilities in multi-stage fusions. Third, dataset-specific hyperparameter-tuning is frequently required, further undermining their practicability. In light of this, we propose a fast multi-view clustering via ensembles (FastMICE) approach. Particularly, the concept of random view groups is presented to capture the versatile view-wise relationships, through which the hybrid early-late fusion strategy is designed to enable efficient multi-stage fusions. With multiple views extended to many view groups, three levels of diversity (w.r.t. features, anchors, and neighbors, respectively) are jointly leveraged for constructing the view-sharing bipartite graphs in the early-stage fusion. Then, a set of diversified base clusterings for different view groups are obtained via fast graph partitioning, which are further formulated into a unified bipartite graph for final clustering in the late-stage fusion. Notably, FastMICE has almost linear time and space complexity, and is free of dataset-specific tuning. Experiments on 22 multi-view datasets demonstrate its advantages in scalability (for extremely large datasets), superiority (in clustering performance), and simplicity (to be applied) over the state-of-the-art. Code available: https://github.com/huangdonghere/FastMICE. "
+}

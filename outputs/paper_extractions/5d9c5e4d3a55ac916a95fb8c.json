@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Semi-supervised node classification on graphs"
+  ],
+  "datasets": [
+    "Cora"
+  ],
+  "methods": [
+    "Stabilized Self-Training (SST)",
+    "SSTGCN",
+    "SSTDA"
+  ],
+  "results": [
+    "SSTGCN accuracy: 62.5% (17.9% higher than GCN)",
+    "SSTDA accuracy: 66.4% (6.6% higher than DAGNN)",
+    "Superior performance under almost all settings over all datasets"
+  ],
+  "paper_id": "5d9c5e4d3a55ac916a95fb8c",
+  "title": "Effective Stabilized Self-Training on Few-Labeled Graph Data",
+  "abstract": "  Graph neural networks (GNNs) are designed for semi-supervised node classification on graphs where only a subset of nodes have class labels. However, under extreme cases when very few labels are available (e.g., 1 labeled node per class), GNNs suffer from severe performance degradation. Specifically, we observe that existing GNNs suffer from unstable training process on few-labeled graphs, resulting to inferior performance on node classification. Therefore, we propose an effective framework, Stabilized Self-Training (SST), which is applicable to existing GNNs to handle the scarcity of labeled data, and consequently, boost classification accuracy. We conduct thorough empirical and theoretical analysis to support our findings and motivate the algorithmic designs in SST. We apply SST to two popular GNN models GCN and DAGNN, to get SSTGCN and SSTDA methods respectively, and evaluate the two methods against 10 competitors over 5 benchmarking datasets. Extensive experiments show that the proposed SST framework is highly effective, especially when few labeled data are available. Our methods achieve superior performance under almost all settings over all datasets. For instance, on a Cora dataset with only 1 labeled node per class, the accuracy of SSTGCN is 62.5%, 17.9% higher than GCN, and the accuracy of SSTDA is 66.4%, which outperforms DAGNN by 6.6%. "
+}

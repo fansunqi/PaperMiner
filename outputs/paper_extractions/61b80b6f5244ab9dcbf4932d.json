@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic vulnerability detection on assembly language"
+  ],
+  "datasets": [
+    "ROMEO",
+    "Juliet test suite"
+  ],
+  "methods": [
+    "Text-based assembly language representation",
+    "Call graph context for function-spanning vulnerability detection",
+    "Off-the-shelf classifier"
+  ],
+  "results": [
+    "Compares favorably to state-of-the-art methods",
+    "Including call graph context improves function-spanning vulnerability detection",
+    "No label information leaked during compilation"
+  ],
+  "paper_id": "61b80b6f5244ab9dcbf4932d",
+  "title": "ROMEO: Exploring Juliet through the Lens of Assembly Language",
+  "abstract": "  Automatic vulnerability detection on C/C++ source code has benefitted from the introduction of machine learning to the field, with many recent publications targeting this combination. In contrast, assembly language or machine code artifacts receive less attention, although there are compelling reasons to study them. They are more representative of what is executed, more easily incorporated in dynamic analysis, and in the case of closed-source code, there is no alternative.   We evaluate the representative capability of assembly language compared to C/C++ source code for vulnerability detection. Furthermore, we investigate the role of call graph context in detecting function-spanning vulnerabilities. Finally, we verify whether compiling a benchmark dataset compromises an experiment's soundness by inadvertently leaking label information.   We propose ROMEO, a publicly available, reproducible and reusable binary vulnerability detection benchmark dataset derived from the synthetic Juliet test suite. Alongside, we introduce a simple text-based assembly language representation that includes context for function-spanning vulnerability detection and semantics to detect high-level vulnerabilities. It is constructed by disassembling the .text segment of the respective binaries.   We evaluate an x86 assembly language representation of the compiled dataset, combined with an off-the-shelf classifier. It compares favorably to state-of-the-art methods, including those operating on the full C/C++ code. Including context information using the call graph improves detection of function-spanning vulnerabilities. There is no label information leaked during the compilation process. "
+}

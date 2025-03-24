@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Scaling Bitcoin performance",
+    "Improving PoW blockchain latency and throughput"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Prism++ with new confirmation rule",
+    "Efficient management of parallel chains"
+  ],
+  "results": [
+    "Throughput of over 80,000 transactions per second",
+    "Confirmation latency of tens of seconds on networks of up to 900 EC2 VMs",
+    "Security at the level of Bitcoin with small confirmation latency"
+  ],
+  "paper_id": "5d8c8dbd3a55acc79177b96f",
+  "title": "Practical Low Latency Proof of Work Consensus",
+  "abstract": "  Bitcoin is the first fully-decentralized permissionless blockchain protocol to achieve a high level of security, but at the expense of poor throughput and latency. Scaling the performance of Bitcoin has a been a major recent direction of research. One successful direction of work has involved replacing proof of work (PoW) by proof of stake (PoS). Proposals to scale the performance in the PoW setting itself have focused mostly on parallelizing the mining process, scaling throughput; the few proposals to improve latency have either sacrificed throughput or the latency guarantees involve large constants rendering it practically useless. Our first contribution is to design a new PoW blockchain Prism++ that has provably low latency and high throughput; the design retains the parallel-chain approach espoused in Prism but invents a new confirmation rule to infer the permanency of a block by combining information across the parallel chains. We show security at the level of Bitcoin with very small confirmation latency (a small constant factor of block interarrival time). A key aspect to scaling the performance is to use a large number of parallel chains, which puts significant strain on the system. Our second contribution is the design and evaluation of a practical system to efficiently manage the memory, computation, and I/O imperatives of a large number of parallel chains. Our implementation of Prism++ achieves a throughput of over 80,000 transactions per second and confirmation latency of tens of seconds on networks of up to 900 EC2 Virtual Machines. "
+}

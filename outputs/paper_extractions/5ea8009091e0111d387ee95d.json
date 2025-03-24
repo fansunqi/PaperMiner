@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lifelong Learning",
+    "Synergistic Learning"
+  ],
+  "datasets": [
+    "Simulated Data",
+    "Benchmark Data",
+    "Tabular Data",
+    "Image Data",
+    "Spoken Data",
+    "Adversarial Tasks"
+  ],
+  "methods": [
+    "Representation Ensembling",
+    "Ensemble of Trees",
+    "Ensemble of Networks"
+  ],
+  "results": [
+    "Forward and backward transfer in various data scenarios",
+    "Quasilinear space and time complexity",
+    " Superior performance compared to reference algorithms with quadratic complexity"
+  ],
+  "paper_id": "5ea8009091e0111d387ee95d",
+  "title": "Representation Ensembling for Synergistic Lifelong Learning with\n  Quasilinear Complexity",
+  "abstract": "  In lifelong learning, data are used to improve performance not only on the current task, but also on previously encountered, and as yet unencountered tasks. In contrast, classical machine learning, which we define as, starts from a blank slate, or tabula rasa and uses data only for the single task at hand. While typical transfer learning algorithms can improve performance on future tasks, their performance on prior tasks degrades upon learning new tasks (called forgetting). Many recent approaches for continual or lifelong learning have attempted to maintain performance on old tasks given new tasks. But striving to avoid forgetting sets the goal unnecessarily low. The goal of lifelong learning should be not only to improve performance on future tasks (forward transfer) but also on past tasks (backward transfer) with any new data. Our key insight is that we can synergistically ensemble representations -- that were learned independently on disparate tasks -- to enable both forward and backward transfer. This generalizes ensembling decisions (like in decision forests) and complements ensembling dependently learned representations (like in multitask learning). Moreover, we can ensemble representations in quasilinear space and time. We demonstrate this insight with two algorithms: representation ensembles of (1) trees and (2) networks. Both algorithms demonstrate forward and backward transfer in a variety of simulated and benchmark data scenarios, including tabular, image, and spoken, and adversarial tasks. This is in stark contrast to the reference algorithms we compared to, most of which failed to transfer either forward or backward, or both, despite that many of them require quadratic space or time complexity. "
+}

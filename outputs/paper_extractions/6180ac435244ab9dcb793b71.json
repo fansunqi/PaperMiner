@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/liqingchunnnn/Only-Noisy-Training"
+  ],
+  "tasks": [
+    "Self-supervised speech denoising"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Only-Noisy Training (ONT)",
+    "Random audio sub-sampler",
+    "Complex-valued speech denoising module"
+  ],
+  "results": [
+    "Eliminates high dependence on clean targets",
+    "Achieves on-par or better performance than other training strategies"
+  ],
+  "paper_id": "6180ac435244ab9dcb793b71",
+  "title": "Self-Supervised Speech Denoising Using Only Noisy Audio Signals",
+  "abstract": "  In traditional speech denoising tasks, clean audio signals are often used as the training target, but absolutely clean signals are collected from expensive recording equipment or in studios with the strict environments. To overcome this drawback, we propose an end-to-end self-supervised speech denoising training scheme using only noisy audio signals, named Only-Noisy Training (ONT), without extra training conditions. The proposed ONT strategy constructs training pairs only from each single noisy audio, and it contains two modules: training audio pairs generated module and speech denoising module. The first module adopts a random audio sub-sampler on each noisy audio to generate training pairs. The sub-sampled pairs are then fed into a novel complex-valued speech denoising module. Experimental results show that the proposed method not only eliminates the high dependence on clean targets of traditional audio denoising tasks, but also achieves on-par or better performance than other training strategies. Availability-ONT is available at https://github.com/liqingchunnnn/Only-Noisy-Training "
+}

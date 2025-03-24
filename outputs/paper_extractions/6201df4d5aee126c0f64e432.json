@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-supervised visual pre-training"
+  ],
+  "datasets": [
+    "ImageNet",
+    "ADE20K"
+  ],
+  "methods": [
+    "Corrupted Image Modeling (CIM)",
+    "Auxiliary generator with BEiT",
+    "Enhancer network"
+  ],
+  "results": [
+    "Compelling results in vision benchmarks",
+    "Rich visual representations for both ViT and CNN"
+  ],
+  "paper_id": "6201df4d5aee126c0f64e432",
+  "title": "Corrupted Image Modeling for Self-Supervised Visual Pre-Training",
+  "abstract": "  We introduce Corrupted Image Modeling (CIM) for self-supervised visual pre-training. CIM uses an auxiliary generator with a small trainable BEiT to corrupt the input image instead of using artificial [MASK] tokens, where some patches are randomly selected and replaced with plausible alternatives sampled from the BEiT output distribution. Given this corrupted image, an enhancer network learns to either recover all the original image pixels, or predict whether each visual token is replaced by a generator sample or not. The generator and the enhancer are simultaneously trained and synergistically updated. After pre-training, the enhancer can be used as a high-capacity visual encoder for downstream tasks. CIM is a general and flexible visual pre-training framework that is suitable for various network architectures. For the first time, CIM demonstrates that both ViT and CNN can learn rich visual representations using a unified, non-Siamese framework. Experimental results show that our approach achieves compelling results in vision benchmarks, such as ImageNet classification and ADE20K semantic segmentation. "
+}

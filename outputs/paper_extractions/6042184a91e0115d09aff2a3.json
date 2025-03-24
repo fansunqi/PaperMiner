@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "General multi-class classification"
+  ],
+  "datasets": [
+    "Various synthetic and real-world datasets"
+  ],
+  "methods": [
+    "Calibrated simplex-mapping classification",
+    "Two-step training: latent space representation with simplex geometry, regression model fitting"
+  ],
+  "results": [
+    "Well-calibrated classifier with confidence levels for predictions",
+    "Benchmarked prediction and calibration properties"
+  ],
+  "paper_id": "6042184a91e0115d09aff2a3",
+  "title": "Calibrated simplex-mapping classification",
+  "abstract": "  We propose a novel methodology for general multi-class classification in arbitrary feature spaces, which results in a potentially well-calibrated classifier. Calibrated classifiers are important in many applications because, in addition to the prediction of mere class labels, they also yield a confidence level for each of their predictions. In essence, the training of our classifier proceeds in two steps. In a first step, the training data is represented in a latent space whose geometry is induced by a regular $(n-1)$-dimensional simplex, $n$ being the number of classes. We design this representation in such a way that it well reflects the feature space distances of the datapoints to their own- and foreign-class neighbors. In a second step, the latent space representation of the training data is extended to the whole feature space by fitting a regression model to the transformed data. With this latent-space representation, our calibrated classifier is readily defined. We rigorously establish its core theoretical properties and benchmark its prediction and calibration properties by means of various synthetic and real-world data sets from different application domains. "
+}

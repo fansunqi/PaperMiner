@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Program sensitivity analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalization of Fuzz products to arbitrary $L^p$ distances",
+    "Extension of Fuzz type system with bunches for combining different $L^p$ distances"
+  ],
+  "results": [
+    "Ability to reason about quantitative properties of probabilistic programs using the extended Fuzz type system"
+  ],
+  "paper_id": "62008da05aee126c0fbd1713",
+  "title": "Bunched Fuzz: Sensitivity for Vector Metrics",
+  "abstract": "  Program sensitivity measures the distance between the outputs of a program when run on two related inputs. This notion, which plays a key role in areas such as data privacy and optimization, has been the focus of several program analysis techniques introduced in recent years. Among the most successful ones, we can highlight type systems inspired by linear logic, as pioneered by Reed and Pierce in the Fuzz programming language. In Fuzz, each type is equipped with its own distance, and sensitivity analysis boils down to type checking. In particular, Fuzz features two product types, corresponding to two different notions of distance: the tensor product combines the distances of each component by adding them, while the with product takes their maximum.   In this work, we show that these products can be generalized to arbitrary $L^p$ distances, metrics that are often used in privacy and optimization. The original Fuzz products, tensor and with, correspond to the special cases $L^1$ and $L^\\infty$. To ease the handling of such products, we extend the Fuzz type system with bunches -- as in the logic of bunched implications -- where the distances of different groups of variables can be combined using different $L^p$ distances. We show that our extension can be used to reason about quantitative properties of probabilistic programs. "
+}

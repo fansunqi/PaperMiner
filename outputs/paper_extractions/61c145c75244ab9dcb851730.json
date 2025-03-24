@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated edge learning with data and device heterogeneity"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semi-decentralized federated edge learning (SD-FEEL)",
+    "Local model update, intra-cluster, and inter-cluster model aggregations",
+    "Asynchronous training algorithm with staleness-aware aggregation scheme"
+  ],
+  "results": [
+    "SD-FEEL incorporates more training data with lower latency compared to conventional federated learning",
+    "Convergence proved on non-IID data",
+    "Simulation results demonstrate effectiveness and efficiency of proposed algorithms"
+  ],
+  "paper_id": "61c145c75244ab9dcb851730",
+  "title": "Semi-Decentralized Federated Edge Learning with Data and Device\n  Heterogeneity",
+  "abstract": "  Federated edge learning (FEEL) has attracted much attention as a privacy-preserving paradigm to effectively incorporate the distributed data at the network edge for training deep learning models. Nevertheless, the limited coverage of a single edge server results in an insufficient number of participated client nodes, which may impair the learning performance. In this paper, we investigate a novel framework of FEEL, namely semi-decentralized federated edge learning (SD-FEEL), where multiple edge servers are employed to collectively coordinate a large number of client nodes. By exploiting the low-latency communication among edge servers for efficient model sharing, SD-FEEL can incorporate more training data, while enjoying much lower latency compared with conventional federated learning. We detail the training algorithm for SD-FEEL with three main steps, including local model update, intra-cluster, and inter-cluster model aggregations. The convergence of this algorithm is proved on non-independent and identically distributed (non-IID) data, which also helps to reveal the effects of key parameters on the training efficiency and provides practical design guidelines. Meanwhile, the heterogeneity of edge devices may cause the straggler effect and deteriorate the convergence speed of SD-FEEL. To resolve this issue, we propose an asynchronous training algorithm with a staleness-aware aggregation scheme for SD-FEEL, of which, the convergence performance is also analyzed. The simulation results demonstrate the effectiveness and efficiency of the proposed algorithms for SD-FEEL and corroborate our analysis. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Security patch identification"
+  ],
+  "datasets": [
+    "large-scale real-world patch dataset",
+    "NGINX"
+  ],
+  "methods": [
+    "PatchRNN",
+    "deep learning-based system",
+    "considering descriptive keywords",
+    "leveraging syntactic and semantic features"
+  ],
+  "results": [
+    "successfully detect secret security patches",
+    "low false positive rate"
+  ],
+  "paper_id": "6111fcd65244ab9dcb08a5e9",
+  "title": "PatchRNN: A Deep Learning-Based System for Security Patch Identification",
+  "abstract": "  With the increasing usage of open-source software (OSS) components, vulnerabilities embedded within them are propagated to a huge number of underlying applications. In practice, the timely application of security patches in downstream software is challenging. The main reason is that such patches do not explicitly indicate their security impacts in the documentation, which would be difficult to recognize for software maintainers and users. However, attackers can still identify these \"secret\" security patches by analyzing the source code and generate corresponding exploits to compromise not only unpatched versions of the current software, but also other similar software packages that may contain the same vulnerability due to code cloning or similar design/implementation logic. Therefore, it is critical to identify these secret security patches to enable timely fixes. To this end, we propose a deep learning-based defense system called PatchRNN to automatically identify secret security patches in OSS. Besides considering descriptive keywords in the commit message (i.e., at the text level), we leverage both syntactic and semantic features at the source-code level. To evaluate the performance of our system, we apply it on a large-scale real-world patch dataset and conduct a case study on a popular open-source web server software - NGINX. Experimental results show that the PatchRNN can successfully detect secret security patches with a low false positive rate. "
+}

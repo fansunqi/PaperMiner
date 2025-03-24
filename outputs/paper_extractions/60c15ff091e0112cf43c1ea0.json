@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Enhancing interpretability of model-based optimizations",
+    "Mitigating model disagreement in multi-objective optimizations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "VEER (one-dimensional approximation to N-objective space)"
+  ],
+  "results": [
+    "VEER runs very fast for eleven configuration problems",
+    "Finds as good or better optimizations with zero model disagreements",
+    "Three orders of magnitude faster than previous methods"
+  ],
+  "paper_id": "60c15ff091e0112cf43c1ea0",
+  "title": "VEER: Enhancing the Interpretability of Model-based Optimizations",
+  "abstract": "  Many software systems can be tuned for multiple objectives (e.g., faster runtime, less required memory, less network traffic or energy consumption, etc.). Optimizers built for different objectives suffer from \"model disagreement\"; i.e., they have different (or even opposite) insights and tactics on how to optimize a system. Model disagreement is rampant (at least for configuration problems). Yet prior to this paper, it has barely been explored. This paper shows that model disagreement can be mitigated via VEER, a one-dimensional approximation to the N-objective space. Since it is exploring a simpler goal space, VEER runs very fast (for eleven configuration problems). Even for our largest problem (with tens of thousands of possible configurations), VEER finds as good or better optimizations with zero model disagreements, three orders of magnitude faster (since its one-dimensional output no longer needs the sorting procedure). Based on the above, we recommend VEER as a very fast method to solve complex configuration problems, while at the same time avoiding model disagreement. "
+}

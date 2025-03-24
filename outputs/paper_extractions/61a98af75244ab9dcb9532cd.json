@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mean Field Games solution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Empirical Game-Theoretic Analysis (EGTA)",
+    "Double Oracle",
+    "Fictitious Play (FP)",
+    "Replicator Dynamics",
+    "Game model learning",
+    "Regularization"
+  ],
+  "results": [
+    "Iterative EGTA converges to NE of the full MFG",
+    "Outperforms direct FP in terms of strategy introduction iterations"
+  ],
+  "paper_id": "61a98af75244ab9dcb9532cd",
+  "title": "Empirical Game-Theoretic Analysis for Mean Field Games",
+  "abstract": "  We present a simulation-based approach for solution of mean field games (MFGs), using the framework of empirical game-theoretical analysis (EGTA). Our primary method employs a version of the double oracle, iteratively adding strategies based on best response to the equilibrium of the empirical MFG among strategies considered so far. We present Fictitious Play (FP) and Replicator Dynamics as two subroutines for computing the empirical game equilibrium. Each subroutine is implemented with a query-based method rather than maintaining an explicit payoff matrix as in typical EGTA methods due to a representation issue we highlight for MFGs. By introducing game model learning and regularization, we significantly improve the sample efficiency of the primary method without sacrificing the overall learning performance. Theoretically, we prove that a Nash equilibrium (NE) exists in the empirical MFG and show the convergence of iterative EGTA to NE of the full MFG with either subroutine. We test the performance of iterative EGTA in various games and show that it outperforms directly applying FP to MFGs in terms of iterations of strategy introduction. "
+}

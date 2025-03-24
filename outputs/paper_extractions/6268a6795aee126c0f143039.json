@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Defocus Deblurring"
+  ],
+  "datasets": [
+    "real-world datasets"
+  ],
+  "methods": [
+    "Dual-Pixel Alignment Network (DPANet)",
+    "Encoder-decoder with skip-connections",
+    "Encoder Alignment Module (EAM)",
+    "Decoder Alignment Module (DAM)",
+    "Correlation layer for disparity measurement",
+    "Deformable convolutions for feature alignment"
+  ],
+  "results": [
+    "DPANet superior to state-of-the-art deblurring methods",
+    "Reduces defocus blur",
+    "Recovers visually plausible sharp structures and textures"
+  ],
+  "paper_id": "6268a6795aee126c0f143039",
+  "title": "Learning Dual-Pixel Alignment for Defocus Deblurring",
+  "abstract": "  It is a challenging task to recover sharp image from a single defocus blurry image in real-world applications. On many modern cameras, dual-pixel (DP) sensors create two-image views, based on which stereo information can be exploited to benefit defocus deblurring. Despite the impressive results achieved by existing DP defocus deblurring methods, the misalignment between DP image views is still not studied, leaving room for improving DP defocus deblurring. In this work, we propose a Dual-Pixel Alignment Network (DPANet) for defocus deblurring. Generally, DPANet is an encoder-decoder with skip-connections, where two branches with shared parameters in the encoder are employed to extract and align deep features from left and right views, and one decoder is adopted to fuse aligned features for predicting the sharp image. Due to that DP views suffer from different blur amounts, it is not trivial to align left and right views. To this end, we propose novel encoder alignment module (EAM) and decoder alignment module (DAM). In particular, a correlation layer is suggested in EAM to measure the disparity between DP views, whose deep features can then be accordingly aligned using deformable convolutions. DAM can further enhance the alignment of skip-connected features from encoder and deep features in decoder. By introducing several EAMs and DAMs, DP views in DPANet can be well aligned for better predicting latent sharp image. Experimental results on real-world datasets show that our DPANet is notably superior to state-of-the-art deblurring methods in reducing defocus blur while recovering visually plausible sharp structures and textures. "
+}

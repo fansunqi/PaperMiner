@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Abstractive Summarization"
+  ],
+  "datasets": [
+    "benchmark summarization datasets"
+  ],
+  "methods": [
+    "Incorporating QA signals",
+    "Salient noun phrase identification via wh-questions",
+    "Two-stage summarization model",
+    "Training data augmentation for consistency"
+  ],
+  "results": [
+    "Higher-quality summaries than baseline methods",
+    "Control over summary content based on marked NPs",
+    "Models learn to better exclude unmarked content"
+  ],
+  "paper_id": "619321425244ab9dcbbb4b40",
+  "title": "Incorporating Question Answering-Based Signals into Abstractive\n  Summarization via Salient Span Selection",
+  "abstract": "  In this work, we propose a method for incorporating question-answering (QA) signals into a summarization model. Our method identifies salient noun phrases (NPs) in the input document by automatically generating wh-questions that are answered by the NPs and automatically determining whether those questions are answered in the gold summaries. This QA-based signal is incorporated into a two-stage summarization model which first marks salient NPs in the input document using a classification model, then conditionally generates a summary. Our experiments demonstrate that the models trained using QA-based supervision generate higher-quality summaries than baseline methods of identifying salient spans on benchmark summarization datasets. Further, we show that the content of the generated summaries can be controlled based on which NPs are marked in the input document. Finally, we propose a method of augmenting the training data so the gold summaries are more consistent with the marked input spans used during training and show how this results in models which learn to better exclude unmarked document content. "
+}

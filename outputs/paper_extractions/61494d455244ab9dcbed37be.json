@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Clustering of Attributed Graphs"
+  ],
+  "datasets": [
+    "synthetic datasets",
+    "real-world attributed graphs"
+  ],
+  "methods": [
+    "Augmented graph creation",
+    "Embedding in Euclidean space",
+    "Modified K-means algorithm",
+    "Algebraically smooth vectors via AMG"
+  ],
+  "results": [
+    "Outperforms structure-only-based methods",
+    "Largely outperforms original graph augmentation method",
+    "Effective embedding strategy and vector-valued distance"
+  ],
+  "paper_id": "61494d455244ab9dcbed37be",
+  "title": "Extending Bootstrap AMG for Clustering of Attributed Graphs",
+  "abstract": "  In this paper we propose a new approach to detect clusters in undirected graphs with attributed vertices. We incorporate structural and attribute similarities between the vertices in an augmented graph by creating additional vertices and edges as proposed in [1, 2]. The augmented graph is then embedded in a Euclidean space associated to its Laplacian and we cluster vertices via a modified K-means algorithm, using a new vector-valued distance in the embedding space. Main novelty of our method, which can be classified as an early fusion method, i.e., a method in which additional information on vertices are fused to the structure information before applying clustering, is the interpretation of attributes as new realizations of graph vertices, which can be dealt with as coordinate vectors in a related Euclidean space. This allows us to extend a scalable generalized spectral clustering procedure which substitutes graph Laplacian eigenvectors with some vectors, named algebraically smooth vectors, obtained by a linear-time complexity Algebraic MultiGrid (AMG) method. We discuss the performance of our proposed clustering method by comparison with recent literature approaches and public available results. Extensive experiments on different types of synthetic datasets and real-world attributed graphs show that our new algorithm, embedding attributes information in the clustering, outperforms structure-only-based methods, when the attributed network has an ambiguous structure. Furthermore, our new method largely outperforms the method which originally proposed the graph augmentation, showing that our embedding strategy and vector-valued distance are very effective in taking advantages from the augmented-graph representation. "
+}

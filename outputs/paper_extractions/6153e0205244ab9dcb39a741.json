@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Linear and Deep Generalized Canonical Correlation Analysis"
+  ],
+  "datasets": [
+    "Synthetic data",
+    "Real-data"
+  ],
+  "methods": [
+    "Communication-efficient federated learning framework",
+    "Quantization for information exchange",
+    "Maximum variance (MAX-VAR) formulation"
+  ],
+  "results": [
+    "Substantial reduction of communication overhead",
+    "No loss in accuracy and convergence speed",
+    "Convergence to critical points at sublinear rate",
+    "Geometric rate convergence to global optimum in linear MAX-VAR case"
+  ],
+  "paper_id": "6153e0205244ab9dcb39a741",
+  "title": "Communication-Efficient Federated Linear and Deep Generalized Canonical\n  Correlation Analysis",
+  "abstract": "  Classic and deep generalized canonical correlation analysis (GCCA) algorithms seek low-dimensional common representations of data entities from multiple ``views'' (e.g., audio and image) using linear transformations and neural networks, respectively. When the views are acquired and stored at different computing agents (e.g., organizations and edge devices) and data sharing is undesired due to privacy or communication cost considerations, federated learning-based GCCA is well-motivated. In federated learning, the views are kept locally at the agents and only derived, limited information exchange with a central server is allowed. However, applying existing GCCA algorithms onto such federated learning settings may incur prohibitively high communication overhead. This work puts forth a communication-efficient federated learning framework for both linear and deep GCCA under the maximum variance (MAX-VAR) formulation. The overhead issue is addressed by aggressively compressing (via quantization) the exchanging information between the computing agents and a central controller. Compared to the unquantized version, our empirical study shows that the proposed algorithm enjoys a substantial reduction of communication overheads with virtually no loss in accuracy and convergence speed. Rigorous convergence analyses are also presented, which is a nontrivial effort. Generic federated optimization results do not cover the special problem structure of GCCA. Our result shows that the proposed algorithms for both linear and deep GCCA converge to critical points at a sublinear rate, even under heavy quantization and stochastic approximations. In addition, in the linear MAX-VAR case, the quantized algorithm approaches a global optimum in a geometric rate under reasonable conditions. Synthetic and real-data experiments are used to showcase the effectiveness of the proposed approach. "
+}

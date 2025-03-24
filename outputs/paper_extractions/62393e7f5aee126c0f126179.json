@@ -1,0 +1,25 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Human action recognition"
+  ],
+  "datasets": [
+    "NTU RGB+D 60",
+    "NTU RGB+D 120",
+    "Kinetics Skeleton 400"
+  ],
+  "methods": [
+    "Continual Spatio-Temporal Graph Convolutional Networks",
+    "CoST-GCN",
+    "CoAGCN",
+    "CoS-TR"
+  ],
+  "results": [
+    "Up to 109x reduction in time complexity",
+    "26x on-hardware accelerations",
+    "52% reduction in maximum allocated memory"
+  ],
+  "paper_id": "62393e7f5aee126c0f126179",
+  "title": "Continual Spatio-Temporal Graph Convolutional Networks",
+  "abstract": "  Graph-based reasoning over skeleton data has emerged as a promising approach for human action recognition. However, the application of prior graph-based methods, which predominantly employ whole temporal sequences as their input, to the setting of online inference entails considerable computational redundancy. In this paper, we tackle this issue by reformulating the Spatio-Temporal Graph Convolutional Neural Network as a Continual Inference Network, which can perform step-by-step predictions in time without repeat frame processing. To evaluate our method, we create a continual version of ST-GCN, CoST-GCN, alongside two derived methods with different self-attention mechanisms, CoAGCN and CoS-TR. We investigate weight transfer strategies and architectural modifications for inference acceleration, and perform experiments on the NTU RGB+D 60, NTU RGB+D 120, and Kinetics Skeleton 400 datasets. Retaining similar predictive accuracy, we observe up to 109x reduction in time complexity, on-hardware accelerations of 26x, and reductions in maximum allocated memory of 52% during online inference. "
+}

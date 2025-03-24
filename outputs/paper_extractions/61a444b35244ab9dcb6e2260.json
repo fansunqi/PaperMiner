@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Statistical model estimation from incomplete data"
+  ],
+  "datasets": [
+    "synthetic datasets",
+    "real-world datasets"
+  ],
+  "methods": [
+    "Variational Gibbs inference (VGI)"
+  ],
+  "results": [
+    "VGI achieves competitive or better performance than existing model-specific estimation methods"
+  ],
+  "paper_id": "61a444b35244ab9dcb6e2260",
+  "title": "Variational Gibbs inference for statistical model estimation from\n  incomplete data",
+  "abstract": "  Statistical models are central to machine learning with broad applicability across a range of downstream tasks. The models are controlled by free parameters that are typically estimated from data by maximum-likelihood estimation or approximations thereof. However, when faced with real-world datasets many of the models run into a critical issue: they are formulated in terms of fully-observed data, whereas in practice the datasets are plagued with missing data. The theory of statistical model estimation from incomplete data is conceptually similar to the estimation of latent-variable models, where powerful tools such as variational inference (VI) exist. However, in contrast to standard latent-variable models, parameter estimation with incomplete data often requires estimating exponentially-many conditional distributions of the missing variables, hence making standard VI methods intractable. We address this gap by introducing variational Gibbs inference (VGI), a new general-purpose method to estimate the parameters of statistical models from incomplete data. We validate VGI on a set of synthetic and real-world estimation tasks, estimating important machine learning models such as VAEs and normalising flows from incomplete data. The proposed method, whilst general-purpose, achieves competitive or better performance than existing model-specific estimation methods. "
+}

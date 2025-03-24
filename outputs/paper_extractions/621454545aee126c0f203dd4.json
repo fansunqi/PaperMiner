@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Active Queue Management"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semi-Markov Decision Process (SMDP)",
+    "PAQMAN (Policy-based AQM)",
+    "Inference algorithm for TCP congestion control"
+  ],
+  "results": [
+    "Comparable throughput to state-of-the-art AQM algorithms",
+    "Significant reduction in delays"
+  ],
+  "paper_id": "621454545aee126c0f203dd4",
+  "title": "Optimal Decision Making in Active Queue Management",
+  "abstract": "  Active Queue Management (AQM) aims to prevent bufferbloat and serial drops in router and switch FIFO packet buffers that usually employ drop-tail queueing. AQM describes methods to send proactive feedback to TCP flow sources to regulate their rate using selective packet drops or markings. Traditionally, AQM policies relied on heuristics to approximately provide Quality of Service (QoS) such as a target delay for a given flow. These heuristics are usually based on simple network and TCP control models together with the monitored buffer filling. A primary drawback of these heuristics is that their way of accounting flow characteristics into the feedback mechanism and the corresponding effect on the state of congestion are not well understood. In this work, we show that taking a probabilistic model for the flow rates and the dequeueing pattern, a Semi-Markov Decision Process (SMDP) can be formulated to obtain an optimal packet-dropping policy. This policy-based AQM, named PAQMAN, takes into account a steady-state model of TCP and a target delay for the flows. Additionally, we present an inference algorithm that builds on TCP congestion control in order to calibrate the model parameters governing underlying network conditions. Using simulation, we show that the prescribed AQM yields comparable throughput to state-of-the-art AQM algorithms while reducing delays significantly. "
+}

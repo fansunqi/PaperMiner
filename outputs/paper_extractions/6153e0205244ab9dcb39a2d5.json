@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding an optimal sequence of informative measurements"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic programming algorithm",
+    "Sequentially maximizing entropy of measurement outcomes",
+    "Applicable to continuous/discrete states and controls, stochastic/deterministic dynamics",
+    "Includes approximate dynamic programming, reinforcement learning, rollout, Monte Carlo tree search",
+    "Variant for Gaussian processes for active sensing"
+  ],
+  "results": [
+    "Reduces number of measurements in global search by approximately half",
+    "Non-myopic paths and measurement sequences outperform greedy approaches"
+  ],
+  "paper_id": "6153e0205244ab9dcb39a2d5",
+  "title": "A Dynamic Programming Algorithm for Finding an Optimal Sequence of\n  Informative Measurements",
+  "abstract": "  An informative measurement is the most efficient way to gain information about an unknown state. We present a first-principles derivation of a general-purpose dynamic programming algorithm that returns an optimal sequence of informative measurements by sequentially maximizing the entropy of possible measurement outcomes. This algorithm can be used by an autonomous agent or robot to decide where best to measure next, planning a path corresponding to an optimal sequence of informative measurements. The algorithm is applicable to states and controls that are either continuous or discrete, and agent dynamics that is either stochastic or deterministic; including Markov decision processes and Gaussian processes. Recent results from the fields of approximate dynamic programming and reinforcement learning, including on-line approximations such as rollout and Monte Carlo tree search, allow the measurement task to be solved in real time. The resulting solutions include non-myopic paths and measurement sequences that can generally outperform, sometimes substantially, commonly used greedy approaches. This is demonstrated for a global search task, where on-line planning for a sequence of local searches is found to reduce the number of measurements in the search by approximately half. A variant of the algorithm is derived for Gaussian processes for active sensing. "
+}

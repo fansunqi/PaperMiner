@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Representation Learning",
+    "Node Classification",
+    "Link Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Scalable Multi-resolution Graph Representation Learning (SMGRL)",
+    "Reduced-dimension coarsening",
+    "Self-similarity"
+  ],
+  "results": [
+    "Improved classification accuracy",
+    "Reduced training costs",
+    "Captures long- and short-range dependencies"
+  ],
+  "paper_id": "61f8a4c35aee126c0fee02d6",
+  "title": "SMGRL: Scalable Multi-resolution Graph Representation Learning",
+  "abstract": "  Graph convolutional networks (GCNs) allow us to learn topologically-aware node embeddings, which can be useful for classification or link prediction. However, they are unable to capture long-range dependencies without adding additional layers -- which in turn leads to over-smoothing and increased time and space complexity. Further, the complex dependencies between nodes make mini-batching challenging, limiting their applicability to large graphs. We propose a Scalable Multi-resolution Graph Representation Learning (SMGRL) framework that enables us to learn multi-resolution node embeddings efficiently. Our framework is model-agnostic and can be applied to any existing GCN model. We dramatically reduce training costs by training only on a reduced-dimension coarsening of the original graph, then exploit self-similarity to apply the resulting algorithm at multiple resolutions. The resulting multi-resolution embeddings can be aggregated to yield high-quality node embeddings that capture both long- and short-range dependencies. Our experiments show that this leads to improved classification accuracy, without incurring high computational costs. "
+}

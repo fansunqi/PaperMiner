@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Augmentation for Few-Shot Text Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Leveraging GPT-2 for generating artificial training instances",
+    "Seed selection strategies exploiting class hierarchical structures and domain expert selection"
+  ],
+  "results": [
+    "Fine-tuning GPT-2 leads to consistent classification improvements",
+    "Guiding process through domain expert selection leads to further improvements"
+  ],
+  "paper_id": "619715f85244ab9dcb1852e7",
+  "title": "Guiding Generative Language Models for Data Augmentation in Few-Shot\n  Text Classification",
+  "abstract": "  Data augmentation techniques are widely used for enhancing the performance of machine learning models by tackling class imbalance issues and data sparsity. State-of-the-art generative language models have been shown to provide significant gains across different NLP tasks. However, their applicability to data augmentation for text classification tasks in few-shot settings have not been fully explored, especially for specialised domains. In this paper, we leverage GPT-2 (Radford A et al, 2019) for generating artificial training instances in order to improve classification performance. Our aim is to analyse the impact the selection process of seed training examples have over the quality of GPT-generated samples and consequently the classifier performance. We perform experiments with several seed selection strategies that, among others, exploit class hierarchical structures and domain expert selection. Our results show that fine-tuning GPT-2 in a handful of label instances leads to consistent classification improvements and outperform competitive baselines. Finally, we show that guiding this process through domain expert selection can lead to further improvements, which opens up interesting research avenues for combining generative models and active learning. "
+}

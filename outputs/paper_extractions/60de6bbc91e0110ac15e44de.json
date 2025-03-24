@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Attacks on Observations in Deep Reinforcement Learning"
+  ],
+  "datasets": [
+    "Atari",
+    "MuJoCo"
+  ],
+  "methods": [
+    "Reformulating adversarial attacks in function space",
+    "Two-stage framework: training deceptive policy and perturbing observations"
+  ],
+  "results": [
+    "Theoretically stronger adversary under appropriate noise level",
+    "State-of-the-art performance in Atari and MuJoCo environments"
+  ],
+  "paper_id": "60de6bbc91e0110ac15e44de",
+  "title": "Understanding Adversarial Attacks on Observations in Deep Reinforcement\n  Learning",
+  "abstract": "  Deep reinforcement learning models are vulnerable to adversarial attacks that can decrease a victim's cumulative expected reward by manipulating the victim's observations. Despite the efficiency of previous optimization-based methods for generating adversarial noise in supervised learning, such methods might not be able to achieve the lowest cumulative reward since they do not explore the environmental dynamics in general. In this paper, we provide a framework to better understand the existing methods by reformulating the problem of adversarial attacks on reinforcement learning in the function space. Our reformulation generates an optimal adversary in the function space of the targeted attacks, repelling them via a generic two-stage framework. In the first stage, we train a deceptive policy by hacking the environment, and discover a set of trajectories routing to the lowest reward or the worst-case performance. Next, the adversary misleads the victim to imitate the deceptive policy by perturbing the observations. Compared to existing approaches, we theoretically show that our adversary is stronger under an appropriate noise level. Extensive experiments demonstrate our method's superiority in terms of efficiency and effectiveness, achieving the state-of-the-art performance in both Atari and MuJoCo environments. "
+}

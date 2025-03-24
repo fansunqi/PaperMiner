@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/DearCaat/wsplin"
+  ],
+  "tasks": [
+    "Automatic image-based pavement distress detection and recognition"
+  ],
+  "datasets": [
+    "CQU-BPDD",
+    "Crack500-PDD"
+  ],
+  "methods": [
+    "Weakly Supervised Patch Label Inference Networks (WSPLIN)",
+    "Patch Label Inference Network (PLIN)",
+    "Comprehensive Decision Network (CDN)"
+  ],
+  "results": [
+    "Superiority over baselines in both performance and efficiency"
+  ],
+  "paper_id": "62466dd35aee126c0f8b7a31",
+  "title": "Weakly Supervised Patch Label Inference Networks for Efficient Pavement\n  Distress Detection and Recognition in the Wild",
+  "abstract": "  Automatic image-based pavement distress detection and recognition are vital for pavement maintenance and management. However, existing deep learning-based methods largely omit the specific characteristics of pavement images, such as high image resolution and low distress area ratio, and are not end-to-end trainable. In this paper, we present a series of simple yet effective end-to-end deep learning approaches named Weakly Supervised Patch Label Inference Networks (WSPLIN) for efficiently addressing these tasks under various application settings. WSPLIN transforms the fully supervised pavement image classification problem into a weakly supervised pavement patch classification problem for solutions. Specifically, WSPLIN first divides the pavement image under different scales into patches with different collection strategies and then employs a Patch Label Inference Network (PLIN) to infer the labels of these patches to fully exploit the resolution and scale information. Notably, we design a patch label sparsity constraint based on the prior knowledge of distress distribution and leverage the Comprehensive Decision Network (CDN) to guide the training of PLIN in a weakly supervised way. Therefore, the patch labels produced by PLIN provide interpretable intermediate information, such as the rough location and the type of distress. We evaluate our method on a large-scale bituminous pavement distress dataset named CQU-BPDD and the augmented Crack500 (Crack500-PDD) dataset, which is a newly constructed pavement distress detection dataset augmented from the Crack500. Extensive results demonstrate the superiority of our method over baselines in both performance and efficiency. The source codes of WSPLIN are released on https://github.com/DearCaat/wsplin. "
+}

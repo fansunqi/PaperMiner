@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Missing data imputation in multi-contrast MRI"
+  ],
+  "datasets": [
+    "two large-scale multi-contrast MRI datasets"
+  ],
+  "methods": [
+    "Multi-contrast Multi-scale Transformer (MMT)",
+    "multi-scale Transformer encoder",
+    "multi-scale Transformer decoder",
+    "multi-contrast Swin Transformer blocks"
+  ],
+  "results": [
+    "MMT outperforms the state-of-the-art methods quantitatively and qualitatively"
+  ],
+  "paper_id": "626f3dcf5aee126c0f8f7421",
+  "title": "One Model to Synthesize Them All: Multi-contrast Multi-scale Transformer\n  for Missing Data Imputation",
+  "abstract": "  Multi-contrast magnetic resonance imaging (MRI) is widely used in clinical practice as each contrast provides complementary information. However, the availability of each imaging contrast may vary amongst patients, which poses challenges to radiologists and automated image analysis algorithms. A general approach for tackling this problem is missing data imputation, which aims to synthesize the missing contrasts from existing ones. While several convolutional neural networks (CNN) based algorithms have been proposed, they suffer from the fundamental limitations of CNN models, such as the requirement for fixed numbers of input and output channels, the inability to capture long-range dependencies, and the lack of interpretability. In this work, we formulate missing data imputation as a sequence-to-sequence learning problem and propose a multi-contrast multi-scale Transformer (MMT), which can take any subset of input contrasts and synthesize those that are missing. MMT consists of a multi-scale Transformer encoder that builds hierarchical representations of inputs combined with a multi-scale Transformer decoder that generates the outputs in a coarse-to-fine fashion. The proposed multi-contrast Swin Transformer blocks can efficiently capture intra- and inter-contrast dependencies for accurate image synthesis. Moreover, MMT is inherently interpretable as it allows us to understand the importance of each input contrast in different regions by analyzing the in-built attention maps of Transformer blocks in the decoder. Extensive experiments on two large-scale multi-contrast MRI datasets demonstrate that MMT outperforms the state-of-the-art methods quantitatively and qualitatively. "
+}

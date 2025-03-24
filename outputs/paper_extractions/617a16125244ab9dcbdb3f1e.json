@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Modulation Classification"
+  ],
+  "datasets": [
+    "Deepsig"
+  ],
+  "methods": [
+    "Rotated Binary Large ResNet (RBLResNet)",
+    "Multilevel Classification (MC)",
+    "Bagging Multiple RBLResNets"
+  ],
+  "results": [
+    "MC accuracy: 93.39% at 10dB",
+    "4.75 times lower memory",
+    "1214 times lower computation",
+    "Adversarial accuracy: 87.25%"
+  ],
+  "paper_id": "617a16125244ab9dcbdb3f1e",
+  "title": "Binarized ResNet: Enabling Robust Automatic Modulation Classification at\n  the resource-constrained Edge",
+  "abstract": "  Recently, deep neural networks (DNNs) have been used extensively for automatic modulation classification (AMC), and the results have been quite promising. However, DNNs have high memory and computation requirements making them impractical for edge networks where the devices are resource-constrained. They are also vulnerable to adversarial attacks, which is a significant security concern. This work proposes a rotated binary large ResNet (RBLResNet) for AMC that can be deployed at the edge network because of low memory and computational complexity. The performance gap between the RBLResNet and existing architectures with floating-point weights and activations can be closed by two proposed ensemble methods: (i) multilevel classification (MC), and (ii) bagging multiple RBLResNets while retaining low memory and computational power. The MC method achieves an accuracy of $93.39\\%$ at $10$dB over all the $24$ modulation classes of the Deepsig dataset. This performance is comparable to state-of-the-art (SOTA) performances, with $4.75$ times lower memory and $1214$ times lower computation. Furthermore, RBLResNet also has high adversarial robustness compared to existing DNN models. The proposed MC method with RBLResNets has an adversarial accuracy of $87.25\\%$ over a wide range of SNRs, surpassing the robustness of all existing SOTA methods to the best of our knowledge. Properties such as low memory, low computation, and the highest adversarial robustness make it a better choice for robust AMC in low-power edge devices. "
+}

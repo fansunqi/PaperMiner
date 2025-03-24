@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Drawing cable plans of complex machines"
+  ],
+  "datasets": [
+    "Real-world data",
+    "Synthetic data"
+  ],
+  "methods": [
+    "Layered drawing with generalized port constraints",
+    "Extending Sugiyama framework for ports and port groups",
+    "Edge orientation methods for undirected graphs"
+  ],
+  "results": [
+    "10--30% fewer crossings than Kieler",
+    "Equal or slightly worse performance than Kieler in bends and computation time"
+  ],
+  "paper_id": "5f44fe3091e011872f85efcd",
+  "title": "Layered Drawing of Undirected Graphs with Generalized Port Constraints",
+  "abstract": "  The aim of this research is a practical method to draw cable plans of complex machines. Such plans consist of electronic components and cables connecting specific ports of the components. Since the machines are configured for each client individually, cable plans need to be drawn automatically. The drawings must be well readable so that technicians can use them to debug the machines. In order to model plug sockets, we introduce port groups; within a group, ports can change their position (which we use to improve the aesthetics of the layout), but together the ports of a group must form a contiguous block.   We approach the problem of drawing such cable plans by extending the well-known Sugiyama framework such that it incorporates ports and port groups. Since the framework assumes directed graphs, we propose several ways to orient the edges of the given undirected graph. We compare these methods experimentally, both on real-world data and synthetic data that carefully simulates real-world data. We measure the aesthetics of the resulting drawings by counting bends and crossings. Using these metrics, we experimentally compare our approach to Kieler [JVLC 2014], a library for drawing graphs in the presence of port constraints. Our method produced 10--30 % fewer crossings, while it performed equally well or slightly worse than Kieler with respect to the number of bends and the time used to compute a drawing. "
+}

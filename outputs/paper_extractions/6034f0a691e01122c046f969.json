@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Transforming offline algorithms to online counterparts",
+    "Online decision-making in combinatorial environments"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Offline-to-online transformation using Blackwell approachability",
+    "Bandit Blackwell approachability",
+    "Greedy robust offline algorithms",
+    "First order methods for continuous optimization"
+  ],
+  "results": [
+    "Online algorithms have $O(\\sqrt{T})$ regret under full information",
+    "Bandit setting algorithms have $O(T^{2/3})$ regret",
+    "New regret bounds or improvements in known bounds for various applications",
+    "Numerical performance outperforms theoretical guarantees in practical instances"
+  ],
+  "paper_id": "6034f0a691e01122c046f969",
+  "title": "Online Learning via Offline Greedy Algorithms: Applications in Market\n  Design and Optimization",
+  "abstract": "  Motivated by online decision-making in time-varying combinatorial environments, we study the problem of transforming offline algorithms to their online counterparts. We focus on offline combinatorial problems that are amenable to a constant factor approximation using a greedy algorithm that is robust to local errors. For such problems, we provide a general framework that efficiently transforms offline robust greedy algorithms to online ones using Blackwell approachability. We show that the resulting online algorithms have $O(\\sqrt{T})$ (approximate) regret under the full information setting. We further introduce a bandit extension of Blackwell approachability that we call Bandit Blackwell approachability. We leverage this notion to transform greedy robust offline algorithms into a $O(T^{2/3})$ (approximate) regret in the bandit setting. Demonstrating the flexibility of our framework, we apply our offline-to-online transformation to several problems at the intersection of revenue management, market design, and online optimization, including product ranking optimization in online platforms, reserve price optimization in auctions, and submodular maximization. We also extend our reduction to greedy-like first order methods used in continuous optimization, such as those used for maximizing continuous strong DR monotone submodular functions subject to convex constraints. We show that our transformation, when applied to these applications, leads to new regret bounds or improves the current known bounds. We complement our theoretical studies by conducting numerical simulations for two of our applications, in both of which we observe that the numerical performance of our transformations outperforms the theoretical guarantees in practical instances. "
+}

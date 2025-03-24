@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Face Image Quality Assessment (FIQA)"
+  ],
+  "datasets": [
+    "eight benchmarks"
+  ],
+  "methods": [
+    "CR-FIQA: Learning Sample Relative Classifiability",
+    "Angular margin penalty-based softmax loss"
+  ],
+  "results": [
+    "Superiority over state-of-the-art FIQA algorithms"
+  ],
+  "paper_id": "61b80b6f5244ab9dcbf49238",
+  "title": "CR-FIQA: Face Image Quality Assessment by Learning Sample Relative\n  Classifiability",
+  "abstract": "  The quality of face images significantly influences the performance of underlying face recognition algorithms. Face image quality assessment (FIQA) estimates the utility of the captured image in achieving reliable and accurate recognition performance. In this work, we propose a novel learning paradigm that learns internal network observations during the training process. Based on that, our proposed CR-FIQA uses this paradigm to estimate the face image quality of a sample by predicting its relative classifiability. This classifiability is measured based on the allocation of the training sample feature representation in angular space with respect to its class center and the nearest negative class center. We experimentally illustrate the correlation between the face image quality and the sample relative classifiability. As such property is only observable for the training dataset, we propose to learn this property from the training dataset and utilize it to predict the quality measure on unseen samples. This training is performed simultaneously while optimizing the class centers by an angular margin penalty-based softmax loss used for face recognition model training. Through extensive evaluation experiments on eight benchmarks and four face recognition models, we demonstrate the superiority of our proposed CR-FIQA over state-of-the-art (SOTA) FIQA algorithms. "
+}

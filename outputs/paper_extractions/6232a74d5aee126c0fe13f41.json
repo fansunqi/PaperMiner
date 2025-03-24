@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Geographic Adaptation of Pretrained Language Models",
+    "Geolocation Prediction",
+    "Dialect Feature Prediction"
+  ],
+  "datasets": [
+    "Geotagged BCMS tweets",
+    "Norwegian, Swedish, and Danish tweets",
+    "Jodel posts in German"
+  ],
+  "methods": [
+    "Task-agnostic geoadaptation",
+    "Multi-task learning coupling language modeling and geolocation prediction"
+  ],
+  "results": [
+    "State-of-the-art performance in supervised geolocation prediction",
+    "Massive gains over geographically uninformed PLMs on zero-shot geolocation prediction"
+  ],
+  "paper_id": "6232a74d5aee126c0fe13f41",
+  "title": "Geographic Adaptation of Pretrained Language Models",
+  "abstract": "  Geographic features are commonly used to improve the performance of pretrained language models (PLMs) on NLP tasks where they are intuitively beneficial (e.g., geolocation prediction, dialect feature prediction). Existing methods, however, leverage geographic information in task-specific fine-tuning and fail to integrate it into the geo-linguistic knowledge encoded by PLMs, which would make it transferable across different tasks. In this paper, we introduce an approach to task-agnostic geoadaptation of PLMs that forces them to learn associations between linguistic phenomena and geographic locations. Geoadaptation is an intermediate training step that couples language modeling and geolocation prediction in a multi-task learning setup. In our main set of experiments, we geoadapt BERTi\\'{c}, a PLM for Bosnian-Croatian-Montenegrin-Serbian (BCMS), using a corpus of geotagged BCMS tweets. Evaluation on three tasks, namely fine-tuned as well as zero-shot geolocation prediction and zero-shot prediction of dialect features, shows that geoadaptation is very effective: e.g., we obtain state-of-the-art performance in supervised geolocation prediction and report massive gains over geographically uninformed PLMs on zero-shot geolocation prediction. Moreover, in follow-up experiments we successfully geoadapt two other PLMs, specifically ScandiBERT on Norwegian, Swedish, and Danish tweets and GermanBERT on Jodel posts in German from Austria, Germany, and Switzerland, proving that the benefits of geoadaptation are not limited to a particular language area and PLM. "
+}

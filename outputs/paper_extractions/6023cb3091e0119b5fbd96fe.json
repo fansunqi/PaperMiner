@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficiently solving problems with large action spaces using A* search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Q* search using deep Q-networks to guide search"
+  ],
+  "results": [
+    "157-fold increase in action space incurs less than 4-fold increase in computation time",
+    "Less than 3-fold increase in number of nodes generated with Q* search",
+    "Q* search is up to 129 times faster and generates up to 1288 times fewer nodes than A* search",
+    "Q* search is guaranteed to find a shortest path given a valid heuristic function"
+  ],
+  "paper_id": "6023cb3091e0119b5fbd96fe",
+  "title": "A* Search Without Expansions: Learning Heuristic Functions with Deep\n  Q-Networks",
+  "abstract": "  Efficiently solving problems with large action spaces using A* search has been of importance to the artificial intelligence community for decades. This is because the computation and memory requirements of A* search grow linearly with the size of the action space. This burden becomes even more apparent when A* search uses a heuristic function learned by computationally expensive function approximators, such as deep neural networks. To address this problem, we introduce Q* search, a search algorithm that uses deep Q-networks to guide search in order to take advantage of the fact that the sum of the transition costs and heuristic values of the children of a node can be computed with a single forward pass through a deep Q-network without explicitly generating those children. This significantly reduces computation time and requires only one node to be generated per iteration. We use Q* search to solve the Rubik's cube when formulated with a large action space that includes 1872 meta-actions and find that this 157-fold increase in the size of the action space incurs less than a 4-fold increase in computation time and less than a 3-fold increase in number of nodes generated when performing Q* search. Furthermore, Q* search is up to 129 times faster and generates up to 1288 times fewer nodes than A* search. Finally, although obtaining admissible heuristic functions from deep neural networks is an ongoing area of research, we prove that Q* search is guaranteed to find a shortest path given a heuristic function that neither overestimates the cost of a shortest path nor underestimates the transition cost. "
+}

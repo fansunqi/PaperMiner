@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Targeted poisoning against speech recognition"
+  ],
+  "datasets": [
+    "TIDIGITS",
+    "Speech Commands"
+  ],
+  "methods": [
+    "VENOMAVE: training-time poisoning attack"
+  ],
+  "results": [
+    "Attack success rates > 80.0% with < 0.17% dataset poisoning",
+    "Success rate up to 73.3% in realistic scenarios",
+    "Attack transferability rate of 36.4% between different model architectures"
+  ],
+  "paper_id": "5f91510091e011126509bcf5",
+  "title": "VenoMave: Targeted Poisoning Against Speech Recognition",
+  "abstract": "  Despite remarkable improvements, automatic speech recognition is susceptible to adversarial perturbations. Compared to standard machine learning architectures, these attacks are significantly more challenging, especially since the inputs to a speech recognition system are time series that contain both acoustic and linguistic properties of speech. Extracting all recognition-relevant information requires more complex pipelines and an ensemble of specialized components. Consequently, an attacker needs to consider the entire pipeline. In this paper, we present VENOMAVE, the first training-time poisoning attack against speech recognition. Similar to the predominantly studied evasion attacks, we pursue the same goal: leading the system to an incorrect and attacker-chosen transcription of a target audio waveform. In contrast to evasion attacks, however, we assume that the attacker can only manipulate a small part of the training data without altering the target audio waveform at runtime. We evaluate our attack on two datasets: TIDIGITS and Speech Commands. When poisoning less than 0.17% of the dataset, VENOMAVE achieves attack success rates of more than 80.0%, without access to the victim's network architecture or hyperparameters. In a more realistic scenario, when the target audio waveform is played over the air in different rooms, VENOMAVE maintains a success rate of up to 73.3%. Finally, VENOMAVE achieves an attack transferability rate of 36.4% between two different model architectures. "
+}

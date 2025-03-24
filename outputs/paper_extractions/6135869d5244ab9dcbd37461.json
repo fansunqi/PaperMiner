@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Feature extraction in graph analytics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Streaming algorithms for computing graph descriptors",
+    "Avoid storing entire graph in memory",
+    "Control sample size for runtime management"
+  ],
+  "results": [
+    "Descriptors computed efficiently for large graphs",
+    "Comparable predictive accuracy to state-of-the-art methods",
+    "Reduced memory usage"
+  ],
+  "paper_id": "6135869d5244ab9dcbd37461",
+  "title": "Computing Graph Descriptors on Edge Streams",
+  "abstract": "  Feature extraction is an essential task in graph analytics. These feature vectors, called graph descriptors, are used in downstream vector-space-based graph analysis models. This idea has proved fruitful in the past, with spectral-based graph descriptors providing state-of-the-art classification accuracy. However, known algorithms to compute meaningful descriptors do not scale to large graphs since: (1) they require storing the entire graph in memory, and (2) the end-user has no control over the algorithm's runtime. In this paper, we present streaming algorithms to approximately compute three different graph descriptors capturing the essential structure of graphs. Operating on edge streams allows us to avoid storing the entire graph in memory, and controlling the sample size enables us to keep the runtime of our algorithms within desired bounds. We demonstrate the efficacy of the proposed descriptors by analyzing the approximation error and classification accuracy. Our scalable algorithms compute descriptors of graphs with millions of edges within minutes. Moreover, these descriptors yield predictive accuracy comparable to the state-of-the-art methods but can be computed using only 25% as much memory. "
+}

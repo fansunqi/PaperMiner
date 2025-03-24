@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Next frame prediction in video"
+  ],
+  "datasets": [
+    "UCF-101"
+  ],
+  "methods": [
+    "Transformation-based prediction",
+    "Unsupervised approach",
+    "New evaluation protocol using classifier trained with ground truth sequences"
+  ],
+  "results": [
+    "Sharper results with smaller prediction model",
+    "Favourable comparison against more sophisticated models",
+    "More efficient in terms of parameters and computational cost"
+  ],
+  "paper_id": "5f02c8b1dfae54360a460c18",
+  "title": "Transformation-Based Models of Video Sequences",
+  "abstract": "  In this work we propose a simple unsupervised approach for next frame prediction in video. Instead of directly predicting the pixels in a frame given past frames, we predict the transformations needed for generating the next frame in a sequence, given the transformations of the past frames. This leads to sharper results, while using a smaller prediction model. In order to enable a fair comparison between different video frame prediction models, we also propose a new evaluation protocol. We use generated frames as input to a classifier trained with ground truth sequences. This criterion guarantees that models scoring high are those producing sequences which preserve discriminative features, as opposed to merely penalizing any deviation, plausible or not, from the ground truth. Our proposed approach compares favourably against more sophisticated ones on the UCF-101 data set, while also being more efficient in terms of the number of parameters and computational cost. "
+}

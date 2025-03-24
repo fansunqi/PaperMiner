@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spatiotemporally varying coefficient modeling"
+  ],
+  "datasets": [
+    "synthetic data sets",
+    "real-world data sets"
+  ],
+  "methods": [
+    "Bayesian Kernelized Tensor Regression (BKTR)",
+    "low-rank tensor regression",
+    "Gaussian process priors",
+    "Markov chain Monte Carlo (MCMC) algorithm",
+    "Gibbs sampling",
+    "slice sampling"
+  ],
+  "results": [
+    "superior performance and efficiency of BKTR for model estimation and parameter inference"
+  ],
+  "paper_id": "613041345244ab9dcb804661",
+  "title": "Scalable Spatiotemporally Varying Coefficient Modelling with Bayesian\n  Kernelized Tensor Regression",
+  "abstract": "  As a regression technique in spatial statistics, the spatiotemporally varying coefficient model (STVC) is an important tool for discovering nonstationary and interpretable response-covariate associations over both space and time. However, it is difficult to apply STVC for large-scale spatiotemporal analyses due to its high computational cost. To address this challenge, we summarize the spatiotemporally varying coefficients using a third-order tensor structure and propose to reformulate the spatiotemporally varying coefficient model as a special low-rank tensor regression problem. The low-rank decomposition can effectively model the global patterns of the large data sets with a substantially reduced number of parameters. To further incorporate the local spatiotemporal dependencies, we use Gaussian process (GP) priors on the spatial and temporal factor matrices. We refer to the overall framework as Bayesian Kernelized Tensor Regression (BKTR). For model inference, we develop an efficient Markov chain Monte Carlo (MCMC) algorithm, which uses Gibbs sampling to update factor matrices and slice sampling to update kernel hyperparameters. We conduct extensive experiments on both synthetic and real-world data sets, and our results confirm the superior performance and efficiency of BKTR for model estimation and parameter inference. "
+}

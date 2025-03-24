@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Robot Trajectory Tracking Control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Inverse-kinematics controller",
+    "Sampled proportional feedback",
+    "Continuous-time feedforward",
+    "Distributed communication implementation"
+  ],
+  "results": [
+    "Comparable performance to centralized approaches",
+    "Closed-form expressions for instability and stability regions",
+    "Convergence rate in terms of proportional gain $k$ and sampling period $T$"
+  ],
+  "paper_id": "61a839665244ab9dcbb14e50",
+  "title": "Coordinated Multi-Robot Trajectory Tracking Control over Sampled\n  Communication",
+  "abstract": "  In this paper, we propose an inverse-kinematics controller for a class of multi-robot systems in the scenario of sampled communication. The goal is to make a group of robots perform trajectory tracking in a coordinated way when the sampling time of communications is much larger than the sampling time of low-level controllers, disrupting theoretical convergence guarantees of standard control design in continuous time. Given a desired trajectory in configuration space which is precomputed offline, the proposed controller receives configuration measurements, possibly via wireless, to re-compute velocity references for the robots, which are tracked by a low-level controller. We propose joint design of a sampled proportional feedback plus a novel continuous-time feedforward that linearizes the dynamics around the reference trajectory: this method is amenable to distributed communication implementation where only one broadcast transmission is needed per sample. Also, we provide closed-form expressions for instability and stability regions and convergence rate in terms of proportional gain $k$ and sampling period $T$. We test the proposed control strategy via numerical simulations in the scenario of cooperative aerial manipulation of a cable-suspended load using a realistic simulator (Fly-Crane). Finally, we compare our proposed controller with centralized approaches that adapt the feedback gain online through smart heuristics, and show that it achieves comparable performance. "
+}

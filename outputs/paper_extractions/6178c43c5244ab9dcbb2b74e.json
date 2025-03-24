@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Distributed Deep Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DPDK-based network optimizations",
+    "DPDK-based low-latency experience replay memory server",
+    "In-network experience replay memory server"
+  ],
+  "results": [
+    "Kernel bypassing by DPDK reduces network access latencies by 32.7% to 58.9%",
+    "In-network experience replay memory server reduces access latencies by 11.7% to 28.1%",
+    "Reduces communication latencies for prioritized experience sampling by 21.9% to 29.1%"
+  ],
+  "paper_id": "6178c43c5244ab9dcbb2b74e",
+  "title": "Accelerating Distributed Deep Reinforcement Learning by In-Network\n  Experience Sampling",
+  "abstract": "  A computing cluster that interconnects multiple compute nodes is used to accelerate distributed reinforcement learning based on DQN (Deep Q-Network). In distributed reinforcement learning, Actor nodes acquire experiences by interacting with a given environment and a Learner node optimizes their DQN model. Since data transfer between Actor and Learner nodes increases depending on the number of Actor nodes and their experience size, communication overhead between them is one of major performance bottlenecks. In this paper, their communication is accelerated by DPDK-based network optimizations, and DPDK-based low-latency experience replay memory server is deployed between Actor and Learner nodes interconnected with a 40GbE (40Gbit Ethernet) network. Evaluation results show that, as a network optimization technique, kernel bypassing by DPDK reduces network access latencies to a shared memory server by 32.7% to 58.9%. As another network optimization technique, an in-network experience replay memory server between Actor and Learner nodes reduces access latencies to the experience replay memory by 11.7% to 28.1% and communication latencies for prioritized experience sampling by 21.9% to 29.1%. "
+}

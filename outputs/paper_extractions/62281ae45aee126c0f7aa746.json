@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Secure PAC Bayesian Regression",
+    "Data Privacy in Machine Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Real Shamir Secret Sharing",
+    "Secure Inverse Method",
+    "Secure Gaussian Elimination Method",
+    "Multiparty Computation"
+  ],
+  "results": [
+    "Simplicity of protocols",
+    "Reduced number of rounds",
+    "Small information leakage"
+  ],
+  "paper_id": "62281ae45aee126c0f7aa746",
+  "title": "Secure PAC Bayesian Regression via Real Shamir Secret Sharing",
+  "abstract": "  A common approach of system identification and machine learning is to generate a model by using training data to predict the test data instances as accurate as possible. Nonetheless, concerns about data privacy are increasingly raised, but not always addressed. We present a secure protocol for learning a linear model relying on recently described technique called real number secret sharing. We take as our starting point the PAC Bayesian bounds and deduce a closed form for the model parameters which depends on the data and the prior from the PAC Bayesian bounds. To obtain the model parameters one needs to solve a linear system. However, we consider the situation where several parties hold different data instances and they are not willing to give up the privacy of the data. Hence, we suggest to use real number secret sharing and multiparty computation to share the data and solve the linear regression in a secure way without violating the privacy of data. We suggest two methods; a secure inverse method and a secure Gaussian elimination method, and compare these methods at the end. The benefit of using secret sharing directly on real numbers is reflected in the simplicity of the protocols and the number of rounds needed. However, this comes with the drawback that a share might leak a small amount of information, but in our analysis we argue that the leakage is small. "
+}

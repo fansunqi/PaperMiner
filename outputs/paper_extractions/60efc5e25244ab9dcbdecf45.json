@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning user-desired data distribution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differential-Critic GAN (DiCGAN)",
+    "Pairwise preferences",
+    "Ranking loss over Wasserstein GAN's critic",
+    "Constrained optimization problem"
+  ],
+  "results": [
+    "State-of-the-art performance in learning user-desired data distributions",
+    "Effective in cases of insufficient desired data and limited supervision"
+  ],
+  "paper_id": "60efc5e25244ab9dcbdecf45",
+  "title": "Differential-Critic GAN: Generating What You Want by a Cue of\n  Preferences",
+  "abstract": "  This paper proposes Differential-Critic Generative Adversarial Network (DiCGAN) to learn the distribution of user-desired data when only partial instead of the entire dataset possesses the desired property. DiCGAN generates desired data that meets the user's expectations and can assist in designing biological products with desired properties. Existing approaches select the desired samples first and train regular GANs on the selected samples to derive the user-desired data distribution. However, the selection of the desired data relies on global knowledge and supervision over the entire dataset. DiCGAN introduces a differential critic that learns from pairwise preferences, which are local knowledge and can be defined on a part of training data. The critic is built by defining an additional ranking loss over the Wasserstein GAN's critic. It endows the difference of critic values between each pair of samples with the user preference and guides the generation of the desired data instead of the whole data. For a more efficient solution to ensure data quality, we further reformulate DiCGAN as a constrained optimization problem, based on which we theoretically prove the convergence of our DiCGAN. Extensive experiments on a diverse set of datasets with various applications demonstrate that our DiCGAN achieves state-of-the-art performance in learning the user-desired data distributions, especially in the cases of insufficient desired data and limited supervision. "
+}

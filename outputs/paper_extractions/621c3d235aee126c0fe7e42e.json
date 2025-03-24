@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Head-to-Head Autonomous Racing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hierarchical Control",
+    "High-level Planner (discrete game approximation)",
+    "Low-level Controller (MARL and LQNG)"
+  ],
+  "results": [
+    "Hierarchical methods outperform baselines in race wins and rule adherence",
+    "MARL-based hierarchical controller wins over 90% of head-to-head races",
+    "Controllers mimic expert human driver actions"
+  ],
+  "paper_id": "621c3d235aee126c0fe7e42e",
+  "title": "Hierarchical Control for Head-to-Head Autonomous Racing",
+  "abstract": "  We develop a hierarchical controller for head-to-head autonomous racing. We first introduce a formulation of a racing game with realistic safety and fairness rules. A high-level planner approximates the original formulation as a discrete game with simplified state, control, and dynamics to easily encode the complex safety and fairness rules and calculates a series of target waypoints. The low-level controller takes the resulting waypoints as a reference trajectory and computes high-resolution control inputs by solving an alternative formulation approximation with simplified objectives and constraints. We consider two approaches for the low-level planner, constructing two hierarchical controllers. One approach uses multi-agent reinforcement learning (MARL), and the other solves a linear-quadratic Nash game (LQNG) to produce control inputs. The controllers are compared against three baselines: an end-to-end MARL controller, a MARL controller tracking a fixed racing line, and an LQNG controller tracking a fixed racing line. Quantitative results show that the proposed hierarchical methods outperform their respective baseline methods in terms of head-to-head race wins and abiding by the rules. The hierarchical controller using MARL for low-level control consistently outperformed all other methods by winning over 90% of head-to-head races and more consistently adhered to the complex racing rules. Qualitatively, we observe the proposed controllers mimicking actions performed by expert human drivers such as shielding/blocking, overtaking, and long-term planning for delayed advantages. We show that hierarchical planning for game-theoretic reasoning produces competitive behavior even when challenged with complex rules and constraints. "
+}

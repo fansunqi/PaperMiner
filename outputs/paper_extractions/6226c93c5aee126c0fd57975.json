@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Evaluation of interpretability methods in DNNs",
+    "Characterizing DNN decision-making"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "Perturbation artifacts analysis",
+    "Fidelity estimation using MIF and LIF orders"
+  ],
+  "results": [
+    "Demonstrated fidelity estimation of four post-hoc interpretability methods",
+    "Minimized and characterized impact of perturbation artifacts on fidelity estimation"
+  ],
+  "paper_id": "6226c93c5aee126c0fd57975",
+  "title": "Evaluation of Interpretability Methods and Perturbation Artifacts in\n  Deep Neural Networks",
+  "abstract": "  Despite excellent performance of deep neural networks (DNNs) in image classification, detection, and prediction, characterizing how DNNs make a given decision remains an open problem, resulting in a number of interpretability methods. Post-hoc interpretability methods primarily aim to quantify the importance of input features with respect to the class probabilities. However, due to the lack of ground truth and the existence of interpretability methods with diverse operating characteristics, evaluating these methods is a crucial challenge. A popular approach to evaluate interpretability methods is to perturb input features deemed important for a given prediction and observe the decrease in accuracy. However, perturbation itself may introduce artifacts, since perturbed images may be out-of-distribution (OOD). In this paper, we have conducted computational experiments to estimate the contribution of perturbation artifacts and developed a method to estimate the fidelity of interpretability methods. We demonstrate that, while perturbation artifacts indeed exist, we can minimize and characterize their impact on fidelity estimation by utilizing model accuracy curves from perturbing input features according to the Most Import First (MIF) and Least Import First (LIF) orders. Using the ResNet-50 trained on the ImageNet, we demonstrate the proposed fidelity estimation of four popular post-hoc interpretability methods. "
+}

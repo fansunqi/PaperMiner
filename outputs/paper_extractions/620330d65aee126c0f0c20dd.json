@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised speech separation"
+  ],
+  "datasets": [
+    "LibriMix",
+    "REAL-M"
+  ],
+  "methods": [
+    "Mixture permutation invariant training (MixPIT)",
+    "Cyclic mixture permutation invariant training (MixCycle)"
+  ],
+  "results": [
+    "MixCycle outperforms MixIT and reaches a performance level very close to the supervised baseline (PIT-DM)",
+    "Self-evaluation technique yields results consistent with evaluation on reference sources and informal listening test"
+  ],
+  "paper_id": "620330d65aee126c0f0c20dd",
+  "title": "MixCycle: Unsupervised Speech Separation via Cyclic Mixture Permutation\n  Invariant Training",
+  "abstract": "  We introduce two unsupervised source separation methods, which involve self-supervised training from single-channel two-source speech mixtures. Our first method, mixture permutation invariant training (MixPIT), enables learning a neural network model which separates the underlying sources via a challenging proxy task without supervision from the reference sources. Our second method, cyclic mixture permutation invariant training (MixCycle), uses MixPIT as a building block in a cyclic fashion for continuous learning. MixCycle gradually converts the problem from separating mixtures of mixtures into separating single mixtures. We compare our methods to common supervised and unsupervised baselines: permutation invariant training with dynamic mixing (PIT-DM) and mixture invariant training (MixIT). We show that MixCycle outperforms MixIT and reaches a performance level very close to the supervised baseline (PIT-DM) while circumventing the over-separation issue of MixIT. Also, we propose a self-evaluation technique inspired by MixCycle that estimates model performance without utilizing any reference sources. We show that it yields results consistent with an evaluation on reference sources (LibriMix) and also with an informal listening test conducted on a real-life mixtures dataset (REAL-M). "
+}

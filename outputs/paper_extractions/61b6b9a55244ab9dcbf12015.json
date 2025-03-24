@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding bugs in neural network programs"
+  ],
+  "datasets": [
+    "19 neural-network programs from Islam et al's survey"
+  ],
+  "methods": [
+    "aNNoTest: annotation-based approach, property-based testing"
+  ],
+  "results": [
+    "Revealed 94 bugs, including 63 previously reported bugs"
+  ],
+  "paper_id": "61b6b9a55244ab9dcbf12015",
+  "title": "An Annotation-based Approach for Finding Bugs in Neural Network Programs",
+  "abstract": "  As neural networks are increasingly included as core components of safety-critical systems, developing effective testing techniques specialized for them becomes crucial. The bulk of the research has focused on testing neural-network models; but these models are defined by writing programs, and there is growing evidence that these neural-network programs often have bugs too.   This paper presents aNNoTest: an approach to generating test inputs for neural-network programs. A fundamental challenge is that the dynamically-typed languages (e.g., Python) commonly used to program neural networks cannot express detailed constraints about valid function inputs (e.g., matrices with certain dimensions). Without knowing these constraints, automated test-case generation is prone to producing invalid inputs, which trigger spurious failures and are useless for identifying real bugs. To address this problem, we introduce a simple annotation language tailored for concisely expressing valid function inputs in neural-network programs. aNNoTest takes as input an annotated program, and uses property-based testing to generate random inputs that satisfy the validity constraints. In the paper, we also outline guidelines that simplify writing aNNoTest annotations.   We evaluated aNNoTest on 19 neural-network programs from Islam et al's survey., which we manually annotated following our guidelines -- producing 6 annotations per tested function on average. aNNoTest automatically generated test inputs that revealed 94 bugs, including 63 bugs that the survey reported for these projects. These results suggest that aNNoTest can be a valuable approach to finding widespread bugs in real-world neural-network programs. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Direct B-rep Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SolidGen: Autoregressive neural network",
+    "Transformer-based and pointer neural networks",
+    "Indexed Boundary Representation"
+  ],
+  "results": [
+    "High quality, realistic CAD models",
+    "Qualitative, quantitative, and perceptual evaluation by human subjects"
+  ],
+  "paper_id": "624278fa5aee126c0fd79313",
+  "title": "SolidGen: An Autoregressive Model for Direct B-rep Synthesis",
+  "abstract": "  The Boundary representation (B-rep) format is the de-facto shape representation in computer-aided design (CAD) to model solid and sheet objects. Recent approaches to generating CAD models have focused on learning sketch-and-extrude modeling sequences that are executed by a solid modeling kernel in postprocess to recover a B-rep. In this paper we present a new approach that enables learning from and synthesizing B-reps without the need for supervision through CAD modeling sequence data. Our method SolidGen, is an autoregressive neural network that models the B-rep directly by predicting the vertices, edges, and faces using Transformer-based and pointer neural networks. Key to achieving this is our Indexed Boundary Representation that references B-rep vertices, edges and faces in a well-defined hierarchy to capture the geometric and topological relations suitable for use with machine learning. SolidGen can be easily conditioned on contexts e.g., class labels, images, and voxels thanks to its probabilistic modeling of the B-rep distribution. We demonstrate qualitatively, quantitatively, and through perceptual evaluation by human subjects that SolidGen can produce high quality, realistic CAD models. "
+}

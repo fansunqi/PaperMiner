@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Investigate spectral distributions of empirical kernel matrices in ultra-wide neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deformed semicircle law",
+    "Nonlinear Hanson-Wright inequality",
+    "Empirical conjugate kernel (CK)",
+    "Neural tangent kernel (NTK)"
+  ],
+  "results": [
+    "Emergence of deformed semicircle law as $d_1/n\\to\\infty$",
+    "Non-asymptotic concentration of empirical CK and NTK around their limiting kernels",
+    "Lower bounds on smallest eigenvalues of empirical CK and NTK",
+    "Asymptotic performance equivalence of random feature regression and limiting kernel regression under ultra-wide regime"
+  ],
+  "paper_id": "61494d455244ab9dcbed3754",
+  "title": "Deformed semicircle law and concentration of nonlinear random matrices\n  for ultra-wide neural networks",
+  "abstract": "  In this paper, we investigate a two-layer fully connected neural network of the form $f(X)=\\frac{1}{\\sqrt{d_1}}\\boldsymbol{a}^\\top \\sigma\\left(WX\\right)$, where $X\\in\\mathbb{R}^{d_0\\times n}$ is a deterministic data matrix, $W\\in\\mathbb{R}^{d_1\\times d_0}$ and $\\boldsymbol{a}\\in\\mathbb{R}^{d_1}$ are random Gaussian weights, and $\\sigma$ is a nonlinear activation function. We study the limiting spectral distributions of two empirical kernel matrices associated with $f(X)$: the empirical conjugate kernel (CK) and neural tangent kernel (NTK), beyond the linear-width regime ($d_1\\asymp n$). We focus on the $\\textit{ultra-wide regime}$, where the width $d_1$ of the first layer is much larger than the sample size $n$. Under appropriate assumptions on $X$ and $\\sigma$, a deformed semicircle law emerges as $d_1/n\\to\\infty$ and $n\\to\\infty$. We first prove this limiting law for generalized sample covariance matrices with some dependency. To specify it for our neural network model, we provide a nonlinear Hanson-Wright inequality that is suitable for neural networks with random weights and Lipschitz activation functions. We also demonstrate non-asymptotic concentrations of the empirical CK and NTK around their limiting kernels in the spectral norm, along with lower bounds on their smallest eigenvalues. As an application, we show that random feature regression induced by the empirical kernel achieves the same asymptotic performance as its limiting kernel regression under the ultra-wide regime. This allows us to calculate the asymptotic training and test errors for random feature regression using the corresponding kernel regression. "
+}

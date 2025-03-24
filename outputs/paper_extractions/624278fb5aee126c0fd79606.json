@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/Hiroki11x/ConjugateGradient_GAN"
+  ],
+  "tasks": [
+    "Generative Adversarial Networks training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conjugate Gradient Method for solving LNE in GANs"
+  ],
+  "results": [
+    "Outperforms SGD and momentum SGD in terms of best FID score",
+    "Outperforms Adam on average"
+  ],
+  "paper_id": "624278fb5aee126c0fd79606",
+  "title": "Conjugate Gradient Method for Generative Adversarial Networks",
+  "abstract": "  One of the training strategies of generative models is to minimize the Jensen--Shannon divergence between the model distribution and the data distribution. Since data distribution is unknown, generative adversarial networks (GANs) formulate this problem as a game between two models, a generator and a discriminator. The training can be formulated in the context of game theory and the local Nash equilibrium (LNE). It does not seem feasible to derive guarantees of stability or optimality for the existing methods. This optimization problem is far more challenging than the single objective setting. Here, we use the conjugate gradient method to reliably and efficiently solve the LNE problem in GANs. We give a proof and convergence analysis under mild assumptions showing that the proposed method converges to a LNE with three different learning rate update rules, including a constant learning rate. Finally, we demonstrate that the proposed method outperforms stochastic gradient descent (SGD) and momentum SGD in terms of best Frechet inception distance (FID) score and outperforms Adam on average. The code is available at \\url{https://github.com/Hiroki11x/ConjugateGradient_GAN}. "
+}

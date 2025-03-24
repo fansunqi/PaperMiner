@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding shear migration of particles in viscous flow"
+  ],
+  "datasets": [
+    "Experimental data from the literature"
+  ],
+  "methods": [
+    "Physics-informed neural network (PINN)",
+    "Constraining neural network training via a model for shear-induced particle migration"
+  ],
+  "results": [
+    "PINN provides better fidelity to experiments and novel understanding of migration fluxes",
+    "PINN yields consistent values for empirical model parameters in annular Couette flow",
+    "PINN identifies different empirical parameters for Poiseuille slot flow, highlighting literature inconsistency",
+    "Empirical model parameters vary with shear P\u00e9clet number and particle bulk volume fraction"
+  ],
+  "paper_id": "6189e6d15244ab9dcb76ebd6",
+  "title": "Physics-informed neural networks for understanding shear migration of\n  particles in viscous flow",
+  "abstract": "  We harness the physics-informed neural network (PINN) approach to extend the utility of phenomenological models for particle migration in shear flow. Specifically, we propose to constrain the neural network training via a model for the physics of shear-induced particle migration in suspensions. Then, we train the PINN against experimental data from the literature, showing that this approach provides both better fidelity to the experiments, and a novel understanding of the relative roles of the hypothesized migration fluxes. We first verify the PINN approach for solving the inverse problem of radial particle migration in a non-Brownian suspension in an annular Couette flow. In this classical case, the PINN yields the same value (as reported in the literature) for the ratio of the two parameters of the empirical model. Next, we apply the PINN approach to analyze experiments on particle migration in both non-Brownian and Brownian suspensions in Poiseuille slot flow, for which a definitive calibration of the phenomenological migration model has been lacking. Using the PINN approach, we identify the unknown/empirical parameters in the physical model through the inverse solver capability of PINNs. Specifically, the values are significantly different from those for the Couette cell, highlighting an inconsistency in the literature that uses the latter value for Poiseuille flow. Importantly, the PINN results also show that the inferred values of the empirical model's parameters vary with the shear P\\'eclet number and the particle bulk volume fraction of the suspension, instead of being constant as assumed in some previous literature. "
+}

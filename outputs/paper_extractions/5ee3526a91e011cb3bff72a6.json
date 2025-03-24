@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Novelty Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Robust Variational Autoencoding",
+    "Dimension reduction component for latent code",
+    "Mixture of Gaussian low-rank inliers and full-rank outliers",
+    "Wasserstein-1 metric for regularization",
+    "Robust error for reconstruction"
+  ],
+  "results": [
+    "State-of-the-art results on standard benchmarks"
+  ],
+  "paper_id": "5ee3526a91e011cb3bff72a6",
+  "title": "Novelty Detection via Robust Variational Autoencoding",
+  "abstract": "  We propose a new method for novelty detection that can tolerate high corruption of the training points, whereas previous works assumed either no or very low corruption. Our method trains a robust variational autoencoder (VAE), which aims to generate a model for the uncorrupted training points. To gain robustness to high corruption, we incorporate the following four changes to the common VAE: 1. Extracting crucial features of the latent code by a carefully designed dimension reduction component for distributions; 2. Modeling the latent distribution as a mixture of Gaussian low-rank inliers and full-rank outliers, where the testing only uses the inlier model; 3. Applying the Wasserstein-1 metric for regularization, instead of the Kullback-Leibler (KL) divergence; and 4. Using a robust error for reconstruction. We establish both robustness to outliers and suitability to low-rank modeling of the Wasserstein metric as opposed to the KL divergence. We illustrate state-of-the-art results on standard benchmarks. "
+}

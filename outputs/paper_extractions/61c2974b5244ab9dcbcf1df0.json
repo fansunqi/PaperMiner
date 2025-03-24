@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/zexinyang/GlobalMatch"
+  ],
+  "tasks": [
+    "Registration of forest terrestrial point clouds"
+  ],
+  "datasets": [
+    "new benchmark dataset"
+  ],
+  "methods": [
+    "GlobalMatch",
+    "Locates tree stems from raw point clouds",
+    "Matches stems based on relative spatial relationship"
+  ],
+  "results": [
+    "Inherits effectiveness and robustness of stem-based registration",
+    "Exceedingly increases efficiency"
+  ],
+  "paper_id": "61c2974b5244ab9dcbcf1df0",
+  "title": "GlobalMatch: Registration of Forest Terrestrial Point Clouds by Global\n  Matching of Relative Stem Positions",
+  "abstract": "  Registering point clouds of forest environments is an essential prerequisite for LiDAR applications in precision forestry. State-of-the-art methods for forest point cloud registration require the extraction of individual tree attributes, and they have an efficiency bottleneck when dealing with point clouds of real-world forests with dense trees. We propose an automatic, robust, and efficient method for the registration of forest point clouds. Our approach first locates tree stems from raw point clouds and then matches the stems based on their relative spatial relationship to determine the registration transformation. The algorithm requires no extra individual tree attributes and has quadratic complexity to the number of trees in the environment, allowing it to align point clouds of large forest environments. Extensive experiments on forest terrestrial point clouds have revealed that our method inherits the effectiveness and robustness of the stem-based registration strategy while exceedingly increasing its efficiency. Besides, we introduce a new benchmark dataset that complements the very few existing open datasets for the development and evaluation of registration methods for forest point clouds. The source code of our method and the dataset are available at https://github.com/zexinyang/GlobalMatch. "
+}

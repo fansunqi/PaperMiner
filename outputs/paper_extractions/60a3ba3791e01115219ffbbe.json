@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text-to-SQL generation"
+  ],
+  "datasets": [
+    "WikiSQL"
+  ],
+  "methods": [
+    "Schema-aware Denoising (SeaD)",
+    "Transformer-based seq-to-seq model",
+    "Clause-sensitive execution guided (EG) decoding strategy"
+  ],
+  "results": [
+    "Improves performance in schema linking and grammar correctness",
+    "Establishes new state-of-the-art on WikiSQL benchmark"
+  ],
+  "paper_id": "60a3ba3791e01115219ffbbe",
+  "title": "SeaD: End-to-end Text-to-SQL Generation with Schema-aware Denoising",
+  "abstract": "  In text-to-SQL task, seq-to-seq models often lead to sub-optimal performance due to limitations in their architecture. In this paper, we present a simple yet effective approach that adapts transformer-based seq-to-seq model to robust text-to-SQL generation. Instead of inducing constraint to decoder or reformat the task as slot-filling, we propose to train seq-to-seq model with Schema aware Denoising (SeaD), which consists of two denoising objectives that train model to either recover input or predict output from two novel erosion and shuffle noises. These denoising objectives acts as the auxiliary tasks for better modeling the structural data in S2S generation. In addition, we improve and propose a clause-sensitive execution guided (EG) decoding strategy to overcome the limitation of EG decoding for generative model. The experiments show that the proposed method improves the performance of seq-to-seq model in both schema linking and grammar correctness and establishes new state-of-the-art on WikiSQL benchmark. The results indicate that the capacity of vanilla seq-to-seq architecture for text-to-SQL may have been under-estimated. "
+}

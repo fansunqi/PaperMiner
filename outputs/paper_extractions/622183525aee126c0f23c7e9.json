@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Query Processing on Tensor Computation Runtimes"
+  ],
+  "datasets": [
+    "TPC-H"
+  ],
+  "methods": [
+    "Tensor Query Processor (TQP)",
+    "Transforms SQL queries into tensor programs",
+    " Executes on TCRs",
+    "Novel algorithms for relational operators on tensor routines"
+  ],
+  "results": [
+    "Improves query execution time by up to 10x over CPU/GPU systems",
+    "Accelerates queries mixing ML predictions and SQL with up to 9x speedup over CPU baselines"
+  ],
+  "paper_id": "622183525aee126c0f23c7e9",
+  "title": "Query Processing on Tensor Computation Runtimes",
+  "abstract": "  The huge demand for computation in artificial intelligence (AI) is driving unparalleled investments in hardware and software systems for AI. This leads to an explosion in the number of specialized hardware devices, which are now offered by major cloud vendors. By hiding the low-level complexity through a tensor-based interface, tensor computation runtimes (TCRs) such as PyTorch allow data scientists to efficiently exploit the exciting capabilities offered by the new hardware. In this paper, we explore how database management systems can ride the wave of innovation happening in the AI space.   We design, build, and evaluate Tensor Query Processor (TQP): TQP transforms SQL queries into tensor programs and executes them on TCRs. TQP is able to run the full TPC-H benchmark by implementing novel algorithms for relational operators on the tensor routines. At the same time, TQP can support various hardware while only requiring a fraction of the usual development effort. Experiments show that TQP can improve query execution time by up to 10$\\times$ over specialized CPU- and GPU-only systems. Finally, TQP can accelerate queries mixing ML predictions and SQL end-to-end, and deliver up to 9$\\times$ speedup over CPU baselines. "
+}

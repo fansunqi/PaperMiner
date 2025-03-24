@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stateful Fuzzing of Proprietary Industrial Controllers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Injected Ghosts for on-system tracing and coverage computation",
+    "Stateful fuzzing based on automated command discovery and status code extraction"
+  ],
+  "results": [
+    "Uncovered multiple vulnerabilities, leading to three reported CVE IDs",
+    "Significant improvement over the state-of-the-art on diverse ICS devices"
+  ],
+  "paper_id": "626b49615aee126c0fffd06e",
+  "title": "FieldFuzz: Stateful Fuzzing of Proprietary Industrial Controllers using\n  Injected Ghosts",
+  "abstract": "  With the advent of the fourth industrial revolution, networked industrial Programmable Logic Controllers (PLCs) have been introduced for critical infrastructure control. A number of recent discoveries of exploitable vulnerabilities in third-party libraries in such devices has raised concerns about their supply chain security. Supply chain security verification of software used in this context is challenging due to the proprietary nature of the platforms, and the difficulty of their runtime introspection. In particular, network-based fuzzing is often the only way to test the devices, but without guidance through execution tracing this fuzzing is inefficient. In this work, present a novel approach for dynamic analysis of such platforms, leveraging two main contributions: i) a `Ghost' application injected into the fuzzing target to allow on-system tracing and coverage computation, and ii) stateful fuzzing based on automated command discovery and status code extraction. We present FieldFuzz, a framework that realizes this approach for the widespread Codesys runtime for PLCs used by 80 industrial device vendors ranging from over 400 devices. Our fuzzing campaigns uncovered multiple vulnerabilities, leading to three reported CVE IDs. To study the cross-platform applicability of FieldFuzz, we reproduce the findings on a diverse set of Industrial Control System (ICS) devices, showing a significant improvement over the state-of-the-art. "
+}

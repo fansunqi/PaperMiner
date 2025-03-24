@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Automatic Sleep Staging"
+  ],
+  "datasets": [
+    "Three real-world EEG datasets (at-home and in-lab EEG recording settings)"
+  ],
+  "methods": [
+    "Self-supervised EEG Representation Learning",
+    "Contrast with the World Representation (ContraWR)"
+  ],
+  "results": [
+    "ContraWR outperforms 4 recent self-supervised learning methods",
+    "4% accuracy improvement when less than 2% data is labeled",
+    "Informative representative feature structures in 2D projection"
+  ],
+  "paper_id": "617b66765244ab9dcbb6a83d",
+  "title": "Self-supervised EEG Representation Learning for Automatic Sleep Staging",
+  "abstract": "  Background: Deep learning models have shown great success in automating tasks in sleep medicine by learning from carefully annotated Electroencephalogram (EEG) data. However, effectively utilizing a large amount of raw EEG remains a challenge.   Objective: In this paper, we aim to learn robust vector representations from massive unlabeled EEG signals, such that the learned vectorized features (1) are expressive enough to replace the raw signals in the sleep staging task; and (2) provide better predictive performance than supervised models in scenarios of fewer labels and noisy samples.   Methods: We propose a self-supervised model, named Contrast with the World Representation (ContraWR), for EEG signal representation learning, which uses global statistics from the dataset to distinguish signals associated with different sleep stages. The ContraWR model is evaluated on three real-world EEG datasets that include both at-home and in-lab EEG recording settings.   Results: ContraWR outperforms 4 recent self-supervised learning methods on the sleep staging task across 3 large EEG datasets. ContraWR also beats supervised learning when fewer training labels are available (e.g., 4% accuracy improvement when less than 2% data is labeled). Moreover, the model provides informative representative feature structures in 2D projection.   Conclusions: We show that ContraWR is robust to noise and can provide high-quality EEG representations for downstream prediction tasks. The proposed model can be generalized to other unsupervised physiological signal learning tasks. Future directions include exploring task-specific data augmentations and combining self-supervised with supervised methods, building upon the initial success of self-supervised learning in this paper. "
+}

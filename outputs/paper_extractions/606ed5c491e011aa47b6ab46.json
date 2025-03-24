@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding and manipulating neural net features"
+  ],
+  "datasets": [
+    "MNIST",
+    "ImageNet"
+  ],
+  "methods": [
+    "Sparse Oblique Decision Trees",
+    "Tree Alternating Optimization (TAO)"
+  ],
+  "results": [
+    "Highly accurate and interpretable trees",
+    "Faithful mimicry of neural net parts",
+    "Global feature manipulation for adversarial attacks"
+  ],
+  "paper_id": "606ed5c491e011aa47b6ab46",
+  "title": "Sparse Oblique Decision Trees: A Tool to Understand and Manipulate\n  Neural Net Features",
+  "abstract": "  The widespread deployment of deep nets in practical applications has lead to a growing desire to understand how and why such black-box methods perform prediction. Much work has focused on understanding what part of the input pattern (an image, say) is responsible for a particular class being predicted, and how the input may be manipulated to predict a different class. We focus instead on understanding which of the internal features computed by the neural net are responsible for a particular class. We achieve this by mimicking part of the neural net with an oblique decision tree having sparse weight vectors at the decision nodes. Using the recently proposed Tree Alternating Optimization (TAO) algorithm, we are able to learn trees that are both highly accurate and interpretable. Such trees can faithfully mimic the part of the neural net they replaced, and hence they can provide insights into the deep net black box. Further, we show we can easily manipulate the neural net features in order to make the net predict, or not predict, a given class, thus showing that it is possible to carry out adversarial attacks at the level of the features. These insights and manipulations apply globally to the entire training and test set, not just at a local (single-instance) level. We demonstrate this robustly in the MNIST and ImageNet datasets with LeNet5 and VGG networks. "
+}

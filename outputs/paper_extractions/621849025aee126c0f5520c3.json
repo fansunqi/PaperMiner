@@ -1,0 +1,19 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Neural Trojan Defense"
+  ],
+  "datasets": "None",
+  "methods": [
+    "Variational Input Filtering (VIF)",
+    "Adversarial Input Filtering (AIF)",
+    "Filtering-then-Contrasting (FtC)"
+  ],
+  "results": [
+    "Significantly outperform baseline defenses in mitigating advanced Trojan attacks",
+    "Robust to small amounts of training data and large-norm triggers"
+  ],
+  "paper_id": "621849025aee126c0f5520c3",
+  "title": "Towards Effective and Robust Neural Trojan Defenses via Input Filtering",
+  "abstract": "  Trojan attacks on deep neural networks are both dangerous and surreptitious. Over the past few years, Trojan attacks have advanced from using only a single input-agnostic trigger and targeting only one class to using multiple, input-specific triggers and targeting multiple classes. However, Trojan defenses have not caught up with this development. Most defense methods still make inadequate assumptions about Trojan triggers and target classes, thus, can be easily circumvented by modern Trojan attacks. To deal with this problem, we propose two novel \"filtering\" defenses called Variational Input Filtering (VIF) and Adversarial Input Filtering (AIF) which leverage lossy data compression and adversarial learning respectively to effectively purify potential Trojan triggers in the input at run time without making assumptions about the number of triggers/target classes or the input dependence property of triggers. In addition, we introduce a new defense mechanism called \"Filtering-then-Contrasting\" (FtC) which helps avoid the drop in classification accuracy on clean data caused by \"filtering\", and combine it with VIF/AIF to derive new defenses of this kind. Extensive experimental results and ablation studies show that our proposed defenses significantly outperform well-known baseline defenses in mitigating five advanced Trojan attacks including two recent state-of-the-art while being quite robust to small amounts of training data and large-norm triggers. "
+}

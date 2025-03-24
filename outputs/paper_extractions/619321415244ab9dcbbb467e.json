@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimization for machine learning problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stochastic gradient descent with model building",
+    "Forward step model building",
+    "Diagonalization approach for adaptive step lengths"
+  ],
+  "results": [
+    "Faster convergence",
+    "Better generalization",
+    "Less tuning required",
+    "Comparable performance to other adaptive methods"
+  ],
+  "paper_id": "619321415244ab9dcbbb467e",
+  "title": "Bolstering Stochastic Gradient Descent with Model Building",
+  "abstract": "  Stochastic gradient descent method and its variants constitute the core optimization algorithms that achieve good convergence rates for solving machine learning problems. These rates are obtained especially when these algorithms are fine-tuned for the application at hand. Although this tuning process can require large computational costs, recent work has shown that these costs can be reduced by line search methods that iteratively adjust the stepsize. We propose an alternative approach to stochastic line search by using a new algorithm based on forward step model building. This model building step incorporates second-order information that allows adjusting not only the stepsize but also the search direction. Noting that deep learning model parameters come in groups (layers of tensors), our method builds its model and calculates a new step for each parameter group. This novel diagonalization approach makes the selected step lengths adaptive. We provide convergence rate analysis, and experimentally show that the proposed algorithm achieves faster convergence and better generalization in well-known test problems. More precisely, SMB requires less tuning, and shows comparable performance to other adaptive methods. "
+}

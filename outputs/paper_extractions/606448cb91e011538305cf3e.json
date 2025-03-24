@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learn controllers from Signal Temporal Logic (STL) specifications"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Policy search approach",
+    "Feedforward neural networks (FNNs) for system model",
+    "Recurrent neural network (RNN) for control policy",
+    "Control barrier functions (CBFs) for safety"
+  ],
+  "results": [
+    "Satisfies given STL specifications within few system runs",
+    "Can be used for on-line control"
+  ],
+  "paper_id": "606448cb91e011538305cf3e",
+  "title": "Safe Model-based Control from Signal Temporal Logic Specifications Using\n  Recurrent Neural Networks",
+  "abstract": "  We propose a policy search approach to learn controllers from specifications given as Signal Temporal Logic (STL) formulae. The system model, which is unknown but assumed to be an affine control system, is learned together with the control policy. The model is implemented as two feedforward neural networks (FNNs) - one for the drift, and one for the control directions. To capture the history dependency of STL specifications, we use a recurrent neural network (RNN) to implement the control policy. In contrast to prevalent model-free methods, the learning approach proposed here takes advantage of the learned model and is more efficient. We use control barrier functions (CBFs) with the learned model to improve the safety of the system. We validate our algorithm via simulations and experiments. The results show that our approach can satisfy the given specification within very few system runs, and can be used for on-line control. "
+}

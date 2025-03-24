@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Abstractive Summarization"
+  ],
+  "datasets": [
+    "10.2k generated summaries with varied abstractiveness",
+    "4.2k summaries from five summarization models"
+  ],
+  "methods": [
+    "Human evaluations of factuality",
+    "Decoding constraint to vary abstractiveness",
+    "New factuality metrics adjusting for abstractiveness"
+  ],
+  "results": [
+    "Increased abstractiveness generally leads to a drop in factuality",
+    "Rate of factuality decay depends on training data",
+    "Provided baselines for abstractiveness-adjusted factuality"
+  ],
+  "paper_id": "61109ffa5244ab9dcb2f2a5d",
+  "title": "Evaluating the Tradeoff Between Abstractiveness and Factuality in\n  Abstractive Summarization",
+  "abstract": "  Neural models for abstractive summarization tend to generate output that is fluent and well-formed but lacks semantic faithfulness, or factuality, with respect to the input documents. In this paper, we analyze the tradeoff between abstractiveness and factuality of generated summaries across multiple datasets and models, using extensive human evaluations of factuality. In our analysis, we visualize the rates of change in factuality as we gradually increase abstractiveness using a decoding constraint, and we observe that, while increased abstractiveness generally leads to a drop in factuality, the rate of factuality decay depends on factors such as the data that the system was trained on. We introduce two datasets with human factuality judgements; one containing 10.2k generated summaries with systematically varied degrees of abstractiveness; the other containing 4.2k summaries from five different summarization models. We propose new factuality metrics that adjust for the degree of abstractiveness, and we use them to compare the abstractiveness-adjusted factuality of previous summarization works, providing baselines for future work. "
+}

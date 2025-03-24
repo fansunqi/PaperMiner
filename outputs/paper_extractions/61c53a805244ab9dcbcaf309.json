@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Limited look-ahead game solving for imperfect-information games"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Continual Depth-limited Responses algorithm",
+    "Incorporating opponent models into limited look-ahead game solving"
+  ],
+  "results": [
+    "Efficiently exploits opponent's strategy",
+    "Achieves significant exploitation without risking high loss",
+    "Over half of maximum possible exploitation"
+  ],
+  "paper_id": "61c53a805244ab9dcbcaf309",
+  "title": "Continual Depth-limited Responses for Computing Counter-strategies in\n  Sequential Games",
+  "abstract": "  Limited look-ahead game solving for imperfect-information games is the breakthrough that allowed defeating expert humans in large poker. The existing algorithms of this type assume that all players are perfectly rational and do not allow explicit modeling and exploitation of the opponent's flaws. As a result, even very weak opponents can tie or lose only very slowly against these powerful methods. We present the first algorithm that allows incorporating opponent models into limited look-ahead game solving. Using only an approximation of a single (optimal) value function, the algorithm efficiently exploits an arbitrary estimate of the opponent's strategy. It guarantees a bounded worst-case loss for the player. We also show that using existing resolving gadgets is problematic and why we need to keep the previously solved parts of the game. Experiments on three different games show that over half of the maximum possible exploitation is achieved by our algorithm without risking almost any loss. "
+}

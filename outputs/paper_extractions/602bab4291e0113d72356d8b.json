@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computing the weight distribution of polar codes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deterministic algorithm",
+    "Efficient recursive procedure",
+    "Representation of polar codes as disjoint union of polar cosets",
+    "Use of automorphism group (BLTA and LTA) to reduce complexity"
+  ],
+  "results": [
+    "Solves the open problem posed by Polyanskaya, Davletshin, and Polyanskii",
+    "Can compute weight distribution of any polar cosets in time O(n^2)",
+    "Reduces the number of polar cosets to evaluate, making it feasible to compute weight distribution at length n = 128"
+  ],
+  "paper_id": "602bab4291e0113d72356d8b",
+  "title": "A Deterministic Algorithm for Computing the Weight Distribution of Polar\n  Codes",
+  "abstract": "  In this work, we present a deterministic algorithm for computing the entire weight distribution of polar codes. As the first step, we derive an efficient recursive procedure to compute the weight distribution that arises in successive cancellation decoding of polar codes along any decoding path. This solves the open problem recently posed by Polyanskaya, Davletshin, and Polyanskii. Using this recursive procedure, at code length n, we can compute the weight distribution of any polar cosets in time O(n^2). We show that any polar code can be represented as a disjoint union of such polar cosets; moreover, this representation extends to polar codes with dynamically frozen bits. However, the number of polar cosets in such representation scales exponentially with a parameter introduced herein, which we call the mixing factor. To upper bound the complexity of our algorithm for polar codes being decreasing monomial codes, we study the range of their mixing factors. We prove that among all decreasing monomial codes with rates at most 1/2, self-dual Reed-Muller codes have the largest mixing factors. To further reduce the complexity of our algorithm, we make use of the fact that, as decreasing monomial codes, polar codes have a large automorphism group. That automorphism group includes the block lower-triangular affine group (BLTA), which in turn contains the lower-triangular affine group (LTA). We prove that a subgroup of LTA acts transitively on certain subsets of decreasing monomial codes, thereby drastically reducing the number of polar cosets that we need to evaluate. This complexity reduction makes it possible to compute the weight distribution of polar codes at length n = 128. "
+}

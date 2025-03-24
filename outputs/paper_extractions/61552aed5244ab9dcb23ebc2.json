@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Accelerating convergence of nonlinear fixed-point methods"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Anderson Acceleration (AA) as a Krylov method",
+    "Polynomial residual update formulas",
+    "Recurrence relations for AA(m) polynomials"
+  ],
+  "results": [
+    "AA(m) cannot produce a smaller residual than GMRES without restart",
+    "Periodic memory effect in AA(m) residual polynomials",
+    "New residual convergence bounds for AA(1)",
+    "Influence of initial guess on asymptotic convergence factor of AA(1)"
+  ],
+  "paper_id": "61552aed5244ab9dcb23ebc2",
+  "title": "Anderson Acceleration as a Krylov Method with Application to Asymptotic\n  Convergence Analysis",
+  "abstract": "  Anderson acceleration (AA) is widely used for accelerating the convergence of nonlinear fixed-point methods $x_{k+1}=q(x_{k})$, $x_k \\in \\mathbb{R}^n$, but little is known about how to quantify the convergence acceleration provided by AA. As a roadway towards gaining more understanding of convergence acceleration by AA, we study AA($m$), i.e., Anderson acceleration with finite window size $m$, applied to the case of linear fixed-point iterations $x_{k+1}=M x_{k}+b$. We write AA($m$) as a Krylov method with polynomial residual update formulas, and derive recurrence relations for the AA($m$) polynomials. Writing AA($m$) as a Krylov method immediately implies that $k$ iterations of AA($m$) cannot produce a smaller residual than $k$ iterations of GMRES without restart (but without implying anything about the relative convergence speed of (windowed) AA($m$) versus restarted GMRES($m$)). We find that the AA($m$) residual polynomials observe a periodic memory effect where increasing powers of the error iteration matrix $M$ act on the initial residual as the iteration number increases. We derive several further results based on these polynomial residual update formulas, including orthogonality relations, a lower bound on the AA(1) acceleration coefficient $\\beta_k$, and explicit nonlinear recursions for the AA(1) residuals and residual polynomials that do not include the acceleration coefficient $\\beta_k$. Using these recurrence relations we also derive new residual convergence bounds for AA(1) in the linear case, demonstrating how the per-iteration residual reduction $||r_{k+1}||/||r_{k}||$ depends strongly on the residual reduction in the previous iteration and on the angle between the prior residual vectors $r_k$ and $r_{k-1}$. We apply these results to study the influence of the initial guess on the asymptotic convergence factor of AA(1), and to study AA(1) residual convergence patterns. "
+}

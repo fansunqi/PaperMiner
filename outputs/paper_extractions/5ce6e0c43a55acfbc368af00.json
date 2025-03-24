@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computing general discrete logarithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Modified Shor's algorithm with semi-classical Fourier transform",
+    "Increased number of group operations evaluated quantumly",
+    "Limited search in classical post-processing"
+  ],
+  "results": [
+    "Expected success probability of 60% to 82% in a single run",
+    "Success probability exceeding 99% with further modifications",
+    "Heuristic success probability tends to one as group order r approaches infinity"
+  ],
+  "paper_id": "5ce6e0c43a55acfbc368af00",
+  "title": "Revisiting Shor's quantum algorithm for computing general discrete\n  logarithms",
+  "abstract": "  We heuristically show that Shor's algorithm for computing general discrete logarithms achieves an expected success probability of approximately 60% to 82% in a single run when modified to enable efficient implementation with the semi-classical Fourier transform. By slightly increasing the number of group operations that are evaluated quantumly and performing a single limited search in the classical post-processing, or by performing two limited searches in the post-processing, we show how the algorithm can be further modified to achieve a success probability that heuristically exceeds 99% in a single run. We provide concrete heuristic estimates of the success probability of the modified algorithm, as a function of the group order $r$, the size of the search space in the classical post-processing, and the additional number of group operations evaluated quantumly. In the limit as $r \\rightarrow \\infty$, we heuristically show that the success probability tends to one. In analogy with our earlier works, we show how the modified quantum algorithm may be heuristically simulated classically when the logarithm $d$ and $r$ are both known. Furthermore, we heuristically show how slightly better tradeoffs may be achieved, compared to our earlier works, if $r$ is known when computing $d$. We generalize our heuristic to cover some of our earlier works, and compare it to the non-heuristic analyses in those works. "
+}

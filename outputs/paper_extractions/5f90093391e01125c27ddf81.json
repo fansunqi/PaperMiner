@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Time-series data imputation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Random Drop Imputation with Self-training (RDIS)",
+    "Generating extra missing values by random drop",
+    "Self-training with pseudo values",
+    "Threshold-based entropy filtering"
+  ],
+  "results": [
+    "Competitive results on two real-world datasets"
+  ],
+  "paper_id": "5f90093391e01125c27ddf81",
+  "title": "RDIS: Random Drop Imputation with Self-Training for Incomplete Time\n  Series Data",
+  "abstract": "  Time-series data with missing values are commonly encountered in many fields, such as healthcare, meteorology, and robotics. The imputation aims to fill the missing values with valid values. Most imputation methods trained the models implicitly because missing values have no ground truth. In this paper, we propose Random Drop Imputation with Self-training (RDIS), a novel training method for time-series data imputation models. In RDIS, we generate extra missing values by applying a random drop on the observed values in incomplete data. We can explicitly train the imputation models by filling in the randomly dropped values. In addition, we adopt self-training with pseudo values to exploit the original missing values. To improve the quality of pseudo values, we set the threshold and filter them by calculating the entropy. To verify the effectiveness of RDIS on the time series imputation, we test RDIS to various imputation models and achieve competitive results on two real-world datasets. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimal design of bandit algorithms",
+    "Minimization of expected regret"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimized UCB bandit designs",
+    "Change-of-measure ideas",
+    "Modified UCB algorithms for robustness"
+  ],
+  "results": [
+    "Regret distribution has a heavy tail (truncated Cauchy distribution)",
+    "p-th moment of regret grows as a power of arm plays",
+    "Fragility to mis-specification",
+    "Trade-off between UCB exploration and tail exponent of regret distribution"
+  ],
+  "paper_id": "6153e0335244ab9dcb39c580",
+  "title": "The Fragility of Optimized Bandit Algorithms",
+  "abstract": "  Much of the literature on optimal design of bandit algorithms is based on minimization of expected regret. It is well known that designs that are optimal over certain exponential families can achieve expected regret that grows logarithmically in the number of arm plays, at a rate governed by the Lai-Robbins lower bound. In this paper, we show that when one uses such optimized designs, the regret distribution of the associated algorithms necessarily has a very heavy tail, specifically, that of a truncated Cauchy distribution. Furthermore, for $p>1$, the $p$'th moment of the regret distribution grows much faster than poly-logarithmically, in particular as a power of the total number of arm plays. We show that optimized UCB bandit designs are also fragile in an additional sense, namely when the problem is even slightly mis-specified, the regret can grow much faster than the conventional theory suggests. Our arguments are based on standard change-of-measure ideas, and indicate that the most likely way that regret becomes larger than expected is when the optimal arm returns below-average rewards in the first few arm plays, thereby causing the algorithm to believe that the arm is sub-optimal. To alleviate the fragility issues exposed, we show that UCB algorithms can be modified so as to ensure a desired degree of robustness to mis-specification. In doing so, we also provide a sharp trade-off between the amount of UCB exploration and the tail exponent of the resulting regret distribution. "
+}

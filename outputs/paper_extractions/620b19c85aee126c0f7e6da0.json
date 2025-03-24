@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning with Hyperbolic Space",
+    "Graph Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Random Laplacian Features",
+    "Mapping from Hyperbolic to Euclidean Space",
+    "Isometry-Invariant Kernel Approximation"
+  ],
+  "results": [
+    "Significant improvements in efficiency and performance over other hyperbolic baselines in both transductive and inductive tasks"
+  ],
+  "paper_id": "620b19c85aee126c0f7e6da0",
+  "title": "Random Laplacian Features for Learning with Hyperbolic Space",
+  "abstract": "  Due to its geometric properties, hyperbolic space can support high-fidelity embeddings of tree- and graph-structured data, upon which various hyperbolic networks have been developed. Existing hyperbolic networks encode geometric priors not only for the input, but also at every layer of the network. This approach involves repeatedly mapping to and from hyperbolic space, which makes these networks complicated to implement, computationally expensive to scale, and numerically unstable to train. In this paper, we propose a simpler approach: learn a hyperbolic embedding of the input, then map once from it to Euclidean space using a mapping that encodes geometric priors by respecting the isometries of hyperbolic space, and finish with a standard Euclidean network. The key insight is to use a random feature mapping via the eigenfunctions of the Laplace operator, which we show can approximate any isometry-invariant kernel on hyperbolic space. Our method can be used together with any graph neural networks: using even a linear graph model yields significant improvements in both efficiency and performance over other hyperbolic baselines in both transductive and inductive tasks. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/pingyang1117/PRBNet_PyTorch"
+  ],
+  "tasks": [
+    "Single-shot object detection"
+  ],
+  "datasets": [
+    "UAVDT17",
+    "MS COCO"
+  ],
+  "methods": [
+    "Parallel Residual Bi-Fusion Feature Pyramid Network (PRB-FPN)",
+    "Parallel bifusion FP structure with bottom-up fusion module (BFM)",
+    "Concatenation and re-organization (CORE) module",
+    "CORE purification",
+    "Re-CORE module"
+  ],
+  "results": [
+    "State-of-the-art performance on UAVDT17 and MS COCO datasets"
+  ],
+  "paper_id": "5fca0bf791e011654d99e731",
+  "title": "Parallel Residual Bi-Fusion Feature Pyramid Network for Accurate\n  Single-Shot Object Detection",
+  "abstract": "  This paper proposes the Parallel Residual Bi-Fusion Feature Pyramid Network (PRB-FPN) for fast and accurate single-shot object detection. Feature Pyramid (FP) is widely used in recent visual detection, however the top-down pathway of FP cannot preserve accurate localization due to pooling shifting. The advantage of FP is weakened as deeper backbones with more layers are used. In addition, it cannot keep up accurate detection of both small and large objects at the same time. To address these issues, we propose a new parallel FP structure with bi-directional (top-down and bottom-up) fusion and associated improvements to retain high-quality features for accurate localization. We provide the following design improvements: (1) A parallel bifusion FP structure with a bottom-up fusion module (BFM) to detect both small and large objects at once with high accuracy. (2) A concatenation and re-organization (CORE) module provides a bottom-up pathway for feature fusion, which leads to the bi-directional fusion FP that can recover lost information from lower-layer feature maps. (3) The CORE feature is further purified to retain richer contextual information. Such CORE purification in both top-down and bottom-up pathways can be finished in only a few iterations. (4) The adding of a residual design to CORE leads to a new Re-CORE module that enables easy training and integration with a wide range of deeper or lighter backbones. The proposed network achieves state-of-the-art performance on the UAVDT17 and MS COCO datasets. Code is available at https://github.com/pingyang1117/PRBNet_PyTorch. "
+}

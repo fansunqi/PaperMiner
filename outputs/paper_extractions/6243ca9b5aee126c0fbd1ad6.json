@@ -1,0 +1,25 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Surgical Tools Segmentation"
+  ],
+  "datasets": [
+    "four public endoscopy surgical tool segmentation datasets",
+    "one cochlear implant surgery dataset"
+  ],
+  "methods": [
+    "Min-Max Similarity (MMS)",
+    "contrastive learning",
+    "dual-view training",
+    "all-negative and positive-negative feature pairs",
+    "pixel-wise contrastive loss"
+  ],
+  "results": [
+    "outperforms state-of-the-art semi-supervised and fully supervised segmentation algorithms",
+    "successfully recognize unknown surgical tools",
+    "inference speeds of about 40 fps"
+  ],
+  "paper_id": "6243ca9b5aee126c0fbd1ad6",
+  "title": "Min-Max Similarity: A Contrastive Semi-Supervised Deep Learning Network\n  for Surgical Tools Segmentation",
+  "abstract": "  A common problem with segmentation of medical images using neural networks is the difficulty to obtain a significant number of pixel-level annotated data for training. To address this issue, we proposed a semi-supervised segmentation network based on contrastive learning. In contrast to the previous state-of-the-art, we introduce Min-Max Similarity (MMS), a contrastive learning form of dual-view training by employing classifiers and projectors to build all-negative, and positive and negative feature pairs, respectively, to formulate the learning as solving a MMS problem. The all-negative pairs are used to supervise the networks learning from different views and to capture general features, and the consistency of unlabeled predictions is measured by pixel-wise contrastive loss between positive and negative pairs. To quantitatively and qualitatively evaluate our proposed method, we test it on four public endoscopy surgical tool segmentation datasets and one cochlear implant surgery dataset, which we manually annotated. Results indicate that our proposed method consistently outperforms state-of-the-art semi-supervised and fully supervised segmentation algorithms. And our semi-supervised segmentation algorithm can successfully recognize unknown surgical tools and provide good predictions. Also, our MMS approach could achieve inference speeds of about 40 frames per second (fps) and is suitable to deal with the real-time video segmentation. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Decision-making under uncertainty",
+    "Parallel exploration of decisions"
+  ],
+  "datasets": [
+    "Materials discovery",
+    "Biological sequence design"
+  ],
+  "methods": [
+    "Parallel contextual bandit algorithms",
+    "Linear bandit algorithms with diversity in action selection"
+  ],
+  "results": [
+    "Regret nearly identical to sequential counterparts",
+    "Utility demonstrated in practical settings"
+  ],
+  "paper_id": "60acc26a91e011a837673466",
+  "title": "Parallelizing Contextual Bandits",
+  "abstract": "  Standard approaches to decision-making under uncertainty focus on sequential exploration of the space of decisions. However, \\textit{simultaneously} proposing a batch of decisions, which leverages available resources for parallel experimentation, has the potential to rapidly accelerate exploration. We present a family of (parallel) contextual bandit algorithms applicable to problems with bounded eluder dimension whose regret is nearly identical to their perfectly sequential counterparts -- given access to the same total number of oracle queries -- up to a lower-order ``burn-in\" term. We further show these algorithms can be specialized to the class of linear reward functions where we introduce and analyze several new linear bandit algorithms which explicitly introduce diversity into their action selection. Finally, we also present an empirical evaluation of these parallel algorithms in several domains, including materials discovery and biological sequence design problems, to demonstrate the utility of parallelized bandits in practical settings. "
+}

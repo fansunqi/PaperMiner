@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Communication-efficient federated learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FedPara: Low-rank Hadamard product parameterization",
+    "pFedPara: Personalized FL with separated global and local parameters"
+  ],
+  "results": [
+    "3 to 10 times lower communication costs than original layers",
+    "pFedPara outperforms competing personalized FL methods with more than three times fewer parameters"
+  ],
+  "paper_id": "6119dee65244ab9dcb844e2b",
+  "title": "FedPara: Low-Rank Hadamard Product for Communication-Efficient Federated\n  Learning",
+  "abstract": "  In this work, we propose a communication-efficient parameterization, FedPara, for federated learning (FL) to overcome the burdens on frequent model uploads and downloads. Our method re-parameterizes weight parameters of layers using low-rank weights followed by the Hadamard product. Compared to the conventional low-rank parameterization, our FedPara method is not restricted to low-rank constraints, and thereby it has a far larger capacity. This property enables to achieve comparable performance while requiring 3 to 10 times lower communication costs than the model with the original layers, which is not achievable by the traditional low-rank methods. The efficiency of our method can be further improved by combining with other efficient FL optimizers. In addition, we extend our method to a personalized FL application, pFedPara, which separates parameters into global and local ones. We show that pFedPara outperforms competing personalized FL methods with more than three times fewer parameters. "
+}

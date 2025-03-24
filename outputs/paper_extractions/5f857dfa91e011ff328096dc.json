@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video enhancement",
+    "Video denoising",
+    "Super-resolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Diagnostic tool for instability",
+    "Spectral norm constraint",
+    "Stable rank constraint",
+    "Stable Rank Normalization for Convolutional layers (SRN-C)"
+  ],
+  "results": [
+    "SRN-C enforces stability without significant performance loss"
+  ],
+  "paper_id": "5f857dfa91e011ff328096dc",
+  "title": "Diagnosing and Preventing Instabilities in Recurrent Video Processing",
+  "abstract": "  Recurrent models are a popular choice for video enhancement tasks such as video denoising or super-resolution. In this work, we focus on their stability as dynamical systems and show that they tend to fail catastrophically at inference time on long video sequences. To address this issue, we (1) introduce a diagnostic tool which produces input sequences optimized to trigger instabilities and that can be interpreted as visualizations of temporal receptive fields, and (2) propose two approaches to enforce the stability of a model during training: constraining the spectral norm or constraining the stable rank of its convolutional layers. We then introduce Stable Rank Normalization for Convolutional layers (SRN-C), a new algorithm that enforces these constraints. Our experimental results suggest that SRN-C successfully enforces stability in recurrent video processing models without a significant performance loss. "
+}

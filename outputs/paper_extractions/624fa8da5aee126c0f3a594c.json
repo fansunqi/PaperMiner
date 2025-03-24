@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/douyimin/MDA_GAN"
+  ],
+  "tasks": [
+    "3-D Seismic Data Interpolation and Reconstruction"
+  ],
+  "datasets": [
+    "multiple publicly available data"
+  ],
+  "methods": [
+    "Multi-Dimensional Adversarial GAN (MDA GAN)",
+    "feature stitching module",
+    "Tanh cross entropy (TCE) loss"
+  ],
+  "results": [
+    "reasonable reconstructions for up to 95% of random discrete missing",
+    "100 traces of continuous missing",
+    "promising results in fault and salt body enriched surveys",
+    "better performance than other methods in both simple and complex cases"
+  ],
+  "paper_id": "624fa8da5aee126c0f3a594c",
+  "title": "MDA GAN: Adversarial-Learning-based 3-D Seismic Data Interpolation and\n  Reconstruction for Complex Missing",
+  "abstract": "  The interpolation and reconstruction of missing traces is a crucial step in seismic data processing, moreover it is also a highly ill-posed problem, especially for complex cases such as high-ratio random discrete missing, continuous missing and missing in fault-rich or salt body surveys. These complex cases are rarely mentioned in current works. To cope with complex missing cases, we propose Multi-Dimensional Adversarial GAN (MDA GAN), a novel 3-D GAN framework. It keeps anisotropy and spatial continuity of the data after 3D complex missing reconstruction using three discriminators. The feature stitching module is designed and embedded in the generator to retain more information of the input data. The Tanh cross entropy (TCE) loss is derived, which provides the generator with the optimal reconstruction gradient to make the generated data smoother and continuous. We experimentally verified the effectiveness of the individual components of the study and then tested the method on multiple publicly available data. The method achieves reasonable reconstructions for up to 95% of random discrete missing and 100 traces of continuous missing. In fault and salt body enriched surveys, MDA GAN still yields promising results for complex cases. Experimentally it has been demonstrated that our method achieves better performance than other methods in both simple and complex cases.https://github.com/douyimin/MDA_GAN "
+}

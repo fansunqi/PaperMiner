@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Red blood cell segmentation",
+    "Overlapping cell separation",
+    "Classification on imbalanced dataset"
+  ],
+  "datasets": [
+    "20 blood smear images",
+    "20,875 individual RBC samples"
+  ],
+  "methods": [
+    "Ellipse estimation for RBC representation",
+    "Directed ellipse fitting",
+    "Weight balancing technique with augmentation",
+    "EfficientNet-B1"
+  ],
+  "results": [
+    "Segmentation accuracy: 0.889",
+    "Classification accuracy: 0.921",
+    "F1-score: 0.8679"
+  ],
+  "paper_id": "5fc88628dfae549b1c499ba6",
+  "title": "Red Blood Cell Segmentation with Overlapping Cell Separation and\n  Classification on Imbalanced Dataset",
+  "abstract": "  Automated red blood cell (RBC) classification on blood smear images helps hematologists to analyze RBC lab results in a reduced time and cost. However, overlapping cells can cause incorrect predicted results, and so they have to be separated into multiple single RBCs before classifying. To classify multiple classes with deep learning, imbalance problems are common in medical imaging because normal samples are always higher than rare disease samples. This paper presents a new method to segment and classify RBCs from blood smear images, specifically to tackle cell overlapping and data imbalance problems. Focusing on overlapping cell separation, our segmentation process first estimates ellipses to represent RBCs. The method detects the concave points and then finds the ellipses using directed ellipse fitting. The accuracy from 20 blood smear images was 0.889. Classification requires balanced training datasets. However, some RBC types are rare. The imbalance ratio of this dataset was 34.538 for 12 RBC classes from 20,875 individual RBC samples. The use of machine learning for RBC classification with an imbalanced dataset is hence more challenging than many other applications. We analyzed techniques to deal with this problem. The best accuracy and F1-score were 0.921 and 0.8679, respectively, using EfficientNet-B1 with augmentation. Experimental results showed that the weight balancing technique with augmentation had the potential to deal with imbalance problems by improving the F1-score on minority classes, while data augmentation significantly improved the overall classification performance. "
+}

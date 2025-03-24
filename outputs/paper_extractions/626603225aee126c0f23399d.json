@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robustness of Stochastic Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Derivation of sufficient condition for robustness against sample-based attacks",
+    "Theoretical analysis of factors influencing SNN robustness"
+  ],
+  "results": [
+    "Increased samples for adversarial example estimation increases attack strength",
+    "Increasing samples during attack cannot fully reduce stochasticity effect",
+    "Sample size during inference does not influence robustness",
+    "Higher gradient variance and shorter expected gradient value relate to higher robustness"
+  ],
+  "paper_id": "626603225aee126c0f23399d",
+  "title": "How Sampling Impacts the Robustness of Stochastic Neural Networks",
+  "abstract": "  Stochastic neural networks (SNNs) are random functions whose predictions are gained by averaging over multiple realizations. Consequently, a gradient-based adversarial example is calculated based on one set of samples and its classification on another set. In this paper, we derive a sufficient condition for such a stochastic prediction to be robust against a given sample-based attack. This allows us to identify the factors that lead to an increased robustness of SNNs and gives theoretical explanations for: (i) the well known observation, that increasing the amount of samples drawn for the estimation of adversarial examples increases the attack's strength, (ii) why increasing the number of samples during an attack can not fully reduce the effect of stochasticity, (iii) why the sample size during inference does not influence the robustness, and (iv) why a higher gradient variance and a shorter expected value of the gradient relates to a higher robustness. Our theoretical findings give a unified view on the mechanisms underlying previously proposed approaches for increasing attack strengths or model robustness and are verified by an extensive empirical analysis. "
+}

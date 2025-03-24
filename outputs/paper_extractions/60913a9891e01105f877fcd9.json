@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generating Extended Resolution Proofs",
+    "Boolean satisfiability (SAT) solving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "BDD-Based SAT Solver",
+    "Arbitrary existential quantification of formula variables"
+  ],
+  "results": [
+    "Scaling for parity formulas",
+    "Performance on Urquhart, mutilated chessboard, and pigeonhole problems beyond other proof-generating SAT solvers"
+  ],
+  "paper_id": "60913a9891e01105f877fcd9",
+  "title": "Generating Extended Resolution Proofs with a BDD-Based SAT Solver",
+  "abstract": "  In 2006, Biere, Jussila, and Sinz made the key observation that the underlying logic behind algorithms for constructing Reduced, Ordered Binary Decision Diagrams (BDDs) can be encoded as steps in a proof in the extended resolution logical framework. Through this, a BDD-based Boolean satisfiability (SAT) solver can generate a checkable proof of unsatisfiability for a set of clauses. Such a proof indicates that the formula is truly unsatisfiable without requiring the user to trust the BDD package or the SAT solver built on top of it.   We extend their work to enable arbitrary existential quantification of the formula variables, a critical capability for BDD-based SAT solvers. We demonstrate the utility of this approach by applying a BDD-based solver, implemented by modifying an existing BDD package, to several challenging Boolean satisfiability problems. Our resultsdemonstrate scaling for parity formulas, as well as the Urquhart, mutilated chessboard, and pigeonhole problems far beyond that of other proof-generating SAT solvers. "
+}

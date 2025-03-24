@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantifying robustness of machine learning models",
+    "Finding robustness of individual predictions"
+  ],
+  "datasets": [
+    "Iris",
+    "Ionosphere"
+  ],
+  "methods": [
+    "Flexible approach modeling perturbations",
+    "Probabilistic approach computing likelihood of prediction change",
+    "Monte-Carlo sampling"
+  ],
+  "results": [
+    "Method provides quantitative information on robustness of individual predictions",
+    "Illustrated on Iris, Ionosphere datasets, airport fog prediction, and analytically solvable cases"
+  ],
+  "paper_id": "62620f1c5aee126c0f686d28",
+  "title": "Testing robustness of predictions of trained classifiers against\n  naturally occurring perturbations",
+  "abstract": "  Correctly quantifying the robustness of machine learning models is a central aspect in judging their suitability for specific tasks, and ultimately, for generating trust in them. We address the problem of finding the robustness of individual predictions. We show both theoretically and with empirical examples that a method based on counterfactuals that was previously proposed for this is insufficient, as it is not a valid metric for determining the robustness against perturbations that occur ``naturally'', outside specific adversarial attack scenarios. We propose a flexible approach that models possible perturbations in input data individually for each application. This is then combined with a probabilistic approach that computes the likelihood that a ``real-world'' perturbation will change a prediction, thus giving quantitative information of the robustness of individual predictions of the trained machine learning model. The method does not require access to the internals of the classifier and thus in principle works for any black-box model. It is, however, based on Monte-Carlo sampling and thus only suited for input spaces with small dimensions. We illustrate our approach on the Iris and the Ionosphere datasets, on an application predicting fog at an airport, and on analytically solvable cases. "
+}

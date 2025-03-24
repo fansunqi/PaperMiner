@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Custom voice synthesis"
+  ],
+  "datasets": [
+    "AISHELL3",
+    "CSMSC",
+    "VXI-children"
+  ],
+  "methods": [
+    "AdaVocoder",
+    "cross-domain consistency loss",
+    "AdaMelGAN",
+    "AdaHiFi-GAN"
+  ],
+  "results": [
+    "high-quality custom voice system by combining adaptive acoustic model with adaptive vocoder"
+  ],
+  "paper_id": "6237ecc35aee126c0f3bf05a",
+  "title": "AdaVocoder: Adaptive Vocoder for Custom Voice",
+  "abstract": "  Custom voice is to construct a personal speech synthesis system by adapting the source speech synthesis model to the target model through the target few recordings. The solution to constructing a custom voice is to combine an adaptive acoustic model with a robust vocoder. However, training a robust vocoder usually requires a multi-speaker dataset, which should include various age groups and various timbres, so that the trained vocoder can be used for unseen speakers. Collecting such a multi-speaker dataset is difficult, and the dataset distribution always has a mismatch with the distribution of the target speaker dataset. This paper proposes an adaptive vocoder for custom voice from another novel perspective to solve the above problems. The adaptive vocoder mainly uses a cross-domain consistency loss to solve the overfitting problem encountered by the GAN-based neural vocoder in the transfer learning of few-shot scenes. We construct two adaptive vocoders, AdaMelGAN and AdaHiFi-GAN. First, We pre-train the source vocoder model on AISHELL3 and CSMSC datasets, respectively. Then, fine-tune it on the internal dataset VXI-children with few adaptation data. The empirical results show that a high-quality custom voice system can be built by combining a adaptive acoustic model with a adaptive vocoder. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/chenbong/PSS-Net"
+  ],
+  "tasks": [
+    "Resource-Adaptive Supernet Training"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "Prioritized Subnet Sampling",
+    "Maintaining multiple subnet pools",
+    "Sampling subnets based on resource constraints",
+    "Assigning higher priority to high-performance subnets"
+  ],
+  "results": [
+    "PSS-Net outperforms state-of-the-art resource-adaptive supernets"
+  ],
+  "paper_id": "614012c05244ab9dcb8164d2",
+  "title": "Prioritized Subnet Sampling for Resource-Adaptive Supernet Training",
+  "abstract": "  A resource-adaptive supernet adjusts its subnets for inference to fit the dynamically available resources. In this paper, we propose prioritized subnet sampling to train a resource-adaptive supernet, termed PSS-Net. We maintain multiple subnet pools, each of which stores the information of substantial subnets with similar resource consumption. Considering a resource constraint, subnets conditioned on this resource constraint are sampled from a pre-defined subnet structure space and high-quality ones will be inserted into the corresponding subnet pool. Then, the sampling will gradually be prone to sampling subnets from the subnet pools. Moreover, the one with a better performance metric is assigned with higher priority to train our PSS-Net, if sampling is from a subnet pool. At the end of training, our PSS-Net retains the best subnet in each pool to entitle a fast switch of high-quality subnets for inference when the available resources vary. Experiments on ImageNet using MobileNet-V1/V2 and ResNet-50 show that our PSS-Net can well outperform state-of-the-art resource-adaptive supernets. Our project is publicly available at https://github.com/chenbong/PSS-Net. "
+}

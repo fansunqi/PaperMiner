@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Enumerating connected induced subgraphs of a given order k"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "New neighborhood operator for reverse search algorithms",
+    "Three algorithms with improved delay bounds"
+  ],
+  "results": [
+    "Delay of O(k\u00b7min{(n-k),k\u0394}\u00b7(klog\u0394+logn))",
+    "Delay of O(k\u00b7min{(n-k),k\u0394}\u00b7n)",
+    "Delay of O(k^2\u00b7min{(n-k),k\u0394}\u00b7min{k,\u0394})",
+    "Improves upon current best delay bound O(k^2\u0394) for k > specific conditions"
+  ],
+  "paper_id": "61b95d115244ab9dcbf12f35",
+  "title": "Algorithms with improved delay for enumerating connected induced\n  subgraphs of a large cardinality",
+  "abstract": "  The problem of enumerating all connected induced subgraphs of a given order $k$ from a given graph arises in many practical applications: bioinformatics, information retrieval, processor design,to name a few. The upper bound on the number of connected induced subgraphs of order $k$ is $n\\cdot\\frac{(e\\Delta)^{k}}{(\\Delta-1)k}$, where $\\Delta$ is the maximum degree in the input graph $G$ and $n$ is the number of vertices in $G$. In this short communication, we first introduce a new neighborhood operator that is the key to design reverse search algorithms for enumerating all connected induced subgraphs of order $k$. Based on the proposed neighborhood operator, three algorithms with delay of $O(k\\cdot min\\{(n-k),k\\Delta\\}\\cdot(k\\log{\\Delta}+\\log{n}))$, $O(k\\cdot min\\{(n-k),k\\Delta\\}\\cdot n)$ and $O(k^2\\cdot min\\{(n-k),k\\Delta\\}\\cdot min\\{k,\\Delta\\})$ respectively are proposed. The first two algorithms require exponential space to improve upon the current best delay bound $O(k^2\\Delta)$\\cite{4} for this problem in the case $k>\\frac{n\\log{\\Delta}-\\log{n}-\\Delta+\\sqrt{n\\log{n}\\log{\\Delta}}}{\\log{\\Delta}}$ and $k>\\frac{n^2}{n+\\Delta}$ respectively. "
+}

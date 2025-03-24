@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Language model pre-training",
+    "Self-training in pre-training and fine-tuning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Learning framework using unlabelled data",
+    "Pseudo label prediction",
+    "Task-specific training on pseudo labels"
+  ],
+  "results": [
+    "Improvement by 3.6% with small labeled dataset",
+    "Improvement by 0.2% with large labeled dataset"
+  ],
+  "paper_id": "5fb63ef791e0116363c2c66a",
+  "title": "Predictions For Pre-training Language Models",
+  "abstract": "  Language model pre-training has proven to be useful in many language understanding tasks. In this paper, we investigate whether it is still helpful to add the self-training method in the pre-training step and the fine-tuning step. Towards this goal, we propose a learning framework that making best use of the unlabel data on the low-resource and high-resource labeled dataset. In industry NLP applications, we have large amounts of data produced by users or customers. Our learning framework is based on this large amounts of unlabel data. First, We use the model fine-tuned on manually labeled dataset to predict pseudo labels for the user-generated unlabeled data. Then we use the pseudo labels to supervise the task-specific training on the large amounts of user-generated data. We consider this task-specific training step on pseudo labels as a pre-training step for the next fine-tuning step. At last, we fine-tune on the manually labeled dataset upon the pre-trained model. In this work, we first empirically show that our method is able to solidly improve the performance by 3.6%, when the manually labeled fine-tuning dataset is relatively small. Then we also show that our method still is able to improve the performance further by 0.2%, when the manually labeled fine-tuning dataset is relatively large enough. We argue that our method make the best use of the unlabel data, which is superior to either pre-training or self-training alone. "
+}

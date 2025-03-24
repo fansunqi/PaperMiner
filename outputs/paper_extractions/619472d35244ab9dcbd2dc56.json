@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predictive analytics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FXAM (Fast and eXplainable Additive Model)",
+    "Three-Stage Iteration (TSI)"
+  ],
+  "results": [
+    "FXAM significantly outperforms existing GAMs in training speed and modeling categorical and temporal features",
+    "Superior inherent interpretability compared to XGBoost+SHAP"
+  ],
+  "paper_id": "619472d35244ab9dcbd2dc56",
+  "title": "A Unified and Fast Interpretable Model for Predictive Analytics",
+  "abstract": "  Predictive analytics aims to build machine learning models to predict behavior patterns and use predictions to guide decision-making. Predictive analytics is human involved, thus the machine learning model is preferred to be interpretable. In literature, Generalized Additive Model (GAM) is a standard for interpretability. However, due to the one-to-many and many-to-one phenomena which appear commonly in real-world scenarios, existing GAMs have limitations to serve predictive analytics in terms of both accuracy and training efficiency. In this paper, we propose FXAM (Fast and eXplainable Additive Model), a unified and fast interpretable model for predictive analytics. FXAM extends GAM's modeling capability with a unified additive model for numerical, categorical, and temporal features. FXAM conducts a novel training procedure called Three-Stage Iteration (TSI). TSI corresponds to learning over numerical, categorical, and temporal features respectively. Each stage learns a local optimum by fixing the parameters of other stages. We design joint learning over categorical features and partial learning over temporal features to achieve high accuracy and training efficiency. We prove that TSI is guaranteed to converge to the global optimum. We further propose a set of optimization techniques to speed up FXAM's training algorithm to meet the needs of interactive analysis. Thorough evaluations conducted on diverse data sets verify that FXAM significantly outperforms existing GAMs in terms of training speed, and modeling categorical and temporal features. In terms of interpretability, we compare FXAM with the typical post-hoc approach XGBoost+SHAP on two real-world scenarios, which shows the superiority of FXAM's inherent interpretability for predictive analytics. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Classification of corrupted data",
+    "Uncertainty quantification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semi-supervised autoencoder",
+    "Metric Gaussian Variational Inference (MGVI)",
+    "Convolution, masking, additive Gaussian noise"
+  ],
+  "results": [
+    "Model can classify strongly corrupted data and quantify uncertainty",
+    "Model uncertainty indicates classification correctness",
+    "Generative model can restore uncorrupted data"
+  ],
+  "paper_id": "60b57ca591e011f95a649596",
+  "title": "Classification and Uncertainty Quantification of Corrupted Data using\n  Semi-Supervised Autoencoders",
+  "abstract": "  Parametric and non-parametric classifiers often have to deal with real-world data, where corruptions like noise, occlusions, and blur are unavoidable - posing significant challenges. We present a probabilistic approach to classify strongly corrupted data and quantify uncertainty, despite the model only having been trained with uncorrupted data. A semi-supervised autoencoder trained on uncorrupted data is the underlying architecture. We use the decoding part as a generative model for realistic data and extend it by convolutions, masking, and additive Gaussian noise to describe imperfections. This constitutes a statistical inference task in terms of the optimal latent space activations of the underlying uncorrupted datum. We solve this problem approximately with Metric Gaussian Variational Inference (MGVI). The supervision of the autoencoder's latent space allows us to classify corrupted data directly under uncertainty with the statistically inferred latent space activations. Furthermore, we demonstrate that the model uncertainty strongly depends on whether the classification is correct or wrong, setting a basis for a statistical \"lie detector\" of the classification. Independent of that, we show that the generative model can optimally restore the uncorrupted datum by decoding the inferred latent space activations. "
+}

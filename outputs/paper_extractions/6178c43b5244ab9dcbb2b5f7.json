@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Developing reduced order models of developed turbulence"
+  ],
+  "datasets": [
+    "weakly compressible SPH",
+    "high fidelity set from Direct Numerical Simulations (DNS)"
+  ],
+  "methods": [
+    "Hierarchy of parameterized reduced Lagrangian models",
+    "Smoothed Particle Hydrodynamics (SPH)",
+    "Neural Network (NN) parameterizations",
+    "Automatic Differentiation (AD) and Sensitivity Analysis (SA)",
+    "Parameterized smoothing kernels"
+  ],
+  "results": [
+    "Encoding more SPH structure improves generalizability to different turbulent Mach numbers and time shifts",
+    "Including novel parameterized smoothing kernels improves SPH accuracy at resolved scales"
+  ],
+  "paper_id": "6178c43b5244ab9dcbb2b5f7",
+  "title": "Physics informed machine learning with smoothed particle hydrodynamics:\n  Hierarchy of reduced Lagrangian models of turbulence",
+  "abstract": "  Building efficient, accurate and generalizable reduced order models of developed turbulence remains a major challenge. This manuscript approaches this problem by developing a hierarchy of parameterized reduced Lagrangian models for turbulent flows, and investigates the effects of enforcing physical structure through Smoothed Particle Hydrodynamics (SPH) versus relying on neural networks (NN)s as universal function approximators. Starting from Neural Network (NN) parameterizations of a Lagrangian acceleration operator, this hierarchy of models gradually incorporates a weakly compressible and parameterized SPH framework, which enforces physical symmetries, such as Galilean, rotational and translational invariances. Within this hierarchy, two new parameterized smoothing kernels are developed in order to increase the flexibility of the learn-able SPH simulators. For each model we experiment with different loss functions which are minimized using gradient based optimization, where efficient computations of gradients are obtained by using Automatic Differentiation (AD) and Sensitivity Analysis (SA). Each model within the hierarchy is trained on two data sets associated with weekly compressible Homogeneous Isotropic Turbulence (HIT): (1) a validation set using weakly compressible SPH; and (2) a high fidelity set from Direct Numerical Simulations (DNS). Numerical evidence shows that encoding more SPH structure improves generalizability to different turbulent Mach numbers and time shifts, and that including the novel parameterized smoothing kernels improves the accuracy of SPH at the resolved scales. "
+}

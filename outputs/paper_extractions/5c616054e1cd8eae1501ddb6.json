@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving SGD convergence"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Online linear regression of gradients",
+    "PCA of recent noisy gradients",
+    "Online eigendecomposition with QR method",
+    "Simultaneous gradient descent outside modeled subspace"
+  ],
+  "results": [
+    "Maintains SFN advantages with inexpensive methods",
+    "Optimally estimates second order behavior from noisy gradients",
+    "Gradually replaces old directions with recent statistically relevant ones"
+  ],
+  "paper_id": "5c616054e1cd8eae1501ddb6",
+  "title": "Improving SGD convergence by online linear regression of gradients in\n  multiple statistically relevant directions",
+  "abstract": "  Deep neural networks are usually trained with stochastic gradient descent (SGD), which minimizes objective function using very rough approximations of gradient, only averaging to the real gradient. Standard approaches like momentum or ADAM only consider a single direction, and do not try to model distance from extremum - neglecting valuable information from calculated sequence of gradients, often stagnating in some suboptimal plateau. Second order methods could exploit these missed opportunities, however, beside suffering from very large cost and numerical instabilities, many of them attract to suboptimal points like saddles due to negligence of signs of curvatures (as eigenvalues of Hessian).   Saddle-free Newton method is a rare example of addressing this issue - changes saddle attraction into repulsion, and was shown to provide essential improvement for final value this way. However, it neglects noise while modelling second order behavior, focuses on Krylov subspace for numerical reasons, and requires costly eigendecomposion.   Maintaining SFN advantages, there are proposed inexpensive ways for exploiting these opportunities. Second order behavior is linear dependence of first derivative - we can optimally estimate it from sequence of noisy gradients with least square linear regression, in online setting here: with weakening weights of old gradients. Statistically relevant subspace is suggested by PCA of recent noisy gradients - in online setting it can be made by slowly rotating considered directions toward new gradients, gradually replacing old directions with recent statistically relevant. Eigendecomposition can be also performed online: with regularly performed step of QR method to maintain diagonal Hessian. Outside the second order modeled subspace we can simultaneously perform gradient descent. "
+}

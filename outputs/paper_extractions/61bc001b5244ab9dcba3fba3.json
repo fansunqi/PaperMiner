@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Advancing Spiking Neural Networks",
+    "Deep Residual Learning"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "MS-ResNet",
+    "Membrane-based shortcut pathways",
+    "Block dynamical isometry theory"
+  ],
+  "results": [
+    "MS-ResNet104 achieves 76.02% accuracy on ImageNet",
+    "Up to 482 layers on CIFAR-10 without degradation",
+    "Up to 104 layers on ImageNet without degradation",
+    "Average of only one spike per neuron for classification"
+  ],
+  "paper_id": "61bc001b5244ab9dcba3fba3",
+  "title": "Advancing Spiking Neural Networks towards Deep Residual Learning",
+  "abstract": "  Despite the rapid progress of neuromorphic computing, inadequate capacity and insufficient representation power of spiking neural networks (SNNs) severely restrict their application scope in practice. Residual learning and shortcuts have been evidenced as an important approach for training deep neural networks, but rarely did previous work assess their applicability to the characteristics of spike-based communication and spatiotemporal dynamics. In this paper, we first identify that this negligence leads to impeded information flow and the accompanying degradation problem in previous residual SNNs. To address this issue, we propose a novel SNN-oriented residual architecture termed MS-ResNet, which establishes membrane-based shortcut pathways, and further prove that the gradient norm equality can be achieved in MS-ResNet by introducing block dynamical isometry theory, which ensures the network can be well-behaved in a depth-insensitive way. Thus we are able to significantly extend the depth of directly trained SNNs, e.g., up to 482 layers on CIFAR-10 and 104 layers on ImageNet, without observing any slight degradation problem. To validate the effectiveness of MS-ResNet, experiments on both frame-based and neuromorphic datasets are conducted. MS-ResNet104 achieves a superior result of 76.02% accuracy on ImageNet, which is the highest to our best knowledge in the domain of directly trained SNNs. Great energy efficiency is also observed, with an average of only one spike per neuron needed to classify an input sample. We believe our powerful and scalable models will provide a strong support for further exploration of SNNs. "
+}

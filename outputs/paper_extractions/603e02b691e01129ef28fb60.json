@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantile regression"
+  ],
+  "datasets": [
+    "34 data sets from two different benchmark repositories"
+  ],
+  "methods": [
+    "Flexible Model Aggregation",
+    "Weighted ensembles with varying weights over models, quantile levels, and feature values",
+    "Monotonically ordered quantiles",
+    "Conformal calibration methods"
+  ],
+  "results": [
+    "Improved accuracy and robustness of predicted quantiles",
+    "Post sorting or post isotonic regression can only improve the weighted interval score"
+  ],
+  "paper_id": "603e02b691e01129ef28fb60",
+  "title": "Flexible Model Aggregation for Quantile Regression",
+  "abstract": "  Quantile regression is a fundamental problem in statistical learning motivated by a need to quantify uncertainty in predictions, or to model a diverse population without being overly reductive. For instance, epidemiological forecasts, cost estimates, and revenue predictions all benefit from being able to quantify the range of possible values accurately. As such, many models have been developed for this problem over many years of research in statistics, machine learning, and related fields. Rather than proposing yet another (new) algorithm for quantile regression we adopt a meta viewpoint: we investigate methods for aggregating any number of conditional quantile models, in order to improve accuracy and robustness. We consider weighted ensembles where weights may vary over not only individual models, but also over quantile levels, and feature values. All of the models we consider in this paper can be fit using modern deep learning toolkits, and hence are widely accessible (from an implementation point of view) and scalable. To improve the accuracy of the predicted quantiles (or equivalently, prediction intervals), we develop tools for ensuring that quantiles remain monotonically ordered, and apply conformal calibration methods. These can be used without any modification of the original library of base models. We also review some basic theory surrounding quantile aggregation and related scoring rules, and contribute a few new results to this literature (for example, the fact that post sorting or post isotonic regression can only improve the weighted interval score). Finally, we provide an extensive suite of empirical comparisons across 34 data sets from two different benchmark repositories. "
+}

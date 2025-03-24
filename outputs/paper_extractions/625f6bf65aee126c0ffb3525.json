@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/IVIPLab/CTCNet"
+  ],
+  "tasks": [
+    "Face Image Super-Resolution"
+  ],
+  "datasets": [
+    "various datasets"
+  ],
+  "methods": [
+    "CNN-Transformer Cooperation Network (CTCNet)",
+    "Local-Global Feature Cooperation Module (LGCM)",
+    "Facial Structure Attention Unit (FSAU)",
+    "Transformer block",
+    "Feature Refinement Module (FRM)",
+    "Multi-scale Feature Fusion Unit (MFFU)"
+  ],
+  "results": [
+    "CTCNet outperforms other state-of-the-art methods significantly"
+  ],
+  "paper_id": "625f6bf65aee126c0ffb3525",
+  "title": "CTCNet: A CNN-Transformer Cooperation Network for Face Image\n  Super-Resolution",
+  "abstract": "  Recently, deep convolution neural networks (CNNs) steered face super-resolution methods have achieved great progress in restoring degraded facial details by jointly training with facial priors. However, these methods have some obvious limitations. On the one hand, multi-task joint learning requires additional marking on the dataset, and the introduced prior network will significantly increase the computational cost of the model. On the other hand, the limited receptive field of CNN will reduce the fidelity and naturalness of the reconstructed facial images, resulting in suboptimal reconstructed images. In this work, we propose an efficient CNN-Transformer Cooperation Network (CTCNet) for face super-resolution tasks, which uses the multi-scale connected encoder-decoder architecture as the backbone. Specifically, we first devise a novel Local-Global Feature Cooperation Module (LGCM), which is composed of a Facial Structure Attention Unit (FSAU) and a Transformer block, to promote the consistency of local facial detail and global facial structure restoration simultaneously. Then, we design an efficient Feature Refinement Module (FRM) to enhance the encoded features. Finally, to further improve the restoration of fine facial details, we present a Multi-scale Feature Fusion Unit (MFFU) to adaptively fuse the features from different stages in the encoder procedure. Extensive evaluations on various datasets have assessed that the proposed CTCNet can outperform other state-of-the-art methods significantly. Source code will be available at https://github.com/IVIPLab/CTCNet. "
+}

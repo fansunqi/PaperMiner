@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computationally intensive algorithms on edge devices"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "16-Cores Parallel Ultra-Low-Power Cluster",
+    "2b-to-32b Fully Flexible Bit-Precision",
+    "Vector Lockstep Execution Mode (VLEM)"
+  ],
+  "results": [
+    "38% power reduction with minimal performance overhead (<3%)",
+    "Peak performance of 58 GOPS",
+    "Peak efficiency of 1.15 TOPS/W"
+  ],
+  "paper_id": "61ee18e05244ab9dcb6a94bc",
+  "title": "Dustin: A 16-Cores Parallel Ultra-Low-Power Cluster with 2b-to-32b Fully\n  Flexible Bit-Precision and Vector Lockstep Execution Mode",
+  "abstract": "  Computationally intensive algorithms such as Deep Neural Networks (DNNs) are becoming killer applications for edge devices. Porting heavily data-parallel algorithms on resource-constrained and battery-powered devices poses several challenges related to memory footprint, computational throughput, and energy efficiency. Low-bitwidth and mixed-precision arithmetic have been proven to be valid strategies for tackling these problems. We present Dustin, a fully programmable compute cluster integrating 16 RISC-V cores capable of 2- to 32-bit arithmetic and all possible mixed-precision permutations. In addition to a conventional Multiple-Instruction Multiple-Data (MIMD) processing paradigm, Dustin introduces a Vector Lockstep Execution Mode (VLEM) to minimize power consumption in highly data-parallel kernels. In VLEM, a single leader core fetches instructions and broadcasts them to the 15 follower cores. Clock gating Instruction Fetch (IF) stages and private caches of the follower cores leads to 38\\% power reduction with minimal performance overhead (<3%). The cluster, implemented in 65 nm CMOS technology, achieves a peak performance of 58 GOPS and a peak efficiency of 1.15 TOPS/W. "
+}

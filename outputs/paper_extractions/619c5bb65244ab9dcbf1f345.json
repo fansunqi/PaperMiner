@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Patch Robustness Certification for Vision Transformers"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "PatchCensor",
+    "Exhaustive Testing with Mutated Attention Masks"
+  ],
+  "results": [
+    "High certified accuracy (67.1% on ImageNet for 2%-pixel adversarial patches)",
+    "Similar clean accuracy (81.8% on ImageNet)",
+    "Supports flexible configurations for different adversarial patch sizes (up to 25%)"
+  ],
+  "paper_id": "619c5bb65244ab9dcbf1f345",
+  "title": "PatchCensor: Patch Robustness Certification for Transformers via\n  Exhaustive Testing",
+  "abstract": "  Vision Transformer (ViT) is known to be highly nonlinear like other classical neural networks and could be easily fooled by both natural and adversarial patch perturbations. This limitation could pose a threat to the deployment of ViT in the real industrial environment, especially in safety-critical scenarios. In this work, we propose PatchCensor, aiming to certify the patch robustness of ViT by applying exhaustive testing. We try to provide a provable guarantee by considering the worst patch attack scenarios. Unlike empirical defenses against adversarial patches that may be adaptively breached, certified robust approaches can provide a certified accuracy against arbitrary attacks under certain conditions. However, existing robustness certifications are mostly based on robust training, which often requires substantial training efforts and the sacrifice of model performance on normal samples. To bridge the gap, PatchCensor seeks to improve the robustness of the whole system by detecting abnormal inputs instead of training a robust model and asking it to give reliable results for every input, which may inevitably compromise accuracy. Specifically, each input is tested by voting over multiple inferences with different mutated attention masks, where at least one inference is guaranteed to exclude the abnormal patch. This can be seen as complete-coverage testing, which could provide a statistical guarantee on inference at the test time. Our comprehensive evaluation demonstrates that PatchCensor is able to achieve high certified accuracy (e.g. 67.1% on ImageNet for 2%-pixel adversarial patches), significantly outperforming state-of-the-art techniques while achieving similar clean accuracy (81.8% on ImageNet). Meanwhile, our technique also supports flexible configurations to handle different adversarial patch sizes (up to 25%) by simply changing the masking strategy. "
+}

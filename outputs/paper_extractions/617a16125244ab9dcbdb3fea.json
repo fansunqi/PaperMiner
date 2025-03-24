@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Safe Reinforcement Learning"
+  ],
+  "datasets": [
+    "Lunar Lander",
+    "Frozen Lake"
+  ],
+  "methods": [
+    "Distributive Exploration Safety Training Algorithm (DESTA)",
+    "Two-player framework with Safety Agent and Task Agent"
+  ],
+  "results": [
+    "DESTA converges to stable points minimizing safety violations",
+    "Superior performance against leading RL methods in Lunar Lander and Frozen Lake"
+  ],
+  "paper_id": "617a16125244ab9dcbdb3fea",
+  "title": "DESTA: A Framework for Safe Reinforcement Learning with Markov Games of\n  Intervention",
+  "abstract": "  Reinforcement learning (RL) involves performing exploratory actions in an unknown system. This can place a learning agent in dangerous and potentially catastrophic system states. Current approaches for tackling safe learning in RL simultaneously trade-off safe exploration and task fulfillment. In this paper, we introduce a new generation of RL solvers that learn to minimise safety violations while maximising the task reward to the extent that can be tolerated by the safe policy. Our approach introduces a novel two-player framework for safe RL called Distributive Exploration Safety Training Algorithm (DESTA). The core of DESTA is a game between two adaptive agents: Safety Agent that is delegated the task of minimising safety violations and Task Agent whose goal is to maximise the environment reward. Specifically, Safety Agent can selectively take control of the system at any given point to prevent safety violations while Task Agent is free to execute its policy at any other states. This framework enables Safety Agent to learn to take actions at certain states that minimise future safety violations, both during training and testing time, while Task Agent performs actions that maximise the task performance everywhere else. Theoretically, we prove that DESTA converges to stable points enabling safety violations of pretrained policies to be minimised. Empirically, we show DESTA's ability to augment the safety of existing policies and secondly, construct safe RL policies when the Task Agent and Safety Agent are trained concurrently. We demonstrate DESTA's superior performance against leading RL methods in Lunar Lander and Frozen Lake from OpenAI gym. "
+}

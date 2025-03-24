@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Specifying composite behavior of reactive systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Petri Nets (PN) analysis",
+    "Behavioral Programming (BP) for modeling system behavior",
+    "Translation semantics and tool for converting BP models to PN and vice versa"
+  ],
+  "results": [
+    "PN leads to over-specification and incorrect models",
+    "BP avoids over-specification and allows dynamic model changes",
+    "BP maintains same mathematical properties as PN but lacks legacy tools",
+    "Quantitative and qualitative comparison of BP and PN"
+  ],
+  "paper_id": "62708f615aee126c0fa68f83",
+  "title": "What Petri Net Obliges Us to Say: Comparing Approaches for Behavior\n  Composition",
+  "abstract": "  We identify and demonstrate a weakness of Petri Nets (PN) in specifying composite behavior of reactive systems. Specifically, we show how, when specifying multiple requirements in one PN model, modelers are obliged to specify mechanisms for combining these requirements. This yields, in many cases, over-specification and incorrect models. We demonstrate how some execution paths are missed, and some are generated unintentionally. To support this claim, we analyze PN models from the literature, identify the combination mechanisms, and demonstrate their effect on the correctness of the model. To address this problem, we propose to model the system behavior using behavioral programming (BP), a software development and modeling paradigm designed for seamless integration of independent requirements. Specifically, we demonstrate how the semantics of BP, which define how to interweave scenarios into a single model, allow avoiding the over-specification. Additionally, while BP maintains the same mathematical properties as PN, it provides means for changing the model dynamically, thus increasing the agility of the specification. We compare BP and PN in quantitative and qualitative measures by analyzing the models, their generated execution paths, and the specification process. Finally, while BP is supported by tools that allow for applying formal methods and reasoning techniques to the model, it lacks the legacy of PN tools and algorithms. To address this issue, we propose semantics and a tool for translating BP models to PN and vice versa. "
+}

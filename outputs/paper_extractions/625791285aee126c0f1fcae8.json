@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sound Event Triage (SET)"
+  ],
+  "datasets": [
+    "URBAN-SED"
+  ],
+  "methods": [
+    "Class-weighted training for event detection with priority"
+  ],
+  "results": [
+    "Single target SET outperforms conventional SED by 8.70, 6.66, and 6.09 percentage points for 'air_conditioner', 'car_horn', and 'street_music'",
+    "Average score increase of 3.37 percentage points in intersection-based F-score compared to conventional SED and other models"
+  ],
+  "paper_id": "625791285aee126c0f1fcae8",
+  "title": "Sound Event Triage: Detecting Sound Events Considering Priority of\n  Classes",
+  "abstract": "  We propose a new task for sound event detection (SED): sound event triage (SET). The goal of SET is to detect an arbitrary number of high-priority event classes while allowing misdetections of low-priority event classes where the priority is given for each event class. In conventional methods of SED for targeting a specific sound event class, it is only possible to give priority to a single event class. Moreover, the level of priority is not adjustable, i.e, the conventional methods can use only types of target event class such as one-hot vector, as inputs. To flexibly control much information on the target event, the proposed SET exploits not only types of target sound but also the extent to which each target sound is detected with priority. To implement the detection of events with priority, we propose class-weighted training, in which loss functions and the network are stochastically weighted by the priority parameter of each class. As this is the first paper on SET, we particularly introduce an implementation of single target SET, which is a subtask of SET. Results of the experiments using the URBAN-SED dataset show that the proposed method of single target SET outperforms the conventional SED method by 8.70, 6.66, and 6.09 percentage points for ``air_conditioner,'' ``car_horn,'' and ``street_music,'' respectively, in terms of the intersection-based F-score. For the average score of classes, the proposed methods increase the intersection-based F-score by up to 3.37 percentage points compared with the conventional SED and other target-class-conditioned models. "
+}

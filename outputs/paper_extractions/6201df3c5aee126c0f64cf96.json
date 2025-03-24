@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Code Review Recommendations"
+  ],
+  "datasets": [
+    "332 Microsoft repositories (2.5 years of history)"
+  ],
+  "methods": [
+    "CORAL (socio-technical graph + graph convolutional neural network)"
+  ],
+  "results": [
+    "CORAL models manual reviewer selection well",
+    "Identifies relevant reviewers missed by traditional systems",
+    "Better performance on larger projects compared to classical systems"
+  ],
+  "paper_id": "6201df3c5aee126c0f64cf96",
+  "title": "Using Large-scale Heterogeneous Graph Representation Learning for Code\n  Review Recommendations at Microsoft",
+  "abstract": "  Code review is an integral part of any mature software development process, and identifying the best reviewer for a code change is a well-accepted problem within the software engineering community. Selecting a reviewer who lacks expertise and understanding can slow development or result in more defects. To date, most reviewer recommendation systems rely primarily on historical file change and review information; those who changed or reviewed a file in the past are the best positioned to review in the future. We posit that while these approaches are able to identify and suggest qualified reviewers, they may be blind to reviewers who have the needed expertise and have simply never interacted with the changed files before. Fortunately, at Microsoft, we have a wealth of work artifacts across many repositories that can yield valuable information about our developers. To address the aforementioned problem, we present CORAL, a novel approach to reviewer recommendation that leverages a socio-technical graph built from the rich set of entities (developers, repositories, files, pull requests (PRs), work items, etc.) and their relationships in modern source code management systems. We employ a graph convolutional neural network on this graph and train it on two and a half years of history on 332 repositories within Microsoft. We show that CORAL is able to model the manual history of reviewer selection remarkably well. Further, based on an extensive user study, we demonstrate that this approach identifies relevant and qualified reviewers who traditional reviewer recommenders miss, and that these developers desire to be included in the review process. Finally, we find that \"classical\" reviewer recommendation systems perform better on smaller (in terms of developers) software projects while CORAL excels on larger projects, suggesting that there is \"no one model to rule them all.\" "
+}

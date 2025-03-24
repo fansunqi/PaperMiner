@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training-free Neural Architecture Search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ZERo-cost Operation Sensitivity (ZEROS)",
+    "training free differentiable architecture search (FreeDARTS)",
+    "Neural Tangent Kernel (NTK) theory"
+  ],
+  "results": [
+    "FreeDARTS is a reliable and efficient baseline for neural architecture search",
+    "Connectivity score negatively correlated with generalization bound of DARTS supernet",
+    "Searched architectures by FreeDARTS are of comparable size"
+  ],
+  "paper_id": "60d4310591e0112ca5d189d9",
+  "title": "Connection Sensitivity Matters for Training-free DARTS: From\n  Architecture-Level Scoring to Operation-Level Sensitivity Analysis",
+  "abstract": "  The recently proposed training-free NAS methods abandon the training phase and design various zero-cost proxies as scores to identify excellent architectures, arousing extreme computational efficiency for neural architecture search. In this paper, we raise an interesting problem: can we properly measure the operation importance in DARTS through a training-free way, with avoiding the parameter-intensive bias? We investigate this question through the lens of edge connectivity, and provide an affirmative answer by defining a connectivity concept, ZERo-cost Operation Sensitivity (ZEROS), to score the importance of candidate operations in DARTS at initialization. By devising an iterative and data-agnostic manner in utilizing ZEROS for NAS, our novel trial leads to a framework called training free differentiable architecture search (FreeDARTS). Based on the theory of Neural Tangent Kernel (NTK), we show the proposed connectivity score provably negatively correlated with the generalization bound of DARTS supernet after convergence under gradient descent training. In addition, we theoretically explain how ZEROS implicitly avoids parameter-intensive bias in selecting architectures, and empirically show the searched architectures by FreeDARTS are of comparable size. Extensive experiments have been conducted on a series of search spaces, and results have demonstrated that FreeDARTS is a reliable and efficient baseline for neural architecture search. "
+}

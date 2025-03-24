@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous Forecasting"
+  ],
+  "datasets": [
+    "synthetic",
+    "real high-noise medical problems"
+  ],
+  "methods": [
+    "Neural Eigen-SDE (NESDE)",
+    "piecewise linear dynamics modeling",
+    "spectral representation"
+  ],
+  "results": [
+    "robust forecasting in high-noise medical problems",
+    "published simulated medical gym environments"
+  ],
+  "paper_id": "61f9f6455aee126c0f41edf6",
+  "title": "Continuous Forecasting via Neural Eigen Decomposition",
+  "abstract": "  Neural differential equations predict the derivative of a stochastic process. This allows irregular forecasting with arbitrary time-steps. However, the expressive temporal flexibility often comes with a high sensitivity to noise. In addition, current methods model measurements and control together, limiting generalization to different control policies. These properties severely limit applicability to medical treatment problems, which require reliable forecasting given high noise, limited data and changing treatment policies. We introduce the Neural Eigen-SDE algorithm (NESDE), which relies on piecewise linear dynamics modeling with spectral representation. NESDE provides control over the expressiveness level; decoupling of control from measurements; and closed-form continuous prediction in inference. NESDE is demonstrated to provide robust forecasting in both synthetic and real high-noise medical problems. Finally, we use the learned dynamics models to publish simulated medical gym environments. "
+}

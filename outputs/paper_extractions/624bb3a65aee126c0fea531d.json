@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adaptive merging for phase change memory"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "eAM (enhanced Adaptive Merging)",
+    "PAM (Phase Change Memory Adaptive Merging) with new PCM-optimized index"
+  ],
+  "results": [
+    "eAM outperforms traditional approach by 60%",
+    "PAM further improves performance by 20% for databases with interleaved search queries and data modifications"
+  ],
+  "paper_id": "624bb3a65aee126c0fea531d",
+  "title": "Adaptive Merging on Phase Change Memory",
+  "abstract": "  Indexing is a well-known database technique used to facilitate data access and speed up query processing. Nevertheless, the construction and modification of indexes are very expensive. In traditional approaches, all records in the database table are equally covered by the index. It is not effective, since some records may be queried very often and some never. To avoid this problem, adaptive merging has been introduced. The key idea is to create index adaptively and incrementally as a side-product of query processing. As a result, the database table is indexed partially depending on the query workload. This paper faces a problem of adaptive merging for phase change memory (PCM). The most important features of this memory type are: limited write endurance and high write latency. As a consequence, adaptive merging should be investigated from the scratch. We solve this problem in two steps. First, we apply several PCM optimization techniques to the traditional adaptive merging approach. We prove that the proposed method (eAM) outperforms a traditional approach by 60%. After that, we invent the framework for adaptive merging (PAM) and a new PCM-optimized index. It further improves the system performance by 20% for databases where search queries interleave with data modifications. "
+}

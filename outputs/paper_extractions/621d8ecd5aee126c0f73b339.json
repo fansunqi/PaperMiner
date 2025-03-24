@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/dyhBUPT/StrongSORT",
+    "https://github.com/open-mmlab/mmtracking"
+  ],
+  "tasks": [
+    "Multi-Object Tracking"
+  ],
+  "datasets": [
+    "MOT17",
+    "MOT20",
+    "DanceTrack",
+    "KITTI"
+  ],
+  "methods": [
+    "StrongSORT",
+    "Appearance-free link model (AFLink)",
+    "Gaussian-smoothed interpolation (GSI)"
+  ],
+  "results": [
+    "StrongSORT++ achieves state-of-the-art results on multiple public benchmarks",
+    "AFLink and GSI have negligible extra computational cost (1.7 ms and 7.1 ms per image, respectively, on MOT17)"
+  ],
+  "paper_id": "621d8ecd5aee126c0f73b339",
+  "title": "StrongSORT: Make DeepSORT Great Again",
+  "abstract": "  Recently, Multi-Object Tracking (MOT) has attracted rising attention, and accordingly, remarkable progresses have been achieved. However, the existing methods tend to use various basic models (e.g, detector and embedding model), and different training or inference tricks, etc. As a result, the construction of a good baseline for a fair comparison is essential. In this paper, a classic tracker, i.e., DeepSORT, is first revisited, and then is significantly improved from multiple perspectives such as object detection, feature embedding, and trajectory association. The proposed tracker, named StrongSORT, contributes a strong and fair baseline for the MOT community. Moreover, two lightweight and plug-and-play algorithms are proposed to address two inherent \"missing\" problems of MOT: missing association and missing detection. Specifically, unlike most methods, which associate short tracklets into complete trajectories at high computation complexity, we propose an appearance-free link model (AFLink) to perform global association without appearance information, and achieve a good balance between speed and accuracy. Furthermore, we propose a Gaussian-smoothed interpolation (GSI) based on Gaussian process regression to relieve the missing detection. AFLink and GSI can be easily plugged into various trackers with a negligible extra computational cost (1.7 ms and 7.1 ms per image, respectively, on MOT17). Finally, by fusing StrongSORT with AFLink and GSI, the final tracker (StrongSORT++) achieves state-of-the-art results on multiple public benchmarks, i.e., MOT17, MOT20, DanceTrack and KITTI. Codes are available at https://github.com/dyhBUPT/StrongSORT and https://github.com/open-mmlab/mmtracking. "
+}

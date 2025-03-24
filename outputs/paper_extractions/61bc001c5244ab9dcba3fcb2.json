@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-supervised visual pre-training"
+  ],
+  "datasets": [
+    "Kinetics-400",
+    "Kinetics-600",
+    "Kinetics-700",
+    "AVA",
+    "SSv2",
+    "ImageNet"
+  ],
+  "methods": [
+    "Masked Feature Prediction",
+    "Histograms of Oriented Gradients (HOG)",
+    "local contrast normalization",
+    "Transformer-based models"
+  ],
+  "results": [
+    "86.7% with MViT-L on Kinetics-400",
+    "88.3% on Kinetics-600",
+    "80.4% on Kinetics-700",
+    "39.8 mAP on AVA",
+    "75.0% on SSv2",
+    "competitive results on ImageNet"
+  ],
+  "paper_id": "61bc001c5244ab9dcba3fcb2",
+  "title": "Masked Feature Prediction for Self-Supervised Visual Pre-Training",
+  "abstract": "  We present Masked Feature Prediction (MaskFeat) for self-supervised pre-training of video models. Our approach first randomly masks out a portion of the input sequence and then predicts the feature of the masked regions. We study five different types of features and find Histograms of Oriented Gradients (HOG), a hand-crafted feature descriptor, works particularly well in terms of both performance and efficiency. We observe that the local contrast normalization in HOG is essential for good results, which is in line with earlier work using HOG for visual recognition. Our approach can learn abundant visual knowledge and drive large-scale Transformer-based models. Without using extra model weights or supervision, MaskFeat pre-trained on unlabeled videos achieves unprecedented results of 86.7% with MViT-L on Kinetics-400, 88.3% on Kinetics-600, 80.4% on Kinetics-700, 39.8 mAP on AVA, and 75.0% on SSv2. MaskFeat further generalizes to image input, which can be interpreted as a video with a single frame and obtains competitive results on ImageNet. "
+}

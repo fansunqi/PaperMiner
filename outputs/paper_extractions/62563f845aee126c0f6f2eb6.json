@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/ivtmetrics"
+  ],
+  "tasks": [
+    "Surgical Action Triplet Benchmarking"
+  ],
+  "datasets": [
+    "CholecT50",
+    "CholecT45"
+  ],
+  "methods": [
+    "Standard data splits",
+    "ivtmetrics library for evaluation"
+  ],
+  "results": [
+    "Reproduced baseline methods in PyTorch and TensorFlow",
+    "Enabled global tracking of research progress",
+    "Facilitated optimal model selection"
+  ],
+  "paper_id": "62563f845aee126c0f6f2eb6",
+  "title": "Data Splits and Metrics for Method Benchmarking on Surgical Action\n  Triplet Datasets",
+  "abstract": "  In addition to generating data and annotations, devising sensible data splitting strategies and evaluation metrics is essential for the creation of a benchmark dataset. This practice ensures consensus on the usage of the data, homogeneous assessment, and uniform comparison of research methods on the dataset. This study focuses on CholecT50, which is a 50 video surgical dataset that formalizes surgical activities as triplets of <instrument, verb, target>. In this paper, we introduce the standard splits for the CholecT50 and CholecT45 datasets and show how they compare with existing use of the dataset. CholecT45 is the first public release of 45 videos of CholecT50 dataset. We also develop a metrics library, ivtmetrics, for model evaluation on surgical triplets. Furthermore, we conduct a benchmark study by reproducing baseline methods in the most predominantly used deep learning frameworks (PyTorch and TensorFlow) to evaluate them using the proposed data splits and metrics and release them publicly to support future research. The proposed data splits and evaluation metrics will enable global tracking of research progress on the dataset and facilitate optimal model selection for further deployment. "
+}

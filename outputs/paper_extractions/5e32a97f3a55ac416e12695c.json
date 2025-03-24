@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Screening and working set techniques for large-scale sparse learning"
+  ],
+  "datasets": [
+    "Simulation studies",
+    "Real data analysis"
+  ],
+  "methods": [
+    "Newton screening (NS)",
+    "Sequential Newton screening (SNS) with warm-start strategy"
+  ],
+  "results": [
+    "NS achieves one-step local convergence",
+    "SNS hits a solution with the same signs as the true target",
+    "SNS achieves a sharp estimation error bound with high probability",
+    "SNS is faster and more accurate than several state-of-the-art methods"
+  ],
+  "paper_id": "5e32a97f3a55ac416e12695c",
+  "title": "On Newton Screening",
+  "abstract": "  Screening and working set techniques are important approaches to reducing the size of an optimization problem. They have been widely used in accelerating first-order methods for solving large-scale sparse learning problems. In this paper, we develop a new screening method called Newton screening (NS) which is a generalized Newton method with a built-in screening mechanism. We derive an equivalent KKT system for the Lasso and utilize a generalized Newton method to solve the KKT equations. Based on this KKT system, a built-in working set with a relatively small size is first determined using the sum of primal and dual variables generated from the previous iteration, then the primal variable is updated by solving a least-squares problem on the working set and the dual variable updated based on a closed-form expression. Moreover, we consider a sequential version of Newton screening (SNS) with a warm-start strategy. We show that NS possesses an optimal convergence property in the sense that it achieves one-step local convergence. Under certain regularity conditions on the feature matrix, we show that SNS hits a solution with the same signs as the underlying true target and achieves a sharp estimation error bound with high probability. Simulation studies and real data analysis support our theoretical results and demonstrate that SNS is faster and more accurate than several state-of-the-art methods in our comparative studies. "
+}

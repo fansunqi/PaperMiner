@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Blockchain system vulnerability analysis"
+  ],
+  "datasets": [
+    "First blockchain vulnerability dataset (from Bitcoin, Ethereum, Monero, Stellar)"
+  ],
+  "methods": [
+    "Systematic filtering process",
+    "File-level vulnerable module categorization",
+    "Text-level vulnerability type clustering (NLP and similarity-based sentence clustering)",
+    "Code-level vulnerability pattern analysis (code change signatures clustering)"
+  ],
+  "results": [
+    "Identified 1,037 vulnerabilities and 2,317 patches",
+    "Some blockchain modules more susceptible (consensus, wallet, networking >200 issues)",
+    "70% traditional vulnerabilities, 4 new blockchain-specific types",
+    "21 blockchain-specific vulnerability patterns, applicable to other blockchains (Dogecoin, Bitcoin SV, Zcash)"
+  ],
+  "paper_id": "617771bd5244ab9dcbe7949b",
+  "title": "An Empirical Study of Blockchain System Vulnerabilities: Modules, Types,\n  and Patterns",
+  "abstract": "  Blockchain, as a distributed ledger technology, becomes increasingly popular, especially for enabling valuable cryptocurrencies and smart contracts. However, the blockchain software systems inevitably have many bugs. Although bugs in smart contracts have been extensively investigated, security bugs of the underlying blockchain systems are much less explored. In this paper, we conduct an empirical study on blockchain's system vulnerabilities from four representative blockchains, Bitcoin, Ethereum, Monero, and Stellar. Specifically, we first design a systematic filtering process to effectively identify 1,037 vulnerabilities and their 2,317 patches from 34,245 issues/PRs (pull requests) and 85,164 commits on GitHub. We thus build the first blockchain vulnerability dataset. We then perform unique analyses of this dataset at three levels, including (i) file-level vulnerable module categorization by identifying and correlating module paths across projects, (ii) text-level vulnerability type clustering by natural language processing and similarity-based sentence clustering, and (iii) code-level vulnerability pattern analysis by generating and clustering code change signatures that capture both syntactic and semantic information of patch code fragments. Our analyses reveal three key findings: (i) some blockchain modules are more susceptible than the others; notably, each of the modules related to consensus, wallet, and networking has over 200 issues; (ii) about 70% of blockchain vulnerabilities are of traditional types, but we also identify four new types specific to blockchains; and (iii) we obtain 21 blockchain-specific vulnerability patterns that capture unique blockchain attributes and statuses, and demonstrate that they can be used to detect similar vulnerabilities in other popular blockchains, such as Dogecoin, Bitcoin SV, and Zcash. "
+}

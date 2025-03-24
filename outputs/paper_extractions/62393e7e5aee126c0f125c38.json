@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Intersection Queries for Flat Semi-Algebraic Objects in Three Dimensions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Polynomial-partitioning technique",
+    "Real algebraic geometry tools",
+    "Data structures for intersection queries"
+  ],
+  "results": [
+    "Data structure using $O^*(n^{4/3})$ storage and $O^*(n^{2/3})$ query time for plates and algebraic arcs",
+    "Query time $O^*((n^t/s)^{2/3(t-1)})$ with storage $O^*(s)$ for parameter $s\\in [n^{4/3}, n^t]$"
+  ],
+  "paper_id": "62393e7e5aee126c0f125c38",
+  "title": "Intersection Queries for Flat Semi-Algebraic Objects in Three Dimensions\n  and Related Problems",
+  "abstract": "  Let $\\mathcal{T}$ be a set of $n$ flat (planar) semi-algebraic regions in $\\mathbb{R}^3$ of constant complexity (e.g., triangles, disks), which we call plates. We wish to preprocess $\\mathcal{T}$ into a data structure so that for a query object $\\gamma$, which is also a plate, we can quickly answer various intersection queries, such as detecting whether $\\gamma$ intersects any plate of $\\mathcal{T}$, reporting all the plates intersected by $\\gamma$, or counting them. We also consider two simpler cases of this general setting: (i) the input objects are plates and the query objects are constant-degree parametrized algebraic arcs in $\\mathbb{R}^3$ (arcs, for short), or (ii) the input objects are arcs and the query objects are plates in $\\mathbb{R}^3$. Besides being interesting in their own right, the data structures for these two special cases form the building blocks for handling the general case.   By combining the polynomial-partitioning technique with additional tools from real algebraic geometry, we present many different data structures for intersection queries, which also provide trade-offs between their size and query time. The performance of these data structures depends on the complexity of the input and query objects. For example, if $\\mathcal{T}$ is a set of plates and the query objects are algebraic arcs, we obtain a data structure that uses $O^*(n^{4/3})$ storage (where the $O^*(\\cdot)$ notation hides subpolynomial factors) and answers an arc-intersection query in $O^*(n^{2/3})$ time. Alternatively, for a parameter $s\\in [n^{4/3}, n^t]$ where $t\\ge 3$ is the number of real parameters needed to specify a query arc, the query time can be decreased to $O^*((n^t/s)^{\\tfrac{2}{3(t-1)}})$ by increasing the storage to $O^*(s)$. "
+}

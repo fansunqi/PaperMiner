@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Foveated image reconstruction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GAN-based foveated reconstruction",
+    "Psychophysical experiments",
+    "Training strategy focusing on human visual system sensitivity"
+  ],
+  "results": [
+    "Significant improvements in perceived image reconstruction quality",
+    "Better recovery of perceptually important image features compared to standard GAN-based training"
+  ],
+  "paper_id": "61120bdf5244ab9dcb10038b",
+  "title": "Learning GAN-based Foveated Reconstruction to Recover Perceptually\n  Important Image Features",
+  "abstract": "  A foveated image can be entirely reconstructed from a sparse set of samples distributed according to the retinal sensitivity of the human visual system, which rapidly decreases with increasing eccentricity. The use of Generative Adversarial Networks has recently been shown to be a promising solution for such a task, as they can successfully hallucinate missing image information. As in the case of other supervised learning approaches, the definition of the loss function and the training strategy heavily influence the quality of the output. In this work,we consider the problem of efficiently guiding the training of foveated reconstruction techniques such that they are more aware of the capabilities and limitations of the human visual system, and thus can reconstruct visually important image features. Our primary goal is to make the training procedure less sensitive to distortions that humans cannot detect and focus on penalizing perceptually important artifacts. Given the nature of GAN-based solutions, we focus on the sensitivity of human vision to hallucination in case of input samples with different densities. We propose psychophysical experiments, a dataset, and a procedure for training foveated image reconstruction. The proposed strategy renders the generator network flexible by penalizing only perceptually important deviations in the output. As a result, the method emphasized the recovery of perceptually important image features. We evaluated our strategy and compared it with alternative solutions by using a newly trained objective metric, a recent foveated video quality metric, and user experiments. Our evaluations revealed significant improvements in the perceived image reconstruction quality compared with the standard GAN-based training approach. "
+}

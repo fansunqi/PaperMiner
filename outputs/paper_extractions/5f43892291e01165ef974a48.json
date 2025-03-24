@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "http://www.cs.toronto.edu/~jungao/def-grid"
+  ],
+  "tasks": [
+    "semantic segmentation",
+    "object mask annotation",
+    "unsupervised image partitioning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deformable Grid (DefGrid)",
+    "learnable geometric downsampling"
+  ],
+  "results": [
+    "significantly improved results at the same grid resolution for semantic segmentation",
+    "more accurate results for object mask annotation over existing pixel-wise and curve-based approaches",
+    "superior performance for unsupervised image partitioning over existing approaches"
+  ],
+  "paper_id": "5f43892291e01165ef974a48",
+  "title": "Beyond Fixed Grid: Learning Geometric Image Representation with a\n  Deformable Grid",
+  "abstract": "  In modern computer vision, images are typically represented as a fixed uniform grid with some stride and processed via a deep convolutional neural network. We argue that deforming the grid to better align with the high-frequency image content is a more effective strategy. We introduce \\emph{Deformable Grid} DefGrid, a learnable neural network module that predicts location offsets of vertices of a 2-dimensional triangular grid, such that the edges of the deformed grid align with image boundaries. We showcase our DefGrid in a variety of use cases, i.e., by inserting it as a module at various levels of processing. We utilize DefGrid as an end-to-end \\emph{learnable geometric downsampling} layer that replaces standard pooling methods for reducing feature resolution when feeding images into a deep CNN. We show significantly improved results at the same grid resolution compared to using CNNs on uniform grids for the task of semantic segmentation. We also utilize DefGrid at the output layers for the task of object mask annotation, and show that reasoning about object boundaries on our predicted polygonal grid leads to more accurate results over existing pixel-wise and curve-based approaches. We finally showcase DefGrid as a standalone module for unsupervised image partitioning, showing superior performance over existing approaches. Project website: http://www.cs.toronto.edu/~jungao/def-grid "
+}

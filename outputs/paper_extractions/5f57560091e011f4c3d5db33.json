@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Synthesizing realistic calcium traces of neuronal populations"
+  ],
+  "datasets": [
+    "artificial data with known ground-truth",
+    "real calcium traces recorded from the primary visual cortex of behaving mice"
+  ],
+  "methods": [
+    "Generative Adversarial Network (GAN)",
+    "CalciumGAN based on WaveGAN architecture",
+    "training with Wasserstein distance"
+  ],
+  "results": [
+    "generated signals closely resemble the underlying data distribution",
+    "deconvolved spike trains match the statistics of the recorded data"
+  ],
+  "paper_id": "5f57560091e011f4c3d5db33",
+  "title": "Synthesising Realistic Calcium Traces of Neuronal Populations Using GAN",
+  "abstract": "  Calcium imaging has become a powerful and popular technique to monitor the activity of large populations of neurons in vivo. However, for ethical considerations and despite recent technical developments, recordings are still constrained to a limited number of trials and animals. This limits the amount of data available from individual experiments and hinders the development of analysis techniques and models for more realistic sizes of neuronal populations. The ability to artificially synthesize realistic neuronal calcium signals could greatly alleviate this problem by scaling up the number of trials. Here, we propose a Generative Adversarial Network (GAN) model to generate realistic calcium signals as seen in neuronal somata with calcium imaging. To this end, we propose CalciumGAN, a model based on the WaveGAN architecture and train it on calcium fluorescent signals with the Wasserstein distance. We test the model on artificial data with known ground-truth and show that the distribution of the generated signals closely resembles the underlying data distribution. Then, we train the model on real calcium traces recorded from the primary visual cortex of behaving mice and confirm that the deconvolved spike trains match the statistics of the recorded data. Together, these results demonstrate that our model can successfully generate realistic calcium traces, thereby providing the means to augment existing datasets of neuronal activity for enhanced data exploration and modelling. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/liuweijie19980216/DRL-for-FSOD"
+  ],
+  "tasks": [
+    "Few-Shot Object Detection"
+  ],
+  "datasets": [
+    "Pascal VOC",
+    "MS-COCO"
+  ],
+  "methods": [
+    "Dynamic Relevance Learning",
+    "Dynamic Graph Convolutional Network (GCN)"
+  ],
+  "results": [
+    "Achieves the best overall performance",
+    "Effectiveness in learning more generalized features"
+  ],
+  "paper_id": "610ca9e25244ab9dcb188498",
+  "title": "Dynamic Relevance Learning for Few-Shot Object Detection",
+  "abstract": "  Expensive bounding-box annotations have limited the development of object detection task. Thus, it is necessary to focus on more challenging task of few-shot object detection. It requires the detector to recognize objects of novel classes with only a few training samples. Nowadays, many existing popular methods adopting training way similar to meta-learning have achieved promising performance, such as Meta R-CNN series. However, support data is only used as the class attention to guide the detecting of query images each time. Their relevance to each other remains unexploited. Moreover, a lot of recent works treat the support data and query images as independent branch without considering the relationship between them. To address this issue, we propose a dynamic relevance learning model, which utilizes the relationship between all support images and Region of Interest (RoI) on the query images to construct a dynamic graph convolutional network (GCN). By adjusting the prediction distribution of the base detector using the output of this GCN, the proposed model serves as a hard auxiliary classification task, which guides the detector to improve the class representation implicitly. Comprehensive experiments have been conducted on Pascal VOC and MS-COCO dataset. The proposed model achieves the best overall performance, which shows its effectiveness of learning more generalized features. Our code is available at https://github.com/liuweijie19980216/DRL-for-FSOD. "
+}

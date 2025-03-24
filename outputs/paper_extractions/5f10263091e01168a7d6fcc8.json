@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Rigid registration between two point sets"
+  ],
+  "datasets": [
+    "Challenging datasets with noises and partial overlaps",
+    "Benchmark datasets"
+  ],
+  "methods": [
+    "Anderson acceleration approach for point-to-point ICP",
+    "Robust error metric based on Welsch's function",
+    "Anderson-accelerated MM strategy for point-to-plane ICP"
+  ],
+  "results": [
+    "Similar or better accuracy than Sparse ICP",
+    "At least an order of magnitude faster than Sparse ICP",
+    "Improved registration accuracy on benchmark datasets with competitive computational time"
+  ],
+  "paper_id": "5f10263091e01168a7d6fcc8",
+  "title": "Fast and Robust Iterative Closest Point",
+  "abstract": "  The Iterative Closest Point (ICP) algorithm and its variants are a fundamental technique for rigid registration between two point sets, with wide applications in different areas from robotics to 3D reconstruction. The main drawbacks for ICP are its slow convergence as well as its sensitivity to outliers, missing data, and partial overlaps. Recent work such as Sparse ICP achieves robustness via sparsity optimization at the cost of computational speed. In this paper, we propose a new method for robust registration with fast convergence. First, we show that the classical point-to-point ICP can be treated as a majorization-minimization (MM) algorithm, and propose an Anderson acceleration approach to speed up its convergence. In addition, we introduce a robust error metric based on the Welsch's function, which is minimized efficiently using the MM algorithm with Anderson acceleration. On challenging datasets with noises and partial overlaps, we achieve similar or better accuracy than Sparse ICP while being at least an order of magnitude faster. Finally, we extend the robust formulation to point-to-plane ICP, and solve the resulting problem using a similar Anderson-accelerated MM strategy. Our robust ICP methods improve the registration accuracy on benchmark datasets while being competitive in computational time. "
+}

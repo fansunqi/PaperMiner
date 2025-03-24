@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multivariate entropy estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reformulated differential entropy estimator for equiprobable histogram",
+    "k-d tree partitioning",
+    "Optimal rotational alignment to minimize bin volume variance"
+  ],
+  "results": [
+    "More accurate entropy estimates for correlated bivariate Gaussian distributions",
+    "Improved performance across varying sample sizes (99% CI)"
+  ],
+  "paper_id": "61b80b6d5244ab9dcbf48fe4",
+  "title": "Optimal Partitions for Nonparametric Multivariate Entropy Estimation",
+  "abstract": "  Efficient and accurate estimation of multivariate empirical probability distributions is fundamental to the calculation of information-theoretic measures such as mutual information and transfer entropy. Common techniques include variations on histogram estimation which, whilst computationally efficient, are often unable to precisely capture the probability density of samples with high correlation, kurtosis or fine substructure, especially when sample sizes are small. Adaptive partitions, which adjust heuristically to the sample, can reduce the bias imparted from the geometry of the histogram itself, but these have commonly focused on the location, scale and granularity of the partition, the effects of which are limited for highly correlated distributions. In this paper, I reformulate the differential entropy estimator for the special case of an equiprobable histogram, using a k-d tree to partition the sample space into bins of equal probability mass. By doing so, I expose an implicit rotational orientation parameter, which is conjectured to be suboptimally specified in the typical marginal alignment. I propose that the optimal orientation minimises the variance of the bin volumes, and demonstrate that improved entropy estimates can be obtained by rotationally aligning the partition to the sample distribution accordingly. Such optimal partitions are observed to be more accurate than existing techniques in estimating entropies of correlated bivariate Gaussian distributions with known theoretical values, across varying sample sizes (99% CI). "
+}

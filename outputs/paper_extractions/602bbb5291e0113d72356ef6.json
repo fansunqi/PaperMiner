@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Network Compression for Noisy Storage Devices"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Robust coding strategies for NN weight storage on analog devices",
+    "Joint optimization of model compression and memory resource allocation"
+  ],
+  "results": [
+    "Reduces memory footprint by up to one order of magnitude without significantly compromising model accuracy"
+  ],
+  "paper_id": "602bbb5291e0113d72356ef6",
+  "title": "Neural Network Compression for Noisy Storage Devices",
+  "abstract": "  Compression and efficient storage of neural network (NN) parameters is critical for applications that run on resource-constrained devices. Despite the significant progress in NN model compression, there has been considerably less investigation in the actual \\textit{physical} storage of NN parameters. Conventionally, model compression and physical storage are decoupled, as digital storage media with error-correcting codes (ECCs) provide robust error-free storage. However, this decoupled approach is inefficient as it ignores the overparameterization present in most NNs and forces the memory device to allocate the same amount of resources to every bit of information regardless of its importance. In this work, we investigate analog memory devices as an alternative to digital media -- one that naturally provides a way to add more protection for significant bits unlike its counterpart, but is noisy and may compromise the stored model's performance if used naively. We develop a variety of robust coding strategies for NN weight storage on analog devices, and propose an approach to jointly optimize model compression and memory resource allocation. We then demonstrate the efficacy of our approach on models trained on MNIST, CIFAR-10 and ImageNet datasets for existing compression techniques. Compared to conventional error-free digital storage, our method reduces the memory footprint by up to one order of magnitude, without significantly compromising the stored model's accuracy. "
+}

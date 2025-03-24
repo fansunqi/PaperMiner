@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Off-policy evaluation in reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Double Reinforcement Learning (DRL)",
+    "Efficient influence function"
+  ],
+  "results": [
+    "OPE feasible in time-invariant Markov decision processes",
+    "DRL estimator remains efficient and consistent with slow, nonparametric rates"
+  ],
+  "paper_id": "5d7b71583a55ac0647653a64",
+  "title": "Efficiently Breaking the Curse of Horizon in Off-Policy Evaluation with\n  Double Reinforcement Learning",
+  "abstract": "  Off-policy evaluation (OPE) in reinforcement learning is notoriously difficult in long- and infinite-horizon settings due to diminishing overlap between behavior and target policies. In this paper, we study the role of Markovian and time-invariant structure in efficient OPE. We first derive the efficiency bounds for OPE when one assumes each of these structures. This precisely characterizes the curse of horizon: in time-variant processes, OPE is only feasible in the near-on-policy setting, where behavior and target policies are sufficiently similar. But, in time-invariant Markov decision processes, our bounds show that truly-off-policy evaluation is feasible, even with only just one dependent trajectory, and provide the limits of how well we could hope to do. We develop a new estimator based on Double Reinforcement Learning (DRL) that leverages this structure for OPE using the efficient influence function we derive. Our DRL estimator simultaneously uses estimated stationary density ratios and $q$-functions and remains efficient when both are estimated at slow, nonparametric rates and remains consistent when either is estimated consistently. We investigate these properties and the performance benefits of leveraging the problem structure for more efficient OPE. "
+}

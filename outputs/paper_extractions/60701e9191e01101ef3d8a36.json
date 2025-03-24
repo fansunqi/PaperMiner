@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Petri net slicing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Maximal dynamic Petri net slicing algorithm",
+    "Minimal dynamic Petri net slicing algorithm",
+    "Formal proof of maximality and minimality",
+    "Empirical evaluation of five algorithms"
+  ],
+  "results": [
+    "First algorithm is proven maximal",
+    "Second algorithm is proven minimal",
+    "First algorithm can reproduce any computation contributing tokens",
+    "Second algorithm produces a more reduced subnet"
+  ],
+  "paper_id": "60701e9191e01101ef3d8a36",
+  "title": "Maximal and minimal dynamic Petri net slicing",
+  "abstract": "  Context: Petri net slicing is a technique to reduce the size of a Petri net to ease the analysis or understanding of the original Petri net. Objective: Presenting two new Petri net slicing algorithms to isolate those places and transitions of a Petri net (the slice) that may contribute tokens to one or more places given (the slicing criterion). Method: The two algorithms proposed are formalized. The maximality of the first algorithm and the minimality of the second algorithm are formally proven. Both algorithms together with three other state-of-the-art algorithms have been implemented and integrated into a single tool so that we have been able to carry out a fair empirical evaluation. Results: Besides the two new Petri net slicing algorithms, a public, free, and open-source implementation of five algorithms is reported. The results of an empirical evaluation of the new algorithms and the slices they produce are also presented. Conclusions: The first algorithm collects all places and transitions that may contribute tokens (in any computation) to the slicing criterion, while the second algorithm collects the places and transitions needed to fire the shortest transition sequence that contributes tokens to some place in the slicing criterion. Therefore, the net computed by the first algorithm can reproduce any computation that contributes tokens to any place of interest. In contrast, the second algorithm loses this possibility, but it often produces a much more reduced subnet (which still can reproduce some computations that contribute tokens to some places of interest). The first algorithm is proven maximal, and the second one is proven minimal. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/elicassion/StARformer"
+  ],
+  "tasks": [
+    "Visual Reinforcement Learning"
+  ],
+  "datasets": [
+    "image-based Atari",
+    "DeepMind Control Suite"
+  ],
+  "methods": [
+    "State-Action-Reward Transformer (StARformer)",
+    "StAR-representations",
+    "self-attention over image state patches, action, and reward tokens"
+  ],
+  "results": [
+    "outperforms state-of-the-art Transformer-based method on image-based Atari and DeepMind Control Suite",
+    "compliant with longer sequences of inputs"
+  ],
+  "paper_id": "61664e625244ab9dcb455912",
+  "title": "StARformer: Transformer with State-Action-Reward Representations for\n  Visual Reinforcement Learning",
+  "abstract": "  Reinforcement Learning (RL) can be considered as a sequence modeling task: given a sequence of past state-action-reward experiences, an agent predicts a sequence of next actions. In this work, we propose State-Action-Reward Transformer (StARformer) for visual RL, which explicitly models short-term state-action-reward representations (StAR-representations), essentially introducing a Markovian-like inductive bias to improve long-term modeling. Our approach first extracts StAR-representations by self-attending image state patches, action, and reward tokens within a short temporal window. These are then combined with pure image state representations -- extracted as convolutional features, to perform self-attention over the whole sequence. Our experiments show that StARformer outperforms the state-of-the-art Transformer-based method on image-based Atari and DeepMind Control Suite benchmarks, in both offline-RL and imitation learning settings. StARformer is also more compliant with longer sequences of inputs. Our code is available at https://github.com/elicassion/StARformer. "
+}

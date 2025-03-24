@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Asymmetric cryptosystem key transformation optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Simplified key transformation Ci = Ai * Wi^li (mod M)",
+    "New lever function li from {1, ..., n} to {-5, ..., 5}",
+    "Security and effectiveness analysis"
+  ],
+  "results": [
+    "The new lever function ensures sufficient indeterminacy and security.",
+    "It effectively neutralizes the power of W and its inverse.",
+    "Demonstrates resistance to continued fraction attacks and W-parameter intersection attacks."
+  ],
+  "paper_id": "612d9dd25244ab9dcbdfb2e2",
+  "title": "A New Lever Function with Adequate Indeterminacy",
+  "abstract": "  The key transform of the REESSE1+ asymmetrical cryptosystem is Ci = (Ai * W ^ l(i)) ^ d (% M) with l(i) in Omega = {5, 7, ..., 2n + 3} for i = 1, ..., n, where l(i) is called a lever function. In this paper, the authors give a simplified key transform Ci = Ai * W ^ l(i) (% M) with a new lever function l(i) from {1, ..., n} to Omega = {+/-5, +/-6, ..., +/-(n + 4)}, where \"+/-\" means the selection of the \"+\" or \"-\" sign. Discuss the necessity of the new l(i), namely that a simplified private key is insecure if the new l(i) is a constant but not one-to-one function. Further, expound the sufficiency of the new l(i) from four aspects: (1) indeterminacy of the new l(i), (2) insufficient conditions for neutralizing the powers of W and W ^-1 even if Omega = {5, 6, ..., n + 4}, (3) verification by examples, and (4) running times of continued fraction attack and W-parameter intersection attack which are the two most efficient algorithms of the probabilistic polytime attacks so far. Last, the authors detail the relation between a lever function and a random oracle. "
+}

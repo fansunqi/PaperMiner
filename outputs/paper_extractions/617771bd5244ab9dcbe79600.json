@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Off-Policy Evaluation in POMDPs under Sequential Ignorability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Partial history importance weighting"
+  ],
+  "results": [
+    "Consistently estimate stationary mean rewards",
+    "Error bound decays polynomially in number of observations",
+    "Rate of convergence is minimax given assumptions on mixing and overlap",
+    "Off-policy evaluation in POMDPs is harder than in MDPs but easier than model-free off-policy evaluation"
+  ],
+  "paper_id": "617771bd5244ab9dcbe79600",
+  "title": "Off-Policy Evaluation in Partially Observed Markov Decision Processes\n  under Sequential Ignorability",
+  "abstract": "  We consider off-policy evaluation of dynamic treatment rules under sequential ignorability, given an assumption that the underlying system can be modeled as a partially observed Markov decision process (POMDP). We propose an estimator, partial history importance weighting, and show that it can consistently estimate the stationary mean rewards of a target policy given long enough draws from the behavior policy. We provide an upper bound on its error that decays polynomially in the number of observations (i.e., the number of trajectories times their length), with an exponent that depends on the overlap of the target and behavior policies, and on the mixing time of the underlying system. Furthermore, we show that this rate of convergence is minimax given only our assumptions on mixing and overlap. Our results establish that off-policy evaluation in POMDPs is strictly harder than off-policy evaluation in (fully observed) Markov decision processes, but strictly easier than model-free off-policy evaluation. "
+}

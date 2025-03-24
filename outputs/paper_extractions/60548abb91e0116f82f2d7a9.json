@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding generalization in deep networks",
+    "Investigating low-rank simplicity bias"
+  ],
+  "datasets": [
+    "CIFAR",
+    "ImageNet"
+  ],
+  "methods": [
+    "Empirical observations",
+    "Low effective rank embedding analysis",
+    "Linear over-parameterization"
+  ],
+  "results": [
+    "Deeper networks find solutions with lower effective rank",
+    "Low-rank bias improves generalization on CIFAR and ImageNet",
+    "Simplicity bias exists at initialization and after training"
+  ],
+  "paper_id": "60548abb91e0116f82f2d7a9",
+  "title": "The Low-Rank Simplicity Bias in Deep Networks",
+  "abstract": "  Modern deep neural networks are highly over-parameterized compared to the data on which they are trained, yet they often generalize remarkably well. A flurry of recent work has asked: why do deep networks not overfit to their training data? In this work, we make a series of empirical observations that investigate and extend the hypothesis that deeper networks are inductively biased to find solutions with lower effective rank embeddings. We conjecture that this bias exists because the volume of functions that maps to low effective rank embedding increases with depth. We show empirically that our claim holds true on finite width linear and non-linear models on practical learning paradigms and show that on natural data, these are often the solutions that generalize well. We then show that the simplicity bias exists at both initialization and after training and is resilient to hyper-parameters and learning methods. We further demonstrate how linear over-parameterization of deep non-linear models can be used to induce low-rank bias, improving generalization performance on CIFAR and ImageNet without changing the modeling capacity. "
+}

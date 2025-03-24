@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Census Disclosure Avoidance"
+  ],
+  "datasets": [
+    "2020 Census"
+  ],
+  "methods": [
+    "Geographic Spines, Independent Noise Addition, Post-processing"
+  ],
+  "results": [
+    "Accuracy tradeoffs in geographic areas derived from internal spine units",
+    "Settings for 2020 Census production DAS runs"
+  ],
+  "paper_id": "62466dca5aee126c0f8b72f9",
+  "title": "Geographic Spines in the 2020 Census Disclosure Avoidance System",
+  "abstract": "  The 2020 Census Disclosure Avoidance System (DAS) is a formally private mechanism that first adds independent noise to cross tabulations for a set of pre-specified hierarchical geographic units, which is known as the geographic spine. After post-processing these noisy measurements, DAS outputs a formally private database with fields indicating location in the standard census geographic spine, which is defined by the United States as a whole, states, counties, census tracts, block groups, and census blocks. This paper describes how the geographic spine used internally within DAS to define the initial noisy measurements impacts accuracy of the output database. Specifically, tabulations for geographic areas tend to be most accurate for geographic areas that both 1) can be derived by aggregating together geographic units above the block geographic level of the internal spine, and 2) are closer to the geographic units of the internal spine. After describing the accuracy tradeoffs relevant to the choice of internal DAS geographic spine, we provide the settings used to define the 2020 Census production DAS runs. "
+}

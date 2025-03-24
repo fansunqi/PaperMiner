@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Pruning strategy for sparse networks"
+  ],
+  "datasets": [
+    "ImageNet",
+    "CIFAR10",
+    "MNIST"
+  ],
+  "methods": [
+    "Amenable Sparse Network Investigator (ASNI)",
+    "ASNI-I: learns sparse network in one round",
+    "ASNI-II: learns sparse network and quantized, compressed initialization"
+  ],
+  "results": [
+    "Quantized and compressed initialization allows trainable sparse network",
+    "Accuracy on par with dense version",
+    "2L levels of quantization are concentration points of parameters"
+  ],
+  "paper_id": "6213029a5aee126c0f42a7f5",
+  "title": "Amenable Sparse Network Investigator",
+  "abstract": "  We present \"Amenable Sparse Network Investigator\" (ASNI) algorithm that utilizes a novel pruning strategy based on a sigmoid function that induces sparsity level globally over the course of one single round of training. The ASNI algorithm fulfills both tasks that current state-of-the-art strategies can only do one of them. The ASNI algorithm has two subalgorithms: 1) ASNI-I, 2) ASNI-II. ASNI-I learns an accurate sparse off-the-shelf network only in one single round of training. ASNI-II learns a sparse network and an initialization that is quantized, compressed, and from which the sparse network is trainable. The learned initialization is quantized since only two numbers are learned for initialization of nonzero parameters in each layer L. Thus, quantization levels for the initialization of the entire network is 2L. Also, the learned initialization is compressed because it is a set consisting of 2L numbers. The special sparse network that can be trained from such a quantized and compressed initialization is called amenable. To the best of our knowledge, there is no other algorithm that can learn a quantized and compressed initialization from which the network is still trainable and is able to solve both pruning tasks. Our numerical experiments show that there is a quantized and compressed initialization from which the learned sparse network can be trained and reach to an accuracy on a par with the dense version. We experimentally show that these 2L levels of quantization are concentration points of parameters in each layer of the learned sparse network by ASNI-I. To corroborate the above, we have performed a series of experiments utilizing networks such as ResNets, VGG-style, small convolutional, and fully connected ones on ImageNet, CIFAR10, and MNIST datasets. "
+}

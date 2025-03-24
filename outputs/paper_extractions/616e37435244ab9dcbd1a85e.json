@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Making existing software quantum safe"
+  ],
+  "datasets": [
+    "IBM Db2"
+  ],
+  "methods": [
+    "7E roadmap",
+    "Upgrade cryptographic schemes to post-quantum (Kyber, Dilithium)"
+  ],
+  "results": [
+    "7E roadmap effectively plans evolution to quantum safety",
+    "Minor revisions needed based on IBM Db2 experience"
+  ],
+  "paper_id": "616e37435244ab9dcbd1a85e",
+  "title": "Making existing software quantum safe: a case study on IBM Db2",
+  "abstract": "  The software engineering community is facing challenges from quantum computers (QCs). In the era of quantum computing, Shor's algorithm running on QCs can break asymmetric encryption algorithms that classical computers practically cannot. Though the exact date when QCs will become \"dangerous\" for practical problems is unknown, the consensus is that this future is near. Thus, the software engineering community needs to start making software ready for quantum attacks and ensure quantum safety proactively.   We argue that the problem of evolving existing software to quantum-safe software is very similar to the Y2K bug. Thus, we leverage some best practices from the Y2K bug and propose our roadmap, called 7E, which gives developers a structured way to prepare for quantum attacks. It is intended to help developers start planning for the creation of new software and the evolution of cryptography in existing software.   In this paper, we use a case study to validate the viability of 7E. Our software under study is the IBM Db2 database system. We upgrade the current cryptographic schemes to post-quantum cryptographic ones (using Kyber and Dilithium schemes) and report our findings and lessons learned.   We show that the 7E roadmap effectively plans the evolution of existing software security features towards quantum safety, but it does require minor revisions. We incorporate our experience with IBM Db2 into the revised 7E roadmap.   The U.S. Department of Commerce's National Institute of Standards and Technology is finalizing the post-quantum cryptographic standard. The software engineering community needs to start getting prepared for the quantum advantage era. We hope that our experiential study with IBM Db2 and the 7E roadmap will help the community prepare existing software for quantum attacks in a structured manner. "
+}

@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Volumetric neural rendering",
+    "High-quality view synthesis",
+    "Scene geometry reconstruction"
+  ],
+  "datasets": [
+    "DTU",
+    "NeRF Synthetics",
+    "ScanNet",
+    "Tanks and Temples"
+  ],
+  "methods": [
+    "Point-NeRF",
+    "Neural 3D point clouds",
+    "Ray marching-based rendering",
+    "Pruning and growing mechanism"
+  ],
+  "results": [
+    "Surpasses existing methods",
+    "State-of-the-art results",
+    "30X faster training time than NeRF"
+  ],
+  "paper_id": "61ee18eb5244ab9dcb6a98cd",
+  "title": "Point-NeRF: Point-based Neural Radiance Fields",
+  "abstract": "  Volumetric neural rendering methods like NeRF generate high-quality view synthesis results but are optimized per-scene leading to prohibitive reconstruction time. On the other hand, deep multi-view stereo methods can quickly reconstruct scene geometry via direct network inference. Point-NeRF combines the advantages of these two approaches by using neural 3D point clouds, with associated neural features, to model a radiance field. Point-NeRF can be rendered efficiently by aggregating neural point features near scene surfaces, in a ray marching-based rendering pipeline. Moreover, Point-NeRF can be initialized via direct inference of a pre-trained deep network to produce a neural point cloud; this point cloud can be finetuned to surpass the visual quality of NeRF with 30X faster training time. Point-NeRF can be combined with other 3D reconstruction methods and handles the errors and outliers in such methods via a novel pruning and growing mechanism. The experiments on the DTU, the NeRF Synthetics , the ScanNet and the Tanks and Temples datasets demonstrate Point-NeRF can surpass the existing methods and achieve the state-of-the-art results. "
+}

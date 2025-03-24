@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Programming language extension",
+    "Non-deterministic control flow manipulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Disjunctive delimited control",
+    "Meta-interpreter for Prolog extension"
+  ],
+  "results": [
+    "Enables typical Prolog features and extensions at the library level",
+    "Conservatively extends Prolog with delimited control"
+  ],
+  "paper_id": "5f5cacdd91e0115b33151f83",
+  "title": "Disjunctive Delimited Control",
+  "abstract": "  Delimited control is a powerful mechanism for programming language extension which has been recently proposed for Prolog (and implemented in SWI-Prolog). By manipulating the control flow of a program from inside the language, it enables the implementation of powerful features, such as tabling, without modifying the internals of the Prolog engine. However, its current formulation is inadequate: it does not capture Prolog's unique non-deterministic nature which allows multiple ways to satisfy a goal. This paper fully embraces Prolog's non-determinism with a novel interface for disjunctive delimited control, which gives the programmer not only control over the sequential (conjunctive) control flow, but also over the non-deterministic control flow. We provide a meta-interpreter that conservatively extends Prolog with delimited control and show that it enables a range of typical Prolog features and extensions, now at the library level: findall, cut, branch-and-bound optimisation, probabilistic programming, . . .   This paper is under consideration for publication in Theory and Practice of Logic Programming (TPLP). "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Interactive web application optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Compiler-augmented virtual DOM",
+    "Compute batching",
+    "Scheduling",
+    "Reactive data primitives"
+  ],
+  "results": [
+    "133% to 300% faster rendering",
+    "2347% faster load",
+    "35.11% faster load after migrating from React"
+  ],
+  "paper_id": "620f0e735aee126c0fec46d1",
+  "title": "Million.js: A Fast Compiler-Augmented Virtual DOM for the Web",
+  "abstract": "  Interactive web applications created with declarative JavaScript User Interface (UI) libraries have increasingly dominated the modern internet. However, existing libraries are primarily made for run-time execution, and rely on the user to load and render web applications. This led us to create Million.js, a fast compiler-augmented virtual Document Object Model (DOM) for the web. Million.js reduces load time and time-to-interactive by creating a compiler to compute interactive regions of a web application before the user visits the page. The virtual DOM run-time optimizes interactive content through compiler flags, compute batching, scheduling, and reactive data primitives to achieve optimal performance. When benchmarked against the most popular virtual DOM libraries, Million.js resulted in 133% to 300% faster rendering and 2347\\% faster load. In a real-world web application with both comparative benchmarks and an informal user study, Million.js loaded 35.11% faster after migrating from React. The findings show that web applications have the potential to be orders of magnitude faster through JavaScript UI libraries that use Million.js. "
+}

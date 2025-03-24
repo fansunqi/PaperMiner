@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Reinforcement Learning in Edge Computing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated Ensemble Model-based Reinforcement Learning",
+    "Incorporates model-based RL and ensemble knowledge distillation into FL"
+  ],
+  "results": [
+    "Higher sample efficiency compared to classic model-free FRL algorithms",
+    "Monotonic improvement guaranteed",
+    "Significant impact of heterogeneous client data and local model update steps on FRL performance"
+  ],
+  "paper_id": "614012c05244ab9dcb81658e",
+  "title": "Federated Ensemble Model-based Reinforcement Learning in Edge Computing",
+  "abstract": "  Federated learning (FL) is a privacy-preserving distributed machine learning paradigm that enables collaborative training among geographically distributed and heterogeneous devices without gathering their data. Extending FL beyond the supervised learning models, federated reinforcement learning (FRL) was proposed to handle sequential decision-making problems in edge computing systems. However, the existing FRL algorithms directly combine model-free RL with FL, thus often leading to high sample complexity and lacking theoretical guarantees. To address the challenges, we propose a novel FRL algorithm that effectively incorporates model-based RL and ensemble knowledge distillation into FL for the first time. Specifically, we utilise FL and knowledge distillation to create an ensemble of dynamics models for clients, and then train the policy by solely using the ensemble model without interacting with the environment. Furthermore, we theoretically prove that the monotonic improvement of the proposed algorithm is guaranteed. The extensive experimental results demonstrate that our algorithm obtains much higher sample efficiency compared to classic model-free FRL algorithms in the challenging continuous control benchmark environments under edge computing settings. The results also highlight the significant impact of heterogeneous client data and local model update steps on the performance of FRL, validating the insights obtained from our theoretical analysis. "
+}

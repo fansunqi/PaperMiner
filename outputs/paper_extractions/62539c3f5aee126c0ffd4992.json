@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficiently Compute Diverse Sets of Near-Optimal Solutions to Mixed-Integer Optimization Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DiversiTree",
+    "Parameterized node selection rules within branch-and-bound framework"
+  ],
+  "results": [
+    "Significantly increases diversity of final solution set",
+    "Similar runtime to regular node selection methods",
+    "Diversity improvement between 12% and 190% compared to existing methods",
+    "Outperforms popular node selection rules by up to 35%"
+  ],
+  "paper_id": "62539c3f5aee126c0ffd4992",
+  "title": "DiversiTree: A New Method to Efficiently Compute Diverse Sets of\n  Near-Optimal Solutions to Mixed-Integer Optimization Problems",
+  "abstract": "  While most methods for solving mixed-integer optimization problems compute a single optimal solution, a diverse set of near-optimal solutions can often lead to improved outcomes. We present a new method for finding a set of diverse solutions by emphasizing diversity within the search for near-optimal solutions. Specifically, within a branch-and-bound framework, we investigated parameterized node selection rules that explicitly consider diversity. Our results indicate that our approach significantly increases the diversity of the final solution set. When compared with two existing methods, our method runs with similar runtime as regular node selection methods and gives a diversity improvement between 12% and 190%. In contrast, popular node selection rules, such as best-first search, in some instances performed worse than state-of-the-art methods by more than 35% and gave an improvement of no more than 130%. Further, we find that our method is most effective when diversity in node selection is continuously emphasized after reaching a minimal depth in the tree and when the solution set has grown sufficiently large. Our method can be easily incorporated into integer programming solvers and has the potential to significantly increase the diversity of solution sets. "
+}

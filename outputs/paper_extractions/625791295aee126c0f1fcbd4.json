@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/edomel/ImplicitVF"
+  ],
+  "tasks": [
+    "Implicit surface representation and inference"
+  ],
+  "datasets": [
+    "ShapeNet"
+  ],
+  "methods": [
+    "Neural Vector Fields (VF)",
+    "Unit vectors in 3D space",
+    "Flux density computation"
+  ],
+  "results": [
+    "Superior accuracy in representing any type of shape",
+    "Outperforms other standard methods"
+  ],
+  "paper_id": "625791295aee126c0f1fcbd4",
+  "title": "Neural Vector Fields for Implicit Surface Representation and Inference",
+  "abstract": "  Implicit fields have recently shown increasing success in representing and learning 3D shapes accurately. Signed distance fields and occupancy fields are decades old and still the preferred representations, both with well-studied properties, despite their restriction to closed surfaces. With neural networks, several other variations and training principles have been proposed with the goal to represent all classes of shapes. In this paper, we develop a novel and yet a fundamental representation considering unit vectors in 3D space and call it Vector Field (VF): at each point in $\\mathbb{R}^3$, VF is directed at the closest point on the surface. We theoretically demonstrate that VF can be easily transformed to surface density by computing the flux density. Unlike other standard representations, VF directly encodes an important physical property of the surface, its normal. We further show the advantages of VF representation, in learning open, closed, or multi-layered as well as piecewise planar surfaces. We compare our method on several datasets including ShapeNet where the proposed new neural implicit field shows superior accuracy in representing any type of shape, outperforming other standard methods. Code is available at https://github.com/edomel/ImplicitVF. "
+}

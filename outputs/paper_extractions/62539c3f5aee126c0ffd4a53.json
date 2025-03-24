@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/drndr/multilabel-text-clf"
+  ],
+  "tasks": [
+    "Single-label text classification",
+    "Multi-label text classification"
+  ],
+  "datasets": [
+    "5 single-label datasets",
+    "7 multi-label datasets"
+  ],
+  "methods": [
+    "Bag-of-words",
+    "Sequence-based",
+    "Graph-based",
+    "Hierarchical methods",
+    "Pretrained language models",
+    "Multilayer perceptron (MLP)"
+  ],
+  "results": [
+    "Graph-based methods fail to outperform fine-tuned language models",
+    "Sometimes perform worse than MLP on bag-of-words",
+    "Pretrained language models remain state-of-the-art"
+  ],
+  "paper_id": "62539c3f5aee126c0ffd4a53",
+  "title": "Are We Really Making Much Progress? Bag-of-Words vs. Sequence vs. Graph\n  vs. Hierarchy for Single- and Multi-Label Text Classification",
+  "abstract": "  The popularity of graph neural networks has triggered a resurgence of graph-based methods for single-label and multi-label text classification. However, it is unclear whether these graph-based methods are beneficial compared to standard machine learning methods and modern pretrained language models. We compare a rich selection of bag-of-words, sequence-based, graph-based, and hierarchical methods for text classification. We aggregate results from the literature over 5 single-label and 7 multi-label datasets and run our own experiments. Our findings unambiguously demonstrate that for single-label and multi-label classification tasks, the graph-based methods fail to outperform fine-tuned language models and sometimes even perform worse than standard machine learning methods like multilayer perceptron (MLP) on a bag-of-words. This questions the enormous amount of effort put into the development of new graph-based methods in the last years and the promises they make for text classification. Given our extensive experiments, we confirm that pretrained language models remain state-of-the-art in text classification despite all recent specialized advances. We argue that future work in text classification should thoroughly test against strong baselines like MLPs to properly assess the true scientific progress.   The source code is available: https://github.com/drndr/multilabel-text-clf "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Big data analytics",
+    "Memory management in big data frameworks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TeraHeap",
+    "Second high-capacity heap (H2)",
+    "Hint-based interface for object management"
+  ],
+  "results": [
+    "Improves performance by up to 73% in Spark and 28% in Giraph",
+    "Consumes up to 8x less DRAM in Spark and 1.2x less in Giraph",
+    "Outperforms Panthera by up to 69%"
+  ],
+  "paper_id": "619c5bbe5244ab9dcbf21ffd",
+  "title": "Garbage Collection or Serialization? Between a Rock and a Hard Place!",
+  "abstract": "  Big data analytics frameworks, such as Spark and Giraph, need to process and cache massive amounts of data that do not always fit on the heap. Therefore, frameworks temporarily move long-lived objects outside the managed heap (off-heap) on a fast storage device. Unfortunately, this practice results in: (1) high serialization/deserialization (S/D) cost, and (2) high memory pressure when off-heap objects are moved back to the managed heap for processing. In this paper, we propose TeraHeap, a system that eliminates S/D overhead and expensive GC scans for a large portion of the objects in big data frameworks. TeraHeap relies on three concepts. (1) It eliminates S/D cost by extending the managed runtime (JVM) to use a second high-capacity heap (H2) over a fast storage device. (2) It reduces GC cost by fencing the garbage collector from scanning H2 objects. (3) It offers a simple hint-based interface, which allows frameworks to leverage knowledge about objects for populating H2. We implement TeraHeap in OpenJDK and evaluate it with 15 widely used applications in two real-world big data frameworks, Spark and Giraph. Our evaluation shows that for the same DRAM size, TeraHeap improves performance by up to 73% and 28% compared to native Spark and Giraph, respectively. Also, it provides better performance by consuming up to 8x and 1.2x less DRAM capacity than native Spark and Giraph, respectively. Finally, it outperforms Panthera, a garbage collector for hybrid memories, by up to 69%. "
+}

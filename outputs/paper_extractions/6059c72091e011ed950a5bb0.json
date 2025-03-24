@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/alibaba/cluster-contrast"
+  ],
+  "tasks": [
+    "Unsupervised Person Re-Identification"
+  ],
+  "datasets": [
+    "Market",
+    "Duke",
+    "MSMT17"
+  ],
+  "methods": [
+    "Cluster Contrast",
+    "Cluster-level memory dictionary",
+    "Different clustering algorithms"
+  ],
+  "results": [
+    "Improvements of 9.9%, 8.3%, 12.1% compared to state-of-the-art purely unsupervised re-ID methods",
+    "5.5%, 4.8%, 4.4% mAP compared to state-of-the-art unsupervised domain adaptation re-ID methods"
+  ],
+  "paper_id": "6059c72091e011ed950a5bb0",
+  "title": "Cluster Contrast for Unsupervised Person Re-Identification",
+  "abstract": "  State-of-the-art unsupervised re-ID methods train the neural networks using a memory-based non-parametric softmax loss. Instance feature vectors stored in memory are assigned pseudo-labels by clustering and updated at instance level. However, the varying cluster sizes leads to inconsistency in the updating progress of each cluster. To solve this problem, we present Cluster Contrast which stores feature vectors and computes contrast loss at the cluster level. Our approach employs a unique cluster representation to describe each cluster, resulting in a cluster-level memory dictionary. In this way, the consistency of clustering can be effectively maintained throughout the pipline and the GPU memory consumption can be significantly reduced. Thus, our method can solve the problem of cluster inconsistency and be applicable to larger data sets. In addition, we adopt different clustering algorithms to demonstrate the robustness and generalization of our framework. The application of Cluster Contrast to a standard unsupervised re-ID pipeline achieves considerable improvements of 9.9%, 8.3%, 12.1% compared to state-of-the-art purely unsupervised re-ID methods and 5.5%, 4.8%, 4.4% mAP compared to the state-of-the-art unsupervised domain adaptation re-ID methods on the Market, Duke, and MSMT17 datasets. Code is available at https://github.com/alibaba/cluster-contrast. "
+}

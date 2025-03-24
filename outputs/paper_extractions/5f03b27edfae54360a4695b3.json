@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-algebraic proof system for integer programming"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stabbing Planes",
+    "Branch-and-cut algorithms",
+    "DPLL-based SAT solvers",
+    "Hyperplane partitioning"
+  ],
+  "results": [
+    "Efficiently simulates Cutting Planes proof system",
+    "Equivalent to tree-like RCP system",
+    "Short proofs for Tseitin formulas",
+    "Linear lower bounds on rank of refutations",
+    "Proofs cannot be balanced",
+    "First lower bound on real communication complexity of set disjointness function"
+  ],
+  "paper_id": "5f03b27edfae54360a4695b3",
+  "title": "Stabbing Planes",
+  "abstract": "  We develop a new semi-algebraic proof system called Stabbing Planes which formalizes modern branch-and-cut algorithms for integer programming and is in the style of DPLL-based modern SAT solvers. As with DPLL there is only a single rule: the current polytope can be subdivided by branching on an inequality and its \"integer negation.\" That is, we can (nondeterministically choose) a hyperplane $ax \\geq b$ with integer coefficients, which partitions the polytope into three pieces: the points in the polytope satisfying $ax \\geq b$, the points satisfying $ax \\leq b-1$, and the middle slab $b - 1 < ax < b$. Since the middle slab contains no integer points it can be safely discarded, and the algorithm proceeds recursively on the other two branches. Each path terminates when the current polytope is empty, which is polynomial-time checkable. Among our results, we show that Stabbing Planes can efficiently simulate the Cutting Planes proof system, and is equivalent to a tree-like variant of the RCP system of [Krajicek98]. As well, we show that it possesses short proofs of the canonical family of systems of $\\mathbb{F}_2$-linear equations known as the Tseitin formulas. Finally, we prove linear lower bounds on the rank of Stabbing Planes refutations by adapting lower bounds in communication complexity and use these bounds in order to show that Stabbing Planes proofs cannot be balanced. In doing so, we show that real communication protocols cannot be balanced and establish the first lower bound on the real communication complexity of the set disjointness function. "
+}

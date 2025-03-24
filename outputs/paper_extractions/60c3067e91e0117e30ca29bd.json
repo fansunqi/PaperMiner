@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/bokun-wang/moml"
+  ],
+  "tasks": [
+    "Model-Agnostic Meta-Learning (MAML)",
+    "Personalized Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Memory-Based Stochastic Algorithms for MAML",
+    "Communication-Efficient Memory-Based MAML for Personalized Federated Learning"
+  ],
+  "results": [
+    "Convergence with vanishing error",
+    "Suitable for continual learning",
+    "Improved optimization theory for MAML",
+    "Empirical results corroborate theoretical findings"
+  ],
+  "paper_id": "60c3067e91e0117e30ca29bd",
+  "title": "Memory-Based Optimization Methods for Model-Agnostic Meta-Learning and\n  Personalized Federated Learning",
+  "abstract": "  In recent years, model-agnostic meta-learning (MAML) has become a popular research area. However, the stochastic optimization of MAML is still underdeveloped. Existing MAML algorithms rely on the ``episode'' idea by sampling a few tasks and data points to update the meta-model at each iteration. Nonetheless, these algorithms either fail to guarantee convergence with a constant mini-batch size or require processing a large number of tasks at every iteration, which is unsuitable for continual learning or cross-device federated learning where only a small number of tasks are available per iteration or per round. To address these issues, this paper proposes memory-based stochastic algorithms for MAML that converge with vanishing error. The proposed algorithms require sampling a constant number of tasks and data samples per iteration, making them suitable for the continual learning scenario. Moreover, we introduce a communication-efficient memory-based MAML algorithm for personalized federated learning in cross-device (with client sampling) and cross-silo (without client sampling) settings. Our theoretical analysis improves the optimization theory for MAML, and our empirical results corroborate our theoretical findings. Interested readers can access our code at \\url{https://github.com/bokun-wang/moml}. "
+}

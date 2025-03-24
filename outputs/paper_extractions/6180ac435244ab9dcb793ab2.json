@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robot end-effector control",
+    "Combining perception with motion generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stitching Dynamic Movement Primitives (DMP)",
+    "Image-based Visual Servo (IBVS) control",
+    "Common state space representation",
+    "Multiple Lyapunov functions for stability analysis"
+  ],
+  "results": [
+    "State trajectories converge to a bound asymptotically",
+    "Validated by two real-world experiments on Baxter research robot"
+  ],
+  "paper_id": "6180ac435244ab9dcb793ab2",
+  "title": "Stitching Dynamic Movement Primitives and Image-based Visual Servo\n  Control",
+  "abstract": "  Utilizing perception for feedback control in combination with Dynamic Movement Primitive (DMP)-based motion generation for a robot's end-effector control is a useful solution for many robotic manufacturing tasks. For instance, while performing an insertion task when the hole or the recipient part is not visible in the eye-in-hand camera, a learning-based movement primitive method can be used to generate the end-effector path. Once the recipient part is in the field of view (FOV), Image-based Visual Servo (IBVS) can be used to control the motion of the robot. Inspired by such applications, this paper presents a generalized control scheme that switches between motion generation using DMPs and IBVS control. To facilitate the design, a common state space representation for the DMP and the IBVS systems is first established. Stability analysis of the switched system using multiple Lyapunov functions shows that the state trajectories converge to a bound asymptotically. The developed method is validated by two real world experiments using the eye-in-hand configuration on a Baxter research robot. "
+}

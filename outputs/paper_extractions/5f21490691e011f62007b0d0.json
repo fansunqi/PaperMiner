@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Representation learning-based recommendation"
+  ],
+  "datasets": [
+    "public implicit feedback datasets"
+  ],
+  "methods": [
+    "COMET (Convolutional Dimension Interaction)",
+    "stacks embeddings horizontally",
+    "uses CNN for internal and dimensional interactions",
+    "applies MLP for interaction vectors"
+  ],
+  "results": [
+    "demonstrates effectiveness and rationality of COMET"
+  ],
+  "paper_id": "5f21490691e011f62007b0d0",
+  "title": "COMET: Convolutional Dimension Interaction for Collaborative Filtering",
+  "abstract": "  Representation learning-based recommendation models play a dominant role among recommendation techniques. However, most of the existing methods assume both historical interactions and embedding dimensions are independent of each other, and thus regrettably ignore the high-order interaction information among historical interactions and embedding dimensions. In this paper, we propose a novel representation learning-based model called COMET (COnvolutional diMEnsion inTeraction), which simultaneously models the high-order interaction patterns among historical interactions and embedding dimensions. To be specific, COMET stacks the embeddings of historical interactions horizontally at first, which results in two \"embedding maps\". In this way, internal interactions and dimensional interactions can be exploited by convolutional neural networks (CNN) with kernels of different sizes simultaneously. A fully-connected multi-layer perceptron (MLP) is then applied to obtain two interaction vectors. Lastly, the representations of users and items are enriched by the learnt interaction vectors, which can further be used to produce the final prediction. Extensive experiments and ablation studies on various public implicit feedback datasets clearly demonstrate the effectiveness and rationality of our proposed method. "
+}

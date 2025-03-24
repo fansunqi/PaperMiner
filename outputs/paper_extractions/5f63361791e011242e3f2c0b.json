@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Estimating time-varying graphical models"
+  ],
+  "datasets": [
+    "synthetic data",
+    "real data"
+  ],
+  "methods": [
+    "BASS (Bayesian approach with temporally-dependent spike-and-slab priors)",
+    "Variational inference algorithm"
+  ],
+  "results": [
+    "BASS better recovers underlying true graphs",
+    "More efficient than existing methods, especially for high-dimensional cases",
+    "Time complexity: O(NP^2)"
+  ],
+  "paper_id": "5f63361791e011242e3f2c0b",
+  "title": "Efficient Variational Bayes Learning of Graphical Models with Smooth\n  Structural Changes",
+  "abstract": "  Estimating time-varying graphical models are of paramount importance in various social, financial, biological, and engineering systems, since the evolution of such networks can be utilized for example to spot trends, detect anomalies, predict vulnerability, and evaluate the impact of interventions. Existing methods require extensive tuning of parameters that control the graph sparsity and temporal smoothness. Furthermore, these methods are computationally burdensome with time complexity $O(NP^3)$ for $P$ variables and $N$ time points. As a remedy, we propose a low-complexity tuning-free Bayesian approach, named BASS. Specifically, we impose temporally-dependent spike-and-slab priors on the graphs such that they are sparse and varying smoothly across time. A variational inference algorithm is then derived to learn the graph structures from the data automatically. Owning to the pseudo-likelihood and the mean-field approximation, the time complexity of BASS is only $O(NP^2)$. Additionally, by identifying the frequency-domain resemblance to the time-varying graphical models, we show that BASS can be extended to learning frequency-varying inverse spectral density matrices, and yields graphical models for multivariate stationary time series. Numerical results on both synthetic and real data show that that BASS can better recover the underlying true graphs, while being more efficient than the existing methods, especially for high-dimensional cases. "
+}

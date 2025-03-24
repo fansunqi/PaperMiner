@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Few-shot Real Image Super-resolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distortion Relation guided Transfer Learning (DRTL)",
+    "Knowledge graph for distortion relation",
+    "Gradient reweighting strategy",
+    "Pre-training and meta-learning pipelines"
+  ],
+  "results": [
+    "DRTL demonstrates effectiveness in few-shot RealSR",
+    "Improved texture synthesis with minimal paired training samples"
+  ],
+  "paper_id": "61a444b35244ab9dcb6e21d5",
+  "title": "A Close Look at Few-shot Real Image Super-resolution from the Distortion\n  Relation Perspective",
+  "abstract": "  Collecting amounts of distorted/clean image pairs in the real world is non-trivial, which seriously limits the practical applications of these supervised learning-based methods on real-world image super-resolution (RealSR). Previous works usually address this problem by leveraging unsupervised learning-based technologies to alleviate the dependency on paired training samples. However, these methods typically suffer from unsatisfactory texture synthesis due to the lack of supervision of clean images. To overcome this problem, we are the first to have a close look at the under-explored direction for RealSR, i.e., few-shot real-world image super-resolution, which aims to tackle the challenging RealSR problem with few-shot distorted/clean image pairs. Under this brand-new scenario, we propose Distortion Relation guided Transfer Learning (DRTL) for the few-shot RealSR by transferring the rich restoration knowledge from auxiliary distortions (i.e., synthetic distortions) to the target RealSR under the guidance of distortion relation. Concretely, DRTL builds a knowledge graph to capture the distortion relation between auxiliary distortions and target distortion (i.e., real distortions in RealSR). Based on the distortion relation, DRTL adopts a gradient reweighting strategy to guide the knowledge transfer process between auxiliary distortions and target distortions. In this way, DRTL could quickly learn the most relevant knowledge from the synthetic distortions for the target distortion. We instantiate DRTL with two commonly-used transfer learning paradigms, including pre-training and meta-learning pipelines, to realize a distortion relation-aware Few-shot RealSR. Extensive experiments on multiple benchmarks and thorough ablation studies demonstrate the effectiveness of our DRTL. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/hil-se/FairBalance"
+  ],
+  "tasks": [
+    "Achieving equalized odds fairness in machine learning"
+  ],
+  "datasets": [
+    "eight real-world datasets"
+  ],
+  "methods": [
+    "FairBalance pre-processing algorithm",
+    "Balancing class distribution with sample weights"
+  ],
+  "results": [
+    "Significantly improves equalized odds at low computational overhead",
+    "Outperforms existing state-of-the-art approaches in terms of equalized odds"
+  ],
+  "paper_id": "60f76d345244ab9dcb2ee2ad",
+  "title": "FairBalance: How to Achieve Equalized Odds With Data Pre-processing",
+  "abstract": "  This research seeks to benefit the software engineering society by providing a simple yet effective pre-processing approach to achieve equalized odds fairness in machine learning software. Fairness issues have attracted increasing attention since machine learning software is increasingly used for high-stakes and high-risk decisions. Amongst all the existing fairness notions, this work specifically targets \"equalized odds\" given its advantage in always allowing perfect classifiers. Equalized odds requires that members of every demographic group do not receive disparate mistreatment. Prior works either optimize for an equalized odds related metric during the learning process like a black-box, or manipulate the training data following some intuition. This work studies the root cause of the violation of equalized odds and how to tackle it. We found that equalizing the class distribution in each demographic group with sample weights is a necessary condition for achieving equalized odds without modifying the normal training process. In addition, an important partial condition for equalized odds (zero average odds difference) can be guaranteed when the class distributions are weighted to be not only equal but also balanced (1:1). Based on these analyses, we proposed FairBalance, a pre-processing algorithm which balances the class distribution in each demographic group by assigning calculated weights to the training data. On eight real-world datasets, our empirical results show that, at low computational overhead, the proposed pre-processing algorithm FairBalance can significantly improve equalized odds without much, if any damage to the utility. FairBalance also outperforms existing state-of-the-art approaches in terms of equalized odds. To facilitate reuse, reproduction, and validation, we made our scripts available at https://github.com/hil-se/FairBalance. "
+}

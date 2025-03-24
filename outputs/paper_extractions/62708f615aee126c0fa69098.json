@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simulating Quantum Circuits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Lifetime-based Optimization",
+    "In-place Slicing Strategy",
+    "Adaptive Tensor Network Contraction Path Refiner"
+  ],
+  "results": [
+    "Slicing overhead less than cotengra",
+    "Simulation time reduced to 96.1s for Sycamore RQC",
+    "Single-precision performance of 308.6 Pflops",
+    "More than 5 times performance improvement compared to 2021 Gordon Bell Prize work"
+  ],
+  "paper_id": "62708f615aee126c0fa69098",
+  "title": "Lifetime-based Optimization for Simulating Quantum Circuits on a New\n  Sunway Supercomputer",
+  "abstract": "  High-performance classical simulator for quantum circuits, in particular the tensor network contraction algorithm, has become an important tool for the validation of noisy quantum computing. In order to address the memory limitations, the slicing technique is used to reduce the tensor dimensions, but it could also lead to additional computation overhead that greatly slows down the overall performance. This paper proposes novel lifetime-based methods to reduce the slicing overhead and improve the computing efficiency, including an interpretation method to deal with slicing overhead, an in-place slicing strategy to find the smallest slicing set and an adaptive tensor network contraction path refiner customized for Sunway architecture. Experiments show that in most cases the slicing overhead with our in-place slicing strategy would be less than the cotengra, which is the most used graph path optimization software at present. Finally, the resulting simulation time is reduced to 96.1s for the Sycamore quantum processor RQC, with a sustainable single-precision performance of 308.6Pflops using over 41M cores to generate 1M correlated samples, which is more than 5 times performance improvement compared to 60.4 Pflops in 2021 Gordon Bell Prize work. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline Model Learning for Planning",
+    "Offline Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Exploitation vs Caution (EvC)",
+    "Bayesian Markov Decision Processes"
+  ],
+  "results": [
+    "EvC selects robust policies",
+    "Validated with state-of-the-art approaches in different discrete environments"
+  ],
+  "paper_id": "60b57e2691e011f95a6495bc",
+  "title": "An Offline Risk-aware Policy Selection Method for Bayesian Markov\n  Decision Processes",
+  "abstract": "  In Offline Model Learning for Planning and in Offline Reinforcement Learning, the limited data set hinders the estimate of the Value function of the relative Markov Decision Process (MDP). Consequently, the performance of the obtained policy in the real world is bounded and possibly risky, especially when the deployment of a wrong policy can lead to catastrophic consequences. For this reason, several pathways are being followed with the scope of reducing the model error (or the distributional shift between the learned model and the true one) and, more broadly, obtaining risk-aware solutions with respect to model uncertainty. But when it comes to the final application which baseline should a practitioner choose? In an offline context where computational time is not an issue and robustness is the priority we propose Exploitation vs Caution (EvC), a paradigm that (1) elegantly incorporates model uncertainty abiding by the Bayesian formalism, and (2) selects the policy that maximizes a risk-aware objective over the Bayesian posterior between a fixed set of candidate policies provided, for instance, by the current baselines. We validate EvC with state-of-the-art approaches in different discrete, yet simple, environments offering a fair variety of MDP classes. In the tested scenarios EvC manages to select robust policies and hence stands out as a useful tool for practitioners that aim to apply offline planning and reinforcement learning solvers in the real world. "
+}

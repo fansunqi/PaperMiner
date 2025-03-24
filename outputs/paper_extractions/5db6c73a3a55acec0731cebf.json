@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Co-saliency detection in one single image"
+  ],
+  "datasets": [
+    "new dataset of 2,019 natural images"
+  ],
+  "methods": [
+    "end-to-end trainable network",
+    "backbone net with top-down guidance",
+    "two branch nets for triplet proposals"
+  ],
+  "results": [
+    "state-of-the-art accuracy",
+    "running speed of 28 fps"
+  ],
+  "paper_id": "5db6c73a3a55acec0731cebf",
+  "title": "An End-to-End Network for Co-Saliency Detection in One Single Image",
+  "abstract": "  Co-saliency detection within a single image is a common vision problem that has received little attention and has not yet been well addressed. Existing methods often used a bottom-up strategy to infer co-saliency in an image in which salient regions are firstly detected using visual primitives such as color and shape and then grouped and merged into a co-saliency map. However, co-saliency is intrinsically perceived complexly with bottom-up and top-down strategies combined in human vision. To address this problem, this study proposes a novel end-to-end trainable network comprising a backbone net and two branch nets. The backbone net uses ground-truth masks as top-down guidance for saliency prediction, whereas the two branch nets construct triplet proposals for regional feature mapping and clustering, which drives the network to be bottom-up sensitive to co-salient regions. We construct a new dataset of 2,019 natural images with co-saliency in each image to evaluate the proposed method. Experimental results show that the proposed method achieves state-of-the-art accuracy with a running speed of 28 fps. "
+}

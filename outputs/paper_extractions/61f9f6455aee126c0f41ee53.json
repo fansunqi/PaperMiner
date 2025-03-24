@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://www.jianrenw.com/SOD-TGNN/"
+  ],
+  "tasks": [
+    "3D object detection"
+  ],
+  "datasets": [
+    "nuScenes",
+    "H3D"
+  ],
+  "methods": [
+    "Semi-supervised learning via temporal graph neural networks",
+    "Temporal smoothing for accurate detection on unlabeled data"
+  ],
+  "results": [
+    "State-of-the-art detection performance on nuScenes and H3D benchmarks compared to baselines trained on the same amount of labeled data"
+  ],
+  "paper_id": "61f9f6455aee126c0f41ee53",
+  "title": "Semi-supervised 3D Object Detection via Temporal Graph Neural Networks",
+  "abstract": "  3D object detection plays an important role in autonomous driving and other robotics applications. However, these detectors usually require training on large amounts of annotated data that is expensive and time-consuming to collect. Instead, we propose leveraging large amounts of unlabeled point cloud videos by semi-supervised learning of 3D object detectors via temporal graph neural networks. Our insight is that temporal smoothing can create more accurate detection results on unlabeled data, and these smoothed detections can then be used to retrain the detector. We learn to perform this temporal reasoning with a graph neural network, where edges represent the relationship between candidate detections in different time frames. After semi-supervised learning, our method achieves state-of-the-art detection performance on the challenging nuScenes and H3D benchmarks, compared to baselines trained on the same amount of labeled data. Project and code are released at https://www.jianrenw.com/SOD-TGNN/. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parameterized Set Packing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dichotomy result for PSP",
+    "Identification and construction of Compatible Intersecting Set System pair"
+  ],
+  "results": [
+    "PSP is in FPT when |U| = f(r)\u00b7o(log |S|)",
+    "PSP is W[1]-hard when |U| = r\u00b7\u0398(log |S|)",
+    "Compact PSP does not admit |S|^{o(r/log r)} time algorithm under ETH"
+  ],
+  "paper_id": "618ddb455244ab9dcbda8f23",
+  "title": "On the parameterized complexity of Compact Set Packing",
+  "abstract": "  The Set Packing problem is, given a collection of sets $\\mathcal{S}$ over a ground set $\\mathcal{U}$, to find a maximum collection of sets that are pairwise disjoint. The problem is among the most fundamental NP-hard optimization problems that have been studied extensively in various computational regimes. The focus of this work is on parameterized complexity, Parameterized Set Packing (PSP): Given $r \\in {\\mathbb N}$, is there a collection $ \\mathcal{S}' \\subseteq \\mathcal{S}: |\\mathcal{S}'| = r$ such that the sets in $\\mathcal{S}'$ are pairwise disjoint? Unfortunately, the problem is not fixed parameter tractable unless $\\mathsf{W[1] = FPT}$, and, in fact, an \"enumeration\" running time of $|\\mathcal{S}|^{\\Omega(r)}$ is required unless the exponential time hypothesis (ETH) fails. This paper is a quest for tractable instances of Set Packing from parameterized complexity perspectives. We say that the input $(\\mathcal{U},\\mathcal{S})$ is \"compact\" if $|\\mathcal{U}| = f(r)\\cdot\\Theta(\\textsf{poly}( \\log |\\mathcal{S}|))$, for some $f(r) \\ge r$. In the Compact Set Packing problem, we are given a compact instance of PSP. In this direction, we present a \"dichotomy\" result of PSP: When $|\\mathcal{U}| = f(r)\\cdot o(\\log |\\mathcal{S}|)$, PSP is in $\\textsf{FPT}$, while for $|\\mathcal{U}| = r\\cdot\\Theta(\\log (|\\mathcal{S}|))$, the problem is $W[1]$-hard; moreover, assuming ETH, Compact PSP does not even admit $|\\mathcal{S}|^{o(r/\\log r)}$ time algorithm. Although certain results in the literature imply hardness of compact versions of related problems such as Set $r$-Covering and Exact $r$-Covering, these constructions fail to extend to Compact PSP. A novel contribution of our work is the identification and construction of a gadget, which we call Compatible Intersecting Set System pair, that is crucial in obtaining the hardness result for Compact PSP. "
+}

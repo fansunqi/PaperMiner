@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "off-policy contextual pricing"
+  ],
+  "datasets": [
+    "synthetic data",
+    "real-world data"
+  ],
+  "methods": [
+    "convex surrogate loss functions",
+    "generalized hinge loss",
+    "quantile pricing loss"
+  ],
+  "results": [
+    "competitive with state-of-the-art methods",
+    "outperforms in some settings",
+    "expected revenue bounds for log-concave valuation distribution",
+    "generalization bounds for finite sample case"
+  ],
+  "paper_id": "6215a5cc5aee126c0f337b60",
+  "title": "Convex Surrogate Loss Functions for Contextual Pricing with Transaction\n  Data",
+  "abstract": "  We study an off-policy contextual pricing problem where the seller has access to samples of prices that customers were previously offered, whether they purchased at that price, and auxiliary features describing the customer and/or item being sold. This is in contrast to the well-studied setting in which samples of the customer's valuation (willingness to pay) are observed. In our setting, the observed data is influenced by the previous pricing policy, and we do not know how customers would have responded to alternative prices. We introduce suitable loss functions for this setting that can be directly optimized to find an effective pricing policy with expected revenue guarantees, without the need for estimation of an intermediate demand function. We focus on convex loss functions. This is particularly relevant when linear pricing policies are desired for interpretability reasons, resulting in a tractable convex revenue optimization problem. We propose generalized hinge and quantile pricing loss functions that price at a multiplicative factor of the conditional expected valuation or a particular quantile of the prices that sold, despite the valuation data not being observed. We prove expected revenue bounds for these pricing policies respectively when the valuation distribution is log-concave, and we provide generalization bounds for the finite sample case. Finally, we conduct simulations on both synthetic and real-world data to demonstrate that this approach is competitive with, and in some settings outperforms, state-of-the-art methods in contextual pricing. "
+}

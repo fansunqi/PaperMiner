@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analyzing inductive bias of gradient descent for weight normalized smooth homogeneous neural nets"
+  ],
+  "datasets": [
+    "synthetic data sets"
+  ],
+  "methods": [
+    "Standard Weight Normalization (SWN)",
+    "Exponential Weight Normalization (EWN)",
+    "Gradient flow analysis",
+    "Asymptotic relations between weights and gradients"
+  ],
+  "results": [
+    "EWN equivalent to gradient flow on standard networks with adaptive learning rate",
+    "EWN prefers asymptotic relative sparsity",
+    "Finite-time convergence rate of loss with gradient flow for EWN",
+    "Tight asymptotic convergence rate with gradient descent for EWN",
+    "Sparse EWN solutions supported by experimental results on simple datasets"
+  ],
+  "paper_id": "5f97ef6391e0112e0cda7c0d",
+  "title": "Inductive Bias of Gradient Descent for Weight Normalized Smooth\n  Homogeneous Neural Nets",
+  "abstract": "  We analyze the inductive bias of gradient descent for weight normalized smooth homogeneous neural nets, when trained on exponential or cross-entropy loss. We analyse both standard weight normalization (SWN) and exponential weight normalization (EWN), and show that the gradient flow path with EWN is equivalent to gradient flow on standard networks with an adaptive learning rate. We extend these results to gradient descent, and establish asymptotic relations between weights and gradients for both SWN and EWN. We also show that EWN causes weights to be updated in a way that prefers asymptotic relative sparsity. For EWN, we provide a finite-time convergence rate of the loss with gradient flow and a tight asymptotic convergence rate with gradient descent. We demonstrate our results for SWN and EWN on synthetic data sets. Experimental results on simple datasets support our claim on sparse EWN solutions, even with SGD. This demonstrates its potential applications in learning neural networks amenable to pruning. "
+}

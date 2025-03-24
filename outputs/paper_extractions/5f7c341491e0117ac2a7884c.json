@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Certify robustness of neural networks with random input noise"
+  ],
+  "datasets": [
+    "Synthetic",
+    "MNIST",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Robustness certification method using chance-constrained optimization",
+    "Input-output samples for tractable optimization constraints",
+    "Convex optimization conditions"
+  ],
+  "results": [
+    "Certifies robustness against various input noise regimes",
+    "Larger uncertainty regions than prior state-of-the-art techniques"
+  ],
+  "paper_id": "5f7c341491e0117ac2a7884c",
+  "title": "Data-Driven Certification of Neural Networks with Random Input Noise",
+  "abstract": "  Methods to certify the robustness of neural networks in the presence of input uncertainty are vital in safety-critical settings. Most certification methods in the literature are designed for adversarial or worst-case inputs, but researchers have recently shown a need for methods that consider random input noise. In this paper, we examine the setting where inputs are subject to random noise coming from an arbitrary probability distribution. We propose a robustness certification method that lower-bounds the probability that network outputs are safe. This bound is cast as a chance-constrained optimization problem, which is then reformulated using input-output samples to make the optimization constraints tractable. We develop sufficient conditions for the resulting optimization to be convex, as well as on the number of samples needed to make the robustness bound hold with overwhelming probability. We show for a special case that the proposed optimization reduces to an intuitive closed-form solution. Case studies on synthetic, MNIST, and CIFAR-10 networks experimentally demonstrate that this method is able to certify robustness against various input noise regimes over larger uncertainty regions than prior state-of-the-art techniques. "
+}

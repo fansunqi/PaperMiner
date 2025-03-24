@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/jpwahle/iconf22-paraphrase"
+  ],
+  "tasks": [
+    "Identifying Machine-Paraphrased Plagiarism"
+  ],
+  "datasets": [
+    "preprints of research papers",
+    "graduation theses",
+    "Wikipedia articles"
+  ],
+  "methods": [
+    "pre-trained word embedding models with machine-learning classifiers",
+    "neural language models",
+    "Longformer"
+  ],
+  "results": [
+    "Longformer: average F1 score of 81.0%",
+    "F1=99.7% for SpinBot",
+    "F1=71.6% for SpinnerChief",
+    "human evaluators: F1=78.4% for SpinBot",
+    "F1=65.6% for SpinnerChief"
+  ],
+  "paper_id": "6059d27a91e011ed950a5d05",
+  "title": "Identifying Machine-Paraphrased Plagiarism",
+  "abstract": "  Employing paraphrasing tools to conceal plagiarized text is a severe threat to academic integrity. To enable the detection of machine-paraphrased text, we evaluate the effectiveness of five pre-trained word embedding models combined with machine-learning classifiers and eight state-of-the-art neural language models. We analyzed preprints of research papers, graduation theses, and Wikipedia articles, which we paraphrased using different configurations of the tools SpinBot and SpinnerChief. The best-performing technique, Longformer, achieved an average F1 score of 81.0% (F1=99.7% for SpinBot and F1=71.6% for SpinnerChief cases), while human evaluators achieved F1=78.4% for SpinBot and F1=65.6% for SpinnerChief cases. We show that the automated classification alleviates shortcomings of widely-used text-matching systems, such as Turnitin and PlagScan. To facilitate future research, all data, code, and two web applications showcasing our contributions are openly available at https://github.com/jpwahle/iconf22-paraphrase. "
+}

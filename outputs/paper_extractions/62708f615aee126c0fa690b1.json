@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Natural Language Understanding (NLU)"
+  ],
+  "datasets": [
+    "14 recent NLU benchmarks"
+  ],
+  "methods": [
+    "Instruction bias analysis",
+    "Experiments on model performance and generalization"
+  ],
+  "results": [
+    "Instruction bias leads to overestimation of model performance",
+    "Models struggle to generalize beyond biases in crowdsourcing instructions",
+    "Recommendations for creating future NLU benchmarks"
+  ],
+  "paper_id": "62708f615aee126c0fa690b1",
+  "title": "Don't Blame the Annotator: Bias Already Starts in the Annotation\n  Instructions",
+  "abstract": "  In recent years, progress in NLU has been driven by benchmarks. These benchmarks are typically collected by crowdsourcing, where annotators write examples based on annotation instructions crafted by dataset creators. In this work, we hypothesize that annotators pick up on patterns in the crowdsourcing instructions, which bias them to write many similar examples that are then over-represented in the collected data. We study this form of bias, termed instruction bias, in 14 recent NLU benchmarks, showing that instruction examples often exhibit concrete patterns, which are propagated by crowdworkers to the collected data. This extends previous work (Geva et al., 2019) and raises a new concern of whether we are modeling the dataset creator's instructions, rather than the task. Through a series of experiments, we show that, indeed, instruction bias can lead to overestimation of model performance, and that models struggle to generalize beyond biases originating in the crowdsourcing instructions. We further analyze the influence of instruction bias in terms of pattern frequency and model size, and derive concrete recommendations for creating future NLU benchmarks. "
+}

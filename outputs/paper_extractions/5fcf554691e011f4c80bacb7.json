@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "IC Authentication"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MeLPUF: Memory-in-Logic PUF",
+    "Cross-coupled inverters as entropy source",
+    "Distributed authentication",
+    "Standard logic synthesis tool"
+  ],
+  "results": [
+    "High quality in uniqueness, randomness, robustness",
+    "Modest overhead",
+    "Scalability by aggregating power-up states"
+  ],
+  "paper_id": "5fcf554691e011f4c80bacb7",
+  "title": "MeLPUF: Memory-in-Logic PUF Structures for Low-Overhead IC\n  Authentication",
+  "abstract": "  Physically Unclonable Functions (PUFs) are used for securing electronic devices across the implementation spectrum ranging from Field Programmable Gate Array (FPGA) to system on chips (SoCs). However, existing PUF implementations often suffer from one or more significant deficiencies: (1) significant design overhead; (2) difficulty to configure and integrate based on application-specific requirements; (3) vulnerability to model-building attacks; and (4) spatial locality to a specific region of a chip. These factors limit their application in the authentication of designs used in diverse applications. In this work, we propose MeLPUF: Memory-in-Logic PUF; a low-overhead, distributed PUF that leverages the existing logic gates in a design to create cross-coupled inverters (i.e., memory cells) in a logic circuit as an entropy source. It exploits these memory cells' power-up states as the entropy source to generate device-specific unique fingerprints. A dedicated control signal governs these on-demand memory cells. They can be dispersed across the combinational logic of a design to achieve distributed authentication. They can also be synthesized with a standard logic synthesis tool to meet the target area, power, and performance constraints. We evaluate the quality of MeLPUF signatures with circuit-level simulations and experimental measurements using FPGA silicon (TSMC 55nm process). Our analysis shows the high quality of the PUF in terms of uniqueness, randomness, and robustness while incurring modest overhead. We further demonstrate the scalability of MeLPUF by aggregating power-up states from multiple memory cells, thus creating PUF signatures or digital identifiers of varying lengths. Additionally, we suggest optimization techniques that can be leveraged to boost the performance of MeLPUF further. "
+}

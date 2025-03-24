@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sound Event Localization and Detection (SELD)"
+  ],
+  "datasets": [
+    "DCASE 2020",
+    "DCASE 2022"
+  ],
+  "methods": [
+    "Four-stage data augmentation",
+    "ResNet-Conformer based acoustic modeling",
+    "Audio channel swapping (ACS)",
+    "Multi-channel simulation (MCS)",
+    "Time-domain mixing (TDM)",
+    "Time-frequency masking (TFM)"
+  ],
+  "results": [
+    "First place in SELD task of DCASE 2020 Challenge",
+    "First place in DCASE 2022 SELD evaluations"
+  ],
+  "paper_id": "5ffc1e4391e0114136dcc391",
+  "title": "A Four-Stage Data Augmentation Approach to ResNet-Conformer Based\n  Acoustic Modeling for Sound Event Localization and Detection",
+  "abstract": "  In this paper, we propose a novel four-stage data augmentation approach to ResNet-Conformer based acoustic modeling for sound event localization and detection (SELD). First, we explore two spatial augmentation techniques, namely audio channel swapping (ACS) and multi-channel simulation (MCS), to deal with data sparsity in SELD. ACS and MDS focus on augmenting the limited training data with expanding direction of arrival (DOA) representations such that the acoustic models trained with the augmented data are robust to localization variations of acoustic sources. Next, time-domain mixing (TDM) and time-frequency masking (TFM) are also investigated to deal with overlapping sound events and data diversity. Finally, ACS, MCS, TDM and TFM are combined in a step-by-step manner to form an effective four-stage data augmentation scheme. Tested on the Detection and Classification of Acoustic Scenes and Events (DCASE) 2020 data set, our proposed augmentation approach greatly improves the system performance, ranking our submitted system in the first place in the SELD task of the DCASE 2020 Challenge. Furthermore, we employ a ResNet-Conformer architecture to model both global and local context dependencies of an audio sequence and win the first place in the DCASE 2022 SELD evaluations. "
+}

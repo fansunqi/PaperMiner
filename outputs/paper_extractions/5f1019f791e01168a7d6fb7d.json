@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text Recognition"
+  ],
+  "datasets": [
+    "public benchmark"
+  ],
+  "methods": [
+    "FedBoosting",
+    "Federated Learning with Gradient Protected Boosting",
+    "Homomorphic Encryption",
+    "Differential Privacy"
+  ],
+  "results": [
+    "noticeable improvements in prediction accuracy and run-time efficiency"
+  ],
+  "paper_id": "5f1019f791e01168a7d6fb7d",
+  "title": "FedBoosting: Federated Learning with Gradient Protected Boosting for\n  Text Recognition",
+  "abstract": "  Typical machine learning approaches require centralized data for model training, which may not be possible where restrictions on data sharing are in place due to, for instance, privacy and gradient protection. The recently proposed Federated Learning (FL) framework allows learning a shared model collaboratively without data being centralized or shared among data owners. However, we show in this paper that the generalization ability of the joint model is poor on Non-Independent and Non-Identically Distributed (Non-IID) data, particularly when the Federated Averaging (FedAvg) strategy is used due to the weight divergence phenomenon. Hence, we propose a novel boosting algorithm for FL to address both the generalization and gradient leakage issues, as well as achieve faster convergence in gradient-based optimization. In addition, a secure gradient sharing protocol using Homomorphic Encryption (HE) and Differential Privacy (DP) is introduced to defend against gradient leakage attack and avoid pairwise encryption that is not scalable. We demonstrate the proposed Federated Boosting (FedBoosting) method achieves noticeable improvements in both prediction accuracy and run-time efficiency in a visual text recognition task on public benchmark. "
+}

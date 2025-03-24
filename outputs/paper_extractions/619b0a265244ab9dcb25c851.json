@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Single Source All Destinations Distance Queries in Temporal Graphs",
+    "Temporal Closeness Ranking"
+  ],
+  "datasets": [
+    "real-world temporal networks"
+  ],
+  "methods": [
+    "Substream index",
+    "Greedy approximation",
+    "Min-hashing",
+    "Parallelization"
+  ],
+  "results": [
+    "Running time improvement of up to one order of magnitude compared to state-of-the-art temporal closeness ranking algorithms"
+  ],
+  "paper_id": "619b0a265244ab9dcb25c851",
+  "title": "An Index for Single Source All Destinations Distance Queries in Temporal\n  Graphs",
+  "abstract": "  Temporal closeness is a generalization of the classical closeness centrality measure for analyzing evolving networks. The temporal closeness of a vertex $v$ is defined as the sum of the reciprocals of the temporal distances to the other vertices. Ranking all vertices of a network according to the temporal closeness is computationally expensive as it leads to a single-source-all-destination (SSAD) temporal distance query starting from each vertex of the graph. To reduce the running time of temporal closeness computations, we introduce an index to speed up SSAD temporal distance queries called Substream index. We show that deciding if a Substream index of a given size exists is NP-complete and provide an efficient greedy approximation. Moreover, we improve the running time of the approximation using min-hashing and parallelization. Our evaluation with real-world temporal networks shows a running time improvement of up to one order of magnitude compared to the state-of-the-art temporal closeness ranking algorithms. "
+}

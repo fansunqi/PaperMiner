@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Training"
+  ],
+  "datasets": [
+    "tabular data",
+    "vision data"
+  ],
+  "methods": [
+    "Approximated Robust Upper Bound (aRUB)",
+    "Robust Upper Bound (RUB)"
+  ],
+  "results": [
+    "RUB is more robust than state-of-the-art methods for larger perturbations",
+    "aRUB matches the performance of state-of-the-art methods for small perturbations"
+  ],
+  "paper_id": "61bff4275244ab9dcb79c77b",
+  "title": "Robust Upper Bounds for Adversarial Training",
+  "abstract": "  Many state-of-the-art adversarial training methods for deep learning leverage upper bounds of the adversarial loss to provide security guarantees against adversarial attacks. Yet, these methods rely on convex relaxations to propagate lower and upper bounds for intermediate layers, which affect the tightness of the bound at the output layer. We introduce a new approach to adversarial training by minimizing an upper bound of the adversarial loss that is based on a holistic expansion of the network instead of separate bounds for each layer. This bound is facilitated by state-of-the-art tools from Robust Optimization; it has closed-form and can be effectively trained using backpropagation. We derive two new methods with the proposed approach. The first method (Approximated Robust Upper Bound or aRUB) uses the first order approximation of the network as well as basic tools from Linear Robust Optimization to obtain an empirical upper bound of the adversarial loss that can be easily implemented. The second method (Robust Upper Bound or RUB), computes a provable upper bound of the adversarial loss. Across a variety of tabular and vision data sets we demonstrate the effectiveness of our approach -- RUB is substantially more robust than state-of-the-art methods for larger perturbations, while aRUB matches the performance of state-of-the-art methods for small perturbations. "
+}

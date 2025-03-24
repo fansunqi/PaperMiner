@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Energy-efficient neural network training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "S$^3$NN (Single-Step Spiking Neural Network)",
+    "Reduced surrogate gradient for single-time step"
+  ],
+  "results": [
+    "S$^3$NN achieves comparable accuracy to full-precision networks",
+    "High energy efficiency and low computational cost"
+  ],
+  "paper_id": "61f20d665244ab9dcb8bf1de",
+  "title": "S$^3$NN: Time Step Reduction of Spiking Surrogate Gradients for Training\n  Energy Efficient Single-Step Spiking Neural Networks",
+  "abstract": "  As the scales of neural networks increase, techniques that enable them to run with low computational cost and energy efficiency are required. From such demands, various efficient neural network paradigms, such as spiking neural networks (SNNs) or binary neural networks (BNNs), have been proposed. However, they have sticky drawbacks, such as degraded inference accuracy and latency. To solve these problems, we propose a single-step spiking neural network (S$^3$NN), an energy-efficient neural network with low computational cost and high precision. The proposed S$^3$NN processes the information between hidden layers by spikes as SNNs. Nevertheless, it has no temporal dimension so that there is no latency within training and inference phases as BNNs. Thus, the proposed S$^3$NN has a lower computational cost than SNNs that require time-series processing. However, S$^3$NN cannot adopt na\\\"{i}ve backpropagation algorithms due to the non-differentiability nature of spikes. We deduce a suitable neuron model by reducing the surrogate gradient for multi-time step SNNs to a single-time step. We experimentally demonstrated that the obtained surrogate gradient allows S$^3$NN to be trained appropriately. We also showed that the proposed S$^3$NN could achieve comparable accuracy to full-precision networks while being highly energy-efficient. "
+}

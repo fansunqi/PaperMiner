@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian imaging",
+    "computational imaging"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conditional Injective Flows (C-Trumpets)",
+    "fixed-volume-change layers",
+    "skip-connection revnet layers"
+  ],
+  "results": [
+    "C-Trumpets outperform regular conditional flow models",
+    "lower compute and memory budget",
+    "fast approximation of point estimates like MMSE or MAP",
+    "physically-meaningful uncertainty quantification"
+  ],
+  "paper_id": "625e1a335aee126c0feca48a",
+  "title": "Conditional Injective Flows for Bayesian Imaging",
+  "abstract": "  Most deep learning models for computational imaging regress a single reconstructed image. In practice, however, ill-posedness, nonlinearity, model mismatch, and noise often conspire to make such point estimates misleading or insufficient. The Bayesian approach models images and (noisy) measurements as jointly distributed random vectors and aims to approximate the posterior distribution of unknowns. Recent variational inference methods based on conditional normalizing flows are a promising alternative to traditional MCMC methods, but they come with drawbacks: excessive memory and compute demands for moderate to high resolution images and underwhelming performance on hard nonlinear problems. In this work, we propose C-Trumpets -- conditional injective flows specifically designed for imaging problems, which greatly diminish these challenges. Injectivity reduces memory footprint and training time while low-dimensional latent space together with architectural innovations like fixed-volume-change layers and skip-connection revnet layers, C-Trumpets outperform regular conditional flow models on a variety of imaging and image restoration tasks, including limited-view CT and nonlinear inverse scattering, with a lower compute and memory budget. C-Trumpets enable fast approximation of point estimates like MMSE or MAP as well as physically-meaningful uncertainty quantification. "
+}

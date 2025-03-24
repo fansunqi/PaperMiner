@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Infinite-horizon LQR control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic regret minimization",
+    "Regret-optimal controller design",
+    "Nehari extension problem reduction",
+    "Sum of $H_2$ state-feedback law and $n$-th order controller"
+  ],
+  "results": [
+    "Explicit formulas for optimal regret and regret-optimal controller",
+    "Controller interpolates between $H_2$ and $H_\\infty$ optimal controllers",
+    "Simultaneously close $H_2$ and $H_\\infty$ costs to their optimal values"
+  ],
+  "paper_id": "6092694991e0113f3a70534d",
+  "title": "Regret-Optimal LQR Control",
+  "abstract": "  We consider the infinite-horizon LQR control problem. Motivated by competitive analysis in online learning, as a criterion for controller design we introduce the dynamic regret, defined as the difference between the LQR cost of a causal controller (that has only access to past disturbances) and the LQR cost of the \\emph{unique} clairvoyant one (that has also access to future disturbances) that is known to dominate all other controllers. The regret itself is a function of the disturbances, and we propose to find a causal controller that minimizes the worst-case regret over all bounded energy disturbances. The resulting controller has the interpretation of guaranteeing the smallest regret compared to the best non-causal controller that can see the future. We derive explicit formulas for the optimal regret and for the regret-optimal controller for the state-space setting. These explicit solutions are obtained by showing that the regret-optimal control problem can be reduced to a Nehari extension problem that can be solved explicitly. The regret-optimal controller is shown to be linear and can be expressed as the sum of the classical $H_2$ state-feedback law and an $n$-th order controller ($n$ is the state dimension), and its construction simply requires a solution to the standard LQR Riccati equation and two Lyapunov equations. Simulations over a range of plants demonstrate that the regret-optimal controller interpolates nicely between the $H_2$ and the $H_\\infty$ optimal controllers, and generally has $H_2$ and $H_\\infty$ costs that are simultaneously close to their optimal values. The regret-optimal controller thus presents itself as a viable option for control systems design. "
+}

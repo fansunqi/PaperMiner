@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "undersampled CT reconstruction",
+    "undersampled radial MRI reconstruction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Primal-Dual UNet",
+    "sinogram upsampling",
+    "Fourier transform-based pre-processing"
+  ],
+  "results": [
+    "average SSIM of 0.932\u00b10.021 for sparse CT reconstruction with sparsity level of 16",
+    "average SSIM of 0.903\u00b10.019 for undersampled brain MRI with acceleration factor of 16",
+    "average SSIM of 0.957\u00b10.023 for undersampled abdominal MRI with acceleration factor of 16"
+  ],
+  "paper_id": "61ca80355244ab9dcba6991c",
+  "title": "Sinogram upsampling using Primal-Dual UNet for undersampled CT and\n  radial MRI reconstruction",
+  "abstract": "  Computed tomography and magnetic resonance imaging are two widely used clinical imaging modalities for non-invasive diagnosis. However, both of these modalities come with certain problems. CT uses harmful ionising radiation, and MRI suffers from slow acquisition speed. Both problems can be tackled by undersampling, such as sparse sampling. However, such undersampled data leads to lower resolution and introduces artefacts. Several techniques, including deep learning based methods, have been proposed to reconstruct such data. However, the undersampled reconstruction problem for these two modalities was always considered as two different problems and tackled separately by different research works. This paper proposes a unified solution for both sparse CT and undersampled radial MRI reconstruction, achieved by applying Fourier transform-based pre-processing on the radial MRI and then finally reconstructing both modalities using sinogram upsampling combined with filtered back-projection. The Primal-Dual network is a deep learning based method for reconstructing sparsely-sampled CT data. This paper introduces Primal-Dual UNet, which improves the Primal-Dual network in terms of accuracy and reconstruction speed. The proposed method resulted in an average SSIM of 0.932\\textpm0.021 while performing sparse CT reconstruction for fan-beam geometry with a sparsity level of 16, achieving a statistically significant improvement over the previous model, which resulted in 0.919\\textpm0.016. Furthermore, the proposed model resulted in 0.903\\textpm0.019 and 0.957\\textpm0.023 average SSIM while reconstructing undersampled brain and abdominal MRI data with an acceleration factor of 16, respectively - statistically significant improvements over the original model, which resulted in 0.867\\textpm0.025 and 0.949\\textpm0.025. "
+}

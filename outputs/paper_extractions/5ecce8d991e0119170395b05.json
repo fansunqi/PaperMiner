@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Profiling resource utilization of containerized big data pipelines"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Container Profiler",
+    "Time series profiling",
+    "Collecting Linux OS metrics at VM, container, and process levels"
+  ],
+  "results": [
+    "Continuous monitoring of resource consumption",
+    "Assessment of CPU, disk, and network utilization patterns",
+    "Negligible profiling overhead"
+  ],
+  "paper_id": "5ecce8d991e0119170395b05",
+  "title": "Container Profiler: Profiling Resource Utilization of Containerized Big\n  Data Pipelines",
+  "abstract": "  This paper presents the Container Profiler, a software tool that measures and records the resource usage of any containerized task. Our tool profiles the CPU, memory, disk, and network utilization of containerized tasks collecting over fifty Linux operating system metrics at the virtual machine, container, and process levels. The Container Profiler supports performing time series profiling at a configurable sampling interval to enable continuous monitoring of the resources consumed by containerized tasks and pipelines. To investigate the utility of the Container Profiler, we profile the resource utilization requirements of a multi-stage bioinformatics analytical pipeline (RNA sequencing using unique molecular identifiers). We examine profiling metrics to assess patterns of CPU, disk, and network resource utilization across the different stages of the pipeline. We also quantify the profiling overhead of our Container Profiler tool to assess the impact of profiling a running pipeline with different levels of profiling granularity verifying that impacts are negligible. The Container Profiler provides a useful tool that can be used to continuously monitor the resource consumption of long and complex containerized applications that run locally or on the cloud. This can help identify bottlenecks where more resources are needed to improve performance. "
+}

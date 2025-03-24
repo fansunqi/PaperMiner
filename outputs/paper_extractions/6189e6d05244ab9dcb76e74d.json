@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Attitude control of fixed-wing UAVs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep reinforcement learning (DRL)",
+    "Simulation-to-real transfer"
+  ],
+  "results": [
+    "DRL learns attitude control with as little as three minutes of flight data",
+    "Comparable performance to ArduPlane PID controller",
+    "No further online learning required after deployment"
+  ],
+  "paper_id": "6189e6d05244ab9dcb76e74d",
+  "title": "Data-Efficient Deep Reinforcement Learning for Attitude Control of\n  Fixed-Wing UAVs: Field Experiments",
+  "abstract": "  Attitude control of fixed-wing unmanned aerial vehicles (UAVs) is a difficult control problem in part due to uncertain nonlinear dynamics, actuator constraints, and coupled longitudinal and lateral motions. Current state-of-the-art autopilots are based on linear control and are thus limited in their effectiveness and performance. Deep reinforcement learning (DRL) is a machine learning method to automatically discover optimal control laws through interaction with the controlled system, which can handle complex nonlinear dynamics. We show in this paper that DRL can successfully learn to perform attitude control of a fixed-wing UAV operating directly on the original nonlinear dynamics, requiring as little as three minutes of flight data. We initially train our model in a simulation environment and then deploy the learned controller on the UAV in flight tests, demonstrating comparable performance to the state-of-the-art ArduPlane proportional-integral-derivative (PID) attitude controller with no further online learning required. Learning with significant actuation delay and diversified simulated dynamics were found to be crucial for successful transfer to control of the real UAV. In addition to a qualitative comparison with the ArduPlane autopilot, we present a quantitative assessment based on linear analysis to better understand the learning controller's behavior. "
+}

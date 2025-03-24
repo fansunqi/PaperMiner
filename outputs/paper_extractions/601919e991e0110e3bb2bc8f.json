@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Freight Booking Control"
+  ],
+  "datasets": [
+    "distributional logistics",
+    "airline cargo management"
+  ],
+  "methods": [
+    "two-phase approach",
+    "supervised learning model for objective prediction",
+    "reinforcement learning for control policies"
+  ],
+  "results": [
+    "general approach for computationally hard operational problems",
+    "leverages advances in reinforcement learning"
+  ],
+  "paper_id": "601919e991e0110e3bb2bc8f",
+  "title": "Reinforcement Learning for Freight Booking Control Problems",
+  "abstract": "  Booking control problems are sequential decision-making problems that occur in the domain of revenue management. More precisely, freight booking control focuses on the problem of deciding to accept or reject bookings: given a limited capacity, accept a booking request or reject it to reserve capacity for future bookings with potentially higher revenue. This problem can be formulated as a finite-horizon stochastic dynamic program, where accepting a set of requests results in a profit at the end of the booking period that depends on the cost of fulfilling the accepted bookings. For many freight applications, the cost of fulfilling requests is obtained by solving an operational decision-making problem, which often requires the solutions to mixed-integer linear programs. Routinely solving such operational problems when deploying reinforcement learning algorithms may be too time consuming. The majority of booking control policies are obtained by solving problem-specific mathematical programming relaxations that are often non-trivial to generalize to new problems and, in some cases, provide quite crude approximations.   In this work, we propose a two-phase approach: we first train a supervised learning model to predict the objective of the operational problem, and then we deploy the model within reinforcement learning algorithms to compute control policies. This approach is general: it can be used every time the objective function of the end-of-horizon operational problem can be predicted, and it is particularly suitable to those cases where such problems are computationally hard. Furthermore, it allows one to leverage the recent advances in reinforcement learning as routinely solving the operational problem is replaced with a single prediction. Our methodology is evaluated on two booking control problems in the literature, namely, distributional logistics and airline cargo management. "
+}

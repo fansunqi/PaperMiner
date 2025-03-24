@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "MRI reconstruction"
+  ],
+  "datasets": [
+    "open dataset"
+  ],
+  "methods": [
+    "Bayesian MRI reconstruction",
+    "Markov chain Monte Carlo (MCMC)",
+    "Maximum a posteriori (MAP) estimate",
+    "Minimum mean square error (MMSE) estimate",
+    "Reverse diffusion process"
+  ],
+  "results": [
+    "Efficient sampling from learned probability distributions",
+    "10-fold undersampling in k-space evaluation"
+  ],
+  "paper_id": "61fc99475aee126c0fcdcd3b",
+  "title": "Bayesian MRI Reconstruction with Joint Uncertainty Estimation using\n  Diffusion Models",
+  "abstract": "  We introduce a framework that enables efficient sampling from learned probability distributions for MRI reconstruction. Different from conventional deep learning-based MRI reconstruction techniques, samples are drawn from the posterior distribution given the measured k-space using the Markov chain Monte Carlo (MCMC) method. In addition to the maximum a posteriori (MAP) estimate for the image, which can be obtained with conventional methods, the minimum mean square error (MMSE) estimate and uncertainty maps can also be computed. The data-driven Markov chains are constructed from the generative model learned from a given image database and are independent of the forward operator that is used to model the k-space measurement. This provides flexibility because the method can be applied to k-space acquired with different sampling schemes or receive coils using the same pre-trained models. Furthermore, we use a framework based on a reverse diffusion process to be able to utilize advanced generative models. The performance of the method is evaluated on an open dataset using 10-fold undersampling in k-space. "
+}

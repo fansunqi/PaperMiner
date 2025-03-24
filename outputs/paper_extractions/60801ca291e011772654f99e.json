@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "multi-agent batch reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Approximated Multi-Agent Fitted Q Iteration (AMAFQI)",
+    "iterative policy search",
+    "multiple approximations of the centralized, learned Q-function"
+  ],
+  "results": [
+    "AMAFQI requires computations that scale linearly with the number of agents",
+    "significant computation time reduction compared to FQI",
+    "similar performance to FQI"
+  ],
+  "paper_id": "60801ca291e011772654f99e",
+  "title": "Approximated Multi-Agent Fitted Q Iteration",
+  "abstract": "  We formulate an efficient approximation for multi-agent batch reinforcement learning, the approximated multi-agent fitted Q iteration (AMAFQI). We present a detailed derivation of our approach. We propose an iterative policy search and show that it yields a greedy policy with respect to multiple approximations of the centralized, learned Q-function. In each iteration and policy evaluation, AMAFQI requires a number of computations that scales linearly with the number of agents whereas the analogous number of computations increase exponentially for the fitted Q iteration (FQI), a commonly used approaches in batch reinforcement learning. This property of AMAFQI is fundamental for the design of a tractable multi-agent approach. We evaluate the performance of AMAFQI and compare it to FQI in numerical simulations. The simulations illustrate the significant computation time reduction when using AMAFQI instead of FQI in multi-agent problems and corroborate the similar performance of both approaches. "
+}

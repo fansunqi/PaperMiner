@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Constrained regret minimization for multi-criterion multi-armed bandits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Con-LCB algorithm"
+  ],
+  "results": [
+    "Guarantees logarithmic regret",
+    "Correctly identifies feasibility/infeasibility with high probability",
+    "Optimal within a universal constant",
+    "Establishes trade-off between regret minimization and feasibility identification"
+  ],
+  "paper_id": "5eede0b091e0116a23aafa99",
+  "title": "Constrained regret minimization for multi-criterion multi-armed bandits",
+  "abstract": "  We consider a stochastic multi-armed bandit setting and study the problem of constrained regret minimization over a given time horizon. Each arm is associated with an unknown, possibly multi-dimensional distribution, and the merit of an arm is determined by several, possibly conflicting attributes. The aim is to optimize a 'primary' attribute subject to user-provided constraints on other 'secondary' attributes. We assume that the attributes can be estimated using samples from the arms' distributions, and that the estimators enjoy suitable concentration properties. We propose an algorithm called Con-LCB that guarantees a logarithmic regret, i.e., the average number of plays of all non-optimal arms is at most logarithmic in the horizon. The algorithm also outputs a Boolean flag that correctly identifies, with high probability, whether the given instance is feasible/infeasible with respect to the constraints. We also show that Con-LCB is optimal within a universal constant, i.e., that more sophisticated algorithms cannot do much better universally. Finally, we establish a fundamental trade-off between regret minimization and feasibility identification. Our framework finds natural applications, for instance, in financial portfolio optimization, where risk constrained maximization of expected return is meaningful. "
+}

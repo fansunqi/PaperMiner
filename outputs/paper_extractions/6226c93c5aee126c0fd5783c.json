@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Android Malware Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DroidRL",
+    "DDQN",
+    "Exploration-Exploitation Policy",
+    "RNN",
+    "Word Embedding"
+  ],
+  "results": [
+    "95.6% accuracy with only 24 features selected"
+  ],
+  "paper_id": "6226c93c5aee126c0fd5783c",
+  "title": "DroidRL: Reinforcement Learning Driven Feature Selection for Android\n  Malware Detection",
+  "abstract": "  Due to the completely open-source nature of Android, the exploitable vulnerability of malware attacks is increasing. Machine learning, leading to a great evolution in Android malware detection in recent years, is typically applied in the classification phase. Since the correlation between features is ignored in some traditional ranking-based feature selection algorithms, applying wrapper-based feature selection models is a topic worth investigating. Though considering the correlation between features, wrapper-based approaches are time-consuming for exploring all possible valid feature subsets when processing a large number of Android features. To reduce the computational expense of wrapper-based feature selection, a framework named DroidRL is proposed. The framework deploys DDQN algorithm to obtain a subset of features which can be used for effective malware classification. To select a valid subset of features over a larger range, the exploration-exploitation policy is applied in the model training phase. The recurrent neural network (RNN) is used as the decision network of DDQN to give the framework the ability to sequentially select features. Word embedding is applied for feature representation to enhance the framework's ability to find the semantic relevance of features. The framework's feature selection exhibits high performance without any human intervention and can be ported to other feature selection tasks with minor changes. The experiment results show a significant effect when using the Random Forest as DroidRL's classifier, which reaches 95.6% accuracy with only 24 features selected. "
+}

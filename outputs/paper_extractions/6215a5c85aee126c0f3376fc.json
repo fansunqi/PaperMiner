@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Causal effect estimation",
+    "Continuous partial identification problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stochastic causal programming",
+    "Constrained optimization",
+    "Monte Carlo methods"
+  ],
+  "results": [
+    "Efficient formulation in settings with pre-treatment and post-treatment auxiliary variables",
+    "Avoids fully specifying distribution family of hidden common causes",
+    "More computationally stable algorithms"
+  ],
+  "paper_id": "6215a5c85aee126c0f3376fc",
+  "title": "Stochastic Causal Programming for Bounding Treatment Effects",
+  "abstract": "  Causal effect estimation is important for many tasks in the natural and social sciences. We design algorithms for the continuous partial identification problem: bounding the effects of multivariate, continuous treatments when unmeasured confounding makes identification impossible. Specifically, we cast causal effects as objective functions within a constrained optimization problem, and minimize/maximize these functions to obtain bounds. We combine flexible learning algorithms with Monte Carlo methods to implement a family of solutions under the name of stochastic causal programming. In particular, we show how the generic framework can be efficiently formulated in settings where auxiliary variables are clustered into pre-treatment and post-treatment sets, where no fine-grained causal graph can be easily specified. In these settings, we can avoid the need for fully specifying the distribution family of hidden common causes. Monte Carlo computation is also much simplified, leading to algorithms which are more computationally stable against alternatives. "
+}

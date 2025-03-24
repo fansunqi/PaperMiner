@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning in Time-Varying Systems"
+  ],
+  "datasets": [
+    "real-world and synthetic data"
+  ],
+  "methods": [
+    "Characterize challenges of non-stationarity",
+    "Robust framework for training RL agents in live systems",
+    "Identify different environments",
+    "Trigger exploration",
+    "Retain knowledge from prior environments",
+    "Employ safeguards for system performance"
+  ],
+  "results": [
+    "All framework components necessary for coping with non-stationarity",
+    "Guidance on alternative design choices for each component"
+  ],
+  "paper_id": "61e7815a5244ab9dcbf99ca0",
+  "title": "Demystifying Reinforcement Learning in Time-Varying Systems",
+  "abstract": "  Recent research has turned to Reinforcement Learning (RL) to solve challenging decision problems, as an alternative to hand-tuned heuristics. RL can learn good policies without the need for modeling the environment's dynamics. Despite this promise, RL remains an impractical solution for many real-world systems problems. A particularly challenging case occurs when the environment changes over time, i.e. it exhibits non-stationarity. In this work, we characterize the challenges introduced by non-stationarity, shed light on the range of approaches to them and develop a robust framework for addressing them to train RL agents in live systems. Such agents must explore and learn new environments, without hurting the system's performance, and remember them over time. To this end, our framework (i) identifies different environments encountered by the live system, (ii) triggers exploration when necessary, (iii) takes precautions to retain knowledge from prior environments, and (iv) employs safeguards to protect the system's performance when the RL agent makes mistakes. We apply our framework to two systems problems, straggler mitigation and adaptive video streaming, and evaluate it against a variety of alternative approaches using real-world and synthetic data. We show that all components of the framework are necessary to cope with non-stationarity and provide guidance on alternative design choices for each component. "
+}

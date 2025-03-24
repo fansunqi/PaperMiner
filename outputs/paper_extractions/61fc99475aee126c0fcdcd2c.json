@@ -1,0 +1,66 @@
+{
+  "matching": [
+    {
+      "matching_rule": "\u989c\u8272\u5339\u914d",
+      "description": "\u6df1\u84dd\u8272\u88e4\u5b50\u4e0e\u6df1\u84dd\u8272\u886c\u886b\u5f62\u6210\u989c\u8272\u4e0a\u7684\u548c\u8c10\u7edf\u4e00\u3002"
+    },
+    {
+      "matching_rule": "\u6750\u8d28\u5339\u914d",
+      "description": "\u88e4\u5b50\u548c\u886c\u886b\u5747\u91c7\u7528\u68c9\u8d28\u6750\u6599\uff0c\u8d28\u611f\u76f8\u8fd1\uff0c\u589e\u52a0\u6574\u4f53\u534f\u8c03\u6027\u3002"
+    },
+    {
+      "matching_rule": "\u98ce\u683c\u5339\u914d",
+      "description": "\u4e24\u8005\u5747\u4e3a\u5546\u52a1\u4f11\u95f2\u98ce\u683c\uff0c\u9002\u5408\u6b63\u5f0f\u573a\u5408\u7a7f\u7740\u3002"
+    }
+  ],
+  "accessories": [
+    {
+      "type": "\u9886\u5e26",
+      "color": "\u6df1\u84dd\u8272",
+      "pattern": "\u7eaf\u8272",
+      "material": "\u4e1d\u7ef8",
+      "description": "\u6df1\u84dd\u8272\u4e1d\u7ef8\u9886\u5e26\uff0c\u589e\u6dfb\u5546\u52a1\u6b63\u5f0f\u611f\u3002"
+    },
+    {
+      "type": "\u76ae\u5e26",
+      "color": "\u9ed1\u8272",
+      "material": "\u771f\u76ae",
+      "description": "\u9ed1\u8272\u771f\u76ae\u76ae\u5e26\uff0c\u63d0\u5347\u6574\u4f53\u9020\u578b\u8d28\u611f\u3002"
+    },
+    {
+      "type": "\u624b\u8868",
+      "color": "\u94f6\u8272",
+      "material": "\u4e0d\u9508\u94a2",
+      "description": "\u94f6\u8272\u4e0d\u9508\u94a2\u624b\u8868\uff0c\u7b80\u7ea6\u5927\u65b9\uff0c\u9002\u5408\u5546\u52a1\u573a\u5408\u3002"
+    }
+  ],
+  "outfit_usage": [
+    {
+      "occasion": "\u5546\u52a1\u4f1a\u8bae",
+      "season": "\u56db\u5b63",
+      "description": "\u9002\u5408\u5404\u79cd\u5546\u52a1\u4f1a\u8bae\uff0c\u56db\u5b63\u7a7f\u7740\u7686\u5b9c\u3002"
+    },
+    {
+      "occasion": "\u6b63\u5f0f\u573a\u5408",
+      "season": "\u56db\u5b63",
+      "description": "\u9002\u5408\u6b63\u5f0f\u573a\u5408\uff0c\u5982\u9881\u5956\u5178\u793c\u3001\u91cd\u8981\u665a\u5bb4\u7b49\u3002"
+    }
+  ],
+  "maintenance": [
+    {
+      "instruction": "\u886c\u886b\u548c\u88e4\u5b50\u5efa\u8bae\u624b\u6d17\u6216\u5e72\u6d17\uff0c\u907f\u514d\u673a\u6d17\u5bfc\u81f4\u53d8\u5f62\u3002",
+      "frequency": "\u6bcf\u6b21\u7a7f\u7740\u540e"
+    },
+    {
+      "instruction": "\u9886\u5e26\u9700\u60ac\u6302\u5b58\u653e\uff0c\u907f\u514d\u6298\u75d5\u3002",
+      "frequency": "\u6bcf\u6b21\u4f7f\u7528\u540e"
+    },
+    {
+      "instruction": "\u76ae\u5e26\u548c\u624b\u8868\u9700\u5b9a\u671f\u64e6\u62ed\u4fdd\u517b\uff0c\u4fdd\u6301\u5149\u6cfd\u3002",
+      "frequency": "\u6bcf\u6708\u4e00\u6b21"
+    }
+  ],
+  "paper_id": "61fc99475aee126c0fcdcd2c",
+  "title": "Towards 3D Scene Reconstruction from Locally Scale-Aligned Monocular\n  Video Depth",
+  "abstract": "  Existing monocular depth estimation methods have achieved excellent robustness in diverse scenes, but they can only retrieve affine-invariant depth, up to an unknown scale and shift. However, in some video-based scenarios such as video depth estimation and 3D scene reconstruction from a video, the unknown scale and shift residing in per-frame prediction may cause the depth inconsistency. To solve this problem, we propose a locally weighted linear regression method to recover the scale and shift with very sparse anchor points, which ensures the scale consistency along consecutive frames. Extensive experiments show that our method can boost the performance of existing state-of-the-art approaches by 50% at most over several zero-shot benchmarks. Besides, we merge over 6.3 million RGBD images to train strong and robust depth models. Our produced ResNet50-backbone model even outperforms the state-of-the-art DPT ViT-Large model. Combining with geometry-based reconstruction methods, we formulate a new dense 3D scene reconstruction pipeline, which benefits from both the scale consistency of sparse points and the robustness of monocular methods. By performing the simple per-frame prediction over a video, the accurate 3D scene shape can be recovered. "
+}

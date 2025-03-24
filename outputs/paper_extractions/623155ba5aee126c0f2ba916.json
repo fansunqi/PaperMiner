@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fair binary classification at all decision thresholds"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Geometric Repair",
+    "Optimal transport-based post-processing algorithm",
+    "Formal measure of distributional parity"
+  ],
+  "results": [
+    "Maximizes distributional parity",
+    "Increases fair performance across all thresholds without significant decrease in accuracy"
+  ],
+  "paper_id": "623155ba5aee126c0f2ba916",
+  "title": "Geometric Repair for Fair Classification at Any Decision Threshold",
+  "abstract": "  We study the problem of post-processing a supervised machine-learned regressor to maximize fair binary classification at all decision thresholds. Specifically, we show that by decreasing the statistical distance between each group's score distributions, we can increase fair performance across all thresholds at once, and that we can do so without a significant decrease in accuracy. To this end, we introduce a formal measure of distributional parity, which captures the degree of similarity in the distributions of classifications for different protected groups. In contrast to prior work, which has been limited to studies of demographic parity across all thresholds, our measure applies to a large class of fairness metrics. Our main result is to put forward a novel post-processing algorithm based on optimal transport, which provably maximizes distributional parity. We support this result with experiments on several fairness benchmarks. "
+}

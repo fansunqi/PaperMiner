@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speaker Verification"
+  ],
+  "datasets": [
+    "RSR2015-Part II",
+    "DeepMine-Part 1"
+  ],
+  "methods": [
+    "Class Token for embedding extraction",
+    "Bayesian estimation of Class Token",
+    "Knowledge Distillation with distilled representation token"
+  ],
+  "results": [
+    "Competitive results compared to average pooling mechanism"
+  ],
+  "paper_id": "6189e6d05244ab9dcb76e3df",
+  "title": "Class Token and Knowledge Distillation for Multi-head Self-Attention\n  Speaker Verification Systems",
+  "abstract": "  This paper explores three novel approaches to improve the performance of speaker verification (SV) systems based on deep neural networks (DNN) using Multi-head Self-Attention (MSA) mechanisms and memory layers. Firstly, we propose the use of a learnable vector called Class token to replace the average global pooling mechanism to extract the embeddings. Unlike global average pooling, our proposal takes into account the temporal structure of the input what is relevant for the text-dependent SV task. The class token is concatenated to the input before the first MSA layer, and its state at the output is used to predict the classes. To gain additional robustness, we introduce two approaches. First, we have developed a Bayesian estimation of the class token. Second, we have added a distilled representation token for training a teacher-student pair of networks using the Knowledge Distillation (KD) philosophy, which is combined with the class token. This distillation token is trained to mimic the predictions from the teacher network, while the class token replicates the true label. All the strategies have been tested on the RSR2015-Part II and DeepMine-Part 1 databases for text-dependent SV, providing competitive results compared to the same architecture using the average pooling mechanism to extract average embeddings. "
+}

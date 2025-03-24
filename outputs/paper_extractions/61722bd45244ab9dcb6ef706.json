@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Architecture Search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ProxyBO: Bayesian Optimization with Zero-cost Proxies",
+    "Generalization Ability Measurement",
+    "Novel Acquisition Function"
+  ],
+  "results": [
+    "ProxyBO outperforms competitive baselines on five tasks",
+    "Up to 5.41x speedup over REA",
+    "Up to 3.86x speedup over BRP-NAS"
+  ],
+  "paper_id": "61722bd45244ab9dcb6ef706",
+  "title": "ProxyBO: Accelerating Neural Architecture Search via Bayesian\n  Optimization with Zero-cost Proxies",
+  "abstract": "  Designing neural architectures requires immense manual efforts. This has promoted the development of neural architecture search (NAS) to automate the design. While previous NAS methods achieve promising results but run slowly, zero-cost proxies run extremely fast but are less promising. Therefore, it is of great potential to accelerate NAS via those zero-cost proxies. The existing method has two limitations, which are unforeseeable reliability and one-shot usage. To address the limitations, we present ProxyBO, an efficient Bayesian optimization (BO) framework that utilizes the zero-cost proxies to accelerate neural architecture search. We apply the generalization ability measurement to estimate the fitness of proxies on the task during each iteration and design a novel acquisition function to combine BO with zero-cost proxies based on their dynamic influence. Extensive empirical studies show that ProxyBO consistently outperforms competitive baselines on five tasks from three public benchmarks. Concretely, ProxyBO achieves up to 5.41x and 3.86x speedups over the state-of-the-art approaches REA and BRP-NAS. "
+}

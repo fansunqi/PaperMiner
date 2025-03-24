@@ -121,7 +121,7 @@ def extract_paper_info(title, abstract):
 def main():
     # 读取论文元数据
     papers = read_all_meta_data()
-    papers = papers[:10]
+    # papers = papers[:10]
     print(f"Total number of papers: {len(papers)}")
     
     # 创建输出目录
@@ -133,9 +133,9 @@ def main():
     processed_ids = set()
     
     # 如果存在处理记录，加载它
-    # if os.path.exists(processed_ids_file):
-    #     with open(processed_ids_file, "r") as f:
-    #         processed_ids = set(line.strip() for line in f)
+    if os.path.exists(processed_ids_file):
+        with open(processed_ids_file, "r") as f:
+            processed_ids = set(line.strip() for line in f)
     
     # 处理每篇论文
     for paper in tqdm(papers, desc="Extracting paper information"):

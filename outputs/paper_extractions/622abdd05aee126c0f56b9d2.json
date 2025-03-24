@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated driving",
+    "Near-field perception",
+    "Parking visualization",
+    "Automated parking"
+  ],
+  "datasets": [
+    "SynWoodScape",
+    "WoodScape"
+  ],
+  "methods": [
+    "Surround-view fisheye geometric projections in CARLA Simulator"
+  ],
+  "results": [
+    "Released 80k images with annotations for 10+ tasks"
+  ],
+  "paper_id": "622abdd05aee126c0f56b9d2",
+  "title": "SynWoodScape: Synthetic Surround-view Fisheye Camera Dataset for\n  Autonomous Driving",
+  "abstract": "  Surround-view cameras are a primary sensor for automated driving, used for near-field perception. It is one of the most commonly used sensors in commercial vehicles primarily used for parking visualization and automated parking. Four fisheye cameras with a 190{\\deg} field of view cover the 360{\\deg} around the vehicle. Due to its high radial distortion, the standard algorithms do not extend easily. Previously, we released the first public fisheye surround-view dataset named WoodScape. In this work, we release a synthetic version of the surround-view dataset, covering many of its weaknesses and extending it. Firstly, it is not possible to obtain ground truth for pixel-wise optical flow and depth. Secondly, WoodScape did not have all four cameras annotated simultaneously in order to sample diverse frames. However, this means that multi-camera algorithms cannot be designed to obtain a unified output in birds-eye space, which is enabled in the new dataset. We implemented surround-view fisheye geometric projections in CARLA Simulator matching WoodScape's configuration and created SynWoodScape. We release 80k images from the synthetic dataset with annotations for 10+ tasks. We also release the baseline code and supporting scripts. "
+}

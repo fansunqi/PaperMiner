@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimization of PDE-constrained models with neural network terms"
+  ],
+  "datasets": [
+    "turbulent channel flow datasets"
+  ],
+  "methods": [
+    "Gradient descent with adjoint PDE",
+    "Non-local PDE system limit",
+    "Neural network as closure model for RANS equations"
+  ],
+  "results": [
+    "Convergence to global minimum during optimization",
+    "Evaluation of RANS neural network model out-of-sample at different Reynolds numbers"
+  ],
+  "paper_id": "60a4fbd891e011e398b0d104",
+  "title": "PDE-constrained Models with Neural Network Terms: Optimization and\n  Global Convergence",
+  "abstract": "  Recent research has used deep learning to develop partial differential equation (PDE) models in science and engineering. The functional form of the PDE is determined by a neural network, and the neural network parameters are calibrated to available data. Calibration of the embedded neural network can be performed by optimizing over the PDE. Motivated by these applications, we rigorously study the optimization of a class of linear elliptic PDEs with neural network terms. The neural network parameters in the PDE are optimized using gradient descent, where the gradient is evaluated using an adjoint PDE. As the number of parameters become large, the PDE and adjoint PDE converge to a non-local PDE system. Using this limit PDE system, we are able to prove convergence of the neural network-PDE to a global minimum during the optimization. Finally, we use this adjoint method to train a neural network model for an application in fluid mechanics, in which the neural network functions as a closure model for the Reynolds-averaged Navier--Stokes (RANS) equations. The RANS neural network model is trained on several datasets for turbulent channel flow and is evaluated out-of-sample at different Reynolds numbers. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Accelerating ODE-Based Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ODENet with Euler method",
+    "Reduced ODENets (rODENets)"
+  ],
+  "results": [
+    "Overall execution time improved by up to 2.66 times compared to pure software execution",
+    "Comparable accuracy to the original ODENet"
+  ],
+  "paper_id": "5fef13cf91e0113b265a011e",
+  "title": "Accelerating ODE-Based Neural Networks on Low-Cost FPGAs",
+  "abstract": "  ODENet is a deep neural network architecture in which a stacking structure of ResNet is implemented with an ordinary differential equation (ODE) solver. It can reduce the number of parameters and strike a balance between accuracy and performance by selecting a proper solver. It is also possible to improve the accuracy while keeping the same number of parameters on resource-limited edge devices. In this paper, using Euler method as an ODE solver, a part of ODENet is implemented as a dedicated logic on a low-cost FPGA (Field-Programmable Gate Array) board, such as PYNQ-Z2 board. As ODENet variants, reduced ODENets (rODENets) each of which heavily uses a part of ODENet layers and reduces/eliminates some layers differently are proposed and analyzed for low-cost FPGA implementation. They are evaluated in terms of parameter size, accuracy, execution time, and resource utilization on the FPGA. The results show that an overall execution time of an rODENet variant is improved by up to 2.66 times compared to a pure software execution while keeping a comparable accuracy to the original ODENet. "
+}

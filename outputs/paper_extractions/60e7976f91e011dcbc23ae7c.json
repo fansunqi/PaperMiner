@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/shohinm/parallel_search"
+  ],
+  "tasks": [
+    "planning problems",
+    "motion planning for 3D humanoid navigation",
+    "task and motion planning for robotic assembly"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Massively Parallelized Lazy Planning (MPLP)",
+    "asynchronous parallel graph searching and edge evaluations"
+  ],
+  "results": [
+    "MPLP outperforms state-of-the-art lazy search and parallel search algorithms",
+    "drastic improvement in planning time"
+  ],
+  "paper_id": "60e7976f91e011dcbc23ae7c",
+  "title": "MPLP: Massively Parallelized Lazy Planning",
+  "abstract": "  Lazy search algorithms have been developed to efficiently solve planning problems in domains where the computational effort is dominated by the cost of edge evaluation. The existing algorithms operate by intelligently balancing computational effort between searching the graph and evaluating edges. However, they are designed to run as a single process and do not leverage the multithreading capability of modern processors. In this work, we propose a massively parallelized, bounded suboptimal, lazy search algorithm (MPLP) that harnesses modern multi-core processors. In MPLP, searching of the graph and edge evaluations are performed completely asynchronously in parallel, leading to a drastic improvement in planning time. We validate the proposed algorithm in two different planning domains: 1) motion planning for 3D humanoid navigation and 2) task and motion planning for a robotic assembly task. We show that MPLP outperforms the state-of-the-art lazy search as well as parallel search algorithms. The open-source code for MPLP is available here: https://github.com/shohinm/parallel_search "
+}

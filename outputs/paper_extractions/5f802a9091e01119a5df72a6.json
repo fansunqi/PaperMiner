@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-Supervised Learning",
+    "Understanding the impact of Out-of-Distribution (OOD) data on SSL"
+  ],
+  "datasets": [
+    "synthetic datasets",
+    "real-world datasets"
+  ],
+  "methods": [
+    "Unified weighted robust SSL framework",
+    "Efficient bi-level optimization algorithm",
+    "Weighted batch normalization (WBN) procedure"
+  ],
+  "results": [
+    "Significantly enhances the robustness of four representative SSL algorithms against OODs",
+    "Outperforms four state-of-the-art robust SSL strategies"
+  ],
+  "paper_id": "5f802a9091e01119a5df72a6",
+  "title": "How Out-of-Distribution Data Hurts Semi-Supervised Learning",
+  "abstract": "  Recent semi-supervised learning algorithms have demonstrated greater success with higher overall performance due to better-unlabeled data representations. Nonetheless, recent research suggests that the performance of the SSL algorithm can be degraded when the unlabeled set contains out-of-distribution examples (OODs). This work addresses the following question: How do out-of-distribution (OOD) data adversely affect semi-supervised learning algorithms? To answer this question, we investigate the critical causes of OOD's negative effect on SSL algorithms. In particular, we found that 1) certain kinds of OOD data instances that are close to the decision boundary have a more significant impact on performance than those that are further away, and 2) Batch Normalization (BN), a popular module, may degrade rather than improve performance when the unlabeled set contains OODs. In this context, we developed a unified weighted robust SSL framework that can be easily extended to many existing SSL algorithms and improve their robustness against OODs. More specifically, we developed an efficient bi-level optimization algorithm that could accommodate high-order approximations of the objective and scale to multiple inner optimization steps to learn a massive number of weight parameters while outperforming existing low-order approximations of bi-level optimization. Further, we conduct a theoretical study of the impact of faraway OODs in the BN step and propose a weighted batch normalization (WBN) procedure for improved performance. Finally, we discuss the connection between our approach and low-order approximation techniques. Our experiments on synthetic and real-world datasets demonstrate that our proposed approach significantly enhances the robustness of four representative SSL algorithms against OODs compared to four state-of-the-art robust SSL strategies. "
+}

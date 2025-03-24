@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Partial domain adaptation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Select, Label, and Combine"
+  ],
+  "results": [
+    "Effectively address negative transfer, lack of discrimination, and domain invariance issues",
+    "Outperforms existing state-of-the-art methods in partial domain adaptation tasks"
+  ],
+  "paper_id": "5fcf5ebc91e011f4c80bad7b",
+  "title": "Select, Label, and Mix: Learning Discriminative Invariant Feature\n  Representations for Partial Domain Adaptation",
+  "abstract": "  Partial domain adaptation which assumes that the unknown target label space is a subset of the source label space has attracted much attention in computer vision. Despite recent progress, existing methods often suffer from three key problems: negative transfer, lack of discriminability, and domain invariance in the latent space. To alleviate the above issues, we develop a novel 'Select, Label, and Mix' (SLM) framework that aims to learn discriminative invariant feature representations for partial domain adaptation. First, we present an efficient \"select\" module that automatically filters out the outlier source samples to avoid negative transfer while aligning distributions across both domains. Second, the \"label\" module iteratively trains the classifier using both the labeled source domain data and the generated pseudo-labels for the target domain to enhance the discriminability of the latent space. Finally, the \"mix\" module utilizes domain mixup regularization jointly with the other two modules to explore more intrinsic structures across domains leading to a domain-invariant latent space for partial domain adaptation. Extensive experiments on several benchmark datasets for partial domain adaptation demonstrate the superiority of our proposed framework over state-of-the-art methods. "
+}

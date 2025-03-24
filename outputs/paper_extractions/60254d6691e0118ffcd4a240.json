@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum hardware under-utilization",
+    "Improving quantum hardware throughput"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantum Multi-programming Compiler (QuMC)",
+    "Parallelism manager",
+    "Greedy qubit partitioning algorithm",
+    "Heuristic qubit partitioning algorithm",
+    "Simultaneous Randomized Benchmarking protocol",
+    "Enhanced mapping transition algorithm"
+  ],
+  "results": [
+    " Executes multiple quantum circuits simultaneously",
+    "Reduces total runtime of circuits",
+    "Demonstrated on IBM quantum hardware",
+    "Investigated on VQE algorithm to reduce overhead"
+  ],
+  "paper_id": "60254d6691e0118ffcd4a240",
+  "title": "Enabling Multi-programming Mechanism for Quantum Computing in the NISQ\n  Era",
+  "abstract": "  NISQ devices have several physical limitations and unavoidable noisy quantum operations, and only small circuits can be executed on a quantum machine to get reliable results. This leads to the quantum hardware under-utilization issue. Here, we address this problem and improve the quantum hardware throughput by proposing a Quantum Multi-programming Compiler (QuMC) to execute multiple quantum circuits on quantum hardware simultaneously. This approach can also reduce the total runtime of circuits. We first introduce a parallelism manager to select an appropriate number of circuits to be executed at the same time. Second, we present two different qubit partitioning algorithms to allocate reliable partitions to multiple circuits - a greedy and a heuristic. Third, we use the Simultaneous Randomized Benchmarking protocol to characterize the crosstalk properties and consider them in the qubit partition process to avoid the crosstalk effect during simultaneous executions. Finally, we enhance the mapping transition algorithm to make circuits executable on hardware using a decreased number of inserted gates. We demonstrate the performance of our QuMC approach by executing circuits of different sizes on IBM quantum hardware simultaneously. We also investigate this method on VQE algorithm to reduce its overhead. "
+}

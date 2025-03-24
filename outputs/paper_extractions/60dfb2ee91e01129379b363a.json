@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Complexity analysis for C programs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "mwp-flow analysis",
+    "pymwp static complexity analyzer"
+  ],
+  "results": [
+    "Determines if program's variable growth rates are polynomially related to input sizes",
+    "Addresses computational expense and lack of feedback in previous mwp-flow analysis"
+  ],
+  "paper_id": "60dfb2ee91e01129379b363a",
+  "title": "pymwp: A Tool for Guaranteeing Complexity Bounds for C Programs",
+  "abstract": "  Complexity analysis offers assurance of program's runtime behavior, but large classes of programs remain unanalyzable by existing automated techniques.The mwp-flow analysis sidesteps many difficulties shared by existing approaches, and offers interesting features, such as compositionality, multivariate bounds, and applicability to non-terminating programs.It analyzes resource usage and determines if a program's variables growth rates are no more than polynomially related to their inputs sizes.This sound calculus, however, is computationally expensive to manipulate, and provides no feedback if the program does not have polynomial bounds.Those two defaults were addressed in a previous work, and prepared for the tool we present here: pymwp, a static complexity analyzer for C programs based on our improved mwp-flow analysis. "
+}

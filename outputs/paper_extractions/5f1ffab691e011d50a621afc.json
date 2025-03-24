@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multivariate Time Series Classification (MTSC)"
+  ],
+  "datasets": [
+    "UEA archive of 30 MTSC problems"
+  ],
+  "methods": [
+    "deep learning",
+    "shapelets",
+    "bag of words",
+    "ensemble of univariate classifiers",
+    "HIVE-COTE",
+    "dynamic time warping"
+  ],
+  "results": [
+    "HIVE-COTE is the most accurate",
+    "dynamic time warping remains competitive",
+    "new methods show promise but no clear winner"
+  ],
+  "paper_id": "5f1ffab691e011d50a621afc",
+  "title": "Benchmarking Multivariate Time Series Classification Algorithms",
+  "abstract": "  Time Series Classification (TSC) involved building predictive models for a discrete target variable from ordered, real valued, attributes. Over recent years, a new set of TSC algorithms have been developed which have made significant improvement over the previous state of the art. The main focus has been on univariate TSC, i.e. the problem where each case has a single series and a class label. In reality, it is more common to encounter multivariate TSC (MTSC) problems where multiple series are associated with a single label. Despite this, much less consideration has been given to MTSC than the univariate case. The UEA archive of 30 MTSC problems released in 2018 has made comparison of algorithms easier. We review recently proposed bespoke MTSC algorithms based on deep learning, shapelets and bag of words approaches. The simplest approach to MTSC is to ensemble univariate classifiers over the multivariate dimensions. We compare the bespoke algorithms to these dimension independent approaches on the 26 of the 30 MTSC archive problems where the data are all of equal length. We demonstrate that the independent ensemble of HIVE-COTE classifiers is the most accurate, but that, unlike with univariate classification, dynamic time warping is still competitive at MTSC. "
+}

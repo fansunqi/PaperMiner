@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "De-bias learning",
+    "Image classification",
+    "Adversarial question answering",
+    "Visual question answering"
+  ],
+  "datasets": "None",
+  "methods": [
+    "General Greedy De-bias learning (GGD)",
+    "Curriculum Regularization"
+  ],
+  "results": [
+    "GGD improves models' OOD generalization ability",
+    "GGD sometimes over-estimates bias level and degrades on in-distribution test",
+    "Curriculum Regularization achieves trade-off between in-distribution and out-of-distribution performance",
+    "GGD learns a more robust base model under task-specific biased models and self-ensemble biased model"
+  ],
+  "paper_id": "61c145c95244ab9dcb851aca",
+  "title": "General Greedy De-bias Learning",
+  "abstract": "  Neural networks often make predictions relying on the spurious correlations from the datasets rather than the intrinsic properties of the task of interest, facing sharp degradation on out-of-distribution (OOD) test data. Existing de-bias learning frameworks try to capture specific dataset bias by annotations but they fail to handle complicated OOD scenarios. Others implicitly identify the dataset bias by special design low capability biased models or losses, but they degrade when the training and testing data are from the same distribution. In this paper, we propose a General Greedy De-bias learning framework (GGD), which greedily trains the biased models and the base model. The base model is encouraged to focus on examples that are hard to solve with biased models, thus remaining robust against spurious correlations in the test stage. GGD largely improves models' OOD generalization ability on various tasks, but sometimes over-estimates the bias level and degrades on the in-distribution test. We further re-analyze the ensemble process of GGD and introduce the Curriculum Regularization inspired by curriculum learning, which achieves a good trade-off between in-distribution and out-of-distribution performance. Extensive experiments on image classification, adversarial question answering, and visual question answering demonstrate the effectiveness of our method. GGD can learn a more robust base model under the settings of both task-specific biased models with prior knowledge and self-ensemble biased model without prior knowledge. "
+}

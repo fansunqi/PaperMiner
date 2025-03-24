@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Proof complexity analysis in propositional logic"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Circular proofs",
+    "Circular Resolution",
+    "Sherali-Adams equivalence",
+    "Conversion of circular proofs to tree-like proofs"
+  ],
+  "results": [
+    "Circular Resolution is stronger than Dag-like Resolution",
+    "Polynomial size proofs for pigeonhole principle",
+    "Circular Resolution equivalent to Sherali-Adams",
+    "Polynomial-time LP-based algorithms for constant width proofs",
+    "Separation examples between Circular and Dag-like Resolution",
+    "Exponentially hard cases for Circular Resolution",
+    "Polynomial overhead for converting circular to tree-like proofs in Frege"
+  ],
+  "paper_id": "5f0597f5dfae54570ec5857b",
+  "title": "Circular (Yet Sound) Proofs",
+  "abstract": "  Proofs in propositional logic are typically presented as trees of derived formulas or, alternatively, as directed acyclic graphs of derived formulas. This distinction between tree-like vs. dag-like structure is particularly relevant when making quantitative considerations regarding, for example, proof size. Here we analyze a more general type of structural restriction for proofs in rule-based proof systems. In this definition, proofs are directed graphs of derived formulas in which cycles are allowed as long as every formula is derived at least as many times as it is required as a premise. We call such proofs \"circular\". We show that, for all sets of standard inference rules with single or multiple conclusions, circular proofs are sound. We start the study of the proof complexity of circular proofs at Circular Resolution, the circular version of Resolution. We immediately see that Circular Resolution is stronger than Dag-like Resolution since, as we show, the propositional encoding of the pigeonhole principle has circular Resolution proofs of polynomial size. Furthermore, for derivations of clauses from clauses, we show that Circular Resolution is, surprisingly, equivalent to Sherali-Adams, a proof system for reasoning through polynomial inequalities that has linear programming at its base. As corollaries we get: 1) polynomial-time (LP-based) algorithms that find Circular Resolution proofs of constant width, 2) examples that separate Circular from Dag-like Resolution, such as the pigeonhole principle and its variants, and 3) exponentially hard cases for Circular Resolution. Contrary to the case of Circular Resolution, for Frege we show that circular proofs can be converted into tree-like proofs with at most polynomial overhead. "
+}

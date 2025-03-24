@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Machine Unlearning",
+    "Adversarial Evaluation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Interclass Confusion (IC) test",
+    "EU-k baseline method",
+    "CF-k baseline method"
+  ],
+  "results": [
+    "IC test detects insufficiency of unlearning procedures",
+    "EU-k and CF-k outperform popular inexact unlearning methods"
+  ],
+  "paper_id": "61e781685244ab9dcbf9a80c",
+  "title": "Towards Adversarial Evaluations for Inexact Machine Unlearning",
+  "abstract": "  Machine Learning models face increased concerns regarding the storage of personal user data and adverse impacts of corrupted data like backdoors or systematic bias. Machine Unlearning can address these by allowing post-hoc deletion of affected training data from a learned model. Achieving this task exactly is computationally expensive; consequently, recent works have proposed inexact unlearning algorithms to solve this approximately as well as evaluation methods to test the effectiveness of these algorithms.   In this work, we first outline some necessary criteria for evaluation methods and show no existing evaluation satisfies them all. Then, we design a stronger black-box evaluation method called the Interclass Confusion (IC) test which adversarially manipulates data during training to detect the insufficiency of unlearning procedures. We also propose two analytically motivated baseline methods~(EU-k and CF-k) which outperform several popular inexact unlearning methods. Overall, we demonstrate how adversarial evaluation strategies can help in analyzing various unlearning phenomena which can guide the development of stronger unlearning algorithms. "
+}

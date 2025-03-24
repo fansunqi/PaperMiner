@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Min-max-min robust optimization",
+    "K-Adaptability under objective uncertainty"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Efficient algorithm for intermediate k values",
+    "Branch & bound method for arbitrary k values"
+  ],
+  "results": [
+    "Problem-specific additive and multiplicative approximation guarantees",
+    "Oracle-polynomial time solvability under certain conditions",
+    "Improved bounds for k-adaptability and recoverable robust optimization",
+    "Branch & bound method scales well with number of solutions"
+  ],
+  "paper_id": "60c1869191e0112cf43c2027",
+  "title": "Approximation Guarantees for Min-max-min Robust Optimization and\n  K-Adaptability under Objective Uncertainty",
+  "abstract": "  In this work we investigate the min-max-min robust optimization problem for binary problems with uncertain cost-vectors. The idea of the approach is to calculate a set of k feasible solutions which are worst-case optimal if in each possible scenario the best of the k solutions is implemented. It is known that the min-max-min robust problem can be solved efficiently if k is at least the dimension of the problem, while it is theoretically and computationally hard if k is small. While both cases are well studied in the literature nothing is known about the intermediate cases, i.e. k lies between one and the dimension of the problem. We approach this open question and provide an efficient algorithm which achieves problem-specific additive and multiplicative approximation guarantees for the cases where k is close to and where k is a fraction of the dimension. The derived bounds can be used to show that the min-max-min robust problem is solvable in oracle-polynomial time under certain conditions even if k is smaller than the dimension. We show that the derived approximation guarantees can be extended to the k-adaptability problem. As a consequence we can provide better bounds on the number of required second-stage policies to achieve a certain approximation guarantee for the exact two-stage robust problem. Additionally we can show that these bounds are also promising for recoverable robust optimization. Finally we incorporate our efficient approximation algorithm into a branch & bound method to solve the min-max-min problem for arbitrary values of k. The experiments show that the performance of the branch & bound method scales well with the number of solutions, confirming our theoretical insights. Thus we are able to solve instances where k is of intermediate size efficiently. "
+}

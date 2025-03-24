@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tensor Estimation from Sparse Observations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Similarity Based Collaborative Filtering",
+    "Nearest Neighbor Estimator"
+  ],
+  "results": [
+    "Sample complexity nearly matches conjectured lower bound for low-rank tensors",
+    "Maximum entry-wise error (MEE) and mean-squared-error (MSE) decay to 0 with probability p = \u03a9(n^{-3/2 + \u03ba})",
+    "Estimation error degrades by poly(\u03b5) under bounded noise",
+    "Error converges to poly(\u03b5) for tensors approximable by finite rank tensors"
+  ],
+  "paper_id": "5d4ac1eb3a55acb184527b45",
+  "title": "Robust Max Entrywise Error Bounds for Tensor Estimation from Sparse\n  Observations via Similarity Based Collaborative Filtering",
+  "abstract": "  Consider the task of estimating a 3-order $n \\times n \\times n$ tensor from noisy observations of randomly chosen entries in the sparse regime. We introduce a similarity based collaborative filtering algorithm for estimating a tensor from sparse observations and argue that it achieves sample complexity that nearly matches the conjectured computationally efficient lower bound on the sample complexity for the setting of low-rank tensors. Our algorithm uses the matrix obtained from the flattened tensor to compute similarity, and estimates the tensor entries using a nearest neighbor estimator. We prove that the algorithm recovers a finite rank tensor with maximum entry-wise error (MEE) and mean-squared-error (MSE) decaying to $0$ as long as each entry is observed independently with probability $p = \\Omega(n^{-3/2 + \\kappa})$ for any arbitrarily small $\\kappa > 0$. More generally, we establish robustness of the estimator, showing that when arbitrary noise bounded by $\\varepsilon \\geq 0$ is added to each observation, the estimation error with respect to MEE and MSE degrades by $\\text{poly}(\\varepsilon)$. Consequently, even if the tensor may not have finite rank but can be approximated within $\\varepsilon \\geq 0$ by a finite rank tensor, then the estimation error converges to $\\text{poly}(\\varepsilon)$. Our analysis sheds insight into the conjectured sample complexity lower bound, showing that it matches the connectivity threshold of the graph used by our algorithm for estimating similarity between coordinates. "
+}

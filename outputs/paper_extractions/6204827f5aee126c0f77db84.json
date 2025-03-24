@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Symbolic verification of cryptographic protocols",
+    "Insecurity problem analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Typed equality proofs",
+    "Extension of techniques from [RT03]"
+  ],
+  "results": [
+    "Insecurity problem for protocols with logical statements is in NP",
+    "Techniques can analyze insecurity problem for systems like Ramanujam et al. (2017)"
+  ],
+  "paper_id": "6204827f5aee126c0f77db84",
+  "title": "Insecurity problem for assertions remains in NP",
+  "abstract": "  In the symbolic verification of cryptographic protocols, a central problem is deciding whether a protocol admits an execution which leaks a designated secret to the malicious intruder. Rusinowitch and Turuani (2003) show that, when considering finitely many sessions and a protocol model where only terms are communicated, this ``insecurity problem'' is NP-complete. Central to their proof strategy is the observation that any execution of a protocol can be simulated by one where the intruder only communicates terms of bounded size.   However, when we consider models where, in addition to terms, one can also communicate logical formulas, the analysis of the insecurity problem becomes tricky. In this paper we consider the insecurity problem for protocols with logical statements that include equality on terms and existential quantification. Witnesses for existential quantifiers may be of unbounded size, and obtaining small witnesses while maintaining equality proofs complicates the analysis. We use a notion of \"typed\" equality proofs, and extend techniques from [RT03] to show that this problem is also in NP. We also show that these techniques can be used to analyze the insecurity problem for systems such as the one proposed in Ramanujam, Sundararajan and Suresh (2017). "
+}

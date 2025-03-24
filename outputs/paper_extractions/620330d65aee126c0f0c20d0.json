@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text-to-Image Retrieval",
+    "Adversarial Attack"
+  ],
+  "datasets": [
+    "Flickr30k",
+    "MS-COCO"
+  ],
+  "methods": [
+    "Trojan-horse Attack (THA)",
+    "Embedding word-specific adversarial information into QR code"
+  ],
+  "results": [
+    "Proof-of-concept evaluation shows effectiveness of THA in white-box mode"
+  ],
+  "paper_id": "620330d65aee126c0f0c20d0",
+  "title": "Towards Making a Trojan-horse Attack on Text-to-Image Retrieval",
+  "abstract": "  While deep learning based image retrieval is reported to be vulnerable to adversarial attacks, existing works are mainly on image-to-image retrieval with their attacks performed at the front end via query modification. By contrast, we present in this paper the first study about a threat that occurs at the back end of a text-to-image retrieval (T2IR) system. Our study is motivated by the fact that the image collection indexed by the system will be regularly updated due to the arrival of new images from various sources such as web crawlers and advertisers. With malicious images indexed, it is possible for an attacker to indirectly interfere with the retrieval process, letting users see certain images that are completely irrelevant w.r.t. their queries. We put this thought into practice by proposing a novel Trojan-horse attack (THA). In particular, we construct a set of Trojan-horse images by first embedding word-specific adversarial information into a QR code and then putting the code on benign advertising images. A proof-of-concept evaluation, conducted on two popular T2IR datasets (Flickr30k and MS-COCO), shows the effectiveness of the proposed THA in a white-box mode. "
+}

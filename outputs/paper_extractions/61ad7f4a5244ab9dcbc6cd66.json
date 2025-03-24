@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "PageRank for undirected graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Parallel PageRank algorithm using Chebyshev Polynomial approximation"
+  ],
+  "results": [
+    "Higher convergence rate than Power method",
+    "Up to 50% higher convergence rate with c=0.85",
+    "Up to 39 times faster with 38 parallelism"
+  ],
+  "paper_id": "61ad7f4a5244ab9dcbc6cd66",
+  "title": "A Parallel PageRank Algorithm For Undirected Graph",
+  "abstract": "  As a measure of vertex importance according to the graph structure, PageRank has been widely applied in various fields. While many PageRank algorithms have been proposed in the past decades, few of them take into account whether the graph under investigation is directed or not. Thus, some important properties of undirected graph\\textemdash symmetry on edges, for example\\textemdash is ignored. In this paper, we propose a parallel PageRank algorithm specifically designed for undirected graphs that can fully leverage their symmetry. Formally, our algorithm extends the Chebyshev Polynomial approximation from the field of real function to the field of matrix function. Essentially, it reflects the symmetry on edges of undirected graph and the density of diagonalizable matrix. Theoretical analysis indicates that our algorithm has a higher convergence rate and requires less computation than the Power method, with the convergence rate being up to 50\\% higher with a damping factor of $c=0.85$. Experiments on six datasets illustrate that our algorithm with 38 parallelism can be up to 39 times faster than the Power method. "
+}

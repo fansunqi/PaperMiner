@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "One-Shot GAN Adaptation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-step training strategy",
+    "CLIP-guided latent optimization",
+    "Generator fine-tuning with CLIP space consistency loss",
+    "Contrastive regularization for patchwise relationships in CLIP space"
+  ],
+  "results": [
+    "Generates diverse outputs with target texture",
+    "Outperforms baseline models qualitatively and quantitatively",
+    "More effective attribute editing with CLIP space manipulation"
+  ],
+  "paper_id": "6233f88d5aee126c0f94b5a7",
+  "title": "One-Shot Adaptation of GAN in Just One CLIP",
+  "abstract": "  There are many recent research efforts to fine-tune a pre-trained generator with a few target images to generate images of a novel domain. Unfortunately, these methods often suffer from overfitting or under-fitting when fine-tuned with a single target image. To address this, here we present a novel single-shot GAN adaptation method through unified CLIP space manipulations. Specifically, our model employs a two-step training strategy: reference image search in the source generator using a CLIP-guided latent optimization, followed by generator fine-tuning with a novel loss function that imposes CLIP space consistency between the source and adapted generators. To further improve the adapted model to produce spatially consistent samples with respect to the source generator, we also propose contrastive regularization for patchwise relationships in the CLIP space. Experimental results show that our model generates diverse outputs with the target texture and outperforms the baseline models both qualitatively and quantitatively. Furthermore, we show that our CLIP space manipulation strategy allows more effective attribute editing. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image restoration",
+    "Maximum A Posteriori (MAP) estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PnP-ReG: Learned Regularizing Gradient",
+    "Training a network to model the gradient of a MAP regularizer",
+    "Joint training of MAP denoiser",
+    "Using the regularizer in gradient-based optimization",
+    "Pre-trained network for unrolled gradient descent"
+  ],
+  "results": [
+    "Better results compared to other generic Plug-and-Play approaches",
+    "Improved convergence of Plug-and-Play ADMM"
+  ],
+  "paper_id": "626f3dd05aee126c0f8f7531",
+  "title": "PnP-ReG: Learned Regularizing Gradient for Plug-and-Play Gradient\n  Descent",
+  "abstract": "  The Plug-and-Play (PnP) framework makes it possible to integrate advanced image denoising priors into optimization algorithms, to efficiently solve a variety of image restoration tasks generally formulated as Maximum A Posteriori (MAP) estimation problems. The Plug-and-Play alternating direction method of multipliers (ADMM) and the Regularization by Denoising (RED) algorithms are two examples of such methods that made a breakthrough in image restoration. However, while the former method only applies to proximal algorithms, it has recently been shown that there exists no regularization that explains the RED algorithm when the denoisers lack Jacobian symmetry, which happen to be the case of most practical denoisers. To the best of our knowledge, there exists no method for training a network that directly represents the gradient of a regularizer, which can be directly used in Plug-and-Play gradient-based algorithms. We show that it is possible to train a network directly modeling the gradient of a MAP regularizer while jointly training the corresponding MAP denoiser. We use this network in gradient-based optimization methods and obtain better results comparing to other generic Plug-and-Play approaches. We also show that the regularizer can be used as a pre-trained network for unrolled gradient descent. Lastly, we show that the resulting denoiser allows for a better convergence of the Plug-and-Play ADMM. "
+}

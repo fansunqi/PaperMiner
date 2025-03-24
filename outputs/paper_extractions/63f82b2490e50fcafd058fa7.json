@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fault Fooling Backdoor Attack on Neural Network Training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fault Injection during Training",
+    "Fooling Backdoors",
+    "Attacks on ReLU Activation Functions"
+  ],
+  "results": [
+    "High attack success rates (60% to 100%)",
+    "High classification confidence with 25 neurons attacked",
+    "Preserved high accuracy on original task"
+  ],
+  "paper_id": "63f82b2490e50fcafd058fa7",
+  "title": "FooBaR: Fault Fooling Backdoor Attack on Neural Network Training",
+  "abstract": "  Neural network implementations are known to be vulnerable to physical attack vectors such as fault injection attacks. As of now, these attacks were only utilized during the inference phase with the intention to cause a misclassification. In this work, we explore a novel attack paradigm by injecting faults during the training phase of a neural network in a way that the resulting network can be attacked during deployment without the necessity of further faulting. In particular, we discuss attacks against ReLU activation functions that make it possible to generate a family of malicious inputs, which are called fooling inputs, to be used at inference time to induce controlled misclassifications. Such malicious inputs are obtained by mathematically solving a system of linear equations that would cause a particular behaviour on the attacked activation functions, similar to the one induced in training through faulting. We call such attacks fooling backdoors as the fault attacks at the training phase inject backdoors into the network that allow an attacker to produce fooling inputs. We evaluate our approach against multi-layer perceptron networks and convolutional networks on a popular image classification task obtaining high attack success rates (from 60% to 100%) and high classification confidence when as little as 25 neurons are attacked while preserving high accuracy on the originally intended classification task. "
+}

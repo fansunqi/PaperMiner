@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised speech segmentation",
+    "Word segmentation"
+  ],
+  "datasets": [
+    "English benchmark",
+    "ZeroSpeech benchmarks (French, Mandarin, German, Wolof)"
+  ],
+  "methods": [
+    "Bottom-up phone-like unit discovery",
+    "Symbolic word segmentation on discovered units",
+    "Duration-penalized dynamic programming (DPDP)",
+    "Contrastive predictive coding model for acoustic unit discovery",
+    "Autoencoding recurrent neural network for word segmentation"
+  ],
+  "results": [
+    "Comparable word segmentation results to state-of-the-art joint self-supervised segmentation models on an English benchmark",
+    "Outperforms previous systems on the ZeroSpeech benchmarks for French, Mandarin, German, and Wolof data",
+    "Chained DPDP system segments shorter filler words well"
+  ],
+  "paper_id": "621849025aee126c0f551f17",
+  "title": "Word Segmentation on Discovered Phone Units with Dynamic Programming and\n  Self-Supervised Scoring",
+  "abstract": "  Recent work on unsupervised speech segmentation has used self-supervised models with phone and word segmentation modules that are trained jointly. This paper instead revisits an older approach to word segmentation: bottom-up phone-like unit discovery is performed first, and symbolic word segmentation is then performed on top of the discovered units (without influencing the lower level). To do this, I propose a new unit discovery model, a new symbolic word segmentation model, and then chain the two models to segment speech. Both models use dynamic programming to minimize segment costs from a self-supervised network with an additional duration penalty that encourages longer units. Concretely, for acoustic unit discovery, duration-penalized dynamic programming (DPDP) is used with a contrastive predictive coding model as the scoring network. For word segmentation, DPDP is applied with an autoencoding recurrent neural as the scoring network. The two models are chained in order to segment speech. This approach gives comparable word segmentation results to state-of-the-art joint self-supervised segmentation models on an English benchmark. On French, Mandarin, German and Wolof data, it outperforms previous systems on the ZeroSpeech benchmarks. Analysis shows that the chained DPDP system segments shorter filler words well, but longer words might require some external top-down signal. "
+}

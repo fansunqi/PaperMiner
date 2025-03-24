@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Weakly Supervised Dialogue Policy Learning",
+    "Multi-turn Dialogue"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic blocking for ranked diverse responses",
+    "Exploration-exploitation for Top-K response selection",
+    "Quality modules: Semantic Relevant, Semantic Coherence, Consistent Flow"
+  ],
+  "results": [
+    "Significantly out-perform response quality",
+    "Lead to successful conversation on both automatic evaluation and human judgement"
+  ],
+  "paper_id": "610a45105244ab9dcbb94ab3",
+  "title": "WeaSuL: Weakly Supervised Dialogue Policy Learning: Reward Estimation\n  for Multi-turn Dialogue",
+  "abstract": "  An intelligent dialogue system in a multi-turn setting should not only generate the responses which are of good quality, but it should also generate the responses which can lead to long-term success of the dialogue. Although, the current approaches improved the response quality, but they over-look the training signals present in the dialogue data. We can leverage these signals to generate the weakly supervised training data for learning dialog policy and reward estimator, and make the policy take actions (generates responses) which can foresee the future direction for a successful (rewarding) conversation. We simulate the dialogue between an agent and a user (modelled similar to an agent with supervised learning objective) to interact with each other. The agent uses dynamic blocking to generate ranked diverse responses and exploration-exploitation to select among the Top-K responses. Each simulated state-action pair is evaluated (works as a weak annotation) with three quality modules: Semantic Relevant, Semantic Coherence and Consistent Flow. Empirical studies with two benchmarks indicate that our model can significantly out-perform the response quality and lead to a successful conversation on both automatic evaluation and human judgement. "
+}

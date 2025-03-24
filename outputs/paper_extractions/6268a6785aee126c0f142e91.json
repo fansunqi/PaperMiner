@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement learning with reward machines in environments with partially known semantics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Joint learning of reward machines and policies",
+    "Probabilistic estimation of atomic propositions' truth values",
+    "Hypothesis reward machine updates",
+    "Q-learning for policy determination"
+  ],
+  "results": [
+    "Algorithm successfully infers the reward machine",
+    "Asymptotically learns a policy that accomplishes the task"
+  ],
+  "paper_id": "6268a6785aee126c0f142e91",
+  "title": "Joint Learning of Reward Machines and Policies in Environments with\n  Partially Known Semantics",
+  "abstract": "  We study the problem of reinforcement learning for a task encoded by a reward machine. The task is defined over a set of properties in the environment, called atomic propositions, and represented by Boolean variables. One unrealistic assumption commonly used in the literature is that the truth values of these propositions are accurately known. In real situations, however, these truth values are uncertain since they come from sensors that suffer from imperfections. At the same time, reward machines can be difficult to model explicitly, especially when they encode complicated tasks. We develop a reinforcement-learning algorithm that infers a reward machine that encodes the underlying task while learning how to execute it, despite the uncertainties of the propositions' truth values. In order to address such uncertainties, the algorithm maintains a probabilistic estimate about the truth value of the atomic propositions; it updates this estimate according to new sensory measurements that arrive from the exploration of the environment. Additionally, the algorithm maintains a hypothesis reward machine, which acts as an estimate of the reward machine that encodes the task to be learned. As the agent explores the environment, the algorithm updates the hypothesis reward machine according to the obtained rewards and the estimate of the atomic propositions' truth value. Finally, the algorithm uses a Q-learning procedure for the states of the hypothesis reward machine to determine the policy that accomplishes the task. We prove that the algorithm successfully infers the reward machine and asymptotically learns a policy that accomplishes the respective task. "
+}

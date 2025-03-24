@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Motion planning under uncertainty"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Batch Belief Trees (BBT)",
+    "Batch sampling",
+    "Graph of nominal trajectories",
+    "Belief space motion plans"
+  ],
+  "results": [
+    "Finds sophisticated plans to reduce uncertainty",
+    "Modified interplay between exploration and exploitation",
+    "Finds non-trivial motion plans",
+    "Faster compared with previous similar methods"
+  ],
+  "paper_id": "615a709c5244ab9dcb3a716f",
+  "title": "Batch Belief Trees for Motion Planning Under Uncertainty",
+  "abstract": "  In this work, we develop the Batch Belief Trees (BBT) algorithm for motion planning under motion and sensing uncertainties. The algorithm interleaves between batch sampling, building a graph of nominal trajectories in the state space, and searching over the graph to find belief space motion plans. By searching over the graph, BBT finds sophisticated plans that will visit (and revisit) information-rich regions to reduce uncertainty. One of the key benefits of this algorithm is the modified interplay between exploration and exploitation. Instead of an exhaustive search (exploitation) after one exploration step, the proposed algorithm uses batch samples to explore the state space and, in addition, does not require exhaustive search before the next iteration of batch sampling, which adds flexibility.The algorithm finds motion plans that converge to the optimal one as more samples are added to the graph. We test BBT in different planning environments. Our numerical investigation confirms that BBT finds non-trivial motion plans and is faster compared with previous similar methods. "
+}

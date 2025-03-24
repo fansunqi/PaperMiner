@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formal verification of convergence for policy-rich DBF routing protocols"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "New algebraic model for abstract routing problems",
+    "Concurrent reasoning about distance-vector and path-vector protocols",
+    "Asynchronous iterative algorithms for convergence",
+    "Formalisation in Agda theorem prover"
+  ],
+  "results": [
+    "General convergence results for policy-rich DBF protocols",
+    "Unique final routing solution",
+    "Model relaxes asynchronous communication conditions",
+    "Formal verification of a policy language with BGP features"
+  ],
+  "paper_id": "60badec191e01102e59b6af1",
+  "title": "Formally Verified Convergence of Policy-Rich DBF Routing Protocols",
+  "abstract": "  In this paper we present new general convergence results about the behaviour of the Distributed Bellman-Ford (DBF) family of routing protocols, which includes distance-vector protocols (e.g. RIP) and path-vector protocols (e.g. BGP). Our results apply to ``policy-rich\" protocols, by which we mean protocols that can have complex policies (e.g. conditional route transformations) that violate traditional assumptions made in the standard presentation of Bellman-Ford protocols.   First, we propose a new algebraic model for abstract routing problems which has fewer primitives than previous models and can represent more expressive policy languages. The new model is also the first to allow concurrent reasoning about distance-vector and path-vector protocols.   Second, we demonstrate how DBF routing protocols are instances of a larger class of asynchronous iterative algorithms, for which there already exist powerful results about convergence. These results allow us to build upon conditions previously shown by Sobrinho to be sufficient and necessary for the convergence of path-vector protocols and strengthen them: we show that, with a minor modification, they also apply to distance-vector protocols; we prove they guarantee that the final routing solution reached is unique, thereby eliminating the possibility of anomalies such as BGP wedgies; we relax the model of asynchronous communication, showing that the results still hold if routing messages can be lost, reordered, and duplicated.   Thirdly, our model and our accompanying theoretical results have been fully formalised in the Agda theorem prover. The resulting library is a powerful tool for quickly prototyping and formally verifying new policy languages. As an example, we formally verify the correctness of a policy language with many of the features of BGP including communities, conditional policy, path-inflation and route filtering. "
+}

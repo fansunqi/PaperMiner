@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Edge Domain Adaptation",
+    "Image Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "dsODENet (Neural ODE with Depthwise Separable Convolution)",
+    "FPGA-based design"
+  ],
+  "results": [
+    "Comparable or slightly better domain adaptation accuracy than baseline Neural ODE",
+    "Total parameter size reduced by 54.2% to 79.8%",
+    "Inference speed accelerated by 23.8 times on FPGA"
+  ],
+  "paper_id": "610107265244ab9dcbcea125",
+  "title": "A Low-Cost Neural ODE with Depthwise Separable Convolution for Edge\n  Domain Adaptation on FPGAs",
+  "abstract": "  High-performance deep neural network (DNN)-based systems are in high demand in edge environments. Due to its high computational complexity, it is challenging to deploy DNNs on edge devices with strict limitations on computational resources. In this paper, we derive a compact while highly-accurate DNN model, termed dsODENet, by combining recently-proposed parameter reduction techniques: Neural ODE (Ordinary Differential Equation) and DSC (Depthwise Separable Convolution). Neural ODE exploits a similarity between ResNet and ODE, and shares most of weight parameters among multiple layers, which greatly reduces the memory consumption. We apply dsODENet to a domain adaptation as a practical use case with image classification datasets. We also propose a resource-efficient FPGA-based design for dsODENet, where all the parameters and feature maps except for pre- and post-processing layers can be mapped onto on-chip memories. It is implemented on Xilinx ZCU104 board and evaluated in terms of domain adaptation accuracy, inference speed, FPGA resource utilization, and speedup rate compared to a software counterpart. The results demonstrate that dsODENet achieves comparable or slightly better domain adaptation accuracy compared to our baseline Neural ODE implementation, while the total parameter size without pre- and post-processing layers is reduced by 54.2% to 79.8%. Our FPGA implementation accelerates the inference speed by 23.8 times. "
+}

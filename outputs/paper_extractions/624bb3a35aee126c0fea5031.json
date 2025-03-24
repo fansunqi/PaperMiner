@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sampling uniform solutions for general constraint satisfaction problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fast algorithm for sampling in local lemma regime",
+    "Recursive marginal sampler"
+  ],
+  "results": [
+    "Expected time: poly(q,k,\u0394)\u00b7O(n)",
+    "Improves local lemma condition from \u0394^7 to \u0394^5 for general CSPs"
+  ],
+  "paper_id": "624bb3a35aee126c0fea5031",
+  "title": "Sampling Lov\\'asz Local Lemma For General Constraint Satisfaction\n  Solutions In Near-Linear Time",
+  "abstract": "  We give a fast algorithm for sampling uniform solutions of general constraint satisfaction problems (CSPs) in a local lemma regime. Suppose that the CSP has $n$ variables with domain size at most q, each constraint contains at most k variables, shares variables with at most $\\Delta$ constraints, and is violated with probability at most $p$ by a uniform random assignment. The algorithm returns an almost uniform satisfying assignment in expected $\\mathrm{poly}(q,k,\\Delta)\\cdot\\tilde{O}(n)$ time, as long as a local lemma condition is satisfied: \\[ k\\cdot p\\cdot q^2\\cdot \\Delta^5\\le C_0\\quad\\text{for a suitably small absolute constant }C_0. \\] Previously, under similar local lemma conditions, sampling algorithms with running time polynomial in both $n$ and $\\Delta$ were only known for the almost atomic case, where each constraint is violated by a small number of forbidden local configurations. The key term $\\Delta^5$ in our local lemma condition also improves the previously best known $\\Delta^7$ for general CSPs [JPV21b] and $\\Delta^{5.714}$ for atomic CSPs, including the special case of $k$-CNF [JPV21a, HSW21].   Our sampling approach departs from previous fast algorithms for sampling LLL, which were based on Markov chains. A crucial step of our algorithm is a recursive marginal sampler that is of independent interests. Within a local lemma regime, this marginal sampler can draw a random value for a variable according to its marginal distribution, at a cost independent of the size of the CSP. "
+}

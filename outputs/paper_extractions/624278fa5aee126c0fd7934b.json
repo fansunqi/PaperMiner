@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic Segmentation",
+    "Monocular Depth Estimation"
+  ],
+  "datasets": [
+    "KITTI",
+    "Cityscapes",
+    "NYU-V2"
+  ],
+  "methods": [
+    "Pre-training using depth estimation vs. classification"
+  ],
+  "results": [
+    "Depth pre-training outperforms classification by 5.8% mIoU and 5.2% pixel accuracy",
+    "Depth pre-training more effective than other self-supervision forms like optical flow"
+  ],
+  "paper_id": "624278fa5aee126c0fd7934b",
+  "title": "Depth Estimation vs Classification as Pre-training for Semantic\n  Segmentation",
+  "abstract": "  Training a deep neural network for semantic segmentation is labor intensive, so it is common to pre-train on a different task for which data is abundant, typically image-level classification, and then fine-tune with a small annotated dataset. There is empirical evidence showing that incorporating depth information during training may improve semantic segmentation, but the extent of this effect has yet to be fully characterized. In this paper, we study whether monocular depth estimation can serve as pre-training for semantic segmentation, ideally eliminating the need for manually supervised pre-training. Using common benchmarks such as KITTI, Cityscapes, and NYU-V2, we evaluate pre-training using depth estimation vs. classification, measuring their effects on downstream semantic segmentation. The former edges out the latter by 5.8\\% mIoU and 5.2\\% pixel accuracy. We analyze the impact of different forms of supervision for depth estimation, training pipelines, and data resolution on semantic fine-tuning. Additionally, we find that other forms of self-supervision are less effective than depth pre-training, including optical flow, despite sharing the same loss, namely the photometric reprojection error. "
+}

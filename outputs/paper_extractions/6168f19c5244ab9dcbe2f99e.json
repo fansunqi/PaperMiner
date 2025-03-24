@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Layered Microflake Surface Appearance Modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SpongeCake: layered BSDF model with volumetric scattering layers",
+    "Parameter mapping neural network for approximating multiple scattering",
+    "Analytical solution for single scattering"
+  ],
+  "results": [
+    "Exact and analytic solution for single scattering",
+    "Effective approximation of multiple scattering",
+    "Handles various material types (plastics, wood, cloth, etc.)",
+    "Fast evaluation and sampling"
+  ],
+  "paper_id": "6168f19c5244ab9dcbe2f99e",
+  "title": "SpongeCake: A Layered Microflake Surface Appearance Model",
+  "abstract": "  In this paper, we propose SpongeCake: a layered BSDF model where each layer is a volumetric scattering medium, defined using microflake or other phase functions. We omit any reflecting and refracting interfaces between the layers. The first advantage of this formulation is that an exact and analytic solution for single scattering, regardless of the number of volumetric layers, can be derived. We propose to approximate multiple scattering by an additional single-scattering lobe with modified parameters and a Lambertian lobe. We use a parameter mapping neural network to find the parameters of the newly added lobes to closely approximate the multiple scattering effect. Despite the absence of layer interfaces, we demonstrate that many common material effects can be achieved with layers of SGGX microflake and other volumes with appropriate parameters. A normal mapping effect can also be achieved through mapping of microflake orientations, which avoids artifacts common in standard normal maps. Thanks to the analytical formulation, our model is very fast to evaluate and sample. Through various parameter settings, our model is able to handle many types of materials, like plastics, wood, cloth, etc., opening a number of practical applications. "
+}

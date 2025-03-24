@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving inverse problems",
+    "Preventing overfitting in deep image prior"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hybrid deep image priors",
+    "Combining DIP with explicit/implicit priors",
+    "Alternating direction method-of-multipliers (ADMM)"
+  ],
+  "results": [
+    "Hybrid priors prevent overfitting",
+    "Fitting image along directions reduces overfitting at high noise levels"
+  ],
+  "paper_id": "5fa2898791e011cda13f4ff1",
+  "title": "Solving Inverse Problems with Hybrid Deep Image Priors: the challenge of\n  preventing overfitting",
+  "abstract": "  We mainly analyze and solve the overfitting problem of deep image prior (DIP). Deep image prior can solve inverse problems such as super-resolution, inpainting and denoising. The main advantage of DIP over other deep learning approaches is that it does not need access to a large dataset. However, due to the large number of parameters of the neural network and noisy data, DIP overfits to the noise in the image as the number of iterations grows. In the thesis, we use hybrid deep image priors to avoid overfitting. The hybrid priors are to combine DIP with an explicit prior such as total variation or with an implicit prior such as a denoising algorithm. We use the alternating direction method-of-multipliers (ADMM) to incorporate the new prior and try different forms of ADMM to avoid extra computation caused by the inner loop of ADMM steps. We also study the relation between the dynamics of gradient descent, and the overfitting phenomenon. The numerical results show the hybrid priors play an important role in preventing overfitting. Besides, we try to fit the image along some directions and find this method can reduce overfitting when the noise level is large. When the noise level is small, it does not considerably reduce the overfitting problem. "
+}

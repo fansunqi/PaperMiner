@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speech enhancement",
+    "Denoising"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "End-to-end denoising framework",
+    "Time-domain signal optimization after ISTFT",
+    "Two loss functions for SDR and PESQ optimization"
+  ],
+  "results": [
+    "Significant improvement in both SDR and PESQ performance over existing methods"
+  ],
+  "paper_id": "5c616026e1cd8eae1501d4af",
+  "title": "End-to-End Multi-Task Denoising for joint SDR and PESQ Optimization",
+  "abstract": "  Supervised learning based on a deep neural network recently has achieved substantial improvement on speech enhancement. Denoising networks learn mapping from noisy speech to clean one directly, or to a spectrum mask which is the ratio between clean and noisy spectra. In either case, the network is optimized by minimizing mean square error (MSE) between ground-truth labels and time-domain or spectrum output. However, existing schemes have either of two critical issues: spectrum and metric mismatches. The spectrum mismatch is a well known issue that any spectrum modification after short-time Fourier transform (STFT), in general, cannot be fully recovered after inverse short-time Fourier transform (ISTFT). The metric mismatch is that a conventional MSE metric is sub-optimal to maximize our target metrics, signal-to-distortion ratio (SDR) and perceptual evaluation of speech quality (PESQ). This paper presents a new end-to-end denoising framework with the goal of joint SDR and PESQ optimization. First, the network optimization is performed on the time-domain signals after ISTFT to avoid spectrum mismatch. Second, two loss functions which have improved correlations with SDR and PESQ metrics are proposed to minimize metric mismatch. The experimental result showed that the proposed denoising scheme significantly improved both SDR and PESQ performance over the existing methods. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multilingual Social Event Detection"
+  ],
+  "datasets": [
+    "synthetic datasets",
+    "real-world datasets"
+  ],
+  "methods": [
+    "GNN with cross-lingual word embeddings",
+    "Construction strategy for multilingual data alignment",
+    "Cross-lingual knowledge distillation framework (CLKD)"
+  ],
+  "results": [
+    "Highly effective at detection in both multilingual data and in languages with scarce training samples"
+  ],
+  "paper_id": "6110a7765244ab9dcb339cd1",
+  "title": "Transferring Knowledge Distillation for Multilingual Social Event\n  Detection",
+  "abstract": "  Recently published graph neural networks (GNNs) show promising performance at social event detection tasks. However, most studies are oriented toward monolingual data in languages with abundant training samples. This has left the more common multilingual settings and lesser-spoken languages relatively unexplored. Thus, we present a GNN that incorporates cross-lingual word embeddings for detecting events in multilingual data streams. The first exploit is to make the GNN work with multilingual data. For this, we outline a construction strategy that aligns messages in different languages at both the node and semantic levels. Relationships between messages are established by merging entities that are the same but are referred to in different languages. Non-English message representations are converted into English semantic space via the cross-lingual word embeddings. The resulting message graph is then uniformly encoded by a GNN model. In special cases where a lesser-spoken language needs to be detected, a novel cross-lingual knowledge distillation framework, called CLKD, exploits prior knowledge learned from similar threads in English to make up for the paucity of annotated data. Experiments on both synthetic and real-world datasets show the framework to be highly effective at detection in both multilingual data and in languages where training samples are scarce. "
+}

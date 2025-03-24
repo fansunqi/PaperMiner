@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/sunwei925/StairIQA"
+  ],
+  "tasks": [
+    "Blind Image Quality Assessment (BIQA) for in-the-wild images"
+  ],
+  "datasets": [
+    "six in-the-wild IQA databases"
+  ],
+  "methods": [
+    "Hierarchical feature fusion using staircase structure",
+    "Iterative mixed database training (IMDT)"
+  ],
+  "results": [
+    "Outperforms other state-of-the-art BIQA models on six in-the-wild IQA databases",
+    "Excellent performance in cross-database evaluation experiments"
+  ],
+  "paper_id": "60b6ead791e011903fc2b9d5",
+  "title": "Blind Quality Assessment for in-the-Wild Images via Hierarchical Feature\n  Fusion and Iterative Mixed Database Training",
+  "abstract": "  Image quality assessment (IQA) is very important for both end-users and service providers since a high-quality image can significantly improve the user's quality of experience (QoE) and also benefit lots of computer vision algorithms. Most existing blind image quality assessment (BIQA) models were developed for synthetically distorted images, however, they perform poorly on in-the-wild images, which are widely existed in various practical applications. In this paper, we propose a novel BIQA model for in-the-wild images by addressing two critical problems in this field: how to learn better quality-aware feature representation, and how to solve the problem of insufficient training samples in terms of their content and distortion diversity. Considering that perceptual visual quality is affected by both low-level visual features (e.g. distortions) and high-level semantic information (e.g. content), we first propose a staircase structure to hierarchically integrate the features from intermediate layers into the final feature representation, which enables the model to make full use of visual information from low-level to high-level. Then an iterative mixed database training (IMDT) strategy is proposed to train the BIQA model on multiple databases simultaneously, so the model can benefit from the increase in both training samples and image content and distortion diversity and can learn a more general feature representation. Experimental results show that the proposed model outperforms other state-of-the-art BIQA models on six in-the-wild IQA databases by a large margin. Moreover, the proposed model shows an excellent performance in the cross-database evaluation experiments, which further demonstrates that the learned feature representation is robust to images with diverse distortions and content. The code is available at https://github.com/sunwei925/StairIQA. "
+}

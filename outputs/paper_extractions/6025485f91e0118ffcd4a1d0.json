@@ -1,0 +1,19 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning k-qubit Quantum Operators"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pauli Decomposition",
+    "Quantum Sample Complexity Analysis",
+    "Quantum PAC Learning Model"
+  ],
+  "paper_id": "6025485f91e0118ffcd4a1d0",
+  "title": "Learning k-qubit Quantum Operators via Pauli Decomposition",
+  "abstract": "  Motivated by the limited qubit capacity of current quantum systems, we study the quantum sample complexity of $k$-qubit quantum operators, i.e., operations applicable on only $k$ out of $d$ qubits. The problem is studied according to the quantum probably approximately correct (QPAC) model abiding by quantum mechanical laws such as no-cloning, state collapse, and measurement incompatibility. With the delicacy of quantum samples and the richness of quantum operations, one expects a significantly larger quantum sample complexity.   This paper proves the contrary. We show that the quantum sample complexity of $k$-qubit quantum operations is comparable to the classical sample complexity of their counterparts (juntas), at least when $\\frac{k}{d}\\ll 1$. This is surprising, especially since sample duplication is prohibited, and measurement incompatibility would lead to an exponentially larger sample complexity with standard methods. Our approach is based on the Pauli decomposition of quantum operators and a technique that we name Quantum Shadow Sampling (QSS) to reduce the sample complexity exponentially. The results are proved by developing (i) a connection between the learning loss and the Pauli decomposition; (ii) a scalable QSS circuit for estimating the Pauli coefficients; and (iii) a quantum algorithm for learning $k$-qubit operators with sample complexity $O(\\frac{k4^k}{\\epsilon^2}\\log d)$. "
+}

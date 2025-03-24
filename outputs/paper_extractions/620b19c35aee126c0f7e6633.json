@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Natural image stitching"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Robust fitting method for outlier filtering",
+    "Epipolar geometry estimation",
+    "Triangulation and local homographies estimation",
+    "Backward mapping of piece-wise homographies",
+    "Average blending and image inpainting"
+  ],
+  "results": [
+    "Accurate alignment in overlapping regions",
+    "Virtual naturalness in non-overlapping regions"
+  ],
+  "paper_id": "620b19c35aee126c0f7e6633",
+  "title": "Natural Image Stitching Using Depth Maps",
+  "abstract": "  Natural image stitching (NIS) aims to create one natural-looking mosaic from two overlapping images that capture the same 3D scene from different viewing positions. Challenges inevitably arise when the scene is non-planar and the camera baseline is wide, since parallax becomes not negligible in such cases. In this paper, we propose a novel NIS method using depth maps, which generates natural-looking mosaics against parallax in both overlapping and non-overlapping regions. Firstly, we construct a robust fitting method to filter out the outliers in feature matches and estimate the epipolar geometry between input images. Then, we draw a triangulation of the target image and estimate multiple local homographies, one per triangle, based on the locations of their vertices, the rectified depth values and the epipolar geometry. Finally, the warping image is rendered by the backward mapping of piece-wise homographies. Panorama is then produced via average blending and image inpainting. Experimental results demonstrate that the proposed method not only provides accurate alignment in the overlapping regions but also virtual naturalness in the non-overlapping region. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/optimization-for-data-driven-science/FERMI"
+  ],
+  "tasks": [
+    "Fair Risk Minimization",
+    "Fair Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stochastic in-processing fairness algorithm (FERMI)",
+    "Guaranteed convergence in stochastic optimization"
+  ],
+  "results": [
+    "FERMI achieves favorable tradeoffs between fairness violation and test accuracy",
+    "Performs well with minibatch size as small as one",
+    "Significant benefits with small batch sizes and non-binary classification with large number of sensitive attributes"
+  ],
+  "paper_id": "6038bf2691e011c1c59ed185",
+  "title": "A Stochastic Optimization Framework for Fair Risk Minimization",
+  "abstract": "  Despite the success of large-scale empirical risk minimization (ERM) at achieving high accuracy across a variety of machine learning tasks, fair ERM is hindered by the incompatibility of fairness constraints with stochastic optimization. We consider the problem of fair classification with discrete sensitive attributes and potentially large models and data sets, requiring stochastic solvers. Existing in-processing fairness algorithms are either impractical in the large-scale setting because they require large batches of data at each iteration or they are not guaranteed to converge. In this paper, we develop the first stochastic in-processing fairness algorithm with guaranteed convergence. For demographic parity, equalized odds, and equal opportunity notions of fairness, we provide slight variations of our algorithm--called FERMI--and prove that each of these variations converges in stochastic optimization with any batch size. Empirically, we show that FERMI is amenable to stochastic solvers with multiple (non-binary) sensitive attributes and non-binary targets, performing well even with minibatch size as small as one. Extensive experiments show that FERMI achieves the most favorable tradeoffs between fairness violation and test accuracy across all tested setups compared with state-of-the-art baselines for demographic parity, equalized odds, equal opportunity. These benefits are especially significant with small batch sizes and for non-binary classification with large number of sensitive attributes, making FERMI a practical, scalable fairness algorithm. The code for all of the experiments in this paper is available at: https://github.com/optimization-for-data-driven-science/FERMI. "
+}

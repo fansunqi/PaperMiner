@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimal tradeoff between data freshness and update cost in information-update systems"
+  ],
+  "datasets": [
+    "synthetic data",
+    "real traces"
+  ],
+  "methods": [
+    "threshold-based policy",
+    "optimization problem formulation",
+    "closed-form formula for long-term average cost"
+  ],
+  "results": [
+    "existence of optimal threshold-based policy",
+    "superior performance of optimal threshold-based policy compared with baseline policies"
+  ],
+  "paper_id": "626f3dd05aee126c0f8f7620",
+  "title": "Towards Optimal Tradeoff Between Data Freshness and Update Cost in\n  Information-update Systems",
+  "abstract": "  In this paper, we consider a discrete-time information-update system, where a service provider can proactively retrieve information from the information source to update its data and users query the data at the service provider. One example is crowdsensing-based applications. In order to keep users satisfied, the application desires to provide users with fresh data, where the freshness is measured by the Age-of-Information (AoI). However, maintaining fresh data requires the application to update its database frequently, which incurs an update cost (e.g., incentive payment). Hence, there exists a natural tradeoff between the AoI and the update cost at the service provider who needs to make update decisions. To capture this tradeoff, we formulate an optimization problem with the objective of minimizing the total cost, which is the sum of the staleness cost (which is a function of the AoI) and the update cost. Then, we provide two useful guidelines for the design of efficient update policies. Following these guidelines and assuming that the aggregated request arrival process is Bernoulli, we prove that there exists a threshold-based policy that is optimal among all online policies and thus focus on the class of threshold-based policies. Furthermore, we derive the closed-form formula for computing the long-term average cost under any threshold-based policy and obtain the optimal threshold. Finally, we perform extensive simulations using both synthetic data and real traces to verify our theoretical results and demonstrate the superior performance of the optimal threshold-based policy compared with several baseline policies. "
+}

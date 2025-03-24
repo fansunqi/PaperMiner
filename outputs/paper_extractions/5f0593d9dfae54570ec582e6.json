@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "EHR-based predictive analytics of diseases"
+  ],
+  "datasets": [
+    "EHR datasets"
+  ],
+  "methods": [
+    "De-Sparse LDA classifier",
+    "De-sparsified Graphical Lasso"
+  ],
+  "results": [
+    "Outperforms state-of-the-art LDA approaches for HDLSS data",
+    "Theoretical upper bound of LDA error rate controlled by covariance matrix estimators and dataset divergence"
+  ],
+  "paper_id": "5f0593d9dfae54570ec582e6",
+  "title": "Improving Covariance-Regularized Discriminant Analysis for EHR-based\n  Predictive Analytics of Diseases",
+  "abstract": "  Linear Discriminant Analysis (LDA) is a well-known technique for feature extraction and dimension reduction. The performance of classical LDA, however, significantly degrades on the High Dimension Low Sample Size (HDLSS) data for the ill-posed inverse problem. Existing approaches for HDLSS data classification typically assume the data in question are with Gaussian distribution and deal the HDLSS classification problem with regularization. However, these assumptions are too strict to hold in many emerging real-life applications, such as enabling personalized predictive analysis using Electronic Health Records (EHRs) data collected from an extremely limited number of patients who have been diagnosed with or without the target disease for prediction. In this paper, we revised the problem of predictive analysis of disease using personal EHR data and LDA classifier. To fill the gap, in this paper, we first studied an analytical model that understands the accuracy of LDA for classifying data with arbitrary distribution. The model gives a theoretical upper bound of LDA error rate that is controlled by two factors: (1) the statistical convergence rate of (inverse) covariance matrix estimators and (2) the divergence of the training/testing datasets to fitted distributions. To this end, we could lower the error rate by balancing the two factors for better classification performance. Hereby, we further proposed a novel LDA classifier De-Sparse that leverages De-sparsified Graphical Lasso to improve the estimation of LDA, which outperforms state-of-the-art LDA approaches developed for HDLSS data. Such advances and effectiveness are further demonstrated by both theoretical analysis and extensive experiments on EHR datasets. "
+}

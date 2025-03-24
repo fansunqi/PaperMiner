@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Support Analytic Window Function over Large Data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Spilling Algorithm to Manipulate State Data in Disk"
+  ],
+  "results": [
+    "Reduced Disk I/O to Make Spill Available and Efficient",
+    "Analyzed Complexity with Different Data Distribution"
+  ],
+  "paper_id": "5f18024991e011c28ff02c21",
+  "title": "Support Aggregate Analytic Window Function over Large Data by Spilling",
+  "abstract": "  Analytic function, also called window function, is to query the aggregation of data over a sliding window. For example, a simple query over the online stock platform is to return the average price of a stock of the last three days. These functions are commonly used features in SQL databases. They are supported in most of the commercial databases. With the increasing usage of cloud data infra and machine learning technology, the frequency of queries with analytic window functions rises. Some analytic functions only require const space in memory to store the state, such as SUM, AVG, while others require linear space, such as MIN, MAX. When the window is extremely large, the memory space to store the state may be too large. In this case, we need to spill the state to disk, which is a heavy operation. In this paper, we proposed an algorithm to manipulate the state data in the disk to reduce the disk I/O to make spill available and efficienct. We analyze the complexity of the algorithm with different data distribution. "
+}

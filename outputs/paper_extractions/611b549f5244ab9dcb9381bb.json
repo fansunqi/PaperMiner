@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Community detection"
+  ],
+  "datasets": [
+    "Real-world web graphs"
+  ],
+  "methods": [
+    "Sampling-Based Stochastic Block Partitioning (SamBaS)"
+  ],
+  "results": [
+    "Speedups of up to 10X",
+    "Improving result quality by over 150% on certain graphs relative to F1 score"
+  ],
+  "paper_id": "611b549f5244ab9dcb9381bb",
+  "title": "SamBaS: Sampling-Based Stochastic Block Partitioning",
+  "abstract": "  Community detection is a well-studied problem with applications in domains ranging from networking to bioinformatics. Due to the rapid growth in the volume of real-world data, there is growing interest in accelerating contemporary community detection algorithms. However, the more accurate and statistically robust methods tend to be hard to parallelize. One such method is stochastic block partitioning (SBP) - a community detection algorithm that works well on graphs with complex and heterogeneous community structure. In this paper, we present a sampling-based SBP (SamBaS) for accelerating SBP on sparse graphs. We characterize how various graph parameters affect the speedup and result quality of community detection with SamBaS and quantify the trade-offs therein. To evaluate SamBas on real-world web graphs without known ground-truth communities, we introduce partition quality score (PQS), an evaluation metric that outperforms modularity in terms of correlation with F1 score. Overall, SamBaS achieves speedups of up to 10X while maintaining result quality (and even improving result quality by over 150% on certain graphs, relative to F1 score). "
+}

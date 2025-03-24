@@ -1,0 +1,28 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Non-contact PPG Signal Estimation",
+    "Heart Rate Estimation"
+  ],
+  "datasets": [
+    "UBFC-RPPG",
+    "COHFACE",
+    "Custom Dataset"
+  ],
+  "methods": [
+    "Multi-hierarchical Spatio-temporal Convolutional Network",
+    "Low-level Face Feature Generation (LFFG)",
+    "3D Spatio-temporal Stack Convolution (STSC)",
+    "Multi-hierarchical Feature Fusion (MHFF)",
+    "Sparse Optical Flow",
+    "Signal Prediction Module (SP)"
+  ],
+  "results": [
+    "MAE: 2.15 bpm on UBFC-RPPG",
+    "MAE: 5.57 bpm on COHFACE",
+    "MAE: 1.75 bpm on Custom Dataset"
+  ],
+  "paper_id": "606d816491e011c5ec0d7cba",
+  "title": "Non-contact PPG Signal and Heart Rate Estimation with Multi-hierarchical\n  Convolutional Network",
+  "abstract": "  Heartbeat rhythm and heart rate (HR) are important physiological parameters of the human body. This study presents an efficient multi-hierarchical spatio-temporal convolutional network that can quickly estimate remote physiological (rPPG) signal and HR from face video clips. First, the facial color distribution characteristics are extracted using a low-level face feature generation (LFFG) module. Then, the three-dimensional (3D) spatio-temporal stack convolution module (STSC) and multi-hierarchical feature fusion module (MHFF) are used to strengthen the spatio-temporal correlation of multi-channel features. In the MHFF, sparse optical flow is used to capture the tiny motion information of faces between frames and generate a self-adaptive region of interest (ROI) skin mask. Finally, the signal prediction module (SP) is used to extract the estimated rPPG signal. The heart rate estimation results show that the proposed network overperforms the state-of-the-art methods on three datasets, 1) UBFC-RPPG, 2) COHFACE, 3) our dataset, with the mean absolute error (MAE) of 2.15, 5.57, 1.75 beats per minute (bpm) respectively. "
+}

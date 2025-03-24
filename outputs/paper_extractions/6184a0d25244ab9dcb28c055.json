@@ -1,0 +1,29 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Multilingual Task-Oriented Dialogues",
+    "Dialogue State Tracking"
+  ],
+  "datasets": [
+    "RiSAWOZ",
+    "CrossWOZ",
+    "CrossWOZ-EN",
+    "MultiWOZ-ZH",
+    "RiSAWOZ English",
+    "RiSAWOZ German"
+  ],
+  "methods": [
+    "Automatic Translation of Dialogue Datasets",
+    "Contextual Semantic Parsing Model"
+  ],
+  "results": [
+    "Improves state of the art by 11% on RiSAWOZ",
+    "Improves state of the art by 17% on CrossWOZ",
+    "Improves state of the art by 20% on CrossWOZ-EN",
+    "Improves state of the art by 0.3% on MultiWOZ-ZH",
+    "Accuracy within 11% of the original on RiSAWOZ English and German datasets"
+  ],
+  "paper_id": "6184a0d25244ab9dcb28c055",
+  "title": "Contextual Semantic Parsing for Multilingual Task-Oriented Dialogues",
+  "abstract": "  Robust state tracking for task-oriented dialogue systems currently remains restricted to a few popular languages. This paper shows that given a large-scale dialogue data set in one language, we can automatically produce an effective semantic parser for other languages using machine translation. We propose automatic translation of dialogue datasets with alignment to ensure faithful translation of slot values and eliminate costly human supervision used in previous benchmarks. We also propose a new contextual semantic parsing model, which encodes the formal slots and values, and only the last agent and user utterances. We show that the succinct representation reduces the compounding effect of translation errors, without harming the accuracy in practice.   We evaluate our approach on several dialogue state tracking benchmarks. On RiSAWOZ, CrossWOZ, CrossWOZ-EN, and MultiWOZ-ZH datasets we improve the state of the art by 11%, 17%, 20%, and 0.3% in joint goal accuracy. We present a comprehensive error analysis for all three datasets showing erroneous annotations can lead to misguided judgments on the quality of the model.   Finally, we present RiSAWOZ English and German datasets, created using our translation methodology. On these datasets, accuracy is within 11% of the original showing that high-accuracy multilingual dialogue datasets are possible without relying on expensive human annotations. We release our datasets and software open source. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient Unfolding of Colored Petri Nets"
+  ],
+  "datasets": [
+    "Model Checking Contest benchmark"
+  ],
+  "methods": [
+    "Equivalence Class Grouping of Colors",
+    "Overapproximation of Color Sets in Places"
+  ],
+  "results": [
+    "Significantly reduces the size of unfolded colored Petri nets",
+    "Competitive w.r.t. unfolding time",
+    "Outperforms existing approaches in size of unfolded nets",
+    "Outperforms in number of answered model checking queries from 2021 Model Checking Contest"
+  ],
+  "paper_id": "6258e26c5aee126c0fbc7c5f",
+  "title": "Methods for Efficient Unfolding of Colored Petri Nets",
+  "abstract": "  Colored Petri nets offer a compact and user friendly representation of the traditional P/T nets and colored nets with finite color ranges can be unfolded into the underlying P/T nets, however, at the expense of an exponential explosion in size. We present two novel techniques based on static analysis in order to reduce the size of unfolded colored nets. The first method identifies colors that behave equivalently and groups them into equivalence classes, potentially reducing the number of used colors. The second method overapproximates the sets of colors that can appear in places and excludes colors that can never be present in a given place. Both methods are complementary and the combined approach allows us to significantly reduce the size of multiple colored Petri nets from the Model Checking Contest benchmark. We compare the performance of our unfolder with state-of-the-art techniques implemented in the tools MCC, Spike and ITS-Tools, and while our approach is competitive w.r.t. unfolding time, it also outperforms the existing approaches both in the size of unfolded nets as well as in the number of answered model checking queries from the 2021 Model Checking Contest. "
+}

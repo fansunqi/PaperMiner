@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://ywq.github.io/FVIP"
+  ],
+  "tasks": [
+    "Face video inpainting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-stage deep learning method",
+    "3DMM for 3D face prior",
+    "UV space face inpainting",
+    "Frame-wise attention module",
+    "Image space face video refinement"
+  ],
+  "results": [
+    "Significantly outperforms methods based on 2D information",
+    "Effective for faces under large pose and expression variations"
+  ],
+  "paper_id": "613192745244ab9dcb9dfb0b",
+  "title": "Deep Face Video Inpainting via UV Mapping",
+  "abstract": "  This paper addresses the problem of face video inpainting. Existing video inpainting methods target primarily at natural scenes with repetitive patterns. They do not make use of any prior knowledge of the face to help retrieve correspondences for the corrupted face. They therefore only achieve sub-optimal results, particularly for faces under large pose and expression variations where face components appear very differently across frames. In this paper, we propose a two-stage deep learning method for face video inpainting. We employ 3DMM as our 3D face prior to transform a face between the image space and the UV (texture) space. In Stage I, we perform face inpainting in the UV space. This helps to largely remove the influence of face poses and expressions and makes the learning task much easier with well aligned face features. We introduce a frame-wise attention module to fully exploit correspondences in neighboring frames to assist the inpainting task. In Stage II, we transform the inpainted face regions back to the image space and perform face video refinement that inpaints any background regions not covered in Stage I and also refines the inpainted face regions. Extensive experiments have been carried out which show our method can significantly outperform methods based merely on 2D information, especially for faces under large pose and expression variations. Project page: https://ywq.github.io/FVIP "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Scene Adaptation"
+  ],
+  "datasets": [
+    "GTA5",
+    "Cityscapes",
+    "SYNTHIA",
+    "Oxford RobotCar"
+  ],
+  "methods": [
+    "Memory Regularization in vivo",
+    "Discrepancy reduction between primary and auxiliary classifiers"
+  ],
+  "results": [
+    "+11.1% mIoU improvement on GTA5 -> Cityscapes",
+    "+11.3% mIoU improvement on SYNTHIA -> Cityscapes",
+    "+12.0% mIoU improvement on Cityscapes -> Oxford RobotCar"
+  ],
+  "paper_id": "5e0333623a55aca24ec3edb8",
+  "title": "Unsupervised Scene Adaptation with Memory Regularization in vivo",
+  "abstract": "  We consider the unsupervised scene adaptation problem of learning from both labeled source data and unlabeled target data. Existing methods focus on minoring the inter-domain gap between the source and target domains. However, the intra-domain knowledge and inherent uncertainty learned by the network are under-explored. In this paper, we propose an orthogonal method, called memory regularization in vivo to exploit the intra-domain knowledge and regularize the model training. Specifically, we refer to the segmentation model itself as the memory module, and minor the discrepancy of the two classifiers, i.e., the primary classifier and the auxiliary classifier, to reduce the prediction inconsistency. Without extra parameters, the proposed method is complementary to the most existing domain adaptation methods and could generally improve the performance of existing methods. Albeit simple, we verify the effectiveness of memory regularization on two synthetic-to-real benchmarks: GTA5 -> Cityscapes and SYNTHIA -> Cityscapes, yielding +11.1% and +11.3% mIoU improvement over the baseline model, respectively. Besides, a similar +12.0% mIoU improvement is observed on the cross-city benchmark: Cityscapes -> Oxford RobotCar. "
+}

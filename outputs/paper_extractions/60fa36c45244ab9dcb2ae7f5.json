@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/webis-de/small-text"
+  ],
+  "tasks": [
+    "Active Learning for Text Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "small-text library",
+    "pool-based active learning",
+    "SetFit training paradigm",
+    "GPU-enabled query strategies"
+  ],
+  "results": [
+    "SetFit matches vanilla transformer fine-tuning in classification accuracy",
+    "SetFit outperforms vanilla transformer fine-tuning in area under the curve"
+  ],
+  "paper_id": "60fa36c45244ab9dcb2ae7f5",
+  "title": "Small-Text: Active Learning for Text Classification in Python",
+  "abstract": "  We introduce small-text, an easy-to-use active learning library, which offers pool-based active learning for single- and multi-label text classification in Python. It features numerous pre-implemented state-of-the-art query strategies, including some that leverage the GPU. Standardized interfaces allow the combination of a variety of classifiers, query strategies, and stopping criteria, facilitating a quick mix and match, and enabling a rapid and convenient development of both active learning experiments and applications. With the objective of making various classifiers and query strategies accessible for active learning, small-text integrates several well-known machine learning libraries, namely scikit-learn, PyTorch, and Hugging Face transformers. The latter integrations are optionally installable extensions, so GPUs can be used but are not required. Using this new library, we investigate the performance of the recently published SetFit training paradigm, which we compare to vanilla transformer fine-tuning, finding that it matches the latter in classification accuracy while outperforming it in area under the curve. The library is available under the MIT License at https://github.com/webis-de/small-text, in version 1.3.0 at the time of writing. "
+}

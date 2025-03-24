@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Influence of stochastic roundoff errors on gradient descent convergence in low-precision computation"
+  ],
+  "datasets": [
+    "Multinomial logistic regression model",
+    "Simple neural network"
+  ],
+  "methods": [
+    "Unbiased stochastic rounding",
+    "Two new stochastic rounding schemes with constant rounding bias"
+  ],
+  "results": [
+    "Theoretical explanation for stagnation in low-precision gradient descent",
+    "Beneficial effect on convergence rate for convex problems",
+    "Performance validation on multinomial logistic regression and simple neural network with 8-bit floating-point format"
+  ],
+  "paper_id": "621849025aee126c0f552188",
+  "title": "On the influence of stochastic roundoff errors and their bias on the\n  convergence of the gradient descent method with low-precision floating-point\n  computation",
+  "abstract": "  When implementing the gradient descent method in low precision, the employment of stochastic rounding schemes helps to prevent stagnation of convergence caused by the vanishing gradient effect. Unbiased stochastic rounding yields zero bias by preserving small updates with probabilities proportional to their relative magnitudes. This study provides a theoretical explanation for the stagnation of the gradient descent method in low-precision computation. Additionally, we propose two new stochastic rounding schemes that trade the zero bias property with a larger probability to preserve small gradients. Our methods yield a constant rounding bias that, on average, lies in a descent direction. For convex problems, we prove that the proposed rounding methods typically have a beneficial effect on the convergence rate of gradient descent. We validate our theoretical analysis by comparing the performances of various rounding schemes when optimizing a multinomial logistic regression model and when training a simple neural network with an 8-bit floating-point format. "
+}

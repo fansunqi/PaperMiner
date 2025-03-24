@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding Biclique Partitions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Divide and conquer heuristic based on clique trees",
+    "Lexicographic breadth-first search to find moplexes",
+    "Heuristic complexity O[|V|(|V|+|E^c|)]"
+  ],
+  "results": [
+    "Biclique partition number (bp) < number of maximal cliques (mc) of complementary graph",
+    "Biclique partition size mc(G^c)-1",
+    "Exact solution if G^c is chordal and clique vertex irreducible",
+    "mc(G^c) - 2 <= bp(G) <= mc(G^c) - 1 for split graphs"
+  ],
+  "paper_id": "6226c93c5aee126c0fd578e7",
+  "title": "Finding Biclique Partitions of Co-Chordal Graphs",
+  "abstract": "  The biclique partition number $(\\text{bp})$ of a graph $G$ is referred to as the least number of complete bipartite (biclique) subgraphs that are required to cover the edges of the graph exactly once. In this paper, we show that the biclique partition number ($\\text{bp}$) of a co-chordal (complementary graph of chordal) graph $G = (V, E)$ is less than the number of maximal cliques ($\\text{mc}$) of its complementary graph: a chordal graph $G^c = (V, E^c)$. We first provide a general framework of the ``divide and conquer\" heuristic of finding minimum biclique partitions of co-chordal graphs based on clique trees. Furthermore, a heuristic of complexity $O[|V|(|V|+|E^c|)]$ is proposed by applying lexicographic breadth-first search to find structures called moplexes. Either heuristic gives us a biclique partition of $G$ with size $\\text{mc}(G^c)-1$. In addition, we prove that both of our heuristics can solve the minimum biclique partition problem on $G$ exactly if its complement $G^c$ is chordal and clique vertex irreducible. We also show that $\\text{mc}(G^c) - 2 \\leq \\text{bp}(G) \\leq \\text{mc}(G^c) - 1$ if $G$ is a split graph. "
+}

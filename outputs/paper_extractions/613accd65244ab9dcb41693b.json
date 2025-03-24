@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "The code is available online."
+  ],
+  "tasks": [
+    "Learning dynamic Bayesian networks (DBNs) from time-series data"
+  ],
+  "datasets": [
+    "simulated data",
+    "benchmark data",
+    "professional ice hockey games data"
+  ],
+  "methods": [
+    "NTS-NOTEARS",
+    "1D convolutional neural networks (CNNs)",
+    "continuous optimization with acyclicity constraint",
+    "incorporating prior knowledge as optimization constraints"
+  ],
+  "results": [
+    "state-of-the-art DAG structure quality",
+    "10-20% improvement in F1-score compared to baseline methods"
+  ],
+  "paper_id": "613accd65244ab9dcb41693b",
+  "title": "NTS-NOTEARS: Learning Nonparametric DBNs With Prior Knowledge",
+  "abstract": "  We describe NTS-NOTEARS, a score-based structure learning method for time-series data to learn dynamic Bayesian networks (DBNs) that captures nonlinear, lagged (inter-slice) and instantaneous (intra-slice) relations among variables. NTS-NOTEARS utilizes 1D convolutional neural networks (CNNs) to model the dependence of child variables on their parents; 1D CNN is a neural function approximation model well-suited for sequential data. DBN-CNN structure learning is formulated as a continuous optimization problem with an acyclicity constraint, following the NOTEARS DAG learning approach. We show how prior knowledge of dependencies (e.g., forbidden and required edges) can be included as additional optimization constraints. Empirical evaluation on simulated and benchmark data show that NTS-NOTEARS achieves state-of-the-art DAG structure quality compared to both parametric and nonparametric baseline methods, with improvement in the range of 10-20% on the F1-score. We also evaluate NTS-NOTEARS on complex real-world data acquired from professional ice hockey games that contain a mixture of continuous and discrete variables. The code is available online. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantifying relationships in data",
+    "Improving feature importance methods"
+  ],
+  "datasets": [
+    "Real data",
+    "Simulated data"
+  ],
+  "methods": [
+    "Ultra-marginal feature importance (UMFI)",
+    "Causal and associative relationship analysis",
+    "Dependence removal techniques"
+  ],
+  "results": [
+    "UMFI outperforms MCI",
+    "Improved performance in correlated interactions",
+    "Reduced runtime from exponential to super-linear"
+  ],
+  "paper_id": "62620f1c5aee126c0f686c82",
+  "title": "Ultra-marginal Feature Importance: Learning from Data with Causal\n  Guarantees",
+  "abstract": "  Scientists frequently prioritize learning from data rather than training the best possible model; however, research in machine learning often prioritizes the latter. Marginal contribution feature importance (MCI) was developed to break this trend by providing a useful framework for quantifying the relationships in data. In this work, we aim to improve upon the theoretical properties, performance, and runtime of MCI by introducing ultra-marginal feature importance (UMFI), which uses dependence removal techniques from the AI fairness literature as its foundation. We first propose axioms for feature importance methods that seek to explain the causal and associative relationships in data, and we prove that UMFI satisfies these axioms under basic assumptions. We then show on real and simulated data that UMFI performs better than MCI, especially in the presence of correlated interactions and unrelated features, while partially learning the structure of the causal graph and reducing the exponential runtime of MCI to super-linear. "
+}

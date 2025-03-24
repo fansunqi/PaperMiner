@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/QuantLearn"
+  ],
+  "tasks": [
+    "Inverse Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LTL-Based Non-Markovian IRL",
+    "Quantitative semantics of LTL formula satisfaction",
+    "Automated search for simplest LTL explanation"
+  ],
+  "results": [
+    "Feasibility of eliciting intuitive LTL-based reward signals from noisy data"
+  ],
+  "paper_id": "6178c43c5244ab9dcbb2b7d8",
+  "title": "LTL-Based Non-Markovian Inverse Reinforcement Learning",
+  "abstract": "  The successes of reinforcement learning in recent years are underpinned by the characterization of suitable reward functions. However, in settings where such rewards are non-intuitive, difficult to define, or otherwise error-prone in their definition, it is useful to instead learn the reward signal from expert demonstrations. This is the crux of inverse reinforcement learning (IRL). While eliciting learning requirements in the form of scalar reward signals has been shown to effective, such representations lack explainability and lead to opaque learning. We aim to mitigate this situation by presenting a novel IRL method for eliciting declarative learning requirements in the form of a popular formal logic -- Linear Temporal Logic (LTL) -- from a set of traces given by the expert policy. A key novelty of the proposed approach is quantitative semantics of satisfaction of an LTL formula by a word that, following Occam's razor principle, incentivizes simpler explanations. Given a sample $S=(P,N)$ consisting of positive traces $P$ and negative traces $N$, the proposed algorithms automate the search for a formula $\\varphi$ which provides the simplest explanation (in the $GF$ fragment of LTL) of the samples. We have implemented this approach as an open-source tool QuantLearn to perform logic-based non-Markovian IRL. Our results demonstrate the feasibility of the proposed approach in eliciting intuitive LTL-based reward signals from noisy data. "
+}

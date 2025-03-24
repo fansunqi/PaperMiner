@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian optimization",
+    "hyperparameter optimization"
+  ],
+  "datasets": [
+    "standard benchmark functions"
+  ],
+  "methods": [
+    "Calibrated Uncertainty Estimation"
+  ],
+  "results": [
+    "enables Bayesian optimization to arrive at the global optimum in fewer steps",
+    "improved performance on standard benchmark functions and hyperparameter optimization tasks"
+  ],
+  "paper_id": "61b2c57b5244ab9dcb1d712f",
+  "title": "Calibrated Uncertainty Estimation Improves Bayesian Optimization",
+  "abstract": "  Bayesian optimization is a sequential procedure for obtaining the global optimum of black-box functions without knowing a priori their true form. Good uncertainty estimates over the shape of the objective function are essential in guiding the optimization process. However, these estimates can be inaccurate if the true objective function violates assumptions made by its model (e.g., Gaussianity). This paper studies which uncertainties are needed in Bayesian optimization models and argues that ideal uncertainties should be calibrated -- i.e., an 80% predictive interval should contain the true outcome 80% of the time. We propose a simple algorithm for enforcing this property and show that it enables Bayesian optimization to arrive at the global optimum in fewer steps. We provide theoretical insights into the role of calibrated uncertainties and demonstrate the improved performance of our method on standard benchmark functions and hyperparameter optimization tasks. "
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bounding Information Leakage",
+    "Membership Inference",
+    "Attribute Inference"
+  ],
+  "datasets": [
+    "Synthetic Data",
+    "Natural Images",
+    "PenDigits"
+  ],
+  "methods": [
+    "Universal Bound on Inference Attack Success Rate",
+    "Mutual Information Bounds",
+    "Formalism Connecting Memorization and Generalization"
+  ],
+  "results": [
+    "Illustrated potential on synthetic and natural image classification tasks",
+    "Recovered writer identity in PenDigits dataset"
+  ],
+  "paper_id": "609a212791e011a44725c9b8",
+  "title": "Bounding Information Leakage in Machine Learning",
+  "abstract": "  Recently, it has been shown that Machine Learning models can leak sensitive information about their training data. This information leakage is exposed through membership and attribute inference attacks. Although many attack strategies have been proposed, little effort has been made to formalize these problems. We present a novel formalism, generalizing membership and attribute inference attack setups previously studied in the literature and connecting them to memorization and generalization. First, we derive a universal bound on the success rate of inference attacks and connect it to the generalization gap of the target model. Second, we study the question of how much sensitive information is stored by the algorithm about its training set and we derive bounds on the mutual information between the sensitive attributes and model parameters. Experimentally, we illustrate the potential of our approach by applying it to both synthetic data and classification tasks on natural images. Finally, we apply our formalism to different attribute inference strategies, with which an adversary is able to recover the identity of writers in the PenDigits dataset. "
+}

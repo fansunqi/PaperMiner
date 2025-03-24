@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Adversarial Domain Adaptation"
+  ],
+  "datasets": [
+    "Office-31",
+    "Office-Home"
+  ],
+  "methods": [
+    "E-ADDA",
+    "Mahalanobis distance loss",
+    "out-of-distribution detection subroutine"
+  ],
+  "results": [
+    "In acoustic modality, E-ADDA outperforms by up to 29.8% in f1 score",
+    "In computer vision modality, E-ADDA outperforms by up to 17.9% on UDA benchmarks"
+  ],
+  "paper_id": "61f0bbe05244ab9dcb731c0e",
+  "title": "E-ADDA: Unsupervised Adversarial Domain Adaptation Enhanced by a New\n  Mahalanobis Distance Loss for Smart Computing",
+  "abstract": "  In smart computing, the labels of training samples for a specific task are not always abundant. However, the labels of samples in a relevant but different dataset are available. As a result, researchers have relied on unsupervised domain adaptation to leverage the labels in a dataset (the source domain) to perform better classification in a different, unlabeled dataset (target domain). Existing non-generative adversarial solutions for UDA aim at achieving domain confusion through adversarial training. The ideal scenario is that perfect domain confusion is achieved, but this is not guaranteed to be true. To further enforce domain confusion on top of the adversarial training, we propose a novel UDA algorithm, \\textit{E-ADDA}, which uses both a novel variation of the Mahalanobis distance loss and an out-of-distribution detection subroutine. The Mahalanobis distance loss minimizes the distribution-wise distance between the encoded target samples and the distribution of the source domain, thus enforcing additional domain confusion on top of adversarial training. Then, the OOD subroutine further eliminates samples on which the domain confusion is unsuccessful. We have performed extensive and comprehensive evaluations of E-ADDA in the acoustic and computer vision modalities. In the acoustic modality, E-ADDA outperforms several state-of-the-art UDA algorithms by up to 29.8%, measured in the f1 score. In the computer vision modality, the evaluation results suggest that we achieve new state-of-the-art performance on popular UDA benchmarks such as Office-31 and Office-Home, outperforming the second best-performing algorithms by up to 17.9%. "
+}

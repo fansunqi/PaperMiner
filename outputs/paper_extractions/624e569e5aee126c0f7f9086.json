@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/syy-whu/DRD-Net"
+  ],
+  "tasks": [
+    "Image deraining",
+    "Detail recovery"
+  ],
+  "datasets": [
+    "Real200",
+    "synthetic and real-world rainy data"
+  ],
+  "methods": [
+    "Semi-DRDNet",
+    "Squeeze-and-excitation based rain residual network",
+    "Structure detail context aggregation based detail repair network",
+    "Dual sample-augmented contrastive regularization network"
+  ],
+  "results": [
+    "Clear improvements over fifteen state-of-the-art methods",
+    "Operates smoothly on both synthetic and real-world rainy data"
+  ],
+  "paper_id": "624e569e5aee126c0f7f9086",
+  "title": "Detail-recovery Image Deraining via Dual Sample-augmented Contrastive\n  Learning",
+  "abstract": "  The intricacy of rainy image contents often leads cutting-edge deraining models to image degradation including remnant rain, wrongly-removed details, and distorted appearance. Such degradation is further exacerbated when applying the models trained on synthetic data to real-world rainy images. We observe two types of domain gaps between synthetic and real-world rainy images: one exists in rain streak patterns; the other is the pixel-level appearance of rain-free images. To bridge the two domain gaps, we propose a semi-supervised detail-recovery image deraining network (Semi-DRDNet) with dual sample-augmented contrastive learning. Semi-DRDNet consists of three sub-networks:i) for removing rain streaks without remnants, we present a squeeze-and-excitation based rain residual network; ii) for encouraging the lost details to return, we construct a structure detail context aggregation based detail repair network; to our knowledge, this is the first time; and iii) for building efficient contrastive constraints for both rain streaks and clean backgrounds, we exploit a novel dual sample-augmented contrastive regularization network.Semi-DRDNet operates smoothly on both synthetic and real-world rainy data in terms of deraining robustness and detail accuracy. Comparisons on four datasets including our established Real200 show clear improvements of Semi-DRDNet over fifteen state-of-the-art methods. Code and dataset are available at https://github.com/syy-whu/DRD-Net. "
+}

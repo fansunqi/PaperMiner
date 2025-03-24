@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/tridungduong16/multiobj-scm-cf"
+  ],
+  "tasks": [
+    "Counterfactual explanation for classification models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Prototype-based counterfactual explanation (ProCE)",
+    "Multi-objective genetic algorithm for mixed-type features"
+  ],
+  "results": [
+    "ProCE compares favorably with state-of-the-art methods"
+  ],
+  "paper_id": "6091328991e01105f877fc23",
+  "title": "Causality-based Counterfactual Explanation for Classification Models",
+  "abstract": "  Counterfactual explanation is one branch of interpretable machine learning that produces a perturbation sample to change the model's original decision. The generated samples can act as a recommendation for end-users to achieve their desired outputs. Most of the current counterfactual explanation approaches are the gradient-based method, which can only optimize the differentiable loss functions with continuous variables. Accordingly, the gradient-free methods are proposed to handle the categorical variables, which however have several major limitations: 1) causal relationships among features are typically ignored when generating the counterfactuals, possibly resulting in impractical guidelines for decision-makers; 2) the counterfactual explanation algorithm requires a great deal of effort into parameter tuning for dertermining the optimal weight for each loss functions which must be conducted repeatedly for different datasets and settings. In this work, to address the above limitations, we propose a prototype-based counterfactual explanation framework (ProCE). ProCE is capable of preserving the causal relationship underlying the features of the counterfactual data. In addition, we design a novel gradient-free optimization based on the multi-objective genetic algorithm that generates the counterfactual explanations for the mixed-type of continuous and categorical features. Numerical experiments demonstrate that our method compares favorably with state-of-the-art methods and therefore is applicable to existing prediction models. All the source codes and data are available at \\url{https://github.com/tridungduong16/multiobj-scm-cf}. "
+}

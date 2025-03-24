@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Closed-loop grasping",
+    "Pixel-wise grasp generation"
+  ],
+  "datasets": [
+    "Cornell",
+    " Jacquard"
+  ],
+  "methods": [
+    "PEGG-Net",
+    "Lightweight network for background noise removal"
+  ],
+  "results": [
+    "Cornell dataset: 98.9%",
+    "Jacquard dataset: 93.8%",
+    "Real-world grasp success rate: 91.2%",
+    "Supports closed-loop grasping at up to 50Hz"
+  ],
+  "paper_id": "62451c325aee126c0f47b500",
+  "title": "PEGG-Net: Background Agnostic Pixel-Wise Efficient Grasp Generation\n  Under Closed-Loop Conditions",
+  "abstract": "  Performing closed-loop grasping at close proximity to an object requires a large field of view. However, such images will inevitably bring large amounts of unnecessary background information, especially when the camera is far away from the target object at the initial stage, resulting in performance degradation of the grasping network. To address this problem, we design a novel PEGG-Net, a real-time, pixel-wise, robotic grasp generation network. The proposed lightweight network is inherently able to learn to remove background noise that can reduce grasping accuracy. Our proposed PEGG-Net achieves improved state-of-the-art performance on both Cornell dataset (98.9%) and Jacquard dataset (93.8%). In the real-world tests, PEGG-Net can support closed-loop grasping at up to 50Hz using an image size of 480x480 in dynamic environments. The trained model also generalizes to previously unseen objects with complex geometrical shapes, household objects and workshop tools and achieved an overall grasp success rate of 91.2% in our real-world grasping experiments. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Discourse Relation Modeling",
+    "Discourse Relation Classification"
+  ],
+  "datasets": [
+    "Twitter",
+    "Social Media"
+  ],
+  "methods": [
+    "Discourse Relation Embedding",
+    "Weakly Supervised Learning",
+    "Multitask Learning"
+  ],
+  "results": [
+    "macro F1: 0.76",
+    "improved social media causality prediction F1: 0.81",
+    "exceeded performance of sentence embedding methods"
+  ],
+  "paper_id": "60926d0991e0113f3a70538b",
+  "title": "Discourse Relation Embeddings: Representing the Relations between\n  Discourse Segments in Social Media",
+  "abstract": "  Discourse relations are typically modeled as a discrete class that characterizes the relation between segments of text (e.g. causal explanations, expansions). However, such predefined discrete classes limits the universe of potential relationships and their nuanced differences. Analogous to contextual word embeddings, we propose representing discourse relations as points in high dimensional continuous space. However, unlike words, discourse relations often have no surface form (relations are between two segments, often with no word or phrase in that gap) which presents a challenge for existing embedding techniques. We present a novel method for automatically creating discourse relation embeddings (DiscRE), addressing the embedding challenge through a weakly supervised, multitask approach to learn diverse and nuanced relations between discourse segments in social media. Results show DiscRE can: (1) obtain the best performance on Twitter discourse relation classification task (macro F1=0.76) (2) improve the state of the art in social media causality prediction (from F1=.79 to .81), (3) perform beyond modern sentence and contextual word embeddings at traditional discourse relation classification, and (4) capture novel nuanced relations (e.g. relations semantically at the intersection of causal explanations and counterfactuals). "
+}

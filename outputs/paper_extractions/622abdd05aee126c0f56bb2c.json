@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Synchronizing Boolean networks asynchronously"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Asynchronous automaton for Boolean networks",
+    "And-or-nets on arc-signed digraphs",
+    "Synchronizing words for and-or-nets"
+  ],
+  "results": [
+    "Existence and minimal length of synchronizing words for and-or-nets",
+    "If G is strongly connected and has no positive cycles, synchronizing word length \u2264 10(\u221a5+1)^n",
+    "CoNP-hard to decide if every and-or-net on G has a synchronizing word"
+  ],
+  "paper_id": "622abdd05aee126c0f56bb2c",
+  "title": "Synchronizing Boolean networks asynchronously",
+  "abstract": "  The {\\em asynchronous automaton} associated with a Boolean network $f:\\{0,1\\}^n\\to\\{0,1\\}^n$, considered in many applications, is the finite deterministic automaton where the set of states is $\\{0,1\\}^n$, the alphabet is $[n]$, and the action of letter $i$ on a state $x$ consists in either switching the $i$th component if $f_i(x)\\neq x_i$ or doing nothing otherwise. These actions are extended to words in the natural way. A word is then {\\em synchronizing} if the result of its action is the same for every state. In this paper, we ask for the existence of synchronizing words, and their minimal length, for a basic class of Boolean networks called and-or-nets: given an arc-signed digraph $G$ on $[n]$, we say that $f$ is an {\\em and-or-net} on $G$ if, for every $i\\in [n]$, there is $a$ such that, for all state $x$, $f_i(x)=a$ if and only if $x_j=a$ ($x_j\\neq a$) for every positive (negative) arc from $j$ to $i$; so if $a=1$ ($a=0$) then $f_i$ is a conjunction (disjunction) of positive or negative literals. Our main result is that if $G$ is strongly connected and has no positive cycles, then either every and-or-net on $G$ has a synchronizing word of length at most $10(\\sqrt{5}+1)^n$, much smaller than the bound $(2^n-1)^2$ given by the well known \\v{C}ern\\'y's conjecture, or $G$ is a cycle and no and-or-net on $G$ has a synchronizing word. This contrasts with the following complexity result: it is coNP-hard to decide if every and-or-net on $G$ has a synchronizing word, even if $G$ is strongly connected or has no positive cycles. "
+}

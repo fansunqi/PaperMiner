@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hierarchical forecasting",
+    "Probabilistic forecasting"
+  ],
+  "datasets": [
+    "Australian domestic tourism data",
+    "Favorita grocery sales dataset",
+    "San Francisco Bay Area highway traffic"
+  ],
+  "methods": [
+    "Deep Poisson Mixture Network (DPMN)"
+  ],
+  "results": [
+    "Relative improvement in CRPS: 11.8% on Australian data",
+    "Relative improvement in CRPS: 8.1% on Favorita data",
+    "No significant improvement on San Francisco traffic data"
+  ],
+  "paper_id": "6178c4225244ab9dcbb2aa17",
+  "title": "Probabilistic Hierarchical Forecasting with Deep Poisson Mixtures",
+  "abstract": "  Hierarchical forecasting problems arise when time series have a natural group structure, and predictions at multiple levels of aggregation and disaggregation across the groups are needed. In such problems, it is often desired to satisfy the aggregation constraints in a given hierarchy, referred to as hierarchical coherence in the literature. Maintaining coherence while producing accurate forecasts can be a challenging problem, especially in the case of probabilistic forecasting. We present a novel method capable of accurate and coherent probabilistic forecasts for time series when reliable hierarchical information is present. We call it Deep Poisson Mixture Network (DPMN). It relies on the combination of neural networks and a statistical model for the joint distribution of the hierarchical multivariate time series structure. By construction, the model guarantees hierarchical coherence and provides simple rules for aggregation and disaggregation of the predictive distributions. We perform an extensive empirical evaluation comparing the DPMN to other state-of-the-art methods which produce hierarchically coherent probabilistic forecasts on multiple public datasets. Comparing to existing coherent probabilistic models, we obtain a relative improvement in the overall Continuous Ranked Probability Score (CRPS) of 11.8% on Australian domestic tourism data, and 8.1% on the Favorita grocery sales dataset, where time series are grouped with geographical hierarchies or travel intent hierarchies. For San Francisco Bay Area highway traffic, where the series' hierarchical structure is randomly assigned, and their correlations are less informative, our method does not show significant performance differences over statistical baselines. "
+}

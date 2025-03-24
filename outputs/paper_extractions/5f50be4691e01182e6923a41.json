@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial robustness of deep neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Exploring relationship between adversarial robustness, Lipschitz constant, and architecture parameters",
+    "Approximating Lipschitz constant through univariate log-normal distribution",
+    "Formulating constraint on distribution parameters based on cumulative function"
+  ],
+  "results": [
+    "Best performance among models under various attacks",
+    "Empirical improvement in adversarial robustness compared to adversarially trained NAS models and human-designed models"
+  ],
+  "paper_id": "5f50be4691e01182e6923a41",
+  "title": "Adversarially Robust Neural Architectures",
+  "abstract": "  Deep Neural Networks (DNNs) are vulnerable to adversarial attacks. Existing methods are devoted to developing various robust training strategies or regularizations to update the weights of the neural network. But beyond the weights, the overall structure and information flow in the network are explicitly determined by the neural architecture, which remains unexplored. This paper thus aims to improve the adversarial robustness of the network from the architecture perspective. We explore the relationship among adversarial robustness, Lipschitz constant, and architecture parameters and show that an appropriate constraint on architecture parameters could reduce the Lipschitz constant to further improve the robustness. The importance of architecture parameters could vary from operation to operation or connection to connection. We approximate the Lipschitz constant of the entire network through a univariate log-normal distribution, whose mean and variance are related to architecture parameters. The confidence can be fulfilled through formulating a constraint on the distribution parameters based on the cumulative function. Compared with adversarially trained neural architectures searched by various NAS algorithms as well as efficient human-designed models, our algorithm empirically achieves the best performance among all the models under various attacks on different datasets. "
+}

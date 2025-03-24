@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CTR prediction"
+  ],
+  "datasets": [
+    "benchmark",
+    "real-world industrial dataset"
+  ],
+  "methods": [
+    "adaptive mixture of experts (AdaMoE)"
+  ],
+  "results": [
+    "AdaMoE significantly outperforms all incremental learning frameworks considered"
+  ],
+  "paper_id": "62563f845aee126c0f6f2d7e",
+  "title": "On the Adaptation to Concept Drift for CTR Prediction",
+  "abstract": "  Click-through rate (CTR) prediction is a crucial task in web search, recommender systems, and online advertisement displaying. In practical application, CTR models often serve with high-speed user-generated data streams, whose underlying distribution rapidly changing over time. The concept drift problem inevitably exists in those streaming data, which can lead to performance degradation due to the timeliness issue. To ensure model freshness, incremental learning has been widely adopted in real-world production systems. However, it is hard for the incremental update to achieve the balance of the CTR models between the adaptability to capture the fast-changing trends and generalization ability to retain common knowledge. In this paper, we propose adaptive mixture of experts (AdaMoE), a new framework to alleviate the concept drift problem by statistical weighting policy in the data stream of CTR prediction. The extensive offline experiments on both benchmark and a real-world industrial dataset, as well as an online A/B testing show that our AdaMoE significantly outperforms all incremental learning frameworks considered. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Ensemble models in E-commerce",
+    "Ranking and revenue improvement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Learning-To-Ensemble (LTE) framework RAEGO",
+    "Contextual Rank Aggregator (RA)",
+    "Evaluator-Generator Optimization (EGO)",
+    "TournamentGreedy algorithm"
+  ],
+  "results": [
+    "RAEGO improves revenue significantly",
+    "TournamentGreedy produces best average weighted Kendall Tau Distance (KTD) with quadratic time complexity",
+    "Higher efficiency and coverage in exploring optimal weights"
+  ],
+  "paper_id": "60f7757a5244ab9dcb32ff5b",
+  "title": "Learning-To-Ensemble by Contextual Rank Aggregation in E-Commerce",
+  "abstract": "  Ensemble models in E-commerce combine predictions from multiple sub-models for ranking and revenue improvement. Industrial ensemble models are typically deep neural networks, following the supervised learning paradigm to infer conversion rate given inputs from sub-models. However, this process has the following two problems. Firstly, the point-wise scoring approach disregards the relationships between items and leads to homogeneous displayed results, while diversified display benefits user experience and revenue. Secondly, the learning paradigm focuses on the ranking metrics and does not directly optimize the revenue. In our work, we propose a new Learning-To-Ensemble (LTE) framework RAEGO, which replaces the ensemble model with a contextual Rank Aggregator (RA) and explores the best weights of sub-models by the Evaluator-Generator Optimization (EGO). To achieve the best online performance, we propose a new rank aggregation algorithm TournamentGreedy as a refinement of classic rank aggregators, which also produces the best average weighted Kendall Tau Distance (KTD) amongst all the considered algorithms with quadratic time complexity. Under the assumption that the best output list should be Pareto Optimal on the KTD metric for sub-models, we show that our RA algorithm has higher efficiency and coverage in exploring the optimal weights. Combined with the idea of Bayesian Optimization and gradient descent, we solve the online contextual Black-Box Optimization task that finds the optimal weights for sub-models given a chosen RA model. RA-EGO has been deployed in our online system and has improved the revenue significantly. "
+}

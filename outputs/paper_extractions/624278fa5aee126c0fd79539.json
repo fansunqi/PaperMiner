@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hybrid model-based deep receiver design"
+  ],
+  "datasets": [
+    "synthetic linear channel",
+    "synthetic non-linear channel",
+    "COST 2100 channel"
+  ],
+  "methods": [
+    "Online meta-learning",
+    "Predictive meta-learning scheme",
+    "Modular training strategy"
+  ],
+  "results": [
+    "Outperforms previous techniques by up to 2.5 dB in coded bit error rate in rapidly-varying scenarios"
+  ],
+  "paper_id": "624278fa5aee126c0fd79539",
+  "title": "Online Meta-Learning For Hybrid Model-Based Deep Receivers",
+  "abstract": "  Recent years have witnessed growing interest in the application of deep neural networks (DNNs) for receiver design, which can potentially be applied in complex environments without relying on knowledge of the channel model. However, the dynamic nature of communication channels often leads to rapid distribution shifts, which may require periodically retraining. This paper formulates a data-efficient two-stage training method that facilitates rapid online adaptation. Our training mechanism uses a predictive meta-learning scheme to train rapidly from data corresponding to both current and past channel realizations. Our method is applicable to any deep neural network (DNN)-based receiver, and does not require transmission of new pilot data for training. To illustrate the proposed approach, we study DNN-aided receivers that utilize an interpretable model-based architecture, and introduce a modular training strategy based on predictive meta-learning. We demonstrate our techniques in simulations on a synthetic linear channel, a synthetic non-linear channel, and a COST 2100 channel. Our results demonstrate that the proposed online training scheme allows receivers to outperform previous techniques based on self-supervision and joint-learning by a margin of up to 2.5 dB in coded bit error rate in rapidly-varying scenarios. "
+}

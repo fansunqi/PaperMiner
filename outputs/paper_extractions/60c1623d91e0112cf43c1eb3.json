@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data-driven discovery of particle swarming models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gaussian processes for latent radial interaction function",
+    "Statistical inverse problem formulation",
+    "Posterior mean estimator in Reproducing kernel Hilbert space"
+  ],
+  "results": [
+    "Posterior mean estimator converges at optimal rate in M",
+    "Parametric learning rate in M for posterior marginal variance",
+    "Efficient learning from scarce noisy trajectory data"
+  ],
+  "paper_id": "60c1623d91e0112cf43c1eb3",
+  "title": "Learning particle swarming models from data with Gaussian processes",
+  "abstract": "  Interacting particle or agent systems that display a rich variety of swarming behaviours are ubiquitous in science and engineering. A fundamental and challenging goal is to understand the link between individual interaction rules and swarming. In this paper, we study the data-driven discovery of a second-order particle swarming model that describes the evolution of $N$ particles in $\\mathbb{R}^d$ under radial interactions. We propose a learning approach that models the latent radial interaction function as Gaussian processes, which can simultaneously fulfill two inference goals: one is the nonparametric inference of {the} interaction function with pointwise uncertainty quantification, and the other one is the inference of unknown scalar parameters in the non-collective friction forces of the system. We formulate the learning problem as a statistical inverse problem and provide a detailed analysis of recoverability conditions, establishing that a coercivity condition is sufficient for recoverability. Given data collected from $M$ i.i.d trajectories with independent Gaussian observational noise, we provide a finite-sample analysis, showing that our posterior mean estimator converges in a Reproducing kernel Hilbert space norm, at an optimal rate in $M$ equal to the one in the classical 1-dimensional Kernel Ridge regression. As a byproduct, we show we can obtain a parametric learning rate in $M$ for the posterior marginal variance using $L^{\\infty}$ norm, and the rate could also involve $N$ and $L$ (the number of observation time instances for each trajectory), depending on the condition number of the inverse problem. Numerical results on systems that exhibit different swarming behaviors demonstrate efficient learning of our approach from scarce noisy trajectory data. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Class Incremental Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Incremental Prototype Tuning (IPT)",
+    "parameter-additional-tuning (PAT)"
+  ],
+  "results": [
+    "IPT effectively compensates for semantic drift",
+    "IPT surpasses state-of-the-art baselines on mainstream incremental learning benchmarks"
+  ],
+  "paper_id": "624fa8db5aee126c0f3a5b98",
+  "title": "Incremental Prototype Tuning for Class Incremental Learning",
+  "abstract": "  Class incremental learning(CIL) has attracted much attention, but most existing related works focus on fine-tuning the entire representation model, which inevitably results in much catastrophic forgetting. In the contrast, with a semantic-rich pre-trained representation model, parameter-additional-tuning (PAT) only changes very few parameters to learn new visual concepts. Recent studies have proved that PAT-based CIL can naturally avoid fighting against forgetting by replaying or distilling like most of the existing methods. However, we find that PAT-based CIL still faces serious semantic drift, the high-level forgetting problem caused by classifier learning bias at different learning phases, which significantly reduces the performance of PAT-based CIL. To address this problem, we propose Incremental Prototype Tuning (IPT), a simple but effective method that tunes category prototypes for classification and learning example prototypes to compensate for semantic drift. Extensive experiments demonstrate that our method can effectively compensate for semantic drift. Combined with well-pre-trained Vit backbones and other PAT methods, IPT surpasses the state-of-the-art baselines on mainstream incremental learning benchmarks. "
+}

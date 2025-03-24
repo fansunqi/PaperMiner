@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse matrix-vector multiplication"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CSR-k format",
+    "Reordering",
+    "Grouping rows into super-rows and super-super-rows"
+  ],
+  "results": [
+    "Outperforms Intel MKL on Intel Xeon Platinum 8380 and AMD Epyc 7742 CPUs",
+    "Outperforms NVIDIA's cuSPARSE and Sandia National Laboratories' KokkosKernels on NVIDIA A100 and V100 for regular sparse matrices"
+  ],
+  "paper_id": "622abdd05aee126c0f56ba01",
+  "title": "Heterogeneous Sparse Matrix-Vector Multiplication via Compressed Sparse\n  Row Format",
+  "abstract": "  Sparse matrix-vector multiplication (SpMV) is one of the most important kernels in high-performance computing (HPC), yet SpMV normally suffers from ill performance on many devices. Due to ill performance, SpMV normally requires special care to store and tune for a given device. Moreover, HPC is facing heterogeneous hardware containing multiple different compute units, e.g., many-core CPUs and GPUs. Therefore, an emerging goal has been to produce heterogeneous formats and methods that allow critical kernels, e.g., SpMV, to be executed on different devices with portable performance and minimal changes to format and method. This paper presents a heterogeneous format based on CSR, named CSR-k, that can be tuned quickly and outperforms the average performance of Intel MKL on Intel Xeon Platinum 8380 and AMD Epyc 7742 CPUs while still outperforming NVIDIA's cuSPARSE and Sandia National Laboratories' KokkosKernels on NVIDIA A100 and V100 for regular sparse matrices, i.e., sparse matrices where the number of nonzeros per row has a variance $\\leq$ 10, such as those commonly generated from two and three-dimensional finite difference and element problems. In particular, CSR-k achieves this with reordering and by grouping rows into a hierarchical structure of super-rows and super-super-rows that are represented by just a few extra arrays of pointers. Due to its simplicity, a model can be tuned for a device and used to select super-row and super-super-rows sizes in constant time. "
+}

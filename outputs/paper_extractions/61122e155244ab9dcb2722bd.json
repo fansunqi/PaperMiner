@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image synthesis improvement"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "BIGRoC (Boosting Image Generation via a Robust Classifier)",
+    "Post-processing via robust classifier guidance",
+    "Projected gradient steps"
+  ],
+  "results": [
+    "Improves ImageNet 128x128 synthesis by 14.81% (FID: 2.53)",
+    "Improves ImageNet 256x256 synthesis by 7.87% (FID: 3.63)",
+    "Human preference survey shows significant preference for BIGRoC outputs"
+  ],
+  "paper_id": "61122e155244ab9dcb2722bd",
+  "title": "BIGRoC: Boosting Image Generation via a Robust Classifier",
+  "abstract": "  The interest of the machine learning community in image synthesis has grown significantly in recent years, with the introduction of a wide range of deep generative models and means for training them. In this work, we propose a general model-agnostic technique for improving the image quality and the distribution fidelity of generated images obtained by any generative model. Our method, termed BIGRoC (Boosting Image Generation via a Robust Classifier), is based on a post-processing procedure via the guidance of a given robust classifier and without a need for additional training of the generative model. Given a synthesized image, we propose to update it through projected gradient steps over the robust classifier to refine its recognition. We demonstrate this post-processing algorithm on various image synthesis methods and show a significant quantitative and qualitative improvement on CIFAR-10 and ImageNet. Surprisingly, although BIGRoC is the first model agnostic among refinement approaches and requires much less information, it outperforms competitive methods. Specifically, BIGRoC improves the image synthesis best performing diffusion model on ImageNet 128x128 by 14.81%, attaining an FID score of 2.53, and on 256x256 by 7.87%, achieving an FID of 3.63. Moreover, we conduct an opinion survey, according to which humans significantly prefer our method's outputs. "
+}

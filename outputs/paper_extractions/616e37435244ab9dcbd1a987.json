@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "self-supervised pre-training for audio representations",
+    "downstream classification tasks"
+  ],
+  "datasets": [
+    "Audioset"
+  ],
+  "methods": [
+    "DECAR",
+    "offline clustering for pseudo-labels",
+    "lightweight self-supervised pre-training"
+  ],
+  "results": [
+    "transfer to 9 downstream tasks",
+    "ablation studies on key design choices"
+  ],
+  "paper_id": "616e37435244ab9dcbd1a987",
+  "title": "DECAR: Deep Clustering for learning general-purpose Audio\n  Representations",
+  "abstract": "  We introduce DECAR, a self-supervised pre-training approach for learning general-purpose audio representations. Our system is based on clustering: it utilizes an offline clustering step to provide target labels that act as pseudo-labels for solving a prediction task. We develop on top of recent advances in self-supervised learning for computer vision and design a lightweight, easy-to-use self-supervised pre-training scheme. We pre-train DECAR embeddings on a balanced subset of the large-scale Audioset dataset and transfer those representations to 9 downstream classification tasks, including speech, music, animal sounds, and acoustic scenes. Furthermore, we conduct ablation studies identifying key design choices and also make all our code and pre-trained models publicly available. "
+}

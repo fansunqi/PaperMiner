@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Off-policy evaluation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Featurized embedded permutation weighting estimator",
+    "Density ratio in action embedding space",
+    "Normalizing flows",
+    "Density ratio estimation as classification"
+  ],
+  "results": [
+    "Reduces possibility of positivity violations",
+    "Feasible estimates in practice"
+  ],
+  "paper_id": "6226c93c5aee126c0fd578b6",
+  "title": "Off-Policy Evaluation in Embedded Spaces",
+  "abstract": "  Off-policy evaluation methods are important in recommendation systems and search engines, where data collected under an existing logging policy is used to estimate the performance of a new proposed policy. A common approach to this problem is weighting, where data is weighted by a density ratio between the probability of actions given contexts in the target and logged policies. In practice, two issues often arise. First, many problems have very large action spaces and we may not observe rewards for most actions, and so in finite samples we may encounter a positivity violation. Second, many recommendation systems are not probabilistic and so having access to logging and target policy densities may not be feasible. To address these issues, we introduce the featurized embedded permutation weighting estimator. The estimator computes the density ratio in an action embedding space, which reduces the possibility of positivity violations. The density ratio is computed leveraging recent advances in normalizing flows and density ratio estimation as a classification problem, in order to obtain estimates which are feasible in practice. "
+}

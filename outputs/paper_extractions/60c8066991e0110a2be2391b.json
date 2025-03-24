@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Open-set Domain Adaptation in Semantic Segmentation"
+  ],
+  "datasets": [
+    "Two synthetic tasks",
+    "One COVID-19 segmentation task"
+  ],
+  "methods": [
+    "Known-region-aware Domain Alignment (KRADA)",
+    "Statistical measurements for unknown class distribution"
+  ],
+  "results": [
+    "Effectiveness of KRADA verified on tasks"
+  ],
+  "paper_id": "60c8066991e0110a2be2391b",
+  "title": "KRADA: Known-region-aware Domain Alignment for Open-set Domain\n  Adaptation in Semantic Segmentation",
+  "abstract": "  In semantic segmentation, we aim to train a pixel-level classifier to assign category labels to all pixels in an image, where labeled training images and unlabeled test images are from the same distribution and share the same label set. However, in an open world, the unlabeled test images probably contain unknown categories and have different distributions from the labeled images. Hence, in this paper, we consider a new, more realistic, and more challenging problem setting where the pixel-level classifier has to be trained with labeled images and unlabeled open-world images -- we name it open-set domain adaptation segmentation (OSDAS). In OSDAS, the trained classifier is expected to identify unknown-class pixels and classify known-class pixels well. To solve OSDAS, we first investigate which distribution that unknown-class pixels obey. Then, motivated by the goodness-of-fit test, we use statistical measurements to show how a pixel fits the distribution of an unknown class and select highly-fitted pixels to form the unknown region in each test image. Eventually, we propose an end-to-end learning framework, known-region-aware domain alignment (KRADA), to distinguish unknown classes while aligning the distributions of known classes in labeled and unlabeled open-world images. The effectiveness of KRADA has been verified on two synthetic tasks and one COVID-19 segmentation task. "
+}

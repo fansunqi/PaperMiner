@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Corrupted bandit problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HubUCB (UCB-type algorithm using Huber's estimator)",
+    "SeqHubUCB (sequential version of Huber's estimator)"
+  ],
+  "results": [
+    "HubUCB achieves near-optimal regret upper bound",
+    "SeqHubUCB enjoys similar regret guarantees with reduced computational burden"
+  ],
+  "paper_id": "6226c93d5aee126c0fd57b07",
+  "title": "Bandits Corrupted by Nature: Lower Bounds on Regret and Robust\n  Optimistic Algorithm",
+  "abstract": "  We study the corrupted bandit problem, i.e. a stochastic multi-armed bandit problem with $k$ unknown reward distributions, which are heavy-tailed and corrupted by a history-independent adversary or Nature. To be specific, the reward obtained by playing an arm comes from corresponding heavy-tailed reward distribution with probability $1-\\varepsilon \\in (0.5,1]$ and an arbitrary corruption distribution of unbounded support with probability $\\varepsilon \\in [0,0.5)$.   First, we provide $\\textit{a problem-dependent lower bound on the regret}$ of any corrupted bandit algorithm. The lower bounds indicate that the corrupted bandit problem is harder than the classical stochastic bandit problem with sub-Gaussian or heavy-tail rewards.   Following that, we propose a novel UCB-type algorithm for corrupted bandits, namely HubUCB, that builds on Huber's estimator for robust mean estimation. Leveraging a novel concentration inequality of Huber's estimator, we prove that HubUCB achieves a near-optimal regret upper bound.   Since computing Huber's estimator has quadratic complexity, we further introduce a sequential version of Huber's estimator that exhibits linear complexity. We leverage this sequential estimator to design SeqHubUCB that enjoys similar regret guarantees while reducing the computational burden.   Finally, we experimentally illustrate the efficiency of HubUCB and SeqHubUCB in solving corrupted bandits for different reward distributions and different levels of corruptions. "
+}

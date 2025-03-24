@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning from coarse labels"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generic reduction for answering Statistical Queries (SQ) over fine grained labels given only coarse labels",
+    "Efficient algorithm for Gaussian mean estimation from coarse data when sets in the partition are convex"
+  ],
+  "results": [
+    "Any problem learnable from fine grained labels can also be learned efficiently from sufficiently informative coarse data",
+    "Number of coarse labels required depends polynomially on information distortion and number of fine labels",
+    "Gaussian mean estimation from coarse data is NP-hard for non-convex sets"
+  ],
+  "paper_id": "6125b0035244ab9dcb38a516",
+  "title": "Efficient Algorithms for Learning from Coarse Labels",
+  "abstract": "  For many learning problems one may not have access to fine grained label information; e.g., an image can be labeled as husky, dog, or even animal depending on the expertise of the annotator. In this work, we formalize these settings and study the problem of learning from such coarse data. Instead of observing the actual labels from a set $\\mathcal{Z}$, we observe coarse labels corresponding to a partition of $\\mathcal{Z}$ (or a mixture of partitions).   Our main algorithmic result is that essentially any problem learnable from fine grained labels can also be learned efficiently when the coarse data are sufficiently informative. We obtain our result through a generic reduction for answering Statistical Queries (SQ) over fine grained labels given only coarse labels. The number of coarse labels required depends polynomially on the information distortion due to coarsening and the number of fine labels $|\\mathcal{Z}|$.   We also investigate the case of (infinitely many) real valued labels focusing on a central problem in censored and truncated statistics: Gaussian mean estimation from coarse data. We provide an efficient algorithm when the sets in the partition are convex and establish that the problem is NP-hard even for very simple non-convex sets. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image-Caption Retrieval"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Latent Target Decoding (LTD)",
+    "Additional decoder for reconstructing input caption in latent space",
+    "Optimization constraint for reconstruction loss"
+  ],
+  "results": [
+    "Higher recall@k",
+    "Higher r-precision",
+    "Higher nDCG scores than contrastive ICR baseline"
+  ],
+  "paper_id": "626b49615aee126c0fffcfc7",
+  "title": "Reducing Predictive Feature Suppression in Resource-Constrained\n  Contrastive Image-Caption Retrieval",
+  "abstract": "  To train image-caption retrieval (ICR) methods, contrastive loss functions are a common choice for optimization functions. Unfortunately, contrastive ICR methods are vulnerable to predictive feature suppression. Predictive features are features that correctly indicate the similarity between a query and a candidate item. However, in the presence of multiple predictive features during training, encoder models tend to suppress redundant predictive features, since these features are not needed to learn to discriminate between positive and negative pairs. While some predictive features are redundant during training, these features might be relevant during evaluation. We introduce an approach to reduce predictive feature suppression for resource-constrained ICR methods: latent target decoding (LTD). We add an additional decoder to the contrastive ICR framework, to reconstruct the input caption in a latent space of a general-purpose sentence encoder, which prevents the image and caption encoder from suppressing predictive features. We implement the LTD objective as an optimization constraint, to ensure that the reconstruction loss is below a bound value while primarily optimizing for the contrastive loss. Importantly, LTD does not depend on additional training data or expensive (hard) negative mining strategies. Our experiments show that, unlike reconstructing the input caption in the input space, LTD reduces predictive feature suppression, measured by obtaining higher recall@k, r-precision, and nDCG scores than a contrastive ICR baseline. Moreover, we show that LTD should be implemented as an optimization constraint instead of a dual optimization objective. Finally, we show that LTD can be used with different contrastive learning losses and a wide variety of resource-constrained ICR methods. "
+}

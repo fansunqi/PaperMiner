@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vehicle Re-identification"
+  ],
+  "datasets": [
+    "three large-scale vehicle re-identification datasets"
+  ],
+  "methods": [
+    "Graph Interactive Transformer (GiT)",
+    "stacked GiT blocks",
+    "interactive status between graphs and transformers",
+    "local correction graph"
+  ],
+  "results": [
+    "GiT method is superior to state-of-the-art vehicle re-identification approaches"
+  ],
+  "paper_id": "60ee3c1791e01102f8efa562",
+  "title": "GiT: Graph Interactive Transformer for Vehicle Re-identification",
+  "abstract": "  Transformers are more and more popular in computer vision, which treat an image as a sequence of patches and learn robust global features from the sequence. However, pure transformers are not entirely suitable for vehicle re-identification because vehicle re-identification requires both robust global features and discriminative local features. For that, a graph interactive transformer (GiT) is proposed in this paper. In the macro view, a list of GiT blocks are stacked to build a vehicle re-identification model, in where graphs are to extract discriminative local features within patches and transformers are to extract robust global features among patches. In the micro view, graphs and transformers are in an interactive status, bringing effective cooperation between local and global features. Specifically, one current graph is embedded after the former level's graph and transformer, while the current transform is embedded after the current graph and the former level's transformer. In addition to the interaction between graphs and transforms, the graph is a newly-designed local correction graph, which learns discriminative local features within a patch by exploring nodes' relationships. Extensive experiments on three large-scale vehicle re-identification datasets demonstrate that our GiT method is superior to state-of-the-art vehicle re-identification approaches. "
+}

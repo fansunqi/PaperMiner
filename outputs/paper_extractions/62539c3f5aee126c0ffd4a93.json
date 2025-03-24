@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Labeling-Free Model Selection for Automated Deep Neural Network Reusing"
+  ],
+  "datasets": [
+    "9 benchmark datasets including image, text, and source code"
+  ],
+  "methods": [
+    "Labeling-Free (LaF) model selection",
+    "Bayesian model to infer models' specialty based on predicted labels"
+  ],
+  "results": [
+    "Outperforms baseline methods by up to 0.74 on Spearman's correlation",
+    "Outperforms baseline methods by up to 0.53 on Kendall's \u03c4"
+  ],
+  "paper_id": "62539c3f5aee126c0ffd4a93",
+  "title": "LaF: Labeling-Free Model Selection for Automated Deep Neural Network\n  Reusing",
+  "abstract": "  Applying deep learning to science is a new trend in recent years which leads DL engineering to become an important problem. Although training data preparation, model architecture design, and model training are the normal processes to build DL models, all of them are complex and costly. Therefore, reusing the open-sourced pre-trained model is a practical way to bypass this hurdle for developers. Given a specific task, developers can collect massive pre-trained deep neural networks from public sources for re-using. However, testing the performance (e.g., accuracy and robustness) of multiple DNNs and recommending which model should be used is challenging regarding the scarcity of labeled data and the demand for domain expertise. In this paper, we propose a labeling-free (LaF) model selection approach to overcome the limitations of labeling efforts for automated model reusing. The main idea is to statistically learn a Bayesian model to infer the models' specialty only based on predicted labels. We evaluate LaF using 9 benchmark datasets including image, text, and source code, and 165 DNNs, considering both the accuracy and robustness of models. The experimental results demonstrate that LaF outperforms the baseline methods by up to 0.74 and 0.53 on Spearman's correlation and Kendall's $\\tau$, respectively. "
+}

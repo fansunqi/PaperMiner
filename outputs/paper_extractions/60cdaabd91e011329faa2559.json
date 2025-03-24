@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/Cybonic/AttDLNet"
+  ],
+  "tasks": [
+    "LiDAR-based place recognition"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "AttDLNet",
+    "range-based proxy representation",
+    "stacked attention layers"
+  ],
+  "results": [
+    "improved performance with attention",
+    "efficient loop closures",
+    "outperforms established 3D LiDAR-based place recognition",
+    "middle encoder layers highest mean performance",
+    "deeper layers robust to orientation change"
+  ],
+  "paper_id": "60cdaabd91e011329faa2559",
+  "title": "AttDLNet: Attention-based DL Network for 3D LiDAR Place Recognition",
+  "abstract": "  LiDAR-based place recognition is one of the key components of SLAM and global localization in autonomous vehicles and robotics applications. With the success of DL approaches in learning useful information from 3D LiDARs, place recognition has also benefited from this modality, which has led to higher re-localization and loop-closure detection performance, particularly, in environments with significant changing conditions. Despite the progress in this field, the extraction of proper and efficient descriptors from 3D LiDAR data that are invariant to changing conditions and orientation is still an unsolved challenge. To address this problem, this work proposes a novel 3D LiDAR-based deep learning network (named AttDLNet) that uses a range-based proxy representation for point clouds and an attention network with stacked attention layers to selectively focus on long-range context and inter-feature relationships. The proposed network is trained and validated on the KITTI dataset and an ablation study is presented to assess the novel attention network. Results show that adding attention to the network improves performance, leading to efficient loop closures, and outperforming an established 3D LiDAR-based place recognition approach. From the ablation study, results indicate that the middle encoder layers have the highest mean performance, while deeper layers are more robust to orientation change. The code is publicly available at https://github.com/Cybonic/AttDLNet "
+}

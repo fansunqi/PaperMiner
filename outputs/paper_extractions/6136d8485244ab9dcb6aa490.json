@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Counterfactual inference"
+  ],
+  "datasets": [
+    "medicine",
+    "epidemiology",
+    "finance"
+  ],
+  "methods": [
+    "Deep twin networks",
+    "Counterfactual ordering"
+  ],
+  "results": [
+    "Accurate estimation of counterfactual probabilities",
+    "Demonstration of issues with counterfactual reasoning when counterfactual ordering is not enforced"
+  ],
+  "paper_id": "6136d8485244ab9dcb6aa490",
+  "title": "Estimating Categorical Counterfactuals via Deep Twin Networks",
+  "abstract": "  Counterfactual inference is a powerful tool, capable of solving challenging problems in high-profile sectors. To perform counterfactual inference, one requires knowledge of the underlying causal mechanisms. However, causal mechanisms cannot be uniquely determined from observations and interventions alone. This raises the question of how to choose the causal mechanisms so that resulting counterfactual inference is trustworthy in a given domain. This question has been addressed in causal models with binary variables, but the case of categorical variables remains unanswered. We address this challenge by introducing for causal models with categorical variables the notion of counterfactual ordering, a principle that posits desirable properties causal mechanisms should posses, and prove that it is equivalent to specific functional constraints on the causal mechanisms. To learn causal mechanisms satisfying these constraints, and perform counterfactual inference with them, we introduce deep twin networks. These are deep neural networks that, when trained, are capable of twin network counterfactual inference -- an alternative to the abduction, action, & prediction method. We empirically test our approach on diverse real-world and semi-synthetic data from medicine, epidemiology, and finance, reporting accurate estimation of counterfactual probabilities while demonstrating the issues that arise with counterfactual reasoning when counterfactual ordering is not enforced. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Heterogeneous Federated Learning"
+  ],
+  "datasets": [
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Dynamic Model Pruning",
+    "Adaptive Gradient"
+  ],
+  "results": [
+    "Reduces communication cost by 57% when training ResNet-32 on CIFAR-10",
+    "Reduces up to 50% FLOPs inference of DNNs on edge devices while maintaining model quality"
+  ],
+  "paper_id": "60cab37f91e011b329373f73",
+  "title": "Heterogeneous Federated Learning using Dynamic Model Pruning and\n  Adaptive Gradient",
+  "abstract": "  Federated Learning (FL) has emerged as a new paradigm for training machine learning models distributively without sacrificing data security and privacy. Learning models on edge devices such as mobile phones is one of the most common use cases for FL. However, Non-identical independent distributed~(non-IID) data in edge devices easily leads to training failures. Especially, over-parameterized machine learning models can easily be over-fitted on such data, hence, resulting in inefficient federated learning and poor model performance. To overcome the over-fitting issue, we proposed an adaptive dynamic pruning approach for FL, which can dynamically slim the model by dropping out unimportant parameters, hence, preventing over-fittings. Since the machine learning model's parameters react differently for different training samples, adaptive dynamic pruning will evaluate the salience of the model's parameter according to the input training sample, and only retain the salient parameter's gradients when doing back-propagation. We performed comprehensive experiments to evaluate our approach. The results show that our approach by removing the redundant parameters in neural networks can significantly reduce the over-fitting issue and greatly improves the training efficiency. In particular, when training the ResNet-32 on CIFAR-10, our approach reduces the communication cost by 57\\%. We further demonstrate the inference acceleration capability of the proposed algorithm. Our approach reduces up to 50\\% FLOPs inference of DNNs on edge devices while maintaining the model's quality. "
+}

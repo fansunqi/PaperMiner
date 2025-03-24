@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Pavement crack detection"
+  ],
+  "datasets": [
+    "CQU-BPDD",
+    "RDD2020",
+    "CQU-BPMDD"
+  ],
+  "methods": [
+    "Deep Domain Adaptation-based Crack Detection Network (DDACDN)",
+    "Two-branch weights-shared backbone network",
+    "Intermediate domain construction"
+  ],
+  "results": [
+    "DDACDN outperforms state-of-the-art pavement crack detection methods in predicting the crack location on the target domain"
+  ],
+  "paper_id": "619b0a265244ab9dcb25c878",
+  "title": "Deep Domain Adaptation for Pavement Crack Detection",
+  "abstract": "  Deep learning-based pavement cracks detection methods often require large-scale labels with detailed crack location information to learn accurate predictions. In practice, however, crack locations are very difficult to be manually annotated due to various visual patterns of pavement crack. In this paper, we propose a Deep Domain Adaptation-based Crack Detection Network (DDACDN), which learns domain invariant features by taking advantage of the source domain knowledge to predict the multi-category crack location information in the target domain, where only image-level labels are available. Specifically, DDACDN first extracts crack features from both the source and target domain by a two-branch weights-shared backbone network. And in an effort to achieve the cross-domain adaptation, an intermediate domain is constructed by aggregating the three-scale features from the feature space of each domain to adapt the crack features from the source domain to the target domain. Finally, the network involves the knowledge of both domains and is trained to recognize and localize pavement cracks. To facilitate accurate training and validation for domain adaptation, we use two challenging pavement crack datasets CQU-BPDD and RDD2020. Furthermore, we construct a new large-scale Bituminous Pavement Multi-label Disease Dataset named CQU-BPMDD, which contains 38994 high-resolution pavement disease images to further evaluate the robustness of our model. Extensive experiments demonstrate that DDACDN outperforms state-of-the-art pavement crack detection methods in predicting the crack location on the target domain. "
+}

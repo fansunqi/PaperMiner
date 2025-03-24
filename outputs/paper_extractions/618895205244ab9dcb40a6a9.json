@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Verification of properties expressed as-regular languages",
+    "LTL verification"
+  ],
+  "datasets": [
+    "large (random) benchmark from the model-checking competition"
+  ],
+  "methods": [
+    "shortening insensitive language",
+    "lengthening insensitive language",
+    "semi-decision procedure",
+    "Lipton's transaction reductions",
+    "Petri net agglomerations"
+  ],
+  "results": [
+    "most nonrandom properties sensitive to stutter are actually shortening or lengthening insensitive",
+    "improve state of the art verification tools"
+  ],
+  "paper_id": "618895205244ab9dcb40a6a9",
+  "title": "LTL under reductions with weaker conditions than stutter-invariance",
+  "abstract": "  Verification of properties expressed as-regular languages such as LTL can benefit hugely from stutter-insensitivity, using a diverse set of reduction strategies. However properties that are not stutter-insensitive, for instance due to the use of the neXt operator of LTL or to some form of counting in the logic, are not covered by these techniques in general. We propose in this paper to study a weaker property than stutter-insensitivity. In a stutter insensitive language both adding and removing stutter to a word does not change its acceptance, any stuttering can be abstracted away; by decomposing this equivalence relation into two implications we obtain weaker conditions. We define a shortening insensitive language where any word that stutters less than a word in the language must also belong to the language. A lengthening insensitive language has the dual property. A semi-decision procedure is then introduced to reliably prove shortening insensitive properties or deny lengthening insensitive properties while working with a reduction of a system. A reduction has the property that it can only shorten runs. Lipton's transaction reductions or Petri net agglomerations are examples of eligible structural reduction strategies. An implementation and experimental evidence is provided showing most nonrandom properties sensitive to stutter are actually shortening or lengthening insensitive. Performance of experiments on a large (random) benchmark from the model-checking competition indicate that despite being a semi-decision procedure, the approach can still improve state of the art verification tools. "
+}

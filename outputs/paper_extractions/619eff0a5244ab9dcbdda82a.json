@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-supervised contrastive learning"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "CIFAR-100",
+    "STL-10",
+    "Tiny-ImageNet"
+  ],
+  "methods": [
+    "Mutual Information Optimization-based loss function",
+    "Binary classification for contrastive effect",
+    "Majorize-Minimizer principle"
+  ],
+  "results": [
+    "Accuracy: 86.2% on CIFAR-10",
+    "Accuracy: 58.18% on CIFAR-100",
+    "Accuracy: 77.49% on STL-10",
+    "Accuracy: 30.87% on Tiny-ImageNet",
+    "Surpasses SOTA by 1.23%, 3.57%, 2.00%, and 0.33% on respective datasets"
+  ],
+  "paper_id": "619eff0a5244ab9dcbdda82a",
+  "title": "MIO : Mutual Information Optimization using Self-Supervised Binary\n  Contrastive Learning",
+  "abstract": "  Self-supervised contrastive learning frameworks have progressed rapidly over the last few years. In this paper, we propose a novel mutual information optimization-based loss function for contrastive learning. We model our pre-training task as a binary classification problem to induce an implicit contrastive effect and predict whether a pair is positive or negative. We further improve the n\\\"aive loss function using the Majorize-Minimizer principle and such improvement helps us to track the problem mathematically. Unlike the existing methods, the proposed loss function optimizes the mutual information in both positive and negative pairs. We also present a closed-form expression for the parameter gradient flow and compare the behavior of the proposed loss function using its Hessian eigen-spectrum to analytically study the convergence of SSL frameworks. The proposed method outperforms the SOTA contrastive self-supervised frameworks on benchmark datasets like CIFAR-10, CIFAR-100, STL-10, and Tiny-ImageNet. After 200 epochs of pre-training with ResNet-18 as the backbone, the proposed model achieves an accuracy of 86.2\\%, 58.18\\%, 77.49\\%, and 30.87\\% on CIFAR-10, CIFAR-100, STL-10, and Tiny-ImageNet datasets, respectively, and surpasses the SOTA contrastive baseline by 1.23\\%, 3.57\\%, 2.00\\%, and 0.33\\%, respectively. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Radar Odometry"
+  ],
+  "datasets": [
+    "Oxford Radar RobotCar",
+    "nuScenes"
+  ],
+  "methods": [
+    "Normal Distribution Transform-Based Radar Odometry",
+    "Thresholding",
+    "Probabilistic Submap Building",
+    "NDT-based Radar Scan Matching"
+  ],
+  "results": [
+    "Reduces translational error by 51% (automotive) and 30% (scanning)",
+    "Reduces rotational error by 17% (automotive) and 29% (scanning)",
+    "Achieves centimeter-level accuracy similar to lidar odometry"
+  ],
+  "paper_id": "605084f691e0111e1cd46ad3",
+  "title": "A Normal Distribution Transform-Based Radar Odometry Designed For\n  Scanning and Automotive Radars",
+  "abstract": "  Existing radar sensors can be classified into automotive and scanning radars. While most radar odometry (RO) methods are only designed for a specific type of radar, our RO method adapts to both scanning and automotive radars. Our RO is simple yet effective, where the pipeline consists of thresholding, probabilistic submap building, and an NDT-based radar scan matching. The proposed RO has been tested on two public radar datasets: the Oxford Radar RobotCar dataset and the nuScenes dataset, which provide scanning and automotive radar data respectively. The results show that our approach surpasses state-of-the-art RO using either automotive or scanning radar by reducing translational error by 51% and 30%, respectively, and rotational error by 17% and 29%, respectively. Besides, we show that our RO achieves centimeter-level accuracy as lidar odometry, and automotive and scanning RO have similar accuracy. "
+}

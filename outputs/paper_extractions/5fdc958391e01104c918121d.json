@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding Ensemble",
+    "Knowledge Distillation",
+    "Self-Distillation in Deep Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ensemble of independently trained neural networks",
+    "Knowledge distillation to match ensemble output",
+    "Self-distillation as implicit combination of ensemble and knowledge distillation"
+  ],
+  "results": [
+    "Ensemble improves test accuracy in multi-view data",
+    "Superior test accuracy can be distilled into a single model",
+    "Self-distillation improves test accuracy by combining ensemble and distillation"
+  ],
+  "paper_id": "5fdc958391e01104c918121d",
+  "title": "Towards Understanding Ensemble, Knowledge Distillation and\n  Self-Distillation in Deep Learning",
+  "abstract": "  We formally study how ensemble of deep learning models can improve test accuracy, and how the superior performance of ensemble can be distilled into a single model using knowledge distillation. We consider the challenging case where the ensemble is simply an average of the outputs of a few independently trained neural networks with the SAME architecture, trained using the SAME algorithm on the SAME data set, and they only differ by the random seeds used in the initialization.   We show that ensemble/knowledge distillation in Deep Learning works very differently from traditional learning theory (such as boosting or NTKs, neural tangent kernels). To properly understand them, we develop a theory showing that when data has a structure we refer to as ``multi-view'', then ensemble of independently trained neural networks can provably improve test accuracy, and such superior test accuracy can also be provably distilled into a single model by training a single model to match the output of the ensemble instead of the true label. Our result sheds light on how ensemble works in deep learning in a way that is completely different from traditional theorems, and how the ``dark knowledge'' is hidden in the outputs of the ensemble and can be used in distillation. In the end, we prove that self-distillation can also be viewed as implicitly combining ensemble and knowledge distillation to improve test accuracy. "
+}

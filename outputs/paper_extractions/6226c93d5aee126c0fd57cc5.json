@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Answer Sentence Selection",
+    "Question Answering"
+  ],
+  "datasets": [
+    "two well-known academic benchmarks",
+    "a real-world dataset"
+  ],
+  "methods": [
+    "Graph-based approaches",
+    "Graph Neural Networks",
+    "state-of-the-art models for computing scores",
+    "thresholding on relevance scores for creating graph edges"
+  ],
+  "results": [
+    "consistently outperforms SOTA QA baseline models"
+  ],
+  "paper_id": "6226c93d5aee126c0fd57cc5",
+  "title": "Question-Answer Sentence Graph for Joint Modeling Answer Selection",
+  "abstract": "  This research studies graph-based approaches for Answer Sentence Selection (AS2), an essential component for retrieval-based Question Answering (QA) systems. During offline learning, our model constructs a small-scale relevant training graph per question in an unsupervised manner, and integrates with Graph Neural Networks. Graph nodes are question sentence to answer sentence pairs. We train and integrate state-of-the-art (SOTA) models for computing scores between question-question, question-answer, and answer-answer pairs, and use thresholding on relevance scores for creating graph edges. Online inference is then performed to solve the AS2 task on unseen queries. Experiments on two well-known academic benchmarks and a real-world dataset show that our approach consistently outperforms SOTA QA baseline models. "
+}

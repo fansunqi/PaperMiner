@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/yangarbiter/nearest-category-generalization"
+  ],
+  "tasks": [
+    "Out-of-distribution (OOD) prediction behavior of neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nearest category generalization (NCG)"
+  ],
+  "results": [
+    "Robust networks have higher NCG accuracy than natural training",
+    "Adversarially robust networks resemble a nearest neighbor classifier for OOD data"
+  ],
+  "paper_id": "5fb4f1eb91e011a46b1b303d",
+  "title": "Probing Predictions on OOD Images via Nearest Categories",
+  "abstract": "  We study out-of-distribution (OOD) prediction behavior of neural networks when they classify images from unseen classes or corrupted images. To probe the OOD behavior, we introduce a new measure, nearest category generalization (NCG), where we compute the fraction of OOD inputs that are classified with the same label as their nearest neighbor in the training set. Our motivation stems from understanding the prediction patterns of adversarially robust networks, since previous work has identified unexpected consequences of training to be robust to norm-bounded perturbations. We find that robust networks have consistently higher NCG accuracy than natural training, even when the OOD data is much farther away than the robustness radius. This implies that the local regularization of robust training has a significant impact on the network's decision regions. We replicate our findings using many datasets, comparing new and existing training methods. Overall, adversarially robust networks resemble a nearest neighbor classifier when it comes to OOD data. Code available at https://github.com/yangarbiter/nearest-category-generalization. "
+}

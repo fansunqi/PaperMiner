@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Probabilistic Programming Language Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "flip-hoisting",
+    "Program Analysis for Redundant Random Variables"
+  ],
+  "results": [
+    "Inference speedups of up to 60% on applications like Bayesian networks and probabilistic verification"
+  ],
+  "paper_id": "61722bd35244ab9dcb6ef5e3",
+  "title": "flip-hoisting: Exploiting Repeated Parameters in Discrete Probabilistic\n  Programs",
+  "abstract": "  Many of today's probabilistic programming languages (PPLs) have brittle inference performance: the performance of the underlying inference algorithm is very sensitive to the precise way in which the probabilistic program is written. A standard way of addressing this challenge in traditional programming languages is via program optimizations, which seek to unburden the programmer from writing low-level performant code, freeing them to work at a higher-level of abstraction. The arsenal of applicable program optimizations for PPLs to choose from is scarce in comparison to traditional programs; few of today's PPLs offer significant forms of automated program optimization. In this work we develop a new family of program optimizations specific to discrete-valued knowledge compilation based PPLs. We identify a particular form of program structure unique to these PPLs that tangibly affects exact inference performance in these programs: redundant random variables -- variables with repeated parameters and inconsistent path conditions. We develop a new program analysis and associated optimization called flip-hoisting that identifies these redundancies and optimizes them into a single random variable. We show that flip-hoisting yields inference speedups of up to 60% on applications of probabilistic programs such as Bayesian networks and probabilistic verification. "
+}

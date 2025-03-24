@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "private heavy-hitters problem",
+    "private subset-histogram problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Poplar system",
+    "incremental distributed point functions",
+    "malicious security in distributed point functions"
+  ],
+  "results": [
+    "protects client privacy against arbitrary misbehavior by one server",
+    "requires no public-key cryptography",
+    "clients send only a single message to the servers"
+  ],
+  "paper_id": "5feef99491e0113b2659fed9",
+  "title": "Lightweight Techniques for Private Heavy Hitters",
+  "abstract": "  This paper presents Poplar, a new system for solving the private heavy-hitters problem. In this problem, there are many clients and a small set of data-collection servers. Each client holds a private bitstring. The servers want to recover the set of all popular strings, without learning anything else about any client's string. A web-browser vendor, for instance, can use Poplar to figure out which homepages are popular, without learning any user's homepage. We also consider the simpler private subset-histogram problem, in which the servers want to count how many clients hold strings in a particular set without revealing this set to the clients.   Poplar uses two data-collection servers and, in a protocol run, each client send sends only a single message to the servers. Poplar protects client privacy against arbitrary misbehavior by one of the servers and our approach requires no public-key cryptography (except for secure channels), nor general-purpose multiparty computation. Instead, we rely on incremental distributed point functions, a new cryptographic tool that allows a client to succinctly secret-share the labels on the nodes of an exponentially large binary tree, provided that the tree has a single non-zero path. Along the way, we develop new general tools for providing malicious security in applications of distributed point functions. "
+}

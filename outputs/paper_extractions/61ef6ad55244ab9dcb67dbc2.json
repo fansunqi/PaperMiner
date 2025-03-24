@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Early action prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Rich Action-semantic Consistent Knowledge network (RACK)",
+    "Two-stream pre-trained model for feature extraction",
+    "Bi-directional semantic graph for teacher network",
+    "Single-directional semantic graph for student network",
+    "MSE and MMD losses for distillation"
+  ],
+  "results": [
+    "State-of-the-art performance on three benchmarks"
+  ],
+  "paper_id": "61ef6ad55244ab9dcb67dbc2",
+  "title": "Rich Action-semantic Consistent Knowledge for Early Action Prediction",
+  "abstract": "  Early action prediction (EAP) aims to recognize human actions from a part of action execution in ongoing videos, which is an important task for many practical applications. Most prior works treat partial or full videos as a whole, ignoring rich action knowledge hidden in videos, i.e., semantic consistencies among different partial videos. In contrast, we partition original partial or full videos to form a new series of partial videos and mine the Action Semantic Consistent Knowledge (ASCK) among these new partial videos evolving in arbitrary progress levels. Moreover, a novel Rich Action-semantic Consistent Knowledge network (RACK) under the teacher-student framework is proposed for EAP. Firstly, we use a two-stream pre-trained model to extract features of videos. Secondly, we treat the RGB or flow features of the partial videos as nodes and their action semantic consistencies as edges. Next, we build a bi-directional semantic graph for the teacher network and a single-directional semantic graph for the student network to model rich ASCK among partial videos. The MSE and MMD losses are incorporated as our distillation loss to enrich the ASCK of partial videos from the teacher to the student network. Finally, we obtain the final prediction by summering the logits of different sub-networks and applying a softmax layer. Extensive experiments and ablative studies have been conducted, demonstrating the effectiveness of modeling rich ASCK for EAP. With the proposed RACK, we have achieved state-of-the-art performance on three benchmarks. The code will be released if the paper is accepted. "
+}

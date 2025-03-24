@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "AntiFactor problem solving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic programming + fast convolution",
+    "Representative sets technique for AntiFactor$_x$",
+    "Fixed-parameter tractable algorithm parameterized by treewidth $k$ and list size $x$"
+  ],
+  "results": [
+    "AntiFactor$_x$ solvable in time $(x+1)^{O(k)}\\cdot n^{O(1)}$",
+    "#AntiFactor$_1$ is #W[1]-hard parameterized by decomposition width",
+    "Lower bound for #$X$-AntiFactor: $(\\max X+2-\\epsilon)^k\\cdot n^{O(1)}$ implies #SETH fails"
+  ],
+  "paper_id": "616e374a5244ab9dcbd1b240",
+  "title": "Anti-Factor is FPT Parameterized by Treewidth and List Size (but\n  Counting is Hard)",
+  "abstract": "  In the general AntiFactor problem, a graph $G$ is given with a set $X_v\\subseteq \\mathbb{N}$ of forbidden degrees for every vertex $v$ and the task is to find a set $S$ of edges such that the degree of $v$ in $S$ is not in the set $X_v$. Standard techniques (dynamic programming + fast convolution) can be used to show that if $M$ is the largest forbidden degree, then the problem can be solved in time $(M+2)^k\\cdot n^{O(1)}$ if a tree decomposition of width $k$ is given. However, significantly faster algorithms are possible if the sets $X_v$ are sparse: our main algorithmic result shows that if every vertex has at most $x$ forbidden degrees (we call this special case AntiFactor$_x$), then the problem can be solved in time $(x+1)^{O(k)}\\cdot n^{O(1)}$. That is, the AntiFactor$_x$ is fixed-parameter tractable parameterized by treewidth $k$ and the maximum number $x$ of excluded degrees.   Our algorithm uses the technique of representative sets, which can be generalized to the optimization version, but (as expected) not to the counting version of the problem. In fact, we show that #AntiFactor$_1$ is already #W[1]-hard parameterized by the width of the given decomposition. Moreover, we show that, unlike for the decision version, the standard dynamic programming algorithm is essentially optimal for the counting version. Formally, for a fixed nonempty set $X$, we denote by $X$-AntiFactor the special case where every vertex $v$ has the same set $X_v=X$ of forbidden degrees. We show the following lower bound for every fixed set $X$: if there is an $\\epsilon>0$ such that #$X$-AntiFactor can be solved in time $(\\max X+2-\\epsilon)^k\\cdot n^{O(1)}$ on a tree decomposition of width $k$, then the Counting Strong Exponential-Time Hypothesis (#SETH) fails. "
+}

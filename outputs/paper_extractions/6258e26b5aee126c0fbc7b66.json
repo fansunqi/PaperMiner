@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human motion transfer"
+  ],
+  "datasets": [
+    "Dancer101"
+  ],
+  "methods": [
+    "Identity-Preserved HMT network (IDPres)",
+    "Fine-grained disentanglement and synthesis of motion",
+    "Training scheme for disentangling representations",
+    "Identity Score (IDScore)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods in reconstruction accuracy and realistic motion"
+  ],
+  "paper_id": "6258e26b5aee126c0fbc7b66",
+  "title": "An Identity-Preserved Framework for Human Motion Transfer",
+  "abstract": "  Human motion transfer (HMT) aims to generate a video clip for the target subject by imitating the source subject's motion. Although previous methods have achieved remarkable results in synthesizing good-quality videos, those methods omit the effects of individualized motion information from the source and target motions, \\textit{e.g.}, fine and high-frequency motion details, on the realism of the motion in the generated video. To address this problem, we propose an identity-preserved HMT network (\\textit{IDPres}), which follows the pipeline of the skeleton-based method. \\textit{IDpres} takes the individualized motion and skeleton information to enhance motion representations and improve the reality of motions in the generated videos. With individualized motion, our method focuses on fine-grained disentanglement and synthesis of motion. In order to improve the representation capability in latent space and facilitate the training of \\textit{IDPres}, we design a training scheme, which allows \\textit{IDPres} to disentangle different representations simultaneously and control them to synthesize ideal motions accurately. Furthermore, to our best knowledge, there are no available metrics for evaluating the proportion of identity information (both individualized motion and skeleton information) in the generated video. Therefore, we propose a novel quantitative metric called Identity Score (\\textit{IDScore}) based on gait recognition. We also collected a dataset with 101 subjects' solo-dance videos from the public domain, named $Dancer101$, to evaluate the method. The comprehensive experiments show the proposed method outperforms state-of-the-art methods in terms of reconstruction accuracy and realistic motion. "
+}

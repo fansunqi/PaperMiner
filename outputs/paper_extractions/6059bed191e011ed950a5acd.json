@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "GitHub"
+  ],
+  "tasks": [
+    "Simulation studies of continuous double auction markets"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PRZI (Parameterised-Response Zero Intelligence) traders",
+    "Stochastic hill-climber algorithm for strategy adaptation"
+  ],
+  "results": [
+    "Rich dynamics in population of traders' strategies",
+    "Periods of stability and change in trader interactions"
+  ],
+  "paper_id": "6059bed191e011ed950a5acd",
+  "title": "Parameterised-Response Zero-Intelligence Traders",
+  "abstract": "  I introduce PRZI (Parameterised-Response Zero Intelligence), a new form of zero-intelligence trader intended for use in simulation studies of the dynamics of continuous double auction markets. Like Gode & Sunder's classic ZIC trader, PRZI generates quote-prices from a random distribution over some specified domain of allowable quote-prices. Unlike ZIC, which uses a uniform distribution to generate prices, the probability distribution in a PRZI trader is parameterised in such a way that its probability mass function (PMF) is determined by a real-valued control variable s in the range [-1.0, +1.0] that determines the _strategy_ for that trader. When s=0, a PRZI trader is identical to ZIC, with a uniform PMF; but when |s|=~1 the PRZI trader's PMF becomes maximally skewed to one extreme or the other of the price-range, thereby making its quote-prices more or less urgent, biasing the quote-price distribution toward or away from the trader's limit-price. To explore the co-evolutionary dynamics of populations of PRZI traders that dynamically adapt their strategies, I show results from long-term market experiments in which each trader uses a simple stochastic hill-climber algorithm to repeatedly evaluate alternative s-values and choose the most profitable at any given time. In these experiments the profitability of any particular s-value may be non-stationary because the profitability of one trader's strategy at any one time can depend on the mix of strategies being played by the other traders at that time, which are each themselves continuously adapting. Results from these market experiments demonstrate that the population of traders' strategies can exhibit rich dynamics, with periods of stability lasting over hundreds of thousands of trader interactions interspersed by occasional periods of change. Python source-code for the work reported here has been made publicly available on GitHub. "
+}

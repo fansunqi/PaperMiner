@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Adversarial Attack",
+    "Evasion Attack"
+  ],
+  "datasets": [
+    "four different tabular phishing datasets",
+    "one financial dataset"
+  ],
+  "methods": [
+    "Feature Importance Guided Attack (FIGA)",
+    "perturbing the most important features"
+  ],
+  "results": [
+    "average success rate of 94% on phishing detection models",
+    "13.05% average success rate on six tabular ML models in the phishing problem space"
+  ],
+  "paper_id": "60dc10d591e0117bb69ae78c",
+  "title": "Feature Importance Guided Attack: A Model Agnostic Adversarial Attack",
+  "abstract": "  Research in adversarial learning has primarily focused on homogeneous unstructured datasets, which often map into the problem space naturally. Inverting a feature space attack on heterogeneous datasets into the problem space is much more challenging, particularly the task of finding the perturbation to perform. This work presents a formal search strategy: the `Feature Importance Guided Attack' (FIGA), which finds perturbations in the feature space of heterogeneous tabular datasets to produce evasion attacks. We first demonstrate FIGA in the feature space and then in the problem space. FIGA assumes no prior knowledge of the defending model's learning algorithm and does not require any gradient information. FIGA assumes knowledge of the feature representation and the mean feature values of defending model's dataset. FIGA leverages feature importance rankings by perturbing the most important features of the input in the direction of the target class. While FIGA is conceptually similar to other work which uses feature selection processes (e.g., mimicry attacks), we formalize an attack algorithm with three tunable parameters and investigate the strength of FIGA on tabular datasets. We demonstrate the effectiveness of FIGA by evading phishing detection models trained on four different tabular phishing datasets and one financial dataset with an average success rate of 94%. We extend FIGA to the phishing problem space by limiting the possible perturbations to be valid and feasible in the phishing domain. We generate valid adversarial phishing sites that are visually identical to their unperturbed counterpart and use them to attack six tabular ML models achieving a 13.05% average success rate. "
+}

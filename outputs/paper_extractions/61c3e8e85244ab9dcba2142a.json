@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generating synthetic mixed-type longitudinal EHRs for AI applications"
+  ],
+  "datasets": [
+    "three publicly-available intensive care unit databases"
+  ],
+  "methods": [
+    "EHR-M-GAN (Generative Adversarial Network)"
+  ],
+  "results": [
+    "EHR-M-GAN outperforms state-of-the-art benchmarks for synthesizing clinical timeseries",
+    "Prediction models for ICU outcomes performed significantly better with EHR-M-GAN-generated timeseries"
+  ],
+  "paper_id": "61c3e8e85244ab9dcba2142a",
+  "title": "Generating Synthetic Mixed-type Longitudinal Electronic Health Records\n  for Artificial Intelligent Applications",
+  "abstract": "  The recent availability of electronic health records (EHRs) have provided enormous opportunities to develop artificial intelligence (AI) algorithms. However, patient privacy has become a major concern that limits data sharing across hospital settings and subsequently hinders the advances in AI. Synthetic data, which benefits from the development and proliferation of generative models, has served as a promising substitute for real patient EHR data. However, the current generative models are limited as they only generate single type of clinical data for a synthetic patient, i.e., either continuous-valued or discrete-valued. To mimic the nature of clinical decision-making which encompasses various data types/sources, in this study, we propose a generative adversarial network (GAN) entitled EHR-M-GAN which simultaneously synthesizes mixed-type timeseries EHR data. EHR-M-GAN is capable of capturing the multidimensional, heterogeneous, and correlated temporal dynamics in patient trajectories. We have validated EHR-M-GAN on three publicly-available intensive care unit databases with records from a total of 141,488 unique patients, and performed privacy risk evaluation of the proposed model. EHR-M-GAN has demonstrated its superiority over state-of-the-art benchmarks for synthesizing clinical timeseries with high fidelity, while addressing the limitations regarding data types and dimensionality in the current generative models. Notably, prediction models for outcomes of intensive care performed significantly better when training data was augmented with the addition of EHR-M-GAN-generated timeseries. EHR-M-GAN may have use in developing AI algorithms in resource-limited settings, lowering the barrier for data acquisition while preserving patient privacy. "
+}

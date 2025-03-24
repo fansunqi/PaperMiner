@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Regret minimisation in episodic reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Updating as soon as new information becomes available",
+    "Waiting before using newly observed information to update the policy"
+  ],
+  "results": [
+    "Regret increases by an additive term involving number of states, actions, episode length, expected delay, and an algorithm-dependent constant",
+    "Empirical validation of the impact of various delay distributions on the regret of optimistic algorithms"
+  ],
+  "paper_id": "619321415244ab9dcbbb4999",
+  "title": "Optimism and Delays in Episodic Reinforcement Learning",
+  "abstract": "  There are many algorithms for regret minimisation in episodic reinforcement learning. This problem is well-understood from a theoretical perspective, providing that the sequences of states, actions and rewards associated with each episode are available to the algorithm updating the policy immediately after every interaction with the environment. However, feedback is almost always delayed in practice. In this paper, we study the impact of delayed feedback in episodic reinforcement learning from a theoretical perspective and propose two general-purpose approaches to handling the delays. The first involves updating as soon as new information becomes available, whereas the second waits before using newly observed information to update the policy. For the class of optimistic algorithms and either approach, we show that the regret increases by an additive term involving the number of states, actions, episode length, the expected delay and an algorithm-dependent constant. We empirically investigate the impact of various delay distributions on the regret of optimistic algorithms to validate our theoretical results. "
+}

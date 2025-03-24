@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time Panoptic Segmentation"
+  ],
+  "datasets": [
+    "Cityscapes",
+    "Vistas",
+    "COCO",
+    "BSB-Aerial"
+  ],
+  "methods": [
+    "Panoptic SwiftNet",
+    "Pyramidal Fusion",
+    "Efficient scale-equivariant feature extraction",
+    "Cross-scale upsampling",
+    "Boundary-aware learning of pixel-to-instance assignment"
+  ],
+  "results": [
+    "Outperforms state of the art on BSB-Aerial dataset",
+    "Processes more than a hundred 1MPx images per second on RTX3090 GPU with FP16 precision and TensorRT optimization"
+  ],
+  "paper_id": "623155ba5aee126c0f2bab2d",
+  "title": "Panoptic SwiftNet: Pyramidal Fusion for Real-time Panoptic Segmentation",
+  "abstract": "  Dense panoptic prediction is a key ingredient in many existing applications such as autonomous driving, automated warehouses or remote sensing. Many of these applications require fast inference over large input resolutions on affordable or even embedded hardware. We propose to achieve this goal by trading off backbone capacity for multi-scale feature extraction. In comparison with contemporaneous approaches to panoptic segmentation, the main novelties of our method are efficient scale-equivariant feature extraction, cross-scale upsampling through pyramidal fusion and boundary-aware learning of pixel-to-instance assignment. The proposed method is very well suited for remote sensing imagery due to the huge number of pixels in typical city-wide and region-wide datasets. We present panoptic experiments on Cityscapes, Vistas, COCO and the BSB-Aerial dataset. Our models outperform the state of the art on the BSB-Aerial dataset while being able to process more than a hundred 1MPx images per second on a RTX3090 GPU with FP16 precision and TensorRT optimization. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dimensionality reduction of spatio-temporal data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Implicit Flow (NIF)",
+    "ShapeNet",
+    "ParameterNet"
+  ],
+  "results": [
+    "Enables mesh-agnostic, low-rank representation",
+    "Improves interpretable representation and compression",
+    "Efficient many-spatial-query tasks",
+    "Improved generalization for sparse reconstruction"
+  ],
+  "paper_id": "624fa8db5aee126c0f3a59aa",
+  "title": "Neural Implicit Flow: a mesh-agnostic dimensionality reduction paradigm\n  of spatio-temporal data",
+  "abstract": "  High-dimensional spatio-temporal dynamics can often be encoded in a low-dimensional subspace. Engineering applications for modeling, characterization, design, and control of such large-scale systems often rely on dimensionality reduction to make solutions computationally tractable in real-time. Common existing paradigms for dimensionality reduction include linear methods, such as the singular value decomposition (SVD), and nonlinear methods, such as variants of convolutional autoencoders (CAE). However, these encoding techniques lack the ability to efficiently represent the complexity associated with spatio-temporal data, which often requires variable geometry, non-uniform grid resolution, adaptive meshing, and/or parametric dependencies. To resolve these practical engineering challenges, we propose a general framework called Neural Implicit Flow (NIF) that enables a mesh-agnostic, low-rank representation of large-scale, parametric, spatial-temporal data. NIF consists of two modified multilayer perceptrons (MLPs): (i) ShapeNet, which isolates and represents the spatial complexity, and (ii) ParameterNet, which accounts for any other input complexity, including parametric dependencies, time, and sensor measurements. We demonstrate the utility of NIF for parametric surrogate modeling, enabling the interpretable representation and compression of complex spatio-temporal dynamics, efficient many-spatial-query tasks, and improved generalization performance for sparse reconstruction. "
+}

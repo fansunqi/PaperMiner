@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reservoir Computing",
+    "long-term memory tasks",
+    "time-series classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Euler State Network (EuSN)",
+    "forward Euler discretization",
+    "antisymmetric recurrent matrices"
+  ],
+  "results": [
+    "superiority over standard RC models in long-term memory tasks",
+    "matches or exceeds accuracy of trainable RNNs",
+    "up to 490-fold savings in computation time",
+    "up to 1750-fold savings in energy consumption"
+  ],
+  "paper_id": "6233f88d5aee126c0f94b60b",
+  "title": "Euler State Networks: Non-dissipative Reservoir Computing",
+  "abstract": "  Inspired by the numerical solution of ordinary differential equations, in this paper we propose a novel Reservoir Computing (RC) model, called the Euler State Network (EuSN). The presented approach makes use of forward Euler discretization and antisymmetric recurrent matrices to design reservoir dynamics that are both stable and non-dissipative by construction.   Our mathematical analysis shows that the resulting model is biased towards a unitary effective spectral radius and zero local Lyapunov exponents, intrinsically operating near to the edge of stability. Experiments on long-term memory tasks show the clear superiority of the proposed approach over standard RC models in problems requiring effective propagation of input information over multiple time-steps. Furthermore, results on time-series classification benchmarks indicate that EuSN is able to match (or even exceed) the accuracy of trainable Recurrent Neural Networks, while retaining the training efficiency of the RC family, resulting in up to $\\approx$ 490-fold savings in computation time and $\\approx$ 1750-fold savings in energy consumption. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Single-Source Domain Generalization"
+  ],
+  "datasets": [
+    "MNIST-based benchmark"
+  ],
+  "methods": [
+    "Reverse contrast loss to promote intraclass diversity"
+  ],
+  "results": [
+    "Improved model robustness to domain shifts",
+    "Effectiveness demonstrated on custom benchmark"
+  ],
+  "paper_id": "60cb0aa491e011b329374356",
+  "title": "Encouraging Intra-Class Diversity Through a Reverse Contrastive Loss for\n  Better Single-Source Domain Generalization",
+  "abstract": "  Traditional deep learning algorithms often fail to generalize when they are tested outside of the domain of the training data. The issue can be mitigated by using unlabeled data from the target domain at training time, but because data distributions can change dynamically in real-life applications once a learned model is deployed, it is critical to create networks robust to unknown and unforeseen domain shifts. In this paper we focus on one of the reasons behind the inability of neural networks to be so: deep networks focus only on the most obvious, potentially spurious, clues to make their predictions and are blind to useful but slightly less efficient or more complex patterns. This behaviour has been identified and several methods partially addressed the issue. To investigate their effectiveness and limits, we first design a publicly available MNIST-based benchmark to precisely measure the ability of an algorithm to find the ''hidden'' patterns. Then, we evaluate state-of-the-art algorithms through our benchmark and show that the issue is largely unsolved. Finally, we propose a partially reversed contrastive loss to encourage intra-class diversity and find less strongly correlated patterns, whose efficiency is demonstrated by our experiments. "
+}

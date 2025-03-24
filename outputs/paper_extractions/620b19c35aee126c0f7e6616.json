@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Strategy Synthesis for Zero-Sum Neuro-Symbolic Concurrent Stochastic Games"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neuro-symbolic concurrent stochastic games (NS-CSGs)",
+    "Borel measurable piecewise-constant (B-PWC) representation",
+    "Minimax-action-free policy iteration (PI)",
+    "B-PWC value iteration (VI)",
+    "Constant-piecewise-linear (CON-PWL) representation",
+    "Constant-piecewise-constant (CON-PWC) representation"
+  ],
+  "results": [
+    "Existence and measurability of the value function for zero-sum discounted cumulative rewards",
+    "Approximately optimal strategies generated using B-PWC VI algorithm in a dynamic vehicle parking example"
+  ],
+  "paper_id": "620b19c35aee126c0f7e6616",
+  "title": "Strategy Synthesis for Zero-Sum Neuro-Symbolic Concurrent Stochastic\n  Games",
+  "abstract": "  Neuro-symbolic approaches to artificial intelligence, which combine neural networks with classical symbolic techniques, are growing in prominence, necessitating formal approaches to reason about their correctness. We propose a novel modelling formalism called neuro-symbolic concurrent stochastic games (NS-CSGs), which comprise probabilistic finite-state agents interacting in a shared continuous-state environment observed through perception mechanisms implemented as neural networks (NNs). We focus on the class of NS-CSGs with Borel state spaces and prove the existence and measurability of the value function for zero-sum discounted cumulative rewards under piecewise-constant restrictions on the components of this class of models. To compute values and synthesise strategies, we present, for the first time, implementable value iteration (VI) and policy iteration (PI) algorithms to solve a class of continuous-state CSGs. These require a finite representation of the pre-image of the environment's NN perception mechanism and rely on finite abstract representations of value functions and strategies closed under VI or PI. First, we introduce a Borel measurable piecewise-constant (B-PWC) representation of value functions, extend minimax backups to this representation and propose B-PWC VI. Second, we introduce two novel representations for the value functions and strategies, constant-piecewise-linear (CON-PWL) and constant-piecewise-constant (CON-PWC) respectively, and propose Minimax-action-free PI by extending a recent PI method based on alternating player choices for finite state spaces to Borel state spaces, which does not require normal-form games to be solved. We illustrate our approach with a dynamic vehicle parking example by generating approximately optimal strategies using a prototype implementation of the B-PWC VI algorithm. "
+}

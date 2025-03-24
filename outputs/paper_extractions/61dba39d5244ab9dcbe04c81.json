@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Distributed Nash Equilibrium Seeking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributed gradient play algorithm",
+    "Local information exchange",
+    "Row-stochasticity of mixing matrices"
+  ],
+  "results": [
+    "Convergence to NE for time-varying directed graphs",
+    "Efficacy illustrated in Nash-Cournot game simulations"
+  ],
+  "paper_id": "61dba39d5244ab9dcbe04c81",
+  "title": "Distributed Nash Equilibrium Seeking over Time-Varying Directed\n  Communication Networks",
+  "abstract": "  We study distributed algorithms for finding a Nash equilibrium (NE) in a class of non-cooperative convex games under partial information. Specifically, each agent has access only to its own smooth local cost function and can receive information from its neighbors in a time-varying directed communication network. To this end, we propose a distributed gradient play algorithm to compute a NE by utilizing local information exchange among the players. In this algorithm, every agent performs a gradient step to minimize its own cost function while sharing and retrieving information locally among its neighbors. The existing methods impose strong assumptions such as balancedness of the mixing matrices and global knowledge of the network communication structure, including Perron-Frobenius eigenvector of the adjacency matrix and other graph connectivity constants. In contrast, our approach relies only on a reasonable and widely-used assumption of row-stochasticity of the mixing matrices. We analyze the algorithm for time-varying directed graphs and prove its convergence to the NE, when the agents' cost functions are strongly convex and have Lipschitz continuous gradients. Numerical simulations are performed for a Nash-Cournot game to illustrate the efficacy of the proposed algorithm. "
+}

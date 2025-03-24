@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph property determination using homomorphism counts"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hom algorithm using finitely many graphs F_1, ..., F_k",
+    "Adaptive query algorithms with dependent F_i"
+  ],
+  "results": [
+    "Planarity and 3-colorability have no hom algorithm",
+    "FO definable queries have a hom algorithm",
+    "Non-existence of an isolated vertex has no hom algorithm",
+    "Three homomorphism counts sufficient for isomorphism type determination"
+  ],
+  "paper_id": "61a444b35244ab9dcb6e22d1",
+  "title": "On Algorithms Based on Finitely Many Homomorphism Counts",
+  "abstract": "  It is well known [Lov\\'asz, 67] that up to isomorphism a graph~$G$ is determined by the homomorphism counts $\\hom(F, G)$, i.e., the number of homomorphisms from $F$ to $G$, where $F$ ranges over all graphs. Thus, in principle, we can answer any query concerning $G$ with only accessing the $\\hom(\\cdot,G)$'s instead of $G$ itself. In this paper, we deal with queries for which there is a hom algorithm, i.e., there are finitely many graphs $F_1, \\ldots, F_k$ such that for any graph $G$ whether it is a Yes-instance of the query is already determined by the vector\\[\\overrightarrow{\\hom}_{F_1,\\ldots,F_k}(G):= \\big(\\hom(F_1,G),\\ldots,\\hom(F_k,G)\\big),\\]where the graphs $F_1, \\ldots, F_k$ only depend on $\\varphi$.   We observe that planarity of graphs and 3-colorability of graphs, properties expressible in monadic second-order logic, have no hom algorithm. On the other hand, queries expressible as a Boolean combination of universal sentences in first-order logic FO have a hom algorithm. Even though it is not easy to find FO definable queries without a hom algorithm, we succeed to show this for the non-existence of an isolated vertex, a property expressible by the FO sentence $\\forall x\\exists y Exy$, somehow the ``simplest'' graph property not definable by a Boolean combination of universal sentences.These results provide a characterization of the prefix classes of first-order logic with the property that each query definable by a sentence of the prefix class has a hom algorithm.   For adaptive query algorithms, i.e., algorithms that again access $\\overrightarrow{\\hom}_{F_1,\\ldots,F_k}(G)$ but here $F_{i+1}$ might depend on $\\hom(F_1,G),\\ldots,\\hom(F_i,G)$, we show that three homomorphism counts $\\hom(\\cdot,G)$ are both sufficient and in general necessary to determine the isomorphism type of $G$. "
+}

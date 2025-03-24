@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "reading comprehension",
+    "natural language inference",
+    "sentiment analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "reducing the number of intermediate layers",
+    "modifying BERT-BASE architecture",
+    "centered kernel alignment",
+    "probing linear classifiers"
+  ],
+  "results": [
+    "minimal loss in fine-tuning accuracy",
+    "decreased number of parameters and training time",
+    "little impact on fine-tuned accuracy"
+  ],
+  "paper_id": "5fe316fb91e01125d4b5b6d9",
+  "title": "Undivided Attention: Are Intermediate Layers Necessary for BERT?",
+  "abstract": "  In recent times, BERT-based models have been extremely successful in solving a variety of natural language processing (NLP) tasks such as reading comprehension, natural language inference, sentiment analysis, etc. All BERT-based architectures have a self-attention block followed by a block of intermediate layers as the basic building component. However, a strong justification for the inclusion of these intermediate layers remains missing in the literature. In this work we investigate the importance of intermediate layers on the overall network performance of downstream tasks. We show that reducing the number of intermediate layers and modifying the architecture for BERT-BASE results in minimal loss in fine-tuning accuracy for downstream tasks while decreasing the number of parameters and training time of the model. Additionally, we use centered kernel alignment and probing linear classifiers to gain insight into our architectural modifications and justify that removal of intermediate layers has little impact on the fine-tuned accuracy. "
+}

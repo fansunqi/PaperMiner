@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predicting drug-drug interactions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Central-Smoothing Hypergraph Neural Networks (CentSmoothie)",
+    "Formulates DDI as a hypergraph",
+    "Learns representations of nodes and labels with central-smoothing"
+  ],
+  "results": [
+    "Performance advantages in simulations and real datasets"
+  ],
+  "paper_id": "61baae695244ab9dcb643fa7",
+  "title": "Central-Smoothing Hypergraph Neural Networks for Predicting Drug-Drug\n  Interactions",
+  "abstract": "  Predicting drug-drug interactions (DDI) is the problem of predicting side effects (unwanted outcomes) of a pair of drugs using drug information and known side effects of many pairs. This problem can be formulated as predicting labels (i.e. side effects) for each pair of nodes in a DDI graph, of which nodes are drugs and edges are interacting drugs with known labels. State-of-the-art methods for this problem are graph neural networks (GNNs), which leverage neighborhood information in the graph to learn node representations. For DDI, however, there are many labels with complicated relationships due to the nature of side effects. Usual GNNs often fix labels as one-hot vectors that do not reflect label relationships and potentially do not obtain the highest performance in the difficult cases of infrequent labels. In this paper, we formulate DDI as a hypergraph where each hyperedge is a triple: two nodes for drugs and one node for a label. We then present CentSmoothie, a hypergraph neural network that learns representations of nodes and labels altogether with a novel central-smoothing formulation. We empirically demonstrate the performance advantages of CentSmoothie in simulations as well as real datasets. "
+}

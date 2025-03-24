@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nonconvex minimax optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cubic regularization (CR) type algorithms",
+    "Cubic-LocalMinimax algorithm",
+    "GDA-based solver for cubic subproblem",
+    "Stochastic Cubic-LocalMinimax"
+  ],
+  "results": [
+    "Global convergence to local minimax points in nonconvex-strongly-concave minimax optimization",
+    "Sublinear convergence rate",
+    "Characterized iteration complexity",
+    "Faster convergence of stochastic Cubic-LocalMinimax than existing algorithms"
+  ],
+  "paper_id": "6168f19c5244ab9dcbe2f967",
+  "title": "A Cubic Regularization Approach for Finding Local Minimax Points in\n  Nonconvex Minimax Optimization",
+  "abstract": "  Gradient descent-ascent (GDA) is a widely used algorithm for minimax optimization. However, GDA has been proved to converge to stationary points for nonconvex minimax optimization, which are suboptimal compared with local minimax points. In this work, we develop cubic regularization (CR) type algorithms that globally converge to local minimax points in nonconvex-strongly-concave minimax optimization. We first show that local minimax points are equivalent to second-order stationary points of a certain envelope function. Then, inspired by the classic cubic regularization algorithm, we propose an algorithm named Cubic-LocalMinimax for finding local minimax points, and provide a comprehensive convergence analysis by leveraging its intrinsic potential function. Specifically, we establish the global convergence of Cubic-LocalMinimax to a local minimax point at a sublinear convergence rate and characterize its iteration complexity. Also, we propose a GDA-based solver for solving the cubic subproblem involved in Cubic-LocalMinimax up to certain pre-defined accuracy, and analyze the overall gradient and Hessian-vector product computation complexities of such an inexact Cubic-LocalMinimax algorithm. Moreover, we propose a stochastic variant of Cubic-LocalMinimax for large-scale minimax optimization, and characterize its sample complexity under stochastic sub-sampling. Experimental results demonstrate faster convergence of our stochastic Cubic-LocalMinimax than some existing algorithms. "
+}

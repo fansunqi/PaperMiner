@@ -1,0 +1,24 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Data classification",
+    "Image classification",
+    "Tweets classification"
+  ],
+  "datasets": [
+    "CIFAR100"
+  ],
+  "methods": [
+    "LiSHT (Linearly Scaled Hyperbolic Tangent) activation function"
+  ],
+  "results": [
+    "Accuracy on CIFAR100 with ResNet using LiSHT improved by 9.48% compared to Tanh",
+    "Accuracy on CIFAR100 with ResNet using LiSHT improved by 3.40% compared to ReLU",
+    "Accuracy on CIFAR100 with ResNet using LiSHT improved by 3.16% compared to PReLU",
+    "Accuracy on CIFAR100 with ResNet using LiSHT improved by 4.26% compared to LReLU",
+    "Accuracy on CIFAR100 with ResNet using LiSHT improved by 1.17% compared to Swish"
+  ],
+  "paper_id": "5c615fe2e1cd8eae1501c7fb",
+  "title": "LiSHT: Non-Parametric Linearly Scaled Hyperbolic Tangent Activation\n  Function for Neural Networks",
+  "abstract": "  The activation function in neural network introduces the non-linearity required to deal with the complex tasks. Several activation/non-linearity functions are developed for deep learning models. However, most of the existing activation functions suffer due to the dying gradient problem and non-utilization of the large negative input values. In this paper, we propose a Linearly Scaled Hyperbolic Tangent (LiSHT) for Neural Networks (NNs) by scaling the Tanh linearly. The proposed LiSHT is non-parametric and tackles the dying gradient problem. We perform the experiments on benchmark datasets of different type, such as vector data, image data and natural language data. We observe the superior performance using Multi-layer Perceptron (MLP), Residual Network (ResNet) and Long-short term memory (LSTM) for data classification, image classification and tweets classification tasks, respectively. The accuracy on CIFAR100 dataset using ResNet model with LiSHT is improved by 9.48, 3.40, 3.16, 4.26, and 1.17\\% as compared to Tanh, ReLU, PReLU, LReLU, and Swish, respectively. We also show the qualitative results using loss landscape, weight distribution and activations maps in support of the proposed activation function. "
+}

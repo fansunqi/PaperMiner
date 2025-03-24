@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/WHU-ZQH/UIKA"
+  ],
+  "tasks": [
+    "Aspect-based Sentiment Analysis"
+  ],
+  "datasets": [
+    "ABSA benchmarks"
+  ],
+  "methods": [
+    "Unified alignment pretraining framework",
+    "Coarse-to-fine retrieval sampling",
+    "Knowledge guidance-based strategy",
+    "On-the-fly teacher-student joint fine-tuning"
+  ],
+  "results": [
+    "Effectiveness and universality of the proposed pretraining framework"
+  ],
+  "paper_id": "6178c43b5244ab9dcbb2b66c",
+  "title": "Unified Instance and Knowledge Alignment Pretraining for Aspect-based\n  Sentiment Analysis",
+  "abstract": "  Aspect-based Sentiment Analysis (ABSA) aims to determine the sentiment polarity towards an aspect. Because of the expensive and limited labelled data, the pretraining strategy has become the de-facto standard for ABSA. However, there always exists severe domain shift between the pretraining and downstream ABSA datasets, hindering the effective knowledge transfer when directly finetuning and making the downstream task performs sub-optimal. To mitigate such domain shift, we introduce a unified alignment pretraining framework into the vanilla pretrain-finetune pipeline with both instance- and knowledge-level alignments. Specifically, we first devise a novel coarse-to-fine retrieval sampling approach to select target domain-related instances from the large-scale pretraining dataset, thus aligning the instances between pretraining and target domains (First Stage). Then, we introduce a knowledge guidance-based strategy to further bridge the domain gap at the knowledge level. In practice, we formulate the model pretrained on the sampled instances into a knowledge guidance model and a learner model, respectively. On the target dataset, we design an on-the-fly teacher-student joint fine-tuning approach to progressively transfer the knowledge from the knowledge guidance model to the learner model (Second Stage). Thereby, the learner model can maintain more domain-invariant knowledge when learning new knowledge from the target dataset. In the Third Stage, the learner model is finetuned to better adapt its learned knowledge to the target dataset. Extensive experiments and analyses on several ABSA benchmarks demonstrate the effectiveness and universality of our proposed pretraining framework. Our source code and models are publicly available at https://github.com/WHU-ZQH/UIKA. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Assessing robustness of neural networks",
+    "Ensuring monotonicity in neural networks"
+  ],
+  "datasets": [
+    "CERN Large Hadron Collider data",
+    "Benchmarks in medicine",
+    "Benchmarks in finance"
+  ],
+  "methods": [
+    "Weight normalization scheme",
+    "Monotonic residual connection"
+  ],
+  "results": [
+    "Trained a robust and interpretable discriminator for heavy-flavor-quark decays",
+    "Adopted in LHCb real-time data-processing system",
+    "State-of-the-art performance on benchmarks"
+  ],
+  "paper_id": "61a839665244ab9dcbb14d54",
+  "title": "Robust and Provably Monotonic Networks",
+  "abstract": "  The Lipschitz constant of the map between the input and output space represented by a neural network is a natural metric for assessing the robustness of the model. We present a new method to constrain the Lipschitz constant of dense deep learning models that can also be generalized to other architectures. The method relies on a simple weight normalization scheme during training that ensures the Lipschitz constant of every layer is below an upper limit specified by the analyst. A simple monotonic residual connection can then be used to make the model monotonic in any subset of its inputs, which is useful in scenarios where domain knowledge dictates such dependence. Examples can be found in algorithmic fairness requirements or, as presented here, in the classification of the decays of subatomic particles produced at the CERN Large Hadron Collider. Our normalization is minimally constraining and allows the underlying architecture to maintain higher expressiveness compared to other techniques which aim to either control the Lipschitz constant of the model or ensure its monotonicity. We show how the algorithm was used to train a powerful, robust, and interpretable discriminator for heavy-flavor-quark decays, which has been adopted for use as the primary data-selection algorithm in the LHCb real-time data-processing system in the current LHC data-taking period known as Run 3. In addition, our algorithm has also achieved state-of-the-art performance on benchmarks in medicine, finance, and other applications. "
+}

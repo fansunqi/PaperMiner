@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robotic control in contact-rich environments"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Contact-implicit model predictive control (CI-MPC)",
+    "Bi-level planning formulation",
+    "Time-varying linear complementarity problems (LCPs)",
+    "Strategic Taylor approximations",
+    "Structure-exploiting interior-point solver",
+    "Custom trajectory optimizer"
+  ],
+  "results": [
+    "Real-time solution rates for CI-MPC",
+    "Ability to generate and track non-periodic behaviors",
+    "Robust to model mismatch",
+    "Responsive to disturbances by discovering new contact modes"
+  ],
+  "paper_id": "60ee411991e01102f8efa5ef",
+  "title": "Fast Contact-Implicit Model-Predictive Control",
+  "abstract": "  We present a general approach for controlling robotic systems that make and break contact with their environments. Contact-implicit model predictive control (CI-MPC) generalizes linear MPC to contact-rich settings by utilizing a bi-level planning formulation with lower-level contact dynamics formulated as time-varying linear complementarity problems (LCPs) computed using strategic Taylor approximations about a reference trajectory. These dynamics enable the upper-level planning problem to reason about contact timing and forces, and generate entirely new contact-mode sequences online. To achieve reliable and fast numerical convergence, we devise a structure-exploiting interior-point solver for these LCP contact dynamics and a custom trajectory optimizer for the tracking problem. We demonstrate real-time solution rates for CI-MPC and the ability to generate and track non-periodic behaviours in hardware experiments on a quadrupedal robot. We also show that the controller is robust to model mismatch and can respond to disturbances by discovering and exploiting new contact modes across a variety of robotic systems in simulation, including a pushbot, planar hopper, planar quadruped, and planar biped. "
+}

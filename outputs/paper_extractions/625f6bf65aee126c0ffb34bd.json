@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantifying spatial under-reporting disparities in resident crowdsourcing"
+  ],
+  "datasets": [
+    "New York City Department of Parks and Recreation reports",
+    "Chicago Department of Transportation and Department of Water Management reports"
+  ],
+  "methods": [
+    "Poisson rate estimation using duplicate reports to disambiguate incident occurrence and reporting rates"
+  ],
+  "results": [
+    "Substantial spatial disparities in reporting rates",
+    "Some neighborhoods report three times as quickly as others",
+    "Positive correlation between reporting rates and socio-economic characteristics in NYC"
+  ],
+  "paper_id": "625f6bf65aee126c0ffb34bd",
+  "title": "Quantifying Spatial Under-reporting Disparities in Resident\n  Crowdsourcing",
+  "abstract": "  Modern city governance relies heavily on crowdsourcing (\"co-production\") to identify problems such as downed trees and power lines. A major concern is that residents do not report problems at the same rates, with reporting heterogeneity directly translating to downstream disparities in how quickly incidents can be addressed. Measuring such under-reporting is a difficult statistical task, as, by definition, we do not observe incidents that are not reported or when reported incidents first occurred. Thus, low reporting rates and low ground-truth incident rates cannot be naively distinguished. We develop a method to identify (heterogeneous) reporting rates, without using external ground truth data. Our insight is that rates on $\\textit{duplicate}$ reports about the same incident can be leveraged to disambiguate whether an incident has occurred with its reporting rate once it has occurred. Using this idea, we reduce the question to a standard Poisson rate estimation task -- even though the full incident reporting interval is also unobserved.   We apply our method to over 100,000 resident reports made to the New York City Department of Parks and Recreation and to over 900,000 reports made to the Chicago Department of Transportation and Department of Water Management, finding that there are substantial spatial disparities in reporting rates even after controlling for incident characteristics -- some neighborhoods report three times as quickly as do others. These spatial disparities correspond to socio-economic characteristics: in NYC, higher population density, fraction of people with college degrees, income, and fraction of population that is White all positively correlate with reporting rates. "
+}

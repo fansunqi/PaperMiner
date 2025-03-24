@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Rehabilitating Step Asynchronism in Federated Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FedaGrac: Calibrates local direction to predictive global orientation"
+  ],
+  "results": [
+    "Improved order of convergence rate",
+    "Eliminates negative effect of step asynchronism",
+    "Accelerates training",
+    "Enhances final accuracy"
+  ],
+  "paper_id": "61bff4285244ab9dcb79c861",
+  "title": "From Deterioration to Acceleration: A Calibration Approach to\n  Rehabilitating Step Asynchronism in Federated Optimization",
+  "abstract": "  In the setting of federated optimization, where a global model is aggregated periodically, step asynchronism occurs when participants conduct model training by efficiently utilizing their computational resources. It is well acknowledged that step asynchronism leads to objective inconsistency under non-i.i.d. data, which degrades the model's accuracy. To address this issue, we propose a new algorithm FedaGrac, which calibrates the local direction to a predictive global orientation. Taking advantage of the estimated orientation, we guarantee that the aggregated model does not excessively deviate from the global optimum while fully utilizing the local updates of faster nodes. We theoretically prove that FedaGrac holds an improved order of convergence rate than the state-of-the-art approaches and eliminates the negative effect of step asynchronism. Empirical results show that our algorithm accelerates the training and enhances the final accuracy. "
+}

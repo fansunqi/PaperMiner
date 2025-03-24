@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Promotion-Aware Click-Through Rate Prediction"
+  ],
+  "datasets": [
+    "real-world datasets"
+  ],
+  "methods": [
+    "MOEF (Modeling Occasion Evolution in Frequency Domain)",
+    "Fourier Transformation on sliding time windows",
+    "Occasion Evolution Layer (OEL)",
+    "Multiple experts with attention mechanism"
+  ],
+  "results": [
+    "MOEF outperforms representative CTR models",
+    "Superiority validated on real-world datasets",
+    "Significant improvement in online A/B tests"
+  ],
+  "paper_id": "61ca80365244ab9dcba69bf2",
+  "title": "MOEF: Modeling Occasion Evolution in Frequency Domain for\n  Promotion-Aware Click-Through Rate Prediction",
+  "abstract": "  Promotions are becoming more important and prevalent in e-commerce to attract customers and boost sales, leading to frequent changes of occasions, which drives users to behave differently. In such situations, most existing Click-Through Rate (CTR) models can't generalize well to online serving due to distribution uncertainty of the upcoming occasion. In this paper, we propose a novel CTR model named MOEF for recommendations under frequent changes of occasions. Firstly, we design a time series that consists of occasion signals generated from the online business scenario. Since occasion signals are more discriminative in the frequency domain, we apply Fourier Transformation to sliding time windows upon the time series, obtaining a sequence of frequency spectrum which is then processed by Occasion Evolution Layer (OEL). In this way, a high-order occasion representation can be learned to handle the online distribution uncertainty. Moreover, we adopt multiple experts to learn feature representations from multiple aspects, which are guided by the occasion representation via an attention mechanism. Accordingly, a mixture of feature representations is obtained adaptively for different occasions to predict the final CTR. Experimental results on real-world datasets validate the superiority of MOEF and online A/B tests also show MOEF outperforms representative CTR models significantly. "
+}

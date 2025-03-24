@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning the graphical structure of Bayesian networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dual PC algorithm",
+    "Leveraging inverse relationship between covariance and precision matrices",
+    "Block matrix inversions for partial correlations"
+  ],
+  "results": [
+    "Outperforms classic PC algorithm in run time and network structure recovery",
+    "Effective even with deviations from Gaussianity",
+    "Applies to Gaussian copula models"
+  ],
+  "paper_id": "61bc001b5244ab9dcba3fc14",
+  "title": "The Dual PC Algorithm and the Role of Gaussianity for Structure Learning\n  of Bayesian Networks",
+  "abstract": "  Learning the graphical structure of Bayesian networks is key to describing data-generating mechanisms in many complex applications but poses considerable computational challenges. Observational data can only identify the equivalence class of the directed acyclic graph underlying a Bayesian network model, and a variety of methods exist to tackle the problem. Under certain assumptions, the popular PC algorithm can consistently recover the correct equivalence class by reverse-engineering the conditional independence (CI) relationships holding in the variable distribution. The dual PC algorithm is a novel scheme to carry out the CI tests within the PC algorithm by leveraging the inverse relationship between covariance and precision matrices. By exploiting block matrix inversions we can simultaneously perform tests on partial correlations of complementary (or dual) conditioning sets. The multiple CI tests of the dual PC algorithm proceed by first considering marginal and full-order CI relationships and progressively moving to central-order ones. Simulation studies show that the dual PC algorithm outperforms the classic PC algorithm both in terms of run time and in recovering the underlying network structure, even in the presence of deviations from Gaussianity. Additionally, we show that the dual PC algorithm applies for Gaussian copula models, and demonstrate its performance in that setting. "
+}

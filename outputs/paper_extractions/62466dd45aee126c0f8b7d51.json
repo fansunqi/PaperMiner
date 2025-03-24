@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Investigate if vision-language pretrained models learn composable primitive concepts"
+  ],
+  "datasets": [
+    "CUB",
+    "MIT-States"
+  ],
+  "methods": [
+    "Compositional Concept Mapping (CompMap)",
+    "Set operation for composition model",
+    "Linear classifier for learning composition model"
+  ],
+  "results": [
+    "High usefulness for fine-grained visual recognition and compositional generalization tasks",
+    "Low interpretability of learned composition models"
+  ],
+  "paper_id": "62466dd45aee126c0f8b7d51",
+  "title": "Do Vision-Language Pretrained Models Learn Composable Primitive\n  Concepts?",
+  "abstract": "  In this paper, we study whether representations of primitive concepts--such as colors and shapes of object parts--emerge automatically within these pretrained VL models. We propose a two-step framework, Compositional Concept Mapping (CompMap), to investigate this. CompMap asks a VL model to generate concept activations with text prompts from a predefined list of primitive concepts, and then learns to construct an explicit composition model that maps the primitive concept activations (e.g. the likelihood of black tail or red wing) to composite concepts (e.g. a red-winged blackbird). We demonstrate that a composition model can be designed as a set operation, and show that a composition model is straightforward for machines to learn from ground truth primitive concepts (as a linear classifier). We thus hypothesize that if primitive concepts indeed emerge in a VL pretrained model, its primitive concept activations can be used to learn a composition model similar to the one designed by experts. We propose a quantitative metric to measure the degree of similarity, and refer to the metric as the interpretability of the learned primitive concept representations of VL models. We also measure the classification accuracy when using the primitive concept activations and the learned composition model to predict the composite concepts, and refer to it as the usefulness metric. Our study reveals that state-of-the-art VL pretrained models learn primitive concepts that are highly useful for fine-grained visual recognition on the CUB dataset, and compositional generalization tasks on the MIT-States dataset. However, we observe that the learned composition models have low interpretability in our qualitative analyses. Our results reveal the limitations of existing VL models, and the necessity of pretraining objectives that encourage the acquisition of primitive concepts. "
+}

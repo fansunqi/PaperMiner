@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep metric learning",
+    "Variational autoencoder"
+  ],
+  "datasets": [
+    "MNIST"
+  ],
+  "methods": [
+    "Triplet-Based Variational Autoencoder (TVAE)",
+    "Optimizing triplet loss on VAE mean vectors",
+    "Incorporating deep metric learning into VAE"
+  ],
+  "results": [
+    "TVAE achieves triplet accuracy of 95.60%",
+    "Traditional VAE achieves triplet accuracy of 75.08%"
+  ],
+  "paper_id": "63e4646790e50fcafda17d96",
+  "title": "TVAE: Triplet-Based Variational Autoencoder using Metric Learning",
+  "abstract": "  Deep metric learning has been demonstrated to be highly effective in learning semantic representation and encoding information that can be used to measure data similarity, by relying on the embedding learned from metric learning. At the same time, variational autoencoder (VAE) has widely been used to approximate inference and proved to have a good performance for directed probabilistic models. However, for traditional VAE, the data label or feature information are intractable. Similarly, traditional representation learning approaches fail to represent many salient aspects of the data. In this project, we propose a novel integrated framework to learn latent embedding in VAE by incorporating deep metric learning. The features are learned by optimizing a triplet loss on the mean vectors of VAE in conjunction with standard evidence lower bound (ELBO) of VAE. This approach, which we call Triplet based Variational Autoencoder (TVAE), allows us to capture more fine-grained information in the latent embedding. Our model is tested on MNIST data set and achieves a high triplet accuracy of 95.60% while the traditional VAE (Kingma & Welling, 2013) achieves triplet accuracy of 75.08%. "
+}

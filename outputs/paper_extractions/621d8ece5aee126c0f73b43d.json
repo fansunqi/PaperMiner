@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online learning with knapsacks",
+    "Maximizing expected reward under resource constraints"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Lagrangian relaxation",
+    "Best-of-many-worlds framework",
+    "No-regret guarantees under stochastic, adversarial, non-stationary inputs",
+    "Handling non-convex reward and cost functions"
+  ],
+  "results": [
+    "Same regret guarantees as prior work in stochastic case",
+    "Constant competitive ratio in adversarial case with linearly growing budgets",
+    "Improves over O(log m log T) upper bound",
+    "Framework flexibility demonstrated in game-theoretic applications and budget-pacing mechanisms"
+  ],
+  "paper_id": "621d8ece5aee126c0f73b43d",
+  "title": "Best of Many Worlds Guarantees for Online Learning with Knapsacks",
+  "abstract": "  We study online learning problems in which a decision maker wants to maximize their expected reward without violating a finite set of $m$ resource constraints. By casting the learning process over a suitably defined space of strategy mixtures, we recover strong duality on a Lagrangian relaxation of the underlying optimization problem, even for general settings with non-convex reward and resource-consumption functions. Then, we provide the first best-of-many-worlds type framework for this setting, with no-regret guarantees under stochastic, adversarial, and non-stationary inputs. Our framework yields the same regret guarantees of prior work in the stochastic case. On the other hand, when budgets grow at least linearly in the time horizon, it allows us to provide a constant competitive ratio in the adversarial case, which improves over the best known upper bound bound of $O(\\log m \\log T)$. Moreover, our framework allows the decision maker to handle non-convex reward and cost functions. We provide two game-theoretic applications of our framework to give further evidence of its flexibility. In doing so, we show that it can be employed to implement budget-pacing mechanisms in repeated first-price auctions. "
+}

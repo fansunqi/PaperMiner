@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Auscultated Lung and Tracheal Sound Analysis"
+  ],
+  "datasets": [
+    "HF_Tracheal_V1",
+    "HF_Lung_V2"
+  ],
+  "methods": [
+    "Convolutional Neural Network Bidirectional Gate Recurrent Unit",
+    "Mixed Set Training",
+    "Domain Adaptation"
+  ],
+  "results": [
+    "Models trained using lung sound alone performed poorly in tracheal sound analysis and vice versa",
+    "Mixed set training or domain adaptation improved performance for inhalation and exhalation detection in lung sounds",
+    "Improved performance for inhalation, exhalation, and CAS detection in tracheal sounds",
+    "Model trained on mixed set had flexibility for both lung and tracheal sound analyses"
+  ],
+  "paper_id": "60ebef7b91e0119571374060",
+  "title": "A Dual-Purpose Deep Learning Model for Auscultated Lung and Tracheal\n  Sound Analysis Based on Mixed Set Training",
+  "abstract": "  Many deep learning-based computerized respiratory sound analysis methods have previously been developed. However, these studies focus on either lung sound only or tracheal sound only. The effectiveness of using a lung sound analysis algorithm on tracheal sound and vice versa has never been investigated. Furthermore, no one knows whether using lung and tracheal sounds together in training a respiratory sound analysis model is beneficial. In this study, we first constructed a tracheal sound database, HF_Tracheal_V1, containing 10448 15-s tracheal sound recordings, 21741 inhalation labels, 15858 exhalation labels, and 6414 continuous adventitious sound (CAS) labels. HF_Tracheal_V1 and our previously built lung sound database, HF_Lung_V2, were either combined (mixed set), used one after the other (domain adaptation), or used alone to train convolutional neural network bidirectional gate recurrent unit models for inhalation, exhalation, and CAS detection in lung and tracheal sounds. The results revealed that the models trained using lung sound alone performed poorly in tracheal sound analysis and vice versa. However, mixed set training or domain adaptation improved the performance for 1) inhalation and exhalation detection in lung sounds and 2) inhalation, exhalation, and CAS detection in tracheal sounds compared to positive controls (the models trained using lung sound alone and used in lung sound analysis and vice versa). In particular, the model trained on the mixed set had great flexibility to serve two purposes, lung and tracheal sound analyses, at the same time. "
+}

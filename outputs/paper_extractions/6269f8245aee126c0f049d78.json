@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Person retrieval from non-overlapping camera network"
+  ],
+  "datasets": [
+    "Person Trajectory Dataset"
+  ],
+  "methods": [
+    "Cross-camera trajectory generation",
+    "Spatio-temporal model integrating walking habits and path layout",
+    "Conditional random field model for trajectory extraction",
+    "Restricted non-negative matrix factorization for optimization",
+    "Trajectory re-ranking technique"
+  ],
+  "results": [
+    "Effectiveness and robustness verified by extensive experiments"
+  ],
+  "paper_id": "6269f8245aee126c0f049d78",
+  "title": "Cross-Camera Trajectories Help Person Retrieval in a Camera Network",
+  "abstract": "  We are concerned with retrieving a query person from multiple videos captured by a non-overlapping camera network. Existing methods often rely on purely visual matching or consider temporal constraints but ignore the spatial information of the camera network. To address this issue, we propose a pedestrian retrieval framework based on cross-camera trajectory generation, which integrates both temporal and spatial information. To obtain pedestrian trajectories, we propose a novel cross-camera spatio-temporal model that integrates pedestrians' walking habits and the path layout between cameras to form a joint probability distribution. Such a spatio-temporal model among a camera network can be specified using sparsely sampled pedestrian data. Based on the spatio-temporal model, cross-camera trajectories can be extracted by the conditional random field model and further optimized by restricted non-negative matrix factorization. Finally, a trajectory re-ranking technique is proposed to improve the pedestrian retrieval results. To verify the effectiveness of our method, we construct the first cross-camera pedestrian trajectory dataset, the Person Trajectory Dataset, in real surveillance scenarios. Extensive experiments verify the effectiveness and robustness of the proposed method. "
+}

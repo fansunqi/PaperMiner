@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition (ASR)"
+  ],
+  "datasets": [
+    "LibriSpeech"
+  ],
+  "methods": [
+    "4-bit Conformer with native quantization aware training",
+    "native integer operations"
+  ],
+  "results": [
+    "lossless 4-bit Conformer model with 5.8x size reduction compared to float32 model",
+    "lossless Conformer ASR model with mixed 4-bit and 8-bit weights with 5x size reduction compared to float32 model"
+  ],
+  "paper_id": "62451c2b5aee126c0f47ac27",
+  "title": "4-bit Conformer with Native Quantization Aware Training for Speech\n  Recognition",
+  "abstract": "  Reducing the latency and model size has always been a significant research problem for live Automatic Speech Recognition (ASR) application scenarios. Along this direction, model quantization has become an increasingly popular approach to compress neural networks and reduce computation cost. Most of the existing practical ASR systems apply post-training 8-bit quantization. To achieve a higher compression rate without introducing additional performance regression, in this study, we propose to develop 4-bit ASR models with native quantization aware training, which leverages native integer operations to effectively optimize both training and inference. We conducted two experiments on state-of-the-art Conformer-based ASR models to evaluate our proposed quantization technique. First, we explored the impact of different precisions for both weight and activation quantization on the LibriSpeech dataset, and obtained a lossless 4-bit Conformer model with 5.8x size reduction compared to the float32 model. Following this, we for the first time investigated and revealed the viability of 4-bit quantization on a practical ASR system that is trained with large-scale datasets, and produced a lossless Conformer ASR model with mixed 4-bit and 8-bit weights that has 5x size reduction compared to the float32 model. "
+}

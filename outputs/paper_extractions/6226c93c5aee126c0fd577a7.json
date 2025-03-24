@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse Integer Least Square Problem (SILS)",
+    "Binary Quadratic Program with Cardinality Constraint"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "l1-based SDP relaxation",
+    "Randomized algorithm for SILS"
+  ],
+  "results": [
+    "SDP relaxation can solve SILS under sufficient conditions",
+    "SDP relaxation can solve feature extraction problem with sub-Gaussian data",
+    "SDP relaxation can solve integer sparse recovery problem in high and low coherence settings"
+  ],
+  "paper_id": "6226c93c5aee126c0fd577a7",
+  "title": "An SDP Relaxation for the Sparse Integer Least Square Problem",
+  "abstract": "  In this paper, we study the polynomial approximability or solvability of sparse integer least square problem (SILS), which is the NP-hard variant of the least square problem, where we only consider sparse {0, +1, -1}-vectors. We propose an l1-based SDP relaxation to SILS, and introduce a randomized algorithm for SILS based on the SDP relaxation. In fact, the proposed randomized algorithm works for a broader class of binary quadratic program with cardinality constraint, where the objective function can be possibly non-convex. Moreover, when the sparsity parameter is fixed, we provide sufficient conditions for our SDP relaxation to solve SILS. The class of data input which guarantee that SDP solves SILS is broad enough to cover many cases in real-world applications, such as privacy preserving identification, and multiuser detection. To show this, we specialize our sufficient conditions to two special cases of SILS with relevant applications: the feature extraction problem and the integer sparse recovery problem. We show that our SDP relaxation can solve the feature extraction problem with sub-Gaussian data, under some weak conditions on the second moment of the covariance matrix. We also show that our SDP relaxation can solve the integer sparse recovery problem under some conditions that can be satisfied both in high and low coherence settings. "
+}

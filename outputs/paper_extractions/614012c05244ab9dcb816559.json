@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backdoor attacks in DNNs",
+    "Frequency domain attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fourier heatmaps for generating spatially dynamic and invisible backdoor attacks"
+  ],
+  "results": [
+    "High attack success rates with low poisoning rates",
+    "Little to no drop in performance",
+    "Resistant to various SOTA defenses"
+  ],
+  "paper_id": "614012c05244ab9dcb816559",
+  "title": "Check Your Other Door! Creating Backdoor Attacks in the Frequency Domain",
+  "abstract": "  Deep Neural Networks (DNNs) are ubiquitous and span a variety of applications ranging from image classification to real-time object detection. As DNN models become more sophisticated, the computational cost of training these models becomes a burden. For this reason, outsourcing the training process has been the go-to option for many DNN users. Unfortunately, this comes at the cost of vulnerability to backdoor attacks. These attacks aim to establish hidden backdoors in the DNN so that it performs well on clean samples, but outputs a particular target label when a trigger is applied to the input. Existing backdoor attacks either generate triggers in the spatial domain or naively poison frequencies in the Fourier domain. In this work, we propose a pipeline based on Fourier heatmaps to generate a spatially dynamic and invisible backdoor attack in the frequency domain. The proposed attack is extensively evaluated on various datasets and network architectures. Unlike most existing backdoor attacks, the proposed attack can achieve high attack success rates with low poisoning rates and little to no drop in performance while remaining imperceptible to the human eye. Moreover, we show that the models poisoned by our attack are resistant to various state-of-the-art (SOTA) defenses, so we contribute two possible defenses that can evade the attack. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic optimization with weakly convex and multi-convex surrogates"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stochastic regularized majorization-minimization",
+    "Proximal regularization",
+    "Block-minimization within diminishing radii"
+  ],
+  "results": [
+    "First-order optimality gap decays at rate O((log n)^{1+\u03b5}/n^{1/2}) for empirical loss",
+    "First-order optimality gap decays at rate O((log n)^{1+\u03b5}/n^{1/4}) for expected loss",
+    "Improved rate to O((log n)^{1+\u03b5}/n^{1/2}) under additional assumptions",
+    "First convergence rate bounds for various optimization methods under nonconvex dependent data setting"
+  ],
+  "paper_id": "61d65e0b5244ab9dcbf16060",
+  "title": "Stochastic regularized majorization-minimization with weakly convex and\n  multi-convex surrogates",
+  "abstract": "  Stochastic majorization-minimization (SMM) is a class of stochastic optimization algorithms that proceed by sampling new data points and minimizing a recursive average of surrogate functions of an objective function. The surrogates are required to be strongly convex and convergence rate analysis for the general non-convex setting was not available. In this paper, we propose an extension of SMM where surrogates are allowed to be only weakly convex or block multi-convex, and the averaged surrogates are approximately minimized with proximal regularization or block-minimized within diminishing radii, respectively. For the general nonconvex constrained setting with non-i.i.d. data samples, we show that the first-order optimality gap of the proposed algorithm decays at the rate $O((\\log n)^{1+\\epsilon}/n^{1/2})$ for the empirical loss and $O((\\log n)^{1+\\epsilon}/n^{1/4})$ for the expected loss, where $n$ denotes the number of data samples processed. Under some additional assumption, the latter convergence rate can be improved to $O((\\log n)^{1+\\epsilon}/n^{1/2})$. As a corollary, we obtain the first convergence rate bounds for various optimization methods under general nonconvex dependent data setting: Double-averaging projected gradient descent and its generalizations, proximal point empirical risk minimization, and online matrix/tensor decomposition algorithms. We also provide experimental validation of our results. "
+}

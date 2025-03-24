@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://sites.google.com/view/sacmm"
+  ],
+  "tasks": [
+    "Decentralized Multi-Agent Policy Gradients",
+    "Cooperative Multi-Agent Reinforcement Learning"
+  ],
+  "datasets": [
+    "StarCraft II micromanagement benchmark"
+  ],
+  "methods": [
+    "LSF-SAC",
+    "Variational inference-based information-sharing",
+    "Soft-actor-critic design"
+  ],
+  "results": [
+    "Outperforms several state-of-the-art methods in collaborative tasks",
+    "Significant expansion of value function factorization power"
+  ],
+  "paper_id": "61d50c585244ab9dcbe1387d",
+  "title": "Value Functions Factorization with Latent State Information Sharing in\n  Decentralized Multi-Agent Policy Gradients",
+  "abstract": "  Value function factorization via centralized training and decentralized execution is promising for solving cooperative multi-agent reinforcement tasks. One of the approaches in this area, QMIX, has become state-of-the-art and achieved the best performance on the StarCraft II micromanagement benchmark. However, the monotonic-mixing of per agent estimates in QMIX is known to restrict the joint action Q-values it can represent, as well as the insufficient global state information for single agent value function estimation, often resulting in suboptimality. To this end, we present LSF-SAC, a novel framework that features a variational inference-based information-sharing mechanism as extra state information to assist individual agents in the value function factorization. We demonstrate that such latent individual state information sharing can significantly expand the power of value function factorization, while fully decentralized execution can still be maintained in LSF-SAC through a soft-actor-critic design. We evaluate LSF-SAC on the StarCraft II micromanagement challenge and demonstrate that it outperforms several state-of-the-art methods in challenging collaborative tasks. We further set extensive ablation studies for locating the key factors accounting for its performance improvements. We believe that this new insight can lead to new local value estimation methods and variational deep learning algorithms. A demo video and code of implementation can be found at https://sites.google.com/view/sacmm. "
+}

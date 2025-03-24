@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Community Search"
+  ],
+  "datasets": [
+    "real graphs with ground-truth communities"
+  ],
+  "methods": [
+    "Meta-Learning Approach",
+    "Conditional Graph Neural Process (CGNP)",
+    "task-common node embedding function for clustering",
+    "metric-based graph learning"
+  ],
+  "results": [
+    "CGNP outperforms CS algorithms and ML baselines"
+  ],
+  "paper_id": "61d3bae25244ab9dcba34f4c",
+  "title": "Community Search: A Meta-Learning Approach",
+  "abstract": "  Community Search (CS) is one of the fundamental graph analysis tasks, which is a building block of various real applications. Given any query nodes, CS aims to find cohesive subgraphs that query nodes belong to. Recently, a large number of CS algorithms are designed. These algorithms adopt predefined subgraph patterns to model the communities, which cannot find ground-truth communities that do not have such pre-defined patterns in real-world graphs. Thereby, machine learning (ML) and deep learning (DL) based approaches are proposed to capture flexible community structures by learning from ground-truth communities in a data-driven fashion. These approaches rely on sufficient training data to provide enough generalization for ML models, however, the ground-truth cannot be comprehensively collected beforehand.   In this paper, we study ML/DL-based approaches for CS, under the circumstance of small training data. Instead of directly fitting the small data, we extract prior knowledge which is shared across multiple CS tasks via learning a meta model. Each CS task is a graph with several queries that possess corresponding partial ground-truth. The meta model can be swiftly adapted to a task to be predicted by feeding a few task-specific training data. We find that trivially applying multiple classical metalearning algorithms to CS suffers from problems regarding prediction effectiveness, generalization capability and efficiency. To address such problems, we propose a novel meta-learning based framework, Conditional Graph Neural Process (CGNP), to fulfill the prior extraction and adaptation procedure. A meta CGNP model is a task-common node embedding function for clustering, learned by metric-based graph learning, which fully exploits the characteristics of CS. We compare CGNP with CS algorithms and ML baselines on real graphs with ground-truth communities. "
+}

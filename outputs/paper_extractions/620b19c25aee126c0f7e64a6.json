@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online collision-free trajectory generation",
+    "Multi-robot trajectory generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Infinite-horizon model predictive control with deadlock resolution",
+    "Modified buffered Voronoi with warning band",
+    "Detection-resolution scheme for deadlocks",
+    "Adaptive resolution scheme"
+  ],
+  "results": [
+    "Significant improvements on success rate in comparison with other state-of-the-art methods",
+    "Effective deadlock detection and resolution",
+    "Recursive feasibility of underlying optimization under input and model constraints",
+    "Concurrent for all robots with only local communication required"
+  ],
+  "paper_id": "620b19c25aee126c0f7e64a6",
+  "title": "Deadlock Resolution and Feasibility Guarantee in MPC-based Multi-robot\n  Trajectory Generation",
+  "abstract": "  Online collision-free trajectory generation within a shared workspace is fundamental for most multi-robot applications. However, many widely-used methods based on model predictive control (MPC) lack theoretical guarantees on the feasibility of underlying optimization. Furthermore, when applied in a distributed manner without a central coordinator, deadlocks often occur where several robots block each other indefinitely. Whereas heuristic methods such as introducing random perturbations exist, no profound analyses are given to validate these measures. Towards this end, we propose a systematic method called infinite-horizon model predictive control with deadlock resolution. The MPC is formulated as a convex optimization over the proposed modified buffered Voronoi with warning band. Based on this formulation, the condition of deadlocks is formally analyzed and proven to be analogous to a force equilibrium. A detection-resolution scheme is proposed, which can effectively detect deadlocks online before they even happen. Once detected, it utilizes an adaptive resolution scheme to resolve deadlocks, under which no stable deadlocks can exist under minor conditions. In addition, the proposed planning algorithm ensures recursive feasibility of the underlying optimization at each time step under both input and model constraints, is concurrent for all robots and requires only local communication. Comprehensive simulation and experiment studies are conducted over large-scale multi-robot systems. Significant improvements on success rate are reported, in comparison with other state-of-the-art methods and especially in crowded and high-speed scenarios. "
+}

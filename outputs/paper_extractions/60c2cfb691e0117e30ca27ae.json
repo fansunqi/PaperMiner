@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Private model trading in federated learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FL-Market",
+    "Locally private model marketplace",
+    "Federated learning",
+    "Local differential privacy",
+    "Deep learning-empowered auction mechanism",
+    "Optimal aggregation mechanism"
+  ],
+  "results": [
+    "Maximizes global gradient's accuracy",
+    "Optimizes model buyers' utility",
+    "Effectiveness verified by experiments"
+  ],
+  "paper_id": "60c2cfb691e0117e30ca27ae",
+  "title": "FL-Market: Trading Private Models in Federated Learning",
+  "abstract": "  The difficulty in acquiring a sufficient amount of training data is a major bottleneck for machine learning (ML) based data analytics. Recently, commoditizing ML models has been proposed as an economical and moderate solution to ML-oriented data acquisition. However, existing model marketplaces assume that the broker can access data owners' private training data, which may not be realistic in practice. In this paper, to promote trustworthy data acquisition for ML tasks, we propose FL-Market, a locally private model marketplace that protects privacy not only against model buyers but also against the untrusted broker. FL-Market decouples ML from the need to centrally gather training data on the broker's side using federated learning, an emerging privacy-preserving ML paradigm in which data owners collaboratively train an ML model by uploading local gradients (to be aggregated into a global gradient for model updating). Then, FL-Market enables data owners to locally perturb their gradients by local differential privacy and thus further prevents privacy risks. To drive FL-Market, we propose a deep learning-empowered auction mechanism for intelligently deciding the local gradients' perturbation levels and an optimal aggregation mechanism for aggregating the perturbed gradients. Our auction and aggregation mechanisms can jointly maximize the global gradient's accuracy, which optimizes model buyers' utility. Our experiments verify the effectiveness of the proposed mechanisms. "
+}

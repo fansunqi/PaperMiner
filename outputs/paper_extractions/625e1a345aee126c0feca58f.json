@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Modal Few-Shot Object Detection"
+  ],
+  "datasets": [
+    "multiple few-shot object detection benchmarks"
+  ],
+  "methods": [
+    "Meta-Learning-Based Cross-Modal Prompting",
+    "Combining few-shot visual classifier and text classifier",
+    "Knowledge distillation for soft prompt generator"
+  ],
+  "results": [
+    "Achieving promising results on multiple benchmarks"
+  ],
+  "paper_id": "625e1a345aee126c0feca58f",
+  "title": "Multi-Modal Few-Shot Object Detection with Meta-Learning-Based\n  Cross-Modal Prompting",
+  "abstract": "  We study multi-modal few-shot object detection (FSOD) in this paper, using both few-shot visual examples and class semantic information for detection, which are complementary to each other by definition. Most of the previous works on multi-modal FSOD are fine-tuning-based which are inefficient for online applications. Moreover, these methods usually require expertise like class names to extract class semantic embedding, which are hard to get for rare classes. Our approach is motivated by the high-level conceptual similarity of (metric-based) meta-learning and prompt-based learning to learn generalizable few-shot and zero-shot object detection models respectively without fine-tuning. Specifically, we combine the few-shot visual classifier and text classifier learned via meta-learning and prompt-based learning respectively to build the multi-modal classifier and detection models. In addition, to fully exploit the pre-trained language models, we propose meta-learning-based cross-modal prompting to generate soft prompts for novel classes present in few-shot visual examples, which are then used to learn the text classifier. Knowledge distillation is introduced to learn the soft prompt generator without using human prior knowledge of class names, which may not be available for rare classes. Our insight is that the few-shot support images naturally include related context information and semantics of the class. We comprehensively evaluate the proposed multi-modal FSOD models on multiple few-shot object detection benchmarks, achieving promising results. "
+}

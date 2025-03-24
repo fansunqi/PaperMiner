@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/aliyun/dro-sfm"
+  ],
+  "tasks": [
+    "Video to Depth (V2D)"
+  ],
+  "datasets": [
+    "KITTI",
+    "ScanNet"
+  ],
+  "methods": [
+    "Deep Recurrent Optimizer",
+    "Recurrent neural networks",
+    "Alternately updates depth and camera poses",
+    "Gated recurrent units"
+  ],
+  "results": [
+    "Outperforms previous methods",
+    "More efficient in computation and memory than cost-volume-based methods",
+    "Self-supervised method outperforms previous supervised methods on KITTI and ScanNet"
+  ],
+  "paper_id": "605c6c2691e011ed6f938227",
+  "title": "DRO: Deep Recurrent Optimizer for Video to Depth",
+  "abstract": "  There are increasing interests of studying the video-to-depth (V2D) problem with machine learning techniques. While earlier methods directly learn a mapping from images to depth maps and camera poses, more recent works enforce multi-view geometry constraints through optimization embedded in the learning framework. This paper presents a novel optimization method based on recurrent neural networks to further exploit the potential of neural networks in V2D. Specifically, our neural optimizer alternately updates the depth and camera poses through iterations to minimize a feature-metric cost, and two gated recurrent units iteratively improve the results by tracing historical information. Extensive experimental results demonstrate that our method outperforms previous methods and is more efficient in computation and memory consumption than cost-volume-based methods. In particular, our self-supervised method outperforms previous supervised methods on the KITTI and ScanNet datasets. Our source code is available at https://github.com/aliyun/dro-sfm. "
+}

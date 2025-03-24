@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/ISTAustria-CVML/FLEA"
+  ],
+  "tasks": [
+    "Fairness-aware learning",
+    "Robust multisource learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FLEA (filtering-based algorithm)"
+  ],
+  "results": [
+    "FLEA makes fair learning methods robust against unreliable training data",
+    "Formal proof: FLEA protects against corruptions if affected data sources < 50%"
+  ],
+  "paper_id": "60d43f8f91e0112ca5d18a97",
+  "title": "FLEA: Provably Robust Fair Multisource Learning from Unreliable Training\n  Data",
+  "abstract": "  Fairness-aware learning aims at constructing classifiers that not only make accurate predictions, but also do not discriminate against specific groups. It is a fast-growing area of machine learning with far-reaching societal impact. However, existing fair learning methods are vulnerable to accidental or malicious artifacts in the training data, which can cause them to unknowingly produce unfair classifiers. In this work we address the problem of fair learning from unreliable training data in the robust multisource setting, where the available training data comes from multiple sources, a fraction of which might not be representative of the true data distribution. We introduce FLEA, a filtering-based algorithm that identifies and suppresses those data sources that would have a negative impact on fairness or accuracy if they were used for training. As such, FLEA is not a replacement of prior fairness-aware learning methods but rather an augmentation that makes any of them robust against unreliable training data. We show the effectiveness of our approach by a diverse range of experiments on multiple datasets. Additionally, we prove formally that -- given enough data -- FLEA protects the learner against corruptions as long as the fraction of affected data sources is less than half. Our source code and documentation are available at https://github.com/ISTAustria-CVML/FLEA. "
+}

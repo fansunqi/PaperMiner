@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating causal effects with unobserved confounding"
+  ],
+  "datasets": [
+    "Synthetic data"
+  ],
+  "methods": [
+    "Causal reduction method",
+    "Single latent confounder replacement",
+    "Bounds between observational and interventional distributions for discrete variables",
+    "Equality constraints for linear-Gaussian model",
+    "Normalizing flows for general continuous setting"
+  ],
+  "results": [
+    "Improved accuracy of causal effect estimates with observational data in unbalanced samples",
+    "Reduced number of interventional samples when adding observational training samples without sacrificing accuracy"
+  ],
+  "paper_id": "6047852b91e0116b67c792ec",
+  "title": "Combining Interventional and Observational Data Using Causal Reductions",
+  "abstract": "  Unobserved confounding is one of the main challenges when estimating causal effects. We propose a causal reduction method that, given a causal model, replaces an arbitrary number of possibly high-dimensional latent confounders with a single latent confounder that takes values in the same space as the treatment variable, without changing the observational and interventional distributions the causal model entails. This allows us to estimate the causal effect in a principled way from combined data without relying on the common but often unrealistic assumption that all confounders have been observed. We apply our causal reduction in three different settings. In the first setting, we assume the treatment and outcome to be discrete. The causal reduction then implies bounds between the observational and interventional distributions that can be exploited for estimation purposes. In certain cases with highly unbalanced observational samples, the accuracy of the causal effect estimate can be improved by incorporating observational data. Second, for continuous variables and assuming a linear-Gaussian model, we derive equality constraints for the parameters of the observational and interventional distributions. Third, for the general continuous setting (possibly nonlinear and non-Gaussian), we parameterize the reduced causal model using normalizing flows, a flexible class of easily invertible nonlinear transformations. We perform a series of experiments on synthetic data and find that in several cases the number of interventional samples can be reduced when adding observational training samples without sacrificing accuracy. "
+}

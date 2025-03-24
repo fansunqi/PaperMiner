@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bi-level trajectory optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimization-based dynamics representation",
+    "Interior-point method for constrained dynamics evaluation",
+    "Implicit differentiation for smooth gradients",
+    "Iterative LQR for trajectory optimization"
+  ],
+  "results": [
+    "Modeling systems from locomotion, aerospace, and manipulation domains",
+    "Efficient evaluation of constrained dynamics",
+    "Synthesis of trajectories for complex systems"
+  ],
+  "paper_id": "613ec1295244ab9dcb8168d3",
+  "title": "Trajectory Optimization with Optimization-Based Dynamics",
+  "abstract": "  We present a framework for bi-level trajectory optimization in which a system's dynamics are encoded as the solution to a constrained optimization problem and smooth gradients of this lower-level problem are passed to an upper-level trajectory optimizer. This optimization-based dynamics representation enables constraint handling, additional variables, and non-smooth behavior to be abstracted away from the upper-level optimizer, and allows classical unconstrained optimizers to synthesize trajectories for more complex systems. We provide an interior-point method for efficient evaluation of constrained dynamics and utilize implicit differentiation to compute smooth gradients of this representation. We demonstrate the framework by modeling systems from locomotion, aerospace, and manipulation domains including: acrobot with joint limits, cart-pole subject to Coulomb friction, Raibert hopper, rocket landing with thrust limits, and planar-push task with optimization-based dynamics and then optimize trajectories using iterative LQR. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Incremental Broad Learning System on Added Inputs"
+  ],
+  "datasets": [
+    "MNIST",
+    "NORB"
+  ],
+  "methods": [
+    "Recursive BLS",
+    "Square-root BLS"
+  ],
+  "results": [
+    "Both proposed ridge solutions improve testing accuracy of original BLS",
+    "Improvement more significant as lambda increases",
+    "Recursive BLS speedup: 4.41 (p > k), 2.80 (p < k)",
+    "Square-root BLS speedup: 6.92 (p > k), 1.59 (p < k)"
+  ],
+  "paper_id": "5dd3bf513a55ac1bdd46d881",
+  "title": "Two Efficient Ridge Solutions for the Incremental Broad Learning System\n  on Added Inputs",
+  "abstract": "  This paper proposes the recursive and square-root BLS algorithms to improve the original BLS for new added inputs, which utilize the inverse and inverse Cholesky factor of the Hermitian matrix in the ridge inverse, respectively, to update the ridge solution. The recursive BLS updates the inverse by the matrix inversion lemma, while the square-root BLS updates the upper-triangular inverse Cholesky factor by multiplying it with an upper-triangular intermediate matrix. When the added p training samples are more than the total k nodes in the network, i.e., p>k, the inverse of a sum of matrices is applied to take a smaller matrix inversion or inverse Cholesky factorization. For the distributed BLS with data-parallelism, we introduce the parallel implementation of the square-root BLS, which is deduced from the parallel implementation of the inverse Cholesky factorization.   The original BLS based on the generalized inverse with the ridge regression assumes the ridge parameter lamda->0 in the ridge inverse. When lambda->0 is not satisfied, the numerical experiments on the MNIST and NORB datasets show that both the proposed ridge solutions improve the testing accuracy of the original BLS, and the improvement becomes more significant as lambda is bigger. On the other hand, compared to the original BLS, both the proposed BLS algorithms theoretically require less complexities, and are significantly faster in the simulations on the MNIST dataset. The speedups in total training time of the recursive and square-root BLS algorithms over the original BLS are 4.41 and 6.92 respectively when p > k, and are 2.80 and 1.59 respectively when p < k. "
+}

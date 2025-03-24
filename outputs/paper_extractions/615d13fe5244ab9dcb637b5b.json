@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Learning continuous-time dynamics models for robotics"
+  ],
+  "datasets": "None",
+  "methods": [
+    "Physics-inspired deep networks",
+    "Deep Lagrangian Networks (DeLaN)",
+    "Incorporating Lagrangian mechanics"
+  ],
+  "results": [
+    "Models guarantee physically plausible dynamics",
+    "Better models than standard deep networks",
+    "Capture underlying structure of dynamics",
+    "Applicable to physical systems for real-time control"
+  ],
+  "paper_id": "615d13fe5244ab9dcb637b5b",
+  "title": "Combining Physics and Deep Learning to learn Continuous-Time Dynamics\n  Models",
+  "abstract": "  Deep learning has been widely used within learning algorithms for robotics. One disadvantage of deep networks is that these networks are black-box representations. Therefore, the learned approximations ignore the existing knowledge of physics or robotics. Especially for learning dynamics models, these black-box models are not desirable as the underlying principles are well understood and the standard deep networks can learn dynamics that violate these principles. To learn dynamics models with deep networks that guarantee physically plausible dynamics, we introduce physics-inspired deep networks that combine first principles from physics with deep learning. We incorporate Lagrangian mechanics within the model learning such that all approximated models adhere to the laws of physics and conserve energy. Deep Lagrangian Networks (DeLaN) parametrize the system energy using two networks. The parameters are obtained by minimizing the squared residual of the Euler-Lagrange differential equation. Therefore, the resulting model does not require specific knowledge of the individual system, is interpretable, and can be used as a forward, inverse, and energy model. Previously these properties were only obtained when using system identification techniques that require knowledge of the kinematic structure. We apply DeLaN to learning dynamics models and apply these models to control simulated and physical rigid body systems. The results show that the proposed approach obtains dynamics models that can be applied to physical systems for real-time control. Compared to standard deep networks, the physics-inspired models learn better models and capture the underlying structure of the dynamics. "
+}

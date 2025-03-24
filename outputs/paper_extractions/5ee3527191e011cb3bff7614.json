@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Modeling human driving behavior"
+  ],
+  "datasets": [
+    "NGSIM"
+  ],
+  "methods": [
+    "Generative Adversarial Imitation Learning (GAIL)",
+    "Parameter-Sharing GAIL (PS-GAIL)",
+    "Reward Augmented Imitation Learning (RAIL)",
+    "Burn-InfoGAIL"
+  ],
+  "results": [
+    "Successfully model highway driving behavior",
+    "Accurately replicate human demonstrations",
+    "Generate realistic emergent behavior in traffic flow"
+  ],
+  "paper_id": "5ee3527191e011cb3bff7614",
+  "title": "Modeling Human Driving Behavior through Generative Adversarial Imitation\n  Learning",
+  "abstract": "  An open problem in autonomous vehicle safety validation is building reliable models of human driving behavior in simulation. This work presents an approach to learn neural driving policies from real world driving demonstration data. We model human driving as a sequential decision making problem that is characterized by non-linearity and stochasticity, and unknown underlying cost functions. Imitation learning is an approach for generating intelligent behavior when the cost function is unknown or difficult to specify. Building upon work in inverse reinforcement learning (IRL), Generative Adversarial Imitation Learning (GAIL) aims to provide effective imitation even for problems with large or continuous state and action spaces, such as modeling human driving. This article describes the use of GAIL for learning-based driver modeling. Because driver modeling is inherently a multi-agent problem, where the interaction between agents needs to be modeled, this paper describes a parameter-sharing extension of GAIL called PS-GAIL to tackle multi-agent driver modeling. In addition, GAIL is domain agnostic, making it difficult to encode specific knowledge relevant to driving in the learning process. This paper describes Reward Augmented Imitation Learning (RAIL), which modifies the reward signal to provide domain-specific knowledge to the agent. Finally, human demonstrations are dependent upon latent factors that may not be captured by GAIL. This paper describes Burn-InfoGAIL, which allows for disentanglement of latent variability in demonstrations. Imitation learning experiments are performed using NGSIM, a real-world highway driving dataset. Experiments show that these modifications to GAIL can successfully model highway driving behavior, accurately replicating human demonstrations and generating realistic, emergent behavior in the traffic flow arising from the interaction between driving agents. "
+}

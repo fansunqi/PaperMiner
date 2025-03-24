@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Omega-Regular Games under Strong Transition Fairness"
+  ],
+  "datasets": [
+    "synthetic and real benchmarks"
+  ],
+  "methods": [
+    "Fixpoint algorithms for two-player games",
+    "New type of predecessor operator",
+    "3-nested fixpoint algorithm for GR(1) specifications",
+    "Direct symbolic algorithm for qualitative winning in stochastic omega-regular games"
+  ],
+  "results": [
+    "Complexity of new algorithm for Rabin games: O(n^{k+2}k!)",
+    "GR(1) specifications solved with 3-nested fixpoint algorithm",
+    "Symbolic algorithms for (generalized) Rabin, parity, and GR(1) objectives",
+    "Algorithm runs in O(n^{k+2}k!) symbolic steps for qualitative winning in stochastic omega-regular games",
+    "Scalable, parallelizable, and outperforms previous algorithms by orders of magnitude"
+  ],
+  "paper_id": "620c6b6a5aee126c0fe295c2",
+  "title": "Fast Symbolic Algorithms for Omega-Regular Games under Strong Transition\n  Fairness",
+  "abstract": "  We consider fixpoint algorithms for two-player games on graphs with $\\omega$-regular winning conditions, where the environment is constrained by a strong transition fairness assumption. Strong transition fairness is a widely occurring special case of strong fairness, which requires that any execution is strongly fair with respect to a specified set of live edges: whenever the source vertex of a live edge is visited infinitely often along a play, the edge itself is traversed infinitely often along the play as well. We show that, surprisingly, strong transition fairness retains the algorithmic characteristics of the fixpoint algorithms for $\\omega$-regular games -- the new algorithms have the same alternation depth as the classical algorithms but invoke a new type of predecessor operator. For Rabin games with $k$ pairs, the complexity of the new algorithm is $O(n^{k+2}k!)$ symbolic steps, which is independent of the number of live edges in the strong transition fairness assumption. Further, we show that GR(1) specifications with strong transition fairness assumptions can be solved with a 3-nested fixpoint algorithm, same as the usual algorithm. In contrast, strong fairness necessarily requires increasing the alternation depth depending on the number of fairness assumptions. We get symbolic algorithms for (generalized) Rabin, parity and GR(1) objectives under strong transition fairness assumptions as well as a direct symbolic algorithm for qualitative winning in stochastic $\\omega$-regular games that runs in $O(n^{k+2}k!)$ symbolic steps, improving the state of the art. Finally, we have implemented a BDD-based synthesis engine based on our algorithm. We show on a set of synthetic and real benchmarks that our algorithm is scalable, parallelizable, and outperforms previous algorithms by orders of magnitude. "
+}

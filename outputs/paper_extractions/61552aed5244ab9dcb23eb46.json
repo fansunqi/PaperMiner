@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simulation-based inference"
+  ],
+  "datasets": [
+    "Synthetic and real-world examples"
+  ],
+  "methods": [
+    "Reversible Gromov-Monge (RGM) sampler",
+    "RGM distance",
+    "Transform samplers"
+  ],
+  "results": [
+    "RGM equals the classic Gromov-Wasserstein distance under mild conditions",
+    "Induces bias towards strong isomorphism",
+    "Statistical rate of convergence, representation, and optimization studied"
+  ],
+  "paper_id": "61552aed5244ab9dcb23eb46",
+  "title": "Reversible Gromov-Monge Sampler for Simulation-Based Inference",
+  "abstract": "  This paper introduces a new simulation-based inference procedure to model and sample from multi-dimensional probability distributions given access to i.i.d.\\ samples, circumventing the usual approaches of explicitly modeling the density function or designing Markov chain Monte Carlo. Motivated by the seminal work on distance and isomorphism between metric measure spaces, we propose a new notion called the Reversible Gromov-Monge (RGM) distance and study how RGM can be used to design new transform samplers to perform simulation-based inference. Our RGM sampler can also estimate optimal alignments between two heterogeneous metric measure spaces $(\\cX, \\mu, c_{\\cX})$ and $(\\cY, \\nu, c_{\\cY})$ from empirical data sets, with estimated maps that approximately push forward one measure $\\mu$ to the other $\\nu$, and vice versa. We study the analytic properties of the RGM distance and derive that under mild conditions, RGM equals the classic Gromov-Wasserstein distance. Curiously, drawing a connection to Brenier's polar factorization, we show that the RGM sampler induces bias towards strong isomorphism with proper choices of $c_{\\cX}$ and $c_{\\cY}$. Statistical rate of convergence, representation, and optimization questions regarding the induced sampler are studied. Synthetic and real-world examples showcasing the effectiveness of the RGM sampler are also demonstrated. "
+}

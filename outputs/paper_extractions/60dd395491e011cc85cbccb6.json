@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Facial Expression Recognition",
+    "Domain Generalizability Evaluation"
+  ],
+  "datasets": [
+    "Twelve datasets (six in-lab and six in-the-wild)"
+  ],
+  "methods": [
+    "Transfer Learning",
+    "Domain Generalization",
+    "Round-robin-style experiments",
+    "Multi-source experiments"
+  ],
+  "results": [
+    "Single- and multi-source domain generalization accuracy is modest",
+    "Best multi-source setting avg. accuracy: 65.6%",
+    "Avg. drop from within-corpus performance: 10.8 percentage points"
+  ],
+  "paper_id": "60dd395491e011cc85cbccb6",
+  "title": "Critically examining the Domain Generalizability of Facial Expression\n  Recognition models",
+  "abstract": "  Facial Expression Recognition is a commercially-important application, but one under-appreciated limitation is that such applications require making predictions on out-of-sample distributions, where target images have different properties from the images the model was trained on. How well -- or how badly -- do facial expression recognition models do on unseen target domains? We provide a systematic and critical evaluation of transfer learning -- specifically, domain generalization -- in facial expression recognition. Using a state-of-the-art model with twelve datasets (six collected in-lab and six ``in-the-wild\"), we conduct extensive round-robin-style experiments to evaluate classification accuracies when given new data from an unseen dataset. We also perform multi-source experiments to examine a model's ability to generalize from multiple source datasets, including (i) within-setting (e.g., lab to lab), (ii) cross-setting (e.g., in-the-wild to lab), and (iii) leave-one-out settings. Finally, we compare our results with three commercially-available software. We find sobering results: the accuracy of single- and multi-source domain generalization is only modest. Even for the best-performing multi-source settings, we observe average classification accuracies of 65.6% (range: 34.6%-88.6%; chance: 14.3%), corresponding to an average drop of 10.8 percentage points from the within-corpus classification performance (mean: 76.4%). We discuss the need for regular, systematic investigations into the generalizability of affective computing models and applications. "
+}

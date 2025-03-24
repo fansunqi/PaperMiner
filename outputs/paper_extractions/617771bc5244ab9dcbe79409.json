@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph learning",
+    "Graphical model selection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Minipatch Graph (MPGraph) estimator",
+    "Hard thresholding",
+    "Ensemble of tiny random subsets (minipatches)",
+    "Stability-based hyperparameter tuning"
+  ],
+  "results": [
+    "MPGraph is more statistically accurate and extensively faster than BigQUIC",
+    "Achieves graph selection consistency under weaker assumptions than Graphical Lasso"
+  ],
+  "paper_id": "617771bc5244ab9dcbe79409",
+  "title": "Fast and Accurate Graph Learning for Huge Data via Minipatch Ensembles",
+  "abstract": "  Gaussian graphical models provide a powerful framework for uncovering conditional dependence relationships between sets of nodes; they have found applications in a wide variety of fields including sensor and communication networks, physics, finance, and computational biology. Often, one observes data on the nodes and the task is to learn the graph structure, or perform graphical model selection. While this is a well-studied problem with many popular techniques, there are typically three major practical challenges: i) many existing algorithms become computationally intractable in huge-data settings with tens of thousands of nodes; ii) the need for separate data-driven hyperparameter tuning considerably adds to the computational burden; iii) the statistical accuracy of selected edges often deteriorates as the dimension and/or the complexity of the underlying graph structures increase. We tackle these problems by developing the novel Minipatch Graph (MPGraph) estimator. Our approach breaks up the huge graph learning problem into many smaller problems by creating an ensemble of tiny random subsets of both the observations and the nodes, termed minipatches. We then leverage recent advances that use hard thresholding to solve the latent variable graphical model problem to consistently learn the graph on each minipatch. Our approach is computationally fast, embarrassingly parallelizable, memory efficient, and has integrated stability-based hyperparamter tuning. Additionally, we prove that under weaker assumptions than that of the Graphical Lasso, our MPGraph estimator achieves graph selection consistency. We compare our approach to state-of-the-art computational approaches for Gaussian graphical model selection including the BigQUIC algorithm, and empirically demonstrate that our approach is not only more statistically accurate but also extensively faster for huge graph learning problems. "
+}

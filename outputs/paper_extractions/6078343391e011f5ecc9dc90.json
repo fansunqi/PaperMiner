@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parameter tuning and control in evolutionary algorithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Choosing all parameter values randomly from a power-law distribution"
+  ],
+  "results": [
+    "Imitates simple hill-climbers with the same asymptotic runtime on problems like OneMax, LeadingOnes, or Minimum Spanning Tree",
+    "Very efficient on jump functions",
+    "Performance guarantee comparable to the best known for static parameters",
+    "Asymptotically better performance than any static parameter choice for constant jump size k",
+    "Empirical study confirms theoretical runtime results"
+  ],
+  "paper_id": "6078343391e011f5ecc9dc90",
+  "title": "Lazy Parameter Tuning and Control: Choosing All Parameters Randomly From\n  a Power-Law Distribution",
+  "abstract": "  Most evolutionary algorithms have multiple parameters and their values drastically affect the performance. Due to the often complicated interplay of the parameters, setting these values right for a particular problem (parameter tuning) is a challenging task. This task becomes even more complicated when the optimal parameter values change significantly during the run of the algorithm since then a dynamic parameter choice (parameter control) is necessary.   In this work, we propose a lazy but effective solution, namely choosing all parameter values (where this makes sense) in each iteration randomly from a suitably scaled power-law distribution. To demonstrate the effectiveness of this approach, we perform runtime analyses of the $(1+(\\lambda,\\lambda))$ genetic algorithm with all three parameters chosen in this manner. We show that this algorithm on the one hand can imitate simple hill-climbers like the $(1+1)$ EA, giving the same asymptotic runtime on problems like OneMax, LeadingOnes, or Minimum Spanning Tree. On the other hand, this algorithm is also very efficient on jump functions, where the best static parameters are very different from those necessary to optimize simple problems. We prove a performance guarantee that is comparable to the best performance known for static parameters. For the most interesting case that the jump size $k$ is constant, we prove that our performance is asymptotically better than what can be obtained with any static parameter choice. We complement our theoretical results with a rigorous empirical study confirming what the asymptotic runtime results suggest. "
+}

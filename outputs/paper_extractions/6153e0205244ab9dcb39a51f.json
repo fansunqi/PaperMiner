@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multivariate time series forecasting"
+  ],
+  "datasets": [
+    "traffic forecasting",
+    "electricity demand",
+    "weather prediction"
+  ],
+  "methods": [
+    "Long-Range Transformers",
+    "Spatiotemporal sequence formulation",
+    "Spacetimeformer"
+  ],
+  "results": [
+    "Competitive results on benchmarks"
+  ],
+  "paper_id": "6153e0205244ab9dcb39a51f",
+  "title": "Long-Range Transformers for Dynamic Spatiotemporal Forecasting",
+  "abstract": "  Multivariate time series forecasting focuses on predicting future values based on historical context. State-of-the-art sequence-to-sequence models rely on neural attention between timesteps, which allows for temporal learning but fails to consider distinct spatial relationships between variables. In contrast, methods based on graph neural networks explicitly model variable relationships. However, these methods often rely on predefined graphs that cannot change over time and perform separate spatial and temporal updates without establishing direct connections between each variable at every timestep. Our work addresses these problems by translating multivariate forecasting into a \"spatiotemporal sequence\" formulation where each Transformer input token represents the value of a single variable at a given time. Long-Range Transformers can then learn interactions between space, time, and value information jointly along this extended sequence. Our method, which we call Spacetimeformer, achieves competitive results on benchmarks from traffic forecasting to electricity demand and weather prediction while learning spatiotemporal relationships purely from data. "
+}

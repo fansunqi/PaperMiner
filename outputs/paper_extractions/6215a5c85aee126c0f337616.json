@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Scene representation learning",
+    "Video moderation",
+    "Video search",
+    "Video recommendation"
+  ],
+  "datasets": [
+    "LVU",
+    "newly collected movie dataset"
+  ],
+  "methods": [
+    "Contrastive learning using movie metadata",
+    "Movie similarity measure"
+  ],
+  "results": [
+    "7.9% average improvement on seven classification tasks in LVU",
+    "9.7% improvement on two regression tasks in LVU",
+    "Generalizability on video moderation tasks"
+  ],
+  "paper_id": "6215a5c85aee126c0f337616",
+  "title": "Movies2Scenes: Using Movie Metadata to Learn Scene Representation",
+  "abstract": "  Understanding scenes in movies is crucial for a variety of applications such as video moderation, search, and recommendation. However, labeling individual scenes is a time-consuming process. In contrast, movie level metadata (e.g., genre, synopsis, etc.) regularly gets produced as part of the film production process, and is therefore significantly more commonly available. In this work, we propose a novel contrastive learning approach that uses movie metadata to learn a general-purpose scene representation. Specifically, we use movie metadata to define a measure of movie similarity, and use it during contrastive learning to limit our search for positive scene-pairs to only the movies that are considered similar to each other. Our learned scene representation consistently outperforms existing state-of-the-art methods on a diverse set of tasks evaluated using multiple benchmark datasets. Notably, our learned representation offers an average improvement of 7.9% on the seven classification tasks and 9.7% improvement on the two regression tasks in LVU dataset. Furthermore, using a newly collected movie dataset, we present comparative results of our scene representation on a set of video moderation tasks to demonstrate its generalizability on previously less explored tasks. "
+}

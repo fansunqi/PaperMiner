@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bias propagation in on-device machine learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reliability bias quantification",
+    "Empirical experiments on keyword spotting",
+    "Model training design choices analysis",
+    "Model optimization choices analysis"
+  ],
+  "results": [
+    "Design choices in training and optimization lead to disparate performance across gender groups",
+    "Strategies suggested for mitigating bias in on-device ML"
+  ],
+  "paper_id": "61e8d3175244ab9dcb58433e",
+  "title": "Tiny, always-on and fragile: Bias propagation through design choices in\n  on-device machine learning workflows",
+  "abstract": "  Billions of distributed, heterogeneous and resource constrained IoT devices deploy on-device machine learning (ML) for private, fast and offline inference on personal data. On-device ML is highly context dependent, and sensitive to user, usage, hardware and environment attributes. This sensitivity and the propensity towards bias in ML makes it important to study bias in on-device settings. Our study is one of the first investigations of bias in this emerging domain, and lays important foundations for building fairer on-device ML. We apply a software engineering lens, investigating the propagation of bias through design choices in on-device ML workflows. We first identify reliability bias as a source of unfairness and propose a measure to quantify it. We then conduct empirical experiments for a keyword spotting task to show how complex and interacting technical design choices amplify and propagate reliability bias. Our results validate that design choices made during model training, like the sample rate and input feature type, and choices made to optimize models, like light-weight architectures, the pruning learning rate and pruning sparsity, can result in disparate predictive performance across male and female groups. Based on our findings we suggest low effort strategies for engineers to mitigate bias in on-device ML. "
+}

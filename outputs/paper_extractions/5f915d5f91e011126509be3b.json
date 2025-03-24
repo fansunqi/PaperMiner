@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continual learning in medical image segmentation"
+  ],
+  "datasets": [
+    "prostate",
+    "hippocampus",
+    "right ventricle"
+  ],
+  "methods": [
+    "UNEG multi-model benchmark",
+    "separate segmentation and autoencoder networks",
+    "full-resolution nnU-Net",
+    "reconstruction error for segmenter selection"
+  ],
+  "results": [
+    "UNEG outperforms several continual learning methods"
+  ],
+  "paper_id": "5f915d5f91e011126509be3b",
+  "title": "What is Wrong with Continual Learning in Medical Image Segmentation?",
+  "abstract": "  Continual learning protocols are attracting increasing attention from the medical imaging community. In continual environments, datasets acquired under different conditions arrive sequentially; and each is only available for a limited period of time. Given the inherent privacy risks associated with medical data, this setup reflects the reality of deployment for deep learning diagnostic radiology systems. Many techniques exist to learn continuously for image classification, and several have been adapted to semantic segmentation. Yet most struggle to accumulate knowledge in a meaningful manner. Instead, they focus on preventing the problem of catastrophic forgetting, even when this reduces model plasticity and thereon burdens the training process. This puts into question whether the additional overhead of knowledge preservation is worth it - particularly for medical image segmentation, where computation requirements are already high - or if maintaining separate models would be a better solution. We propose UNEG, a simple and widely applicable multi-model benchmark that maintains separate segmentation and autoencoder networks for each training stage. The autoencoder is built from the same architecture as the segmentation network, which in our case is a full-resolution nnU-Net, to bypass any additional design decisions. During inference, the reconstruction error is used to select the most appropriate segmenter for each test image. Open this concept, we develop a fair evaluation scheme for different continual learning settings that moves beyond the prevention of catastrophic forgetting. Our results across three regions of interest (prostate, hippocampus, and right ventricle) show that UNEG outperforms several continual learning methods, reinforcing the need for strong baselines in continual learning research. "
+}

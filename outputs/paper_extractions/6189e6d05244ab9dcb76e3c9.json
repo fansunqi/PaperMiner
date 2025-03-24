@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Named entity recognition (NER)"
+  ],
+  "datasets": [
+    "Three datasets from different domains"
+  ],
+  "methods": [
+    "AL sentence query evaluation functions focusing on potential positive tokens",
+    "Sentence-based and token-based cost evaluation strategies",
+    "Data-driven normalization approach for sentence length"
+  ],
+  "results": [
+    "Reduces the number of annotated tokens",
+    "Achieves better or comparable prediction performance with conventional methods"
+  ],
+  "paper_id": "6189e6d05244ab9dcb76e3c9",
+  "title": "Focusing on Potential Named Entities During Active Label Acquisition",
+  "abstract": "  Named entity recognition (NER) aims to identify mentions of named entities in an unstructured text and classify them into predefined named entity classes. While deep learning-based pre-trained language models help to achieve good predictive performances in NER, many domain-specific NER applications still call for a substantial amount of labeled data. Active learning (AL), a general framework for the label acquisition problem, has been used for NER tasks to minimize the annotation cost without sacrificing model performance. However, the heavily imbalanced class distribution of tokens introduces challenges in designing effective AL querying methods for NER. We propose several AL sentence query evaluation functions that pay more attention to potential positive tokens, and evaluate these proposed functions with both sentence-based and token-based cost evaluation strategies. We also propose a better data-driven normalization approach to penalize sentences that are too long or too short. Our experiments on three datasets from different domains reveal that the proposed approach reduces the number of annotated tokens while achieving better or comparable prediction performance with conventional methods. "
+}

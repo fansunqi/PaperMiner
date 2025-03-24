@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimizing blackbox functions over large hybrid search spaces"
+  ],
+  "datasets": [
+    "synthetic benchmarks",
+    "popular RL benchmarks"
+  ],
+  "methods": [
+    "ES-ENAS",
+    "sample-efficient smoothed gradient techniques",
+    "combinatorial optimizers",
+    "one-shot or supernet paradigm"
+  ],
+  "results": [
+    "significantly more sample efficiency"
+  ],
+  "paper_id": "6007f91091e011d056eee6f3",
+  "title": "ES-ENAS: Efficient Evolutionary Optimization for Large Hybrid Search\n  Spaces",
+  "abstract": "  In this paper, we approach the problem of optimizing blackbox functions over large hybrid search spaces consisting of both combinatorial and continuous parameters. We demonstrate that previous evolutionary algorithms which rely on mutation-based approaches, while flexible over combinatorial spaces, suffer from a curse of dimensionality in high dimensional continuous spaces both theoretically and empirically, which thus limits their scope over hybrid search spaces as well. In order to combat this curse, we propose ES-ENAS, a simple and modular joint optimization procedure combining the class of sample-efficient smoothed gradient techniques, commonly known as Evolutionary Strategies (ES), with combinatorial optimizers in a highly scalable and intuitive way, inspired by the one-shot or supernet paradigm introduced in Efficient Neural Architecture Search (ENAS). By doing so, we achieve significantly more sample efficiency, which we empirically demonstrate over synthetic benchmarks, and are further able to apply ES-ENAS for architecture search over popular RL benchmarks. "
+}

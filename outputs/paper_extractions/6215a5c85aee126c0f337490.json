@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Inequality Constrained Stochastic Nonlinear Optimization"
+  ],
+  "datasets": [
+    "CUTEst test set",
+    "constrained logistic regression problems"
+  ],
+  "methods": [
+    "active-set stochastic sequential quadratic programming (StoSQP)",
+    "differentiable exact augmented Lagrangian",
+    "adaptive penalty parameters",
+    "stochastic line search"
+  ],
+  "results": [
+    "KKT residuals converge to zero almost surely",
+    "improved sample complexity on the objective Hessian"
+  ],
+  "paper_id": "6215a5c85aee126c0f337490",
+  "title": "Inequality Constrained Stochastic Nonlinear Optimization via Active-Set\n  Sequential Quadratic Programming",
+  "abstract": "  We study nonlinear optimization problems with a stochastic objective and deterministic equality and inequality constraints, which emerge in numerous applications including finance, manufacturing, power systems and, recently, deep neural networks. We propose an active-set stochastic sequential quadratic programming (StoSQP) algorithm that utilizes a differentiable exact augmented Lagrangian as the merit function. The algorithm adaptively selects the penalty parameters of the augmented Lagrangian and performs a stochastic line search to decide the stepsize. The global convergence is established: for any initialization, the KKT residuals converge to zero almost surely. Our algorithm and analysis further develop the prior work of Na et al., (2022). Specifically, we allow nonlinear inequality constraints without requiring the strict complementary condition; refine some of the designs in Na et al., (2022) such as the feasibility error condition and the monotonically increasing sample size; strengthen the global convergence guarantee; and improve the sample complexity on the objective Hessian. We demonstrate the performance of the designed algorithm on a subset of nonlinear problems collected in CUTEst test set and on constrained logistic regression problems. "
+}

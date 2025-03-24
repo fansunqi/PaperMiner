@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding deviated behaviors in compressed DNN models for image classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DFLARE: search-based, black-box testing technique",
+    "Markov Chains",
+    "Metropolis-Hasting algorithm",
+    "novel fitness function"
+  ],
+  "results": [
+    "DFLARE outperforms the baseline in efficacy and efficiency",
+    "Can repair up to 48.48% deviated behaviors in image classification tasks"
+  ],
+  "paper_id": "61aed0d85244ab9dcb3a713f",
+  "title": "Finding Deviated Behaviors of the Compressed DNN Models for Image\n  Classifications",
+  "abstract": "  Model compression can significantly reduce the sizes of deep neural network (DNN) models, and thus facilitates the dissemination of sophisticated, sizable DNN models, especially for their deployment on mobile or embedded devices. However, the prediction results of compressed models may deviate from those of their original models. To help developers thoroughly understand the impact of model compression, it is essential to test these models to find those deviated behaviors before dissemination. However, this is a non-trivial task because the architectures and gradients of compressed models are usually not available.   To this end, we propose DFLARE, a novel, search-based, black-box testing technique to automatically find triggering inputs that result in deviated behaviors in image classification tasks. DFLARE iteratively applies a series of mutation operations to a given seed image, until a triggering input is found. For better efficacy and efficiency, DFLARE models the search problem as Markov Chains and leverages the Metropolis-Hasting algorithm to guide the selection of mutation operators in each iteration. Further, DFLARE utilizes a novel fitness function to prioritize the mutated inputs that either cause large differences between two models' outputs, or trigger previously unobserved models' probability vectors. We evaluated DFLARE on 21 compressed models for image classification tasks with three datasets. The results show that DFLARE outperforms the baseline in terms of efficacy and efficiency. We also demonstrated that the triggering inputs found by DFLARE can be used to repair up to 48.48% deviated behaviors in image classification tasks and further decrease the effectiveness of DFLARE on the repaired models. "
+}

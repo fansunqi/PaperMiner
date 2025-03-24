@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Increase Neural Network Robustness Against Data Quality Issues"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Modulation Layer",
+    "Replacing fixed weights with a function of an additional input",
+    "Using reliability scores as a modulating signal"
+  ],
+  "results": [
+    "Models with modulating layers are more robust against data quality degradation",
+    "Superior to imputation by saving training time and handling other data quality measures"
+  ],
+  "paper_id": "60f774ce5244ab9dcb32a997",
+  "title": "A Modulation Layer to Increase Neural Network Robustness Against Data\n  Quality Issues",
+  "abstract": "  Data missingness and quality are common problems in machine learning, especially for high-stakes applications such as healthcare. Developers often train machine learning models on carefully curated datasets using only high quality data; however, this reduces the utility of such models in production environments. We propose a novel neural network modification to mitigate the impacts of low quality and missing data which involves replacing the fixed weights of a fully-connected layer with a function of an additional input. This is inspired from neuromodulation in biological neural networks where the cortex can up- and down-regulate inputs based on their reliability and the presence of other data. In testing, with reliability scores as a modulating signal, models with modulating layers were found to be more robust against degradation of data quality, including additional missingness. These models are superior to imputation as they save on training time by completely skipping the imputation process and further allow the introduction of other data quality measures that imputation cannot handle. Our results suggest that explicitly accounting for reduced information quality with a modulating fully connected layer can enable the deployment of artificial intelligence systems in real-time applications. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differentially Private KL Divergence Minimization"
+  ],
+  "datasets": [
+    "real-world datasets"
+  ],
+  "methods": [
+    "Dirichlet Mechanism",
+    "R\u00e9nyi Differentially Private (RDP) Algorithm"
+  ],
+  "results": [
+    "Advantages over Gaussian and Laplace mechanisms in supervised classification and maximum likelihood estimation"
+  ],
+  "paper_id": "615d13fe5244ab9dcb637bc8",
+  "title": "Dirichlet Mechanism for Differentially Private KL Divergence\n  Minimization",
+  "abstract": "  Given an empirical distribution $f(x)$ of sensitive data $x$, we consider the task of minimizing $F(y) = D_{\\text{KL}} (f(x)\\Vert y)$ over a probability simplex, while protecting the privacy of $x$. We observe that, if we take the exponential mechanism and use the KL divergence as the loss function, then the resulting algorithm is the Dirichlet mechanism that outputs a single draw from a Dirichlet distribution. Motivated by this, we propose a R\\'enyi differentially private (RDP) algorithm that employs the Dirichlet mechanism to solve the KL divergence minimization task. In addition, given $f(x)$ as above and $\\hat{y}$ an output of the Dirichlet mechanism, we prove a probability tail bound on $D_{\\text{KL}} (f(x)\\Vert \\hat{y})$, which is then used to derive a lower bound for the sample complexity of our RDP algorithm. Experiments on real-world datasets demonstrate advantages of our algorithm over Gaussian and Laplace mechanisms in supervised classification and maximum likelihood estimation. "
+}

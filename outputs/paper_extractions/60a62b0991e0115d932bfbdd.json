@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning to take safe actions in unknown environments",
+    "Multi-armed bandit problem",
+    "Finding optimal policies for MDP with almost sure constraints"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Algorithm for detecting unsafe machines in multi-armed bandit",
+    "Barrier-learning algorithm for identifying unsafe state-action pairs in MDP"
+  ],
+  "results": [
+    "Provably detects all unsafe machines in finite rounds",
+    "Barrier-based decomposition for feasible policies",
+    "Trade-off between detection time and exposure to unsafe events",
+    "Simulations corroborate theoretical findings"
+  ],
+  "paper_id": "60a62b0991e0115d932bfbdd",
+  "title": "Learning to Act Safely with Limited Exposure and Almost Sure Certainty",
+  "abstract": "  This paper puts forward the concept that learning to take safe actions in unknown environments, even with probability one guarantees, can be achieved without the need for an unbounded number of exploratory trials. This is indeed possible, provided that one is willing to navigate trade-offs between optimality, level of exposure to unsafe events, and the maximum detection time of unsafe actions. We illustrate this concept in two complementary settings. We first focus on the canonical multi-armed bandit problem and study the intrinsic trade-offs of learning safety in the presence of uncertainty. Under mild assumptions on sufficient exploration, we provide an algorithm that provably detects all unsafe machines in an (expected) finite number of rounds. The analysis also unveils a trade-off between the number of rounds needed to secure the environment and the probability of discarding safe machines. We then consider the problem of finding optimal policies for a Markov Decision Process (MDP) with almost sure constraints. We show that the action-value function satisfies a barrier-based decomposition which allows for the identification of feasible policies independently of the reward process. Using this decomposition, we develop a Barrier-learning algorithm, that identifies such unsafe state-action pairs in a finite expected number of steps. Our analysis further highlights a trade-off between the time lag for the underlying MDP necessary to detect unsafe actions, and the level of exposure to unsafe events. Simulations corroborate our theoretical findings, further illustrating the aforementioned trade-offs, and suggesting that safety constraints can speed up the learning process. "
+}

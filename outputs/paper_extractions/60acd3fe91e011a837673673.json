@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Processing bounded hierarchical languages"
+  ],
+  "datasets": [
+    "Dyck_k, D"
+  ],
+  "methods": [
+    "Hard-attention network with D+1 layers and O(log k) memory size",
+    "Soft-attention network with two layers and O(log k) memory size"
+  ],
+  "results": [
+    "Self-attention networks generalize to longer inputs with near-perfect accuracy",
+    "Theoretical memory advantage of self-attention networks over recurrent networks"
+  ],
+  "paper_id": "60acd3fe91e011a837673673",
+  "title": "Self-Attention Networks Can Process Bounded Hierarchical Languages",
+  "abstract": "  Despite their impressive performance in NLP, self-attention networks were recently proved to be limited for processing formal languages with hierarchical structure, such as $\\mathsf{Dyck}_k$, the language consisting of well-nested parentheses of $k$ types. This suggested that natural language can be approximated well with models that are too weak for formal languages, or that the role of hierarchy and recursion in natural language might be limited. We qualify this implication by proving that self-attention networks can process $\\mathsf{Dyck}_{k, D}$, the subset of $\\mathsf{Dyck}_{k}$ with depth bounded by $D$, which arguably better captures the bounded hierarchical structure of natural language. Specifically, we construct a hard-attention network with $D+1$ layers and $O(\\log k)$ memory size (per token per layer) that recognizes $\\mathsf{Dyck}_{k, D}$, and a soft-attention network with two layers and $O(\\log k)$ memory size that generates $\\mathsf{Dyck}_{k, D}$. Experiments show that self-attention networks trained on $\\mathsf{Dyck}_{k, D}$ generalize to longer inputs with near-perfect accuracy, and also verify the theoretical memory advantage of self-attention networks over recurrent networks. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Policy gradient algorithms",
+    "Markov decision processes",
+    "Reinforcement learning"
+  ],
+  "datasets": [
+    "synthetic",
+    "industrial-scale examples"
+  ],
+  "methods": [
+    "Approximate Newton method for policy gradient with entropy regularization"
+  ],
+  "results": [
+    "Newton-type quadratic convergence",
+    "Global convergence of gradient flow to optimal solution",
+    "Typically converges in single-digit iterations",
+    "Often orders of magnitude faster than state-of-the-art algorithms"
+  ],
+  "paper_id": "615e65735244ab9dcbf21759",
+  "title": "Approximate Newton policy gradient algorithms",
+  "abstract": "  Policy gradient algorithms have been widely applied to Markov decision processes and reinforcement learning problems in recent years. Regularization with various entropy functions is often used to encourage exploration and improve stability. This paper proposes an approximate Newton method for the policy gradient algorithm with entropy regularization. In the case of Shannon entropy, the resulting algorithm reproduces the natural policy gradient algorithm. For other entropy functions, this method results in brand-new policy gradient algorithms. We prove that all these algorithms enjoy Newton-type quadratic convergence and that the corresponding gradient flow converges globally to the optimal solution. We use synthetic and industrial-scale examples to demonstrate that the proposed approximate Newton method typically converges in single-digit iterations, often orders of magnitude faster than other state-of-the-art algorithms. "
+}

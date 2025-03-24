@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predicting wind-driven spatial deposition"
+  ],
+  "datasets": [
+    "Simulated color images of spatial deposition patterns"
+  ],
+  "methods": [
+    "Deep convolutional neural network-based autoencoders",
+    "Dimensionality reduction with encoder",
+    "Reconstruction with decoder"
+  ],
+  "results": [
+    "Dimensionality reduced to 0.02% of original size",
+    "Normalized root mean squared error of 8%",
+    "Figure of merit in space of 94%",
+    "Precision-recall area under the curve of 0.93"
+  ],
+  "paper_id": "61fc99475aee126c0fcdcecb",
+  "title": "Predicting Wind-Driven Spatial Deposition through Simulated Color Images\n  using Deep Autoencoders",
+  "abstract": "  For centuries, scientists have observed nature to understand the laws that govern the physical world. The traditional process of turning observations into physical understanding is slow. Imperfect models are constructed and tested to explain relationships in data. Powerful new algorithms can enable computers to learn physics by observing images and videos. Inspired by this idea, instead of training machine learning models using physical quantities, we used images, that is, pixel information. For this work, and as a proof of concept, the physics of interest are wind-driven spatial patterns. These phenomena include features in Aeolian dunes and volcanic ash deposition, wildfire smoke, and air pollution plumes. We use computer model simulations of spatial deposition patterns to approximate images from a hypothetical imaging device whose outputs are red, green, and blue (RGB) color images with channel values ranging from 0 to 255. In this paper, we explore deep convolutional neural network-based autoencoders to exploit relationships in wind-driven spatial patterns, which commonly occur in geosciences, and reduce their dimensionality. Reducing the data dimension size with an encoder enables training deep, fully connected neural network models linking geographic and meteorological scalar input quantities to the encoded space. Once this is achieved, full spatial patterns are reconstructed using the decoder. We demonstrate this approach on images of spatial deposition from a pollution source, where the encoder compresses the dimensionality to 0.02% of the original size, and the full predictive model performance on test data achieves a normalized root mean squared error of 8%, a figure of merit in space of 94% and a precision-recall area under the curve of 0.93. "
+}

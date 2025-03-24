@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Noise-robust clustering"
+  ],
+  "datasets": [
+    "Real-world weather data",
+    "Stock data"
+  ],
+  "methods": [
+    "Expectation Distance-based Distributional Clustering",
+    "ED distance measure",
+    "K-means over data-distributions",
+    "K-medoids using W2"
+  ],
+  "results": [
+    "Higher accuracy for ED over classical clustering",
+    "Reduced computation time due to lower time-complexity"
+  ],
+  "paper_id": "616e37435244ab9dcbd1a96d",
+  "title": "Expectation Distance-based Distributional Clustering for\n  Noise-Robustness",
+  "abstract": "  This paper presents a clustering technique that reduces the susceptibility to data noise by learning and clustering the data-distribution and then assigning the data to the cluster of its distribution. In the process, it reduces the impact of noise on clustering results. This method involves introducing a new distance among distributions, namely the expectation distance (denoted, ED), that goes beyond the state-of-art distribution distance of optimal mass transport (denoted, $W_2$ for $2$-Wasserstein): The latter essentially depends only on the marginal distributions while the former also employs the information about the joint distributions. Using the ED, the paper extends the classical $K$-means and $K$-medoids clustering to those over data-distributions (rather than raw-data) and introduces $K$-medoids using $W_2$. The paper also presents the closed-form expressions of the $W_2$ and ED distance measures. The implementation results of the proposed ED and the $W_2$ distance measures to cluster real-world weather data as well as stock data are also presented, which involves efficiently extracting and using the underlying data distributions -- Gaussians for weather data versus lognormals for stock data. The results show striking performance improvement over classical clustering of raw-data, with higher accuracy realized for ED. Also, not only does the distribution-based clustering offer higher accuracy, but it also lowers the computation time due to reduced time-complexity. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph neural network acceleration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TC-GNN: GPU Tensor Core Unit based GNN acceleration",
+    "Sparse graph translation technique",
+    "CUDA core and TCU collaboration design"
+  ],
+  "results": [
+    "Average 1.70X speedup over Deep Graph Library framework"
+  ],
+  "paper_id": "61ad7f555244ab9dcbc6d238",
+  "title": "TC-GNN: Accelerating Sparse Graph Neural Network Computation Via Dense\n  Tensor Core on GPUs",
+  "abstract": "  Recently, graph neural networks (GNNs), as the backbone of graph-based machine learning, demonstrate great success in various domains (e.g., e-commerce). However, the performance of GNNs is usually unsatisfactory due to the highly sparse and irregular graph-based operations. To this end, we propose, TC-GNN, the first GPU Tensor Core Unit (TCU) based GNN acceleration framework. The core idea is to reconcile the \"Sparse\" GNN computation with \"Dense\" TCU. Specifically, we conduct an in-depth analysis of the sparse operations in mainstream GNN computing frameworks. We introduce a novel sparse graph translation technique to facilitate TCU processing of sparse GNN workload. We also implement an effective CUDA core and TCU collaboration design to fully utilize GPU resources. We fully integrate TC-GNN with the Pytorch framework for ease of programming. Rigorous experiments show an average of 1.70X speedup over the state-of-the-art Deep Graph Library framework across various GNN models and dataset settings. "
+}

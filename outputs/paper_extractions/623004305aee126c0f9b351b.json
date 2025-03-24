@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Restoration of artifact-affected 4D CT images"
+  ],
+  "datasets": [
+    "65 in-house 4D CT images of lung cancer patients",
+    "two publicly available 4D CT data sets"
+  ],
+  "methods": [
+    "Deep learning-based conditional inpainting",
+    "Two-stage process: DL-based detection of INT and DS artifacts, followed by conditional inpainting"
+  ],
+  "results": [
+    "ROC-AUC of 0.99 for INT and 0.97 for DS artifacts",
+    "Decreased average RMSE by 52% (INT) and 59% (DS) for in-house data",
+    "RMSE improvement of 50% and 59% for external test data sets",
+    "72% of detectable artifacts removed in pronounced artifact data"
+  ],
+  "paper_id": "623004305aee126c0f9b351b",
+  "title": "Deep learning-based conditional inpainting for restoration of\n  artifact-affected 4D CT images",
+  "abstract": "  4D CT imaging is an essential component of radiotherapy of thoracic/abdominal tumors. 4D CT images are, however, often affected by artifacts that compromise treatment planning quality. In this work, deep learning (DL)-based conditional inpainting is proposed to restore anatomically correct image information of artifact-affected areas. The restoration approach consists of a two-stage process: DL-based detection of common interpolation (INT) and double structure (DS) artifacts, followed by conditional inpainting applied to the artifact areas. In this context, conditional refers to a guidance of the inpainting process by patient-specific image data to ensure anatomically reliable results. The study is based on 65 in-house 4D CT images of lung cancer patients (48 with only slight artifacts, 17 with pronounced artifacts) and two publicly available 4D CT data sets that serve as independent external test sets. Automated artifact detection revealed a ROC-AUC of 0.99 for INT and of 0.97 for DS artifacts (in-house data). The proposed inpainting method decreased the average root mean squared error (RMSE) by 52%(INT) and 59% (DS) for the in-house data. For the external test data sets, the RMSE improvement is similar (50% and 59 %, respectively). Applied to 4D CT data with pronounced artifacts (not part of the training set), 72% of the detectable artifacts were removed. The results highlight the potential of DL-based inpainting for restoration of artifact-affected 4D CT data. Compared to recent 4D CT inpainting and restoration approaches, the proposed methodology illustrates the advantages of exploiting patient-specific prior image information. "
+}

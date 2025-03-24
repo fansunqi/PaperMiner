@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/umd-huang-lab/paad_adv_rl"
+  ],
+  "tasks": [
+    "Evaluating worst-case performance of RL agents under adversarial perturbations",
+    "Adversarial training for RL robustness"
+  ],
+  "datasets": [
+    "Atari",
+    "MuJoCo"
+  ],
+  "methods": [
+    "PA-AD (Actor-Director collaboration for optimal attacks)",
+    "RL-based adversary training"
+  ],
+  "results": [
+    "PA-AD outperforms state-of-the-art attacking methods in Atari and MuJoCo",
+    "Achieves state-of-the-art empirical robustness in multiple tasks under strong adversaries"
+  ],
+  "paper_id": "60c3fe1291e011d44febef14",
+  "title": "Who Is the Strongest Enemy? Towards Optimal and Efficient Evasion\n  Attacks in Deep RL",
+  "abstract": "  Evaluating the worst-case performance of a reinforcement learning (RL) agent under the strongest/optimal adversarial perturbations on state observations (within some constraints) is crucial for understanding the robustness of RL agents. However, finding the optimal adversary is challenging, in terms of both whether we can find the optimal attack and how efficiently we can find it. Existing works on adversarial RL either use heuristics-based methods that may not find the strongest adversary, or directly train an RL-based adversary by treating the agent as a part of the environment, which can find the optimal adversary but may become intractable in a large state space. This paper introduces a novel attacking method to find the optimal attacks through collaboration between a designed function named \"actor\" and an RL-based learner named \"director\". The actor crafts state perturbations for a given policy perturbation direction, and the director learns to propose the best policy perturbation directions. Our proposed algorithm, PA-AD, is theoretically optimal and significantly more efficient than prior RL-based works in environments with large state spaces. Empirical results show that our proposed PA-AD universally outperforms state-of-the-art attacking methods in various Atari and MuJoCo environments. By applying PA-AD to adversarial training, we achieve state-of-the-art empirical robustness in multiple tasks under strong adversaries. The codebase is released at https://github.com/umd-huang-lab/paad_adv_rl. "
+}

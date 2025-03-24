@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Disrupting Adversarial Transferability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Feature Correlation Loss",
+    "Dual Neck Autoencoder (DNA)"
+  ],
+  "results": [
+    "Reduced transferability of adversarial attacks between models",
+    "Models complete tasks in semantically different ways"
+  ],
+  "paper_id": "612d9dc35244ab9dcbdfa1f9",
+  "title": "Disrupting Adversarial Transferability in Deep Neural Networks",
+  "abstract": "  Adversarial attack transferability is well-recognized in deep learning. Prior work has partially explained transferability by recognizing common adversarial subspaces and correlations between decision boundaries, but little is known beyond this. We propose that transferability between seemingly different models is due to a high linear correlation between the feature sets that different networks extract. In other words, two models trained on the same task that are distant in the parameter space likely extract features in the same fashion, just with trivial affine transformations between the latent spaces. Furthermore, we show how applying a feature correlation loss, which decorrelates the extracted features in a latent space, can reduce the transferability of adversarial attacks between models, suggesting that the models complete tasks in semantically different ways. Finally, we propose a Dual Neck Autoencoder (DNA), which leverages this feature correlation loss to create two meaningfully different encodings of input information with reduced transferability. "
+}

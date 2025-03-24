@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/kongzhecn/dfdm"
+  ],
+  "tasks": [
+    "Presentation Attack Detection"
+  ],
+  "datasets": [
+    "CASIA-FASD",
+    "Idiap Replay-Attack",
+    "OULU-NPU",
+    "MSU-MFSD"
+  ],
+  "methods": [
+    "DF-DM (De-Folding and De-Mixing)",
+    "Self-supervised learning",
+    "Global-local view"
+  ],
+  "results": [
+    "18.60% Equal Error Rate (EER) in OULU-NPU and MSU-MFSD",
+    "Exceeds baseline performance by 9.54%"
+  ],
+  "paper_id": "613accd55244ab9dcb416807",
+  "title": "Taming Self-Supervised Learning for Presentation Attack Detection:\n  In-Image De-Folding and Out-of-Image De-Mixing",
+  "abstract": "  Biometric systems are vulnerable to Presentation Attacks (PA) performed using various Presentation Attack Instruments (PAIs). Even though there are numerous Presentation Attack Detection (PAD) techniques based on both deep learning and hand-crafted features, the generalization of PAD for unknown PAI is still a challenging problem. In this work, we empirically prove that the initialization of the PAD model is a crucial factor for the generalization, which is rarely discussed in the community. Based on such observation, we proposed a self-supervised learning-based method, denoted as DF-DM. Specifically, DF-DM is based on a global-local view coupled with De-Folding and De-Mixing to derive the task-specific representation for PAD. During De-Folding, the proposed technique will learn region-specific features to represent samples in a local pattern by explicitly minimizing generative loss. While De-Mixing drives detectors to obtain the instance-specific features with global information for more comprehensive representation by minimizing interpolation-based consistency. Extensive experimental results show that the proposed method can achieve significant improvements in terms of both face and fingerprint PAD in more complicated and hybrid datasets when compared with state-of-the-art methods. When training in CASIA-FASD and Idiap Replay-Attack, the proposed method can achieve an 18.60% Equal Error Rate (EER) in OULU-NPU and MSU-MFSD, exceeding baseline performance by 9.54%. The source code of the proposed technique is available at https://github.com/kongzhecn/dfdm. "
+}

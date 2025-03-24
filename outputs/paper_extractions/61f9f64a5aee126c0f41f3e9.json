@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Action Unit Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-Order Network (MONET)",
+    "Differentiable order selection",
+    "Warmup and order dropout"
+  ],
+  "results": [
+    "MONET outperforms existing multi-task baselines",
+    "Significantly extends state-of-the-art performance in AU detection"
+  ],
+  "paper_id": "61f9f64a5aee126c0f41f3e9",
+  "title": "Multi-Order Networks for Action Unit Detection",
+  "abstract": "  Action Units (AU) are muscular activations used to describe facial expressions. Therefore accurate AU recognition unlocks unbiaised face representation which can improve face-based affective computing applications. From a learning standpoint AU detection is a multi-task problem with strong inter-task dependencies. To solve such problem, most approaches either rely on weight sharing, or add explicit dependency modelling by decomposing the joint task distribution using Bayes chain rule. If the latter strategy yields comprehensive inter-task relationships modelling, it requires imposing an arbitrary order into an unordered task set. Crucially, this ordering choice has been identified as a source of performance variations. In this paper, we present Multi-Order Network (MONET), a multi-task method with joint task order optimization. MONET uses a differentiable order selection to jointly learn task-wise modules with their optimal chaining order. Furthermore, we introduce warmup and order dropout to enhance order selection by encouraging order exploration. Experimentally, we first demonstrate MONET capacity to retrieve the optimal order in a toy environment. Second, we validate MONET architecture by showing that MONET outperforms existing multi-task baselines on multiple attribute detection problems chosen for their wide range of dependency settings. More importantly, we demonstrate that MONET significantly extends state-of-the-art performance in AU detection. "
+}

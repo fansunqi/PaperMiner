@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Pixel-level road crack detection"
+  ],
+  "datasets": [
+    "Rain365",
+    "Sun520"
+  ],
+  "methods": [
+    "Lightweight encoder-decoder architecture (CarNet)",
+    "Olive-shaped structure for encoder",
+    "Light-weight multi-scale block",
+    "New up-sampling method for decoder"
+  ],
+  "results": [
+    "CarNet advances state-of-the-art ODS F-score from 0.488 to 0.514 on Sun520",
+    "Improved detection speed of 104 frames per second"
+  ],
+  "paper_id": "614012c15244ab9dcb8166ea",
+  "title": "Rethinking Lightweight Convolutional Neural Networks for Efficient and\n  High-quality Pavement Crack Detection",
+  "abstract": "  Pixel-level road crack detection has always been a challenging task in intelligent transportation systems. Due to the external environments, such as weather, light, and other factors, pavement cracks often present low contrast, poor continuity, and different sizes in length and width. However, most of the existing studies pay less attention to crack data under different situations. Meanwhile, recent algorithms based on deep convolutional neural networks (DCNNs) have promoted the development of cutting-edge models for crack detection. Nevertheless, they usually focus on complex models for good performance, but ignore detection efficiency in practical applications. In this article, to address the first issue, we collected two new databases (i.e. Rain365 and Sun520) captured in rainy and sunny days respectively, which enrich the data of the open source community. For the second issue, we reconsider how to improve detection efficiency with excellent performance, and then propose our lightweight encoder-decoder architecture termed CarNet. Specifically, we introduce a novel olive-shaped structure for the encoder network, a light-weight multi-scale block and a new up-sampling method in the decoder network. Numerous experiments show that our model can better balance detection performance and efficiency compared with previous models. Especially, on the Sun520 dataset, our CarNet significantly advances the state-of-the-art performance with ODS F-score from 0.488 to 0.514. Meanwhile, it does so with an improved detection speed (104 frame per second) which is orders of magnitude faster than some recent DCNNs-based algorithms specially designed for crack detection. "
+}

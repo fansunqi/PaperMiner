@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Testing indexability and computing Whittle and Gittins index"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Characterization of Whittle index for recursive computation",
+    "Sherman-Morrison formula for efficient recursion",
+    "Fast matrix inversion and multiplication for subcubic complexity"
+  ],
+  "results": [
+    "Computes Whittle index in (2/3)n^3 + o(n^3) operations",
+    "First subcubic algorithm for Whittle or Gittins index: O(n^2.5286)",
+    "Efficient implementation for Markov chains with thousands of states in seconds"
+  ],
+  "paper_id": "622abdd05aee126c0f56ba99",
+  "title": "Testing Indexability and Computing Whittle and Gittins Index in Subcubic\n  Time",
+  "abstract": "  Whittle index is a generalization of Gittins index that provides very efficient allocation rules for restless multi-armed bandits. In this work, we develop an algorithm to test the indexability and compute the Whittle indices of any finite-state restless bandit arm. This algorithm works in the discounted and non-discounted cases, and can compute Gittins index. Our algorithm builds on three tools: (1) a careful characterization of Whittle index that allows one to compute recursively the kth smallest index from the (k -- 1)th smallest, and to test indexability, (2) the use of the Sherman-Morrison formula to make this recursive computation efficient, and (3) a sporadic use of the fastest matrix inversion and multiplication methods to obtain a subcubic complexity. We show that an efficient use of the Sherman-Morrison formula leads to an algorithm that computes Whittle index in (2/3)n^3 + o(n^3 ) arithmetic operations, where n is the number of states of the arm. The careful use of fast matrix multiplication leads to the first subcubic algorithm to compute Whittle or Gittins index: By using the current fastest matrix multiplication, the theoretical complexity of our algorithm is O(n^2.5286 ). We also develop an efficient implementation of our algorithm that can compute indices of Markov chains with several thousands of states in less than a few seconds. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Domain Generalization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Frequency Filtering (DFF)",
+    "Fast Fourier Transform (FFT)",
+    "Attention masks for frequency representations"
+  ],
+  "results": [
+    "DFF outperforms state-of-the-art methods on domain generalization tasks",
+    "Effectiveness demonstrated on close-set classification and open-set retrieval"
+  ],
+  "paper_id": "623be1965aee126c0f37ab78",
+  "title": "Deep Frequency Filtering for Domain Generalization",
+  "abstract": "  Improving the generalization ability of Deep Neural Networks (DNNs) is critical for their practical uses, which has been a longstanding challenge. Some theoretical studies have uncovered that DNNs have preferences for some frequency components in the learning process and indicated that this may affect the robustness of learned features. In this paper, we propose Deep Frequency Filtering (DFF) for learning domain-generalizable features, which is the first endeavour to explicitly modulate the frequency components of different transfer difficulties across domains in the latent space during training. To achieve this, we perform Fast Fourier Transform (FFT) for the feature maps at different layers, then adopt a light-weight module to learn attention masks from the frequency representations after FFT to enhance transferable components while suppressing the components not conducive to generalization. Further, we empirically compare the effectiveness of adopting different types of attention designs for implementing DFF. Extensive experiments demonstrate the effectiveness of our proposed DFF and show that applying our DFF on a plain baseline outperforms the state-of-the-art methods on different domain generalization tasks, including close-set classification and open-set retrieval. "
+}

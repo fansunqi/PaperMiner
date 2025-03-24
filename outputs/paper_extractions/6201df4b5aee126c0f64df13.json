@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Storage-efficient privacy-preserving learning"
+  ],
+  "datasets": [
+    "CelebA"
+  ],
+  "methods": [
+    "Noise injection followed by lossy compression"
+  ],
+  "results": [
+    "Compressed examples converge to noise-free training data distribution",
+    "Substantial reduction in storage with no essential loss to classification accuracy",
+    "Boost to robustness against adversarial test data"
+  ],
+  "paper_id": "6201df4b5aee126c0f64df13",
+  "title": "Lossy Compression of Noisy Data for Private and Data-Efficient Learning",
+  "abstract": "  Storage-efficient privacy-preserving learning is crucial due to increasing amounts of sensitive user data required for modern learning tasks. We propose a framework for reducing the storage cost of user data while at the same time providing privacy guarantees, without essential loss in the utility of the data for learning. Our method comprises noise injection followed by lossy compression. We show that, when appropriately matching the lossy compression to the distribution of the added noise, the compressed examples converge, in distribution, to that of the noise-free training data as the sample size of the training data (or the dimension of the training data) increases. In this sense, the utility of the data for learning is essentially maintained, while reducing storage and privacy leakage by quantifiable amounts. We present experimental results on the CelebA dataset for gender classification and find that our suggested pipeline delivers in practice on the promise of the theory: the individuals in the images are unrecognizable (or less recognizable, depending on the noise level), overall storage of the data is substantially reduced, with no essential loss (and in some cases a slight boost) to the classification accuracy. As an added bonus, our experiments suggest that our method yields a substantial boost to robustness in the face of adversarial test data. "
+}

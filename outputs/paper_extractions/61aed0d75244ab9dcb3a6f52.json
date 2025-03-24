@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computing Voronoi Diagrams in Hyperbolic Plane"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fortune's sweep line algorithm adapted for polar-coordinate model of hyperbolic plane"
+  ],
+  "results": [
+    "Useful as a reference for resolving fundamental issues in state-of-the-art method implementation",
+    "Less numerically stable than CGAL implementation"
+  ],
+  "paper_id": "61aed0d75244ab9dcb3a6f52",
+  "title": "Computing Voronoi Diagrams in the Polar-Coordinate Model of the\n  Hyperbolic Plane",
+  "abstract": "  A Voronoi diagram is a basic geometric structure that partitions the space into regions associated with a given set of sites, such that all points in a region are closer to the corresponding site than to all other sites. While being thoroughly studied in Euclidean space, they are also of interest in hyperbolic space. In fact, there are several algorithms for computing hyperbolic Voronoi diagrams that work with the various models used to describe hyperbolic geometry. However, the polar-coordinate model has not been considered before, despite its popularity in the network science community. While Voronoi diagrams have the potential to advance this field, the model is geometrically not as approachable as other models, which impedes the development of geometric algorithms.   In this paper, we present an algorithm for computing Voronoi diagrams natively in the polar-coordinate model of the hyperbolic plane. The approach is based on Fortune's sweep line algorithm for Euclidean Voronoi diagrams. We characterize the hyperbolic counterparts of the concepts it utilizes and introduce adaptations necessary to account for the differences.   We implemented our algorithm and compared it with the corresponding CGAL implementation. While not being as numerically stable, our method has proven to be useful as a reference, which helped resolving fundamental issues in the implementation of the state-of-the-art method. "
+}

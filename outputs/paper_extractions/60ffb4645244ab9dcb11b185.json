@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual recognition"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "Augmentation Pathways (AP)",
+    "Multiple neural paths for light and heavy augmentations",
+    "Dependent interaction among paths"
+  ],
+  "results": [
+    "Stabilizes training on wide range of augmentations",
+    "Boosts performance without careful policy selection",
+    "Consumes fewer parameters and lower computational costs"
+  ],
+  "paper_id": "60ffb4645244ab9dcb11b185",
+  "title": "Augmentation Pathways Network for Visual Recognition",
+  "abstract": "  Data augmentation is practically helpful for visual recognition, especially at the time of data scarcity. However, such success is only limited to quite a few light augmentations (e.g., random crop, flip). Heavy augmentations are either unstable or show adverse effects during training, owing to the big gap between the original and augmented images. This paper introduces a novel network design, noted as Augmentation Pathways (AP), to systematically stabilize training on a much wider range of augmentation policies. Notably, AP tames various heavy data augmentations and stably boosts performance without a careful selection among augmentation policies. Unlike traditional single pathway, augmented images are processed in different neural paths. The main pathway handles the light augmentations, while other pathways focus on the heavier augmentations. By interacting with multiple paths in a dependent manner, the backbone network robustly learns from shared visual patterns among augmentations, and suppresses the side effect of heavy augmentations at the same time. Furthermore, we extend AP to high-order versions for high-order scenarios, demonstrating its robustness and flexibility in practical usage. Experimental results on ImageNet demonstrate the compatibility and effectiveness on a much wider range of augmentations, while consuming fewer parameters and lower computational costs at inference time. "
+}

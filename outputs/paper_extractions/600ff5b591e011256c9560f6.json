@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sequentially Randomized Experiments",
+    "Multi-armed Bandit Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Weak Signal Asymptotics",
+    "Diffusion Limit",
+    "Stochastic Differential Equation",
+    "Thompson Sampling"
+  ],
+  "results": [
+    "Sample paths converge weakly to a diffusion limit",
+    "Refined characterization of stochastic dynamics",
+    "Sub-optimal regret performance with large reward gaps",
+    "Near-optimal regret scaling with asymptotically uninformative prior variance",
+    "Highly unstable posterior beliefs"
+  ],
+  "paper_id": "600ff5b591e011256c9560f6",
+  "title": "Weak Signal Asymptotics for Sequentially Randomized Experiments",
+  "abstract": "  We use the lens of weak signal asymptotics to study a class of sequentially randomized experiments, including those that arise in solving multi-armed bandit problems. In an experiment with $n$ time steps, we let the mean reward gaps between actions scale to the order $1/\\sqrt{n}$ so as to preserve the difficulty of the learning task as $n$ grows. In this regime, we show that the sample paths of a class of sequentially randomized experiments -- adapted to this scaling regime and with arm selection probabilities that vary continuously with state -- converge weakly to a diffusion limit, given as the solution to a stochastic differential equation. The diffusion limit enables us to derive refined, instance-specific characterization of stochastic dynamics, and to obtain several insights on the regret and belief evolution of a number of sequential experiments including Thompson sampling (but not UCB, which does not satisfy our continuity assumption). We show that all sequential experiments whose randomization probabilities have a Lipschitz-continuous dependence on the observed data suffer from sub-optimal regret performance when the reward gaps are relatively large. Conversely, we find that a version of Thompson sampling with an asymptotically uninformative prior variance achieves near-optimal instance-specific regret scaling, including with large reward gaps, but these good regret properties come at the cost of highly unstable posterior beliefs. "
+}

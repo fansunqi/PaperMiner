@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Posterior random variable characterization in statistical learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Offline-online method using tensor-train (TT) format",
+    "Order-preserving conditional transport",
+    "Function approximation",
+    "Variable reordering/reparametrization",
+    "Layered compositions of TT-based transport maps"
+  ],
+  "results": [
+    "Enhanced approximation power of TT",
+    "Improved performance of transport maps",
+    "Demonstrated efficiency on ODEs and PDEs tasks"
+  ],
+  "paper_id": "60c2b9f591e0117e30ca26d8",
+  "title": "Scalable conditional deep inverse Rosenblatt transports using\n  tensor-trains and gradient-based dimension reduction",
+  "abstract": "  We present a novel offline-online method to mitigate the computational burden of the characterization of posterior random variables in statistical learning. In the offline phase, the proposed method learns the joint law of the parameter random variables and the observable random variables in the tensor-train (TT) format. In the online phase, the resulting order-preserving conditional transport can characterize the posterior random variables given newly observed data in real time. Compared with the state-of-the-art normalizing flow techniques, the proposed method relies on function approximation and is equipped with a thorough performance analysis. The function approximation perspective also allows us to further extend the capability of transport maps in challenging problems with high-dimensional observations and high-dimensional parameters. On the one hand, we present novel heuristics to reorder and/or reparametrize the variables to enhance the approximation power of TT. On the other hand, we integrate the TT-based transport maps and the parameter reordering/reparametrization into layered compositions to further improve the performance of the resulting transport maps. We demonstrate the efficiency of the proposed method on various statistical learning tasks in ordinary differential equations (ODEs) and partial differential equations (PDEs). "
+}

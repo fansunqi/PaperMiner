@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object detection",
+    "Image classification",
+    "Transfer learning"
+  ],
+  "datasets": [
+    "MoCoV2",
+    "Jigsaw",
+    "Sketch-ImageNet",
+    "DTD"
+  ],
+  "methods": [
+    "Anisotropic diffusion to suppress texture",
+    "Augmented training with texture-suppressed images"
+  ],
+  "results": [
+    "State-of-the-art results on object detection and image classification",
+    "Improved performance on five standard transfer learning datasets",
+    "Up to 11.49% improvement on Sketch-ImageNet and DTD datasets"
+  ],
+  "paper_id": "5fa28f1791e011cda13f508a",
+  "title": "Learning Visual Representations for Transfer Learning by Suppressing\n  Texture",
+  "abstract": "  Recent literature has shown that features obtained from supervised training of CNNs may over-emphasize texture rather than encoding high-level information. In self-supervised learning in particular, texture as a low-level cue may provide shortcuts that prevent the network from learning higher level representations. To address these problems we propose to use classic methods based on anisotropic diffusion to augment training using images with suppressed texture. This simple method helps retain important edge information and suppress texture at the same time. We empirically show that our method achieves state-of-the-art results on object detection and image classification with eight diverse datasets in either supervised or self-supervised learning tasks such as MoCoV2 and Jigsaw. Our method is particularly effective for transfer learning tasks and we observed improved performance on five standard transfer learning datasets. The large improvements (up to 11.49\\%) on the Sketch-ImageNet dataset, DTD dataset and additional visual analyses with saliency maps suggest that our approach helps in learning better representations that better transfer. "
+}

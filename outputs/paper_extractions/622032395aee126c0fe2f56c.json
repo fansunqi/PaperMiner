@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Discriminative Regularization (ADR)",
+    "Calibrating likelihood based on semantically neighboring classes",
+    "Imposing adaptive exponential penalty"
+  ],
+  "results": [
+    "Consistent and non-trivial performance improvements in over 10 benchmarks",
+    "Robust to long-tailed and noisy label data distribution"
+  ],
+  "paper_id": "622032395aee126c0fe2f56c",
+  "title": "Adaptive Discriminative Regularization for Visual Classification",
+  "abstract": "  How to improve discriminative feature learning is central in classification. Existing works address this problem by explicitly increasing inter-class separability and intra-class similarity, whether by constructing positive and negative pairs for contrastive learning or posing tighter class separating margins. These methods do not exploit the similarity between different classes as they adhere to i.i.d. assumption in data. In this paper, we embrace the real-world data distribution setting that some classes share semantic overlaps due to their similar appearances or concepts. Regarding this hypothesis, we propose a novel regularization to improve discriminative learning. We first calibrate the estimated highest likelihood of one sample based on its semantically neighboring classes, then encourage the overall likelihood predictions to be deterministic by imposing an adaptive exponential penalty. As the gradient of the proposed method is roughly proportional to the uncertainty of the predicted likelihoods, we name it adaptive discriminative regularization (ADR), trained along with a standard cross entropy loss in classification. Extensive experiments demonstrate that it can yield consistent and non-trivial performance improvements in a variety of visual classification tasks (over 10 benchmarks). Furthermore, we find it is robust to long-tailed and noisy label data distribution. Its flexible design enables its compatibility with mainstream classification architectures and losses. "
+}

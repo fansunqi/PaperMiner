@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-supervised semantic segmentation"
+  ],
+  "datasets": [
+    "Cityscapes"
+  ],
+  "methods": [
+    "One-way consistency",
+    "Perturbing only the student branch",
+    "Strong photometric and geometric perturbations",
+    "Competitive perturbation model (geometric warp and photometric jittering)"
+  ],
+  "results": [
+    "Clear advantages of one-way consistency, perturbing only the student branch, and strong perturbations",
+    "Perturbation model outperforms recent work, with most contribution from photometric component",
+    "Semi-supervised training can outperform supervised training with coarse labels"
+  ],
+  "paper_id": "60cac0f591e011b32937400d",
+  "title": "Revisiting consistency for semi-supervised semantic segmentation",
+  "abstract": "  Semi-supervised learning an attractive technique in practical deployments of deep models since it relaxes the dependence on labeled data. It is especially important in the scope of dense prediction because pixel-level annotation requires significant effort. This paper considers semi-supervised algorithms that enforce consistent predictions over perturbed unlabeled inputs. We study the advantages of perturbing only one of the two model instances and preventing the backward pass through the unperturbed instance. We also propose a competitive perturbation model as a composition of geometric warp and photometric jittering. We experiment with efficient models due to their importance for real-time and low-power applications. Our experiments show clear advantages of (1) one-way consistency, (2) perturbing only the student branch, and (3) strong photometric and geometric perturbations. Our perturbation model outperforms recent work and most of the contribution comes from photometric component. Experiments with additional data from the large coarsely annotated subset of Cityscapes suggest that semi-supervised training can outperform supervised training with the coarse labels. "
+}

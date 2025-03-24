@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning causal relationship with unmeasured confounding"
+  ],
+  "datasets": [
+    "Singleton births in Pennsylvania (1989-1991)"
+  ],
+  "methods": [
+    "Kernel ridge regression with negative controls"
+  ],
+  "results": [
+    "Uniform consistency",
+    "Finite sample rates of convergence",
+    "Estimation of dose response curve adjusting for unobserved confounding"
+  ],
+  "paper_id": "5fe07b7791e01137d857e4bb",
+  "title": "Kernel Methods for Unobserved Confounding: Negative Controls, Proxies,\n  and Instruments",
+  "abstract": "  Negative control is a strategy for learning the causal relationship between treatment and outcome in the presence of unmeasured confounding. The treatment effect can nonetheless be identified if two auxiliary variables are available: a negative control treatment (which has no effect on the actual outcome), and a negative control outcome (which is not affected by the actual treatment). These auxiliary variables can also be viewed as proxies for a traditional set of control variables, and they bear resemblance to instrumental variables. I propose a family of algorithms based on kernel ridge regression for learning nonparametric treatment effects with negative controls. Examples include dose response curves, dose response curves with distribution shift, and heterogeneous treatment effects. Data may be discrete or continuous, and low, high, or infinite dimensional. I prove uniform consistency and provide finite sample rates of convergence. I estimate the dose response curve of cigarette smoking on infant birth weight adjusting for unobserved confounding due to household income, using a data set of singleton births in the state of Pennsylvania between 1989 and 1991. "
+}

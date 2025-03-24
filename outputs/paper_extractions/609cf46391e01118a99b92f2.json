@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "github.com/arc-l/lattice-rearrangement"
+  ],
+  "tasks": [
+    "Rearrangement problems under pick-n-swap prehensile manipulation model"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cycle-following-based algorithms for 1D and 2D lattices",
+    "Optimality analysis under fully- and partially-labeled settings"
+  ],
+  "results": [
+    "Optimal rearrangement on 1D lattices under both settings",
+    "Asymptotically optimal algorithms for 2D lattices",
+    "1.x-optimality for small number of items",
+    "Simulation studies corroborate effectiveness"
+  ],
+  "paper_id": "609cf46391e01118a99b92f2",
+  "title": "Rearrangement on Lattices with Pick-n-Swaps: Optimality Structures and\n  Efficient Algorithms",
+  "abstract": "  We study a class of rearrangement problems under a novel pick-n-swap prehensile manipulation model, in which a robotic manipulator, capable of carrying an item and making item swaps, is tasked to sort items stored in lattices of variable dimensions in a time-optimal manner. We systematically analyze the intrinsic optimality structure, which is fairly rich and intriguing, under different levels of item distinguishability (fully labeled, where each item has a unique label, or partially labeled, where multiple items may be of the same type) and different lattice dimensions. Focusing on the most practical setting of one and two dimensions, we develop low polynomial time cycle-following-based algorithms that optimally perform rearrangements on 1D lattices under both fully- and partially-labeled settings. On the other hand, we show that rearrangement on 2D and higher-dimensional lattices become computationally intractable to optimally solve. Despite their NP-hardness, we prove that efficient cycle-following-based algorithms remain optimal in the asymptotic sense for 2D fully- and partially-labeled settings, in expectation, using the interesting fact that random permutations induce only a small number of cycles. We further improve these algorithms to provide $1.x$-optimality when the number of items is small. Simulation studies corroborate the effectiveness of our algorithms. The implementation of the algorithms from the paper can be found at github.com/arc-l/lattice-rearrangement. "
+}

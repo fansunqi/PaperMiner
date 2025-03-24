@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Voice Disorder Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Feature extractor model with factorized convolutional neural networks",
+    "Domain adversarial training for domain invariant features"
+  ],
+  "results": [
+    "Unweighted average recall improved by 13% in noisy real-world domain",
+    "Remained at 80% in clinic domain with slight degradation",
+    "Reduced memory and computation usage by over 73.9%"
+  ],
+  "paper_id": "61aed0d75244ab9dcb3a6f30",
+  "title": "Toward Real-World Voice Disorder Classification",
+  "abstract": "  Objective: Voice disorders significantly compromise individuals' ability to speak in their daily lives. Without early diagnosis and treatment, these disorders may deteriorate drastically. Thus, automatic classification systems at home are desirable for people who are inaccessible to clinical disease assessments. However, the performance of such systems may be weakened due to the constrained resources and domain mismatch between the clinical data and noisy real-world data. Methods: This study develops a compact and domain-robust voice disorder classification system to identify the utterances of health, neoplasm, and benign structural diseases. Our proposed system utilizes a feature extractor model composed of factorized convolutional neural networks and subsequently deploys domain adversarial training to reconcile the domain mismatch by extracting domain invariant features. Results: The results show that the unweighted average recall in the noisy real-world domain improved by 13% and remained at 80% in the clinic domain with only slight degradation. The domain mismatch was effectively eliminated. Moreover, the proposed system reduced the usage of both memory and computation by over 73.9%. Conclusion: By deploying factorized convolutional neural networks and domain adversarial training, domain-invariant features can be derived for voice disorder classification with limited resources. The promising results confirm that the proposed system can significantly reduce resource consumption and improve classification accuracy by considering the domain mismatch. Significance: To the best of our knowledge, this is the first study that jointly considers real-world model compression and noise-robustness issues in voice disorder classification. The proposed system is intended for application to embedded systems with limited resources. "
+}

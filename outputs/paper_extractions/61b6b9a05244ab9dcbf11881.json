@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "3D Point Cloud Domain Adaptation"
+  ],
+  "datasets": [
+    "Several 3D point cloud UDA benchmarks"
+  ],
+  "methods": [
+    "Self-Ensembling Network (SEN)",
+    "Mean Teacher",
+    "Semi-supervised learning",
+    "Soft classification loss",
+    "Consistency loss"
+  ],
+  "results": [
+    "SEN outperforms state-of-the-art methods on classification and segmentation tasks",
+    "Better reconstruction results"
+  ],
+  "paper_id": "61b6b9a05244ab9dcbf11881",
+  "title": "Self-Ensemling for 3D Point Cloud Domain Adaption",
+  "abstract": "  Recently 3D point cloud learning has been a hot topic in computer vision and autonomous driving. Due to the fact that it is difficult to manually annotate a qualitative large-scale 3D point cloud dataset, unsupervised domain adaptation (UDA) is popular in 3D point cloud learning which aims to transfer the learned knowledge from the labeled source domain to the unlabeled target domain. However, the generalization and reconstruction errors caused by domain shift with simply-learned model are inevitable which substantially hinder the model's capability from learning good representations. To address these issues, we propose an end-to-end self-ensembling network (SEN) for 3D point cloud domain adaption tasks. Generally, our SEN resorts to the advantages of Mean Teacher and semi-supervised learning, and introduces a soft classification loss and a consistency loss, aiming to achieve consistent generalization and accurate reconstruction. In SEN, a student network is kept in a collaborative manner with supervised learning and self-supervised learning, and a teacher network conducts temporal consistency to learn useful representations and ensure the quality of point clouds reconstruction. Extensive experiments on several 3D point cloud UDA benchmarks show that our SEN outperforms the state-of-the-art methods on both classification and segmentation tasks. Moreover, further analysis demonstrates that our SEN also achieves better reconstruction results. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/mingxuts/multi-center-fed-learning"
+  ],
+  "tasks": [
+    "Personalized decision-making in Federated Learning"
+  ],
+  "datasets": [
+    "multiple benchmark datasets of FL"
+  ],
+  "methods": [
+    "Multi-center aggregation mechanism",
+    "Clients clustering using models' parameters",
+    "Stochastic expectation maximization (EM) algorithm"
+  ],
+  "results": [
+    "Outperforms several popular baseline methods"
+  ],
+  "paper_id": "6125afdd5244ab9dcb3883c2",
+  "title": "Multi-Center Federated Learning: Clients Clustering for Better\n  Personalization",
+  "abstract": "  Personalized decision-making can be implemented in a Federated learning (FL) framework that can collaboratively train a decision model by extracting knowledge across intelligent clients, e.g. smartphones or enterprises. FL can mitigate the data privacy risk of collaborative training since it merely collects local gradients from users without access to their data. However, FL is fragile in the presence of statistical heterogeneity that is commonly encountered in personalized decision-making, e.g., non-IID data over different clients. Existing FL approaches usually update a single global model to capture the shared knowledge of all users by aggregating their gradients, regardless of the discrepancy between their data distributions. By comparison, a mixture of multiple global models could capture the heterogeneity across various clients if assigning the client to different global models (i.e., centers) in FL. To this end, we propose a novel multi-center aggregation mechanism to cluster clients using their models' parameters. It learns multiple global models from data as the cluster centers, and simultaneously derives the optimal matching between users and centers. We then formulate it as an optimization problem that can be efficiently solved by a stochastic expectation maximization (EM) algorithm. Experiments on multiple benchmark datasets of FL show that our method outperforms several popular baseline methods. The experimental source codes are publicly available on the Github repository https://github.com/mingxuts/multi-center-fed-learning . "
+}

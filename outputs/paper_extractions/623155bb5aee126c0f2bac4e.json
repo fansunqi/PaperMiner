@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://zju3dv.github.io/animatable_nerf/"
+  ],
+  "tasks": [
+    "Reconstructing animatable human model from multi-view video"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pose-driven deformation field based on linear blend skinning algorithm"
+  ],
+  "results": [
+    "Significantly outperforms recent human modeling methods"
+  ],
+  "paper_id": "623155bb5aee126c0f2bac4e",
+  "title": "Animatable Implicit Neural Representations for Creating Realistic\n  Avatars from Videos",
+  "abstract": "  This paper addresses the challenge of reconstructing an animatable human model from a multi-view video. Some recent works have proposed to decompose a non-rigidly deforming scene into a canonical neural radiance field and a set of deformation fields that map observation-space points to the canonical space, thereby enabling them to learn the dynamic scene from images. However, they represent the deformation field as translational vector field or SE(3) field, which makes the optimization highly under-constrained. Moreover, these representations cannot be explicitly controlled by input motions. Instead, we introduce a pose-driven deformation field based on the linear blend skinning algorithm, which combines the blend weight field and the 3D human skeleton to produce observation-to-canonical correspondences. Since 3D human skeletons are more observable, they can regularize the learning of the deformation field. Moreover, the pose-driven deformation field can be controlled by input skeletal motions to generate new deformation fields to animate the canonical human model. Experiments show that our approach significantly outperforms recent human modeling methods. The code is available at https://zju3dv.github.io/animatable_nerf/. "
+}

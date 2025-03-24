@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Discrete Contextual Pricing with Observational Data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Formulate loss functions for evaluating pricing policies from observational data",
+    "Adapt ideas from machine learning with corrupted labels",
+    "Derive a class of unbiased loss functions",
+    "Identify minimum variance estimators and robust estimators"
+  ],
+  "results": [
+    "Loss functions can evaluate pricing policies directly from observational data",
+    "Identified estimators are effective in various scenarios"
+  ],
+  "paper_id": "619b0a245244ab9dcb25c734",
+  "title": "Loss Functions for Discrete Contextual Pricing with Observational Data",
+  "abstract": "  We study a pricing setting where each customer is offered a contextualized price based on customer and/or product features. Often only historical sales data are available, so we observe whether a customer purchased a product at the price prescribed rather than the customer's true valuation. Such observational data are influenced by historical pricing policies, which introduce difficulties in evaluating the effectiveness of future policies. The goal of this paper is to formulate loss functions that can be used for evaluating pricing policies directly from observational data, rather than going through an intermediate demand estimation stage, which may suffer from bias. To achieve this, we adapt ideas from machine learning with corrupted labels, where we consider each observed purchase decision as a known probabilistic transformation of the customer's valuation. From this transformation, we derive a class of unbiased loss functions. Within this class, we identify minimum variance estimators and estimators robust to poor demand estimation. Furthermore, we show that for contextual pricing, estimators popular in the off-policy evaluation literature fall within this class of loss functions. We offer managerial insights into scenarios under which these estimators are effective. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Gaussian process regression for large datasets"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Cholesky Gaussian Processes",
+    "Subset selection on the fly",
+    "Probabilistic bounds on full model evidence"
+  ],
+  "results": [
+    "Reduces computational overhead by identifying redundant information",
+    "Adaptive stopping of Cholesky decomposition based on observed data sufficiency"
+  ],
+  "paper_id": "6215a5c85aee126c0f3376ca",
+  "title": "Adaptive Cholesky Gaussian Processes",
+  "abstract": "  We present a method to approximate Gaussian process regression models for large datasets by considering only a subset of the data. Our approach is novel in that the size of the subset is selected on the fly during exact inference with little computational overhead. From an empirical observation that the log-marginal likelihood often exhibits a linear trend once a sufficient subset of a dataset has been observed, we conclude that many large datasets contain redundant information that only slightly affects the posterior. Based on this, we provide probabilistic bounds on the full model evidence that can identify such subsets. Remarkably, these bounds are largely composed of terms that appear in intermediate steps of the standard Cholesky decomposition, allowing us to modify the algorithm to adaptively stop the decomposition once enough data have been observed. "
+}

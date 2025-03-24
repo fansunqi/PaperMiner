@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Flow-augmentation in directed graphs",
+    "Proving fixed-parameter tractability of problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Randomized polynomial-time flow-augmentation algorithm",
+    "Deterministic flow-augmentation procedure"
+  ],
+  "results": [
+    "For every minimal st-cut Z of size at most k, Z becomes a minimum st-cut in the resulting graph with probability 2^{-poly(k)}",
+    "Proves fixed-parameter tractability of Chain SAT and weighted directed cut problems",
+    "Confirms a conjecture of Chitnis, Egri, and Marx regarding List H-Coloring and vertex-deletion problems"
+  ],
+  "paper_id": "618895205244ab9dcb40a748",
+  "title": "Flow-augmentation I: Directed graphs",
+  "abstract": "  We show a flow-augmentation algorithm in directed graphs: There exists a randomized polynomial-time algorithm that, given a directed graph $G$, two vertices $s,t \\in V(G)$, and an integer $k$, adds (randomly) to $G$ a number of arcs such that for every minimal $st$-cut $Z$ in $G$ of size at most $k$, with probability $2^{-\\mathrm{poly}(k)}$ the set $Z$ becomes a minimum $st$-cut in the resulting graph. We also provide a deterministic counterpart of this procedure.   The directed flow-augmentation tool allows us to prove fixed-parameter tractability of a number of problems parameterized by the cardinality of the deletion set, whose parameterized complexity status was repeatedly posed as open problems: (1) Chain SAT, defined by Chitnis, Egri, and Marx [ESA'13, Algorithmica'17], (2) a number of weighted variants of classic directed cut problems, such as Weighted $st$-Cut} or Weighted Directed Feedback Vertex Set. By proving that Chain SAT is FPT, we confirm a conjecture of Chitnis, Egri, and Marx that, for any graph $H$, if the List $H$-Coloring problem is polynomial-time solvable, then the corresponding vertex-deletion problem is fixed-parameter tractable. "
+}

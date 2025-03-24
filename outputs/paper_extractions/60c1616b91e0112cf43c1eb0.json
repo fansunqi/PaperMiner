@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Decision-based adversarial attacks"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "BO-DBA (Bayesian Optimization for Decision-Based Adversarial Attacks)",
+    "Search for directions of perturbations",
+    "Formulate as a BO problem to minimize distortion"
+  ],
+  "results": [
+    "BO-DBA converges within 200 queries vs. over 15,000 for state-of-the-art DBA",
+    "Similar attack success rates to BO-based SBA but with less distortion"
+  ],
+  "paper_id": "60c1616b91e0112cf43c1eb0",
+  "title": "BO-DBA: Query-Efficient Decision-Based Adversarial Attacks via Bayesian\n  Optimization",
+  "abstract": "  Decision-based attacks (DBA), wherein attackers perturb inputs to spoof learning algorithms by observing solely the output labels, are a type of severe adversarial attacks against Deep Neural Networks (DNNs) requiring minimal knowledge of attackers. State-of-the-art DBA attacks relying on zeroth-order gradient estimation require an excessive number of queries. Recently, Bayesian optimization (BO) has shown promising in reducing the number of queries in score-based attacks (SBA), in which attackers need to observe real-valued probability scores as outputs. However, extending BO to the setting of DBA is nontrivial because in DBA only output labels instead of real-valued scores, as needed by BO, are available to attackers. In this paper, we close this gap by proposing an efficient DBA attack, namely BO-DBA. Different from existing approaches, BO-DBA generates adversarial examples by searching so-called \\emph{directions of perturbations}. It then formulates the problem as a BO problem that minimizes the real-valued distortion of perturbations. With the optimized perturbation generation process, BO-DBA converges much faster than the state-of-the-art DBA techniques. Experimental results on pre-trained ImageNet classifiers show that BO-DBA converges within 200 queries while the state-of-the-art DBA techniques need over 15,000 queries to achieve the same level of perturbation distortion. BO-DBA also shows similar attack success rates even as compared to BO-based SBA attacks but with less distortion. "
+}

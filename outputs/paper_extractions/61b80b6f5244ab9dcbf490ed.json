@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Identifying ancient urbanization using remote sensing"
+  ],
+  "datasets": [
+    "unlabeled satellite and historical aerial images",
+    "95,358 unlabeled images",
+    "5,830 labelled images"
+  ],
+  "methods": [
+    "Semi-Supervised Contrastive Learning",
+    "pseudo negative pairs formation by ranking similarities"
+  ],
+  "results": [
+    "testing balanced accuracy of 79.0%",
+    "3.8% improvement over state-of-the-art approaches"
+  ],
+  "paper_id": "61b80b6f5244ab9dcbf490ed",
+  "title": "Semi-Supervised Contrastive Learning for Remote Sensing: Identifying\n  Ancient Urbanization in the South Central Andes",
+  "abstract": "  Archaeology has long faced fundamental issues of sampling and scalar representation. Traditionally, the local-to-regional-scale views of settlement patterns are produced through systematic pedestrian surveys. Recently, systematic manual survey of satellite and aerial imagery has enabled continuous distributional views of archaeological phenomena at interregional scales. However, such 'brute force' manual imagery survey methods are both time- and labor-intensive, as well as prone to inter-observer differences in sensitivity and specificity. The development of self-supervised learning methods offers a scalable learning scheme for locating archaeological features using unlabeled satellite and historical aerial images. However, archaeological features are generally only visible in a very small proportion relative to the landscape, while the modern contrastive-supervised learning approach typically yields an inferior performance on highly imbalanced datasets. In this work, we propose a framework to address this long-tail problem. As opposed to the existing contrastive learning approaches that treat the labelled and unlabeled data separately, our proposed method reforms the learning paradigm under a semi-supervised setting in order to utilize the precious annotated data (<7% in our setting). Specifically, the highly unbalanced nature of the data is employed as the prior knowledge in order to form pseudo negative pairs by ranking the similarities between unannotated image patches and annotated anchor images. In this study, we used 95,358 unlabeled images and 5,830 labelled images in order to solve the issues associated with detecting ancient buildings from a long-tailed satellite image dataset. From the results, our semi-supervised contrastive learning model achieved a promising testing balanced accuracy of 79.0%, which is a 3.8% improvement as compared to other state-of-the-art approaches. "
+}

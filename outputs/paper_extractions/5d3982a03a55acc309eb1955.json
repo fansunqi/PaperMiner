@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Constrained clustering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "5d3982a03a55acc309eb1955",
+  "title": "Constrained Clustering: General Pairwise and Cardinality Constraints",
+  "abstract": "  We study constrained clustering, where constraints guide the clustering process. In existing works, two categories of constraints have been widely explored, namely pairwise and cardinality constraints. Pairwise constraints enforce the cluster labels of two instances to be the same (must-link constraints) or different (cannot-link constraints). Cardinality constraints encourage cluster sizes to satisfy a user-specified distribution. Most existing constrained clustering models can only utilize one category of constraints at a time. We enforce the above two categories into a unified clustering model starting with the integer program formulation of the standard K-means. As the two categories provide different useful information, utilizing both allow for better clustering performance. However, the optimization is difficult due to the binary and quadratic constraints in the unified formulation. To solve this, we utilize two techniques: equivalently replacing the binary constraints by the intersection of two continuous constraints; the other is transforming the quadratic constraints into bi-linear constraints by introducing extra variables. We derive an equivalent continuous reformulation with simple constraints, which can be efficiently solved by Alternating Direction Method of Multipliers. Extensive experiments on both synthetic and real data demonstrate when: (1) utilizing a single category of constraint, the proposed model is superior to or competitive with SOTA constrained clustering models, and (2) utilizing both categories of constraints jointly, the proposed model shows better performance than the case of the single category. The experiments show that the proposed method exploits the constraints to achieve perfect clustering performance with improved clustering to 2%-5% in classical clustering metrics, e.g. Adjusted Random, Mirkin's, and Huber's, indices outerperfomring other methods. "
+}

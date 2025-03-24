@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Objective-Based Uncertainty Quantification",
+    "Optimal Experimental Design"
+  ],
+  "datasets": [
+    "Kuramoto models"
+  ],
+  "methods": [
+    "Neural Message Passing",
+    "Axiomatic Constraint Loss"
+  ],
+  "results": [
+    "Accelerate MOCU-based OED by four to five orders of magnitude",
+    "No visible performance loss compared to state-of-the-art"
+  ],
+  "paper_id": "623004385aee126c0f9b5134",
+  "title": "Neural Message Passing for Objective-Based Uncertainty Quantification\n  and Optimal Experimental Design",
+  "abstract": "  Various real-world scientific applications involve the mathematical modeling of complex uncertain systems with numerous unknown parameters. Accurate parameter estimation is often practically infeasible in such systems, as the available training data may be insufficient and the cost of acquiring additional data may be high. In such cases, based on a Bayesian paradigm, we can design robust operators retaining the best overall performance across all possible models and design optimal experiments that can effectively reduce uncertainty to enhance the performance of such operators maximally. While objective-based uncertainty quantification (objective-UQ) based on MOCU (mean objective cost of uncertainty) provides an effective means for quantifying uncertainty in complex systems, the high computational cost of estimating MOCU has been a challenge in applying it to real-world scientific/engineering problems. In this work, we propose a novel scheme to reduce the computational cost for objective-UQ via MOCU based on a data-driven approach. We adopt a neural message-passing model for surrogate modeling, incorporating a novel axiomatic constraint loss that penalizes an increase in the estimated system uncertainty. As an illustrative example, we consider the optimal experimental design (OED) problem for uncertain Kuramoto models, where the goal is to predict the experiments that can most effectively enhance robust synchronization performance through uncertainty reduction. We show that our proposed approach can accelerate MOCU-based OED by four to five orders of magnitude, without any visible performance loss compared to the state-of-the-art. The proposed approach applies to general OED tasks, beyond the Kuramoto model. "
+}

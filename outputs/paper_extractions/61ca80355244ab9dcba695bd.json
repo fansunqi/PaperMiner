@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "DNN backdoor testing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CatchBackdoor framework",
+    "Differential fuzzing of critical neurons",
+    "Identification of trojan paths"
+  ],
+  "results": [
+    "Higher detection performance than existing methods",
+    "Better detection of backdoors by stealthy blending and adaptive attacks",
+    "Potential backdoors revelation in Model Zoo"
+  ],
+  "paper_id": "61ca80355244ab9dcba695bd",
+  "title": "CatchBackdoor: Backdoor Testing by Critical Trojan Neural Path\n  Identification via Differential Fuzzing",
+  "abstract": "  The success of deep neural networks (DNNs) in real-world applications has benefited from abundant pre-trained models. However, the backdoored pre-trained models can pose a significant trojan threat to the deployment of downstream DNNs. Existing DNN testing methods are mainly designed to find incorrect corner case behaviors in adversarial settings but fail to discover the backdoors crafted by strong trojan attacks. Observing the trojan network behaviors shows that they are not just reflected by a single compromised neuron as proposed by previous work but attributed to the critical neural paths in the activation intensity and frequency of multiple neurons. This work formulates the DNN backdoor testing and proposes the CatchBackdoor framework. Via differential fuzzing of critical neurons from a small number of benign examples, we identify the trojan paths and particularly the critical ones, and generate backdoor testing examples by simulating the critical neurons in the identified paths. Extensive experiments demonstrate the superiority of CatchBackdoor, with higher detection performance than existing methods. CatchBackdoor works better on detecting backdoors by stealthy blending and adaptive attacks, which existing methods fail to detect. Moreover, our experiments show that CatchBackdoor may reveal the potential backdoors of models in Model Zoo. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Motion-resilient Heart Rate Monitoring"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "In-ear audio-based HR monitoring",
+    "Deep learning based motion artefact mitigation",
+    "HR estimation algorithm"
+  ],
+  "results": [
+    "MAE: 3.02 \u00b1 2.97 BPM (stationary)",
+    "MAE: 8.12 \u00b1 6.74 BPM (walking)",
+    "MAE: 11.23 \u00b1 9.20 BPM (running)",
+    "MAE: 9.39 \u00b1 6.97 BPM (speaking)",
+    "Outperforms previous in-ear HR monitoring and in-ear PPG performance"
+  ],
+  "paper_id": "6125afff5244ab9dcb389fa4",
+  "title": "hEARt: Motion-resilient Heart Rate Monitoring with In-ear Microphones",
+  "abstract": "  With the soaring adoption of in-ear wearables, the research community has started investigating suitable in-ear heart rate (HR) detection systems. HR is a key physiological marker of cardiovascular health and physical fitness. Continuous and reliable HR monitoring with wearable devices has therefore gained increasing attention in recent years. Existing HR detection systems in wearables mainly rely on photoplethysmography (PPG) sensors, however, these are notorious for poor performance in the presence of human motion. In this work, leveraging the occlusion effect that enhances low-frequency bone-conducted sounds in the ear canal, we investigate for the first time \\textit{in-ear audio-based motion-resilient} HR monitoring. We first collected HR-induced sounds in the ear canal leveraging an in-ear microphone under stationary and three different activities (i.e., walking, running, and speaking). Then, we devised a novel deep learning based motion artefact (MA) mitigation framework to denoise the in-ear audio signals, followed by an HR estimation algorithm to extract HR. With data collected from 20 subjects over four activities, we demonstrate that hEARt, our end-to-end approach, achieves a mean absolute error (MAE) of 3.02 $\\pm$ 2.97~BPM, 8.12 $\\pm$ 6.74~BPM, 11.23 $\\pm$ 9.20~BPM and 9.39 $\\pm$ 6.97~BPM for stationary, walking, running and speaking, respectively, opening the door to a new non-invasive and affordable HR monitoring with usable performance for daily activities. Not only does hEARt outperform previous in-ear HR monitoring work, but it outperforms reported in-ear PPG performance. "
+}

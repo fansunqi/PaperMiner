@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sequence modeling",
+    "Sequence-to-sequence mapping"
+  ],
+  "datasets": [
+    "Speech data",
+    "Image data"
+  ],
+  "methods": [
+    "Flow-based Recurrent Mixture Density Network",
+    "Gaussian mixture model on non-linearly transformed target sequence",
+    "Normalizing flow"
+  ],
+  "results": [
+    "Significantly improves fit to image sequences measured by log-likelihood",
+    "Outperforms state-of-the-art methods in terms of log-likelihood"
+  ],
+  "paper_id": "5f2bee6091e011b36ba9d0ee",
+  "title": "FRMDN: Flow-based Recurrent Mixture Density Network",
+  "abstract": "  The class of recurrent mixture density networks is an important class of probabilistic models used extensively in sequence modeling and sequence-to-sequence mapping applications. In this class of models, the density of a target sequence in each time-step is modeled by a Gaussian mixture model with the parameters given by a recurrent neural network. In this paper, we generalize recurrent mixture density networks by defining a Gaussian mixture model on a non-linearly transformed target sequence in each time-step. The non-linearly transformed space is created by normalizing flow. We observed that this model significantly improves the fit to image sequences measured by the log-likelihood. We also applied the proposed model on some speech and image data, and observed that the model has significant modeling power outperforming other state-of-the-art methods in terms of the log-likelihood. "
+}

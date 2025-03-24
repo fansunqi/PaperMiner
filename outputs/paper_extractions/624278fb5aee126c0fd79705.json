@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/nikvaessen/w2v2-speaker-few-samples"
+  ],
+  "tasks": [
+    "Speaker recognition"
+  ],
+  "datasets": [
+    "VoxCeleb2 subsets"
+  ],
+  "methods": [
+    "X-vector",
+    "ECAPA-TDNN",
+    "wav2vec2"
+  ],
+  "results": [
+    "Self-supervised, pre-trained weights of wav2vec2 improve performance with limited data"
+  ],
+  "paper_id": "624278fb5aee126c0fd79705",
+  "title": "Training speaker recognition systems with limited data",
+  "abstract": "  This work considers training neural networks for speaker recognition with a much smaller dataset size compared to contemporary work. We artificially restrict the amount of data by proposing three subsets of the popular VoxCeleb2 dataset. These subsets are restricted to 50\\,k audio files (versus over 1\\,M files available), and vary on the axis of number of speakers and session variability. We train three speaker recognition systems on these subsets; the X-vector, ECAPA-TDNN, and wav2vec2 network architectures. We show that the self-supervised, pre-trained weights of wav2vec2 substantially improve performance when training data is limited. Code and data subsets are available at https://github.com/nikvaessen/w2v2-speaker-few-samples. "
+}

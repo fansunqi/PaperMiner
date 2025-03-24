@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial training for robust deep neural networks"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Dynamic Efficient Adversarial Training (DEAT)",
+    "M+ acceleration based on gradient magnitude"
+  ],
+  "results": [
+    "Significantly improves training efficiency of existing adversarial training methods",
+    "Achieves similar robustness performance"
+  ],
+  "paper_id": "60421e0191e0115d09aff339",
+  "title": "Dynamic Efficient Adversarial Training Guided by Gradient Magnitude",
+  "abstract": "  Adversarial training is an effective but time-consuming way to train robust deep neural networks that can withstand strong adversarial attacks. As a response to its inefficiency, we propose Dynamic Efficient Adversarial Training (DEAT), which gradually increases the adversarial iteration during training. We demonstrate that the gradient's magnitude correlates with the curvature of the trained model's loss landscape, allowing it to reflect the effect of adversarial training. Therefore, based on the magnitude of the gradient, we propose a general acceleration strategy, M+ acceleration, which enables an automatic and highly effective method of adjusting the training procedure. M+ acceleration is computationally efficient and easy to implement. It is suited for DEAT and compatible with the majority of existing adversarial training techniques. Extensive experiments have been done on CIFAR-10 and ImageNet datasets with various training environments. The results show that the proposed M+ acceleration significantly improves the training efficiency of existing adversarial training methods while achieving similar robustness performance. This demonstrates that the strategy is highly adaptive and offers a valuable solution for automatic adversarial training. "
+}

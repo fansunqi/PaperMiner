@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robustness Verification for Attention Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sparsemax-based ATNs",
+    "Mixed Integer Quadratically Constrained Programming (MIQCP)",
+    "Pre-processing heuristics"
+  ],
+  "results": [
+    "ATNs are not necessarily more robust than MLP NNs",
+    "Sparsemax-based ATNs compared against MLP NNs in Land Departure Warning application"
+  ],
+  "paper_id": "620330d95aee126c0f0c241a",
+  "title": "Are Attention Networks More Robust? Towards Exact Robustness\n  Verification for Attention Networks",
+  "abstract": "  Attention Networks (ATNs) such as Transformers are used in many domains ranging from Natural Language Processing to Autonomous Driving. In this paper, we study the robustness problem of ATNs, a key characteristic where low robustness may cause safety concerns. Specifically, we focus on Sparsemax-based ATNs and reduce the finding of their maximum robustness to a Mixed Integer Quadratically Constrained Programming (MIQCP) problem. We also design two pre-processing heuristics that can be embedded in the MIQCP encoding and substantially accelerate its solving. We then conduct experiments using the application of Land Departure Warning to compare the robustness of Sparsemax-based ATNs against that of the more conventional Multi-Layer-Perceptron (MLP) Neural Networks (NNs). To our surprise, ATNs are not necessarily more robust, leading to profound considerations in selecting appropriate NN architectures for safety-critical domain applications. "
+}

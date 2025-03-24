@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Channel Pruning",
+    "Model Compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Class-Aware Trace Ratio Optimization (CATRO)",
+    "Two-stage greedy iterative optimization"
+  ],
+  "results": [
+    "Higher accuracy with similar computation cost",
+    "Lower computation cost with similar accuracy",
+    "Suitable for pruning networks adaptively for classification subtasks"
+  ],
+  "paper_id": "61722bdf5244ab9dcb6f0ad5",
+  "title": "CATRO: Channel Pruning via Class-Aware Trace Ratio Optimization",
+  "abstract": "  Deep convolutional neural networks are shown to be overkill with high parametric and computational redundancy in many application scenarios, and an increasing number of works have explored model pruning to obtain lightweight and efficient networks. However, most existing pruning approaches are driven by empirical heuristic and rarely consider the joint impact of channels, leading to unguaranteed and suboptimal performance. In this paper, we propose a novel channel pruning method via Class-Aware Trace Ratio Optimization (CATRO) to reduce the computational burden and accelerate the model inference. Utilizing class information from a few samples, CATRO measures the joint impact of multiple channels by feature space discriminations and consolidates the layer-wise impact of preserved channels. By formulating channel pruning as a submodular set function maximization problem, CATRO solves it efficiently via a two-stage greedy iterative optimization procedure. More importantly, we present theoretical justifications on convergence of CATRO and performance of pruned networks. Experimental results demonstrate that CATRO achieves higher accuracy with similar computation cost or lower computation cost with similar accuracy than other state-of-the-art channel pruning algorithms. In addition, because of its class-aware property, CATRO is suitable to prune efficient networks adaptively for various classification subtasks, enhancing handy deployment and usage of deep networks in real-world applications. "
+}

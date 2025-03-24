@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Extract Class Refactoring Recommendation"
+  ],
+  "datasets": [
+    "Sixteen actual God Classes from two well-known open-source systems"
+  ],
+  "methods": [
+    "Variational Graph Auto-Encoder",
+    "Graph of methods",
+    "Structural similarity",
+    "Semantic representation methods",
+    "Clustering methods"
+  ],
+  "results": [
+    "Better results for almost all the God Classes used in the experiment",
+    "Assessed using three different class cohesion metrics"
+  ],
+  "paper_id": "6232a74e5aee126c0fe1407b",
+  "title": "Exploring Variational Graph Auto-Encoders for Extract Class Refactoring\n  Recommendation",
+  "abstract": "  The code smell is a sign of design and development flaws in a software system that reduces the reusability and maintainability of the system. Refactoring is done as an ongoing practice to remove the code smell from the program code. Among different code smells, the God class or Blob is one of the most common code smells. A god class contains too many responsibilities, violating object-oriented programming design's low coupling and high cohesiveness principles. This paper proposes an automatic approach to extracting a God class into multiple smaller classes with more specific responsibilities. To do this, we first construct a graph of methods (as nodes) for the concerning god class. The edge between any two methods is determined by their structural similarity, and the feature for each method is initialized using different semantic representation methods. Then, the variational graph auto-encoder is used to learn a vector representation for each method. Finally, the learned vectors are used to cluster methods into different groups to be recommended as refactored classes. We assessed the proposed framework using three different class cohesion metrics on sixteen actual God Classes collected from two well-known open-source systems. We also conducted a comparative study of our approach with a similar existing approach and found that the proposed approach generated better results for almost all the God Classes used in the experiment. "
+}

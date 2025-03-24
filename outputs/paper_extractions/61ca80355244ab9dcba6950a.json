@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Carrier scheduling for backscatter networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DeepGANTT using graph neural networks"
+  ],
+  "results": [
+    "Performance within 3% of the optimal scheduler",
+    "Generalizes to networks 6x larger in nodes and 10x larger in tags",
+    "Reduces carrier utilization by up to 50% compared to state-of-the-art heuristic"
+  ],
+  "paper_id": "61ca80355244ab9dcba6950a",
+  "title": "DeepGANTT: A Scalable Deep Learning Scheduler for Backscatter Networks",
+  "abstract": "  Novel backscatter communication techniques enable battery-free sensor tags to interoperate with unmodified standard IoT devices, extending a sensor network's capabilities in a scalable manner. Without requiring additional dedicated infrastructure, the battery-free tags harvest energy from the environment, while the IoT devices provide them with the unmodulated carrier they need to communicate. A schedule coordinates the provision of carriers for the communications of battery-free devices with IoT nodes. Optimal carrier scheduling is an NP-hard problem that limits the scalability of network deployments. Thus, existing solutions waste energy and other valuable resources by scheduling the carriers suboptimally. We present DeepGANTT, a deep learning scheduler that leverages graph neural networks to efficiently provide near-optimal carrier scheduling. We train our scheduler with relatively small optimal schedules obtained from a constraint optimization solver, achieving a performance within 3% of the optimal scheduler. Without the need to retrain, DeepGANTT generalizes to networks 6x larger in the number of nodes and 10x larger in the number of tags than those used for training, breaking the scalability limitations of the optimal scheduler and reducing carrier utilization by up to 50% compared to the state-of-the-art heuristic. Our scheduler efficiently reduces energy and spectrum utilization in backscatter networks. "
+}

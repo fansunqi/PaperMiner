@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formalize semantics of digital circuits",
+    "Refine equational theory for digital circuits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Interpreting circuits as functions on streams",
+    "Introducing key equations for eliminating non-delay-guarded feedback and translating between circuits",
+    "Using denotational model to improve operational semantics"
+  ],
+  "results": [
+    "Established correspondence between denotational and equational frameworks",
+    "Derived simpler equations for intuitive reasoning",
+    "Provided recipe to ensure circuits produce observable output"
+  ],
+  "paper_id": "61f0bbe05244ab9dcb731e8c",
+  "title": "A compositional theory of digital circuits",
+  "abstract": "  A syntax is compositional if complex components can be constructed out of simpler ones on the basis of their interfaces, without inspecting their internals. Digital circuits, despite having been studied for nearly a century and used at scale for about half that time, have until recently evaded a fully compositional theoretical understanding. The sticking point has been the need to avoid feedback loops that bypass memory elements, the so called `combinational feedback' problem. This requires examining the internal structure of a circuit, defeating compositionality. Recent work remedied this theoretical shortcoming by showing how digital circuits can be presented compositionally as morphisms in a freely generated Cartesian traced (dataflow) category. The focus was to support a better syntactical understanding of digital circuits, culminating in the formulation of novel operational semantics for digital circuits using an equational theory. The goals of this paper are twofold. First we formalise the semantics of digital circuits by interpreting them as functions on streams with certain properties. Second we refine the previous equational theory so that it is in perfect agreement with the semantic model. To support this result we introduce two key equations: the first can eliminate non-delay-guarded feedback via finite unfoldings, and the second can translate between circuits with the same behaviour syntactically by reducing the problem to checking a finite number of closed circuits. While these are enough to establish a correspondence between the denotational and the equational frameworks, we also show how simpler equations can be derived for more intuitive reasoning. The most important consequence of this is that we can now give a recipe that ensures a circuit always produces observable output, thus using the denotational model to inform and improve the operational semantics. "
+}

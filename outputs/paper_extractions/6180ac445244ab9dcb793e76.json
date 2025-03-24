@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "http://vis.xyz/pub/dla-afa"
+  ],
+  "tasks": [
+    "Dense prediction",
+    "Semantic segmentation",
+    "Boundary detection"
+  ],
+  "datasets": [
+    "Cityscapes",
+    "BDD100K",
+    "Mapillary Vistas",
+    "BSDS500",
+    "NYUDv2"
+  ],
+  "methods": [
+    "Attentive Feature Aggregation (AFA)",
+    "Scale-Space Rendering (SSR)"
+  ],
+  "results": [
+    "Improves DLA model by nearly 6% mIoU on Cityscapes",
+    "New state-of-the-art results on boundary detection benchmarks"
+  ],
+  "paper_id": "6180ac445244ab9dcb793e76",
+  "title": "Dense Prediction with Attentive Feature Aggregation",
+  "abstract": "  Aggregating information from features across different layers is an essential operation for dense prediction models. Despite its limited expressiveness, feature concatenation dominates the choice of aggregation operations. In this paper, we introduce Attentive Feature Aggregation (AFA) to fuse different network layers with more expressive non-linear operations. AFA exploits both spatial and channel attention to compute weighted average of the layer activations. Inspired by neural volume rendering, we extend AFA with Scale-Space Rendering (SSR) to perform late fusion of multi-scale predictions. AFA is applicable to a wide range of existing network designs. Our experiments show consistent and significant improvements on challenging semantic segmentation benchmarks, including Cityscapes, BDD100K, and Mapillary Vistas, at negligible computational and parameter overhead. In particular, AFA improves the performance of the Deep Layer Aggregation (DLA) model by nearly 6% mIoU on Cityscapes. Our experimental analyses show that AFA learns to progressively refine segmentation maps and to improve boundary details, leading to new state-of-the-art results on boundary detection benchmarks on BSDS500 and NYUDv2. Code and video resources are available at http://vis.xyz/pub/dla-afa. "
+}

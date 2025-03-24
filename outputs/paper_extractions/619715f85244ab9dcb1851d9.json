@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Individualized Decision Making"
+  ],
+  "datasets": [
+    "Warfarin study data"
+  ],
+  "methods": [
+    "Jump Interval-Learning",
+    "Individualized Interval-Valued Decision Rule (I2DR)",
+    "Jump Penalized Regression",
+    "Dynamic Programming for searching algorithm"
+  ],
+  "results": [
+    "Empirical validity demonstrated through extensive simulations and real data application",
+    "Statistical properties established for piecewise or continuous outcome regression function"
+  ],
+  "paper_id": "619715f85244ab9dcb1851d9",
+  "title": "Jump Interval-Learning for Individualized Decision Making",
+  "abstract": "  An individualized decision rule (IDR) is a decision function that assigns each individual a given treatment based on his/her observed characteristics. Most of the existing works in the literature consider settings with binary or finitely many treatment options. In this paper, we focus on the continuous treatment setting and propose a jump interval-learning to develop an individualized interval-valued decision rule (I2DR) that maximizes the expected outcome. Unlike IDRs that recommend a single treatment, the proposed I2DR yields an interval of treatment options for each individual, making it more flexible to implement in practice. To derive an optimal I2DR, our jump interval-learning method estimates the conditional mean of the outcome given the treatment and the covariates via jump penalized regression, and derives the corresponding optimal I2DR based on the estimated outcome regression function. The regressor is allowed to be either linear for clear interpretation or deep neural network to model complex treatment-covariates interactions. To implement jump interval-learning, we develop a searching algorithm based on dynamic programming that efficiently computes the outcome regression function. Statistical properties of the resulting I2DR are established when the outcome regression function is either a piecewise or continuous function over the treatment space. We further develop a procedure to infer the mean outcome under the (estimated) optimal policy. Extensive simulations and a real data application to a warfarin study are conducted to demonstrate the empirical validity of the proposed I2DR. "
+}

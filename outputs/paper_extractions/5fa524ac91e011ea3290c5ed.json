@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predictive process monitoring",
+    "Process model forecasting"
+  ],
+  "datasets": [
+    "real-life event logs"
+  ],
+  "methods": [
+    "Processes-As-Movies (PAM)",
+    "Recurrent neural network topologies",
+    "Encoder-decoder long short-term memory networks",
+    "Convolutional long short-term memory networks"
+  ],
+  "results": [
+    "Effective in terms of predictive accuracy and precision"
+  ],
+  "paper_id": "5fa524ac91e011ea3290c5ed",
+  "title": "Predictive Process Model Monitoring using Recurrent Neural Networks",
+  "abstract": "  The field of predictive process monitoring focuses on case-level models to predict a single specific outcome such as a particular objective, (remaining) time, or next activity/remaining sequence. Recently, a longer-horizon, model-wide approach has been proposed in the form of process model forecasting, which predicts the future state of a whole process model through the forecasting of all activity-to-activity relations at once using time series forecasting.   This paper introduces the concept of \\emph{predictive process model monitoring} which sits in the middle of both predictive process monitoring and process model forecasting. Concretely, by modelling a process model as a set of constraints being present between activities over time, we can capture more detailed information between activities compared to process model forecasting, while being compatible with typical predictive process monitoring objectives which are often expressed in the same language as these constraints. To achieve this, Processes-As-Movies (PAM) is introduced, i.e., a novel technique capable of jointly mining and predicting declarative process constraints between activities in various windows of a process' execution. PAM predicts what declarative rules hold for a trace (objective-based), which also supports the prediction of all constraints together as a process model (model-based). Various recurrent neural network topologies inspired by video analysis tailored to temporal high-dimensional input are used to model the process model evolution with windows as time steps, including encoder-decoder long short-term memory networks, and convolutional long short-term memory networks. Results obtained over real-life event logs show that these topologies are effective in terms of predictive accuracy and precision. "
+}

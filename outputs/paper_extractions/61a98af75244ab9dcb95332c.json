@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Feature-based Subpixel Alignment",
+    "Patch-based Matching"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized Closed-form Formulae for Subpixel Disparity Computation",
+    "NCC, SSD, SAD cost functions"
+  ],
+  "results": [
+    "Small improvement over state-of-the-art cost-based methods in one dimensional search spaces",
+    "Significant improvement in two dimensional search spaces"
+  ],
+  "paper_id": "61a98af75244ab9dcb95332c",
+  "title": "Generalized Closed-form Formulae for Feature-based Subpixel Alignment in\n  Patch-based Matching",
+  "abstract": "  Cost-based image patch matching is at the core of various techniques in computer vision, photogrammetry and remote sensing. When the subpixel disparity between the reference patch in the source and target images is required, either the cost function or the target image have to be interpolated. While cost-based interpolation is the easiest to implement, multiple works have shown that image based interpolation can increase the accuracy of the subpixel matching, but usually at the cost of expensive search procedures. This, however, is problematic, especially for very computation intensive applications such as stereo matching or optical flow computation. In this paper, we show that closed form formulae for subpixel disparity computation for the case of one dimensional matching, e.g., in the case of rectified stereo images where the search space is of one dimension, exists when using the standard NCC, SSD and SAD cost functions. We then demonstrate how to generalize the proposed formulae to the case of high dimensional search spaces, which is required for unrectified stereo matching and optical flow extraction. We also compare our results with traditional cost volume interpolation formulae as well as with state-of-the-art cost-based refinement methods, and show that the proposed formulae bring a small improvement over the state-of-the-art cost-based methods in the case of one dimensional search spaces, and a significant improvement when the search space is two dimensional. "
+}

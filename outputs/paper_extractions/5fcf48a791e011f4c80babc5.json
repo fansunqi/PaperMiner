@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Crystal structure search",
+    "Predicting structural relaxations"
+  ],
+  "datasets": [
+    "Dataset of Random Relaxations for Crystal Structure Search of Li-Si System"
+  ],
+  "methods": [
+    "Graph neural networks",
+    "Density functional theory calculations",
+    "Random perturbation of atomic positions"
+  ],
+  "results": [
+    "Up to two orders of magnitude decrease in error",
+    "Accurate simulation of relaxations",
+    "Finding an experimentally verified structure",
+    "Improved accuracy and out-of-domain generalization"
+  ],
+  "paper_id": "5fcf48a791e011f4c80babc5",
+  "title": "Dataset of Random Relaxations for Crystal Structure Search of Li-Si\n  System",
+  "abstract": "  Crystal structure search is a long-standing challenge in materials design. We present a dataset of more than 100,000 structural relaxations of potential battery anode materials from randomized structures using density functional theory calculations. We illustrate the usage of the dataset by training graph neural networks to predict structural relaxations from randomly generated structures. Our models directly predict stresses in addition to forces, which allows them to accurately simulate relaxations of both ionic positions and lattice vectors. We show that models trained on the molecular dynamics simulations fail to simulate relaxations from random structures, while training on our data leads to up to two orders of magnitude decrease in error for the same task. Our model is able to find an experimentally verified structure of a stoichiometry held out from training. We find that randomly perturbing atomic positions during training improves both the accuracy and out of domain generalization of the models. "
+}

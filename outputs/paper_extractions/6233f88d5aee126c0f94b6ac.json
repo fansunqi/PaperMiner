@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Combinatorial query problems",
+    "Query game optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "General framework for finding short solutions to query games"
+  ],
+  "results": [
+    "New self-contained proofs of the query complexity of variations of coin-weighing problems",
+    "Deterministic query complexity of Mastermind with n positions and k colors is \u0398(n log k)",
+    "First up-to-constant-factor optimal algorithm for the Group Testing problem with k defectives"
+  ],
+  "paper_id": "6233f88d5aee126c0f94b6ac",
+  "title": "Optimal schemes for combinatorial query problems with integer feedback",
+  "abstract": "  A query game is a pair of a set $Q$ of queries and a set $\\mathcal{F}$ of functions, or codewords $f:Q\\rightarrow \\mathbb{Z}.$ We think of this as a two-player game. One player, Codemaker, picks a hidden codeword $f\\in \\mathcal{F}$. The other player, Codebreaker, then tries to determine $f$ by asking a sequence of queries $q\\in Q$, after each of which Codemaker must respond with the value $f(q)$. The goal of Codebreaker is to uniquely determine $f$ using as few queries as possible. Two classical examples of such games are coin-weighing with a spring scale, and Mastermind, which are of interest both as recreational games and for their connection to information theory.   In this paper, we will present a general framework for finding short solutions to query games. As applications, we give new self-contained proofs of the query complexity of variations of the coin-weighing problems, and prove new results that the deterministic query complexity of Mastermind with $n$ positions and $k$ colors is $\\Theta(n \\log k/ \\log n + k)$ if only black-peg information is provided, and $\\Theta(n \\log k / \\log n + k/n)$ if both black- and white-peg information is provided. In the deterministic setting, these are the first up to constant factor optimal solutions to Mastermind known for any $k\\geq n^{1-o(1)}$. "
+}

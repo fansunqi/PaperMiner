@@ -1,0 +1,25 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Graph Clustering",
+    "Node Clustering in Attributed Graphs"
+  ],
+  "datasets": [
+    "6 real-world datasets"
+  ],
+  "methods": [
+    "Random-walk based Self-supervised Learning (RwSL)",
+    "Generalized PageRank",
+    "Self-supervised Mini-batch Training",
+    "Deep Neural Network for Sample-Cluster Assignment",
+    "Autoencoder for Clustering-oriented Embedding"
+  ],
+  "results": [
+    "Improved results over recent baselines",
+    "Scalability beyond graphs with more than one million nodes",
+    "Node clustering on a graph with 1.8 billion edges using a single GPU"
+  ],
+  "paper_id": "61d2693a5244ab9dcbc5f4fa",
+  "title": "Scalable Deep Graph Clustering with Random-walk based Self-supervised\n  Learning",
+  "abstract": "  Web-based interactions can be frequently represented by an attributed graph, and node clustering in such graphs has received much attention lately. Multiple efforts have successfully applied Graph Convolutional Networks (GCN), though with some limits on accuracy as GCNs have been shown to suffer from over-smoothing issues. Though other methods (particularly those based on Laplacian Smoothing) have reported better accuracy, a fundamental limitation of all the work is a lack of scalability. This paper addresses this open problem by relating the Laplacian smoothing to the Generalized PageRank and applying a random-walk based algorithm as a scalable graph filter. This forms the basis for our scalable deep clustering algorithm, RwSL, where through a self-supervised mini-batch training mechanism, we simultaneously optimize a deep neural network for sample-cluster assignment distribution and an autoencoder for a clustering-oriented embedding. Using 6 real-world datasets and 6 clustering metrics, we show that RwSL achieved improved results over several recent baselines. Most notably, we show that RwSL, unlike all other deep clustering frameworks, can continue to scale beyond graphs with more than one million nodes, i.e., handle web-scale. We also demonstrate how RwSL could perform node clustering on a graph with 1.8 billion edges using only a single GPU. "
+}

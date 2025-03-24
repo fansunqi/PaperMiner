@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/tpark94/spnv2"
+  ],
+  "tasks": [
+    "Spacecraft Pose Estimation",
+    "Multi-Task Learning",
+    "Domain Adaptation"
+  ],
+  "datasets": [
+    "Synthetic Images",
+    "Target Domain Images"
+  ],
+  "methods": [
+    "Spacecraft Pose Network v2 (SPNv2)",
+    "Multi-scale, Multi-task CNN",
+    "Online Domain Refinement (ODR)",
+    "Self-supervised Entropy Minimization"
+  ],
+  "results": [
+    "Improved performance on target domain images without pose labels",
+    "Minimal computational efforts for ODR"
+  ],
+  "paper_id": "62281aea5aee126c0f7aaefa",
+  "title": "Robust Multi-Task Learning and Online Refinement for Spacecraft Pose\n  Estimation across Domain Gap",
+  "abstract": "  This work presents Spacecraft Pose Network v2 (SPNv2), a Convolutional Neural Network (CNN) for pose estimation of noncooperative spacecraft across domain gap. SPNv2 is a multi-scale, multi-task CNN which consists of a shared multi-scale feature encoder and multiple prediction heads that perform different tasks on a shared feature output. These tasks are all related to detection and pose estimation of a target spacecraft from an image, such as prediction of pre-defined satellite keypoints, direct pose regression, and binary segmentation of the satellite foreground. It is shown that by jointly training on different yet related tasks with extensive data augmentations on synthetic images only, the shared encoder learns features that are common across image domains that have fundamentally different visual characteristics compared to synthetic images. This work also introduces Online Domain Refinement (ODR) which refines the parameters of the normalization layers of SPNv2 on the target domain images online at deployment. Specifically, ODR performs self-supervised entropy minimization of the predicted satellite foreground, thereby improving the CNN's performance on the target domain images without their pose labels and with minimal computational efforts. The GitHub repository for SPNv2 is available at https://github.com/tpark94/spnv2. "
+}

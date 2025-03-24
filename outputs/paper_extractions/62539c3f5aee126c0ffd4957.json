@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Label Image Recognition"
+  ],
+  "datasets": [
+    "MS-COCO",
+    "Pascal VOC 2007"
+  ],
+  "methods": [
+    "Semantic Representation and Dependency Learning (SRDL)",
+    "Category-specific Attentional Regions (CAR) module",
+    "Object Erasing (OE) module"
+  ],
+  "results": [
+    "SRDL outperforms current state-of-the-art algorithms on MLR benchmark datasets"
+  ],
+  "paper_id": "62539c3f5aee126c0ffd4957",
+  "title": "Semantic Representation and Dependency Learning for Multi-Label Image\n  Recognition",
+  "abstract": "  Recently many multi-label image recognition (MLR) works have made significant progress by introducing pre-trained object detection models to generate lots of proposals or utilizing statistical label co-occurrence enhance the correlation among different categories. However, these works have some limitations: (1) the effectiveness of the network significantly depends on pre-trained object detection models that bring expensive and unaffordable computation; (2) the network performance degrades when there exist occasional co-occurrence objects in images, especially for the rare categories. To address these problems, we propose a novel and effective semantic representation and dependency learning (SRDL) framework to learn category-specific semantic representation for each category and capture semantic dependency among all categories. Specifically, we design a category-specific attentional regions (CAR) module to generate channel/spatial-wise attention matrices to guide model to focus on semantic-aware regions. We also design an object erasing (OE) module to implicitly learn semantic dependency among categories by erasing semantic-aware regions to regularize the network training. Extensive experiments and comparisons on two popular MLR benchmark datasets (i.e., MS-COCO and Pascal VOC 2007) demonstrate the effectiveness of the proposed framework over current state-of-the-art algorithms. "
+}

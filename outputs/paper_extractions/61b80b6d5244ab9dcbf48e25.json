@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object motion detection"
+  ],
+  "datasets": [
+    "CDnet2012",
+    "CDnet2014"
+  ],
+  "methods": [
+    "NeuroHSMD: Neuromorphic Hybrid Spiking Motion Detector using FPGAs",
+    "3-layer Spiking Neural Network (SNN)"
+  ],
+  "results": [
+    "NeuroHSMD performs object motion detection at 720x480 at 28.06 fps on CDnet2012",
+    "NeuroHSMD performs object motion detection at 720x480 at 28.71 fps on CDnet2014",
+    "No degradation of quality"
+  ],
+  "paper_id": "61b80b6d5244ab9dcbf48e25",
+  "title": "NeuroHSMD: Neuromorphic Hybrid Spiking Motion Detector",
+  "abstract": "  Vertebrate retinas are highly-efficient in processing trivial visual tasks such as detecting moving objects, yet a complex challenges for modern computers. In vertebrates, the detection of object motion is performed by specialised retinal cells named Object Motion Sensitive Ganglion Cells (OMS-GC). OMS-GC process continuous visual signals and generate spike patterns that are post-processed by the Visual Cortex. Our previous Hybrid Sensitive Motion Detector (HSMD) algorithm was the first hybrid algorithm to enhance Background subtraction (BS) algorithms with a customised 3-layer Spiking Neural Network (SNN) that generates OMS-GC spiking-like responses. In this work, we present a Neuromorphic Hybrid Sensitive Motion Detector (NeuroHSMD) algorithm that accelerates our HSMD algorithm using Field-Programmable Gate Arrays (FPGAs). The NeuroHSMD was compared against the HSMD algorithm, using the same 2012 Change Detection (CDnet2012) and 2014 Change Detection (CDnet2014) benchmark datasets. When tested against the CDnet2012 and CDnet2014 datasets, NeuroHSMD performs object motion detection at 720x480 at 28.06 Frames Per Second (fps) and 720x480 at 28.71 fps, respectively, with no degradation of quality. Moreover, the NeuroHSMD proposed in this paper was completely implemented in Open Computer Language (OpenCL) and therefore is easily replicated in other devices such as Graphical Processing Units (GPUs) and clusters of Central Processing Units (CPUs). "
+}

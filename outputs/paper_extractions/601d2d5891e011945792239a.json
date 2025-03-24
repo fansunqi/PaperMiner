@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deblending crowded starfields"
+  ],
+  "datasets": [
+    "SDSS images of the M2 globular cluster"
+  ],
+  "methods": [
+    "StarNet",
+    "Bayesian method",
+    "Variational inference",
+    "Amortized variational distributions",
+    "Forward KL divergence optimization"
+  ],
+  "results": [
+    "StarNet more accurate than PCAT and DAOPHOT",
+    "Amortized approach enables scaling for modern astronomical surveys"
+  ],
+  "paper_id": "601d2d5891e011945792239a",
+  "title": "Variational Inference for Deblending Crowded Starfields",
+  "abstract": "  In images collected by astronomical surveys, stars and galaxies often overlap visually. Deblending is the task of distinguishing and characterizing individual light sources in survey images. We propose StarNet, a Bayesian method to deblend sources in astronomical images of crowded star fields. StarNet leverages recent advances in variational inference, including amortized variational distributions and an optimization objective targeting an expectation of the forward KL divergence. In our experiments with SDSS images of the M2 globular cluster, StarNet is substantially more accurate than two competing methods: Probabilistic Cataloging (PCAT), a method that uses MCMC for inference, and DAOPHOT, a software pipeline employed by SDSS for deblending. In addition, the amortized approach to inference gives StarNet the scaling characteristics necessary to perform Bayesian inference on modern astronomical surveys. "
+}

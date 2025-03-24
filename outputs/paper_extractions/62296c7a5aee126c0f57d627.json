@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computing Continuous Dynamic Time Warping of Time Series"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Continuous Dynamic Time Warping (CDTW)",
+    "Propagate continuous functions in dynamic program"
+  ],
+  "results": [
+    "Algorithm runs in O(n^5) time for one-dimensional curves",
+    "First exact algorithm for CDTW"
+  ],
+  "paper_id": "62296c7a5aee126c0f57d627",
+  "title": "Computing Continuous Dynamic Time Warping of Time Series in Polynomial\n  Time",
+  "abstract": "  Dynamic Time Warping is arguably the most popular similarity measure for time series, where we define a time series to be a one-dimensional polygonal curve. The drawback of Dynamic Time Warping is that it is sensitive to the sampling rate of the time series. The Fr\\'echet distance is an alternative that has gained popularity, however, its drawback is that it is sensitive to outliers.   Continuous Dynamic Time Warping (CDTW) is a recently proposed alternative that does not exhibit the aforementioned drawbacks. CDTW combines the continuous nature of the Fr\\'echet distance with the summation of Dynamic Time Warping, resulting in a similarity measure that is robust to sampling rate and to outliers. In a recent experimental work of Brankovic et al., it was demonstrated that clustering under CDTW avoids the unwanted artifacts that appear when clustering under Dynamic Time Warping and under the Fr\\'echet distance. Despite its advantages, the major shortcoming of CDTW is that there is no exact algorithm for computing CDTW, in polynomial time or otherwise.   In this work, we present the first exact algorithm for computing CDTW of one-dimensional curves. Our algorithm runs in time $O(n^5)$ for a pair of one-dimensional curves, each with complexity at most $n$. In our algorithm, we propagate continuous functions in the dynamic program for CDTW, where the main difficulty lies in bounding the complexity of the functions. We believe that our result is an important first step towards CDTW becoming a practical similarity measure between curves. "
+}

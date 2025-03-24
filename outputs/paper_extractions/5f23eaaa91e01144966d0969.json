@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analyzing synchronous k-Majority dynamics in biased communication models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Synchronous k-Majority dynamics",
+    "Bias modeling (altering communication links, corrupting nodes)"
+  ],
+  "results": [
+    "Sharp phase transition for k>=3",
+    "Critical value p_{k,q}^* determines subversion speed",
+    "No phase transition for k<3"
+  ],
+  "paper_id": "5f23eaaa91e01144966d0969",
+  "title": "Phase Transition of the k-Majority Dynamics in Biased Communication\n  Models",
+  "abstract": "  Consider a graph where each of the $n$ nodes is either in state $\\mathcal{R}$ or $\\mathcal{B}$. Herein, we analyze the \\emph{synchronous $k$-Majority dynamics}, where in each discrete-time round nodes simultaneously sample $k$ neighbors uniformly at random with replacement and adopt the majority state among those of the nodes in the sample (breaking ties uniformly at random). Differently from previous work, we study the robustness of the $k$-Majority in \\emph{maintaining a $\\mathcal{R}$ majority}, when the dynamics is subject to two forms of \\emph{bias} toward state $\\mathcal{B}$. The bias models an external agent that attempts to subvert the initial majority by altering the communication between nodes, with a probability of success $p$ in each round: in the first form of bias, the agent tries to alter the communication links by transmitting state $\\mathcal{B}$; in the second form of bias, the agent tries to corrupt nodes directly by making them update to $\\mathcal{B}$. Our main result shows a \\emph{sharp phase transition} in both forms of bias. By considering initial configurations in which every node has probability $q \\in (\\frac{1}{2},1]$ of being in state $\\mathcal{R}$, we prove that for every $k\\geq3$ there exists a critical value $p_{k,q}^*$ such that, with high probability, the external agent is able to subvert the initial majority either in $n^{\\omega(1)}$ rounds, if $p<p_{k,q}^*$, or in $O(1)$ rounds, if $p>p_{k,q}^*$. When $k<3$, instead, no phase transition phenomenon is observed and the disruption happens in $O(1)$ rounds for $p>0$. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Explainability of Transformer networks in NLP",
+    "Symbolic rule understanding in Transformers"
+  ],
+  "datasets": "None",
+  "methods": [
+    "Two criteria for symbolicity: internal architecture and dissociation between abstract rules and specific input identities",
+    "Critical examination of prior work on symbolic capacities of Transformers",
+    "Experiments on four sequence modelling tasks on T5 Transformer in two settings: zero-shot generalization, generalization across class-specific vocabularies"
+  ],
+  "results": [
+    "T5's generalization stronger in sequence-to-sequence tasks than in classification tasks",
+    "Proposal that Transformer can be part of a symbolic architecture as a processor without being symbolic itself"
+  ],
+  "paper_id": "621ee1845aee126c0f26a957",
+  "title": "Do Transformers know symbolic rules, and would we know if they did?",
+  "abstract": "  To improve the explainability of leading Transformer networks used in NLP, it is important to tease apart genuine symbolic rules from merely associative input-output patterns. However, we identify several inconsistencies in how ``symbolicity'' has been construed in recent NLP literature. To mitigate this problem, we propose two criteria to be the most relevant, one pertaining to a system's internal architecture and the other to the dissociation between abstract rules and specific input identities. From this perspective, we critically examine prior work on the symbolic capacities of Transformers, and deem the results to be fundamentally inconclusive for reasons inherent in experiment design. We further maintain that there is no simple fix to this problem, since it arises -- to an extent -- in all end-to-end settings. Nonetheless, we emphasize the need for more robust evaluation of whether non-symbolic explanations exist for success in seemingly symbolic tasks. To facilitate this, we experiment on four sequence modelling tasks on the T5 Transformer in two experiment settings: zero-shot generalization, and generalization across class-specific vocabularies flipped between the training and test set. We observe that T5's generalization is markedly stronger in sequence-to-sequence tasks than in comparable classification tasks. Based on this, we propose a thus far overlooked analysis, where the Transformer itself does not need to be symbolic to be part of a symbolic architecture as the processor, operating on the input and output as external memory components. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating gradients of stochastic nodes in stochastic computational graphs"
+  ],
+  "datasets": [
+    "synthetic examples",
+    "VAE applications",
+    "topic models"
+  ],
+  "methods": [
+    "Generalized Gumbel-Softmax estimator",
+    "truncation of discrete random variables",
+    "Gumbel-Softmax trick",
+    "special form of linear transformation"
+  ],
+  "results": [
+    "efficacy in synthetic examples and VAE applications",
+    "value in practical topic models"
+  ],
+  "paper_id": "5e621f3d91e01160711d5d5e",
+  "title": "Generalized Gumbel-Softmax Gradient Estimator for Generic Discrete\n  Random Variables",
+  "abstract": "  Estimating the gradients of stochastic nodes in stochastic computational graphs is one of the crucial research questions in the deep generative modeling community, which enables the gradient descent optimization on neural network parameters. Stochastic gradient estimators of discrete random variables are widely explored, for example, Gumbel-Softmax reparameterization trick for Bernoulli and categorical distributions. Meanwhile, other discrete distribution cases such as the Poisson, geometric, binomial, multinomial, negative binomial, etc. have not been explored. This paper proposes a generalized version of the Gumbel-Softmax estimator, which is able to reparameterize generic discrete distributions, not restricted to the Bernoulli and the categorical. The proposed estimator utilizes the truncation of discrete random variables, the Gumbel-Softmax trick, and a special form of linear transformation. Our experiments consist of (1) synthetic examples and applications on VAE, which show the efficacy of our methods; and (2) topic models, which demonstrate the value of the proposed estimation in practice. "
+}

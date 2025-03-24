@@ -1,0 +1,17 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "datasets": [
+    "simulated datasets"
+  ],
+  "methods": [
+    "CoCoA"
+  ],
+  "results": [
+    "CoCoA outperforms baselines in identifying causal features"
+  ],
+  "paper_id": "6153e0205244ab9dcb39a3dd",
+  "title": "Optimization-based Causal Estimation from Heterogenous Environments",
+  "abstract": "  This paper presents a new optimization approach to causal estimation. Given data that contains covariates and an outcome, which covariates are causes of the outcome, and what is the strength of the causality? In classical machine learning (ML), the goal of optimization is to maximize predictive accuracy. However, some covariates might exhibit a non-causal association to the outcome. Such spurious associations provide predictive power for classical ML, but they prevent us from causally interpreting the result. This paper proposes CoCo, an optimization algorithm that bridges the gap between pure prediction and causal inference. CoCo leverages the recently-proposed idea of environments, datasets of covariates/response where the causal relationships remain invariant but where the distribution of the covariates changes from environment to environment. Given datasets from multiple environments -- and ones that exhibit sufficient heterogeneity -- CoCo maximizes an objective for which the only solution is the causal solution. We describe the theoretical foundations of this approach and demonstrate its effectiveness on simulated and real datasets. Compared to classical ML and existing methods, CoCo provides more accurate estimates of the causal model. "
+}

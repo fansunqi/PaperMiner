@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CNN architecture evaluation"
+  ],
+  "datasets": [
+    "ImageNet",
+    "8 additional image classification benchmark datasets"
+  ],
+  "methods": [
+    "Empirical study",
+    "Training 500 CNN architectures from AnyNetX design space"
+  ],
+  "results": [
+    "High dataset dependency in architecture performance",
+    "Negative error correlation with ImageNet on some datasets",
+    "Increased correlations using ImageNet subsets restricted to fewer classes"
+  ],
+  "paper_id": "6051da1091e011c24e5991ca",
+  "title": "Is it enough to optimize CNN architectures on ImageNet?",
+  "abstract": "  Classification performance based on ImageNet is the de-facto standard metric for CNN development. In this work we challenge the notion that CNN architecture design solely based on ImageNet leads to generally effective convolutional neural network (CNN) architectures that perform well on a diverse set of datasets and application domains. To this end, we investigate and ultimately improve ImageNet as a basis for deriving such architectures. We conduct an extensive empirical study for which we train $500$ CNN architectures, sampled from the broad AnyNetX design space, on ImageNet as well as $8$ additional well known image classification benchmark datasets from a diverse array of application domains. We observe that the performances of the architectures are highly dataset dependent. Some datasets even exhibit a negative error correlation with ImageNet across all architectures. We show how to significantly increase these correlations by utilizing ImageNet subsets restricted to fewer classes. These contributions can have a profound impact on the way we design future CNN architectures and help alleviate the tilt we see currently in our community with respect to over-reliance on one dataset. "
+}

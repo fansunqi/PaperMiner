@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image recognition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-path neural networks",
+    "Data-dependent resource allocation",
+    "Cross-prediction based algorithm",
+    "Feature-dependent cross-connections"
+  ],
+  "results": [
+    "Superior performance to existing widening and adaptive feature extraction",
+    "Better than ensembles and deeper networks at similar complexity"
+  ],
+  "paper_id": "60e567e9dfae54c43254404c",
+  "title": "End-To-End Data-Dependent Routing in Multi-Path Neural Networks",
+  "abstract": "  Neural networks are known to give better performance with increased depth due to their ability to learn more abstract features. Although the deepening of networks has been well established, there is still room for efficient feature extraction within a layer which would reduce the need for mere parameter increment. The conventional widening of networks by having more filters in each layer introduces a quadratic increment of parameters. Having multiple parallel convolutional/dense operations in each layer solves this problem, but without any context-dependent allocation of resources among these operations: the parallel computations tend to learn similar features making the widening process less effective. Therefore, we propose the use of multi-path neural networks with data-dependent resource allocation among parallel computations within layers, which also lets an input to be routed end-to-end through these parallel paths. To do this, we first introduce a cross-prediction based algorithm between parallel tensors of subsequent layers. Second, we further reduce the routing overhead by introducing feature-dependent cross-connections between parallel tensors of successive layers. Our multi-path networks show superior performance to existing widening and adaptive feature extraction, and even ensembles, and deeper networks at similar complexity in the image recognition task. "
+}

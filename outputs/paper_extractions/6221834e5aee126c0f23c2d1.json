@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Certified deletion in quantum cryptography",
+    "Fully homomorphic encryption with certified deletion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Interactive protocol for certified deletion",
+    "Gaussian-collapsing hash functions",
+    "Dual-Regev public-key encryption with certified deletion",
+    "Leveled FHE scheme with certified deletion"
+  ],
+  "results": [
+    "First fully homomorphic encryption scheme with certified deletion",
+    "Public verification of deletion certificates",
+    "Security proven under Ajtai hash function's Gaussian-collapsing property"
+  ],
+  "paper_id": "6221834e5aee126c0f23c2d1",
+  "title": "Quantum Proofs of Deletion for Learning with Errors",
+  "abstract": "  Quantum information has the property that measurement is an inherently destructive process. This feature is most apparent in the principle of complementarity, which states that mutually incompatible observables cannot be measured at the same time. Recent work by Broadbent and Islam (TCC 2020) builds on this aspect of quantum mechanics to realize a cryptographic notion called certified deletion. While this remarkable notion enables a classical verifier to be convinced that a (private-key) quantum ciphertext has been deleted by an untrusted party, it offers no additional layer of functionality.   In this work, we augment the proof-of-deletion paradigm with fully homomorphic encryption (FHE). We construct the first fully homomorphic encryption scheme with certified deletion -- an interactive protocol which enables an untrusted quantum server to compute on encrypted data and, if requested, to simultaneously prove data deletion to a client. Our scheme has the desirable property that verification of a deletion certificate is public; meaning anyone can verify that deletion has taken place. Our main technical ingredient is an interactive protocol by which a quantum prover can convince a classical verifier that a sample from the Learning with Errors (LWE) distribution in the form of a quantum state was deleted. As an application of our protocol, we construct a Dual-Regev public-key encryption scheme with certified deletion, which we then extend towards a (leveled) FHE scheme of the same type. We introduce the notion of Gaussian-collapsing hash functions -- a special case of collapsing hash functions defined by Unruh (Eurocrypt 2016) -- and we prove the security of our schemes under the assumption that the Ajtai hash function satisfies a certain strong Gaussian-collapsing property in the presence of leakage. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline Reinforcement Learning",
+    "Dynamical model estimation of MDP"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Expert-guided symmetry detection",
+    "Density Estimation methods",
+    "Deep Neural Network based Normalizing Flows",
+    "Data augmentation technique"
+  ],
+  "results": [
+    "Reduction in distributional shift between true and learned model",
+    "Performance improvement in solving learned MDP and applying optimized policy in real environment"
+  ],
+  "paper_id": "61c145c55244ab9dcb850e82",
+  "title": "Data Augmentation through Expert-guided Symmetry Detection to Improve\n  Performance in Offline Reinforcement Learning",
+  "abstract": "  Offline estimation of the dynamical model of a Markov Decision Process (MDP) is a non-trivial task that greatly depends on the data available in the learning phase. Sometimes the dynamics of the model is invariant with respect to some transformations of the current state and action. Recent works showed that an expert-guided pipeline relying on Density Estimation methods as Deep Neural Network based Normalizing Flows effectively detects this structure in deterministic environments, both categorical and continuous-valued. The acquired knowledge can be exploited to augment the original data set, leading eventually to a reduction in the distributional shift between the true and the learned model. Such data augmentation technique can be exploited as a preliminary process to be executed before adopting an Offline Reinforcement Learning architecture, increasing its performance. In this work we extend the paradigm to also tackle non-deterministic MDPs, in particular, 1) we propose a detection threshold in categorical environments based on statistical distances, and 2) we show that the former results lead to a performance improvement when solving the learned MDP and then applying the optimized policy in the real environment. "
+}

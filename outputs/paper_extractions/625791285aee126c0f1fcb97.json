@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Switching between numerical black-box optimization algorithms"
+  ],
+  "datasets": [
+    "BBOB functions"
+  ],
+  "methods": [
+    "Data-driven approach to investigate switches between algorithms",
+    "Warm-starting policies for parameter initialization"
+  ],
+  "results": [
+    "Outperform the best static choice on 48 out of 120 problem instances",
+    "Proper warm-starting crucial for BFGS and CMA-ES switching",
+    "Performance gain affected by switching point"
+  ],
+  "paper_id": "625791285aee126c0f1fcb97",
+  "title": "Switching between Numerical Black-box Optimization Algorithms with\n  Warm-starting Policies",
+  "abstract": "  When solving optimization problems with black-box approaches, the algorithms gather valuable information about the problem instance during the optimization process. This information is used to adjust the distributions from which new solution candidates are sampled. In fact, a key objective in evolutionary computation is to identify the most effective ways to collect and exploit instance knowledge. However, while considerable work is devoted to adjusting hyper-parameters of black-box optimization algorithms on the fly or exchanging some of its modular components, we barely know how to effectively switch between different black-box optimization algorithms.   In this work, we build on the recent study of Vermetten et al. [GECCO 2020], who presented a data-driven approach to investigate promising switches between pairs of algorithms for numerical black-box optimization. We replicate their approach with a portfolio of five algorithms and investigate whether the predicted performance gains are realized when executing the most promising switches. Our results suggest that with a single switch between two algorithms, we outperform the best static choice among the five algorithms on 48 out of the 120 considered problem instances, the 24 BBOB functions in five different dimensions. We also show that for switching between BFGS and CMA-ES, a proper warm-starting of the parameters is crucial to realize high-performance gains. Lastly, with a sensitivity analysis, we find the actual performance gain per run is largely affected by the switching point, and in some cases, the switching point yielding the best actual performance differs from the one computed from the theoretical gain. "
+}

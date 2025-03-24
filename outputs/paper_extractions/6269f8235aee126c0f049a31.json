@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://youtu.be/KMSs4ofDfIs"
+  ],
+  "tasks": [
+    "Opponent Prediction in Autonomous Racing"
+  ],
+  "datasets": [
+    "Closed-loop interaction data from previous races"
+  ],
+  "methods": [
+    "Gaussian Process (GP) Model",
+    "Model Predictive Control (MPC)"
+  ],
+  "results": [
+    "Similar win rates with 3x more safe races",
+    "Significant improvement over baseline MPC predictor in real-time experiments"
+  ],
+  "paper_id": "6269f8235aee126c0f049a31",
+  "title": "A Gaussian Process Model for Opponent Prediction in Autonomous Racing",
+  "abstract": "  In head-to-head racing, an accurate model of interactive behavior of the opposing target vehicle (TV) is required to perform tightly constrained, but highly rewarding maneuvers such as overtaking. However, such information is not typically made available in competitive scenarios, we therefore propose to construct a prediction and uncertainty model given data of the TV from previous races. In particular, a one-step Gaussian process (GP) model is trained on closed-loop interaction data to learn the behavior of a TV driven by an unknown policy. Predictions of the nominal trajectory and associated uncertainty are rolled out via a sampling-based approach and are used in a model predictive control (MPC) policy for the ego vehicle in order to intelligently trade-off between safety and performance when attempting overtaking maneuvers against a TV. We demonstrate the GP-based predictor in closed loop with the MPC policy in simulation races and compare its performance against several predictors from literature. In a Monte Carlo study, we observe that the GP-based predictor achieves similar win rates while maintaining safety in up to 3x more races. We finally demonstrate the prediction and control framework in real-time in a experimental study on a 1/10th scale racecar platform operating at speeds of around 2.8 m/s, and show a significant level of improvement when using the GP-based predictor over a baseline MPC predictor. Videos of the hardware experiments can be found at https://youtu.be/KMSs4ofDfIs. "
+}

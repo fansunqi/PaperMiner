@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Long-Tailed Recognition"
+  ],
+  "datasets": [
+    "CIFAR-LT",
+    "ImageNet-LT"
+  ],
+  "methods": [
+    "Channel Whitening",
+    "Block-based Relatively Balanced Batch Sampler (B3RS)",
+    "Batch Embedded Training (BET)"
+  ],
+  "results": [
+    "End-to-end training achieves better performance than decoupled training",
+    "Satisfactory results combined with logits margin-based method"
+  ],
+  "paper_id": "61b80b6c5244ab9dcbf48d38",
+  "title": "You Only Need End-to-End Training for Long-Tailed Recognition",
+  "abstract": "  The generalization gap on the long-tailed data sets is largely owing to most categories only occupying a few training samples. Decoupled training achieves better performance by training backbone and classifier separately. What causes the poorer performance of end-to-end model training (e.g., logits margin-based methods)? In this work, we identify a key factor that affects the learning of the classifier: the channel-correlated features with low entropy before inputting into the classifier. From the perspective of information theory, we analyze why cross-entropy loss tends to produce highly correlated features on the imbalanced data. In addition, we theoretically analyze and prove its impacts on the gradients of classifier weights, the condition number of Hessian, and logits margin-based approach. Therefore, we firstly propose to use Channel Whitening to decorrelate (\"scatter\") the classifier's inputs for decoupling the weight update and reshaping the skewed decision boundary, which achieves satisfactory results combined with logits margin-based method. However, when the number of minor classes are large, batch imbalance and more participation in training cause over-fitting of the major classes. We also propose two novel modules, Block-based Relatively Balanced Batch Sampler (B3RS) and Batch Embedded Training (BET) to solve the above problems, which makes the end-to-end training achieve even better performance than decoupled training. Experimental results on the long-tailed classification benchmarks, CIFAR-LT and ImageNet-LT, demonstrate the effectiveness of our method. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Japanese ASR"
+  ],
+  "datasets": [
+    "Corpus of Spontaneous Japanese"
+  ],
+  "methods": [
+    "Alternate Intermediate Conditioning",
+    "Self-conditioned CTC",
+    "Character-level and syllable-level intermediate predictions"
+  ],
+  "results": [
+    "Outperformed conventional multi-task and Self-conditioned CTC methods"
+  ],
+  "paper_id": "624a61aa5aee126c0f90bcc3",
+  "title": "Alternate Intermediate Conditioning with Syllable-level and\n  Character-level Targets for Japanese ASR",
+  "abstract": "  End-to-end automatic speech recognition directly maps input speech to characters. However, the mapping can be problematic when several different pronunciations should be mapped into one character or when one pronunciation is shared among many different characters. Japanese ASR suffers the most from such many-to-one and one-to-many mapping problems due to Japanese kanji characters. To alleviate the problems, we introduce explicit interaction between characters and syllables using Self-conditioned connectionist temporal classification (CTC), in which the upper layers are ``self-conditioned'' on the intermediate predictions from the lower layers. The proposed method utilizes character-level and syllable-level intermediate predictions as conditioning features to deal with mutual dependency between characters and syllables. Experimental results on Corpus of Spontaneous Japanese show that the proposed method outperformed the conventional multi-task and Self-conditioned CTC methods. "
+}

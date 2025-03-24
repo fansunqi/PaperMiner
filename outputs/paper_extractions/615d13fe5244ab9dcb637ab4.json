@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep Instance Segmentation with Automotive Radar"
+  ],
+  "datasets": [
+    "RadarScenes"
+  ],
+  "methods": [
+    "Clustering of estimated semantic information",
+    "Incorporating visual multi-layer perceptron"
+  ],
+  "results": [
+    "89.53% mean coverage",
+    "86.97% mean average precision (IoU=0.5)",
+    "Consumed memory: 1MB",
+    "Inference time: <40ms"
+  ],
+  "paper_id": "615d13fe5244ab9dcb637ab4",
+  "title": "Deep Instance Segmentation with Automotive Radar Detection Points",
+  "abstract": "  Automotive radar provides reliable environmental perception in all-weather conditions with affordable cost, but it hardly supplies semantic and geometry information due to the sparsity of radar detection points. With the development of automotive radar technologies in recent years, instance segmentation becomes possible by using automotive radar. Its data contain contexts such as radar cross section and micro-Doppler effects, and sometimes can provide detection when the field of view is obscured. The outcome from instance segmentation could be potentially used as the input of trackers for tracking targets. The existing methods often utilize a clustering-based classification framework, which fits the need of real-time processing but has limited performance due to minimum information provided by sparse radar detection points. In this paper, we propose an efficient method based on clustering of estimated semantic information to achieve instance segmentation for the sparse radar detection points. In addition, we show that the performance of the proposed approach can be further enhanced by incorporating the visual multi-layer perceptron. The effectiveness of the proposed method is verified by experimental results on the popular RadarScenes dataset, achieving 89.53% mean coverage and 86.97% mean average precision with the IoU threshold of 0.5, which is superior to other approaches in the literature. More significantly, the consumed memory is around 1MB, and the inference time is less than 40ms, indicating that our proposed algorithm is storage and time efficient. These two criteria ensure the practicality of the proposed method in real-world systems. "
+}

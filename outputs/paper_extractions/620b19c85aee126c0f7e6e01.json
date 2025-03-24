@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://nvidia.github.io/NVFlare/research/quantifying-data-leakage"
+  ],
+  "tasks": [
+    "Federated learning security",
+    "Gradient inversion attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Baseline attack for FL with Batch Normalization",
+    "Measuring and visualizing data leakage in FL"
+  ],
+  "results": [
+    "Impracticality of existing attacks in FL with BN",
+    "New baseline attack for FL scenarios",
+    "Reproducible methods for measuring data leakage"
+  ],
+  "paper_id": "620b19c85aee126c0f7e6e01",
+  "title": "Do Gradient Inversion Attacks Make Federated Learning Unsafe?",
+  "abstract": "  Federated learning (FL) allows the collaborative training of AI models without needing to share raw data. This capability makes it especially interesting for healthcare applications where patient and data privacy is of utmost concern. However, recent works on the inversion of deep neural networks from model gradients raised concerns about the security of FL in preventing the leakage of training data. In this work, we show that these attacks presented in the literature are impractical in FL use-cases where the clients' training involves updating the Batch Normalization (BN) statistics and provide a new baseline attack that works for such scenarios. Furthermore, we present new ways to measure and visualize potential data leakage in FL. Our work is a step towards establishing reproducible methods of measuring data leakage in FL and could help determine the optimal tradeoffs between privacy-preserving techniques, such as differential privacy, and model accuracy based on quantifiable metrics.   Code is available at https://nvidia.github.io/NVFlare/research/quantifying-data-leakage. "
+}

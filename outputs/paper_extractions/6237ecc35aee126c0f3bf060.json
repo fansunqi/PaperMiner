@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient fine-tuning in self-supervised speech recognition"
+  ],
+  "datasets": [
+    "TIMIT",
+    "Librispeech",
+    "LJSpeech"
+  ],
+  "methods": [
+    "COWERAGE algorithm for representative subset selection"
+  ],
+  "results": [
+    "Up to 17% relative WER improvement over existing dataset pruning methods and random sampling",
+    "Better test accuracy in self-supervised speech recognition models"
+  ],
+  "paper_id": "6237ecc35aee126c0f3bf060",
+  "title": "Representative Subset Selection for Efficient Fine-Tuning in\n  Self-Supervised Speech Recognition",
+  "abstract": "  Self-supervised speech recognition models require considerable labeled training data for learning high-fidelity representations for Automatic Speech Recognition (ASR) which is computationally demanding and time-consuming. We consider the task of identifying an optimal subset of data for efficient fine-tuning in self-supervised speech models for ASR. We discover that the dataset pruning strategies used in vision tasks for sampling the most informative examples do not perform better than random subset selection on fine-tuning self-supervised ASR. We then present the COWERAGE algorithm for representative subset selection in self-supervised ASR. COWERAGE is based on our finding that ensuring the coverage of examples based on training Word Error Rate (WER) in the early training epochs leads to better generalization performance. Extensive experiments with the wav2vec 2.0 and HuBERT model on TIMIT, Librispeech, and LJSpeech datasets show the effectiveness of COWERAGE and its transferability across models, with up to 17% relative WER improvement over existing dataset pruning methods and random sampling. We also demonstrate that the coverage of training instances in terms of WER values ensures the inclusion of phonemically diverse examples, leading to better test accuracy in self-supervised speech recognition models. "
+}

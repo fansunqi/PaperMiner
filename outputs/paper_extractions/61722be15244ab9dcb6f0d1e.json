@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/optimization-for-data-driven-science/DAIR.git"
+  ],
+  "tasks": [
+    "Robust neural task-oriented dialog state tracking",
+    "Robust visual question answering",
+    "Robust regression",
+    "Robust classification against adversarial attacks",
+    "Robust ImageNet classification under distribution shift"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "Data augmented loss invariant regularization (DAIR)"
+  ],
+  "results": [
+    "DAIR consistently outperforms ERM and DA-ERM",
+    "Sets new state-of-the-art results in several benchmarks involving covariant data augmentation"
+  ],
+  "paper_id": "61722be15244ab9dcb6f0d1e",
+  "title": "Robustness through Data Augmentation Loss Consistency",
+  "abstract": "  While deep learning through empirical risk minimization (ERM) has succeeded at achieving human-level performance at a variety of complex tasks, ERM is not robust to distribution shifts or adversarial attacks. Synthetic data augmentation followed by empirical risk minimization (DA-ERM) is a simple and widely used solution to improve robustness in ERM. In addition, consistency regularization can be applied to further improve the robustness of the model by forcing the representation of the original sample and the augmented one to be similar. However, existing consistency regularization methods are not applicable to covariant data augmentation, where the label in the augmented sample is dependent on the augmentation function. For example, dialog state covaries with named entity when we augment data with a new named entity. In this paper, we propose data augmented loss invariant regularization (DAIR), a simple form of consistency regularization that is applied directly at the loss level rather than intermediate features, making it widely applicable to both invariant and covariant data augmentation regardless of network architecture, problem setup, and task. We apply DAIR to real-world learning problems involving covariant data augmentation: robust neural task-oriented dialog state tracking and robust visual question answering. We also apply DAIR to tasks involving invariant data augmentation: robust regression, robust classification against adversarial attacks, and robust ImageNet classification under distribution shift. Our experiments show that DAIR consistently outperforms ERM and DA-ERM with little marginal computational cost and sets new state-of-the-art results in several benchmarks involving covariant data augmentation. Our code of all experiments is available at: https://github.com/optimization-for-data-driven-science/DAIR.git "
+}

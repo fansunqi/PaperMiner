@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/AIPHES/DiscoScore"
+  ],
+  "tasks": [
+    "Evaluating text generation",
+    "Modeling discourse coherence"
+  ],
+  "datasets": [
+    "Summarization",
+    "Document-level machine translation"
+  ],
+  "methods": [
+    "DiscoScore",
+    "BERT-based discourse metric",
+    "Centering theory"
+  ],
+  "results": [
+    "DiscoScore achieves strong system-level correlation with human ratings",
+    "Surpasses BARTScore by over 10 correlation points on average",
+    "BERT-based metrics correlate worse with human rated coherence than early discourse metrics"
+  ],
+  "paper_id": "61f360c45aee126c0f7d5d24",
+  "title": "DiscoScore: Evaluating Text Generation with BERT and Discourse Coherence",
+  "abstract": "  Recently, there has been a growing interest in designing text generation systems from a discourse coherence perspective, e.g., modeling the interdependence between sentences. Still, recent BERT-based evaluation metrics are weak in recognizing coherence, and thus are not reliable in a way to spot the discourse-level improvements of those text generation systems. In this work, we introduce DiscoScore, a parametrized discourse metric, which uses BERT to model discourse coherence from different perspectives, driven by Centering theory. Our experiments encompass 16 non-discourse and discourse metrics, including DiscoScore and popular coherence models, evaluated on summarization and document-level machine translation (MT). We find that (i) the majority of BERT-based metrics correlate much worse with human rated coherence than early discourse metrics, invented a decade ago; (ii) the recent state-of-the-art BARTScore is weak when operated at system level -- which is particularly problematic as systems are typically compared in this manner. DiscoScore, in contrast, achieves strong system-level correlation with human ratings, not only in coherence but also in factual consistency and other aspects, and surpasses BARTScore by over 10 correlation points on average. Further, aiming to understand DiscoScore, we provide justifications to the importance of discourse coherence for evaluation metrics, and explain the superiority of one variant over another. Our code is available at \\url{https://github.com/AIPHES/DiscoScore}. "
+}

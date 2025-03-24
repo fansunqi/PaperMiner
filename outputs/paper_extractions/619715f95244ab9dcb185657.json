@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Causal structure learning from non-i.i.d. data"
+  ],
+  "datasets": [
+    "simulated data",
+    "real-world data"
+  ],
+  "methods": [
+    "Causal Cluster Structures Learning (CCSL)",
+    "Causality-related Chinese Restaurant Process",
+    "variational-inference-based approach"
+  ],
+  "results": [
+    "Theoretical identification of causal and clustering models under linear non-Gaussian assumption",
+    "Experimental validation of correctness and effectiveness"
+  ],
+  "paper_id": "619715f95244ab9dcb185657",
+  "title": "CCSL: A Causal Structure Learning Method from Multiple Unknown\n  Environments",
+  "abstract": "  Most existing causal structure learning methods assume data collected from one environment and independent and identically distributed (i.i.d.). In some cases, data are collected from different subjects from multiple environments, which provides more information but might make the data non-identical or non-independent distribution. Some previous efforts try to learn causal structure from this type of data in two independent stages, i.e., first discovering i.i.d. groups from non-i.i.d. samples, then learning the causal structures from different groups. This straightforward solution ignores the intrinsic connections between the two stages, that is both the clustering stage and the learning stage should be guided by the same causal mechanism. Towards this end, we propose a unified Causal Cluster Structures Learning (named CCSL) method for causal discovery from non-i.i.d. data. This method simultaneously integrates the following two tasks: 1) clustering samples of the subjects with the same causal mechanism into different groups; 2) learning causal structures from the samples within the group. Specifically, for the former, we provide a Causality-related Chinese Restaurant Process to cluster samples based on the similarity of the causal structure; for the latter, we introduce a variational-inference-based approach to learn the causal structures. Theoretical results provide identification of the causal model and the clustering model under the linear non-Gaussian assumption. Experimental results on both simulated and real-world data further validate the correctness and effectiveness of the proposed method. "
+}

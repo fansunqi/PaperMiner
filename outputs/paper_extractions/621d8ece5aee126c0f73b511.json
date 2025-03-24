@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Patient-to-Article Retrieval (ReCDS-PAR)",
+    "Patient-to-Patient Retrieval (ReCDS-PPR)"
+  ],
+  "datasets": [
+    "PMC-Patients"
+  ],
+  "methods": [
+    "simple heuristics",
+    "PubMed citation graph",
+    "sparse retrievers",
+    "dense retrievers",
+    "nearest neighbor retrievers"
+  ],
+  "results": [
+    "167k patient summaries",
+    "3.1M patient-article relevance annotations",
+    "293k patient-patient similarity annotations",
+    "high-quality annotations",
+    "benchmark is challenging"
+  ],
+  "paper_id": "621d8ece5aee126c0f73b511",
+  "title": "PMC-Patients: A Large-scale Dataset of Patient Summaries and Relations\n  for Benchmarking Retrieval-based Clinical Decision Support Systems",
+  "abstract": "  Objective: Retrieval-based Clinical Decision Support (ReCDS) can aid clinical workflow by providing relevant literature and similar patients for a given patient. However, the development of ReCDS systems has been severely obstructed by the lack of diverse patient collections and publicly available large-scale patient-level annotation datasets. In this paper, we aim to define and benchmark two ReCDS tasks: Patient-to-Article Retrieval (ReCDS-PAR) and Patient-to-Patient Retrieval (ReCDS-PPR) using a novel dataset called PMC-Patients. Methods: We extract patient summaries from PubMed Central articles using simple heuristics and utilize the PubMed citation graph to define patient-article relevance and patient-patient similarity. We also implement and evaluate several ReCDS systems on the PMC-Patients benchmarks, including sparse retrievers, dense retrievers, and nearest neighbor retrievers. We conduct several case studies to show the clinical utility of PMC-Patients. Results: PMC-Patients contains 167k patient summaries with 3.1M patient-article relevance annotations and 293k patient-patient similarity annotations, which is the largest-scale resource for ReCDS and also one of the largest patient collections. Human evaluation and analysis show that PMC-Patients is a diverse dataset with high-quality annotations. The evaluation of various ReCDS systems shows that the PMC-Patients benchmark is challenging and calls for further research. Conclusion: We present PMC-Patients, a large-scale, diverse, and publicly available patient summary dataset with the largest-scale patient-level relation annotations. Based on PMC-Patients, we formally define two benchmark tasks for ReCDS systems and evaluate various existing retrieval methods. PMC-Patients can largely facilitate methodology research on ReCDS systems and shows real-world clinical utility. "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/alextamkin/dabs"
+  ],
+  "tasks": [
+    "Self-supervised learning"
+  ],
+  "datasets": [
+    "natural images",
+    "multichannel sensor data",
+    "English text",
+    "speech recordings",
+    "multilingual text",
+    "chest x-rays",
+    "images with text descriptions"
+  ],
+  "methods": [
+    "DABS",
+    "e-Mix",
+    "ShED"
+  ],
+  "results": [
+    "modest performance of baseline algorithms demonstrates need for progress in domain-agnostic self-supervised learning"
+  ],
+  "paper_id": "619dad545244ab9dcb27bcd0",
+  "title": "DABS: A Domain-Agnostic Benchmark for Self-Supervised Learning",
+  "abstract": "  Self-supervised learning algorithms, including BERT and SimCLR, have enabled significant strides in fields like natural language processing, computer vision, and speech processing. However, these algorithms are domain-specific, meaning that new self-supervised learning algorithms must be developed for each new setting, including myriad healthcare, scientific, and multimodal domains. To catalyze progress toward domain-agnostic methods, we introduce DABS: a Domain-Agnostic Benchmark for Self-supervised learning. To perform well on DABS, an algorithm is evaluated on seven diverse domains: natural images, multichannel sensor data, English text, speech recordings, multilingual text, chest x-rays, and images with text descriptions. Each domain contains an unlabeled dataset for pretraining; the model is then is scored based on its downstream performance on a set of labeled tasks in the domain. We also present e-Mix and ShED: two baseline domain-agnostic algorithms; their relatively modest performance demonstrates that significant progress is needed before self-supervised learning is an out-of-the-box solution for arbitrary domains. Code for benchmark datasets and baseline algorithms is available at https://github.com/alextamkin/dabs. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Supervised learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Model-agnostic Random Subspace ensembles",
+    "Parametric Random Subspace with Bernoulli distribution",
+    "Gradient descent with importance sampling",
+    "Feature selection probability optimization"
+  ],
+  "results": [
+    "Automatically tuned degree of randomization",
+    "Feature selection probabilities as feature importance scores",
+    "Can incorporate differentiable regularization terms"
+  ],
+  "paper_id": "613829e85244ab9dcb15f227",
+  "title": "Optimizing model-agnostic Random Subspace ensembles",
+  "abstract": "  This paper presents a model-agnostic ensemble approach for supervised learning. The proposed approach is based on a parametric version of Random Subspace, in which each base model is learned from a feature subset sampled according to a Bernoulli distribution. Parameter optimization is performed using gradient descent and is rendered tractable by using an importance sampling approach that circumvents frequent re-training of the base models after each gradient descent step. The degree of randomization in our parametric Random Subspace is thus automatically tuned through the optimization of the feature selection probabilities. This is an advantage over the standard Random Subspace approach, where the degree of randomization is controlled by a hyper-parameter. Furthermore, the optimized feature selection probabilities can be interpreted as feature importance scores. Our algorithm can also easily incorporate any differentiable regularization term to impose constraints on these importance scores. "
+}

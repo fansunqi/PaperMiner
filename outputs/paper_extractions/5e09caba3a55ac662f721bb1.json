@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/JWFangit/LOTVS-DADA"
+  ],
+  "tasks": [
+    "Driver attention prediction in driving accident scenarios"
+  ],
+  "datasets": [
+    "DADA-2000"
+  ],
+  "methods": [
+    "Semantic context induced attentive fusion network (SCAFNet)",
+    "Segment RGB video frames into semantic images",
+    "Learn spatio-temporal features in parallel paths",
+    "Fuse features using attentive fusion network",
+    "Graph convolution network (GCN) for semantic context features",
+    "Convolutional LSTM module for attention map"
+  ],
+  "results": [
+    "Superiority evaluated on DADA-2000 and other challenging datasets with state-of-the-art methods"
+  ],
+  "paper_id": "5e09caba3a55ac662f721bb1",
+  "title": "DADA: Driver Attention Prediction in Driving Accident Scenarios",
+  "abstract": "  Driver attention prediction is becoming an essential research problem in human-like driving systems. This work makes an attempt to predict the driver attention in driving accident scenarios (DADA). However, challenges tread on the heels of that because of the dynamic traffic scene, intricate and imbalanced accident categories. In this work, we design a semantic context induced attentive fusion network (SCAFNet). We first segment the RGB video frames into the images with different semantic regions (i.e., semantic images), where each region denotes one kind of semantic categories of the scene (e.g., road, trees, etc.), and learn the spatio-temporal features of RGB frames and semantic images in two parallel paths simultaneously. Then, the learned features are fused by an attentive fusion network to find the semantic-induced scene variation in driver attention prediction. The contributions are three folds. 1) With the semantic images, we introduce their semantic context features and verified the manifest promotion effect for helping the driver attention prediction, where the semantic context features are modeled by a graph convolution network (GCN) on semantic images; 2) We fuse the semantic context features of semantic images and the features of RGB frames in an attentive strategy, and the fused details are transferred over frames by a convolutional LSTM module to obtain the attention map of each video frame with the consideration of historical scene variation in driving situations; 3) The superiority of the proposed method is evaluated on our previously collected dataset (named as DADA-2000) and two other challenging datasets with state-of-the-art methods. DADA-2000 is available at https://github.com/JWFangit/LOTVS-DADA. "
+}

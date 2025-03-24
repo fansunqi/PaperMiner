@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Medical Ultrasound Image Analysis"
+  ],
+  "datasets": [
+    "BUSI"
+  ],
+  "methods": [
+    "GSDA (Generative Adversarial Network-based Semi-Supervised Data Augmentation)",
+    "GAN and CNN",
+    "Transfer Learning"
+  ],
+  "results": [
+    "GSDA outperforms existing state-of-the-art methods",
+    "97.9% accuracy using 780 images"
+  ],
+  "paper_id": "6230042f5aee126c0f9b316a",
+  "title": "GSDA: A Generative Adversarial Network-based Semi-Supervised Data\n  Augmentation Method",
+  "abstract": "  Medical Ultrasound (US) is one of the most widely used imaging modalities in clinical practice. However, its use presents unique challenges such as variable imaging quality. The deep learning (DL) model can be used as an advanced medical US image analysis tool, while the scarcity of big datasets greatly limits its performance. To solve the common data shortage, we develop a Generative Adversarial Network (GAN)-based semi-supervised data augmentation method GSDA. The GSDA is composed of the GAN and Convolutional Neural Network (CNN), in which GAN synthesizes and pseudo-labeled the US images with high resolution and high quality, and both real and synthesized images are employed to train CNN. To overcome the training difficulty for GAN and CNN under the small data regime, we employ the transfer learning technique for both of them. We also propose a novel evaluation standard to balance the classification accuracy and the time consumption. We evaluate our method on the BUSI dataset and GSDA outperforms existing state-of-the-art methods. With high-resolution and high-quality images synthesized, GSDA obtain a 97.9% accuracy using merely 780 images. With the promising results, we believe GSDA can be regarded as a potential auxiliary tool for medical US analysis. "
+}

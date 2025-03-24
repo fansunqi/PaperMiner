@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/shohinm/parallel_search"
+  ],
+  "tasks": [
+    "Parallel search algorithms",
+    "Motion planning for 3D humanoid navigation",
+    "Task and motion planning for dual-arm robotic assembly"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ePA*SE (Edge-based Parallel A* for Slow Evaluations)",
+    "w-ePA*SE (Weighted ePA*SE)"
+  ],
+  "results": [
+    "ePA*SE provides rigorous optimality guarantees",
+    "ePA*SE is more efficient than PA*SE and other alternatives in domains with expensive edge evaluations"
+  ],
+  "paper_id": "6221834e5aee126c0f23c152",
+  "title": "ePA*SE: Edge-based Parallel A* for Slow Evaluations",
+  "abstract": "  Parallel search algorithms harness the multithreading capability of modern processors to achieve faster planning. One such algorithm is PA*SE (Parallel A* for Slow Expansions), which parallelizes state expansions to achieve faster planning in domains where state expansions are slow. In this work, we propose ePA*SE (Edge-based Parallel A* for Slow Evaluations) that improves on PA*SE by parallelizing edge evaluations instead of state expansions. This makes ePA*SE more efficient in domains where edge evaluations are expensive and need varying amounts of computational effort, which is often the case in robotics. On the theoretical front, we show that ePA*SE provides rigorous optimality guarantees. In addition, ePA*SE can be trivially extended to handle an inflation weight on the heuristic resulting in a bounded suboptimal algorithm w-ePA*SE (Weighted ePA*SE) that trades off optimality for faster planning. On the experimental front, we validate the proposed algorithm in two different planning domains: 1) motion planning for 3D humanoid navigation and 2) task and motion planning for a dual-arm robotic assembly task. We show that ePA*SE can be significantly more efficient than PA*SE and other alternatives. The open-source code for ePA*SE along with the baselines is available here: https://github.com/shohinm/parallel_search "
+}

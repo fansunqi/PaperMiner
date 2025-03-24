@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Zero-shot learning for small-scale human subjects data"
+  ],
+  "datasets": [
+    "three real-world small-scale human subjects datasets (two randomized control studies and one observational study)"
+  ],
+  "methods": [
+    "end-to-end framework using meta-learning"
+  ],
+  "results": [
+    "model performs the best holistically for each held-out group",
+    "especially when the test group is distinctly different from the training group"
+  ],
+  "paper_id": "62451c325aee126c0f47b517",
+  "title": "Zero-shot meta-learning for small-scale data from human subjects",
+  "abstract": "  While developments in machine learning led to impressive performance gains on big data, many human subjects data are, in actuality, small and sparsely labeled. Existing methods applied to such data often do not easily generalize to out-of-sample subjects. Instead, models must make predictions on test data that may be drawn from a different distribution, a problem known as \\textit{zero-shot learning}. To address this challenge, we develop an end-to-end framework using a meta-learning approach, which enables the model to rapidly adapt to a new prediction task with limited training data for out-of-sample test data. We use three real-world small-scale human subjects datasets (two randomized control studies and one observational study), for which we predict treatment outcomes for held-out treatment groups. Our model learns the latent treatment effects of each intervention and, by design, can naturally handle multi-task predictions. We show that our model performs the best holistically for each held-out group and especially when the test group is distinctly different from the training group. Our model has implications for improved generalization of small-size human studies to the wider population. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Verifying strategic abilities under imperfect information"
+  ],
+  "datasets": [
+    "ThreeBallot voting system"
+  ],
+  "methods": [
+    "Alternating bisimulation",
+    "ATL* state-based semantics"
+  ],
+  "results": [
+    "Bisimulations preserve ATL* properties",
+    "Simplifications allow MCMAS to terminate on larger models"
+  ],
+  "paper_id": "6241273f5aee126c0f292c93",
+  "title": "Bisimulations for Verifying Strategic Abilities with an Application to\n  the ThreeBallot Voting Protocol",
+  "abstract": "  We propose a notion of alternating bisimulation for strategic abilities under imperfect information. The bisimulation preserves formulas of ATL$^*$ for both the {\\em objective} and {\\em subjective} variants of the state-based semantics with imperfect information, which are commonly used in the modeling and verification of multi-agent systems. Furthermore, we apply the theoretical result to the verification of coercion-resistance in the ThreeBallot voting system, a voting protocol that does not use cryptography. In particular, we show that natural simplifications of an initial model of the protocol are in fact bisimulations of the original model, and therefore satisfy the same ATL$^*$ properties, including coercion-resistance. These simplifications allow the model-checking tool MCMAS to terminate on models with a larger number of voters and candidates, compared with the initial model. "
+}

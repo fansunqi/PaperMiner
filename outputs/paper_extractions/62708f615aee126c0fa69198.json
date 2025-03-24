@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Prophet Inequalities"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Formulating worst-case instance construction as an optimization problem",
+    "Type Coverage dual problem analysis",
+    "Unified framework for deriving prophet inequalities"
+  ],
+  "results": [
+    "Oblivious method is best-possible among all static threshold algorithms",
+    "Asymptotic convergence rate of $1-O(\\sqrt{\\log k/k})$ for static threshold algorithms is tight",
+    "Tight guarantee for adaptive algorithms under any number $k$ of starting units, exceeding state-of-the-art for $k>1$"
+  ],
+  "paper_id": "62708f615aee126c0fa69198",
+  "title": "Tightness without Counterexamples: A New Approach and New Results for\n  Prophet Inequalities",
+  "abstract": "  Prophet inequalities consist of many beautiful statements that establish tight performance ratios between online and offline allocation algorithms. Typically, tightness is established by constructing an algorithmic guarantee and a worst-case instance separately, whose bounds match as a result of some \"ingenuity\". In this paper, we instead formulate the construction of the worst-case instance as an optimization problem, which directly finds the tight ratio without needing to construct two bounds separately. Our analysis of this complex optimization problem involves identifying the structure in a new \"Type Coverage\" dual problem. It can be seen as akin to the celebrated Magician and OCRS problems, except more general in that it can also provide tight ratios relative to the optimal offline allocation, whereas the earlier problems only concerns the ex-ante relaxation of the offline problem. Through this analysis, our paper provides a unified framework that derives new prophet inequalities and recovers existing ones, including two important new results. First, we show that the \"oblivious\" method of setting a static threshold due to Chawla et al. (2020), surprisingly, is best-possible among all static threshold algorithms, under any number $k$ of units. We emphasize that this result is derived without needing to explicitly find any counterexample instances. Our result implies that the asymptotic convergence rate of $1-O(\\sqrt{\\log k/k})$ for static threshold algorithms, first established in Hajiaghayi et al. (2007), is tight; this confirms for the first time a separation with the convergence rate of adaptive algorithms, which is $1-\\Theta(\\sqrt{1/k})$ due to Alaei (2014). Second, turning to the IID setting, our framework allows us to numerically illustrate the tight guarantee (of adaptive algorithms) under any number $k$ of starting units. Our guarantees for $k>1$ exceed the state-of-the-art. "
+}

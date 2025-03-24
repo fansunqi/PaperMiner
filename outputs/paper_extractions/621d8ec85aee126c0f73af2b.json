@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural network pruning"
+  ],
+  "datasets": [
+    "CIFAR"
+  ],
+  "methods": [
+    "Gumbel-Softmax for subnetwork extraction",
+    "Stochastic pruning",
+    "Rescaling mechanism"
+  ],
+  "results": [
+    "Outperformance against related work in subnetwork extraction"
+  ],
+  "paper_id": "621d8ec85aee126c0f73af2b",
+  "title": "Extracting Effective Subnetworks with Gumbel-Softmax",
+  "abstract": "  Large and performant neural networks are often overparameterized and can be drastically reduced in size and complexity thanks to pruning. Pruning is a group of methods, which seeks to remove redundant or unnecessary weights or groups of weights in a network. These techniques allow the creation of lightweight networks, which are particularly critical in embedded or mobile applications. In this paper, we devise an alternative pruning method that allows extracting effective subnetworks from larger untrained ones. Our method is stochastic and extracts subnetworks by exploring different topologies which are sampled using Gumbel Softmax. The latter is also used to train probability distributions which measure the relevance of weights in the sampled topologies. The resulting subnetworks are further enhanced using a highly efficient rescaling mechanism that reduces training time and improves performance. Extensive experiments conducted on CIFAR show the outperformance of our subnetwork extraction method against the related work. "
+}

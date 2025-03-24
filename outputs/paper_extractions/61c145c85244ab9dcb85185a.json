@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model-based clustering with MNAR data"
+  ],
+  "datasets": [
+    "synthetic data",
+    "TraumaBase"
+  ],
+  "methods": [
+    "Mixture model for various data types",
+    "Eight MNAR models",
+    "EM or stochastic EM algorithms"
+  ],
+  "results": [
+    "Sufficient conditions for parameter identifiability",
+    "Numerical performance assessment on synthetic and real data"
+  ],
+  "paper_id": "61c145c85244ab9dcb85185a",
+  "title": "Model-based Clustering with Missing Not At Random Data",
+  "abstract": "  Model-based unsupervised learning, as any learning task, stalls as soon asmissing data occurs. This is even more true when the missing data are infor-mative, or said missing not at random (MNAR). In this paper, we proposemodel-based clustering algorithms designed to handle very general typesof missing data, including MNAR data. To do so, we introduce a mixturemodel for different types of data (continuous, count, categorical and mixed)to jointly model the data distribution and the MNAR mechanism, remainingvigilant to the degrees of freedom of each. Eight different MNAR modelswhich depend on the class membership and/or on the values of the missingvariables themselves are proposed. For a particular type of MNAR mod-els, for which the missingness depends on the class membership, we showthat the statistical inference can be carried out on the data matrix concate-nated with the missing mask considering a MAR mechanism instead; thisspecifically underlines the versatility of the studied MNAR models. Then,we establish sufficient conditions for identifiability of parameters of both thedata distribution and the mechanism. Regardless of the type of data and themechanism, we propose to perform clustering using EM or stochastic EMalgorithms specially developed for the purpose. Finally, we assess the nu-merical performances of the proposed methods on synthetic data and on thereal medical registry TraumaBase as well. "
+}

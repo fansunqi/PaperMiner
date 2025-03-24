@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reverse engineering of neural networks with fault attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SNIFF (sign bit flip fault)"
+  ],
+  "results": [
+    "Precision error for parameter recovery < $10^{-13}$ with 64-bit floats",
+    "Improves current state of the art by 6 orders of magnitude"
+  ],
+  "paper_id": "5e5644103a55ac122e36c58b",
+  "title": "SNIFF: Reverse Engineering of Neural Networks with Fault Attacks",
+  "abstract": "  Neural networks have been shown to be vulnerable against fault injection attacks. These attacks change the physical behavior of the device during the computation, resulting in a change of value that is currently being computed. They can be realized by various fault injection techniques, ranging from clock/voltage glitching to application of lasers to rowhammer. In this paper we explore the possibility to reverse engineer neural networks with the usage of fault attacks. SNIFF stands for sign bit flip fault, which enables the reverse engineering by changing the sign of intermediate values. We develop the first exact extraction method on deep-layer feature extractor networks that provably allows the recovery of the model parameters. Our experiments with Keras library show that the precision error for the parameter recovery for the tested networks is less than $10^{-13}$ with the usage of 64-bit floats, which improves the current state of the art by 6 orders of magnitude. Additionally, we discuss the protection techniques against fault injection attacks that can be applied to enhance the fault resistance. "
+}

@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Expressive face video encoding",
+    "Video reenactment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "End-to-end expressive face video encoding",
+    "StyleGAN2 image inversion",
+    "Multi-stage non-linear latent-space editing",
+    "Style-latent-space (StyleSpace) encoding"
+  ],
+  "results": [
+    "High-quality video re-synthesis",
+    "Captures fine expressive facial deformations",
+    "Facilitates re-enactment at 1024^2 resolution",
+    "Economically captures face identity, head-pose, and complex expressive facial motions",
+    "Bypasses training, person modeling, dependence on landmarks/keypoints, and low-resolution synthesis",
+    "Single $W+$ latent and 35 parameters per frame enable high-fidelity video rendering"
+  ],
+  "paper_id": "624278fb5aee126c0fd79623",
+  "title": "Expressive Talking Head Video Encoding in StyleGAN2 Latent-Space",
+  "abstract": "  While the recent advances in research on video reenactment have yielded promising results, the approaches fall short in capturing the fine, detailed, and expressive facial features (e.g., lip-pressing, mouth puckering, mouth gaping, and wrinkles) which are crucial in generating realistic animated face videos. To this end, we propose an end-to-end expressive face video encoding approach that facilitates data-efficient high-quality video re-synthesis by optimizing low-dimensional edits of a single Identity-latent. The approach builds on StyleGAN2 image inversion and multi-stage non-linear latent-space editing to generate videos that are nearly comparable to input videos. While existing StyleGAN latent-based editing techniques focus on simply generating plausible edits of static images, we automate the latent-space editing to capture the fine expressive facial deformations in a sequence of frames using an encoding that resides in the Style-latent-space (StyleSpace) of StyleGAN2. The encoding thus obtained could be super-imposed on a single Identity-latent to facilitate re-enactment of face videos at $1024^2$. The proposed framework economically captures face identity, head-pose, and complex expressive facial motions at fine levels, and thereby bypasses training, person modeling, dependence on landmarks/ keypoints, and low-resolution synthesis which tend to hamper most re-enactment approaches. The approach is designed with maximum data efficiency, where a single $W+$ latent and 35 parameters per frame enable high-fidelity video rendering. This pipeline can also be used for puppeteering (i.e., motion transfer). "
+}

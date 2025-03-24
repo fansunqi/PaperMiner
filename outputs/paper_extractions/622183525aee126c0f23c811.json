@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sample-efficient optimization of black-box objective functions",
+    "Interpretable and sparse configuration discovery"
+  ],
+  "datasets": [
+    "Synthetic problems",
+    "Real-world problems"
+  ],
+  "methods": [
+    "Sparse Bayesian Optimization",
+    "Regularization-based approaches",
+    "Homotopy continuation for $L_0$ regularization",
+    "Sparsity exploring Bayesian optimization (SEBO)"
+  ],
+  "results": [
+    "Efficient optimization for sparsity",
+    "SEBO outperforms methods based on fixed regularization"
+  ],
+  "paper_id": "622183525aee126c0f23c811",
+  "title": "Sparse Bayesian Optimization",
+  "abstract": "  Bayesian optimization (BO) is a powerful approach to sample-efficient optimization of black-box objective functions. However, the application of BO to areas such as recommendation systems often requires taking the interpretability and simplicity of the configurations into consideration, a setting that has not been previously studied in the BO literature. To make BO useful for this setting, we present several regularization-based approaches that allow us to discover sparse and more interpretable configurations. We propose a novel differentiable relaxation based on homotopy continuation that makes it possible to target sparsity by working directly with $L_0$ regularization. We identify failure modes for regularized BO and develop a hyperparameter-free method, sparsity exploring Bayesian optimization (SEBO) that seeks to simultaneously maximize a target objective and sparsity. SEBO and methods based on fixed regularization are evaluated on synthetic and real-world problems, and we show that we are able to efficiently optimize for sparsity. "
+}

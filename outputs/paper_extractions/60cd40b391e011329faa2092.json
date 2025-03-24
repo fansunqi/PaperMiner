@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement learning in continuous control",
+    "Policy search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Heavy-tailed policy parameterization",
+    "Tail-index parameter alpha",
+    "Exit and transition time analysis of Markov chain"
+  ],
+  "results": [
+    "Convergence rate depends on tail index alpha, Holder continuity, integrability conditions, and exploration tolerance",
+    "Policies with heavier tails converge to wider peaks",
+    "Improved stability to perturbations in supervised learning",
+    "Improved performance in policy search when incentives are misaligned"
+  ],
+  "paper_id": "60cd40b391e011329faa2092",
+  "title": "On the Sample Complexity and Metastability of Heavy-tailed Policy Search\n  in Continuous Control",
+  "abstract": "  Reinforcement learning is a framework for interactive decision-making with incentives sequentially revealed across time without a system dynamics model. Due to its scaling to continuous spaces, we focus on policy search where one iteratively improves a parameterized policy with stochastic policy gradient (PG) updates. In tabular Markov Decision Problems (MDPs), under persistent exploration and suitable parameterization, global optimality may be obtained. By contrast, in continuous space, the non-convexity poses a pathological challenge as evidenced by existing convergence results being mostly limited to stationarity or arbitrary local extrema. To close this gap, we step towards persistent exploration in continuous space through policy parameterizations defined by distributions of heavier tails defined by tail-index parameter alpha, which increases the likelihood of jumping in state space. Doing so invalidates smoothness conditions of the score function common to PG. Thus, we establish how the convergence rate to stationarity depends on the policy's tail index alpha, a Holder continuity parameter, integrability conditions, and an exploration tolerance parameter introduced here for the first time. Further, we characterize the dependence of the set of local maxima on the tail index through an exit and transition time analysis of a suitably defined Markov chain, identifying that policies associated with Levy Processes of a heavier tail converge to wider peaks. This phenomenon yields improved stability to perturbations in supervised learning, which we corroborate also manifests in improved performance of policy search, especially when myopic and farsighted incentives are misaligned. "
+}

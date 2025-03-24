@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated Controller Calibration"
+  ],
+  "datasets": [
+    "CarSim"
+  ],
+  "methods": [
+    "Kalman Filtering for estimating control parameters",
+    "Performance-driven calibration"
+  ],
+  "results": [
+    "Quick learning of control parameters",
+    "Robust to disturbances and noise",
+    "Online calibration of complex dynamical systems",
+    "Real-time feasibility on embedded platform"
+  ],
+  "paper_id": "619c5bbf5244ab9dcbf2230c",
+  "title": "Automated Controller Calibration by Kalman Filtering",
+  "abstract": "  This paper proposes a method for calibrating control parameters. Examples of such control parameters are gains of PID controllers, weights of a cost function for optimal control, filter coefficients, the sliding surface of a sliding mode controller, or weights of a neural network. Hence, the proposed method can be applied to a wide range of controllers. The method uses a Kalman filter that estimates control parameters, using data of closed-loop system operation. The control parameter calibration is driven by a training objective, which encompasses specifications on the performance of the dynamical system. The performance-driven calibration method tunes the parameters online and robustly, is computationally efficient, has low data storage requirements, and is easy to implement making it appealing for many real-time applications. Simulation results show that the method is able to learn control parameters quickly, is able to tune the parameters to compensate for disturbances, and is robust to noise. A simulation study with the high-fidelity vehicle simulator CarSim shows that the method can calibrate controllers of a complex dynamical system online, which indicates its applicability to a real-world system. We also verify the real-time feasibility on an embedded platform with automotive-grade processors by implementing our method on a dSPACE MicroAutoBox-II rapid prototyping unit. "
+}

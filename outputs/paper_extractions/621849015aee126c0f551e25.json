@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generative modeling",
+    "Tensor train representation of probability density"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Tensor train sketching",
+    "Solving small linear systems for tensor train cores"
+  ],
+  "results": [
+    "Avoids curse of dimensionality",
+    "Logarithmic sample complexity for Markov models",
+    "Performance illustrated with numerical experiments"
+  ],
+  "paper_id": "621849015aee126c0f551e25",
+  "title": "Generative modeling via tensor train sketching",
+  "abstract": "  In this paper, we introduce a sketching algorithm for constructing a tensor train representation of a probability density from its samples. Our method deviates from the standard recursive SVD-based procedure for constructing a tensor train. Instead, we formulate and solve a sequence of small linear systems for the individual tensor train cores. This approach can avoid the curse of dimensionality that threatens both the algorithmic and sample complexities of the recovery problem. Specifically, for Markov models, we prove that the tensor cores can be recovered with a sample complexity that scales logarithmically in the dimensionality. Finally, we illustrate the performance of the method with several numerical experiments. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/acasamitjana/SynthByReg"
+  ],
+  "tasks": [
+    "Nonlinear inter-modality registration",
+    "Synthesis-based registration of paired images"
+  ],
+  "datasets": [
+    "public datasets for histological sections to MRI slices"
+  ],
+  "methods": [
+    "Synth-by-Reg (SbR)",
+    "registration U-Net with frozen weights",
+    "synthesis CNN",
+    "contrastive learning for structure preservation"
+  ],
+  "results": [
+    "13% reduction in landmark error over mutual information-based registration",
+    "11% reduction in error over CycleGAN",
+    "comparable to registration CNN with label supervision"
+  ],
+  "paper_id": "61076ff35244ab9dcb3afa51",
+  "title": "Synth-by-Reg (SbR): Contrastive learning for synthesis-based\n  registration of paired images",
+  "abstract": "  Nonlinear inter-modality registration is often challenging due to the lack of objective functions that are good proxies for alignment. Here we propose a synthesis-by-registration method to convert this problem into an easier intra-modality task. We introduce a registration loss for weakly supervised image translation between domains that does not require perfectly aligned training data. This loss capitalises on a registration U-Net with frozen weights, to drive a synthesis CNN towards the desired translation. We complement this loss with a structure preserving constraint based on contrastive learning, which prevents blurring and content shifts due to overfitting. We apply this method to the registration of histological sections to MRI slices, a key step in 3D histology reconstruction. Results on two different public datasets show improvements over registration based on mutual information (13% reduction in landmark error) and synthesis-based algorithms such as CycleGAN (11% reduction), and are comparable to a registration CNN with label supervision. Code and data are publicly available at \\url{https://github.com/acasamitjana/SynthByReg} "
+}

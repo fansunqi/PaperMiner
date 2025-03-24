@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nonnegative Matrix Factorization with $\beta$-divergence"
+  ],
+  "datasets": [
+    "face images",
+    "audio spectrogram",
+    "hyperspectral data",
+    "song play counts"
+  ],
+  "methods": [
+    "Joint Majorization-Minimization (MM) scheme",
+    "multiplicative updates"
+  ],
+  "results": [
+    "significant drop of computation time",
+    "CPU time reductions from about 13% to 78% compared to classic alternating scheme"
+  ],
+  "paper_id": "60dd22f791e011cc85cbcbc7",
+  "title": "Joint Majorization-Minimization for Nonnegative Matrix Factorization\n  with the $\\beta$-divergence",
+  "abstract": "  This article proposes new multiplicative updates for nonnegative matrix factorization (NMF) with the $\\beta$-divergence objective function. Our new updates are derived from a joint majorization-minimization (MM) scheme, in which an auxiliary function (a tight upper bound of the objective function) is built for the two factors jointly and minimized at each iteration. This is in contrast with the classic approach in which a majorizer is derived for each factor separately. Like that classic approach, our joint MM algorithm also results in multiplicative updates that are simple to implement. They however yield a significant drop of computation time (for equally good solutions), in particular for some $\\beta$-divergences of important applicative interest, such as the squared Euclidean distance and the Kullback-Leibler or Itakura-Saito divergences. We report experimental results using diverse datasets: face images, an audio spectrogram, hyperspectral data and song play counts. Depending on the value of $\\beta$ and on the dataset, our joint MM approach can yield CPU time reductions from about $13\\%$ to $78\\%$ in comparison to the classic alternating scheme. "
+}

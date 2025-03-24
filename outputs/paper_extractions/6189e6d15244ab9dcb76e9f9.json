@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/fansunqi/AKeyS"
+  ],
+  "tasks": [
+    "Mixed-integer optimization with learned constraints",
+    "Data-driven decision making"
+  ],
+  "datasets": [
+    "World Food Programme planning data",
+    "Chemotherapy optimization data"
+  ],
+  "methods": [
+    "End-to-end pipeline for learning constraints and objectives",
+    "Mixed-integer optimization-representability of machine learning models",
+    "Decision trust region using convex hull of observations",
+    "Column generation for trust region incorporation",
+    "Ensemble learning for constraint satisfaction"
+  ],
+  "results": [
+    "High-quality prescription generation",
+    "Value added by trust region and ensemble approach",
+    "Improved model robustness and consideration of multiple ML methods",
+    "Inclusion of multiple learned constraints"
+  ],
+  "paper_id": "6189e6d15244ab9dcb76e9f9",
+  "title": "Mixed-Integer Optimization with Constraint Learning",
+  "abstract": "  We establish a broad methodological foundation for mixed-integer optimization with learned constraints. We propose an end-to-end pipeline for data-driven decision making in which constraints and objectives are directly learned from data using machine learning, and the trained models are embedded in an optimization formulation. We exploit the mixed-integer optimization-representability of many machine learning methods, including linear models, decision trees, ensembles, and multi-layer perceptrons, which allows us to capture various underlying relationships between decisions, contextual variables, and outcomes. We also introduce two approaches for handling the inherent uncertainty of learning from data. First, we characterize a decision trust region using the convex hull of the observations, to ensure credible recommendations and avoid extrapolation. We efficiently incorporate this representation using column generation and propose a more flexible formulation to deal with low-density regions and high-dimensional datasets. Then, we propose an ensemble learning approach that enforces constraint satisfaction over multiple bootstrapped estimators or multiple algorithms. In combination with domain-driven components, the embedded models and trust region define a mixed-integer optimization problem for prescription generation. We implement this framework as a Python package (OptiCL) for practitioners. We demonstrate the method in both World Food Programme planning and chemotherapy optimization. The case studies illustrate the framework's ability to generate high-quality prescriptions as well as the value added by the trust region, the use of ensembles to control model robustness, the consideration of multiple machine learning methods, and the inclusion of multiple learned constraints. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding generalization error in variational classifiers"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR"
+  ],
+  "methods": [
+    "Mutual information analysis",
+    "Kullback-Leibler (KL) divergence regularization"
+  ],
+  "results": [
+    "Generalization error bounded by mutual information",
+    "KL term acts effectively as a regularization penalty"
+  ],
+  "paper_id": "5f92ad8691e011edb3573a81",
+  "title": "The Role of Mutual Information in Variational Classifiers",
+  "abstract": "  Overfitting data is a well-known phenomenon related with the generation of a model that mimics too closely (or exactly) a particular instance of data, and may therefore fail to predict future observations reliably. In practice, this behaviour is controlled by various--sometimes heuristics--regularization techniques, which are motivated by developing upper bounds to the generalization error. In this work, we study the generalization error of classifiers relying on stochastic encodings trained on the cross-entropy loss, which is often used in deep learning for classification problems. We derive bounds to the generalization error showing that there exists a regime where the generalization error is bounded by the mutual information between input features and the corresponding representations in the latent space, which are randomly generated according to the encoding distribution. Our bounds provide an information-theoretic understanding of generalization in the so-called class of variational classifiers, which are regularized by a Kullback-Leibler (KL) divergence term. These results give theoretical grounds for the highly popular KL term in variational inference methods that was already recognized to act effectively as a regularization penalty. We further observe connections with well studied notions such as Variational Autoencoders, Information Dropout, Information Bottleneck and Boltzmann Machines. Finally, we perform numerical experiments on MNIST and CIFAR datasets and show that mutual information is indeed highly representative of the behaviour of the generalization error. "
+}

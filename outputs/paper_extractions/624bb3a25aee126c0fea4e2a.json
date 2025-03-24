@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning solution operators for partial differential equations (PDEs)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Model-parallel Fourier neural operators (FNOs)",
+    "Domain-decomposition of input data and network weights"
+  ],
+  "results": [
+    "Predict time-varying PDE solutions of over 2.6 billion variables using 512 A100 GPUs",
+    "Example of training a distributed FNO on Azure cloud for simulating multiphase CO2 dynamics"
+  ],
+  "paper_id": "624bb3a25aee126c0fea4e2a",
+  "title": "Model-Parallel Fourier Neural Operators as Learned Surrogates for\n  Large-Scale Parametric PDEs",
+  "abstract": "  Fourier neural operators (FNOs) are a recently introduced neural network architecture for learning solution operators of partial differential equations (PDEs), which have been shown to perform significantly better than comparable deep learning approaches. Once trained, FNOs can achieve speed-ups of multiple orders of magnitude over conventional numerical PDE solvers. However, due to the high dimensionality of their input data and network weights, FNOs have so far only been applied to two-dimensional or small three-dimensional problems. To remove this limited problem-size barrier, we propose a model-parallel version of FNOs based on domain-decomposition of both the input data and network weights. We demonstrate that our model-parallel FNO is able to predict time-varying PDE solutions of over 2.6 billion variables on Perlmutter using up to 512 A100 GPUs and show an example of training a distributed FNO on the Azure cloud for simulating multiphase CO$_2$ dynamics in the Earth's subsurface. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "deep model compression",
+    "image classification",
+    "object detection/segmentation"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "pruning ternary quantization (PTQ)",
+    "L2 normalization",
+    "pruning",
+    "weight decay"
+  ],
+  "results": [
+    "939kb (49x) 2bit ternary ResNet-18 model with 4% accuracy drop on ImageNet",
+    "170MB Mask R-CNN compressed to 5MB (34x) with 2.8% average precision drop"
+  ],
+  "paper_id": "60fe2cc25244ab9dcb313b1f",
+  "title": "Pruning Ternary Quantization",
+  "abstract": "  Inference time, model size, and accuracy are three key factors in deep model compression.   Most of the existing work addresses these three key factors separately as it is difficult to optimize them all at the same time.   For example, low-bit quantization aims at obtaining a faster model; weight sharing quantization aims at improving compression ratio and accuracy; and mixed-precision quantization aims at balancing accuracy and inference time. To simultaneously optimize bit-width, model size, and accuracy, we propose pruning ternary quantization (PTQ): a simple, effective, symmetric ternary quantization method. We integrate L2 normalization, pruning, and the weight decay term to reduce the weight discrepancy in the gradient estimator during quantization, thus producing highly compressed ternary weights. Our method brings the highest test accuracy and the highest compression ratio. For example, it produces a 939kb (49$\\times$) 2bit ternary ResNet-18 model with only 4\\% accuracy drop on the ImageNet dataset. It compresses 170MB Mask R-CNN to 5MB (34$\\times$) with only 2.8\\% average precision drop. Our method is verified on image classification, object detection/segmentation tasks with different network structures such as ResNet-18, ResNet-50, and MobileNetV2. "
+}

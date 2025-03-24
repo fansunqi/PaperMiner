@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video-and-language grounding"
+  ],
+  "datasets": [
+    "multiple video QA and retrieval datasets"
+  ],
+  "methods": [
+    "Multi-level alignment training scheme",
+    "Global and segment levels of video-language alignment",
+    "Contrastive loss"
+  ],
+  "results": [
+    "Comparable performance to previous state-of-the-arts"
+  ],
+  "paper_id": "626754bb5aee126c0fbccbba",
+  "title": "A Multi-level Alignment Training Scheme for Video-and-Language Grounding",
+  "abstract": "  To solve video-and-language grounding tasks, the key is for the network to understand the connection between the two modalities. For a pair of video and language description, their semantic relation is reflected by their encodings' similarity. A good multi-modality encoder should be able to well capture both inputs' semantics and encode them in the shared feature space where embedding distance gets properly translated into their semantic similarity. In this work, we focused on this semantic connection between video and language, and developed a multi-level alignment training scheme to directly shape the encoding process. Global and segment levels of video-language alignment pairs were designed, based on the information similarity ranging from high-level context to fine-grained semantics. The contrastive loss was used to contrast the encodings' similarities between the positive and negative alignment pairs, and to ensure the network is trained in such a way that similar information is encoded closely in the shared feature space while information of different semantics is kept apart. Our multi-level alignment training can be applied to various video-and-language grounding tasks. Together with the task-specific training loss, our framework achieved comparable performance to previous state-of-the-arts on multiple video QA and retrieval datasets. "
+}

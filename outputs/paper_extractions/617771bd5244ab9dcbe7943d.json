@@ -1,0 +1,27 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Safe task and motion planning for bipedal locomotion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hierarchically integrated framework",
+    "Linear temporal logic (LTL) for reactive game synthesis",
+    "Belief abstraction for dynamic obstacle estimation",
+    "Reduced-order model (ROM) for safety criteria",
+    "Sampling algorithm for non-periodic motion plans",
+    "Angular-momentum linear inverted pendulum model for foot placement",
+    "Ankle-actuated passivity-based controller",
+    "Safe sequential composition of keyframe locomotion state",
+    "Reachability analysis for robust transitions"
+  ],
+  "results": [
+    "Formal guarantee on navigation safety and task completion",
+    "Validated with extensive simulations and hardware experiments on Cassie and Digit robots"
+  ],
+  "paper_id": "617771bd5244ab9dcbe7943d",
+  "title": "Integrated Task and Motion Planning for Safe Legged Navigation in\n  Partially Observable Environments",
+  "abstract": "  This study proposes a hierarchically integrated framework for safe task and motion planning (TAMP) of bipedal locomotion in a partially observable environment with dynamic obstacles and uneven terrain. The high-level task planner employs linear temporal logic (LTL) for a reactive game synthesis between the robot and its environment and provides a formal guarantee on navigation safety and task completion. To address environmental partial observability, a belief abstraction is employed at the high-level navigation planner to estimate the dynamic obstacles' location. Accordingly, a synthesized action planner sends a set of locomotion actions to the middle-level motion planner, while incorporating safe locomotion specifications extracted from safety theorems based on a reduced-order model (ROM) of the locomotion process. The motion planner employs the ROM to design safety criteria and a sampling algorithm to generate non-periodic motion plans that accurately track high-level actions. At the low level, a foot placement controller based on an angular-momentum linear inverted pendulum model is implemented and integrated with an ankle-actuated passivity-based controller for full-body trajectory tracking. To address external perturbations, this study also investigates safe sequential composition of the keyframe locomotion state and achieves robust transitions against external perturbations through reachability analysis. The overall TAMP framework is validated with extensive simulations and hardware experiments on bipedal walking robots Cassie and Digit designed by Agility Robotics. "
+}

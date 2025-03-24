@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/guoqiang-x-zhang/AidaOptimizer"
+  ],
+  "tasks": [
+    "Improving adaptive-optimizer performance",
+    "Training transformers and LSTMs for NLP",
+    "Training VGG and ResNet for image classification",
+    "Training WGAN-GP models for image generation"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "CIFAR100",
+    "ImageNet"
+  ],
+  "methods": [
+    "Aida (suppression of adaptive stepsizes in AdaBelief)",
+    "Mutual layerwise vector projections between gradient and first momentum"
+  ],
+  "results": [
+    "Aida outperforms nine optimizers for transformers, LSTMs, VGG, ResNet",
+    "Matches best performance for WGAN-GP models",
+    "Higher validation accuracies than AdaBelief for ResNet18 over ImageNet"
+  ],
+  "paper_id": "6241273e5aee126c0f292a62",
+  "title": "A DNN Optimizer that Improves over AdaBelief by Suppression of the\n  Adaptive Stepsize Range",
+  "abstract": "  We make contributions towards improving adaptive-optimizer performance. Our improvements are based on suppression of the range of adaptive stepsizes in the AdaBelief optimizer. Firstly, we show that the particular placement of the parameter epsilon within the update expressions of AdaBelief reduces the range of the adaptive stepsizes, making AdaBelief closer to SGD with momentum. Secondly, we extend AdaBelief by further suppressing the range of the adaptive stepsizes. To achieve the above goal, we perform mutual layerwise vector projections between the gradient g_t and its first momentum m_t before using them to estimate the second momentum. The new optimization method is referred to as Aida. Thirdly, extensive experimental results show that Aida outperforms nine optimizers when training transformers and LSTMs for NLP, and VGG and ResNet for image classification over CIAF10 and CIFAR100 while matching the best performance of the nine methods when training WGAN-GP models for image generation tasks. Furthermore, Aida produces higher validation accuracies than AdaBelief for training ResNet18 over ImageNet. Code is available <a href=\"https://github.com/guoqiang-x-zhang/AidaOptimizer\">at this URL</a> "
+}

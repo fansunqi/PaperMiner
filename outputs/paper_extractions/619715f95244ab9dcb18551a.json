@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Federated Learning for Mobile Apps",
+    "Human Activity Recognition",
+    "Sentiment Analysis"
+  ],
+  "datasets": [
+    "HAR-Wild (collected from 100+ college students)"
+  ],
+  "methods": [
+    "FLSys (mobile-cloud federated learning system)",
+    "CNN for HAR-Wild",
+    "Data augmentation for non-IID data"
+  ],
+  "results": [
+    "Good model utility and practical system performance",
+    "Effective support for concurrent models"
+  ],
+  "paper_id": "619715f95244ab9dcb18551a",
+  "title": "FLSys: Toward an Open Ecosystem for Federated Learning Mobile Apps",
+  "abstract": "  This article presents the design, implementation, and evaluation of FLSys, a mobile-cloud federated learning (FL) system, which can be a key component for an open ecosystem of FL models and apps. FLSys is designed to work on smart phones with mobile sensing data. It balances model performance with resource consumption, tolerates communication failures, and achieves scalability. In FLSys, different DL models with different FL aggregation methods can be trained and accessed concurrently by different apps. Furthermore, FLSys provides advanced privacy preserving mechanisms and a common API for third-party app developers to access FL models. FLSys adopts a modular design and is implemented in Android and AWS cloud. We co-designed FLSys with a human activity recognition (HAR) model. HAR sensing data was collected in the wild from 100+ college students during a 4-month period. We implemented HAR-Wild, a CNN model tailored to mobile devices, with a data augmentation mechanism to mitigate the problem of non-Independent and Identically Distributed data. A sentiment analysis model is also used to demonstrate that FLSys effectively supports concurrent models. This article reports our experience and lessons learned from conducting extensive experiments using simulations, Android/Linux emulations, and Android phones that demonstrate FLSys achieves good model utility and practical system performance. "
+}

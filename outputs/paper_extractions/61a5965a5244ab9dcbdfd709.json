@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "End-to-end learned video compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Temporal context mining",
+    "Storing previously reconstructed frames and propagated features",
+    "Learning multi-scale temporal contexts",
+    "Refilling learned temporal contexts into compression modules",
+    "Discarding auto-regressive entropy model"
+  ],
+  "results": [
+    "Outperforms H.265--HM by 14.4% bit rate saving (oriented to PSNR)",
+    "Outperforms H.266--VTM by 21.1% bit rate saving (oriented to MS-SSIM)"
+  ],
+  "paper_id": "61a5965a5244ab9dcbdfd709",
+  "title": "Temporal Context Mining for Learned Video Compression",
+  "abstract": "  We address end-to-end learned video compression with a special focus on better learning and utilizing temporal contexts. For temporal context mining, we propose to store not only the previously reconstructed frames, but also the propagated features into the generalized decoded picture buffer. From the stored propagated features, we propose to learn multi-scale temporal contexts, and re-fill the learned temporal contexts into the modules of our compression scheme, including the contextual encoder-decoder, the frame generator, and the temporal context encoder. Our scheme discards the parallelization-unfriendly auto-regressive entropy model to pursue a more practical decoding time. We compare our scheme with x264 and x265 (representing industrial software for H.264 and H.265, respectively) as well as the official reference software for H.264, H.265, and H.266 (JM, HM, and VTM, respectively). When intra period is 32 and oriented to PSNR, our scheme outperforms H.265--HM by 14.4% bit rate saving; when oriented to MS-SSIM, our scheme outperforms H.266--VTM by 21.1% bit rate saving. "
+}

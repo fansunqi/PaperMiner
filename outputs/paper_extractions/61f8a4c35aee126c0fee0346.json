@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Neural Network Robustness"
+  ],
+  "datasets": [
+    "various datasets",
+    "large graph with millions of nodes"
+  ],
+  "methods": [
+    "GARNET",
+    "weighted spectral embedding",
+    "probabilistic graphical model"
+  ],
+  "results": [
+    "adversarial accuracy improvement up to 13.27%",
+    "runtime speedup up to 14.7x"
+  ],
+  "paper_id": "61f8a4c35aee126c0fee0346",
+  "title": "GARNET: Reduced-Rank Topology Learning for Robust and Scalable Graph\n  Neural Networks",
+  "abstract": "  Graph neural networks (GNNs) have been increasingly deployed in various applications that involve learning on non-Euclidean data. However, recent studies show that GNNs are vulnerable to graph adversarial attacks. Although there are several defense methods to improve GNN robustness by eliminating adversarial components, they may also impair the underlying clean graph structure that contributes to GNN training. In addition, few of those defense models can scale to large graphs due to their high computational complexity and memory usage. In this paper, we propose GARNET, a scalable spectral method to boost the adversarial robustness of GNN models. GARNET first leverages weighted spectral embedding to construct a base graph, which is not only resistant to adversarial attacks but also contains critical (clean) graph structure for GNN training. Next, GARNET further refines the base graph by pruning additional uncritical edges based on probabilistic graphical model. GARNET has been evaluated on various datasets, including a large graph with millions of nodes. Our extensive experiment results show that GARNET achieves adversarial accuracy improvement and runtime speedup over state-of-the-art GNN (defense) models by up to 13.27% and 14.7x, respectively. "
+}

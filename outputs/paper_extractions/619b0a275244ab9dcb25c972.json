@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-Supervised Domain Generalization"
+  ],
+  "datasets": [
+    "public DG datasets",
+    "web-crawled datasets"
+  ],
+  "methods": [
+    "Semi-Supervised Domain Generalization (SSDG)",
+    "pseudo labeling phase",
+    "generalization phase",
+    "cyclic learning framework",
+    "evolving intermediate domain"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "619b0a275244ab9dcb25c972",
+  "title": "Semi-Supervised Domain Generalization with Evolving Intermediate Domain",
+  "abstract": "  Domain Generalization (DG) aims to generalize a model trained on multiple source domains to an unseen target domain. The source domains always require precise annotations, which can be cumbersome or even infeasible to obtain in practice due to the vast amount of data involved. Web data, however, offers an opportunity to access large amounts of unlabeled data with rich style information, which can be leveraged to improve DG. From this perspective, we introduce a novel paradigm of DG, termed as Semi-Supervised Domain Generalization (SSDG), to explore how the labeled and unlabeled source domains can interact, and establish two settings, including the close-set and open-set SSDG. The close-set SSDG is based on existing public DG datasets, while the open-set SSDG, built on the newly-collected web-crawled datasets, presents a novel yet realistic challenge that pushes the limits of current technologies. A natural approach of SSDG is to transfer knowledge from labeled data to unlabeled data via pseudo labeling, and train the model on both labeled and pseudo-labeled data for generalization. Since there are conflicting goals between domain-oriented pseudo labeling and out-of-domain generalization, we develop a pseudo labeling phase and a generalization phase independently for SSDG. Unfortunately, due to the large domain gap, the pseudo labels provided in the pseudo labeling phase inevitably contain noise, which has negative affect on the subsequent generalization phase. Therefore, to improve the quality of pseudo labels and further enhance generalizability, we propose a cyclic learning framework to encourage a positive feedback between these two phases, utilizing an evolving intermediate domain that bridges the labeled and unlabeled domains in a curriculum learning manner... "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse optimization"
+  ],
+  "datasets": [
+    "binary classification",
+    "hyperspectral data",
+    "count data"
+  ],
+  "methods": [
+    "Gap Safe screening with relaxed strong-concavity assumption",
+    "local regularity properties",
+    "non-negativity constraint integration"
+  ],
+  "results": [
+    "Improves Gap Safe screening rules",
+    "Applicable to broader class of functions including beta-divergences",
+    "Effective with different solvers"
+  ],
+  "paper_id": "6034e66a91e01122c046f89d",
+  "title": "Expanding boundaries of Gap Safe screening",
+  "abstract": "  Sparse optimization problems are ubiquitous in many fields such as statistics, signal/image processing and machine learning. This has led to the birth of many iterative algorithms to solve them. A powerful strategy to boost the performance of these algorithms is known as safe screening: it allows the early identification of zero coordinates in the solution, which can then be eliminated to reduce the problem's size and accelerate convergence. In this work, we extend the existing Gap Safe screening framework by relaxing the global strong-concavity assumption on the dual cost function. Instead, we exploit local regularity properties, that is, strong concavity on well-chosen subsets of the domain. The non-negativity constraint is also integrated to the existing framework. Besides making safe screening possible to a broader class of functions that includes beta-divergences (e.g., the Kullback-Leibler divergence), the proposed approach also improves upon the existing Gap Safe screening rules on previously applicable cases (e.g., logistic regression). The proposed general framework is exemplified by some notable particular cases: logistic function, beta = 1.5 and Kullback-Leibler divergences. Finally, we showcase the effectiveness of the proposed screening rules with different solvers (coordinate descent, multiplicative-update and proximal gradient algorithms) and different data sets (binary classification, hyperspectral and count data). "
+}

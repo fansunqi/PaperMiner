@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hydrologic prediction"
+  ],
+  "datasets": [
+    "Daymet",
+    "671 basins across the USA"
+  ],
+  "methods": [
+    "Differentiable, learnable, process-based models (\u03b4 models)",
+    "HBV backbone with embedded neural networks"
+  ],
+  "results": [
+    "Median Nash Sutcliffe efficiency of 0.732 vs. 0.748 from LSTM",
+    "For another dataset: 0.715 vs. 0.722",
+    "Output untrained variables like soil storage, groundwater storage, snowpack, evapotranspiration, baseflow"
+  ],
+  "paper_id": "6243ca915aee126c0fbd0a5b",
+  "title": "Differentiable, learnable, regionalized process-based models with\n  physical outputs can approach state-of-the-art hydrologic prediction accuracy",
+  "abstract": "  Predictions of hydrologic variables across the entire water cycle have significant value for water resource management as well as downstream applications such as ecosystem and water quality modeling. Recently, purely data-driven deep learning models like long short-term memory (LSTM) showed seemingly-insurmountable performance in modeling rainfall-runoff and other geoscientific variables, yet they cannot predict untrained physical variables and remain challenging to interpret. Here we show that differentiable, learnable, process-based models (called {\\delta} models here) can approach the performance level of LSTM for the intensively-observed variable (streamflow) with regionalized parameterization. We use a simple hydrologic model HBV as the backbone and use embedded neural networks, which can only be trained in a differentiable programming framework, to parameterize, enhance, or replace the process-based model modules. Without using an ensemble or post-processor, {\\delta} models can obtain a median Nash Sutcliffe efficiency of 0.732 for 671 basins across the USA for the Daymet forcing dataset, compared to 0.748 from a state-of-the-art LSTM model with the same setup. For another forcing dataset, the difference is even smaller: 0.715 vs. 0.722. Meanwhile, the resulting learnable process-based models can output a full set of untrained variables, e.g., soil and groundwater storage, snowpack, evapotranspiration, and baseflow, and later be constrained by their observations. Both simulated evapotranspiration and fraction of discharge from baseflow agreed decently with alternative estimates. The general framework can work with models with various process complexity and opens up the path for learning physics from big data. "
+}

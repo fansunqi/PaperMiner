@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Ontology Subsumption Prediction"
+  ],
+  "datasets": [
+    "five real-world ontologies"
+  ],
+  "methods": [
+    "BERTSubs",
+    "pre-trained BERT for contextual embeddings",
+    "customized templates for class context and logical restrictions"
+  ],
+  "results": [
+    "BERTSubs outperforms baselines using knowledge graph embeddings, non-contextual word embeddings, and state-of-the-art OWL ontology embeddings"
+  ],
+  "paper_id": "621454535aee126c0f201382",
+  "title": "Contextual Semantic Embeddings for Ontology Subsumption Prediction",
+  "abstract": "  Automating ontology construction and curation is an important but challenging task in knowledge engineering and artificial intelligence. Prediction by machine learning techniques such as contextual semantic embedding is a promising direction, but the relevant research is still preliminary especially for expressive ontologies in Web Ontology Language (OWL). In this paper, we present a new subsumption prediction method named BERTSubs for classes of OWL ontology. It exploits the pre-trained language model BERT to compute contextual embeddings of a class, where customized templates are proposed to incorporate the class context (e.g., neighbouring classes) and the logical existential restriction. BERTSubs is able to predict multiple kinds of subsumers including named classes from the same ontology or another ontology, and existential restrictions from the same ontology. Extensive evaluation on five real-world ontologies for three different subsumption tasks has shown the effectiveness of the templates and that BERTSubs can dramatically outperform the baselines that use (literal-aware) knowledge graph embeddings, non-contextual word embeddings and the state-of-the-art OWL ontology embeddings. "
+}

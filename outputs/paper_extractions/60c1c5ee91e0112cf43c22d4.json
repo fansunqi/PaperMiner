@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/ai-se/whun"
+  ],
+  "tasks": [
+    "Preference Discovery in Large Product Lines"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "WHUN iSBSE algorithm with recursive clustering and feature selection"
+  ],
+  "results": [
+    "WHUN runs faster, asks fewer questions, achieves solutions within 0.1% of best",
+    "Scales to large problems (1000 variables with 6 interactions, 4 questions each)"
+  ],
+  "paper_id": "60c1c5ee91e0112cf43c22d4",
+  "title": "Preference Discovery in Large Product Lines",
+  "abstract": "  When AI tools can generate many solutions, some human preference must be applied to determine which solution is relevant to the current project. One way to find those preferences is interactive search-based software engineering (iSBSE) where humans can influence the search process. Current iSBSE methods can lead to cognitive fatigue (when they overwhelm humans with too many overly elaborate questions). WHUN is an iSBSE algorithm that avoids that problem. Due to its recursive clustering procedure, WHUN only pesters humans for $O(log_2{N})$ interactions. Further, each interaction is mediated via a feature selection procedure that reduces the number of asked questions. When compared to prior state-of-the-art iSBSE systems, WHUN runs faster, asks fewer questions, and achieves better solutions that are within $0.1\\%$ of the best solutions seen in our sample space. More importantly, WHUN scales to large problems (in our experiments, models with 1000 variables can be explored with half a dozen interactions where, each time, we ask only four questions). Accordingly, we recommend WHUN as a baseline against which future iSBSE work should be compared. To facilitate that, all our scripts are online at https://github.com/ai-se/whun. "
+}

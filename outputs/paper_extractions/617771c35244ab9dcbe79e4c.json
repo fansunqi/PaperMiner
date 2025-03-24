@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Avoiding excessive exploration in reinforcement learning"
+  ],
+  "datasets": [
+    "Sepsis treatment task",
+    "HIV treatment task"
+  ],
+  "methods": [
+    "Uniformly Conservative Exploration",
+    "UCB reinforcement learning policy with adaptive exploration"
+  ],
+  "results": [
+    "Ensures good performance compared to baseline policy for every patient",
+    "Minimizes regret in tabular setting",
+    "Extends to continuous state spaces via deep reinforcement learning"
+  ],
+  "paper_id": "617771c35244ab9dcbe79e4c",
+  "title": "Uniformly Conservative Exploration in Reinforcement Learning",
+  "abstract": "  A key challenge to deploying reinforcement learning in practice is avoiding excessive (harmful) exploration in individual episodes. We propose a natural constraint on exploration -- \\textit{uniformly} outperforming a conservative policy (adaptively estimated from all data observed thus far), up to a per-episode exploration budget. We design a novel algorithm that uses a UCB reinforcement learning policy for exploration, but overrides it as needed to satisfy our exploration constraint with high probability. Importantly, to ensure unbiased exploration across the state space, our algorithm adaptively determines when to explore. We prove that our approach remains conservative while minimizing regret in the tabular setting. We experimentally validate our results on a sepsis treatment task and an HIV treatment task, demonstrating that our algorithm can learn while ensuring good performance compared to the baseline policy for every patient; the latter task also demonstrates that our approach extends to continuous state spaces via deep reinforcement learning. "
+}

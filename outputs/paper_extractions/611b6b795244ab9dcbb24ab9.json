@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FedChain",
+    "Combines local and global methods"
+  ],
+  "results": [
+    "Improves upon previously known rates in general convex and PL settings",
+    "Near-optimal for strong convexity problems"
+  ],
+  "paper_id": "611b6b795244ab9dcbb24ab9",
+  "title": "FedChain: Chained Algorithms for Near-Optimal Communication Cost in\n  Federated Learning",
+  "abstract": "  Federated learning (FL) aims to minimize the communication complexity of training a model over heterogeneous data distributed across many clients. A common approach is local methods, where clients take multiple optimization steps over local data before communicating with the server (e.g., FedAvg). Local methods can exploit similarity between clients' data. However, in existing analyses, this comes at the cost of slow convergence in terms of the dependence on the number of communication rounds R. On the other hand, global methods, where clients simply return a gradient vector in each round (e.g., SGD), converge faster in terms of R but fail to exploit the similarity between clients even when clients are homogeneous. We propose FedChain, an algorithmic framework that combines the strengths of local methods and global methods to achieve fast convergence in terms of R while leveraging the similarity between clients. Using FedChain, we instantiate algorithms that improve upon previously known rates in the general convex and PL settings, and are near-optimal (via an algorithm-independent lower bound that we show) for problems that satisfy strong convexity. Empirical results support this theoretical gain over existing methods. "
+}

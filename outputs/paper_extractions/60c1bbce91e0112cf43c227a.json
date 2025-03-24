@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Uncertainty estimation in deep learning",
+    "Predictive uncertainty quantification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Non-parametric quantile estimation using a single neuron",
+    "Split conformal prediction"
+  ],
+  "results": [
+    "Competitive quality and coverage with state-of-the-art solutions",
+    "More computationally efficient"
+  ],
+  "paper_id": "60c1bbce91e0112cf43c227a",
+  "title": "Can a single neuron learn predictive uncertainty?",
+  "abstract": "  Uncertainty estimation methods using deep learning approaches strive against separating how uncertain the state of the world manifests to us via measurement (objective end) from the way this gets scrambled with the model specification and training procedure used to predict such state (subjective means) -- e.g., number of neurons, depth, connections, priors (if the model is bayesian), weight initialization, etc. This poses the question of the extent to which one can eliminate the degrees of freedom associated with these specifications and still being able to capture the objective end. Here, a novel non-parametric quantile estimation method for continuous random variables is introduced, based on the simplest neural network architecture with one degree of freedom: a single neuron. Its advantage is first shown in synthetic experiments comparing with the quantile estimation achieved from ranking the order statistics (specifically for small sample size) and with quantile regression. In real-world applications, the method can be used to quantify predictive uncertainty under the split conformal prediction setting, whereby prediction intervals are estimated from the residuals of a pre-trained model on a held-out validation set and then used to quantify the uncertainty in future predictions -- the single neuron used here as a structureless ``thermometer'' that measures how uncertain the pre-trained model is. Benchmarking regression and classification experiments demonstrate that the method is competitive in quality and coverage with state-of-the-art solutions, with the added benefit of being more computationally efficient. "
+}

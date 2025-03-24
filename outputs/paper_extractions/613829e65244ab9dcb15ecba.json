@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Landmarks Correspondence Detection",
+    "Deformable Image Registration"
+  ],
+  "datasets": [
+    "lower-abdominal CT scans from cervical cancer patients",
+    "Magnetic Resonance Imaging (MRI) scans"
+  ],
+  "methods": [
+    "Deep Convolutional Neural Network (DCNN)",
+    "DCNN-Match",
+    "self-supervised learning",
+    "different loss functions",
+    "Elastix registration software"
+  ],
+  "results": [
+    "significant improvement in DIR performance",
+    "generalization to MRI scans without retraining",
+    "spatial density of landmarks affected improvement"
+  ],
+  "paper_id": "613829e65244ab9dcb15ecba",
+  "title": "Automatic Landmarks Correspondence Detection in Medical Images with an\n  Application to Deformable Image Registration",
+  "abstract": "  Purpose: Deformable Image Registration (DIR) can benefit from additional guidance using corresponding landmarks in the images. However, the benefits thereof are largely understudied, especially due to the lack of automatic landmark detection methods for three-dimensional (3D) medical images.   Approach: We present a Deep Convolutional Neural Network (DCNN), called DCNN-Match, that learns to predict landmark correspondences in 3D images in a self-supervised manner. We trained DCNN-Match on pairs of Computed Tomography (CT) scans containing simulated deformations. We explored five variants of DCNN-Match that use different loss functions and assessed their effect on the spatial density of predicted landmarks and the associated matching errors. We also tested DCNN-Match variants in combination with the open-source registration software Elastix to assess the impact of predicted landmarks in providing additional guidance to DIR.   Results: We tested our approach on lower-abdominal CT scans from cervical cancer patients: 121 pairs containing simulated deformations and 11 pairs demonstrating clinical deformations. The results showed significant improvement in DIR performance when landmark correspondences predicted by DCNN-Match were used in the case of simulated (p = $0e^0$) as well as clinical deformations (p = 0.030). We also observed that the spatial density of the automatic landmarks with respect to the underlying deformation affect the extent of improvement in DIR. Finally, DCNN-Match was found to generalize to Magnetic Resonance Imaging (MRI) scans without requiring retraining, indicating easy applicability to other datasets.   Conclusions: DCNN-Match learns to predict landmark correspondences in 3D medical images in a self-supervised manner, which can improve DIR performance. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Federated Learning on Non-IID Image Features"
+  ],
+  "datasets": [
+    "natural images",
+    "medical images"
+  ],
+  "methods": [
+    "client-specific batch normalization",
+    "causal reasoning"
+  ],
+  "results": [
+    "state-of-the-art performance",
+    "faster convergence",
+    "lower generalization error bound for external clients",
+    "good compatibility"
+  ],
+  "paper_id": "616f88d95244ab9dcbbe8e8b",
+  "title": "UniFed: A Unified Framework for Federated Learning on Non-IID Image\n  Features",
+  "abstract": "  How to tackle non-iid data is a crucial topic in federated learning. This challenging problem not only affects training process, but also harms performance of clients not participating in training. Existing literature mainly focuses on either side, yet still lacks a unified solution to handle these two types (internal and external) of clients in a joint way. In this work, we propose a unified framework to tackle the non-iid issues for internal and external clients together. Firstly, we propose to use client-specific batch normalization in either internal or external clients to alleviate feature distribution shifts incurred by non-iid data. Then we present theoretical analysis to demonstrate the benefits of client-specific batch normalization. Specifically, we show that our approach promotes convergence speed for federated training and yields lower generalization error bound for external clients. Furthermore, we use causal reasoning to form a causal view to explain the advantages of our framework. At last, we conduct extensive experiments on natural and medical images to evaluate our method, where our method achieves state-of-the-art performance, faster convergence, and shows good compatibility. We also performed comprehensive analytical studies on a real-world medical dataset to demonstrate the effectiveness. "
+}

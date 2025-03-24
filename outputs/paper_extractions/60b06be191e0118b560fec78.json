@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated Repair of Unrealisable LTL Specifications"
+  ],
+  "datasets": [
+    "different benchmarks"
+  ],
+  "methods": [
+    "AuRUS",
+    "search-based approach",
+    "model counting for semantic similarity"
+  ],
+  "results": [
+    "successfully repairs all unrealisable specifications",
+    "produces many unique solutions",
+    "shows more scalability compared to related techniques"
+  ],
+  "paper_id": "60b06be191e0118b560fec78",
+  "title": "Automated Repair of Unrealisable LTL Specifications Guided by Model\n  Counting",
+  "abstract": "  The reactive synthesis problem consists of automatically producing correct-by-construction operational models of systems from high-level formal specifications of their behaviours. However, specifications are often unrealisable, meaning that no system can be synthesised from the specification. To deal with this problem, we present AuRUS, a search-based approach to repair unrealisable Linear-Time Temporal Logic (LTL) specifications. AuRUS aims at generating solutions that are similar to the original specifications by using the notions of syntactic and semantic similarities. Intuitively, the syntactic similarity measures the text similarity between the specifications, while the semantic similarity measures the number of behaviours preserved/removed by the candidate repair. We propose a new heuristic based on model counting to approximate semantic similarity. We empirically assess AuRUS on many unrealisable specifications taken from different benchmarks and show that it can successfully repair all of them. Also, compared to related techniques, AuRUS can produce many unique solutions while showing more scalability. "
+}

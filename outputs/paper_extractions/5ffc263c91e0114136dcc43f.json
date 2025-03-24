@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning non-Gaussian graphical models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hessian scores",
+    "Triangular transport map",
+    "SING algorithm for density estimation and sparse structure revelation"
+  ],
+  "results": [
+    "Recovery of graph structure for non-Gaussian data",
+    "Effective even with biased density approximation",
+    "Application to chaotic dynamical system with local interactions"
+  ],
+  "paper_id": "5ffc263c91e0114136dcc43f",
+  "title": "Learning non-Gaussian graphical models via Hessian scores and triangular\n  transport",
+  "abstract": "  Undirected probabilistic graphical models represent the conditional dependencies, or Markov properties, of a collection of random variables. Knowing the sparsity of such a graphical model is valuable for modeling multivariate distributions and for efficiently performing inference. While the problem of learning graph structure from data has been studied extensively for certain parametric families of distributions, most existing methods fail to consistently recover the graph structure for non-Gaussian data. Here we propose an algorithm for learning the Markov structure of continuous and non-Gaussian distributions. To characterize conditional independence, we introduce a score based on integrated Hessian information from the joint log-density, and we prove that this score upper bounds the conditional mutual information for a general class of distributions. To compute the score, our algorithm SING estimates the density using a deterministic coupling, induced by a triangular transport map, and iteratively exploits sparse structure in the map to reveal sparsity in the graph. For certain non-Gaussian datasets, we show that our algorithm recovers the graph structure even with a biased approximation to the density. Among other examples, we apply SING to learn the dependencies between the states of a chaotic dynamical system with local interactions. "
+}

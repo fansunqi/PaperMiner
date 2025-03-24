@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CNN Interpretability",
+    "Computer Vision"
+  ],
+  "datasets": [
+    "CIFAR-100",
+    "COCO"
+  ],
+  "methods": [
+    "Sparsely-gated Mixture-of-Expert Layers",
+    "Soft and hard constraint-based approaches"
+  ],
+  "results": [
+    "Experts specialize in recognizing different domains without data clustering",
+    "Object detection experts specialize in detecting objects of distinct sizes"
+  ],
+  "paper_id": "626603225aee126c0f233851",
+  "title": "Sparsely-gated Mixture-of-Expert Layers for CNN Interpretability",
+  "abstract": "  Sparsely-gated Mixture of Expert (MoE) layers have been recently successfully applied for scaling large transformers, especially for language modeling tasks. An intriguing side effect of sparse MoE layers is that they convey inherent interpretability to a model via natural expert specialization. In this work, we apply sparse MoE layers to CNNs for computer vision tasks and analyze the resulting effect on model interpretability. To stabilize MoE training, we present both soft and hard constraint-based approaches. With hard constraints, the weights of certain experts are allowed to become zero, while soft constraints balance the contribution of experts with an additional auxiliary loss. As a result, soft constraints handle expert utilization better and support the expert specialization process, while hard constraints maintain more generalized experts and increase overall model performance. Our findings demonstrate that experts can implicitly focus on individual sub-domains of the input space. For example, experts trained for CIFAR-100 image classification specialize in recognizing different domains such as flowers or animals without previous data clustering. Experiments with RetinaNet and the COCO dataset further indicate that object detection experts can also specialize in detecting objects of distinct sizes. "
+}

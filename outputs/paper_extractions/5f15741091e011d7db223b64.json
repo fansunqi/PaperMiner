@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Flow-augmentation on undirected graphs",
+    "Bi-objective st-Cut problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Undirected flow-augmentation technique",
+    "Randomized algorithm for sampling set A"
+  ],
+  "results": [
+    "Improved success probability: 2^{-O(k log k)}",
+    "Linear dependency on graph size in running time",
+    "Simpler proof compared to directed version",
+    "Bi-objective st-Cut problem solvable in randomized FPT time: 2^{O(k log k)} (|V(G)|+|E(G)|)"
+  ],
+  "paper_id": "5f15741091e011d7db223b64",
+  "title": "Flow-augmentation II: Undirected graphs",
+  "abstract": "  We present an undirected version of the recently introduced flow-augmentation technique: Given an undirected multigraph $G$ with distinguished vertices $s,t \\in V(G)$ and an integer $k$, one can in randomized $k^{O(1)} \\cdot (|V(G)| + |E(G)|)$ time sample a set $A \\subseteq \\binom{V(G)}{2}$ such that the following holds: for every inclusion-wise minimal $st$-cut $Z$ in $G$ of cardinality at most $k$, $Z$ becomes a minimum-cardinality cut between $s$ and $t$ in $G+A$ (i.e., in the multigraph $G$ with all edges of $A$ added) with probability $2^{-O(k \\log k)}$.   Compared to the version for directed graphs [STOC 2022], the version presented here has improved success probability ($2^{-O(k \\log k)}$ instead of $2^{-O(k^4 \\log k)}$), linear dependency on the graph size in the running time bound, and an arguably simpler proof.   An immediate corollary is that the Bi-objective $st$-Cut problem can be solved in randomized FPT time $2^{O(k \\log k)} (|V(G)|+|E(G)|)$ on undirected graphs. "
+}

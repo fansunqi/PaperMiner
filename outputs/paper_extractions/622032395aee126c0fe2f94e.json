@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fault-tolerant data recovery in distributed applications"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "In-memory replicated storage",
+    "ReStore framework for MPI programs",
+    "Shrinking recovery"
+  ],
+  "results": [
+    "Substantially faster recovery than standard checkpointing",
+    "Loading times in milliseconds on up to 24,576 processors",
+    "Speedup in recovery time for fault-tolerant bioinformatics application"
+  ],
+  "paper_id": "622032395aee126c0fe2f94e",
+  "title": "ReStore: In-Memory REplicated STORagE for Rapid Recovery in\n  Fault-Tolerant Algorithms",
+  "abstract": "  Fault-tolerant distributed applications require mechanisms to recover data lost via a process failure. On modern cluster systems it is typically impractical to request replacement resources after such a failure. Therefore, applications have to continue working with the remaining resources. This requires redistributing the workload and that the non-failed processes reload data. We present an algorithmic framework and its C++ library implementation ReStore for MPI programs that enables recovery of data after process failures. By storing all required data in memory via an appropriate data distribution and replication, recovery is substantially faster than with standard checkpointing schemes that rely on a parallel file system. As the application developer can specify which data to load, we also support shrinking recovery instead of recovery using spare compute nodes. We evaluate ReStore in both controlled, isolated environments and real applications. Our experiments show loading times of lost input data in the range of milliseconds on up to 24 576 processors and a substantial speedup of the recovery time for the fault-tolerant version of a widely used bioinformatics application. "
+}

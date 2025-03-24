@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/Opt-Mucca/Adaptive-Cutsel-MILP"
+  ],
+  "tasks": [
+    "Cutting plane selection in mixed-integer linear programming"
+  ],
+  "datasets": [
+    "MIPLIB 2017",
+    "neural network verification data set"
+  ],
+  "methods": [
+    "Parametric family of mixed-integer linear programs",
+    "Graph convolutional neural networks",
+    "Reinforcement learning framework for cut selection"
+  ],
+  "results": [
+    "Adaptive cut selection improves performance over diverse instances",
+    "Finding a single function for cut selection rule is difficult"
+  ],
+  "paper_id": "6215a5cc5aee126c0f337b74",
+  "title": "Adaptive Cut Selection in Mixed-Integer Linear Programming",
+  "abstract": "  Cutting plane selection is a subroutine used in all modern mixed-integer linear programming solvers with the goal of selecting a subset of generated cuts that induce optimal solver performance. These solvers have millions of parameter combinations, and so are excellent candidates for parameter tuning. Cut selection scoring rules are usually weighted sums of different measurements, where the weights are parameters. We present a parametric family of mixed-integer linear programs together with infinitely many family-wide valid cuts. Some of these cuts can induce integer optimal solutions directly after being applied, while others fail to do so even if an infinite amount are applied. We show for a specific cut selection rule, that any finite grid search of the parameter space will always miss all parameter values, which select integer optimal inducing cuts in an infinite amount of our problems. We propose a variation on the design of existing graph convolutional neural networks, adapting them to learn cut selection rule parameters. We present a reinforcement learning framework for selecting cuts, and train our design using said framework over MIPLIB 2017 and a neural network verification data set. Our framework and design show that adaptive cut selection does substantially improve performance over a diverse set of instances, but that finding a single function describing such a rule is difficult. Code for reproducing all experiments is available at https://github.com/Opt-Mucca/Adaptive-Cutsel-MILP. "
+}

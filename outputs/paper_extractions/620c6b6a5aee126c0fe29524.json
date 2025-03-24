@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simple Kriging from a statistical learning perspective"
+  ],
+  "datasets": [
+    "simulated data",
+    "real-world datasets"
+  ],
+  "methods": [
+    "nonparametric finite-sample predictive analysis",
+    "plug-in predictive rule"
+  ],
+  "results": [
+    "non-asymptotic bounds of order O_P(1/\u221an) for excess risk"
+  ],
+  "paper_id": "620c6b6a5aee126c0fe29524",
+  "title": "A Statistical Learning View of Simple Kriging",
+  "abstract": "  In the Big Data era, with the ubiquity of geolocation sensors in particular, massive datasets exhibiting a possibly complex spatial dependence structure are becoming increasingly available. In this context, the standard probabilistic theory of statistical learning does not apply directly and guarantees of the generalization capacity of predictive rules learned from such data are left to establish. We analyze here the simple Kriging task from a statistical learning perspective, i.e. by carrying out a nonparametric finite-sample predictive analysis. Given $d\\geq 1$ values taken by a realization of a square integrable random field $X=\\{X_s\\}_{s\\in S}$, $S\\subset \\mathbb{R}^2$, with unknown covariance structure, at sites $s_1,\\; \\ldots,\\; s_d$ in $S$, the goal is to predict the unknown values it takes at any other location $s\\in S$ with minimum quadratic risk. The prediction rule being derived from a training spatial dataset: a single realization $X'$ of $X$, independent from those to be predicted, observed at $n\\geq 1$ locations $\\sigma_1,\\; \\ldots,\\; \\sigma_n$ in $S$. Despite the connection of this minimization problem with kernel ridge regression, establishing the generalization capacity of empirical risk minimizers is far from straightforward, due to the non independent and identically distributed nature of the training data $X'_{\\sigma_1},\\; \\ldots,\\; X'_{\\sigma_n}$ involved in the learning procedure. In this article, non-asymptotic bounds of order $O_{\\mathbb{P}}(1/\\sqrt{n})$ are proved for the excess risk of a plug-in predictive rule mimicking the true minimizer in the case of isotropic stationary Gaussian processes, observed at locations forming a regular grid in the learning stage. These theoretical results are illustrated by various numerical experiments, on simulated data and on real-world datasets. "
+}

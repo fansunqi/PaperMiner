@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Repeated two-player zero-sum game with system design"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "No-regret algorithm for row player",
+    "Payoff matrix design with unique minimax solution",
+    "Game playing algorithm for system designer"
+  ],
+  "results": [
+    "Provably unique minimax solution with desired behaviour",
+    "Guidance of row player to converge to minimax solution using stable no-regret algorithm"
+  ],
+  "paper_id": "5f1960c091e01182befeea88",
+  "title": "Exploiting No-Regret Algorithms in System Design",
+  "abstract": "  We investigate a repeated two-player zero-sum game setting where the column player is also a designer of the system, and has full control on the design of the payoff matrix. In addition, the row player uses a no-regret algorithm to efficiently learn how to adapt their strategy to the column player's behaviour over time in order to achieve good total payoff. The goal of the column player is to guide her opponent to pick a mixed strategy which is favourable for the system designer. Therefore, she needs to: (i) design an appropriate payoff matrix $A$ whose unique minimax solution contains the desired mixed strategy of the row player; and (ii) strategically interact with the row player during a sequence of plays in order to guide her opponent to converge to that desired behaviour. To design such a payoff matrix, we propose a novel solution that provably has a unique minimax solution with the desired behaviour. We also investigate a relaxation of this problem where uniqueness is not required, but all the minimax solutions have the same mixed strategy for the row player. Finally, we propose a new game playing algorithm for the system designer and prove that it can guide the row player, who may play a \\emph{stable} no-regret algorithm, to converge to a minimax solution. "
+}

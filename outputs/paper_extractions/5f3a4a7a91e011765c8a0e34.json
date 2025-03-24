@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "Open-source software is available for implementing the proposed methodology"
+  ],
+  "tasks": [
+    "Random sampling of graph partitions for legislative redistricting",
+    "Evaluating partisan gerrymandering"
+  ],
+  "datasets": [
+    "Small map for validation",
+    "Maps from a high-profile redistricting case in Pennsylvania"
+  ],
+  "methods": [
+    "Sequential Monte Carlo (SMC) algorithm",
+    "Incorporates constraints like equal population, compactness, and preservation of administrative boundaries"
+  ],
+  "results": [
+    "SMC algorithm converges faster and with fewer samples than a comparable MCMC algorithm"
+  ],
+  "paper_id": "5f3a4a7a91e011765c8a0e34",
+  "title": "Sequential Monte Carlo for Sampling Balanced and Compact Redistricting\n  Plans",
+  "abstract": "  Random sampling of graph partitions under constraints has become a popular tool for evaluating legislative redistricting plans. Analysts detect partisan gerrymandering by comparing a proposed redistricting plan with an ensemble of sampled alternative plans. For successful application, sampling methods must scale to maps with a moderate or large number of districts, incorporate realistic legal constraints, and accurately and efficiently sample from a selected target distribution. Unfortunately, most existing methods struggle in at least one of these areas. We present a new Sequential Monte Carlo (SMC) algorithm that generates a sample of redistricting plans converging to a realistic target distribution. Because it draws many plans in parallel, the SMC algorithm can efficiently explore the relevant space of redistricting plans better than the existing Markov chain Monte Carlo (MCMC) algorithms that generate plans sequentially. Our algorithm can simultaneously incorporate several constraints commonly imposed in real-world redistricting problems, including equal population, compactness, and preservation of administrative boundaries. We validate the accuracy of the proposed algorithm by using a small map where all redistricting plans can be enumerated. We then apply the SMC algorithm to evaluate the partisan implications of several maps submitted by relevant parties in a recent high-profile redistricting case in the state of Pennsylvania. We find that the proposed algorithm converges faster and with fewer samples than a comparable MCMC algorithm. Open-source software is available for implementing the proposed methodology. "
+}

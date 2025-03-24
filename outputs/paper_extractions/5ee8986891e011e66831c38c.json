@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Synthetic A/B Testing",
+    "Causal Parameter Estimation"
+  ],
+  "datasets": [
+    "Real e-commerce data"
+  ],
+  "methods": [
+    "Synthetic Interventions (SI) Estimator",
+    "Tensor Factor Model"
+  ],
+  "results": [
+    "Finite-sample consistent SI estimator",
+    "Asymptotically normal SI estimator",
+    "Validated using real e-commerce data"
+  ],
+  "paper_id": "5ee8986891e011e66831c38c",
+  "title": "Synthetic A/B Testing using Synthetic Interventions",
+  "abstract": "  Suppose there are $N$ units and $D$ interventions. We aim to learn the average potential outcome associated with every unit-intervention pair, i.e., $N \\times D$ causal parameters. While running $N \\times D$ experiments is conceivable, it can be expensive or infeasible. This work introduces an experiment design, synthetic A/B testing, and the synthetic interventions (SI) estimator to recover all $N \\times D$ causal parameters while observing each unit under at most two interventions, independent of $D$. Under a novel tensor factor model for potential outcomes across units, measurements, and interventions, we establish the identification of each parameter. Further, we show the SI estimator is finite-sample consistent and asymptotically normal. Collectively, these also lead to novel results for panel data settings, particularly for synthetic controls. We empirically validate our experiment design using real e-commerce data from a large-scale A/B test. "
+}

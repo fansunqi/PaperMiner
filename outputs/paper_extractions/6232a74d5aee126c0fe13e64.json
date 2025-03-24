@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tensor shape mismatch detection in deep learning programs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Type-based approach with best-effort shape inference",
+    "Gradual typing with user-added type annotations",
+    "Dynamic checks insertion when static inference is insufficient"
+  ],
+  "results": [
+    "Prototype shape checking tool implemented",
+    "Approach satisfies gradual typing criteria by Siek et al. (2015)",
+    "Effectiveness evaluated on deep neural network programs"
+  ],
+  "paper_id": "6232a74d5aee126c0fe13e64",
+  "title": "Gradual Tensor Shape Checking",
+  "abstract": "  Tensor shape mismatch is a common source of bugs in deep learning programs. We propose a new type-based approach to detect tensor shape mismatches. One of the main features of our approach is the best-effort shape inference. As the tensor shape inference problem is undecidable in general, we allow static type/shape inference to be performed only in a best-effort manner. If the static inference cannot guarantee the absence of the shape inconsistencies, dynamic checks are inserted into the program. Another main feature is gradual typing, where users can improve the precision of the inference by adding appropriate type annotations to the program. We formalize our approach and prove that it satisfies the criteria of gradual typing proposed by Siek et al. in 2015. We have implemented a prototype shape checking tool based on our approach and evaluated its effectiveness by applying it to some deep neural network programs. "
+}

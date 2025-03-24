@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Detecting the 12th Vertebra from CT images for image-guided radiotherapy"
+  ],
+  "datasets": [
+    "Annotated CT images from 55 patients"
+  ],
+  "methods": [
+    "3D detection network",
+    "Auxiliary network for constraint feature map",
+    "Improved detection head and target functions",
+    "Improved loss functions for class imbalance"
+  ],
+  "results": [
+    "Bounding box center error: 3.98\u00b12.04mm",
+    "Bounding box size error: 16.83\u00b18.34mm",
+    "AP at IoU 0.35: 95.4",
+    "AP at IoU 0.5: 64.7",
+    "Significantly outperformed Retina-Net3D"
+  ],
+  "paper_id": "5e81c32f91e011b2b7821e3f",
+  "title": "Using constraint structure and an improved object detection network to\n  detect the 12^{th} Vertebra from CT images with a limited field of view for\n  image-guided radiotherapy",
+  "abstract": "  Image guidance has been widely used in radiation therapy. Correctly identifying the bounding box of the anatomical landmarks from limited field of views is the key to success. In image-guided radiation therapy (IGRT), the detection of those landmarks like the 12th vertebra (T12) still requires tedious manual inspections and annotations; and superior-inferior misalignment to the wrong vertebral body is still relatively common. It is necessary to develop an automated approach to detect those landmarks from images. The challenges of training a model to identify T12 vertebrae automatically mainly are high shape similarity between T12 and neighboring vertebrae, limited annotated data, and class imbalance. This study proposed a novel 3D detection network, requiring only a small amount of training data. Our approach has the following innovations, including 1) the introduction of an auxiliary network to build constraint feature map for improving the model's generalization, especially when the constraint structure is easier to be detected than the main one; 2) an improved detection head and target functions for accurate bounding box detection; and 3) an improved loss functions to address the high class imbalance. Our proposed network was trained, validated and tested on anotated CT images from 55 patients and demonstrated accurate distinguish T12 vertebra from its neighboring vertebrae of high shape similarity. Our proposed algorithm yielded the bounding box center and size errors of 3.98\\pm2.04mm and 16.83\\pm8.34mm, respectively. Our approach significantly outperformed state-of-the-arts Retina-Net3D in average precision (AP) at IoU thresholds of 0.35 and 0.5, with AP increasing from 0 to 95.4 and 0 to 64.7, respectively. In summary, our approach has a great potential to be integrated into the clinical workflow to improve the safety of IGRT. "
+}

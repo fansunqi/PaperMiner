@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differentially private estimation of multiple quantiles"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Non-smoothed Inverse Sensitivity (IS) mechanism",
+    "JointExp",
+    "Heuristically Smoothed JointExp (HSJointExp)"
+  ],
+  "results": [
+    "Statistical consistency for continuous distributions",
+    "HSJointExp achieves orders of magnitude better results on problematic datasets"
+  ],
+  "paper_id": "6213029a5aee126c0f42a385",
+  "title": "Private Quantiles Estimation in the Presence of Atoms",
+  "abstract": "  We consider the differentially private estimation of multiple quantiles (MQ) of a distribution from a dataset, a key building block in modern data analysis. We apply the recent non-smoothed Inverse Sensitivity (IS) mechanism to this specific problem. We establish that the resulting method is closely related to the recently published ad hoc algorithm JointExp. In particular, they share the same computational complexity and a similar efficiency. We prove the statistical consistency of these two algorithms for continuous distributions. Furthermore, we demonstrate both theoretically and empirically that this method suffers from an important lack of performance in the case of peaked distributions, which can degrade up to a potentially catastrophic impact in the presence of atoms. Its smoothed version (i.e. by applying a max kernel to its output density) would solve this problem, but remains an open challenge to implement. As a proxy, we propose a simple and numerically efficient method called Heuristically Smoothed JointExp (HSJointExp), which is endowed with performance guarantees for a broad class of distributions and achieves results that are orders of magnitude better on problematic datasets. "
+}

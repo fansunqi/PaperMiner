@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Group Isomorphism Testing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Constant-dimensional Weisfeiler-Leman algorithm",
+    "Individualize-and-refine paradigm",
+    "Count-free Weisfeiler-Leman algorithm with bounded non-determinism and limited counting"
+  ],
+  "results": [
+    "Places isomorphism testing for groups with Abelian normal Hall subgroup into L",
+    "QuasiSAC^1 isomorphism test for groups without Abelian normal subgroups",
+    "Weisfeiler-Leman can identify direct products in parallel",
+    "New upper bound of \u03b2_1MAC^0(FOLL) for isomorphism testing of Abelian groups"
+  ],
+  "paper_id": "61c3e8e75244ab9dcba2109a",
+  "title": "On the parallel complexity of Group Isomorphism via Weisfeiler-Leman",
+  "abstract": "  In this paper, we show that the constant-dimensional Weisfeiler-Leman algorithm for groups (Brachter & Schweitzer, LICS 2020) can be fruitfully used to improve parallel complexity upper bounds on isomorphism testing for several families of groups. In particular, we show:   - Groups with an Abelian normal Hall subgroup whose complement is $O(1)$-generated are identified by constant-dimensional Weisfeiler-Leman using only a constant number of rounds. This places isomorphism testing for this family of groups into $\\textsf{L}$; the previous upper bound for isomorphism testing was $\\textsf{P}$ (Qiao, Sarma, & Tang, STACS 2011).   - We use the individualize-and-refine paradigm to obtain a $\\textsf{quasiSAC}^{1}$ isomorphism test for groups without Abelian normal subgroups, previously only known to be in $\\textsf{P}$ (Babai, Codenotti, & Qiao, ICALP 2012).   - We extend a result of Brachter & Schweitzer (arXiv, 2021) on direct products of groups to the parallel setting. Namely, we also show that Weisfeiler-Leman can identify direct products in parallel, provided it can identify each of the indecomposable direct factors in parallel. They previously showed the analogous result for $\\textsf{P}$.   We finally consider the count-free Weisfeiler-Leman algorithm, where we show that count-free WL is unable to even distinguish Abelian groups in polynomial-time. Nonetheless, we use count-free WL in tandem with bounded non-determinism and limited counting to obtain a new upper bound of $\\beta_{1}\\textsf{MAC}^{0}(\\textsf{FOLL})$ for isomorphism testing of Abelian groups. This improves upon the previous $\\textsf{TC}^{0}(\\textsf{FOLL})$ upper bound due to Chattopadhyay, Tor\\'an, & Wagner (ACM Trans. Comput. Theory, 2013). "
+}

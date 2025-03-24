@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Probabilistic Cellular Automata Analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Probabilistic ACA (PACA)",
+    "One- and Two-Sided Error Models",
+    "Derandomization Techniques"
+  ],
+  "results": [
+    "Separation between language classes up to o(\u221an) time",
+    "\u03a9(\u221an) lower bound for derandomizing constant-time two-sided error PACAs",
+    "Full derandomization of constant-time one-sided error PACAs with constant overhead",
+    "Languages decidable by constant-time two-sided error PACAs are between closure of LLT and LTT"
+  ],
+  "paper_id": "624278fb5aee126c0fd796ab",
+  "title": "Sublinear-Time Probabilistic Cellular Automata",
+  "abstract": "  We propose and investigate a probabilistic model of sublinear-time one-dimensional cellular automata. In particular, we modify the model of ACA (which are cellular automata that accept if and only if all cells simultaneously accept) so that every cell changes its state not only dependent on the states it sees in its neighborhood but also on an unbiased coin toss of its own. The resulting model is dubbed probabilistic ACA (PACA). We consider one- and two-sided error versions of the model (in the same spirit as the classes $\\mathsf{RP}$ and $\\mathsf{BPP}$) and establish a separation between the classes of languages they can recognize all the way up to $o(\\sqrt{n})$ time. As a consequence, we have a $\\Omega(\\sqrt{n})$ lower bound for derandomizing constant-time two-sided error PACAs (using deterministic ACAs). We also prove that derandomization of $T(n)$-time PACAs (to polynomial-time deterministic cellular automata) for various regimes of $T(n) = \\omega(\\log n)$ implies non-trivial derandomization results for the class $\\mathsf{RP}$ (e.g., $\\mathsf{P} = \\mathsf{RP}$). The main contribution is an almost full characterization of the constant-time PACA classes: For one-sided error, the class equals that of the deterministic model; that is, constant-time one-sided error PACAs can be fully derandomized with only a constant multiplicative overhead in time complexity. As for two-sided error, we identify a natural class we call the linearly testable languages ($\\mathsf{LLT}$) and prove that the languages decidable by constant-time two-sided error PACAs are \"sandwiched\" in-between the closure of $\\mathsf{LLT}$ under union and intersection and the class of locally threshold testable languages ($\\mathsf{LTT}$). "
+}

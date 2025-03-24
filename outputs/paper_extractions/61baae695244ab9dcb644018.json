@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robotic traversal of cluttered large obstacles using physical interaction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics model and simulation of minimalistic robot",
+    "Force-feedback control strategy",
+    "Beam stiffness estimation from sensed contact force"
+  ],
+  "results": [
+    "Higher success rate and less energy consumed with force sensing",
+    "Transition from pitch mode to roll mode for stiff beams",
+    "Simple push across for flimsy beams",
+    "Robustness against body oscillations, randomness, and position sensing uncertainty",
+    "Shorter sensorimotor delay reduces energy cost"
+  ],
+  "paper_id": "61baae695244ab9dcb644018",
+  "title": "Environmental force sensing helps robots traverse cluttered large\n  obstacles using physical interaction",
+  "abstract": "  Many applications require robots to move through complex 3-D terrain with large obstacles, such as self-driving, search and rescue, and extraterrestrial exploration. Although robots are already excellent at avoiding sparse obstacles, they still struggle in traversing cluttered large obstacles. To make progress, we need to better understand how to use and control the physical interaction with obstacles to traverse them. Forest floor-dwelling cockroaches can use physical interaction to transition between different locomotor modes to traverse flexible, grass-like beams of a large range of stiffness. Inspired by this, here we studied whether and how environmental force sensing helps robots make active adjustments to traverse cluttered large obstacles. We developed a physics model and a simulation of a minimalistic robot capable of sensing environmental forces during traversal of beam obstacles. Then, we developed a force-feedback control strategy, which estimated beam stiffness from the sensed contact force using the physics model. Then in simulation we used the estimated stiffness to control the robot to either stay in or transition to the more favorable locomotor modes to traverse. When beams were stiff, force sensing induced the robot to transition from a more costly pitch mode to a less costly roll mode, which helped the robot traverse with a higher success rate and less energy consumed. By contrast, if the robot simply pushed forward or always avoided obstacles, it would consume more energy, become stuck in front of beams, or even flip over. When the beams were flimsy, force sensing guided the robot to simply push across the beams. In addition, we demonstrated the robustness of beam stiffness estimation against body oscillations, randomness in oscillation, and uncertainty in position sensing. We also found that a shorter sensorimotor delay reduced energy cost of traversal. "
+}

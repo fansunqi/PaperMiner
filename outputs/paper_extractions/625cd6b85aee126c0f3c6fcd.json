@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Passage Retrieval",
+    "Open Question Answering"
+  ],
+  "datasets": [
+    "open-domain retrieval datasets"
+  ],
+  "methods": [
+    "Zero-Shot Question Generation",
+    "Re-ranking with pre-trained language model"
+  ],
+  "results": [
+    "Improves unsupervised retrieval models by 6%-18% absolute",
+    "Improves supervised models by up to 12% in top-20 passage retrieval accuracy",
+    "New state-of-the-art results in full open-domain question answering"
+  ],
+  "paper_id": "625cd6b85aee126c0f3c6fcd",
+  "title": "Improving Passage Retrieval with Zero-Shot Question Generation",
+  "abstract": "  We propose a simple and effective re-ranking method for improving passage retrieval in open question answering. The re-ranker re-scores retrieved passages with a zero-shot question generation model, which uses a pre-trained language model to compute the probability of the input question conditioned on a retrieved passage. This approach can be applied on top of any retrieval method (e.g. neural or keyword-based), does not require any domain- or task-specific training (and therefore is expected to generalize better to data distribution shifts), and provides rich cross-attention between query and passage (i.e. it must explain every token in the question). When evaluated on a number of open-domain retrieval datasets, our re-ranker improves strong unsupervised retrieval models by 6%-18% absolute and strong supervised models by up to 12% in terms of top-20 passage retrieval accuracy. We also obtain new state-of-the-art results on full open-domain question answering by simply adding the new re-ranker to existing models with no further changes. "
+}

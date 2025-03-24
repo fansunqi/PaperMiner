@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Liver and hepatic lesion segmentation in MRI"
+  ],
+  "datasets": [
+    "MRI dataset",
+    "LiTS (Liver Tumor Segmentation) challenge CT data"
+  ],
+  "methods": [
+    "SWTR-Unet (hybrid CNN with transformer layers)",
+    "pretrained ResNet",
+    "Unet-style decoder path"
+  ],
+  "results": [
+    "Dice scores: 98+-2% for liver, 81+-28% for lesion segmentation on MRI",
+    "Dice scores: 97+-2% for liver, 79+-25% for lesion segmentation on CT",
+    "Accuracy on par with manual expert segmentations"
+  ],
+  "paper_id": "61f20d665244ab9dcb8bf28f",
+  "title": "Joint Liver and Hepatic Lesion Segmentation in MRI using a Hybrid CNN\n  with Transformer Layers",
+  "abstract": "  Deep learning-based segmentation of the liver and hepatic lesions therein steadily gains relevance in clinical practice due to the increasing incidence of liver cancer each year. Whereas various network variants with overall promising results in the field of medical image segmentation have been successfully developed over the last years, almost all of them struggle with the challenge of accurately segmenting hepatic lesions in magnetic resonance imaging (MRI). This led to the idea of combining elements of convolutional and transformer-based architectures to overcome the existing limitations. This work presents a hybrid network called SWTR-Unet, consisting of a pretrained ResNet, transformer blocks as well as a common Unet-style decoder path. This network was primarily applied to single-modality non-contrast-enhanced liver MRI and additionally to the publicly available computed tomography (CT) data of the liver tumor segmentation (LiTS) challenge to verify the applicability on other modalities. For a broader evaluation, multiple state-of-the-art networks were implemented and applied, ensuring a direct comparability. Furthermore, correlation analysis and an ablation study were carried out, to investigate various influencing factors on the segmentation accuracy of the presented method. With Dice scores of averaged 98+-2% for liver and 81+-28% lesion segmentation on the MRI dataset and 97+-2% and 79+-25%, respectively on the CT dataset, the proposed SWTR-Unet proved to be a precise approach for liver and hepatic lesion segmentation with state-of-the-art results for MRI and competing accuracy in CT imaging. The achieved segmentation accuracy was found to be on par with manually performed expert segmentations as indicated by inter-observer variabilities for liver lesion segmentation. In conclusion, the presented method could save valuable time and resources in clinical practice. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Wireless edge caching to minimize average latency"
+  ],
+  "datasets": [
+    "Real traces"
+  ],
+  "methods": [
+    "Whittle index policy",
+    "Q^{+}-Whittle reinforcement learning algorithm",
+    "Q^{+}-Whittle-LFA with linear function approximation"
+  ],
+  "results": [
+    "Q^{+}-Whittle-LFA yields excellent empirical performance",
+    "Finite-time bound on the mean-square error of Q^{+}-Whittle-LFA"
+  ],
+  "paper_id": "621d8ec95aee126c0f73b0ce",
+  "title": "Whittle Index based Q-Learning for Wireless Edge Caching with Linear\n  Function Approximation",
+  "abstract": "  We consider the problem of content caching at the wireless edge to serve a set of end users via unreliable wireless channels so as to minimize the average latency experienced by end users due to the constrained wireless edge cache capacity. We formulate this problem as a Markov decision process, or more specifically a restless multi-armed bandit problem, which is provably hard to solve. We begin by investigating a discounted counterpart, and prove that it admits an optimal policy of the threshold-type. We then show that this result also holds for average latency problem. Using this structural result, we establish the indexability of our problem, and employ the Whittle index policy to minimize average latency. Since system parameters such as content request rates and wireless channel conditions are often unknown and time-varying, we further develop a model-free reinforcement learning algorithm dubbed as Q^{+}-Whittle that relies on Whittle index policy. However, Q^{+}-Whittle requires to store the Q-function values for all state-action pairs, the number of which can be extremely large for wireless edge caching. To this end, we approximate the Q-function by a parameterized function class with a much smaller dimension, and further design a Q^{+}-Whittle algorithm with linear function approximation, which is called Q^{+}-Whittle-LFA. We provide a finite-time bound on the mean-square error of Q^{+}-Whittle-LFA. Simulation results using real traces demonstrate that Q^{+}-Whittle-LFA yields excellent empirical performance. "
+}

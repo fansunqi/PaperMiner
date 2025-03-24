@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Location Trajectory Fingerprinting",
+    "Differential Privacy"
+  ],
+  "datasets": [
+    "Two real-life location datasets",
+    "Two synthetic datasets"
+  ],
+  "methods": [
+    "Utility-focused post-processing scheme",
+    "Fingerprinting scheme with differential privacy"
+  ],
+  "results": [
+    "High fingerprinting robustness",
+    "Outperforms existing approaches",
+    "Increases data utility for differentially-private datasets"
+  ],
+  "paper_id": "62563f825aee126c0f6f28c5",
+  "title": "Robust Fingerprint of Location Trajectories Under Differential Privacy",
+  "abstract": "  Directly releasing those data raises privacy and liability (e.g., due to unauthorized distribution of such datasets) concerns since location data contain users' sensitive information, e.g., regular moving patterns and favorite spots. To address this, we propose a novel fingerprinting scheme that simultaneously identifies unauthorized redistribution of location datasets and provides differential privacy guarantees for the shared data. Observing data utility degradation due to differentially-private mechanisms, we introduce a utility-focused post-processing scheme to regain spatio-temporal correlations between points in a location trajectory. We further integrate this post-processing scheme into our fingerprinting scheme as a sampling method. The proposed fingerprinting scheme alleviates the degradation in the utility of the shared dataset due to the noise introduced by differentially-private mechanisms (i.e., adds the fingerprint by preserving the publicly known statistics of the data). Meanwhile, it does not violate differential privacy throughout the entire process due to immunity to post-processing, a fundamental property of differential privacy. Our proposed fingerprinting scheme is robust against known and well-studied attacks against a fingerprinting scheme including random flipping attacks, correlation-based flipping attacks, and collusions among multiple parties, which makes it hard for the attackers to infer the fingerprint codes and avoid accusation. Via experiments on two real-life location datasets and two synthetic ones, we show that our scheme achieves high fingerprinting robustness and outperforms existing approaches. Besides, the proposed fingerprinting scheme increases data utility for differentially-private datasets, which is beneficial for data analyzers. "
+}

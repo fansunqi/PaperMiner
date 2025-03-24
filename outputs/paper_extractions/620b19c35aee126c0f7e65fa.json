@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "PDE-based optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Efficient natural gradient descent (NGD)",
+    "Representing natural gradient direction as a least-squares problem solution",
+    "Applying numerical linear algebra methods"
+  ],
+  "results": [
+    "Reliably compute several natural NGDs for large-scale parameter space",
+    "Compute Wasserstein NGD in thousands of dimensions",
+    "Qualitative differences between standard gradient descent and various NGD methods in nonconvex optimization"
+  ],
+  "paper_id": "620b19c35aee126c0f7e65fa",
+  "title": "Efficient Natural Gradient Descent Methods for Large-Scale PDE-Based\n  Optimization Problems",
+  "abstract": "  We propose efficient numerical schemes for implementing the natural gradient descent (NGD) for a broad range of metric spaces with applications to PDE-based optimization problems. Our technique represents the natural gradient direction as a solution to a standard least-squares problem. Hence, instead of calculating, storing, or inverting the information matrix directly, we apply efficient methods from numerical linear algebra. We treat both scenarios where the Jacobian, i.e., the derivative of the state variable with respect to the parameter, is either explicitly known or implicitly given through constraints. We can thus reliably compute several natural NGDs for a large-scale parameter space. In particular, we are able to compute Wasserstein NGD in thousands of dimensions, which was believed to be out of reach. Finally, our numerical results shed light on the qualitative differences between the standard gradient descent and various NGD methods based on different metric spaces in nonconvex optimization problems. "
+}

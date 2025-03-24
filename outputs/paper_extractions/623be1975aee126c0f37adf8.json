@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D transparent object reconstruction"
+  ],
+  "datasets": [
+    "several transparent objects with ground truth models"
+  ],
+  "methods": [
+    "Hybrid mesh-neural representation",
+    "Multi-view silhouettes for initial shape",
+    "Surface-based local MLPs for vertex displacement field (VDF)",
+    "Ray-cell correspondences for light path constraint simplification"
+  ],
+  "results": [
+    "High-quality reconstruction results superior to state-of-the-art methods",
+    "Simplified data acquisition setup"
+  ],
+  "paper_id": "623be1975aee126c0f37adf8",
+  "title": "Hybrid Mesh-neural Representation for 3D Transparent Object\n  Reconstruction",
+  "abstract": "  We propose a novel method to reconstruct the 3D shapes of transparent objects using hand-held captured images under natural light conditions. It combines the advantage of explicit mesh and multi-layer perceptron (MLP) network, a hybrid representation, to simplify the capture setting used in recent contributions. After obtaining an initial shape through the multi-view silhouettes, we introduce surface-based local MLPs to encode the vertex displacement field (VDF) for the reconstruction of surface details. The design of local MLPs allows to represent the VDF in a piece-wise manner using two layer MLP networks, which is beneficial to the optimization algorithm. Defining local MLPs on the surface instead of the volume also reduces the searching space. Such a hybrid representation enables us to relax the ray-pixel correspondences that represent the light path constraint to our designed ray-cell correspondences, which significantly simplifies the implementation of single-image based environment matting algorithm. We evaluate our representation and reconstruction algorithm on several transparent objects with ground truth models. Our experiments show that our method can produce high-quality reconstruction results superior to state-of-the-art methods using a simplified data acquisition setup. "
+}

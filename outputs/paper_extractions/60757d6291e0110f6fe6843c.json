@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fast and Scalable Training of Deep Learning Recommendation Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SW/HW co-designed solution",
+    "High-performance scalable software stack based on PyTorch",
+    "ZionEX platform with dedicated scale-out network",
+    "Optimized PyTorch-based training stack supporting model and data parallelism",
+    "Sharding algorithms for hierarchical partitioning of embedding tables",
+    "High-performance core operators",
+    "Reduced precision communications",
+    "Multi-level memory hierarchy (HBM+DDR+SSD)",
+    "Pipelining"
+  ],
+  "results": [
+    "40X speedup in terms of time to solution over previous systems",
+    "Capability to train DLRMs with up to 12 Trillion parameters"
+  ],
+  "paper_id": "60757d6291e0110f6fe6843c",
+  "title": "Software-Hardware Co-design for Fast and Scalable Training of Deep\n  Learning Recommendation Models",
+  "abstract": "  Deep learning recommendation models (DLRMs) are used across many business-critical services at Facebook and are the single largest AI application in terms of infrastructure demand in its data-centers. In this paper we discuss the SW/HW co-designed solution for high-performance distributed training of large-scale DLRMs. We introduce a high-performance scalable software stack based on PyTorch and pair it with the new evolution of Zion platform, namely ZionEX. We demonstrate the capability to train very large DLRMs with up to 12 Trillion parameters and show that we can attain 40X speedup in terms of time to solution over previous systems. We achieve this by (i) designing the ZionEX platform with dedicated scale-out network, provisioned with high bandwidth, optimal topology and efficient transport (ii) implementing an optimized PyTorch-based training stack supporting both model and data parallelism (iii) developing sharding algorithms capable of hierarchical partitioning of the embedding tables along row, column dimensions and load balancing them across multiple workers; (iv) adding high-performance core operators while retaining flexibility to support optimizers with fully deterministic updates (v) leveraging reduced precision communications, multi-level memory hierarchy (HBM+DDR+SSD) and pipelining. Furthermore, we develop and briefly comment on distributed data ingestion and other supporting services that are required for the robust and efficient end-to-end training in production environments. "
+}

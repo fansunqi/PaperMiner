@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Event extraction"
+  ],
+  "datasets": [
+    "three domain datasets"
+  ],
+  "methods": [
+    "Active Learning",
+    "Memory-Based Loss Prediction model (MBLP)",
+    "batch-based selection strategy",
+    "internal-external sample loss ranking method",
+    "delayed training strategy"
+  ],
+  "results": [
+    "outperforms other state-of-the-art methods"
+  ],
+  "paper_id": "61aed0d85244ab9dcb3a729b",
+  "title": "Active Learning for Event Extraction with Memory-based Loss Prediction\n  Model",
+  "abstract": "  Event extraction (EE) plays an important role in many industrial application scenarios, and high-quality EE methods require a large amount of manual annotation data to train supervised learning models. However, the cost of obtaining annotation data is very high, especially for annotation of domain events, which requires the participation of experts from corresponding domain. So we introduce active learning (AL) technology to reduce the cost of event annotation. But the existing AL methods have two main problems, which make them not well used for event extraction. Firstly, the existing pool-based selection strategies have limitations in terms of computational cost and sample validity. Secondly, the existing evaluation of sample importance lacks the use of local sample information. In this paper, we present a novel deep AL method for EE. We propose a batch-based selection strategy and a Memory-Based Loss Prediction model (MBLP) to select unlabeled samples efficiently. During the selection process, we use an internal-external sample loss ranking method to evaluate the sample importance by using local information. Finally, we propose a delayed training strategy to train the MBLP model. Extensive experiments are performed on three domain datasets, and our method outperforms other state-of-the-art methods. "
+}

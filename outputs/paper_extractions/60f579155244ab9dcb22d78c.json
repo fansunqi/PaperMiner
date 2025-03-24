@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Graph Topology Learning",
+    "Matrix-valued Time Series Analysis"
+  ],
+  "datasets": [
+    "Synthetic Data",
+    "Real Data"
+  ],
+  "methods": [
+    "Matrix-variate Vector Auto-regressive (VAR) Models",
+    "Online Procedures for Low and High Dimensions",
+    "Lasso-type Regularization",
+    "Homotopy Algorithms",
+    "Adaptive Tuning for Regularization Parameter",
+    "Augmented AR Models with Trend Parameter"
+  ],
+  "results": [
+    "Effectiveness of Proposed Methods Supported by Numerical Experiments"
+  ],
+  "paper_id": "60f579155244ab9dcb22d78c",
+  "title": "Online Graph Topology Learning from Matrix-valued Time Series",
+  "abstract": "  This paper is concerned with the statistical analysis of matrix-valued time series. These are data collected over a network of sensors (typically a set of spatial locations) along time, where a vector of features is observed per time instant per sensor. Thus each sensor is characterized by a vectorial time series. We would like to identify the dependency structure among these sensors and represent it by a graph. When there is only one feature per sensor, the vector auto-regressive models have been widely adapted to infer the structure of Granger causality. The resulting graph is referred to as causal graph. Our first contribution is then extending VAR models to matrix-variate models to serve the purpose of graph learning. Secondly, we propose two online procedures respectively in low and high dimensions, which can update quickly the estimates of coefficients when new samples arrive. In particular in high dimensional regime, a novel Lasso-type is introduced and we develop its homotopy algorithms for the online learning. We also provide an adaptive tuning procedure for the regularization parameter. Lastly, we consider that, the application of AR models onto data usually requires detrending the raw data, however, this step is forbidden in online context. Therefore, we augment the proposed AR models by incorporating trend as extra parameter, and then adapt the online algorithms to the augmented data models, which allow us to simultaneously learn the graph and trend from streaming samples. In this work, we consider primarily the periodic trend. Numerical experiments using both synthetic and real data are performed, whose results support the effectiveness of the proposed methods. "
+}

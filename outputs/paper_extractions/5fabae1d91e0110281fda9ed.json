@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/Linear95/TC-estimation"
+  ],
+  "tasks": [
+    "Estimating Total Correlation",
+    "Regularization in learning tasks"
+  ],
+  "datasets": [
+    "synthetic",
+    "real-world scenarios"
+  ],
+  "methods": [
+    "sample-based mutual information estimators",
+    "tree-like and line-like calculation paths"
+  ],
+  "results": [
+    "demonstrated effectiveness in all TC estimation, minimization, and maximization tasks"
+  ],
+  "paper_id": "5fabae1d91e0110281fda9ed",
+  "title": "Estimating Total Correlation with Mutual Information Estimators",
+  "abstract": "  Total correlation (TC) is a fundamental concept in information theory that measures statistical dependency among multiple random variables. Recently, TC has shown noticeable effectiveness as a regularizer in many learning tasks, where the correlation among multiple latent embeddings requires to be jointly minimized or maximized. However, calculating precise TC values is challenging, especially when the closed-form distributions of embedding variables are unknown. In this paper, we introduce a unified framework to estimate total correlation values with sample-based mutual information (MI) estimators. More specifically, we discover a relation between TC and MI and propose two types of calculation paths (tree-like and line-like) to decompose TC into MI terms. With each MI term being bounded, the TC values can be successfully estimated. Further, we provide theoretical analyses concerning the statistical consistency of the proposed TC estimators. Experiments are presented on both synthetic and real-world scenarios, where our estimators demonstrate effectiveness in all TC estimation, minimization, and maximization tasks. The code is available at https://github.com/Linear95/TC-estimation. "
+}

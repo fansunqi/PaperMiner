@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/WYu-Feng/Missingness-Augmentation"
+  ],
+  "tasks": [
+    "Missing data imputation"
+  ],
+  "datasets": [
+    "tabular datasets",
+    "image datasets"
+  ],
+  "methods": [
+    "Missingness Augmentation (MisA)",
+    "dynamically produces incomplete samples",
+    "simple reconstruction loss"
+  ],
+  "results": [
+    "MisA significantly improves performance of generative imputation models"
+  ],
+  "paper_id": "610cb3995244ab9dcb1e4e78",
+  "title": "Missingness Augmentation: A General Approach for Improving Generative\n  Imputation Models",
+  "abstract": "  Missing data imputation is a fundamental problem in data analysis, and many studies have been conducted to improve its performance by exploring model structures and learning procedures. However, data augmentation, as a simple yet effective method, has not received enough attention in this area. In this paper, we propose a novel data augmentation method called Missingness Augmentation (MisA) for generative imputation models. Our approach dynamically produces incomplete samples at each epoch by utilizing the generator's output, constraining the augmented samples using a simple reconstruction loss, and combining this loss with the original loss to form the final optimization objective. As a general augmentation technique, MisA can be easily integrated into generative imputation frameworks, providing a simple yet effective way to enhance their performance. Experimental results demonstrate that MisA significantly improves the performance of many recently proposed generative imputation models on a variety of tabular and image datasets. The code is available at \\url{https://github.com/WYu-Feng/Missingness-Augmentation}. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model-free redesign of nonlinear optimal regulator"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-step reinforcement learning",
+    "Offline RL for linear control law design",
+    "Online RL for nonlinear optimal control law training"
+  ],
+  "results": [
+    "Improves transient learning performance",
+    "Enhances efficiency in hyperparameter tuning",
+    "Guarantees convergence to LQR under mild conditions"
+  ],
+  "paper_id": "6045ffba91e011e6352432ce",
+  "title": "Two-step reinforcement learning for model-free redesign of nonlinear\n  optimal regulator",
+  "abstract": "  In many practical control applications, the performance level of a closed-loop system degrades over time due to the change of plant characteristics. Thus, there is a strong need for redesigning a controller without going through the system modeling process, which is often difficult for closed-loop systems. Reinforcement learning (RL) is one of the promising approaches that enable model-free redesign of optimal controllers for nonlinear dynamical systems based only on the measurement of the closed-loop system. However, the learning process of RL usually requires a considerable number of trial-and-error experiments using the poorly controlled system that may accumulate wear on the plant. To overcome this limitation, we propose a model-free two-step design approach that improves the transient learning performance of RL in an optimal regulator redesign problem for unknown nonlinear systems. Specifically, we first design a linear control law that attains some degree of control performance in a model-free manner, and then, train the nonlinear optimal control law with online RL by using the designed linear control law in parallel. We introduce an offline RL algorithm for the design of the linear control law and theoretically guarantee its convergence to the LQR controller under mild assumptions. Numerical simulations show that the proposed approach improves the transient learning performance and efficiency in hyperparameter tuning of RL. "
+}

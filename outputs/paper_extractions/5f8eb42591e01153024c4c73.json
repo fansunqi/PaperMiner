@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "General-purpose planning with open-scope world models"
+  ],
+  "datasets": [
+    "Minecraft"
+  ],
+  "methods": [
+    "Task scoping",
+    "Causal link analysis",
+    "Backwards reachability",
+    "Operator merging"
+  ],
+  "results": [
+    "75x reduction in search time with a state-of-the-art numeric planner"
+  ],
+  "paper_id": "5f8eb42591e01153024c4c73",
+  "title": "Task Scoping: Generating Task-Specific Abstractions for Planning in\n  Open-Scope Models",
+  "abstract": "  A general-purpose planning agent requires an open-scope world model: one rich enough to tackle any of the wide range of tasks it may be asked to solve over its operational lifetime. This stands in contrast with typical planning approaches, where the scope of a model is limited to a specific family of tasks that share significant structure. Unfortunately, planning to solve any specific task using an open-scope model is computationally intractable - even for state-of-the-art methods - due to the many states and actions that are necessarily present in the model but irrelevant to that problem. We propose task scoping: a method that exploits knowledge of the initial state, goal conditions, and transition system to automatically and efficiently remove provably irrelevant variables and actions from a planning problem. Our approach leverages causal link analysis and backwards reachability over state variables (rather than states) along with operator merging (when effects on relevant variables are identical). Using task scoping as a pre-planning step can shrink the search space by orders of magnitude and dramatically decrease planning time. We empirically demonstrate that these improvements occur across a variety of open-scope domains, including Minecraft, where our approach leads to a 75x reduction in search time with a state-of-the-art numeric planner, even after including the time required for task scoping itself. "
+}

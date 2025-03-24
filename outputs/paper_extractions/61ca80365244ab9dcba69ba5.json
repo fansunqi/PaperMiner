@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-view 3D Pose Estimation"
+  ],
+  "datasets": [
+    "CMU Panoptic Studio",
+    "InterHand2.6M"
+  ],
+  "methods": [
+    "Active Learning",
+    "Self-Training",
+    "Multi-view AL strategies"
+  ],
+  "results": [
+    "Reduce turn-around time by 60% on CMU Panoptic Studio",
+    "Reduce annotation cost by 80% on CMU Panoptic Studio",
+    "Significant performance gains in 3D body and hand pose estimation"
+  ],
+  "paper_id": "61ca80365244ab9dcba69ba5",
+  "title": "Rethinking the Data Annotation Process for Multi-view 3D Pose Estimation\n  with Active Learning and Self-Training",
+  "abstract": "  Pose estimation of the human body and hands is a fundamental problem in computer vision, and learning-based solutions require a large amount of annotated data. In this work, we improve the efficiency of the data annotation process for 3D pose estimation problems with Active Learning (AL) in a multi-view setting. AL selects examples with the highest value to annotate under limited annotation budgets (time and cost), but choosing the selection strategy is often nontrivial. We present a framework to efficiently extend existing single-view AL strategies. We then propose two novel AL strategies that make full use of multi-view geometry. Moreover, we demonstrate additional performance gains by incorporating pseudo-labels computed during the AL process, which is a form of self-training. Our system significantly outperforms simulated annotation baselines in 3D body and hand pose estimation on two large-scale benchmarks: CMU Panoptic Studio and InterHand2.6M. Notably, on CMU Panoptic Studio, we are able to reduce the turn-around time by 60% and annotation cost by 80% when compared to the conventional annotation process. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/PabloVD/HaloGraphNet"
+  ],
+  "tasks": [
+    "Inferring halo masses"
+  ],
+  "datasets": [
+    "CAMELS"
+  ],
+  "methods": [
+    "Graph Neural Networks"
+  ],
+  "results": [
+    "~0.2 dex accuracy in halo mass estimation",
+    "Robustness across different simulation codes"
+  ],
+  "paper_id": "619472dd5244ab9dcbd2e33f",
+  "title": "Inferring halo masses with Graph Neural Networks",
+  "abstract": "  Understanding the halo-galaxy connection is fundamental in order to improve our knowledge on the nature and properties of dark matter. In this work we build a model that infers the mass of a halo given the positions, velocities, stellar masses, and radii of the galaxies it hosts. In order to capture information from correlations among galaxy properties and their phase-space, we use Graph Neural Networks (GNNs), that are designed to work with irregular and sparse data. We train our models on galaxies from more than 2,000 state-of-the-art simulations from the Cosmology and Astrophysics with MachinE Learning Simulations (CAMELS) project. Our model, that accounts for cosmological and astrophysical uncertainties, is able to constrain the masses of the halos with a $\\sim$0.2 dex accuracy. Furthermore, a GNN trained on a suite of simulations is able to preserve part of its accuracy when tested on simulations run with a different code that utilizes a distinct subgrid physics model, showing the robustness of our method. The PyTorch Geometric implementation of the GNN is publicly available on Github at https://github.com/PabloVD/HaloGraphNet "
+}

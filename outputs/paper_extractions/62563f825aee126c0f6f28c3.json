@@ -1,0 +1,27 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Image representation learning",
+    "Self-supervised learning"
+  ],
+  "datasets": [
+    "ImageNet-1K",
+    "ImageNet-100",
+    "YOGA-82"
+  ],
+  "methods": [
+    "DILEMMA (Detection of Incorrect Location EMbeddings with MAsked inputs)",
+    "ViT for detecting incorrect positional embeddings",
+    "Sparsity in inputs"
+  ],
+  "results": [
+    "Improvement in MoCoV3 performance by 4.41%",
+    "Improvement in DINO performance by 3.97%",
+    "Improvement in SimCLR performance by 0.5%",
+    "Full fine-tuning improvements of MAE on ImageNet-100",
+    "Significant gain over prior work on YOGA-82 pose dataset"
+  ],
+  "paper_id": "62563f825aee126c0f6f28c3",
+  "title": "Representation Learning by Detecting Incorrect Location Embeddings",
+  "abstract": "  In this paper, we introduce a novel self-supervised learning (SSL) loss for image representation learning. There is a growing belief that generalization in deep neural networks is linked to their ability to discriminate object shapes. Since object shape is related to the location of its parts, we propose to detect those that have been artificially misplaced. We represent object parts with image tokens and train a ViT to detect which token has been combined with an incorrect positional embedding. We then introduce sparsity in the inputs to make the model more robust to occlusions and to speed up the training. We call our method DILEMMA, which stands for Detection of Incorrect Location EMbeddings with MAsked inputs. We apply DILEMMA to MoCoV3, DINO and SimCLR and show an improvement in their performance of respectively 4.41%, 3.97%, and 0.5% under the same training time and with a linear probing transfer on ImageNet-1K. We also show full fine-tuning improvements of MAE combined with our method on ImageNet-100. We evaluate our method via fine-tuning on common SSL benchmarks. Moreover, we show that when downstream tasks are strongly reliant on shape (such as in the YOGA-82 pose dataset), our pre-trained features yield a significant gain over prior work. "
+}

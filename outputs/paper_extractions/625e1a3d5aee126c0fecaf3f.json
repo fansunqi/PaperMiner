@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Maximal Independent Set (MIS) in distributed graph algorithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Randomized distributed (Monte Carlo) algorithm",
+    "Awake complexity improvement",
+    "CONGEST model"
+  ],
+  "results": [
+    "MIS computed in O(log log n) awake complexity",
+    "Improved algorithm with O((log log n) log^* n) awake complexity and O((log^3 n) (log log n) log^* n) round complexity"
+  ],
+  "paper_id": "625e1a3d5aee126c0fecaf3f",
+  "title": "Sleeping is Superefficient: MIS in Exponentially Better Awake Complexity",
+  "abstract": "  Maximal Independent Set (MIS) is one of the fundamental and most well-studied problems in distributed graph algorithms. Even after four decades of intensive research, the best-known (randomized) MIS algorithms have $O(\\log{n})$ round complexity on general graphs [Luby, STOC 1986] (where $n$ is the number of nodes), while the best-known lower bound is $\\Omega(\\sqrt{\\log{n}/\\log\\log{n}})$ [Kuhn, Moscibroda, Wattenhofer, JACM 2016]. Breaking past the $O(\\log{n})$ round complexity upper bound or showing stronger lower bounds have been longstanding open problems.   Our main contribution is to show that MIS can be computed in awake complexity that is \\emph{exponentially} better compared to the best known round complexity of $O(\\log n)$ and also bypassing its fundamental $\\Omega(\\sqrt{\\log{n}/\\log\\log{n}})$ round complexity lower bound exponentially. Specifically, we show that MIS can be computed by a randomized distributed (Monte Carlo) algorithm in $O(\\log\\log{n} )$ awake complexity with high probability. However, this algorithm has a round complexity that is $O(poly(n))$. We then show how to drastically improve the round complexity at the cost of a slight increase in awake complexity by presenting a randomized distributed (Monte Carlo) algorithm for MIS that, with high probability computes an MIS in $O((\\log\\log{n})\\log^*n)$ awake complexity and $O((\\log^3 n) (\\log \\log n) \\log^*n)$ round complexity. Our algorithms work in the CONGEST model where messages of size $O(\\log n)$ bits can be sent per edge per round. "
+}

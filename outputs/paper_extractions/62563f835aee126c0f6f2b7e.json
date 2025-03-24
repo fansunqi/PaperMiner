@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LiDAR odometry and mapping",
+    "Loop closure detection"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "Optimized SC-F-LOAM",
+    "F-LOAM for LiDAR odometry",
+    "Scan Context for loop closure detection",
+    "GTSAM for global optimization",
+    "Adaptive distance threshold for loop closure detection",
+    "Feature-based matching for pose transformations"
+  ],
+  "results": [
+    "Outperforms typical LiDAR odometry/SLAM methods",
+    "More accurate loop closure detection",
+    "Significantly reduced computation time"
+  ],
+  "paper_id": "62563f835aee126c0f6f2b7e",
+  "title": "Optimized SC-F-LOAM: Optimized Fast LiDAR Odometry and Mapping Using\n  Scan Context",
+  "abstract": "  LiDAR odometry can achieve accurate vehicle pose estimation for short driving range or in small-scale environments, but for long driving range or in large-scale environments, the accuracy deteriorates as a result of cumulative estimation errors. This drawback necessitates the inclusion of loop closure detection in a SLAM framework to suppress the adverse effects of cumulative errors. To improve the accuracy of pose estimation, we propose a new LiDAR-based SLAM method which uses F-LOAM as LiDAR odometry, Scan Context for loop closure detection, and GTSAM for global optimization. In our approach, an adaptive distance threshold (instead of a fixed threshold) is employed for loop closure detection, which achieves more accurate loop closure detection results. Besides, a feature-based matching method is used in our approach to compute vehicle pose transformations between loop closure point cloud pairs, instead of using the raw point cloud obtained by the LiDAR sensor, which significantly reduces the computation time. The KITTI dataset is used for verifications of our method, and the experimental results demonstrate that the proposed method outperforms typical LiDAR odometry/SLAM methods in the literature. Our code is made publicly available for the benefit of the community. "
+}

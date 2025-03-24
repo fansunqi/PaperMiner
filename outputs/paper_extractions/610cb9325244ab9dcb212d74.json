@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "ill-posed inverse problems with unknown operator"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "convolutional neural networks (U-nets)",
+    "empirical risk minimization",
+    "multiscale decompositions",
+    "entropy bounds"
+  ],
+  "results": [
+    "minimax optimal in the regime of 'many' training data",
+    "reconstruction rates depend on the number of training points and noise level"
+  ],
+  "paper_id": "610cb9325244ab9dcb212d74",
+  "title": "Deep learning for inverse problems with unknown operator",
+  "abstract": "  We consider ill-posed inverse problems where the forward operator $T$ is unknown, and instead we have access to training data consisting of functions $f_i$ and their noisy images $Tf_i$. This is a practically relevant and challenging problem which current methods are able to solve only under strong assumptions on the training set. Here we propose a new method that requires minimal assumptions on the data, and prove reconstruction rates that depend on the number of training points and the noise level. We show that, in the regime of \"many\" training data, the method is minimax optimal. The proposed method employs a type of convolutional neural networks (U-nets) and empirical risk minimization in order to \"fit\" the unknown operator. In a nutshell, our approach is based on two ideas: the first is to relate U-nets to multiscale decompositions such as wavelets, thereby linking them to the existing theory, and the second is to use the hierarchical structure of U-nets and the low number of parameters of convolutional neural nets to prove entropy bounds that are practically useful. A significant difference with the existing works on neural networks in nonparametric statistics is that we use them to approximate operators and not functions, which we argue is mathematically more natural and technically more convenient. "
+}

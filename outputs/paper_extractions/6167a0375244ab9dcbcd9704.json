@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/ristea/cycle-transformer"
+  ],
+  "tasks": [
+    "Non-Contrast to Contrast CT Translation"
+  ],
+  "datasets": [
+    "Coltea-Lung-CT-100W"
+  ],
+  "methods": [
+    "Cycle-Consistent Transformer",
+    "Multi-Level Cycle-Consistency Loss",
+    "Hybrid Architecture (Convolutional and Multi-Head Attention Layers)"
+  ],
+  "results": [
+    "CyTran outperforms all competing methods",
+    "Improves state-of-the-art medical image alignment method"
+  ],
+  "paper_id": "6167a0375244ab9dcbcd9704",
+  "title": "CyTran: A Cycle-Consistent Transformer with Multi-Level Consistency for\n  Non-Contrast to Contrast CT Translation",
+  "abstract": "  We propose a novel approach to translate unpaired contrast computed tomography (CT) scans to non-contrast CT scans and the other way around. Solving this task has two important applications: (i) to automatically generate contrast CT scans for patients for whom injecting contrast substance is not an option, and (ii) to enhance the alignment between contrast and non-contrast CT by reducing the differences induced by the contrast substance before registration. Our approach is based on cycle-consistent generative adversarial convolutional transformers, for short, CyTran. Our neural model can be trained on unpaired images, due to the integration of a multi-level cycle-consistency loss. Aside from the standard cycle-consistency loss applied at the image level, we propose to apply additional cycle-consistency losses between intermediate feature representations, which enforces the model to be cycle-consistent at multiple representations levels, leading to superior results. To deal with high-resolution images, we design a hybrid architecture based on convolutional and multi-head attention layers. In addition, we introduce a novel data set, Coltea-Lung-CT-100W, containing 100 3D triphasic lung CT scans (with a total of 37,290 images) collected from 100 female patients (there is one examination per patient). Each scan contains three phases (non-contrast, early portal venous, and late arterial), allowing us to perform experiments to compare our novel approach with state-of-the-art methods for image style transfer. Our empirical results show that CyTran outperforms all competing methods. Moreover, we show that CyTran can be employed as a preliminary step to improve a state-of-the-art medical image alignment method. We release our novel model and data set as open source at https://github.com/ristea/cycle-transformer. "
+}

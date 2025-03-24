@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object detection in autonomous driving"
+  ],
+  "datasets": [
+    "2D-KITTI"
+  ],
+  "methods": [
+    "Probabilistic layer in deep object detection networks",
+    "Avoids Sigmoid or Softmax prediction layer"
+  ],
+  "results": [
+    "Reduces overconfidence in false positives without degrading true positives performance",
+    "Enables interpretable probabilistic predictions without re-training"
+  ],
+  "paper_id": "61a98afe5244ab9dcb955d4c",
+  "title": "Probabilistic Approach for Road-Users Detection",
+  "abstract": "  Object detection in autonomous driving applications implies that the detection and tracking of semantic objects are commonly native to urban driving environments, as pedestrians and vehicles. One of the major challenges in state-of-the-art deep-learning based object detection are false positives which occur with overconfident scores. This is highly undesirable in autonomous driving and other critical robotic-perception domains because of safety concerns. This paper proposes an approach to alleviate the problem of overconfident predictions by introducing a novel probabilistic layer to deep object detection networks in testing. The suggested approach avoids the traditional Sigmoid or Softmax prediction layer which often produces overconfident predictions. It is demonstrated that the proposed technique reduces overconfidence in the false positives without degrading the performance on the true positives. The approach is validated on the 2D-KITTI objection detection through the YOLOV4 and SECOND (Lidar-based detector). The proposed approach enables interpretable probabilistic predictions without the requirement of re-training the network and therefore is very practical. "
+}

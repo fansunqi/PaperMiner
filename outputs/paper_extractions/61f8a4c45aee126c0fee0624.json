@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning in score-based games",
+    "Understanding suboptimal moves in AlphaZero-like agents"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "AlphaZero-like agent training",
+    "Theoretical analysis of outcome-optimal policy",
+    "Empirical validation with human expert"
+  ],
+  "results": [
+    "Empirical evidence of score-suboptimal moves",
+    "Theoretical interpretation of suboptimality in zero-sum games",
+    "Validation of hypothesis in AlphaZero-like software"
+  ],
+  "paper_id": "61f8a4c45aee126c0fee0624",
+  "title": "Score vs. Winrate in Score-Based Games: which Reward for Reinforcement\n  Learning?",
+  "abstract": "  In the last years, the DeepMind algorithm AlphaZero has become the state of the art to efficiently tackle perfect information two-player zero-sum games with a win/lose outcome. However, when the win/lose outcome is decided by a final score difference, AlphaZero may play score-suboptimal moves because all winning final positions are equivalent from the win/lose outcome perspective. This can be an issue, for instance when used for teaching, or when trying to understand whether there is a better move. Moreover, there is the theoretical quest for the perfect game. A naive approach would be training an AlphaZero-like agent to predict score differences instead of win/lose outcomes. Since the game of Go is deterministic, this should as well produce an outcome-optimal play. However, it is a folklore belief that \"this does not work\".   In this paper, we first provide empirical evidence for this belief. We then give a theoretical interpretation of this suboptimality in general perfect information two-player zero-sum game where the complexity of a game like Go is replaced by the randomness of the environment. We show that an outcome-optimal policy has a different preference for uncertainty when it is winning or losing. In particular, when in a losing state, an outcome-optimal agent chooses actions leading to a higher score variance. We then posit that when approximation is involved, a deterministic game behaves like a nondeterministic game, where the score variance is modeled by how uncertain the position is. We validate this hypothesis in AlphaZero-like software with a human expert. "
+}

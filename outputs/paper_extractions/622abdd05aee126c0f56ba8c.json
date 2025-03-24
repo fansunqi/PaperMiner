@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quadrupedal Locomotion Control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Torque-based RL framework",
+    "Direct prediction of joint torques at high frequency"
+  ],
+  "results": [
+    "Higher reward compared to position control",
+    "More robust to external disturbances",
+    "First sim-to-real attempt for end-to-end learning torque control"
+  ],
+  "paper_id": "622abdd05aee126c0f56ba8c",
+  "title": "Learning Torque Control for Quadrupedal Locomotion",
+  "abstract": "  Reinforcement learning (RL) has become a promising approach to developing controllers for quadrupedal robots. Conventionally, an RL design for locomotion follows a position-based paradigm, wherein an RL policy outputs target joint positions at a low frequency that are then tracked by a high-frequency proportional-derivative (PD) controller to produce joint torques. In contrast, for the model-based control of quadrupedal locomotion, there has been a paradigm shift from position-based control to torque-based control. In light of the recent advances in model-based control, we explore an alternative to the position-based RL paradigm, by introducing a torque-based RL framework, where an RL policy directly predicts joint torques at a high frequency, thus circumventing the use of a PD controller. The proposed learning torque control framework is validated with extensive experiments, in which a quadruped is capable of traversing various terrain and resisting external disturbances while following user-specified commands. Furthermore, compared to learning position control, learning torque control demonstrates the potential to achieve a higher reward and is more robust to significant external disturbances. To our knowledge, this is the first sim-to-real attempt for end-to-end learning torque control of quadrupedal locomotion. "
+}

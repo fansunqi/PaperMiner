@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Natural Language Understanding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Model Distillation",
+    "Pruning",
+    "Regularization Strategy based on Sample Uncertainty"
+  ],
+  "results": [
+    "Compressed models are less robust on OOD test sets",
+    "Bias mitigation framework improves OOD generalization without sacrificing in-distribution performance"
+  ],
+  "paper_id": "616e37435244ab9dcbd1a725",
+  "title": "Robustness Challenges in Model Distillation and Pruning for Natural\n  Language Understanding",
+  "abstract": "  Recent work has focused on compressing pre-trained language models (PLMs) like BERT where the major focus has been to improve the in-distribution performance for downstream tasks. However, very few of these studies have analyzed the impact of compression on the generalizability and robustness of compressed models for out-of-distribution (OOD) data. Towards this end, we study two popular model compression techniques including knowledge distillation and pruning and show that the compressed models are significantly less robust than their PLM counterparts on OOD test sets although they obtain similar performance on in-distribution development sets for a task. Further analysis indicates that the compressed models overfit on the shortcut samples and generalize poorly on the hard ones. We further leverage this observation to develop a regularization strategy for robust model compression based on sample uncertainty. Experimental results on several natural language understanding tasks demonstrate that our bias mitigation framework improves the OOD generalization of the compressed models, while not sacrificing the in-distribution task performance. "
+}

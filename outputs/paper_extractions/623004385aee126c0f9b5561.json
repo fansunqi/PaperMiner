@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Testing Gestalt grouping principles in Deep Neural Networks"
+  ],
+  "datasets": [
+    "dots stimuli",
+    "complex shapes stimuli"
+  ],
+  "methods": [
+    "Experiment 1 on dots",
+    "Experiment 2 on complex shapes",
+    "various DNN architectures (convolutional, attention-based, supervised, self-supervised, feed-forward, recurrent)"
+  ],
+  "results": [
+    "Convolutional networks sensitive to proximity, linearity, orientation at output layer",
+    "Most networks exhibit Gestalt effects only at latest stage",
+    "Self-supervised and Vision-Transformer perform worse than convolutional networks",
+    "No model shows grouping effect at early or intermediate stages",
+    "Gestalt grouping ability does not transfer to complex features"
+  ],
+  "paper_id": "623004385aee126c0f9b5561",
+  "title": "Mixed Evidence for Gestalt Grouping in Deep Neural Networks",
+  "abstract": "  Gestalt psychologists have identified a range of conditions in which humans organize elements of a scene into a group or whole, and perceptual grouping principles play an essential role in scene perception and object identification. Recently, Deep Neural Networks (DNNs) trained on natural images (ImageNet) have been proposed as compelling models of human vision based on reports that they perform well on various brain and behavioral benchmarks. Here we test a total of 16 networks covering a variety of architectures and learning paradigms (convolutional, attention-based, supervised and self-supervised, feed-forward and recurrent) on dots (Experiment 1) and more complex shapes (Experiment 2) stimuli that produce strong Gestalts effects in humans. In Experiment 1 we found that convolutional networks were indeed sensitive in a human-like fashion to the principles of proximity, linearity, and orientation, but only at the output layer. In Experiment 2, we found that most networks exhibited Gestalt effects only for a few sets, and again only at the latest stage of processing. Overall, self-supervised and Vision-Transformer appeared to perform worse than convolutional networks in terms of human similarity. Remarkably, no model presented a grouping effect at the early or intermediate stages of processing. This is at odds with the widespread assumption that Gestalts occur prior to object recognition, and indeed, serve to organize the visual scene for the sake of object recognition. Our overall conclusion is that, albeit noteworthy that networks trained on simple 2D images support a form of Gestalt grouping for some stimuli at the output layer, this ability does not seem to transfer to more complex features. Additionally, the fact that this grouping only occurs at the last layer suggests that networks learn fundamentally different perceptual properties than humans. "
+}

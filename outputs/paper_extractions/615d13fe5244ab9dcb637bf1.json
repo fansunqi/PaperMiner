@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Proofs of Retrievability",
+    "Dynamic Proofs of Retrievability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Efficient evaluation of secret polynomial",
+    "Linearly homomorphic encryption",
+    "Pairings"
+  ],
+  "results": [
+    "Reduce Client storage by 5000x",
+    "Reduce communication size by 20x",
+    "Reduce client-side audit time by 2x",
+    "One order of magnitude increase in server-side audit time for 1TB database"
+  ],
+  "paper_id": "615d13fe5244ab9dcb637bf1",
+  "title": "VESPo: Verified Evaluation of Secret Polynomials",
+  "abstract": "  Proofs of Retrievability are protocols which allow a Client to store data remotely and to efficiently ensure, via audits, that the entirety of that data is still intact. Dynamic Proofs of Retrievability (DPoR) also support efficient retrieval and update of any small portion of the data.We propose a novel protocol for arbitrary outsourced data storage that achieves both low remote storage size and audit complexity.A key ingredient, that can be also of intrinsic interest, reduces to efficiently evaluating a secret polynomial at given public points, when the (encrypted) polynomial is stored on an untrusted Server.The Server performs the evaluations and also returns associated certificates. A Client can check that the evaluations are correct using the certificates and some pre-computed keys, more efficiently than re-evaluating the polynomial.Our protocols support two important features: the polynomial itself can be encrypted on the Server, and it can be dynamically updated by changing individual coefficients cheaply without redoing the entire setup.Our methods rely on linearly homomorphic encryption and pairings, and our implementation shows good performance for polynomial evaluations with millions of coefficients, and efficient DPoR with terabytes of data.For instance, for a 1TB database, compared to the state of art, we can reduce the Client storage by 5000x, communication size by 20x, and client-side audit time by 2x, at the cost of one order of magnitude increase in server-side audit time. "
+}

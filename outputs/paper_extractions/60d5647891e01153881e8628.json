@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Feature Alignment",
+    "Approximating Reversibility in Neural Networks"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10",
+    "CelebA",
+    "STL-10"
+  ],
+  "methods": [
+    "Minimizing distance between output and random output",
+    "Utilizing variational autoencoders",
+    "Coupling generator and discriminator"
+  ],
+  "results": [
+    "Roughly recover images from latent representation",
+    "Produce new images statistically comparable to training data",
+    "Improve image quality with generator-discriminator coupling",
+    "Potential to save computational memory resources"
+  ],
+  "paper_id": "60d5647891e01153881e8628",
+  "title": "Feature Alignment as a Generative Process",
+  "abstract": "  Reversibility in artificial neural networks allows us to retrieve the input given an output. We present feature alignment, a method for approximating reversibility in arbitrary neural networks. We train a network by minimizing the distance between the output of a data point and the random output with respect to a random input. We applied the technique to the MNIST, CIFAR-10, CelebA and STL-10 image datasets. We demonstrate that this method can roughly recover images from just their latent representation without the need of a decoder. By utilizing the formulation of variational autoencoders, we demonstrate that it is possible to produce new images that are statistically comparable to the training data. Furthermore, we demonstrate that the quality of the images can be improved by coupling a generator and a discriminator together. In addition, we show how this method, with a few minor modifications, can be used to train networks locally, which has the potential to save computational memory resources. "
+}

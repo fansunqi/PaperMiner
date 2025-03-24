@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Index Coding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Update-based Maximum Column Distance (UMCD) Coding Scheme",
+    "Polynomial-time algorithm for maximum cardinality matching",
+    "Method to determine coding coefficients from a finite field",
+    "Vector version of UMCD"
+  ],
+  "results": [
+    "UMCD has better broadcast performance than recursive and ICC schemes",
+    "UMCD performs at least as well as MDS coding scheme",
+    "Gap between UMCD and recursive/ICC schemes grows linearly with message count"
+  ],
+  "paper_id": "600e926091e0118e94bbca28",
+  "title": "An Update-based Maximum Column Distance Coding Scheme for Index Coding",
+  "abstract": "  In this paper, we propose a new scalar linear coding scheme for the index coding problem called update-based maximum column distance (UMCD) coding scheme. The central idea in each transmission is to code messages such that one of the receivers with the minimum size of side information is instantaneously eliminated from unsatisfied receivers. One main contribution of the paper is to prove that the other satisfied receivers can be identified after each transmission, using a polynomial-time algorithm solving the well-known maximum cardinality matching problem in graph theory. This leads to determining the total number of transmissions without knowing the coding coefficients. Once this number and what messages to transmit in each round are found, we then propose a method to determine all coding coefficients from a sufficiently large finite field. We provide concrete instances where the proposed UMCD coding scheme has a better broadcast performance compared to the most efficient existing coding schemes, including the recursive scheme (Arbabjolfaei and Kim, 2014) and the interlinked-cycle cover (ICC) scheme (Thapa et al., 2017). We prove that the proposed UMCD coding scheme performs at least as well as the MDS coding scheme in terms of broadcast rate. By characterizing two classes of index coding instances, we show that the gap between the broadcast rates of the recursive and ICC schemes and the UMCD scheme grows linearly with the number of messages. Then, we extend the UMCD coding scheme to its vector version by applying it as a basic coding block to solve the subinstances. "
+}

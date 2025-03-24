@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust high-speed running for quadruped robots"
+  ],
+  "datasets": [
+    "PyBullet",
+    "Gazebo",
+    "Unitree A1 hardware"
+  ],
+  "methods": [
+    "Deep reinforcement learning",
+    "Task space action selection and control"
+  ],
+  "results": [
+    "Improves sample efficiency",
+    "Little reward shaping needed",
+    "Emergence of natural gaits",
+    "Eases sim-to-real transfer",
+    "Runs at 4 m/s without load, 3.5 m/s with 10 kg load in sim-to-sim",
+    "Bounds at 2 m/s with 5 kg load in sim-to-real"
+  ],
+  "paper_id": "604b399591e0110eed64c359",
+  "title": "Robust High-speed Running for Quadruped Robots via Deep Reinforcement\n  Learning",
+  "abstract": "  Deep reinforcement learning has emerged as a popular and powerful way to develop locomotion controllers for quadruped robots. Common approaches have largely focused on learning actions directly in joint space, or learning to modify and offset foot positions produced by trajectory generators. Both approaches typically require careful reward shaping and training for millions of time steps, and with trajectory generators introduce human bias into the resulting control policies. In this paper, we present a learning framework that leads to the natural emergence of fast and robust bounding policies for quadruped robots. The agent both selects and controls actions directly in task space to track desired velocity commands subject to environmental noise including model uncertainty and rough terrain. We observe that this framework improves sample efficiency, necessitates little reward shaping, leads to the emergence of natural gaits such as galloping and bounding, and eases the sim-to-real transfer at running speeds. Policies can be learned in only a few million time steps, even for challenging tasks of running over rough terrain with loads of over 100% of the nominal quadruped mass. Training occurs in PyBullet, and we perform a sim-to-sim transfer to Gazebo and sim-to-real transfer to the Unitree A1 hardware. For sim-to-sim, our results show the quadruped is able to run at over 4 m/s without a load, and 3.5 m/s with a 10 kg load, which is over 83% of the nominal quadruped mass. For sim-to-real, the Unitree A1 is able to bound at 2 m/s with a 5 kg load, representing 42% of the nominal quadruped mass. "
+}

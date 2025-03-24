@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generalizability and stability in reinforcement learning"
+  ],
+  "datasets": [
+    "Real-World RL Benchmark Suite",
+    "Brax physics simulator"
+  ],
+  "methods": [
+    "MetaPG",
+    "Evolving actor-critic loss functions",
+    "Multi-objective optimization"
+  ],
+  "results": [
+    "Improves SAC's performance by 4% and generalizability by 20%",
+    "Reduces instability up to 67%",
+    "10% better generalizability in Brax without performance loss",
+    "Similar results to SAC in cross-domain Brax evaluations"
+  ],
+  "paper_id": "62563f765aee126c0f6f1261",
+  "title": "Evolving Pareto-Optimal Actor-Critic Algorithms for Generalizability and\n  Stability",
+  "abstract": "  Generalizability and stability are two key objectives for operating reinforcement learning (RL) agents in the real world. Designing RL algorithms that optimize these objectives can be a costly and painstaking process. This paper presents MetaPG, an evolutionary method for automated design of actor-critic loss functions. MetaPG explicitly optimizes for generalizability and performance, and implicitly optimizes the stability of both metrics. We initialize our loss function population with Soft Actor-Critic (SAC) and perform multi-objective optimization using fitness metrics encoding single-task performance, zero-shot generalizability to unseen environment configurations, and stability across independent runs with different random seeds. On a set of continuous control tasks from the Real-World RL Benchmark Suite, we find that our method, using a single environment during evolution, evolves algorithms that improve upon SAC's performance and generalizability by 4% and 20%, respectively, and reduce instability up to 67%. Then, we scale up to more complex environments from the Brax physics simulator and replicate generalizability tests encountered in practical settings, such as different friction coefficients. MetaPG evolves algorithms that can obtain 10% better generalizability without loss of performance within the same meta-training environment and obtain similar results to SAC when doing cross-domain evaluations in other Brax environments. The evolution results are interpretable; by analyzing the structure of the best algorithms we identify elements that help optimizing certain objectives, such as regularization terms for the critic loss. "
+}

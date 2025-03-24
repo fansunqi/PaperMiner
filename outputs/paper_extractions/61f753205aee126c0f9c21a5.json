@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multiscale Graph Comparison"
+  ],
+  "datasets": [
+    "simulated datasets",
+    "real datasets"
+  ],
+  "methods": [
+    "Embedded Laplacian Discrepancy (ELD)",
+    "Wasserstein-based distance",
+    "symmetrization trick",
+    "perturbation technique"
+  ],
+  "results": [
+    "ELD is a natural pseudo-metric for simple spectrums",
+    "stable perturbations for non-simple spectrums",
+    "improved graph comparison efficiency"
+  ],
+  "paper_id": "61f753205aee126c0f9c21a5",
+  "title": "Multiscale Graph Comparison via the Embedded Laplacian Discrepancy",
+  "abstract": "  Laplacian eigenvectors capture natural community structures on graphs and are widely used in spectral clustering and manifold learning. The use of Laplacian eigenvectors as embeddings for the purpose of multiscale graph comparison has however been limited. Here we propose the Embedded Laplacian Discrepancy (ELD) as a simple and fast approach to compare graphs (of potentially different sizes) based on the similarity of the graphs' community structures. The ELD operates by representing graphs as point clouds in a common, low-dimensional space, on which a natural Wasserstein-based distance can be efficiently computed. A main challenge in comparing graphs through any eigenvector-based approaches is the potential ambiguity that could arise due to sign-flips and basis symmetries. The ELD leverages a simple symmetrization trick to bypass any sign ambiguities. For comparing graphs that do not have any ambiguities due to basis symmetries (i.e. the spectrums are simple), we show that the ELD becomes a natural pseudo-metric that enjoys nice properties such as invariance under graph isomorphism. For comparing graphs with non-simple spectrums, we propose a procedure to approximate the ELD via a simple perturbation technique to resolve any ambiguity from basis symmetries. We show that such perturbations are stable using matrix perturbation theory under mild assumptions that are straightforward to verify in practice. We demonstrate the excellent applicability of the ELD approach on both simulated and real datasets. "
+}

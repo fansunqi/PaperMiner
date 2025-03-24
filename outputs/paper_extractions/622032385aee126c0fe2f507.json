@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differentiable physics simulation for robotics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dojo differentiable physics engine",
+    "Variational integrator for stable simulation",
+    "Nonlinear complementarity problem with second-order cones for friction",
+    "Custom primal-dual interior-point method",
+    "Implicit differentiation for smooth gradients"
+  ],
+  "results": [
+    "Stable simulation at low sample rates",
+    "Conservation of energy and momentum",
+    "Efficient computation of smooth gradients through contact events",
+    "Demonstrated in planning, policy optimization, and system identification"
+  ],
+  "paper_id": "622032385aee126c0fe2f507",
+  "title": "Dojo: A Differentiable Physics Engine for Robotics",
+  "abstract": "  We present Dojo, a differentiable physics engine for robotics that prioritizes stable simulation, accurate contact physics, and differentiability with respect to states, actions, and system parameters. Dojo achieves stable simulation at low sample rates and conserves energy and momentum by employing a variational integrator. A nonlinear complementarity problem with second-order cones for friction models hard contact, and is reliably solved using a custom primal-dual interior-point method. Special properties of the interior-point method are exploited using implicit differentiation to efficiently compute smooth gradients that provide useful information through contact events. We demonstrate Dojo with a number of examples including: planning, policy optimization, and system identification, that demonstrate the engine's unique ability to simulate hard contact while providing smooth, analytic gradients. "
+}

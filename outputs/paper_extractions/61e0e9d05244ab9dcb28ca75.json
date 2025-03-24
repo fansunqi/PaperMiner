@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multivariate time series forecasting"
+  ],
+  "datasets": [
+    "four real-world datasets"
+  ],
+  "methods": [
+    "Multi-Scale Adaptive Graph Neural Network (MAGNN)",
+    "Multi-scale pyramid network",
+    "Adaptive graph learning module",
+    "Multi-scale temporal graph neural network",
+    "Scale-wise fusion module"
+  ],
+  "results": [
+    "MAGNN outperforms the state-of-the-art methods across various settings"
+  ],
+  "paper_id": "61e0e9d05244ab9dcb28ca75",
+  "title": "Multi-Scale Adaptive Graph Neural Network for Multivariate Time Series\n  Forecasting",
+  "abstract": "  Multivariate time series (MTS) forecasting plays an important role in the automation and optimization of intelligent applications. It is a challenging task, as we need to consider both complex intra-variable dependencies and inter-variable dependencies. Existing works only learn temporal patterns with the help of single inter-variable dependencies. However, there are multi-scale temporal patterns in many real-world MTS. Single inter-variable dependencies make the model prefer to learn one type of prominent and shared temporal patterns. In this paper, we propose a multi-scale adaptive graph neural network (MAGNN) to address the above issue. MAGNN exploits a multi-scale pyramid network to preserve the underlying temporal dependencies at different time scales. Since the inter-variable dependencies may be different under distinct time scales, an adaptive graph learning module is designed to infer the scale-specific inter-variable dependencies without pre-defined priors. Given the multi-scale feature representations and scale-specific inter-variable dependencies, a multi-scale temporal graph neural network is introduced to jointly model intra-variable dependencies and inter-variable dependencies. After that, we develop a scale-wise fusion module to effectively promote the collaboration across different time scales, and automatically capture the importance of contributed temporal patterns. Experiments on four real-world datasets demonstrate that MAGNN outperforms the state-of-the-art methods across various settings. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Extractive Clinical Question Answering"
+  ],
+  "datasets": [
+    "RxWhyQA",
+    "2018 National NLP Clinical Challenges (n2c2) corpus"
+  ],
+  "methods": [
+    "Leveraged annotated relations to generate EQA dataset",
+    "Baseline EQA solution"
+  ],
+  "results": [
+    "RxWhyQA dataset contains 96,939 QA entries",
+    "25% of answerable questions require multiple answers",
+    "2% ask about multiple drugs within one question",
+    "Baseline EQA solution achieved best f1-measure of 0.72",
+    "Specific subsets: 0.93 on unanswerable questions, 0.48 on single-drug vs 0.60 on multi-drug, 0.54 on single-answer vs 0.43 on multi-answer questions"
+  ],
+  "paper_id": "61dba39d5244ab9dcbe04dc6",
+  "title": "Development of an Extractive Clinical Question Answering Dataset with\n  Multi-Answer and Multi-Focus Questions",
+  "abstract": "  Background: Extractive question-answering (EQA) is a useful natural language processing (NLP) application for answering patient-specific questions by locating answers in their clinical notes. Realistic clinical EQA can have multiple answers to a single question and multiple focus points in one question, which are lacking in the existing datasets for development of artificial intelligence solutions. Objective: Create a dataset for developing and evaluating clinical EQA systems that can handle natural multi-answer and multi-focus questions. Methods: We leveraged the annotated relations from the 2018 National NLP Clinical Challenges (n2c2) corpus to generate an EQA dataset. Specifically, the 1-to-N, M-to-1, and M-to-N drug-reason relations were included to form the multi-answer and multi-focus QA entries, which represent more complex and natural challenges in addition to the basic one-drug-one-reason cases. A baseline solution was developed and tested on the dataset. Results: The derived RxWhyQA dataset contains 96,939 QA entries. Among the answerable questions, 25% require multiple answers, and 2% ask about multiple drugs within one question. There are frequent cues observed around the answers in the text, and 90% of the drug and reason terms occur within the same or an adjacent sentence. The baseline EQA solution achieved a best f1-measure of 0.72 on the entire dataset, and on specific subsets, it was: 0.93 on the unanswerable questions, 0.48 on single-drug questions versus 0.60 on multi-drug questions, 0.54 on the single-answer questions versus 0.43 on multi-answer questions. Discussion: The RxWhyQA dataset can be used to train and evaluate systems that need to handle multi-answer and multi-focus questions. Specifically, multi-answer EQA appears to be challenging and therefore warrants more investment in research. "
+}

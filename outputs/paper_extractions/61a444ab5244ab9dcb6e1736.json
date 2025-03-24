@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "this https URL"
+  ],
+  "tasks": [
+    "Joint stereo 3D object detection",
+    "Implicit surface reconstruction"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "S-3D-RCNN",
+    "Intermediate Geometrical Representations (IGRs)",
+    "Point-based representation for unseen surface hallucination"
+  ],
+  "results": [
+    "Superior 3D scene understanding performance on KITTI benchmark using existing and new metrics"
+  ],
+  "paper_id": "61a444ab5244ab9dcb6e1736",
+  "title": "Joint stereo 3D object detection and implicit surface reconstruction",
+  "abstract": "  We present a new learning-based framework S-3D-RCNN that can recover accurate object orientation in SO(3) and simultaneously predict implicit shapes for outdoor rigid objects from stereo RGB images. In contrast to previous studies that map local appearance to observation angles, we explore a progressive approach by extracting meaningful Intermediate Geometrical Representations (IGRs) to estimate egocentric object orientation. This approach features a deep model that transforms perceived intensities to object part coordinates, which are mapped to a 3D representation encoding object orientation in the camera coordinate system. To enable implicit shape estimation, the IGRs are further extended to model visible object surface with a point-based representation and explicitly addresses the unseen surface hallucination problem. Extensive experiments validate the effectiveness of the proposed IGRs and S-3D-RCNN achieves superior 3D scene understanding performance using existing and proposed new metrics on the KITTI benchmark. Code and pre-trained models will be available at this https URL. "
+}

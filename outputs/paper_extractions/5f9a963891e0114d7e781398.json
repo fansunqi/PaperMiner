@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analyzing the ELBO of Variational Autoencoders"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Analytical derivation of ELBO as a sum of three entropies",
+    "Proof that ELBO equals entropy sums at stationary points"
+  ],
+  "results": [
+    "ELBO converges to a sum of three entropies",
+    "Closed-form computation of ELBO at stationary points",
+    "Analytical results precise in practical vicinities of stationary points"
+  ],
+  "paper_id": "5f9a963891e0114d7e781398",
+  "title": "The ELBO of Variational Autoencoders Converges to a Sum of Three\n  Entropies",
+  "abstract": "  The central objective function of a variational autoencoder (VAE) is its variational lower bound (the ELBO). Here we show that for standard (i.e., Gaussian) VAEs the ELBO converges to a value given by the sum of three entropies: the (negative) entropy of the prior distribution, the expected (negative) entropy of the observable distribution, and the average entropy of the variational distributions (the latter is already part of the ELBO). Our derived analytical results are exact and apply for small as well as for intricate deep networks for encoder and decoder. Furthermore, they apply for finitely and infinitely many data points and at any stationary point (including local maxima and saddle points). The result implies that the ELBO can for standard VAEs often be computed in closed-form at stationary points while the original ELBO requires numerical approximations of integrals. As a main contribution, we provide the proof that the ELBO for VAEs is at stationary points equal to entropy sums. Numerical experiments then show that the obtained analytical results are sufficiently precise also in those vicinities of stationary points that are reached in practice. Furthermore, we discuss how the novel entropy form of the ELBO can be used to analyze and understand learning behavior. More generally, we believe that our contributions can be useful for future theoretical and practical studies on VAE learning as they provide novel information on those points in parameters space that optimization of VAEs converges to. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Network Intrusion Detection",
+    "Multi-class Network Anomalies"
+  ],
+  "datasets": [
+    "UNSW-NB15"
+  ],
+  "methods": [
+    "IGRF-RFE",
+    "Hybrid Feature Selection",
+    "Information Gain",
+    "Random Forest Importance",
+    "Recursive Feature Elimination"
+  ],
+  "results": [
+    "Feature dimension reduced from 42 to 23",
+    "MLP multi-classification accuracy improved from 82.25% to 84.24%"
+  ],
+  "paper_id": "62451c325aee126c0f47b570",
+  "title": "IGRF-RFE: A Hybrid Feature Selection Method for MLP-based Network\n  Intrusion Detection on UNSW-NB15 Dataset",
+  "abstract": "  The effectiveness of machine learning models is significantly affected by the size of the dataset and the quality of features as redundant and irrelevant features can radically degrade the performance. This paper proposes IGRF-RFE: a hybrid feature selection method tasked for multi-class network anomalies using a Multilayer perceptron (MLP) network. IGRF-RFE can be considered as a feature reduction technique based on both the filter feature selection method and the wrapper feature selection method. In our proposed method, we use the filter feature selection method, which is the combination of Information Gain and Random Forest Importance, to reduce the feature subset search space. Then, we apply recursive feature elimination(RFE) as a wrapper feature selection method to further eliminate redundant features recursively on the reduced feature subsets. Our experimental results obtained based on the UNSW-NB15 dataset confirm that our proposed method can improve the accuracy of anomaly detection while reducing the feature dimension. The results show that the feature dimension is reduced from 42 to 23 while the multi-classification accuracy of MLP is improved from 82.25% to 84.24%. "
+}

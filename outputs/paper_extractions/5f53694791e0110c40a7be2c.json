@@ -1,0 +1,24 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "speaker recognition",
+    "speech emotion recognition",
+    "spoken digit recognition"
+  ],
+  "datasets": [
+    "VoxCeleb",
+    "IEMOCAP",
+    "Free Spoken Digit Dataset"
+  ],
+  "methods": [
+    "Fine-grained Early Frequency Attention (FEFA)"
+  ],
+  "results": [
+    "Performance consistently improved by substantial margins with FEFA",
+    "Models equipped with FEFA outperform all other attentive models",
+    "Improvements in robustness and less sensitivity to added noise"
+  ],
+  "paper_id": "5f53694791e0110c40a7be2c",
+  "title": "Fine-grained Early Frequency Attention for Deep Speaker Representation\n  Learning",
+  "abstract": "  Deep learning techniques have considerably improved speech processing in recent years. Speaker representations extracted by deep learning models are being used in a wide range of tasks such as speaker recognition and speech emotion recognition. Attention mechanisms have started to play an important role in improving deep learning models in the field of speech processing. Nonetheless, despite the fact that important speaker-related information can be embedded in individual frequency-bins of the input spectral representations, current attention models are unable to attend to fine-grained information items in spectral representations. In this paper we propose Fine-grained Early Frequency Attention (FEFA) for speaker representation learning. Our model is a simple and lightweight model that can be integrated into various CNN pipelines and is capable of focusing on information items as small as frequency-bins. We evaluate the proposed model on three tasks of speaker recognition, speech emotion recognition, and spoken digit recognition. We use Three widely used public datasets, namely VoxCeleb, IEMOCAP, and Free Spoken Digit Dataset for our experiments. We attach FEFA to several prominent deep learning models and evaluate its impact on the final performance. We also compare our work with other related works in the area. Our experiments show that by adding FEFA to different CNN architectures, performance is consistently improved by substantial margins, and the models equipped with FEFA outperform all the other attentive models. We also test our model against different levels of added noise showing improvements in robustness and less sensitivity compared to the backbone networks. "
+}

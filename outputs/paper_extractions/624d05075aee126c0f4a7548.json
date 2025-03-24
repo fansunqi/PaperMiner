@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nonnegative/positive matrix and tensor completion",
+    "Recommender Systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Consistency-based approach",
+    "Unit-scale consistency preservation",
+    "General unit-consistent tensor-completion framework",
+    "Optimal runtime and space complexity algorithms"
+  ],
+  "results": [
+    "Guaranteed existence and uniqueness of solution",
+    "Generalizes to tensors of arbitrary dimensions with linear computational complexity",
+    "Proofs of properties like consensus-order and fairness",
+    "O(1) term-completion with linear preprocessing complexity"
+  ],
+  "paper_id": "624d05075aee126c0f4a7548",
+  "title": "Tensor Completion with Provable Consistency and Fairness Guarantees for\n  Recommender Systems",
+  "abstract": "  We introduce a new consistency-based approach for defining and solving nonnegative/positive matrix and tensor completion problems. The novelty of the framework is that instead of artificially making the problem well-posed in the form of an application-arbitrary optimization problem, e.g., minimizing a bulk structural measure such as rank or norm, we show that a single property/constraint: preserving unit-scale consistency, guarantees the existence of both a solution and, under relatively weak support assumptions, uniqueness. The framework and solution algorithms also generalize directly to tensors of arbitrary dimensions while maintaining computational complexity that is linear in problem size for fixed dimension d. In the context of recommender system (RS) applications, we prove that two reasonable properties that should be expected to hold for any solution to the RS problem are sufficient to permit uniqueness guarantees to be established within our framework. Key theoretical contributions include a general unit-consistent tensor-completion framework with proofs of its properties, e.g., consensus-order and fairness, and algorithms with optimal runtime and space complexities, e.g., O(1) term-completion with preprocessing complexity that is linear in the number of known terms of the matrix/tensor. From a practical perspective, the seamless ability of the framework to generalize to exploit high-dimensional structural relationships among key state variables, e.g., user and product attributes, offers a means for extracting significantly more information than is possible for alternative methods that cannot generalize beyond direct user-product relationships. Finally, we propose our consensus ordering property as an admissibility criterion for any proposed RS method. "
+}

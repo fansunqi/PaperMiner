@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning from multiple annotators without objective ground truth"
+  ],
+  "datasets": [
+    "medical datasets"
+  ],
+  "methods": [
+    "Learn2Agree framework with two streams: one fitting with multiple annotators and the other learning agreement information"
+  ],
+  "results": [
+    "better agreement levels with annotators"
+  ],
+  "paper_id": "61397b715244ab9dcb323b59",
+  "title": "Learn2Agree: Fitting with Multiple Annotators without Objective Ground\n  Truth",
+  "abstract": "  The annotation of domain experts is important for some medical applications where the objective ground truth is ambiguous to define, e.g., the rehabilitation for some chronic diseases, and the prescreening of some musculoskeletal abnormalities without further medical examinations. However, improper uses of the annotations may hinder developing reliable models. On one hand, forcing the use of a single ground truth generated from multiple annotations is less informative for the modeling. On the other hand, feeding the model with all the annotations without proper regularization is noisy given existing disagreements. For such issues, we propose a novel Learning to Agreement (Learn2Agree) framework to tackle the challenge of learning from multiple annotators without objective ground truth. The framework has two streams, with one stream fitting with the multiple annotators and the other stream learning agreement information between annotators. In particular, the agreement learning stream produces regularization information to the classifier stream, tuning its decision to be better in line with the agreement between annotators. The proposed method can be easily added to existing backbones, with experiments on two medical datasets showed better agreement levels with annotators. "
+}

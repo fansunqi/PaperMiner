@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving challenging control problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-Staged Deep Reinforcement Learning",
+    "Motion Planning",
+    "Motion Imitation"
+  ],
+  "results": [
+    "Can solve challenging control problems like rocket navigation and quadrupedal locomotion",
+    "Outperforms monolithic deep RL and Probabilistic Roadmap"
+  ],
+  "paper_id": "6153e0335244ab9dcb39bf69",
+  "title": "Solving Challenging Control Problems Using Two-Staged Deep Reinforcement\n  Learning",
+  "abstract": "  We present a deep reinforcement learning (deep RL) algorithm that consists of learning-based motion planning and imitation to tackle challenging control problems. Deep RL has been an effective tool for solving many high-dimensional continuous control problems, but it cannot effectively solve challenging problems with certain properties, such as sparse reward functions or sensitive dynamics. In this work, we propose an approach that decomposes the given problem into two deep RL stages: motion planning and motion imitation. The motion planning stage seeks to compute a feasible motion plan by leveraging the powerful planning capability of deep RL. Subsequently, the motion imitation stage learns a control policy that can imitate the given motion plan with realistic sensors and actuation models. This new formulation requires only a nominal added cost to the user because both stages require minimal changes to the original problem. We demonstrate that our approach can solve challenging control problems, rocket navigation, and quadrupedal locomotion, which cannot be solved by the monolithic deep RL formulation or the version with Probabilistic Roadmap. "
+}

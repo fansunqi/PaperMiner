@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "X-ray gastric cancer screening"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "refined stochastic gastric image augmentation (R-sGAIA)",
+    "hard boundary box training (HBBT)"
+  ],
+  "results": [
+    "F1 score improved by 5.9% compared to EfficientDet-D7 + RandAugment",
+    "F1: 57.8%, recall: 90.2%, precision: 42.5%",
+    "higher than physician's cancer detection rate"
+  ],
+  "paper_id": "6125b6a95244ab9dcb41d639",
+  "title": "Practical X-ray Gastric Cancer Screening Using Refined Stochastic Data\n  Augmentation and Hard Boundary Box Training",
+  "abstract": "  In gastric cancer screening, X-rays can be performed by radiographers, allowing them to see far more patients than endoscopy, which can only be performed by physicians. However, due to subsequent diagnostic difficulties, the sensitivity of gastric X-ray is only 85.5%, and little research has been done on automated diagnostic aids that directly target gastric cancer. This paper proposes a practical gastric cancer screening system for X-ray images taken under realistic clinical imaging conditions. Our system not only provides a diagnostic result for each image, but also provides an explanation for the result by displaying candidate cancer areas with bounding boxes. Training object detection models to do this was very expensive in terms of assigning supervised labels, and had the disadvantage of not being able to use negative (i.e., non-cancer) data for training. Our proposal consists of two novel techniques: (1) refined stochastic gastric image augmentation (R-sGAIA) and (2) hard boundary box training (HBBT). The R-sGAIA probabilistically highlights the gastric folds in the X-ray image based on medical knowledge, thus increasing the detection efficiency of gastric cancer. The HBBT is a new, efficient, and versatile training method that can reduce the number of false positive detections by actively using negative samples. The results showed that the proposed R-sGAIA and HBBT significantly improved the F1 score by 5.9% compared to the baseline EfficientDet-D7 + RandAugment (F1: 57.8%, recall: 90.2%, precision: 42.5%). This score is higher than the physician's cancer detection rate, indicating that at least 2 out of 5 areas detected are cancerous, confirming the utility of gastric cancer screening. "
+}

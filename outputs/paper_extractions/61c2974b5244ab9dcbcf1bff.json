@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Preamble Overhead Reduction",
+    "Coarse Synchronization"
+  ],
+  "datasets": [
+    "over-the-air WiFi dataset from a testbed of software defined radios (SDRs)"
+  ],
+  "methods": [
+    "PRONTO",
+    "customized convolutional neural networks (CNNs)",
+    "generalized decision flow"
+  ],
+  "results": [
+    "packet detection with 100% accuracy",
+    "coarse CFO estimation with errors as small as 3%",
+    "upto 40% preamble length reduction with no BER degradation",
+    "same performance in new environments without re-training",
+    "speedup through GPU parallelization"
+  ],
+  "paper_id": "61c2974b5244ab9dcbcf1bff",
+  "title": "PRONTO: Preamble Overhead Reduction with Neural Networks for Coarse\n  Synchronization",
+  "abstract": "  In IEEE 802.11 WiFi-based waveforms, the receiver performs coarse time and frequency synchronization using the first field of the preamble known as the legacy short training field (L-STF). The L-STF occupies upto 40% of the preamble length and takes upto 32 us of airtime. With the goal of reducing communication overhead, we propose a modified waveform, where the preamble length is reduced by eliminating the L-STF. To decode this modified waveform, we propose a neural network (NN)-based scheme called PRONTO that performs coarse time and frequency estimations using other preamble fields, specifically the legacy long training field (L-LTF). Our contributions are threefold: (i) We present PRONTO featuring customized convolutional neural networks (CNNs) for packet detection and coarse carrier frequency offset (CFO) estimation, along with data augmentation steps for robust training. (ii) We propose a generalized decision flow that makes PRONTO compatible with legacy waveforms that include the standard L-STF. (iii) We validate the outcomes on an over-the-air WiFi dataset from a testbed of software defined radios (SDRs). Our evaluations show that PRONTO can perform packet detection with 100% accuracy, and coarse CFO estimation with errors as small as 3%. We demonstrate that PRONTO provides upto 40% preamble length reduction with no bit error rate (BER) degradation. We further show that PRONTO is able to achieve the same performance in new environments without the need to re-train the CNNs. Finally, we experimentally show the speedup achieved by PRONTO through GPU parallelization over the corresponding CPU-only implementations. "
+}

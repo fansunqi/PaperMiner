@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Discrete-time stochastic optimal-control problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Direct trajectory optimization",
+    "Deterministic sampling",
+    "Policy optimization",
+    "Quasi-Newton method"
+  ],
+  "results": [
+    "Exactly recovers LQR policies for linear dynamics, quadratic objective, Gaussian disturbances",
+    "Performance on nonlinear, underactuated robotic systems",
+    "Handles control limits, avoids obstacles, generates robust plans in presence of unmodeled dynamics"
+  ],
+  "paper_id": "5f8d6b8c91e0116f3d44dc42",
+  "title": "Direct Policy Optimization using Deterministic Sampling and Collocation",
+  "abstract": "  We present an approach for approximately solving discrete-time stochastic optimal-control problems by combining direct trajectory optimization, deterministic sampling, and policy optimization. Our feedback motion-planning algorithm uses a quasi-Newton method to simultaneously optimize a reference trajectory, a set of deterministically chosen sample trajectories, and a parameterized policy. We demonstrate that this approach exactly recovers LQR policies in the case of linear dynamics, quadratic objective, and Gaussian disturbances. We also demonstrate the algorithm on several nonlinear, underactuated robotic systems to highlight its performance and ability to handle control limits, safely avoid obstacles, and generate robust plans in the presence of unmodeled dynamics. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Defending Active Directory"
+  ],
+  "datasets": [
+    "R500 graph"
+  ],
+  "methods": [
+    "Stackelberg game model",
+    "Neural Network based Dynamic Program",
+    "Evolutionary Diversity Optimisation (EDO)"
+  ],
+  "results": [
+    "EDO based defense is less than 1% away from the optimal defense"
+  ],
+  "paper_id": "624fa8db5aee126c0f3a5b88",
+  "title": "Defending Active Directory by Combining Neural Network based Dynamic\n  Program and Evolutionary Diversity Optimisation",
+  "abstract": "  Active Directory (AD) is the default security management system for Windows domain networks. We study a Stackelberg game model between one attacker and one defender on an AD attack graph. The attacker initially has access to a set of entry nodes. The attacker can expand this set by strategically exploring edges. Every edge has a detection rate and a failure rate. The attacker aims to maximize their chance of successfully reaching the destination before getting detected. The defender's task is to block a constant number of edges to decrease the attacker's chance of success. We show that the problem is #P-hard and, therefore, intractable to solve exactly. We convert the attacker's problem to an exponential sized Dynamic Program that is approximated by a Neural Network (NN). Once trained, the NN provides an efficient fitness function for the defender's Evolutionary Diversity Optimisation (EDO). The diversity emphasis on the defender's solution provides a diverse set of training samples, which improves the training accuracy of our NN for modelling the attacker. We go back and forth between NN training and EDO. Experimental results show that for R500 graph, our proposed EDO based defense is less than 1% away from the optimal defense. "
+}

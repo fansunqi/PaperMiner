@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Point cloud completion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SRPCN",
+    "k-means clustering for structure points",
+    "KL Divergence for matching",
+    "PCN-like decoder network"
+  ],
+  "results": [
+    "More authentic results",
+    "Stronger generalization ability"
+  ],
+  "paper_id": "6201df4a5aee126c0f64dd0a",
+  "title": "SRPCN: Structure Retrieval based Point Completion Network",
+  "abstract": "  Given partial objects and some complete ones as references, point cloud completion aims to recover authentic shapes. However, existing methods pay little attention to general shapes, which leads to the poor authenticity of completion results. Besides, the missing patterns are diverse in reality, but existing methods can only handle fixed ones, which means a poor generalization ability. Considering that a partial point cloud is a subset of the corresponding complete one, we regard them as different samples of the same distribution and propose Structure Retrieval based Point Completion Network (SRPCN). It first uses k-means clustering to extract structure points and disperses them into distributions, and then KL Divergence is used as a metric to find the complete structure point cloud that best matches the input in a database. Finally, a PCN-like decoder network is adopted to generate the final results based on the retrieved structure point clouds. As structure plays an important role in describing the general shape of an object and the proposed structure retrieval method is robust to missing patterns, experiments show that our method can generate more authentic results and has a stronger generalization ability. "
+}

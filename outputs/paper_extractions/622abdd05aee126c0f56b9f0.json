@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Large-scale data processing",
+    "Distributed shuffle"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Exoshuffle",
+    "Distributed futures",
+    "Decoupled shuffle control plane",
+    "High-performance data plane based on Ray"
+  ],
+  "results": [
+    "Rewrite shuffle optimizations with less code",
+    "Competitive performance and scalability with specialized shuffle systems",
+    "Enable latest applications like ML training to leverage large-scale distributed shuffle"
+  ],
+  "paper_id": "622abdd05aee126c0f56b9f0",
+  "title": "Exoshuffle: Large-Scale Shuffle at the Application Level",
+  "abstract": "  Shuffle is a key primitive in large-scale data processing applications that has inspired a myriad of implementations. While previous work has produced breakthroughs in shuffle performance, many applications do not benefit in practice because of the difficulty of evolving existing shuffle systems. Shuffle is often tightly integrated into a framework that offers a higher-level abstraction such as SQL. Integrating new shuffle designs into these frameworks requires significant development effort. Furthermore, distributed shuffle is used by many different end use cases, from high-throughput batch processing to low-latency online aggregation. These different use cases have driven the creation of new application frameworks, each of which must rebuild shuffle from scratch.   We enable shuffle flexibility by building distributed shuffle as a library. We use distributed futures as an intermediate layer for building distributed shuffle as a library and show how it enables the shuffle control plane to be decoupled from a common high-performance data plane based on Ray. We present Exoshuffle and show that we can: (1) rewrite previous shuffle optimizations as application-level libraries with an order of magnitude less code, (2) build a shuffle-agnostic data plane that provides performance and scalability competitive with specialized shuffle systems, and (3) enable latest applications such as ML training to easily leverage large-scale distributed shuffle. "
+}

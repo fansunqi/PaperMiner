@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Genome sequence analysis",
+    "Read mapping"
+  ],
+  "datasets": [
+    "Real genomic datasets"
+  ],
+  "methods": [
+    "GenStore in-storage processing system",
+    "Hardware/software co-design",
+    "Low-cost hardware accelerators",
+    "In-storage filters"
+  ],
+  "results": [
+    "Improves read mapping performance by 2.07-6.05x (1.52-3.32x) for high similarity read sets",
+    "Improves read mapping performance by 1.45-33.63x (2.70-19.2x) for low similarity read sets"
+  ],
+  "paper_id": "621454545aee126c0f204244",
+  "title": "GenStore: A High-Performance and Energy-Efficient In-Storage Computing\n  System for Genome Sequence Analysis",
+  "abstract": "  Read mapping is a fundamental, yet computationally-expensive step in many genomics applications. It is used to identify potential matches and differences between fragments (called reads) of a sequenced genome and an already known genome (called a reference genome). To address the computational challenges in genome analysis, many prior works propose various approaches such as filters that select the reads that must undergo expensive computation, efficient heuristics, and hardware acceleration. While effective at reducing the computation overhead, all such approaches still require the costly movement of a large amount of data from storage to the rest of the system, which can significantly lower the end-to-end performance of read mapping in conventional and emerging genomics systems.   We propose GenStore, the first in-storage processing system designed for genome sequence analysis that greatly reduces both data movement and computational overheads of genome sequence analysis by exploiting low-cost and accurate in-storage filters. GenStore leverages hardware/software co-design to address the challenges of in-storage processing, supporting reads with 1) different read lengths and error rates, and 2) different degrees of genetic variation. Through rigorous analysis of read mapping processes, we meticulously design low-cost hardware accelerators and data/computation flows inside a NAND flash-based SSD. Our evaluation using a wide range of real genomic datasets shows that GenStore, when implemented in three modern SSDs, significantly improves the read mapping performance of state-of-the-art software (hardware) baselines by 2.07-6.05$\\times$ (1.52-3.32$\\times$) for read sets with high similarity to the reference genome and 1.45-33.63$\\times$ (2.70-19.2$\\times$) for read sets with low similarity to the reference genome. "
+}

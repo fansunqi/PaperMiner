@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fine-grained Domain Adaptive Crowd Counting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Point-derived Segmentation",
+    "Crowd Region Transfer (CRT)",
+    "Crowd Density Alignment (CDA)"
+  ],
+  "results": [
+    "Outperforms previous approaches consistently in widely-used adaptation scenarios"
+  ],
+  "paper_id": "6110a4285244ab9dcb314bcc",
+  "title": "Fine-grained Domain Adaptive Crowd Counting via Point-derived\n  Segmentation",
+  "abstract": "  Due to domain shift, a large performance drop is usually observed when a trained crowd counting model is deployed in the wild. While existing domain-adaptive crowd counting methods achieve promising results, they typically regard each crowd image as a whole and reduce domain discrepancies in a holistic manner, thus limiting further improvement of domain adaptation performance. To this end, we propose to untangle \\emph{domain-invariant} crowd and \\emph{domain-specific} background from crowd images and design a fine-grained domain adaption method for crowd counting. Specifically, to disentangle crowd from background, we propose to learn crowd segmentation from point-level crowd counting annotations in a weakly-supervised manner. Based on the derived segmentation, we design a crowd-aware domain adaptation mechanism consisting of two crowd-aware adaptation modules, i.e., Crowd Region Transfer (CRT) and Crowd Density Alignment (CDA). The CRT module is designed to guide crowd features transfer across domains beyond background distractions. The CDA module dedicates to regularising target-domain crowd density generation by its own crowd density distribution. Our method outperforms previous approaches consistently in the widely-used adaptation scenarios. "
+}

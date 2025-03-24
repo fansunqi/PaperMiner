@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Code Classification",
+    "Clone Detection",
+    "Method Naming"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "AST path-based approach with multiple representations (AST, CFG, PDG)",
+    "Attention-based model"
+  ],
+  "results": [
+    "Method Naming: 11% increase in F1",
+    "Program Classification: 15.7% increase in Accuracy",
+    "Clone Detection: 9.3% increase in F1",
+    "Discussion on timing overheads with multiple representations"
+  ],
+  "paper_id": "60d3fcfa91e0112ca5d18769",
+  "title": "On the Impact of Multiple Source Code Representations on Software\n  Engineering Tasks -- An Empirical Study",
+  "abstract": "  Efficiently representing source code is crucial for various software engineering tasks such as code classification and clone detection. Existing approaches primarily use Abstract Syntax Tree (AST), and only a few focus on semantic graphs such as Control Flow Graph (CFG) and Program Dependency Graph (PDG), which contain information about source code that AST does not. Even though some works tried to utilize multiple representations, they do not provide any insights about the costs and benefits of using multiple representations. The primary goal of this paper is to discuss the implications of utilizing multiple code representations, specifically AST, CFG, and PDG. We modify an AST path-based approach to accept multiple representations as input to an attention-based model. We do this to measure the impact of additional representations (such as CFG and PDG) over AST. We evaluate our approach on three tasks: Method Naming, Program Classification, and Clone Detection. Our approach increases the performance on these tasks by 11% (F1), 15.7% (Accuracy), and 9.3% (F1), respectively, over the baseline. In addition to the effect on performance, we discuss timing overheads incurred with multiple representations. We envision this work providing researchers with a lens to evaluate combinations of code representations for various tasks. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Designing principled deep learning models for stochastic analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Geometric (Hyper)Transformer",
+    "Universal causal geometric DL framework"
+  ],
+  "results": [
+    "DL model capable of causally approximating regular maps between time series in specified metric spaces",
+    "Quantitative expression of parameters needed for given approximation error based on target map's regularity and geometric structure"
+  ],
+  "paper_id": "61f8a4c45aee126c0fee05aa",
+  "title": "Designing Universal Causal Deep Learning Models: The Geometric\n  (Hyper)Transformer",
+  "abstract": "  Several problems in stochastic analysis are defined through their geometry, and preserving that geometric structure is essential to generating meaningful predictions. Nevertheless, how to design principled deep learning (DL) models capable of encoding these geometric structures remains largely unknown. We address this open problem by introducing a universal causal geometric DL framework in which the user specifies a suitable pair of metric spaces $\\mathscr{X}$ and $\\mathscr{Y}$ and our framework returns a DL model capable of causally approximating any ``regular'' map sending time series in $\\mathscr{X}^{\\mathbb{Z}}$ to time series in $\\mathscr{Y}^{\\mathbb{Z}}$ while respecting their forward flow of information throughout time. Suitable geometries on $\\mathscr{Y}$ include various (adapted) Wasserstein spaces arising in optimal stopping problems, a variety of statistical manifolds describing the conditional distribution of continuous-time finite state Markov chains, and all Fr\\'{e}chet spaces admitting a Schauder basis, e.g. as in classical finance. Suitable spaces $\\mathscr{X}$ are compact subsets of any Euclidean space. Our results all quantitatively express the number of parameters needed for our DL model to achieve a given approximation error as a function of the target map's regularity and the geometric structure both of $\\mathscr{X}$ and of $\\mathscr{Y}$. Even when omitting any temporal structure, our universal approximation theorems are the first guarantees that H\\\"{o}lder functions, defined between such $\\mathscr{X}$ and $\\mathscr{Y}$ can be approximated by DL models. "
+}

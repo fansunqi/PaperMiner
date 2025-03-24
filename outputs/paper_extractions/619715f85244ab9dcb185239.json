@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/JHL-HUST/TraSw"
+  ],
+  "tasks": [
+    "Multi-Object Tracking",
+    "Adversarial Attack against Pedestrian Trackers"
+  ],
+  "datasets": [
+    "MOT-Challenge",
+    "2DMOT15",
+    "MOT17",
+    "MOT20"
+  ],
+  "methods": [
+    "Tracklet-Switch (TraSw)"
+  ],
+  "results": [
+    "TraSw achieves over 95% success attack rate by attacking only four frames on average"
+  ],
+  "paper_id": "619715f85244ab9dcb185239",
+  "title": "Tracklet-Switch Adversarial Attack against Pedestrian Multi-Object\n  Tracking Trackers",
+  "abstract": "  Multi-Object Tracking (MOT) has achieved aggressive progress and derived many excellent deep learning trackers. Meanwhile, most deep learning models are known to be vulnerable to adversarial examples that are crafted with small perturbations but could mislead the model prediction. In this work, we observe that the robustness on the MOT trackers is rarely studied, and it is challenging to attack the MOT system since its mature association algorithms are designed to be robust against errors during the tracking. To this end, we analyze the vulnerability of popular MOT trackers and propose a novel adversarial attack method called Tracklet-Switch (TraSw) against the complete tracking pipeline of MOT. The proposed TraSw can fool the advanced deep pedestrian trackers (i.e., FairMOT and ByteTrack), causing them fail to track the targets in the subsequent frames by perturbing very few frames. Experiments on the MOT-Challenge datasets (i.e., 2DMOT15, MOT17, and MOT20) show that TraSw can achieve an extraordinarily high success attack rate of over 95% by attacking only four frames on average. To our knowledge, this is the first work on the adversarial attack against the pedestrian MOT trackers. Code is available at https://github.com/JHL-HUST/TraSw . "
+}

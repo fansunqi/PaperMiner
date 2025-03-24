@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Contextual MNL-Bandit problem",
+    "Dynamic set optimization problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimistic algorithm",
+    "Convex relaxation of optimization step"
+  ],
+  "results": [
+    "Regret bounded by O(\u221adT + \u03ba)",
+    "Significant improvement over existing methods with regret O(\u221a\u03badT)"
+  ],
+  "paper_id": "5fc60d7991e0118947381990",
+  "title": "A Tractable Online Learning Algorithm for the Multinomial Logit\n  Contextual Bandit",
+  "abstract": "  In this paper, we consider the contextual variant of the MNL-Bandit problem. More specifically, we consider a dynamic set optimization problem, where a decision-maker offers a subset (assortment) of products to a consumer and observes the response in every round. Consumers purchase products to maximize their utility. We assume that a set of attributes describe the products, and the mean utility of a product is linear in the values of these attributes. We model consumer choice behavior using the widely used Multinomial Logit (MNL) model and consider the decision maker problem of dynamically learning the model parameters while optimizing cumulative revenue over the selling horizon $T$. Though this problem has attracted considerable attention in recent times, many existing methods often involve solving an intractable non-convex optimization problem. Their theoretical performance guarantees depend on a problem-dependent parameter which could be prohibitively large. In particular, existing algorithms for this problem have regret bounded by $O(\\sqrt{\\kappa d T})$, where $\\kappa$ is a problem-dependent constant that can have an exponential dependency on the number of attributes. In this paper, we propose an optimistic algorithm and show that the regret is bounded by $O(\\sqrt{dT} + \\kappa)$, significantly improving the performance over existing methods. Further, we propose a convex relaxation of the optimization step, which allows for tractable decision-making while retaining the favourable regret guarantee. "
+}

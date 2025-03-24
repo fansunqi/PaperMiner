@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/youshyee/DCL-Detection"
+  ],
+  "tasks": [
+    "Great Ape Detection in the Wild",
+    "Generic Object Detection"
+  ],
+  "datasets": [
+    "Extended PanAfrican Dataset",
+    "Bees",
+    "Snapshot Serengeti",
+    "MS-COCO",
+    "PASCAL-VOC"
+  ],
+  "methods": [
+    "Dynamic Curriculum Learning",
+    "Pseudo-labelling with Curriculum Learning Policies"
+  ],
+  "results": [
+    "Significant performance improvements against various state-of-the-art systems on Extended PanAfrican Dataset",
+    "Outperforms supervised baselines on sparse label versions of Bees and Snapshot Serengeti datasets",
+    "Competitive benchmarks for generic object detection in MS-COCO and PASCAL-VOC"
+  ],
+  "paper_id": "62708f615aee126c0fa68fd7",
+  "title": "Dynamic Curriculum Learning for Great Ape Detection in the Wild",
+  "abstract": "  We propose a novel end-to-end curriculum learning approach for sparsely labelled animal datasets leveraging large volumes of unlabelled data to improve supervised species detectors. We exemplify the method in detail on the task of finding great apes in camera trap footage taken in challenging real-world jungle environments. In contrast to previous semi-supervised methods, our approach adjusts learning parameters dynamically over time and gradually improves detection quality by steering training towards virtuous self-reinforcement. To achieve this, we propose integrating pseudo-labelling with curriculum learning policies and show how learning collapse can be avoided. We discuss theoretical arguments, ablations, and significant performance improvements against various state-of-the-art systems when evaluating on the Extended PanAfrican Dataset holding approx. 1.8M frames. We also demonstrate our method can outperform supervised baselines with significant margins on sparse label versions of other animal datasets such as Bees and Snapshot Serengeti. We note that performance advantages are strongest for smaller labelled ratios common in ecological applications. Finally, we show that our approach achieves competitive benchmarks for generic object detection in MS-COCO and PASCAL-VOC indicating wider applicability of the dynamic learning concepts introduced. We publish all relevant source code, network weights, and data access details for full reproducibility. The code is available at https://github.com/youshyee/DCL-Detection. "
+}

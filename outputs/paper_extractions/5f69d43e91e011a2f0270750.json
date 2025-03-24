@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "DeepFake detection evasion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Implicit spatial-domain notch filtering",
+    "DeepNotch",
+    "Adding overwhelming spatial noise",
+    "Deep image filtering",
+    "Adversarial guidance map"
+  ],
+  "results": [
+    "Reduces accuracy of 3 state-of-the-art DeepFake detection methods by 36.79% on average",
+    "Up to 97.02% reduction in the best case"
+  ],
+  "paper_id": "5f69d43e91e011a2f0270750",
+  "title": "Dodging DeepFake Detection via Implicit Spatial-Domain Notch Filtering",
+  "abstract": "  The current high-fidelity generation and high-precision detection of DeepFake images are at an arms race. We believe that producing DeepFakes that are highly realistic and 'detection evasive' can serve the ultimate goal of improving future generation DeepFake detection capabilities. In this paper, we propose a simple yet powerful pipeline to reduce the artifact patterns of fake images without hurting image quality by performing implicit spatial-domain notch filtering. We first demonstrate that frequency-domain notch filtering, although famously shown to be effective in removing periodic noise in the spatial domain, is infeasible for our task at hand due to the manual designs required for the notch filters. We, therefore, resort to a learning-based approach to reproduce the notch filtering effects, but solely in the spatial domain. We adopt a combination of adding overwhelming spatial noise for breaking the periodic noise pattern and deep image filtering to reconstruct the noise-free fake images, and we name our method DeepNotch. Deep image filtering provides a specialized filter for each pixel in the noisy image, producing filtered images with high fidelity compared to their DeepFake counterparts. Moreover, we also use the semantic information of the image to generate an adversarial guidance map to add noise intelligently. Our large-scale evaluation on 3 representative state-of-the-art DeepFake detection methods (tested on 16 types of DeepFakes) has demonstrated that our technique significantly reduces the accuracy of these 3 fake image detection methods, 36.79% on average and up to 97.02% in the best case. "
+}

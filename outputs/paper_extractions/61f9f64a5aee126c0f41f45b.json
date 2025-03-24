@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Neural Network Explanation"
+  ],
+  "datasets": [
+    "synthetic datasets",
+    "real-world datasets"
+  ],
+  "methods": [
+    "MotifExplainer",
+    "motif extraction rules",
+    "motif embedding",
+    "attention-based method"
+  ],
+  "results": [
+    "better human-understandable explanations than methods based on nodes, edges, and regular subgraphs",
+    "demonstrated effectiveness on both synthetic and real-world datasets"
+  ],
+  "paper_id": "61f9f64a5aee126c0f41f45b",
+  "title": "MotifExplainer: a Motif-based Graph Neural Network Explainer",
+  "abstract": "  We consider the explanation problem of Graph Neural Networks (GNNs). Most existing GNN explanation methods identify the most important edges or nodes but fail to consider substructures, which are more important for graph data. The only method that considers subgraphs tries to search all possible subgraphs and identify the most significant subgraphs. However, the subgraphs identified may not be recurrent or statistically important. In this work, we propose a novel method, known as MotifExplainer, to explain GNNs by identifying important motifs, recurrent and statistically significant patterns in graphs. Our proposed motif-based methods can provide better human-understandable explanations than methods based on nodes, edges, and regular subgraphs. Given an input graph and a pre-trained GNN model, our method first extracts motifs in the graph using well-designed motif extraction rules. Then we generate motif embedding by feeding motifs into the pre-trained GNN. Finally, we employ an attention-based method to identify the most influential motifs as explanations for the final prediction results. The empirical studies on both synthetic and real-world datasets demonstrate the effectiveness of our method. "
+}

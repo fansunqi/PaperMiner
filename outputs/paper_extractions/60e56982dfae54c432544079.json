@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "self-supervised learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "InfoNCE",
+    "variational autoencoder (VAE)",
+    "maximizing mutual information (MI)",
+    "log Bayesian model evidence"
+  ],
+  "results": [
+    "InfoNCE objective equals log Bayesian model evidence (up to a constant) in infinite sample limit",
+    "VAE perspective provides better motivation for InfoNCE than MI"
+  ],
+  "paper_id": "60e56982dfae54c432544079",
+  "title": "InfoNCE is a variational autoencoder",
+  "abstract": "  There are two main approaches to self-supervised learning (SSL), generative SSL, which learns a probabilistic model of the inputs, or contrastive SSL where we design a supervised learning task to encourage good representations. We reconcile these approaches by showing that contrastive SSL methods (including InfoNCE) which maximize the mutual information (MI) implicitly learn a probabilistic model of the inputs (specifically, a variational autoencoder; VAE). In particular, when we learn the optimal prior, the VAE objective (the ELBO) becomes equal to the MI (up to a constant). In turn, for a deterministic encoder the ELBO is equal to the log Bayesian model evidence. This establishes a profound connection between Bayesian inference and information theory. However, practical InfoNCE methods do not use the MI as an objective: the MI is invariant to arbitrary invertible transformations, so using an MI objective can lead to highly entangled representations (Tschannen et al., 2019). Instead, the actual InfoNCE objective is a simplified lower bound on the MI which is loose even in the infinite sample limit. Thus, an objective that works (i.e. the actual InfoNCE objective) appears to be motivated as a loose bound on an objective that does not work (i.e. the true MI which gives arbitrarily entangled representations). We give an alternative motivation for the actual InfoNCE objective. In particular, we show that in the infinite sample limit, and for a particular choice of prior, the actual InfoNCE objective is equal to the log Bayesian model evidence (up to a constant). Thus, we argue that our VAE perspective gives a better motivation for InfoNCE than MI, as the actual InfoNCE objective is only loosely bounded by the MI, but is equal to the log Bayesian model evidence (up to a constant). "
+}

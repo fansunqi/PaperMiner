@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Music Source Separation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differentiable Parametric Source Models",
+    "Neural network estimates source models' parameters"
+  ],
+  "results": [
+    "Outperforms learning-free methods and supervised baseline",
+    "High data efficiency: good separation quality with less than three minutes of training audio"
+  ],
+  "paper_id": "61ef6ae15244ab9dcb688916",
+  "title": "Unsupervised Music Source Separation Using Differentiable Parametric\n  Source Models",
+  "abstract": "  Supervised deep learning approaches to underdetermined audio source separation achieve state-of-the-art performance but require a dataset of mixtures along with their corresponding isolated source signals. Such datasets can be extremely costly to obtain for musical mixtures. This raises a need for unsupervised methods. We propose a novel unsupervised model-based deep learning approach to musical source separation. Each source is modelled with a differentiable parametric source-filter model. A neural network is trained to reconstruct the observed mixture as a sum of the sources by estimating the source models' parameters given their fundamental frequencies. At test time, soft masks are obtained from the synthesized source signals. The experimental evaluation on a vocal ensemble separation task shows that the proposed method outperforms learning-free methods based on nonnegative matrix factorization and a supervised deep learning baseline. Integrating domain knowledge in the form of source models into a data-driven method leads to high data efficiency: the proposed approach achieves good separation quality even when trained on less than three minutes of audio. This work makes powerful deep learning based separation usable in scenarios where training data with ground truth is expensive or nonexistent. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Attack"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Adaptive Perturbation",
+    "Exact gradient direction with scaling factor",
+    "Adaptive scaling factor generator"
+  ],
+  "results": [
+    "Higher transferability",
+    "Outperforms state-of-the-art methods",
+    "Improves attack success rates with fewer perturbations"
+  ],
+  "paper_id": "61a5965a5244ab9dcbdfd6fd",
+  "title": "Adaptive Perturbation for Adversarial Attack",
+  "abstract": "  In recent years, the security of deep learning models achieves more and more attentions with the rapid development of neural networks, which are vulnerable to adversarial examples. Almost all existing gradient-based attack methods use the sign function in the generation to meet the requirement of perturbation budget on $L_\\infty$ norm. However, we find that the sign function may be improper for generating adversarial examples since it modifies the exact gradient direction. Instead of using the sign function, we propose to directly utilize the exact gradient direction with a scaling factor for generating adversarial perturbations, which improves the attack success rates of adversarial examples even with fewer perturbations. At the same time, we also theoretically prove that this method can achieve better black-box transferability. Moreover, considering that the best scaling factor varies across different images, we propose an adaptive scaling factor generator to seek an appropriate scaling factor for each image, which avoids the computational cost for manually searching the scaling factor. Our method can be integrated with almost all existing gradient-based attack methods to further improve their attack success rates. Extensive experiments on the CIFAR10 and ImageNet datasets show that our method exhibits higher transferability and outperforms the state-of-the-art methods. "
+}

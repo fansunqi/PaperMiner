@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Goodness-of-fit testing"
+  ],
+  "datasets": [
+    "synthetic data",
+    "real-world data"
+  ],
+  "methods": [
+    "KSDAgg (Kernel Stein Discrepancy Aggregated Test)",
+    "aggregates multiple tests with different kernels",
+    "parametric bootstrap",
+    "wild bootstrap"
+  ],
+  "results": [
+    "KSDAgg achieves the smallest uniform separation rate of the collection",
+    "minimax optimal rate over unrestricted Sobolev balls",
+    "outperforms other state-of-the-art quadratic-time adaptive KSD-based tests"
+  ],
+  "paper_id": "61fb47e15aee126c0f873a32",
+  "title": "KSD Aggregated Goodness-of-fit Test",
+  "abstract": "  We investigate properties of goodness-of-fit tests based on the Kernel Stein Discrepancy (KSD). We introduce a strategy to construct a test, called KSDAgg, which aggregates multiple tests with different kernels. KSDAgg avoids splitting the data to perform kernel selection (which leads to a loss in test power), and rather maximises the test power over a collection of kernels. We provide non-asymptotic guarantees on the power of KSDAgg: we show it achieves the smallest uniform separation rate of the collection, up to a logarithmic term. For compactly supported densities with bounded model score function, we derive the rate for KSDAgg over restricted Sobolev balls; this rate corresponds to the minimax optimal rate over unrestricted Sobolev balls, up to an iterated logarithmic term. KSDAgg can be computed exactly in practice as it relies either on a parametric bootstrap or on a wild bootstrap to estimate the quantiles and the level corrections. In particular, for the crucial choice of bandwidth of a fixed kernel, it avoids resorting to arbitrary heuristics (such as median or standard deviation) or to data splitting. We find on both synthetic and real-world data that KSDAgg outperforms other state-of-the-art quadratic-time adaptive KSD-based goodness-of-fit testing procedures. "
+}

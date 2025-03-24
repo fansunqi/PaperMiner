@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous-Time Optimal Control of Nonlinear Systems",
+    "Path-tracking control of vehicles"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Relaxed Continuous-Time Actor-Critic (RCTAC)",
+    "Warm-up phase",
+    "Generalized policy iteration phase"
+  ],
+  "results": [
+    "Convergence to an admissible and nearly optimal policy",
+    "Effectiveness demonstrated through simulations and real-world path-tracking tasks"
+  ],
+  "paper_id": "5d7b71503a55ac06476538a4",
+  "title": "Relaxed Actor-Critic with Convergence Guarantees for Continuous-Time\n  Optimal Control of Nonlinear Systems",
+  "abstract": "  This paper presents the Relaxed Continuous-Time Actor-critic (RCTAC) algorithm, a method for finding the nearly optimal policy for nonlinear continuous-time (CT) systems with known dynamics and infinite horizon, such as the path-tracking control of vehicles. RCTAC has several advantages over existing adaptive dynamic programming algorithms for CT systems. It does not require the ``admissibility\" of the initialized policy or the input-affine nature of controlled systems for convergence. Instead, given any initial policy, RCTAC can converge to an admissible, and subsequently nearly optimal policy for a general nonlinear system with a saturated controller. RCTAC consists of two phases: a warm-up phase and a generalized policy iteration phase. The warm-up phase minimizes the square of the Hamiltonian to achieve admissibility, while the generalized policy iteration phase relaxes the update termination conditions for faster convergence. The convergence and optimality of the algorithm are proven through Lyapunov analysis, and its effectiveness is demonstrated through simulations and real-world path-tracking tasks. "
+}

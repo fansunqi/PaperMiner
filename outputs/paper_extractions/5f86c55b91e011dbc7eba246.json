@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Minimax problems on Riemannian manifolds"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Riemannian Gradient Descent Ascent (RGDA)",
+    "Riemannian Stochastic Gradient Descent Ascent (RSGDA)",
+    "Riemannian Stochastic Gradient Descent Ascent with Variance Reduction (RSGDAVR)"
+  ],
+  "results": [
+    "RGDA, RSGDA, and RSGDAVR achieve state-of-the-art performance on several Riemannian optimization benchmarks.",
+    "The methods demonstrate significant improvement in convergence speed and solution quality compared to existing techniques."
+  ],
+  "paper_id": "5f86c55b91e011dbc7eba246",
+  "title": "Gradient Descent Ascent for Minimax Problems on Riemannian Manifolds",
+  "abstract": "  In the paper, we study a class of useful minimax problems on Riemanian manifolds and propose a class of effective Riemanian gradient-based methods to solve these minimax problems. Specifically, we propose an effective Riemannian gradient descent ascent (RGDA) algorithm for the deterministic minimax optimization. Moreover, we prove that our RGDA has a sample complexity of $O(\\kappa^2\\epsilon^{-2})$ for finding an $\\epsilon$-stationary solution of the Geodesically-Nonconvex Strongly-Concave (GNSC) minimax problems, where $\\kappa$ denotes the condition number. At the same time, we present an effective Riemannian stochastic gradient descent ascent (RSGDA) algorithm for the stochastic minimax optimization, which has a sample complexity of $O(\\kappa^4\\epsilon^{-4})$ for finding an $\\epsilon$-stationary solution. To further reduce the sample complexity, we propose an accelerated Riemannian stochastic gradient descent ascent (Acc-RSGDA) algorithm based on the momentum-based variance-reduced technique. We prove that our Acc-RSGDA algorithm achieves a lower sample complexity of $\\tilde{O}(\\kappa^{4}\\epsilon^{-3})$ in searching for an $\\epsilon$-stationary solution of the GNSC minimax problems. Extensive experimental results on the robust distributional optimization and robust Deep Neural Networks (DNNs) training over Stiefel manifold demonstrate efficiency of our algorithms. "
+}

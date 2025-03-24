@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data visualization",
+    "Image quality assessment (IQA)"
+  ],
+  "datasets": [
+    "simulation data from a popular climate model"
+  ],
+  "methods": [
+    "Data SSIM (DSSIM) applied directly to floating-point data"
+  ],
+  "results": [
+    "DSSIM demonstrates usefulness in evaluating differences due to lossy compression on large volumes of simulation data"
+  ],
+  "paper_id": "6201df4a5aee126c0f64dcc6",
+  "title": "DSSIM: a structural similarity index for floating-point data",
+  "abstract": "  Data visualization is a critical component in terms of interacting with floating-point output data from large model simulation codes. Indeed, postprocessing analysis workflows on simulation data often generate a large number of images from the raw data, many of which are then compared to each other or to specified reference images. In this image-comparison scenario, image quality assessment (IQA) measures are quite useful, and the Structural Similarity Index (SSIM) continues to be a popular choice. However, generating large numbers of images can be costly, and plot-specific (but data independent) choices can affect the SSIM value. A natural question is whether we can apply the SSIM directly to the floating-point simulation data and obtain an indication of whether differences in the data are likely to impact a visual assessment, effectively bypassing the creation of a specific set of images from the data. To this end, we propose an alternative to the popular SSIM that can be applied directly to the floating point data, which we refer to as the Data SSIM (DSSIM). While we demonstrate the usefulness of the DSSIM in the context of evaluating differences due to lossy compression on large volumes of simulation data from a popular climate model, the DSSIM may prove useful for many other applications involving simulation or image data. "
+}

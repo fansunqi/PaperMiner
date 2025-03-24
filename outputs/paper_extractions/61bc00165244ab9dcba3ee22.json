@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://njuvision.github.io/RobustNIC"
+  ],
+  "tasks": [
+    "Neural Image Compression",
+    "Model Robustness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adversarial Attack",
+    "Iterative Adversarial Finetuning"
+  ],
+  "results": [
+    "Severe distortion in reconstruction of adversarial examples",
+    "Substantial improvement in compression model robustness"
+  ],
+  "paper_id": "61bc00165244ab9dcba3ee22",
+  "title": "Towards Robust Neural Image Compression: Adversarial Attack and Model\n  Finetuning",
+  "abstract": "  Deep neural network based image compression has been extensively studied. Model robustness is largely overlooked, though it is crucial to service enabling. We perform the adversarial attack by injecting a small amount of noise perturbation to original source images, and then encode these adversarial examples using prevailing learnt image compression models. Experiments report severe distortion in the reconstruction of adversarial examples, revealing the general vulnerability of existing methods, regardless of the settings used in underlying compression model (e.g., network architecture, loss function, quality scale) and optimization strategy used for injecting perturbation (e.g., noise threshold, signal distance measurement). Later, we apply the iterative adversarial finetuning to refine pretrained models. In each iteration, random source images and adversarial examples are mixed to update underlying model. Results show the effectiveness of the proposed finetuning strategy by substantially improving the compression model robustness. Overall, our methodology is simple, effective, and generalizable, making it attractive for developing robust learnt image compression solution. All materials have been made publicly accessible at https://njuvision.github.io/RobustNIC for reproducible research. "
+}

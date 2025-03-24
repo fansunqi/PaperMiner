@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Fisher Markets",
+    "Stochastic Pricing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Online pricing algorithm based on user consumption observations",
+    "Revealed preference feedback",
+    "Adaptive expected equilibrium pricing (for known distribution)"
+  ],
+  "results": [
+    "Regret and capacity violation of O(\u221an)",
+    "Uniform static pricing cannot achieve less than \u03a9(\u221an) regret and constraint violation",
+    "Adaptive variant achieves O(log(n)) regret and constant capacity violation for discrete distributions"
+  ],
+  "paper_id": "62708f625aee126c0fa69319",
+  "title": "Stochastic Online Fisher Markets: Static Pricing Limits and Adaptive\n  Enhancements",
+  "abstract": "  In a Fisher market, agents (users) spend a budget of (artificial) currency to buy goods that maximize their utilities while a central planner sets prices on capacity-constrained goods such that the market clears. However, the efficacy of pricing schemes in achieving an equilibrium outcome in Fisher markets typically relies on complete knowledge of users' budgets and utilities and requires that transactions happen in a static market wherein all users are present simultaneously.   As a result, we study an online variant of Fisher markets, wherein budget-constrained users with privately known utility and budget parameters, drawn i.i.d. from a distribution $\\mathcal{D}$, enter the market sequentially. In this setting, we develop an algorithm that adjusts prices solely based on observations of user consumption, i.e., revealed preference feedback, and achieves a regret and capacity violation of $O(\\sqrt{n})$, where $n$ is the number of users and the good capacities scale as $O(n)$. Here, our regret measure is the optimality gap in the objective of the Eisenberg-Gale program between an online algorithm and an offline oracle with complete information on users' budgets and utilities. To establish the efficacy of our approach, we show that any uniform (static) pricing algorithm, including one that sets expected equilibrium prices with complete knowledge of the distribution $\\mathcal{D}$, cannot achieve both a regret and constraint violation of less than $\\Omega(\\sqrt{n})$. While our revealed preference algorithm requires no knowledge of the distribution $\\mathcal{D}$, we show that if $\\mathcal{D}$ is known, then an adaptive variant of expected equilibrium pricing achieves $O(\\log(n))$ regret and constant capacity violation for discrete distributions. Finally, we present numerical experiments to demonstrate the performance of our revealed preference algorithm relative to several benchmarks. "
+}

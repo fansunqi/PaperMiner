@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Energy-Latency Attacks on Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sponge Poisoning",
+    "Formalization for sponge poisoning",
+    "Analysis of poisoned model activations"
+  ],
+  "results": [
+    "Sponge poisoning can almost completely vanish the effect of hardware accelerators",
+    "Identified vulnerable components in poisoned models",
+    "Sanitization methods may be overly expensive"
+  ],
+  "paper_id": "6232a74d5aee126c0fe13ca6",
+  "title": "Energy-Latency Attacks via Sponge Poisoning",
+  "abstract": "  Sponge examples are test-time inputs carefully optimized to increase energy consumption and latency of neural networks when deployed on hardware accelerators. In this work, we are the first to demonstrate that sponge examples can also be injected at training time, via an attack that we call sponge poisoning. This attack allows one to increase the energy consumption and latency of machine-learning models indiscriminately on each test-time input. We present a novel formalization for sponge poisoning, overcoming the limitations related to the optimization of test-time sponge examples, and show that this attack is possible even if the attacker only controls a few model updates; for instance, if model training is outsourced to an untrusted third-party or distributed via federated learning. Our extensive experimental analysis shows that sponge poisoning can almost completely vanish the effect of hardware accelerators. We also analyze the activations of poisoned models, identifying which components are more vulnerable to this attack. Finally, we examine the feasibility of countermeasures against sponge poisoning to decrease energy consumption, showing that sanitization methods may be overly expensive for most of the users. "
+}

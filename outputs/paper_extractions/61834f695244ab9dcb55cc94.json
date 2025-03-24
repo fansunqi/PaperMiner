@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/siahuat0727/MGNet"
+  ],
+  "tasks": [
+    "Image Classification"
+  ],
+  "datasets": [
+    "ImageNet100"
+  ],
+  "methods": [
+    "Multi-Glimpse Network",
+    "Recurrent Downsampled Attention"
+  ],
+  "results": [
+    "Improves 4.76% accuracy on average in common corruptions with only 36.9% computational cost",
+    "Maintains 44.2% accuracy under PGD attack while baseline drops to 7.6%"
+  ],
+  "paper_id": "61834f695244ab9dcb55cc94",
+  "title": "Multi-Glimpse Network: A Robust and Efficient Classification\n  Architecture based on Recurrent Downsampled Attention",
+  "abstract": "  Most feedforward convolutional neural networks spend roughly the same efforts for each pixel. Yet human visual recognition is an interaction between eye movements and spatial attention, which we will have several glimpses of an object in different regions. Inspired by this observation, we propose an end-to-end trainable Multi-Glimpse Network (MGNet) which aims to tackle the challenges of high computation and the lack of robustness based on recurrent downsampled attention mechanism. Specifically, MGNet sequentially selects task-relevant regions of an image to focus on and then adaptively combines all collected information for the final prediction. MGNet expresses strong resistance against adversarial attacks and common corruptions with less computation. Also, MGNet is inherently more interpretable as it explicitly informs us where it focuses during each iteration. Our experiments on ImageNet100 demonstrate the potential of recurrent downsampled attention mechanisms to improve a single feedforward manner. For example, MGNet improves 4.76% accuracy on average in common corruptions with only 36.9% computational cost. Moreover, while the baseline incurs an accuracy drop to 7.6%, MGNet manages to maintain 44.2% accuracy in the same PGD attack strength with ResNet-50 backbone. Our code is available at https://github.com/siahuat0727/MGNet. "
+}

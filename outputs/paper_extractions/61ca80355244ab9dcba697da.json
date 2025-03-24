@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/USTC-IMCL/ENVC"
+  ],
+  "tasks": [
+    "Neural video compression"
+  ],
+  "datasets": [
+    "UVG"
+  ],
+  "methods": [
+    "Cross-scale prediction module",
+    "Weighted prediction mechanism",
+    "Multi-stage quantization strategy"
+  ],
+  "results": [
+    "Competes with H.266/VVC in sRGB PSNR on UVG dataset for low-latency mode"
+  ],
+  "paper_id": "61ca80355244ab9dcba697da",
+  "title": "Learning Cross-Scale Weighted Prediction for Efficient Neural Video\n  Compression",
+  "abstract": "  Neural video codecs have demonstrated great potential in video transmission and storage applications. Existing neural hybrid video coding approaches rely on optical flow or Gaussian-scale flow for prediction, which cannot support fine-grained adaptation to diverse motion content. Towards more content-adaptive prediction, we propose a novel cross-scale prediction module that achieves more effective motion compensation. Specifically, on the one hand, we produce a reference feature pyramid as prediction sources and then transmit cross-scale flows that leverage the feature scale to control the precision of prediction. On the other hand, for the first time, a weighted prediction mechanism is introduced even if only a single reference frame is available, which can help synthesize a fine prediction result by transmitting cross-scale weight maps. In addition to the cross-scale prediction module, we further propose a multi-stage quantization strategy, which improves the rate-distortion performance with no extra computational penalty during inference. We show the encouraging performance of our efficient neural video codec (ENVC) on several benchmark datasets. In particular, the proposed ENVC can compete with the latest coding standard H.266/VVC in terms of sRGB PSNR on UVG dataset for the low-latency mode. We also analyze in detail the effectiveness of the cross-scale prediction module in handling various video content, and provide a comprehensive ablation study to analyze those important components. Test code is available at https://github.com/USTC-IMCL/ENVC . "
+}

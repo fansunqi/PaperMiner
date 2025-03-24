@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Domain Recommendation"
+  ],
+  "datasets": [
+    "Taobao application datasets",
+    "public MDR benchmark datasets"
+  ],
+  "methods": [
+    "MAMDR",
+    "Domain Negotiation (DN)",
+    "Domain Regularization (DR)"
+  ],
+  "results": [
+    "Effectiveness and generalizability demonstrated on benchmark and industry datasets"
+  ],
+  "paper_id": "621c3d205aee126c0fe7e001",
+  "title": "MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation",
+  "abstract": "  Large-scale e-commercial platforms in the real-world usually contain various recommendation scenarios (domains) to meet demands of diverse customer groups. Multi-Domain Recommendation (MDR), which aims to jointly improve recommendations on all domains and easily scales to thousands of domains, has attracted increasing attention from practitioners and researchers. Existing MDR methods usually employ a shared structure and several specific components to respectively leverage reusable features and domain-specific information. However, data distribution differs across domains, making it challenging to develop a general model that can be applied to all circumstances. Additionally, during training, shared parameters often suffer from the domain conflict while specific parameters are inclined to overfitting on data sparsity domains. we first present a scalable MDR platform served in Taobao that enables to provide services for thousands of domains without specialists involved. To address the problems of MDR methods, we propose a novel model agnostic learning framework, namely MAMDR, for the multi-domain recommendation. Specifically, we first propose a Domain Negotiation (DN) strategy to alleviate the conflict between domains. Then, we develop a Domain Regularization (DR) to improve the generalizability of specific parameters by learning from other domains. We integrate these components into a unified framework and present MAMDR, which can be applied to any model structure to perform multi-domain recommendation. Finally, we present a large-scale implementation of MAMDR in the Taobao application and construct various public MDR benchmark datasets which can be used for following studies. Extensive experiments on both benchmark datasets and industry datasets demonstrate the effectiveness and generalizability of MAMDR. "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "matching-based market design",
+    "addressing deficiencies in models using cardinal utilities"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nash-bargaining-based matching market models",
+    "Frank-Wolfe algorithm",
+    "Cutting Plane algorithm",
+    "lower bounding schemes"
+  ],
+  "results": [
+    "efficient computation for large instances with thousands of agents and goods",
+    "solves one-sided and two-sided markets",
+    "handles various utility functions",
+    "fast implementations on PC",
+    "improved convergence and fairness properties"
+  ],
+  "paper_id": "60acc63e91e011a8376734d8",
+  "title": "Nash-Bargaining-Based Models for Matching Markets: One-Sided and\n  Two-Sided; Fisher and Arrow-Debreu",
+  "abstract": "  This paper addresses two deficiencies of models in the area of matching-based market design. The first arises from the recent realization that the most prominent solution that uses cardinal utilities, namely the Hylland-Zeckhauser (HZ) mechanism, is intractable; computation of even an approximate equilibrium is PPAD-complete. The second is the extreme paucity of models that use cardinal utilities. Our paper addresses both these issues by proposing Nash-bargaining-based matching market models. Since the Nash bargaining solution is captured by a convex program, efficiency follows. In addition, it possesses several desirable game-theoretic properties. Our approach yields a rich collection of models: for one-sided as well as two-sided markets, for Fisher as well as Arrow-Debreu settings, and for a wide range of utility functions, all the way from linear to Leontief. We give very fast implementations for these models using Frank-Wolfe and Cutting Plane algorithms. These help solve large instances with several thousand agents and goods in a matter of minutes on a PC, even for a one-sided matching market under piecewise-linear concave utility functions and a two-sided matching market under linear utility functions. In contrast, using HZ, going beyond even $n = 10$ is prohibitive. Several new ideas were needed, beyond the standard methods, to obtain these implementations. In particular, we present several lower bounding schemes, which not only help improve the convergence of our solution methods but also shed light on fairness properties of the Nash-bargaining-based models. "
+}

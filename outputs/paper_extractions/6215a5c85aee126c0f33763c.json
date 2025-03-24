@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fast eye detection"
+  ],
+  "datasets": [
+    "NIR partial face images"
+  ],
+  "methods": [
+    "Siamese network",
+    "coarse to fine position estimation",
+    "fast lightweight CNN backbone"
+  ],
+  "results": [
+    "superior performance in speed",
+    "high discrimination performance between left and right eyes",
+    "high positional accuracy of eye center"
+  ],
+  "paper_id": "6215a5c85aee126c0f33763c",
+  "title": "Fast Eye Detector Using Siamese Network for NIR Partial Face Images",
+  "abstract": "  This paper proposes a fast eye detection method that is based on a Siamese network for near infrared (NIR) partial face images. NIR partial face images do not include the whole face of a subject since they are captured using iris recognition systems with the constraint of frame rate and resolution. The iris recognition systems such as the iris on the move (IOTM) system require fast and accurate eye detection as a pre-process. Our goal is to design eye detection with high speed, high discrimination performance between left and right eyes, and high positional accuracy of eye center. Our method adopts a Siamese network and coarse to fine position estimation with a fast lightweight CNN backbone. The network outputs features of images and the similarity map indicating coarse position of an eye. A regression on a portion of a feature with high similarity refines the coarse position of the eye to obtain the fine position with high accuracy. We demonstrate the effectiveness of the proposed method by comparing it with conventional methods, including SOTA, in terms of the positional accuracy, the discrimination performance, and the processing speed. Our method achieves superior performance in speed. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Interpreting Deep Reinforcement Learning Agents"
+  ],
+  "datasets": [
+    "Atari 2600 suite"
+  ],
+  "methods": [
+    "Region-sensitive Rainbow (RS-Rainbow)",
+    "Attention module for visualizing important regions"
+  ],
+  "results": [
+    "Improves model interpretability and performance"
+  ],
+  "paper_id": "5c615f3fe1cd8eae1501ae3c",
+  "title": "Learn to Interpret Atari Agents",
+  "abstract": "  Deep reinforcement learning (DeepRL) agents surpass human-level performance in many tasks. However, the direct mapping from states to actions makes it hard to interpret the rationale behind the decision-making of the agents. In contrast to previous a-posteriori methods for visualizing DeepRL policies, in this work, we propose to equip the DeepRL model with an innate visualization ability. Our proposed agent, named region-sensitive Rainbow (RS-Rainbow), is an end-to-end trainable network based on the original Rainbow, a powerful deep Q-network agent. It learns important regions in the input domain via an attention module. At inference time, after each forward pass, we can visualize regions that are most important to decision-making by backpropagating gradients from the attention module to the input frames. The incorporation of our proposed module not only improves model interpretability, but leads to performance improvement. Extensive experiments on games from the Atari 2600 suite demonstrate the effectiveness of RS-Rainbow. "
+}

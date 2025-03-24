@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-world Retinal Diseases Recognition"
+  ],
+  "datasets": [
+    "four databases including two public datasets and two in-house databases with more than one million fundus images"
+  ],
+  "methods": [
+    "hierarchy-aware pre-training",
+    "instance-wise class-balanced sampling strategy",
+    "hybrid knowledge distillation"
+  ],
+  "results": [
+    "recognition accuracy outperforming the state-of-the-art competitors",
+    "superiority for rare diseases"
+  ],
+  "paper_id": "619715f85244ab9dcb185200",
+  "title": "Hierarchical Knowledge Guided Learning for Real-world Retinal Diseases\n  Recognition",
+  "abstract": "  In the real world, medical datasets often exhibit a long-tailed data distribution (i.e., a few classes occupy the majority of the data, while most classes have only a limited number of samples), which results in a challenging long-tailed learning scenario. Some recently published datasets in ophthalmology AI consist of more than 40 kinds of retinal diseases with complex abnormalities and variable morbidity. Nevertheless, more than 30 conditions are rarely seen in global patient cohorts. From a modeling perspective, most deep learning models trained on these datasets may lack the ability to generalize to rare diseases where only a few available samples are presented for training. In addition, there may be more than one disease for the presence of the retina, resulting in a challenging label co-occurrence scenario, also known as \\textit{multi-label}, which can cause problems when some re-sampling strategies are applied during training. To address the above two major challenges, this paper presents a novel method that enables the deep neural network to learn from a long-tailed fundus database for various retinal disease recognition. Firstly, we exploit the prior knowledge in ophthalmology to improve the feature representation using a hierarchy-aware pre-training. Secondly, we adopt an instance-wise class-balanced sampling strategy to address the label co-occurrence issue under the long-tailed medical dataset scenario. Thirdly, we introduce a novel hybrid knowledge distillation to train a less biased representation and classifier. We conducted extensive experiments on four databases, including two public datasets and two in-house databases with more than one million fundus images. The experimental results demonstrate the superiority of our proposed methods with recognition accuracy outperforming the state-of-the-art competitors, especially for these rare diseases. "
+}

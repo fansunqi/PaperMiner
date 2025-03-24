@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic worst-case performance estimation for decentralized optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Performance Estimation Problem (PEP)",
+    "Two formulations for representing consensus steps in PEPs: exact and relaxation"
+  ],
+  "results": [
+    "Numerically tight worst-case performance bounds",
+    "Significant improvement over existing bounds",
+    "Insights about parameter tuning and worst communication networks"
+  ],
+  "paper_id": "622eb2495aee126c0f62b257",
+  "title": "Automatic Performance Estimation for Decentralized Optimization",
+  "abstract": "  We present a methodology to automatically compute worst-case performance bounds for a large class of first-order decentralized optimization algorithms. These algorithms aim at minimizing the average of local functions that are distributed across a network of agents. They typically combine local computations and consensus steps. Our methodology is based on the approach of Performance Estimation Problem (PEP), which allows computing the worst-case performance and a worst-case instance of first-order optimization algorithms by solving an SDP. We propose two ways of representing consensus steps in PEPs, which allow writing and solving PEPs for decentralized optimization. The first formulation is exact but specific to a given averaging matrix. The second formulation is a relaxation but provides guarantees valid over an entire class of averaging matrices, characterized by their spectral range. This formulation often allows recovering a posteriori the worst possible averaging matrix for the given algorithm. We apply our methodology to three different decentralized methods. For each of them, we obtain numerically tight worst-case performance bounds that significantly improve on the existing ones, as well as insights about the parameters tuning and the worst communication networks. "
+}

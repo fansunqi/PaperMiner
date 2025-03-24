@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/zhangqianhui/Sawn"
+  ],
+  "tasks": [
+    "Controllable person image generation",
+    "Pose-transfer",
+    "Texture-transfer"
+  ],
+  "datasets": [
+    "DeepFashion"
+  ],
+  "methods": [
+    "Spatially-Adaptive Warped Normalization (SAWN)",
+    "Self-Training Part Replacement (STPR)"
+  ],
+  "results": [
+    "Significant improvement over state-of-the-art methods on pose-transfer and texture-transfer tasks"
+  ],
+  "paper_id": "60b6f50991e011903fc2ba92",
+  "title": "Controllable Person Image Synthesis with Spatially-Adaptive Warped\n  Normalization",
+  "abstract": "  Controllable person image generation aims to produce realistic human images with desirable attributes such as a given pose, cloth textures, or hairstyles. However, the large spatial misalignment between source and target images makes the standard image-to-image translation architectures unsuitable for this task. Most state-of-the-art methods focus on alignment for global pose-transfer tasks. However, they fail to deal with region-specific texture-transfer tasks, especially for person images with complex textures. To solve this problem, we propose a novel Spatially-Adaptive Warped Normalization (SAWN) which integrates a learned flow-field to warp modulation parameters. It allows us to efficiently align person spatially-adaptive styles with pose features. Moreover, we propose a novel Self-Training Part Replacement (STPR) strategy to refine the model for the texture-transfer task, which improves the quality of the generated clothes and the preservation ability of non-target regions. Our experimental results on the widely used DeepFashion dataset demonstrate a significant improvement of the proposed method over the state-of-the-art methods on pose-transfer and texture-transfer tasks. The code is available at https://github.com/zhangqianhui/Sawn. "
+}

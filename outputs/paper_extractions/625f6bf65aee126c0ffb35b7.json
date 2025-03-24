@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Domain adaptive semantic segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semantic-Guided Pixel Contrast (SePiCo)",
+    "Centroid-aware pixel contrast",
+    "Distribution-aware pixel contrast"
+  ],
+  "results": [
+    "Stabilizes training",
+    "Yields discriminative representations",
+    "Significant progress on synthetic-to-real and daytime-to-nighttime adaptation scenarios"
+  ],
+  "paper_id": "625f6bf65aee126c0ffb35b7",
+  "title": "SePiCo: Semantic-Guided Pixel Contrast for Domain Adaptive Semantic\n  Segmentation",
+  "abstract": "  Domain adaptive semantic segmentation attempts to make satisfactory dense predictions on an unlabeled target domain by utilizing the supervised model trained on a labeled source domain. In this work, we propose Semantic-Guided Pixel Contrast (SePiCo), a novel one-stage adaptation framework that highlights the semantic concepts of individual pixels to promote learning of class-discriminative and class-balanced pixel representations across domains, eventually boosting the performance of self-training methods. Specifically, to explore proper semantic concepts, we first investigate a centroid-aware pixel contrast that employs the category centroids of the entire source domain or a single source image to guide the learning of discriminative features. Considering the possible lack of category diversity in semantic concepts, we then blaze a trail of distributional perspective to involve a sufficient quantity of instances, namely distribution-aware pixel contrast, in which we approximate the true distribution of each semantic category from the statistics of labeled source data. Moreover, such an optimization objective can derive a closed-form upper bound by implicitly involving an infinite number of (dis)similar pairs, making it computationally efficient. Extensive experiments show that SePiCo not only helps stabilize training but also yields discriminative representations, making significant progress on both synthetic-to-real and daytime-to-nighttime adaptation scenarios. "
+}

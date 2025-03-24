@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Novel View Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Radiance Field (NeRF)",
+    "2D Image Generative Model for Image Completion",
+    "Subset Selection via Maximum Weight Independent Set Problem",
+    "Simulated Annealing for Subset Selection"
+  ],
+  "results": [
+    "Synthesizes plausible novel views",
+    "Preserves scene features for artificial and real-world data"
+  ],
+  "paper_id": "6237ecc35aee126c0f3bf105",
+  "title": "Enhancement of Novel View Synthesis Using Omnidirectional Image\n  Completion",
+  "abstract": "  In this study, we present a method for synthesizing novel views from a single 360-degree RGB-D image based on the neural radiance field (NeRF) . Prior studies relied on the neighborhood interpolation capability of multi-layer perceptrons to complete missing regions caused by occlusion and zooming, which leads to artifacts. In the method proposed in this study, the input image is reprojected to 360-degree RGB images at other camera positions, the missing regions of the reprojected images are completed by a 2D image generative model, and the completed images are utilized to train the NeRF. Because multiple completed images contain inconsistencies in 3D, we introduce a method to learn the NeRF model using a subset of completed images that cover the target scene with less overlap of completed regions. The selection of such a subset of images can be attributed to the maximum weight independent set problem, which is solved through simulated annealing. Experiments demonstrated that the proposed method can synthesize plausible novel views while preserving the features of the scene for both artificial and real-world data. "
+}

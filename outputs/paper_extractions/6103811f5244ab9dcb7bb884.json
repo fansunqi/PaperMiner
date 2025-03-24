@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Rate-Independent Computation in Chemical Reaction Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reachability relation based on variable reaction rates",
+    "Stable computation analogous to probability 1 computation",
+    "Rate-independent computation based on convergence under generalized rate laws",
+    "Dual-rail representation for negative values"
+  ],
+  "results": [
+    "A function is rate-independently computable if it is piecewise linear (with rational coefficients) and continuous (dual-rail representation)",
+    "Non-negative functions with discontinuities only at zero to positive input switches (direct representation)",
+    "Demonstrates potential of rate-independent chemical computation"
+  ],
+  "paper_id": "6103811f5244ab9dcb7bb884",
+  "title": "Rate-Independent Computation in Continuous Chemical Reaction Networks",
+  "abstract": "  Coupled chemical interactions in a well-mixed solution are commonly formalized as chemical reaction networks (CRNs). However, despite the widespread use of CRNs in the natural sciences, the range of computational behaviors exhibited by CRNs is not well understood. Here we study the following problem: what functions $f:\\mathbb{R}^k \\to \\mathbb{R}$ can be computed by a CRN, in which the CRN eventually produces the correct amount of the \"output\" molecule, no matter the rate at which reactions proceed? This captures a previously unexplored, but very natural class of computations: for example, the reaction $X_1 + X_2 \\to Y$ can be thought to compute the function $y = \\min(x_1, x_2)$. Such a CRN is robust in the sense that it is correct no matter the kinetic model of chemistry, so long as it respects the stoichiometric constraints.   We develop a reachability relation based on \"what could happen\" if reaction rates can vary arbitrarily over time. We define *stable computation* analogously to probability 1 computation in distributed computing, and connect it with a seemingly stronger notion of rate-independent computation based on convergence under a wide class of generalized rate laws. We also consider the \"dual-rail representation\" that can represent negative values as the difference of two concentrations and allows the composition of CRN modules. We prove that a function is rate-independently computable if and only if it is piecewise linear (with rational coefficients) and continuous (dual-rail representation), or non-negative with discontinuities occurring only when some inputs switch from zero to positive (direct representation). The many contexts where continuous piecewise linear functions are powerful targets for implementation, combined with the systematic construction we develop for computing these functions, demonstrate the potential of rate-independent chemical computation. "
+}

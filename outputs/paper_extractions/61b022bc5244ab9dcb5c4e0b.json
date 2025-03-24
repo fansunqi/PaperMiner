@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generalization gap estimation for overparameterized models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Langevin functional variance",
+    "Langevin approximation of the functional variance (Langevin FV)"
+  ],
+  "results": [
+    "Demonstrated Langevin FV by estimating generalization gaps of overparameterized linear regression and non-linear neural network models"
+  ],
+  "paper_id": "61b022bc5244ab9dcb5c4e0b",
+  "title": "A generalization gap estimation for overparameterized models via the\n  Langevin functional variance",
+  "abstract": "  This paper discusses the estimation of the generalization gap, the difference between generalization performance and training performance, for overparameterized models including neural networks. We first show that a functional variance, a key concept in defining a widely-applicable information criterion, characterizes the generalization gap even in overparameterized settings where a conventional theory cannot be applied. As the computational cost of the functional variance is expensive for the overparameterized models, we propose an efficient approximation of the function variance, the Langevin approximation of the functional variance (Langevin FV). This method leverages only the $1$st-order gradient of the squared loss function, without referencing the $2$nd-order gradient; this ensures that the computation is efficient and the implementation is consistent with gradient-based optimization algorithms. We demonstrate the Langevin FV numerically by estimating the generalization gaps of overparameterized linear regression and non-linear neural network models, containing more than a thousand of parameters therein. "
+}

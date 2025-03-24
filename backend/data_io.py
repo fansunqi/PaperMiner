@@ -29,13 +29,16 @@ def read_json_file(file_path):
         print(f"An error occurred: {e}")
 
 def read_all_meta_data():
+    base_path = "/share_data/paper"
     arxiv_file_path_list = ['meta_data/arxiv.json', 'meta_data/arxiv2.json']
     json_file_path_list = ['meta_data/CCF.json', 'meta_data/CCF2.json', 'meta_data/SCI.json', 'meta_data/SCI2.json']
 
     data = []
     for file_path in arxiv_file_path_list:
+        file_path = f"{base_path}/{file_path}"
         data += read_json_lines_for_arxiv(file_path)
     for file_path in json_file_path_list:
+        file_path = f"{base_path}/{file_path}"
         data += read_json_file(file_path)
     return data
 

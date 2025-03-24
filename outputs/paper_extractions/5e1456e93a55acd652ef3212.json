@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Inverse problems in imaging"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mathematical framework for hallucinations, instability, and unpredictable generalization",
+    "No free lunch theorems",
+    "Kernel analysis of forward operator"
+  ],
+  "results": [
+    "Methods overperforming on single images can create hallucinations",
+    "Methods overperforming on multiple images can hallucinate or be unstable",
+    "Optimizing accuracy-stability trade-off is difficult",
+    "Hallucinations and instabilities are not rare and may be encouraged by standard training",
+    "Impossible to construct optimal reconstruction maps for certain problems",
+    "Standard reliability methods may lead to unstable problems"
+  ],
+  "paper_id": "5e1456e93a55acd652ef3212",
+  "title": "The troublesome kernel -- On hallucinations, no free lunches and the\n  accuracy-stability trade-off in inverse problems",
+  "abstract": "  Methods inspired by Artificial Intelligence (AI) are starting to fundamentally change computational science and engineering through breakthrough performances on challenging problems. However, reliability and trustworthiness of such techniques is becoming a major concern. In inverse problems in imaging, the focus of this paper, there is increasing empirical evidence that methods may suffer from hallucinations, i.e., false, but realistic-looking artifacts; instability, i.e., sensitivity to perturbations in the data; and unpredictable generalization, i.e., excellent performance on some images, but significant deterioration on others. This paper presents a theoretical foundation for these phenomena. We give a mathematical framework describing how and when such effects arise in arbitrary reconstruction methods, not just AI-inspired techniques. Several of our results take the form of 'no free lunch' theorems. Specifically, we show that (i) methods that overperform on a single image can wrongly transfer details from one image to another, creating a hallucination, (ii) methods that overperform on two or more images can hallucinate or be unstable, (iii) optimizing the accuracy-stability trade-off is generally difficult, (iv) hallucinations and instabilities, if they occur, are not rare events, and may be encouraged by standard training, (v) it may be impossible to construct optimal reconstruction maps for certain problems, (vi) standard methods to improve reliability (e.g., regularization or adversarial training) may themselves lead to unstable problems. Our results trace these effects to the kernel of the forwards operator. They assert that such effects can be avoided only if information about the kernel is encoded into the reconstruction procedure. Based on this, this work aims to spur research into new ways to develop robust and reliable AI-inspired methods for inverse problems in imaging. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep metric learning",
+    "Facial identity discrimination"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unsupervised clustering",
+    "Intra class sub-discrimination",
+    "Extra class sub-discrimination"
+  ],
+  "results": [
+    "Intra class: 90.0% accuracy for beards, 76.0% for glasses",
+    "Extra class: 99.3% accuracy for gender, 99.3% for skin tone, 94.1% for age"
+  ],
+  "paper_id": "602111e891e0113bfb1dc604",
+  "title": "Feature Representation in Deep Metric Embeddings",
+  "abstract": "  In deep metric learning (DML), high-level input data are represented in a lower-level representation (embedding) space, such that samples from the same class are mapped close together, while samples from disparate classes are mapped further apart. In this lower-level representation, only a single inference sample from each known class is required to discriminate between classes accurately. The features a DML model uses to discriminate between classes and the importance of each feature in the training process are unknown. To investigate this, this study takes embeddings trained to discriminate faces (identities) and uses unsupervised clustering to identify the features involved in facial identity discrimination by examining their representation within the embedded space. This study is split into two cases; intra class sub-discrimination, where attributes that differ between a single identity are considered; such as beards and emotions; and extra class sub-discrimination, where attributes which differ between different identities/people, are considered; such as gender, skin tone and age. In the intra class scenario, the inference process distinguishes common attributes between single identities, achieving 90.0\\% and 76.0\\% accuracy for beards and glasses, respectively. The system can also perform extra class sub-discrimination with a high accuracy rate, notably 99.3\\%, 99.3\\% and 94.1\\% for gender, skin tone, and age, respectively. "
+}

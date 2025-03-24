@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Measuring the Deployment of Source Address Validation of Inbound Traffic"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Internet-wide active measurement study",
+    "Identify closed and open DNS resolvers",
+    "Spoofing technique"
+  ],
+  "results": [
+    "Cover over 55% IPv4 and 27% IPv6 Autonomous Systems",
+    "Great majority of AS are fully or partially vulnerable to inbound spoofing",
+    "13.9K IPv6 open resolvers for amplification DDoS attacks",
+    "4.25M IPv4 and 103K IPv6 vulnerable closed resolvers detected"
+  ],
+  "paper_id": "5ee3526a91e011cb3bff71a5",
+  "title": "The Closed Resolver Project: Measuring the Deployment of Source Address\n  Validation of Inbound Traffic",
+  "abstract": "  Source Address Validation (SAV) is a standard aimed at discarding packets with spoofed source IP addresses. The absence of SAV for outgoing traffic has been known as a root cause of Distributed Denial-of-Service (DDoS) attacks and received widespread attention. While less obvious, the absence of inbound filtering enables an attacker to appear as an internal host of a network and may reveal valuable information about the network infrastructure. Inbound IP spoofing may amplify other attack vectors such as DNS cache poisoning or the recently discovered NXNSAttack. In this paper, we present the preliminary results of the Closed Resolver Project that aims at mitigating the problem of inbound IP spoofing. We perform the first Internet-wide active measurement study to enumerate networks that filter or do not filter incoming packets by their source address, for both the IPv4 and IPv6 address spaces. To achieve this, we identify closed and open DNS resolvers that accept spoofed requests coming from the outside of their network. The proposed method provides the most complete picture of inbound SAV deployment by network providers. Our measurements cover over 55 % IPv4 and 27 % IPv6 Autonomous Systems (AS) and reveal that the great majority of them are fully or partially vulnerable to inbound spoofing. By identifying dual-stacked DNS resolvers, we additionally show that inbound filtering is less often deployed for IPv6 than it is for IPv4. Overall, we discover 13.9 K IPv6 open resolvers that can be exploited for amplification DDoS attacks - 13 times more than previous work. Furthermore, we enumerate uncover 4.25 M IPv4 and 103 K IPv6 vulnerable closed resolvers that could only be detected thanks to our spoofing technique, and that pose a significant threat when combined with the NXNSAttack. "
+}

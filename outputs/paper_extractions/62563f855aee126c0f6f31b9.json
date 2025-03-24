@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reliable Image Outpainting"
+  ],
+  "datasets": [
+    "KITTI",
+    "Waymo"
+  ],
+  "methods": [
+    "Depth-Guided Outpainting Network",
+    "Multimodal Learning Module",
+    "Depth Guidance Fusion Module",
+    "Cross-modal Loss and Edge Loss"
+  ],
+  "results": [
+    "Superiority over the state-of-the-art method",
+    "Quantitative and qualitative improvements"
+  ],
+  "paper_id": "62563f855aee126c0f6f31b9",
+  "title": "Towards Reliable Image Outpainting: Learning Structure-Aware Multimodal\n  Fusion with Depth Guidance",
+  "abstract": "  Image outpainting technology generates visually plausible content regardless of authenticity, making it unreliable to be applied in practice. Thus, we propose a reliable image outpainting task, introducing the sparse depth from LiDARs to extrapolate authentic RGB scenes. The large field view of LiDARs allows it to serve for data enhancement and further multimodal tasks. Concretely, we propose a Depth-Guided Outpainting Network to model different feature representations of two modalities and learn the structure-aware cross-modal fusion. And two components are designed: 1) The Multimodal Learning Module produces unique depth and RGB feature representations from the perspectives of different modal characteristics. 2) The Depth Guidance Fusion Module leverages the complete depth modality to guide the establishment of RGB contents by progressive multimodal feature fusion. Furthermore, we specially design an additional constraint strategy consisting of Cross-modal Loss and Edge Loss to enhance ambiguous contours and expedite reliable content generation. Extensive experiments on KITTI and Waymo datasets demonstrate our superiority over the state-of-the-art method, quantitatively and qualitatively. "
+}

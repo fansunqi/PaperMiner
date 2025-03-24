@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "On-device reinforcement learning"
+  ],
+  "datasets": [
+    "OpenAI Gym"
+  ],
+  "methods": [
+    "FPGA-based DQN",
+    "OS-ELM (Online Sequential Extreme Learning Machine)",
+    "L2 regularization and spectral normalization"
+  ],
+  "results": [
+    "Completes CartPole-v0 task 29.77x faster than conventional DQN-based approach with 64 hidden-layer nodes",
+    "FPGA implementation completes CartPole-v0 task 89.40x faster than conventional DQN-based approach with 64 hidden-layer nodes"
+  ],
+  "paper_id": "5eba73be91e01108d77cf761",
+  "title": "An FPGA-Based On-Device Reinforcement Learning Approach using Online\n  Sequential Learning",
+  "abstract": "  DQN (Deep Q-Network) is a method to perform Q-learning for reinforcement learning using deep neural networks. DQNs require a large buffer and batch processing for an experience replay and rely on a backpropagation based iterative optimization, making them difficult to be implemented on resource-limited edge devices. In this paper, we propose a lightweight on-device reinforcement learning approach for low-cost FPGA devices. It exploits a recently proposed neural-network based on-device learning approach that does not rely on the backpropagation method but uses OS-ELM (Online Sequential Extreme Learning Machine) based training algorithm. In addition, we propose a combination of L2 regularization and spectral normalization for the on-device reinforcement learning so that output values of the neural network can be fit into a certain range and the reinforcement learning becomes stable. The proposed reinforcement learning approach is designed for PYNQ-Z1 board as a low-cost FPGA platform. The evaluation results using OpenAI Gym demonstrate that the proposed algorithm and its FPGA implementation complete a CartPole-v0 task 29.77x and 89.40x faster than a conventional DQN-based approach when the number of hidden-layer nodes is 64. "
+}

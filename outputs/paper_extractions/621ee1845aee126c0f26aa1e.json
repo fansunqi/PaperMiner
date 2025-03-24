@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous Covering on Networks",
+    "Set-Covering Location Problem"
+  ],
+  "datasets": [
+    "Real-world networks",
+    "Random networks"
+  ],
+  "methods": [
+    "Mixed Integer Linear Programming formulation (MILP)",
+    "Preprocessing algorithm",
+    "Tight big-$M$ constants",
+    "Valid inequalities",
+    "Second MILP for edges' lengths greater than the covering radius"
+  ],
+  "results": [
+    "Strengths and limitations of the exact approach on both real-world and random networks",
+    "Formulations tested against an existing exact method"
+  ],
+  "paper_id": "621ee1845aee126c0f26aa1e",
+  "title": "Continuous Covering on Networks: Improved Mixed Integer Programming\n  Formulations",
+  "abstract": "  Covering problems are well-studied in the domain of Operations Research, and, more specifically, in Location Science. When the location space is a network, the most frequent assumption is to consider the candidate facility locations, the points to be covered, or both, to be discrete sets. In this work, we study the set-covering location problem when both candidate locations and demand points are continuous sets on a network. This variant has received little attention, and the scarce existing approaches have focused on particular cases, such as tree networks and integer covering radius. Here we study the general problem and present a Mixed Integer Linear Programming formulation (MILP) for networks with edges' lengths no greater than the covering radius. The model does not lose generality, as any edge not satisfying this condition can be partitioned into subedges of appropriate lengths without changing the problem. We propose a preprocessing algorithm to reduce the size of the MILP, and devise tight big-$M$ constants and valid inequalities to strengthen our formulations. Moreover, a second MILP is proposed, which admits edges' lengths greater than the covering radius. As opposed to existing formulations of the problem (including the first MILP proposed herein), the number of variables and constraints of this second model does not depend on the lengths of the network's edges. This second model represents a scalable approach that particularly suits real-world networks, whose edges are usually greater than the covering radius. Our computational experiments show the strengths and limitations of our exact approach on both real-world and random networks. Our formulations are also tested against an existing exact method. "
+}

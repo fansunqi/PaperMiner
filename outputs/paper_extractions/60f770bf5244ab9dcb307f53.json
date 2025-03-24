@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differentially Private Bayesian Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DP-SGLD (noisy gradient method)",
+    "DP-BBP (changing parameters of interest)",
+    "DP-MC Dropout (model architecture)"
+  ],
+  "results": [
+    "DP-SGLD is remarkably accurate under strong privacy guarantee",
+    "New tradeoff between privacy and reliability observed"
+  ],
+  "paper_id": "60f770bf5244ab9dcb307f53",
+  "title": "Differentially Private Bayesian Neural Networks on Accuracy, Privacy and\n  Reliability",
+  "abstract": "  Bayesian neural network (BNN) allows for uncertainty quantification in prediction, offering an advantage over regular neural networks that has not been explored in the differential privacy (DP) framework. We fill this important gap by leveraging recent development in Bayesian deep learning and privacy accounting to offer a more precise analysis of the trade-off between privacy and accuracy in BNN. We propose three DP-BNNs that characterize the weight uncertainty for the same network architecture in distinct ways, namely DP-SGLD (via the noisy gradient method), DP-BBP (via changing the parameters of interest) and DP-MC Dropout (via the model architecture). Interestingly, we show a new equivalence between DP-SGD and DP-SGLD, implying that some non-Bayesian DP training naturally allows for uncertainty quantification. However, the hyperparameters such as learning rate and batch size, can have different or even opposite effects in DP-SGD and DP-SGLD.   Extensive experiments are conducted to compare DP-BNNs, in terms of privacy guarantee, prediction accuracy, uncertainty quantification, calibration, computation speed, and generalizability to network architecture. As a result, we observe a new tradeoff between the privacy and the reliability. When compared to non-DP and non-Bayesian approaches, DP-SGLD is remarkably accurate under strong privacy guarantee, demonstrating the great potential of DP-BNN in real-world tasks. "
+}

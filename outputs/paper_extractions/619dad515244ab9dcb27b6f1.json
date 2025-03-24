@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://educateddip.github.io/docs.educated_deep_image_prior/"
+  ],
+  "tasks": [
+    "Deep image prior-based micro CT reconstruction"
+  ],
+  "datasets": [
+    "simulated dataset",
+    "real-measured 2D and 3D micro computed tomography data of biological specimens"
+  ],
+  "methods": [
+    "two-stage learning paradigm",
+    "supervised pretraining",
+    "fine-tuning"
+  ],
+  "results": [
+    "pretraining speeds up and stabilizes reconstruction"
+  ],
+  "paper_id": "619dad515244ab9dcb27b6f1",
+  "title": "An Educated Warm Start For Deep Image Prior-Based Micro CT\n  Reconstruction",
+  "abstract": "  Deep image prior (DIP) was recently introduced as an effective unsupervised approach for image restoration tasks. DIP represents the image to be recovered as the output of a deep convolutional neural network, and learns the network's parameters such that the output matches the corrupted observation. Despite its impressive reconstructive properties, the approach is slow when compared to supervisedly learned, or traditional reconstruction techniques. To address the computational challenge, we bestow DIP with a two-stage learning paradigm: (i) perform a supervised pretraining of the network on a simulated dataset; (ii) fine-tune the network's parameters to adapt to the target reconstruction task. We provide a thorough empirical analysis to shed insights into the impacts of pretraining in the context of image reconstruction. We showcase that pretraining considerably speeds up and stabilizes the subsequent reconstruction task from real-measured 2D and 3D micro computed tomography data of biological specimens. The code and additional experimental materials are available at https://educateddip.github.io/docs.educated_deep_image_prior/. "
+}

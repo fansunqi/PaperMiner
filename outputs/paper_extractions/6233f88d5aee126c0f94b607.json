@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D object recognition",
+    "Object part reasoning",
+    "Part-based object completion"
+  ],
+  "datasets": [
+    "ScanNet"
+  ],
+  "methods": [
+    "Neural Part Priors (NPPs)",
+    "Optimizable spaces for geometric part priors",
+    "Global optimization over geometrically similar objects"
+  ],
+  "results": [
+    "NPPs significantly outperforms state of the art in part decomposition and object completion in real-world scenes"
+  ],
+  "paper_id": "6233f88d5aee126c0f94b607",
+  "title": "Neural Part Priors: Learning to Optimize Part-Based Object Completion in\n  RGB-D Scans",
+  "abstract": "  3D object recognition has seen significant advances in recent years, showing impressive performance on real-world 3D scan benchmarks, but lacking in object part reasoning, which is fundamental to higher-level scene understanding such as inter-object similarities or object functionality. Thus, we propose to leverage large-scale synthetic datasets of 3D shapes annotated with part information to learn Neural Part Priors (NPPs), optimizable spaces characterizing geometric part priors. Crucially, we can optimize over the learned part priors in order to fit to real-world scanned 3D scenes at test time, enabling robust part decomposition of the real objects in these scenes that also estimates the complete geometry of the object while fitting accurately to the observed real geometry. Moreover, this enables global optimization over geometrically similar detected objects in a scene, which often share strong geometric commonalities, enabling scene-consistent part decompositions. Experiments on the ScanNet dataset demonstrate that NPPs significantly outperforms state of the art in part decomposition and object completion in real-world scenes. "
+}

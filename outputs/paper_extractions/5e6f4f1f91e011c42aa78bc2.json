@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning Mean-Field Games",
+    "Simultaneous learning and decision-making in stochastic games"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GMFG framework",
+    "Value-based RL (GMF-V)",
+    "Policy-based RL (GMF-P)",
+    "GMF-V-Q",
+    "GMF-P-TRPO"
+  ],
+  "results": [
+    "GMF-V-Q and GMF-P-TRPO are efficient and robust",
+    "Superior in convergence speed, accuracy, and stability compared to existing multi-agent RL algorithms"
+  ],
+  "paper_id": "5e6f4f1f91e011c42aa78bc2",
+  "title": "A General Framework for Learning Mean-Field Games",
+  "abstract": "  This paper presents a general mean-field game (GMFG) framework for simultaneous learning and decision-making in stochastic games with a large population. It first establishes the existence of a unique Nash Equilibrium to this GMFG, and demonstrates that naively combining reinforcement learning with the fixed-point approach in classical MFGs yields unstable algorithms. It then proposes value-based and policy-based reinforcement learning algorithms (GMF-V and GMF-P, respectively) with smoothed policies, with analysis of their convergence properties and computational complexities. Experiments on an equilibrium product pricing problem demonstrate that GMF-V-Q and GMF-P-TRPO, two specific instantiations of GMF-V and GMF-P, respectively, with Q-learning and TRPO, are both efficient and robust in the GMFG setting. Moreover, their performance is superior in convergence speed, accuracy, and stability when compared with existing algorithms for multi-agent reinforcement learning in the $N$-player setting. "
+}

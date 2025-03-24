@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Graph classification under Local Differential Privacy"
+  ],
+  "datasets": [
+    "four social graph datasets"
+  ],
+  "methods": [
+    "Degree-Preserving Randomized Response (DPRR)",
+    "Warner's Randomized Response",
+    "strategic edge sampling"
+  ],
+  "results": [
+    "DPRR significantly outperforms three baselines",
+    "accuracy close to a non-private algorithm with epsilon=1"
+  ],
+  "paper_id": "621454545aee126c0f203466",
+  "title": "Degree-Preserving Randomized Response for Graph Neural Networks under\n  Local Differential Privacy",
+  "abstract": "  Differentially private GNNs (Graph Neural Networks) have been recently studied to provide high accuracy in various tasks on graph data while strongly protecting user privacy. In particular, a recent study proposes an algorithm to protect each user's feature vector in an attributed graph with LDP (Local Differential Privacy), a strong privacy notion without a trusted third party. However, this algorithm does not protect edges (friendships) in a social graph or protect user privacy in unattributed graphs. How to strongly protect edges with high accuracy in GNNs remains open.   In this paper, we propose a novel LDP algorithm called the DPRR (Degree-Preserving Randomized Response) to provide LDP for edges in GNNs. Our DPRR preserves each user's degree hence a graph structure while providing edge LDP. Technically, we use Warner's RR (Randomized Response) and strategic edge sampling, where each user's sampling probability is automatically tuned to preserve the degree information. We prove that the DPRR approximately preserves the degree information under edge LDP. We focus on graph classification as a task of GNNs and evaluate the DPRR using four social graph datasets. Our experimental results show that the DPRR significantly outperforms three baselines and provides accuracy close to a non-private algorithm in all datasets with a reasonable privacy budget, e.g., epsilon=1. "
+}

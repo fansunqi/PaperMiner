@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient Wireless Federated Learning"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Partial Model Aggregation (PMA)",
+    "Lyapunov optimization for joint device scheduling and resource management",
+    "Bisection method for optimal bandwidth allocation",
+    "Set expansion algorithm for device scheduling"
+  ],
+  "results": [
+    "PMA-FL improves 3.13% accuracy on MNIST",
+    "PMA-FL improves 11.8% accuracy on CIFAR-10",
+    "29% energy or 20% time reduction on MNIST",
+    "25% energy or 12.5% time reduction on CIFAR-10"
+  ],
+  "paper_id": "62620f1c5aee126c0f686b69",
+  "title": "Efficient Wireless Federated Learning with Partial Model Aggregation",
+  "abstract": "  The data heterogeneity across devices and the limited communication resources, e.g., bandwidth and energy, are two of the main bottlenecks for wireless federated learning (FL). To tackle these challenges, we first devise a novel FL framework with partial model aggregation (PMA). This approach aggregates the lower layers of neural networks, responsible for feature extraction, at the parameter server while keeping the upper layers, responsible for complex pattern recognition, at devices for personalization. The proposed PMA-FL is able to address the data heterogeneity and reduce the transmitted information in wireless channels. Then, we derive a convergence bound of the framework under a non-convex loss function setting to reveal the role of unbalanced data size in the learning performance. On this basis, we maximize the scheduled data size to minimize the global loss function through jointly optimize the device scheduling, bandwidth allocation, computation and communication time division policies with the assistance of Lyapunov optimization. Our analysis reveals that the optimal time division is achieved when the communication and computation parts of PMA-FL have the same power. We also develop a bisection method to solve the optimal bandwidth allocation policy and use the set expansion algorithm to address the device scheduling policy. Compared with the benchmark schemes, the proposed PMA-FL improves 3.13\\% and 11.8\\% accuracy on two typical datasets with heterogeneous data distribution settings, i.e., MINIST and CIFAR-10, respectively. In addition, the proposed joint dynamic device scheduling and resource management approach achieve slightly higher accuracy than the considered benchmarks, but they provide a satisfactory energy and time reduction: 29\\% energy or 20\\% time reduction on the MNIST; and 25\\% energy or 12.5\\% time reduction on the CIFAR-10. "
+}

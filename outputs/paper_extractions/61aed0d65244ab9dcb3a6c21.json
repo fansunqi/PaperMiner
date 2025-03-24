@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generalized Deep Learning"
+  ],
+  "datasets": [
+    "MLPerf benchmark suite"
+  ],
+  "methods": [
+    "Violet architecture",
+    "Multicore SIMD",
+    "Balanced responsibilities for data orchestration, movement, work placement, and coverage"
+  ],
+  "results": [
+    "Geo-mean 2.4X/10.6X performance/efficiency for inference",
+    "Geo-mean 2.1X/9.5X performance/efficiency for training compared to NVIDIA A100 GPU"
+  ],
+  "paper_id": "61aed0d65244ab9dcb3a6c21",
+  "title": "Violet: Architecturally Exposed Orchestration, Movement, and Placement\n  for Generalized Deep Learning",
+  "abstract": "  Deep learning and hardware for it has garnered immense academic and industry interest in the past 5 years, with many novel proposals. However, the state-of-art remains NVIDIA's TensorCore-based systems that provide top-of-line performance and coverage across a wide-spectrum of deep learning applications. In this paper, we first identify four key problems any new DL solution must solve: 1) Data orchestration, 2) Data movement, 3) Work placement and blending these to achieve 4) Coverage across different types of DL applications. With this as a guide, we propose Violet, a novel architecture with roots in multicore SIMD which balances the responsibilities for these four problems between the architecture, microarchitecture and software stack. Compared to the NVIDIA A100 GPU, we find Violet achieves geo-mean 2.4X/10.6X and 2.1X/9.5X performance/efficiency for inference and training across the MLPerf benchmark suite. We present detailed operator-level analysis of the MLPerf benchmark suite, extracting out key behaviors - with implications for architecture research beyond this paper, that underpin the speedup and efficiency. Overall, this paper motivates the importance of balance, that the break down of responsibilities must be thought through carefully in order to compete with incumbent architecture designs. "
+}

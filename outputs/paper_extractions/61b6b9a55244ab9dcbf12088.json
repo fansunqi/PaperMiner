@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Knowledge Distillation for Contrastive Sentence Embeddings"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DistilCSE",
+    "Contrastive Knowledge Distillation (CKD)",
+    "InfoNCE loss"
+  ],
+  "results": [
+    "Little or no performance decrease in student models",
+    "110M student model outperforms Sentence-T5 (11B) with 1% parameters and 0.25% unlabeled data"
+  ],
+  "paper_id": "61b6b9a55244ab9dcbf12088",
+  "title": "DistilCSE: Effective Knowledge Distillation For Contrastive Sentence\n  Embeddings",
+  "abstract": "  Large-scale contrastive learning models can learn very informative sentence embeddings, but are hard to serve online due to the huge model size. Therefore, they often play the role of \"teacher\", transferring abilities to small \"student\" models through knowledge distillation. However, knowledge distillation inevitably brings some drop in embedding effect. To tackle that, we propose an effective knowledge distillation framework for contrastive sentence embeddings, termed DistilCSE. It first applies knowledge distillation on a large amount of unlabeled data, and then fine-tunes student models through contrastive learning on limited labeled data. To achieve better distillation results, we further propose Contrastive Knowledge Distillation (CKD). CKD uses InfoNCE as the loss function in knowledge distillation, enhancing the objective consistency among teacher model training, knowledge distillation, and student model fine-tuning. Extensive experiments show that student models trained with the proposed DistilCSE and CKD suffer from little or even no performance decrease and consistently outperform the corresponding counterparts of the same parameter size. Impressively, our 110M student model outperforms the latest state-of-the-art model, i.e., Sentence-T5 (11B), with only 1% parameters and 0.25% unlabeled data. "
+}

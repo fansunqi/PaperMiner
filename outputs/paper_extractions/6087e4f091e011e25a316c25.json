@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient Binary Decision Diagram Manipulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Iterative I/O-efficient algorithms for BDD Reduce and Apply procedures",
+    "Extension to other common BDD operations",
+    "Asymptotic improvements for Apply-derived procedures",
+    "Implementation in Adiar BDD package"
+  ],
+  "results": [
+    "1.47 to 3.69 times slower than CUDD and Sylvan for instances > 8.2 GiB",
+    "Performance achieved with fraction of main memory needed by conventional BDD packages",
+    "Ability to manipulate BDDs that outgrow main memory"
+  ],
+  "paper_id": "6087e4f091e011e25a316c25",
+  "title": "Efficient Binary Decision Diagram Manipulation in External Memory",
+  "abstract": "  We follow up on the idea of Lars Arge to rephrase the Reduce and Apply procedures of Binary Decision Diagrams (BDDs) as iterative I/O-efficient algorithms. We identify multiple avenues to simplify and improve the performance of his proposed algorithms. Furthermore, we extend the technique to other common BDD operations, many of which are not derivable using Apply operations alone, and we provide asymptotic improvements for the procedures that can be derived using Apply.   These algorithms are implemented in a new BDD package, named Adiar. We see very promising results when comparing the performance of Adiar with conventional BDD packages that use recursive depth-first algorithms. For instances larger than 8.2 GiB, our algorithms, in parts using the disk, are 1.47 to 3.69 times slower compared to CUDD and Sylvan, exclusively using main memory. Yet, our proposed techniques are able to obtain this performance at a fraction of the main memory needed by conventional BDD packages to function. Furthermore, with Adiar we are able to manipulate BDDs that outgrow main memory and so surpass the limits of other BDD packages. "
+}

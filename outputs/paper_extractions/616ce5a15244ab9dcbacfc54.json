@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Texture Debiasing",
+    "Domain Adaptation",
+    "Image Translation"
+  ],
+  "datasets": [
+    "Five classification datasets",
+    "Two segmentation datasets"
+  ],
+  "methods": [
+    "Texture Co-occurrence Loss",
+    "Spatial Self-Similarity Loss",
+    "Image Translation Framework"
+  ],
+  "results": [
+    "Significant improvements over recent state-of-the-art methods in all cases"
+  ],
+  "paper_id": "616ce5a15244ab9dcbacfc54",
+  "title": "Content Preserving Image Translation with Texture Co-occurrence and\n  Spatial Self-Similarity for Texture Debiasing and Domain Adaptation",
+  "abstract": "  Models trained on datasets with texture bias usually perform poorly on out-of-distribution samples since biased representations are embedded into the model. Recently, various image translation and debiasing methods have attempted to disentangle texture biased representations for downstream tasks, but accurately discarding biased features without altering other relevant information is still challenging. In this paper, we propose a novel framework that leverages image translation to generate additional training images using the content of a source image and the texture of a target image with a different bias property to explicitly mitigate texture bias when training a model on a target task. Our model ensures texture similarity between the target and generated images via a texture co-occurrence loss while preserving content details from source images with a spatial self-similarity loss. Both the generated and original training images are combined to train improved classification or segmentation models robust to inconsistent texture bias. Evaluation on five classification- and two segmentation-datasets with known texture biases demonstrates the utility of our method, and reports significant improvements over recent state-of-the-art methods in all cases. "
+}

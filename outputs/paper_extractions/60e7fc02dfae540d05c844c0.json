@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Persistent algorithms and data structures design"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bcomb",
+    "PBcomb",
+    "PWFcomb"
+  ],
+  "results": [
+    "PBcomb and PWFcomb outperform state-of-the-art recoverable universal constructions and transactional memory systems",
+    "Recoverable queues and stacks based on PBcomb and PWFcomb have better performance than previous implementations",
+    "First recoverable implementation of a concurrent heap shows good performance for non-very large heaps"
+  ],
+  "paper_id": "60e7fc02dfae540d05c844c0",
+  "title": "Persistent Software Combining",
+  "abstract": "  We study the performance power of software combining in designing persistent algorithms and data structures. We present Bcomb, a new blocking highly-efficient combining protocol, and built upon it to get PBcomb, a persistent version of it that performs a small number of persistence instructions and exhibits low synchronization cost. We built fundamental recoverable data structures, such as stacks and queues based on PBcomb, as well as on PWFcomb, a wait-free universal construction we present. Our experiments show that PBcomb and PWFcomb outperform by far state-of-the-art recoverable universal constructions and transactional memory systems, many of which ensure weaker consistency properties than our algorithms. We built recoverable queues and stacks, based on PBcomb and PWFcomb, and present experiments to show that they have much better performance than previous recoverable implementations of stacks and queues. We build the first recoverable implementation of a concurrent heap and present experiments to show that it has good performance when the size of the heap is not very large. "
+}

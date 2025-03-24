@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning temporal task specifications from expert demonstrations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Demonstration Informed Specification Search (DISS)",
+    "Maximum entropy planner",
+    "Task sampler"
+  ],
+  "results": [
+    "DISS efficiently identifies tasks from only one or two expert demonstrations"
+  ],
+  "paper_id": "61c2974b5244ab9dcbcf1b23",
+  "title": "Demonstration Informed Specification Search",
+  "abstract": "  This paper considers the problem of learning temporal task specifications, e.g. automata and temporal logic, from expert demonstrations. Task specifications are a class of sparse memory augmented rewards with explicit support for temporal and Boolean composition. Three features make learning temporal task specifications difficult: (1) the (countably) infinite number of tasks under consideration; (2) an a-priori ignorance of what memory is needed to encode the task; and (3) the discrete solution space - typically addressed by (brute force) enumeration. To overcome these hurdles, we propose Demonstration Informed Specification Search (DISS): a family of algorithms requiring only black box access to a maximum entropy planner and a task sampler from labeled examples. DISS then works by alternating between conjecturing labeled examples to make the provided demonstrations less surprising and sampling tasks consistent with the conjectured labeled examples. We provide a concrete implementation of DISS in the context of tasks described by Deterministic Finite Automata, and show that DISS is able to efficiently identify tasks from only one or two expert demonstrations. "
+}

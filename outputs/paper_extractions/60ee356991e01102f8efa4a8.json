@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous-time multi-arm bandit problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Establish lower bounds on regret",
+    "Propose algorithms achieving lower bound up to logarithmic factors",
+    "Algorithm for single-arm case",
+    "Algorithm for multiple arms case"
+  ],
+  "results": [
+    "Single-arm regret lower bound: \u03a9((log T)^2/\u03bc)",
+    "Multiple arms regret lower bound: \u03a9((log T)^2 \u03bc/\u0394^2)",
+    "Algorithm achieves bound up to constant terms"
+  ],
+  "paper_id": "60ee356991e01102f8efa4a8",
+  "title": "Continuous Time Bandits With Sampling Costs",
+  "abstract": "  We consider a continuous-time multi-arm bandit problem (CTMAB), where the learner can sample arms any number of times in a given interval and obtain a random reward from each sample, however, increasing the frequency of sampling incurs an additive penalty/cost. Thus, there is a tradeoff between obtaining large reward and incurring sampling cost as a function of the sampling frequency. The goal is to design a learning algorithm that minimizes regret, that is defined as the difference of the payoff of the oracle policy and that of the learning algorithm. CTMAB is fundamentally different than the usual multi-arm bandit problem (MAB), e.g., even the single-arm case is non-trivial in CTMAB, since the optimal sampling frequency depends on the mean of the arm, which needs to be estimated. We first establish lower bounds on the regret achievable with any algorithm and then propose algorithms that achieve the lower bound up to logarithmic factors. For the single-arm case, we show that the lower bound on the regret is $\\Omega((\\log T)^2/\\mu)$, where $\\mu$ is the mean of the arm, and $T$ is the time horizon. For the multiple arms case, we show that the lower bound on the regret is $\\Omega((\\log T)^2 \\mu/\\Delta^2)$, where $\\mu$ now represents the mean of the best arm, and $\\Delta$ is the difference of the mean of the best and the second-best arm. We then propose an algorithm that achieves the bound up to constant terms. "
+}

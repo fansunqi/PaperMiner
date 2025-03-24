@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "COVID-19 Fake News Detection"
+  ],
+  "datasets": [
+    "existing COVID-19 fake news dataset"
+  ],
+  "methods": [
+    "Transformer-based language model fine-tuning",
+    "Token vocabulary expansion",
+    "Heated-up softmax loss",
+    "Adversarial training",
+    "Feature fusion with RoBERTa and CT-BERT"
+  ],
+  "results": [
+    "Superior performances compared to state-of-the-art methods",
+    "Best weighted average F1 score: 99.02%"
+  ],
+  "paper_id": "6001663d91e01163e836a3a8",
+  "title": "Transformer-based Language Model Fine-tuning Methods for COVID-19 Fake\n  News Detection",
+  "abstract": "  With the pandemic of COVID-19, relevant fake news is spreading all over the sky throughout the social media. Believing in them without discrimination can cause great trouble to people's life. However, universal language models may perform weakly in these fake news detection for lack of large-scale annotated data and sufficient semantic understanding of domain-specific knowledge. While the model trained on corresponding corpora is also mediocre for insufficient learning. In this paper, we propose a novel transformer-based language model fine-tuning approach for these fake news detection. First, the token vocabulary of individual model is expanded for the actual semantics of professional phrases. Second, we adapt the heated-up softmax loss to distinguish the hard-mining samples, which are common for fake news because of the disambiguation of short text. Then, we involve adversarial training to improve the model's robustness. Last, the predicted features extracted by universal language model RoBERTa and domain-specific model CT-BERT are fused by one multiple layer perception to integrate fine-grained and high-level specific representations. Quantitative experimental results evaluated on existing COVID-19 fake news dataset show its superior performances compared to the state-of-the-art methods among various evaluation metrics. Furthermore, the best weighted average F1 score achieves 99.02%. "
+}

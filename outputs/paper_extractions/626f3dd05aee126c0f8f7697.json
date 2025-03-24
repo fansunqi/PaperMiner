@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/joeljang/temporalwiki"
+  ],
+  "tasks": [
+    "Training and evaluating ever-evolving language models",
+    "Assessing adaptability of LMs to frequently-updated knowledge"
+  ],
+  "datasets": [
+    "TemporalWiki",
+    "English Wikipedia",
+    "English Wikidata"
+  ],
+  "methods": [
+    "Continual learning on diff data"
+  ],
+  "results": [
+    "Similar or better perplexity with 12 times less computational cost compared to training on entire snapshot"
+  ],
+  "paper_id": "626f3dd05aee126c0f8f7697",
+  "title": "TemporalWiki: A Lifelong Benchmark for Training and Evaluating\n  Ever-Evolving Language Models",
+  "abstract": "  Language Models (LMs) become outdated as the world changes; they often fail to perform tasks requiring recent factual information which was absent or different during training, a phenomenon called temporal misalignment. This is especially a challenging problem because the research community still lacks a coherent dataset for assessing the adaptability of LMs to frequently-updated knowledge corpus such as Wikipedia. To this end, we introduce TemporalWiki, a lifelong benchmark for ever-evolving LMs that utilizes the difference between consecutive snapshots of English Wikipedia and English Wikidata for training and evaluation, respectively. The benchmark hence allows researchers to periodically track an LM's ability to retain previous knowledge and acquire updated/new knowledge at each point in time. We also find that training an LM on the diff data through continual learning methods achieves similar or better perplexity than on the entire snapshot in our benchmark with 12 times less computational cost, which verifies that factual knowledge in LMs can be safely updated with minimal training data via continual learning. The dataset and the code are available at https://github.com/joeljang/temporalwiki. "
+}
