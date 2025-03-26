@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from pymongo import MongoClient
 import requests
 import os
@@ -26,8 +26,6 @@ GLM_API_URL = "https://open.bigmodel.cn/api/fileqa"
 GLM_API_KEY = os.getenv("GLM_API_KEY")
 
 # 加载 JSON 数据
-# with open("../outputs/paper_extractions/all_results.json", "r", encoding="utf-8") as f:
-#     papers_data = json.load(f)
 OUTPUT_META_DATA_PATH = "../outputs/meta"
 
 def load_meta_data(directory):
@@ -43,7 +41,6 @@ def load_meta_data(directory):
 
 meta_data = load_meta_data(OUTPUT_META_DATA_PATH)
 
- 
 with open("../outputs/pdf/all_results.json", "r", encoding="utf-8") as f:
     pdf_data = json.load(f)
 
@@ -53,11 +50,43 @@ def read_root():
     return {"message": "FastAPI 运行成功！"}
 
 @app.get("/papers/")
-def get_papers():
-    """返回所有论文数据"""
-    return meta_data
+def get_papers(page: int = Query(1, ge=1), page_size: int = Query(10, ge=1)):
+    """
+    返回分页后的论文数据
+    - page: 当前页码，从 1 开始
+    - page_size: 每页返回的论文数量
+    """
+    start_index = (page - 1) * page_size
+    end_index = start_index + page_size
+    paginated_data = meta_data[start_index:end_index]
+
+    if not paginated_data:
+        raise HTTPException(status_code=404, detail="没有更多数据")
+
+    return {
+        "page": page,
+        "page_size": page_size,
+        "total": len(meta_data),
+        "data": paginated_data
+    }
 
 @app.get("/pdf-papers/")
-def get_pdf_papers():
-    """返回所有 PDF 论文数据"""
-    return pdf_data
+def get_pdf_papers(page: int = Query(1, ge=1), page_size: int = Query(10, ge=1)):
+    """
+    返回分页后的 PDF 论文数据
+    - page: 当前页码，从 1 开始
+    - page_size: 每页返回的论文数量
+    """
+    start_index = (page - 1) * page_size
+    end_index = start_index + page_size
+    paginated_data = pdf_data[start_index:end_index]
+
+    if not paginated_data:
+        raise HTTPException(status_code=404, detail="没有更多数据")
+
+    return {
+        "page": page,
+        "page_size": page_size,
+        "total": len(pdf_data),
+        "data": paginated_data
+    }
