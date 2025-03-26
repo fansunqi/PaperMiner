@@ -42,8 +42,7 @@ if example:
         "tasks": {json.dumps(example.get('Tasks', ['None']), ensure_ascii=False)},
         "datasets": {json.dumps(example.get('Datasets', ['None']), ensure_ascii=False)},
         "methods": {json.dumps(example.get('Methods', ['None']), ensure_ascii=False)},
-        "results": {json.dumps(example.get('Results', ['None']), ensure_ascii=False)},
-        "abstract": {json.dumps(example.get('abstract', ['None']), ensure_ascii=False)}
+        "results": {json.dumps(example.get('Results', ['None']), ensure_ascii=False)}
     }}
     """
 
@@ -75,15 +74,13 @@ def extract_paper_info(file_path):
         3. Datasets: 使用的数据集，例如 "ImageNet", "COCO"
         4. Methods: 使用的方法/技术，例如 "Transformer", "RLHF"
         5. Results: 关键结果和指标，例如 "BLEU: 56.7"
-        6. Abstract: 论文摘要，请直接提取论文原本摘要，不要修改
 
         请使用简洁的术语或短语回答，不要有冗余描述。如果某一项信息不存在，请标记为"None"。
         以JSON格式返回结果，确保每个字段都是列表形式。
         """
     
         response = client.chat.completions.create(
-            # model="glm-4-long", 
-            model="glm-4-flash",  
+            model="glm-4-long",  
             messages=[
                 {"role": "user", "content": message_content}
             ],
@@ -107,7 +104,6 @@ def extract_paper_info(file_path):
                     "datasets": ["None"],
                     "methods": ["None"],
                     "results": ["None"],
-                    "abstract": ["None"],
                     "raw_response": content
                 }
         except json.JSONDecodeError:
@@ -118,7 +114,6 @@ def extract_paper_info(file_path):
                 "datasets": ["None"],
                 "methods": ["None"],
                 "results": ["None"],
-                "abstract": ["None"],
                 "raw_response": content
             }
             
@@ -131,7 +126,6 @@ def extract_paper_info(file_path):
             "datasets": ["None"], 
             "methods": ["None"],
             "results": ["None"],
-            "abstract": ["None"],
             "error": str(e)
         }
 
@@ -162,7 +156,7 @@ def main():
         
         pdf_path = os.path.join(pdf_base_dir, pdf_file)
 
-        # abstract = extract_abstract_from_pdf(pdf_path)
+        abstract = extract_abstract_from_pdf(pdf_path)
 
         # if not abstract:
         #     print(f"Skipping paper {pdf_file} due to missing abstract")
@@ -171,7 +165,7 @@ def main():
 
         info = extract_paper_info(pdf_path)
         info["title"] = pdf_file
-        # info["abstract"] = abstract
+        info["abstract"] = abstract
 
         # 保存结果
         output_file = os.path.join(output_dir, f"{pdf_file}.json")
