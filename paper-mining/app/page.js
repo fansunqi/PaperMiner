@@ -80,6 +80,72 @@ export default function Home() {
     }
   };
 
+  // 生成分页按钮
+  const renderPagination = () => {
+    const totalPages = Math.ceil(total / pageSize);
+    const pagination = [];
+
+    if (totalPages <= 5) {
+      // 如果总页数小于等于 5，显示所有页码
+      for (let i = 1; i <= totalPages; i++) {
+        pagination.push(
+          <button
+            key={i}
+            onClick={() => handlePageChange(i)}
+            className={`px-3 py-1 rounded-md ${page === i ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"} transition duration-200`}
+          >
+            {i}
+          </button>
+        );
+      }
+    } else {
+      // 如果总页数大于 5，显示部分页码
+      if (page > 2) {
+        pagination.push(
+          <button
+            key={1}
+            onClick={() => handlePageChange(1)}
+            className="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-200"
+          >
+            1
+          </button>
+        );
+        if (page > 3) {
+          pagination.push(<span key="start-ellipsis" className="px-3 py-1">...</span>);
+        }
+      }
+
+      for (let i = Math.max(1, page - 1); i <= Math.min(page + 1, totalPages); i++) {
+        pagination.push(
+          <button
+            key={i}
+            onClick={() => handlePageChange(i)}
+            className={`px-3 py-1 rounded-md ${page === i ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"} transition duration-200`}
+          >
+            {i}
+          </button>
+        );
+      }
+
+      if (page < totalPages - 1) {
+        if (page < totalPages - 2) {
+          pagination.push(<span key="end-ellipsis" className="px-3 py-1">...</span>);
+        }
+        pagination.push(
+          <button
+            key={totalPages}
+            onClick={() => handlePageChange(totalPages)}
+            className="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300 transition duration-200"
+          >
+            {totalPages}
+          </button>
+        );
+      }
+    }
+
+    return pagination;
+  };
+
   return (
     <MathJaxContext config={{ tex: { displayMath: [["$$", "$$"]], inlineMath: [["$", "$"]] } }}>
       <div className="container mx-auto px-6 py-12">
@@ -200,15 +266,7 @@ export default function Home() {
 
           {/* 页号显示 */}
           <div className="flex space-x-2">
-            {Array.from({ length: Math.ceil(total / pageSize) }, (_, index) => (
-              <button
-                key={index + 1}
-                onClick={() => handlePageChange(index + 1)}
-                className={`px-3 py-1 rounded-md ${page === index + 1 ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"} transition duration-200`}
-              >
-                {index + 1}
-              </button>
-            ))}
+            {renderPagination()}
           </div>
 
           <button
