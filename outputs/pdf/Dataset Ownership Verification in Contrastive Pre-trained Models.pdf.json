@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/xieyc99/DOV4CL"
+  ],
+  "tasks": [
+    "Dataset ownership verification"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "CIFAR100",
+    "SVHN",
+    "ImageNette",
+    "ImageWoof",
+    "ImageNet"
+  ],
+  "methods": [
+    "Contrastive learning",
+    "Contrastive relationship gap",
+    "Multi-scale augmentation"
+  ],
+  "results": [
+    "p-value < 0.05",
+    "Sensitivity: 1.0",
+    "Specificity: 1.0",
+    "AUROC: 1.0"
+  ],
+  "title": "Dataset Ownership Verification in Contrastive Pre-trained Models.pdf",
+  "abstract": "High-quality open-source datasets, which necessitate substantial efforts for curation, has become the primary catalyst for the swift progress of deep learning. Concur- rently, protecting these datasets is paramount for the well-being of the data owner. Dataset ownership verification emerges as a crucial method in this domain, but existing approaches are often limited to supervised models and cannot be directly extended to increasingly popular unsupervised pre-trained models. In this work, we propose the first dataset ownership verification method tailored specifically for self-supervised pre-trained models by contrastive learning. Its primary objective is to ascertain whether a suspicious black-box backbone has been pre-trained on a specific unlabeled dataset, aiding dataset owners in upholding their rights. The proposed approach is motivated by our empirical insights that when models are trained with the target dataset, the unary and binary instance relationships within the embedding space exhibit significant variations compared to models trained without the target dataset. We validate the efficacy of this approach across multiple contrastive pre-trained models including SimCLR, BYOL, SimSiam, MOCO v3, and DINO. The results demonstrate that our method rejects the null hypothesis with a p-value markedly below 0.05, surpassing all previous methodologies. Our code is available at https://github.com/xieyc99/DOV4CL. 1 INTRODUCTION The success of deep learning is greatly dependent on the the availability of high-quality open-source datasets, which empower researchers and developers to train and test their models and algorithms. Presently, the majority of public datasets Deng et al. (2009); Krizhevsky et al. (2009); Netzer et al. (2011) are designated exclusively for academic purposes, with commercial use prohibited without explicit permission. Therefore, preventing the stealing of public datasets holds significant importance for the benefit of the data owners. Numerous traditional techniques exist for data security, including encryption Boneh & Franklin (2001); Khamitkar, differential privacy Dwork (2006); Abadi et al. (2016), and digital watermark- ing Cox et al. (2002); Podilchuk & Delp (2001); Kadian et al. (2021). However, these methods fall short in protecting the copyrights of open-source datasets, as they either impede dataset accessibility or necessitate the knowledge of the training process of potentially suspicious models. Recently, dataset ownership verification (DOV) Guo et al. (2023); Li et al. (2022; 2023b) emerges as a novel defense measure to deter dataset theft. It allows defenders, i.e., dataset owners, to demonstrate whether suspects have infringed upon their rights by ascertaining whether a suspicious black-box backbone has been pre-trained on their datasets. However, as most existing DOV techniques are designed solely for supervised models where verification relies on distances between data points and decision boundaries Li et al. (2018); Karimi et al. (2019); Karimi & Tang (2020), they are not directly applicable to recently increasing popular self-supervised pre-trained models Chen et al. (2020); Chen & He (2021); Chen et al. (2021a) due to the absence of the well-defined decision boundaries. \u2217Corresponding authors. 1 arXiv:2502.07276v1 [cs.LG] 11 Feb 2025"
+}

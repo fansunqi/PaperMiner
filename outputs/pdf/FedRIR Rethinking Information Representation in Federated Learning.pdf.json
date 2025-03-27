@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/Deep-Imaging-Group/FedRIR"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "FMNIST",
+    "Cifar10",
+    "MNIST",
+    "Cifar100",
+    "OfficeCaltech10",
+    "DomainNet"
+  ],
+  "methods": [
+    "Masked Client-Specific Learning",
+    "Information Distillation",
+    "Variational Autoencoder",
+    "Variational Contrastive Log-ratio Upper Bound"
+  ],
+  "results": [
+    "Accuracy improvement up to 3.93%",
+    "Scalability with varying client participation",
+    "Stability in client dropout scenarios"
+  ],
+  "title": "FedRIR Rethinking Information Representation in Federated Learning.pdf",
+  "abstract": "Mobile and Web-of-Things (WoT) devices at the network edge gen- erate vast amounts of data for machine learning applications, yet pri- vacy concerns hinder centralized model training. Federated Learn- ing (FL) allows clients (devices) to collaboratively train a shared model coordinated by a central server without transfer private data, but inherent statistical heterogeneity among clients presents challenges, often leading to a dilemma between clients\u2019 needs for personalized local models and the server\u2019s goal of building a gener- alized global model. Existing FL methods typically prioritize either global generalization or local personalization, resulting in a trade- off between these two objectives and limiting the full potential of diverse client data. To address this challenge, we propose a novel framework that simultaneously enhances global generalization and local personalization by Rethinking Information Representation in the Federated learning process (FedRIR). Specifically, we in- troduce Masked Client-Specific Learning (MCSL), which isolates and extracts fine-grained client-specific features tailored to each client\u2019s unique data characteristics, thereby enhancing personal- ization. Concurrently, the Information Distillation Module (IDM) refines the global shared features by filtering out redundant client- specific information, resulting in a purer and more robust global rep- resentation that enhances generalization. By integrating the refined global features with the isolated client-specific features, we con- struct enriched representations that effectively capture both global patterns and local nuances, thereby improving the performance of downstream tasks on the client. Extensive experiments across diverse datasets demonstrate that FedRIR significantly outperforms Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WWW \u201925, Sydney, NSW, Australia \u00a9 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-1274-6/25/04 https://doi.org/10.1145/3696410.3714612 state-of-the-art FL methods, achieving up to a 3.93% improvement in accuracy while ensuring robustness and stability in heterogeneous environments. The code is available at https://github.com/Deep- Imaging-Group/FedRIR. CCS Concepts \u2022 Computing methodologies \u2192Machine learning; Distributed algorithms; \u2022 Human-centered computing \u2192Ubiquitous and mobile computing. Keywords Federated Learning, Information Representation, Information Dis- tillation, Masked Representation Learning ACM Reference Format: Yongqiang Huang, Zerui Shao, Ziyuan Yang, Zexin Lu, and Yi Zhang. 2025. FedRIR: Rethinking Information Representation in Federated Learning. In Proceedings of the ACM Web Conference 2025 (WWW \u201925), April 28-May 2, 2025, Sydney, NSW, Australia. ACM, New York, NY, USA, 10 pages. https: //doi.org/10.1145/3696410.3714612 1 Introduction Mobile and Web-of-Things (WoT) devices at the network edge now generate massive amounts of data daily [9, 39], which recent ad- vancements in deep learning have demonstrated to be crucial for achieving high performance in data-driven models [8, 10, 21]. How- ever, data at individual clients is often scarce and biased, making it challenging to build accurate and robust models [4, 11]. Aggregat- ing data from multiple clients into a centralized dataset might seem like a natural solution, but privacy and security concerns associated with sharing sensitive data across clients significantly hinder this approach [17, 31]. Federated Learning (FL) offers a promising solution to these challenges by enabling collaborative model training across multiple clients without the need to transfer local data [30, 38]. In FL, each client retains its private data and trains a local model, sharing only model parameters with a central server. This approach addresses privacy concerns while leveraging collective data to improve overall arXiv:2502.00859v1 [cs.LG] 2 Feb 2025"
+}

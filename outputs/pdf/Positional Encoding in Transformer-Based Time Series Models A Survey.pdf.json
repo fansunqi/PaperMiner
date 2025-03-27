@@ -1,0 +1,45 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Time Series Analysis",
+    "Time Series Classification",
+    "Forecasting",
+    "Anomaly Detection"
+  ],
+  "datasets": [
+    "Sleep",
+    "ElectricDevices",
+    "FaceDetection",
+    "MelbournePedestrian",
+    "SharePriceIncrease",
+    "LSST",
+    "RacketSports",
+    "SelfRegulationSCP1",
+    "UniMiB-SHAR",
+    "RoomOccupancy",
+    "EMGGestures"
+  ],
+  "methods": [
+    "Transformer",
+    "Self-Attention",
+    "Positional Encoding",
+    "Absolute Positional Encoding",
+    "Learnable Positional Encoding",
+    "Relative Positional Encoding",
+    "Hybrid Positional Encoding",
+    "Time-Absolute Positional Encoding",
+    "Efficient Relative Position Encoding",
+    "Transformer with Untied Positional Encoding",
+    "Convolutional Sinusoidal Positional Encoding",
+    "Temporal Positional Encoding"
+  ],
+  "results": [
+    "Advanced methods like SPE and TUPE consistently outperform traditional approaches",
+    "Performance gains of advanced methods become more pronounced with sequence length",
+    "SPE excels in handling regular sampling patterns and clear temporal structures"
+  ],
+  "title": "Positional Encoding in Transformer-Based Time Series Models A Survey.pdf",
+  "abstract": "Recent advancements in transformer-based models have greatly improved time series analysis, provid- ing robust solutions for tasks such as forecasting, anomaly detection, and classification. A crucial el- ement of these models is positional encoding, which allows transformers to capture the intrinsic sequential nature of time series data. This survey systematically examines existing techniques for positional encoding in transformer-based time series models. We inves- tigate a variety of methods, including fixed, learn- able, relative, and hybrid approaches, and evaluate their effectiveness in different time series classifica- tion tasks. Furthermore, we outline key challenges and suggest potential research directions to enhance positional encoding strategies. By delivering a com- prehensive overview and quantitative benchmarking, this survey intends to assist researchers and practi- tioners in selecting and designing effective positional encoding methods for transformer-based time series models. The source code for the methods and ex- periments discussed in this survey is available on GitHub1. 1 Introduction Time series analysis, which involves studying data collected over sequential time intervals, is funda- mental across a wide range of domains such as fi- nance, healthcare, and climate science. Traditional approaches, such as Autoregressive Integrated Mov- ing Average (ARIMA) and Seasonal Decomposition of Time Series (STL), have long been the founda- tion of statistical time series analysis. However, these models are inherently limited in their ability to cap- 1https://github.com/imics-lab/ positional-encoding-benchmark ture non-linear and long-range dependencies. As a result, machine learning-based approaches, particu- larly Recurrent Neural Networks (RNNs) and Convo- lutional Neural Networks (CNNs), have gained popu- larity due to their ability to model complex temporal dynamics [4, 24]. RNNs, including their more advanced variants like Long Short-Term Memory (LSTM) and Gated Recur- rent Units (GRU), excel at modeling sequential data by maintaining a hidden state that captures informa- tion from previous time steps. These architectures offer several advantages for time series analysis: they naturally handle irregular time intervals and miss- ing data points through their sequential processing, excel at capturing local temporal patterns through their recurrent connections, and exhibit a beneficial \u201drecency bias\u201d where recent time steps are weighted more heavily than distant ones\u2014a characteristic par- ticularly valuable in applications like financial fore- casting and weather prediction. However, RNNs suf- fer from inherent limitations such as vanishing and exploding gradients, making it difficult to learn de- pendencies over long time horizons [22]. CNNs, on the other hand, have been adapted for time series by applying convolutional filters over the temporal dimension. While effective at capturing lo- cal patterns, their fixed receptive fields limit their ability to model long-term dependencies [20]. More- over, like RNNs, they may struggle with captur- ing global patterns and relationships between distant time steps. In recent years, Transformer-based models, origi- nally developed for natural language processing tasks, have shown remarkable promise in addressing these challenges for time series data [23, 28]. Transform- ers leverage a self-attention mechanism that enables them to capture both local and global dependencies in data without relying on sequential processing [12]. 1 arXiv:2502.12370v1 [cs.LG] 17 Feb 2025"
+}

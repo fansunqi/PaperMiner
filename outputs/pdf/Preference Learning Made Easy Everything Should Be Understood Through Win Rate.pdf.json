@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Preference learning"
+  ],
+  "datasets": [
+    "OpenAssistant",
+    "Anthropic Helpfulness and Harmlessness"
+  ],
+  "methods": [
+    "Win Rate Optimization (WRO)",
+    "Direct Preference Optimization (DPO)",
+    "Supervised Fine-Tuning (SFT)",
+    "RLHF",
+    "NLHF"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Preference Learning Made Easy Everything Should Be Understood Through Win Rate.pdf",
+  "abstract": "Preference learning, or the task of aligning genera- tive models to preference comparison data, has yet to reach the conceptual maturity of classification, density estimation, etc. To close this gap, this work presents a framework to understand prefer- ence learning starting from the sampling distribu- tion of pairwise preference data. First, we prove that the only evaluation of a generative model that respects both preferences and prevalences in the data distribution is a form of win rate, justifying win rate as the focal point to understand prefer- ence learning. We then analyze preference learn- ing methods as win rate optimization (WRO) or non-WRO. We present novel instances of WRO beyond existing examples (RLHF, NLHF) and identify two key theoretical benefits of all such methods. We prove that common non-WRO meth- ods like DPO and SFT on preferred samples lack these properties and suggest ways to mitigate such theoretical limitations. We also show that WRO underperforms in practice due optimization dif- ficulties and that optimization success predicts performance better than choices which affect the objective\u2019s solution. Our analysis highlights best practices for existing methods and provides rec- ommendations for future research, guided by the principle that one should either align non-WRO methods more closely with WRO or improve the optimization of WRO objectives. 1. Introduction Learning from preference data, often referred to as human feedback, has emerged as a key step in training large lan- guage models, particularly given the success of reinforce- ment learning from human feedback (RLHF) (Christiano et al., 2017) on state-of-the-art and high-profile language 1Center for Data Science, New York University, New York, USA 2Courant Institute, New York University, New York, USA. Correspondence to: Lily H. Zhang <lily.h.zhang@nyu.edu>. models such as GPT-4 (OpenAI, 2024). The goal of learning from preference data is to finetune powerful base language models to output generations more in line with human pref- erences (Stiennon et al., 2020; Ouyang et al., 2022), moti- vated by the fact that pretraining on internet-scale data has enabled large language models to exhibit fluent generations of text (Minaee et al., 2024) but not necessarily responses aligned with what humans prefer to see. In recent years, the landscape of algorithms and evaluations for preference learning has grown significantly (Kaufmann et al., 2023; Jiang et al., 2024), resulting in a complex and often fragmented field that can pose challenges for practi- tioners and researchers deciding where to focus their efforts. Whereas well-established machine learning tasks such as classification are grounded in principles such as maximum likelihood, preference learning lacks such a unifying con- ceptual foundation. To advance the field, we thus first ask: what underlying principles underpin preference learning? We address this question by developing a framework start- ing from the sampling distribution implied by pairwise pref- erence data. We first tackle the question of evaluating a model under the preference learning paradigm. We show that the only evaluation of a generative model rooted in the preference data sampling distribution itself is a form of win rate we call h-win rate; any other notions of good either do not evaluate the model or respect the preference data, or are based on assumptions outside of either (Sec- tion 3). From this insight, we introduce a win rate-centric framework for understanding the landscape of preference learning methods. Given h-win rate is the only relevant evaluation without additional assumptions, we relate com- mon preference learning algorithms to directly optimizing for win rate, dividing the preference learning space into win rate optimization (WRO) and non-WRO objectives. In Section 4, we generalize the space of WRO beyond exist- ing methods in the literature and identify two theoretical benefits of such methods: (1) win rate-correspondence, i.e., optimizing the objective corresponds to optimizing for h- win rate; and (2) win rate-consistency, i.e., the solution can achieve the maximum win rate possible over a competitor as regularization strength goes to zero. In Section 5, we show that direct preference optimization (DPO) and other 1 arXiv:2502.10505v1 [cs.LG] 14 Feb 2025"
+}

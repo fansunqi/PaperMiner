@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/VITA-Group/Superficial_Alignment"
+  ],
+  "tasks": [
+    "Large Language Model Alignment"
+  ],
+  "datasets": [
+    "GSM",
+    "Toxigen",
+    "Advbench",
+    "TruthfulQA"
+  ],
+  "methods": [
+    "Distillation",
+    "Linear Projection Head",
+    "Superficial Knowledge Extraction"
+  ],
+  "results": [
+    "Superficial knowledge constitutes a significant portion of alignment",
+    "Superficial knowledge can be transferred between models",
+    "Superficial knowledge is recoverable"
+  ],
+  "title": "Extracting and Understanding the Superficial Knowledge in Alignment.pdf",
+  "abstract": "Alignment of large language models (LLMs) with human values and preferences, often achieved through fine-tuning based on human feedback, is essential for ensuring safe and re- sponsible AI behaviors. However, the process typically requires substantial data and com- putation resources. Recent studies have re- vealed that alignment might be attainable at lower costs through simpler methods, such as in-context learning. This leads to the question: Is alignment predominantly superficial? In this paper, we delve into this question and provide a quantitative analysis. We formalize the con- cept of superficial knowledge, defining it as knowledge that can be acquired through easily token restyling, without affecting the model\u2019s ability to capture underlying causal relation- ships between tokens. We propose a method to extract and isolate superficial knowledge from aligned models, focusing on the shallow mod- ifications to the final token selection process. By comparing models augmented only with su- perficial knowledge to fully aligned models, we quantify the superficial portion of align- ment. Our findings reveal that while superficial knowledge constitutes a significant portion of alignment, particularly in safety and detoxifi- cation tasks, it is not the whole story. Tasks requiring reasoning and contextual understand- ing still rely on deeper knowledge. Addition- ally, we demonstrate two practical advantages of isolated superficial knowledge: (1) it can be transferred between models, enabling effi- cient offsite alignment of larger models using extracted superficial knowledge from smaller models, and (2) it is recoverable, allowing for the restoration of alignment in compromised models without sacrificing performance. Our code is available at https://github.com/ VITA-Group/Superficial_Alignment 1 Introduction Recent years have witnessed significant advance- ments of large language models (LLMs) in various tasks (Hendrycks et al., 2021; Cobbe et al., 2021a; Chen et al., 2021; Welbl et al., 2017). Although LLMs acquire extensive world knowledge, they meanwhile cast serious risks to the society. For example, LLMs are easily prompted to generate toxic, misleading, or harmful content (Wei et al., 2024; Zou et al., 2023; Qi et al., 2023a). To ensure that the behaviors of LLMs adhere to human values and preferences, aligning LLMs to follow instruc- tions based on human feedback (Azar et al., 2024; Chen et al., 2024; Ouyang et al., 2022; Rafailov et al., 2024; Wu et al., 2024) is essential. To ob- tain satisfactory alignment, the tuning of an LLM usually demands a non-trivial amount of data and computation resources. Despite the considerable efforts invested in tun- ing LLMs (Touvron et al., 2023; Almazrouei et al., 2023), it has been surprisingly discovered that alignment might be attainable at lower costs or through simpler methods (Zhou et al., 2024; Chen et al., 2023; Lee et al., 2023; Lin et al., 2023). For example, using only a few selected training exam- ples can significantly improve alignment perfor- mance, approaching levels achieved through exten- sive tuning. Furthermore, Urial (Lin et al., 2023) found that alignment often results in \"stylistic to- ken shifts,\" and by employing in-context learning (ICL) (Brown et al., 2020; Wei et al., 2022) with a few restyling examples, alignment can be improved without any further tuning. These findings give rise to the Superficial Alignment Hypothesis(Zhou et al., 2024), which suggests that a model may ac- quire most of its knowledge and abilities during pre-training, while alignment primarily involves superficial adjustments. However, current methods support this hypoth- esis primarily through informal observations and indirect implications (i.e., because alignment can be achieved through superficial methods, it is hy- pothesized to be superficial). There remains a lack of rigorous, deep analysis regarding the extent to arXiv:2502.04602v1 [cs.CL] 7 Feb 2025"
+}

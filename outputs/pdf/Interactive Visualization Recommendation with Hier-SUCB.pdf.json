@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/HierSUCB-WWW/HierSUCB/tree/main"
+  ],
+  "tasks": [
+    "Visualization recommendation",
+    "Personalized visualization recommendation",
+    "Interactive visualization recommendation"
+  ],
+  "datasets": [
+    "Plot.ly",
+    "Plot.ly-1k",
+    "Plot.ly-full"
+  ],
+  "methods": [
+    "Hierarchical Semi UCB (Hier-SUCB)",
+    "Combinatorial contextual semi-bandit",
+    "Learnable bias term",
+    "Hierarchical structure"
+  ],
+  "results": [
+    "Improved regret bound",
+    "Outperforms other bandit algorithms and offline methods",
+    "Higher HR@1",
+    "Lower cumulative regret"
+  ],
+  "title": "Interactive Visualization Recommendation with Hier-SUCB.pdf",
+  "abstract": "Visualization recommendation aims to enable rapid visual analy- sis of massive datasets. In real-world scenarios, it is essential to quickly gather and comprehend user preferences to cover users from diverse backgrounds, including varying skill levels and an- alytical tasks. Previous approaches to personalized visualization recommendations are non-interactive and rely on initial user data for new users. As a result, these models cannot effectively explore options or adapt to real-time feedback. To address this limitation, we propose an interactive personalized visualization recommenda- tion (PVisRec) system that learns on user feedback from previous interactions. For more interactive and accurate recommendations, we propose Hier-SUCB, a contextual combinatorial semi-bandit in the PVisRec setting. Theoretically, we show an improved overall regret bound with the same rank of time but an improved rank of ac- tion space. We further demonstrate the effectiveness of Hier-SUCB through extensive experiments where it is comparable to offline methods and outperforms other bandit algorithms in the setting of visualization recommendation. CCS Concepts \u2022 Information systems \u2192Personalization; \u2022 Human-centered computing \u2192Visualization systems and tools. Keywords visualization recommendation, recommendation system \u2217Corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WWW \u201925, Sydney, NSW, Australia \u00a9 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-1274-6/2025/04 https://doi.org/10.1145/3696410.3714697 ACM Reference Format: Songwen Hu, Ryan A. Rossi, Tong Yu, Junda Wu, Handong Zhao, Sunchul Kim, and Shuai Li. 2025. Interactive Visualization Recommendation with Hier-SUCB. In Proceedings of the ACM Web Conference 2025 (WWW \u201925), April 28-May 2, 2025, Sydney, NSW, Australia. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3696410.3714697 1 Introduction Data visualization has been widely used across domains (i.e., public health [14], engineering [3], social science [11]) to analyze data and obtain insights for effective communication and decision-making. With a suitable visualization, users can observe the tendency of one variable or the correlation of multiple variables. It is also more in- tuitive for users to choose from generated visualizations than from raw data [32]. Driven by the intuitive nature of visualizations in data exploration, visualization recommendation systems aim to en- hance user experience by accelerating the analysis and exploration of large datasets. In practice, different users usually have different backgrounds and purposes (e.g., skill levels, analytic tasks). Thus, it is highly desired to quickly receive and understand user prefer- ences to adapt the recommendation model to more personalized visualization recommendations [21]. Previous works on personalized visualization recommendation [21, 22, 26, 32] are usually non-interactive and heavily rely on the user embeddings for cold-start of new users. For a new user without any background knowledge, previous works [26, 27] recommend visualizations based on the averaged user embedding, and thus is not able to capture the actual user\u2019s personalized preferences for visualizations. For example, a software engineer wants to under- stand the resource usage of a program over time, but the system log contains so many variables that finding the best visualization would be overly time-consuming. With traditional methods, the agent can recommend the most significant visualizations based on the statistical features of the variables, but fails to give more accurate recommendations that rely on the user intention revealed during the interactions. As a result, their models cannot efficiently explore the search space and quickly adapt to the user\u2019s real-time feedback in an interactive fashion. arXiv:2502.03375v3 [cs.IR] 13 Feb 2025"
+}

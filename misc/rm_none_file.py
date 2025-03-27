@@ -29,5 +29,5 @@ def clean_empty_files(directory):
     print(f"Files deleted: {deleted_files_count}")
     print(f"Remaining files: {remaining_files_count}")
 
-directory = 'outputs/pdf'
+directory = 'outputs/meta'
 clean_empty_files(directory)

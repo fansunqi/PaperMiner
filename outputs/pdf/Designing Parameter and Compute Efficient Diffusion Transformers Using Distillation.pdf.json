@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/vsundaresha/dit-distillation"
+  ],
+  "tasks": [
+    "Efficient Image and Video Generation"
+  ],
+  "datasets": [
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Distillation",
+    "Teaching Assistant (TA) Method",
+    "Multi-In-One (MI1) Method"
+  ],
+  "results": [
+    "FID: 10.32",
+    "Latency: 3.66s"
+  ],
+  "title": "Designing Parameter and Compute Efficient Diffusion Transformers Using Distillation.pdf",
+  "abstract": "Diffusion Transformers (DiTs) with billions of model parameters form the back- bone of popular image and video generation models like DALL.E, Stable-Diffusion and SORA. Though these models are necessary in many low-latency applications like Augmented/Virtual Reality, they cannot be deployed on resource-constrained Edge devices (like Apple Vision Pro or Meta Ray-Ban glasses) due to their huge computational complexity. To overcome this, we turn to knowledge distillation and perform a thorough design-space exploration to achieve the best DiT for a given parameter size. In particular, we provide principles for how to choose design knobs such as depth, width, attention heads and distillation setup for a DiT. During the process, a three-way trade-off emerges between model performance, size and speed that is crucial for Edge implementation of diffusion. We also propose two distillation approaches - Teaching Assistant (TA) method and Multi-In-One (MI1) method - to perform feature distillation in the DiT context. Unlike existing solu- tions, we demonstrate and benchmark the efficacy of our approaches on practical Edge devices such as NVIDIA Jetson Orin Nano. 1 INTRODUCTION Diffusion Transformers (DiTs) (Peebles & Xie, 2023) have become the de facto method (Dhariwal & Nichol, 2021) for generating images and videos due to their high fidelity (Ho et al., 2020), generalizability (Nichol & Dhariwal, 2021), ease of training (Ho et al., 2020) and scalability (Peebles & Xie, 2023). DiTs form the backbone of various practically deployed image and video generation models like DALL.E (Betker et al., 2023), StableDiffusion (Esser et al., 2024) and Sora (OpenAI, 2024). Due to the large parameter size and computational complexity of these models, one has to employ Cloud services to run them remotely. The significant latencies associated with such data transmissions from Cloud to the Edge cannot be afforded for high-frame-rate applications like Augmented/Virtual Reality (AR/VR) which need to be implemented on resource-constrained Edge devices (Apple Inc.; Meta Platforms, Inc.). The main challenge in directly implementing neural network inferences on Edge devices comes from the limited memory and energy capacity of the Edge hardware. To address this, we need to design parameter- and compute-efficient DiTs. Edge devices which typically hold on-chip memories in the range of few megabytes, thus requiring model sizes to be in the order of a million parameters as compared to existing practical models (Peebles & Xie, 2023; Crowson et al., 2024) which have billions of parameters. Prior works (explained in detail in Appendix A) which focus on efficient DiTs optimize only specific layers (Pu et al., 2024) or look at only precision (Wu et al., 2024) or do not push the parameter-limit required to achieve the desired performance (Geng et al., 2024). The focus of our work is not about providing SOTA DiT models through novel algorithmic methods. Instead, our goal is to provide the best DiT model - in terms of performance and speed - at a given parameter size using principled design choices. Contributions: 1. We provide principles for designing an efficient SOTA (at the given model size) DiT model (DiT-Nano) by employing distillation. Through the process, we highlight a key trade-off that emerges between model performance (FID), size (#parameters) and speed (latency). In particular, we show the practical impact of our designed models on real-life Edge devices such as NVIDIA Jetson Orin Nano. This is our key contribution. 2. We propose two algorithms - Teaching Assistant (TA) method and the Multi-In-One (MI1) method, and explore the efficacy of these methods. 1 arXiv:2502.14226v1 [cs.CV] 20 Feb 2025"
+}

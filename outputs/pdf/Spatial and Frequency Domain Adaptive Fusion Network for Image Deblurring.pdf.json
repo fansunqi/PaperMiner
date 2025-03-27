@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/Tombs98/SFAFNet"
+  ],
+  "tasks": [
+    "Image Deblurring"
+  ],
+  "datasets": [
+    "GoPro",
+    "HIDE",
+    "RealBlur",
+    "DPDD"
+  ],
+  "methods": [
+    "GSFFBlock",
+    "FDGM",
+    "GFM",
+    "GATE",
+    "CAM"
+  ],
+  "results": [
+    "SOTA performance on GoPro dataset",
+    "0.23 dB improvement over previous best approach",
+    "51.2% cost reduction"
+  ],
+  "title": "Spatial and Frequency Domain Adaptive Fusion Network for Image Deblurring.pdf",
+  "abstract": "\u2014Image deblurring aims to reconstruct a latent sharp image from its corresponding blurred one. Although existing methods have achieved good performance, most of them operate exclusively in either the spatial domain or the frequency do- main, rarely exploring solutions that fuse both domains. In this paper, we propose a spatial-frequency domain adaptive fusion network (SFAFNet) to address this limitation. Specifically, we design a gated spatial-frequency domain feature fusion block (GSFFBlock), which consists of three key components: a spatial domain information module, a frequency domain information dynamic generation module (FDGM), and a gated fusion module (GFM). The spatial domain information module employs the NAFBlock to integrate local information. Meanwhile, in the FDGM, we design a learnable low-pass filter that dynamically decomposes features into separate frequency subbands, captur- ing the image-wide receptive field and enabling the adaptive exploration of global contextual information. Additionally, to facilitate information flow and the learning of complementary representations. In the GFM, we present a gating mechanism (GATE) to re-weight spatial and frequency domain features, which are then fused through the cross-attention mechanism (CAM). Experimental results demonstrate that our SFAFNet performs favorably compared to state-of-the-art approaches on commonly used benchmarks. The code and the pre-trained models will be released at https://github.com/Tombs98/SFAFNet. I. INTRODUCTION Due to target movement, camera shake, and defocusing, images often become blurred. Image deblurring aims to re- cover high-quality images from their corrupted counterparts. Given the ill-posed nature of this inverse problem, many conventional approaches [1], [2] address this problem based on various assumptions or hand-crafted features to constrain the solution space to natural images. However, designing such priors is challenging and lacks generalizability, making them impractical for real-world scenarios. Significant progress in image deblurring has been achieved through the development of deep neural networks, which directly learn the mapping from the degraded observation to the clear image. Convolutional neural network (CNN)-based methods have become the leading choice for image deblurring by designing various architectures, including encoder-decoder architectures [3], [4], multi-stage networks [5], [6], dual net- works [7], generative models [8], [9], and more. While the convolution operation effectively models local connectivity, its limited receptive field and independence from input content Hu Gao and Depeng Dang are with the School of Artificial In- telligence, Beijing Normal University, Beijing 100000, China (e-mail: gao h@mail.bnu.edu.cn, ddepeng@bnu.edu.cn). : Corresponding Author Fig. 1. Visual comparison with MR-VNet [3] and FSNet [14]. The MR- VNet based on spatial domain often overlooks details. Although the FSNet based on frequency captures details well, it struggles with spatially-variant properties. Our SFAFNet adaptively fuses spatial and frequency features, effectively learning detailed information and spatially-variant structures. hinder the model\u2019s ability to capture long-range dependencies. Unlike convolution operations that focus on local connectiv- ity, Transformers excel at capturing non-local information. However, their attention mechanism introduces quadratic time complexity, leading to significant computational overhead. To mitigate this, some methods [10], [11] adopt channel-wise self-attention instead of spatial dimensions, yet this sacrifices spatial information exploitation. Other approaches [12], [13] employ non-overlapping window-based self-attention for sin- gle image deblurring, but struggle to fully harness information within each patch. The aforementioned methods primarily focus on spatial domain restoration, which often overlooks the frequency dis- parities between sharp and degraded image pairs. To address this challenge, a few approaches [15]\u2013[17] leverage transfor- mation tools to explore the frequency domain. Nonetheless, these methods typically require Fourier inverse or wavelet transforms, leading to additional computational overhead and limited flexibility in selecting fusion frequency information. To effectively choose the most informative frequency components for reconstruction, [14], [18]\u2013[20] emphasize or attenuate resulting frequency components. However, we find that these frequency domain-based methods often neglect to effectively capture the spatial variation property of the overall structure. As shown in Figure 1, we visualize the results of several deblurring methods by displaying the residual image, which is the difference between the restored image and the degraded image. Figure 1(c) shows the residual image of the ground truth image and the blurred image. It is evident that blurring affects not only the spatial structure but also results in a loss of detail (e.g., the trees enclosed in the red boxes). The spatial arXiv:2502.14209v1 [cs.CV] 20 Feb 2025"
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/DFKI-NLP/eco-link"
+  ],
+  "tasks": [
+    "Automated Product Carbon Footprint Estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LLMs",
+    "Semantic Similarity",
+    "Text Embedding"
+  ],
+  "results": [
+    "Hits@5: 0.48",
+    "Hits@1: 0.19"
+  ],
+  "title": "Entity Linking Using LLMs for Automated Product Carbon Footprint Estimation.pdf",
+  "abstract": "Growing concerns about climate change and sustainability are driving manufactur- ers to take significant steps toward reduc- ing their carbon footprints. For these man- ufacturers, a first step towards this goal is to identify the environmental impact of the individual components of their prod- ucts. We propose a system leveraging large language models (LLMs) to auto- matically map components from manufac- turer Bills of Materials (BOMs) to Life Cycle Assessment (LCA) database entries by using LLMs to expand on available component information. Our approach re- duces the need for manual data processing, paving the way for more accessible sus- tainability practices. 1 Introduction Increasing awareness of climate change and sus- tainability has put pressure on manufacturers to reduce their carbon footprints. Regulation such as the EU Corporate Sustainability Reporting Direc- tive (CSRD) and the European Green Deal has fur- ther emphasized the need for transparent and ac- curate environmental impact assessments. A fun- damental step in this process is determining the environmental impact of a product, particularly the carbon emissions generated during production. LCA databases, such as ecoinvent (Wernet et al., 2016), provide detailed information for this pur- pose. However, linking the raw components of a product, represented in a BOM, to relevant entries in an LCA database remains a labor-intensive task requiring specialized knowledge of manufacturing materials and processes. Recent advances in artificial intelligence, par- ticularly large language models (LLMs), present an opportunity to automate this process. Because they are trained on vast amounts of information and are able to efficiently synthesize their knowl- edge as textual data, they may be capable of pro- viding additional context in order to link com- ponents to their production processes in a LCA database. In this work, we investigate the use of LLMs to streamline the product carbon footprint estimation process by mapping components from BOMs di- rectly to a LCA database. We propose a multi-step approach using a pretrained LLM to identify and summarize component information and mapping this summary to a database using semantic simi- larity. 2 Related Work Semantic similarity techniques are well-explored in entity linking, where embedding models match textual mentions to corresponding database en- tries. Hou et al. introduced a method that en- hances entity embeddings by incorporating fine- grained semantic information, thereby improv- ing the learning of contextual commonality and achieving state-of-the-art performance in entity linking (Hou et al., 2020). Similarly, Pereira and Ferreira proposed E-BELA, an approach that aligns vector representations of mentions and entities in a shared space using literal embed- dings, facilitating effective linking through simi- larity metrics (Pereira and Ferreira, 2024). These methodologies are particularly effective in do- mains with straightforward entity disambiguation requirements, where minimal additional context is necessary. Existing methods for carbon footprint estima- tion rely heavily on manual mapping of product components to LCA databases. This is a chal- lenging task, requiring both LCA expertise and specialist knowledge of components and materi- als. Several studies have explored machine learn- ing approaches to partially automate this process. arXiv:2502.07418v1 [cs.CL] 11 Feb 2025"
+}

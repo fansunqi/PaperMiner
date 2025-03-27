@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Embodied Agents",
+    "Open-World Planning",
+    "Memory-Augmented LLM Planning"
+  ],
+  "datasets": [
+    "MineDojo"
+  ],
+  "methods": [
+    "Experience Database",
+    "LLM Planning",
+    "Semantic Retrieval",
+    "Natural Language Reasoning"
+  ],
+  "results": [
+    "9.4% improvement in open-world planning tasks",
+    "Efficient learning for complex tasks",
+    "Continuous learning from experience"
+  ],
+  "title": "MINDSTORES Memory-Informed Neural Decision Synthesis for Task-Oriented Reinforcement in Embodied Sys.pdf",
+  "abstract": "While large language models (LLMs) have shown promising capabilities as zero-shot planners for embodied agents, their inability to learn from ex- perience and build persistent mental models lim- its their robustness in complex open-world envi- ronments like Minecraft. We introduce MIND- STORES, an experience-augmented planning framework that enables embodied agents to build and leverage mental models through natural in- teraction with their environment. Drawing in- spiration from how humans construct and refine cognitive mental models, our approach extends existing zero-shot LLM planning by maintain- ing a database of past experiences that informs future planning iterations. The key innovation is representing accumulated experiences as nat- ural language embeddings of (state, task, plan, outcome) tuples, which can then be efficiently retrieved and reasoned over by an LLM planner to generate insights and guide plan refinement for novel states and tasks. Through extensive experiments in the MineDojo environment, a sim- ulation environment for agents in Minecraft that provides low-level controls for Minecraft, we find that MINDSTORES learns and applies its knowl- edge significantly better than existing memory- based LLM planners while maintaining the flexi- bility and generalization benefits of zero-shot ap- proaches, representing an important step toward more capable embodied AI systems that can learn continuously through natural experience. *Equal contribution 1a37.ai, San Francisco, CA, USA 2Massachusetts Institute of Technology, Cambridge, MA, USA 3Harvard University, Cambridge, MA, USA. Correspon- dence to: Suraj Reddy <surajrdy@mit.edu>, Anirudh Chari <anichari@mit.edu>. 1. Introduction Recent advances in large language models (LLMs) have demonstrated enhanced capabilities in reasoning (Plaat et al., 2024; Huang & Chang, 2023), planning (Sel et al., 2025), and decision-making (Huang et al., 2024) through methods that strengthen analytical depth. Among the numerous do- mains of active innovation, the success of AI agents serve as a critical benchmark for assessing our progress toward generally capable artificial intelligence (Brown et al., 2020). Building embodied agents\u2014AI systems with physical form\u2014that learn continuously from real-world interactions through persistent memory and adaptive reasoning remains a fundamental challenge in the future of artificial intelli- gence. Classical approaches, such as reinforcement learning (Dulac-Arnold et al., 2021) and symbolic planning (Zheng et al., 2025), struggle with scalability, irreversible errors, and rigid assumptions in complex environments. A promising paradigm for such agents leverages LLMs as high-level planners (Jeurissen et al., 2024): the LLM de- composes abstract goals into step-by-step plans (e.g., \u201cmine wood \u2192craft tools \u2192smelt iron\u201d), while a low-level con- troller translates these plans into environment-specific ac- tions (e.g., movement, object interaction). This \u201cbrain and body\u201d architecture capitalizes on the LLM\u2019s capacity for structured reasoning while grounding its outputs in the dy- namics of the physical world\u2014a critical capability for real- world applications like robotic manipulation (Shentu et al., 2024; Bhat et al., 2024; Wang et al., 2024b), autonomous navigation (Zawalski et al., 2024), and adaptive disaster response. While recent LLM-based agents show promise in generat- ing action plans for embodied tasks, many lack experiential learning, i.e., the ability to apply insights from past expe- riences to planning for future tasks. Unlike humans\u2014who build mental models to generalize insights, avoid errors, and reason counterfactually (e.g., \u201cCrafting a stone pickaxe first would enable iron mining\u201d)\u2014existing agents cannot syn- thesize persistent representations of past interactions. This gap hinders their ability to tackle long-horizon tasks in open worlds like Minecraft, where success requires inferring ob- jectives, recovering from failures, and transferring insights 1 arXiv:2501.19318v1 [cs.AI] 31 Jan 2025"
+}

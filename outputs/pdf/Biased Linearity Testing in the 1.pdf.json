@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Linearity Testing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fourier Analysis",
+    "Probabilistic Method",
+    "Gaussian Distribution",
+    "Hermite Polynomials"
+  ],
+  "results": [
+    "The existence and non-existence of linear functions based on linearity testing",
+    "The trade-off between the number of queries and the bias of the distribution"
+  ],
+  "title": "Biased Linearity Testing in the 1.pdf",
+  "abstract": "We study linearity testing over the p-biased hypercube ({0, 1}n, \u00b5\u2297n p ) in the 1% regime. For a distribution \u03bd supported over {x \u2208{0, 1}k : Pk i=1 xi = 0 (mod 2)}, with marginal distribution \u00b5p in each coordinate, the corresponding k-query linearity test Lin(\u03bd) proceeds as follows: Given query access to a function f : {0, 1}n \u2192{\u22121, 1}, sam- ple (x1, . . . , xk) \u223c\u03bd\u2297n, query f on x1, . . . , xk, and accept if and only if Q i\u2208[k] f(xi) = 1. Building on the work of Bhangale, Khot, and Minzer (STOC \u201923), we show, for 0 < p \u2a7d1 2, that if k \u2a7e1 + 1 p, then there exists a distribution \u03bd such that the test Lin(\u03bd) works in the 1% regime; that is, any function f : {0, 1}n \u2192{\u22121, 1} passing the test Lin(\u03bd) with probability \u2a7e1 2 + \u01eb, for some constant \u01eb > 0, satis\ufb01es Prx\u223c\u00b5\u2297n p [f(x) = g(x)] \u2a7e1 2 + \u03b4, for some linear function g, and a constant \u03b4 = \u03b4(\u01eb) > 0. Conversely, we show that if k < 1 + 1 p, then no such test Lin(\u03bd) works in the 1% regime. Our key observation is that the linearity test Lin(\u03bd) works if and only if the distribution \u03bd satis\ufb01es a certain pairwise independence property. 1 Introduction A function f : {0, 1}n \u2192{\u22121, 1} is said to be linear over F21, if there exists a set S \u2286[n], such that f(x) = Q i\u2208S (\u22121)xi; this function is denoted by \u03c7S. The classical linearity testing problem, asks, given query access2 to a function f : {0, 1}n \u2192{\u22121, 1}, to distinguish between the following two cases3: 1. f is a linear function. 2. f is far from being linear; that is, for every linear function \u03c7S, the functions f and \u03c7S disagree on many points. \u2217Department of Computer Science, Courant Institute of Mathematical Sciences, New York University. E-mail: khot@cs.nyu.edu. Research supported by NSF Award CCF-1422159, NSF Award CCF-2130816, and the Simons Investigator Award. \u2020Department of Computer Science, Princeton University. E-mail: kmittal@cs.princeton.edu. Research supported by NSF Award CCF-2007462, and the Simons Investigator Award. 1by identifying the range F2 with {\u22121, 1}, under the map b \u2192(\u22121)b 2the algorithm is allowed to ask/query the value of f(x) at any x \u2208{0, 1}n 3the algorithm is allowed to answer arbitrarily for functions f which violate both the conditions 1"
+}

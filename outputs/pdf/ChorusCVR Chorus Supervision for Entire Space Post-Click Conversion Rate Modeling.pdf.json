@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Post-Click Conversion Rate Estimation"
+  ],
+  "datasets": [
+    "Ali-CCP",
+    "Kuaishou"
+  ],
+  "methods": [
+    "ChorusCVR",
+    "Soft Alignment Module",
+    "Negative sample Discrimination Module",
+    "IPW"
+  ],
+  "results": [
+    "CVR-AUC: 0.6589 (Ali-CCP)",
+    "CTCVR-AUC: 0.6401 (Kuaishou)",
+    "Orders (+0.851%) (Kuaishou)"
+  ],
+  "title": "ChorusCVR Chorus Supervision for Entire Space Post-Click Conversion Rate Modeling.pdf",
+  "abstract": "Post-click conversion rate (CVR) estimation is a vital task in many recommender systems of revenue businesses, e.g., e-commerce and advertising. In a perspective of sample, a typical CVR positive sam- ple usually goes through a funnel of exposure\u2192click\u2192conversion. For lack of post-event labels for un-clicked samples, CVR learning task commonly only utilizes clicked samples, rather than all exposed samples as for click-through rate (CTR) learning task. However, during online inference, CVR and CTR are estimated on the same assumed exposure space, which leads to a inconsistency of sample space between training and inference, i.e., sample selection bias (SSB). To alleviate SSB, previous wisdom proposes to design novel auxiliary tasks to enable the CVR learning on un-click training samples, such as CTCVR and counterfactual CVR, etc. Although alleviating SSB to some extent, none of them pay attention to the discrimination between ambiguous negative samples (un-clicked) and factual negative samples (clicked but un-converted) during modelling, which makes CVR model lacks robustness. To full this gap, we propose a novel ChorusCVR model to realize debiased CVR learning in entire-space. We propose a Negative sample Dis- crimination Module (NDM), which aims to provide robust soft labels with the ability to discriminate factual negative samples (clicked but un-converted) from ambiguous negative samples (un-clicked). Moreover, we propose a Soft Alignment Module (SAM) to supervise CVR learning with several alignment objectives using generated soft labels. Extensive offline experiments and online A/B testing at Kuaishou\u2019s e-commerce live service validates the efficacy of our ChorusCVR. CCS CONCEPTS \u2022 Information systems \u2192Recommender systems. \u00a7Equal contributions to this work. \u2605Corresponding author. Conversion Unclicked Clicked & Converted Clicked but Unconverted Conversion Unclicked Clicked & Converted Clicked but UnConverted Click (d) Ours: CTunCVR as soft labels Unclicked Clicked & Converted Clicked but Unconverted Conversion Unused Negative Samples Positive Samples Discrimination surface (b) DCMT: counterfactual CVR as soft labels (c) NISE/DDPO: additional CVR as soft labels Click Click R1: Discriminability R2: Robustness Conversion Unclicked Clicked & Converted Clicked but Unconverted (a) ESMM: no soft labels Click Existing CTCVR model ability Figure 1: A conceptual comparison between our proposed ChorusCVR and existing CVR models on the perspective of the discrimination spaces of soft labels. KEYWORDS Ranking Model; Post-Click Conversion Rate Estimation; 1 INTRODUCTION Recommender systems are crafted to provide users with person- alized content (videos, products and ads, etc.,) that match their preferences [2, 6, 8, 14]. Generally, industrial RecSys typically di- vided into two major stages. 1) Retrieval stage, which aims to search thousands of related candidates from massive item pool. 2) Ranking stage, which aims to estimate interaction probability, e.g., click- through rate (CTR) and post-click conversion rate (CVR), for each user-item pair for retrieved candidates, and select a set of best items arXiv:2502.08277v1 [cs.IR] 12 Feb 2025"
+}

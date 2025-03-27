@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/Lorenzo-Piccinini/"
+  ],
+  "tasks": [
+    "Tensor Least Squares Problems",
+    "Information Retrieval",
+    "Data Mining"
+  ],
+  "datasets": [
+    "Reuters21578",
+    "Cranfield",
+    "Medline",
+    "Fashion MNIST"
+  ],
+  "methods": [
+    "Tensor-train (TT-) format",
+    "LSQR",
+    "Preconditioning",
+    "Sketching"
+  ],
+  "results": [
+    "Improved classification accuracy",
+    "Reduced computational cost"
+  ],
+  "title": "TT-LSQR for Tensor Least Squares Problems and Application to Data Mining .pdf",
+  "abstract": ". We are interested in the numerical solution of the tensor least squares problem min X \u2225F \u2212 \u2113 X i=1 X \u00d71 A(i) 1 \u00d72 A(i) 2 \u00b7 \u00b7 \u00b7 \u00d7d A(i) d \u2225F , where X \u2208Rm1\u00d7m2\u00d7\u00b7\u00b7\u00b7\u00d7md, F \u2208Rn1\u00d7n2\u00d7\u00b7\u00b7\u00b7\u00d7nd are tensors with d dimensions, and the coefficients A(i) j are tall matrices of conforming dimensions. We first describe a tensor implementation of the classical LSQR method by Paige and Saunders, using the tensor-train representation as key ingre- dient. We also show how to incorporate sketching to lower the computational cost of dealing with the tall matrices A(i) j . We then use this methodology to address a problem in information retrieval, the classification of a new query document among already categorized documents, according to given keywords. Key words. Tensor multiterm least squares, Kronecker products, rank truncation, large matri- ces, collocation, data mining. AMS subject classifications. 65F45, 65F55, 15A23. 1. Introduction. We are interested in the numerical solution of the multiterm tensor least squares problem (1.1) min X \u2225F \u2212 \u2113 X i=1 X \u00d71 A(i) 1 \u00d72 A(i) 2 \u00b7 \u00b7 \u00b7 \u00d7d A(i) d \u2225F , where X \u2208Rm1\u00d7m2\u00d7\u00b7\u00b7\u00b7\u00d7md, F \u2208Rn1\u00d7n2\u00d7\u00b7\u00b7\u00b7\u00d7nd are tensors with d dimensions (or modes), while A(i) j \u2208Rnj\u00d7mj are tall matrices, for i = 1, . . . , \u2113and j = 1, . . . , d. The term F is assumed to be in low-rank Tucker format. Matrix and tensor formulations of least squares problems have emerged in the re- cent literature as an alternative to classical vectorized forms in different data science problems, see, e.g., [5],[6],[8],[20],[16],[1]. In particular, the occurrence of a multiterm coefficient operator has been first proposed in [10],[11]. The numerical literature on the topic is very scarce, although the problem is challenging because of the absence of direct methods that can efficiently handle multiple addends in tensorial form, already for problems with small dimensions. The difficulty emerges as soon as the number of modes d is equal to three or larger, giving rise to the so-called curse of dimension- ality problem. Computationally, the solution of the linear algebra problem becomes intractable. Among the strategies available in the literature, the LSQR method has been recently explored for \u2113= 1 (one addend in (1.1)) in [2], where Tucker and CP decompositions are used. \u2217Version of February 4, 2025. The authors are members of the INdAM Research Group GNCS that partially supported this work. \u2020Dipartimento di Matematica, Alma Mater Studiorum - Universit`a di Bologna, Piazza di Porta San Donato 5, 40126 Bologna, Italia. Email: lorenzo.piccinini12@unibo.it \u2021Dipartimento di Matematica, AM2, Alma Mater Studiorum - Universit`a di Bologna, Piazza di Porta San Donato 5, 40126 Bologna, Italy, and IMATI-CNR, Via Ferrata 5/A, Pavia, Italy. Email: valeria.simoncini@unibo.it 1 arXiv:2502.01293v1 [math.NA] 3 Feb 2025"
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Large Language Model (LLM) inference acceleration"
+  ],
+  "datasets": [
+    "MMLU",
+    "HumanEval",
+    "MATH",
+    "IFEval",
+    "MGSM"
+  ],
+  "methods": [
+    "Layer-Parallel Speculative Decoding",
+    "Fuzzy Speculation",
+    "Bonus Calibration"
+  ],
+  "results": [
+    "Peak speedup of 4.17x compared to vanilla decoding",
+    "Accuracy drop of only 7% with maximum",
+    "No additional training or fine-tuning required"
+  ],
+  "title": "EasySpec Layer-Parallel Speculative Decoding for Efficient Multi-GPU Utilization.pdf",
+  "abstract": "Speculative decoding is an effective and lossless method for Large Language Model (LLM) infer- ence acceleration. It employs a smaller model to generate a draft token sequence, which is then veri\ufb01ed by the original base model. In multi- GPU systems, inference latency can be further re- duced through tensor parallelism (TP), while the optimal TP size of the draft model is typically smaller than that of the base model, leading to GPU idling during the drafting stage. To solve this problem, we propose EasySpec, a layer- parallel speculation strategy that optimizes the ef\ufb01ciency of multi-GPU utilization. EasySpec breaks the sequential execution order of layers in the drafting model, enabling multi-layer par- allelization across devices, albeit with some in- duced approximation errors. After each drafting- and-veri\ufb01cation iteration, the draft model\u2019s key- value (KV) cache is calibrated in a single for- ward pass, preventing long-term error accumula- tion at minimal additional latency. We evaluated EasySpec on several mainstream open-source LLMs, using smaller versions of models from the same series as drafters. The results demon- strate that EasySpec can achieve a peak speedup of 4.17x compared to vanilla decoding, while preserving the original distribution of the base LLMs. Speci\ufb01cally, the drafting stage can be ac- celerated by up to 1.62x with a maximum accu- racy drop of only 7%, requiring no training or \ufb01ne-tuning on the draft models. 1. Introduction Transformer-based Large Language Models (LLMs) have demonstrated remarkable problem-solving abilities across various domains (Vaswani, 2017; Dubey et al., 2024; 1Institute of Software Chinese Academy of Sciences, Bei- jing, China 2University of Chinese Academy of Sciences, Beijing, China. Correspondence to: Yanjun Wu <yanjun@iscas.ac.cn>. Preliminary work. Yang et al., 2024a;b; Achiam et al., 2023). However, as the parameter size continues to grow, the time-consuming pro- cess of auto-regressive decoding poses a signi\ufb01cant barrier to deploying large models in latency-sensitive applications (Kim et al., 2024; Cai et al., 2024). Various effective approaches (Hinton, 2015; Kim et al., 2021; Gu & Dao, 2023) have been proposed to re- duce inference latency, including speculative decoding (Leviathan et al., 2023; Chen et al., 2023) and tensor- parallel (TP) distribution (Shoeybi et al., 2019). Specula- tive decoding employs a smaller model to generate a draft token sequence, and uses token-level parallelism to conduct non-autoregressive veri\ufb01cation, ensuring no shifting of the original model\u2019s output distribution. In contrast, TP dis- tribution leverages cross-device parallelism by partitioning computational workloads across multiple devices (usually GPUs) and synchronizing the results subsequently, which is also lossless. Combining speculative decoding with TP distribution achieves even greater acceleration rates. However, inte- grating a draft model into a distributed system is not triv- ial (Cai et al., 2024). Since the parameter size of the draft model is typically much smaller (around or less than 1/10) than that of the base model, the optimal TP size (the number of workload segments) is correspondingly smaller (Chen et al., 2023), meaning that the draft model would run fastest when dispatched on one or a subset of GPUs, leav- ing other GPUs idle (see Figure 1(b) and Section 4.1). Con- sequently, multi-GPU computational resources are under- utilized during the drafting stage. We identify the primary cause of such inef\ufb01ciency as the lack of parallelism between the draft model\u2019s layers: while tensor operations within one layer can be parallelized by TP, the layers themselves are restricted to be executed se- quentially, one after another and from bottom to top, for generating a \u201cprecise\u201d result of inference. However, the drafting result is never required to be precise, as it is only used for token parallelism and does not directly impact the \ufb01nal output\u2014the veri\ufb01cation result does (see Section 2.1). Therefore, strictly following the execution order is unnec- essary, while a \u201cfuzzy\u201d but faster layer execution strategy could be preferable than the precise one, as long as it can 1"
+}

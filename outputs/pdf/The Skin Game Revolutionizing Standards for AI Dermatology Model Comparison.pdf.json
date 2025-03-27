@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/LMietkiewicz/the-skin-game-research-paper"
+  ],
+  "tasks": [
+    "Dermatology Image Classification"
+  ],
+  "datasets": [
+    "HAM10000",
+    "DermNet",
+    "ISIC Atlas"
+  ],
+  "methods": [
+    "Vision Transformer (DINOv2-Large)",
+    "Cross-validation",
+    "Explainable AI"
+  ],
+  "results": [
+    "F1-score: 0.85 (HAM10000)",
+    "F1-score: 0.71 (DermNet)",
+    "F1-score: 0.84 (ISIC Atlas)"
+  ],
+  "title": "The Skin Game Revolutionizing Standards for AI Dermatology Model Comparison.pdf",
+  "abstract": "Deep Learning approaches in dermatological image classification have shown promising results, yet the field faces significant methodological challenges that impede proper scientific evaluation. This paper presents a dual contribution: first, a systematic analysis of current methodological practices in skin disease classification research, revealing substantial inconsistencies in data preparation/preprocessing, augmentation strategies, and performance reporting; second, a comprehensive training and evaluation framework is proposed and demonstrated through experiments with the DINOv2-Large vision transformer across three benchmark datasets (HAM10000 (Tschandl et al., 2018), DermNet (Dermatology Resource, 2023; Goel, 2020), and ISIC Atlas (Rafay & Hussain, 2023)). The analysis of recent studies identifies concerning patterns, including pre-split data augmentation and validation-based reporting, potentially leading to overestimated performance metrics. Furthermore, it highlights the lack of unified methodology and results reporting standards, which could potentially diminish the likelihood of study reproduction. The experimental results on the proposed robust framework demonstrate DINOv2's performance in skin disease classification context, achieving macro-averaged F1-scores of 0.85 (HAM10000), 0.71 (DermNet), and 0.84 (ISIC Atlas). Detailed attention map analysis reveals critical patterns in the model's decision-making process, showing sophisticated feature recognition in typical presentations but significant vulnerabilities with atypical cases and composite images. Notably, we identified a concerning pattern of high-confidence misclassifications, particularly in cases where the model focuses on non-diagnostic features. Our findings highlight the urgent need for standardized evaluation protocols and careful consideration of implementation strategies in clinical settings. We propose comprehensive methodological recommendations for model development, evaluation, and clinical deployment, emphasizing the importance of rigorous data preparation, systematic error analysis, and specialized protocols for different image types. To promote reproducibility and standardization, we provide our complete"
+}

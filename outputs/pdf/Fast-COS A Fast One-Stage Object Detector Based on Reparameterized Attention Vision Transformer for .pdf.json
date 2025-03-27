@@ -1,0 +1,32 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object Detection",
+    "Image Classification",
+    "Instance Segmentation"
+  ],
+  "datasets": [
+    "ImageNet-1K",
+    "COCO",
+    "BDD100K",
+    "TJU-DHD Traffic"
+  ],
+  "methods": [
+    "RAViT",
+    "RepMSDW",
+    "RepSA",
+    "RepFPN",
+    "FCOS"
+  ],
+  "results": [
+    "Top-1 accuracy of 81.4% on ImageNet-1K",
+    "AP50 score of 57.2% on BDD100K",
+    "AP50 score of 80.0% on TJU-DHD Traffic",
+    "Up to 75.9% faster GPU inference than FCOS",
+    "Up to 1.38\u00d7 higher throughput on edge devices than FCOS, YOLOF, and RetinaNet"
+  ],
+  "title": "Fast-COS A Fast One-Stage Object Detector Based on Reparameterized Attention Vision Transformer for .pdf",
+  "abstract": "\u2014The perception system is a core element of an autonomous driving system, playing a critical role in ensur- ing safety. The driving scene perception system fundamentally represents an object detection task that requires achieving a balance between accuracy and processing speed. Many con- temporary methods focus on improving detection accuracy but often overlook the importance of real-time detection capabilities when computational resources are limited. Thus, it is vital to investigate efficient object detection strategies for driving scenes. This paper introduces Fast-COS, a novel single-stage object detection framework crafted specifically for driving scene appli- cations. The research initiates with an analysis of the backbone, considering both macro and micro architectural designs, yielding the Reparameterized Attention Vision Transformer (RAViT). RAViT utilizes Reparameterized Multi-Scale Depth-Wise Convo- lution (RepMSDW) and Reparameterized Self-Attention (RepSA) to enhance computational efficiency and feature extraction. In extensive tests across GPU, edge, and mobile platforms, RAViT achieves 81.4% Top-1 accuracy on the ImageNet-1K dataset, demonstrating significant throughput improvements over com- parable backbone models such as ResNet, FastViT, RepViT, and EfficientFormer. Additionally, integrating RepMSDW into a feature pyramid network forms RepFPN, enabling fast and multi-scale feature fusion. Fast-COS enhances object detection in driving scenes, attaining an AP50 score of 57.2% on the BDD100K dataset and 80.0% on the TJU-DHD Traffic dataset. It surpasses leading models in efficiency, delivering up to 75.9% faster GPU inference and 1.38\u00d7 higher throughput on edge devices compared to FCOS, YOLOF, and RetinaNet. These findings establish Fast-COS as a highly scalable and reliable solution suitable for real-time applications, especially in resource- limited environments like autonomous driving systems. Index Terms\u2014Autonomous Driving, Driver Scene Perception, Object Detection, Hybrid Vision Transformer, Multi-Scale Con- volution Reparameterization I. INTRODUCTION Autonomous driving systems represent a major break- through in transportation by allowing vehicles to operate without human involvement. These systems usually integrate Novendra Setyawan and Wen-Kai Kuo are with Department of Electro- Optics, National Formosa University, Taiwan; Novendra Setyawan also with Department of Electrical Engineering Uni- versity of Muhammadiyah Malang, Indonesia; Ghufron Wahyu Kurniawan is with Department of Electrical Engineering, National Formosa University, Taiwan; Chi-Chia Sun is with Department of Electrical Engineering, National Taipei University, Taiwan; Jun-Wei Hsieh is with College of Artificial Intelligence and Green Energy, National Yang Ming Chiao Tung University, Taiwan; Corresponding Author is Chi-Chia Sun (E-mail: chichia- sun@gm.ntpu.edu.tw) various sensors as perception systems to collect real-time traffic data, enabling independent navigation [1]. Cameras supply essential high-resolution visual data needed for driv- ing scene image processing tasks like object detection [2]. Robust perception of the driving environment is crucial for autonomous vehicles in complex scenarios. This requires high accuracy, real-time processing, and resilience. It is crucial to accurately recognize and predict the movements of objects, performing efficient real-time processing to avoid decision- making delays that might lead to traffic congestion or acci- dents, and to ensure operation in poor weather or low-light conditions. An effective object detection algorithm is vital to the safety and effectiveness of camera-based perception systems in autonomous vehicles [3]. In contemporary object detection architectures within deep learning, the structure typically comprises backbone, neck, and head detector elements [4]\u2013[6]. Detectors are mainly divided into two categories: two-stage and one-stage. Two-stage mod- els, such as those in the R-CNN family [7], [8], emphasize region proposal and feature extraction. These models are known for their precise object localization but face increased computational costs due to the numerous region proposals. Conversely, single-stage detectors like You Only Look Once (YOLO) [9] or RetinaNet [10] conduct object detection and localization regression in a single network pass. A variant of the single-stage detector is the Fully Convolutional One-Stage detector (FCOS) [11], [12], which employs an anchor-free strategy by predicting on a per-pixel basis, thus removing the need for predefined anchor boxes and enhancing computational efficiency. Nevertheless, FCOS is criticized for having an inefficient model architecture due to a substantial backbone and neck. Throughout the decade, Convolutional Neural Networks (CNNs), notably ResNet [13], have been frequently employed as backbone networks due to their outstanding performance in numerous downstream tasks [14], including biometric recognition [15], [16], medical segmentation [17], and image dehazing [18]. Nevertheless, owing to the constraints of the receptive field and short-range dependencies, they encounter issues with occlusion, especially prevalent in driving scene object detection [19]. Recently, vision models based on Trans- formers have demonstrated exceptional success as backbone networks [20] in various computer vision applications, or as segmentation encoder-decoder architectures [21], leverag- ing their global receptive field and long-range dependencies, arXiv:2502.07417v1 [cs.CV] 11 Feb 2025"
+}

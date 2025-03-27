@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Under-approximating Worst-case Resource Usage"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantitative Under-approximate Logic",
+    "Quantitative Hoare Logic",
+    "Incorrectness Logic"
+  ],
+  "results": [
+    "Sound and complete with respect to a simple IMP-like language",
+    "Demonstrated through case studies involving arrays, pointers, and procedure calls"
+  ],
+  "title": "A Program Logic for Under-approximating Worst-case Resource Usage.pdf",
+  "abstract": "Understanding and predicting the worst-case resource usage is crucial for software quality; however, existing methods either over-approximate with potentially loose bounds or under-approximate with- out asymptotic guarantees. This paper presents a program logic to under-approximate worst-case resource usage, adapting incorrectness logic (IL) to reason quantitatively about resource consump- tion. We propose quantitative forward and backward under-approximate (QFUA and QBUA) triples, which generalize IL to identify execution paths leading to high resource usage. We also introduce a variant of QBUA that supports reasoning about high-water marks. Our logic is proven sound and complete with respect to a simple IMP-like language, and we demonstrate its utility through case studies involving arrays, pointers, and procedure calls. 2012 ACM Subject Classification Theory of computation \u2192Programming logic Keywords and phrases Under-approximation, Incorrectness logic, Worst-case Resource Bounds 1 Introduction Understanding and predicting the worst-case resource usage of programs is a fundamen- tal challenge in computer science. Knowing the bounds of resource usage, whether for memory consumption, CPU cycles, or network bandwidth, is crucial for ensuring system reliability, performance, and security. However, precisely determining these bounds is no- toriously difficult. Static methods for analyzing resource usage tend to over-approximate worst-case scenarios, resulting in non-tight resource bounds and, consequently, false posi- tives. On the other hand, dynamic methods, such as testing, can typically produce specific inputs of a certain size to induce high resource usage\u2014thus under-approximating worst-case scenarios\u2014but do not offer an asymptotic characterization of the worst-case behavior. This paper aims to develop a program logic to under-approximate worst-case resource usage and offer a compositional method for identifying scenarios with high resource usage. Previous approaches to resource analysis have mainly concentrated on over- approximation methods, including abstract interpretation and constraint-based techniques. These techniques aim to compute sound upper bounds on resource usage by taking into account all possible program behaviors. However, they may produce non-tight bounds and typically do not indicate which inputs would result in the worst-case resource usage. Under- approximation techniques, such as fuzzing and dynamic analysis, have been used to identify specific resource-intensive execution paths. However, these techniques lack compositionality and generality for comprehensive resource analysis. Incorrectness logic (IL), which has been successfully applied to bug detection, offers a promising alternative by providing a formal foundation for under-approximate reasoning [19]. Recent work has adapted IL to prove non- termination [24], i.e., a qualitative argument about resource usage. However, adapting IL to prove quantitative resource bounds has not been explored. In this paper, we adapt IL to under-approximate worst-case resource usage. The key idea is to use under-approximate triples to reason about the existence of execution paths that lead to high resource usage. Specifically, we introduce a new form of under-approximate arXiv:2502.11091v1 [cs.LO] 16 Feb 2025"
+}

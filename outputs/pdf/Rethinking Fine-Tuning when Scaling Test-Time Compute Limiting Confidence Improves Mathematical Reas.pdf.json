@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mathematical Reasoning",
+    "Code Generation"
+  ],
+  "datasets": [
+    "MATH",
+    "MiniF2F",
+    "LeanDojo"
+  ],
+  "methods": [
+    "Direct Coverage Optimization (DCO)",
+    "Step-wise DCO (DCOstep)",
+    "Approximate DCO (DCOa)"
+  ],
+  "results": [
+    "DCO significantly outperforms CE loss in pass@N test coverage",
+    "Improved mathematical reasoning on MATH and MiniF2F benchmarks",
+    "Enhanced theorem proving performance on LeanDojo"
+  ],
+  "title": "Rethinking Fine-Tuning when Scaling Test-Time Compute Limiting Confidence Improves Mathematical Reas.pdf",
+  "abstract": "Recent progress in large language models (LLMs) highlights the power of scaling test-time com- pute to achieve strong performance on complex tasks, such as mathematical reasoning and code generation. This raises a critical question: how should model training be modified to optimize performance under a subsequent test-time com- pute strategy and budget? To explore this, we focus on pass@N, a simple test-time strategy that searches for a correct answer in N independent samples. We show, surprisingly, that training with cross-entropy (CE) loss can be misaligned with pass@N in that pass@N accuracy decreases with longer training. We explain the origins of this misalignment in terms of model overconfidence induced by CE, and experimentally verify our pre- diction of overconfidence as an impediment to scaling test-time compute via pass@N. Further- more we suggest a principled, modified training loss that is better aligned to pass@N by limiting model confidence and rescuing pass@N test per- formance. Our algorithm demonstrates improved mathematical reasoning on MATH and MiniF2F benchmarks under several scenarios: (1) provid- ing answers to math questions; and (2) proving theorems by searching over proof trees of varying shapes. Overall our work underscores the impor- tance of co-designing two traditionally separate phases of LLM development: training-time proto- cols and test-time search and reasoning strategies. 1. Introduction Scaling test-time compute has been integral to unprece- dented improvements in LLMs\u2019 reasoning skills for com- *These authors contributed equally to this work. 1Stanford University, California, United States. 2University of Michigan, Ann Arbor, Michigan, United States. plex tasks such as math and coding. Thus, test-time compute has emerged as a new dimension for improv- ing LLMs, leading to a key tradeoff between allocating additional compute to inference versus pretraining (Snell et al., 2024). Diverse test-time strategies include Chain- of-Thought (CoT) (Wei et al., 2022), tree-of-thought (Yao et al., 2023), self-consistency (Wang et al., 2023), self- reflection (Shinn et al., 2023), self-critique (Saunders et al., 2022), self-verification (Weng et al., 2023) and Monte- Carlo tree search (Zhao et al., 2023). These have shown great success in boosting model performance in the post- training phase or at inference time. More recently, Ope- nAI\u2019s O1 model (OpenAI, 2024) and DeepSeek\u2019s R1 model (DeepSeek-AI: Daya Guo et al., 2025) have com- bined some of these strategies with reinforcement learning to generate high-quality reasoning traces for problems of various difficulty levels, demonstrating clear performance improvements as more test-time compute is allocated. These successes fit into a broader paradigm in which a frontier model is first fine-tuned on a reasoning task with su- pervised fine-tuning (SFT) (Wei et al., 2022; Ouyang et al., 2022; Chung et al., 2022), and then a test-time algorithm is applied to model outputs or reasoning traces to improve performance (Yao et al., 2023; Wang et al., 2023; Chen et al., 2021). Many test-time algorithms are independent of the fine-tuning process. As a result, the fine-tuning is agnostic to and thus decoupled from the test-time algorithm (Chow et al., 2024). However, for a given choice of test-time strat- egy and compute budget, it is not a priori clear which fine- tuning approach, including the loss objective, would be best aligned with the test-time strategy so as to maximize the test accuracy under the overall strategy. Our work studies the problem of aligning fine-tuning and test-time algorithms. We consider what is perhaps the sim- plest setting, supervised fine-tuning with CE loss under the pass@N test-time strategy. This setting reveals a case of misalignment: standard SFT is not the right choice for maximizing performance under pass@N. We believe that this kind of misalignment presents itself in several combi- nations of fine-tuning/test-time approaches, motivating our 1 arXiv:2502.07154v1 [cs.LG] 11 Feb 2025"
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neurosymbolic Reasoning"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10",
+    "LEAF-ID",
+    "Pathfinder",
+    "Common Voice Clips"
+  ],
+  "methods": [
+    "Scallop",
+    "Neural Networks"
+  ],
+  "results": [
+    "NESY models outperform NN models on MNIST tasks",
+    "NESY models have higher adversarial robustness on MNIST tasks",
+    "NESY models have higher accuracy and lower disparity on Common Voice Clips"
+  ],
+  "title": "On the Promise for Assurance of Differentiable Neurosymbolic Reasoning Paradigms.pdf",
+  "abstract": "To create usable and deployable Artificial Intelligence (AI) systems, there requires a level of assurance in performance under many different conditions. Many times, deployed machine learning systems will require more classic logic and reasoning performed through neurosymbolic programs jointly with artificial neural network sensing. While many prior works have examined the assurance of a single compo- nent of the system solely with either the neural network alone or entire enterprise systems, very few works have examined the assurance of integrated neurosymbolic systems. Within this work, we assess the assurance of end-to-end fully differen- tiable neurosymbolic systems that are an emerging method to create data-efficient and more interpretable models. We perform this investigation using Scallop, an end-to-end neurosymbolic library, across classification and reasoning tasks in both the image and audio domains. We assess assurance across adversarial robustness, calibration, user performance parity, and interpretability of solutions for catching misaligned solutions. We find end-to-end neurosymbolic methods present unique opportunities for assurance beyond their data efficiency through our empirical results but not across the board. We find that this class of neurosymbolic models has higher assurance in cases where arithmetic operations are defined and where there is high dimensionality to the input space, where fully neural counterparts struggle to learn robust reasoning operations. We identify the relationship between neurosymbolic models\u2019 interpretability to catch shortcuts that later result in in- creased adversarial vulnerability despite performance parity. Finally, we find that the promise of data efficiency is typically only in the case of class imbalanced reasoning problems. 1 Introduction The need to assure the performance and deployment of Artificial Intelligence (AI)-enabled systems is hitting a peak as many demonstrations of the technology have shown applicability to a growing number of tasks in a plethora of domains. Modern methods, especially in Machine Learning (ML) model development, focus on advances in deep learning or neural networks. Such models create many opportunities but also obfuscate our ability to model behavior for testing assurance encompassing safety, security, cross user-performance, and interpretability. When deploying AI to critical applications like controlling industrial systems, autonomous operation, and other applications with risks for people and their environments, stakeholders are rightfully demanding higher levels of assurance. The past decade in particular has outlined many risks of lack of cross user-performance [11], lack of robustness to data drift [35], and security vulnerabilities [7] for systems using machine learning. \u2217Corresponding author: firstname.lastname@pnnl.gov Preprint. Under review. arXiv:2502.08932v1 [cs.AI] 13 Feb 2025"
+}

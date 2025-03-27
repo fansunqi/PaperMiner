@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Large Language Model (LLM) Pruning"
+  ],
+  "datasets": [
+    "C4"
+  ],
+  "methods": [
+    "Minimax Optimization",
+    "Proximal Gradient Updates",
+    "LoRA Module",
+    "Distillation Loss"
+  ],
+  "results": [
+    "Improved performance on zero-shot tasks",
+    "Uniform inter-layer structures",
+    "Maintained high model capabilities at various sparsity levels"
+  ],
+  "title": "MaskPrune Mask-based LLM Pruning for Layer-wise Uniform Structures.pdf",
+  "abstract": "The remarkable performance of large language models (LLMs) in various language tasks has attracted considerable attention. However, the ever-increasing size of these models presents growing challenges for deployment and infer- ence. Structured pruning, an effective model compression technique, is gaining increasing attention due to its ability to enhance infer- ence efficiency. Nevertheless, most previous optimization-based structured pruning methods sacrifice the uniform structure across layers for greater flexibility to maintain performance. The heterogeneous structure hinders the effective utilization of off-the-shelf inference accelera- tion techniques and impedes efficient configu- ration for continued training. To address this issue, we propose a novel masking learning paradigm based on minimax optimization to obtain the uniform pruned structure by optimiz- ing the masks under sparsity regularization. Ex- tensive experimental results demonstrate that our method can maintain high performance while ensuring the uniformity of the pruned model structure, thereby outperforming exist- ing SOTA methods. 1 Introduction Large Language Models (LLMs), such as Ope- nAI\u2019s GPT series (Achiam et al., 2023) and Meta\u2019s LLaMA (Touvron et al., 2023a,b), have made sub- stantial advancements in the domain of Natural Language Processing (NLP). These models exhibit robust capabilities in language understanding and generation, facilitated by extensive pre-training and fine-tuning. However, as the size of these models continues to expand, their computational and stor- age demands increase sharply, presenting signifi- cant challenges for practical applications. Model compression, a vital approach to reducing mem- ory footprint and computational load during model deployment, offers unique benefits across various domains. Techniques such as pruning (Frantar and Figure 1: Compresso/NutePrune results in hetero- geneous inter-layer structures, whereas MaskPrune achieves uniform inter-layer structures, which is friendly to inference deployment and continual training. Alistarh, 2023; Ma et al., 2023; Sun et al., 2023), quantization (Frantar et al., 2023; Xiao et al., 2023; Lin et al., 2024), knowledge distillation (Gu et al., 2024; Agarwal et al., 2023), and low-rank factoriza- tion (Yuan et al., 2023; Wang et al., 2024) can sig- nificantly decrease the number of model parameters and computational complexity, thereby enabling large-scale language models to function efficiently in resource-constrained environments. The pruning technique reduces the size and com- putational complexity of the models by eliminating redundant parameters, which can generally be cat- egorized into unstructured pruning (Frantar and Alistarh, 2023; Sun et al., 2023; Dong et al., 2024), semi-structured pruning (Mishra et al., 2021), and structured pruning (Ma et al., 2023; Xia et al., 2023; An et al., 2023). Unstructured pruning compresses models by removing individual parameters, result- ing in sparse weight matrices that consume less memory. However, without dedicated hardware support, the updated models do not achieve faster inference, thereby still imposing computational bur- dens during the inference process. Semi-structured pruning offers some speed improvements, but these are limited compared to those achieved by struc- tured pruning. Structured pruning adopts a more arXiv:2502.14008v1 [cs.CL] 19 Feb 2025"
+}
