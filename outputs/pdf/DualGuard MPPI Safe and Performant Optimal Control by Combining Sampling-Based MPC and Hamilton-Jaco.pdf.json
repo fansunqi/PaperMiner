@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Safe and Performant Optimal Control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hamilton-Jacobi Reachability Analysis",
+    "Model Predictive Path Integral (MPPI)",
+    "Least Restrictive Filtering"
+  ],
+  "results": [
+    "Improved performance compared to existing MPPI methods",
+    "Increased sample efficiency",
+    "No compromise on safety"
+  ],
+  "title": "DualGuard MPPI Safe and Performant Optimal Control by Combining Sampling-Based MPC and Hamilton-Jaco.pdf",
+  "abstract": "\u2014 Designing controllers that are both safe and per- formant is inherently challenging. This co-optimization can be formulated as a constrained optimal control problem, where the cost function represents the performance criterion and safety is specified as a constraint. While sampling-based methods, such as Model Predictive Path Integral (MPPI) control, have shown great promise in tackling complex optimal control problems, they often struggle to enforce safety constraints. To address this limitation, we propose DualGuard-MPPI, a novel frame- work for solving safety-constrained optimal control problems. Our approach integrates Hamilton-Jacobi reachability analysis within the MPPI sampling process to ensure that all generated samples are provably safe for the system. On the one hand, this integration allows DualGuard-MPPI to enforce strict safety constraints; at the same time, it facilitates a more effective exploration of the environment with the same number of samples, reducing the effective sampling variance and leading to better performance optimization. Through several simulations and hardware experiments, we demonstrate that the proposed approach achieves much higher performance compared to existing MPPI methods, without compromising safety. I. INTRODUCTION Co-optimizing safety and performance is a critical chal- lenge in the design of controllers for autonomous systems, especially in safety-critical domains such as autonomous vehicles, UAVs, and robotics. In such settings, controllers must ensure that performance objectives (such as efficiency, This work is supported by the University of Santiago de Chile, the NSF CAREER Program under award 2240163 and the DARPA ANSR program. 1University of Southern California. {javierbo, yciftci}@usc.edu. 2Olin College of Engineering. lraus@olin.edu. 3Stanford University. somil@stanford.edu. speed, or agility) are met while guaranteeing that safety constraints are never violated. Achieving this balance can be viewed as a constrained optimal control problem, where the goal is to satisfy safety constraints throughout the trajectory while optimizing performance objectives. Several methods have been proposed to address this co- optimization challenge. Dynamic programming (DP) offers a rigorous solution to constrained optimization [1], [2]. Still, it is computationally intractable for many real-time applications due to the \u201ccurse of dimensionality\u201d, often asso- ciated with DP-based solutions. On the other hand, MPC is more feasible for real-time applications, leveraging its ability to generate optimized control sequences over a receding horizon [3], [4]. Among these, Model Predictive Path Integral (MPPI) control is a sampling-based MPC method that has gained significant popularity due to its flexibility in handling complex dynamics, uncertainties, and non-linear systems [5], [6]. MPPI leverages stochastic sampling to optimize control trajectories, offering a scalable and efficient way to gener- ate control actions. However, ensuring safety within MPPI has proven challenging, as the basic framework does not inherently account for hard safety constraints. Consequently, various extensions have been proposed to incorporate safety, each solving the co-optimization problem differently. Classical MPPI-based approaches encourage safety con- straints by penalizing unsafe sampled trajectories in the cost function, such that they are effectively ignored in the sample aggregation process. However, this approach cannot guarantee safety and its satisfaction depends on the penalty function. Another drawback is that computation is wasted on arXiv:2502.01924v1 [eess.SY] 4 Feb 2025"
+}

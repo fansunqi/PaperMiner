@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/Steditor/Enumeration-of-Solution-Parts"
+  ],
+  "tasks": [
+    "Enumerating Edges of a Spanning Tree"
+  ],
+  "datasets": [
+    "Random undirected unweighted graphs"
+  ],
+  "methods": [
+    "Algorithmic upper bounds and matching unconditional adversary lower bounds"
+  ],
+  "results": [
+    "For undirected unweighted graphs, a delay in the order of the average degree \u2206",
+    "For graphs with weights, a delay in the order of the maximum degree and the average runtime per emitted edge of a total-time algorithm",
+    "For directed weighted graphs, no meaningful enumeration is possible"
+  ],
+  "title": "Emit As You Go Enumerating Edges of a Spanning Tree.pdf",
+  "abstract": "Classically, planning tasks are studied as a two-step process: plan creation and plan execution. In situations where plan creation is slow (for example, due to expensive information access or complex constraints), a natural speed-up tactic is interleaving planning and execution. We implement such an approach with an enumeration algorithm that, after little preprocessing time, outputs parts of a plan one by one with little delay in-between consecutive outputs. As concrete planning task, we consider efficient connectivity in a network formalized as the minimum spanning tree problem in all four standard variants: (un)weighted (un)directed graphs. Solution parts to be emitted one by one for this concrete task are the individual edges that form the final tree. We show with algorithmic upper bounds and matching unconditional adversary lower bounds that efficient enumeration is possible for three of four problem variants; specifically for undirected unweighted graphs (delay in the order of the average degree), as well as graphs with either weights (delay in the order of the maximum degree and the average runtime per emitted edge of a total-time algorithm) or directions (delay in the order of the maximum degree). For graphs with both weighted and directed edges, we show that no meaningful enumeration is possible. Finally, with experiments on random undirected unweighted graphs, we show that the theoretical advantage of little preprocessing and delay carries over to practice. 2012 ACM Subject Classification Theory of computation \u2192Graph algorithms analysis Keywords and phrases solution part enumeration, preprocessing vs. delay, spanning tree Supplementary Material The source code for our experiments is published as follows (including algorithm implementations and generators for random input instances): Software (Source Code): https://github.com/Steditor/Enumeration-of-Solution-Parts archived at swh:1:rev:f69e607d59c7058c57c2a217db8b509f8a5f14e2 1 Introduction In many complex planning settings, such as path finding for robots in a storage facility, the combined time of planning and execution determines the overall efficiency. A natural way of optimizing this is to start execution before fully finishing planning [45, 32]. This approach generalizes to all kinds of multi-step processes, in which the output of an early step is needed to start working on a later one. In fact, with large input instances it can even be beneficial to employ an algorithm with worse total-time, if that algorithm produces the solution in the form of many solution parts and (while still running) emits them for following steps to process [27]. But how much speedup can actually be gained by this approach? We tackle this question for one of the most fundamental problems on networks: cost-efficient connectivity. Be it networks for communication, electricity, transport or water supply \u2013 both for planning problems and for the analysis of existing infrastructure it is a central task to connect every node to all other nodes by a Minimum Spanning Tree (MST). Besides being useful as output on their own, MSTs are also used as input for many complex algorithmic tasks, e. g. for arXiv:2502.10279v1 [cs.DS] 14 Feb 2025"
+}

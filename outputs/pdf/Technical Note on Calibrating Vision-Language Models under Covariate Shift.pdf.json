@@ -1,0 +1,45 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision classification",
+    "Domain generalization",
+    "Low-shot learning"
+  ],
+  "datasets": [
+    "Caltech101",
+    "Imagenet",
+    "EuroSAT",
+    "StanfordCars",
+    "FGVCAircraft",
+    "OxfordPets",
+    "SUN397",
+    "Food101",
+    "Flowers102",
+    "DTD",
+    "UCF101",
+    "PACS",
+    "VLCS",
+    "Office-Home",
+    "Imagent-1k",
+    "ImageNet A (Art)",
+    "ImageNet-V2 (V2)",
+    "ImageNet R (Real)",
+    "ImageNet S (Sketch)"
+  ],
+  "methods": [
+    "Fisher information penalty",
+    "Confidence misalignment penalty",
+    "CLIP",
+    "Prompt learning",
+    "CoOp"
+  ],
+  "results": [
+    "Accuracy improvement",
+    "Calibration improvement",
+    "Expected Calibration Error (ECE) reduction"
+  ],
+  "title": "Technical Note on Calibrating Vision-Language Models under Covariate Shift.pdf",
+  "abstract": "Despite being a successful example of emerging capability, vision-language foundation models for low-shot vision classification have a limited ability to sufficiently generalize to the target data distribution due to sample poverty, leading to sensitivity to variations in the data. A popular mitigation strategy is finetuning over multiple datasets, but domain generalization is expensive when practiced in this manner. This work examines both covariate shift between pre-training data and the underspecified target data, and confidence misalignment, where the model\u2019s prediction confidence amplified by the limited data availability. We propose Confidence-Calibrated Covariate Shift Correction (C3SC), a unified framework to mitigate both covariate shift and confidence misalignment. C3SC leverages Fisher information penalty for covariate shift correction and confidence misalignment penalty (CMP) to lower confidence on misclassified examples. Experimental results across various vision and covariate shift datasets demonstrates that C3SC significantly improves in calibration (ECE) by 5.82% at maximum. C3SC shows better robustness as well by showing 3.5% improvement in accuracy metric on challenging covariate shift datasets, making C3SC a promising solution for reliable real-world vision-language low-shot applications under distribution shift. 1 Introduction Foundation models like CLIP Radford et al. [2021], Flamingo Alayrac et al. [2022], Align Abdul Samadh et al. [2024] serve as the backbone of modern learning-based decision systems particularly for downstream vision classification tasks. However, real-world applications relying on these systems face two challenges. The first is, covariate shift, where the features distribution P(x) changes between source and target data i.e P(x)tr \u0338= P(x)ts while the conditional distribution remains unchanged P(y|x)tr = P(y|x)ts Shimodaira [2000], Sugiyama and M\u00fcller [2005], Cortes and Mohri [2014], Khan et al.. This is being extensively studied under the domain generalization setting with foundation models Xiao et al. [2024], Murugesan et al. [2025], Wen et al.. The second is confidence misalignment, where the model,s f(x) predicted confidence score does not reflect the likelihood of data Gal and Ghahramani [2016], Guo et al. [2017], Kumar et al. [2019]. These issues are particularly prevalent in low-shot learning regimes, where limited labeled data lead to unstable target-dataset distributions. The distribution shift is inherent to the setting, and the low availability of target data unreliable predictionsKhan and Syed [2025] without that lack of certainty being reflected in predictive confidence. Existing methods Khan et al., Murugesan et al. [2025], Wang et al. [2024], Khan and Syed [2025], address these problems individually. In this work, we present a unified solution which we refer Confidence-Calibrated Covariate Shift Correction (C3SC). Our framework incorporate Fisher information-based penalty the for correction of covariate \u2217All authors contributed equally to this work. arXiv:2502.07847v1 [cs.CV] 11 Feb 2025"
+}

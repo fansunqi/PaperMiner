@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/OpenRobotLab/EaSe"
+  ],
+  "tasks": [
+    "3D Visual Grounding"
+  ],
+  "datasets": [
+    "ScanRefer",
+    "Nr3D"
+  ],
+  "methods": [
+    "Evolvable Symbolic Visual Grounder (EaSe)"
+  ],
+  "results": [
+    "Acc@0.25: 49.2%",
+    "Acc@0.25: 52.9%",
+    "Grounding Time: 2.1s",
+    "Token Consumption: 1.2k"
+  ],
+  "title": "Evolving Symbolic 3D Visual Grounder with Weakly Supervised Reflection.pdf",
+  "abstract": "chair_1 is nearer to table_1, but no object is on the right. Now check chair_2\u2026 Result: The target object is door_1. \u2705 accurate long context online online LLM generation relation functions > Loc(\u201ctable\u201d) [table_1] > Near(table_1) [chair_1] > right(chair_1) [] Result: Empty.\u274c executor object locations short context not accurate function annotation relation encoder offline test suite feedback executor object locations relation encoder > Near(table_1, chair_1) 0.9 > Right(door_1, chair_1) 0.1 > Near(table_1, chair_1) 0.7 > Near(table_1, chair_1) 1.0 > 0.9 * 0.0 < 0.7 * 1.0 True Result: The target object is door_1. \u2705 short context accurate no function annotation offline LLM generation Agents Visprog. Ours Grounding Performance Query: Find the door on the right of the chair near a table. Figure 1 | Comparision between two previous training-free 3DVG methods and our method(EaSe ). For a query, agent based methods employ multimodal LLM to process scene information. They are more accurate, but their online LLM generation increases time consumption. Visual programming (Visprog.) method uses offline annoated relation functions, thus reduces grounding time, but it doesn\u2019t perform well. In contrast, EaSe utilizes offline LLM generation and optimization before grounding and improves relation functions to relation encoders. As a result, EaSe \u2019s accuracy is close to agents but it\u2019s consumption is much lower. 3D visual grounding (3DVG) is challenging because of the requirement of understanding on visual information, language and spatial relationships. While supervised approaches have achieved superior performance, they are constrained by the scarcity and high cost of 3D vision-language datasets. On the other hand, LLM/VLM based agents are proposed for 3DVG, eliminating the need for training data. However, these methods incur prohibitive time and token costs during inference. To address the challenges, we introduce a novel training-free symbolic framework for 3D visual grounding, namely Evolvable Symbolic Visual Grounder (EaSe ), that offers significantly reduced inference costs compared to previous agent-based methods while maintaining comparable performance. EaSe uses LLM generated codes to compute on spatial relationships. EaSe also implements an automatic pipeline to evaluate and optimize the quality of these codes and integrate VLMs to assist in the grounding process. Experimental results demonstrate that EaSe achieves 52.9% accuracy on Nr3D dataset and 49.2% Acc@0.25 on ScanRefer, which is top-tier among training-free methods. Moreover, it substantially reduces the inference time and cost, offering a balanced trade-off between performance and efficiency. Codes are available at https://github.com/OpenRobotLab/EaSe. Keywords: 3D Visual Grounding, Large Language Model, Code Generation 1 arXiv:2502.01401v2 [cs.CV] 13 Feb 2025"
+}

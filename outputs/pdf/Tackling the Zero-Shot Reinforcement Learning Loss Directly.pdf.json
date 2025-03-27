@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Zero-shot Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Successor Features",
+    "Forward-Backward Framework",
+    "VISR"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Tackling the Zero-Shot Reinforcement Learning Loss Directly.pdf",
+  "abstract": "Zero-shot reinforcement learning (RL) methods aim at instantly producing a behavior for an RL task in a given environment, from a description of the reward function. These methods are usually tested by evaluating their average performance on a series of downstream tasks. Yet they cannot be trained directly for that objective, unless the distribution of downstream tasks is known. Existing approaches either use other learning criteria [BBQ+18, TRO23, TO21, HDB+19], or explicitly set a prior on downstream tasks, such as reward functions given by a random neural network [FPAL24]. Here we prove that the zero-shot RL loss can be optimized directly, for a range of non-informative priors such as white noise rewards, tem- porally smooth rewards, \u201cscattered\u201d sparse rewards, or a combination of those. Thus, it is possible to learn the optimal zero-shot features algorith- mically, for a wide mixture of priors. Surprisingly, the white noise prior leads to an objective almost iden- tical to the one in VISR [HDB+19], via a di\ufb00erent approach. This shows that some seemingly arbitrary choices in VISR, such as Von Mises\u2013Fisher distributions, do maximize downstream performance. This also suggests more e\ufb03cient ways to tackle the VISR objective. Finally, we discuss some consequences and limitations of the zero- shot RL objective, such as its tendency to produce narrow optimal features if only using Gaussian dense reward priors. 1 Introduction Zero-shot reinforcement learning (RL) methods aim at instantly producing a behavior for an RL task in a given environment, from a description of the reward function. This is done after an unsupervised training phase. Such methods include, for instance, universal successor features (SFs, [BBQ+18]) and the forward-backward framework (FB, [TRO23, TO21]). Zero-shot RL is usually tested by reporting average performance on a series of downstream tasks: a reward function r is sampled from a distribu- tion \u03b2test of tasks, a reward representation z = \u03a6(r) is computed, 1 and a 1A requirement of zero-shot RL is that this computation should be scalable, with z of reasonable size. Without a computational constraint, one could just pre-compute all optimal policies of all possible downstream tasks up to some degree of approximation. 1"
+}

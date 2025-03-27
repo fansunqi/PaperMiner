@@ -1,0 +1,24 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Secure Remote Computation",
+    "Matrix-Vector Multiplication",
+    "Matrix-Matrix Multiplication"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LPN Hardness Assumption",
+    "Pseudorandom Vector Generation",
+    "Remote Matrix-Vector Multiplication",
+    "Secure Matrix-Matrix Multiplication"
+  ],
+  "results": [
+    "Sublinear Overhead for Server",
+    "Amortized Client Cost O((m+n)n\u03b5)",
+    "Improved Client Performance"
+  ],
+  "title": "Sublinear-Overhead Secure Linear Algebra on a Dishonest Server.pdf",
+  "abstract": ". Most heavy computation occurs on servers owned by a sec- ond party. This reduces data privacy, resulting in interest in data-oblivious computation, which typically severely degrades performance. Secure and fast remote computation is particularly important for linear algebra, which comprises a large fraction of total computation and is best run on highly specialized hardware often only accessible through the cloud. We state the natural e\ufb03ciency and security desiderata for fast, remote, and data-oblivious linear algebra, conjecture the existence of matrix and vector families implying satisfactory algorithms, and provide such an al- gorithm contingent on common cryptographic assumptions. We achieve sublinear overhead for the server, dramatically reduced computation cost for the client, and various other practical advantages over previous algo- rithms. Keywords: Data Privacy, Data-Oblivious Computation, Delegation, Ho- momorphic Encryption, Cloud Computing, Algorithm E\ufb03ciency, Sublin- ear Overhead, LPN, Matrix Multiplication. 1 Introduction Data-oblivious delegated computation \u2013 computation in which the server does not learn anything meaningful about the input data, thanks to cryptographic scrambling by the client \u2013 has been of theoretical and practical interest for some time [34,33]. Arbitrary computation is quite di\ufb03cult in this setting \u2013 against a computationally bounded honest adversary, it requires Fully Homomorphic En- cryption (FHE) [36,19], which currently requires several orders of magnitude of computational overhead. As a result, much work on oblivious computation fo- cuses on either advancing schemes for oblivious computation with more limited adversaries [29,39], on e\ufb00orts toward developing and improving the runtime of FHE [18], or on Partially Homomorphic Encryption (PHE) [17,21], which at- tempts to e\ufb03ciently encrypt data such that some operations may be performed obliviously. A second paradigm, with di\ufb00erent uses, has also emerged. Secure Multiparty Computation (MPC) [37,20], in which several non-interacting adversarial servers attempt computation on the union of datasets private to each server, has allowed for a variety of recent developments in hidden computation protocols. In the context of remote computation, this framework generalizes the case of one client"
+}

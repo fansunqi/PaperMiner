@@ -1,0 +1,38 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Investigating higher-order shortest paths in hypergraphs"
+  ],
+  "datasets": [
+    "Copenhagen",
+    "Friends & Family",
+    "Kenyan",
+    "Malawi",
+    "LyonSchool",
+    "Thiers13",
+    "HS11",
+    "HS12",
+    "Elem1",
+    "Mid1",
+    "InVS13",
+    "InVS15",
+    "LH10",
+    "SFHH",
+    "Baboons",
+    "Congress-bills"
+  ],
+  "methods": [
+    "Higher-order reconstruction and aggregation",
+    "Calculating minimum-length paths",
+    "Randomisations"
+  ],
+  "results": [
+    "Higher-order interactions are crucial to introduce shortcuts into the system, enabling efficient communications",
+    "Higher-order interactions are often central in the system, while dyadic edges remain crucial to connect more peripheral nodes",
+    "Higher-order interactions play a crucial role in ensuring efficient connectivity in temporal higher-order networks"
+  ],
+  "title": "Higher-order Shortest Paths in Hypergraphs.pdf",
+  "abstract": "Nortier,1, \u2217Simon Dobson,1 and Federico Battiston2, \u2020 1 Department of Computer Science, University of St. Andrews, St. Andrews KY16, Scotland 2 Department of Network and Data Science, Central European University Vienna, Vienna 1100, Austria One of the defining features of complex networks is the connectivity properties that we observe emerging from local interactions. Recently, hypergraphs have emerged as a versatile tool to model networks with non-dyadic, higher-order interactions. Nevertheless, the connectivity properties of real-world hypergraphs remain largely understudied. In this work we introduce path size as a measure to characterise higher-order connectivity and quantify the relevance of non-dyadic ties for efficient shortest paths in a diverse set of empirical networks with and without temporal informa- tion. By comparing our results with simple randomised null models, our analysis presents a nuanced picture, suggesting that non-dyadic ties are often central and are vital for system connectivity, while dyadic edges remain essential to connect more peripheral nodes, an effect which is particularly pro- nounced for time-varying systems. Our work contributes to a better understanding of the structural organisation of systems with higher-order interactions. INTRODUCTION Networks, collections of nodes and their interactions, are one of the primary tools used to study complex sys- tems, allowing us to describe collective, emergent sys- tem properties which can not be captured by looking at the individual units in isolation [1]. A typical case is the emergence of global connectivity from local interac- tions, with many real-world networks characterised by the emergence of large connected components [2]. More- over, such systems display low diameter and are hence dubbed \u2018small-worlds\u2019 [3], supporting a relational struc- ture able to support both efficient system-wide commu- nications [4, 5] and make them easy to navigate [6]. The efficient structural connectivity of these systems has a profound impact on their functionality, with the pres- ence of shortcuts increasing the speed of contagion and the emergence of cooperation [7], and the ability of a sys- tem to synchronise [8]. For all these reasons, efficiently computing shortest paths in graphs is a problem that has attracted enormous interest in the research community for many decades [9], and it continues to do so. The analysis of connectivity has also produced relevant insights in the case of temporal networks, where edges are not permanent but created and destroyed over time [10]. Structures such as paths [11] and connected compo- nents [12] have been formulated in the setting where net- work structure evolves over time, as well as numerous measures of centrality, [13]. The addition of a tempo- ral dimension, in particular the presence of non-trivial temporal correlations [14] and memory [15] among inter- actions, has stimulated important research on increas- ingly complex temporal network models, able to repro- duce empirical patterns [16\u201318]. Moreover, since the first observations about epidemic processes [19, 20], network temporality was found to have interesting consequences \u2217Electronic address: bln1@st-andrews.ac.uk \u2020Electronic address: battistonf@ceu.edu also for the network dynamics, influencing the behaviour of individuals across a range of processes [21, 22]. Networks have classically modelled interactions through links, describing relations between pairs of entities only, even though in many real-world systems interactions simultaneously involve multiple nodes [23]. Recently, a wide variety of structural descriptors have been extended to account for the presence of such higher-order interactions, including algorithms for motif discovery [24] and analysis [25], community detection [26, 27], centrality measures [28], as well as network filtering [29] and reconstruction [30] procedures. Non-dyadic interactions generate new dynamical be- haviours and collective phenomena [31, 32], from conta- gion [33, 34] to synchronisation [35\u201337] and evolutionary games [38, 39]. More recently, temporality has also been considered in higher-order networks, from burstiness [40] and temporal-topological correlations [41], to Marko- vian [42, 43] and non-Markovian [44, 45] structural models. Despite these advances, characterising shortest paths and connectivity in systems with higher-order interac- tions remains an open problem. Recently, efforts have been devoted to characterise the concepts of distance [46] and walks [47] and networks in networks with non-dyadic ties, as well as proposing efficient algorithms [48] to ex- tract shortest paths in hypergraphs, limiting the analysis to static systems. In this work, we provide the first systematic investiga- tion of the effect of higher-order interactions on system connectivity across a variety of real-world datasets. We quantify the contribution of non-dyadic ties for short- est path length, computing length distribution, average path size and the fraction of purely dyadic segments in each path, and show that all such features are compati- ble with a simple null-model which preserves the higher- order degree distribution. Next, we consider time-varying interactions, and extend the concept of higher-order path and components to temporal hypergraphs. Our analy- sis of multiple real-world systems reveals the crucial role of higher-order interactions to ensure efficient connectiv- arXiv:2502.03020v2 [physics.soc-ph] 6 Feb 2025"
+}

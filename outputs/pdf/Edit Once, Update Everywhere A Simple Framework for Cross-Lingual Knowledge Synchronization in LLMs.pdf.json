@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cross-lingual Knowledge Synchronization in LLMs"
+  ],
+  "datasets": [
+    "Bi-ZsRE",
+    "MzsRE"
+  ],
+  "methods": [
+    "Cross-lingual Edition Instruction Tuning (XE-IT)",
+    "Target-language Preference Optimization (TL-PO)",
+    "ORPO"
+  ],
+  "results": [
+    "Average improvement of +8.19% in cross-lingual performance"
+  ],
+  "title": "Edit Once, Update Everywhere A Simple Framework for Cross-Lingual Knowledge Synchronization in LLMs.pdf",
+  "abstract": "Knowledge editing allows for efficiently adapt- ing large language models (LLMs) to new in- formation or corrections without requiring full retraining. However, prior methods typically focus on single-language or basic multilingual editing, failing to achieve true cross-linguistic knowledge synchronization. To address this, we present a simple and practical state-of-the- art (SOTA) recipe Cross-Lingual Knowledge Democracy Edit (X-KDE), designed to prop- agate knowledge from a dominant language to other languages effectively. Our X-KDE comprises two stages: (i) Cross-lingual Edition Instruction Tuning (XE-IT), which fine-tunes the model on a curated parallel dataset to mod- ify in-scope knowledge while preserving un- related information, and (ii) Target-language Preference Optimization (TL-PO), which ap- plies advanced optimization techniques to en- sure consistency across languages, fostering the transfer of updates. Additionally, we contribute a high-quality, cross-lingual dataset, specifi- cally designed to enhance knowledge transfer across languages. Extensive experiments on the Bi-ZsRE and MzsRE benchmarks show that X- KDE significantly enhances cross-lingual per- formance, achieving an average improvement of +8.19%, while maintaining high accuracy in monolingual settings. 1 Introduction Large Language Models (LLMs) (Achiam et al., 2023; Dubey et al., 2024; Yang et al., 2024a; Guo et al., 2025) have shown strong capabilities in nat- ural language understanding, generation, and rea- soning (Wei et al., 2022; Zhong et al., 2023a; Peng et al., 2023; Lu et al., 2024; Zhao et al., 2023). However, as world knowledge evolves, LLMs need methods to update outdated information efficiently. Knowledge editing (Yao et al., 2023) allows modifi- cations to specific knowledge while preserving un- *Correspond to Liang Ding liangding.liam@gmail.com English: What is the ruling party in the United Kingdom at present? Chinese: \u76ee\u524d\u82f1\u56fd\u7684\u6267\u653f\u515a\u662f\u4ec0\u4e48\uff1f Edited Model Edited Model English: the Labour Party Chinese: \u4fdd\u5b88\u515a English: the Labour Party Chinese: \u5de5\u515a Edit only in English. (a) Monolingual knowledge editing (b) Cross-Lingual knowledge editing The ruling party of the UK is the Labour Party. update query query response response Figure 1: Examples of (a) monolingual and (b) cross- lingual knowledge editing. In the former, the editing and verification languages are the same, while in the lat- ter, knowledge is transferred from the source language (e.g., English) to the target language (e.g., Chinese). related information, making it more cost-effective than retraining from scratch. Despite significant progress, most existing ap- proaches focus on monolingual editing (De Cao et al., 2021; Dai et al., 2021; Mitchell et al., 2021). As LLMs are increasingly required to handle mul- tilingual queries (Zhang et al., 2024; Wang et al., 2023b), monolingual solutions often fail. For exam- ple, when editing the response \"the Conservative Party\" to \"the Labor Party\" in English (Figure 1(a)), this update does not propagate to the Chinese ver- sion. Thus, expanding knowledge editing to cross- lingual settings is crucial to ensure that changes made in the source language are correctly applied to target languages. Currently, several studies on multilingual knowl- edge editing have emerged (Xu et al., 2022; Wang et al., 2023d; Wei et al., 2024; Xie et al., 2024; Liang et al., 2024). Some of these methods extend the edited language from single to multiple, while others prescribe source-language answers as the ground truth for multilingual queries. Both strate- gies fall short of achieving true cross-lingual knowl- edge democratization. For example, although IKE was regarded as the state-of-the-art method in pre- vious studies (Wang et al., 2023a; Xie et al., 2024), arXiv:2502.14645v1 [cs.CL] 20 Feb 2025"
+}

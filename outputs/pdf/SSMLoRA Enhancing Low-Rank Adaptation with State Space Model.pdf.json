@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/yuhkalhic/SSMLoRA"
+  ],
+  "tasks": [
+    "Parameter-efficient Fine-Tuning",
+    "Long-text Processing"
+  ],
+  "datasets": [
+    "GLUE",
+    "SuperGLUE",
+    "SQuAD",
+    "NarrativeQA",
+    "RACE"
+  ],
+  "methods": [
+    "State Space Model Low-Rank Adaptation (SSMLoRA)",
+    "Low-Rank Adaptation (LoRA)",
+    "Parameter-Efficient Fine-Tuning (PEFT)"
+  ],
+  "results": [
+    "Parameter reduction by half compared to LoRA",
+    "Improved performance on GLUE and SuperGLUE benchmarks",
+    "Enhanced long-text processing capabilities"
+  ],
+  "title": "SSMLoRA Enhancing Low-Rank Adaptation with State Space Model.pdf",
+  "abstract": "Fine-tuning is a key approach for adapting lan- guage models to specific downstream tasks, but updating all model parameters becomes im- practical as model sizes increase. Parameter- Efficient Fine-Tuning (PEFT) methods, such as Low-Rank Adaptation (LoRA), address this challenge by introducing additional adaptation parameters into pre-trained weight matrices. However, LoRA\u2019s performance varies across different insertion points within the model, highlighting potential parameter inefficiency due to unnecessary insertions. To this end, we propose SSMLoRA (State Space Model Low- Rank Adaptation), an extension of LoRA that incorporates a State Space Model (SSM) to interconnect low-rank matrices. SSMLoRA en- sures that performance is maintained even with sparser insertions. SSMLoRA allows the model to not only map inputs to a low-rank space for better feature extraction but also leverage the computations from the previous low-rank space. Our method achieves comparable per- formance to LoRA on the General Language Understanding Evaluation (GLUE) benchmark while using only half the parameters. Addi- tionally, due to its structure, SSMLoRA shows promise in handling tasks with longer input sequences.You can find our code here:https: //github.com/yuhkalhic/SSMLoRA 1 Introduction Fine-tuning (Park and Lee, 2021) is a technique aimed at enhancing model performance by adjust- ing the parameters of a pretrained model on specific task data. This approach effectively leverages the knowledge accumulated through large-scale train- ing, accelerating the model\u2019s adaptation to new tasks and improving results. However, fine-tuning requires substantial computational resources and is prone to overfitting when applied to small datasets. These limitations have prompted researchers to ex- *Corresponding Author plore more efficient parameter adjustment strate- gies. To address resource consumption and overfit- ting challenges in fine-tuning, researchers have pro- posed diverse strategies. Liu et al. (2024b) intro- duced an end-to-end hierarchical fine-tuning ap- proach to mitigate memory constraints associated with full-parameter fine-tuning. Concurrently, a significant research trend has emerged focusing on Parameter-Efficient Fine-Tuning (PEFT) (Houlsby et al., 2019) techniques, which are a set of methods designed to optimize parameter updates. PEFT up- dates only a small subset of the model\u2019s parameters while keeping the majority of pretrained parame- ters unchanged. LoRA (Hu et al., 2022), one of the most commonly used PEFT techniques, introduces low-rank matrices to adjust specific weights in the pretrained model instead of updating all parameters comprehensively. This allows the model to retain most of its structure while adapting to downstream tasks, particularly for transformer-based deep lan- guage models. Following the successful applica- tion of LoRA, various extensions have emerged to further enhance its adaptability and efficiency. These methods aim to improve the model\u2019s capa- bility to perform well in resource-constrained envi- ronments. Despite its success, LoRA and its variants still face certain challenges. SoRA (Ding et al., 2023) has indicated that LoRA may lead to unnecessary parameter overhead. More efficient methods, such as pruning certain low-rank matrices and using smaller scaling factors to reduce parameter usage, were employed. Moreover, compared to full fine- tuning, parameter-efficient methods tend to have limitations in capturing information, exacerbating the inherent difficulty that transformer-based mod- els face when processing long texts. This leads to the observation that, for many tasks, the number of parameters used by LoRA is excessive, while for tasks involving long-text processing in large arXiv:2502.04958v1 [cs.CL] 7 Feb 2025"
+}

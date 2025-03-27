@@ -1,0 +1,29 @@
+{
+  "Code links": [
+    "None"
+  ],
+  "Tasks": [
+    "Tabular Benchmark for Feature Shifts in Open Environment"
+  ],
+  "Datasets": [
+    "Eyemovements",
+    "Iris",
+    "Jannis",
+    "Penguins",
+    "Abalone",
+    "Bike",
+    "Concrete",
+    "Laptop"
+  ],
+  "Methods": [
+    "SC",
+    "MC-M",
+    "MC-L",
+    "RD"
+  ],
+  "Results": [
+    "None"
+  ],
+  "title": "TabFSBench Tabular Benchmark for Feature Shifts in Open Environment.pdf",
+  "abstract": "Tabular data is widely utilized in various ma- chine learning tasks. Current tabular learning research predominantly focuses on closed envi- ronments, while in real-world applications, open environments are often encountered, where distri- bution and feature shifts occur, leading to signifi- cant degradation in model performance. Previous research has primarily concentrated on mitigat- ing distribution shifts, whereas feature shifts, a distinctive and unexplored challenge of tabular data, have garnered limited attention. To this end, this paper conducts the first comprehensive study on feature shifts in tabular data and intro- duces the first tabular feature-shift benchmark (TabFSBench). TabFSBench evaluates impacts of four distinct feature-shift scenarios on four tabular model categories across various datasets and assesses the performance of large language models (LLMs) and tabular LLMs in the tabular benchmark for the first time. Our study demon- strates three main observations: (1) most tabular models have the limited applicability in feature- shift scenarios; (2) the shifted feature set impor- tance has a linear relationship with model per- formance degradation; (3) model performance in closed environments correlates with feature-shift performance. Future research direction is also explored for each observation. TabFSBench is released for public access by using a few lines of Python codes at https://github.com/LAMDASZ- ML/TabFSBench. 1. Introduction Tabular data (Altman & Krzywinski, 2017) represents a meticulously structured format of data, systematically ar- 1School of Intelligence Science and Technology, Nanjing Uni- versity, Nanjing, China 2National Key Laboratory for Novel Soft- ware Technology, Nanjing University, Nanjing, China 3School of Artificial Intelligence, Nanjing University, Nanjing, China. Cor- respondence to: Lan-Zhe Guo <guolz@nju.edu.cn>, Yu-Feng Li <liyf@nju.edu.cn>. ranged in rows and columns, where each row signifies a record and each column corresponds to a feature (Sahakyan et al., 2021). The applications of tabular data in real-world scenarios are extensive. For instance, tabular data is uti- lized in financial analyses, including credit scoring (West, 2000) and stock market predictions (Zhu et al., 2021). Fur- thermore, tabular data forms the foundation for various applications in the medical sector, encompassing disease di- agnosis (Y\u0131ld\u0131z & Kalayci, 2024) and pharmaceutical devel- opment (Meijerink et al., 2020). Existing machine learning models applicable to tabular data can be divided into four categories, containing tree-based models (Prokhorenkova et al., 2018; Ke et al., 2017), deep-learning models (Holl- mann et al., 2023; Ye et al., 2024), LLMs (Touvron et al., 2023; OpenAI, 2024), and specialized LLMs designed for tabular data (Hegselmann et al., 2023; Wang et al., 2023), namely tabular LLMs. These models have exhibited remark- able effectiveness across diverse tabular tasks. Most tabular models of the aforementioned four cate- gories are typically trained and tested in closed environ- ments (Zhou, 2022), where both the distribution of data and the space of features are maintained consistently. However, real-world tabular tasks frequently occur in open environ- ments (Parmar et al., 2023), where significant challenges such as distribution and feature shift occur. For example, in a traffic management system, alterations in traffic flow due to unforeseen incidents (e.g., extreme meteorological events) illustrate modifications in data distribution. Simultaneously, the failure or substitution of specific traffic monitoring equip- ment can induce feature shifts. These dynamic alterations underscore the complexity and unpredictability associated with machine learning tasks in open environments, necessi- tating the development of models characterized by enhanced adaptability and robustness. Therefore, recent research has progressively concentrated on the advancement of tabular models designed to acclimate effectively in open environ- ments. Distribution shift (Gardner et al., 2022) represents a chal- lenge in open environments that has attracted substantial research attention. It refers to the phenomenon where tabu- lar data processed by a model during the training and testing phases exhibit significant differences in distribution (Wang et al., 2021a). Numerous research have proposed solu- tions to address distribution shifts, including domain adapta- 1 arXiv:2501.18935v1 [cs.LG] 31 Jan 2025"
+}

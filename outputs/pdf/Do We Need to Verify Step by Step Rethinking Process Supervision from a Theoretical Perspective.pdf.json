@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Change of Trajectory Measure Lemma",
+    "Advantage Function Learning",
+    "Q-Function"
+  ],
+  "results": [
+    "No significant statistical edge between outcome and process supervision",
+    "Advantage function as an optimal process reward model",
+    "Q-function can lead to suboptimal results"
+  ],
+  "title": "Do We Need to Verify Step by Step Rethinking Process Supervision from a Theoretical Perspective.pdf",
+  "abstract": "As large language models have evolved, it has become crucial to distinguish between process super- vision and outcome supervision\u2014two key reinforcement learning approaches to complex reasoning tasks. While process supervision o\ufb00ers intuitive advantages for long-term credit assignment, the precise rela- tionship between these paradigms has remained an open question. Conventional wisdom suggests that outcome supervision is fundamentally more challenging due to the trajectory-level coverage problem, leading to signi\ufb01cant investment in collecting \ufb01ne-grained process supervision data. In this paper, we take steps towards resolving this debate. Our main theorem shows that, under standard data coverage assumptions, reinforcement learning through outcome supervision is no more statistically di\ufb03cult than through process supervision, up to polynomial factors in horizon. At the core of this result lies the novel Change of Trajectory Measure Lemma\u2014a technical tool that bridges return-based trajectory measure and step-level distribution shift. Furthermore, for settings with access to a veri\ufb01er or a rollout capability, we prove that any policy\u2019s advantage function can serve as an optimal process reward model, providing a direct connection between outcome and process supervision. These \ufb01ndings suggest that the empirically observed performance gap\u2014if any\u2014between outcome and process supervision likely stems from algorithmic limitations rather than inherent statistical di\ufb03culties, potentially transforming how we approach data collection and algorithm design for reinforcement learning. 1 Introduction Reward signals play a central role in reinforcement learning, and it has been hypothesized that intelligence and its associated abilities could emerge naturally from the simple principle of reward maximization (Silver et al., 2021). Over the past decade, this idea has been powerfully demonstrated across diverse AI systems. In specialized domains like AlphaGo Zero (Silver et al., 2017), superhuman performance has been achieved by maximizing simple, well-de\ufb01ned environmental reward signals. The paradigm has also proven transformative for general-purpose AI systems, particularly in training large language models (LLMs) using reinforcement learning (Ouyang et al., 2022; Bai et al., 2022; Jaech et al., 2024). However, for these more open-ended systems, the challenge of reward speci\ufb01cation is signi\ufb01cantly more complex, requiring reward signals to be learned from human-annotated data through reward modeling rather than being manually speci\ufb01ed. This challenge of reward speci\ufb01cation has led to the emergence of two fundamental supervision paradigms in reinforcement learning (e.g., Uesato et al., 2022; Lightman et al., 2023): \u2022 Outcome supervision: Reward feedback is provided only after the \ufb01nal output, based on the \ufb01nal outcomes or\u2014in the case of LLMs\u2014overall quality of the model\u2019s chain-of-thought (CoT). \u2022 Process supervision: Fine-grained reward feedback is provided based on the quality of each intermediate step (e.g., correctness of each step in the CoT in the case of LLMs). The choice between these paradigms represents a fundamental trade-o\ufb00in reinforcement learning system design. Process supervision o\ufb00ers several intuitive advantages: it provides more granular feedback, enables better interpretability of model decisions, and potentially allows for more e\ufb03cient credit assignment in 1"
+}

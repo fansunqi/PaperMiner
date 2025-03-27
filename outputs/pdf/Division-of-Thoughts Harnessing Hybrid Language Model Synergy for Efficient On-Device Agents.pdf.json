@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/tsinghua-fib-lab/DoT"
+  ],
+  "tasks": [
+    "On-device AI Agents",
+    "Edge-Cloud Collaboration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Task Decomposition",
+    "Task Scheduling",
+    "Plug-and-Play Adapter",
+    "Self-reinforced Training",
+    "\u03b1-Tree Algorithm"
+  ],
+  "results": [
+    "Average reasoning time reduced by 66.12%",
+    "API costs reduced by 83.57%",
+    "Comparable reasoning accuracy with best baseline methods"
+  ],
+  "title": "Division-of-Thoughts Harnessing Hybrid Language Model Synergy for Efficient On-Device Agents.pdf",
+  "abstract": "The rapid expansion of web content has made on-device AI as- sistants indispensable for helping users manage the increasing complexity of online tasks. The emergent reasoning ability in large language models offer a promising path for next-generation on- device AI agents. However, deploying full-scale Large Language Models (LLMs) on resource-limited local devices is challenging. In this paper, we propose Division-of-Thoughts (DoT), a collabora- tive reasoning framework leveraging the synergy between locally deployed Smaller-scale Language Models (SLMs) and cloud-based LLMs. DoT leverages a Task Decomposer to elicit the inherent plan- ning abilities in language models to decompose user queries into smaller sub-tasks, which allows hybrid language models to fully exploit their respective strengths. Besides, DoT employs a Task Scheduler to analyze the pair-wise dependency of sub-tasks and cre- ate a dependency graph, facilitating parallel reasoning of sub-tasks and the identification of key steps. To allocate the appropriate model based on the difficulty of sub-tasks, DoT leverages a Plug-and-Play Adapter, which is an additional task head attached to the SLM that does not alter the SLM\u2019s parameters. To boost adapter\u2019s task alloca- tion capability, we propose a self-reinforced training method that relies solely on task execution feedback. Extensive experiments on various benchmarks demonstrate that our DoT significantly reduces LLM costs while maintaining competitive reasoning accu- racy. Specifically, DoT reduces the average reasoning time and API costs by 66.12% and 83.57%, while achieving comparable reasoning accuracy with the best baseline methods. 1 CCS Concepts \u2022 Computing methodologies \u2192Natural language generation; \u2022 Computer systems organization \u2192Client-server architectures. \u2217Corresponding author. 1Code available at: https://github.com/tsinghua-fib-lab/DoT This work is licensed under a Creative Commons Attribution 4.0 International License. WWW \u201925, Sydney, NSW, Australia \u00a9 2025 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-1274-6/25/04 https://doi.org/10.1145/3696410.3714765 Keywords Large Language Model, LLM Reasoning, AI Agents, Edge-Cloud Collaboration ACM Reference Format: Chenyang Shao, Xinyuan Hu, Yutang Lin, and Fengli Xu\u2217. 2025. Division- of-Thoughts: Harnessing Hybrid Language Model Synergy for Efficient On-Device Agents. In Proceedings of the ACM Web Conference 2025 (WWW \u201925), April 28-May 2, 2025, Sydney, NSW, Australia. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3696410.3714765 1 Introduction As web content continues to grow exponentially, on-device AI as- sistants have become essential tools for helping users navigate the increasingly complex online landscape. This trend has led to the widespread adoption of personal assistants such as Google Assistant, Apple Siri, Amazon Alexa, Alibaba Tmall Genie, and Xi- aomi Xiao AI [16, 26], which have demonstrated their effectiveness in helping users digest enormous web content for tasks like web browsing [4, 19, 45], content searches [34], online shopping [28], and travel planning [7, 33]. These AI-powered agents enable web applications to harness the rapid advancements in AI technology, delivering a more personalized and convenient user experience. Amid recent AI breakthroughs in Large Language Models (LLMs), the emergent capabilities of commonsense reasoning [38] and in- context learning [8] are widely regarded as a key component for the next generation of on-device agents [12]. Therefore, revolutionizing AI personal assistants with LLM agents has become an important research problem and a critical focus for applications [21, 22]. However, deploying LLM agents on local devices presents signif- icant challenges, as it is impractical to run LLMs with trillions of pa- rameters on resource-constrained devices such as smartphones and personal computers [41]. Conversely, relying solely on cloud-based commercial LLMs raises concerns over privacy risks, unreliable connections, and high monetary costs [22]. Recent research has focused on training smaller-scale language models and developing model compression techniques [23, 24, 40], with the goal of cre- ating sub-10B parameter models that can be practically deployed on local devices, such as Llama 3 series [10] and Phi 3 series [1]. However, this approach introduces additional computational costs for training or compressing these models and inevitably results in arXiv:2502.04392v1 [cs.CL] 6 Feb 2025"
+}

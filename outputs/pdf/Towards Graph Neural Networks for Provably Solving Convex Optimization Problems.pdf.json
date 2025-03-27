@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/chendiqian/FeasMPNN"
+  ],
+  "tasks": [
+    "Convex optimization problems"
+  ],
+  "datasets": [
+    "Generic QP",
+    "SVM",
+    "Portfolio",
+    "QPLIB"
+  ],
+  "methods": [
+    "MPNN",
+    "IPM",
+    "Null space projection"
+  ],
+  "results": [
+    "Solution quality and feasibility outperform neural baselines",
+    "Generates high-quality predictions",
+    "Generalizes well to larger problem instances",
+    "Achieves faster solution times than Gurobi"
+  ],
+  "title": "Towards Graph Neural Networks for Provably Solving Convex Optimization Problems.pdf",
+  "abstract": "Recently, message-passing graph neural networks (MPNNs) have shown potential for solving com- binatorial and continuous optimization problems due to their ability to capture variable-constraint interactions. While existing approaches leverage MPNNs to approximate solutions or warm-start traditional solvers, they often lack guarantees for feasibility, particularly in convex optimization set- tings. Here, we propose an iterative MPNN frame- work to solve convex optimization problems with provable feasibility guarantees. First, we demon- strate that MPNNs can provably simulate standard interior-point methods for solving quadratic prob- lems with linear constraints, covering relevant problems such as SVMs. Secondly, to ensure fea- sibility, we introduce a variant that starts from a feasible point and iteratively restricts the search within the feasible region. Experimental results show that our approach outperforms existing neu- ral baselines in solution quality and feasibility, generalizes well to unseen problem sizes, and, in some cases, achieves faster solution times than state-of-the-art solvers such as Gurobi. 1. Introduction Message-passing graph neural networks (MPNNs) have re- cently been widely applied to optimization problems, includ- ing continuous and combinatorial domains (Bengio et al., 2021; Cappart et al., 2023; Scavuzzo et al., 2024). Due to their inherent ability to capture structured data, MPNNs are well-suited as proxies for representing and solving such problems, e.g., in satisfiability problems, literals and clauses can be modeled as different node types within a bipartite graph (Selsam et al., 2018). At the same time, in linear programming (LP), the variable-constraint interaction natu- rally forms a bipartite graph structure (Gasse et al., 2019). 1Department of Computer Science, RWTH Aachen Uni- versity, Aachen, Germany. Correspondence to: Chendi Qian <chendi.qian@log.rwth-aachen.de>. Under review. Consequently, MPNNs are used as a lightweight proxy to solve such optimization problems in a data-driven fashion. Most combinatorial optimization (CO) problems are NP- hard (Ausiello et al., 1999), making exact solutions com- putationally intractable for larger instances. To address this, it is often more practical to relax the integrality con- straints and solve the corresponding continuous optimiza- tion problems instead. This approach involves formulating a continuous relaxation as a proxy for the original prob- lem. After solving the relaxed problem, the resulting con- tinuous solutions guide the search in the discrete solution space (Schrijver, 1986). For example, solving the underly- ing linear programming relaxation in mixed-integer linear programming (MILP) is a crucial step for scoring candi- dates in strong branching (Achterberg et al., 2005), also using MPNNs (Gasse et al., 2019; Qian et al., 2024). Re- cent studies have extended MPNN-based modeling to other continuous optimization problems, especially quadratic pro- gramming (QP) (Li et al., 2024a; Gao et al., 2024; Xiong et al., 2024). Some existing methods integrate neural net- works with traditional solvers (Fan et al., 2023; Jung et al., 2022; Li et al., 2022b; 2024a; Liu et al., 2024). These ap- proaches either replace components of the solver with neural networks or use neural networks to warm-start the solver. In the former case, the methods remain limited by the solver\u2019s framework. In contrast, in the latter, the solver is still re- quired to solve a related problem to produce feasible and optimal solutions. However, the above works mainly aim to predict a near- optimal solution without ensuring the feasibility of such a solution. For example, Fioretto et al. (2020); Qian et al. (2024) propose penalizing constraint violations by adding an extra loss term during training without offering strict fea- sibility guarantees. Existing strategies typically fall into two categories: relying on solvers to produce feasible solutions or projecting neural network outputs into the feasible region. The first approach, where the neural network serves primar- ily as a warm-start for the solver, still relies on the solver for final solutions. The second approach, which involves projecting outputs into the feasible region, often requires solving an additional optimization problem and can be ef- ficient only for specific cases. Moreover, this projection 1 arXiv:2502.02446v1 [cs.AI] 4 Feb 2025"
+}

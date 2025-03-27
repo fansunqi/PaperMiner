@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Regression"
+  ],
+  "datasets": [
+    "Solar Irradiance",
+    "Audio Signal Prediction"
+  ],
+  "methods": [
+    "Online HiPPO Sparse Variational Gaussian Process Regression (OHS-GPR)",
+    "HiPPO Framework",
+    "Interdomain Gaussian Processes"
+  ],
+  "results": [
+    "Outperforms existing online GP methods in predictive performance and computational efficiency",
+    "Maintains long-term memory while adapting variational posterior in an online fashion"
+  ],
+  "title": "Recurrent Memory for Online Interdomain Gaussian Processes.pdf",
+  "abstract": "We propose a novel online Gaussian process (GP) model that is capable of captur- ing long-term memory in sequential data in an online regression setting. Our model, Online HiPPO Sparse Variational Gaussian Process Regression (OHS- GPR), leverages the HiPPO (High-order Polynomial Projection Operators) frame- work, which is popularized in the RNN domain due to its long-range memory modeling capabilities. We interpret the HiPPO time-varying orthogonal pro- jections as inducing variables with time-dependent orthogonal polynomial basis functions, which allows the SGPR inducing points to memorize the process his- tory. We show that the HiPPO framework fits naturally into the interdomain GP framework and demonstrate that the kernel matrices can also be updated online in a recurrence form based on the ODE evolution of HiPPO. We evaluate our method on time series regression tasks, showing that it outperforms the existing online GP method in terms of predictive performance and computational efficiency. 1 INTRODUCTION Gaussian processes (GPs) are a popular choice for modeling time series due to their functional expressiveness and uncertainty quantification abilities (Roberts et al., 2013; Fortuin et al., 2020). However, GPs are computationally expensive and memory intensive, with cubic and quadratic com- plexities, respectively. In online regression settings, such as weather modeling, the number of time steps can be very large, quickly making GPs infeasible. Although variational approximations, such as utilizing sparse inducing points (SGPR (Titsias, 2009); SVGP (Hensman et al., 2013; 2015a)) and Markovian GPs (Wilkinson et al., 2021), have been proposed to address the computational complex- ity, it would still be prohibitive to re-fit the GP model from scratch every time new data arrives. Bui et al. (2017) proposes an online sparse GP (OSGPR) learning method that sequentially updates the GP posterior distribution only based on the newly arrived data. However, as indicated in their paper, their models may not maintain the memory of the previous data, as the inducing points will inevitably shift as new data arrive. This is a major drawback, as their models may not model long- term memory unless using a growing number of inducing points. In deep learning, as an alternative to Transformers (Vaswani, 2017), significant works on state space models (SSMs) have been proposed to model long-term memory in sequential data. Originally pro- posed to instill long-term memory in recurrent neural networks, the HiPPO (High-order Polynomial Projection Operators) framework (Gu et al., 2020) provides mathematical foundations for compress- ing continuous-time signals into memory states through orthogonal polynomial projections. HiPPO is the basis for the state-of-the-art SSMs, such as the structured state space sequential (S4) model (Gu et al., 2022) and Mamba (Gu & Dao, 2023; Dao & Gu, 2024). HiPPO is computationally efficient and exhibits strong performance in long-range memory tasks. \u2217Equal Contribution 1 arXiv:2502.08736v1 [cs.LG] 12 Feb 2025"
+}

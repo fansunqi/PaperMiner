@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/InternLM/OREAL"
+  ],
+  "tasks": [
+    "Mathematical Reasoning"
+  ],
+  "datasets": [
+    "MATH-500",
+    "AIME2024",
+    "AIME2025-I",
+    "LiveMathBench",
+    "OlympiadBench"
+  ],
+  "methods": [
+    "OREAL",
+    "Behavior cloning",
+    "Reward shaping",
+    "Token-level reward model"
+  ],
+  "results": [
+    "7B model achieves 94.0 pass@1 accuracy on MATH-500",
+    "32B model achieves 95.0 pass@1 accuracy on MATH-500"
+  ],
+  "title": "Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning.pdf",
+  "abstract": "Reasoning abilities, especially those for solving complex math problems, are cru- cial components of general intelligence. Recent advances by proprietary companies, such as o-series models of OpenAI, have made remarkable progress on reasoning tasks. However, the complete technical details remain unrevealed, and the tech- niques that are believed certainly to be adopted are only reinforcement learning (RL) and the long chain of thoughts. This paper proposes a new RL framework, termed OREAL, to pursue the performance limit that can be achieved through Outcome REwArd-based reinforcement Learning for mathematical reasoning tasks, where only binary outcome rewards are easily accessible. We theoretically prove that behavior cloning on positive trajectories from best-of-N (BoN) sampling is sufficient to learn the KL-regularized optimal policy in binary feedback envi- ronments. This formulation further implies that the rewards of negative samples should be further reshaped to ensure the gradient consistency between positive and negative samples. To alleviate the long-existing difficulties brought by sparse rewards in RL, which are even exacerbated by the partial correctness of the long chain of thought for reasoning tasks, we further apply a token-level reward model to sample important tokens in reasoning trajectories for learning. With OREAL, for the first time, a 7B model can obtain 94.0 pass@1 accuracy on MATH-500 through RL, being on par with 32B models. OREAL-32B also surpasses previous 32B models trained by distillation with 95.0 pass@1 accuracy on MATH-500. Our investigation also indicates the importance of initial policy models and training queries for RL. Code, models, and data will be released to benefit future research1. 1 Introduction Solving complex problems with reasoning capability forms one of the cornerstones of human cognition - a cognitive ability that artificial general intelligence must ultimately master [1, 2]. Among various problem domains, the mathematical problem emerges as a particularly compelling experimental paradigm for AI research [3\u20136], owing to its relatively well-defined structure and availability of precise binary correctness feedback based on the verifiable final answers. Recent advances in large language models (LLMs) have achieved remarkable progress in mathemati- cal reasoning by the chain-of-thought technics [7\u20139], in which the LLMs are elicited to produce a series of intermediate reasoning steps before providing the final answers to the problem. However, as most of the capable models (e.g., the o-series models by OpenAI [10]) are developed by proprietary \u2217Equal contribution \u2020 Corresponding author 1https://github.com/InternLM/OREAL arXiv:2502.06781v1 [cs.CL] 10 Feb 2025"
+}

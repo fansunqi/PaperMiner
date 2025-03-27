@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving generalized semi-infinite programs (GSIPs) with polyhedral parameter sets"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Disjunctive programming",
+    "Kurash-Kuhn-Tucker (KKT) conditions",
+    "Partial Lagrange multiplier expressions",
+    "Semidefinite algorithm"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "A Global Approach for Generalized Semi-Infinte Programs with Polyhedral Parameter Sets.pdf",
+  "abstract": ". This paper studies generalized semi-infinite programs (GSIPs) de- fined with polyhedral parameter sets. Assume these GSIPs are given by poly- nomials. We propose a new approach to solve them as a disjunctive program. This approach is based on the Kurash-Kuhn-Tucker (KKT) conditions of the robust constraint and a technique called partial Lagrange multiplier expres- sions. We summarize a semidefinite algorithm and study its convergence prop- erties. Numerical experiments are given to show the efficiency of our method. In addition, we checked its performance in gemstone cutting and robust control applications. 1. Introduction A generalized semi-infinite program (GSIP) is a finite-dimensional optimization problem with infinitely many constraints parameterized by finitely many variables. It takes the form (1.1) ( min x\u2208X f(x) s.t. g(x, u) \u22650 \u2200u \u2208U(x), where x = (x1, . . . , xn) is the vector of decision variables and u = (u1, . . . , up) is the vector of parameters. The X is a given constraining set, f, g are continuous functions, and U(x) is an explicitly given parameter set, which is usually infinite. For the special case that U(x) is empty, the robust constraint holds naturally. When U(x) = U is independent with x, (1.1) is reduced to a semi-infinite program (SIP). It is very challenging to solve GSIPs in general cases. In this paper, we focus on GSIPs defined with polyhedral parameter sets. Assume all defining functions of (1.1) are polynomials. We write (1.2) U(x) := {u \u2208Rp | Au \u2265b(x)}, where A is a constant matrix and b is a vector of polynomials, i.e., A = \u0002a1 a2 \u00b7 \u00b7 \u00b7 am \u0003T , b(x) = \u0002b1(x) b2(x) \u00b7 \u00b7 \u00b7 bm(x)\u0003T . Such GSIPs serve as a useful framework in many applications such as robust safe control [45, 44] and gemstone-cutting problems [14, 24, 46]. Polynomial optimiza- tion has been extensively studied in [15, 19] and polynomial GSIPs were studied in [12, 42]. For convenience of expression, we assume g is a scalar polynomial 2020 Mathematics Subject Classification. 90C23, 90C34, 65K05. Key words and phrases. GSIP, partial Lagrange multiplier expressions, disjunctive optimiza- tion, relaxation. 1 arXiv:2502.01075v1 [math.OC] 3 Feb 2025"
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Conformance-Analysis of Implementation to Specifications in Node-RED and Associated Security Risks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CodeQL",
+    "Information flow analysis",
+    "Risk assessment"
+  ],
+  "results": [
+    "55% of all nodes exhibit more possible flows than are specified",
+    "28% of them are associated with a high severity and 36% with a medium severity rating"
+  ],
+  "title": "In Specs We Trust Conformance-Analysis of Implementation to Specifications in Node-RED and Associate.pdf",
+  "abstract": ". Low-code development frameworks for IoT platforms offer a simple drag-and-drop mechanism to create applications for the billions of existing IoT devices without the need for extensive programming knowl- edge. The security of such software is crucial given the close integration of IoT devices in many highly sensitive areas such as healthcare or home automation. Node-RED is such a framework, where applications are built from nodes that are contributed by open-source developers. Its reliance on unvetted open-source contributions and lack of security checks raises the concern that the applications could be vulnerable to attacks, thereby imposing a security risk to end users. The low-code approach suggests, that many users could lack the technical knowledge to mitigate, under- stand, or even realize such security concerns. This paper focuses on hidden information flows in Node-RED nodes, meaning flows that are not captured by the specifications. They could (unknowingly or with malicious intent) cause leaks of sensitive informa- tion to unauthorized entities. We report the results of a conformance analysis of all nodes in the Node-RED framework, for which we com- pared the numbers of specified inputs and outputs of each node against the number of sources and sinks detected with CodeQL. The results show, that 55% of all nodes exhibit more possible flows than are specified. A risk assessment of a subset of the nodes showed, that 28% of them are associated with a high severity and 36% with a medium severity rating. Keywords: IoT platform \u00b7 security \u00b7 information flow analysis \u00b7 Node- Red \u00b7 taint analysis 1 Introduction Internet of Things (IoT) devices have seen a tremendous boom in their number over the last decade and have seamlessly become a part of our everyday world. From industrial control systems to fitness bands, from smart security systems to medical devices, more and more devices enter the cyberspace continuously to increase the efficiency of their respective industries. Predictions for the number arXiv:2502.09117v1 [cs.CR] 13 Feb 2025"
+}

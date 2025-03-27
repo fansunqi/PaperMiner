@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Music Generation",
+    "Music Notation"
+  ],
+  "datasets": [
+    "Jiangnan-style music"
+  ],
+  "methods": [
+    "YNote",
+    "Fine-tuning GPT-2"
+  ],
+  "results": [
+    "BLEU: 0.883",
+    "ROUGE: 0.766"
+  ],
+  "title": "YNote A Novel Music Notation for Fine-Tuning LLMs in Music Generation.pdf",
+  "abstract": ". The field of music generation using Large Language Models (LLMs) is evolving rapidly, yet existing music notation systems, such as MIDI, ABC Notation, and MusicXML, remain too complex for effective fine-tuning of LLMs. These formats are difficult for both machines and humans to interpret due to their variability and intricate structure. To address these challenges, we introduce YNote, a simplified music nota- tion system that uses only four characters to represent a note and its pitch. YNote\u2019s fixed format ensures consistency, making it easy to read and more suitable for fine-tuning LLMs. In our experiments, we fine-tuned GPT-2 (124M) on a YNote-encoded dataset and achieved BLEU and ROUGE scores of 0.883 and 0.766, re- spectively. With just two notes as prompts, the model was able to gen- erate coherent and stylistically relevant music. We believe YNote offers a practical alternative to existing music notations for machine learning applications and has the potential to significantly enhance the quality of music generation using LLMs. Keywords: Music Notation \u00b7 Large Language Models \u00b7 AI-based Music Generation 1 Introduction Recently, Large Language Models (LLMs) have made significant advances. By fine-tuning pre-trained LLMs with task-specific datasets, we can generate desired outputs across various domains. For instance, previous work [3] has used ABC notation [1] to interact with GPT-2 [12] for music generation, yielding impressive results. However, ABC notation is difficult for humans to read due to its complex arXiv:2502.10467v1 [cs.SD] 12 Feb 2025"
+}

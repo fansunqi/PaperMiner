@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/Vastlab/GHOST"
+  ],
+  "tasks": [
+    "Open-Set Recognition"
+  ],
+  "datasets": [
+    "ImageNet-1K",
+    "NINCO",
+    "ImageNet 21K-P",
+    "OpenImage-O"
+  ],
+  "methods": [
+    "Gaussian Hypothesis Open-Set Technique"
+  ],
+  "results": [
+    "AUOSCR: 0.84",
+    "AUROC: 0.84",
+    "FPR95: 0.17",
+    "VCCR: 0.17"
+  ],
+  "title": "GHOST Gaussian Hypothesis Open-Set Technique.pdf",
+  "abstract": "Evaluations of large-scale recognition methods typically focus on overall performance. While this approach is common, it of- ten fails to provide insights into performance across individual classes, which can lead to fairness issues and misrepresenta- tion. Addressing these gaps is crucial for accurately assessing how well methods handle novel or unseen classes and ensuring a fair evaluation. To address fairness in Open-Set Recogni- tion (OSR), we demonstrate that per-class performance can vary dramatically. We introduce Gaussian Hypothesis Open Set Technique (GHOST), a novel hyperparameter-free algo- rithm that models deep features using class-wise multivariate Gaussian distributions with diagonal covariance matrices. We apply Z-score normalization to logits to mitigate the impact of feature magnitudes that deviate from the model\u2019s expectations, thereby reducing the likelihood of the network assigning a high score to an unknown sample. We evaluate GHOST across multiple ImageNet-1K pre-trained deep networks and test it with four different unknown datasets. Using standard metrics such as AUOSCR, AUROC and FPR95, we achieve statisti- cally significant improvements, advancing the state-of-the-art in large-scale OSR. Source code is provided online. Code Repository \u2014 https://github.com/Vastlab/GHOST Introduction When deploying deep neural networks (DNNs) in real-world environments, they must handle a wide range of inputs. The \u201cclosed-set assumption,\u201d prevalent in most evaluations, rep- resents a significant limitation of traditional recognition- oriented machine learning algorithms (Scheirer et al. 2012). This assumption presumes that the set of possible classes an algorithm will encounter is known a priori, meaning that these algorithms are not evaluated for robustness against samples from previously unseen classes. Open-Set Recogni- tion (OSR) challenges this assumption by requiring designs that anticipate encountering samples from unknown classes during testing. Often, OSR is performed by thresholding on confidence (Hendrycks and Gimpel 2017; Vaze et al. 2022) or having an explicit \u201cother\u201d class (Ge, Demyanov, and Garnavi 2017) and computing overall performance, ignoring the effects of per-class performance differentials (Li, Wu, and Su 2023). However, evaluating recognition systems under OSR condi- tions is crucial for understanding their behavior in real-world 0.0 0.2 0.4 0.6 0.8 1.0 False Positive Rate 0.0 0.2 0.4 0.6 0.8 1.0 Correct Classification Rate GHOST (AUOSCR = 0.84) MSP (AUOSCR = 0.78) NNGuide (AUOSCR = 0.68) Figure 1: CLASS-WISE OPEN-SET RECOGNITION. OSCR compar- ison using the MAE-H architecture with OpenImage-O as unknowns. Overall performance is the solid line; Average performance on easy (top 10%) and hard (bottom 10%) classes shown as dashed/dotted lines, respectively. We compare GHOST with Maximum Softmax Probability (MSP) and NNGuide. Also, we show the area under the curve (AUC) of each method\u2019s overall OSCR. GHOST outperforms in each setting and maintains its correct classification rate as the FPR rate decreases while others fall off dramatically; hence, GHOST maintains fairness in difficult cases while improving overall OSR. scenarios. This paper shows that as more unknowns are re- jected, there is great variation in per-class accuracy, which could lead to unfair treatment of underperforming classes, see Fig. 1. Recently, research has followed two primary methodolo- gies for adapting DNNs to OSR problems: (1) training pro- cesses that enhance feature spaces and (2) post-processing techniques applied to pre-trained DNNs to adjust their out- puts for identifying known and unknown samples (Roady et al. 2020). Although OSR training methods have occasion- ally proven effective (Zhou, Ye, and Zhan 2021; Miller et al. 2021; Dhamija, G\u00a8unther, and Boult 2018), their application is complex due to the evolving nature of DNNs and the specific, often costly training requirements for each. If different DNNs are trained in various ways, why should a single OSR training technique be universally applicable? Furthermore, if an OSR technique is specific to a particular DNN, its value diminishes as state-of-the-art DNNs evolve. In contrast, post-processing 1 arXiv:2502.03359v2 [cs.CV] 10 Feb 2025"
+}

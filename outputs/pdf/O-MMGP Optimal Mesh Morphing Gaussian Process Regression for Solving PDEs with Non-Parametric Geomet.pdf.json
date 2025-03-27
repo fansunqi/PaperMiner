@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving PDEs with Non-Parametric Geometric Variations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimal Mesh Morphing Gaussian Process Regression (O-MMGP)",
+    "POD",
+    "Gaussian Process Regression (GPR)",
+    "RBF Morphing"
+  ],
+  "results": [
+    "Accurate modeling of complex parametric PDEs with geometrical variability",
+    "Comparison with the winning solution of the ML4CFD NeurIPS 2024 competition"
+  ],
+  "title": "O-MMGP Optimal Mesh Morphing Gaussian Process Regression for Solving PDEs with Non-Parametric Geomet.pdf",
+  "abstract": "We address the computational challenges of solving parametric PDEs with non parametrized geometric variations and non-reducible problems, such as those in- volving shocks and discontinuities of variable positions. Traditional dimensionality reduction methods like POD struggle with these scenarios due to slowly decaying Kolmogorov widths. To overcome this, we propose a novel non-linear dimension- ality reduction technique to reduce the required modes for representation. The non-linear reduction is obtained through a POD after applying a transformation on the fields, which we call optimal mappings, and is a solution to an optimiza- tion problem in infinite dimension. The proposed learning framework combines morphing techniques, non-linear dimensionality reduction, and Gaussian Process Regression (GPR). The problem is reformulated on a reference geometry before applying the dimensionality reduction. Our method learns both the optimal map- ping, and the solution fields, using a series of GPR models, enabling efficient and accurate modeling of complex parametric PDEs with geometrical variability. The results obtained concur with current state-of-the-art models. We mainly compare our method with the winning solution of the ML4CFD NeurIPS 2024 competition. 1 Introduction 1.1 Background Many scientific and engineering challenges involve solving complex boundary value problems, often formulated as parametric partial differential equations (PDEs). These problems require exploring the influence of varying parameters such as material properties, boundary and initial conditions, or geometric configurations. Traditional numerical methods like the finite element method and finite difference methods, while accurate, are computationally expensive, particularly when repeated evalua- tions are necessary across a large and high-dimensional parameter set. To address this computational burden, techniques in model-order reduction and machine learning have been developed, offering efficient approximations without compromising accuracy. Model-order reduction techniques, such as the reduced-basis method [25, 14], construct low- dimensional approximation vector spaces to represent the set of solutions of the parametric PDE, enabling fast computation for new parameter values. These approaches typically involve an offline phase, where high-fidelity models are used to generate a reduced basis, and an online phase, where this basis is employed for efficient computations. However, when the physical domain varies with the parameters, standard methods like Proper Orthogonal Decomposition (POD) face challenges due to arXiv:2502.11632v1 [math.NA] 17 Feb 2025"
+}

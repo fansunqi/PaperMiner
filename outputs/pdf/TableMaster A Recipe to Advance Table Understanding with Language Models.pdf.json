@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Table Understanding"
+  ],
+  "datasets": [
+    "WikiTQ",
+    "TabFact",
+    "FetaQA"
+  ],
+  "methods": [
+    "TableMaster"
+  ],
+  "results": [
+    "78.13% accuracy on WikiTQ",
+    "78.13% accuracy on TabFact",
+    "78.13% accuracy on FetaQA"
+  ],
+  "title": "TableMaster A Recipe to Advance Table Understanding with Language Models.pdf",
+  "abstract": "Tables serve as a fundamental format for repre- senting structured relational data. While current language models (LMs) excel at many text-based tasks, they still face challenges in table under- standing due to the complex characteristics of tab- ular data, such as their structured nature. In this paper, we aim to enhance LMs for improved table understanding. We identify four key challenges: 1) difficulty in locating target data, 2) deficiency in table semantics, 3) numerical inaccuracies in textual reasoning, and 4) semantic inflexibility in symbolic reasoning. To address these issues, we propose TableMaster, a recipe and comprehen- sive framework that integrates multiple solutions to overcome these obstacles. TableMaster first extracts relevant table content and verbalizes it with enriched semantic context. Additionally, we introduce adaptive reasoning, a flexible approach that dynamically adjusts between textual and sym- bolic reasoning, tailoring the reasoning process to each query. Extensive analyses and experiments demonstrate our findings and the effectiveness of TableMaster. On the WikiTQ dataset, Table- Master achieves an accuracy of 78.13% using GPT-4o-mini, surpassing existing baselines. 1. Introduction \u201cData gains extraordinary power as it transcends the simplicity of one dimension to embrace the richness of higher dimensions.\u201d Tables are widely used in daily life and across various fields, such as healthcare (Ghasemi & Amyot, 2016) and finance (Li et al., 2020), due to their unique ability to efficiently represent two-dimensional relational data. It is crucial to 1Department of Computer Science, University of Illinois Urbana-Champaign, Urbana, United States. Correspondence to: Lang Cao <langcao2@illinois.edu>. process tabular data with both efficiency and accuracy. Re- cently, large language models (LLMs) (Gunasekar et al., 2023; OpenAI, 2024; Touvron et al., 2023) have achieved significant progress in the field of natural language process- ing. They perform well in a wide range of downstream text-based tasks, including language understanding (Minaee et al., 2024; Zhu et al., 2024) and reasoning (Plaat et al., 2024). Naturally, language models (LMs) are increasingly being used to process and understand tabular data (Fang et al., 2024; Zhang et al., 2024b), enabling reasoning for downstream tasks such as table-based question answering (Pasupat & Liang, 2015) and table-based fact verification (Chen et al., 2020). However, the data structure of tables inherently possess a unique two-dimensional structure that contrasts with the linear text, which dominates the content in language model pretraining corpora. Most advanced LMs are not specifically optimized for processing tabular data. While techniques such as chain-of-thought prompting (Wei et al., 2023) and other reasoning-enhanced methods (Yao et al., 2023) have enabled LMs to perform satisfactorily in reasoning with linear text, significant room for improvement remains in table-based reasoning (Chen, 2023). A notable gap persists in LMs\u2019 ability to fully understand tables and effectively reason with tabular data. Many previous studies have aimed to improve the table un- derstanding capabilities of LMs. One efficient approach is using prompting to adapt LMs for table understanding without requiring fine-tuning, making it applicable to any advanced LM. Recent studies primarily adopt two main strategies to enhance table understanding with LMs. The first strategy involves extracting a sub-table that contains relevant content from the original table to reduce the context size, thereby making it easier for LMs to comprehend. Ex- amples include Dater (Ye et al., 2023) and Chain-of-Table (Wang et al., 2024), among others. The second strategy leverages SQL or Python programs to augment numerical reasoning, locate target data, and enhance table understand- ing of numerical information, as demonstrated by Binder (Cheng et al., 2023) and LEVER (Ni et al., 2023), etc. How- ever, these studies primarily focus on a single basic aspect to enhance the performance of LMs in table understanding 1 arXiv:2501.19378v2 [cs.CL] 5 Feb 2025"
+}

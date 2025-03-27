@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/VCG-NJUST/LRL-GQA"
+  ],
+  "tasks": [
+    "Geometry quality assessment for colorless point clouds"
+  ],
+  "datasets": [
+    "LRL dataset",
+    "LRL-PMOS dataset",
+    "G-PCD dataset"
+  ],
+  "methods": [
+    "List-wise rank learning",
+    "Geometry quality assessment network (GQANet)",
+    "List-wise rank learning network (LRLNet)",
+    "Patch-wise feature extraction",
+    "Multi-scale feature extraction"
+  ],
+  "results": [
+    "NDCG: 0.994",
+    "RMSE: 0.077",
+    "PLCC: 0.927",
+    "KRCC: 0.754",
+    "SRCC: 0.841"
+  ],
+  "title": "No-reference Geometry Quality Assessment for Colorless Point Clouds Via List-Wise Rank Learning.pdf",
+  "abstract": "China bSchool of Computer Science and Engineering, Nanjing University of Science and Technology, Nanjing, Jiangsu Province 210094, P.R. China A R T I C L E I N F O Article history: Received February 18, 2025 Keywords: Geometric Point Cloud Quality Assessment, List-wise Ranking Learning, No-Reference Geometry-Only Quality Metrics A B S T R A C T Geometry quality assessment (GQA) of colorless point clouds is crucial for evalu- ating the performance of emerging point cloud-based solutions (e.g., watermarking, compression, and 3-Dimensional (3D) reconstruction). Unfortunately, existing objec- tive GQA approaches are traditional full-reference metrics, whereas state-of-the-art learning-based point cloud quality assessment (PCQA) methods target both color and geometry distortions, neither of which are qualified for the no-reference GQA task. In addition, the lack of large-scale GQA datasets with subjective scores, which are always imprecise, biased, and inconsistent, also hinders the development of learning-based GQA metrics. Driven by these limitations, this paper proposes a no-reference geometry- only quality assessment approach based on list-wise rank learning, termed LRL-GQA, which comprises of a geometry quality assessment network (GQANet) and a list-wise rank learning network (LRLNet). The proposed LRL-GQA formulates the no-reference GQA as a list-wise rank problem, with the objective of directly optimizing the entire quality ordering. Specifically, a large dataset containing a variety of geometry-only dis- tortions is constructed first, named LRL dataset, in which each sample is label-free but coupled with quality ranking information. Then, the GQANet is designed to capture in- trinsic multi-scale patch-wise geometric features in order to predict a quality index for each point cloud. After that, the LRLNet leverages the LRL dataset and a likelihood loss to train the GQANet and ranks the input list of degraded point clouds according to their distortion levels. In addition, the pre-trained GQANet can be fine-tuned further to ob- tain absolute quality scores. Experimental results demonstrate the superior performance of the proposed no-reference LRL-GQA method compared with existing full-reference GQA metrics. The source code can be found at : https://github.com/VCG-NJUST/LRL- GQA. \u00a9 2025 Elsevier B.V. All rights reserved. \u2217Corresponding author e-mail: 1315571938@qq.com (Zheng Li), 2580801219@qq.com (Bingxu Xie), 979953220@qq.com (Chao Chu), li_weiqing@njust.edu.cn (Weiqing Li), su@njust.edu.cn (Zhiyong Su) 1. Introduction Geometry quality assessment (GQA) of colorless point clouds refers to the process of taking a colorless point cloud as input and producing some form of geometry quality estimate as output, which plays an essential role in numerous point cloud- based applications, such as denoising, watermarking, acquisi- tion, and compression. Nowadays point clouds have emerged arXiv:2502.11726v1 [cs.CV] 17 Feb 2025"
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/jd-anderson/Coreset-meta-RL"
+  ],
+  "tasks": [
+    "Meta-reinforcement learning",
+    "Model-agnostic meta-reinforcement learning (MAML-RL)",
+    "Task selection",
+    "Coreset learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Coreset-based task selection",
+    "Zeroth-order gradient estimation",
+    "Submodular optimization",
+    "MAML-LQR"
+  ],
+  "results": [
+    "Sample complexity reduction by a factor of O(1/\u03f5) for MAML-RL",
+    "Sample complexity reduction proportional to O(log(1/\u03f5)) for MAML-LQR"
+  ],
+  "title": "Coreset-Based Task Selection for Sample-Efficient Meta-Reinforcement Learning.pdf",
+  "abstract": "We study task selection to enhance sample efficiency in model-agnostic meta-reinforcement learning (MAML-RL). Traditional meta-RL typically assumes that all available tasks are equally important, which can lead to task redundancy when they share significant similarities. To address this, we propose a coreset-based task selection approach that selects a weighted subset of tasks based on how diverse they are in gradient space, prioritizing the most informative and diverse tasks. Such task selection reduces the number of samples needed to find an \u03f5-close stationary solution by a factor of O(1/\u03f5). Consequently, it guarantees a faster adaptation to unseen tasks while focusing training on the most relevant tasks. As a case study, we incorporate task selection to MAML-LQR (Toso et al., 2024b), and prove a sample complexity reduction proportional to O(log(1/\u03f5)) when the task-specific cost also satisfy gradient dominance. Our theoretical guarantees underscore task selection as a key component for scalable and sample-efficient meta-RL. We numerically validate this trend across multiple RL benchmark problems, illustrating the benefits of task selection beyond the LQR baseline. 1 Introduction 0 40 80 120 160 200 Iterations (n) 0 30 60 90 120 150 180 Rewards MAML Coreset-MAML Figure 1: Comparison of coreset MAML-RL (this work) and MAML-RL on the hopper Mujoco environment (see appendix for details). Meta-reinforcement learning (meta-RL) has emerged as a powerful framework for learning policies that can quickly adapt to unseen environments (Wang et al., 2016; Finn et al., 2017). In particular, the model-agnostic meta-reinforcement learn- ing (MAML-RL) algorithm has demon- strated success in enabling agents to learn a shared policy initialization that is only a few policy gradient steps away from opti- mality for any seen and unseen task (Duan et al., 2016; Nagabandi et al., 2018). Such quick adaptation is crucial, for example, in robotics (Song et al., 2020), where agents often need to operate in dynamic environments and accomplish a variety of goals. MAML-RL and meta-reinforcement learning more generally, typically assumes that all training tasks are equally important. This assumption may lead to task redundancy and excessive sampling costs as it is likely not worth sampling from multiple similar tasks; instead collecting data from a single representative task would suffice. \u201cTask selection\u201d can be thought of a pre-processing step in the meta-learning pipeline. It seeks to identify a representative subset of tasks that captures the diversity across all training tasks, and then uses this smaller \u2217All authors are with the Department of Electrical Engineering, Columbia University in the City of New York. Email: {dz2478, lt2879, james.anderson}@columbia.edu. 1 arXiv:2502.02332v1 [math.OC] 4 Feb 2025"
+}

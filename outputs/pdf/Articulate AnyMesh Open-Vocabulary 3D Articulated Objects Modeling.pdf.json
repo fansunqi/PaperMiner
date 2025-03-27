@@ -1,0 +1,41 @@
+{
+  "code_links": [
+    "https://articulate-anymesh.github.io/"
+  ],
+  "tasks": [
+    "3D articulated objects modeling",
+    "3D object segmentation",
+    "articulation parameter estimation",
+    "3D object refinement"
+  ],
+  "datasets": [
+    "PartNet-Mobility",
+    "Objaverse",
+    "one-door dataset (a subset of OPDsynth)",
+    "DexArt's original train set (Bucket)",
+    "DexArt's original train set (Laptop)"
+  ],
+  "methods": [
+    "PartSlip++",
+    "open-vocabulary segmentation model (SAM)",
+    "multi-modal foundation model",
+    "visual prompting",
+    "GPT-4o",
+    "geometry-aware visual prompting",
+    "2D diffusion models",
+    "Richdreamer",
+    "SDS loss",
+    "normal-depth diffusion model",
+    "albedo diffusion model",
+    "random transformations"
+  ],
+  "results": [
+    "Achieves comparable performance to NAP and CAGE in-domain, significantly outperforms them in unseen categories",
+    "Outperforms ANCSH, OPD, and OPDmulti within their respective training domains",
+    "Highest scores achieved with refinement incorporating random transformations",
+    "Successfully transferred generated trajectories to the real world",
+    "Effectively enhances robot learning"
+  ],
+  "title": "Articulate AnyMesh Open-Vocabulary 3D Articulated Objects Modeling.pdf",
+  "abstract": "3D articulated objects modeling has long been a challenging problem, since it requires to cap- ture both accurate surface geometries and seman- tically meaningful and spatially precise struc- tures, parts, and joints. Existing methods heav- ily depend on training data from a limited set of handcrafted articulated object categories (e.g., cabinets and drawers), which restricts their abil- ity to model a wide range of articulated ob- jects in an open-vocabulary context. To ad- dress these limitations, we propose ARTICULATE ANYMESH, an automated framework that is able to convert any rigid 3D mesh into its articu- lated counterpart in an open-vocabulary man- ner. Given a 3D mesh, our framework utilizes advanced Vision-Language Models and visual prompting techniques to extract semantic infor- mation, allowing for both the segmentation of object parts and the construction of functional joints. Our experiments show that ARTICULATE ANYMESH can generate large-scale, high-quality 3D articulated objects, including tools, toys, me- chanical devices, and vehicles, significantly ex- panding the coverage of existing 3D articulated object datasets. Additionally, we show that these generated assets can facilitate the acquisition of new articulated object manipulation skills in sim- ulation, which can then be transferred to a real robotic system. Our Github website is https: //articulate-anymesh.github.io/. 1. Introduction The gathering of data on a large scale is an emerging re- search trend in embodied AI and robotics. Large foundation models built for robotics and embodied AI are extremely data-hungry, intensifying the need for large-scale data col- lection. Compared to collecting data in the real world, gath- ering data in simulations is significantly faster and more convenient, making it easier to capture various types of ground truth information such as physical states, segmenta- tion masks, depth maps, etc. Existing works have explored many different aspects of how to carry out large-scale data collection in simulations, ranging from asset generation (Chen et al., 2024), scene generation (Yang et al., 2024b;c), task design (Wang et al., 2023), demonstration collection (Dalal et al., 2023; Ha et al., 2023), reward design (Ma et al., 2023), etc. Despite these efforts, a key challenge remains: collecting diverse and realistic articulated objects essential for every- day life, which is vital for producing diverse data that can be generalized to real-world applications. One intuitive ap- proach to achieve this is to use generative models. While there has been substantial progress in 3D asset generation, few available methods are capable of addressing the demand for the collection of articulated objects. Most 3D generation approaches, utilizing a forward pass of a trained network (Long et al., 2024; Hong et al., 2023; Xu et al., 2024; Shi et al., 2023a;b), or SDS loss optimization (Poole et al., 2022; Wang et al., 2024; Qiu et al., 2024), produce only the sur- face of the object. These objects can only be manipulated as a whole body. For instance, a closet produced through these 3D generation methods cannot be opened or used to store clothes. Part-aware 3D generation approaches (Gao et al., 2019; Yang et al., 2022; Mo et al., 2019; Wu et al., 2020; Nakayama et al., 2023; Koo et al., 2023; Liu et al., 2024a) generate 3D objects together with their part-specific details. Although these methods are more sensitive to struc- ture, the objects produced are still restricted to whole-object manipulation for the lack of motion parameters. Articulated object creation approaches (Jiang et al., 2022b; Liu et al., 2023a; Chen et al., 2024; Lei et al., 2023; Liu et al., 2024c; Mandi et al., 2024; Nie et al., 2023; Gadre et al., 2021) are capable of producing articulated objects with several inter- active parts, demonstrating functionality. However, such methods require dense observation of a to be reconstructed articulated object in multiple joint states (Jiang et al., 2022b; Liu et al., 2023a; Mandi et al., 2024; Huang et al., 2021), or are restricted to the limited-scale data and object categories used to train their network (Chen et al., 2024; Lei et al., 2023; Liu et al., 2024c). As a result, current methods strug- gle to automatically generate a wide variety of articulated objects, particularly those from underrepresented or absent categories in existing datasets (Xiang et al., 2020; Wang et al., 2019; Geng et al., 2023). 1 arXiv:2502.02590v1 [cs.CV] 4 Feb 2025"
+}

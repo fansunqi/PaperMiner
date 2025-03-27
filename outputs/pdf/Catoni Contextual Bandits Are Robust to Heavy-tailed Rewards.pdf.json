@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Contextual Bandits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Catoni Estimator",
+    "Variance-Agnostic Catoni Bandit",
+    "SupLinUCB-type algorithm",
+    "Adaptive variance-aware exploration"
+  ],
+  "results": [
+    "Improved variance-aware regret guarantees",
+    "Regret scales as O\u0303(\u221a\u2211t\u2208[T] \u03c32t \u00b7 dF lnNF + dF lnNF)",
+    "Regret scales as O\u0303(dF \u221a\u2211t\u2208[T] \u03c32t \u00b7 lnNF + dF (lnNF)3/4)"
+  ],
+  "title": "Catoni Contextual Bandits Are Robust to Heavy-tailed Rewards.pdf",
+  "abstract": "Typical contextual bandit algorithms assume that the rewards at each round lie in some \ufb01xed range [0, R], and their regret scales polynomially with this reward range R. However, many practical scenarios naturally involve heavy-tailed rewards or rewards where the worst-case range can be substantially larger than the variance. In this paper, we develop an algorithmic approach building on Catoni\u2019s estimator from robust statistics, and apply it to contextual bandits with general function approximation. When the variance of the reward at each round is known, we use a variance-weighted regression approach and establish a regret bound that depends only on the cumulative reward variance and logarithmically on the reward range R as well as the number of rounds T . For the unknown-variance case, we further propose a careful peeling-based algorithm and remove the need for cumbersome variance estimation. With additional dependence on the fourth moment, our algorithm also enjoys a variance-based bound with logarithmic reward-range dependence. Moreover, we demonstrate the optimality of the leading-order term in our regret bound through a matching lower bound. 1 Introduction Minimax optimal regret bounds in the worst-case over problem instances for contextual bandit learning are relatively well-understood in the literature, both using policy-based approaches in the agnostic case, and regression-based approaches in the realizable case. A variety of algorithms attain these bounds in both settings, and the minimax optimality implies that the bounds are unimprovable in general. When the expected reward of each action is realizable using some function class F available to the learner, this optimal regret scales as O(R\u221aT dF ln NF), where R is the range of the rewards, T is the number of rounds, dF is a complexity notion for F, such as the eluder dimension (Russo and Van Roy, 2013), and NF is the covering number of F. However, this worst-case behavior arises only when the rewards span their entire range [0, R] with a signi\ufb01cant probability, a phenomenon not typical in practice. Even for a common case of binary rewards in {0, R} for instance, the expected reward is often relatively close to 0 in common click/no-click style recommendation settings with low clickthrough rates. Consequently, the expectation, variance and even higher moments of the reward are much smaller than the worst-case range. More generally, rewards with heavier tails naturally arise when considering waiting times in wireless communication networks (Nair et al., 2013), stock prices in \ufb01nancial markets (Cont, 2001; Hull, 2012), or value returns for online advertising (Choi et al., 2020; Jebarajakirthy et al., 2021). In this paper, we study the design of contextual bandit algorithms that can leverage such structures to have regret guarantees dependent polynomially on the reward variance, with only a mild logarithmic scaling with the range parameter R. \u2217Correspondence to Chenlu Ye \u2020University of Illinois Urbana-Champaign; e-mail: chenluy3@illinois.edu \u2021OpenAI (Work done during an internship at Google); e-mail: yujiajin@stanford.edu \u00a7Google Research; e-mail: alekhagarwal@google.com \u00b6University of Illinois Urbana-Champaign; e-mail: tongzhang@tongzhang-ml.org 1Huang et al. (2024) consider a more general setting, where the 1 + \u01eb-th moment of the reward is upper bounded for some \u01eb \u2208(0, 1], and incur a dependence in terms of this moment along with additional poly(T) terms. Since our work only considers bounded variance, we present their result with (Li and Sun, 2024) together, as the two results are identical for the case of \u01eb = 1. 2DistUCB relies on estimating the full reward distribution rather than just the mean, and hence requires a stronger realiz- ability assumption on the function class to capture this distribution. 1"
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/StanfordVision/KernelBench"
+  ],
+  "tasks": [
+    "GPU kernel generation",
+    "AI kernel optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Language models",
+    "KernelBench framework"
+  ],
+  "results": [
+    "fastp metric",
+    "Kernel generation performance"
+  ],
+  "title": "KernelBench Can LLMs Write Efficient GPU Kernels.pdf",
+  "abstract": "Efficient GPU kernels are crucial for building performant machine learning architectures, but writing them is a time-consuming challenge that requires significant expertise; therefore, we explore using language models (LMs) to automate kernel generation. We introduce KernelBench, an open-source framework for evaluating LMs\u2019 ability to write fast and correct kernels on a suite of 250 carefully selected PyTorch ML workloads. KernelBench represents a real-world engineering environment and making progress on the introduced benchmark directly translates to faster practical kernels. We introduce a new evaluation metric fastp, which measures the percentage of generated kernels that are functionally correct and offer a speedup greater than an adjustable threshold p over baseline. Our experiments across various state-of-the-art models and test-time methods show that frontier reasoning models perform the best out of the box but still fall short overall, matching the PyTorch baseline in less than 20% of the cases. While we show that results can improve by leveraging execution and profiling feedback during iterative refinement, KernelBench remains a challenging benchmark, with its difficulty increasing as we raise speedup threshold p. 1 Introduction AI relies on efficient GPU kernels to achieve high performance and cost and energy savings; however, developing kernels remains challenging. There has been a Cambrian explosion of ML architectures [7, 29, 33], but their available implementations routinely underperform their peak potential. We are seeing a proliferation of AI hardware [4, 10, 11, 14, 24, 25, 26], each with different specs and instruction sets, and porting algorithms across platforms is a pain point. A key example is the FlashAttention kernel [8], which is crucial for running modern Transformer models \u2013\u2013 the initial kernel released in 2022, five years after the Transformer was proposed; it took two more years from the release of NVIDIA Hopper GPUs to transfer the algorithm to the new hardware platform. We explore the question: Can language models help write correct and optimized kernels? AI engineers use a rich set of information when developing kernels and it is not clear whether language models (LMs) can mimic the workflow. They use compiler feedback, profiling metrics, hardware-specific specs and instruction sets, and knowledge of hardware-efficiency techniques (e.g., tiling, fusion). They can use programming tools ranging from assembly (e.g., PTX as in DeepSeek-AI [9]) to higher-level libraries (ThunderKittens [32], Triton [36]). Compared to existing LM code generation workloads [43], kernel writing requires a massive amount and diversity of information. We first design an environment that reflects the typical AI engineer\u2019s workflow and supports providing LMs with this rich information. The environment should: \u2022 Automate the AI engineer\u2019s workflow. The model should have full flexibility to decide which operators to optimize and how to optimize them. \u2022 Support a diverse set of AI algorithms, programming languages, and hardware platforms. *Equal Contribution. Correspondence: aco@stanford.edu, simonguo@stanford.edu 1 arXiv:2502.10517v1 [cs.LG] 14 Feb 2025"
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video-Text Retrieval"
+  ],
+  "datasets": [
+    "MSR-VTT",
+    "MSVD",
+    "DiDeMo"
+  ],
+  "methods": [
+    "Caption Self-improvement (CSI)",
+    "Expertized Caption Selection (ECS)",
+    "Prompt Engineer"
+  ],
+  "results": [
+    "Top-1 recall accuracy of 68.5% on MSR-VTT",
+    "68.1% on MSVD",
+    "62.0% on DiDeMo"
+  ],
+  "title": "Expertized Caption Auto-Enhancement for Video-Text Retrieval.pdf",
+  "abstract": "The burgeoning field of video-text retrieval has witnessed significant advancements with the advent of deep learn- ing. However, the challenge of matching text and video persists due to inadequate textual descriptions of videos. The substantial information gap between the two modalities hinders a comprehensive understanding of videos, result- ing in ambiguous retrieval results. While rewriting meth- ods based on large language models have been proposed to broaden text expressions, carefully crafted prompts are essential to ensure the reasonableness and completeness of the rewritten texts. This paper proposes an automatic cap- tion enhancement method that enhances expression quality and mitigates empiricism in augmented captions through self-learning. Additionally, an expertized caption selec- tion mechanism is designed and introduced to customize augmented captions for each video, facilitating video-text matching. Our method is entirely data-driven, which not only dispenses with heavy data collection and computa- tion workload but also improves self-adaptability by cir- cumventing lexicon dependence and introducing personal- ized matching. The superiority of our method is validated by state-of-the-art results on various benchmarks, specifi- cally achieving Top-1 recall accuracy of 68.5% on MSR- VTT, 68.1% on MSVD, and 62.0% on DiDeMo. 1. Introduction Video-text understanding has become a new mainstream re- search with the population of short videos on social net- works. In virtue of the learning ability of large models, multi-modal pre-training models [6, 11] are developed and achieve initial success in video-text retrieval tasks. How- ever, a stunning amount of data and computing resources are the essential basis to support the effectiveness of these pre-training models. Thus, it is argued that adapting the image-text pretrained model to video-text tasks is a lighter and more feasible approach [15, 31]. They adapt the visual *Corresponding author. Figure 1. Comprehension gap between videos and texts embeddings to the video field by incorporating temporal in- formation [4, 21] or refining the visual-text matching strate- gies [8, 31]. But unlike image-text pairs, video captions tend to be overly simplistic and one-sided, describing par- tial (even a signal) frames of the videos. These one-sided descriptions would be improperly matched to multifaceted video embeddings (Figure 1 (a)), resulting in biased cross- modal retrieval, and a bottleneck in performance improve- ment arises. Frame sampling is one proper solution to handle the in- formation imbalance issue. For instance, ClipBERT [10] sparsely samples video frames to meet the text descriptions. X-CLIP [16] further cuts text descriptions into words, em- ploying cross-modal matching at both fine-grained (frame and word) and coarse-grained (video and sentence) lev- els. As video information is sparsely divided and bro- ken, these methods are limited in comprehensively utiliz- ing and exploring deep relations across videos and texts. Another branch to reduce the information gap is data agu- mentation. Extra data, such as HD-VILA-100M [30] and LF-VILA [21], are collected to expand the receptive field for model adaptation, thereby enriching matching knowl- edge of the two modalities. To eliminate the heavy data collection workload, later research [27] rewrites captions by lexical analysis, in which attributes are extracted and arXiv:2502.02885v1 [cs.CV] 5 Feb 2025"
+}

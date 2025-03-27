@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving Sudoku",
+    "Image Classification",
+    "Masked Image Modeling"
+  ],
+  "datasets": [
+    "Sudoku Dataset",
+    "CIFAR-10",
+    "CIFAR-100",
+    "ImageNet-100",
+    "ImageNet-1000"
+  ],
+  "methods": [
+    "Hyper-Spherical Energy Transformer (Hyper-SET)",
+    "Energy-based Learning",
+    "Deep Unrolling",
+    "Iterative Energy Minimization"
+  ],
+  "results": [
+    "Competitive performance with fewer parameters on Sudoku",
+    "Better performance than Transformer on CIFAR-10",
+    "Comparable performance to Transformer on CIFAR-100 and ImageNet-100",
+    "Significant reduction in parameters on masked image modeling"
+  ],
+  "title": "Hyperspherical Energy Transformer with Recurrent Depth.pdf",
+  "abstract": "Transformer-based foundation models have achieved unprecedented success with a gigan- tic amount of parameters and computational re- sources. Yet, the core building blocks of these models, the Transformer layers, and how they are arranged and configured are primarily engi- neered from the bottom up and driven by heuris- tics. For advancing next-generation architectures, it demands exploring a prototypical model that is amenable to high interpretability and of prac- tical competence. To this end, we take a step from the top-down view and design neural net- works from an energy minimization perspective. Specifically, to promote isotropic token distribu- tion on the sphere, we formulate a modified Hop- field energy function on the subspace-embedded hypersphere, based on which Transformer lay- ers with symmetric structures are designed as the iterative optimization for the energy function. By integrating layers with the same parameters, we propose Hyper-Spherical Energy Transformer (Hyper-SET), an alternative to the vanilla Trans- former with recurrent depth. This design inher- ently provides greater interpretability and allows for scaling to deeper layers without a significant increase in the number of parameters. We also empirically demonstrate that Hyper-SET achieves comparable or even superior performance on both synthetic and real-world tasks, such as solving Su- doku and masked image modeling, while utilizing fewer parameters. 1. Introduction Transformer-based models (Vaswani et al., 2017) have be- come foundational across diverse domains across diverse do- mains, including computer vision (Dosovitskiy et al., 2021; Bao et al., 2022; He et al., 2022; Peebles & Xie, 2023), 1School of Computing and Data Science, The University of Hong Kong, Hong Kong SAR. Correspondence to: Yunzhe Hu <yzhu@cs.hku.hk>. natural language processing (Devlin et al., 2019; Lan et al., 2020; Brown et al., 2020), robotics (Brohan et al., 2022), decision-making (Chen et al., 2021), scientific discovery (Jumper et al., 2021; Kamienny et al., 2022), and so on. In recent years, there has been evidence that scaling up model size, dataset size or computational budget to a gigantic mag- nitude during pre-training can bring about unprecedented performance gains (Kaplan et al., 2020), driving the prolif- eration of Transformer-based foundation models (OpenAI et al., 2024; Dubey et al., 2024; Anil et al., 2023; Oquab et al., 2024). On the other hand, despite the remarkable abilities of Transformer-based Large Language Models (LLMs), the design and modifications of the Transformer architectures are largely driven by experience and heuristics. There is limited principled guidance for the model\u2019s configuration, e.g., how many layers should be stacked. In fact, some em- pirical studies have observed high redundancy in the deeper layers (Gromov et al., 2024; Men et al., 2024), uniformity of representations in the middle layers (Sun et al., 2024), and robustness to swapping certain intermediate layers (Lad et al., 2024) in LLMs. This suggests convergent functional- ity one layer represents, yet we have a limited understanding of what role the layer plays in processing information and representation learning. Although there are efforts to unveil the function or algorithms underlying the network layers, especially Transformer blocks, through mechanistic inter- pretability (Elhage et al., 2021; Nanda et al., 2023; Wang et al., 2023; Conmy et al., 2023; Huben et al., 2024), causal mediation analysis (Vig et al., 2020; Meng et al., 2022), visualization (Bricken et al., 2023; Olsson et al., 2022), and others, most of them focus on post hoc interpretation and phenomenological approaches. A natural question arises: Can we find or design a function prior that induces a model that is interpretable by construction? One way is to incorporate explicitly optimization process or problem-solving into the neural architecture via model- based deep learning (Shlezinger et al., 2023), such as solving constraint satisfiability problems (Wang et al., 2019), op- timal control (Amos & Kolter, 2017; Amos et al., 2018), inverse problems (Scarlett et al., 2022), physical law (Grey- danus et al., 2019; Karniadakis et al., 2021; Thuerey et al., 2021), etc. Despite its success, it is mostly limited to domain-specific priors. Another line of work revolves 1 arXiv:2502.11646v1 [cs.LG] 17 Feb 2025"
+}

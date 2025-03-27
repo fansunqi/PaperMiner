@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/u-index/u-index-rs"
+  ],
+  "tasks": [
+    "Text Indexing",
+    "Long Pattern Matching"
+  ],
+  "datasets": [
+    "Human Chromosome 1",
+    "Protein Sequences",
+    "English Collection"
+  ],
+  "methods": [
+    "Sketching",
+    "Minimizers",
+    "Suffix Array",
+    "FM-index",
+    "Sparse Suffix Array"
+  ],
+  "results": [
+    "Significant space and construction time savings",
+    "Competitive query times",
+    "Improved efficiency for long-read mapping"
+  ],
+  "title": "U-index A Universal Indexing Framework for Matching Long Patterns.pdf",
+  "abstract": "Motivation. Text indexing is a fundamental and well-studied problem. Classic solutions to this problem either replace the original text with a compressed representation, e.g., the FM-index and its variants, or keep it uncompressed but attach some redundancy \u2014 an index \u2014 to accelerate matching, e.g., the suffix array. The former solutions thus retain excellent compressed space, but are practically slow to construct and query. The latter approaches, instead, sacrifice space efficiency but are typically faster; for example, the suffix array takes much more space than the text itself for commonly used alphabets, like ASCII or DNA, but it is fast to construct and query. Methods. In this paper, we show that efficient text indexing can be achieved using just a small extra space on top of the original text, provided that the query patterns are sufficiently long. More specifically, we develop a new indexing paradigm in which a sketch of a query pattern is first matched against a sketch of the text. Once candidate matches are retrieved, they are verified using the original text. This paradigm is thus universal in the sense that it allows us to use any solution to index the sketched text, like a suffix array, FM-index, or r-index. Results. We explore both the theory and the practice of this universal framework. With an extensive experimental analysis, we show that, surprisingly, universal indexes can be constructed much faster than their unsketched counterparts and take a fraction of the space, as a direct consequence of (i) having a lower bound on the length of patterns and (ii) working in sketch space. Furthermore, these data structures have the potential of retaining or even improving query time, because matching against the sketched text is faster and verifying candidates can be theoretically done in constant time per occurrence (or, in practice, by short and cache-friendly scans of the text). Finally, we discuss some important applications of this novel indexing paradigm to computational biology. We hypothesize that such indexes will be particularly effective when the queries are sufficiently long, and so demonstrate applications in long-read mapping. 2012 ACM Subject Classification Theory of computation \u2192Sketching and sampling; Applied computing \u2192Bioinformatics Keywords and phrases Sketching; Hashing; Minimizers; Text Indexing arXiv:2502.14488v1 [cs.DS] 20 Feb 2025"
+}

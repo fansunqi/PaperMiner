@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Named Entity Recognition (NER)"
+  ],
+  "datasets": [
+    "HiNER",
+    "MahaNER",
+    "B-NER"
+  ],
+  "methods": [
+    "Custom Transformer",
+    "XLM-R",
+    "mBERT",
+    "MuRIL"
+  ],
+  "results": [
+    "F1 Score: 92.11"
+  ],
+  "title": "TriNER A Series of Named Entity Recognition Models for Hindi, Bengali Marathi.pdf",
+  "abstract": "India\u2019s rich cultural and linguistic diversity poses various challenges in the domain of Natural Language Processing (NLP), particularly in Named Entity Recognition (NER). NER is a NLP task that aims to identify and classify tokens into different entity groups like Person, Location, Organization, Number, etc. This makes NER very useful for downstream tasks like context-aware anonymization. This paper details our work to build a multilingual NER model for the three most spoken languages in India - Hindi, Bengali & Marathi. We train a custom transformer model and fine tune a few pretrained models, achieving an F1 score of 92.11 for a total of 6 entity groups. Through this paper, we aim to introduce a single model to perform NER and significantly reduce the inconsistencies in entity groups and tag names, across the three languages. 1 Introduction The term \"named entity\" was first introduced during the sixth Message Understanding Conference [1], where the objective was to identify names of individuals, locations, and organizations in text, later extending to include temporal and numerical expressions. Since then, named entity recognition (NER) has advanced to encompass fine-grained NER, which identifies subcategories within entities [2], and nested NER, which detects entities embedded within others [3]. In the last few years, there has been significant progress in this domain, including varied approaches to perform Named Entity Recognition ranging from the use of Conditional Random Fields (CRF) and Long Short-Term Memory (LSTM) to Embeddings from Language Models (ELMo), and Transformer models. However, Transformer models consistently outperform other approaches for NER, as outlined in [4] and [5], and due to this reason, we focus on using them for our efforts. The work in NER is rapidly growing, but only a small subset of this progress encompasses Indian regional languages. While the past few years have produced various gold standard datasets and associated models, they suffer from inconsistencies in the targeted entity groups. Additionally, the presence of separate models for each language leads to inefficiencies in use and increased inference costs. To counter this, there are a few multilingual NER models as well, but most of them only recognize Person, Location & Organization. This paper outlines our effort to overcome these challenges and inconsistencies to develop a multilingual NER model for Hindi, Bengali & Marathi. Our choice of language is driven by the presence of high-quality datasets and the fact that these languages are the 3 most spoken languages of India. We also define a common set of 6 entity classes to ensure consistency across languages. We discuss the steps involved in data curation, implementation of the models and evaluation technique and results used. 2 Related Work In the context of Named Entity Recognition, a substantial body of literature addresses the task across various languages and domains. This section, however, focuses specifically on reviewing existing studies related to Hindi, Marathi, and Bengali. [5] outlines the IJCNLP NER corpus, which was one of the first efforts in the domain of NER for TriNER: A Series of Named Entity Recognition Models For Hindi, Bengali & Marathi Mohammed Amaan Dhamaskar, Rasika Ransing Vidyalankar Institute of Technology {mohammedamaan.dhamaskar, rasika.ransing}@vit.edu.in"
+}

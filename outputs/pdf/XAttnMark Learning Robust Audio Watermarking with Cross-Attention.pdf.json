@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/liuyixin-louis/xattnmark"
+  ],
+  "tasks": [
+    "Audio Watermarking"
+  ],
+  "datasets": [
+    "MusicCap",
+    "LibriSpeech",
+    "AudioSet",
+    "Free Music Archive",
+    "VoxPopuli"
+  ],
+  "methods": [
+    "Cross-Attention",
+    "Temporal Modulation",
+    "Psychoacoustic-aligned Temporal-Frequency Masking Loss"
+  ],
+  "results": [
+    "State-of-the-art performance in both detection and attribution",
+    "Superior robustness against a wide range of audio transformations",
+    "Compared to existing methods, maintains higher detection accuracy and attribution accuracy",
+    "Compared to existing methods, achieves better perceptual quality",
+    "The only watermarking approach that can conduct watermark detection even with strong editing strength"
+  ],
+  "title": "XAttnMark Learning Robust Audio Watermarking with Cross-Attention.pdf",
+  "abstract": "The rapid proliferation of generative audio syn- thesis and editing technologies has raised sig- nificant concerns about copyright infringement, data provenance, and the spread of misinforma- tion through deepfake audio. Watermarking of- fers a proactive solution by embedding impercep- tible, identifiable, and traceable marks into au- dio content. While recent neural network-based watermarking methods like WavMark and Au- dioSeal have improved robustness and quality, they struggle to achieve both robust detection and accurate attribution simultaneously. This paper introduces Cross-Attention Robust Audio Watermark (XATTNMARK), that bridges this gap by leveraging partial parameter sharing be- tween the generator and the detector, a cross- attention mechanism for efficient message re- trieval, and a temporal conditioning module for improved message distribution. Additionally, we propose a psychoacoustic-aligned temporal- frequency masking loss that captures fine-grained auditory masking effects, enhancing watermark imperceptibility. Our approach achieves state-of- the-art performance in both detection and attribu- tion, demonstrating superior robustness against a wide range of audio transformations, includ- ing challenging generative editing with strong editing strength. Project webpage is available at https://liuyixin-louis.github.io/xattnmark/. 1. Introduction With the rapid development of generative audio synthesis and editing techniques, anyone can now easily edit and re- synthesize audio content (OpenAI, 2024; Li et al., 2024; This work was done during Yixin Liu\u2019s internship at Dolby Lab- oratories Inc. 1Department of Computer Science, Lehigh Univer- sity, Bethlehem, PA, USA 2Dolby Laboratories Inc., San Francisco, CA, USA. Correspondence to: Yixin Liu <yila22@lehigh.edu; ydliu@dolby.com>, Lie Lu <llu@dolby.com>, Jihui Jin <ji- hui.jin@dolby.com>, Lichao Sun <lis221@lehigh.edu>, Andrea Fanelli <andrea.fanelli@dolby.com>. 4.3 4.4 4.5 4.6 Watermark Quality (PESQ) 0 20 40 60 80 Attribution Accuracy (%) Quality-Attribution Trade-off Ours AudioSeal Detection Attribution Tasks 0 20 40 60 80 100 Accuracy (%) 92.9 88.0 91.8 87.0 92.5 80.0 97.1 39.0 99.2 93.0 Overall Performance Comparison AudiowMark WavMark TimbreWM AudioSeal Ours Figure 1. Quality-attribution performance trade-off curve across different watermarking strengths and the overall performance com- parison on detection and attribution tasks. Higher values on both axes indicate better performance. Copet et al., 2024). While it democratizes the creative pro- cess and enables new applications, it also brings serious concerns for copyrighted data misuse, data provenance and authenticity (Pan et al., 2023; Shoaib et al., 2023; Park et al., 2023). A notable example is the recent surge of deepfake audio and video, where actors have been using deepfake techniques to impersonate and create fake speech and video content of online politicians or public figures, with the mali- cious intent to spread misinformation and manipulate public opinion (Verma et al., 2024; Wenger et al., 2021; Buo, 2020; Bilika et al., 2023). Furthermore, beyond deepfake threats, the unauthorized exploitation of copyrighted content is also a growing concern in the AI industry (Singer, 2024; Qiwei et al., 2024; Brigham et al., 2024). These days, many con- tent creators fall victim of copyright infringement due to the unauthorized use of their content for AI training and editing (Office, 2023; Abbott & Rothman, 2023). Origi- nal content is now being exploited and modified at scale in a way that makes it hard to track data provenance (Cho, 2024; Robinson, 2024; Vermillio, 2024). Among the various solutions to track audio provenance and guarantee artists\u2019 protection (Ren et al., 2024; Desai & Riedl, 2024; Liu et al., 2024c), watermarking stands out as one of the most effective proactive approaches. It involves embedding impercepti- ble perturbations into the audio that are both identifiable and traceable. Watermarking enables two key processes: detection, which verifies the presence of the watermark in an audio file, and attribution, which involves decoding a 1 arXiv:2502.04230v2 [cs.SD] 7 Feb 2025"
+}

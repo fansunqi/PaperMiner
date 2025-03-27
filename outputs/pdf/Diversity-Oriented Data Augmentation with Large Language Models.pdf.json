@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Augmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LLM Paraphraser",
+    "DPO Algorithm",
+    "Coreset Selection"
+  ],
+  "results": [
+    "Average performance gain of 10.52%"
+  ],
+  "title": "Diversity-Oriented Data Augmentation with Large Language Models.pdf",
+  "abstract": "Data augmentation is an essential technique in natural language processing (NLP) for en- riching training datasets by generating diverse samples. This process is crucial for improv- ing the robustness and generalization capa- bilities of NLP models. However, a signifi- cant challenge remains: Insufficient Attention to Sample Distribution Diversity. Most exist- ing methods focus on increasing the sample numbers while neglecting the sample distribu- tion diversity, which can lead to model over- fitting. In response, we explore data augmen- tation\u2019s impact on dataset diversity and pro- pose a Diversity-oriented data Augmentation framework (DoAug). Specifically, we utilize a diversity-oriented fine-tuning approach to train an LLM as a diverse paraphraser, which is ca- pable of augmenting textual datasets by gen- erating diversified paraphrases. Then, we ap- ply the LLM paraphraser to a selected core- set of highly informative samples and integrate the paraphrases with the original data to cre- ate a more diverse augmented dataset. Finally, we conduct extensive experiments on 12 real- world textual datasets. The results show that our fine-tuned LLM augmenter improves diver- sity while preserving label consistency, thereby enhancing the robustness and performance of downstream tasks. Specifically, it achieves an average performance gain of 10.52%, surpass- ing the runner-up baseline with more than three percentage points. 1 Introduction AI methods have demonstrated immense capabil- ities, often surpassing human abilities and tradi- tional techniques across various natural language processing (NLP) tasks. This success largely hinges on the availability of high-quality datasets, which enable AI models to uncover intrinsic pat- terns and drive their effectiveness in real-world applications. However, training on inferior datasets can significantly degrade model performance, par- ticularly when applied to test data or real-world scenarios (Wang et al., 2024b). As AI technology advances, especially with large language models (LLMs), the demand for high-quality datasets has become more pronounced. To effectively train NLP models, a high-quality dataset should be (1) Large: a sufficient number of samples is crucial to reflect the diversity and complexity of human language. Large datasets help prevent overfitting, ensuring the trained AI model generalizes well to unseen data. With more data points, the model can learn various patterns and relationships, which enhances its robustness and reliability; (2) Coherent: the mapping between data and labels must be accu- rate and consistent. Coherent datasets ensure that each data point is correctly labeled, providing the model with reliable information for learning. In- coherent datasets, with mislabeled or inconsistent data, can confuse the model and degrade its per- formance. Consistency in labeling also aids in the reproducibility of results and the interpretability of the model\u2019s predictions; (3) Diverse: a diverse dataset ensures NLP models learn a broad spec- trum of linguistic patterns, enhancing robustness across real-world conditions. This includes varia- tions such as dialects, tones, formality, or domain- specific terms. Exposure to such diversity helps models generalize better, avoiding over-reliance on narrow language subsets. Additionally, it improves adaptability to unexpected inputs while reducing biases tied to certain language styles. Data augmentation is an efficient technique for increasing the number of training samples by modi- fying existing dataset samples (Wang et al., 2024b). It allows for the rapid generation of large-scale datasets without the need for additional data collec- tion and has been successfully applied in various domains, including textual data. Data augmenta- tion for textual data often changes the wording or reshapes the structure of a sentence. Many early 1 arXiv:2502.11671v1 [cs.CL] 17 Feb 2025"
+}

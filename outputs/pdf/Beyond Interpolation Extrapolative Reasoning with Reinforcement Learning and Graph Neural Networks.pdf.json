@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/ETH-DISCO/rlp"
+  ],
+  "tasks": [
+    "Generalizable Reasoning",
+    "Extrapolation",
+    "Logic Puzzles",
+    "Reinforcement Learning"
+  ],
+  "datasets": [
+    "PUZZLES Benchmark"
+  ],
+  "methods": [
+    "Graph Neural Networks (GNNs)",
+    "Reinforcement Learning (RL)",
+    "Proximal Policy Optimization (PPO)",
+    "Multi-Agent Reinforcement Learning"
+  ],
+  "results": [
+    "Improved performance and generalization capabilities compared to existing methods",
+    "GNN architecture performs better than transformer baseline",
+    "Recurrent model more successful for modest extrapolation, stateless for larger sizes",
+    "Partial reward scheme better for larger extrapolation"
+  ],
+  "title": "Beyond Interpolation Extrapolative Reasoning with Reinforcement Learning and Graph Neural Networks.pdf",
+  "abstract": "Despite incredible progress, many neural architectures fail to properly generalize beyond their training distribution. As such, learning to reason in a correct and generalizable way is one of the current fundamental challenges in machine learn- ing. In this respect, logic puzzles provide a great testbed, as we can fully understand and control the learning environ- ment. Thus, they allow to evaluate performance on previously unseen, larger and more difficult puzzles that follow the same underlying rules. Since traditional approaches often struggle to represent such scalable logical structures, we propose to model these puzzles using a graph-based approach. Then, we investigate the key factors enabling the proposed models to learn generalizable solutions in a reinforcement learning set- ting. Our study focuses on the impact of the inductive bias of the architecture, different reward systems and the role of re- current modeling in enabling sequential reasoning. Through extensive experiments, we demonstrate how these elements contribute to successful extrapolation on increasingly com- plex puzzles. These insights and frameworks offer a system- atic way to design learning-based systems capable of gener- alizable reasoning beyond interpolation. Introduction Neural architectures have made significant strides in various domains, yet a fundamental challenge persists: the ability to generalize effectively beyond their training distribution. This limitation is particularly evident in tasks requiring log- ical reasoning, where the structured nature of the problem amplifies the consequences of poor generalization. Consider a neural network trained to solve 3x3 Sudoku puzzles. While it may excel within this confined space, it often fails when presented with 4x4 or 9x9 grids, despite the underlying log- ical principles remaining the same. This toy example under- scores a critical issue: many neural models achieve good per- formance during training, but fail to extract the fundamental logical relationships and dynamics governing the problem. The ultimate goal of these neural architectures is not to just interpolate between seen examples, but to genuinely under- stand, extract, and correctly reapply the underlying reason- ing and knowledge. The key lies in developing systems that *These authors contributed equally. NEURMAD@AAAI Copyright \u00a9 2025, Association for the Ad- vancement of Artificial Intelligence (www.aaai.org). All rights re- served. can comprehend and reason with core logical structures, en- abling them to apply this knowledge to novel, more com- plex scenarios. This level of generalization - moving beyond interpolation to true logical understanding - is essential for creating future machine learning systems capable of robust reasoning across diverse contexts, including those that go beyond their training experiences. 3 0 2 3 Figure 1: We focus on logic puzzles of varying sizes in order to systematically evaluate the ability of neural architectures to extrapolate beyond the seen training data. By modelling the problem instances through a unifying graph framework, we can naturally encompass and evaluate on instances where generalization capabilities are required. Logic puzzles provide an ideal testbed for addressing the generalization challenge in neural architectures. These puzzles offer a unique environment with clear rules and scalability. This allows us to systematically investigate a model\u2019s ability to reason beyond its training distribution by applying it to larger puzzle sizes. The inherent advantage of evaluating generalization through extrapolation is that larger puzzle configurations clearly lie outside the training distribution while the underlying rules stay the same. There- fore, we desire models that cannot only learn the correct principles from simpler scenarios, but also be applied to entirely new contexts. By controlling the difficulty and structure of puzzles, we can create such scenarios by testing whether a model has truly grasped the underlying logical principles or merely memorized patterns. Moreover, the unambiguous nature of puzzle solutions enables objective and exact measurement of performance. We choose to study this problem using Reinforcement Learning (RL), as it offers distinct advantages, particu- arXiv:2502.04402v1 [cs.LG] 6 Feb 2025"
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Graph coloring",
+    "Distributed certification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Locally checkable proofs",
+    "Neighborhood graph",
+    "Ramsey's theorem"
+  ],
+  "results": [
+    "Strong and hiding LCPs for 2-coloring exist in specific graph classes",
+    "No strong and hiding LCPs for 2-coloring in general"
+  ],
+  "title": "Strong and Hiding Distributed Certification of K-Coloring.pdf",
+  "abstract": "Distributed certi\ufb01cation is a framework in distributed computing where nodes in a network collaboratively verify whether the entire graph satis\ufb01es a given property. Within this framework, a locally checkable proof (LCP) is a non-deterministic distributed algorithm designed to verify global properties of a graph G. It involves two key components: a prover and a distributed veri\ufb01er. The prover is an all-powerful computational entity capable of performing any Turing- computable operation instantaneously. Its role is to convince the distributed veri\ufb01er\u2014composed of the graph\u2019s nodes\u2014that G satis\ufb01es a particular property \u03a0. An LCP is correct if it satis\ufb01es completeness and soundness. Completeness ensures that, for every graph G satisfying \u03a0, there exists a certi\ufb01cate assignment that is accepted by all nodes. Soundness guarantees that for every graph G that does not satisfy \u03a0, at least one node rejects the assignment for any given certi\ufb01cate assignment. In this paper, we study the problem of certifying whether a graph is k-colorable with an LCP that is able to hide the k-coloring from the veri\ufb01er. More precisely, we say an LCP for k-coloring is hiding if, in a yes-instance, it is possible to assign certi\ufb01cates to nodes without revealing an explicit k-coloring. Motivated by the search for promise-free separations of extensions of the LOCAL model in the context of locally checkable labeling (LCL) problems, we also require the LCPs to satisfy what we refer to as the strong soundness property. This is a strengthening of soundness that requires that, in a no-instance (i.e., a non-k-colorable graph) and for every certi\ufb01cate assignment, the subset of accepting nodes must induce a k-colorable subgraph. An LCP satisfying completeness, soundness, hiding, and strong soundness is called a strong and hiding LCP. We focus on the case of 2-coloring. We show that strong and hiding LCPs for 2-coloring exist in speci\ufb01c graph classes and requiring only O(log n)-sized certi\ufb01cates. Furthermore, when the input is promised to be a cycle or contains a node of degree 1, we show the existence of strong and hiding LCPs even in an anonymous network and with constant-size certi\ufb01cates. Despite these upper bounds, we prove that there are no strong and hiding LCPs for 2-coloring in general, regardless of certi\ufb01cate size. The proof relies on a Ramsey-type result as well as an intricate argument about the realizability of subgraphs of the neighborhood graph consisting of the accepting views of an LCP. Along the way, we also give a characterization of the hiding property for the general k-coloring problem that appears to be a key component for future investigations in this context. \u2217Aalto University, Finland. Email: augusto.modanese@aalto.fi \u2020Universidad Adolfo Ib\u00e1\u00f1ez, Chile. Email: p.montealegre@uai.cl \u2021Universidad Adolfo Ib\u00e1\u00f1ez, Chile. Email: martin.rios@uai.cl"
+}

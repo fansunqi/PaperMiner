@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Facial Avatar Rendering",
+    "Non-verbal Communication Behavior Endowment",
+    "Pain Assessment Training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "3D Gaussian Splatting",
+    "FLAME Feature",
+    "Transformer",
+    "Multi-view Display Calibration"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Interactive Holographic Visualization for 3D Facial Avatar.pdf",
+  "abstract": ", the simulated patient approach - having professional certified actors roleplay as a pa- tient in various standardized scenarios, allows trainees to engage with lifelike cases, enhancing their ability to recognize and assess pain in real patients [4]. How- ever, employing human actors requires significant re- sources to compensate, which leads to the rise of vir- tual simulated patient development. Mixed reality solutions arise as a cheaper and more sustainable so- lution in which a virtual avatar is programmed with standardized scenarios for training purposes. Most re- cent notable mixed reality platforms for nursing train- ing, such as GigXR\u2019s Holopatient [2] or SimX\u2019s VR [6], employ VR headsets as the main medium to project the patient avatar to users. However, due to current technology limitations, VR headset is reported to hin- der the training experience: most VR head-mounted display supports only single users, and VR glasses also cause discomfort, isolating feelings with extended use. On the other hand, a multi-view 3D display can nat- urally support group settings while maintaining real- istic interaction between the training and the patient avatar. 3. System Design 3.1 Generative Facial Feedback As the pain-related dataset for simulated patients does not exist, for the first step, we revise the task into a more generalized non-verbal communication behav- ior endowment for robotic agents. For facial expres- sion, we utilized the FLAME feature [3] that repre- sents pose and expression facial features. Pain in- tensity future may be added into the latent space to adjust facial expression in the future. Given multi-modal stimulation inputs consist of speaker\u2019s audio As(t), facial features Vs(t) until time t along with listener\u2019s past facial features Vl(t\u2212k) un- til time (t \u2212k), our model predicts k-frames feedback facial features \u02c6V (t, k). We chose 1D convolutional blocks to extract temporal features from modality in- puts Fa, Fv, Fl. Fa(t) = Fa(As(t)) Fv(t) = Fv(Vs(t)) Fl(t \u2212k) = Fl(Vl(t \u2212k)) arXiv:2502.08085v1 [cs.GR] 12 Feb 2025"
+}

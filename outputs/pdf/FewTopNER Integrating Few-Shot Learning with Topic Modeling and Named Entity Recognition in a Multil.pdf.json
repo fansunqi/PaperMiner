@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Named Entity Recognition",
+    "Topic Modeling"
+  ],
+  "datasets": [
+    "WikiNeural",
+    "WikiMedia"
+  ],
+  "methods": [
+    "XLM-RoBERTa",
+    "BiLSTM",
+    "Conditional Random Fields",
+    "Prototype Networks",
+    "Meta-Learning",
+    "Active Learning"
+  ],
+  "results": [
+    "F1 Score: 67.5%",
+    "NPMI: -0.28"
+  ],
+  "title": "FewTopNER Integrating Few-Shot Learning with Topic Modeling and Named Entity Recognition in a Multil.pdf",
+  "abstract": "We introduce FewTopNER, a novel framework that integrates few-shot named entity recognition (NER) with topic-aware contextual modeling to address the challenges of cross-lingual and low- resource scenarios. FewTopNER leverages a shared multilingual encoder based on XLM-RoBERTa, augmented with language-speci\ufb01c calibration mechanisms, to generate robust contextual embed- dings. The architecture comprises a prototype-based entity recognition branch\u2014employing BiL- STM and Conditional Random Fields for sequence labeling\u2014and a topic modeling branch that extracts document-level semantic features through hybrid probabilistic and neural methods. A cross- task bridge facilitates dynamic bidirectional attention and feature fusion between entity and topic representations, thereby enhancing entity disambiguation by incorporating global semantic context. Empirical evaluations on multilingual benchmarks across English, French, Spanish, German, and Italian demonstrate that FewTopNER signi\ufb01cantly outperforms existing state-of-the-art few-shot NER models. In particular, the framework achieves improvements of 2.5\u20134.0 percentage points in F1 score and exhibits enhanced topic coherence, as measured by normalized pointwise mutual information. Ablation studies further con\ufb01rm the critical contributions of the shared encoder and cross-task integration mechanisms to the overall performance. These results underscore the ef\ufb01cacy of incorporating topic-aware context into few-shot NER and highlight the potential of FewTopNER for robust cross-lingual applications in low-resource settings. Keywords Few-shot Learning \u00b7 Named Entity Recognition \u00b7 Topic Modeling \u00b7 Cross-Lingual Transfer \u00b7 Multilingual NLP \u00b7 Prototype Networks \u00b7 Conditional Random Fields \u00b7 Language-Speci\ufb01c Calibration \u00b7 Low-Resource Settings 1 Introduction Extracting structured insights from vast, unstructured textual data is a central challenge in natural language process- ing (NLP). Two core tasks\u2014Named Entity Recognition (NER) and Topic Modeling (TM)\u2014have traditionally been addressed in isolation, yet their integration promises a richer, more nuanced interpretation of text. NER targets the precise identi\ufb01cation and categorization of entities (e.g., persons, organizations, and locations), which is critical for applications such as customer service automation, business intelligence, and real-time information systems in domains like healthcare and \ufb01nance [1]. In contrast, TM uncovers latent themes that characterize large document collections, supporting tasks such as content recommendation, summarization, and sentiment analysis. Integrating NER and TM can yield signi\ufb01cant bene\ufb01ts; recognizing entities within their broader thematic context en- hances disambiguation and enriches downstream analyses such as trend detection and targeted marketing [2]. However, the joint modeling of \ufb01ne-grained entity details and macro-level topic structures is inherently challenging\u2014especially in few-shot and resource-poor language scenarios where annotated data is limited [3]. Traditional NLP models, even those based on recent pre-trained architectures like BERT and XLM-RoBERTa, often falter when required to general- ize across languages and domains without extensive retraining [4]."
+}

@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data-to-text generation"
+  ],
+  "datasets": [
+    "E2E",
+    "ViGGO",
+    "WebNLG",
+    "DART",
+    "WikiTableText"
+  ],
+  "methods": [
+    "Exponential scaling",
+    "Power law scaling",
+    "MLE",
+    "Huber loss",
+    "F-test",
+    "Vuong's likelihood-ratio test"
+  ],
+  "results": [
+    "Factual inconsistency in D2T follows exponential scaling with LLM size",
+    "Power law scaling does not fit the observed scaling behavior"
+  ],
+  "title": "Factual Inconsistency in Data-to-Text Generation Scales Exponentially with LLM Size A Statistical Va.pdf",
+  "abstract": "Monitoring factual inconsistency is essential for ensuring trustworthiness in data-to-text gen- eration (D2T). While large language models (LLMs) have demonstrated exceptional perfor- mance across various D2T tasks, previous stud- ies on scaling laws have primarily focused on generalization error through power law scaling to LLM size (i.e., the number of model param- eters). However, no research has examined the impact of LLM size on factual inconsistency in D2T. In this paper, we investigate how fac- tual inconsistency in D2T scales with LLM size by exploring two scaling laws: power law and exponential scaling. To rigorously evaluate and compare these scaling laws, we employ a statistical validation framework consisting of three key stages: predictive performance esti- mation, goodness-of-fit assessment, and com- parative analysis. For a comprehensive empiri- cal study, we analyze three popular LLM fami- lies across five D2T datasets, measuring factual inconsistency inversely using four state-of-the- art consistency metrics. Our findings, based on exhaustive empirical results and validated through our framework, reveal that, contrary to the widely assumed power law scaling, factual inconsistency in D2T follows an exponential scaling with LLM size. 1 Introduction Data-to-text (D2T) generation (Lin et al., 2024; Li et al., 2024) converts semi-structured data (e.g., tables) into natural language, with applications in conversation systems, automated journalism, and other fields. A key challenge in D2T is fac- tual inconsistency (Li et al., 2022; Huang et al., 2023)\u2014when generated text fails to entails with input facts\u2014leading to hallucinations that under- mine trust in D2T models (Figure 1). Therefore, it is essential to monitor and mitigate factual in- consistency in order to construct trustworthy D2T models. reference generated (John Buscema, AWARD, Eisner Award) John Buscema won the Eisner Award. John Buscema received the Eisner Award for his work on Close to Ahm Delta. True reference Factuallly inconsistent generation Source (triplet) data Figure 1: Example of data-to-text generation from the DART dataset, with a factually inconsistent output from the Pythia-1.4B model. Large language models (LLMs) have achieved remarkable success in D2T, primarily due to their massive model sizes (parameter counts) and train- ing on vast text corpora (Lorandi and Belz, 2024). Several studies shows that LLMs often adhere to scaling laws, typically power laws, governing gen- eralization error or perplexity in relation to model size (Kaplan et al., 2020; Hoffmann et al., 2022). These scaling laws play a crucial role in predicting model performance, guiding hyperparameter tun- ing, estimating computational costs, and optimiz- ing resource allocation (Hendrycks, forthcoming; Zhang et al., 2024). Existing LLM scaling laws in D2T focus on generalization loss or test perplex- ity (Bahri et al., 2024), overlooking factual incon- sistency. Understanding how factual inconsistency scales with LLM model size can help researchers and practitioners optimize model selection and en- hance trustworthiness in D2T, highlighting a key research gap. In this paper, we address the research gap by examining scaling laws for factual inconsistency in D2T with respect to LLM size. Unlike prior studies that focus solely on power law scaling, we explore both power law and exponential scaling with a rig- orous three-stage statistical validation framework. This framework comprises three key stages: pre- dictive performance estimation (evaluating Huber loss on held-out data), goodness-of-fit assessment 1 arXiv:2502.12372v1 [cs.CL] 17 Feb 2025"
+}

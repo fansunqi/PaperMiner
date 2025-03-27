@@ -1,0 +1,36 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Skill assessment",
+    "Game rating",
+    "Rating system analysis"
+  ],
+  "datasets": [
+    "Renju",
+    "Chess",
+    "Tennis",
+    "Scrabble",
+    "StarCraft",
+    "Go",
+    "LLM Arena",
+    "Hearthstone",
+    "Blotto",
+    "AlphaStar"
+  ],
+  "methods": [
+    "Elo rating",
+    "Glicko",
+    "TrueSkill",
+    "Elo2k",
+    "Pairwise",
+    "Online gradient descent",
+    "Online convex optimization"
+  ],
+  "results": [
+    "Elo outperforms more complex rating systems",
+    "Elo performs well in sparse datasets",
+    "Elo's predictive accuracy correlates with ranking accuracy"
+  ],
+  "title": "Is Elo Rating Reliable A Study under Model Misspecification.pdf",
+  "abstract": "Elo rating, widely used for skill assessment across diverse domains ranging from competitive games to large language models, is often understood as an incremental update algorithm for estimating a stationary Bradley-Terry (BT) model. However, our empirical analysis of practical matching datasets reveals two surprising findings: (1) Most games deviate significantly from the assumptions of the BT model and stationarity, raising questions on the reliability of Elo. (2) Despite these deviations, Elo frequently outperforms more complex rating systems, such as mElo and pairwise models, which are specifically designed to account for non-BT components in the data, particularly in terms of win rate prediction. This paper explains this unexpected phenomenon through three key perspectives: (a) We reinterpret Elo as an instance of online gradient descent, which provides no-regret guarantees even in misspecified and non-stationary settings. (b) Through extensive synthetic experiments on data generated from transitive but non-BT models, such as strongly or weakly stochastic transitive models, we show that the \u201csparsity\u201d of practical matching data is a critical factor behind Elo\u2019s superior performance in prediction compared to more complex rating systems. (c) We observe a strong correlation between Elo\u2019s predictive accuracy and its ranking performance, further supporting its effectiveness in ranking. 1 Introduction The Elo rating system, introduced by Arpad Elo (Elo, 1961), is a widely-used method for rating player strength in two-player, zero-sum games. Initially developed for chess, Elo has since been adopted across a broad range of games, including Go, sports, video games, and recently, in evaluating large language models (LLMs) and AI agents. Elo rating is usually interpreted as an incremental update algorithm for estimating an underlying stationary Bradley-Terry (BT) model. BT model assumes each player i has a scalar strength rating \u03b8[i] (which does not change), and for a single game between player i and j, the probability that player i wins is \u03c3(\u03b8[i] \u2212\u03b8[j]), where \u03c3 is the logistic function. Based on this model, after each game, Elo rating system will adjust each player\u2019s rating according to the actual game result. Despite the widespread use of Elo, its foundation on games following stationary BT models appears restrictive. In this paper, we first examine whether the BT assumption holds in real-world datasets. Using a likelihood ratio test, we show that game outcomes in many datasets deviate significantly from the BT model, indicating substantial model misspecification. Furthermore, we observe that player skills and matchmaking distributions are often non-stationary. This raises serious concerns over Elo\u2019s reliability on practical uses. Surprisingly, we also observe that, despite these deviations, Elo still frequently outperform more complex models, such as mElo and pairwise methods\u2014designed to capture non-BT components\u2014in predicting outcomes of the real-world games. These findings call for a deeper understanding of Elo beyond its conventional interpretation as a BT model parameter estimator. In this paper, we explore this phenomenon through three key perspectives. First, we interpret the Elo rating system through the lens of regret minimization. Specifically, Elo can be seen as an instance of online gradient descent\u2014an online convex optimization (OCO) algorithm with \u2217Department of ORFE, Princeton University; shangetang@princeton.edu \u2020Department of ECE, Princeton University 1 arXiv:2502.10985v1 [cs.LG] 16 Feb 2025"
+}

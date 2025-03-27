@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model optimization",
+    "Microlensing event fitting"
+  ],
+  "datasets": [
+    "Korea Microlensing Telescope Network event database"
+  ],
+  "methods": [
+    "SFit minimizer",
+    "Newton's method",
+    "BFGS",
+    "Nelder-Mead",
+    "Newton-CG"
+  ],
+  "results": [
+    "SFit is highly reliable with extremely low rates of false positives and false negatives",
+    "SFit is relatively efficient, requiring a median of 167 function evaluations to meet the required tolerance",
+    "SFit automatically estimates uncertainties in the fitted parameters"
+  ],
+  "title": "An Alternate Method for Minimizing \u03a7^2.pdf",
+  "abstract": "In this paper, we describe an algorithm and associated software package (sfit minimize) for maximizing the likelihood function of a set of parameters by minimizing \u03c72. The key element of this method is that the algorithm estimates the second derivative of the \u03c72 function using first derivatives of the function to be fit- ted. These same derivatives can also be used to calculate the uncertainties in each parameter. We test this algorithm against several standard minimization algorithms in SciPy.optimize.minimize() by fitting point lens models to light curves from the 2018 Korea Microlensing Telescope Network event database. We show that for fitting microlensing events, SFit works faster than the Nelder-Mead simplex method and is more reliable than the BFGS gradient method; we also find that the Newton-CG method is not effective for fitting microlensing events. 1. INTRODUCTION Model optimization is a significant component of most quantitative analyses. Many analyses in the field of microlensing have long used on an optimization algorithm that relies on only first derivatives of the function being fit to the data. Because this feature is distinct from many of the most readily available optimization algorithms, we present the derivation of this algorithm, a Python implemen- tation (SFit), and evaluate the performance of SFit against existing algorithms implemented in SciPy.optimize.minimize() for the microlensing use case. 2. THE DERIVATION Our method builds upon the discussion in \u201c\u03c72 and Linear Fits\u201d (Gould 2003), which noted that the approach to non-linear models could be expanded beyond the scope of that work. Suppose that the function we want to minimize is a function F(x) that is described by n parameters Ai (where we use Ai, instead of ai, as a reminder that in the general case, they are non-linear). Considering the general (nonlinear) case, we can Taylor expand \u03c72, in terms of the n parameters: \u03c72 =\u03c72 0 + X i \u2202\u03c72 \u2202Ai Ai + 1 2 X i,j \u22022\u03c72 \u2202Ai\u2202Aj AiAj (1) jyee@cfa.harvard.edu gould.34@osu.edu arXiv:2502.04486v1 [astro-ph.IM] 6 Feb 2025"
+}

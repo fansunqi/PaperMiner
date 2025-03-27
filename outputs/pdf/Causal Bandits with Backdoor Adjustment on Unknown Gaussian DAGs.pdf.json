@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Causal Bandit Problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Backdoor Adjustment",
+    "Upper Confidence Bound (UCB)",
+    "Markov Blanket",
+    "Linear Structural Equation Models (SEM)"
+  ],
+  "results": [
+    "Cumulative regret bounded by Op a T log T {pm` nqq",
+    "Empirical study demonstrates advantage over existing methods"
+  ],
+  "title": "Causal Bandits with Backdoor Adjustment on Unknown Gaussian DAGs.pdf",
+  "abstract": "The causal bandit problem aims to sequentially learn the intervention that maximizes the expectation of a reward variable within a system governed by a causal graph. Most existing approaches assume prior knowledge of the graph structure, or impose unrealistically restrictive conditions on the graph. In this paper, we assume a Gaussian linear directed acyclic graph (DAG) over arms and the reward variable, and study the causal bandit problem when the graph structure is unknown. We identify backdoor adjustment sets for each arm using sequentially generated experimental and observational data during the decision process, which allows us to estimate causal effects and construct upper confidence bounds. By integrating estimates from both data sources, we develop a novel bandit algo- rithm, based on modified upper confidence bounds, to sequentially determine the optimal intervention. We establish both case-dependent and case-independent upper bounds on the cumulative regret for our algorithm, which improve upon the bounds of the standard multi-armed bandit algorithms. Our empirical study demonstrates its advantage over existing methods with respect to cumulative regret and computation time. 1 Introduction The multi-armed bandit (MAB) problem [2] is an example of the exploration versus exploitation dilemma, which has been extensively studied in machine learning and statistics. Under the setting of an MAB problem, there is an action set A consisting of K actions, also called arms. Each arm a P A corresponds to a real-valued distribution of the reward variable, with some unknown expectation \u00b5a. A player pulls the arms sequentially and chooses the next arm based on the past plays and obtained rewards. The goal is to find the arm with the largest reward and further control the expected loss due to the fact that the optimal arm is not always pulled. For the standard MAB problem, the arms are assumed to be independent of each other. Many well-designed algorithms have been proposed to study the standard MAB problem, among which upper confidence bound [1] and Thompson sampling [18] are most popular. For structured bandit problem, the arms are assumed to have some non-trivial dependencies among each other. Some examples include linear bandits [4], combinatorial bandits [3], etc. Algorithms for structured bandits utilize the dependencies among arms to expedite the sequential decision process. Lattimore et al. [7] introduced the causal bandit problem, where a causal DAG model is assumed to govern the joint distribution of the reward variable, its covariates, and the arms. Most existing works assume full knowledge of the underlying DAG structure and/or local conditional distributions of the variables. Under such settings, causal bandit (CB) algorithms were developed with bounds on the simple regret, such as the works of Lattimore et al. [7], Sen et al. [16], and Yabe et al. [20], in the absence of unobserved confounders, and Lee and Bareinboim [9], Maiti et al. [12] when confounders exist. Some works further made additional assumptions on the causal model, such as Nair et al. [13] for no-backdoor graphs in the budgeted bandit framework and Lu et al. [10] for linear causal bandits. Since the underlying causal DAG is usually unknown in practice, application of the above methods has been limited. arXiv:2502.02020v1 [cs.LG] 4 Feb 2025"
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Audio-Visual Segmentation"
+  ],
+  "datasets": [
+    "AVSBench-S4",
+    "AVSBench-MS3"
+  ],
+  "methods": [
+    "Balanced Training with Negative Samples",
+    "Classifier-Guided Similarity Learning"
+  ],
+  "results": [
+    "G-mIoU: 87.672",
+    "G-F: 82.461",
+    "G-FPR: 0.000"
+  ],
+  "title": "Do Audio-Visual Segmentation Models Truly Segment Sounding Objects.pdf",
+  "abstract": "Unlike traditional visual segmentation, audio-visual seg- mentation (AVS) requires the model not only to identify and segment objects but also to determine whether they are sound sources. Recent AVS approaches, leveraging trans- former architectures and powerful foundation models like SAM, have achieved impressive performance on standard benchmarks. Yet, an important question remains: Do these models genuinely integrate audio-visual cues to segment sounding objects? In this paper, we systematically inves- tigate this issue in the context of robust AVS. Our study reveals a fundamental bias in current methods: they tend to generate segmentation masks based predominantly on visual salience, irrespective of the audio context. This bias results in unreliable predictions when sounds are ab- sent or irrelevant. To address this challenge, we introduce AVSBench-Robust, a comprehensive benchmark incorpo- rating diverse negative audio scenarios including silence, ambient noise, and off-screen sounds. We also propose a simple yet effective approach combining balanced train- ing with negative samples and classifier-guided similarity learning. Our extensive experiments show that state-of-the- art AVS methods consistently fail under negative audio con- ditions, demonstrating the prevalence of visual bias. In con- trast, our approach achieves remarkable improvements in both standard metrics and robustness measures, maintain- ing near-perfect false positive rates while preserving high- quality segmentation performance. 1. Introduction Visual Input AVS Bench AVSeg former CAVP Ours Ambulance Silence Noise Off-screen Audio Input Negative Audio Samples Figure 1. Performance in Different Audio Scenarios. The top row shows an ambulance image under different audio conditions: Ambulance sound (positive), Silence, Noise, and Offscreen sounds (negative). Each subsequent row displays the segmentation output various SOTA AVS models [8, 12, 52] and our model under each audio condition. In negative scenarios, existing models segment the ambulance due to \u201cvisual prior\u201d bias, mistakenly associating it with unrelated audio. In contrast, our model accurately segments only in the presence of relevant audio, demonstrating improved alignment between audio cues and visual segmentation. 1 arXiv:2502.00358v1 [cs.SD] 1 Feb 2025"
+}

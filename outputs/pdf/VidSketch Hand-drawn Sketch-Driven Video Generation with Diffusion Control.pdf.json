@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/yzhang780/VidSketch"
+  ],
+  "tasks": [
+    "Video Animation Generation",
+    "Sketch Guided Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Video Diffusion Models (VDMs)",
+    "Level-Based Sketch Control Strategy",
+    "TempSpatial Attention Mechanism"
+  ],
+  "results": [
+    "VidSketch surpasses baselines in quality, achieving higher text alignment, spatiotemporal consistency, stronger sketch-to-video consistency, and richer visual effects"
+  ],
+  "title": "VidSketch Hand-drawn Sketch-Driven Video Generation with Diffusion Control.pdf",
+  "abstract": "With the advancement of generative artificial in- telligence, previous studies have achieved the task of generating aesthetic images from hand-drawn sketches, fulfilling the public\u2019s needs for draw- ing. However, these methods are limited to static images and lack the ability to control video ani- mation generation using hand-drawn sketches. To address this gap, we propose VidSketch, the first method capable of generating high-quality video animations directly from any number of hand- drawn sketches and simple text prompts, bridg- ing the divide between ordinary users and profes- sional artists. Specifically, our method introduces a Level-Based Sketch Control Strategy to auto- matically adjust the guidance strength of sketches during the generation process, accommodating users with varying drawing skills. Furthermore, a TempSpatial Attention mechanism is designed to enhance the spatiotemporal consistency of gen- erated video animations, significantly improving the coherence across frames. You can find more detailed cases on our official website. 1. Introduction With the development of generative artificial intelligence, some studies (Koley et al., 2024; Zhang et al., 2024a) have successfully automated image generation from sketches, sig- nificantly lowering the barrier for non-experts to produce high-quality drawings. However, existing methods primar- ily focus on static images, leaving a gap in automatically creating video animations from hand-drawn sketches. To meet the needs of ordinary people for video animation *Equal contribution 1State Key Lab of CAD&CG, Zhejiang University, China 2College of Software Technology, Zhejiang University, China. Correspondence to: Lifan Jiang <lifan- jiang@zju.edu.cn>, Shuang Chen <csfufu@zju.edu.cn>, Boxi Wu <wuboxi@zju.edu.cn>. Proceedings of the 42 nd International Conference on Machine Learning, Vancouver, Canada. PMLR 267, 2025. Copyright 2025 by the author(s). Figure 1. Hand-drawn Sketch-Driven Video Generation. Our VidS- ketch empowers users of all skill levels to effortlessly create stun- ning, high-quality video animations using concise text prompt and hand-drawn sketch sequences of any level of abstraction. creation, we propose VidSketch, a novel approach that, un- like traditional video editing methods, is based on Video Dif- fusion Models (VDMs) (Shi et al., 2024; Qing et al., 2024; Liu et al., 2024; Feng et al., 2024; Menapace et al., 2024) to produce high-quality video animations directly from any number of hand-drawn sketches and simple prompts. This approach removes barriers, enabling non-experts to create high-quality animations and meet diverse aesthetic needs. Variations in users\u2019 drawing skills make it impractical to use a single sketch control strength for VDMs during in- ference. Abstract sketches need lower control strength to avoid subject distortion and poor text alignment. To address this, we propose the Level-Based Sketch Control Strategy, which dynamically evaluates levels of abstraction in a sketch sequence and adjusts guidance strength during video gener- ation, ensuring VidSketch\u2019s generalizability. Unlike static images, video animations require strong inter- frame consistency to prevent issues such as discontinuity. To solve this, we introduce a TempSpatial Attention mecha- nism, which improves the spatiotemporal consistency and fluidity of the generated video animations. We evaluated the fine-tuned VidSketch model, and results show it aligns well with hand-drawn sketches while ensuring high video quality, aesthetic appeal, style diversity, and spa- tiotemporal consistency. Moreover, it removes professional barriers, meeting ordinary users\u2019 needs for video anima- 1 arXiv:2502.01101v1 [cs.CV] 3 Feb 2025"
+}

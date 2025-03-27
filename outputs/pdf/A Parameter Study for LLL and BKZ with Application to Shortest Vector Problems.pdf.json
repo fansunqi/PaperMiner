@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Lattice-based Cryptography",
+    "Learning with Error (LWE) problems",
+    "Shortest Vector Problems (SVPs)",
+    "LLL and BKZ algorithm analysis"
+  ],
+  "datasets": [
+    "NIST FIPS 203 Standard"
+  ],
+  "methods": [
+    "LLL Algorithm",
+    "BKZ Algorithm"
+  ],
+  "results": [
+    "Probability analysis for solving SVPs",
+    "Security parameter impact",
+    "Algorithm performance comparison"
+  ],
+  "title": "A Parameter Study for LLL and BKZ with Application to Shortest Vector Problems.pdf",
+  "abstract": "\u2014In this work, we study the solution of shortest vector problems (SVPs) arising in terms of learning with error problems (LWEs). LWEs are linear systems of equations over a modular ring, where a perturbation vector is added to the right-hand side. This type of problem is of great interest, since LWEs have to be solved in order to be able to break lattice-based cryptosystems as the Module-Lattice-Based Key-Encapsulation Mechanism published by NIST in 2024. Due to this fact, several classical and quantum-based algorithms have been studied to solve SVPs. Two well-known algorithms that can be used to simplify a given SVP are the Lenstra\u2013Lenstra\u2013Lov\u00b4asz (LLL) algorithm and the Block Korkine\u2013Zolotarev (BKZ) algorithm. LLL and BKZ construct bases that can be used to compute or approximate solutions of the SVP. We study the performance of both algorithms for SVPs with different sizes and modular rings. Thereby, application of LLL or BKZ to a given SVP is considered to be successful if they produce bases containing a solution vector of the SVP. Index Terms\u2014 NIST report 203, lattice-based cryptography, LWE problems, lattice reduction algorithms, LLL, BKZ I. INTRODUCTION Due to significant progress that has been made to improve both quantum hardware and algorithms, new concepts for public-key cryptosystems have to be developed. The goal is to design cryptosystems or cryptographic algorithms that are resistant to attacks using quantum computers. In literature, such algorithms are denoted as Post-quantum cryptography (PQC) algorithms [4], [9]. One of the different PQC algorithms that have been inves- tigated so far is the key encapsulation algorithm described in the NIST report FIPS 203 [2]. This algorithm is based on a mathematical problem given by a linear system of equations over a modular ring, where he matrix of this system is sampled from a uniform distribution. The right-hand side and matrix of this linear system of equations form the public key of the key encapsulation algorithm. However, in addition to that, a perturbation or error vector is sampled from a Gaussian distribution and added to the right-hand side of the linear system of equations. Depending on the standard deviation, the absolute values within the error vectors are usually bounded by 2 or 3. As a consequence, the public key cannot be used to recover the secret key, which is the solution of the overall system. This type of problem is known as learning with errors problem (LWE problem) [3]. Due to the significance of LWE problems several solution strategies have been developed [14]. One of them is to refor- mulate the LWE problem as an optimization problem whose solution vector consists of the secret key and the error vector. Moreover, it is assumed that both vectors have components with small absolute values. For this reason, those problems are referred to as short vector problems (SVPs) [20]. Contrary to an LWE problem, the solutions of a SVP are given by vectors over the ring of integers. This facilitates the design of solution algorithms, since in terms of a SVP no modular arithmetics is required anymore. It is sufficient to use standard arithmetics in integer rings. However, up to now, there are no efficient algorithms for solving SVPs of relevant size. To facilitate the solution of an SVP, algorithms like the Lenstra\u2013Lenstra\u2013Lov\u00b4asz ba- sis reduction algorithm (LLL algorithm) or the Block Ko- rkine\u2013Zolotarev algorithm (BKZ algorithm) are utilized [8], [11], [13], [16], [21]. These algorithms consider the solutions of SVPs as elements of a lattice and transform the basis of this lattice such that the new basis is almost orthogonal and consisting of short vectors. By means of such a basis, the solution of a SVP can be computed or approximated in a more convenient way. In some cases, the basis can contain the solution of the SVP itself. Quite often LLL and BKZ are combined with other solvers for discrete optimization problems [12], [15]. arXiv:2502.05160v1 [cs.CR] 7 Feb 2025"
+}

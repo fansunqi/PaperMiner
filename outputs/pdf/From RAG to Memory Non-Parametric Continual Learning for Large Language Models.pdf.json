@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "https://github.com/OSU-NLP-Group/HippoRAG"
+  ],
+  "tasks": [
+    "Retrieval-Augmented Generation (RAG)",
+    "Continual Learning for LLMs"
+  ],
+  "datasets": [
+    "NQ",
+    "PopQA",
+    "MuSiQue",
+    "2Wiki",
+    "HotpotQA",
+    "LV-Eval",
+    "NarrativeQA"
+  ],
+  "methods": [
+    "Personalized PageRank",
+    "Dense-Sparse Integration",
+    "Deeper Contextualization",
+    "Recognition Memory",
+    "Online Retrieval"
+  ],
+  "results": [
+    "Average 7 point improvement over standard RAG in associativity tasks",
+    "No deterioration and even slight improvements in factual memory and sense-making tasks"
+  ],
+  "title": "From RAG to Memory Non-Parametric Continual Learning for Large Language Models.pdf",
+  "abstract": "Our ability to continuously acquire, organize, and leverage knowledge is a key feature of human intelligence that AI systems must approximate to unlock their full potential. Given the chal- lenges in continual learning with large language models (LLMs), retrieval-augmented generation (RAG) has become the dominant way to intro- duce new information. However, its reliance on vector retrieval hinders its ability to mimic the dynamic and interconnected nature of hu- man long-term memory. Recent RAG approaches augment vector embeddings with various struc- tures like knowledge graphs to address some of these gaps, namely sense-making and associativ- ity. However, their performance on more basic factual memory tasks drops considerably below standard RAG. We address this unintended de- terioration and propose HippoRAG 2, a frame- work that outperforms standard RAG comprehen- sively on factual, sense-making, and associative memory tasks. HippoRAG 2 builds upon the Personalized PageRank algorithm used in Hip- poRAG and enhances it with deeper passage inte- gration and more effective online use of an LLM. This combination pushes this RAG system closer to the effectiveness of human long-term mem- ory, achieving a 7% improvement in associative memory tasks over the state-of-the-art embed- ding model while also exhibiting superior factual knowledge and sense-making memory capabili- ties. This work paves the way for non-parametric continual learning for LLMs. Our code and data will be released at https://github.com/ OSU-NLP-Group/HippoRAG. *Equal contribution 1The Ohio State University, Columbus, OH, USA 2University of Illinois Urbana-Champaign, IL, USA. Correspondence to: Bernal Jim\u00b4enez Guti\u00b4errez <jimenezgutier- rez.1@osu.edu>, Yiheng Shu <shu.251@osu.edu>, Yu Su <su.809@osu.edu>. 1. Introduction In an ever-evolving world, the ability to continuously ab- sorb, integrate, and leverage knowledge is one of the most important features of human intelligence. From lawyers navigating shifting legal frameworks to researchers tracking multifaceted scientific progress, much of our productivity relies on this incredible capacity for continual learning. It is imperative for AI systems to approximate this capability in order to become truly useful human-level assistants. In recent years, large language models (LLMs) have made remarkable progress in many aspects of human intelligence. However, efforts to endow these models with our evolv- ing long-term memory capabilities have faced significant challenges in both fully absorbing new knowledge (Zhong et al., 2023; Hoelscher-Obermaier et al., 2023) and avoiding catastrophic forgetting (Cohen et al., 2024; Gu et al., 2024), due to the complex distributional nature of their paramet- ric knowledge. Retrieval-augmented generation (RAG) has emerged as a way to circumvent these obstacles and allow LLMs to access new information in a non-parametric fash- ion without altering an LLM\u2019s parametric representation. Due to their simplicity and robustness (Zhong et al., 2023; Xie et al., 2024), RAG has quickly become the de facto continual learning solution for production LLM systems. However, their reliance on simple vector retrieval results in the inability to capture two vital aspects of our intercon- nected long-term memory system: sense-making (Klein et al. (2006); the ability to interpret larger, more complex, or uncertain contexts) and associativity (Suzuki (2005); the capacity to draw multi-hop connections between disparate pieces of knowledge). Several RAG frameworks that engage an LLM to explicitly structure its retrieval corpus have been recently proposed to address these limitations. To enhance sense-making, such structure-augmented RAG methods allow an LLM to either generate summaries (Edge et al., 2024; Sarthi et al., 2024; Chen et al., 2023) or a knowledge graph (KG) structure (Guo et al., 2024) to link groups of disparate but related passages, thereby improving the RAG system\u2019s ability to understand longer and more complex discourse such as long stories. To address the associativity gap, the authors of HippoRAG (Guti\u00b4errez et al., 2024) use the Personalized 1 arXiv:2502.14802v1 [cs.CL] 20 Feb 2025"
+}

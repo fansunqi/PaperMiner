@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "https://github.com/ControlGenAI/PersonGenSampler"
+  ],
+  "tasks": [
+    "Personalized Image Generation"
+  ],
+  "datasets": [
+    "Dreambooth"
+  ],
+  "methods": [
+    "Sampling techniques",
+    "Concept fidelity",
+    "Adaptability",
+    "Computational efficiency",
+    "Classifier-free guidance",
+    "Finetuning",
+    "Text embedding optimization",
+    "Hypernetworks"
+  ],
+  "results": [
+    "Improved concept fidelity and adaptability",
+    "Enhanced text similarity and concept preservation",
+    "Systematic evaluation and analysis of sampling methods",
+    "Pareto frontier curves for different sampling methods",
+    "User study results",
+    "Framework for selecting the most appropriate sampling method"
+  ],
+  "title": "Beyond Fine-Tuning A Systematic Study of Sampling Techniques in Personalized Image Generation.pdf",
+  "abstract": "Personalized text-to-image generation aims to cre- ate images tailored to user-defined concepts and textual descriptions. Balancing the fidelity of the learned concept with its ability for generation in various contexts presents a significant challenge. Existing methods often address this through di- verse fine-tuning parameterizations and improved sampling strategies that integrate superclass tra- jectories during the diffusion process. While im- proved sampling offers a cost-effective, training- free solution for enhancing fine-tuned models, sys- tematic analyses of these methods remain limited. Current approaches typically tie sampling strate- gies with fixed fine-tuning configurations, making it difficult to isolate their impact on generation outcomes. To address this issue, we systemat- ically analyze sampling strategies beyond fine- tuning, exploring the impact of concept and super- class trajectories on the results. Building on this analysis, we propose a decision framework eval- uating text alignment, computational constraints, and fidelity objectives to guide strategy selec- tion. It integrates with diverse architectures and training approaches, systematically optimizing concept preservation, prompt adherence, and re- source efficiency. The source code can be found at github.com/ControlGenAI/PersonGenSampler. 1. Introduction Diffusion-based text-to-image generation models (Ramesh et al., 2022; Saharia et al., 2022; Rombach et al., 2022a), trained on large datasets, have recently achieved impres- sive results in generating photorealistic images from textual prompts. Despite their advanced performance, these models have limitations in generating user-defined concepts, that *Equal contribution 1HSE University, Moscow, Russia 2AIRI, Moscow, Russia. Correspondence to: Aibek Alanov <alanov.aibek@gmail.com>. Preprint. are difficult to describe accurately using text alone. This limitation has led to increased interest in subject-driven text- to-image generation (Ruiz et al., 2023; Gal et al., 2022). In this task, given a small image dataset (3-5 images) of a given subject, we want to introduce the knowledge of this subject into the pre-trained text-to-image diffusion model and learn to generate it in different contexts described by textual prompts. Balancing the preservation of a concept\u2019s identity with its adaptation to a new context is the main challenge in person- alized image generation. On the one hand, the model must generate high-fidelity images of the concepts, even if it has never encountered them during the pre-training phase. On the other hand, the model should not overfit to retain the ability to follow different textual descriptions of the scenes. Modern techniques introduce various improvements to the training process to balance concept fidelity and editability. These include fine-tuning parameterizations (Ruiz et al., 2023; Gal et al., 2022; Kumari et al., 2023; Han et al., 2023; Tewel et al., 2023; Qiu et al., 2024), regularizations (Ruiz et al., 2023; Kumari et al., 2023), and encoder-based paradigms (Wei et al., 2023). For a more comprehensive overview, see Appendix A. Another direction is to use sam- pling methods applied after training to improve an already fine-tuned model. The main idea of such methods (Zhou et al., 2023; Gu et al., 2024) is to combine the sampling trajectories of prompts with concept and superclass tokens (e.g., for a dog concept, we mix trajectories for two prompts: \u201da purple V*\u201d and \u201da purple dog\u201d, see Figure 1). Sampling- based approaches can provide a cost-effective, training-free way to improve the balance between concept identity and editability. Although fine-tuning and sampling are two dis- tinct strategies to address the same issue, current research frequently overlooks the differences between these method- ologies. For example, current works (Zhou et al., 2023; Gu et al., 2024) introduce complex sampling procedures alongside fixed fine-tuning, leaving unclear the impact of sampling on generation, as does its compatibility with other fine-tuning strategies. Furthermore, they do not compare the proposed strategies with naive sampling approaches, resulting in a lack of understanding of how superclass tra- 1 arXiv:2502.05895v1 [cs.CV] 9 Feb 2025"
+}

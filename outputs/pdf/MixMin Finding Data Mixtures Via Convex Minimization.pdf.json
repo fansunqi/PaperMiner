@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Mixing"
+  ],
+  "datasets": [
+    "SlimPajama",
+    "PIQA",
+    "ARC Easy",
+    "SciQ",
+    "OpenWebMath",
+    "PCBA"
+  ],
+  "methods": [
+    "MixMin",
+    "Convex Minimization",
+    "Gradient-based Optimization",
+    "Proxy Models"
+  ],
+  "results": [
+    "Improved Data Mixture",
+    "1-5% Relative Improvement in Negative Log Likelihood",
+    "0.03-0.15 Improvement in Average Precision Scores"
+  ],
+  "title": "MixMin Finding Data Mixtures Via Convex Minimization.pdf",
+  "abstract": "Modern machine learning pipelines are increasingly combining and mixing data from diverse and disparate sources, e.g., pre-training large language models. Yet, finding the optimal data mixture is a challenging and open problem. We formalize this data mixing problem as a bi-level objective: the best mixture is the one that would lead to the best model for a downstream objective. Unfortunately, this objective is generally intractable. In this paper, we make the observation that the bi-level data mixing objective becomes convex as our model class becomes larger. We develop and study a gradient-based approach for optimizing this convex objective, which we call MixMin, and test it on language modeling and chemistry tasks. MixMin was the only method that uniformly improved the data mixture in all our experiments. With MixMin, we improved the data mixture using less than 0.2% additional compute for a pythia-410M model trained on 8.2B tokens, resulting between 1-5% relative improvement to negative log likelihood on PIQA, ARC Easy, SciQ, and OpenWebMath. Crucially, we found that MixMin mixtures for smaller models improved training of larger models, suggesting that MixMin mixtures may be scale-invariant. When mixing bioassay data to train an XGBoost model, we saw improvements to average precision scores of 0.03 \u22120.15.1 1 Introduction Recent progress in ML has come from training on vast web-scale data [Dubey et al., 2024, Touvron et al., 2023, Raffel et al., 2020, Achiam et al., 2023]. These models are known to generalize to data-poor downstream tasks, a core motivation behind scaling training data. However, as we increase the amount and diversity of data sources we can train on, a core challenge becomes choosing how to weigh these sources when training. The effectiveness of a model pre-trained on surrogate data is known to be directly related to how similar the surrogate (or \u201cpretraining\u201d) data is to the downstream task (target distribution) [Ben-David et al., 2010, Isik et al., 2024, Jain et al., 2024, Pouget et al., 2024]. Formally, finding the best mixture of data sources to train on for a downstream loss poses a bi-level optimization which is hard to optimize. We must find the mixture whose risk minimizer optimizes the downstream loss. This generally only admits expensive zero-order approaches, such as grid search [Dubey et al., 2024, Blakeney et al., 2024]. Past work has considered learning to simulate the loss oracle for unseen mixtures [Liu et al., 2024], or leveraging a large pool of existing models [Thrush et al., 2024]. Other approaches consider solving data mixing objectives agnostic to a downstream 1Correspondence to anvith.thudi@mail.utoronto.ca arXiv:2502.10510v1 [cs.LG] 14 Feb 2025"
+}

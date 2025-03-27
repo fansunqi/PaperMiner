@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dimensionality Reduction",
+    "Feature Extraction",
+    "Representation Learning"
+  ],
+  "datasets": [
+    "TinyImageNet",
+    "ImageNet",
+    "Clevr-4"
+  ],
+  "methods": [
+    "Adversarial Learning",
+    "Dependency Minimization",
+    "PICA (Principal and Independent Component Analysis)"
+  ],
+  "results": [
+    "Minimized Dependency",
+    "Reduced Redundancy",
+    "Improved Generalization",
+    "Prevented Dimensional Collapse"
+  ],
+  "title": "Adversarial Dependence Minimization.pdf",
+  "abstract": "Many machine learning techniques rely on mini- mizing the covariance between output feature di- mensions to extract minimally redundant repre- sentations from data. However, these methods do not eliminate all dependencies/redundancies, as linearly uncorrelated variables can still exhibit nonlinear relationships. This work provides a differentiable and scalable algorithm for depen- dence minimization that goes beyond linear pair- wise decorrelation. Our method employs an ad- versarial game where small networks identify de- pendencies among feature dimensions, while the encoder exploits this information to reduce de- pendencies. We provide empirical evidence of the algorithm\u2019s convergence and demonstrate its utility in three applications: extending PCA to nonlinear decorrelation, improving the general- ization of image classification methods, and pre- venting dimensional collapse in self-supervised representation learning. 1. Introduction In representation learning (Rumelhart et al., 1986b; Hinton et al., 2006; Bengio et al., 2013), algorithms learn to extract lower-dimensional encodings from input data, aiming for compact yet informative representations. A key strategy is to learn representations with minimally redundant dimen- sions, where each feature encodes a distinct concept. Such minimally redundant dimensions may offer several advan- tages: efficient data compression, improved generalization to unseen data, enhanced interpretability of the learned rep- resentations, ... The strategy of minimizing feature redundancy has been applied in various methods, from classical techniques like the Principal Component Analysis (Pearson, 1901; Hotelling, 1933) to more recent self-supervised learning 1ESAT-PSI, KU Leuven, Belgium 2CVL, ETH Z\u00a8urich, Switzerland 3INSAIT, Sofia University, Bulgaria. Correspondence to: Pierre-Franc\u00b8ois De Plaen <pde- plaen@esat.kuleuven.be>. Preprint. Copyright 2025 by the authors. (SSL) approaches (Huang et al., 2018; Zbontar et al., 2021; Bardes et al., 2021). Both PCA and these SSL methods aim to extract representations with uncorrelated dimen- sions. However, it is important to note that while these methods minimize pairwise linear correlations (\u03c1) between embedding dimensions, non-linear dependencies may still be present. We illustrate this with Example 1 (Figure 1b). Example 1. Let a random variable x1 be drawn from a uniform distribution over the interval [\u2212a, a] and x2 = x2 1. Since x2 is a deterministic function of x1, it is clear that the variables co-vary. However, we find that: Cov(x1, x2) = 0 and \u03c1(x1, x2) = 0. The random variables are thus depen- dent despite zero correlation. This example highlights a limitation of algorithms that rely on Pearson correlation: they may not eliminate all forms of dependencies/redundancies, as linearly uncorrelated vari- ables can still exhibit nonlinear relationships (Hyv\u00a8arinen & Oja, 2000). Still, developing a stable method for mutual and nonlinear dependence reduction remains an unresolved problem. The challenge lies in designing a training ob- jective that is simultaneously differentiable, scalable, and distribution-agnostic. This paper presents a training algorithm to reduce the dependence among learned embedding dimensions using neural networks. The algorithm involves an adversarial game between two types of players: (1) a series of small neural networks are trained to predict one dimension of a representation given the other dimensions, and (2) an en- coder is trained to counter reconstruction by updating the representations. Our adversarial objective can be viewed as a soft indepen- dence constraint in a task-specific optimization problem, allowing its incorporation into various learning algorithms. In this work, we explore three potential applications: 1. extending the PCA algorithm to non-linear decorrela- tion (unsupervised learning) 2. learning features that generalize beyond label supervi- sion in supervised learning 3. preventing dimensional collapse in SSL by learning minimally redundant representations This paper\u2019s main contribution is the introduction of an algorithm for nonlinear mutual dependence minimization 1 arXiv:2502.03227v1 [cs.LG] 5 Feb 2025"
+}

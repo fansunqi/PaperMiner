@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Propaganda Detection",
+    "Sentiment Analysis",
+    "Emotion Recognition"
+  ],
+  "datasets": [
+    "MultiProSE"
+  ],
+  "methods": [
+    "BERT-based models",
+    "GPT-4o-mini"
+  ],
+  "results": [
+    "Propaganda Detection: Micro-F1 score of 0.769",
+    "Sentiment Analysis: Micro-F1 score of 0.842",
+    "Emotion Detection: Micro-F1 score of 0.750"
+  ],
+  "title": "MultiProSE A Multi-label Arabic Dataset for Propaganda, Sentiment, and Emotion Detection.pdf",
+  "abstract": "Propaganda is a form of persuasion that has been used throughout history with the intention goal of influencing people's opinions through rhetorical and psychological persuasion techniques for determined ends. Although Arabic ranked as the fourth most- used language on the internet, resources for propaganda detection in languages other than English, especially Arabic, remain extremely limited. To address this gap, the first Arabic dataset for Multi-label Propaganda, Sentiment, and Emotion (MultiProSE) has been introduced. MultiProSE is an open-source extension of the existing Arabic propaganda dataset, ArPro, with the addition of sentiment and emotion annotations for each text. This dataset comprises 8,000 annotated news articles, which is the largest propaganda dataset to date. For each task, several baselines have been developed using large language models (LLMs), such as GPT-4o-mini, and pre-trained language models (PLMs), including three BERT-based models. The dataset, annotation guidelines, and source code are all publicly released to facilitate future research and development in Arabic language models and contribute to a deeper understanding of how various opinion dimensions interact in news media1. 1 Introduction Social media has become one of the prevalent mediums for communication channels. Based on recent statistics [1], among 8.08 billion people worldwide, 5.35 billion are internet users, and 5.04 billion are social media users. Therefore, social media platforms have turned into grounds for the 1 https://github.com/xxx/xxx rise of proliferation, such as propaganda, which may lead to negative consequences in various domains, including politics, healthcare, and the economy. Based on the Cambridge Dictionary [2], the term propaganda is defined as \"information, ideas, opinions, or images, often only giving one part of an argument, that are broadcast, published, or in some other way spread with the intention of influencing people's opinions.\" Moreover, propaganda utilizes specific rhetorical and psychological persuasion techniques to evoke strong feelings in the audience [3]. Propaganda detection is a crucial task in understanding how information is presented and perceived, particularly in news media. This task involves predicting whether the written text is propagandistic content that is designed to influence public opinion or not. High-performance automated methods for propaganda detection are crucial for enhancing decision-making for authorities, politicians, and businesses. Typically, the main input to propaganda detection models is textual content [4]. However, other inputs, such as sentiment and emotion, can be used to improve the model's performance. It is recommended that more publicly available benchmarked propaganda detection datasets be released under a standard open license. When conducting new propaganda detection datasets, non-English data and annotations of other opinion dimensions, including sentiment and emotions, should be considered. According to the study's findings in [5], there is a direct correlation between several persuasion techniques and emotional salience features. Furthermore, several studies, such as [6] and [7], [8], [9], and [10], demonstrated the benefits of incorporating sentiment and emotional features in the persuasion detection model. Thus, analyzing the interaction between emotions and propaganda, as well as sentiment and propaganda, could benefit overall propaganda detection. For example, the techniques of \"loaded language\" and MultiProSE: A Multi-label Arabic Dataset for Propaganda, Sentiment, and Emotion Detection Lubna Al-Henaki1,2, *, Hend Al-Khalifa1,Abdulmalik Al-Salman1, Hajar Alqubayshi3,Hind Al- Twailay3,Gheeda Alghamdi4 and Hawra Aljasim 1 King Saud University1, Majmaah University2, Imam Mohammad Ibn Saud Islamic University3, Alfaisal University 4 Riyadh, Saudi Arabia Lubna.s@mu.edu.sa*"
+}

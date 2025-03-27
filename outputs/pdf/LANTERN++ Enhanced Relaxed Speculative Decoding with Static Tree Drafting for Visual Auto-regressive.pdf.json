@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Autoregressive Modeling",
+    "Text-to-Image Generation"
+  ],
+  "datasets": [
+    "MS-COCO 2017"
+  ],
+  "methods": [
+    "Static Tree Drafting",
+    "Relaxed Acceptance",
+    "Multiplicative Relaxation"
+  ],
+  "results": [
+    "Step compression ratio up to \u00d73.63",
+    "Latency reduction up to \u00d72.56",
+    "FID increase (due to relaxed acceptance)"
+  ],
+  "title": "LANTERN++ Enhanced Relaxed Speculative Decoding with Static Tree Drafting for Visual Auto-regressive.pdf",
+  "abstract": "Speculative decoding has been widely used to accelerate autoregressive (AR) text generation. However, its effectiveness in visual AR models remains limited due to token selection ambiguity, where multiple tokens receive similarly low probabili- ties, reducing acceptance rates. While dynamic tree drafting has been proposed to improve speculative decoding, we show that it fails to mitigate token selection am- biguity, resulting in shallow draft trees and suboptimal acceleration. To address this, we introduce LANTERN++, a novel framework that integrates static tree drafting with a relaxed acceptance condition, allowing drafts to be selected independently of low-confidence predictions. This enables deeper accepted sequences, improving decoding efficiency while preserving image quality. Extensive experiments on state-of-the-art visual AR models demonstrate that LANTERN++ significantly accelerates inference, achieving up to \u00d72.56 speedup over standard AR decoding while maintaining high image quality. 1 INTRODUCTION Recent advances in speculative decoding have significantly accelerated auto-regressive (AR) genera- tion in language models (Leviathan et al., 2023; Cai et al., 2024; Li et al., 2024a;b). Extending this approach to visual AR models (Sun et al., 2024; Team, 2024; Chern et al., 2024; Liu et al., 2024) presents unique challenges due to the inherent nature of image token distributions. In particular, Jang et al. (2025) identified a key issue, token selection ambiguity, wherein multiple next-tokens receive nearly equivalent probabilities. This results in the drafter model struggling to accurately predict the next token, since even the target model itself lacks a highly confident choice. Consequently, speculative acceleration becomes ineffective as the drafter\u2019s predictions tend to be unreliable. LANTERN (Jang et al., 2025) addressed this by introducing a relaxed acceptance condition leveraging latent-space similarities, where tokens that are close in the latent space are treated as visually similar. This method improved inference speed while maintaining high image quality. However, LANTERN was implemented using EAGLE-2\u2019s (Li et al., 2024b) dynamic tree drafting, which adaptively selects draft tokens based on the drafter\u2019s confidence. In visual AR models, token selection ambiguity leads to two major issues in dynamic tree drafting: (1) low-confidence scores from the drafter result in excessively shallow draft trees, preventing the formation of long accepted sequences, and (2) draft tokens are deterministically selected based on drafter confidence, leading to overly low acceptance probabilities. These two factors collectively degrade the overall efficiency of speculative decoding. To overcome these limitations, we introduce LANTERN++, an enhanced framework that revises two key aspects: (1) the adoption of static tree drafting and (2) the integration of a multiplicative bound tailored to static tree drafting. By employing static tree drafting, LANTERN++ ensures that deep draft sequences can be generated even under low-confidence conditions. Moreover, static tree drafting allows draft tokens to be selected stochastically rather than deterministically based on confidence, \u2217Equal Contribution \u2020Corresponding Author 1 arXiv:2502.06352v1 [cs.CV] 10 Feb 2025"
+}

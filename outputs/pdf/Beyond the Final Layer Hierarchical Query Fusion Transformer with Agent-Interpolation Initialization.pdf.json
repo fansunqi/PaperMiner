@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D instance segmentation"
+  ],
+  "datasets": [
+    "ScanNetV2",
+    "ScanNet200",
+    "ScanNet++",
+    "S3DIS"
+  ],
+  "methods": [
+    "Beyond the Final Layer: Hierarchical Query Fusion Transformer with Agent-Interpolation Initialization"
+  ],
+  "results": [
+    "mAP: 61.7",
+    "AP@50: 79.5",
+    "AP@25: 86.5"
+  ],
+  "title": "Beyond the Final Layer Hierarchical Query Fusion Transformer with Agent-Interpolation Initialization.pdf",
+  "abstract": "3D instance segmentation aims to predict a set of object instances in a scene and represent them as binary foreground masks with corresponding semantic labels. Currently, transformer-based methods are gaining increasing attention due to their elegant pipelines, reduced manual selection of geometric properties, and superior performance. However, transformer-based methods fail to simultaneously maintain strong position and content information during query initialization. Additionally, due to supervision at each decoder layer, there exists a phenomenon of object disappearance with the deepening of layers. To overcome these hurdles, we in- troduce Beyond the Final Layer: Hierarchical Query Fusion Transformer with Agent-Interpolation Initialization for 3D Instance Segmentation (BFL). Specifi- cally, an Agent-Interpolation Initialization Module is designed to generate resilient queries capable of achieving a balance between foreground coverage and content learning. Additionally, a Hierarchical Query Fusion Decoder is designed to retain low overlap queries, mitigating the decrease in recall with the deepening of lay- ers. Extensive experiments on ScanNetV2, ScanNet200, ScanNet++ and S3DIS datasets demonstrate the superior performance of BFL. 1 INTRODUCTION Indoor instance segmentation is one of the fundamental tasks in 3D scene understanding, aiming to predict masks and categories for each foreground object. With the increasing popularity of AR/VR Park et al. (2020); Manni et al. (2021), 3D indoor scanning Lehtola et al. (2017); Halber et al. (2019), 3D/4D reconstruction Wu et al. (2024); Zhu et al. (2024); Lu et al. (2024b); Luiten et al. (2023); Lu et al. (2024c); Zhang et al. (2024), and autonomous driving Neven et al. (2018); Yurtsever et al. (2020), 3D instance segmentation has become a pivotal technology enabling scene understanding. However, the complexity of scenes and the diversity of object categories pose significant challenges to 3D instance segmentation. To address the aforementioned challenges, a series of 3D instance segmentation methods Yi et al. (2019); Hou et al. (2019); Yang et al. (2019); Engelmann et al. (2020); Liu et al. (2020); Chen et al. (2021b); Liang et al. (2021); Vu et al. (2022); Schult et al. (2022); Sun et al. (2023); Lu et al. (2023); Lai et al. (2023) have been proposed. Generally, these methods can be categorized into three groups: proposal-based Yi et al. (2019); Hou et al. (2019); Yang et al. (2019), grouping-based Engelmann et al. (2020); Liu et al. (2020); Jiang et al. (2020b); Chen et al. (2021b); Liang et al. (2021); Vu et al. (2022), and transformer-based Schult et al. (2022); Sun et al. (2023); Lu et al. (2023); Lai et al. (2023). Proposal-based methods adopt a top-down approach, where they first extract 3D bounding boxes and then utilize a mask learning branch to predict the object mask within each box. Grouping-based 1 arXiv:2502.04139v1 [cs.CV] 6 Feb 2025"
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/microsoft/FELLE"
+  ],
+  "tasks": [
+    "Speech Synthesis"
+  ],
+  "datasets": [
+    "LibriSpeech"
+  ],
+  "methods": [
+    "Autoregressive Modeling",
+    "Flow Matching",
+    "Coarse-to-Fine Flow Matching",
+    "Classifier-Free Guidance"
+  ],
+  "results": [
+    "WER: 1.53%",
+    "SIM-r: 0.539",
+    "SIM-o: 0.513"
+  ],
+  "title": "FELLE Autoregressive Speech Synthesis with Token-Wise Coarse-to-Fine Flow Matching.pdf",
+  "abstract": "To advance continuous-valued token modeling and temporal-coherence enforce- ment, we propose FELLE, an autoregressive model that integrates language mod- eling with token-wise flow matching. By leveraging the autoregressive nature of language models and the generative efficacy of flow matching, FELLE effectively predicts continuous-valued tokens (mel-spectrograms). For each continuous-valued token, FELLE modifies the general prior distribution in flow matching by incor- porating information from the previous step, improving coherence and stability. Furthermore, to enhance synthesis quality, FELLE introduces a coarse-to-fine flow-matching mechanism, generating continuous-valued tokens hierarchically, conditioned on the language model\u2019s output. Experimental results demonstrate the potential of incorporating flow-matching techniques in autoregressive mel- spectrogram modeling, leading to significant improvements in TTS generation quality, as shown in https://aka.ms/felle. Autoregressive Mel\u2010Spectrogram Language Modeling Personalized Speech FELLE Text Tokenizer Text Prompt Mel\u2010Spectrogram Vocoder Speech Prompt Coarse\u2010to\u2010Fine Flow Matching Mel\u2010Spectrogram Extraction Figure 1: Overview of FELLE, an autoregressive mel-spectrograms model that generates personal- ized speech from text and acoustic prompts. At each timestep, the framework relies on the previous mel-spectrogram distribution as a prior, conditioned on the output of the language model, applying a coarse-to-fine flow-matching module to produce refined spectral features. \u2217Work done during an internship at Microsoft Research Asia. \u2020Corresponding authors. Preprint. Under review. arXiv:2502.11128v1 [cs.CL] 16 Feb 2025"
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/giovana-morais/skip_that_beat"
+  ],
+  "tasks": [
+    "Beat and downbeat tracking",
+    "Time signature augmentation"
+  ],
+  "datasets": [
+    "Beatles",
+    "GTZAN",
+    "RWC Classical and Jazz",
+    "BRID"
+  ],
+  "methods": [
+    "Augmentation procedure",
+    "TCN",
+    "BayesBeat"
+  ],
+  "results": [
+    "Improved downbeat tracking for underrepresented meters",
+    "Preserved overall performance of beat tracking",
+    "Improved downbeat tracking in an unseen samba dataset"
+  ],
+  "title": "Skip That Beat Augmenting Meter Tracking Models for Underrepresented Time Signatures.pdf",
+  "abstract": "Beat and downbeat tracking models are predominantly de- veloped using datasets with music in 4/4 meter, which de- creases their generalization to repertories in other time sig- natures, such as Brazilian samba which is in 2/4. In this work, we propose a simple augmentation technique to in- crease the representation of time signatures beyond 4/4, namely 2/4 and 3/4. Our augmentation procedure works by removing beat intervals from 4/4 annotated tracks. We show that the augmented data helps to improve downbeat tracking for underrepresented meters while preserving the overall performance of beat tracking in two different mod- els. We also show that this technique helps improve down- beat tracking in an unseen samba dataset. 1. INTRODUCTION Current datasets for beat and downbeat tracking are bi- ased towards music in 4/4 meter, which do not adequately address music with different rhythmic structures, such as jazz, which typically contains 3/4, 12/8, or even 5/4 me- ters; classical music, typically featuring 2/4, 3/4, 6/8 me- ters (among others); Turkish Aksak (9/8); Cretan leaping dances (2/4), or Brazilian samba, which is in 2/4. Recent advancements in deep learning have shifted beat and downbeat tracking from traditional signal processing methods, which use manually crafted features, to data- driven techniques, such as [1\u20134]. This exacerbated the bias towards music in 4/4 because annotating and creating new datasets for diverse musical meters is both time-consuming and costly. As many culturally specific music genres fea- ture meters other than 4/4, this results in a predominance of mainstream annotated musical data [5]. For example, in [1] from the 2216 training tracks available, 1120 are in 4/4, 882 do not have beat position annotations, and the re- maining 214 spans other 4 time signatures. This underrep- resentation is not a problem for beat tracking, but it affects downbeat tracking as briefly discussed in [6]. \u00a9 G. Morais, B. McFee, and M. Fuentes. Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). Attribution: G. Morais, B. McFee, and M. Fuentes, \u201cSkip That Beat: Augmenting Meter Tracking Models for Underrepresented Time Signa- tures\u201d, in Proc. of the 1st Latin American Music Information Retrieval Workshop, Rio de Janeiro, Brazil, 2024. Recent work has explored methods to minimize the number of required annotations while still enabling models to generalize across different music styles [7] and strate- gies for selecting which tracks to annotate [8]. While this minimizes the number of tracks and time to annotate, it does not remove the need for annotation. Another way to alleviate the need to annotate new data is through data augmentation. Data augmentation involves modifying existing data to improve model training, such as rotating an image in computer vision tasks or adding noise in audio tasks. In audio applications, [9] proposes a framework to augment annotated data, which supports op- erations such as pitch shift and time stretch, and evaluate it on instrument recognition. They show that even sim- ple transformations can lead to improvements in the task, but they should be done carefully (e.g. avoid deforming the acoustic audio signal too much). In [1] the augmenta- tion is done by calculating the same STFT with different hop lengths, which improves the tempo estimation on un- seen tempo ranges. Finally, [3] proposes augmenting the dataset by applying Harmonic-Percussive Source Separa- tion (HPSS), and training the model with both the orig- inal mel-spectrogram, the harmonic component, and the percussive component. Inspired by the fact that data aug- mentation helps models generalize to out-of-domain situ- ations [1], we explore these ideas in the context of meter tracking. In particular, we propose a novel augmentation proce- dure that uses existing annotated data to enhance the rep- resentation of underrepresented meters, without the need for new annotations. We evaluate our approach using two models, the Temporal Convolutional Network (TCN) [1] and BayesBeat [10]. We use a test set with unseen me- ters but seen music genres, and another test set with an unseen music genre (Brazilian samba) and unseen meter. Our results demonstrate that our augmentation technique improves downbeat tracking performance while preserving the overall effectiveness of beat-tracking methods. 2. METHOD 2.1 Augmentation Procedure Given a track that is in 4/4, let B = {b1, b2, \u00b7 \u00b7 \u00b7 } be the beat annotation timestamps and P = {p1, p2, \u00b7 \u00b7 \u00b7 } be the beat position within the bar, where pi \u2208{1, 2, 3, 4}. Let IBI be the Inter-Beat Interval of B, i.e. IBI = \u2206B. arXiv:2502.12972v1 [cs.SD] 18 Feb 2025"
+}

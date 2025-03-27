@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Normal-normal continuous symmetric stress approximation in three-dimensional linear elasticity"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mixed finite element method",
+    "Trace operator",
+    "Variational formulation"
+  ],
+  "results": [
+    "30 degrees of freedom",
+    "Quasi-optimally convergent",
+    "Locking-free"
+  ],
+  "title": "Normal-normal Continuous Symmetric Stress Approximation in Three-Dimensional Linear Elasticity.pdf",
+  "abstract": "We present a conforming setting for a mixed formulation of linear elasticity with symmetric stress that has normal-normal continuous components across faces of tetrahedral meshes. We provide a stress element for this formulation with 30 degrees of freedom that correspond to standard boundary conditions. The resulting scheme converges quasi-optimally and is locking free. Numerical experiments illustrate the performance. AMS Subject Classification: 65N30, 74G15, 74S05 1 Introduction and model problem Adams & Cockburn [2] and Arnold et al. [4] presented and analyzed, with slightly different degrees of freedom, the first stable element for conforming stress approximations in 3D linear elasticity on tetrahedral meshes. It provides pointwise symmetric piecewise polynomial approximations of degree at least four with continuous normal components across faces. With its 162 degrees of freedom (plus displacement degrees) this element is prohibitively expensive for practical applications. Modifications and generalizations to arbitrary dimension and higher order have been proposed by Hu & Zhang, Hu [16, 15] and Chen & Huang [9]. The difficulty of constructing conforming elements with few degrees of freedom has been the reason for alternative developments, e.g., of discontinuous and non-conforming methods with weak symmetry. But the quest for cheap stable and conforming stress elements goes on, in particular on tetrahedra which provide important geometric flexibility. Hu and Zhang [17] proposed to use low-degree polynomial tensors enriched with edge and face related bubble polynomials to achieve stability, in this way reducing the degrees of freedom to 48. A variation of this approach and extension to arbitrary dimension is given in [18]. In this paper we present a pointwise symmetric tetrahedral element of quadratic polynomials with 30 degrees of freedom (they can be reduced to 12 by static condensation) and provide a variational framework that renders the element conforming. In geometrical terms our element leads to linear normal-normal components on faces that are continuous across elements. This approach goes back to the seminal TDNNS \u2014tangential displacement and normal-normal stress continuous\u2014 method by Pechstein & Sch\u00f6berl [21, 22, 23] that in turn transfers the Hellan\u2013Herrmann\u2013Johnson idea from plate \u2217Supported by ANID-Chile through FONDECYT project 1230013 \u2020Department of Mathematics, Humboldt\u2013Universit\u00e4t zu Berlin, Unter den Linden 6, 10099 Berlin, Germany, email: cc@math.hu-berlin.de \u2021Facultad de Matem\u00e1ticas, Pontificia Universidad Cat\u00f3lica de Chile, Avenida Vicu\u00f1a Mackenna 4860, Santiago, Chile, email: nheuer@uc.cl 1 arXiv:2502.00609v1 [math.NA] 2 Feb 2025"
+}

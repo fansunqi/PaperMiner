@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Generation"
+  ],
+  "datasets": [
+    "VBench"
+  ],
+  "methods": [
+    "Diffusion Transformers (DiT)",
+    "Caching",
+    "Pruning",
+    "PCA-based Slicing (PCAS)",
+    "Dynamic Weight Shift (DWS)",
+    "Error-Aware Dynamic Cache Window (EDCW)"
+  ],
+  "results": [
+    "Up to 1.6x speedup on a single GPU",
+    "Maintains video quality"
+  ],
+  "title": "UniCP A Unified Caching and Pruning Framework for Efficient Video Generation.pdf",
+  "abstract": "\u2014Diffusion Transformers (DiT) excel in video generation but encounter significant computational chal- lenges due to the quadratic complexity of attention. Notably, attention differences between adjacent diffu- sion steps follow a U-shaped pattern. Current methods leverage this property by caching attention blocks; how- ever, they still struggle with sudden error spikes and large discrepancies. To address these issues, we propose UniCP\u2014a unified caching and pruning framework for ef- ficient video generation. UniCP optimizes both temporal and spatial dimensions through: Error-Aware Dynamic Cache Window (EDCW): Dynamically adjusts cache window sizes for different blocks at various timesteps to adapt to abrupt error changes. PCA-based Slicing (PCAS) and Dynamic Weight Shift (DWS): PCAS prunes redundant attention components, while DWS integrates caching and pruning by enabling dynamic switching between pruned and cached outputs. By adjusting cache windows and pruning redundant components, UniCP enhances computational efficiency and maintains video detail fidelity. Experimental results show that UniCP outperforms existing methods, delivering superior per- formance and efficiency. Index Terms\u2014DiT, Caching, Pruning, Attention Mech- anism, Video Generation I. INTRODUCTION Diffusion transformers (DiTs) [1], [2] have recently become prominent in video generation, often exceed- ing the output quality of unet-based methods [3]\u2013 [5]. However, this advancement requires substantial memory, computational resources, and inference time. Therefore, developing an efficient method for DiT- based video generation is crucial for expanding the scope of generative AI applications. Unlike traditional unet architectures used in diffu- sion models [3], [6], the DiT employs a distinctive isotropic design that omits encoders, decoders, and skip connections of varying depths. This causes the existing feature reuse mechanism such as DeepCache [7] and Faster Diffusion [8], may result in the loss of information when applied for DiT. PAB [9] discovered that the attention differences between adjacent diffu- sion steps follow a U-shaped pattern, and in response developed a pyramidal caching strategy tailored to this observation. \u2206\u2212DIT [10] discovered that the front blocks primarily handle low-level details, while the back blocks focus more on semantic information, and accordingly designed a two-stage error caching strat- egy tailored to these insights. DITFastAttn [2] analyzes *Equal contribution. 1.6\u00d7 OpenSora Raw UniCP 1.6\u00d7 Raw UniCP 1.6\u00d7 Raw UniCP Latte CogVideoX Fig. 1: Accelerating video generation methods like OpenSora, Latte, CogVideoX. redundancy within attention blocks, implementing tar- geted caching strategies for both the attention outputs and the conditional/unconditional settings. However, these methods typically depend on the U-shaped error curve and manually selected step sizes for caching. As a result, they offer no effective strategies for handling the high-error regions at the ends of the curve or the sudden spikes at its bottom. To achieve a more flexible and impactful acceleration solution, we intro- duce UniCP\u2014an error-aware framework that integrates caching and pruning strategies to accelerate the process across both temporal and spatial dimensions. Specifi- cally: (1) To address sudden error spikes at the bottom of the U-shaped error distribution, UniCP employs an Error-Aware Dynamic Cache Window (EDCW). This mechanism dynamically adjusts caching intervals and strategies based on real-time error feedback. (2) To mitigate large discrepancies at the two ends of the U-shaped error curve, we present a PCA-based Slicing (PCAS) strategy for pruning, further reducing the network\u2019s computational complexity. (3) To unify arXiv:2502.04393v1 [cs.CV] 6 Feb 2025"
+}

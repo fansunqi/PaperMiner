@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Time Series Forecasting"
+  ],
+  "datasets": [
+    "Standard Datasets",
+    "Chaotic ODE Datasets"
+  ],
+  "methods": [
+    "Crossformer",
+    "TSMixer",
+    "TimeMixer",
+    "PatchTST",
+    "DLinear",
+    "iTransformer",
+    "RevIN"
+  ],
+  "results": [
+    "PatchTST is the SOTA model on the standard datasets",
+    "Crossformer is the SOTA model on the chaotic ODE datasets",
+    "FaCT achieves similar performance to Crossformer at half the computational cost"
+  ],
+  "title": "Channel Dependence, Limited Lookback Windows, and the Simplicity of Datasets How Biased is Time Seri.pdf",
+  "abstract": "Time-series forecasting research has converged to a small set of datasets and a standardized collection of evaluation scenarios. Such a standardization is to a specific extent needed for comparable research. However, the underlying assumption is, that the consid- ered setting is a representative for the problem as a whole. In this paper, we challenge this assumption and show that the current scenario gives a strongly biased perspective on the state of time- series forecasting research. To be more detailed, we show that the current evaluation scenario is heavily biased by the simplicity of the current datasets. We furthermore emphasize, that when the lookback-window is properly tuned, current models usually do not need any information flow across channels. However, when using more complex benchmark data, the situation changes: Here, model- ing channel-interactions in a sophisticated manner indeed enhances performances. Furthermore, in this complex evaluation scenario, Crossformer, a method regularly neglected as an important base- line, is the SOTA method for time series forecasting. Based on this, we present the Fast Channel-dependent Transformer (FaCT), a simplified version of Crossformer which closes the runtime gap between Crossformer and TimeMixer, leading to an efficient model for complex forecasting datasets. Keywords Time Series Forecasting, Channel Dependency, ODE Datasets, Trans- former, Lookback Window Tuning \u2217Authors contributed equally to this research. 1 Introduction Time-Series Forecasting (TSF) is one of the most common tasks tackled in modern machine-learning research. However, experi- mental evaluation of forecasting methods has arrived at a state, where it is standardized to a high extent. Most of the papers focus \u2022 on the same small set of data to evaluate on [2, 12, 13, 24, 25] and \u2022 an experimental setting, where the lookback-window to pre- dict in the future is fixed [2, 12, 13, 25]. While such a standardized evaluation is generally preferable for fair and accurate comparisons of different forecasting methods, it has its pitfalls: By using a small set of datasets in all papers, it is assumed that they are representative for TSF as a whole and that the best forecasting method on these particular datasets should be seen as the best forecasting method in general. The same holds for the lookback-window: The assumption, that all methods should be tested on the same lookback-window and that this leads to a representative result for finding the state-of-the art in TSF is questionable. One of the main questions in TSF research is whether channel correlations are useful for forecasting. There exist indeed real-world applications where information flow across channels is highly plau- sible, as for example in weather forecasting, where the current high humidity (one feature) can lead to a very plausible high amount of rain (another feature) in the future. Another real world example modeled by chaotic ODEs is the Cell Cycle ODE which models cell growth and DNA replication activities in the human body. For instance, the effect of cdk1 and cdk2 on the degradation of cyclin through the cyclin and enzyme control [14]. In such cases, infor- mation from different channels is essential to monitor the future degradation of cyclin. arXiv:2502.09683v1 [cs.LG] 13 Feb 2025"
+}

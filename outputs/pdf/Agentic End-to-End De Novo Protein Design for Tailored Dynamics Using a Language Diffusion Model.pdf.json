@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/lamm-mit/ModeShapeDiffusionDesign",
+    "https://huggingface.co/lamm-mit/VibeGen"
+  ],
+  "tasks": [
+    "Protein design",
+    "De novo protein design",
+    "Protein dynamics"
+  ],
+  "datasets": [
+    "Protein Data Bank (PDB)",
+    "Protein sequences"
+  ],
+  "methods": [
+    "Protein language diffusion models (pLDMs)",
+    "Normal mode analysis (NMA)",
+    "Full-atom molecular dynamics (MD) simulations"
+  ],
+  "results": [
+    "Accurate and diverse protein designs",
+    "High design accuracy",
+    "Novel protein sequences",
+    "Diverse protein structures"
+  ],
+  "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model.pdf",
+  "abstract": "Proteins are dynamic molecular machines whose biological functions, spanning enzymatic catalysis, signal transduction, and structural adaptation, are intrinsically linked to their motions. Designing proteins with targeted dynamic properties, however, remains a challenge due to the complex, degenerate relationships between sequence, structure, and molecular motion. Here, we introduce VibeGen, a generative AI framework that enables end-to-end de novo protein design conditioned on normal mode vibrations. VibeGen employs an agentic dual- model architecture, comprising a protein designer that generates sequence candidates based on specified vibrational modes and a protein predictor that evaluates their dynamic accuracy. This approach synergizes diversity, accuracy, and novelty during the design process. Via full-atom molecular simulations as direct validation, we demonstrate that the designed proteins accurately reproduce the prescribed normal mode amplitudes across the backbone while adopting various stable, functionally relevant structures. Notably, generated sequences are de novo, exhibiting no significant similarity to natural proteins, thereby expanding the accessible protein space beyond evolutionary constraints. Our work integrates protein dynamics into generative protein design, and establishes a direct, bidirectional link between sequence and vibrational behavior, unlocking new pathways for engineering biomolecules with tailored dynamical and functional properties. This framework holds broad implications for the rational design of flexible enzymes, dynamic scaffolds, and biomaterials, paving the way toward dynamics-informed AI-driven protein engineering. Keywords: Protein design; Generative AI; Language diffusion model; de novo proteins; Normal mode; Protein dynamics Introduction Proteins are not static structure but dynamic molecular machines whose many functions arise from conformational fluctuations across spatiotemporal scales1. From an energy point of view, the rugged energy landscape paradigm2 posits that proteins can sample ensembles of conformations at finite temperature via motions ranging from femtosecond bond vibrations to millisecond domain rearrangements3. Such dynamics underpins rich yet essential biological activities and functions, including catalysis, allostery and mechanotransduction. For example, for enzymes such as dihydrofolate reductase and adenylate kinase, transient motions like loop motions and lid fluctuations involving active sites can facilitate the alignment of catalytic residues and the sequestration of substrates1,4. Similarly, allosteric mechanisms are often governed by dynamical shits among conformational equilibria triggered by ligand binding thus controlling signal transduction5,6, such as G-protein-coupled receptor activation through transmembrane helix rearrangements7. Among the wide energy or frequency window of dynamics motions, low-frequency vibrations are often crucial in lowering the energy barriers for catalytic reactions8, facilitating large-scale conformation shift9, and ligand binding10,11. Critically, dysregulation of these dynamics is implicated in disease pathogenesis. For instance, p53 cancer mutants exhibit reduced conformational plasticity, impairing DNA binding12, while cystic fibrosis transmembrane conductance regulator (CFTR) mutations disrupt gating dynamics essential for ion transport13. These observations affirm that the dynamic"
+}

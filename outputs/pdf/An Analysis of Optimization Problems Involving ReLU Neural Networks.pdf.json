@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimization problems involving ReLU neural networks"
+  ],
+  "datasets": [
+    "Peaks function",
+    "Ackley\u2019s function",
+    "Himmelblau\u2019s function"
+  ],
+  "methods": [
+    "Big-M coefficients",
+    "Interval arithmetic",
+    "LP-based bound tightening",
+    "A posteriori scaling",
+    "Regularization",
+    "Clipped ReLU",
+    "Dropout"
+  ],
+  "results": [
+    "Reduction in big-M coefficients",
+    "Improvement in computational times",
+    "Number of linear regions",
+    "Percentage of stable neurons",
+    "MAPE"
+  ],
+  "title": "An Analysis of Optimization Problems Involving ReLU Neural Networks.pdf",
+  "abstract": "Solving mixed-integer optimization problems with embedded neural networks with ReLU activation functions is challenging. Big-M coefficients that arise in relaxing binary decisions related to these functions grow exponentially with the number of layers. We survey and propose different approaches to analyze and improve the run time behavior of mixed-integer programming solvers in this context. Among them are clipped variants and regularization techniques applied during training as well as optimization-based bound tightening and a novel scaling for given ReLU networks. We numerically compare these approaches for three benchmark problems from the literature. We use the number of linear regions, the percentage of stable neurons, and overall computational effort as indicators. As a major takeaway we observe and quantify a trade-off between the often desired redundancy of neural network models versus the computational costs for solving related optimization problems. Keywords optimization \u00b7 machine learning \u00b7 neural network \u00b7 integer programming 1 Introduction Artificial neural networks (ANNs) are a popular tool for approximating functions from data and have been used in various applications, ranging from modeling and control of batch reactors (Mujtaba et al., 2006), the optimization of cancer treatments (Bertsimas et al., 2016) and chemical reactions (Fernandes, 2006) to the approximation of solutions to complex optimization problems (Bertsimas and Stellato, 2022). Formally, a feed-forward ANN consists of J \u2208N consecutive layers. Each layer uses an affine-linear transformation of the input with a subsequent, element-wise application of a nonlinear activation function s : R 7\u2192R, i.e., x(j) = s(j) \u0010 W (j)x(j\u22121) + b(j)\u0011 , j \u2208[J], (1) with x(0) = x \u2208Rnx as the input to the neural network and W (j) \u2208Rnj\u00d7nj\u22121, b(j) \u2208Rnj denoting the weights and biases of layer j, respectively. In this paper, we assume s to be the ReLU activation ReLU (x) = max{0, x}, (2) on all hidden layers and the identity on the last layer. A recent survey shows that more than 400 differ- ent activation functions have been suggested in the literature (Kunc and Kl\u00b4ema, 2024). While in some contexts the usage of other, possibly continuously differentiable, activation functions may be recom- mendable, ReLU activation variants continue to play a major role. Especially in the context of mixed- integer optimization problems where some of the variables require a non-smooth, non-differentiable Christoph Plate, Mirko Hahn, Kai Sundmacher, Sebastian Sager Otto von Guericke University Magdeburg, Magdeburg, Germany E-mail: {christoph.plate, mirhahn, kai.sundmacher, sager}@ovgu.de Christoph Plate, Alexander Klimek, Caroline Ganzer, Kai Sundmacher, Sebastian Sager Max Planck Institute for Dynamics of Complex Technical Systems, Magdeburg, Germany E-mail: {plate, klimek, cganzer, sundmacher, sager}@mpi-magdeburg.mpg.de Corresponding author: Christoph Plate arXiv:2502.03016v1 [math.OC] 5 Feb 2025"
+}

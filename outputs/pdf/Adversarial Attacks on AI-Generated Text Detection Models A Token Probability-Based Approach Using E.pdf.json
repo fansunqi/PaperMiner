@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Attack on AI-Generated Text Detection Models"
+  ],
+  "datasets": [
+    "XSum",
+    "SQuAD",
+    "Writing Prompts"
+  ],
+  "methods": [
+    "Tsetlin Machine (TM)",
+    "WordNet",
+    "Synonym Similarity Vector",
+    "Embedding Vector of Similarity",
+    "Hybrid Scheme with Synonym and Embedding Vectors"
+  ],
+  "results": [
+    "AUROC on XSum: 0.4431 -> 0.2744",
+    "AUROC on SQuAD: 0.5068 -> 0.3532"
+  ],
+  "title": "Adversarial Attacks on AI-Generated Text Detection Models A Token Probability-Based Approach Using E.pdf",
+  "abstract": "In recent years, text generation tools utilizing Arti- ficial Intelligence (AI) have occasionally been mis- used across various domains, such as generating student reports or creative writings. This issue prompts plagiarism detection services to enhance their capabilities in identifying AI-generated con- tent. Adversarial attacks are often used to test the robustness of AI-text generated detectors. This work proposes a novel textual adversarial attack on the detection models such as Fast-DetectGPT. The method employs embedding models for data per- turbation, aiming at reconstructing the AI gener- ated texts to reduce the likelihood of detection of the true origin of the texts. Specifically, we em- ploy different embedding techniques, including the Tsetlin Machine (TM), an interpretable approach in machine learning for this purpose. By combining synonyms and embedding similarity vectors, we demonstrates the state-of-the-art reduction in de- tection scores against Fast-DetectGPT. Particularly, in the XSum dataset, the detection score decreased from 0.4431 to 0.2744 AUROC, and in the SQuAD dataset, it dropped from 0.5068 to 0.3532 AUROC. 1 Introduction The responsibility of integrating into the scientific research and higher education community entails adhering to numer- ous behaviors and principles essential to safeguarding the in- tegrity of educational and scientific progress. Consequently, the utilization of tools such as text editors or language en- hancement applications must align with sound practices and uphold the ethical standards of scientific research and educa- tion [Lund et al., 2023; Foltynek et al., 2023]. Despite the substantial advancements in AI models, particularly within Natural Language Processing (NLP) applications, there re- mains ongoing debate about the appropriate use of these tools for text generation [Leidner and Plachouras, 2017; \u02c7Suster et al., 2017]. This issue could significantly impact the integrity of the academic domain [Tauginien\u02d9e et al., 2018]. Large Language Model (LLM) such as Generative Pre-trained Transformer (GPT) [Brown et al., 2020; OpenAI, 2022; OpenAI, 2023], BERT [Devlin et al., 2018], and XL- Net [Yang et al., 2020] have gained widespread acceptance among users, demonstrating such high efficiency that distin- guishing between human-generated and machine-generated content has become increasingly challenging [Shahid et al., 2022; Ippolito et al., 2020]. In response to this surge in the use of AI techniques for text generation, various detection methods have been devel- oped to ascertain the origin of text [Solaiman et al., 2019; Fagni et al., 2021; Mitrovi\u00b4c et al., 2023; Gehrmann et al., 2019; Mitchell et al., 2023; Su et al., 2023]. These meth- ods are categorized as supervised and unsupervised. Unsu- pervised methods are notable for their versatility in text de- tection, as they are capable of handling diverse text domains due to the nature of their pretraining [Gehrmann et al., 2019; Mitchell et al., 2023]. These tools calculate probabilities and distribute them throughout the text. Under the zero-shot framework, it is presumed that AI-generated text exhibits a higher degree of probability variation compared to human- authored text, which can demonstrate both stability and vari- ation. To assess such changes, additional text generation is required, significantly increasing execution time. The latest approach, FastDetect [Bao et al., 2024], hypothesizes that AI- generated words are produced based on decisions made by the generative model, adhering to specific generation proba- bilities distinct from human word choices. For humans, word selection involves multiple influencing factors, rendering the output more personal and less statistically general. The majority of generated texts are fundamentally based on embedding principles in the initial stages of any Large Lan- guage Models (LLMs), where a dense vector in space is ex- tracted for each word to encapsulate the contextual informa- tion present in the training dataset [Goldberg and Levy, 2014; Pennington et al., 2014]. The embedding maps words or to- kens into a high-dimensional continuous space, which the model employs to facilitate various stages of text genera- tion. This embedding, coupled with additional layers and algorithms used in LLMs [Vaswani et al., 2023], informs arXiv:2501.18998v1 [cs.CL] 31 Jan 2025"
+}

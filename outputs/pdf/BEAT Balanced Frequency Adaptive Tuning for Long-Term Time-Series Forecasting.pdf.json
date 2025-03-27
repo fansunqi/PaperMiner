@@ -1,0 +1,27 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Long-term Time-Series Forecasting"
+  ],
+  "datasets": [
+    "Weather",
+    "ETTh1",
+    "ETTh2",
+    "ETTm1",
+    "ETTm2",
+    "Traffic",
+    "ECL"
+  ],
+  "methods": [
+    "Frequency-domain Time-Series Forecasting",
+    "Wavelet Decomposition",
+    "Frequency-Specific Monitor",
+    "Dynamical Gradient Balancer"
+  ],
+  "results": [
+    "BEAT achieves the highest number of first-place rankings across all prediction lengths and datasets",
+    "Better performance compared to WPMixer, TimeMixer, iTransformer, and other baselines"
+  ],
+  "title": "BEAT Balanced Frequency Adaptive Tuning for Long-Term Time-Series Forecasting.pdf",
+  "abstract": "Time-series forecasting is crucial for numerous real-world applications including weather pre- diction and financial market modeling. While temporal-domain methods remain prevalent, frequency-domain approaches can effectively cap- ture multi-scale periodic patterns, reduce se- quence dependencies, and naturally denoise sig- nals. However, existing approaches typically train model components for all frequencies under a unified training objective, often leading to mis- matched learning speeds: high-frequency compo- nents converge faster and risk overfitting, while low-frequency components underfit due to insuf- ficient training time. To deal with this challenge, we propose BEAT (Balanced frEquency Adap- tive Tuning), a novel framework that dynamically monitors the training status for each frequency and adaptively adjusts their gradient updates. By recognizing convergence, overfitting, or underfit- ting for each frequency, BEAT dynamically real- locates learning priorities, moderating gradients for rapid learners and increasing those for slower ones, alleviating the tension between competing objectives across frequencies and synchronizing the overall learning process. Extensive experi- ments on seven real-world datasets demonstrate that BEAT consistently outperforms state-of-the- art approaches. 1. Introduction Long-term time-series forecasting plays a pivotal role in various real-world applications, such as weather predic- tion (Zhang et al., 2022), electric load forecasting (Zhou et al., 2021; Gasparin et al., 2022), traffic flow analysis (Jin et al., 2021), and financial market modeling (Lai et al., 2018; 1College of Computing and Data Science, Nanyang Techno- logical University, Singapore 2Department of Electrical Electronic Engineering, Yonsei University, Korea. Correspondence to: Weisi Lin <wslin@ntu.edu.sg>. Copyright 2025 by the author(s). Figure 1. Comparison of the learning process when adjusted using the proposed BEAT approach. Training is conducted on the ETTh2 dataset with three levels of wavelet decomposition. The symbols \u25b2and \u2022 mark the iteration where each training curve converged. BEAT dynamically reallocates priorities to ensure balanced train- ing and improved performance against the original one. Tang et al., 2022). These tasks demand accurate prediction over extended temporal horizons. In recent years, deep learning methods for time-series analysis have achieved significant advancements, characterized by the develop- ment of various architectures, including CNN-based (Liu et al., 2022; Wang et al., 2023; Luo & Wang, 2024), MLP- based (Oreshkin et al., 2019; Zeng et al., 2023; Wang et al., 2024a), Transformer-based (Wu et al., 2021; Liu et al., 2021; 2024), and LLM-based (Jin et al., 2024; Jia et al., 2024) ap- proaches. Compared with temporal-domain approaches, frequency-domain methods (Wu et al., 2021; 2023; Zhou et al., 2022b) transform time-series data into the frequency domain, enabling the effective capture of large-scale peri- odic patterns, reducing sequence dependency lengths, and enhancing robustness through inherent denoising effects. Despite these advantages, frequency-domain analysis typi- cally decomposes time-series data into multiple sub-series, such as high-frequency, low-frequency, and potentially addi- tional band-pass segments, each representing a distinct tem- poral scale. High-frequency sub-series often capture short- term fluctuations or noise, while low-frequency sub-series reflect long-term trends or stable periodic patterns. Existing 1 arXiv:2501.19065v1 [cs.LG] 31 Jan 2025"
+}

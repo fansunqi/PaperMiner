@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "https://github.com/zju3dv/PhyCoBench"
+  ],
+  "tasks": [
+    "Video Generation"
+  ],
+  "datasets": [
+    "OpenVid",
+    "Motion Data",
+    "UCF101",
+    "PennAction",
+    "HAA500",
+    "Physics101"
+  ],
+  "methods": [
+    "Optical flow-guided frame prediction",
+    "Latent Diffusion Model",
+    "Latent Adapter",
+    "Flow Adapter",
+    "3D U-Net"
+  ],
+  "results": [
+    "Keling1.5, Gen-3 Alpha, Dream Machine, OpenSora-STDiT-v3",
+    "Kendall\u2019s Tau-b coefficient, Spearman\u2019s Rank Correlation coefficient",
+    "PhyCoPredictor produces more natural and realistic motion trajectories"
+  ],
+  "title": "A Physical Coherence Benchmark for Evaluating Video Generation Models Via Optical Flow-guided Frame .pdf",
+  "abstract": "Recent advances in video generation models demonstrate their potential as world simulators, but they often strug- gle with videos deviating from physical laws, a key concern overlooked by most text-to-video benchmarks. We introduce a benchmark designed specifically to assess the Physical Coherence of generated videos, PhyCoBench. Our bench- mark includes 120 prompts covering 7 categories of phys- ical principles, capturing key physical laws observable in video content. We evaluated four state-of-the-art (SoTA) T2V models on PhyCoBench and conducted manual as- sessments. Additionally, we propose an automated evalu- ation model: PhyCoPredictor, a diffusion model that gen- erates optical flow and video frames in a cascade man- ner. Through a consistency evaluation comparing auto- mated and manual sorting, the experimental results show that PhyCoPredictor currently aligns most closely with hu- man evaluation. Therefore, it can effectively evaluate the physical coherence of videos, providing insights for future model optimization. Our benchmark, which includes phys- ical coherence prompts, automatic evaluation tool PhyCo- Predictor, and generated video dataset, will all be released on GitHub shortly. 1. Introduction With the rapid advancement of video generation models [6, 7, 13, 24, 42, 43], the quality of generated videos has continuously improved, demonstrating their potential to be- come world simulators. However, ensuring the physical co- herence of video content remains challenging, which is one of the major concerns for current video generation models. Physical coherence refers to the extent to which the mo- arXiv:2502.05503v1 [cs.CV] 8 Feb 2025"
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Discrete-time analysis of stochastic interpolants"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Euler\u2013Maruyama scheme",
+    "Girsanov's theorem",
+    "It\u00f4's calculus",
+    "Jensen's inequality",
+    "Cauchy-Schwarz inequality",
+    "H\u00f6lder's inequality"
+  ],
+  "results": [
+    "Finite-time convergence bound for SDE-based generative models",
+    "Schedule design for faster convergence",
+    "Numerical experiments to validate theoretical results"
+  ],
+  "title": "Finite-Time Analysis of Discrete-Time Stochastic Interpolants.pdf",
+  "abstract": "The stochastic interpolant framework offers a powerful approach for constructing generative models based on ordinary differential equations (ODEs) or stochastic differential equations (SDEs) to transform arbitrary data distributions. However, prior analyses of this framework have primarily focused on the continuous-time setting, assuming a perfect solution of the underlying equations. In this work, we present the first discrete-time analysis of the stochastic interpolant framework, where we introduce an innovative discrete-time sampler and derive a finite-time upper bound on its distribution estimation error. Our result provides a novel quantification of how different factors, including the distance between source and target distributions and estimation accuracy, affect the convergence rate and also offers a new principled way to design efficient schedules for convergence acceleration. Finally, numerical experiments are conducted on the discrete-time sampler to corroborate our theoretical findings. 1 Introduction Stochastic interpolants Albergo and Vanden-Eijnden (2023); Albergo et al. (2023) provide a general framework for constructing continuous mappings between arbitrary distributions. This framework draws inspiration from flow-based and diffusion-based models, which generate samples by continuously transforming data points from a base distribution to a target distribution via learned ordinary differential equations (ODEs) or stochastic differential equations (SDEs). Within the stochastic interpolant framework, one obtains learnable ODEs or SDEs that transport data by defining an interpolation between data points sampled from different distributions. This framework offers significant design flexibility and has demonstrated promising results in various applications, including probabilistic forecasting Chen et al. (2024b), image generation Ma et al. (2024); Albergo et al. (2024), and sequential modeling Chen et al. (2024a). Despite its potential in real-world applications, there remains a gap between the theoretical analyses and practical implementations of stochastic interpolants. In practical scenarios, instead of perfectly solving the underlying equations, one can only access a learned estimator for a finite number of time steps, which necessitates the use of discrete-time samplers to simulate the true continuous generation process. However, previous analyses have largely focused on continuous-time generation, assuming perfect solutions to the underlying equations. This leads to a crucial question for bridging the gap: What is the convergence rate of discrete-time stochastic interpolant, and how to enhance its performance algorithmically? Similar problems have been studied in the theories of diffusion models, and most results were derived based on Girsanov-based methods in SDE analyses, which reduce the problem to providing upper bounds on the discretization errors. Specifically, existing analyses on the discretization errors can be mainly categorized into two types. The first type partitions the error into space-discretization and \u2217IIIS, Tsinghua University. Email: liuyuhao21@mails.tsinghua.edu.cn. \u2020IIIS, Tsinghua University. Email: chenyu23@mails.tsinghua.edu.cn. \u2021IIIS, Tsinghua University. Email: hu-r24@mails.tsinghua.edu.cn. \u00a7IIIS, Tsinghua University. Email: longbohuang@tsinghua.edu.cn. Corresponding author. 1 arXiv:2502.09130v1 [cs.LG] 13 Feb 2025"
+}

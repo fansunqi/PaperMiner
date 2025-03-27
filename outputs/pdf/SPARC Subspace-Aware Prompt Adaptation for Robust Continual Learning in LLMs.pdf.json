@@ -1,0 +1,31 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Continual Learning in LLMs"
+  ],
+  "datasets": [
+    "HealthcareMagic",
+    "PubMedQA",
+    "SciQ",
+    "OceanBench",
+    "TriviaQA",
+    "CB",
+    "RTE",
+    "WiC",
+    "BoolQ",
+    "MultiRC"
+  ],
+  "methods": [
+    "PCA-based Subspace Identification",
+    "Prompt Tuning",
+    "Orthogonal Subspace Initialization",
+    "LoRA"
+  ],
+  "results": [
+    "Forgetting ratio below 5% in domain-incremental learning",
+    "97% prior knowledge retention in task-incremental learning",
+    "Finetuning only 0.04% of parameters"
+  ],
+  "title": "SPARC Subspace-Aware Prompt Adaptation for Robust Continual Learning in LLMs.pdf",
+  "abstract": "\u2014We propose SPARC, a lightweight continual learn- ing framework for large language models (LLMs) that enables efficient task adaptation through prompt tuning in a lower- dimensional space. By leveraging principal component analysis (PCA), we identify a compact subspace of the training data. Optimizing prompts in this lower-dimensional space enhances training efficiency, as it focuses updates on the most relevant fea- tures while reducing computational overhead. Furthermore, since the model\u2019s internal structure remains unaltered, the extensive knowledge gained from pretraining is fully preserved, ensuring that previously learned information is not compromised during adaptation. Our method achieves high knowledge retention in both task-incremental and domain-incremental continual learn- ing setups while fine-tuning only 0.04% of the model\u2019s parame- ters. Additionally, by integrating LoRA, we enhance adaptability to computational constraints, allowing for a tradeoff between accuracy and training cost. Experiments on the SuperGLUE benchmark demonstrate that our PCA-based prompt tuning combined with LoRA maintains full knowledge retention while improving accuracy, utilizing only 1% of the model\u2019s parameters. These results establish our approach as a scalable and resource- efficient solution for continual learning in LLMs. I. INTRODUCTION Large Language Models (LLMs) have demonstrated re- markable capabilities in natural language processing, enabling transfer learning across diverse tasks and domains. Their ability to encode rich semantic representations allows them to generalize effectively and adapt to new tasks with minimal supervision. These characteristics, along with their proficiency in few-shot learning, have established LLMs as indispensable tools for applications such as text generation [1], question answering [2], summarization [3], and reasoning [4]. While pretrained LLMs excel in handling static datasets and fixed tasks, many real-world applications require dynamic adaptability to evolving environments. For instance, LLM- based autonomous navigation systems must respond to unseen driving conditions, terrains, and tasks, such as understanding new traffic laws or adapting to varying weather conditions. Retraining a new model for each task is computationally pro- hibitive, especially for large-scale systems, and the assumption that data from earlier tasks is always available for retrain- ing is often unrealistic due to storage limitations, regulatory constraints, or privacy concerns. These challenges necessitate methods that enable models to integrate new information incrementally while retaining the prior knowledge. However, LLMs also face critical challenges in continual learning\u2013the ability to acquire new knowledge without over- writing previously learned information. Naive fine-tuning on new tasks often leads to catastrophic forgetting [5], where updates disrupt prior knowledge. The high computational cost of fine-tuning all parameters for each task is impractical, given that most of the model\u2019s parameters already encode transferable knowledge. Thus, continual learning in LLMs requires approaches that can facilitate efficient task-specific adaptation while preserving general-purpose capabilities. Several strategies have been proposed to address these challenges: Replay-based methods [6] mitigate forgetting by replaying data from previous tasks during training. However, these methods incur significant memory overhead and may be unsuitable for sensitive domains where storing and re- playing data raises privacy concerns [7]. Regularization-based approaches, such as Elastic Weight Consolidation (EWC) [8] and Synaptic Intelligence (SI) [9], attempt to preserve knowledge by penalizing updates to parameters critical to previous tasks. However, these methods are less effective in the high-dimensional parameter spaces of LLMs. Parameter- efficient fine-tuning (PEFT) methods, including LoRA [10]\u2013 [12], and adapter tuning [13], address scalability and efficiency by introducing lightweight task-specific modules that reduce trainable parameters. While PEFT methods are computation- ally efficient, they often require architectural modifications, complicating deployment and risking interference with pre- trained representations. Prompt tuning has emerged as an alternative that is well- suited for task-specific adaptation in LLMs. By introducing small, trainable embeddings (soft prompts) appended to input tokens, prompt tuning enables task-specific learning while keeping the base model frozen. This approach significantly reduces the number of trainable parameters, making it com- putationally efficient and scalable for large models. However, existing prompt tuning methods typically train a separate prompt for each task, resulting in inefficiencies and redun- dancy when tasks share underlying representations. Moreover, these methods lack mechanisms to address catastrophic forget- ting, limiting their applicability to continual learning scenarios where sequential task adaptation is required. To address these limitations, as in Fig. 1(a), we propose SPARC, a novel framework for continual learning in LLMs arXiv:2502.02909v1 [cs.LG] 5 Feb 2025"
+}

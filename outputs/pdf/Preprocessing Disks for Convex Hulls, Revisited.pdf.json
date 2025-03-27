@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computational geometry",
+    "Preprocessing",
+    "Convex hull"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Supersequences",
+    "Preprocessing",
+    "Reconstruction"
+  ],
+  "results": [
+    "O(n log n) preprocessing",
+    "O(n) reconstruction",
+    "Sublinear reconstruction"
+  ],
+  "title": "Preprocessing Disks for Convex Hulls, Revisited.pdf",
+  "abstract": "In the preprocessing framework one is given a set of regions that one is allowed to preprocess to create some auxiliary structure such that when a realization of these regions is given, consisting of one point per region, this auxiliary structure can be used to reconstruct some desired output geometric structure more efficiently than would have been possible without preprocessing. Prior work showed that a set of n unit disks of constant ply can be preprocessed in O(n log n) time such that the convex hull of any realization can be reconstructed in O(n) time. (This prior work focused on triangulations and the convex hull was a byproduct.) In this work we show for the first time that we can reconstruct the convex hull in time proportional to the number of unstable disks, which may be sublinear, and that such a running time is the best possible. Here a disk is called stable if the combinatorial structure of the convex hull does not depend on the location of its realized point. The main tool by which we achieve our results is by using a supersequence as the auxiliary structure constructed in the preprocessing phase, that is we output a supersequence of the disks such that the convex hull of any realization is a subsequence. One advantage of using a supersequence as the auxiliary structure is that it allows us to decouple the preprocessing phase from the reconstruction phase in a stronger sense than was possible in previous work, resulting in two separate algorithmic problems which may be independent interest. Finally, in the process of obtaining our results for convex hulls, we solve the corresponding problem of creating such supersequences for intervals in one dimension, yielding corresponding results for that case. 2012 ACM Subject Classification Theory of computation \u2192Computational geometry Keywords and phrases Convex hull, uncertainty, preprocessing Digital Object Identifier 10.4230/LIPIcs.CVIT.2016.23 Funding Benjamin Raichel: Work on this paper was partially supported by NSF CAREER Award 1750780 and NSF Award 2311179. Acknowledgements The authors would like to thank Ivor van der Hoog, Vahideh Keikha, and Frank Staals for inspiring discussions on the topic of this paper. \u00a9 Maarten L\u00f6ffler and Ben Raichel; licensed under Creative Commons License CC-BY 4.0 42nd Conference on Very Important Topics (CVIT 2016). Editors: John Q. Open and Joan R. Access; Article No. 23; pp. 23:1\u201323:30 Leibniz International Proceedings in Informatics Schloss Dagstuhl \u2013 Leibniz-Zentrum f\u00fcr Informatik, Dagstuhl Publishing, Germany arXiv:2502.03633v1 [cs.CG] 5 Feb 2025"
+}

@@ -1,0 +1,50 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Neural Architecture Search"
+  ],
+  "datasets": [
+    "Cora",
+    "Citeseer",
+    "Pubmed",
+    "NS",
+    "Power",
+    "Router",
+    "IMDB-B",
+    "MUTAG",
+    "PROTEINS",
+    "ACM",
+    "DBLP",
+    "IMDB",
+    "Amazon",
+    "Yelp",
+    "MovieLens",
+    "ogbn-products"
+  ],
+  "methods": [
+    "LLM-based Feature Augmentation",
+    "LLM-based GNAS",
+    "LLM-enhanced Hyperparameter Optimization"
+  ],
+  "results": [
+    "Accuracy: 99.88% on NS dataset",
+    "Accuracy: 99.33% on Router dataset",
+    "Accuracy: 89.20% on Cora dataset",
+    "Accuracy: 90.30% on PubMed dataset",
+    "Accuracy: 92.97% on ACM dataset",
+    "Accuracy: 62.66% on IMDB dataset",
+    "Accuracy: 94.41% on DBLP dataset",
+    "Accuracy: 94.73% on MUTAG dataset",
+    "Accuracy: 76.23% on PROTEINS dataset",
+    "Accuracy: 85.60% on IMDB-B dataset",
+    "Accuracy: 99.33% on Router dataset",
+    "Accuracy: 92.92% on Yelp dataset",
+    "Accuracy: 92.76% on MovieLens dataset",
+    "Accuracy: 79.04% on Amazon dataset",
+    "Accuracy: 70.86% on ogbn-products dataset"
+  ],
+  "title": "LLM4GNAS A Large Language Model Based Toolkit for Graph Neural Architecture Search.pdf",
+  "abstract": "Graph Neural Architecture Search (GNAS) facilitates the automatic design of Graph Neural Networks (GNNs) tailored to specific down- stream graph learning tasks. However, existing GNAS approaches often require manual adaptation to new graph search spaces, neces- sitating substantial code optimization and domain-specific knowl- edge. To address this challenge, we present LLM4GNAS, a toolkit for GNAS that leverages the generative capabilities of Large Language Models (LLMs). LLM4GNAS includes an algorithm library for graph neural architecture search algorithms based on LLMs, enabling the adaptation of GNAS methods to new search spaces through the modification of LLM prompts. This approach reduces the need for manual intervention in algorithm adaptation and code modification. The LLM4GNAS toolkit is extensible and robust, incorporating LLM- enhanced graph feature engineering, LLM-enhanced graph neural architecture search, and LLM-enhanced hyperparameter optimiza- tion. Experimental results indicate that LLM4GNAS outperforms existing GNAS methods on tasks involving both homogeneous and heterogeneous graphs. Keywords Graph Neural Architecture Search, Large Language Models, Graphs, AutoML, Toolkit. ACM Reference Format: Yang Gao, Hong Yang*, Yizhi Chen, Junxian Wu, Peng Zhang, and Haishuai Wang. 2024. LLM4GNAS: A Large Language Model Based Toolkit for Graph Neural Architecture Search. In Proceedings of Make sure to enter the correct conference title from your rights confirmation emai (Conference acronym \u2019XX). ACM, New York, NY, USA, 10 pages. https://doi.org/XXXXXXX.XXXXXXX \u2217Corresponding author: Peng Zhang and Haishuai Wang Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. Conference acronym \u2019XX, April 28\u2013May 2 , 2025, Sydney, Australia \u00a9 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-XXXX-X/18/06 https://doi.org/XXXXXXX.XXXXXXX 1 Introduction Graph Neural Architecture Search (GNAS) [13, 16] has garnered sig- nificant attention as a promising method for automating the design of Graph Neural Networks (GNNs) tailored to downstream graph learning tasks. GNAS aims to alleviate the manual effort required for designing GNN architectures by leveraging reinforcement learn- ing [16], differential gradient [24], and evolutionary algorithm [34]. However, current GNAS algorithms often face the challenges of designing new search spaces when meeting new downstream graph learning tasks, which calls for heavy manual adjustments to achieve optimal performance. For example, AutoHeG [50] aims to integrate additional operations of Heterophilic GNNs [3, 5] into traditional search space, which entails not only modifying the search space but also adapting the search algorithm to facilitate the selection of both legacy and novel operators. This limitation hampers the scalability and generalizability of GNAS. Recently, Large Language Models (LLMs), such as GPT-4 [31], have exhibited remarkable language understanding and generation capabilities. In particular, LLMs have been successfully used in de- signing novel optimizers [41] and CNN architectures [49], where a new set of prompts are designed to guide LLMs towards generating better CNN architectures by learning from prior attempts. Moti- vated by the success of LLMs in model design and optimization, we aim to integrate LLMs into GNAS by leveraging the generative capabilities of LLMs. Our goal is to develop a new class of GNAS library based on LLMs that are easily transferable across different graph tasks and search spaces. In this paper, we present LLM4GNAS, a new toolkit for GNAS based on LLMs. LLM4GNAS leverages the language understanding and generation capabilities of LLMs to enhance the GNAS process. LLM4GNAS consist of three modules, i.e., LLM-enhanced node augmentation, LLM-enhanced graph neural search algorithms, and LLM-enhanced hyperparameter optimization. First, LLM4GNAS employs LLMs to generate rich features for graph data, which can augment the node features based on LLMs. Second, LLM4GNAS in- tegrates graph neural search algorithms with LLM prompts, which enables diverse exploration of the search space. Third, LLM4GNAS incorporates hyperparameter optimization driven by LLMs. This approach ensures that the optimal set of hyperparameters can be identified effectively. Our contributions are outlined as follows: arXiv:2502.10459v1 [cs.LG] 12 Feb 2025"
+}

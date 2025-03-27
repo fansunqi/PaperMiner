@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "ygeorg01.github.io/Im2SurfTex"
+  ],
+  "tasks": [
+    "Text to Texture Generation",
+    "Surface Texture Generation"
+  ],
+  "datasets": [
+    "Objaverse"
+  ],
+  "methods": [
+    "Neural Backprojection",
+    "Cross-Attention Mechanism",
+    "Positional Encodings",
+    "Geodesic Distances"
+  ],
+  "results": [
+    "FID: 26.68",
+    "KID: 1.53",
+    "CLIP Score: 29.76"
+  ],
+  "title": "Im2SurfTex Surface Texture Generation Via Neural Backprojection of Multi-View Images.pdf",
+  "abstract": "We present Im2SurfTex, a method that generates textures for input 3D shapes by learning to aggregate multi-view image outputs produced by 2D image diffusion models onto the shapes\u2019 texture space. Unlike existing texture generation techniques that use ad hoc backprojection and averaging schemes to blend multiview images into textures, often resulting in texture seams and artifacts, our approach employs a trained, feedforward neural module to boost texture coherency. The key ingredient of our module is to leverage neural attention and appropriate positional encodings of image pixels based on their corresponding 3D point positions, normals, and surface-aware coordinates as encoded in geodesic distances within surface patches. These encodings capture texture correlations between neighboring surface points, ensuring better texture continuity. Experimental results show that our module improves texture quality, achieving superior performance in high-resolution texture generation. CCS Concepts \u2022 Computing methodologies \u2192Texturing; Neural networks; 1. Introduction Producing compelling 3D assets has become an increasingly active area of research in the field of generative AI. Despite the signifi- cant progress in training large-scale generative models of 3D ge- ometry [LGT\u221723,LWVH\u221723,WLW\u221724,GSW\u221722,JN23,NJD\u221722, VWG\u221722,LXJ\u221724,LSC\u221724,SCZ\u221723,ZWZ\u221724], synthesizing com- pelling, seamless, and high-quality textures for 3D shapes and scenes still remains challenging. One major obstacle is the limited availability of training 3D asset datasets with high-quality textures. Several recent approaches [CSL\u221723,RMA\u221723,CKF\u221723,CDG\u221724, arXiv:2502.14006v1 [cs.GR] 19 Feb 2025"
+}

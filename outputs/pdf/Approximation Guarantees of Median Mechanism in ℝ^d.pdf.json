@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Approximation guarantees of Median Mechanism in Rd"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "Upper bound: 3",
+    "Lower bound: (1- O(1/d)) * UB(q)",
+    "UB(2) = \u221a(6/\u221a(3-8)) \u2248 1.55"
+  ],
+  "title": "Approximation Guarantees of Median Mechanism in \u211d^d.pdf",
+  "abstract": "The coordinate-wise median is a classic and most well-studied strategy-proof mechanism in social choice and facility location scenarios. Surprisingly, there is no systematic study of its approximation ratio in d-dimensional spaces. The best known approximation guarantee in d-dimensional Euclidean space L2(Rd) is \u221a d via a simple argument of embedding L1(Rd) into L2(Rd) metric space, that only appeared in appendix of [Meir 2019]. This upper bound is known to be tight in dimension d = 2, but there are no known super constant lower bounds. Still, it seems that the community\u2019s belief about coordinate-wise median is on the side of \u0398( \u221a d). E.g., a few recent papers on mechanism design with predictions [Agrawal, Balkanski, Gkatzelis, Ou, Tan 2022], [Christodoulou, Sgouritsa, Vlachos 2024], and [Barak, Gupta, Talgam-Cohen 2024] directly rely on the \u221a d-approximation result. In this paper, we systematically study approximate efficiency of the coordinate-median in Lq(Rd) spaces for any Lq norm with q \u2208[1, \u221e] and any dimension d. We derive a series of constant upper bounds UB(q) independent of the dimension d. This series UB(q) is growing with parameter q, but never exceeds the constant UB(\u221e) = 3. Our bound UB(2) = p 6 \u221a 3 \u22128 < 1.55 for L2 norm is only slightly worse than the tight approximation guarantee of \u221a 2 > 1.41 in dimension d = 2. Furthermore, we show that our upper bounds are essentially tight by giving almost matching lower bounds LB(q, d) = UB(q) \u00b7 (1 \u2212O(1/d)) for any dimension d with LB(q, d) = UB(q) when d \u2192\u221e. We also extend our analysis to the generalized median mechanism used in [Agrawal, Balkanski, Gkatzelis, Ou, Tan 2022] for L2(R2) space to arbitrary dimensions d with similar results for both robustness and consistency approximation guarantees. 1 Introduction Strategic facility location is the canonical problem in the literature on mechanism design without money [38]. The goal in this problem is to find a good location for the new facility given preferences of n strategic agents. This problem has been the focus of a long line of work in algorithmic mechanism design literature [38, 25, 26, 41, 43, 28] as well as earlier body of work in social choice [35, 11, 30, 37, 8, 15, 36, 9, 40]. In the former case the setting often served as an important domain for testing new concepts in approximate mechanism design, such as truthful mechanisms without monetary transfers [38] as well as mechanism design with predictions [28, 44, 6], while in the later case it has been the primary domain with structured preferences that allowed one to escape strong impossibility results such as the Gibbard-Satterthwaite Theorem [27, 39]. The social choice literature very thoroughly studied strategy-proof voting scenarios with single- picked preferences [35] in R1 and its extensions [8, 9, 40, 15] usually to d-dimensional Euclidean [30, 37, 11, 36] spaces Rd. All this work crucially relies on the simple median selection rule initially proposed by Black [10]. The median rule, which puts facility at the median of the agents\u2019 reported \u2217ITCS, Shanghai University of Finance and Economics 1 arXiv:2502.08578v1 [cs.GT] 12 Feb 2025"
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Compositional Generalization"
+  ],
+  "datasets": [
+    "2D Gaussian Bump Generation Task"
+  ],
+  "methods": [
+    "Kernel-based approach",
+    "Manifold warping",
+    "Low-rank regularization",
+    "Dataset augmentation"
+  ],
+  "results": [
+    "Disentangled latents are not enough",
+    "Enforcing factorization in the output space is key",
+    "Data efficiency scaling"
+  ],
+  "title": "Compositional Generalization Requires More Than Disentangled Representations.pdf",
+  "abstract": "Composition\u2014the ability to generate myriad vari- ations from finite means\u2014is believed to underlie powerful generalization. However, compositional generalization remains a key challenge for deep learning. A widely held assumption is that learn- ing disentangled (factorized) representations nat- urally supports this kind of extrapolation. Yet, empirical results are mixed, with many genera- tive models failing to recognize and compose fac- tors to generate out-of-distribution (OOD) sam- ples. In this work, we investigate a controlled 2D Gaussian \u201cbump\u201d generation task, demonstrat- ing that standard generative architectures fail in OOD regions when training with partial data, even when supplied with fully disentangled (x, y) co- ordinates, re-entangling them through subsequent layers. By examining the model\u2019s learned kernels and manifold geometry, we show that this failure reflects a \u201cmemorization\u201d strategy for generation through the superposition of training data rather than by combining the true factorized features. We show that models forced\u2014through architec- tural modifications with regularization or curated training data\u2014to create disentangled represen- tations in the full-dimensional representational (pixel) space can be highly data-efficient and ef- fective at learning to compose in OOD regions. These findings underscore that bottlenecks with factorized/disentangled representations in an ab- stract representation are insufficient: the model must actively maintain or induce factorization di- rectly in the representational space in order to achieve robust compositional generalization. *Equal contribution 1Massachusetts Institute of Technology, Cambridge MA, USA 02139 2University of Cambridge, Cam- bridge CB2 1EW, U.K 3NTT Research. Correspondence to: Qiyao Liang <qiyao@mit.edu>. Preprint. 1. Introduction A core motivation for disentangled representation learning is the belief that factoring an environment into independent latent dimensions, or \u201cconcepts\u201d, should lead to powerful combinatorial generalization: if a model can learn the rep- resentation of each factor separately, then in principle it can synthesize new combinations of those factors without extensive retraining. This property is often referred to as compositional generalization and is considered crucial for data efficiency and robust extrapolation in high-dimensional tasks, such as language understanding and vision (Lake & Baroni, 2018). Despite many attempts, disentangled representation learning has shown mixed results when it comes to compositional generalization. Some studies report clear data-efficiency gains and OOD benefits (Higgins et al., 2017a; Chen et al., 2018), while others find no significant advantage or even detrimental effects (Locatello et al., 2019; Ganin et al., 2017). This tension motivates a deeper theoretical explo- ration: Is a disentangled/factorized1 representation alone sufficient for compositional generalization? If not, why, and what other ingredients or constraints are necessary? In this paper, we develop a mechanistic perspective on why simply factorizing an intermediate (or input) representa- tion often falls short of enabling robust out-of-distribution (OOD) generalization. Concretely, we focus on a synthetic 2D Gaussian \u201cbump\u201d generation task, where a network learns to decode (x, y) into a spatial image. We provide a detailed empirical investigation into why disentangled representations often fail to achieve robust compositional generalization. Specifically: \u2022 From a manifold-based viewpoint, we show that while the input or bottleneck layer may be factorized, subse- quent layers can \u201cwarp\u201d and remix factors, leading to poor out-of-distribution (OOD) extrapolation. \u2022 Using a kernel-based perspective, we show that networks 1We use the terms \u201cdisentanglement\u201d and \u201cfactorization\u201d inter- changeably. See Section A.2 for a discussion of the definitions and distinctions. 1 arXiv:2501.18797v1 [cs.LG] 30 Jan 2025"
+}

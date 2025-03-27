@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "https://huggingface.co/TheFinAI",
+    "https://github.com/The-FinAI/Fino1"
+  ],
+  "tasks": [
+    "Financial reasoning",
+    "Numerical reasoning",
+    "Tabular data interpretation",
+    "Financial terminology comprehension",
+    "Long-context processing",
+    "Equation-based problem solving"
+  ],
+  "datasets": [
+    "FinQA",
+    "DM-Simplong",
+    "XBRL-Math"
+  ],
+  "methods": [
+    "CoT fine-tuning",
+    "Reinforcement learning",
+    "Domain-specific reasoning paths"
+  ],
+  "results": [
+    "10% performance improvement across tasks",
+    "Surpassed all 8B models and even Llama3-70B-Instruct and Llama3.1-70B-Instruct on average"
+  ],
+  "title": "Fino1 on the Transferability of Reasoning Enhanced LLMs to Finance.pdf",
+  "abstract": "Recent advancements in large language models (LLMs) have shown strong general reasoning abilities, yet their effectiveness in financial rea- soning remains underexplored. In this study, we comprehensively evaluate 16 powerful rea- soning and general LLMs on three complex financial tasks involving financial text, tabular data, and equations, assessing numerical rea- soning, tabular interpretation, financial termi- nology comprehension, long-context process- ing, and equation-based problem solving. Our results show that while better datasets and pre- training improve financial reasoning, general enhancements like CoT fine-tuning do not al- ways yield consistent gains. Moreover, all rea- soning strategies face challenges in improving performance on long-context and multi-table tasks. To address these limitations, we develop a financial reasoning-enhanced model based on Llama-3.1-8B-Instruct, by CoT fine-tuning and reinforcement learning with domain-specific reasoning paths. Even with simple fine-tuning with one financial dataset, our model achieves a consistent 10% performance improvement across tasks, surpassing all 8B models and even Llama3-70B-Instruct and Llama3.1-70B- Instruct on average. Our results highlight the need for domain-specific adaptations in finan- cial tasks, emphasizing future directions such as multi-table reasoning, long-context process- ing, and financial terminology comprehension. All our datasets, models1, and codes2 are pub- licly available. Furthermore, we introduce a leaderboard for benchmarking future datasets and models3. 1 Introduction Advancements in large language models (LLMs) have demonstrated remarkable performance across \u2217Corresponding author 1https://huggingface.co/TheFinAI 2https://github.com/The-FinAI/Fino1 3https://huggingface.co/spaces/TheFinAI/ open-finllm-reasoning-leaderboard various natural language pocessing tasks, including content generation(Van Veen et al., 2024; Zhang et al., 2024), language translation (Xu et al., 2024), and sentiment analysis (Xing, 2024; Miah et al., 2024). More recently, reasoning-enhanced models such as OpenAI\u2019s o1 and DeepSeek\u2019s R1 have been developed to extend LLM capabilities in complex reasoning (Guo et al., 2025; Jaech et al., 2024). These models exhibit significant improvements, particularly in mathematical and logical tasks that require complex reasoning (Temsah et al., 2024; Zhong et al., 2024). However, despite their suc- cess in general reasoning, their performance in the financial domain remains largely unexplored. Financial tasks inherently demand rigorous rea- soning, requiring not only numerical computations but also a deep contextual understanding of finan- cial terminology, regulations, and economic prin- ciples (Xie et al., 2023, 2024a). Unlike general reasoning tasks, financial reasoning necessitates (1) comprehension of domain-specific terminology, (2) the ability to establish and manipulate relation- ships between financial concepts and numbers to derive accurate conclusions, and (3) an understand- ing of the structure and content of financial tables (Xie et al., 2024b). Given the specialized nature of financial decision-making, assessing the reasoning capabilities of LLMs in this domain is crucial for bridging the gap between general AI reasoning and financial applications. Effective financial reasoning requires models to integrate textual, numerical, and structured data, highlighting the need for domain- specific adaptations to enhance AI-driven financial analysis. In this study, we aim to comprehensively eval- uate the performance of existing powerful reason- ing models and conduct an in-depth analysis of their capabilities in financial tasks. Through this evaluation, we aim to provide insights into the strengths and limitations of existing reasoning mod- els in financial applications, informing future ad- arXiv:2502.08127v1 [cs.CL] 12 Feb 2025"
+}

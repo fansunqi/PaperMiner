@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Evaluating LLM Sycophancy"
+  ],
+  "datasets": [
+    "AMPS (mathematics)",
+    "MedQuad (medical advice)"
+  ],
+  "methods": [
+    "LLM-As-A-Judge evaluation",
+    "Rebuttal process",
+    "Preemptive and in-context rebuttals",
+    "Simple, Ethos, Justification, and Citation and Abstract rebuttals"
+  ],
+  "results": [
+    "58.19% sycophantic behavior",
+    "Highest sycophancy rate in Gemini (62.47%)",
+    "Highest progressive sycophancy in ChatGPT (42.32%)",
+    "Highest regressive sycophancy in ChatGPT (14.40%)",
+    "78.5% persistence rate"
+  ],
+  "title": "SycEval Evaluating LLM Sycophancy.pdf",
+  "abstract": "GOLDBERG\u2217, Stanford University, USA ANK A. AGARWAL, Stanford University, USA JOANNA LIN, Stanford University, USA ANSON ZHOU, Stanford University, USA ROXANA DANESHJOU\u2020, Stanford University, USA SANMI KOYEJO\u2020, Stanford University, USA Large language models (LLMs) are increasingly applied in educational, clinical, and professional settings, but their tendency for sycophancy\u2014prioritizing user agreement over independent reasoning\u2014poses risks to reliability. This study introduces a framework to evaluate sycophantic behavior in ChatGPT-4o, Claude-Sonnet, and Gemini-1.5-Pro across AMPS (mathematics) and MedQuad (medical advice) datasets. Sycophantic behavior was observed in 58.19% of cases, with Gemini exhibiting the highest rate (62.47%) and ChatGPT the lowest (56.71%). Progressive sycophancy, leading to correct answers, occurred in 43.52% of cases, while regressive sycophancy, leading to incorrect answers, was observed in 14.66%. Preemptive rebuttals demonstrated significantly higher sycophancy rates than in-context rebuttals (61.75% vs. 56.52%, \ud835\udc4d= 5.87, \ud835\udc5d< 0.001), particularly in computational tasks, where regressive sycophancy increased significantly (preemptive: 8.13%, in-context: 3.54%, \ud835\udc5d< 0.001). Simple rebuttals maximized progressive sycophancy (\ud835\udc4d= 6.59, \ud835\udc5d< 0.001), while citation-based rebuttals exhibited the highest regressive rates (\ud835\udc4d= 6.59, \ud835\udc5d< 0.001). Sycophantic behavior showed high persistence (78.5%, 95% CI: [77.2%, 79.8%]) regardless of context or model. These findings emphasize the risks and opportunities of deploying LLMs in structured and dynamic domains, offering insights into prompt programming and model optimization for safer AI applications. CCS Concepts: \u2022 Computing methodologies \u2192Natural language processing; Machine learning; \u2022 General and reference \u2192Evaluation; \u2022 Social and professional topics \u2192Bias in AI systems. Additional Key Words and Phrases: language models, sycophancy, bias in AI, evaluation, natural language processing, machine learning, ethical AI, model alignment ACM Reference Format: Aaron Fanous, Jacob N. Goldberg, Ank A. Agarwal, Joanna Lin, Anson Zhou, Roxana Daneshjou, and Sanmi Koyejo. 2025. SycEval: Evaluating LLM Sycophancy . In . ACM, New York, NY, USA, 10 pages. https://doi.org/XXXXXXX.XXXXXXX 1 INTRODUCTION Large language models (LLMs) are increasingly used across educational, professional, and medical settings [10]. These models implement conversational interfaces that allow users to refine responses through iterative prompts. Sycophancy occurs when LLMs sacrifice truthfulness for user agreement [5]. This misalignment of LLM behavior, driven by perceived user preferences, arises most often in response to subjective opinions and statements [7, 11]. Models may sacrifice truthfulness in favor of sycophancy to appeal to human preference [10, 12]. Consequently, this can lead models to reinforce discriminatory biases or convincingly affirm misinformation, thus skewing outputs away from the ground truth [6]. Such behavior not only undermines trust, but also limits LLM reliability in high-stakes applications [4]. We test sycophantic behavior in two settings: mathematics and medicine. Mathematics generally has more straightforward answers, allowing easier interrogation of sycophantic behavior, while medicine represents a real-world setting where sycophantic behaviors could lead to immediate and significant harm, particularly since LLMs are increasingly being applied in this setting [9]. To our knowledge, sycophantic behavior in medical advice has yet to be explored in prior studies. Here, we investigate and \u2217Co-first author. Both authors contributed equally to this research. \u2020Both authors contributed equally to this research. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \u00a9 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM. Manuscript submitted to ACM 1 arXiv:2502.08177v1 [cs.AI] 12 Feb 2025"
+}

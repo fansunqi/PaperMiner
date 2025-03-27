@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Numerical approximation of high-dimensional McKean\u2013Vlasov SDEs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multilevel Picard (MLP) approximations"
+  ],
+  "results": [
+    "Overcomes the curse of dimensionality",
+    "Computational cost grows at most polynomially in the dimension and the reciprocal of the prescribed error tolerance"
+  ],
+  "title": "Multilevel Picard Approximations for McKean-Vlasov Stochastic Differential Equations with Nonconstan.pdf",
+  "abstract": ". We introduce multilevel Picard (MLP) approximations for McKean\u2013Vlasov stochastic di\ufb00erential equations (SDEs) with nonconstant di\ufb00usion coe\ufb03cient. Under standard Lipschitz assumptions on the coe\ufb03cients, we show that the MLP algorithm approximates the solution of the SDE in the L2-sense without the curse of dimensionality. The latter means that its computational cost grows at most polynomially in both the dimension and the reciprocal of the prescribed error tolerance. In two numerical experiments, we demonstrate its applicability by approximating McKean\u2013Vlasov SDEs in dimensions up to 10000. 1. Introduction McKean\u2013Vlasov stochastic di\ufb00erential equations (SDEs) provide a mathematical framework to analyze the limiting behavior of stochastic systems of weakly interacting particles. In order to describe the limit, these SDEs do not only depend on the state of the process but also on their distribution, and are therefore also referred to as distribution-dependent SDEs or mean- \ufb01eld SDEs in the literature. First introduced by McKean in [43] to model the Vlasov equation, these equations have since found applications in various \ufb01elds, including statistical physics (see, e.g., [10,23,39,60]), mathematical biology (see, e.g., [4,13,30,45,48]), social sciences (see, e.g., [14, 19,29]), mean-\ufb01eld games (see, e.g., [15,16,17]), stochastic control (see, e.g., [12]), mathematical \ufb01nance (see, e.g., [28]), and the analysis of neural networks (see, e.g., [34,46,57,58]). More precisely, for d \u2208 N and terminal time T > 0, we consider McKean\u2013Vlasov SDEs de\ufb01ned for every t \u2208[0, T] by Xd \u221e(t) = \u03bed + Z t 0 E \u0002 \u00b5d(x, Xd \u221e(s)) \u0003 |x=Xd\u221e(s) ds + Z t 0 E \u0002 \u03c3d(x, Xd \u221e(s)) \u0003 |x=Xd\u221e(s) dW d(s), (1) with initial value \u03bed \u2208 Rd, where \u00b5d : Rd \u00d7 Rd \u2192 Rd and \u03c3d : Rd \u00d7 Rd \u2192 Rd\u00d7d are su\ufb03ciently regular functions, and where W d = (W d(t))t\u2208[0,T] is a d-dimensional standard Brownian motion. The solution of (1) can be seen as limit of weakly interacting particles (X d,n N )n=1,...,N, as N \u2192\u221e, where each particle X d,n N := (X d,n N (t))t\u2208[0,T] satis\ufb01es the SDE de\ufb01ned for every t \u2208[0, T] by X d,n N (t) = \u03bed + 1 N N X m=1 Z t 0 \u00b5d(X d,n N (s), X d,m N (s))ds + 1 N N X m=1 Z t 0 \u03c3d(X d,n N (s), X d,m N (s))dW d(s). This phenomena is called propagation of chaos and was studied in [31,39,41,44,60]. While exis- tence and uniqueness of (1) have been established in [32,47,56,60], the numerical approximation of (1) has been considered in, e.g., [2,5,6,7,9,11,20,21,22,24,25,40,42,52,53,54,55,61,62]. In this paper, we are interested in the numerical approximation of high-dimensional McK- ean\u2013Vlasov SDEs. Our contribution is twofold: We introduce a multilevel Picard (MLP) approx- imation of (1) and show that it overcomes the curse of dimensionality when approximating (1) in the L2-sense. The latter means that the computational cost of the MLP algorithm grow at most polynomially in the space dimension d of the SDE (1) and the reciprocal \u01eb\u22121 of the prescribed 2020 Mathematics Subject Classi\ufb01cation. 60H10, 60H35, 65C05, 65C30. Key words and phrases. McKean\u2013Vlasov SDE, distribution-dependent SDE, mean-\ufb01eld SDE, high-dimensional SDE, multilevel Picard approximation, curse of dimensionality. Financial support by the MOE AcRF Tier 2 Grant MOE-T2EP20222-0013 is gratefully acknowledged. 1"
+}

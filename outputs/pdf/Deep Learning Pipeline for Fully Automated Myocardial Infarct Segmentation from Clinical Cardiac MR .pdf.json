@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Myocardial infarct segmentation"
+  ],
+  "datasets": [
+    "MARINA-STEMI"
+  ],
+  "methods": [
+    "Deep learning",
+    "3D U-net",
+    "2D-3D cascaded network"
+  ],
+  "results": [
+    "Dice coefficient: 64.11% for infarct segmentation",
+    "Dice coefficient: 82.20% for MVO segmentation"
+  ],
+  "title": "Deep Learning Pipeline for Fully Automated Myocardial Infarct Segmentation from Clinical Cardiac MR .pdf",
+  "abstract": "Purpose: To develop and evaluate a deep learning-based method that allows to perform myocardial infarct segmentation in a fully-automated way. Materials and Methods: For this retrospective study, a cascaded framework of two and three- dimensional convolutional neural networks (CNNs), specialized on identifying ischemic myocardial scars on late gadolinium enhancement (LGE) cardiac magnetic resonance (CMR) images, was trained on an in-house training dataset consisting of 144 examinations. On a separate test dataset from the same institution, including images from 152 examinations obtained between 2021 and 2023, a quantitative comparison between artificial intelligence (AI)-based segmentations and manual segmentations was performed. Further, qualitative assessment of segmentation accuracy was evaluated for both human and AI-generated contours by two CMR experts in a blinded experiment. Results: Excellent agreement could be found between manually and automatically calculated infarct volumes (\u03c1c = 0.9). The qualitative evaluation showed that compared to human-based measurements, the experts rated the AI-based segmentations to better represent the actual extent of infarction significantly (p < 0.001) more often (33.4% AI, 25.1% human, 41.5% equal). On the contrary, for segmentation of microvascular obstruction (MVO), manual measurements were still preferred (11.3% AI, 55.6% human, 33.1% equal). Conclusion: This fully-automated segmentation pipeline enables CMR infarct size to be calculated in a very short time and without requiring any pre-processing of the input images while matching the segmentation quality of trained human observers. In a blinded experiment, experts preferred automated infarct segmentations more often than manual segmentations, paving the way for a potential clinical application. Keywords Late gadolinium enhancement \u00b7 Segmentation \u00b7 Deep learning \u00b7 Infarction 1 Introduction Ischemic heart disease remains a leading cause of global mortality, responsible for approximately 9.1 million deaths worldwide in 2019 [1, 2]. It has been shown that following ST-segment elevation myocardial infarction, accurately assessing infarct size and microvascular obstruction (MVO) are crucial for clinical decision-making and for prediction of major adverse cardiovascular events [3, 4, 5, 6]. However, obtaining these important predictors requires segmentation of late gadolinium enhancement (LGE) cardiac magnetic resonance (CMR) images. As manual LGE segmentation by expert readers is time-consuming and additionally yields limited reproducibility [7], recently a lot of work has been done developing deep learning-based algorithms for automatic infarct segmentation [8, 9, 10, 11, 12, 13, 14, 15]. The topic received even more attention when two challenges focusing on myocardial infarct segmentation were held in the course of the 2020 MICCAI conference [16, 17]. However, a lot of these frameworks still have major drawbacks, such as ignoring the extensive image preprocessing steps that would be necessary when applied arXiv:2502.03272v1 [eess.IV] 5 Feb 2025"
+}

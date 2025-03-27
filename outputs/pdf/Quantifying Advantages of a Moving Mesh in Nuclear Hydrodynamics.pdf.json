@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nuclear Hydrodynamics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Moving mesh technique",
+    "Strang splitting",
+    "13 isotope nuclear reaction network",
+    "Cartesian geometry hydrodynamics code"
+  ],
+  "results": [
+    "Reduced numerical diffusion",
+    "Longer timesteps",
+    "Improved convergence"
+  ],
+  "title": "Quantifying Advantages of a Moving Mesh in Nuclear Hydrodynamics.pdf",
+  "abstract": "Many astrophysical explosions, such as type Ia supernovae, classical novae, and X-ray bursts, are dominated by thermonuclear runaway. To model these processes accurately, one must evolve nuclear reactions concurrently with hydrodynamics. We present an application of the moving mesh technique to this field of computation with the aim of explicitly testing the advantages of the method against the fixed mesh case. By way of traditional Strang splitting, our work couples a 13 isotope nuclear reaction network to a 1D moving mesh, Cartesian geometry hydrodynamics code. We explore three reacting problems: an acoustic pulse, a burning shock, and an advecting deflagration. Additionally using the shock jump conditions, we semi-analytically solve the burning shock problem under the assumption of quick, complete burning with the hope of establishing a useful and easy to set-up test problem. Strong moving mesh advantages are found in advecting, deflagrating flame fronts, where the technique dramatically reduces numerical diffusion that would otherwise lead to very fast artificial deflagration. Keywords: hydrodynamics \u2014 computational astronomy \u2014 nuclear astrophysics 1. INTRODUCTION High energy astrophysical events often involve the pro- cess of nuclear burning, and in some cases, thermonu- clear runaway is the dominant mechanism of interest. This is true, for example, in type Ia supernovae (Pak- mor et al. 2013; Shen et al. 2018; Polin et al. 2019), classical novae (Starrfield et al. 2020), and X-ray bursts (Eiden et al. 2020). To hydrodynamically model these events, it becomes necessary to include a coupled nu- clear network that accounts for the energy generation from burning, which in turn introduces a myriad of dif- ficulties and subtleties to conventional codes. The core challenge is to evolve the stiff ODE behavior of reac- tion networks from the steep temperature dependence of reaction rates at hydrodynamical timescales. Much progress has been made by Eulerian finite volume methods utilizing Adaptive Mesh Refinement (AMR) techniques. FLASH (Fryxell et al. 2000) and CASTRO (Almgren et al. 2010) are two leading examples of AMR codes for nuclear hydrodynamics. AMR re- fines areas of interest (such as where burning occurs) to improve spatial and temporal resolution, while evolving the less computationally demanding areas at lower reso- lutions. Additionally, much work has gone into develop- ing reaction networks suitable for astrophysical flows, in- cluding the iso7/aprox13/aprox21/. . . suite 1 (Timmes 1999) and recently Pynucastro (Smith et al. 2023). Net- works with more isotopes and rates generally are better models as more physics is included. However, they are computationally much more expensive, and smaller net- works, if chosen carefully, can often capture the energy generation well enough (Timmes et al. 2000). As al- ways, the optimal balance depends on the astrophysical problem being solved. As used by the code AREPO (Springel (2010) for hy- drodynamical description and Pakmor et al. (2013) for early work with nuclear networks), another approach is to use the moving mesh technique, which broadly refers to a class of finite volume hydrodynamic models with meshes that are allowed to move according to local fluid velocities. This is open to many choices of mesh struc- ture varying in geometries and mesh motion. For exam- ple AREPO, TESS (Duffell & MacFadyen 2011), and RICH (Yalinewich et al. 2015), have unstructured tessellations, and DISCO (Duffell 2016), JET (Duffell et al. 2018), and SPROUT (Mandal & Duffell 2023), have unique struc- tured meshes designed for specific problems. In gen- eral, the moving mesh technique has been shown to dra- matically reduce the effects of numerical diffusion (Ya- 1 aprox13 and more are available at https://cococubed.com/ arXiv:2502.02693v1 [astro-ph.HE] 4 Feb 2025"
+}

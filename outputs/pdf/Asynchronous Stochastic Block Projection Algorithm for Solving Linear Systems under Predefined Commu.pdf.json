@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Solving large-scale linear systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Asynchronous Distributed Stochastic Block Projection Algorithm",
+    "Event-Triggered Communication",
+    "Random Block Kaczmarz Algorithm"
+  ],
+  "results": [
+    "Exponential convergence rate",
+    "Lower communication overhead",
+    "Faster convergence rates"
+  ],
+  "title": "Asynchronous Stochastic Block Projection Algorithm for Solving Linear Systems under Predefined Commu.pdf",
+  "abstract": "Distributed computation over networks is now receiving an increasing attention in many fields such as engineering and machine learning, where the solution of a linear system of equations is a basic task. This paper presents an asyn- chronous distributed randomized block Kaczmarz projection algorithm for solving large-scale linear systems over a multi-agent networks, where each agent only holds a part of the problem data. An event-triggered communication mechanism is integrated to minimize the communication overhead and reduce the overall communication costs. This communication mechanism allows each agent to update independently in an asynchronous environment and dynami- cally regulate communication frequency. In addition, this article analyzes the inefficiency caused by communication in asynchronous algorithms, explores the potential of event triggering mechanisms in alleviating these problems, and provides general conditions for global convergence in such environments. Moreover, a modified stochastic block Kaczmarz algorithm is used for each agent to update their local estimate. Through rigorous mathematical analysis, the exponential convergence rate of the proposed algorithm is established for a consistent system and its computational efficiency, robustness, and communication efficiency is validated through extensive numerical experiments. Further- more, to address inconsistent systems, the algorithm introduces auxiliary variables to facilitate convergence toward an approximate least-squares solution, accompanied by a formal error analysis. The experimental results demonstrate that the algorithm maintains stability even under extreme asynchrony, communication failures, and node failures, while achieving significantly lower communication overhead and faster convergence rates compared to traditional methods. Keywords: Asynchronous Distributed, Random Block Projection, Event-Triggered Communication, Communication Overhead 1. Introduction Distributed computing has become an area of growing interest among researchers, driving the development of distributed algorithms to address large-scale computational problems. These algorithms have been widely applied in fields such as optimization [1], deep learning [2, 3], robotics [4], and power systems [5], etc. Among these chal- lenges, solving linear systems of equations with the form Ax = b, where A is a matrix and b is a column vector, re- mains a fundamental and extensively studied problem. Traditional solvers, including the Jacobi Method, Gauss-Seidel Method, Conjugate Gradient (CG), and Multigrid Method, often struggle with large-scale linear systems, motivating researchers to explore distributed alternatives. In this paper, we are interested in the multi-agent network. One of the most widely studied distributed strategies is row-wise partitioning, where the global system is decomposed into several local subproblems, each assigned to a separate agent. Specifically, given a global system Ax = b, where A \u2208Rm\u00d7n and b \u2208Rm. Suppose there are N agents and each agent only holds a subset of the rows of (A, b). Denote the subset that agent i holds as (Ai, bi), i = 1, 2, \u00b7 \u00b7 \u00b7 , N, \u22c6This work was supported by the National Natural Science Foundation of China Joint Fund Project Key Support Project under Grant U22B2049. \u2217Corresponding author: wangyongli@sdkd.net.cn, yinyanchen352@gmail.com Preprint submitted to Applied Mathematics and Computation February 21, 2025 arXiv:2502.14213v1 [math.NA] 20 Feb 2025"
+}

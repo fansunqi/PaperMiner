@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Biomechanical Analysis",
+    "Musculoskeletal Modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quaternion-based Modeling",
+    "Muscle Torque Estimation",
+    "Muscle Length Jacobian Mapping"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Calculation of a Force Effect from Muscle Action to a Quaternion-Based Musculoskeletal Model.pdf",
+  "abstract": "Euler angle representation in biomechanical analysis allows straightforward description of joints rotations. However, application of Euler angles could be limited due to singularity called gimbal lock. Quaternions offer an alternative way to describe rotations but they have been mostly avoided in biomechanics as they are complex and not inherently intuitive, specifically in dynamic models actuated by muscles. This study introduces a mathematical framework for describing muscle actions in dynamic quaternion-based musculoskeletal simulations. The proposed method estimates muscle torques in quaternion-based musculoskeletal model. Its application is shown on three-dimensional double-pendulum system actuated by muscle elements. Furthermore, transformation of muscle moment arms obtained from muscle paths based on Euler angles into quaternions description is presented. The proposed method is advantageous for dynamic modeling of musculoskeletal models with complex kinematics and large range of motion like the shoulder joint. 1 Introduction Inter-segmental rotation is the primary type of motion observed in the human body. The standard method for describing rotations follows the notation of motions in anatomical planes. Mathematically, it can be expressed as a sequence of rotations of generalised coordinates, also known as Euler or Tait-Bryan angles. The rotation sequences of individual joints are provided in the ISB recommendation in [Wu et al., 2005]. In the description of systems using Euler angles, so-called gimbal lock might occur. This happens when two of the three rotational axes align, making it impossible to rotate independently around one of the axes. As a result, the description of the system loses a degree of freedom, limiting the orientations it can represent. Gimbal lock has been identified in the shoulder joint kinematics in various activities, such as tennis [Bonnefoy-Mazure et al., 2010] or volleyball [Barrett et al., 2024]. Despite different rotation sequences of Euler angles adopted for various humeral motions [Clark et al., 2020, Creveaux et al., 2018, Phadke et al., 2011], the gimbal lock cannot be avoided [\u0160enk and Ch\u00e8ze, 2006]. Some authors even lock two axes of rotation in the glenohumeral joint to prevent gimbal lock in shoulder shrugging [Belli et al., 2023]. Quaternion-based models would overcome problems with gimbal lock [Shoemake, 1985] and offer an approach to run upper extremity simulation without the need of changing the sequence of Euler angles based on the performed motion [Rab et al., 2002, Schnorenberg and Slavens, 2021]. arXiv:2502.03475v1 [physics.med-ph] 21 Jan 2025"
+}

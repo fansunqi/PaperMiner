@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/felix-lyx/bcat"
+  ],
+  "tasks": [
+    "Fluid Dynamics Simulation",
+    "PDE Foundation Models"
+  ],
+  "datasets": [
+    "PDEBench",
+    "PDEArena",
+    "CFDBench"
+  ],
+  "methods": [
+    "Block Causal Transformer",
+    "Next Frame Prediction"
+  ],
+  "results": [
+    "Average relative error of 1.92%",
+    "Outperforms prior approaches on standard benchmarks"
+  ],
+  "title": "BCAT A Block Causal Transformer for PDE Foundation Models for Fluid Dynamics.pdf",
+  "abstract": "We introduce BCAT, a PDE foundation model designed for autoregressive prediction of solutions to two dimensional fluid dynamics problems. Our approach uses a block causal transformer architecture to model next frame predictions, leveraging previous frames as contextual priors rather than relying solely on sub-frames or pixel-based inputs commonly used in image generation methods. This block causal framework more effectively captures the spatial dependencies inherent in nonlinear spatiotemporal dynamics and physical phenomena. In an ablation study, next frame prediction demonstrated a 2.9x accuracy improvement over next token prediction. BCAT is trained on a diverse range of fluid dynamics datasets, including incompressible and compressible Navier-Stokes equations across various geometries and parameter regimes, as well as the shallow-water equations. The model\u2019s performance was evaluated on 6 distinct downstream prediction tasks and tested on about 8K trajectories to measure robustness on a variety of fluid dynamics simulations. BCAT achieved an average relative error of 1.92% across all evaluation tasks, outperforming prior approaches on standard benchmarks. 1 Introduction Fluid mechanics is a fundamental area of study within physics and engineering, describing a wide range of phenomena through modeling of pressure, velocity, and viscosity. It is used in various applications, including climate forecasting, energy generation in wind and hydropower systems, aerodynamics and aircraft design, blood circulation analysis, and more. Due to the highly nonlinear interactions among multiple physical scales, predicting and simulating fluid behavior remains a challenging task. The computational problems become even more difficult in settings with limited observations or noisy measurements. Hence, accurately predicting fluid behavior in such regimes remains a challenge for scientific machine learning. While foundation models like GPT [8,32,33], DALL-E [34,35], Stable Diffusion [36], LLAMA [46, 47], Phi [1,2], Gemma [44], and Claude have demonstrated remarkable generalization capabilities in language and vision tasks [6], they have not accurately addressed scientific computing tasks such as simulating partial differential equations (PDEs). These tasks not only require precise predictions but also the ability to learn the underlying physical rules. PDE foundation models aim to address this challenge by using a single deep neural network (DNN) to simultaneously encode and approximate the behavior of a variety of physical models. The objective is to develop a unified DNN capable of predicting multiple physical systems with the ability to simulate solutions in unseen parameter regimes, i.e. out-of-domain predictions. Recent progress in PDE foundation \u2217Department of Mathematics, UCLA, Los Angeles, CA 90095. \u2020Department of Mathematical Sciences, Carnegie Mellon University, Pittsburgh, PA 15213. The code is available at: https://github.com/felix-lyx/bcat. 1 arXiv:2501.18972v1 [cs.LG] 31 Jan 2025"
+}

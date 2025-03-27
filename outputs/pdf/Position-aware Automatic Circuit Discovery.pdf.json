@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/technion-cs-nlp/PEAP"
+  ],
+  "tasks": [
+    "Circuit Discovery",
+    "Interpretability",
+    "Language Model Mechanism Understanding"
+  ],
+  "datasets": [
+    "IOI",
+    "Greater-Than",
+    "Winobias"
+  ],
+  "methods": [
+    "Position-aware Edge Attribution Patching (PEAP)",
+    "Schema",
+    "LLM-based Schema Generation and Application"
+  ],
+  "results": [
+    "Position-aware circuits achieve better trade-offs between circuit size and faithfulness",
+    "LLM-generated schemas achieve comparable faithfulness to human-designed schemas"
+  ],
+  "title": "Position-aware Automatic Circuit Discovery.pdf",
+  "abstract": "A widely used strategy to discover and under- stand language model mechanisms is circuit analysis. A circuit is a minimal subgraph of a model\u2019s computation graph that executes a spe- cific task. We identify a gap in existing circuit discovery methods: they assume circuits are position-invariant, treating model components as equally relevant across input positions. This limits their ability to capture cross-positional interactions or mechanisms that vary across positions. To address this gap, we propose two improvements to incorporate positionality into circuits, even on tasks containing variable- length examples. First, we extend edge attri- bution patching, a gradient-based method for circuit discovery, to differentiate between to- ken positions. Second, we introduce the con- cept of a dataset schema, which defines token spans with similar semantics across examples, enabling position-aware circuit discovery in datasets with variable length examples. We additionally develop an automated pipeline for schema generation and application using large language models. Our approach enables fully automated discovery of position-sensitive cir- cuits, yielding better trade-offs between circuit size and faithfulness compared to prior work.1 1 Introduction A primary goal of interpretability research is to characterize the internal mechanisms in lan- guage models (LMs) and other NLP models. A core approach in this area is circuit discov- ery\u2014identifying the minimal subgraph within the model\u2019s computation graph that performs a spe- cific task (Olah et al., 2021; Elhage et al., 2021). Typically, the nodes of a circuit represent model components (e.g., attention heads, neurons, or lay- ers). While manual circuit discovery methods can yield position-specific insights (Wang et al., 2023; 1Our code is available in https://github.com/ technion-cs-nlp/PEAP. 25 28 211 214 217 #Edges 0.5 0.0 0.5 1.0 Faithfulness Soft Faithfulnes Hard Faithfulness Figure 1: Positional vs. non-positional circuits. In a non- positional circuit, the same edges must be included at all positions. A positional circuit can distinguish between the same edge at different positions. This specificity yields better trade-offs between circuit size and faithful- ness. It can also increase both precision and recall. Goldowsky-Dill et al., 2023), automatic methods often overlook positional information, treating com- ponents as uniformly relevant across all input token positions (Conmy et al., 2023; Syed et al., 2023). For instance, if an attention head is included in a cir- cuit, it is assumed to contribute equally to the com- putation for every position in the input sequence. The assumption that circuits are position-invariant ignores the fact that different positions often re- quire distinct computations. By ignoring positions, current methods limit their ability to capture mech- anisms that operate across positions, such as inter- actions between attention heads across positions. In this study, we start by demonstrating that po- sitional agnosticism is a significant limitation (\u00a72). Then, to address these limitations, we introduce a new approach: position-aware edge attribution patching (PEAP; \u00a73; Figure 1). Current approaches assume that if an edge is in a circuit, then the same edge will be in the circuit at all positions, thus arXiv:2502.04577v1 [cs.LG] 7 Feb 2025"
+}

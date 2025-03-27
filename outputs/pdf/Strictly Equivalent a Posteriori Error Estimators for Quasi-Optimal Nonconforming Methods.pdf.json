@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "A posteriori error estimation",
+    "Nonconforming finite element methods",
+    "Quasi-optimal methods"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "A posteriori analysis",
+    "Residual decomposition",
+    "Local projections",
+    "Error estimators"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Strictly Equivalent a Posteriori Error Estimators for Quasi-Optimal Nonconforming Methods.pdf",
+  "abstract": ". We devise a posteriori error estimators for quasi-optimal noncon- forming finite element methods approximating symmetric elliptic problems of second and fourth order. These estimators are defined for all source terms that are admissible to the underlying weak formulations. More importantly, they are equivalent to the error in a strict sense. In particular, their data os- cillation part is bounded by the error and, furthermore, can be designed to be bounded by classical data oscillations. The estimators are computable, except for the data oscillation part. Since even the computation of some bound of the oscillation part is not possible in general, we advocate to handle it on a case-by-case basis. We illustrate the practical use of two estimators obtained for the Crouzeix-Raviart method applied to the Poisson problem with a source term that is not a function and its singular part with respect to the Lebesgues measure is not aligned with the mesh. 1. Introduction Nonconforming finite element methods are a well-established technique for the approximate solution of partial differential equations (PDEs). Classical noncon- forming elements, like the ones of Morley [Mor68] and Crouzeix-Raviart [CR73], were originally proposed as valuable alternatives to conforming ones for the bihar- monic and the Stokes equations. Later on, other nonconforming techniques like discontinuous Galerkin and C0 interior penalty methods have proved to be com- petitive for a wide range of problems. Nonconforming methods weaken the coupling between elements so that at least some discrete functions are not admissible to the weak formulation of the PDE of interest. On the one hand, this increases flexibility for approximation and accom- modating desired structural properties, but on the other hand it complicates the theoretical analysis and, without suitable measures, excludes data that is admissible in the weak PDE. An a posteriori error analysis aims at devising a quantity, called estimator, that, ideally, is computable and equivalent to the error of the approximate solution. Such an estimator can be used to asses the quality of the approximate solution and, if it splits into local contributions, to guide adaptive mesh refinement. To outline the structure of most available results, consider a weak formulation of the form u P V such that @v P V apu, vq \u201c xf, vy, 2010 Mathematics Subject Classification. 65N30, 65N15. Key words and phrases. a posteriori analysis, nonconforming finite elements, error-dominated oscillation, quasi-optimality, discontinuous Galerkin, C0 interior penalty. 1 arXiv:2502.01799v1 [math.NA] 3 Feb 2025"
+}

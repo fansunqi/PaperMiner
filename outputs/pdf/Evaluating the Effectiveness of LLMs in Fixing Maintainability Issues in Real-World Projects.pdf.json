@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Code maintainability",
+    "LLM effectiveness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SonarQube",
+    "Copilot Chat",
+    "Llama 3.1"
+  ],
+  "results": [
+    "LLama few-shot fixed 57 (44.9%) out of 127 methods",
+    "68.6% of developers considered the LLM solutions more readable"
+  ],
+  "title": "Evaluating the Effectiveness of LLMs in Fixing Maintainability Issues in Real-World Projects.pdf",
+  "abstract": "\u2014Large Language Models (LLMs) have gained atten- tion for addressing coding problems, but their effectiveness in fixing code maintainability remains unclear. This study evaluates LLMs capability to resolve 127 maintainability issues from 10 GitHub repositories. We use zero-shot prompting for Copilot Chat and Llama 3.1, and few-shot prompting with Llama only. The LLM-generated solutions are assessed for compilation errors, test failures, and new maintainability problems. Llama with few-shot prompting successfully fixed 44.9% of the methods, while Copilot Chat and Llama zero-shot fixed 32.29% and 30%, respectively. However, most solutions introduced errors or new maintainability issues. We also conducted a human study with 45 participants to evaluate the readability of 51 LLM- generated solutions. The human study showed that 68.63% of participants observed improved readability. Overall, while LLMs show potential for fixing maintainability issues, their introduction of errors highlights their current limitations. Index Terms\u2014maintainability, large language models, refac- toring I. INTRODUCTION Code maintainability is important because it affects how easily the code can be understood, changed, and improved [1]. Poor maintainability can increase development costs, reduce software quality [2], and lead to slower delivery of new features [3]. Addressing maintainability issues involves refactoring the code to improve its structure, readability, and adherence to best practices. However, fixing maintainability issues can be challenging, because a specialist review is expensive and slow, while automated tools are imprecise and require human interpretation [3]. Code smells are a common type of maintainability issue, with examples including methods that become complex and take on too many responsibilities, code that is no longer used, or instances where the same code snippets are repeated twice or more [4, 5, 6]. Recent advances in large language models (LLMs) have generated much interest in their use for coding problems [7, 8, 9, 10, 11]. These models have shown remarkable capabilities in generating code, repairing bugs, and conducting software tests, but using LLMs to refactor maintainability issues is under- explored and lacks relevant data [12]. In contrast to traditional automated tools that adhere to rigid rules, LLMs can provide an innovative approach to addressing maintainability issues. Their ability to understand complex contexts allows them to generate flexible and adaptable solutions. Furthermore, LLMs early investigations typically employ controlled scenarios to measure LLM capabilities [13, 14, 15, 16]. Despite these initial results, it is essential to understand the effectiveness of LLMs in addressing issues within real- world software projects [17, 18]. This type of software projects introduces numerous challenges for LLMs, including the need to understand and navigate codebases, adhere to various coding standards, and maintain compatibility with existing systems. Therefore, it is crucial to investigate how LLMs can resolve issues without introducing new errors or unintended behavior [8, 10, 14, 19]. In this paper, we evaluate the effectiveness of using LLMs to fix maintainability issues within Java methods. Our goal is to understand which maintainability issues LLMs can fix and where they fail. We aim to provide a comprehensive assessment of the utility of LLMs in maintenance tasks. To conduct our empirical study, we use SonarQube 10.3.0 1 to collect 127 instances of maintainability issues out of 10 GitHub Java projects, which have recent development activity, strong community, and a test suite available. The instances of the detected issues correspond to violations of 10 unique SonarQube rules. Then, we experiment with a proprietary LLM, Copilot Chat (version 0.15.2)2, and an open- source LLM, Llama 3.1 70B Instruct3, to fix the issues. We employ a zero-shot approach for both LLMs and a few-shot prompting approach for Llama to evaluate their performance across different prompt configurations. We also conduct a 1https://docs.sonarsource.com/sonarqube/latest/ 2https://tinyurl.com/vud9rnsf 3https://ai.meta.com/blog/meta-llama-3-1/ 1"
+}

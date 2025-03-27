@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/shayankiyani98/LR-QR"
+  ],
+  "tasks": [
+    "Conformal Prediction",
+    "Covariate Shift Adaptation"
+  ],
+  "datasets": [
+    "Communities and Crime",
+    "RxRx1"
+  ],
+  "methods": [
+    "Likelihood-Ratio Regularized Quantile Regression (LR-QR)",
+    "Regularized Loss",
+    "Stability Bounds"
+  ],
+  "results": [
+    "Valid test-time coverage under covariate shifts",
+    "Improved performance on high-dimensional datasets"
+  ],
+  "title": "Likelihood-Ratio Regularized Quantile Regression Adapting Conformal Prediction to High-Dimensional C.pdf",
+  "abstract": "We consider the problem of conformal prediction under covariate shift. Given labeled data from a source domain and unlabeled data from a covariate shifted target domain, we seek to construct prediction sets with valid marginal coverage in the target domain. Most existing methods require estimating the unknown likelihood ratio function, which can be prohibitive for high-dimensional data such as images. To address this challenge, we introduce the likelihood ratio regularized quantile regression (LR-QR) algorithm, which combines the pinball loss with a novel choice of regularization in order to construct a threshold function without directly estimating the unknown likelihood ratio. We show that the LR-QR method has coverage at the desired level in the target domain, up to a small error term that we can control. Our proofs draw on a novel analysis of coverage via stability bounds from learning theory. Our experiments demonstrate that the LR-QR algorithm outperforms existing methods on high-dimensional prediction tasks, including a regression task for the Communities and Crime dataset, and an image classification task from the WILDS repository. 1 Introduction Conformal prediction is a framework to construct distribution-free prediction sets for black-box predictive models (e.g., Saunders et al., 1999; Vovk et al., 1999, 2022, etc). Formally, given a pretrained prediction model f : X \u2192Y that maps features x \u2208X to labels y \u2208Y, as well as n1 calibration datapoints (Xi, Yi) : i \u2208[n1] sampled i.i.d. from a calibration distribution P1, we seek to construct a prediction set C(Xtest) \u2286Y for test features Xtest sampled from a test distribution P2. We aim to cover the true label Ytest with probability at least 1\u2212\u03b1 for some \u03b1 \u2208(0, 1): that is, P(Ytest \u2208C(Xtest)) \u2a7e1\u2212\u03b1. The left-hand side of this inequality is the marginal coverage of the prediction set C, averaged over the randomness of both the calibration datapoints and the test datapoint. In the case that the calibration and test distributions coincide (P1 = P2), there are numerous conformal prediction algorithms that construct distribution-free prediction sets with valid marginal coverage; for instance, split and full conformal prediction (e.g., Papadopoulos et al., 2002; Lei et al., 2013). However, in practice, it is often the case that test data is sampled from a different distribution than calibration data. This general phenomenon is known as distribution shift (e.g., Qui\u02dcnonero-Candela et al., 2009; Sugiyama and Kawanabe, 2012). One particularly common type of distribution shift is covariate shift (Shimodaira, 2000), where the conditional distribution of Y |X stays fixed, but the marginal distribution of features changes from calibration to test time. For instance, in the setting of image classification for autonomous vehicles, the calibration and test data might have been collected under different weather conditions Yu et al. (2020); Koh et al. (2021). Under covariate shift, ordinary conformal prediction algorithms may lose coverage. Recently, a number of methods have been proposed to adapt conformal prediction to covariate shift, e.g., in Tibshirani et al. (2019); Park et al. (2022b,a); Gibbs et al. (2023); Qiu et al. (2023); Yang et al. (2024); Gui et al. (2024). Most existing approaches attempt to estimate the likelihood ratio function r : X \u2192R, defined as r(x) = (dP2,X/dP1,X)(x), for all x \u2208X. One can construct an estimate \u02c6r of the likelihood ratio if one has access to additional unlabeled datapoints sampled i.i.d from the test distribution P2. Methods for \u2217Equal Contribution. Correspondence to: sunayj@sas.upenn.edu, shayank@seas.upenn.edu. 1 arXiv:2502.13030v1 [stat.ML] 18 Feb 2025"
+}

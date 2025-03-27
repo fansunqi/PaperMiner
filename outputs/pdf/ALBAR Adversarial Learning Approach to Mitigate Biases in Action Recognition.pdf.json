@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://joefioresi718.github.io/ALBAR_webpage/"
+  ],
+  "tasks": [
+    "Action Recognition"
+  ],
+  "datasets": [
+    "Kinetics400",
+    "UCF101",
+    "HMDB51",
+    "ARAS",
+    "SCUBA",
+    "SCUFO"
+  ],
+  "methods": [
+    "Adversarial Learning",
+    "Static Adversarial Loss",
+    "Entropy Maximization",
+    "Gradient Penalty"
+  ],
+  "results": [
+    "State-of-the-art performance on SCUBA/SCUFO benchmarks",
+    "Over 12% improvement in combined debiasing performance on HMDB51",
+    "Improved performance on downstream tasks like anomaly detection and temporal action localization"
+  ],
+  "title": "ALBAR Adversarial Learning Approach to Mitigate Biases in Action Recognition.pdf",
+  "abstract": "Bias in machine learning models can lead to unfair decision making, and while it has been well-studied in the image and text domains, it remains underexplored in action recognition. Action recognition models often suffer from background bias (i.e., inferring actions based on background cues) and foreground bias (i.e., relying on subject appearance), which can be detrimental to real-life applications such as autonomous vehicles or assisted living monitoring. While prior approaches have mainly focused on mitigating background bias using specialized augmentations, we thoroughly study both biases. We propose ALBAR, a novel adversarial training method that mitigates foreground and background biases without requiring spe- cialized knowledge of the bias attributes. Our framework applies an adversarial cross-entropy loss to the sampled static clip (where all the frames are the same) and aims to make its class probabilities uniform using a proposed entropy maximization loss. Additionally, we introduce a gradient penalty loss for regularization against the debiasing process. We evaluate our method on established background and foreground bias protocols, setting a new state-of-the-art and strongly improving combined debiasing performance by over 12% on HMDB51. Furthermore, we identify an issue of background leakage in the existing UCF101 protocol for bias evaluation which provides a shortcut to predict actions and does not provide an accurate measure of the debiasing capability of a model. We address this issue by proposing more fine-grained segmentation boundaries for the actor, where our method also outperforms existing approaches. 1 INTRODUCTION In a wide range of computer vision tasks, models often rely on unintended and seemingly irrelevant patterns in the data, known as spurious correlations, as shortcuts to make predictions or decisions Geirhos et al. (2018; 2020). These correlations do not represent the true underlying relationship between the input features and the target output. As a result, models that exploit these spurious correlations may achieve high performance on the training and in-distribution test data, but fail to generalize well to real-world scenarios. A notable example of this is seen in video action recognition, where a model will choose an action label by only considering the background instead of the subjects motion Ding et al. (2022a); Zou et al. (2023). For example, if a subject is performing the action \u201cThrowing Frisbee\u201d while standing on a soccer field, a model will likely predict \u201cPlaying Soccer\u201d instead. Here, the model is not using the motion information, instead using spatial information to make a biased decision. However, even if this background bias is mitigated, there may still be biases related to the video foreground Li et al. (2023). In our example, even if the subject is \u201cThrowing Frisbee\u201d indoors, but wearing a soccer jersey, a model may still erroneously predict \u201cPlaying Soccer\u201d. While the sources of foreground biases may include relatively harmless sources like a held object, they may also manifest in more harmful sources, such as a person\u2019s physical appearance attributes like skin color, facial hair etc. Zhao et al. (2017); Stock & Cisse (2017); Buolamwini & Gebru (2018); Wilson et al. (2019); Prabhu & Birhane (2020); Tong & Kagal (2020); Steed & Caliskan (2021); Gustafson et al. (2023). Such appearance-based decisions are highly undesirable in real-life applications of action recognition in security cameras, elderly monitor systems, or autonomous cars 1 arXiv:2502.00156v1 [cs.CV] 31 Jan 2025"
+}

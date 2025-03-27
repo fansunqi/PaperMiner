@@ -1,0 +1,30 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Multimodal Learning",
+    "Multimodal Transformer Fine-tuning",
+    "Edge Device Learning"
+  ],
+  "datasets": [
+    "T4SA",
+    "COCO-QA",
+    "MS-COCO",
+    "Flickr30K",
+    "UCF101",
+    "MELD"
+  ],
+  "methods": [
+    "Multimodal Parallel Split Learning (MPSL)",
+    "Modality-specific Tokenizers",
+    "Unified Encoder",
+    "Aggregated Loss",
+    "Single Backward Pass"
+  ],
+  "results": [
+    "Client-side computation overhead reduced by 250x compared to FL",
+    "Communication cost scalability with model growth",
+    "Comparable or superior performance to FL regimes"
+  ],
+  "title": "Fine-tuning Multimodal Transformers on Edge A Parallel Split Learning Approach.pdf",
+  "abstract": "Multimodal transformers integrate diverse data types like images, audio, and text, advancing tasks such as audio-visual understanding and image- text retrieval; yet their high parameterization lim- its deployment on resource-constrained edge de- vices. Split Learning (SL), which partitions mod- els at a designated cut-layer to offload compute- intensive operations to the server, offers a promis- ing approach for distributed training of multi- modal transformers, though its application re- mains underexplored. We present MPSL1, a par- allel SL approach for computational efficient fine- tuning of multimodal transformers in a distributed manner, while eliminating label sharing, client synchronization, and per-client sub-model man- agement. MPSL employs lightweight client-side tokenizers and a unified modality-agnostic en- coder, allowing flexible adaptation to task-specific needs. Our evaluation across 7 multimodal datasets demonstrates that MPSL matches or outperforms Federated Learning, reduces client-side computa- tions by 250\u00d7, and achieves superior scalability in communication cost with model growth. Through extensive analysis, we highlight task suitability, trade-offs, and scenarios where MPSL excels, in- spiring further exploration. 1 Introduction Multimodal transformers have demonstrated remarkable po- tential by integrating diverse data types such as images, au- dio, and text, thereby significantly advancing tasks like image captioning, audio-visual understanding, and vision-language question answering. The rapid proliferation of IoT devices, expected to surpass 29 billion by 2030 [Bonaventura et al., 2024], generates a massive volume of data at the edge, of- fering transformative opportunities for AI applications across sectors such as healthcare, transportation, and communica- tion. However, effectively leveraging this data necessitates addressing privacy concerns, regulatory restrictions, and the prohibitive cost of transferring vast datasets to centralized 1Code will be made available upon acceptance. Figure 1: MPSL (Ours) vs. FL for multimodal learning on edge devices using Meta-Transformer, results averaged over 5 tasks. servers, which strains network bandwidth. Federated Learn- ing (FL) [McMahan et al., 2017] has emerged as a promis- ing solution by enabling collaborative model training with- out sharing raw data, allowing models to train locally while aggregating updates across participating clients. Despite its benefits, FL falls short in application to multimodal trans- formers due to their architectural complexity and overparam- eterization, making them unsuitable for training solely on resource-constrained edge devices [Ghosh et al., 2024]. To address these limitations, Split Learning (SL) [Gupta and Raskar, 2018] has emerged as a compelling alternative, reducing client-side computation by partitioning a model and distributing it between edge devices and servers. SL enables edge devices to offload the computationally intensive por- tions of training to the server while preserving data privacy by keeping raw data on-device. Here, edge devices process initial layers locally and send intermediate activations \u2014 re- ferred to as smashed data \u2014 to the server, which handles the remaining computations. Parallel Split Learning (PSL) [Jeon and Kim, 2020] extends SL by enabling multiple devices to train simultaneously, addressing the latency issues of SL and making it a viable alternative to FL for computationally in- tensive models. However, while PSL has been studied for unimodal applications, its potential for handling multimodal data remains underexplored. To bridge this gap, our work extends PSL to multimodal transformers, termed Multimodal Parallel Split Learning (MPSL), enabling computation-efficient training on edge de- arXiv:2502.06355v1 [cs.DC] 10 Feb 2025"
+}

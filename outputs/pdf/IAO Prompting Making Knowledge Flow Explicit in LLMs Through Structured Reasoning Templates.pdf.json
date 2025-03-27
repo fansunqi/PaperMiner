@@ -1,0 +1,34 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Knowledge Verification in LLMs",
+    "Prompting",
+    "Problem Decomposition in LLMs"
+  ],
+  "datasets": [
+    "GSM8k",
+    "AQuA",
+    "StrategyQA",
+    "CommonsenseQA",
+    "Last Letter",
+    "Date Understanding",
+    "Object Tracking"
+  ],
+  "methods": [
+    "IAO prompting",
+    "Zero-shot CoT",
+    "L2M prompting",
+    "P&S framework",
+    "Two-stage IAO prompting",
+    "Few-shot extension"
+  ],
+  "results": [
+    "Improved accuracy and clarity in reasoning tasks",
+    "Enhanced transparency and interpretability of reasoning steps",
+    "Increased performance on various reasoning tasks"
+  ],
+  "title": "IAO Prompting Making Knowledge Flow Explicit in LLMs Through Structured Reasoning Templates.pdf",
+  "abstract": "While Large Language Models (LLMs) demonstrate impres- sive reasoning capabilities, understanding and validating their knowledge utilization remains challenging. Chain-of-thought (CoT) prompting partially addresses this by revealing inter- mediate reasoning steps, but the knowledge flow and ap- plication remain implicit. We introduce IAO (Input-Action- Output) prompting, a structured template-based method that explicitly models how LLMs access and apply their knowl- edge during complex reasoning tasks. IAO decomposes prob- lems into sequential steps, each clearly identifying the input knowledge being used, the action being performed, and the resulting output. This structured decomposition enables us to trace knowledge flow, verify factual consistency, and iden- tify potential knowledge gaps or misapplications. Through experiments across diverse reasoning tasks, we demonstrate that IAO not only improves zero-shot performance but also provides transparency in how LLMs leverage their stored knowledge. Human evaluation confirms that this structured approach enhances our ability to verify knowledge utilization and detect potential hallucinations or reasoning errors. Our findings provide insights into both knowledge representation within LLMs and methods for more reliable knowledge ap- plication. Introduction The remarkable capabilities of large language models (LLMs) (Vaswani et al. 2017; Devlin et al. 2019; Raffel et al. 2020; Brown et al. 2020; Chowdhery et al. 2023) have raised fundamental questions about how these models ac- quire, represent, and utilize knowledge (Ju et al. 2024; Meng et al. 2022; Turpin et al. 2024; Zhang, Yao, and Deng 2024). While LLMs demonstrate impressive few-shot and zero- shot learning abilities, understanding their knowledge appli- cation process remains challenging. Prompting (Liu et al. 2023) has emerged as a crucial technique for accessing and directing LLMs\u2019 knowledge, leading to extensive research in both manual (Schick and Sch\u00a8utze 2021; Reynolds and Mc- Donell 2021) and automated prompting approaches (Gao, Fisch, and Chen 2021; Shin et al. 2020). Chain-of-Thought (CoT) prompting (Wei et al. 2022; Wang, Deng, and Sun 2022) represents a significant ad- *Corresponding author: a.diallo@ucl.ac.uk Figure 1: Illustration of IAO prompting demonstrating how knowledge is structured and applied through explicit Input- Action-Output steps. Each step\u2019s output becomes verified knowledge for subsequent reasoning. vancement in accessing LLMs\u2019 knowledge by making in- termediate reasoning steps explicit. This approach guides LLMs to decompose complex knowledge application into sequential steps, similar to human reasoning processes. In zero-shot settings, simple prompts like \u201dlet\u2019s think step by step\u201d have proven effective in activating LLMs\u2019 inherent reasoning capabilities (Kojima et al. 2022), suggesting that these models possess substantial implicit knowledge that can be systematically accessed. However, a critical challenge persists: ensuring that LLMs\u2019 knowledge utilization is both interpretable and ver- ifiable. As noted by Singh et al. (2024), understanding an LLM\u2019s knowledge application requires extracting and val- idating the relationships learned by the model. While CoT improves reasoning performance, it often fails to provide a clear mapping of how stored knowledge is accessed and ap- plied in generating outputs step by step. This opacity in knowledge utilization poses significant challenges for verifying factual accuracy, identifying knowl- edge gaps, and ensuring reliable reasoning (Chen et al. 2024). To address these challenges, we introduce IAO arXiv:2502.03080v1 [cs.CL] 5 Feb 2025"
+}

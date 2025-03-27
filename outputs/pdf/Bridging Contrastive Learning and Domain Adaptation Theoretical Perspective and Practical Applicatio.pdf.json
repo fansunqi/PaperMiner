@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Domain Adaptation"
+  ],
+  "datasets": [
+    "GEHC image dataset",
+    "GEHC patch dataset",
+    "CBIS-DDSM",
+    "InBreast",
+    "synthetic patch dataset"
+  ],
+  "methods": [
+    "Contrastive Learning",
+    "Supervised Contrastive loss",
+    "NT-Xent loss",
+    "DenseNet-121"
+  ],
+  "results": [
+    "Improved Domain Adaptation",
+    "Improved class-separability",
+    "Enhanced classification performance"
+  ],
+  "title": "Bridging Contrastive Learning and Domain Adaptation Theoretical Perspective and Practical Applicatio.pdf",
+  "abstract": "This work studies the relationship between Con- trastive Learning and Domain Adaptation from a theoretical perspective. The two standard con- trastive losses, NT-Xent loss (Self-supervised) and Supervised Contrastive loss, are related to the Class-wise Mean Maximum Discrep- ancy (CMMD), a dissimilarity measure widely used for Domain Adaptation. Our work shows that minimizing the contrastive losses decreases the CMMD and simultaneously improves class- separability, laying the theoretical groundwork for the use of Contrastive Learning in the context of Domain Adaptation. Due to the relevance of Do- main Adaptation in medical imaging, we focused the experiments on mammography images. Exten- sive experiments on three mammography datasets - synthetic patches, clinical (real) patches, and clinical (real) images - show improved Domain Adaptation, class-separability, and classification performance, when minimizing the Supervised Contrastive loss. 1. Introduction Given a source data distribution or domain, we are often interested in transferring the representation learned to a different, albeit related, target domain. This is crucial for leveraging models pre-trained on large annotated datasets, as well as for adapting test and training distributions, which are generally different (de Mathelin et al., 2021). In partic- ular, Domain Adaptation (DA) methods seek to minimize the effects of the domain shift to enable more efficient trans- fer. This is especially relevant in the medical imaging do- main, where high data variability and limited access to large datasets pose significant challenges to the development of Deep Learning (DL)-based solutions, often hindering model generalization and performance across diverse clinical set- tings (Garrucho et al., 2022). 1Centre Borelli, CNRS & ENS Paris-Saclay, F-91190 Gif-sur- Yvette, France 2GE HealthCare, 78530 Buc, France 3ENSIIE, 91000 Evry, France. Correspondence to: Gonzalo I\u00f1aki Quintana <gonzalo.quintana@ens-paris-saclay.fr>. Contrastive Learning (CL) is a learning paradigm where semantically similar data-points are close to one another in the feature space, enabling to learn representations that are invariant given certain transformations. Intuitively, map- ping data points from different domains to the same region in the feature space mirrors the DA problem. In addition CL separates the representations of semantically different data-points, which has been found to be beneficial for down- stream task performance, like classification, detection, or segmentation. Contrastive Learning has been widely ap- plied in the medical imaging domain (Chaitanya et al., 2020; Dong & Voiculescu, 2021; Cao et al., 2021; Quintana et al., 2024). Inspired by the similarity of the tasks that Domain Adap- tation and Contrastive Learning pursue, as well as by the growing interest in CL for DA, we analyze both paradigms to provide theoretical justifications for applying CL to DA. Due the relevance of Domain Adaptation in medical imag- ing, we conduct experiments on mammography images for classification tasks, specifically determining the presence or absence of breast cancer. 1.1. Related work Domain Adaptation. Let Ds = {Xs\u00d7Ys, \u03c0s} be a source domain and Dt = {Xt \u00d7 Yt, \u03c0t} a target domain, where X. is an instance or covariate space, Y. is the label space, and \u03c0. : X. \u00d7 Y. \u2192R a joint probability measure.The target domain Dt is typically unlabeled, i.e., Yt = \u2205, contains fewer labels than Ds, or has a smaller dataset. In Domain Adaptation, we seek to transfer the representations learned in the source domain for solving a source task Ts to the tar- get domain, while considering that source and target tasks are the same. Various DA strategies have been proposed based on the nature of the domain shift (e.g., covariate shift, prior probability shift, concept shift), the availability of labels in the target domain (supervised, unsupervised, semi- supervised), and the type of models employed (e.g., shallow or deep architectures). In this work we consider the hidden covariate shift (de Mathelin et al., 2023) or covariate ob- servation shift (Kull & Flach, 2014), a subtype of concept shift where it is assumed that there exists a non-linear trans- formation of the covariates that eliminates the shift. One 1 arXiv:2502.00052v1 [cs.LG] 28 Jan 2025"
+}

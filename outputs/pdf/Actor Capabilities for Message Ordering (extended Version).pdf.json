@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Message Ordering in Actor Systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Actor Capabilities",
+    "Type-and-Effect Systems",
+    "Effect Systems"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Actor Capabilities for Message Ordering (extended Version).pdf",
+  "abstract": ". Actor systems are a flexible model of concurrent and dis- tributed programming, which are efficiently implementable, and avoid many classic concurrency bugs by construction. However actor systems must still deal with the challenge of messages arriving in unexpected orderings. We describe an approach to restricting the orders in which actors send messages to each other, by equipping actor references \u2014 the handle used to address another actor \u2014 with a protocol restricting which message types can be sent to another actor and in which order using that partic- ular actor reference. This endows the actor references with the properties of static (flow-sensitive) capabilities, which we call actor capabilities. By sending other actors only restricted actor references, they may control which messages are sent in which orders by other actors. Rules for du- plicating (splitting) actor references ensure that these restrictions apply even in the presence of delegation. The capabilities themselves restrict message ordering, which may form the foundation for stronger forms of reasoning. We demonstrate this by layering an effect system over the base type system, where the relationships enforced between the actor capabilities and the effects of an actor\u2019s behaviour ensure that an actor\u2019s behaviour is always prepared to handle any message that may arrive. Keywords: Actor systems \u00b7 Capability systems \u00b7 Type-and-effect sys- tems 1 Introduction Actor systems have long been of interest since Hewitt\u2019s original conception of the idea [36], both for similar anthropomorphic, intuitive appeal similar to that which boosted early interest in object-oriented programming (leading to work on active objects [54,5]) \u2014 and because the programming model enjoys many natural benefits that make it particularly well-suited to structuring concurrent and distributed programs. Compared to popular shared-memory concurrency models like POSIX threads, the actor model inverts control so that all actions in the system occur in response to asynchronous messages. This avoids classic issues with data races1 and deadlocks. Instead actor systems suffer from difficulties 1 Though actor implementations embedded in imperative programming languages may need additional techniques [30,14,47,62] to share data that was once or may again be mutable. arXiv:2502.07958v1 [cs.PL] 11 Feb 2025"
+}

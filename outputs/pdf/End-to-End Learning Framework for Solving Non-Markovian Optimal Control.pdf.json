@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://anonymous.4open.science/r/Fractional-Order-Learning-for-Control-Framework-69A0"
+  ],
+  "tasks": [
+    "Optimal Control of Fractional-Order Systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fractional-Order Learning for Optimal Control (FOLOC)",
+    "Deep Learning",
+    "Neural Operators",
+    "Fourier Neural Operator (FNO)"
+  ],
+  "results": [
+    "Sample complexity analysis",
+    "End-to-end learning",
+    "Robustness to non-Gaussian noise",
+    "Computational efficiency"
+  ],
+  "title": "End-to-End Learning Framework for Solving Non-Markovian Optimal Control.pdf",
+  "abstract": "Integer-order calculus often falls short in captur- ing the long-range dependencies and memory ef- fects found in many real-world processes. Frac- tional calculus addresses these gaps via fractional- order integrals and derivatives, but fractional- order dynamical systems pose substantial chal- lenges in system identification and optimal con- trol due to the lack of standard control method- ologies. In this paper, we theoretically derive the optimal control via linear quadratic regulator (LQR) for fractional-order linear time-invariant (FOLTI) systems and develop an end-to-end deep learning framework based on this theoretical foun- dation. Our approach establishes a rigorous math- ematical model, derives analytical solutions, and incorporates deep learning to achieve data-driven optimal control of FOLTI systems. Our key con- tributions include: (i) proposing an innovative system identification method control strategy for FOLTI systems, (ii) developing the first end-to- end data-driven learning framework, Fractional- Order Learning for Optimal Control (FOLOC), that learns control policies from observed trajec- tories, and (iii) deriving a theoretical analysis of sample complexity to quantify the number of sam- ples required for accurate optimal control in com- plex real-world problems. Experimental results indicate that our method accurately approximates fractional-order system behaviors without rely- ing on Gaussian noise assumptions, pointing to promising avenues for advanced optimal control. 1Ming Hsieh Department of Electrical and Computer Engi- neering, University of Southern California, Los Angeles, CA 90089, USA 2Department of Aerospace Engineering, University of Michigan, Ann Arbor, MI 48109, USA 3Elmore Family School of Electrical and Computer Engineering, Purdue University, West Lafayette, IN 47907, USA. Correspondence to: Xiaole Zhang <xiaolezh@usc.edu>, Paul Bogdan <pbogdan@usc.edu>. Under review. 1. Introduction Many real-world systems, including biological networks, fi- nancial markets, and control systems, exhibit long-range de- pendencies and memory effects that traditional integer-order models struggle to capture (Lundstrom et al., 2008; Ivanov et al., 1999; Ghorbani et al., 2018). Fractional-order linear time-invariant (FOLTI) systems extend classical integer- order models through fractional calculus, providing a more flexible framework for modeling such complex behaviors. Due to their ability to represent non-local dependencies and history-dependent dynamics, FOLTI systems have found broad applications in control systems, bioengineering, neu- roscience, physical, and financial modeling. However, the practical deployment of FOLTI systems faces significant challenges in system identification and optimal control. Un- like Markovian systems, where the current state depends solely on the immediate past state, FOLTI systems exhibit non-Markovian properties, meaning their evolution is in- fluenced by a broad range of past states. This memory effect introduces additional complexities, making it difficult for traditional methods to generalize effectively to FOLTI systems. Despite their advantages, FOLTI systems present signifi- cant challenges in both modeling and control. Identifying system parameters for fractional-order dynamical systems remains an open research problem. One major difficulty in system identification arises from the non-Markovian nature of fractional-order systems, where the state evolution is not solely determined by recent states but depends on an entire history of past observations. Additionally, the fractional derivative operators, such as the Gr\u00a8unwald\u2013Letnikov frac- tional derivative (Hilfer, 2000; Monje et al., 2010; Oldham & Spanier, 1974), introduce combinatorial complexity and nonlinearities, making standard parameter estimation tech- niques ineffective. Existing methods often rely on strong assumptions, such as noiseless data or constrained data gen- eration processes, limiting their applicability in practical scenarios. Beyond system identification, optimal control of FOLTI systems remains a major challenge. Unlike integer-order systems, where well-established control frameworks exist, 1 arXiv:2502.04649v1 [cs.SY] 7 Feb 2025"
+}

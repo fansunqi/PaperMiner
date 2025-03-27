@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep Neural Network Layer Dynamics",
+    "Layer Aggregation",
+    "Image Classification",
+    "Object Detection",
+    "Instance Segmentation"
+  ],
+  "datasets": [
+    "ImageNet",
+    "MS COCO 2017"
+  ],
+  "methods": [
+    "Selective State Space Model (S6)",
+    "Selective State Space Model Layer Aggregation (S6LA)",
+    "ResNet",
+    "Vision Transformers (ViT)"
+  ],
+  "results": [
+    "Top-1 accuracy improvement by nearly 2% compared to vanilla ResNet models",
+    "Top-1 accuracy improvement by nearly 1.5% compared to vanilla ViT backbones",
+    "Significant improvements in object detection and instance segmentation tasks"
+  ],
+  "title": "From Layers to States A State Space Model Perspective to Deep Neural Network Layer Dynamics.pdf",
+  "abstract": "The depth of neural networks is a critical factor for their capability, with deeper models often demonstrating superior performance. Motivated by this, significant efforts have been made to enhance layer aggregation - reusing information from previous layers to better extract features at the current layer, to improve the repre- sentational power of deep neural networks. However, previous works have primar- ily addressed this problem from a discrete-state perspective which is not suitable as the number of network layers grows. This paper novelly treats the outputs from layers as states of a continuous process and considers leveraging the state space model (SSM) to design the aggregation of layers in very deep neural networks. Moreover, inspired by its advancements in modeling long sequences, the Selec- tive State Space Models (S6) is employed to design a new module called Selec- tive State Space Model Layer Aggregation (S6LA). This module aims to combine traditional CNN or transformer architectures within a sequential framework, en- hancing the representational capabilities of state-of-the-art vision networks. Ex- tensive experiments show that S6LA delivers substantial improvements in both image classification and detection tasks, highlighting the potential of integrating SSMs with contemporary deep learning techniques. 1 INTRODUCTION In recent years, the depth of neural network architectures has emerged as a crucial factor influencing performance across various domains, including computer vision, natural language processing, and speech recognition. The network models are capable of capturing increasingly complex features and representations from data as they become deeper, and various methods have emerged to utilize larger numbers of layers to improve performance. For instance, the VGG network (Simonyan & Zisser- man, 2015) achieves higher classification accuracy by increasing the number of layers, although its foundation primarily relies on empirical results rather than systematical analysis. Other significant advancements, such as those demonstrated by CNNs (He et al., 2016a; Ren et al., 2016; Tan & Le, 2020) and Transformers (Brown, 2020; Dosovitskiy, 2020; Touvron et al., 2021; Liu et al., 2021; Wang et al., 2022), showcase how deeper architectures can enhance accuracy and generalization. Growing evidence indicates that strengthening layer interactions can encourage the information flow of a deep neural network. For CNN-based networks, ResNet (He et al., 2016a) employed skip connections, allowing gradients to flow more easily by connecting non-adjacent layers. DenseNet (Huang et al., 2018) extended this concept further by enabling each layer to access all preceding lay- ers within a stage, fostering a rich exchange of information. Later, GLOM (Hinton, 2023) proposed an intensely interactive architecture that incorporates bottom-up, top-down, and same-level connec- tions to effectively represent part-whole hierarchies. Recently, some studies have begun to frame \u2217Authors contributed equally. \u2020 Corresponding author. 1 arXiv:2502.10463v1 [cs.LG] 12 Feb 2025"
+}

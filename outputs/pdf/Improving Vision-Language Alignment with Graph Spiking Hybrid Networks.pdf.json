@@ -1,0 +1,57 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision-language (VL) alignment"
+  ],
+  "datasets": [
+    "VG",
+    "MSCOCO",
+    "VQAv2",
+    "VQA-CP v2",
+    "GQA",
+    "SNLI-VE",
+    "NLVR2",
+    "Flickr30K",
+    "MSCOCO (1K)",
+    "SNLI-VE",
+    "NLVR2",
+    "COCO",
+    "Flickr30k (1K)"
+  ],
+  "methods": [
+    "Panoptic segmentation",
+    "Graph Spiking Hybrid Network (GSHN)",
+    "Spiking Neural Networks (SNNs)",
+    "Graph Attention Networks (GATs)",
+    "Contrastive learning (CL)",
+    "Spiked Text Learning (STL)",
+    "Transformer",
+    "BERT tokenizer",
+    "ImageNet initialization",
+    "ResNet-101",
+    "DeepLab",
+    "Mask R-CNN",
+    "NMS",
+    "SGD optimizer",
+    "AdamW optimizer",
+    "LIF",
+    "tanh",
+    "STBP-tdBN",
+    "ITM",
+    "MLM",
+    "CL",
+    "Focal loss"
+  ],
+  "results": [
+    "VQA: 73.39% and 73.56% on dev and std sets",
+    "VQA-CP v2: 58.95% accuracy",
+    "GQA: 65.09% and 64.45% on dev and std sets",
+    "ITR: R@1, R@5, R@10 on MSCOCO and Flickr30k",
+    "VE: 89.22% and 89.61% on test and val",
+    "VR: 84.85% and 84.57% on test-P and dev"
+  ],
+  "title": "Improving Vision-Language Alignment with Graph Spiking Hybrid Networks.pdf",
+  "abstract": "\u2014To bridge the semantic gap between vision and lan- guage (VL), it is necessary to develop a good alignment strategy, which includes handling semantic diversity, abstract representa- tion of visual information, and generalization ability of models. Recent works use detector-based bounding boxes or patches with regular partitions to represent visual semantics. While current paradigms have made strides, they are still insufficient for fully capturing the nuanced contextual relations among various objects. This paper proposes a comprehensive visual semantic representation module, necessitating the utilization of panoptic segmentation to generate coherent fine-grained semantic features. Furthermore, we propose a novel Graph Spiking Hybrid Network (GSHN) that integrates the complementary advantages of Spiking Neural Networks (SNNs) and Graph Attention Networks (GATs) to encode visual semantic information. Intriguingly, the model not only encodes the discrete and continuous latent variables of instances but also adeptly captures both local and global contextual features, thereby significantly enhancing the richness and diversity of semantic representations. Leveraging the spa- tiotemporal properties inherent in SNNs, we employ contrastive learning (CL) to enhance the similarity-based representation of embeddings. This strategy alleviates the computational overhead of the model and enriches meaningful visual representations by constructing positive and negative sample pairs. We design an innovative pre-training method, Spiked Text Learning (STL), which uses text features to improve the encoding ability of discrete semantics. Experiments show that the proposed GSHN exhibits promising results on multiple VL downstream tasks. Index Terms\u2014Vision-language (VL), Graph attention network (GAT), Spiking neural network (SNN), Semantic representation. I. INTRODUCTION V ISION-language (VL) aligned representation is one of the serious challenges within the current multimodal domain, which aims to encode image and text features and map them into a shared space, facilitating robust cross-modal semantic comprehension and interaction. VL-based multi- modal interaction technology has been successfully applied in dialogue systems, autonomous driving, and assisted medi- cal. In recent years, substantial advancements in Transformer and self-supervised learning have promoted the emergence of a large number of methods based on vision-language pre-training (VLP). VLP, as an important training paradigm, promotes cross-modal representation of large-scale image- text pairs. It has a wide range of downstream application Siyu Zhang, Yiming Wu, and Yeming Chen are with the Depart- ment of Computer Science and Technology, Tongji University, Shang- hai 201804, China (e-mail: zsyzsy@tongji.edu.cn; 2130769@tongji.edu.cn; 2410937@tongji.edu.cn). Heming Zheng is with Department of Automation, Northeastern University, Shenyang 110819, China (e-mail: hemingzheng2006@163.com). \u2217Corresponding author. potentials, such as Visual Question Answering (VQA) [1], Visual Entailment (VE) [2], Image-Text Retrieval (ITR) [3], and Natural Language Visual Reasoning (NLVR) [4]. The core of the VLP paradigm is modal fusion, which includes intra-modal and inter-modal fusion. The fusion mode can be categorized into two types: i) Dual-stream model, which integrates two independent unimodal encoders to process VL information separately. ii) Single-stream model, which aims to learn a unified representation of VL and subsequently input them into the Transformer. This model omits the architectural design of the fusion process in the dual-stream model, which is the strategy adopted by most current VLP models [5]. Early visual embeddings relied on box-level features from predefined detectors [6]. However, this method has some issues that cannot be ignored. First, the coarse box-level representation contains redundant information such as noise or blurred pixels (i.e., overlapping boundaries). Second, the interaction between boxes is prone to interference from irrelevant backgrounds, making it difficult to provide the accurate localization of objects. Third, the local features at the box level are inadequate for predicting the holistic scene of the image, thereby hinder- ing the effective modeling of contextual semantic relations. Recently, some works [7], [8] have tried to exploit grid fea- tures as a means to transcend the aforementioned limitations. Subsequently, ViLT [9] is inspired by ViT [10] and introduced patch features as image embeddings. Unlike grid features, image patches are directly linearly projected to improve model efficiency. Although these embedding techniques have made good progress owing to diverse tokenization strategies, they still encounter limitations in semantic understanding. On the one hand, complex image tokenization is different from lan- guage tokens that are discrete and one-dimension arranged. This inherent distribution difference between multimodalities should not be ignored. On the other hand, embedding lengthy visual sequences from high-dimensional space significantly increases the computational burden. Given this, we believe that learning good visual representation is a key factor in aligning VL semantics. In this article, we propose a novel visual semantic encoding module. Ideally, the salient regions and relations of different instances should be presented com- prehensively and clearly to facilitate visual comprehension. To this end, we propose to adopt panoptic segmentation [11] to capture fine-grained image features and use them as vector tokens for subsequent embedding. To model local and global contextual relations, we construct an interwoven Graph Spiking Hybrid Network (GSHN). On the one hand, GSHN possesses a significant sparsity of SNNs and naturally generates sparse attention coefficients for efficient feature arXiv:2501.19069v1 [cs.CV] 31 Jan 2025"
+}

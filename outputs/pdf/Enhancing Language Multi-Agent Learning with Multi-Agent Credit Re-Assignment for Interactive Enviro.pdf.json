@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/THUNLP-MT/CollabUIAgents"
+  ],
+  "tasks": [
+    "Multi-Agent Reinforcement Learning",
+    "Interactive Environment Generalization"
+  ],
+  "datasets": [
+    "AndroidWorld",
+    "MobileMiniWoB++",
+    "Mind2Web",
+    "AutoWebBench"
+  ],
+  "methods": [
+    "Credit Re-Assignment",
+    "Agentic Fine-Tuning",
+    "Edge Updates"
+  ],
+  "results": [
+    "Improved performance and generalization",
+    "Comparable to GPT-4 in unseen environments"
+  ],
+  "title": "Enhancing Language Multi-Agent Learning with Multi-Agent Credit Re-Assignment for Interactive Enviro.pdf",
+  "abstract": "LLM-based agents have made significant ad- vancements in interactive environments, such as mobile operations and web browsing, and other domains beyond computer using. Current multi-agent systems universally excel in perfor- mance, compared to single agents, but struggle with generalization across environments due to predefined roles and inadequate strategies for generalizing language agents. The chal- lenge of achieving both strong performance and good generalization has hindered the progress of multi-agent systems for interactive envi- ronments. To address these issues, we pro- pose CollabUIAgents, a multi-agent reinforce- ment learning framework with a novel multi- agent credit re-assignment (CR) strategy, as- signing process rewards with LLMs rather than environment-specific rewards and learning with synthesized preference data, in order to foster generalizable, collaborative behaviors among the role-free agents\u2019 policies. Empirical results show that our framework improves both per- formance and cross-environment generalizabil- ity of multi-agent systems. Moreover, our 7B- parameter system achieves results on par with or exceed strong closed-source models, and the LLM that guides the CR. We also provide in- sights in using granular CR rewards effectively for environment generalization, and accommo- dating trained LLMs in multi-agent systems. Our data and code are available at https:// github.com/THUNLP-MT/CollabUIAgents. 1 Introduction Autonomous agents have made substantial progress in interactive environments, such as mobile oper- ations and web browsing, by leveraging large lan- guage models (LLMs). These agents hold immense potential not only to automate repetitive tasks but also to enhance decision-making and streamline *Equal contribuation. \u2020Work done at Institute for AI Industry Research (AIR), Tsinghua University. complex workflows. As a result, they can free up human resources for higher-level problem-solving and innovation. The increasing interest in devel- oping such agents is evident in the growing body of work on, for instance, mobile (Rawles et al., 2023, 2025; Zhang et al., 2024b; Deng et al., 2024a; Wang et al., 2024c), web browsing (Shi et al., 2017; Liu et al., 2018a; Yao et al., 2022; Zhou et al., 2024a; Deng et al., 2023, 2024b), and computer us- ing environments (Xie et al., 2024; Sun et al., 2024), and LLM-based agents targeting on these tasks, in- cluding single-agent (Yan et al., 2023; Wang et al., 2024b; Hong et al., 2024b; Cheng et al., 2024a; Hu et al., 2024; Zhang et al., 2025) and multi-agent systems (Wang et al., 2024a; Zhou et al., 2023; Liu et al., 2024; Zhang et al., 2024c). However, current efforts in language agent learn- ing still face challenges to balance both perfor- mance and generalizability across interactive envi- ronments. (1) Single-agent learning methods (Chen et al., 2023; Gur et al., 2024; Furuta et al., 2024; Bai et al., 2024) heavily relies on in-domain supervised data or rewarding signals to improve environment- specific performance, which restricts its generaliza- tion across environments, such as transitioning be- tween web environments using HTML and mobile environments using Android automator. (2) De- spite being trained on vast amounts of data from di- verse domains, single agents based on open-source LLMs (Zeng et al., 2024; Zhang et al., 2024a; Yin et al., 2024; Liu et al., 2025) demonstrate only moderate generalization capabilities and lag behind closed-source models. (3) Although multi-agent learning methods (Qiao et al., 2024; Liang et al., 2024) have better performance, existing ones are of- ten constrained by rigid role assignments and lack dedicated designs for generalization, which limits their adaptability to unseen environments, e.g., an agent designed to retrieve documents for question answering is not feasible to handle mobile opera- tions. In short, it is still unclear how to achieve arXiv:2502.14496v1 [cs.CL] 20 Feb 2025"
+}

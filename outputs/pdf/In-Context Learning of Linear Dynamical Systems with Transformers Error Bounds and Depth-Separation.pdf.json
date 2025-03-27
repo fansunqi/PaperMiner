@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "In-context learning of linear dynamical systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Linear transformer",
+    "Depth-separation"
+  ],
+  "results": [
+    "Upper bound on the approximation error of multi-layer transformers",
+    "Non-diminishing lower bound on the approximation error for single-layer linear transformers"
+  ],
+  "title": "In-Context Learning of Linear Dynamical Systems with Transformers Error Bounds and Depth-Separation.pdf",
+  "abstract": "This paper investigates approximation-theoretic aspects of the in-context learning capa- bility of the transformers in representing a family of noisy linear dynamical systems. Our \ufb01rst theoretical result establishes an upper bound on the approximation error of multi-layer transformers with respect to an L2-testing loss uniformly de\ufb01ned across tasks. This result demonstrates that transformers with logarithmic depth can achieve error bounds compa- rable with those of the least-squares estimator. In contrast, our second result establishes a non-diminishing lower bound on the approximation error for a class of single-layer lin- ear transformers, which suggests a depth-separation phenomenon for transformers in the in-context learning of dynamical systems. Moreover, this second result uncovers a critical distinction in the approximation power of single-layer linear transformers when learning from IID versus non-IID data. Keywords: In-context learning, linear transformer, depth-separation, linear dynamical system 1 Introduction Transformers Vaswani (2017) have achieved remarkable success in natural language process- ing, driving the success of modern large language models such as ChatGPT Achiam et al. (2023). The impressive capabilities of transformers in NLP tasks has spurred their adoption across diverse domains beyond NLP, such as computer vision Li et al. (2023); Khan et al. (2022); Chen et al. (2020); Ramesh et al. (2021), computational biology Jumper et al. (2021); Choi and Lee (2023), physical modeling Batatia et al. (2023); McCabe et al. (2023); Subramanian et al. (2024); Ye et al. (2024), among others. At a high level, transformers are autoregressive sequence-to-sequence models: the input of a transformer is a sequence of tokens (e1, . . . , eT ), and the output is a corresponding sequence (y1, . . . , yT ) where yt is only a function of the previous tokens (e1, . . . , et). A par- ticularly intriguing property of transformers is their ability to perform in-context learning: pre-trained transformers are able to make accurate predictions on unseen sequences, even those beyond the support of their pre-training distribution, without any parameter updates. \u2217. 206 Church St. SE, School of Mathematics, University of Minnesota, Minneapolis, MN 55455 1"
+}

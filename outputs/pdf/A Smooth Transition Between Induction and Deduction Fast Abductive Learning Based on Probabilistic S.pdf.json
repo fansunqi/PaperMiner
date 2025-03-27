@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Abductive Learning"
+  ],
+  "datasets": [
+    "DBA",
+    "RBA",
+    "HMS"
+  ],
+  "methods": [
+    "Probabilistic Symbol Perception",
+    "Sequence-based Symbol Perception",
+    "Neural Networks",
+    "LSTM"
+  ],
+  "results": [
+    "ACCITtotal: 96.67%",
+    "ACCbest: 96.67%",
+    "CR: 0.00",
+    "Taca: 50",
+    "Tacc: 550"
+  ],
+  "title": "A Smooth Transition Between Induction and Deduction Fast Abductive Learning Based on Probabilistic S.pdf",
+  "abstract": "Abductive learning (ABL) that integrates strengths of machine learning and logical reasoning to improve the learning generalization, has been recently shown effective. However, its efficiency is affected by the transition between numerical induction and symbolical deduction, leading to high computational costs in the worst-case scenario. Efforts on this issue remain to be limited. In this paper, we identified three reasons why previous optimization algorithms for ABL were not effective: insufficient utilization of prediction, symbol relationships, and accumulated experience in successful abductive processes, resulting in redundant calculations to the knowledge base. To address these challenges, we introduce an optimization algorithm named as Probabilistic Symbol Perception (PSP), which makes a smooth transition between induction and deduction and keeps the correctness of ABL unchanged. We leverage probability as a bridge and present an efficient data structure, achieving the transfer from a continuous probability sequence to discrete Boolean sequences with low computational complexity. Experiments demonstrate the promising results. Keywords Abductive Learning, Neuro-Symbolic Learning, Citation A Smooth Transition Between Induction and Deduction: Fast Abductive Learning Based on Probabilistic Symbol Perception. Sci China Inf Sci, for review 1 Introduction The relationship between empirical inductive learning and rational deductive logic has been a frequently discussed philosophical question throughout human history. In recent years, this issue has also emerged in the field of artificial intelligence (AI), manifesting as the challenge of integrating machine learning and logical reasoning, two relatively independent technologies. Many efforts have focused on this integration issue. Neuro-symbolic (NeSy) learning [13] proposes to enhance neural networks with symbolic reasoning. However, it requires lots of labeled training data and is difficult to extrapolate. Probabilistic Logic Program (PLP) [11] is a heavy-reasoning light-learning way because the most workload is to be finished by logical reasoning though some elements of machine learning are introduced. Statistical Relational Learning (SRL) [12] is a heavy-learning light-reasoning way in opposite. DeepProbLog [14], which unifies probabilistic logical inference with neural networks but with exponential complexity of probabilistic distributions on the Herbrand base. In order to better integrate the advantages of both fields, Abductive Learning (ABL) [6] is introduced to allow to infer labels that are consistent with some prior knowledge by reasoning over high-level concepts. It is a recent generic and effective framework that bridges any kind of machine learning algorithms and logical reasoning by minimizing the inconsistency between the pseudo labels obtained from machine learning and logical reasoning. The inconsistency value is calculated by a designed distance function. However, the efficiency in previous ABL studies as well as NeSy approaches is affected by the transition between numerical induction and symbolical deduction, leading to high computational costs in the worst-case scenario. A smooth transition to bridge the calculations in two fields will be important. In ABL, the logic reasoning module takes the unreliable parts of the symbols predicted by the machine learning model as variables, while treating the reliable parts as constants. Connecting the rules in the knowledge base, it then uses the reliable parts to infer the corrected symbols for the unreliable parts and feeds these back to the machine learning model for updating. Therefore, this can be seen as an optimization problem, where the optimization variables are Boolean variables that determine * Corresponding author (email: guolz@lamda.nju.edu.cn, liyf@lamda.nju.edu.cn) arXiv:2502.12919v1 [cs.LG] 18 Feb 2025"
+}

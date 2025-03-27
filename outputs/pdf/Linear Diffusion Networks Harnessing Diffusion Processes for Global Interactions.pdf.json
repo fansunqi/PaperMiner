@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/rubberduck529/diffurnn/"
+  ],
+  "tasks": [
+    "Sequence Modeling",
+    "Temporal Evolution Modeling"
+  ],
+  "datasets": [
+    "ImageNet",
+    "CIFAR-10",
+    "GLUE"
+  ],
+  "methods": [
+    "Diffusion Processes",
+    "Unified Diffusion Framework",
+    "Adaptive Diffusion Modules",
+    "Local Nonlinear Updates",
+    "Diffusion-Inspired Attention Mechanism"
+  ],
+  "results": [
+    "Superior performance and scalability on benchmark sequence modeling tasks",
+    "Higher accuracy with reduced model complexity and computational cost",
+    "Competitive with popular NLP models like BERT and RoBERTa"
+  ],
+  "title": "Linear Diffusion Networks Harnessing Diffusion Processes for Global Interactions.pdf",
+  "abstract": "Diffusion kernels capture global dependencies. We present DiffuRNN, a novel ar- chitecture that reinterprets sequential data processing as a unified diffusion process. Our model integrates adaptive diffusion modules with localized nonlinear updates and a diffusion-inspired attention mechanism. This design enables efficient global information propagation while preserving fine-grained temporal details. DiffuRNN overcomes the limitations of conventional recurrent and transformer models by allowing full parallelization across time steps and supporting robust multi-scale temporal representations. Experiments on benchmark sequence modeling tasks demonstrate that DiffuRNN delivers superior performance and scalability, setting a new standard for global interaction in sequential data. 1 Introduction Sequence modeling lies at the core of numerous applications, ranging from natural language process- ing to time-series forecasting. Traditional recurrent neural networks (RNNs) such as LSTM Hochreiter and Schmidhuber [1997] have shown impressive capabilities; however, their sequential nature limits parallelization and hampers long-range dependency modeling. Recent transformer models Vaswani et al. [2017] have addressed some of these issues by leveraging self-attention to capture global inter- actions, but they often incur high computational costs and struggle with subtle temporal dynamics. In response to these challenges, we propose DiffuRNN, a novel recurrent architecture that models temporal evolution as a diffusion process. By reinterpreting hidden state updates as a blend of gradual diffusion and local nonlinear transformations, our method naturally propagates information across all time steps. This innovative approach not only facilitates full parallelization but also ensures that each token\u2019s representation is enriched by contributions from the entire sequence. The key contributions of our work are threefold: \u2022 We formulate a unified diffusion framework that combines continuous, diffusive updates with discrete attention mechanisms, thereby achieving both global interaction and local sensitivity. \u2022 We provide theoretical guarantees that our diffusion operations preserve global interactions, ensuring that every token contributes to the final representation. \u2022 We empirically demonstrate the efficacy of DiffuRNN on diverse sequential tasks, where it outperforms traditional RNNs and recent transformer-based models in terms of efficiency and performance. By bridging the gap between efficient computation and robust representation learning, DiffuRNN represents a significant step forward in the field of sequential modeling. Preprint. Under review. arXiv:2502.12381v1 [cs.LG] 17 Feb 2025"
+}

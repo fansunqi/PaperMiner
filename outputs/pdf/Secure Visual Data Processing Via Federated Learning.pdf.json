@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Secure Visual Data Processing"
+  ],
+  "datasets": [
+    "Open Images Dataset V6"
+  ],
+  "methods": [
+    "Federated Learning",
+    "Object Detection",
+    "Anonymization"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Secure Visual Data Processing Via Federated Learning.pdf",
+  "abstract": "As the demand for privacy in visual data management grows, safeguarding sensitive information has become a critical challenge. This paper addresses the need for privacy-preserving solutions in large-scale visual data processing by leveraging federated learning. Although there have been developments in this field, previous research has mainly focused on integrating object detection with either anonymization or federated learning. However, these pairs often fail to address complex privacy concerns. On the one hand, object detection with anonymization alone can be vulnerable to reverse techniques. On the other hand, federated learning may not provide sufficient privacy guarantees. Therefore, we propose a new approach that combines object detection, federated learning and anonymization. Combining these three components aims to offer a robust privacy protection strategy by addressing different vulnerabilities in visual data. Our solution is evaluated against traditional centralized models, showing that while there is a slight trade-off in accuracy, the privacy benefits are substantial, making it well-suited for privacy sensitive applications. 1 INTRODUCTION The exponential growth of visual data has raised nu- merous privacy concerns related to sensitive informa- tion embedded within the content. These concerns are particularly evident in healthcare, surveillance, social media and autonomous vehicles, where large amounts of personal and identifiable data are generated and processed. Many regulatory frameworks have been created to protect sensitive information, namely, the General Data Protection Regulation (GDPR) is the standard privacy regulation that has influenced data protection laws worldwide. This regulation requires that personal data should be processed in a way that ensures its privacy, particularly when handling data that may contain identifiable information. However, conventional solutions for managing vi- sual information focus on applying machine learn- ing approaches in centralized processing. This cen- tralization involves sending and storing the data in a single location for further analysis, which often ex- poses the sensitive information in these systems to unauthorized access (Shokri and Shmatikov, 2015). Additionally, even considering anonymization tech- a https://orcid.org/0009-0002-8601-7905 b https://orcid.org/0000-0002-7700-1955 c https://orcid.org/0000-0002-9988-594X niques, these may be insufficient, particularly in terms of their inability to prevent sophisticated attacks such as model inversion and adversarial attacks, which can expose sensitive information from images and videos despite anonymization or encryption efforts (Fredrik- son et al., 2015; Goodfellow et al., 2014). These data breaches may cause severe consequences for in- dividuals and financial losses for organizations. Be- sides the privacy threats in data centralization, the vast quantity of visual data renders manual processing im- practical, creating scalability challenges in real-time applications, which traditional approaches cannot ad- equately address (Bharati et al., 2022). Federated Learning (FL) (McMahan et al., 2023) emerges as a compelling approach to tackling these challenges. By enabling the training of Artificial Intelligence (AI) models across decentralized data sources without the transfer of the actual data, FL in- herently enhances privacy. Thus, we aim to leverage AI for visual data labelling within a FL framework. Despite the recent advances in FL, the integra- tion of FL with AI-driven visual data management tools, particularly those focused on labelling and anonymization, remains under-explored. Namely, ex- isting research tends to focus on either anonymization techniques (Andrade, 2024) or federated learning for privacy preservation (Yu and Liu, 2019), but rarely arXiv:2502.06889v1 [cs.CV] 9 Feb 2025"
+}

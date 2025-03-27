@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Time series anomaly detection"
+  ],
+  "datasets": [
+    "MSL",
+    "SMAP",
+    "SMD",
+    "SWaT",
+    "GECCO",
+    "SWAN",
+    "UCR",
+    "Yahoo-A1",
+    "KPI"
+  ],
+  "methods": [
+    "TCN-VAE",
+    "variational autoencoder",
+    "latent space perturbation",
+    "patching mechanism",
+    "triplet loss",
+    "KL divergence loss"
+  ],
+  "results": [
+    "GenIAS achieves the highest average ARP ranking",
+    "GenIAS achieves significantly better overall TSAD performance compared to the baseline methods across all metrics"
+  ],
+  "title": "GenIAS Generator for Instantiating Anomalies in Time Series.pdf",
+  "abstract": "A recent and promising approach for building time series anomaly detection (TSAD) models is to inject synthetic samples of anom- alies within real data sets. The existing injection mechanisms have significant limitations \u2014 most of them rely on ad hoc, hand-crafted strategies which fail to capture the natural diversity of anomalous patterns, or are restricted to univariate time series settings. To ad- dress these challenges, we design a generative model for TSAD using a variational autoencoder, which is referred to as a Generator for Instantiating Anomalies in Time Series (GenIAS). GenIAS is designed to produce diverse and realistic synthetic anomalies for TSAD tasks. By employing a novel learned perturbation mechanism in the latent space and injecting the perturbed patterns in differ- ent segments of time series, GenIAS can generate anomalies with greater diversity and varying scales. Further, guided by a new triplet loss function, which uses a min-max margin and a new variance- scaling approach to further enforce the learning of compact normal patterns, GenIAS ensures that anomalies are distinct from normal samples while remaining realistic. The approach is effective for both univariate and multivariate time series. We demonstrate the diversity and realism of the generated anomalies. Our extensive experiments demonstrate that GenIAS \u2014 when integrated into a TSAD task \u2014 consistently outperforms seventeen traditional and deep anomaly detection models, thereby highlighting the potential of generative models for time series anomaly generation. Keywords Anomaly generator, Time series, Anomaly detection ACM Reference Format: Zahra Zamanzadeh Darban, Qizhou Wang, Geoffrey I. Webb, Shirui Pan, Charu C. Aggarwal, and Mahsa Salehi. 2025. GenIAS: Generator for Instan- tiating Anomalies in time Series. https://doi.org/10.1145/nnnnnnn.nnnnnnn 1 Introduction Unsupervised methods for Time Series Anomaly Detection (TSAD) often learn a model for boundary of normal data without access to labeled anomalies. This reliance on normal data makes models vul- nerable to unseen or diverse anomaly patterns, which are common in time series settings. This is particularly true in complex multi- variate scenarios, where anomalous patterns may vary significantly across different dimensions or even be correlated. Anomaly injection techniques are an increasingly popular ap- proach to address the limitations of solely relying on normal-boundary learning. Models like CARLA [6], CutAddPaste [27], NCAD [5], and COUTA [31] have demonstrated the potential of synthetic anom- aly injection in improving detection capabilities. However, these models face notable limitations. CARLA, CutAddPaste, and COUTA are restricted to predefined anomaly types, such as point, seasonal, trend, and shapelet anomalies. CutAddPaste further employs a rigid augmentation strategy (of \u201ccut-add-paste\u201d), which may not align well with realistic patterns in complex applications. NCAD, on the other hand, relies on prior knowledge about anomalies to generate realistic anomalies. However, it is limited by the anomalies present in the datasets and hence may not be able to generate diverse types of anomalies. Finally, all the existing anomaly injection models are susceptible to slight variations in the time series, as they generate anomalies in the raw time series space. We address these gaps by introducing the Generator for Instanti- ating Anomalies in Time Series (GenIAS), a novel generative model designed to produce diverse and realistic synthetic anomalies for TSAD. In contrast to previous approaches, GenIAS operates in the latent space rather than the raw time series space. This makes it less susceptible to minor variations in the raw time series and allows it to learn more generalized normal patterns. While generative mod- els mainly used to generate normal data, we are able to leverage the power of variational neural models to generate anomalies that align well with the temporal properties of time series, and with cor- relations between variables if the input time series is multivariate. GenIAS builds upon a hybrid Temporal Convolutional Network- Variational Autoencoder (TCN-VAE) architecture to move beyond rigid, handcrafted augmentation strategies and maps the complex properties of time series data into a multidimensional latent space. By employing a learned perturbation mechanism applied to the latent space variance and injecting the perturbed patterns into dif- ferent segments of the time series using a patching mechanism, GenIAS generates anomalies with varying scales and enhanced diversity, resulting in more realistic anomaly patterns. We use the term realism to refer to realistic anomaly patterns in this paper. Additionally, we employ an adjusted triplet loss function, guided by a min-max margin to guarantee that the generated anomalies are both distinct from normal data and realistic at the same time. Further, we introduce a novel variance-scaling approach, which enforces the compactness of latent representations, making the generated anomalies more distinguishable from normal samples. We demonstrate the effectiveness of GenIAS when extended as a TSAD model. Our key contributions are as follows: arXiv:2502.08262v1 [cs.LG] 12 Feb 2025"
+}

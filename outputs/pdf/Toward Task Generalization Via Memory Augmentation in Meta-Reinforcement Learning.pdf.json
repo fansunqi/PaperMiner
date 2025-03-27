@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Legged Locomotion Control",
+    "Position Tracking",
+    "Velocity Tracking",
+    "Joint Failure",
+    "Payload Distribution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Memory Augmentation",
+    "Task-Structured Augmentation",
+    "RNN",
+    "Proximal Policy Optimization (PPO)",
+    "Symmetry Transformation"
+  ],
+  "results": [
+    "Zero-shot Generalization to OOD tasks",
+    "Maintains robust ID performance",
+    "Higher sample efficiency than domain randomization",
+    "Comparable performance to domain randomization"
+  ],
+  "title": "Toward Task Generalization Via Memory Augmentation in Meta-Reinforcement Learning.pdf",
+  "abstract": "\u2014In reinforcement learning (RL), agents often struggle to perform well on tasks that differ from those encountered during training. This limitation presents a challenge to the broader deployment of RL in diverse and dynamic task settings. In this work, we introduce memory augmentation, a memory- based RL approach to improve task generalization. Our approach leverages task-structured augmentations to simulate plausible out- of-distribution scenarios and incorporates memory mechanisms to enable context-aware policy adaptation. Trained on a predefined set of tasks, our policy demonstrates the ability to generalize to unseen tasks through memory augmentation without requiring additional interactions with the environment. Through extensive simulation experiments and real-world hardware evaluations on legged locomotion tasks, we demonstrate that our approach achieves zero-shot generalization to unseen tasks while maintaining robust in-distribution performance and high sample efficiency. I. INTRODUCTION Reinforcement learning (RL) has made significant strides in training agents to perform complex tasks [1, 2, 3, 4, 5], achieving high performance in controlled settings. However, RL agents often struggle when faced with tasks outside their training distribution\u2014a limitation known as the out-of- distribution (OOD) generalization challenge. This limitation restricts the applicability of RL policies to a broader range of tasks beyond those explicitly encountered during training [6, 7]. A common way to address this challenge is to increase train- ing diversity to better encompass potential testing conditions. Domain randomization [8, 9, 10], for instance, achieves this by varying environment parameters, thereby exposing agents to a wide range of scenarios during training. However, as the extent of randomization increases, this method often suffers from reduced sample efficiency [11]. Additionally, increased variations during training can result in over-conservative strategies, especially in environments where these variations are not fully observable. In such settings, the agent may struggle to discern the current task parameterizations and only executes conservative moves, thereby sacrificing optimality. This raises a crucial question: how can an RL agent achieve robust performance across diverse environment variations, or tasks, without being explicitly exposed to them during training? A promising method to improve the generalization of the policy is through experience augmentation [12], where training experiences are augmented to simulate a broader range of potential test-time conditions. However, pure augmentation, 1Department of Mechanical and Process Engineering, ETH Zurich, Switzer- land. 2ETH AI Center, ETH Zurich, Switzerland. 3Department of Computer Science, ETH Zurich, Switzerland. {kaibao, chenhli, yardas, krausea, mahutter}@ethz.ch Fig. 1: Improving task generalization through memory aug- mentation. Top row: RL agents often struggle with tasks not encountered during training, leading to poor performance. Middle row: Experience augmentation expands the range of training scenarios to include potential test-time tasks; however, in partially observable settings, agents may fail to identify the current task parameterizations, resulting in over-conservative behavior. Bottom row: Incorporating memory mechanisms enables agents to infer task context, facilitating context-aware decision-making and improved adaptability. without properly accounting for task context, may similarly cause over-conservativeness resulting from exposing the policy to excessive unobservable variations. Building on the contextual modeling capability of Recurrent Neural Networks (RNNs), which have been shown to effectively address partial observ- ability [13], we enhance experience augmentation in RL by incorporating memory mechanisms that respect the necessary task context, as shown in Fig. 1. In this work, we introduce memory augmentation, a novel approach to improve task generalization by augmenting training experience to simulate plausible OOD tasks and incorporating memory mechanisms to facilitate zero-shot task adaptation. Our approach trains a single unified policy that can perform well across both in-distribution (ID) and unseen OOD tasks. In summary, our contributions include: \u2022 We propose memory augmentation, a novel approach to improve task generalization without additional interactions with the environment. \u2022 We validate our approach across a variety of legged locomotion experiments. Results demonstrate that our memory-augmented policies generalize effectively to un- seen OOD tasks while maintaining robust ID performance. arXiv:2502.01521v1 [cs.LG] 3 Feb 2025"
+}

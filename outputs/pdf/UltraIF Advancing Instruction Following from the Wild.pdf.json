@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/kkk-an/UltraIF"
+  ],
+  "tasks": [
+    "Instruction following"
+  ],
+  "datasets": [
+    "ShareGPT",
+    "OpenHermes2.5",
+    "No Robots"
+  ],
+  "methods": [
+    "UltraComposer",
+    "Instruction Decomposition",
+    "Evaluation Question Generation",
+    "Supervised Fine-tuning",
+    "Iterative DPO"
+  ],
+  "results": [
+    "LLaMA-3.1-8B-Base\u6a21\u578b\u6027\u80fd\u63d0\u5347\u81f3LLaMA-3.1-8B-Instruct\u6c34\u5e73",
+    "\u5728\u591a\u4e2a\u6307\u4ee4\u9075\u5faa\u57fa\u51c6\u6d4b\u8bd5\u4e2d\u8d85\u8d8a\u6240\u6709\u57fa\u7ebf",
+    "\u5728\u6570\u5b66\u3001\u63a8\u7406\u3001\u7f16\u7801\u548c\u5bf9\u8bdd\u7b49\u9886\u57df\u7684\u901a\u7528\u80fd\u529b\u63d0\u5347"
+  ],
+  "title": "UltraIF Advancing Instruction Following from the Wild.pdf",
+  "abstract": "Instruction-following made modern large lan- guage models (LLMs) helpful assistants. How- ever, the key to taming LLMs on complex in- structions remains mysterious, for that there are huge gaps between models trained by open-source community and those trained by leading com- panies. To bridge the gap, we propose a sim- ple and scalable approach ULTRAIF for building LLMs that can follow complex instructions with open-source data. ULTRAIF first decomposes real-world user prompts into simpler queries, con- straints, and corresponding evaluation questions for the constraints. Then, we train an UltraCom- poser to compose constraint-associated prompts with evaluation questions. This prompt com- poser allows us to synthesize complicated instruc- tions as well as filter responses with evaluation questions. In our experiment, for the first time, we successfully align LLaMA-3.1-8B-Base to catch up with its instruct version on 5 instruction- following benchmarks without any benchmark information, using only 8B model as response generator and evaluator. The aligned model also achieved competitive scores on other benchmarks. Moreover, we also show that ULTRAIF could further improve LLaMA-3.1-8B-Instruct through self-alignment, motivating broader use cases for the method. Our code will be available at https: //github.com/kkk-an/UltraIF. 1. Introduction Large language models (Meta, 2024; OpenAI, 2024) have demonstrated remarkable capabilities, especially in follow- ing complex instructions. While modeling such ability is crucial, the technical details and the instruction datasets used in state-of-the-art LLMs remain mysterious. For exam- ple, LLaMA3 (Meta, 2024) reportedly leverages instruction- following data at the tens of millions scale but has not been *Equal contribution 1Shanghai AI Lab 2Peking Univer- sity 3Tsinghua University. Correspondence to: Ganqu Cui <cuiganqu@pjlab.org.cn>, Baobao Chang <chbb@pku.edu.cn>. LLaMA-3.1-8B- Instruct AutoIF LLaMA-3.1-8B- Base UltraIF (Ours)scale IFEval 50 55 75 60 65 70 80 Multi-IF 30 35 40 45 50 55 UltraIF(Ours) Conifer Evol-Instruct Figure 1. Instruction-following performance comparison of UL- TRAIF against baselines on IFEval and MultiIF. open-sourced. This lack of transparency has resulted in a significant gap between the research community and the leading companies. Recent efforts in aligning LLMs to follow instructions have focused on creating high-quality instruction-following data. On the one hand, Wei et al. (2021); Rajani et al. (2023); Jiang et al. (2023) involve human annotators in developing instructions and manually crafting corresponding responses. While effective, these methods are label-intensive, heavily reliant on human expertise, and face challenges in scalabil- ity and cost efficiency. On the other hand, Xu et al. (2023); Wang et al. (2023); Sun et al. (2024a); Dong et al. (2024) attempt to leverage LLMs to automatically construct high- quality instruction data. Specifically, Xu et al. (2023); Sun et al. (2024a) guide LLMs to generate constraints and evolve initial instructions into more complex forms. However, these LLMs-driven methods heavily rely on models\u2019 instruction- evolving capability and overemphasize instruction complex- ity, ultimately hindering the diversity of evolved instructions and the correctness of generated responses. To improve this, Wang et al. (2023); Dong et al. (2024) introduce handcrafted constraints inspired by human priors to guide LLMs. For instance, Dong et al. (2024) introduces constraints that can be verified by code execution to ensure response correctness. However, these handcrafted constraints introduce rigidity, 1 arXiv:2502.04153v1 [cs.CL] 6 Feb 2025"
+}

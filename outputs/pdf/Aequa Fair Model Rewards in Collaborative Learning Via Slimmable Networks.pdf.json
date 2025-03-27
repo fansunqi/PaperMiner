@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Collaborative Learning",
+    "Federated Learning",
+    "Fairness"
+  ],
+  "datasets": [
+    "MNIST",
+    "Fashion-MNIST",
+    "SVHN",
+    "CIFAR-10",
+    "CIFAR-100",
+    "Stanford Senti- ment Treebank"
+  ],
+  "methods": [
+    "Slimmable Networks",
+    "Post-training Fair Allocation Algorithm",
+    "Training-time Model Rewards"
+  ],
+  "results": [
+    "Higher performance and fairness",
+    "Perfect correlation coefficient",
+    "Improved collaboration gain"
+  ],
+  "title": "Aequa Fair Model Rewards in Collaborative Learning Via Slimmable Networks.pdf",
+  "abstract": "Collaborative learning enables multiple partici- pants to learn a single global model by exchang- ing focused updates instead of sharing data. One of the core challenges in collaborative learning is ensuring that participants are rewarded fairly for their contributions, which entails two key sub- problems: contribution assessment and reward allocation. This work focuses on fair reward al- location, where the participants are incentivized through model rewards - differentiated final mod- els whose performance is commensurate with the contribution. In this work, we leverage the con- cept of slimmable neural networks to collabo- ratively learn a shared global model whose per- formance degrades gracefully with a reduction in model width. We also propose a post-training fair allocation algorithm that determines the model width for each participant based on their contribu- tions. We theoretically study the convergence of our proposed approach and empirically validate it using extensive experiments on different datasets and architectures. We also extend our approach to enable training-time model reward allocation. 1. Introduction Collaborative learning (CL) has emerged as a transforma- tive paradigm for training machine learning models across data silos while preserving data privacy. Unlike centralized approaches, CL enables participants (e.g., hospitals, finan- cial institutions, etc.) to jointly train a shared global model by exchanging only focused updates rather than raw data (McMahan et al., 2017). CL mitigates privacy risks and com- plies with regulations such as GDPR, making it particularly useful in domains where data sensitivity is paramount. A special case of CL is federated learning (FL), where a central server orchestrates the collaboration. However, CL/FL faces many challenges such as communication inefficiencies due 1Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), UAE 2Michigan State University (MSU), USA. Cor- respondence to: Nurbek Tastan <nurbek.tastan@mbzuai.ac.ae>. Preprint. Under review. to frequent exchanges of updates, system heterogeneity re- sulting from different participant capabilities, and statistical heterogeneity caused by non-i.i.d. data distributions across participants (Zhu et al., 2021). These issues often degrade model performance, scalability, and practical adoption. A critical yet less explored challenge in CL lies in ensuring collaborative fairness among participants. Traditional CL frameworks assume uniform contributions from all parties, but real-world scenarios involve disparities in data quality, quantity, and computational resources. For instance, partici- pants with high-quality data may receive disproportionately less rewards despite their critical role in model generaliza- tion. The interplay between fairness and incentivization is essential to sustaining long-term collaboration. Without equitable incentives, participants may withhold resources or disengage entirely, leading to the \u201cfree-rider problem\u201d where some entities benefit without contributing meaning- fully. To address this issue, recent research has explored incentivization mechanisms such as Shapley value-based reward allocation (Xu et al., 2021; Tastan et al., 2024a), reputation systems (Xu & Lyu, 2020), and game-theoretic frameworks (Wu et al., 2024). These methods aim to quan- tify and reward participant contributions transparently. Achieving collaborative fairness in CL fundamentally hinges on two key sub-problems: (1) contribution assess- ment and (2) reward allocation mechanism. Contribution assessment evaluates the marginal impact of each partici- pant\u2019s data or computational resources on the global model\u2019s performance. Recent efforts (Xu et al., 2021; Jia et al., 2019; Shi et al., 2022; Jiang et al., 2023) attempt to quantify the quality of the local model updates as a proxy for measuring their contribution. Once the marginal contribution of each participant is determined, a reward allocation mechanism is necessary for incentivizing the participants to collabo- rate. Rewards can be in the form of financial compensation (monetary rewards) or differentiated final models (model re- wards). To ensure fairness, rewards must be commensurate with the contribution. This work focuses exclusively on fair distribution of model rewards in CL. A critical question arises: How can participants be rewarded with different models whose performance (accuracy) faith- fully reflects their heterogeneous contributions? While pre- vious work has explored this problem (Xu et al., 2021; Wu 1 arXiv:2502.04850v1 [cs.LG] 7 Feb 2025"
+}

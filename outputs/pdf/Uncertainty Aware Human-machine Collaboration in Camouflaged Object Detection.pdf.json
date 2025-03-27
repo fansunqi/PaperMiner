@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/ziyuey/Uncertainty-aware-human-machine-collaboration-in-camouflaged-object-identification"
+  ],
+  "tasks": [
+    "Camouflaged Object Detection"
+  ],
+  "datasets": [
+    "CAMO"
+  ],
+  "methods": [
+    "Swin Transformer",
+    "EEG",
+    "RSVP-based BCIs"
+  ],
+  "results": [
+    "4.56% higher balanced accuracy (BA)",
+    "3.66% higher F1 score"
+  ],
+  "title": "Uncertainty Aware Human-machine Collaboration in Camouflaged Object Detection.pdf",
+  "abstract": "Uncertainty Aware Human-machine Collaboration in Camouflaged Object Detection Ziyue Yang, Kehan Wang, Yuhang Ming, Yong Peng, Han Yang, Qiong Chen, Wanzeng Kong Confidence- aware Classification Warm Up COD Dataset High-confidence images Weak Augmentation Train Update Confidence-aware Classification Once per Epoch RSVP Paradigm EEG Data EEGNET EEG Model Train CV Model Training Stage SwinT Patch Partition Linear Embedding Swin Transformer\u00d72 Patch Merging Swin Transformer\u00d72 Patch Merging Swin Transformer\u00d76 Patch Merging Swin Transformer\u00d72 Classification Head Conv2D Classification . . . . Output Kernel DepthwiseConv2D SeparableConv2D . . . . . . Kernel Output Output Kernel Strong Augmentation Low-confidence images Test Stage COD Test Images Weak Augmentation \ud835\udc99\ud835\udc98 Strong Augmentation {\ud835\udc99\ud835\udc94} Trained CV Model Patch Partition Linear Embedding Swin Transformer\u00d72 Patch Merging Swin Transformer\u00d72 Patch Merging Swin Transformer\u00d76 Patch Merging Swin Transformer\u00d72 Classification Head Predictions Cross Entropy \ud835\udc91\ud835\udc98 Uncertainty {\ud835\udc91\ud835\udc94} Sort Rank \u2264 80% No Yes High-confidence images Low-confidence images CV Model EEG Model Predictions Final Predictions arXiv:2502.08373v1 [cs.CV] 12"
+}

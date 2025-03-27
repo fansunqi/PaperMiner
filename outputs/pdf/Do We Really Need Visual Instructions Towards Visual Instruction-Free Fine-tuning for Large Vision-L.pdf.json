@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/zikangliu/ViFT"
+  ],
+  "tasks": [
+    "Visual reasoning",
+    "Visual instruction following"
+  ],
+  "datasets": [
+    "MathVista",
+    "MathVerse",
+    "MathVision",
+    "LLaVABench"
+  ],
+  "methods": [
+    "Steering vectors",
+    "Ability-specific fine-tuning",
+    "Ability-fused inference"
+  ],
+  "results": [
+    "State-of-the-art performance on visual reasoning benchmarks",
+    "Significant improvements over LLaVA-OneVision",
+    "Less training data"
+  ],
+  "title": "Do We Really Need Visual Instructions Towards Visual Instruction-Free Fine-tuning for Large Vision-L.pdf",
+  "abstract": "Visual instruction tuning has become the pre- dominant technology in eliciting the multi- modal task-solving capabilities of large vision- language models (LVLMs). Despite the suc- cess, as visual instructions require images as the input, it would leave the gap in inheriting the task-solving capabilities from the backbone LLMs, and make it costly to collect a large- scale dataset. To address it, we propose ViFT, a visual instruction-free fine-tuning framework for LVLMs. In ViFT, we only require the text- only instructions and image caption data during training, to separately learn the task-solving and visual perception abilities. During infer- ence, we extract and combine the representa- tions of the text and image inputs, for fusing the two abilities to fulfill multimodal tasks. Ex- perimental results demonstrate that ViFT can achieve state-of-the-art performance on several visual reasoning and visual instruction follow- ing benchmarks, with rather less training data. Our code and data will be publicly released. 1 Introduction Recently, large vision-language models (LVLMs), built upon existing visual encoders (Dosovitskiy, 2020; Radford et al., 2021) and large language models (LLMs) (Brown, 2020; Zhao et al., 2023b), have gained widespread attention by demonstrating superior performance across diverse multimodal tasks (Du et al., 2022; Yin et al., 2023). To empower LVLMs with multimodal task- solving capabilities, a fundamental problem is to in- herit and transfer the task-solving ability of LLMs into multimodal tasks (with image inputs). Re- cently, visual instruction tuning (Liu et al., 2024c,a) has emerged as the predominant framework for achieving this goal. Through fine-tuning on a vari- ety of vision-language instruction-following data * Equal contribution. \u2020 Corresponding author. from different sources, LVLMs can directly learn the corresponding knowledge and generalize into other related tasks. Despite its success, it is still necessary to con- tinue scaling up the number of visual instructions for fully learning multimodal advanced capabilities (e.g., visual reasoning). However, there are two bottlenecks that greatly limit the scaling of visual instructions. First, due to the multimodal nature, visual instructions1 need to incorporate visual con- tents (e.g., images or videos) and include closely related instructions, which complicates the creation of large-scale visual instructions. Second, although existing work (Liu et al., 2024c; Zhu et al., 2023) has adopted the data synthesis strategy for visual instructions, the synthesized instructions might in- clude unreliable information regarding the visual inputs. It also poses challenges and increases the costs for quality control and scaling up. Considering the above challenges, we rethink whether it is feasible to reduce the reliance on vi- sual instruction data during training LVLMs. Ex- isting LVLMs typically map visual inputs into the LLM\u2019s token space and then generate the text out- put based on it. If the visual inputs are effectively perceived and aligned with text tokens, the LLM can comprehend the visual contents and leverage its inherent task-solving ability for tackling multi- modal tasks. Therefore, the LVLM\u2019s multimodal task-solving capability should be the combination of (1) the visual perception ability (for alignment) and (2) the task-solving ability from LLMs. Al- though it is hard and costly to synthesize exten- sive amount of high-quality visual instructions for learning the multimodal capabilities, it is promis- ing to sufficiently learn the two individual abilities separately, thanks to the rich resources of natural 1Following prior works (Liu et al., 2024c), we exclude image captions from the scope of visual instructions, as they are designed for basic vision-language alignment, instead of learning advanced multimodal task-solving capabilities. arXiv:2502.11427v1 [cs.CL] 17 Feb 2025"
+}

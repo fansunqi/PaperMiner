@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Assimilation",
+    "Ensemble Based Data Assimilation",
+    "Adaptive Meshing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Robust Look Ahead Meshing",
+    "Metric Tensor Intersection",
+    "Mesh Density Functions",
+    "Nonlocal Observations",
+    "Moving Mesh DG",
+    "Adaptive Time Stepping"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Robust Adaptive Meshing, Mesh Density Functions, and Nonlocal Observations for Ensemble Based Data A.pdf",
+  "abstract": "Adaptive spatial meshing has proven invaluable for the accurate, efficient computa- tion of solutions of time dependent partial differential equations. In a DA context the use of adaptive spatial meshes addresses several factors that place increased demands on meshing; these include the location and relative importance of observations and the use of ensemble solutions. To increase the efficiency of adaptive meshes for data assimila- tion, robust look ahead meshes are developed that fix the same adaptive mesh for all ensemble members for the entire time interval of the forecasts and that incorporates the observations at the next analysis time. This allows for increased vectorization of the ensemble forecasts while minimizing interpolation of solutions between different meshes. The techniques to determine these robust meshes are based upon combining metric ten- sors or mesh density functions to define nonuniform meshes. We illustrate the robust ensemble look ahead meshes using traveling wave solutions of a bistable reaction-diffusion equation. Observation operators based on convolution type integrals and their associated metric tensors are derived. These further the goals of making efficient use of adaptive meshes in ensemble based DA techniques, developing and employing robust meshes that are effective for a range of similar behaviors in both the ensembles and the observations, and the integration with advanced numerical PDE techniques (a quasi-Lagrangian moving mesh DG technique employing embedded pairs for time stepping). Numerical experiments with different observation scenarios are presented for a 2D inviscid Burgers\u2019 equation, a multi-component system, a 2D Shallow Water model, and for a coupled system of two 1D Kuramoto-Sivashinsky equations. 1 Introduction Several challenges as well as opportunities exist for combining data assimilation (DA) with adaptive meshing techniques; techniques that have proven to be quite successful for the numer- ical solution of partial differential equations. In a DA context, other sources beyond accurate, efficient solution of forecast ensembles may require additional, variable resolution. Primary among this are the location and relative significance of observational data. Other factors such as the need to focus on important events and locations motivate the need for variable resolu- tion in different space/time regions and for specific model variables. While natural that the physical model solutions and observational data are primary drivers for meshing, combining the requirements for both may enhance the skill of the DA. Even with the increased use of surrogate physical and data models, the need for flexible means of increasing resolution that \u2217This work was supported in part by Office of Naval Research Grant N000142412218. \u2020Department of Mathematics, University of Kansas, Lawrence, Kansas, USA (jeremiah.buenger@ku.edu). \u2021Department of Mathematics, University of Kansas, Lawrence, Kansas, USA (whuang@ku.edu). \u00a7Department of Mathematics, University of Kansas, Lawrence, Kansas, USA (erikvv@ku.edu). 1 arXiv:2502.09754v1 [math.NA] 13 Feb 2025"
+}

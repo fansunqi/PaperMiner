@@ -1,0 +1,23 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Fine-tuning Large Language Models",
+    "Post-training"
+  ],
+  "datasets": [
+    "Synthetic QA Dataset",
+    "Instruction Dataset"
+  ],
+  "methods": [
+    "Cross-Attention\u2013Guided Self-Reinforcement (CAGSR)",
+    "Policy Gradient",
+    "PPO"
+  ],
+  "results": [
+    "Relevance: CAGSR outperforms the no-RL baseline and synthetic preference RL by a notable margin",
+    "ROUGE-L: CAGSR shows a meaningful improvement over both no-RL and synthetic preference RL",
+    "Human Score: Annotators found CAGSR\u2019s responses more helpful on average than baseline responses"
+  ],
+  "title": "A Self-Supervised Reinforcement Learning Approach for Fine-Tuning Large Language Models Using Cross-.pdf",
+  "abstract": "We propose a novel reinforcement learning (RL) framework for post-training large language models (LLMs) that does not rely on human-in-the-loop feedback. Instead, our approach uses cross-attention signals within the model itself to derive a self-supervised reward, thereby guiding iterative fine-tuning of the model\u2019s policy. By analyzing how the model \u201cattends\u201d to the input prompt during generation, we construct measures of prompt coverage, focus, and coherence. We then use these measures to rank or score candidate responses, providing a reward signal that encourages the model to produce well-aligned, on-topic text. In empirical comparisons against standard policy gradient methods and RL fine-tuning with synthetic preference models, our method shows significant gains in prompt relevance and consistency over a non-RL baseline. While it does not yet match the performance of fully human-supervised RLHF systems, it highlights an important direction for scaling alignment with minimal human labeling. We provide a detailed analysis, discuss potential limitations, and outline future work for combining cross-attention based signals with smaller amounts of human feedback. 1. Introduction Deep language models have achieved remarkable progress across a wide range of natural language processing tasks, including question answering, summarization, and dialogue generation (Brown et al. 202, Radford et al. 2019). Recent work emphasizes the importance of alignment, ensuring model outputs remain factual, coherent, and in line with user instructions (Ziegler et al. 2020, Ouyang et al. 2020). Reinforcement learning from human feedback (RLHF) has emerged as a leading approach for fine-tuning large language models, with notable successes in instructable LLMs such as InstructGPT (Ouyang et al. 2020) and ChatGPT (OpenAI Blog, 2020). However, human-in-the-loop approaches can be expensive, time-consuming, and limited in scalability (Bai et al.2022). Obtaining high-quality human preference data is often a bottleneck, especially for large-scale or specialized deployments. This raises the question: Can we devise reinforcement signals that leverage the model\u2019s own internal representations or outputs, rather than human feedback, to guide alignment? In this work, we propose a Self-Supervised Cross-Attention Guided Reinforcement (CAGSR) method for fine-tuning large language models. Building on the transformer architecture (Vaswami et al. 2017), we focus on the model\u2019s cross-attention distributions, which indicate how each generated token attends to the input prompt. Our key insight is that"
+}

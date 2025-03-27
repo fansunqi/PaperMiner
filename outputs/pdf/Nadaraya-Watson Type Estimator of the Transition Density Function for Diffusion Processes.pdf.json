@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Transition density function estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nadaraya-Watson estimator",
+    "penalized comparison to overfitting (PCO) bandwidth selection"
+  ],
+  "results": [
+    "Risk bounds on the estimator",
+    "numerical experiments demonstrating the relevance of the estimation procedure"
+  ],
+  "title": "Nadaraya-Watson Type Estimator of the Transition Density Function for Diffusion Processes.pdf",
+  "abstract": ". This paper deals with a nonparametric Nadaraya-Watson (NW) estimator of the transition density function computed from independent continuous observations of a diffusion process. A risk bound is established on this estimator. The paper also deals with an extension of the penalized comparison to overfitting bandwidths selection method for our NW estimator. Finally, numerical experiments are provided. Contents 1. Introduction 1 2. Preliminaries on the transition density 3 3. Non-adaptive risk bounds 4 4. PCO bandwidths selection 6 5. Numerical experiments 6 5.1. Appropriate models for numerical experiments 7 5.2. Implementation and results 8 References 8 Appendix A. Proofs 10 A.1. Proof of Proposition 3.1 10 A.2. Proof of Proposition 3.2 11 A.3. Proof of Corollary 3.3 13 A.4. Proof of Theorem 4.1 14 A.5. Proof of Corollary 4.2 20 1. Introduction Consider the stochastic differential equation (1) Xt = x0 + Z t 0 b(Xs)ds + Z t 0 \u03c3(Xs)dWs ; t \u2208[0, 2T], where x0 \u2208R, W = (Wt)t\u2208[0,2T ] is a Brownian motion with T > 0, and b, \u03c3 \u2208C1(R) with b\u2032 and \u03c3\u2032 bounded. Under these conditions on b and \u03c3, Equation (1) has a unique (strong) solution X = (Xt)t\u2208[0,2T ]. Under additional conditions (see Section 2), the transition density pt(x, .) is well-defined and can be in- terpreted as the conditional density of Xs+t given Xs = x. For any t \u2208(0, T], our paper deals with an adaptive Nadaraya-Watson (type) estimator of pt : (x, y) 7\u2192pt(x, y) computed from N \u2208N\u2217independent copies of X observed on the time interval [0, 2T]. The copies-based statistical inference for stochastic differential equations, which is related to functional data analysis (see Ramsay and Silverman [22] and Wang et al. [24]), is an alternative to classic long-time behavior based methods (see Kutoyants [14]), allowing to consider non-stationary models. The projection least squares and the Nadaraya-Watson methods have been recently extended to the copies-based observation scheme for the estimation of b (see Comte and Genon-Catalot [3, 4], Denis et 1 arXiv:2502.14498v1 [math.ST] 20 Feb 2025"
+}

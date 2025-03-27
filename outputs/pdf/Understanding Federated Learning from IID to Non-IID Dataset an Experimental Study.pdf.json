@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding Federated Learning"
+  ],
+  "datasets": [
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Federated Learning",
+    "Gradient Descent",
+    "FedAvg",
+    "LocalSGD",
+    "Weighted Aggregation",
+    "Naive Aggregation",
+    "Dirichlet Distribution"
+  ],
+  "results": [
+    "Client drift causes performance degradation in non-IID scenarios",
+    "Higher \u03b7 and lower B improve performance in both IID and non-IID settings",
+    "Weighted aggregation accelerates convergence in IID settings",
+    "Non-IID conditions lead to more diverse loss landscapes and less aligned client updates",
+    "Methods can be categorized into adjusting the update path or modifying the loss landscape"
+  ],
+  "title": "Understanding Federated Learning from IID to Non-IID Dataset an Experimental Study.pdf",
+  "abstract": ". As privacy concerns and data regulations grow, federated learning (FL) has emerged as a promising approach for training ma- chine learning models across decentralized data sources without shar- ing raw data. However, a significant challenge in FL is that client data are often non-IID (non-independent and identically distributed), lead- ing to reduced performance compared to centralized learning. While many methods have been proposed to address this issue, their under- lying mechanisms are often viewed from different perspectives. Through a comprehensive investigation from gradient descent to FL, and from IID to non-IID data settings, we find that inconsistencies in client loss landscapes primarily cause performance degradation in non-IID scenar- ios. From this understanding, we observe that existing methods can be grouped into two main strategies: (i) adjusting parameter update paths and (ii) modifying client loss landscapes. These findings offer a clear per- spective on addressing non-IID challenges in FL and help guide future research in the field. Keywords: Federated Learning\u00b7 Gradient Descent\u00b7 Optimization. 1 Introduction Federated Learning (FL) is a distributed machine learning framework that pri- oritizes privacy preservation [14]. Unlike traditional centralized methods, where client data is aggregated on a central server for model training, FL allows clients to keep their data locally. Clients collaborate by sharing only their locally trained models with a central server, which aggregates these models to build a global model. This approach enables learning from diverse, distributed datasets without exposing data, making FL especially valuable for privacy-sensitive applications. Although similar distributed learning frameworks have existed before [3,23,4], the term \"Federated Learning\" was officially coined by McMahan et al. in 2016 [14]. Since then, particularly in deep learning, FL has gained significant attention in both research and industry [6]. One of the primary challenges in FL is the heterogeneity of data across clients [22]. When client data distributions are non-IID (not Independent and Identically Distributed), the learning direction of individual clients may diverge from that of the global model. This divergence, often referred to as \"client drift\", can degrade the overall performance of the arXiv:2502.00182v2 [cs.LG] 7 Feb 2025"
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Privacy amplification by random allocation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Privacy amplification by random allocation",
+    "Monte Carlo simulations",
+    "Advanced joint convexity"
+  ],
+  "results": [
+    "Upper bounds on privacy parameter \u03f5",
+    "Exact expression for the RDP",
+    "Comparison with Poisson subsampling"
+  ],
+  "title": "Privacy Amplification by Random Allocation.pdf",
+  "abstract": "We consider the privacy guarantees of an algorithm in which a user\u2019s data is used in k steps randomly and uniformly chosen from a sequence (or set) of t differentially private steps. We demonstrate that the privacy guarantees of this sampling scheme can be upper bound by the privacy guarantees of the well-studied independent (or Poisson) subsampling in which each step uses the user\u2019s data with probability (1 + o(1))k/t. Further, we provide two additional analysis techniques that lead to numerical improvements in some parameter regimes. The case of k = 1 has been previously studied in the context of DP-SGD in Balle et al. (2020) and very recently in Chua et al. (2024a). Privacy analysis of Balle et al. (2020) relies on privacy amplification by shuffling which leads to overly conservative bounds. Privacy analysis of Chua et al. (2024a) relies on Monte Carlo simulations that are computationally prohibitive in many practical scenarios and have additional inherent limitations. 1 Introduction One of the central tools in the analysis of differentially private algorithms are so-called privacy amplification results where amplification results from sampling of the inputs. In these results one starts with a differentially private algorithms (or a sequence of such algorithms) and a randomized algorithm for selecting (or sampling) which of the n elements in a dataset to run each of the t algorithms on. Importantly, the random bits of the sampling scheme and the selected data elements are not revealed. For a variety of sampling schemes this additional uncertainty is known to lead to improved privacy guarantees of the resulting algorithm, that it, privacy amplification. In the simpler, single step, case a DP algorithm is run on a randomly chosen subset of the dataset. As first shown by Kasiviswanathan et al. (2011), if each element of the dataset is included in the subset with probability \u03bb (independently of other elements) then the privacy of the resulting algorithm is better (roughly) by a factor \u03bb. This basic result has found numerous applications, most notably in the analysis of the differentially private stochastic gradient descent (DP-SGD) algorithm (Bassily et al., 2014). In DP-SGD gradients are computed on randomly chosen batches of data points and then privatized through Gaussian noise addition. Privacy analysis of this algorithm is based on the so called Poisson sampling: elements in each batch and across batches are chosen randomly and independently of each other. The absence of dependence implies that the algorithm can be analyzed relatively easily as a direct composition of single step amplification results. The downside of this simplicity is that such sampling is less efficient and harder to implement within the standard ML pipelines. As a result, in practice some form of shuffling is used to define the batches \u2217Work partially done while author was an intern at Apple 1 arXiv:2502.08202v1 [cs.LG] 12 Feb 2025"
+}

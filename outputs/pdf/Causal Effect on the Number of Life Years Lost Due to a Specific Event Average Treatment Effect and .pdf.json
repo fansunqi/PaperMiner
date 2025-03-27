@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Causal inference",
+    "Survival analysis",
+    "Competing risks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semiparametric estimators",
+    "Partial linear projection",
+    "Machine learning for nuisance parameters"
+  ],
+  "results": [
+    "ATE and CATE identifiable under common assumptions",
+    "Asymptotically normal and efficient estimators",
+    "Application in antidepressant treatment study"
+  ],
+  "title": "Causal Effect on the Number of Life Years Lost Due to a Specific Event Average Treatment Effect and .pdf",
+  "abstract": "Competing risk is a common phenomenon when dealing with time-to-event outcomes in biostatistical applications. An attractive estimand in this setting is the \u201dnumber of life-years lost due to a specific cause of death\u201d, Andersen (2013). It provides a direct interpretation on the time-scale on which the data is observed. In this paper, we introduce the causal effect on the number of life years lost due to a specific event, and we give assumptions under which the average treatment effect (ATE) and the conditional average treatment effect (CATE) are identified from the observed data. Semiparametric estimators for ATE and a partially linear projection of CATE, serving as a variable importance measure, are proposed. These estimators leverage machine learning for nuisance parameters and are model-agnostic, asymptotically normal, and efficient. We give conditions under which the estimators are asymptotically normal, and their performance are investigated in a simulation study. Lastly, the methods are implemented in a study concerning the response to different antidepressants using data from the Danish national registers. Keywords: Causal inference, number of life years lost, debiased learning, heterogeneity, nonpara- metric inference, survival data, competing risks, variable importance measure 1 Introduction Time-to-event outcomes are very common in the biomedical sciences, and often there is the addi- tional complication of competing events. For example, Kessing et al. (2024) were interested in the time to non-response to different antidepressants for patients with a major depressive disorder. The event of interest was defined as a switch to or add-on of another antidepressant or antipsychotic medicine or readmission to a psychiatric hospital with a major depressive disorder, while admission to a psychiatric hospital with a higher order psychiatric diagnosis (bipolar disorder, schizophrenia or organic mental disorder) or death were competing risks. One purpose of that study was to com- pare a potential causal effect of treatment with the antidepressant Setraline versus treatment with another antidepressant, Escitalopram, and to determine whether such an effect was dependent on individual characteristics. With competing risk data its standard to target the average treatment effect (ATE) based on the cumulative incidence functions associated with the competing events. Estimation of the ATE in this setting has been described by Ozenne et al. (2020) under working Cox models and logistic regression for the nuisance parameters, whereas Rytgaard et al. (2023) and 1 arXiv:2502.00120v1 [stat.ME] 31 Jan 2025"
+}

@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Leader election"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Population protocols",
+    "Self-stabilizing protocols",
+    "Ranking protocols",
+    "Agent traps",
+    "Ring of traps",
+    "Line of traps",
+    "Perfectly balanced binary trees"
+  ],
+  "results": [
+    "State-optimal ranking protocols",
+    "Almost state-optimal ranking protocols",
+    "Leader election protocols",
+    "Self-stabilizing ranking in time O(min(kn3/2, n2 log2 n))",
+    "Self-stabilizing ranking with one extra state in time O(n7/4 log2 n)",
+    "Self-stabilizing ranking with O(log n) extra states in time O(n log n)"
+  ],
+  "title": "Near-State and State-Optimal Self-Stabilising Leader Election Population Protocols.pdf",
+  "abstract": "We investigate leader election problem via ranking within self-stabilising population protocols. In this scenario, the agent\u2019s state space comprises n rank states and x extra states. The initial configuration of n agents consists of arbitrary arrangements of rank and extra states, with the objective of self-ranking. Specifically, each agent is tasked with stabilising in a unique rank state silently, implying that after stabilisation, each agent remains in its designated state indefinitely. The ranking problem stands as a pivotal challenge in self-stabilising population protocols, with its resolution resulting in leader election and requiring a minimum of n states [19]. Within this framework, a self-stabilising ranking protocol is deemed state-optimal if it exclusively em- ploys rank states. It is assumed to be almost state-optimal if it incorporates O(log n) extra states, denoted as x = O(log n). Additionally, a configuration of agents\u2019 states is referred to as k-distant (from the final configuration) if exactly k rank states are absent in this setup. A generic state-optimal ranking population protocol AG exists, demonstrating self-stabilisation silently within a time frame of \u0398(n2) with high probability (whp). It is established in [18, 25] that any self-stabilising silent leader election protocol demands \u2126(n) expected time. Further- more, [18] introduces silent ranking protocols with expected times of both O(n) and O(n log n) whp, each utilising x = \u2126(n) extra states. Unfortunately, the exact complexity of state-optimal and almost state-optimal self-stabilising ranking remains elusive. Particularly, questions whether state-optimal self-stabilising ranking is viable within a time frame of o(n2) whp, and the ex- ploration of the trade-off between the number of extra states and stabilisation time, remain unanswered. In this paper, we present several new self-stabilising ranking protocols, greatly enriching our comprehension of these intricate problems. All protocols ensure self-stabilisation time with high probability (whp), defined as 1 \u2212n\u2212\u03b7, for a constant \u03b7 > 0. We delve into three scenarios, from which we derive stable (always correct), either state-optimal or almost state-optimal, silent ranking protocols that self-stabilise within a time frame of o(n2) whp, including: 1. Utilising a novel concept of an agent trap, we derive a state-optimal ranking protocol that achieves self-stabilisation in time O(min(kn3/2, n2 log2 n)), for any k-distant starting configuration. 2. Furthermore, we show that the incorporation of a single extra state (x = 1) ensures a ranking protocol that self-stabilises in time O(n7/4 log2 n) = o(n2), regardless of the initial configuration. 3. Lastly, we show that extra x = O(log n) states admit self-stabilising ranking with the best currently known stabilisation time O(n log n), when whp and x = O(log n) guarantees are imposed. 1 arXiv:2502.01227v1 [cs.DC] 3 Feb 2025"
+}

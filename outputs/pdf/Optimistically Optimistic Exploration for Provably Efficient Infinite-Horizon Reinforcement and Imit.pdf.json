@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning",
+    "Imitation Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimistically Optimistic Exploration",
+    "Additive Exploration Bonuses",
+    "Artificial Transitions to Absorbing State",
+    "Regularized Approximate Dynamic-Programming Scheme",
+    "Rmax Algorithm",
+    "RAVI-UCB Algorithm"
+  ],
+  "results": [
+    "Regret of order O\u0303(\u221ad^3(1\u2212\u03b3)^\u22127/2T)",
+    "State-of-the-art results in imitation learning",
+    "Sample complexity of learning an \u03b5-optimal policy of order H^3d^3+H^7/2d log|A|\u03b5^2"
+  ],
+  "title": "Optimistically Optimistic Exploration for Provably Efficient Infinite-Horizon Reinforcement and Imit.pdf",
+  "abstract": "We study the problem of reinforcement learning in infinite-horizon discounted linear Markov decision processes (MDPs), and propose the first computationally efficient algorithm achieving near-optimal regret guarantees in this setting. Our main idea is to combine two classic techniques for optimistic exploration: additive exploration bonuses applied to the reward function, and artificial transitions made to an absorbing state with maximal return. We show that, combined with a regularized approximate dynamic-programming scheme, the resulting algorithm achieves a regret of order \u02dcO( p d3(1 \u2212\u03b3)\u22127/2T), where T is the total number of sample transitions, \u03b3 \u2208(0, 1) is the discount factor, and d is the feature dimensionality. The results continue to hold against adversarial reward sequences, enabling application of our method to the problem of imitation learning in linear MDPs, where we achieve state-of-the-art results. Keywords: Optimistic exploration, discounted MDPs, linear MDPs, imitation learning 1. Introduction Since the breakthrough work of Jin et al. (2019), the class of linear Markov decision processes (MDPs) has become a standard model for theoretical analysis of reinforcement learning (RL) algo- rithms under linear function approximation. This work demonstrated the possibility of constructing computationally and statistically efficient methods for large-scale RL, and pioneered an analysis technique that influenced the entire field of RL theory. Hundreds of follow-up papers have studied variations of this model, studying extensions such as learning with adversarial rewards (Neu and Olkhovskaya, 2021; Zhong and Zhang, 2024; Sherman et al., 2023b; Dai et al., 2023; Sherman et al., 2023a; Cassel and Rosenberg, 2024; Liu et al., 2023), without rewards (Wang et al., 2020; Wagenmaker et al., 2022; Hu et al., 2022), or with unknown features Agarwal et al. (2020); Uehara et al. (2021); Zhang et al. (2022); Mhammedi et al. (2024); Modi et al. (2024). The linearity constraint itself has been relaxed in a variety of ways Zanette et al. (2020); Cai et al. (2020); Du et al. (2021); Weisz et al. (2024); Golowich and Moitra (2024); Wu et al. (2024b). However, practically all of these developments retained one major limitation of the original work of Jin et al. (2019): it only applies to finite-horizon MDPs. Generalizations to the more challenging (and practically much more popular) infinite-horizon MDP models have so far remained very limited, yielding only highly impractical methods or suboptimal performance guarantees (Wei et al., 2021). In this paper, we propose an efficient algorithm that successfully addresses this long-standing open problem. We consider the problem of learning a nearly optimal policy in \u03b3-discounted MDPs (Puterman, 1994), under the linear MDP assumption first proposed by Jin et al. (2019) (see also Yang and Wang, \u00a9 A. Moulin, G. Neu & L. Viano. arXiv:2502.13900v1 [cs.LG] 19 Feb 2025"
+}

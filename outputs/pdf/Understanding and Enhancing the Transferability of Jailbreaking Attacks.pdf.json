@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/tmllab/2025_ICLR_PiF"
+  ],
+  "tasks": [
+    "Understanding and enhancing the transferability of jailbreaking attacks"
+  ],
+  "datasets": [
+    "AdvBench",
+    "MaliciousInstruct"
+  ],
+  "methods": [
+    "Perceived-importance Flatten (PiF) method"
+  ],
+  "results": [
+    "PiF provides an effective and efficient red-teaming evaluation for proprietary LLMs",
+    "Achieves ASR of nearly 100% and an AHS of around 4.0",
+    "Achieves ASR of over 72% and an AHS of over 3 under one-query setting"
+  ],
+  "title": "Understanding and Enhancing the Transferability of Jailbreaking Attacks.pdf",
+  "abstract": "oContent Warning: This paper contains examples of harmful language. Jailbreaking attacks can effectively manipulate open-source large language models (LLMs) to produce harmful responses. However, these attacks exhibit limited transferability, failing to disrupt proprietary LLMs consistently. To reliably identify vulnerabilities in proprietary LLMs, this work investigates the transferability of jailbreaking attacks by analysing their impact on the model\u2019s intent perception. By incorporating adversarial sequences, these attacks can redirect the source LLM\u2019s focus away from malicious-intent tokens in the original input, thereby obstructing the model\u2019s intent recognition and eliciting harmful responses. Nevertheless, these adversarial sequences fail to mislead the target LLM\u2019s intent perception, allowing the target LLM to refocus on malicious-intent tokens and abstain from respond- ing. Our analysis further reveals the inherent distributional dependency within the generated adversarial sequences, whose effectiveness stems from overfitting the source LLM\u2019s parameters, resulting in limited transferability to target LLMs. To this end, we propose the Perceived-importance Flatten (PiF) method, which uniformly disperses the model\u2019s focus across neutral-intent tokens in the original input, thus obscuring malicious-intent tokens without relying on overfitted adver- sarial sequences. Extensive experiments demonstrate that PiF provides an effective and efficient red-teaming evaluation for proprietary LLMs. Our implementation can be found at https://github.com/tmllab/2025_ICLR_PiF. 1 INTRODUCTION Empowered by massive corpus, large language models (LLMs) have achieved human-level conversa- tional capabilities (OpenAI, 2023a; Google, 2023; Meta, 2024) and are widely employed in real-world applications. However, their training corpus is mainly crawled from the Internet without thorough ethical review, raising concerns about the potential risks associated with LLMs. Recent red-teaming efforts highlight that jailbreaking attacks can effectively disrupt LLMs to produce undesirable content with harmful consequences (Perez et al., 2022; Ganguli et al., 2022; Ouyang et al., 2022). Unlike model-level jailbreaks that necessitate parameter modifications and are restricted to open- source LLMs (Qi et al., 2024; Huang et al., 2023a), token-level and prompt-level jailbreaks can generate transferable adversarial sequences (Yu et al., 2023; Lapid et al., 2023), thus posing a potential threat to widespread proprietary LLMs (Zou et al., 2023; Chao et al., 2023). Nevertheless, empirical results indicate that these adversarial sequences lack reliable transferability, failing to consistently manipulate target LLMs (Chao et al., 2024; Chen et al., 2024). Furthermore, these lengthy adversarial sequences can be further countered by adaptive jailbreaking detection and defence (Alon & Kamfonas, 2023; Inan et al., 2023; Robey et al., 2023; Wang et al., 2024a). As depicted in Figure 1, developing jailbreak attacks that can reliably identify vulnerabilities in proprietary LLMs\u2014thereby promoting human alignment and preventing future misuse\u2014remains a significant challenge. \u2217Corresponding author 1 arXiv:2502.03052v1 [cs.LG] 5 Feb 2025"
+}

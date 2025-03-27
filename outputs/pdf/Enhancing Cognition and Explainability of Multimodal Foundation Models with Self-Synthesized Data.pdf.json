@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "https://github.com/sycny/SelfSynthX"
+  ],
+  "tasks": [
+    "Visual Classification",
+    "Explainable AI"
+  ],
+  "datasets": [
+    "CUB-200",
+    "Stanford Dogs",
+    "FGVC-Aircraft",
+    "HAM10000",
+    "PLD",
+    "Chest X-ray",
+    "MMStar",
+    "SEED-Bench-2 Plus",
+    "MMBench",
+    "MME (Cognition)"
+  ],
+  "methods": [
+    "Information Bottleneck",
+    "Reward Model-Free Rejection Sampling",
+    "Visual Fine-Tuning"
+  ],
+  "results": [
+    "Accuracy Improvement",
+    "Explanation Quality Improvement",
+    "General Ability Improvement"
+  ],
+  "title": "Enhancing Cognition and Explainability of Multimodal Foundation Models with Self-Synthesized Data.pdf",
+  "abstract": "Large multimodal models (LMMs) have shown impressive capabilities in a wide range of visual tasks. However, they often struggle with fine-grained visual rea- soning, failing to identify domain-specific objectives and provide justifiable expla- nations for their predictions. To address this, we propose a novel visual rejection sampling framework to improve the cognition and explainability of LMMs using self-synthesized data. Specifically, visual fine-tuning requires images, queries, and target answers. Our approach begins by synthesizing interpretable answers that include human-verifiable visual features. These features are based on expert- defined concepts, carefully selected based on their alignment with the image con- tent. After each round of fine-tuning, we apply a reward model-free filtering mechanism to select the highest-quality interpretable answers for the next round of tuning. This iterative process of data synthesis and fine-tuning progressively improves the model\u2019s ability to generate accurate and reasonable explanations. Experimental results demonstrate the effectiveness of our method in improving both the accuracy and explainability of specialized visual classification tasks. 1 INTRODUCTION Large Multimodal Models (LMMs) have recently demonstrated remarkable performance in visual descriptive tasks, excelling in applications such as image captioning and visual question answer- ing (Liu et al., 2024a; Alayrac et al., 2022; Li et al., 2022; Liu et al., 2024b). However, recent research (Kim & Ji, 2024; Geigle et al., 2024) reveals a significant drop in their effectiveness when applied to knowledge-intensive, domain-specific visual classification tasks. We observe that even advanced models like LLaVA-1.5 (Liu et al., 2024a) can only achieve a mere 12.2% classification accuracy in the Stanford Dogs dataset (Khosla et al., 2011). Further investigation reveals that cur- rent LMMs struggle to utilize key visual features for reasoning in classification and fail to provide justifiable explanations for their predictions, as illustrated by the examples in Figure 1. LMM: The bird species shown in this image is a seagull. The reason for this identification is that the bird is flying over the ocean, which is a typical habitat for seagulls. LMM: The bird species is a black crow. The reason for this identification is that the bird is perched on a tree branch, which is a common behavior for crows. User: Identify the bird species and explain your reasoning. Label: Black footed Albatross Label: Groove billed Ani Figure 1: LLaVA-1.5 struggles to utilize key visual features in images for reasoning and ex- plaining predictions in classification tasks. The core issue stems from insufficient domain-specific alignment, as the model struggles to recognize key vi- sual features and link them to the correct labels. To ad- dress this problem, we propose enhancing the LMM\u2019s domain-specific cognition and explainability through fine-tuning (Touvron et al., 2023; Gu et al., 2021). However, this approach is hindered by a lack of data, as creating high-quality, feature-level image annotations is both complex and resource-intensive (Liu et al., 2024c). While labeling images by category and identifying key features for each class independent of the image is man- ageable, annotating the specific visual characteristics per image requires an extensive workload. Moreover, this level of detailed annotation goes beyond the ca- pacity of standard annotators and current LMMs (Chen et al., 2024a), making it impractical to scale. 1 arXiv:2502.14044v1 [cs.CV] 19 Feb 2025"
+}

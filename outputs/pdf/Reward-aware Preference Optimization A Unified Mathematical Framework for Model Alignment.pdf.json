@@ -1,0 +1,35 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model Alignment"
+  ],
+  "datasets": [
+    "lmsys-1M",
+    "HH-RLHF",
+    "MT Bench",
+    "HumanEval",
+    "Lmsys Chatbot Arena"
+  ],
+  "methods": [
+    "Reward-aware Preference Optimization (RPO)",
+    "Direct Preference Optimization (DPO)",
+    "Intrinsic Preference Optimization (IPO)",
+    "Simultaneous Preference Optimization (SimPO)",
+    "Reinforcement Learning from Human Feedback (RLHF)",
+    "Proximal Policy Optimization (PPO)",
+    "REINFORCE Leave-One-Out (RLOO)",
+    "Group Relative Policy Optimization (GRPO)",
+    "Distill DPO",
+    "BRAIN",
+    "DNO",
+    "SteerLM 2.0"
+  ],
+  "results": [
+    "Average Reward",
+    "Win-Rate"
+  ],
+  "title": "Reward-aware Preference Optimization A Unified Mathematical Framework for Model Alignment.pdf",
+  "abstract": "The rapid development of large language model (LLM) alignment algorithms has resulted in a complex and fragmented landscape, with lim- ited clarity on the effectiveness of different meth- ods and their inter-connections. This paper in- troduces Reward-Aware Preference Optimization (RPO), a mathematical framework that unifies popular preference optimization techniques in LLM alignment, including DPO, IPO, SimPO, and REINFORCE (LOO), among others. RPO provides a structured approach to disentangle and systematically study the impact of various design choices\u2014such as the optimization objective, the number of responses per prompt, and the use of implicit versus explicit reward models\u2014on LLM preference optimization. We additionally pro- pose a new experimental setup that enables the clean and direct ablation of such design choices. Through an extensive series of ablation studies within the RPO framework, we gain insights into the critical factors shaping model alignment, of- fering practical guidance on the most effective strategies for improving LLM alignment. 1. Introduction Model alignment is the training stage that makes large lan- guage models (LLMs) helpful, honest, and harmless (Bai et al., 2022; Ouyang et al., 2022). The typical alignment pipeline consists of supervised fine-tuning (SFT), which trains the model with expert demonstrations, and prefer- ence optimization, where the model learns from human or AI feedback. Following the reinforcement learning from human feedback (RLHF) algorithm that powers Chat- GPT (OpenAI et al., 2023), researchers have presented extensive variants of preference optimization algorithms *Equal contribution 1NVIDIA. Correspondence to: Shengyang Sun <shengyangs@nvidia.com>. (Ouyang et al., 2022; Rafailov et al., 2024b; Ahmadian et al., 2024) to advance alignment performance further. The plethora of preference optimization algorithms has led to a highly intricate landscape, characterized by diverse design choices and their varying degrees of effectiveness. Various offline training objectives are introduced, such as DPO (Rafailov et al., 2024b), IPO (Azar et al., 2024), and SimPO (Meng et al., 2024)., but which one performs the best? For each objective, responses can be collected either offline (Rafailov et al., 2024b) or online at the training stage (Guo et al., 2024). Other factors to consider include implicit versus explicit reward models (e.g. DPO vs RLHF), the number of responses to sample per prompt, and multi- iteration alignment. Which design choices matter the most and which combination works the best? This paper presents reward-aware preference optimization (RPO), a framework that unifies various popular preference optimization techniques in LLM alignment, including DPO, IPO, SimPO, and online RLOO, among others. The RPO framework enables us to tweak different design choices and study their impact through controlled experiments. For example, tweaking the metric function in RPO allows us to compare the effects of different training objectives such as DPO, IPO and SimPO. RPO is also so flexible that we can easily tweak the number of responses per prompt as well as switch between online and offline responses to observe their impact. After developing a better understanding of each individual design factors using RPO, we can combine the most effective elements and naturally create new algorithms such as online RPO-bwd that outperforms existing ones. While existing work typically compares alignment algo- rithms based on existing training datasets and popular aca- demic benchmarks (Ivison et al., 2024; Liu et al., 2024; Song et al.), this might obscure learnings due to the indirect connection bewteen the datasets and the benchmarks, e.g., does training over HH-RLHF (Ouyang et al., 2022) neces- sarily improve MT bench (Zheng et al., 2023b)? To enable a clean evaluation of alignment algorithms, we present a synthetic experiment, where the \"Ground-Truth Judge\" (e.g., human annotators) of preference data is available. We can 1 arXiv:2502.00203v2 [cs.LG] 7 Feb 2025"
+}

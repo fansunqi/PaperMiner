@@ -1,0 +1,32 @@
+{
+  "code_links": [
+    "https://github.com/fortuinlab/swag-lora",
+    "https://github.com/MohammadrezaBanaei/LoRA-XS"
+  ],
+  "tasks": [
+    "Low-Rank Adaptation (LoRA)",
+    "Parameter-efficient Uncertainty Quantification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "B-LoRA-XS",
+    "SWAG-LoRA",
+    "Laplace-LoRA",
+    "BLoB",
+    "B-LoRA",
+    "LoRA-XS",
+    "LoRA",
+    "SWAG"
+  ],
+  "results": [
+    "Superior calibration and accuracy",
+    "Lower expected calibration error and negative log-likelihood",
+    "Significantly fewer parameters",
+    "Greater training stability",
+    "Simpler, lower-rank covariance representations"
+  ],
+  "title": "Minimal Ranks, Maximum Confidence Parameter-efficient Uncertainty Quantification for LoRA.pdf",
+  "abstract": "Low-Rank Adaptation (LoRA) enables parameter-efficient fine-tuning of large lan- guage models by decomposing weight updates into low-rank matrices, significantly reducing storage and computational overhead. While effective, standard LoRA lacks mechanisms for uncertainty quantification, leading to overconfi- dent and poorly calibrated models. Bayesian variants of LoRA address this limitation, but at the cost of a significantly increased number of trainable parameters, partially offsetting the original efficiency gains. Additionally, these models are harder to train and may suffer from unstable convergence. In this work, we propose a novel parameter-efficient Bayesian LoRA, demonstrating that effective uncertainty quantification can be achieved in very low-dimensional parameter spaces. The proposed method achieves strong performance with improved calibration and generalization while maintaining computational efficiency. Our empirical findings show that, with the appropriate projection of the weight space: (1) uncertainty can be effectively modeled in a low-dimensional space, and (2) weight covariances exhibit low ranks. 1 Introduction LoRA (Low-Rank Adaptation) (Hu et al., 2021) re- duces computational overhead by decomposing the update weights of pre-trained models into low-rank matrices, enabling efficient adaptation to down- stream tasks. Minimizing the number of trainable parameters reduces memory and storage require- ments, making large-scale model adaptation fea- sible. Reducing computational overhead speeds up training time and makes adaptation possible in resource-constrained settings. Unlike pre-trained models, which are relatively well-calibrated (OpenAI, 2023), fine-tuned large models (e.g., LLMs) often become overconfident *Primary contributors. 0.20 0.30 Brier 10k 100k 1M LoRA SWAG-LoRA LoRA-XS our (k=10) 0.4k 5k 6k 25k 60k 74k 0.2M 0.3M 0.7M 0.8M 2.4M 9.4M # parameters 0.050 0.075 ECE Figure 1: Performance averaged over multiple GLUE datasets (individual results in Fig. 3). Our method achieves superior calibration (ECE) and competitive predictive performance (Brier) while maintaining com- putational efficiency. For example, at r \u201c 8 (\u0132), we reduce ECE by half with only 1/10th LoRA parameters. and poorly calibrated (Jiang et al., 2021; Tian et al., 2023; Xiao et al., 2022; He et al., 2023), especially when trained on limited data. This hinders their usability for applications where uncertainty-aware decisions are performed. Bayesian treatment is then frequently proposed to address overconfidence in neural networks (Blun- dell et al., 2015; Kristiadi et al., 2020; Aitchi- son et al., 2021; Izmailov et al., 2021). Conse- quently, recently proposed Bayesian variants of LoRA (Onal et al., 2024; Robeyns, 2024; Doan et al., 2025) address the aforementioned challenges by introducing uncertainty estimation directly into the fine-tuning process. During training, these mod- els continuously adjust both the mean and covari- ance of fine-tuned parameters to achieve better gen- eralization and uncertainty quantification. Learning the posterior covariance matrix is nec- essary for modeling epistemic uncertainty. How- ever, its size grows quadratically with the number of parameters, which can easily cancel out the bene- fits of LoRA, in addition to making learning signifi- cantly harder. Using low-rank, Kronecker-factored, or diagonal-only covariances partially alleviates the problem, but as we demonstrate in Sec. 3, this 1 arXiv:2502.12122v1 [cs.LG] 17 Feb 2025"
+}

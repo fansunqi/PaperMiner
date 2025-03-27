@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Uniform mean estimation for monotonic processes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Coin-betting framework",
+    "PAC-Bayesian framework",
+    "Binary relative entropy"
+  ],
+  "results": [
+    "State-of-the-art performance for CDF confidence bands",
+    "Relatively simple expression and efficient computation"
+  ],
+  "title": "Uniform Mean Estimation for Monotonic Processes.pdf",
+  "abstract": "We consider the problem of deriving uniform confidence bands for the mean of a monotonic stochastic process, such as the cumulative distribution function (CDF) of a random variable, based on a sequence of i.i.d. observations. Our approach leverages the coin-betting framework, and inherits several favourable characteristics of coin-betting methods. In particular, for each point in the domain of the mean function, we obtain anytime-valid confidence intervals that are numerically tight and adapt to the variance of the observations. To derive uniform confidence bands, we employ a continuous union bound that crucially leverages monotonicity. In the case of CDF estimation, we also exploit the fact that the empirical CDF is piece-wise constant to obtain simple confidence bands that can be easily computed. In simulations, we find that our confidence bands for the CDF achieve state-of-the-art performance. Keywords: Anytime-valid inference, coin-betting, family-wise error, CDF estimation, DKW inequality. 1. Introduction We study the problem of uniformly estimating the mean of a monotonic stochastic process, namely an almost surely monotonic random function. As a motivating example, consider the problem of estimating the cumulative distribution function (CDF), F(y) = P(X \u2264y), of a random variable X. Given an i.i.d. sample (X1, . . . , XT ), a natural estimator is the empirical CDF, \u02c6FT (y) = 1 T PT t=1 I{Xt \u2264y}, which has mean F(y) and is non-decreasing in y. Monotonic risk functions, such as the risk functions used for calibrating black-box models (Bates et al., 2021; Nguyen et al., 2024), are another important application. A vast literature in probability and statistics has focused on CDF estimation. Classical results include the Glivenko-Cantelli theorem (Glivenko, 1933; Cantelli, 1933) and the Dvoretzky-Kiefer-Wolfowitz (DKW) inequality (Dvoretzky et al., 1956). The Glivenko-Cantelli theorem states that the empirical CDF converges uniformly to the CDF, while the DKW inequality provides a non-asymptotic uniform bound on the absolute difference between the CDF and the empirical CDF. Despite the fact that the constant in the DKW inequality is sharp (Massart, 1990), this bound is often not entirely satisfactory for several reasons. First, the DKW inequality is not adaptive to the variance of the empirical CDF, which implies it is typically loose at points where the CDF is close to 0 or 1. Second, the DKW inequality is not anytime-valid, in the sense that it only holds for a fixed sample size and does not allow for optional continuation. In this work, we develop a new method for uniformly estimating the mean of a monotonic bounded stochastic process. Our approach is based on the coin-betting framework (Orabona and Jun, 2023; Waudby- Smith and Ramdas, 2023), which is part of a broader line of work on using gambling algorithms to derive concentration inequalities (Shafer and Vovk, 2019), and is known to provide numerically tight, anytime-valid and variance-adaptive confidence intervals for bounded random variables. To obtain uniform confidence bands (namely families of confidence intervals holding simultaneously on the whole domain, as in Figure 1), we use a refined continuous union bound of PAC-Bayesian inspiration (Alquier, 2024; Jang et al., 2023), which fundamentally leverages the monotonicity of the process. Email addresses: eugenio.clerico@gmail.com (Eugenio Clerico), hamishedward.flynn@upf.edu (Hamish E Flynn), patrick.rebeschini@stats.ox.ac.uk (Patrick Rebeschini) Preprint submitted to Statistics & Probability Letters February 4, 2025 arXiv:2502.01244v1 [math.ST] 3 Feb 2025"
+}

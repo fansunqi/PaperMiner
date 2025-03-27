@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "T-calibration in semi-parametric models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bregman loss function",
+    "Mixture representation",
+    "Pareto optimal parameters"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "T-calibration in Semi-Parametric Models.pdf",
+  "abstract": "This note relates the calibration of models to the consistent loss functions for the target functional of the model. We demonstrate that a model is calibrated if and only if there is a parameter value that is optimal under all consistent loss functions. 1 Introduction When probability predictions p \u2208[0, 1] for the success of a binary outcome Y \u2208{0, 1} are issued, it is broadly accepted that such predictions should be calibrated in the sense that P(Y = 1 | p) = p, almost surely. Similarly, when probabilistic predictions in the form of a distribution over the possible values of the outcome Y are issued, these predictions ought to be calibrated in a suitable sense in order to ensure the statistical compatibility between predictions and observations (Dawid, 1984; Diebold et al., 1998; Str\u00a8ahl and Ziegel, 2017; Gneiting and Resin, 2023). More recently, it has also been argued that point-predictions for statistical functionals, and respective statistical models should be calibrated in a suitable sense (Gneiting and Resin, 2023; W\u00a8uthrich and Ziegel, 2024). In this introduction, we will assume that the mean or expectation is the functional of interest but the results of the paper are for a general identifiable (and elicitable) functional such as quantiles, expectiles, moments, robust location functionals, or ratios of expecta- tions. Let (X, Y ) be a random vector with X \u2208X, Y \u2208R and assume that Y has finite mean. A model, m(x; \u03b2), \u03b2 \u2208\u0398, is (expectation-)calibrated if E (Y |m(X; \u03b2\u2217)) = m(X; \u03b2\u2217) a.s. for some \u03b2\u2217\u2208\u0398. Clearly, if the model is correctly specified, that is, E (Y |X) = m(X; \u03b2\u2217) a.s. for some \u03b2\u2217\u2208\u0398, (1) it is also calibrated. However, the converse may not hold. This can easily be seen by taking a constant model m(X; \u03b2) = m(\u03b2) that does not depend on the covariate X. Then, the model is calibrated as soon as m(\u03b2) takes the value E[Y ] for some \u03b2 \u2208\u0398. \u2217University of Bern, anja.muehlemann@unibe.ch \u2020ETH Zurich, ziegel@stat.math.ethz.ch 1 arXiv:2502.11727v1 [math.ST] 17 Feb 2025"
+}

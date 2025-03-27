@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "On-demand Vehicle Sharing Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Markov Decision Process",
+    "Mixed Integer Linear Programming",
+    "Online Learning",
+    "Lipschitz Bandits",
+    "Online Gradient Repositioning"
+  ],
+  "results": [
+    "Optimal regret bound of O(n^2.5 * sqrt(T))",
+    "Efficient computation of best base-stock repositioning policy",
+    "Regret guarantee of O(n * sqrt(T)) for Lipschitz Bandits",
+    "Regret lower bound of \u03a9(n * sqrt(T))"
+  ],
+  "title": "Learning While Repositioning in On-Demand Vehicle Sharing Networks.pdf",
+  "abstract": ". We consider a network inventory problem motivated by one-way, on-demand vehicle sharing services. Due to uncertain- ties in both demand and returns, as well as a fixed number of rental units across an n-location network, the service provider must periodically reposition vehicles to match supply with demand spatially while minimizing costs. The optimal repositioning policy under a general n-location network is intractable without knowing the optimal value function. We introduce the best base-stock repositioning policy as a generalization of the classical inventory control policy to n dimensions, and establish its asymptotic opti- mality in two distinct limiting regimes under general network structures. We present reformulations to efficiently compute this best base-stock policy in an offline setting with pre-collected data. In the online setting, we show that a natural Lipschitz-bandit approach achieves a regret guarantee of eO(T n n+1 ), which suffers from the exponential dependence on n. We illustrate the challenges of learning with censored data in networked systems through a regret lower bound analysis and by demonstrating the suboptimality of alternative algorithmic approaches. Motivated by these challenges, we propose an Online Gradient Repositioning algorithm that relies solely on censored demand. Under a mild cost- structure assumption, we prove that it attains an optimal regret of O(n2.5\u221a T), which matches the regret lower bound in T and achieves only polynomial dependence on n. The key algorithmic innovation involves proposing surrogate costs to disentangle intertemporal dependencies and leveraging dual solutions to find the gradient of policy change. Numerical experiments demonstrate the effectiveness of our proposed methods. Key words: censored demand, inventory network, Markov decision process, online learning 1. Introduction Urban traffic emissions and congestion are pressing issues in major cities worldwide, exacerbating climate change and negatively affecting the quality of life. According to International Energy Agency (2023), trans- portation accounts for approximately 25% of global CO2 emissions and is a critical target for sustainability initiatives. Carsharing has emerged as a promising solution to mitigate urban traffic and reduce emissions (Shaheen and Cohen 2020). An innovative business model, known as on-demand one-way or free-floating carsharing systems, has gained attention over the past decade. Prominent examples include Share Now in Europe, GIG in the United States, Evo in Canada, GoFun in China, and others around the world. In these businesses, the service provider owns and distributes vehicles across multiple locations for cus- tomer access. The service is on-demand, allowing customers to rent vehicles without advance booking, and * Please address all correspondence to hansheng.jiang@rotman.utoronto.ca, chunlin@stanford.edu, and maxshen@hku.hk. 1 arXiv:2501.19208v1 [stat.ML] 31 Jan 2025"
+}

@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Camouflaged object detection",
+    "Interactive segmentation",
+    "Referring expression segmentation"
+  ],
+  "datasets": [
+    "KOSCamo+",
+    "CHAMELEON",
+    "CAMO",
+    "COD10K",
+    "NC4K"
+  ],
+  "methods": [
+    "DeepSketchCamo",
+    "Sketch augmentation",
+    "Boundary refinement",
+    "Adaptive focal loss"
+  ],
+  "results": [
+    "18% better performance compared to SAM-based networks",
+    "120 times faster annotation time",
+    "Comparable performance to pixel-by-pixel annotations"
+  ],
+  "title": "Let Human Sketches Help Empowering Challenging Image Segmentation Task with Freehand Sketches.pdf",
+  "abstract": "Sketches, with their expressive potential, allow humans to convey the essence of an object through even a rough contour. For the first time, we har- ness this expressive potential to improve segmen- tation performance in challenging tasks like cam- ouflaged object detection (COD). Our approach introduces an innovative sketch-guided interactive segmentation framework, allowing users to intu- itively annotate objects with freehand sketches (drawing a rough contour of the object) instead of the traditional bounding boxes or points used in classic interactive segmentation models like SAM. We demonstrate that sketch input can significantly improve performance in existing iterative segmen- tation methods, outperforming text or bounding box annotations. Additionally, we introduce key modifications to network architectures and a novel sketch augmentation technique to fully harness the power of sketch input and further boost seg- mentation accuracy. Remarkably, our model\u2019s output can be directly used to train other neural networks, achieving results comparable to pixel- by-pixel annotations\u2014while reducing annotation time by up to 120 times, which shows great po- tential in democratizing the annotation process and enabling model training with less reliance on resource-intensive, laborious pixel-level anno- tations. We also present KOSCamo+, the first freehand sketch dataset for camouflaged object detection. The dataset, code, and the labeling tool will be open sourced. 1School of Information Engineering, Huzhou University 2Institute of Psychology, Chinese Academy of Sciences 3College of Computer Science and Technology, Zhejiang University 4School of Software Technology, Zhejiang University 5Information Sys- tems Technology and Design Pillar, Singapore University of Tech- nology and Design 6School of Information Science and Technol- ogy, University of Science and Technology of China. 7KOKONI, Moxin (Huzhou) Tech. Co., LTD.. Correspondence to: Tianrun Chen <tianrun.chen@kokoni3d.com >. Preliminary Work, Under Review,Copyright 2025 by the author(s). Figure 1. In this paper, we propose using human freehand sketches to improve image segmentation in challenging scenes\u2014camouflaged object detection. (a) Comparison of SAM and our method with different inputs. While SAM struggles with point, box, and scribble inputs, sketch input (drawing a rough contour of the object) improves performance with extra annotation time. The blue area shows user response time, and green lines rep- resent prompt types. (b) Practical applications of our method. Our method as an alternative to pixel-by-pixel annotation, producing comparable results, whereas SAM struggles with accuracy using point or box prompts. 1. Introduction Sketches have long been a fundamental means of communi- cation, dating back to prehistoric cave paintings (Kennedy, 1974). A sketch typically refers to a rough contour, yet for humans, even such an approximation is often enough to capture the essence of an object (Sayim & Cavanagh, 2011; Hertzmann, 2020; Goodwin et al., 2007). In this paper, we explore how this inherent human ability can help computers overcome a particularly challenging problem in computer vision: detecting objects that vanish into their surround- ings\u2014camouflaged object detection, a task that has long eluded even the state-of-the-art foundation models (Kirillov 1 arXiv:2501.19329v1 [cs.CV] 31 Jan 2025"
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Guardrail Identification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adversarial Prompt Optimization",
+    "Loss Function Design",
+    "Normalized Distance Evaluation"
+  ],
+  "results": [
+    "AP-Test accurately identifies guardrails",
+    "Normalized distance greater than 0.5 indicates guardrail presence",
+    "Ablation study shows the importance of loss terms and query set"
+  ],
+  "title": "Peering Behind the Shield Guardrail Identification in Large Language Models.pdf",
+  "abstract": "Human-AI conversations have gained increasing attention since the era of large language models. Consequently, more techniques, such as input/output guardrails and safety align- ment, are proposed to prevent potential misuse of such Human-AI conversations. However, the ability to identify these guardrails has significant implications, both for adver- sarial exploitation and for auditing purposes by red team operators. In this work, we propose a novel method, AP- Test, which identifies the presence of a candidate guardrail by leveraging guardrail-specific adversarial prompts to query the AI agent. Extensive experiments of four candidate guardrails under diverse scenarios showcase the effectiveness of our method. The ablation study further illustrates the im- portance of the components we designed, such as the loss terms. 1 Introduction Human-AI conversations have been significantly advanced by the rapid development of large language models (LLMs), owing to their exceptional capabilities in natural language understanding and generation [1,2,36]. These conversational AI agents are now extensively deployed across various do- mains, including customer service [2\u20134], education [31], and healthcare [32]. However, the widespread adoption of these applications has also brought about emerging security concerns, such as jailbreak attacks [24, 34, 44, 45] and prompt injection at- tacks [13, 25, 39, 42]. Safety guardrails [5, 12, 19, 20] are considered an effective and efficient technique that can mit- igate such risks via moderating the content from both users and AI agents. As shown in Figure 1, safety guardrails op- erate at multiple stages. At the input stage, they detect and block malicious content or adversarial prompts, such as hate speech [35, 37], jailbreak attempts [34, 45], and malicious instruction injections [25, 42] designed to override agent re- strictions. At the output stage, the guardrails detect AI- generated responses in real time, preventing harmful or un- ethical content. By incorporating these defenses, AI systems can maintain higher stages of security, reliability, and ethi- cal compliance, ensuring safe and trustworthy interactions in real-world applications. The ideal security scenario assumes that attackers pos- sess no prior knowledge of the underlying guardrail mecha- Input No Is safe? Yes No Is safe? Output Yes Base LLM Output Guard Input Guard AI Agent Figure 1: Overview of a conversational AI agent with input and output guardrails. nisms. In practice, understanding these mechanisms enables attackers to craft guardrail-specific attacks, such as tailored prompts that evade detection or manipulate outputs within safety limits. On the other hand, identifying guardrails helps red team operators attribute test failures, distinguishing whether defenses stem from external guardrails or the LLM\u2019s inherent safety mechanisms. This allows precise evaluation of adversarial prompts and defensive effectiveness. In this paper, we demonstrate that even in a black-box set- ting, where the internal workings of the AI agents are not explicitly disclosed, an attacker or a red team operator can extract critical information about these security mechanisms. Specifically, they can identify which guardrails are deployed in the system, even at which stage. We propose AP-Test, which utilizes adversarial prompts to test whether the candi- date guardrail is used in the input or output stage of the AI agent. As shown in Figure 2, our approach begins by prob- ing the AI agent with guardrail-specific adversarial prompts, which are designed to be flagged as unsafe by a specific candidate guardrail while remaining safe according to oth- ers. To optimize these adversarial prompts, we introduce a tailored loss function that balances three key objectives: (1) maximizing the probability that the candidate guardrail clas- sifies the prompt as unsafe, (2) minimizing the likelihood of the same prompt being classified as safe by the candidate guardrail, and (3) ensuring the prompt remains safe for other 1 arXiv:2502.01241v1 [cs.CR] 3 Feb 2025"
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text-to-Image Generation",
+    "Retrieval-augmented Generation"
+  ],
+  "datasets": [
+    "ImageNet",
+    "Stanford Cars",
+    "Stanford Dogs",
+    "Oxford Flowers"
+  ],
+  "methods": [
+    "Self-reflective Contrastive Learning",
+    "Reflective Retriever",
+    "Real-object-based Retrieval-augmented Generation"
+  ],
+  "results": [
+    "FID: 70.55",
+    "CLIP-T: 15.30",
+    "CLIP-I: 19.60",
+    "Average Improvement: 6.19%"
+  ],
+  "title": "RealRAG Retrieval-augmented Realistic Image Generation Via Self-reflective Contrastive Learning.pdf",
+  "abstract": "Recent text-to-image generative models, e.g., Sta- ble Diffusion V3 and Flux, have achieved notable progress. However, these models are strongly re- stricted to their limited knowledge, a.k.a., their own fixed parameters, that are trained with closed datasets. This leads to significant hallucinations or distortions when facing fine-grained and un- seen novel real-world objects, e.g., the appearance of the Tesla Cybertruck. To this end, we present the first real-object-based retrieval-augmented generation framework (RealRAG), which aug- ments fine-grained and unseen novel object gener- ation by learning and retrieving real-world images to overcome the knowledge gaps of generative models. Specifically, to integrate missing mem- ory for unseen novel object generation, we train a reflective retriever by self-reflective contrastive learning, which injects the generator\u2019s knowl- edge into the sef-reflective negatives, ensuring that the retrieved augmented images compensate for the model\u2019s missing knowledge. Furthermore, the real-object-based framework integrates fine- grained visual knowledge for the generative mod- els, tackling the distortion problem and improv- ing the realism for fine-grained object generation. Our Real-RAG is superior in its modular applica- tion to all types of state-of-the-art text-to-image generative models and also delivers remarkable performance boosts with all of them, such as a gain of 16.18% FID score with the auto-regressive model on the Stanford Car benchmark. 1The Hong Kong University of Science and Technology (Guangzhou) 2Guangxi Zhuang Autonomous Region Big Data Research Institute 3Shanghai Jiao Tong University 4The Hong Kong University of Science and Technology. Text-to-Image Generative Model Prompt: \"A Cybertruck is speeding along the Great Wall\" Text-to-Image Generative Model (1) (2) Retrieve Ref. Image (2) Similarity Score (1) Prompt: \"A Cybertruck is speeding along the Great Wall\" Reflective Retriever (a) (b) Prompt: \"A Cybertruck is speeding along the Great Wall\" Text-to-Image Generative Model Retrieve Ref. Image (c) \u201cA photo of cybertruck\u201d \u201cA truck is speeding along the Great Wall\u201d (1) (2) \u201cA photo of cybertruck\u201d \u201cA truck is speeding along the Great Wall\u201d Figure 1. (a) The pipeline of text-to-image generative models. (b) The framework of existing retrieval-augmented methods. (c) The framework of our proposed RealRAG. 1. Introduction Recent text-to-image generators have achieved notable progress in image synthesis from the given textual prompts. There are three mainstream types of generative models, including the U-Net-based diffusion model (Rombach et al., 2022; Podell et al., 2023), the DiT-based diffusion model (Xiao et al., 2024; Sun et al., 2024), and the auto- regressive model (Esser et al., 2024; BlackForest, 2024). Typically, these models store all their visual memory (e.g., the appearance of Big Ben) implicitly in the parameters of the underlying neural network, requiring a lot of pa- rameters(e.g., 10B). Furthermore, similar to the hallucina- tion problem of Large Language Models (LLMs) (OpenAI, 2023; Touvron et al., 2023), the large-scale text-to-image generative models also show the same problem. Some gen- erated images include ghosting, distortions, and unnatu- ral elements when generating specific real-world objects. Therefore, these problems motivate the development of text- to-image generation models, which can integrate external visual knowledge (e.g., images from the web) to augment generative realism and accuracy for fine-grained and unseen novel object generation. 1 arXiv:2502.00848v1 [cs.CV] 2 Feb 2025"
+}

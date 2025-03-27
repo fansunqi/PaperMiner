@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/juice500ml/acoustic-units-for-ood"
+  ],
+  "tasks": [
+    "Atypical Pronunciation Assessment"
+  ],
+  "datasets": [
+    "UASpeech",
+    "TORGO",
+    "SSNCE",
+    "speechocean762",
+    "L2-ARCTIC"
+  ],
+  "methods": [
+    "MixGoP",
+    "Gaussian Mixture Models (GMMs)",
+    "Self-Supervised Speech Models (S3Ms)"
+  ],
+  "results": [
+    "State-of-the-art performance on four out of five datasets",
+    "MixGoP achieves better performance than traditional features like MFCCs and Mel spectrograms"
+  ],
+  "title": "Leveraging Allophony in Self-Supervised Speech Models for Atypical Pronunciation Assessment.pdf",
+  "abstract": "Allophony refers to the variation in the pho- netic realization of a phoneme based on its phonetic environment. Modeling allophones is crucial for atypical pronunciation assess- ment, which involves distinguishing atypical from typical pronunciations. However, recent phoneme classifier-based approaches often sim- plify this by treating various realizations as a single phoneme, bypassing the complexity of modeling allophonic variation. Motivated by the acoustic modeling capabilities of frozen self-supervised speech model (S3M) features, we propose MixGoP, a novel approach that leverages Gaussian mixture models to model phoneme distributions with multiple subclus- ters. Our experiments show that MixGoP achieves state-of-the-art performance across four out of five datasets, including dysarthric and non-native speech. Our analysis further suggests that S3M features capture allophonic variation more effectively than MFCCs and Mel spectrograms, highlighting the benefits of integrating MixGoP with S3M features.1 1 Introduction A phoneme can be phonetically realized differ- ently depending on its environment, a phenomenon known as allophony in phonology (Twaddell, 1952; Ladefoged, 1965; Collins et al., 2019). For in- stance, the English phoneme /t/ exhibits various allophonic realizations: [th] (aspirated stop) in tap, [t] (unaspirated stop) in stop, [R] (flap) in butter, and [P] (glottal stop) in kitten. Accurately capturing these variations is crucial, as it reflects the full spec- trum of phonetic realizations within a phoneme. It is particularly important for atypical pronunci- ation assessment (Twaddell, 1952; Jokisch et al., 2009; Vidal et al., 2019), as it has to distinguish atypical (out-of-distribution; OOD) from atypical (in-distribution) pronunciations (Yeo et al., 2023a). 1The full codebase is available at https://github.com/ juice500ml/acoustic-units-for-ood Typical Speech (In-distribution) Likelihood P(X) Input X Allophones of /t/ [th] [\u027e] Atypical Speech (Out-of-distribution) P(X1) < P(X2) \u21d2 X1 is more atypical than X2 X1 X2 [t] P(X1) P(X2) Figure 1: Summary of our method, MixGoP. We model the likelihood of each phoneme using a Gaussian mix- ture, trained on typical speech (in-distribution), to cap- ture allophonic variations. We then evaluate on atypical speech (out-of-distribution). The y-axis represents the log-likelihood of a phoneme, where lower values indi- cate greater atypicality. Before the era of deep neural networks (DNNs), allophones were modeled for speech recognition (Sagayama, 1989; Lee et al., 1990; Young et al., 1994). However, DNN-based approaches (Hu et al., 2015b; Yeo et al., 2023a) depend on phoneme clas- sifiers that treat speech segments from a single phoneme as a single cluster, avoiding the com- plexity of modeling allophones. This is partly due to DNN\u2019s strong classification capabilities, which rely on trained hidden features to model individual phonemes well. In recent years, self-supervised speech models (S3Ms) have shifted the landscape of acoustic mod- eling. Unlike DNNs, S3Ms leverage their frozen features directly, without requiring additional train- ing (Feng et al., 2023; Chang et al., 2024). Their effectiveness motivates us to revisit modeling al- lophones via Gaussian Mixture Models (GMMs) (Bilmes et al., 1998; Young et al., 1994). Conse- quently, we propose MixGoP, a GMM-based ap- proach that models each phoneme as a set of allo- phonic subclusters (see Figure 1). By integrating GMMs with S3M features, we aim to directly cap- arXiv:2502.07029v1 [cs.CL] 10 Feb 2025"
+}

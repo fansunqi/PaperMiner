@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shortest path computation",
+    "Route planning",
+    "Customizable route planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Customizable Contraction Hierarchies (CCH)",
+    "Nested dissection",
+    "Chordal completion",
+    "Elimination tree",
+    "Lazy RPHAST"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Customizable Contraction Hierarchies \u2013 A Survey.pdf",
+  "abstract": "This work establishes the technical fundamentals of a well-tuned Customizable Contraction Hierar- chies (CCH) implementation that is simple and elegant. We give a detailed overview of the state of the art of CCH, review recent advances on CCH and show how to combine them. Additionally, we propose further refinements that improve the performance of CCH. An extensive evaluation confirms that a CCH framework is not only comprehensive in supported features but also competitive in performance to both Contraction Hierarchies (CH) and Customizable Route Planning (CRP). 2012 ACM Subject Classification Theory of computation \u2192Shortest paths; Mathematics of computing \u2192Graph algorithms; Applied computing \u2192Transportation Keywords and phrases realistic road networks, customizable contraction hierarchies, route planning, shortest paths Digital Object Identifier 10.4230/LIPIcs.CVIT.2016.23 Acknowledgements This work was supported by funding from the pilot program Core-Informatics of the Helmholtz Association (HGF) 1 Introduction A routing framework for modern map and navigation applications requires far more than an effective speedup technique for the quick computation of shortest paths [8]. While the shortest path computation should not be the bottleneck of the routing engine, there are many additional requirements. A practical algorithm must handle not only car travel times but also other length functions (metrics) such as walking, biking, or user-defined preferences, for example, to avoid highways. Further, dynamic routing considering real-time traffic is critical. Therefore, updates to the length function must be fast enough for frequent adjustments. Integrating turn costs and restrictions is also an essential requirement for high-quality routing. Finally, point-of-interest queries are also an important feature in such applications. The first speedup technique that supports this entirety of requirements is Customizable Route Planning (CRP) sometimes also referred to as Multi Level Dijkstra (MLD) [8, 10]. This technique is also the first to take advantage of a three-phase approach where the classical preprocessing phase is split into an metric-independent phase and a customization phase. The motivation behind this is that topological updates happen much less frequently than metric updates and thus only one part of the preprocessing has to be redone frequently. Inspired by CRP, Contraction Hierarchies (CH) have also been extended to a three-phase setup [11]. This variant is called Customizable Contraction Hierarchies (CCH). Classical CH \u00a9 Thomas Bl\u00e4sius, Valentin Buchhold, Dorothea Wagner, Tim Zeitz, and Michael Z\u00fcndorf; licensed under Creative Commons License CC-BY 4.0 42nd Conference on Very Important Topics (CVIT 2016). Editors: John Q. Open and Joan R. Access; Article No. 23; pp. 23:1\u201323:30 Leibniz International Proceedings in Informatics Schloss Dagstuhl \u2013 Leibniz-Zentrum f\u00fcr Informatik, Dagstuhl Publishing, Germany arXiv:2502.10519v1 [cs.DS] 14 Feb 2025"
+}

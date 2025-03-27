@@ -1,0 +1,37 @@
+{
+  "code_links": [
+    "https://huggingface.co/BSC-LT/salamandra",
+    "https://github.com/langtech-bsc/salamandra"
+  ],
+  "tasks": [
+    "Multilingual language understanding",
+    "Multilingual text generation",
+    "Vision language understanding"
+  ],
+  "datasets": [
+    "Common Crawl",
+    "GitHub",
+    "Wikimedia",
+    "EurLex",
+    "StarCoder",
+    "Aya Collection",
+    "LLaVA OneVision"
+  ],
+  "methods": [
+    "Transformer",
+    "RoPE",
+    "SwiGLU",
+    "RMSNorm",
+    "Flash Attention",
+    "Grouped Query Attention",
+    "Instruction Tuning",
+    "Vision Language Fine-tuning"
+  ],
+  "results": [
+    "Competitive performance on IberoBench benchmark",
+    "Achieved state-of-the-art results in some tasks",
+    "Strong multilingual capabilities"
+  ],
+  "title": "Salamandra Technical Report.pdf",
+  "abstract": "This work introduces Salamandra, a suite of open-source decoder-only large lan- guage models available in three different sizes: 2, 7, and 40 billion parameters. The models were trained from scratch on highly multilingual data that comprises text in 35 European languages and code. Our carefully curated corpus is made exclusively from open-access data compiled from a wide variety of sources. Along with the base models, supplementary checkpoints that were fine-tuned on public-domain instruction data are also released for chat applications. Additionally, we also share our preliminary experiments on multimodality, which serve as proof-of-concept to showcase potential applications for the Salamandra family. Our extensive evalua- tions on multilingual benchmarks reveal that Salamandra has strong capabilities, achieving competitive performance when compared to similarly sized open-source models. We provide comprehensive evaluation results both on standard down- stream tasks as well as key aspects related to bias and safety. With this technical report, we intend to promote open science by sharing all the details behind our design choices, data curation strategy and evaluation methodology. In addition to that, we deviate from the usual practice by making our training and evaluation scripts publicly accessible. We release all models under a permissive Apache 2.0 license in order to foster future research and facilitate commercial use, thereby contributing to the open-source ecosystem of large language models. Models https://huggingface.co/BSC-LT/salamandra Code https://github.com/langtech-bsc/salamandra arXiv:2502.08489v2 [cs.CL] 13 Feb 2025"
+}

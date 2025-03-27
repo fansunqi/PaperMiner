@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Large object manipulation"
+  ],
+  "datasets": [
+    "OMOMO"
+  ],
+  "methods": [
+    "Dynamic Chain",
+    "Cross-embodiment imitation learning",
+    "PPO"
+  ],
+  "results": [
+    "Outperforms baselines in simulation and real-world experiments",
+    "Highest object-moving velocities and best tracking performance",
+    "Successful application in real-world tasks like trash cart transportation and chair rearrangement"
+  ],
+  "title": "RobotMover Learning to Move Large Objects by Imitating the Dynamic Chain.pdf",
+  "abstract": "\u2014Moving large objects, such as furniture, is a critical capability for robots operating in human environments. This task presents significant challenges due to two key factors: the need to synchronize whole-body movements to prevent collisions between the robot and the object, and the under-actuated dynamics arising from the substantial size and weight of the objects. These chal- lenges also complicate performing these tasks via teleoperation. In this work, we introduce RobotMover, a generalizable learning framework that leverages human-object interaction demonstra- tions to enable robots to perform large object manipulation tasks. Central to our approach is the Dynamic Chain, a novel representation that abstracts human-object interactions so that they can be retargeted to robotic morphologies. The Dynamic Chain is a spatial descriptor connecting the human and object root position via a chain of nodes, which encode the position and velocity of different interaction keypoints. We train policies in simulation using Dynamic-Chain-based imitation rewards and domain randomization, enabling zero-shot transfer to real-world settings without fine-tuning. Our approach outperforms both learning-based methods and teleoperation baselines across six evaluation metrics when tested on three distinct object types, both in simulation and on physical hardware. Furthermore, we successfully apply the learned policies to real-world tasks, such as moving a trash cart and rearranging chairs. I. INTRODUCTION Moving large objects such as furniture is a common chal- lenge in human spaces. Whether it is rearranging a living room or organizing a workspace, these tasks often require significant effort. While people have traditionally handled these tasks independently, there is an increasing interest in developing autonomous robots that can help. The ability for robots to assist in moving large objects would not only reduce physical strain on humans, but also enable greater efficiency in various settings, ranging from households to industrial logistics. While there has been significant progress in enabling robots to rearrange small items [1, 6, 4, 34], manipulating large objects presents a unique set of challenges. These challenges arise in two areas, as illustrated in Figure 2. First, when objects are large enough, they impose non-negligible spatial constraints. Without advanced control policies, the object may collide with the robot or its surroundings, potentially causing damage to both the system and the object. Second, large objects typically exceed the lifting capacity of most robots, requiring robots to manage the object\u2019s momentum arXiv:2502.05271v1 [cs.RO] 7 Feb 2025"
+}

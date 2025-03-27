@@ -1,0 +1,22 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Vision-Language-Action (VLA) Model Probing",
+    "Symbolic State Extraction",
+    "Cognitive Architecture Integration"
+  ],
+  "datasets": [
+    "LIBERO-spatial"
+  ],
+  "methods": [
+    "Linear Probing",
+    "Object and Action State Prediction",
+    "DIARC Cognitive Architecture"
+  ],
+  "results": [
+    "High accuracy (> 0.90) for object and action states across most layers",
+    "DIARC-OpenVLA system for real-time symbolic monitoring"
+  ],
+  "title": "Probing a Vision-Language-Action Model for Symbolic States and Integration into a Cognitive Architec.pdf",
+  "abstract": "\u2014Vision-language-action (VLA) models hold promise as generalist robotics solutions by translating visual and linguistic inputs into robot actions, yet they lack reliability due to their black-box nature and sensitivity to environmental changes. In contrast, cognitive architectures (CA) excel in symbolic reasoning and state monitoring but are constrained by rigid predefined execution. This work bridges these approaches by probing OpenVLA\u2019s hidden layers to uncover symbolic representations of object properties, relations, and action states, enabling inte- gration with a CA for enhanced interpretability and robustness. Through experiments on LIBERO-spatial pick-and-place tasks, we analyze the encoding of symbolic states across different layers of OpenVLA\u2019s Llama backbone. Our probing results show consis- tently high accuracies (> 0.90) for both object and action states across most layers, though contrary to our hypotheses, we did not observe the expected pattern of object states being encoded earlier than action states. We demonstrate an integrated DIARC- OpenVLA system that leverages these symbolic representations for real-time state monitoring, laying the foundation for more interpretable and reliable robotic manipulation. Index Terms\u2014Vision Language Action Model, Symbolic States, Cognitive Architectures, Robotics *These authors contributed equally. I. INTRODUCTION A vision-language-action (VLA) model is a type of foun- dation model for robotics that takes in images and language commands as input and directly outputs robot actions [1], [2]. VLAs show promise in providing generalist robot policies across different scenarios and robotic platforms [1]. Recently, OpenVLA has emerged as a significant open-source VLA model, built on a Llama 2 language model backbone combined with a visual encoder that fuses pretrained features. Despite using only 7B parameters (7x fewer than comparable models), OpenVLA has demonstrated strong generalization capabilities across diverse manipulation tasks through its training on nearly one million real-world robot demonstrations [2]. However, recent evaluation of VLAs shows that they strug- gle with changes in environmental factors such as camera poses, lighting conditions, and the presence of unseen objects [3]. VLAs also lack reliability, particularly because of their opaque, black-box nature, which makes their internal workings challenging to interpret. On the other hand, traditional Cognitive Architectures (CA), also known as symbolic architectures, excel in dependable, symbol-based reasoning but are constrained by their reliance on predefined rules and coded policy execution [4], [5]. Ideally, a CA could harness the versatility of generalist robotic policies and the multimodal capabilities offered by VLAs while maintaining vigilance over dynamic environmen- tal changes during execution in safety-critical applications such as robotic manipulations. In this work, we investigate whether and how OpenVLA en- codes symbolic representations in its activation space through probing experiments. Our investigation aims to answer the following research questions: \u2022 RQ1: To what extent can we decode object properties and relations (e.g., spatial relationships between objects) from OpenVLA\u2019s hidden layer activations? \u2022 RQ2: Can we extract action-related concepts (e.g., grasp states, movement targets) from the model\u2019s activation patterns, and how do these compare to object-level rep- resentations? To answer these questions, we train linear probes on dif- ferent layers of OpenVLA to predict symbolic states during manipulation tasks. Based on prior work in language model probing [6] [7], we hypothesize that: arXiv:2502.04558v1 [cs.RO] 6 Feb 2025"
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/AnonymousCode-ComputerScience/RIDE"
+  ],
+  "tasks": [
+    "LLM Alignment"
+  ],
+  "datasets": [
+    "UltraChat",
+    "SORRY-Bench",
+    "Alpaca-eval",
+    "just-eval-instruct",
+    "MT-Bench"
+  ],
+  "methods": [
+    "In-Context Learning (ICL)",
+    "Restyling",
+    "Hierarchical Traversal"
+  ],
+  "results": [
+    0.1,
+    0.22,
+    0.32
+  ],
+  "title": "RIDE Enhancing Large Language Model Alignment Through Restyled In-Context Learning Demonstration Exe.pdf",
+  "abstract": "Alignment tuning is crucial for ensuring large language models (LLMs) behave ethically and helpfully. Current alignment approaches require high-quality annotations and signif- icant training resources. This paper pro- poses a low-cost, tuning-free method using in-context learning (ICL) to enhance LLM alignment. Through an analysis of high- quality ICL demos, we identified style as a key factor influencing LLM alignment ca- pabilities and explicitly restyled ICL exem- plars based on this stylistic framework. Ad- ditionally, we combined the restyled demos to achieve a balance between the two con- flicting aspects of LLM alignment\u2014factuality and safety. We packaged the restyled ex- amples as prompts to trigger few-shot learn- ing, improving LLM alignment. Compared to the best baseline approach, with an average score of 5.00 as the maximum, our method achieves a maximum 0.10 increase on the Alpaca-eval task (from 4.50 \u21924.60), a 0.22 enhancement on the just-eval-instruct benchmark (from 4.34 \u21924.56), and a max- imum improvement of 0.32 (from 3.53 \u2192 3.85) on the MT-Bench dataset. We release the code and data at https://github.com/ AnonymousCode-ComputerScience/RIDE. 1 Introduction Alignment tuning helps bridge the gap between raw model capabilities and the nuanced requirements of different tasks, such as delivering accurate in- formation, maintaining user safety, and handling sensitive topics with care (Shneiderman, 2020; Wang et al., 2023b; Qi et al., 2024b). The main- stream alignment tuning methods, such as super- vised fine-tuning and reinforcement learning with human feedback (RLHF), rely on a large mount of annotated data and significant computing re- sources (Ouyang et al., 2022; Sun et al., 2023; Dai \u2020Corresponding author. et al., 2024; Rafailov et al., 2024; Zhou et al., 2024; Wu et al., 2024). They potentially leading to catas- trophic forgetting of pre-trained knowledge (Wang et al., 2023a). In contrast, In-Context Alignment (ICA) provides a low-cost, flexible alternative by employing a handful of selected demonstration ex- emplars for In-Context Learning (ICL), enabling LLMs to align with user intent without changing model parameters (Lin et al., 2024). The majority of the prior works on ICA in- vestigate selecting demonstration exemplars (Liu et al., 2022; Min et al., 2022; Ye et al., 2023; Peng et al., 2024; Choi and Li, 2024; Wang et al., 2024), while Lin et al. (2024) only utilize three manu- ally designed exemplars with customized styles, referred to as URIAL, across all tasks. These handcrafted ICL exemplars complement each other, achieving a delicate balance between factuality and safety, which effectively enhance LLM align- ment capabilities empirically. However, URIAL lacks quantitative analyses to explain why these specific manually crafted ICL demos are effective and what is the impact of each style factor. In addition to styles, what are the other key fac- tors may influence the selection and combination of ICL exemplars? Zhao et al. (2024) identify the importance of the source of ICL exemplars, while Zhou et al. (2024) investigate the impact of labels, input-label mappings, and distribution of inputs. Moreover, ICA seems to impose two conflicting demands: on one hand, LLMs need to provide more in-depth, informative, and helpful content (factuality) (Shen et al., 2023); on the other hand, for safety reasons, LLMs must refuse to answer inappropriate queries (safety) (Ji et al., 2024). Bal- ancing these factors is crucial to effectively lever- aging ICL exemplars. In this work, we conduct the first quantitative study to assess the impact of individual style fac- tors. In particular, we select and rank ICL can- didates from a candidate tool in terms of a met- 1 arXiv:2502.11681v1 [cs.CL] 17 Feb 2025"
+}

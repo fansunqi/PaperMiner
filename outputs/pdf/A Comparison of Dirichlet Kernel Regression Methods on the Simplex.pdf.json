@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/FredericOuimetMcGill/DirichletKernelRegression"
+  ],
+  "tasks": [
+    "Nonparametric Regression",
+    "Boundary Bias Correction",
+    "Dirichlet Kernel Estimation"
+  ],
+  "datasets": [
+    "GEMAS"
+  ],
+  "methods": [
+    "Gasser\u2013Mu\u0308ller Estimator",
+    "Dirichlet Kernel",
+    "Local Linear Smoother",
+    "Nadaraya\u2013Watson Estimator"
+  ],
+  "results": [
+    "Local Linear Smoother consistently outperforms other methods",
+    "Mean Integrated Squared Error (MISE) and Asymptotic Normality"
+  ],
+  "title": "A Comparison of Dirichlet Kernel Regression Methods on the Simplex.pdf",
+  "abstract": "An asymmetric Dirichlet kernel version of the Gasser\u2013M\u00a8uller estimator is introduced for regression surfaces on the simplex, extending the univariate analog proposed by Chen [Statist. Sinica, 10(1) (2000), pp. 73\u201391]. Its asymptotic properties are investigated under the condition that the design points are known and fixed, including an analysis of its mean integrated squared error (MISE) and its asymptotic normality. The estimator is also applicable in a random design setting. A simulation study compares its performance with two recently proposed alternatives: the Nadaraya\u2013 Watson estimator with Dirichlet kernel and the local linear smoother with Dirichlet kernel. The results show that the local linear smoother consistently outperforms the others. To illustrate its applicability, the local linear smoother is applied to the GEMAS dataset to analyze the relationship between soil composition and pH levels across various agricultural and grazing lands in Europe. Keywords: Asymmetric kernel, asymptotic normality, beta kernel, boundary bias, Dirichlet kernel, Gasser\u2013M\u00a8uller estimator, local linear smoother, mean squared error, Nadaraya\u2013Watson estimator, nonparametric regression, optimal bandwidth, regression estimation, simplex. 2020 MSC: Primary: 62G08; Secondary: 62G05, 62H12 1. Introduction Regression analysis is a fundamental statistical technique for examining how a response variable Y relates to a d-dimensional vector X = (X1, . . . , Xd) of explanatory variables. In the context of data with unbounded support, it is well-established that kernel-based methods in nonparametric regression are highly dependent on the choice of smoothing bandwidth but relatively less so to the shape of the kernel (Wasserman, 2006). For data supported on Rd, many commonly used kernels are symmetric to reflect the underlying symmetry of the space; see, e.g., Silverman (1986, p. 43) for some classic univariate examples. This approach works well for data with unbounded support. However, when dealing with bounded supports, symmetric kernels introduce a bias near the boundary due to a spill-over effect, often referred to as the boundary bias problem. This bias occurs because the weight assigned to any observation Xi in the regression function estimate is reduced according to the proportion of the kernel centered at Xi that spills over the support. Over the years, many strategies have been developed to mitigate the boundary bias problem of nonparametric kernel estimators for regression functions. An effective solution was proposed by Gasser and M\u00a8uller (1979) when the input space is the compact interval [0, 1]. Their estimator, now referred to as the Gasser\u2013M\u00a8uller estimator in the modern lingo, is a weighted sum of the response variables where the weights are integrals of a fixed kernel over regions partitioning the input space, each containing a fixed design point xi. In their article, these authors reduced the \u2217Corresponding author. Email address: frederic.ouimet2@mcgill.ca arXiv:2502.08461v1 [math.ST] 12 Feb 2025"
+}

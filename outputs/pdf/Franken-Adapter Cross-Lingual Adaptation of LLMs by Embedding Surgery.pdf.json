@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/fanjiang/franken-adapter"
+  ],
+  "tasks": [
+    "Cross-lingual Adaptation of LLMs"
+  ],
+  "datasets": [
+    "Next Thousand Languages (NTL)",
+    "Wikipedia",
+    "mC4",
+    "FLAN"
+  ],
+  "methods": [
+    "Embedding Surgery",
+    "Instruction Tuning",
+    "LoRA Adaptation"
+  ],
+  "results": [
+    "Up to 20% improvement across 96 languages",
+    "14% improvement over math-optimized LLM across 20 languages"
+  ],
+  "title": "Franken-Adapter Cross-Lingual Adaptation of LLMs by Embedding Surgery.pdf",
+  "abstract": "The capabilities of Large Language Models (LLMs) in low-resource languages lag far be- hind those in English, making their universal accessibility a significant challenge. To allevi- ate this, we present Franken-Adapter, a modular language adaptation approach for decoder-only LLMs with embedding surgery. Our method be- gins by creating customized vocabularies for tar- get languages and performing language adapta- tion through embedding tuning on multilingual data. These pre-trained embeddings are subse- quently integrated with LLMs that have been instruction-tuned on English alignment data to enable zero-shot cross-lingual transfer. Our ex- periments on Gemma2 models with up to 27B parameters demonstrate improvements of up to 20% across 96 languages, spanning both discrimi- native and generative tasks, with minimal regres- sions (<1%) in English. Further in-depth analysis reveals the critical role of customizing tokenizers in enhancing language adaptation, while boosting inference efficiency. Additionally, we show the versatility of our method by achieving a 14% im- provement over a math-optimized LLM across 20 languages, offering a modular solution to transfer reasoning abilities across languages post hoc. 1. Introduction Large Language Models (LLMs) have transformed the field of natural language processing through pre-training on ex- tensive web-scale corpora (Brown et al., 2020; Anil et al., 2024). Despite these advancements, their success has been primarily centered on English, leaving the multilingual abil- ity less explored. While the multilingual potential of LLMs has been demonstrated across multiple languages (Shi et al., 2023), their practical applications remain largely confined to a limited set of high-resource languages. This limitation *Work done during an internship at Google. 1The Univer- sity of Melbourne 2Google. Correspondence to: Fan Jiang <fan.jiang1@student.unimelb.edu.au>. FLORES BELEBELE XSUM-IN SIB-200 XORQA-IN Avg GPT-3.5-Turbo Aya23-35B BLOOMZ-7B Qwen2.5-32B-IT Franken-Adapter+LoRA (Ours) NLLB-54B Figure 1. Zero-shot performance comparison between our best model (Gemma2-27B-Franken-Adapter-LoRA) and state- of-the-art LLMs on five benchmarks. BELEBELE (#59 Langs.) FLORES-200 (#86 Langs.) GSM8K-NTL (#20 Langs.) 0.8 1.0 1.2 1.4 1.6 Normalized Performance Pre-trained LLMs + Emb Surgery BELEBELE (#59 Langs.) SIB-200 (#96 Langs.) FLORES-200 (#86 Langs.) XORQA-IN (#29 Langs.) CROSSSUM-IN (#30 Langs.) 0.8 1.0 1.2 1.4 1.6 Normalized Performance Instruct Tuning Franken-Adapter Franken-Adapter+LoRA Figure 2. Result summary across diverse benchmarks. Scores are normalized v.s. Pre-trained (top) and instruction-tuned (bottom) LLMs. All scores are macro-averaged across all sizes of Gemma2. reduces their utility for users speaking under-represented languages (Ahia et al., 2023). A widely adopted approach to multilingual adaptation in- volves continued pre-training on additional data in target languages by using pre-trained LLMs as initialization (Fu- jii et al., 2024; Zheng et al., 2024). This paradigm typi- cally requires full-parameter tuning on vast data, making the adaptation of a new LLM to accommodate every language prohibitively costly. Moreover, such adaptation poses a sig- nificant risk of catastrophic forgetting, whereby the LLM loses previously acquired knowledge from the initial pre- training phase (Luo et al., 2024; Shi et al., 2024). Although alternative methods such as adapters (Pfeiffer et al., 2021) or LoRA (Hu et al., 2022) offer more efficient solutions for lan- guage adaptation, their capacity to acquire new knowledge 1 arXiv:2502.08037v1 [cs.CL] 12 Feb 2025"
+}

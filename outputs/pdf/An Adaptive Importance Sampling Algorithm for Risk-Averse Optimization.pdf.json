@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic optimization",
+    "Adaptive sampling",
+    "Risk-averse minimization",
+    "PDE-constrained optimization under uncertainty",
+    "Reduced order models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive importance sampling",
+    "Importance sampling",
+    "Reduced order models",
+    "Acceptance-rejection algorithm"
+  ],
+  "results": [
+    "Computational savings",
+    "Reduced sample sizes",
+    "Preserved asymptotic convergence rate"
+  ],
+  "title": "An Adaptive Importance Sampling Algorithm for Risk-Averse Optimization.pdf",
+  "abstract": "Adaptive sampling algorithms are modern and e\ufb03cient methods that dynamically adjust the sample size throughout the optimization process. However, they may encounter di\ufb03culties in risk-averse settings, par- ticularly due to the challenge of accurately sampling from the tails of the underlying distribution of random inputs. This often leads to a much faster growth of the sample size compared to risk-neutral problems. In this work, we propose a novel adaptive sampling algorithm that adapts both the sample size and the sampling distribution at each iteration. The biasing distributions are constructed on the \ufb02y, leveraging a reduced-order model of the objective function to be minimized, and are designed to oversample a so-called risk region. As a result, a reduction of the variance of the gradients is achieved, which permits to use fewer samples per iteration compared to a standard algorithm, while still preserving the asymptotic conver- gence rate. Our focus is on the minimization of the Conditional Value-at-Risk (CVaR), and we establish the convergence of the proposed computational framework. Numerical experiments con\ufb01rm the substantial computational savings achieved by our approach. Keywords: stochastic optimization; adaptive sampling; risk-averse minimization; PDE-constrained optimization under uncertainty; reduced order models 1. Introduction In this manuscript, we consider the minimization of min z\u2208C n bF(z) := CVaR\u03b2 [f(z, \u03be)] o , (1) where z is a decision variable, C is a convex and closed subset of an Hilbert space (Z, (\u00b7, \u00b7)), \u03be is a random variable over a probability space (\u2126, F, P), with values on a subset \u0393 \u2282RN, N \u2208N+, and with probability density \u03c1. The quantity of interest is f : Z \u00d7 \u0393 \u2192R which is supposed to be smooth and whose gradient with respect to z is denoted by \u2207f(z, \u03be). CVaR\u03b2 is the so-called Conditional Value-at-Risk (CVaR), namely the expectation of f(z, \u00b7) conditioned on being above its \u03b2 quantile. If CVaR\u03b2 is replaced by the expectation operator E\u03c1, (1) has found numerous applications in di\ufb00erent \ufb01elds such as, e.g., machine learning [1, 2], portfolio optimization [3, 4], stochastic programming [5, 6] and PDE-constrained optimization with random inputs [7, 8, 9]. More recently, minimization of the CVaR\u03b2 has drawn interest since one often prefers to be robust against risk-averse events; see, e.g., [10, 11, 12, 13]. The numerical solution of (1) with E\u03c1 has traditionally been dealt with two main classes of algorithms. The \ufb01rst family, called Stochastic Approximation (SA) methods [6, Chapter 5.9], includes iterative methods that at each iteration draw new realizations of \u03be independent from the previous ones and perform one step of a descent algorithm. Examples are the stochastic gradient method and its variants; see, e.g., [1] and references therein. These algorithms show a low cost per iteration and, under suitable assumption, converge to the \u2217Corresponding author Email addresses: sandra.pieraccini@polito.it (Sandra Pieraccini), tommaso.vanzan@polito.it (Tommaso Vanzan) Preprint submitted to Elsevier February 17, 2025"
+}

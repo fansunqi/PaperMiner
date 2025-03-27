@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/kasia-kobalczyk/active-task-disambiguation"
+  ],
+  "tasks": [
+    "Active task disambiguation"
+  ],
+  "datasets": [
+    "20 Questions Game",
+    "HumanEval",
+    "APPS"
+  ],
+  "methods": [
+    "Bayesian Experimental Design (BED)",
+    "Active task disambiguation",
+    "Utility function",
+    "Information Gain (IG)",
+    "Meta-cognitive reasoning"
+  ],
+  "results": [
+    "EIG-based strategies outperform other strategies",
+    "LLMs generate more informative clarifying questions",
+    "Active task disambiguation improves code generation accuracy"
+  ],
+  "title": "Active Task Disambiguation with LLMs.pdf",
+  "abstract": "Despite the impressive performance of large language models (LLMs) across vari- ous benchmarks, their ability to address ambiguously specified problems\u2013frequent in real-world interactions\u2013remains underexplored. To address this gap, we intro- duce a formal definition of task ambiguity and frame the problem of task disam- biguation through the lens of Bayesian Experimental Design. By posing clari- fying questions, LLM agents can acquire additional task specifications, progres- sively narrowing the space of viable solutions and reducing the risk of generat- ing unsatisfactory outputs. Yet, generating effective clarifying questions requires LLM agents to engage in a form of meta-cognitive reasoning, an ability LLMs may presently lack. Our proposed approach of active task disambiguation enables LLM agents to generate targeted questions maximizing the information gain. Ef- fectively, this approach shifts the load from implicit to explicit reasoning about the space of viable solutions. Empirical results demonstrate that this form of question selection leads to more effective task disambiguation in comparison to approaches relying on reasoning solely within the space of questions. 1 INTRODUCTION Write a function to search for an item in a list. Should it return the item's index or a boolean? How to handle multiple occurnces of the same item within the list? How to handle cases when the target item is not present in the list? def search(lst, x): return x in lst def search(lst, x): if target in lst: return lst.index(x) else: return None def search(lst, x): return lst.index(x) def search(lst, x): return [i for i, item in enumerate(lst) if item == x] Figure 1: An ambiguous problem statement, a sample of LLM-generated compatible solu- tions, and clarifying questions. \u25b6The goal: Generate the most informative question. Recent advances in the field of LLMs have led to the development of problem-solving agents capa- ble of addressing complex tasks that extend far be- yond conventional structured data problems such as regression and classification. State-of-the-art LLMs have demonstrated remarkable success in log- ical reasoning (Creswell et al., 2022; Lei et al., 2023), mathematical problem solving (Romera- Paredes et al., 2024; Imani et al., 2023), code gen- eration (Liu et al., 2024; Zhang et al., 2023a) or creative writing (Coenen et al., 2021; Chakrabarty et al., 2023). While existing research predominantly focuses on enhancing LLMs\u2019 planning and reason- ing capabilities with new prompting strategies like Chain of Thought (CoT) (Wei et al., 2022) or self-consistency (Wang et al., 2023), evaluation benchmarks typically assume complete and unambiguous problem statements. However, due to the inherent ambiguity of natural language (Stengel-Eskin et al., 2023; Liu et al., 2023) or deliberate underspecification, tasks encountered in real-world usage of LLMs may often not be well-defined, increasing the risk of the agent misinterpreting the true intentions of the problem setter. The concurrent line of work suggests that in the presence of ambiguously specified tasks, agents should be able to infer missing information to discern the intended behavior (Tamkin et al., 2023). However, in the context of human-specified tasks, when user intentions deviate from that of the average population on which the internal LLM preference model has been trained, the agent is at risk of generating outputs that do not align with the user\u2019s true needs. Such behaviors may be especially harmful in safety-critical applications, such as medical diagnosis or treatment decisions, where erroneous answers pose significant risks. \u2217Equal contribution 1 arXiv:2502.04485v1 [cs.CL] 6 Feb 2025"
+}

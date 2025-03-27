@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sequence Labeling"
+  ],
+  "datasets": [
+    "Weibo",
+    "Youku",
+    "Taobao",
+    "Resume",
+    "CMeEE-v2",
+    "PKU",
+    "MSR",
+    "UD"
+  ],
+  "methods": [
+    "LLM-based knowledge enhancement",
+    "Span-based sequence labeling",
+    "KnowFREE model",
+    "Label extension annotation",
+    "Enriched explanation synthesis"
+  ],
+  "results": [
+    "State-of-the-art performance on low-resource sequence labeling tasks",
+    "Improved performance with label extension annotation and enriched explanation synthesis"
+  ],
+  "title": "Improving Low-Resource Sequence Labeling with Knowledge Fusion and Contextual Label Explanations.pdf",
+  "abstract": "Sequence labeling remains a significant chal- lenge in low-resource, domain-specific scenar- ios, particularly for character-dense languages. Existing methods primarily focus on enhanc- ing model comprehension and improving data diversity to boost performance. However, these approaches still struggle with inadequate model applicability and semantic distribution biases in domain-specific contexts. To overcome these limitations, we propose a novel framework that combines an LLM-based knowledge en- hancement workflow with a span-based Knowl- edge Fusion for Rich and Efficient Extraction (KnowFREE) model. Our workflow employs explanation prompts to generate precise con- textual interpretations of target entities, effec- tively mitigating semantic biases and enrich- ing the model\u2019s contextual understanding. The KnowFREE model further integrates extension label features, enabling efficient nested entity extraction without relying on external knowl- edge during inference. Experiments on multi- ple Chinese domain-specific sequence label- ing datasets demonstrate that our approach achieves state-of-the-art performance, effec- tively addressing the challenges posed by low- resource settings. 1 Introduction Sequence labeling is a fine-grained information ex- traction (IE) task that includes sub-tasks such as named entity recognition (NER) and part-of-speech (POS) tagging, playing a critical role in various downstream natural language processing (NLP) ap- plications. However, in low-resource scenarios, sequence labeling for character-dense languages like Chinese presents unique challenges. The ab- sence of explicit word boundaries makes accurate label inference more complex, while the scarcity of domain-specific data further limits the model\u2019s ability to effectively capture label distributions. Previous studies on enhancing sequence label- ing in low-resource with character-dense languages can be broadly classified into two streams: (1) Model-Centric Optimization. These methods fo- cus on enhancing model\u2019s comprehension to detect implicit word boundaries and contextual signals through feature engineering. For instance, lexical features are injected via lexicon matching networks (Zhang and Yang, 2018a; Li et al., 2020; Liu et al., 2021; Wu et al., 2021) or prompt templates (Ma et al., 2022b; Shen et al., 2023; Chen et al., 2021b) to strengthen entity boundary detection, while oth- ers employ knowledge transfer mechanisms like Gaussian embeddings (Si et al., 2024; Das et al., 2022), prompt-based metrics (Chen et al., 2023; Lai et al., 2022) and contrastive learning (Huang et al., 2022; Zhang et al., 2024) to distill knowledge into target domains. (2) Data-Centric Augmentation. Meanwhile, other studies concentrate on using data augmentation through altering entity label infor- mation (Hu et al., 2023; Yang et al., 2018) and extracting knowledge from the external environ- ment (Cai et al., 2023; Chen et al., 2021a; Yaseen and Langer, 2021) to enrich the dataset. With the advent of large language models (LLMs), recent findings leverage their generative capabilities to en- hance the diversity of entity and sentence synthesis (Kang et al., 2024; Ye et al., 2024). However, critical limitations persist when apply- ing these solutions to specialized domains: (1) Lim- ited Model Applicability. Existing model-centric approaches for character-dense languages often struggle to integrate diverse feature types and labels effectively, restricting the flexibility and richness of feature injection. Moreover, they face challenges in handling nested entities, further constraining their adaptability. Additionally, most approaches depend on rigid feature injection frameworks and complex input configurations to enhance word boundary de- tection, leading to increased reliance on supplemen- tary structures during inference and higher usage costs. (2) Variability in Label Distribution. Ex- isting data-centric augmentation techniques suffer arXiv:2501.19093v2 [cs.CL] 13 Feb 2025"
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Secret key agreement",
+    "Source model key agreement problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Information theory",
+    "Inf-max optimization",
+    "Min-max optimization",
+    "Intrinsic conditional mutual information"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "On the Source Model Key Agreement Problem.pdf",
+  "abstract": "We consider the source model key agreement problem involving two legitimate parties and an eavesdropper who observe n i.i.d. samples of X and Y and Z respectively. The best-known upper bound on the key capacity is characterized by an inf-max optimization problem that generally lacks a closed-form solution. In this paper, we solve the optimization for some class of sources, thereby providing simple expressions for the upper bound. We provide general conditions under which the upper bound reduces to I(X; Y ). As an example, we consider the XOR setting in which X and Y are binary, and Z is the XOR of X and Y . The upper bound reduces to I(X; Y ) for this source. Next, we conjecture that the rate I(X; Y ) is not achievable for the XOR source, and provide some ideas that might be useful for developing a new upper bound on the source model problem. I. INTRODUCTION The two-party source model problem consists of two legitimate parties, Alice and Bob, who aim to establish a shared secret key hidden from an eavesdropper, Eve [1], [2]. Alice, Bob, and Eve observe n i.i.d. samples of X and Y and Z respectively. Random variables X, Y and Z are distributed according to PX,Y,Z, known to all parties. Through authenticated but public communication, Alice and Bob collaborate to generate a key that remains secret from Eve (extensions to multiple parties and continuous random variables can be found in [3]\u2013[8]; please see [9] for a detailed treatment). In a non-interactive setting, Alice and Bob locally generate messages F1 and F2 from PF1|Xn and PF2|Y n, respectively, and exchange these messages. Then Alice and Bob create their own key from KA \u223cPKA|Xn,F1,F2 and KB \u223cPKB|Y n,F1,F2 respectively. On the other hand, in the interactive setting, Alice initiates the process by generating a public message F1 using the distribution PF1|Xn and shares it with Bob. Bob then responds with F2 derived from PF2|Y n,F1. This exchange continues for r rounds, during which both senders alternately generate and share public messages F3, F4, \u00b7 \u00b7 \u00b7 Fr. At the end of these interactions, Alice derives a key KA based on PKA|Xn,F1:r while Bob produces a corresponding key KB using PKB|Y n,F1:r. In an (n, \u03b4) code, the keys must match with probability 1 \u2212\u03b4: P[KA = KB] \u22651 \u2212\u03b4, (1) where \u03b4 is a small positive value. The key rate is de\ufb01ned as R = 1 nH(KA). R must exhibit high entropy, quanti\ufb01ed as: R \u22651 n log(|K|) \u2212\u03b4, (2) where K denotes the alphabet of KA and KB. Furthermore, the keys should be nearly independent of Eve\u2019s observations, formalized by: 1 nI(KA; Zn, F1:r) \u2264\u03b4. (3) Note that the value of r for non-interactive regime is 2. The maximum achievable key rate is known as the source model secret-key (SK) capacity. It is denoted by S(X; Y \u2225Z) in the interactive setting, and by Sni(X; Y \u2225Z) in the non-interactive setting. Finding the secret key capacity remains an open problem in general scenarios, including both the interactive and non- interactive communication settings. Conditions that imply S(X; Y \u2225Z) > 0 are studied in [2], [10]\u2013[12]. The exact formula for secret key capacity is known only for some instances, such as when X, Y and Z form a Markov chain in some order. As a side result, we derive the capacity for a new class of sources, which we call \u201cdeterministic-erasure\u201d sources in Appendix A. One scenario where the capacity is known occurs when communication is restricted to one-way transmission from one party to another. The one-way SK capacity from X to Y equals [1]: Sow(X; Y \u2225Z) = max U,V \u2192X\u2192Y Z I(U; Y |V ) \u2212I(U; Z|V ), (4) where the conditions |V| \u2264|X| and |U| \u2264|X| can be imposed on V, U, and X representing the alphabets associated with V , U, and X, respectively [9]. It is evident that Sow(X; Y \u2225Z) establishes a lower bound on the SK capacity S(X; Y \u2225Z). An early upper bound on the key capacity was [1], [2] S(X; Y \u2225Z) \u2264I(X; Y |Z)."
+}

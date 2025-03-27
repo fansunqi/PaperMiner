@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving three-dimensional elliptic partial differential equations on complex geometries"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unfitted boundary algebraic equation method based on difference potentials and lattice Green\u2019s function"
+  ],
+  "results": [
+    "Optimal convergence rates and computational efficiency",
+    "Well-conditioned systems for iterative solvers"
+  ],
+  "title": "Unfitted Boundary Algebraic Equation Method Based on Difference Potentials and Lattice Green's Funct.pdf",
+  "abstract": "This work presents an unfitted boundary algebraic equation (BAE) method for solving three- dimensional elliptic partial differential equations on complex geometries using finite difference on structured meshes. We demonstrate that replacing finite auxiliary domains with free-space LGFs streamlines the computation of difference potentials, enabling matrix-free implementations and significant cost reductions. We establish theoretical foundations by showing the equivalence between direct formulations in difference potentials framework and indirect single/double layer formulations and analyzing their spectral properties. The spectral analysis demonstrates that discrete double layer formulations provide better-conditioned systems for iterative solvers, similarly as in boundary integral method. The method is validated through matrix-free numerical experiments on both Poisson and modified Helmholtz equations in 3D implicitly defined geometries, showing optimal convergence rates and computational efficiency. This framework naturally extends to unbounded domains and provides a foundation for applications to more complex systems like Helmholtz and Stokes equations. Keywords: Lattice Green\u2019s function, boundary algebraic equations, difference potentials method, matrix-free methods, unfitted boundary methods, discrete potential theory 1. Introduction Elliptic partial differential equations (PDEs) form the cornerstone of numerous scientific and engineering applications, from steady-state heat conduction to electrostatics and fluid dynamics. These equations also arise naturally when implicit time-stepping schemes are employed for parabolic or hyperbolic problems, where stability and accuracy requirements often necessitate the solution of elliptic systems at each time step. A fundamental challenge in solving these equations lies in handling complex geometries while maintaining computational efficiency and numerical accuracy. Traditional numerical approaches for elliptic PDEs broadly fall into three categories: \u2022 Body-fitted mesh methods (finite elements, boundary-fitted finite differences) [1] offer high accuracy but require complex mesh generation and management, particularly challenging for moving boundaries or topology changes. \u2022 Meshless methods (radial basis functions [2], boundary integral methods [3, 4, 5, 6], spectral method [7]) provide geometric flexibility and often lead to dense linear systems and face challenges in handling variable coefficients. Email address: qxia@kean.edu (Qing Xia) Preprint submitted to Elsevier February 11, 2025 arXiv:2502.05507v1 [math.NA] 8 Feb 2025"
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human-Interactive 3D Object Reconstruction"
+  ],
+  "datasets": [
+    "Car",
+    "Display Case",
+    "Drawer",
+    "Furniture"
+  ],
+  "methods": [
+    "Space Discrepancy Tensors",
+    "Multi-resolution Hash Encoding",
+    "Mutual State Regularization",
+    "Occupancy Grid Sampling"
+  ],
+  "results": [
+    "Achieves high-fidelity novel state synthesis",
+    "Significantly outperforms existing methods"
+  ],
+  "title": "Inter3D A Benchmark and Strong Baseline for Human-Interactive 3D Object Reconstruction.pdf",
+  "abstract": "Recent advancements in implicit 3D reconstruction methods, e.g., neural rendering fields and Gaussian splatting, have primarily focused on novel view synthesis of static or dynamic objects with con- tinuous motion states. However, these approaches struggle to efficiently model a human-interactive object with n movable parts, requiring 2n separate models to represent all discrete states. To over- come this limitation, we propose Inter3D, a new benchmark and approach for novel state synthesis of human-interactive objects. We introduce a self- collected dataset featuring commonly encountered interactive objects and a new evaluation pipeline, where only individual part states are observed dur- ing training, while part combination states remain unseen. We also propose a strong baseline ap- proach that leverages Space Discrepancy Tensors to efficiently modelling all states of an object. To alleviate the impractical constraints on camera tra- jectories across training states, we propose a Mu- tual State Regularization mechanism to enhance the spatial density consistency of movable parts. In addition, we explore two occupancy grid sampling strategies to facilitate training efficiency. We con- duct extensive experiments on the proposed bench- mark, showcasing the challenges of the task and the superiority of our approach. The code and data are publicly available at here. The supplementary doc- uments include more experimental results. 1 Introduction 3D object reconstruction has been a long-standing focus of re- search in computer vision and graphics [Berger et al., 2017]. Recently, neural radiance fields (NeRFs) [Mildenhall et al., 2021] pioneer volumetric rendering to enable high-fidelity modelling of 3D objects with fine-grained geometric struc- tures, facilitating its widespread applications across various domains [Barron et al., 2022; Fridovich-Keil et al., 2023a; Pumarola et al., 2021; Poole et al., 2022; Liu et al., 2024]. 3D Gaussian splatting [Kerbl et al., 2023] extends the prin- ciples of NeRFs by representing an object with a set of 3D Observed States Novel States Figure 1: Illustration of reconstructing a human-interactive object, Furniture, in our Inter3D. The object consists of n = 3 movable parts, highlighted in red, green, and olive-green. With 2n = 8 dis- crete states, the task requires significant computational and mem- ory resources, making it impractical for existing methods to train separate models for each state. Furthermore, ensuring consistency in external appearances and internal structures across states poses a significant challenge when states are trained independently. In con- trast, our approach efficiently synthesizes novel combination states by observing only the canonical and individual part states. Gaussian primitives and synthesizes novel views via rasteri- zation, offering a more expressive and rendering-efficient 3D representations [Luiten et al., 2024]. Despite their advancements, existing methods predomi- nantly focus on modeling static objects or dynamic ones with simple continuous motions, where the states of objects ex- hibit no abrupt changes. Also, these methods primarily fo- cus on synthesizing novel views of the observed states during training. However, many objects commonly encountered in daily life are interactive and have numerous discrete states. A human-interactive object with n movable parts results in a total of 2n states. Efficiently modeling such objects holds sig- nificant potential for applications in virtual reality [Wohlge- nannt et al., 2020], gaming [Cameir\u02dcao et al., 2009], and em- bedded AI [Machinery, 1950]. As illustrated in Figure 1, the Furniture object consists of three movable parts, highlighted in red, green, and olive- green. It features one canonical state and three individual states where only one part is open, along with four combi- nation states where two or more parts are open. Existing methods fail to efficiently model all possible states of the Fur- niture object. A straightforward solution would be to train a separate 3D model for each object state. However, this solu- tion incurs prohibitive computational and memory overhead. arXiv:2502.14004v1 [cs.GR] 19 Feb 2025"
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/Kai-Liu001/BiMaCoSR"
+  ],
+  "tasks": [
+    "Real Super-Resolution"
+  ],
+  "datasets": [
+    "RealSR",
+    "DRealSR",
+    "DIV2K-Val"
+  ],
+  "methods": [
+    "Binary One-Step Diffusion Model",
+    "Low Rank Matrix Branch",
+    "Sparse Matrix Branch"
+  ],
+  "results": [
+    "Compression ratio: 23.8x",
+    "Speedup ratio: 27.4x"
+  ],
+  "title": "BiMaCoSR Binary One-Step Diffusion Model Leveraging Flexible Matrix Compression for Real Super-Resol.pdf",
+  "abstract": "While super-resolution (SR) methods based on diffusion models (DM) have demonstrated inspir- ing performance, their deployment is impeded due to the heavy request of memory and com- putation. Recent researchers apply two kinds of methods to compress or fasten the DM. One is to compress the DM into 1-bit, aka binarization, alleviating the storage and computation pressure. The other distills the multi-step DM into only one step, significantly speeding up inference pro- cess. Nonetheless, it remains impossible to de- ploy DM to resource-limited edge devices. To address this problem, we propose BiMaCoSR, which combines binarization and one-step distil- lation to obtain extreme compression and accel- eration. To prevent the catastrophic collapse of the model caused by binarization, we propose sparse matrix branch (SMB) and low rank matrix branch (LRMB). Both auxiliary branches pass the full-precision (FP) information but in differ- ent ways. SMB absorbs the extreme values and its output is high rank, carrying abundant FP infor- mation. Whereas, the design of LRMB is inspired by LoRA and is initialized with the top r SVD components, outputting low rank representation. The computation and storage overhead of our pro- posed branches can be safely ignored. Compre- hensive comparison experiments are conducted to exhibit BiMaCoSR outperforms current state- of-the-art binarization methods and gains com- petitive performance compared with FP one-step model. BiMaCoSR achieves a 23.8\u00d7 compres- sion ratio and a 27.4\u00d7 speedup ratio compared to FP counterpart. Our code and model are available at https://github.com/Kai-Liu001/BiMaCoSR. 1. Introduction Single image super-resolution (SR) (Keys, 1981; Zibetti & Mayer, 2007; Lu et al., 2013; Dong et al., 2014; Yang et al., *Equal contribution 1Shanghai Jiao Tong University 2South China University of Technology 3Huawei Noah\u2019s Ark Lab. Corre- spondence to: Linghe Kong <linghe.kong@sjtu.edu.cn>, Yulun Zhang <yulun100@gmail.com>. Figure 1: Performance comparison between binarization methods on the RealSR dataset. BiMaCoSR achieves con- sistently leading scores on all evaluation metrics. 2014; Dong et al., 2016) is a traditional yet challenging low- level vision problem. Serving as a fundamental research task, it has attracted long-standing and considerable atten- tion in the computer vision community. The final object of SR is to restore a high-quality (HQ) image from its low- quality (LQ) observation, which suffers from various image quality degradations. The difficulty of SR mainly lies in two parts: (1) the unknown degradations (e.g., blur, downsam- pling, noise, compression and their combinations) of LQ. (2) the multiple solutions for a given LQ input image. In recent years, numerous studies have been made to tackle this challenge, utilizing convolution neural networks (CNNs) (Dong et al., 2014; 2016; Ledig et al., 2017; Zhang et al., 2018c), vision transformers (ViTs) (Zhang et al., 2018b; Liang et al., 2021; Wang et al., 2022; Chen et al., 2022; 2023), and their combinations. Though achieving inspiring results, these methods mostly fail in real-world scenarios. This failure is attributed to assuming degradation as an ideal bicubic downsampling kernel, way too different from the unknown and complex degradation in real world. Therefore, it draws researchers increasing attention to re- construct perceptually realistic HQ images in real-world scenarios. Thereafter, this challenging and meaningful task is called real-world super-resolution (Real-SR) (Gu et al., 1 arXiv:2502.00333v2 [cs.CV] 4 Feb 2025"
+}

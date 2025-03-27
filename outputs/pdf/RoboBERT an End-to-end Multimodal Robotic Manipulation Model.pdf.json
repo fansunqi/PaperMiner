@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/PeterWangsicheng/RoboBERT"
+  ],
+  "tasks": [
+    "Robotic Manipulation"
+  ],
+  "datasets": [
+    "Calvin"
+  ],
+  "methods": [
+    "CNN-based diffusion policy",
+    "Two-stage training",
+    "Data augmentation"
+  ],
+  "results": [
+    "State-of-the-art performance on the CALVIN benchmark for ABCD \u2192 D task",
+    "Superior performance on real robot experiments"
+  ],
+  "title": "RoboBERT an End-to-end Multimodal Robotic Manipulation Model.pdf",
+  "abstract": "Embodied intelligence integrates multiple modal- ities, enabling agents to understand images, language, and actions simultaneously. However, existing models always depend on additional datasets or extensive pre-training to maximize performance improvements, consuming abundant training time and expensive hardware cost. To tackle this issue, we present RoboBERT, a novel end-to-end robotic manipulation model integrated with a unique training strategy. This model utilizes a CNN-based diffusion policy, enhancing and stabilizing the effectiveness of this model by separating training processes for different modalities. It also underscores the importance of data augmentation, verifying various techniques to significantly boost performance. Unlike models that depend on extra data or large foundation models, RoboBERT achieves a highly competitive success rate while using only language-labeled expert demonstrations and maintaining a relatively smaller model size. Specifically, RoboBERT achieves an average length of 4.52 on the CALVIN benchmark for ABCD \u2192D task, setting a new state-of-the-art (SOTA) record. Furthermore, when tested on a real robot, the model demonstrates superior performance, achieving a higher success rate than other methods trained with the same data. We propose that these concepts and methodologies of RoboBERT demonstrate extensive versatil- ity and compatibility, contributing significantly to the development of lightweight multimodal robotic models. The code can be accessed on https://github.com/PeterWangsicheng/RoboBERT 1 1Sicheng Wang and Jianhua Shan are co-author of this work. Bin Fang is corresponding author. 1 Introduction With the development of multimodal language models, ex- isting artificial intelligence can not only understand human language and perceive the surrounding environment, but also generate action sequences to interact with the environment, forming embodied intelligence. Existing work relies on large pre-trained models or additional datasets, aiming to use a large amount of data to enable agents to fully generalize in different scenarios, and indeed significant progress has been made. For example, GR-1[Wu et al., 2023] pre-trains a GPT-style autoregressive model using datasets from large-scale video- language tasks and then fine-tunes it on robotic tasks, achiev- ing SOTA results on benchmarks. RoboFlamingo[Li et al., 2023b] utilizes large visual language models as base models and then modifies the task heads to enable them to predict action sequences, significantly improving the performance of the policy compared to training from scratch. RT-2[Brohan et al., 2023a] makes improvements to large language models by adding additional tokens for action types and then conducts joint training on language, image, and action tasks, enabling the model to not only complete tasks but also demonstrate reasoning abilities. Unified-IO2[Lu et al., 2022], as a large multi-task model, undergoes comprehensive training in as- pects such as language understanding, image generation, and music composition, endowing it with a certain degree of ac- tion generation ability as well. However, at present, restricted by the scarcity of action modality datasets and the heterogeneity of robots, it is ex- tremely difficult to collect action data on the same scale as language datasets on the Internet for high-intensity pre- training following the training approach similar to that of large language models. Even if we are capable of collecting a large amount of data, training on these data will also consume a significant amount of computing resources and time. There- fore, how to improve the performance of policies as much as possible through excellent network design and full utiliza- tion of limited datasets is of great significance, as it can not only relieve the pressure of data collection but also reduce the arXiv:2502.07837v1 [cs.RO] 11 Feb 2025"
+}

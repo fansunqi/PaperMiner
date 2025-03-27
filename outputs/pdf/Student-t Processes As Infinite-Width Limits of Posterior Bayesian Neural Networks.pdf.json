@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Student-t processes",
+    "Wasserstein metric",
+    "Optimal transport"
+  ],
+  "results": [
+    "Posterior BNNs converge to Student-t processes in the infinite-width limit"
+  ],
+  "title": "Student-t Processes As Infinite-Width Limits of Posterior Bayesian Neural Networks.pdf",
+  "abstract": ". The asymptotic properties of Bayesian Neural Networks (BNNs) have been exten- sively studied, particularly regarding their approximations by Gaussian processes in the infinite- width limit. We extend these results by showing that posterior BNNs can be approximated by Student-t processes, which offer greater flexibility in modeling uncertainty. Specifically, we show that, if the parameters of a BNN follow a Gaussian prior distribution, and the variance of both the last hidden layer and the Gaussian likelihood function follows an Inverse-Gamma prior distribution, then the resulting posterior BNN converges to a Student-t process in the infinite-width limit. Our proof leverages the Wasserstein metric to establish control over the convergence rate of the Student-t process approximation. 1. Introduction Bayesian neural networks (BNNs), composed of multiple layers of interconnected neurons, have become a powerful tool in modern machine learning, enabling the modeling of complex data structures while quantifying predictive uncertainty [Nea96]. Unlike neural networks (NNs), BNNs offer a solid probabilistic framework where model parameters are treated as random variables with associated probability distributions. In particular, such a framework allows for the incorporation of both prior knowledge and observed data through the prior distribution and likelihood function, respectively. 1.1. Background and motivation. The theoretical study of BNNs dates back to the founda- tional work of Neal [Nea96], which, inspired by Bayesian principles, showed that wide shallow BNNs converge to Gaussian processes if initialized with independent Gaussian parameters. This result was later extended to deep BNNs [Mat+18; Lee+18; BT24; Fav+24] as well as to alter- native architectures [Nov+20; Yan21], strengthening the connection between deep learning and Gaussian processes in machine learning [RW06]. Building on this foundation, significant effort has been devoted to analyzing the posterior be- havior of BNNs. Notably, several studies have examined their exact infinite-width limiting posterior distribution, establishing its asymptotic convergence to a Gaussian process [Hro+20; Tre23]. Parallel research has explored approximate posterior inference methods, including Vari- ational Inference (VI) [Blu+15] and Monte Carlo Markov Chain (MCMC) sampling [Izm+21; PFP24], providing an empirical validation of these theoretical results. Despite the significant progresses in the study of posterior BNNs, existing work typically assumes a fixed variance for the Gaussian prior on the network parameters, a simplification that limits substantially the diversity of posterior behaviors that BNNs can capture. In this paper, we address this critical limitation by introducing a more flexible model in which the variance itself follows a prior distribution. 1.2. Our contribution. Our main contribution is to show that relaxing the fixed-variance assumption in BNNs by using an Inverse-Gamma prior leads to a novel limiting behavior, while preserving the classic prior introduced by Neal [Nea96]. Specifically, we prove that while the prior Key words and phrases. Bayesian neural network, infinite-width limit, posterior distribution, Student-t processes, Wasserstein distance. \u2217Dept. of Operations Research and Financial Engineering, Princeton University fc4978@princeton.edu \u2020 Dept. of Economics and Statistics, University of Torino and Collegio Carlo Alberto, stefano.favaro@unito.it \u2021 Dept. of Mathematics, University of Pisa, dario.trevisan@unipi.it 1 arXiv:2502.04247v1 [stat.ML] 6 Feb 2025"
+}

@@ -1,0 +1,19 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Accelerating convergence of a natural convection solver"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Continuous data assimilation (CDA)"
+  ],
+  "results": [
+    "Improved convergence rate by H1/2"
+  ],
+  "title": "Accelerating Convergence of a Natural Convection Solver by Continuous Data Assimilation.pdf",
+  "abstract": "The Picard iteration for the Boussinesq model of natural convection can be an attractive solver because it stably decouples the fluid equations from the temperature equation (for contrast, the Newton iteration does not stably decouple). However, the convergence of Picard for this system is only linear and slows as the Rayleigh number increases, eventually failing for even moderately sized Rayleigh numbers. We consider this solver in the setting where sparse solution data is available, e.g. from data measurements or solution observables, and enhance Picard by incorporating the data into the iteration using a continuous data assimilation (CDA) approach. We prove that our approach scales the linear convergence rate by H1/2, where H is the characteristic spacing of the measurement locations. This implies that when Picard is converging, CDA will accelerate convergence, and when Picard is not converging, CDA (with enough data) will enable convergence. In the case of noisy data, we prove that the linear convergence rate of the nonlinear residual is similarly scaled by H1/2 but the accuracy is limited by the accuracy of the data. Several numerical tests illustrate the effectiveness of the proposed method, including when the data is noisy. These tests show that CDA style nudging adapted to an iteration (instead of a time stepping scheme) enables convergence at much higher Ra. 1 Introduction Fluid flows with varying temperature (or density) can be modeled by the Boussinesq system for non-isothermal flow/natural convection. This multiphysics model can be observed in nature in atmospheric models and katabatic winds, in ventilation design, dense gas dispersion, insulation with double pane window, and solar collectors [12], to just name a few examples. We consider the Boussinesq system on a finite, connected domain \u2126\u2282Rd (d = 2, 3) with boundary \u03931 \u222a\u03932. We denote u to be the fluid velocity, p is the pressure, T is the temperature (or density), \u03bd > 0 is the kinematic viscosity of the fluid, \u03ba > 0 the thermal diffusivity, f the external forcing term, and Ri > 0 the Richardson number which accounts for the gravitational force and thermal expansion of the fluid. This system is given by \uf8f1 \uf8f4 \uf8f2 \uf8f4 \uf8f3 u \u00b7 \u2207u + \u2207p \u2212\u03bd\u2206u = f + Ri(0 T)T in \u2126, \u2207\u00b7 u = 0 in \u2126, u \u00b7 \u2207T \u2212\u03ba\u2206T = g in \u2126, (1) with no-slip boundary conditions for velocity and mixed homogenous Dirichlet and homogenous Neumann for tem- perature (the latter of which corresponds to perfect insulation): \uf8f1 \uf8f4 \uf8f2 \uf8f4 \uf8f3 u = 0 on \u2202\u2126, T = 0 on \u2202\u03931, \u2207T \u00b7 n = 0 on \u2202\u03932. (2) The physical constants that the model relies on are expressed as the Reynolds number Re, the Prandtl number Pr, and the Rayleigh number Ra, which are given by Re = \u03bd\u22121, Pr = \u03bd \u03ba, Ra = Ri Re2 Pr. For any set of problem data (\u03bd, Ri, \u03ba, f, g), the system (1)-(2) is known to admit weak solutions [5]. Under a smallness condition on this data, the system is known to be well-posed; for sufficiently high Ra, this system may lose \u2217School of Mathematical and Statistical Sciences, Clemson University, Clemson, SC, 29364, evhawki@clemson.edu. 1 arXiv:2502.10850v1 [math.NA] 15 Feb 2025"
+}

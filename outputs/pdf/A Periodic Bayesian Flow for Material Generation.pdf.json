@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/wu-han-lin/CrysBFN"
+  ],
+  "tasks": [
+    "Crystal Generation",
+    "Crystal Structure Prediction"
+  ],
+  "datasets": [
+    "Perov-5",
+    "Carbon-24",
+    "MP-20",
+    "MPTS-52"
+  ],
+  "methods": [
+    "Periodic Bayesian Flow Networks",
+    "Equivariant Bayesian Flow Networks",
+    "Hyper-torus BFN"
+  ],
+  "results": [
+    "State-of-the-art performance on ab initio crystal generation",
+    "99.1% COV-P on Carbon-24",
+    "64.35% match rate on MP-20",
+    "100x sampling efficiency improvement"
+  ],
+  "title": "A Periodic Bayesian Flow for Material Generation.pdf",
+  "abstract": "Generative modeling of crystal data distribution is an important yet challenging task due to the unique periodic physical symmetry of crystals. Diffusion-based methods have shown early promise in modeling crystal distribution. More recently, Bayesian Flow Networks were introduced to aggregate noisy latent variables, resulting in a variance-reduced parameter space that has been shown to be advantageous for modeling Euclidean data distributions with structural constraints (Song et al., 2023). Inspired by this, we seek to unlock its potential for modeling variables located in non-Euclidean manifolds e.g. those within crystal structures, by overcoming challenging theoretical issues. We introduce CrysBFN, a novel crystal generation method by proposing a periodic Bayesian flow, which essentially differs from the original Gaussian-based BFN by exhibiting non-monotonic entropy dynamics. To successfully realize the concept of periodic Bayesian flow, CrysBFN integrates a new entropy conditioning mechanism and empirically demonstrates its significance compared to time-conditioning. Extensive experiments over both crystal ab initio generation and crystal structure prediction tasks demonstrate the superiority of CrysBFN, which consistently achieves new state-of-the-art on all benchmarks. Surprisingly, we found that CrysBFN enjoys a significant improvement in sampling efficiency, e.g., \u223c100\u00d7 speedup (10 v.s. 2000 steps network forwards) compared with previous diffusion-based methods on MP-20 dataset. Code is available at https://github.com/wu-han-lin/CrysBFN. 1 INTRODUCTION Deep generative models, with their strong ability to approximate data distribution with complex geometries, have recently emerged as a promising approach to de novo drug design (Hoogeboom et al., 2022), protein engineering (Shi et al., 2022), and material science (Liu et al., 2017). To discover new functional materials (Wang et al., 2023; Peng et al., 2022), there has been an active line of research on crystal generative modeling (Ren et al., 2021; Hoffmann et al., 2019; Noh et al., 2019; Court et al., 2020; Yang et al., 2023; Nouira et al., 2018). Recent diffusion-based models learns through an iterative reverse process with multi-level noise perturbation, and has been demonstrated as a powerful tool for capturing complex geometries of crystals. Studies show that these models can generate crystal samples with realistic structures that well satisfy physical constraint (Xie et al., 2021; Jiao et al., 2023; 2024; Lin et al., 2024). Despite promising results, significant challenges persist. The search space for crystal structures grows exponentially with the number of atoms, while thermodynamically stable materials represent only a small fraction (Miller et al., 2024). This presents challenges in the multi-step generation process, the variance of which might cause structures to deviate from stable distributions. Moreover, the current widely-adapted diffusion-based approaches (Jiao et al., 2023; 2024) for crystal structure \u2217Equal Contribution. Correspondence to Hao Zhou (zhouhao@air.tsinghua.edu.cn) and Yawen Ouyang (ouyangyawen@air.tsinghua.edu.cn). 1 arXiv:2502.02016v1 [cs.LG] 4 Feb 2025"
+}

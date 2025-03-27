@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://anonymous.4open.science/r/SWAT-8677"
+  ],
+  "tasks": [
+    "Domain Adaptation"
+  ],
+  "datasets": [
+    "Rotated MNIST",
+    "Color-Shift MNIST",
+    "Portraits",
+    "Cover Type"
+  ],
+  "methods": [
+    "Sliding Window Adversarial Training",
+    "Wasserstein GAN",
+    "Cycle Consistent Constraints"
+  ],
+  "results": [
+    "Rotated MNIST: 96.7% vs. 86.4% SOTA",
+    "Portraits: 87.4% vs. 86.16% SOTA",
+    "Cover Type: 75.0% vs. 69.9% SOTA"
+  ],
+  "title": "SWAT Sliding Window Adversarial Training for Gradual Domain Adaptation.pdf",
+  "abstract": "Domain shifts are critical issues that harm the performance of machine learning. Unsupervised Domain Adaptation (UDA) mitigates this issue but suffers when the domain shifts are steep and drastic. Gradual Domain Adaptation (GDA) al- leviates this problem in a mild way by gradu- ally adapting from the source to the target do- main using multiple intermediate domains. In this paper, we propose Sliding Window Adversarial Training (SWAT) for Gradual Domain Adapta- tion. SWAT uses the construction of adversar- ial streams to connect the feature spaces of the source and target domains. In order to gradu- ally narrow the small gap between adjacent in- termediate domains, a sliding window paradigm is designed that moves along the adversarial stream. When the window moves to the end of the stream, i.e., the target domain, the domain shift is drastically reduced. Extensive experiments are conducted on public GDA benchmarks, and the results demonstrate that the proposed SWAT significantly outperforms the state-of-the-art ap- proaches. The implementation is available at: https://anonymous.4open.science/r/SWAT-8677. 1. Introduction Conventional machine learning methods or approaches fre- quently presuppose that training and testing data adhere to a uniform distribution, thereby ensuring the model\u2019s gen- eralizability to novel data. However, this assumption is not always valid in practical applications, where domain shifts\u2014defined as discrepancies between the source and tar- get domains\u2014can significantly impair model performance (Farahani et al., 2021). To illustrate, an image classifier developed using images from a controlled laboratory may *Equal contribution 1University of Electronic Science and Technology of China, Chengdu, China 2Southwest Jiaotong Uni- versity, Chengdu, China. Correspondence to: Mengmeng Jing <mmjing@uestc.edu.cn>, Lin Zuo <linzuo@uestc.edu.cn>. Proceedings of the 41 st International Conference on Machine Learning, Vancouver, Canada. PMLR 267, 2025. Copyright 2025 by the author(s). Source Intermediate Target Figure 1. Overview of gradual domain adaptation. The classifiers perform accurately in classifying the sample points in the current domain and the neighboring domains, but is fail when classifying the samples from the Source directly to the Target domain. have reduced accuracy when deployed on real-world im- ages captured under varying lighting or weather conditions (Ganin & Lempitsky, 2015b; Tzeng et al., 2017). To address this issue, Unsupervised Domain Adaptation (UDA) proposed to mitigate domain shifts by aligning fea- ture distributions between a labeled source domain and an unlabeled target domain (Pan & Yang, 2009; Hoffman et al., 2018). Nevertheless, Kang et al. (2019); Tang & Jia (2020); Yang et al. (2020) have revealed that when the domain gaps are large, direct alignment of the source and target domains can negatively impact the model and cause the negative transfer. Direct feature-level alignment between source and target domains cause geometric distortion from enforcing rigid distribution matching (e.g., MMD), where forcing alignment of non-overlapping support sets amplifies classi- fier boundary errors (Zhao et al., 2019). Additionally, static alignment blindness ignores the latent domain evolution trajectory, leading to suboptimal adaptation paths; and dis- criminability erosion where excessive invariance learning causes loss of category-aware structures (Liang et al., 2020). Gradual Domain Adaptation (GDA)(Kumar et al., 2020) is proposed to alleviate this problem in a mild way by gradually adapting from the source to the target domain using multiple intermediate domains, as shown in Fig. 1. Recently, GDA advances include theoretical analyses of error propagation in self-training (Wang et al., 2022), op- timal transport-guided intermediate domain generation via Wasserstein geodesics (GOAT) (He et al., 2023), and nor- malizing flow-based feature alignment (Sagawa & Hino, 2022). Nevertheless, current GDA methods face two fun- damental bottlenecks: (1) Existing GDA frameworks rely on discretized intermediate domains (e.g., fixed-step inter- 1 arXiv:2501.19155v1 [cs.CV] 31 Jan 2025"
+}

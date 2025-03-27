@@ -1,0 +1,19 @@
+{
+  "code_links": [
+    "https://github.com/HenryLau7/CFPO"
+  ],
+  "tasks": [
+    "Prompt Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Content-Format Integrated Prompt Optimization (CFPO)"
+  ],
+  "results": [
+    "Significant performance improvements compared to content-only optimization methods"
+  ],
+  "title": "Beyond Prompt Content Enhancing LLM Performance Via Content-Format Integrated Prompt Optimization.pdf",
+  "abstract": "Large Language Models (LLMs) have shown significant capability across various tasks, with their real-world effectiveness often driven by prompt design. While recent research has fo- cused on optimizing prompt content, the role of prompt formatting\u2014a critical but often over- looked dimension\u2014has received limited sys- tematic investigation. In this paper, we intro- duce Content-Format Integrated Prompt Op- timization (CFPO), an innovative methodol- ogy that jointly optimizes both prompt con- tent and formatting through an iterative re- finement process. CFPO leverages natural language mutations to explore content vari- ations and employs a dynamic format ex- ploration strategy that systematically evalu- ates diverse format options. Our extensive evaluations across multiple tasks and open- source LLMs demonstrate that CFPO demon- strates measurable performance improvements compared to content-only optimization meth- ods. This highlights the importance of inte- grated content-format optimization and offers a practical, model-agnostic approach to enhanc- ing LLM performance. Code is available at https://github.com/HenryLau7/CFPO. 1 Introduction Large Language Models (LLMs) have demon- strated impressive achievements across various domains (OpenAI, 2024a). The effectiveness of LLMs in real-world applications is fundamentally dependent on the design of effective prompts, which serve as an essential interface between hu- man users or developers and the LLM system. Stud- ies have shown that expert-designed prompts could significantly enhance LLM performance (Brown et al., 2020; Wei et al., 2023; Schulhoff et al., 2024). However, manual design of prompts presents significant challenges, primarily due to the high \u2217Equal contribution. \u2020Yuanye Liu did the work during an internship at MSRA. \u22c4Corresponding author: jiahangxu@microsoft.com Figure 1: The crucial role of prompt formatting and its interaction with content. (A): Model-specific format biases: Illustrates the performance sensitivity of two LLMs to different format styles on the GSM8K task, showing substantial variability in the effectiveness of 10 randomly selected formats. (B): For seven different prompt contents evaluated across 24 distinct formats, performance variations show the complex, interdepen- dent relationship between prompt content and structure, demonstrating that no single format universally maxi- mizes effectiveness. sensitivity of LLMs to subtle variations in prompt characteristics, including both textual content and structural format (Jiang et al., 2022; Zamfirescu- Pereira et al., 2023; Salinas and Morstatter, 2024). These sensitivities are further complicated by varia- tions across different models and tasks (Zhuo et al., 2024; Sclar et al., 2024). To alleviate these diffi- culties, automated prompt optimization techniques, often leveraging the power of LLMs themselves, have proven to be an effective approach to adapt and refine prompts (Pryzant et al., 2023; Schnabel and Neville, 2024; Yang et al., 2024). However, existing research primarily focuses on optimizing prompt content, while overlooking a critical and largely unexplored dimension: the prompt format- ting. Our preliminary investigations, as illustrated in Figure 1, provide valuable insights into the role of prompt format in prompt optimization. We have observed that different LLMs display distinct pref- arXiv:2502.04295v2 [cs.CL] 10 Feb 2025"
+}

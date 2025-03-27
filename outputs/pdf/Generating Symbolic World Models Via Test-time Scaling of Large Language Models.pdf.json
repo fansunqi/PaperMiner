@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/vmlpddl/vmlpddl"
+  ],
+  "tasks": [
+    "PDDL domain generation",
+    "Automated planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Best-of-N Sampling",
+    "Instance Verbalized Machine Learning (iVML)",
+    "Test-time scaling"
+  ],
+  "results": [
+    "85.2% success rate on NL2Domain",
+    "71.4% success rate on Prob2Domain",
+    "99.60% correctness rate on PDDL problem generation"
+  ],
+  "title": "Generating Symbolic World Models Via Test-time Scaling of Large Language Models.pdf",
+  "abstract": "Solving complex planning problems requires Large Language Models (LLMs) to explicitly model the state transition to avoid rule violations, comply with constraints, and ensure optimality\u2014a task hindered by the inherent ambiguity of natural language. To overcome such ambiguity, Planning Domain Definition Language (PDDL) is leveraged as a planning abstraction that enables precise and formal state descriptions. With PDDL, we can generate a symbolic world model where classic searching algorithms, such as A\u2217, can be seamlessly applied to find optimal plans. However, directly generating PDDL domains with current LLMs remains an open challenge due to the lack of PDDL training data. To address this challenge, we propose to scale up the test-time computation of LLMs to enhance their PDDL reasoning capabilities, thereby enabling the generation of high-quality PDDL domains. Specifically, we introduce a simple yet effective algorithm, which first employs a Best-of-N sampling approach to improve the quality of the initial solution and then refines the solution in a fine-grained manner with verbalized machine learning. Our method outperforms o1-mini by a considerable margin in the generation of PDDL domain, achieving over 50% success rate on two tasks (i.e., generating PDDL domains from natural language description or PDDL problems). This is done without requiring additional training. By taking advantage of PDDL as state abstraction, our method is able to outperform current state-of-the-art methods on almost all competition-level planning tasks. 1 Introduction Enabling large language models (LLMs) to plan in complex scenarios like Barman, Floortile, and Termes remains an open problem. While recent LLMs like OpenAI-o1 excel at complex reasoning tasks, including coding and mathematics, they still struggle with deductive reasoning and principled planning that requires the consideration of optimality, constraints, and complex state transitions. This limitation persists in o1 even using self-critique techniques and multiple answer re-sampling strategies. A natural solution is translating the world abstraction from natural language into Planning Domain Definition Language (PDDL), which utilizes first-order logic (FOL) to explicitly describe states and relationships. Compared to natural language, the formal nature of PDDL simplifies verification and enables the precise specification of constraints and objectives, facilitating the seamless integration of off-the-shelf planning algorithms., However, it remains a huge challenge to translate natural language descriptions into PDDL domains with satisfactory accuracy. Current LLMs perform poorly in this translation task due to two key challenges: the scarcity of high-quality PDDL training data and the complexity of maintaining logical consistency across predicates and actions. Traditionally, the translation process has heavily relied on human expertise and manual refinement, making it difficult to automate and scale [GVSK23]. *Equal contribution. \u2020Corresponding Authors. Project page: https://vmlpddl.github.io Technical Report v1 1 arXiv:2502.04728v1 [cs.AI] 7 Feb 2025"
+}

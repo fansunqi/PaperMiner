@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Secure Context Switching",
+    "ISA Analysis",
+    "Security Vulnerability Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sail Language",
+    "Sailor Tool",
+    "Symbolic Execution (Isla)",
+    "Security Analysis"
+  ],
+  "results": [
+    "Detected three classes of mishandled ISA-state",
+    "Identified five types of security vulnerabilities",
+    "Reduced manual analysis time"
+  ],
+  "title": "Automatic ISA Analysis for Secure Context Switching.pdf",
+  "abstract": "Instruction set architectures are complex, with hundreds of registers and instructions that can modify dozens of them during execution, variably on each instance. Prose-style ISA specifications struggle to capture these intricacies of the ISAs, where often the important details about a single register are spread out across hundreds of pages of documentation. En- suring that all ISA-state is swapped in context switch imple- mentations of privileged software requires meticulous exam- ination of these pages. This manual process is tedious and error-prone. We propose a tool called Sailor that leverages machine- readable ISA specifications written in Sail to automate this task. Sailor determines the ISA-state necessary to swap dur- ing the context switch using the data collected from Sail and a novel algorithm to classify ISA-state as security-sensitive. Using Sailor\u2019s output, we identify three different classes of mishandled ISA-state across four open-source confidential computing systems. We further reveal five distinct security vulnerabilities that can be exploited using the mishandled ISA-state. This research exposes an often overlooked attack surface that stems from mishandled ISA-state, enabling un- privileged adversaries to exploit system vulnerabilities. 1 Introduction The increasing complexity of architectures, and the nitty-gritty details of the Instruction set architectures (ISA) being scat- tered throughout hundreds or thousands of pages have put system security at risk. A simple overlook of a single register in security-critical code can inadvertently expose the sys- tem to security vulnerabilities. Low-level software developers need to do the tedious job of manually navigating through the dense ISA specifications to ensure they do not introduce any security vulnerabilities in their code. Moreover, developers \u2217Majority of the work was done while the author was at IBM Research \u2014 Zurich. Security domain 1 Security domain 2 Privileged Software Hardware Isolation boundary ABI API Figure 1: Security domains isolated by a privileged software that mediates the context switch between the domains. The security domains access the ISA-state through the Application Binary Interface (ABI). The privileged software must swap all security-sensitive ISA-state to prevent attacks. need to stay up-to-date with the evolving ISA specifications and the hardware platforms that support them. ISAs have traditionally been specified using hand-written semantics in natural language, occasionally accompanied by pseudo-code, in bulky and comprehensive documents. For ex- ample, the Arm A-profile architecture reference manual [20] and the privileged and unprivileged RISC-V ISA manuals [11] consist of 15,000 and 900 pages, respectively. These ISA manuals are highly technical and are becoming increasingly dense, with new features and instructions added in every ver- sion. For instance, the Arm v7-A, v8-A and v9-A consist of 2700, 5200, and 15,000 pages, respectively [1, 19, 20]. Similarly, on RISC-V, the non-ISA specifications (interrupt architecture, IOMMU, etc.) further add 767 pages [4], and new ISA extensions are ratified every year [9]. Prior work shows a similar trend for the x86 ISA [23]. New features introduce new ISA-state, adding more com- plexity to the already convoluted ISA-state, especially when it comes to isolating software. Figure 1 shows two different security domains that execute in a system. A privileged soft- 1 arXiv:2502.06609v1 [cs.OS] 10 Feb 2025"
+}

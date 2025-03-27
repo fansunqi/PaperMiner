@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://dxzxy12138.github.io/PhysReason/"
+  ],
+  "tasks": [
+    "Physics-based reasoning"
+  ],
+  "datasets": [
+    "PhysReason"
+  ],
+  "methods": [
+    "Physics Solution Auto Scoring Framework (PSAS)",
+    "Answer-level evaluation",
+    "Step-level evaluation"
+  ],
+  "results": [
+    "Average 8.1 solution steps per problem",
+    "PSAS achieves over 98% evaluation accuracy",
+    "Identified four key bottlenecks: Physics Theorem Application, Physics Process Understanding, Calculation, and Physics Condition Analysis"
+  ],
+  "title": "PhysReason A Comprehensive Benchmark Towards Physics-Based Reasoning.pdf",
+  "abstract": "Large language models demonstrate remark- able capabilities across various domains, espe- cially mathematics and logic reasoning. How- ever, current evaluations overlook physics- based reasoning, a complex task requiring physics theorems and constraints. We present PhysReason, a 1,200-problem benchmark com- prising knowledge-based (25%) and reasoning- based (75%) problems, where the latter are di- vided into three difficulty levels (easy, medium, hard). Notably, problems require an average of 8.1 solution steps, with hard problems requir- ing 15.6, reflecting the complexity of physics- based reasoning. We propose the Physics So- lution Auto Scoring Framework, incorporating efficient answer-level and comprehensive step- level evaluations. Top-performing models like Deepseek-R1, Gemini-2.0-Flash-Thinking, and o3-mini-high achieve less than 60% on answer- level evaluation, with performance dropping from knowledge questions (75.11%) to hard problems (31.95%). Through step-level evalua- tion, we identify four key bottlenecks: Physics Theorem Application, Physics Process Un- derstanding, Calculation, and Physics Condi- tion Analysis. These findings position Phys- Reason as a novel and comprehensive bench- mark for evaluating physics-based reasoning capabilities in large language models. Our code and data will be published at https: //dxzxy12138.github.io/PhysReason/. 1 Introduction Large Language Models (LLMs) have demon- strated remarkable performance across various do- mains, such as math (Lightman et al., 2024; Cobbe et al., 2021) and logical reasoning (Hendrycks et al.; Xu et al., 2025). However, current eval- uations often overlook physics-based reasoning, limiting their applications in scenarios such as robotics (Chow et al., 2025) and autonomous driv- ing (Huang et al., 2023). This is because physics- based reasoning, integrating multiple theorems and physics constraints, is more closely aligned with practical applications than math and logical reason- ing. Consequently, developing a comprehensive benchmark for evaluating LLMs\u2019 physics-based reasoning capabilities is crucial for discovering cur- rent limitations and guiding future improvements. There are several pioneering physics bench- marks (K-12 level like ScienceQA (Lu et al., 2022), college-level SciBench (Wang et al.), and expert- level GPQA (Rein et al., 2024)) encompassing pro- gressively advanced knowledge domains. However, they exhibit two critical limitations: oversimplified reasoning processes and neglecting step-level eval- uation. These problems typically involve only 3-4 physics formulas, focusing solely on final answers to measure model performance. Therefore, a bench- mark featuring in-depth reasoning processes and step-level evaluation is urgently needed to measure LLMs\u2019 physics-based reasoning capabilities. To address these limitations, we present Phys- Reason, a comprehensive benchmark compris- ing 1,200 problems designed to evaluate models\u2019 physics-based reasoning capabilities. As illustrated in Figure 1, PhysReason features physics problems that require multi-step reasoning and precise appli- cation of physics theorems. The benchmark intro- duces several key characteristics: 1. Stratified difficulty: There are knowledge- based (25%) and reasoning-based (75%) prob- lems, with reasoning problems categorized into easy, medium, and hard (25% each). 2. Complex reasoning: Solutions average 8.1 steps per problem, with hard problems reach- ing 15.6 steps, exceeding current physics bench- marks which typically only contain 3-4 steps. 3. Multi-modal design: 81% of problems include diagrams, evaluating models\u2019 capabilities in comprehending visual and textual information. To evaluate performance on PhysReason com- prehensively, we propose the Physics Solution Auto Scoring Framework (PSAS) based on current 1 arXiv:2502.12054v1 [cs.AI] 17 Feb 2025"
+}

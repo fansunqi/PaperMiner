@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/VAST-LAB/TripoSG"
+  ],
+  "tasks": [
+    "3D shape synthesis",
+    "Image-to-3D"
+  ],
+  "datasets": [
+    "Objaverse(-XL)",
+    "ShapeNet"
+  ],
+  "methods": [
+    "Rectified flow transformer",
+    "VAE",
+    "MoE",
+    "SDF",
+    "Surface normal guidance",
+    "Eikonal regularization"
+  ],
+  "results": [
+    "Normal-FID: 3.36",
+    "Chamfer distance: 4.51",
+    "F-score: 0.999",
+    "Normal consistency: 0.958"
+  ],
+  "title": "TripoSG High-Fidelity 3D Shape Synthesis Using Large-Scale Rectified Flow Models.pdf",
+  "abstract": "Recent advancements in diffusion techniques have propelled image and video generation to unprece- dented levels of quality, significantly accelerating the deployment and application of generative AI. However, 3D shape generation technology has 1VAST 2The Chinese University of Hong Kong 3The University of Texas at Austin 4Shanghai AI Laboratory \u2217: Equal Contribution \u2020: Corresponding Author . so far lagged behind, constrained by limitations in 3D data scale, complexity of 3D data process- ing, and insufficient exploration of advanced tech- niques in the 3D domain. Current approaches to 3D shape generation face substantial challenges in terms of output quality, generalization capa- bility, and alignment with input conditions. We present TripoSG, a new streamlined shape diffu- sion paradigm capable of generating high-fidelity 3D meshes with precise correspondence to input images. Specifically, we propose: 1) A large-scale rectified flow transformer for 3D shape generation, achieving state-of-the-art fidelity through training on extensive, high-quality data. 2) A hybrid super- 1 arXiv:2502.06608v1 [cs.CV] 10 Feb 2025"
+}

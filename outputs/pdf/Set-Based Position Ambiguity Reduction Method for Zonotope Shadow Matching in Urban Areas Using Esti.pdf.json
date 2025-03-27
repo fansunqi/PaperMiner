@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "GNSS positioning",
+    "Urban area positioning",
+    "Shadow matching",
+    "Zonotope shadow matching"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Set-based position ambiguity reduction",
+    "Mode distribution analysis",
+    "Multipath error estimation",
+    "SPC plane generation",
+    "Mixture model construction"
+  ],
+  "results": [
+    "Mode selection accuracy: 91%",
+    "Positioning accuracy improvement: 4.7%"
+  ],
+  "title": "Set-Based Position Ambiguity Reduction Method for Zonotope Shadow Matching in Urban Areas Using Esti.pdf",
+  "abstract": "In urban areas, the quality of global navigation satellite system (GNSS) signals deteriorates, leading to reduced positioning accuracy. To address this issue, 3D-mapping-aided (3DMA) techniques, such as shadow matching and zonotope shadow matching (ZSM), have been proposed. However, these methods can introduce a problem known as multi-modal position ambiguity, making it challenging to select the exact mode in which the receiver is located. Accurately selecting the correct mode is essential for improving positioning accuracy. A previous study proposed a method that uses satellite-pseudorange consistency (SPC), calculated from pseudorange measurements, to select the mode containing the receiver. This method achieved a mode selection accuracy of approximately 78%. To further enhance accuracy, the study utilized pseudorange measurements collected at multiple timesteps from a fixed location and a trained line-of-sight (LOS) classifier. However, in practice, collecting data at multiple timesteps from the same location in dynamic environments is challenging. Moreover, the performance of the trained LOS classifier heavily depends on the surrounding environment, leading to low reliability. In this study, we propose a method that estimates and corrects multipath errors based on the mode distribution obtained from the output of ZSM and extract an enhanced SPC using the corrected pseudorange measurements. This enables high mode selection accuracy using only single- timestep pseudorange measurements, without requiring a trained LOS classifier. Experimental results using global positioning system (GPS) data collected in an urban environment demonstrate that the proposed method achieves a mode selection accuracy of 91%, compared to 86% for the existing method. Furthermore, when calculating the receiver\u2019s position based on the selected mode, the proposed method achieves a root mean square (RMS) error of 16.87 m, representing a 4.7% improvement over the 17.70 m RMS error of the existing method. I. INTRODUCTION Urban environments present substantial challenges for positioning and navigation services reliant on the global navigation satellite system (GNSS) (Lee et al., 2022a,b; Zhang et al., 2017; Moon et al., 2024; Kim and Seo, 2023b; Jia et al., 2021). Although GNSS is crucial to urban autonomous applications and intelligent transportation systems, dense infrastructure in these areas frequently obstructs, reflects, and diffracts GNSS signals (Zhu et al., 2018; Kim and Seo, 2023a; Kim et al., 2023; Lee et al., 2023). These interactions reduce signal visibility and induce measurement errors, resulting in non-line-of-sight (NLOS) conditions and multipath effects that can degrade positioning accuracy by over 100 m in severe cases (Wang et al., 2012; MacGougan et al., 2002). To address these issues, 3D-mapping-aided (3DMA) techniques have been developed, utilizing high-accuracy 3D city models to improve GNSS reliability (Kumar and Petovello, 2014; Adjrad and Groves, 2017; Suzuki and Kubo, 2012; van Diggelen, 2021). A primary method within 3DMA is shadow matching, which compares observed GNSS signal behavior with predicted satellite visibility based on signal strength measurements (Groves, 2011; Wang et al., 2013; Adjrad and Groves, 2018). Recently, zonotope shadow matching (ZSM), a set-based shadow matching technique, has emerged as a promising alternative to traditional grid-based shadow matching approaches (Bhamidipati et al., 2022; Kim and Seo, 2024). The grid-based method discretizes the arXiv:2502.11283v1 [eess.SP] 16 Feb 2025"
+}

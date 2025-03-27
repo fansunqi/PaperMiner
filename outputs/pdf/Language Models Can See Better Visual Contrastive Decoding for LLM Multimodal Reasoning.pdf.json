@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "https://github.com/Pbhgit/MVCD"
+  ],
+  "tasks": [
+    "Multimodal Reasoning",
+    "Visual Question Answering",
+    "Visual Dialogue"
+  ],
+  "datasets": [
+    "VQAv2",
+    "OKVQA",
+    "MME",
+    "MSRVTT-QA",
+    "MSVD-QA"
+  ],
+  "methods": [
+    "Modular-based Visual Contrastive Decoding (MVCD)",
+    "Contrastive-Example Decoding (CED)",
+    "In-Context Learning (ICL)",
+    "Visual Perception Module"
+  ],
+  "results": [
+    "MVCD achieves competitive performance in both image and video question answering tasks",
+    "MVCD enhances the visual perception capabilities of LLMs",
+    "More contextual examples do not necessarily lead to better performance",
+    "Stronger LLMs indicate better multimodal reasoning under the MVCD schema"
+  ],
+  "title": "Language Models Can See Better Visual Contrastive Decoding for LLM Multimodal Reasoning.pdf",
+  "abstract": "\u2014Although Large Language Models (LLMs) excel in reasoning and generation for language tasks, they are not specifically designed for multimodal challenges. Training Multi- modal Large Language Models (MLLMs), however, is resource- intensive and constrained by various training limitations. In this paper, we propose the Modular-based Visual Contrastive Decoding (MVCD) framework to move this obstacle. Our framework leverages LLMs\u2019 In-Context Learning (ICL) capability and the proposed visual contrastive-example decoding (CED), specifically tailored for this framework, without requiring any additional training. By converting visual signals into text and focusing on contrastive output distributions during decoding, we can highlight the new information introduced by contextual examples, explore their connections, and avoid over-reliance on prior encoded knowledge. MVCD enhances LLMs\u2019 visual perception to make it see and reason over the input visuals. To demonstrate MVCD\u2019s effectiveness, we conduct experiments with four LLMs across five question answering datasets. Our results not only show consistent improvement in model accuracy but well explain the effective components inside our decoding strategy. Our code will be available at https://github.com/Pbhgit/MVCD. Index Terms\u2014Multimodal Learning, Language Decoding, In- Context Learning I. INTRODUCTION Large Language Models (LLMs) [1, 2] have made significant advances in Natural Language Processing (NLP), demonstrating extraordinary capabilities such as instruction following [3], In- Context Learning (ICL) [4], and Chain-of-Thought (CoT) [5] reasoning by scaling up both data and model size. The introduction of vision language models has further enhanced these capabilities by enabling reasoning over visual content in diverse vision language tasks, such as visual question answering (VQA) [6, 7], visual dialogue [8]. Yet, what is the best representation, in efficiency and performance, for transferring LLMs to Multimodal Large Language Models (MLLMs) remains an open question. Transforming LLMs to MLLMs typically requires combining visual and textual \u22c6Corresponding author. \u2020Work done during Haoqin Tu\u2019s stay at UCAS, China. This work was supported by NSFC under 62272456. \u00a9 2025 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works. signals using extra training parameters and the corresponding data [9, 10, 11, 12, 7]. This paradigm not only demands significant computational resources and extensive data, but also requires model retraining whenever a new modality is introduced. Existing efficient multimodal methods focus on integrating probability-based visual control to the decoding stage [13, 14] or simply bridging visual and language modules using symbolic representations [15, 16]. These methods acquire multimodal knowledge without task-specific training, thereby minimizing the computational cost of multimodal reasoning using LLM. Although efficient MLLM methods reduce resource require- ments through lightweight designs, they often underperform on complex tasks like multimodal reasoning and generation. These models often prioritize knowledge from a single modality during multimodal reasoning, neglecting the need to explore connections from different modalities. As a result, they fail to fully capture patterns within these data pairs, leading to suboptimal performance in related tasks and exposing potential issues while deploying these models [17, 18]. To overcome those shortcomings, we equip LLMs with visual reasoning capability and propose a plug-and-play framework, MVCD. As shown in Fig. 1, adding a visual perception module to the LLM to extract text features (e.g., tags, attributes, and captions) enables task handling without retraining. To achieve multimodal reasoning, we are aware of the need to capture connections between different modal data pairs to guide response. Specifically, we first propose the use of the text- only ICL format to better instruct MLLMs for reasoning tasks. Based on traditional contrastive decoding [19, 20], we proposed contrastive-example decoding (CED). By strategically selecting appropriate contextual examples, CED compares output proba- bility distributions with and without these examples, filtering low-probability tokens under adaptive constraints to optimize reasoning and address the limitations of prior knowledge. We apply MVCD to five question answering datasets, showing that CED enhances LLMs\u2019 visual perception and robustness across different shot settings while preserving their original strengths. In summary, our main contributions are: (1) We explore multimodal reasoning with LLMs and propose the MVCD framework, which integrates a visual perception module arXiv:2502.11751v1 [cs.CV] 17 Feb 2025"
+}

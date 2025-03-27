@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/kimyong95/guide-stable-diffusion/tree/fast-direct"
+  ],
+  "tasks": [
+    "Image target generation",
+    "Molecule target generation",
+    "Compressibility",
+    "Incompressibility",
+    "Aesthetic quality"
+  ],
+  "datasets": [
+    "CrossDocked2020",
+    "LAION aesthetics predictor"
+  ],
+  "methods": [
+    "Guided noise sequence optimization (GNSO)",
+    "Fast Direct",
+    "Universal guidance",
+    "Black-box optimization"
+  ],
+  "results": [
+    "6\u00d7 to 10\u00d7 query efficiency improvement on image tasks",
+    "11\u00d7 to 44\u00d7 query efficiency improvement on molecule tasks"
+  ],
+  "title": "Fast Direct Query-Efficient Online Black-box Guidance for Diffusion-model Target Generation.pdf",
+  "abstract": "Guided diffusion-model generation is a promising direction for customizing the generation process of a pre-trained diffusion-model to address the specific down- stream tasks. Existing guided diffusion models either rely on training of the guid- ance model with pre-collected datasets or require the objective functions to be differentiable. However, for most real-world tasks, the offline datasets are often unavailable, and their objective functions are often not differentiable, such as im- age generation with human preferences, molecular generation for drug discovery, and material design. Thus, we need an online algorithm capable of collecting data during runtime and supporting a black-box objective function. Moreover, the query efficiency of the algorithm is also critical because the objective eval- uation of the query is often expensive in the real-world scenarios. In this work, we propose a novel and simple algorithm, Fast Direct, for query-efficient online black-box target generation. Our Fast Direct builds a pseudo-target on the data manifold to update the noise sequence of the diffusion model with a universal direction, which is promising to perform query-efficient guided generation. Ex- tensive experiments on twelve high-resolution (1024 \u00d7 1024) image target gen- eration tasks and six 3D-molecule target generation tasks show 6\u00d7 up to 10\u00d7 query efficiency improvement and 11\u00d7 up to 44\u00d7 query efficiency improvement, respectively. Our implementation is publicly available at: https://github. com/kimyong95/guide-stable-diffusion/tree/fast-direct 1 INTRODUCTION Diffusion models have become the state-of-the-art generative model for image synthesis (Ho et al., 2020; Nichol & Dhariwal, 2021; Dhariwal & Nichol, 2021) and video synthesis (Ho et al., 2022), etc. Its remarkable success is due to its powerful capability in modeling the complex multi-mode high-dimensional data distributions. One promising direction for utilizing the generative power of diffusion models is through target generation. This allows users to customize the generation process to meet specific downstream objectives, effectively extending the models\u2019 capabilities beyond synthesis problems to engineering optimization and science discovery problems, such as image generation with human preferences, drug discovery (Corso et al., 2022; Guan et al., 2023) and material design (Vlassis & Sun, 2023; Giannone et al., 2023). The pre-trained diffusion models often struggle to generate desired samples for these applications, especially when the target data lies out of the training data distribution. Therefore, the target gen- eration often involves model fine-tuning or guidance techniques. Krishnamoorthy et al. (2023) pro- poses to train the diffusion model with re-weighted training loss, while Clark et al. (2023); Black et al. (2023); Fan et al. (2024); Yang et al. (2024) advocates for fine-tuning the parameters of the pre- \u2217Corresponding author 1 arXiv:2502.01692v3 [cs.LG] 6 Feb 2025"
+}

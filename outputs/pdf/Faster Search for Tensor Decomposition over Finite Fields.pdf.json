@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/coolcomputery/tensor-cpd-search"
+  ],
+  "tasks": [
+    "Tensor Decomposition over Finite Fields"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Exact Algorithms",
+    "Polynomial Space",
+    "Finite Field",
+    "Tensor Contractions"
+  ],
+  "results": [
+    "O*(|F|min{R, \u2211d\u22652 nd}+(R\u2212n0)(\u2211d 6=0 nd))-time",
+    "O*(|F|n0+n2+(R\u2212n0+1\u2212r\u2217)(n1+n2)+r2\u2217) time for 3D tensors"
+  ],
+  "title": "Faster Search for Tensor Decomposition over Finite Fields.pdf",
+  "abstract": "We present an O\u2217(|F|min{R, P d\u22652 nd}+(R\u2212n0)(P d\u0338=0 nd))-time algorithm for determining whether the rank of a concise tensor T \u2208Fn0\u00d7\u00b7\u00b7\u00b7\u00d7nD\u22121 is \u2264R, assuming n0 \u2265\u00b7 \u00b7 \u00b7 \u2265nD\u22121 and R \u2265n0. For 3- dimensional tensors, we have a second algorithm running in O\u2217(|F|n0+n2+(R\u2212n0+1\u2212r\u2217)(n1+n2)+r2 \u2217) time, where r\u2217:= j R n0 k + 1. Both algorithms use polynomial space and improve on our previous work, which achieved running time O\u2217(|F|n0+(R\u2212n0)(P d nd)). 1 Introduction Given a tensor (multidimensional array) T \u2208Rn0\u00d7... nD\u22121 over a ground ring R, a rank-R canonical polyadic decomposition (CPD) of T is a list of matrices Ad \u2208Rnd\u00d7R, 0 \u2264d < D such that T = \u0002P 0\u2264r<R Q 0\u2264d<D(Ad)id,r \u0003 i0,...,iD\u22121 . We call the Ad \u201cfactor matrices\u201d and abbreviate the right-hand side as [[A0, . . . , AD\u22121]]. Note that this expression is also equal to P r N d(Ad):,r, where \u2297denotes the tensor product. The rank of T , denoted rk (T ), is the smallest R such that there exists a rank-R CPD of T . Determining tensor rank is the central problem underlying fast matrix multiplication [8]. Formally, the action of multi- plying a m \u00d7 k matrix with a k \u00d7 n matrix can be represented with a mk \u00d7 kn \u00d7 nm tensor \u27e8m, k, n\u27e9; then a rank-R CPD of this tensor can be converted into a divide-and-conquer algorithm for multiplying two N \u00d7 N matrices in O(N 3 logmkn R) time. The quantity 3 logmkn R is known as the running time exponent of such a CPD. The famous Strassen algorithm [24] corresponds to a rank-7 CPD of \u27e82, 2, 2\u27e9. Furthermore, every fast matrix multiplication algorithm corresponds to a CPD of some \u27e8m, k, n\u27e9, as long as it is restricted to arithmetic operations [8]. The asymptotically fastest known algorithm for matrix multiplication [2] and its predecessors correspond to CPDs of very large \u27e8m, k, n\u27e9tensors; this is a consequence of applying several algebraic techniques, each of which produces sequences of CPDs whose running time exponents converge to some limit. As a result, the constant factors of such algorithms render them impractical [8], despite new developments to mitigate this issue [4]. An alternative approach to fast matrix multiplication is to directly \ufb01nd low-rank CPDs of small \u27e8m, k, n\u27e9 tensors. Much work has been done in this direction using computer search [23, 9, 13, 11, 15, 16, 6, 10], which we detail in Section 1.1. We are most interested in the latter approach to fast matrix multiplication, due to impractical constant factors in the former approach. However, we deviate from previous research in two ways: 1. We restrict ourselves to exact algorithms which can prove existence or non-existence of a low-rank CPD of a given tensor. Although heuristic search methods such as [9, 23, 13, 11, 15] have found many novel CPDs, they still have not resolved questions such as whether \u27e83, 3, 3\u27e9has a rank-22 CPD, which has been open since 1976 [17]. A polynomial-time exact algorithm is unlikely to exist, as tensor rank is known to be NP-hard over a \ufb01nite \ufb01eld and the rationals [12], and undecidable over the integers [22]. However, we are still interested in \ufb01nding asymptotic improvements, as they can signi\ufb01cantly expand the set of tensors that can be feasibly analyzed in practice, even if the \ufb01nal time complexity is exponential. To ensure an exact algorithm is possible in principle, we restrict ourselves to searching for CPDs over a \ufb01nite \ufb01eld, so that the search space is \ufb01nite. Doing so is not too strong of a handicap, as some previous 1"
+}

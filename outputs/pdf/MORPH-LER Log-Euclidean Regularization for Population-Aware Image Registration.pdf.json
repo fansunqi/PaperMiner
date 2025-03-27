@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/iyerkrithika21/MORPH LER"
+  ],
+  "tasks": [
+    "Image Registration"
+  ],
+  "datasets": [
+    "OASIS-1 brain imaging dataset"
+  ],
+  "methods": [
+    "Log-Euclidean Regularization",
+    "Diffeomorphic Autoencoder",
+    "Population-based Regularization"
+  ],
+  "results": [
+    "Improved anatomical accuracy",
+    "Reduced negative Jacobian pixels",
+    "Enhanced interpretability"
+  ],
+  "title": "MORPH-LER Log-Euclidean Regularization for Population-Aware Image Registration.pdf",
+  "abstract": "Spatial transformations that capture population-level morphological statistics are critical for medical image analysis. Commonly used smoothness regularizers for image registration fail to integrate population statistics, leading to anatomically inconsistent transformations. Inverse consistency regularizers promote geometric consistency but lack population morpho- metrics integration. Regularizers that constrain deformation to low-dimensional manifold methods address this. However, they prioritize reconstruction over interpretability and neglect diffeomorphic properties, such as group composition and inverse consistency. We introduce MORPH-LER, a Log-Euclidean regularization framework for population-aware unsupervised image registration. MORPH-LER learns population morphometrics from spa- tial transformations to guide and regularize registration networks, ensuring anatomically plausible deformations. It features a bottleneck autoencoder that computes the principal logarithm of deformation fields via iterative square-root predictions. It creates a linearized latent space that respects diffeomorphic properties and enforces inverse consistency. By in- tegrating a registration network with a diffeomorphic autoencoder, MORPH-LER produces smooth, meaningful deformation fields. The framework offers two main contributions: (1) a data-driven regularization strategy that incorporates population-level anatomical statistics to enhance transformation validity and (2) a linearized latent space that enables compact and interpretable deformation fields for efficient population morphometrics analysis. We validate MORPH-LER across two families of deep learning-based registration networks, demonstrating its ability to produce anatomically accurate, computationally efficient, and statistically meaningful transformations on the OASIS-1 brain imaging dataset. Github: https://github.com/iyerkrithika21/MORPH LER Keywords: deformable image registration, manifold statistics, non- rigid, diffeomorphisms, shape population statistics, log- euclidean statistics 1. Introduction Image registration is crucial in medical image analysis. It entails determining a one-to-one mapping of pixel coordinates between images to align corresponding anatomical points. Registration algorithms establish correspondences that enable the creation of population- level atlases, providing standardized references for studying disease progression, pathology detection, treatment planning, and motion tracking (Suganyadevi et al., 2022; Zachiu et al., 2020; Binte Alam et al., 2020; Viergever et al., 2016). The versatility of image registra- tion methods makes them indispensable across various imaging modalities (Huang et al., \u2217Contributed equally \u00a9 2025 CC-BY 4.0, M.S.T. Karanam, K. Iyer, S. Joshi & S. Elhabian. arXiv:2502.02029v1 [cs.CV] 4 Feb 2025"
+}

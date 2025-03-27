@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hyperbolic Conservation Laws",
+    "Active Flux Method"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hybrid finite element-finite volume method",
+    "Higher moments",
+    "Point values at cell interfaces",
+    "Gauss points",
+    "SSP-RK3 method"
+  ],
+  "results": [
+    "Arbitrarily high order accuracy",
+    "Stability analysis for linear advection",
+    "CFL condition for fully discrete version"
+  ],
+  "title": "A Generalized Active Flux Method of Arbitrarily High Order in Two Dimensions.pdf",
+  "abstract": "The Active Flux method can be seen as an extended finite volume method. The degrees of freedom of this method are cell averages, as in finite volume methods, and in addition shared point values at the cell interfaces, giving rise to a glob- ally continuous reconstruction. Its classical version was introduced as a one-stage fully discrete, third-order method. Recently, a semi-discrete version of the Active Flux method was presented with various extensions to arbitrarily high order in one space dimension. In this paper we extend the semi-discrete Active Flux method on two-dimensional Cartesian grids to arbitrarily high order, by including moments as additional degrees of freedom (hybrid finite element\u2013finite volume method). The stability of this method is studied for linear advection. For a fully discrete version, using an explicit Runge-Kutta method, a CFL restriction is derived. We end by presenting numerical examples for hyperbolic conservation laws. Keywords: hyperbolic conservation laws, Active Flux, semi-discrete method, high-order method. 1 Introduction The solution of systems of hyperbolic conservation laws is required by many different physical problems from fluid dynamics. As most of these problems are fairly complex, numerical methods are needed to solve them. Finite volume methods evolve cell averages and maintain conservation in a discrete sense which is important for convergence to a weak solution. Godunov\u2019s method [God59], for example, is a seminal approach to hyperbolic conservation laws. More recently, Roe and coauthors introduced the Active Flux method [ER11b, ER11a, ER13] inspired by van Leer\u2019s scheme V [Van77] for linear advection. The new method not only uses cell averages but also point values at the cell interfaces. This allows to reconstruct the solution piecewise parabolically in a globally continuous fashion. In [Van77], the point values at the cell interfaces were updated by tracing back the characteristics. This way, a method of third order for linear advection in one spatial dimension arose. Roe\u2019s one-stage fully discrete Active Flux method (which we will call the classical Active Flux method, for a review on Cartesian grids see e.g. [CH23]) extends this idea to certain nonlinear and/or multi-dimensional hyperbolic problems by replacing characteristic transport with suitable either exact or approximate evolution operators (e.g. \u2217Corresponding author: lisa.lechner@uni-wuerzburg.de 1 arXiv:2502.05101v1 [math.NA] 7 Feb 2025"
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://anonymous.4open.science/r/4987d19d-f5cd-4f14-910d-c7141ce37f13/"
+  ],
+  "tasks": [
+    "Efficient Serving of Long Context LLMs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Windowed Rotary Position Embedding",
+    "Query-Aware Vector Quantization",
+    "Heterogeneous Inference Design"
+  ],
+  "results": [
+    "Accuracy degradation: 2.2 on Llama-3.1-8B and 0.4 on Mistral-7B",
+    "Throughput improvement: Up to 2.7x"
+  ],
+  "title": "A^2ATS Retrieval-Based KV Cache Reduction Via Windowed Rotary Position Embedding and Query-Aware Vec.pdf",
+  "abstract": "Long context large language models (LLMs) pose significant challenges for efficient serv- ing due to the large memory footprint and high access overhead of KV cache. Retrieval-based KV cache reduction methods can mitigate these challenges, typically by offloading the com- plete KV cache to CPU and retrieving neces- sary tokens on demand during inference. How- ever, these methods still suffer from unsatisfac- tory accuracy degradation and extra retrieval overhead. To address these limitations, this pa- per proposes A2ATS, a novel retrieval-based KV cache reduction method. A2ATS aims to obtain an accurate approximation of attention scores by applying the vector quantization tech- nique to key states, thereby enabling efficient and precise retrieval of the top-K tokens. First, we propose Windowed Rotary Position Embed- ding, which decouples the positional depen- dency from query and key states after position embedding. Then, we propose query-aware vector quantization that optimizes the objective of attention score approximation directly. Fi- nally, we design the heterogeneous inference architecture for KV cache offloading, enabling long context serving with larger batch sizes. Experimental results demonstrate that A2ATS can achieve a lower performance degradation with similar or lower overhead compared to ex- isting methods, thereby increasing long context serving throughput by up to 2.7\u00d7. 1 Introduction Large language models (LLMs) with long context windows (OpenAI, 2023; Reid et al., 2024; Dubey et al., 2024; Jiang et al., 2024; Yang et al., 2024a; DeepSeek-AI et al., 2024) are driving advance- ments in AI applications. However, these mod- els pose significant challenges for efficient serving. Their Transformer-based (Vaswani et al., 2017) ar- chitecture generates and maintains a Key-Value *Equal contributions. \u2020Corresponding authors. (KV) cache during inference to store intermediate results and avoid re-computation. As the context length increases, the size of the KV cache grows proportionally, leading to severe overheads. First, the size of KV cache accessed when generating each token increases, resulting in a GPU memory bandwidth bottleneck. Moreover, the large KV cache size of each request limits the maximum feasible batch size, resulting in suboptimal GPU utilization. Various methods were proposed to address these challenges from different perspectives. Quantization-based methods (Liu et al., 2024b; Hooper et al., 2024) compress KV cache by using lower bit-width representations for KV cache ele- ments. Eviction-based methods (Xiao et al., 2024; Zhang et al., 2023; Li et al., 2024; Yang et al., 2024b) reduce the KV cache size by directly evict- ing unimportant tokens from memory. Retrieval- based methods (Tang et al., 2024; Singhania et al., 2024; Zhang et al., 2024; Liu et al., 2024a; Chen et al., 2024) offload the complete KV cache to CPU memory and retrieve necessary tokens on demand during inference. However, these methods still face challenges of limited compression ratio, un- satisfactory accuracy degradation, or extra retrieval overhead. To address the above limitations, this paper pro- poses A2ATS, a novel retrieval-based KV cache re- duction method. A2ATS aims to obtain an Accurate Approximation of ATtention Scores by applying vector quantization technique to key states, thereby enabling efficient and precise retrieval of the top-K tokens. In order to achieve this goal, we face two main challenges. First, the position-dependent na- ture of key states after applying position embedding hinders the direct application of shared codebooks across varying inputs. Second, directly utilizing the conventional vector quantization fails to guarantee an accurate approximation of attention scores. To overcome these challenges, the main contributions 1 arXiv:2502.12665v1 [cs.CL] 18 Feb 2025"
+}

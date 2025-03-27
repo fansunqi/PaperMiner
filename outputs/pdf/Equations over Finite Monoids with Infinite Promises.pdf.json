@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Equations over Finite Monoids with Infinite Promises"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Algebraic approach to promise constraint satisfaction",
+    "Monoid homomorphisms",
+    "Cosets"
+  ],
+  "results": [
+    "Dichotomy result: solvable in polynomial time or NP-complete",
+    "Tractability of PCSPs via BLP+AIP algorithm",
+    "Algorithm for solving CSPs over infinite templates"
+  ],
+  "title": "Equations over Finite Monoids with Infinite Promises.pdf",
+  "abstract": "Larrauri and \u02c7Zivn\u00b4y [ICALP\u201924] recently established a complete complexity classi\ufb01ca- tion of the problem of solving a system of equations over a monoid N assuming that a solution exists over a monoid M, where both monoids are \ufb01nite and M admits a homo- morphism to N. Using the algebraic approach to promise constraint satisfaction problems, we extend their complexity classi\ufb01cation in two directions: we obtain a complexity dicho- tomy in the case where arbitrary relations are added to the monoids, and we moreover allow the monoid M to be \ufb01nitely generated. 1 Introduction Solving Equations Deciding the solvability of systems of equations is a fundamental prob- lem in computer science and mathematics. In general, the equation satis\ufb01ability problem for an algebraic structure A takes as input a set of equations of the form spx1, . . . , xnq \u201c tpx1, . . . , xnq where x1, . . . , xn are variables and s, t are terms over the algebraic symbols of the structure. For example, over a monoid the terms would be simply words over the alphabet tx1, . . . , xnu, over groups the terms would be words over the alphabet tx1, x\u00b41 1 , . . . , xn, x\u00b41 n u, and over rings the terms would be multivariate polynomials. For now, the reader can imagine that the terms may also contain constants from the algebraic structure A, but we will revisit this assumption in the following. The question is to decide whether there exists an assignment h: tx1, . . . , xnu \u00d1 A such that every equation becomes true under this assignment. Besides their intrinsic mathematical appeal, equation satis\ufb01ability problems are very nat- ural for computer science, in particular in the case where the equations are to be solved over a \ufb01nitely generated free structure. Indeed, the elements of such structures are themselves words or terms over the generators and the equation satis\ufb01ability problem then coincides with the uni\ufb01cation problem, where on an input consisting of equations as above, the goal is to determine the existence of a substitution of the variables into terms that would make the equations true, possibly modulo a background equational theory. For example, uni\ufb01cation \u2217This work was supported by UKRI EP/X024431/1. For the purpose of Open Access, the authors have applied a CC BY public copyright licence to any Author Accepted Manuscript version arising from this submission. All data is provided in full in the results section of this paper. 1"
+}

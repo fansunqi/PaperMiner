@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Causal Effect Score in Data Management"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized Causal Effect Score (GCES)"
+  ],
+  "results": [
+    "Dichotomy results for computing the GCES",
+    "Axiomatic characterization of the GCES",
+    "Comparison with Shapley Value and BPI"
+  ],
+  "title": "The Causal-Effect Score in Data Management.pdf",
+  "abstract": "The Causal Effect (CE) is a numerical measure of causal in\ufb02uence of variables on observed results. Despite being widely used in many areas, only preliminary attempts have been made to use CE as an attribution score in data management, to measure the causal strength of tuples for query answering in databases. In this work, we introduce, generalize and investigate the so-called Causal-Effect Score in the context of classical and probabilistic databases. Keywords: Causality, Probabilistic Databases, Attribution Scores 1. Introduction Users of a database management system could expect explanations, for example, for the answers to a query, for a violation of an integrity constraint, etc. So as in AI and machine-learning, explanations may come in different forms, in particular, as an attribution score, that is, as a quantitative degree of relevance of a piece of data in a database (DB) in relation to the observed output (or for the feature values in input entities in the case of AI and ML). This work concentrates on local attribution scores as explanations in DBs, that is, for a particular query answer, and at the DB tuple level. Several scores have been proposed and investigated in DBs. Responsibility (Chockler and Halpern, 2004) is based on actual causality and counterfactual interventions (Halpern and Pearl, 2005; Halpern, 2015, 2016). The latter can be seen as hypothetical changes performed on a (causal) model, to iden- tify other changes. By doing so, one can detect cause-effect relationships. In the context of actual causality, Responsibility (RESP) has been applied in DBs to quantify the relevance of individual tuples, and attribute values in them, for a query result (Meliou et al., 2010a,b; Bertossi and Salimi, 2017a,b). The Shapley Value of Coalition Game Theory (Shapley, 1953; Roth, 1988), as a measure of contribution of individual players to a shared wealth or game function, has been applied as an explanation score in DBs, with tuples acting as players, and the query (Boolean or aggregate) as the game function (Livshits et al., 2021a,b; Deutch et al., 2022; Bertossi et al., 2023b). The Shap- ley Value is as the only measure that satis\ufb01es a given set of desired properties (or axioms) (Roth, 1988). A related game-theoretic measure, the Banzhaf Power Index (BPI) (Banzhaf, 1964), has been applied in DBs as the Banzhaf Score (Livshits et al., 2021a; Abramovich et al. , 2024). The Causal-Effect Score (CES) can be traced back to causality in observational studies (Rubin, 1974; Holland, 1986), where one usually cannot prede\ufb01ne and build control groups, but they have to be recovered from the available data (Gelman and Hill, 2007; Pearl, 2009; Roy and Salimi, 2023). The CES is also based on counterfactual interventions. In (Salimi et. al., 2016), an appropriate form of the CES was \ufb01rst used in data management, when RESP did not provide intuitive results. Furthermore, CES is more appropriate than RESP for explaining aggregate queries. RESP would * Professor Emeritus, Carleton University, Ottawa, Canada \u00a9 F. Az\u00b4ua & L. Bertossi."
+}

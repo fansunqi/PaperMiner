@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/drivetosouth/SafeDialBench-Dataset"
+  ],
+  "tasks": [
+    "Large Language Model Safety Evaluation",
+    "Multi-turn Dialogue Safety Assessment"
+  ],
+  "datasets": [
+    "SafeDialBench"
+  ],
+  "methods": [
+    "Two-tier Hierarchical Safety Taxonomy",
+    "Jailbreak Attack Strategies",
+    "LLM-based and Human Expert Evaluations"
+  ],
+  "results": [
+    "Yi-34B-Chat and GLM4-9B-Chat demonstrate superior safety performance",
+    "Llama3.1-8B-Instruct and o3-mini exhibit safety vulnerabilities",
+    "Jailbreak attack methods: fallacy attack, purpose reverse, and role play are effective"
+  ],
+  "title": "SafeDialBench A Fine-Grained Safety Benchmark for Large Language Models in Multi-Turn Dialogues with.pdf",
+  "abstract": "With the rapid advancement of Large Language Models (LLMs), the safety of LLMs has been a critical concern requiring precise assessment. Current benchmarks primarily concentrate on single-turn dialogues or a single jailbreak at- tack method to assess the safety. Additionally, these benchmarks have not taken into account the LLM\u2019s capability to identify and handle unsafe information in detail. To address these issues, we propose a fine-grained benchmark SafeDialBench for evaluating the safety of LLMs across various jailbreak attacks in multi- turn dialogues. Specifically, we design a two- tier hierarchical safety taxonomy that considers 6 safety dimensions and generates more than 4000 multi-turn dialogues in both Chinese and English under 22 dialogue scenarios. We em- ploy 7 jailbreak attack strategies, such as ref- erence attack and purpose reverse, to enhance the dataset quality for dialogue generation. No- tably, we construct an innovative assessment framework of LLMs, measuring capabilities in detecting, and handling unsafe information and maintaining consistency when facing jail- break attacks. Experimental results across 17 LLMs reveal that Yi-34B-Chat and GLM4-9B- Chat demonstrate superior safety performance, while Llama3.1-8B-Instruct and o3-mini ex- hibit safety vulnerabilities.1 Warning: This paper contains examples of harmful content. 1 Introduction Large Language Models (LLMs) have been exten- sively deployed in dialogue systems, attributed to their remarkable generation capabilities. Given their widespread use, safety has emerged as a cru- cial concern with respect to reliability and trust- worthiness across various scenarios (Anwar et al., 2024). Existing benchmarks such as COLD (Deng et al., 2022), BeaverTails (Ji et al., 2024a), and Red *Equal contribution. \u2020 Corresponding author. 1The dataset is accessible at https://github.com/ drivetosouth/SafeDialBench-Dataset. Team (Perez et al., 2022) evaluate LLMs safety in single-turn dialogues. However, real-world interac- tions between users and chatbots typically involve multi-turn dialogues (Zheng et al., 2023, 2024; Bai et al., 2024), introducing additional safety concerns that require comprehensive evaluation. Recent benchmarks for multi-turn dialogues safety (Yu et al., 2024; Zhang et al., 2024; Jiang et al., 2024; Ren et al., 2024) generally employ jailbreak attack methods to test an LLM\u2019s ability to prevent unsafe content generation. However, these approaches suffer from several critical lim- itations, especially on the insufficient evaluation scope. First, they often rely on a single jailbreak attack strategy for dataset construction. Second, they focus narrowly on censoring aggressive lan- guage, while neglecting other important aspects such as ethics, morality, legality, fairness, and pri- vacy (Jiang et al., 2024; Zhang et al., 2024; Yu et al., 2024). Moreover, these benchmarks typically lack a detailed evaluation of an LLM\u2019s capacity to iden- tify and handle unsafe information. Thus, there is a pressing need for a comprehensive and fine-grained benchmark tailored to multi-turn dialogues. To address the above limitations, we propose SafeDialBench, a fine-grained benchmark for evaluating the safety of multi-turn dialogues un- der diverse jailbreak attack methods, as illustrated in Figure 1. SafeDialBench introduces a two-tier hierarchical safety taxonomy covering six distinct safety dimensions\u2014Fairness, Legality, Morality, Aggression, Ethics, and Privacy (see Figure 2). Each dimension is further decomposed into multi- ple safety points, providing a comprehensive crite- rion for assessing model safety. Across these six dimensions, we deploy seven distinct jailbreak at- tack strategies, including reference attack, scene construction, and purpose reverse\u2014to generate di- alogues. In total, SafeDialBench comprises 4,053 dialogues, each containing between 3 and 10 turns in both English and Chinese. Furthermore, we in-"
+}

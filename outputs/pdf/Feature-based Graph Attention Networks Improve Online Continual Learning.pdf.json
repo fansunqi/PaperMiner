@@ -1,0 +1,24 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Online Continual Learning"
+  ],
+  "datasets": [
+    "SVHN",
+    "CIFAR10",
+    "CIFAR100",
+    "MiniImageNet"
+  ],
+  "methods": [
+    "Feature-based Graph Attention Networks (FGAT)",
+    "Graph Attention Networks (GATs)",
+    "Weighted Global Mean Pooling",
+    "Rehearsal Memory Duplication"
+  ],
+  "results": [
+    "FGAT outperforms the relevant baseline methods by 26%, 6%, and 18% on CIFAR10, CIFAR100, and MiniImageNet respectively",
+    "FGAT achieves superior performance compared to methods like EWC, GEM, and ER on SVHN"
+  ],
+  "title": "Feature-based Graph Attention Networks Improve Online Continual Learning.pdf",
+  "abstract": "Online continual learning for image classification is crucial for models to adapt to new data while retaining knowledge of previously learned tasks. This capability is essential to address real-world challenges involving dynamic environments and evolving data distributions. Traditional approaches predominantly employ Convo- lutional Neural Networks, which are limited to processing images as grids and primarily capture local patterns rather than relational information. Although the emergence of transformer architectures has improved the abil- ity to capture relationships, these models often require significantly larger resources. In this paper, we present a novel online continual learning framework based on Graph Attention Networks (GATs), which effectively capture contextual relationships and dynamically update the task-specific representation via learned attention weights. Our approach utilizes a pre-trained feature extractor to convert images into graphs using hierarchical feature maps, representing information at varying levels of granularity. These graphs are then processed by a GAT and incorporate an enhanced global pooling strategy to improve classification performance for continual learning. In addition, we propose the rehearsal memory duplication technique that improves the representation of the previous tasks while maintaining the memory budget. Comprehensive evaluations on benchmark datasets, including SVHN, CIFAR10, CIFAR100, and MiniImageNet, demonstrate the superiority of our method com- pared to the state-of-the-art methods. 1 Introduction Online continual learning (OCL) is a vital paradigm in machine learning, enabling models to incrementally adapt to new data while preserving knowledge from previously learned tasks [27, 11]. This approach is particularly important in dynamic environments with evolving data distributions, as it addresses the challenge of catastrophic forgetting \u2014 where models lose prior knowledge when updated with new information [19, 25]. OCL is especially critical for image classification in numerous real-world applications scenarios [25], such as autonomous vehicles needing to adapt to new environments, facial recognition needing to recognize new images over time, and other scenarios such as video surveillance, and climate monitoring, where the ability to learn and adapt continuously is essential to maintaining performance and relevance. Previous approaches to mitigating catastrophic forgetting have heavily relied on Convolutional Neural Net- works (CNNs) [12, 25]. CNNs hierarchically aggregate local features to generate final image representations. However, they fail to capture the relationships between the parts of the image. Furthermore, they lack the capa- bility of the representation update, as features are simply accumulated toward the final representation rather than being dynamically refined based on surrounding regions. Although transformer architectures offer a potential solution through their attention mechanisms, which can model the relationship between features, their substantial computational requirements are large. In contrast, Graph Neural Networks (GNNs) enable dynamic representation updates through message passing between neighboring nodes [28]. It captures relational information across different image segments, with an 1 arXiv:2502.09143v1 [cs.CV] 13 Feb 2025"
+}

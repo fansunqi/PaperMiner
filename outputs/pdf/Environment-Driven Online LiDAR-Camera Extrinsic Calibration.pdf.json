@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LiDAR-camera extrinsic calibration"
+  ],
+  "datasets": [
+    "KITTI odometry",
+    "MIAS-LCEC"
+  ],
+  "methods": [
+    "Generalizable scene discriminator",
+    "Dual-path correspondence matching",
+    "Spatial-temporal relative pose optimization"
+  ],
+  "results": [
+    "State-of-the-art performance",
+    "Superior robustness and accuracy",
+    "Human-like adaptability"
+  ],
+  "title": "Environment-Driven Online LiDAR-Camera Extrinsic Calibration.pdf",
+  "abstract": "\u2014LiDAR-camera extrinsic calibration (LCEC) is the core for data fusion in computer vision. Existing methods typically rely on customized calibration targets or fixed scene types, lacking the flexibility to handle variations in sensor data and environmental contexts. This paper introduces EdO- LCEC, the first environment-driven, online calibration approach that achieves human-like adaptability. Inspired by the human perceptual system, EdO-LCEC incorporates a generalizable scene discriminator to actively interpret environmental conditions, This research was supported by the National Natural Science Foundation of China under Grants 62473288 and 62233013, the Fundamental Research Funds for the Central Universities, Xiaomi Young Talents Program, and the National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Xi\u2019an Jiaotong University under Grant No. HMHAI-202406. (Corresponding author: Rui Fan) Zhiwei Huang and Jiaqi Li are with the Department of Control Sci- ence & Engineering, the College of Electronics & Information Engi- neering, Tongji University, Shanghai 201804, China (e-mails: {2431985, 2251550}@tongji.edu.cn). Ping Zhong is with the School of Computer Science and Engineering, Central South University, Changsha 410083, Hunan, China, as well as with the National Key Laboratory of Science and Technology on Automatic Target Recognition, National University of Defense Technology, Changsha 410073, Hunan, China (e-mail: ping.zhong@csu.edu.cn). Rui Fan is with the Department of Control Science & Engineering, the College of Electronics & Information Engineering, Shanghai Research Institute for Intelligent Autonomous Systems, the State Key Laboratory of Intelligent Autonomous Systems, and Frontiers Science Center for Intelligent Autonomous Systems, Tongji University, Shanghai 201804, China, as well as with the National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi\u2019an Jiaotong University, Xi\u2019an 710049, Shaanxi, China (e-mail: rui.fan@ieee.org). creating multiple virtual cameras that capture detailed spatial and textural information. To overcome cross-modal feature matching challenges between LiDAR and camera, we propose dual-path correspondence matching (DPCM), which leverages both structural and textural consistency to achieve reliable 3D- 2D correspondences. Our approach formulates the calibration process as a spatial-temporal joint optimization problem, utilizing global constraints from multiple views and scenes to improve accuracy, particularly in sparse or partially overlapping sensor views. Extensive experiments on real-world datasets demonstrate that EdO-LCEC achieves state-of-the-art performance, providing reliable and precise calibration across diverse, challenging envi- ronments. I. INTRODUCTION We have long envisioned robots with human-like intelli- gence, enabling them to understand, adapt to, and positively impact the world [1]\u2013[4]. This dream is becoming increasingly attainable with the advent of LiDAR-camera data fusion systems. LiDARs provide accurate spatial information, while cameras capture rich textural details [5]. The complementary strengths of these two modalities, when fused, provide robots with powerful environmental perception capabilities [6], [7]. LiDAR-camera extrinsic calibration (LCEC), which estimates the rigid transformation between the two sensors, is a core and foundational process for effective data fusion. arXiv:2502.00801v1 [cs.CV] 2 Feb 2025"
+}

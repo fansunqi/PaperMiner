@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://huggingface.co/datasets/hackerrank/astra-benchmark"
+  ],
+  "tasks": [
+    "Code Generation",
+    "Bug Fixing",
+    "API Development"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "Mean Score: 70%",
+    "Mean Pass@1: 60%",
+    "Model Consistency: Claude-3.5-Sonnet-1022 with SD = 0.0497"
+  ],
+  "title": "HackerRank-ASTRA Evaluating Correctness Consistency of Large Language Models on Cross-Domain Multi-F.pdf",
+  "abstract": "Evaluating the real-world applicability of large language models (LLMs) pro- vides valuable insights for their development and use in software development tasks. Existing benchmarks often focus on standalone coding problems or specific libraries, overlooking multi-file, project-based scenarios and lacking a rigorous evaluation for consistency. The HackerRank-ASTRA Benchmark introduces project-based coding problems that mirror real-world scenarios. It evaluates model consistency through 32 runs (k = 32) and median standard deviation while incorporating taxonomy-level analysis to assess sub-skill capabilities. Initial evaluations (v1) on 65 problems show that the top three models\u2014o1, o1-preview, and Claude-3.5-Sonnet-1022\u2014achieved comparable average scores of 75%, with no statistically significant differences in performance. Notably, Claude-3.5-Sonnet-1022 demonstrated the highest consis- tency across problems, with remarkably low variability (SD = 0.0497), which was statistically significant compared to other models, highlighting its reliability for real-world software development tasks. 1 Introduction The rapid advancement of large language models (LLMs) has significantly impacted soft- ware development, enabling capabilities such as code generation and bug fixing. How- ever, evaluating these models\u2019 real-world effectiveness is challenging. Many of today\u2019s most popular and widely used evaluation benchmarks are heavily focused on a single language or single-file, well-defined tasks. For instance, HumanEval focuses on stan- dalone coding tasks, evaluating models for generating single-function solutions without accounting for multi-file dependencies or broader project contexts[1]. SWE-bench intro- duces GitHub-based evaluations for resolving real-world issues but focuses on 12 specific Python libraries[2] and 17 JavaScript Repositories [3]. DevEval broadens the domain scope by introducing multi-file coding tasks that simulate the software development life- cycle, including software design and testing [4]. However, despite its breadth, DevEval does not explicitly evaluate model consistency across multiple runs, leaving a critical gap in understanding LLM reliability for real-world applications. Moreover, a study by [5] introduces the concept of self-consistency in Code LLMs, emphasizing that a trustworthy model should generate consistent natural language spec- ifications for the code it generates and vice versa. Their evaluation of eleven code LLMs reveals frequent failures in maintaining self-consistency, highlighting a gap between tra- ditional accuracy metrics and the models\u2019 true understanding of the shared semantics 1 arXiv:2502.00226v1 [cs.LG] 31 Jan 2025"
+}

@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-supervised Learning"
+  ],
+  "datasets": [
+    "CIFAR100",
+    "Amazon Review",
+    "Yahoo! Answer",
+    "Yelp Review",
+    "AG News",
+    "UrbanSound 8k",
+    "ESC-50",
+    "GTZAN"
+  ],
+  "methods": [
+    "Zero-Shot Multi-Task Learning (ZMT)"
+  ],
+  "results": [
+    "Top-1 error rate (%) on CIFAR100: 24.84\u00b11.61",
+    "Top-1 error rate (%) on Amazon Review: 29.99\u00b10.63",
+    "Top-1 error rate (%) on Yahoo Answers: 35.19\u00b11.29",
+    "Top-1 error rate (%) on Yelp Review: 41.60\u00b10.85",
+    "Top-1 error rate (%) on AG News: 32.70\u00b10.53",
+    "Top-1 error rate (%) on UrbanSound 8k: 49.10\u00b17.36",
+    "Top-1 error rate (%) on ESC50: 33.69\u00b11.91",
+    "Top-1 error rate (%) on GTZAN: 21.51\u00b12.95"
+  ],
+  "title": "Enhancing Semi-supervised Learning with Noisy Zero-shot Pseudolabels.pdf",
+  "abstract": "Semi-supervised learning (SSL) leverages limited labeled data alongside abundant unlabeled data to address labeling costs in machine learning. While recent foundation models enable zero-shot inference, attempts to integrate these capabilities into SSL through pseudo-labeling have shown mixed results due to unreliable zero-shot predictions. We present ZMT (Zero-Shot Multi-Task Learning), a framework that jointly optimizes zero-shot pseudo-labels and unsupervised representation learning objectives from contemporary SSL approaches. Our method introduces a multi-task learning-based mechanism that incorporates pseudo-labels while ensuring robustness to varying pseudo-label quality. Experiments across 8 datasets in vision, language, and audio domains demonstrate that ZMT reduces error by up to 56% compared to traditional SSL methods, with particularly compelling results when pseudo-labels are noisy and unreliable. ZMT represents a significant step toward making semi-supervised learning more effective and accessible in resource-constrained environments. 1 Introduction The growing scale of machine learning applications has made data labeling costs a critical bottleneck in deploying ML systems [1, 2, 3]. Semi-supervised learning (SSL) addresses this challenge by leveraging unlabeled data alongside limited labeled examples [4]. Traditional SSL approaches like pseudo-labeling and consistency regularization have demonstrated strong performance across domains, particularly in computer vision and natural language processing [5, 6, 4]. Recent advances in foundation models have enabled zero-shot inference on novel tasks without task- specific training [7, 8]. These models can generate predictions for unseen tasks by leveraging their pre- trained knowledge, offering a promising direction for reducing labeling requirements. Several works have proposed integrating these zero-shot capabilities into SSL frameworks [9, 10]. Current approaches primarily use foundation models as teacher networks for generating pseudo-labels through inference, which requires complex model distillation and introduces additional training overhead. In contrast, we leverage zero-shot predictions of foundation models directly as pseudo-labels\u2014a simpler yet underexplored direction. However, zero-shot predictions often exhibit high uncertainty and domain-specific biases [11]. This un- reliability can introduce noise into the training process, potentially degrading SSL performance rather than improving it. Building on prior work on doubly-robust self-training [10], we propose ZMT (Zero-Shot Multi- Task Learning), which bridges this gap through four key technical contributions: 1. A novel framework to directly leverage zero-shot predictions from foundation models as pseudo-labels, eliminating the need for teacher model inference or distillation 2. A multi-task learning-based mechanism that incorporates zero-shot pseudo-labels and unsupervised SSL objectives 3. Extensive experiments on 8 datasets across vision, language, and audio domains which demonstrate that ZMT outperforms both standard SSL methods and zero-shot augmented approaches 4. Additional analysis on why ZMT outperforms baselines, including the impact of coarse-grained pseudo- labels, unlabeled data accuracy during training, and hyperparameter stability 1 arXiv:2502.12584v1 [cs.LG] 18 Feb 2025"
+}

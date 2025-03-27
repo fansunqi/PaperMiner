@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monitoring Dataset Mentions in Research Papers"
+  ],
+  "datasets": [
+    "One Earth corpus",
+    "World Bank\u2019s Policy Research Working Papers (PRWP) series"
+  ],
+  "methods": [
+    "LLMs",
+    "Synthetic Data",
+    "Two-stage fine-tuning",
+    "LLM-as-a-Judge",
+    "Reasoning Agent"
+  ],
+  "results": [
+    "Fine-tuned Phi-3.5-mini instruct model outperforms NuExtract-v1.5 and GLiNER-large-v2.1",
+    "State-of-the-art performance in dataset extraction"
+  ],
+  "title": "Large Language Models and Synthetic Data for Monitoring Dataset Mentions in Research Papers.pdf",
+  "abstract": "Tracking how data is mentioned and used in research papers provides critical insights for improving data discoverability, quality, and produc- tion. However, manually identifying and classifying dataset mentions across vast academic literature is resource-intensive and not scalable. This pa- per presents a machine learning framework that automates dataset men- tion detection across research domains by leveraging large language mod- els (LLMs), synthetic data, and a two-stage fine-tuning process. We em- ploy zero-shot extraction from research papers, an LLM-as-a-Judge for quality assessment, and a reasoning agent for refinement to generate a weakly supervised synthetic dataset. The Phi-3.5-mini instruct model is pre-fine-tuned on this dataset, followed by fine-tuning on a manually anno- tated subset. At inference, a ModernBERT-based classifier efficiently filters dataset mentions, reducing computational overhead while maintaining high recall. Evaluated on a held-out manually annotated sample, our fine-tuned model outperforms NuExtract-v1.5 and GLiNER-large-v2.1 in dataset ex- traction accuracy. Our results highlight how LLM-generated synthetic data can effectively address training data scarcity, improving generalization in low-resource settings. This framework offers a pathway toward scalable monitoring of dataset usage, enhancing transparency, and supporting re- searchers, funders, and policymakers in identifying data gaps and strength- ening data accessibility for informed decision-making. 1 Introduction Datasets are fundamental to scientific research, underpinning empirical analysis, model de- velopment, and policy decisions (Mooney & Newton, 2012; Stacy et al., 2024). However, tracking how datasets are mentioned and used in academic literature remains a significant challenge (Potok, 2022; Silvello, 2018; Stacy et al., 2024). Unlike traditional bibliographic citations, dataset references are often embedded within text, described inconsistently, or omitted entirely, making it difficult to assess data reuse, transparency, and accessibility (Silvello, 2018; Buneman et al., 2020). The lack of systematic dataset tracking limits efforts to evaluate the impact of datasets, identify underutilized resources, and address data gaps in research (Piwowar & Vision, 2013; Buneman et al., 2021). Without structured metadata and comprehensive monitoring, researchers, funders, and policymakers struggle to make informed decisions about data investments, availability, and governance. \u2217GitHub/HF: @avsolatorio, avsolatorio@gmail.com \u2020GitHub: @rafmacalaba, rafael.macalaba@yahoo.com \u2021GitHub: @jamesliounis, liounisjames@gmail.com 1 arXiv:2502.10263v1 [cs.CL] 14 Feb 2025"
+}

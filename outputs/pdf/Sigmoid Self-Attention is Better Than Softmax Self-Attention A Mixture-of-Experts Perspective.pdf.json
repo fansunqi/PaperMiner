@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-Attention Mechanism"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mixture-of-Experts (MoE)",
+    "Sigmoid Gating",
+    "Softmax Gating"
+  ],
+  "results": [
+    "Sigmoid self-attention is more sample-efficient than softmax self-attention",
+    "Achieves comparable or superior performance across most tasks while achieving faster throughput"
+  ],
+  "title": "Sigmoid Self-Attention is Better Than Softmax Self-Attention A Mixture-of-Experts Perspective.pdf",
+  "abstract": "At the core of the popular Transformer architecture is the self-attention mechanism, which dynamically assigns softmax weights to each input token so that the model can focus on the most salient information. However, the softmax structure slows down the attention computation due to its row-wise nature, and inherently introduces competition among tokens: as the weight assigned to one token increases, the weights of others decrease. This competitive dynamic may narrow the focus of self-attention to a limited set of features, potentially overlooking other informative characteristics. Recent experimental studies have shown that using the element-wise sigmoid function helps eliminate token competition and reduce the computational overhead. Despite these promising empirical results, a rigorous comparison between sigmoid and softmax self- attention mechanisms remains absent in the literature. This paper closes this gap by theoretically demonstrating that sigmoid self-attention is more sample-efficient than its softmax counterpart. Toward that goal, we illustrate that each row of the self-attention matrix can be represented as a mixture of experts. Our analysis shows that \u201cexperts\u201d in sigmoid self-attention require significantly less data to achieve the same approximation error as those in softmax self-attention. We corroborate our theoretical findings through extensive experiments on both synthetic and real-world datasets. 1 Introduction Transformer models [54] have been known as the state-of-the-art architecture for a wide range of machine learning and deep learning applications, including language modeling [16, 3, 47, 51], computer vision [17, 4, 46, 35], and reinforcement learning [5, 31, 25], etc. One of the central components that contribute to the success of the Transformer models is the self-attention mechanism, which enables sequence-to-sequence models to concentrate on relevant parts of the input data. In particular, for each token in an input sequence, the self-attention mechanism computes a context vector formulated as a weighted sum of the tokens, where more relevant tokens to the context are assigned larger weights than others (see Section 2.1 for a formal definition). Therefore, self-attention is able to capture long-range dependencies and complex relationships within the data. However, since the weights in the context vector are normalized by the softmax function, there might be an undesirable competition among the tokens, that is, an increase in the weight of a token leads to a decrease in the weights of others. As a consequence, the traditional softmax self-attention mechanism might focus only on a few aspects of the data and possibly ignore other informative features [48]. Additionally, [22] also discovered that the tokens\u2019 inner dependence on the attention scores owing to the softmax normalization partly causes the attention sink phenomenon occurring \u22c6Equal contribution. \u2020 Co-last authors. 1 arXiv:2502.00281v1 [cs.LG] 1 Feb 2025"
+}

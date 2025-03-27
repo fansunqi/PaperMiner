@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Memory Analysis on the Training Course of DeepSeek Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DeepSeek-v2",
+    "DeepSeek-v3",
+    "Transformer",
+    "MoE",
+    "Tensor Parallelism",
+    "Expert Parallelism",
+    "Expert Tensor Parallelism",
+    "DeepSpeed ZeRO"
+  ],
+  "results": [
+    "Memory requirements associated with various distributed training configurations",
+    "Static parameter partitioning and memory consumption",
+    "Activation memory consumption",
+    "Temporal Buffer and Fragmentation"
+  ],
+  "title": "Memory Analysis on the Training Course of DeepSeek Models.pdf",
+  "abstract": "We present a theoretical analysis of GPU memory consumption during the training of DeepSeek models such as DeepSeek-v2 and DeepSeek-v3. Our primary objective is to clarify the device-level memory requirements associated with various distributed training configurations. Specifically, we examine critical factors influencing memory usage, including micro-batch size, activation recom- putation policies, 3D parallelism, and ZeRO optimizations. It is important to emphasize that the training policies discussed in this report are not representative of DeepSeek\u2019s official configurations. Instead, they are explored to provide a deeper understanding of memory dynamics in training of large-scale mixture-of-experts model. 1 Overview Architecture 1.1 Transformer Block This report primarily focuses on analyzing the structural details of DeepSeek-v3 [1], which currently represents the state-of-the-art among open-source models. While the report addresses DeepSeek-v3, it is equally applicable to DeepSeek-v2 [2] and can also serve as a reference framework for analyzing general mixture-of-experts (MoE) models. Figure 1 presents the fundamental transformer block of DeepSeek-v3. The overall architecture comprises 61 layers, each incorporating two RMSNorm operations, a Multi-Head Latent Attention (MLA) block, and a linear layer. The linear layers exhibit a hybrid structure: the first three transformer layers utilize conventional feed-forward networks (FFN), while the remaining 58 layers implement MoE linear. Figure 1: Illustration of the basic architecture of DeepSeek-v3 [1] 1.2 Structure Configuration Table 1 provides an overview of DeepSeek-v3\u2019s structural configuration. Our analysis focuses on memory consumption during training using FP16/BF16 formats, as FP8 training implementation 1 arXiv:2502.07846v1 [cs.PF] 11 Feb 2025"
+}

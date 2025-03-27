@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/VincenzoLipardi/MCTS-QAS"
+  ],
+  "tasks": [
+    "Quantum Architecture Search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Progressive Widening enhanced Monte Carlo Tree Search"
+  ],
+  "results": [
+    "Reduced the number of quantum circuit evaluations by a factor of 10 to 100",
+    "Up to three times fewer CNOT gates"
+  ],
+  "title": "Quantum Circuit Design Using a Progressive Widening Monte Carlo Tree Search.pdf",
+  "abstract": "Winands Department of Advanced Computing Sciences, Maastricht University, Maastricht, The Netherlands Email: vincenzo.lipardi@maastrichtuniversity.nl Keywords: Quantum Architecture Search, Monte Carlo Tree Search, Variational Quantum Algorithms, Quantum Oracle Approximation The performance of Variational Quantum Algorithms (VQAs) strongly depends on the choice of the parameterized quantum circuit to optimize. One of the biggest challenges in VQAs is designing quan- tum circuits tailored to the particular problem and to the quantum hardware. This article proposes a gradient-free Monte Carlo Tree Search (MCTS) technique to automate the process of quantum circuit design. It introduces a novel formulation of the action space based on a sampling scheme and a progres- sive widening technique to explore the space dynamically. When testing our MCTS approach on the domain of random quantum circuits, MCTS approximates unstructured circuits under different values of stabilizer R\u00b4enyi entropy. It turns out that MCTS manages to approximate the benchmark quantum states independently from their degree of nonstabilizerness. Next, our technique exhibits robustness across various application domains, including quantum chemistry and systems of linear equations. Com- pared to previous MCTS research, our technique reduces the number of quantum circuit evaluations by a factor of 10 to 100 while achieving equal or better results. In addition, the resulting quantum circuits have up to three times fewer CNOT gates. 1 Introduction The design of quantum algorithms to address practical problems in near-term quan- tum devices is a growing research field [1, 2, 3]. Variational Quantum Algorithms (VQAs) are among the most investigated methods for this purpose [4]. They are hybrid quantum-classical algorithms where the problem of interest is encoded into an optimization task over parameterized quantum circuits (PQCs). The computa- tion is distributed between a quantum and a classical device. The evaluation of the objective function defined for quantum circuits is performed on the former, while the parameter optimization for the PQC is performed on the latter. The exten- sive research on VQAs can be attributed to two main reasons. First, VQAs are a hardware-tailored approach as users can design them considering the specifics of the quantum hardware at their disposal, in terms of the native universal gate set, quantum circuit depth, and connectivity between qubits. This property is crucial given the current limitations of quantum devices. Second, VQAs provide a frame- work for dealing with a wide range of applications, including quantum chemistry and condensed matter physics [5], combinatorial optimization [6], quantum machine learning [7], linear algebra [8, 9], and finance [10]. The choice of the PQC to optimize [4], commonly known as ansatz, is one of the biggest challenges in VQAs. Performance significantly depends on the ansatz chosen, which needs to be selected considering both the constraints imposed by the hardware and the structure of the problem. The goal is to design a PQC that is expressive and presents an easy-to-explore landscape for the parameter optimization task [11]. 1 arXiv:2502.03962v1 [quant-ph] 6 Feb 2025"
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Simulating Behavior Mode Changes in Norm-Aware Autonomous Agents"
+  ],
+  "datasets": [
+    "Mining Domain",
+    "Room Domain"
+  ],
+  "methods": [
+    "ASP Framework",
+    "Python Component",
+    "GUI"
+  ],
+  "results": [
+    "Runtime Performance: Safe mode > Normal mode > Risky mode",
+    "GUI Usability Study: Average score 4.5 (scale 1-5)"
+  ],
+  "title": "Architecture for Simulating Behavior Mode Changes in Norm-Aware Autonomous Agents.pdf",
+  "abstract": "Cabalar, F. Fabiano, M. Gebser, G. Gupta and Th. Swift (Eds.): 40th International Conference on Logic Programming (ICLP 2024) EPTCS 416, 2025, pp. 95\u2013107, doi:10.4204/EPTCS.416.7 \u00a9 S. Glaze & D. Inclezan This work is licensed under the Creative Commons Attribution License. Architecture for Simulating Behavior Mode Changes in Norm-Aware Autonomous Agents Sean Glaze Miami University Ohio, USA glazesc@miamioh.edu Daniela Inclezan Miami University Ohio, USA inclezd@miamioh.edu This paper presents an architecture for simulating the actions of a norm-aware intelligent agent whose behavior with respect to norm compliance is set, and can later be changed, by a human controller. Updating an agent\u2019s behavior mode from a norm-abiding to a riskier one may be relevant when the agent is involved in time-sensitive rescue operations, for example. We base our work on the Autho- rization and Obligation Policy Language AOPL designed by Gelfond and Lobo for the speci\ufb01cation of norms. We introduce an architecture and a prototype software system that can be used to simulate an agent\u2019s plans under different behavior modes that can later be changed by the controller. We en- vision such software to be useful to policy makers, as they can more readily understand how agents may act in certain situations based on the agents\u2019 attitudes towards norm-compliance. Policy makers may then re\ufb01ne their policies if simulations show unwanted consequences. 1 Introduction This paper introduces an architecture for simulating the actions to be taken by an intelligent agent that is aware of norms (i.e., policies1) governing the domain in which it acts. We assume that different agents may exhibit different behavior modes with respect to norm-compliance: some may be very cautious and norm-abiding, while others may exhibit a riskier behavior. We consider the case in which the behavior mode under which an agent operates is set by a human controller who can update it if needed, for instance in cases when the agent is involved in a time-sensitive rescue operation. This architecture is relevant to modeling physical intelligent agents that act autonomously, for in- stance robots deployed in harsh environments (underwater, on Mars, in mines), and whose settings may be re-adjusted by a human controller if the circumstances require it, but this is done sparingly in emer- gency situations. The architecture is also crucial to simulating the behavior of human agents with differ- ent norm-abiding attitudes, especially if such attitudes change over time. This can be of value to policy makers as testing their policies on different human agent models can lead to policy improvement, if un- wanted consequences are observed in the simulation (similarly to work by Corapi et al. [4] on creating use cases for policy development and re\ufb01nement). In our work, we utilize the Authorization and Obligation Policy Language (AOPL) by Gelfond and Lobo [8] for norm speci\ufb01cation, due to its close connection to Answer Set Programming (ASP). In fact, the semantics of AOPL and the notion of norm-compliance are de\ufb01ned via a translation into ASP. This allows us to leverage existing ASP methodologies for representing dynamic domains, planning, and cre- ating agent architectures, as well as ASP solvers like CLINGO (https://potassco.org/clingo/) or DLV (https://www.dlvsystem.it/dlvsite/). A reason for using AOPL instead of representing norms directly in ASP (as soft constraints for example) is that AOPL provides policy analysis capa- bilities [10], which are important for checking that a policy imposed on an agent is actually valid and 1We use the words norms and policy interchangeably in this paper."
+}

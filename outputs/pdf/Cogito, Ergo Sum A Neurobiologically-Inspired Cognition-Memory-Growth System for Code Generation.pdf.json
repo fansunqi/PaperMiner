@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/doc0318/Cogito"
+  ],
+  "tasks": [
+    "Code Generation"
+  ],
+  "datasets": [
+    "HumanEval",
+    "MBPP",
+    "APPS",
+    "xCodeEval",
+    "CodeContest"
+  ],
+  "methods": [
+    "Neurobiologically-Inspired Multi-Agent Framework",
+    "Hippocampus-like Memory Module"
+  ],
+  "results": [
+    "Pass@1 accuracy improvement of 12.1% - 16.6% compared to MapCoder",
+    "Token consumption reduction of up to 66.29% compared to MapCoder"
+  ],
+  "title": "Cogito, Ergo Sum A Neurobiologically-Inspired Cognition-Memory-Growth System for Code Generation.pdf",
+  "abstract": "Large language models-based Multi-Agent Sys- tems (MAS) have demonstrated promising perfor- mance for enhancing the efficiency and accuracy of code generation tasks. However, most existing methods follow a conventional sequence of plan- ning, coding, and debugging, which contradicts the growth-driven nature of human learning pro- cess. Additionally, the frequent information inter- action between multiple agents inevitably involves high computational costs. In this paper, we pro- pose Cogito, a neurobiologically-inspired multi- agent framework to enhance the problem-solving capabilities in code generation tasks with lower cost. Specifically, Cogito adopts a reverse se- quence: it first undergoes debugging, then coding, and finally planning. This approach mimics human learning and development, where knowledge is ac- quired progressively. Accordingly, a hippocampus- like memory module with different functions is de- signed to work with the pipeline to provide quick retrieval in similar tasks. Through this growth- based learning model, Cogito accumulates knowl- edge and cognitive skills at each stage, ultimately forming a Super-Role\u2014an all-capable agent to per- form the code generation task. Extensive experi- ments against representative baselines demonstrate the superior performance and efficiency of Cogito. The code is publicly available at https://github.com/ doc0318/Cogito. 1 Introduction Large language models (LLMs) have demonstrated human- like intelligence in tasks such as code generation [Chowd- hery et al., 2022], testing [Fakhoury et al., 2024], and de- bugging [Xia and Zhang, 2023]. Recent studies show the ef- fectiveness of using multiple agents for collaborative tasks, achieving superior performance over single-agent [Islam et \u2217Corresponding author. INFORMATION RELAY (CA4) MEMORY RECALL (CA3) EMOTION (CA2) MEMORY STORAGE (CA1\uff09 INFORMATION ENCODING (DG) VERSIONS OF ERRORS(CA3) SUCCESSFUL EXPERIENCE (CA4) RECORD of ALL ANSWERS (DG) INITIAL Q&A (CA1\uff09 CUSTOM CODE (CA2) HUMANE BRAIN AGENT MEMORY Planning Acting Observing Observing Acting Observing Observation and Learning Practice and Imitation Thinking and Planning Development of Expertise: From the observation to Independent Problem Solving Figure 1: The intuitions behind this work. (Top): brain\u2019s different regions are dedicated to distinct functions and tasks. Inspired by this functional specialization, we design an agent with distinct roles that evolve through stages. (Bottom): the growth trajectory of an indi- vidual, progressing from observation and learning in childhood, to practice and imitation in young adulthood, and finally to indepen- dent problem-solving and planning in the expert stage. al., 2024; Rasheed et al., 2024a]. Such advancements not only elevate the models\u2019 proficiency in automating segments of the development lifecycle but also encompass refining the models\u2019 adeptness at deciphering intricate problems and per- forming sophisticated logical reasoning. As a result, code generation has garnered considerable attention from aca- demic researchers, industry professionals, as well as institu- tions like OpenAI 1 and Meta AI 2. While existing works have shown promising results, these methods typically follow a standardized programming work- flow of human programmers, e.g., first planning, then cod- 1https://api.semanticscholar.org/CorpusID:257532815 2https://api.semanticscholar.org/CorpusID:271571434 arXiv:2501.18653v1 [cs.SE] 30 Jan 2025"
+}

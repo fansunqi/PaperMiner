@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/valeoai/GaussRender"
+  ],
+  "tasks": [
+    "3D scene understanding",
+    "3D occupancy prediction"
+  ],
+  "datasets": [
+    "SurroundOcc-nuScenes",
+    "Occ3D-nuScenes",
+    "SSCBench-Kitti360"
+  ],
+  "methods": [
+    "Gaussian rendering",
+    "Gaussian splatting",
+    "2D ground truth from arbitrary cameras"
+  ],
+  "results": [
+    "State-of-the-art results on three standard benchmarks",
+    "Significant gains in complex driving scenes"
+  ],
+  "title": "GaussRender Learning 3D Occupancy with Gaussian Rendering.pdf",
+  "abstract": "Understanding the 3D geometry and semantics of driving scenes is critical for developing of safe autonomous ve- hicles. While 3D occupancy models are typically trained using voxel-based supervision with standard losses (e.g., cross-entropy, Lovasz, dice), these approaches treat voxel predictions independently, neglecting their spatial relation- ships. In this paper, we propose GaussRender, a plug- and-play 3D-to-2D reprojection loss that enhances voxel- based supervision. Our method projects 3D voxel rep- resentations into arbitrary 2D perspectives and leverages Gaussian splatting as an efficient, differentiable rendering proxy of voxels, introducing spatial dependencies across projected elements. This approach improves semantic and geometric consistency, handles occlusions more effi- ciently, and requires no architectural modifications. Ex- tensive experiments on multiple benchmarks (SurroundOcc- nuScenes, Occ3D-nuScenes, SSCBench-KITTI360) demon- strate consistent performance gains across various 3D oc- cupancy models (TPVFormer, SurroundOcc, Symphonies), highlighting the robustness and versatility of our frame- work. The code is available at https://github.com/ valeoai/GaussRender. 1. Introduction Understanding the 3D geometry and semantics of driving scenes from a set of cameras is particularly challenging and crucial in autonomous driving. This has a direct impact on tasks such as object detection [29, 38, 41, 44, 49, 73, 95, 96], agent forecasting [12, 16, 34, 61, 63\u201365, 88], scene segmentation [3, 7, 17\u201320, 76] and is the main concern in 3D occupancy [24, 28, 39, 42, 75]. Existing methods for 3D scene understanding employ di- verse representation spaces and input modalities, each with distinct advantages and limitations. Bird\u2019s-eye view (BEV) representations [3, 7, 19, 41, 50, 79, 94] are popular as they integrate multi-sensor data well and are compatible with downstream tasks like planning [21, 81, 83] and forecast- ing [1, 19, 20, 90]. However, BEV representations collapse the height dimension, making them less effective at cap- Semantic & depth mIoU SurroundOcc-nuSc Occ3D-nuSc SSCBench-KITTI360 +GaussRender +2.65 +1.17 10 15 20 25 30 Models: TPVFormer SurroundOcc Symphonies +3.75 +0.52 +0.26 +0.29 = 3D Occupancy GaussRender Figure 1. GaussRender, a Voxel-to-Gaussian Based Rendering Module consistently enhances the performance of 3D occupancy models across multiple datasets. turing complex 3D geometries. Query-based methods pro- vide task-specific and compact representations [44\u201346, 73], but their lack of interpretability poses challenges. In con- trast, 3D-based representations preserve spatial details but are computationally expensive to train. In practice, meth- ods using them are mostly trained with standard losses such as cross-entropy, dice [67], or Lov\u00b4asz [4], to supervise voxel predictions against ground truth. Nonetheless, these losses optimize predictions independently, neglecting the spatial relationships between voxels, as illustrated in Fig. 2. This limitation hinders the model\u2019s ability to understand the en- tire geometry of an object, resulting in less effective training and geometrical understanding. In this paper, we propose to address this limitation by in- tegrating 3D-2D reprojection losses into the training of 3D occupancy models without modifying existing architectures and introducing only minimal computational overhead. The central idea is to project the predicted 3D voxel-based repre- sentation into 2D perspective views and supervise the model in the image space in addition to the standard 3D supervi- 1 arXiv:2502.05040v1 [cs.CV] 7 Feb 2025"
+}

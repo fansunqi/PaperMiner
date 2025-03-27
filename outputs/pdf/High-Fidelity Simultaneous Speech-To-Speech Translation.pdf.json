@@ -1,0 +1,40 @@
+{
+  "code_links": [
+    "https://hf.co/spaces/kyutai/hibiki-samples",
+    "https://github.com/kyutai-labs/hibiki"
+  ],
+  "tasks": [
+    "Simultaneous Speech Translation",
+    "Speech-to-Text Translation",
+    "Speech-to-Speech Translation"
+  ],
+  "datasets": [
+    "Common Crawl",
+    "Wikipedia",
+    "StackExchange",
+    "Scientific Articles",
+    "NTREX",
+    "CVSS",
+    "VoxPopuli"
+  ],
+  "methods": [
+    "Multistream Language Model",
+    "RQ-Transformer",
+    "Neural Audio Codec",
+    "Contextual Alignment",
+    "Voice Transfer",
+    "Conditional Training",
+    "Classifier-Free Guidance"
+  ],
+  "results": [
+    "BLEU: 30.5",
+    "BLEU: 38.2",
+    "BLEU: 25.9",
+    "BLEU: 26.7",
+    "BLEU: 28.2",
+    "BLEU: 27.2",
+    "BLEU: 25.9"
+  ],
+  "title": "High-Fidelity Simultaneous Speech-To-Speech Translation.pdf",
+  "abstract": "We introduce Hibiki, a decoder-only model for simultaneous speech translation. Hibiki leverages a multistream language model to synchronously process source and target speech, and jointly produces text and audio tokens to perform speech- to-text and speech-to-speech translation. We furthermore address the fundamental challenge of simultaneous interpretation, which unlike its consecutive counterpart\u2014where one waits for the end of the source utterance to start translating\u2014 adapts its flow to accumulate just enough context to produce a correct translation in real-time, chunk by chunk. To do so, we introduce a weakly- supervised method that leverages the perplexity of an off-the-shelf text translation system to identify optimal delays on a per-word basis and create aligned synthetic data. After supervised training, Hibiki performs adaptive, simultaneous speech translation with vanilla temperature sampling. On a French-English simultaneous speech translation task, Hibiki demonstrates state-of-the-art performance in translation quality, speaker fidelity and naturalness. Moreover, the simplicity of its inference process makes it compatible with batched translation and even real-time on-device deployment. We provide examples1 as well as models and inference code.2 1. Introduction We introduce Hibiki (\u201cecho\u201d in Japanese), a system for streaming and expressive speech-to-speech (S2ST) and speech-to-text (S2TT) translation. Most work in speech translation has focused on the offline (or consecutive) set- ting where the model has access to the full source utterance before it translates, as it provides useful context while fitting many use cases such as offline video dubbing. A 1Kyutai, Paris, France. Correspondence to: Hibiki <hibiki@kyutai.org>. 1https://hf.co/spaces/kyutai/hibiki-samples 2https://github.com/kyutai-labs/hibiki more challenging setting is that of simultaneous translation, where translated speech is produced on-the-fly. This task, typically performed by human interpreters, requires a real-time decision-making process to evaluate whether enough context has been accumulated to reliably translate another chunk of speech. When cast as a machine learning problem, this endeavor presents additional challenges such as the lack of speech data aligned at a chunk-level. Hibiki is a decoder-only model which synchronously receives source speech and generates translated speech by leveraging a multistream architecture. In this context, nested global and local Transformers (Vaswani et al., 2017) jointly model two audio streams by predicting a hierarchy of text and audio tokens for each of them. At inference time, temperature sampling combined with a causal audio codec allows for streaming inputs and outputs. While this architecture was originally introduced by D\u00b4efossez et al. (2024) for full-duplex spoken dialogue, we show how it provides a simple and convenient architecture for simultaneous speech translation. To train Hibiki, we generate synthetic parallel data by translating and resynthesizing the transcript of single-language audio. While this provides pairs of inputs and outputs aligned at the sequence level, this does not allow learning fine-grained alignments. We thus introduce \u201ccontextual alignment\u201d, a simple method based on the perplexity of an off-the-shelf machine translation system (Kudugunta et al., 2023) to derive word-level alignments. By then introducing proper silences into target speech, we can train Hibiki to adapt its flow in real-time, without the need for complex inference policies. Moreover, observing that training data varies widely in speaker similarity, we propose to label training examples with categories of speaker similarity, which avoids filtering the training data while allowing to favor high speaker similarity at inference with classifier-free guidance. In a French-English translation task, Hibiki outperforms pre- vious work in translation quality, speaker similarity and nat- uralness. We also show how the simplicity of our inference process allows for translating hundreds of sequences in real- time on GPU, and how a distilled model can run in real-time on a smartphone. Human evaluations demonstrate that Hi- biki is the first model to provide an experience of interpreta- tion close to human professionals. We will release our code and models, and a high quality 900 hours synthetic dataset. 1 arXiv:2502.03382v1 [cs.CL] 5 Feb 2025"
+}

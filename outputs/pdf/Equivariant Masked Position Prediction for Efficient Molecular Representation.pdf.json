@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/ajy112/EMPP"
+  ],
+  "tasks": [
+    "Molecular Property Prediction",
+    "Quantum Property Prediction",
+    "Self-supervised Learning"
+  ],
+  "datasets": [
+    "QM9",
+    "MD17",
+    "PCQM4Mv2",
+    "GEOM-Drug"
+  ],
+  "methods": [
+    "Equivariant Masked Position Prediction (EMPP)",
+    "Graph Neural Networks (GNNs)",
+    "Equivariant Representations",
+    "Spherical Harmonics"
+  ],
+  "results": [
+    "State-of-the-art performance in quantum property prediction",
+    "Improved generalization ability",
+    "Reduced computational overhead"
+  ],
+  "title": "Equivariant Masked Position Prediction for Efficient Molecular Representation.pdf",
+  "abstract": "Graph neural networks (GNNs) have shown considerable promise in computational chemistry. However, the limited availability of molecular data raises concerns regarding GNNs\u2019 ability to effectively capture the fundamental principles of physics and chemistry, which constrains their generalization capabilities. To address this challenge, we introduce a novel self-supervised approach termed Equivariant Masked Position Prediction (EMPP), grounded in intramolecular potential and force theory. Unlike conventional attribute masking techniques, EMPP formulates a nuanced position prediction task that is more well-defined and enhances the learning of quantum mechanical features. EMPP also bypasses the approximation of the Gaussian mixture distribution commonly used in denoising methods, allowing for more accurate acquisition of physical properties. Experimental results indicate that EMPP significantly enhances performance of advanced molecular architectures, surpassing state-of-the-art self-supervised approaches. 1 INTRODUCTION Graph neural networks (GNNs) have found widespread application in computational chemistry. However, unlike other fields such as natural language processing (NLP), the limited availability of molecular data hampers the development of GNNs in this domain. For example, one of the largest molecular dataset, OC20 (Chanussot et al., 2021), contains only 1.38 million samples, and collecting more molecular data with ab initio calculations is both challenging and expensive. To address this limitation, molecular self-supervised learning has gained increasing attention. This approach enables molecular GNNs to learn more general physical and chemical knowledge, enhancing performance in various computational chemistry tasks, such as drug discovery (Hasselgren & Oprea, 2024) and catalyst design (Chanussot et al., 2021). Current self-supervised methods for molecular learning contain two mainstream categories: masking and denoising. Masking methods (Hu et al., 2020; Hou et al., 2022; Inae et al., 2023) adapt the concept of masked token prediction from natural language processing (NLP) to graph learning, where graph information, such as node attribute, is masked instead of token. However, there are two major limitations: underdetermined reconstruction and lack of deep quantum mechanical (QM) insight. As illustrated in Figure 1(a), (i) reconstructing attribute of the masked iodine atom can yield multiple possible solutions, and as the number of masked atoms increases, the number of solutions will increase rapidly, making it difficult for training data to cover all possibilities; (ii) the attribute of the masked carbon atom can be inferred from the 2D geometric principles of the benzene ring, causing the model to overlook essential atomic interactions needed for learning QM properties (Messiah, 2014). In contrast, denoising methods (Zaidi et al., 2023; Feng et al., 2023) are physics-informed and facilitate self-supervised learning of QM information in equilibrium structures. Their core idea involves adding noise to atomic positions and predicting them (see Figure 1(b)). In this process, \u2217Equal contribution: Junyi An and Chao Qu. Correspondence to Junyi An: anjunyi@sais.com.cn \u2020Corresponding authors: Fenglei Cao and Yuan Qi 0Our code is released in https://github.com/ajy112/EMPP 1 arXiv:2502.08209v1 [cs.LG] 12 Feb 2025"
+}

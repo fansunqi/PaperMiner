@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Extractive Question-Answering"
+  ],
+  "datasets": [
+    "Known",
+    "Synthetic",
+    "NQ-Swap",
+    "Natural-Questions",
+    "HotPotQA",
+    "CNN-Dailymail",
+    "NQ-Long"
+  ],
+  "methods": [
+    "Mechanistic Circuit Analysis",
+    "Causal Mediation Analysis",
+    "Interventional Patching",
+    "Data Attribution",
+    "Model Steering"
+  ],
+  "results": [
+    "State-of-the-art attribution results on various extractive QA benchmarks",
+    "Improved context faithfulness by up to 9% on popular extractive QA datasets"
+  ],
+  "title": "On Mechanistic Circuits for Extractive Question-Answering.pdf",
+  "abstract": "Large language models are increasingly used to process documents and facilitate question- answering on them. In our paper, we extract mech- anistic circuits for this real-world language mod- eling task: context-augmented language modeling for extractive question-answering (QA) tasks and understand the potential benefits of circuits to- wards downstream applications such as data attri- bution to context information. We extract circuits as a function of internal model components (e.g., attention heads, MLPs) using causal mediation analysis techniques. Leveraging the extracted cir- cuits, we first understand the interplay between the model\u2019s usage of parametric memory and re- trieved context towards a better mechanistic under- standing of context-augmented language models. We then identify a small set of attention heads in our circuit which performs reliable data attribu- tion by default, thereby obtaining attribution for free in just the model\u2019s forward pass. Using this insight, we then introduce ATTNATTRIB, a fast data attribution algorithm which obtains state-of- the-art attribution results across various extractive QA benchmarks. Finally, we show the possibility to steer the language model towards answering from the context, instead of the parametric mem- ory by using the attribution ATTNATTRIB as an additional signal during the forward pass. Beyond mechanistic understanding, our paper provides tangible applications of circuits in the form of reliable data attribution and model steering. 1. Introduction In recent times, large language models have been used to process documents, webpages and transcripts as context and answer questions about them. We refer to the task of answering a question by directly extracting words from the context/document as extractive Question-Answering (QA), in contrast to \u201dabstractive QA\u201d or \u201dopen-ended QA\u201d where 1: University of Maryland, College Park, 2: Adobe Research, Correspondence: sbasu12@umd.edu the words comprising the answer may not necessarily ap- pear in the context. In the extractive QA case, a language model can either answer from the context, hallucinate en- tirely from its parametric memory or interpolate between the two. A mechanistic understanding of such a task with a circuit (a sub-graph of the language model\u2019s computational graph) can not only provide insights on the inner workings of the model for this task, but can also enable downstream applications such as data-attribution (i.e., pointing to the source in the context which contributes to the answer) and model steering (i.e., enabling the model to answer from the context, rather than hallucinate from its parametric memory). Earlier works on mechanistic circuits (Bereska & Gavves, 2024; Elhage et al., 2021) for large language models (Tou- vron et al., 2023; Jiang et al., 2023; Chiang et al., 2023) have discovered circuits for language tasks such as entity tracking (Prakash et al., 2024), indirect object identifica- tion (Wang et al., 2022) or simple math operations such as \u201cgreater than\u201d (Hanna et al., 2023). While circuits are a prin- cipled way to mechanistically understand language models, we note certain limitations within existing works: (i) Tasks such as entity tracking or indirect object identification are inherently simple and may not capture the complexity of real-world applications for language models and (ii) It re- mains uncertain whether understanding language models through circuits will translate into practical applications. In our paper, we extract mechanistic circuits for a real-world extractive QA task and use insights from the mechanistic circuit to provide two downstream applications: (i) Data attribution to context and (ii) Steering the language model towards improved context faithfulness. We focus on this task, due to the importance of retrieved-context augmented language models in recent times which unlocks various user- facing downstream applications (Lewis et al., 2021; Gao et al., 2024; Asai et al., 2023). We extract two kinds of circuits from language models: (i) Context-Faithfulness Cir- cuit: A circuit used by the language model when it solely an- swers from the context and (ii) Memory-Faitfulness Circuit: A circuit used by the language model when it solely answers from its parametric memory. To extract these circuits, we first design a probe dataset (with minimal assumptions about it\u2019s inherent structure such as fixed length) and use Causal Mediation Analysis (CMA) (Wang et al., 2022; Pearl, 2001; 1 arXiv:2502.08059v1 [cs.CL] 12 Feb 2025"
+}

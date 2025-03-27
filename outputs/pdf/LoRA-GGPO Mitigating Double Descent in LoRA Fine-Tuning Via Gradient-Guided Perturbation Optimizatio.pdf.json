@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "https://github.com/llm172/LoRA-GGPO"
+  ],
+  "tasks": [
+    "Natural Language Understanding",
+    "Natural Language Generation"
+  ],
+  "datasets": [
+    "GLUE Benchmark",
+    "MT-Bench",
+    "GSM8K",
+    "HumanEval",
+    "MetaMathQA",
+    "CodeFeedback"
+  ],
+  "methods": [
+    "Low-Rank Adaptation (LoRA)",
+    "Gradient-Guided Perturbation Optimization (GGPO)",
+    "Weight Norms",
+    "Gradient Norms"
+  ],
+  "results": [
+    "Average performance improvement over LoRA and LoRA variants",
+    "Outperforms LoRA-Pro on GLUE and NLG tasks",
+    "Effective mitigation of double descent phenomenon"
+  ],
+  "title": "LoRA-GGPO Mitigating Double Descent in LoRA Fine-Tuning Via Gradient-Guided Perturbation Optimizatio.pdf",
+  "abstract": "Large Language Models (LLMs) have achieved remarkable success in natural language process- ing, but their full fine-tuning remains resource- intensive. Parameter-Efficient Fine-Tuning (PEFT) methods, such as Low-Rank Adap- tation (LoRA), have emerged as a practical solution by approximating parameter updates with low-rank matrices. However, LoRA of- ten exhibits a \u201cdouble descent\u201d phenomenon during fine-tuning, where model performance degrades due to overfitting and limited expres- siveness caused by low-rank constraints. To address this issue, we propose LoRA-GGPO (Gradient-Guided Perturbation Optimiza- tion), a novel method that leverages gradient and weight norms to generate targeted per- turbations. By optimizing the sharpness of the loss landscape, LoRA-GGPO guides the model toward flatter minima, mitigating the double descent problem and improving gen- eralization. Extensive experiments on natu- ral language understanding (NLU) and gen- eration (NLG) tasks demonstrate that LoRA- GGPO outperforms LoRA and its state-of-the- art variants. Furthermore, extended experi- ments specifically designed to analyze the dou- ble descent phenomenon confirm that LoRA- GGPO effectively alleviates this issue, produc- ing more robust and generalizable models. Our work provides a robust and efficient solution for fine-tuning LLMs, with broad applicability in real-world scenarios. The code is available at https://github.com/llm172/LoRA-GGPO. 1 Introduction Large Language Models (LLMs) have revolution- ized natural language processing (NLP) with their exceptional performance across diverse tasks (Wei et al., 2022; Bommasani et al., 2021; Chang et al., 2024b). However, fine-tuning these models re- quires updating billions of parameters, which is *Corresponding authors computationally expensive and memory-intensive. This limitation has spurred the development of Parameter-Efficient Fine-Tuning (PEFT) tech- niques (Han et al., 2024; Xu et al., 2023; Zhang et al., 2025), which aim to achieve high perfor- mance with minimal resource consumption (Lester et al., 2021; Fu et al., 2023; Ding et al., 2023). Among PEFT methods, Low-Rank Adaptation (LoRA) (Hu et al., 2021) and its variants (Kala- jdzievski, 2023; Hayou et al., 2024; Meng et al., 2024; Wang et al., 2024a,b) have gained promi- nence by approximating parameter updates using low-rank matrices. Specifically, LoRA modifies the weight matrix W \u2208Rd\u00d7d\u2032 as: W \u2032 = W + \u2206W = W + AB, where A \u2208Rd\u00d7r and B \u2208Rr\u00d7d\u2032 are low-rank matrices, and r \u226amin(d, d\u2032). During fine-tuning, only A and B are updated, while the original pre- trained weights W remain frozen. This design sig- nificantly reduces the number of trainable param- eters. However, the low-rank constraint can limit the model\u2019s expressiveness, hindering its ability to fit complex feature spaces. This limitation often leads to overfitting in the middle stages of train- ing, resulting in the \u201cdouble descent\u201d phenomenon, where test loss initially increases, decreases due to overfitting, and then rises again (Wei et al., 2023; Luo et al., 2024a; Huang et al., 2024). The \u201cdouble descent\u201d phenomenon refers to a non-monotonic behavior in model performance, where test loss initially increases, decreases due to overfitting, and then rises again (Belkin et al., 2019; Nakkiran et al., 2021; Luo et al., 2024b). This behavior is particularly problematic in LoRA fine-tuning, as it hinders the model\u2019s ability to ex- plore complex feature spaces and negatively im- pacts generalization. To address this issue, we pose the following research questions: 1. How does the double descent phenomenon affect the perfor- mance of LoRA-fine-tuned models? 2. What are 1 arXiv:2502.14538v1 [cs.CL] 20 Feb 2025"
+}

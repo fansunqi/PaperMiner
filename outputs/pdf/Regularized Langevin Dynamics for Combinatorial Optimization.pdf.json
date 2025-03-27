@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Combinatorial Optimization"
+  ],
+  "datasets": [
+    "Revised Model B (RB)",
+    "Barabasi-Albert (BA)",
+    "Erdo\u030bs-Re\u0301nyi (ER)"
+  ],
+  "methods": [
+    "Regularized Langevin Dynamics (RLD)",
+    "Simulated Annealing (SA)",
+    "Neural Networks (NN)"
+  ],
+  "results": [
+    "RLSA reduces the running time of the previous SOTA SA method by up to 80% while achieving equal or superior performance",
+    "RLNN shows competitive performance on all datasets with a limited computational cost"
+  ],
+  "title": "Regularized Langevin Dynamics for Combinatorial Optimization.pdf",
+  "abstract": "This work proposes a simple yet effective sam- pling framework for combinatorial optimization (CO). Our method builds on discrete Langevin dynamics (LD), an efficient gradient-guided gen- erative algorithm. However, we observed that directly applying LD often leads to limited ex- ploration. To overcome this limitation, we pro- pose the Regularized Langevin Dynamics (RLD), which enforces an expected distance between the sampled and current solutions, effectively avoid- ing local minima. We develop two CO solvers on top of RLD, one based on simulated anneal- ing (SA) and the other one based on neural net- work (NN). Empirical results on three classical CO problems demonstrate that both of our meth- ods can achieve comparable or better performance against the previous state-of-the-art (SOTA) SA and NN-based solvers. In particular, our SA al- gorithm reduces the running time of the previous SOTA SA method by up to 80%, while achieving equal or superior performance. In summary, RLD offers a promising framework for enhancing both traditional heuristics and NN models to solve CO problems. 1. Introduction Combinatorial Optimization (CO) problems are central chal- lenges in computer science and operations research (Pa- padimitriou & Steiglitz, 1998), with diverse real-world ap- plications such as supply chain management, logistics opti- mization (Chopra & Meindl, 2001), workforce scheduling (Ernst et al., 2004), financial portfolio management (Ru- binstein, 2002; Lobo et al., 2007), compiler optimization (Trofin et al., 2021; Zheng et al., 2022), and bioinformatics (Gusfield, 1997). Despite their wide-ranging utility, CO problems are inherently difficult due to their non-convex na- ture and often NP-hard complexity, making them intractable in polynomial time by exact solvers. Traditional CO algo- 1Language Technologies Institute, Carnegie Mellon University. Correspondence to: Shengyu Feng <shengyuf@cs.cmu.edu>. Under Review rithms often rely on hand-crafted, domain-specific heuris- tics, which are costly and difficult to design, posing signifi- cant challenges in solving novel or complex CO problems. Recent advancements in neural network (NN)-based learn- ing (Bengio et al., 2020) and simulated annealing (SA) (Kirkpatrick et al., 1983) algorithms have redefined ap- proaches to combinatorial optimization by minimizing de- pendence on manual heuristics: \u2022 Neural Network Models: NN-based methods lever- age reinforcement learning (Khalil et al., 2017; Qiu et al., 2022), unsupervised learning (Karalias & Loukas, 2020a; Wang et al., 2022; Wang & Li, 2023; Sanokowski et al., 2024) or generative models (Kool et al., 2019; Zhang et al., 2023; Sun & Yang, 2023; Li et al., 2023; 2024) to learn optimization strategies directly from data. By automating the process, these models replace handcrafted heuristics with learned rep- resentations and decision-making processes, enabling tailored solutions refined through training rather than manual adjustment. \u2022 Simulated Annealing: SA is a general-purpose opti- mization algorithm that explores the solution space probabilistically, avoiding dependence on problem- specific heuristics. Although its cooling schedule and acceptance criteria require some design decisions, SA is highly adaptable across diverse problems free from detailed domain knowledge (Johnson et al., 1991). Discrete Langevin dynamics (LD) (Zhang et al., 2022; Sun et al., 2022) and the corresponding diffusion models (Chen et al., 2023; Austin et al., 2021) have greatly advanced the re- cent development of both NN and SA solvers. The key idea of LD is to guide the iterative sampling via the gradient, for a more efficient searching/generation process. For instance, DIFUSCO (Sun & Yang, 2023) adopts continuous diffusion models from computer vision to address the discrete nature of CO problems, outperforming previous end-to-end neural models in both accuracy and computational efficiency. Ad- ditionally, DiffUCO (Sanokowski et al., 2024) generalizes DIFUSCO by eliminating the need for labeled training data, using unsupervised learning for CO problems. Meanwhile, advanced SA-based CO solvers have demonstrated perfor- mance on par with state-of-the-art NN-based approaches. 1 arXiv:2502.00277v1 [cs.LG] 1 Feb 2025"
+}

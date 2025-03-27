@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "MoE Inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cross-Layer Expert Prefetching",
+    "Shallow-Favoring Expert Caching",
+    "Hybrid Quantization"
+  ],
+  "results": [
+    "Prefill Speedup: Up to 4.5x",
+    "Decoding Speedup: Up to 2.2x",
+    "Expert Hit Rate: Over 99%"
+  ],
+  "title": "Accurate Expert Predictions in MoE Inference Via Cross-Layer Gate.pdf",
+  "abstract": "Large Language Models (LLMs) have demonstrated impres- sive performance across various tasks, and their applica- tion in edge scenarios has attracted significant attention. However, sparse-activated Mixture-of-Experts (MoE) mod- els, which are well suited for edge scenarios, have received relatively little attention due to their high memory demands. Offload-based methods have been proposed to address this challenge, but they face difficulties with expert prediction. Inaccurate expert predictions can result in prolonged in- ference delays. To promote the application of MoE models in edge scenarios, we propose Fate, an offloading system designed for MoE models to enable efficient inference in resource-constrained environments. The key insight behind Fate is that gate inputs from adjacent layers can be effec- tively used for expert prefetching, achieving high prediction accuracy without additional GPU overhead. Furthermore, Fate employs a shallow-favoring expert caching strategy that increases the expert hit rate to 99%. Additionally, Fate integrates tailored quantization strategies for cache opti- mization and IO efficiency. Experimental results show that, compared to Load on Demand and Expert Activation Path- based method, Fate achieves up to 4.5\u00d7 and 1.9\u00d7 speedups in prefill speed and up to 4.1\u00d7 and 2.2\u00d7 speedups in decod- ing speed, respectively, while maintaining inference quality. Moreover, Fate\u2019s performance improvements are scalable across different memory budgets. 1 Introduction Large Language Models (LLMs) have demonstrated extraor- dinary capabilities in various domains [27, 41, 44]. Currently, Attention Gate Expert Attn. Attn. Attn. a Attn. b c Attn. a Attn. a c b c b a c \u274cOOM. \u274c wrong prefetch long stall long stall GPU GPU I/O GPU I/O GPU I/O CPU time time time time All in Mem. Load on Demand Expert Activation Path Fate reduction Figure 1. Comparison of three kinds of pipeline. the most powerful models [1, 4, 37], supporting widely used applications, are running on large-scale clusters comprising cutting-edge GPUs (e.g., NVIDIA H100 [28]) to provide high- quality services to users worldwide. Recently, interest has shifted to deploying LLMs in edge scenarios to achieve better privacy protection, personalization, and reduced inference la- tency, such as autonomous driving [16, 40], robotics [33, 51], and IoT devices [45]. In addition, many exciting applications of on-device LLMs have emerged [29, 49], significantly im- proving the user experience. Current research and applications of on-device LLMs fo- cus primarily on dense models [9, 43, 48]. Benefiting from the accelerated growth in the knowledge density of language models, 3-billion-parameter models are well suited for pro- viding high-quality inference services within the resource constraints of edge devices [48]. Meanwhile, Mixture of Ex- perts (MoE) models [11, 30], which have gained popularity for improving computational efficiency, are rarely used on arXiv:2502.12224v1 [cs.AI] 17 Feb 2025"
+}

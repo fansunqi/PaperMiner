@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/linyq5566/SAMRefiner"
+  ],
+  "tasks": [
+    "Mask Refinement",
+    "Semantic Segmentation",
+    "Instance Segmentation"
+  ],
+  "datasets": [
+    "DAVIS-585",
+    "COCO",
+    "PASCAL VOC",
+    "BIG",
+    "re-labeled PASCAL VOC"
+  ],
+  "methods": [
+    "Segment Anything Model (SAM)",
+    "Multi-prompt Excavation",
+    "Split-Then-Merge (STM) Pipeline",
+    "IoU Adaption"
+  ],
+  "results": [
+    "Significant improvement in mask quality",
+    "Efficiency improvement compared to previous methods"
+  ],
+  "title": "SAMRefiner Taming Segment Anything Model for Universal Mask Refinement.pdf",
+  "abstract": "In this paper, we explore a principal way to enhance the quality of widely pre- existing coarse masks, enabling them to serve as reliable training data for segmenta- tion models to reduce the annotation cost. In contrast to prior refinement techniques that are tailored to specific models or tasks in a close-world manner, we propose SAMRefiner, a universal and efficient approach by adapting SAM to the mask refinement task. The core technique of our model is the noise-tolerant prompting scheme. Specifically, we introduce a multi-prompt excavation strategy to mine diverse input prompts for SAM (i.e, distance-guided points, context-aware elastic bounding boxes, and Gaussian-style masks) from initial coarse masks. These prompts can collaborate with each other to mitigate the effect of defects in coarse masks. In particular, considering the difficulty of SAM to handle the multi-object case in semantic segmentation, we introduce a split-then-merge (STM) pipeline. Additionally, we extend our method to SAMRefiner++ by introducing an additional IoU adaption step to further boost the performance of the generic SAMRefiner on the target dataset. This step is self-boosted and requires no additional annota- tion. The proposed framework is versatile and can flexibly cooperate with existing segmentation methods. We evaluate our mask framework on a wide range of benchmarks under different settings, demonstrating better accuracy and efficiency. SAMRefiner holds significant potential to expedite the evolution of refinement tools. Our code is available at SAMRefiner. 1 INTRODUCTION Image segmentation aims to assign a label to each pixel in an image such that pixels with the same label share certain characteristics. There are different notations about the group labels, such as semantic categories or instances. In the past few years, although significant progress has been made in image segmentation, the prevailing approaches rely on fully annotated training images, which are tedious to obtain. To reduce human labor, a labor-efficient alternative is generating segmentation masks by preceding models, especially those designed under incomplete supervisions (e.g, unsupervised, weakly supervised or semi-supervised annotations Wang et al. (2023b; 2022); Lin et al. (2023)). These generated segmentation masks can serve as pseudo labels to train advanced segmentation models or iteratively upgrade existing models Zhu et al. (2021); Yang et al. (2022). With the ever-increasing data amount, this pseudo-labeling paradigm showcases great practicality and potential to expand dataset volume for large-scale learning. However, the initial pseudo masks are usually noisy and lack fine details, particularly in object boundaries or in high-frequency regions (seeing Fig. 1a), hindering them from providing reliable supervision for model training. Several mask refinement techniques have been proposed to improve the mask quality, but they suffer from major drawbacks: 1) model-dependent: Some methods develop custom refinement modules tailored to specific networks and train them in an end-to-end fashion Zhang et al. (2021); Ke et al. (2022a), making them fail to work on different models. 2) task-specific: Another group of techniques Chen et al. (2022); Cheng et al. (2020); Shen et al. (2022) resort to model-agnostic *Corresponding author. 1 arXiv:2502.06756v1 [cs.CV] 10 Feb 2025"
+}

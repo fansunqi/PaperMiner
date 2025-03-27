@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/JihyeokKim/MonoDINO-DETR"
+  ],
+  "tasks": [
+    "Monocular 3D Object Detection",
+    "Depth Estimation"
+  ],
+  "datasets": [
+    "KITTI 3D Benchmark",
+    "Custom racing environment dataset"
+  ],
+  "methods": [
+    "Vision Transformer",
+    "DETR",
+    "Hierarchical Feature Fusion Block",
+    "6D Dynamic Anchor Boxes",
+    "Depth Anything V2"
+  ],
+  "results": [
+    "MonoDINO-DETR outperforms all recent models in terms of AP3D and APBEV on KITTI",
+    "Significant improvement on custom dataset"
+  ],
+  "title": "MonoDINO-DETR Depth-Enhanced Monocular 3D Object Detection Using a Vision Foundation Model.pdf",
+  "abstract": "\u2014 This paper proposes novel methods to enhance the performance of monocular 3D object detection models by lever- aging the generalized feature extraction capabilities of a vision foundation model. Unlike traditional CNN-based approaches, which often suffer from inaccurate depth estimation and rely on multi-stage object detection pipelines, this study employs a Vision Transformer (ViT)-based foundation model as the backbone, which excels at capturing global features for depth estimation. It integrates a detection transformer (DETR) archi- tecture to improve both depth estimation and object detection performance in a one-stage manner. Specifically, a hierarchical feature fusion block is introduced to extract richer visual features from the foundation model, further enhancing feature extraction capabilities. Depth estimation accuracy is further improved by incorporating a relative depth estimation model trained on large-scale data and fine-tuning it through transfer learning. Additionally, the use of queries in the transformer\u2019s decoder, which consider reference points and the dimensions of 2D bounding boxes, enhances recognition performance. The proposed model outperforms recent state-of-the-art methods, as demonstrated through quantitative and qualitative evaluations on the KITTI 3D benchmark and a custom dataset collected from high-elevation racing environments. Code is available at https://github.com/JihyeokKim/MonoDINO-DETR. I. INTRODUCTION With recent advancements in autonomous driving technol- ogy, autonomous racing competitions such as the Indy Au- tonomous Challenge (IAC) and the Abu Dhabi Autonomous Racing League (A2RL) that push the boundaries of inno- vation are gaining popularity. Among these, the IAC, the leading competition in autonomous racing, has been held at various iconic tracks such as Las Vegas Motor Speedway, Indianapolis Motor Speedway, and Monza Circuit since 2021. At CES 2025, it achieved a milestone by completing a 20-lap, 4-car autonomous race at speeds exceeding 100 MPH without any accidents. In high-speed autonomous multi-car racing, robust and reliable perception for long-range detection of the 3D po- sition of opponent cars is crucial for overtaking. To achieve this, Indy racing cars are equipped with multiple sensors such as LiDAR, cameras, and RADAR. Although LiDAR and RADAR sensors offer significant benefits for 3D ob- ject detection tasks, they face certain limitations in racing environments. First, due to elevation changes as shown in Figure 1a, LiDAR points may detect not only target objects but also the ground, which can hinder the robust detection of 1School of Electrical Engineering, Korea Advanced Institute of Science and Technology, Daejeon, South Korea. {jihyeokkim, seongwoo.moon, sw.nah, hcshim}@kaist.ac.kr This work was partially supported by College of Engineering at KAIST, South Korea. (a) Illustration of a high-bank environment on a racing track, captured at Kentucky Speedway. (b) Inference results of MonoDETR (green), MonoDINO- DETR (blue), and ground truth (red) in ego-view (left) and bird\u2019s-eye view (right). Fig. 1: Illustration of the racing track environment and a comparison of detection results between the proposed model and the state-of-the-art model. other cars. Moreover, LiDAR points become sparser as the distance to the object increases. This sparsity can be critical for racing cars, which can reach speeds of up to 190 MPH. RADAR also has its own limitations, such as noisy data and multi-path interference, which can cause the original point to be duplicated in multiple locations even when no object is present. Sensor fusion methods could be a solution for this prob- lem, but the high-temperature and high-vibration conditions of racing cars make it challenging to rely on multi-sensor approaches. Since a malfunction in one sensor could lead to a critical blackout for the autonomous car, developing a robust detection system that relies on a single sensor alone would be highly beneficial in autonomous racing environments. Cameras are currently the most attractive sensors due to their ability to extract rich features from a single input image and their relatively low cost compared to other sensors like LiDAR and RADAR. However, estimating depth from a single input image remains a challenging task because it is an ill-posed problem to infer 3D spatial positions from 2D arXiv:2502.00315v1 [cs.CV] 1 Feb 2025"
+}

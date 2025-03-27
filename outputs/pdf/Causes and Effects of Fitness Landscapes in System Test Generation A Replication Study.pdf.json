@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fitness Landscape Analysis",
+    "Search-Based Software Testing",
+    "System Test Generation"
+  ],
+  "datasets": [
+    "EMB corpus",
+    "23 Web APIs"
+  ],
+  "methods": [
+    "Random Walk",
+    "Many Independent Objective (MIO) Algorithm",
+    "Fitness Landscape Metrics (AC, ND, NV, IC, PIC, DBI)"
+  ],
+  "results": [
+    "High neutrality in fitness landscape",
+    "MIO algorithm outperforms Random Walk",
+    "Boolean flags and null checks create plateaus in fitness landscape",
+    "System-level test generation has more plateaus and lower information levels than unit testing"
+  ],
+  "title": "Causes and Effects of Fitness Landscapes in System Test Generation A Replication Study.pdf",
+  "abstract": "Search-Based Software Testing (SBST) has seen several success stories in academia and industry. The effectiveness of a search algorithm at solving a software engineering problem strongly depends on how such algorithm can navigate the fitness landscape of the addressed problem. The fitness landscape depends on the used fitness function. Understanding the properties of a fitness landscape can help to provide insight on how a search algorithm behaves on it. Such insight can provide valuable information to researchers to being able to design novel, more effective search algorithms and fitness functions tailored for a specific problem. Due to its importance, few fitness landscape analyses have been carried out in the scientific literature of SBST. However, those have been focusing on the problem of unit test generation, e.g., with state-of-the-art tools such as EvoSuite. In this paper, we replicate one such existing study. However, in our work we focus on system test generation, with the state-of-the-art tool EvoMaster. Based on an empirical study involving the testing of 23 web services, this enables us to provide valuable insight into this important testing domain of practical industrial relevance. Keywords: Replication, Fitness Landscape, SBST, REST, API 1 Introduction Many modern applications are built using web services such as REST ([36]), SOAP ([33]), or GraphQL ([66]). In large and complex enterprise applications, these are structured into individual web services through a microservice architecture ([62]). This method minimizes the development and maintenance costs associated with monolithic applications and aims to create more robust solutions. Major companies such as Netflix, Uber, eBay, Amazon, and Nike have widely adopted this approach in the industry ([67]). However, testing web services presents many challenges due to their complexity ([28, 30]). In particular for REST APIs, several techniques have been proposed in the literature ([43]). Various tools have been proposed for fuzzing web services in recent years, including ARAT-RL ([50]), bBOXRT ([53]), DeepREST ([32]), EvoMaster ([23]), Morest ([55]), ResTest ([60]), RestCT ([77]), Restler ([24]), RestTestGen ([73]) and Schemathesis ([48]). Apart from EvoMaster, all these tools are black-box, unable to analyze the source code of the tested APIs to achieve better results. Although black-box testing has its place in industry ([18]), results with white-box testing, when applicable, can be much better ([80]). A key component for white-box EvoMaster, that enables it to achieve significantly better results, is the use of Search-Based Software Testing (SBST) techniques, whose applicability and effectiveness have been demonstrated in various studies ([4, 38, 47, 59]). In SBST, software test generation is cast into a search problem, which can then been tackled with various search algorithms, such as Genetic Algorithm (GA) ([49]), Many Objective Sorting Algorithm (MOSA) ([63]), or Many Independent Objective (MIO) ([6]). These algorithms are guided by a fitness function to try to find the best solution in the search space of all possible test cases for the given problem. Several studies in the literature of SBST demonstrate that these algorithms can effectively help test case generation while the fitness functions accurately direct the algorithm. However, existing fitness functions are not able to guide the algorithms in covering all test targets, such as covering all branches ([29, 1]). In addition to familiar challenges, such as complex parameters that complicate covering all targets during a search, the lack of a comprehensive understanding of search behavior further complicates the identification of the factors that contribute to these difficulties ([1]). One method used to understand search behavior is fitness landscape analysis ([85]), which helps to understand the difficulties underlying the problems. A deep understanding 1 arXiv:2502.00169v1 [cs.SE] 31 Jan 2025"
+}

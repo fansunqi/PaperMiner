@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text-to-Video Generation"
+  ],
+  "datasets": [
+    "CogVideoX-2B",
+    "VidGen-1M"
+  ],
+  "methods": [
+    "Iterative Preference Optimization (IPO)",
+    "Direct Preference Optimization (DPO)",
+    "Kahneman-Tversky Optimization (KTO)",
+    "Diffusion Models"
+  ],
+  "results": [
+    "VBench score improvement",
+    "2B model surpasses 5B model",
+    "Improved temporal coherence, semantic alignment, and overall plausibility"
+  ],
+  "title": "IPO Iterative Preference Optimization for Text-to-Video Generation.pdf",
+  "abstract": "Video foundation models have achieved significant ad- vancement with the help of network upgrade as well as model scale-up. However, they are still hard to meet re- quirements of applications due to unsatisfied generation quality. To solve this problem, we propose to align video foundation models with human preferences from the per- spective of post-training in this paper. Consequently, we introduce an Iterative Preference Optimization strategy to enhance generated video quality by incorporating human feedback. Specifically, IPO exploits a critic model to justify video generations for pairwise ranking as in Direct Prefer- ence Optimization or point-wise scoring as in Kahneman- Tversky Optimization. Given this, IPO optimizes video foundation models with guidance of signals from prefer- ence feedback, which helps improve generated video qual- ity in subject consistency, motion smoothness and aesthetic quality, etc. In addition, IPO incorporates the critic model with the multi-modality large language model, which en- ables it to automatically assign preference labels without need of retraining or relabeling. In this way, IPO can ef- ficiently perform multi-round preference optimization in an iterative manner, without the need of tediously manual la- beling. Comprehensive experiments demonstrate that the proposed IPO can effectively improve the video generation quality of a pretrained model and help a model with only 2B parameters surpass the one with 5B parameters. Besides, IPO achieves new state-of-the-art performance on VBench benchmark. We will release our source codes, models as well as dataset to advance future research and applications. 1. Introduction Text-to-video generation has drawn lots of attention due to its great potentials in movie products, video effects and user-generated contents, etc. Recent works [3, 20, 13] in- troduce the Transformer architecture into diffusion models and improve the video generation quality by simply scaling up the parameter size, e.g., CogVideoX-5B [52], Mochi- 10B [44] and HunyuanVideo-13B [19]. Although achieving impressive performance, they still face challenges for gen- erating user-satisfied videos with consistent subject, smooth motion and high-aesthetic picture. In addition, their large model sizes make them slow to produce videos. These drawbacks limit their applications in practice. To align generation results with human preference, post- training techniques have shown their effectiveness in fields of Large Language Models (LLMs) and Text-to-Image models (T2Is). For instance, Direct Preference Opti- mization (DPO) [36] exploits pairwisely ranked data to make LLMs know the language style liked by human. While Kahneman-Tversky Optimization (KTO) [8] uses pointwisely binary data to reinforce T2Is to learn how to maximumly align the objective with human expectation. These techniques promote generative models to derive user- satisfied contents and give us inspiration for improving video generation models. Thus, we propose to align Text-to-Video models (T2Vs) with human preference from the perspective of post-training in this paper. In particular, we present the Iterative Prefer- ence Optimization (IPO) framework for enhancing T2Vs. IPO introduces preference priors for finetuning T2Vs in the form of reinforcement learning, which considers sub- ject consistency, motion smoothness and aesthetic quality, etc. This leads to improved video generations that are well aligned with human preference. In addition, difference from prior single-round methods, IPO adopts a multi-round opti- mization strategy to reinforce T2Vs in an iterative manner, which strengths the models continuously. In this way, IPO can effectively improve T2Vs without need of large-scale dataset and expensive supervised finetuning. Specifically, IPO consists of three core parts as shown Fig. 1: the preference dataset, the critic model and the it- erative learning framework. IPO first collects a preference dataset for training the critic model. To get this dataset, IPO predefines several categories, including human, ani- mal, action, etc. Then, IPO randomly combines these cat- egories and uses LLM to extend them as prompts for gen- erating videos with T2V models. Given these videos, IPO manually annotates them with two kinds of labels: one is arXiv:2502.02088v2 [cs.CV] 5 Feb 2025"
+}

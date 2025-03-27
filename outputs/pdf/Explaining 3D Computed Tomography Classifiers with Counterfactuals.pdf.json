@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/ieee8023/ct-counterfactuals"
+  ],
+  "tasks": [
+    "3D Computed Tomography (CT) Classifiers Explanation"
+  ],
+  "datasets": [
+    "LUNA16",
+    "TotalSegmenter",
+    "DeepLesion"
+  ],
+  "methods": [
+    "Latent Shift",
+    "Slice-based VQ-VAE",
+    "2D Autoencoder"
+  ],
+  "results": [
+    "Effective generation of counterfactual CT volumes",
+    "Localized analysis of influential regions",
+    "Improved transparency and trustworthiness"
+  ],
+  "title": "Explaining 3D Computed Tomography Classifiers with Counterfactuals.pdf",
+  "abstract": "Counterfactual explanations in medical imaging are critical for understanding the predic- tions made by deep learning models. We extend the Latent Shift counterfactual generation method from 2D applications to 3D computed tomography (CT) scans. We address the challenges associated with 3D data, such as limited training samples and high memory demands, by implementing a slice-based approach. This method leverages a 2D encoder trained on CT slices, which are subsequently combined to maintain 3D context. We demon- strate this technique on two models for clinical phenotype prediction and lung segmentation. Our approach is both memory-efficient and effective for generating interpretable counter- factuals in high-resolution 3D medical imaging. 1. Introduction Neural Networks can learn to identify features and make predictions from computed to- mography (CT) scans predicting clinical phenotypes (Blankemeier et al., 2024) and survival (Thanoon et al., 2023). To understand why these predictions are made, it is crucial to have interpretable explanations, especially in the medical domain where high-stakes decisions are made. Synthetic counterfactual CT volumes can be created to simulate a change in the class label of an image, providing insights into the factors influencing the model\u2019s predictions. In this work we extend the counterfactual generation method of Latent Shift, previously demonstrated for 2D counterfactuals (CFs) (Cohen et al., 2021), into the 3D domain to enable it to work for CT volumes. While a natural approach would be to use a 3D autoen- coder, this presents difficulties such as the scarcity of training data for 3D autoencoders and the significant computational and memory demands, especially for large models and high-resolution data, both of which are likely required for generating high-quality counter- factuals. To address this, we employ a 2D autoencoder by slicing the 3D volumes, then encoding, decoding, and concatenating the slices. This slice-based approach is more data-efficient than training directly on entire volumes, helping to mitigate overfitting by avoiding biases related to specific acquisition views (e.g., abdomen or head). By randomly sampling slices, the model is less likely to learn unwanted correlations connected to particular views. \u2020Work not related to position at Amazon. \u00a9 CC-BY 4.0, J.P. Cohen, L. Blankemeier & A. Chaudhari. arXiv:2502.07156v1 [cs.CV] 11 Feb 2025"
+}

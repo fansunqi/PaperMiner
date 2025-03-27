@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "None"
+  ],
+  "datasets": [
+    "AIDS",
+    "ogbg-molhiv (MolHIV)",
+    "MU-TAG",
+    "NCI1 (small molecules)",
+    "DD",
+    "Enzymes",
+    "Peptides-func (Peptides)",
+    "PROTEINS-full (Proteins)",
+    "COLLAB",
+    "IMDB-B",
+    "IMDB-M",
+    "REDDIT-B",
+    "REDDIT-M"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "No Metric to Rule Them All Toward Principled Evaluations of Graph-Learning Datasets.pdf",
+  "abstract": "Benchmark datasets have proved pivotal to the success of graph learning, and good benchmark datasets are crucial to guide the development of the field. Recent research has highlighted prob- lems with graph-learning datasets and benchmark- ing practices\u2014revealing, for example, that meth- ods which ignore the graph structure can outper- form graph-based approaches on popular bench- mark datasets. Such findings raise two questions: (1) What makes a good graph-learning dataset, and (2) how can we evaluate dataset quality in graph learning? Our work addresses these ques- tions. As the classic evaluation setup uses datasets to evaluate models, it does not apply to dataset evaluation. Hence, we start from first principles. Observing that graph-learning datasets uniquely combine two modes\u2014the graph structure and the node features\u2014, we introduce RINGS, a flexi- ble and extensible mode-perturbation framework to assess the quality of graph-learning datasets based on dataset ablations\u2014i.e., by quantifying differences between the original dataset and its perturbed representations. Within this framework, we propose two measures\u2014performance sepa- rability and mode complementarity\u2014as evalua- tion tools, each assessing, from a distinct angle, the capacity of a graph dataset to benchmark the power and efficacy of graph-learning methods. We demonstrate the utility of our framework for graph-learning dataset evaluation in an extensive set of experiments and derive actionable recom- mendations for improving the evaluation of graph- learning methods. Our work opens new research directions in data-centric graph learning, and it constitutes a first step toward the systematic eval- uation of evaluations. *Equal contribution. 1Aalto University, Finland 2Max Planck Institute for Informatics, Germany 3Helmholtz Munich, Germany 4TU Munich, Germany 5University of Fribourg, Switzerland. Cor- respondence to: Corinna Coupette <corinna.coupette@aalto.fi>. Preprint. Under Review. 1. Introduction Over the past decade, graph learning has established itself as a prominent approach to making predictions from rela- tional data, with remarkable success in areas from small molecules (Fang et al., 2022; Stokes et al., 2020) to large social networks (Sharma et al., 2024; Ying et al., 2018). Despite significant progress on the theory of graph neural networks (Morris et al., 2024), however, many empirical intricacies of graph-learning tasks, models, and datasets remain poorly understood. For example, recent research has revealed that (1) purported performance gaps disappear with proper hyperparameter tuning (T\u00a8onshoff et al., 2023), (2) popular graph-learning datasets occupy a very peculiar part of the space of all possible graphs (Palowitch et al., 2022), (3) some graph-learning tasks can be solved without using the graph structure (Errica et al., 2020), and (4) graph- learning models struggle to ignore the graph structure when the features alone are sufficiently informative for the task at hand (Bechler-Speicher et al., 2024). These findings sug- gest a need for better infrastructure to assess graph-learning methods, supporting rigorous evaluations that paint a realis- tic picture of the progress made by the community. Necessity and Challenges of Dataset Evaluation. Bench- mark datasets play a key role in the evaluation of graph- learning methods, but the results cited above highlight that not all (collections of) graphs are equally suitable for that purpose. This motivates us to flip the script on graph- learning evaluation, asking how well graph-learning datasets can characterize the capabilities of graph-learning methods, rather than how well these methods can solve tasks on graph- learning datasets. Our work is guided by two questions: Q1 What characterizes a good graph-learning dataset? Q2 How can we evaluate dataset quality in graph learning? Addressing these questions is not straightforward. First, the classic evaluation setup, which compares performance across models while holding the dataset constant, cannot be used to evaluate datasets. Second, comparing performance levels across datasets while holding the model constant yields measurements that are confounded by model capabil- ities. Third, while performance levels indicate the difficulty of a dataset for existing methods, these levels provide little 1 arXiv:2502.02379v1 [cs.LG] 4 Feb 2025"
+}

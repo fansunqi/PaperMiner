@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Communication through actions",
+    "Integrated control and communication"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Act2Comm",
+    "Transformer",
+    "Critic network",
+    "Iterative training strategy"
+  ],
+  "results": [
+    "Capacity-reward trade-off",
+    "BER",
+    "Reward",
+    "Communication performance",
+    "Control performance"
+  ],
+  "title": "Actions Speak Louder Than Words Rate-Reward Trade-off in Markov Decision Processes.pdf",
+  "abstract": "The impact of communication on decision-making systems has been extensively studied under the assumption of dedicated communication channels. We instead consider communicating through actions, where the message is embedded into the actions of an agent which interacts with the environment in a Markov decision pro- cess (MDP) framework. We conceptualize the MDP environment as a finite-state channel (FSC), where the actions of the agent serve as the channel input, while the states of the MDP observed by another agent (i.e., receiver) serve as the channel output. Here, we treat the environment as a communication channel over which the agent communicates through its actions, while at the same time, trying to max- imize its reward. We first characterize the optimal information theoretic trade-off between the average reward and the rate of reliable communication in the infinite- horizon regime. Then, we propose a novel framework to design a joint con- trol/coding policy, termed Act2Comm, which seamlessly embeds messages into actions. From a communication perspective, Act2Comm functions as a learning- based channel coding scheme for non-differentiable FSCs under input-output con- straints. From a control standpoint, Act2Comm learns an MDP policy that incor- porates communication capabilities, though at the cost of some control perfor- mance. Overall, Act2Comm effectively balances the dual objectives of control and communication in this environment. Experimental results validate Act2Comm\u2019s capability to enable reliable communication while maintaining a certain level of control performance. Project page: https://eedavidwu.github.io/Act2Comm/ 1 INTRODUCTION The role of communication in multi-agent systems has received significant attention as it allows agents with a partial view of the system to better coordinate and cooperate by exchanging mes- sages in parallel to actions taken in the environment (Foerster et al., 2016; Sukhbaatar et al., 2016). However, these systems rely on dedicated channels for communication. On the other hand, explicit communication channels may not always be available, or may be complemented with other implicit forms of communication. Such examples are abundant in nature. Bacteria communicate through chemical molecules, known as quorum sensing (Waters & Bassler, 2005), altering their environ- ment and behavior to achieve population-wide coordination. Ants use pheromones to encode the path to food for other ants (von Thienen et al., 2014). Non-verbal communication through gestures, gaze, and even physical appearance, is also known to play an important role in human communica- tion (Trenholm, 2020). In the artificial realm, autonomous robots may also need to rely on implicit communications when explicit communication channels are not available. In medical nano-robots, electromagnetic communication is not feasible due to size and energy limitations, but implicit com- munication can be achieved through molecular communications (Weiss & Knight, 2001; Wang et al., 2023). Even for more advanced robots, electromagnetic or other types of explicit communication *These authors are contributed equally to this work. \u2020 Corresponding author. 1 arXiv:2502.03335v1 [cs.IT] 5 Feb 2025"
+}

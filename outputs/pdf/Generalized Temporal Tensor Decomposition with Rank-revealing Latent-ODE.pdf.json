@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generalized Temporal Tensor Decomposition"
+  ],
+  "datasets": [
+    "CA traffic",
+    "Server Room",
+    "SSF"
+  ],
+  "methods": [
+    "Neural ODE",
+    "Rank-revealing Gaussian-Gamma prior",
+    "Variational inference"
+  ],
+  "results": [
+    "RMSE: 0.284 \u00b1 0.016",
+    "MAE: 0.078 \u00b1 0.001"
+  ],
+  "title": "Generalized Temporal Tensor Decomposition with Rank-revealing Latent-ODE.pdf",
+  "abstract": "Tensor decomposition is a fundamental tool for analyzing multi-dimensional data by learning low- rank factors to represent high-order interactions. While recent works on temporal tensor decom- position have made significant progress by incor- porating continuous timestamps in latent factors, they still struggle with general tensor data with continuous indexes not only in the temporal mode but also in other modes, such as spatial coordi- nates in climate data. Additionally, the problem of determining the tensor rank remains largely unexplored in temporal tensor models. To address these limitations, we propose Generalized tem- poral tensor decomposition with Rank-rEvealing latenT-ODE (GRET). Our approach encodes con- tinuous spatial indexes as learnable Fourier fea- tures and employs neural ODEs in latent space to learn the temporal trajectories of factors. To auto- matically reveal the rank of temporal tensors, we introduce a rank-revealing Gaussian-Gamma prior over the factor trajectories. We develop an effi- cient variational inference scheme with an analyti- cal evidence lower bound, enabling sampling-free optimization. Through extensive experiments on both synthetic and real-world datasets, we demon- strate that GRET not only reveals the underlying ranks of temporal tensors but also significantly outperforms existing methods in prediction per- formance and robustness against noise. 1. Introduction Tensor is a ubiquitous data structure for organizing multi- dimensional data. For example, a four-mode tensor (lon- gitude, latitude, depth, time) can serve as a unified repre- sentation of spatiotemporal signals in the ocean, such as temperature or flow speed. Tensor decomposition is a pre- 1College of Information Science and Electronic Engineer- ing, Zhejiang University, Hangzhou, China 2Microsoft Re- search Asia. Correspondence to: Lei Cheng, Shikai Fang < lei cheng@zju.edu.cn,fangshikai@microsoft.com>. vailing framework for multiway data analysis that estimates latent factors to reconstruct the unobserved entries. Meth- ods like CANDECOMP/PARAFAC (CP)(Harshman et al., 1970) and Tucker decomposition(Sidiropoulos et al., 2017) are widely applied across fields, including climate science, oceanography, and social science. An emerging trend in tensor community is to leverage the continuous timestamp of observed entries and build tempo- ral tensor models, as the real-world tensor data is often irreg- ularly collected in time, e.g., physical signals, accompanied with rich and complex time-varying patterns. The temporal tensor methods expand the classical tensor framework by using polynomial splines (Zhang et al., 2021), Gaussian processes (Fang et al., 2022; 2024a), ODE (Li et al., 2022) and energy-based models (Tao et al., 2023) to estimate the continuous temporal dynamics in latent space, instead of discretizing the time mode and setting a fixed number of factors. Despite the successes of current temporal tensor methods, they inherit a fundamental limitation from traditional tensor models: they assume tensor data at each timestep must con- form to a Cartesian grid structure with discrete indexes and finite-dimensional modes. This assumption poorly aligns with many real-world scenarios where modes are naturally continuous, such as spatial coordinates like (longitude, lati- tude, depth). To fit current models, we still need to discretize continuous indexes, which inevitably leads to a loss of fine- grained information encoded in these indexes. From a high- level perspective, while current temporal tensor methods have taken a crucial step forward by modeling continuous characteristics in the temporal mode compared to classical approaches, they still fail to fully utilize the rich complex patterns inherent in other continuous-indexed modes. Another crucial problem lies in determining the optimal rank for temporal tensor decomposition. As a fundamental hyper- parameter in tensor modeling, the rank directly influences interpretability, sparsity, and model expressiveness. While classical tensor literature offers extensive theoretical analy- sis and learning-based solutions (Zhao et al., 2015; Cheng et al., 2022; Rai et al., 2014), this topic has been largely overlooked in emerging temporal tensor methods. The in- troduction of dynamical patterns significantly complicates the latent landscape, and the lack of investigation into rank 1 arXiv:2502.06164v1 [cs.LG] 10 Feb 2025"
+}

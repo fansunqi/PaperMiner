@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Colorization"
+  ],
+  "datasets": [
+    "DAVIS2017"
+  ],
+  "methods": [
+    "Stable Video Diffusion (SVD)",
+    "Palette Guidance",
+    "Gaussian Mixture Model (GMM)",
+    "Large Language Model (LLM)"
+  ],
+  "results": [
+    "Colorful\u2191",
+    "FID\u2193",
+    "FVD\u2193",
+    "PSNR\u2191",
+    "SSIM\u2191",
+    "LPIPS\u2193"
+  ],
+  "title": "Consistent Video Colorization Via Palette Guidance.pdf",
+  "abstract": "\u2014Colorization is a traditional computer vision task and it plays an important role in many time-consuming tasks, such as old film restoration. Existing methods suffer from unsaturated color and temporally inconsistency. In this paper, we propose a novel pipeline to overcome the challenges. We regard the colorization task as a generative task and introduce Stable Video Diffusion (SVD) as our base model. We design a palette- based color guider to assist the model in generating vivid and consistent colors. The color context introduced by the palette not only provides guidance for color generation, but also enhances the stability of the generated colors through a unified color context across multiple sequences. Experiments demonstrate that the proposed method can provide vivid and stable colors for videos, surpassing previous methods. Index Terms\u2014Video Colorization, Diffusion Models I. INTRODUCTION Video colorization is essential for enhancing the visual experience of historical video materials and old films. This task involves transforming grayscale video sequences into vivid, full-color versions while maintaining temporal consistency across frames. However, existing methods still face two primary chal- lenges: unsaturated colors and temporal inconsistency. On one hand, the issue of unsaturated colors reflects a common challenge in image colorization, where colors often appear dull or lack diversity. To address this, researchers have suc- cessfully integrated generative models [1]\u2013[4] and multi-modal priors [5], [6] into image colorization methods, achieving sig- nificant improvements in color vividness. For these methods, maintaining consistent colors across frames conflicts with the fact that each frame is colored independently. On the other hand, video colorization introduces the additional challenge of temporal inconsistency\u2014the need to maintain consistent colors across frames. To tackle this, previous work [7]\u2013[9] has employed techniques such as optical flow [10], [11]. While these methods process the video frame by frame, they struggle to achieve long-range coherence and are prone to cumulative errors, which further exacerbate the issue of temporal inconsistency. These limitations highlight the need for a more integrated approach that can balance color richness with temporal coherence, ensuring high visual quality in video colorization. The rapid development of large-scale generative models has significantly advanced downstream vision tasks [12]\u2013[14], including colorization [6], [15]\u2013[20]. Among these, diffusion- based methods have become a cornerstone, using image-to- video diffusion priors to generate semantic reasonable colors. Recent studies, such as those in [18]\u2013[21], have shown the Inconsistent! Unsaturated! \u2026 \ud83c\udfb2Baseline: Clip-by-Clip Independent Generation \ud83c\udfa8Our Method: Global Palette-Guided Generation \u26a1 \u26a1 Fig. 1. Comparison with frame independent colorization framework TCVC [9]. Our method shows superiority in color vividness and temporal consis- tence. potential of diffusion model (DM)-based approaches for video colorization. These methods address temporal consistency by integrating optical flow priors or cross-frame attention mechanisms into the image colorization backbone, enabling multi-frame colorization. For instance, methods like [20], [21] have introduced temporally deformable attention and cross-clip fusion to maintain long-term color consistency and prevent flickering or color shifts. However, these cross-frame attention mechanisms typically refer to only a limited number of adjacent frames, which may not be sufficient for ensuring long-range temporal consistency across the entire video. This limitation underscores the need for more robust and com- prehensive approaches that can effectively address both color richness and temporal coherence in video colorization. To address the challenges of video colorization, we pro- pose a color palette-guided video diffusion framework, which enhances both color richness and temporal consistency by leveraging palette for global guidance and allowing for a diverse range of inputs for the palette. Our method is based on fine-tuning an image-to-video diffusion model. However, direct fine-tuning often results in generated frames that appear unsaturated and muted. We attribute this issue to two primary factors: (1) the model may fall into a conservative \u201dshortcut\u201d of merely recovering grayscale values, and (2) the output is highly sensitive to the color distribution of the training data, making it prone to biases. To address these issues and obtain more saturated colors, we introduce a palette guidance mechanism. The color palette provides a rich color context that can significantly enhance the color saturation of the generated videos. Furthermore, we arXiv:2501.19331v1 [cs.CV] 31 Jan 2025"
+}

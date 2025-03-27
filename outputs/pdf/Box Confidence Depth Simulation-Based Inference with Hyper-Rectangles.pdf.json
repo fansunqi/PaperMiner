@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/elenabortolato/box"
+  ],
+  "tasks": [
+    "Confidence Region Construction",
+    "Simulation-Based Inference",
+    "Model Comparison"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Box-Confidence Depth",
+    "Rejection Sampling",
+    "Data Depth",
+    "Density Estimation"
+  ],
+  "results": [
+    "Confidence Set Coverage",
+    "Point Estimator Consistency",
+    "Empirical Coverage"
+  ],
+  "title": "Box Confidence Depth Simulation-Based Inference with Hyper-Rectangles.pdf",
+  "abstract": "This work presents a novel simulation-based approach for con- structing confidence regions in parametric models, which is particularly suited for generative models and situations where limited data and con- ventional asymptotic approximations fail to provide accurate results. The method leverages the concept of data depth and depends on creating ran- dom hyper-rectangles, i.e. boxes, in the sample space generated through simulations from the model, varying the input parameters. A probabilistic acceptance rule allows to retrieve a Depth-Confidence Distribution for the model parameters from which point estimators as well as calibrated confi- dence sets can be read-off. The method is designed to address cases where both the parameters and test statistics are multivariate. MSC2020 subject classifications: Monte Carlo methods 65C05; Toler- ance and confidence regions 62F25; Order statistics; Empirical distribution functions 62G30. Keywords and phrases: Depth functions, Simulation-Based inference. 1. Introduction In many scientific domains, researchers face the challenge of evaluating complex statistical models in which the likelihood function is either computationally intractable or prohibitively expensive to calculate. This has led to the develop- ment and increasing popularity of likelihood-free inference methods, which offer powerful alternatives for parameter estimation and model comparison. These methodologies leverage simulations, enabling inference through the compari- son of observed data with simulated outcomes generated from the model under various parameter settings. In Bayesian inference, these include Approximate Bayesian Computation (Rubin, 1984; Pritchard et al., 1999; Sisson et al., 2018), Bayesian Synthetic Likelihood (Wood, 2010; Price et al., 2018), Neural Likeli- hood and Posterior Estimation (Rezende and Mohamed, 2015; Papamakarios, Sterratt and Murray, 2019). In the frequentist setting, after the foundational work of Gourieroux, Monfort and Renault (1993), only recent years have seen advancements in likelihood-free inference (Masserano et al., 2022; Xie and Wang, 2022; Dalmasso et al., 2024). This study focuses on frequentist inference, targeting the construction of calibrated confidence intervals and regions across simulation-based models and non-standard regularity conditions. The proposed approach provides a unified 1 arXiv:2502.11072v1 [stat.ME] 16 Feb 2025"
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/ugr-sail/pytopicgram"
+  ],
+  "tasks": [
+    "Data Extraction",
+    "Topic Modeling",
+    "Social Media Analysis"
+  ],
+  "datasets": [
+    "Telegram Channels"
+  ],
+  "methods": [
+    "Telethon",
+    "BERTopic",
+    "Natural Language Processing"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Pytopicgram A Library for Data Extraction and Topic Modeling from Telegram Channels.pdf",
+  "abstract": "Telegram is a popular platform for public communication, generating large amounts of messages through its channels. pytopicgram is a Python library that helps researchers collect, organize, and analyze these Telegram messages. The library offers key features such as easy message retrieval, detailed channel information, engagement metrics, and topic identification using advanced modeling techniques. By simplifying data extraction and analysis, pytopicgram allows users to understand how content spreads and how audiences interact on Telegram. This paper describes the design, main features, and practical uses of pytopicgram, showcasing its effectiveness for studying public conversations on Telegram. Keywords Telegram \u00b7 Crawling \u00b7 Topic Modeling \u00b7 Social Media Analysis 1 Motivation and significance Messaging platforms like Telegram have become critical spaces for information exchange, social mobilization, and digital communities. With features such as public channels, unlimited subscribers, and a degree of anonymity, Telegram has emerged as a valuable source of unstructured data reflecting various social, political, and cultural dynamics [1]. Understanding the discourses within Telegram channels is essential for researchers, policymakers, and organizations seeking to analyze public opinion, track information diffusion, and monitor emerging trends, including harmful content like disinformation. Topic modeling is an unsupervised learning technique that identifies patterns in text by grouping words into topics. Traditional methods, such as Latent Dirichlet Allocation (LDA) [2], have been improved by modern approaches that use Large Language Models (LLMs) like BERT and GPT to capture more context-aware representations of text [3]. These techniques leverage the deep contextual embeddings provided by the LLMs and enable more accurate and semantically-rich topic representations. To address the need for analyzing Telegram data, we present pytopicgram1, a Python library for downloading, processing, and categorizing messages from Telegram channels. The library relies on the Telethon2 library to connect to the Telegram API for data collection and the BERTopic algorithm3 for topic modeling. These features make pytopicgram particularly effective for analyzing public discourse, where understanding the spread and evolution of narratives is crucial. This paper describes pytopicgram\u2019s architecture, functionalities, and impact. Two use examples are also provided to illustrate running the complete toolchain and selectively using one of the modules to perform recursive data collection. 1https://github.com/ugr-sail/pytopicgram 2https://docs.telethon.dev/en/stable/ 3https://github.com/MaartenGr/BERTopic arXiv:2502.04882v1 [cs.CL] 7 Feb 2025"
+}

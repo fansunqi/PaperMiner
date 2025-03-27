@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/talkpl-ai/talkplay"
+  ],
+  "tasks": [
+    "Music Recommendation"
+  ],
+  "datasets": [
+    "Million Playlist Dataset",
+    "TalkPlay Dataset"
+  ],
+  "methods": [
+    "Multimodal Music Tokenization",
+    "LLM Fine-tuning",
+    "Next-Token Prediction"
+  ],
+  "results": [
+    "MRR: 0.023",
+    "Hit@1: 0.014",
+    "Hit@10: 0.036",
+    "Hit@100: 0.142"
+  ],
+  "title": "TALKPLAY Multimodal Music Recommendation with Large Language Models.pdf",
+  "abstract": "We present TALKPLAY, a multimodal music rec- ommendation system that reformulates the rec- ommendation task as large language model token generation. TALKPLAY represents music through an expanded token vocabulary that encodes mul- tiple modalities - audio, lyrics, metadata, seman- tic tags, and playlist co-occurrence. Using these rich representations, the model learns to generate recommendations through next-token prediction on music recommendation conversations, that re- quires learning the associations natural language query and response, as well as music items. In other words, the formulation transforms music recommendation into a natural language under- standing task, where the model\u2019s ability to predict conversation tokens directly optimizes query-item relevance. Our approach eliminates traditional recommendation-dialogue pipeline complexity, enabling end-to-end learning of query-aware mu- sic recommendations. In the experiment, TALK- PLAY is successfully trained and outperforms baseline methods in various aspects, demonstrat- ing strong context understanding as a conversa- tional music recommender.1 1. Introduction Recent advances in recommendation systems have focused on leveraging rich multimodal data and complex user-item interactions (Liu et al., 2024a). While neural architectures have shown success in modeling these aspects (Salau et al., 2022), the emergence of Large Language Models (LLMs) presents new opportunities for recommendation. Current LLM-based approaches typically use these models either as dialogue managers for natural language interaction (Liu *Equal contribution 1KAIST, South Korea 2talkpl.ai, New York, USA. Correspondence to: SeungHeon Doh <seungheon- doh@kaist.ac.kr>, Juhan Nam <juhan.nam@kaist.ac.kr>. Proceedings of the 41 st International Conference on Machine Learning, Vancouver, Canada. PMLR 267, 2025. Copyright 2025 by the author(s). 1A demo of the recommendation system is available at: https://talkpl-ai.github.io/talkplay-demo et al., 2023c) or as feature extractors for multimodal under- standing (Tian et al., 2024). However, these methods often require complex pipelines to bridge the semantic understand- ing of LLMs with structured recommendation logic. We present TALKPLAY, a multimodal music recommen- dation system that reformulates the recommendation task as next token prediction. Unlike existing approaches that maintain separate modules for dialogue, retrieval, and rank- ing, TALKPLAY unifies these components through a novel multimodal music tokenization and vocabulary expansion. By representing music items as sequences of tokens en- coding audio features, lyrics, metadata, tags, and playlist co-occurrence, our system learns to recommend directly through next-token prediction on music discovery conver- sations. This formulation eliminates the need for separate recommendation logic while preserving the benefits of both content-based and collaborative filtering approaches. The LLM and token prediction framework provides sev- eral fundamental advantages. First, it enables end-to-end learning of query-aware recommendations without requiring explicit dialogue management or retrieval mechanisms. Sec- ond, its causal nature naturally models sequential patterns in music discovery, similar to session-based approaches but with richer semantic context. Third, TALKPLAY inher- its broad semantic understanding from pre-trained LLM weights, which likely contain rich knowledge about mu- sical concepts like artist names, genres, and cultural con- texts. Most significantly, the large capacity of the LLM architecture enables the model to effectively utilize this knowledge alongside all available signals - user preferences, contextual queries, and interaction patterns - for generating recommendations. This integration of multiple informa- tion sources through a text-based interface eliminates the need for modality-specific architectures while maintaining interpretability - a key advantage over traditional recommen- dation systems that require separate components for query understanding, preference modeling, and item retrieval. 2. Related Works in Recommendation Systems Language Models : Recent progress in language mod- els has led to significant interest in reformulating recom- mendation tasks as language modeling. Early approaches such as BERT4Rec (Sun et al., 2019) and Transform- 1"
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Infinite State Model Checking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transitive Relation Learning (TRL)",
+    "Recurrence Analysis",
+    "Conjunctive Variable Projections",
+    "Transitive Projections",
+    "Blocking Clauses"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Infinite State Model Checking by Learning Transitive Relations.pdf",
+  "abstract": ". We propose a new approach for proving safety of in\ufb01nite state systems. It extends the analyzed system by transitive relations un- til its diameter D becomes \ufb01nite, i.e., until constantly many steps su\ufb03ce to cover all reachable states, irrespective of the initial state. Then we can prove safety by checking that no error state is reachable in D steps. To deduce transitive relations, we use recurrence analysis. While recurrence analyses can usually \ufb01nd conjunctive relations only, our approach also discovers disjunctive relations by combining recurrence analysis with pro- jections. An empirical evaluation of the implementation of our approach in our tool LoAT shows that it is highly competitive with the state of the art. 1 Introduction We consider relations de\ufb01ned by SMT formulas over two disjoint vectors of pre- and post-variables x and x\u2032. Such relational formulas can easily represent tran- sition systems (TSs), linear Constrained Horn Clauses (CHCs), and control-\ufb02ow automata (CFAs).1 Thus, they subsume many popular intermediate representa- tions used for veri\ufb01cation of systems speci\ufb01ed in more expressive languages. In contrast to, e.g., source code, relational formulas are unstructured. How- ever, source code may be unstructured, too (e.g., due to gotos), so being inde- pendent from the structure of the input makes our approach broadly applicable. Example 1 (Running Example). Let \u03c4 := \u03c4inc \u2228\u03c4dec with: w .= 0 \u2227x\u2032 .= x + 1 \u2227y\u2032 .= y + 1 (\u03c4inc) w\u2032 .= w \u2227w .= 1 \u2227x\u2032 .= x \u22121 \u2227y\u2032 .= y \u22121 (\u03c4dec) We use \u201c .=\u201d for equality in relational formulas. The formula \u03c4 de\ufb01nes a relation \u2192\u03c4 on Z \u00d7 Z \u00d7 Z by relating the unprimed pre-variables with the primed post- variables. So for all vw, vx, vy, v\u2032 w, v\u2032 x, v\u2032 y \u2208Z, we have (vw, vx, vy) \u2192\u03c4 (v\u2032 w, v\u2032 x, v\u2032 y) i\ufb00[w/vw, x/vx, y/vy, w\u2032/v\u2032 w, x\u2032/v\u2032 x, y\u2032/v\u2032 y] is a model of \u03c4. Let the set of error states be given by \u03c8err := w .= 1 \u2227x \u22640 \u2227y > 0. 1 To this end, it su\ufb03ces to introduce one additional variable that represents the control- \ufb02ow location (for TSs and CFAs) or the predicate (for linear CHCs)."
+}

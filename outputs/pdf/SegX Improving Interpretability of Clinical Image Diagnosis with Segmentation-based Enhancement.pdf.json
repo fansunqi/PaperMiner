@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/JasonZuu/SegX"
+  ],
+  "tasks": [
+    "Medical image analysis",
+    "Disease diagnosis",
+    "XAI enhancement"
+  ],
+  "datasets": [
+    "HAM10000",
+    "ChestX-Det10"
+  ],
+  "methods": [
+    "Segmentation-based explanation (SegX)",
+    "Segmentation-based Uncertainty Assessment (SegU)"
+  ],
+  "results": [
+    "Improved interpretability",
+    "Enhanced uncertainty assessment",
+    "Increased alignment between explanations and clinical areas"
+  ],
+  "title": "SegX Improving Interpretability of Clinical Image Diagnosis with Segmentation-based Enhancement.pdf",
+  "abstract": "Deep learning-based medical image analysis faces a signifi- cant barrier due to the lack of interpretability. Conventional explainable AI (XAI) techniques, such as Grad-CAM and SHAP, often highlight regions outside clinical interests. To address this issue, we propose Segmentation-based Expla- nation (SegX), a plug-and-play approach that enhances in- terpretability by aligning the model\u2019s explanation map with clinically relevant areas leveraging the power of segmentation models. Furthermore, we introduce Segmentation-based Un- certainty Assessment (SegU), a method to quantify the uncer- tainty of the prediction model by measuring the \u2019distance\u2019 be- tween interpretation maps and clinically significant regions. Our experiments on dermoscopic and chest X-ray datasets show that SegX improves interpretability consistently across mortalities, and the certainty score provided by SegU reliably reflects the correctness of the model\u2019s predictions. Our ap- proach offers a model-agnostic enhancement to medical im- age diagnosis towards reliable and interpretable AI in clinical decision-making. Code \u2014 https://github.com/JasonZuu/SegX Introduction The integration of artificial intelligence (AI) into medical image analysis has become a central area of research due to its potential to streamline workflows and enhance diag- nostic accuracy (Pinto-Coelho 2023). Among various AI techniques, deep learning (DL) have shown remarkable ef- ficacy across diverse medical applications, including dis- ease diagnosis and lesion segmentation (Barata et al. 2023; Gu et al. 2018; Ramesh et al. 2021). For instance, on the HAM10000 dataset (Tschandl, Rosendahl, and Kittler 2018), a diagnostic model has achieved a high sensitivity of 87.1% for basal cell carcinoma detection based on reinforce- ment learning (Barata et al. 2023), which even outperform- ing the clinicians. Similarly, a model that learns the common patterns from multi-source data achieved an accuracy of 85.8% across multiple diseases on the ChestX-Det10 dataset (Liu, Lian, and Yu 2020), demonstrating DL\u2019s potential in *These authors contributed equally. \u2020Corresponding author: zhiyao.luo@eng.ox.ac.uk Copyright \u00a9 2025, Association for the Advancement of Artificial Intelligence (www.aaai.org). All rights reserved. accurate chest X-ray diagnosis (Dai et al. 2024). Despite these advancements, the black-box nature of these models and their opaque decision-making processes remain criti- cal barriers to their adaptation in broader clinical scenarios, where interpretability and trustworthiness are paramount (Abbasian Ardakani et al. 2024). Figure 1: Negative examples of using XAI to highlight highly important regions. The first column shows the orig- inal images from HAM10000 and ChestX-Det10, respec- tively. The second column shows the clinical interests of each image. The last column shows the Grad-CAM inter- preted results on a learned model. It is clear to see that the model overemphasises background area for making a diag- nosis, which mismatches clinical interests. Explainable AI (XAI) methods have demonstrated signif- icant value in enhancing model interpretability across vari- ous computer vision tasks by providing visual evidence for predictions, which is often intuitive for human users (Has- sija et al. 2024). For instance, Grad-CAM (Selvaraju et al. 2017) highlights regions in an image that contribute most to the model\u2019s prediction by leveraging the gradients of target class scores with respect to feature map activations. In medi- cal image classification, methods like Grad-CAM (Selvaraju et al. 2017) and SHAP (Lundberg and Lee 2017) have been widely adopted to enhance the trustworthiness of AI models (Loh et al. 2022; Borys et al. 2023). However, as shown in arXiv:2502.10296v1 [eess.IV] 14 Feb 2025"
+}

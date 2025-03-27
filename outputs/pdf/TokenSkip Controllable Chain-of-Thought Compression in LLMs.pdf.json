@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/hemingkx/TokenSkip"
+  ],
+  "tasks": [
+    "LLM reasoning",
+    "CoT compression"
+  ],
+  "datasets": [
+    "GSM8K",
+    "MATH-500"
+  ],
+  "methods": [
+    "Token pruning",
+    "LLM fine-tuning",
+    "LoRA"
+  ],
+  "results": [
+    "40% reduction in reasoning tokens",
+    "0.4% performance drop",
+    "1.8\u00d7 inference speedup"
+  ],
+  "title": "TokenSkip Controllable Chain-of-Thought Compression in LLMs.pdf",
+  "abstract": "Chain-of-Thought (CoT) has been proven ef- fective in enhancing the reasoning capabili- ties of large language models (LLMs). Re- cent advancements, such as OpenAI\u2019s o1 and DeepSeek-R1, suggest that scaling up the length of CoT sequences during inference could further boost LLM reasoning perfor- mance. However, due to the autoregressive nature of LLM decoding, longer CoT outputs lead to a linear increase in inference latency, ad- versely affecting user experience, particularly when the CoT exceeds 10,000 tokens. To ad- dress this limitation, we analyze the seman- tic importance of tokens within CoT outputs and reveal that their contributions to reason- ing vary. Building on this insight, we propose TokenSkip, a simple yet effective approach that enables LLMs to selectively skip less im- portant tokens, allowing for controllable CoT compression. Extensive experiments across var- ious models and tasks demonstrate the effec- tiveness of TokenSkip in reducing CoT token usage while preserving strong reasoning per- formance. Notably, when applied to Qwen2.5- 14B-Instruct, TokenSkip reduces reasoning to- kens by 40% (from 313 to 181) on GSM8K, with less than a 0.4% performance drop. We release our code and checkpoints in https: //github.com/hemingkx/TokenSkip. 1 Introduction Chain-of-Thought (CoT) prompting (Nye et al., 2021; Wei et al., 2022; Kojima et al., 2022) has emerged as a cornerstone strategy for enhancing Large Language Models (LLMs) in complex rea- soning tasks. By eliciting step-by-step inference, CoT enables LLMs to decompose intricate prob- lems into manageable subtasks, thereby improv- ing their problem-solving performance (Yao et al., 2023; Wang et al., 2023; Zhou et al., 2023; Shinn *Corresponding Author LLM LLM (a) Original CoT (b) TokenSkip Pruning Fine-tune Efficiency Figure 1: In contrast to vanilla CoT that generates all rea- soning tokens sequentially, TokenSkip enables LLMs to skip tokens with less semantic importance (e.g., ) and learn shortcuts between critical reasoning tokens, facilitating controllable CoT compression. et al., 2023). Recent advancements, such as Ope- nAI\u2019s o1 (OpenAI et al., 2024) and DeepSeek- R1 (DeepSeek-AI et al., 2025), further demonstrate that scaling up CoT lengths from hundreds to thou- sands of reasoning steps could continuously im- prove LLM reasoning. These breakthroughs have underscored CoT\u2019s potential to advance LLM ca- pabilities, expanding the boundaries of AI-driven problem-solving. Despite its effectiveness, the increased length of CoT sequences introduces substantial computa- tional overhead. Due to the autoregressive nature of LLM decoding, longer CoT outputs lead to pro- portional increases in both inference latency and memory footprints of key-value cache. Addition- ally, the quadratic computational cost of attention layers further exacerbates this burden. These is- sues become particularly pronounced when CoT sequences extend into thousands of reasoning steps, resulting in significant computational costs and pro- longed response times. While prior research has explored methods for selectively skipping reason- ing steps (Ding et al., 2024; Liu et al., 2024), recent findings (Jin et al., 2024; Merrill and Sabharwal, 2024) suggest that such reductions may conflict 1 arXiv:2502.12067v1 [cs.CL] 17 Feb 2025"
+}

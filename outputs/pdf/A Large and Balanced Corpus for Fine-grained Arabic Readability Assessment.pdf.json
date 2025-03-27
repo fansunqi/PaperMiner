@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Readability Assessment"
+  ],
+  "datasets": [
+    "BAREC"
+  ],
+  "methods": [
+    "Automatic Readability Assessment",
+    "Sentiment Analysis",
+    "Machine Learning",
+    "Natural Language Processing"
+  ],
+  "results": [
+    "Accuracy: 68.3%",
+    "Average Distance: 0.55",
+    "Quadratic Weighted Kappa: 76.6%"
+  ],
+  "title": "A Large and Balanced Corpus for Fine-grained Arabic Readability Assessment.pdf",
+  "abstract": "This paper introduces the Balanced Arabic Readability Evaluation Corpus (BAREC),1 a large-scale, fine-grained dataset for Arabic readability assessment. BAREC consists of 68,182 sentences spanning 1+ million words, carefully curated to cover 19 readability levels, from kindergarten to postgraduate comprehen- sion. The corpus balances genre diversity, topi- cal coverage, and target audiences, offering a comprehensive resource for evaluating Arabic text complexity. The corpus was fully manually annotated by a large team of annotators. The av- erage pairwise inter-annotator agreement, mea- sured by Quadratic Weighted Kappa, is 81.3%, reflecting a high level of substantial agreement. Beyond presenting the corpus, we benchmark automatic readability assessment across differ- ent granularity levels, comparing a range of techniques. Our results highlight the challenges and opportunities in Arabic readability model- ing, demonstrating competitive performance across various methods. To support research and education, we will make BAREC openly available, along with detailed annotation guide- lines and benchmark results. 1 Introduction Text readability impacts understanding, retention, reading speed, and engagement (DuBay, 2004). Texts above a student\u2019s readability level can lead to disengagement (Klare, 1963). Nassiri et al. (2023) highlighted that readability and legibility depend on both external features (e.g., production, fonts) and content. Text leveling in classrooms helps match books to students\u2019 reading levels, promoting independent reading and comprehension (Alling- ton et al., 2015). Developing readability models is crucial for improving literacy, language learning, and academic performance. Readability levels have long been a key com- ponent of literacy teaching and learning. One 1 \u0010\u0086PAK. bAriq is Arabic for \u2018very bright and glittering\u2019. of the most widely used systems in English lit- eracy is Fountas and Pinnell (Fountas and Pinnell, 2006), which employs qualitative measures to clas- sify texts into 27 levels (A to Z+), spanning from kindergarten to adult proficiency. Similarly, Taha- Thomure (2017)\u2019s system for Arabic has 19 levels from Arabic letters @ A to \u0010\u0086 Q. These fine-grained levels are designed for pedagogical effectiveness, ensuring young readers experience gradual, mea- surable progress, particularly in early education (K\u20136) (Barber and Klauda, 2020). A key advantage is that they can be easily mapped to coarser levels with fewer categories, which may be more efficient for broader applications in readability research and automated assessments. In this paper we present the Balanced Arabic Readability Evaluation Corpus (BAREC) \u2013 a large- scale fine-grained readability assessment corpus across a broad space of genres and readability lev- els. Inspired by the Taha/Arabi21 readability ref- erence (Taha-Thomure, 2017), which has been in- strumental in tagging over 9,000 children\u2019s books, BAREC seeks to establish a standardized frame- work for evaluating sentence-level2 Arabic text readability across 19 distinct levels, ranging from kindergarten to postgraduate comprehension. Our contributions are: (a) a large-scale curated corpus with 68K+ sentences (1M+ words) span- ning diverse genres; and (b) benchmarking of automatic readability assessment models across multiple granularities, including both fine-grained (19 levels) and collapsed tiered systems (e.g., five- level and three-level scales) to support various re- search and application needs, aligning with previ- ous Arabic readability frameworks (Al Khalil et al., 2018; Al-Khalifa and Al-Ajlan, 2010). 2We segment paragraphs down to syntactic sentences, and use the term sentence even for small standalone text segments such as phrases and single words (e.g. book titles). 1 arXiv:2502.13520v1 [cs.CL] 19 Feb 2025"
+}

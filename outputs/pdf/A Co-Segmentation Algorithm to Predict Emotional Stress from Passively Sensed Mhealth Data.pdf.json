@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "https://github.com/yk748/SPD"
+  ],
+  "tasks": [
+    "Stress detection",
+    "Mental health",
+    "mHealth"
+  ],
+  "datasets": [
+    "ALACRITY Phase I study"
+  ],
+  "methods": [
+    "Change point detection",
+    "Generalized linear models",
+    "ANOVA",
+    "Chow test",
+    "Chi-squared test",
+    "Logistic regression",
+    "Linear discriminant analysis",
+    "Support vector machine",
+    "Random forests",
+    "Gradient boosting"
+  ],
+  "results": [
+    "RF and Boost classifiers outperform other methods",
+    "Algorithm identifies stress periods more accurately than traditional ML methods without segmentation"
+  ],
+  "title": "A Co-Segmentation Algorithm to Predict Emotional Stress from Passively Sensed Mhealth Data.pdf",
+  "abstract": "We develop a data-driven co-segmentation algorithm of passively sensed and self-reported active variables collected through smartphones to identify emotionally stressful states in middle- aged and older patients with mood disorders undergoing therapy, some of whom also have chronic pain. Our method leverages the association between the different types of time series. These data are typically non-stationary, with meaningful associations often occurring only over short time windows. Traditional machine learning (ML) methods, when applied globally on the entire time series, often fail to capture these time-varying local patterns. Our approach first segments the passive sensing variables by detecting their change points, then examines segment-specific associations with the active variable to identify co-segmented periods that exhibit distinct re- lationships between stress and passively sensed measures. We then use these periods to predict future emotional stress states using standard ML methods. By shifting the unit of analysis from individual time points to data-driven segments of time and allowing for different associations in different segments, our algorithm helps detect patterns that only exist within short-time windows. We apply our method to detect periods of stress in patient data collected during ALACRITY Phase I study. Our findings indicate that the data-driven segmentation algorithm identifies stress periods more accurately than traditional ML methods that do not incorporate segmentation. Keywords\u2014 Stress detection, mental health, mHealth, change point detection, machine learning, classi- fication 1 Introduction As we enter the ubiquitous era of mobile health (mHealth) devices, such as wearables and smart- phones, the potential use of passively sensed data from these devices is becoming increasingly relevant in health studies. Passively sensed data refer to information recorded by mHealth device sensors (e.g., accelerometer, GPS, microphone, etc.) without active input from the user (Mendes et al.; 2022; Moura et al.; 2023). In particular, passively sensed data on physical activity, sociability, sleep patterns hold great potential for studying behavioral and mental health. The primary reason is that individualized measures of behavioral patterns can help identify mental states, aiding in diagnosis and treatment \u2020Corresponding author. Email: sab2028@med.cornell.edu 1 arXiv:2502.10558v1 [stat.AP] 14 Feb 2025"
+}

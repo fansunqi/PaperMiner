@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/JetRichardLee/XGNNCert"
+  ],
+  "tasks": [
+    "Explainable Graph Neural Networks",
+    "Graph Perturbation Attacks"
+  ],
+  "datasets": [
+    "SG-Motif",
+    "Benzene",
+    "FC"
+  ],
+  "methods": [
+    "Hybrid Subgraphs Generation",
+    "Majority Voting",
+    "Certified Robustness"
+  ],
+  "results": [
+    "Certified Perturbation Size",
+    "Explanation Accuracy",
+    "Classification Accuracy"
+  ],
+  "title": "Provably Robust Explainable Graph Neural Networks Against Graph Perturbation Attacks.pdf",
+  "abstract": "Explainable Graph Neural Networks (XGNNs) have garnered increasing attention for enhancing the transparency of Graph Neural Networks (GNNs), which are the leading methods for learning from graph-structured data. While existing XGNNs primarily focus on improving explanation quality, their robustness under adversarial attacks remains largely unexplored. Recent studies have shown that even minor perturbations to graph structure can significantly alter the explanation outcomes of XGNNs, posing serious risks in safety-critical applications such as drug discovery. In this paper, we take the first step toward addressing this challenge by introducing XGNNCert, the first provably robust XGNN. XGNNCert offers formal guarantees that the explanation results will remain consistent, even under worst-case graph perturbation attacks, as long as the number of altered edges is within a bounded limit. Importantly, this robustness is achieved without compromising the original GNN\u2019s predictive performance. Evaluation results on multiple graph datasets and GNN explainers show the effectiveness of XGNNCert. Source code is available at https://github.com/JetRichardLee/XGNNCert. 1 INTRODUCTION Explainable Graph Neural Network (XGNN) has emerged recently to foster the trust of using GNNs\u2014 it provides a human-understandable way to interpret the prediction by GNNs. Particularly, given a graph and a predicted node/graph label by a GNN, XGNN aims to uncover the explanatory edges (and the connected nodes) from the raw graph that is crucial for predicting the label (see Figure 1(a) an example). Various XGNN methods (Ying et al., 2019; Luo et al., 2020; Yuan et al., 2021; Zhang et al., 2022; Wang & Shen, 2023; Behnam & Wang, 2024) have been proposed from different perspectives (more details see Section 5) and they have also been widely adopted in applications including disease diagnosis (Pfeifer et al., 2022), drug analysis (Yang et al., 2022; Wang et al., 2023b), fake news spreader detection (Rath et al., 2021), and molecular property prediction Wu et al. (2023). While existing works focus on enhancing the explanation performance, the robustness of XGNNs is largely unexplored. Li et al. (2024) observed that well-known XGNN methods (e.g., GNNEx- plainer (Ying et al., 2019), PGExplainer (Luo et al., 2020)) are vulnerable to graph perturbation attacks \u2014Given a graph, a GNN model, and a GNN explainer, an adversary can slightly perturb a few edges such that the GNN predictions are accurate, but the explanatory edges outputted by the GNN explainer on the perturbed graph is drastically changed. This attack could cause serious issues in the safety/security-critical applications such as drug analysis. For instance, Wang et al. (2023b) designs an XGNN tool Drug-Explorer for drug repurposing (reuse existing drugs for new diseases), where users input a drug graph and the tool outputs the visualized explanation result (i.e., important chemical structure) useful for curing the diseases. If such tool is misled on adversarial purposes (i.e., adversary inputs a carefully designed perturbed graph), it may recommend invalid drugs with harmful side-effects. Therefore, it is crucial to design defenses for GNN explainers against these attacks. Generally, defense strategies can be classified as empirical defense and certified defense. Empirical defenses often can be broken by stronger/adaptive attacks, as verified in many existing works on defending against adversarial examples (Carlini et al., 2019) and adversarial graphs (Zhang et al., 2021a; Yang et al., 2024). We notice two empirical defense methods (Bajaj et al., 2021; Wang et al., 2023c) have been proposed to robustify XGNNs against graph perturbations. Likewise, we found they 1 arXiv:2502.04224v1 [cs.CR] 6 Feb 2025"
+}

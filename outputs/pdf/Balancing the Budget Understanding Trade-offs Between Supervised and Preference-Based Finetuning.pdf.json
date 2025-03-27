@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LLM post-training optimization",
+    "Data budget allocation for finetuning"
+  ],
+  "datasets": [
+    "Reddit TL/DR",
+    "Reddit comparison dataset",
+    "HelpSteer",
+    "HelpSteer2",
+    "Tulu3 Instruction Following",
+    "GSM8k",
+    "Tulu3 Grade School Math"
+  ],
+  "methods": [
+    "Supervised Fine-Tuning (SFT)",
+    "Preference Finetuning (PFT)",
+    "Direct Preference Optimization (DPO)",
+    "Kahneman-Tversky Optimization (KTO)"
+  ],
+  "results": [
+    "SFT demonstrates superior performance in low-data regimes",
+    "Combining SFT and PFT yields optimal performance with increasing portions of preference data",
+    "Cold start problem observed when running PFT directly on the base model",
+    "Allocating minimal SFT data (10% of the budget) improves performance",
+    "Optimal allocation varies under different annotation costs"
+  ],
+  "title": "Balancing the Budget Understanding Trade-offs Between Supervised and Preference-Based Finetuning.pdf",
+  "abstract": "Post-training of Large Language Models often involves a pipeline of Supervised Finetuning (SFT) followed by Preference Finetuning (PFT) using methods like Direct Preference Optimiza- tion. Both stages require annotated data that are very different in structure and costs. We study how to optimally allocate a fixed training data budget between the two stages, through extensive experiments spanning four diverse tasks, multiple model sizes and various data annotation costs. Our findings reveal that just SFT on the base model dominates performance in low-data regimes (< 1, 000 annotated exam- ples). With larger data-budgets, we observe that a combination of SFT and PFT, often with increasing portions allocated towards prefer- ence data yields optimal performance. How- ever, completely eliminating SFT and running PFT directly on the base model yields subop- timal performance, described as the cold start problem on tasks like mathematics. We observe that this is due to the distribution shift arising from using DPO directly on the base model to elicit step-by-step reasoning. This limita- tion can be effectively addressed by allocating even a small portion (< 10%) of the budget to SFT first, resulting in performance improve- ments of 15 \u221220% on analytical benchmarks like GSM8k. These results provide actionable insights for researchers and practitioners opti- mizing model development under budget con- straints, where high-quality data curation often represents a significant portion of the total costs of model development. 1 Introduction The effectiveness of Large Language Models (LLMs) is largely driven by post-training methods after their initial pre-training phase (Achiam et al., 2023; Team et al., 2023; Chung et al., 2024). Two prominent approaches have emerged: Supervised Fine-Tuning (SFT), which uses direct instruction- response pairs, and Reinforcement Learning (RL) Figure 1: An illustration of the choices that introduce the data-allocation trade-off in LLM post-training. Given a fixed limited budget, one has to decide how much to allocate for annotating SFT data and how much for preference annotation (PFT data). based methods like RLHF (Christiano et al., 2017; Wei et al., 2022; Bai et al., 2022b,c). SFT and RLHF are usually applied sequentially after pre- training, as part of the post-training pipeline for building many state-of-the-art models (Dubey et al., 2024; Lambert et al., 2025). However, recent work in alignment methods (Liu et al., 2024b; Ethayarajh et al., 2024a) show that models can be aligned for some tasks without extensive SFT. Recent reason- ing models (Guo et al., 2025) have also improved a pre-trained model\u2019s analytical abilities with RL without SFT, raising questions about the necessity, role and extent of SFT in the post-training pipeline. Hence, the optimal allocation of limited training re- sources between SFT and RL-based approaches in post-training is an open question. Many RL meth- ods involve training a separate reward model to iteratively generate preferences online (Christiano et al., 2017, 2023). However, approaches based on preference finetuning (PFT) (Rafailov et al., 2024; Ethayarajh et al., 2024b) can be used with offline preference-annotated data without training a reward model, while being competitive in perfor- mance. (Lambert et al., 2025; Allal et al., 2025). arXiv:2502.11284v1 [cs.LG] 16 Feb 2025"
+}

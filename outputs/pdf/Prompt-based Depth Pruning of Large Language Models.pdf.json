@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LLM compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Prompt-based depth pruning",
+    "Router training",
+    "Candidate omission set generation"
+  ],
+  "results": [
+    "Accuracy improvement of over 4%p on zero-shot common-sense reasoning tasks",
+    "Over 1.2\u00d7 generation speedup over the dense model"
+  ],
+  "title": "Prompt-based Depth Pruning of Large Language Models.pdf",
+  "abstract": "Depth pruning aims to reduce the inference cost of a large language model without any hardware- specific complications, by simply removing sev- eral less important transformer blocks. However, our empirical findings suggest that the impor- tance of a transformer block may be highly task- dependent\u2014a block that is crucial for a task can be removed without degrading the accuracy on an- other task. Based on this observation, we develop a dynamic depth pruning algorithm, coined PuD- Ding (Prompt-routed Dynamic Depth Pruning), which determines which blocks to omit from the model based on the input prompt. PuDDing oper- ates by training a lightweight router to predict the best omission set among a set of options, where this option set has also been constructed in a data-driven manner. Empirical results on com- monsense reasoning benchmarks demonstrate that PuDDing effectively accelerates the inference lan- guage models, and achieves better on-task perfor- mance than static depth pruning baselines. 1. Introduction Recent advances in large language models (LLMs) have achieved remarkable success in a wide range of natural lan- guage processing tasks (Brown et al., 2020; Touvron et al., 2023; Dubey et al., 2024). However, significant computa- tional requirements of LLMs pose challenges in resource- constrained environments, limiting their practicality. For ex- ample, LLaMA-3.3-70B needs 140GB of RAM to be loaded in bf16, which is often too big for memory-constrained local devices. Thus, reducing the model size is essential to make LLMs feasible for on-device applications. Depth pruning is a versatile model compression technique that is particularly effective for on-device scenarios (Song et al., 2024; Kim et al., 2024). Such methods simply remove several transformer blocks (which we call \u201comission set\u201d) from the pretrained model, based on some measures of block importance computed using a small amount of calibration samples. As everything is identical except for the number of blocks, the pruned model is suitable to be deployed on any hardware without tailored supports on low-precision Figure 1. The general framework of prompt-based depth pruning. Given some query from the user, the goal is to identify which layers from an LLM can be omitted, so that one can make accurate prediction on low-memory consumer devices. (e.g., integer cores) or fine-grained sparsity (e.g., 2:4 spar- sity). Furthermore, as there is no extensive training involved, depth pruning can be easily done in a device-by-device man- ner for deployment on various devices. A key limitation of typical depth pruning algorithms is that their pruning decision is static, i.e., the same omission set is removed regardless of the query given to the model. While this choice allows one to save storage (e.g., flash drives) by discarding the pruned parameters at the local device, it sacrifices the ability to adapt to various downstream tasks. Indeed, our empirical observations show that pruning some transformer blocks in an LLM may incur significant ac- curacy degradation on certain tasks, while being highly unnecessary for other tasks (see Section 3). Can we make dynamic depth pruning decisions to improve the performance on various tasks? This question has not been well studied yet, especially in the context of on-device inference. A recent line of work develops effective dynamic token routing mechanisms to save training/inference com- putation by processing each token with a limited number of transformer blocks (Raposo et al., 2024; Wang et al., 2024). However, such methods require all parameters to be loaded on high-speed memories (e.g., on-GPU memory); thus, the methods are appropriate for large-scale server clusters, not for on-device inference with memory constraints. 1 arXiv:2502.04348v1 [cs.CL] 4 Feb 2025"
+}

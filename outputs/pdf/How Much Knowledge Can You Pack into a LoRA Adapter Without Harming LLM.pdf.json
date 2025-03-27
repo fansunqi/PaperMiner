@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/AIRI-Institute/knowledge-packing"
+  ],
+  "tasks": [
+    "Knowledge Integration into LLMs"
+  ],
+  "datasets": [
+    "DBpedia",
+    "TriviaQA"
+  ],
+  "methods": [
+    "LoRA",
+    "Fine-tuning"
+  ],
+  "results": [
+    "Accuracy degradation on external benchmarks",
+    "Positive shifts with mixed training data"
+  ],
+  "title": "How Much Knowledge Can You Pack into a LoRA Adapter Without Harming LLM.pdf",
+  "abstract": "The performance of Large Language Mod- els (LLMs) on many tasks is greatly limited by the knowledge learned during pre-training and stored in the model\u2019s parameters. Low- rank adaptation (LoRA) is a popular and effi- cient training technique for updating or domain- specific adaptation of LLMs. In this study, we investigate how new facts can be incorporated into the LLM using LoRA without compro- mising the previously learned knowledge. We fine-tuned Llama-3.1-8B-instruct using LoRA with varying amounts of new knowledge. Our experiments have shown that the best results are obtained when the training data contains a mixture of known and new facts. However, this approach is still potentially harmful because the model\u2019s performance on external question- answering benchmarks declines after such fine- tuning. When the training data is biased towards certain entities, the model tends to regress to few overrepresented answers. In addition, we found that the model becomes more confident and refuses to provide an answer in only few cases. These findings highlight the potential pitfalls of LoRA-based LLM updates and underscore the importance of training data composition and tuning parameters to balance new knowledge integration and general model capabilities. 1 Introduction Large Language Models (LLMs) have been widely adopted in many applications due to their ability to produce human-like responses to user queries. This is made possible by their ability to generalize infor- mation and accumulate a large amount of knowledge during the pre-training phase (Chen et al., 2024). These models can solve various problems, such as summarization, reasoning, and question answering, among others (Bhakthavatsalam et al., 2021; Lin et al., 2022; Hendrycks et al., 2021; Moskovskiy et al., 2024). \u2020 These authors contributed equally to this work. 100 101 102 103 Number of unknown (new) facts in training data 0.26 0.28 0.30 0.32 0.34 0.36 TruthfulQA MC1 accuracy Fine-tuned model Baseline model Figure 1: Decrease in quality with increase of new facts learned by the model: results of the fine-tuned Llama- 3.1-8B-Instruct on TruthfulQA (solid line corresponds to the mean score, error margin \u2013 to the min/max scores of three runs with different random seeds). Despite the general capabilities of LLMs, there are still situations that require the incorporation of new knowledge to better meet specific needs. This could be due to changes in general knowledge that occur after the LLM training period, or possibly due to specific knowledge that was intentionally omitted during the training period. To address these issues techniques such as Retrieval-Augmented Genera- tion (RAG) (Lewis et al., 2020; Belikova et al., 2024) or few-shot learning (Brown et al., 2020) can be applied. In general, RAG requires access to an external knowledge base, which may be undesir- able in some contexts. With respect to in-context learning, the resulting generation is strongly depen- dent on the selected few-shot samples (Rubin et al., 2022). In this work, we revisit fine-tuning as one of the most popular approaches for integrating new knowledge into LLMs. Fine-tuning LLMs, which often have hundreds of billions of parameters, is a computationally expen- sive and time-consuming process. To address these challenges, Parameter-Efficient Fine-Tuning (PEFT) techniques have gained popularity (Han et al., 2024), arXiv:2502.14502v1 [cs.CL] 20 Feb 2025"
+}

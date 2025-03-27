@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/nayyer-raza/GWSkyNet-Multi"
+  ],
+  "tasks": [
+    "Gravitational wave event classification"
+  ],
+  "datasets": [
+    "GWTC-2.1",
+    "GWTC-3",
+    "O3",
+    "O4"
+  ],
+  "methods": [
+    "Convolutional neural network",
+    "Ensemble learning"
+  ],
+  "results": [
+    "93% accuracy on O4 events",
+    "81% accuracy on O3 events"
+  ],
+  "title": "GWSkyNet-Multi II an Updated Deep Learning Model for Rapid Classification of Gravitational-Wave Even.pdf",
+  "abstract": "Multi-messenger observations of gravitational waves and electromagnetic emission from compact ob- ject mergers offer unique insights into the structure of neutron stars, the formation of heavy elements, and the expansion rate of the Universe. With the LIGO-Virgo-KAGRA (LVK) gravitational-wave de- tectors currently in their fourth observing run (O4), it is an exciting time for detecting these mergers. However, assessing whether to follow up a candidate gravitational-wave event given limited telescope time and resources is challenging; the candidate can be a false alert due to detector glitches, or may not have any detectable electromagnetic counterpart even if it is real. GWSkyNet-Multi is a deep learning model developed to facilitate follow-up decisions by providing real-time classification of can- didate events, using localization information released in LVK rapid public alerts. Here we introduce GWSkyNet-Multi II, an updated model targeted towards providing more robust and informative pre- dictions during O4 and beyond. Specifically, the model now provides normalized probability scores and associated uncertainties for each of the four corresponding source categories released by the LVK: glitch, binary black hole, neutron star-black hole, and binary neutron star. Informed by explainability studies of the original model, the updated model architecture is also significantly simplified, including replacing input images with intuitive summary values, making it more interpretable. For significant O4 event alerts issued between May 2023 and December 2024, GWSkyNet-Multi II produces a prediction that is consistent with the updated LVK classification for 93% of events. The updated model can be used by the community to help make time-critical follow-up decisions. Keywords: Gravitational wave astronomy (675) \u2014 Gravitational wave sources (677) \u2014 Neural networks (1933) 1. INTRODUCTION The LIGO-Virgo-KAGRA (LVK) gravitational-wave (GW) observatories (Acernese et al. 2015; Aasi et al. 2015; Akutsu et al. 2021) have reported 90 significant events involving the merger of binary black holes (BBH), neutron stars and black holes (NSBH), and binary neu- tron stars (BNS) in published event catalogs across their Corresponding author: Nayyer Raza nayyer.raza@mail.mcgill.ca first three observing runs (Abbott et al. 2019, 2023a, 2024). With the fourth LVK observing run (O4) cur- rently underway, candidate merger events are being de- tected regularly (\u223c200 significant candidates between May 2023 and December 2024), the most promising of which are disseminated by the LVK collaboration in rapid open public alerts1. This enables follow-up tele- scope observations of the candidate merger events to 1 https://gracedb.ligo.org/superevents/public/O4/ arXiv:2502.00297v1 [astro-ph.IM] 1 Feb 2025"
+}

@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "X-ray source analysis",
+    "Light curve reconstruction",
+    "Source classification",
+    "Anomaly detection"
+  ],
+  "datasets": [
+    "Chandra Source Catalog"
+  ],
+  "methods": [
+    "Neural field",
+    "Poisson likelihood",
+    "Autodecoder",
+    "Positional encoding",
+    "Total variation penalty"
+  ],
+  "results": [
+    "High quality light curve reconstruction",
+    "Accurate source property prediction",
+    "Effective source type classification",
+    "Successful anomaly detection"
+  ],
+  "title": "A Poisson Process AutoDecoder for X-ray Sources.pdf",
+  "abstract": "X-ray observing facilities, such as the Chandra X-ray Observatory and the eROSITA, have detected over a million astronomical sources associated with high-energy phenomena. The arrival of photons as a function of time follows a Poisson process and can vary by orders-of-magnitude, presenting obstacles for common tasks such as source classification, physical property derivation, and anomaly detection. Previous work has either failed to directly capture the Poisson nature of the data or only focuses on Poisson rate function reconstruction. In this work, we present Poisson Process AutoDecoder (PPAD). PPAD is a neural field decoder that maps fixed-length latent features to continuous Poisson rate functions across energy band and time via unsupervised learning. PPAD reconstructs the rate function and yields a representation at the same time. We demonstrate the efficacy of PPAD via reconstruction, regression, classification and anomaly detection experiments using the Chandra Source Catalog. 1. INTRODUCTION X-ray astronomy, like many subfields of observational astrophysics, has entered a new era of \u201cBig Data\u201d. Massive volumes of X-ray data are being produced at unprecedented rates thanks to ongoing X-ray surveys and missions, such as the Chandra X-ray Observatory (Evans et al. 2024), the XMM-Newton (Webb et al. 2020) telescope, and the eROSITA survey (Merloni et al. 2024), which together contain approximately 2 million individual X-ray sources in the sky (and several mil- lion individual detections). Automatic data process- ing, analysis and learning has become increasingly more demanded as it enables various downstream applica- tions at massive scale, such as classification of unla- beled sources, rapid identification of high-energy tran- sients and spectral anomalies, as well as scientific evalu- ation of serendipitous detections (Dillmann et al. 2024). However, X-ray sources vary by orders-of-magnitude in terms of X-ray photons detected, as well as in the distri- bution of photon energies and relevant timescales. Many sources are well-within the Poisson limit\u2013with telescopes receiving just a few photons per exposure per source\u2013 thereby posing additional challenges. Machine learning methods have gained popularity recent years as a pow- erful type of approaches for automated X-ray analysis. Although supervised learning methods have found suc- cess in classification tasks (Lo et al. 2014; Farrell et al. 2015; Yang et al. 2022), they require real labels for train- ing, which many X-ray sources lack. Here, we instead focus on unsupervised learning methods due to its label- free property and flexibility for downstream analysis. To give a complete picture, we also include unsuper- vised methods for sources with available multi-wavelegth data, as many ideas are potentially transferrable for X- ray sources. A general unsupervised learning framework consists of (1) collecting a set of features, (2) performing op- tional dimensionality reduction, and finally (3) conduct- ing \u201cdownstream tasks\u201d such as clustering, anomaly de- tection and classification on the low-dimensional fea- ture embeddings. Previous works can be broadly cat- egorized by how they handle feature extraction. One line of work utilizes descriptive variables\u2014often high level summary statistics\u2014that are extracted from an- alysts from individual data observations.Examples of these in X-ray astronomical analysis are spectral hard- ness ratios and variability summaries. These features are then passed to different unsupervised learning algo- rithms for dimension reduction and/or clustering, such as self-organizing maps (Kova\u02c7cevi\u00b4c et al. 2022), Gaus- sian Mixture Models (GMMs; P\u00b4erez-D\u00b4\u0131az et al. 2024), Density-Based Spatial Clustering of Applications with Noise (DBSCAN; Giles & Walkowicz 2019), Hierarchical DBSCAN + t-distributed Stochastic Neighbor Embed- ding (t-SNE; Webb et al. 2020), GMM + t-SNE (Bhard- waj et al. 2023), among others. However, manual feature arXiv:2502.01627v2 [astro-ph.IM] 5 Feb 2025"
+}

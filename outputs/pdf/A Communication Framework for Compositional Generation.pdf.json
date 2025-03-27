@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Compositional Generation"
+  ],
+  "datasets": [
+    "Shapes3D"
+  ],
+  "methods": [
+    "Iterated Learning",
+    "Lewis Reconstruction Game",
+    "Signaling Game",
+    "Gumbel-Softmax"
+  ],
+  "results": [
+    "TopSim: 0.2665",
+    "Perceptual Loss: 0.1900"
+  ],
+  "title": "A Communication Framework for Compositional Generation.pdf",
+  "abstract": "Compositionality and compositional generaliza- tion\u2014the ability to understand novel combina- tions of known concepts\u2014are central character- istics of human language and are hypothesized to be essential for human cognition. In machine learning, the emergence of this property has been studied in a communication game setting, where independent agents (a sender and a receiver) con- verge to a shared encoding policy from a set of states to a space of discrete messages, where the receiver can correctly reconstruct the states ob- served by the sender using only the sender\u2019s mes- sages. The use of communication games in gener- ation tasks is still largely unexplored, with recent methods for compositional generation focusing mainly on the use of supervised guidance (ei- ther through class labels or text). In this work, we take the first steps to fill this gap, and we present a self-supervised generative communica- tion game-based framework for creating composi- tional encodings in learned representations from pre-trained encoder-decoder models. In an Iter- ated Learning (IL) protocol involving a sender and a receiver, we apply alternating pressures for com- pression and diversity of encoded discrete mes- sages, so that the protocol converges to an efficient but unambiguous encoding. Approximate mes- sage entropy regularization is used to favor com- positional encodings. Our framework is based on rigorous justifications and proofs of defining and balancing the concepts of Eficiency, Unam- biguity and Non-Holisticity in encoding. We test our method on the compositional image dataset Shapes3D, demonstrating robust performance in both reconstruction and compositionality metrics, surpassing other tested discrete message frame- works. *Equal contribution 1Department of Computer Science, PUC Chile 2Centro Nacional de Inteligencia Artificial CenIA, Chile 3Department of Mathematics, PUC Chile 4Institute for Mathemati- cal and Computational Engineering, PUC Chile. Correspondence to: Rafael Elberg <rafael.elberg@uc.cl>, Mircea Petrache <mpe- trache@uc.cl>. Figure 1. General concept of the proposed framework. In a communication game a sender S and receiver R jointly aim to encode the observed latent states as symbolic messages. Useful length \u2113gives the minimum length of an initial segment of a S-encoded message, after which its R-reconstruction no longer improves. Above we show an example of images generated from increasing initial segments of a message, and in this case \u2113(x) = 6. Below we illustrate a typical alternation between interaction and imitation phases in IL: arrow tips indicate latent space R- encodings of increasing initial submessages of lenghts 1, . . . , \u2113(x) of S-encoded messages. 1. Introduction Humans have the innate ability to segment and reimagine cognitive and perceptual representations, by modifying their components and characteristics, much like how we compose words into complex sentences to describe and understand the world around us (Arun, 2022). One of the main challenges in modern Machine Learning is to faithfully capture this hability, also known as compo- sitional generalization. In particular, the ability to imagine new combinations of known components translates directly into Compositionality in Generative models. Compositional generation is directly relevant to the promi- nent challenges of learning long-tailed data distributions, in which models tend to mode collapse due to underrepre- 1 arXiv:2501.19182v1 [cs.LG] 31 Jan 2025"
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://anonymous.4open.science/r/ADMN-15C9/"
+  ],
+  "tasks": [
+    "Multimodal localization",
+    "Multimodal action recognition"
+  ],
+  "datasets": [
+    "GDTM",
+    "MM-Fi"
+  ],
+  "methods": [
+    "LayerDrop",
+    "Controller training",
+    "Gumbel-Softmax Sampling",
+    "Straight-through Estimator"
+  ],
+  "results": [
+    "FLOPs reduced by up to 75%",
+    "Latency reduced by up to 60%"
+  ],
+  "title": "ADMN A Layer-Wise Adaptive Multimodal Network for Dynamic Input Noise and Compute Resources.pdf",
+  "abstract": "Multimodal deep learning systems are deployed in dynamic scenarios due to the robustness afforded by multiple sensing modalities. Nevertheless, they struggle with varying compute resource availabil- ity (due to multi-tenancy, device heterogeneity, etc.) and fluctuating quality of inputs (from sensor feed corruption, environmental noise, etc.). Cur- rent multimodal systems employ static resource provisioning and cannot easily adapt when com- pute resources change over time. Additionally, their reliance on processing sensor data with fixed feature extractors is ill-equipped to handle varia- tions in modality quality. Consequently, uninfor- mative modalities, such as those with high noise, needlessly consume resources better allocated to- wards other modalities. We propose ADMN, a layer-wise Adaptive Depth Multimodal Network capable of tackling both challenges - it adjusts the total number of active layers across all modalities to meet compute resource constraints, and con- tinually reallocates layers across input modalities according to their modality quality. Our evalu- ations showcase ADMN can match the accuracy of state-of-the-art networks while reducing up to 75% of their floating-point operations. 1. Introduction Background: Multimodal deep learning systems fusing sensory data from various modalities are the standard for ac- curate, robust sensing (Chen et al., 2022; Eitel et al., 2015). The robustness of multimodality arises from redundant in- formation captured across modalities, which mitigates the effect of sensor failure, noise corruption, and adverse en- vironmental conditions (Lin & Hu, 2023; Liu et al., 2022). Accordingly, these multimodal systems are invaluable in 1University of California, Los Angeles 2US Army DEVCOM Army Research Laboratory 3Amazon 4Mani Srivastava holds con- current appointments as an Amazon Scholar and a Professor at UCLA, but the work in this paper is unrelated to Amazon. Corre- spondence to: Jason Wu <jaysunwu@g.ucla.edu>. Compute budget: 4 Layers Clean Image Noisy Depth Fuse Noisy Image Clean Depth Fuse Compute budget: 2 Layers Figure 1. Overview of ADMN. Variable depth backbones adapt to both changing compute resources and input noise characteristics highly dynamic environments, where a given input modal- ity\u2019s quality-of-information (QoI) can vary drastically across samples. QoI refers to the information content of the sensor data, where noise-corrupted modalities would be classified as low-QoI. Fluctuations in a modality\u2019s QoI can occur over long periods of time (e.g., lighting conditions over the day), or rapidly (e.g., battlefield settings or unstable sensor feeds). Challenges: Although multimodal robustness allows these deep learning systems to deal with highly variable QoI, the first challenge surrounds efficiency of such systems. State-of- the-art multimodal networks employ static provisioning in which inputs proceed through a fixed computational graph established by the architecture (Wang et al., 2024; Yin et al., 2024). Consequently, each modality\u2019s data is fully pro- cessed by the network with no regard to variable input QoI, and valuable compute resources may be wasted on low-QoI modalities. In particular, systems with considerable energy or latency constraints will suffer greatly from this misalloca- tion. We hypothesize that flexibly allocating computational resources among modalities in accordance to each modal- ity\u2019s QoI on a per-sample basis can greatly boost model performance in compute-limited settings. In addition to its inability to adapt to the varying QoI of the input modalities, static provisioning also struggles with the second challenge of dynamic compute resources. The highly dynamic, real-world environments in which multi- modal systems are particularly relevant tend to also suffer from variable computing resource availability over time. For instance, the deployment platforms can be affected by thermal throttling, energy fluctuations, or multi-tenancy. Unfortunately, statically provisioned models are unable to adjust their resource usage to meet dynamic compute re- 1 arXiv:2502.07862v1 [cs.LG] 11 Feb 2025"
+}

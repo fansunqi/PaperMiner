@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stable Roommates Problem (SR) Solvability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Communication Complexity",
+    "Embedding",
+    "Query Lower Bound"
+  ],
+  "results": [
+    "\u2126(n^2) query lower bound for SR solvability",
+    "Irving's algorithm is optimal (up to a logarithmic factor)"
+  ],
+  "title": "A Quadratic Lower Bound for Stable Roommates Solvability.pdf",
+  "abstract": "In their seminal work on the Stable Marriage Problem (SM), Gale and Shapley introduced a generalization of SM referred to as the Stable Roommates Problem (SR). An instance of SR consists of a set of 2n agents, and each agent has preferences in the form of a ranked list of all other agents. The goal is to \ufb01nd a one-to-one matching between the agents that is stable in the sense that no pair of agents have a mutual incentive to deviate from the matching. Unlike the (bipartite) stable marriage problem, in SR, stable matchings need not exist. Irving devised an algorithm that \ufb01nds a stable matching or reports that none exists in O(n2) time. In their in\ufb02uential 1989 text, Gus\ufb01eld and Irving posed the question of whether \u2126(n2) time is required for SR solvability\u2014the task of determining if an SR instance admits a stable matching. In this paper we provide an a\ufb03rmative answer to Gus\ufb01eld and Irving\u2019s question. We show that any (randomized) algorithm that determines SR solvability requires \u2126(n2) adaptive Boolean queries to the agents\u2019 preferences (in expectation). Our argument follows from a reduction from the communication complexity of the set disjointness function. The query lower bound implies quadratic time lower bounds for Turing machines, and memory access lower bounds for random access machines. Thus, we establish that Irving\u2019s algorithm is optimal (up to a logarithmic factor) in a very strong sense. 1 Introduction Since its formalization by Gale and Shapley in 1962 [6], the Stable Marriage Problem (SM) and its variants has become a central topic in economics, computer science, and mathematics. The rich theoretical landscape of stable allocation problems and their diverse applications gained further widespread recognition with the 2012 Nobel Prize in Economics, which was awarded to Roth and Shapley for their contributions to this \ufb01eld. In Gale and Shapley\u2019s original formulation of the problem, an SM instance consists of two disjoint sets of agents, traditionally referred to as men and women. Each agent has preferences in the form of a ranked list of agents of the opposite gender. The goal is to \ufb01nd a marriage (i.e., a one-to-one correspondence) between men and women that is stable in the sense that no man-woman pair have a mutual incentive to deviate from the marriage. The seminal result of Gale and Shapley proves that a stable marriage always exists and describes an e\ufb03cient algorithm for \ufb01nding one. In [6], Gale and Shapley also describe a generalization of SM in which there is no bipartition of the agent set into men and women. In this variant, each agent ranks all other agents\u2014not just those of the opposite gender. Again, the goal is to \ufb01nd a stable matching: a one-to-one correspondence between agents such that no pair has a mutual incentive to deviate from their assigned partners (see Section 2.1 for formal de\ufb01nitions). This generalization of SM is referred to as the Stable Roommates Problem (SR). Since its introduction by Gale and Shapley, SR has been the subject of a large volume of the- oretical work and has found many applications. As the problem\u2019s name suggests, SR naturally 1"
+}

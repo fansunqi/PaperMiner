@@ -1,0 +1,37 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spike Sorting"
+  ],
+  "datasets": [
+    "BBP L6",
+    "Hybrid",
+    "WaveClus",
+    "IBL Neuropixels"
+  ],
+  "methods": [
+    "Contrastive Learning",
+    "Transformer",
+    "GRU",
+    "UMAP",
+    "GMM",
+    "KMeans",
+    "Mean Shift",
+    "Spectral Clustering"
+  ],
+  "results": [
+    "Accuracy: 0.85 \u00b1 0.02 on BBP L6",
+    "Accuracy: 0.62 \u00b1 0.04 on Hybrid static",
+    "Accuracy: 0.56 \u00b1 0.03 on Hybrid drift",
+    "Accuracy: 0.75 \u00b1 0.06 on WaveClus easy",
+    "Accuracy: 0.84 \u00b1 0.04 on WaveClus difficult",
+    "ARI: 0.91 \u00b1 0.02 on Hybrid static",
+    "ARI: 0.89 \u00b1 0.03 on Hybrid drift",
+    "ARI: 0.91 \u00b1 0.02 on WaveClus easy",
+    "ARI: 0.89 \u00b1 0.03 on WaveClus difficult"
+  ],
+  "title": "SimSort A Powerful Framework for Spike Sorting by Large-Scale Electrophysiology Simulation.pdf",
+  "abstract": "Spike sorting is an essential process in neural recording, which identifies and separates electri- cal signals from individual neurons recorded by electrodes in the brain, enabling researchers to study how specific neurons communicate and pro- cess information. Although there exist a number of spike sorting methods which have contributed to significant neuroscientific breakthroughs, many are heuristically designed, making it challenging to verify their correctness due to the difficulty of obtaining ground truth labels from real-world neural recordings. In this work, we explore a data-driven, deep learning-based approach. We begin by creating a large-scale dataset through electrophysiology simulations using biologically realistic computational models. We then present SimSort, a pretraining framework for spike sort- ing. Remarkably, when trained on our simu- lated dataset, SimSort demonstrates strong zero- shot generalization to real-world spike sorting tasks, significantly outperforming existing meth- ods. Our findings underscore the potential of data- driven techniques to enhance the reliability and scalability of spike sorting in experimental neuro- science. 1. Introduction Understanding the complex computations performed by the brain requires insight into the activity of individual neu- rons (Lewicki, 1998; Buzs\u00b4aki, 2004), which is crucial for exploring how information is encoded, processed, and trans- mitted within neural circuits, as well as decoding the brain\u2019s functional dynamics (Quian Quiroga & Panzeri, 2009; Joshi et al., 2023; Sarkar, 2024). Recent advances in neural record- ing technologies have made it possible to capture the activity The work was done during Yimu Zhang\u2019s internship at Mi- crosoft Research Asia. 1Institutes of Brain Science, Fudan Univer- sity, Shanghai, China 2Microsoft Research Asia, Shanghai, China. Correspondence to: Dongqi Han <dongqihan@microsoft.com>, Yu Gu <guyu @fudan.edu.cn>. of neurons across multiple regions of the brain with high spatial and temporal precision (Chung et al., 2017; Stein- metz et al., 2021; Chung et al., 2019; Hong & Lieber, 2019). Notably, extracting meaningful information from recording data relies on a critical step known as spike sorting. Spike sorting is the process of extracting and identifying neural activity from extracellular recordings. It involves two main steps (Fig. 1): spike detection, which extracts spike events from background noise, and spike identification, which assigns these detected spikes to individual neurons (Lefebvre et al., 2016). Spike sorting is indispensable for transforming raw electrical signals into interpretable data that reveal the firing patterns of individual neurons. Ac- curate spike sorting is essential for linking neural activity to behavior, understanding the functional organization of neural circuits (Sibille et al., 2022), and uncovering mecha- nisms underlying various sensory and cognitive processes (Liu et al., 2022). Furthermore, its role extends to trans- lational applications, such as improving neural prosthetics and developing closed-loop BCIs, where spike sorting is critical for achieving precise neural decoding and control (Park et al., 2017; Han et al., 2024). For a long time, spike sorting predominantly relied on heuristic statistics and machine learning approaches (Lewicki, 1998; Quiroga et al., 2004; Rossant et al., 2016; Pachitariu et al., 2016; Chung et al., 2017; Hilgen et al., 2017; Pachitariu et al., 2024). While these methods have promoted neuroscience research, they exhibit several key limitations. First, their sorting results are sensitive to pa- rameter settings and post-processing, which depend on the experimenter\u2019s expertise and must be customized for each dataset. Moreover, these approaches lack a data-driven foundation, limiting their scalability and adaptability across diverse experimental settings, particularly in low signal- to-noise ratio (SNR) and high-variability scenarios, where their performance declines significantly. Recently, deep learning-based methods, such as YASS (Lee et al., 2017) and CEED (Vishnubhotla et al., 2023), have attempted to improve spike sorting by adopting data-driven approaches to enhance detection and clustering accuracy. However, their generalizability and practical use are hindered by the limited training datasets. 1 arXiv:2502.03198v1 [q-bio.NC] 5 Feb 2025"
+}

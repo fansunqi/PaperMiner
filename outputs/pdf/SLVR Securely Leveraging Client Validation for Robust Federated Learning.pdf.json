@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning",
+    "Robustness",
+    "Privacy"
+  ],
+  "datasets": [
+    "MNIST",
+    "Fashion-MNIST",
+    "SVHN",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Secure Multi-Party Computation",
+    "Zero-Knowledge Proofs",
+    "Norm Bound",
+    "Accuracy Check"
+  ],
+  "results": [
+    "Improved robustness against model poisoning attacks",
+    "Adaptability to distribution shifts",
+    "Reasonable computation and communication overhead"
+  ],
+  "title": "SLVR Securely Leveraging Client Validation for Robust Federated Learning.pdf",
+  "abstract": "Federated Learning (FL) enables collaborative model training while keeping client data private. However, exposing individual client updates makes FL vulnerable to reconstruction attacks. Secure aggregation mitigates such privacy risks but prevents the server from verify- ing the validity of each client update, creating a privacy-robustness tradeoff. Recent efforts attempt to address this tradeoff by enforcing checks on client updates using zero-knowledge proofs, but they support limited predicates and often depend on public validation data. We propose SLVR, a general framework that securely leverages clients\u2019 private data through se- cure multi-party computation. By utilizing clients\u2019 data, SLVR not only eliminates the need for public validation data, but also enables a wider range of checks for robustness, including cross-client accuracy validation. It also adapts naturally to distribution shifts in client data as it can securely refresh its validation data up-to-date. Our empirical evaluations show that SLVR improves robustness against model poisoning attacks, particularly outperforming existing methods by up to 50% under adaptive attacks. Additionally, SLVR demonstrates effective adaptability and stable convergence under various distribution shift scenarios. 1 Introduction Federated Learning (FL) is a widely used paradigm for training models across distributed data sources (McMa- han et al., 2017). In FL, clients compute model updates locally on private data and send them to a central server. FL was originally designed with privacy in mind, aiming to share model updates instead of raw data, under the assumption that these updates would not leak sensitive information. However, recent attacks have shown that exposing client updates in the clear makes FL vulnerable to full-scale reconstruction attacks (Zhu et al., 2019; Geiping et al., 2020). In response to these privacy risks, FL has been combined with secure aggregation techniques such as multiparty computation (MPC) (Bonawitz et al., 2017b; Bell et al., 2020b; Fereidooni et al., 2021; So et al., 2022) or zero-knowledge proofs (ZKPs) to ensure that the server only learns the aggregated update and not individual updates (Figure 1a). However, this privacy guarantee comes at the cost of robustness \u2014 since the server no longer sees individual updates, it lacks a mechanism to verify their validity before aggregation. There is active research on Byzantine-robust defense mechanisms to filter out malformed updates in plaintext FL (Sun et al., 2019; Steinhardt et al., 2017; Yin et al., 2018; Blanchard et al., 2017a; Cao et al., 2020), but integrating these checks into secure aggregation is challenging. Since these checks are typically built in plaintext, it is generally the case that the server has access to data, or metadata about the updates that it \u2217Work done while at Visa Research. arXiv:2502.08055v1 [cs.CR] 12 Feb 2025"
+}

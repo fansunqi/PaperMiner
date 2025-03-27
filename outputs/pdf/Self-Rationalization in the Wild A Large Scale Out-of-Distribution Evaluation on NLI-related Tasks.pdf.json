@@ -1,0 +1,45 @@
+{
+  "code_links": [
+    "https://github.com/UKPLab/tacl2025-ood-eval-self-rationalization"
+  ],
+  "tasks": [
+    "Natural Language Inference",
+    "Fact-checking",
+    "Hallucination Detection of Abstractive Summarization"
+  ],
+  "datasets": [
+    "e-SNLI",
+    "e-FEVER",
+    "SICK",
+    "AddOneRTE",
+    "JOCI",
+    "MPE",
+    "DNC",
+    "HANS",
+    "WNLI",
+    "Glue Diagnostics",
+    "ConjNLI",
+    "Snopes Stance",
+    "SciFact",
+    "Climate-FEVER",
+    "VitaminC",
+    "COVID-Fact",
+    "FM2",
+    "FactCC",
+    "QAGs CNN",
+    "QAGs XSUM",
+    "XSUM Hallucination"
+  ],
+  "methods": [
+    "Fine-tuning",
+    "Acceptability-based sample selection",
+    "LoRA"
+  ],
+  "results": [
+    "Acceptability score correlates highest with humans",
+    "Fine-tuning on few samples yields comparable OOD performances",
+    "Higher Acceptability scores are associated with better label prediction performances"
+  ],
+  "title": "Self-Rationalization in the Wild A Large Scale Out-of-Distribution Evaluation on NLI-related Tasks.pdf",
+  "abstract": "Free-text explanations are expressive and easy to understand, but many datasets lack annotated explanation data, making it chal- lenging to train models for explainable pre- dictions. To address this, we investigate how to use existing explanation datasets for self- rationalization and evaluate models\u2019 out-of- distribution (OOD) performance. We fine- tune T5-Large and OLMo-7B models and assess the impact of fine-tuning data qual- ity, the number of fine-tuning samples, and few-shot selection methods. The models are evaluated on 19 diverse OOD datasets across three tasks: natural language infer- ence (NLI), fact-checking, and hallucination detection in abstractive summarization. For the generated explanation evaluation, we con- duct a human study on 13 selected models and study its correlation with the Accept- ability score (T5-11B) and three other LLM- based reference-free metrics. Human evalua- tion shows that the Acceptability score cor- relates most strongly with human judgments, demonstrating its effectiveness in evaluat- ing free-text explanations. Our findings re- veal: 1) few annotated examples effectively adapt models for OOD explanation genera- tion; 2) compared to sample selection strate- gies, fine-tuning data source has a larger im- pact on OOD performance; and 3) models with higher label prediction accuracy tend to produce better explanations, as reflected by higher Acceptability scores.1 1 Introduction Generating textual explanations has been a major focus in machine learning and NLP (Wei et al., 2022; Kunz and Kuhlmann, 2024; Calderon and Re- ichart, 2024), as the explanations are expressive and \u2020Most of work is done during the research stay at UKP. 1Code available at: https: //github.com/UKPLab/ tacl2025-ood-eval-self-rationalization do not require readers to have model-level knowl- edge to understand. One popular line of work is self-rationalization (Wiegreffe et al., 2021; Maraso- vic et al., 2022), in which a model jointly gener- ates the task label and a free-text explanation for the predicted label. Compared with highlighting words and phrases (DeYoung et al., 2020), free- text explanations can express unstated knowledge and common-sense in easily understandable forms. However, datasets containing annotated free-text explanations are rare due to expensive annotations. A few datasets for free-text explanation genera- tion exist (Camburu et al., 2018; Wang et al., 2019b; Sap et al., 2020; Aggarwal et al., 2021; Chen et al., 2022), with e-SNLI (Camburu et al., 2018) being one of the seminal datasets in the NLI area. Based on SNLI (Bowman et al., 2015), e-SNLI focuses on reasoning over fine-grained nuances of common- sense knowledge. However, datasets containing longer or more domain-specific text, such as fact- checking on real-world claims, lack annotated ex- planations (Hanselowski et al., 2019; Saakyan et al., 2021). This poses severe challenges for (i) train- ing and (ii) evaluating self-rationalizing models on these tasks. No large scale analysis exists to un- derstand how well self-rationalization models can transfer from existing data to unknown datasets. We fill the gap by learning self-rationalization from established sources with annotated expla- nations and evaluating its generalization perfor- mance on 19 out-of-distribution (OOD) datasets over three related tasks (see evaluation setup in Fig- ure 1): NLI, fact-checking (FC) and hallucination detection of abstractive summarization (HDAS). NLI focuses on textual entailment within a con- trolled context, FC extends to real-world claims with retrieved evidence, and HDAS centers around machine-generated text. Our OOD datasets vary in domains (e.g., news, Wikipedia, social media, science), and textual structures (e.g., synthetic template-based, multiple premises, sentence com- arXiv:2502.04797v1 [cs.CL] 7 Feb 2025"
+}
