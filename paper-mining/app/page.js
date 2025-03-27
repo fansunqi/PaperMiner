@@ -245,7 +245,7 @@ export default function Home() {
                   </div>
 
                   {/* 详情按钮 */}
-                  <a href={`/paper/${paper.paper_id}`} className="mt-6 block text-center px-6 py-3 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
+                  <a href={`/paper/${paper.title}`} className="mt-6 block text-center px-6 py-3 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
                     📖 查看详情 →
                   </a>
                 </div>
@@ -276,6 +276,28 @@ export default function Home() {
           >
             下一页
           </button>
+
+          {/* 输入框跳转 */}
+          <div className="flex items-center space-x-2">
+            <span className="text-gray-700">跳转到:</span>
+            <input
+              type="number"
+              min="1"
+              max={Math.ceil(total / pageSize)}
+              placeholder="页码"
+              className="w-16 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  const inputPage = parseInt(e.target.value, 10);
+                  if (!isNaN(inputPage) && inputPage >= 1 && inputPage <= Math.ceil(total / pageSize)) {
+                    handlePageChange(inputPage);
+                  } else {
+                    alert("请输入有效的页码！");
+                  }
+                }
+              }}
+            />
+          </div>
         </div>
       </div>
     </MathJaxContext>

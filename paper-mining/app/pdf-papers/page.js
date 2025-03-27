@@ -61,14 +61,14 @@ export default function Home() {
   };
 
   // 切换摘要的展开/收起状态
-  const toggleAbstract = (paperId) => {
+  const toggleAbstract = (paperTitle) => {
     setExpandedAbstracts((prevState) => {
-      if (prevState.includes(paperId)) {
+      if (prevState.includes(paperTitle)) {
         // 如果摘要已展开，则收起它
-        return prevState.filter((id) => id !== paperId);
+        return prevState.filter((title) => title !== paperTitle);
       } else {
         // 如果摘要未展开，则展开它
-        return [...prevState, paperId];
+        return [...prevState, paperTitle];
       }
     });
   };
@@ -182,11 +182,12 @@ export default function Home() {
               const datasets = Array.isArray(paper.datasets) ? paper.datasets : ["无数据集"];
               const methods = Array.isArray(paper.methods) ? paper.methods : ["无方法"];
               const results = Array.isArray(paper.results) ? paper.results : ["无实验结果"];
+              const paperTitle = paper.title?.slice(0, -4) ?? "未知标题"; // 去掉末尾的 ".pdf"
 
               return (
-                <div key={paper.title ?? Math.random()} className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-8 border border-gray-200">
+                <div key={paperTitle} className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-8 border border-gray-200">
                   {/* 论文标题 */}
-                  <h2 className="text-3xl font-semibold text-gray-900 mb-6">{paper.title ?? "未知标题"}</h2>
+                  <h2 className="text-3xl font-semibold text-gray-900 mb-6">{paperTitle}</h2>
 
                   {/* 研究信息 */}
                   <div className="space-y-4">
@@ -230,17 +231,17 @@ export default function Home() {
                       <span className="mr-2">📜</span> 摘要:
                     </span>
                     <p className="text-gray-600 mt-2 leading-relaxed">
-                      {renderMath(expandedAbstracts.includes(paper.title) 
+                      {renderMath(expandedAbstracts.includes(paperTitle) 
                         ? paper.abstract || "暂无摘要"
                         : (paper.abstract?.substring(0, 150) || "暂无摘要") + "..."
                       )}
                     </p>
                     {/* 摘要展开按钮 */}
                     <button
-                      onClick={() => toggleAbstract(paper.title)}
+                      onClick={() => toggleAbstract(paperTitle)}
                       className="text-blue-500 hover:underline mt-2"
                     >
-                      {expandedAbstracts.includes(paper.title) ? "收起摘要" : "展开摘要"}
+                      {expandedAbstracts.includes(paperTitle) ? "收起摘要" : "展开摘要"}
                     </button>
                   </div>
 
@@ -276,6 +277,28 @@ export default function Home() {
           >
             下一页
           </button>
+
+          {/* 输入框跳转 */}
+          <div className="flex items-center space-x-2">
+            <span className="text-gray-700">跳转到:</span>
+            <input
+              type="number"
+              min="1"
+              max={Math.ceil(total / pageSize)}
+              placeholder="页码"
+              className="w-16 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  const inputPage = parseInt(e.target.value, 10);
+                  if (!isNaN(inputPage) && inputPage >= 1 && inputPage <= Math.ceil(total / pageSize)) {
+                    handlePageChange(inputPage);
+                  } else {
+                    alert("请输入有效的页码！");
+                  }
+                }
+              }}
+            />
+          </div>
         </div>
       </div>
     </MathJaxContext>
