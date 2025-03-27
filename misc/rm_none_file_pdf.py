@@ -29,7 +29,5 @@ def clean_empty_files(directory):
     print(f"Files deleted: {deleted_files_count}")
     print(f"Remaining files: {remaining_files_count}")
 
-# 使用示例
-# directory = '/home/fsq/PaperMiner/outputs/paper_extractions'
-directory = '/Users/sunqifan/Documents/codes/PaperMiner/outputs/pdf_old/'
+directory = 'outputs/pdf_old/'
 clean_empty_files(directory)
