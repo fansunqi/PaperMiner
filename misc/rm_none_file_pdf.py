@@ -31,5 +31,5 @@ def clean_empty_files(directory):
 
 # 使用示例
 # directory = '/home/fsq/PaperMiner/outputs/paper_extractions'
-directory = '/home/fsq/PaperMiner/outputs/pdf_old'
+directory = '/Users/sunqifan/Documents/codes/PaperMiner/outputs/pdf_old/'
 clean_empty_files(directory)

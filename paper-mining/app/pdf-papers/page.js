@@ -184,7 +184,7 @@ export default function Home() {
               const results = Array.isArray(paper.results) ? paper.results : ["无实验结果"];
 
               return (
-                <div key={paper.paper_id ?? Math.random()} className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-8 border border-gray-200">
+                <div key={paper.title ?? Math.random()} className="bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-8 border border-gray-200">
                   {/* 论文标题 */}
                   <h2 className="text-3xl font-semibold text-gray-900 mb-6">{paper.title ?? "未知标题"}</h2>
 
@@ -230,22 +230,22 @@ export default function Home() {
                       <span className="mr-2">📜</span> 摘要:
                     </span>
                     <p className="text-gray-600 mt-2 leading-relaxed">
-                      {renderMath(expandedAbstracts.includes(paper.paper_id) 
+                      {renderMath(expandedAbstracts.includes(paper.title) 
                         ? paper.abstract || "暂无摘要"
                         : (paper.abstract?.substring(0, 150) || "暂无摘要") + "..."
                       )}
                     </p>
                     {/* 摘要展开按钮 */}
                     <button
-                      onClick={() => toggleAbstract(paper.paper_id)}
+                      onClick={() => toggleAbstract(paper.title)}
                       className="text-blue-500 hover:underline mt-2"
                     >
-                      {expandedAbstracts.includes(paper.paper_id) ? "收起摘要" : "展开摘要"}
+                      {expandedAbstracts.includes(paper.title) ? "收起摘要" : "展开摘要"}
                     </button>
                   </div>
 
                   {/* 详情按钮 */}
-                  <a href={`/paper/${paper.paper_id}`} className="mt-6 block text-center px-6 py-3 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
+                  <a href={`/paper/${paper.title}`} className="mt-6 block text-center px-6 py-3 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition duration-200">
                     📖 查看详情 →
                   </a>
                 </div>
