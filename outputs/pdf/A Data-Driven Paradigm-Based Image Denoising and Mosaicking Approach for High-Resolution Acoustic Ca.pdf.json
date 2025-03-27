@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Acoustic camera image denoising",
+    "Acoustic camera image mosaicking"
+  ],
+  "datasets": [
+    "Sound Metrics"
+  ],
+  "methods": [
+    "Self-supervised training",
+    "Feature-guided block",
+    "Local feature matching",
+    "Mosaicking"
+  ],
+  "results": [
+    "Effective noise reduction",
+    "Robust mosaicking",
+    "Improved feature preservation"
+  ],
+  "title": "A Data-Driven Paradigm-Based Image Denoising and Mosaicking Approach for High-Resolution Acoustic Ca.pdf",
+  "abstract": "\u2014In this work, an approach based on a data-driven paradigm to denoise and mosaic acoustic camera images is proposed. Acoustic cameras, also known as 2D forward-looking sonar, could collect high-resolution acoustic images in dark and turbid water. However, due to the unique sensor imaging mechanism, main vision-based processing methods, like image denoising and mosaicking are still in the early stages. Due to the complex noise interference in acoustic images and the narrow field of view of acoustic cameras, it is difficult to restore the entire detection scene even if enough acoustic images are collected. Relevant research work addressing these issues focuses on the design of handcrafted operators for acoustic image processing based on prior knowledge and sensor models. However, such methods lack robustness due to noise interference and insufficient feature details on acoustic images. This study proposes an acoustic image denoising and mosaicking method based on a data-driven paradigm and conducts experimental testing using collected acoustic camera images. The results demonstrate the effectiveness of the proposal. Keywords\u2014Acoustic camera, forward-looking sonar, image denoising, mosaicking, data-driven I. INTRODUCTION In recent years, to meet the demands of human sustainable development, activities such as coastal infrastructure construction, ecological investigation, and energy exploration have gradually extended to deepwater. Deepwater areas are usually characterized by low-visibility conditions, including darkness and turbidity. In low-visibility environments, traditional optical cameras cannot work well due to insufficient illumination and medium interference. To solve the perception challenge in deepwater, high-resolution acoustic camera sensors 1) such as dual-frequency identification sonar (DIDSON) and adaptive resolution imaging sonar (ARIS) have become popular visual devices. The acoustic camera is an active forward-looking sonar (FLS) that can emit multiple 3D fan-shaped sound waves and receives reflected signals when they collide with objects in the forward direction, thereby generating high-resolution acoustic images 1). Fig. 1 Marine application demo of acoustic cameras. Nevertheless, given the unique acoustic imaging mechanism and sensor model, acoustic cameras face two major constraints, namely noise interference and narrow field of view. Compared with improving the sensor hardware system, these issues could be solved quickly by applying basic acoustic image processing algorithms such as image denoising and mosaicking. Although these algorithms have made rapid progress in optical sensing, their application to acoustic images shows a significant lag. Taking image denoising as an example, this step is a key preprocessing step for most image-based vision applications. However, it still poses challenges when applied to acoustic images. In past research, processing of acoustic images has focused on designing handcrafted operators using prior knowledge and sensor models 2), 3). However, these methods lack robustness and often fail due to noise and scene changes. Furthermore, due to the complex characteristics of acoustic images, designing handcrafted operators often requires acquiring prior knowledge, presenting a challenge for newcomers. With the continuous development of computer vision technology, there is now an opportunity to introduce deep learning approaches based on data-driven paradigms to process acoustic images, eliminating the need to design complex handcrafted operators."
+}

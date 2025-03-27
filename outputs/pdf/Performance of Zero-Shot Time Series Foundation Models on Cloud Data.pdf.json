@@ -1,0 +1,17 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Time series forecasting"
+  ],
+  "datasets": [
+    "Huawei Cloud function requests"
+  ],
+  "methods": [
+    "Time series foundation models"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Performance of Zero-Shot Time Series Foundation Models on Cloud Data.pdf",
+  "abstract": "Time series foundation models (FMs) have emerged as a popular paradigm for zero-shot multi-domain forecasting. FMs are trained on numerous diverse datasets and claim to be effective forecasters across multiple different time series domains, including cloud data. In this work we investigate this claim, exploring the effec- tiveness of FMs on cloud data. We demonstrate that many well-known FMs fail to generate meaningful or accurate zero-shot forecasts in this setting. We sup- port this claim empirically, showing that FMs are outperformed consistently by simple linear baselines. We also illustrate a number of interesting pathologies, in- cluding instances where FMs suddenly output seemingly erratic, random-looking forecasts. Our results suggest a widespread failure of FMs to model cloud data. Prediction at t-1 Prediction at t+1 Prediction at t Context Ground Truth Moirai Forecasts Figure 1: Demonstration of the pathological behaviour of zero-shot FMs on cloud data: The figure shows three consecutive forecasts for the Moirai FM on the Huawei Cloud D2 dataset. The forecasts shown are those produced when starting forecasting at the t-1, t, and t+1 time steps, where t = 7130. The blue curves show the context Moirai is given to construct the forecast. The plot shows that with only a small change in the context, Moirai\u2019s forecasts can change from predicting reasonably (the t-1 and t+1th time steps) to giving inaccurate and chaotic forecasts (the tth time step). 1 INTRODUCTION Recently, there has been a growing trend in developing foundation models for time series forecasting (Liang et al., 2024; Ye et al., 2024). Foundation models (FMs) are neural networks pretrained on large datasets from diverse time series domains. One of the main motivations of FMs is that they claim to generalise zero-shot (i.e., without training data) to a wide range of time series domains, including cloud data (Woo et al., 2024; Li et al., 2024). Time series forecasting is important in cloud settings (Joosen et al., 2023; Diao et al., 2024). For example, forecasting allows cloud providers to scale up resources pre-emptively and reduce costs associated with over-provisioning (Joosen et al., 2024). Furthermore, zero-shot forecasting is needed in cloud settings since it is often the case for \u2217Equal contribution \u2020Work done while an intern at Huawei 1 arXiv:2502.12944v1 [cs.LG] 18 Feb 2025"
+}

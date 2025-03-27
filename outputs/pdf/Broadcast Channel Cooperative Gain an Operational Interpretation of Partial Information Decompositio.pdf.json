@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Information Decomposition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Partial Information Decomposition",
+    "Broadcast Channel Capacity",
+    "Sato's Outer Bound"
+  ],
+  "results": [
+    "Synergistic information is connected to cooperative gain",
+    "Lower bound on the difference between full cooperation and no cooperation"
+  ],
+  "title": "Broadcast Channel Cooperative Gain an Operational Interpretation of Partial Information Decompositio.pdf",
+  "abstract": "Partial information decomposition has recently found applications in biological signal processing and machine learning. Despite its impacts, the decomposition was introduced through an informal and heuris- tic route, and its exact operational meaning is unclear. In this work, we fill this gap by connecting partial information decomposition to the capacity of the broadcast channel, which has been well-studied in the information theory literature. We show that the synergistic information in the decomposition can be rigorously interpreted as the cooperative gain, or a lower bound of this gain, on the corresponding broad- cast channel. This interpretation can help practitioners to better explain and expand the applications of the partial information decomposition technique. 1 Introduction Shannon\u2019s mutual information has been widely accepted as a measure to gauge the amount of information that can be revealed by one random variable regarding another random variable. Partial information de- composition (PID) is an approach to refine and further decompose this fundamental quantity to explain the effect of interactions among several random variables. Recently, this approach has found applications in biological information processing [1\u20137] and machine learning [8\u201310]. There exist different approaches to decompose the total information [11\u201325], but the general idea in the case with two observables is as follows: the total information revealed by X and Y regarding a third quantity T is the mutual information between (X, Y ) and T, i.e., I(X, Y ; T), and it needs to be decomposed into four non-negative parts: \u2022 The common (or redundancy) information in X and Y , regarding T; \u2022 The unique information in X, but not in Y , regarding T; \u2022 The unique information in Y , but not in X, regarding T; \u2022 The synergistic information (or complementary) information in X and Y , regarding T, which only becomes useful when combined, but useless otherwise. This decomposition helps to explain the effect of combining X and Y , or separately using X or Y , to infer T. For example, in multi-modality machine learning, X can represent one modality such as the vision image of the event, Y another modality such as the soundtrack of the event, and T is the event\u2019s label. In this case, we can use the amounts of synergistic and unique information to determine which multi-modality models will be the most effective in capturing the interactions and therefore most likely to be accurate. In neural signal processing, the quantities can be used in a similar manner to interpret different biological signals. One of the most influential notions of partial information decomposition was proposed by Bertschinger et al. [13], sometimes referred to as the BROJA PID (the initials of the authors)1. The desirable properties of this definition were thoroughly studied in [13], but in terms of the operation meaning, only a qualitative justification in a decision-making setting was given. The intuition and motivation were that these quantities 1We will simply refer to it as partial information decomposition as it is the only decomposition we consider. 1 arXiv:2502.10878v1 [cs.IT] 15 Feb 2025"
+}

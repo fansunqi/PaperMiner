@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parameter Optimization",
+    "Training Stability",
+    "Loss Convergence"
+  ],
+  "datasets": [
+    "Iris",
+    "Wine",
+    "MNIST",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "EAGLE Update Rule",
+    "Adaptive Switching Mechanism",
+    "Adam Update Rule"
+  ],
+  "results": [
+    "Rapid loss convergence in early epochs",
+    "Improved training stability",
+    "Lower training loss compared to Adam"
+  ],
+  "title": "Eagle Early Approximated Gradient Based Learning Rate Estimator.pdf",
+  "abstract": "We propose EAGLE update rule, a novel optimization method that accelerates loss convergence during the early stages of training by leveraging both current and previous step parameter and gradient values. The update algorithm estimates optimal parameters by computing the changes in parameters and gradients between consecutive training steps and leveraging the local curvature of the loss landscape derived from these changes. However, this update rule has potential instability, and to address that, we introduce an adaptive switching mechanism that dynamically selects between Adam and EAGLE update rules to enhance training stability. Experiments on standard benchmark datasets demonstrate that EAGLE optimizer, which combines this novel update rule with the switching mechanism achieves rapid training loss convergence with fewer epochs, compared to conventional optimization methods. 1 INTRODUCTION 1.1 BACKGROUND Deep learning has been widely adopted in various fields, including computer vision and natural language processing. In computer vision, the evolution of Convolutional Neural Network (CNN) [1] has achieved near-human recognition accuracy in tasks such as image classification and object detection. In natural language processing, while early approaches utilized Recurrent Neural Network (RNN) [2] and Long Short-Term Memory (LSTM) [3] networks\u2014which addressed the long-term dependency problem\u2014, Transformers [4] have become the dominant architecture in recent years. Transformers enable parallel computation and serve as the foundation for large language models such as Bidirectional Encoder Representations from Transformers (BERT) [5] and the GPT series [6], which demonstrate human-comparable capabilities in text generation and language understanding. The performance of these deep learning models is quantitatively evaluated using task- specific metrics. superior models demonstrate high performance on these metrics, specifically showing minimal loss (error) between predicted and true values. Conversely, models with insufficient performance exhibit low prediction reliability, making practical applications challenging. Thus, obtaining high-performance models remains a crucial challenge in deep learning. Essential to achieving high-performance models is the design of appropriate training processes. Model training is executed as an iterative process consisting of the following steps:"
+}

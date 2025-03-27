@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding out which terminal will be reached first by a token in a directed graph based on certain switching rules"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Recursive framework based on G-Arrival",
+    "Balanced separators",
+    "\u21131-contracting functions",
+    "Fixed point theorems"
+  ],
+  "results": [
+    "2O(k log2 n) algorithm for graphs with treewidth k",
+    "Reduction to finding an approximate fixed point of an \u21131-contracting function"
+  ],
+  "title": "ARRIVAL Recursive Framework \u2113_1-Contraction.pdf",
+  "abstract": "Arrival is the problem of deciding which out of two possible destinations will be reached first by a token that moves deterministically along the edges of a directed graph, according to so-called switching rules. It is known to lie in NP \u2229CoNP, but not known to lie in P. The state-of-the-art algorithm due to G\u00e4rtner et al. (ICALP \u201821) runs in time 2O(\u221an log n) on an n-vertex graph. We prove that Arrival can be solved in time 2O(k log2 n) on n-vertex graphs of treewidth k. Our algorithm is derived by adapting a simple recursive algorithm for a generalization of Arrival called G-Arrival. This simple recursive algorithm acts as a framework from which we can also rederive the subexponential upper bound of G\u00e4rtner et al. Our second result is a reduction from G-Arrival to the problem of finding an approximate fixed point of an \u21131-contracting function f : [0, 1]n \u2192[0, 1]n. Finding such fixed points is a well-studied problem in the case of the \u21132-metric and the \u2113\u221e-metric, but little is known about the \u21131-case. Both of our results highlight parallels between Arrival and the Simple Stochastic Games (SSG) problem. Concretely, Chatterjee et al. (SODA \u201823) gave an algorithm for SSG parameterized by treewidth that achieves a similar bound as we do for Arrival, and SSG is known to reduce to \u2113\u221e-contraction. 2012 ACM Subject Classification Theory of computation \u2192Parameterized complexity and exact algorithms; Theory of computation \u2192Problems, reductions and completeness Keywords and phrases ARRIVAL, G-ARRIVAL, Deterministic Random Walk, Rotor-Routing, \u21131-Contraction, Banach Fixed Point. Acknowledgements I want to thank Bernd G\u00e4rtner and Simon Weber for interesting discussions and valuable feedback. 1 Introduction Arrival is a computational problem first introduced by Dohrau et al. [10]. It can be described as a deterministic process (or zero-player game) on a directed graph with a designated origin o and two designated destinations d and d. Every vertex in Arrival has out-degree two, and exactly one outgoing edge at every vertex is marked (we also call it the even edge). We additionally assume that both destinations are reachable from every vertex in the graph. A token is placed on o and moved along the edges of the graph according to the following rule: At every vertex, the token continues along the outgoing edge that was used least so far. In case of a tie, the token uses the even edge. This effectively means that the token will alternate between the two outgoing edges at every vertex, starting with the even edge. The task is to decide which of the two destinations d or d will be visited first by the token. Dohrau et al. [10] proved that Arrival is contained in NP \u2229CoNP. Naturally, they then asked whether it is also in P. This open problem has received some attention in recent years and the best algorithm to date, due to G\u00e4rtner et al. [15], runs in time 2O(\u221an log n) on a graph with n vertices. We present two new results for Arrival: Our first result is an algorithm for Arrival that runs in time 2O(k log2 n) on graphs with n vertices and treewidth k. Note that this bound is quasi-polynomial for graphs with bounded treewidth. Our algorithm is obtained by adapting a simple recursive algorithm for G-Arrival, a generalization of Arrival that allows arbitrarily many origins, destinations, and tokens: The recursive algorithm solves an instance with \u2113destinations and origins by making recursive calls on instances with \u2113+ 1 arXiv:2502.06477v1 [cs.DS] 10 Feb 2025"
+}
