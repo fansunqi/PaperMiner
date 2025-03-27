@@ -27,22 +27,21 @@ GLM_API_KEY = os.getenv("GLM_API_KEY")
 
 # 加载 JSON 数据
 OUTPUT_META_DATA_PATH = "../outputs/meta"
+OUTPUT_PDF_PATH = "../outputs/pdf_old"
 
-def load_meta_data(directory):
-    meta_data_list = []
+def load_data(directory):
+    data_list = []
     for root, _, files in os.walk(directory):
         for file in files:
             if file.endswith('.json'):
                 file_path = os.path.join(root, file)
                 with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                    meta_data_list.append(data)
-    return meta_data_list
+                    data_list.append(data)
+    return data_list
 
-meta_data = load_meta_data(OUTPUT_META_DATA_PATH)
-
-with open("../outputs/pdf/all_results.json", "r", encoding="utf-8") as f:
-    pdf_data = json.load(f)
+meta_data = load_data(OUTPUT_META_DATA_PATH)
+pdf_data = load_data(OUTPUT_PDF_PATH)
 
 @app.get("/")
 def read_root():
