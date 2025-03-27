@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mean-Field Variational Inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quasirandom sequence of quadratures",
+    "Sparsifying methodology",
+    "Stochastic blocked mean-field quadratures"
+  ],
+  "results": [
+    "96.9% test accuracy",
+    "Training over 98.9% of parameters to zero in only 10 epochs"
+  ],
+  "paper_id": "63cdfab690e50fcafd106e5a",
+  "title": "An Efficient Quadrature Sequence and Sparsifying Methodology for\n  Mean-Field Variational Inference",
+  "abstract": "  This work proposes a quasirandom sequence of quadratures for high-dimensional mean-field variational inference and a related sparsifying methodology. Each iterate of the sequence contains two evaluations points that combine to correctly integrate all univariate quadratic functions, as well as univariate cubics if the mean-field factors are symmetric. More importantly, averaging results over short subsequences achieves periodic exactness on a much larger space of multivariate polynomials of quadratic total degree. This framework is devised by first considering stochastic blocked mean-field quadratures, which may be useful in other contexts. By replacing pseudorandom sequences with quasirandom sequences, over half of all multivariate quadratic basis functions integrate exactly with only 4 function evaluations, and the exactness dimension increases for longer subsequences. Analysis shows how these efficient integrals characterize the dominant log-posterior contributions to mean-field variational approximations, including diagonal Hessian approximations, to support a robust sparsifying methodology in deep learning algorithms. A numerical demonstration of this approach on a simple Convolutional Neural Network for MNIST retains high test accuracy, 96.9%, while training over 98.9% of parameters to zero in only 10 epochs, bearing potential to reduce both storage and energy requirements for deep learning models. "
+}

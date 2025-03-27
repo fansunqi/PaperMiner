@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text synopsis to Video Storyboard"
+  ],
+  "datasets": [
+    "MovieNet"
+  ],
+  "methods": [
+    "encoder-decoder",
+    "vision-and-language model",
+    "pre-trained"
+  ],
+  "results": [
+    "significantly outperforms other models",
+    "large gap compared to human performance"
+  ],
+  "paper_id": "63b39cbe90e50fcafdd1e43d",
+  "title": "Translating Text Synopses to Video Storyboards",
+  "abstract": "  A storyboard is a roadmap for video creation which consists of shot-by-shot images to visualize key plots in a text synopsis. Creating video storyboards however remains challenging which not only requires association between high-level texts and images, but also demands for long-term reasoning to make transitions smooth across shots. In this paper, we propose a new task called Text synopsis to Video Storyboard (TeViS) which aims to retrieve an ordered sequence of images to visualize the text synopsis. We construct a MovieNet-TeViS benchmark based on the public MovieNet dataset. It contains 10K text synopses each paired with keyframes that are manually selected from corresponding movies by considering both relevance and cinematic coherence. We also present an encoder-decoder baseline for the task. The model uses a pretrained vision-and-language model to improve high-level text-image matching. To improve coherence in long-term shots, we further propose to pre-train the decoder on large-scale movie frames without text. Experimental results demonstrate that our proposed model significantly outperforms other models to create text-relevant and coherent storyboards. Nevertheless, there is still a large gap compared to human performance suggesting room for promising future work. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating Conditional Average Treatment Effect (CATE) from Images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep probabilistic modeling framework",
+    "Latent clusters of images",
+    "Sensitivity factor"
+  ],
+  "results": [
+    "Posterior predictive distribution over effects for the rest of the country where no experimental data was collected"
+  ],
+  "paper_id": "62a94e065aee126c0f9c00b6",
+  "title": "Image-based Treatment Effect Heterogeneity",
+  "abstract": "  Randomized controlled trials (RCTs) are considered the gold standard for estimating the average treatment effect (ATE) of interventions. One use of RCTs is to study the causes of global poverty -- a subject explicitly cited in the 2019 Nobel Memorial Prize awarded to Duflo, Banerjee, and Kremer \"for their experimental approach to alleviating global poverty.\" Because the ATE is a population summary, anti-poverty experiments often seek to unpack the effect variation around the ATE by conditioning (CATE) on tabular variables such as age and ethnicity that were measured during the RCT data collection. Although such variables are key to unpacking CATE, using only such variables may fail to capture historical, geographical, or neighborhood-specific contributors to effect variation, as tabular RCT data are often only observed near the time of the experiment. In global poverty research, when the location of the experiment units is approximately known, satellite imagery can provide a window into such factors important for understanding heterogeneity. However, there is no method that specifically enables applied researchers to analyze CATE from images. In this paper, using a deep probabilistic modeling framework, we develop such a method that estimates latent clusters of images by identifying images with similar treatment effects distributions. Our interpretable image CATE model also includes a sensitivity factor that quantifies the importance of image segments contributing to the effect cluster prediction. We compare the proposed methods against alternatives in simulation; also, we show how the model works in an actual RCT, estimating the effects of an anti-poverty intervention in northern Uganda and obtaining a posterior predictive distribution over effects for the rest of the country where no experimental data was collected. We make all models available in open-source software. "
+}

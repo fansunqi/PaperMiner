@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Frequency Estimation of Evolving Data",
+    "Privacy Protection in Data Analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Local Differential Privacy (LDP)",
+    "LOLOHA Protocol",
+    "Domain Reduction via Local Hashing",
+    "Double Randomization"
+  ],
+  "results": [
+    "Utility competitive to state-of-the-art protocols",
+    "Substantially minimizes longitudinal privacy budget consumption by up to k/g orders of magnitude"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4c8a",
+  "title": "Frequency Estimation of Evolving Data Under Local Differential Privacy",
+  "abstract": "  Collecting and analyzing evolving longitudinal data has become a common practice. One possible approach to protect the users' privacy in this context is to use local differential privacy (LDP) protocols, which ensure the privacy protection of all users even in the case of a breach or data misuse. Existing LDP data collection protocols such as Google's RAPPOR and Microsoft's dBitFlipPM can have longitudinal privacy linear to the domain size k, which is excessive for large domains, such as Internet domains. To solve this issue, in this paper we introduce a new LDP data collection protocol for longitudinal frequency monitoring named LOngitudinal LOcal HAshing (LOLOHA) with formal privacy guarantees. In addition, the privacy-utility trade-off of our protocol is only linear with respect to a reduced domain size $2\\leq g \\ll k$. LOLOHA combines a domain reduction approach via local hashing with double randomization to minimize the privacy leakage incurred by data updates. As demonstrated by our theoretical analysis as well as our experimental evaluation, LOLOHA achieves a utility competitive to current state-of-the-art protocols, while substantially minimizing the longitudinal privacy budget consumption by up to k/g orders of magnitude. "
+}

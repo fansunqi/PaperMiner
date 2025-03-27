@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Defect classification in technical domains"
+  ],
+  "datasets": [
+    "Non-defective target domain class 1st dataset",
+    "State-of-the-art labeled source domain dataset"
+  ],
+  "methods": [
+    "CNN encoder",
+    "Modified triplet loss function",
+    "Contrastive learning"
+  ],
+  "results": [
+    "Improved domain generalization capabilities",
+    "Enhanced classification results",
+    "Larger domain shifts between source and target domains"
+  ],
+  "paper_id": "638426b990e50fcafdeb20f7",
+  "title": "Cross-domain Transfer of defect features in technical domains based on\n  partial target data",
+  "abstract": "  A common challenge in real world classification scenarios with sequentially appending target domain data is insufficient training datasets during the training phase. Therefore, conventional deep learning and transfer learning classifiers are not applicable especially when individual classes are not represented or are severely underrepresented at the outset. In many technical domains, however, it is only the defect or worn reject classes that are insufficiently represented, while the non-defect class is often available from the beginning. The proposed classification approach addresses such conditions and is based on a CNN encoder. Following a contrastive learning approach, it is trained with a modified triplet loss function using two datasets: Besides the non-defective target domain class 1st dataset, a state-of-the-art labeled source domain dataset that contains highly related classes e.g., a related manufacturing error or wear defect but originates from a highly different domain e.g., different product, material, or appearance = 2nd dataset is utilized. The approach learns the classification features from the source domain dataset while at the same time learning the differences between the source and the target domain in a single training step, aiming to transfer the relevant features to the target domain. The classifier becomes sensitive to the classification features and by architecture robust against the highly domain-specific context. The approach is benchmarked in a technical and a non-technical domain and shows convincing classification results. In particular, it is shown that the domain generalization capabilities and classification results are improved by the proposed architecture, allowing for larger domain shifts between source and target domains. "
+}

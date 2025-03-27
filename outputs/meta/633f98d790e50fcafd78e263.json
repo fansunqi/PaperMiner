@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analysis of lattice linear problems and algorithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fully lattice linear algorithms",
+    "Lattice linear self-stabilizing algorithms",
+    "Parallel processing lattice linear 2-approximation algorithm"
+  ],
+  "results": [
+    "Improvement to existing algorithms",
+    "Vertex cover algorithm is the first lattice linear approximation algorithm for an NP-Hard problem"
+  ],
+  "paper_id": "633f98d790e50fcafd78e263",
+  "title": "Lattice Linear Problems vs Algorithms",
+  "abstract": "  Modelling problems using predicates that induce a partial order among global states was introduced as a way to permit asynchronous execution in multiprocessor systems. A key property of such problems is that the predicate induces one lattice in the state space which guarantees that the execution is correct even if nodes execute with old information about their neighbours. Unfortunately, many interesting problems do not exhibit lattice linearity. This issue was alleviated with the introduction of eventually lattice linear algorithms. Such algorithms induce a partial order in a subset of the state space even though the problem cannot be defined by a predicate under which the states form a partial order.   This paper focuses on analyzing and differentiating between lattice linear problems and algorithms. It also introduces a new class of algorithms called fully lattice linear algorithms. These algorithms partition the entire reachable state space into one or more lattices and the initial state locks into one of these lattices. Thus, under a few additional constraints, the initial state can uniquely determine the final state. For demonstration, we present lattice linear self-stabilizing algorithms for minimal dominating set and graph colouring problems, and a parallel processing lattice linear 2-approximation algorithm for vertex cover.   The algorithm for minimal dominating set converges in $n$ moves, and that for graph colouring converges in $n+2m$ moves. These algorithms preserve this time complexity while allowing the nodes to execute asynchronously and take actions based on old or inconsistent information about their neighbours. They present an improvement to the existing algorithms present in the literature. The algorithm for vertex cover is the first lattice linear approximation algorithm for an NP-Hard problem; it converges in $n$ moves. "
+}

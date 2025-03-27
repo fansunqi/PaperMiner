@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stock price movement classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Embeddings",
+    "Bidirectional recurrent neural networks",
+    "Weight decay",
+    "Batch normalization",
+    "Dropout",
+    "Label smoothing",
+    "Dual-phase training"
+  ],
+  "results": [
+    "Average accuracy of 80.7% on the test set",
+    "More than 10.0% absolute improvement over existing models",
+    "6.0% absolute improvement with batch normalization",
+    "3.4% absolute improvement with label smoothing"
+  ],
+  "paper_id": "63d340e890e50fcafd910b24",
+  "title": "Improved Stock Price Movement Classification Using News Articles Based\n  on Embeddings and Label Smoothing",
+  "abstract": "  Stock price movement prediction is a challenging and essential problem in finance. While it is well established in modern behavioral finance that the share prices of related stocks often move after the release of news via reactions and overreactions of investors, how to capture the relationships between price movements and news articles via quantitative models is an active area research; existing models have achieved success with variable degrees. In this paper, we propose to improve stock price movement classification using news articles by incorporating regularization and optimization techniques from deep learning. More specifically, we capture the dependencies between news articles and stocks through embeddings and bidirectional recurrent neural networks as in recent models. We further incorporate weight decay, batch normalization, dropout, and label smoothing to improve the generalization of the trained models. To handle high fluctuations of validation accuracy of batch normalization, we propose dual-phase training to realize the improvements reliably. Our experimental results on a commonly used dataset show significant improvements, achieving average accuracy of 80.7% on the test set, which is more than 10.0% absolute improvement over existing models. Our ablation studies show batch normalization and label smoothing are most effective, leading to 6.0% and 3.4% absolute improvement, respectively on average. "
+}

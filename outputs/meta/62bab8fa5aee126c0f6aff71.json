@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-channel Speech Enhancement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Non-linear Filters",
+    "DNN-based spatial and tempo-spectral non-linear filter"
+  ],
+  "results": [
+    "Non-linear spatial processing model outperforms linear spatial filter",
+    "Improved performance by 0.24 POLQA score in speaker extraction",
+    "Outperforms state-of-the-art network architectures by 0.22 POLQA score on speaker extraction",
+    "Improved performance by 0.32 POLQA score on CHiME3 data"
+  ],
+  "paper_id": "62bab8fa5aee126c0f6aff71",
+  "title": "Insights Into Deep Non-linear Filters for Improved Multi-channel Speech\n  Enhancement",
+  "abstract": "  The key advantage of using multiple microphones for speech enhancement is that spatial filtering can be used to complement the tempo-spectral processing. In a traditional setting, linear spatial filtering (beamforming) and single-channel post-filtering are commonly performed separately. In contrast, there is a trend towards employing deep neural networks (DNNs) to learn a joint spatial and tempo-spectral non-linear filter, which means that the restriction of a linear processing model and that of a separate processing of spatial and tempo-spectral information can potentially be overcome. However, the internal mechanisms that lead to good performance of such data-driven filters for multi-channel speech enhancement are not well understood. Therefore, in this work, we analyse the properties of a non-linear spatial filter realized by a DNN as well as its interdependency with temporal and spectral processing by carefully controlling the information sources (spatial, spectral, and temporal) available to the network. We confirm the superiority of a non-linear spatial processing model, which outperforms an oracle linear spatial filter in a challenging speaker extraction scenario for a low number of microphones by 0.24 POLQA score. Our analyses reveal that in particular spectral information should be processed jointly with spatial information as this increases the spatial selectivity of the filter. Our systematic evaluation then leads to a simple network architecture, that outperforms state-of-the-art network architectures on a speaker extraction task by 0.22 POLQA score and by 0.32 POLQA score on the CHiME3 data. "
+}

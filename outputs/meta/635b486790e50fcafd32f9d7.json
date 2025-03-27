@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fine-tuning Large Language Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differential Privacy (DP)",
+    "Edgeworth accountant"
+  ],
+  "results": [
+    "Induced noise decreased to up to 5.6%",
+    "LLMs performance improved by up to 1.1%"
+  ],
+  "paper_id": "635b486790e50fcafd32f9d7",
+  "title": "Privately Fine-Tuning Large Language Models with Differential Privacy",
+  "abstract": "  Pre-trained Large Language Models (LLMs) are an integral part of modern AI that have led to breakthrough performances in complex AI tasks. Major AI companies with expensive infrastructures are able to develop and train these large models with billions and millions of parameters from scratch. Third parties, researchers, and practitioners are increasingly adopting these pre-trained models and fine-tuning them on their private data to accomplish their downstream AI tasks. However, it has been shown that an adversary can extract/reconstruct the exact training samples from these LLMs, which can lead to revealing personally identifiable information. The issue has raised deep concerns about the privacy of LLMs. Differential privacy (DP) provides a rigorous framework that allows adding noise in the process of training or fine-tuning LLMs such that extracting the training data becomes infeasible (i.e., with a cryptographically small success probability). While the theoretical privacy guarantees offered in most extant studies assume learning models from scratch through many training iterations in an asymptotic setting, this assumption does not hold in fine-tuning scenarios in which the number of training iterations is significantly smaller. To address the gap, we present \\ewtune, a DP framework for fine-tuning LLMs based on Edgeworth accountant with finite-sample privacy guarantees. Our results across four well-established natural language understanding (NLU) tasks show that while \\ewtune~adds privacy guarantees to LLM fine-tuning process, it directly contributes to decreasing the induced noise to up to 5.6\\% and improves the state-of-the-art LLMs performance by up to 1.1\\% across all NLU tasks. We have open-sourced our implementations for wide adoption and public testing purposes. "
+}

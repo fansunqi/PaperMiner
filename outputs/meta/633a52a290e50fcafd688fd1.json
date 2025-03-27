@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-source Unsupervised Domain Adaptation"
+  ],
+  "datasets": [
+    "DomainNet"
+  ],
+  "methods": [
+    "Multi-Prompt Alignment (MPA)"
+  ],
+  "results": [
+    "State-of-the-art results on DomainNet",
+    "Highest reported average accuracy of 54.1% with 15.9M parameters"
+  ],
+  "paper_id": "633a52a290e50fcafd688fd1",
+  "title": "Multi-Prompt Alignment for Multi-Source Unsupervised Domain Adaptation",
+  "abstract": "  Most existing methods for multi-source unsupervised domain adaptation (UDA) rely on a common encoder to extract domain-invariant features. However, learning such an encoder involves updating the parameters of the entire network, which makes the optimization difficult and computationally expensive, particularly when coupled with min-max objectives. Inspired by recent advances in prompt learning that adapts high-capacity models for downstream tasks in a computationally economic way, we introduce Multi-Prompt Alignment (MPA), a simple yet efficient two-stage framework for multi-source UDA. Given a source and target domain pair, MPA first trains an individual prompt to minimize the domain gap through a contrastive loss. Then, MPA derives a low-dimensional latent space through an auto-encoding process that maximizes the agreement of multiple learned prompts. The resulting embeddings further facilitate generalization to unseen domains, making MPA suitable for test time adaptation. Extensive experiments show that our method achieves state-of-the-art results on popular datasets while requiring substantially fewer tunable parameters. Specifically on DomainNet, the most challenging UDA dataset, MPA achieves the highest reported average accuracy of 54.1% with only 15.9M parameters trained. "
+}

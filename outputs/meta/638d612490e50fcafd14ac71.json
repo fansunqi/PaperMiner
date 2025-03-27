@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Wildfire fire-front modelling",
+    "Data assimilation",
+    "Spatio-Temporal Modelling of Wildfires"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics Informed Neural Network (PINN)",
+    "Level-set equation",
+    "Bayesian PINN (B-PINN)"
+  ],
+  "results": [
+    "Accurate predictions with high quality uncertainty quantification on real-world data"
+  ],
+  "paper_id": "638d612490e50fcafd14ac71",
+  "title": "Bayesian Physics Informed Neural Networks for Data Assimilation and\n  Spatio-Temporal Modelling of Wildfires",
+  "abstract": "  We apply the Physics Informed Neural Network (PINN) to the problem of wildfire fire-front modelling. We use the PINN to solve the level-set equation, which is a partial differential equation that models a fire-front through the zero-level-set of a level-set function. The result is a PINN that simulates a fire-front as it propagates through the spatio-temporal domain. We show that popular optimisation cost functions used in the literature can result in PINNs that fail to maintain temporal continuity in modelled fire-fronts when there are extreme changes in exogenous forcing variables such as wind direction. We thus propose novel additions to the optimisation cost function that improves temporal continuity under these extreme changes. Furthermore, we develop an approach to perform data assimilation within the PINN such that the PINN predictions are drawn towards observations of the fire-front. Finally, we incorporate our novel approaches into a Bayesian PINN (B-PINN) to provide uncertainty quantification in the fire-front predictions. This is significant as the standard solver, the level-set method, does not naturally offer the capability for data assimilation and uncertainty quantification. Our results show that, with our novel approaches, the B-PINN can produce accurate predictions with high quality uncertainty quantification on real-world data. "
+}

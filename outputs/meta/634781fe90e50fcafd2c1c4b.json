@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Embedding Table Compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CQR: Combines clustering and sketching"
+  ],
+  "results": [
+    "Close to those of post-training quantization",
+    "Training time memory reductions of sketch-based methods",
+    "Always converges to the optimal embedding table for least-squares training"
+  ],
+  "paper_id": "634781fe90e50fcafd2c1c4b",
+  "title": "Clustering the Sketch: A Novel Approach to Embedding Table Compression",
+  "abstract": "  Embedding tables are used by machine learning systems to work with categorical features. These tables can become exceedingly large in modern recommendation systems, necessitating the development of new methods for fitting them in memory, even during training.   The best previous methods for table compression are so called \"post training\" quantization schemes such as \"product\" and \"residual\" quantization (Gray & Neuhoff, 1998). These methods replace table rows with references to k-means clustered \"codewords\". Unfortunately, clustering requires prior knowledge of the table to be compressed, which limits the memory savings to inference time and not training time. Hence, recent work, like the QR method (Shi et al., 2020), has used random references (linear sketching), which can be computed with hash functions before training. Unfortunately, the compression achieved is inferior to that achieved by post-training quantization.   The new algorithm, CQR, shows how to get the best of two worlds by combining clustering and sketching: First IDs are randomly assigned to a codebook and codewords are trained (end to end) for an epoch. Next, we expand the codebook and apply clustering to reduce the size again. Finally, we add new random references and continue training.   We show experimentally close to those of post-training quantization with the training time memory reductions of sketch-based methods, and we prove that our method always converges to the optimal embedding table for least-squares training. "
+}

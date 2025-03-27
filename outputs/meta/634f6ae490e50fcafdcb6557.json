@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image generation"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "CIFAR-100",
+    "FFHQ",
+    "AFHQ",
+    "LSUN"
+  ],
+  "methods": [
+    "Feature cycling block (FCB)"
+  ],
+  "results": [
+    "FID of StyleGAN2 improved from 4.89 to 3.72 on FFHQ",
+    "FID of StyleGAN2 improved from 6.64 to 5.57 on LSUN Bed"
+  ],
+  "paper_id": "634f6ae490e50fcafdcb6557",
+  "title": "Improving GANs with a Feature Cycling Generator",
+  "abstract": "  Generative adversarial networks (GANs), built with a generator and discriminator, significantly have advanced image generation. Typically, existing papers build their generators by stacking up multiple residual blocks since it makes ease the training of generators. However, some recent papers commented on the limitation of the residual block and proposed a new architectural unit that improves the GANs performance. Following this trend, this paper presents a novel unit, called feature cycling block (FCB), which achieves impressive results in the image generation task. Specifically, the FCB has two branches: one is a memory branch and the other is an image branch. The memory branch keeps meaningful information at each stage of the generator, whereas the image branch takes some useful features from the memory branch to produce a high-quality image. To show the capability of the proposed method, we conducted extensive experiments using various datasets including CIFAR-10, CIFAR-100, FFHQ, AFHQ, and subsets of LSUN. Experimental results demonstrate the substantial superiority of our approach over the baseline without incurring any objective functions or training skills. For instance, the proposed method improves Frechet inception distance (FID) of StyleGAN2 from 4.89 to 3.72 on the FFHQ dataset and from 6.64 to 5.57 on the LSUN Bed dataset. We believe that the pioneering attempt presented in this paper could inspire the community with better-designed generator architecture and with training objectives or skills compatible with the proposed method. "
+}

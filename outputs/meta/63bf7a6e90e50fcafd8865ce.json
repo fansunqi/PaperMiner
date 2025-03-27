@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Building 3D Reconstruction from Single-View Remote Sensing Imagery"
+  ],
+  "datasets": [
+    "ISPRS Vaihingen",
+    "DFC2019"
+  ],
+  "methods": [
+    "Semantic Flow Field-guided DSM Estimation (SFFDE) network",
+    "Elevation Semantic Globalization (ESG) module",
+    "Local-to-Global Elevation Semantic Registration (L2G-ESR) module"
+  ],
+  "results": [
+    "SFFDE significantly improves upon state-of-the-arts",
+    "Impressive results in 3D point cloud and 3D model reconstruction"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8865ce",
+  "title": "Elevation Estimation-Driven Building 3D Reconstruction from Single-View\n  Remote Sensing Imagery",
+  "abstract": "  Building 3D reconstruction from remote sensing images has a wide range of applications in smart cities, photogrammetry and other fields. Methods for automatic 3D urban building modeling typically employ multi-view images as input to algorithms to recover point clouds and 3D models of buildings. However, such models rely heavily on multi-view images of buildings, which are time-intensive and limit the applicability and practicality of the models. To solve these issues, we focus on designing an efficient DSM estimation-driven reconstruction framework (Building3D), which aims to reconstruct 3D building models from the input single-view remote sensing image. First, we propose a Semantic Flow Field-guided DSM Estimation (SFFDE) network, which utilizes the proposed concept of elevation semantic flow to achieve the registration of local and global features. Specifically, in order to make the network semantics globally aware, we propose an Elevation Semantic Globalization (ESG) module to realize the semantic globalization of instances. Further, in order to alleviate the semantic span of global features and original local features, we propose a Local-to-Global Elevation Semantic Registration (L2G-ESR) module based on elevation semantic flow. Our Building3D is rooted in the SFFDE network for building elevation prediction, synchronized with a building extraction network for building masks, and then sequentially performs point cloud reconstruction, surface reconstruction (or CityGML model reconstruction). On this basis, our Building3D can optionally generate CityGML models or surface mesh models of the buildings. Extensive experiments on ISPRS Vaihingen and DFC2019 datasets on the DSM estimation task show that our SFFDE significantly improves upon state-of-the-arts. Furthermore, our Building3D achieves impressive results in the 3D point cloud and 3D model reconstruction process. "
+}

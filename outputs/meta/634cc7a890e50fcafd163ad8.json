@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Resource management in programming",
+    "Temporal resource usage in robotics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Time-graded Fitch-style modal type systems",
+    "Modally typed, effectful core calculus",
+    "Graded-monadic denotational semantics",
+    "Concrete presheaf model",
+    "Temporally-aware graded algebraic effects",
+    "Effect handlers"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "634cc7a890e50fcafd163ad8",
+  "title": "When Programs Have to Watch Paint Dry",
+  "abstract": "  We explore type systems and programming abstractions for the safe use of resources. In particular, we investigate how to use types to modularly specify and check when programs are allowed to use their resources, e.g., when programming a robot arm on a production line, it is crucial that painted parts are given enough time to dry before assembly. We capture such temporal resources using a time-graded variant of Fitch-style modal type systems, develop a corresponding modally typed, effectful core calculus, and equip it with a graded-monadic denotational semantics illustrated by a concrete presheaf model. Our calculus also includes temporally-aware graded algebraic effects and effect handlers. The former are given a novel temporal treatment, where operations' specifications include their execution times, and their continuations know that an operation's worth of additional time has passed before they start executing, making it possible to safely access further temporal resources in them, and where effect handlers have to respect this temporal discipline. "
+}

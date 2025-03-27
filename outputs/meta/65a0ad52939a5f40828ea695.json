@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/fh2019ustc/PolySnake"
+  ],
+  "tasks": [
+    "Instance Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PolySnake",
+    "Recurrent update operator",
+    "Semantic-rich representation"
+  ],
+  "results": [
+    "Outperforms existing methods on multiple benchmarks"
+  ],
+  "paper_id": "65a0ad52939a5f40828ea695",
+  "title": "Recurrent Generic Contour-based Instance Segmentation with Progressive\n  Learning",
+  "abstract": "Contour-based instance segmentation has been actively studied, thanks to its\nflexibility and elegance in processing visual objects within complex\nbackgrounds. In this work, we propose a novel deep network architecture, i.e.,\nPolySnake, for generic contour-based instance segmentation. Motivated by the\nclassic Snake algorithm, the proposed PolySnake achieves superior and robust\nsegmentation performance with an iterative and progressive contour refinement\nstrategy. Technically, PolySnake introduces a recurrent update operator to\nestimate the object contour iteratively. It maintains a single estimate of the\ncontour that is progressively deformed toward the object boundary. At each\niteration, PolySnake builds a semantic-rich representation for the current\ncontour and feeds it to the recurrent operator for further contour adjustment.\nThrough the iterative refinements, the contour progressively converges to a\nstable status that tightly encloses the object instance. Beyond the scope of\ngeneral instance segmentation, extensive experiments are conducted to validate\nthe effectiveness and generalizability of our PolySnake in two additional\nspecific task scenarios, including scene text detection and lane detection. The\nresults demonstrate that the proposed PolySnake outperforms the existing\nadvanced methods on several multiple prevalent benchmarks across the three\ntasks. The codes and pre-trained models are available at\nhttps://github.com/fh2019ustc/PolySnake"
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/melinphd/TAAL"
+  ],
+  "tasks": [
+    "Medical Image Segmentation"
+  ],
+  "datasets": [
+    "Cardiac images"
+  ],
+  "methods": [
+    "Test-time Augmentation for Active Learning (TAAL)",
+    "Cross-augmentation consistency",
+    "Modified version of the JSD"
+  ],
+  "results": [
+    "Outperforms existing baseline methods in fully-supervised and semi-supervised settings"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b5c6",
+  "title": "TAAL: Test-time Augmentation for Active Learning in Medical Image\n  Segmentation",
+  "abstract": "  Deep learning methods typically depend on the availability of labeled data, which is expensive and time-consuming to obtain. Active learning addresses such effort by prioritizing which samples are best to annotate in order to maximize the performance of the task model. While frameworks for active learning have been widely explored in the context of classification of natural images, they have been only sparsely used in medical image segmentation. The challenge resides in obtaining an uncertainty measure that reveals the best candidate data for annotation. This paper proposes Test-time Augmentation for Active Learning (TAAL), a novel semi-supervised active learning approach for segmentation that exploits the uncertainty information offered by data transformations. Our method applies cross-augmentation consistency during training and inference to both improve model learning in a semi-supervised fashion and identify the most relevant unlabeled samples to annotate next. In addition, our consistency loss uses a modified version of the JSD to further improve model performance. By relying on data transformations rather than on external modules or simple heuristics typically used in uncertainty-based strategies, TAAL emerges as a simple, yet powerful task-agnostic semi-supervised active learning approach applicable to the medical domain. Our results on a publicly-available dataset of cardiac images show that TAAL outperforms existing baseline methods in both fully-supervised and semi-supervised settings. Our implementation is publicly available on https://github.com/melinphd/TAAL. "
+}

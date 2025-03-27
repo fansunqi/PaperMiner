@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neuromorphic perception",
+    "Online learning with neuromorphic hardware"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Event-based Three-factor Local Plasticity (ETLP)",
+    "Feedforward and recurrent spiking neural networks",
+    "Back-Propagation Through Time (BPTT)",
+    "eProp"
+  ],
+  "results": [
+    "Competitive performance in accuracy",
+    "Clear advantage in computational complexity for ETLP",
+    "Threshold adaptation in spiking neurons and recurrent topology necessary for learning spatio-temporal patterns",
+    "Proof of concept hardware implementation on FPGA"
+  ],
+  "paper_id": "63cdfab590e50fcafd106db0",
+  "title": "ETLP: Event-based Three-factor Local Plasticity for online learning with\n  neuromorphic hardware",
+  "abstract": "Neuromorphic perception with event-based sensors, asynchronous hardware and\nspiking neurons is showing promising results for real-time and energy-efficient\ninference in embedded systems. The next promise of brain-inspired computing is\nto enable adaptation to changes at the edge with online learning. However, the\nparallel and distributed architectures of neuromorphic hardware based on\nco-localized compute and memory imposes locality constraints to the on-chip\nlearning rules. We propose in this work the Event-based Three-factor Local\nPlasticity (ETLP) rule that uses (1) the pre-synaptic spike trace, (2) the\npost-synaptic membrane voltage and (3) a third factor in the form of projected\nlabels with no error calculation, that also serve as update triggers. We apply\nETLP with feedforward and recurrent spiking neural networks on visual and\nauditory event-based pattern recognition, and compare it to Back-Propagation\nThrough Time (BPTT) and eProp. We show a competitive performance in accuracy\nwith a clear advantage in the computational complexity for ETLP. We also show\nthat when using local plasticity, threshold adaptation in spiking neurons and a\nrecurrent topology are necessary to learn spatio-temporal patterns with a rich\ntemporal structure. Finally, we provide a proof of concept hardware\nimplementation of ETLP on FPGA to highlight the simplicity of its computational\nprimitives and how they can be mapped into neuromorphic hardware for online\nlearning with low-energy consumption and real-time interaction."
+}

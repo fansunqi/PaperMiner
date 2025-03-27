@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Representation Learning"
+  ],
+  "datasets": [
+    "ImageNet-1K"
+  ],
+  "methods": [
+    "Perceptual MAE",
+    "masked autoencoders",
+    "perceptual similarity term",
+    "multi-scale training",
+    "adaptive discriminator augmentation"
+  ],
+  "results": [
+    "78.1% top-1 accuracy linear probing on ImageNet-1K",
+    "88.1% when fine-tuning",
+    "outperforming previous methods"
+  ],
+  "paper_id": "63b24b2890e50fcafdd3799d",
+  "title": "Improving Visual Representation Learning through Perceptual\n  Understanding",
+  "abstract": "  We present an extension to masked autoencoders (MAE) which improves on the representations learnt by the model by explicitly encouraging the learning of higher scene-level features. We do this by: (i) the introduction of a perceptual similarity term between generated and real images (ii) incorporating several techniques from the adversarial training literature including multi-scale training and adaptive discriminator augmentation. The combination of these results in not only better pixel reconstruction but also representations which appear to capture better higher-level details within images. More consequentially, we show how our method, Perceptual MAE, leads to better performance when used for downstream tasks outperforming previous methods. We achieve 78.1% top-1 accuracy linear probing on ImageNet-1K and up to 88.1% when fine-tuning, with similar results for other downstream tasks, all without use of additional pre-trained models or data. "
+}

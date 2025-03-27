@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://zju3dv.github.io/intrinsic_nerf"
+  ],
+  "tasks": [
+    "Novel View Synthesis"
+  ],
+  "datasets": [
+    "object-specific/room-scale scenes",
+    "synthetic/real-word data"
+  ],
+  "methods": [
+    "Intrinsic Neural Radiance Fields",
+    "distance-aware point sampling",
+    "adaptive reflectance iterative clustering optimization",
+    "hierarchical clustering"
+  ],
+  "results": [
+    "consistent intrinsic decomposition results",
+    "high-fidelity novel view synthesis"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4f2d",
+  "title": "IntrinsicNeRF: Learning Intrinsic Neural Radiance Fields for Editable\n  Novel View Synthesis",
+  "abstract": "  Existing inverse rendering combined with neural rendering methods~\\cite{zhang2021physg, zhang2022modeling} can only perform editable novel view synthesis on object-specific scenes, while we present intrinsic neural radiance fields, dubbed IntrinsicNeRF, which introduce intrinsic decomposition into the NeRF-based~\\cite{mildenhall2020nerf} neural rendering method and can extend its application to room-scale scenes. Since intrinsic decomposition is a fundamentally under-constrained inverse problem, we propose a novel distance-aware point sampling and adaptive reflectance iterative clustering optimization method, which enables IntrinsicNeRF with traditional intrinsic decomposition constraints to be trained in an unsupervised manner, resulting in temporally consistent intrinsic decomposition results. To cope with the problem that different adjacent instances of similar reflectance in a scene are incorrectly clustered together, we further propose a hierarchical clustering method with coarse-to-fine optimization to obtain a fast hierarchical indexing representation. It supports compelling real-time augmented applications such as recoloring and illumination variation. Extensive experiments and editing samples on both object-specific/room-scale scenes and synthetic/real-word data demonstrate that we can obtain consistent intrinsic decomposition results and high-fidelity novel view synthesis even for challenging sequences. Project page: https://zju3dv.github.io/intrinsic_nerf. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Training"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Phase-shifted Adversarial Training (PhaseAT)"
+  ],
+  "results": [
+    "Improved convergence for high-frequency information",
+    "Enhanced adversarial robustness with smoothed predictions"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8ae0",
+  "title": "Phase-shifted Adversarial Training",
+  "abstract": "  Adversarial training has been considered an imperative component for safely deploying neural network-based applications to the real world. To achieve stronger robustness, existing methods primarily focus on how to generate strong attacks by increasing the number of update steps, regularizing the models with the smoothed loss function, and injecting the randomness into the attack. Instead, we analyze the behavior of adversarial training through the lens of response frequency. We empirically discover that adversarial training causes neural networks to have low convergence to high-frequency information, resulting in highly oscillated predictions near each data. To learn high-frequency contents efficiently and effectively, we first prove that a universal phenomenon of frequency principle, i.e., \\textit{lower frequencies are learned first}, still holds in adversarial training. Based on that, we propose phase-shifted adversarial training (PhaseAT) in which the model learns high-frequency components by shifting these frequencies to the low-frequency range where the fast convergence occurs. For evaluations, we conduct the experiments on CIFAR-10 and ImageNet with the adaptive attack carefully designed for reliable evaluation. Comprehensive results show that PhaseAT significantly improves the convergence for high-frequency information. This results in improved adversarial robustness by enabling the model to have smoothed predictions near each data. "
+}

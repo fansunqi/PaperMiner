@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Weather Simulation",
+    "Data Assimilation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Particle Filters",
+    "Parallel Model Instances",
+    "Elastic and Fault Tolerant Runner/Server Model",
+    "Distributed Particle Cache"
+  ],
+  "results": [
+    "Up to 2555 particles on 20442 compute cores",
+    "Probabilistic weather forecasting"
+  ],
+  "paper_id": "63bcd73090e50fcafdef978b",
+  "title": "A Framework for Large Scale Particle Filters Validated with Data\n  Assimilation for Weather Simulation",
+  "abstract": "  Particle filters are a group of algorithms to solve inverse problems through statistical Bayesian methods when the model does not comply with the linear and Gaussian hypothesis. Particle filters are used in domains like data assimilation, probabilistic programming, neural networkoptimization, localization and navigation. Particle filters estimate the probabilitydistribution of model states by running a large number of model instances, the so called particles. The ability to handle a very large number of particles is critical for high dimensional models.This paper proposes a novel paradigm to run very large ensembles of parallel model instances on supercomputers. The approach combines an elastic and fault tolerant runner/server model minimizing data movementswhile enabling dynamic load balancing. Particle weights are computed locally on each runner andtransmitted when available to a server that normalizes them, resamples new particles based on their weight, and redistributes dynamically the work torunners to react to load imbalance. Our approach relies on a an asynchronously manageddistributed particle cache permitting particles to move from one runner to another inthe background while particle propagation goes on. This also enables the number ofrunners to vary during the execution either in reaction to failures and restarts, orto adapt to changing resource availability dictated by external decision processes.The approach is experimented with the Weather Research and Forecasting (WRF) model, toassess its performance for probabilistic weather forecasting. Up to 2555particles on 20442 compute cores are used to assimilate cloud cover observations into short--range weather forecasts over Europe. "
+}

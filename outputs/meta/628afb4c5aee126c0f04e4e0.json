@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial examples",
+    "Certified robustness"
+  ],
+  "datasets": [
+    "MNIST"
+  ],
+  "methods": [
+    "Rounding search method",
+    "Mixed integer programming"
+  ],
+  "results": [
+    "Attack success rates over 50% on random linear classifiers",
+    "Up to 23.24% on MNIST dataset for linear SVM",
+    "Up to 15.83% on MNIST dataset for a neural network with mixed integer programming"
+  ],
+  "paper_id": "628afb4c5aee126c0f04e4e0",
+  "title": "Getting a-Round Guarantees: Floating-Point Attacks on Certified\n  Robustness",
+  "abstract": "  Adversarial examples pose a security risk as they can alter decisions of a machine learning classifier through slight input perturbations. Certified robustness has been proposed as a mitigation where given an input $x$, a classifier returns a prediction and a radius with a provable guarantee that any perturbation to $x$ within this radius (e.g., under the $L_2$ norm) will not alter the classifier's prediction. In this work, we show that these guarantees can be invalidated due to limitations of floating-point representation that cause rounding errors. We design a rounding search method that can efficiently exploit this vulnerability to find adversarial examples within the certified radius. We show that the attack can be carried out against several linear classifiers that have exact certifiable guarantees and against neural networks with ReLU activations that have conservative certifiable guarantees. Our experiments demonstrate attack success rates over 50% on random linear classifiers, up to 23.24% on the MNIST dataset for linear SVM, and up to 15.83% on the MNIST dataset for a neural network whose certified radius was given by a verifier based on mixed integer programming. Finally, as a mitigation, we advocate the use of rounded interval arithmetic to account for rounding errors. "
+}

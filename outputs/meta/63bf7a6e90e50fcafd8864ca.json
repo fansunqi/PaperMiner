@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Histopathology",
+    "Neural network performance evaluation"
+  ],
+  "datasets": [
+    "Multi-scanner canine cutaneous squamous cell carcinoma histopathology images"
+  ],
+  "methods": [
+    "Tumor segmentation network training",
+    "Evaluation of color distributions, sharpness, and contrast"
+  ],
+  "results": [
+    "Class-averaged in-domain intersection over union coefficient of up to 0.86",
+    "Cross-domain performance decrease of up to 0.38"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8864ca",
+  "title": "Multi-Scanner Canine Cutaneous Squamous Cell Carcinoma Histopathology\n  Dataset",
+  "abstract": "  In histopathology, scanner-induced domain shifts are known to impede the performance of trained neural networks when tested on unseen data. Multi-domain pre-training or dedicated domain-generalization techniques can help to develop domain-agnostic algorithms. For this, multi-scanner datasets with a high variety of slide scanning systems are highly desirable. We present a publicly available multi-scanner dataset of canine cutaneous squamous cell carcinoma histopathology images, composed of 44 samples digitized with five slide scanners. This dataset provides local correspondences between images and thereby isolates the scanner-induced domain shift from other inherent, e.g. morphology-induced domain shifts. To highlight scanner differences, we present a detailed evaluation of color distributions, sharpness, and contrast of the individual scanner subsets. Additionally, to quantify the inherent scanner-induced domain shift, we train a tumor segmentation network on each scanner subset and evaluate the performance both in- and cross-domain. We achieve a class-averaged in-domain intersection over union coefficient of up to 0.86 and observe a cross-domain performance decrease of up to 0.38, which confirms the inherent domain shift of the presented dataset and its negative impact on the performance of deep neural networks. "
+}

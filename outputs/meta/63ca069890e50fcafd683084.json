@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding diffusion models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mathematical analysis of diffusion models",
+    "Green's function approximations",
+    "New target function and associated loss"
+  ],
+  "results": [
+    "Analytical mean drift function and score function blow up in the final stages of sampling for singular data distributions",
+    "New target function remains bounded for singular data distributions"
+  ],
+  "paper_id": "63ca069890e50fcafd683084",
+  "title": "Understanding the diffusion models by conditional expectations",
+  "abstract": "  This paper provide several mathematical analyses of the diffusion model in machine learning. The drift term of the backwards sampling process is represented as a conditional expectation involving the data distribution and the forward diffusion. The training process aims to find such a drift function by minimizing the mean-squared residue related to the conditional expectation. Using small-time approximations of the Green's function of the forward diffusion, we show that the analytical mean drift function in DDPM and the score function in SGM asymptotically blow up in the final stages of the sampling process for singular data distributions such as those concentrated on lower-dimensional manifolds, and is therefore difficult to approximate by a network. To overcome this difficulty, we derive a new target function and associated loss, which remains bounded even for singular data distributions. We illustrate the theoretical findings with several numerical examples. "
+}

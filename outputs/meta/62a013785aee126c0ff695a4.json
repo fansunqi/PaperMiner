@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nonconvex optimization",
+    "Global optimality certification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Preconditioned Gradient Descent",
+    "Burer--Monteiro Factorization"
+  ],
+  "results": [
+    "Restores linear convergence rate in overparameterized case",
+    "Agnostic to possible ill-conditioning in global minimizer"
+  ],
+  "paper_id": "62a013785aee126c0ff695a4",
+  "title": "Preconditioned Gradient Descent for Overparameterized Nonconvex\n  Burer--Monteiro Factorization with Global Optimality Certification",
+  "abstract": "  We consider using gradient descent to minimize the nonconvex function $f(X)=\\phi(XX^{T})$ over an $n\\times r$ factor matrix $X$, in which $\\phi$ is an underlying smooth convex cost function defined over $n\\times n$ matrices. While only a second-order stationary point $X$ can be provably found in reasonable time, if $X$ is additionally rank deficient, then its rank deficiency certifies it as being globally optimal. This way of certifying global optimality necessarily requires the search rank $r$ of the current iterate $X$ to be overparameterized with respect to the rank $r^{\\star}$ of the global minimizer $X^{\\star}$. Unfortunately, overparameterization significantly slows down the convergence of gradient descent, from a linear rate with $r=r^{\\star}$ to a sublinear rate when $r>r^{\\star}$, even when $\\phi$ is strongly convex. In this paper, we propose an inexpensive preconditioner that restores the convergence rate of gradient descent back to linear in the overparameterized case, while also making it agnostic to possible ill-conditioning in the global minimizer $X^{\\star}$. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated learning",
+    "Non-IID data",
+    "Data augmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated tabular data augmentation (Fed-TDA)",
+    "Multimodal distribution transformation",
+    "Inverse cumulative distribution mapping"
+  ],
+  "results": [
+    "Superiority in test performance",
+    "Maintains the distribution of the original data",
+    "Maintains the correlation between columns"
+  ],
+  "paper_id": "637ee0ee90e50fcafd0f710c",
+  "title": "Fed-TDA: Federated Tabular Data Augmentation on Non-IID Data",
+  "abstract": "  Non-independent and identically distributed (non-IID) data is a key challenge in federated learning (FL), which usually hampers the optimization convergence and the performance of FL. Existing data augmentation methods based on federated generative models or raw data sharing strategies for solving the non-IID problem still suffer from low performance, privacy protection concerns, and high communication overhead in decentralized tabular data. To tackle these challenges, we propose a federated tabular data augmentation method, named Fed-TDA. The core idea of Fed-TDA is to synthesize tabular data for data augmentation using some simple statistics (e.g., distributions of each column and global covariance). Specifically, we propose the multimodal distribution transformation and inverse cumulative distribution mapping respectively synthesize continuous and discrete columns in tabular data from a noise according to the pre-learned statistics. Furthermore, we theoretically analyze that our Fed-TDA not only preserves data privacy but also maintains the distribution of the original data and the correlation between columns. Through extensive experiments on five real-world tabular datasets, we demonstrate the superiority of Fed-TDA over the state-of-the-art in test performance and communication efficiency. "
+}

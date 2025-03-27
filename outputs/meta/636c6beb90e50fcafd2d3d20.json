@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition"
+  ],
+  "datasets": [
+    "AISHELL-1",
+    "AISHELL-2"
+  ],
+  "methods": [
+    "LM Filter",
+    "Noisy Student Training"
+  ],
+  "results": [
+    "10.4% improvement compared with no data filtering baselines",
+    "3.31% CER in AISHELL-1 test set",
+    "4.73% CER on the supervised 1000 hour AISHELL-2 dataset"
+  ],
+  "paper_id": "636c6beb90e50fcafd2d3d20",
+  "title": "Improving Noisy Student Training on Non-target Domain Data for Automatic\n  Speech Recognition",
+  "abstract": "  Noisy Student Training (NST) has recently demonstrated extremely strong performance in Automatic Speech Recognition(ASR). In this paper, we propose a data selection strategy named LM Filter to improve the performance of NST on non-target domain data in ASR tasks. Hypotheses with and without a Language Model are generated and the CER differences between them are utilized as a filter threshold. Results reveal that significant improvements of 10.4% compared with no data filtering baselines. We can achieve 3.31% CER in AISHELL-1 test set, which is best result from our knowledge without any other supervised data. We also perform evaluations on the supervised 1000 hour AISHELL-2 dataset and competitive results of 4.73% CER can be achieved. "
+}

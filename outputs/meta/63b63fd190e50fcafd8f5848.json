@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/yanyachen/xDeepInt"
+  ],
+  "tasks": [
+    "CTR prediction",
+    "recommendation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "polynomial interaction network (PIN)",
+    "combined optimization strategy"
+  ],
+  "results": [
+    "efficacy and effectiveness over state-of-the-art models"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5848",
+  "title": "xDeepInt: a hybrid architecture for modeling the vector-wise and\n  bit-wise feature interactions",
+  "abstract": "  Learning feature interactions is the key to success for the large-scale CTR prediction and recommendation. In practice, handcrafted feature engineering usually requires exhaustive searching. In order to reduce the high cost of human efforts in feature engineering, researchers propose several deep neural networks (DNN)-based approaches to learn the feature interactions in an end-to-end fashion. However, existing methods either do not learn both vector-wise interactions and bit-wise interactions simultaneously, or fail to combine them in a controllable manner. In this paper, we propose a new model, xDeepInt, based on a novel network architecture called polynomial interaction network (PIN) which learns higher-order vector-wise interactions recursively. By integrating subspace-crossing mechanism, we enable xDeepInt to balance the mixture of vector-wise and bit-wise feature interactions at a bounded order. Based on the network architecture, we customize a combined optimization strategy to conduct feature selection and interaction selection. We implement the proposed model and evaluate the model performance on three real-world datasets. Our experiment results demonstrate the efficacy and effectiveness of xDeepInt over state-of-the-art models. We open-source the TensorFlow implementation of xDeepInt: https://github.com/yanyachen/xDeepInt. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Securing reactive programs",
+    "Preventing traffic analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "OblivIO",
+    "Data-oblivious approach",
+    "Information-flow type system",
+    "Constant-time algorithms"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63ca06a190e50fcafd683805",
+  "title": "OblivIO: Securing reactive programs by oblivious execution with bounded\n  traffic overheads",
+  "abstract": "  Traffic analysis attacks remain a significant problem for online security. Communication between nodes can be observed by network level attackers as it inherently takes place in the open. Despite online services increasingly using encrypted traffic, the shape of the traffic is not hidden. To prevent traffic analysis, the shape of a system's traffic must be independent of secrets. We investigate adapting the data-oblivious approach the reactive setting and present OblivIO, a secure language for writing reactive programs driven by network events. Our approach pads with dummy messages to hide which program sends are genuinely executed. We use an information-flow type system to provably enforce timing-sensitive noninterference. The type system is extended with potentials to bound the overhead in traffic introduced by our approach. We address challenges that arise from joining data-oblivious and reactive programming and demonstrate the feasibility of our resulting language by developing an interpreter that implements security critical operations as constant-time algorithms. "
+}

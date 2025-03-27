@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-class Model Interpretation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Additive instance-wise approach",
+    "Local explanations for multiple target classes"
+  ],
+  "results": [
+    "Significantly outperforms additive and instance-wise counterparts",
+    "More compact and comprehensible explanations",
+    "Capacity to select stable and important features"
+  ],
+  "paper_id": "62c816df5aee126c0f57e1d5",
+  "title": "An Additive Instance-Wise Approach to Multi-class Model Interpretation",
+  "abstract": "  Interpretable machine learning offers insights into what factors drive a certain prediction of a black-box system. A large number of interpreting methods focus on identifying explanatory input features, which generally fall into two main categories: attribution and selection. A popular attribution-based approach is to exploit local neighborhoods for learning instance-specific explainers in an additive manner. The process is thus inefficient and susceptible to poorly-conditioned samples. Meanwhile, many selection-based methods directly optimize local feature distributions in an instance-wise training framework, thereby being capable of leveraging global information from other inputs. However, they can only interpret single-class predictions and many suffer from inconsistency across different settings, due to a strict reliance on a pre-defined number of features selected. This work exploits the strengths of both methods and proposes a framework for learning local explanations simultaneously for multiple target classes. Our model explainer significantly outperforms additive and instance-wise counterparts on faithfulness with more compact and comprehensible explanations. We also demonstrate the capacity to select stable and important features through extensive experiments on various data sets and black-box model architectures. "
+}

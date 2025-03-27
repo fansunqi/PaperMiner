@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parameter management for distributed training of large machine learning tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Intent signaling mechanism",
+    "AdaPM (fully adaptive, zero-tuning parameter manager)"
+  ],
+  "results": [
+    "AdaPM matched or outperformed state-of-the-art parameter managers out of the box"
+  ],
+  "paper_id": "62982a9b5aee126c0f6f684c",
+  "title": "Good Intentions: Adaptive Parameter Management via Intent Signaling",
+  "abstract": "  Parameter management is essential for distributed training of large machine learning (ML) tasks. Some ML tasks are hard to distribute because common approaches to parameter management can be highly inefficient. Advanced parameter management approaches -- such as selective replication or dynamic parameter allocation -- can improve efficiency, but to do so, they typically need to be integrated manually into each task's implementation and they require expensive upfront experimentation to tune correctly. In this work, we explore whether these two problems can be avoided. We first propose a novel intent signaling mechanism that integrates naturally into existing ML stacks and provides the parameter manager with crucial information about parameter accesses. We then describe AdaPM, a fully adaptive, zero-tuning parameter manager based on this mechanism. In contrast to prior systems, this approach separates providing information (simple, done by the task) from exploiting it effectively (hard, done automatically by AdaPM). In our experimental evaluation, AdaPM matched or outperformed state-of-the-art parameter managers out of the box, suggesting that automatic parameter management is possible. "
+}

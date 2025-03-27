@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Human Motion Generation"
+  ],
+  "datasets": [
+    "HumanML3D"
+  ],
+  "methods": [
+    "Denoising Diffusion Probabilistic Model"
+  ],
+  "results": [
+    "Competitive results on HumanML3D test set",
+    "Zero-shot generation of motions for unseen text guidance"
+  ],
+  "paper_id": "635753cb90e50fcafdddd7f4",
+  "title": "Diffusion Motion: Generate Text-Guided 3D Human Motion by Diffusion\n  Model",
+  "abstract": "  We propose a simple and novel method for generating 3D human motion from complex natural language sentences, which describe different velocity, direction and composition of all kinds of actions. Different from existing methods that use classical generative architecture, we apply the Denoising Diffusion Probabilistic Model to this task, synthesizing diverse motion results under the guidance of texts. The diffusion model converts white noise into structured 3D motion by a Markov process with a series of denoising steps and is efficiently trained by optimizing a variational lower bound. To achieve the goal of text-conditioned image synthesis, we use the classifier-free guidance strategy to fuse text embedding into the model during training. Our experiments demonstrate that our model achieves competitive results on HumanML3D test set quantitatively and can generate more visually natural and diverse examples. We also show with experiments that our model is capable of zero-shot generation of motions for unseen text guidance. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parallel Biconnectivity"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FAST-BCC"
+  ],
+  "results": [
+    "FAST-BCC is the fastest on all 27 graphs",
+    "On average (geometric means), FAST-BCC is 5.1\u00d7 faster than GBBS, and 3.1\u00d7 faster than the best existing baseline on each graph"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5b0b",
+  "title": "Provably Fast and Space-Efficient Parallel Biconnectivity",
+  "abstract": "  Biconnectivity is one of the most fundamental graph problems. The canonical parallel biconnectivity algorithm is the Tarjan-Vishkin algorithm, which has $O(n+m)$ optimal work (number of operations) and polylogarithmic span (longest dependent operations) on a graph with $n$ vertices and $m$ edges. However, Tarjan-Vishkin is not widely used in practice. We believe the reason is the space-inefficiency (it generates an auxiliary graph with $O(m)$ edges). In practice, existing parallel implementations are based on breath-first search (BFS). Since BFS has span proportional to the diameter of the graph, existing parallel BCC implementations suffer from poor performance on large-diameter graphs and can be even slower than the sequential algorithm on many real-world graphs.   We propose the first parallel biconnectivity algorithm (FAST-BCC) that has optimal work, polylogarithmic span, and is space-efficient. Our algorithm first generates a skeleton graph based on any spanning tree of the input graph. Then we use the connectivity information of the skeleton to compute the biconnectivity of the original input. All the steps in our algorithm are highly-parallel. We carefully analyze the correctness of our algorithm, which is highly non-trivial.   We implemented FAST-BCC and compared it with existing implementations, including GBBS, Slota and Madduri's algorithm, and the sequential Hopcroft-Tarjan algorithm. We ran them on a 96-core machine on 27 graphs, including social, web, road, $k$-NN, and synthetic graphs, with significantly varying sizes and edge distributions. FAST-BCC is the fastest on all 27 graphs. On average (geometric means), FAST-BCC is 5.1$\\times$ faster than GBBS, and 3.1$\\times$ faster than the best existing baseline on each graph. "
+}

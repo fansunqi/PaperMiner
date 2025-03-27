@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous Ground Vehicle Exploration Without A-Priori Maps"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Reinforcement Learning (DRL)",
+    "Actor-Critic DRL algorithms",
+    "Feedforward neural networks",
+    "DDPG, TD3, SAC"
+  ],
+  "results": [
+    "Learn optimal policies",
+    "Quick, efficient and collision-free exploration trajectories",
+    "Adaptable to unknown environments"
+  ],
+  "paper_id": "63be28d490e50fcafdf52ec2",
+  "title": "Deep Reinforcement Learning for Autonomous Ground Vehicle Exploration\n  Without A-Priori Maps",
+  "abstract": "  Autonomous Ground Vehicles (AGVs) are essential tools for a wide range of applications stemming from their ability to operate in hazardous environments with minimal human operator input. Efficient and effective motion planning is paramount for successful operation of AGVs. Conventional motion planning algorithms are dependent on prior knowledge of environment characteristics and offer limited utility in information poor, dynamically altering environments such as areas where emergency hazards like fire and earthquake occur, and unexplored subterranean environments such as tunnels and lava tubes on Mars. We propose a Deep Reinforcement Learning (DRL) framework for intelligent AGV exploration without a-priori maps utilizing Actor-Critic DRL algorithms to learn policies in continuous and high-dimensional action spaces, required for robotics applications. The DRL architecture comprises feedforward neural networks for the critic and actor representations in which the actor network strategizes linear and angular velocity control actions given current state inputs, that are evaluated by the critic network which learns and estimates Q-values to maximize an accumulated reward. Three off-policy DRL algorithms, DDPG, TD3 and SAC, are trained and compared in two environments of varying complexity, and further evaluated in a third with no prior training or knowledge of map characteristics. The agent is shown to learn optimal policies at the end of each training period to chart quick, efficient and collision-free exploration trajectories, and is extensible, capable of adapting to an unknown environment with no changes to network architecture or hyperparameters. "
+}

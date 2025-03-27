@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/su-hui-zz/ReAttentionTransformer"
+  ],
+  "tasks": [
+    "Weakly supervised object localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Re-attention Transformer",
+    "Token priority scoring module (TPSM)"
+  ],
+  "results": [
+    "Superiority against existing methods with image category annotations"
+  ],
+  "paper_id": "62eb392a5aee126c0fb76487",
+  "title": "Re-Attention Transformer for Weakly Supervised Object Localization",
+  "abstract": "  Weakly supervised object localization is a challenging task which aims to localize objects with coarse annotations such as image categories. Existing deep network approaches are mainly based on class activation map, which focuses on highlighting discriminative local region while ignoring the full object. In addition, the emerging transformer-based techniques constantly put a lot of emphasis on the backdrop that impedes the ability to identify complete objects. To address these issues, we present a re-attention mechanism termed token refinement transformer (TRT) that captures the object-level semantics to guide the localization well. Specifically, TRT introduces a novel module named token priority scoring module (TPSM) to suppress the effects of background noise while focusing on the target object. Then, we incorporate the class activation map as the semantically aware input to restrain the attention map to the target object. Extensive experiments on two benchmarks showcase the superiority of our proposed method against existing methods with image category annotations. Source code is available in \\url{https://github.com/su-hui-zz/ReAttentionTransformer}. "
+}

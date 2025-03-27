@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Activity Recognition from Indoor Trajectory Data"
+  ],
+  "datasets": [
+    "Indoor Trajectory Data from a tricycle assembly workshop"
+  ],
+  "methods": [
+    "Semi-supervised machine learning",
+    "Information theoretic criterion",
+    "Constrained hierarchical clustering",
+    "Convolutional neural networks"
+  ],
+  "results": [
+    "High classification accuracy (F-score varies between 0.81 to 0.95 for different trajectories)",
+    "Using only a small proportion of labelled trajectory segments"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa16f",
+  "title": "A Semi-supervised Approach for Activity Recognition from Indoor\n  Trajectory Data",
+  "abstract": "  The increasingly wide usage of location aware sensors has made it possible to collect large volume of trajectory data in diverse application domains. Machine learning allows to study the activities or behaviours of moving objects (e.g., people, vehicles, robot) using such trajectory data with rich spatiotemporal information to facilitate informed strategic and operational decision making. In this study, we consider the task of classifying the activities of moving objects from their noisy indoor trajectory data in a collaborative manufacturing environment. Activity recognition can help manufacturing companies to develop appropriate management policies, and optimise safety, productivity, and efficiency. We present a semi-supervised machine learning approach that first applies an information theoretic criterion to partition a long trajectory into a set of segments such that the object exhibits homogeneous behaviour within each segment. The segments are then labelled automatically based on a constrained hierarchical clustering method. Finally, a deep learning classification model based on convolutional neural networks is trained on trajectory segments and the generated pseudo labels. The proposed approach has been evaluated on a dataset containing indoor trajectories of multiple workers collected from a tricycle assembly workshop. The proposed approach is shown to achieve high classification accuracy (F-score varies between 0.81 to 0.95 for different trajectories) using only a small proportion of labelled trajectory segments. "
+}

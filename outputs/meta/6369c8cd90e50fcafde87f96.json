@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving Inverse Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Implicit Layer",
+    "Model-based Optimization Problem"
+  ],
+  "results": [
+    "Significant improvements in reconstruction quality and robustness over SOTA DNNs"
+  ],
+  "paper_id": "6369c8cd90e50fcafde87f96",
+  "title": "Measurement-Consistent Networks via a Deep Implicit Layer for Solving\n  Inverse Problems",
+  "abstract": "  End-to-end deep neural networks (DNNs) have become the state-of-the-art (SOTA) for solving inverse problems. Despite their outstanding performance, during deployment, such networks are sensitive to minor variations in the testing pipeline and often fail to reconstruct small but important details, a feature critical in medical imaging, astronomy, or defence. Such instabilities in DNNs can be explained by the fact that they ignore the forward measurement model during deployment, and thus fail to enforce consistency between their output and the input measurements. To overcome this, we propose a framework that transforms any DNN for inverse problems into a measurement-consistent one. This is done by appending to it an implicit layer (or deep equilibrium network) designed to solve a model-based optimization problem. The implicit layer consists of a shallow learnable network that can be integrated into the end-to-end training while keeping the SOTA DNN fixed. Experiments on single-image super-resolution show that the proposed framework leads to significant improvements in reconstruction quality and robustness over the SOTA DNNs. "
+}

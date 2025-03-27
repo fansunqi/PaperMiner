@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training Differentially Private Graph Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Random Walk Sampling",
+    "Disjoint Subgraphs"
+  ],
+  "results": [
+    "Outperforms state-of-the-art baseline on three large graphs",
+    "Matches or outperforms on four smaller graphs"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e850",
+  "title": "Training Differentially Private Graph Neural Networks with Random Walk\n  Sampling",
+  "abstract": "  Deep learning models are known to put the privacy of their training data at risk, which poses challenges for their safe and ethical release to the public. Differentially private stochastic gradient descent is the de facto standard for training neural networks without leaking sensitive information about the training data. However, applying it to models for graph-structured data poses a novel challenge: unlike with i.i.d. data, sensitive information about a node in a graph cannot only leak through its gradients, but also through the gradients of all nodes within a larger neighborhood. In practice, this limits privacy-preserving deep learning on graphs to very shallow graph neural networks. We propose to solve this issue by training graph neural networks on disjoint subgraphs of a given training graph. We develop three random-walk-based methods for generating such disjoint subgraphs and perform a careful analysis of the data-generating distributions to provide strong privacy guarantees. Through extensive experiments, we show that our method greatly outperforms the state-of-the-art baseline on three large graphs, and matches or outperforms it on four smaller ones. "
+}

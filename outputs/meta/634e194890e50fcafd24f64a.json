@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Processes",
+    "Transfer Learning",
+    "Drug Discovery"
+  ],
+  "datasets": [
+    "DOCKSTRING"
+  ],
+  "methods": [
+    "Conditional Neural Processes (CNP)"
+  ],
+  "results": [
+    "Competitive performance in few-shot learning tasks",
+    "Probabilistic nature showcased in Bayesian optimization",
+    "Shortcomings in uncertainty quantification"
+  ],
+  "paper_id": "634e194890e50fcafd24f64a",
+  "title": "Conditional Neural Processes for Molecules",
+  "abstract": "  Neural processes (NPs) are models for transfer learning with properties reminiscent of Gaussian Processes (GPs). They are adept at modelling data consisting of few observations of many related functions on the same input space and are trained by minimizing a variational objective, which is computationally much less expensive than the Bayesian updating required by GPs. So far, most studies of NPs have focused on low-dimensional datasets which are not representative of realistic transfer learning tasks. Drug discovery is one application area that is characterized by datasets consisting of many chemical properties or functions which are sparsely observed, yet depend on shared features or representations of the molecular inputs. This paper applies the conditional neural process (CNP) to DOCKSTRING, a dataset of docking scores for benchmarking ML models. CNPs show competitive performance in few-shot learning tasks relative to supervised learning baselines common in chemoinformatics, as well as an alternative model for transfer learning based on pre-training and refining neural network regressors. We present a Bayesian optimization experiment which showcases the probabilistic nature of CNPs and discuss shortcomings of the model in uncertainty quantification. "
+}

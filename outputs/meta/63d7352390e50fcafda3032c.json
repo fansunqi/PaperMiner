@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fair Classification"
+  ],
+  "datasets": [
+    "Home Mortgage Disclosure Act"
+  ],
+  "methods": [
+    "Ensembling algorithm",
+    "Self-consistency notion"
+  ],
+  "results": [
+    "Reduction in subgroup error rate disparities",
+    "Improvement in fairness and accuracy"
+  ],
+  "paper_id": "63d7352390e50fcafda3032c",
+  "title": "Variance, Self-Consistency, and Arbitrariness in Fair Classification",
+  "abstract": "  In fair classification, it is common to train a model, and to compare and correct subgroup-specific error rates for disparities. However, even if a model's classification decisions satisfy a fairness metric, it is not necessarily the case that these decisions are equally confident. This becomes clear if we measure variance: We can fix everything in the learning process except the subset of training data, train multiple models, measure (dis)agreement in predictions for each test example, and interpret disagreement to mean that the learning process is more unstable with respect to its classification decision. Empirically, some decisions can in fact be so unstable that they are effectively arbitrary. To reduce this arbitrariness, we formalize a notion of self-consistency of a learning process, develop an ensembling algorithm that provably increases self-consistency, and empirically demonstrate its utility to often improve both fairness and accuracy. Further, our evaluation reveals a startling observation: Applying ensembling to common fair classification benchmarks can significantly reduce subgroup error rate disparities, without employing common pre-, in-, or post-processing fairness interventions. Taken together, our results indicate that variance, particularly on small datasets, can muddle the reliability of conclusions about fairness. One solution is to develop larger benchmark tasks. To this end, we release a toolkit that makes the Home Mortgage Disclosure Act datasets easily usable for future research. "
+}

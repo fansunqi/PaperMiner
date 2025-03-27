@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-Supervised Traversability Estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Network",
+    "PU learning",
+    "Model Predictive Controller"
+  ],
+  "results": [
+    "Effective navigation",
+    "Distinct maneuvers based on vehicle characteristics",
+    "Identify and avoid non-traversable regions"
+  ],
+  "paper_id": "632297f590e50fcafdc884b2",
+  "title": "ScaTE: A Scalable Framework for Self-Supervised Traversability\n  Estimation in Unstructured Environments",
+  "abstract": "  For the safe and successful navigation of autonomous vehicles in unstructured environments, the traversability of terrain should vary based on the driving capabilities of the vehicles. Actual driving experience can be utilized in a self-supervised fashion to learn vehicle-specific traversability. However, existing methods for learning self-supervised traversability are not highly scalable for learning the traversability of various vehicles. In this work, we introduce a scalable framework for learning self-supervised traversability, which can learn the traversability directly from vehicle-terrain interaction without any human supervision. We train a neural network that predicts the proprioceptive experience that a vehicle would undergo from 3D point clouds. Using a novel PU learning method, the network simultaneously identifies non-traversable regions where estimations can be overconfident. With driving data of various vehicles gathered from simulation and the real world, we show that our framework is capable of learning the self-supervised traversability of various vehicles. By integrating our framework with a model predictive controller, we demonstrate that estimated traversability results in effective navigation that enables distinct maneuvers based on the driving characteristics of the vehicles. In addition, experimental results validate the ability of our method to identify and avoid non-traversable regions. "
+}

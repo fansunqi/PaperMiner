@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fluid-Structure Interaction for Robotics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Aquarium: a fully differentiable solver using Crank-Nicolson scheme, finite-volume discretization, immersed-boundary method, and nonlinear optimization"
+  ],
+  "results": [
+    "Accurate simulation of coupled fluid-robot physics",
+    "Analytical gradients for shape-and-gait optimization"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b8e4",
+  "title": "Aquarium: A Fully Differentiable Fluid-Structure Interaction Solver for\n  Robotics Applications",
+  "abstract": "  We present Aquarium, a differentiable fluid-structure interaction solver for robotics that offers stable simulation, accurately coupled fluid-robot physics in two dimensions, and full differentiability with respect to fluid and robot states and parameters. Aquarium achieves stable simulation with accurate flow physics by directly integrating over the incompressible Navier-Stokes equations using a fully implicit Crank-Nicolson scheme with a second-order finite-volume spatial discretization. The fluid and robot physics are coupled using the immersed-boundary method by formulating the no-slip condition as an equality constraint applied directly to the Navier-Stokes system. This choice of coupling allows the fluid-structure interaction to be posed and solved as a nonlinear optimization problem. This optimization-based formulation is then exploited using the implicit-function theorem to compute derivatives. Derivatives can then be passed to downstream gradient-based optimization or learning algorithms. We demonstrate Aquarium's ability to accurately simulate coupled fluid-robot physics with numerous 2D examples, including a cylinder in free stream and a soft robotic fish tail with hardware validation. We also demonstrate Aquarium's ability to provide analytical gradients by performing gradient-based shape-and-gait optimization of an oscillating diamond foil to maximize its generated thrust. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Flow visualization",
+    "Learning neural representations of flow maps"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Novel neural network design for flow maps",
+    "Optimization scheme",
+    "Self-consistency criterion on flow map derivatives"
+  ],
+  "results": [
+    "Benefits in terms of accuracy and efficiency",
+    "Benefits for unsteady flow visualization techniques such as streaklines and finite-time Lyapunov exponent"
+  ],
+  "paper_id": "6369c8cd90e50fcafde87fb4",
+  "title": "Integration-free Learning of Flow Maps",
+  "abstract": "  We present a method for learning neural representations of flow maps from time-varying vector field data. The flow map is pervasive within the area of flow visualization, as it is foundational to numerous visualization techniques, e.g. integral curve computation for pathlines or streaklines, as well as computing separation/attraction structures within the flow field. Yet bottlenecks in flow map computation, namely the numerical integration of vector fields, can easily inhibit their use within interactive visualization settings. In response, in our work we seek neural representations of flow maps that are efficient to evaluate, while remaining scalable to optimize, both in computation cost and data requirements. A key aspect of our approach is that we can frame the process of representation learning not in optimizing for samples of the flow map, but rather, a self-consistency criterion on flow map derivatives that eliminates the need for flow map samples, and thus numerical integration, altogether. Central to realizing this is a novel neural network design for flow maps, coupled with an optimization scheme, wherein our representation only requires the time-varying vector field for learning, encoded as instantaneous velocity. We show the benefits of our method over prior works in terms of accuracy and efficiency across a range of 2D and 3D time-varying vector fields, while showing how our neural representation of flow maps can benefit unsteady flow visualization techniques such as streaklines, and the finite-time Lyapunov exponent. "
+}

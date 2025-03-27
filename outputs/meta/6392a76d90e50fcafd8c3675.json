@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Brain-Computer Interface (BCI) for Cybathlon 2020"
+  ],
+  "datasets": [
+    "PhysioNet database",
+    "Our dataset"
+  ],
+  "methods": [
+    "Feature Average",
+    "Feature Range",
+    "Support Vector Machine (SVM) classifier",
+    "Ensemble SVM classifier"
+  ],
+  "results": [
+    "Range40 method with ensemble SVM classifier achieves highest accuracy (0.4607) on PhysioNet dataset",
+    "Outperforms state-of-the-art EEGNet"
+  ],
+  "paper_id": "6392a76d90e50fcafd8c3675",
+  "title": "Closed loop BCI System for Cybathlon 2020",
+  "abstract": "  We present our Brain-Computer Interface (BCI) System, developed for the BCI discipline of Cybathlon 2020 competition. In the BCI discipline, subjects with tetraplegia are required to control a computer game with mental commands. The absolute of the Fast-Fourier Transformation amplitude was calculated as a feature (FFTabs) from one-second-long electroencephalographic (EEG) signals. To extract the final features, we introduced two methods, namely the Feature Average, where the average of the FFTabs for a specific frequency band was calculated, and the Feature Range, which was based on generating multiple Feature Averages for non-overlapping 2 Hz wide frequency bins. The resulting features were fed to a Support Vector Machine classifier. The algorithms were tested on the PhysioNet database and our dataset, which contains 16 offline experiments recorded with 2 tetraplegic subjects. 27 gameplay trials (out of 59) with our tetraplegic subjects reached the 240-second qualification time limit. The Feature Average of canonical frequency bands (alpha, beta, gamma, and theta) were compared with our suggested range30 and range40 methods. On the PhysioNet dataset, the range40 method combined with an ensemble SVM classifier significantly reached the highest accuracy level (0.4607), with a 4-class classification, and outperformed the state-of-the-art EEGNet. "
+}

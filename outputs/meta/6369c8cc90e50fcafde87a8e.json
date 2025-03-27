@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Discovering closed-loop failures of vision-based controllers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hamilton-Jacobi (HJ) reachability problem",
+    "Simulation-based analysis"
+  ],
+  "results": [
+    "Scalability to high-dimensional visual inputs",
+    "Explicit computation of backward reachable tube (BRT)",
+    "Non-trivial system failures capture"
+  ],
+  "paper_id": "6369c8cc90e50fcafde87a8e",
+  "title": "Discovering Closed-Loop Failures of Vision-Based Controllers via\n  Reachability Analysis",
+  "abstract": "  Machine learning driven image-based controllers allow robotic systems to take intelligent actions based on the visual feedback from their environment. Understanding when these controllers might lead to system safety violations is important for their integration in safety-critical applications and engineering corrective safety measures for the system. Existing methods leverage simulation-based testing (or falsification) to find the failures of vision-based controllers, i.e., the visual inputs that lead to closed-loop safety violations. However, these techniques do not scale well to the scenarios involving high-dimensional and complex visual inputs, such as RGB images. In this work, we cast the problem of finding closed-loop vision failures as a Hamilton-Jacobi (HJ) reachability problem. Our approach blends simulation-based analysis with HJ reachability methods to compute an approximation of the backward reachable tube (BRT) of the system, i.e., the set of unsafe states for the system under vision-based controllers. Utilizing the BRT, we can tractably and systematically find the system states and corresponding visual inputs that lead to closed-loop failures. These visual inputs can be subsequently analyzed to find the input characteristics that might have caused the failure. Besides its scalability to high-dimensional visual inputs, an explicit computation of BRT allows the proposed approach to capture non-trivial system failures that are difficult to expose via random simulations. We demonstrate our framework on two case studies involving an RGB image-based neural network controller for (a) autonomous indoor navigation, and (b) autonomous aircraft taxiing. "
+}

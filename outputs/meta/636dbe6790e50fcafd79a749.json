@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Non-Uniform PDE Data Compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "QuadConv"
+  ],
+  "results": [
+    "QuadConv autoencoder (QCAE) matches standard convolutional autoencoder (CAE) performance on uniform grid data",
+    "QCAE maintains accuracy on non-uniform data"
+  ],
+  "paper_id": "636dbe6790e50fcafd79a749",
+  "title": "QuadConv: Quadrature-Based Convolutions with Applications to Non-Uniform\n  PDE Data Compression",
+  "abstract": "  We present a new convolution layer for deep learning architectures which we call QuadConv -- an approximation to continuous convolution via quadrature. Our operator is developed explicitly for use on non-uniform, mesh-based data, and accomplishes this by learning a continuous kernel that can be sampled at arbitrary locations. Moreover, the construction of our operator admits an efficient implementation which we detail and construct. In the setting of compressing data arising from partial differential equation (PDE) simulations, we show that QuadConv can match the performance of standard discrete convolutions on uniform grid data by comparing a QuadConv autoencoder (QCAE) to a standard convolutional autoencoder (CAE). Further, we show that the QCAE can maintain this accuracy even on non-uniform data. "
+}

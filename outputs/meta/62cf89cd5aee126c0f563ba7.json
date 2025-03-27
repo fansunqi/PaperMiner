@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://n20em.github.io"
+  ],
+  "tasks": [
+    "Multimodal Automatic Lyric Transcription"
+  ],
+  "datasets": [
+    "N20EM"
+  ],
+  "methods": [
+    "wav2vec 2.0",
+    "video-based ALT",
+    "IMU-based voice activity detection",
+    "Residual Cross Attention (RCA)"
+  ],
+  "results": [
+    "noise robustness"
+  ],
+  "paper_id": "62cf89cd5aee126c0f563ba7",
+  "title": "MM-ALT: A Multimodal Automatic Lyric Transcription System",
+  "abstract": "  Automatic lyric transcription (ALT) is a nascent field of study attracting increasing interest from both the speech and music information retrieval communities, given its significant application potential. However, ALT with audio data alone is a notoriously difficult task due to instrumental accompaniment and musical constraints resulting in degradation of both the phonetic cues and the intelligibility of sung lyrics. To tackle this challenge, we propose the MultiModal Automatic Lyric Transcription system (MM-ALT), together with a new dataset, N20EM, which consists of audio recordings, videos of lip movements, and inertial measurement unit (IMU) data of an earbud worn by the performing singer. We first adapt the wav2vec 2.0 framework from automatic speech recognition (ASR) to the ALT task. We then propose a video-based ALT method and an IMU-based voice activity detection (VAD) method. In addition, we put forward the Residual Cross Attention (RCA) mechanism to fuse data from the three modalities (i.e., audio, video, and IMU). Experiments show the effectiveness of our proposed MM-ALT system, especially in terms of noise robustness. Project page is at https://n20em.github.io. "
+}

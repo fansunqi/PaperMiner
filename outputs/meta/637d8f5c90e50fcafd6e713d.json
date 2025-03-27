@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spiking Neural Networks (SNNs) compression",
+    "Adaptive structural development of SNNs"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10",
+    "N-MNIST",
+    "DVS-Gesture"
+  ],
+  "methods": [
+    "Dendritic spine plasticity-based synaptic constraint",
+    "Neuronal pruning",
+    "Synaptic regeneration",
+    "Adaptive adjustment of pruning and regeneration rates"
+  ],
+  "results": [
+    "99.51% accuracy on MNIST with 49.83% pruning rate",
+    "98.20% accuracy on DVS-Gesture with 55.50% compression rate"
+  ],
+  "paper_id": "637d8f5c90e50fcafd6e713d",
+  "title": "Adaptive Sparse Structure Development with Pruning and Regeneration for\n  Spiking Neural Networks",
+  "abstract": "  Spiking Neural Networks (SNNs) are more biologically plausible and computationally efficient. Therefore, SNNs have the natural advantage of drawing the sparse structural plasticity of brain development to alleviate the energy problems of deep neural networks caused by their complex and fixed structures. However, previous SNNs compression works are lack of in-depth inspiration from the brain development plasticity mechanism. This paper proposed a novel method for the adaptive structural development of SNN (SD-SNN), introducing dendritic spine plasticity-based synaptic constraint, neuronal pruning and synaptic regeneration. We found that synaptic constraint and neuronal pruning can detect and remove a large amount of redundancy in SNNs, coupled with synaptic regeneration can effectively prevent and repair over-pruning. Moreover, inspired by the neurotrophic hypothesis, neuronal pruning rate and synaptic regeneration rate were adaptively adjusted during the learning-while-pruning process, which eventually led to the structural stability of SNNs. Experimental results on spatial (MNIST, CIFAR-10) and temporal neuromorphic (N-MNIST, DVS-Gesture) datasets demonstrate that our method can flexibly learn appropriate compression rate for various tasks and effectively achieve superior performance while massively reducing the network energy consumption. Specifically, for the spatial MNIST dataset, our SD-SNN achieves 99.51\\% accuracy at the pruning rate 49.83\\%, which has a 0.05\\% accuracy improvement compared to the baseline without compression. For the neuromorphic DVS-Gesture dataset, 98.20\\% accuracy with 1.09\\% improvement is achieved by our method when the compression rate reaches 55.50\\%. "
+}

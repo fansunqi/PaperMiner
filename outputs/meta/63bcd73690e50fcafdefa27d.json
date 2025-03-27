@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Punctuation and Segmentation Prediction for Dutch"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformers",
+    "sequence classification model",
+    "RobBERT language model"
+  ],
+  "results": [
+    "Better than machine translation baseline"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa27d",
+  "title": "FullStop:Punctuation and Segmentation Prediction for Dutch with\n  Transformers",
+  "abstract": "  When applying automated speech recognition (ASR) for Belgian Dutch (Van Dyck et al. 2021), the output consists of an unsegmented stream of words, without any punctuation. A next step is to perform segmentation and insert punctuation, making the ASR output more readable and easy to manually correct. As far as we know there is no publicly available punctuation insertion system for Dutch that functions at a usable level. The model we present here is an extension of the models of Guhr et al. (2021) for Dutch and is made publicly available. We trained a sequence classification model, based on the Dutch language model RobBERT (Delobelle et al. 2020). For every word in the input sequence, the models predicts a punctuation marker that follows the word. We have also extended a multilingual model, for cases where the language is unknown or where code switching applies. When performing the task of segmentation, the application of the best models onto out of domain test data, a sliding window of 200 words of the ASR output stream is sent to the classifier, and segmentation is applied when the system predicts a segmenting punctuation sign with a ratio above threshold. Results show to be much better than a machine translation baseline approach. "
+}

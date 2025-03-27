@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Clustering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Leapfrog distances",
+    "Multidimensional scaling",
+    "Spectral methods",
+    "Sum-of-norms (SON) clustering"
+  ],
+  "results": [
+    "Improved recovery guarantees of clustering"
+  ],
+  "paper_id": "63d340ef90e50fcafd91157e",
+  "title": "Re-embedding data to strengthen recovery guarantees of clustering",
+  "abstract": "  We propose a clustering method that involves chaining four known techniques into a pipeline yielding an algorithm with stronger recovery guarantees than any of the four components separately. Given $n$ points in $\\mathbb R^d$, the first component of our pipeline, which we call leapfrog distances, is reminiscent of density-based clustering, yielding an $n\\times n$ distance matrix. The leapfrog distances are then translated to new embeddings using multidimensional scaling and spectral methods, two other known techniques, yielding new embeddings of the $n$ points in $\\mathbb R^{d'}$, where $d'$ satisfies $d'\\ll d$ in general. Finally, sum-of-norms (SON) clustering is applied to the re-embedded points. Although the fourth step (SON clustering) can in principle be replaced by any other clustering method, our focus is on provable guarantees of recovery of underlying structure. Therefore, we establish that the re-embedding improves recovery SON clustering, since SON clustering is a well-studied method that already has provable guarantees. "
+}

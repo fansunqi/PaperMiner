@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised learning",
+    "Spiking neural networks (SNNs)"
+  ],
+  "datasets": [
+    "MNIST",
+    "FashionMNIST",
+    "CIFAR10"
+  ],
+  "methods": [
+    "Adaptive synaptic filter",
+    "Adaptive spiking threshold",
+    "Adaptive lateral inhibitory connection",
+    "Samples temporal batch STDP (STB-STDP)"
+  ],
+  "results": [
+    "State-of-the-art performance on MNIST and FashionMNIST",
+    "Superiority on CIFAR10",
+    "Outperforms supervised ANN in small-sample learning"
+  ],
+  "paper_id": "62c64f2e5aee126c0f6cf28a",
+  "title": "An Unsupervised STDP-based Spiking Neural Network Inspired By\n  Biologically Plausible Learning Rules and Connections",
+  "abstract": "  The backpropagation algorithm has promoted the rapid development of deep learning, but it relies on a large amount of labeled data and still has a large gap with how humans learn. The human brain can quickly learn various conceptual knowledge in a self-organized and unsupervised manner, accomplished through coordinating various learning rules and structures in the human brain. Spike-timing-dependent plasticity (STDP) is a general learning rule in the brain, but spiking neural networks (SNNs) trained with STDP alone is inefficient and perform poorly. In this paper, taking inspiration from short-term synaptic plasticity, we design an adaptive synaptic filter and introduce the adaptive spiking threshold as the neuron plasticity to enrich the representation ability of SNNs. We also introduce an adaptive lateral inhibitory connection to adjust the spikes balance dynamically to help the network learn richer features. To speed up and stabilize the training of unsupervised spiking neural networks, we design a samples temporal batch STDP (STB-STDP), which updates weights based on multiple samples and moments. By integrating the above three adaptive mechanisms and STB-STDP, our model greatly accelerates the training of unsupervised spiking neural networks and improves the performance of unsupervised SNNs on complex tasks. Our model achieves the current state-of-the-art performance of unsupervised STDP-based SNNs in the MNIST and FashionMNIST datasets. Further, we tested on the more complex CIFAR10 dataset, and the results fully illustrate the superiority of our algorithm. Our model is also the first work to apply unsupervised STDP-based SNNs to CIFAR10. At the same time, in the small-sample learning scenario, it will far exceed the supervised ANN using the same structure. "
+}

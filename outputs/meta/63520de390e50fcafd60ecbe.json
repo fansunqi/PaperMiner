@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated Curriculum Learning from Demonstrations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Task Phasing",
+    "Inverse RL",
+    "Guiding informative reward function"
+  ],
+  "results": [
+    "Outperforms state-of-the-art approaches with respect to asymptotic performance"
+  ],
+  "paper_id": "63520de390e50fcafd60ecbe",
+  "title": "Task Phasing: Automated Curriculum Learning from Demonstrations",
+  "abstract": "  Applying reinforcement learning (RL) to sparse reward domains is notoriously challenging due to insufficient guiding signals. Common RL techniques for addressing such domains include (1) learning from demonstrations and (2) curriculum learning. While these two approaches have been studied in detail, they have rarely been considered together. This paper aims to do so by introducing a principled task phasing approach that uses demonstrations to automatically generate a curriculum sequence. Using inverse RL from (suboptimal) demonstrations we define a simple initial task. Our task phasing approach then provides a framework to gradually increase the complexity of the task all the way to the target task, while retuning the RL agent in each phasing iteration. Two approaches for phasing are considered: (1) gradually increasing the proportion of time steps an RL agent is in control, and (2) phasing out a guiding informative reward function. We present conditions that guarantee the convergence of these approaches to an optimal policy. Experimental results on 3 sparse reward domains demonstrate that our task phasing approaches outperform state-of-the-art approaches with respect to asymptotic performance. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/google/vizier"
+  ],
+  "tasks": [
+    "Blackbox Optimization",
+    "Hyperparameter Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributed Infrastructure",
+    "RPC-based Infrastructure",
+    "Pythia API"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62e1fea95aee126c0f701a5c",
+  "title": "Open Source Vizier: Distributed Infrastructure and API for Reliable and\n  Flexible Blackbox Optimization",
+  "abstract": "  Vizier is the de-facto blackbox and hyperparameter optimization service across Google, having optimized some of Google's largest products and research efforts. To operate at the scale of tuning thousands of users' critical systems, Google Vizier solved key design challenges in providing multiple different features, while remaining fully fault-tolerant. In this paper, we introduce Open Source (OSS) Vizier, a standalone Python-based interface for blackbox optimization and research, based on the Google-internal Vizier infrastructure and framework. OSS Vizier provides an API capable of defining and solving a wide variety of optimization problems, including multi-metric, early stopping, transfer learning, and conditional search. Furthermore, it is designed to be a distributed system that assures reliability, and allows multiple parallel evaluations of the user's objective function. The flexible RPC-based infrastructure allows users to access OSS Vizier from binaries written in any language. OSS Vizier also provides a back-end (\"Pythia\") API that gives algorithm authors a way to interface new algorithms with the core OSS Vizier system. OSS Vizier is available at https://github.com/google/vizier. "
+}

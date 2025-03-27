@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D point cloud classification"
+  ],
+  "datasets": [
+    "ScanObjectNN"
+  ],
+  "methods": [
+    "steerable 3D spherical neurons",
+    "vector neurons",
+    "TetraTransform",
+    "VN-DGCNN framework"
+  ],
+  "results": [
+    "new state-of-the-art classification performance on randomly rotated objects of the hardest subset of ScanObjectNN"
+  ],
+  "paper_id": "6385787c90e50fcafdf47c59",
+  "title": "TetraSphere: A Neural Descriptor for O(3)-Invariant Point Cloud\n  Classification",
+  "abstract": "  Rotation invariance is an important requirement for the analysis of 3D point clouds. In this paper, we present a learnable descriptor for rotation- and reflection-invariant 3D point cloud classification based on recently introduced steerable 3D spherical neurons and vector neurons. Specifically, we show that the two approaches are compatible, and we show how to apply steerable neurons in an end-to-end method for the first time. In our approach, we perform TetraTransform -- which lifts the 3D input to an equivariant 4D representation, constructed by the steerable neurons -- and extract deeper rotation-equivariant features using vector neurons, subsequently computing pair-wise O(3)-invariant inner products of these features. This integration of the TetraTransform into the VN-DGCNN framework, termed TetraSphere, is used to classify synthetic and real-world data in arbitrary orientations. Taking only 3D coordinates as input, TetraSphere sets a new state-of-the-art classification performance on randomly rotated objects of the hardest subset of ScanObjectNN, even when trained on data without additional rotation augmentation. Our results reveal the practical value of spherical decision surfaces for learning in 3D Euclidean space. "
+}

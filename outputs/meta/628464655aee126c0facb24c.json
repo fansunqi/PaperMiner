@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning",
+    "Value Function Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Saddlepoint Optimization",
+    "Huber Bellman Error",
+    "Absolute Bellman Error"
+  ],
+  "results": [
+    "More stable algorithms",
+    "Less sensitivity to meta-parameters"
+  ],
+  "paper_id": "628464655aee126c0facb24c",
+  "title": "Robust Losses for Learning Value Functions",
+  "abstract": "  Most value function learning algorithms in reinforcement learning are based on the mean squared (projected) Bellman error. However, squared errors are known to be sensitive to outliers, both skewing the solution of the objective and resulting in high-magnitude and high-variance gradients. To control these high-magnitude updates, typical strategies in RL involve clipping gradients, clipping rewards, rescaling rewards, or clipping errors. While these strategies appear to be related to robust losses -- like the Huber loss -- they are built on semi-gradient update rules which do not minimize a known loss. In this work, we build on recent insights reformulating squared Bellman errors as a saddlepoint optimization problem and propose a saddlepoint reformulation for a Huber Bellman error and Absolute Bellman error. We start from a formalization of robust losses, then derive sound gradient-based approaches to minimize these losses in both the online off-policy prediction and control settings. We characterize the solutions of the robust losses, providing insight into the problem settings where the robust losses define notably better solutions than the mean squared Bellman error. Finally, we show that the resulting gradient-based algorithms are more stable, for both prediction and control, with less sensitivity to meta-parameters. "
+}

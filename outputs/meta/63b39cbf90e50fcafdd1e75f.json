@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Missing value imputation"
+  ],
+  "datasets": [
+    "SNP datasets"
+  ],
+  "methods": [
+    "Chains of Autoreplicative Random Forests"
+  ],
+  "results": [
+    "Better performance than standard algorithms",
+    "Works well for low-sampled data"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e75f",
+  "title": "Chains of Autoreplicative Random Forests for missing value imputation in\n  high-dimensional datasets",
+  "abstract": "  Missing values are a common problem in data science and machine learning. Removing instances with missing values can adversely affect the quality of further data analysis. This is exacerbated when there are relatively many more features than instances, and thus the proportion of affected instances is high. Such a scenario is common in many important domains, for example, single nucleotide polymorphism (SNP) datasets provide a large number of features over a genome for a relatively small number of individuals. To preserve as much information as possible prior to modeling, a rigorous imputation scheme is acutely needed. While Denoising Autoencoders is a state-of-the-art method for imputation in high-dimensional data, they still require enough complete cases to be trained on which is often not available in real-world problems. In this paper, we consider missing value imputation as a multi-label classification problem and propose Chains of Autoreplicative Random Forests. Using multi-label Random Forests instead of neural networks works well for low-sampled data as there are fewer parameters to optimize. Experiments on several SNP datasets show that our algorithm effectively imputes missing values based only on information from the dataset and exhibits better performance than standard algorithms that do not require any additional information. In this paper, the algorithm is implemented specifically for SNP data, but it can easily be adapted for other cases of missing value imputation. "
+}

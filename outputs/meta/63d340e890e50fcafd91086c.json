@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated image classification",
+    "Semi-Supervised Learning (SSL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FedSwitch",
+    "Exponential Moving Average (EMA) updates",
+    "local teacher adaptation",
+    "adaptive switching between teacher and student for pseudo-label generation"
+  ],
+  "results": [
+    "Outperforms state-of-the-art on federated image classification",
+    "Adaptable to real-world constraints",
+    "Good generalization performance with minimal communication cost overhead"
+  ],
+  "paper_id": "63d340e890e50fcafd91086c",
+  "title": "When does the student surpass the teacher? Federated Semi-supervised\n  Learning with Teacher-Student EMA",
+  "abstract": "  Semi-Supervised Learning (SSL) has received extensive attention in the domain of computer vision, leading to development of promising approaches such as FixMatch. In scenarios where training data is decentralized and resides on client devices, SSL must be integrated with privacy-aware training techniques such as Federated Learning. We consider the problem of federated image classification and study the performance and privacy challenges with existing federated SSL (FSSL) approaches. Firstly, we note that even state-of-the-art FSSL algorithms can trivially compromise client privacy and other real-world constraints such as client statelessness and communication cost. Secondly, we observe that it is challenging to integrate EMA (Exponential Moving Average) updates into the federated setting, which comes at a trade-off between performance and communication cost. We propose a novel approach FedSwitch, that improves privacy as well as generalization performance through Exponential Moving Average (EMA) updates. FedSwitch utilizes a federated semi-supervised teacher-student EMA framework with two features - local teacher adaptation and adaptive switching between teacher and student for pseudo-label generation. Our proposed approach outperforms the state-of-the-art on federated image classification, can be adapted to real-world constraints, and achieves good generalization performance with minimal communication cost overhead. "
+}

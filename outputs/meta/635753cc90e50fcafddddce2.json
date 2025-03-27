@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Emotional support conversation"
+  ],
+  "datasets": [
+    "benchmark dataset"
+  ],
+  "methods": [
+    "Prior Knowledge Enhanced emotional support model with latent variable",
+    "memory schema"
+  ],
+  "results": [
+    "PoKE outperforms existing baselines on both automatic evaluation and human evaluation",
+    "Compared with the model using external knowledge, PoKE still can make a slight improvement in some metrics",
+    "Further experiments prove that abundant prior knowledge is conducive to high-quality emotional support, and a well-learned latent variable is critical to the diversity of generations"
+  ],
+  "paper_id": "635753cc90e50fcafddddce2",
+  "title": "PoKE: Prior Knowledge Enhanced Emotional Support Conversation with\n  Latent Variable",
+  "abstract": "  Emotional support conversation (ESC) task can utilize various support strategies to help people relieve emotional distress and overcome the problem they face, which has attracted much attention in these years. However, most state-of-the-art works rely heavily on external commonsense knowledge to infer the mental state of the user in every dialogue round. Although effective, they may suffer from significant human effort, knowledge update and domain change in a long run. Therefore, in this article, we focus on exploring the task itself without using any external knowledge. We find all existing works ignore two significant characteristics of ESC. (a) Abundant prior knowledge exists in historical conversations, such as the responses to similar cases and the general order of support strategies, which has a great reference value for current conversation. (b) There is a one-to-many mapping relationship between context and support strategy, i.e.multiple strategies are reasonable for a single context. It lays a better foundation for the diversity of generations. Taking into account these two key factors, we propose Prior Knowledge Enhanced emotional support model with latent variable, PoKE. The proposed model fully taps the potential of prior knowledge in terms of exemplars and strategy sequence and then utilizes a latent variable to model the one-to-many relationship of strategy. Furthermore, we introduce a memory schema to incorporate the encoded knowledge into decoder. Experiment results on benchmark dataset show that our PoKE outperforms existing baselines on both automatic evaluation and human evaluation. Compared with the model using external knowledge, PoKE still can make a slight improvement in some metrics. Further experiments prove that abundant prior knowledge is conducive to high-quality emotional support, and a well-learned latent variable is critical to the diversity of generations. "
+}

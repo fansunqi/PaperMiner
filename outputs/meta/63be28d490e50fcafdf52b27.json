@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cellular Throughput Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated Learning (FL)",
+    "Cross-Technology FL (CTFL)"
+  ],
+  "results": [
+    "FedPut outperforms various standard baseline algorithms",
+    "Reduces the variation in the rebuffering time of streaming videos",
+    "Improves QoE compared to other baselines"
+  ],
+  "paper_id": "63be28d490e50fcafdf52b27",
+  "title": "Revisiting Cellular Throughput Prediction: Learning in-situ for\n  Multi-device and Multi-network Considerations for 5G",
+  "abstract": "  Recent advancement in the ultra-highspeed cellular networks has pivoted the development of various next-generation applications, demanding precise monitoring of the underlying network conditions to adapt their configurations for the best user experience. Downlink throughput prediction using machine or deep learning techniques is one of the significant aspects in this direction. However existing works are limited in scope as the prediction models are primarily trained using the data from a closed network under a fixed cellular operator. Precisely, these models are not transferable across networks of different operators because of the vast variability in the underlying network configurations across operators, device specifications, and devices' responsiveness towards an operator's network. With the help of real network data, we show in this paper that the existing models get invalidated when trained with the data from one network and then applied to a different network. Finally we propose FedPut, utilizing Federated Learning (FL) to develop the throughput prediction model. We develop a novel approach called Cross-Technology FL (CTFL) that allows distributed model training over the user equipment by capturing throughput variations based on devices' sensitivity towards the corresponding network configurations. Rigorous evaluations show that FedPut outperforms various standard baseline algorithms. Subsequently, we also analyze the performance of FedPut over a network-aware ABR video streaming application. Such application-specific analysis also shows that FedPut reduces the variation in the rebuffering time of streaming videos, thereby improving the QoE compared to other baselines. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/ZichengDuan/MvCHM"
+  ],
+  "tasks": [
+    "Multiview detection",
+    "Locating occluded pedestrians"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Human point clouds modeling",
+    "Ray tracing for depth estimation",
+    "Cardboard human modeling"
+  ],
+  "results": [
+    "Competitive results on four standard evaluation benchmarks"
+  ],
+  "paper_id": "62c4fd9b5aee126c0fad7088",
+  "title": "Multiview Detection with Cardboard Human Modeling",
+  "abstract": "  Multiview detection uses multiple calibrated cameras with overlapping fields of views to locate occluded pedestrians. In this field, existing methods typically adopt a ``human modeling - aggregation'' strategy. To find robust pedestrian representations, some intuitively incorporate 2D perception results from each frame, while others use entire frame features projected to the ground plane. However, the former does not consider the human appearance and leads to many ambiguities, and the latter suffers from projection errors due to the lack of accurate height of the human torso and head. In this paper, we propose a new pedestrian representation scheme based on human point clouds modeling. Specifically, using ray tracing for holistic human depth estimation, we model pedestrians as upright, thin cardboard point clouds on the ground. Then, we aggregate the point clouds of the pedestrian cardboard across multiple views for a final decision. Compared with existing representations, the proposed method explicitly leverages human appearance and reduces projection errors significantly by relatively accurate height estimation. On four standard evaluation benchmarks, the proposed method achieves very competitive results. Our code and data will be released at https://github.com/ZichengDuan/MvCHM. "
+}

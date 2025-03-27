@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SAlient Point-based DETR (SAP-DETR)"
+  ],
+  "results": [
+    "1.4 times convergency speed",
+    "1.0 AP improvement",
+    "46.9 AP"
+  ],
+  "paper_id": "636482d890e50fcafdccb12f",
+  "title": "SAP-DETR: Bridging the Gap Between Salient Points and Queries-Based\n  Transformer Detector for Fast Model Convergency",
+  "abstract": "  Recently, the dominant DETR-based approaches apply central-concept spatial prior to accelerate Transformer detector convergency. These methods gradually refine the reference points to the center of target objects and imbue object queries with the updated central reference information for spatially conditional attention. However, centralizing reference points may severely deteriorate queries' saliency and confuse detectors due to the indiscriminative spatial prior. To bridge the gap between the reference points of salient queries and Transformer detectors, we propose SAlient Point-based DETR (SAP-DETR) by treating object detection as a transformation from salient points to instance objects. In SAP-DETR, we explicitly initialize a query-specific reference point for each object query, gradually aggregate them into an instance object, and then predict the distance from each side of the bounding box to these points. By rapidly attending to query-specific reference region and other conditional extreme regions from the image features, SAP-DETR can effectively bridge the gap between the salient point and the query-based Transformer detector with a significant convergency speed. Our extensive experiments have demonstrated that SAP-DETR achieves 1.4 times convergency speed with competitive performance. Under the standard training scheme, SAP-DETR stably promotes the SOTA approaches by 1.0 AP. Based on ResNet-DC-101, SAP-DETR achieves 46.9 AP. "
+}

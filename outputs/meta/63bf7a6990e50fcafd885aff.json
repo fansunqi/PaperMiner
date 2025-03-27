@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Imputing Spatiotemporal Urban Data"
+  ],
+  "datasets": [
+    "NYC taxi data",
+    "NYC bikeshare data"
+  ],
+  "methods": [
+    "3D Partial Convolutions",
+    "Biased Masking"
+  ],
+  "results": [
+    "Effective qualitatively and quantitatively",
+    "Reduces error in various scenarios",
+    "Tradeoff in varying the number of timesteps"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885aff",
+  "title": "Adapting to Skew: Imputing Spatiotemporal Urban Data with 3D Partial\n  Convolutions and Biased Masking",
+  "abstract": "  We adapt image inpainting techniques to impute large, irregular missing regions in urban settings characterized by sparsity, variance in both space and time, and anomalous events. Missing regions in urban data can be caused by sensor or software failures, data quality issues, interference from weather events, incomplete data collection, or varying data use regulations; any missing data can render the entire dataset unusable for downstream applications. To ensure coverage and utility, we adapt computer vision techniques for image inpainting to operate on 3D histograms (2D space + 1D time) commonly used for data exchange in urban settings.   Adapting these techniques to the spatiotemporal setting requires handling skew: urban data tend to follow population density patterns (small dense regions surrounded by large sparse areas); these patterns can dominate the learning process and fool the model into ignoring local or transient effects. To combat skew, we 1) train simultaneously in space and time, and 2) focus attention on dense regions by biasing the masks used for training to the skew in the data. We evaluate the core model and these two extensions using the NYC taxi data and the NYC bikeshare data, simulating different conditions for missing data. We show that the core model is effective qualitatively and quantitatively, and that biased masking during training reduces error in a variety of scenarios. We also articulate a tradeoff in varying the number of timesteps per training sample: too few timesteps and the model ignores transient events; too many timesteps and the model is slow to train with limited performance gain. "
+}

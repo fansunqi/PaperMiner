@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse neural network architecture search"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Differentiable Architecture Search (DASS)",
+    "SparseConv",
+    "SparseLinear"
+  ],
+  "results": [
+    "Accuracy improvement from 73.44% to 81.35% for MobileNet-v2",
+    "3.87x faster inference time"
+  ],
+  "paper_id": "62d0db155aee126c0f9f0f7e",
+  "title": "DASS: Differentiable Architecture Search for Sparse neural networks",
+  "abstract": "  The deployment of Deep Neural Networks (DNNs) on edge devices is hindered by the substantial gap between performance requirements and available processing power. While recent research has made significant strides in developing pruning methods to build a sparse network for reducing the computing overhead of DNNs, there remains considerable accuracy loss, especially at high pruning ratios. We find that the architectures designed for dense networks by differentiable architecture search methods are ineffective when pruning mechanisms are applied to them. The main reason is that the current method does not support sparse architectures in their search space and uses a search objective that is made for dense networks and does not pay any attention to sparsity. In this paper, we propose a new method to search for sparsity-friendly neural architectures. We do this by adding two new sparse operations to the search space and modifying the search objective. We propose two novel parametric SparseConv and SparseLinear operations in order to expand the search space to include sparse operations. In particular, these operations make a flexible search space due to using sparse parametric versions of linear and convolution operations. The proposed search objective lets us train the architecture based on the sparsity of the search space operations. Quantitative analyses demonstrate that our search architectures outperform those used in the stateof-the-art sparse networks on the CIFAR-10 and ImageNet datasets. In terms of performance and hardware effectiveness, DASS increases the accuracy of the sparse version of MobileNet-v2 from 73.44% to 81.35% (+7.91% improvement) with 3.87x faster inference time. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Domain Adaptation under Missingness Shift"
+  ],
+  "datasets": [
+    "synthetic",
+    "semi-synthetic"
+  ],
+  "methods": [
+    "covariate shift",
+    "linear models",
+    "analytic adjustment"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6368773090e50fcafd674c40",
+  "title": "Domain Adaptation under Missingness Shift",
+  "abstract": "  Rates of missing data often depend on record-keeping policies and thus may change across times and locations, even when the underlying features are comparatively stable. In this paper, we introduce the problem of Domain Adaptation under Missingness Shift (DAMS). Here, (labeled) source data and (unlabeled) target data would be exchangeable but for different missing data mechanisms. We show that if missing data indicators are available, DAMS reduces to covariate shift. Addressing cases where such indicators are absent, we establish the following theoretical results for underreporting completely at random: (i) covariate shift is violated (adaptation is required); (ii) the optimal linear source predictor can perform arbitrarily worse on the target domain than always predicting the mean; (iii) the optimal target predictor can be identified, even when the missingness rates themselves are not; and (iv) for linear models, a simple analytic adjustment yields consistent estimates of the optimal target parameters. In experiments on synthetic and semi-synthetic data, we demonstrate the promise of our methods when assumptions hold. Finally, we discuss a rich family of future extensions. "
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image classification",
+    "Object detection",
+    "Semantic segmentation"
+  ],
+  "datasets": [
+    "ImageNet-1K",
+    "MS COCO",
+    "ADE20K"
+  ],
+  "methods": [
+    "Global context vision transformer (GC ViT)",
+    "Global context self-attention modules",
+    "Parameter-efficient fused inverted residual block"
+  ],
+  "results": [
+    "84.3% Top-1 accuracy on ImageNet-1K",
+    "Outperforms prior work in object detection, instance segmentation, and semantic segmentation"
+  ],
+  "paper_id": "62b2889e5aee126c0fbd3d21",
+  "title": "Global Context Vision Transformers",
+  "abstract": "  We propose global context vision transformer (GC ViT), a novel architecture that enhances parameter and compute utilization for computer vision tasks. The core of the novel model are global context self-attention modules, joint with standard local self-attention, to effectively yet efficiently model both long and short-range spatial interactions, as an alternative to complex operations such as an attention masks or local windows shifting. While the local self-attention modules are responsible for modeling short-range information, the global query tokens are shared across all global self-attention modules to interact with local key and values. In addition, we address the lack of inductive bias in ViTs and improve the modeling of inter-channel dependencies by proposing a novel downsampler which leverages a parameter-efficient fused inverted residual block. The proposed GC ViT achieves new state-of-the-art performance across image classification, object detection and semantic segmentation tasks. On ImageNet-1K dataset for classification, GC ViT models with 51M, 90M and 201M parameters achieve 84.3%, 84.9% and 85.6% Top-1 accuracy, respectively, surpassing comparably-sized prior art such as CNN-based ConvNeXt and ViT-based Swin Transformer. Pre-trained GC ViT backbones in downstream tasks of object detection, instance segmentation, and semantic segmentation on MS COCO and ADE20K datasets outperform prior work consistently, sometimes by large margins. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deriving and solving an Equation of Motion for deep neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Continuous-time gradient descent",
+    "Discretization error analysis"
+  ],
+  "results": [
+    "Derivation of a continuous differential equation (EoM) that precisely describes the discrete learning dynamics of DNNs",
+    "Counter term derivation to cancel discretization error",
+    "Application to scale- and translation-invariant layers",
+    "Highlighting differences between continuous-time and discrete-time GD"
+  ],
+  "paper_id": "635f3ca190e50fcafd3f583d",
+  "title": "Toward Equation of Motion for Deep Neural Networks: Continuous-time\n  Gradient Descent and Discretization Error Analysis",
+  "abstract": "  We derive and solve an ``Equation of Motion'' (EoM) for deep neural networks (DNNs), a differential equation that precisely describes the discrete learning dynamics of DNNs. Differential equations are continuous but have played a prominent role even in the study of discrete optimization (gradient descent (GD) algorithms). However, there still exist gaps between differential equations and the actual learning dynamics of DNNs due to discretization error. In this paper, we start from gradient flow (GF) and derive a counter term that cancels the discretization error between GF and GD. As a result, we obtain EoM, a continuous differential equation that precisely describes the discrete learning dynamics of GD. We also derive discretization error to show to what extent EoM is precise. In addition, we apply EoM to two specific cases: scale- and translation-invariant layers. EoM highlights differences between continuous-time and discrete-time GD, indicating the importance of the counter term for a better description of the discrete learning dynamics of GD. Our experimental results support our theoretical findings. "
+}

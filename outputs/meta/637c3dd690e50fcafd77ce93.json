@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Code models robustness and accuracy"
+  ],
+  "datasets": [
+    "Python",
+    "Java"
+  ],
+  "methods": [
+    "Contrastive learning (CL)",
+    "Adversarial learning",
+    "Code obfuscation",
+    "Self-supervised learning (SSL)",
+    "CLAW with staggered adversarial training (SAT)"
+  ],
+  "results": [
+    "Best robustness and accuracy on code summarization task in Python (11% in robustness, 6% in accuracy)"
+  ],
+  "paper_id": "637c3dd690e50fcafd77ce93",
+  "title": "CLAWSAT: Towards Both Robust and Accurate Code Models",
+  "abstract": "  We integrate contrastive learning (CL) with adversarial learning to co-optimize the robustness and accuracy of code models. Different from existing works, we show that code obfuscation, a standard code transformation operation, provides novel means to generate complementary `views' of a code that enable us to achieve both robust and accurate code models. To the best of our knowledge, this is the first systematic study to explore and exploit the robustness and accuracy benefits of (multi-view) code obfuscations in code models. Specifically, we first adopt adversarial codes as robustness-promoting views in CL at the self-supervised pre-training phase. This yields improved robustness and transferability for downstream tasks. Next, at the supervised fine-tuning stage, we show that adversarial training with a proper temporally-staggered schedule of adversarial code generation can further improve robustness and accuracy of the pre-trained code model. Built on the above two modules, we develop CLAWSAT, a novel self-supervised learning (SSL) framework for code by integrating $\\underline{\\textrm{CL}}$ with $\\underline{\\textrm{a}}$dversarial vie$\\underline{\\textrm{w}}$s (CLAW) with $\\underline{\\textrm{s}}$taggered $\\underline{\\textrm{a}}$dversarial $\\underline{\\textrm{t}}$raining (SAT). On evaluating three downstream tasks across Python and Java, we show that CLAWSAT consistently yields the best robustness and accuracy ($\\textit{e.g.}$ 11$\\%$ in robustness and 6$\\%$ in accuracy on the code summarization task in Python). We additionally demonstrate the effectiveness of adversarial learning in CLAW by analyzing the characteristics of the loss landscape and interpretability of the pre-trained models. "
+}

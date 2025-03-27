@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model Reduction for Nonlinear Systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Balanced Truncation of State and Gradient Covariance",
+    "Active Subspaces",
+    "CoBRAS",
+    "Petrov-Galerkin Reduced-Order Models",
+    "Balanced Proper Orthogonal Decomposition",
+    "Kernel Functions"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62e744545aee126c0f33c2c8",
+  "title": "Model Reduction for Nonlinear Systems by Balanced Truncation of State\n  and Gradient Covariance",
+  "abstract": "  Data-driven reduced-order models often fail to make accurate forecasts of high-dimensional nonlinear dynamical systems that are sensitive along coordinates with low-variance because such coordinates are often truncated, e.g., by proper orthogonal decomposition, kernel principal component analysis, and autoencoders. Such systems are encountered frequently in shear-dominated fluid flows where non-normality plays a significant role in the growth of disturbances. In order to address these issues, we employ ideas from active subspaces to find low-dimensional systems of coordinates for model reduction that balance adjoint-based information about the system's sensitivity with the variance of states along trajectories. The resulting method, which we refer to as covariance balancing reduction using adjoint snapshots (CoBRAS), is analogous to balanced truncation with state and adjoint-based gradient covariance matrices replacing the system Gramians and obeying the same key transformation laws. Here, the extracted coordinates are associated with an oblique projection that can be used to construct Petrov-Galerkin reduced-order models. We provide an efficient snapshot-based computational method analogous to balanced proper orthogonal decomposition. This also leads to the observation that the reduced coordinates can be computed relying on inner products of state and gradient samples alone, allowing us to find rich nonlinear coordinates by replacing the inner product with a kernel function. In these coordinates, reduced-order models can be learned using regression. We demonstrate these techniques and compare to a variety of other methods on a simple, yet challenging three-dimensional system and a nonlinear axisymmetric jet flow simulation with $10^5$ state variables. "
+}

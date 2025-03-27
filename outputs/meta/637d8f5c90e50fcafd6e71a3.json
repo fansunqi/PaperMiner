@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Post-quantum digital signature implementation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "High-throughput GPU implementation of Dilithium",
+    "Computational and memory optimizations",
+    "Task-level batching",
+    "Memory pool mechanism",
+    "Dynamic task scheduling",
+    "Asynchronous computing",
+    "Multiple streams"
+  ],
+  "results": [
+    "Microsecond-level amortized execution times",
+    "Concurrent computation of ten thousand tasks in less than 32 milliseconds for signing and 15 milliseconds for verification"
+  ],
+  "paper_id": "637d8f5c90e50fcafd6e71a3",
+  "title": "High-Throughput GPU Implementation of Dilithium Post-Quantum Digital\n  Signature",
+  "abstract": "  Digital signatures are fundamental building blocks in various protocols to provide integrity and authenticity. The development of the quantum computing has raised concerns about the security guarantees afforded by classical signature schemes. CRYSTALS-Dilithium is an efficient post-quantum digital signature scheme based on lattice cryptography and has been selected as the primary algorithm for standardization by the National Institute of Standards and Technology. In this work, we present a high-throughput GPU implementation of Dilithium. For individual operations, we employ a range of computational and memory optimizations to overcome sequential constraints, reduce memory usage and IO latency, address bank conflicts, and mitigate pipeline stalls. This results in high and balanced compute throughput and memory throughput for each operation. In terms of concurrent task processing, we leverage task-level batching to fully utilize parallelism and implement a memory pool mechanism for rapid memory access. Considering the impact of varying repetition numbers in Dilithium on the overall execution time and hardware utilization, we propose a dynamic task scheduling mechanism to improve multiprocessor occupancy and significantly reduce execution time. Furthermore, we apply asynchronous computing and launch multiple streams to hide data transfer latencies and maximize the computing capabilities of both CPU and GPU. Across all three security levels, our GPU implementation can concurrently compute ten thousand tasks in less than 32 miliseconds for signing and 15 miliseconds for verification on both commercial and server-grade GPUs. This achieves microsecond-level amortized execution times for each task, offering a high-throughput and quantum-resistant solution suitable for a wide array of applications in real systems. "
+}

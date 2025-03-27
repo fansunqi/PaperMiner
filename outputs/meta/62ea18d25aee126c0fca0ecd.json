@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Signal processing applications",
+    "NFFT implementation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "NFFT.jl: Generic and Fast Julia Implementation of the Nonequidistant Fast Fourier Transform"
+  ],
+  "results": [
+    "Completely generic, dimension-agnostic",
+    "About 2-3 times less code than other famous libraries",
+    "One of the fastest NFFT implementations developed to date"
+  ],
+  "paper_id": "62ea18d25aee126c0fca0ecd",
+  "title": "NFFT.jl: Generic and Fast Julia Implementation of the Nonequidistant\n  Fast Fourier Transform",
+  "abstract": "  The non-equidistant fast Fourier transform (NFFT) is an extension of the famous fast Fourier transform (FFT), which can be applied to non-equidistantly sampled data in time/space or frequency domain. It is an approximative algorithm that allows to control the approximation error in such a way that machine precision is reached while keeping the algorithmic complexity in the same order as a regular FFT. The NFFT plays a major role in many signal processing applications and has been intensively studied from a theoretical and computational perspective. The fastest CPU implementations of the NFFT are implemented in the low-level programming languages C and C++ and require a compromise between code generalizability, code readability, and code efficiency. The programming language Julia promises new opportunities in optimizing these three conflicting goals. In this work we show that Julia indeed allows to develop an NFFT implementation, which is completely generic, dimension-agnostic and requires about 2-3 times less code than other famous libraries while still being one of the fastest NFFT implementations developed to date. "
+}

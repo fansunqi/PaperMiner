@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Universal domain adaptation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Uncertainty-guided UniDA framework",
+    "Empirical estimation of the probability",
+    "Neighbors searching scheme",
+    "\u03b4-filter",
+    "Uncertainty-guided margin loss"
+  ],
+  "results": [
+    "Significantly outperforms existing state-of-the-art methods"
+  ],
+  "paper_id": "632a810e90e50fcafd081df9",
+  "title": "Provably Uncertainty-Guided Universal Domain Adaptation",
+  "abstract": "  Universal domain adaptation (UniDA) aims to transfer the knowledge from a labeled source domain to an unlabeled target domain without any assumptions of the label sets, which requires distinguishing the unknown samples from the known ones in the target domain. A main challenge of UniDA is that the nonidentical label sets cause the misalignment between the two domains. Moreover, the domain discrepancy and the supervised objectives in the source domain easily lead the whole model to be biased towards the common classes and produce overconfident predictions for unknown samples. To address the above challenging problems, we propose a new uncertainty-guided UniDA framework. Firstly, we introduce an empirical estimation of the probability of a target sample belonging to the unknown class which fully exploits the distribution of the target samples in the latent space. Then, based on the estimation, we propose a novel neighbors searching scheme in a linear subspace with a $\\delta$-filter to estimate the uncertainty score of a target sample and discover unknown samples. It fully utilizes the relationship between a target sample and its neighbors in the source domain to avoid the influence of domain misalignment. Secondly, this paper well balances the confidences of predictions for both known and unknown samples through an uncertainty-guided margin loss based on the confidences of discovered unknown samples, which can reduce the gap between the intra-class variances of known classes with respect to the unknown class. Finally, experiments on three public datasets demonstrate that our method significantly outperforms existing state-of-the-art methods. "
+}

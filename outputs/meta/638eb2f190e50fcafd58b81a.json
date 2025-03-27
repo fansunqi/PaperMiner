@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Out-of-distribution Detection"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "ImageNet"
+  ],
+  "methods": [
+    "FeatureNorm",
+    "NormRatio"
+  ],
+  "results": [
+    "FPR95 reduced by up to 52.77% on CIFAR10",
+    "FPR95 reduced by up to 48.53% on ImageNet"
+  ],
+  "paper_id": "638eb2f190e50fcafd58b81a",
+  "title": "Block Selection Method for Using Feature Norm in Out-of-distribution\n  Detection",
+  "abstract": "  Detecting out-of-distribution (OOD) inputs during the inference stage is crucial for deploying neural networks in the real world. Previous methods commonly relied on the output of a network derived from the highly activated feature map. In this study, we first revealed that a norm of the feature map obtained from the other block than the last block can be a better indicator of OOD detection. Motivated by this, we propose a simple framework consisting of FeatureNorm: a norm of the feature map and NormRatio: a ratio of FeatureNorm for ID and OOD to measure the OOD detection performance of each block. In particular, to select the block that provides the largest difference between FeatureNorm of ID and FeatureNorm of OOD, we create Jigsaw puzzle images as pseudo OOD from ID training samples and calculate NormRatio, and the block with the largest value is selected. After the suitable block is selected, OOD detection with the FeatureNorm outperforms other OOD detection methods by reducing FPR95 by up to 52.77% on CIFAR10 benchmark and by up to 48.53% on ImageNet benchmark. We demonstrate that our framework can generalize to various architectures and the importance of block selection, which can improve previous OOD detection methods as well. "
+}

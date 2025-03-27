@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computation of the Koopman Operator"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Data-Driven Encoding (DDE)",
+    "Direct Encoding (DE) formula",
+    "Extended DMD"
+  ],
+  "results": [
+    "Robustness to data distribution",
+    "Convergent properties of DDE",
+    "Accuracy improvements with additional sample points",
+    "Application to deep learning of the Koopman operator"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b525",
+  "title": "Data-Driven Encoding: A New Numerical Method for Computation of the\n  Koopman Operator",
+  "abstract": "  This paper presents a data-driven method for constructing a Koopman linear model based on the Direct Encoding (DE) formula. The prevailing methods, Dynamic Mode Decomposition (DMD) and its extensions are based on least squares estimates that can be shown to be biased towards data that are densely populated. The DE formula consisting of inner products of a nonlinear state transition function with observable functions does not incur this biased estimation problem and thus serves as a desirable alternative to DMD. However, the original DE formula requires knowledge of the nonlinear state equation, which is not available in many practical applications. In this paper, the DE formula is extended to a data-driven method, Data-Driven Encoding (DDE) of Koopman operator, in which the inner products are calculated from data taken from a nonlinear dynamic system. An effective algorithm is presented for the computation of the inner products, and their convergence to true values is proven. Numerical experiments verify the effectiveness of DDE compared to Extended DMD. The experiments demonstrate robustness to data distribution and the convergent properties of DDE, guaranteeing accuracy improvements with additional sample points. Furthermore, DDE is applied to deep learning of the Koopman operator to further improve prediction accuracy. "
+}

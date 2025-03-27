@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Agglomeration of polygonal grids",
+    "Multigrid solvers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "k-means clustering algorithm",
+    "Graph Neural Networks (GNNs)",
+    "METIS"
+  ],
+  "results": [
+    "Enhanced performance in terms of quality metrics",
+    "Good degree of generalization",
+    "Best performance in terms of inference speed, accuracy and flexibility"
+  ],
+  "paper_id": "63608e5690e50fcafdee19e2",
+  "title": "Agglomeration of Polygonal Grids using Graph Neural Networks with\n  applications to Multigrid solvers",
+  "abstract": "  Agglomeration-based strategies are important both within adaptive refinement algorithms and to construct scalable multilevel algebraic solvers. In order to automatically perform agglomeration of polygonal grids, we propose the use of Machine Learning (ML) strategies, that can naturally exploit geometrical information about the mesh in order to preserve the grid quality, enhancing performance of numerical methods and reducing the overall computational cost. In particular, we employ the k-means clustering algorithm and Graph Neural Networks (GNNs) to partition the connectivity graph of a computational mesh. Moreover, GNNs have high online inference speed and the advantage to process naturally and simultaneously both the graph structure of mesh and the geometrical information, such as the areas of the elements or their barycentric coordinates. These techniques are compared with METIS, a standard algorithm for graph partitioning, which is meant to process only the graph information of the mesh. We demonstrate that performance in terms of quality metrics is enhanced for ML strategies. Such models also show a good degree of generalization when applied to more complex geometries, such as brain MRI scans, and the capability of preserving the quality of the grid. The effectiveness of these strategies is demonstrated also when applied to MultiGrid (MG) solvers in a Polygonal Discontinuous Galerkin (PolyDG) framework. In the considered experiments, GNNs show overall the best performance in terms of inference speed, accuracy and flexibility of the approach. "
+}

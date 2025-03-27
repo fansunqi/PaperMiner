@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust SLAM in large-scale environments"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TBV (Trust But Verify) Radar SLAM",
+    "multiple place-recognition techniques",
+    "loop descriptors from origin-shifted scans",
+    "fault-resilient odometry pipeline",
+    "pose graph framework"
+  ],
+  "results": [
+    "65% lower error than the previous state of the art",
+    "generalizing across environments without needing to change any parameters"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88649a",
+  "title": "TBV Radar SLAM -- trust but verify loop candidates",
+  "abstract": "  Robust SLAM in large-scale environments requires fault resilience and awareness at multiple stages, from sensing and odometry estimation to loop closure. In this work, we present TBV (Trust But Verify) Radar SLAM, a method for radar SLAM that introspectively verifies loop closure candidates. TBV Radar SLAM achieves a high correct-loop-retrieval rate by combining multiple place-recognition techniques: tightly coupled place similarity and odometry uncertainty search, creating loop descriptors from origin-shifted scans, and delaying loop selection until after verification. Robustness to false constraints is achieved by carefully verifying and selecting the most likely ones from multiple loop constraints. Importantly, the verification and selection are carried out after registration when additional sources of loop evidence can easily be computed. We integrate our loop retrieval and verification method with a fault-resilient odometry pipeline within a pose graph framework. By evaluating on public benchmarks we found that TBV Radar SLAM achieves 65% lower error than the previous state of the art. We also show that it's generalizing across environments without needing to change any parameters. "
+}

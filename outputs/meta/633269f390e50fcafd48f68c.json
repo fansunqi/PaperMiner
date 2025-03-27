@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning from Demonstration (LfD)",
+    "inverse reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fast Lifelong Adaptive Inverse Reinforcement learning (FLAIR)",
+    "policy mixtures",
+    "common knowledge distillation"
+  ],
+  "results": [
+    "Average 57% improvement in policy returns",
+    "Average 78% fewer episodes required for demonstration modeling",
+    "Higher task and personalization performance rated by users"
+  ],
+  "paper_id": "633269f390e50fcafd48f68c",
+  "title": "Fast Lifelong Adaptive Inverse Reinforcement Learning from\n  Demonstrations",
+  "abstract": "  Learning from Demonstration (LfD) approaches empower end-users to teach robots novel tasks via demonstrations of the desired behaviors, democratizing access to robotics. However, current LfD frameworks are not capable of fast adaptation to heterogeneous human demonstrations nor the large-scale deployment in ubiquitous robotics applications. In this paper, we propose a novel LfD framework, Fast Lifelong Adaptive Inverse Reinforcement learning (FLAIR). Our approach (1) leverages learned strategies to construct policy mixtures for fast adaptation to new demonstrations, allowing for quick end-user personalization, (2) distills common knowledge across demonstrations, achieving accurate task inference; and (3) expands its model only when needed in lifelong deployments, maintaining a concise set of prototypical strategies that can approximate all behaviors via policy mixtures. We empirically validate that FLAIR achieves adaptability (i.e., the robot adapts to heterogeneous, user-specific task preferences), efficiency (i.e., the robot achieves sample-efficient adaptation), and scalability (i.e., the model grows sublinearly with the number of demonstrations while maintaining high performance). FLAIR surpasses benchmarks across three control tasks with an average 57% improvement in policy returns and an average 78% fewer episodes required for demonstration modeling using policy mixtures. Finally, we demonstrate the success of FLAIR in a table tennis task and find users rate FLAIR as having higher task (p<.05) and personalization (p<.05) performance. "
+}

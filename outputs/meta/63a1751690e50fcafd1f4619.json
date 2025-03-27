@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Critical Heat Flux Detection"
+  ],
+  "datasets": [
+    "Three boiling datasets from different domains"
+  ],
+  "methods": [
+    "Unsupervised Image-to-Image (UI2I) translation model"
+  ],
+  "results": [
+    "CHF detection model trained on one dataset generalized to the other two previously unseen datasets with high accuracy"
+  ],
+  "paper_id": "63a1751690e50fcafd1f4619",
+  "title": "A Framework for Generalizing Critical Heat Flux Detection Models Using\n  Unsupervised Image-to-Image Translation",
+  "abstract": "  The detection of critical heat flux (CHF) is crucial in heat boiling applications as failure to do so can cause rapid temperature ramp leading to device failures. Many machine learning models exist to detect CHF, but their performance reduces significantly when tested on data from different domains. To deal with datasets from new domains a model needs to be trained from scratch. Moreover, the dataset needs to be annotated by a domain expert. To address this issue, we propose a new framework to support the generalizability and adaptability of trained CHF detection models in an unsupervised manner. This approach uses an unsupervised Image-to-Image (UI2I) translation model to transform images in the target dataset to look like they were obtained from the same domain the model previously trained on. Unlike other frameworks dealing with domain shift, our framework does not require retraining or fine-tuning of the trained classification model nor does it require synthesized datasets in the training process of either the classification model or the UI2I model. The framework was tested on three boiling datasets from different domains, and we show that the CHF detection model trained on one dataset was able to generalize to the other two previously unseen datasets with high accuracy. Overall, the framework enables CHF detection models to adapt to data generated from different domains without requiring additional annotation effort or retraining of the model. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/thomas0809/MolScribe"
+  ],
+  "tasks": [
+    "Molecular structure recognition"
+  ],
+  "datasets": [
+    "public benchmarks"
+  ],
+  "methods": [
+    "image-to-graph generation model",
+    "symbolic chemistry constraints",
+    "data augmentation strategies"
+  ],
+  "results": [
+    "76-93% accuracy on public benchmarks"
+  ],
+  "paper_id": "629587465aee126c0fe149ce",
+  "title": "MolScribe: Robust Molecular Structure Recognition with Image-To-Graph\n  Generation",
+  "abstract": "  Molecular structure recognition is the task of translating a molecular image into its graph structure. Significant variation in drawing styles and conventions exhibited in chemical literature poses a significant challenge for automating this task. In this paper, we propose MolScribe, a novel image-to-graph generation model that explicitly predicts atoms and bonds, along with their geometric layouts, to construct the molecular structure. Our model flexibly incorporates symbolic chemistry constraints to recognize chirality and expand abbreviated structures. We further develop data augmentation strategies to enhance the model robustness against domain shifts. In experiments on both synthetic and realistic molecular images, MolScribe significantly outperforms previous models, achieving 76-93% accuracy on public benchmarks. Chemists can also easily verify MolScribe's prediction, informed by its confidence estimation and atom-level alignment with the input image. MolScribe is publicly available through Python and web interfaces: https://github.com/thomas0809/MolScribe. "
+}

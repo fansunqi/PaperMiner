@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Time series forecasting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Koopman Neural Forecaster (KNF)",
+    "DNNs to learn linear Koopman space",
+    "Global operator",
+    "Local operator",
+    "Feedback loop"
+  ],
+  "results": [
+    "Superior performance compared to alternatives",
+    "Improved robustness against distributional shifts"
+  ],
+  "paper_id": "63438d2990e50fcafd4ebcb8",
+  "title": "Koopman Neural Forecaster for Time Series with Temporal Distribution\n  Shifts",
+  "abstract": "  Temporal distributional shifts, with underlying dynamics changing over time, frequently occur in real-world time series and pose a fundamental challenge for deep neural networks (DNNs). In this paper, we propose a novel deep sequence model based on the Koopman theory for time series forecasting: Koopman Neural Forecaster (KNF) which leverages DNNs to learn the linear Koopman space and the coefficients of chosen measurement functions. KNF imposes appropriate inductive biases for improved robustness against distributional shifts, employing both a global operator to learn shared characteristics and a local operator to capture changing dynamics, as well as a specially-designed feedback loop to continuously update the learned operators over time for rapidly varying behaviors. We demonstrate that \\ours{} achieves superior performance compared to the alternatives, on multiple time series datasets that are shown to suffer from distribution shifts. "
+}

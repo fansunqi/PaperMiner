@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Test-time Adaptation in the Dynamic World"
+  ],
+  "datasets": [
+    "ImageNet-C",
+    "GTA5",
+    "C-driving",
+    "corrupted Cityscapes"
+  ],
+  "methods": [
+    "Compound Domain Knowledge Management",
+    "Novel Regularization"
+  ],
+  "results": [
+    "Consistent performance improvements in diverse TTA scenarios",
+    "Generality of proposals demonstrated"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f3abc",
+  "title": "Test-time Adaptation in the Dynamic World with Compound Domain Knowledge\n  Management",
+  "abstract": "  Prior to the deployment of robotic systems, pre-training the deep-recognition models on all potential visual cases is infeasible in practice. Hence, test-time adaptation (TTA) allows the model to adapt itself to novel environments and improve its performance during test time (i.e., lifelong adaptation). Several works for TTA have shown promising adaptation performances in continuously changing environments. However, our investigation reveals that existing methods are vulnerable to dynamic distributional changes and often lead to overfitting of TTA models. To address this problem, this paper first presents a robust TTA framework with compound domain knowledge management. Our framework helps the TTA model to harvest the knowledge of multiple representative domains (i.e., compound domain) and conduct the TTA based on the compound domain knowledge. In addition, to prevent overfitting of the TTA model, we devise novel regularization which modulates the adaptation rates using domain-similarity between the source and the current target domain. With the synergy of the proposed framework and regularization, we achieve consistent performance improvements in diverse TTA scenarios, especially on dynamic domain shifts. We demonstrate the generality of proposals via extensive experiments including image classification on ImageNet-C and semantic segmentation on GTA5, C-driving, and corrupted Cityscapes datasets. "
+}

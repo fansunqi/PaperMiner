@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised domain adaption",
+    "Semantic segmentation"
+  ],
+  "datasets": [
+    "GTA5",
+    "SYNTHIA"
+  ],
+  "methods": [
+    "Active sample selection",
+    "Multi-anchor based",
+    "Semi-supervised domain adaptation"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods",
+    "Achieves similar performance to fully-supervised upperbound (71.4% mIoU on GTA5, 71.8% mIoU on SYNTHIA)"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bb09",
+  "title": "MADAv2: Advanced Multi-Anchor Based Active Domain Adaptation\n  Segmentation",
+  "abstract": "  Unsupervised domain adaption has been widely adopted in tasks with scarce annotated data. Unfortunately, mapping the target-domain distribution to the source-domain unconditionally may distort the essential structural information of the target-domain data, leading to inferior performance. To address this issue, we firstly propose to introduce active sample selection to assist domain adaptation regarding the semantic segmentation task. By innovatively adopting multiple anchors instead of a single centroid, both source and target domains can be better characterized as multimodal distributions, in which way more complementary and informative samples are selected from the target domain. With only a little workload to manually annotate these active samples, the distortion of the target-domain distribution can be effectively alleviated, achieving a large performance gain. In addition, a powerful semi-supervised domain adaptation strategy is proposed to alleviate the long-tail distribution problem and further improve the segmentation performance. Extensive experiments are conducted on public datasets, and the results demonstrate that the proposed approach outperforms state-of-the-art methods by large margins and achieves similar performance to the fully-supervised upperbound, i.e., 71.4% mIoU on GTA5 and 71.8% mIoU on SYNTHIA. The effectiveness of each component is also verified by thorough ablation studies. "
+}

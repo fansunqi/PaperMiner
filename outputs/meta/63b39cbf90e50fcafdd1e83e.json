@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Temporally Layered Architecture (TLA)",
+    "Closed-loop control",
+    "Partially open loop control"
+  ],
+  "results": [
+    "Advantages over several strong baselines in continuous control tasks"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e83e",
+  "title": "Temporally Layered Architecture for Adaptive, Distributed and Continuous\n  Control",
+  "abstract": "  We present temporally layered architecture (TLA), a biologically inspired system for temporally adaptive distributed control. TLA layers a fast and a slow controller together to achieve temporal abstraction that allows each layer to focus on a different time-scale. Our design is biologically inspired and draws on the architecture of the human brain which executes actions at different timescales depending on the environment's demands. Such distributed control design is widespread across biological systems because it increases survivability and accuracy in certain and uncertain environments. We demonstrate that TLA can provide many advantages over existing approaches, including persistent exploration, adaptive control, explainable temporal behavior, compute efficiency and distributed control. We present two different algorithms for training TLA: (a) Closed-loop control, where the fast controller is trained over a pre-trained slow controller, allowing better exploration for the fast controller and closed-loop control where the fast controller decides whether to \"act-or-not\" at each timestep; and (b) Partially open loop control, where the slow controller is trained over a pre-trained fast controller, allowing for open loop-control where the slow controller picks a temporally extended action or defers the next n-actions to the fast controller. We evaluated our method on a suite of continuous control tasks and demonstrate the advantages of TLA over several strong baselines. "
+}

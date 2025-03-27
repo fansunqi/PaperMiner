@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Workload Failure Prediction for Data Centers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Queue-time model",
+    "Runtime model"
+  ],
+  "results": [
+    "Queue-time model precision: 90.61%",
+    "Runtime model precision: 97.75%",
+    "CPU time reduction: up to 16.7%",
+    "Memory usage reduction: up to 14.53%"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8e46",
+  "title": "Workload Failure Prediction for Data Centers",
+  "abstract": "  Failed workloads that consumed significant computational resources in time and space affect the efficiency of data centers significantly and thus limit the amount of scientific work that can be achieved. While the computational power has increased significantly over the years, detection and prediction of workload failures have lagged far behind and will become increasingly critical as the system scale and complexity further increase. In this study, we analyze workload traces collected from a production cluster and train machine learning models on a large amount of data sets to predict workload failures. Our prediction models consist of a queue-time model that estimates the probability of workload failures before execution and a runtime model that predicts failures at runtime. Evaluation results show that the queue-time model and runtime model can predict workload failures with a maximum precision score of 90.61% and 97.75%, respectively. By integrating the runtime model with the job scheduler, it helps reduce CPU time, and memory usage by up to 16.7% and 14.53%, respectively. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Acoustic Broadband Sources Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Global Optimization Beamforming",
+    "CSM-fitting",
+    "Local Optimization"
+  ],
+  "results": [
+    "Improved energy function for GO",
+    "Superior to standard GO and CLEAN-SC on synthetic monopoles",
+    "Similar to CLEAN-SC on real-world data",
+    "Reduced to Local Optimization with reasonable initial values",
+    "Identifies synthetic multipoles with different pole amplitudes and unknown pole rotations"
+  ],
+  "paper_id": "636c6beb90e50fcafd2d3e8f",
+  "title": "Global, and Local Optimization Beamforming for Broadband Sources",
+  "abstract": "  This paper presents an alternative energy function for Global Optimization (GO) beamforming, tailored to acoustic broadband sources. Given, that properties such as the source location, multipole rotation, or flow conditions are parameterized over the frequency, a CSM-fitting can be performed for all frequencies at once. A numerical analysis shows that the nonlinear energy function for the standard GO problem is equivalent to the source's Point Spread Function (PSF) and contains local minima at the grating- and side lobes' locations. The energy function is improved with the proposed broadband energy, as it averages the PSF. Further, it simplifies the process of identifying sources and reconstructing their spectra from the results. The paper shows that the method is superior on synthetic monopoles compared to standard GO and CLEAN-SC. For real-world data the results of the proposed method and CLEAN-SC are similar, and outperform standard GO. The main difference is that source assumption violations cause noisy maps for CLEAN-SC and cause wrong spectral estimations of the proposed method. By using reasonable initial values, the GO problem reduces to a Local Optimization problem with similar results. Further, the proposed method is able to identify synthetic multipoles with different pole amplitudes and unknown pole rotations. "
+}

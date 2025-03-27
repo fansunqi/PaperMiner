@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Facial Expression Recognition"
+  ],
+  "datasets": [
+    "RAF-DB",
+    "AffectNet",
+    "FER-Plus"
+  ],
+  "methods": [
+    "Vanilla ViT with MAE pretraining"
+  ],
+  "results": [
+    "91.07% on RAF-DB",
+    "62.42% on AffectNet",
+    "90.18% on FER-Plus"
+  ],
+  "paper_id": "62de09b65aee126c0faa5ade",
+  "title": "Facial Expression Recognition using Vanilla ViT backbones with MAE\n  Pretraining",
+  "abstract": "  Humans usually convey emotions voluntarily or involuntarily by facial expressions. Automatically recognizing the basic expression (such as happiness, sadness, and neutral) from a facial image, i.e., facial expression recognition (FER), is extremely challenging and attracts much research interests. Large scale datasets and powerful inference models have been proposed to address the problem. Though considerable progress has been made, most of the state of the arts employing convolutional neural networks (CNNs) or elaborately modified Vision Transformers (ViTs) depend heavily on upstream supervised pretraining. Transformers are taking place the domination of CNNs in more and more computer vision tasks. But they usually need much more data to train, since they use less inductive biases compared with CNNs. To explore whether a vanilla ViT without extra training samples from upstream tasks is able to achieve competitive accuracy, we use a plain ViT with MAE pretraining to perform the FER task. Specifically, we first pretrain the original ViT as a Masked Autoencoder (MAE) on a large facial expression dataset without expression labels. Then, we fine-tune the ViT on popular facial expression datasets with expression labels. The presented method is quite competitive with 91.07\\% on RAF-DB, 62.42\\% on AfectNet, and 90.18\\% on FER-Plus, which can serve as a simple yet strong ViT-based baseline for FER studies. The code and pretrained models will be publicly available. "
+}

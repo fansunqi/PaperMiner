@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Decentralized learning over non-IID data"
+  ],
+  "datasets": [
+    "various vision and language datasets"
+  ],
+  "methods": [
+    "Neighborhood Gradient Clustering (NGC)",
+    "CompNGC"
+  ],
+  "results": [
+    "NGC and CompNGC outperform existing SoTA decentralized learning algorithms by 0-6% with less compute and memory requirements",
+    "Model-variant cross-gradient information improves performance by 1-35% without additional communication cost"
+  ],
+  "paper_id": "63365e7c90e50fcafd1a2c17",
+  "title": "Neighborhood Gradient Clustering: An Efficient Decentralized Learning\n  Method for Non-IID Data Distributions",
+  "abstract": "  Decentralized learning over distributed datasets can have significantly different data distributions across the agents. The current state-of-the-art decentralized algorithms mostly assume the data distributions to be Independent and Identically Distributed. This paper focuses on improving decentralized learning over non-IID data. We propose \\textit{Neighborhood Gradient Clustering (NGC)}, a novel decentralized learning algorithm that modifies the local gradients of each agent using self- and cross-gradient information. Cross-gradients for a pair of neighboring agents are the derivatives of the model parameters of an agent with respect to the dataset of the other agent. In particular, the proposed method replaces the local gradients of the model with the weighted mean of the self-gradients, model-variant cross-gradients (derivatives of the neighbors' parameters with respect to the local dataset), and data-variant cross-gradients (derivatives of the local model with respect to its neighbors' datasets). The data-variant cross-gradients are aggregated through an additional communication round without breaking the privacy constraints. Further, we present \\textit{CompNGC}, a compressed version of \\textit{NGC} that reduces the communication overhead by $32 \\times$. We theoretically analyze the convergence rate of the proposed algorithm and demonstrate its efficiency over non-IID data sampled from {various vision and language} datasets trained. Our experiments demonstrate that \\textit{NGC} and \\textit{CompNGC} outperform (by $0-6\\%$) the existing SoTA decentralized learning algorithm over non-IID data with significantly less compute and memory requirements. Further, our experiments show that the model-variant cross-gradient information available locally at each agent can improve the performance over non-IID data by $1-35\\%$ without additional communication cost. "
+}

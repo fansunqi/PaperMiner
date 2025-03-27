@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition"
+  ],
+  "datasets": [
+    "LibriSpeech-960"
+  ],
+  "methods": [
+    "Bayesian Transformer Network",
+    "variational inference",
+    "local reparameterization trick"
+  ],
+  "results": [
+    "faster training time",
+    "near state-of-the-art performance"
+  ],
+  "paper_id": "63d340ef90e50fcafd9117e2",
+  "title": "BayesSpeech: A Bayesian Transformer Network for Automatic Speech\n  Recognition",
+  "abstract": "  Recent developments using End-to-End Deep Learning models have been shown to have near or better performance than state of the art Recurrent Neural Networks (RNNs) on Automatic Speech Recognition tasks. These models tend to be lighter weight and require less training time than traditional RNN-based approaches. However, these models take frequentist approach to weight training. In theory, network weights are drawn from a latent, intractable probability distribution. We introduce BayesSpeech for end-to-end Automatic Speech Recognition. BayesSpeech is a Bayesian Transformer Network where these intractable posteriors are learned through variational inference and the local reparameterization trick without recurrence. We show how the introduction of variance in the weights leads to faster training time and near state-of-the-art performance on LibriSpeech-960. "
+}

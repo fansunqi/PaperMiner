@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning",
+    "Ensemble Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proof of Swarm (PoSw)"
+  ],
+  "results": [
+    "Ensemble learning model outperformed all local models and even the FL-based global model",
+    "First attempt to make consensus over the output results of distributed models trained using federated learning"
+  ],
+  "paper_id": "63b24b1f90e50fcafdd36f99",
+  "title": "Proof of Swarm Based Ensemble Learning for Federated Learning\n  Applications",
+  "abstract": "  Ensemble learning combines results from multiple machine learning models in order to provide a better and optimised predictive model with reduced bias, variance and improved predictions. However, in federated learning it is not feasible to apply centralised ensemble learning directly due to privacy concerns. Hence, a mechanism is required to combine results of local models to produce a global model. Most distributed consensus algorithms, such as Byzantine fault tolerance (BFT), do not normally perform well in such applications. This is because, in such methods predictions of some of the peers are disregarded, so a majority of peers can win without even considering other peers' decisions. Additionally, the confidence score of the result of each peer is not normally taken into account, although it is an important feature to consider for ensemble learning. Moreover, the problem of a tie event is often left un-addressed by methods such as BFT. To fill these research gaps, we propose PoSw (Proof of Swarm), a novel distributed consensus algorithm for ensemble learning in a federated setting, which was inspired by particle swarm based algorithms for solving optimisation problems. The proposed algorithm is theoretically proved to always converge in a relatively small number of steps and has mechanisms to resolve tie events while trying to achieve sub-optimum solutions. We experimentally validated the performance of the proposed algorithm using ECG classification as an example application in healthcare, showing that the ensemble learning model outperformed all local models and even the FL-based global model. To the best of our knowledge, the proposed algorithm is the first attempt to make consensus over the output results of distributed models trained using federated learning. "
+}

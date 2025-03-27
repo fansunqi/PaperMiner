@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Handwritten Text Recognition (HTR) evaluation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-fold evaluation, Word Error Rate, Bag of Words Word Error Rate, Spearman's Foot Rule Distance"
+  ],
+  "results": [
+    "Two-fold evaluation approach validated",
+    "Metrics correlate with RO errors"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b9d",
+  "title": "End-to-End Page-Level Assessment of Handwritten Text Recognition",
+  "abstract": "  The evaluation of Handwritten Text Recognition (HTR) systems has traditionally used metrics based on the edit distance between HTR and ground truth (GT) transcripts, at both the character and word levels. This is very adequate when the experimental protocol assumes that both GT and HTR text lines are the same, which allows edit distances to be independently computed to each given line. Driven by recent advances in pattern recognition, HTR systems increasingly face the end-to-end page-level transcription of a document, where the precision of locating the different text lines and their corresponding reading order (RO) play a key role. In such a case, the standard metrics do not take into account the inconsistencies that might appear. In this paper, the problem of evaluating HTR systems at the page level is introduced in detail. We analyze the convenience of using a two-fold evaluation, where the transcription accuracy and the RO goodness are considered separately. Different alternatives are proposed, analyzed and empirically compared both through partially simulated and through real, full end-to-end experiments. Results support the validity of the proposed two-fold evaluation approach. An important conclusion is that such an evaluation can be adequately achieved by just two simple and well-known metrics: the Word Error Rate, that takes transcription sequentiality into account, and the here re-formulated Bag of Words Word Error Rate, that ignores order. While the latter directly and very accurately assess intrinsic word recognition errors, the difference between both metrics gracefully correlates with the Spearman's Foot Rule Distance, a metric which explicitly measures RO errors associated with layout analysis flaws. "
+}

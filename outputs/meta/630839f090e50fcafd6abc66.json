@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Privacy preservation in Ride Hailing Services",
+    "Passive Triangulation Attack"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Triangulation attack",
+    "Noisy Euclidean distances"
+  ],
+  "results": [
+    "Determines locations of all drivers participating in the ORide protocol",
+    "Reveals locations of about 25% to 50% of participating drivers for the perturbed distance version of the ORide protocol",
+    "Algorithm runs in time polynomial in number of drivers"
+  ],
+  "paper_id": "630839f090e50fcafd6abc66",
+  "title": "Passive Triangulation Attack on ORide",
+  "abstract": "  Privacy preservation in Ride Hailing Services is intended to protect privacy of drivers and riders. ORide is one of the early RHS proposals published at USENIX Security Symposium 2017. In the ORide protocol, riders and drivers, operating in a zone, encrypt their locations using a Somewhat Homomorphic Encryption scheme (SHE) and forward them to the Service Provider (SP). SP homomorphically computes the squared Euclidean distance between riders and available drivers. Rider receives the encrypted distances and selects the optimal rider after decryption. In order to prevent a triangulation attack, SP randomly permutes the distances before sending them to the rider. In this work, we use propose a passive attack that uses triangulation to determine coordinates of all participating drivers whose permuted distances are available from the points of view of multiple honest-but-curious adversary riders. An attack on ORide was published at SAC 2021. The same paper proposes a countermeasure using noisy Euclidean distances to thwart their attack. We extend our attack to determine locations of drivers when given their permuted and noisy Euclidean distances from multiple points of reference, where the noise perturbation comes from a uniform distribution. We conduct experiments with different number of drivers and for different perturbation values. Our experiments show that we can determine locations of all drivers participating in the ORide protocol. For the perturbed distance version of the ORide protocol, our algorithm reveals locations of about 25% to 50% of participating drivers. Our algorithm runs in time polynomial in number of drivers. "
+}

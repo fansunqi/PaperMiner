@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "bio-artificial capsule segmentation",
+    "few-shot learning"
+  ],
+  "datasets": [
+    "bio-artificial capsule dataset",
+    "Glioblastoma cell dataset"
+  ],
+  "methods": [
+    "self-supervision",
+    "referee network",
+    "data augmentation"
+  ],
+  "results": [
+    "accuracy increments",
+    "potential to replace human annotations"
+  ],
+  "paper_id": "628c4ce15aee126c0ff59963",
+  "title": "Self-mentoring: a new deep learning pipeline to train a self-supervised\n  U-net for few-shot learning of bio-artificial capsule segmentation",
+  "abstract": "  Background: Accurate segmentation of microscopic structures such as bio-artificial capsules in microscopy imaging is a prerequisite to the computer-aided understanding of important biomechanical phenomenons. State-of-the-art segmentation performances are achieved by deep neural networks and related data-driven approaches. Training these networks from only a few annotated examples is challenging while producing manually annotated images that provide supervision is tedious.   Method: Recently, self-supervision, i.e. designing a neural pipeline providing synthetic or indirect supervision, has proved to significantly increase generalization performances of models trained on few shots. The objective of this paper is to introduce one such neural pipeline in the context of micro-capsule image segmentation. Our method leverages the rather simple content of these images so that a trainee network can be mentored by a referee network which has been previously trained on synthetically generated pairs of corrupted/correct region masks.   Results: Challenging experimental setups are investigated. They involve from only 3 to 10 annotated images along with moderately large amounts of unannotated images. In a bio-artificial capsule dataset, our approach consistently and drastically improves accuracy. We also show that the learnt referee network is transferable to another Glioblastoma cell dataset and that it can be efficiently coupled with data augmentation strategies.   Conclusions: Experimental results show that very significant accuracy increments are obtained by the proposed pipeline, leading to the conclusion that the self-supervision mechanism introduced in this paper has the potential to replace human annotations. "
+}

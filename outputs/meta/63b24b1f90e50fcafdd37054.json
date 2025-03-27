@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic Join Discovery",
+    "Data Discovery",
+    "Cloud Data Warehouses"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Embedding-based solution"
+  ],
+  "results": [
+    "Captures semantic relationships between tables",
+    "Sample efficient and scalable to large tables"
+  ],
+  "paper_id": "63b24b1f90e50fcafdd37054",
+  "title": "WarpGate: A Semantic Join Discovery System for Cloud Data Warehouses",
+  "abstract": "  Data discovery is a major challenge in enterprise data analysis: users often struggle to find data relevant to their analysis goals or even to navigate through data across data sources, each of which may easily contain thousands of tables. One common user need is to discover tables joinable with a given table. This need is particularly critical because join is a ubiquitous operation in data analysis, and join paths are mostly obscure to users, especially across databases. Furthermore, users are typically interested in finding ``semantically'' joinable tables: with columns that can be transformed to become joinable even if they are not joinable as currently represented in the data store. We present WarpGate, a system prototype for data discovery over cloud data warehouses. WarpGate implements an embedding-based solution to semantic join discovery, which encodes columns into high-dimensional vector space such that joinable columns map to points that are near each other. Through experiments on several table corpora, we show that WarpGate (i) captures semantic relationships between tables, especially those across databases, and (ii) is sample efficient and thus scalable to very large tables of millions of rows. We also showcase an application of WarpGate within an enterprise product for cloud data analytics. "
+}

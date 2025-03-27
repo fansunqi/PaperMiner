@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Virtual try-on"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "semantically-guided mixup module",
+    "DOC-VTON framework",
+    "Generative Module (GM)"
+  ],
+  "results": [
+    "better perceptual quality by reducing occlusion effects"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f444a",
+  "title": "OccluMix: Towards De-Occlusion Virtual Try-on by Semantically-Guided\n  Mixup",
+  "abstract": "  Image Virtual try-on aims at replacing the cloth on a personal image with a garment image (in-shop clothes), which has attracted increasing attention from the multimedia and computer vision communities. Prior methods successfully preserve the character of clothing images, however, occlusion remains a pernicious effect for realistic virtual try-on. In this work, we first present a comprehensive analysis of the occlusions and categorize them into two aspects: i) Inherent-Occlusion: the ghost of the former cloth still exists in the try-on image; ii) Acquired-Occlusion: the target cloth warps to the unreasonable body part. Based on the in-depth analysis, we find that the occlusions can be simulated by a novel semantically-guided mixup module, which can generate semantic-specific occluded images that work together with the try-on images to facilitate training a de-occlusion try-on (DOC-VTON) framework. Specifically, DOC-VTON first conducts a sharpened semantic parsing on the try-on person. Aided by semantics guidance and pose prior, various complexities of texture are selectively blending with human parts in a copy-and-paste manner. Then, the Generative Module (GM) is utilized to take charge of synthesizing the final try-on image and learning to de-occlusion jointly. In comparison to the state-of-the-art methods, DOC-VTON achieves better perceptual quality by reducing occlusion effects. "
+}

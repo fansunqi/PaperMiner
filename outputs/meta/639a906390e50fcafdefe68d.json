@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mapping with uncertainty representation",
+    "Localization",
+    "Sensor fusion",
+    "Pose estimation of an ego-robot"
+  ],
+  "datasets": [
+    "LiDAR point clouds of city buildings"
+  ],
+  "methods": [
+    "Gaussian Process (GP)",
+    "Gaussian Mixture Model (GMM)",
+    "local GP-block techniques"
+  ],
+  "results": [
+    "Higher Precision-Recall AUC for evaluated buildings compared to Octomap, Gaussian Process Occupancy Map (GPOM), and Bayersian Generalized Kernel Inference (BGKOctomap)"
+  ],
+  "paper_id": "639a906390e50fcafdefe68d",
+  "title": "Gaussian Process Mapping of Uncertain Building Models with GMM as Prior",
+  "abstract": "  Mapping with uncertainty representation is required in many research domains, such as localization and sensor fusion. Although there are many uncertainty explorations in pose estimation of an ego-robot with map information, the quality of the reference maps is often neglected. To avoid the potential problems caused by the errors of maps and a lack of the uncertainty quantification, an adequate uncertainty measure for the maps is required. In this paper, uncertain building models with abstract map surface using Gaussian Process (GP) is proposed to measure the map uncertainty in a probabilistic way. To reduce the redundant computation for simple planar objects, extracted facets from a Gaussian Mixture Model (GMM) are combined with the implicit GP map while local GP-block techniques are used as well. The proposed method is evaluated on LiDAR point clouds of city buildings collected by a mobile mapping system. Compared to the performances of other methods such like Octomap, Gaussian Process Occupancy Map (GPOM) and Bayersian Generalized Kernel Inference (BGKOctomap), our method has achieved higher Precision-Recall AUC for evaluated buildings. "
+}

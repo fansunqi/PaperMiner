@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Explanation of Neural Networks"
+  ],
+  "datasets": [
+    "Natural and medical datasets"
+  ],
+  "methods": [
+    "Hierarchical dynamic masks (HDM)",
+    "Dynamic masks (DM)",
+    "Optimization method"
+  ],
+  "results": [
+    "Outperformed previous approaches significantly in terms of recognition and localization capabilities"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8caf",
+  "title": "Hierarchical Dynamic Masks for Visual Explanation of Neural Networks",
+  "abstract": "  Saliency methods generating visual explanatory maps representing the importance of image pixels for model classification is a popular technique for explaining neural network decisions. Hierarchical dynamic masks (HDM), a novel explanatory maps generation method, is proposed in this paper to enhance the granularity and comprehensiveness of saliency maps. First, we suggest the dynamic masks (DM), which enables multiple small-sized benchmark mask vectors to roughly learn the critical information in the image through an optimization method. Then the benchmark mask vectors guide the learning of large-sized auxiliary mask vectors so that their superimposed mask can accurately learn fine-grained pixel importance information and reduce the sensitivity to adversarial perturbations. In addition, we construct the HDM by concatenating DM modules. These DM modules are used to find and fuse the regions of interest in the remaining neural network classification decisions in the mask image in a learning-based way. Since HDM forces DM to perform importance analysis in different areas, it makes the fused saliency map more comprehensive. The proposed method outperformed previous approaches significantly in terms of recognition and localization capabilities when tested on natural and medical datasets. "
+}

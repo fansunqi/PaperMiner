@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/AlanLiangC/PDM-SSD.git"
+  ],
+  "tasks": [
+    "3D Object Detection"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "Point Dilation Mechanism",
+    "PointNet-style 3D Backbone",
+    "Hybrid Detection Head"
+  ],
+  "results": [
+    "State-of-the-art results for multi-class detection on KITTI",
+    "Inference speed of 68 frames"
+  ],
+  "title": "PDM-SSD Single-Stage Three-Dimensional Object Detector with Point Dilation.pdf",
+  "abstract": "One of the important reasons why grid/voxel-based three-dimensional (3D) object detectors can achieve robust results for sparse and incomplete targets in Light Detection And Ranging (LiDAR) scenes is that the repeated padding, convolution, and pooling layers in the feature learning process enlarge the model\u2019s receptive field, enabling features even in space not covered by point clouds. However, they require time- and memory-consuming 3D backbones. Point-based detectors are more suitable for practical application, but current detectors can only learn from the provided points, with limited receptive fields and insufficient global learning capabilities for such targets. In this paper, we present a novel Point Dilation Mechanism for single-stage 3D detection (PDM-SSD) that takes advantage of these two representations. Specifically, we first use a PointNet-style 3D backbone for efficient feature encoding. Then, a neck with Point Dilation Mechanism (PDM) is used to expand the feature space, which involves two key steps: point dilation and feature filling. The former expands points to a certain size grid centered around the sampled points in Euclidean space. The latter fills the unoccupied grid with feature for backpropagation using spherical harmonic coefficients and Gaussian density function in terms of direction and scale. Next, we associate multiple dilation centers and fuse coefficients to obtain sparse grid features through height compression. Finally, we design a hybrid detection head for joint learning, where on one hand, the scene heatmap is predicted to complement the voting point set for improved detection accuracy, and on the other hand, the target probability of detected boxes are calibrated through feature fusion. On the challenging Karlsruhe Institute of Technology and Toyota Technological Institute (KITTI) dataset, PDM-SSD achieves state-of-the-art results for multi-class detection among single-modal methods with an inference speed of 68 frames. We also demonstrate the advantages of PDM-SSD in detecting sparse and incomplete objects through numerous object-level instances. Additionally, PDM can serve as an auxiliary network to establish a connection between sampling points and object centers, thereby improving the accuracy of the model without sacrificing inference speed. Our code will be available at https://github.com/AlanLiangC/PDM-SSD.git. Keywords Autonomous driving \u00b7 3D object detection \u00b7 Deep learning \u00b7 Point cloud proccessing 1 Introduction LiDAR (Light Detection and Ranging) is an active sensor with excellent anti-interference capability, and its output point cloud can provide an accurate 3D representation of the scene. 3D object detection from point clouds has become increasingly popular thanks to its wide applications, such as autonomous driving and virtual reality. Currently, many point cloud-based 3D detection models have been proposed and achieved state-of-the-art performance on various public datasets, such as KITTI [1] and Waymo [2]. \u2217Citation: Authors. Title. Pages.... DOI:000000/11111. arXiv:2502.07822v1 [cs.CV] 10 Feb 2025"
+}

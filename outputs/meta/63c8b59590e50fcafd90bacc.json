@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust loss minimization",
+    "Handling robust learning issue on noisy labels"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Noise-Aware-Robust-Loss-Adjuster (NARL-Adjuster)",
+    "Meta-learning"
+  ],
+  "results": [
+    "Improved noise tolerance",
+    "Better performance compared with conventional hyperparameter tuning strategy"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bacc",
+  "title": "Improve Noise Tolerance of Robust Loss via Noise-Awareness",
+  "abstract": "  Robust loss minimization is an important strategy for handling robust learning issue on noisy labels. Current robust losses, however, inevitably involve hyperparameters to be tuned for different datasets with noisy labels, manually or heuristically through cross validation, which makes them fairly hard to be generally applied in practice. Existing robust loss methods usually assume that all training samples share common hyperparameters, which are independent of instances. This limits the ability of these methods on distinguishing individual noise properties of different samples, making them hardly adapt to different noise structures. To address above issues, we propose to assemble robust loss with instance-dependent hyperparameters to improve their noise-tolerance with theoretical guarantee. To achieve setting such instance-dependent hyperparameters for robust loss, we propose a meta-learning method capable of adaptively learning a hyperparameter prediction function, called Noise-Aware-Robust-Loss-Adjuster (NARL-Adjuster). Specifically, through mutual amelioration between hyperparameter prediction function and classifier parameters in our method, both of them can be simultaneously finely ameliorated and coordinated to attain solutions with good generalization capability. Four kinds of SOTA robust losses are attempted to be integrated with our algorithm, and experiments substantiate the general availability and effectiveness of the proposed method in both its noise tolerance and generalization performance. Meanwhile, the explicit parameterized structure makes the meta-learned prediction function capable of being readily transferrable and plug-and-play to unseen datasets with noisy labels. Specifically, we transfer our meta-learned NARL-Adjuster to unseen tasks, including several real noisy datasets, and achieve better performance compared with conventional hyperparameter tuning strategy. "
+}

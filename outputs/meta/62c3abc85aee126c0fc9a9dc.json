@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Time-series Anomaly Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Contrastive One-Class Anomaly detection (COCA)",
+    "Sequence contrast",
+    "Contrastive Learning (CL)",
+    "One-class classification"
+  ],
+  "results": [
+    "State-of-the-art performance on two real-world time-series datasets"
+  ],
+  "paper_id": "62c3abc85aee126c0fc9a9dc",
+  "title": "Deep Contrastive One-Class Time Series Anomaly Detection",
+  "abstract": "  The accumulation of time-series data and the absence of labels make time-series Anomaly Detection (AD) a self-supervised deep learning task. Single-normality-assumption-based methods, which reveal only a certain aspect of the whole normality, are incapable of tasks involved with a large number of anomalies. Specifically, Contrastive Learning (CL) methods distance negative pairs, many of which consist of both normal samples, thus reducing the AD performance. Existing multi-normality-assumption-based methods are usually two-staged, firstly pre-training through certain tasks whose target may differ from AD, limiting their performance. To overcome the shortcomings, a deep Contrastive One-Class Anomaly detection method of time series (COCA) is proposed by authors, following the normality assumptions of CL and one-class classification. It treats the original and reconstructed representations as the positive pair of negative-sample-free CL, namely \"sequence contrast\". Next, invariance terms and variance terms compose a contrastive one-class loss function in which the loss of the assumptions is optimized by invariance terms simultaneously and the \"hypersphere collapse\" is prevented by variance terms. In addition, extensive experiments on two real-world time-series datasets show the superior performance of the proposed method achieves state-of-the-art. "
+}

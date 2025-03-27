@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://cdopt.github.io/"
+  ],
+  "tasks": [
+    "Riemannian Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Constraint Dissolving Approaches",
+    "Unconstrained Optimization Solvers",
+    "Neural Layers from PyTorch and Flax"
+  ],
+  "results": [
+    "High efficiency and robustness in solving various classes of Riemannian optimization problems"
+  ],
+  "paper_id": "6390044c90e50fcafd837d32",
+  "title": "CDOpt: A Python Package for a Class of Riemannian Optimization",
+  "abstract": "  Optimization over the embedded submanifold defined by constraints $c(x) = 0$ has attracted much interest over the past few decades due to its wide applications in various areas. Plenty of related optimization packages have been developed based on Riemannian optimization approaches, which rely on some basic geometrical materials of Riemannian manifolds, including retractions, vector transports, etc. These geometrical materials can be challenging to determine in general. Existing packages only accommodate a few well-known manifolds whose geometrical materials are easily accessible. For other manifolds which are not contained in these packages, the users have to develop the geometric materials by themselves. In addition, it is not always tractable to adopt advanced features from various state-of-the-art unconstrained optimization solvers to Riemannian optimization approaches.   We introduce CDOpt (available at https://cdopt.github.io/), a user-friendly Python package for a class Riemannian optimization. Based on constraint dissolving approaches, Riemannian optimization problems are transformed into their equivalent unconstrained counterparts in CDOpt. Therefore, solving Riemannian optimization problems through CDOpt directly benefits from various existing solvers and the rich expertise gained over decades for unconstrained optimization. Moreover, all the computations in CDOpt related to any manifold in question are conducted on its constraints expression, hence users can easily define new manifolds in CDOpt without any background on differential geometry. Furthermore, CDOpt extends the neural layers from PyTorch and Flax, thus allows users to train manifold constrained neural networks directly by the solvers for unconstrained optimization. Extensive numerical experiments demonstrate that CDOpt is highly efficient and robust in solving various classes of Riemannian optimization problems. "
+}

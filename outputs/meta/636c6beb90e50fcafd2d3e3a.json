@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D freehand ultrasound reconstruction without a tracker"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "feed-forward and recurrent neural networks (RNNs)",
+    "multi-task learning algorithm",
+    "sequence modelling",
+    "auxiliary transformation-predicting tasks"
+  ],
+  "results": [
+    "hold-out test performance quantified by frame prediction accuracy, volume reconstruction overlap, accumulated tracking error and final drift",
+    "best performing model associated with predicting transformation between moderately-spaced frames",
+    "little benefit observed by adding frames more than one second away from the predicted transformation"
+  ],
+  "paper_id": "636c6beb90e50fcafd2d3e3a",
+  "title": "Trackerless freehand ultrasound with sequence modelling and auxiliary\n  transformation over past and future frames",
+  "abstract": "  Three-dimensional (3D) freehand ultrasound (US) reconstruction without a tracker can be advantageous over its two-dimensional or tracked counterparts in many clinical applications. In this paper, we propose to estimate 3D spatial transformation between US frames from both past and future 2D images, using feed-forward and recurrent neural networks (RNNs). With the temporally available frames, a further multi-task learning algorithm is proposed to utilise a large number of auxiliary transformation-predicting tasks between them. Using more than 40,000 US frames acquired from 228 scans on 38 forearms of 19 volunteers in a volunteer study, the hold-out test performance is quantified by frame prediction accuracy, volume reconstruction overlap, accumulated tracking error and final drift, based on ground-truth from an optical tracker. The results show the importance of modelling the temporal-spatially correlated input frames as well as output transformations, with further improvement owing to additional past and/or future frames. The best performing model was associated with predicting transformation between moderately-spaced frames, with an interval of less than ten frames at 20 frames per second (fps). Little benefit was observed by adding frames more than one second away from the predicted transformation, with or without LSTM-based RNNs. Interestingly, with the proposed approach, explicit within-sequence loss that encourages consistency in composing transformations or minimises accumulated error may no longer be required. The implementation code and volunteer data will be made publicly available ensuring reproducibility and further research. "
+}

@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "https://github.com/dongbo811/AFFormer"
+  ],
+  "tasks": [
+    "Semantic Segmentation"
+  ],
+  "datasets": [
+    "ADE20K",
+    "Cityscapes"
+  ],
+  "methods": [
+    "Adaptive Frequency Transformer",
+    "CNN",
+    "Vision Transformer",
+    "heterogeneous operators"
+  ],
+  "results": [
+    "41.8 mIoU on ADE20K",
+    "78.7 mIoU on Cityscapes",
+    "4.4 mIoU higher than Segformer on ADE20K",
+    "2.5 mIoU higher than Segformer on Cityscapes",
+    "45% less GFLOPs than Segformer on ADE20K",
+    "72.5% less GFLOPs than Segformer on Cityscapes",
+    "3M parameters"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886668",
+  "title": "Head-Free Lightweight Semantic Segmentation with Linear Transformer",
+  "abstract": "  Existing semantic segmentation works have been mainly focused on designing effective decoders; however, the computational load introduced by the overall structure has long been ignored, which hinders their applications on resource-constrained hardwares. In this paper, we propose a head-free lightweight architecture specifically for semantic segmentation, named Adaptive Frequency Transformer. It adopts a parallel architecture to leverage prototype representations as specific learnable local descriptions which replaces the decoder and preserves the rich image semantics on high-resolution features. Although removing the decoder compresses most of the computation, the accuracy of the parallel structure is still limited by low computational resources. Therefore, we employ heterogeneous operators (CNN and Vision Transformer) for pixel embedding and prototype representations to further save computational costs. Moreover, it is very difficult to linearize the complexity of the vision Transformer from the perspective of spatial domain. Due to the fact that semantic segmentation is very sensitive to frequency information, we construct a lightweight prototype learning block with adaptive frequency filter of complexity $O(n)$ to replace standard self attention with $O(n^{2})$. Extensive experiments on widely adopted datasets demonstrate that our model achieves superior accuracy while retaining only 3M parameters. On the ADE20K dataset, our model achieves 41.8 mIoU and 4.6 GFLOPs, which is 4.4 mIoU higher than Segformer, with 45% less GFLOPs. On the Cityscapes dataset, our model achieves 78.7 mIoU and 34.4 GFLOPs, which is 2.5 mIoU higher than Segformer with 72.5% less GFLOPs. Code is available at https://github.com/dongbo811/AFFormer. "
+}

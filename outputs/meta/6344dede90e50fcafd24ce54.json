@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Economic Design"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stackelberg POMDP",
+    "Reinforcement Learning",
+    "Actor-Critic Method"
+  ],
+  "results": [
+    "Optimal policy achieves the same utility as the optimal leader's strategy",
+    "Learn optimal leader strategies in various settings"
+  ],
+  "paper_id": "6344dede90e50fcafd24ce54",
+  "title": "Stackelberg POMDP: A Reinforcement Learning Approach for Economic Design",
+  "abstract": "  We introduce a reinforcement learning framework for economic design problems. We model the interaction between the designer of the economic environment and the participants as a Stackelberg game: the designer (leader) sets up the rules, and the participants (followers) respond strategically. We model the followers via no-regret dynamics, which converge to a Bayesian Coarse-Correlated Equilibrium (B-CCE) of the game induced by the leader. We embed the followers' no-regret dynamics in the leader's learning environment, which allows us to formulate our learning problem as a POMDP. We call this POMDP the Stackelberg POMDP. We prove that the optimal policy of the Stackelberg POMDP achieves the same utility as the optimal leader's strategy in our Stackelberg game. We solve the Stackelberg POMDP using an actor-critic method, where the critic can access the joint information of all agents. Finally, we show that we are able to learn optimal leader strategies in a variety of settings, including scenarios where the leader is participating in or designing normal-form games, as well as settings with incomplete information that capture common aspects of indirect mechanism design such as limited communication and turn-taking play by agents. "
+}

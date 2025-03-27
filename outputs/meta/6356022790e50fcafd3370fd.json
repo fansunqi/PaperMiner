@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/Mayo-Radiology-Informatics-Lab/MBTI"
+  ],
+  "tasks": [
+    "Brain Tumor Inpainting"
+  ],
+  "datasets": [
+    "2D axial slices of brain MRI"
+  ],
+  "methods": [
+    "Denoising diffusion probabilistic models (DDPMs)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6356022790e50fcafd3370fd",
+  "title": "Multitask Brain Tumor Inpainting with Diffusion Models: A Methodological\n  Report",
+  "abstract": "  Despite the ever-increasing interest in applying deep learning (DL) models to medical imaging, the typical scarcity and imbalance of medical datasets can severely impact the performance of DL models. The generation of synthetic data that might be freely shared without compromising patient privacy is a well-known technique for addressing these difficulties. Inpainting algorithms are a subset of DL generative models that can alter one or more regions of an input image while matching its surrounding context and, in certain cases, non-imaging input conditions. Although the majority of inpainting techniques for medical imaging data use generative adversarial networks (GANs), the performance of these algorithms is frequently suboptimal due to their limited output variety, a problem that is already well-known for GANs. Denoising diffusion probabilistic models (DDPMs) are a recently introduced family of generative networks that can generate results of comparable quality to GANs, but with diverse outputs. In this paper, we describe a DDPM to execute multiple inpainting tasks on 2D axial slices of brain MRI with various sequences, and present proof-of-concept examples of its performance in a variety of evaluation scenarios. Our model and a public online interface to try our tool are available at: https://github.com/Mayo-Radiology-Informatics-Lab/MBTI "
+}

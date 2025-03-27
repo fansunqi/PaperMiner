@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/PKU-RL/FOP-DMAC-MACPF"
+  ],
+  "tasks": [
+    "Cooperative multi-agent reinforcement learning (MARL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-agent conditional policy factorization (MACPF)"
+  ],
+  "results": [
+    "Achieves better performance or faster convergence than baselines"
+  ],
+  "paper_id": "633269fa90e50fcafd490f21",
+  "title": "More Centralized Training, Still Decentralized Execution: Multi-Agent\n  Conditional Policy Factorization",
+  "abstract": "  In cooperative multi-agent reinforcement learning (MARL), combining value decomposition with actor-critic enables agents to learn stochastic policies, which are more suitable for the partially observable environment. Given the goal of learning local policies that enable decentralized execution, agents are commonly assumed to be independent of each other, even in centralized training. However, such an assumption may prohibit agents from learning the optimal joint policy. To address this problem, we explicitly take the dependency among agents into centralized training. Although this leads to the optimal joint policy, it may not be factorized for decentralized execution. Nevertheless, we theoretically show that from such a joint policy, we can always derive another joint policy that achieves the same optimality but can be factorized for decentralized execution. To this end, we propose multi-agent conditional policy factorization (MACPF), which takes more centralized training but still enables decentralized execution. We empirically verify MACPF in various cooperative MARL tasks and demonstrate that MACPF achieves better performance or faster convergence than baselines. Our code is available at https://github.com/PKU-RL/FOP-DMAC-MACPF. "
+}

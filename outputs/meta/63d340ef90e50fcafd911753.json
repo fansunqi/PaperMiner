@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Linear Assignment Problem",
+    "Quadratic Assignment Problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Relative-Interior Solution",
+    "Dual-ascent algorithms"
+  ],
+  "results": [
+    "Bounds near the optimum of the LP relaxation",
+    "Lower runtime compared to a commercial LP solver"
+  ],
+  "paper_id": "63d340ef90e50fcafd911753",
+  "title": "Relative-Interior Solution for the (Incomplete) Linear Assignment Problem with Applications to the Quadratic Assignment Problem",
+  "abstract": "We study the set of optimal solutions of the dual linear programming formulation of the linear assignment problem (LAP) to propose a method for computing a solution from the relative interior of this set. Assuming that an arbitrary dual-optimal solution and an optimal assignment are available (for which many efficient algorithms already exist), our method computes a relative-interior solution in linear time. Since the LAP occurs as a subproblem in the linear programming (LP) relaxation of the quadratic assignment problem (QAP), we employ our method as a new component in the family of dual-ascent algorithms that provide bounds on the optimal value of the QAP. To make our results applicable to the incomplete QAP, which is of interest in practical use-cases, we also provide a linear-time reduction from the incomplete LAP to the complete LAP along with a mapping that preserves optimality and membership in the relative interior. Our experiments on publicly available benchmarks indicate that our approach with relative-interior solution can frequently provide bounds near the optimum of the LP relaxation and its runtime is much lower when compared to a commercial LP solver."
+}

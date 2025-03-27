@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Interactive video streaming QoE maximization"
+  ],
+  "datasets": [
+    "WeChat for Business traces"
+  ],
+  "methods": [
+    "Meta-Reinforcement Learning",
+    "Fiammetta algorithm"
+  ],
+  "results": [
+    "3.6%-16.2% video bitrate improvement",
+    "No increase in stalling rate"
+  ],
+  "paper_id": "63c4c02990e50fcafdae0098",
+  "title": "From Ember to Blaze: Swift Interactive Video Adaptation via\n  Meta-Reinforcement Learning",
+  "abstract": "  Maximizing quality of experience (QoE) for interactive video streaming has been a long-standing challenge, as its delay-sensitive nature makes it more vulnerable to bandwidth fluctuations. While reinforcement learning (RL) has demonstrated great potential, existing works are either limited by fixed models or require enormous data/time for online adaptation, which struggle to fit time-varying and diverse network states. Driven by these practical concerns, we perform large-scale measurements on WeChat for Business's interactive video service to study real-world network fluctuations. Surprisingly, our analysis shows that, compared to time-varying network metrics, network sequences exhibit noticeable short-term continuity, sufficient for few-shot learning requirements. We thus propose Fiammetta, the first meta-RL-based bitrate adaptation algorithm for interactive video streaming. Building on the short-term continuity, Fiammetta accumulates learning experiences through offline meta-training and enables fast online adaptation to changing network states through a few gradient updates. Moreover, Fiammetta innovatively incorporates a probing mechanism for real-time monitoring of network states, and proposes an adaptive meta-testing mechanism for seamless adaptation. We implement Fiammetta on a testbed whose end-to-end network follows the real-world WeChat for Business traces. The results show that Fiammetta outperforms prior algorithms significantly, improving video bitrate by 3.6%-16.2% without increasing stalling rate. "
+}

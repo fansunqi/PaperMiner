@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/bruceyo/V-PETL"
+  ],
+  "tasks": [
+    "Parameter efficient transfer learning (PETL)",
+    "Vision tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "visual-PETL (V-PETL)",
+    "parallel attention (PATT)",
+    "prompt-tuning",
+    "Adapter",
+    "prefix-tuning"
+  ],
+  "results": [
+    "Significantly better performance than the state-of-the-art AdaptFormer-Swin",
+    "Outperforms full-tuning with far fewer parameters"
+  ],
+  "paper_id": "633ba44890e50fcafdfe5020",
+  "title": "Towards a Unified View on Visual Parameter-Efficient Transfer Learning",
+  "abstract": "  Parameter efficient transfer learning (PETL) aims at making good use of the representation knowledge in the pre-trained large models by fine-tuning a small number of parameters. Recently, taking inspiration from the natural language processing (NLP) domain, popular PETL techniques such as prompt-tuning and Adapter have also been successfully applied to the vision domain. However, prefix-tuning remains under-explored for vision tasks. In this work, we intend to adapt large vision models (LVMs) to downstream tasks with a good parameter-accuracy trade-off. Towards this goal, we propose a framework with a unified view of PETL called visual-PETL (V-PETL) to investigate the effects of different PETL techniques, data scales of downstream domains, positions of trainable parameters, and other aspects affecting the trade-off. Specifically, we analyze the positional importance of trainable parameters and differences between NLP and vision tasks in terms of data structures and pre-training mechanisms while implementing various PETL techniques, especially for the under-explored prefix-tuning technique. Based on a comprehensive understanding of the differences between NLP and vision data, we propose a new variation of the prefix-tuning module called parallel attention (PATT) for vision downstream tasks. An extensive empirical analysis on vision tasks via different frozen LVMs has been carried and the findings show that the proposed PATT can effectively contribute to other PETL techniques. An effective scheme Swin-BAPAT derived from the proposed V-PETL framework achieves significantly better performance than the state-of-the-art AdaptFormer-Swin with slightly more parameters and outperforms full-tuning with far fewer parameters. Code and data are available at: https://github.com/bruceyo/V-PETL. "
+}

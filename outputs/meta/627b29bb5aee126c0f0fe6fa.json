@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Network Pruning"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Simultaneous learning and pruning algorithm",
+    "Variational inference with Gaussian scale mixture priors",
+    "Bernoulli parameters convergence",
+    "Hyper-prior distribution"
+  ],
+  "results": [
+    "Pruning levels on par with state-of-the-art methods",
+    "Better test-accuracy",
+    "Robustness to network initialization and initial size"
+  ],
+  "paper_id": "627b29bb5aee126c0f0fe6fa",
+  "title": "Robust Learning of Parsimonious Deep Neural Networks",
+  "abstract": "  We propose a simultaneous learning and pruning algorithm capable of identifying and eliminating irrelevant structures in a neural network during the early stages of training. Thus, the computational cost of subsequent training iterations, besides that of inference, is considerably reduced. Our method, based on variational inference principles using Gaussian scale mixture priors on neural network weights, learns the variational posterior distribution of Bernoulli random variables multiplying the units/filters similarly to adaptive dropout. Our algorithm, ensures that the Bernoulli parameters practically converge to either 0 or 1, establishing a deterministic final network. We analytically derive a novel hyper-prior distribution over the prior parameters that is crucial for their optimal selection and leads to consistent pruning levels and prediction accuracy regardless of weight initialization or the size of the starting network. We prove the convergence properties of our algorithm establishing theoretical and practical pruning conditions. We evaluate the proposed algorithm on the MNIST and CIFAR-10 data sets and the commonly used fully connected and convolutional LeNet and VGG16 architectures. The simulations show that our method achieves pruning levels on par with state-of the-art methods for structured pruning, while maintaining better test-accuracy and more importantly in a manner robust with respect to network initialization and initial size. "
+}

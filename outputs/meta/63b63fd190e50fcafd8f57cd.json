@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time Rendering",
+    "High-quality Supersampling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mask-reinforced Deep Learning",
+    "Ray tracing",
+    "Temporal accumulation network",
+    "Multi-scale U-Net with skip connections"
+  ],
+  "results": [
+    "Higher quality supersampling results without increasing the total number of ray-tracing samples",
+    "Improved temporal stability"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f57cd",
+  "title": "High-Quality Supersampling via Mask-reinforced Deep Learning for\n  Real-time Rendering",
+  "abstract": "  To generate high quality rendering images for real time applications, it is often to trace only a few samples-per-pixel (spp) at a lower resolution and then supersample to the high resolution. Based on the observation that the rendered pixels at a low resolution are typically highly aliased, we present a novel method for neural supersampling based on ray tracing 1/4-spp samples at the high resolution. Our key insight is that the ray-traced samples at the target resolution are accurate and reliable, which makes the supersampling an interpolation problem. We present a mask-reinforced neural network to reconstruct and interpolate high-quality image sequences. First, a novel temporal accumulation network is introduced to compute the correlation between current and previous features to significantly improve their temporal stability. Then a reconstruct network based on a multi-scale U-Net with skip connections is adopted for reconstruction and generation of the desired high-resolution image. Experimental results and comparisons have shown that our proposed method can generate higher quality results of supersampling, without increasing the total number of ray-tracing samples, over current state-of-the-art methods. "
+}

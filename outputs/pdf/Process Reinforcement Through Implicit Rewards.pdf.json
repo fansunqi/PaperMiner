@@ -1,0 +1,32 @@
+{
+  "code_links": [
+    "https://github.com/PRIME-RL/PRIME"
+  ],
+  "tasks": [
+    "LLM Reasoning",
+    "Math Problem Solving",
+    "Code Generation"
+  ],
+  "datasets": [
+    "NuminaMath-CoT",
+    "APPS",
+    "CodeContests",
+    "TACO",
+    "Codeforces2"
+  ],
+  "methods": [
+    "Process Reinforcement through Implicit Rewards (PRIME)",
+    "Implicit PRM",
+    "SFT",
+    "RLHF",
+    "Action-centric chain-of-thought reasoning"
+  ],
+  "results": [
+    "Average improvement of 15.1% on key reasoning benchmarks",
+    "26.7% pass@1 on AIME 2024",
+    "2.5x sample efficiency gain",
+    "6.9% performance improvements on challenging math problems"
+  ],
+  "title": "Process Reinforcement Through Implicit Rewards.pdf",
+  "abstract": "Dense process rewards have proven a more effective alternative to the sparse outcome-level rewards in the inference-time scaling of large language models (LLMs), particularly in tasks requiring complex multi-step reasoning. While dense rewards also offer an appealing choice for the reinforcement learning (RL) of LLMs since their fine-grained rewards have the potential to address some inher- ent issues of outcome rewards, such as training efficiency and credit assignment, this potential remains largely unrealized. This can be primarily attributed to the challenges of training process reward models (PRMs) online, where collecting high-quality process labels is prohibitively expensive, making them particularly vulnerable to reward hacking. To address these challenges, we propose PRIME (Process Reinforcement through IMplicit rEwards), which enables online PRM updates using only policy rollouts and outcome labels through implict process rewards. PRIME combines well with various advantage functions and forgoes the dedicated reward model training phase that existing approaches require, substan- tially reducing the development overhead. We demonstrate PRIME\u2019s effectiveness on competitional math and coding. Starting from Qwen2.5-Math-7B-Base, PRIME achieves a 15.1% average improvement across several key reasoning benchmarks over the SFT model. Notably, our resulting model, Eurus-2-7B-PRIME, surpasses Qwen2.5-Math-7B-Instruct on seven reasoning benchmarks with 10% of its train- ing data.1 1 INTRODUCTION Dense process rewards, which provide feedback at each intermediate step rather than only the whole trajectory, have proven effective in inference-time scaling of large language models (LLMs) on challenging reasoning tasks (Uesato et al., 2022; Lightman et al., 2023; Wang et al., 2023; Yuan et al., 2024b). On the training side, they also present superiorities in the reinforcement learning (RL) of LLMs, particularly in improving training efficiency (Sutton & Barto, 2018) and credit assignment (Leike et al., 2018) compared with sparse outcome rewards. However, successful applications of dense rewards in RL for LLMs are limited (Setlur et al., 2024), as current industry- leading models primarily depend on verifiable outcome rewards and have not yet demonstrated meaningful progress with dense rewards (DeepSeek-AI et al., 2025; Team et al., 2025). We identify the central challenge as how to acquire and utilize high-quality dense rewards at scale, which enables online process reward model (PRM) update efficiently. The reason is that, optimizing towards a static reward model eventually leads to overoptimization or reward hacking (Gao et al., \u2217Core Contributors. \u2020Project Lead. 1Models and data are available at: https://github.com/PRIME-RL/PRIME. 1 arXiv:2502.01456v1 [cs.LG] 3 Feb 2025"
+}

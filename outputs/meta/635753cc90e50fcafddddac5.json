@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "de novo molecular optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "double-loop reinforcement learning",
+    "augmented SMILES"
+  ],
+  "results": [
+    "increased diversity in generated compounds",
+    "improved reproducibility",
+    "generation of molecules similar to known ligands"
+  ],
+  "paper_id": "635753cc90e50fcafddddac5",
+  "title": "Faster and more diverse de novo molecular optimization with double-loop\n  reinforcement learning using augmented SMILES",
+  "abstract": "  Using generative deep learning models and reinforcement learning together can effectively generate new molecules with desired properties. By employing a multi-objective scoring function, thousands of high-scoring molecules can be generated, making this approach useful for drug discovery and material science. However, the application of these methods can be hindered by computationally expensive or time-consuming scoring procedures, particularly when a large number of function calls are required as feedback in the reinforcement learning optimization. Here, we propose the use of double-loop reinforcement learning with simplified molecular line entry system (SMILES) augmentation to improve the efficiency and speed of the optimization. By adding an inner loop that augments the generated SMILES strings to non-canonical SMILES for use in additional reinforcement learning rounds, we can both reuse the scoring calculations on the molecular level, thereby speeding up the learning process, as well as offer additional protection against mode collapse. We find that employing between 5 and 10 augmentation repetitions is optimal for the scoring functions tested and is further associated with an increased diversity in the generated compounds, improved reproducibility of the sampling runs and the generation of molecules of higher similarity to known ligands. "
+}

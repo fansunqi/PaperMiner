@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous Driving"
+  ],
+  "datasets": [
+    "INTERACTION",
+    "NGSIM"
+  ],
+  "methods": [
+    "Gaussian-Mixture-Model",
+    "probabilistic and closest-mode measures"
+  ],
+  "results": [
+    "new state-of-the-art performance",
+    "improves over the baseline (MFP)"
+  ],
+  "paper_id": "634781fe90e50fcafd2c1e8f",
+  "title": "DiPA: Probabilistic Multi-Modal Interactive Prediction for Autonomous\n  Driving",
+  "abstract": "  Accurate prediction is important for operating an autonomous vehicle in interactive scenarios. Prediction must be fast, to support multiple requests from a planner exploring a range of possible futures. The generated predictions must accurately represent the probabilities of predicted trajectories, while also capturing different modes of behaviour (such as turning left vs continuing straight at a junction). To this end, we present DiPA, an interactive predictor that addresses these challenging requirements. Previous interactive prediction methods use an encoding of k-mode-samples, which under-represents the full distribution. Other methods optimise closest-mode evaluations, which test whether one of the predictions is similar to the ground-truth, but allow additional unlikely predictions to occur, over-representing unlikely predictions. DiPA addresses these limitations by using a Gaussian-Mixture-Model to encode the full distribution, and optimising predictions using both probabilistic and closest-mode measures. These objectives respectively optimise probabilistic accuracy and the ability to capture distinct behaviours, and there is a challenging trade-off between them. We are able to solve both together using a novel training regime. DiPA achieves new state-of-the-art performance on the INTERACTION and NGSIM datasets, and improves over the baseline (MFP) when both closest-mode and probabilistic evaluations are used. This demonstrates effective prediction for supporting a planner on interactive scenarios. "
+}

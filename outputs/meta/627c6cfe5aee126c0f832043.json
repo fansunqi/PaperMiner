@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Reconstruction"
+  ],
+  "datasets": [
+    "Shepp-Logan head",
+    "anthropomorphic abdominal phantoms"
+  ],
+  "methods": [
+    "Scale Space Radon Transform (SSRT)",
+    "Filtered Backprojection (FBP)",
+    "Deconv-Rad-FBP",
+    "SSRT-FBP"
+  ],
+  "results": [
+    "SSRT-based image reconstruction quality is better than the one based on RT",
+    "SSRT-FBP is the most accurate",
+    "SSRT-FBP is faster than Deconv-Rad-FBP",
+    "SSRT-FBP is more robust to CT data Poisson-Gaussian noise"
+  ],
+  "paper_id": "627c6cfe5aee126c0f832043",
+  "title": "On Scale Space Radon Transform, Properties and Image Reconstruction",
+  "abstract": "  When developing a Filtered Backprojection (FBP) algorithm, considering the Radon transform (RT) as a line integral necessitates assuming that all elements of the Computed Tomography (CT) system, such as the detector cell, are dimensionless. It is generally the result of such inadequate CT modeling that analytical methods are sensitive to artifacts and noise. Then, to address this problem, several algebraic reconstruction techniques utilizing iterative models are suggested. The high computational cost of these methods restricts their application. In this paper, we propose the utilization of the Scale Space Radon Transform (SSRT), recognized for its good behavior in the scale space where, the detector width is already considered into the SSRT design and is controlled by the Gaussian kernel standard deviation. After depicting the basic properties and the inversion of SSRT, the FBP algorithm is used in two different ways to reconstruct the image from the SSRT sinogram: (1) Deconv-Rad-FBP: Deconvolve SSRT to estimate RT and apply FBP or (2) SSRT-FBP: Modify FBP such that RT spectrum used in FBP is replaced by SSRT, expressed in the frequency domain. Comparison of image reconstruction using SSRT and RT are performed on Shepp-Logan head and anthropomorphic abdominal phantoms by using, as quality measures, PSNR and SSIM. The first findings show that the SSRT-based image reconstruction quality is better than the one based on RT where, the SSRT-FBP method reveals to be the most accurate, especially, when the number of projections is reduced, making it more appropriate for applications requiring low-dose radiation such as medical X-ray CT. While SSRT-FBP and RT-FBP algorithm have utmost the same execution time, the former is much faster than Deconv-Rad-FBP. Furthermore, the experiments show that the SSRT-FBP method is more robust to CT data Poisson-Gaussian noise. "
+}

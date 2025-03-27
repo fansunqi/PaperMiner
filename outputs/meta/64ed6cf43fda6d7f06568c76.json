@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://sites.google.com/view/ymchen/research/optimal-rom"
+  ],
+  "tasks": [
+    "Legged locomotion",
+    "Model optimization for online motion planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reduced-order models (ROM)",
+    "Model optimization algorithm"
+  ],
+  "results": [
+    "Optimal ROM reduces joint torque cost by up to 23% and increases walking speed by up to 54%",
+    "Real robot walks with 10% lower torque cost"
+  ],
+  "paper_id": "64ed6cf43fda6d7f06568c76",
+  "title": "Beyond Inverted Pendulums: Task-optimal Simple Models of Legged\n  Locomotion",
+  "abstract": "  Reduced-order models (ROM) are popular in online motion planning due to their simplicity. A good ROM for control captures critical task-relevant aspects of the full dynamics while remaining low dimensional. However, planning within the reduced-order space unavoidably constrains the full model, and hence we sacrifice the full potential of the robot. In the community of legged locomotion, this has lead to a search for better model extensions, but many of these extensions require human intuition, and there has not existed a principled way of evaluating the model performance and discovering new models. In this work, we propose a model optimization algorithm that automatically synthesizes reduced-order models, optimal with respect to a user-specified distribution of tasks and corresponding cost functions. To demonstrate our work, we optimized models for a bipedal robot Cassie. We show in simulation that the optimal ROM reduces the cost of Cassie's joint torques by up to 23% and increases its walking speed by up to 54%. We also show hardware result that the real robot walks on flat ground with 10% lower torque cost. All videos and code can be found at https://sites.google.com/view/ymchen/research/optimal-rom. "
+}

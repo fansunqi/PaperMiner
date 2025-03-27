@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Electric Vehicle Charging Demand Modelling"
+  ],
+  "datasets": [
+    "GPS trajectories from cars in Copenhagen, Denmark"
+  ],
+  "methods": [
+    "Probabilistic censorship-aware graph neural networks"
+  ],
+  "results": [
+    "Censorship-aware models provide better prediction and uncertainty estimation",
+    "Censorship occurs 61% of the time in some regions of Copenhagen"
+  ],
+  "paper_id": "63c8b56c90e50fcafd905fe8",
+  "title": "Mind the Gap -- Modelling Difference Between Censored and Uncensored\n  Electric Vehicle Charging Demand",
+  "abstract": "  Electric vehicle charging demand models, with charging records as input, will inherently be biased toward the supply of available chargers, as the data do not include demand lost from occupied stations and competitors. This lost demand implies that the records only observe a fraction of the total demand, i.e. the observations are censored, and actual demand is likely higher than what the data reflect. Machine learning models often neglect to account for this censored demand when forecasting the charging demand, which limits models' applications for future expansions and supply management. We address this gap by modelling the charging demand with probabilistic censorship-aware graph neural networks, which learn the latent demand distribution in both the spatial and temporal dimensions. We use GPS trajectories from cars in Copenhagen, Denmark, to study how censoring occurs and much demand is lost due to occupied charging and competing services. We find that censorship varies throughout the city and over time, encouraging spatial and temporal modelling. We find that in some regions of Copenhagen, censorship occurs 61% of the time. Our results show censorship-aware models provide better prediction and uncertainty estimation in actual future demand than censorship-unaware models. Our results suggest that future models based on charging records should account for the censoring to expand the application areas of machine learning models in this supply management and infrastructure expansion. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Task-oriented communications"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Encoder-decoder pair",
+    "Deep neural networks"
+  ],
+  "results": [
+    "Classifier accuracy increases with the number of channel uses",
+    "PAoTI decreases and then increases with the number of channel uses",
+    "Dynamic update mechanism reduces PAoTI"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885b8b",
+  "title": "Age of Information in Deep Learning-Driven Task-Oriented Communications",
+  "abstract": "  This paper studies the notion of age in task-oriented communications that aims to execute a task at a receiver utilizing the data at its transmitter. The transmitter-receiver operations are modeled as an encoder-decoder pair that is jointly trained while considering channel effects. The encoder converts data samples into feature vectors of small dimension and transmits them with a small number of channel uses thereby reducing the number of transmissions and latency. Instead of reconstructing input samples, the decoder performs a task, e.g., classification, on the received signals. Applying different deep neural networks of encoder-decoder pairs on MNIST and CIFAR-10 image datasets, the classifier accuracy is shown to increase with the number of channel uses at the expense of longer service time. The peak age of task information (PAoTI) is introduced to analyze this accuracy-latency tradeoff when the age grows unless a received signal is classified correctly. By incorporating channel and traffic effects, design guidelines are obtained for task-oriented communications by characterizing how the PAoTI first decreases and then increases with the number of channel uses. A dynamic update mechanism is presented to adapt the number of channel uses to channel and traffic conditions, and reduce the PAoTI in task-oriented communications. "
+}

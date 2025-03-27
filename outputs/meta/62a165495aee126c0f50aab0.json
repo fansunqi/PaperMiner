@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Trace Diagnostics for Signal-based Temporal Properties"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TD-SB-TemPsy",
+    "language-agnostic methodology for defining violation causes and diagnoses"
+  ],
+  "results": [
+    "TD-SB-TemPsy could finish within a timeout of 1 min for ~83.66% of the trace-property combinations in the industrial dataset",
+    "yielding a diagnosis in ~99.84% of these cases",
+    "diagnosis for all the trace-property combinations in the other dataset"
+  ],
+  "paper_id": "62a165495aee126c0f50aab0",
+  "title": "Trace Diagnostics for Signal-based Temporal Properties",
+  "abstract": "  Most of the trace-checking tools only yield a Boolean verdict. However, when a property is violated by a trace, engineers usually inspect the trace to understand the cause of the violation; such manual diagnostic is time-consuming and error-prone. Existing approaches that complement trace-checking tools with diagnostic capabilities either produce low-level explanations that are hardly comprehensible by engineers or do not support complex signal-based temporal properties. In this paper, we propose TD-SB-TemPsy, a trace-diagnostic approach for properties expressed using SB-TemPsy-DSL. Given a property and a trace that violates the property, TD-SB-TemPsy determines the root cause of the property violation. TD-SB-TemPsy relies on the concepts of violation cause, which characterizes one of the behaviors of the system that may lead to a property violation, and diagnoses, which are associated with violation causes and provide additional information to help engineers understand the violation cause. As part of TD-SB-TemPsy, we propose a language-agnostic methodology to define violation causes and diagnoses. In our context, its application resulted in a catalog of 34 violation causes, each associated with one diagnosis, tailored to properties expressed in SB-TemPsy-DSL. We assessed the applicability of TD-SB-TemPsy on two datasets, including one based on a complex industrial case study.The results show that TD-SB-TemPsy could finish within a timeout of 1 min for ~83.66% of the trace-property combinations in the industrial dataset, yielding a diagnosis in ~99.84% of these cases. Moreover, it also yielded a diagnosis for all the trace-property combinations in the other dataset. These results suggest that our tool is applicable and efficient in most cases. "
+}

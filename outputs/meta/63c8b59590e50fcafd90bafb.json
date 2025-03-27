@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "QBF Encodings for Positional Games"
+  ],
+  "datasets": [
+    "Hex",
+    "Harary's Tic-Tac-Toe"
+  ],
+  "methods": [
+    "Lifted planning",
+    "Implicit representation of winning configurations"
+  ],
+  "results": [
+    "Scalability to 19x19 boards"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bafb",
+  "title": "Implicit State and Goals in QBF Encodings for Positional Games (extended\n  version)",
+  "abstract": "  We address two bottlenecks for concise QBF encodings of maker-breaker positional games, like Hex and Tic-Tac-Toe. Our baseline is a QBF encoding with explicit variables for board positions and an explicit representation of winning configurations. The first improvement is inspired by lifted planning and avoids variables for explicit board positions, introducing a universal quantifier representing a symbolic board state. The second improvement represents the winning configurations implicitly, exploiting their structure. The paper evaluates the size of several encodings, depending on board size and game depth. It also reports the performance of QBF solvers on these encodings. We evaluate the techniques on Hex instances and also apply them to Harary's Tic-Tac-Toe. In particular, we study scalability to 19$\\times$19 boards, played in human Hex tournaments. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/HaiyuWu/CelebAMSO"
+  ],
+  "tasks": [
+    "Facial attribute classification"
+  ],
+  "datasets": [
+    "CelebA"
+  ],
+  "methods": [
+    "Manual audit",
+    "Error rate estimation"
+  ],
+  "results": [
+    "12 of 40 common attributes with >= 95% consistency",
+    "Error rates up to 40% for some attributes",
+    "Higher accuracy with corrected MSO attribute values"
+  ],
+  "paper_id": "634cc7a390e50fcafd162dab",
+  "title": "Consistency and Accuracy of CelebA Attribute Values",
+  "abstract": "  We report the first systematic analysis of the experimental foundations of facial attribute classification. Two annotators independently assigning attribute values shows that only 12 of 40 common attributes are assigned values with >= 95% consistency, and three (high cheekbones, pointed nose, oval face) have essentially random consistency. Of 5,068 duplicate face appearances in CelebA, attributes have contradicting values on from 10 to 860 of the 5,068 duplicates. Manual audit of a subset of CelebA estimates error rates as high as 40% for (no beard=false), even though the labeling consistency experiment indicates that no beard could be assigned with >= 95% consistency. Selecting the mouth slightly open (MSO) for deeper analysis, we estimate the error rate for (MSO=true) at about 20% and (MSO=false) at about 2%. A corrected version of the MSO attribute values enables learning a model that achieves higher accuracy than previously reported for MSO. Corrected values for CelebA MSO are available at https://github.com/HaiyuWu/CelebAMSO. "
+}

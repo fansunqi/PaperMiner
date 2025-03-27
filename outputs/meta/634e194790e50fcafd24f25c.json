@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data valuation",
+    "Fair payment in data marketplaces"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Shapley value calculation algorithm",
+    "Multiparty computation (MPC) circuits",
+    "Performance predictor learning"
+  ],
+  "results": [
+    "Proposed new data valuation algorithm is as effective as the original expensive one",
+    "Customized MPC protocol is efficient and scalable"
+  ],
+  "paper_id": "634e194790e50fcafd24f25c",
+  "title": "Private Data Valuation and Fair Payment in Data Marketplaces",
+  "abstract": "  Data valuation is an essential task in a data marketplace. It aims at fairly compensating data owners for their contribution. There is increasing recognition in the machine learning community that the Shapley value -- a foundational profit-sharing scheme in cooperative game theory -- has major potential to value data, because it uniquely satisfies basic properties for fair credit allocation and has been shown to be able to identify data sources that are useful or harmful to model performance. However, calculating the Shapley value requires accessing original data sources. It still remains an open question how to design a real-world data marketplace that takes advantage of the Shapley value-based data pricing while protecting privacy and allowing fair payments. In this paper, we propose the {\\em first} prototype of a data marketplace that values data sources based on the Shapley value in a privacy-preserving manner and at the same time ensures fair payments. Our approach is enabled by a suite of innovations on both algorithm and system design. We firstly propose a Shapley value calculation algorithm that can be efficiently implemented via multiparty computation (MPC) circuits. The key idea is to learn a performance predictor that can directly predict model performance corresponding to an input dataset without performing actual training. We further optimize the MPC circuit design based on the structure of the performance predictor. We further incorporate fair payment into the MPC circuit to guarantee that the data that the buyer pays for is exactly the same as the one that has been valuated. Our experimental results show that the proposed new data valuation algorithm is as effective as the original expensive one. Furthermore, the customized MPC protocol is efficient and scalable. "
+}

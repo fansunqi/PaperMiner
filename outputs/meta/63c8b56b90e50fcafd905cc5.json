@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Segmenting thalamic nuclei"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "UMAP",
+    "k nearest neighbors"
+  ],
+  "results": [
+    "Comparable performance to state-of-the-art methods for thalamic parcellation"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905cc5",
+  "title": "Segmenting thalamic nuclei from manifold projections of multi-contrast\n  MRI",
+  "abstract": "  The thalamus is a subcortical gray matter structure that plays a key role in relaying sensory and motor signals within the brain. Its nuclei can atrophy or otherwise be affected by neurological disease and injuries including mild traumatic brain injury. Segmenting both the thalamus and its nuclei is challenging because of the relatively low contrast within and around the thalamus in conventional magnetic resonance (MR) images. This paper explores imaging features to determine key tissue signatures that naturally cluster, from which we can parcellate thalamic nuclei. Tissue contrasts include T1-weighted and T2-weighted images, MR diffusion measurements including FA, mean diffusivity, Knutsson coefficients that represent fiber orientation, and synthetic multi-TI images derived from FGATIR and T1-weighted images. After registration of these contrasts and isolation of the thalamus, we use the uniform manifold approximation and projection (UMAP) method for dimensionality reduction to produce a low-dimensional representation of the data within the thalamus. Manual labeling of the thalamus provides labels for our UMAP embedding from which k nearest neighbors can be used to label new unseen voxels in that same UMAP embedding. N -fold cross-validation of the method reveals comparable performance to state-of-the-art methods for thalamic parcellation. "
+}

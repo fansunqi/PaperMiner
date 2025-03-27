@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Few-Shot Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pseudo-labeling based meta-learning (PLML)",
+    "Feature smoothing",
+    "Noise suppression"
+  ],
+  "results": [
+    "Effectively prevents performance degradation under limited labeled data",
+    "Significantly outperforms state-of-the-art SSMT models",
+    "Improves SSL algorithms"
+  ],
+  "paper_id": "62d0db105aee126c0f9ef90e",
+  "title": "Pseudo-Labeling Based Practical Semi-Supervised Meta-Training for\n  Few-Shot Learning",
+  "abstract": "  Most existing few-shot learning (FSL) methods require a large amount of labeled data in meta-training, which is a major limit. To reduce the requirement of labels, a semi-supervised meta-training (SSMT) setting has been proposed for FSL, which includes only a few labeled samples and numbers of unlabeled samples in base classes. However, existing methods under this setting require class-aware sample selection from the unlabeled set, which violates the assumption of unlabeled set. In this paper, we propose a practical semi-supervised meta-training setting with truly unlabeled data to facilitate the applications of FSL in realistic scenarios. To better utilize both the labeled and truly unlabeled data, we propose a simple and effective meta-training framework, called pseudo-labeling based meta-learning (PLML). Firstly, we train a classifier via common semi-supervised learning (SSL) and use it to obtain the pseudo-labels of unlabeled data. Then we build few-shot tasks from labeled and pseudo-labeled data and design a novel finetuning method with feature smoothing and noise suppression to better learn the FSL model from noise labels. Surprisingly, through extensive experiments across two FSL datasets, we find that this simple meta-training framework effectively prevents the performance degradation of various FSL models under limited labeled data, and also significantly outperforms the state-of-the-art SSMT models. Besides, benefiting from meta-training, our method also improves two representative SSL algorithms as well. "
+}

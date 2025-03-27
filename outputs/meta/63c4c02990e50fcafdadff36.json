@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Identifying live and dead states in an abstract transition system"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Guided incremental digraphs (GIDs)",
+    "Lazy heuristics-based approach"
+  ],
+  "results": [
+    "Dead state detection in GIDs is solvable in O(log m) time per edge update",
+    "Speedups over BFGT for the largest input graphs over a range of graph classes, random graphs, and graphs arising from regular expression benchmarks"
+  ],
+  "paper_id": "63c4c02990e50fcafdadff36",
+  "title": "Incremental Dead State Detection in Logarithmic Time",
+  "abstract": "  Identifying live and dead states in an abstract transition system is a recurring problem in formal verification. However, state-of-the-art graph algorithms for maintaining reachability information incrementally (that is, as states are visited and before the entire state space is explored) assume that new edges can be added from any state at any time, whereas in many applications, outgoing edges are added from each state as it is explored. To formalize the latter situation, we propose guided incremental digraphs (GIDs), incremental graphs which support labeling closed states (states which will not receive further outgoing edges). Our main result is that dead state detection in GIDs is solvable in $O(\\log m)$ time per edge update for $m$ edges, improving upon $O(\\sqrt{m})$ per edge due to Bender, Fineman, Gilbert, and Tarjan (BFGT) for general incremental directed graphs.   We introduce two algorithms for GIDs: one establishing the logarithmic time bound, and a second algorithm to explore a lazy heuristics-based approach. To demonstrate applicability, we show how GIDs can be used to lazily decide regular expression constraints in SMT applications. To enable an apples-to-apples experimental comparison, we implemented both algorithms, two naive baselines, and the state-of-the-art BFGT baseline using a common directed graph interface in Rust. Our evaluation shows $110$-$530$x speedups over BFGT for the largest input graphs over a range of graph classes, random graphs, and graphs arising from regular expression benchmarks. "
+}

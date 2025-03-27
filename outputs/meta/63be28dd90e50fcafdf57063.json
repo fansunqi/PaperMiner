@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving unlinkability in C-ITS"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hidden Markov Model (HMM)",
+    "Joint probability distribution for obfuscation"
+  ],
+  "results": [
+    "High assurance about the degree of uncertainty (e.g., entropy) about labeled states",
+    "Obfuscation algorithm complexity linear in the number of discrete time steps in HMM"
+  ],
+  "paper_id": "63be28dd90e50fcafdf57063",
+  "title": "Improving unlinkability in C-ITS: a methodology for optimal obfuscation",
+  "abstract": "  In this paper, we develop a new methodology to provide high assurance about privacy in Cooperative Intelligent Transport Systems (C-ITS). Our focus lies on vehicle-to-everything (V2X) communications enabled by Cooperative Awareness Basic Service. Our research motivation is developed based on the analysis of unlinkability provision methods indicating a gap. To address this, we propose a Hidden Markov Model (HMM) to express unlinkability for the situation where two cars are communicating with a Roadside Unit (RSU) using Cooperative Awareness Messages (CAMs). Our HMM has labeled states specifying distinct origins of the CAMs observable by a passive attacker. We then demonstrate that a high assurance about the degree of uncertainty (e.g., entropy) about labeled states can be obtained for the attacker under the assumption that he knows actual positions of the vehicles (e.g., hidden states in HMM). We further demonstrate how unlinkability can be increased in C-ITS: we propose a joint probability distribution that both drivers must use to obfuscate their actual data jointly. This obfuscated data is then encapsulated in their CAMs. Finally, our findings are incorporated into an obfuscation algorithm whose complexity is linear in the number of discrete time steps in HMM. "
+}

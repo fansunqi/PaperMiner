@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Object Detection",
+    "Multi-modal Detection"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "Point Transformer",
+    "Pseudo Point Cloud Generation Network",
+    "Point Fusion Transition (PFT) module"
+  ],
+  "results": [
+    "Competitive result on KITTI dataset"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bab9",
+  "title": "PTA-Det: Point Transformer Associating Point cloud and Image for 3D\n  Object Detection",
+  "abstract": "  In autonomous driving, 3D object detection based on multi-modal data has become an indispensable approach when facing complex environments around the vehicle. During multi-modal detection, LiDAR and camera are simultaneously applied for capturing and modeling. However, due to the intrinsic discrepancies between the LiDAR point and camera image, the fusion of the data for object detection encounters a series of problems. Most multi-modal detection methods perform even worse than LiDAR-only methods. In this investigation, we propose a method named PTA-Det to improve the performance of multi-modal detection. Accompanied by PTA-Det, a Pseudo Point Cloud Generation Network is proposed, which can convert image information including texture and semantic features by pseudo points. Thereafter, through a transformer-based Point Fusion Transition (PFT) module, the features of LiDAR points and pseudo points from image can be deeply fused under a unified point-based representation. The combination of these modules can conquer the major obstacle in feature fusion across modalities and realizes a complementary and discriminative representation for proposal generation. Extensive experiments on the KITTI dataset show the PTA-Det achieves a competitive result and support its effectiveness. "
+}

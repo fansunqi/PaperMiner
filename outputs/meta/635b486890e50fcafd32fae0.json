@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "GNSS-Visual-Inertial Odometry"
+  ],
+  "datasets": [
+    "open datasets",
+    "fixed-wing datasets"
+  ],
+  "methods": [
+    "invariant filter-based platform",
+    "marginalization strategies",
+    "infinitesimal symmetries",
+    "exploit symmetry group structures"
+  ],
+  "results": [
+    "highly competitive results in terms of computational load",
+    "same or better level of accuracy",
+    "strictly linear error propagation without linearization error"
+  ],
+  "paper_id": "635b486890e50fcafd32fae0",
+  "title": "InGVIO: A Consistent Invariant Filter for Fast and High-Accuracy\n  GNSS-Visual-Inertial Odometry",
+  "abstract": "  Combining Global Navigation Satellite System (GNSS) with visual and inertial sensors can give smooth pose estimation without drifting. The fusion system gradually degrades to Visual-Inertial Odometry (VIO) with the number of satellites decreasing, which guarantees robust global navigation in GNSS unfriendly environments. In this letter, we propose an open-sourced invariant filter-based platform, InGVIO, to tightly fuse monocular/stereo visual-inertial measurements, along with raw data from GNSS. InGVIO gives highly competitive results in terms of computational load compared to current graph-based algorithms, meanwhile possessing the same or even better level of accuracy. Thanks to our proposed marginalization strategies, the baseline for triangulation is large although only a few cloned poses are kept. Moreover, we define the infinitesimal symmetries of the system and exploit the various structures of its symmetry group, being different from the total symmetries of the VIO case, which elegantly gives results for the pattern of degenerate motions and the structure of unobservable subspaces. We prove that the properly-chosen invariant error is still compatible with all possible symmetry group structures of InGVIO and has intrinsic consistency properties. Besides, InGVIO has strictly linear error propagation without linearization error. InGVIO is tested on both open datasets and our proposed fixed-wing datasets with variable levels of difficulty and various numbers of satellites. The latter datasets, to the best of our knowledge, are the first datasets open-sourced to the community on a fixed-wing aircraft with raw GNSS. "
+}

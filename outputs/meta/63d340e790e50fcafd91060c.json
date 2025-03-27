@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural-based video codec enhancement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differentiable bit-rate estimation",
+    "End-to-end neural codecs training"
+  ],
+  "results": [
+    "Accuracy in estimating HEVC/H.265 codec bit-rates"
+  ],
+  "paper_id": "63d340e790e50fcafd91060c",
+  "title": "Differentiable bit-rate estimation for neural-based video codec\n  enhancement",
+  "abstract": "  Neural networks (NN) can improve standard video compression by pre- and post-processing the encoded video. For optimal NN training, the standard codec needs to be replaced with a codec proxy that can provide derivatives of estimated bit-rate and distortion, which are used for gradient back-propagation. Since entropy coding of standard codecs is designed to take into account non-linear dependencies between transform coefficients, bit-rates cannot be well approximated with simple per-coefficient estimators. This paper presents a new approach for bit-rate estimation that is similar to the type employed in training end-to-end neural codecs, and able to efficiently take into account those statistical dependencies. It is defined from a mathematical model that provides closed-form formulas for the estimates and their gradients, reducing the computational complexity. Experimental results demonstrate the method's accuracy in estimating HEVC/H.265 codec bit-rates. "
+}

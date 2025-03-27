@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "End-to-End Speech Recognition"
+  ],
+  "datasets": [
+    "LibriSpeech"
+  ],
+  "methods": [
+    "Uconv-Conformer"
+  ],
+  "results": [
+    "47.8% and 23.5% inference acceleration on CPU and GPU",
+    "7.3% and 9.2% relative WER reduction on test_clean and test_other"
+  ],
+  "paper_id": "62fc5c7b90e50fcafdbca685",
+  "title": "Uconv-Conformer: High Reduction of Input Sequence Length for End-to-End\n  Speech Recognition",
+  "abstract": "  Optimization of modern ASR architectures is among the highest priority tasks since it saves many computational resources for model training and inference. The work proposes a new Uconv-Conformer architecture based on the standard Conformer model. It consistently reduces the input sequence length by 16 times, which results in speeding up the work of the intermediate layers. To solve the convergence issue connected with such a significant reduction of the time dimension, we use upsampling blocks like in the U-Net architecture to ensure the correct CTC loss calculation and stabilize network training. The Uconv-Conformer architecture appears to be not only faster in terms of training and inference speed but also shows better WER compared to the baseline Conformer. Our best Uconv-Conformer model shows 47.8% and 23.5% inference acceleration on the CPU and GPU, respectively. Relative WER reduction is 7.3% and 9.2% on LibriSpeech test_clean and test_other respectively. "
+}

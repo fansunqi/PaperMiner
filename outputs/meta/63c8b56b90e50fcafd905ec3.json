@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Target Speaker Extraction"
+  ],
+  "datasets": [
+    "WSJ0-2mix"
+  ],
+  "methods": [
+    "Sparse LDA-transformed Speaker Embeddings",
+    "SepFormer"
+  ],
+  "results": [
+    "Up to 9.9% relative improvement in SI-SDRi",
+    "SI-SDRi of 19.4 dB and PESQ of 3.78"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905ec3",
+  "title": "Improving Target Speaker Extraction with Sparse LDA-transformed Speaker\n  Embeddings",
+  "abstract": "  As a practical alternative of speech separation, target speaker extraction (TSE) aims to extract the speech from the desired speaker using additional speaker cue extracted from the speaker. Its main challenge lies in how to properly extract and leverage the speaker cue to benefit the extracted speech quality. The cue extraction method adopted in majority existing TSE studies is to directly utilize discriminative speaker embedding, which is extracted from the pre-trained models for speaker verification. Although the high speaker discriminability is a most desirable property for speaker verification task, we argue that it may be too sophisticated for TSE. In this study, we propose that a simplified speaker cue with clear class separability might be preferred for TSE. To verify our proposal, we introduce several forms of speaker cues, including naive speaker embedding (such as, x-vector and xi-vector) and new speaker embeddings produced from sparse LDA-transform. Corresponding TSE models are built by integrating these speaker cues with SepFormer (one SOTA speech separation model). Performances of these TSE models are examined on the benchmark WSJ0-2mix dataset. Experimental results validate the effectiveness and generalizability of our proposal, showing up to 9.9% relative improvement in SI-SDRi. Moreover, with SI-SDRi of 19.4 dB and PESQ of 3.78, our best TSE system significantly outperforms the current SOTA systems and offers the top TSE results reported till date on the WSJ0-2mix. "
+}

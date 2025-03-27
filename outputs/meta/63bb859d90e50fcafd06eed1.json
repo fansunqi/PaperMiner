@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Attacks on Neural Models of Code"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CODA: Code Difference Reduction"
+  ],
+  "results": [
+    "Improves state-of-the-art techniques by 79.25% and 72.20% on average in terms of attack success rate"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eed1",
+  "title": "Adversarial Attacks on Neural Models of Code via Code Difference\n  Reduction",
+  "abstract": "  Deep learning has been widely used to solve various code-based tasks by building deep code models based on a large number of code snippets. However, deep code models are still vulnerable to adversarial attacks. As source code is discrete and has to strictly stick to the grammar and semantics constraints, the adversarial attack techniques in other domains are not applicable. Moreover, the attack techniques specific to deep code models suffer from the effectiveness issue due to the enormous attack space. In this work, we propose a novel adversarial attack technique (i.e., CODA). Its key idea is to use the code differences between the target input and reference inputs (that have small code differences but different prediction results with the target one) to guide the generation of adversarial examples. It considers both structure differences and identifier differences to preserve the original semantics. Hence, the attack space can be largely reduced as the one constituted by the two kinds of code differences, and thus the attack process can be largely improved by designing corresponding equivalent structure transformations and identifier renaming transformations. Our experiments on 10 deep code models (i.e., two pre trained models with five code-based tasks) demonstrate the effectiveness and efficiency of CODA, the naturalness of its generated examples, and its capability of defending against attacks after adversarial fine-tuning. For example, CODA improves the state-of-the-art techniques (i.e., CARROT and ALERT) by 79.25% and 72.20% on average in terms of the attack success rate, respectively. "
+}

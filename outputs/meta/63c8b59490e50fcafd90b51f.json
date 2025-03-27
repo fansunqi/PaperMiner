@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/Jesse-Islam/cbnn"
+  ],
+  "tasks": [
+    "Survival analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Case-Base Neural Networks (CBNNs)"
+  ],
+  "results": [
+    "CBNN outperforms competitors in simulation",
+    "Outperforms competing models in two studies and similar performance in the third"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b51f",
+  "title": "Case-Base Neural Networks: survival analysis with time-varying,\n  higher-order interactions",
+  "abstract": "In the context of survival analysis, data-driven neural network-based methods\nhave been developed to model complex covariate effects. While these methods may\nprovide better predictive performance than regression-based approaches, not all\ncan model time-varying interactions and complex baseline hazards. To address\nthis, we propose Case-Base Neural Networks (CBNNs) as a new approach that\ncombines the case-base sampling framework with flexible neural network\narchitectures. Using a novel sampling scheme and data augmentation to naturally\naccount for censoring, we construct a feed-forward neural network that includes\ntime as an input. CBNNs predict the probability of an event occurring at a\ngiven moment to estimate the full hazard function. We compare the performance\nof CBNNs to regression and neural network-based survival methods in a\nsimulation and three case studies using two time-dependent metrics. First, we\nexamine performance on a simulation involving a complex baseline hazard and\ntime-varying interactions to assess all methods, with CBNN outperforming\ncompetitors. Then, we apply all methods to three real data applications, with\nCBNNs outperforming the competing models in two studies and showing similar\nperformance in the third. Our results highlight the benefit of combining\ncase-base sampling with deep learning to provide a simple and flexible\nframework for data-driven modeling of single event survival outcomes that\nestimates time-varying effects and a complex baseline hazard by design. An R\npackage is available at https://github.com/Jesse-Islam/cbnn."
+}

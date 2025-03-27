@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Instance-wise Unlearning for Pre-trained Classifiers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Instance-wise Unlearning",
+    "Utilizing adversarial examples",
+    "Leveraging weight importance metrics"
+  ],
+  "results": [
+    "Effectively preserves knowledge of remaining data",
+    "Unlearning given instances in both single-task and continual unlearning scenarios"
+  ],
+  "paper_id": "63d7352390e50fcafda30340",
+  "title": "Learning to Unlearn: Instance-wise Unlearning for Pre-trained\n  Classifiers",
+  "abstract": "Since the recent advent of regulations for data protection (e.g., the General\nData Protection Regulation), there has been increasing demand in deleting\ninformation learned from sensitive data in pre-trained models without\nretraining from scratch. The inherent vulnerability of neural networks towards\nadversarial attacks and unfairness also calls for a robust method to remove or\ncorrect information in an instance-wise fashion, while retaining the predictive\nperformance across remaining data. To this end, we consider instance-wise\nunlearning, of which the goal is to delete information on a set of instances\nfrom a pre-trained model, by either misclassifying each instance away from its\noriginal prediction or relabeling the instance to a different label. We also\npropose two methods that reduce forgetting on the remaining data: 1) utilizing\nadversarial examples to overcome forgetting at the representation-level and 2)\nleveraging weight importance metrics to pinpoint network parameters guilty of\npropagating unwanted information. Both methods only require the pre-trained\nmodel and data instances to forget, allowing painless application to real-life\nsettings where the entire training set is unavailable. Through extensive\nexperimentation on various image classification benchmarks, we show that our\napproach effectively preserves knowledge of remaining data while unlearning\ngiven instances in both single-task and continual unlearning scenarios."
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Action-Language Translation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Paired Gated Autoencoders (PGAE)",
+    "Paired Transformed Autoencoders (PTAE)",
+    "Transformer-based crossmodal attention"
+  ],
+  "results": [
+    "Significantly higher accuracy in language-to-action and action-to-language translations",
+    "Can be trained on mostly unlabelled data",
+    "Behaves plausibly with incongruent input"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa2b5",
+  "title": "Learning Bidirectional Action-Language Translation with Limited\n  Supervision and Incongruent Input",
+  "abstract": "  Human infant learning happens during exploration of the environment, by interaction with objects, and by listening to and repeating utterances casually, which is analogous to unsupervised learning. Only occasionally, a learning infant would receive a matching verbal description of an action it is committing, which is similar to supervised learning. Such a learning mechanism can be mimicked with deep learning. We model this weakly supervised learning paradigm using our Paired Gated Autoencoders (PGAE) model, which combines an action and a language autoencoder. After observing a performance drop when reducing the proportion of supervised training, we introduce the Paired Transformed Autoencoders (PTAE) model, using Transformer-based crossmodal attention. PTAE achieves significantly higher accuracy in language-to-action and action-to-language translations, particularly in realistic but difficult cases when only few supervised training samples are available. We also test whether the trained model behaves realistically with conflicting multimodal input. In accordance with the concept of incongruence in psychology, conflict deteriorates the model output. Conflicting action input has a more severe impact than conflicting language input, and more conflicting features lead to larger interference. PTAE can be trained on mostly unlabelled data where labeled data is scarce, and it behaves plausibly when tested with incongruent input. "
+}

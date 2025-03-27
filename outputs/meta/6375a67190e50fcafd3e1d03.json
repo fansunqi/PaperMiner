@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Anomaly Detection"
+  ],
+  "datasets": [
+    "CIFAR-100"
+  ],
+  "methods": [
+    "Multi-Scale Contrasted Memory",
+    "Memory-augmented contrastive learning",
+    "Anomaly distance detector"
+  ],
+  "results": [
+    "Up to 50% error relative improvement on CIFAR-100",
+    "High performance across one-class and unbalanced settings"
+  ],
+  "paper_id": "6375a67190e50fcafd3e1d03",
+  "title": "Anomaly Detection via Multi-Scale Contrasted Memory",
+  "abstract": "  Deep anomaly detection (AD) aims to provide robust and efficient classifiers for one-class and unbalanced settings. However current AD models still struggle on edge-case normal samples and are often unable to keep high performance over different scales of anomalies. Moreover, there currently does not exist a unified framework efficiently covering both one-class and unbalanced learnings. In the light of these limitations, we introduce a new two-stage anomaly detector which memorizes during training multi-scale normal prototypes to compute an anomaly deviation score. First, we simultaneously learn representations and memory modules on multiple scales using a novel memory-augmented contrastive learning. Then, we train an anomaly distance detector on the spatial deviation maps between prototypes and observations. Our model highly improves the state-of-the-art performance on a wide range of object, style and local anomalies with up to 50% error relative improvement on CIFAR-100. It is also the first model to keep high performance across the one-class and unbalanced settings. "
+}

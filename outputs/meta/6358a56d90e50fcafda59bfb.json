@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Polar Codes Decoding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Belief Propagation List Decoder (BPLD)",
+    "Flexible Permutations",
+    "Sequential Generation (SG) Algorithm",
+    "Low-complexity Permutation Network"
+  ],
+  "results": [
+    "Similar error-correcting performance to SCL with a list size of 4",
+    "Throughput of 25.63 Gbps",
+    "Area efficiency of 29.46 Gbps/mm\u00b2",
+    "1.82x and 4.33x faster than state-of-the-art BP flip and SCL decoders"
+  ],
+  "paper_id": "6358a56d90e50fcafda59bfb",
+  "title": "High-Throughput Flexible Belief Propagation List Decoder for Polar Codes",
+  "abstract": "  Owing to its high parallelism, belief propagation (BP) decoding is highly amenable to high-throughput implementations and thus represents a promising solution for meeting the ultra-high peak data rate of future communication systems. However, for polar codes, the error-correcting performance of BP decoding is far inferior to that of the widely used CRC-aided successive cancellation list (SCL) decoding algorithm. To close the performance gap to SCL, BP list (BPL) decoding expands the exploration of candidate codewords through multiple permuted factor graphs (PFGs). From an implementation perspective, designing a unified and flexible hardware architecture for BPL decoding that supports various PFGs and code configurations presents a big challenge. In this paper, we propose the first hardware implementation of a BPL decoder for polar codes and overcome the implementation challenge by applying a hardware-friendly algorithm that generates flexible permutations on-the-fly. First, we derive the graph selection gain and provide a sequential generation (SG) algorithm to obtain a near-optimal PFG set. We further prove that any permutation can be decomposed into a combination of multiple fixed routings, and we design a low-complexity permutation network to satisfy the decoding schedule. Our BPL decoder not only has a low decoding latency by executing the decoding and permutation generation in parallel, but also supports an arbitrary list size without any area overhead. Experimental results show that, for length-1024 polar codes with a code rate of one-half, our BPL decoder with 32 PFGs has a similar error-correcting performance to SCL with a list size of 4 and achieves a throughput of 25.63 Gbps and an area efficiency of 29.46 Gbps/mm$^{2}$ at SNR=4.0dB, which is 1.82$\\times$ and 4.33$\\times$ faster than the state-of-the-art BP flip and SCL decoders,~respectively "
+}

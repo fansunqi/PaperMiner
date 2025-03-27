@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Meta-learning",
+    "Personalized federated learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "First-Order Model-Agnostic Meta-Learning (FO-MAML)",
+    "Inexact SGD framework",
+    "Moreau envelopes"
+  ],
+  "results": [
+    "Convergence of FO-MAML to the vicinity of a solution of Moreau objective",
+    "Improved guarantees on the dependency on the problem's conditioning",
+    "iMAML's objective is neither smooth nor convex, implying no convergence guarantees"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b6e3",
+  "title": "Convergence of First-Order Algorithms for Meta-Learning with Moreau\n  Envelopes",
+  "abstract": "  In this work, we consider the problem of minimizing the sum of Moreau envelopes of given functions, which has previously appeared in the context of meta-learning and personalized federated learning. In contrast to the existing theory that requires running subsolvers until a certain precision is reached, we only assume that a finite number of gradient steps is taken at each iteration. As a special case, our theory allows us to show the convergence of First-Order Model-Agnostic Meta-Learning (FO-MAML) to the vicinity of a solution of Moreau objective. We also study a more general family of first-order algorithms that can be viewed as a generalization of FO-MAML. Our main theoretical achievement is a theoretical improvement upon the inexact SGD framework. In particular, our perturbed-iterate analysis allows for tighter guarantees that improve the dependency on the problem's conditioning. In contrast to the related work on meta-learning, ours does not require any assumptions on the Hessian smoothness, and can leverage smoothness and convexity of the reformulation based on Moreau envelopes. Furthermore, to fill the gaps in the comparison of FO-MAML to the Implicit MAML (iMAML), we show that the objective of iMAML is neither smooth nor convex, implying that it has no convergence guarantees based on the existing theory. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Combinatorial Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-Inspired Graph Neural Network",
+    "Greedy Algorithm"
+  ],
+  "results": [
+    "GNN performs on par or outperforms existing solvers",
+    "Greedy algorithm is faster by a factor of $10^4$ than GNN for problems with a million variables"
+  ],
+  "paper_id": "62bab8fa5aee126c0f6afe99",
+  "title": "Modern graph neural networks do worse than classical greedy algorithms\n  in solving combinatorial optimization problems like maximum independent set",
+  "abstract": "  The recent work ``Combinatorial Optimization with Physics-Inspired Graph Neural Networks'' [Nat Mach Intell 4 (2022) 367] introduces a physics-inspired unsupervised Graph Neural Network (GNN) to solve combinatorial optimization problems on sparse graphs. To test the performances of these GNNs, the authors of the work show numerical results for two fundamental problems: maximum cut and maximum independent set (MIS). They conclude that \"the graph neural network optimizer performs on par or outperforms existing solvers, with the ability to scale beyond the state of the art to problems with millions of variables.\"   In this comment, we show that a simple greedy algorithm, running in almost linear time, can find solutions for the MIS problem of much better quality than the GNN. The greedy algorithm is faster by a factor of $10^4$ with respect to the GNN for problems with a million variables. We do not see any good reason for solving the MIS with these GNN, as well as for using a sledgehammer to crack nuts.   In general, many claims of superiority of neural networks in solving combinatorial problems are at risk of being not solid enough, since we lack standard benchmarks based on really hard problems. We propose one of such hard benchmarks, and we hope to see future neural network optimizers tested on these problems before any claim of superiority is made. "
+}

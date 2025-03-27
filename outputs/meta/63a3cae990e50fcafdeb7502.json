@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural architecture search",
+    "Ultra-low uniform-precision quantization"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Neural channel expansion"
+  ],
+  "results": [
+    "Best-to-date Top-1/Top-5 accuracy for 2-bit ResNet50",
+    "Smaller FLOPs and parameter size"
+  ],
+  "paper_id": "63a3cae990e50fcafdeb7502",
+  "title": "Automatic Network Adaptation for Ultra-Low Uniform-Precision\n  Quantization",
+  "abstract": "  Uniform-precision neural network quantization has gained popularity since it simplifies densely packed arithmetic unit for high computing capability. However, it ignores heterogeneous sensitivity to the impact of quantization errors across the layers, resulting in sub-optimal inference accuracy. This work proposes a novel neural architecture search called neural channel expansion that adjusts the network structure to alleviate accuracy degradation from ultra-low uniform-precision quantization. The proposed method selectively expands channels for the quantization sensitive layers while satisfying hardware constraints (e.g., FLOPs, PARAMs). Based on in-depth analysis and experiments, we demonstrate that the proposed method can adapt several popular networks channels to achieve superior 2-bit quantization accuracy on CIFAR10 and ImageNet. In particular, we achieve the best-to-date Top-1/Top-5 accuracy for 2-bit ResNet50 with smaller FLOPs and the parameter size. "
+}

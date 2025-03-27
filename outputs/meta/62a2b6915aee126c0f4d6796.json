@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video frame interpolation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Joint Non-linear Motion Regression (JNMR)",
+    "ConvLSTM",
+    "coarse-to-fine synthesis enhancement module"
+  ],
+  "results": [
+    "significant improvement compared with the state-of-the-art methods"
+  ],
+  "paper_id": "62a2b6915aee126c0f4d6796",
+  "title": "JNMR: Joint Non-linear Motion Regression for Video Frame Interpolation",
+  "abstract": "  Video frame interpolation (VFI) aims to generate predictive frames by warping learnable motions from the bidirectional historical references. Most existing works utilize spatio-temporal semantic information extractor to realize motion estimation and interpolation modeling. However, they insufficiently consider the real mechanistic rationality of generated middle motions. In this paper, we reformulate VFI as a Joint Non-linear Motion Regression (JNMR) strategy to model the complicated motions of inter-frame. Specifically, the motion trajectory between the target frame and the multiple reference frames is regressed by a temporal concatenation of multi-stage quadratic models. ConvLSTM is adopted to construct this joint distribution of complete motions in temporal dimension. Moreover, the feature learning network is designed to optimize for the joint regression modeling. A coarse-to-fine synthesis enhancement module is also conducted to learn visual dynamics at different resolutions through repetitive regression and interpolation. Experimental results on VFI show that the effectiveness and significant improvement of joint motion regression compared with the state-of-the-art methods. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Query Evaluation in Parallel Constant Time"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Relational algebra queries",
+    "CRCW-PRAM",
+    "Acyclic queries",
+    "Semi-join algebra queries",
+    "Join queries",
+    "Compaction technique"
+  ],
+  "results": [
+    "Best sequential algorithms in semi-join queries",
+    "Close to best sequential algorithms in acyclic and join queries"
+  ],
+  "paper_id": "63ca06a190e50fcafd683829",
+  "title": "Work-Efficient Query Evaluation with PRAMs",
+  "abstract": "  The paper studies query evaluation in parallel constant time in the PRAM model. While it is well-known that all relational algebra queries can be evaluated in constant time on an appropriate CRCW-PRAM, this paper is interested in the efficiency of evaluation algorithms, that is, in the number of processors or, asymptotically equivalent, in the work. Naive evaluation in the parallel setting results in huge (polynomial) bounds on the work of such algorithms and in presentations of the result sets that can be extremely scattered in memory. The paper first discusses some obstacles for constant time PRAM query evaluation. It presents algorithms for relational operators that are considerably more efficient than the naive approaches. Further it explores three settings, in which efficient sequential query evaluation algorithms exist: acyclic queries, semi-join algebra queries, and join queries -- the latter in the worst-case optimal framework. Under natural assumptions on the representation of the database, the work of the given algorithms matches the best sequential algorithms in the case of semi-join queries, and it comes close in the other two settings. An important tool is the compaction technique from Hagerup (1992). "
+}

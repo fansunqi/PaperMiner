@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "On-device machine learning inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Private information retrieval (PIR)",
+    "GPU acceleration",
+    "Co-design with ML applications"
+  ],
+  "results": [
+    "Throughput improvement by more than 20x over optimized CPU PIR",
+    "Throughput improvement by over 5x with co-design",
+    "Up to 100,000 queries per second on a V100 GPU",
+    "Throughput improvement by >100x over naive implementation",
+    "Maintaining model accuracy",
+    "Limiting inference communication to 300KB",
+    "Limiting response latency to <100ms"
+  ],
+  "paper_id": "63d340ef90e50fcafd911590",
+  "title": "GPU-based Private Information Retrieval for On-Device Machine Learning\n  Inference",
+  "abstract": "  On-device machine learning (ML) inference can enable the use of private user data on user devices without remote servers. However, a pure on-device solution to private ML inference is impractical for many applications that rely on embedding tables that are too large to be stored on-device. To overcome this barrier, we propose the use of private information retrieval (PIR) to efficiently and privately retrieve embeddings from servers without sharing any private information during on-device ML inference. As off-the-shelf PIR algorithms are usually too computationally intensive to directly use for latency-sensitive inference tasks, we 1) develop a novel algorithm for accelerating PIR on GPUs, and 2) co-design PIR with the downstream ML application to obtain further speedup. Our GPU acceleration strategy improves system throughput by more than $20 \\times$ over an optimized CPU PIR implementation, and our co-design techniques obtain over $5 \\times$ additional throughput improvement at fixed model quality. Together, on various on-device ML applications such as recommendation and language modeling, our system on a single V100 GPU can serve up to $100,000$ queries per second -- a $>100 \\times$ throughput improvement over a naively implemented system -- while maintaining model accuracy, and limiting inference communication and response latency to within $300$KB and $<100$ms respectively. "
+}

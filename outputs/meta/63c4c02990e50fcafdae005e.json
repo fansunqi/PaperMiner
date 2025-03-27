@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/hsiangyuzhao/RCPS"
+  ],
+  "tasks": [
+    "Medical image segmentation"
+  ],
+  "datasets": [
+    "Public datasets",
+    "In-house clinical dataset"
+  ],
+  "methods": [
+    "Rectified Contrastive Pseudo Supervision",
+    "Uncertainty estimation",
+    "Consistency regularization",
+    "Bidirectional voxel contrastive loss"
+  ],
+  "results": [
+    "Better segmentation performance compared with state-of-the-art methods"
+  ],
+  "paper_id": "63c4c02990e50fcafdae005e",
+  "title": "RCPS: Rectified Contrastive Pseudo Supervision for Semi-Supervised\n  Medical Image Segmentation",
+  "abstract": "  Medical image segmentation methods are generally designed as fully-supervised to guarantee model performance, which require a significant amount of expert annotated samples that are high-cost and laborious. Semi-supervised image segmentation can alleviate the problem by utilizing a large number of unlabeled images along with limited labeled images. However, learning a robust representation from numerous unlabeled images remains challenging due to potential noise in pseudo labels and insufficient class separability in feature space, which undermines the performance of current semi-supervised segmentation approaches. To address the issues above, we propose a novel semi-supervised segmentation method named as Rectified Contrastive Pseudo Supervision (RCPS), which combines a rectified pseudo supervision and voxel-level contrastive learning to improve the effectiveness of semi-supervised segmentation. Particularly, we design a novel rectification strategy for the pseudo supervision method based on uncertainty estimation and consistency regularization to reduce the noise influence in pseudo labels. Furthermore, we introduce a bidirectional voxel contrastive loss to the network to ensure intra-class consistency and inter-class contrast in feature space, which increases class separability in the segmentation. The proposed RCPS segmentation method has been validated on two public datasets and an in-house clinical dataset. Experimental results reveal that the proposed method yields better segmentation performance compared with the state-of-the-art methods in semi-supervised medical image segmentation. The source code is available at https://github.com/hsiangyuzhao/RCPS. "
+}

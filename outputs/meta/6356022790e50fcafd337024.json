@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/zhongshp/DCL-SLAM.git"
+  ],
+  "tasks": [
+    "Robotic Swarm Localization",
+    "Collaborative LiDAR SLAM"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DCL-SLAM",
+    "LiDAR-Iris descriptor",
+    "Distributed loop closure module",
+    "Distributed pose graph optimizer",
+    "Pairwise consistent measurement set maximization algorithm"
+  ],
+  "results": [
+    "Higher accuracy",
+    "Lower communication bandwidth"
+  ],
+  "paper_id": "6356022790e50fcafd337024",
+  "title": "DCL-SLAM: A Distributed Collaborative LiDAR SLAM Framework for a Robotic\n  Swarm",
+  "abstract": "  To execute collaborative tasks in unknown environments, a robotic swarm needs to establish a global reference frame and locate itself in a shared understanding of the environment. However, it faces many challenges in real-world scenarios, such as the prior information about the environment being absent and poor communication among the team members. This work presents DCL-SLAM, a fully distributed collaborative LiDAR SLAM framework intended for the robotic swarm to simultaneously co-localize in an unknown environment with minimal information exchange. Based on ad-hoc wireless peer-to-peer communication (limited bandwidth and communication range), DCL-SLAM adopts the lightweight LiDAR-Iris descriptor for place recognition and does not require full connectivity among teams. DCL-SLAM includes three main parts: a replaceable single-robot front-end that produces LiDAR odometry results; a distributed loop closure module that detects inter-robot loop closures with keyframes; and a distributed back-end module that adapts distributed pose graph optimizer combined with a pairwise consistent measurement set maximization algorithm to reject spurious inter-robot loop closures. We integrate our proposed framework with diverse open-source LiDAR odometry methods to show its versatility. The proposed system is extensively evaluated on benchmarking datasets and field experiments over various scales and environments. Experimental result shows that DCL-SLAM achieves higher accuracy and lower communication bandwidth than other state-of-art multi-robot SLAM systems. The full source code is available at https://github.com/zhongshp/DCL-SLAM.git. "
+}

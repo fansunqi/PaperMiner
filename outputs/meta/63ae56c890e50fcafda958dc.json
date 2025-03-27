@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unbiased learning to rank"
+  ],
+  "datasets": [
+    "controlled public datasets",
+    "large-scale industry dataset"
+  ],
+  "methods": [
+    "two-tower architecture",
+    "factorization into relevance and bias towers",
+    "methods to mitigate confounding effects"
+  ],
+  "results": [
+    "effectiveness of the proposed approaches"
+  ],
+  "paper_id": "63ae56c890e50fcafda958dc",
+  "title": "Towards Disentangling Relevance and Bias in Unbiased Learning to Rank",
+  "abstract": "  Unbiased learning to rank (ULTR) studies the problem of mitigating various biases from implicit user feedback data such as clicks, and has been receiving considerable attention recently. A popular ULTR approach for real-world applications uses a two-tower architecture, where click modeling is factorized into a relevance tower with regular input features, and a bias tower with bias-relevant inputs such as the position of a document. A successful factorization will allow the relevance tower to be exempt from biases. In this work, we identify a critical issue that existing ULTR methods ignored - the bias tower can be confounded with the relevance tower via the underlying true relevance. In particular, the positions were determined by the logging policy, i.e., the previous production model, which would possess relevance information. We give both theoretical analysis and empirical results to show the negative effects on relevance tower due to such a correlation. We then propose three methods to mitigate the negative confounding effects by better disentangling relevance and bias. Empirical results on both controlled public datasets and a large-scale industry dataset show the effectiveness of the proposed approaches. "
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stability Analysis of Sharpness-Aware Minimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sharpness-aware minimization (SAM)",
+    "Qualitative theory of dynamical systems",
+    "Stochastic dynamical systems",
+    "Momentum",
+    "Batch-size"
+  ],
+  "results": [
+    "Convergence instability near a saddle point",
+    "Saddle point can become an attractor under SAM dynamics",
+    "SAM diffusion worse than vanilla gradient descent in saddle point escape",
+    "Momentum and batch-size mitigate convergence instability"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905f10",
+  "title": "Stability Analysis of Sharpness-Aware Minimization",
+  "abstract": "  Sharpness-aware minimization (SAM) is a recently proposed training method that seeks to find flat minima in deep learning, resulting in state-of-the-art performance across various domains. Instead of minimizing the loss of the current weights, SAM minimizes the worst-case loss in its neighborhood in the parameter space. In this paper, we demonstrate that SAM dynamics can have convergence instability that occurs near a saddle point. Utilizing the qualitative theory of dynamical systems, we explain how SAM becomes stuck in the saddle point and then theoretically prove that the saddle point can become an attractor under SAM dynamics. Additionally, we show that this convergence instability can also occur in stochastic dynamical systems by establishing the diffusion of SAM. We prove that SAM diffusion is worse than that of vanilla gradient descent in terms of saddle point escape. Further, we demonstrate that often overlooked training tricks, momentum and batch-size, are important to mitigate the convergence instability and achieve high generalization performance. Our theoretical and empirical results are thoroughly verified through experiments on several well-known optimization problems and benchmark tasks. "
+}

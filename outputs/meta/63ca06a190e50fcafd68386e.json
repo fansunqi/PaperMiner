@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Synthetic data generation",
+    "ECG generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Diffusion models",
+    "Structured state space models",
+    "Conditional variants of state-of-the-art unconditional generative models"
+  ],
+  "results": [
+    "SSSD-ECG outperforms its GAN-based competitors",
+    "High quality of the SSSD-ECG samples across a wide range of conditions"
+  ],
+  "paper_id": "63ca06a190e50fcafd68386e",
+  "title": "Diffusion-based Conditional ECG Generation with Structured State Space\n  Models",
+  "abstract": "  Synthetic data generation is a promising solution to address privacy issues with the distribution of sensitive health data. Recently, diffusion models have set new standards for generative models for different data modalities. Also very recently, structured state space models emerged as a powerful modeling paradigm to capture long-term dependencies in time series. We put forward SSSD-ECG, as the combination of these two technologies, for the generation of synthetic 12-lead electrocardiograms conditioned on more than 70 ECG statements. Due to a lack of reliable baselines, we also propose conditional variants of two state-of-the-art unconditional generative models. We thoroughly evaluate the quality of the generated samples, by evaluating pretrained classifiers on the generated data and by evaluating the performance of a classifier trained only on synthetic data, where SSSD-ECG clearly outperforms its GAN-based competitors. We demonstrate the soundness of our approach through further experiments, including conditional class interpolation and a clinical Turing test demonstrating the high quality of the SSSD-ECG samples across a wide range of conditions. "
+}

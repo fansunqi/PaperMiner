@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "RowHammer vulnerability in DRAM chips"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "System-memory cooperation"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6373036090e50fcafd0a080c",
+  "title": "Fundamentally Understanding and Solving RowHammer",
+  "abstract": "  We provide an overview of recent developments and future directions in the RowHammer vulnerability that plagues modern DRAM (Dynamic Random Memory Access) chips, which are used in almost all computing systems as main memory.   RowHammer is the phenomenon in which repeatedly accessing a row in a real DRAM chip causes bitflips (i.e., data corruption) in physically nearby rows. This phenomenon leads to a serious and widespread system security vulnerability, as many works since the original RowHammer paper in 2014 have shown. Recent analysis of the RowHammer phenomenon reveals that the problem is getting much worse as DRAM technology scaling continues: newer DRAM chips are fundamentally more vulnerable to RowHammer at the device and circuit levels. Deeper analysis of RowHammer shows that there are many dimensions to the problem as the vulnerability is sensitive to many variables, including environmental conditions (temperature \\& voltage), process variation, stored data patterns, as well as memory access patterns and memory control policies. As such, it has proven difficult to devise fully-secure and very efficient (i.e., low-overhead in performance, energy, area) protection mechanisms against RowHammer and attempts made by DRAM manufacturers have been shown to lack security guarantees.   After reviewing various recent developments in exploiting, understanding, and mitigating RowHammer, we discuss future directions that we believe are critical for solving the RowHammer problem. We argue for two major directions to amplify research and development efforts in: 1) building a much deeper understanding of the problem and its many dimensions, in both cutting-edge DRAM chips and computing systems deployed in the field, and 2) the design and development of extremely efficient and fully-secure solutions via system-memory cooperation. "
+}

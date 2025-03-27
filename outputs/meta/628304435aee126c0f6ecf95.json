@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D MRI Super Resolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unsupervised Degradation Adaptation Network (UDEAN)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art networks",
+    "Promising solution to challenges in clinical settings"
+  ],
+  "paper_id": "628304435aee126c0f6ecf95",
+  "title": "Unsupervised Representation Learning for 3D MRI Super Resolution with\n  Degradation Adaptation",
+  "abstract": "  High-resolution (HR) magnetic resonance imaging is critical in aiding doctors in their diagnoses and image-guided treatments. However, acquiring HR images can be time-consuming and costly. Consequently, deep learning-based super-resolution reconstruction (SRR) has emerged as a promising solution for generating super-resolution (SR) images from low-resolution (LR) images. Unfortunately, training such neural networks requires aligned authentic HR and LR image pairs, which are challenging to obtain due to patient movements during and between image acquisitions. While rigid movements of hard tissues can be corrected with image registration, aligning deformed soft tissues is complex, making it impractical to train neural networks with authentic HR and LR image pairs. Previous studies have focused on SRR using authentic HR images and down-sampled synthetic LR images. However, the difference in degradation representations between synthetic and authentic LR images suppresses the quality of SR images reconstructed from authentic LR images. To address this issue, we propose a novel Unsupervised Degradation Adaptation Network (UDEAN). Our network consists of a degradation learning network and an SRR network. The degradation learning network downsamples the HR images using the degradation representation learned from the misaligned or unpaired LR images. The SRR network then learns the mapping from the down-sampled HR images to the original ones. Experimental results show that our method outperforms state-of-the-art networks and is a promising solution to the challenges in clinical settings. "
+}

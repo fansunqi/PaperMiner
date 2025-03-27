@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/hustvl/SAUNet"
+  ],
+  "tasks": [
+    "Hyperspectral Image Reconstruction"
+  ],
+  "datasets": [
+    "CAVE",
+    "KAIST"
+  ],
+  "methods": [
+    "SAUNet",
+    "Residual Adaptive ADMM Framework (R2ADMM)",
+    "Convolutional Modulation Block (CMB)"
+  ],
+  "results": [
+    "New records on CAVE and KAIST HSI reconstruction benchmarks"
+  ],
+  "paper_id": "63d340e890e50fcafd910923",
+  "title": "A Simple Adaptive Unfolding Network for Hyperspectral Image\n  Reconstruction",
+  "abstract": "  We present a simple, efficient, and scalable unfolding network, SAUNet, to simplify the network design with an adaptive alternate optimization framework for hyperspectral image (HSI) reconstruction. SAUNet customizes a Residual Adaptive ADMM Framework (R2ADMM) to connect each stage of the network via a group of learnable parameters to promote the usage of mask prior, which greatly stabilizes training and solves the accuracy degradation issue. Additionally, we introduce a simple convolutional modulation block (CMB), which leads to efficient training, easy scale-up, and less computation. Coupling these two designs, SAUNet can be scaled to non-trivial 13 stages with continuous improvement. Without bells and whistles, SAUNet improves both performance and speed compared with the previous state-of-the-art counterparts, which makes it feasible for practical high-resolution HSI reconstruction scenarios. We set new records on CAVE and KAIST HSI reconstruction benchmarks. Code and models are available at https://github.com/hustvl/SAUNet. "
+}

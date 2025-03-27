@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Log-based Anomaly Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ClusterLog: Clustering Logs for Effective Log-based Anomaly Detection"
+  ],
+  "results": [
+    "Effectiveness in reducing the granularity of log sequences",
+    "Generalizability to different file systems' logs"
+  ],
+  "paper_id": "63ca069890e50fcafd683040",
+  "title": "ClusterLog: Clustering Logs for Effective Log-based Anomaly Detection",
+  "abstract": "  With the increasing prevalence of scalable file systems in the context of High Performance Computing (HPC), the importance of accurate anomaly detection on runtime logs is increasing. But as it currently stands, many state-of-the-art methods for log-based anomaly detection, such as DeepLog, have encountered numerous challenges when applied to logs from many parallel file systems (PFSes), often due to their irregularity and ambiguity in time-based log sequences. To circumvent these problems, this study proposes ClusterLog, a log pre-processing method that clusters the temporal sequence of log keys based on their semantic similarity. By grouping semantically and sentimentally similar logs, this approach aims to represent log sequences with the smallest amount of unique log keys, intending to improve the ability of a downstream sequence-based model to effectively learn the log patterns. The preliminary results of ClusterLog indicate not only its effectiveness in reducing the granularity of log sequences without the loss of important sequence information but also its generalizability to different file systems' logs. "
+}

@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Small object detection"
+  ],
+  "datasets": [
+    "MS COCO2017",
+    "VOC2007",
+    "VOC2012"
+  ],
+  "methods": [
+    "Improved YOLOv3",
+    "Dilated convolutions mish (DCM) module",
+    "Convolutional block attention module (CBAM)",
+    "Multi-level fusion module",
+    "Soft-NMS",
+    "Complete-IoU (CloU)"
+  ],
+  "results": [
+    "AP: 16.5% higher than YOLOv3 on MS COCO2017",
+    "AP: 8.71% higher than YOLOv3 on VOC2007",
+    "AP: 9.68% higher than YOLOv3 on VOC2012"
+  ],
+  "paper_id": "6390044d90e50fcafd837e77",
+  "title": "An advanced YOLOv3 method for small object detection",
+  "abstract": "  Small object detection has important application value in the fields of autonomous driving and drone scene analysis. As one of the most advanced object detection algorithms, YOLOv3 suffers some challenges when detecting small objects, such as the problem of detection failure of small objects and occluded objects. To solve these problems, an improved YOLOv3 algorithm for small object detection is proposed. In the proposed method, the dilated convolutions mish (DCM) module is introduced into the backbone network of YOLOv3 to improve the feature expression ability by fusing the feature maps of different receptive fields. In the neck network of YOLOv3, the convolutional block attention module (CBAM) and multi-level fusion module are introduced to select the important information for small object detection in the shallow network, suppress the uncritical information, and use the fusion module to fuse the feature maps of different scales, so as to improve the detection accuracy of the algorithm. In addition, the Soft-NMS and Complete-IoU (CloU) strategies are applied to candidate frame screening, which improves the accuracy of the algorithm for the detection of occluded objects. The ablation experiment of the MS COCO2017 object detection task proves the effectiveness of several modules introduced in this paper for small object detection. The experimental results on the MS COCO2017, VOC2007, and VOC2012 datasets show that the Average Precision (AP) of this method is 16.5%, 8.71%, and 9.68% higher than that of YOLOv3, respectively. "
+}

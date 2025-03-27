@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nuclear Detector Signal Extraction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "System-on-Chip Neural Network Accelerator (PulseDL-II)",
+    "Three-level Hierarchical Architecture",
+    "Quantization Scheme"
+  ],
+  "results": [
+    "60 ps time resolution",
+    "0.40% energy resolution at SNR of 47.4 dB"
+  ],
+  "paper_id": "631568c490e50fcafde46fd9",
+  "title": "PulseDL-II: A System-on-Chip Neural Network Accelerator for Timing and\n  Energy Extraction of Nuclear Detector Signals",
+  "abstract": "  Front-end electronics equipped with high-speed digitizers are being used and proposed for future nuclear detectors. Recent literature reveals that deep learning models, especially one-dimensional convolutional neural networks, are promising when dealing with digital signals from nuclear detectors. Simulations and experiments demonstrate the satisfactory accuracy and additional benefits of neural networks in this area. However, specific hardware accelerating such models for online operations still needs to be studied. In this work, we introduce PulseDL-II, a system-on-chip (SoC) specially designed for applications of event feature (time, energy, etc.) extraction from pulses with deep learning. Based on the previous version, PulseDL-II incorporates a RISC CPU into the system structure for better functional flexibility and integrity. The neural network accelerator in the SoC adopts a three-level (arithmetic unit, processing element, neural network) hierarchical architecture and facilitates parameter optimization of the digital design. Furthermore, we devise a quantization scheme compatible with deep learning frameworks (e.g., TensorFlow) within a selected subset of layer types. We validate the correct operations of PulseDL-II on field programmable gate arrays (FPGA) alone and with an experimental setup comprising a direct digital synthesis (DDS) and analog-to-digital converters (ADC). The proposed system achieved 60 ps time resolution and 0.40% energy resolution at signal to noise ratio (SNR) of 47.4 dB. "
+}

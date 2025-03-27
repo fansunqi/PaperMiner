@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Building Energy Management",
+    "Cloud Native Deployment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Microservices",
+    "Kubernetes",
+    "Container Orchestration",
+    "Redistributable Containers"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "635b486790e50fcafd32f81e",
+  "title": "kube-volttron: Rearchitecting the VOLTTRON Building Energy Management\n  System for Cloud Native Deployment",
+  "abstract": "  Managing the energy consumption of the built environment is an important source of flexible load and decarbonization, enabling building managers and utilities to schedule consumption to avoid costly demand charges and peak times when carbon emissions from grid generated electricity are highest. A key technology component in building energy management is the building energy management system. Eclipse VOLTTRON is a legacy software platform which enables building energy management. It was developed for the US Department of Energy (DOE) at Pacific Northwest National Labs (PNNL) written in Python and based on a monolithic build-configure-and-run-in-place system architecture that predates cloud native architectural concepts. Yet the software architecture is componentized in a way that anticipates modular containerized applications, with software agents handling functions like data storage, web access, and communication with IoT devices over specific IoT protocols such as BACnet and Modbus. The agents communicate among themselves over a message bus. This paper describes a proof-of-concept prototype to rearchitect VOLTTRON into a collection of microservices suitable for deployment on the Kubernetes cloud native container orchestration platform. The agents are packaged in redistributable containers that perform specific functions and which can be configured when they are deployed. The deployment architecture consists of single Kubernetes cluster containing a central node, nominally in a cloud-based VM, where a microservice containing the database agent (called a \"historian\") and the web site agent for the service run, and gateway nodes running on sites in buildings where a microservice containing IoT protocol-specific agents handles control and data collection to and from devices, and communication back to the central node. "
+}

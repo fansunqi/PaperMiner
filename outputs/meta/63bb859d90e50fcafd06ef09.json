@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computing differentially private approximate histograms and heavy hitters"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Misra-Gries Sketch",
+    "Post-processing step"
+  ],
+  "results": [
+    "Improved noise mechanism",
+    "Reduced noise scaling with sketch size",
+    "Improved error guarantee"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ef09",
+  "title": "Better Differentially Private Approximate Histograms and Heavy Hitters\n  using the Misra-Gries Sketch",
+  "abstract": "  We consider the problem of computing differentially private approximate histograms and heavy hitters in a stream of elements. In the non-private setting, this is often done using the sketch of Misra and Gries [Science of Computer Programming, 1982]. Chan, Li, Shi, and Xu [PETS 2012] describe a differentially private version of the Misra-Gries sketch, but the amount of noise it adds can be large and scales linearly with the size of the sketch: the more accurate the sketch is, the more noise this approach has to add. We present a better mechanism for releasing Misra-Gries sketch under $(\\varepsilon,\\delta)$-differential privacy. It adds noise with magnitude independent of the size of the sketch size, in fact, the maximum error coming from the noise is the same as the best known in the private non-streaming setting, up to a constant factor. Our mechanism is simple and likely to be practical. We also give a simple post-processing step of the Misra-Gries sketch that does not increase the worst-case error guarantee. It is sufficient to add noise to this new sketch with less than twice the magnitude of the non-streaming setting. This improves on the previous result for $\\varepsilon$-differential privacy where the noise scales linearly to the size of the sketch. "
+}

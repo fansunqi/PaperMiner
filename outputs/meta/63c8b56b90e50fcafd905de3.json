@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving predictive capability and computational cost of dynamical models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unified neural partial delay differential equations",
+    "Markovian and non-Markovian neural network closure parameterizations"
+  ],
+  "results": [
+    "Discover missing physics",
+    "Find leading numerical error terms",
+    "Discriminate among candidate functional forms",
+    "Achieve generalization",
+    "Compensate for the lack of complexity in simpler models"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905de3",
+  "title": "Generalized Neural Closure Models with Interpretability",
+  "abstract": "  Improving the predictive capability and computational cost of dynamical models is often at the heart of augmenting computational physics with machine learning (ML). However, most learning results are limited in interpretability and generalization over different computational grid resolutions, initial and boundary conditions, domain geometries, and physical or problem-specific parameters. In the present study, we simultaneously address all these challenges by developing the novel and versatile methodology of unified neural partial delay differential equations. We augment existing/low-fidelity dynamical models directly in their partial differential equation (PDE) forms with both Markovian and non-Markovian neural network (NN) closure parameterizations. The melding of the existing models with NNs in the continuous spatiotemporal space followed by numerical discretization automatically allows for the desired generalizability. The Markovian term is designed to enable extraction of its analytical form and thus provides interpretability. The non-Markovian terms allow accounting for inherently missing time delays needed to represent the real world. We obtain adjoint PDEs in the continuous form, thus enabling direct implementation across differentiable and non-differentiable computational physics codes, different ML frameworks, and treatment of nonuniformly-spaced spatiotemporal training data. We demonstrate the new generalized neural closure models (gnCMs) framework using four sets of experiments based on advecting nonlinear waves, shocks, and ocean acidification models. Our learned gnCMs discover missing physics, find leading numerical error terms, discriminate among candidate functional forms in an interpretable fashion, achieve generalization, and compensate for the lack of complexity in simpler models. Finally, we analyze the computational advantages of our new framework. "
+}

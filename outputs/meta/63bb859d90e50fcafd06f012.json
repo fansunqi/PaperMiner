@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/tusen-ai/SST"
+  ],
+  "tasks": [
+    "3D Object Detection"
+  ],
+  "datasets": [
+    "Waymo Open Dataset",
+    "Argoverse 2 Dataset"
+  ],
+  "methods": [
+    "Fully Sparse Object Detector (FSD)",
+    "Sparse Instance Recognition (SIR) module",
+    "Super Sparse Detector (FSD++)"
+  ],
+  "results": [
+    "State-of-the-art performance on Waymo Open Dataset",
+    "Superior performance in long-range detection on Argoverse 2 Dataset"
+  ],
+  "paper_id": "63bb859d90e50fcafd06f012",
+  "title": "Super Sparse 3D Object Detection",
+  "abstract": "  As the perception range of LiDAR expands, LiDAR-based 3D object detection contributes ever-increasingly to the long-range perception in autonomous driving. Mainstream 3D object detectors often build dense feature maps, where the cost is quadratic to the perception range, making them hardly scale up to the long-range settings. To enable efficient long-range detection, we first propose a fully sparse object detector termed FSD. FSD is built upon the general sparse voxel encoder and a novel sparse instance recognition (SIR) module. SIR groups the points into instances and applies highly-efficient instance-wise feature extraction. The instance-wise grouping sidesteps the issue of the center feature missing, which hinders the design of the fully sparse architecture. To further enjoy the benefit of fully sparse characteristic, we leverage temporal information to remove data redundancy and propose a super sparse detector named FSD++. FSD++ first generates residual points, which indicate the point changes between consecutive frames. The residual points, along with a few previous foreground points, form the super sparse input data, greatly reducing data redundancy and computational overhead. We comprehensively analyze our method on the large-scale Waymo Open Dataset, and state-of-the-art performance is reported. To showcase the superiority of our method in long-range detection, we also conduct experiments on Argoverse 2 Dataset, where the perception range ($200m$) is much larger than Waymo Open Dataset ($75m$). Code is open-sourced at https://github.com/tusen-ai/SST. "
+}

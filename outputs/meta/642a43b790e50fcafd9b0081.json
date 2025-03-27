@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/zhidilin/TGPSSM"
+  ],
+  "tasks": [
+    "Gaussian Process State-Space Model"
+  ],
+  "datasets": [
+    "synthetic",
+    "real"
+  ],
+  "methods": [
+    "TGPSSMs",
+    "parametric normalizing flow",
+    "scalable variational inference",
+    "constrained optimization framework"
+  ],
+  "results": [
+    "outperforms several state-of-the-art methods"
+  ],
+  "paper_id": "642a43b790e50fcafd9b0081",
+  "title": "Towards Flexibility and Interpretability of Gaussian Process State-Space\n  Model",
+  "abstract": "  The Gaussian process state-space model (GPSSM) has garnered considerable attention over the past decade. However, the standard GP with a preliminary kernel, such as the squared exponential kernel or Mat\\'{e}rn kernel, that is commonly used in GPSSM studies, limits the model's representation power and substantially restricts its applicability to complex scenarios. To address this issue, we propose a new class of probabilistic state-space models called TGPSSMs, which leverage a parametric normalizing flow to enrich the GP priors in the standard GPSSM, enabling greater flexibility and expressivity. Additionally, we present a scalable variational inference algorithm that offers a flexible and optimal structure for the variational distribution of latent states. The proposed algorithm is interpretable and computationally efficient due to the sparse GP representation and the bijective nature of normalizing flow. Moreover, we incorporate a constrained optimization framework into the algorithm to enhance the state-space representation capabilities and optimize the hyperparameters, leading to superior learning and inference performance. Experimental results on synthetic and real datasets corroborate that the proposed TGPSSM outperforms several state-of-the-art methods. The accompanying source code is available at \\url{https://github.com/zhidilin/TGPSSM}. "
+}

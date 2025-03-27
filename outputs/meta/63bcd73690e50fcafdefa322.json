@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Variational inference",
+    "Probabilistic programming"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stochastic gradient descent",
+    "Reparameterisation gradient estimator",
+    "Smoothed value semantics",
+    "Type systems"
+  ],
+  "results": [
+    "Similar convergence as a key competitor",
+    "Faster",
+    "Attains orders of magnitude reduction in work-normalised variance"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa322",
+  "title": "Fast and Correct Gradient-Based Optimisation for Probabilistic\n  Programming via Smoothing",
+  "abstract": "  We study the foundations of variational inference, which frames posterior inference as an optimisation problem, for probabilistic programming. The dominant approach for optimisation in practice is stochastic gradient descent. In particular, a variant using the so-called reparameterisation gradient estimator exhibits fast convergence in a traditional statistics setting. Unfortunately, discontinuities, which are readily expressible in programming languages, can compromise the correctness of this approach. We consider a simple (higher-order, probabilistic) programming language with conditionals, and we endow our language with both a measurable and a smoothed (approximate) value semantics. We present type systems which establish technical pre-conditions. Thus we can prove stochastic gradient descent with the reparameterisation gradient estimator to be correct when applied to the smoothed problem. Besides, we can solve the original problem up to any error tolerance by choosing an accuracy coefficient suitably. Empirically we demonstrate that our approach has a similar convergence as a key competitor, but is simpler, faster, and attains orders of magnitude reduction in work-normalised variance. "
+}

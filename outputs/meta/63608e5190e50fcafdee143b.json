@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Approximate Optimization Algorithm (QAOA)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FrozenQubits",
+    "hotspot nodes freezing",
+    "state-space partitioning",
+    "sub-circuit solving"
+  ],
+  "results": [
+    "improved solution quality by 8.73x on average",
+    "up to 57x improvement in some cases",
+    "utilizes 2x more quantum resources"
+  ],
+  "paper_id": "63608e5190e50fcafdee143b",
+  "title": "FrozenQubits: Boosting Fidelity of QAOA by Skipping Hotspot Nodes",
+  "abstract": "  Quantum Approximate Optimization Algorithm (QAOA) is one of the leading candidates for demonstrating the quantum advantage using near-term quantum computers. Unfortunately, high device error rates limit us from reliably running QAOA circuits for problems with more than a few qubits. In QAOA, the problem graph is translated into a quantum circuit such that every edge corresponds to two 2-qubit CNOT operations in each layer of the circuit. As CNOTs are extremely error-prone, the fidelity of QAOA circuits is dictated by the number of edges in the problem graph.   We observe that majority of graphs corresponding to real-world applications follow the ``power-law`` distribution, where some hotspot nodes have significantly higher number of connections. We leverage this insight and propose ``FrozenQubits`` that freezes the hotspot nodes or qubits and intelligently partitions the state-space of the given problem into several smaller sub-spaces which are then solved independently. The corresponding QAOA sub-circuits are significantly less vulnerable to gate and decoherence errors due to the reduced number of CNOT operations in each sub-circuit. Unlike prior circuit-cutting approaches, FrozenQubits does not require any exponentially complex post-processing step. Our evaluations with 5,300 QAOA circuits on eight different quantum computers from IBM shows that FrozenQubits can improve the quality of solutions by 8.73x on average (and by up to 57x), albeit utilizing 2x more quantum resources. "
+}

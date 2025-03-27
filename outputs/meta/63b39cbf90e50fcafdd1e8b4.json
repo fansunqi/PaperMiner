@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reward function learning",
+    "Representation learning",
+    "Causal feature identification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Similarity-based implicit representation learning",
+    "Contrastive learning"
+  ],
+  "results": [
+    "Improved generalizability compared to self-supervised and task-input alternatives"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e8b4",
+  "title": "SIRL: Similarity-based Implicit Representation Learning",
+  "abstract": "  When robots learn reward functions using high capacity models that take raw state directly as input, they need to both learn a representation for what matters in the task -- the task ``features\" -- as well as how to combine these features into a single objective. If they try to do both at once from input designed to teach the full reward function, it is easy to end up with a representation that contains spurious correlations in the data, which fails to generalize to new settings. Instead, our ultimate goal is to enable robots to identify and isolate the causal features that people actually care about and use when they represent states and behavior. Our idea is that we can tune into this representation by asking users what behaviors they consider similar: behaviors will be similar if the features that matter are similar, even if low-level behavior is different; conversely, behaviors will be different if even one of the features that matter differs. This, in turn, is what enables the robot to disambiguate between what needs to go into the representation versus what is spurious, as well as what aspects of behavior can be compressed together versus not. The notion of learning representations based on similarity has a nice parallel in contrastive learning, a self-supervised representation learning technique that maps visually similar data points to similar embeddings, where similarity is defined by a designer through data augmentation heuristics. By contrast, in order to learn the representations that people use, so we can learn their preferences and objectives, we use their definition of similarity. In simulation as well as in a user study, we show that learning through such similarity queries leads to representations that, while far from perfect, are indeed more generalizable than self-supervised and task-input alternatives. "
+}

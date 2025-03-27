@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Coloring",
+    "Dominator Coloring",
+    "CD Coloring"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FPT algorithms",
+    "inclusion-exclusion based polynomial sieving technique",
+    "randomized single-exponential time algorithm"
+  ],
+  "results": [
+    "Dominator Coloring is FPT when parameterized by the size of a graph's cluster vertex deletion (CVD) set",
+    "CD Coloring is FPT parameterized by CVD set size plus the number of remaining cliques"
+  ],
+  "paper_id": "63608e5690e50fcafdee1936",
+  "title": "Dominator Coloring and CD Coloring in Almost Cluster Graphs",
+  "abstract": "  In this paper, we study two popular variants of Graph Coloring -- Dominator Coloring and CD Coloring. In both problems, we are given a graph $G$ and a natural number $\\ell$ as input and the goal is to properly color the vertices with at most $\\ell$ colors with specific constraints. In Dominator Coloring, we require for each $v \\in V(G)$, a color $c$ such that $v$ dominates all vertices colored $c$. In CD Coloring, we require for each color $c$, a $v \\in V(G)$ which dominates all vertices colored $c$. These problems, defined due to their applications in social and genetic networks, have been studied extensively in the last 15 years. While it is known that both problems are fixed-parameter tractable (FPT) when parameterized by $(t,\\ell)$ where $t$ is the treewidth of $G$, we consider strictly structural parameterizations which naturally arise out of the problems' applications.   We prove that Dominator Coloring is FPT when parameterized by the size of a graph's cluster vertex deletion (CVD) set and that CD Coloring is FPT parameterized by CVD set size plus the number of remaining cliques. En route, we design a simpler and faster FPT algorithms when the problems are parameterized by the size of a graph's twin cover, a special CVD set. When the parameter is the size of a graph's clique modulator, we design a randomized single-exponential time algorithm for the problems. These algorithms use an inclusion-exclusion based polynomial sieving technique and add to the growing number of applications using this powerful algebraic technique. "
+}

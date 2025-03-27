@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/weikuang97/SketchedNT-Inf"
+  ],
+  "tasks": [
+    "Online Covariance Matrix Estimation",
+    "Statistical Inference",
+    "Sketched Newton Methods"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sketching Techniques",
+    "Weighted Sample Covariance Estimation",
+    "Online Newton Methods",
+    "Constrained Optimization"
+  ],
+  "results": [
+    "Consistent and Convergent Estimator",
+    "Asymptotic Normality",
+    "Superior Performance on Regression Problems and Benchmark Problems",
+    "Batch-Free and Efficient"
+  ],
+  "title": "Online Covariance Matrix Estimation in Sketched Newton Methods.pdf",
+  "abstract": "Given the ubiquity of streaming data, online algorithms have been widely used for parameter estima- tion, with second-order methods particularly standing out for their efficiency and robustness. In this paper, we study an online sketched Newton method that leverages a randomized sketching technique to perform an approximate Newton step in each iteration, thereby eliminating the computational bot- tleneck of second-order methods. While existing studies have established the asymptotic normality of sketched Newton methods, a consistent estimator of the limiting covariance matrix remains an open problem. We propose a fully online covariance matrix estimator that is constructed entirely from the Newton iterates and requires no matrix factorization. Compared to covariance estimators for first- order online methods, our estimator for second-order methods is batch-free. We establish the consis- tency and convergence rate of our estimator, and coupled with asymptotic normality results, we can then perform online statistical inference for the model parameters based on sketched Newton meth- ods. We also discuss the extension of our estimator to constrained problems, and demonstrate its su- perior performance on regression problems as well as benchmark problems in the CUTEst set. 1 Introduction We consider the following stochastic optimization problem: min x\u2208Rd F(x) = EP[f(x; \u03be)], (1) where F : Rd \u2192R is a stochastic, strongly convex objective function, f(\u00b7; \u03be) is its noisy observation, and \u03be \u223cP is a random variable. Problems of form (1) appear in various decision-making applications in statistics and data science, including online recommendation (Li et al., 2010), precision medicine (Kosorok and Laber, 2019), energy control (Wallace and Ziemba, 2005), portfolio allocation (Fan et al., 2012), and e-commerce (Chen et al., 2022). In these applications, (1) is often interpreted as a model parameter estimation problem, where x denotes the model parameter and \u03be denotes a random data sample. The true model parameter x\u22c6= argminx\u2208Rd F(x) is the minimizer of the expected population loss F. The classic offline approach to solving (1) is sample average approximation or M-estimation, which generates t i.i.d. samples \u03be1, . . . , \u03bet \u223cP and approximates the population loss F by the empirical loss: bxt = argmin x\u2208Rd ( bFt(x) := 1 t t X i=1 f(x; \u03bei) ) . (2) 1 arXiv:2502.07114v1 [stat.ML] 10 Feb 2025"
+}

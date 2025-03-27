@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simulating polynomial differential equations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantum algorithm for simulating nonlinear differential equations",
+    "Carleman linearization",
+    "Quantum linear systems algorithm (QLSA)",
+    "Forward Euler method"
+  ],
+  "results": [
+    "Polynomial scaling of runtime on k",
+    "Computational advantage under certain conditions"
+  ],
+  "paper_id": "63a3cae990e50fcafdeb7457",
+  "title": "An efficient quantum algorithm for simulating polynomial differential\n  equations",
+  "abstract": "  We present an efficient quantum algorithm to simulate nonlinear differential equations with polynomial vector fields of arbitrary degree on quantum platforms. Models of physical systems that are governed by ordinary differential equations (ODEs) or partial differential equation (PDEs) can be challenging to solve on classical computers due to high dimensionality, stiffness, nonlinearities, and sensitive dependence to initial conditions. For sparse $n$-dimensional linear ODEs, quantum algorithms have been developed which can produce a quantum state proportional to the solution in poly(log(nx)) time using the quantum linear systems algorithm (QLSA). Recently, this framework was extended to systems of nonlinear ODEs with quadratic polynomial vector fields by applying Carleman linearization that enables the embedding of the quadratic system into an approximate linear form. A detailed complexity analysis was conducted which showed significant computational advantage under certain conditions. We present an extension of this algorithm to deal with systems of nonlinear ODEs with $k$-th degree polynomial vector fields for arbitrary (finite) values of $k$. The steps involve: 1) mapping the $k$-th degree polynomial ODE to a higher dimensional quadratic polynomial ODE; 2) applying Carleman linearization to transform the quadratic ODE to an infinite-dimensional system of linear ODEs; 3) truncating and discretizing the linear ODE and solving using the forward Euler method and QLSA. Alternatively, one could apply Carleman linearization directly to the $k$-th degree polynomial ODE, resulting in a system of infinite-dimensional linear ODEs, and then apply step 3. This solution route can be computationally more efficient. We present detailed complexity analysis of the proposed algorithms, prove polynomial scaling of runtime on $k$ and demonstrate the framework on an example. "
+}

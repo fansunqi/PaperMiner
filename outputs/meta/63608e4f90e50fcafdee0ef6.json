@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Chemical structure recognition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Encoder-decoder models"
+  ],
+  "results": [
+    "ED models learn compound substructures early",
+    "Structure restoration is time-consuming",
+    "Insufficient learning leads to overestimation of structure",
+    "First study linking SMILES learning progress to chemical structures"
+  ],
+  "paper_id": "63608e4f90e50fcafdee0ef6",
+  "title": "Investigation of chemical structure recognition by encoder-decoder\n  models in learning progress",
+  "abstract": "  Descriptor generation methods using latent representations of encoder$-$decoder (ED) models with SMILES as input are useful because of the continuity of descriptor and restorability to the structure. However, it is not clear how the structure is recognized in the learning progress of ED models. In this work, we created ED models of various learning progress and investigated the relationship between structural information and learning progress. We showed that compound substructures were learned early in ED models by monitoring the accuracy of downstream tasks and input$-$output substructure similarity using substructure$-$based descriptors, which suggests that existing evaluation methods based on the accuracy of downstream tasks may not be sensitive enough to evaluate the performance of ED models with SMILES as descriptor generation methods. On the other hand, we showed that structure restoration was time$-$consuming, and in particular, insufficient learning led to the estimation of a larger structure than the actual one. It can be inferred that determining the endpoint of the structure is a difficult task for the model. To our knowledge, this is the first study to link the learning progress of SMILES by ED model to chemical structures for a wide range of chemicals. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generalized Planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pointer-based solution space",
+    "Evaluation and heuristic functions",
+    "Best-First Generalized Planning (BFGP)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63d340ef90e50fcafd91167b",
+  "title": "Generalized Planning as Heuristic Search: A new planning search-space\n  that leverages pointers over objects",
+  "abstract": "  Planning as heuristic search is one of the most successful approaches to classical planning but unfortunately, it does not extend trivially to Generalized Planning (GP). GP aims to compute algorithmic solutions that are valid for a set of classical planning instances from a given domain, even if these instances differ in the number of objects, the number of state variables, their domain size, or their initial and goal configuration. The generalization requirements of GP make it impractical to perform the state-space search that is usually implemented by heuristic planners. This paper adapts the planning as heuristic search paradigm to the generalization requirements of GP, and presents the first native heuristic search approach to GP. First, the paper introduces a new pointer-based solution space for GP that is independent of the number of classical planning instances in a GP problem and the size of those instances (i.e. the number of objects, state variables and their domain sizes). Second, the paper defines a set of evaluation and heuristic functions for guiding a combinatorial search in our new GP solution space. The computation of these evaluation and heuristic functions does not require grounding states or actions in advance. Therefore our GP as heuristic search approach can handle large sets of state variables with large numerical domains, e.g.~integers. Lastly, the paper defines an upgraded version of our novel algorithm for GP called Best-First Generalized Planning (BFGP), that implements a best-first search in our pointer-based solution space, and that is guided by our evaluation/heuristic functions for GP. "
+}

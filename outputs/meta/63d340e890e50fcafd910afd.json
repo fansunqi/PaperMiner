@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human Pose Estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bias-Compensated Integral Regression (BCIR)"
+  ],
+  "results": [
+    "Faster training and more accurate than original integral regression",
+    "Competitive with state-of-the-art detection methods"
+  ],
+  "paper_id": "63d340e890e50fcafd910afd",
+  "title": "Bias-Compensated Integral Regression for Human Pose Estimation",
+  "abstract": "  In human and hand pose estimation, heatmaps are a crucial intermediate representation for a body or hand keypoint. Two popular methods to decode the heatmap into a final joint coordinate are via an argmax, as done in heatmap detection, or via softmax and expectation, as done in integral regression. Integral regression is learnable end-to-end, but has lower accuracy than detection. This paper uncovers an induced bias from integral regression that results from combining the softmax and the expectation operation. This bias often forces the network to learn degenerately localized heatmaps, obscuring the keypoint's true underlying distribution and leads to lower accuracies. Training-wise, by investigating the gradients of integral regression, we show that the implicit guidance of integral regression to update the heatmap makes it slower to converge than detection. To counter the above two limitations, we propose Bias Compensated Integral Regression (BCIR), an integral regression-based framework that compensates for the bias. BCIR also incorporates a Gaussian prior loss to speed up training and improve prediction accuracy. Experimental results on both the human body and hand benchmarks show that BCIR is faster to train and more accurate than the original integral regression, making it competitive with state-of-the-art detection methods. "
+}

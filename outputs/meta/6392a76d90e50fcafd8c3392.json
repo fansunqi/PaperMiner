@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Search Heuristics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PHIL (Path Heuristic with Imitation Learning)",
+    "Graph Neural Network-based heuristic function"
+  ],
+  "results": [
+    "58.5% reduction in explored nodes compared to state-of-the-art methods",
+    "Applicable to diverse graphs",
+    "Fast planning in time-critical domains"
+  ],
+  "paper_id": "6392a76d90e50fcafd8c3392",
+  "title": "Learning Graph Search Heuristics",
+  "abstract": "  Searching for a path between two nodes in a graph is one of the most well-studied and fundamental problems in computer science. In numerous domains such as robotics, AI, or biology, practitioners develop search heuristics to accelerate their pathfinding algorithms. However, it is a laborious and complex process to hand-design heuristics based on the problem and the structure of a given use case. Here we present PHIL (Path Heuristic with Imitation Learning), a novel neural architecture and a training algorithm for discovering graph search and navigation heuristics from data by leveraging recent advances in imitation learning and graph representation learning. At training time, we aggregate datasets of search trajectories and ground-truth shortest path distances, which we use to train a specialized graph neural network-based heuristic function using backpropagation through steps of the pathfinding process. Our heuristic function learns graph embeddings useful for inferring node distances, runs in constant time independent of graph sizes, and can be easily incorporated in an algorithm such as A* at test time. Experiments show that PHIL reduces the number of explored nodes compared to state-of-the-art methods on benchmark datasets by 58.5\\% on average, can be directly applied in diverse graphs ranging from biological networks to road networks, and allows for fast planning in time-critical robotics domains. "
+}

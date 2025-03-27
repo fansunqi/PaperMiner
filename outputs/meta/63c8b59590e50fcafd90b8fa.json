@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predicting Violations of Medical Temporal Constraints for Medication Adherence"
+  ],
+  "datasets": [
+    "Real-world RHB dataset collected from 28 patients in uncontrolled environments"
+  ],
+  "methods": [
+    "Context-free grammar based approach",
+    "HERBERT behavior prediction model"
+  ],
+  "results": [
+    "Average 51% reduction in root mean square error",
+    "Average F1 score of 0.86 for predicting MTC violations a day ahead of time"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b8fa",
+  "title": "ActSafe: Predicting Violations of Medical Temporal Constraints for\n  Medication Adherence",
+  "abstract": "  Prescription medications often impose temporal constraints on regular health behaviors (RHBs) of patients, e.g., eating before taking medication. Violations of such medical temporal constraints (MTCs) can result in adverse effects. Detecting and predicting such violations before they occur can help alert the patient. We formulate the problem of modeling MTCs and develop a proof-of-concept solution, ActSafe, to predict violations of MTCs well ahead of time. ActSafe utilizes a context-free grammar based approach for extracting and mapping MTCs from patient education materials. It also addresses the challenges of accurately predicting RHBs central to MTCs (e.g., medication intake). Our novel behavior prediction model, HERBERT , utilizes a basis vectorization of time series that is generalizable across temporal scale and duration of behaviors, explicitly capturing the dependency between temporally collocated behaviors. Based on evaluation using a real-world RHB dataset collected from 28 patients in uncontrolled environments, HERBERT outperforms baseline models with an average of 51% reduction in root mean square error. Based on an evaluation involving patients with chronic conditions, ActSafe can predict MTC violations a day ahead of time with an average F1 score of 0.86. "
+}

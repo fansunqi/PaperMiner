@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fast Visual Perceiver"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Perceiver model",
+    "Cross-attention",
+    "O(LQ^2) complexity"
+  ],
+  "results": [
+    "Reduced number of queries Q",
+    "Limited accuracy drop"
+  ],
+  "paper_id": "628c4ce15aee126c0ff59988",
+  "title": "Dynamic Query Selection for Fast Visual Perceiver",
+  "abstract": "  Transformers have been matching deep convolutional networks for vision architectures in recent works. Most work is focused on getting the best results on large-scale benchmarks, and scaling laws seem to be the most successful strategy: bigger models, more data, and longer training result in higher performance. However, the reduction of network complexity and inference time remains under-explored. The Perceiver model offers a solution to this problem: by first performing a Cross-attention with a fixed number Q of latent query tokens, the complexity of the L-layers Transformer network that follows is bounded by O(LQ^2). In this work, we explore how to make Perceivers even more efficient, by reducing the number of queries Q during inference while limiting the accuracy drop. "
+}

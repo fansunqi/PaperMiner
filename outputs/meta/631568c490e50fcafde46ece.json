@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Land cover mapping"
+  ],
+  "datasets": [
+    "Five-Billion-Pixels"
+  ],
+  "methods": [
+    "Deep-learning-based unsupervised domain adaptation",
+    "Siamese network",
+    "Dynamic pseudo-label assignment",
+    "Class balancing strategy"
+  ],
+  "results": [
+    "High-quality and detailed land cover mapping at meter-resolution",
+    "60,000 square kilometers study area",
+    "Promising results with entirely unlabeled input images"
+  ],
+  "paper_id": "631568c490e50fcafde46ece",
+  "title": "Enabling Country-Scale Land Cover Mapping with Meter-Resolution\n  Satellite Imagery",
+  "abstract": "  High-resolution satellite images can provide abundant, detailed spatial information for land cover classification, which is particularly important for studying the complicated built environment. However, due to the complex land cover patterns, the costly training sample collections, and the severe distribution shifts of satellite imageries, few studies have applied high-resolution images to land cover mapping in detailed categories at large scale. To fill this gap, we present a large-scale land cover dataset, Five-Billion-Pixels. It contains more than 5 billion labeled pixels of 150 high-resolution Gaofen-2 (4 m) satellite images, annotated in a 24-category system covering artificial-constructed, agricultural, and natural classes. In addition, we propose a deep-learning-based unsupervised domain adaptation approach that can transfer classification models trained on labeled dataset (referred to as the source domain) to unlabeled data (referred to as the target domain) for large-scale land cover mapping. Specifically, we introduce an end-to-end Siamese network employing dynamic pseudo-label assignment and class balancing strategy to perform adaptive domain joint learning. To validate the generalizability of our dataset and the proposed approach across different sensors and different geographical regions, we carry out land cover mapping on five megacities in China and six cities in other five Asian countries severally using: PlanetScope (3 m), Gaofen-1 (8 m), and Sentinel-2 (10 m) satellite images. Over a total study area of 60,000 square kilometers, the experiments show promising results even though the input images are entirely unlabeled. The proposed approach, trained with the Five-Billion-Pixels dataset, enables high-quality and detailed land cover mapping across the whole country of China and some other Asian countries at meter-resolution. "
+}

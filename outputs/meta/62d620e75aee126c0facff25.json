@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human keypoint detection",
+    "Close proximity human-robot interaction"
+  ],
+  "datasets": [
+    "Human in Close Proximity (HiCP)"
+  ],
+  "methods": [
+    "MMPose",
+    "AlphaPose",
+    "Detectron2",
+    "MediaPipe"
+  ],
+  "results": [
+    "MMPose and AlphaPose were the best performers for whole-body keypoint detection",
+    "Combination of MMPose/AlphaPose for body and MediaPipe for hands provided the most accurate and robust detection"
+  ],
+  "paper_id": "62d620e75aee126c0facff25",
+  "title": "Human keypoint detection for close proximity human-robot interaction",
+  "abstract": "  We study the performance of state-of-the-art human keypoint detectors in the context of close proximity human-robot interaction. The detection in this scenario is specific in that only a subset of body parts such as hands and torso are in the field of view. In particular, (i) we survey existing datasets with human pose annotation from the perspective of close proximity images and prepare and make publicly available a new Human in Close Proximity (HiCP) dataset; (ii) we quantitatively and qualitatively compare state-of-the-art human whole-body 2D keypoint detection methods (OpenPose, MMPose, AlphaPose, Detectron2) on this dataset; (iii) since accurate detection of hands and fingers is critical in applications with handovers, we evaluate the performance of the MediaPipe hand detector; (iv) we deploy the algorithms on a humanoid robot with an RGB-D camera on its head and evaluate the performance in 3D human keypoint detection. A motion capture system is used as reference.   The best performing whole-body keypoint detectors in close proximity were MMPose and AlphaPose, but both had difficulty with finger detection. Thus, we propose a combination of MMPose or AlphaPose for the body and MediaPipe for the hands in a single framework providing the most accurate and robust detection. We also analyse the failure modes of individual detectors -- for example, to what extent the absence of the head of the person in the image degrades performance. Finally, we demonstrate the framework in a scenario where a humanoid robot interacting with a person uses the detected 3D keypoints for whole-body avoidance maneuvers. "
+}

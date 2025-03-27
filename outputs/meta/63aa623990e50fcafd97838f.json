@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating the dimension of the data manifold"
+  ],
+  "datasets": [
+    "Euclidean data",
+    "Image data"
+  ],
+  "methods": [
+    "Diffusion model"
+  ],
+  "results": [
+    "First deep-learning based estimator",
+    "Outperforms established statistical estimators"
+  ],
+  "paper_id": "63aa623990e50fcafd97838f",
+  "title": "Your diffusion model secretly knows the dimension of the data manifold",
+  "abstract": "  In this work, we propose a novel framework for estimating the dimension of the data manifold using a trained diffusion model. A diffusion model approximates the score function i.e. the gradient of the log density of a noise-corrupted version of the target distribution for varying levels of corruption. If the data concentrates around a manifold embedded in the high-dimensional ambient space, then as the level of corruption decreases, the score function points towards the manifold, as this direction becomes the direction of maximal likelihood increase. Therefore, for small levels of corruption, the diffusion model provides us with access to an approximation of the normal bundle of the data manifold. This allows us to estimate the dimension of the tangent space, thus, the intrinsic dimension of the data manifold. To the best of our knowledge, our method is the first deep-learning based estimator of the data manifold dimension and it outperforms well established statistical estimators in controlled experiments on both Euclidean and image data. "
+}

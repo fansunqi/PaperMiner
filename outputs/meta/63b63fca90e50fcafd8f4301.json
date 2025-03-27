@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Task Execution on Coarse-Grained Reconfigurable Arrays"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CGRA architecture with flexible resource partitioning",
+    "Flexible-shape execution region",
+    "Dynamic partial reconfiguration (DPR)"
+  ],
+  "results": [
+    "1.05x-1.24x higher throughput",
+    "23-28% lower latency in multi-tasked cloud workload",
+    "60.8% reduced latency in autonomous system workload"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f4301",
+  "title": "Hardware Abstractions and Hardware Mechanisms to Support Multi-Task\n  Execution on Coarse-Grained Reconfigurable Arrays",
+  "abstract": "  Domain-specific accelerators are used in various computing systems ranging from edge devices to data centers. Coarse-grained reconfigurable arrays (CGRAs) represent an architectural midpoint between the flexibility of an FPGA and the efficiency of an ASIC and are a promising candidate for servicing multi-tasked workloads within an application domain. Unfortunately, scheduling multiple tasks onto a CGRA is challenging. CGRAs lack abstractions that capture hardware resources, leaving workload schedulers unable to reason about performance, energy, and utilization for different schedules. This work first proposes a CGRA architecture that can flexibly partition key resources, including the global buffer memory capacity, the global buffer memory bandwidth, and the compute resources. Partitioned resources serve as hardware abstractions that decouple compilation and resource allocation. The compiler uses these abstractions for coarse-grained resource mapping, and the scheduler uses them for flexible resource allocation at run time. We then propose two hardware mechanisms to support multi-task execution. A flexible-shape execution region increases the overall resource utilization by mapping multiple tasks with different resource requirements. Dynamic partial reconfiguration (DPR) enables a CGRA to update the hardware configuration as the scheduler makes decisions rapidly. We show that our abstraction can help automatic and efficient scheduling of multi-tasked workloads onto our target CGRA with high utilization, resulting in 1.05x-1.24x higher throughput and a 23-28% lower latency in a multi-tasked cloud workload and 60.8% reduced latency in an autonomous system workload when compared to a baseline CGRA running single tasks at a time. "
+}

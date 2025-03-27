@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/zhy99426/DualRec"
+  ],
+  "tasks": [
+    "Sequential recommendation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DualRec",
+    "Dual network",
+    "Bi-directional knowledge transferring mechanism"
+  ],
+  "results": [
+    "Superiority over baseline methods",
+    "High utility of modeling future contexts"
+  ],
+  "paper_id": "6359f6fb90e50fcafd8b7e91",
+  "title": "Disentangling Past-Future Modeling in Sequential Recommendation via Dual\n  Networks",
+  "abstract": "  Sequential recommendation (SR) plays an important role in personalized recommender systems because it captures dynamic and diverse preferences from users' real-time increasing behaviors. Unlike the standard autoregressive training strategy, future data (also available during training) has been used to facilitate model training as it provides richer signals about user's current interests and can be used to improve the recommendation quality. However, these methods suffer from a severe training-inference gap, i.e., both past and future contexts are modeled by the same encoder when training, while only historical behaviors are available during inference. This discrepancy leads to potential performance degradation. To alleviate the training-inference gap, we propose a new framework DualRec, which achieves past-future disentanglement and past-future mutual enhancement by a novel dual network. Specifically, a dual network structure is exploited to model the past and future context separately. And a bi-directional knowledge transferring mechanism enhances the knowledge learnt by the dual network. Extensive experiments on four real-world datasets demonstrate the superiority of our approach over baseline methods. Besides, we demonstrate the compatibility of DualRec by instantiating using RNN, Transformer, and filter-MLP as backbones. Further empirical analysis verifies the high utility of modeling future contexts under our DualRec framework. The code of DualRec is publicly available at https://github.com/zhy99426/DualRec. "
+}

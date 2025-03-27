@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data-driven control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-Informed Kernel Embeddings",
+    "Kernel embeddings",
+    "Reproducing kernel Hilbert spaces"
+  ],
+  "results": [
+    "Improved sample efficiency",
+    "Out-of-sample generalization",
+    "Application to target tracking and state prediction tasks"
+  ],
+  "paper_id": "63bcd73790e50fcafdefa41c",
+  "title": "Physics-Informed Kernel Embeddings: Integrating Prior System Knowledge\n  with Data-Driven Control",
+  "abstract": "  Data-driven control algorithms use observations of system dynamics to construct an implicit model for the purpose of control. However, in practice, data-driven techniques often require excessive sample sizes, which may be infeasible in real-world scenarios where only limited observations of the system are available. Furthermore, purely data-driven methods often neglect useful a priori knowledge, such as approximate models of the system dynamics. We present a method to incorporate such prior knowledge into data-driven control algorithms using kernel embeddings, a nonparametric machine learning technique based in the theory of reproducing kernel Hilbert spaces. Our proposed approach incorporates prior knowledge of the system dynamics as a bias term in the kernel learning problem. We formulate the biased learning problem as a least-squares problem with a regularization term that is informed by the dynamics, that has an efficiently computable, closed-form solution. Through numerical experiments, we empirically demonstrate the improved sample efficiency and out-of-sample generalization of our approach over a purely data-driven baseline. We demonstrate an application of our method to control through a target tracking problem with nonholonomic dynamics, and on spring-mass-damper and F-16 aircraft state prediction tasks. "
+}

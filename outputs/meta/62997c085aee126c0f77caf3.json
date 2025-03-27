@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dynamic MRI reconstruction"
+  ],
+  "datasets": [
+    "cardiac cine MR dataset"
+  ],
+  "methods": [
+    "Learned Transform-based Tensor Low-Rank Network (LT$^2$LR-Net)",
+    "tensor singular value decomposition (t-SVD)",
+    "transformed tensor nuclear norm (TTNN)",
+    "alternating direction method of multipliers (ADMM)",
+    "convolutional neural network (CNN)"
+  ],
+  "results": [
+    "improved recovery results compared with the state-of-the-art methods"
+  ],
+  "paper_id": "62997c085aee126c0f77caf3",
+  "title": "Dynamic MRI using Learned Transform-based Tensor Low-Rank Network\n  (LT$^2$LR-Net)",
+  "abstract": "  While low-rank matrix prior has been exploited in dynamic MR image reconstruction and has obtained satisfying performance, tensor low-rank models have recently emerged as powerful alternative representations for three-dimensional dynamic MR datasets. In this paper, we introduce a novel deep unrolling network for dynamic MRI, namely the learned transform-based tensor low-rank network (LT$^2$LR-Net). First, we generalize the tensor singular value decomposition (t-SVD) into an arbitrary unitary transform-based version and subsequently propose the novel transformed tensor nuclear norm (TTNN). Then, we design a novel TTNN-based iterative optimization algorithm based on the alternating direction method of multipliers (ADMM) to exploit the tensor low-rank prior in the transformed domain. The corresponding iterative steps are unrolled into the proposed LT$^2$LR-Net, where the convolutional neural network (CNN) is incorporated to adaptively learn the transformation from the dynamic MR dataset for more robust and accurate tensor low-rank representations. Experimental results on the cardiac cine MR dataset demonstrate that the proposed framework can provide improved recovery results compared with the state-of-the-art methods. "
+}

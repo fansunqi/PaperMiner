@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Foundation model training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Tensor Parallelism (ATP)",
+    "Column- and row-first tensor parallelism",
+    "2D device meshes",
+    "Hierarchical communication matrix",
+    "Chunk-based overlapping"
+  ],
+  "results": [
+    "End-to-end training performance improvements of up to 37-64% on specific interconnects",
+    "Communication overhead decreases with scaling"
+  ],
+  "paper_id": "63cdfab690e50fcafd107046",
+  "title": "ATP: Adaptive Tensor Parallelism for Foundation Models",
+  "abstract": "  Foundation models have impressive performance and generalization capabilities across a wide range of applications. The increasing size of the models introduces great challenges for the training. Tensor parallelism is a critical technique that is currently used in almost all foundation model training and has a significant impact on overall training performance. However, current tensor parallelism in machine learning frameworks misses optimization opportunities in fitting various interconnection topologies. In this work, we present ATP, an adaptive tensor parallelism framework for foundation models, which can automatically select the optimal parallel strategy on different interconnections. We propose column- and row-first tensor parallelism based on 2D device meshes and construct a search space. Combined with the hierarchical communication matrix, ATP can identify the optimal strategy in the search space. We also propose chunk-based overlapping to reduce communication overhead. Our evaluations show ATP consistently outperforms the state-of-the-art approaches for various model sizes and interconnects, achieving end-to-end training performance improvements of up to 37-64% on specific interconnects. Based on our theoretical model, the communication overhead of ATP decreases with scaling, indicating a qualitative leap forward. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph contrastive learning",
+    "Signed-directed graph analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SDGCL",
+    "Magnetic Laplacian perturbation",
+    "Node-level contrastive loss"
+  ],
+  "results": [
+    "Superior performance on four evaluation metrics"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8e36",
+  "title": "Signed Directed Graph Contrastive Learning with Laplacian Augmentation",
+  "abstract": "  Graph contrastive learning has become a powerful technique for several graph mining tasks. It learns discriminative representation from different perspectives of augmented graphs. Ubiquitous in our daily life, singed-directed graphs are the most complex and tricky to analyze among various graph types. That is why singed-directed graph contrastive learning has not been studied much yet, while there are many contrastive studies for unsigned and undirected. Thus, this paper proposes a novel signed-directed graph contrastive learning, SDGCL. It makes two different structurally perturbed graph views and gets node representations via magnetic Laplacian perturbation. We use a node-level contrastive loss to maximize the mutual information between the two graph views. The model is jointly learned with contrastive and supervised objectives. The graph encoder of SDGCL does not depend on social theories or predefined assumptions. Therefore it does not require finding triads or selecting neighbors to aggregate. It leverages only the edge signs and directions via magnetic Laplacian. To the best of our knowledge, it is the first to introduce magnetic Laplacian perturbation and signed spectral graph contrastive learning. The superiority of the proposed model is demonstrated through exhaustive experiments on four real-world datasets. SDGCL shows better performance than other state-of-the-art on four evaluation metrics. "
+}

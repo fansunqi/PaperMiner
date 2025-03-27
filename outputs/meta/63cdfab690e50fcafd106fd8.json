@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Poison Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ontology Pre-training",
+    "Transformer"
+  ],
+  "results": [
+    "Improves on the state of the art",
+    "Model learns to focus on more meaningful chemical groups",
+    "Reduced training time"
+  ],
+  "paper_id": "63cdfab690e50fcafd106fd8",
+  "title": "Ontology Pre-training for Poison Prediction",
+  "abstract": "  Integrating human knowledge into neural networks has the potential to improve their robustness and interpretability. We have developed a novel approach to integrate knowledge from ontologies into the structure of a Transformer network which we call ontology pre-training: we train the network to predict membership in ontology classes as a way to embed the structure of the ontology into the network, and subsequently fine-tune the network for the particular prediction task. We apply this approach to a case study in predicting the potential toxicity of a small molecule based on its molecular structure, a challenging task for machine learning in life sciences chemistry. Our approach improves on the state of the art, and moreover has several additional benefits. First, we are able to show that the model learns to focus attention on more meaningful chemical groups when making predictions with ontology pre-training than without, paving a path towards greater robustness and interpretability. Second, the training time is reduced after ontology pre-training, indicating that the model is better placed to learn what matters for toxicity prediction with the ontology pre-training than without. This strategy has general applicability as a neuro-symbolic approach to embed meaningful semantics into neural networks. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Protein folding neural networks robustness"
+  ],
+  "datasets": [
+    "111 COVID-19 proteins in the Universal Protein resource (UniProt)"
+  ],
+  "methods": [
+    "Root-mean-square deviation (RMSD)",
+    "Global Distance Test (GDT) similarity measure",
+    "BLOSUM62 sequence alignment scoring matrix"
+  ],
+  "results": [
+    "AlphaFold does not exhibit robustness despite its high accuracy",
+    "Substantial drop in the performance of AlphaFold",
+    "Overall GDT similarity test score average of around 34%"
+  ],
+  "paper_id": "63be28d490e50fcafdf52f41",
+  "title": "On the Robustness of AlphaFold: A COVID-19 Case Study",
+  "abstract": "  Protein folding neural networks (PFNNs) such as AlphaFold predict remarkably accurate structures of proteins compared to other approaches. However, the robustness of such networks has heretofore not been explored. This is particularly relevant given the broad social implications of such technologies and the fact that biologically small perturbations in the protein sequence do not generally lead to drastic changes in the protein structure. In this paper, we demonstrate that AlphaFold does not exhibit such robustness despite its high accuracy. This raises the challenge of detecting and quantifying the extent to which these predicted protein structures can be trusted. To measure the robustness of the predicted structures, we utilize (i) the root-mean-square deviation (RMSD) and (ii) the Global Distance Test (GDT) similarity measure between the predicted structure of the original sequence and the structure of its adversarially perturbed version. We prove that the problem of minimally perturbing protein sequences to fool protein folding neural networks is NP-complete. Based on the well-established BLOSUM62 sequence alignment scoring matrix, we generate adversarial protein sequences and show that the RMSD between the predicted protein structure and the structure of the original sequence are very large when the adversarial changes are bounded by (i) 20 units in the BLOSUM62 distance, and (ii) five residues (out of hundreds or thousands of residues) in the given protein sequence. In our experimental evaluation, we consider 111 COVID-19 proteins in the Universal Protein resource (UniProt), a central resource for protein data managed by the European Bioinformatics Institute, Swiss Institute of Bioinformatics, and the US Protein Information Resource. These result in an overall GDT similarity test score average of around 34%, demonstrating a substantial drop in the performance of AlphaFold. "
+}

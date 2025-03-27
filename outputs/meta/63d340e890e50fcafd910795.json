@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Genotype Imputation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Event-driven paradigm",
+    "Graph-based Hidden Markov Modeling",
+    "Customized forward/backward dynamic programming algorithm",
+    "RISC-V NoC FPGA cluster (POETS)"
+  ],
+  "results": [
+    "270X reduction in wall-clock processing time compared to a single-threaded x86 solution",
+    "5 orders of magnitude reduction in wall-clock processing time compared to a similarly optimized x86 solution"
+  ],
+  "paper_id": "63d340e890e50fcafd910795",
+  "title": "An Event-Driven Approach To Genotype Imputation On A Custom RISC-V FPGA\n  Cluster",
+  "abstract": "  This paper proposes an event-driven solution to genotype imputation, a technique used to statistically infer missing genetic markers in DNA. The work implements the widely accepted Li and Stephens model, primary contributor to the computational complexity of modern x86 solutions, in an attempt to determine whether further investigation of the application is warranted in the event-driven domain. The model is implemented using graph-based Hidden Markov Modeling and executed as a customized forward/backward dynamic programming algorithm. The solution uses an event-driven paradigm to map the algorithm to thousands of concurrent cores, where events are small messages that carry both control and data within the algorithm. The design of a single processing element is discussed. This is then extended across multiple FPGAs and executed on a custom RISC-V NoC FPGA cluster called POETS. Results demonstrate how the algorithm scales over increasing hardware resources and a 48 FPGA run demonstrates a 270X reduction in wall-clock processing time when compared to a single-threaded x86 solution. Optimisation of the algorithm via linear interpolation is then introduced and tested, with results demonstrating a wall-clock reduction time of approx. 5 orders of magnitude when compared to a similarly optimised x86 solution. "
+}

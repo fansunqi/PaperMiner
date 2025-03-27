@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "https://renderbox-page.vercel.app/"
+  ],
+  "tasks": [
+    "Expressive Music Performance Rendering",
+    "Text-and-score controlled audio performance generation",
+    "Multiple instrument support"
+  ],
+  "datasets": [
+    "(n)ASAP",
+    "MusicNet",
+    "GAPS",
+    "BachViolin",
+    "ATEPP",
+    "Con Espres-sione",
+    "Vienna 4x22",
+    "in-house recorded saxophone dataset"
+  ],
+  "methods": [
+    "Diffusion transformer architecture",
+    "Cross-attention joint conditioning",
+    "Curriculum-based paradigm",
+    "Performance variability"
+  ],
+  "results": [
+    "High performance compared to baseline models across FAD and CLAP",
+    "Accurate tempo and pitch under different prompting tasks",
+    "Subjective evaluation demonstrates natural and engaging performances"
+  ],
+  "title": "RenderBox Expressive Performance Rendering with Text Control.pdf",
+  "abstract": "Expressive music performance rendering involves interpreting symbolic scores with variations in tim- ing, dynamics, articulation, and instrument-specific techniques, resulting in performances that cap- ture musical can emotional intent. We intro- duce RenderBox, a unified framework for text- and-score controlled audio performance generation across multiple instruments, applying coarse-level controls through natural language descriptions and granular-level controls using music scores. Based on a diffusion transformer architecture and cross-attention joint conditioning, we propose a curriculum-based paradigm that trains from plain synthesis to expressive performance, gradually in- corporating controllable factors such as speed, mis- takes, and style diversity. RenderBox achieves high performance compared to baseline models across key metrics such as FAD and CLAP, and also tempo and pitch accuracy under different prompt- ing tasks. Subjective evaluation further demon- strates that RenderBox is able to generate con- trollable expressive performances that sound nat- ural and musically engaging, aligning well with prompts and intent. 1 Introduction A trained musician can take a piece of music and interpret it in their own way, moulding and varying the emotional ex- pression of the piece by subtly changing performance param- eters. Parametric dimensions include timing, dynamics, ar- ticulation, and instrument-specific techniques such as bowing for strings, breath control for winds, or pedal usage for pianos [Cancino-Chac\u00f3n, 2018; Palmer, 1996]. Studying such expression patterns has long been of keen interest to musicians, educators and researchers, and it presents a compelling inquiry into exploring whether such intricate expressions can be accurately encapsulated and replicated by computational systems [Hashida et al., 2008]. Named performance rendering as a task, it has applications in technology-mediated music education and interactive mu- sic systems for entertainment and creative assistance. Figure 1: An overview of the performance space proposed by our paradigm, progressively from strict to variant relative to the input MIDI score. Just as human speech varies in terms of accent, tone and pace, the space of performances is diverse, ranging from the mistake-prone playing of amateur players to highly personal interpretations of virtuosi. While there have been attempts to condition performance generation with controls on tempo [Borovik and Viro, 2023; Rhyu et al., 2022] and percep- tual features [Zhang et al., 2024a], enforcing flexible, multi- dimensional control via natural language has not been ad- dressed in the performance rendering task. Here, we present RenderBox, a unified performance rendering framework that bridges symbolic music scores and natural language descrip- tions to generate expressive and controllable audio perfor- mances across multiple instruments. Our contributions* are as follows: 1. We propose the first text-and-score controlled audio per- formance generation model that supports multiple in- struments, enforcing coarse (text-based expressive di- rection) and granular (MIDI (Musical Instruments Dig- ital Interface) score) controls into the expressive perfor- *Demo page: https://renderbox-page.vercel.app/ arXiv:2502.07711v1 [eess.AS] 11 Feb 2025"
+}

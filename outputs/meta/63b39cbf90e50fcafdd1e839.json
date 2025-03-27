@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Person Re-identification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generative Adversarial Network (GAN)",
+    "3D mesh guided person image generator",
+    "Contrastive learning"
+  ],
+  "results": [
+    "New state-of-the-art unsupervised person ReID performance on mainstream large-scale benchmarks"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e839",
+  "title": "Learning Invariance from Generated Variance for Unsupervised Person\n  Re-identification",
+  "abstract": "  This work focuses on unsupervised representation learning in person re-identification (ReID). Recent self-supervised contrastive learning methods learn invariance by maximizing the representation similarity between two augmented views of a same image. However, traditional data augmentation may bring to the fore undesirable distortions on identity features, which is not always favorable in id-sensitive ReID tasks. In this paper, we propose to replace traditional data augmentation with a generative adversarial network (GAN) that is targeted to generate augmented views for contrastive learning. A 3D mesh guided person image generator is proposed to disentangle a person image into id-related and id-unrelated features. Deviating from previous GAN-based ReID methods that only work in id-unrelated space (pose and camera style), we conduct GAN-based augmentation on both id-unrelated and id-related features. We further propose specific contrastive losses to help our network learn invariance from id-unrelated and id-related augmentations. By jointly training the generative and the contrastive modules, our method achieves new state-of-the-art unsupervised person ReID performance on mainstream large-scale benchmarks. "
+}

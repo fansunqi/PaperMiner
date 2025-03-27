@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "MRI Slice Spacing Reduction"
+  ],
+  "datasets": [
+    "HCP-1200",
+    "Clinical knee MR"
+  ],
+  "methods": [
+    "Spatial Attention-based Implicit Neural Representation (SA-INR)"
+  ],
+  "results": [
+    "Super-resolution technique enhances through-plane resolution",
+    "Local-aware spatial attention operation improves accuracy"
+  ],
+  "paper_id": "628c4ce65aee126c0ff59eda",
+  "title": "Spatial Attention-based Implicit Neural Representation for Arbitrary\n  Reduction of MRI Slice Spacing",
+  "abstract": "  Magnetic resonance (MR) images collected in 2D clinical protocols typically have large inter-slice spacing, resulting in high in-plane resolution and reduced through-plane resolution. Super-resolution technique can enhance the through-plane resolution of MR images to facilitate downstream visualization and computer-aided diagnosis. However, most existing works train the super-resolution network at a fixed scaling factor, which is not friendly to clinical scenes of varying inter-slice spacing in MR scanning. Inspired by the recent progress in implicit neural representation, we propose a Spatial Attention-based Implicit Neural Representation (SA-INR) network for arbitrary reduction of MR inter-slice spacing. The SA-INR aims to represent an MR image as a continuous implicit function of 3D coordinates. In this way, the SA-INR can reconstruct the MR image with arbitrary inter-slice spacing by continuously sampling the coordinates in 3D space. In particular, a local-aware spatial attention operation is introduced to model nearby voxels and their affinity more accurately in a larger receptive field. Meanwhile, to improve the computational efficiency, a gradient-guided gating mask is proposed for applying the local-aware spatial attention to selected areas only. We evaluate our method on the public HCP-1200 dataset and the clinical knee MR dataset to demonstrate its superiority over other existing methods. "
+}

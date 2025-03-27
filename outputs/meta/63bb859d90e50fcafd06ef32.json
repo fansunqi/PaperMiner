@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Through-the-Wall Radar Human Motion Recognition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TWR-MCAE: multilink auto-encoding neural network, SVD-based data preprocessing, improved coordinate attention, LISTA module, adaptive weight module"
+  ],
+  "results": [
+    "Better PSNR, increased recognition accuracy, faster training process"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ef32",
+  "title": "TWR-MCAE: A Data Augmentation Method for Through-the-Wall Radar Human\n  Motion Recognition",
+  "abstract": "  To solve the problems of reduced accuracy and prolonging convergence time of through-the-wall radar (TWR) human motion due to wall attenuation, multipath effect, and system interference, we propose a multilink auto-encoding neural network (TWR-MCAE) data augmentation method. Specifically, the TWR-MCAE algorithm is jointly constructed by a singular value decomposition (SVD)-based data preprocessing module, an improved coordinate attention module, a compressed sensing learnable iterative shrinkage threshold reconstruction algorithm (LISTA) module, and an adaptive weight module. The data preprocessing module achieves wall clutter, human motion features, and noise subspaces separation. The improved coordinate attention module achieves clutter and noise suppression. The LISTA module achieves human motion feature enhancement. The adaptive weight module learns the weights and fuses the three subspaces. The TWR-MCAE can suppress the low-rank characteristics of wall clutter and enhance the sparsity characteristics in human motion at the same time. It can be linked before the classification step to improve the feature extraction capability without adding other prior knowledge or recollecting more data. Experiments show that the proposed algorithm gets a better peak signal-to-noise ratio (PSNR), which increases the recognition accuracy and speeds up the training process of the back-end classifiers. "
+}

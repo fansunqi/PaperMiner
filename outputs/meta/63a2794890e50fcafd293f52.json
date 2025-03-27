@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Protein engineering",
+    "Machine-learning-based protein engineering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gradient-based Discrete MCMC",
+    "Sampling framework",
+    "Product of experts distribution",
+    "Protein language models"
+  ],
+  "results": [
+    "Efficient discovery of variants with high evolutionary likelihood",
+    "Estimated activity multiple mutations away from a wild type protein"
+  ],
+  "paper_id": "63a2794890e50fcafd293f52",
+  "title": "Plug & Play Directed Evolution of Proteins with Gradient-based Discrete\n  MCMC",
+  "abstract": "  A long-standing goal of machine-learning-based protein engineering is to accelerate the discovery of novel mutations that improve the function of a known protein. We introduce a sampling framework for evolving proteins in silico that supports mixing and matching a variety of unsupervised models, such as protein language models, and supervised models that predict protein function from sequence. By composing these models, we aim to improve our ability to evaluate unseen mutations and constrain search to regions of sequence space likely to contain functional proteins. Our framework achieves this without any model fine-tuning or re-training by constructing a product of experts distribution directly in discrete protein space. Instead of resorting to brute force search or random sampling, which is typical of classic directed evolution, we introduce a fast MCMC sampler that uses gradients to propose promising mutations. We conduct in silico directed evolution experiments on wide fitness landscapes and across a range of different pre-trained unsupervised models, including a 650M parameter protein language model. Our results demonstrate an ability to efficiently discover variants with high evolutionary likelihood as well as estimated activity multiple mutations away from a wild type protein, suggesting our sampler provides a practical and effective new paradigm for machine-learning-based protein engineering. "
+}

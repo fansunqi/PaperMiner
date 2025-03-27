@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/sileod/tasksource"
+  ],
+  "tasks": [
+    "Multi-task learning",
+    "Dataset harmonization",
+    "Language model training and evaluation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Structured annotation framework",
+    "Multi-task text encoder"
+  ],
+  "results": [
+    "Outperforms every publicly available text encoder of comparable size"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905bbc",
+  "title": "tasksource: Structured Dataset Preprocessing Annotations for\n  Frictionless Extreme Multi-Task Learning and Evaluation",
+  "abstract": "  The HuggingFace Datasets Hub hosts thousands of datasets. This provides exciting opportunities for language model training and evaluation. However, the datasets for a given type of task are stored with different schemas, and harmonization is harder than it seems (https://xkcd.com/927/). Multi-task training or evaluation requires manual work to fit data into task templates. Various initiatives independently address this problem by releasing the harmonized datasets or harmonization codes to preprocess datasets to the same format. We identify patterns across previous preprocessings, e.g. mapping of column names, and extraction of a specific sub-field from structured data in a column, and propose a structured annotation framework that makes our annotations fully exposed and not buried in unstructured code. We release a dataset annotation framework and dataset annotations for more than 400 English tasks (https://github.com/sileod/tasksource). These annotations provide metadata, like the name of the columns that should be used as input or labels for all datasets, and can save time for future dataset preprocessings, even if they do not use our framework. We fine-tune a multi-task text encoder on all tasksource tasks, outperforming every publicly available text encoder of comparable size on an external evaluation https://hf.co/sileod/deberta-v3-base-tasksource-nli. "
+}

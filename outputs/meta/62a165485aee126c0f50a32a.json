@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic Gradient based Sampling Analysis",
+    "Improved Algorithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stochastic Gradient Langevin Dynamics (SGLD)",
+    "Random Batch Method (RBM)",
+    "Covariance Correction"
+  ],
+  "results": [
+    "Improved convergence guarantees",
+    "First stable convergence rate in KL divergence",
+    "Superior first-order oracle complexity",
+    "First guarantees under H\"{o}lder smoothness and Poincare Inequality",
+    "Significant improvement in RBM guarantees"
+  ],
+  "paper_id": "62a165485aee126c0f50a32a",
+  "title": "Utilising the CLT Structure in Stochastic Gradient based Sampling :\n  Improved Analysis and Faster Algorithms",
+  "abstract": "  We consider stochastic approximations of sampling algorithms, such as Stochastic Gradient Langevin Dynamics (SGLD) and the Random Batch Method (RBM) for Interacting Particle Dynamcs (IPD). We observe that the noise introduced by the stochastic approximation is nearly Gaussian due to the Central Limit Theorem (CLT) while the driving Brownian motion is exactly Gaussian. We harness this structure to absorb the stochastic approximation error inside the diffusion process, and obtain improved convergence guarantees for these algorithms. For SGLD, we prove the first stable convergence rate in KL divergence without requiring uniform warm start, assuming the target density satisfies a Log-Sobolev Inequality. Our result implies superior first-order oracle complexity compared to prior works, under significantly milder assumptions. We also prove the first guarantees for SGLD under even weaker conditions such as H\\\"{o}lder smoothness and Poincare Inequality, thus bridging the gap between the state-of-the-art guarantees for LMC and SGLD. Our analysis motivates a new algorithm called covariance correction, which corrects for the additional noise introduced by the stochastic approximation by rescaling the strength of the diffusion. Finally, we apply our techniques to analyze RBM, and significantly improve upon the guarantees in prior works (such as removing exponential dependence on horizon), under minimal assumptions. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph-based data analysis",
+    "Convergence to manifold",
+    "Robustness to outlier noise"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bi-stochastic normalization",
+    "Sinkhorn-Knopp (SK) iterations"
+  ],
+  "results": [
+    "Convergence rate of the graph Laplacian operator: $O(n^{-1/(d/2+3)})$ at finite large $n$",
+    "Point-wise consistency under outlier noise"
+  ],
+  "paper_id": "62b52c625aee126c0f45947c",
+  "title": "Bi-stochastically normalized graph Laplacian: convergence to manifold\n  Laplacian and robustness to outlier noise",
+  "abstract": "  Bi-stochastic normalization provides an alternative normalization of graph Laplacians in graph-based data analysis and can be computed efficiently by Sinkhorn-Knopp (SK) iterations. This paper proves the convergence of bi-stochastically normalized graph Laplacian to manifold (weighted-)Laplacian with rates, when $n$ data points are i.i.d. sampled from a general $d$-dimensional manifold embedded in a possibly high-dimensional space. Under certain joint limit of $n \\to \\infty$ and kernel bandwidth $\\epsilon \\to 0$, the point-wise convergence rate of the graph Laplacian operator (under 2-norm) is proved to be $ O( n^{-1/(d/2+3)})$ at finite large $n$ up to log factors, achieved at the scaling of $\\epsilon \\sim n^{-1/(d/2+3)} $. When the manifold data are corrupted by outlier noise, we theoretically prove the graph Laplacian point-wise consistency which matches the rate for clean manifold data plus an additional term proportional to the boundedness of the inner-products of the noise vectors among themselves and with data vectors. Motivated by our analysis, which suggests that not exact bi-stochastic normalization but an approximate one will achieve the same consistency rate, we propose an approximate and constrained matrix scaling problem that can be solved by SK iterations with early termination. Numerical experiments support our theoretical results and show the robustness of bi-stochastically normalized graph Laplacian to high-dimensional outlier noise. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Representation Learning under Spurious Correlations and Feature Noise"
+  ],
+  "datasets": [
+    "spurious correlation datasets"
+  ],
+  "methods": [
+    "Freeze then Train (FTT)"
+  ],
+  "results": [
+    "FTT outperforms ERM, IRM, JTT and CVaR-DRO",
+    "Substantial improvement in accuracy (by 4.5%) when the feature noise is large"
+  ],
+  "paper_id": "63520de390e50fcafd60ed48",
+  "title": "Freeze then Train: Towards Provable Representation Learning under\n  Spurious Correlations and Feature Noise",
+  "abstract": "  The existence of spurious correlations such as image backgrounds in the training environment can make empirical risk minimization (ERM) perform badly in the test environment. To address this problem, Kirichenko et al. (2022) empirically found that the core features that are related to the outcome can still be learned well even with the presence of spurious correlations. This opens a promising strategy to first train a feature learner rather than a classifier, and then perform linear probing (last layer retraining) in the test environment. However, a theoretical understanding of when and why this approach works is lacking. In this paper, we find that core features are only learned well when their associated non-realizable noise is smaller than that of spurious features, which is not necessarily true in practice. We provide both theories and experiments to support this finding and to illustrate the importance of non-realizable noise. Moreover, we propose an algorithm called Freeze then Train (FTT), that first freezes certain salient features and then trains the rest of the features using ERM. We theoretically show that FTT preserves features that are more beneficial to test time probing. Across two commonly used spurious correlation datasets, FTT outperforms ERM, IRM, JTT and CVaR-DRO, with substantial improvement in accuracy (by 4.5%) when the feature noise is large. FTT also performs better on general distribution shift benchmarks. "
+}

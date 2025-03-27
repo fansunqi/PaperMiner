@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/qinghew/HS-Diffusion"
+  ],
+  "tasks": [
+    "Head Swapping"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semantic-Mixing Diffusion Model",
+    "Latent Diffusion Model (LDM)",
+    "Semantic Layout Generator",
+    "Semantic Calibration Strategy",
+    "Neck Alignment"
+  ],
+  "results": [
+    "Coarse-grained head swapping",
+    "Fine-grained head swapping",
+    "New image-based head swapping benchmark",
+    "Mask-FID and Focal-FID metrics"
+  ],
+  "paper_id": "63993edc90e50fcafdf5a4b1",
+  "title": "HS-Diffusion: Learning a Semantic-Mixing Diffusion Model for Head\n  Swapping",
+  "abstract": "  Image-based head swapping task aims to stitch a source head to another source body flawlessly. This seldom-studied task faces two major challenges: 1) Preserving the head and body from various sources while generating a seamless transition region. 2) No paired head swapping dataset and benchmark so far. In this paper, we propose a semantic-mixing diffusion model for head swapping (HS-Diffusion) which consists of a latent diffusion model (LDM) and a semantic layout generator. We blend the semantic layouts of source head and source body, and then inpaint the transition region by the semantic layout generator, achieving a coarse-grained head swapping. Semantic-mixing LDM can further implement a fine-grained head swapping with the inpainted layout as condition by a progressive fusion process, while preserving head and body with high-quality reconstruction. To this end, we propose a semantic calibration strategy for natural inpainting and a neck alignment for geometric realism. Importantly, we construct a new image-based head swapping benchmark and design two tailor-designed metrics (Mask-FID and Focal-FID). Extensive experiments demonstrate the superiority of our framework. The code will be available: https://github.com/qinghew/HS-Diffusion. "
+}

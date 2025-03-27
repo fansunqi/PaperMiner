@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "http://padloc.cs.uni-freiburg.de"
+  ],
+  "tasks": [
+    "Loop closure detection and registration in LiDAR-based SLAM"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer-based head for point cloud matching and registration",
+    "Panoptic attention",
+    "Novel loss function"
+  ],
+  "results": [
+    "State-of-the-art results on multiple real-world datasets"
+  ],
+  "paper_id": "632a811f90e50fcafd084851",
+  "title": "PADLoC: LiDAR-Based Deep Loop Closure Detection and Registration Using\n  Panoptic Attention",
+  "abstract": "  A key component of graph-based SLAM systems is the ability to detect loop closures in a trajectory to reduce the drift accumulated over time from the odometry. Most LiDAR-based methods achieve this goal by using only the geometric information, disregarding the semantics of the scene. In this work, we introduce PADLoC for joint loop closure detection and registration in LiDAR-based SLAM frameworks. We propose a novel transformer-based head for point cloud matching and registration, and to leverage panoptic information during training time. In particular, we propose a novel loss function that reframes the matching problem as a classification task for the semantic labels and as a graph connectivity assignment for the instance labels. During inference, PADLoC does not require panoptic annotations, making it more versatile than other methods. Additionally, we show that using two shared matching and registration heads with their source and target inputs swapped increases the overall performance by enforcing forward-backward consistency. We perform extensive evaluations of PADLoC on multiple real-world datasets demonstrating that it achieves state-of-the-art results. The code of our work is publicly available at http://padloc.cs.uni-freiburg.de. "
+}

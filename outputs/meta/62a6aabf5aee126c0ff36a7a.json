@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Global Optimization Problems in Robotics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Tensor Train model",
+    "inverse kinematics",
+    "motion planning problems"
+  ],
+  "results": [
+    "Samples close to global optima",
+    "Multiple solutions from different modes"
+  ],
+  "paper_id": "62a6aabf5aee126c0ff36a7a",
+  "title": "Tensor Train for Global Optimization Problems in Robotics",
+  "abstract": "  The convergence of many numerical optimization techniques is highly dependent on the initial guess given to the solver. To address this issue, we propose a novel approach that utilizes tensor methods to initialize existing optimization solvers near global optima. Our method does not require access to a database of good solutions. We first transform the cost function, which depends on both task parameters and optimization variables, into a probability density function. The joint probability distribution of the task parameters and optimization variables is approximated using the Tensor Train model which enables efficient conditioning and sampling. Unlike existing methods, we treat the task parameters as random variables and for a given task we generate samples for decision variables from the conditional distribution to initialize the optimization solver. Our method can produce multiple solutions for a given task from different modes when they exist. We first evaluate the approach on benchmark functions for numerical optimization that are hard to solve using gradient-based optimization solvers with a naive initialization. The results show that the proposed method can generate samples close to global optima and from multiple modes. We then demonstrate the generality and relevance of our framework to robotics by applying it to inverse kinematics with obstacles and motion planning problems with a 7-DoF manipulator. "
+}

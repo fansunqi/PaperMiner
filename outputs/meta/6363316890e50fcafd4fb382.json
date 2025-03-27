@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adaptive mesh refinement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Value Decomposition Graph Network (VDGN)",
+    "Multi-Agent Reinforcement Learning (MARL)"
+  ],
+  "results": [
+    "VDGN policies significantly outperform error threshold-based policies in global error and cost metrics",
+    "Learned policies generalize to test problems with physical features, mesh geometries, and longer simulation times",
+    "Multi-objective optimization capabilities to find the Pareto front of the tradeoff between cost and error"
+  ],
+  "paper_id": "6363316890e50fcafd4fb382",
+  "title": "Multi-Agent Reinforcement Learning for Adaptive Mesh Refinement",
+  "abstract": "  Adaptive mesh refinement (AMR) is necessary for efficient finite element simulations of complex physical phenomenon, as it allocates limited computational budget based on the need for higher or lower resolution, which varies over space and time. We present a novel formulation of AMR as a fully-cooperative Markov game, in which each element is an independent agent who makes refinement and de-refinement choices based on local information. We design a novel deep multi-agent reinforcement learning (MARL) algorithm called Value Decomposition Graph Network (VDGN), which solves the two core challenges that AMR poses for MARL: posthumous credit assignment due to agent creation and deletion, and unstructured observations due to the diversity of mesh geometries. For the first time, we show that MARL enables anticipatory refinement of regions that will encounter complex features at future times, thereby unlocking entirely new regions of the error-cost objective landscape that are inaccessible by traditional methods based on local error estimators. Comprehensive experiments show that VDGN policies significantly outperform error threshold-based policies in global error and cost metrics. We show that learned policies generalize to test problems with physical features, mesh geometries, and longer simulation times that were not seen in training. We also extend VDGN with multi-objective optimization capabilities to find the Pareto front of the tradeoff between cost and error. "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video-grounded Text Generation"
+  ],
+  "datasets": [
+    "iVQA",
+    "Next-QA",
+    "Activitynet-QA",
+    "MSRVTT-Caption"
+  ],
+  "methods": [
+    "Semi-parametric video-grounded text generation model (SeViT)",
+    "Non-parametric frame retriever",
+    "Parametric generator",
+    "Late fusion methods"
+  ],
+  "results": [
+    "New state of the art on four video-language datasets",
+    "iVQA (+4.8), Next-QA (+6.9), Activitynet-QA (+4.8) in accuracy",
+    "MSRVTT-Caption (+3.6) in CIDEr"
+  ],
+  "paper_id": "63d7352390e50fcafda302e9",
+  "title": "Semi-Parametric Video-Grounded Text Generation",
+  "abstract": "  Efficient video-language modeling should consider the computational cost because of a large, sometimes intractable, number of video frames. Parametric approaches such as the attention mechanism may not be ideal since its computational cost quadratically increases as the video length increases. Rather, previous studies have relied on offline feature extraction or frame sampling to represent the video efficiently, focusing on cross-modal modeling in short video clips. In this paper, we propose a semi-parametric video-grounded text generation model, SeViT, a novel perspective on scalable video-language modeling toward long untrimmed videos. Treating a video as an external data store, SeViT includes a non-parametric frame retriever to select a few query-relevant frames from the data store for a given query and a parametric generator to effectively aggregate the frames with the query via late fusion methods. Experimental results demonstrate our method has a significant advantage in longer videos and causal video understanding. Moreover, our model achieves the new state of the art on four video-language datasets, iVQA (+4.8), Next-QA (+6.9), and Activitynet-QA (+4.8) in accuracy, and MSRVTT-Caption (+3.6) in CIDEr. "
+}

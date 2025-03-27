@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/zsyOAOA/DifFace"
+  ],
+  "tasks": [
+    "Blind Face Restoration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DifFace: Blind Face Restoration with Diffused Error Contraction"
+  ],
+  "results": [
+    "Comprehensive experiments show that DifFace is superior to current state-of-the-art methods, especially in cases with severe degradations"
+  ],
+  "paper_id": "63993edc90e50fcafdf5a541",
+  "title": "DifFace: Blind Face Restoration with Diffused Error Contraction",
+  "abstract": "  While deep learning-based methods for blind face restoration have achieved unprecedented success, they still suffer from two major limitations. First, most of them deteriorate when facing complex degradations out of their training data. Second, these methods require multiple constraints, e.g., fidelity, perceptual, and adversarial losses, which require laborious hyper-parameter tuning to stabilize and balance their influences. In this work, we propose a novel method named DifFace that is capable of coping with unseen and complex degradations more gracefully without complicated loss designs. The key of our method is to establish a posterior distribution from the observed low-quality (LQ) image to its high-quality (HQ) counterpart. In particular, we design a transition distribution from the LQ image to the intermediate state of a pre-trained diffusion model and then gradually transmit from this intermediate state to the HQ target by recursively applying a pre-trained diffusion model. The transition distribution only relies on a restoration backbone that is trained with $L_2$ loss on some synthetic data, which favorably avoids the cumbersome training process in existing methods. Moreover, the transition distribution can contract the error of the restoration backbone and thus makes our method more robust to unknown degradations. Comprehensive experiments show that DifFace is superior to current state-of-the-art methods, especially in cases with severe degradations. Code and model are available at https://github.com/zsyOAOA/DifFace. "
+}

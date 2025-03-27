@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Classification"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10",
+    "CIFAR-100",
+    "TinyImageNet"
+  ],
+  "methods": [
+    "Residual compensation convolutional network",
+    "Single forward pass without backpropagation"
+  ],
+  "results": [
+    "Outperforms all existing PCANet-like networks",
+    "Competitive with several traditional gradient-based models"
+  ],
+  "paper_id": "63d7352390e50fcafda303c1",
+  "title": "Deep Residual Compensation Convolutional Network without Backpropagation",
+  "abstract": "  PCANet and its variants provided good accuracy results for classification tasks. However, despite the importance of network depth in achieving good classification accuracy, these networks were trained with a maximum of nine layers. In this paper, we introduce a residual compensation convolutional network, which is the first PCANet-like network trained with hundreds of layers while improving classification accuracy. The design of the proposed network consists of several convolutional layers, each followed by post-processing steps and a classifier. To correct the classification errors and significantly increase the network's depth, we train each layer with new labels derived from the residual information of all its preceding layers. This learning mechanism is accomplished by traversing the network's layers in a single forward pass without backpropagation or gradient computations. Our experiments on four distinct classification benchmarks (MNIST, CIFAR-10, CIFAR-100, and TinyImageNet) show that our deep network outperforms all existing PCANet-like networks and is competitive with several traditional gradient-based models. "
+}

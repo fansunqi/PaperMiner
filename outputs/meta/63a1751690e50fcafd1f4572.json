@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Intermittent Computing under Energy Constraints"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Non-volatile memory (NVM) based processors",
+    "dirty block table (DBT)",
+    "writeback queue (WBQ)"
+  ],
+  "results": [
+    "Energy consumption decreased by 17.56%",
+    "Number of writes to NVM decreased by 18.97% at LLC",
+    "Number of writes to NVM decreased by 10.66% at main-memory level"
+  ],
+  "paper_id": "63a1751690e50fcafd1f4572",
+  "title": "An Efficient NVM based Architecture for Intermittent Computing under\n  Energy Constraints",
+  "abstract": "  Battery-less technology evolved to replace battery technology. Non-volatile memory (NVM) based processors were explored to store the program state during a power failure. The energy stored in a capacitor is used for a backup during a power failure. Since the size of a capacitor is fixed and limited, the available energy in a capacitor is also limited and fixed. Thus, the capacitor energy is insufficient to store the entire program state during frequent power failures. This paper proposes an architecture that assures safe backup of volatile contents during a power failure under energy constraints. Using a proposed dirty block table (DBT) and writeback queue (WBQ), this work limits the number of dirty blocks in the L1 cache at any given time. We further conducted a set of experiments by varying the parameter sizes to help the user make appropriate design decisions concerning their energy requirements. The proposed architecture decreases energy consumption by 17.56%, the number of writes to NVM by 18.97% at LLC, and 10.66% at a main-memory level compared to baseline architecture. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/anandrajan0/smartalec"
+  ],
+  "tasks": [
+    "linear equality constraints in feedforward neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "saddle-point Lagrangian",
+    "auxiliary predictor variables",
+    "dual minimization problem",
+    "Lagrange multipliers"
+  ],
+  "results": [
+    "Lagrange parameters as additional, penultimate layer hidden units with fixed weights"
+  ],
+  "paper_id": "636b1a6b90e50fcafdf42e44",
+  "title": "Expressing linear equality constraints in feedforward neural networks",
+  "abstract": "  We seek to impose linear, equality constraints in feedforward neural networks. As top layer predictors are usually nonlinear, this is a difficult task if we seek to deploy standard convex optimization methods and strong duality. To overcome this, we introduce a new saddle-point Lagrangian with auxiliary predictor variables on which constraints are imposed. Elimination of the auxiliary variables leads to a dual minimization problem on the Lagrange multipliers introduced to satisfy the linear constraints. This minimization problem is combined with the standard learning problem on the weight matrices. From this theoretical line of development, we obtain the surprising interpretation of Lagrange parameters as additional, penultimate layer hidden units with fixed weights stemming from the constraints. Consequently, standard minimization approaches can be used despite the inclusion of Lagrange parameters -- a very satisfying, albeit unexpected, discovery. Examples ranging from multi-label classification to constrained autoencoders are envisaged in the future. The code has been made available at https://github.com/anandrajan0/smartalec "
+}

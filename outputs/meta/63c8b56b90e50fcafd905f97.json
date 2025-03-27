@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Architecture Search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Beta-Decay regularization",
+    "Bi-level regularization"
+  ],
+  "results": [
+    "Stabilizes the searching process",
+    "Improves the proxy robustness of differentiable NAS",
+    "Achieves the best result among all compared NAS methods under almost all proxies"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905f97",
+  "title": "$\\beta$-DARTS++: Bi-level Regularization for Proxy-robust Differentiable\n  Architecture Search",
+  "abstract": "  Neural Architecture Search has attracted increasing attention in recent years. Among them, differential NAS approaches such as DARTS, have gained popularity for the search efficiency. However, they still suffer from three main issues, that are, the weak stability due to the performance collapse, the poor generalization ability of the searched architectures, and the inferior robustness to different kinds of proxies. To solve the stability and generalization problems, a simple-but-effective regularization method, termed as Beta-Decay, is proposed to regularize the DARTS-based NAS searching process (i.e., $\\beta$-DARTS). Specifically, Beta-Decay regularization can impose constraints to keep the value and variance of activated architecture parameters from being too large, thereby ensuring fair competition among architecture parameters and making the supernet less sensitive to the impact of input on the operation set. In-depth theoretical analyses on how it works and why it works are provided. Comprehensive experiments validate that Beta-Decay regularization can help to stabilize the searching process and makes the searched network more transferable across different datasets. To address the robustness problem, we first benchmark different NAS methods under a wide range of proxy data, proxy channels, proxy layers and proxy epochs, since the robustness of NAS under different kinds of proxies has not been explored before. We then conclude some interesting findings and find that $\\beta$-DARTS always achieves the best result among all compared NAS methods under almost all proxies. We further introduce the novel flooding regularization to the weight optimization of $\\beta$-DARTS (i.e., Bi-level regularization), and experimentally and theoretically verify its effectiveness for improving the proxy robustness of differentiable NAS. "
+}

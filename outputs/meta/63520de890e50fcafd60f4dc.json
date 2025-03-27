@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding the smallest or largest entry of a tensor from its low-rank factors"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "gradient-based approximation algorithms"
+  ],
+  "results": [
+    "NP-hard for any tensor rank higher than one",
+    "equivalent continuous problem reformulation",
+    "promising performance in preliminary experiments"
+  ],
+  "paper_id": "63520de890e50fcafd60f4dc",
+  "title": "Finding the smallest or largest element of a tensor from its low-rank\n  factors",
+  "abstract": "  We consider the problem of finding the smallest or largest entry of a tensor of order $N$ that is specified via its rank decomposition. Stated in a different way, we are given $N$ sets of $R$-dimensional vectors and we wish to select one vector from each set such that the sum of the Hadamard product of the selected vectors is minimized or maximized. This is a fundamental tensor problem with numerous applications in embedding similarity search, recommender systems, graph mining, multivariate probability, and statistics. We show that this discrete optimization problem is NP-hard for any tensor rank higher than one, but also provide an equivalent continuous problem reformulation which is amenable to disciplined non-convex optimization. We propose a suite of gradient-based approximation algorithms whose performance in preliminary experiments appears to be promising. "
+}

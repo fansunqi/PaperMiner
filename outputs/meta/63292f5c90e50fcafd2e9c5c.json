@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Detecting Political Biases of Named Entities and Hashtags"
+  ],
+  "datasets": [
+    "Twitter"
+  ],
+  "methods": [
+    "Polarity-aware Embedding Multi-task learning (PEM) model"
+  ],
+  "results": [
+    "Successfully learns polarity-aware embeddings",
+    "Perform well in classification tasks"
+  ],
+  "paper_id": "63292f5c90e50fcafd2e9c5c",
+  "title": "Detecting Political Biases of Named Entities and Hashtags on Twitter",
+  "abstract": "  Ideological divisions in the United States have become increasingly prominent in daily communication. Accordingly, there has been much research on political polarization, including many recent efforts that take a computational perspective. By detecting political biases in a corpus of text, one can attempt to describe and discern the polarity of that text. Intuitively, the named entities (i.e., the nouns and the phrases that act as nouns) and hashtags in text often carry information about political views. For example, people who use the term \"pro-choice\" are likely to be liberal, whereas people who use the term \"pro-life\" are likely to be conservative. In this paper, we seek to reveal political polarities in social-media text data and to quantify these polarities by explicitly assigning a polarity score to entities and hashtags. Although this idea is straightforward, it is difficult to perform such inference in a trustworthy quantitative way. Key challenges include the small number of known labels, the continuous spectrum of political views, and the preservation of both a polarity score and a polarity-neutral semantic meaning in an embedding vector of words. To attempt to overcome these challenges, we propose the Polarity-aware Embedding Multi-task learning (PEM) model. This model consists of (1) a self-supervised context-preservation task, (2) an attention-based tweet-level polarity-inference task, and (3) an adversarial learning task that promotes independence between an embedding's polarity dimension and its semantic dimensions. Our experimental results demonstrate that our PEM model can successfully learn polarity-aware embeddings that perform well classification tasks. We examine a variety of applications and we thereby demonstrate the effectiveness of our PEM model. We also discuss important limitations of our work and encourage caution when applying the it to real-world scenarios. "
+}

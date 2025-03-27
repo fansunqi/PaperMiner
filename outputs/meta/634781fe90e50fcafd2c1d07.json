@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Machine Translation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Levenshtein Transformer (LevT)",
+    "Translation Memory (TM)",
+    "Knowledge Distillation"
+  ],
+  "results": [
+    "Performance on par with autoregressive approach",
+    "Reduced decoding load"
+  ],
+  "paper_id": "634781fe90e50fcafd2c1d07",
+  "title": "Integrating Translation Memories into Non-Autoregressive Machine\n  Translation",
+  "abstract": "  Non-autoregressive machine translation (NAT) has recently made great progress. However, most works to date have focused on standard translation tasks, even though some edit-based NAT models, such as the Levenshtein Transformer (LevT), seem well suited to translate with a Translation Memory (TM). This is the scenario considered here. We first analyze the vanilla LevT model and explain why it does not do well in this setting. We then propose a new variant, TM-LevT, and show how to effectively train this model. By modifying the data presentation and introducing an extra deletion operation, we obtain performance that are on par with an autoregressive approach, while reducing the decoding load. We also show that incorporating TMs during training dispenses to use knowledge distillation, a well-known trick used to mitigate the multimodality issue. "
+}

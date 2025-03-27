@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/giddyyupp/AdvSegLoss"
+  ],
+  "tasks": [
+    "Sketch Colorization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adversarial Segmentation Consistency"
+  ],
+  "results": [
+    "FID metric improvement by up to 35 points"
+  ],
+  "paper_id": "63cdfab690e50fcafd106fe7",
+  "title": "Improving Sketch Colorization using Adversarial Segmentation Consistency",
+  "abstract": "  We propose a new method for producing color images from sketches. Current solutions in sketch colorization either necessitate additional user instruction or are restricted to the \"paired\" translation strategy. We leverage semantic image segmentation from a general-purpose panoptic segmentation network to generate an additional adversarial loss function. The proposed loss function is compatible with any GAN model. Our method is not restricted to datasets with segmentation labels and can be applied to unpaired translation tasks as well. Using qualitative, and quantitative analysis, and based on a user study, we demonstrate the efficacy of our method on four distinct image datasets. On the FID metric, our model improves the baseline by up to 35 points. Our code, pretrained models, scripts to produce newly introduced datasets and corresponding sketch images are available at https://github.com/giddyyupp/AdvSegLoss. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Noisy Partial Label Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Iterative Refinement Network (IRNet)"
+  ],
+  "results": [
+    "IRNet is superior to existing state-of-the-art approaches on noisy PLL"
+  ],
+  "paper_id": "636c6beb90e50fcafd2d3d88",
+  "title": "IRNet: Iterative Refinement Network for Noisy Partial Label Learning",
+  "abstract": "  Partial label learning (PLL) is a typical weakly supervised learning, where each sample is associated with a set of candidate labels. The basic assumption of PLL is that the ground-truth label must reside in the candidate set. However, this assumption may not be satisfied due to the unprofessional judgment of the annotators, thus limiting the practical application of PLL. In this paper, we relax this assumption and focus on a more general problem, noisy PLL, where the ground-truth label may not exist in the candidate set. To address this challenging problem, we propose a novel framework called \"Iterative Refinement Network (IRNet)\". It aims to purify the noisy samples by two key modules, i.e., noisy sample detection and label correction. Ideally, we can convert noisy PLL into traditional PLL if all noisy samples are corrected. To guarantee the performance of these modules, we start with warm-up training and exploit data augmentation to reduce prediction errors. Through theoretical analysis, we prove that IRNet is able to reduce the noise level of the dataset and eventually approximate the Bayes optimal classifier. Experimental results on multiple benchmark datasets demonstrate the effectiveness of our method. IRNet is superior to existing state-of-the-art approaches on noisy PLL. "
+}

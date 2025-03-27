@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training deep graph neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Edge Enhanced Graph Neural Network (EEGNN)",
+    "Dirichlet mixture Poisson graph model (DMPGM)",
+    "Bayesian nonparametric model",
+    "Markov chain Monte Carlo inference framework"
+  ],
+  "results": [
+    "Considerable performance increase compared to baselines"
+  ],
+  "paper_id": "62fa0d1490e50fcafd2463f3",
+  "title": "EEGNN: Edge Enhanced Graph Neural Network with a Bayesian Nonparametric\n  Graph Model",
+  "abstract": "  Training deep graph neural networks (GNNs) poses a challenging task, as the performance of GNNs may suffer from the number of hidden message-passing layers. The literature has focused on the proposals of {over-smoothing} and {under-reaching} to explain the performance deterioration of deep GNNs. In this paper, we propose a new explanation for such deteriorated performance phenomenon, {mis-simplification}, that is, mistakenly simplifying graphs by preventing self-loops and forcing edges to be unweighted. We show that such simplifying can reduce the potential of message-passing layers to capture the structural information of graphs. In view of this, we propose a new framework, edge enhanced graph neural network (EEGNN). EEGNN uses the structural information extracted from the proposed Dirichlet mixture Poisson graph model (DMPGM), a Bayesian nonparametric model for graphs, to improve the performance of various deep message-passing GNNs. We propose a Markov chain Monte Carlo inference framework for DMPGM. Experiments over different datasets show that our method achieves considerable performance increase compared to baselines. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantitative Verification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Networks",
+    "Supermartingale Functions",
+    "Satisfiability Modulo Theories",
+    "Counterexample-Guided Inductive Synthesis"
+  ],
+  "results": [
+    "Smaller or comparable probability bounds",
+    "Success on models beyond the reach of alternative techniques"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905cf3",
+  "title": "Quantitative Verification With Neural Networks For Probabilistic\n  Programs and Stochastic Systems",
+  "abstract": "  We present a machine learning approach to quantitative verification. We investigate the quantitative reachability analysis of probabilistic programs and stochastic systems, which is the problem of computing the probability of hitting in finite time a given target set of states. This general problem subsumes a wide variety of other quantitative verification problems, from the invariant and the safety analysis of discrete-time stochastic systems to the assertion-violation and the termination analysis of single-loop probabilistic programs. We exploit the expressive power of neural networks as novel templates for indicating supermartingale functions, which provide general certificates of reachability that are both tight and sound. Our method uses machine learning to train a neural certificate that minimises an upper bound for the probability of reachability over sampled observations of the state space. Then, it uses satisfiability modulo theories to verify that the obtained neural certificate is valid over every possible state of the program and conversely, upon receiving a counterexample, it refines neural training in a counterexample-guided inductive synthesis loop, until the solver confirms the certificate. We experimentally demonstrate on a diverse set of benchmark probabilistic programs and stochastic dynamical models that neural indicating supermartingales yield smaller or comparable probability bounds than existing state-of-the-art methods in all cases, and further that the approach succeeds on models that are entirely beyond the reach of such alternative techniques. "
+}

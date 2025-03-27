@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Accent Modelling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Voice Conversion",
+    "Multi-speaker Multi-accent TTS Model"
+  ],
+  "results": [
+    "State-of-the-art results compared to other generative models",
+    "Low resource accents can be modelled with relatively little data"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886631",
+  "title": "Modelling low-resource accents without accent-specific TTS frontend",
+  "abstract": "  This work focuses on modelling a speaker's accent that does not have a dedicated text-to-speech (TTS) frontend, including a grapheme-to-phoneme (G2P) module. Prior work on modelling accents assumes a phonetic transcription is available for the target accent, which might not be the case for low-resource, regional accents. In our work, we propose an approach whereby we first augment the target accent data to sound like the donor voice via voice conversion, then train a multi-speaker multi-accent TTS model on the combination of recordings and synthetic data, to generate the donor's voice speaking in the target accent. Throughout the procedure, we use a TTS frontend developed for the same language but a different accent. We show qualitative and quantitative analysis where the proposed strategy achieves state-of-the-art results compared to other generative models. Our work demonstrates that low resource accents can be modelled with relatively little data and without developing an accent-specific TTS frontend. Audio samples of our model converting to multiple accents are available on our web page. "
+}

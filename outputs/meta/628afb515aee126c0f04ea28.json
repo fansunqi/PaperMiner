@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "MRI image reconstruction"
+  ],
+  "datasets": [
+    "fastMRI"
+  ],
+  "methods": [
+    "Noisier2Noise framework",
+    "Self-Supervised Learning via Data Undersampling (SSDU)",
+    "partitioning sampling set",
+    "loss weighting"
+  ],
+  "results": [
+    "improved image restoration quality",
+    "robustness to partitioning parameters"
+  ],
+  "paper_id": "628afb515aee126c0f04ea28",
+  "title": "A theoretical framework for self-supervised MR image reconstruction\n  using sub-sampling via variable density Noisier2Noise",
+  "abstract": "  In recent years, there has been attention on leveraging the statistical modeling capabilities of neural networks for reconstructing sub-sampled Magnetic Resonance Imaging (MRI) data. Most proposed methods assume the existence of a representative fully-sampled dataset and use fully-supervised training. However, for many applications, fully sampled training data is not available, and may be highly impractical to acquire. The development and understanding of self-supervised methods, which use only sub-sampled data for training, are therefore highly desirable. This work extends the Noisier2Noise framework, which was originally constructed for self-supervised denoising tasks, to variable density sub-sampled MRI data. We use the Noisier2Noise framework to analytically explain the performance of Self-Supervised Learning via Data Undersampling (SSDU), a recently proposed method that performs well in practice but until now lacked theoretical justification. Further, we propose two modifications of SSDU that arise as a consequence of the theoretical developments. Firstly, we propose partitioning the sampling set so that the subsets have the same type of distribution as the original sampling mask. Secondly, we propose a loss weighting that compensates for the sampling and partitioning densities. On the fastMRI dataset we show that these changes significantly improve SSDU's image restoration quality and robustness to the partitioning parameters. "
+}

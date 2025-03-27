@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lifelong Self-Supervised Domain Adaptation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LLEDA framework",
+    "latent replay technique"
+  ],
+  "results": [
+    "outperforms several other methods",
+    "long-term adaptation",
+    "less prone to catastrophic forgetting"
+  ],
+  "paper_id": "6375a67190e50fcafd3e1cf7",
+  "title": "LLEDA -- Lifelong Self-Supervised Domain Adaptation",
+  "abstract": "  Humans and animals have the ability to continuously learn new information over their lifetime without losing previously acquired knowledge. However, artificial neural networks struggle with this due to new information conflicting with old knowledge, resulting in catastrophic forgetting. The complementary learning systems (CLS) theory suggests that the interplay between hippocampus and neocortex systems enables long-term and efficient learning in the mammalian brain, with memory replay facilitating the interaction between these two systems to reduce forgetting. The proposed Lifelong Self-Supervised Domain Adaptation (LLEDA) framework draws inspiration from the CLS theory and mimics the interaction between two networks: a DA network inspired by the hippocampus that quickly adjusts to changes in data distribution and an SSL network inspired by the neocortex that gradually learns domain-agnostic general representations. LLEDA's latent replay technique facilitates communication between these two networks by reactivating and replaying the past memory latent representations to stabilise long-term generalisation and retention without interfering with the previously learned information. Extensive experiments demonstrate that the proposed method outperforms several other methods resulting in a long-term adaptation while being less prone to catastrophic forgetting when transferred to new domains. "
+}

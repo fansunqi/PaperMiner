@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/erikervalid/AMPose"
+  ],
+  "tasks": [
+    "3D Human Pose Estimation"
+  ],
+  "datasets": [
+    "Human3.6M",
+    "MPI-INF-3DHP"
+  ],
+  "methods": [
+    "Transformer",
+    "GCN"
+  ],
+  "results": [
+    "Better generalization ability"
+  ],
+  "paper_id": "6344dede90e50fcafd24d140",
+  "title": "AMPose: Alternatively Mixed Global-Local Attention Model for 3D Human\n  Pose Estimation",
+  "abstract": "  The graph convolutional networks (GCNs) have been applied to model the physically connected and non-local relations among human joints for 3D human pose estimation (HPE). In addition, the purely Transformer-based models recently show promising results in video-based 3D HPE. However, the single-frame method still needs to model the physically connected relations among joints because the feature representations transformed only by global relations via the Transformer neglect information on the human skeleton. To deal with this problem, we propose a novel method in which the Transformer encoder and GCN blocks are alternately stacked, namely AMPose, to combine the global and physically connected relations among joints towards HPE. In the AMPose, the Transformer encoder is applied to connect each joint with all the other joints, while GCNs are applied to capture information on physically connected relations. The effectiveness of our proposed method is evaluated on the Human3.6M dataset. Our model also shows better generalization ability by testing on the MPI-INF-3DHP dataset. Code can be retrieved at https://github.com/erikervalid/AMPose. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Class Center Similarity layer (CCS layer)",
+    "Adaptive Class Center Module (ACCM)",
+    "Loss functions for inter-class and intra-class distances"
+  ],
+  "results": [
+    "Favourably performs against state-of-the-art CNN-based methods"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8bab",
+  "title": "Semantic Segmentation via Pixel-to-Center Similarity Calculation",
+  "abstract": "  Since the fully convolutional network has achieved great success in semantic segmentation, lots of works have been proposed focusing on extracting discriminative pixel feature representations. However, we observe that existing methods still suffer from two typical challenges, i.e. (i) large intra-class feature variation in different scenes, (ii) small inter-class feature distinction in the same scene. In this paper, we first rethink semantic segmentation from a perspective of similarity between pixels and class centers. Each weight vector of the segmentation head represents its corresponding semantic class in the whole dataset, which can be regarded as the embedding of the class center. Thus, the pixel-wise classification amounts to computing similarity in the final feature space between pixels and the class centers. Under this novel view, we propose a Class Center Similarity layer (CCS layer) to address the above-mentioned challenges by generating adaptive class centers conditioned on different scenes and supervising the similarities between class centers. It utilizes a Adaptive Class Center Module (ACCM) to generate class centers conditioned on each scene, which adapt the large intra-class variation between different scenes. Specially designed loss functions are introduced to control both inter-class and intra-class distances based on predicted center-to-center and pixel-to-center similarity, respectively. Finally, the CCS layer outputs the processed pixel-to-center similarity as the segmentation prediction. Extensive experiments demonstrate that our model performs favourably against the state-of-the-art CNN-based methods. "
+}

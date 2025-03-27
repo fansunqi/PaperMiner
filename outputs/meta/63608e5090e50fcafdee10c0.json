@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Alzheimer's Disease detection"
+  ],
+  "datasets": [
+    "ADReSS20"
+  ],
+  "methods": [
+    "prompt-based fine-tuning of PLMs",
+    "disfluency features",
+    "decision voting"
+  ],
+  "results": [
+    "mean detection accuracy of 84.20% (with std 2.09%, best 87.5%) using manual transcripts",
+    "mean detection accuracy of 82.64% (with std 4.0%, best 89.58%) using ASR transcripts"
+  ],
+  "paper_id": "63608e5090e50fcafdee10c0",
+  "title": "Exploiting prompt learning with pre-trained language models for\n  Alzheimer's Disease detection",
+  "abstract": "  Early diagnosis of Alzheimer's disease (AD) is crucial in facilitating preventive care and to delay further progression. Speech based automatic AD screening systems provide a non-intrusive and more scalable alternative to other clinical screening techniques. Textual embedding features produced by pre-trained language models (PLMs) such as BERT are widely used in such systems. However, PLM domain fine-tuning is commonly based on the masked word or sentence prediction costs that are inconsistent with the back-end AD detection task. To this end, this paper investigates the use of prompt-based fine-tuning of PLMs that consistently uses AD classification errors as the training objective function. Disfluency features based on hesitation or pause filler token frequencies are further incorporated into prompt phrases during PLM fine-tuning. The decision voting based combination among systems using different PLMs (BERT and RoBERTa) or systems with different fine-tuning paradigms (conventional masked-language modelling fine-tuning and prompt-based fine-tuning) is further applied. Mean, standard deviation and the maximum among accuracy scores over 15 experiment runs are adopted as performance measurements for the AD detection system. Mean detection accuracy of 84.20% (with std 2.09%, best 87.5%) and 82.64% (with std 4.0%, best 89.58%) were obtained using manual and ASR speech transcripts respectively on the ADReSS20 test set consisting of 48 elderly speakers. "
+}

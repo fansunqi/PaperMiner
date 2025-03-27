@@ -1,0 +1,32 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image embedding generation",
+    "User-level differential privacy"
+  ],
+  "datasets": [
+    "DigiFace",
+    "EMNIST",
+    "GLD",
+    "iNaturalist"
+  ],
+  "methods": [
+    "DP-FedEmb",
+    "Federated learning",
+    "Per-user sensitivity control",
+    "Noise addition",
+    "Virtual clients",
+    "Partial aggregation",
+    "Private local fine-tuning",
+    "Public pretraining"
+  ],
+  "results": [
+    "Strong user-level DP guarantees of \u03b5<4",
+    "Utility drop within 5%"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c585",
+  "title": "Learning to Generate Image Embeddings with User-level Differential\n  Privacy",
+  "abstract": "  Small on-device models have been successfully trained with user-level differential privacy (DP) for next word prediction and image classification tasks in the past. However, existing methods can fail when directly applied to learn embedding models using supervised training data with a large class space. To achieve user-level DP for large image-to-embedding feature extractors, we propose DP-FedEmb, a variant of federated learning algorithms with per-user sensitivity control and noise addition, to train from user-partitioned data centralized in the datacenter. DP-FedEmb combines virtual clients, partial aggregation, private local fine-tuning, and public pretraining to achieve strong privacy utility trade-offs. We apply DP-FedEmb to train image embedding models for faces, landmarks and natural species, and demonstrate its superior utility under same privacy budget on benchmark datasets DigiFace, EMNIST, GLD and iNaturalist. We further illustrate it is possible to achieve strong user-level DP guarantees of $\\epsilon<4$ while controlling the utility drop within 5%, when millions of users can participate in training. "
+}

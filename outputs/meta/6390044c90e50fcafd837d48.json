@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://songyanghan.github.io/what_is_solution/"
+  ],
+  "tasks": [
+    "Multi-Agent Reinforcement Learning (MARL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "State-Adversarial Markov Game (SAMG)",
+    "Robust Multi-Agent Adversarial Actor-Critic (RMA3C)"
+  ],
+  "results": [
+    "Robustness improvement in MARL policies",
+    "Outperforms existing methods under state perturbations"
+  ],
+  "paper_id": "6390044c90e50fcafd837d48",
+  "title": "What is the Solution for State-Adversarial Multi-Agent Reinforcement\n  Learning?",
+  "abstract": "  Various methods for Multi-Agent Reinforcement Learning (MARL) have been developed with the assumption that agents' policies are based on accurate state information. However, policies learned through Deep Reinforcement Learning (DRL) are susceptible to adversarial state perturbation attacks. In this work, we propose a State-Adversarial Markov Game (SAMG) and make the first attempt to investigate the fundamental properties of MARL under state uncertainties. Our analysis shows that the commonly used solution concepts of optimal agent policy and robust Nash equilibrium do not always exist in SAMGs. To circumvent this difficulty, we consider a new solution concept called robust agent policy, where agents aim to maximize the worst-case expected state value. We prove the existence of robust agent policy for finite state and finite action SAMGs. Additionally, we propose a Robust Multi-Agent Adversarial Actor-Critic (RMA3C) algorithm to learn robust policies for MARL agents under state uncertainties. Our experiments demonstrate that our algorithm outperforms existing methods when faced with state perturbations and greatly improves the robustness of MARL policies. Our code is public on https://songyanghan.github.io/what_is_solution/. "
+}

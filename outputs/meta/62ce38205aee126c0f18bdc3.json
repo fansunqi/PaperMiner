@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Long-term series forecasting"
+  ],
+  "datasets": [
+    "7 real-world datasets"
+  ],
+  "methods": [
+    "Dateformer: Time-modeling Transformer"
+  ],
+  "results": [
+    "State-of-the-art accuracy",
+    "33.6% relative improvement",
+    "Maximum forecast range extended to half-year"
+  ],
+  "paper_id": "62ce38205aee126c0f18bdc3",
+  "title": "Dateformer: Time-modeling Transformer for Longer-term Series Forecasting",
+  "abstract": "  Transformers have demonstrated impressive strength in long-term series forecasting.   Existing prediction research mostly focused on mapping past short sub-series (lookback window) to future series (forecast window). The longer training dataset time series will be discarded, once training is completed. Models can merely rely on lookback window information for inference, which impedes models from analyzing time series from a global perspective. And these windows used by Transformers are quite narrow because they must model each time-step therein. Under this point-wise processing style, broadening windows will rapidly exhaust their model capacity. This, for fine-grained time series, leads to a bottleneck in information input and prediction output, which is mortal to long-term series forecasting. To overcome the barrier, we propose a brand-new methodology to utilize Transformer for time series forecasting. Specifically, we split time series into patches by day and reform point-wise to patch-wise processing, which considerably enhances the information input and output of Transformers. To further help models leverage the whole training set's global information during inference, we distill the information, store it in time representations, and replace series with time representations as the main modeling entities. Our designed time-modeling Transformer -- Dateformer yields state-of-the-art accuracy on 7 real-world datasets with a 33.6\\% relative improvement and extends the maximum forecast range to half-year. "
+}

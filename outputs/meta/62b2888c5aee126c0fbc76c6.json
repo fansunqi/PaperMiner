@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tone Mapping"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-stage neural network-based TMO",
+    "Self-calibration mechanism",
+    "Lightweight deep neural networks (DNNs)",
+    "Normalized Laplacian pyramid",
+    "Perceptual metric (NLPD)",
+    "MEF-SSIM"
+  ],
+  "results": [
+    "Consistently better visual quality",
+    "Fastest local TMOs"
+  ],
+  "paper_id": "62b2888c5aee126c0fbc76c6",
+  "title": "A Perceptually Optimized and Self-Calibrated Tone Mapping Operator",
+  "abstract": "  With the increasing popularity and accessibility of high dynamic range (HDR) photography, tone mapping operators (TMOs) for dynamic range compression are practically demanding. In this paper, we develop a two-stage neural network-based TMO that is self-calibrated and perceptually optimized. In Stage one, motivated by the physiology of the early stages of the human visual system, we first decompose an HDR image into a normalized Laplacian pyramid. We then use two lightweight deep neural networks (DNNs), taking the normalized representation as input and estimating the Laplacian pyramid of the corresponding LDR image. We optimize the tone mapping network by minimizing the normalized Laplacian pyramid distance (NLPD), a perceptual metric aligning with human judgments of tone-mapped image quality. In Stage two, the input HDR image is self-calibrated to compute the final LDR image. We feed the same HDR image but rescaled with different maximum luminances to the learned tone mapping network, and generate a pseudo-multi-exposure image stack with different detail visibility and color saturation. We then train another lightweight DNN to fuse the LDR image stack into a desired LDR image by maximizing a variant of the structural similarity index for multi-exposure image fusion (MEF-SSIM), which has been proven perceptually relevant to fused image quality. The proposed self-calibration mechanism through MEF enables our TMO to accept uncalibrated HDR images, while being physiology-driven. Extensive experiments show that our method produces images with consistently better visual quality. Additionally, since our method builds upon three lightweight DNNs, it is among the fastest local TMOs. "
+}

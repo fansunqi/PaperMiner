@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Pose Transfer"
+  ],
+  "datasets": [
+    "human and animal data"
+  ],
+  "methods": [
+    "X-DualNet",
+    "correspondence learning",
+    "pose transfer modules",
+    "optimal transport problem",
+    "elastic instance normalization (ElaIN)",
+    "as-rigid-as-possible deformer"
+  ],
+  "results": [
+    "comparable performance as the state-of-the-art supervised approaches"
+  ],
+  "paper_id": "637aec2190e50fcafd928dc8",
+  "title": "Unsupervised 3D Pose Transfer with Cross Consistency and Dual\n  Reconstruction",
+  "abstract": "  The goal of 3D pose transfer is to transfer the pose from the source mesh to the target mesh while preserving the identity information (e.g., face, body shape) of the target mesh. Deep learning-based methods improved the efficiency and performance of 3D pose transfer. However, most of them are trained under the supervision of the ground truth, whose availability is limited in real-world scenarios. In this work, we present X-DualNet, a simple yet effective approach that enables unsupervised 3D pose transfer. In X-DualNet, we introduce a generator $G$ which contains correspondence learning and pose transfer modules to achieve 3D pose transfer. We learn the shape correspondence by solving an optimal transport problem without any key point annotations and generate high-quality meshes with our elastic instance normalization (ElaIN) in the pose transfer module. With $G$ as the basic component, we propose a cross consistency learning scheme and a dual reconstruction objective to learn the pose transfer without supervision. Besides that, we also adopt an as-rigid-as-possible deformer in the training process to fine-tune the body shape of the generated results. Extensive experiments on human and animal data demonstrate that our framework can successfully achieve comparable performance as the state-of-the-art supervised approaches. "
+}

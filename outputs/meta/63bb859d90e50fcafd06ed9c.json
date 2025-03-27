@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Machine Fault Classification"
+  ],
+  "datasets": [
+    "MaFaulDa"
+  ],
+  "methods": [
+    "Hamiltonian Neural Networks"
+  ],
+  "results": [
+    "AUC: 0.78 (binary classification)",
+    "AUC: 0.84 (multi-class)"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ed9c",
+  "title": "Machine Fault Classification using Hamiltonian Neural Networks",
+  "abstract": "  A new approach is introduced to classify faults in rotating machinery based on the total energy signature estimated from sensor measurements. The overall goal is to go beyond using black-box models and incorporate additional physical constraints that govern the behavior of mechanical systems. Observational data is used to train Hamiltonian neural networks that describe the conserved energy of the system for normal and various abnormal regimes. The estimated total energy function, in the form of the weights of the Hamiltonian neural network, serves as the new feature vector to discriminate between the faults using off-the-shelf classification models. The experimental results are obtained using the MaFaulDa database, where the proposed model yields a promising area under the curve (AUC) of $0.78$ for the binary classification (normal vs abnormal) and $0.84$ for the multi-class problem (normal, and $5$ different abnormal regimes). "
+}

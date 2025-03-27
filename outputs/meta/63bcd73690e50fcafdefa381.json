@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human activity recognition"
+  ],
+  "datasets": [
+    "Seven HAR benchmark datasets"
+  ],
+  "methods": [
+    "Sequence-to-sequence framework",
+    "Learning shared tokens",
+    "OpenAI's ChatGPT for generating shared actions and objects"
+  ],
+  "results": [
+    "State-of-the-art performance",
+    "Better performance in long-tail activity distribution settings",
+    "Better performance in few-shot settings"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa381",
+  "title": "Modeling Label Semantics Improves Activity Recognition",
+  "abstract": "  Human activity recognition (HAR) aims to classify sensory time series into different activities, with wide applications in activity tracking, healthcare, human computer interaction, etc. Existing HAR works improve recognition performance by designing more complicated feature extraction methods, but they neglect the label semantics by simply treating labels as integer IDs. We find that many activities in the current HAR datasets have shared label names, e.g., \"open door\" and \"open fridge\", \"walk upstairs\" and \"walk downstairs\". Through some exploratory analysis, we find that such shared structure in activity names also maps to similarity in the input features. To this end, we design a sequence-to-sequence framework to decode the label name semantics rather than classifying labels as integer IDs. Our proposed method decomposes learning activities into learning shared tokens (\"open\", \"walk\"), which is easier than learning the joint distribution (\"open fridge\", \"walk upstairs\") and helps transfer learning to activities with insufficient data samples. For datasets originally without shared tokens in label names, we also offer an automated method, using OpenAI's ChatGPT, to generate shared actions and objects. Extensive experiments on seven HAR benchmark datasets demonstrate the state-of-the-art performance of our method. We also show better performance in the long-tail activity distribution settings and few-shot settings. "
+}

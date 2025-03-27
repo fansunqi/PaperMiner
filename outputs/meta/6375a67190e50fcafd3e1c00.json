@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Validating Streaming JSON Documents"
+  ],
+  "datasets": [
+    "Random JSON Documents"
+  ],
+  "methods": [
+    "Learning a visibly pushdown automaton (VPA)",
+    "Special kind of graph for transitions",
+    "Efficient streaming algorithm"
+  ],
+  "results": [
+    "Comparison to classical validation algorithm"
+  ],
+  "paper_id": "6375a67190e50fcafd3e1c00",
+  "title": "Validating Streaming JSON Documents with Learned VPAs",
+  "abstract": "  We present a new streaming algorithm to validate JSON documents against a set of constraints given as a JSON schema. Among the possible values a JSON document can hold, objects are unordered collections of key-value pairs while arrays are ordered collections of values. We prove that there always exists a visibly pushdown automaton (VPA) that accepts the same set of JSON documents as a JSON schema. Leveraging this result, our approach relies on learning a VPA for the provided schema. As the learned VPA assumes a fixed order on the key-value pairs of the objects, we abstract its transitions in a special kind of graph, and propose an efficient streaming algorithm using the VPA and its graph to decide whether a JSON document is valid for the schema. We evaluate the implementation of our algorithm on a number of random JSON documents, and compare it to the classical validation algorithm. "
+}

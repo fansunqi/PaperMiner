@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Agent Reinforcement Learning (MARL)"
+  ],
+  "datasets": [
+    "Spread",
+    "StarCraft II"
+  ],
+  "methods": [
+    "TransfQMix",
+    "Transformers",
+    "Graph reasoning",
+    "Monotonic mixing-function"
+  ],
+  "results": [
+    "Outperforms state-of-the-art Q-Learning models",
+    "Effectiveness in solving problems that other methods can not solve"
+  ],
+  "paper_id": "63c4c02990e50fcafdadff5a",
+  "title": "TransfQMix: Transformers for Leveraging the Graph Structure of\n  Multi-Agent Reinforcement Learning Problems",
+  "abstract": "  Coordination is one of the most difficult aspects of multi-agent reinforcement learning (MARL). One reason is that agents normally choose their actions independently of one another. In order to see coordination strategies emerging from the combination of independent policies, the recent research has focused on the use of a centralized function (CF) that learns each agent's contribution to the team reward. However, the structure in which the environment is presented to the agents and to the CF is typically overlooked. We have observed that the features used to describe the coordination problem can be represented as vertex features of a latent graph structure. Here, we present TransfQMix, a new approach that uses transformers to leverage this latent structure and learn better coordination policies. Our transformer agents perform a graph reasoning over the state of the observable entities. Our transformer Q-mixer learns a monotonic mixing-function from a larger graph that includes the internal and external states of the agents. TransfQMix is designed to be entirely transferable, meaning that same parameters can be used to control and train larger or smaller teams of agents. This enables to deploy promising approaches to save training time and derive general policies in MARL, such as transfer learning, zero-shot transfer, and curriculum learning. We report TransfQMix's performances in the Spread and StarCraft II environments. In both settings, it outperforms state-of-the-art Q-Learning models, and it demonstrates effectiveness in solving problems that other methods can not solve. "
+}

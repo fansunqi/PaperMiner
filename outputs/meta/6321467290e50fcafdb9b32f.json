@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Trajectory planning for Differentially Flat Systems",
+    "3D Gantry Crane motion planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sampling-based trajectory planning",
+    "informed RRT* algorithm",
+    "LQTM local planner",
+    "branch-and-bound pruning"
+  ],
+  "results": [
+    "Feasibility of the proposed approach demonstrated by simulation results"
+  ],
+  "paper_id": "6321467290e50fcafdb9b32f",
+  "title": "Sampling-Based Trajectory (re)planning for Differentially Flat Systems:\n  Application to a 3D Gantry Crane",
+  "abstract": "  In this paper, a sampling-based trajectory planning algorithm for a laboratory-scale 3D gantry crane in an environment with static obstacles and subject to bounds on the velocity and acceleration of the gantry crane system is presented. The focus is on developing a fast motion planning algorithm for differentially flat systems, where intermediate results can be stored and reused for further tasks, such as replanning. The proposed approach is based on the informed optimal rapidly exploring random tree algorithm (informed RRT*), which is utilized to build trajectory trees that are reused for replanning when the start and/or target states change. In contrast to state-of-the-art approaches, the proposed motion planning algorithm incorporates a linear quadratic minimum time (LQTM) local planner. Thus, dynamic properties such as time optimality and the smoothness of the trajectory are directly considered in the proposed algorithm. Moreover, by integrating the branch-and-bound method to perform the pruning process on the trajectory tree, the proposed algorithm can eliminate points in the tree that do not contribute to finding better solutions. This helps to curb memory consumption and reduce the computational complexity during motion (re)planning. Simulation results for a validated mathematical model of a 3D gantry crane show the feasibility of the proposed approach. "
+}

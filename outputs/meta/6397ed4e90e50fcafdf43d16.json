@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Bayesian Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributed Stein Variational Gradient Descent (DSVGD)",
+    "Kernelized Stein Discrepancy (KSD)",
+    "Hilbert Inner Product (HIP)"
+  ],
+  "results": [
+    "Improved model convergence and communication efficiency",
+    "Minimized upper bound on the decrease of the global free energy per iteration"
+  ],
+  "paper_id": "6397ed4e90e50fcafdf43d16",
+  "title": "Client Selection for Federated Bayesian Learning",
+  "abstract": "  Distributed Stein Variational Gradient Descent (DSVGD) is a non-parametric distributed learning framework for federated Bayesian learning, where multiple clients jointly train a machine learning model by communicating a number of non-random and interacting particles with the server. Since communication resources are limited, selecting the clients with most informative local learning updates can improve the model convergence and communication efficiency. In this paper, we propose two selection schemes for DSVGD based on Kernelized Stein Discrepancy (KSD) and Hilbert Inner Product (HIP). We derive the upper bound on the decrease of the global free energy per iteration for both schemes, which is then minimized to speed up the model convergence. We evaluate and compare our schemes with conventional schemes in terms of model accuracy, convergence speed, and stability using various learning tasks and datasets. "
+}

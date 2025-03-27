@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generalization Improvement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-Tailed Averaging"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "633269f990e50fcafd490d4d",
+  "title": "Two-Tailed Averaging: Anytime, Adaptive, Once-in-a-While Optimal Weight\n  Averaging for Better Generalization",
+  "abstract": "  Tail Averaging improves on Polyak averaging's non-asymptotic behaviour by excluding a number of leading iterates of stochastic optimization from its calculations. In practice, with a finite number of optimization steps and a learning rate that cannot be annealed to zero, Tail Averaging can get much closer to a local minimum point of the training loss than either the individual iterates or the Polyak average. However, the number of leading iterates to ignore is an important hyperparameter, and starting averaging too early or too late leads to inefficient use of resources or suboptimal solutions. Our work focusses on improving generalization, which makes setting this hyperparameter even more difficult, especially in the presence of other hyperparameters and overfitting. Furthermore, before averaging starts, the loss is only weakly informative of the final performance, which makes early stopping unreliable. To alleviate these problems, we propose an anytime variant of Tail Averaging intended for improving generalization not pure optimization, that has no hyperparameters and approximates the optimal tail at all optimization steps. Our algorithm is based on two running averages with adaptive lengths bounded in terms of the optimal tail length, one of which achieves approximate optimality with some regularity. Requiring only the additional storage for two sets of weights and periodic evaluation of the loss, the proposed Two-Tailed Averaging algorithm is a practical and widely applicable method for improving generalization. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Reconstruction Attack"
+  ],
+  "datasets": [
+    "2010 U.S. decennial Census data",
+    "Census-derived American Community Survey datasets"
+  ],
+  "methods": [
+    "Randomized methods for non-convex optimization"
+  ],
+  "results": [
+    "Significantly outperforms attacks based on public distribution",
+    "Risks in releasing precise aggregate statistics",
+    "Motivation for provably private techniques"
+  ],
+  "paper_id": "6369c8cd90e50fcafde87f5c",
+  "title": "Confidence-Ranked Reconstruction of Census Microdata from Published\n  Statistics",
+  "abstract": "  A reconstruction attack on a private dataset $D$ takes as input some publicly accessible information about the dataset and produces a list of candidate elements of $D$. We introduce a new class of data reconstruction attacks based on randomized methods for non-convex optimization. We empirically demonstrate that our attacks can not only reconstruct full rows of $D$ from aggregate query statistics $Q(D)\\in \\mathbb{R}^m$, but can do so in a way that reliably ranks reconstructed rows by their odds of appearing in the private data, providing a signature that could be used for prioritizing reconstructed rows for further actions such as identify theft or hate crime. We also design a sequence of baselines for evaluating reconstruction attacks. Our attacks significantly outperform those that are based only on access to a public distribution or population from which the private dataset $D$ was sampled, demonstrating that they are exploiting information in the aggregate statistics $Q(D)$, and not simply the overall structure of the distribution. In other words, the queries $Q(D)$ are permitting reconstruction of elements of this dataset, not the distribution from which $D$ was drawn. These findings are established both on 2010 U.S. decennial Census data and queries and Census-derived American Community Survey datasets. Taken together, our methods and experiments illustrate the risks in releasing numerically precise aggregate statistics of a large dataset, and provide further motivation for the careful application of provably private techniques such as differential privacy. "
+}

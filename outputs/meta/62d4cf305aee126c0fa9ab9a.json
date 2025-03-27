@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Floating-point arithmetic",
+    "Randomized smoothing"
+  ],
+  "datasets": [
+    "CIFAR10"
+  ],
+  "methods": [
+    "Sound approach to randomized smoothing"
+  ],
+  "results": [
+    "False certificates for CIFAR10",
+    "Matching certificates of standard, unsound practice"
+  ],
+  "paper_id": "62d4cf305aee126c0fa9ab9a",
+  "title": "Sound Randomized Smoothing in Floating-Point Arithmetics",
+  "abstract": "  Randomized smoothing is sound when using infinite precision. However, we show that randomized smoothing is no longer sound for limited floating-point precision. We present a simple example where randomized smoothing certifies a radius of $1.26$ around a point, even though there is an adversarial example in the distance $0.8$ and extend this example further to provide false certificates for CIFAR10. We discuss the implicit assumptions of randomized smoothing and show that they do not apply to generic image classification models whose smoothed versions are commonly certified. In order to overcome this problem, we propose a sound approach to randomized smoothing when using floating-point precision with essentially equal speed and matching the certificates of the standard, unsound practice for standard classifiers tested so far. Our only assumption is that we have access to a fair coin. "
+}

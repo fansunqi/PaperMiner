@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/weitong8591/differentiable_ransac"
+  ],
+  "tasks": [
+    "fundamental and essential matrix estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized Differentiable RANSAC",
+    "relaxation techniques for estimating gradients",
+    "trainable quality function"
+  ],
+  "results": [
+    "superior to the state-of-the-art in terms of accuracy",
+    "similar speed to less accurate alternatives"
+  ],
+  "paper_id": "63aa623e90e50fcafd978c07",
+  "title": "Generalized Differentiable RANSAC",
+  "abstract": "  We propose $\\nabla$-RANSAC, a generalized differentiable RANSAC that allows learning the entire randomized robust estimation pipeline. The proposed approach enables the use of relaxation techniques for estimating the gradients in the sampling distribution, which are then propagated through a differentiable solver. The trainable quality function marginalizes over the scores from all the models estimated within $\\nabla$-RANSAC to guide the network learning accurate and useful inlier probabilities or to train feature detection and matching networks. Our method directly maximizes the probability of drawing a good hypothesis, allowing us to learn better sampling distribution. We test $\\nabla$-RANSAC on a number of real-world scenarios on fundamental and essential matrix estimation, both outdoors and indoors, with handcrafted and learning-based features. It is superior to the state-of-the-art in terms of accuracy while running at a similar speed to its less accurate alternatives. The code and trained models are available at https://github.com/weitong8591/differentiable_ransac. "
+}

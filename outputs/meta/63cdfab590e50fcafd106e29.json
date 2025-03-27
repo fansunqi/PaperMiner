@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/zixichen007115/Tacchi"
+  ],
+  "tasks": [
+    "Optical Tactile Sensor Simulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Tacchi Simulator",
+    "Particle-based elastomer deformation reconstruction"
+  ],
+  "results": [
+    "Better image similarity to real images",
+    "Higher Sim2Real accuracy compared to existing methods",
+    "1G memory space in GPU compared to a computer cluster for FEM"
+  ],
+  "paper_id": "63cdfab590e50fcafd106e29",
+  "title": "Tacchi: A Pluggable and Low Computational Cost Elastomer Deformation\n  Simulator for Optical Tactile Sensors",
+  "abstract": "  Simulation is widely applied in robotics research to save time and resources. There have been several works to simulate optical tactile sensors that leverage either a smoothing method or Finite Element Method (FEM). However, elastomer deformation physics is not considered in the former method, whereas the latter requires a massive amount of computational resources like a computer cluster. In this work, we propose a pluggable and low computational cost simulator using the Taichi programming language for simulating optical tactile sensors, named as Tacchi . It reconstructs elastomer deformation using particles, which allows deformed elastomer surfaces to be rendered into tactile images and reveals contact information without suffering from high computational costs. Tacchi facilitates creating realistic tactile images in simulation, e.g., ones that capture wear-and-tear defects on object surfaces. In addition, the proposed Tacchi can be integrated with robotics simulators for a robot system simulation. Experiment results showed that Tacchi can produce images with better similarity to real images and achieved higher Sim2Real accuracy compared to the existing methods. Moreover, it can be connected with MuJoCo and Gazebo with only the requirement of 1G memory space in GPU compared to a computer cluster applied for FEM. With Tacchi, physical robot simulation with optical tactile sensors becomes possible. All the materials in this paper are available at https://github.com/zixichen007115/Tacchi . "
+}

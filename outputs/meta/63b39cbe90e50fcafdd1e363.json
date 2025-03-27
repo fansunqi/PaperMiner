@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Variational Autoencoder Training",
+    "Evolutionary Optimization in Deep Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Evolutionary Variational Autoencoder (eVAE)",
+    "Variational Genetic Algorithm",
+    "Variational Mutation, Crossover, and Evolution",
+    "Integrative Evolutionary Neural Learning",
+    "Variational Information Bottleneck (VIB) Theory"
+  ],
+  "results": [
+    "Addresses KL-vanishing problem for text generation",
+    "Generates all disentangled factors with sharp images",
+    "Improves image generation quality",
+    "Achieves better reconstruction loss, disentanglement, and generation-inference balance"
+  ],
+  "paper_id": "63b39cbe90e50fcafdd1e363",
+  "title": "eVAE: Evolutionary Variational Autoencoder",
+  "abstract": "  The surrogate loss of variational autoencoders (VAEs) poses various challenges to their training, inducing the imbalance between task fitting and representation inference. To avert this, the existing strategies for VAEs focus on adjusting the tradeoff by introducing hyperparameters, deriving a tighter bound under some mild assumptions, or decomposing the loss components per certain neural settings. VAEs still suffer from uncertain tradeoff learning.We propose a novel evolutionary variational autoencoder (eVAE) building on the variational information bottleneck (VIB) theory and integrative evolutionary neural learning. eVAE integrates a variational genetic algorithm into VAE with variational evolutionary operators including variational mutation, crossover, and evolution. Its inner-outer-joint training mechanism synergistically and dynamically generates and updates the uncertain tradeoff learning in the evidence lower bound (ELBO) without additional constraints. Apart from learning a lossy compression and representation of data under the VIB assumption, eVAE presents an evolutionary paradigm to tune critical factors of VAEs and deep neural networks and addresses the premature convergence and random search problem by integrating evolutionary optimization into deep learning. Experiments show that eVAE addresses the KL-vanishing problem for text generation with low reconstruction loss, generates all disentangled factors with sharp images, and improves the image generation quality,respectively. eVAE achieves better reconstruction loss, disentanglement, and generation-inference balance than its competitors. "
+}

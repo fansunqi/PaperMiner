@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Single-channel Speech Enhancement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multivariate Gaussian negative log-likelihood (NLL)",
+    "Temporary submodel for covariance prediction",
+    "Uncertainty weighting"
+  ],
+  "results": [
+    "Improved SE performance",
+    "Superior performance compared to MSE, MAE, and SI-SDR"
+  ],
+  "paper_id": "6375a67090e50fcafd3e18b5",
+  "title": "Leveraging Heteroscedastic Uncertainty in Learning Complex Spectral\n  Mapping for Single-channel Speech Enhancement",
+  "abstract": "  Most speech enhancement (SE) models learn a point estimate and do not make use of uncertainty estimation in the learning process. In this paper, we show that modeling heteroscedastic uncertainty by minimizing a multivariate Gaussian negative log-likelihood (NLL) improves SE performance at no extra cost. During training, our approach augments a model learning complex spectral mapping with a temporary submodel to predict the covariance of the enhancement error at each time-frequency bin. Due to unrestricted heteroscedastic uncertainty, the covariance introduces an undersampling effect, detrimental to SE performance. To mitigate undersampling, our approach inflates the uncertainty lower bound and weights each loss component with their uncertainty, effectively compensating severely undersampled components with more penalties. Our multivariate setting reveals common covariance assumptions such as scalar and diagonal matrices. By weakening these assumptions, we show that the NLL achieves superior performance compared to popular loss functions including the mean squared error (MSE), mean absolute error (MAE), and scale-invariant signal-to-distortion ratio (SI-SDR). "
+}

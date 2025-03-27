@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mismatch Localization in Cross-Modal Sequential Data",
+    "Mispronunciations Localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hierarchical Bayesian deep learning model",
+    "Mismatch localization variational autoencoder (ML-VAE)",
+    "Mismatch localization finite-state acceptor (ML-FSA)"
+  ],
+  "results": [
+    "ML-VAE successfully locates the mismatch between text and speech",
+    "Without the need for human annotations for model training"
+  ],
+  "paper_id": "627483fc5aee126c0f07e485",
+  "title": "Unsupervised Mismatch Localization in Cross-Modal Sequential Data with\n  Application to Mispronunciations Localization",
+  "abstract": "  Content mismatch usually occurs when data from one modality is translated to another, e.g. language learners producing mispronunciations (errors in speech) when reading a sentence (target text) aloud. However, most existing alignment algorithms assume that the content involved in the two modalities is perfectly matched, thus leading to difficulty in locating such mismatch between speech and text. In this work, we develop an unsupervised learning algorithm that can infer the relationship between content-mismatched cross-modal sequential data, especially for speech-text sequences. More specifically, we propose a hierarchical Bayesian deep learning model, dubbed mismatch localization variational autoencoder (ML-VAE), which decomposes the generative process of the speech into hierarchically structured latent variables, indicating the relationship between the two modalities. Training such a model is very challenging due to the discrete latent variables with complex dependencies involved. To address this challenge, we propose a novel and effective training procedure that alternates between estimating the hard assignments of the discrete latent variables over a specifically designed mismatch localization finite-state acceptor (ML-FSA) and updating the parameters of neural networks. In this work, we focus on the mismatch localization problem for speech and text, and our experimental results show that ML-VAE successfully locates the mismatch between text and speech, without the need for human annotations for model training. "
+}

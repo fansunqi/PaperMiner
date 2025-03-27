@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Source-free domain adaptation"
+  ],
+  "datasets": [
+    "Office-31",
+    "Office-Home",
+    "VisDA"
+  ],
+  "methods": [
+    "Chaos to Order (CtO)"
+  ],
+  "results": [
+    "Outperforms state of the arts on Office-31, Office-Home, and VisDA"
+  ],
+  "paper_id": "63cdfab690e50fcafd106ece",
+  "title": "Chaos to Order: A Label Propagation Perspective on Source-Free Domain\n  Adaptation",
+  "abstract": "  Source-free domain adaptation (SFDA), where only a pre-trained source model is used to adapt to the target distribution, is a more general approach to achieving domain adaptation in the real world. However, it can be challenging to capture the inherent structure of the target features accurately due to the lack of supervised information on the target domain. By analyzing the clustering performance of the target features, we show that they still contain core features related to discriminative attributes but lack the collation of semantic information. Inspired by this insight, we present Chaos to Order (CtO), a novel approach for SFDA that strives to constrain semantic credibility and propagate label information among target subpopulations. CtO divides the target data into inner and outlier samples based on the adaptive threshold of the learning state, customizing the learning strategy to fit the data properties best. Specifically, inner samples are utilized for learning intra-class structure thanks to their relatively well-clustered properties. The low-density outlier samples are regularized by input consistency to achieve high accuracy with respect to the ground truth labels. In CtO, by employing different learning strategies to propagate the labels from the inner local to outlier instances, it clusters the global samples from chaos to order. We further adaptively regulate the neighborhood affinity of the inner samples to constrain the local semantic credibility. In theoretical and empirical analyses, we demonstrate that our algorithm not only propagates from inner to outlier but also prevents local clustering from forming spurious clusters. Empirical evidence demonstrates that CtO outperforms the state of the arts on three public benchmarks: Office-31, Office-Home, and VisDA. "
+}

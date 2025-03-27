@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://16lemoing.github.io/waldo"
+  ],
+  "tasks": [
+    "Future Video Synthesis"
+  ],
+  "datasets": [
+    "Cityscapes",
+    "KITTI",
+    "UCF-Sports",
+    "H3.6M"
+  ],
+  "methods": [
+    "Object Layer Decomposition",
+    "Parametric Flow Prediction"
+  ],
+  "results": [
+    "Significantly outperforms state of the art"
+  ],
+  "paper_id": "6384271490e50fcafdec0361",
+  "title": "WALDO: Future Video Synthesis using Object Layer Decomposition and\n  Parametric Flow Prediction",
+  "abstract": "  This paper presents WALDO (WArping Layer-Decomposed Objects), a novel approach to the prediction of future video frames from past ones. Individual images are decomposed into multiple layers combining object masks and a small set of control points. The layer structure is shared across all frames in each video to build dense inter-frame connections. Complex scene motions are modeled by combining parametric geometric transformations associated with individual layers, and video synthesis is broken down into discovering the layers associated with past frames, predicting the corresponding transformations for upcoming ones and warping the associated object regions accordingly, and filling in the remaining image parts. Extensive experiments on multiple benchmarks including urban videos (Cityscapes and KITTI) and videos featuring nonrigid motions (UCF-Sports and H3.6M), show that our method consistently outperforms the state of the art by a significant margin in every case. Code, pretrained models, and video samples synthesized by our approach can be found in the project webpage https://16lemoing.github.io/waldo. "
+}

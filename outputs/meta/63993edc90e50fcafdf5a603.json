@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Number Parsing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fast Algorithm for Number Parsing"
+  ],
+  "results": [
+    "Fallback function is unnecessary",
+    "Algorithm simplification and implementation improvement"
+  ],
+  "paper_id": "63993edc90e50fcafdf5a603",
+  "title": "Fast Number Parsing Without Fallback",
+  "abstract": "  In recent work, Lemire (2021) presented a fast algorithm to convert number strings into binary floating-point numbers. The algorithm has been adopted by several important systems: e.g., it is part of the runtime libraries of GCC 12, Rust 1.55, and Go 1.16. The algorithm parses any number string with a significand containing no more than 19 digits into an IEEE floating-point number. However, there is a check leading to a fallback function to ensure correctness. This fallback function is never called in practice. We prove that the fallback is unnecessary. Thus we can slightly simplify the algorithm and its implementation. "
+}

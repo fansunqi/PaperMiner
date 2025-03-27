@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Discrete Determinantal Point Processes sampling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Rejection sampling",
+    "Leverage score i.i.d. sampling"
+  ],
+  "results": [
+    "Sampling cost reduced to O(nm + m^3 log m)",
+    "Additional samples drawn in time O(m^3 log m)",
+    "Realisation typically contained in a subset of size O(m log m)"
+  ],
+  "paper_id": "63608e5690e50fcafdee1954",
+  "title": "A Faster Sampler for Discrete Determinantal Point Processes",
+  "abstract": "  Discrete Determinantal Point Processes (DPPs) have a wide array of potential applications for subsampling datasets. They are however held back in some cases by the high cost of sampling. In the worst-case scenario, the sampling cost scales as O(n^3) where n is the number of elements of the ground set. A popular workaround to this prohibitive cost is to sample DPPs defined by low-rank kernels. In such cases, the cost of standard sampling algorithms scales as O(np^2 + nm^2) where m is the (average) number of samples of the DPP (usually m << n) and p the rank of the kernel used to define the DPP (m \\leq p \\leq n). The first term, O(np^2), comes from a SVD-like step. We focus here on the second term of this cost, O(nm^2), and show that it can be brought down to O(nm + m^3 log m) without loss on the sampling's exactness. In practice, we observe very substantial speedups compared to the classical algorithm as soon as n > 1000. The algorithm described here is a close variant of the standard algorithm for sampling continuous DPPs, and uses rejection sampling. In the specific case of projection DPPs, we also show that any additional sample can be drawn in time O(m^3 log m). Finally, an interesting by-product of the analysis is that a realisation from a DPP is typically contained in a subset of size O(m log m) formed using leverage score i.i.d. sampling. "
+}

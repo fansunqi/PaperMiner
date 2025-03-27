@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-Level Synthesis on Multi-Die FPGAs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FADO framework",
+    "Latency-bottleneck-guided greedy algorithm",
+    "Incremental floorplan legalization algorithm",
+    "Worst-fit online bin-packing algorithm",
+    "Offline best-fit-decreasing re-packing"
+  ],
+  "results": [
+    "693X~4925X shorter runtime compared with DSE",
+    "1.16X~8.78X improvement in overall workflow execution time"
+  ],
+  "paper_id": "63a51c5d90e50fcafde93c40",
+  "title": "FADO: Floorplan-Aware Directive Optimization for High-Level Synthesis\n  Designs on Multi-Die FPGAs",
+  "abstract": "  Multi-die FPGAs are widely adopted to deploy large hardware accelerators. Two factors impede the performance optimization of HLS designs implemented on multi-die FPGAs. On the one hand, the long net delay due to nets crossing die-boundaries results in an NP-hard problem to properly floorplan and pipeline an application. On the other hand, traditional automated searching flow for HLS directive optimizations targets single-die FPGAs, and hence, it cannot consider the resource constraints on each die and the timing issue incurred by the die-crossings. Further, it leads to an excessively long runtime to legalize the floorplan of HLS designs generated under each group of configurations during directive optimization due to the large design scale.   To co-optimize the directives and floorplan of HLS designs on multi-die FPGAs, we propose the FADO framework, which formulates the directive-floorplan co-search problem based on the multi-choice multi-dimensional bin-packing and solves it using an iterative optimization flow. For each step of directive search, a latency-bottleneck-guided greedy algorithm searches for more efficient directive configurations. For floorplanning, instead of repetitively incurring global floorplanning algorithms, we implement a more efficient incremental floorplan legalization algorithm. It mainly applies the worst-fit online bin-packing algorithm to balance the floorplan, together with an offline best-fit-decreasing re-packing to compact the floorplan, followed by pipelining of long wires crossing die-boundaries.   Through experiments on HLS designs mixing dataflow and non-dataflow kernels, FADO not only well-automates the co-optimization and finishes within 693X~4925X shorter runtime, compared with DSE assisted by global floorplanning, but also yields an improvement of 1.16X~8.78X in overall workflow execution time after implementation on the Xilinx Alveo U250 FPGA. "
+}

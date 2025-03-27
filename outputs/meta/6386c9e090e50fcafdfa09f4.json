@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reliability Assessment Commitment Optimization"
+  ],
+  "datasets": [
+    "Midcontinent Independent System Operator (MISO)",
+    "Actual transmission network"
+  ],
+  "methods": [
+    "Graph Neural Network (GNN) based architecture",
+    "Confidence value association",
+    "Subset selection for high-confidence predictions",
+    "Feasibility repair",
+    "State-of-the-art optimization algorithm seeding"
+  ],
+  "results": [
+    "RACLearn speeds up RAC optimization by factors ranging from 2 to 4",
+    "Negligible loss in solution quality"
+  ],
+  "paper_id": "6386c9e090e50fcafdfa09f4",
+  "title": "Confidence-Aware Graph Neural Networks for Learning Reliability\n  Assessment Commitments",
+  "abstract": "  Reliability Assessment Commitment (RAC) Optimization is increasingly important in grid operations due to larger shares of renewable generations in the generation mix and increased prediction errors. Independent System Operators (ISOs) also aim at using finer time granularities, longer time horizons, and possibly stochastic formulations for additional economic and reliability benefits. The goal of this paper is to address the computational challenges arising in extending the scope of RAC formulations. It presents RACLearn that (1) uses a Graph Neural Network (GNN) based architecture to predict generator commitments and active line constraints, (2) associates a confidence value to each commitment prediction, (3) selects a subset of the high-confidence predictions, which are (4) repaired for feasibility, and (5) seeds a state-of-the-art optimization algorithm with feasible predictions and active constraints. Experimental results on exact RAC formulations used by the Midcontinent Independent System Operator (MISO) and an actual transmission network (8965 transmission lines, 6708 buses, 1890 generators, and 6262 load units) show that the RACLearn framework can speed up RAC optimization by factors ranging from 2 to 4 with negligible loss in solution quality. "
+}

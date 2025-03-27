@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/huangdonghere/UDBGL"
+  ],
+  "tasks": [
+    "Multi-view Clustering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unified and Discrete Bipartite Graph Learning (UDBGL)",
+    "Anchor-based subspace learning",
+    "Bipartite graph fusion",
+    "Laplacian rank constraint"
+  ],
+  "results": [
+    "Efficient minimization algorithm",
+    "Linear time complexity in data size"
+  ],
+  "paper_id": "631ea32a90e50fcafd259247",
+  "title": "Efficient Multi-view Clustering via Unified and Discrete Bipartite Graph\n  Learning",
+  "abstract": "  Although previous graph-based multi-view clustering algorithms have gained significant progress, most of them are still faced with three limitations. First, they often suffer from high computational complexity, which restricts their applications in large-scale scenarios. Second, they usually perform graph learning either at the single-view level or at the view-consensus level, but often neglect the possibility of the joint learning of single-view and consensus graphs. Third, many of them rely on the k-means for discretization of the spectral embeddings, which lack the ability to directly learn the graph with discrete cluster structure. In light of this, this paper presents an efficient multi-view clustering approach via unified and discrete bipartite graph learning (UDBGL). Specifically, the anchor-based subspace learning is incorporated to learn the view-specific bipartite graphs from multiple views, upon which the bipartite graph fusion is leveraged to learn a view-consensus bipartite graph with adaptive weight learning. Further, the Laplacian rank constraint is imposed to ensure that the fused bipartite graph has discrete cluster structures (with a specific number of connected components). By simultaneously formulating the view-specific bipartite graph learning, the view-consensus bipartite graph learning, and the discrete cluster structure learning into a unified objective function, an efficient minimization algorithm is then designed to tackle this optimization problem and directly achieve a discrete clustering solution without requiring additional partitioning, which notably has linear time complexity in data size. Experiments on a variety of multi-view datasets demonstrate the robustness and efficiency of our UDBGL approach. The code is available at https://github.com/huangdonghere/UDBGL. "
+}

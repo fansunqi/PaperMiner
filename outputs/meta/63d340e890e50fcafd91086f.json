@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generalized Object Search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Partially Observable Markov Decision Processes (POMDPs)",
+    "octrees",
+    "correlations",
+    "spatial language"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63d340e890e50fcafd91086f",
+  "title": "Generalized Object Search",
+  "abstract": "  Future collaborative robots must be capable of finding objects. As such a fundamental skill, we expect object search to eventually become an off-the-shelf capability for any robot, similar to e.g., object detection, SLAM, and motion planning. However, existing approaches either make unrealistic compromises (e.g., reduce the problem from 3D to 2D), resort to ad-hoc, greedy search strategies, or attempt to learn end-to-end policies in simulation that are yet to generalize across real robots and environments. This thesis argues that through using Partially Observable Markov Decision Processes (POMDPs) to model object search while exploiting structures in the human world (e.g., octrees, correlations) and in human-robot interaction (e.g., spatial language), a practical and effective system for generalized object search can be achieved. In support of this argument, I develop methods and systems for (multi-)object search in 3D environments under uncertainty due to limited field of view, occlusion, noisy, unreliable detectors, spatial correlations between objects, and possibly ambiguous spatial language (e.g., \"The red car is behind Chase Bank\"). Besides evaluation in simulators such as PyGame, AirSim, and AI2-THOR, I design and implement a robot-independent, environment-agnostic system for generalized object search in 3D and deploy it on the Boston Dynamics Spot robot, the Kinova MOVO robot, and the Universal Robots UR5e robotic arm, to perform object search in different environments. The system enables, for example, a Spot robot to find a toy cat hidden underneath a couch in a kitchen area in under one minute. This thesis also broadly surveys the object search literature, proposing taxonomies in object search problem settings, methods and systems. "
+}

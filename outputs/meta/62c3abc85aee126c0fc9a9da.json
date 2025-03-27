@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Implementing SWMR registers from SWSR registers in systems with Byzantine failures"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proving impossibility results",
+    "Two implementations of a 1-writer n-reader register",
+    "Assumption of process signatures"
+  ],
+  "results": [
+    "No wait-free linearizable implementation without signatures",
+    "Two implementations with different assumptions",
+    "Bounded wait-free and linearizable under process signatures",
+    "Impossibility to guarantee bounded steps for correct readers without signatures"
+  ],
+  "paper_id": "62c3abc85aee126c0fc9a9da",
+  "title": "On implementing SWMR registers from SWSR registers in systems with\n  Byzantine failures",
+  "abstract": "  The implementation of registers from (potentially) weaker registers is a classical problem in the theory of distributed computing. Since Lamport's pioneering work [13], this problem has been extensively studied in the context of asynchronous processes with crash failures. In this paper, we investigate this problem in the context of Byzantine process failures, with and without process signatures.   We first prove that, without signatures, there is no wait-free linearizable implementation of a 1-writer n-reader register from atomic 1-writer 1-reader registers. In fact, we show a stronger result, namely, even under the assumption that the writer can only crash and at most one reader can be malicious, there is no linearizable implementation of a 1-writer n-reader register from atomic 1-writer (n-1)-reader registers that ensures that every correct process eventually completes its operations. In light of this impossibility result, we give two implementations of a 1-writer n-reader register from atomic 1-writer 1-reader registers that work under different assumptions. The first implementation is linearizable (under any combination of process failures), but it guarantees that every correct process eventually completes its operations only under the assumption that the writer is correct or no reader is malicious -- thus matching the impossibility result. The second implementation assumes process signatures; it is bounded wait-free and linearizable under any combination of process failures. Finally, we show that without process signatures, even if we assume that the writer is correct and at most one of the readers can be malicious, it is impossible to guarantee that every correct reader completes each read operation in a bounded number of steps. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fair resource allocation",
+    "Network utility maximization with unknown utility functions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributed, data-driven bilevel optimization approach",
+    "Concave surrogate utility functions",
+    "Data-driven learning algorithm"
+  ],
+  "results": [
+    "Nonasymptotic convergence rate with nonconcave utility functions",
+    "Great effectiveness in a real-world network"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ed87",
+  "title": "Network Utility Maximization with Unknown Utility Functions: A\n  Distributed, Data-Driven Bilevel Optimization Approach",
+  "abstract": "  Fair resource allocation is one of the most important topics in communication networks. Existing solutions almost exclusively assume each user utility function is known and concave. This paper seeks to answer the following question: how to allocate resources when utility functions are unknown, even to the users? This answer has become increasingly important in the next-generation AI-aware communication networks where the user utilities are complex and their closed-forms are hard to obtain. In this paper, we provide a new solution using a distributed and data-driven bilevel optimization approach, where the lower level is a distributed network utility maximization (NUM) algorithm with concave surrogate utility functions, and the upper level is a data-driven learning algorithm to find the best surrogate utility functions that maximize the sum of true network utility. The proposed algorithm learns from data samples (utility values or gradient values) to autotune the surrogate utility functions to maximize the true network utility, so works for unknown utility functions. For the general network, we establish the nonasymptotic convergence rate of the proposed algorithm with nonconcave utility functions. The simulations validate our theoretical results and demonstrate the great effectiveness of the proposed method in a real-world network. "
+}

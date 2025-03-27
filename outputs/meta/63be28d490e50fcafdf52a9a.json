@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Threshold Synthesis Problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Smaus' algorithm",
+    "Linear programming"
+  ],
+  "results": [
+    "Smaus' algorithm is incomplete"
+  ],
+  "paper_id": "63be28d490e50fcafdf52a9a",
+  "title": "Implementations of two Algorithms for the Threshold Synthesis Problem",
+  "abstract": "  A linear pseudo-Boolean constraint (LPB) is an expression of the form $a_1 \\cdot \\ell_1 + \\dots + a_m \\cdot \\ell_m \\geq d$, where each $\\ell_i$ is a literal (it assumes the value 1 or 0 depending on whether a propositional variable $x_i$ is true or false) and $a_1, \\dots, a_m, d$ are natural numbers. An LPB represents a Boolean function, and those Boolean functions that can be represented by exactly one LPB are called threshold functions. The problem of finding an LPB representation of a Boolean function if possible is called threshold recognition problem or threshold synthesis problem. The problem has an $O(m^7 t^5)$ algorithm using linear programming, where $m$ is the dimension and $t$ the number of terms in the DNF input. It has been an open question whether one can recognise threshold functions through an entirely combinatorial procedure. Smaus has developed such a procedure for doing this, which works by decomposing the DNF and \"counting\" the variable occurrences in it. We have implemented both algorithms as a thesis project. We report here on this experience. The most important insight was that the algorithm by Smaus is, unfortunately, incomplete. "
+}

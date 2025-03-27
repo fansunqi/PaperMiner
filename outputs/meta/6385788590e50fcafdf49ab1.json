@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Joint Intent Classification",
+    "SlotFilling"
+  ],
+  "datasets": [
+    "Airline Travel Information Systems (ATIS)"
+  ],
+  "methods": [
+    "ESIE-BERT",
+    "sub-words attention adapter (SAA)",
+    "intent attention adapter (IAA)"
+  ],
+  "results": [
+    "Slot filling F1 score improved from 96.1 to 98.2 (2.1% absolute) on ATIS"
+  ],
+  "paper_id": "6385788590e50fcafdf49ab1",
+  "title": "ESIE-BERT: Enriching Sub-words Information Explicitly with BERT for\n  Joint Intent Classification and SlotFilling",
+  "abstract": "  Natural language understanding (NLU) has two core tasks: intent classification and slot filling. The success of pre-training language models resulted in a significant breakthrough in the two tasks. One of the promising solutions called BERT can jointly optimize the two tasks. We note that BERT-based models convert each complex token into multiple sub-tokens by wordpiece algorithm, which generates a mismatch between the lengths of the tokens and the labels. This leads to BERT-based models do not do well in label prediction which limits model performance improvement. Many existing models can be compatible with this issue but some hidden semantic information is discarded in the fine-tuning process. We address the problem by introducing a novel joint method on top of BERT which explicitly models the multiple sub-tokens features after wordpiece tokenization, thereby contributing to the two tasks. Our method can well extract the contextual features from complex tokens by the proposed sub-words attention adapter (SAA), which preserves overall utterance information. Additionally, we propose an intent attention adapter (IAA) to obtain the full sentence features to aid users to predict intent. Experimental results confirm that our proposed model is significantly improved on two public benchmark datasets. In particular, the slot filling F1 score is improved from 96.1 to 98.2 (2.1% absolute) on the Airline Travel Information Systems (ATIS) dataset. "
+}

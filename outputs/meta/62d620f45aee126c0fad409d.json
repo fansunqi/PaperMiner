@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Function-as-a-Service (FaaS) cold-start latency optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FaaSLight: application-level optimization, function-level call graph construction, code separation"
+  ],
+  "results": [
+    "Code loading latency reduced up to 78.95%, average 28.78%",
+    "Total response latency reduced up to 42.05%, average 19.21%",
+    "21.25X improvement in average total response latency compared to state-of-the-art"
+  ],
+  "paper_id": "62d620f45aee126c0fad409d",
+  "title": "FaaSLight: General Application-Level Cold-Start Latency Optimization for\n  Function-as-a-Service in Serverless Computing",
+  "abstract": "  Serverless computing is a popular cloud computing paradigm that frees developers from server management. Function-as-a-Service (FaaS) is the most popular implementation of serverless computing, representing applications as event-driven and stateless functions. However, existing studies report that functions of FaaS applications severely suffer from cold-start latency. In this paper, we propose an approach namely FaaSLight to accelerating the cold start for FaaS applications through application-level optimization. We first conduct a measurement study to investigate the possible root cause of the cold start problem of FaaS. The result shows that application code loading latency is a significant overhead. Therefore, loading only indispensable code from FaaS applications can be an adequate solution. Based on this insight, we identify code related to application functionalities by constructing the function-level call graph, and separate other code (i.e., optional code) from FaaS applications. The separated optional code can be loaded on demand to avoid the inaccurate identification of indispensable code causing application failure. In particular, a key principle guiding the design of FaaSLight is inherently general, i.e., platform- and language-agnostic. The evaluation results on real-world FaaS applications show that FaaSLight can significantly reduce the code loading latency (up to 78.95%, 28.78% on average), thereby reducing the cold-start latency. As a result, the total response latency of functions can be decreased by up to 42.05% (19.21% on average). Compared with the state-of-the-art, FaaSLight achieves a 21.25X improvement in reducing the average total response latency. "
+}

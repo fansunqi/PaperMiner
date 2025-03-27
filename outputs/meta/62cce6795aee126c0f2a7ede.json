@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Audio-visual target speech extraction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dual-Path Cross-Modal Attention",
+    "self-attention with visual features",
+    "DPRNN"
+  ],
+  "results": [
+    "Superior results compared with other time-domain based audio-visual fusion models"
+  ],
+  "paper_id": "62cce6795aee126c0f2a7ede",
+  "title": "Dual-Path Cross-Modal Attention for better Audio-Visual Speech\n  Extraction",
+  "abstract": "  Audio-visual target speech extraction, which aims to extract a certain speaker's speech from the noisy mixture by looking at lip movements, has made significant progress combining time-domain speech separation models and visual feature extractors (CNN). One problem of fusing audio and video information is that they have different time resolutions. Most current research upsamples the visual features along the time dimension so that audio and video features are able to align in time. However, we believe that lip movement should mostly contain long-term, or phone-level information. Based on this assumption, we propose a new way to fuse audio-visual features. We observe that for DPRNN \\cite{dprnn}, the interchunk dimension's time resolution could be very close to the time resolution of video frames. Like \\cite{sepformer}, the LSTM in DPRNN is replaced by intra-chunk and inter-chunk self-attention, but in the proposed algorithm, inter-chunk attention incorporates the visual features as an additional feature stream. This prevents the upsampling of visual cues, resulting in more efficient audio-visual fusion. The result shows we achieve superior results compared with other time-domain based audio-visual fusion models. "
+}

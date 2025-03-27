@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Crowd Counting"
+  ],
+  "datasets": [
+    "UCF-QNRF",
+    "UCF CC 50",
+    "NWPU",
+    "ShanghaiTech A-B"
+  ],
+  "methods": [
+    "Synthetic Fusion Pyramid Network (SPF-Net)",
+    "scale-aware loss function"
+  ],
+  "results": [
+    "Outperforms various loss functions",
+    "Accurately predicts the locations of people in the crowd"
+  ],
+  "paper_id": "6373035b90e50fcafd09fd08",
+  "title": "Scale-Aware Crowd Counting Using a Joint Likelihood Density Map and\n  Synthetic Fusion Pyramid Network",
+  "abstract": "  We develop a Synthetic Fusion Pyramid Network (SPF-Net) with a scale-aware loss function design for accurate crowd counting. Existing crowd-counting methods assume that the training annotation points were accurate and thus ignore the fact that noisy annotations can lead to large model-learning bias and counting error, especially for counting highly dense crowds that appear far away. To the best of our knowledge, this work is the first to properly handle such noise at multiple scales in end-to-end loss design and thus push the crowd counting state-of-the-art. We model the noise of crowd annotation points as a Gaussian and derive the crowd probability density map from the input image. We then approximate the joint distribution of crowd density maps with the full covariance of multiple scales and derive a low-rank approximation for tractability and efficient implementation. The derived scale-aware loss function is used to train the SPF-Net. We show that it outperforms various loss functions on four public datasets: UCF-QNRF, UCF CC 50, NWPU and ShanghaiTech A-B datasets. The proposed SPF-Net can accurately predict the locations of people in the crowd, despite training on noisy training annotations. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/hzli-ucas/StarGraph"
+  ],
+  "tasks": [
+    "Knowledge Representation Learning"
+  ],
+  "datasets": [
+    "ogbl-wikikg2",
+    "fb15k-237"
+  ],
+  "methods": [
+    "Modified self-attention network"
+  ],
+  "results": [
+    "SOTA performance on ogbl-wikikg2",
+    "Competitive results on fb15k-237"
+  ],
+  "paper_id": "6295873d5aee126c0fe142a1",
+  "title": "StarGraph: Knowledge Representation Learning based on Incomplete Two-hop\n  Subgraph",
+  "abstract": "  Conventional representation learning algorithms for knowledge graphs (KG) map each entity to a unique embedding vector, ignoring the rich information contained in the neighborhood. We propose a method named StarGraph, which gives a novel way to utilize the neighborhood information for large-scale knowledge graphs to obtain entity representations. An incomplete two-hop neighborhood subgraph for each target node is at first generated, then processed by a modified self-attention network to obtain the entity representation, which is used to replace the entity embedding in conventional methods. We achieved SOTA performance on ogbl-wikikg2 and got competitive results on fb15k-237. The experimental results proves that StarGraph is efficient in parameters, and the improvement made on ogbl-wikikg2 demonstrates its great effectiveness of representation learning on large-scale knowledge graphs. The code is now available at \\url{https://github.com/hzli-ucas/StarGraph}. "
+}

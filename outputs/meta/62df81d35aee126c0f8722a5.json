@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian inference for high-dimensional inverse problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Amortized variational inference",
+    "Conditional normalizing flow",
+    "Physics-based latent distribution correction"
+  ],
+  "results": [
+    "Improved robustness of amortized variational inference",
+    "Seismic image with limited artifacts",
+    "Assessment of uncertainty at similar cost to five reverse-time migrations"
+  ],
+  "paper_id": "62df81d35aee126c0f8722a5",
+  "title": "Reliable amortized variational inference with physics-based latent\n  distribution correction",
+  "abstract": "  Bayesian inference for high-dimensional inverse problems is computationally costly and requires selecting a suitable prior distribution. Amortized variational inference addresses these challenges via a neural network that approximates the posterior distribution not only for one instance of data, but a distribution of data pertaining to a specific inverse problem. During inference, the neural network -- in our case a conditional normalizing flow -- provides posterior samples at virtually no cost. However, the accuracy of amortized variational inference relies on the availability of high-fidelity training data, which seldom exists in geophysical inverse problems due to the Earth's heterogeneity. In addition, the network is prone to errors if evaluated over out-of-distribution data. As such, we propose to increase the resilience of amortized variational inference in the presence of moderate data distribution shifts. We achieve this via a correction to the latent distribution that improves the posterior distribution approximation for the data at hand. The correction involves relaxing the standard Gaussian assumption on the latent distribution and parameterizing it via a Gaussian distribution with an unknown mean and (diagonal) covariance. These unknowns are then estimated by minimizing the Kullback-Leibler divergence between the corrected and the (physics-based) true posterior distributions. While generic and applicable to other inverse problems, by means of a linearized seismic imaging example, we show that our correction step improves the robustness of amortized variational inference with respect to changes in the number of seismic sources, noise variance, and shifts in the prior distribution. This approach provides a seismic image with limited artifacts and an assessment of its uncertainty at approximately the same cost as five reverse-time migrations. "
+}

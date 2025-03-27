@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finite strain porohyperelasticity"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Arbitrary Lagrangian-Eulerian (ALE) technique",
+    "asymptotic homogenisation technique",
+    "Artificial Neural Network (ANN)"
+  ],
+  "results": [
+    "Accurately solving finite strain (multiscale) porohyperelastic problems",
+    "Real-time output density check for training dataset",
+    "Microscale (RVE) sensitivity analysis",
+    "Multiscale confined consolidation simulation"
+  ],
+  "paper_id": "62d0db105aee126c0f9ef86b",
+  "title": "Finite strain porohyperelasticity: An asymptotic multiscale ALE-FSI\n  approach supported by ANNs",
+  "abstract": "  The governing equations and numerical solution strategy to solve porohyperelastic problems as multiscale multiphysics media are provided in this contribution. The problem starts from formulating and non-dimensionalising a Fluid-Solid Interaction (FSI) problem using Arbitrary Lagrangian-Eulerian (ALE) technique at the pore level. The resultant ALE-FSI coupled systems of PDEs are expanded and analysed using the asymptotic homogenisation technique which yields three partially novel systems of PDEs, one governing the macroscopic/effective problem supplied by two microscale problems (fluid and solid). The latter two provide the microscopic response fields whose average value is required in real-time/online form to determine the macroscale response. This is possible efficiently by training an Artificial Neural Network (ANN) as a surrogate for the Direct Numerical Solution (DNS) of the microscale solid problem. The present methodology allows for solving finite strain (multiscale) porohyperelastic problems accurately using the direct derivative of the strain energy, for the first time. Furthermore, a simple real-time output density check is introduced to achieve an optimal and reliable training dataset from DNS. A Representative Volume Element (RVE) is adopted which is followed by performing a microscale (RVE) sensitivity analysis and a multiscale confined consolidation simulation showing the importance of employing the present method when dealing with finite strain poroelastic/porohyperelastic problems. "
+}

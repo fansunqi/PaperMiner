@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Route choice modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep inverse reinforcement learning (IRL)",
+    "Adversarial IRL model"
+  ],
+  "results": [
+    "Superior prediction performance over conventional DCMs and other imitation learning baselines",
+    "Competitive computational efficiency and reasonable interpretability"
+  ],
+  "paper_id": "62b3da1e5aee126c0fb1b02a",
+  "title": "A deep inverse reinforcement learning approach to route choice modeling\n  with context-dependent rewards",
+  "abstract": "  Route choice modeling is a fundamental task in transportation planning and demand forecasting. Classical methods generally adopt the discrete choice model (DCM) framework with linear utility functions and high-level route characteristics. While several recent studies have started to explore the applicability of deep learning for route choice modeling, they are limited to path-based models with relatively simple model architectures and relying on predefined choice sets. Existing link-based models can capture the dynamic nature of link choices within the trip without the need for choice set generation, but still assume linear relationships and link-additive features. To address these issues, this study proposes a general deep inverse reinforcement learning (IRL) framework for link-based route choice modeling, which is capable of incorporating diverse features (of the state, action and trip context) and capturing complex relationships. Specifically, we adapt an adversarial IRL model to the route choice problem for efficient estimation of context-dependent reward functions without value iteration. Experiment results based on taxi GPS data from Shanghai, China validate the superior prediction performance of the proposed model over conventional DCMs and other imitation learning baselines, even for destinations unseen in the training data. Further analysis show that the model exhibits competitive computational efficiency and reasonable interpretability. The proposed methodology provides a new direction for future development of route choice models. It is general and can be adaptable to other route choice problems across different modes and networks. "
+}

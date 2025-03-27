@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/ZhengPeng7/GCoNet_plus"
+  ],
+  "tasks": [
+    "Co-salient object detection"
+  ],
+  "datasets": [
+    "CoCA",
+    "CoSOD3k",
+    "CoSal2015"
+  ],
+  "methods": [
+    "GCoNet+",
+    "group affinity module (GAM)",
+    "group collaborating module (GCM)",
+    "recurrent auxiliary classification module (RACM)",
+    "confidence enhancement module (CEM)",
+    "group-based symmetric triplet (GST) loss"
+  ],
+  "results": [
+    "Outperforms existing 12 cutting-edge models"
+  ],
+  "paper_id": "6296d90e5aee126c0f730b55",
+  "title": "GCoNet+: A Stronger Group Collaborative Co-Salient Object Detector",
+  "abstract": "  In this paper, we present a novel end-to-end group collaborative learning network, termed GCoNet+, which can effectively and efficiently (250 fps) identify co-salient objects in natural scenes. The proposed GCoNet+ achieves the new state-of-the-art performance for co-salient object detection (CoSOD) through mining consensus representations based on the following two essential criteria: 1) intra-group compactness to better formulate the consistency among co-salient objects by capturing their inherent shared attributes using our novel group affinity module (GAM); 2) inter-group separability to effectively suppress the influence of noisy objects on the output by introducing our new group collaborating module (GCM) conditioning on the inconsistent consensus. To further improve the accuracy, we design a series of simple yet effective components as follows: i) a recurrent auxiliary classification module (RACM) promoting model learning at the semantic level; ii) a confidence enhancement module (CEM) assisting the model in improving the quality of the final predictions; and iii) a group-based symmetric triplet (GST) loss guiding the model to learn more discriminative features. Extensive experiments on three challenging benchmarks, i.e., CoCA, CoSOD3k, and CoSal2015, demonstrate that our GCoNet+ outperforms the existing 12 cutting-edge models. Code has been released at https://github.com/ZhengPeng7/GCoNet_plus. "
+}

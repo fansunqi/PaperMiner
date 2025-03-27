@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Matching Bandit"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Centralized Contextual - Explore Then Commit (CC-ETC)"
+  ],
+  "results": [
+    "Sublinear regret upper bound O(log(T))",
+    "Rate-optimal algorithm",
+    "Robust to variant preference schemes, dimensions of contexts, reward noise levels, and contexts variation levels"
+  ],
+  "paper_id": "6279c9c55aee126c0fdadbf1",
+  "title": "Rate-Optimal Contextual Online Matching Bandit",
+  "abstract": "  Two-sided online matching platforms have been employed in various markets. However, agents' preferences in present market are usually implicit and unknown and must be learned from data. With the growing availability of side information involved in the decision process, modern online matching methodology demands the capability to track preference dynamics for agents based on their contextual information. This motivates us to consider a novel Contextual Online Matching Bandit prOblem (COMBO), which allows dynamic preferences in matching decisions. Existing works focus on multi-armed bandit with static preference, but this is insufficient: the two-sided preference changes as along as one-side's contextual information updates, resulting in non-static matching. In this paper, we propose a Centralized Contextual - Explore Then Commit (CC-ETC) algorithm to adapt to the COMBO. CC-ETC solves online matching with dynamic preference. In theory, we show that CC-ETC achieves a sublinear regret upper bound O(log(T)) and is a rate-optimal algorithm by proving a matching lower bound. In the experiments, we demonstrate that CC-ETC is robust to variant preference schemes, dimensions of contexts, reward noise levels, and contexts variation levels. "
+}

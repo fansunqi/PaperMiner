@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Camera 3D Object Detection"
+  ],
+  "datasets": [
+    "nuScenes"
+  ],
+  "methods": [
+    "OA-BEV network",
+    "object-aware pseudo-3D features",
+    "depth features",
+    "deformable attention mechanism"
+  ],
+  "results": [
+    "improvements over BEV-based baselines in terms of average precision and nuScenes detection score"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905a15",
+  "title": "OA-BEV: Bringing Object Awareness to Bird's-Eye-View Representation for\n  Multi-Camera 3D Object Detection",
+  "abstract": "  The recent trend for multi-camera 3D object detection is through the unified bird's-eye view (BEV) representation. However, directly transforming features extracted from the image-plane view to BEV inevitably results in feature distortion, especially around the objects of interest, making the objects blur into the background. To this end, we propose OA-BEV, a network that can be plugged into the BEV-based 3D object detection framework to bring out the objects by incorporating object-aware pseudo-3D features and depth features. Such features contain information about the object's position and 3D structures. First, we explicitly guide the network to learn the depth distribution by object-level supervision from each 3D object's center. Then, we select the foreground pixels by a 2D object detector and project them into 3D space for pseudo-voxel feature encoding. Finally, the object-aware depth features and pseudo-voxel features are incorporated into the BEV representation with a deformable attention mechanism. We conduct extensive experiments on the nuScenes dataset to validate the merits of our proposed OA-BEV. Our method achieves consistent improvements over the BEV-based baselines in terms of both average precision and nuScenes detection score. Our codes will be published. "
+}

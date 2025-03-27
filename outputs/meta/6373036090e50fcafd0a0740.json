@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formal verification of CHERI-C programs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Formal memory model",
+    "Isabelle/HOL formalisation",
+    "OCaml executable instance",
+    "Gillian program analysis framework"
+  ],
+  "results": [
+    "Correctness of the tool",
+    "Catch safety violations"
+  ],
+  "paper_id": "6373036090e50fcafd0a0740",
+  "title": "A Formal CHERI-C Semantics for Verification",
+  "abstract": "  CHERI-C extends the C programming language by adding hardware capabilities, ensuring a certain degree of memory safety while remaining efficient. Capabilities can also be employed for higher-level security measures, such as software compartmentalization, that have to be used correctly to achieve the desired security guarantees. As the extension changes the semantics of C, new theories and tooling are required to reason about CHERI-C code and verify correctness. In this work, we present a formal memory model that provides a memory semantics for CHERI-C programs. We present a generalised theory with rich properties suitable for verification and potentially other types of analyses. Our theory is backed by an Isabelle/HOL formalisation that also generates an OCaml executable instance of the memory model. The verified and extracted code is then used to instantiate the parametric Gillian program analysis framework, with which we can perform concrete execution of CHERI-C programs. The tool can run a CHERI-C test suite, demonstrating the correctness of our tool, and catch a good class of safety violations that the CHERI hardware might miss. "
+}

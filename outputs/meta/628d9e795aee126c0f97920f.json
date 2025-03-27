@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Workflow Discovery"
+  ],
+  "datasets": [
+    "Action-Based Conversations Dataset (ABCD)"
+  ],
+  "methods": [
+    "Seq2Seq approach",
+    "Conditioning models on possible actions"
+  ],
+  "results": [
+    "State-of-the-art performance on Action State Tracking (AST) and Cascading Dialogue Success (CDS)"
+  ],
+  "paper_id": "628d9e795aee126c0f97920f",
+  "title": "Workflow Discovery from Dialogues in the Low Data Regime",
+  "abstract": "  Text-based dialogues are now widely used to solve real-world problems. In cases where solution strategies are already known, they can sometimes be codified into workflows and used to guide humans or artificial agents through the task of helping clients. We introduce a new problem formulation that we call Workflow Discovery (WD) in which we are interested in the situation where a formal workflow may not yet exist. Still, we wish to discover the set of actions that have been taken to resolve a particular problem. We also examine a sequence-to-sequence (Seq2Seq) approach for this novel task. We present experiments where we extract workflows from dialogues in the Action-Based Conversations Dataset (ABCD). Since the ABCD dialogues follow known workflows to guide agents, we can evaluate our ability to extract such workflows using ground truth sequences of actions. We propose and evaluate an approach that conditions models on the set of possible actions, and we show that using this strategy, we can improve WD performance. Our conditioning approach also improves zero-shot and few-shot WD performance when transferring learned models to unseen domains within and across datasets. Further, on ABCD a modified variant of our Seq2Seq method achieves state-of-the-art performance on related but different problems of Action State Tracking (AST) and Cascading Dialogue Success (CDS) across many evaluation metrics. "
+}

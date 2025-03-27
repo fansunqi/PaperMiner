@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/PingChang818/TDSTF"
+  ],
+  "tasks": [
+    "Vital sign monitoring",
+    "Sparse time series forecasting"
+  ],
+  "datasets": [
+    "MIMIC-III"
+  ],
+  "methods": [
+    "Transformer-based Diffusion Probabilistic Model"
+  ],
+  "results": [
+    "SACRPS: 0.4438",
+    "MSE: 0.4168",
+    "Improvement over baseline: 18.9% (SACRPS), 34.3% (MSE)",
+    "Inference speed: 17x faster"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b5c1",
+  "title": "TDSTF: Transformer-based Diffusion probabilistic model for Sparse Time\n  series Forecasting",
+  "abstract": "Background and Objective: Vital sign monitoring in the Intensive Care Unit\n(ICU) is crucial for enabling prompt interventions for patients. This\nunderscores the need for an accurate predictive system. Therefore, this study\nproposes a novel deep learning approach for forecasting Heart Rate (HR),\nSystolic Blood Pressure (SBP), and Diastolic Blood Pressure (DBP) in the ICU.\nMethods: We extracted 24,886 ICU stays from the MIMIC-III database which\ncontains data from over 46 thousand patients, to train and test the model.\nThe model proposed in this study, Transformer-based Diffusion Probabilistic\nModel for Sparse Time Series Forecasting (TDSTF), merges Transformer and\ndiffusion models to forecast vital signs. The TDSTF model showed\nstate-of-the-art performance in predicting vital signs in the ICU,\noutperforming other models' ability to predict distributions of vital signs and\nbeing more computationally efficient. The code is available at\nhttps://github.com/PingChang818/TDSTF. Results: The results of the study showed\nthat TDSTF achieved a Standardized Average Continuous Ranked Probability Score\n(SACRPS) of 0.4438 and a Mean Squared Error (MSE) of 0.4168, an improvement\nof 18.9% and 34.3% over the best baseline model, respectively. The\ninference speed of TDSTF is more than 17 times faster than the best baseline\nmodel. Conclusion: TDSTF is an effective and efficient solution for forecasting\nvital signs in the ICU, and it shows a significant improvement compared to\nother models in the field."
+}

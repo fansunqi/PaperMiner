@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-exploration in narrow spaces"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep reinforcement learning",
+    "Rectangular safety region",
+    "Reward function",
+    "DDPG",
+    "DQN",
+    "SAC",
+    "PPO",
+    "PPO-discrete"
+  ],
+  "results": [
+    "Avoid collisions",
+    "Transferable to new simulated and real-world tracks"
+  ],
+  "paper_id": "63292f6890e50fcafd2eb91b",
+  "title": "Reinforcement Learning for Self-exploration in Narrow Spaces",
+  "abstract": "  In narrow spaces, motion planning based on the traditional hierarchical autonomous system could cause collisions due to mapping, localization, and control noises. Additionally, it is disabled when mapless. To tackle these problems, we leverage deep reinforcement learning which is verified to be effective in self-decision-making, to self-explore in narrow spaces without a map while avoiding collisions. Specifically, based on our Ackermann-steering rectangular-shaped ZebraT robot and its Gazebo simulator, we propose the rectangular safety region to represent states and detect collisions for rectangular-shaped robots, and a carefully crafted reward function for reinforcement learning that does not require the destination information. Then we benchmark five reinforcement learning algorithms including DDPG, DQN, SAC, PPO, and PPO-discrete, in a simulated narrow track. After training, the well-performed DDPG and DQN models can be transferred to three brand new simulated tracks, and furthermore to three real-world tracks. "
+}

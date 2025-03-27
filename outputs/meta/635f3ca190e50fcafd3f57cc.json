@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/gchochla/Demux-MEmo"
+  ],
+  "tasks": [
+    "Emotion detection"
+  ],
+  "datasets": [
+    "Spanish",
+    "English",
+    "Arabic"
+  ],
+  "methods": [
+    "Masked Language Modeling (MLM)",
+    "pairwise constraints of emotion representations",
+    "monolingual BERT-based models"
+  ],
+  "results": [
+    "state-of-the-art performance across Spanish, English, and Arabic in SemEval 2018 Task 1 E-c",
+    "improved robustness"
+  ],
+  "paper_id": "635f3ca190e50fcafd3f57cc",
+  "title": "Leveraging Label Correlations in a Multi-label Setting: A Case Study in\n  Emotion",
+  "abstract": "  Detecting emotions expressed in text has become critical to a range of fields. In this work, we investigate ways to exploit label correlations in multi-label emotion recognition models to improve emotion detection. First, we develop two modeling approaches to the problem in order to capture word associations of the emotion words themselves, by either including the emotions in the input, or by leveraging Masked Language Modeling (MLM). Second, we integrate pairwise constraints of emotion representations as regularization terms alongside the classification loss of the models. We split these terms into two categories, local and global. The former dynamically change based on the gold labels, while the latter remain static during training. We demonstrate state-of-the-art performance across Spanish, English, and Arabic in SemEval 2018 Task 1 E-c using monolingual BERT-based models. On top of better performance, we also demonstrate improved robustness. Code is available at https://github.com/gchochla/Demux-MEmo. "
+}

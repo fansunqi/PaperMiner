@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Representation learning in oil & gas industry",
+    "Interval similarity in well-logging data"
+  ],
+  "datasets": [
+    "Well-logging data"
+  ],
+  "methods": [
+    "Non-contrastive self-supervised learning (SSL)",
+    "Bootstrap Your Own Latent (BYOL)",
+    "Barlow Twins"
+  ],
+  "results": [
+    "Superior quality on clusterization",
+    "Best performance on different classification tasks"
+  ],
+  "paper_id": "63365e7d90e50fcafd1a2fd2",
+  "title": "Non-contrastive representation learning for intervals from well logs",
+  "abstract": "  The representation learning problem in the oil & gas industry aims to construct a model that provides a representation based on logging data for a well interval. Previous attempts are mainly supervised and focus on similarity task, which estimates closeness between intervals. We desire to build informative representations without using supervised (labelled) data. One of the possible approaches is self-supervised learning (SSL). In contrast to the supervised paradigm, this one requires little or no labels for the data. Nowadays, most SSL approaches are either contrastive or non-contrastive. Contrastive methods make representations of similar (positive) objects closer and distancing different (negative) ones. Due to possible wrong marking of positive and negative pairs, these methods can provide an inferior performance. Non-contrastive methods don't rely on such labelling and are widespread in computer vision. They learn using only pairs of similar objects that are easier to identify in logging data.   We are the first to introduce non-contrastive SSL for well-logging data. In particular, we exploit Bootstrap Your Own Latent (BYOL) and Barlow Twins methods that avoid using negative pairs and focus only on matching positive pairs. The crucial part of these methods is an augmentation strategy. Our augmentation strategies and adaption of BYOL and Barlow Twins together allow us to achieve superior quality on clusterization and mostly the best performance on different classification tasks. Our results prove the usefulness of the proposed non-contrastive self-supervised approaches for representation learning and interval similarity in particular. "
+}

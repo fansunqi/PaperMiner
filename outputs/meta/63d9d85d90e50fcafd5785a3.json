@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Small Moving Object Detection"
+  ],
+  "datasets": [
+    "Surveillance video"
+  ],
+  "methods": [
+    "ConvLSTM-PAN",
+    "Object tracking",
+    "Adaptive Spatio-temporal Cubes (ASt-Cubes)",
+    "LightWeight U-Shape Net (LW-USN)"
+  ],
+  "results": [
+    "Effectively reduce the missed and false detection rate of small moving objects"
+  ],
+  "paper_id": "63d9d85d90e50fcafd5785a3",
+  "title": "Small Moving Object Detection Algorithm in Surveillance Video Based on\n  Motion Information",
+  "abstract": "  A Small Moving Object Detection algorithm Based on Motion Information (SMOD-BMI) is proposed to detect small moving objects with a low Signal-to-Noise Ratio (SNR) in surveillance video. Firstly, a ConvLSTM-PAN model structure is designed to capture suspicious small moving objects, in which the Convolutional Long and Short Time Memory (ConvLSTM) network aggregated the Spatio-temporal features of the adjacent multi-frame small moving object and the Path Aggregation Network (PAN) located the suspicious small moving objects. Then, an object tracking algorithm is used to track suspicious small objects and calculate their Motion Range (MR). At the same time, the size of the MR of the suspicious small moving object is adjusted adaptively according to its speed of movement (specifically, if the object moves slowly, its MR will be expanded according to the speed of the object to ensure the necessary environmental information of the object). Adaptive Spatio-temporal Cubes (ASt-Cubes) of the small moving objects are generated to ensure that the SNR of the moving objects is improved, and the necessary environmental information is retained adaptively. Finally, a LightWeight U-Shape Net (LW-USN) based on ASt-Cubes is designed to detect small moving objects, which rejects false detections and returns the position of small moving objects. This paper uses the bird in the surveillance video as the experimental data set to verify the algorithm's performance. The experimental results show that the proposed small moving object detection method based on motion information in surveillance video can effectively reduce the missed and false detection rate of small moving objects. "
+}

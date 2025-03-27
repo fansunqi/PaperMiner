@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-supervised Node Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Flip Initial Features"
+  ],
+  "results": [
+    "Node classification accuracy improvement up to 40.2%"
+  ],
+  "paper_id": "6385788590e50fcafdf49e0a",
+  "title": "Flip Initial Features: Generalization of Neural Networks Under Sparse\n  Features for Semi-supervised Node Classification",
+  "abstract": "  Graph neural networks (GNNs) have been widely used under semi-supervised settings. Prior studies have mainly focused on finding appropriate graph filters (e.g., aggregation schemes) to generalize well for both homophilic and heterophilic graphs. Even though these approaches are essential and effective, they still suffer from the sparsity in initial node features inherent in the bag-of-words representation. Common in semi-supervised learning where the training samples often fail to cover the entire dimensions of graph filters (hyperplanes), this can precipitate over-fitting of specific dimensions in the first projection matrix. To deal with this problem, we suggest a simple and novel strategy; create additional space by flipping the initial features and hyperplane simultaneously. Training in both the original and in the flip space can provide precise updates of learnable parameters. To the best of our knowledge, this is the first attempt that effectively moderates the overfitting problem in GNN. Extensive experiments on real-world datasets demonstrate that the proposed technique improves the node classification accuracy up to 40.2 % "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Computationally Customized Federated Averaging (CC-FedAvg)"
+  ],
+  "results": [
+    "Same convergence rate and comparable performance as FedAvg without resource constraints",
+    "Considerably lower computation overhead"
+  ],
+  "paper_id": "63ae56c790e50fcafda954c7",
+  "title": "CC-FedAvg: Computationally Customized Federated Averaging",
+  "abstract": "  Federated learning (FL) is an emerging paradigm to train model with distributed data from numerous Internet of Things (IoT) devices. It inherently assumes a uniform capacity among participants. However, due to different conditions such as differing energy budgets or executing parallel unrelated tasks, participants have diverse computational resources in practice. Participants with insufficient computation budgets must plan for the use of restricted computational resources appropriately, otherwise they would be unable to complete the entire training procedure, resulting in model performance decline. To address the this issue, we propose a strategy for estimating local models without computationally intensive iterations. Based on it, we propose Computationally Customized Federated Averaging (CC-FedAvg), which allows participants to determine whether to perform traditional local training or model estimation in each round based on their current computational budgets. Both theoretical analysis and exhaustive experiments indicate that CC-FedAvg has the same convergence rate and comparable performance as FedAvg without resource constraints. Furthermore, CC-FedAvg can be viewed as a computation-efficient version of FedAvg that retains model performance while considerably lowering computation overhead. "
+}

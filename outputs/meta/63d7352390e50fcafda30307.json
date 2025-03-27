@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep neural networks parameterization"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Direct parameterization",
+    "Sandwich layer",
+    "Parameter sharing between layers"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63d7352390e50fcafda30307",
+  "title": "Direct Parameterization of Lipschitz-Bounded Deep Networks",
+  "abstract": "  This paper introduces a new parameterization of deep neural networks (both fully-connected and convolutional) with guaranteed Lipschitz bounds, i.e. limited sensitivity to perturbations. The Lipschitz guarantees are equivalent to the tightest-known bounds based on certification via a semidefinite program (SDP), which does not scale to large models. In contrast to the SDP approach, we provide a ``direct'' parameterization, i.e. a smooth mapping from $\\mathbb R^N$ onto the set of weights of Lipschitz-bounded networks. This enables training via standard gradient methods, without any computationally intensive projections or barrier terms. The new parameterization can equivalently be thought of as either a new layer type (the \\textit{sandwich layer}), or a novel parameterization of standard feedforward networks with parameter sharing between neighbouring layers. We illustrate the method with some applications in image classification (MNIST and CIFAR-10). "
+}

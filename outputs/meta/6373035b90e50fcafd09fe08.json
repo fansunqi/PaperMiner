@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Open Surgery Training Feedback"
+  ],
+  "datasets": [
+    "Open Surgery Simulation dataset"
+  ],
+  "methods": [
+    "2D hand pose estimation",
+    "kinematic sensors",
+    "I3D features",
+    "surgical dexterity proxies"
+  ],
+  "results": [
+    "Gesture segmentation accuracy: 88.35%",
+    "Skill assessment differences between novices and experts"
+  ],
+  "paper_id": "6373035b90e50fcafd09fe08",
+  "title": "Using Hand Pose Estimation To Automate Open Surgery Training Feedback",
+  "abstract": "  Purpose: This research aims to facilitate the use of state-of-the-art computer vision algorithms for the automated training of surgeons and the analysis of surgical footage. By estimating 2D hand poses, we model the movement of the practitioner's hands, and their interaction with surgical instruments, to study their potential benefit for surgical training.   Methods: We leverage pre-trained models on a publicly-available hands dataset to create our own in-house dataset of 100 open surgery simulation videos with 2D hand poses. We also assess the ability of pose estimations to segment surgical videos into gestures and tool-usage segments and compare them to kinematic sensors and I3D features. Furthermore, we introduce 6 novel surgical dexterity proxies stemming from domain experts' training advice, all of which our framework can automatically detect given raw video footage.   Results: State-of-the-art gesture segmentation accuracy of 88.35\\% on the Open Surgery Simulation dataset is achieved with the fusion of 2D poses and I3D features from multiple angles. The introduced surgical skill proxies presented significant differences for novices compared to experts and produced actionable feedback for improvement.   Conclusion: This research demonstrates the benefit of pose estimations for open surgery by analyzing their effectiveness in gesture segmentation and skill assessment. Gesture segmentation using pose estimations achieved comparable results to physical sensors while being remote and markerless. Surgical dexterity proxies that rely on pose estimation proved they can be used to work towards automated training feedback. We hope our findings encourage additional collaboration on novel skill proxies to make surgical training more efficient. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Link Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Line Graph Contrastive Learning (LGCL)",
+    "h-hop subgraph sampling",
+    "node classification",
+    "graph convolution",
+    "cross-scale contrastive learning"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods",
+    "Better performance on generalization and robustness"
+  ],
+  "paper_id": "6358a56c90e50fcafda59b22",
+  "title": "Line Graph Contrastive Learning for Link Prediction",
+  "abstract": "  Link prediction tasks focus on predicting possible future connections. Most existing researches measure the likelihood of links by different similarity scores on node pairs and predict links between nodes. However, the similarity-based approaches have some challenges in information loss on nodes and generalization ability on similarity indexes. To address the above issues, we propose a Line Graph Contrastive Learning(LGCL) method to obtain rich information with multiple perspectives. LGCL obtains a subgraph view by h-hop subgraph sampling with target node pairs. After transforming the sampled subgraph into a line graph, the link prediction task is converted into a node classification task, which graph convolution progress can learn edge embeddings from graphs more effectively. Then we design a novel cross-scale contrastive learning framework on the line graph and the subgraph to maximize the mutual information of them, so that fuses the structure and feature information. The experimental results demonstrate that the proposed LGCL outperforms the state-of-the-art methods and has better performance on generalization and robustness. "
+}

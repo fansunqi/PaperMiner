@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multivariate biosignal classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GraphS4mer",
+    "Structured State Space architecture",
+    "graph structure learning layer"
+  ],
+  "results": [
+    "Seizure detection: 3.1 points improvement in AUROC",
+    "Sleep staging: 4.1 points improvement in macro-F1 score",
+    "ECG classification: 2.7 points improvement in macro-F1 score"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c760",
+  "title": "Modeling Multivariate Biosignals With Graph Neural Networks and\n  Structured State Space Models",
+  "abstract": "  Multivariate biosignals are prevalent in many medical domains, such as electroencephalography, polysomnography, and electrocardiography. Modeling spatiotemporal dependencies in multivariate biosignals is challenging due to (1) long-range temporal dependencies and (2) complex spatial correlations between the electrodes. To address these challenges, we propose representing multivariate biosignals as time-dependent graphs and introduce GraphS4mer, a general graph neural network (GNN) architecture that improves performance on biosignal classification tasks by modeling spatiotemporal dependencies in biosignals. Specifically, (1) we leverage the Structured State Space architecture, a state-of-the-art deep sequence model, to capture long-range temporal dependencies in biosignals and (2) we propose a graph structure learning layer in GraphS4mer to learn dynamically evolving graph structures in the data. We evaluate our proposed model on three distinct biosignal classification tasks and show that GraphS4mer consistently improves over existing models, including (1) seizure detection from electroencephalography signals, outperforming a previous GNN with self-supervised pre-training by 3.1 points in AUROC; (2) sleep staging from polysomnography signals, a 4.1 points improvement in macro-F1 score compared to existing sleep staging models; and (3) 12-lead electrocardiogram classification, outperforming previous state-of-the-art models by 2.7 points in macro-F1 score. "
+}

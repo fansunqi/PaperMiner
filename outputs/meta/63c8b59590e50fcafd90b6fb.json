@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Pathfinding"
+  ],
+  "datasets": [
+    "grid mazes"
+  ],
+  "methods": [
+    "Neural Cellular Automata",
+    "Breadth-First Search (BFS)",
+    "Depth-First Search (DFS)"
+  ],
+  "results": [
+    "increased generalization on out-of-distribution examples",
+    "complex solutions for reasoning tasks"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b6fb",
+  "title": "Pathfinding Neural Cellular Automata",
+  "abstract": "  Pathfinding makes up an important sub-component of a broad range of complex tasks in AI, such as robot path planning, transport routing, and game playing. While classical algorithms can efficiently compute shortest paths, neural networks could be better suited to adapting these sub-routines to more complex and intractable tasks. As a step toward developing such networks, we hand-code and learn models for Breadth-First Search (BFS), i.e. shortest path finding, using the unified architectural framework of Neural Cellular Automata, which are iterative neural networks with equal-size inputs and outputs. Similarly, we present a neural implementation of Depth-First Search (DFS), and outline how it can be combined with neural BFS to produce an NCA for computing diameter of a graph. We experiment with architectural modifications inspired by these hand-coded NCAs, training networks from scratch to solve the diameter problem on grid mazes while exhibiting strong generalization ability. Finally, we introduce a scheme in which data points are mutated adversarially during training. We find that adversarially evolving mazes leads to increased generalization on out-of-distribution examples, while at the same time generating data-sets with significantly more complex solutions for reasoning tasks. "
+}

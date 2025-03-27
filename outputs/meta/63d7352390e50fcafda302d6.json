@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D CAD Modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DualCSG: a neural network with two dual and complementary branches for CSG learning"
+  ],
+  "results": [
+    "Superior quality CSG reconstructions",
+    "More natural trees",
+    "Better quality-compactness tradeoff"
+  ],
+  "paper_id": "63d7352390e50fcafda302d6",
+  "title": "DualCSG: Learning Dual CSG Trees for General and Compact CAD Modeling",
+  "abstract": "  We present DualCSG, a novel neural network composed of two dual and complementary branches for unsupervised learning of constructive solid geometry (CSG) representations of 3D CAD shapes. Our network is trained to reconstruct a given 3D CAD shape through a compact assembly of quadric surface primitives via fixed-order CSG operations along two branches. The key difference between our method and all previous neural CSG models is that DualCSG has a dedicated branch, the residual branch, to assemble the potentially complex, complement or residual shape that is to be subtracted from an overall cover shape. The cover shape is modeled by the other branch, the cover branch. Both branches construct a union of primitive intersections, where the only difference is that the residual branch also learns primitive inverses while operating in the complement space. With the shape complements, our network is provably general. We demonstrate both quantitatively and qualitatively that our network produces CSG reconstructions with superior quality, more natural trees, and better quality-compactness tradeoff than all existing alternatives, especially over complex and high-genus CAD shapes. "
+}

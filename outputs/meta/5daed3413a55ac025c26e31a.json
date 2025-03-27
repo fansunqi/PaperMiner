@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sub-Nyquist Sampling of Sparse and Correlated Signals in Array Processing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sampling theorem",
+    "Compressive sampling",
+    "Sparse and low-rank matrix recovery",
+    "Two-step algorithm"
+  ],
+  "results": [
+    "Exact and stable reconstruction of signals at sub-Nyquist rates",
+    "Significant reduction in sampling rate compared to Nyquist rate",
+    "Signal reconstruction from sub-Nyquist rate"
+  ],
+  "paper_id": "5daed3413a55ac025c26e31a",
+  "title": "Sub-Nyquist Sampling of Sparse and Correlated Signals in Array\n  Processing",
+  "abstract": "  This paper considers efficient sampling of simultaneously sparse and correlated (S$\\&$C) signals. Such signals arise in various applications in array processing. We propose an implementable sampling architecture for the acquisition of S$\\&$C at a sub-Nyquist rate. We prove a sampling theorem showing exact and stable reconstruction of the acquired signals even when the sampling rate is smaller than the Nyquist rate by orders of magnitude. Quantitatively, our results state that an ensemble $M$ signals, composed of a-priori unknown latent $R$ signals, each bandlimited to $W/2$ but only $S$-sparse in the Fourier domain, can be reconstructed exactly from compressive sampling only at a rate $RS\\log^{\\alpha} W$ samples per second. When $R \\ll M$, and $S\\ll W$, this amounts to a significant reduction in sampling rate compared to the Nyquist rate of $MW$ samples per second. This is the first result that presents an implementable sampling architecture, and a sampling theorem for the compressive acquisition of S$\\&$C signals. The signal reconstruction from sub-Nyquist rate boils down to a sparse and low-rank (S$\\&$L) matrix recovery from a few linear measurements. The conventional convex penalties for S$\\&$L matrices are provably not optimal in the number of measurements. We resort to a two-step algorithm to recover S$\\&$L matrix from a near-optimal number of measurements. This result then translates into a signal reconstruction algorithm from a sub-Nyquist sampling rate. "
+}

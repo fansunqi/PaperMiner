@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Acute ischemic stroke lesion segmentation"
+  ],
+  "datasets": [
+    "Non-contrast computed tomography volumetric brain scans of 81 patients"
+  ],
+  "methods": [
+    "3D U-Net convolutional neural network with squeeze-and-excitation blocks and residual connections",
+    "Robust pre-processing methods",
+    "Specific patches sampling strategy"
+  ],
+  "results": [
+    "Dice similarity coefficient: 0.628\u00b10.033",
+    "Sensitivity: 0.699\u00b10.039",
+    "Specificity: 0.9965\u00b10.0016",
+    "Precision: 0.619\u00b10.036"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b6d1",
+  "title": "Acute ischemic stroke lesion segmentation in non-contrast CT images\n  using 3D convolutional neural networks",
+  "abstract": "  In this paper, an automatic algorithm aimed at volumetric segmentation of acute ischemic stroke lesion in non-contrast computed tomography brain 3D images is proposed. Our deep-learning approach is based on the popular 3D U-Net convolutional neural network architecture, which was modified by adding the squeeze-and-excitation blocks and residual connections. Robust pre-processing methods were implemented to improve the segmentation accuracy. Moreover, a specific patches sampling strategy was used to address the large size of medical images, to smooth out the effect of the class imbalance problem and to stabilize neural network training. All experiments were performed using five-fold cross-validation on the dataset containing non-contrast computed tomography volumetric brain scans of 81 patients diagnosed with acute ischemic stroke. Two radiology experts manually segmented images independently and then verified the labeling results for inconsistencies. The quantitative results of the proposed algorithm and obtained segmentation were measured by the Dice similarity coefficient, sensitivity, specificity and precision metrics. Our proposed model achieves an average Dice of $0.628\\pm0.033$, sensitivity of $0.699\\pm0.039$, specificity of $0.9965\\pm0.0016$ and precision of $0.619\\pm0.036$, showing promising segmentation results. "
+}

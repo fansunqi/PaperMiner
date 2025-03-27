@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Multi-Human Motion Capture"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "non-linear optimization",
+    "large-scale pre-trained models",
+    "2D body joints",
+    "joint angles",
+    "normalized disparity maps",
+    "human segmentation masks"
+  ],
+  "results": [
+    "consistently outperforms previous methods",
+    "robust to in-the-wild conditions"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8e42",
+  "title": "Scene-Aware 3D Multi-Human Motion Capture from a Single Camera",
+  "abstract": "  In this work, we consider the problem of estimating the 3D position of multiple humans in a scene as well as their body shape and articulation from a single RGB video recorded with a static camera. In contrast to expensive marker-based or multi-view systems, our lightweight setup is ideal for private users as it enables an affordable 3D motion capture that is easy to install and does not require expert knowledge. To deal with this challenging setting, we leverage recent advances in computer vision using large-scale pre-trained models for a variety of modalities, including 2D body joints, joint angles, normalized disparity maps, and human segmentation masks. Thus, we introduce the first non-linear optimization-based approach that jointly solves for the absolute 3D position of each human, their articulated pose, their individual shapes as well as the scale of the scene. In particular, we estimate the scene depth and person unique scale from normalized disparity predictions using the 2D body joints and joint angles. Given the per-frame scene depth, we reconstruct a point-cloud of the static scene in 3D space. Finally, given the per-frame 3D estimates of the humans and scene point-cloud, we perform a space-time coherent optimization over the video to ensure temporal, spatial and physical plausibility. We evaluate our method on established multi-person 3D human pose benchmarks where we consistently outperform previous methods and we qualitatively demonstrate that our method is robust to in-the-wild conditions including challenging scenes with people of different sizes. "
+}

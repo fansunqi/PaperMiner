@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Feature Tracking for Event Cameras"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Data-driven feature tracker",
+    "Frame attention module",
+    "Self-supervision strategy"
+  ],
+  "results": [
+    "Outperforms existing approaches in relative feature age by up to 120%",
+    "Achieves the lowest latency",
+    "Performance gap increased to 130% with adaptation to real data"
+  ],
+  "paper_id": "637ee0ee90e50fcafd0f6f36",
+  "title": "Data-driven Feature Tracking for Event Cameras",
+  "abstract": "  Because of their high temporal resolution, increased resilience to motion blur, and very sparse output, event cameras have been shown to be ideal for low-latency and low-bandwidth feature tracking, even in challenging scenarios. Existing feature tracking methods for event cameras are either handcrafted or derived from first principles but require extensive parameter tuning, are sensitive to noise, and do not generalize to different scenarios due to unmodeled effects. To tackle these deficiencies, we introduce the first data-driven feature tracker for event cameras, which leverages low-latency events to track features detected in a grayscale frame. We achieve robust performance via a novel frame attention module, which shares information across feature tracks. By directly transferring zero-shot from synthetic to real data, our data-driven tracker outperforms existing approaches in relative feature age by up to 120% while also achieving the lowest latency. This performance gap is further increased to 130% by adapting our tracker to real data with a novel self-supervision strategy. "
+}

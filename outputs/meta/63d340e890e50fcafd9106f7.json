@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Classification rule learning"
+  ],
+  "datasets": [
+    "Small to very large datasets"
+  ],
+  "methods": [
+    "Greedy optimization with specialization and generalization loops"
+  ],
+  "results": [
+    "Higher average classification accuracy than state-of-the-art rule learning algorithms",
+    "Highly efficient and inherently parallelizable"
+  ],
+  "paper_id": "63d340e890e50fcafd9106f7",
+  "title": "Efficient learning of large sets of locally optimal classification rules",
+  "abstract": "  Conventional rule learning algorithms aim at finding a set of simple rules, where each rule covers as many examples as possible. In this paper, we argue that the rules found in this way may not be the optimal explanations for each of the examples they cover. Instead, we propose an efficient algorithm that aims at finding the best rule covering each training example in a greedy optimization consisting of one specialization and one generalization loop. These locally optimal rules are collected and then filtered for a final rule set, which is much larger than the sets learned by conventional rule learning algorithms. A new example is classified by selecting the best among the rules that cover this example. In our experiments on small to very large datasets, the approach's average classification accuracy is higher than that of state-of-the-art rule learning algorithms. Moreover, the algorithm is highly efficient and can inherently be processed in parallel without affecting the learned rule set and so the classification accuracy. We thus believe that it closes an important gap for large-scale classification rule induction. "
+}

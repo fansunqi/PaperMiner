@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Functional Machine Calculus"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "lambda-calculus",
+    "reader/writer effects",
+    "higher-order mutable store",
+    "input/output",
+    "probabilistic and non-deterministic computation",
+    "call-by-name stack machine",
+    "locations",
+    "sequencing",
+    "confluence",
+    "simple types"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f39bf",
+  "title": "The Functional Machine Calculus",
+  "abstract": "  This paper presents the Functional Machine Calculus (FMC) as a simple model of higher-order computation with \"reader/writer\" effects: higher-order mutable store, input/output, and probabilistic and non-deterministic computation.   The FMC derives from the lambda-calculus by taking the standard operational perspective of a call-by-name stack machine as primary, and introducing two natural generalizations. One, \"locations\", introduces multiple stacks, which each may represent an effect and so enable effect operators to be encoded into the abstraction and application constructs of the calculus. The second, \"sequencing\", is known from kappa-calculus and concatenative programming languages, and introduces the imperative notions of \"skip\" and \"sequence\". This enables the encoding of reduction strategies, including call-by-value lambda-calculus and monadic constructs.   The encoding of effects into generalized abstraction and application means that standard results from the lambda-calculus may carry over to effects. The main result is confluence, which is possible because encoded effects reduce algebraically rather than operationally. Reduction generates the familiar algebraic laws for state, and unlike in the monadic setting, reader/writer effects combine seamlessly. A system of simple types confers termination of the machine. "
+}

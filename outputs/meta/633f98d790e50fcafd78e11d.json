@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mobile robot navigation in 3D uneven terrains"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Supervoxel representation",
+    "Control Lyapunov function",
+    "Navigation function"
+  ],
+  "results": [
+    "Outperforms baselines in execution time and path length",
+    "Can navigate to shortest-distance or least-inclined plan"
+  ],
+  "paper_id": "633f98d790e50fcafd78e11d",
+  "title": "Cloud Hopping; Navigating in 3D Uneven Environments via Supervoxels and\n  Control Lyapunov Function",
+  "abstract": "  This paper presents a novel feedback motion planning method for mobile robot navigation in 3D uneven terrains. We take advantage of the \\textit{supervoxel} representation of point clouds, which enables a compact connectivity graph of traversable regions on the point cloud maps. Given this graph of traversable areas, our approach navigates the robot to any reachable goal pose using a control Lyapunov function (cLf) and a navigation function. The cLf ensures the kinodynamic feasibility and target convergence of the generated motion plans, while the navigation function optimizes the resulting feedback motion plans. We carried out navigation experiments in real and simulated 3D uneven terrains. In all circumstances, the experimental findings show that our approach performs superior to the baselines, proving the approach's efficiency and adaptability to navigate a robot in challenging uneven 3D terrains. The proposed method can also navigate a robot with a particular objective, e.g., shortest-distance or least-inclined plan. We compared our approach to well-established sampling-based motion planners in which our method outperformed all other planners in terms of execution time and resulting path length. Finally, we provide an open-source implementation of the proposed method to benefit the robotics community. "
+}

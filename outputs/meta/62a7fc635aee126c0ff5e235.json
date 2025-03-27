@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Medical image registration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GradICON: Approximate Diffeomorphisms via Gradient Inverse Consistency"
+  ],
+  "results": [
+    "State-of-the-art registration performance on various real-world medical image datasets"
+  ],
+  "paper_id": "62a7fc635aee126c0ff5e235",
+  "title": "$\\texttt{GradICON}$: Approximate Diffeomorphisms via Gradient Inverse\n  Consistency",
+  "abstract": "  We present an approach to learning regular spatial transformations between image pairs in the context of medical image registration. Contrary to optimization-based registration techniques and many modern learning-based methods, we do not directly penalize transformation irregularities but instead promote transformation regularity via an inverse consistency penalty. We use a neural network to predict a map between a source and a target image as well as the map when swapping the source and target images. Different from existing approaches, we compose these two resulting maps and regularize deviations of the $\\bf{Jacobian}$ of this composition from the identity matrix. This regularizer -- $\\texttt{GradICON}$ -- results in much better convergence when training registration models compared to promoting inverse consistency of the composition of maps directly while retaining the desirable implicit regularization effects of the latter. We achieve state-of-the-art registration performance on a variety of real-world medical image datasets using a single set of hyperparameters and a single non-dataset-specific training protocol. "
+}

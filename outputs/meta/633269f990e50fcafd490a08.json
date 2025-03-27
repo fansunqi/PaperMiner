@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LiDAR Point Cloud Compression"
+  ],
+  "datasets": [
+    "SemanticKITTI",
+    "Ford"
+  ],
+  "methods": [
+    "Multiscale Latent-Guided Entropy Model",
+    "Octree structure",
+    "Hierarchical latent variable",
+    "Residual coding framework",
+    "Soft addition and subtraction"
+  ],
+  "results": [
+    "State-of-the-art performance",
+    "High-parallelized and time-efficient",
+    "Saves more than 99.8% of decoding time compared to previous state-of-the-art methods"
+  ],
+  "paper_id": "633269f990e50fcafd490a08",
+  "title": "Multiscale Latent-Guided Entropy Model for LiDAR Point Cloud Compression",
+  "abstract": "  The non-uniform distribution and extremely sparse nature of the LiDAR point cloud (LPC) bring significant challenges to its high-efficient compression. This paper proposes a novel end-to-end, fully-factorized deep framework that encodes the original LPC into an octree structure and hierarchically decomposes the octree entropy model in layers. The proposed framework utilizes a hierarchical latent variable as side information to encapsulate the sibling and ancestor dependence, which provides sufficient context information for the modelling of point cloud distribution while enabling the parallel encoding and decoding of octree nodes in the same layer. Besides, we propose a residual coding framework for the compression of the latent variable, which explores the spatial correlation of each layer by progressive downsampling, and model the corresponding residual with a fully-factorized entropy model. Furthermore, we propose soft addition and subtraction for residual coding to improve network flexibility. The comprehensive experiment results on the LiDAR benchmark SemanticKITTI and MPEG-specified dataset Ford demonstrates that our proposed framework achieves state-of-the-art performance among all the previous LPC frameworks. Besides, our end-to-end, fully-factorized framework is proved by experiment to be high-parallelized and time-efficient and saves more than 99.8% of decoding time compared to previous state-of-the-art methods on LPC compression. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "Synthetic data",
+    "Images",
+    "Texts"
+  ],
+  "methods": [
+    "Agent clustering (FOCUS)",
+    "Fairness via agent-awareness (FAA)"
+  ],
+  "results": [
+    "FOCUS achieves significantly higher fairness in terms of FAA",
+    "Maintains competitive prediction accuracy compared with FedAvg and state-of-the-art fair FL algorithms"
+  ],
+  "paper_id": "62da15945aee126c0f5d8ac4",
+  "title": "FOCUS: Fairness via Agent-Awareness for Federated Learning on\n  Heterogeneous Data",
+  "abstract": "  Federated learning (FL) allows agents to jointly train a global model without sharing their local data. However, due to the heterogeneous nature of local data, it is challenging to optimize or even define fairness of the trained global model for the agents. For instance, existing work usually considers accuracy equity as fairness for different agents in FL, which is limited, especially under the heterogeneous setting, since it is intuitively \"unfair\" to enforce agents with high-quality data to achieve similar accuracy to those who contribute low-quality data, which may discourage the agents from participating in FL. In this work, we propose a formal FL fairness definition, fairness via agent-awareness (FAA), which takes different contributions of heterogeneous agents into account. Under FAA, the performance of agents with high-quality data will not be sacrificed just due to the existence of large amounts of agents with low-quality data. In addition, we propose a fair FL training algorithm based on agent clustering (FOCUS) to achieve fairness in FL measured by FAA. Theoretically, we prove the convergence and optimality of FOCUS under mild conditions for linear and general convex loss functions with bounded smoothness. We also prove that FOCUS always achieves higher fairness in terms of FAA compared with standard FedAvg under both linear and general convex loss functions. Empirically, we show that on four FL datasets, including synthetic data, images, and texts, FOCUS achieves significantly higher fairness in terms of FAA while maintaining competitive prediction accuracy compared with FedAvg and state-of-the-art fair FL algorithms. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Euphemism Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer-based models",
+    "KimCNN classifier",
+    "cosine annealing scheduler"
+  ],
+  "results": [
+    "0.816 F1-score (0.818 precision and 0.814 recall)"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b595",
+  "title": "TEDB System Description to a Shared Task on Euphemism Detection 2022",
+  "abstract": "  In this report, we describe our Transformers for euphemism detection baseline (TEDB) submissions to a shared task on euphemism detection 2022. We cast the task of predicting euphemism as text classification. We considered Transformer-based models which are the current state-of-the-art methods for text classification. We explored different training schemes, pretrained models, and model architectures. Our best result of 0.816 F1-score (0.818 precision and 0.814 recall) consists of a euphemism-detection-finetuned TweetEval/TimeLMs-pretrained RoBERTa model as a feature extractor frontend with a KimCNN classifier backend trained end-to-end using a cosine annealing scheduler. We observed pretrained models on sentiment analysis and offensiveness detection to correlate with more F1-score while pretraining on other tasks, such as sarcasm detection, produces less F1-scores. Also, putting more word vector channels does not improve the performance in our experiments. "
+}

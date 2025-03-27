@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Photoacoustic Computed Tomography"
+  ],
+  "datasets": [
+    "in-vivo PACT dataset of mice"
+  ],
+  "methods": [
+    "cross-domain unsupervised reconstruction",
+    "pure transformer model",
+    "self-supervised reconstruction",
+    "measurement and image consistency"
+  ],
+  "results": [
+    "0.83 structural similarity index (SSIM) in the extreme sparse case with 13 channels",
+    "close to supervised scheme (0.77 SSIM with 16 channels)"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b620",
+  "title": "Cross-domain Unsupervised Reconstruction with Equivariance for\n  Photoacoustic Computed Tomography",
+  "abstract": "  Accurate image reconstruction is crucial for photoacoustic (PA) computed tomography (PACT). Recently, deep learning has been used to reconstruct the PA image with a supervised scheme, which requires high-quality images as ground truth labels. In practice, there are inevitable trade-offs between cost and performance since the use of more channels is an expensive strategy to access more measurements. Here, we propose a cross-domain unsupervised reconstruction (CDUR) strategy with a pure transformer model, which overcomes the lack of ground truth labels from limited PA measurements. The proposed approach exploits the equivariance of PACT to achieve high performance with a smaller number of channels. We implement a self-supervised reconstruction in a model-based form. Meanwhile, we also leverage the self-supervision to enforce the measurement and image consistency on three partitions of measured PA data, by randomly masking different channels. We find that dynamically masking a high proportion of the channels, e.g., 80%, yields nontrivial self-supervisors in both image and signal domains, which decrease the multiplicity of the pseudo solution to efficiently reconstruct the image from fewer PA measurements with minimum error of the image. Experimental results on in-vivo PACT dataset of mice demonstrate the potential of our unsupervised framework. In addition, our method shows a high performance (0.83 structural similarity index (SSIM) in the extreme sparse case with 13 channels), which is close to that of supervised scheme (0.77 SSIM with 16 channels). On top of all the advantages, our method may be deployed on different trainable models in an end-to-end manner. "
+}

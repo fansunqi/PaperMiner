@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Uncertainty Quantification",
+    "Physical Systems Modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-informed Information Field Theory (PIFT)",
+    "Stochastic Gradient Langevin Dynamics"
+  ],
+  "results": [
+    "PIFT remains robust to incorrect physics representation",
+    "Correctly identifies when physics cannot be trusted"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c59b",
+  "title": "Physics-informed Information Field Theory for Modeling Physical Systems\n  with Uncertainty Quantification",
+  "abstract": "  Data-driven approaches coupled with physical knowledge are powerful techniques to model systems. The goal of such models is to efficiently solve for the underlying field by combining measurements with known physical laws. As many systems contain unknown elements, such as missing parameters, noisy data, or incomplete physical laws, this is widely approached as an uncertainty quantification problem. The common techniques to handle all the variables typically depend on the numerical scheme used to approximate the posterior, and it is desirable to have a method which is independent of any such discretization. Information field theory (IFT) provides the tools necessary to perform statistics over fields that are not necessarily Gaussian. We extend IFT to physics-informed IFT (PIFT) by encoding the functional priors with information about the physical laws which describe the field. The posteriors derived from this PIFT remain independent of any numerical scheme and can capture multiple modes, allowing for the solution of problems which are ill-posed. We demonstrate our approach through an analytical example involving the Klein-Gordon equation. We then develop a variant of stochastic gradient Langevin dynamics to draw samples from the joint posterior over the field and model parameters. We apply our method to numerical examples with various degrees of model-form error and to inverse problems involving nonlinear differential equations. As an addendum, the method is equipped with a metric which allows the posterior to automatically quantify model-form uncertainty. Because of this, our numerical experiments show that the method remains robust to even an incorrect representation of the physics given sufficient data. We numerically demonstrate that the method correctly identifies when the physics cannot be trusted, in which case it automatically treats learning the field as a regression problem. "
+}

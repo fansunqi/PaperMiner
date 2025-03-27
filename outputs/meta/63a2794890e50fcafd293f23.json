@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline policy learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LCBs optimization",
+    "AIPW-type estimators",
+    "self-normalized concentration inequality"
+  ],
+  "results": [
+    "Data-dependent upper bound for suboptimality",
+    "Efficient policy learning for adaptively collected data"
+  ],
+  "paper_id": "63a2794890e50fcafd293f23",
+  "title": "Policy learning \"without'' overlap: Pessimism and generalized empirical\n  Bernstein's inequality",
+  "abstract": "  This paper studies offline policy learning, which aims at utilizing observations collected a priori (from either fixed or adaptively evolving behavior policies) to learn the optimal individualized decision rule in a given class. Existing policy learning methods rely on a uniform overlap assumption, i.e., the propensities of exploring all actions for all individual characteristics are lower bounded in the offline dataset. In other words, the performance of these methods depends on the worst-case propensity in the offline dataset. As one has no control over the data collection process, this assumption can be unrealistic in many situations, especially when the behavior policies are allowed to evolve over time with diminishing propensities.   In this paper, we propose a new algorithm that optimizes lower confidence bounds (LCBs) -- instead of point estimates -- of the policy values. The LCBs are constructed by quantifying the estimation uncertainty of the augmented inverse propensity weighted (AIPW)-type estimators using knowledge of the behavior policies for collecting the offline data. Without assuming any uniform overlap condition, we establish a data-dependent upper bound for the suboptimality of our algorithm, which depends only on (i) the overlap for the optimal policy, and (ii) the complexity of the policy class. As an implication, for adaptively collected data, we ensure efficient policy learning as long as the propensities for optimal actions are lower bounded over time, while those for suboptimal ones are allowed to diminish arbitrarily fast. In our theoretical analysis, we develop a new self-normalized concentration inequality for IPW estimators, generalizing the well-known empirical Bernstein's inequality to unbounded and non-i.i.d. data. "
+}

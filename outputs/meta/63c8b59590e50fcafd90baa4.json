@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-supervised learning",
+    "Self-training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Enhancements to self-training pipeline"
+  ],
+  "results": [
+    "Performance gains over existing self-training design choices",
+    "Extendability to Open Set unlabeled data"
+  ],
+  "paper_id": "63c8b59590e50fcafd90baa4",
+  "title": "Enhancing Self-Training Methods",
+  "abstract": "  Semi-supervised learning approaches train on small sets of labeled data along with large sets of unlabeled data. Self-training is a semi-supervised teacher-student approach that often suffers from the problem of \"confirmation bias\" that occurs when the student model repeatedly overfits to incorrect pseudo-labels given by the teacher model for the unlabeled data. This bias impedes improvements in pseudo-label accuracy across self-training iterations, leading to unwanted saturation in model performance after just a few iterations. In this work, we describe multiple enhancements to improve the self-training pipeline to mitigate the effect of confirmation bias. We evaluate our enhancements over multiple datasets showing performance gains over existing self-training design choices. Finally, we also study the extendability of our enhanced approach to Open Set unlabeled data (containing classes not seen in labeled data). "
+}

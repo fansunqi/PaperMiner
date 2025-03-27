@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Score-based generative models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Score Fokker-Planck Equation",
+    "Denoising score matching (DSM)"
+  ],
+  "results": [
+    "Scores learned via DSM do not satisfy the underlying score FPE",
+    "Regularizing the DSM objective to enforce satisfaction of the score FPE improves likelihood and conservativity"
+  ],
+  "paper_id": "6344dede90e50fcafd24d1f7",
+  "title": "Improving Score-based Diffusion Models by Enforcing the Underlying Score\n  Fokker-Planck Equation",
+  "abstract": "  Score-based generative models learn a family of noise-conditional score functions corresponding to the data density perturbed with increasingly large amounts of noise. These perturbed data densities are tied together by the Fokker-Planck equation (FPE), a partial differential equation (PDE) governing the spatial-temporal evolution of a density undergoing a diffusion process. In this work, we derive a corresponding equation, called the score FPE that characterizes the noise-conditional scores of the perturbed data densities (i.e., their gradients). Surprisingly, despite impressive empirical performance, we observe that scores learned via denoising score matching (DSM) do not satisfy the underlying score FPE. We prove that satisfying the FPE is desirable as it improves the likelihood and the degree of conservativity. Hence, we propose to regularize the DSM objective to enforce satisfaction of the score FPE, and we show the effectiveness of this approach across various datasets. "
+}

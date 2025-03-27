@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://sites.google.com/view/f-vlm/home"
+  ],
+  "tasks": [
+    "Open-vocabulary object detection"
+  ],
+  "datasets": [
+    "LVIS",
+    "COCO"
+  ],
+  "methods": [
+    "Frozen Vision and Language Models",
+    "Finetuning detector head"
+  ],
+  "results": [
+    "+6.5 mask AP improvement over the previous state of the art on LVIS",
+    "Competitive results on COCO",
+    "Significant training speed-up and compute savings"
+  ],
+  "paper_id": "633a52a890e50fcafd68985d",
+  "title": "F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language\n  Models",
+  "abstract": "  We present F-VLM, a simple open-vocabulary object detection method built upon Frozen Vision and Language Models. F-VLM simplifies the current multi-stage training pipeline by eliminating the need for knowledge distillation or detection-tailored pretraining. Surprisingly, we observe that a frozen VLM: 1) retains the locality-sensitive features necessary for detection, and 2) is a strong region classifier. We finetune only the detector head and combine the detector and VLM outputs for each region at inference time. F-VLM shows compelling scaling behavior and achieves +6.5 mask AP improvement over the previous state of the art on novel categories of LVIS open-vocabulary detection benchmark. In addition, we demonstrate very competitive results on COCO open-vocabulary detection benchmark and cross-dataset transfer detection, in addition to significant training speed-up and compute savings. Code will be released at the https://sites.google.com/view/f-vlm/home "
+}

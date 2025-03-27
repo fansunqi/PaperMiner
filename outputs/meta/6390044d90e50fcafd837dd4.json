@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Eviction status detection from EHR notes"
+  ],
+  "datasets": [
+    "5000 EHR notes from VHA",
+    "SBDH dataset"
+  ],
+  "methods": [
+    "KIRESH model",
+    "Prompt engineering",
+    "Temperature Scaling-based Calibration"
+  ],
+  "results": [
+    "0.74672 MCC for eviction period prediction",
+    "0.66827 MCC for eviction presence prediction"
+  ],
+  "paper_id": "6390044d90e50fcafd837dd4",
+  "title": "Automated Identification of Eviction Status from Electronic Health\n  Record Notes",
+  "abstract": "  Objective: Evictions are important social and behavioral determinants of health. Evictions are associated with a cascade of negative events that can lead to unemployment, housing insecurity/homelessness, long-term poverty, and mental health problems. In this study, we developed a natural language processing system to automatically detect eviction status from electronic health record (EHR) notes.   Materials and Methods: We first defined eviction status (eviction presence and eviction period) and then annotated eviction status in 5000 EHR notes from the Veterans Health Administration (VHA). We developed a novel model, KIRESH, that has shown to substantially outperform other state-of-the-art models such as fine-tuning pre-trained language models like BioBERT and BioClinicalBERT. Moreover, we designed a novel prompt to further improve the model performance by using the intrinsic connection between the two sub-tasks of eviction presence and period prediction. Finally, we used the Temperature Scaling-based Calibration on our KIRESH-Prompt method to avoid over-confidence issues arising from the imbalance dataset.   Results: KIRESH-Prompt substantially outperformed strong baseline models including fine-tuning the BioClinicalBERT model to achieve 0.74672 MCC, 0.71153 Macro-F1, and 0.83396 Micro-F1 in predicting eviction period and 0.66827 MCC, 0.62734 Macro-F1, and 0.7863 Micro-F1 in predicting eviction presence. We also conducted additional experiments on a benchmark social determinants of health (SBDH) dataset to demonstrate the generalizability of our methods.   Conclusion and Future Work: KIRESH-Prompt has substantially improved eviction status classification. We plan to deploy KIRESH-Prompt to the VHA EHRs as an eviction surveillance system to help address the US Veterans' housing insecurity. "
+}

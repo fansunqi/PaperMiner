@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-frequency acoustic scattering problems in complex domains"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "eikonal and transport partial differential equations",
+    "WKB/geometric optic approximation of the Helmholtz equation",
+    "uniform theory of diffraction",
+    "jet marching method",
+    "Hermite interpolation",
+    "Lagrange multipliers",
+    "local visibility",
+    "fast Lagrangian initialization algorithms",
+    "dynamic programming plan",
+    "approximate origin function"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "630d7fde90e50fcafd3e62a5",
+  "title": "Numerical geometric acoustics: an eikonal-based approach for modeling\n  sound propagation in 3D environments",
+  "abstract": "  We present algorithms for solving high-frequency acoustic scattering problems in complex domains. The eikonal and transport partial differential equations from the WKB/geometric optic approximation of the Helmholtz equation are solved recursively to generate boundary conditions for a tree of eikonal/transport equation pairs, describing the phase and amplitude of a geometric optic wave propagating in a complicated domain, including reflection and diffraction. Edge diffraction is modeled using the uniform theory of diffraction. For simplicity, we limit our attention to domains with piecewise linear boundaries and a constant speed of sound. The domain is discretized into a conforming tetrahedron mesh. For the eikonal equation, we extend the jet marching method to tetrahedron meshes. Hermite interpolation enables second order accuracy for the eikonal and its gradient and first order accuracy for its Hessian, computed using cell averaging. To march the eikonal on an unstructured mesh, we introduce a new method of rejecting unphysical updates by considering Lagrange multipliers and local visibility. To handle accuracy degradation near caustics, we introduce several fast Lagrangian initialization algorithms. We store the dynamic programming plan uncovered by the marcher in order to propagate auxiliary quantities along characteristics. We introduce an approximate origin function which is computed using the dynamic programming plan, and whose 1/2-level set approximates the geometric optic shadow and reflection boundaries. We also use it to propagate geometric spreading factors and unit tangent vector fields needed to compute the amplitude and evaluate the high-frequency edge diffraction coefficient. We conduct numerical tests on a semi-infinite planar wedge to evaluate the accuracy of our method. We also show an example with a more realistic building model with challenging architectural features. "
+}

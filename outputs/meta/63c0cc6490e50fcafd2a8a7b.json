@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/robin-karlsson0/predictive-world-models"
+  ],
+  "tasks": [
+    "Predictive world modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hierarchical VAE (HVAE)",
+    "Sequential training method"
+  ],
+  "results": [
+    "Deterministic regions: 96.21 IoU",
+    "Stochastic regions: 62% closer to perfect prediction"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8a7b",
+  "title": "Predictive World Models from Real-World Partial Observations",
+  "abstract": "  Cognitive scientists believe adaptable intelligent agents like humans perform reasoning through learned causal mental simulations of agents and environments. The problem of learning such simulations is called predictive world modeling. Recently, reinforcement learning (RL) agents leveraging world models have achieved SOTA performance in game environments. However, understanding how to apply the world modeling approach in complex real-world environments relevant to mobile robots remains an open question. In this paper, we present a framework for learning a probabilistic predictive world model for real-world road environments. We implement the model using a hierarchical VAE (HVAE) capable of predicting a diverse set of fully observed plausible worlds from accumulated sensor observations. While prior HVAE methods require complete states as ground truth for learning, we present a novel sequential training method to allow HVAEs to learn to predict complete states from partially observed states only. We experimentally demonstrate accurate spatial structure prediction of deterministic regions achieving 96.21 IoU, and close the gap to perfect prediction by 62% for stochastic regions using the best prediction. By extending HVAEs to cases where complete ground truth states do not exist, we facilitate continual learning of spatial prediction as a step towards realizing explainable and comprehensive predictive world models for real-world mobile robotics applications. Code is available at https://github.com/robin-karlsson0/predictive-world-models. "
+}

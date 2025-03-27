@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/divelab/RMwGGIS"
+  ],
+  "tasks": [
+    "Learning energy-based models"
+  ],
+  "datasets": [
+    "Synthetic discrete data"
+  ],
+  "methods": [
+    "Ratio matching with gradient-guided importance sampling (RMwGGIS)"
+  ],
+  "results": [
+    "Significantly alleviates limitations of ratio matching",
+    "Performs more effectively in practice",
+    "Scales to high-dimensional problems"
+  ],
+  "paper_id": "634781f790e50fcafd2bf3a0",
+  "title": "Gradient-Guided Importance Sampling for Learning Binary Energy-Based\n  Models",
+  "abstract": "  Learning energy-based models (EBMs) is known to be difficult especially on discrete data where gradient-based learning strategies cannot be applied directly. Although ratio matching is a sound method to learn discrete EBMs, it suffers from expensive computation and excessive memory requirements, thereby resulting in difficulties in learning EBMs on high-dimensional data. Motivated by these limitations, in this study, we propose ratio matching with gradient-guided importance sampling (RMwGGIS). Particularly, we use the gradient of the energy function w.r.t. the discrete data space to approximately construct the provably optimal proposal distribution, which is subsequently used by importance sampling to efficiently estimate the original ratio matching objective. We perform experiments on density modeling over synthetic discrete data, graph generation, and training Ising models to evaluate our proposed method. The experimental results demonstrate that our method can significantly alleviate the limitations of ratio matching, perform more effectively in practice, and scale to high-dimensional problems. Our implementation is available at https://github.com/divelab/RMwGGIS. "
+}

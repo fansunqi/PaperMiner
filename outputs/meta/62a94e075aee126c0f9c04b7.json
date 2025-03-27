@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Motion artefact detection and quantification in brain MR images",
+    "Image quality assessment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SSIM regression through a residual neural network",
+    "Classification into different groups using SSIM ranges",
+    "ResNet-18 with contrast augmentation"
+  ],
+  "results": [
+    "Mean and standard deviation of residuals' distribution: \u03bc=-0.0009, \u03c3=0.0139",
+    "Classification accuracies: 97% for 3 classes, 95% for 5 classes, 89% for 10 classes"
+  ],
+  "paper_id": "62a94e075aee126c0f9c04b7",
+  "title": "Automated SSIM Regression for Detection and Quantification of Motion\n  Artefacts in Brain MR Images",
+  "abstract": "  Motion artefacts in magnetic resonance brain images can have a strong impact on diagnostic confidence. The assessment of MR image quality is fundamental before proceeding with the clinical diagnosis. Motion artefacts can alter the delineation of structures such as the brain, lesions or tumours and may require a repeat scan. Otherwise, an inaccurate (e.g. correct pathology but wrong severity) or incorrect diagnosis (e.g. wrong pathology) may occur. \"\\textit{Image quality assessment}\" as a fast, automated step right after scanning can assist in deciding if the acquired images are diagnostically sufficient. An automated image quality assessment based on the structural similarity index (SSIM) regression through a residual neural network is proposed in this work. Additionally, a classification into different groups - by subdividing with SSIM ranges - is evaluated. Importantly, this method predicts SSIM values of an input image in the absence of a reference ground truth image. The networks were able to detect motion artefacts, and the best performance for the regression and classification task has always been achieved with ResNet-18 with contrast augmentation. The mean and standard deviation of residuals' distribution were $\\mu=-0.0009$ and $\\sigma=0.0139$, respectively. Whilst for the classification task in 3, 5 and 10 classes, the best accuracies were 97, 95 and 89\\%, respectively. The results show that the proposed method could be a tool for supporting neuro-radiologists and radiographers in evaluating image quality quickly. "
+}

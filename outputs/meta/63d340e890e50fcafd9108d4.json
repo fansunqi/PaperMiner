@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Covid-19 detection using biobehavioral rhythms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gated Recurrent Unit (GRU) Network with Multi-Head Self-Attention (MHSA)"
+  ],
+  "results": [
+    "AUC-ROC of 0.79",
+    "Sensitivity = 0.69, Specificity=0.89, F$_{0.1}$ = 0.76"
+  ],
+  "paper_id": "63d340e890e50fcafd9108d4",
+  "title": "CovidRhythm: A Deep Learning Model for Passive Prediction of Covid-19\n  using Biobehavioral Rhythms Derived from Wearable Physiological Data",
+  "abstract": "  To investigate whether a deep learning model can detect Covid-19 from disruptions in the human body's physiological (heart rate) and rest-activity rhythms (rhythmic dysregulation) caused by the SARS-CoV-2 virus. We propose CovidRhythm, a novel Gated Recurrent Unit (GRU) Network with Multi-Head Self-Attention (MHSA) that combines sensor and rhythmic features extracted from heart rate and activity (steps) data gathered passively using consumer-grade smart wearable to predict Covid-19. A total of 39 features were extracted (standard deviation, mean, min/max/avg length of sedentary and active bouts) from wearable sensor data. Biobehavioral rhythms were modeled using nine parameters (mesor, amplitude, acrophase, and intra-daily variability). These features were then input to CovidRhythm for predicting Covid-19 in the incubation phase (one day before biological symptoms manifest). A combination of sensor and biobehavioral rhythm features achieved the highest AUC-ROC of 0.79 [Sensitivity = 0.69, Specificity=0.89, F$_{0.1}$ = 0.76], outperforming prior approaches in discriminating Covid-positive patients from healthy controls using 24 hours of historical wearable physiological. Rhythmic features were the most predictive of Covid-19 infection when utilized either alone or in conjunction with sensor features. Sensor features predicted healthy subjects best. Circadian rest-activity rhythms that combine 24h activity and sleep information were the most disrupted. CovidRhythm demonstrates that biobehavioral rhythms derived from consumer-grade wearable data can facilitate timely Covid-19 detection. To the best of our knowledge, our work is the first to detect Covid-19 using deep learning and biobehavioral rhythms features derived from consumer-grade wearable data. "
+}

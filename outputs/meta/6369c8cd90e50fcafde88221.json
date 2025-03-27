@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reducing the peak latency of CTC models"
+  ],
+  "datasets": [
+    "AISHELL-1"
+  ],
+  "methods": [
+    "Peak-first regularization"
+  ],
+  "results": [
+    "Average peak latency reduced by about 100 to 200 milliseconds",
+    "No significant degradation of recognition accuracy"
+  ],
+  "paper_id": "6369c8cd90e50fcafde88221",
+  "title": "Peak-First CTC: Reducing the Peak Latency of CTC Models by Applying\n  Peak-First Regularization",
+  "abstract": "  The CTC model has been widely applied to many application scenarios because of its simple structure, excellent performance, and fast inference speed. There are many peaks in the probability distribution predicted by the CTC models, and each peak represents a non-blank token. The recognition latency of CTC models can be reduced by encouraging the model to predict peaks earlier. Existing methods to reduce latency require modifying the transition relationship between tokens in the forward-backward algorithm, and the gradient calculation. Some of these methods even depend on the forced alignment results provided by other pretrained models. The above methods are complex to implement. To reduce the peak latency, we propose a simple and novel method named peak-first regularization, which utilizes a frame-wise knowledge distillation function to force the probability distribution of the CTC model to shift left along the time axis instead of directly modifying the calculation process of CTC loss and gradients. All the experiments are conducted on a Chinese Mandarin dataset AISHELL-1. We have verified the effectiveness of the proposed regularization on both streaming and non-streaming CTC models respectively. The results show that the proposed method can reduce the average peak latency by about 100 to 200 milliseconds with almost no degradation of recognition accuracy. "
+}

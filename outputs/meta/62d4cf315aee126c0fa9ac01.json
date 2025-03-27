@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text Spotting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Single Shot Self-Reliant Scene Text Spotter v2 (SRSTS v2)",
+    "Decoupled yet Collaborative Detection and Recognition",
+    "Sampling-driven concurrent spotting framework"
+  ],
+  "results": [
+    "Comparably favorably to state-of-the-art spotters"
+  ],
+  "paper_id": "62d4cf315aee126c0fa9ac01",
+  "title": "Single Shot Self-Reliant Scene Text Spotter by Decoupled yet\n  Collaborative Detection and Recognition",
+  "abstract": "  Typical text spotters follow the two-stage spotting paradigm which detects the boundary for a text instance first and then performs text recognition within the detected regions. Despite the remarkable progress of such spotting paradigm, an important limitation is that the performance of text recognition depends heavily on the precision of text detection, resulting in the potential error propagation from detection to recognition. In this work, we propose the single shot Self-Reliant Scene Text Spotter v2 (SRSTS v2), which circumvents this limitation by decoupling recognition from detection while optimizing two tasks collaboratively. Specifically, our SRSTS v2 samples representative feature points around each potential text instance, and conducts both text detection and recognition in parallel guided by these sampled points. Thus, the text recognition is no longer dependent on detection, thereby alleviating the error propagation from detection to recognition. Moreover, the sampling module is learned under the supervision from both detection and recognition, which allows for the collaborative optimization and mutual enhancement between two tasks. Benefiting from such sampling-driven concurrent spotting framework, our approach is able to recognize the text instances correctly even if the precise text boundaries are challenging to detect. Extensive experiments on four benchmarks demonstrate that our method compares favorably to state-of-the-art spotters. "
+}

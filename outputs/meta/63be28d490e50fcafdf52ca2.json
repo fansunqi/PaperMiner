@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Debiasing deep neural networks"
+  ],
+  "datasets": [
+    "BAR"
+  ],
+  "methods": [
+    "Entropic adversarial data augmentation",
+    "Encoder-decoder architecture"
+  ],
+  "results": [
+    "Competitive results on the BAR dataset"
+  ],
+  "paper_id": "63be28d490e50fcafdf52ca2",
+  "title": "Look Beyond Bias with Entropic Adversarial Data Augmentation",
+  "abstract": "  Deep neural networks do not discriminate between spurious and causal patterns, and will only learn the most predictive ones while ignoring the others. This shortcut learning behaviour is detrimental to a network's ability to generalize to an unknown test-time distribution in which the spurious correlations do not hold anymore. Debiasing methods were developed to make networks robust to such spurious biases but require to know in advance if a dataset is biased and make heavy use of minority counterexamples that do not display the majority bias of their class. In this paper, we argue that such samples should not be necessarily needed because the ''hidden'' causal information is often also contained in biased images. To study this idea, we propose 3 publicly released synthetic classification benchmarks, exhibiting predictive classification shortcuts, each of a different and challenging nature, without any minority samples acting as counterexamples. First, we investigate the effectiveness of several state-of-the-art strategies on our benchmarks and show that they do not yield satisfying results on them. Then, we propose an architecture able to succeed on our benchmarks, despite their unusual properties, using an entropic adversarial data augmentation training scheme. An encoder-decoder architecture is tasked to produce images that are not recognized by a classifier, by maximizing the conditional entropy of its outputs, and keep as much as possible of the initial content. A precise control of the information destroyed, via a disentangling process, enables us to remove the shortcut and leave everything else intact. Furthermore, results competitive with the state-of-the-art on the BAR dataset ensure the applicability of our method in real-life situations. "
+}

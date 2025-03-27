@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/MCG-NJU/BasicTAD"
+  ],
+  "tasks": [
+    "Temporal action detection"
+  ],
+  "datasets": [
+    "THUMOS14",
+    "FineAction"
+  ],
+  "methods": [
+    "BasicTAD",
+    "PlusTAD"
+  ],
+  "results": [
+    "BasicTAD is close to state-of-the-art with two-stream inputs",
+    "PlusTAD significantly outperforms previous methods"
+  ],
+  "paper_id": "627483fc5aee126c0f07e4fe",
+  "title": "BasicTAD: an Astounding RGB-Only Baseline for Temporal Action Detection",
+  "abstract": "  Temporal action detection (TAD) is extensively studied in the video understanding community by generally following the object detection pipeline in images. However, complex designs are not uncommon in TAD, such as two-stream feature extraction, multi-stage training, complex temporal modeling, and global context fusion. In this paper, we do not aim to introduce any novel technique for TAD. Instead, we study a simple, straightforward, yet must-known baseline given the current status of complex design and low detection efficiency in TAD. In our simple baseline (termed BasicTAD), we decompose the TAD pipeline into several essential components: data sampling, backbone design, neck construction, and detection head. We extensively investigate the existing techniques in each component for this baseline, and more importantly, perform end-to-end training over the entire pipeline thanks to the simplicity of design. As a result, this simple BasicTAD yields an astounding and real-time RGB-Only baseline very close to the state-of-the-art methods with two-stream inputs. In addition, we further improve the BasicTAD by preserving more temporal and spatial information in network representation (termed as PlusTAD). Empirical results demonstrate that our PlusTAD is very efficient and significantly outperforms the previous methods on the datasets of THUMOS14 and FineAction. Meanwhile, we also perform in-depth visualization and error analysis on our proposed method and try to provide more insights on the TAD problem. Our approach can serve as a strong baseline for future TAD research. The code and model will be released at https://github.com/MCG-NJU/BasicTAD. "
+}

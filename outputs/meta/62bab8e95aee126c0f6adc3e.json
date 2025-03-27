@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Distillation"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "CIFAR100"
+  ],
+  "methods": [
+    "Mixed Sample Regularization (MSR)",
+    "CutMix",
+    "Cut^nMix",
+    "feature level mutual learning",
+    "self-ensemble teacher"
+  ],
+  "results": [
+    "Consistently outperforms state-of-the-art distillation methods"
+  ],
+  "paper_id": "62bab8e95aee126c0f6adc3e",
+  "title": "Mixed Sample Augmentation for Online Distillation",
+  "abstract": "  Mixed Sample Regularization (MSR), such as MixUp or CutMix, is a powerful data augmentation strategy to generalize convolutional neural networks. Previous empirical analysis has illustrated an orthogonal performance gain between MSR and conventional offline Knowledge Distillation (KD). To be more specific, student networks can be enhanced with the involvement of MSR in the training stage of sequential distillation. Yet, the interplay between MSR and online knowledge distillation, where an ensemble of peer students learn mutually from each other, remains unexplored. To bridge the gap, we make the first attempt at incorporating CutMix into online distillation, where we empirically observe a significant improvement. Encouraged by this fact, we propose an even stronger MSR specifically for online distillation, named as Cut\\textsuperscript{n}Mix. Furthermore, a novel online distillation framework is designed upon Cut\\textsuperscript{n}Mix, to enhance the distillation with feature level mutual learning and a self-ensemble teacher. Comprehensive evaluations on CIFAR10 and CIFAR100 with six network architectures show that our approach can consistently outperform state-of-the-art distillation methods. "
+}

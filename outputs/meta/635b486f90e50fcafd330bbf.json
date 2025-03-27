@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Few-shot image generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Masked discrimination",
+    "Cross-domain consistency loss"
+  ],
+  "results": [
+    "Higher quality and greater diversity on few-shot image generation tasks"
+  ],
+  "paper_id": "635b486f90e50fcafd330bbf",
+  "title": "Few-shot Image Generation via Masked Discrimination",
+  "abstract": "  Few-shot image generation aims to generate images of high quality and great diversity with limited data. However, it is difficult for modern GANs to avoid overfitting when trained on only a few images. The discriminator can easily remember all the training samples and guide the generator to replicate them, leading to severe diversity degradation. Several methods have been proposed to relieve overfitting by adapting GANs pre-trained on large source domains to target domains using limited real samples. This work presents a novel approach to realize few-shot GAN adaptation via masked discrimination. Random masks are applied to features extracted by the discriminator from input images. We aim to encourage the discriminator to judge various images which share partially common features with training samples as realistic. Correspondingly, the generator is guided to generate diverse images instead of replicating training samples. In addition, we employ a cross-domain consistency loss for the discriminator to keep relative distances between generated samples in its feature space. It strengthens global image discrimination and guides adapted GANs to preserve more information learned from source domains for higher image quality. The effectiveness of our approach is demonstrated both qualitatively and quantitatively with higher quality and greater diversity on a series of few-shot image generation tasks than prior methods. "
+}

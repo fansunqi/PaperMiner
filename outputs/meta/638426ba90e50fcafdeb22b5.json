@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding Quasi-Identifiers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Improved sampling algorithm",
+    "Balls-into-bins problem analysis"
+  ],
+  "results": [
+    "Sample size improved to \u0398(m/\u221a\u03b5)",
+    "Faster running time",
+    "Analysis of sketching algorithm space requirements"
+  ],
+  "paper_id": "638426ba90e50fcafdeb22b5",
+  "title": "Towards Better Bounds for Finding Quasi-Identifiers",
+  "abstract": "  We revisit the problem of finding small $\\epsilon$-separation keys introduced by Motwani and Xu (2008). In this problem, the input is $m$-dimensional tuples $x_1,x_2,\\ldots,x_n $. The goal is to find a small subset of coordinates that separates at least $(1-\\epsilon){n \\choose 2}$ pairs of tuples. They provided a fast algorithm that runs on $\\Theta(m/\\epsilon)$ tuples sampled uniformly at random. We show that the sample size can be improved to $\\Theta(m/\\sqrt{\\epsilon})$. Our algorithm also enjoys a faster running time. To obtain this result, we provide upper and lower bounds on the sample size to solve the following decision problem. Given a subset of coordinates $A$, reject if $A$ separates fewer than $(1-\\epsilon){n \\choose 2}$ pairs, and accept if $A$ separates all pairs. The algorithm must be correct with probability at least $1-\\delta$ for all $A$. We show that for algorithms based on sampling:   - $\\Theta(m/\\sqrt{\\epsilon})$ samples are sufficient and necessary so that $\\delta \\leq e^{-m}$ and   - $\\Omega(\\sqrt{\\frac{\\log m}{\\epsilon}})$ samples are necessary so that $\\delta$ is a constant.   Our analysis is based on a constrained version of the balls-into-bins problem. We believe our analysis may be of independent interest. We also study a related problem that asks for the following sketching algorithm: with given parameters $\\alpha,k$ and $\\epsilon$, the algorithm takes a subset of coordinates $A$ of size at most $k$ and returns an estimate of the number of unseparated pairs in $A$ up to a $(1\\pm\\epsilon)$ factor if it is at least $\\alpha {n \\choose 2}$. We show that even for constant $\\alpha$ and success probability, such a sketching algorithm must use $\\Omega(mk \\log \\epsilon^{-1})$ bits of space; on the other hand, uniform sampling yields a sketch of size $\\Theta(\\frac{mk \\log m}{\\alpha \\epsilon^2})$ for this purpose. "
+}

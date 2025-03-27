@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Minimizing Age of Incorrect Information over a Channel with Random Delay"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Markov decision process",
+    "threshold policy",
+    "policy improvement theorem",
+    "relative value iteration algorithm"
+  ],
+  "results": [
+    "Optimal policy with $\tau=1$ is proven",
+    "Numerical results highlighting the performance of the optimal policy"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905d07",
+  "title": "Minimizing Age of Incorrect Information over a Channel with Random Delay",
+  "abstract": "  We consider a transmitter-receiver pair in a slotted-time system. The transmitter observes a dynamic source and sends updates to a remote receiver through an error-free communication channel that suffers a random delay. We consider two cases. In the first case, the update is guaranteed to be delivered within a certain number of time slots. In the second case, the update is immediately discarded once the transmission time exceeds a predetermined value. The receiver estimates the state of the dynamic source using the received updates. In this paper, we adopt the Age of Incorrect Information (AoII) as the performance metric and investigate the problem of optimizing the transmitter's action in each time slot to minimize AoII. We first characterize the optimization problem using the Markov decision process and investigate the performance of the threshold policy, under which the transmitter transmits updates only when the transmission is allowed and the AoII exceeds the threshold $\\tau$. By delving into the characteristics of the system evolution, we precisely compute the expected AoII achieved by the threshold policy using the Markov chain. Then, we prove that the optimal policy exists and provide a computable relative value iteration algorithm to estimate the optimal policy. Furthermore, by leveraging the policy improvement theorem, we theoretically prove that, under an easily verifiable condition, the optimal policy is the threshold policy with $\\tau=1$. Finally, numerical results are presented to highlight the performance of the optimal policy. "
+}

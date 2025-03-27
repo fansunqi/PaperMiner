@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimal Power Flow (OPF)"
+  ],
+  "datasets": [
+    "PGLib"
+  ],
+  "methods": [
+    "Compact Learning",
+    "PCA"
+  ],
+  "results": [
+    "Significant reduction in the number of trainable parameters",
+    "Significant speed-ups in AC solver"
+  ],
+  "paper_id": "64337e3090e50fcafd76eca8",
+  "title": "Compact Optimization Learning for AC Optimal Power Flow",
+  "abstract": "  This paper reconsiders end-to-end learning approaches to the Optimal Power Flow (OPF). Existing methods, which learn the input/output mapping of the OPF, suffer from scalability issues due to the high dimensionality of the output space. This paper first shows that the space of optimal solutions can be significantly compressed using principal component analysis (PCA). It then proposes Compact Learning, a new method that learns in a subspace of the principal components before translating the vectors into the original output space. This compression reduces the number of trainable parameters substantially, improving scalability and effectiveness. Compact Learning is evaluated on a variety of test cases from the PGLib with up to 30,000 buses. The paper also shows that the output of Compact Learning can be used to warm-start an exact AC solver to restore feasibility, while bringing significant speed-ups. "
+}

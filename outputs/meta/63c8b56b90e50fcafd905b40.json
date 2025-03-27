@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Distributed optimization problem over a multi-agent network"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Compressed decentralized stochastic gradient method (CEDAS)"
+  ],
+  "results": [
+    "Asymptotically achieves comparable convergence rate as centralized SGD",
+    "Shortest transient time for achieving convergence rate",
+    "Convergence rate: \ud835\udcaa(nC^3/(1-\u03bb_2)^2) for smooth strongly convex, \ud835\udcaa(n^3C^6/(1-\u03bb_2)^4) for smooth nonconvex"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b40",
+  "title": "CEDAS: A Compressed Decentralized Stochastic Gradient Method with\n  Improved Convergence",
+  "abstract": "In this paper, we consider solving the distributed optimization problem over\na multi-agent network under the communication restricted setting. We study a\ncompressed decentralized stochastic gradient method, termed \u201ccompressed exact\ndiffusion with adaptive stepsizes (CEDAS)\", and show the method asymptotically\nachieves comparable convergence rate as centralized  stochastic gradient\ndescent (SGD) for both smooth strongly convex objective functions and smooth\nnonconvex objective functions under unbiased compression operators. In\nparticular, to our knowledge, CEDAS enjoys so far the shortest transient time\n(with respect to the graph specifics) for achieving the convergence rate of\ncentralized SGD, which behaves as \ud835\udcaa(nC^3/(1-\u03bb_2)^2) under\nsmooth strongly convex objective functions, and\n\ud835\udcaa(n^3C^6/(1-\u03bb_2)^4) under smooth nonconvex objective\nfunctions, where (1-\u03bb_2) denotes the spectral gap of the mixing matrix,\nand C>0 is the compression-related parameter. Numerical experiments further\ndemonstrate the effectiveness of the proposed algorithm."
+}

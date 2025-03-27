@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parallel File System I/O Path Tuning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "IOPathTune"
+  ],
+  "results": [
+    "Better performance than default configuration up to 231% on standalone executions",
+    "89.57% better overall performance than CAPES in multiple client executions"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b5c4",
+  "title": "IOPathTune: Adaptive Online Parameter Tuning for Parallel File System\n  I/O Path",
+  "abstract": "  Parallel file systems contain complicated I/O paths from clients to storage servers. An efficient I/O path requires proper settings of multiple parameters, as the default settings often fail to deliver optimal performance, especially for diverse workloads in the HPC environment. Existing tuning strategies have shortcomings in being adaptive, timely, and flexible. We propose IOPathTune, which adaptively tunes PFS I/O Path online from the client side without characterizing the workloads, doing expensive profiling, and communicating with other machines. We implemented IOPathTune on Lustre and leveraged CloudLab to conduct the evaluations on 20 different Filebench workloads in three different scenarios. We observed either on-par or better performance than the default configuration, as high as 231% on standalone executions. IOPathTune also delivers 89.57% better overall performance than CAPES in multiple client executions. "
+}

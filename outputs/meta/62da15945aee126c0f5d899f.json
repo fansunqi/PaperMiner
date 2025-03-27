@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Liver Segmentation"
+  ],
+  "datasets": [
+    "CT perfusion data",
+    "CBCT data",
+    "CBCT TST"
+  ],
+  "methods": [
+    "Turbolift learning",
+    "multi-scale Attention UNet"
+  ],
+  "results": [
+    "Dice scores: 0.874\u00b10.031 and 0.905\u00b10.007",
+    "Statistically significant improvements",
+    "Robust against artefacts"
+  ],
+  "paper_id": "62da15945aee126c0f5d899f",
+  "title": "Liver Segmentation using Turbolift Learning for CT and Cone-beam C-arm\n  Perfusion Imaging",
+  "abstract": "  Model-based reconstruction employing the time separation technique (TST) was found to improve dynamic perfusion imaging of the liver using C-arm cone-beam computed tomography (CBCT). To apply TST using prior knowledge extracted from CT perfusion data, the liver should be accurately segmented from the CT scans. Reconstructions of primary and model-based CBCT data need to be segmented for proper visualisation and interpretation of perfusion maps. This research proposes Turbolift learning, which trains a modified version of the multi-scale Attention UNet on different liver segmentation tasks serially, following the order of the trainings CT, CBCT, CBCT TST - making the previous trainings act as pre-training stages for the subsequent ones - addressing the problem of limited number of datasets for training. For the final task of liver segmentation from CBCT TST, the proposed method achieved an overall Dice scores of 0.874$\\pm$0.031 and 0.905$\\pm$0.007 in 6-fold and 4-fold cross-validation experiments, respectively - securing statistically significant improvements over the model, which was trained only for that task. Experiments revealed that Turbolift not only improves the overall performance of the model but also makes it robust against artefacts originating from the embolisation materials and truncation artefacts. Additionally, in-depth analyses confirmed the order of the segmentation tasks. This paper shows the potential of segmenting the liver from CT, CBCT, and CBCT TST, learning from the available limited training data, which can possibly be used in the future for the visualisation and evaluation of the perfusion maps for the treatment evaluation of liver diseases. "
+}

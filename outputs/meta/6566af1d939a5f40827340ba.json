@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "d-distance b-matching problem",
+    "cyclic d-distance matching problem",
+    "non-cyclic d-distance matching problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "approximation algorithms",
+    "integer programming model"
+  ],
+  "results": [
+    "APX-hard",
+    "integrality gap",
+    "e-approximation algorithms"
+  ],
+  "paper_id": "6566af1d939a5f40827340ba",
+  "title": "Matchings under distance constraints II",
+  "abstract": "This paper introduces the \\emph{$d$-distance $b$-matching problem}, in which\nwe are given a bipartite graph $G=(S,T;E)$ with $S=\\{s_1,\\dots,s_n\\}$, a weight\nfunction on the edges, an integer $d\\in\\mathbb{Z}_+$ and a degree bound\nfunction $b:S\\cup T\\to\\mathbb{Z}_+$. The goal is to find a maximum-weight\nsubset $M\\subseteq E$ of the edges satisfying the following two conditions: 1)\nthe degree of each node $v\\in S\\cup T$ is at most $b(v)$ in $M$, 2) if\n$s_it,s_jt\\in M$, then $|i-j|\\geq d$. In the cyclic version of the problem, the\nnodes in $S$ are considered to be in cyclic order. We get back the\n\\emph{(cyclic) $d$-distance matching problem} when $b(s) = 1$ for $s\\in S$ and\n$b(t) = \\infty$ for $t\\in T$.\n  We prove that the $d$-distance matching problem is APX-hard even in the\nunweighted case. We show that $(2-\\frac{1}{d})$ is a tight upper bound on the\nintegrality gap of the natural integer programming model for the cyclic\n$d$-distance $b$-matching problem provided that $(2d-1)$ divides the size of\n$S$. For the non-cyclic case, the integrality gap is shown to be at most\n$(2-\\frac{2}{d})$. The proofs give approximation algorithms with guarantees\nmatching these bounds, and also improve the best known algorithms for the\n(cyclic) $d$-distance matching problem. In a related problem, our goal is to\nfind a permutation of $S$ maximizing the weight of the optimal $d$-distance\n$b$-matching. This problem can be solved in polynomial time for the (cyclic)\n$d$-distance matching problem -- even though the (cyclic) $d$-distance matching\nproblem itself is NP-hard and also hard to approximate arbitrarily. For\n(cyclic) $d$-distance $b$-matchings, however, we prove that finding the best\npermutation is NP-hard even if $b\\equiv 2$ or $d=2$, and we give\n$e$-approximation algorithms."
+}

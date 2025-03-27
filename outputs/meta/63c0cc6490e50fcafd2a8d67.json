@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fuzz testing",
+    "Security vulnerabilities",
+    "Coverage-based fuzzers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fork-awareness property",
+    "Evaluation of 14 coverage-guided fuzzers"
+  ],
+  "results": [
+    "Highlighting the ineffectiveness of current fuzzers against systems using forks"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8d67",
+  "title": "Evaluating the Fork-Awareness of Coverage-Guided Fuzzers",
+  "abstract": "  Fuzz testing (or fuzzing) is an effective technique used to find security vulnerabilities. It consists of feeding a software under test with malformed inputs, waiting for a weird system behaviour (often a crash of the system). Over the years, different approaches have been developed, and among the most popular lies the coverage-based one. It relies on the instrumentation of the system to generate inputs able to cover as much code as possible. The success of this approach is also due to its usability as fuzzing techniques research approaches that do not require (or only partial require) human interactions. Despite the efforts, devising a fully-automated fuzzer still seems to be a challenging task. Target systems may be very complex; they may integrate cryptographic primitives, compute and verify check-sums and employ forks to enhance the system security, achieve better performances or manage different connections at the same time. This paper introduces the fork-awareness property to express the fuzzer ability to manage systems using forks. This property is leveraged to evaluate 14 of the most widely coverage-guided fuzzers and highlight how current fuzzers are ineffective against systems using forks. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Retinal fundus image analysis",
+    "Explainable classification of fundus images"
+  ],
+  "datasets": [
+    "4746 fundus images"
+  ],
+  "methods": [
+    "Convolutional neural networks",
+    "Deep learning explainability tools",
+    "Image segmentation"
+  ],
+  "results": [
+    "Peripapillary area darker in males",
+    "Richer retinal vasculature networks in males",
+    "Greater vessel area in superior temporal quadrant of retina in males"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b616",
+  "title": "Artificial intelligence as a gateway to scientific discovery: Uncovering\n  features in retinal fundus images",
+  "abstract": "  Purpose: Convolutional neural networks can be trained to detect various conditions or patient traits based on retinal fundus photographs, some of which, such as the patient sex, are invisible to the expert human eye. Here we propose a methodology for explainable classification of fundus images to uncover the mechanism(s) by which CNNs successfully predict the labels. We used patient sex as a case study to validate our proposed methodology.   Approach: First, we used a set of 4746 fundus images, including training, validation and test partitions, to fine-tune a pre-trained CNN on the sex classification task. Next, we utilized deep learning explainability tools to hypothesize possible ways sex differences in the retina manifest. We measured numerous retinal properties relevant to our hypotheses through image segmentation to identify those significantly different between males and females. To tackle the multiple comparisons problem, we shortlisted the parameters by testing them on a set of 100 fundus images distinct from the images used for fine-tuning. Finally, we used an additional 400 images, not included in any previous set, to reveal significant sex differences in the retina.   Results: We observed that the peripapillary area is darker in males compared to females ($p=.023, d=.243$). We also observed that males have richer retinal vasculature networks by showing a higher number of branches ($p=.016, d=.272$) and nodes ($p=.014, d=.299$) and a larger total length of branches ($p=.045, d=.206$) in the vessel graph. Also, vessels cover a greater area in the superior temporal quadrant of the retina in males compared to females ($p=0.048, d=.194$).   Conclusions: Our methodology reveals retinal features in fundus photographs that allow CNNs to predict traits currently unknown, but meaningful to experts. "
+}

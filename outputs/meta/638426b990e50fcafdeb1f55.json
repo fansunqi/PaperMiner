@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bilevel Optimization Problem",
+    "Bilevel Knapsack Problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph Neural Networks"
+  ],
+  "results": [
+    "Feasible solution found 500 times faster than the exact algorithm",
+    "1.7% optimal gap"
+  ],
+  "paper_id": "638426b990e50fcafdeb1f55",
+  "title": "Solving Bilevel Knapsack Problem using Graph Neural Networks",
+  "abstract": "  The Bilevel Optimization Problem is a hierarchical optimization problem with two agents, a leader and a follower. The leader make their own decisions first, and the followers make the best choices accordingly. The leader knows the information of the followers, and the goal of the problem is to find the optimal solution by considering the reactions of the followers from the leader's point of view. For the Bilevel Optimization Problem, there are no general and efficient algorithms or commercial solvers to get an optimal solution, and it is very difficult to get a good solution even for a simple problem. In this paper, we propose a deep learning approach using Graph Neural Networks to solve the bilevel knapsack problem. We train the model to predict the leader's solution and use it to transform the hierarchical optimization problem into a single-level optimization problem to get the solution. Our model found the feasible solution that was about 500 times faster than the exact algorithm with $1.7\\%$ optimal gap. Also, our model performed well on problems of different size from the size it was trained on. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Remote Visualization of Large Volumes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Efficient Raycasting Algorithm",
+    "Perspective Projection",
+    "Spatial Smoothness",
+    "Subsampling for Preview Rendering"
+  ],
+  "results": [
+    "Responsive frame rates for HD display resolutions",
+    "High-fidelity approximate renderings of Gigabyte-sized volumes"
+  ],
+  "paper_id": "62afe5495aee126c0f668ba4",
+  "title": "Efficient Raycasting of Volumetric Depth Images for Remote Visualization\n  of Large Volumes at High Frame Rates",
+  "abstract": "  We present an efficient raycasting algorithm for rendering Volumetric Depth Images (VDIs), and we show how it can be used in a remote visualization setting with VDIs generated and streamed from a remote server. VDIs are compact view-dependent volume representations that enable interactive visualization of large volumes at high frame rates by decoupling viewpoint changes from expensive rendering calculations. However, current rendering approaches for VDIs struggle with achieving interactive frame rates at high image resolutions. Here, we exploit the properties of perspective projection to simplify intersections of rays with the view-dependent frustums in a VDI and leverage spatial smoothness in the volume data to minimize memory accesses. Benchmarks show that responsive frame rates can be achieved close to the viewpoint of generation for HD display resolutions, providing high-fidelity approximate renderings of Gigabyte-sized volumes. We also propose a method to subsample the VDI for preview rendering, maintaining high frame rates even for large viewpoint deviations. We provide our implementation as an extension of an established open-source visualization library. "
+}

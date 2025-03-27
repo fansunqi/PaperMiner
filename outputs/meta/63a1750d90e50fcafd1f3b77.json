@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Implicit k-Space for Binning-free Non-Cartesian Cardiac MR Imaging"
+  ],
+  "datasets": [
+    "42 radially sampled datasets from 6 subjects"
+  ],
+  "methods": [
+    "Neural implicit representation in k-space",
+    "Multi-layer perceptron with frequency domain regularization"
+  ],
+  "results": [
+    "Improved artifact removal and spatio-temporal resolution",
+    "Potential for real-time CMR"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f3b77",
+  "title": "Neural Implicit k-Space for Binning-free Non-Cartesian Cardiac MR\n  Imaging",
+  "abstract": "  In this work, we propose a novel image reconstruction framework that directly learns a neural implicit representation in k-space for ECG-triggered non-Cartesian Cardiac Magnetic Resonance Imaging (CMR). While existing methods bin acquired data from neighboring time points to reconstruct one phase of the cardiac motion, our framework allows for a continuous, binning-free, and subject-specific k-space representation.We assign a unique coordinate that consists of time, coil index, and frequency domain location to each sampled k-space point. We then learn the subject-specific mapping from these unique coordinates to k-space intensities using a multi-layer perceptron with frequency domain regularization. During inference, we obtain a complete k-space for Cartesian coordinates and an arbitrary temporal resolution. A simple inverse Fourier transform recovers the image, eliminating the need for density compensation and costly non-uniform Fourier transforms for non-Cartesian data. This novel imaging framework was tested on 42 radially sampled datasets from 6 subjects. The proposed method outperforms other techniques qualitatively and quantitatively using data from four and one heartbeat(s) and 30 cardiac phases. Our results for one heartbeat reconstruction of 50 cardiac phases show improved artifact removal and spatio-temporal resolution, leveraging the potential for real-time CMR. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Streaming Sequence Tagging"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hybrid Encoder with Adaptive Restart (HEAR)"
+  ],
+  "results": [
+    "FLOP savings in streaming settings upto 71.1%",
+    "outperforms bidirectional encoders for streaming predictions by upto +10% streaming exact match"
+  ],
+  "paper_id": "6413dabd90e50fcafd3cd5f2",
+  "title": "Efficient Encoders for Streaming Sequence Tagging",
+  "abstract": "  A naive application of state-of-the-art bidirectional encoders for streaming sequence tagging would require encoding each token from scratch for each new token in an incremental streaming input (like transcribed speech). The lack of re-usability of previous computation leads to a higher number of Floating Point Operations (or FLOPs) and higher number of unnecessary label flips. Increased FLOPs consequently lead to higher wall-clock time and increased label flipping leads to poorer streaming performance. In this work, we present a Hybrid Encoder with Adaptive Restart (HEAR) that addresses these issues while maintaining the performance of bidirectional encoders over the offline (or complete) inputs while improving performance on streaming (or incomplete) inputs. HEAR has a Hybrid unidirectional-bidirectional encoder architecture to perform sequence tagging, along with an Adaptive Restart Module (ARM) to selectively guide the restart of bidirectional portion of the encoder. Across four sequence tagging tasks, HEAR offers FLOP savings in streaming settings upto 71.1% and also outperforms bidirectional encoders for streaming predictions by upto +10% streaming exact match. "
+}

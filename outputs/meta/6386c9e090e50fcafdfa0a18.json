@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tensor Completion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Integer Programming",
+    "Blended Conditional Gradients",
+    "Blended Pairwise Conditional Gradients"
+  ],
+  "results": [
+    "Achieves information-theoretic sample complexity rate",
+    "Can scale up to 100 million entries on a personal computer"
+  ],
+  "paper_id": "6386c9e090e50fcafdfa0a18",
+  "title": "Accelerated Nonnegative Tensor Completion via Integer Programming",
+  "abstract": "  The problem of tensor completion has applications in healthcare, computer vision, and other domains. However, past approaches to tensor completion have faced a tension in that they either have polynomial-time computation but require exponentially more samples than the information-theoretic rate, or they use fewer samples but require solving NP-hard problems for which there are no known practical algorithms. A recent approach, based on integer programming, resolves this tension for nonnegative tensor completion. It achieves the information-theoretic sample complexity rate and deploys the Blended Conditional Gradients algorithm, which requires a linear (in numerical tolerance) number of oracle steps to converge to the global optimum. The tradeoff in this approach is that, in the worst case, the oracle step requires solving an integer linear program. Despite this theoretical limitation, numerical experiments show that this algorithm can, on certain instances, scale up to 100 million entries while running on a personal computer. The goal of this paper is to further enhance this algorithm, with the intention to expand both the breadth and scale of instances that can be solved. We explore several variants that can maintain the same theoretical guarantees as the algorithm, but offer potentially faster computation. We consider different data structures, acceleration of gradient descent steps, and the use of the Blended Pairwise Conditional Gradients algorithm. We describe the original approach and these variants, and conduct numerical experiments in order to explore various tradeoffs in these algorithmic design choices. "
+}

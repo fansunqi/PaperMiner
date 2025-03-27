@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic reaction network modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Variational autoregressive network",
+    "Policy gradient algorithm",
+    "Reinforcement learning"
+  ],
+  "results": [
+    "Accurate generation of probability distribution over time",
+    "Plasticity in representing multimodal distribution",
+    "Efficient for high-dimensional reaction networks"
+  ],
+  "paper_id": "633e475990e50fcafde58941",
+  "title": "Neural-network solutions to stochastic reaction networks",
+  "abstract": "  The stochastic reaction network in which chemical species evolve through a set of reactions is widely used to model stochastic processes in physics, chemistry and biology. To characterize the evolving joint probability distribution in the state space of species counts requires solving a system of ordinary differential equations, the chemical master equation, where the size of the counting state space increases exponentially with the type of species, making it challenging to investigate the stochastic reaction network. Here, we propose a machine-learning approach using the variational autoregressive network to solve the chemical master equation. Training the autoregressive network employs the policy gradient algorithm in the reinforcement learning framework, which does not require any data simulated in prior by another method. Different from simulating single trajectories, the approach tracks the time evolution of the joint probability distribution, and supports direct sampling of configurations and computing their normalized joint probabilities. We apply the approach to representative examples in physics and biology, and demonstrate that it accurately generates the probability distribution over time. The variational autoregressive network exhibits a plasticity in representing the multimodal distribution, cooperates with the conservation law, enables time-dependent reaction rates, and is efficient for high-dimensional reaction networks with allowing a flexible upper count limit. The results suggest a general approach to investigate stochastic reaction networks based on modern machine learning. "
+}

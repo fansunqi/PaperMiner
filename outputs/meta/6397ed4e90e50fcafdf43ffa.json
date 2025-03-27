@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/SUwonglab/CausalEGM"
+  ],
+  "tasks": [
+    "Causal inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CausalEGM: Encoding generative modeling for causal effect estimation"
+  ],
+  "results": [
+    "Superior performance over existing methods",
+    "Substantially more powerful in large sample sizes and high dimensional confounders"
+  ],
+  "paper_id": "6397ed4e90e50fcafdf43ffa",
+  "title": "CausalEGM: a general causal inference framework by encoding generative\n  modeling",
+  "abstract": "  Although understanding and characterizing causal effects have become essential in observational studies, it is challenging when the confounders are high-dimensional. In this article, we develop a general framework $\\textit{CausalEGM}$ for estimating causal effects by encoding generative modeling, which can be applied in both binary and continuous treatment settings. Under the potential outcome framework with unconfoundedness, we establish a bidirectional transformation between the high-dimensional confounders space and a low-dimensional latent space where the density is known (e.g., multivariate normal distribution). Through this, CausalEGM simultaneously decouples the dependencies of confounders on both treatment and outcome and maps the confounders to the low-dimensional latent space. By conditioning on the low-dimensional latent features, CausalEGM can estimate the causal effect for each individual or the average causal effect within a population. Our theoretical analysis shows that the excess risk for CausalEGM can be bounded through empirical process theory. Under an assumption on encoder-decoder networks, the consistency of the estimate can be guaranteed. In a series of experiments, CausalEGM demonstrates superior performance over existing methods for both binary and continuous treatments. Specifically, we find CausalEGM to be substantially more powerful than competing methods in the presence of large sample sizes and high dimensional confounders. The software of CausalEGM is freely available at https://github.com/SUwonglab/CausalEGM. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/yetigurbuz/ccp-dml"
+  ],
+  "tasks": [
+    "Deep metric learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proxy-based DML",
+    "Iterative projections",
+    "Regularized proxy-based loss"
+  ],
+  "results": [
+    "Outperforms state-of-the-art",
+    "Improves performance of applied losses"
+  ],
+  "paper_id": "63292f6990e50fcafd2ec05b",
+  "title": "Deep Metric Learning with Chance Constraints",
+  "abstract": "  Deep metric learning (DML) aims to minimize empirical expected loss of the pairwise intra-/inter- class proximity violations in the embedding image. We relate DML to feasibility problem of finite chance constraints. We show that minimizer of proxy-based DML satisfies certain chance constraints, and that the worst case generalization performance of the proxy-based methods can be characterized by the radius of the smallest ball around a class proxy to cover the entire domain of the corresponding class samples, suggesting multiple proxies per class helps performance. To provide a scalable algorithm as well as exploiting more proxies, we consider the chance constraints implied by the minimizers of proxy-based DML instances and reformulate DML as finding a feasible point in intersection of such constraints, resulting in a problem to be approximately solved by iterative projections. Simply put, we repeatedly train a regularized proxy-based loss and re-initialize the proxies with the embeddings of the deliberately selected new samples. We apply our method with the well-accepted losses and evaluate on four popular benchmark datasets for image retrieval. Outperforming state-of-the-art, our method consistently improves the performance of the applied losses. Code is available at: https://github.com/yetigurbuz/ccp-dml "
+}

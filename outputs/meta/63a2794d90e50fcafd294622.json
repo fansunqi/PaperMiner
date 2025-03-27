@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/UCSC-VLAA/EVP"
+  ],
+  "tasks": [
+    "Downstream recognition tasks"
+  ],
+  "datasets": [
+    "12 popular classification datasets"
+  ],
+  "methods": [
+    "Visual prompting",
+    "Warping prompt around a shrinked image",
+    "Input diversity",
+    "Gradient normalization"
+  ],
+  "results": [
+    "82.8% average accuracy",
+    "+5.6% improvement over prior art",
+    "+2.1% improvement over linear probing",
+    "Competitive performance across different data scales and distribution shifts"
+  ],
+  "paper_id": "63a2794d90e50fcafd294622",
+  "title": "Unleashing the Power of Visual Prompting At the Pixel Level",
+  "abstract": "  This paper presents a simple and effective visual prompting method for adapting pre-trained models to downstream recognition tasks. Our method includes two key designs. First, rather than directly adding together the prompt and the image, we treat the prompt as an extra and independent learnable component. We show that the strategy of reconciling the prompt and the image matters, and find that warping the prompt around a properly shrinked image empirically works the best. Second, we re-introduce two \"old tricks\" commonly used in building transferable adversarial examples, i.e., input diversity and gradient normalization, into visual prompting. These techniques improve optimization and enable the prompt to generalize better. We provide extensive experimental results to demonstrate the effectiveness of our method. Using a CLIP model, our prompting method sets a new record of 82.8% average accuracy across 12 popular classification datasets, substantially surpassing the prior art by +5.6%. It is worth noting that this prompting performance already outperforms linear probing by +2.1% and can even match fully fine-tuning in certain datasets. In addition, our prompting method shows competitive performance across different data scales and against distribution shifts. The code is publicly available at https://github.com/UCSC-VLAA/EVP. "
+}

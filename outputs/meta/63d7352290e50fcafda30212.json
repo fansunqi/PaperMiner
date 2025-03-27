@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CNN training with frozen random filters"
+  ],
+  "datasets": [
+    "CIFAR",
+    "ImageNet"
+  ],
+  "methods": [
+    "LC convolution block",
+    "weight sharing mechanism"
+  ],
+  "results": [
+    "High test accuracies",
+    "Model robustness, generalization, sparsity, and reduced number of weights"
+  ],
+  "paper_id": "63d7352290e50fcafda30212",
+  "title": "Rethinking 1x1 Convolutions: Can we train CNNs with Frozen Random\n  Filters?",
+  "abstract": "  Modern CNNs are learning the weights of vast numbers of convolutional operators. In this paper, we raise the fundamental question if this is actually necessary. We show that even in the extreme case of only randomly initializing and never updating spatial filters, certain CNN architectures can be trained to surpass the accuracy of standard training. By reinterpreting the notion of pointwise ($1\\times 1$) convolutions as an operator to learn linear combinations (LC) of frozen (random) spatial filters, we are able to analyze these effects and propose a generic LC convolution block that allows tuning of the linear combination rate. Empirically, we show that this approach not only allows us to reach high test accuracies on CIFAR and ImageNet but also has favorable properties regarding model robustness, generalization, sparsity, and the total number of necessary weights. Additionally, we propose a novel weight sharing mechanism, which allows sharing of a single weight tensor between all spatial convolution layers to massively reduce the number of weights. "
+}

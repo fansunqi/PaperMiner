@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Constraint programming",
+    "Learning efficient heuristics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Q-learning",
+    "Tailored reward signal",
+    "Heterogeneous graph neural network"
+  ],
+  "results": [
+    "Better solutions close to optimality",
+    "Reduced backtracks"
+  ],
+  "paper_id": "64c33da73fda6d7f06955de0",
+  "title": "Learning a Generic Value-Selection Heuristic Inside a Constraint\n  Programming Solver",
+  "abstract": "  Constraint programming is known for being an efficient approach for solving combinatorial problems. Important design choices in a solver are the branching heuristics, which are designed to lead the search to the best solutions in a minimum amount of time. However, developing these heuristics is a time-consuming process that requires problem-specific expertise. This observation has motivated many efforts to use machine learning to automatically learn efficient heuristics without expert intervention. To the best of our knowledge, it is still an open research question. Although several generic variable-selection heuristics are available in the literature, the options for a generic value-selection heuristic are more scarce. In this paper, we propose to tackle this issue by introducing a generic learning procedure that can be used to obtain a value-selection heuristic inside a constraint programming solver. This has been achieved thanks to the combination of a deep Q-learning algorithm, a tailored reward signal, and a heterogeneous graph neural network architecture. Experiments on graph coloring, maximum independent set, and maximum cut problems show that our framework is able to find better solutions close to optimality without requiring a large amounts of backtracks while being generic. "
+}

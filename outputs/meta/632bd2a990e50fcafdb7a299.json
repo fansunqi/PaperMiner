@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Brain decoding"
+  ],
+  "datasets": [
+    "NeuroVault database"
+  ],
+  "methods": [
+    "Self-taught learning",
+    "Convolutional autoencoder",
+    "Supervised convolutional neural network"
+  ],
+  "results": [
+    "Improved classification performance",
+    "More generalizable features",
+    "Less sensitive to individual differences"
+  ],
+  "paper_id": "632bd2a990e50fcafdb7a299",
+  "title": "On the benefits of self-taught learning for brain decoding",
+  "abstract": "  Context. We study the benefits of using a large public neuroimaging database composed of fMRI statistic maps, in a self-taught learning framework, for improving brain decoding on new tasks. First, we leverage the NeuroVault database to train, on a selection of relevant statistic maps, a convolutional autoencoder to reconstruct these maps. Then, we use this trained encoder to initialize a supervised convolutional neural network to classify tasks or cognitive processes of unseen statistic maps from large collections of the NeuroVault database. Results. We show that such a self-taught learning process always improves the performance of the classifiers but the magnitude of the benefits strongly depends on the number of samples available both for pre-training and finetuning the models and on the complexity of the targeted downstream task. Conclusion. The pre-trained model improves the classification performance and displays more generalizable features, less sensitive to individual differences. "
+}

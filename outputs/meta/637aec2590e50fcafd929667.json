@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/mit-han-lab/smoothquant"
+  ],
+  "tasks": [
+    "Post-training quantization for Large Language Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SmoothQuant"
+  ],
+  "results": [
+    "1.56x speedup",
+    "2x memory reduction",
+    "Negligible loss in accuracy"
+  ],
+  "paper_id": "637aec2590e50fcafd929667",
+  "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large\n  Language Models",
+  "abstract": "  Large language models (LLMs) show excellent performance but are compute- and memory-intensive. Quantization can reduce memory and accelerate inference. However, for LLMs beyond 100 billion parameters, existing methods cannot maintain accuracy or do not run efficiently on hardware. We propose SmoothQuant, a training-free, accuracy-preserving, and general-purpose post-training quantization (PTQ) solution to enable 8-bit weight, 8-bit activation (W8A8) quantization for LLMs. Based on the fact that weights are easy to quantize while activations are not, SmoothQuant smooths the activation outliers by offline migrating the quantization difficulty from activations to weights with a mathematically equivalent transformation. SmoothQuant enables an INT8 quantization of both weights and activations for all the matrix multiplications in LLMs, including OPT-175B, BLOOM-176B, GLM-130B, and MT-NLG 530B. SmoothQuant has better hardware efficiency than existing techniques. We demonstrate up to 1.56x speedup and 2x memory reduction for LLMs with negligible loss in accuracy. We integrate SmoothQuant into FasterTransformer, a state-of-the-art LLM serving framework, and achieve faster inference speed with half the number of GPUs compared to FP16, enabling the serving of a 530B LLM within a single node. Our work offers a turn-key solution that reduces hardware costs and democratizes LLMs. Code is available at https://github.com/mit-han-lab/smoothquant. "
+}

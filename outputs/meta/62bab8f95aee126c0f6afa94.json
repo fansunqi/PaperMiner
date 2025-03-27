@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hyperparameter Optimization (HPO) for Iterative Learners"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "BAPI (Budget-aware Planning for Iterative Learners)"
+  ],
+  "results": [
+    "Better performance than state-of-the-art baselines in most cases"
+  ],
+  "paper_id": "62bab8f95aee126c0f6afa94",
+  "title": "Bayesian Optimization Over Iterative Learners with Structured Responses:\n  A Budget-aware Planning Approach",
+  "abstract": "  The rising growth of deep neural networks (DNNs) and datasets in size motivates the need for efficient solutions for simultaneous model selection and training. Many methods for hyperparameter optimization (HPO) of iterative learners, including DNNs, attempt to solve this problem by querying and learning a response surface while searching for the optimum of that surface. However, many of these methods make myopic queries, do not consider prior knowledge about the response structure, and/or perform a biased cost-aware search, all of which exacerbate identifying the best-performing model when a total cost budget is specified. This paper proposes a novel approach referred to as {\\bf B}udget-{\\bf A}ware {\\bf P}lanning for {\\bf I}terative Learners (BAPI) to solve HPO problems under a constrained cost budget. BAPI is an efficient non-myopic Bayesian optimization solution that accounts for the budget and leverages the prior knowledge about the objective function and cost function to select better configurations and to take more informed decisions during the evaluation (training). Experiments on diverse HPO benchmarks for iterative learners show that BAPI performs better than state-of-the-art baselines in most cases. "
+}

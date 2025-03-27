@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Satisfiability Modulo Theories (SMT)",
+    "Satisfiability Modulo Integer Arithmetic (SMT(IA))"
+  ],
+  "datasets": [
+    "SMTLIB benchmarks"
+  ],
+  "methods": [
+    "Local search algorithm for SMT(IA)",
+    "Novel operator and scoring functions for integer arithmetic",
+    "Two-level operation selection heuristic"
+  ],
+  "results": [
+    "LS-IA is competitive and complementary with state-of-the-art SMT solvers",
+    "Performs particularly well on formulae with only integer variables",
+    "Simple sequential portfolio with Z3 improves the state-of-the-art"
+  ],
+  "paper_id": "637aec2190e50fcafd928d57",
+  "title": "Local Search For Satisfiability Modulo Integer Arithmetic Theories",
+  "abstract": "  Satisfiability Modulo Theories (SMT) refers to the problem of deciding the satisfiability of a formula with respect to certain background first order theories. In this paper, we focus on Satisfiablity Modulo Integer Arithmetic, which is referred to as SMT(IA), including both linear and non-linear integer arithmetic theories. Dominant approaches to SMT rely on calling a CDCL-based SAT solver, either in a lazy or eager favor. Local search, a competitive approach to solving combinatorial problems including SAT, however, has not been well studied for SMT. We develop the first local search algorithm for SMT(IA) by directly operating on variables, breaking through the traditional framework. We propose a local search framework by considering the distinctions between Boolean and integer variables. Moreover, we design a novel operator and scoring functions tailored for integer arithmetic, as well as a two-level operation selection heuristic. Putting these together, we develop a local search SMT(IA) solver called LS-IA. Experiments are carried out to evaluate LS-IA on benchmarks from SMTLIB. The results show that LS-IA is competitive and complementary with state-of-the-art SMT solvers, and performs particularly well on those formulae with only integer variables. A simple sequential portfolio with Z3 improves the state-of-the-art on satisfiable benchmark sets from SMT-LIB. "
+}

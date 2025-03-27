@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D cell shape prediction from 2D microscopy images",
+    "single cell classification"
+  ],
+  "datasets": [
+    "2D single cell microscopy images"
+  ],
+  "methods": [
+    "Diffusion models"
+  ],
+  "results": [
+    "macro F1 score improved from 55.2 \u00b1 4.6% to 72.2 \u00b1 4.9%"
+  ],
+  "paper_id": "630ed16590e50fcafd793924",
+  "title": "A Diffusion Model Predicts 3D Shapes from 2D Microscopy Images",
+  "abstract": "  Diffusion models are a special type of generative model, capable of synthesising new data from a learnt distribution. We introduce DISPR, a diffusion-based model for solving the inverse problem of three-dimensional (3D) cell shape prediction from two-dimensional (2D) single cell microscopy images. Using the 2D microscopy image as a prior, DISPR is conditioned to predict realistic 3D shape reconstructions. To showcase the applicability of DISPR as a data augmentation tool in a feature-based single cell classification task, we extract morphological features from the red blood cells grouped into six highly imbalanced classes. Adding features from the DISPR predictions to the three minority classes improved the macro F1 score from $F1_\\text{macro} = 55.2 \\pm 4.6\\%$ to $F1_\\text{macro} = 72.2 \\pm 4.9\\%$. We thus demonstrate that diffusion models can be successfully applied to inverse biomedical problems, and that they learn to reconstruct 3D shapes with realistic morphological features from 2D microscopy images. "
+}

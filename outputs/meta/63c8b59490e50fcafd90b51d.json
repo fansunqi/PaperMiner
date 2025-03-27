@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Regression on unknown manifolds with probabilistic metrics"
+  ],
+  "datasets": [
+    "Swiss roll",
+    "WiFi signals",
+    "image data"
+  ],
+  "methods": [
+    "Intrinsic Gaussian Processes (GPUM)",
+    "Bayesian Gaussian Processes latent variable models (BGPLVM)",
+    "Riemannian geometry"
+  ],
+  "results": [
+    "Comparison with Graph Laplacian GP, Graph Matern GP, and Euclidean GP"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b51d",
+  "title": "Intrinsic Gaussian Process on Unknown Manifolds with Probabilistic\n  Metrics",
+  "abstract": "  This article presents a novel approach to construct Intrinsic Gaussian Processes for regression on unknown manifolds with probabilistic metrics (GPUM) in point clouds. In many real world applications, one often encounters high dimensional data (e.g. point cloud data) centred around some lower dimensional unknown manifolds. The geometry of manifold is in general different from the usual Euclidean geometry. Naively applying traditional smoothing methods such as Euclidean Gaussian Processes (GPs) to manifold valued data and so ignoring the geometry of the space can potentially lead to highly misleading predictions and inferences. A manifold embedded in a high dimensional Euclidean space can be well described by a probabilistic mapping function and the corresponding latent space. We investigate the geometrical structure of the unknown manifolds using the Bayesian Gaussian Processes latent variable models(BGPLVM) and Riemannian geometry. The distribution of the metric tensor is learned using BGPLVM. The boundary of the resulting manifold is defined based on the uncertainty quantification of the mapping. We use the the probabilistic metric tensor to simulate Brownian Motion paths on the unknown manifold. The heat kernel is estimated as the transition density of Brownian Motion and used as the covariance functions of GPUM. The applications of GPUM are illustrated in the simulation studies on the Swiss roll, high dimensional real datasets of WiFi signals and image data examples. Its performance is compared with the Graph Laplacian GP, Graph Matern GP and Euclidean GP. "
+}

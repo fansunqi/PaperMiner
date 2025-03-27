@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/WuJunde/MedSegDiff"
+  ],
+  "tasks": [
+    "Medical image segmentation"
+  ],
+  "datasets": [
+    "Fundus images",
+    "MRI images",
+    "Ultrasound images"
+  ],
+  "methods": [
+    "Diffusion probabilistic model (DPM)",
+    "Dynamic conditional encoding",
+    "Feature Frequency Parser (FF-Parser)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art (SOTA) methods"
+  ],
+  "paper_id": "6361dfe590e50fcafd8991e1",
+  "title": "MedSegDiff: Medical Image Segmentation with Diffusion Probabilistic\n  Model",
+  "abstract": "  Diffusion probabilistic model (DPM) recently becomes one of the hottest topic in computer vision. Its image generation application such as Imagen, Latent Diffusion Models and Stable Diffusion have shown impressive generation capabilities, which aroused extensive discussion in the community. Many recent studies also found it is useful in many other vision tasks, like image deblurring, super-resolution and anomaly detection. Inspired by the success of DPM, we propose the first DPM based model toward general medical image segmentation tasks, which we named MedSegDiff. In order to enhance the step-wise regional attention in DPM for the medical image segmentation, we propose dynamic conditional encoding, which establishes the state-adaptive conditions for each sampling step. We further propose Feature Frequency Parser (FF-Parser), to eliminate the negative effect of high-frequency noise component in this process. We verify MedSegDiff on three medical segmentation tasks with different image modalities, which are optic cup segmentation over fundus images, brain tumor segmentation over MRI images and thyroid nodule segmentation over ultrasound images. The experimental results show that MedSegDiff outperforms state-of-the-art (SOTA) methods with considerable performance gap, indicating the generalization and effectiveness of the proposed model. Our code is released at https://github.com/WuJunde/MedSegDiff. "
+}

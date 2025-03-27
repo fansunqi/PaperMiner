@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian Neural Networks"
+  ],
+  "datasets": [
+    "CIFAR",
+    "histopathology"
+  ],
+  "methods": [
+    "Jensen-Shannon divergence",
+    "JS-G divergence",
+    "JS-A divergence"
+  ],
+  "results": [
+    "JS divergences offer superior regularization performance",
+    "BCNN based on JS divergences performs better than state-of-the-art"
+  ],
+  "paper_id": "6331182b90e50fcafdcbbb3d",
+  "title": "Jensen-Shannon Divergence Based Novel Loss Functions for Bayesian Neural\n  Networks",
+  "abstract": "  The Kullback-Leibler (KL) divergence is widely used in state-of-the-art Bayesian Neural Networks (BNNs) to approximate the posterior distribution of weights. However, the KL divergence is unbounded and asymmetric, which may lead to instabilities during optimization or may yield poor generalizations. To overcome these limitations, we examine the Jensen-Shannon (JS) divergence that is bounded, symmetric, and more general. Towards this, we propose two novel loss functions for BNNs. The first loss function uses the geometric JS divergence (JS-G) that is symmetric, unbounded, and offers an analytical expression for Gaussian priors. The second loss function uses the generalized JS divergence (JS-A) that is symmetric and bounded. We show that the conventional KL divergence-based loss function is a special case of the two loss functions presented in this work. To evaluate the divergence part of the loss we use analytical expressions for JS-G and use Monte Carlo methods for JS-A. We provide algorithms to optimize the loss function using both these methods. The proposed loss functions offer additional parameters that can be tuned to control the degree of regularisation. The regularization performance of the JS divergences is analyzed to demonstrate their superiority over the state-of-the-art. Further, we derive the conditions for better regularization by the proposed JS-G divergence-based loss function than the KL divergence-based loss function. Bayesian convolutional neural networks (BCNN) based on the proposed JS divergences perform better than the state-of-the-art BCNN, which is shown for the classification of the CIFAR data set having various degrees of noise and a histopathology data set having a high bias. "
+}

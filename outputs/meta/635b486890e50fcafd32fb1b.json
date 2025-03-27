@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "speech synthesis",
+    "speech production/synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Articulatory Generator",
+    "Generative Adversarial Network",
+    "pre-trained physical model (ema2wav)"
+  ],
+  "results": [
+    "network learns to control articulators in a similar manner to humans",
+    "network learns to generate words that are both present and absent in the training distribution"
+  ],
+  "paper_id": "635b486890e50fcafd32fb1b",
+  "title": "Articulation GAN: Unsupervised modeling of articulatory learning",
+  "abstract": "  Generative deep neural networks are widely used for speech synthesis, but most existing models directly generate waveforms or spectral outputs. Humans, however, produce speech by controlling articulators, which results in the production of speech sounds through physical properties of sound propagation. We introduce the Articulatory Generator to the Generative Adversarial Network paradigm, a new unsupervised generative model of speech production/synthesis. The Articulatory Generator more closely mimics human speech production by learning to generate articulatory representations (electromagnetic articulography or EMA) in a fully unsupervised manner. A separate pre-trained physical model (ema2wav) then transforms the generated EMA representations to speech waveforms, which get sent to the Discriminator for evaluation. Articulatory analysis suggests that the network learns to control articulators in a similar manner to humans during speech production. Acoustic analysis of the outputs suggests that the network learns to generate words that are both present and absent in the training distribution. We additionally discuss implications of articulatory representations for cognitive models of human language and speech technology in general. "
+}

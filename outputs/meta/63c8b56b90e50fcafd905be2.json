@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Kernel two-sample testing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Compress Then Test (CTT)",
+    "sample compression",
+    "permutation testing",
+    "low-rank approximation",
+    "fast aggregation procedure"
+  ],
+  "results": [
+    "20--200x speed-ups over state-of-the-art approximate MMD tests",
+    "no loss of power"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905be2",
+  "title": "Compress Then Test: Powerful Kernel Testing in Near-linear Time",
+  "abstract": "  Kernel two-sample testing provides a powerful framework for distinguishing any pair of distributions based on $n$ sample points. However, existing kernel tests either run in $n^2$ time or sacrifice undue power to improve runtime. To address these shortcomings, we introduce Compress Then Test (CTT), a new framework for high-powered kernel testing based on sample compression. CTT cheaply approximates an expensive test by compressing each $n$ point sample into a small but provably high-fidelity coreset. For standard kernels and subexponential distributions, CTT inherits the statistical behavior of a quadratic-time test -- recovering the same optimal detection boundary -- while running in near-linear time. We couple these advances with cheaper permutation testing, justified by new power analyses; improved time-vs.-quality guarantees for low-rank approximation; and a fast aggregation procedure for identifying especially discriminating kernels. In our experiments with real and simulated data, CTT and its extensions provide 20--200x speed-ups over state-of-the-art approximate MMD tests with no loss of power. "
+}

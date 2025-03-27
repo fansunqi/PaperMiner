@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Modeling Edge-FBG Shape Sensors",
+    "Navigation system for continuum robots in minimally invasive surgeries"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep learning model",
+    "Hyperband algorithm",
+    "Siamese network architecture",
+    "CNNs",
+    "Data transformations"
+  ],
+  "results": [
+    "Median tip error of 3.11 mm"
+  ],
+  "paper_id": "635f3ca190e50fcafd3f594e",
+  "title": "Using Supervised Deep-Learning to Model Edge-FBG Shape Sensors",
+  "abstract": "  Continuum robots in robot-assisted minimally invasive surgeries provide adequate access to target anatomies that are not directly reachable through small incisions. Achieving precise and reliable motion control of such snake-like manipulators necessitates an accurate navigation system that requires no line-of-sight and is immune to electromagnetic noises. Fiber Bragg Grating (FBG) shape sensors, particularly edge-FBGs, are promising tools for this task. However, in edge-FBG sensors, the intensity ratio between Bragg wavelengths carries the strain information that can be affected by undesired bending-related phenomena, making standard characterization techniques less suitable for these sensors. We showed in our previous work that a deep learning model has the potential to extract the strain information from the full edge-FBG spectrum and accurately predict the sensor's shape. In this paper, we conduct a more thorough investigation to find a suitable architectural design with lower prediction errors. We use the Hyperband algorithm to search for optimal hyperparameters in two steps. First, we limit the search space to layer settings, where the best-performing configuration gets selected. Then, we modify the search space for tuning the training and loss calculation hyperparameters. We also analyze various data transformations on the input and output variables, as data rescaling can directly influence the model's performance. Moreover, we performed discriminative training using Siamese network architecture that employs two CNNs with identical parameters to learn similarity metrics between the spectra of similar target values. The best-performing network architecture among all evaluated configurations can predict the sensor's shape with a median tip error of 3.11 mm. "
+}

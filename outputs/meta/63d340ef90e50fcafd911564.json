@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SuperFed",
+    "weight-shared learning",
+    "distribution of weight-shared models",
+    "central aggregation of arbitrarily overlapping weight-shared model parameters"
+  ],
+  "results": [
+    "Order of magnitude (9.43x) reduction in computation and communication cost",
+    "No accuracy loss"
+  ],
+  "paper_id": "63d340ef90e50fcafd911564",
+  "title": "SuperFed: Weight Shared Federated Learning",
+  "abstract": "  Federated Learning (FL) is a well-established technique for privacy preserving distributed training. Much attention has been given to various aspects of FL training. A growing number of applications that consume FL-trained models, however, increasingly operate under dynamically and unpredictably variable conditions, rendering a single model insufficient. We argue for training a global family of models cost efficiently in a federated fashion. Training them independently for different tradeoff points incurs $O(k)$ cost for any k architectures of interest, however. Straightforward applications of FL techniques to recent weight-shared training approaches is either infeasible or prohibitively expensive. We propose SuperFed - an architectural framework that incurs $O(1)$ cost to co-train a large family of models in a federated fashion by leveraging weight-shared learning. We achieve an order of magnitude cost savings on both communication and computation by proposing two novel training mechanisms: (a) distribution of weight-shared models to federated clients, (b) central aggregation of arbitrarily overlapping weight-shared model parameters. The combination of these mechanisms is shown to reach an order of magnitude (9.43x) reduction in computation and communication cost for training a $5*10^{18}$-sized family of models, compared to independently training as few as $k = 9$ DNNs without any accuracy loss. "
+}

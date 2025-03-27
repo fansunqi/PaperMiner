@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/JingZhang617/COD-Rank-Localize-and-Segment"
+  ],
+  "tasks": [
+    "Camouflaged object detection (COD)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Triple-task learning framework for localization, segmentation, and ranking"
+  ],
+  "results": [
+    "New state-of-the-art performance",
+    "More explainable COD network"
+  ],
+  "paper_id": "628c4ce65aee126c0ff59ebd",
+  "title": "Towards Deeper Understanding of Camouflaged Object Detection",
+  "abstract": "  Preys in the wild evolve to be camouflaged to avoid being recognized by predators. In this way, camouflage acts as a key defence mechanism across species that is critical to survival. To detect and segment the whole scope of a camouflaged object, camouflaged object detection (COD) is introduced as a binary segmentation task, with the binary ground truth camouflage map indicating the exact regions of the camouflaged objects. In this paper, we revisit this task and argue that the binary segmentation setting fails to fully understand the concept of camouflage. We find that explicitly modeling the conspicuousness of camouflaged objects against their particular backgrounds can not only lead to a better understanding about camouflage, but also provide guidance to designing more sophisticated camouflage techniques. Furthermore, we observe that it is some specific parts of camouflaged objects that make them detectable by predators. With the above understanding about camouflaged objects, we present the first triple-task learning framework to simultaneously localize, segment, and rank camouflaged objects, indicating the conspicuousness level of camouflage. As no corresponding datasets exist for either the localization model or the ranking model, we generate localization maps with an eye tracker, which are then processed according to the instance level labels to generate our ranking-based training and testing dataset. We also contribute the largest COD testing set to comprehensively analyse performance of the COD models. Experimental results show that our triple-task learning framework achieves new state-of-the-art, leading to a more explainable COD network. Our code, data, and results are available at: \\url{https://github.com/JingZhang617/COD-Rank-Localize-and-Segment}. "
+}

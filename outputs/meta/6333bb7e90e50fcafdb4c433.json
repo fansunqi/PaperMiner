@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Murmur Grading"
+  ],
+  "datasets": [
+    "3456 PCG recordings from 1007 patients",
+    "1538 PCG recordings from 442 patients"
+  ],
+  "methods": [
+    "Ensemble of 15 convolutional residual neural networks with channel-wise attention mechanisms",
+    "Decision rule for final murmur grade"
+  ],
+  "results": [
+    "Cross-validation performances: 86.3% sensitivity, 81.6% F1-score",
+    "Test set performance: 80.4% sensitivity, 75.8% F1-score"
+  ],
+  "paper_id": "6333bb7e90e50fcafdb4c433",
+  "title": "Beyond Heart Murmur Detection: Automatic Murmur Grading from\n  Phonocardiogram",
+  "abstract": "  Objective: Murmurs are abnormal heart sounds, identified by experts through cardiac auscultation. The murmur grade, a quantitative measure of the murmur intensity, is strongly correlated with the patient's clinical condition. This work aims to estimate each patient's murmur grade (i.e., absent, soft, loud) from multiple auscultation location phonocardiograms (PCGs) of a large population of pediatric patients from a low-resource rural area. Methods: The Mel spectrogram representation of each PCG recording is given to an ensemble of 15 convolutional residual neural networks with channel-wise attention mechanisms to classify each PCG recording. The final murmur grade for each patient is derived based on the proposed decision rule and considering all estimated labels for available recordings. The proposed method is cross-validated on a dataset consisting of 3456 PCG recordings from 1007 patients using a stratified ten-fold cross-validation. Additionally, the method was tested on a hidden test set comprised of 1538 PCG recordings from 442 patients. Results: The overall cross-validation performances for patient-level murmur gradings are 86.3% and 81.6% in terms of the unweighted average of sensitivities and F1-scores, respectively. The sensitivities (and F1-scores) for absent, soft, and loud murmurs are 90.7% (93.6%), 75.8% (66.8%), and 92.3% (84.2%), respectively. On the test set, the algorithm achieves an unweighted average of sensitivities of 80.4% and an F1-score of 75.8%. Conclusions: This study provides a potential approach for algorithmic pre-screening in low-resource settings with relatively high expert screening costs. Significance: The proposed method represents a significant step beyond detection of murmurs, providing characterization of intensity which may provide a enhanced classification of clinical outcomes. "
+}

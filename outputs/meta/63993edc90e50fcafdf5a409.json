@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LiDAR mapping",
+    "self-driving",
+    "mobile robotics"
+  ],
+  "datasets": [
+    "KITTI",
+    "NCLT",
+    "Nebula"
+  ],
+  "methods": [
+    "DeepMapping2",
+    "self-supervised training",
+    "map topology based batch organization",
+    "pairwise registration"
+  ],
+  "results": [
+    "Improved results on large-scale datasets",
+    "Effective on public datasets"
+  ],
+  "paper_id": "63993edc90e50fcafdf5a409",
+  "title": "DeepMapping2: Self-Supervised Large-Scale LiDAR Map Optimization",
+  "abstract": "  LiDAR mapping is important yet challenging in self-driving and mobile robotics. To tackle such a global point cloud registration problem, DeepMapping converts the complex map estimation into a self-supervised training of simple deep networks. Despite its broad convergence range on small datasets, DeepMapping still cannot produce satisfactory results on large-scale datasets with thousands of frames. This is due to the lack of loop closures and exact cross-frame point correspondences, and the slow convergence of its global localization network. We propose DeepMapping2 by adding two novel techniques to address these issues: (1) organization of training batch based on map topology from loop closing, and (2) self-supervised local-to-global point consistency loss leveraging pairwise registration. Our experiments and ablation studies on public datasets (KITTI, NCLT, and Nebula) demonstrate the effectiveness of our method. "
+}

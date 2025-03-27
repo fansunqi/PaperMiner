@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spatial Curve Tracking Using Motion Primitives in Industrial Robots"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimization of robot motion primitives",
+    "Selection of static parameters",
+    "Iterative update of waypoints"
+  ],
+  "results": [
+    "Over 200% performance improvement compared to baseline"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ee63",
+  "title": "High-Speed High-Accuracy Spatial Curve Tracking Using Motion Primitives\n  in Industrial Robots",
+  "abstract": "  Industrial robots are increasingly deployed in applications requiring an end effector tool to closely track a specified path, such as in spraying and welding. Performance and productivity present possibly conflicting objectives: tracking accuracy, path speed, and motion uniformity. Industrial robots are programmed through motion primitives consisting of waypoints connected by pre-defined motion segments, with specified parameters such as path speed and blending zone. The actual executed robot motion depends on the robot joint servo controller and joint motion constraints (velocity, acceleration, etc.) which are largely unknown to the users. Programming a robot to achieve the desired performance today is time-consuming and mostly manual, requiring tuning a large number of coupled parameters in the motion primitives. The performance also depends on the choice of additional parameters: possible redundant degrees of freedom, location of the target curve, and the robot configuration. This paper presents a systematic approach to optimize the robot motion primitives for performance. The approach first selects the static parameters, then the motion primitives, and finally iteratively update the waypoints to minimize the tracking error. The ultimate performance objective is to maximize the path speed subject to the tracking accuracy and speed uniformity constraints over the entire path. We have demonstrated the effectiveness of this approach in simulation for ABB and FANUC robots for two challenging example curves, and experimentally for an ABB robot. Comparing with the baseline using the current industry practice, the optimized performance shows over 200% performance improvement. "
+}

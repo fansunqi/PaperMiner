@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Evaluating the Rationales of Amateur Investors (ERAI)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "T5-small",
+    "OpenAI InstructGPT",
+    "Bayesian lexicons"
+  ],
+  "results": [
+    "OpenAI InstructGPT few-shot trained on Chinese data ranks 3rd on maximal loss (ML) pairwise accuracy",
+    "Chinese few-shot trained InstructGPT model performs best in maximal potential profit (MPP) ranking",
+    "All submissions rank best in MPP ranking, from 1st to 3rd",
+    "All submissions do not perform well for ML scoring"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b59b",
+  "title": "PromptShots at the FinNLP-2022 ERAI Tasks: Pairwise Comparison and\n  Unsupervised Ranking",
+  "abstract": "  This report describes our PromptShots submissions to a shared task on Evaluating the Rationales of Amateur Investors (ERAI). We participated in both pairwise comparison and unsupervised ranking tasks. For pairwise comparison, we employed instruction-based models based on T5-small and OpenAI InstructGPT language models. Surprisingly, we observed OpenAI InstructGPT language model few-shot trained on Chinese data works best in our submissions, ranking 3rd on the maximal loss (ML) pairwise accuracy. This model works better than training on the Google translated English data by a large margin, where the English few-shot trained InstructGPT model even performs worse than an instruction-based T5-small model finetuned on the English data. However, all instruction-based submissions do not perform well on the maximal potential profit (MPP) pairwise accuracy where there are more data and learning signals. The Chinese few-shot trained InstructGPT model still performs best in our setting. For unsupervised ranking, we utilized many language models, including many financial-specific ones, and Bayesian lexicons unsupervised-learned on both Chinese and English words using a method-of-moments estimator. All our submissions rank best in the MPP ranking, from 1st to 3rd. However, they all do not perform well for ML scoring. Therefore, both MPP and ML scores need different treatments since we treated MPP and ML using the same formula. Our only difference is the treatment of market sentiment lexicons. "
+}

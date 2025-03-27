@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Electrocardiogram Denoising"
+  ],
+  "datasets": [
+    "PhysioNet QT Database"
+  ],
+  "methods": [
+    "Data-Driven Gaussian Process Filter"
+  ],
+  "results": [
+    "Outperforms benchmark filter for all tested noise levels",
+    "Outperforms state-of-the-art filter in QT-interval estimation error bias and variance"
+  ],
+  "paper_id": "63bb859d90e50fcafd06f0a3",
+  "title": "A Data-Driven Gaussian Process Filter for Electrocardiogram Denoising",
+  "abstract": "  Objective: Gaussian Processes (GP)-based filters, which have been effectively used for various applications including electrocardiogram (ECG) filtering can be computationally demanding and the choice of their hyperparameters is typically ad hoc. Methods: We develop a data-driven GP filter to address both issues, using the notion of the ECG phase domain -- a time-warped representation of the ECG beats onto a fixed number of samples and aligned R-peaks, which is assumed to follow a Gaussian distribution. Under this assumption, the computation of the sample mean and covariance matrix is simplified, enabling an efficient implementation of the GP filter in a data-driven manner, with no ad hoc hyperparameters. The proposed filter is evaluated and compared with a state-of-the-art wavelet-based filter, on the PhysioNet QT Database. The performance is evaluated by measuring the signal-to-noise ratio (SNR) improvement of the filter at SNR levels ranging from -5 to 30dB, in 5dB steps, using additive noise. For a clinical evaluation, the error between the estimated QT-intervals of the original and filtered signals is measured and compared with the benchmark filter. Results: It is shown that the proposed GP filter outperforms the benchmark filter for all the tested noise levels. It also outperforms the state-of-the-art filter in terms of QT-interval estimation error bias and variance. Conclusion: The proposed GP filter is a versatile technique for preprocessing the ECG in clinical and research applications, is applicable to ECG of arbitrary lengths and sampling frequencies, and provides confidence intervals for its performance. "
+}

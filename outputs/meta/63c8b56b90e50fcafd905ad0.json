@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Salient Sign Detection In Safe Autonomous Driving"
+  ],
+  "datasets": [
+    "LAVA Salient Signs Dataset"
+  ],
+  "methods": [
+    "Deformable DETR",
+    "Salience-Sensitive Focal Loss"
+  ],
+  "results": [
+    "Model trained with Salience-Sensitive Focal Loss outperforms a model trained without",
+    "Performance margin on salient signs is largest for the model trained with Salience-Sensitive Focal Loss"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905ad0",
+  "title": "Salient Sign Detection In Safe Autonomous Driving: AI Which Reasons Over\n  Full Visual Context",
+  "abstract": "  Detecting road traffic signs and accurately determining how they can affect the driver's future actions is a critical task for safe autonomous driving systems. However, various traffic signs in a driving scene have an unequal impact on the driver's decisions, making detecting the salient traffic signs a more important task. Our research addresses this issue, constructing a traffic sign detection model which emphasizes performance on salient signs, or signs that influence the decisions of a driver. We define a traffic sign salience property and use it to construct the LAVA Salient Signs Dataset, the first traffic sign dataset that includes an annotated salience property. Next, we use a custom salience loss function, Salience-Sensitive Focal Loss, to train a Deformable DETR object detection model in order to emphasize stronger performance on salient signs. Results show that a model trained with Salience-Sensitive Focal Loss outperforms a model trained without, with regards to recall of both salient signs and all signs combined. Further, the performance margin on salient signs compared to all signs is largest for the model trained with Salience-Sensitive Focal Loss. "
+}

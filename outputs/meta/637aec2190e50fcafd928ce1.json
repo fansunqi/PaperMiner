@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lyrics Transcription"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Self-Transcriber",
+    "self-training with noisy student augmentation"
+  ],
+  "results": [
+    "Competitive performance with only 12.7 hours of labeled data"
+  ],
+  "paper_id": "637aec2190e50fcafd928ce1",
+  "title": "Self-Transriber: Few-shot Lyrics Transcription with Self-training",
+  "abstract": "  The current lyrics transcription approaches heavily rely on supervised learning with labeled data, but such data are scarce and manual labeling of singing is expensive. How to benefit from unlabeled data and alleviate limited data problem have not been explored for lyrics transcription. We propose the first semi-supervised lyrics transcription paradigm, Self-Transcriber, by leveraging on unlabeled data using self-training with noisy student augmentation. We attempt to demonstrate the possibility of lyrics transcription with a few amount of labeled data. Self-Transcriber generates pseudo labels of the unlabeled singing using teacher model, and augments pseudo-labels to the labeled data for student model update with both self-training and supervised training losses. This work closes the gap between supervised and semi-supervised learning as well as opens doors for few-shot learning of lyrics transcription. Our experiments show that our approach using only 12.7 hours of labeled data achieves competitive performance compared with the supervised approaches trained on 149.1 hours of labeled data for lyrics transcription. "
+}

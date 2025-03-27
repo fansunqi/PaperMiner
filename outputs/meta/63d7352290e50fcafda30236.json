@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Screen Space Indirect Lighting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Visibility Bitmask",
+    "Horizon-based indirect illumination"
+  ],
+  "results": [
+    "Improves visual quality of ambient occlusion, indirect diffuse, and ambient light",
+    "Minimizes noise and keeps a low performance overhead"
+  ],
+  "paper_id": "63d7352290e50fcafda30236",
+  "title": "Screen Space Indirect Lighting with Visibility Bitmask",
+  "abstract": "  Horizon-based indirect illumination efficiently estimates a diffuse light bounce in screen space by analytically integrating the horizon angle difference between samples along a given direction. Like other horizon-based methods, this technique cannot properly simulate light passing behind thin surfaces. We propose the concept of a visibility bitmask that replaces the two horizon angles by a bit field representing the binary state (occluded / un-occluded) of N sectors uniformly distributed around the hemisphere slice. It allows light to pass behind surfaces of constant thickness while keeping the efficiency of horizon-based methods. It can also do more accurate ambient lighting than bent normal by sampling more than one visibility cone. This technique improves the visual quality of ambient occlusion, indirect diffuse, and ambient light compared to previous screen space methods while minimizing noise and keeping a low performance overhead. "
+}

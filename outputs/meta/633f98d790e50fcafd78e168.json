@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bluetooth fingerprinting"
+  ],
+  "datasets": [
+    "Real-world Bluetooth dataset"
+  ],
+  "methods": [
+    "Embedding-assisted attentional framework (Mbed-ATN)"
+  ],
+  "results": [
+    "9.17x and 65.2x lesser memory usage compared to GRU and Oracle models",
+    "16.9x fewer FLOPs and 7.5x lesser trainable parameters compared to Oracle",
+    "5.32x higher True Positive Rate, 37.9% fewer false alarms, and 6.74x higher accuracy under challenging real-world settings"
+  ],
+  "paper_id": "633f98d790e50fcafd78e168",
+  "title": "Embedding-Assisted Attentional Deep Learning for Real-World RF\n  Fingerprinting of Bluetooth",
+  "abstract": "  A scalable and computationally efficient framework is designed to fingerprint real-world Bluetooth devices. We propose an embedding-assisted attentional framework (Mbed-ATN) suitable for fingerprinting actual Bluetooth devices. Its generalization capability is analyzed in different settings and the effect of sample length and anti-aliasing decimation is demonstrated. The embedding module serves as a dimensionality reduction unit that maps the high dimensional 3D input tensor to a 1D feature vector for further processing by the ATN module. Furthermore, unlike the prior research in this field, we closely evaluate the complexity of the model and test its fingerprinting capability with real-world Bluetooth dataset collected under a different time frame and experimental setting while being trained on another. Our study reveals a 9.17x and 65.2x lesser memory usage at a sample length of 100 kS when compared to the benchmark - GRU and Oracle models respectively. Further, the proposed Mbed-ATN showcases 16.9x fewer FLOPs and 7.5x lesser trainable parameters when compared to Oracle. Finally, we show that when subject to anti-aliasing decimation and at greater input sample lengths of 1 MS, the proposed Mbed-ATN framework results in a 5.32x higher TPR, 37.9% fewer false alarms, and 6.74x higher accuracy under the challenging real-world setting. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multiversion Concurrency Control Conflict Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Early Detection for MVCC Conflicts",
+    "SyncMap"
+  ],
+  "results": [
+    "Improves goodput by up to 23%",
+    "Reduces latency by up to 80%"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905d41",
+  "title": "Early Detection for Multiversion Concurrency Control Conflicts in\n  Hyperledger Fabric",
+  "abstract": "  Hyperledger Fabric is a popular permissioned blockchain system that features a highly modular and extensible system for deploying permissioned blockchains which are expected to have a major effect on a wide range of sectors. Unlike traditional blockchain systems such as Bitcoin and Ethereum, Hyperledger Fabric uses the EOV model for transaction processing: the submitted transactions are executed by the endorsing peer, ordered and batched by the ordering services, and validated by the validating peers. Due to this EOV workflow, a well-documented issue that arises is the multi-version concurrency control conflict. This happens when two transactions try to writes and read the same key in the ledger at the same time. Existing solutions to address this problem includes eliminating blocks in favor of streaming transactions, repairing conflicts during the ordering phase, and automatically merging the conflicting transactions using CRDT (Conflict Free Replicated Data) techniques. In this paper, we propose a novel solution called Early Detection for MVCC Conflicts. Our solution detects the conflicting transactions at an early stage of the transaction execution instead of processing them until the validation phase to be aborted. The advantage of our solution is that it detects conflict as soon as possible to minimize the overhead of conflicting transaction on the network resulting in the reduction of the end-to-end transaction latency and the increase of the system's effective throughput. We have successfully implemented our solution in Hyperledger Fabric. We propose three different implementations which realize early detection. Our results show that our solutions all perform better than the baseline Fabric, with our best solution SyncMap which improves the goodput by up to 23% and reduces the latency by up to 80%. "
+}

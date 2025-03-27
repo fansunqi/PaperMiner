@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parallel I/O Optimality of Linear Algebra Kernels"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "2.5D decomposition",
+    "Cholesky and LU factorizations"
+  ],
+  "results": [
+    "Communicates significantly less than Intel MKL, SLATE, CANDMC, and CAPITAL libraries",
+    "Outperforms state-of-the-art libraries",
+    "Decreases time-to-solution by up to three times"
+  ],
+  "paper_id": "6125affa5244ab9dcb389cb1",
+  "title": "On the Parallel I/O Optimality of Linear Algebra Kernels: Near-Optimal\n  Matrix Factorizations",
+  "abstract": "  Matrix factorizations are among the most important building blocks of scientific computing. State-of-the-art libraries, however, are not communication-optimal, underutilizing current parallel architectures. We present novel algorithms for Cholesky and LU factorizations that utilize an asymptotically communication-optimal 2.5D decomposition. We first establish a theoretical framework for deriving parallel I/O lower bounds for linear algebra kernels, and then utilize its insights to derive Cholesky and LU schedules, both communicating N^3/(P*sqrt(M)) elements per processor, where M is the local memory size. The empirical results match our theoretical analysis: our implementations communicate significantly less than Intel MKL, SLATE, and the asymptotically communication-optimal CANDMC and CAPITAL libraries. Our code outperforms these state-of-the-art libraries in almost all tested scenarios, with matrix sizes ranging from 2,048 to 262,144 on up to 512 CPU nodes of the Piz Daint supercomputer, decreasing the time-to-solution by up to three times. Our code is ScaLAPACK-compatible and available as an open-source library. "
+}

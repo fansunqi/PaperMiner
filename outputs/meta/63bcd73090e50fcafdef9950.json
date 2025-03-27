@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sound matching algorithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Perceptual-Neural-Physical loss (PNP)",
+    "physical modeling synthesis",
+    "joint time-frequency scattering transform (JTFS)"
+  ],
+  "results": [
+    "PNP is the optimal quadratic approximation of spectral loss while being as fast as P-loss during training",
+    "demonstrates its potential on matching synthetic drum sounds in comparison with other loss functions"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9950",
+  "title": "Perceptual-Neural-Physical Sound Matching",
+  "abstract": "  Sound matching algorithms seek to approximate a target waveform by parametric audio synthesis. Deep neural networks have achieved promising results in matching sustained harmonic tones. However, the task is more challenging when targets are nonstationary and inharmonic, e.g., percussion. We attribute this problem to the inadequacy of loss function. On one hand, mean square error in the parametric domain, known as \"P-loss\", is simple and fast but fails to accommodate the differing perceptual significance of each parameter. On the other hand, mean square error in the spectrotemporal domain, known as \"spectral loss\", is perceptually motivated and serves in differentiable digital signal processing (DDSP). Yet, spectral loss is a poor predictor of pitch intervals and its gradient may be computationally expensive; hence a slow convergence. Against this conundrum, we present Perceptual-Neural-Physical loss (PNP). PNP is the optimal quadratic approximation of spectral loss while being as fast as P-loss during training. We instantiate PNP with physical modeling synthesis as decoder and joint time-frequency scattering transform (JTFS) as spectral representation. We demonstrate its potential on matching synthetic drum sounds in comparison with other loss functions. "
+}

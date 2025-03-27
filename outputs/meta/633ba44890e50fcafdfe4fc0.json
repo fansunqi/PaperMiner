@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "EMNIST",
+    "CIFAR-10",
+    "CIFAR-100"
+  ],
+  "methods": [
+    "Data Digest",
+    "Laplace mechanism of Differential Privacy"
+  ],
+  "results": [
+    "Outperforms FedAvg, FedProx, and FedNova by large margins in multiple client absence scenarios"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4fc0",
+  "title": "FedDig: Robust Federated Learning Using Data Digest to Represent Absent\n  Clients",
+  "abstract": "  Federated Learning (FL) is a collaborative learning performed by a moderator that protects data privacy. Existing cross-silo FL solutions seldom address the absence of participating clients during training which can seriously degrade model performances, particularly for unbalanced and non-IID client data. We address this issue by generating secure data digests from the raw data and using them to guide model training at the FL moderator. The proposed FL with data digest (FedDig) framework can tolerate unexpected client absence while preserving data privacy. This is achieved by de-identifying digests by mixing and perturbing the encoded features of the raw data in the feature space. The feature perturbing is performed following the Laplace mechanism of Differential Privacy. We evaluate FedDig on EMNIST, CIFAR-10, and CIFAR-100 datasets. The results consistently outperform three baseline algorithms (FedAvg, FedProx, and FedNova) by large margins in multiple client absence scenarios. "
+}

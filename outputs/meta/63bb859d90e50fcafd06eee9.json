@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Identifying functional connectivity biomarkers of major depressive disorder (MDD) patients"
+  ],
+  "datasets": [
+    "multi-site rs-fMRI datasets"
+  ],
+  "methods": [
+    "Federated joint estimator (NOTEARS-PFL)",
+    "Group fused lasso penalty",
+    "Alternating direction method of multipliers"
+  ],
+  "results": [
+    "Superior effectiveness and accuracy compared to comparable methods"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eee9",
+  "title": "Learning Personalized Brain Functional Connectivity of MDD Patients from\n  Multiple Sites via Federated Bayesian Networks",
+  "abstract": "  Identifying functional connectivity biomarkers of major depressive disorder (MDD) patients is essential to advance understanding of the disorder mechanisms and early intervention. However, due to the small sample size and the high dimension of available neuroimaging data, the performance of existing methods is often limited. Multi-site data could enhance the statistical power and sample size, while they are often subject to inter-site heterogeneity and data-sharing policies. In this paper, we propose a federated joint estimator, NOTEARS-PFL, for simultaneous learning of multiple Bayesian networks (BNs) with continuous optimization, to identify disease-induced alterations in MDD patients. We incorporate information shared between sites and site-specific information into the proposed federated learning framework to learn personalized BN structures by introducing the group fused lasso penalty. We develop the alternating direction method of multipliers, where in the local update step, the neuroimaging data is processed at each local site. Then the learned network structures are transmitted to the center for the global update. In particular, we derive a closed-form expression for the local update step and use the iterative proximal projection method to deal with the group fused lasso penalty in the global update step. We evaluate the performance of the proposed method on both synthetic and real-world multi-site rs-fMRI datasets. The results suggest that the proposed NOTEARS-PFL yields superior effectiveness and accuracy than the comparable methods. "
+}

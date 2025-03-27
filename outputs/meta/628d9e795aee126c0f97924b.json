@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated learning defense against backdoor attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Shadow learning"
+  ],
+  "results": [
+    "Significant improvement over existing defenses"
+  ],
+  "paper_id": "628d9e795aee126c0f97924b",
+  "title": "Towards a Defense Against Federated Backdoor Attacks Under Continuous\n  Training",
+  "abstract": "  Backdoor attacks are dangerous and difficult to prevent in federated learning (FL), where training data is sourced from untrusted clients over long periods of time. These difficulties arise because: (a) defenders in FL do not have access to raw training data, and (b) a new phenomenon we identify called backdoor leakage causes models trained continuously to eventually suffer from backdoors due to cumulative errors in defense mechanisms. We propose shadow learning, a framework for defending against backdoor attacks in the FL setting under long-range training. Shadow learning trains two models in parallel: a backbone model and a shadow model. The backbone is trained without any defense mechanism to obtain good performance on the main task. The shadow model combines filtering of malicious clients with early-stopping to control the attack success rate even as the data distribution changes. We theoretically motivate our design and show experimentally that our framework significantly improves upon existing defenses against backdoor attacks. "
+}

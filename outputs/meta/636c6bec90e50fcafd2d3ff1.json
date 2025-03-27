@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/NVIDIA/NeMo"
+  ],
+  "tasks": [
+    "Spoken Language Identification"
+  ],
+  "datasets": [
+    "VoxLingua107"
+  ],
+  "methods": [
+    "Conformer based architecture",
+    "Multilingual pre-training"
+  ],
+  "results": [
+    "Results similar to current state-of-the-art systems",
+    "5x less parameters"
+  ],
+  "paper_id": "636c6bec90e50fcafd2d3ff1",
+  "title": "Accidental Learners: Spoken Language Identification in Multilingual\n  Self-Supervised Models",
+  "abstract": "  In this paper, we extend previous self-supervised approaches for language identification by experimenting with Conformer based architecture in a multilingual pre-training paradigm. We find that pre-trained speech models optimally encode language discriminatory information in lower layers. Further, we demonstrate that the embeddings obtained from these layers are significantly robust to classify unseen languages and different acoustic environments without additional training. After fine-tuning a pre-trained Conformer model on the VoxLingua107 dataset, we achieve results similar to current state-of-the-art systems for language identification. More, our model accomplishes this with 5x less parameters. We open-source the model through the NVIDIA NeMo toolkit. "
+}

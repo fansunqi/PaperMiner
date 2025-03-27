@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Analysis"
+  ],
+  "datasets": [
+    "Cityscapes",
+    "Places-365",
+    "five EMNIST datasets",
+    "iNAT-mini"
+  ],
+  "methods": [
+    "WaveMix networks",
+    "multi-level two-dimensional discrete wavelet transform (2D-DWT)"
+  ],
+  "results": [
+    "Comparable or better accuracy than state-of-the-art",
+    "Fewer parameters",
+    "Less GPU RAM",
+    "Reduced memory and time required"
+  ],
+  "paper_id": "629587465aee126c0fe14a36",
+  "title": "WaveMix: A Resource-efficient Neural Network for Image Analysis",
+  "abstract": "  We propose WaveMix -- a novel neural architecture for computer vision that is resource-efficient yet generalizable and scalable. WaveMix networks achieve comparable or better accuracy than the state-of-the-art convolutional neural networks, vision transformers, and token mixers for several tasks, establishing new benchmarks for segmentation on Cityscapes; and for classification on Places-365, five EMNIST datasets, and iNAT-mini. Remarkably, WaveMix architectures require fewer parameters to achieve these benchmarks compared to the previous state-of-the-art. Moreover, when controlled for the number of parameters, WaveMix requires lesser GPU RAM, which translates to savings in time, cost, and energy. To achieve these gains we used multi-level two-dimensional discrete wavelet transform (2D-DWT) in WaveMix blocks, which has the following advantages: (1) It reorganizes spatial information based on three strong image priors -- scale-invariance, shift-invariance, and sparseness of edges, (2) in a lossless manner without adding parameters, (3) while also reducing the spatial sizes of feature maps, which reduces the memory and time required for forward and backward passes, and (4) expanding the receptive field faster than convolutions do. The whole architecture is a stack of self-similar and resolution-preserving WaveMix blocks, which allows architectural flexibility for various tasks and levels of resource availability. Our code and trained models are publicly available. "
+}

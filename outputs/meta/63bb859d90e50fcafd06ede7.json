@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic Gradient Descent (SGD) behavior analysis"
+  ],
+  "datasets": [
+    "ImageNet",
+    "Other datasets"
+  ],
+  "methods": [
+    "Loss function analysis on fixed mini-batches",
+    "Quadratic function modeling",
+    "Exponential Moving Average (EMA)",
+    "Stochastic Weight Averaging"
+  ],
+  "results": [
+    "Convex-like loss function behavior",
+    "Low loss value reached with large learning rate",
+    "Iterate aggregates and learning rate schedules equivalency",
+    "Improved accuracy with averaging technique"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ede7",
+  "title": "Training trajectories, mini-batch losses and the curious role of the\n  learning rate",
+  "abstract": "  Stochastic gradient descent plays a fundamental role in nearly all applications of deep learning. However its ability to converge to a global minimum remains shrouded in mystery. In this paper we propose to study the behavior of the loss function on fixed mini-batches along SGD trajectories. We show that the loss function on a fixed batch appears to be remarkably convex-like. In particular for ResNet the loss for any fixed mini-batch can be accurately modeled by a quadratic function and a very low loss value can be reached in just one step of gradient descent with sufficiently large learning rate. We propose a simple model that allows to analyze the relationship between the gradients of stochastic mini-batches and the full batch. Our analysis allows us to discover the equivalency between iterate aggregates and specific learning rate schedules. In particular, for Exponential Moving Average (EMA) and Stochastic Weight Averaging we show that our proposed model matches the observed training trajectories on ImageNet. Our theoretical model predicts that an even simpler averaging technique, averaging just two points a many steps apart, significantly improves accuracy compared to the baseline. We validated our findings on ImageNet and other datasets using ResNet architecture. "
+}

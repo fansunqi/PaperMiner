@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Maximum Weighted Matching Reduction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CONGEST algorithm for reducing maximum weighted matching to largest cardinality matching",
+    "Rounding algorithm similar to bin packing problem"
+  ],
+  "results": [
+    "Constant rounds for reduction"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5826",
+  "title": "Reducing Maximum Weighted Matching to the Largest Cardinality Matching\n  in CONGEST",
+  "abstract": "  In this paper, we reduce the maximum weighted matching problem to the largest cardinality matching in {\\bf CONGEST}. The paper presents two technical contributions. The first of them is a simple $poly(\\log n, \\frac{1}{\\varepsilon}, t, \\ln w_t)$-round {\\bf CONGEST} algorithm for reducing the maximum weighted matching problem to the largest cardinality matching problem. This is achieved under the assumption that all vertices know all edge-weights $\\{w_1,....,w_t\\}$ (in particular, they know $t$, the number of different edge-weights), though a particular vertex may not know the weight of a particular edge. Our second ingredient is a simple rounding algorithm (similar to approximation algorithms for the bin packing problem) allowing to reduce general instances of the maximum weighted matching problem to ones satisfying the assumptions of the first ingredient, in which $t\\leq poly'(\\log n, \\frac{1}{\\varepsilon})$. We end the paper with a brief discussion of implementing our algorithms in {\\bf CONGEST}. Our main conclusion is that we just need constant rounds for the reduction. "
+}

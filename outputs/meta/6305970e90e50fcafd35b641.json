@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Imbalanced Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Enhancement Encoding"
+  ],
+  "results": [
+    "Improved performance on minority classes"
+  ],
+  "paper_id": "6305970e90e50fcafd35b641",
+  "title": "Enhancement Encoding: A Novel Imbalanced Classification Approach via\n  Encoding the Training Labels",
+  "abstract": "  Class imbalance, which is also called long-tailed distribution, is a common problem in classification tasks based on machine learning. If it happens, the minority data will be overwhelmed by the majority, which presents quite a challenge for data science. To address the class imbalance problem, researchers have proposed lots of methods: some people make the data set balanced (SMOTE), some others refine the loss function (Focal Loss), and even someone has noticed the value of labels influences class-imbalanced learning (Yang and Xu. Rethinking the value of labels for improving class-imbalanced learning. In NeurIPS 2020), but no one changes the way to encode the labels of data yet. Nowadays, the most prevailing technique to encode labels is the one-hot encoding due to its nice performance in the general situation. However, it is not a good choice for imbalanced data, because the classifier will treat majority and minority samples equally. In this paper, we innovatively propose the enhancement encoding technique, which is specially designed for the imbalanced classification. The enhancement encoding combines re-weighting and cost-sensitiveness, which can reflect the difference between hard and easy (or minority and majority) classes. To reduce the number of validation samples and the computation cost, we also replace the confusion matrix with a novel soft-confusion matrix which works better with a small validation set. In the experiments, we evaluate the enhancement encoding with three different types of loss. And the results show that enhancement encoding is very effective to improve the performance of the network trained with imbalanced data. Particularly, the performance on minority classes is much better. "
+}

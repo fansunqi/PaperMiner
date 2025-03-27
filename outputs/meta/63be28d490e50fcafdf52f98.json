@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multispectral Image Compression"
+  ],
+  "datasets": [
+    "ARAD HS"
+  ],
+  "methods": [
+    "VVC codec",
+    "PCA-VVC",
+    "HPCLS"
+  ],
+  "results": [
+    "Plain VVC outperformed by PCA-VVC and HPCLS",
+    "HPCLS shows advantageous rate-distortion behavior",
+    "Scalable approach shows significant benefit at higher preview qualities"
+  ],
+  "paper_id": "63be28d490e50fcafdf52f98",
+  "title": "Adaptive and Scalable Compression of Multispectral Images using VVC",
+  "abstract": "  The VVC codec is applied to the task of multispectral image (MSI) compression using adaptive and scalable coding structures. In a 'plain' VVC approach, concepts from picture-to-picture temporal prediction are employed for decorrelation along the MSI's spectral dimension. The popular principle component analysis (PCA) for spectral decorrelation is further evaluated in combination with VVC intra-coding for spatial decorrelation. This approach is referred to as PCA-VVC. A novel adaptive MSI compression algorithm, named HPCLS, is introduced, that uses PCA and inter-prediction for spectral and VVC intra-coding for spatial decorrelation. Further, a novel adaptive scalable approach is proposed, that provides a separately decodable spectrally scaled preview of the MSI in the compressed file. Information contained in the preview is exploited in order to reduce the overall file size. All schemes are evaluated on images from the ARAD HS data set containing outdoor scenes with a high variety in brightness and color. We found that 'Plain' VVC is outperformed by both PCA-VVC and HPCLS. HPCLS shows advantageous rate-distortion (RD) behavior compared to PCA-VVC for reconstruction quality above 51dB PSNR. The performance of the scalable approach is compared to the combination of an independent RGB preview and one of HPCLS or PCA-VVC. The scalable approach shows significant benefit especially at higher preview qualities. "
+}

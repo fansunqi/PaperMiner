@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Class-incremental learning"
+  ],
+  "datasets": [
+    "CIFAR-100",
+    "CUB-200-2011",
+    "ImageNet-100",
+    "ImageNet-1000"
+  ],
+  "methods": [
+    "Continual Prune-and-Select (CP&S)"
+  ],
+  "results": [
+    "Sequential learning of 10 tasks from ImageNet-1000 with accuracy around 94% and negligible forgetting",
+    "Improvement in accuracy above 10% compared to the best alternative method"
+  ],
+  "paper_id": "62f4739390e50fcafdfec7fd",
+  "title": "Continual Prune-and-Select: Class-incremental learning with specialized\n  subnetworks",
+  "abstract": "  The human brain is capable of learning tasks sequentially mostly without forgetting. However, deep neural networks (DNNs) suffer from catastrophic forgetting when learning one task after another. We address this challenge considering a class-incremental learning scenario where the DNN sees test data without knowing the task from which this data originates. During training, Continual-Prune-and-Select (CP&S) finds a subnetwork within the DNN that is responsible for solving a given task. Then, during inference, CP&S selects the correct subnetwork to make predictions for that task. A new task is learned by training available neuronal connections of the DNN (previously untrained) to create a new subnetwork by pruning, which can include previously trained connections belonging to other subnetwork(s) because it does not update shared connections. This enables to eliminate catastrophic forgetting by creating specialized regions in the DNN that do not conflict with each other while still allowing knowledge transfer across them. The CP&S strategy is implemented with different subnetwork selection strategies, revealing superior performance to state-of-the-art continual learning methods tested on various datasets (CIFAR-100, CUB-200-2011, ImageNet-100 and ImageNet-1000). In particular, CP&S is capable of sequentially learning 10 tasks from ImageNet-1000 keeping an accuracy around 94% with negligible forgetting, a first-of-its-kind result in class-incremental learning. To the best of the authors' knowledge, this represents an improvement in accuracy above 10% when compared to the best alternative method. "
+}

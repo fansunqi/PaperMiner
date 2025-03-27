@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/Thedatababbler/FADO"
+  ],
+  "tasks": [
+    "Emotional Support Conversation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Feedback-Aware Double COntrolling Network (FADO)",
+    "dual-level feedback strategy selector",
+    "double control reader",
+    "strategy dictionary"
+  ],
+  "results": [
+    "state-of-the-art performance in terms of both strategy selection and response generation"
+  ],
+  "paper_id": "6361dfe590e50fcafd898fef",
+  "title": "FADO: Feedback-Aware Double COntrolling Network for Emotional Support\n  Conversation",
+  "abstract": "  Emotional Support Conversation (ESConv) aims to reduce help-seekers'emotional distress with the supportive strategy and response. It is essential for the supporter to select an appropriate strategy with the feedback of the help-seeker (e.g., emotion change during dialog turns, etc) in ESConv. However, previous methods mainly focus on the dialog history to select the strategy and ignore the help-seeker's feedback, leading to the wrong and user-irrelevant strategy prediction. In addition, these approaches only model the context-to-strategy flow and pay less attention to the strategy-to-context flow that can focus on the strategy-related context for generating the strategy-constrain response. In this paper, we propose a Feedback-Aware Double COntrolling Network (FADO) to make a strategy schedule and generate the supportive response. The core module in FADO consists of a dual-level feedback strategy selector and a double control reader. Specifically, the dual-level feedback strategy selector leverages the turn-level and conversation-level feedback to encourage or penalize strategies. The double control reader constructs the novel strategy-to-context flow for generating the strategy-constrain response. Furthermore, a strategy dictionary is designed to enrich the semantic information of the strategy and improve the quality of strategy-constrain response. Experimental results on ESConv show that the proposed FADO has achieved the state-of-the-art performance in terms of both strategy selection and response generation. Our code is available at https://github.com/Thedatababbler/FADO. "
+}

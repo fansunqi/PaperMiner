@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/hustvl/RILS"
+  ],
+  "tasks": [
+    "Visual pre-training",
+    "Masked image modeling",
+    "Natural language supervision"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Masked visual Reconstruction In Language semantic Space (RILS)",
+    "Sentence representations",
+    "Text encoder",
+    "Vision models"
+  ],
+  "results": [
+    "Improved transferability on downstream classification, detection, and segmentation",
+    "Advantages over previous MIM and CLIP methods"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b80a",
+  "title": "RILS: Masked Visual Reconstruction in Language Semantic Space",
+  "abstract": "  Both masked image modeling (MIM) and natural language supervision have facilitated the progress of transferable visual pre-training. In this work, we seek the synergy between two paradigms and study the emerging properties when MIM meets natural language supervision. To this end, we present a novel masked visual Reconstruction In Language semantic Space (RILS) pre-training framework, in which sentence representations, encoded by the text encoder, serve as prototypes to transform the vision-only signals into patch-sentence probabilities as semantically meaningful MIM reconstruction targets. The vision models can therefore capture useful components with structured information by predicting proper semantic of masked tokens. Better visual representations could, in turn, improve the text encoder via the image-text alignment objective, which is essential for the effective MIM target transformation. Extensive experimental results demonstrate that our method not only enjoys the best of previous MIM and CLIP but also achieves further improvements on various tasks due to their mutual benefits. RILS exhibits advanced transferability on downstream classification, detection, and segmentation, especially for low-shot regimes. Code will be made available at https://github.com/hustvl/RILS. "
+}

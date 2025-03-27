@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unconditional scene inference and generation",
+    "Object-centric representation extraction",
+    "Scene generation from slots"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Slot correlation learning",
+    "Global scene-level variable conditioning",
+    "Autoregressive slot prior",
+    "Slot inference"
+  ],
+  "results": [
+    "Clear gains in scene generation quality",
+    "Detailed ablation studies validating proposed improvements"
+  ],
+  "paper_id": "629d70385aee126c0f302506",
+  "title": "Towards Improving the Generation Quality of Autoregressive Slot VAEs",
+  "abstract": "  Unconditional scene inference and generation are challenging to learn jointly with a single compositional model. Despite encouraging progress on models that extract object-centric representations (\"slots\") from images, unconditional generation of scenes from slots has received less attention. This is primarily because learning the multi-object relations necessary to imagine coherent scenes is difficult. We hypothesize that most existing slot-based models have a limited ability to learn object correlations. We propose two improvements that strengthen slot correlation learning. The first is to condition the slots on a global, scene-level variable that captures higher-order correlations between slots. Second, we address the fundamental lack of a canonical order for objects by proposing to learn a consistent order to use for the autoregressive generation of scene objects. Specifically, we train an autoregressive slot prior to sequentially generate scene objects following the learned order. Slot inference entails estimating a randomly ordered set of slots using existing approaches for extracting slots from images, then aligning those slots to ordered slots generated autoregressively with the prior. Our experiments across three multi-object environments demonstrate clear gains in scene generation quality. Detailed ablation studies are also provided that validate the two proposed improvements. "
+}

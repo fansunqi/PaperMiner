@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/bighuang624/VoP"
+  ],
+  "tasks": [
+    "Text-Video Co-operative Prompt Tuning for Cross-Modal Retrieval"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "VoP: Text-Video Co-operative Prompt Tuning",
+    "video prompt mechanisms"
+  ],
+  "results": [
+    "1.4% average R@1 gain across five text-video retrieval benchmarks",
+    "6x less parameter overhead compared to full fine-tuning"
+  ],
+  "paper_id": "637ee0ed90e50fcafd0f6e42",
+  "title": "VoP: Text-Video Co-operative Prompt Tuning for Cross-Modal Retrieval",
+  "abstract": "  Many recent studies leverage the pre-trained CLIP for text-video cross-modal retrieval by tuning the backbone with additional heavy modules, which not only brings huge computational burdens with much more parameters, but also leads to the knowledge forgetting from upstream models. In this work, we propose the VoP: Text-Video Co-operative Prompt Tuning for efficient tuning on the text-video retrieval task. The proposed VoP is an end-to-end framework with both video & text prompts introducing, which can be regarded as a powerful baseline with only 0.1% trainable parameters. Further, based on the spatio-temporal characteristics of videos, we develop three novel video prompt mechanisms to improve the performance with different scales of trainable parameters. The basic idea of the VoP enhancement is to model the frame position, frame context, and layer function with specific trainable prompts, respectively. Extensive experiments show that compared to full fine-tuning, the enhanced VoP achieves a 1.4% average R@1 gain across five text-video retrieval benchmarks with 6x less parameter overhead. The code will be available at https://github.com/bighuang624/VoP. "
+}

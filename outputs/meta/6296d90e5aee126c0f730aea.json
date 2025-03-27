@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Large-scale Human Motion Capture"
+  ],
+  "datasets": [
+    "LIPD"
+  ],
+  "methods": [
+    "Multi-sensor fusion",
+    "Two-stage pose estimator",
+    "Pose-guided translation corrector"
+  ],
+  "results": [
+    "Outperforms other methods by an obvious margin"
+  ],
+  "paper_id": "6296d90e5aee126c0f730aea",
+  "title": "LiDAR-aid Inertial Poser: Large-scale Human Motion Capture by Sparse\n  Inertial and LiDAR Sensors",
+  "abstract": "  We propose a multi-sensor fusion method for capturing challenging 3D human motions with accurate consecutive local poses and global trajectories in large-scale scenarios, only using single LiDAR and 4 IMUs, which are set up conveniently and worn lightly. Specifically, to fully utilize the global geometry information captured by LiDAR and local dynamic motions captured by IMUs, we design a two-stage pose estimator in a coarse-to-fine manner, where point clouds provide the coarse body shape and IMU measurements optimize the local actions. Furthermore, considering the translation deviation caused by the view-dependent partial point cloud, we propose a pose-guided translation corrector. It predicts the offset between captured points and the real root locations, which makes the consecutive movements and trajectories more precise and natural. Moreover, we collect a LiDAR-IMU multi-modal mocap dataset, LIPD, with diverse human actions in long-range scenarios. Extensive quantitative and qualitative experiments on LIPD and other open datasets all demonstrate the capability of our approach for compelling motion capture in large-scale scenarios, which outperforms other methods by an obvious margin. We will release our code and captured dataset to stimulate future research. "
+}

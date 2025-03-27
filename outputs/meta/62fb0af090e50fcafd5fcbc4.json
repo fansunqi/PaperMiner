@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "End-to-end audio style transfer",
+    "Voice conversion",
+    "Timbre transfer"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differentiable WORLD synthesizer",
+    "Postnets",
+    "Acoustic feature parameterization"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62fb0af090e50fcafd5fcbc4",
+  "title": "Differentiable WORLD Synthesizer-based Neural Vocoder With Application\n  To End-To-End Audio Style Transfer",
+  "abstract": "  In this paper, we propose a differentiable WORLD synthesizer and demonstrate its use in end-to-end audio style transfer tasks such as (singing) voice conversion and the DDSP timbre transfer task. Accordingly, our baseline differentiable synthesizer has no model parameters, yet it yields adequate synthesis quality. We can extend the baseline synthesizer by appending lightweight black-box postnets which apply further processing to the baseline output in order to improve fidelity. An alternative differentiable approach considers extraction of the source excitation spectrum directly, which can improve naturalness albeit for a narrower class of style transfer applications. The acoustic feature parameterization used by our approaches has the added benefit that it naturally disentangles pitch and timbral information so that they can be modeled separately. Moreover, as there exists a robust means of estimating these acoustic features from monophonic audio sources, it allows for parameter loss terms to be added to an end-to-end objective function, which can help convergence and/or further stabilize (adversarial) training. "
+}

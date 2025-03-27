@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simultaneous Localization and Mapping (SLAM)"
+  ],
+  "datasets": [
+    "Replica",
+    "ScanNet",
+    "TUM RGB-D"
+  ],
+  "methods": [
+    "Hybrid representation of Signed Distance Fields",
+    "Neural Radiance Fields (NeRF)"
+  ],
+  "results": [
+    "Improves 3D reconstruction and camera localization accuracy by more than 50%",
+    "Runs up to 10 times faster than state-of-the-art methods",
+    "Does not require any pre-training"
+  ],
+  "paper_id": "637c3dd690e50fcafd77ce82",
+  "title": "ESLAM: Efficient Dense SLAM System Based on Hybrid Representation of\n  Signed Distance Fields",
+  "abstract": "  We present ESLAM, an efficient implicit neural representation method for Simultaneous Localization and Mapping (SLAM). ESLAM reads RGB-D frames with unknown camera poses in a sequential manner and incrementally reconstructs the scene representation while estimating the current camera position in the scene. We incorporate the latest advances in Neural Radiance Fields (NeRF) into a SLAM system, resulting in an efficient and accurate dense visual SLAM method. Our scene representation consists of multi-scale axis-aligned perpendicular feature planes and shallow decoders that, for each point in the continuous space, decode the interpolated features into Truncated Signed Distance Field (TSDF) and RGB values. Our extensive experiments on three standard datasets, Replica, ScanNet, and TUM RGB-D show that ESLAM improves the accuracy of 3D reconstruction and camera localization of state-of-the-art dense visual SLAM methods by more than 50%, while it runs up to 10 times faster and does not require any pre-training. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Low Resource Speaker Verification"
+  ],
+  "datasets": [
+    "VoxCeleb1"
+  ],
+  "methods": [
+    "Attention-based dynamic kernels",
+    "Channel attention",
+    "Multi-layer feature aggregation"
+  ],
+  "results": [
+    "1.62% EER",
+    "0.18 miniDCF",
+    "17% relative improvement compared to ECAPA-TDNN"
+  ],
+  "paper_id": "636482d890e50fcafdccb111",
+  "title": "Dynamic Kernels and Channel Attention for Low Resource Speaker\n  Verification",
+  "abstract": "  State-of-the-art speaker verification frameworks have typically focused on developing models with increasingly deeper (more layers) and wider (number of channels) models to improve their verification performance. Instead, this paper proposes an approach to increase the model resolution capability using attention-based dynamic kernels in a convolutional neural network to adapt the model parameters to be feature-conditioned. The attention weights on the kernels are further distilled by channel attention and multi-layer feature aggregation to learn global features from speech. This approach provides an efficient solution to improving representation capacity with lower data resources. This is due to the self-adaptation to inputs of the structures of the model parameters. The proposed dynamic convolutional model achieved 1.62\\% EER and 0.18 miniDCF on the VoxCeleb1 test set and has a 17\\% relative improvement compared to the ECAPA-TDNN using the same training resources. "
+}

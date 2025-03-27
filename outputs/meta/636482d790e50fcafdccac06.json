@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Disordered Speech Recognition"
+  ],
+  "datasets": [
+    "UASpeech"
+  ],
+  "methods": [
+    "VAE-GAN",
+    "self-supervised pre-trained Wav2vec 2.0 embedding features"
+  ],
+  "results": [
+    "Overall WER of 27.78% on the UASpeech test set",
+    "Lowest published WER of 57.31% on the subset of speakers with 'Very Low' intelligibility"
+  ],
+  "paper_id": "636482d790e50fcafdccac06",
+  "title": "Adversarial Data Augmentation Using VAE-GAN for Disordered Speech\n  Recognition",
+  "abstract": "  Automatic recognition of disordered speech remains a highly challenging task to date. The underlying neuro-motor conditions, often compounded with co-occurring physical disabilities, lead to the difficulty in collecting large quantities of impaired speech required for ASR system development. This paper presents novel variational auto-encoder generative adversarial network (VAE-GAN) based personalized disordered speech augmentation approaches that simultaneously learn to encode, generate and discriminate synthesized impaired speech. Separate latent features are derived to learn dysarthric speech characteristics and phoneme context representations. Self-supervised pre-trained Wav2vec 2.0 embedding features are also incorporated. Experiments conducted on the UASpeech corpus suggest the proposed adversarial data augmentation approach consistently outperformed the baseline speed perturbation and non-VAE GAN augmentation methods with trained hybrid TDNN and End-to-end Conformer systems. After LHUC speaker adaptation, the best system using VAE-GAN based augmentation produced an overall WER of 27.78% on the UASpeech test set of 16 dysarthric speakers, and the lowest published WER of 57.31% on the subset of speakers with \"Very Low\" intelligibility. "
+}

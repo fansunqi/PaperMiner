@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Convolutional Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Low-rank Winograd Transformation",
+    "Sparse Granularity"
+  ],
+  "results": [
+    "Low-rank Winograd transformation outperforms vanilla Winograd",
+    "Low-rank oriented sparse granularity permits practical Winograd acceleration"
+  ],
+  "paper_id": "63d340ef90e50fcafd91172d",
+  "title": "Low-Rank Winograd Transformation for 3D Convolutional Neural Networks",
+  "abstract": "  This paper focuses on Winograd transformation in 3D convolutional neural networks (CNNs) that are more over-parameterized compared with the 2D version. The over-increasing Winograd parameters not only exacerbate training complexity but also barricade the practical speedups due simply to the volume of element-wise products in the Winograd domain. We attempt to reduce trainable parameters by introducing a low-rank Winograd transformation, a novel training paradigm that decouples the original large tensor into two less storage-required trainable tensors, leading to a significant complexity reduction. Built upon our low-rank Winograd transformation, we take one step ahead by proposing a low-rank oriented sparse granularity that measures column-wise parameter importance. By simply involving the non-zero columns in the element-wise product, our sparse granularity is empowered with the ability to produce a very regular sparse pattern to acquire effectual Winograd speedups. To better understand the efficacy of our method, we perform extensive experiments on 3D CNNs. Results manifest that our low-rank Winograd transformation well outperforms the vanilla Winograd transformation. We also show that our proposed low-rank oriented sparse granularity permits practical Winograd acceleration compared with the vanilla counterpart. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Low-order functional ANOVA (fANOVA) modeling"
+  ],
+  "datasets": [
+    "Simulated and real datasets"
+  ],
+  "methods": [
+    "GAMI-Tree algorithm",
+    "Model-based trees",
+    "Interaction filtering",
+    "Iterative training",
+    "Embedded purification"
+  ],
+  "results": [
+    "Better performance compared to EBM and GAMI-Net",
+    "Improved interpretability"
+  ],
+  "paper_id": "62d0db155aee126c0f9f0f5f",
+  "title": "Using Model-Based Trees with Boosting to Fit Low-Order Functional ANOVA\n  Models",
+  "abstract": "  Low-order functional ANOVA (fANOVA) models have been rediscovered in the machine learning (ML) community under the guise of inherently interpretable machine learning. Explainable Boosting Machines or EBM (Lou et al. 2013) and GAMI-Net (Yang et al. 2021) are two recently proposed ML algorithms for fitting functional main effects and second-order interactions. We propose a new algorithm, called GAMI-Tree, that is similar to EBM, but has a number of features that lead to better performance. It uses model-based trees as base learners and incorporates a new interaction filtering method that is better at capturing the underlying interactions. In addition, our iterative training method converges to a model with better predictive performance, and the embedded purification ensures that interactions are hierarchically orthogonal to main effects. The algorithm does not need extensive tuning, and our implementation is fast and efficient. We use simulated and real datasets to compare the performance and interpretability of GAMI-Tree with EBM and GAMI-Net. "
+}

@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Patient Timeline Modelling",
+    "Forecasting Future Disorders",
+    "Biomedical Concept Modelling"
+  ],
+  "datasets": [
+    "Three different hospital datasets",
+    "King's College Hospital",
+    "South London",
+    "Maudsley",
+    "US MIMIC-III dataset"
+  ],
+  "methods": [
+    "Generative Pretrained Transformer (GPT)",
+    "Named entity recognition and linking tools"
+  ],
+  "results": [
+    "precision@10 0.68, 0.76 and 0.88",
+    "precision@10 of 0.80, 0.81 and 0.91",
+    "relevancy of 97% for the top forecasted candidate disorder"
+  ],
+  "paper_id": "63a1750c90e50fcafd1f38d8",
+  "title": "Foresight -- Generative Pretrained Transformer (GPT) for Modelling of\n  Patient Timelines using EHRs",
+  "abstract": "  Background: Electronic Health Records hold detailed longitudinal information about each patient's health status and general clinical history, a large portion of which is stored within the unstructured text. Existing approaches focus mostly on structured data and a subset of single-domain outcomes. We explore how temporal modelling of patients from free text and structured data, using deep generative transformers can be used to forecast a wide range of future disorders, substances, procedures or findings. Methods: We present Foresight, a novel transformer-based pipeline that uses named entity recognition and linking tools to convert document text into structured, coded concepts, followed by providing probabilistic forecasts for future medical events such as disorders, substances, procedures and findings. We processed the entire free-text portion from three different hospital datasets totalling 811336 patients covering both physical and mental health. Findings: On tests in two UK hospitals (King's College Hospital, South London and Maudsley) and the US MIMIC-III dataset precision@10 0.68, 0.76 and 0.88 was achieved for forecasting the next disorder in a patient timeline, while precision@10 of 0.80, 0.81 and 0.91 was achieved for forecasting the next biomedical concept. Foresight was also validated on 34 synthetic patient timelines by five clinicians and achieved relevancy of 97% for the top forecasted candidate disorder. As a generative model, it can forecast follow-on biomedical concepts for as many steps as required. Interpretation: Foresight is a general-purpose model for biomedical concept modelling that can be used for real-world risk forecasting, virtual trials and clinical research to study the progression of disorders, simulate interventions and counterfactuals, and educational purposes. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mobile Wireless Network Routing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Reinforcement Learning (DeepRL)",
+    "Reward Function Design",
+    "Relational Neighborhood, Path, and Context Features",
+    "Flexible Training Approach"
+  ],
+  "results": [
+    "Learned single-copy routing strategy outperforms all other strategies in terms of delay except for the optimal strategy"
+  ],
+  "paper_id": "62df81d35aee126c0f87202e",
+  "title": "Learning an Adaptive Forwarding Strategy for Mobile Wireless Networks:\n  Resource Usage vs. Latency",
+  "abstract": "  Designing effective routing strategies for mobile wireless networks is challenging due to the need to seamlessly adapt routing behavior to spatially diverse and temporally changing network conditions. In this work, we use deep reinforcement learning (DeepRL) to learn a scalable and generalizable single-copy routing strategy for such networks. We make the following contributions: i) we design a reward function that enables the DeepRL agent to explicitly trade-off competing network goals, such as minimizing delay vs. the number of transmissions per packet; ii) we propose a novel set of relational neighborhood, path, and context features to characterize mobile wireless networks and model device mobility independently of a specific network topology; and iii) we use a flexible training approach that allows us to combine data from all packets and devices into a single offline centralized training set to train a single DeepRL agent. To evaluate generalizeability and scalability, we train our DeepRL agent on one mobile network scenario and then test it on other mobile scenarios, varying the number of devices and transmission ranges. Our results show our learned single-copy routing strategy outperforms all other strategies in terms of delay except for the optimal strategy, even on scenarios on which the DeepRL agent was not trained. "
+}

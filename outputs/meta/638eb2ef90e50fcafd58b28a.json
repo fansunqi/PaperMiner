@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/Jeiyoon/dstc11-track2"
+  ],
+  "tasks": [
+    "Intent Induction for Task-Oriented Dialogue"
+  ],
+  "datasets": [
+    "DSTC11"
+  ],
+  "methods": [
+    "Pretrained MiniLM",
+    "Agglomerative clustering"
+  ],
+  "results": [
+    "NMI, ARI, F1, accuracy and example coverage improvement"
+  ],
+  "paper_id": "638eb2ef90e50fcafd58b28a",
+  "title": "Analysis of Utterance Embeddings and Clustering Methods Related to\n  Intent Induction for Task-Oriented Dialogue",
+  "abstract": "  The focus of this work is to investigate unsupervised approaches to overcome quintessential challenges in designing task-oriented dialog schema: assigning intent labels to each dialog turn (intent clustering) and generating a set of intents based on the intent clustering methods (intent induction). We postulate there are two salient factors for automatic induction of intents: (1) clustering algorithm for intent labeling and (2) user utterance embedding space. We compare existing off-the-shelf clustering models and embeddings based on DSTC11 evaluation. Our extensive experiments demonstrate that the combined selection of utterance embedding and clustering method in the intent induction task should be carefully considered. We also present that pretrained MiniLM with Agglomerative clustering shows significant improvement in NMI, ARI, F1, accuracy and example coverage in intent induction tasks. The source codes are available at https://github.com/Jeiyoon/dstc11-track2. "
+}

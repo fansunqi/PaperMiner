@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Contact simulation",
+    "Robotics manipulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differentiable contact dynamics",
+    "Single-level optimization",
+    "Convex primitives",
+    "Silico.jl"
+  ],
+  "results": [
+    "Improved simulation robustness",
+    "Reduced computational complexity by more than an order of magnitude"
+  ],
+  "paper_id": "63993edf90e50fcafdf5aa8d",
+  "title": "Single-Level Differentiable Contact Simulation",
+  "abstract": "  We present a differentiable formulation of rigid-body contact dynamics for objects and robots represented as compositions of convex primitives. Existing optimization-based approaches simulating contact between convex primitives rely on a bilevel formulation that separates collision detection and contact simulation. These approaches are unreliable in realistic contact simulation scenarios because isolating the collision detection problem introduces contact location non-uniqueness. Our approach combines contact simulation and collision detection into a unified single-level optimization problem. This disambiguates the collision detection problem in a physics-informed manner. Compared to previous differentiable simulation approaches, our formulation features improved simulation robustness and a reduction in computational complexity by more than an order of magnitude. We illustrate the contact and collision differentiability on a robotic manipulation task requiring optimization-through-contact. We provide a numerically efficient implementation of our formulation in the Julia language called Silico.jl. "
+}

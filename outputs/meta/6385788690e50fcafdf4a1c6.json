@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "End-to-End Segmentation in ASR"
+  ],
+  "datasets": [
+    "YouTube"
+  ],
+  "methods": [
+    "Two-pass Cascaded Encoder ASR Model",
+    "Neural Segmenter",
+    "Causal 1st pass decoder",
+    "Non-causal 2nd pass",
+    "Dummy frame injection"
+  ],
+  "results": [
+    "2.4% relative WER",
+    "140 ms EOS latency gains"
+  ],
+  "paper_id": "6385788690e50fcafdf4a1c6",
+  "title": "E2E Segmentation in a Two-Pass Cascaded Encoder ASR Model",
+  "abstract": "  We explore unifying a neural segmenter with two-pass cascaded encoder ASR into a single model. A key challenge is allowing the segmenter (which runs in real-time, synchronously with the decoder) to finalize the 2nd pass (which runs 900 ms behind real-time) without introducing user-perceived latency or deletion errors during inference. We propose a design where the neural segmenter is integrated with the causal 1st pass decoder to emit a end-of-segment (EOS) signal in real-time. The EOS signal is then used to finalize the non-causal 2nd pass. We experiment with different ways to finalize the 2nd pass, and find that a novel dummy frame injection strategy allows for simultaneous high quality 2nd pass results and low finalization latency. On a real-world long-form captioning task (YouTube), we achieve 2.4% relative WER and 140 ms EOS latency gains over a baseline VAD-based segmenter with the same cascaded encoder. "
+}

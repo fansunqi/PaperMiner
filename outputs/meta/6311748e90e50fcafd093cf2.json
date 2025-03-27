@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Single Object Tracking"
+  ],
+  "datasets": [
+    "KITTI",
+    "Waymo Open Dataset"
+  ],
+  "methods": [
+    "Adaptive Refine Prediction (ARP)",
+    "Target Knowledge Transfer (TKT)",
+    "attention mechanism"
+  ],
+  "results": [
+    "state-of-the-art performance",
+    "lower computational cost"
+  ],
+  "paper_id": "6311748e90e50fcafd093cf2",
+  "title": "Implicit and Efficient Point Cloud Completion for 3D Single Object\n  Tracking",
+  "abstract": "  The point cloud based 3D single object tracking has drawn increasing attention. Although many breakthroughs have been achieved, we also reveal two severe issues. By extensive analysis, we find the prediction manner of current approaches is non-robust, i.e., exposing a misalignment gap between prediction score and actually localization accuracy. Another issue is the sparse point returns will damage the feature matching procedure of the SOT task. Based on these insights, we introduce two novel modules, i.e., Adaptive Refine Prediction (ARP) and Target Knowledge Transfer (TKT), to tackle them, respectively. To this end, we first design a strong pipeline to extract discriminative features and conduct the matching with the attention mechanism. Then, ARP module is proposed to tackle the misalignment issue by aggregating all predicted candidates with valuable clues. Finally, TKT module is designed to effectively overcome incomplete point cloud due to sparse and occlusion issues. We call our overall framework PCET. By conducting extensive experiments on the KITTI and Waymo Open Dataset, our model achieves state-of-the-art performance while maintaining a lower computational cost. "
+}

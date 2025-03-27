@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spectral Clustering with Group Fairness Constraints"
+  ],
+  "datasets": [
+    "Modified stochastic block model"
+  ],
+  "methods": [
+    "s-FairSC (Scalable Spectral Clustering with Group Fairness Constraints)"
+  ],
+  "results": [
+    "s-FairSC is comparable with FairSC in recovering fair clustering",
+    "It is sped up by a factor of 12 for moderate model sizes",
+    "s-FairSC is scalable with marginal increase in computational costs compared to SC without fairness constraints"
+  ],
+  "paper_id": "63608e4f90e50fcafdee1009",
+  "title": "Scalable Spectral Clustering with Group Fairness Constraints",
+  "abstract": "  There are synergies of research interests and industrial efforts in modeling fairness and correcting algorithmic bias in machine learning. In this paper, we present a scalable algorithm for spectral clustering (SC) with group fairness constraints. Group fairness is also known as statistical parity where in each cluster, each protected group is represented with the same proportion as in the entirety. While FairSC algorithm (Kleindessner et al., 2019) is able to find the fairer clustering, it is compromised by high costs due to the kernels of computing nullspaces and the square roots of dense matrices explicitly. We present a new formulation of underlying spectral computation by incorporating nullspace projection and Hotelling's deflation such that the resulting algorithm, called s-FairSC, only involves the sparse matrix-vector products and is able to fully exploit the sparsity of the fair SC model. The experimental results on the modified stochastic block model demonstrate that s-FairSC is comparable with FairSC in recovering fair clustering. Meanwhile, it is sped up by a factor of 12 for moderate model sizes. s-FairSC is further demonstrated to be scalable in the sense that the computational costs of s-FairSC only increase marginally compared to the SC without fairness constraints. "
+}

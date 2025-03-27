@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fast Test Vector Generation"
+  ],
+  "datasets": [
+    "EPFL benchmark circuits",
+    "ISCAS'85"
+  ],
+  "methods": [
+    "HybMT: Hybrid Meta-Predictor based ML Algorithm"
+  ],
+  "results": [
+    "Overall reduction of 32.6% in CPU time",
+    "Speedup of 24.4% and 95.5% over the existing state-of-the-art",
+    "Equal or better fault coverage for the ISCAS'85 and EPFL benchmark circuits"
+  ],
+  "paper_id": "62df81c65aee126c0f86f135",
+  "title": "HybMT: Hybrid Meta-Predictor based ML Algorithm for Fast Test Vector\n  Generation",
+  "abstract": "  Testing an integrated circuit (IC) is a highly compute-intensive process. For today's complex designs, tests for many hard-to-detect faults are typically generated using deterministic test generation (DTG) algorithms. Machine Learning (ML) is being increasingly used to increase the test coverage and decrease the overall testing time. Such proposals primarily reduce the wasted work in the classic Path Oriented Decision Making (PODEM) algorithm without compromising on the test quality. With variants of PODEM, many times there is a need to backtrack because further progress cannot be made. There is thus a need to predict the best strategy at different points in the execution of the algorithm. The novel contribution of this paper is a 2-level predictor: the top level is a meta predictor that chooses one of several predictors at the lower level. We choose the best predictor given a circuit and a target net. The accuracy of the top-level meta predictor was found to be 99\\%. This leads to a significantly reduced number of backtracking decisions compared to state-of-the-art ML-based and conventional solutions. As compared to a popular, state-of-the-art commercial ATPG tool, our 2-level predictor (HybMT) shows an overall reduction of 32.6\\% in the CPU time without compromising on the fault coverage for the EPFL benchmark circuits. HybMT also shows a speedup of 24.4\\% and 95.5\\% over the existing state-of-the-art (the baseline) while obtaining equal or better fault coverage for the ISCAS'85 and EPFL benchmark circuits, respectively. "
+}

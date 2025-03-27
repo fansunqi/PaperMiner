@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mitigating Query Latency Spikes Incurred by the Fork-based Snapshot Mechanism"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Async-fork",
+    "Proactive synchronization strategy"
+  ],
+  "results": [
+    "Reduces the tail latency of queries by 81.76% on an 8GB instance",
+    "Reduces the tail latency of queries by 99.84% on a 64GB instance"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b30",
+  "title": "Async-fork: Mitigating Query Latency Spikes Incurred by the Fork-based\n  Snapshot Mechanism from the OS Level",
+  "abstract": "  In-memory key-value stores (IMKVSes) serve many online applications because of their efficiency. To support data backup, popular industrial IMKVSes periodically take a point-in-time snapshot of the in-memory data with the system call fork. However, this mechanism can result in latency spikes for queries arriving during the snapshot period because fork leads the engine into the kernel mode in which the engine is out-of-service for queries. In contrast to existing research focusing on optimizing snapshot algorithms, we optimize the fork operation to address the latency spikes problem from the operating system (OS) level, while keeping the data persistent mechanism in IMKVSes unchanged. Specifically, we first conduct an in-depth study to reveal the impact of the fork operation as well as the optimization techniques on query latency. Based on findings in the study, we propose Async-fork to offload the work of copying the page table from the engine (the parent process) to the child process as copying the page table dominates the execution time of fork. To keep data consistent between the parent and the child, we design the proactive synchronization strategy. Async-fork is implemented in the Linux kernel and deployed into the online Redis database in public clouds. Our experiment results show that compared with the default fork method in OS, Async-fork reduces the tail latency of queries arriving during the snapshot period by 81.76% on an 8GB instance and 99.84% on a 64GB instance. "
+}

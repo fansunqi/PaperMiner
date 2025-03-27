@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/LeapLabTHU/Deep-Incubation"
+  ],
+  "tasks": [
+    "Training large deep learning models"
+  ],
+  "datasets": [
+    "ImageNet",
+    "COCO",
+    "ADE20K"
+  ],
+  "methods": [
+    "Deep Incubation",
+    "Module incubation algorithm",
+    "Global, shared meta model"
+  ],
+  "results": [
+    "Improves accuracy by 2.7% on ImageNet",
+    "Achieves similar performance with 4x less training time",
+    "Significant gains for downstream tasks"
+  ],
+  "paper_id": "6392a76d90e50fcafd8c34c3",
+  "title": "Deep Incubation: Training Large Models by Divide-and-Conquering",
+  "abstract": "  Recent years have witnessed a remarkable success of large deep learning models. However, training these models is challenging due to high computational costs, painfully slow convergence, and overfitting issues. In this paper, we present Deep Incubation, a novel approach that enables the efficient and effective training of large models by dividing them into smaller sub-modules that can be trained separately and assembled seamlessly. A key challenge for implementing this idea is to ensure the compatibility of the independently trained sub-modules. To address this issue, we first introduce a global, shared meta model, which is leveraged to implicitly link all the modules together, and can be designed as an extremely small network with negligible computational overhead. Then we propose a module incubation algorithm, which trains each sub-module to replace the corresponding component of the meta model and accomplish a given learning task. Despite the simplicity, our approach effectively encourages each sub-module to be aware of its role in the target large model, such that the finally-learned sub-modules can collaborate with each other smoothly after being assembled. Empirically, our method outperforms end-to-end (E2E) training in terms of both final accuracy and training efficiency. For example, on top of ViT-Huge, it improves the accuracy by 2.7% on ImageNet or achieves similar performance with 4x less training time. Notably, the gains are significant for downstream tasks as well (e.g., object detection and image segmentation on COCO and ADE20K). Code is available at https://github.com/LeapLabTHU/Deep-Incubation. "
+}

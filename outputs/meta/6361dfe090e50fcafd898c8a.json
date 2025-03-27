@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Building left-balanced and complete k-d trees"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GPU-friendly, parallel, and (almost-)in-place construction"
+  ],
+  "results": [
+    "O(log N) iterations, one parallel sort, one trivially parallel CUDA per-node update kernel"
+  ],
+  "paper_id": "6361dfe090e50fcafd898c8a",
+  "title": "GPU-friendly, Parallel, and (Almost-)In-Place Construction of\n  Left-Balanced k-d Trees",
+  "abstract": "  We present an algorithm that allows for building left-balanced and complete k-d trees over k-dimensional points in a trivially parallel and GPU friendly way. Our algorithm requires exactly one int per data point as temporary storage, and uses O(log N) iterations, each of which performs one parallel sort, and one trivially parallel CUDA per-node update kernel. "
+}

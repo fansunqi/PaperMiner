@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Z2-synchronization",
+    "mean-field variational Bayesian inference",
+    "Approximate Message Passing (AMP)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TAP approach",
+    "natural-gradient/mirror-descent algorithm",
+    "Kac-Rice formula",
+    "Sudakov-Fernique Gaussian comparison inequality"
+  ],
+  "results": [
+    "Unique local minimizer of the TAP free energy functional",
+    "Strong convexity of the TAP free energy in a local neighborhood",
+    "Linear convergence to the minimizer",
+    "Asymptotic stability of AMP",
+    "Linear convergence of AMP from spectral initialization"
+  ],
+  "paper_id": "60d4275991e0112ca5d18967",
+  "title": "Local convexity of the TAP free energy and AMP convergence for\n  Z2-synchronization",
+  "abstract": "  We study mean-field variational Bayesian inference using the TAP approach, for Z2-synchronization as a prototypical example of a high-dimensional Bayesian model. We show that for any signal strength $\\lambda > 1$ (the weak-recovery threshold), there exists a unique local minimizer of the TAP free energy functional near the mean of the Bayes posterior law. Furthermore, the TAP free energy in a local neighborhood of this minimizer is strongly convex. Consequently, a natural-gradient/mirror-descent algorithm achieves linear convergence to this minimizer from a local initialization, which may be obtained by a constant number of iterates of Approximate Message Passing (AMP). This provides a rigorous foundation for variational inference in high dimensions via minimization of the TAP free energy.   We also analyze the finite-sample convergence of AMP, showing that AMP is asymptotically stable at the TAP minimizer for any $\\lambda > 1$, and is linearly convergent to this minimizer from a spectral initialization for sufficiently large $\\lambda$. Such a guarantee is stronger than results obtainable by state evolution analyses, which only describe a fixed number of AMP iterations in the infinite-sample limit.   Our proofs combine the Kac-Rice formula and Sudakov-Fernique Gaussian comparison inequality to analyze the complexity of critical points that satisfy strong convexity and stability conditions within their local neighborhoods. "
+}

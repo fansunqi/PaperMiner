@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust Locomotion Policies"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Random Force Injection (RFI)",
+    "Extended Random Force Injection (ERFI)"
+  ],
+  "results": [
+    "53% improved performance over RFI",
+    "Successful sim-to-real transfer on two different quadrupedal platforms"
+  ],
+  "paper_id": "633269fb90e50fcafd4913ea",
+  "title": "Learning and Deploying Robust Locomotion Policies with Minimal Dynamics\n  Randomization",
+  "abstract": "  Training deep reinforcement learning (DRL) locomotion policies often require massive amounts of data to converge to the desired behaviour. In this regard, simulators provide a cheap and abundant source. For successful sim-to-real transfer, exhaustively engineered approaches such as system identification, dynamics randomization, and domain adaptation are generally employed. As an alternative, we investigate a simple strategy of random force injection (RFI) to perturb system dynamics during training. We show that the application of random forces enables us to emulate dynamics randomization. This allows us to obtain locomotion policies that are robust to variations in system dynamics. We further extend RFI, referred to as extended random force injection (ERFI), by introducing an episodic actuation offset. We demonstrate that ERFI provides additional robustness for variations in system mass offering on average a 53% improved performance over RFI. We also show that ERFI is sufficient to perform a successful sim-to-real transfer on two different quadrupedal platforms, ANYmal C and Unitree A1, even for perceptive locomotion over uneven terrain in outdoor environments. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Math Problem Solvers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer",
+    "principal component analysis (PCA)",
+    "causal intervention"
+  ],
+  "results": [
+    "Model has locality to certain intermediate values",
+    "Enhanced interpretability of models"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b6a7",
+  "title": "Tracing and Manipulating Intermediate Values in Neural Math Problem\n  Solvers",
+  "abstract": "  How language models process complex input that requires multiple steps of inference is not well understood. Previous research has shown that information about intermediate values of these inputs can be extracted from the activations of the models, but it is unclear where that information is encoded and whether that information is indeed used during inference. We introduce a method for analyzing how a Transformer model processes these inputs by focusing on simple arithmetic problems and their intermediate values. To trace where information about intermediate values is encoded, we measure the correlation between intermediate values and the activations of the model using principal component analysis (PCA). Then, we perform a causal intervention by manipulating model weights. This intervention shows that the weights identified via tracing are not merely correlated with intermediate values, but causally related to model predictions. Our findings show that the model has a locality to certain intermediate values, and this is useful for enhancing the interpretability of the models. "
+}

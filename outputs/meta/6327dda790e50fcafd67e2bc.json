@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/sndnyang/SADAJEM"
+  ],
+  "tasks": [
+    "Joint Energy-based Model (JEM) performance improvement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sharpness-aware minimization (SAM) framework",
+    "Exclusion of data augmentation from maximum likelihood estimate pipeline"
+  ],
+  "results": [
+    "State-of-the-art performances in image classification, image generation, calibration, out-of-distribution detection, and adversarial robustness"
+  ],
+  "paper_id": "6327dda790e50fcafd67e2bc",
+  "title": "Towards Bridging the Performance Gaps of Joint Energy-based Models",
+  "abstract": "  Can we train a hybrid discriminative-generative model within a single network? This question has recently been answered in the affirmative, introducing the field of Joint Energy-based Model (JEM), which achieves high classification accuracy and image generation quality simultaneously. Despite recent advances, there remain two performance gaps: the accuracy gap to the standard softmax classifier, and the generation quality gap to state-of-the-art generative models. In this paper, we introduce a variety of training techniques to bridge the accuracy gap and the generation quality gap of JEM. 1) We incorporate a recently proposed sharpness-aware minimization (SAM) framework to train JEM, which promotes the energy landscape smoothness and the generalizability of JEM. 2) We exclude data augmentation from the maximum likelihood estimate pipeline of JEM, and mitigate the negative impact of data augmentation to image generation quality. Extensive experiments on multiple datasets demonstrate that our SADA-JEM achieves state-of-the-art performances and outperforms JEM in image classification, image generation, calibration, out-of-distribution detection and adversarial robustness by a notable margin. Our code is available at https://github.com/sndnyang/SADAJEM. "
+}

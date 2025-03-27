@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Underwater Object Tracking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "UOHT (Underwater and Open-air Hybrid Training)",
+    "MBPP (Motion-based Post-processing)"
+  ],
+  "results": [
+    "Average performance improvement of 3.5% compared to OSTrack",
+    "Performance improvements of 1% and 3% on UOT100 and UTB180 benchmarks"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5c0f",
+  "title": "Sample Imbalance Adjustment and Similar Object Exclusion in Underwater\n  Object Tracking",
+  "abstract": "  Although modern trackers exhibit competitive performance for underwater image degradation assessment, two problems remain when these are applied to underwater object tracking (UOT). A single-object tracker is trained on open-air datasets, which results in a serious sample imbalance between underwater objects and open-air objects when it is applied to UOT. Moreover, underwater targets such as fish and dolphins usually have a similar appearance, and it is challenging for models to discriminate weak discriminative features. Existing detection-based post-processing approaches struggle to distinguish a tracked target from similar objects. In this study, the UOSTrack is proposed, which involves the use of underwater images and open-air sequence hybrid training (UOHT), and motion-based post-processing (MBPP). The UOHT training paradigm is designed to train the sample-imbalanced underwater tracker. In particular, underwater object detection (UOD) images are converted into image pairs through customised data augmentation, such that the tracker is exposed to more underwater domain training samples and learns the feature expressions of underwater objects. The MBPP paradigm is proposed to exclude similar objects near the target. In particular, it employs the estimation box predicted using a Kalman filter and the candidate boxes in each frame to reconfirm the tracked target that is hidden in the candidate area when it has been lost. UOSTrack provides an average performance improvement of 3.5 % compared to OSTrack on similar object challenge attribute in UOT100 and UTB180. The average performance improvements provided by UOSTrack are 1 % and 3 %, respectively. The results from two UOT benchmarks demonstrate that UOSTrack sets a new state-of-the-art benchmark, and the effectiveness of UOHT and MBPP, and the generalisation and applicability of the MBPP for use in UOT. "
+}

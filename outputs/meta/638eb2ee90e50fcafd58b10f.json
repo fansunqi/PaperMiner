@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model compression",
+    "Model defense",
+    "Adversarial robustness"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "CSTAR"
+  ],
+  "results": [
+    "20.07% improvement for benign accuracy",
+    "11.91% improvement for robust accuracy",
+    "8.58% benign accuracy gain",
+    "4.27% robust accuracy gain"
+  ],
+  "paper_id": "638eb2ee90e50fcafd58b10f",
+  "title": "CSTAR: Towards Compact and STructured Deep Neural Networks with\n  Adversarial Robustness",
+  "abstract": "  Model compression and model defense for deep neural networks (DNNs) have been extensively and individually studied. Considering the co-importance of model compactness and robustness in practical applications, several prior works have explored to improve the adversarial robustness of the sparse neural networks. However, the structured sparse models obtained by the exiting works suffer severe performance degradation for both benign and robust accuracy, thereby causing a challenging dilemma between robustness and structuredness of the compact DNNs. To address this problem, in this paper, we propose CSTAR, an efficient solution that can simultaneously impose the low-rankness-based Compactness, high STructuredness and high Adversarial Robustness on the target DNN models. By formulating the low-rankness and robustness requirement within the same framework and globally determining the ranks, the compressed DNNs can simultaneously achieve high compression performance and strong adversarial robustness. Evaluations for various DNN models on different datasets demonstrate the effectiveness of CSTAR. Compared with the state-of-the-art robust structured pruning methods, CSTAR shows consistently better performance. For instance, when compressing ResNet-18 on CIFAR-10, CSTAR can achieve up to 20.07% and 11.91% improvement for benign accuracy and robust accuracy, respectively. For compressing ResNet-18 with 16x compression ratio on Imagenet, CSTAR can obtain 8.58% benign accuracy gain and 4.27% robust accuracy gain compared to the existing robust structured pruning method. "
+}

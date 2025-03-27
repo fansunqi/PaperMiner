@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computational mechanics problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Boundary-integral type neural networks (BINN)"
+  ],
+  "results": [
+    "Reduced dimensions by one",
+    "No extra treatment for boundary conditions",
+    "Suitable for complex geometries",
+    "Suitable for infinite or semi-infinite domains",
+    "Handles heterogeneous problems without domain decomposition"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886512",
+  "title": "BINN: A deep learning approach for computational mechanics problems\n  based on boundary integral equations",
+  "abstract": "  We proposed the boundary-integral type neural networks (BINN) for the boundary value problems in computational mechanics. The boundary integral equations are employed to transfer all the unknowns to the boundary, then the unknowns are approximated using neural networks and solved through a training process. The loss function is chosen as the residuals of the boundary integral equations. Regularization techniques are adopted to efficiently evaluate the weakly singular and Cauchy principle integrals in boundary integral equations. Potential problems and elastostatic problems are mainly concerned in this article as a demonstration. The proposed method has several outstanding advantages: First, the dimensions of the original problem are reduced by one, thus the freedoms are greatly reduced. Second, the proposed method does not require any extra treatment to introduce the boundary conditions, since they are naturally considered through the boundary integral equations. Therefore, the method is suitable for complex geometries. Third, BINN is suitable for problems on the infinite or semi-infinite domains. Moreover, BINN can easily handle heterogeneous problems with a single neural network without domain decomposition. "
+}

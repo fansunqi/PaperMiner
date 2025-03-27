@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/ddrrnn123/Omni-Seg"
+  ],
+  "tasks": [
+    "Renal Pathological Image Segmentation"
+  ],
+  "datasets": [
+    "Human kidney images",
+    "Mouse kidney images"
+  ],
+  "methods": [
+    "Omni-Seg+ network",
+    "Scale-aware dynamic neural network",
+    "Semi-supervised consistency regularization"
+  ],
+  "results": [
+    "Superior segmentation performance",
+    "Generalization to different scales without retraining"
+  ],
+  "paper_id": "62bbc3865aee126c0fa686ce",
+  "title": "Omni-Seg: A Scale-aware Dynamic Network for Renal Pathological Image\n  Segmentation",
+  "abstract": "  Comprehensive semantic segmentation on renal pathological images is challenging due to the heterogeneous scales of the objects. For example, on a whole slide image (WSI), the cross-sectional areas of glomeruli can be 64 times larger than that of the peritubular capillaries, making it impractical to segment both objects on the same patch, at the same scale. To handle this scaling issue, prior studies have typically trained multiple segmentation networks in order to match the optimal pixel resolution of heterogeneous tissue types. This multi-network solution is resource-intensive and fails to model the spatial relationship between tissue types. In this paper, we propose the Omni-Seg+ network, a scale-aware dynamic neural network that achieves multi-object (six tissue types) and multi-scale (5X to 40X scale) pathological image segmentation via a single neural network. The contribution of this paper is three-fold: (1) a novel scale-aware controller is proposed to generalize the dynamic neural network from single-scale to multi-scale; (2) semi-supervised consistency regularization of pseudo-labels is introduced to model the inter-scale correlation of unannotated tissue types into a single end-to-end learning paradigm; and (3) superior scale-aware generalization is evidenced by directly applying a model trained on human kidney images to mouse kidney images, without retraining. By learning from ~150,000 human pathological image patches from six tissue types at three different resolutions, our approach achieved superior segmentation performance according to human visual assessment and evaluation of image-omics (i.e., spatial transcriptomics). The official implementation is available at https://github.com/ddrrnn123/Omni-Seg. "
+}

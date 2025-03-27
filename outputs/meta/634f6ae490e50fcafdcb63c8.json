@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image processing",
+    "Video processing",
+    "Audio processing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Token Merging"
+  ],
+  "results": [
+    "2x throughput of ViT-L @ 512 and ViT-H @ 518 on images",
+    "2.2x throughput of ViT-L on video",
+    "2x throughput of ViT-B on audio",
+    "0.2-0.3% accuracy drop on images and video",
+    "0.4% mAP drop on audio"
+  ],
+  "paper_id": "634f6ae490e50fcafdcb63c8",
+  "title": "Token Merging: Your ViT But Faster",
+  "abstract": "  We introduce Token Merging (ToMe), a simple method to increase the throughput of existing ViT models without needing to train. ToMe gradually combines similar tokens in a transformer using a general and light-weight matching algorithm that is as fast as pruning while being more accurate. Off-the-shelf, ToMe can 2x the throughput of state-of-the-art ViT-L @ 512 and ViT-H @ 518 models on images and 2.2x the throughput of ViT-L on video with only a 0.2-0.3% accuracy drop in each case. ToMe can also easily be applied during training, improving in practice training speed up to 2x for MAE fine-tuning on video. Training with ToMe further minimizes accuracy drop, leading to 2x the throughput of ViT-B on audio for only a 0.4% mAP drop. Qualitatively, we find that ToMe merges object parts into one token, even over multiple frames of video. Overall, ToMe's accuracy and speed are competitive with state-of-the-art on images, video, and audio. "
+}

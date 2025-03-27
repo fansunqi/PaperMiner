@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Scene graph generation (SGG)"
+  ],
+  "datasets": [
+    "Visual Genome"
+  ],
+  "methods": [
+    "Context-Aware Mixture-of-Experts (CAME)",
+    "divide and ensemble strategy",
+    "context encoder",
+    "expert weighting (EW)",
+    "predicate weighting (PW)"
+  ],
+  "results": [
+    "CAME outperforms recent methods and achieves state-of-the-art performance"
+  ],
+  "paper_id": "62fb0af090e50fcafd5fb0ba",
+  "title": "Context-aware Mixture-of-Experts for Unbiased Scene Graph Generation",
+  "abstract": "  Scene graph generation (SGG) has gained tremendous progress in recent years. However, its underlying long-tailed distribution of predicate classes is a challenging problem. For extremely unbalanced predicate distributions, existing approaches usually construct complicated context encoders to extract the intrinsic relevance of scene context to predicates and complex networks to improve the learning ability of network models for highly imbalanced predicate distributions. To address the unbiased SGG problem, we introduce a simple yet effective method dubbed Context-Aware Mixture-of-Experts (CAME) to improve model diversity and mitigate biased SGG without complicated design. Specifically, we propose to integrate the mixture of experts with a divide and ensemble strategy to remedy the severely long-tailed distribution of predicate classes, which is applicable to the majority of unbiased scene graph generators. The biased SGG is thereby reduced, and the model tends to anticipate more evenly distributed predicate predictions. To differentiate between various predicate distribution levels, experts with the same weights are not sufficiently diverse. In order to enable the network dynamically exploit the rich scene context and further boost the diversity of model, we simply use the built-in module to create a context encoder. The importance of each expert to scene context and each predicate to each expert is dynamically associated with expert weighting (EW) and predicate weighting (PW) strategy. We have conducted extensive experiments on three tasks using the Visual Genome dataset, showing that CAME outperforms recent methods and achieves state-of-the-art performance. Our code will be available publicly. "
+}

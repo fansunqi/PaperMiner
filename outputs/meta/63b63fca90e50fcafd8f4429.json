@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Meta-learning generalizable dynamics from trajectories"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "iMODE method",
+    "bi-level optimization framework",
+    "neural network architecture with inductive bias"
+  ],
+  "results": [
+    "Modeling unseen systems within seconds",
+    "Revealing knowledge on physical parameters",
+    "Neural Gauge for measuring physical parameters"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f4429",
+  "title": "Meta-learning generalizable dynamics from trajectories",
+  "abstract": "  We present the interpretable meta neural ordinary differential equation (iMODE) method to rapidly learn generalizable (i.e., not parameter-specific) dynamics from trajectories of multiple dynamical systems that vary in their physical parameters. The iMODE method learns meta-knowledge, the functional variations of the force field of dynamical system instances without knowing the physical parameters, by adopting a bi-level optimization framework: an outer level capturing the common force field form among studied dynamical system instances and an inner level adapting to individual system instances. A priori physical knowledge can be conveniently embedded in the neural network architecture as inductive bias, such as conservative force field and Euclidean symmetry. With the learned meta-knowledge, iMODE can model an unseen system within seconds, and inversely reveal knowledge on the physical parameters of a system, or as a Neural Gauge to \"measure\" the physical parameters of an unseen system with observed trajectories. We test the validity of the iMODE method on bistable, double pendulum, Van der Pol, Slinky, and reaction-diffusion systems. "
+}

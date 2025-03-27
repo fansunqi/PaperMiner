@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Removing Foreground Occlusion in Light Field Images"
+  ],
+  "datasets": [
+    "Sparse LF images",
+    "Dense LF images"
+  ],
+  "methods": [
+    "ISTY framework (extract LF features, define the occlusion, inpaint occluded regions)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art LF-DeOcc methods in both sparse and dense LF datasets"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905f99",
+  "title": "I See-Through You: A Framework for Removing Foreground Occlusion in Both\n  Sparse and Dense Light Field Images",
+  "abstract": "  Light field (LF) camera captures rich information from a scene. Using the information, the LF de-occlusion (LF-DeOcc) task aims to reconstruct the occlusion-free center view image. Existing LF-DeOcc studies mainly focus on the sparsely sampled (sparse) LF images where most of the occluded regions are visible in other views due to the large disparity. In this paper, we expand LF-DeOcc in more challenging datasets, densely sampled (dense) LF images, which are taken by a micro-lens-based portable LF camera. Due to the small disparity ranges of dense LF images, most of the background regions are invisible in any view. To apply LF-DeOcc in both LF datasets, we propose a framework, ISTY, which is defined and divided into three roles: (1) extract LF features, (2) define the occlusion, and (3) inpaint occluded regions. By dividing the framework into three specialized components according to the roles, the development and analysis can be easier. Furthermore, an explainable intermediate representation, an occlusion mask, can be obtained in the proposed framework. The occlusion mask is useful for comprehensive analysis of the model and other applications by manipulating the mask. In experiments, qualitative and quantitative results show that the proposed framework outperforms state-of-the-art LF-DeOcc methods in both sparse and dense LF datasets. "
+}

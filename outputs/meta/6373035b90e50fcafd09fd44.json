@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph generation",
+    "Preferential attachment simulation",
+    "Statistical tests on networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sequential algorithm",
+    "Parallel algorithm",
+    "I/O-efficient algorithm"
+  ],
+  "results": [
+    "Near-optimal speedup when adding many nodes",
+    "Efficient for fully general model"
+  ],
+  "paper_id": "6373035b90e50fcafd09fd44",
+  "title": "Parallel and I/O-Efficient Algorithms for Non-Linear Preferential\n  Attachment",
+  "abstract": "  Preferential attachment lies at the heart of many network models aiming to replicate features of real world networks. To simulate the attachment process, conduct statistical tests, or obtain input data for benchmarks, efficient algorithms are required that are capable of generating large graphs according to these models.   Existing graph generators are optimized for the most simple model, where new nodes that arrive in the network are connected to earlier nodes with a probability $P(h) \\propto d$ that depends linearly on the degree $d$ of the earlier node $h$. Yet, some networks are better explained by a more general attachment probability $P(h) \\propto f(d)$ for some function $f \\colon \\mathbb N~\\to~\\mathbb R$. Here, the polynomial case $f(d) = d^\\alpha$ where $\\alpha \\in \\mathbb R_{>0}$ is of particular interest.   In this paper, we present efficient algorithms that generate graphs according to the more general models. We first design a simple yet optimal sequential algorithm for the polynomial model. We then parallelize the algorithm by identifying batches of independent samples and obtain a near-optimal speedup when adding many nodes. In addition, we present an I/O-efficient algorithm that can even be used for the fully general model. To showcase the efficiency and scalability of our algorithms, we conduct an experimental study and compare their performance to existing solutions. "
+}

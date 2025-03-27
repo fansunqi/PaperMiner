@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speaker anonymization"
+  ],
+  "datasets": [
+    "VoicePrivacy 2022 toolkit"
+  ],
+  "methods": [
+    "Vector quantization"
+  ],
+  "results": [
+    "Improved disentanglement",
+    "Concealed original speaker identity",
+    "Maintained utility for speech recognition"
+  ],
+  "paper_id": "6305970d90e50fcafd35b1ff",
+  "title": "Are disentangled representations all you need to build speaker\n  anonymization systems?",
+  "abstract": "  Speech signals contain a lot of sensitive information, such as the speaker's identity, which raises privacy concerns when speech data get collected. Speaker anonymization aims to transform a speech signal to remove the source speaker's identity while leaving the spoken content unchanged. Current methods perform the transformation by relying on content/speaker disentanglement and voice conversion. Usually, an acoustic model from an automatic speech recognition system extracts the content representation while an x-vector system extracts the speaker representation. Prior work has shown that the extracted features are not perfectly disentangled. This paper tackles how to improve features disentanglement, and thus the converted anonymized speech. We propose enhancing the disentanglement by removing speaker information from the acoustic model using vector quantization. Evaluation done using the VoicePrivacy 2022 toolkit showed that vector quantization helps conceal the original speaker identity while maintaining utility for speech recognition. "
+}

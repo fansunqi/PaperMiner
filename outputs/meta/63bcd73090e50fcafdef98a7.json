@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Answer selection",
+    "Open-domain question answering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "RLAS-BIABC",
+    "Attention-based LSTM",
+    "BERT",
+    "Improved ABC algorithm",
+    "Reinforcement learning-based BP algorithm"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63bcd73090e50fcafdef98a7",
+  "title": "RLAS-BIABC: A Reinforcement Learning-Based Answer Selection Using the\n  BERT Model Boosted by an Improved ABC Algorithm",
+  "abstract": "  Answer selection (AS) is a critical subtask of the open-domain question answering (QA) problem. The present paper proposes a method called RLAS-BIABC for AS, which is established on attention mechanism-based long short-term memory (LSTM) and the bidirectional encoder representations from transformers (BERT) word embedding, enriched by an improved artificial bee colony (ABC) algorithm for pretraining and a reinforcement learning-based algorithm for training backpropagation (BP) algorithm. BERT can be comprised in downstream work and fine-tuned as a united task-specific architecture, and the pretrained BERT model can grab different linguistic effects. Existing algorithms typically train the AS model with positive-negative pairs for a two-class classifier. A positive pair contains a question and a genuine answer, while a negative one includes a question and a fake answer. The output should be one for positive and zero for negative pairs. Typically, negative pairs are more than positive, leading to an imbalanced classification that drastically reduces system performance. To deal with it, we define classification as a sequential decision-making process in which the agent takes a sample at each step and classifies it. For each classification operation, the agent receives a reward, in which the prize of the majority class is less than the reward of the minority class. Ultimately, the agent finds the optimal value for the policy weights. We initialize the policy weights with the improved ABC algorithm. The initial value technique can prevent problems such as getting stuck in the local optimum. Although ABC serves well in most tasks, there is still a weakness in the ABC algorithm that disregards the fitness of related pairs of individuals in discovering a neighboring food source position. "
+}

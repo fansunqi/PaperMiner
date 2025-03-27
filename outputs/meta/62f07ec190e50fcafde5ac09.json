@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "In-network computing",
+    "Key-value store coordination"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "P4 platform",
+    "Optimizations for in-network coordination"
+  ],
+  "results": [
+    "Latency reduction up to orders of magnitude",
+    "Throughput improvement",
+    "Up to nine times higher throughput for multiple participating nodes"
+  ],
+  "paper_id": "62f07ec190e50fcafde5ac09",
+  "title": "Scale-friendly In-network Coordination",
+  "abstract": "  The programmability of modern network devices has led to innovative research in the area of in-network computing, i.e., offloading certain computations to the programmable data plane. Key-value stores, which offer coordination services for many large-scale data centres, benefited from this technological advancement. Previous research reduced the response latency of key-value requests by half through deploying the store in the programmable data plane. In this work, we identify previous design decisions that have led to increased traffic generation and latency for in-network coordination services. We have developed a new in-network key-value store platform that maintains strong consistency and fault-tolerance, while improving performance and scalability over the state-of-the-art. We have designed and implemented the platform in P4, and analysed the optimisations that unlock these performance improvements. Our evaluation shows a reduction of up to orders of magnitude in latency and significant improvements in throughput. We obtain up to nine times higher throughput for scenarios with multiple participating nodes, indicative of the superior scalability the platform can offer. "
+}

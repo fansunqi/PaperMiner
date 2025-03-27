@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision Language Pretraining"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semantic Visual Loss"
+  ],
+  "results": [
+    "Faster convergence and better finetuning accuracy",
+    "10 times faster inference",
+    "Similar or better performance with 10% pretraining GPU hours"
+  ],
+  "paper_id": "63c8b59590e50fcafd90ba53",
+  "title": "Effective End-to-End Vision Language Pretraining with Semantic Visual\n  Loss",
+  "abstract": "  Current vision language pretraining models are dominated by methods using region visual features extracted from object detectors. Given their good performance, the extract-then-process pipeline significantly restricts the inference speed and therefore limits their real-world use cases. However, training vision language models from raw image pixels is difficult, as the raw image pixels give much less prior knowledge than region features. In this paper, we systematically study how to leverage auxiliary visual pretraining tasks to help training end-to-end vision language models. We introduce three types of visual losses that enable much faster convergence and better finetuning accuracy. Compared with region feature models, our end-to-end models could achieve similar or better performance on downstream tasks and run more than 10 times faster during inference. Compared with other end-to-end models, our proposed method could achieve similar or better performance when pretrained for only 10% of the pretraining GPU hours. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Explainability of Graph Neural Networks"
+  ],
+  "datasets": [
+    "Synthetic",
+    "Real-world"
+  ],
+  "methods": [
+    "MatchExplainer",
+    "MatchDrop"
+  ],
+  "results": [
+    "Outperforms all parametric baselines",
+    "Enhanced performance with GNNs"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9883",
+  "title": "Explaining Graph Neural Networks via Non-parametric Subgraph Matching",
+  "abstract": "  The great success in graph neural networks (GNNs) provokes the question about explainability: Which fraction of the input graph is the most determinant of the prediction? Particularly, parametric explainers prevail in existing approaches because of their stronger capability to decipher the black-box (i.e., the target GNN). In this paper, based on the observation that graphs typically share some joint motif patterns, we propose a novel non-parametric subgraph matching framework, dubbed MatchExplainer, to explore explanatory subgraphs. It couples the target graph with other counterpart instances and identifies the most crucial joint substructure by minimizing the node corresponding-based distance. Moreover, we note that present graph sampling or node-dropping methods usually suffer from the false positive sampling problem. To ameliorate that issue, we design a new augmentation paradigm named MatchDrop. It takes advantage of MatchExplainer to fix the most informative portion of the graph and merely operates graph augmentations on the rest less informative part. We conduct extensive experiments on both synthetic and real-world datasets and show the effectiveness of our MatchExplainer by outperforming all parametric baselines with significant margins. Additional results also demonstrate that our MatchDrop is a general scheme to be equipped with GNNs for enhanced performance. "
+}

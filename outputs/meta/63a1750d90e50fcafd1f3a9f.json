@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SplitGP: A new split learning solution"
+  ],
+  "results": [
+    "Outperforms existing baselines in inference time and test accuracy for varying amounts of out-of-distribution samples"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f3a9f",
+  "title": "SplitGP: Achieving Both Generalization and Personalization in Federated\n  Learning",
+  "abstract": "  A fundamental challenge to providing edge-AI services is the need for a machine learning (ML) model that achieves personalization (i.e., to individual clients) and generalization (i.e., to unseen data) properties concurrently. Existing techniques in federated learning (FL) have encountered a steep tradeoff between these objectives and impose large computational requirements on edge devices during training and inference. In this paper, we propose SplitGP, a new split learning solution that can simultaneously capture generalization and personalization capabilities for efficient inference across resource-constrained clients (e.g., mobile/IoT devices). Our key idea is to split the full ML model into client-side and server-side components, and impose different roles to them: the client-side model is trained to have strong personalization capability optimized to each client's main task, while the server-side model is trained to have strong generalization capability for handling all clients' out-of-distribution tasks. We analytically characterize the convergence behavior of SplitGP, revealing that all client models approach stationary points asymptotically. Further, we analyze the inference time in SplitGP and provide bounds for determining model split ratios. Experimental results show that SplitGP outperforms existing baselines by wide margins in inference time and test accuracy for varying amounts of out-of-distribution samples. "
+}

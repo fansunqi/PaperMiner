@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Radiance Field",
+    "Event-based vision tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ev-NeRF",
+    "Neural volume creation",
+    "Loss function reflecting sensor measurement model"
+  ],
+  "results": [
+    "Competitive performance for intensity image reconstruction under extreme noise conditions",
+    "High-dynamic-range imaging"
+  ],
+  "paper_id": "62bab8e95aee126c0f6adcea",
+  "title": "Ev-NeRF: Event Based Neural Radiance Field",
+  "abstract": "  We present Ev-NeRF, a Neural Radiance Field derived from event data. While event cameras can measure subtle brightness changes in high frame rates, the measurements in low lighting or extreme motion suffer from significant domain discrepancy with complex noise. As a result, the performance of event-based vision tasks does not transfer to challenging environments, where the event cameras are expected to thrive over normal cameras. We find that the multi-view consistency of NeRF provides a powerful self-supervision signal for eliminating the spurious measurements and extracting the consistent underlying structure despite highly noisy input. Instead of posed images of the original NeRF, the input to Ev-NeRF is the event measurements accompanied by the movements of the sensors. Using the loss function that reflects the measurement model of the sensor, Ev-NeRF creates an integrated neural volume that summarizes the unstructured and sparse data points captured for about 2-4 seconds. The generated neural volume can also produce intensity images from novel views with reasonable depth estimates, which can serve as a high-quality input to various vision-based tasks. Our results show that Ev-NeRF achieves competitive performance for intensity image reconstruction under extreme noise conditions and high-dynamic-range imaging. "
+}

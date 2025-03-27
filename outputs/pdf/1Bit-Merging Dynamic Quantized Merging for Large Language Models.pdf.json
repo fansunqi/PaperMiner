@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model Merging"
+  ],
+  "datasets": [
+    "MMLU",
+    "HellaSwag",
+    "TruthfulQA",
+    "GSM8K",
+    "MATH",
+    "MBPP",
+    "HumanEval"
+  ],
+  "methods": [
+    "1-bit Quantization",
+    "Dynamic Routing",
+    "Task Vector Compression"
+  ],
+  "results": [
+    "Average performance score of 36.74 across all tasks",
+    "Surpassed the highest average performance of expert fine-tuned models by 1.58 points"
+  ],
+  "title": "1Bit-Merging Dynamic Quantized Merging for Large Language Models.pdf",
+  "abstract": "Recent advances in large language models have led to specialized models excelling in specific domains, creating a need for efficient model merging techniques. While traditional merg- ing approaches combine parameters into a sin- gle static model, they often compromise task- specific performance. However, task-specific routing methods maintain accuracy but intro- duce substantial storage overhead. We present 1bit-Merging, a novel framework that inte- grates task-specific routing with 1-bit quan- tized task vectors to balance performance and storage efficiency. Our approach leverages the observation that different task-specific models store knowledge in distinct layers\u2014chat mod- els primarily in attention layers and math/code models in MLP layers\u2014enabling targeted com- pression strategies. Through extensive experi- ments with LLaMA2 and Mistral model fami- lies across chat, mathematical reasoning, and code generation tasks, we demonstrate that 1bit-Merging achieves comparable or supe- rior performance to existing methods while sig- nificantly reducing storage requirements. Our framework offers a practical solution for com- bining specialized models while maintaining their individual strengths and addressing the storage challenges of current approaches. 1 Introduction Large language models have achieved remarkable progress, demonstrating strong performance on a wide range of tasks (Touvron et al., 2023; Zhao et al., 2023). As researchers continue to fine-tune these models for specific domains, there is a grow- ing need to combine their specialized capabilities into a single model (Yang et al., 2024; Goddard et al., 2024). While multi-task learning offers one solution (Sanh et al., 2022; Fifty et al., 2021), it \u2020Corresponding author. Figure 1: While individually fine-tuned models excel only in their specialized domains, our 1bit-Merging achieves superior performance across all domains. requires extensive computational resources and si- multaneous access to all task-specific datasets. Re- cent advances in parameter-space model merging (Wortsman et al., 2022; Ilharco et al., 2023; Yadav et al., 2023; Yu et al., 2024b) provide an efficient alternative - by directly operating on model pa- rameters, these methods preserve data privacy and eliminate the need for expensive retraining. Traditional model merging approaches (Ilharco et al., 2023; Yadav et al., 2023; Yu et al., 2024b) typically combine the parameters of multiple fine- tuned models, or expert models, into a single static model without additional training, thereby enabling efficient multi-task functionality. However, merg- ing models from different domains often sacrifices task-specific performance, resulting in a noticeable gap compared to individual expert models. In con- trast, merging with task-specific routing (Muqeeth et al., 2024; Lu et al., 2024) dynamically prior- itizes relevant task vectors based on input data, effectively maintaining accuracy by isolating task- specific parameters. However, this routing-based merging strategy introduces substantial storage overhead, as it necessitates the preservation of all task vectors to ensure task relevance and perfor- mance. Thus, despite their ability to uphold model arXiv:2502.10743v1 [cs.CL] 15 Feb 2025"
+}

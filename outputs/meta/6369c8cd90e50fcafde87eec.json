@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Legal Judgment Prediction (LJP)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Causal structural models (SCMs)",
+    "Open information extraction (OIE)",
+    "Causal Information Enhanced SAmpling Method (CIESAM)",
+    "Causality-Aware Self-Attention Mechanism (CASAM)"
+  ],
+  "results": [
+    "State-of-the-art (SOTA) performance on three commonly used legal-specific datasets",
+    "Stronger performance of CASAM demonstrates the importance of causality for robustness and generalization"
+  ],
+  "paper_id": "6369c8cd90e50fcafde87eec",
+  "title": "Knowledge is Power: Understanding Causality Makes Legal judgment\n  Prediction Models More Generalizable and Robust",
+  "abstract": "  Legal Judgment Prediction (LJP), aiming to predict a judgment based on fact descriptions according to rule of law, serves as legal assistance to mitigate the great work burden of limited legal practitioners. Most existing methods apply various large-scale pre-trained language models (PLMs) finetuned in LJP tasks to obtain consistent improvements. However, we discover the fact that the state-of-the-art (SOTA) model makes judgment predictions according to irrelevant (or non-casual) information. The violation of rule of law not only weakens the robustness and generalization ability of models but also results in severe social problems like discrimination. In this paper, we use causal structural models (SCMs) to theoretically analyze how LJP models learn to make decisions and why they can succeed in passing the traditional testing paradigm without learning causality. According to our analysis, we provide two solutions intervening on data and model by causality, respectively. In detail, we first distinguish non-causal information by applying the open information extraction (OIE) technique. Then, we propose a method named the Causal Information Enhanced SAmpling Method (CIESAM) to eliminate the non-causal information from data. To validate our theoretical analysis, we further propose another method using our proposed Causality-Aware Self-Attention Mechanism (CASAM) to guide the model to learn the underlying causality knowledge in legal texts. The confidence of CASAM in learning causal information is higher than that of CIESAM. The extensive experimental results show that both our proposed methods achieve state-of-the-art (SOTA) performance on three commonly used legal-specific datasets. The stronger performance of CASAM further demonstrates that causality is the key to the robustness and generalization ability of models. "
+}

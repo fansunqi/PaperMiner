@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Object Tracking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Spatial-Frequency Transformer",
+    "Gaussian spatial Prior",
+    "High-frequency emphasis Attention",
+    "SwinTransformer",
+    "Multi-head cross-attention module"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62feff8d90e50fcafd599870",
+  "title": "Learning Spatial-Frequency Transformer for Visual Object Tracking",
+  "abstract": "  Recent trackers adopt the Transformer to combine or replace the widely used ResNet as their new backbone network. Although their trackers work well in regular scenarios, however, they simply flatten the 2D features into a sequence to better match the Transformer. We believe these operations ignore the spatial prior of the target object which may lead to sub-optimal results only. In addition, many works demonstrate that self-attention is actually a low-pass filter, which is independent of input features or key/queries. That is to say, it may suppress the high-frequency component of the input features and preserve or even amplify the low-frequency information. To handle these issues, in this paper, we propose a unified Spatial-Frequency Transformer that models the Gaussian spatial Prior and High-frequency emphasis Attention (GPHA) simultaneously. To be specific, Gaussian spatial prior is generated using dual Multi-Layer Perceptrons (MLPs) and injected into the similarity matrix produced by multiplying Query and Key features in self-attention. The output will be fed into a Softmax layer and then decomposed into two components, i.e., the direct signal and high-frequency signal. The low- and high-pass branches are rescaled and combined to achieve all-pass, therefore, the high-frequency features will be protected well in stacked self-attention layers. We further integrate the Spatial-Frequency Transformer into the Siamese tracking framework and propose a novel tracking algorithm, termed SFTransT. The cross-scale fusion based SwinTransformer is adopted as the backbone, and also a multi-head cross-attention module is used to boost the interaction between search and template features. The output will be fed into the tracking head for target localization. Extensive experiments on both short-term and long-term tracking benchmarks all demonstrate the effectiveness of our proposed framework. "
+}

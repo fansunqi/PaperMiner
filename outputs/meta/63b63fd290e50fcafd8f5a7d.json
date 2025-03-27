@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Decentralized optimization problems",
+    "Gradient tracking"
+  ],
+  "datasets": [
+    "MNIST"
+  ],
+  "methods": [
+    "$K$-GT"
+  ],
+  "results": [
+    "Convergence rate for $K$-GT on smooth non-convex functions",
+    "Reduces communication overhead asymptotically by a linear factor $K$"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5a7d",
+  "title": "Decentralized Gradient Tracking with Local Steps",
+  "abstract": "  Gradient tracking (GT) is an algorithm designed for solving decentralized optimization problems over a network (such as training a machine learning model). A key feature of GT is a tracking mechanism that allows to overcome data heterogeneity between nodes.   We develop a novel decentralized tracking mechanism, $K$-GT, that enables communication-efficient local updates in GT while inheriting the data-independence property of GT. We prove a convergence rate for $K$-GT on smooth non-convex functions and prove that it reduces the communication overhead asymptotically by a linear factor $K$, where $K$ denotes the number of local steps. We illustrate the robustness and effectiveness of this heterogeneity correction on convex and non-convex benchmark problems and on a non-convex neural network training task with the MNIST dataset. "
+}

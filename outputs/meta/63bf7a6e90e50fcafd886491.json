@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cooperative trajectory planning of Connected Autonomous Vehicles (CAVs)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Decentralized iterative linear quadratic regulator (iLQR)",
+    "Dual consensus alternating direction method of multipliers (ADMM)",
+    "Neighbourhood approximation"
+  ],
+  "results": [
+    "Significant reduction in computation burden",
+    "Real-time performance attainable",
+    "Scalability demonstrated through traffic scenarios"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886491",
+  "title": "Decentralized iLQR for Cooperative Trajectory Planning of Connected\n  Autonomous Vehicles via Dual Consensus ADMM",
+  "abstract": "  Developments in cooperative trajectory planning of connected autonomous vehicles (CAVs) have gathered considerable momentum and research attention. Generally, such problems present strong non-linearity and non-convexity, rendering great difficulties in finding the optimal solution. Existing methods typically suffer from low computational efficiency, and this hinders the appropriate applications in large-scale scenarios involving an increasing number of vehicles. To tackle this problem, we propose a novel decentralized iterative linear quadratic regulator (iLQR) algorithm by leveraging the dual consensus alternating direction method of multipliers (ADMM). First, the original non-convex optimization problem is reformulated into a series of convex optimization problems through iterative neighbourhood approximation. Then, the dual of each convex optimization problem is shown to have a consensus structure, which facilitates the use of consensus ADMM to solve for the dual solution in a fully decentralized and parallel architecture. Finally, the primal solution corresponding to the trajectory of each vehicle is recovered by solving a linear quadratic regulator (LQR) problem iteratively, and a novel trajectory update strategy is proposed to ensure the dynamic feasibility of vehicles. With the proposed development, the computation burden is significantly alleviated such that real-time performance is attainable. Two traffic scenarios are presented to validate the proposed algorithm, and thorough comparisons between our proposed method and baseline methods (including centralized iLQR, IPOPT, and SQP) are conducted to demonstrate the scalability of the proposed approach. "
+}

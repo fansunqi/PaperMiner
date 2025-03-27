@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monocular panorama depth estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "End-to-end deep network",
+    "Global cross-attention-based fusion module"
+  ],
+  "results": [
+    "Substantially outperforms previous state-of-the-art methods"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b13",
+  "title": "${S}^{2}$Net: Accurate Panorama Depth Estimation on Spherical Surface",
+  "abstract": "  Monocular depth estimation is an ambiguous problem, thus global structural cues play an important role in current data-driven single-view depth estimation methods. Panorama images capture the complete spatial information of their surroundings utilizing the equirectangular projection which introduces large distortion. This requires the depth estimation method to be able to handle the distortion and extract global context information from the image. In this paper, we propose an end-to-end deep network for monocular panorama depth estimation on a unit spherical surface. Specifically, we project the feature maps extracted from equirectangular images onto unit spherical surface sampled by uniformly distributed grids, where the decoder network can aggregate the information from the distortion-reduced feature maps. Meanwhile, we propose a global cross-attention-based fusion module to fuse the feature maps from skip connection and enhance the ability to obtain global context. Experiments are conducted on five panorama depth estimation datasets, and the results demonstrate that the proposed method substantially outperforms previous state-of-the-art methods. All related codes will be open-sourced in the upcoming days. "
+}

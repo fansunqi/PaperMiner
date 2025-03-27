@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "HDR panorama generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Text2Light framework",
+    "Dual codebooks for environmental textures",
+    "Pre-trained CLIP model for text-driven sampling",
+    "Structure-aware local sampler for LDR panorama synthesis",
+    "Super-resolution inverse tone mapping"
+  ],
+  "results": [
+    "Zero-shot text-driven generation of 4K+ resolution HDRIs",
+    "Superior capability in generating high-quality HDR panoramas",
+    "Feasibility in realistic rendering and immersive VR"
+  ],
+  "paper_id": "632a811f90e50fcafd084a08",
+  "title": "Text2Light: Zero-Shot Text-Driven HDR Panorama Generation",
+  "abstract": "  High-quality HDRIs(High Dynamic Range Images), typically HDR panoramas, are one of the most popular ways to create photorealistic lighting and 360-degree reflections of 3D scenes in graphics. Given the difficulty of capturing HDRIs, a versatile and controllable generative model is highly desired, where layman users can intuitively control the generation process. However, existing state-of-the-art methods still struggle to synthesize high-quality panoramas for complex scenes. In this work, we propose a zero-shot text-driven framework, Text2Light, to generate 4K+ resolution HDRIs without paired training data. Given a free-form text as the description of the scene, we synthesize the corresponding HDRI with two dedicated steps: 1) text-driven panorama generation in low dynamic range(LDR) and low resolution, and 2) super-resolution inverse tone mapping to scale up the LDR panorama both in resolution and dynamic range. Specifically, to achieve zero-shot text-driven panorama generation, we first build dual codebooks as the discrete representation for diverse environmental textures. Then, driven by the pre-trained CLIP model, a text-conditioned global sampler learns to sample holistic semantics from the global codebook according to the input text. Furthermore, a structure-aware local sampler learns to synthesize LDR panoramas patch-by-patch, guided by holistic semantics. To achieve super-resolution inverse tone mapping, we derive a continuous representation of 360-degree imaging from the LDR panorama as a set of structured latent codes anchored to the sphere. This continuous representation enables a versatile module to upscale the resolution and dynamic range simultaneously. Extensive experiments demonstrate the superior capability of Text2Light in generating high-quality HDR panoramas. In addition, we show the feasibility of our work in realistic rendering and immersive VR. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backdoor Removal"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stabilized Model Inversion",
+    "Bi-level Optimization Framework"
+  ],
+  "results": [
+    "State-of-the-art backdoor removal performance without clean in-distribution data"
+  ],
+  "paper_id": "62a94e0d5aee126c0f9c1e3d",
+  "title": "Turning a Curse into a Blessing: Enabling In-Distribution-Data-Free\n  Backdoor Removal via Stabilized Model Inversion",
+  "abstract": "  Many backdoor removal techniques in machine learning models require clean in-distribution data, which may not always be available due to proprietary datasets. Model inversion techniques, often considered privacy threats, can reconstruct realistic training samples, potentially eliminating the need for in-distribution data. Prior attempts to combine backdoor removal and model inversion yielded limited results. Our work is the first to provide a thorough understanding of leveraging model inversion for effective backdoor removal by addressing key questions about reconstructed samples' properties, perceptual similarity, and the potential presence of backdoor triggers.   We establish that relying solely on perceptual similarity is insufficient for robust defenses, and the stability of model predictions in response to input and parameter perturbations is also crucial. To tackle this, we introduce a novel bi-level optimization-based framework for model inversion, promoting stability and visual quality. Interestingly, we discover that reconstructed samples from a pre-trained generator's latent space are backdoor-free, even when utilizing signals from a backdoored model. We provide a theoretical analysis to support this finding. Our evaluation demonstrates that our stabilized model inversion technique achieves state-of-the-art backdoor removal performance without clean in-distribution data, matching or surpassing performance using the same amount of clean samples. "
+}

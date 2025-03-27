@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning radiance fields",
+    "Novel view synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reducing redundancy by shooting fewer rays",
+    "Adaptive quadtree subdivision"
+  ],
+  "results": [
+    "Comparable accuracy to state-of-the-art with much faster training"
+  ],
+  "paper_id": "62fb0aef90e50fcafd5f8acc",
+  "title": "Fast Learning Radiance Fields by Shooting Much Fewer Rays",
+  "abstract": "  Learning radiance fields has shown remarkable results for novel view synthesis. The learning procedure usually costs lots of time, which motivates the latest methods to speed up the learning procedure by learning without neural networks or using more efficient data structures. However, these specially designed approaches do not work for most of radiance fields based methods. To resolve this issue, we introduce a general strategy to speed up the learning procedure for almost all radiance fields based methods. Our key idea is to reduce the redundancy by shooting much fewer rays in the multi-view volume rendering procedure which is the base for almost all radiance fields based methods. We find that shooting rays at pixels with dramatic color change not only significantly reduces the training burden but also barely affects the accuracy of the learned radiance fields. In addition, we also adaptively subdivide each view into a quadtree according to the average rendering error in each node in the tree, which makes us dynamically shoot more rays in more complex regions with larger rendering error. We evaluate our method with different radiance fields based methods under the widely used benchmarks. Experimental results show that our method achieves comparable accuracy to the state-of-the-art with much faster training. "
+}

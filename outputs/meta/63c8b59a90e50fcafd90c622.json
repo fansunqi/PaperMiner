@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Classifying small lesions in whole slide images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "salient instance inference-based multiple instance learning (SiiMIL)"
+  ],
+  "results": [
+    "Significant improvement in performance over the state-of-the-art MIL methods",
+    "Accurately identifies tumor instances occupying less than 1% of a WSI"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c622",
+  "title": "Attention2Minority: A salient instance inference-based multiple instance\n  learning for classifying small lesions in whole slide images",
+  "abstract": "  Multiple instance learning (MIL) models have achieved remarkable success in analyzing whole slide images (WSIs) for disease classification problems. However, with regard to gigapixel WSI classification problems, current MIL models are often incapable of differentiating a WSI with extremely small tumor lesions. This minute tumor-to-normal area ratio in a MIL bag inhibits the attention mechanism from properly weighting the areas corresponding to minor tumor lesions. To overcome this challenge, we propose salient instance inference MIL (SiiMIL), a weakly-supervised MIL model for WSI classification. Our method initially learns representations of normal WSIs, and it then compares the normal WSIs representations with all the input patches to infer the salient instances of the input WSI. Finally, it employs attention-based MIL to perform the slide-level classification based on the selected patches of the WSI. Our experiments imply that SiiMIL can accurately identify tumor instances, which could only take up less than 1% of a WSI, so that the ratio of tumor to normal instances within a bag can increase by two to four times. It is worth mentioning that it performs equally well for large tumor lesions. As a result, SiiMIL achieves a significant improvement in performance over the state-of-the-art MIL methods. "
+}

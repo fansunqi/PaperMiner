@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse-view computed tomography denoising"
+  ],
+  "datasets": [
+    "Clinically relevant datasets"
+  ],
+  "methods": [
+    "WNet: dual-domain denoising model with trainable reconstruction layer",
+    "Encoder-decoder networks",
+    "Filtered BackProjection"
+  ],
+  "results": [
+    "Improved image quality with reduced streaking artifacts",
+    "Comparison with three different types of sparse-view CT denoising and reconstruction algorithms"
+  ],
+  "paper_id": "62c2a9595aee126c0fcf0c54",
+  "title": "WNet: A data-driven dual-domain denoising model for sparse-view computed\n  tomography with a trainable reconstruction layer",
+  "abstract": "  Deep learning based solutions are being succesfully implemented for a wide variety of applications. Most notably, clinical use-cases have gained an increased interest and have been the main driver behind some of the cutting-edge data-driven algorithms proposed in the last years. For applications like sparse-view tomographic reconstructions, where the amount of measurement data is small in order to keep acquisition time short and radiation dose low, reduction of the streaking artifacts has prompted the development of data-driven denoising algorithms with the main goal of obtaining diagnostically viable images with only a subset of a full-scan data. We propose WNet, a data-driven dual-domain denoising model which contains a trainable reconstruction layer for sparse-view artifact denoising. Two encoder-decoder networks perform denoising in both sinogram- and reconstruction-domain simultaneously, while a third layer implementing the Filtered Backprojection algorithm is sandwiched between the first two and takes care of the reconstruction operation. We investigate the performance of the network on sparse-view chest CT scans, and we highlight the added benefit of having a trainable reconstruction layer over the more conventional fixed ones. We train and test our network on two clinically relevant datasets and we compare the obtained results with three different types of sparse-view CT denoising and reconstruction algorithms. "
+}

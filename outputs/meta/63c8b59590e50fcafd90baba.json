@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "ObjectGoal Navigation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PIRLNav: Pretraining with Imitation and RL Finetuning",
+    "Behavior cloning (BC)",
+    "Reinforcement learning (RL)"
+  ],
+  "results": [
+    "Success rate of 65.0% on ObjectNav (+5.0% absolute over previous state-of-the-art)",
+    "BC$\rightarrow$RL on human demonstrations outperforms BC$\rightarrow$RL on SP and FE trajectories",
+    "90% of the performance of the best BC$\rightarrow$RL policy can be achieved with less than half the number of BC demonstrations"
+  ],
+  "paper_id": "63c8b59590e50fcafd90baba",
+  "title": "PIRLNav: Pretraining with Imitation and RL Finetuning for ObjectNav",
+  "abstract": "  We study ObjectGoal Navigation -- where a virtual robot situated in a new environment is asked to navigate to an object. Prior work has shown that imitation learning (IL) using behavior cloning (BC) on a dataset of human demonstrations achieves promising results. However, this has limitations -- 1) BC policies generalize poorly to new states, since the training mimics actions not their consequences, and 2) collecting demonstrations is expensive. On the other hand, reinforcement learning (RL) is trivially scalable, but requires careful reward engineering to achieve desirable behavior. We present PIRLNav, a two-stage learning scheme for BC pretraining on human demonstrations followed by RL-finetuning. This leads to a policy that achieves a success rate of $65.0\\%$ on ObjectNav ($+5.0\\%$ absolute over previous state-of-the-art). Using this BC$\\rightarrow$RL training recipe, we present a rigorous empirical analysis of design choices. First, we investigate whether human demonstrations can be replaced with `free' (automatically generated) sources of demonstrations, e.g. shortest paths (SP) or task-agnostic frontier exploration (FE) trajectories. We find that BC$\\rightarrow$RL on human demonstrations outperforms BC$\\rightarrow$RL on SP and FE trajectories, even when controlled for same BC-pretraining success on train, and even on a subset of val episodes where BC-pretraining success favors the SP or FE policies. Next, we study how RL-finetuning performance scales with the size of the BC pretraining dataset. We find that as we increase the size of BC-pretraining dataset and get to high BC accuracies, improvements from RL-finetuning are smaller, and that $90\\%$ of the performance of our best BC$\\rightarrow$RL policy can be achieved with less than half the number of BC demonstrations. Finally, we analyze failure modes of our ObjectNav policies, and present guidelines for further improving them. "
+}

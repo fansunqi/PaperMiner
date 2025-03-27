@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning solution operators for PDEs",
+    "Turbulence flow modeling"
+  ],
+  "datasets": [
+    "Kolmogorov Flow"
+  ],
+  "methods": [
+    "Incremental Fourier Neural Operator (IFNO)"
+  ],
+  "results": [
+    "Reduces testing loss by more than 10%",
+    "Uses 20% fewer frequency modes compared to standard FNO"
+  ],
+  "paper_id": "6385788590e50fcafdf49f94",
+  "title": "Incremental Spectral Learning in Fourier Neural Operator",
+  "abstract": "  Recently, neural networks have proven their impressive ability to solve partial differential equations (PDEs). Among them, Fourier neural operator (FNO) has shown success in learning solution operators for highly non-linear problems such as turbulence flow. FNO learns weights over different frequencies and as a regularization procedure, it only retains frequencies below a fixed threshold. However, manually selecting such an appropriate threshold for frequencies can be challenging, as an incorrect threshold can lead to underfitting or overfitting. To this end, we propose Incremental Fourier Neural Operator (IFNO) that incrementally adds frequency modes by increasing the truncation threshold adaptively during training. We show that IFNO reduces the testing loss by more than 10% while using 20% fewer frequency modes, compared to the standard FNO training on the Kolmogorov Flow (with Reynolds number up to 5000) under the few-data regime. "
+}

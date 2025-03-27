@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving Partial Differential Equations using Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Double Ritz Method (D$^2$RM)"
+  ],
+  "results": [
+    "Robustness up to the approximation properties of the networks and the training capacity of the optimizers"
+  ],
+  "paper_id": "6369c8d290e50fcafde89676",
+  "title": "A Deep Double Ritz Method (D$^2$RM) for solving Partial Differential\n  Equations using Neural Networks",
+  "abstract": "  Residual minimization is a widely used technique for solving Partial Differential Equations in variational form. It minimizes the dual norm of the residual, which naturally yields a saddle-point (min-max) problem over the so-called trial and test spaces. In the context of neural networks, we can address this min-max approach by employing one network to seek the trial minimum, while another network seeks the test maximizers. However, the resulting method is numerically unstable as we approach the trial solution. To overcome this, we reformulate the residual minimization as an equivalent minimization of a Ritz functional fed by optimal test functions computed from another Ritz functional minimization. We call the resulting scheme the Deep Double Ritz Method (D$^2$RM), which combines two neural networks for approximating trial functions and optimal test functions along a nested double Ritz minimization strategy. Numerical results on different diffusion and convection problems support the robustness of our method, up to the approximation properties of the networks and the training capacity of the optimizers. "
+}

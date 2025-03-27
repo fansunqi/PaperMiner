@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/zdhNarsil/Stochastic-Marginal-Actor-Critic"
+  ],
+  "tasks": [
+    "Reinforcement Learning",
+    "Exploration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Latent State Marginalization",
+    "Stochastic Marginal Actor-Critic (SMAC)"
+  ],
+  "results": [
+    "Better exploration and robust training"
+  ],
+  "paper_id": "633ba44c90e50fcafdfe571d",
+  "title": "Latent State Marginalization as a Low-cost Approach for Improving\n  Exploration",
+  "abstract": "  While the maximum entropy (MaxEnt) reinforcement learning (RL) framework -- often touted for its exploration and robustness capabilities -- is usually motivated from a probabilistic perspective, the use of deep probabilistic models has not gained much traction in practice due to their inherent complexity. In this work, we propose the adoption of latent variable policies within the MaxEnt framework, which we show can provably approximate any policy distribution, and additionally, naturally emerges under the use of world models with a latent belief state. We discuss why latent variable policies are difficult to train, how naive approaches can fail, then subsequently introduce a series of improvements centered around low-cost marginalization of the latent state, allowing us to make full use of the latent state at minimal additional cost. We instantiate our method under the actor-critic framework, marginalizing both the actor and critic. The resulting algorithm, referred to as Stochastic Marginal Actor-Critic (SMAC), is simple yet effective. We experimentally validate our method on continuous control tasks, showing that effective marginalization can lead to better exploration and more robust training. Our implementation is open sourced at https://github.com/zdhNarsil/Stochastic-Marginal-Actor-Critic. "
+}

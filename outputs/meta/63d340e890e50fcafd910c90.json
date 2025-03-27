@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Characterising explicit cache side channel vulnerabilities"
+  ],
+  "datasets": [
+    "SPEC 2006",
+    "micro benchmark",
+    "OpenSSL AES implementations"
+  ],
+  "methods": [
+    "Clueless: a binary instrumentation tool"
+  ],
+  "results": [
+    "Characterises the amount of data values turned into addresses",
+    "Demonstrates vulnerabilities in T-table implementation of AES"
+  ],
+  "paper_id": "63d340e890e50fcafd910c90",
+  "title": "Clueless: A Tool Characterising Values Leaking as Addresses",
+  "abstract": "  Clueless is a binary instrumentation tool that characterises explicit cache side channel vulnerabilities of programs. It detects the transformation of data values into addresses by tracking dynamic instruction dependencies. Clueless tags data values in memory if it discovers that they are used in address calculations to further access other data.   Clueless can report on the amount of data that are used as addresses at each point during execution. It can also be specifically instructed to track certain data in memory (e.g., a password) to see if they are turned into addresses at any point during execution. It returns a trace on how the tracked data are turned into addresses, if they do.   We demonstrate Clueless on SPEC 2006 and characterise, for the first time, the amount of data values that are turned into addresses in these programs. We further demonstrate Clueless on a micro benchmark and on a case study. The case study is the different implementations of AES in OpenSSL: T-table, Vector Permutation AES (VPAES), and Intel Advanced Encryption Standard New Instructions (AES-NI). Clueless shows how the encryption key is transformed into addresses in the T-table implementation, while explicit cache side channel vulnerabilities are note detected in the other implementations. "
+}

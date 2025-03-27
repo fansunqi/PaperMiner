@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Named entity recognition",
+    "Nested entity recognition"
+  ],
+  "datasets": [
+    "GENIA",
+    "WeiboNER"
+  ],
+  "methods": [
+    "Proposer and regressor",
+    "Feature pyramid network",
+    "Encoder-only architecture",
+    "Spatially modulated attention",
+    "Progressive refinement"
+  ],
+  "results": [
+    "F1 score: 80.74 on GENIA",
+    "F1 score: 72.38 on WeiboNER"
+  ],
+  "paper_id": "6350bc6790e50fcafdeceb72",
+  "title": "End-to-End Entity Detection with Proposer and Regressor",
+  "abstract": "  Named entity recognition is a traditional task in natural language processing. In particular, nested entity recognition receives extensive attention for the widespread existence of the nesting scenario. The latest research migrates the well-established paradigm of set prediction in object detection to cope with entity nesting. However, the manual creation of query vectors, which fail to adapt to the rich semantic information in the context, limits these approaches. An end-to-end entity detection approach with proposer and regressor is presented in this paper to tackle the issues. First, the proposer utilizes the feature pyramid network to generate high-quality entity proposals. Then, the regressor refines the proposals for generating the final prediction. The model adopts encoder-only architecture and thus obtains the advantages of the richness of query semantics, high precision of entity localization, and easiness of model training. Moreover, we introduce the novel spatially modulated attention and progressive refinement for further improvement. Extensive experiments demonstrate that our model achieves advanced performance in flat and nested NER, achieving a new state-of-the-art F1 score of 80.74 on the GENIA dataset and 72.38 on the WeiboNER dataset. "
+}

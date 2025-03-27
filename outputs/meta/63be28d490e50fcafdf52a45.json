@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Code offloading to GPU using OpenMP",
+    "Porting legacy applications to different architectures"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Machine Learning-based cost model",
+    "OpenMP Advisor tool"
+  ],
+  "results": [
+    "Generated code for multiple applications on seven different architectures",
+    "Correctly predicted top ten best variants for each application on every architecture"
+  ],
+  "paper_id": "63be28d490e50fcafdf52a45",
+  "title": "OpenMP Advisor",
+  "abstract": "  With the increasing diversity of heterogeneous architecture in the HPC industry, porting a legacy application to run on different architectures is a tough challenge. In this paper, we present OpenMP Advisor, a first of its kind compiler tool that enables code offloading to a GPU with OpenMP using Machine Learning. Although the tool is currently limited to GPUs, it can be extended to support other OpenMP-capable devices. The tool has two modes: Training mode and Prediction mode. The training mode must be executed on the target hardware. It takes benchmark codes as input, generates and executes every variant of the code that could possibly run on the target device, and then collects data from all of the executed codes to train an ML-based cost model for use in prediction mode. However, in prediction mode the tool does not need any interaction with the target device. It accepts a C code as input and returns the best code variant that can be used to offload the code to the specified device. The tool can determine the kernels that are best suited for offloading by predicting their runtime using a machine learning-based cost model. The main objective behind this tool is to maintain the portability aspect of OpenMP. Using our Advisor, we were able to generate code of multiple applications for seven different architectures, and correctly predict the top ten best variants for each application on every architecture. Preliminary findings indicate that this tool can assist compiler developers and HPC application researchers in porting their legacy HPC codes to the upcoming heterogeneous computing environment. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simulation of viscoplastic flow in a shallow-water regime"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Discontinuous Galerkin method",
+    "Regularization for Bingham model"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63d340ef90e50fcafd9117a4",
+  "title": "Regularized Approach for Bingham Viscoplastic Shallow Flow Using the\n  Discontinuous Galerkin Method",
+  "abstract": "  This paper aims to simulate viscoplastic flow in a shallow-water regime. We specifically use the Bingham model in which the material behaves as a solid if the stress is below a certain threshold, otherwise, it moves as a fluid. The main difficulty of this problem is the coupling of the shallow-water equations with the viscoplastic constitutive laws and the high computational effort needed in its solution. Although there have been many studies of this problem, most of these works use explicit methods with simplified empirical models. In our work, to accommodate non-uniform grids and complicated geometries, we use the discontinuous Galerkin method to solve shallow viscoplastic flows. This method is attractive due to its high parallelization, h- and p-adaptivity, and ability to capture shocks. Additionally, we treat the discontinuities in the interfaces between elements with numerical fluxes that ensure a stable solution of the nonlinear hyperbolic equations. To couple the Bingham model with the shallow-water equations, we regularize the problem with three alternatives. Finally, in order to show the effectiveness of our approach, we perform numerical examples for the usual benchmarks of the shallow-water equations. "
+}

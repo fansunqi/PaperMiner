@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://waveformer.cs.washington.edu/"
+  ],
+  "tasks": [
+    "Target sound extraction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Waveformer (encoder-decoder architecture with dilated causal convolution layers and transformer decoder layer)"
+  ],
+  "results": [
+    "2.2-3.3 dB improvement in SI-SNRi",
+    "1.2-4x smaller model size",
+    "1.5-2x lower runtime"
+  ],
+  "paper_id": "6368773090e50fcafd674dd3",
+  "title": "Real-Time Target Sound Extraction",
+  "abstract": "  We present the first neural network model to achieve real-time and streaming target sound extraction. To accomplish this, we propose Waveformer, an encoder-decoder architecture with a stack of dilated causal convolution layers as the encoder, and a transformer decoder layer as the decoder. This hybrid architecture uses dilated causal convolutions for processing large receptive fields in a computationally efficient manner while also leveraging the generalization performance of transformer-based architectures. Our evaluations show as much as 2.2-3.3 dB improvement in SI-SNRi compared to the prior models for this task while having a 1.2-4x smaller model size and a 1.5-2x lower runtime. We provide code, dataset, and audio samples: https://waveformer.cs.washington.edu/. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving DNN Generalization and Robustness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sharpness-Aware Minimization Scaled by Outlier Normalization (SAMSON)"
+  ],
+  "results": [
+    "Outperforms existing sharpness-aware training methods in model generalization performance and robustness"
+  ],
+  "paper_id": "637c3dd690e50fcafd77cda2",
+  "title": "SAMSON: Sharpness-Aware Minimization Scaled by Outlier Normalization for\n  Improving DNN Generalization and Robustness",
+  "abstract": "  Energy-efficient deep neural network (DNN) accelerators are prone to non-idealities that degrade DNN performance at inference time. To mitigate such degradation, existing methods typically add perturbations to the DNN weights during training to simulate inference on noisy hardware. However, this often requires knowledge about the target hardware and leads to a trade-off between DNN performance and robustness, decreasing the former to increase the latter. In this work, we show that applying sharpness-aware training, by optimizing for both the loss value and loss sharpness, significantly improves robustness to noisy hardware at inference time without relying on any assumptions about the target hardware. In particular, we propose a new adaptive sharpness-aware method that conditions the worst-case perturbation of a given weight not only on its magnitude but also on the range of the weight distribution. This is achieved by performing sharpness-aware minimization scaled by outlier minimization (SAMSON). Our approach outperforms existing sharpness-aware training methods both in terms of model generalization performance in noiseless regimes and robustness in noisy settings, as measured on several architectures and datasets. "
+}

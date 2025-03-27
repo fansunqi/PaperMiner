@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-goal reinforcement learning (RL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Divergence minimization perspective",
+    "Q-learning",
+    "Behavioral cloning (BC)"
+  ],
+  "results": [
+    "Q-learning outperforms behavioral cloning (BC)",
+    "Vanilla combination of both hurts performance",
+    "Reward of (-1, 0) results in significantly better performance than a (0, 1) reward for goal reaching"
+  ],
+  "paper_id": "6333bb7790e50fcafdb4bf6d",
+  "title": "Understanding Hindsight Goal Relabeling from a Divergence Minimization\n  Perspective",
+  "abstract": "  Hindsight goal relabeling has become a foundational technique in multi-goal reinforcement learning (RL). The essential idea is that any trajectory can be seen as a sub-optimal demonstration for reaching its final state. Intuitively, learning from those arbitrary demonstrations can be seen as a form of imitation learning (IL). However, the connection between hindsight goal relabeling and imitation learning is not well understood. In this paper, we propose a novel framework to understand hindsight goal relabeling from a divergence minimization perspective. Recasting the goal reaching problem in the IL framework not only allows us to derive several existing methods from first principles, but also provides us with the tools from IL to improve goal reaching algorithms. Experimentally, we find that under hindsight relabeling, Q-learning outperforms behavioral cloning (BC). Yet, a vanilla combination of both hurts performance. Concretely, we see that the BC loss only helps when selectively applied to actions that get the agent closer to the goal according to the Q-function. Our framework also explains the puzzling phenomenon wherein a reward of (-1, 0) results in significantly better performance than a (0, 1) reward for goal reaching. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Causal representation learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Score-based causal representation learning",
+    "Interventions",
+    "Randomized hard and soft interventions",
+    "Transformation candidates",
+    "Constraint-based recovery"
+  ],
+  "results": [
+    "Recovery of latent DAG structure",
+    "Uniquely recoverable linear transformation under hard interventions"
+  ],
+  "paper_id": "63ca06a190e50fcafd683882",
+  "title": "Score-based Causal Representation Learning with Interventions",
+  "abstract": "  This paper studies causal representation learning problem when the latent causal variables are observed indirectly through an unknown linear transformation. The objectives are: (i) recovering the unknown linear transformation (up to scaling and ordering), and (ii) determining the directed acyclic graph (DAG) underlying the latent variables. Since identifiable representation learning is impossible based on only observational data, this paper uses both observational and interventional data. The interventional data is generated under distinct single-node randomized hard and soft interventions. These interventions are assumed to cover all nodes in the latent space. It is established that the latent DAG structure can be recovered under soft randomized interventions via the following two steps. First, a set of transformation candidates is formed by including all inverting transformations corresponding to which the \\emph{score} function of the transformed variables has the minimal number of coordinates that change between an interventional and the observational environment summed over all pairs. Subsequently, this set is distilled using a simple constraint to recover the latent DAG structure. For the special case of hard randomized interventions, with an additional hypothesis testing step, one can also uniquely recover the linear transformation, up to scaling and a valid causal ordering. These results generalize the recent results that either assume deterministic hard interventions or linear causal relationships in the latent space. "
+}

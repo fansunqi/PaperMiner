@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Non-blind Image Deblurring in Low-Light Conditions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Image and Feature Space Wiener Deconvolution Network (INFWIDE)"
+  ],
+  "results": [
+    "Superior performance on synthetic data and real data"
+  ],
+  "paper_id": "62d620f55aee126c0fad41f1",
+  "title": "INFWIDE: Image and Feature Space Wiener Deconvolution Network for\n  Non-blind Image Deblurring in Low-Light Conditions",
+  "abstract": "  Under low-light environment, handheld photography suffers from severe camera shake under long exposure settings. Although existing deblurring algorithms have shown promising performance on well-exposed blurry images, they still cannot cope with low-light snapshots. Sophisticated noise and saturation regions are two dominating challenges in practical low-light deblurring. In this work, we propose a novel non-blind deblurring method dubbed image and feature space Wiener deconvolution network (INFWIDE) to tackle these problems systematically. In terms of algorithm design, INFWIDE proposes a two-branch architecture, which explicitly removes noise and hallucinates saturated regions in the image space and suppresses ringing artifacts in the feature space, and integrates the two complementary outputs with a subtle multi-scale fusion network for high quality night photograph deblurring. For effective network training, we design a set of loss functions integrating a forward imaging model and backward reconstruction to form a close-loop regularization to secure good convergence of the deep neural network. Further, to optimize INFWIDE's applicability in real low-light conditions, a physical-process-based low-light noise model is employed to synthesize realistic noisy night photographs for model training. Taking advantage of the traditional Wiener deconvolution algorithm's physically driven characteristics and arisen deep neural network's representation ability, INFWIDE can recover fine details while suppressing the unpleasant artifacts during deblurring. Extensive experiments on synthetic data and real data demonstrate the superior performance of the proposed approach. "
+}

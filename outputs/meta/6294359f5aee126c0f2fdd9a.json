@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deploying machine learning models to new tasks"
+  ],
+  "datasets": [
+    "Waterbirds",
+    "Breeds"
+  ],
+  "methods": [
+    "Distribution shift model based on exponential tilt assumption",
+    "Learned train data importance weights"
+  ],
+  "results": [
+    "Minimizing KL divergence between labeled train and unlabeled target datasets"
+  ],
+  "paper_id": "6294359f5aee126c0f2fdd9a",
+  "title": "Understanding new tasks through the lens of training data via\n  exponential tilting",
+  "abstract": "  Deploying machine learning models to new tasks is a major challenge despite the large size of the modern training datasets. However, it is conceivable that the training data can be reweighted to be more representative of the new (target) task. We consider the problem of reweighing the training samples to gain insights into the distribution of the target task. Specifically, we formulate a distribution shift model based on the exponential tilt assumption and learn train data importance weights minimizing the KL divergence between labeled train and unlabeled target datasets. The learned train data weights can then be used for downstream tasks such as target performance evaluation, fine-tuning, and model selection. We demonstrate the efficacy of our method on Waterbirds and Breeds benchmarks. "
+}

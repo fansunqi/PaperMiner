@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Small Molecule Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MolMIM",
+    "Mutual Information Machine (MIM) learning",
+    "CMA-ES"
+  ],
+  "results": [
+    "State-of-the-art results in several constrained single property optimization tasks",
+    "Multi-objective optimization success rate improved by more than 5%",
+    "Favourable in a compute limited regime"
+  ],
+  "paper_id": "6302f3ab90e50fcafd5b30c7",
+  "title": "Improving Small Molecule Generation using Mutual Information Machine",
+  "abstract": "  We address the task of controlled generation of small molecules, which entails finding novel molecules with desired properties under certain constraints (e.g., similarity to a reference molecule). Here we introduce MolMIM, a probabilistic auto-encoder for small molecule drug discovery that learns an informative and clustered latent space. MolMIM is trained with Mutual Information Machine (MIM) learning, and provides a fixed length representation of variable length SMILES strings. Since encoder-decoder models can learn representations with ``holes'' of invalid samples, here we propose a novel extension to the training procedure which promotes a dense latent space, and allows the model to sample valid molecules from random perturbations of latent codes. We provide a thorough comparison of MolMIM to several variable-size and fixed-size encoder-decoder models, demonstrating MolMIM's superior generation as measured in terms of validity, uniqueness, and novelty. We then utilize CMA-ES, a naive black-box and gradient free search algorithm, over MolMIM's latent space for the task of property guided molecule optimization. We achieve state-of-the-art results in several constrained single property optimization tasks as well as in the challenging task of multi-objective optimization, improving over previous success rate SOTA by more than 5\\% . We attribute the strong results to MolMIM's latent representation which clusters similar molecules in the latent space, whereas CMA-ES is often used as a baseline optimization method. We also demonstrate MolMIM to be favourable in a compute limited regime, making it an attractive model for such cases. "
+}

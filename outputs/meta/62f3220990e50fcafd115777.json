@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving spatiotemporal PDEs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-informed Graph Neural Network (PhyGNNet)"
+  ],
+  "results": [
+    "Better fit ability and extrapolation ability compared with PINN"
+  ],
+  "paper_id": "62f3220990e50fcafd115777",
+  "title": "PhyGNNet: Solving spatiotemporal PDEs with Physics-informed Graph Neural\n  Network",
+  "abstract": "  Solving partial differential equations (PDEs) is an important research means in the fields of physics, biology, and chemistry. As an approximate alternative to numerical methods, PINN has received extensive attention and played an important role in many fields. However, PINN uses a fully connected network as its model, which has limited fitting ability and limited extrapolation ability in both time and space. In this paper, we propose PhyGNNet for solving partial differential equations on the basics of a graph neural network which consists of encoder, processer, and decoder blocks. In particular, we divide the computing area into regular grids, define partial differential operators on the grids, then construct pde loss for the network to optimize to build PhyGNNet model. What's more, we conduct comparative experiments on Burgers equation and heat equation to validate our approach, the results show that our method has better fit ability and extrapolation ability both in time and spatial areas compared with PINN. "
+}

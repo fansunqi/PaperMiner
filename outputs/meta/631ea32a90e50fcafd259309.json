@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous-time range-only localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimality certificate",
+    "Motion prior"
+  ],
+  "results": [
+    "Efficient local solver finds globally optimal solution",
+    "Certificate detects local solutions with high errors"
+  ],
+  "paper_id": "631ea32a90e50fcafd259309",
+  "title": "Safe and Smooth: Certified Continuous-Time Range-Only Localization",
+  "abstract": "  A common approach to localize a mobile robot is by measuring distances to points of known positions, called anchors. Locating a device from distance measurements is typically posed as a non-convex optimization problem, stemming from the nonlinearity of the measurement model. Non-convex optimization problems may yield suboptimal solutions when local iterative solvers such as Gauss-Newton are employed. In this paper, we design an optimality certificate for continuous-time range-only localization. Our formulation allows for the integration of a motion prior, which ensures smoothness of the solution and is crucial for localizing from only a few distance measurements. The proposed certificate comes at little additional cost since it has the same complexity as the sparse local solver itself: linear in the number of positions. We show, both in simulation and on real-world datasets, that the efficient local solver often finds the globally optimal solution (confirmed by our certificate), but it may converge to local solutions with high errors, which our certificate correctly detects. "
+}

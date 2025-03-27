@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shortest hop-bounded paths in edge-weighted graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bellman-Ford algorithm"
+  ],
+  "results": [
+    "Optimal running time of $O(hm)$",
+    "Lower bounds under APSP Hypothesis and Min-Plus Convolution Hypothesis"
+  ],
+  "paper_id": "6373035b90e50fcafd0a001b",
+  "title": "Bellman-Ford is optimal for shortest hop-bounded paths",
+  "abstract": "  This paper is about the problem of finding a shortest $s$-$t$ path using at most $h$ edges in edge-weighted graphs. The Bellman--Ford algorithm solves this problem in $O(hm)$ time, where $m$ is the number of edges. We show that this running time is optimal, up to subpolynomial factors, under popular fine-grained complexity assumptions.   More specifically, we show that under the APSP Hypothesis the problem cannot be solved faster already in undirected graphs with non-negative edge weights. This lower bound holds even restricted to graphs of arbitrary density and for arbitrary $h \\in O(\\sqrt{m})$. Moreover, under a stronger assumption, namely the Min-Plus Convolution Hypothesis, we can eliminate the restriction $h \\in O(\\sqrt{m})$. In other words, the $O(hm)$ bound is tight for the entire space of parameters $h$, $m$, and $n$, where $n$ is the number of nodes.   Our lower bounds can be contrasted with the recent near-linear time algorithm for the negative-weight Single-Source Shortest Paths problem, which is the textbook application of the Bellman--Ford algorithm. "
+}

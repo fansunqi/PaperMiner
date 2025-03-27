@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Poisoning Attack"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stealthy perturbation",
+    "Universal adversarial perturbation (UAP)",
+    "Gradient alignment"
+  ],
+  "results": [
+    "State-of-the-art attack success rate",
+    "High accuracy on clean samples"
+  ],
+  "paper_id": "63bb859d90e50fcafd06f0b5",
+  "title": "Silent Killer: Optimizing Backdoor Trigger Yields a Stealthy and\n  Powerful Data Poisoning Attack",
+  "abstract": "  We propose a stealthy and powerful backdoor attack on neural networks based on data poisoning (DP). In contrast to previous attacks, both the poison and the trigger in our method are stealthy. We are able to change the model's classification of samples from a source class to a target class chosen by the attacker. We do so by using a small number of poisoned training samples with nearly imperceptible perturbations, without changing their labels. At inference time, we use a stealthy perturbation added to the attacked samples as a trigger. This perturbation is crafted as a universal adversarial perturbation (UAP), and the poison is crafted using gradient alignment coupled to this trigger. Our method is highly efficient in crafting time compared to previous methods and requires only a trained surrogate model without additional retraining. Our attack achieves state-of-the-art results in terms of attack success rate while maintaining high accuracy on clean samples. "
+}

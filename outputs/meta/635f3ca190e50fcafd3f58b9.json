@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Natural Language Processing (NLP)"
+  ],
+  "datasets": [
+    "GLUE benchmark"
+  ],
+  "methods": [
+    "Binary Ensemble BERT (BEBERT)",
+    "Knowledge Distillation"
+  ],
+  "results": [
+    "Significant outperformance of existing binary BERT models in accuracy and robustness",
+    "2x speedup on training time",
+    "Negligible accuracy loss of 0.3% compared to full-precision baseline",
+    "15x and 13x savings in FLOPs and model size",
+    "Up to 6.7% accuracy improvement over other compressed BERTs"
+  ],
+  "paper_id": "635f3ca190e50fcafd3f58b9",
+  "title": "BEBERT: Efficient and Robust Binary Ensemble BERT",
+  "abstract": "  Pre-trained BERT models have achieved impressive accuracy on natural language processing (NLP) tasks. However, their excessive amount of parameters hinders them from efficient deployment on edge devices. Binarization of the BERT models can significantly alleviate this issue but comes with a severe accuracy drop compared with their full-precision counterparts. In this paper, we propose an efficient and robust binary ensemble BERT (BEBERT) to bridge the accuracy gap. To the best of our knowledge, this is the first work employing ensemble techniques on binary BERTs, yielding BEBERT, which achieves superior accuracy while retaining computational efficiency. Furthermore, we remove the knowledge distillation procedures during ensemble to speed up the training process without compromising accuracy. Experimental results on the GLUE benchmark show that the proposed BEBERT significantly outperforms the existing binary BERT models in accuracy and robustness with a 2x speedup on training time. Moreover, our BEBERT has only a negligible accuracy loss of 0.3% compared to the full-precision baseline while saving 15x and 13x in FLOPs and model size, respectively. In addition, BEBERT also outperforms other compressed BERTs in accuracy by up to 6.7%. "
+}

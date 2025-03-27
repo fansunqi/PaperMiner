@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Satisfiability Problems"
+  ],
+  "datasets": [
+    "Max 2-SAT",
+    "Max 3-SAT"
+  ],
+  "methods": [
+    "Quantum Alternating Operator Ansatz (QAOA)",
+    "Mixing unitaries",
+    "Phase separator unitary",
+    "Thresholding"
+  ],
+  "results": [
+    "Traditional transverse-field mixer with standard phase separator performs best for problem sizes of 8 through 14 variables",
+    "Grover mixer with thresholding wins at problems of size 6",
+    "Corrects earlier work suggesting Grover mixer is superior",
+    "Suggests more complicated mixers and phase separators may not improve QAOA performance"
+  ],
+  "paper_id": "63d340ef90e50fcafd9117fb",
+  "title": "The Quantum Alternating Operator Ansatz for Satisfiability Problems",
+  "abstract": "  We comparatively study, through large-scale numerical simulation, the performance across a large set of Quantum Alternating Operator Ansatz (QAOA) implementations for finding approximate and optimum solutions to unconstrained combinatorial optimization problems. Our survey includes over 100 different mixing unitaries, and we combine each mixer with both the standard phase separator unitary representing the objective function and a thresholded version. Our numerical tests for randomly chosen instances of the unconstrained optimization problems Max 2-SAT and Max 3-SAT reveal that the traditional transverse-field mixer with the standard phase separator performs best for problem sizes of 8 through 14 variables, while the recently introduced Grover mixer with thresholding wins at problems of size 6. This result (i) corrects earlier work suggesting that the Grover mixer is a superior mixer based only on results from problems of size 6, thus illustrating the need to push numerical simulation to larger problem sizes to more accurately predict performance; and (ii) it suggests that more complicated mixers and phase separators may not improve QAOA performance. "
+}

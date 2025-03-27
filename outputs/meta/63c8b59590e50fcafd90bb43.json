@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-supervised learning",
+    "Medical image representation"
+  ],
+  "datasets": [
+    "Natural images",
+    "Medical images"
+  ],
+  "methods": [
+    "Vision Transformer Autoencoder (ViT-AE++)",
+    "Patch-masking strategy",
+    "Two new loss functions",
+    "Contrastive loss",
+    "3D extension for volumetric medical images"
+  ],
+  "results": [
+    "Consistent improvement over vanilla ViT-AE",
+    "Superiority over other contrastive learning approaches"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bb43",
+  "title": "ViT-AE++: Improving Vision Transformer Autoencoder for Self-supervised\n  Medical Image Representations",
+  "abstract": "  Self-supervised learning has attracted increasing attention as it learns data-driven representation from data without annotations. Vision transformer-based autoencoder (ViT-AE) by He et al. (2021) is a recent self-supervised learning technique that employs a patch-masking strategy to learn a meaningful latent space. In this paper, we focus on improving ViT-AE (nicknamed ViT-AE++) for a more effective representation of both 2D and 3D medical images. We propose two new loss functions to enhance the representation during the training stage. The first loss term aims to improve self-reconstruction by considering the structured dependencies and hence indirectly improving the representation. The second loss term leverages contrastive loss to directly optimize the representation from two randomly masked views. As an independent contribution, we extended ViT-AE++ to a 3D fashion for volumetric medical images. We extensively evaluate ViT-AE++ on both natural images and medical images, demonstrating consistent improvement over vanilla ViT-AE and its superiority over other contrastive learning approaches. "
+}

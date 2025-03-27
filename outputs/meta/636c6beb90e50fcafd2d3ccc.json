@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Safety in Mixed Traffic",
+    "Model Predictive Control for Vehicle Platooning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "First-principles nominal model",
+    "Gaussian process (GP) learning-based component",
+    "GP-MPC"
+  ],
+  "results": [
+    "Reduces root mean square error in predicting HV velocity by 35.64% compared to the nominal model",
+    "Superior safety guarantees in challenging traffic scenarios"
+  ],
+  "paper_id": "636c6beb90e50fcafd2d3ccc",
+  "title": "Improving Safety in Mixed Traffic: A Learning-based Model Predictive\n  Control for Autonomous and Human-Driven Vehicle Platooning",
+  "abstract": "  As autonomous vehicles (AVs) continue to be integrated into public roads, it is inevitable that they will interact with human-driven vehicles (HVs) in a mixed traffic environment. In such traffic scenarios, it is crucial to consider the reactive and uncertain behavior of HVs when developing control strategies for AVs. This paper investigates the safe control of a platoon of AVs interacting with HVs in longitudinal car-following scenarios. To better predict the behavior of HVs, we propose a model that combines a first-principles nominal model with a Gaussian process (GP) learning-based component. Our results show that this model reduces the root mean square error in predicting HV velocity by 35.64\\% compared to the nominal model. Utilizing this model, a model predictive control (MPC) strategy, referred to as GP-MPC, is designed to ensure a safe distance between each vehicle in the mixed vehicle platoon. The GP-MPC integrates the uncertainty assessment of the human-driven vehicle model by the GP models into the distance constraint, which enhances safety guarantees in challenging traffic scenarios such as emergency braking. Simulation case studies comparing the proposed GP-MPC against a baseline MPC demonstrate that the GP-MPC achieves superior safety guarantees while enabling more efficient motion behaviors for all vehicles in the mixed vehicle platoon. "
+}

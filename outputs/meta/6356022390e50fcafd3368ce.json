@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parkinson's Disease diagnosis"
+  ],
+  "datasets": [
+    "EEG signals recorded during a 3-oddball auditory task"
+  ],
+  "methods": [
+    "Linear Discriminant Analysis (LDA) classifier",
+    "feature extraction using dynamics, frequency and temporal content of EEGs"
+  ],
+  "results": [
+    "accuracy of 90% using a single channel",
+    "accuracy of 94% with three channels",
+    "sensitivity of 96%",
+    "specificity of 92%",
+    "accuracy of 83.8% with half the data for training"
+  ],
+  "paper_id": "6356022390e50fcafd3368ce",
+  "title": "Sparse Dynamical Features generation, application to Parkinson's Disease\n  diagnosis",
+  "abstract": "  In this study we focus on the diagnosis of Parkinson's Disease (PD) based on electroencephalogram (EEG) signals. We propose a new approach inspired by the functioning of the brain that uses the dynamics, frequency and temporal content of EEGs to extract new demarcating features of the disease. The method was evaluated on a publicly available dataset containing EEG signals recorded during a 3-oddball auditory task involving N = 50 subjects, of whom 25 suffer from PD. By extracting two features, and separating them with a straight line using a Linear Discriminant Analysis (LDA) classifier, we can separate the healthy from the unhealthy subjects with an accuracy of 90 % $(p < 0.03)$ using a single channel. By aggregating the information from three channels and making them vote, we obtain an accuracy of 94 %, a sensitivity of 96 % and a specificity of 92 %. The evaluation was carried out using a nested Leave-One-Out cross-validation procedure, thus preventing data leakage problems and giving a less biased evaluation. Several tests were carried out to assess the validity and robustness of our approach, including the test where we use only half the available data for training. Under this constraint, the model achieves an accuracy of 83.8 %. "
+}

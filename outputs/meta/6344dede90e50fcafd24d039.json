@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Perturbation Attacks Against CNNs"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "Symmetry Defense"
+  ],
+  "results": [
+    "Maintains and improves classification accuracy of non-adversarial samples",
+    "Exceeds current best defense without training on adversarial samples"
+  ],
+  "paper_id": "6344dede90e50fcafd24d039",
+  "title": "Symmetry Defense Against CNN Adversarial Perturbation Attacks",
+  "abstract": "  Convolutional neural network classifiers (CNNs) are susceptible to adversarial attacks that perturb original samples to fool classifiers such as an autonomous vehicle's road sign image classifier. CNNs also lack invariance in the classification of symmetric samples because CNNs can classify symmetric samples differently. Considered together, the CNN lack of adversarial robustness and the CNN lack of invariance mean that the classification of symmetric adversarial samples can differ from their incorrect classification. Could symmetric adversarial samples revert to their correct classification? This paper answers this question by designing a symmetry defense that inverts or horizontally flips adversarial samples before classification against adversaries unaware of the defense. Against adversaries aware of the defense, the defense devises a Klein four symmetry subgroup that includes the horizontal flip and pixel inversion symmetries. The symmetry defense uses the subgroup symmetries in accuracy evaluation and the subgroup closure property to confine the transformations that an adaptive adversary can apply before or after generating the adversarial sample. Without changing the preprocessing, parameters, or model, the proposed symmetry defense counters the Projected Gradient Descent (PGD) and AutoAttack attacks with near-default accuracies for ImageNet. Without using attack knowledge or adversarial samples, the proposed defense exceeds the current best defense, which trains on adversarial samples. The defense maintains and even improves the classification accuracy of non-adversarial samples. "
+}

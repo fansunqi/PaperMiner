@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dynamic system identification"
+  ],
+  "datasets": [
+    "Susceptible, Infected, Recovered (SIR) toy problem",
+    "Cascaded Tanks benchmark dataset"
+  ],
+  "methods": [
+    "Forward variable selection",
+    "Bayesian Smoothing Spline ANOVA kernel (BSS-ANOVA)",
+    "Fast Gibbs sampling",
+    "High-order scheme"
+  ],
+  "results": [
+    "Competitive accuracies, training and inference times for tabular datasets of low feature set dimensionality",
+    "Inference speed and accuracy suitable for dynamic systems identification"
+  ],
+  "paper_id": "6294359f5aee126c0f2fde22",
+  "title": "Forward variable selection enables fast and accurate dynamic system\n  identification with Karhunen-Lo\\`eve decomposed Gaussian processes",
+  "abstract": "  A promising approach for scalable Gaussian processes (GPs) is the Karhunen-Lo\\`eve (KL) decomposition, in which the GP kernel is represented by a set of basis functions which are the eigenfunctions of the kernel operator. Such decomposed kernels have the potential to be very fast, and do not depend on the selection of a reduced set of inducing points. However KL decompositions lead to high dimensionality, and variable selection becomes paramount. This paper reports a new method of forward variable selection, enabled by the ordered nature of the basis functions in the KL expansion of the Bayesian Smoothing Spline ANOVA kernel (BSS-ANOVA), coupled with fast Gibbs sampling in a fully Bayesian approach. It quickly and effectively limits the number of terms, yielding a method with competitive accuracies, training and inference times for tabular datasets of low feature set dimensionality. The inference speed and accuracy makes the method especially useful for dynamic systems identification, by modeling the dynamics in the tangent space as a static problem, then integrating the learned dynamics using a high-order scheme. The methods are demonstrated on two dynamic datasets: a `Susceptible, Infected, Recovered' (SIR) toy problem, with the transmissibility used as forcing function, along with the experimental `Cascaded Tanks' benchmark dataset. Comparisons on the static prediction of time derivatives are made with a random forest (RF), a residual neural network (ResNet), and the Orthogonal Additive Kernel (OAK) inducing points scalable GP, while for the timeseries prediction comparisons are made with LSTM and GRU recurrent neural networks (RNNs) along with the SINDy package. "
+}

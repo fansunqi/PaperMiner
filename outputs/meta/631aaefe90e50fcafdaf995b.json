@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural network quantization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Memoryless scalar quantization",
+    "Deterministic pre-processing"
+  ],
+  "results": [
+    "Preserves network performance",
+    "Computational complexity slightly exceeds state-of-the-art",
+    "No hyper-parameter tuning required",
+    "Rigorous theoretical guarantees for single network layers",
+    "Relative error decays with the number of parameters",
+    "Allowable for deep network quantization"
+  ],
+  "paper_id": "631aaefe90e50fcafdaf995b",
+  "title": "A simple approach for quantizing neural networks",
+  "abstract": "  In this short note, we propose a new method for quantizing the weights of a fully trained neural network. A simple deterministic pre-processing step allows us to quantize network layers via memoryless scalar quantization while preserving the network performance on given training data. On one hand, the computational complexity of this pre-processing slightly exceeds that of state-of-the-art algorithms in the literature. On the other hand, our approach does not require any hyper-parameter tuning and, in contrast to previous methods, allows a plain analysis. We provide rigorous theoretical guarantees in the case of quantizing single network layers and show that the relative error decays with the number of parameters in the network if the training data behaves well, e.g., if it is sampled from suitable random distributions. The developed method also readily allows the quantization of deep networks by consecutive application to single layers. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-dynamic range imaging"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Residual DNN series",
+    "Matching pursuit"
+  ],
+  "results": [
+    "Reconstruction quality competitive with PnP",
+    "At a fraction of the cost"
+  ],
+  "paper_id": "635f3ca190e50fcafd3f5944",
+  "title": "Deep network series for large-scale high-dynamic range imaging",
+  "abstract": "  We propose a new approach for large-scale high-dynamic range computational imaging. Deep Neural Networks (DNNs) trained end-to-end can solve linear inverse imaging problems almost instantaneously. While unfolded architectures provide robustness to measurement setting variations, embedding large-scale measurement operators in DNN architectures is impractical. Alternative Plug-and-Play (PnP) approaches, where the denoising DNNs are blind to the measurement setting, have proven effective to address scalability and high-dynamic range challenges, but rely on highly iterative algorithms. We propose a residual DNN series approach, also interpretable as a learned version of matching pursuit, where the reconstructed image is a sum of residual images progressively increasing the dynamic range, and estimated iteratively by DNNs taking the back-projected data residual of the previous iteration as input. We demonstrate on radio-astronomical imaging simulations that a series of only few terms provides a reconstruction quality competitive with PnP, at a fraction of the cost. "
+}

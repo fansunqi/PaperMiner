@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Consensus Protocols",
+    "Agreement Problems",
+    "Fault-tolerant Distributed Services"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quorum Tree Abstractions"
+  ],
+  "results": [
+    "Novel induction based argument for proving safety",
+    "Uniform reasoning about the safety of various algorithms"
+  ],
+  "paper_id": "63d340e890e50fcafd91070a",
+  "title": "Quorum Tree Abstractions of Consensus Protocols",
+  "abstract": "  Distributed algorithms solving agreement problems like consensus or state machine replication are essential components of modern fault-tolerant distributed services. They are also notoriously hard to understand and reason about. Their complexity stems from the different assumptions on the environment they operate with, i.e., process or network link failures, Byzantine failures etc. In this paper, we propose a novel abstract representation of the dynamics of such protocols which focuses on quorums of responses (votes) to a request (proposal) that form during a run of the protocol. We show that focusing on such quorums, a run of a protocol can be viewed as working over a tree structure where different branches represent different possible outcomes of the protocol, the goal being to stabilize on the choice of a fixed branch. This abstraction resembles the description of recent protocols used in Blockchain infrastructures, e.g., the protocol supporting Bitcoin or HotStuff. We show that this abstraction supports reasoning about the safety of various algorithms, e.g., Paxos, PBFT, Raft, and HotStuff, in a uniform way. In general, it provides a novel induction based argument for proving that such protocols are safe. "
+}

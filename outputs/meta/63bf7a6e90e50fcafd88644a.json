@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data-free knowledge distillation in regression neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Synthetic data generation using a generator model",
+    "Adversarial training against the student model",
+    "Optimization for a large but bounded difference between student and teacher models"
+  ],
+  "results": [
+    "Improved learning and performance emulation of the teacher model"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88644a",
+  "title": "Synthetic data generation method for data-free knowledge distillation in\n  regression neural networks",
+  "abstract": "  Knowledge distillation is the technique of compressing a larger neural network, known as the teacher, into a smaller neural network, known as the student, while still trying to maintain the performance of the larger neural network as much as possible. Existing methods of knowledge distillation are mostly applicable for classification tasks. Many of them also require access to the data used to train the teacher model. To address the problem of knowledge distillation for regression tasks under the absence of original training data, previous work has proposed a data-free knowledge distillation method where synthetic data are generated using a generator model trained adversarially against the student model. These synthetic data and their labels predicted by the teacher model are then used to train the student model. In this study, we investigate the behavior of various synthetic data generation methods and propose a new synthetic data generation strategy that directly optimizes for a large but bounded difference between the student and teacher model. Our results on benchmark and case study experiments demonstrate that the proposed strategy allows the student model to learn better and emulate the performance of the teacher model more closely. "
+}

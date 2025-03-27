@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image rotation incontinence compensation"
+  ],
+  "datasets": [
+    "FashionMNIST",
+    "CIFAR10",
+    "COIL100",
+    "LFW"
+  ],
+  "methods": [
+    "Radial beam sampling",
+    "Radial kernels",
+    "Angle distance loss",
+    "BIC (Radial Beam-based Image Canonicalization)"
+  ],
+  "results": [
+    "Maximal continuous angle regression",
+    "Rotation-invariant vision pipelines",
+    "Model-agnostic rotation-sensitive predictions"
+  ],
+  "paper_id": "62b3da1e5aee126c0fb1b1ef",
+  "title": "Learning Continuous Rotation Canonicalization with Radial Beam Sampling",
+  "abstract": "  Nearly all state of the art vision models are sensitive to image rotations. Existing methods often compensate for missing inductive biases by using augmented training data to learn pseudo-invariances. Alongside the resource demanding data inflation process, predictions often poorly generalize. The inductive biases inherent to convolutional neural networks allow for translation equivariance through kernels acting parallely to the horizontal and vertical axes of the pixel grid. This inductive bias, however, does not allow for rotation equivariance. We propose a radial beam sampling strategy along with radial kernels operating on these beams to inherently incorporate center-rotation covariance. Together with an angle distance loss, we present a radial beam-based image canonicalization model, short BIC. Our model allows for maximal continuous angle regression and canonicalizes arbitrary center-rotated input images. As a pre-processing model, this enables rotation-invariant vision pipelines with model-agnostic rotation-sensitive downstream predictions. We show that our end-to-end trained angle regressor is able to predict continuous rotation angles on several vision datasets, i.e. FashionMNIST, CIFAR10, COIL100, and LFW. "
+}

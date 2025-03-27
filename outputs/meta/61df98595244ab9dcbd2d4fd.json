@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differential privacy"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gaussian scheme",
+    "random orthogonal matrix masking"
+  ],
+  "results": [
+    "Reduces the rate of noise variance required in the Gaussian scheme",
+    "Improves the scope of application for differential privacy"
+  ],
+  "paper_id": "61df98595244ab9dcbd2d4fd",
+  "title": "Reducing Noise Level in Differential Privacy through Matrix Masking",
+  "abstract": "  Differential privacy schemes have been widely adopted in recent years to address issues of data privacy protection. We propose a new Gaussian scheme combining with another data protection technique, called random orthogonal matrix masking, to achieve $(\\varepsilon, \\delta)$-differential privacy (DP) more efficiently. We prove that the additional matrix masking significantly reduces the rate of noise variance required in the Gaussian scheme to achieve $(\\varepsilon, \\delta)-$DP in big data setting. Specifically, when $\\varepsilon \\to 0$, $\\delta \\to 0$, and the sample size $n$ exceeds the number $p$ of attributes by $(n-p)=O(ln(1/\\delta))$, the required additive noise variance to achieve $(\\varepsilon, \\delta)$-DP is reduced from $O(ln(1/\\delta)/\\varepsilon^2)$ to $O(1/\\varepsilon)$. With much less noise added, the resulting differential privacy protected pseudo data sets allow much more accurate inferences, thus can significantly improve the scope of application for differential privacy. "
+}

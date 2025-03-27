@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Explanation of machine learning decisions",
+    "Recourse sensitivity",
+    "Robustness of attribution methods"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Local attribution methods",
+    "LIME",
+    "SHAP",
+    "Integrated Gradients",
+    "SmoothGrad",
+    "Counterfactual explanations"
+  ],
+  "results": [
+    "It is impossible for any single attribution method to be both recourse sensitive and robust",
+    "Counterexamples provided for several popular attribution methods"
+  ],
+  "paper_id": "6296d9145aee126c0f7312a5",
+  "title": "Attribution-based Explanations that Provide Recourse Cannot be Robust",
+  "abstract": "  Different users of machine learning methods require different explanations, depending on their goals. To make machine learning accountable to society, one important goal is to get actionable options for recourse, which allow an affected user to change the decision $f(x)$ of a machine learning system by making limited changes to its input $x$. We formalize this by providing a general definition of recourse sensitivity, which needs to be instantiated with a utility function that describes which changes to the decisions are relevant to the user. This definition applies to local attribution methods, which attribute an importance weight to each input feature. It is often argued that such local attributions should be robust, in the sense that a small change in the input $x$ that is being explained, should not cause a large change in the feature weights. However, we prove formally that it is in general impossible for any single attribution method to be both recourse sensitive and robust at the same time. It follows that there must always exist counterexamples to at least one of these properties. We provide such counterexamples for several popular attribution methods, including LIME, SHAP, Integrated Gradients and SmoothGrad. Our results also cover counterfactual explanations, which may be viewed as attributions that describe a perturbation of $x$. We further discuss possible ways to work around our impossibility result, for instance by allowing the output to consist of sets with multiple attributions, and we provide sufficient conditions for specific classes of continuous functions to be recourse sensitive. Finally, we strengthen our impossibility result for the restricted case where users are only able to change a single attribute of $x$, by providing an exact characterization of the functions $f$ to which impossibility applies. "
+}

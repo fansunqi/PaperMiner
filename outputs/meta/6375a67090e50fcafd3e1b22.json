@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Illuminant Color Constancy"
+  ],
+  "datasets": [
+    "LSMI",
+    "NUS-8"
+  ],
+  "methods": [
+    "Multi-Task Learning",
+    "Achromatic-pixel detection",
+    "Surface-color similarity prediction"
+  ],
+  "results": [
+    "47.1% improvement on multi-illuminant dataset (LSMI)",
+    "18.5% improvement on single color constancy method"
+  ],
+  "paper_id": "6375a67090e50fcafd3e1b22",
+  "title": "MIMT: Multi-Illuminant Color Constancy via Multi-Task Learning",
+  "abstract": "  The assumption of a uniform light color distribution, which holds true in single light color scenes, is no longer applicable in scenes that have multiple light colors. The spatial variability in multiple light colors causes the color constancy problem to be more challenging and requires the extraction of local surface/light information. Motivated by this, we introduce a multi-task learning method to estimate multiple light colors from a single input image. To have better cues of the local surface/light colors under multiple light color conditions, we design a multi-task learning framework with achromatic-pixel detection and surface-color similarity prediction as our auxiliary tasks. These tasks facilitate the acquisition of local light color information and surface color correlations. Moreover, to ensure that our model maintains the constancy of surface colors regardless of the variations of light colors, we also preserve local surface color features in our model. We demonstrate that our model achieves 47.1% improvement compared to a state-of-the-art multi-illuminant color constancy method on a multi-illuminant dataset (LSMI). While single light colors are not our main focus, our model also maintains a robust performance on the single illuminant dataset (NUS-8) and provides 18.5% improvement on the state-of-the-art single color constancy method. "
+}

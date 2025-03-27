@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model calibration",
+    "Optimal decision-making"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Annealing Double-Head",
+    "Additional calibration head",
+    "Annealing technique"
+  ],
+  "results": [
+    "State-of-the-art model calibration performance",
+    "Comparable predictive accuracy"
+  ],
+  "paper_id": "63ae56c790e50fcafda95432",
+  "title": "Annealing Double-Head: An Architecture for Online Calibration of Deep\n  Neural Networks",
+  "abstract": "  Model calibration, which is concerned with how frequently the model predicts correctly, not only plays a vital part in statistical model design, but also has substantial practical applications, such as optimal decision-making in the real world. However, it has been discovered that modern deep neural networks are generally poorly calibrated due to the overestimation (or underestimation) of predictive confidence, which is closely related to overfitting. In this paper, we propose Annealing Double-Head, a simple-to-implement but highly effective architecture for calibrating the DNN during training. To be precise, we construct an additional calibration head-a shallow neural network that typically has one latent layer-on top of the last latent layer in the normal model to map the logits to the aligned confidence. Furthermore, a simple Annealing technique that dynamically scales the logits by calibration head in training procedure is developed to improve its performance. Under both the in-distribution and distributional shift circumstances, we exhaustively evaluate our Annealing Double-Head architecture on multiple pairs of contemporary DNN architectures and vision and speech datasets. We demonstrate that our method achieves state-of-the-art model calibration performance without post-processing while simultaneously providing comparable predictive accuracy in comparison to other recently proposed calibration methods on a range of learning tasks. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Pedestrian collision prevention",
+    "Driver assistance systems"
+  ],
+  "datasets": [
+    "La Jolla, CA pedestrian data"
+  ],
+  "methods": [
+    "Online, map-based pedestrian detection system",
+    "Aggregation of pedestrian locations",
+    "Advisory notice generation"
+  ],
+  "results": [
+    "Precision: 100%, Recall: 75%"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b11",
+  "title": "CHAMP: Crowdsourced, History-Based Advisory of Mapped Pedestrians for\n  Safer Driver Assistance Systems",
+  "abstract": "  Vehicles are constantly approaching and sharing the road with pedestrians, and as a result it is critical for vehicles to prevent any collisions with pedestrians. Current methods for pedestrian collision prevention focus on integrating visual pedestrian detectors with Automatic Emergency Braking (AEB) systems which can trigger warnings and apply brakes as a pedestrian enters a vehicle's path. Unfortunately, pedestrian-detection-based systems can be hindered in certain situations such as nighttime or when pedestrians are occluded. Our system, CHAMP (Crowdsourced, History-based Advisories of Mapped Pedestrians), addresses such issues using an online, map-based pedestrian detection system where pedestrian locations are aggregated into a dataset after repeated passes of locations. Using this dataset, we are able to learn pedestrian zones and generate advisory notices when a vehicle is approaching a pedestrian despite challenges like dark lighting or pedestrian occlusion. We collected and carefully annotated pedestrian data in La Jolla, CA to construct training and test sets of pedestrian locations. Moreover, we use the number of correct advisories, false advisories, and missed advisories to define precision and recall performance metrics to evaluate CHAMP. This approach can be tuned such that we achieve a maximum of 100% precision and 75% recall on the experimental dataset, with performance enhancement options through further data collection. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Integrating SMT solvers into DNNs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SMTLayer",
+    "Satisfiability Modulo Theories (SMT) solvers"
+  ],
+  "results": [
+    "Reduced training samples",
+    "Robust to covariate shift",
+    "Learn representations consistent with symbolic knowledge"
+  ],
+  "paper_id": "63d7352390e50fcafda3026e",
+  "title": "Learning Modulo Theories",
+  "abstract": "  Recent techniques that integrate \\emph{solver layers} into Deep Neural Networks (DNNs) have shown promise in bridging a long-standing gap between inductive learning and symbolic reasoning techniques. In this paper we present a set of techniques for integrating \\emph{Satisfiability Modulo Theories} (SMT) solvers into the forward and backward passes of a deep network layer, called SMTLayer. Using this approach, one can encode rich domain knowledge into the network in the form of mathematical formulas. In the forward pass, the solver uses symbols produced by prior layers, along with these formulas, to construct inferences; in the backward pass, the solver informs updates to the network, driving it towards representations that are compatible with the solver's theory. Notably, the solver need not be differentiable. We implement \\layername as a Pytorch module, and our empirical results show that it leads to models that \\emph{1)} require fewer training samples than conventional models, \\emph{2)} that are robust to certain types of covariate shift, and \\emph{3)} that ultimately learn representations that are consistent with symbolic knowledge, and thus naturally interpretable. "
+}

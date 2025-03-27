@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "autonomous UAV inspection",
+    "3D measurement of excavation front",
+    "dynamic tunnel environments"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "hierarchical planning scheme",
+    "dynamic map module",
+    "RGB-D camera",
+    "Structure-from-Motion (SfM) pipeline"
+  ],
+  "results": [
+    "autonomous inspection in unknown and dynamic tunnel environments",
+    "real tunnel flight experiments"
+  ],
+  "paper_id": "63cdfab690e50fcafd106ef9",
+  "title": "A vision-based autonomous UAV inspection framework for unknown tunnel\n  construction sites with dynamic obstacles",
+  "abstract": "Tunnel construction using the drill-and-blast method requires the 3D\nmeasurement of the excavation front to evaluate underbreak locations.\nConsidering the inspection and measurement task's safety, cost, and efficiency,\ndeploying lightweight autonomous robots, such as unmanned aerial vehicles\n(UAV), becomes more necessary and popular. Most of the previous works use a\nprior map for inspection viewpoint determination and do not consider dynamic\nobstacles. To maximally increase the level of autonomy, this paper proposes a\nvision-based UAV inspection framework for dynamic tunnel environments without\nusing a prior map. Our approach utilizes a hierarchical planning scheme,\ndecomposing the inspection problem into different levels. The high-level\ndecision maker first determines the task for the robot and generates the target\npoint. Then, the mid-level path planner finds the waypoint path and optimizes\nthe collision-free static trajectory. Finally, the static trajectory will be\nfed into the low-level local planner to avoid dynamic obstacles and navigate to\nthe target point. Besides, our framework contains a novel dynamic map module\nthat can simultaneously track dynamic obstacles and represent static obstacles\nbased on an RGB-D camera. After inspection, the Structure-from-Motion (SfM)\npipeline is applied to generate the 3D shape of the target. To our best\nknowledge, this is the first time autonomous inspection has been realized in\nunknown and dynamic tunnel environments. Our flight experiments in a real\ntunnel prove that our method can autonomously inspect the tunnel excavation\nfront surface. Our software is available on GitHub as an open-source ROS\npackage."
+}

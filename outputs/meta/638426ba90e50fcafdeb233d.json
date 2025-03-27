@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/Vanint/DatasetExpansion"
+  ],
+  "tasks": [
+    "Dataset expansion"
+  ],
+  "datasets": [
+    "Natural image datasets",
+    "Medical datasets"
+  ],
+  "methods": [
+    "Guided Imagination Framework (GIF)",
+    "Generative models (e.g., DALL-E2, Stable Diffusion (SD))"
+  ],
+  "results": [
+    "GIF-SD obtains 13.5% higher model accuracy on natural image datasets",
+    "GIF boosts model accuracy by 36.9% on average over six natural image datasets",
+    "GIF boosts model accuracy by 13.5% on average over three medical datasets"
+  ],
+  "paper_id": "638426ba90e50fcafdeb233d",
+  "title": "Expanding Small-Scale Datasets with Guided Imagination",
+  "abstract": "  The power of DNNs depends heavily on the quantity and quality of training data. However, collecting and annotating data on a large scale is often costly and time-consuming, which severely hinders the application of DNNs. To address this issue, we explore a new task, termed as dataset expansion, which seeks to expand a ready-to-use small dataset by automatically creating new labeled samples. To this end, we present a Guided Imagination Framework (GIF) that leverages cutting-edge generative models (e.g., DALL-E2, Stable Diffusion (SD)) to ``imagine'' and create informative new data from the input seed data. Specifically, GIF conducts data imagination by optimizing the latent features of the seed data in the semantically meaningful space of the prior model, which are used to create photo-realistic images with new content. To guide the imagination towards creating informative samples for model training, we introduce two key criteria, i.e., class-maintained information boosting and sample diversity promotion. The two criteria are verified to be essential for effective dataset expansion: GIF-SD obtains 13.5\\% higher model accuracy on natural image datasets than unguided expansion with SD. With these essential criteria, GIF expands datasets effectively in various small-data scenarios, boosting model accuracy by 36.9\\% on average over six natural image datasets and by 13.5\\% on average over three medical datasets. The source code will be released: \\url{https://github.com/Vanint/DatasetExpansion}. "
+}

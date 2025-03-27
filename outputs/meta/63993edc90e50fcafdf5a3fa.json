@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Iterative shrinkage-thresholding algorithms (ISTA) for solving linear inverse problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Linear convergence analysis",
+    "Pivotal inequality improvement",
+    "Strongly convex assumption",
+    "Nesterov's accelerated gradient descent (NAG)"
+  ],
+  "results": [
+    "Linear convergence behavior in logarithmic-scale ordinate",
+    "Faster linear convergence rate for strongly convex functions"
+  ],
+  "paper_id": "63993edc90e50fcafdf5a3fa",
+  "title": "Linear Convergence of ISTA and FISTA",
+  "abstract": "  In this paper, we revisit the class of iterative shrinkage-thresholding algorithms (ISTA) for solving the linear inverse problem with sparse representation, which arises in signal and image processing. It is shown in the numerical experiment to deblur an image that the convergence behavior in the logarithmic-scale ordinate tends to be linear instead of logarithmic, approximating to be flat. Making meticulous observations, we find that the previous assumption for the smooth part to be convex weakens the least-square model. Specifically, assuming the smooth part to be strongly convex is more reasonable for the least-square model, even though the image matrix is probably ill-conditioned. Furthermore, we improve the pivotal inequality tighter for composite optimization with the smooth part to be strongly convex instead of general convex, which is first found in [Li et al., 2022]. Based on this pivotal inequality, we generalize the linear convergence to composite optimization in both the objective value and the squared proximal subgradient norm. Meanwhile, we set a simple ill-conditioned matrix which is easy to compute the singular values instead of the original blur matrix. The new numerical experiment shows the proximal generalization of Nesterov's accelerated gradient descent (NAG) for the strongly convex function has a faster linear convergence rate than ISTA. Based on the tighter pivotal inequality, we also generalize the faster linear convergence rate to composite optimization, in both the objective value and the squared proximal subgradient norm, by taking advantage of the well-constructed Lyapunov function with a slight modification and the phase-space representation based on the high-resolution differential equation framework from the implicit-velocity scheme. "
+}

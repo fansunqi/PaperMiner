@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Long-form numerical reasoning in financial analysis"
+  ],
+  "datasets": [
+    "FinQA",
+    "ConvFinQA"
+  ],
+  "methods": [
+    "Number-aware negative sampling",
+    "Consistency-based reinforcement learning",
+    "Target program augmentation"
+  ],
+  "results": [
+    "New state-of-the-art"
+  ],
+  "paper_id": "639a906390e50fcafdefe66f",
+  "title": "APOLLO: An Optimized Training Approach for Long-form Numerical Reasoning",
+  "abstract": "  Long-form numerical reasoning in financial analysis aims to generate a reasoning program to calculate the correct answer for a given question. Previous work followed a retriever-generator framework, where the retriever selects key facts from a long-form document, and the generator generates a reasoning program based on retrieved facts. However, they treated all facts equally without considering the different contributions of facts with and without numbers. Meanwhile, the program consistency were ignored under supervised training, resulting in lower training accuracy and diversity. To solve these problems, we proposed APOLLO to improve the long-form numerical reasoning framework. For the retriever, we adopt a number-aware negative sampling strategy to enable the retriever to be more discriminative on key numerical facts. For the generator, we design consistency-based reinforcement learning and target program augmentation strategy based on the consistency of program execution results. Experimental results on the FinQA and ConvFinQA leaderboard verify the effectiveness of our proposed method, achieving the new state-of-the-art. "
+}

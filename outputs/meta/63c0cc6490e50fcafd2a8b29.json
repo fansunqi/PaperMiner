@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/cecret3350/DEA-Net"
+  ],
+  "tasks": [
+    "Single image dehazing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "detail-enhanced attention block (DEAB)",
+    "detail-enhanced convolution (DEConv)",
+    "content-guided attention (CGA)",
+    "re-parameterization technique",
+    "mixup fusion scheme"
+  ],
+  "results": [
+    "PSNR index over 41 dB",
+    "3.653 M parameters"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8b29",
+  "title": "DEA-Net: Single image dehazing based on detail-enhanced convolution and\n  content-guided attention",
+  "abstract": "  Single image dehazing is a challenging ill-posed problem which estimates latent haze-free images from observed hazy images. Some existing deep learning based methods are devoted to improving the model performance via increasing the depth or width of convolution. The learning ability of convolutional neural network (CNN) structure is still under-explored. In this paper, a detail-enhanced attention block (DEAB) consisting of the detail-enhanced convolution (DEConv) and the content-guided attention (CGA) is proposed to boost the feature learning for improving the dehazing performance. Specifically, the DEConv integrates prior information into normal convolution layer to enhance the representation and generalization capacity. Then by using the re-parameterization technique, DEConv is equivalently converted into a vanilla convolution with NO extra parameters and computational cost. By assigning unique spatial importance map (SIM) to every channel, CGA can attend more useful information encoded in features. In addition, a CGA-based mixup fusion scheme is presented to effectively fuse the features and aid the gradient flow. By combining above mentioned components, we propose our detail-enhanced attention network (DEA-Net) for recovering high-quality haze-free images. Extensive experimental results demonstrate the effectiveness of our DEA-Net, outperforming the state-of-the-art (SOTA) methods by boosting the PSNR index over 41 dB with only 3.653 M parameters. The source code of our DEA-Net will be made available at https://github.com/cecret3350/DEA-Net. "
+}

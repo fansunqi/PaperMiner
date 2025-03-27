@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Modeling aluminum electrolysis dynamics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sparse deep neural networks",
+    "l1 regularization"
+  ],
+  "results": [
+    "Sparse regularization reduces model complexity",
+    "Sparse models generalize better from small training sets"
+  ],
+  "paper_id": "6321467290e50fcafdb9bb32",
+  "title": "Sparse deep neural networks for modeling aluminum electrolysis dynamics",
+  "abstract": "  Deep neural networks have become very popular in modeling complex nonlinear processes due to their extraordinary ability to fit arbitrary nonlinear functions from data with minimal expert intervention. However, they are almost always overparameterized and challenging to interpret due to their internal complexity. Furthermore, the optimization process to find the learned model parameters can be unstable due to the process getting stuck in local minima. In this work, we demonstrate the value of sparse regularization techniques to significantly reduce the model complexity. We demonstrate this for the case of an aluminium extraction process, which is highly nonlinear system with many interrelated subprocesses. We trained a densely connected deep neural network to model the process and then compared the effects of sparsity promoting l1 regularization on generalizability, interpretability, and training stability. We found that the regularization significantly reduces model complexity compared to a corresponding dense neural network. We argue that this makes the model more interpretable, and show that training an ensemble of sparse neural networks with different parameter initializations often converges to similar model structures with similar learned input features. Furthermore, the empirical study shows that the resulting sparse models generalize better from small training sets than their dense counterparts. "
+}

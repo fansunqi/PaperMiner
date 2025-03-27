@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image recognition",
+    "Robustness improvement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DynTTA",
+    "Differentiable data augmentation",
+    "Deep neural network-based image transformation"
+  ],
+  "results": [
+    "Improves robustness with almost no reduction in classification accuracy for clean images",
+    "Significant improvement in robustness for distribution-shifted datasets"
+  ],
+  "paper_id": "63969ba690e50fcafdcf19a6",
+  "title": "Dynamic Test-Time Augmentation via Differentiable Functions",
+  "abstract": "  Distribution shifts, which often occur in the real world, degrade the accuracy of deep learning systems, and thus improving robustness is essential for practical applications. To improve robustness, we study an image enhancement method that generates recognition-friendly images without retraining the recognition model. We propose a novel image enhancement method, DynTTA, which is based on differentiable data augmentation techniques and generates a blended image from many augmented images to improve the recognition accuracy under distribution shifts. In addition to standard data augmentations, DynTTA also incorporates deep neural network-based image transformation, which further improves the robustness. Because DynTTA is composed of differentiable functions, it is directly trained with the classification loss of the recognition model. We experiment with widely used image recognition datasets using various classification models, including Vision Transformer and MLP-Mixer. DynTTA improves the robustness with almost no reduction in classification accuracy for clean images, which is a better result than the existing methods. Furthermore, we show that estimating the training time augmentation for distribution-shifted datasets using DynTTA and retraining the recognition model with the estimated augmentation significantly improves robustness. "
+}

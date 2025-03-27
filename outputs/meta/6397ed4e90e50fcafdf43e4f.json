@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/Talented-Q/SDMAE"
+  ],
+  "tasks": [
+    "Vision Transformer performance improvement",
+    "Data-hungry issue mitigation"
+  ],
+  "datasets": [
+    "Standard small datasets",
+    "Medical datasets"
+  ],
+  "methods": [
+    "Masked autoencoders (MAE)",
+    "Location prediction task",
+    "Contrastive learning task"
+  ],
+  "results": [
+    "State-of-the-art performance on standard small datasets",
+    "Improved performance on medical datasets with few samples"
+  ],
+  "paper_id": "6397ed4e90e50fcafdf43e4f",
+  "title": "Masked autoencoders are effective solution to transformer data-hungry",
+  "abstract": "  Vision Transformers (ViTs) outperforms convolutional neural networks (CNNs) in several vision tasks with its global modeling capabilities. However, ViT lacks the inductive bias inherent to convolution making it require a large amount of data for training. This results in ViT not performing as well as CNNs on small datasets like medicine and science. We experimentally found that masked autoencoders (MAE) can make the transformer focus more on the image itself, thus alleviating the data-hungry issue of ViT to some extent. Yet the current MAE model is too complex resulting in over-fitting problems on small datasets. This leads to a gap between MAEs trained on small datasets and advanced CNNs models still. Therefore, we investigated how to reduce the decoder complexity in MAE and found a more suitable architectural configuration for it with small datasets. Besides, we additionally designed a location prediction task and a contrastive learning task to introduce localization and invariance characteristics for MAE. Our contrastive learning task not only enables the model to learn high-level visual information but also allows the training of MAE's class token. This is something that most MAE improvement efforts do not consider. Extensive experiments have shown that our method shows state-of-the-art performance on standard small datasets as well as medical datasets with few samples compared to the current popular masked image modeling (MIM) and vision transformers for small datasets.The code and models are available at https://github.com/Talented-Q/SDMAE. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Atrial segmentation"
+  ],
+  "datasets": [
+    "ACDC",
+    "ASC"
+  ],
+  "methods": [
+    "LGSANet with location guidance and siamese adjustment"
+  ],
+  "results": [
+    "Significant performance improvements on atrial datasets"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88649d",
+  "title": "An atrium segmentation network with location guidance and siamese\n  adjustment",
+  "abstract": "  The segmentation of atrial scan images is of great significance for the three-dimensional reconstruction of the atrium and the surgical positioning. Most of the existing segmentation networks adopt a 2D structure and only take original images as input, ignoring the context information of 3D images and the role of prior information. In this paper, we propose an atrium segmentation network LGSANet with location guidance and siamese adjustment, which takes adjacent three slices of images as input and adopts an end-to-end approach to achieve coarse-to-fine atrial segmentation. The location guidance(LG) block uses the prior information of the localization map to guide the encoding features of the fine segmentation stage, and the siamese adjustment(SA) block uses the context information to adjust the segmentation edges. On the atrium datasets of ACDC and ASC, sufficient experiments prove that our method can adapt to many classic 2D segmentation networks, so that it can obtain significant performance improvements. "
+}

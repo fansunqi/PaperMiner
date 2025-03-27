@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Isolating bounded and unbounded real roots of a mixed trigonometric-polynomial"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Weak Fourier sequence technique",
+    "Period-by-period interval handling"
+  ],
+  "results": [
+    "Algorithm divides real roots into bounded and periodic parts",
+    "Efficiency and effectiveness shown by experiments",
+    "Root distributions in periods share a pattern",
+    "Method applicable to other bounded intervals",
+    "New approaches for unbounded intervals"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b20",
+  "title": "Isolating Bounded and Unbounded Real Roots of a Mixed\n  Trigonometric-Polynomial",
+  "abstract": "  Mixed trigonometric-polynomials (MTPs) are functions of the form $f(x,\\sin{x}, \\cos{x})$ with $f\\in\\mathbb{Q}[x_1,x_2,x_3]$. In this paper, an algorithm ``isolating\" all the real roots of an MTP is provided and implemented. It automatically divides the real roots into two parts: one consists of finitely many ``bounded\" roots in an interval $[\\mu_-,\\mu_+]$ while the other consists of probably countably many ``periodic\" roots in $\\mathbb{R}\\backslash[\\mu_-,\\mu_+]$. For bounded roots, the algorithm returns isolating intervals and corresponding multiplicities while for periodic roots, it returns finitely many mutually disjoint small intervals $I_i\\subset[-\\pi,\\pi]$, integers $c_i>0$ and multisets of root multiplicity $\\{m_{j,i}\\}_{j=1}^{c_i}$ such that any periodic root $t>\\mu_+$ is in the set $(\\sqcup_i\\cup_{k\\in\\mathbb{N}}(I_i+2k\\pi))$ and any interval $I_i+2k\\pi\\subset(\\mu_+,\\infty)$ contains exactly $c_i$ periodic roots with multiplicities $m_{1,i},...,m_{c_i,i}$, respectively. The effectiveness and efficiency of the algorithm are shown by experiments. %In particular, our results indicate that the ``distributions\" of the roots of an MTP in the ``periods\" $(-\\pi,\\pi]+2k\\pi$ sufficiently far from $0$ share a same pattern. Besides, the method used to isolate the roots in $[\\mu_-,\\mu_+]$ is applicable to any other bounded interval as well. The algorithm takes advantages of the weak Fourier sequence technique and deals with the intervals period-by-period without scaling the coordinate so to keep the length of the sequence short. The new approaches can easily be modified to decide whether there is any root, or whether there are infinitely many roots in unbounded intervals of the form $(-\\infty,a)$ or $(a,\\infty)$ with $a\\in\\mathbb{Q}$. "
+}

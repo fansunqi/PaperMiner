@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Event-based Optical Flow Estimation"
+  ],
+  "datasets": [
+    "Multi-Vehicle Stereo Event-Camera (MVSEC)",
+    "DSEC-Flow"
+  ],
+  "methods": [
+    "Adaptive-SpikeNet",
+    "Spiking Neural Networks (SNNs)",
+    "Learnable Neuronal Dynamics",
+    "Surrogate Gradient-based Backpropagation through Time (BPTT)"
+  ],
+  "results": [
+    "13% reduction in average endpoint error (AEE) compared to state-of-the-art ANNs",
+    "10%-16% lower AEE compared to similarly sized ANNs",
+    "48.3x savings in network parameters",
+    "10.2x savings in computational energy",
+    "~10% lower EPE compared to state-of-the-art ANN implementations"
+  ],
+  "paper_id": "6331182c90e50fcafdcbbd84",
+  "title": "Adaptive-SpikeNet: Event-based Optical Flow Estimation using Spiking\n  Neural Networks with Learnable Neuronal Dynamics",
+  "abstract": "  Event-based cameras have recently shown great potential for high-speed motion estimation owing to their ability to capture temporally rich information asynchronously. Spiking Neural Networks (SNNs), with their neuro-inspired event-driven processing can efficiently handle such asynchronous data, while neuron models such as the leaky-integrate and fire (LIF) can keep track of the quintessential timing information contained in the inputs. SNNs achieve this by maintaining a dynamic state in the neuron memory, retaining important information while forgetting redundant data over time. Thus, we posit that SNNs would allow for better performance on sequential regression tasks compared to similarly sized Analog Neural Networks (ANNs). However, deep SNNs are difficult to train due to vanishing spikes at later layers. To that effect, we propose an adaptive fully-spiking framework with learnable neuronal dynamics to alleviate the spike vanishing problem. We utilize surrogate gradient-based backpropagation through time (BPTT) to train our deep SNNs from scratch. We validate our approach for the task of optical flow estimation on the Multi-Vehicle Stereo Event-Camera (MVSEC) dataset and the DSEC-Flow dataset. Our experiments on these datasets show an average reduction of 13% in average endpoint error (AEE) compared to state-of-the-art ANNs. We also explore several down-scaled models and observe that our SNN models consistently outperform similarly sized ANNs offering 10%-16% lower AEE. These results demonstrate the importance of SNNs for smaller models and their suitability at the edge. In terms of efficiency, our SNNs offer substantial savings in network parameters (48.3x) and computational energy (10.2x) while attaining ~10% lower EPE compared to the state-of-the-art ANN implementations. "
+}

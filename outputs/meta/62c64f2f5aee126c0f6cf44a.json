@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph-structured data analysis",
+    "Graph and node prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Decision Trees with Dynamic Graph Features (TREE-G)"
+  ],
+  "results": [
+    "TREE-G outperforms other tree-based models and often outperforms other graph-learning algorithms such as GNNs and Graph Kernels",
+    "Provide an explainability mechanism for TREE-G"
+  ],
+  "paper_id": "62c64f2f5aee126c0f6cf44a",
+  "title": "Decision Trees with Dynamic Graph Features",
+  "abstract": "  When dealing with tabular data, models based on decision trees are a popular choice due to their high accuracy on these data types, their ease of application, and explainability properties. However, when it comes to graph-structured data, it is not clear how to apply them effectively, in a way that incorporates the topological information with the tabular data available on the vertices of the graph. To address this challenge, we introduce Decision Trees with Dynamic Graph Features (TREE-G). Rather than only using the pre-defined given features in the data, TREE-G acts on dynamic features, which are computed as the graph traverses the tree. These dynamic features combine the vertex features with the topological information, as well as the cumulative information learned by the tree. Therefore, the features adapt to the predictive task and the graph in hand. We analyze the theoretical properties of TREE-G and demonstrate its benefits empirically on multiple graph and node prediction benchmarks. In these experiments,TREE-G consistently outperformed other tree-based models and often outperformed other graph-learning algorithms such as Graph Neural Networks (GNNs) and Graph Kernels, sometimes by large margins. Finally, we also provide an explainability mechanism for TREE-G, and demonstrate that it can provide informative and intuitive explanations. "
+}

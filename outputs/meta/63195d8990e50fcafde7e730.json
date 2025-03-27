@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Object Segmentation"
+  ],
+  "datasets": [
+    "public benchmark datasets"
+  ],
+  "methods": [
+    "equalized matching mechanism"
+  ],
+  "results": [
+    "comparable performance to state-of-the-art methods"
+  ],
+  "paper_id": "63195d8990e50fcafde7e730",
+  "title": "Pixel-Level Equalized Matching for Video Object Segmentation",
+  "abstract": "  Feature similarity matching, which transfers the information of the reference frame to the query frame, is a key component in semi-supervised video object segmentation. If surjective matching is adopted, background distractors can easily occur and degrade the performance. Bijective matching mechanisms try to prevent this by restricting the amount of information being transferred to the query frame, but have two limitations: 1) surjective matching cannot be fully leveraged as it is transformed to bijective matching at test time; and 2) test-time manual tuning is required for searching the optimal hyper-parameters. To overcome these limitations while ensuring reliable information transfer, we introduce an equalized matching mechanism. To prevent the reference frame information from being overly referenced, the potential contribution to the query frame is equalized by simply applying a softmax operation along with the query. On public benchmark datasets, our proposed approach achieves a comparable performance to state-of-the-art methods. "
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/DQiaole/ZITS_inpainting"
+  ],
+  "tasks": [
+    "Image inpainting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Incremental Transformer",
+    "Transformer Structure Restorer (TSR)",
+    "Simple Structure Upsampler (SSU)",
+    "Fourier CNN Texture Restoration (FTR)",
+    "Structure Feature Encoder (SFE)",
+    "Zero-initialized Residual Addition (ZeroRA)",
+    "masking positional encoding"
+  ],
+  "results": [
+    "Improves FTR's stability and inpainting ability",
+    "Comprehensive exploration of various image priors for inpainting"
+  ],
+  "paper_id": "634781fe90e50fcafd2c1bb0",
+  "title": "ZITS++: Image Inpainting by Improving the Incremental Transformer on\n  Structural Priors",
+  "abstract": "  Image inpainting involves filling missing areas of a corrupted image. Despite impressive results have been achieved recently, restoring images with both vivid textures and reasonable structures remains a significant challenge. Previous methods have primarily addressed regular textures while disregarding holistic structures due to the limited receptive fields of Convolutional Neural Networks (CNNs). To this end, we study learning a Zero-initialized residual addition based Incremental Transformer on Structural priors (ZITS++), an improved model upon our conference work, ZITS~\\cite{dong2022incremental}. Specifically, given one corrupt image, we present the Transformer Structure Restorer (TSR) module to restore holistic structural priors at low image resolution, which are further upsampled by Simple Structure Upsampler (SSU) module to higher image resolution. To recover image texture details, we use the Fourier CNN Texture Restoration (FTR) module, which is strengthened by Fourier and large-kernel attention convolutions. Furthermore, to enhance the FTR, the upsampled structural priors from TSR are further processed by Structure Feature Encoder (SFE) and optimized with the Zero-initialized Residual Addition (ZeroRA) incrementally. Besides, a new masking positional encoding is proposed to encode the large irregular masks. Compared with ZITS, ZITS++ improves the FTR's stability and inpainting ability with several techniques. More importantly, we comprehensively explore the effects of various image priors for inpainting and investigate how to utilize them to address high-resolution image inpainting with extensive experiments. This investigation is orthogonal to most inpainting approaches and can thus significantly benefit the community. Codes and models will be released in https://github.com/DQiaole/ZITS_inpainting. "
+}

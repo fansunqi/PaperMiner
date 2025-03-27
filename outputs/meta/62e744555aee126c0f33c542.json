@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/yuki-kadokawa/cyclic-policy-distillation"
+  ],
+  "tasks": [
+    "Sim-to-Real Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cyclic Policy Distillation",
+    "Domain Randomization"
+  ],
+  "results": [
+    "Sample-efficient",
+    "Accelerates learning through knowledge transfer",
+    "Demonstrated on four tasks and a real-robot task"
+  ],
+  "paper_id": "62e744555aee126c0f33c542",
+  "title": "Cyclic Policy Distillation: Sample-Efficient Sim-to-Real Reinforcement\n  Learning with Domain Randomization",
+  "abstract": "  Deep reinforcement learning with domain randomization learns a control policy in various simulations with randomized physical and sensor model parameters to become transferable to the real world in a zero-shot setting. However, a huge number of samples are often required to learn an effective policy when the range of randomized parameters is extensive due to the instability of policy updates. To alleviate this problem, we propose a sample-efficient method named cyclic policy distillation (CPD). CPD divides the range of randomized parameters into several small sub-domains and assigns a local policy to each one. Then local policies are learned while cyclically transitioning to sub-domains. CPD accelerates learning through knowledge transfer based on expected performance improvements. Finally, all of the learned local policies are distilled into a global policy for sim-to-real transfers. CPD's effectiveness and sample efficiency are demonstrated through simulations with four tasks (Pendulum from OpenAIGym and Pusher, Swimmer, and HalfCheetah from Mujoco), and a real-robot, ball-dispersal task. We published code and videos from our experiments at https://github.com/yuki-kadokawa/cyclic-policy-distillation. "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D reconstruction of real humans from photos",
+    "Inferring Implicit 3D Representations from Human Figures on Pictorial Maps"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural networks for single-view 3D reconstruction",
+    "Deep implicit surface network",
+    "Fully convolutional network",
+    "Generative network",
+    "Cartoonization network",
+    "Autoencoder",
+    "Ray marcher"
+  ],
+  "results": [
+    "Created 3D models look generally promising",
+    "Further improvement needed to reduce gaps between body parts and add pictorial details"
+  ],
+  "paper_id": "63180bf490e50fcafded7607",
+  "title": "Inferring Implicit 3D Representations from Human Figures on Pictorial\n  Maps",
+  "abstract": "  In this work, we present an automated workflow to bring human figures, one of the most frequently appearing entities on pictorial maps, to the third dimension. Our workflow is based on training data and neural networks for single-view 3D reconstruction of real humans from photos. We first let a network consisting of fully connected layers estimate the depth coordinate of 2D pose points. The gained 3D pose points are inputted together with 2D masks of body parts into a deep implicit surface network to infer 3D signed distance fields (SDFs). By assembling all body parts, we derive 2D depth images and body part masks of the whole figure for different views, which are fed into a fully convolutional network to predict UV images. These UV images and the texture for the given perspective are inserted into a generative network to inpaint the textures for the other views. The textures are enhanced by a cartoonization network and facial details are resynthesized by an autoencoder. Finally, the generated textures are assigned to the inferred body parts in a ray marcher. We test our workflow with 12 pictorial human figures after having validated several network configurations. The created 3D models look generally promising, especially when considering the challenges of silhouette-based 3D recovery and real-time rendering of the implicit SDFs. Further improvement is needed to reduce gaps between the body parts and to add pictorial details to the textures. Overall, the constructed figures may be used for animation and storytelling in digital 3D maps. "
+}

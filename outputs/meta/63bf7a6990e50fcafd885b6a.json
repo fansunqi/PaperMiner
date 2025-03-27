@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LiDAR semantic segmentation"
+  ],
+  "datasets": [
+    "SemanticKITTI"
+  ],
+  "methods": [
+    "LENet",
+    "encoder-decoder architecture",
+    "MSCA module",
+    "IAC module",
+    "bilinear interpolation",
+    "convolutional attention",
+    "auxiliary segmentation heads"
+  ],
+  "results": [
+    "Lightweight and effective",
+    "More lightweight and effective than state-of-the-art semantic segmentation approaches"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885b6a",
+  "title": "LENet: Lightweight And Efficient LiDAR Semantic Segmentation Using\n  Multi-Scale Convolution Attention",
+  "abstract": "  LiDAR semantic segmentation can provide vehicles with a rich understanding of scene, which is essential to the perception system in robotics and autonomous driving. In this paper, we propose LENet, a lightweight and efficient projection-based LiDAR semantic segmentation network, which has an encoder-decoder architecture. The encoder consists of a set of MSCA module, which is a simple convolutional attention module to capture multi-scale feature maps. The decoder consists of IAC module, which uses bilinear interpolation to upsample the multi-resolution feature maps and a single convolution layer to integrate the previous and current dimensional features. IAC is very lightweight and dramatically reduces the complexity and storage cost. Moreover, we introduce multiple auxiliary segmentation heads to further refine the network accuracy. We have conducted detailed quantitative experiments, which shows how each component contributes to the final performance. We evaluate our approach on well known public benchmarks (SemanticKITTI), which demonstrates our proposed LENet is more lightweight and effective than state-of-the-art semantic segmentation approaches. "
+}

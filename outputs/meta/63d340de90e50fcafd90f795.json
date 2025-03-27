@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Approximate Maximum Weight Bipartite Matching"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multiplicative Auction Algorithm"
+  ],
+  "results": [
+    "(1-)-approximate maximum weight matching in O(m^-1) time",
+    "Improved over Duan and Pettie's algorithm with O(m^-1log^-1) running time",
+    "Supports dynamic data structure for vertex deletions and insertions"
+  ],
+  "paper_id": "63d340de90e50fcafd90f795",
+  "title": "Multiplicative Auction Algorithm for Approximate Maximum Weight\n  Bipartite Matching",
+  "abstract": "We present an auction algorithm using\nmultiplicative instead of constant weight updates to compute a\n(1-)-approximate maximum weight matching (MWM) in a bipartite graph with\nn vertices and m edges in time O(m^-1), beating the running time of\nthe fastest known approximation algorithm of Duan and Pettie [JACM '14] that\nruns in O(m^-1log^-1). Our algorithm is very simple and it can\nbe extended to give a dynamic data structure that maintains a\n(1-)-approximate maximum weight matching under (1) one-sided vertex\ndeletions (with incident edges) and (2) one-sided vertex insertions (with\nincident edges sorted by weight) to the other side. The total time used is\nO(m^-1), where m is the sum of the number of initially existing and\ninserted edges."
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/gtziafas/HOTS"
+  ],
+  "tasks": [
+    "Interactive Robot Manipulation"
+  ],
+  "datasets": [
+    "Synthetic tabletop scenes"
+  ],
+  "methods": [
+    "Neuro-symbolic (hybrid) compositional reasoning model",
+    "Language parser",
+    "Shared library of primitive skills"
+  ],
+  "results": [
+    "High accuracy",
+    "Transferable to real-world scenes with few-shot visual fine-tuning"
+  ],
+  "paper_id": "633ba44890e50fcafdfe50a0",
+  "title": "A Hybrid Compositional Reasoning Approach for Interactive Robot\n  Manipulation",
+  "abstract": "  In this paper we present a neuro-symbolic (hybrid) compositional reasoning model for coupling language-guided visual reasoning with robot manipulation. A non-expert human user can prompt the robot agent using natural language, providing a referring expression, a question or a grasp action instruction. The model tackles all cases in a task-agnostic fashion through the utilization of a shared library of primitive skills. Each primitive handles an independent sub-task, such as reasoning about visual attributes, spatial relation comprehension, logic and enumeration, as well as arm control. A language parser maps the input query to an executable program composed of such primitives depending on the context. While some primitives are purely symbolic operations (e.g. counting), others are trainable neural functions (e.g. image/word grounding), therefore marrying the interpretability and systematic generalization benefits of discrete symbolic approaches with the scalability and representational power of deep networks. We generate a synthetic dataset of tabletop scenes to train our approach and perform several evaluation experiments for visual reasoning. Results show that the proposed method achieves very high accuracy while being transferable to real-world scenes with few-shot visual fine-tuning. Finally, we integrate our method with a robot framework and demonstrate how it can serve as an interpretable solution for an interactive object picking task, both in simulation and with a real robot. Supplementary material is available in https://github.com/gtziafas/HOTS. "
+}

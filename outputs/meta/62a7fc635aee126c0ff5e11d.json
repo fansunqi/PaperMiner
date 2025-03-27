@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cancer Prognosis"
+  ],
+  "datasets": [
+    "Three publicly-available datasets"
+  ],
+  "methods": [
+    "Dual-stream network with cross-attention",
+    "Square pooling in high-resolution stream"
+  ],
+  "results": [
+    "Average C-Index improvement of around 4.6% compared to existing state-of-the-art methods",
+    "More learnable parameters (6.31M vs. 860.18K) but less computational costs (2.51G vs. 4.94G) compared to a typical existing multi-resolution network",
+    "Average C-Index rise of around 2.0% for dual-stream and cross-attention components"
+  ],
+  "paper_id": "62a7fc635aee126c0ff5e11d",
+  "title": "DSCA: A Dual-Stream Network with Cross-Attention on Whole-Slide Image\n  Pyramids for Cancer Prognosis",
+  "abstract": "  The cancer prognosis on gigapixel Whole-Slide Images (WSIs) has always been a challenging task. To further enhance WSI visual representations, existing methods have explored image pyramids, instead of single-resolution images, in WSIs. In spite of this, they still face two major problems: high computational cost and the unnoticed semantical gap in multi-resolution feature fusion. To tackle these problems, this paper proposes to efficiently exploit WSI pyramids from a new perspective, the dual-stream network with cross-attention (DSCA). Our key idea is to utilize two sub-streams to process the WSI patches with two resolutions, where a square pooling is devised in a high-resolution stream to significantly reduce computational costs, and a cross-attention-based method is proposed to properly handle the fusion of dual-stream features. We validate our DSCA on three publicly-available datasets with a total number of 3,101 WSIs from 1,911 patients. Our experiments and ablation studies verify that (i) the proposed DSCA could outperform existing state-of-the-art methods in cancer prognosis, by an average C-Index improvement of around 4.6%; (ii) our DSCA network is more efficient in computation -- it has more learnable parameters (6.31M vs. 860.18K) but less computational costs (2.51G vs. 4.94G), compared to a typical existing multi-resolution network. (iii) the key components of DSCA, dual-stream and cross-attention, indeed contribute to our model's performance, gaining an average C-Index rise of around 2.0% while maintaining a relatively-small computational load. Our DSCA could serve as an alternative and effective tool for WSI-based cancer prognosis. "
+}

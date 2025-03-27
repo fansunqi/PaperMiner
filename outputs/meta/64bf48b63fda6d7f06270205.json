@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Scalable Deep Learning over Streaming data at the Edge"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ScaDLES"
+  ],
+  "results": [
+    "ScaDLES converges up to 3.29 times faster compared to conventional distributed SGD"
+  ],
+  "paper_id": "64bf48b63fda6d7f06270205",
+  "title": "ScaDLES: Scalable Deep Learning over Streaming data at the Edge",
+  "abstract": "  Distributed deep learning (DDL) training systems are designed for cloud and data-center environments that assumes homogeneous compute resources, high network bandwidth, sufficient memory and storage, as well as independent and identically distributed (IID) data across all nodes. However, these assumptions don't necessarily apply on the edge, especially when training neural networks on streaming data in an online manner. Computing on the edge suffers from both systems and statistical heterogeneity. Systems heterogeneity is attributed to differences in compute resources and bandwidth specific to each device, while statistical heterogeneity comes from unbalanced and skewed data on the edge. Different streaming-rates among devices can be another source of heterogeneity when dealing with streaming data. If the streaming rate is lower than training batch-size, device needs to wait until enough samples have streamed in before performing a single iteration of stochastic gradient descent (SGD). Thus, low-volume streams act like stragglers slowing down devices with high-volume streams in synchronous training. On the other hand, data can accumulate quickly in the buffer if the streaming rate is too high and the devices can't train at line-rate. In this paper, we introduce ScaDLES to efficiently train on streaming data at the edge in an online fashion, while also addressing the challenges of limited bandwidth and training with non-IID data. We empirically show that ScaDLES converges up to 3.29 times faster compared to conventional distributed SGD. "
+}

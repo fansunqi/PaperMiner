@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Skeleton-based Action Recognition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Contrastive GCN-Transformer Network (ConGT)",
+    "Spatial-Temporal Graph Convolution stream (STG)",
+    "Spatial-Temporal Transformer stream (STT)",
+    "Contrastive learning",
+    "Cyclical Focal Loss (CFL)"
+  ],
+  "results": [
+    "State-of-the-art performance in action recognition"
+  ],
+  "paper_id": "63d7352390e50fcafda302c2",
+  "title": "Skeleton-based Action Recognition through Contrasting Two-Stream\n  Spatial-Temporal Networks",
+  "abstract": "  For pursuing accurate skeleton-based action recognition, most prior methods use the strategy of combining Graph Convolution Networks (GCNs) with attention-based methods in a serial way. However, they regard the human skeleton as a complete graph, resulting in less variations between different actions (e.g., the connection between the elbow and head in action ``clapping hands''). For this, we propose a novel Contrastive GCN-Transformer Network (ConGT) which fuses the spatial and temporal modules in a parallel way. The ConGT involves two parallel streams: Spatial-Temporal Graph Convolution stream (STG) and Spatial-Temporal Transformer stream (STT). The STG is designed to obtain action representations maintaining the natural topology structure of the human skeleton. The STT is devised to acquire action representations containing the global relationships among joints. Since the action representations produced from these two streams contain different characteristics, and each of them knows little information of the other, we introduce the contrastive learning paradigm to guide their output representations of the same sample to be as close as possible in a self-supervised manner. Through the contrastive learning, they can learn information from each other to enrich the action features by maximizing the mutual information between the two types of action representations. To further improve action recognition accuracy, we introduce the Cyclical Focal Loss (CFL) which can focus on confident training samples in early training epochs, with an increasing focus on hard samples during the middle epochs. We conduct experiments on three benchmark datasets, which demonstrate that our model achieves state-of-the-art performance in action recognition. "
+}

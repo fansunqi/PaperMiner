@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "fMRI Time Series Analysis"
+  ],
+  "datasets": [
+    "large-scale public datasets"
+  ],
+  "methods": [
+    "blood-oxygen-level-dependent transformer model",
+    "fused window attention mechanism",
+    "cross-window attention",
+    "cross-window regularization"
+  ],
+  "results": [
+    "superior performance against state-of-the-art methods",
+    "explanatory analyses to identify landmark time points and regions"
+  ],
+  "paper_id": "628d9e795aee126c0f979175",
+  "title": "BolT: Fused Window Transformers for fMRI Time Series Analysis",
+  "abstract": "  Deep-learning models have enabled performance leaps in analysis of high-dimensional functional MRI (fMRI) data. Yet, many previous methods are suboptimally sensitive for contextual representations across diverse time scales. Here, we present BolT, a blood-oxygen-level-dependent transformer model, for analyzing multi-variate fMRI time series. BolT leverages a cascade of transformer encoders equipped with a novel fused window attention mechanism. Encoding is performed on temporally-overlapped windows within the time series to capture local representations. To integrate information temporally, cross-window attention is computed between base tokens in each window and fringe tokens from neighboring windows. To gradually transition from local to global representations, the extent of window overlap and thereby number of fringe tokens are progressively increased across the cascade. Finally, a novel cross-window regularization is employed to align high-level classification features across the time series. Comprehensive experiments on large-scale public datasets demonstrate the superior performance of BolT against state-of-the-art methods. Furthermore, explanatory analyses to identify landmark time points and regions that contribute most significantly to model decisions corroborate prominent neuroscientific findings in the literature. "
+}

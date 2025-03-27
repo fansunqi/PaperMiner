@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Critical scenario generation",
+    "Action sequence modeling in autonomous driving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ECSAS framework",
+    "BTScenario description language",
+    "Reinforcement learning",
+    "Action masking",
+    "Replay buffer"
+  ],
+  "results": [
+    "More efficient than random and combination testing in various nontrivial scenarios"
+  ],
+  "paper_id": "632bd2a990e50fcafdb7a269",
+  "title": "ECSAS: Exploring Critical Scenarios from Action Sequence in Autonomous\n  Driving",
+  "abstract": "  Critical scenario generation requires the ability of sampling critical combinations from the infinite parameter space in the logic scenario. Existing solutions aim to explore the correlation of action parameters in the initial scenario rather than action sequences. How to model action sequences so that one can further consider the effects of different action parameters in the scenario is the bottleneck of the problem. In this paper, we attack the problem by proposing the ECSAS framework. Specifically, we first propose a description language, BTScenario, allowing us to model action sequences of the scenarios. We then use reinforcement learning to search for combinations of critical action parameters. To increase efficiency, we further propose several optimizations, including action masking and replay buffer. We have implemented ECSAS, and experimental results show that it is more efficient than native approaches such as random and combination testing in various nontrivial scenarios. "
+}

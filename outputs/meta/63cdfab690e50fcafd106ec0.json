@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Error Correction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Union-Find (UF) decoder",
+    "Hybrid tree-grid structure (Helios)"
+  ],
+  "results": [
+    "Sublinear average time complexity",
+    "Cycle-accurate decoding time for d up to 15",
+    "Average decoding time is 120 ns per measurement round",
+    "Can decode a surface code of arbitrarily large d without a growing backlog"
+  ],
+  "paper_id": "63cdfab690e50fcafd106ec0",
+  "title": "Scalable Quantum Error Correction for Surface Codes using FPGA",
+  "abstract": "  A fault-tolerant quantum computer must decode and correct errors faster than they appear. The faster errors can be corrected, the more time the computer can do useful work. The Union-Find (UF) decoder is promising with an average time complexity slightly higher than $O(d^3)$. We report a distributed version of the UF decoder that exploits parallel computing resources for further speedup. Using an FPGA-based implementation, we empirically show that this distributed UF decoder has a sublinear average time complexity with regard to $d$, given $O(d^3)$ parallel computing resources. The decoding time per measurement round decreases as $d$ increases, a first time for a quantum error decoder. The implementation employs a scalable architecture called Helios that organizes parallel computing resources into a hybrid tree-grid structure. Using Xilinx's cycle-accurate simulator, we present cycle-accurate decoding time for $d$ up to 15, with the phenomenological noise model with $p=0.1\\%$. We are able to implement $d$ up to 7 with a Xilinx ZC106 FPGA, for which an average decoding time is 120 ns per measurement round. Since the decoding time per measurement round of Helios decreases with $d$, Helios can decode a surface code of arbitrarily large $d$ without a growing backlog. "
+}

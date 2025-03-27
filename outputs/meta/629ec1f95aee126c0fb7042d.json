@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning to Rank"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pessimistic off-policy optimization",
+    "Click models",
+    "Empirical Bayes"
+  ],
+  "results": [
+    "Outperforms all baselines",
+    "Robust and general"
+  ],
+  "paper_id": "629ec1f95aee126c0fb7042d",
+  "title": "Pessimistic Off-Policy Optimization for Learning to Rank",
+  "abstract": "  Off-policy learning is a framework for optimizing policies without deploying them, using data collected by another policy. In recommender systems, this is especially challenging due to the imbalance in logged data: some items are recommended and thus logged more frequently than others. This is further perpetuated when recommending a list of items, as the action space is combinatorial. To address this challenge, we study pessimistic off-policy optimization for learning to rank. The key idea is to compute lower confidence bounds on parameters of click models and then return the list with the highest pessimistic estimate of its value. This approach is computationally efficient and we analyze it. We study its Bayesian and frequentist variants, and overcome the limitation of unknown prior by incorporating empirical Bayes. To show the empirical effectiveness of our approach, we compare it to off-policy optimizers that use inverse propensity scores or neglect uncertainty. Our approach outperforms all baselines, is robust, and is also general. "
+}

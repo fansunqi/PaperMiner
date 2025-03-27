@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic Gradient Descent (SGD) convergence rates"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Norm test",
+    "Inner product/orthogonality test"
+  ],
+  "results": [
+    "Norm test and inner product/orthogonality test are equivalent",
+    "Inner product/orthogonality test can be as inexpensive as the norm test in the best case scenario"
+  ],
+  "paper_id": "64a63b8dd68f896efaec1c8b",
+  "title": "On the equivalence of different adaptive batch size selection strategies\n  for stochastic gradient descent methods",
+  "abstract": "  In this study, we demonstrate that the norm test and inner product/orthogonality test presented in \\cite{Bol18} are equivalent in terms of the convergence rates associated with Stochastic Gradient Descent (SGD) methods if $\\epsilon^2=\\theta^2+\\nu^2$ with specific choices of $\\theta$ and $\\nu$. Here, $\\epsilon$ controls the relative statistical error of the norm of the gradient while $\\theta$ and $\\nu$ control the relative statistical error of the gradient in the direction of the gradient and in the direction orthogonal to the gradient, respectively. Furthermore, we demonstrate that the inner product/orthogonality test can be as inexpensive as the norm test in the best case scenario if $\\theta$ and $\\nu$ are optimally selected, but the inner product/orthogonality test will never be more computationally affordable than the norm test if $\\epsilon^2=\\theta^2+\\nu^2$. Finally, we present two stochastic optimization problems to illustrate our results. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Preserving kernel distance in random Fourier features"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Random Fourier Features (RFF)",
+    "Kernel k-means"
+  ],
+  "results": [
+    "RFF cannot approximate kernel distance with small relative error for certain kernels",
+    "RFF with poly(\u03b5^(-1) log n) dimensions achieves \u03b5-relative error for pairwise kernel distance",
+    "Improved dimension bound for kernel k-means",
+    "Superior performance compared to random-projection and Nystr\u00f6m methods"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4c67",
+  "title": "On The Relative Error of Random Fourier Features for Preserving Kernel\n  Distance",
+  "abstract": "  The method of random Fourier features (RFF), proposed in a seminal paper by Rahimi and Recht (NIPS'07), is a powerful technique to find approximate low-dimensional representations of points in (high-dimensional) kernel space, for shift-invariant kernels. While RFF has been analyzed under various notions of error guarantee, the ability to preserve the kernel distance with \\emph{relative} error is less understood. We show that for a significant range of kernels, including the well-known Laplacian kernels, RFF cannot approximate the kernel distance with small relative error using low dimensions. We complement this by showing as long as the shift-invariant kernel is analytic, RFF with $\\mathrm{poly}(\\epsilon^{-1} \\log n)$ dimensions achieves $\\epsilon$-relative error for pairwise kernel distance of $n$ points, and the dimension bound is improved to $\\mathrm{poly}(\\epsilon^{-1}\\log k)$ for the specific application of kernel $k$-means. Finally, going beyond RFF, we make the first step towards data-oblivious dimension-reduction for general shift-invariant kernels, and we obtain a similar $\\mathrm{poly}(\\epsilon^{-1} \\log n)$ dimension bound for Laplacian kernels. We also validate the dimension-error tradeoff of our methods on simulated datasets, and they demonstrate superior performance compared with other popular methods including random-projection and Nystr\\\"{o}m methods. "
+}

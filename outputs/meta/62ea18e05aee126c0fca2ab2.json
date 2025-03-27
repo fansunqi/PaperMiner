@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimization of sum of L-smooth and \u03bc-strongly convex functions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DADAO: Decoupled Accelerated Decentralized Asynchronous Optimization"
+  ],
+  "results": [
+    "Communication acceleration compared to synchronous approaches",
+    "Improved convergence over standard approaches",
+    "Simulations validating the strength of the method"
+  ],
+  "paper_id": "62ea18e05aee126c0fca2ab2",
+  "title": "DADAO: Decoupled Accelerated Decentralized Asynchronous Optimization",
+  "abstract": "  This work introduces DADAO: the first decentralized, accelerated, asynchronous, primal, first-order algorithm to minimize a sum of $L$-smooth and $\\mu$-strongly convex functions distributed over a given network of size $n$. Our key insight is based on modeling the local gradient updates and gossip communication procedures with separate independent Poisson Point Processes. This allows us to decouple the computation and communication steps, which can be run in parallel, while making the whole approach completely asynchronous, leading to communication acceleration compared to synchronous approaches. Our new method employs primal gradients and does not use a multi-consensus inner loop nor other ad-hoc mechanisms such as Error Feedback, Gradient Tracking, or a Proximal operator. By relating the inverse of the smallest positive eigenvalue of the Laplacian matrix $\\chi_1$ and the maximal resistance $\\chi_2\\leq \\chi_1$ of the graph to a sufficient minimal communication rate between the nodes of the network, we show that our algorithm requires $\\mathcal{O}(n\\sqrt{\\frac{L}{\\mu}}\\log(\\frac{1}{\\epsilon}))$ local gradients and only $\\mathcal{O}(n\\sqrt{\\chi_1\\chi_2}\\sqrt{\\frac{L}{\\mu}}\\log(\\frac{1}{\\epsilon}))$ communications to reach a precision $\\epsilon$, up to logarithmic terms. Thus, we simultaneously obtain an accelerated rate for both computations and communications, leading to an improvement over state-of-the-art works, our simulations further validating the strength of our relatively unconstrained method. We also propose a SDP relaxation to find the optimal gossip rate of each edge minimizing the total number of communications for a given graph, resulting in faster convergence compared to standard approaches relying on uniform communication weights. Our source code is released on a public repository. "
+}

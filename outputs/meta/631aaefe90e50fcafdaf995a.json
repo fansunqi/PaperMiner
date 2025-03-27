@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum simulation circuit compilation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Clifford and non-Clifford operations",
+    "Exponentiated sum of commuting Paulis",
+    "Grouping Hamiltonian terms",
+    "Polynomial time classical algorithm"
+  ],
+  "results": [
+    "Reduction in the number of non-Clifford operations by a factor of up to 4",
+    "Reduction in the number of gates in many cases",
+    "Factor of 1.8-3.2 reduction in the number of non-Clifford gates for qDRIFT simulations"
+  ],
+  "paper_id": "631aaefe90e50fcafdaf995a",
+  "title": "Synthesizing efficient circuits for Hamiltonian simulation",
+  "abstract": "  We provide a new approach for compiling quantum simulation circuits that appear in Trotter, qDRIFT and multi-product formulas to Clifford and non-Clifford operations that can reduce the number of non-Clifford operations by a factor of up to $4$. In fact, the total number of gates reduce in many cases. We show that it is possible to implement an exponentiated sum of commuting Paulis with at most $m$ (controlled)-rotation gates, where $m$ is the number of distinct non-zero eigenvalues (ignoring sign). Thus we can collect mutually commuting Hamiltonian terms into groups that satisfy one of several symmetries identified in this work which allow an inexpensive simulation of the entire group of terms. We further show that the cost can in some cases be reduced by partially allocating Hamiltonian terms to several groups and provide a polynomial time classical algorithm that can greedily allocate the terms to appropriate groupings. We further specifically discuss these optimizations for the case of fermionic dynamics and provide extensive numerical simulations for qDRIFT of our grouping strategy to 6 and 4-qubit Heisenberg models, $LiH$, $H_2$ and observe a factor of 1.8-3.2 reduction in the number of non-Clifford gates. This suggests Trotter-based simulation of chemistry in second quantization may be even more practical than previously believed. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image inpainting",
+    "Shape completion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CNN-based Euler's Elastica Inpainting",
+    "Deep energy",
+    "Deep image prior"
+  ],
+  "results": [
+    "Qualitatively on par with state-of-the-art algorithms",
+    "Good rotation invariance with sharp edges",
+    "High efficiency and effortless parallelisation",
+    "Unsupervised, no ground truth training data required"
+  ],
+  "paper_id": "62d620f45aee126c0fad3d3b",
+  "title": "CNN-based Euler's Elastica Inpainting with Deep Energy and Deep Image\n  Prior",
+  "abstract": "  Euler's elastica constitute an appealing variational image inpainting model. It minimises an energy that involves the total variation as well as the level line curvature. These components are transparent and make it attractive for shape completion tasks. However, its gradient flow is a singular, anisotropic, and nonlinear PDE of fourth order, which is numerically challenging: It is difficult to find efficient algorithms that offer sharp edges and good rotation invariance. As a remedy, we design the first neural algorithm that simulates inpainting with Euler's Elastica. We use the deep energy concept which employs the variational energy as neural network loss. Furthermore, we pair it with a deep image prior where the network architecture itself acts as a prior. This yields better inpaintings by steering the optimisation trajectory closer to the desired solution. Our results are qualitatively on par with state-of-the-art algorithms on elastica-based shape completion. They combine good rotation invariance with sharp edges. Moreover, we benefit from the high efficiency and effortless parallelisation within a neural framework. Our neural elastica approach only requires 3x3 central difference stencils. It is thus much simpler than other well-performing algorithms for elastica inpainting. Last but not least, it is unsupervised as it requires no ground truth training data. "
+}

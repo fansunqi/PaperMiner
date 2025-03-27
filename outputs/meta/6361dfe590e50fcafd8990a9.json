@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Link Prediction Models for Issues and Commits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer",
+    "pre-trained models",
+    "randomly- and temporally-split datasets",
+    "transfer-learning settings"
+  ],
+  "results": [
+    "48% improvement in F1-measure",
+    "comparable performance in cross-project setting"
+  ],
+  "paper_id": "6361dfe590e50fcafd8990a9",
+  "title": "An Empirical Study on Data Leakage and Generalizability of Link\n  Prediction Models for Issues and Commits",
+  "abstract": "  To enhance documentation and maintenance practices, developers conventionally establish links between related software artifacts manually. Empirical research has revealed that developers frequently overlook this practice, resulting in significant information loss. To address this issue, automatic link recovery techniques have been proposed. However, these approaches primarily focused on improving prediction accuracy on randomly-split datasets, with limited attention given to the impact of data leakage and the generalizability of the predictive models. LinkFormer seeks to address these limitations. Our approach not only preserves and improves the accuracy of existing predictions but also enhances their alignment with real-world settings and their generalizability. First, to better utilize contextual information for prediction, we employ the Transformer architecture and fine-tune multiple pre-trained models on both textual and metadata information of issues and commits. Next, to gauge the effect of time on model performance, we employ two splitting policies during both the training and testing phases; randomly- and temporally-split datasets. Finally, in pursuit of a generic model that can demonstrate high performance across a range of projects, we undertake additional fine-tuning of LinkFormer within two distinct transfer-learning settings. Our findings support that to simulate real-world scenarios effectively, researchers must maintain the temporal flow of data when training models. Furthermore, the results demonstrate that LinkFormer outperforms existing methodologies by a significant margin, achieving a 48% improvement in F1-measure within a project-based setting. Finally, the performance of LinkFormer in the cross-project setting is comparable to its average performance within the project-based scenario. "
+}

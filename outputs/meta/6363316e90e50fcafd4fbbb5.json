@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Transducers",
+    "On-device ASR"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HAT-style joiner factorization",
+    "Blank probability thresholding"
+  ],
+  "results": [
+    "26-30% decoding speed-up",
+    "43-53% reduction in on-device power consumption",
+    "No accuracy degradation"
+  ],
+  "paper_id": "6363316e90e50fcafd4fbbb5",
+  "title": "Factorized Blank Thresholding for Improved Runtime Efficiency of Neural\n  Transducers",
+  "abstract": "  We show how factoring the RNN-T's output distribution can significantly reduce the computation cost and power consumption for on-device ASR inference with no loss in accuracy. With the rise in popularity of neural-transducer type models like the RNN-T for on-device ASR, optimizing RNN-T's runtime efficiency is of great interest. While previous work has primarily focused on the optimization of RNN-T's acoustic encoder and predictor, this paper focuses the attention on the joiner. We show that despite being only a small part of RNN-T, the joiner has a large impact on the overall model's runtime efficiency. We propose to utilize HAT-style joiner factorization for the purpose of skipping the more expensive non-blank computation when the blank probability exceeds a certain threshold. Since the blank probability can be computed very efficiently and the RNN-T output is dominated by blanks, our proposed method leads to a 26-30% decoding speed-up and 43-53% reduction in on-device power consumption, all the while incurring no accuracy degradation and being relatively simple to implement. "
+}

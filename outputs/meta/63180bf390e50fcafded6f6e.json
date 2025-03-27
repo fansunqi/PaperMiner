@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Distributed convex composite optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dual Inexact Splitting Algorithm (DISA)"
+  ],
+  "results": [
+    "Eliminates dependence on the Euclidean norm of the linear mapping",
+    "Sublinear and linear convergence rates",
+    "Global convergence and sublinear convergence rate for a variant with approximate proximal mapping",
+    "Significant acceleration compared to existing PD-PSAs"
+  ],
+  "paper_id": "63180bf390e50fcafded6f6e",
+  "title": "DISA: A Dual Inexact Splitting Algorithm for Distributed Convex\n  Composite Optimization",
+  "abstract": "  In this paper, we propose a novel Dual Inexact Splitting Algorithm (DISA) for distributed convex composite optimization problems, where the local loss function consists of a smooth term and a possibly nonsmooth term composed with a linear mapping. DISA, for the first time, eliminates the dependence of the convergent step-size range on the Euclidean norm of the linear mapping, while inheriting the advantages of the classic Primal-Dual Proximal Splitting Algorithm (PD-PSA): simple structure and easy implementation. This indicates that DISA can be executed without prior knowledge of the norm, and tiny step-sizes can be avoided when the norm is large. Additionally, we prove sublinear and linear convergence rates of DISA under general convexity and metric subregularity, respectively. Moreover, we provide a variant of DISA with approximate proximal mapping and prove its global convergence and sublinear convergence rate. Numerical experiments corroborate our theoretical analyses and demonstrate a significant acceleration of DISA compared to existing PD-PSAs. "
+}

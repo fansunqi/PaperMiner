@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Metricizing the Euclidean Space towards Desired Distance Relations in Point Clouds"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Constructing a metric",
+    "\u03b5-semimetric",
+    "k-Means clustering",
+    "DBSCAN clustering"
+  ],
+  "results": [
+    "Desired pairwise distances achieved",
+    "Applications in unsupervised learning algorithms"
+  ],
+  "paper_id": "6369c8d290e50fcafde896ee",
+  "title": "Metricizing the Euclidean Space towards Desired Distance Relations in\n  Point Clouds",
+  "abstract": "  Given a set of points in the Euclidean space $\\mathbb{R}^\\ell$ with $\\ell>1$, the pairwise distances between the points are determined by their spatial location and the metric $d$ that we endow $\\mathbb{R}^\\ell$ with. Hence, the distance $d(\\mathbf x,\\mathbf y)=\\delta$ between two points is fixed by the choice of $\\mathbf x$ and $\\mathbf y$ and $d$. We study the related problem of fixing the value $\\delta$, and the points $\\mathbf x,\\mathbf y$, and ask if there is a topological metric $d$ that computes the desired distance $\\delta$. We demonstrate this problem to be solvable by constructing a metric to simultaneously give desired pairwise distances between up to $O(\\sqrt\\ell)$ many points in $\\mathbb{R}^\\ell$. We then introduce the notion of an $\\varepsilon$-semimetric $\\tilde{d}$ to formulate our main result: for all $\\varepsilon>0$, for all $m\\geq 1$, for any choice of $m$ points $\\mathbf y_1,\\ldots,\\mathbf y_m\\in\\mathbb{R}^\\ell$, and all chosen sets of values $\\{\\delta_{ij}\\geq 0: 1\\leq i<j\\leq m\\}$, there exists an $\\varepsilon$-semimetric $\\tilde{\\delta}:\\mathbb{R}^\\ell\\times \\mathbb{R}^\\ell\\to\\mathbb{R}$ such that $\\tilde{d}(\\mathbf y_i,\\mathbf y_j)=\\delta_{ij}$, i.e., the desired distances are accomplished, irrespectively of the topology that the Euclidean or other norms would induce. We showcase our results by using them to attack unsupervised learning algorithms, specifically $k$-Means and density-based (DBSCAN) clustering algorithms. These have manifold applications in artificial intelligence, and letting them run with externally provided distance measures constructed in the way as shown here, can make clustering algorithms produce results that are pre-determined and hence malleable. This demonstrates that the results of clustering algorithms may not generally be trustworthy, unless there is a standardized and fixed prescription to use a specific distance function. "
+}

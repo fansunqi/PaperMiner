@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/vb000/NeuriCam"
+  ],
+  "tasks": [
+    "Video capture from low-power dual-mode IoT camera systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep learning-based system",
+    "Attention feature filter mechanism"
+  ],
+  "results": [
+    "Energy consumption reduced by 7x compared to existing systems",
+    "Average greyscale PSNR gain of 3.7 dB",
+    "5.6 dB RGB gain over prior color propagation methods"
+  ],
+  "paper_id": "62e0acf75aee126c0f207e3b",
+  "title": "NeuriCam: Key-Frame Video Super-Resolution and Colorization for IoT\n  Cameras",
+  "abstract": "  We present NeuriCam, a novel deep learning-based system to achieve video capture from low-power dual-mode IoT camera systems. Our idea is to design a dual-mode camera system where the first mode is low-power (1.1 mW) but only outputs grey-scale, low resolution, and noisy video and the second mode consumes much higher power (100 mW) but outputs color and higher resolution images. To reduce total energy consumption, we heavily duty cycle the high power mode to output an image only once every second. The data for this camera system is then wirelessly sent to a nearby plugged-in gateway, where we run our real-time neural network decoder to reconstruct a higher-resolution color video. To achieve this, we introduce an attention feature filter mechanism that assigns different weights to different features, based on the correlation between the feature map and the contents of the input frame at each spatial location. We design a wireless hardware prototype using off-the-shelf cameras and address practical issues including packet loss and perspective mismatch. Our evaluations show that our dual-camera approach reduces energy consumption by 7x compared to existing systems. Further, our model achieves an average greyscale PSNR gain of 3.7 dB over prior single and dual-camera video super-resolution methods and 5.6 dB RGB gain over prior color propagation methods. Open-source code: https://github.com/vb000/NeuriCam. "
+}

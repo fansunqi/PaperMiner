@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Natural language supervision",
+    "Image encoders training"
+  ],
+  "datasets": [
+    "11.3M image-text pairs",
+    "1.4B images"
+  ],
+  "methods": [
+    "Masked auto-encoders (MAE)",
+    "Contrastive language image pre-training (CLIP)"
+  ],
+  "results": [
+    "Little to no benefit over CLIP when trained on a large corpus of 1.4B images"
+  ],
+  "paper_id": "63ca069790e50fcafd683035",
+  "title": "Masked Autoencoding Does Not Help Natural Language Supervision at Scale",
+  "abstract": "  Self supervision and natural language supervision have emerged as two exciting ways to train general purpose image encoders which excel at a variety of downstream tasks. Recent works such as M3AE and SLIP have suggested that these approaches can be effectively combined, but most notably their results use small pre-training datasets (<50M samples) and don't effectively reflect the large-scale regime (>100M examples) that is commonly used for these approaches. Here we investigate whether a similar approach can be effective when trained with a much larger amount of data. We find that a combination of two state of the art approaches: masked auto-encoders, MAE and contrastive language image pre-training, CLIP provides a benefit over CLIP when trained on a corpus of 11.3M image-text pairs, but little to no benefit (as evaluated on a suite of common vision tasks) over CLIP when trained on a large corpus of 1.4B images. Our work provides some much needed clarity into the effectiveness (or lack thereof) of self supervision for large-scale image-text training. "
+}

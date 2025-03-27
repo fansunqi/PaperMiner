@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Biomedical Knowledge Probing"
+  ],
+  "datasets": [
+    "BioLAMA"
+  ],
+  "methods": [
+    "context variance",
+    "rank-change-based evaluation metric",
+    "Understand-Confuse-Misunderstand (UCM) metric"
+  ],
+  "results": [
+    "context variance prompts make BioLAMA more friendly to large-N-M relations and rare relations",
+    "control experiments to disentangle 'understand' from just 'read and copy'"
+  ],
+  "paper_id": "637aec2190e50fcafd928dac",
+  "title": "Context Variance Evaluation of Pretrained Language Models for\n  Prompt-based Biomedical Knowledge Probing",
+  "abstract": "  Pretrained language models (PLMs) have motivated research on what kinds of knowledge these models learn. Fill-in-the-blanks problem (e.g., cloze tests) is a natural approach for gauging such knowledge. BioLAMA generates prompts for biomedical factual knowledge triples and uses the Top-k accuracy metric to evaluate different PLMs' knowledge. However, existing research has shown that such prompt-based knowledge probing methods can only probe a lower bound of knowledge. Many factors like prompt-based probing biases make the LAMA benchmark unreliable and unstable. This problem is more prominent in BioLAMA. The severe long-tailed distribution in vocabulary and large-N-M relation make the performance gap between LAMA and BioLAMA remain notable. To address these, we introduce context variance into the prompt generation and propose a new rank-change-based evaluation metric. Different from the previous known-unknown evaluation criteria, we propose the concept of \"Misunderstand\" in LAMA for the first time. Through experiments on 12 PLMs, our context variance prompts and Understand-Confuse-Misunderstand (UCM) metric makes BioLAMA more friendly to large-N-M relations and rare relations. We also conducted a set of control experiments to disentangle \"understand\" from just \"read and copy\". "
+}

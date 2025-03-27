@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/facebookresearch/where_to_begin"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pre-trained model initialization"
+  ],
+  "results": [
+    "Reduces training time",
+    "Enables training of more accurate models (up to 40%)",
+    "Reduces effect of data and system heterogeneity"
+  ],
+  "paper_id": "62be66205aee126c0f07d267",
+  "title": "Where to Begin? On the Impact of Pre-Training and Initialization in\n  Federated Learning",
+  "abstract": "  An oft-cited challenge of federated learning is the presence of heterogeneity. \\emph{Data heterogeneity} refers to the fact that data from different clients may follow very different distributions. \\emph{System heterogeneity} refers to client devices having different system capabilities. A considerable number of federated optimization methods address this challenge. In the literature, empirical evaluations usually start federated training from random initialization. However, in many practical applications of federated learning, the server has access to proxy data for the training task that can be used to pre-train a model before starting federated training. Using four standard federated learning benchmark datasets, we empirically study the impact of starting from a pre-trained model in federated learning. Unsurprisingly, starting from a pre-trained model reduces the training time required to reach a target error rate and enables the training of more accurate models (up to 40\\%) than is possible when starting from random initialization. Surprisingly, we also find that starting federated learning from a pre-trained initialization reduces the effect of both data and system heterogeneity. We recommend future work proposing and evaluating federated optimization methods to evaluate the performance when starting from random and pre-trained initializations. This study raises several questions for further work on understanding the role of heterogeneity in federated optimization. \\footnote{Our code is available at: \\url{https://github.com/facebookresearch/where_to_begin}} "
+}

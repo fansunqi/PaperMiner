@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Time-to-event modeling"
+  ],
+  "datasets": [
+    "Electronic health record data"
+  ],
+  "methods": [
+    "MOTOR"
+  ],
+  "results": [
+    "C statistic performance improvement by 6.6%",
+    "Training time reduction by up to 8.2 times",
+    "95% less training data for matching state-of-the-art performance"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa195",
+  "title": "Self-Supervised Time-to-Event Modeling with Structured Medical Records",
+  "abstract": "  Time-to-event models (also known as survival models) are used in medicine and other fields for estimating the probability distribution of the time until a particular event occurs. While providing many advantages over traditional classification models, such as naturally handling censoring, time-to-event models require more parameters and are challenging to learn in settings with limited labeled training data. High censoring rates, common in events with long time horizons, further limit available training data and exacerbate the risk of overfitting. Existing methods, such as proportional hazard or accelerated failure time-based approaches, employ distributional assumptions to reduce parameter size, but they are vulnerable to model misspecification. In this work, we address these challenges with MOTOR, a self-supervised model that leverages temporal structure found in large-scale collections of timestamped, but largely unlabeled events, typical of electronic health record data. MOTOR defines a time-to-event pretraining task that naturally captures the probability distribution of event times, making it well-suited to applications in medicine. After pretraining on 8,192 tasks auto-generated from 2.7M patients (2.4B clinical events), we evaluate the performance of our pretrained model after fine-tuning to unseen time-to-event tasks. MOTOR-derived models improve upon current state-of-the-art C statistic performance by 6.6% and decrease training time (in wall time) by up to 8.2 times. We further improve sample efficiency, with adapted models matching current state-of-the-art performance using 95% less training data. "
+}

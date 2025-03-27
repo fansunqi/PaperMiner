@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "non-convex composite optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Perturbed Proximal Preconditioned SPIDER algorithm (3P-SPIDER)",
+    "stochastic Variable Metric Forward-Backward algorithm",
+    "mini-batch strategy with variance reduction"
+  ],
+  "results": [
+    "Combination of composite non-convex optimization with variance reduction technique",
+    "Explicit control of convergence in expectation",
+    "Comparison with other stochastic forward-backward algorithms"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e795",
+  "title": "Stochastic Variable Metric Proximal Gradient with variance reduction for\n  non-convex composite optimization",
+  "abstract": "  This paper introduces a novel algorithm, the Perturbed Proximal Preconditioned SPIDER algorithm (3P-SPIDER), designed to solve finite sum non-convex composite optimization. It is a stochastic Variable Metric Forward-Backward algorithm, which allows approximate preconditioned forward operator and uses a variable metric proximity operator as the backward operator; it also proposes a mini-batch strategy with variance reduction to address the finite sum setting. We show that 3P-SPIDER extends some Stochastic preconditioned Gradient Descent-based algorithms and some Incremental Expectation Maximization algorithms to composite optimization and to the case the forward operator can not be computed in closed form. We also provide an explicit control of convergence in expectation of 3P-SPIDER, and study its complexity in order to satisfy the epsilon-approximate stationary condition. Our results are the first to combine the composite non-convex optimization setting, a variance reduction technique to tackle the finite sum setting by using a minibatch strategy and, to allow deterministic or random approximations of the preconditioned forward operator. Finally, through an application to inference in a logistic regression model with random effects, we numerically compare 3P-SPIDER to other stochastic forward-backward algorithms and discuss the role of some design parameters of 3P-SPIDER. "
+}

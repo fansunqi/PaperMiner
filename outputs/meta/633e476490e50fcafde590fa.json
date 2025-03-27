@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/NVIDIA/DeepLearningExamples/tree/master/Tools/DGLPyTorch/SyntheticGraphGeneration"
+  ],
+  "tasks": [
+    "Graph analysis"
+  ],
+  "datasets": [
+    "Synthetic graph datasets"
+  ],
+  "methods": [
+    "Synthetic graph generation tool"
+  ],
+  "results": [
+    "Generalizes across datasets",
+    "Mimics structural and feature distributions",
+    "Scalable to varying dataset sizes"
+  ],
+  "paper_id": "633e476490e50fcafde590fa",
+  "title": "A Framework for Large Scale Synthetic Graph Dataset Generation",
+  "abstract": "  Recently there has been increasing interest in developing and deploying deep graph learning algorithms for many graph analysis tasks such as node and edge classification, link prediction, and clustering with numerous practical applications such as fraud detection, drug discovery, or recommender systems. Albeit there is a limited number of publicly available graph-structured datasets, most of which are tiny compared to production-sized applications with trillions of edges and billions of nodes or are limited in their application domain. In this work, we tackle this shortcoming by proposing a scalable synthetic graph generation tool that can mimic the original data distribution of real-world graphs and scale them to arbitrary sizes. This tool can be used then to learn a set of parametric models from proprietary datasets that can subsequently be released to researchers to study various graph methods on the synthetic data increasing prototype development and novel applications. Finally, the performance of the graph learning algorithms depends not only on the size but also on the graph datasets structure. We show how our framework generalizes across a set of datasets, mimicking both structural and feature distributions and the ability to scale them across varying dataset sizes. The code is accessible at https://github.com/NVIDIA/DeepLearningExamples/tree/master/Tools/DGLPyTorch/SyntheticGraphGeneration. "
+}

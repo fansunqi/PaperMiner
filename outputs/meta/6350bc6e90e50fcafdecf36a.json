@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Attributing Model Performance Changes to Distribution Shifts"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cooperative game formulation",
+    "Importance weighting method",
+    "Shapley value"
+  ],
+  "results": [
+    "Effectiveness in attributing performance changes to a wide range of distribution shifts"
+  ],
+  "paper_id": "6350bc6e90e50fcafdecf36a",
+  "title": "\"Why did the Model Fail?\": Attributing Model Performance Changes to\n  Distribution Shifts",
+  "abstract": "  Performance of machine learning models may differ between training and deployment for many reasons. For instance, model performance can change between environments due to changes in data quality, observing a different population than the one in training, or changes in the relationship between labels and features. These changes result in distribution shifts across environments. Attributing model performance changes to specific shifts is critical for identifying sources of model failures, and for taking mitigating actions that ensure robust models. In this work, we introduce the problem of attributing performance differences between environments to distribution shifts in the underlying data generating mechanisms. We formulate the problem as a cooperative game where the players are distributions. We define the value of a set of distributions to be the change in model performance when only this set of distributions has changed between environments, and derive an importance weighting method for computing the value of an arbitrary set of distributions. The contribution of each distribution to the total performance change is then quantified as its Shapley value. We demonstrate the correctness and utility of our method on synthetic, semi-synthetic, and real-world case studies, showing its effectiveness in attributing performance changes to a wide range of distribution shifts. "
+}

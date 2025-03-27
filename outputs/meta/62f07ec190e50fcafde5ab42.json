@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Brain disease classification"
+  ],
+  "datasets": [
+    "Autism",
+    "Alzheimer's disease",
+    "Depression",
+    "Attention deficit hyperactivity disorder",
+    "Headache disorders"
+  ],
+  "methods": [
+    "BrainFormer",
+    "3D convolutions",
+    "Global attention mechanisms"
+  ],
+  "results": [
+    "Effectiveness and generalizability for multiple brain diseases diagnosis",
+    "May promote precision of neuroimaging-based diagnosis"
+  ],
+  "paper_id": "62f07ec190e50fcafde5ab42",
+  "title": "Multimodal Brain Disease Classification with Functional Interaction\n  Learning from Single fMRI Volume",
+  "abstract": "  In neuroimaging analysis, fMRI can well assess the function changes for brain diseases with no obvious structural lesions. To date, most deep-learning-based fMRI studies have employed functional connectivity (FC) as the basic feature for disease classification. However, FC is calculated on time series of predefined regions of interest and neglects detailed information contained in each voxel. Another drawback of using FC is the limited sample size for the training of deep models. The low representation ability of FC leads to poor performance in clinical practice, especially when dealing with multimodal medical data involving multiple types of visual signals and textual records for brain diseases. To overcome this bottleneck problem in the fMRI feature modality, we propose BrainFormer, an end-to-end functional interaction learning method for brain disease classification with single fMRI volume. Unlike traditional deep learning methods that construct convolution and transformers on FC, BrainFormer learns the functional interaction from fMRI signals, by modeling the local cues within each voxel with 3D convolutions and capturing the global correlations among distant regions with specially designed global attention mechanisms from shallow layers to deep layers. Meanwhile, BrainFormer can deal with multimodal medical data including fMRI volume, structural MRI, FC features and phenotypic data to achieve more comprehensive brain disease diagnosis. We evaluate BrainFormer on five independent multi-site datasets on autism, Alzheimer's disease, depression, attention deficit hyperactivity disorder and headache disorders. The results demonstrate its effectiveness and generalizability for multiple brain diseases diagnosis with multimodal features. BrainFormer may promote precision of neuroimaging-based diagnosis in clinical practice and motivate future studies on fMRI analysis. "
+}

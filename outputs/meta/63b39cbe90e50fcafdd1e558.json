@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training of overparameterized ReLU networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Tangent Kernel (NTK) regime",
+    "sparsification",
+    "Rademacher complexity",
+    "generalization bound"
+  ],
+  "results": [
+    "Fast convergence of sparsified networks",
+    "Improved generalization bound",
+    "Sharper lower bound on the NTK's smallest eigenvalue"
+  ],
+  "paper_id": "63b39cbe90e50fcafdd1e558",
+  "title": "Convergence and Generalization of Wide Neural Networks with Large Bias",
+  "abstract": "  This work studies training one-hidden-layer overparameterized ReLU networks via gradient descent in the neural tangent kernel (NTK) regime, where the networks' biases are initialized to some constant rather than zero. The tantalizing benefit of such initialization is that the neural network will provably have sparse activation through the entire training process, which enables fast training procedures. The first set of results characterizes the convergence of gradient descent training. Surprisingly, it is shown that the network after sparsification can achieve as fast convergence as the dense network, in comparison to the previous work indicating that the sparse networks converge slower. Further, the required width is improved to ensure gradient descent can drive the training error towards zero at a linear rate. Secondly, the networks' generalization is studied: a width-sparsity dependence is provided which yields a sparsity-dependent Rademacher complexity and generalization bound. To our knowledge, this is the first sparsity-dependent generalization result via Rademacher complexity. Lastly, this work further studies the least eigenvalue of the limiting NTK. Surprisingly, while it is not shown that trainable biases are necessary, trainable bias, which is enabled by our improved analysis scheme, helps to identify a nice data-dependent region where a much finer analysis of the NTK's smallest eigenvalue can be conducted. This leads to a much sharper lower bound on the NTK's smallest eigenvalue than the one previously known and, consequently, an improved generalization bound. "
+}

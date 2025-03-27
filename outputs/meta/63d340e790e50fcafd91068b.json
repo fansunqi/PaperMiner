@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Authorship Analysis"
+  ],
+  "datasets": [
+    "Publicly available datasets",
+    "One dataset made available for the first time"
+  ],
+  "methods": [
+    "Diff-Vectors"
+  ],
+  "results": [
+    "Systematic improvements in authorship identification tasks",
+    "Especially effective when training data are scarce"
+  ],
+  "paper_id": "63d340e790e50fcafd91068b",
+  "title": "Same or Different? Diff-Vectors for Authorship Analysis",
+  "abstract": "  We investigate the effects on authorship identification tasks of a fundamental shift in how to conceive the vectorial representations of documents that are given as input to a supervised learner. In ``classic'' authorship analysis a feature vector represents a document, the value of a feature represents (an increasing function of) the relative frequency of the feature in the document, and the class label represents the author of the document. We instead investigate the situation in which a feature vector represents an unordered pair of documents, the value of a feature represents the absolute difference in the relative frequencies (or increasing functions thereof) of the feature in the two documents, and the class label indicates whether the two documents are from the same author or not. This latter (learner-independent) type of representation has been occasionally used before, but has never been studied systematically. We argue that it is advantageous, and that in some cases (e.g., authorship verification) it provides a much larger quantity of information to the training process than the standard representation. The experiments that we carry out on several publicly available datasets (among which one that we here make available for the first time) show that feature vectors representing pairs of documents (that we here call Diff-Vectors) bring about systematic improvements in the effectiveness of authorship identification tasks, and especially so when training data are scarce (as it is often the case in real-life authorship identification scenarios). Our experiments tackle same-author verification, authorship verification, and closed-set authorship attribution; while DVs are naturally geared for solving the 1st, we also provide two novel methods for solving the 2nd and 3rd that use a solver for the 1st as a building block. "
+}

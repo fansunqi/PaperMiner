@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image-text contrastive learning",
+    "Customized visual models"
+  ],
+  "datasets": [
+    "ImageNet",
+    "ELEVATER benchmark"
+  ],
+  "methods": [
+    "REACT (Retrieval-Augmented CusTomization)"
+  ],
+  "results": [
+    "Up to 5.4% improvement on ImageNet",
+    "3.7% on the ELEVATER benchmark"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b93a",
+  "title": "Learning Customized Visual Models with Retrieval-Augmented Knowledge",
+  "abstract": "  Image-text contrastive learning models such as CLIP have demonstrated strong task transfer ability. The high generality and usability of these visual models is achieved via a web-scale data collection process to ensure broad concept coverage, followed by expensive pre-training to feed all the knowledge into model weights. Alternatively, we propose REACT, REtrieval-Augmented CusTomization, a framework to acquire the relevant web knowledge to build customized visual models for target domains. We retrieve the most relevant image-text pairs (~3% of CLIP pre-training data) from the web-scale database as external knowledge, and propose to customize the model by only training new modualized blocks while freezing all the original weights. The effectiveness of REACT is demonstrated via extensive experiments on classification, retrieval, detection and segmentation tasks, including zero, few, and full-shot settings. Particularly, on the zero-shot classification task, compared with CLIP, it achieves up to 5.4% improvement on ImageNet and 3.7% on the ELEVATER benchmark (20 datasets). "
+}

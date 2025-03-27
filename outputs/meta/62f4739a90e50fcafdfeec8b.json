@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Verification of the busy-forbidden protocol"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "cones and foci proof framework",
+    "extension of the cones and foci framework"
+  ],
+  "results": [
+    "general equivalence proof for the busy-forbidden protocol",
+    "divergence-preserving branching bisimilar"
+  ],
+  "paper_id": "62f4739a90e50fcafdfeec8b",
+  "title": "Verification of the busy-forbidden protocol (using an extension of the\n  cones and foci framework)",
+  "abstract": "  The busy-forbidden protocol is a new readers-writer lock with no resource contention between readers, which allows it to outperform other locks. For its verification, specifications of its implementation and its less complex external behavior are provided by the original authors but are only proven equivalent for up to 7 threads. We provide a general proof using the cones and foci proof framework, which rephrases whether two specifications are branching bisimilar in terms of proof obligations on relations between the data objects occurring in the implementation and specification. We provide an extension of this framework consisting of three additional properties on data objects, When these three additional properties also hold, the two systems are divergence-preserving branching bisimilar, a stronger version of the aforementioned relation that also distinguishes livelock. We prove this extension to be sound and use it to give a general equivalence proof for the busy-forbidden protocol. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Brain extraction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-scale V-net",
+    "Deep Feature CRF Layers"
+  ],
+  "results": [
+    "High and stable Dice Coefficient",
+    "Jaccard Index",
+    "Lower surface distance"
+  ],
+  "paper_id": "62a013765aee126c0ff68cda",
+  "title": "EVAC+: Multi-scale V-net with Deep Feature CRF Layers for Brain\n  Extraction",
+  "abstract": "  Brain extraction is one of the first steps of pre-processing 3D brain MRI data and a prerequisite for any forthcoming brain imaging analyses. However, it is not a simple segmentation problem due to the complex structure of the brain and human head. Although multiple solutions have been proposed in the literature, we are still far from having truly robust methods. While previous methods have used machine learning with structural/geometric priors, with the development of Deep Learning (DL), there has been an increase in proposed Neural Network architectures. Most models focus on improving the training data and loss functions with little change in the architecture. However, the amount of accessible training data with expert-labelled ground truth vary between groups. Moreover, the labels are created not from scratch but from outputs of non-DL methods. Thus, most DL method's performance depend on the amount and quality of data one has. In this paper, we propose a novel architecture we call EVAC+ to work around this issue. We show that EVAC+ has 3 major advantages compared to other networks: (1) Multi-scale input with limited random augmentation for efficient learning, (2) a unique way of using Conditional Random Fields Recurrent Layer and (3) a loss function specifically created to enhance this architecture. We compare our model to state-of-the-art non-DL and DL methods. Results show that even with little change in the traditional architecture and limited training resources, EVAC+ achieves a high and stable Dice Coefficient and Jaccard Index along with a desirable lower surface distance. Ultimately, our model provides a robust way of accurately reducing segmentation errors in complex multi-tissue interfacing areas of brain. "
+}

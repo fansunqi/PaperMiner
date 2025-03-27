@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Roadside Trash Collection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Aerial vehicle data collection",
+    "Convolutional Neural Network (CNN) for litter identification",
+    "Greedy pickup procedure"
+  ],
+  "results": [
+    "Increased fault tolerance",
+    "Use of cheaper equipment",
+    "System effectiveness for iterative design"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5daa",
+  "title": "Error Tolerant Multi-Robot System for Roadside Trash Collection",
+  "abstract": "  In this paper, we present the first iteration of an error-tolerant, autonomous, multi-robot system that monitors highway road verges and identifies and collects roadside litter. It is designed to use an aerial vehicle that can rapidly cover a vast area and collect data on the road verge. This data is then passed to a ground vehicle that constructs a map of the road verge and uses a trained Convolutional Neural Network (CNN) to identify pieces of litter. After the pieces of litter are identified on the map of the road verge, the ground robot navigates to each piece of trash, re-evaluates the area, and performs a \"greedy pickup\" procedure. This final stage accounts for any error in the map's construction or the identified trash's location. We found that ending the robotic system's control flow with a greedy pickup procedure can retroactively account for processing errors of the system as it runs. This increases the system's fault tolerance and allows for the use of cheaper equipment since pinpoint accuracy is not always necessary. In this paper, we present the feasibility of this system by testing in simulation and later using real robotic hardware. We show that the system is effective enough to iterate on its design principles to create a more sophisticated system. "
+}

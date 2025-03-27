@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/icey-zhang/SuperYOLO"
+  ],
+  "tasks": [
+    "Object detection in remote sensing imagery"
+  ],
+  "datasets": [
+    "VEDAI RS"
+  ],
+  "methods": [
+    "SuperYOLO",
+    "symmetric compact multimodal fusion",
+    "super resolution (SR) learning"
+  ],
+  "results": [
+    "Accuracy of 75.09% (mAP50) on VEDAI RS dataset",
+    "Parameter size and GFLOPs about 18 times and 3.8 times less than YOLOv5x"
+  ],
+  "paper_id": "6333bb7890e50fcafdb4c14b",
+  "title": "SuperYOLO: Super Resolution Assisted Object Detection in Multimodal\n  Remote Sensing Imagery",
+  "abstract": "  Accurately and timely detecting multiscale small objects that contain tens of pixels from remote sensing images (RSI) remains challenging. Most of the existing solutions primarily design complex deep neural networks to learn strong feature representations for objects separated from the background, which often results in a heavy computation burden. In this article, we propose an accurate yet fast object detection method for RSI, named SuperYOLO, which fuses multimodal data and performs high-resolution (HR) object detection on multiscale objects by utilizing the assisted super resolution (SR) learning and considering both the detection accuracy and computation cost. First, we utilize a symmetric compact multimodal fusion (MF) to extract supplementary information from various data for improving small object detection in RSI. Furthermore, we design a simple and flexible SR branch to learn HR feature representations that can discriminate small objects from vast backgrounds with low-resolution (LR) input, thus further improving the detection accuracy. Moreover, to avoid introducing additional computation, the SR branch is discarded in the inference stage, and the computation of the network model is reduced due to the LR input. Experimental results show that, on the widely used VEDAI RS dataset, SuperYOLO achieves an accuracy of 75.09% (in terms of mAP50 ), which is more than 10% higher than the SOTA large models, such as YOLOv5l, YOLOv5x, and RS designed YOLOrs. Meanwhile, the parameter size and GFLOPs of SuperYOLO are about 18 times and 3.8 times less than YOLOv5x. Our proposed model shows a favorable accuracy and speed tradeoff compared to the state-of-the-art models. The code will be open-sourced at https://github.com/icey-zhang/SuperYOLO. "
+}

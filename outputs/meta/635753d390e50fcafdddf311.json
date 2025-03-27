@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Doubly Accelerated Federated Learning",
+    "Local Training",
+    "Communication Compression"
+  ],
+  "results": [
+    "Converges linearly to an exact solution in the strongly convex setting",
+    "Doubly accelerated rate"
+  ],
+  "paper_id": "635753d390e50fcafdddf311",
+  "title": "Provably Doubly Accelerated Federated Learning: The First Theoretically\n  Successful Combination of Local Training and Communication Compression",
+  "abstract": "  In federated learning, a large number of users are involved in a global learning task, in a collaborative way. They alternate local computations and two-way communication with a distant orchestrating server. Communication, which can be slow and costly, is the main bottleneck in this setting. To reduce the communication load and therefore accelerate distributed gradient descent, two strategies are popular: 1) communicate less frequently; that is, perform several iterations of local computations between the communication rounds; and 2) communicate compressed information instead of full-dimensional vectors. We propose the first algorithm for distributed optimization and federated learning, which harnesses these two strategies jointly and converges linearly to an exact solution in the strongly convex setting, with a doubly accelerated rate: our algorithm benefits from the two acceleration mechanisms provided by local training and compression, namely a better dependency on the condition number of the functions and on the dimension of the model, respectively. "
+}

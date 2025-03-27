@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Anchored Speech Recognition"
+  ],
+  "datasets": [
+    "LibriSpeech"
+  ],
+  "methods": [
+    "Neural Transducers",
+    "auxiliary network",
+    "encoder biasing",
+    "joiner gating",
+    "auxiliary training objectives"
+  ],
+  "results": [
+    "improve relative word error rates by 19.6% over a strong baseline"
+  ],
+  "paper_id": "6356022390e50fcafd336894",
+  "title": "Anchored Speech Recognition with Neural Transducers",
+  "abstract": "  Neural transducers have achieved human level performance on standard speech recognition benchmarks. However, their performance significantly degrades in the presence of cross-talk, especially when the primary speaker has a low signal-to-noise ratio. Anchored speech recognition refers to a class of methods that use information from an anchor segment (e.g., wake-words) to recognize device-directed speech while ignoring interfering background speech. In this paper, we investigate anchored speech recognition to make neural transducers robust to background speech. We extract context information from the anchor segment with a tiny auxiliary network, and use encoder biasing and joiner gating to guide the transducer towards the target speech. Moreover, to improve the robustness of context embedding extraction, we propose auxiliary training objectives to disentangle lexical content from speaking style. We evaluate our methods on synthetic LibriSpeech-based mixtures comprising several SNR and overlap conditions; they improve relative word error rates by 19.6% over a strong baseline, when averaged over all conditions. "
+}

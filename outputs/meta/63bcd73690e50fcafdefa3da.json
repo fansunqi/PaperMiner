@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Design and control for quadrupedal robots"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Model-free Reinforcement Learning",
+    "Bayesian Optimization"
+  ],
+  "results": [
+    "Improved torque-square efficiency by 33%",
+    "Reduced maximum joint torque by 30%",
+    "11% longer operation time on flat terrain"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa3da",
+  "title": "Learning-based Design and Control for Quadrupedal Robots with\n  Parallel-Elastic Actuators",
+  "abstract": "  Parallel-elastic joints can improve the efficiency and strength of robots by assisting the actuators with additional torques. For these benefits to be realized, a spring needs to be carefully designed. However, designing robots is an iterative and tedious process, often relying on intuition and heuristics. We introduce a design optimization framework that allows us to co-optimize a parallel elastic knee joint and locomotion controller for quadrupedal robots with minimal human intuition. We design a parallel elastic joint and optimize its parameters with respect to the efficiency in a model-free fashion. In the first step, we train a design-conditioned policy using model-free Reinforcement Learning, capable of controlling the quadruped in the predefined range of design parameters. Afterwards, we use Bayesian Optimization to find the best design using the policy. We use this framework to optimize the parallel-elastic spring parameters for the knee of our quadrupedal robot ANYmal together with the optimal controller. We evaluate the optimized design and controller in real-world experiments over various terrains. Our results show that the new system improves the torque-square efficiency of the robot by 33% compared to the baseline and reduces maximum joint torque by 30% without compromising tracking performance. The improved design resulted in 11% longer operation time on flat terrain. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimizing Serially Concatenated Neural Codes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "BCJR algorithm",
+    "turbo-autoencoder",
+    "neural encoders",
+    "real-valued neural codes"
+  ],
+  "results": [
+    "First application of classical decoding algorithm to real-valued neural codes",
+    "End-to-end training of neural encoders"
+  ],
+  "paper_id": "63a2794d90e50fcafd29450f",
+  "title": "Optimizing Serially Concatenated Neural Codes with Classical Decoders",
+  "abstract": "  For improving short-length codes, we demonstrate that classic decoders can also be used with real-valued, neural encoders, i.e., deep-learning based codeword sequence generators. Here, the classical decoder can be a valuable tool to gain insights into these neural codes and shed light on weaknesses. Specifically, the turbo-autoencoder is a recently developed channel coding scheme where both encoder and decoder are replaced by neural networks. We first show that the limited receptive field of convolutional neural network (CNN)-based codes enables the application of the BCJR algorithm to optimally decode them with feasible computational complexity. These maximum a posteriori (MAP) component decoders then are used to form classical (iterative) turbo decoders for parallel or serially concatenated CNN encoders, offering a close-to-maximum likelihood (ML) decoding of the learned codes. To the best of our knowledge, this is the first time that a classical decoding algorithm is applied to a non-trivial, real-valued neural code. Furthermore, as the BCJR algorithm is fully differentiable, it is possible to train, or fine-tune, the neural encoder in an end-to-end fashion. "
+}

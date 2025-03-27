@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://www.cs.umd.edu/~sakshams/vit_analysis",
+    "https://www.github.com/mwalmer-umd/vit_analysis"
+  ],
+  "tasks": [
+    "Vision Transformers (ViTs) behavior under different learning paradigms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Vision Transformers (ViTs)",
+    "Supervised learning methods",
+    "Contrastive self-supervised methods"
+  ],
+  "results": [
+    "Diverse range of behaviors in terms of attention, representations, and downstream performance",
+    "Emergence of Offset Local Attention Heads",
+    "Contrastive self-supervised methods learn features competitive with explicitly supervised features"
+  ],
+  "paper_id": "6391560490e50fcafd9c5692",
+  "title": "Teaching Matters: Investigating the Role of Supervision in Vision\n  Transformers",
+  "abstract": "  Vision Transformers (ViTs) have gained significant popularity in recent years and have proliferated into many applications. However, their behavior under different learning paradigms is not well explored. We compare ViTs trained through different methods of supervision, and show that they learn a diverse range of behaviors in terms of their attention, representations, and downstream performance. We also discover ViT behaviors that are consistent across supervision, including the emergence of Offset Local Attention Heads. These are self-attention heads that attend to a token adjacent to the current token with a fixed directional offset, a phenomenon that to the best of our knowledge has not been highlighted in any prior work. Our analysis shows that ViTs are highly flexible and learn to process local and global information in different orders depending on their training method. We find that contrastive self-supervised methods learn features that are competitive with explicitly supervised features, and they can even be superior for part-level tasks. We also find that the representations of reconstruction-based models show non-trivial similarity to contrastive self-supervised models. Project website (https://www.cs.umd.edu/~sakshams/vit_analysis) and code (https://www.github.com/mwalmer-umd/vit_analysis) are publicly available. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Infrared small-target detection"
+  ],
+  "datasets": [
+    "MFIRST",
+    "SIRST"
+  ],
+  "methods": [
+    "CourtNet (prosecution, defendant, jury networks); densely connected transformer structure; fine-grained attention module"
+  ],
+  "results": [
+    "Best F1-score on MFIRST (0.62) and SIRST (0.73)"
+  ],
+  "paper_id": "63350ce690e50fcafd350baf",
+  "title": "CourtNet for Infrared Small-Target Detection",
+  "abstract": "  Infrared small-target detection (ISTD) is an important computer vision task. ISTD aims at separating small targets from complex background clutter. The infrared radiation decays over distances, making the targets highly dim and prone to confusion with the background clutter, which makes the detector challenging to balance the precision and recall rate. To deal with this difficulty, this paper proposes a neural-network-based ISTD method called CourtNet, which has three sub-networks: the prosecution network is designed for improving the recall rate; the defendant network is devoted to increasing the precision rate; the jury network weights their results to adaptively balance the precision and recall rate. Furthermore, the prosecution network utilizes a densely connected transformer structure, which can prevent small targets from disappearing in the network forward propagation. In addition, a fine-grained attention module is adopted to accurately locate the small targets. Experimental results show that CourtNet achieves the best F1-score on the two ISTD datasets, MFIRST (0.62) and SIRST (0.73). "
+}

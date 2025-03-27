@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Genetic Programming",
+    "Problem Solving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Informed Down-Sampled Lexicase Selection"
+  ],
+  "results": [
+    "Significant outperformance over random down-sampling",
+    "Maintains more specialist individuals",
+    "Reduced per-evaluation costs"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5c18",
+  "title": "Informed Down-Sampled Lexicase Selection: Identifying productive\n  training cases for efficient problem solving",
+  "abstract": "Genetic Programming (GP) often uses large training sets and requires all\nindividuals to be evaluated on all training cases during selection. Random\ndown-sampled lexicase selection evaluates individuals on only a random subset\nof the training cases allowing for more individuals to be explored with the\nsame amount of program executions. However, creating a down-sample randomly\nmight exclude important cases from the current down-sample for a number of\ngenerations, while cases that measure the same behavior (synonymous cases) may\nbe overused despite their redundancy. In this work, we introduce Informed\nDown-Sampled Lexicase Selection. This method leverages population statistics to\nbuild down-samples that contain more distinct and therefore informative\ntraining cases. Through an empirical investigation across two different GP\nsystems (PushGP and Grammar-Guided GP), we find that informed down-sampling\nsignificantly outperforms random down-sampling on a set of contemporary program\nsynthesis benchmark problems. Through an analysis of the created down-samples,\nwe find that important training cases are included in the down-sample\nconsistently across independent evolutionary runs and systems. We hypothesize\nthat this improvement can be attributed to the ability of Informed Down-Sampled\nLexicase Selection to maintain more specialist individuals over the course of\nevolution, while also benefiting from reduced per-evaluation costs."
+}

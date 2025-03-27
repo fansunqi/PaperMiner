@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-agent Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Discriminative Experience Replay (DER)"
+  ],
+  "results": [
+    "Significant improvement in learning efficiency on StarCraft II micromanagement task and Multi-Agent Mujoco tasks"
+  ],
+  "paper_id": "63d340e890e50fcafd910c21",
+  "title": "Discriminative Experience Replay for Efficient Multi-agent Reinforcement\n  Learning",
+  "abstract": "  In cooperative multi-agent tasks, parameter sharing among agents is a common technique to decrease the number of trainable parameters and shorten training time. The existing value factorization methods adopt the joint transitions to train parameter-sharing individual value networks, $i.e.$, the transitions of all agents are replayed at the same frequency. Due to the discrepancy of learning difficulty among agents, the training level of agents in a team may be inconsistent with the same transition replay frequency leading to limited team performance. To this end, we propose Discriminative Experience Replay (DER), which transfers the minimal training sample from a multi-agent transition to a single-agent transition. It calculates the equivalent individual reward of each single-agent transition and then divides a multi-agent transition into multiple single-agent transitions. After division, DER selects significant single-agent transitions with large TD-error by referring to the single-agent experience replay methods. Our method can be adapted to existing value function decomposition methods. The experimental results show the optimization equivalence before and after division and that our method significantly improves the learning efficiency on the challenging StarCraft II micromanagement task and Multi-Agent Mujoco tasks. "
+}

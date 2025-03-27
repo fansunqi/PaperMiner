@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Feature Attribution Explainers"
+  ],
+  "datasets": [
+    "tabular",
+    "image"
+  ],
+  "methods": [
+    "geodesic-based kernel",
+    "Gaussian Process Explanation UnCertainty (GPEC) framework"
+  ],
+  "results": [
+    "improves understanding of explanations as compared to existing methods"
+  ],
+  "paper_id": "633e476890e50fcafde595a3",
+  "title": "Boundary-Aware Uncertainty for Feature Attribution Explainers",
+  "abstract": "  Post-hoc explanation methods have become a critical tool for understanding black-box classifiers in high-stakes applications, precipitating a need for reliable explanations. Nevertheless, recent works have shown that many existing methods can be inconsistent or lack robustness. In addition, high-performing classifiers are often highly nonlinear and can exhibit complex behavior around the decision boundary, leading to brittle or misleading local explanations. Therefore there is an impending need to quantify the uncertainty of such explanation methods in order to understand when explanations are trustworthy. In this work, we propose a novel geodesic-based kernel which captures the complexity of the target black-box decision boundary. We show theoretically that the proposed kernel similarity increases with the complexity of the decision boundary. In addition, we introduce the Gaussian Process Explanation UnCertainty (GPEC) framework, which generates a unified uncertainty estimate combining decision boundary-aware uncertainty with existing explanation uncertainty methods. The proposed framework is highly flexible; it can be used with any black-box classifier and feature attribution method. Empirical results on multiple tabular and image datasets show that the GPEC uncertainty estimate improves understanding of explanations as compared to existing methods. "
+}

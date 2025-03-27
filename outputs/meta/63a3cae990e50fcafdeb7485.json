@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/KU-CVLAB/MaskingDepth"
+  ],
+  "tasks": [
+    "Monocular Depth Estimation"
+  ],
+  "datasets": [
+    "KITTI",
+    "NYU-Depth-v2"
+  ],
+  "methods": [
+    "MaskingDepth",
+    "uncertainty estimation technique",
+    "robust consistency regularization"
+  ],
+  "results": [
+    "superior performance compared to other state-of-the-art semi-supervised methods"
+  ],
+  "paper_id": "63a3cae990e50fcafdeb7485",
+  "title": "MaskingDepth: Masked Consistency Regularization for Semi-supervised\n  Monocular Depth Estimation",
+  "abstract": "  We propose MaskingDepth, a novel semi-supervised learning framework for monocular depth estimation to mitigate the reliance on large ground-truth depth quantities. MaskingDepth is designed to enforce consistency between the strongly-augmented unlabeled data and the pseudo-labels derived from weakly-augmented unlabeled data, which enables learning depth without supervision. In this framework, a novel data augmentation is proposed to take the advantage of a naive masking strategy as an augmentation, while avoiding its scale ambiguity problem between depths from weakly- and strongly-augmented branches and risk of missing small-scale instances. To only retain high-confident depth predictions from the weakly-augmented branch as pseudo-labels, we also present an uncertainty estimation technique, which is used to define robust consistency regularization. Experiments on KITTI and NYU-Depth-v2 datasets demonstrate the effectiveness of each component, its robustness to the use of fewer depth-annotated images, and superior performance compared to other state-of-the-art semi-supervised methods for monocular depth estimation. Furthermore, we show our method can be easily extended to domain adaptation task. Our code is available at https://github.com/KU-CVLAB/MaskingDepth. "
+}

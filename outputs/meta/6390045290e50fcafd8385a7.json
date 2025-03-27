@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/Nightmare-n/GD-MAE"
+  ],
+  "tasks": [
+    "LiDAR point cloud pre-training"
+  ],
+  "datasets": [
+    "Waymo",
+    "KITTI",
+    "ONCE"
+  ],
+  "methods": [
+    "Generative Decoder for MAE (GD-MAE)"
+  ],
+  "results": [
+    "State-of-the-art results",
+    "Comparable accuracy with 20% labeled data on Waymo"
+  ],
+  "paper_id": "6390045290e50fcafd8385a7",
+  "title": "GD-MAE: Generative Decoder for MAE Pre-training on LiDAR Point Clouds",
+  "abstract": "  Despite the tremendous progress of Masked Autoencoders (MAE) in developing vision tasks such as image and video, exploring MAE in large-scale 3D point clouds remains challenging due to the inherent irregularity. In contrast to previous 3D MAE frameworks, which either design a complex decoder to infer masked information from maintained regions or adopt sophisticated masking strategies, we instead propose a much simpler paradigm. The core idea is to apply a \\textbf{G}enerative \\textbf{D}ecoder for MAE (GD-MAE) to automatically merges the surrounding context to restore the masked geometric knowledge in a hierarchical fusion manner. In doing so, our approach is free from introducing the heuristic design of decoders and enjoys the flexibility of exploring various masking strategies. The corresponding part costs less than \\textbf{12\\%} latency compared with conventional methods, while achieving better performance. We demonstrate the efficacy of the proposed method on several large-scale benchmarks: Waymo, KITTI, and ONCE. Consistent improvement on downstream detection tasks illustrates strong robustness and generalization capability. Not only our method reveals state-of-the-art results, but remarkably, we achieve comparable accuracy even with \\textbf{20\\%} of the labeled data on the Waymo dataset. Code will be released at https://github.com/Nightmare-n/GD-MAE. "
+}

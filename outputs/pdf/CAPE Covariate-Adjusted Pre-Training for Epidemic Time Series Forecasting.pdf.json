@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Epidemic Time Series Forecasting"
+  ],
+  "datasets": [
+    "Project Tycho",
+    "ILI USA",
+    "ILI Japan",
+    "COVID-19 USA",
+    "Measles England",
+    "Dengue across countries",
+    "RSV",
+    "Monkey Pox"
+  ],
+  "methods": [
+    "Covariate-Adjusted Pre-Training",
+    "Hierarchical Environment Contrasting",
+    "Random Masking",
+    "Environment Estimation",
+    "Expectation-Maximization Algorithm"
+  ],
+  "results": [
+    "Average improvement of 9.9% in full-shot and 14.3% in zero-shot settings"
+  ],
+  "title": "CAPE Covariate-Adjusted Pre-Training for Epidemic Time Series Forecasting.pdf",
+  "abstract": "Accurate forecasting of epidemic infection tra- jectories is crucial for safeguarding public health. However, limited data availability during emerg- ing outbreaks and the complex interaction be- tween environmental factors and disease dynam- ics present significant challenges for effective forecasting. In response, we introduce CAPE, a novel epidemic pre-training framework designed to harness extensive disease datasets from di- verse regions and integrate environmental fac- tors directly into the modeling process for more informed decision-making on downstream dis- eases. Based on a covariate adjustment frame- work, CAPE utilizes pre-training combined with hierarchical environment contrasting to identify universal patterns across diseases while estimat- ing latent environmental influences. We have compiled a diverse collection of epidemic time series datasets and validated the effectiveness of CAPE under various evaluation scenarios, includ- ing full-shot, few-shot, zero-shot, cross-location, and cross-disease settings, where it outperforms the leading baseline by an average of 9.9% in full- shot and 14.3% in zero-shot settings. The code will be released upon acceptance. 1. Introduction Infectious disease outbreaks consistently challenge public health systems, affecting both individual well-being and eco- nomic stability (Nicola et al., 2020). Effective management of these outbreaks hinges on accurate epidemic forecasting, which involves predicting future incidences like infection cases and hospitalizations (Liu et al., 2024b; Wan et al., 2024; Adhikari et al., 2019). Over the years, various models have been developed to address this need. These include mechanistic models like SIR (Cooper et al., 2020) and statis- 1Department of Computer Science, Emory University, At- lanta, United States 2Rollins School of Public Health, Emory University, Atlanta, United States. Correspondence to: Wei Jin <wei.jin@emory.edu>. tical models like ARIMA (Sahai et al., 2020; Kontopoulou et al., 2023), as well as advanced machine learning meth- ods such as LSTM and GRU (Shahid et al., 2020), which have proven instrumental in forecasting disease spread and supporting informed public health decision-making. Despite the advancements, current models are typically trained for specific diseases within particular geographic re- gions, limiting their ability to integrate insights from diverse sources spanning multiple pathogens and spatiotemporal contexts. This narrow focus can impede a comprehensive understanding of disease dynamics and the design of effec- tive outbreak responses, especially during novel or emergent outbreaks when observations are typically scarce. Given the extensive and diverse outbreak data collected over decades and across various geographies, pre-training on such a broad dataset could potentially enable the development of more generalizable models with greater applicability and adapt- ability across different pathogens and contexts. This raises an important question: Can we leverage lessons from di- verse historical disease time series to develop a generalized model that enhances epidemic forecasting accuracy? To address the above question, we draw inspiration from the success of large pre-trained transformer-based models (Zhao et al., 2023) and develop a pre-trained epidemic forecasting model using extensive disease time series data to distill gen- eralizable knowledge across pathogens and contexts. The pre-trained model can be subsequently fine-tuned for spe- cific diseases or geographical regions. While it is possible to adapt general time series foundation models (Liang et al., 2024; Ma et al., 2024) to epidemic forecasting, their pre- trained corpus mostly consists of non-epidemic data, which may not accurately capture epidemic dynamics and infec- tion trajectories, potentially degrading forecasting accuracy. Although an early effort has been made in epidemic pre- training (Kamarthi & Prakash, 2023), it overlooks critical external factors such as temperature, elevation, and public health policies and interventions \u2013 factors are known to influ- ence the dynamics of disease spread in space and time (Lau et al., 2020b) \u2013 potentially yielding suboptimal performance. For instance, dengue infection spread may exhibit distinct dynamics in different geographical regions due to variations in temperature and humidity (Chen & Hsieh, 2012). With- out accounting for these external factors, models risk failing to capture their complex interplay with pathogens and pro- 1 arXiv:2502.03393v1 [cs.LG] 5 Feb 2025"
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated Vectorized Averaging (FedVeca)",
+    "Adaptive Bi-directional Global Objective"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63350ce790e50fcafd350bf1",
+  "title": "FedVeca: Federated Vectorized Averaging on Non-IID Data with Adaptive\n  Bi-directional Global Objective",
+  "abstract": "  Federated Learning (FL) is a distributed machine learning framework to alleviate the data silos, where decentralized clients collaboratively learn a global model without sharing their private data. However, the clients' Non-Independent and Identically Distributed (Non-IID) data negatively affect the trained model, and clients with different numbers of local updates may cause significant gaps to the local gradients in each communication round. In this paper, we propose a Federated Vectorized Averaging (FedVeca) method to address the above problem on Non-IID data. Specifically, we set a novel objective for the global model which is related to the local gradients. The local gradient is defined as a bi-directional vector with step size and direction, where the step size is the number of local updates and the direction is divided into positive and negative according to our definition. In FedVeca, the direction is influenced by the step size, thus we average the bi-directional vectors to reduce the effect of different step sizes. Then, we theoretically analyze the relationship between the step sizes and the global objective, and obtain upper bounds on the step sizes per communication round. Based on the upper bounds, we design an algorithm for the server and the client to adaptively adjusts the step sizes that make the objective close to the optimum. Finally, we conduct experiments on different datasets, models and scenarios by building a prototype system, and the experimental results demonstrate the effectiveness and efficiency of the FedVeca method. "
+}

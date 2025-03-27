@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning Conditional Distributional Treatment Effects"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Constructing a special pseudo-outcome and regressing it on covariates using any regression learner"
+  ],
+  "results": [
+    "Robust and model-agnostic",
+    "Best projection of CDTE onto the regression model class",
+    "Rates of learning CDTEs depend on class complexity"
+  ],
+  "paper_id": "628c4ce65aee126c0ff59f83",
+  "title": "Robust and Agnostic Learning of Conditional Distributional Treatment\n  Effects",
+  "abstract": "  The conditional average treatment effect (CATE) is the best measure of individual causal effects given baseline covariates. However, the CATE only captures the (conditional) average, and can overlook risks and tail events, which are important to treatment choice. In aggregate analyses, this is usually addressed by measuring the distributional treatment effect (DTE), such as differences in quantiles or tail expectations between treatment groups. Hypothetically, one can similarly fit conditional quantile regressions in each treatment group and take their difference, but this would not be robust to misspecification or provide agnostic best-in-class predictions. We provide a new robust and model-agnostic methodology for learning the conditional DTE (CDTE) for a class of problems that includes conditional quantile treatment effects, conditional super-quantile treatment effects, and conditional treatment effects on coherent risk measures given by $f$-divergences. Our method is based on constructing a special pseudo-outcome and regressing it on covariates using any regression learner. Our method is model-agnostic in that it can provide the best projection of CDTE onto the regression model class. Our method is robust in that even if we learn these nuisances nonparametrically at very slow rates, we can still learn CDTEs at rates that depend on the class complexity and even conduct inferences on linear projections of CDTEs. We investigate the behavior of our proposal in simulations, as well as in a case study of 401(k) eligibility effects on wealth. "
+}

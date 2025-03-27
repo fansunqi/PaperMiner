@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generic Object Tracking (GOT)"
+  ],
+  "datasets": [
+    "TrackingNet"
+  ],
+  "methods": [
+    "Transformer-based GOT tracker"
+  ],
+  "results": [
+    "4x faster run-time for 10 concurrent objects",
+    "Success rate AUC of 84.4% on TrackingNet"
+  ],
+  "paper_id": "63a51c6190e50fcafde944f3",
+  "title": "Beyond SOT: Tracking Multiple Generic Objects at Once",
+  "abstract": "  Generic Object Tracking (GOT) is the problem of tracking target objects, specified by bounding boxes in the first frame of a video. While the task has received much attention in the last decades, researchers have almost exclusively focused on the single object setting. Multi-object GOT benefits from a wider applicability, rendering it more attractive in real-world applications. We attribute the lack of research interest into this problem to the absence of suitable benchmarks. In this work, we introduce a new large-scale GOT benchmark, LaGOT, containing multiple annotated target objects per sequence. Our benchmark allows users to tackle key remaining challenges in GOT, aiming to increase robustness and reduce computation through joint tracking of multiple objects simultaneously. In addition, we propose a transformer-based GOT tracker baseline capable of joint processing of multiple objects through shared computation. Our approach achieves a 4x faster run-time in case of 10 concurrent objects compared to tracking each object independently and outperforms existing single object trackers on our new benchmark. In addition, our approach achieves highly competitive results on single-object GOT datasets, setting a new state of the art on TrackingNet with a success rate AUC of 84.4%. Our benchmark, code, and trained models will be made publicly available. "
+}

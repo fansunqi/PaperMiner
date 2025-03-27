@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-supervised learning",
+    "Speech domain"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CNN adapters",
+    "Transformer"
+  ],
+  "results": [
+    "SID accuracy improved from 87.71 to 91.56",
+    "ER accuracy improved by 5%"
+  ],
+  "paper_id": "638d612990e50fcafd14b3b8",
+  "title": "CHAPTER: Exploiting Convolutional Neural Network Adapters for\n  Self-supervised Speech Models",
+  "abstract": "  Self-supervised learning (SSL) is a powerful technique for learning representations from unlabeled data. Transformer based models such as HuBERT, which consist a feature extractor and transformer layers, are leading the field in the speech domain. SSL models are fine-tuned on a wide range of downstream tasks, which involves re-training the majority of the model for each task. Previous studies have introduced applying adapters, which are small lightweight modules commonly used in Natural Language Processing (NLP) to adapt pre-trained models to new tasks. However, such efficient tuning techniques only provide adaptation at the transformer layer, but failed to perform adaptation at the feature extractor. In this paper, we propose CHAPTER, an efficient tuning method specifically designed for SSL speech model, by applying CNN adapters at the feature extractor. Using this method, we can only fine-tune fewer than 5% of parameters per task compared to fully fine-tuning and achieve better and more stable performance. We empirically found that adding CNN adapters to the feature extractor can help the adaptation on emotion and speaker tasks. For instance, the accuracy of SID is improved from 87.71 to 91.56, and the accuracy of ER is improved by 5%. "
+}

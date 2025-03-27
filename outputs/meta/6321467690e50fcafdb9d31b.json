@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Histopathologic Feature Representation Learning"
+  ],
+  "datasets": [
+    "Celiac disease",
+    "Renal Cell Carcinoma"
+  ],
+  "methods": [
+    "HistoPerm",
+    "BYOL",
+    "SimCLR",
+    "VICReg"
+  ],
+  "results": [
+    "Patch-level classification accuracy boost for BYOL and VICReg by 8% and SimCLR by 3% on Celiac disease",
+    "Patch-level classification accuracy boost for BYOL and VICReg by 2% and SimCLR by 1% on Renal Cell Carcinoma",
+    "Outperform fully-supervised baseline by 6%, 5%, and 2% for BYOL, SimCLR, and VICReg on Celiac disease",
+    "Lower classification accuracy gap up to 10% relative to fully-supervised baseline on Renal Cell Carcinoma"
+  ],
+  "paper_id": "6321467690e50fcafdb9d31b",
+  "title": "HistoPerm: A Permutation-Based View Generation Approach for Improving\n  Histopathologic Feature Representation Learning",
+  "abstract": "  Deep learning has been effective for histology image analysis in digital pathology. However, many current deep learning approaches require large, strongly- or weakly-labeled images and regions of interest, which can be time-consuming and resource-intensive to obtain. To address this challenge, we present HistoPerm, a view generation method for representation learning using joint embedding architectures that enhances representation learning for histology images. HistoPerm permutes augmented views of patches extracted from whole-slide histology images to improve classification performance. We evaluated the effectiveness of HistoPerm on two histology image datasets for Celiac disease and Renal Cell Carcinoma, using three widely used joint embedding architecture-based representation learning methods: BYOL, SimCLR, and VICReg. Our results show that HistoPerm consistently improves patch- and slide-level classification performance in terms of accuracy, F1-score, and AUC. Specifically, for patch-level classification accuracy on the Celiac disease dataset, HistoPerm boosts BYOL and VICReg by 8% and SimCLR by 3%. On the Renal Cell Carcinoma dataset, patch-level classification accuracy is increased by 2% for BYOL and VICReg, and by 1% for SimCLR. In addition, on the Celiac disease dataset, models with HistoPerm outperform the fully-supervised baseline model by 6%, 5%, and 2% for BYOL, SimCLR, and VICReg, respectively. For the Renal Cell Carcinoma dataset, HistoPerm lowers the classification accuracy gap for the models up to 10% relative to the fully-supervised baseline. These findings suggest that HistoPerm can be a valuable tool for improving representation learning of histopathology features when access to labeled data is limited and can lead to whole-slide classification results that are comparable to or superior to fully-supervised methods. "
+}

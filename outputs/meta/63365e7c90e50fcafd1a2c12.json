@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optic Disc and Cup Segmentation in Fundus Images",
+    "vCDR Estimation for Glaucoma Assessment"
+  ],
+  "datasets": [
+    "5 public databases"
+  ],
+  "methods": [
+    "Coarse-to-fine deep learning algorithms"
+  ],
+  "results": [
+    "Not necessarily outperform standard multi-class single-stage models",
+    "Coarse stage achieves better OD segmentation results",
+    "Single-stage and two-stage models rank first in REFUGE for OD/OC segmentation",
+    "vCDR estimates from models can obtain good glaucoma detection results"
+  ],
+  "paper_id": "63365e7c90e50fcafd1a2c12",
+  "title": "Assessing Coarse-to-Fine Deep Learning Models for Optic Disc and Cup\n  Segmentation in Fundus Images",
+  "abstract": "  Automated optic disc (OD) and optic cup (OC) segmentation in fundus images is relevant to efficiently measure the vertical cup-to-disc ratio (vCDR), a biomarker commonly used in ophthalmology to determine the degree of glaucomatous optic neuropathy. In general this is solved using coarse-to-fine deep learning algorithms in which a first stage approximates the OD and a second one uses a crop of this area to predict OD/OC masks. While this approach is widely applied in the literature, there are no studies analyzing its real contribution to the results. In this paper we present a comprehensive analysis of different coarse-to-fine designs for OD/OC segmentation using 5 public databases, both from a standard segmentation perspective and for estimating the vCDR for glaucoma assessment. Our analysis shows that these algorithms not necessarily outperfom standard multi-class single-stage models, especially when these are learned from sufficiently large and diverse training sets. Furthermore, we noticed that the coarse stage achieves better OD segmentation results than the fine one, and that providing OD supervision to the second stage is essential to ensure accurate OC masks. Moreover, both the single-stage and two-stage models trained on a multi-dataset setting showed results in pair or even better than other state-of-the-art alternatives, while ranking first in REFUGE for OD/OC segmentation. Finally, we evaluated the models for vCDR prediction in comparison with six ophthalmologists on a subset of AIROGS images, to understand them in the context of inter-observer variability. We noticed that vCDR estimates recovered both from single-stage and coarse-to-fine models can obtain good glaucoma detection results even when they are not highly correlated with manual measurements from experts. "
+}

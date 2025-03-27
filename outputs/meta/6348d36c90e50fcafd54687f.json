@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/epfl-dlab/understanding-decoding"
+  ],
+  "tasks": [
+    "Language generation pipeline decoding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Likelihood-Utility Alignment",
+    "MMS taxonomy",
+    "Value-guided methods",
+    "Prompting"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6348d36c90e50fcafd54687f",
+  "title": "Language Model Decoding as Likelihood-Utility Alignment",
+  "abstract": "  A critical component of a successful language generation pipeline is the decoding algorithm. However, the general principles that should guide the choice of a decoding algorithm remain unclear. Previous works only compare decoding algorithms in narrow scenarios, and their findings do not generalize across tasks. We argue that the misalignment between the model's likelihood and the task-specific notion of utility is the key factor to understanding the effectiveness of decoding algorithms. To structure the discussion, we introduce a taxonomy of misalignment mitigation strategies (MMSs), providing a unifying view of decoding as a tool for alignment. The MMS taxonomy groups decoding algorithms based on their implicit assumptions about likelihood--utility misalignment, yielding general statements about their applicability across tasks. Specifically, by analyzing the correlation between the likelihood and the utility of predictions across a diverse set of tasks, we provide empirical evidence supporting the proposed taxonomy and a set of principles to structure reasoning when choosing a decoding algorithm. Crucially, our analysis is the first to relate likelihood-based decoding algorithms with algorithms that rely on external information, such as value-guided methods and prompting, and covers the most diverse set of tasks to date. Code, data, and models are available at https://github.com/epfl-dlab/understanding-decoding. "
+}

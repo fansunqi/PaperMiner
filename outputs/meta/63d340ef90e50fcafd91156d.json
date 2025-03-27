@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text-based time-series prediction"
+  ],
+  "datasets": [
+    "Clinical notes",
+    "Social media posts"
+  ],
+  "methods": [
+    "Knowledge distillation",
+    "Learning using Privileged tIme-sEries Text (LuPIET)"
+  ],
+  "results": [
+    "Effective in enhancing text-based early predictions",
+    "More stable improvements over the baseline, standard training"
+  ],
+  "paper_id": "63d340ef90e50fcafd91156d",
+  "title": "Improving Text-based Early Prediction by Distillation from Privileged\n  Time-Series Text",
+  "abstract": "  Modeling text-based time-series to make prediction about a future event or outcome is an important task with a wide range of applications. The standard approach is to train and test the model using the same input window, but this approach neglects the data collected in longer input windows between the prediction time and the final outcome, which are often available during training. In this study, we propose to treat this neglected text as privileged information available during training to enhance early prediction modeling through knowledge distillation, presented as Learning using Privileged tIme-sEries Text (LuPIET). We evaluate the method on clinical and social media text, with four clinical prediction tasks based on clinical notes and two mental health prediction tasks based on social media posts. Our results show LuPIET is effective in enhancing text-based early predictions, though one may need to consider choosing the appropriate text representation and windows for privileged text to achieve optimal performance. Compared to two other methods using transfer learning and mixed training, LuPIET offers more stable improvements over the baseline, standard training. As far as we are concerned, this is the first study to examine learning using privileged information for time-series in the NLP context. "
+}

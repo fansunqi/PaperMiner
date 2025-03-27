@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hologram processing",
+    "Neural style translation for holograms"
+  ],
+  "datasets": [
+    "Simulated holograms",
+    "Real holograms"
+  ],
+  "methods": [
+    "Neural style translation",
+    "Convolutional neural network (VGG-19)"
+  ],
+  "results": [
+    "Stylized images more like real holograms",
+    "Comparable performance on simulated and real holograms"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9844",
+  "title": "Mimicking non-ideal instrument behavior for hologram processing using\n  neural style translation",
+  "abstract": "  Holographic cloud probes provide unprecedented information on cloud particle density, size and position. Each laser shot captures particles within a large volume, where images can be computationally refocused to determine particle size and shape. However, processing these holograms, either with standard methods or with machine learning (ML) models, requires considerable computational resources, time and occasional human intervention. ML models are trained on simulated holograms obtained from the physical model of the probe since real holograms have no absolute truth labels. Using another processing method to produce labels would be subject to errors that the ML model would subsequently inherit. Models perform well on real holograms only when image corruption is performed on the simulated images during training, thereby mimicking non-ideal conditions in the actual probe (Schreck et. al, 2022). Optimizing image corruption requires a cumbersome manual labeling effort.   Here we demonstrate the application of the neural style translation approach (Gatys et. al, 2016) to the simulated holograms. With a pre-trained convolutional neural network (VGG-19), the simulated holograms are ``stylized'' to resemble the real ones obtained from the probe, while at the same time preserving the simulated image ``content'' (e.g. the particle locations and sizes). Two image similarity metrics concur that the stylized images are more like real holograms than the synthetic ones. With an ML model trained to predict particle locations and shapes on the stylized data sets, we observed comparable performance on both simulated and real holograms, obviating the need to perform manual labeling. The described approach is not specific to hologram images and could be applied in other domains for capturing noise and imperfections in observational instruments to make simulated data more like real world observations. "
+}

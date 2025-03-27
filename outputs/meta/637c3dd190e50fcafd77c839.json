@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Large-Size Remote Sensing Image Semantic Segmentation"
+  ],
+  "datasets": [
+    "FBP",
+    "Inria Aerial"
+  ],
+  "methods": [
+    "EHSNet: long-range dependency module, efficient cross-correlation module, boundary-aware enhancement module"
+  ],
+  "results": [
+    "+5.65 mIoU on FBP",
+    "+4.28 mIoU on Inria Aerial"
+  ],
+  "paper_id": "637c3dd190e50fcafd77c839",
+  "title": "EHSNet: End-to-End Holistic Learning Network for Large-Size Remote\n  Sensing Image Semantic Segmentation",
+  "abstract": "  This paper presents EHSNet, a new end-to-end segmentation network designed for the holistic learning of large-size remote sensing image semantic segmentation (LRISS). Large-size remote sensing images (LRIs) can lead to GPU memory exhaustion due to their extremely large size, which has been handled in previous works through either global-local fusion or multi-stage refinement, both of which are limited in their ability to fully exploit the abundant information available in LRIs. Unlike them, EHSNet features three memory-friendly modules to utilize the characteristics of LRIs: a long-range dependency module to develop long-range spatial context, an efficient cross-correlation module to build holistic contextual relationships, and a boundary-aware enhancement module to preserve complete object boundaries. Moreover, EHSNet manages to process holistic LRISS with the aid of memory offloading. To the best of our knowledge, EHSNet is the first method capable of performing holistic LRISS. To make matters better, EHSNet outperforms previous state-of-the-art competitors by a significant margin of +5.65 mIoU on FBP and +4.28 mIoU on Inria Aerial, demonstrating its effectiveness. We hope that EHSNet will provide a new perspective for LRISS. The code and models will be made publicly available. "
+}

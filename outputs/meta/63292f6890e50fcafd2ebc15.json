@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Proof-of-Stake (PoS) superlight client design",
+    "Security of PoS systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Merkle tree of PoS epochs",
+    "Bisection game",
+    "Proofs of proof-of-stake (PoPoS)"
+  ],
+  "results": [
+    "9x improvement in time-to-completion",
+    "180x improvement in communication",
+    "30x improvement in energy usage"
+  ],
+  "paper_id": "63292f6890e50fcafd2ebc15",
+  "title": "Proofs of Proof-of-Stake with Sublinear Complexity",
+  "abstract": "  Popular Ethereum wallets (e.g., MetaMask) entrust centralized infrastructure providers (e.g., Infura) to run the consensus client logic on their behalf. As a result, these wallets are light-weight and high-performant, but come with security risks. A malicious provider can mislead the wallet, e.g., fake payments and balances, or censor transactions. On the other hand, light clients, which are not in popular use today, allow decentralization, but at concretely inefficient and asymptotically linear bootstrapping complexity. This poses a dilemma between decentralization and performance. In this paper, we design, implement, and evaluate a new proof-of-stake (PoS) superlight client with concretely efficient and asymptotically logarithmic bootstrapping complexity. Our proofs of proof-of-stake (PoPoS) take the form of a Merkle tree of PoS epochs. The verifier enrolls the provers in a bisection game, in which the honest prover is destined to win once an adversarial Merkle tree is challenged at sufficient depth. To evaluate our superlight protocol, we provide a client implementation that is compatible with mainnet PoS Ethereum: compared to the state-of-the-art light client construction of PoS Ethereum, our client improves time-to-completion by 9x, communication by 180x, and energy usage by 30x (when bootstrapping after 10 years of consensus execution). We prove that our construction is secure and show how to employ it for other PoS systems such as Cardano (with full adaptivity), Algorand, and Snow White. "
+}

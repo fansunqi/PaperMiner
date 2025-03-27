@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic gradient descent",
+    "Image classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proximal variant of SPS (ProxSPS)",
+    "AdamW"
+  ],
+  "results": [
+    "ProxSPS is easier to tune and more stable in the presence of regularization",
+    "Performs as well as AdamW with little to no tuning",
+    "Results in a network with smaller weight parameters",
+    "Extensive convergence analysis for ProxSPS"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8c4b",
+  "title": "A Stochastic Proximal Polyak Step Size",
+  "abstract": "  Recently, the stochastic Polyak step size (SPS) has emerged as a competitive adaptive step size scheme for stochastic gradient descent. Here we develop ProxSPS, a proximal variant of SPS that can handle regularization terms. Developing a proximal variant of SPS is particularly important, since SPS requires a lower bound of the objective function to work well. When the objective function is the sum of a loss and a regularizer, available estimates of a lower bound of the sum can be loose. In contrast, ProxSPS only requires a lower bound for the loss which is often readily available. As a consequence, we show that ProxSPS is easier to tune and more stable in the presence of regularization. Furthermore for image classification tasks, ProxSPS performs as well as AdamW with little to no tuning, and results in a network with smaller weight parameters. We also provide an extensive convergence analysis for ProxSPS that includes the non-smooth, smooth, weakly convex and strongly convex setting. "
+}

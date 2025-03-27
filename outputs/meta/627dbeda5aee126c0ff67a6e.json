@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Smart Contract Control Flow Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reactive Synthesis",
+    "Temporal Stream Logic (TSL)",
+    "ScSynt Tool"
+  ],
+  "results": [
+    "Synthesizes correct-by-design Solidity code",
+    "Efficient symbolic algorithms",
+    "Seconds for synthesis"
+  ],
+  "paper_id": "627dbeda5aee126c0ff67a6e",
+  "title": "Reactive Synthesis of Smart Contract Control Flows",
+  "abstract": "  Smart contracts are small but highly error-prone programs that implement agreements between multiple parties. We present a reactive synthesis approach for the automatic construction of smart contract state machines. Towards this end, we extend temporal stream logic (TSL) with universally quantified parameters over infinite domains. Parameterized TSL is a convenient logic to specify the temporal control flow, i.e., the correct order of transactions, as well as the data flow of the contract's fields. We develop a two-step approach that 1) synthesizes a finite representation of the - in general - infinite-state system and 2) splits the system into a compact hierarchical architecture that enables efficient handling of the state machine in Solidity. We implement the approach in our tool ScSynt, which leverages efficient symbolic algorithms based on the observation that smart contract specifications naturally fall into the safety fragment. As a result, ScSynt synthesizes correct-by-design Solidity code from various specifications within seconds. "
+}

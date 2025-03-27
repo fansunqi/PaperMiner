@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-agent Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Natural Policy Gradient (NPG) algorithms",
+    "Symmetric (Optimistic) Natural Policy Gradient",
+    "Function approximation"
+  ],
+  "results": [
+    "Global last-iterate parameter convergence guarantees",
+    "Stability issues in learning addressed",
+    "Results generalized to certain function approximation settings"
+  ],
+  "paper_id": "635753cc90e50fcafdddde5a",
+  "title": "Symmetric (Optimistic) Natural Policy Gradient for Multi-agent Learning\n  with Parameter Convergence",
+  "abstract": "  Multi-agent interactions are increasingly important in the context of reinforcement learning, and the theoretical foundations of policy gradient methods have attracted surging research interest. We investigate the global convergence of natural policy gradient (NPG) algorithms in multi-agent learning. We first show that vanilla NPG may not have parameter convergence, i.e., the convergence of the vector that parameterizes the policy, even when the costs are regularized (which enabled strong convergence guarantees in the policy space in the literature). This non-convergence of parameters leads to stability issues in learning, which becomes especially relevant in the function approximation setting, where we can only operate on low-dimensional parameters, instead of the high-dimensional policy. We then propose variants of the NPG algorithm, for several standard multi-agent learning scenarios: two-player zero-sum matrix and Markov games, and multi-player monotone games, with global last-iterate parameter convergence guarantees. We also generalize the results to certain function approximation settings. Note that in our algorithms, the agents take symmetric roles. Our results might also be of independent interest for solving nonconvex-nonconcave minimax optimization problems with certain structures. Simulations are also provided to corroborate our theoretical findings. "
+}

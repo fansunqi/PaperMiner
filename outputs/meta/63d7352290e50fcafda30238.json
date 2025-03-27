@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Extracting Social Determinants of Health from Clinical Narratives"
+  ],
+  "datasets": [
+    "2022 n2c2 NLP Challenge"
+  ],
+  "methods": [
+    "Machine learning classifiers",
+    "Large language model (LLM)",
+    "Hand-crafted rules"
+  ],
+  "results": [
+    "F1 scores: 0.884, 0.831, and 0.663",
+    "Ranked third, seventh, and eighth among the 15 participating teams"
+  ],
+  "paper_id": "63d7352290e50fcafda30238",
+  "title": "Task formulation for Extracting Social Determinants of Health from\n  Clinical Narratives",
+  "abstract": "  Objective: The 2022 n2c2 NLP Challenge posed identification of social determinants of health (SDOH) in clinical narratives. We present three systems that we developed for the Challenge and discuss the distinctive task formulation used in each of the three systems. Materials and Methods: The first system identifies target pieces of information independently using machine learning classifiers. The second system uses a large language model (LLM) to extract complete structured outputs per document. The third system extracts candidate phrases using machine learning and identifies target relations with hand-crafted rules. Results: The three systems achieved F1 scores of 0.884, 0.831, and 0.663 in the Subtask A of the Challenge, which are ranked third, seventh, and eighth among the 15 participating teams. The review of the extraction results from our systems reveals characteristics of each approach and those of the SODH extraction task. Discussion: Phrases and relations annotated in the task is unique and diverse, not conforming to the conventional event extraction task. These annotations are difficult to model with limited training data. The system that extracts information independently, ignoring the annotated relations, achieves the highest F1 score. Meanwhile, LLM with its versatile capability achieves the high F1 score, while respecting the annotated relations. The rule-based system tackling relation extraction obtains the low F1 score, while it is the most explainable approach. Conclusion: The F1 scores of the three systems vary in this challenge setting, but each approach has advantages and disadvantages in a practical application. The selection of the approach depends not only on the F1 score but also on the requirements in the application. "
+}

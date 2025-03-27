@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multiple Trajectory Prediction"
+  ],
+  "datasets": [
+    "Argoverse"
+  ],
+  "methods": [
+    "Two-stage Prediction Network",
+    "Lane Loss",
+    "Trajectory Prediction Attention (TPA)"
+  ],
+  "results": [
+    "Significant improvement in the diversity of predicted trajectories",
+    "No sacrifice in prediction accuracy"
+  ],
+  "paper_id": "62afe5495aee126c0f668b82",
+  "title": "Diverse Multiple Trajectory Prediction Using a Two-stage Prediction\n  Network Trained with Lane Loss",
+  "abstract": "  Prior arts in the field of motion predictions for autonomous driving tend to focus on finding a trajectory that is close to the ground truth trajectory. Such problem formulations and approaches, however, frequently lead to loss of diversity and biased trajectory predictions. Therefore, they are unsuitable for real-world autonomous driving where diverse and road-dependent multimodal trajectory predictions are critical for safety. To this end, this study proposes a novel loss function, \\textit{Lane Loss}, that ensures map-adaptive diversity and accommodates geometric constraints. A two-stage trajectory prediction architecture with a novel trajectory candidate proposal module, \\textit{Trajectory Prediction Attention (TPA)}, is trained with Lane Loss encourages multiple trajectories to be diversely distributed, covering feasible maneuvers in a map-aware manner. Furthermore, considering that the existing trajectory performance metrics are focusing on evaluating the accuracy based on the ground truth future trajectory, a quantitative evaluation metric is also suggested to evaluate the diversity of predicted multiple trajectories. The experiments performed on the Argoverse dataset show that the proposed method significantly improves the diversity of the predicted trajectories without sacrificing the prediction accuracy. "
+}

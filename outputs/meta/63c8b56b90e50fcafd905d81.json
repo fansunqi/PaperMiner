@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Building segmentation"
+  ],
+  "datasets": [
+    "MapAI-competition aerial image dataset"
+  ],
+  "methods": [
+    "ConvNeXt",
+    "SegFormer"
+  ],
+  "results": [
+    "IOU: 0.7902",
+    "Boundary IOU: 0.6185",
+    "Post-processing improved Boundary IOU to 0.6189"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905d81",
+  "title": "BuildSeg: A General Framework for the Segmentation of Buildings",
+  "abstract": "  Building segmentation from aerial images and 3D laser scanning (LiDAR) is a challenging task due to the diversity of backgrounds, building textures, and image quality. While current research using different types of convolutional and transformer networks has considerably improved the performance on this task, even more accurate segmentation methods for buildings are desirable for applications such as automatic mapping. In this study, we propose a general framework termed \\emph{BuildSeg} employing a generic approach that can be quickly applied to segment buildings. Different data sources were combined to increase generalization performance. The approach yields good results for different data sources as shown by experiments on high-resolution multi-spectral and LiDAR imagery of cities in Norway, Denmark and France. We applied ConvNeXt and SegFormer based models on the high resolution aerial image dataset from the MapAI-competition. The methods achieved an IOU of 0.7902 and a boundary IOU of 0.6185. We used post-processing to account for the rectangular shape of the objects. This increased the boundary IOU from 0.6185 to 0.6189. "
+}

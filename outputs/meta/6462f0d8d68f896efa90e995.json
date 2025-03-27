@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Temporal grounding"
+  ],
+  "datasets": [
+    "Charades-CG",
+    "ActivityNet-CG"
+  ],
+  "methods": [
+    "Variational cross-graph reasoning",
+    "Adaptive structured semantics learning"
+  ],
+  "results": [
+    "Superior compositional generalizability"
+  ],
+  "paper_id": "6462f0d8d68f896efa90e995",
+  "title": "Variational Cross-Graph Reasoning and Adaptive Structured Semantics\n  Learning for Compositional Temporal Grounding",
+  "abstract": "  Temporal grounding is the task of locating a specific segment from an untrimmed video according to a query sentence. This task has achieved significant momentum in the computer vision community as it enables activity grounding beyond pre-defined activity classes by utilizing the semantic diversity of natural language descriptions. The semantic diversity is rooted in the principle of compositionality in linguistics, where novel semantics can be systematically described by combining known words in novel ways (compositional generalization). However, existing temporal grounding datasets are not carefully designed to evaluate the compositional generalizability. To systematically benchmark the compositional generalizability of temporal grounding models, we introduce a new Compositional Temporal Grounding task and construct two new dataset splits, i.e., Charades-CG and ActivityNet-CG. When evaluating the state-of-the-art methods on our new dataset splits, we empirically find that they fail to generalize to queries with novel combinations of seen words. We argue that the inherent structured semantics inside the videos and language is the crucial factor to achieve compositional generalization. Based on this insight, we propose a variational cross-graph reasoning framework that explicitly decomposes video and language into hierarchical semantic graphs, respectively, and learns fine-grained semantic correspondence between the two graphs. Furthermore, we introduce a novel adaptive structured semantics learning approach to derive the structure-informed and domain-generalizable graph representations, which facilitate the fine-grained semantic correspondence reasoning between the two graphs. Extensive experiments validate the superior compositional generalizability of our approach. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/scikit-hep/gudhi"
+  ],
+  "tasks": [
+    "Persistent homology computation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Algorithm for linear time persistence computation"
+  ],
+  "results": [
+    "Linear time complexity for persistence computation"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8966",
+  "title": "Fast persistent homology computation for functions on $\\mathbb{R}$",
+  "abstract": "  0-dimensional persistent homology is known, from a computational point of view, as the easy case. Indeed, given a list of $n$ edges in non-decreasing order of filtration value, one only needs a union-find data structure to keep track of the connected components and we get the persistence diagram in time $O(n\\alpha(n))$. The running time is thus usually dominated by sorting the edges in $\\Theta(n\\log(n))$. A little-known fact is that, in the particularly simple case of studying the sublevel sets of a piecewise-linear function on $\\mathbb{R}$ or $\\mathbb{S}^1$, persistence can actually be computed in linear time. This note presents a simple algorithm that achieves this complexity. An implementation will soon be available in Gudhi. "
+}

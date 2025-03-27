@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Attack Recovery in Database Systems and Web Frameworks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ultraverse: a retroactive operation framework for database systems and web applications"
+  ],
+  "results": [
+    "10.5x~693.3x speedup on retroactive database update compared to a regular DBMS's flashback and redo"
+  ],
+  "paper_id": "636dbe6890e50fcafd79a8ca",
+  "title": "Ultraverse: Efficient Retroactive Operation for Attack Recovery in\n  Database Systems and Web Frameworks",
+  "abstract": "  Retroactive operation is an operation that changes a past operation in a series of committed ones (e.g., cancelling the past insertion of '5' into a queue committed at t=3). Retroactive operation has many important security applications such as attack recovery or private data removal (e.g., for GDPR compliance). While prior efforts designed retroactive algorithms for low-level data structures (e.g., queue, set), none explored retroactive operation for higher levels, such as database systems or web applications. This is challenging, because: (i) SQL semantics of database systems is complex; (ii) data records can flow through various web application components, such as HTML's DOM trees, server-side user request handlers, and client-side JavaScript code. We propose Ultraverse, the first retroactive operation framework comprised of two components: a database system and a web application framework. The former enables users to retroactively change committed SQL queries; the latter does the same for web applications with preserving correctness of application semantics. Our experimental results show that Ultraverse achieves 10.5x~693.3x speedup on retroactive database update compared to a regular DBMS's flashback and redo. "
+}

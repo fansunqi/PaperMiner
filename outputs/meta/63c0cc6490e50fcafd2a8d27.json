@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/author/annotation-disagreement"
+  ],
+  "tasks": [
+    "NLP annotation",
+    "Annotation disagreement prediction"
+  ],
+  "datasets": [
+    "Subjective datasets"
+  ],
+  "methods": [
+    "Fine-tuning language models",
+    "Disagreement prediction mechanism"
+  ],
+  "results": [
+    "Predicting disagreements based on annotators' demographic information"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8d27",
+  "title": "Everyone's Voice Matters: Quantifying Annotation Disagreement Using\n  Demographic Information",
+  "abstract": "  In NLP annotation, it is common to have multiple annotators label the text and then obtain the ground truth labels based on the agreement of major annotators. However, annotators are individuals with different backgrounds, and minors' opinions should not be simply ignored. As annotation tasks become subjective and topics are controversial in modern NLP tasks, we need NLP systems that can represent people's diverse voices on subjective matters and predict the level of diversity. This paper examines whether the text of the task and annotators' demographic background information can be used to estimate the level of disagreement among annotators. Particularly, we extract disagreement labels from the annotators' voting histories in the five subjective datasets, and then fine-tune language models to predict annotators' disagreement. Our results show that knowing annotators' demographic information, like gender, ethnicity, and education level, helps predict disagreements. In order to distinguish the disagreement from the inherent controversy from text content and the disagreement in the annotators' different perspectives, we simulate everyone's voices with different combinations of annotators' artificial demographics and examine its variance of the finetuned disagreement predictor. Our paper aims to improve the annotation process for more efficient and inclusive NLP systems through a novel disagreement prediction mechanism. Our code and dataset are publicly available. "
+}

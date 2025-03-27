@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-Supervised Depth Estimation in Dynamic Scenes"
+  ],
+  "datasets": [
+    "KITTI",
+    "Cityscapes"
+  ],
+  "methods": [
+    "Dyna-Depthformer",
+    "Transformer",
+    "self- and cross-attention layers",
+    "deformable attention",
+    "warping-based Motion Network",
+    "iterative optimization strategy",
+    "sparsity-regularized loss",
+    "minimum reprojection loss"
+  ],
+  "results": [
+    "outperforms state-of-the-art algorithms"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b3f",
+  "title": "Dyna-DepthFormer: Multi-frame Transformer for Self-Supervised Depth\n  Estimation in Dynamic Scenes",
+  "abstract": "  Self-supervised methods have showed promising results on depth estimation task. However, previous methods estimate the target depth map and camera ego-motion simultaneously, underusing multi-frame correlation information and ignoring the motion of dynamic objects. In this paper, we propose a novel Dyna-Depthformer framework, which predicts scene depth and 3D motion field jointly and aggregates multi-frame information with transformer. Our contributions are two-fold. First, we leverage multi-view correlation through a series of self- and cross-attention layers in order to obtain enhanced depth feature representation. Specifically, we use the perspective transformation to acquire the initial reference point, and use deformable attention to reduce the computational cost. Second, we propose a warping-based Motion Network to estimate the motion field of dynamic objects without using semantic prior. To improve the motion field predictions, we propose an iterative optimization strategy, together with a sparsity-regularized loss. The entire pipeline achieves end-to-end self-supervised training by constructing a minimum reprojection loss. Extensive experiments on the KITTI and Cityscapes benchmarks demonstrate the effectiveness of our method and show that our method outperforms state-of-the-art algorithms. "
+}

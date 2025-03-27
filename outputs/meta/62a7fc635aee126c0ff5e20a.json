@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/amzn/confident-sinkhorn-allocation"
+  ],
+  "tasks": [
+    "Semi-supervised learning",
+    "Pseudo-labeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Confident Sinkhorn Allocation",
+    "Optimal transport",
+    "Integral Probability Metrics",
+    "PAC-Bayes bound"
+  ],
+  "results": [
+    "CSA outperforms the current state-of-the-art"
+  ],
+  "paper_id": "62a7fc635aee126c0ff5e20a",
+  "title": "Confident Sinkhorn Allocation for Pseudo-Labeling",
+  "abstract": "  Semi-supervised learning is a critical tool in reducing machine learning's dependence on labeled data. It has been successfully applied to structured data, such as images and natural language, by exploiting the inherent spatial and semantic structure therein with retrained models or data augmentation. These methods are not applicable, however, when the data does not have the appropriate structure, or invariances. Due to their simplicity, pseudo-labeling (PL) methods can be widely used without any domain assumptions. These methods make greedy pseudo-label assignments, however, meaning that a single misclassification can have cascading consequences. This paper addresses this problem by proposing a Confident Sinkhorn Allocation (CSA), which identifies the best pseudo-label allocation via optimal transport. In doing so it considers the uncertainty in the predicted labels for the whole unlabelled set, in contrast to greedy allocation approaches. CSA outperforms the current state-of-the-art in this practically important area of semi-supervised learning. Additionally, we propose to use the Integral Probability Metrics to extend and improve the existing PAC-Bayes bound which relies on the Kullback-Leibler (KL) divergence, for ensemble models. Our code is publicly available at https://github.com/amzn/confident-sinkhorn-allocation. "
+}

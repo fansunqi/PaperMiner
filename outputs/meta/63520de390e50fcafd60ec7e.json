@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "IRT factorization",
+    "calibration",
+    "amortized inference",
+    "Work Disability Functional Assessment Battery (WD-FAB) assessment"
+  ],
+  "datasets": [
+    "WD-FAB item responses"
+  ],
+  "methods": [
+    "Bayesian hierarchical model",
+    "sparsity-based shrinkage",
+    "probabilistic autoencoders",
+    "stochastic variational Bayesian expectation maximization (VBEM)"
+  ],
+  "results": [
+    "Item discriminations compared to traditional posthoc method"
+  ],
+  "paper_id": "63520de390e50fcafd60ec7e",
+  "title": "Autoencoded sparse Bayesian in-IRT factorization, calibration, and\n  amortized inference for the Work Disability Functional Assessment Battery",
+  "abstract": "  The Work Disability Functional Assessment Battery (WD-FAB) is a multidimensional item response theory (IRT) instrument designed for assessing work-related mental and physical function based on responses to an item bank. In prior iterations it was developed using traditional means -- linear factorization and null hypothesis statistical testing for item partitioning/selection, and finally, posthoc calibration of disjoint unidimensional IRT models. As a result, the WD-FAB, like many other IRT instruments, is a posthoc model. Its item partitioning, based on exploratory factor analysis, is blind to the final nonlinear IRT model and is not performed in a manner consistent with goodness of fit to the final model. In this manuscript, we develop a Bayesian hierarchical model for self-consistently performing the following simultaneous tasks: scale factorization, item selection, parameter identification, and response scoring. This method uses sparsity-based shrinkage to obviate the linear factorization and null hypothesis statistical tests that are usually required for developing multidimensional IRT models, so that item partitioning is consistent with the ultimate nonlinear factor model. We also analogize our multidimensional IRT model to probabilistic autoencoders, specifying an encoder function that amortizes the inference of ability parameters from item responses. The encoder function is equivalent to the \"VBE\" step in a stochastic variational Bayesian expectation maximization (VBEM) procedure that we use for approxiamte Bayesian inference on the entire model. We use the method on a sample of WD-FAB item responses and compare the resulting item discriminations to those obtained using the traditional posthoc method. "
+}

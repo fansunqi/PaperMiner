@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Speaker Expressive Speech Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Text2SE module",
+    "SE2Wave module",
+    "Neural bottleneck (BN) features",
+    "Multi-label binary vector (MBV)",
+    "Mutual information (MI) minimization",
+    "Semi-supervised training strategy",
+    "Reference-candidate pool",
+    "Attention-based reference selection approach"
+  ],
+  "results": [
+    "Good design of the model"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c3e2",
+  "title": "Multi-Speaker Expressive Speech Synthesis via Multiple Factors\n  Decoupling",
+  "abstract": "  This paper aims to synthesize the target speaker's speech with desired speaking style and emotion by transferring the style and emotion from reference speech recorded by other speakers. We address this challenging problem with a two-stage framework composed of a text-to-style-and-emotion (Text2SE) module and a style-and-emotion-to-wave (SE2Wave) module, bridging by neural bottleneck (BN) features. To further solve the multi-factor (speaker timbre, speaking style and emotion) decoupling problem, we adopt the multi-label binary vector (MBV) and mutual information (MI) minimization to respectively discretize the extracted embeddings and disentangle these highly entangled factors in both Text2SE and SE2Wave modules. Moreover, we introduce a semi-supervised training strategy to leverage data from multiple speakers, including emotion-labeled data, style-labeled data, and unlabeled data. To better transfer the fine-grained expression from references to the target speaker in non-parallel transfer, we introduce a reference-candidate pool and propose an attention-based reference selection approach. Extensive experiments demonstrate the good design of our model. "
+}

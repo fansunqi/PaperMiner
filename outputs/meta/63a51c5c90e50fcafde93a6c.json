@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Query Answering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Guarded TGDs",
+    "Linearization",
+    "Side Signature",
+    "Chase"
+  ],
+  "results": [
+    "2EXPTIME complexity",
+    "EXPTIME complexity with arbitrary-arity guard relations",
+    "NP complexity with fixed side signature"
+  ],
+  "paper_id": "63a51c5c90e50fcafde93a6c",
+  "title": "Tighter bounds for query answering with Guarded TGDs",
+  "abstract": "  We consider the complexity of the open-world query answering problem, where we wish to determine certain answers to conjunctive queries over incomplete datasets specified by an initial set of facts and a set of Guarded TGDs. This problem has been well-studied in the literature and is decidable but with a high complexity, namely, it is 2EXPTIME complete. Further, the complexity shrinks by one exponential when the arity is fixed. We show in this paper how we can obtain better complexity bounds when considering separately the arity of the guard atom and that of the additional atoms, called the side signature. Our results make use of the technique of linearizing Guarded TGDs, introduced in a paper of Gottlog, Manna, and Pieris. Specifically, we present a variant of the linearization process, making use of a restricted version of the chase that we recently introduced. Our results imply that open-world query answering can be solved in EXPTIME with arbitrary-arity guard relations if we simply bound the arity of the side signature; and that the complexity drops to NP if we fix the side signature and bound the head arity and width of the dependencies. "
+}

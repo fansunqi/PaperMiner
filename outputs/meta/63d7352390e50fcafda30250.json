@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Ice-sheet modeling",
+    "Sea level rise projection"
+  ],
+  "datasets": [
+    "Synthetic ice sheet model",
+    "Humboldt glacier in Greenland"
+  ],
+  "methods": [
+    "Hybrid Deep Operator Network/Finite Element Method"
+  ],
+  "results": [
+    "Hybrid model is an order of magnitude faster than traditional finite element model",
+    "Can handle high-dimensional parameter spaces",
+    "Accurate statistics of glacier mass loss"
+  ],
+  "paper_id": "63d7352390e50fcafda30250",
+  "title": "A Hybrid Deep Neural Operator/Finite Element Method for Ice-Sheet\n  Modeling",
+  "abstract": "  One of the most challenging and consequential problems in climate modeling is to provide probabilistic projections of sea level rise. A large part of the uncertainty of sea level projections is due to uncertainty in ice sheet dynamics. At the moment, accurate quantification of the uncertainty is hindered by the cost of ice sheet computational models. In this work, we develop a hybrid approach to approximate existing ice sheet computational models at a fraction of their cost. Our approach consists of replacing the finite element model for the momentum equations for the ice velocity, the most expensive part of an ice sheet model, with a Deep Operator Network, while retaining a classic finite element discretization for the evolution of the ice thickness. We show that the resulting hybrid model is very accurate and it is an order of magnitude faster than the traditional finite element model. Further, a distinctive feature of the proposed model compared to other neural network approaches, is that it can handle high-dimensional parameter spaces (parameter fields) such as the basal friction at the bed of the glacier, and can therefore be used for generating samples for uncertainty quantification. We study the impact of hyper-parameters, number of unknowns and correlation length of the parameter distribution on the training and accuracy of the Deep Operator Network on a synthetic ice sheet model. We then target the evolution of the Humboldt glacier in Greenland and show that our hybrid model can provide accurate statistics of the glacier mass loss and can be effectively used to accelerate the quantification of uncertainty. "
+}

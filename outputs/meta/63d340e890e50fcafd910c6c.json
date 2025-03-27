@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/FactoDeepLearning/FasterDAN"
+  ],
+  "tasks": [
+    "Handwritten Document Recognition"
+  ],
+  "datasets": [
+    "RIMES 2009",
+    "READ 2016",
+    "MAURDOR"
+  ],
+  "methods": [
+    "Faster DAN",
+    "Multi-target Queries",
+    "Document Positional Encoding"
+  ],
+  "results": [
+    "At least 4 times faster than standard DAN"
+  ],
+  "paper_id": "63d340e890e50fcafd910c6c",
+  "title": "Faster DAN: Multi-target Queries with Document Positional Encoding for\n  End-to-end Handwritten Document Recognition",
+  "abstract": "  Recent advances in handwritten text recognition enabled to recognize whole documents in an end-to-end way: the Document Attention Network (DAN) recognizes the characters one after the other through an attention-based prediction process until reaching the end of the document. However, this autoregressive process leads to inference that cannot benefit from any parallelization optimization. In this paper, we propose Faster DAN, a two-step strategy to speed up the recognition process at prediction time: the model predicts the first character of each text line in the document, and then completes all the text lines in parallel through multi-target queries and a specific document positional encoding scheme. Faster DAN reaches competitive results compared to standard DAN, while being at least 4 times faster on whole single-page and double-page images of the RIMES 2009, READ 2016 and MAURDOR datasets. Source code and trained model weights are available at https://github.com/FactoDeepLearning/FasterDAN. "
+}

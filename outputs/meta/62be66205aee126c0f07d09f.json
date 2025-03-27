@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Temporal graph analysis",
+    "Menger's Theorem for temporal paths"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proofs",
+    "Hardness results",
+    "XP algorithm"
+  ],
+  "results": [
+    "k^* = h^* if and only if k^* = 1",
+    "Polynomial-time solvable for k \u2264 2",
+    "NP-complete for k \u2265 3",
+    "Menger's version does not hold in the strictly increasing model"
+  ],
+  "paper_id": "62be66205aee126c0f07d09f",
+  "title": "Menger's Theorem for Temporal Paths (Not Walks)",
+  "abstract": "  A (directed) temporal graph is a (directed) graph whose edges are available only at specific times during its lifetime $\\tau$. Walks are sequences of adjacent edges whose appearing times are either strictly increasing or non-strictly increasingly (i.e., non-decreasing) depending on the scenario. Paths are temporal walks where each vertex is not traversed twice. A temporal vertex is a pair $(u,i)$ where $u$ is a vertex and $i\\in[\\tau]$ a timestep. In this paper we focus on the questions: (i) are there at least $k$ paths from a single source $s$ to a single target $t$, no two of which internally intersect on a temporal vertex? (ii) are there at most $h$ temporal vertices whose removal disconnects $s$ from $t$? Let $k^*$ be the maximum value $k$ for which the answer to (i) is YES, and let $h^*$ be the minimum value $h$ for which the answer to (ii) is YES. In static graphs, $k^*$ and $h^*$ are equal by Menger's Theorem and this is a crucial property to solve efficiently both (i) and (ii). In temporal graphs such equality has been investigated only focusing on disjoint walks rather than disjoint paths. We prove that, when dealing with non-strictly increasing temporal paths, $k^*$ is equal to $h^*$ if and only if $k^*$ is 1. We show that this implies a dichotomy for (i), which turns out to be polynomial-time solvable when $k\\le 2$, and NP-complete for $k\\ge 3$. In contrast, we also prove that Menger's version does not hold in the strictly increasing model and give hardness results also for this case. Finally, we give hardness results and an XP algorithm for (ii). "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Proof-of-Stake Ethereum security"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Goldfish protocol",
+    "message driven (LMD) greedy heaviest observed sub-tree (GHOST) consensus protocol",
+    "subsampling validators",
+    "finality gadgets",
+    "accountability gadgets"
+  ],
+  "results": [
+    "Goldfish is secure in synchronous networks under dynamic participation",
+    "reorg resilient",
+    "supports fast confirmation",
+    "improves communication efficiency",
+    "composable with finality gadgets and accountability gadgets"
+  ],
+  "paper_id": "63195d8990e50fcafde7e7f5",
+  "title": "No More Attacks on Proof-of-Stake Ethereum?",
+  "abstract": "  The latest message driven (LMD) greedy heaviest observed sub-tree (GHOST) consensus protocol is a critical component of proof-of-stake (PoS) Ethereum. In its current form, the protocol is brittle, and intricate to reason about, as evidenced by recent attacks and patching attempts. We report on Goldfish, a considerably simplified variant of the current protocol, and a candidate under consideration for a future Ethereum protocol upgrade. We prove that Goldfish is secure in synchronous networks under dynamic participation, assuming a majority of the nodes (called validators) follows the protocol. Goldfish improves over Nakamoto's longest-chain consensus in that it is reorg resilient (i.e., honestly produced blocks are guaranteed inclusion in the ledger) and supports fast confirmation (i.e., the expected confirmation latency is independent of the desired security level). We show that subsampling validators can improve the communication efficiency of Goldfish, and that Goldfish is composable with finality gadgets and accountability gadgets, which improves state-of-the-art ebb-and-flow protocols. Akin to traditional propose-and-vote-style consensus protocols, Goldfish is organized in slots, at the beginning of which a leader proposes a block containing new transactions, and subsequently members of a committee take a vote towards block confirmation. But instead of using quorums, Goldfish is powered by a new mechanism to carefully synchronize the inclusion and exclusion of blocks and votes in honest validators' views. "
+}

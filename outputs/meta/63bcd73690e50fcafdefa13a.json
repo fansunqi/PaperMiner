@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Inverse Scattering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep generative models",
+    "Low-dimensional manifold"
+  ],
+  "results": [
+    "Significantly outperforms traditional iterative methods",
+    "Comparable reconstruction quality to state-of-the-art deep learning methods like U-Net"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa13a",
+  "title": "Deep Injective Prior for Inverse Scattering",
+  "abstract": "  In electromagnetic inverse scattering, we aim to reconstruct object permittivity from scattered waves. Deep learning is a promising alternative to traditional iterative solvers, but it has been used mostly in a supervised framework to regress the permittivity patterns from scattered fields or back-projections. While such methods are fast at test-time and achieve good results for specific data distributions, they are sensitive to the distribution drift of the scattered fields, common in practice. If the distribution of the scattered fields changes due to changes in frequency, the number of transmitters and receivers, or any other real-world factor, an end-to-end neural network must be re-trained or fine-tuned on a new dataset. In this paper, we propose a new data-driven framework for inverse scattering based on deep generative models. We model the target permittivities by a low-dimensional manifold which acts as a regularizer and learned from data. Unlike supervised methods which require both scattered fields and target signals, we only need the target permittivities for training; it can then be used with any experimental setup. We show that the proposed framework significantly outperforms the traditional iterative methods especially for strong scatterers while having comparable reconstruction quality to state-of-the-art deep learning methods like U-Net. "
+}

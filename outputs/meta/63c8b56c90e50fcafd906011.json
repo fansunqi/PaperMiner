@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computational drug repositioning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Balanced matrix factorization with embedded behavior information (BMF)",
+    "Balanced contrastive loss (BCL)"
+  ],
+  "results": [
+    "Superiority of BMF model demonstrated by experimental comparison with seven benchmark models"
+  ],
+  "paper_id": "63c8b56c90e50fcafd906011",
+  "title": "The Balanced Matrix Factorization for Computational Drug Repositioning",
+  "abstract": "  Computational drug repositioning aims to discover new uses of drugs that have been marketed. However, the existing models suffer from the following limitations. Firstly, in the real world, only a minority of diseases have definite treatment drugs. This leads to an imbalance in the proportion of validated drug-disease associations (positive samples) and unvalidated drug-disease associations (negative samples), which disrupts the optimization gradient of the model. Secondly, the existing drug representation does not take into account the behavioral information of the drug, resulting in its inability to comprehensively model the latent feature of the drug. In this work, we propose a balanced matrix factorization with embedded behavior information (BMF) for computational drug repositioning to address the above-mentioned shortcomings. Specifically, in the BMF model, we propose a novel balanced contrastive loss (BCL) to optimize the category imbalance problem in computational drug repositioning. The BCL optimizes the parameters in the model by maximizing the similarity between the target drug and positive disease, and minimizing the similarity between the target drug and negative disease below the margin. In addition, we designed a method to enhance drug representation using its behavioral information. The comprehensive experiments on three computational drug repositioning datasets validate the effectiveness of the above improvement points. And the superiority of BMF model is demonstrated by experimental comparison with seven benchmark models. "
+}

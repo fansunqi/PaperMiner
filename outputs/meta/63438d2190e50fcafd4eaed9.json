@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/libint/libint"
+  ],
+  "tasks": [
+    "Gaussian integral evaluation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Obara-Saika-based recursive evaluation",
+    "multi-quantal recurrences",
+    "register memory",
+    "optimized kernels"
+  ],
+  "results": [
+    "Performance improvement on modern accelerated architectures",
+    "Significant memory savings",
+    "Direct compile-time generation of optimized kernels"
+  ],
+  "paper_id": "63438d2190e50fcafd4eaed9",
+  "title": "Memory-Efficient Recursive Evaluation of 3-Center Gaussian Integrals",
+  "abstract": "  To improve the efficiency of Gaussian integral evaluation on modern accelerated architectures FLOP-efficient Obara-Saika-based recursive evaluation schemes are optimized for the memory footprint. For the 3-center 2-particle integrals that are key for the evaluation of Coulomb and other 2-particle interactions in the density-fitting approximation the use of multi-quantal recurrences (in which multiple quanta are created or transferred at once) is shown to produce significant memory savings. Other innovation include leveraging register memory for reduced memory footprint and direct compile-time generation of optimized kernels (instead of custom code generation) with compile-time features of modern C++/CUDA. Performance of conventional and CUDA-based implementations of the proposed schemes is illustrated for both the individual batches of integrals involving up to Gaussians with low and high angular momenta (up to $L=6$) and contraction degrees, as well as for the density-fitting-based evaluation of the Coulomb potential. The computer implementation is available in the open-source LibintX library. "
+}

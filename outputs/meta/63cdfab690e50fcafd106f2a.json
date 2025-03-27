@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://genforce.github.io/SpatialGAN/"
+  ],
+  "tasks": [
+    "Image generation",
+    "GANs steerability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Self-supervised learning",
+    "Gaussian heatmaps",
+    "DragGAN"
+  ],
+  "results": [
+    "Improved spatial steerability",
+    "Enhanced synthesis quality"
+  ],
+  "paper_id": "63cdfab690e50fcafd106f2a",
+  "title": "Spatial Steerability of GANs via Self-Supervision from Discriminator",
+  "abstract": "Generative models make huge progress to the photorealistic image synthesis in\nrecent years. To enable human to steer the image generation process and\ncustomize the output, many works explore the interpretable dimensions of the\nlatent space in GANs. Existing methods edit the attributes of the output image\nsuch as orientation or color scheme by varying the latent code along certain\ndirections. However, these methods usually require additional human annotations\nfor each pretrained model, and they mostly focus on editing global attributes.\nIn this work, we propose a self-supervised approach to improve the spatial\nsteerability of GANs without searching for steerable directions in the latent\nspace or requiring extra annotations. Specifically, we design randomly sampled\nGaussian heatmaps to be encoded into the intermediate layers of generative\nmodels as spatial inductive bias. Along with training the GAN model from\nscratch, these heatmaps are being aligned with the emerging attention of the\nGAN's discriminator in a self-supervised learning manner. During inference,\nusers can interact with the spatial heatmaps in an intuitive manner, enabling\nthem to edit the output image by adjusting the scene layout, moving, or\nremoving objects. Moreover, we incorporate DragGAN into our framework, which\nfacilitates fine-grained manipulation within a reasonable time and supports a\ncoarse-to-fine editing process. Extensive experiments show that the proposed\nmethod not only enables spatial editing over human faces, animal faces, outdoor\nscenes, and complicated multi-object indoor scenes but also brings improvement\nin synthesis quality. Code, models, and demo video are available at\nhttps://genforce.github.io/SpatialGAN/."
+}

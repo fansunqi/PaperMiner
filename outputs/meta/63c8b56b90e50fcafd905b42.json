@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speech emotion recognition"
+  ],
+  "datasets": [
+    "Berlin EmoDB",
+    "RAVDESS"
+  ],
+  "methods": [
+    "Constant-Q transform based modulation spectral features (CQT-MSF)",
+    "2-dimensional convolutional network"
+  ],
+  "results": [
+    "CQT-MSF outperforms standard mel-scale based spectrogram and its modulation features",
+    "Outperforms shift and deformation invariant scattering transform coefficients",
+    "Grad-CAM analysis for visual inspection of feature contribution"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b42",
+  "title": "Modulation spectral features for speech emotion recognition using deep\n  neural networks",
+  "abstract": "  This work explores the use of constant-Q transform based modulation spectral features (CQT-MSF) for speech emotion recognition (SER). The human perception and analysis of sound comprise of two important cognitive parts: early auditory analysis and cortex-based processing. The early auditory analysis considers spectrogram-based representation whereas cortex-based analysis includes extraction of temporal modulations from the spectrogram. This temporal modulation representation of spectrogram is called modulation spectral feature (MSF). As the constant-Q transform (CQT) provides higher resolution at emotion salient low-frequency regions of speech, we find that CQT-based spectrogram, together with its temporal modulations, provides a representation enriched with emotion-specific information. We argue that CQT-MSF when used with a 2-dimensional convolutional network can provide a time-shift invariant and deformation insensitive representation for SER. Our results show that CQT-MSF outperforms standard mel-scale based spectrogram and its modulation features on two popular SER databases, Berlin EmoDB and RAVDESS. We also show that our proposed feature outperforms the shift and deformation invariant scattering transform coefficients, hence, showing the importance of joint hand-crafted and self-learned feature extraction instead of reliance on complete hand-crafted features. Finally, we perform Grad-CAM analysis to visually inspect the contribution of constant-Q modulation features over SER. "
+}

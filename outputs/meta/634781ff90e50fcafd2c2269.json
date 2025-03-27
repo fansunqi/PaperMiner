@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cooperative perception",
+    "Autonomous driving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "OptiMatch",
+    "Optimal transport theory-based algorithm",
+    "Global fusion",
+    "Dynamic mapping"
+  ],
+  "results": [
+    "Robust performance for different levels of location and heading errors",
+    "Outperforms state-of-the-art benchmark fusion schemes on average precision"
+  ],
+  "paper_id": "634781ff90e50fcafd2c2269",
+  "title": "A Cooperative Perception System Robust to Localization Errors",
+  "abstract": "  Cooperative perception is challenging for safety-critical autonomous driving applications.The errors in the shared position and pose cause an inaccurate relative transform estimation and disrupt the robust mapping of the Ego vehicle. We propose a distributed object-level cooperative perception system called OptiMatch, in which the detected 3D bounding boxes and local state information are shared between the connected vehicles. To correct the noisy relative transform, the local measurements of both connected vehicles (bounding boxes) are utilized, and an optimal transport theory-based algorithm is developed to filter out those objects jointly detected by the vehicles along with their correspondence, constructing an associated co-visible set. A correction transform is estimated from the matched object pairs and further applied to the noisy relative transform, followed by global fusion and dynamic mapping. Experiment results show that robust performance is achieved for different levels of location and heading errors, and the proposed framework outperforms the state-of-the-art benchmark fusion schemes, including early, late, and intermediate fusion, on average precision by a large margin when location and/or heading errors occur. "
+}

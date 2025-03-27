@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse DAG Structure Learning",
+    "Bayesian Networks (BNs) Learning"
+  ],
+  "datasets": [
+    "synthetic",
+    "real-world"
+  ],
+  "methods": [
+    "NOTEARS with adaptive Lasso (NOTEARS-AL)"
+  ],
+  "results": [
+    "consistently outperforms NOTEARS"
+  ],
+  "paper_id": "63195d8890e50fcafde7e551",
+  "title": "On the Sparse DAG Structure Learning Based on Adaptive Lasso",
+  "abstract": "  Learning the underlying Bayesian Networks (BNs), represented by directed acyclic graphs (DAGs), of the concerned events from purely-observational data is a crucial part of evidential reasoning. This task remains challenging due to the large and discrete search space. A recent flurry of developments followed NOTEARS[1] recast this combinatorial problem into a continuous optimization problem by leveraging an algebraic equality characterization of acyclicity. However, the continuous optimization methods suffer from obtaining non-spare graphs after the numerical optimization, which leads to the inflexibility to rule out the potentially cycle-inducing edges or false discovery edges with small values. To address this issue, in this paper, we develop a completely data-driven DAG structure learning method without a predefined value to post-threshold small values. We name our method NOTEARS with adaptive Lasso (NOTEARS-AL), which is achieved by applying the adaptive penalty method to ensure the sparsity of the estimated DAG. Moreover, we show that NOTEARS-AL also inherits the oracle properties under some specific conditions. Extensive experiments on both synthetic and a real-world dataset demonstrate that our method consistently outperforms NOTEARS. "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Building large AI fleets",
+    "Generating accurate benchmarks",
+    "Designing fast-paced software and hardware solutions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mystique framework",
+    "PyTorch execution trace (ET)",
+    "Graph format",
+    "Metadata",
+    "ET composability"
+  ],
+  "results": [
+    "Benchmarks closely resemble original AI models",
+    "Portability across platforms",
+    "Fine-grained composability of execution trace"
+  ],
+  "paper_id": "63be28d490e50fcafdf52fac",
+  "title": "Mystique: Enabling Accurate and Scalable Generation of Production AI\n  Benchmarks",
+  "abstract": "  Building large AI fleets to support the rapidly growing DL workloads is an active research topic for modern cloud providers. Generating accurate benchmarks plays an essential role in designing the fast-paced software and hardware solutions in this space. Two fundamental challenges to make this scalable are (i) workload representativeness and (ii) the ability to quickly incorporate changes to the fleet into the benchmarks.   To overcome these issues, we propose Mystique, an accurate and scalable framework for production AI benchmark generation. It leverages the PyTorch execution trace (ET), a new feature that captures the runtime information of AI models at the granularity of operators, in a graph format, together with their metadata. By sourcing fleet ETs, we can build AI benchmarks that are portable and representative. Mystique is scalable, due to its lightweight data collection, in terms of runtime overhead and instrumentation effort. It is also adaptive because ET composability allows flexible control on benchmark creation.   We evaluate our methodology on several production AI models, and show that benchmarks generated with Mystique closely resemble original AI models, both in execution time and system-level metrics. We also showcase the portability of the generated benchmarks across platforms, and demonstrate several use cases enabled by the fine-grained composability of the execution trace. "
+}

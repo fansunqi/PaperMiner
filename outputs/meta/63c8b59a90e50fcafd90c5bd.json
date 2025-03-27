@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Heterogeneous Training of Semantic Segmentation (HTSS)",
+    "Unified framework",
+    "FCN",
+    "Label space hierarchization"
+  ],
+  "results": [
+    "Performance and generalization gains",
+    "Extended inference label space with hundreds of semantic classes"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c5bd",
+  "title": "Training Semantic Segmentation on Heterogeneous Datasets",
+  "abstract": "  We explore semantic segmentation beyond the conventional, single-dataset homogeneous training and bring forward the problem of Heterogeneous Training of Semantic Segmentation (HTSS). HTSS involves simultaneous training on multiple heterogeneous datasets, i.e. datasets with conflicting label spaces and different (weak) annotation types from the perspective of semantic segmentation. The HTSS formulation exposes deep networks to a larger and previously unexplored aggregation of information that can potentially enhance semantic segmentation in three directions: i) performance: increased segmentation metrics on seen datasets, ii) generalization: improved segmentation metrics on unseen datasets, and iii) knowledgeability: increased number of recognizable semantic concepts. To research these benefits of HTSS, we propose a unified framework, that incorporates heterogeneous datasets in a single-network training pipeline following the established FCN standard. Our framework first curates heterogeneous datasets to bring them into a common format and then trains a single-backbone FCN on all of them simultaneously. To achieve this, it transforms weak annotations, which are incompatible with semantic segmentation, to per-pixel labels, and hierarchizes their label spaces into a universal taxonomy. The trained HTSS models demonstrate performance and generalization gains over a wide range of datasets and extend the inference label space entailing hundreds of semantic classes. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D scene depth and normal estimation",
+    "Synthetic-to-real cross-domain inference"
+  ],
+  "datasets": [
+    "OmniHorizon"
+  ],
+  "methods": [
+    "UBotNet (UNet + Bottleneck Transformer)"
+  ],
+  "results": [
+    "Depth accuracy improvement: 4.6%",
+    "Normal estimation improvement: 5.75%"
+  ],
+  "paper_id": "63969ba790e50fcafdcf1d49",
+  "title": "OmniHorizon: In-the-Wild Outdoors Depth and Normal Estimation from\n  Synthetic Omnidirectional Dataset",
+  "abstract": "  Understanding the ambient scene is imperative for several applications such as autonomous driving and navigation. While obtaining real-world image data with per-pixel labels is challenging, existing accurate synthetic image datasets primarily focus on indoor spaces with fixed lighting and scene participants, thereby severely limiting their application to outdoor scenarios. In this work we introduce OmniHorizon, a synthetic dataset with 24,335 omnidirectional views comprising of a broad range of indoor and outdoor spaces consisting of buildings, streets, and diverse vegetation. Our dataset also accounts for dynamic scene components including lighting, different times of a day settings, pedestrians, and vehicles. Furthermore, we also demonstrate a learned synthetic-to-real cross-domain inference method for in-the-wild 3D scene depth and normal estimation method using our dataset. To this end, we propose UBotNet, an architecture based on a UNet and a Bottleneck Transformer, to estimate scene-consistent normals. We show that UBotNet achieves significantly improved depth accuracy (4.6%) and normal estimation (5.75%) compared to several existing networks such as U-Net with skip-connections. Finally, we demonstrate in-the-wild depth and normal estimation on real-world images with UBotNet trained purely on our OmniHorizon dataset, showing the promise of proposed dataset and network for scene understanding. "
+}

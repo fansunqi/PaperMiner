@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image ordinal estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ordinal totally ordered set distribution (OTD)",
+    "KL divergence",
+    "Ordinal prototype-constrained convex programming with dual decomposition"
+  ],
+  "results": [
+    "Accurately constructs an ordinal latent space",
+    "Significantly enhances existing deep ordinal regression methods"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905cd1",
+  "title": "CORE: Learning Consistent Ordinal REpresentations for Image Ordinal\n  Estimation",
+  "abstract": "  The goal of image ordinal estimation is to estimate the ordinal label of a given image with a convolutional neural network. Existing methods are mainly based on ordinal regression and particularly focus on modeling the ordinal mapping from the feature representation of the input to the ordinal label space. However, the manifold of the resultant feature representations does not maintain the intrinsic ordinal relations of interest, which hinders the effectiveness of the image ordinal estimation. Therefore, this paper proposes learning intrinsic Consistent Ordinal REpresentations (CORE) from ordinal relations residing in groundtruth labels while encouraging the feature representations to embody the ordinal low-dimensional manifold. First, we develop an ordinal totally ordered set (toset) distribution (OTD), which can (i) model the label embeddings to inherit ordinal information and measure distances between ordered labels of samples in a neighborhood, and (ii) model the feature embeddings to infer numerical magnitude with unknown ordinal information among the features of different samples. Second, through OTD, we convert the feature representations and labels into the same embedding space for better alignment, and then compute the Kullback Leibler (KL) divergence between the ordinal labels and feature representations to endow the latent space with consistent ordinal relations. Third, we optimize the KL divergence through ordinal prototype-constrained convex programming with dual decomposition; our theoretical analysis shows that we can obtain the optimal solutions via gradient backpropagation. Extensive experimental results demonstrate that the proposed CORE can accurately construct an ordinal latent space and significantly enhance existing deep ordinal regression methods to achieve better results. "
+}

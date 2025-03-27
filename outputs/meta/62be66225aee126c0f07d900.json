@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Imitation learning",
+    "Complex decision making problems"
+  ],
+  "datasets": [
+    "DeepMind Control Suite",
+    "OpenAI Robotics Suite",
+    "Meta-World Benchmark"
+  ],
+  "methods": [
+    "Regularized Optimal Transport (ROT)",
+    "Trajectory-matching rewards",
+    "Behavior cloning"
+  ],
+  "results": [
+    "7.8X faster imitation to reach 90% of expert performance",
+    "90.1% average success rate on real-world robotic manipulation"
+  ],
+  "paper_id": "62be66225aee126c0f07d900",
+  "title": "Watch and Match: Supercharging Imitation with Regularized Optimal\n  Transport",
+  "abstract": "  Imitation learning holds tremendous promise in learning policies efficiently for complex decision making problems. Current state-of-the-art algorithms often use inverse reinforcement learning (IRL), where given a set of expert demonstrations, an agent alternatively infers a reward function and the associated optimal policy. However, such IRL approaches often require substantial online interactions for complex control problems. In this work, we present Regularized Optimal Transport (ROT), a new imitation learning algorithm that builds on recent advances in optimal transport based trajectory-matching. Our key technical insight is that adaptively combining trajectory-matching rewards with behavior cloning can significantly accelerate imitation even with only a few demonstrations. Our experiments on 20 visual control tasks across the DeepMind Control Suite, the OpenAI Robotics Suite, and the Meta-World Benchmark demonstrate an average of 7.8X faster imitation to reach 90% of expert performance compared to prior state-of-the-art methods. On real-world robotic manipulation, with just one demonstration and an hour of online training, ROT achieves an average success rate of 90.1% across 14 tasks. "
+}

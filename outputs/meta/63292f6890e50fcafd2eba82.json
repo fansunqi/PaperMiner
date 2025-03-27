@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Rolling Shutter Bundle Adjustment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "NW-RSBA",
+    "sparsity of Jacobian matrix",
+    "Schur complement"
+  ],
+  "results": [
+    "Improved accuracy",
+    "Efficient solution",
+    "Easy implementation and plug-in for GSSfM and GSSLAM systems"
+  ],
+  "paper_id": "63292f6890e50fcafd2eba82",
+  "title": "Revisiting Rolling Shutter Bundle Adjustment: Toward Accurate and Fast\n  Solution",
+  "abstract": "  We propose a robust and fast bundle adjustment solution that estimates the 6-DoF pose of the camera and the geometry of the environment based on measurements from a rolling shutter (RS) camera. This tackles the challenges in the existing works, namely relying on additional sensors, high frame rate video as input, restrictive assumptions on camera motion, readout direction, and poor efficiency. To this end, we first investigate the influence of normalization to the image point on RSBA performance and show its better approximation in modelling the real 6-DoF camera motion. Then we present a novel analytical model for the visual residual covariance, which can be used to standardize the reprojection error during the optimization, consequently improving the overall accuracy. More importantly, the combination of normalization and covariance standardization weighting in RSBA (NW-RSBA) can avoid common planar degeneracy without needing to constrain the filming manner. Besides, we propose an acceleration strategy for NW-RSBA based on the sparsity of its Jacobian matrix and Schur complement. The extensive synthetic and real data experiments verify the effectiveness and efficiency of the proposed solution over the state-of-the-art works. We also demonstrate the proposed method can be easily implemented and plug-in famous GSSfM and GSSLAM systems as completed RSSfM and RSSLAM solutions. "
+}

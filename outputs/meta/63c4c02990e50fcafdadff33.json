@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Session type verification",
+    "Message-passing programs",
+    "Process calculus with sessions",
+    "Higher-order concurrency"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Minimal session types",
+    "Behavior-preserving decompositions"
+  ],
+  "results": [
+    "Behavioral equivalence between processes with standard and minimal session types"
+  ],
+  "paper_id": "63c4c02990e50fcafdadff33",
+  "title": "A Minimal Formulation of Session Types",
+  "abstract": "  Session types are a type-based approach to the verification of message-passing programs. They specify communication structures essential for program correctness; a session type says what and when should be exchanged through a channel. Central to session-typed languages are sequencing constructs in types and processes that explicitly specify the order of actions in a protocol.   In this paper we study session types without sequencing. The resulting framework of minimal session types is arguably the simplest form of session types one could conceive. In the context of a core process calculus with sessions and higher-order concurrency (abstraction-passing), we establish two main technical results. First, we prove that every process $P$ typable with standard session types can be compiled down into a process $\\mathcal{D}(P)$ typable with minimal session types. Second, we prove that $P$ and $\\mathcal{D}(P)$ are behaviorally equivalent. These results indicate that having sequencing constructs in processes and session types is convenient but redundant: only sequentiality in processes is truly indispensable, as it can correctly codify sequentiality in types.   Our developments draw inspiration from work by Parrow on behavior-preserving decompositions of untyped processes. By casting Parrow's results in the realm of typed processes, our developments reveal a conceptually simple formulation of session types and a principled avenue to the integration of session types into programming languages without sequencing in types. "
+}

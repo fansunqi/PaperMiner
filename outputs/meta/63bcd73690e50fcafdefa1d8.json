@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic speaker recognition",
+    "Model inversion attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sliding model inversion",
+    "Reconstruction of audio samples",
+    "Extraction of intermediate voice feature representations"
+  ],
+  "results": [
+    "First extension of MI attacks to audio data",
+    "Security risks highlighted from extraction of biometric data"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa1d8",
+  "title": "Introducing Model Inversion Attacks on Automatic Speaker Recognition",
+  "abstract": "  Model inversion (MI) attacks allow to reconstruct average per-class representations of a machine learning (ML) model's training data. It has been shown that in scenarios where each class corresponds to a different individual, such as face classifiers, this represents a severe privacy risk. In this work, we explore a new application for MI: the extraction of speakers' voices from a speaker recognition system. We present an approach to (1) reconstruct audio samples from a trained ML model and (2) extract intermediate voice feature representations which provide valuable insights into the speakers' biometrics.   Therefore, we propose an extension of MI attacks which we call sliding model inversion. Our sliding MI extends standard MI by iteratively inverting overlapping chunks of the audio samples and thereby leveraging the sequential properties of audio data for enhanced inversion performance. We show that one can use the inverted audio data to generate spoofed audio samples to impersonate a speaker, and execute voice-protected commands for highly secured systems on their behalf. To the best of our knowledge, our work is the first one extending MI attacks to audio data, and our results highlight the security risks resulting from the extraction of the biometric data in that setup. "
+}

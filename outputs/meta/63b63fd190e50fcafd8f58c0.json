@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Domain Adaptive Semantic Segmentation"
+  ],
+  "datasets": [
+    "GTA5$\rightarrow$Cityscapes"
+  ],
+  "methods": [
+    "Global photometric alignment module",
+    "Global texture alignment module",
+    "Global manifold alignment",
+    "Category-oriented triplet loss",
+    "Target domain consistency regularization"
+  ],
+  "results": [
+    "Improves mIoU by 8% over SOTA",
+    "Achieves 58.2% mIoU"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f58c0",
+  "title": "I2F: A Unified Image-to-Feature Approach for Domain Adaptive Semantic\n  Segmentation",
+  "abstract": "  Unsupervised domain adaptation (UDA) for semantic segmentation is a promising task freeing people from heavy annotation work. However, domain discrepancies in low-level image statistics and high-level contexts compromise the segmentation performance over the target domain. A key idea to tackle this problem is to perform both image-level and feature-level adaptation jointly. Unfortunately, there is a lack of such unified approaches for UDA tasks in the existing literature. This paper proposes a novel UDA pipeline for semantic segmentation that unifies image-level and feature-level adaptation. Concretely, for image-level domain shifts, we propose a global photometric alignment module and a global texture alignment module that align images in the source and target domains in terms of image-level properties. For feature-level domain shifts, we perform global manifold alignment by projecting pixel features from both domains onto the feature manifold of the source domain; and we further regularize category centers in the source domain through a category-oriented triplet loss and perform target domain consistency regularization over augmented target domain images. Experimental results demonstrate that our pipeline significantly outperforms previous methods. In the commonly tested GTA5$\\rightarrow$Cityscapes task, our proposed method using Deeplab V3+ as the backbone surpasses previous SOTA by 8%, achieving 58.2% in mIoU. "
+}

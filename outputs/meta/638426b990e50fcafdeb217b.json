@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Event-based optical flow"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Iterative Deblurring Network (IDNet)",
+    "ID scheme",
+    "TID scheme"
+  ],
+  "results": [
+    "ID scheme outperforms previous state-of-the-art by 9% of EPE with 52% fewer parameters and 77% savings in memory footprint",
+    "TID scheme is more efficient with 80% of compute savings and 18 times less latency at the cost of only 6% of performance drop"
+  ],
+  "paper_id": "638426b990e50fcafdeb217b",
+  "title": "Rethinking Event-based Optical Flow: Iterative Deblurring as an\n  Alternative to Correlation Volumes",
+  "abstract": "  Inspired by frame-based methods, state-of-the-art event-based optical flow networks rely on the explicit construction of correlation volumes, which are expensive to compute and store, at the same time prohibiting them from estimating high-resolution flow. We observe that the spatiotemporally continuous traces of events provide a natural search direction for seeking pixel correspondences, obviating the need to rely on gradients of explicit correlation volumes as such search directions. We introduce IDNet (Iterative Deblurring Network), a lightweight yet high-performing event-based optical flow network directly estimating flow from event traces without using correlation volumes. We further propose two iterative update schemes: \"ID\" which iterates over the same batch of events, and \"TID\" which iterates over time with streaming events in an online fashion. Benchmark results show the \"ID\" scheme outperforms previous state-of-the-art by 9% of EPE with 52% fewer parameters and 77% savings in memory footprint, while the \"TID\" scheme is even more efficient promising 80% of compute savings and 18 times less latency at the cost of only 6% of performance drop. "
+}

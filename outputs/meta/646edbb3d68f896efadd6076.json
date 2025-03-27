@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Class Graph Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Signed Propagation",
+    "Calibration"
+  ],
+  "results": [
+    "Improved performance on multi-class benchmark graph datasets"
+  ],
+  "paper_id": "646edbb3d68f896efadd6076",
+  "title": "Revisiting Signed Propagation for Multi-Class Graph Neural Networks",
+  "abstract": "Message-passing Graph Neural Networks (GNNs), which collect information from\nadjacent nodes achieve dismal performance on heterophilic graphs. Various\nschemes have been proposed to solve this problem, and propagating signed\ninformation on heterophilic edges has gained great attention. Recently, some\nworks provided theoretical analysis that signed propagation always leads to\nperformance improvement under a binary class scenario. However, we notice that\nprior analyses do not align well with multi-class benchmark datasets. This\npaper provides a new understanding of signed propagation for multi-class\nscenarios and points out two drawbacks in terms of message-passing and\nparameter update: (1) Message-passing: if two nodes belong to different classes\nbut have a high similarity, signed propagation can decrease the separability.\n(2) Parameter update: the prediction uncertainty (e.g., conflict evidence) of\nsigned neighbors increases during training, which can impede the stability of\nthe algorithm. Based on the observation, we introduce two novel strategies for\nimproving signed propagation under multi-class graphs. The proposed scheme\ncombines calibration to secure robustness while reducing uncertainty. We show\nthe efficacy of our theorem through extensive experiments on six benchmark\ngraph datasets."
+}

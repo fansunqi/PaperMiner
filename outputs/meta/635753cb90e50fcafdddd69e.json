@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "X-Ray Fluorescence Analysis"
+  ],
+  "datasets": [
+    "Lithium mineral exploration project rock dataset"
+  ],
+  "methods": [
+    "Neural network model",
+    "Forward model using transition energies and probabilities"
+  ],
+  "results": [
+    "Model works well for low-Z and high-Z elements",
+    "Neural networks learn correlations and non-linear relationships"
+  ],
+  "paper_id": "635753cb90e50fcafdddd69e",
+  "title": "Auto-Encoder Neural Network Incorporating X-Ray Fluorescence Fundamental\n  Parameters with Machine Learning",
+  "abstract": "  We consider energy-dispersive X-ray Fluorescence (EDXRF) applications where the fundamental parameters method is impractical such as when instrument parameters are unavailable. For example, on a mining shovel or conveyor belt, rocks are constantly moving (leading to varying angles of incidence and distances) and there may be other factors not accounted for (like dust). Neural networks do not require instrument and fundamental parameters but training neural networks requires XRF spectra labelled with elemental composition, which is often limited because of its expense. We develop a neural network model that learns from limited labelled data and also benefits from domain knowledge by learning to invert a forward model. The forward model uses transition energies and probabilities of all elements and parameterized distributions to approximate other fundamental and instrument parameters. We evaluate the model and baseline models on a rock dataset from a lithium mineral exploration project. Our model works particularly well for some low-Z elements (Li, Mg, Al, and K) as well as some high-Z elements (Sn and Pb) despite these elements being outside the suitable range for common spectrometers to directly measure, likely owing to the ability of neural networks to learn correlations and non-linear relationships. "
+}

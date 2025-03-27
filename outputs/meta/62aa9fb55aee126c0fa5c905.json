@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Speech Separation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "RNN-based Online Neural Speech Separation Systems",
+    "Layer decomposition and reorganization",
+    "Pretrained offline model",
+    "Multitask training"
+  ],
+  "results": [
+    "Mitigation of performance gap between offline and online models"
+  ],
+  "paper_id": "62aa9fb55aee126c0fa5c905",
+  "title": "On the Design and Training Strategies for RNN-based Online Neural Speech\n  Separation Systems",
+  "abstract": "  While the performance of offline neural speech separation systems has been greatly advanced by the recent development of novel neural network architectures, there is typically an inevitable performance gap between the systems and their online variants. In this paper, we investigate how RNN-based offline neural speech separation systems can be changed into their online counterparts while mitigating the performance degradation. We decompose or reorganize the forward and backward RNN layers in a bidirectional RNN layer to form an online path and an offline path, which enables the model to perform both online and offline processing with a same set of model parameters. We further introduce two training strategies for improving the online model via either a pretrained offline model or a multitask training objective. Experiment results show that compared to the online models that are trained from scratch, the proposed layer decomposition and reorganization schemes and training strategies can effectively mitigate the performance gap between two RNN-based offline separation models and their online variants. "
+}

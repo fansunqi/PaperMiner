@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Prompt Learning"
+  ],
+  "datasets": [
+    "ImageNet",
+    "Caltech101",
+    "OxfordPets",
+    "StanfordCars",
+    "Flowers102",
+    "Food101",
+    "FGVCAircraft",
+    "SUN397",
+    "UCF101",
+    "DTD",
+    "EuroSAT"
+  ],
+  "methods": [
+    "Optimal Transport",
+    "Adversarial Training",
+    "Textual Regularization",
+    "Similarity Paradigm"
+  ],
+  "results": [
+    "Average accuracy: 80.61% on base classes, 76.76% on novel classes, 84.85% on harmonic mean",
+    "Outperforms existing prompt learning methods on 4 types of representative tasks across 11 datasets"
+  ],
+  "title": "A Similarity Paradigm Through Textual Regularization Without Forgetting.pdf",
+  "abstract": "Prompt learning has emerged as a promising method for adapt- ing pre-trained visual-language models (VLMs) to a range of downstream tasks. While optimizing the context can be effec- tive for improving performance on specific tasks, it can often lead to poor generalization performance on unseen classes or datasets sampled from different distributions. It may be attributed to the fact that textual prompts tend to overfit down- stream data distributions, leading to the forgetting of gener- alized knowledge derived from hand-crafted prompts. In this paper, we propose a novel method called Similarity Paradigm with Textual Regularization (SPTR) for prompt learning with- out forgetting. SPTR is a two-pronged design based on hand- crafted prompts that is an inseparable framework. 1) To avoid forgetting general textual knowledge, we introduce the optimal transport as a textual regularization to finely ensure approxi- mation with hand-crafted features and tuning textual features. 2) In order to continuously unleash the general ability of mul- tiple hand-crafted prompts, we propose a similarity paradigm for natural alignment score and adversarial alignment score to improve model robustness for generalization. Both mod- ules share a common objective in addressing generalization issues, aiming to maximize the generalization capability de- rived from multiple hand-crafted prompts. Four representative tasks (i.e., non-generalization few-shot learning, base-to-novel generalization, cross-dataset generalization, domain general- ization) across 11 datasets demonstrate that SPTR outperforms existing prompt learning methods. Introduction Large vision-language models (VLMs) like pre-trained CLIP (Radford et al. 2021) has demonstrated remarkable gen- eralization capabilities across a wide range of downstream tasks (Bangalath et al. 2022; Cao et al. 2023b; Zhang et al. 2021a). By learning to associate textual descriptions with corresponding visual content, these models can perform tasks such as image classification, object detection, image genera- tion, and more (Cao et al. 2024a, 2023a; Li et al. 2024b; Liu et al. 2024a, 2023, 2024b; Shi et al. 2024; Xie et al. 2023; Zhang et al. 2022). The generalization capabilities of these VLMs have been validated through their impressive performance on various *Corresponding author. Copyright \u00a9 2025, Association for the Advancement of Artificial Intelligence (www.aaai.org). All rights reserved. Method 4 tasks (Avg.) CLIP (ICML2021) 67.69 \u2206 CoOp (IJCV2022) 68.31 +0.62 CoCoOp (CVPR2022) 68.63 +0.94 KgCoOp (CVPR2023) 70.71 +3.02 PLOT (ICLR2023) 71.24 +3.55 MaPLe (CVPR2023) 71.58 +3.89 PromptSRC (ICCV2023) 72.09 +4.40 TCP (CVPR2024) 71.79 +4.10 Ours (AAAI2025) 72.89 +5.20 Table 1: We test our method on 4 tasks: non-generalization few-shot learning, base-to-novel generalization, domain gen- eralization, and cross-dataset evaluation. Ours (AAAI2025) overall shows competitive results for average performance compared to the previous prompting methods. The symbol \u2206 represents the value that increases in comparison to CLIP. benchmarks and tasks. They have shown strong performance in both seen and unseen classes, indicating their ability to generalize well to novel concepts and data distributions. CLIP utilizes pre-defined text inputs or prompts during inference to generate classification weights. These prompts can include hand-engineered text, such as \u201ca photo of a [class]\u201d, which guides the text encoder of CLIP. As a zero-shot model, CLIP does not require task-specific fine-tuning on specific down- stream tasks. This makes it highly versatile and capable of performing reasonably well on a wide range of tasks without any fine-tuning. It can leverage the alignment between two modalities learned during pre-training to make predictions and understand the semantic relationships between them. Advanced techniques have been proposed to introduce learnable parameters for few-shot textual prompting to en- hance the performance of pre-trained CLIP in downstream classification tasks and automate prompts. One significant method in this area is CoOp, introduced in the seminal work (Zhou et al. 2022b). CoOp leverages the differentiable nature of neural networks to transform context words in a prompt into a set of learnable embeddings. By learning these textual embeddings of prompts, CoOp achieves substantial improvements over manually tuned prompts on various im- age recognition datasets, even with limited labeled images (few shots) available for training. arXiv:2502.14376v1 [cs.CL] 20 Feb 2025"
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Latent variable Gaussian process modeling",
+    "Qualitative input accommodation",
+    "Prediction accuracy and uncertainty quantification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fully Bayesian inference",
+    "LVGP model",
+    "Standard GP covariance function",
+    "Maximum likelihood estimation",
+    "Scaling up LVGPs"
+  ],
+  "results": [
+    "Significant improvements in prediction accuracy and uncertainty quantification over the plug-in approach"
+  ],
+  "paper_id": "6368773090e50fcafd674d84",
+  "title": "Fully Bayesian inference for latent variable Gaussian process models",
+  "abstract": "  Real engineering and scientific applications often involve one or more qualitative inputs. Standard Gaussian processes (GPs), however, cannot directly accommodate qualitative inputs. The recently introduced latent variable Gaussian process (LVGP) overcomes this issue by first mapping each qualitative factor to underlying latent variables (LVs), and then uses any standard GP covariance function over these LVs. The LVs are estimated similarly to the other GP hyperparameters through maximum likelihood estimation, and then plugged into the prediction expressions. However, this plug-in approach will not account for uncertainty in estimation of the LVs, which can be significant especially with limited training data. In this work, we develop a fully Bayesian approach for the LVGP model and for visualizing the effects of the qualitative inputs via their LVs. We also develop approximations for scaling up LVGPs and fully Bayesian inference for the LVGP hyperparameters. We conduct numerical studies comparing plug-in inference against fully Bayesian inference over a few engineering models and material design applications. In contrast to previous studies on standard GP modeling that have largely concluded that a fully Bayesian treatment offers limited improvements, our results show that for LVGP modeling it offers significant improvements in prediction accuracy and uncertainty quantification over the plug-in approach. "
+}

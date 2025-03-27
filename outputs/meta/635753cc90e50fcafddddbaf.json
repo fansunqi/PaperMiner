@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian optimization",
+    "Conformal prediction",
+    "Black-box optimization",
+    "Tabular ranking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conformal Bayesian optimization"
+  ],
+  "results": [
+    "Query coverage can be significantly improved without harming sample-efficiency"
+  ],
+  "paper_id": "635753cc90e50fcafddddbaf",
+  "title": "Bayesian Optimization with Conformal Prediction Sets",
+  "abstract": "  Bayesian optimization is a coherent, ubiquitous approach to decision-making under uncertainty, with applications including multi-arm bandits, active learning, and black-box optimization. Bayesian optimization selects decisions (i.e. objective function queries) with maximal expected utility with respect to the posterior distribution of a Bayesian model, which quantifies reducible, epistemic uncertainty about query outcomes. In practice, subjectively implausible outcomes can occur regularly for two reasons: 1) model misspecification and 2) covariate shift. Conformal prediction is an uncertainty quantification method with coverage guarantees even for misspecified models and a simple mechanism to correct for covariate shift. We propose conformal Bayesian optimization, which directs queries towards regions of search space where the model predictions have guaranteed validity, and investigate its behavior on a suite of black-box optimization tasks and tabular ranking tasks. In many cases we find that query coverage can be significantly improved without harming sample-efficiency. "
+}

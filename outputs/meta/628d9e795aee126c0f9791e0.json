@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Byzantine Fault Tolerant (BFT) protocol design"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "BeeGees protocol: pipelining, leader rotation, threshold signatures, SNARKs"
+  ],
+  "results": [
+    "Reduces commit latency of HotStuff by a factor of three under failures",
+    "Worst-case latency reduced by a factor of seven"
+  ],
+  "paper_id": "628d9e795aee126c0f9791e0",
+  "title": "BeeGees: stayin' alive in chained BFT",
+  "abstract": "  Modern chained Byzantine Fault Tolerant (BFT) systems leverage a combination of pipelining and leader rotation to obtain both efficiency and fairness. These protocols, however, require a sequence of three or four consecutive honest leaders to commit operations. Therefore, even simple leader failures such as crashes can weaken liveness both theoretically and practically. Obtaining a chained BFT protocol that reaches decisions even if the sequence of honest leaders is non-consecutive, remains an open question. To resolve this question we present BeeGees, a novel chained BFT protocol that successfully commits blocks even with non-consecutive honest leaders. It does this while also maintaining quadratic word complexity with threshold signatures, linear word complexity with SNARKs, and responsiveness between consecutive honest leaders. BeeGees reduces the expected commit latency of HotStuff by a factor of three under failures, and the worst-case latency by a factor of seven. "
+}

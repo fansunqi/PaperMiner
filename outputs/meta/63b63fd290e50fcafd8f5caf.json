@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Capsule neural networks scaling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Capsule neural networks (CapsNet)"
+  ],
+  "results": [
+    "No scaling to reasonable-sized datasets",
+    "Parse-tree concept not present in CapsNets",
+    "Vanishing gradient problem causing capsule starvation"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5caf",
+  "title": "Why Capsule Neural Networks Do Not Scale: Challenging the Dynamic\n  Parse-Tree Assumption",
+  "abstract": "  Capsule neural networks replace simple, scalar-valued neurons with vector-valued capsules. They are motivated by the pattern recognition system in the human brain, where complex objects are decomposed into a hierarchy of simpler object parts. Such a hierarchy is referred to as a parse-tree. Conceptually, capsule neural networks have been defined to realize such parse-trees. The capsule neural network (CapsNet), by Sabour, Frosst, and Hinton, is the first actual implementation of the conceptual idea of capsule neural networks. CapsNets achieved state-of-the-art performance on simple image recognition tasks with fewer parameters and greater robustness to affine transformations than comparable approaches. This sparked extensive follow-up research. However, despite major efforts, no work was able to scale the CapsNet architecture to more reasonable-sized datasets. Here, we provide a reason for this failure and argue that it is most likely not possible to scale CapsNets beyond toy examples. In particular, we show that the concept of a parse-tree, the main idea behind capsule neuronal networks, is not present in CapsNets. We also show theoretically and experimentally that CapsNets suffer from a vanishing gradient problem that results in the starvation of many capsules during training. "
+}

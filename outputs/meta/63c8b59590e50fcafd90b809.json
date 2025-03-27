@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Maxout Networks Gradient Analysis",
+    "Parameter Initialization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Maxout Networks",
+    "Expected Gradients",
+    "Parameter Initialization Strategies"
+  ],
+  "results": [
+    "Improved SGD and Adam training",
+    "Refined bounds on linear regions",
+    "Results on curve length distortion",
+    "Results on NTK"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b809",
+  "title": "Expected Gradients of Maxout Networks and Consequences to Parameter\n  Initialization",
+  "abstract": "  We study the gradients of a maxout network with respect to inputs and parameters and obtain bounds for the moments depending on the architecture and the parameter distribution. We observe that the distribution of the input-output Jacobian depends on the input, which complicates a stable parameter initialization. Based on the moments of the gradients, we formulate parameter initialization strategies that avoid vanishing and exploding gradients in wide networks. Experiments with deep fully-connected and convolutional networks show that this strategy improves SGD and Adam training of deep maxout networks. In addition, we obtain refined bounds on the expected number of linear regions, results on the expected curve length distortion, and results on the NTK. "
+}

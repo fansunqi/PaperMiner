@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributionally Robust Offline RL",
+    "Linear Function Approximation"
+  ],
+  "results": [
+    "Error bounds: $\tilde{O}(d^{1/2}/N^{1/2})$ and $\tilde{O}(d^{3/2}/N^{1/2})$",
+    "Non-asymptotic results on sample complexity",
+    "Superiority over non-robust algorithms"
+  ],
+  "paper_id": "632297f590e50fcafdc88907",
+  "title": "Distributionally Robust Offline Reinforcement Learning with Linear\n  Function Approximation",
+  "abstract": "  Among the reasons hindering reinforcement learning (RL) applications to real-world problems, two factors are critical: limited data and the mismatch between the testing environment (real environment in which the policy is deployed) and the training environment (e.g., a simulator). This paper attempts to address these issues simultaneously with distributionally robust offline RL, where we learn a distributionally robust policy using historical data obtained from the source environment by optimizing against a worst-case perturbation thereof. In particular, we move beyond tabular settings and consider linear function approximation. More specifically, we consider two settings, one where the dataset is well-explored and the other where the dataset has sufficient coverage of the optimal policy. We propose two algorithms~-- one for each of the two settings~-- that achieve error bounds $\\tilde{O}(d^{1/2}/N^{1/2})$ and $\\tilde{O}(d^{3/2}/N^{1/2})$ respectively, where $d$ is the dimension in the linear function approximation and $N$ is the number of trajectories in the dataset. To the best of our knowledge, they provide the first non-asymptotic results of the sample complexity in this setting. Diverse experiments are conducted to demonstrate our theoretical findings, showing the superiority of our algorithm against the non-robust one. "
+}

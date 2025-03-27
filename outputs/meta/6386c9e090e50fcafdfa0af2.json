@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "UAV Trajectory Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bilevel Optimization",
+    "Convex Quadratic Program (QP)",
+    "OptNet"
+  ],
+  "results": [
+    "Computation time scales linearly with respect to the number of safety sets"
+  ],
+  "paper_id": "6386c9e090e50fcafdfa0af2",
+  "title": "Simultaneous Spatial and Temporal Assignment for Fast UAV Trajectory\n  Optimization using Bilevel Optimization",
+  "abstract": "  In this paper, we propose a framework for fast trajectory planning for unmanned aerial vehicles (UAVs). Our framework is reformulated from an existing bilevel optimization, in which the lower-level problem solves for the optimal trajectory with a fixed time allocation, whereas the upper-level problem updates the time allocation using analytical gradients. The lower-level problem incorporates the safety-set constraints (in the form of inequality constraints) and is cast as a convex quadratic program (QP). Our formulation modifies the lower-level QP by excluding the inequality constraints for the safety sets, which significantly reduces the computation time. The safety-set constraints are moved to the upper-level problem, where the feasible waypoints are updated together with the time allocation using analytical gradients enabled by the OptNet. We validate our approach in simulations, where our method's computation time scales linearly with respect to the number of safety sets, in contrast to the state-of-the-art that scales exponentially. "
+}

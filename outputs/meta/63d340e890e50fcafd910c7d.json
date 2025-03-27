@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-label Image Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DDA-MLIC",
+    "Two-component Gaussian Mixture Model",
+    "Frechet distance"
+  ],
+  "results": [
+    "Outperforms existing state-of-the-art methods",
+    "Lower number of parameters"
+  ],
+  "paper_id": "63d340e890e50fcafd910c7d",
+  "title": "Discriminator-free Unsupervised Domain Adaptation for Multi-label Image\n  Classification",
+  "abstract": "  In this paper, a discriminator-free adversarial-based Unsupervised Domain Adaptation (UDA) for Multi-Label Image Classification (MLIC) referred to as DDA-MLIC is proposed. Over the last two years, some attempts have been made for introducing adversarial-based UDA methods in the context of MLIC. However, these methods which rely on an additional discriminator subnet present two shortcomings. First, the learning of domain-invariant features may harm their task-specific discriminative power, since the classification and discrimination tasks are decoupled. Moreover, the use of an additional discriminator usually induces an increase of the network size. Herein, we propose to overcome these issues by introducing a novel adversarial critic that is directly deduced from the task-specific classifier. Specifically, a two-component Gaussian Mixture Model (GMM) is fitted on the source and target predictions, allowing the distinction of two clusters. This allows extracting a Gaussian distribution for each component. The resulting Gaussian distributions are then used for formulating an adversarial loss based on a Frechet distance. The proposed method is evaluated on three multi-label image datasets. The obtained results demonstrate that DDA-MLIC outperforms existing state-of-the-art methods while requiring a lower number of parameters. "
+}

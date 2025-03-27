@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/Sense-GVT/Fast-BEV"
+  ],
+  "tasks": [
+    "On-vehicle Bird's-Eye View Perception"
+  ],
+  "datasets": [
+    "nuScenes"
+  ],
+  "methods": [
+    "Fast-BEV framework",
+    "Data augmentation",
+    "Multi-frame feature fusion",
+    "Optimized view transformation"
+  ],
+  "results": [
+    "M1 model runs over 50FPS on Tesla T4",
+    "53.5% NDS on nuScenes validation set"
+  ],
+  "paper_id": "63ca069890e50fcafd683074",
+  "title": "Fast-BEV: Towards Real-time On-vehicle Bird's-Eye View Perception",
+  "abstract": "  Recently, the pure camera-based Bird's-Eye-View (BEV) perception removes expensive Lidar sensors, making it a feasible solution for economical autonomous driving. However, most existing BEV solutions either suffer from modest performance or require considerable resources to execute on-vehicle inference. This paper proposes a simple yet effective framework, termed Fast-BEV, which is capable of performing real-time BEV perception on the on-vehicle chips. Towards this goal, we first empirically find that the BEV representation can be sufficiently powerful without expensive view transformation or depth representation. Starting from M2BEV baseline, we further introduce (1) a strong data augmentation strategy for both image and BEV space to avoid over-fitting (2) a multi-frame feature fusion mechanism to leverage the temporal information (3) an optimized deployment-friendly view transformation to speed up the inference. Through experiments, we show Fast-BEV model family achieves considerable accuracy and efficiency on edge. In particular, our M1 model (R18@256x704) can run over 50FPS on the Tesla T4 platform, with 47.0% NDS on the nuScenes validation set. Our largest model (R101@900x1600) establishes a new state-of-the-art 53.5% NDS on the nuScenes validation set. The code is released at: https://github.com/Sense-GVT/Fast-BEV. "
+}

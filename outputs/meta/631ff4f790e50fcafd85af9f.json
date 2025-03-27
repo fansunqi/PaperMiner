@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Body Reconstruction",
+    "mmWave Radar"
+  ],
+  "datasets": [
+    "mmBody Benchmark"
+  ],
+  "methods": [
+    "Automatic 3D body annotation system",
+    "State-of-the-art methods with inputs from different sensors"
+  ],
+  "results": [
+    "mmWave radar achieves better reconstruction accuracy than RGB camera but worse than depth camera",
+    "Reconstruction from mmWave radar is moderately affected by adverse weather conditions, while RGB(D) camera is severely affected"
+  ],
+  "paper_id": "631ff4f790e50fcafd85af9f",
+  "title": "mmBody Benchmark: 3D Body Reconstruction Dataset and Analysis for\n  Millimeter Wave Radar",
+  "abstract": "  Millimeter Wave (mmWave) Radar is gaining popularity as it can work in adverse environments like smoke, rain, snow, poor lighting, etc. Prior work has explored the possibility of reconstructing 3D skeletons or meshes from the noisy and sparse mmWave Radar signals. However, it is unclear how accurately we can reconstruct the 3D body from the mmWave signals across scenes and how it performs compared with cameras, which are important aspects needed to be considered when either using mmWave radars alone or combining them with cameras. To answer these questions, an automatic 3D body annotation system is first designed and built up with multiple sensors to collect a large-scale dataset. The dataset consists of synchronized and calibrated mmWave radar point clouds and RGB(D) images in different scenes and skeleton/mesh annotations for humans in the scenes. With this dataset, we train state-of-the-art methods with inputs from different sensors and test them in various scenarios. The results demonstrate that 1) despite the noise and sparsity of the generated point clouds, the mmWave radar can achieve better reconstruction accuracy than the RGB camera but worse than the depth camera; 2) the reconstruction from the mmWave radar is affected by adverse weather conditions moderately while the RGB(D) camera is severely affected. Further, analysis of the dataset and the results shadow insights on improving the reconstruction from the mmWave radar and the combination of signals from different sensors. "
+}

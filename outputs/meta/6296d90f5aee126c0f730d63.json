@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Variable importance measurement",
+    "Algorithmic fairness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cohort Shapley"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6296d90f5aee126c0f730d63",
+  "title": "Variable importance without impossible data",
+  "abstract": "  The most popular methods for measuring importance of the variables in a black box prediction algorithm make use of synthetic inputs that combine predictor variables from multiple subjects. These inputs can be unlikely, physically impossible, or even logically impossible. As a result, the predictions for such cases can be based on data very unlike any the black box was trained on. We think that users cannot trust an explanation of the decision of a prediction algorithm when the explanation uses such values. Instead we advocate a method called Cohort Shapley that is grounded in economic game theory and unlike most other game theoretic methods, it uses only actually observed data to quantify variable importance. Cohort Shapley works by narrowing the cohort of subjects judged to be similar to a target subject on one or more features. We illustrate it on an algorithmic fairness problem where it is essential to attribute importance to protected variables that the model was not trained on. "
+}

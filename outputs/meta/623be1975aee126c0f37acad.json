@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Repeated balls-into-bins process analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "Lower bound of \u03a9(m/n log n) on the maximum load",
+    "Upper bound of O(m/n log n) on the maximum load",
+    "O(m^2/n) waiting time to reach a configuration with a O(m/n log m) maximum load",
+    "Every ball visits every bin in O(m log m) rounds"
+  ],
+  "paper_id": "623be1975aee126c0f37acad",
+  "title": "Tight Bounds for Repeated Balls-into-Bins",
+  "abstract": "  We study the repeated balls-into-bins process introduced by Becchetti, Clementi, Natale, Pasquale and Posta (2019). This process starts with $m$ balls arbitrarily distributed across $n$ bins. At each round $t=1,2,\\ldots$, one ball is selected from each non-empty bin, and then placed it into a bin chosen independently and uniformly at random. We prove the following results:   $\\quad \\bullet$ For any $n \\leq m \\leq \\mathrm{poly}(n)$, we prove a lower bound of $\\Omega(m/n \\cdot \\log n)$ on the maximum load. For the special case $m=n$, this matches the upper bound of $O(\\log n)$, as shown in [BCNPP19]. It also provides a positive answer to the conjecture in [BCNPP19] that for $m=n$ the maximum load is $\\omega(\\log n/ \\log \\log n)$ at least once in a polynomially large time interval. For $m\\in [\\omega(n),n\\log n]$, our new lower bound disproves the conjecture in [BCNPP19] that the maximum load remains $O(\\log n)$.   $\\quad \\bullet$ For any $n\\leq m\\leq\\mathrm{poly}(n)$, we prove an upper bound of $O(m/n\\cdot\\log n)$ on the maximum load for all steps of a polynomially large time interval. This matches our lower bound up to multiplicative constants.   $\\quad \\bullet$ For any $m\\geq n$, our analysis also implies an $O(m^2/n)$ waiting time to reach a configuration with a $O(m/n\\cdot\\log m)$ maximum load, even for worst-case initial distributions.   $\\quad \\bullet$ For any $m \\geq n$, we show that every ball visits every bin in $O(m\\log m)$ rounds. For $m = n$, this improves the previous upper bound of $O(n \\log^2 n)$ in [BCNPP19]. We also prove that the upper bound is tight up to multiplicative constants for any $n \\leq m \\leq \\mathrm{poly}(n)$. "
+}

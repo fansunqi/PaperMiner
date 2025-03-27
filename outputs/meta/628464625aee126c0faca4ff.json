@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hybrid quantum-classical neural networks training",
+    "Binary classification task"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Evolution Strategies (ES)",
+    "Parameter-shift rule method"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "628464625aee126c0faca4ff",
+  "title": "Evolution strategies: Application in hybrid quantum-classical neural\n  networks",
+  "abstract": "  With the rapid development of quantum computers, several applications are being proposed for them. Quantum simulations, simulation of chemical reactions, solution of optimization problems and quantum neural networks (QNNs) are some examples. However, problems such as noise, limited number of qubits and circuit depth, and gradient vanishing must be resolved before we can use them to their full potential. In the field of quantum machine learning, several models have been proposed. In general, in order to train these different models, we use the gradient of a cost function with respect to the model parameters. In order to obtain this gradient, we must compute the derivative of this function with respect to the model parameters. One of the most used methods in the literature to perform this task is the parameter-shift rule method. This method consists of evaluating the cost function twice for each parameter of the QNN. A problem with this method is that the number of evaluations grows linearly with the number of parameters. In this work we study an alternative method, called Evolution Strategies (ES), which are a family of black box optimization algorithms which iteratively update the parameters using a search gradient. An advantage of the ES method is that in using it one can control the number of times the cost function will be evaluated. We apply the ES method to the binary classification task, showing that this method is a viable alternative for training QNNs. However, we observe that its performance will be strongly dependent on the hyperparameters used. Furthermore, we also observe that this method, alike the parameter shift rule method, suffers from the problem of gradient vanishing. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Long-Range Aircraft Detection and Tracking"
+  ],
+  "datasets": [
+    "Amazon Airborne Object Tracking (AOT) Dataset"
+  ],
+  "methods": [
+    "Deep learning framework",
+    "Cascaded primary and secondary classifiers",
+    "Image alignment to remove ego-motion"
+  ],
+  "results": [
+    "Outperforms state-of-the-art baselines",
+    "Probability of track > 95% up to 700m range"
+  ],
+  "paper_id": "633269fb90e50fcafd49139f",
+  "title": "AirTrack: Onboard Deep Learning Framework for Long-Range Aircraft\n  Detection and Tracking",
+  "abstract": "  Detect-and-Avoid (DAA) capabilities are critical for safe operations of unmanned aircraft systems (UAS). This paper introduces, AirTrack, a real-time vision-only detect and tracking framework that respects the size, weight, and power (SWaP) constraints of sUAS systems. Given the low Signal-to-Noise ratios (SNR) of far away aircraft, we propose using full resolution images in a deep learning framework that aligns successive images to remove ego-motion. The aligned images are then used downstream in cascaded primary and secondary classifiers to improve detection and tracking performance on multiple metrics. We show that AirTrack outperforms state-of-the art baselines on the Amazon Airborne Object Tracking (AOT) Dataset. Multiple real world flight tests with a Cessna 182 interacting with general aviation traffic and additional near-collision flight tests with a Bell helicopter flying towards a UAS in a controlled setting showcase that the proposed approach satisfies the newly introduced ASTM F3442/F3442M standard for DAA. Empirical evaluations show that our system has a probability of track of more than 95% up to a range of 700m. Video available at https://youtu.be/H3lL_Wjxjpw . "
+}

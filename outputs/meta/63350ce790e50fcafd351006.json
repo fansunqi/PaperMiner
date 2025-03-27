@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural implicit representations",
+    "City-scale continual implicit dense mapping"
+  ],
+  "datasets": [
+    "SemanticKITTI"
+  ],
+  "methods": [
+    "Three-layer sampling",
+    "Panoptic representation",
+    "Dynamic generative model",
+    "Signed distance field (SDF)"
+  ],
+  "results": [
+    "Significant improvement in city-scale continual neural mapping",
+    "Quantitative and qualitative results demonstrating the effectiveness of the proposed methods"
+  ],
+  "paper_id": "63350ce790e50fcafd351006",
+  "title": "City-scale Incremental Neural Mapping with Three-layer Sampling and\n  Panoptic Representation",
+  "abstract": "  Neural implicit representations are drawing a lot of attention from the robotics community recently, as they are expressive, continuous and compact. However, city-scale continual implicit dense mapping based on sparse LiDAR input is still an under-explored challenge. To this end, we successfully build a city-scale continual neural mapping system with a panoptic representation that consists of environment-level and instance-level modelling. Given a stream of sparse LiDAR point cloud, it maintains a dynamic generative model that maps 3D coordinates to signed distance field (SDF) values. To address the difficulty of representing geometric information at different levels in city-scale space, we propose a tailored three-layer sampling strategy to dynamically sample the global, local and near-surface domains. Meanwhile, to realize high fidelity mapping of instance under incomplete observation, category-specific prior is introduced to better model the geometric details. We evaluate on the public SemanticKITTI dataset and demonstrate the significance of the newly proposed three-layer sampling strategy and panoptic representation, using both quantitative and qualitative results. Codes and model will be publicly available. "
+}

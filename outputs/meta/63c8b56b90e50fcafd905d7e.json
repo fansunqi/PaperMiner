@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/IT-Coimbra/RedBit"
+  ],
+  "tasks": [
+    "Evaluating the accuracy of quantized CNNs"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10",
+    "ImageNet"
+  ],
+  "methods": [
+    "RedBit framework"
+  ],
+  "results": [
+    "Accuracy losses for 1-bit quantization: MNIST [0.26%, 0.79%], CIFAR-10 [9.74%, 32.96%], ImageNet [10.86%, 47.36%] top-1"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905d7e",
+  "title": "RedBit: An End-to-End Flexible Framework for Evaluating the Accuracy of\n  Quantized CNNs",
+  "abstract": "  In recent years, Convolutional Neural Networks (CNNs) have become the standard class of deep neural network for image processing, classification and segmentation tasks. However, the large strides in accuracy obtained by CNNs have been derived from increasing the complexity of network topologies, which incurs sizeable performance and energy penalties in the training and inference of CNNs. Many recent works have validated the effectiveness of parameter quantization, which consists in reducing the bit width of the network's parameters, to enable the attainment of considerable performance and energy efficiency gains without significantly compromising accuracy. However, it is difficult to compare the relative effectiveness of different quantization methods. To address this problem, we introduce RedBit, an open-source framework that provides a transparent, extensible and easy-to-use interface to evaluate the effectiveness of different algorithms and parameter configurations on network accuracy. We use RedBit to perform a comprehensive survey of five state-of-the-art quantization methods applied to the MNIST, CIFAR-10 and ImageNet datasets. We evaluate a total of 2300 individual bit width combinations, independently tuning the width of the network's weight and input activation parameters, from 32 bits down to 1 bit (e.g., 8/8, 2/2, 1/32, 1/1, for weights/activations). Upwards of 20000 hours of computing time in a pool of state-of-the-art GPUs were used to generate all the results in this paper. For 1-bit quantization, the accuracy losses for the MNIST, CIFAR-10 and ImageNet datasets range between [0.26%, 0.79%], [9.74%, 32.96%] and [10.86%, 47.36%] top-1, respectively. We actively encourage the reader to download the source code and experiment with RedBit, and to submit their own observed results to our public repository, available at https://github.com/IT-Coimbra/RedBit. "
+}

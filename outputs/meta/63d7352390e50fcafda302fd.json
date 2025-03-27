@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fairness-aware Multivariate Time-series Forecasting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Recurrent graph convolution",
+    "Spectral relaxation of K-means",
+    "Filtering & fusion module",
+    "Orthogonality regularization"
+  ],
+  "results": [
+    "Significant performance improvement",
+    "Effective for fair forecasting"
+  ],
+  "paper_id": "63d7352390e50fcafda302fd",
+  "title": "Learning Informative Representation for Fairness-aware Multivariate\n  Time-series Forecasting: A Group-based Perspective",
+  "abstract": "  Multivariate time series (MTS) forecasting has penetrated and benefited our daily life. However, the unfair forecasting of MTSs not only degrades their practical benefit but even brings about serious potential risk. Such unfair MTS forecasting may be attributed to variable disparity leading to advantaged and disadvantaged variables. This issue has rarely been studied in the existing MTS forecasting models. To address this significant gap, we formulate the MTS fairness modeling problem as learning informative representations attending to both advantaged and disadvantaged variables. Accordingly, we propose a novel framework, named FairFor, for fairness-aware MTS forecasting. FairFor is based on adversarial learning to generate both group-irrelevant and -relevant representations for the downstream forecasting. FairFor first adopts the recurrent graph convolution to capture spatio-temporal variable correlations and to group variables by leveraging a spectral relaxation of the K-means objective. Then, it utilizes a novel filtering & fusion module to filter the group-relevant information and generate group-irrelevant representations by orthogonality regularization. The group-irrelevant and -relevant representations form highly informative representations, facilitating to share the knowledge from advantaged variables to disadvantaged variables and guarantee fairness. Extensive experiments on four public datasets demonstrate the FairFor effectiveness for fair forecasting and significant performance improvement. "
+}

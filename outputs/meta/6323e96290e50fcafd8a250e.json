@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/maruiperfect/SILF"
+  ],
+  "tasks": [
+    "Cross-Task Blind Image Quality Assessment"
+  ],
+  "datasets": [
+    "eleven IQA datasets"
+  ],
+  "methods": [
+    "Scalable Incremental Learning Framework (SILF)",
+    "dynamic parameter isolation strategy",
+    "memory unit pruning"
+  ],
+  "results": [
+    "significantly outperforms the other state-of-the-art methods in cross-task BIQA"
+  ],
+  "paper_id": "6323e96290e50fcafd8a250e",
+  "title": "Forgetting to Remember: A Scalable Incremental Learning Framework for\n  Cross-Task Blind Image Quality Assessment",
+  "abstract": "  Recent years have witnessed the great success of blind image quality assessment (BIQA) in various task-specific scenarios, which present invariable distortion types and evaluation criteria. However, due to the rigid structure and learning framework, they cannot apply to the cross-task BIQA scenario, where the distortion types and evaluation criteria keep changing in practical applications. This paper proposes a scalable incremental learning framework (SILF) that could sequentially conduct BIQA across multiple evaluation tasks with limited memory capacity. More specifically, we develop a dynamic parameter isolation strategy to sequentially update the task-specific parameter subsets, which are non-overlapped with each other. Each parameter subset is temporarily settled to Remember one evaluation preference toward its corresponding task, and the previously settled parameter subsets can be adaptively reused in the following BIQA to achieve better performance based on the task relevance. To suppress the unrestrained expansion of memory capacity in sequential tasks learning, we develop a scalable memory unit by gradually and selectively pruning unimportant neurons from previously settled parameter subsets, which enable us to Forget part of previous experiences and free the limited memory capacity for adapting to the emerging new tasks. Extensive experiments on eleven IQA datasets demonstrate that our proposed method significantly outperforms the other state-of-the-art methods in cross-task BIQA. The source code of the proposed method is available at https://github.com/maruiperfect/SILF. "
+}

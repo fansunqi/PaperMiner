@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Embodied Sign Language Fingerspelling Acquisition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "URDF model",
+    "Deep vision models",
+    "Proximal policy optimization",
+    "Soft actor-critic"
+  ],
+  "results": [
+    "Successfully imitate fine-grained movements without additional information"
+  ],
+  "paper_id": "631ff4f790e50fcafd85b0ad",
+  "title": "Signs of Language: Embodied Sign Language Fingerspelling Acquisition\n  from Demonstrations for Human-Robot Interaction",
+  "abstract": "  Learning fine-grained movements is a challenging topic in robotics, particularly in the context of robotic hands. One specific instance of this challenge is the acquisition of fingerspelling sign language in robots. In this paper, we propose an approach for learning dexterous motor imitation from video examples without additional information. To achieve this, we first build a URDF model of a robotic hand with a single actuator for each joint. We then leverage pre-trained deep vision models to extract the 3D pose of the hand from RGB videos. Next, using state-of-the-art reinforcement learning algorithms for motion imitation (namely, proximal policy optimization and soft actor-critic), we train a policy to reproduce the movement extracted from the demonstrations. We identify the optimal set of hyperparameters for imitation based on a reference motion. Finally, we demonstrate the generalizability of our approach by testing it on six different tasks, corresponding to fingerspelled letters. Our results show that our approach is able to successfully imitate these fine-grained movements without additional information, highlighting its potential for real-world applications in robotics. "
+}

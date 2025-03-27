@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Binary code similarity detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "UniASM",
+    "Transformer-based binary code embedding model",
+    "New tokenization approach"
+  ],
+  "results": [
+    "Recall@1: 0.77 on cross-compilers",
+    "Recall@1: 0.72 on cross-optimization levels",
+    "Recall@1: 0.72 on cross-obfuscations",
+    "Outperforms all current baselines in known vulnerability search"
+  ],
+  "paper_id": "6363316e90e50fcafd4fbd3a",
+  "title": "UniASM: Binary Code Similarity Detection without Fine-tuning",
+  "abstract": "  Binary code similarity detection (BCSD) is widely used in various binary analysis tasks such as vulnerability search, malware detection, clone detection, and patch analysis. Recent studies have shown that the learning-based binary code embedding models perform better than the traditional feature-based approaches. In this paper, we propose a novel transformer-based binary code embedding model named UniASM to learn representations of the binary functions. We design two new training tasks to make the spatial distribution of the generated vectors more uniform, which can be used directly in BCSD without any fine-tuning. In addition, we present a new tokenization approach for binary functions, which increases the token's semantic information and mitigates the out-of-vocabulary (OOV) problem. We conduct an in-depth analysis of the factors affecting model performance through ablation experiments and obtain some new and valuable findings. The experimental results show that UniASM outperforms the state-of-the-art (SOTA) approach on the evaluation dataset. The average scores of Recall@1 on cross-compilers, cross-optimization levels, and cross-obfuscations are 0.77, 0.72, and 0.72. Besides, in the real-world task of known vulnerability search, UniASM outperforms all the current baselines. "
+}

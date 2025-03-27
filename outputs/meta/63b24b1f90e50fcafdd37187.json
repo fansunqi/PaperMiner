@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neuromorphic computing",
+    "Deep Learning",
+    "Bio-plausible learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Direct Feedback Alignment",
+    "Compute-In-Memory-based hardware",
+    "DNN+NeuroSim"
+  ],
+  "results": [
+    "Backpropagation-based accuracy remains high",
+    "Direct Feedback Alignment reduces training time by a factor approaching N for N-layered networks"
+  ],
+  "paper_id": "63b24b1f90e50fcafdd37187",
+  "title": "Biologically Plausible Learning on Neuromorphic Hardware Architectures",
+  "abstract": "  With an ever-growing number of parameters defining increasingly complex networks, Deep Learning has led to several breakthroughs surpassing human performance. As a result, data movement for these millions of model parameters causes a growing imbalance known as the memory wall. Neuromorphic computing is an emerging paradigm that confronts this imbalance by performing computations directly in analog memories. On the software side, the sequential Backpropagation algorithm prevents efficient parallelization and thus fast convergence. A novel method, Direct Feedback Alignment, resolves inherent layer dependencies by directly passing the error from the output to each layer. At the intersection of hardware/software co-design, there is a demand for developing algorithms that are tolerable to hardware nonidealities. Therefore, this work explores the interrelationship of implementing bio-plausible learning in-situ on neuromorphic hardware, emphasizing energy, area, and latency constraints. Using the benchmarking framework DNN+NeuroSim, we investigate the impact of hardware nonidealities and quantization on algorithm performance, as well as how network topologies and algorithm-level design choices can scale latency, energy and area consumption of a chip. To the best of our knowledge, this work is the first to compare the impact of different learning algorithms on Compute-In-Memory-based hardware and vice versa. The best results achieved for accuracy remain Backpropagation-based, notably when facing hardware imperfections. Direct Feedback Alignment, on the other hand, allows for significant speedup due to parallelization, reducing training time by a factor approaching N for N-layered networks. "
+}

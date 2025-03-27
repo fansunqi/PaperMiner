@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Transfer learning",
+    "Fine-tuning of deep neural networks",
+    "Generalization properties",
+    "Overfitting",
+    "Robustness against noisy labels"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hessian-based generalization bounds",
+    "Consistent losses",
+    "Distance-based regularization",
+    "PAC-Bayesian analysis"
+  ],
+  "results": [
+    "3.26% accuracy gain over prior fine-tuning methods",
+    "Hessian distance measure decreases by six times more than existing approaches"
+  ],
+  "paper_id": "629ec1f95aee126c0fb704c9",
+  "title": "Robust Fine-Tuning of Deep Neural Networks with Hessian-based\n  Generalization Guarantees",
+  "abstract": "  We consider transfer learning approaches that fine-tune a pretrained deep neural network on a target task. We study the generalization properties of fine-tuning to understand the problem of overfitting, which commonly occurs in practice. Previous works have shown that constraining the distance from the initialization of fine-tuning improves generalization. Using a PAC-Bayesian analysis, we observe that besides distance from initialization, Hessians affect generalization through the noise stability of deep neural networks against noise injections. Motivated by the observation, we develop Hessian distance-based generalization bounds for a wide range of fine-tuning methods. Additionally, we study the robustness of fine-tuning in the presence of noisy labels. We design an algorithm incorporating consistent losses and distance-based regularization for fine-tuning, along with a generalization error guarantee under class conditional independent noise in the training set labels. We perform a detailed empirical study of our algorithm on various noisy environments and architectures. On six image classification tasks whose training labels are generated with programmatic labeling, we find a 3.26% accuracy gain over prior fine-tuning methods. Meanwhile, the Hessian distance measure of the fine-tuned model decreases by six times more than existing approaches. "
+}

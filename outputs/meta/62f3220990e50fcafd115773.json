@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predicting drug effects"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neighborhood regularized bidirectional matrix factorization (NRBdMF)"
+  ],
+  "results": [
+    "Reduced false positives",
+    "Highly interpretable output"
+  ],
+  "paper_id": "62f3220990e50fcafd115773",
+  "title": "NRBdMF: A recommendation algorithm for predicting drug effects\n  considering directionality",
+  "abstract": "  Predicting the novel effects of drugs based on information about approved drugs can be regarded as a recommendation system. Matrix factorization is one of the most used recommendation systems and various algorithms have been devised for it. A literature survey and summary of existing algorithms for predicting drug effects demonstrated that most such methods, including neighborhood regularized logistic matrix factorization, which was the best performer in benchmark tests, used a binary matrix that considers only the presence or absence of interactions. However, drug effects are known to have two opposite aspects, such as side effects and therapeutic effects. In the present study, we proposed using neighborhood regularized bidirectional matrix factorization (NRBdMF) to predict drug effects by incorporating bidirectionality, which is a characteristic property of drug effects. We used this proposed method for predicting side effects using a matrix that considered the bidirectionality of drug effects, in which known side effects were assigned a positive label (plus 1) and known treatment effects were assigned a negative (minus 1) label. The NRBdMF model, which utilizes drug bidirectional information, achieved enrichment of side effects at the top and indications at the bottom of the prediction list. This first attempt to consider the bidirectional nature of drug effects using NRBdMF showed that it reduced false positives and produced a highly interpretable output. "
+}

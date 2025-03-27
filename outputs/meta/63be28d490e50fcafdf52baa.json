@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sequential Fair Resource Allocation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Markov Decision Process (MDP)",
+    "SAFFE algorithm"
+  ],
+  "results": [
+    "More fair and efficient allocations",
+    "Close-to-optimal performance in settings with dense arrivals"
+  ],
+  "paper_id": "63be28d490e50fcafdf52baa",
+  "title": "Sequential Fair Resource Allocation under a Markov Decision Process\n  Framework",
+  "abstract": "  We study the sequential decision-making problem of allocating a limited resource to agents that reveal their stochastic demands on arrival over a finite horizon. Our goal is to design fair allocation algorithms that exhaust the available resource budget. This is challenging in sequential settings where information on future demands is not available at the time of decision-making. We formulate the problem as a discrete time Markov decision process (MDP). We propose a new algorithm, SAFFE, that makes fair allocations with respect to the entire demands revealed over the horizon by accounting for expected future demands at each arrival time. The algorithm introduces regularization which enables the prioritization of current revealed demands over future potential demands depending on the uncertainty in agents' future demands. Using the MDP formulation, we show that SAFFE optimizes allocations based on an upper bound on the Nash Social Welfare fairness objective, and we bound its gap to optimality with the use of concentration bounds on total future demands. Using synthetic and real data, we compare the performance of SAFFE against existing approaches and a reinforcement learning policy trained on the MDP. We show that SAFFE leads to more fair and efficient allocations and achieves close-to-optimal performance in settings with dense arrivals. "
+}

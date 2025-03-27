@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Minimum-Cost Temporal Walks under Waiting-Time Constraints"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Linear time algorithm",
+    "Algebraic framework for manipulating abstract costs"
+  ],
+  "results": [
+    "Linear time complexity for minimum-cost temporal walks",
+    "Logarithmic factor improvement under waiting constraints"
+  ],
+  "paper_id": "637d8f5c90e50fcafd6e6f9a",
+  "title": "Minimum-Cost Temporal Walks under Waiting-Time Constraints in Linear\n  Time",
+  "abstract": "  In a temporal graph, each edge is available at specific points in time. Such an availability point is often represented by a ''temporal edge'' that can be traversed from its tail only at a specific departure time, for arriving in its head after a specific travel time. In such a graph, the connectivity from one node to another is naturally captured by the existence of a temporal path where temporal edges can be traversed one after the other. When imposing constraints on how much time it is possible to wait at a node in-between two temporal edges, it then becomes interesting to consider temporal walks where it is allowed to visit several times the same node, possibly at different times. We study the complexity of computing minimum-cost temporal walks from a single source under waiting-time constraints in a temporal graph, and ask under which conditions this problem can be solved in linear time. Our main result is a linear time algorithm when the input temporal graph is given by its (classical) space-time representation. We use an algebraic framework for manipulating abstract costs, enabling the optimization of a large variety of criteria or even combinations of these. It allows to improve previous results for several criteria such as number of edges or overall waiting time even without waiting constraints. It saves a logarithmic factor for all criteria under waiting constraints. Interestingly, we show that a logarithmic factor in the time complexity appears to be necessary with a more basic input consisting of a single ordered list of temporal edges (sorted either by arrival times or departure times). We indeed show equivalence between the space-time representation and a representation with two ordered lists. "
+}

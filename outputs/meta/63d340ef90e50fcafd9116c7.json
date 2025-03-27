@@ -1,0 +1,33 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Toxic comment classification"
+  ],
+  "datasets": [
+    "Civil Comments"
+  ],
+  "methods": [
+    "BERT",
+    "RNN",
+    "BiLSTM",
+    "RoBERTa",
+    "Focal Loss",
+    "DistilBERT",
+    "CNN",
+    "Compact Convolutional Transformers"
+  ],
+  "results": [
+    "All BERTs have similar performance",
+    "RNNs are much faster at inference",
+    "BiLSTM is a good compromise",
+    "RoBERTa with Focal Loss offers the best performance on biases and AUROC",
+    "DistilBERT combines good AUROC and low inference time",
+    "All models are affected by identity bias",
+    "BERT, RNN, and XLNet are less sensitive than CNN and Compact Convolutional Transformers"
+  ],
+  "paper_id": "63d340ef90e50fcafd9116c7",
+  "title": "A benchmark for toxic comment classification on Civil Comments dataset",
+  "abstract": "  Toxic comment detection on social media has proven to be essential for content moderation. This paper compares a wide set of different models on a highly skewed multi-label hate speech dataset. We consider inference time and several metrics to measure performance and bias in our comparison. We show that all BERTs have similar performance regardless of the size, optimizations or language used to pre-train the models. RNNs are much faster at inference than any of the BERT. BiLSTM remains a good compromise between performance and inference time. RoBERTa with Focal Loss offers the best performance on biases and AUROC. However, DistilBERT combines both good AUROC and a low inference time. All models are affected by the bias of associating identities. BERT, RNN, and XLNet are less sensitive than the CNN and Compact Convolutional Transformers. "
+}

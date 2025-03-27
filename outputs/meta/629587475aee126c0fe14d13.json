@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MaxFL"
+  ],
+  "results": [
+    "Test accuracy improvement: 22%-40% for training clients, 18%-50% for unseen clients"
+  ],
+  "paper_id": "629587475aee126c0fe14d13",
+  "title": "Maximizing Global Model Appeal in Federated Learning",
+  "abstract": "  Federated learning typically considers collaboratively training a global model using local data at edge clients. Clients may have their own individual requirements, such as having a minimal training loss threshold, which they expect to be met by the global model. However, due to client heterogeneity, the global model may not meet each client's requirements, and only a small subset may find the global model appealing. In this work, we explore the problem of the global model lacking appeal to the clients due to not being able to satisfy local requirements. We propose MaxFL, which aims to maximize the number of clients that find the global model appealing. We show that having a high global model appeal is important to maintain an adequate pool of clients for training, and can directly improve the test accuracy on both seen and unseen clients. We provide convergence guarantees for MaxFL and show that MaxFL achieves a $22$-$40\\%$ and $18$-$50\\%$ test accuracy improvement for the training clients and unseen clients respectively, compared to a wide range of FL modeling approaches, including those that tackle data heterogeneity, aim to incentivize clients, and learn personalized or fair models. "
+}

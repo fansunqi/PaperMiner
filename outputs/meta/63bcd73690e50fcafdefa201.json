@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Aerodynamic flow reconstruction from sparse sensing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph Neural Networks (GNNs)",
+    "Message-Passing Neural Network"
+  ],
+  "results": [
+    "Generalization to unseen cases in high Reynolds turbulent inflow conditions"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa201",
+  "title": "Graph Neural Networks for Aerodynamic Flow Reconstruction from Sparse\n  Sensing",
+  "abstract": "  Sensing the fluid flow around an arbitrary geometry entails extrapolating from the physical quantities perceived at its surface in order to reconstruct the features of the surrounding fluid. This is a challenging inverse problem, yet one that if solved could have a significant impact on many engineering applications. The exploitation of such an inverse logic has gained interest in recent years with the advent of widely available cheap but capable MEMS-based sensors. When combined with novel data-driven methods, these sensors may allow for flow reconstruction around immersed structures, benefiting applications such as unmanned airborne/underwater vehicle path planning or control and structural health monitoring of wind turbine blades. In this work, we train deep reversible Graph Neural Networks (GNNs) to perform flow sensing (flow reconstruction) around two-dimensional aerodynamic shapes: airfoils. Motivated by recent work, which has shown that GNNs can be powerful alternatives to mesh-based forward physics simulators, we implement a Message-Passing Neural Network to simultaneously reconstruct both the pressure and velocity fields surrounding simulated airfoils based on their surface pressure distributions, whilst additionally gathering useful farfield properties in the form of context vectors. We generate a unique dataset of Computational Fluid Dynamics simulations by simulating random, yet meaningful combinations of input boundary conditions and airfoil shapes. We show that despite the challenges associated with reconstructing the flow around arbitrary airfoil geometries in high Reynolds turbulent inflow conditions, our framework is able to generalize well to unseen cases. "
+}

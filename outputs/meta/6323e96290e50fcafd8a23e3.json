@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Question Answering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Correlation Information Bottleneck (CIB)"
+  ],
+  "results": [
+    "Improved input robustness",
+    "Enhanced model robustness and accuracy"
+  ],
+  "paper_id": "6323e96290e50fcafd8a23e3",
+  "title": "Correlation Information Bottleneck: Towards Adapting Pretrained\n  Multimodal Models for Robust Visual Question Answering",
+  "abstract": "  Benefiting from large-scale pretrained vision language models (VLMs), the performance of Visual Question Answering (VQA) has approached human oracle performance. However, finetuning large-scale pretrained VLMs with limited data usually suffers from overfitting and poor generalization issues, leading to a lack of model robustness. In this paper, we aim to improve the input robustness, \\ie the ability of models to defend against visual and linguistic input variations as well as shortcut learning involved in inputs, from the perspective of Information Bottleneck when adapting pretrained VLMs to the downstream VQA task. Generally, internal representations obtained by pretrained VLMs inevitably contain irrelevant and redundant information for a specific downstream task, resulting in statistically spurious correlations and insensitivity to input variations. To encourage the obtained representations to converge to a minimal sufficient statistic in vision-language learning, we propose the Correlation Information Bottleneck (CIB) principle, which seeks a tradeoff between representation compression and redundancy by minimizing the mutual information (MI) between inputs and internal representations while maximizing the MI between outputs and the representations. Furthermore, CIB measures the internal correlations among visual and linguistic inputs and representations via a symmetrized joint MI estimation. Extensive experiments on five VQA datasets of input robustness demonstrate the effectiveness and superiority of the proposed CIB in terms of robustness and accuracy. "
+}

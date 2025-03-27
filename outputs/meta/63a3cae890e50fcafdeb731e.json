@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Risk detection in people with dementia using videos"
+  ],
+  "datasets": [
+    "Anonymized videos of normal activities",
+    "Real-world study in a dementia care unit"
+  ],
+  "methods": [
+    "Spatio-temporal convolutional autoencoders",
+    "Body pose information extraction",
+    "Semantic segmentation masks"
+  ],
+  "results": [
+    "Area under the receiver operating characteristic curve performance: 0.807 (skeleton-based), 0.823 (segmentation mask-based)"
+  ],
+  "paper_id": "63a3cae890e50fcafdeb731e",
+  "title": "Privacy-Protecting Behaviours of Risk Detection in People with Dementia\n  using Videos",
+  "abstract": "  People living with dementia often exhibit behavioural and psychological symptoms of dementia that can put their and others' safety at risk. Existing video surveillance systems in long-term care facilities can be used to monitor such behaviours of risk to alert the staff to prevent potential injuries or death in some cases. However, these behaviours of risk events are heterogeneous and infrequent in comparison to normal events. Moreover, analyzing raw videos can also raise privacy concerns. In this paper, we present two novel privacy-protecting video-based anomaly detection approaches to detect behaviours of risks in people with dementia. We either extracted body pose information as skeletons or used semantic segmentation masks to replace multiple humans in the scene with their semantic boundaries. Our work differs from most existing approaches for video anomaly detection that focus on appearance-based features, which can put the privacy of a person at risk and is also susceptible to pixel-based noise, including illumination and viewing direction. We used anonymized videos of normal activities to train customized spatio-temporal convolutional autoencoders and identify behaviours of risk as anomalies. We showed our results on a real-world study conducted in a dementia care unit with patients with dementia, containing approximately 21 hours of normal activities data for training and 9 hours of data containing normal and behaviours of risk events for testing. We compared our approaches with the original RGB videos and obtained a similar area under the receiver operating characteristic curve performance of 0.807 for the skeleton-based approach and 0.823 for the segmentation mask-based approach. "
+}

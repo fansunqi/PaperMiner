@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video prediction and generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic Latent Hierarchy (DLH)"
+  ],
+  "results": [
+    "DLH outperforms state-of-the-art benchmarks in video prediction",
+    "Better representation of stochasticity",
+    "Dynamic adjustment of hierarchical and temporal structure"
+  ],
+  "paper_id": "63b24b2090e50fcafdd371bf",
+  "title": "Long-horizon video prediction using a dynamic latent hierarchy",
+  "abstract": "  The task of video prediction and generation is known to be notoriously difficult, with the research in this area largely limited to short-term predictions. Though plagued with noise and stochasticity, videos consist of features that are organised in a spatiotemporal hierarchy, different features possessing different temporal dynamics. In this paper, we introduce Dynamic Latent Hierarchy (DLH) -- a deep hierarchical latent model that represents videos as a hierarchy of latent states that evolve over separate and fluid timescales. Each latent state is a mixture distribution with two components, representing the immediate past and the predicted future, causing the model to learn transitions only between sufficiently dissimilar states, while clustering temporally persistent states closer together. Using this unique property, DLH naturally discovers the spatiotemporal structure of a dataset and learns disentangled representations across its hierarchy. We hypothesise that this simplifies the task of modeling temporal dynamics of a video, improves the learning of long-term dependencies, and reduces error accumulation. As evidence, we demonstrate that DLH outperforms state-of-the-art benchmarks in video prediction, is able to better represent stochasticity, as well as to dynamically adjust its hierarchical and temporal structure. Our paper shows, among other things, how progress in representation learning can translate into progress in prediction tasks. "
+}

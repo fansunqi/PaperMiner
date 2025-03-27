@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/bmezaris/Gated-ViGAT"
+  ],
+  "tasks": [
+    "Video event recognition"
+  ],
+  "datasets": [
+    "MiniKinetics",
+    "ActivityNet"
+  ],
+  "methods": [
+    "Gated-ViGAT",
+    "bottom-up (object) information",
+    "weighted in-degrees (WiDs)",
+    "dissimilarity measure",
+    "gating mechanism"
+  ],
+  "results": [
+    "large computational complexity reduction",
+    "maintaining excellent event recognition and explainability performance"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c555",
+  "title": "Gated-ViGAT: Efficient Bottom-Up Event Recognition and Explanation Using\n  a New Frame Selection Policy and Gating Mechanism",
+  "abstract": "  In this paper, Gated-ViGAT, an efficient approach for video event recognition, utilizing bottom-up (object) information, a new frame sampling policy and a gating mechanism is proposed. Specifically, the frame sampling policy uses weighted in-degrees (WiDs), derived from the adjacency matrices of graph attention networks (GATs), and a dissimilarity measure to select the most salient and at the same time diverse frames representing the event in the video. Additionally, the proposed gating mechanism fetches the selected frames sequentially, and commits early-exiting when an adequately confident decision is achieved. In this way, only a few frames are processed by the computationally expensive branch of our network that is responsible for the bottom-up information extraction. The experimental evaluation on two large, publicly available video datasets (MiniKinetics, ActivityNet) demonstrates that Gated-ViGAT provides a large computational complexity reduction in comparison to our previous approach (ViGAT), while maintaining the excellent event recognition and explainability performance. Gated-ViGAT source code is made publicly available at https://github.com/bmezaris/Gated-ViGAT "
+}

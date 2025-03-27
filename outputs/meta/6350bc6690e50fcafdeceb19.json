@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Basin prediction",
+    "Learning dynamics of multistable systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reservoir Computing",
+    "Echo state networks",
+    "Next-Generation Reservoir Computing (NGRC)"
+  ],
+  "results": [
+    "Standard RC models struggle to learn dynamics without prior knowledge",
+    "NGRC can accurately reconstruct basins of attraction with sparse data",
+    "Tiny uncertainty in nonlinearity breaks NGRC"
+  ],
+  "paper_id": "6350bc6690e50fcafdeceb19",
+  "title": "A Catch-22 of Reservoir Computing",
+  "abstract": "  Reservoir Computing (RC) is a simple and efficient model-free framework for forecasting the behavior of nonlinear dynamical systems from data. Here, we show that there exist commonly-studied systems for which leading RC frameworks struggle to learn the dynamics unless key information about the underlying system is already known. We focus on the important problem of basin prediction -- determining which attractor a system will converge to from its initial conditions. First, we show that the predictions of standard RC models (echo state networks) depend critically on warm-up time, requiring a warm-up trajectory containing almost the entire transient in order to identify the correct attractor even after being trained with optimal hyperparameters. Accordingly, we turn to Next-Generation Reservoir Computing (NGRC), an attractive variant of RC that requires negligible warm-up time. By incorporating the exact nonlinearities in the original equations, we show that NGRC can accurately reconstruct intricate and high-dimensional basins of attraction, even with sparse training data (e.g., a single transient trajectory). Yet, a tiny uncertainty on the exact nonlinearity can already break NGRC, rendering the prediction accuracy no better than chance. Our results highlight the challenges faced by data-driven methods in learning the dynamics of multistable systems and suggest potential avenues to make these approaches more robust. "
+}

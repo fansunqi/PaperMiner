@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/freshman97/LinTransUNet"
+  ],
+  "tasks": [
+    "3D Biomedical Image Segmentation"
+  ],
+  "datasets": [
+    "CT pancreas segmentation datasets"
+  ],
+  "methods": [
+    "Dynamic Linear Transformer",
+    "encoder-decoder style architecture",
+    "dynamic token concept",
+    "uncertainty maps"
+  ],
+  "results": [
+    "promising highly feasible segmentation performance",
+    "accurate uncertainty quantification using single annotation"
+  ],
+  "paper_id": "62997c085aee126c0f77ca70",
+  "title": "Dynamic Linear Transformer for 3D Biomedical Image Segmentation",
+  "abstract": "  Transformer-based neural networks have surpassed promising performance on many biomedical image segmentation tasks due to a better global information modeling from the self-attention mechanism. However, most methods are still designed for 2D medical images while ignoring the essential 3D volume information. The main challenge for 3D transformer-based segmentation methods is the quadratic complexity introduced by the self-attention mechanism \\cite{vaswani2017attention}. In this paper, we propose a novel transformer architecture for 3D medical image segmentation using an encoder-decoder style architecture with linear complexity. Furthermore, we newly introduce a dynamic token concept to further reduce the token numbers for self-attention calculation. Taking advantage of the global information modeling, we provide uncertainty maps from different hierarchy stages. We evaluate this method on multiple challenging CT pancreas segmentation datasets. Our promising results show that our novel 3D Transformer-based segmentor could provide promising highly feasible segmentation performance and accurate uncertainty quantification using single annotation. Code is available https://github.com/freshman97/LinTransUNet. "
+}

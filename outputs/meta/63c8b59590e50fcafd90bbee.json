@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shared Resource Orchestration in Kubernetes",
+    "Support RT-Cloud Containers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Extensions for Kubernetes",
+    "Resource management architectures (ACTORS, DREAMS)"
+  ],
+  "results": [
+    "Fine-grained monitoring and allocation of shared resources",
+    "Better isolation for real-time containers",
+    "Dynamic orchestration and balancing of containers"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bbee",
+  "title": "Extensions for Shared Resource Orchestration in Kubernetes to Support\n  RT-Cloud Containers",
+  "abstract": "  Industries are considering the adoption of cloud computing for real-time applications due to current improvements in network latencies and the advent of Fog and Edge computing. To create an RT-cloud capable of hosting real-time applications, it is increasingly significant to improve the entire stack, including the containerization of applications, and their deployment and orchestration across nodes. However, state-of-the-art orchestrators (e.g., Kubernetes) and underlying container engines are designed for general-purpose applications. They ignore orchestration and management of shared resources (e.g. memory bandwidth, cache, shared interconnect) making them unsuitable for use with an RT-cloud. Taking inspiration from existing resource management architectures for multicore nodes, such as ACTORS, and for distributed mixed-criticality systems, such as the DREAMS, we propose a series of extensions in the way shared resources are orchestrated by Kubernetes and managed by the underlying Linux layers. Our approach allows fine-grained monitoring and allocation of low-level shared resources on nodes to provide better isolation to real-time containers and supports dynamic orchestration and balancing of containers across the nodes based on the availability and demand of shared resources. "
+}

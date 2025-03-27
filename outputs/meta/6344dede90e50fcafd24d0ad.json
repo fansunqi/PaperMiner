@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision-language pre-training",
+    "Object detection",
+    "Segmentation",
+    "Referring expression comprehension"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Vision-Language Transformer",
+    "Weakly-supervised local-feature Alignment",
+    "Graph optimal transport"
+  ],
+  "results": [
+    "Fine-grained region-level image understanding without box annotations",
+    "Outperforms methods with more caption and box annotations"
+  ],
+  "paper_id": "6344dede90e50fcafd24d0ad",
+  "title": "VoLTA: Vision-Language Transformer with Weakly-Supervised Local-Feature\n  Alignment",
+  "abstract": "  Vision-language pre-training (VLP) has recently proven highly effective for various uni- and multi-modal downstream applications. However, most existing end-to-end VLP methods use high-resolution image-text box data to perform well on fine-grained region-level tasks, such as object detection, segmentation, and referring expression comprehension. Unfortunately, such high-resolution images with accurate bounding box annotations are expensive to collect and use for supervision at scale. In this work, we propose VoLTA (Vision-Language Transformer with weakly-supervised local-feature Alignment), a new VLP paradigm that only utilizes image-caption data but achieves fine-grained region-level image understanding, eliminating the use of expensive box annotations. VoLTA adopts graph optimal transport-based weakly-supervised alignment on local image patches and text tokens to germinate an explicit, self-normalized, and interpretable low-level matching criterion. In addition, VoLTA pushes multi-modal fusion deep into the uni-modal backbones during pre-training and removes fusion-specific transformer layers, further reducing memory requirements. Extensive experiments on a wide range of vision- and vision-language downstream tasks demonstrate the effectiveness of VoLTA on fine-grained applications without compromising the coarse-grained downstream performance, often outperforming methods using significantly more caption and box annotations. "
+}

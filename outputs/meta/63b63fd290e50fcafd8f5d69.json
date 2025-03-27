@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic sentence classification",
+    "Detecting missing bibliographic links"
+  ],
+  "datasets": [
+    "STEM scientific papers"
+  ],
+  "methods": [
+    "Text sampling strategies",
+    "Ensemble voting"
+  ],
+  "results": [
+    "Classification accuracy of 98% (F1-score)"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5d69",
+  "title": "Text sampling strategies for predicting missing bibliographic links",
+  "abstract": "  The paper proposes various strategies for sampling text data when performing automatic sentence classification for the purpose of detecting missing bibliographic links. We construct samples based on sentences as semantic units of the text and add their immediate context which consists of several neighboring sentences. We examine a number of sampling strategies that differ in context size and position. The experiment is carried out on the collection of STEM scientific papers. Including the context of sentences into samples improves the result of their classification. We automatically determine the optimal sampling strategy for a given text collection by implementing an ensemble voting when classifying the same data sampled in different ways. Sampling strategy taking into account the sentence context with hard voting procedure leads to the classification accuracy of 98% (F1-score). This method of detecting missing bibliographic links can be used in recommendation engines of applied intelligent information systems. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "In-car Speech Separation"
+  ],
+  "datasets": [
+    "simulated and real-world recordings"
+  ],
+  "methods": [
+    "Deep Neural Mel-Subband Beamformer"
+  ],
+  "results": [
+    "Better separation performance over all SB and FB approaches",
+    "Performance closer to NB processing techniques while requiring lower computing cost"
+  ],
+  "paper_id": "637ee0e790e50fcafd0f6455",
+  "title": "Deep Neural Mel-Subband Beamformer for In-car Speech Separation",
+  "abstract": "  While current deep learning (DL)-based beamforming techniques have been proved effective in speech separation, they are often designed to process narrow-band (NB) frequencies independently which results in higher computational costs and inference times, making them unsuitable for real-world use. In this paper, we propose DL-based mel-subband spatio-temporal beamformer to perform speech separation in a car environment with reduced computation cost and inference time. As opposed to conventional subband (SB) approaches, our framework uses a mel-scale based subband selection strategy which ensures a fine-grained processing for lower frequencies where most speech formant structure is present, and coarse-grained processing for higher frequencies. In a recursive way, robust frame-level beamforming weights are determined for each speaker location/zone in a car from the estimated subband speech and noise covariance matrices. Furthermore, proposed framework also estimates and suppresses any echoes from the loudspeaker(s) by using the echo reference signals. We compare the performance of our proposed framework to several NB, SB, and full-band (FB) processing techniques in terms of speech quality and recognition metrics. Based on experimental evaluations on simulated and real-world recordings, we find that our proposed framework achieves better separation performance over all SB and FB approaches and achieves performance closer to NB processing techniques while requiring lower computing cost. "
+}

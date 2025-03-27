@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stable mergesort variant"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multiway Powersort",
+    "Powersort",
+    "Timsort",
+    "Multiway Quicksort",
+    "Dual-Pivot Quicksort"
+  ],
+  "results": [
+    "Substantial speedups over standard (2-way) Powersort and other stable sorting methods"
+  ],
+  "paper_id": "6323e96290e50fcafd8a2358",
+  "title": "Multiway Powersort",
+  "abstract": "  We present a stable mergesort variant, Multiway Powersort, that exploits existing runs and finds nearly-optimal merging orders for k-way merges with negligible overhead. This builds on Powersort (Munro & Wild, ESA2018), which has recently replaced Timsort's suboptimal merge policy in the CPython reference implementation of Python, as well as in PyPy and further libraries. Multiway Powersort reduces the number of memory transfers, which increasingly determine the cost of internal sorting (as observed with Multiway Quicksort (Kushagra et al., ALENEX 2014; Aum\\\"uller & Dietzfelbinger, TALG 2016; Wild, PhD thesis 2016) and the inclusion of Dual-Pivot Quicksort in the Java runtime library). We demonstrate that our 4-way Powersort implementation can achieve substantial speedups over standard (2-way) Powersort and other stable sorting methods without compromising the optimally run-adaptive performance of Powersort. "
+}

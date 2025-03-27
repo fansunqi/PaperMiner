@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mixed-Integer Black-Box Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CMA-ES with Margin"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "629041ab5aee126c0fb5da3f",
+  "title": "CMA-ES with Margin: Lower-Bounding Marginal Probability for\n  Mixed-Integer Black-Box Optimization",
+  "abstract": "  This study targets the mixed-integer black-box optimization (MI-BBO) problem where continuous and integer variables should be optimized simultaneously. The CMA-ES, our focus in this study, is a population-based stochastic search method that samples solution candidates from a multivariate Gaussian distribution (MGD), which shows excellent performance in continuous BBO. The parameters of MGD, mean and (co)variance, are updated based on the evaluation value of candidate solutions in the CMA-ES. If the CMA-ES is applied to the MI-BBO with straightforward discretization, however, the variance corresponding to the integer variables becomes much smaller than the granularity of the discretization before reaching the optimal solution, which leads to the stagnation of the optimization. In particular, when binary variables are included in the problem, this stagnation more likely occurs because the granularity of the discretization becomes wider, and the existing modification to the CMA-ES does not address this stagnation. To overcome these limitations, we propose a simple modification of the CMA-ES based on lower-bounding the marginal probabilities associated with the generation of integer variables in the MGD. The numerical experiments on the MI-BBO benchmark problems demonstrate the efficiency and robustness of the proposed method. "
+}

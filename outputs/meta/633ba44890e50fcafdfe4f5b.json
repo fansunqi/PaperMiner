@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predicting proximal femoral strength"
+  ],
+  "datasets": [
+    "Louisiana Osteoporosis Study (LOS)"
+  ],
+  "methods": [
+    "Multi-view variational autoencoder (MVAE)",
+    "Product of expert (PoE) model",
+    "Variational inference",
+    "Genome-wide association studies (GWAS)",
+    "Whole genome sequence (WGS) features",
+    "DXA-derived imaging features"
+  ],
+  "results": [
+    "Mean absolute percentage error of 18.04%, 6.84%, and 7.95% for predicting proximal femoral fracture loads",
+    "Best performance compared to existing multi-view information fusion methods"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4f5b",
+  "title": "Multi-view information fusion using multi-view variational autoencoders\n  to predict proximal femoral strength",
+  "abstract": "  The aim of this paper is to design a deep learning-based model to predict proximal femoral strength using multi-view information fusion. Method: We developed new models using multi-view variational autoencoder (MVAE) for feature representation learning and a product of expert (PoE) model for multi-view information fusion. We applied the proposed models to an in-house Louisiana Osteoporosis Study (LOS) cohort with 931 male subjects, including 345 African Americans and 586 Caucasians. With an analytical solution of the product of Gaussian distribution, we adopted variational inference to train the designed MVAE-PoE model to perform common latent feature extraction. We performed genome-wide association studies (GWAS) to select 256 genetic variants with the lowest p-values for each proximal femoral strength and integrated whole genome sequence (WGS) features and DXA-derived imaging features to predict proximal femoral strength. Results: The best prediction model for fall fracture load was acquired by integrating WGS features and DXA-derived imaging features. The designed models achieved the mean absolute percentage error of 18.04%, 6.84% and 7.95% for predicting proximal femoral fracture loads using linear models of fall loading, nonlinear models of fall loading, and nonlinear models of stance loading, respectively. Compared to existing multi-view information fusion methods, the proposed MVAE-PoE achieved the best performance. Conclusion: The proposed models are capable of predicting proximal femoral strength using WGS features and DXA-derived imaging features. Though this tool is not a substitute for FEA using QCT images, it would make improved assessment of hip fracture risk more widely available while avoiding the increased radiation dosage and clinical costs from QCT. "
+}

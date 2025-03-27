@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dialogue state tracking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Soft prompt token embeddings",
+    "Cross-task shared information"
+  ],
+  "results": [
+    "Parameter size reduced to less than 0.5% of prior works",
+    "Better low-resource DST performance"
+  ],
+  "paper_id": "63d340ef90e50fcafd91159f",
+  "title": "Parameter-Efficient Low-Resource Dialogue State Tracking by Prompt\n  Tuning",
+  "abstract": "  Dialogue state tracking (DST) is an important step in dialogue management to keep track of users' beliefs. Existing works fine-tune all language model (LM) parameters to tackle the DST task, which requires significant data and computing resources for training and hosting. The cost grows exponentially in the real-world deployment where dozens of fine-tuned LM are used for different domains and tasks. To reduce parameter size and better utilize cross-task shared information, we propose to use soft prompt token embeddings to learn task properties. Without tuning LM parameters, our method drastically reduces the number of parameters needed to less than 0.5% of prior works while achieves better low-resource DST performance. "
+}

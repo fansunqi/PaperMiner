@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Key Step Extraction from Unlabeled Procedural Videos"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bootstrapped Multi-Cue Contrastive (BMC2) loss",
+    "light-weight temporal module",
+    "self supervision",
+    "optical flow",
+    "depth",
+    "gaze",
+    "tunable algorithm"
+  ],
+  "results": [
+    "Significant improvements over prior works for key step localization and phase classification",
+    "Qualitative results demonstrate meaningful extracted key steps"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e8a4",
+  "title": "STEPs: Self-Supervised Key Step Extraction from Unlabeled Procedural\n  Videos",
+  "abstract": "  We address the problem of extracting key steps from unlabeled procedural videos, motivated by the potential of Augmented Reality (AR) headsets to revolutionize job training and performance. We decompose the problem into two steps: representation learning and key steps extraction. We propose a training objective, Bootstrapped Multi-Cue Contrastive (BMC2) loss to learn disciriminative representations for various steps without any labels. Different from prior works, we develop techniques to train a light-weight temporal module which uses off-the-shelf features for self supervision. Our approach can seamlessly leverage information from multiple cues like optical flow, depth or gaze to learn discriminative features for key-steps making it amenable for AR applications. We finally extract key steps via a tunable algorithm that clusters the representations and samples. We show significant improvements over prior works for the task of key step localization and phase classification. Qualitative results demonstrate that the extracted key steps are meaningful to succinctly represent various steps of the procedural tasks. "
+}

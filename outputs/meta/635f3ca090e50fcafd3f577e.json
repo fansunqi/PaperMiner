@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Non-equilibrium reacting flow simulations",
+    "Chemical kinetics",
+    "Hypersonic flight",
+    "Non-equilibrium phenomena in multi-dimensional computational fluid dynamics simulations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hierarchical and adaptive deep learning strategy",
+    "Dimensionality reduction",
+    "Neural operators",
+    "Soft and hard constraints",
+    "Transfer learning",
+    "Operator-splitting integration framework"
+  ],
+  "results": [
+    "Adaptive prediction of almost thirty species with a maximum relative error of 4.5% for a wide range of initial conditions",
+    "Accuracy ranging from 1% to 4.5% in 1-D shock simulations",
+    "Speedup of one order of magnitude compared to conventional implicit schemes"
+  ],
+  "paper_id": "635f3ca090e50fcafd3f577e",
+  "title": "Adaptive physics-informed neural operator for coarse-grained\n  non-equilibrium flows",
+  "abstract": "  This work proposes a new machine learning (ML)-based paradigm aiming to enhance the computational efficiency of non-equilibrium reacting flow simulations while ensuring compliance with the underlying physics. The framework combines dimensionality reduction and neural operators through a hierarchical and adaptive deep learning strategy to learn the solution of multi-scale coarse-grained governing equations for chemical kinetics. The proposed surrogate's architecture is structured as a tree, with leaf nodes representing separate neural operator blocks where physics is embedded in the form of multiple soft and hard constraints. The hierarchical attribute has two advantages: i) It allows the simplification of the training phase via transfer learning, starting from the slowest temporal scales; ii) It accelerates the prediction step by enabling adaptivity as the surrogate's evaluation is limited to the necessary leaf nodes based on the local degree of non-equilibrium of the gas. The model is applied to the study of chemical kinetics relevant for application to hypersonic flight, and it is tested here on pure oxygen gas mixtures. In 0-D scenarios, the proposed ML framework can adaptively predict the dynamics of almost thirty species with a maximum relative error of 4.5% for a wide range of initial conditions. Furthermore, when employed in 1-D shock simulations, the approach shows accuracy ranging from 1% to 4.5% and a speedup of one order of magnitude compared to conventional implicit schemes employed in an operator-splitting integration framework. Given the results presented in the paper, this work lays the foundation for constructing an efficient ML-based surrogate coupled with reactive Navier-Stokes solvers for accurately characterizing non-equilibrium phenomena in multi-dimensional computational fluid dynamics simulations. "
+}

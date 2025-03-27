@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Probabilistic Modelling",
+    "Density Estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Continuous mixtures of tractable models",
+    "Finite set of integration points",
+    "Probabilistic circuits (PCs)"
+  ],
+  "results": [
+    "New state of the art for tractable models on many standard density estimation benchmarks"
+  ],
+  "paper_id": "632d23fb90e50fcafd91a1b5",
+  "title": "Continuous Mixtures of Tractable Probabilistic Models",
+  "abstract": "  Probabilistic models based on continuous latent spaces, such as variational autoencoders, can be understood as uncountable mixture models where components depend continuously on the latent code. They have proven to be expressive tools for generative and probabilistic modelling, but are at odds with tractable probabilistic inference, that is, computing marginals and conditionals of the represented probability distribution. Meanwhile, tractable probabilistic models such as probabilistic circuits (PCs) can be understood as hierarchical discrete mixture models, and thus are capable of performing exact inference efficiently but often show subpar performance in comparison to continuous latent-space models. In this paper, we investigate a hybrid approach, namely continuous mixtures of tractable models with a small latent dimension. While these models are analytically intractable, they are well amenable to numerical integration schemes based on a finite set of integration points. With a large enough number of integration points the approximation becomes de-facto exact. Moreover, for a finite set of integration points, the integration method effectively compiles the continuous mixture into a standard PC. In experiments, we show that this simple scheme proves remarkably effective, as PCs learnt this way set new state of the art for tractable models on many standard density estimation benchmarks. "
+}

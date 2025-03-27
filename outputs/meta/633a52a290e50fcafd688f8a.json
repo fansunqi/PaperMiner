@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Protein-ligand complex structure prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "NeuralPLexer",
+    "Deep generative model",
+    "Diffusion process",
+    "Multi-scale geometric deep learning"
+  ],
+  "results": [
+    "State-of-the-art performance on protein-ligand blind docking and flexible binding site structure recovery",
+    "Outperforms AlphaFold2 in global protein structure accuracy",
+    "Predicted conformational variations consistent with structure determination experiments"
+  ],
+  "paper_id": "633a52a290e50fcafd688f8a",
+  "title": "State-specific protein-ligand complex structure prediction with a\n  multi-scale deep generative model",
+  "abstract": "  The binding complexes formed by proteins and small molecule ligands are ubiquitous and critical to life. Despite recent advancements in protein structure prediction, existing algorithms are so far unable to systematically predict the binding ligand structures along with their regulatory effects on protein folding. To address this discrepancy, we present NeuralPLexer, a computational approach that can directly predict protein-ligand complex structures solely using protein sequence and ligand molecular graph inputs. NeuralPLexer adopts a deep generative model to sample the 3D structures of the binding complex and their conformational changes at an atomistic resolution. The model is based on a diffusion process that incorporates essential biophysical constraints and a multi-scale geometric deep learning system to iteratively sample residue-level contact maps and all heavy-atom coordinates in a hierarchical manner. NeuralPLexer achieves state-of-the-art performance compared to all existing methods on benchmarks for both protein-ligand blind docking and flexible binding site structure recovery. Moreover, owing to its specificity in sampling both ligand-free-state and ligand-bound-state ensembles, NeuralPLexer consistently outperforms AlphaFold2 in terms of global protein structure accuracy on both representative structure pairs with large conformational changes (average TM-score=0.93) and recently determined ligand-binding proteins (average TM-score=0.89). Case studies reveal that the predicted conformational variations are consistent with structure determination experiments for important targets, including human KRAS$^\\textrm{G12C}$, ketol-acid reductoisomerase, and purine GPCRs. Our study suggests that a data-driven approach can capture the structural cooperativity between proteins and small molecules, showing promise in accelerating the design of enzymes, drug molecules, and beyond. "
+}

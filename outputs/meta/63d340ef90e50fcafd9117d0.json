@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning with Human Feedback"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Maximum Likelihood Estimator (MLE)",
+    "Bradley-Terry-Luce (BTL) model",
+    "Plackett-Luce (PL) model",
+    "max-entropy Inverse Reinforcement Learning (IRL)"
+  ],
+  "results": [
+    "MLE converges under BTL and PL models",
+    "Pessimistic MLE improves policy performance",
+    "True MLE and alternative MLE converge under PL model",
+    "True MLE is asymptotically more efficient",
+    "Empirical success of RLHF algorithms in InstructGPT",
+    "First sample complexity bound for max-entropy IRL"
+  ],
+  "paper_id": "63d340ef90e50fcafd9117d0",
+  "title": "Principled Reinforcement Learning with Human Feedback from Pairwise or\n  K-wise Comparisons",
+  "abstract": "We provide a theoretical framework for Reinforcement Learning with Human\nFeedback (RLHF). Our analysis shows that when the true reward function is\nlinear, the widely used maximum likelihood estimator (MLE) converges under both\nthe Bradley-Terry-Luce (BTL) model and the Plackett-Luce (PL) model. However,\nwe show that when training a policy based on the learned reward model, MLE\nfails while a pessimistic MLE provides policies with improved performance under\ncertain coverage assumptions. Additionally, we demonstrate that under the PL\nmodel, the true MLE and an alternative MLE that splits the K-wise comparison\ninto pairwise comparisons both converge. Moreover, the true MLE is\nasymptotically more efficient. Our results validate the empirical success of\nexisting RLHF algorithms in InstructGPT and provide new insights for algorithm\ndesign. Furthermore, our results unify the problem of RLHF and max-entropy\nInverse Reinforcement Learning (IRL), and provide the first sample complexity\nbound for max-entropy IRL."
+}

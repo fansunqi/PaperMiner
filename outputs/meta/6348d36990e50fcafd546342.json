@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning Visuomotor Tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Offline reinforcement learning",
+    "Affordance model",
+    "Lossy representation space"
+  ],
+  "results": [
+    "Pre-trained on large-scale datasets",
+    "Fine-tuned for novel tasks without manual reward engineering"
+  ],
+  "paper_id": "6348d36990e50fcafd546342",
+  "title": "Generalization with Lossy Affordances: Leveraging Broad Offline Data for\n  Learning Visuomotor Tasks",
+  "abstract": "  The utilization of broad datasets has proven to be crucial for generalization for a wide range of fields. However, how to effectively make use of diverse multi-task data for novel downstream tasks still remains a grand challenge in robotics. To tackle this challenge, we introduce a framework that acquires goal-conditioned policies for unseen temporally extended tasks via offline reinforcement learning on broad data, in combination with online fine-tuning guided by subgoals in learned lossy representation space. When faced with a novel task goal, the framework uses an affordance model to plan a sequence of lossy representations as subgoals that decomposes the original task into easier problems. Learned from the broad data, the lossy representation emphasizes task-relevant information about states and goals while abstracting away redundant contexts that hinder generalization. It thus enables subgoal planning for unseen tasks, provides a compact input to the policy, and facilitates reward shaping during fine-tuning. We show that our framework can be pre-trained on large-scale datasets of robot experiences from prior work and efficiently fine-tuned for novel tasks, entirely from visual inputs without any manual reward engineering. "
+}

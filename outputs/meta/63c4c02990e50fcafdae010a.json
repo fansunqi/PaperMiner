@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human-robot co-manipulation of soft materials"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Convolutional Neural Network (CNN)",
+    "DenseNet-121",
+    "ImageNet"
+  ],
+  "results": [
+    "Better performances than state-of-the-art method",
+    "Avoids drawbacks of skeletal tracker"
+  ],
+  "paper_id": "63c4c02990e50fcafdae010a",
+  "title": "Co-manipulation of soft-materials estimating deformation from depth\n  images",
+  "abstract": "  Human-robot co-manipulation of soft materials, such as fabrics, composites, and sheets of paper/cardboard, is a challenging operation that presents several relevant industrial applications. Estimating the deformation state of the co-manipulated material is one of the main challenges. Viable methods provide the indirect measure by calculating the human-robot relative distance. In this paper, we develop a data-driven model to estimate the deformation state of the material from a depth image through a Convolutional Neural Network (CNN). First, we define the deformation state of the material as the relative roto-translation from the current robot pose and a human grasping position. The model estimates the current deformation state through a Convolutional Neural Network, specifically a DenseNet-121 pretrained on ImageNet.The delta between the current and the desired deformation state is fed to the robot controller that outputs twist commands. The paper describes the developed approach to acquire, preprocess the dataset and train the model. The model is compared with the current state-of-the-art method based on a skeletal tracker from cameras. Results show that our approach achieves better performances and avoids the various drawbacks caused by using a skeletal tracker.Finally, we also studied the model performance according to different architectures and dataset dimensions to minimize the time required for dataset acquisition "
+}

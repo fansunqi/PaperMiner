@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-supervised Paraphrase Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "variational sequence auto-encoding reconstruction (VSAR)",
+    "dual directional learning (DDL)",
+    "knowledge reinforced training"
+  ],
+  "results": [
+    "DDL+VSAR yields competitive performance against the state-of-the-art supervised baselines",
+    "Consistently outperforms the strong supervised model baseline (DDL and Transformer) by a significant margin on scenarios with only a fraction of the labelled pairs"
+  ],
+  "paper_id": "63bb859d90e50fcafd06edc3",
+  "title": "Deep Latent Variable Models for Semi-supervised Paraphrase Generation",
+  "abstract": "  This paper explores deep latent variable models for semi-supervised paraphrase generation, where the missing target pair is modelled as a latent paraphrase sequence. We present a novel unsupervised model named variational sequence auto-encoding reconstruction (VSAR), which performs latent sequence inference given an observed text. To leverage information from text pairs, we introduce a supervised model named dual directional learning (DDL). Combining VSAR with DDL (DDL+VSAR) enables us to conduct semi-supervised learning; however, the combined model suffers from a cold-start problem. To combat this issue, we propose to deal with better weight initialisation, leading to a two-stage training scheme named knowledge reinforced training. Our empirical evaluations suggest that the combined model yields competitive performance against the state-of-the-art supervised baselines on complete data. Furthermore, in scenarios where only a fraction of the labelled pairs are available, our combined model consistently outperforms the strong supervised model baseline (DDL and Transformer) by a significant margin. "
+}

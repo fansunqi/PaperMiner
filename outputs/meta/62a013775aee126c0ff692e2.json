@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Introspective Experience Replay (IER)",
+    "Reverse Experience Replay (RER)",
+    "Neural function approximation"
+  ],
+  "results": [
+    "IER yields reliable and superior performance compared to UER, PER, and hindsight experience replay (HER) across most tasks"
+  ],
+  "paper_id": "62a013775aee126c0ff692e2",
+  "title": "Introspective Experience Replay: Look Back When Surprised",
+  "abstract": "  In reinforcement learning (RL), experience replay-based sampling techniques play a crucial role in promoting convergence by eliminating spurious correlations. However, widely used methods such as uniform experience replay (UER) and prioritized experience replay (PER) have been shown to have sub-optimal convergence and high seed sensitivity respectively. To address these issues, we propose a novel approach called IntrospectiveExperience Replay (IER) that selectively samples batches of data points prior to surprising events. Our method builds upon the theoretically sound reverse experience replay (RER) technique, which has been shown to reduce bias in the output of Q-learning-type algorithms with linear function approximation. However, this approach is not always practical or reliable when using neural function approximation. Through empirical evaluations, we demonstrate that IER with neural function approximation yields reliable and superior performance compared toUER, PER, and hindsight experience replay (HER) across most tasks. "
+}

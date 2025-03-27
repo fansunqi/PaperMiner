@@ -1,0 +1,19 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "None"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "None"
+  ],
+  "raw_response": "{\n    \"code_links\": [None],\n    \"tasks\": [\"Vision transformers robustness\"],\n    \"datasets\": [\"German Traffic Sign Recognition Benchmark (GTSRB)\", \"Canadian Institute for Advanced Research (CIFAR-10)\"],\n    \"methods\": [\"Locality iN Locality (LNL) transformer model\"],\n    \"results\": [\"State-of-the-art results in terms of accuracy and robustness metrics\", \"1.1% and ~35% gains in clean and robustness accuracy for traffic sign classification\"]\n}",
+  "paper_id": "63d7352390e50fcafda30322",
+  "title": "Robust Transformer with Locality Inductive Bias and Feature\n  Normalization",
+  "abstract": "  Vision transformers have been demonstrated to yield state-of-the-art results on a variety of computer vision tasks using attention-based networks. However, research works in transformers mostly do not investigate robustness/accuracy trade-off, and they still struggle to handle adversarial perturbations. In this paper, we explore the robustness of vision transformers against adversarial perturbations and try to enhance their robustness/accuracy trade-off in white box attack settings. To this end, we propose Locality iN Locality (LNL) transformer model. We prove that the locality introduction to LNL contributes to the robustness performance since it aggregates local information such as lines, edges, shapes, and even objects. In addition, to further improve the robustness performance, we encourage LNL to extract training signal from the moments (a.k.a., mean and standard deviation) and the normalized features. We validate the effectiveness and generality of LNL by achieving state-of-the-art results in terms of accuracy and robustness metrics on German Traffic Sign Recognition Benchmark (GTSRB) and Canadian Institute for Advanced Research (CIFAR-10). More specifically, for traffic sign classification, the proposed LNL yields gains of 1.1% and ~35% in terms of clean and robustness accuracy compared to the state-of-the-art studies. "
+}

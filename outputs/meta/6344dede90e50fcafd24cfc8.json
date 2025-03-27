@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Extractive Summarization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "EDU-level extractive model with Varying summary Lengths (EDU-VL)"
+  ],
+  "results": [
+    "Improved performances on ROUGE scores",
+    "EDU-constituent summaries maintain good grammaticality and readability"
+  ],
+  "paper_id": "6344dede90e50fcafd24cfc8",
+  "title": "EDU-level Extractive Summarization with Varying Summary Lengths",
+  "abstract": "  Extractive models usually formulate text summarization as extracting fixed top-$k$ salient sentences from the document as a summary. Few works exploited extracting finer-grained Elementary Discourse Unit (EDU) with little analysis and justification for the extractive unit selection. Further, the selection strategy of the fixed top-$k$ salient sentences fits the summarization need poorly, as the number of salient sentences in different documents varies and therefore a common or best $k$ does not exist in reality. To fill these gaps, this paper first conducts the comparison analysis of oracle summaries based on EDUs and sentences, which provides evidence from both theoretical and experimental perspectives to justify and quantify that EDUs make summaries with higher automatic evaluation scores than sentences. Then, considering this merit of EDUs, this paper further proposes an EDU-level extractive model with Varying summary Lengths and develops the corresponding learning algorithm. EDU-VL learns to encode and predict probabilities of EDUs in the document, generate multiple candidate summaries with varying lengths based on various $k$ values, and encode and score candidate summaries, in an end-to-end training manner. Finally, EDU-VL is experimented on single and multi-document benchmark datasets and shows improved performances on ROUGE scores in comparison with state-of-the-art extractive models, and further human evaluation suggests that EDU-constituent summaries maintain good grammaticality and readability. "
+}

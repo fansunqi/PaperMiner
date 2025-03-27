@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Self-Supervised Lifelong Learning"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "CIFAR-100",
+    "TinyImageNet"
+  ],
+  "methods": [
+    "Self-Supervised ContrAstive Lifelong LEarning without Prior Knowledge (SCALE)"
+  ],
+  "results": [
+    "kNN accuracy improvements up to 3.83%, 2.77% and 5.86% on CIFAR-10, CIFAR-100, and TinyImageNet datasets"
+  ],
+  "paper_id": "6306e8c890e50fcafdebd541",
+  "title": "SCALE: Online Self-Supervised Lifelong Learning without Prior Knowledge",
+  "abstract": "  Unsupervised lifelong learning refers to the ability to learn over time while memorizing previous patterns without supervision. Although great progress has been made in this direction, existing work often assumes strong prior knowledge about the incoming data (e.g., knowing the class boundaries), which can be impossible to obtain in complex and unpredictable environments. In this paper, motivated by real-world scenarios, we propose a more practical problem setting called online self-supervised lifelong learning without prior knowledge. The proposed setting is challenging due to the non-iid and single-pass data, the absence of external supervision, and no prior knowledge. To address the challenges, we propose Self-Supervised ContrAstive Lifelong LEarning without Prior Knowledge (SCALE) which can extract and memorize representations on the fly purely from the data continuum. SCALE is designed around three major components: a pseudo-supervised contrastive loss, a self-supervised forgetting loss, and an online memory update for uniform subset selection. All three components are designed to work collaboratively to maximize learning performance. We perform comprehensive experiments of SCALE under iid and four non-iid data streams. The results show that SCALE outperforms the state-of-the-art algorithm in all settings with improvements up to 3.83%, 2.77% and 5.86% in terms of kNN accuracy on CIFAR-10, CIFAR-100, and TinyImageNet datasets. "
+}

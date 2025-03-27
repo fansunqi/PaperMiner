@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Attack"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Limited Pixel BFGS (LP-BFGS) attack",
+    "Integrated Gradient method",
+    "BFGS algorithm"
+  ],
+  "results": [
+    "Comparable attack ability with reasonable computation"
+  ],
+  "paper_id": "635b486f90e50fcafd330d4e",
+  "title": "LP-BFGS attack: An adversarial attack based on the Hessian with limited\n  pixels",
+  "abstract": "  Deep neural networks are vulnerable to adversarial attacks. Most $L_{0}$-norm based white-box attacks craft perturbations by the gradient of models to the input. Since the computation cost and memory limitation of calculating the Hessian matrix, the application of Hessian or approximate Hessian in white-box attacks is gradually shelved. In this work, we note that the sparsity requirement on perturbations naturally lends itself to the usage of Hessian information. We study the attack performance and computation cost of the attack method based on the Hessian with a limited number of perturbation pixels. Specifically, we propose the Limited Pixel BFGS (LP-BFGS) attack method by incorporating the perturbation pixel selection strategy and the BFGS algorithm. Pixels with top-k attribution scores calculated by the Integrated Gradient method are regarded as optimization variables of the LP-BFGS attack. Experimental results across different networks and datasets demonstrate that our approach has comparable attack ability with reasonable computation in different numbers of perturbation pixels compared with existing solutions. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Contrastive Learning",
+    "Heterogeneous Information Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Heterogeneous Graph Contrastive Multi-view Learning (HGCML)",
+    "Metapaths",
+    "Contrastive Objective",
+    "Positive Sampling Strategy"
+  ],
+  "results": [
+    "Outperforms state-of-the-art baselines on five real-world benchmark datasets"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4c7b",
+  "title": "Heterogeneous Graph Contrastive Multi-view Learning",
+  "abstract": "  Inspired by the success of contrastive learning (CL) in computer vision and natural language processing, graph contrastive learning (GCL) has been developed to learn discriminative node representations on graph datasets. However, the development of GCL on Heterogeneous Information Networks (HINs) is still in the infant stage. For example, it is unclear how to augment the HINs without substantially altering the underlying semantics, and how to design the contrastive objective to fully capture the rich semantics. Moreover, early investigations demonstrate that CL suffers from sampling bias, whereas conventional debiasing techniques are empirically shown to be inadequate for GCL. How to mitigate the sampling bias for heterogeneous GCL is another important problem. To address the aforementioned challenges, we propose a novel Heterogeneous Graph Contrastive Multi-view Learning (HGCML) model. In particular, we use metapaths as the augmentation to generate multiple subgraphs as multi-views, and propose a contrastive objective to maximize the mutual information between any pairs of metapath-induced views. To alleviate the sampling bias, we further propose a positive sampling strategy to explicitly select positives for each node via jointly considering semantic and structural information preserved on each metapath view. Extensive experiments demonstrate HGCML consistently outperforms state-of-the-art baselines on five real-world benchmark datasets. "
+}

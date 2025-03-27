@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline Reinforcement Learning"
+  ],
+  "datasets": [
+    "D4RL benchmarks"
+  ],
+  "methods": [
+    "Semi-supervised offline RL",
+    "Inverse dynamics model",
+    "Proxy-labels"
+  ],
+  "results": [
+    "Matching performance of fully labelled dataset with 10% of trajectories labeled"
+  ],
+  "paper_id": "6348d36990e50fcafd54622e",
+  "title": "Semi-Supervised Offline Reinforcement Learning with Action-Free\n  Trajectories",
+  "abstract": "  Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets. "
+}

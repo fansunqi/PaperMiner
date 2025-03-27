@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Biomarker prediction from colorectal cancer histology"
+  ],
+  "datasets": [
+    "10 colorectal cancer cohorts"
+  ],
+  "methods": [
+    "Fully transformer-based pipeline"
+  ],
+  "results": [
+    "Sensitivity: 0.97, Negative Predictive Value: 0.99 for MSI prediction",
+    "Clinical-grade performance on endoscopic biopsy tissue"
+  ],
+  "paper_id": "640015f390e50fcafdcf9ddb",
+  "title": "Fully transformer-based biomarker prediction from colorectal cancer\n  histology: a large-scale multicentric study",
+  "abstract": "  Background: Deep learning (DL) can extract predictive and prognostic biomarkers from routine pathology slides in colorectal cancer. For example, a DL test for the diagnosis of microsatellite instability (MSI) in CRC has been approved in 2022. Current approaches rely on convolutional neural networks (CNNs). Transformer networks are outperforming CNNs and are replacing them in many applications, but have not been used for biomarker prediction in cancer at a large scale. In addition, most DL approaches have been trained on small patient cohorts, which limits their clinical utility. Methods: In this study, we developed a new fully transformer-based pipeline for end-to-end biomarker prediction from pathology slides. We combine a pre-trained transformer encoder and a transformer network for patch aggregation, capable of yielding single and multi-target prediction at patient level. We train our pipeline on over 9,000 patients from 10 colorectal cancer cohorts. Results: A fully transformer-based approach massively improves the performance, generalizability, data efficiency, and interpretability as compared with current state-of-the-art algorithms. After training on a large multicenter cohort, we achieve a sensitivity of 0.97 with a negative predictive value of 0.99 for MSI prediction on surgical resection specimens. We demonstrate for the first time that resection specimen-only training reaches clinical-grade performance on endoscopic biopsy tissue, solving a long-standing diagnostic problem. Interpretation: A fully transformer-based end-to-end pipeline trained on thousands of pathology slides yields clinical-grade performance for biomarker prediction on surgical resections and biopsies. Our new methods are freely available under an open source license. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/hikvision-research/OOD-CV"
+  ],
+  "tasks": [
+    "Image Classification",
+    "OOD-CV challenge"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Noisy Label Learning",
+    "Mask-Level Copy-Paste data augmentation",
+    "Label-Periodically-Updated DivideMix",
+    "Test-Time Augmentation",
+    "Model Ensemble"
+  ],
+  "results": [
+    "First place on the Image Classification Leaderboard of the OOD-CV Challenge"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8b02",
+  "title": "1st Place Solution for ECCV 2022 OOD-CV Challenge Image Classification\n  Track",
+  "abstract": "  OOD-CV challenge is an out-of-distribution generalization task. In this challenge, our core solution can be summarized as that Noisy Label Learning Is A Strong Test-Time Domain Adaptation Optimizer. Briefly speaking, our main pipeline can be divided into two stages, a pre-training stage for domain generalization and a test-time training stage for domain adaptation. We only exploit labeled source data in the pre-training stage and only exploit unlabeled target data in the test-time training stage. In the pre-training stage, we propose a simple yet effective Mask-Level Copy-Paste data augmentation strategy to enhance out-of-distribution generalization ability so as to resist shape, pose, context, texture, occlusion, and weather domain shifts in this challenge. In the test-time training stage, we use the pre-trained model to assign noisy label for the unlabeled target data, and propose a Label-Periodically-Updated DivideMix method for noisy label learning. After integrating Test-Time Augmentation and Model Ensemble strategies, our solution ranks the first place on the Image Classification Leaderboard of the OOD-CV Challenge. Code will be released in https://github.com/hikvision-research/OOD-CV. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image classification"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "Pattern Attention Transformer",
+    "doughnut kernel"
+  ],
+  "results": [
+    "Higher throughput (+10%) on ImageNet 1K",
+    "Surpasses Swin Transformer (+0.1 acc1)"
+  ],
+  "paper_id": "63881b9190e50fcafd3db1a1",
+  "title": "Pattern Attention Transformer with Doughnut Kernel",
+  "abstract": "  We present in this paper a new architecture, the Pattern Attention Transformer (PAT), that is composed of the new doughnut kernel. Compared with tokens in the NLP field, Transformer in computer vision has the problem of handling the high resolution of pixels in images. In ViT, an image is cut into square-shaped patches. As the follow-up of ViT, Swin Transformer proposes an additional step of shifting to decrease the existence of fixed boundaries, which also incurs 'two connected Swin Transformer blocks' as the minimum unit of the model. Inheriting the patch/window idea, our doughnut kernel enhances the design of patches further. It replaces the line-cut boundaries with two types of areas: sensor and updating, which is based on the comprehension of self-attention (named QKVA grid). The doughnut kernel also brings a new topic about the shape of kernels beyond square. To verify its performance on image classification, PAT is designed with Transformer blocks of regular octagon shape doughnut kernels. Its architecture is lighter: the minimum pattern attention layer is only one for each stage. Under similar complexity of computation, its performances on ImageNet 1K reach higher throughput (+10%) and surpass Swin Transformer (+0.1 acc1). "
+}

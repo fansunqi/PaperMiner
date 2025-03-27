@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/cohortshapley/cohortintgrad"
+  ],
+  "tasks": [
+    "Model-free variable importance for high dimensional data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "IGCS (Integrated Gradient version of cohort Shapley)",
+    "Shapley value problem",
+    "area between curves (ABC) measures"
+  ],
+  "results": [
+    "IGCS has nearly the same ABCs as CS does",
+    "IGCS attains much higher ABCs than we get from Monte Carlo sampling"
+  ],
+  "paper_id": "637454dd90e50fcafdfc6b50",
+  "title": "Model free variable importance for high dimensional data",
+  "abstract": "  A model-agnostic variable importance method can be used with arbitrary prediction functions. Here we present some model-free methods that do not require access to the prediction function. This is useful when that function is proprietary and not available, or just extremely expensive. It is also useful when studying residuals from a model. The cohort Shapley (CS) method is model-free but has exponential cost in the dimension of the input space. A supervised on-manifold Shapley method from Frye et al. (2020) is also model free but requires as input a second black box model that has to be trained for the Shapley value problem. We introduce an integrated gradient (IG) version of cohort Shapley, called IGCS, with cost $\\mathcal{O}(nd)$. We show that over the vast majority of the relevant unit cube that the IGCS value function is close to a multilinear function for which IGCS matches CS. Another benefit of IGCS is that is allows IG methods to be used with binary predictors. We use some area between curves (ABC) measures to quantify the performance of IGCS. On a problem from high energy physics we verify that IGCS has nearly the same ABCs as CS does. We also use it on a problem from computational chemistry in 1024 variables. We see there that IGCS attains much higher ABCs than we get from Monte Carlo sampling. The code is publicly available at https://github.com/cohortshapley/cohortintgrad "
+}

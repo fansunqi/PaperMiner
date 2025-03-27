@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Exploring the Use of WebAssembly in HPC"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MPIWasm"
+  ],
+  "results": [
+    "MPIWasm delivers competitive native application performance",
+    "Wasm binaries are 139.5x smaller on average"
+  ],
+  "paper_id": "63be28d490e50fcafdf52e14",
+  "title": "Exploring the Use of WebAssembly in HPC",
+  "abstract": "  Containerization approaches based on namespaces offered by the Linux kernel have seen an increasing popularity in the HPC community both as a means to isolate applications and as a format to package and distribute them. However, their adoption and usage in HPC systems faces several challenges. These include difficulties in unprivileged running and building of scientific application container images directly on HPC resources, increasing heterogeneity of HPC architectures, and access to specialized networking libraries available only on HPC systems. These challenges of container-based HPC application development closely align with the several advantages that a new universal intermediate binary format called WebAssembly (Wasm) has to offer. These include a lightweight userspace isolation mechanism and portability across operating systems and processor architectures. In this paper, we explore the usage of Wasm as a distribution format for MPI-based HPC applications. To this end, we present MPIWasm, a novel Wasm embedder for MPI-based HPC applications that enables high-performance execution of Wasm code, has low-overhead for MPI calls, and supports high-performance networking interconnects present on HPC systems. We evaluate the performance and overhead of MPIWasm on a production HPC system and AWS Graviton2 nodes using standardized HPC benchmarks. Results from our experiments demonstrate that MPIWasm delivers competitive native application performance across all scenarios. Moreover, we observe that Wasm binaries are 139.5x smaller on average as compared to the statically-linked binaries for the different standardized benchmarks. "
+}

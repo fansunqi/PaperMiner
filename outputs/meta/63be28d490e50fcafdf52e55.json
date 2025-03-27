@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Arm movement restoration with FES",
+    "Controlling for progressive muscular fatigue"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gaussian State-Space Model (GSSM)",
+    "Recurrent Neural Networks",
+    "Reinforcement Learning (RL)"
+  ],
+  "results": [
+    "GSSM helps RL maintain control performance against fatigue"
+  ],
+  "paper_id": "63be28d490e50fcafdf52e55",
+  "title": "Towards AI-controlled FES-restoration of arm movements: Controlling for\n  progressive muscular fatigue with Gaussian state-space models",
+  "abstract": "  Reaching disability limits an individual's ability in performing daily tasks. Surface Functional Electrical Stimulation (FES) offers a non-invasive solution to restore the lost abilities. However, inducing desired movements using FES is still an open engineering problem. This problem is accentuated by the complexities of human arms' neuromechanics and the variations across individuals. Reinforcement Learning (RL) emerges as a promising approach to govern customised control rules for different subjects and settings. Yet, one remaining challenge of using RL to control FES is unobservable muscle fatigue that progressively changes as an unknown function of the stimulation, breaking the Markovian assumption of RL. In this work, we present a method to address the unobservable muscle fatigue issue, allowing our RL controller to achieve higher control performances. Our method is based on a Gaussian State-Space Model (GSSM) that utilizes recurrent neural networks to learn Markovian state-spaces from partial observations. The GSSM is used as a filter that converts the observations into the state-space representation for RL to preserve the Markovian assumption. Here, we start with presenting the modification of the original GSSM to address an overconfident issue. We then present the interaction between RL and the modified GSSM, followed by the setup for FES control learning. We test our RL-GSSM system on a planar reaching setting in simulation using a detailed neuromechanical model and show that the GSSM can help RL maintain its control performance against the fatigue. "
+}

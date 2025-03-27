@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Byzantine fault tolerance in distributed stochastic gradient descent"
+  ],
+  "datasets": [
+    "MNIST"
+  ],
+  "methods": [
+    "Robust Gradient Classification Framework (RGCF)",
+    "pattern recognition filter"
+  ],
+  "results": [
+    "Robust to Byzantine workers for convex as well as non-convex optimisation settings",
+    "Does not require an estimate of the number of Byzantine workers",
+    "Running time not dependent on the number of workers",
+    "Can scale up to training instances with a large number of workers without a loss in performance"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bc0e",
+  "title": "A Robust Classification Framework for Byzantine-Resilient Stochastic\n  Gradient Descent",
+  "abstract": "  This paper proposes a Robust Gradient Classification Framework (RGCF) for Byzantine fault tolerance in distributed stochastic gradient descent. The framework consists of a pattern recognition filter which we train to be able to classify individual gradients as Byzantine by using their direction alone. This filter is robust to an arbitrary number of Byzantine workers for convex as well as non-convex optimisation settings, which is a significant improvement on the prior work that is robust to Byzantine faults only when up to 50% of the workers are Byzantine. This solution does not require an estimate of the number of Byzantine workers; its running time is not dependent on the number of workers and can scale up to training instances with a large number of workers without a loss in performance. We validate our solution by training convolutional neural networks on the MNIST dataset in the presence of Byzantine workers. "
+}

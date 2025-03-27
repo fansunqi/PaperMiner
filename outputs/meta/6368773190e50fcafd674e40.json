@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/kyusik-cho/CMOM"
+  ],
+  "tasks": [
+    "Domain Adaptive Video Semantic Segmentation"
+  ],
+  "datasets": [
+    "VIPER",
+    "Cityscapes-Seq",
+    "SYNTHIA-Seq"
+  ],
+  "methods": [
+    "Cross-domain Moving Object Mixing (CMOM)",
+    "Feature Alignment with Temporal Context (FATC)"
+  ],
+  "results": [
+    "mIoU of 53.81% on VIPER to Cityscapes-Seq",
+    "mIoU of 56.31% on SYNTHIA-Seq to Cityscapes-Seq"
+  ],
+  "paper_id": "6368773190e50fcafd674e40",
+  "title": "Domain Adaptive Video Semantic Segmentation via Cross-Domain Moving\n  Object Mixing",
+  "abstract": "  The network trained for domain adaptation is prone to bias toward the easy-to-transfer classes. Since the ground truth label on the target domain is unavailable during training, the bias problem leads to skewed predictions, forgetting to predict hard-to-transfer classes. To address this problem, we propose Cross-domain Moving Object Mixing (CMOM) that cuts several objects, including hard-to-transfer classes, in the source domain video clip and pastes them into the target domain video clip. Unlike image-level domain adaptation, the temporal context should be maintained to mix moving objects in two different videos. Therefore, we design CMOM to mix with consecutive video frames, so that unrealistic movements are not occurring. We additionally propose Feature Alignment with Temporal Context (FATC) to enhance target domain feature discriminability. FATC exploits the robust source domain features, which are trained with ground truth labels, to learn discriminative target domain features in an unsupervised manner by filtering unreliable predictions with temporal consensus. We demonstrate the effectiveness of the proposed approaches through extensive experiments. In particular, our model reaches mIoU of 53.81% on VIPER to Cityscapes-Seq benchmark and mIoU of 56.31% on SYNTHIA-Seq to Cityscapes-Seq benchmark, surpassing the state-of-the-art methods by large margins. The code is available at: https://github.com/kyusik-cho/CMOM. "
+}

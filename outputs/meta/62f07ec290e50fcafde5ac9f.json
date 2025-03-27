@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated analysis of chest radiography",
+    "Medical image classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Image-captioning pretraining",
+    "Convolutional encoder and transformer decoder joint pretraining"
+  ],
+  "results": [
+    "Higher classification performance than ImageNet-supervised and in-domain supervised pretraining when labeled training data is limited"
+  ],
+  "paper_id": "62f07ec290e50fcafde5ac9f",
+  "title": "RadTex: Learning Efficient Radiograph Representations from Text Reports",
+  "abstract": "  Automated analysis of chest radiography using deep learning has tremendous potential to enhance the clinical diagnosis of diseases in patients. However, deep learning models typically require large amounts of annotated data to achieve high performance -- often an obstacle to medical domain adaptation. In this paper, we build a data-efficient learning framework that utilizes radiology reports to improve medical image classification performance with limited labeled data (fewer than 1000 examples). Specifically, we examine image-captioning pretraining to learn high-quality medical image representations that train on fewer examples. Following joint pretraining of a convolutional encoder and transformer decoder, we transfer the learned encoder to various classification tasks. Averaged over 9 pathologies, we find that our model achieves higher classification performance than ImageNet-supervised and in-domain supervised pretraining when labeled training data is limited. "
+}

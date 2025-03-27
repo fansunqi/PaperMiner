@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High Performance Data Engineering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CylonFlow",
+    "Cylon dataframe system"
+  ],
+  "results": [
+    "30x more distributed performance than Dask Dataframes",
+    "Superior sequential performance due to native C++ execution"
+  ],
+  "paper_id": "63ca069890e50fcafd683092",
+  "title": "Supercharging Distributed Computing Environments For High Performance\n  Data Engineering",
+  "abstract": "  The data engineering and data science community has embraced the idea of using Python & R dataframes for regular applications. Driven by the big data revolution and artificial intelligence, these applications are now essential in order to process terabytes of data. They can easily exceed the capabilities of a single machine, but also demand significant developer time & effort. Therefore it is essential to design scalable dataframe solutions. There have been multiple attempts to tackle this problem, the most notable being the dataframe systems developed using distributed computing environments such as Dask and Ray. Even though Dask/Ray distributed computing features look very promising, we perceive that the Dask Dataframes/Ray Datasets still have room for optimization. In this paper, we present CylonFlow, an alternative distributed dataframe execution methodology that enables state-of-the-art performance and scalability on the same Dask/Ray infrastructure (thereby supercharging them!). To achieve this, we integrate a high performance dataframe system Cylon, which was originally based on an entirely different execution paradigm, into Dask and Ray. Our experiments show that on a pipeline of dataframe operators, CylonFlow achieves 30x more distributed performance than Dask Dataframes. Interestingly, it also enables superior sequential performance due to the native C++ execution of Cylon. We believe the success of Cylon & CylonFlow extends beyond the data engineering domain, and can be used to consolidate high performance computing and distributed computing ecosystems. "
+}

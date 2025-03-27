@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimizing transmitter decisions",
+    "Minimizing Age of Incorrect Information (AoII)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Markov decision process",
+    "Policy improvement theorem",
+    "Value iteration algorithm"
+  ],
+  "results": [
+    "Optimal policies derived",
+    "Performance improvements due to preemption capability"
+  ],
+  "paper_id": "63350ce790e50fcafd3511fd",
+  "title": "Preempting to Minimize Age of Incorrect Information under Transmission\n  Delay",
+  "abstract": "  We study the problem of optimizing the decisions of a preemptively capable transmitter to minimize the Age of Incorrect Information (AoII) when the communication channel has a random delay. We consider a slotted-time system where a transmitter observes a Markovian source and makes decisions based on the system status. In each time slot, the transmitter decides whether to preempt or skip when the channel is busy. When the channel is idle, the transmitter decides whether to send a new update. A remote receiver estimates the state of the Markovian source based on the update it receives. We consider a generic transmission delay and assume that the transmission delay is independent and identically distributed for each update. This paper aims to optimize the transmitter's decision in each time slot to minimize the AoII with generic time penalty functions. To this end, we first use the Markov decision process to formulate the optimization problem and derive the analytical expressions of the expected AoIIs achieved by two canonical preemptive policies. Then, we prove the existence of the optimal policy and provide a feasible value iteration algorithm to approximate the optimal policy. However, the value iteration algorithm will be computationally expensive if we want considerable confidence in the approximation. Therefore, we analyze the system characteristics under two canonical delay distributions and theoretically obtain the corresponding optimal policies using the policy improvement theorem. Finally, numerical results are presented to illustrate the performance improvements brought about by the preemption capability. "
+}

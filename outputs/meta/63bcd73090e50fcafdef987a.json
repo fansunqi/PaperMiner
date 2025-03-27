@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/MathLee/SeaNet"
+  ],
+  "tasks": [
+    "Salient Object Detection in Optical Remote-Sensing Images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SeaNet: lightweight network for ORSI-SOD, includes MobileNet-V2, DSMM, ESAM, and portable decoder"
+  ],
+  "results": [
+    "Outperforms most state-of-the-art lightweight methods",
+    "Comparable accuracy with state-of-the-art conventional methods",
+    "2.76M parameters",
+    "1.7G FLOPs for 288x288 inputs"
+  ],
+  "paper_id": "63bcd73090e50fcafdef987a",
+  "title": "Lightweight Salient Object Detection in Optical Remote-Sensing Images\n  via Semantic Matching and Edge Alignment",
+  "abstract": "  Recently, relying on convolutional neural networks (CNNs), many methods for salient object detection in optical remote sensing images (ORSI-SOD) are proposed. However, most methods ignore the huge parameters and computational cost brought by CNNs, and only a few pay attention to the portability and mobility. To facilitate practical applications, in this paper, we propose a novel lightweight network for ORSI-SOD based on semantic matching and edge alignment, termed SeaNet. Specifically, SeaNet includes a lightweight MobileNet-V2 for feature extraction, a dynamic semantic matching module (DSMM) for high-level features, an edge self-alignment module (ESAM) for low-level features, and a portable decoder for inference. First, the high-level features are compressed into semantic kernels. Then, semantic kernels are used to activate salient object locations in two groups of high-level features through dynamic convolution operations in DSMM. Meanwhile, in ESAM, cross-scale edge information extracted from two groups of low-level features is self-aligned through L2 loss and used for detail enhancement. Finally, starting from the highest-level features, the decoder infers salient objects based on the accurate locations and fine details contained in the outputs of the two modules. Extensive experiments on two public datasets demonstrate that our lightweight SeaNet not only outperforms most state-of-the-art lightweight methods but also yields comparable accuracy with state-of-the-art conventional methods, while having only 2.76M parameters and running with 1.7G FLOPs for 288x288 inputs. Our code and results are available at https://github.com/MathLee/SeaNet. "
+}

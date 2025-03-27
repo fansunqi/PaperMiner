@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backdoor Attacks on Time Series"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generative Approach",
+    "Universal Generator"
+  ],
+  "results": [
+    "High stealthiness and high attack success rate",
+    "No significant drop in clean accuracy",
+    "Resistant to potential backdoor defenses"
+  ],
+  "paper_id": "637454dc90e50fcafdfc67cd",
+  "title": "Backdoor Attacks on Time Series: A Generative Approach",
+  "abstract": "  Backdoor attacks have emerged as one of the major security threats to deep learning models as they can easily control the model's test-time predictions by pre-injecting a backdoor trigger into the model at training time. While backdoor attacks have been extensively studied on images, few works have investigated the threat of backdoor attacks on time series data. To fill this gap, in this paper we present a novel generative approach for time series backdoor attacks against deep learning based time series classifiers. Backdoor attacks have two main goals: high stealthiness and high attack success rate. We find that, compared to images, it can be more challenging to achieve the two goals on time series. This is because time series have fewer input dimensions and lower degrees of freedom, making it hard to achieve a high attack success rate without compromising stealthiness. Our generative approach addresses this challenge by generating trigger patterns that are as realistic as real-time series patterns while achieving a high attack success rate without causing a significant drop in clean accuracy. We also show that our proposed attack is resistant to potential backdoor defenses. Furthermore, we propose a novel universal generator that can poison any type of time series with a single generator that allows universal attacks without the need to fine-tune the generative model for new time series datasets. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unseen Object Pose Estimation"
+  ],
+  "datasets": [
+    "LINEMOD",
+    "GenMOP",
+    "challenging synthetic dataset"
+  ],
+  "methods": [
+    "template matching strategy",
+    "multi-scale correlations",
+    "translation estimator",
+    "scale-aware and scale-robust features"
+  ],
+  "results": [
+    "outperforms existing works by a large margin",
+    "better robustness to various noise sources"
+  ],
+  "paper_id": "6386c9e790e50fcafdfa10cd",
+  "title": "LocPoseNet: Robust Location Prior for Unseen Object Pose Estimation",
+  "abstract": "  Object location priors have been shown to be critical for the standard 6D object pose estimation setting, where the training and testing objects are the same. Specifically, they can be used to initialize the 3D object translation and facilitate 3D object rotation estimation. Unfortunately, the object detectors that are used for this purpose do not generalize to unseen objects, i.e., objects from new categories at test time. Therefore, existing 6D pose estimation methods for previously-unseen objects either assume the ground-truth object location to be known, or yield inaccurate results when it is unavailable. In this paper, we address this problem by developing a method, LocPoseNet, able to robustly learn location prior for unseen objects. Our method builds upon a template matching strategy, where we propose to distribute the reference kernels and convolve them with a query to efficiently compute multi-scale correlations. We then introduce a novel translation estimator, which decouples scale-aware and scale-robust features to predict different object location parameters. Our method outperforms existing works by a large margin on LINEMOD and GenMOP. We further construct a challenging synthetic dataset, which allows us to highlight the better robustness of our method to various noise sources. "
+}

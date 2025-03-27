@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Concurrency Control for Data Ingestion Queries"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Scheduling Space Expander (SSE)",
+    "Epoch-based SSE (ESSE)"
+  ],
+  "results": [
+    "Improves performance by 2.7x and 2.5x on TATP benchmark",
+    "Achieves performance comparable to original protocol for TPC-C benchmark"
+  ],
+  "paper_id": "63d340e890e50fcafd910b0b",
+  "title": "Scheduling Space Expander: An Extension of Concurrency Control for Data\n  Ingestion Queries",
+  "abstract": "  With the continuing advances of sensing devices and IoT/Telecom applications, database systems need to process data ingestion queries that update the sensor data frequently. However, as the rate of data ingestion queries increases, existing protocols have exhibited degraded performance since concurrent updates need to acquire lock to update the latest versions. To reduce the load on system on data ingestion queries, we focus on the theory of version order; we can test that a write is an old and unnecessary version by using version order of data items. In this paper, we propose a novel protocol extension method, scheduling space expander (SSE). SSE adds another control flow to conventional protocols to omit updates on data ingestion queries. It generates an erasing version order, which assumes that a transaction processes outdated unnecessary versions. SSE also tests the correctness of this version order efficiently and independently from conventional protocols. In addition, we present an optimization of SSE called epoch-based SSE (ESSE), which tests and maintains an erasing version order more efficiently than SSE. We extend two state-of-the-art 1VCC and MVCC protocols, Silo and MVTO with ESSE. Experimental results demonstrate that extensions of Silo and MVTO improve 2.7x and 2.5x performance on the TATP benchmark on a 144-core machine, and the extensions achieved performance comparable to that of the original protocol for the TPC-C benchmark. "
+}

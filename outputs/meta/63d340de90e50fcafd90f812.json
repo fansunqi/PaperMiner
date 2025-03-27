@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Prostate Lesion Estimation"
+  ],
+  "datasets": [
+    "biparametric prostate MRI PI-CAI 2022 Challenge"
+  ],
+  "methods": [
+    "segmentation",
+    "nnU-Net model",
+    "PSA and ADC intensity distributions"
+  ],
+  "results": [
+    "AUROC: 0.888",
+    "AP: 0.732"
+  ],
+  "paper_id": "63d340de90e50fcafd90f812",
+  "title": "Prostate Lesion Estimation using Prostate Masks from Biparametric MRI",
+  "abstract": "  Biparametric MRI has emerged as an alternative to multiparametric prostate MRI, which eliminates the need for the potential harms to the patient due to the contrast medium. One major issue with biparametric MRI is difficulty to detect clinically significant prostate cancer (csPCA). Deep learning algorithms have emerged as an alternative solution to detect csPCA in cohort studies. We present a workflow which predicts csPCA on biparametric prostate MRI PI-CAI 2022 Challenge with over 10,000 carefully-curated prostate MRI exams. We propose to to segment the prostate gland first to the central gland (transition + central zone) and the peripheral gland. Then we utilize these predcitions in combination with T2, ADC and DWI images to train an ensemble nnU-Net model. Finally, we utilize clinical indices PSA and ADC intensity distributions of lesion regions to reduce the false positives. Our method achieves top results on open-validation stage with a AUROC of 0.888 and AP of 0.732. "
+}

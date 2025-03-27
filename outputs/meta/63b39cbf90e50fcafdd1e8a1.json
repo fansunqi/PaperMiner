@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Temporal panel datasets analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gradient Boosting Decision Trees (GBDTs)",
+    "Neural Networks",
+    "Online learning techniques",
+    "Dynamic feature neutralisation",
+    "Model ensembles",
+    "Dynamic model selection"
+  ],
+  "results": [
+    "GBDT models with dropout display high performance, robustness and generalisability",
+    "Online learning techniques enhance results",
+    "Dynamic feature neutralisation improves robustness",
+    "Improved Sharpe and Calmar ratios",
+    "Good reproducibility of results"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e8a1",
+  "title": "Dynamic Feature Engineering and model selection methods for temporal\n  tabular datasets with regime changes",
+  "abstract": "  The application of deep learning algorithms to temporal panel datasets is difficult due to heavy non-stationarities which can lead to over-fitted models that under-perform under regime changes. In this work we propose a new machine learning pipeline for ranking predictions on temporal panel datasets which is robust under regime changes of data. Different machine-learning models, including Gradient Boosting Decision Trees (GBDTs) and Neural Networks with and without simple feature engineering are evaluated in the pipeline with different settings. We find that GBDT models with dropout display high performance, robustness and generalisability with relatively low complexity and reduced computational cost. We then show that online learning techniques can be used in post-prediction processing to enhance the results. In particular, dynamic feature neutralisation, an efficient procedure that requires no retraining of models and can be applied post-prediction to any machine learning model, improves robustness by reducing drawdown in regime changes. Furthermore, we demonstrate that the creation of model ensembles through dynamic model selection based on recent model performance leads to improved performance over baseline by improving the Sharpe and Calmar ratios of out-of-sample prediction performances. We also evaluate the robustness of our pipeline across different data splits and random seeds with good reproducibility of results. "
+}

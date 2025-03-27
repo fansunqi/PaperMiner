@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spoken Language Understanding"
+  ],
+  "datasets": [
+    "SLURP"
+  ],
+  "methods": [
+    "Tree-constrained Pointer Generator (TCPGen)",
+    "Slot Probability Biasing (SPB)"
+  ],
+  "results": [
+    "SLU-F1 score over 50% for zero-shot learning",
+    "Improved intent classification accuracy"
+  ],
+  "paper_id": "63608e5090e50fcafdee10d0",
+  "title": "End-to-end Spoken Language Understanding with Tree-constrained Pointer\n  Generator",
+  "abstract": "  End-to-end spoken language understanding (SLU) suffers from the long-tail word problem. This paper exploits contextual biasing, a technique to improve the speech recognition of rare words, in end-to-end SLU systems. Specifically, a tree-constrained pointer generator (TCPGen), a powerful and efficient biasing model component, is studied, which leverages a slot shortlist with corresponding entities to extract biasing lists. Meanwhile, to bias the SLU model output slot distribution, a slot probability biasing (SPB) mechanism is proposed to calculate a slot distribution from TCPGen. Experiments on the SLURP dataset showed consistent SLU-F1 improvements using TCPGen and SPB, especially on unseen entities. On a new split by holding out 5 slot types for the test, TCPGen with SPB achieved zero-shot learning with an SLU-F1 score over 50% compared to baselines which can not deal with it. In addition to slot filling, the intent classification accuracy was also improved. "
+}

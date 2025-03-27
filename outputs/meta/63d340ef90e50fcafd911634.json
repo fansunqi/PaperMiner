@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human Attention Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer-based method with semantic segmentation",
+    "Multi-task Attention Module"
+  ],
+  "results": [
+    "Competitive performance compared to other state-of-the-art methods"
+  ],
+  "paper_id": "63d340ef90e50fcafd911634",
+  "title": "Semantic Segmentation Enhanced Transformer Model for Human Attention\n  Prediction",
+  "abstract": "  Saliency Prediction aims to predict the attention distribution of human eyes given an RGB image. Most of the recent state-of-the-art methods are based on deep image feature representations from traditional CNNs. However, the traditional convolution could not capture the global features of the image well due to its small kernel size. Besides, the high-level factors which closely correlate to human visual perception, e.g., objects, color, light, etc., are not considered. Inspired by these, we propose a Transformer-based method with semantic segmentation as another learning objective. More global cues of the image could be captured by Transformer. In addition, simultaneously learning the object segmentation simulates the human visual perception, which we would verify in our investigation of human gaze control in cognitive science. We build an extra decoder for the subtask and the multiple tasks share the same Transformer encoder, forcing it to learn from multiple feature spaces. We find in practice simply adding the subtask might confuse the main task learning, hence Multi-task Attention Module is proposed to deal with the feature interaction between the multiple learning targets. Our method achieves competitive performance compared to other state-of-the-art methods. "
+}

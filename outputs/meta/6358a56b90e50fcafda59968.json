@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speaker Diarisation"
+  ],
+  "datasets": [
+    "AMI"
+  ],
+  "methods": [
+    "Spectral Clustering-aware Learning of Embeddings (SCALE)",
+    "Angular Prototype (AP) loss",
+    "Affinity matrix loss",
+    "p-percentile thresholding",
+    "Gaussian blur"
+  ],
+  "results": [
+    "Over 50% relative speaker error rate reductions using oracle segmentation",
+    "Over 30% relative diarisation error rate reductions using automatic segmentation"
+  ],
+  "paper_id": "6358a56b90e50fcafda59968",
+  "title": "Spectral Clustering-aware Learning of Embeddings for Speaker Diarisation",
+  "abstract": "  In speaker diarisation, speaker embedding extraction models often suffer from the mismatch between their training loss functions and the speaker clustering method. In this paper, we propose the method of spectral clustering-aware learning of embeddings (SCALE) to address the mismatch. Specifically, besides an angular prototype cal (AP) loss, SCALE uses a novel affinity matrix loss which directly minimises the error between the affinity matrix estimated from speaker embeddings and the reference. SCALE also includes p-percentile thresholding and Gaussian blur as two important hyper-parameters for spectral clustering in training. Experiments on the AMI dataset showed that speaker embeddings obtained with SCALE achieved over 50% relative speaker error rate reductions using oracle segmentation, and over 30% relative diarisation error rate reductions using automatic segmentation when compared to a strong baseline with the AP-loss-based speaker embeddings. "
+}

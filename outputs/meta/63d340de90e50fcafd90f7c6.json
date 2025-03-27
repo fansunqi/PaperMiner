@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating industrial growth at the level of individual sites"
+  ],
+  "datasets": [
+    "2,078 50 cm resolution images spanning 19 years"
+  ],
+  "methods": [
+    "Mask R-CNN segmentation algorithm",
+    "CNN-LSTM",
+    "VIIRS radiance imputation"
+  ],
+  "results": [
+    "Average error of 0.021 km\u00b2 for total square meters of industrial development",
+    "Average error of 9.8 nW/cm\u00b2sr for radiance of lights",
+    "Average change of 4,084 m\u00b2 in industrial growth"
+  ],
+  "paper_id": "63d340de90e50fcafd90f7c6",
+  "title": "Tracking the industrial growth of modern China with high-resolution\n  panchromatic imagery: A sequential convolutional approach",
+  "abstract": "  Due to insufficient or difficult to obtain data on development in inaccessible regions, remote sensing data is an important tool for interested stakeholders to collect information on economic growth. To date, no studies have utilized deep learning to estimate industrial growth at the level of individual sites. In this study, we harness high-resolution panchromatic imagery to estimate development over time at 419 industrial sites in the People's Republic of China using a multi-tier computer vision framework. We present two methods for approximating development: (1) structural area coverage estimated through a Mask R-CNN segmentation algorithm, and (2) imputing development directly with visible & infrared radiance from the Visible Infrared Imaging Radiometer Suite (VIIRS). Labels generated from these methods are comparatively evaluated and tested. On a dataset of 2,078 50 cm resolution images spanning 19 years, the results indicate that two dimensions of industrial development can be estimated using high-resolution daytime imagery, including (a) the total square meters of industrial development (average error of 0.021 $\\textrm{km}^2$), and (b) the radiance of lights (average error of 9.8 $\\mathrm{\\frac{nW}{cm^{2}sr}}$). Trend analysis of the techniques reveal estimates from a Mask R-CNN-labeled CNN-LSTM track ground truth measurements most closely. The Mask R-CNN estimates positive growth at every site from the oldest image to the most recent, with an average change of 4,084 $\\textrm{m}^2$. "
+}

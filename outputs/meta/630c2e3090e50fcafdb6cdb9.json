@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning",
+    "Privacy Preserving Prompt Tuning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FedPrompt",
+    "Prompt Tuning",
+    "Model Split Aggregation",
+    "Backdoor Attack"
+  ],
+  "results": [
+    "Communication cost reduced to 0.01% of PLMs' parameters",
+    "Little decrease on accuracy",
+    "Normal backdoor attack not achieving high attack success rate"
+  ],
+  "paper_id": "630c2e3090e50fcafdb6cdb9",
+  "title": "FedPrompt: Communication-Efficient and Privacy Preserving Prompt Tuning\n  in Federated Learning",
+  "abstract": "  Federated learning (FL) has enabled global model training on decentralized data in a privacy-preserving way by aggregating model updates. However, for many natural language processing (NLP) tasks that utilize pre-trained language models (PLMs) with large numbers of parameters, there are considerable communication costs associated with FL. Recently, prompt tuning, which tunes some soft prompts without modifying PLMs, has achieved excellent performance as a new learning paradigm. Therefore we want to combine the two methods and explore the effect of prompt tuning under FL. In this paper, we propose \"FedPrompt\" to study prompt tuning in a model split aggregation way using FL, and prove that split aggregation greatly reduces the communication cost, only 0.01% of the PLMs' parameters, with little decrease on accuracy both on IID and Non-IID data distribution. This improves the efficiency of FL method while also protecting the data privacy in prompt tuning. In addition, like PLMs, prompts are uploaded and downloaded between public platforms and personal users, so we try to figure out whether there is still a backdoor threat using only soft prompts in FL scenarios. We further conduct backdoor attacks by data poisoning on FedPrompt. Our experiments show that normal backdoor attack can not achieve a high attack success rate, proving the robustness of FedPrompt. We hope this work can promote the application of prompt in FL and raise the awareness of the possible security threats. "
+}

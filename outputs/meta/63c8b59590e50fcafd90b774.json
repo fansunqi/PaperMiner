@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Filtering over Expanding Graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Online gradient descent",
+    "Graph signal processing tools"
+  ],
+  "results": [
+    "Comparing well to the offline baseline filter",
+    "Outperforming competitive approaches"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b774",
+  "title": "Online Filtering over Expanding Graphs",
+  "abstract": "  Data processing tasks over graphs couple the data residing over the nodes with the topology through graph signal processing tools. Graph filters are one such prominent tool, having been used in applications such as denoising, interpolation, and classification. However, they are mainly used on fixed graphs although many networks grow in practice, with nodes continually attaching to the topology. Re-training the filter every time a new node attaches is computationally demanding; hence an online learning solution that adapts to the evolving graph is needed. We propose an online update of the filter, based on the principles of online machine learning. To update the filter, we perform online gradient descent, which has a provable regret bound with respect to the filter computed offline. We show the performance of our method for signal interpolation at the incoming nodes. Numerical results on synthetic and graph-based recommender systems show that the proposed approach compares well to the offline baseline filter while outperforming competitive approaches. These findings lay the foundation for efficient filtering over expanding graphs. "
+}

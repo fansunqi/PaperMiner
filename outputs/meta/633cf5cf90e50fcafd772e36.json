@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Prediction tasks",
+    "Spurious correlation avoidance"
+  ],
+  "datasets": [
+    "Classifying waterbirds",
+    "Natural language inference (NLI)",
+    "Detecting cardiomegaly in chest X-rays"
+  ],
+  "methods": [
+    "Data augmentation",
+    "Semantic corruption"
+  ],
+  "results": [
+    "Robust models produced by data augmentation",
+    "Identifying and adjusting for nuisances"
+  ],
+  "paper_id": "633cf5cf90e50fcafd772e36",
+  "title": "Nuisances via Negativa: Adjusting for Spurious Correlations via Data\n  Augmentation",
+  "abstract": "  In prediction tasks, there exist features that are related to the label in the same way across different settings for that task; these are semantic features or semantics. Features with varying relationships to the label are nuisances. For example, in detecting cows from natural images, the shape of the head is a semantic but because images of cows often have grass backgrounds but not always, the background is a nuisance. Relationships between a nuisance and the label are unstable across settings and, consequently, models that exploit nuisance-label relationships face performance degradation when these relationships change. Direct knowledge of a nuisance helps build models that are robust to such changes, but requires extra annotations beyond labels and covariates. In this paper, we develop an alternative way to produce robust models by data augmentation. These data augmentations corrupt semantic information to produce models that identify and adjust for where nuisances drive predictions. We study semantic corruptions in powering different spurious-correlation avoiding methods on multiple out-of distribution (OOD) tasks like classifying waterbirds, natural language inference (NLI), and detecting cardiomegaly in chest X-rays. "
+}

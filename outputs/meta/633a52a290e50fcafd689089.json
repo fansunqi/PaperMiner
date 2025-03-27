@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Retrosynthetic planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FusionRetro: Reaction graph-based molecule representation fusion"
+  ],
+  "results": [
+    "Significant improvement in retrosynthetic planning performance",
+    "Fusion of context information over routes"
+  ],
+  "paper_id": "633a52a290e50fcafd689089",
+  "title": "FusionRetro: Molecule Representation Fusion via Reaction Graph for\n  Retrosynthetic Planning",
+  "abstract": "  Retrosynthetic planning is a fundamental problem in drug discovery and organic chemistry, which aims to find a complete multi-step synthetic route from a set of starting materials to the target molecule, determining crucial process flow in chemical production. Existing approaches combine single-step retrosynthesis models and search algorithms to find synthetic routes. However, these approaches generally consider the two pieces in a decoupled manner, taking only the product as the input to predict the reactants per planning step and largely ignoring the important context information from other intermediates along the synthetic route. In this work, we perform a series of experiments to identify the limitations of this decoupled view and propose a novel retrosynthesis framework that also exploits context information for retrosynthetic planning. We view synthetic routes as reaction graphs, and propose to incorporate the context by three principled steps: encode molecules into embeddings, aggregate information over routes, and readout to predict reactants. The whole framework can be efficiently optimized in an end-to-end fashion. Comprehensive experiments show that by fusing in context information over routes, our model significantly improves the performance of retrosynthetic planning over baselines that are not context-aware, especially for long synthetic routes. "
+}

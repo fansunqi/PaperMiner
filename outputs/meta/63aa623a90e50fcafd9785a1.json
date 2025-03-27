@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shape abstraction transformation"
+  ],
+  "datasets": [
+    "Text2Shape",
+    "ShapeGlot",
+    "ABO",
+    "Genre",
+    "Program Synthetic"
+  ],
+  "methods": [
+    "Neural Shape Compiler",
+    "PointVQVAE",
+    "ShapeCode Transformer"
+  ],
+  "results": [
+    "Strengths in various tasks",
+    "Joint training on heterogeneous data and tasks"
+  ],
+  "paper_id": "63aa623a90e50fcafd9785a1",
+  "title": "Neural Shape Compiler: A Unified Framework for Transforming between\n  Text, Point Cloud, and Program",
+  "abstract": "  3D shapes have complementary abstractions from low-level geometry to part-based hierarchies to languages, which convey different levels of information. This paper presents a unified framework to translate between pairs of shape abstractions: $\\textit{Text}$ $\\Longleftrightarrow$ $\\textit{Point Cloud}$ $\\Longleftrightarrow$ $\\textit{Program}$. We propose $\\textbf{Neural Shape Compiler}$ to model the abstraction transformation as a conditional generation process. It converts 3D shapes of three abstract types into unified discrete shape code, transforms each shape code into code of other abstract types through the proposed $\\textit{ShapeCode Transformer}$, and decodes them to output the target shape abstraction. Point Cloud code is obtained in a class-agnostic way by the proposed $\\textit{Point}$VQVAE. On Text2Shape, ShapeGlot, ABO, Genre, and Program Synthetic datasets, Neural Shape Compiler shows strengths in $\\textit{Text}$ $\\Longrightarrow$ $\\textit{Point Cloud}$, $\\textit{Point Cloud}$ $\\Longrightarrow$ $\\textit{Text}$, $\\textit{Point Cloud}$ $\\Longrightarrow$ $\\textit{Program}$, and Point Cloud Completion tasks. Additionally, Neural Shape Compiler benefits from jointly training on all heterogeneous data and tasks. "
+}

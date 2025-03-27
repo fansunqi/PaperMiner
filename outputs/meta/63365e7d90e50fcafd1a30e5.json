@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Enumerating Regular Languages with Bounded Delay"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Using a model where each word is produced by editing the preceding word with a small edit script",
+    "Deciding in PTIME in an input deterministic finite automaton (DFA) for the language",
+    "Computing in PTIME automata that partition the language into orderable languages",
+    "Bounded-delay algorithm for producing the ordering"
+  ],
+  "results": [
+    "Characterizing which regular languages are enumerable with bounded delay",
+    "Deciding in PTIME whether a regular language is enumerable with bounded delay",
+    "Computing the optimal number of orderable languages into which a language can be partitioned",
+    "Producing a sequence of bounded-length edit scripts with bounded delay"
+  ],
+  "paper_id": "63365e7d90e50fcafd1a30e5",
+  "title": "Enumerating Regular Languages with Bounded Delay",
+  "abstract": "  We study the task, for a given language $L$, of enumerating the (generally infinite) sequence of its words, without repetitions, while bounding the delay between two consecutive words. To allow for delay bounds that do not depend on the current word length, we assume a model where we produce each word by editing the preceding word with a small edit script, rather than writing out the word from scratch. In particular, this witnesses that the language is orderable, i.e., we can write its words as an infinite sequence such that the Levenshtein edit distance between any two consecutive words is bounded by a value that depends only on the language. For instance, $(a+b)^*$ is orderable (with a variant of the Gray code), but $a^* + b^*$ is not.   We characterize which regular languages are enumerable in this sense, and show that this can be decided in PTIME in an input deterministic finite automaton (DFA) for the language. In fact, we show that, given a DFA $A$, we can compute in PTIME automata $A_1, \\ldots, A_t$ such that $L(A)$ is partitioned as $L(A_1) \\sqcup \\ldots \\sqcup L(A_t)$ and every $L(A_i)$ is orderable in this sense. Further, we show that the value of $t$ obtained is optimal, i.e., we cannot partition $L(A)$ into less than $t$ orderable languages.   In the case where $L(A)$ is orderable (i.e., $t=1$), we show that the ordering can be produced by a bounded-delay algorithm: specifically, the algorithm runs in a suitable pointer machine model, and produces a sequence of bounded-length edit scripts to visit the words of $L(A)$ without repetitions, with bounded delay -- exponential in $|A|$ -- between each script. In fact, we show that we can achieve this while only allowing the edit operations push and pop at the beginning and end of the word, which implies that the word can in fact be maintained in a double-ended queue. "
+}

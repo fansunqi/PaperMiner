@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic Table Union Search in Data Lakes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unsupervised representation learning and embedding retrieval",
+    "Self-supervised contrastive learning"
+  ],
+  "results": [
+    "Precision improvement: 16% increase",
+    "Recall improvement: 17% increase",
+    "Query response time: 7x faster"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8bf8",
+  "title": "Pylon: Semantic Table Union Search in Data Lakes",
+  "abstract": "  The large size and fast growth of data repositories, such as data lakes, has spurred the need for data discovery to help analysts find related data. The problem has become challenging as (i) a user typically does not know what datasets exist in an enormous data repository; and (ii) there is usually a lack of a unified data model to capture the interrelationships between heterogeneous datasets from disparate sources. In this work, we address one important class of discovery needs: finding union-able tables.   The task is to find tables in a data lake that can be unioned with a given query table. The challenge is to recognize union-able columns even if they are represented differently. In this paper, we propose a data-driven learning approach: specifically, an unsupervised representation learning and embedding retrieval task. Our key idea is to exploit self-supervised contrastive learning to learn an embedding model that takes into account the indexing/search data structure and produces embeddings close by for columns with semantically similar values while pushing apart columns with semantically dissimilar values. We then find union-able tables based on similarities between their constituent columns in embedding space. On a real-world data lake, we demonstrate that our best-performing model achieves significant improvements in precision ($16\\% \\uparrow$), recall ($17\\% \\uparrow $), and query response time (7x faster) compared to the state-of-the-art. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural retrieval models robustness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adversarial training (FGSM)"
+  ],
+  "results": [
+    "FGSM improves robustness and effectiveness of neural retrievers",
+    "Improves performance on in-domain and out-of-domain distributions",
+    "Enhances performance on queries with typos"
+  ],
+  "paper_id": "63d340e890e50fcafd910c26",
+  "title": "A Study on FGSM Adversarial Training for Neural Retrieval",
+  "abstract": "  Neural retrieval models have acquired significant effectiveness gains over the last few years compared to term-based methods. Nevertheless, those models may be brittle when faced to typos, distribution shifts or vulnerable to malicious attacks. For instance, several recent papers demonstrated that such variations severely impacted models performances, and then tried to train more resilient models. Usual approaches include synonyms replacements or typos injections -- as data-augmentation -- and the use of more robust tokenizers (characterBERT, BPE-dropout). To further complement the literature, we investigate in this paper adversarial training as another possible solution to this robustness issue. Our comparison includes the two main families of BERT-based neural retrievers, i.e. dense and sparse, with and without distillation techniques. We then demonstrate that one of the most simple adversarial training techniques -- the Fast Gradient Sign Method (FGSM) -- can improve first stage rankers robustness and effectiveness. In particular, FGSM increases models performances on both in-domain and out-of-domain distributions, and also on queries with typos, for multiple neural retrievers. "
+}

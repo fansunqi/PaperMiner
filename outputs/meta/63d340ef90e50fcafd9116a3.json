@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Ontology Completion",
+    "Subsumption Prediction",
+    "Role Assertion Prediction",
+    "Approximating Deductive Reasoning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Box^2EL",
+    "Bumping Mechanism"
+  ],
+  "results": [
+    "State-of-the-art results on various datasets"
+  ],
+  "paper_id": "63d340ef90e50fcafd9116a3",
+  "title": "Dual Box Embeddings for the Description Logic EL++",
+  "abstract": "OWL ontologies, whose formal semantics are rooted in Description Logic (DL),\nhave been widely used for knowledge representation. Similar to Knowledge Graphs\n(KGs), ontologies are often incomplete, and maintaining and constructing them\nhas proved challenging. While classical deductive reasoning algorithms use the\nprecise formal semantics of an ontology to predict missing facts, recent years\nhave witnessed growing interest in inductive reasoning techniques that can\nderive probable facts from an ontology. Similar to KGs, a promising approach is\nto learn ontology embeddings in a latent vector space, while additionally\nensuring they adhere to the semantics of the underlying DL. While a variety of\napproaches have been proposed, current ontology embedding methods suffer from\nseveral shortcomings, especially that they all fail to faithfully model\none-to-many, many-to-one, and many-to-many relations and role inclusion axioms.\nTo address this problem and improve ontology completion performance, we propose\na novel ontology embedding method named Box^2EL for the DL EL++, which\nrepresents both concepts and roles as boxes (i.e., axis-aligned\nhyperrectangles), and models inter-concept relationships using a bumping\nmechanism. We theoretically prove the soundness of Box^2EL and conduct an\nextensive experimental evaluation, achieving state-of-the-art results across a\nvariety of datasets on the tasks of subsumption prediction, role assertion\nprediction, and approximating deductive reasoning."
+}

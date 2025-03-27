@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "IPv6 routing infrastructure security",
+    "BGP prefix de-aggregation attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Integer Linear Programming",
+    "BGP data analysis",
+    "real-world measurements",
+    "router testbed experiments"
+  ],
+  "results": [
+    "Kirin capable of injecting lethal amounts of IPv6 routes",
+    "Low deployment cost"
+  ],
+  "paper_id": "6350bc6e90e50fcafdecf2e9",
+  "title": "Kirin: Hitting the Internet with Millions of Distributed IPv6\n  Announcements",
+  "abstract": "  The Internet is a critical resource in the day-to-day life of billions of users. To support the growing number of users and their increasing demands, operators have to continuously scale their network footprint -- e.g., by joining Internet Exchange Points -- and adopt relevant technologies -- such as IPv6. IPv6, however, has a vastly larger address space compared to its predecessor, which allows for new kinds of attacks on the Internet routing infrastructure. In this paper, we revisit prefix de-aggregation attacks in the light of these two changes and introduce Kirin -- an advanced BGP prefix de-aggregation attack that sources millions of IPv6 routes and distributes them via thousands of sessions across various IXPs to overflow the memory of border routers within thousands of remote ASes. Kirin's highly distributed nature allows it to bypass traditional route-flooding defense mechanisms, such as per-session prefix limits or route flap damping. We analyze the theoretical feasibility of the attack by formulating it as a Integer Linear Programming problem, test for practical hurdles by deploying the infrastructure required to perform a small-scale Kirin attack using 4 IXPs, and validate our assumptions via BGP data analysis, real-world measurements, and router testbed experiments. Despite its low deployment cost, we find Kirin capable of injecting lethal amounts of IPv6 routes in the routers of thousands of ASes. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Safety certification of data-driven control techniques",
+    "Backward reachability analysis of neural feedback loops"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DRIP",
+    "algorithm with refinement loop",
+    "polytopes",
+    "NN relaxation algorithm"
+  ],
+  "results": [
+    "Tightens BP set bounds",
+    "Demonstrated in numerical experiments on control systems"
+  ],
+  "paper_id": "63969ba690e50fcafdcf1937",
+  "title": "DRIP: Domain Refinement Iteration with Polytopes for Backward\n  Reachability Analysis of Neural Feedback Loops",
+  "abstract": "  Safety certification of data-driven control techniques remains a major open problem. This work investigates backward reachability as a framework for providing collision avoidance guarantees for systems controlled by neural network (NN) policies. Because NNs are typically not invertible, existing methods conservatively assume a domain over which to relax the NN, which causes loose over-approximations of the set of states that could lead the system into the obstacle (i.e., backprojection (BP) sets). To address this issue, we introduce DRIP, an algorithm with a refinement loop on the relaxation domain, which substantially tightens the BP set bounds. Furthermore, we introduce a formulation that enables directly obtaining closed-form representations of polytopes to bound the BP sets tighter than prior work, which required solving linear programs and using hyper-rectangles. Furthermore, this work extends the NN relaxation algorithm to handle polytope domains, which further tightens the bounds on BP sets. DRIP is demonstrated in numerical experiments on control systems, including a ground robot controlled by a learned NN obstacle avoidance policy. "
+}

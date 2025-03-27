@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Medical image semantic segmentation",
+    "Medical image object detection"
+  ],
+  "datasets": [
+    "Chest X-ray tasks"
+  ],
+  "methods": [
+    "Local contrastive losses",
+    "Global contrastive losses",
+    "Distribution prior for uniformity"
+  ],
+  "results": [
+    "Outperforms methods without local losses on 12 of 18 tasks"
+  ],
+  "paper_id": "6373035b90e50fcafd09ffcd",
+  "title": "The Role of Local Alignment and Uniformity in Image-Text Contrastive\n  Learning on Medical Images",
+  "abstract": "  Image-text contrastive learning has proven effective for pretraining medical image models. When targeting localized downstream tasks like semantic segmentation or object detection, additional local contrastive losses that align image regions with sentences have shown promising results. We study how local contrastive losses are related to global (per-sample) contrastive losses and which effects they have on localized medical downstream tasks. Based on a theoretical comparison, we propose to remove some components of local losses and replace others by a novel distribution prior which enforces uniformity of representations within each sample. We empirically study this approach on chest X-ray tasks and find it to be very effective, outperforming methods without local losses on 12 of 18 tasks. "
+}

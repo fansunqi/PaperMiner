@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hyperelasticity modeling"
+  ],
+  "datasets": [
+    "Rubber and skin stress-strain data"
+  ],
+  "methods": [
+    "Constitutive Artificial Neural Networks (CANN)",
+    "Input Convex Neural Networks (ICNN)",
+    "Neural Ordinary Differential Equations (NODE)"
+  ],
+  "results": [
+    "Capture data almost perfectly without overfitting",
+    "Capacity to extrapolate",
+    "Trade-off between number of parameters and accuracy"
+  ],
+  "paper_id": "63d340e990e50fcafd910d17",
+  "title": "Benchmarks for physics-informed data-driven hyperelasticity",
+  "abstract": "  Data-driven methods have changed the way we understand and model materials. However, while providing unmatched flexibility, these methods have limitations such as reduced capacity to extrapolate, overfitting, and violation of physics constraints. Recent developments have led to modeling frameworks that automatically satisfy these requirements. Here we review, extend, and compare three promising data-driven methods: Constitutive Artificial Neural Networks (CANN), Input Convex Neural Networks (ICNN), and Neural Ordinary Differential Equations (NODE). Our formulation expands the strain energy potentials in terms of sums of convex non-decreasing functions of invariants and linear combinations of these. The expansion of the energy is shared across all three methods and guarantees the automatic satisfaction of objectivity and polyconvexity, essential within the context of hyperelasticity. To benchmark the methods, we train them against rubber and skin stress-strain data. All three approaches capture the data almost perfectly, without overfitting, and have some capacity to extrapolate. Interestingly, the methods find different energy functions even though the prediction on the stress data is nearly identical. The most notable differences are observed in the second derivatives, which could impact performance of numerical solvers. On the rich set of data used in these benchmarks, the models show the anticipated trade-off between number of parameters and accuracy. Overall, CANN, ICNN and NODE retain the flexibility and accuracy of other data-driven methods without compromising on the physics. These methods are thus ideal options to model arbitrary hyperelastic material behavior. "
+}

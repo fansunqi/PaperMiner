@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning confident models",
+    "Estimating uncertainty",
+    "Handling annotator noise"
+  ],
+  "datasets": [
+    "MNIST",
+    "CIFAR-10",
+    "FMNIST"
+  ],
+  "methods": [
+    "Entropy or information-based regularizer",
+    "Uncertainty estimation"
+  ],
+  "results": [
+    "Outperforms or performs comparably to SOTA methods",
+    "Effective in learning annotators' confusion",
+    "More confident in predicting GT than other baselines"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e6d2",
+  "title": "In Quest of Ground Truth: Learning Confident Models and Estimating\n  Uncertainty in the Presence of Annotator Noise",
+  "abstract": "  The performance of the Deep Learning (DL) models depends on the quality of labels. In some areas, the involvement of human annotators may lead to noise in the data. When these corrupted labels are blindly regarded as the ground truth (GT), DL models suffer from performance deficiency. This paper presents a method that aims to learn a confident model in the presence of noisy labels. This is done in conjunction with estimating the uncertainty of multiple annotators.   We robustly estimate the predictions given only the noisy labels by adding entropy or information-based regularizer to the classifier network. We conduct our experiments on a noisy version of MNIST, CIFAR-10, and FMNIST datasets. Our empirical results demonstrate the robustness of our method as it outperforms or performs comparably to other state-of-the-art (SOTA) methods. In addition, we evaluated the proposed method on the curated dataset, where the noise type and level of various annotators depend on the input image style. We show that our approach performs well and is adept at learning annotators' confusion. Moreover, we demonstrate how our model is more confident in predicting GT than other baselines. Finally, we assess our approach for segmentation problem and showcase its effectiveness with experiments. "
+}

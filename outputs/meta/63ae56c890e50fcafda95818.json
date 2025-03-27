@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Building damage detection",
+    "Disaster relief"
+  ],
+  "datasets": [
+    "xFBD"
+  ],
+  "methods": [
+    "New baseline models"
+  ],
+  "results": [
+    "Limited/local damage detection task performance",
+    "Improved independence and separability of building damage predictions"
+  ],
+  "paper_id": "63ae56c890e50fcafda95818",
+  "title": "xFBD: Focused Building Damage Dataset and Analysis",
+  "abstract": "  The xView2 competition and xBD dataset spurred significant advancements in overhead building damage detection, but the competition's pixel level scoring can lead to reduced solution performance in areas with tight clusters of buildings or uninformative context. We seek to advance automatic building damage assessment for disaster relief by proposing an auxiliary challenge to the original xView2 competition. This new challenge involves a new dataset and metrics indicating solution performance when damage is more local and limited than in xBD. Our challenge measures a network's ability to identify individual buildings and their damage level without excessive reliance on the buildings' surroundings. Methods that succeed on this challenge will provide more fine-grained, precise damage information than original xView2 solutions. The best-performing xView2 networks' performances dropped noticeably in our new limited/local damage detection task. The common causes of failure observed are that (1) building objects and their classifications are not separated well, and (2) when they are, the classification is strongly biased by surrounding buildings and other damage context. Thus, we release our augmented version of the dataset with additional object-level scoring metrics (https://drive.google.com/drive/folders/1VuQZuAg6-Yo8r5J4OCx3ZRpa_fv9aaDX?usp=sharing) to test independence and separability of building objects, alongside the pixel-level performance metrics of the original competition. We also experiment with new baseline models which improve independence and separability of building damage predictions. Our results indicate that building damage detection is not a fully-solved problem, and we invite others to use and build on our dataset augmentations and metrics. "
+}

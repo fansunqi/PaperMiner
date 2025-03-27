@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving group robustness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Partitioning training dataset based on Gram matrices",
+    "Robust optimization on pseudo-groups"
+  ],
+  "results": [
+    "Improves group robustness over ERM",
+    "Outperforms all recent baselines"
+  ],
+  "paper_id": "630c2e3190e50fcafdb6d02c",
+  "title": "Take One Gram of Neural Features, Get Enhanced Group Robustness",
+  "abstract": "  Predictive performance of machine learning models trained with empirical risk minimization (ERM) can degrade considerably under distribution shifts. The presence of spurious correlations in training datasets leads ERM-trained models to display high loss when evaluated on minority groups not presenting such correlations. Extensive attempts have been made to develop methods improving worst-group robustness. However, they require group information for each training input or at least, a validation set with group labels to tune their hyperparameters, which may be expensive to get or unknown a priori. In this paper, we address the challenge of improving group robustness without group annotation during training or validation. To this end, we propose to partition the training dataset into groups based on Gram matrices of features extracted by an ``identification'' model and to apply robust optimization based on these pseudo-groups. In the realistic context where no group labels are available, our experiments show that our approach not only improves group robustness over ERM but also outperforms all recent baselines "
+}

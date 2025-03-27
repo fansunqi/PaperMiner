@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Policy Optimization"
+  ],
+  "datasets": [
+    "MuJoCo environments"
+  ],
+  "methods": [
+    "CAROL",
+    "abstract interpreter",
+    "differentiable signal for provable robustness"
+  ],
+  "results": [
+    "certified policies with performance comparable to state-of-the-art robust RL methods"
+  ],
+  "paper_id": "63d7352290e50fcafda30220",
+  "title": "Policy Optimization with Robustness Certificates",
+  "abstract": "  We present a policy optimization framework in which the learned policy comes with a machine-checkable certificate of adversarial robustness. Our approach, called CAROL, learns a model of the environment. In each learning iteration, it uses the current version of this model and an external abstract interpreter to construct a differentiable signal for provable robustness. This signal is used to guide policy learning, and the abstract interpretation used to construct it directly leads to the robustness certificate returned at convergence. We give a theoretical analysis that bounds the worst-case accumulative reward of CAROL. We also experimentally evaluate CAROL on four MuJoCo environments. On these tasks, which involve continuous state and action spaces, CAROL learns certified policies that have performance comparable to the (non-certified) policies learned using state-of-the-art robust RL methods. "
+}

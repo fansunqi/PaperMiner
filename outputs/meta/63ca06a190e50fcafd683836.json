@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning from Demonstration",
+    "Robotic Skill Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic Bayesian Network (DBN)",
+    "Bayesian Optimized Policy Search (BO-PI2)"
+  ],
+  "results": [
+    "Focuses exploration on failed sub-goals",
+    "Outperforms state-of-the-art on cumulative reward, skill success, and termination time"
+  ],
+  "paper_id": "63ca06a190e50fcafd683836",
+  "title": "Keyframe Demonstration Seeded and Bayesian Optimized Policy Search",
+  "abstract": "  This paper introduces a novel Learning from Demonstration framework to learn robotic skills with keyframe demonstrations using a Dynamic Bayesian Network (DBN) and a Bayesian Optimized Policy Search approach to improve the learned skills. DBN learns the robot motion, perceptual change in the object of interest (aka skill sub-goals) and the relation between them. The rewards are also learned from the perceptual part of the DBN. The policy search part is a semiblack box algorithm, which we call BO-PI2 . It utilizes the action-perception relation to focus the high-level exploration, uses Gaussian Processes to model the expected-return and performs Upper Confidence Bound type low-level exploration for sampling the rollouts. BO-PI2 is compared against a stateof-the-art method on three different skills in a real robot setting with expert and naive user demonstrations. The results show that our approach successfully focuses the exploration on the failed sub-goals and the addition of reward-predictive exploration outperforms the state-of-the-art approach on cumulative reward, skill success, and termination time metrics. "
+}

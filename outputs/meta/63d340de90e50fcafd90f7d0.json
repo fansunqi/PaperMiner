@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Protein backbone inpainting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Seq2Direct encoder ($\text{Enc}_{s2d}$)",
+    "Direct2Seq decoder ($\text{Dec}_{d2s}$)",
+    "DiffSDS"
+  ],
+  "results": [
+    "ADS could transform the language model into a strong structural model",
+    "DiffSDS outperforms previous strong baselines"
+  ],
+  "paper_id": "63d340de90e50fcafd90f7d0",
+  "title": "DiffSDS: A language diffusion model for protein backbone inpainting\n  under geometric conditions and constraints",
+  "abstract": "  Have you ever been troubled by the complexity and computational cost of SE(3) protein structure modeling and been amazed by the simplicity and power of language modeling? Recent work has shown promise in simplifying protein structures as sequences of protein angles; therefore, language models could be used for unconstrained protein backbone generation. Unfortunately, such simplification is unsuitable for the constrained protein inpainting problem, where the model needs to recover masked structures conditioned on unmasked ones, as it dramatically increases the computing cost of geometric constraints. To overcome this dilemma, we suggest inserting a hidden \\textbf{a}tomic \\textbf{d}irection \\textbf{s}pace (\\textbf{ADS}) upon the language model, converting invariant backbone angles into equivalent direction vectors and preserving the simplicity, called Seq2Direct encoder ($\\text{Enc}_{s2d}$). Geometric constraints could be efficiently imposed on the newly introduced direction space. A Direct2Seq decoder ($\\text{Dec}_{d2s}$) with mathematical guarantees is also introduced to develop a \\textbf{SDS} ($\\text{Enc}_{s2d}$+$\\text{Dec}_{d2s}$) model. We apply the SDS model as the denoising neural network during the conditional diffusion process, resulting in a constrained generative model--\\textbf{DiffSDS}. Extensive experiments show that the plug-and-play ADS could transform the language model into a strong structural model without loss of simplicity. More importantly, the proposed DiffSDS outperforms previous strong baselines by a large margin on the task of protein inpainting. "
+}

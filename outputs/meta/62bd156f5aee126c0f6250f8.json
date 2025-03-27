@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Causal Broadcast",
+    "Distributed Systems",
+    "Message Delivery"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Liquid Haskell",
+    "Refinement Types",
+    "SMT Solver"
+  ],
+  "results": [
+    "Mechanically proven causal order",
+    "Implementation used in a distributed key-value store"
+  ],
+  "paper_id": "62bd156f5aee126c0f6250f8",
+  "title": "Verified Causal Broadcast with Liquid Haskell",
+  "abstract": "  Protocols to ensure that messages are delivered in causal order are a ubiquitous building block of distributed systems. For instance, distributed data storage systems can use causally ordered message delivery to ensure causal consistency, and CRDTs can rely on the existence of an underlying causally-ordered messaging layer to simplify their implementation. A causal delivery protocol ensures that when a message is delivered to a process, any causally preceding messages sent to the same process have already been delivered to it. While causal delivery protocols are widely used, verification of their correctness is less common, much less machine-checked proofs about executable implementations.   We implemented a standard causal broadcast protocol in Haskell and used the Liquid Haskell solver-aided verification system to express and mechanically prove that messages will never be delivered to a process in an order that violates causality. We express this property using refinement types and prove that it holds of our implementation, taking advantage of Liquid Haskell's underlying SMT solver to automate parts of the proof and using its manual theorem-proving features for the rest. We then put our verified causal broadcast implementation to work as the foundation of a distributed key-value store. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Targeted Exploration leveraging simple Rules",
+    "Continuous actor-critic frameworks modification"
+  ],
+  "results": [
+    "Converges to well-performing policies up to 6-7x faster",
+    "No computational overhead",
+    "Good final performance"
+  ],
+  "paper_id": "63881b9190e50fcafd3daf63",
+  "title": "Computationally Efficient Reinforcement Learning: Targeted Exploration\n  leveraging simple Rules",
+  "abstract": "  Reinforcement Learning (RL) generally suffers from poor sample complexity, mostly due to the need to exhaustively explore the state-action space to find well-performing policies. On the other hand, we postulate that expert knowledge of the system often allows us to design simple rules we expect good policies to follow at all times. In this work, we hence propose a simple yet effective modification of continuous actor-critic frameworks to incorporate such rules and avoid regions of the state-action space that are known to be suboptimal, thereby significantly accelerating the convergence of RL agents. Concretely, we saturate the actions chosen by the agent if they do not comply with our intuition and, critically, modify the gradient update step of the policy to ensure the learning process is not affected by the saturation step. On a room temperature control case study, it allows agents to converge to well-performing policies up to 6-7x faster than classical agents without computational overhead and while retaining good final performance. "
+}

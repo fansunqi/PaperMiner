@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/openxrlab/xrlocalization"
+  ],
+  "tasks": [
+    "Visual Localization"
+  ],
+  "datasets": [
+    "Cambridge Landmarks"
+  ],
+  "methods": [
+    "Geometry-Aided Matching (GAM)"
+  ],
+  "results": [
+    "State-of-the-art results on multiple visual localization datasets",
+    "Six times faster than the top-performed method"
+  ],
+  "paper_id": "6375a67090e50fcafd3e1aa9",
+  "title": "Improving Feature-based Visual Localization by Geometry-Aided Matching",
+  "abstract": "  Feature matching is crucial in visual localization, where 2D-3D correspondence plays a major role in determining the accuracy of camera pose. A sufficient number of well-distributed 2D-3D correspondences is essential for accurate pose estimation due to noise. However, existing 2D-3D feature matching methods rely on finding nearest neighbors in the feature space and removing outliers using hand-crafted heuristics, which may lead to potential matches being missed or the correct matches being filtered out. In this work, we propose a novel method called Geometry-Aided Matching (GAM), which incorporates both appearance information and geometric context to address this issue and to improve 2D-3D feature matching. GAM can greatly boost the recall of 2D-3D matches while maintaining high precision. We apply GAM to a new hierarchical visual localization pipeline and show that GAM can effectively improve the robustness and accuracy of localization. Extensive experiments show that GAM can find more real matches than hand-crafted heuristics and learning baselines. Our proposed localization method achieves state-of-the-art results on multiple visual localization datasets. Experiments on Cambridge Landmarks dataset show that our method outperforms the existing state-of-the-art methods and is six times faster than the top-performed method. The source code is available at https://github.com/openxrlab/xrlocalization. "
+}

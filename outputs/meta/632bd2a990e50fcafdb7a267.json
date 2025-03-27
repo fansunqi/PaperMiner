@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Inpainting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Progressive Inpainting Network",
+    "GLE feature extraction module"
+  ],
+  "results": [
+    "Clear improvement in performance over many state-of-the-art inpainting algorithms"
+  ],
+  "paper_id": "632bd2a990e50fcafdb7a267",
+  "title": "Progressive with Purpose: Guiding Progressive Inpainting DNNs through\n  Context and Structure",
+  "abstract": "  The advent of deep learning in the past decade has significantly helped advance image inpainting. Although achieving promising performance, deep learning-based inpainting algorithms still struggle from the distortion caused by the fusion of structural and contextual features, which are commonly obtained from, respectively, deep and shallow layers of a convolutional encoder. Motivated by this observation, we propose a novel progressive inpainting network that maintains the structural and contextual integrity of a processed image. More specifically, inspired by the Gaussian and Laplacian pyramids, the core of the proposed network is a feature extraction module named GLE. Stacking GLE modules enables the network to extract image features from different image frequency components. This ability is important to maintain structural and contextual integrity, for high frequency components correspond to structural information while low frequency components correspond to contextual information. The proposed network utilizes the GLE features to progressively fill in missing regions in a corrupted image in an iterative manner. Our benchmarking experiments demonstrate that the proposed method achieves clear improvement in performance over many state-of-the-art inpainting algorithms. "
+}

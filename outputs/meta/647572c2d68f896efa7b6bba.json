@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dance-driven music generation"
+  ],
+  "datasets": [
+    "D2MIDI"
+  ],
+  "methods": [
+    "Graph Convolutional Network",
+    "Transformer",
+    "cross-attention mechanism",
+    "BERT-like model"
+  ],
+  "results": [
+    "State-of-the-Art performance"
+  ],
+  "paper_id": "647572c2d68f896efa7b6bba",
+  "title": "Dance2MIDI: Dance-driven multi-instruments music generation",
+  "abstract": "Dance-driven music generation aims to generate musical pieces conditioned on\ndance videos. Previous works focus on monophonic or raw audio generation, while\nthe multi-instruments scenario is under-explored. The challenges associated\nwith the dance-driven multi-instrument music (MIDI) generation are twofold: 1)\nno publicly available multi-instruments MIDI and video paired dataset and 2)\nthe weak correlation between music and video. To tackle these challenges, we\nbuild the first multi-instruments MIDI and dance paired dataset (D2MIDI). Based\non our proposed dataset, we introduce a multi-instruments MIDI generation\nframework (Dance2MIDI) conditioned on dance video. Specifically, 1) to capture\nthe relationship between dance and music, we employ the Graph Convolutional\nNetwork to encode the dance motion. This allows us to extract features related\nto dance movement and dance style, 2) to generate a harmonious rhythm, we\nutilize a Transformer model to decode the drum track sequence, leveraging a\ncross-attention mechanism, and 3) we model the task of generating the remaining\ntracks based on the drum track as a sequence understanding and completion task.\nA BERT-like model is employed to comprehend the context of the entire music\npiece through self-supervised learning. We evaluate the generated music of our\nframework trained on the D2MIDI dataset and demonstrate that our method\nachieves State-of-the-Art performance."
+}

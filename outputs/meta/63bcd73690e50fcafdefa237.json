@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/terrierteam/pyterrier_doc2query"
+  ],
+  "tasks": [
+    "Search engine retrieval effectiveness improvement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sequence-to-sequence model",
+    "Relevance model"
+  ],
+  "results": [
+    "Retrieval effectiveness improvement by up to 16%",
+    "Mean query execution time reduced by 23%",
+    "Index size reduced by 33%"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa237",
+  "title": "Doc2Query--: When Less is More",
+  "abstract": "  Doc2Query -- the process of expanding the content of a document before indexing using a sequence-to-sequence model -- has emerged as a prominent technique for improving the first-stage retrieval effectiveness of search engines. However, sequence-to-sequence models are known to be prone to \"hallucinating\" content that is not present in the source text. We argue that Doc2Query is indeed prone to hallucination, which ultimately harms retrieval effectiveness and inflates the index size. In this work, we explore techniques for filtering out these harmful queries prior to indexing. We find that using a relevance model to remove poor-quality queries can improve the retrieval effectiveness of Doc2Query by up to 16%, while simultaneously reducing mean query execution time by 23% and cutting the index size by 33%. We release the code, data, and a live demonstration to facilitate reproduction and further exploration at https://github.com/terrierteam/pyterrier_doc2query. "
+}

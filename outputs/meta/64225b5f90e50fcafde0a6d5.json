@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CT Image Standardization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Diffusion-based model",
+    "Unet-based encoder-decoder",
+    "Diffusion model integrated into bottleneck part"
+  ],
+  "results": [
+    "Significant improvement in standardization task performance"
+  ],
+  "paper_id": "64225b5f90e50fcafde0a6d5",
+  "title": "DiffusionCT: Latent Diffusion Model for CT Image Standardization",
+  "abstract": "  Computed tomography (CT) is one of the modalities for effective lung cancer screening, diagnosis, treatment, and prognosis. The features extracted from CT images are now used to quantify spatial and temporal variations in tumors. However, CT images obtained from various scanners with customized acquisition protocols may introduce considerable variations in texture features, even for the same patient. This presents a fundamental challenge to downstream studies that require consistent and reliable feature analysis. Existing CT image harmonization models rely on GAN-based supervised or semi-supervised learning, with limited performance. This work addresses the issue of CT image harmonization using a new diffusion-based model, named DiffusionCT, to standardize CT images acquired from different vendors and protocols. DiffusionCT operates in the latent space by mapping a latent non-standard distribution into a standard one. DiffusionCT incorporates an Unet-based encoder-decoder, augmented by a diffusion model integrated into the bottleneck part. The model is designed in two training phases. The encoder-decoder is first trained, without embedding the diffusion model, to learn the latent representation of the input data. The latent diffusion model is then trained in the next training phase while fixing the encoder-decoder. Finally, the decoder synthesizes a standardized image with the transformed latent representation. The experimental results demonstrate a significant improvement in the performance of the standardization task using DiffusionCT. "
+}

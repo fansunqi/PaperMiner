@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning spatially distributed visual representations",
+    "Instance representation learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Self-attention blocks",
+    "Cross-attention blocks",
+    "Extremely large token masking"
+  ],
+  "results": [
+    "Stronger linear probing performance than masked modeling methods",
+    "Better transfer performance than prior contrastive models"
+  ],
+  "paper_id": "62a2b6955aee126c0f4d8e77",
+  "title": "Extreme Masking for Learning Instance and Distributed Visual\n  Representations",
+  "abstract": "  The paper presents a scalable approach for learning spatially distributed visual representations over individual tokens and a holistic instance representation simultaneously. We use self-attention blocks to represent spatially distributed tokens, followed by cross-attention blocks to aggregate the holistic image instance. The core of the approach is the use of extremely large token masking (75\\%-90\\%) as the data augmentation for supervision. Our model, named ExtreMA, follows the plain BYOL approach where the instance representation from the unmasked subset is trained to predict that from the intact input. Instead of encouraging invariance across inputs, the model is required to capture informative variations in an image. The paper makes three contributions: 1) It presents random masking as a strong and computationally efficient data augmentation for siamese representation learning. 2) With multiple sampling per instance, extreme masking greatly speeds up learning and improves performance with more data. 3) ExtreMA obtains stronger linear probing performance than masked modeling methods, and better transfer performance than prior contrastive models. "
+}

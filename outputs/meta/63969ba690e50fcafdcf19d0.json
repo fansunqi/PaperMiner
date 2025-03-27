@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Network-Based Equalizers in Coherent Optical Transmission Systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Recurrent and feedforward neural network (NN)-based equalizers",
+    "Field-Programmable Gate Arrays (FPGA) realization",
+    "Nonlinear activation functions",
+    "Bidirectional long-short-term memory (biLSTM) + Convolutional Neural Network (CNN)",
+    "Standard 1-StpS digital back-propagation (DBP)",
+    "Taylor series",
+    "Piecewise linear",
+    "Look-up table (LUT) approximations"
+  ],
+  "results": [
+    "1.7 dB Q-factor gain compared with the chromatic dispersion compensation baseline",
+    "Performance comparison",
+    "Analysis of activation function implementation",
+    "Hardware complexity report",
+    "200G and 400G throughput evaluation"
+  ],
+  "paper_id": "63969ba690e50fcafdcf19d0",
+  "title": "Implementing Neural Network-Based Equalizers in a Coherent Optical\n  Transmission System Using Field-Programmable Gate Arrays",
+  "abstract": "  In this work, we demonstrate the offline FPGA realization of both recurrent and feedforward neural network (NN)-based equalizers for nonlinearity compensation in coherent optical transmission systems. First, we present a realization pipeline showing the conversion of the models from Python libraries to the FPGA chip synthesis and implementation. Then, we review the main alternatives for the hardware implementation of nonlinear activation functions. The main results are divided into three parts: a performance comparison, an analysis of how activation functions are implemented, and a report on the complexity of the hardware. The performance in Q-factor is presented for the cases of bidirectional long-short-term memory coupled with convolutional NN (biLSTM + CNN) equalizer, CNN equalizer, and standard 1-StpS digital back-propagation (DBP) for the simulation and experiment propagation of a single channel dual-polarization (SC-DP) 16QAM at 34 GBd along 17x70km of LEAF. The biLSTM+CNN equalizer provides a similar result to DBP and a 1.7 dB Q-factor gain compared with the chromatic dispersion compensation baseline in the experimental dataset. After that, we assess the Q-factor and the impact of hardware utilization when approximating the activation functions of NN using Taylor series, piecewise linear, and look-up table (LUT) approximations. We also show how to mitigate the approximation errors with extra training and provide some insights into possible gradient problems in the LUT approximation. Finally, to evaluate the complexity of hardware implementation to achieve 200G and 400G throughput, fixed-point NN-based equalizers with approximated activation functions are developed and implemented in an FPGA. "
+}

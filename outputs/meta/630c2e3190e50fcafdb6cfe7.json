@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Episodic Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Axiomatic view",
+    "Optimistic planning",
+    "Learning algorithm",
+    "Regret bound"
+  ],
+  "results": [
+    "Nash social welfare is the unique objective that satisfies all four axioms",
+    "Lower bound in regret grows exponentially with the number of agents",
+    "Regret can be improved by a factor of O(H) for minimum welfare"
+  ],
+  "paper_id": "630c2e3190e50fcafdb6cfe7",
+  "title": "Socially Fair Reinforcement Learning",
+  "abstract": "  We consider the problem of episodic reinforcement learning where there are multiple stakeholders with different reward functions. Our goal is to output a policy that is socially fair with respect to different reward functions. Prior works have proposed different objectives that a fair policy must optimize including minimum welfare, and generalized Gini welfare. We first take an axiomatic view of the problem, and propose four axioms that any such fair objective must satisfy. We show that the Nash social welfare is the unique objective that uniquely satisfies all four objectives, whereas prior objectives fail to satisfy all four axioms. We then consider the learning version of the problem where the underlying model i.e. Markov decision process is unknown. We consider the problem of minimizing regret with respect to the fair policies maximizing three different fair objectives -- minimum welfare, generalized Gini welfare, and Nash social welfare. Based on optimistic planning, we propose a generic learning algorithm and derive its regret bound with respect to the three different policies. For the objective of Nash social welfare, we also derive a lower bound in regret that grows exponentially with $n$, the number of agents. Finally, we show that for the objective of minimum welfare, one can improve regret by a factor of $O(H)$ for a weaker notion of regret. "
+}

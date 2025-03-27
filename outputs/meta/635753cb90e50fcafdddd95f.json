@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/martenlienen/torchode"
+  ],
+  "tasks": [
+    "Parallel ODE Solver"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Parallel ODE solving for PyTorch",
+    "GPU optimization",
+    "JIT compiler compatibility"
+  ],
+  "results": [
+    "Up to 4.3 times faster per step than other ODE solvers",
+    "Robust against within-batch interactions"
+  ],
+  "paper_id": "635753cb90e50fcafdddd95f",
+  "title": "torchode: A Parallel ODE Solver for PyTorch",
+  "abstract": "  We introduce an ODE solver for the PyTorch ecosystem that can solve multiple ODEs in parallel independently from each other while achieving significant performance gains. Our implementation tracks each ODE's progress separately and is carefully optimized for GPUs and compatibility with PyTorch's JIT compiler. Its design lets researchers easily augment any aspect of the solver and collect and analyze internal solver statistics. In our experiments, our implementation is up to 4.3 times faster per step than other ODE solvers and it is robust against within-batch interactions that lead other solvers to take up to 4 times as many steps.   Code available at https://github.com/martenlienen/torchode "
+}

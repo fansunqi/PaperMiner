@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computer vision tasks"
+  ],
+  "datasets": [
+    "CIFAR benchmarks",
+    "SVHN",
+    "Tiny ImageNet",
+    "image super-resolution dataset"
+  ],
+  "methods": [
+    "Axial CNNs",
+    "Residual connections",
+    "Residual Axial Networks (RANs)"
+  ],
+  "results": [
+    "At least 1% higher performance",
+    "About 77%, 86%, 75%, and 34% fewer parameters",
+    "About 75%, 80%, 67%, and 26% fewer flops",
+    "94% fewer parameters on image super-resolution"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88664c",
+  "title": "Deep Residual Axial Networks",
+  "abstract": "  While convolutional neural networks (CNNs) demonstrate outstanding performance on computer vision tasks, their computational costs remain high. Several techniques are used to reduce these costs, like reducing channel count, and using separable and depthwise separable convolutions. This paper reduces computational costs by introducing a novel architecture, axial CNNs, which replaces spatial 2D convolution operations with two consecutive depthwise separable 1D operations. The axial CNNs are predicated on the assumption that the dataset supports approximately separable convolution operations with little or no loss of training accuracy. Deep axial separable CNNs still suffer from gradient problems when training deep networks. We modify the construction of axial separable CNNs with residual connections to improve the performance of deep axial architectures and introduce our final novel architecture namely residual axial networks (RANs). Extensive benchmark evaluation shows that RANs achieve at least 1% higher performance with about 77%, 86%, 75%, and 34% fewer parameters and about 75%, 80%, 67%, and 26% fewer flops than ResNets, wide ResNets, MobileNets, and SqueezeNexts on CIFAR benchmarks, SVHN, and Tiny ImageNet image classification datasets. Moreover, our proposed RANs improve deep recursive residual networks performance with 94% fewer parameters on the image super-resolution dataset. "
+}

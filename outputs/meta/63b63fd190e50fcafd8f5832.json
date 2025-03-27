@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://repo-sam.inria.fr/ fungraph/neural_catacaustics/"
+  ],
+  "tasks": [
+    "Novel-View Synthesis of Reflections"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Point Catacaustics",
+    "Neural warp field",
+    "Point splatting",
+    "Neural renderer"
+  ],
+  "results": [
+    "Interactive high-quality renderings of novel views",
+    "Reflection editing",
+    "Cloning of specular objects",
+    "Reflection tracking across views",
+    "Comfortable stereo viewing"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5832",
+  "title": "Neural Point Catacaustics for Novel-View Synthesis of Reflections",
+  "abstract": "  View-dependent effects such as reflections pose a substantial challenge for image-based and neural rendering algorithms. Above all, curved reflectors are particularly hard, as they lead to highly non-linear reflection flows as the camera moves. We introduce a new point-based representation to compute Neural Point Catacaustics allowing novel-view synthesis of scenes with curved reflectors, from a set of casually-captured input photos. At the core of our method is a neural warp field that models catacaustic trajectories of reflections, so complex specular effects can be rendered using efficient point splatting in conjunction with a neural renderer. One of our key contributions is the explicit representation of reflections with a reflection point cloud which is displaced by the neural warp field, and a primary point cloud which is optimized to represent the rest of the scene. After a short manual annotation step, our approach allows interactive high-quality renderings of novel views with accurate reflection flow. Additionally, the explicit representation of reflection flow supports several forms of scene manipulation in captured scenes, such as reflection editing, cloning of specular objects, reflection tracking across views, and comfortable stereo viewing. We provide the source code and other supplemental material on https://repo-sam.inria.fr/ fungraph/neural_catacaustics/ "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Out-of-Distribution Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Kullback-Leibler Divergence-Based Anomaly Detection",
+    "Flow-Based Generative Models"
+  ],
+  "results": [
+    "98.1% AUROC on average for group anomaly detection",
+    "9.1% AUROC improvement over state-of-the-art method",
+    "90.7% AUROC on average for point-wise anomaly detection",
+    "5.2% AUROC improvement over baseline for point-wise anomaly detection"
+  ],
+  "paper_id": "5e427c903a55acbff4c40864",
+  "title": "Kullback-Leibler Divergence-Based Out-of-Distribution Detection with\n  Flow-Based Generative Models",
+  "abstract": "  Recent research has revealed that deep generative models including flow-based models and Variational Autoencoders may assign higher likelihoods to out-of-distribution (OOD) data than in-distribution (ID) data. However, we cannot sample OOD data from the model. This counterintuitive phenomenon has not been satisfactorily explained and brings obstacles to OOD detection with flow-based models. In this paper, we prove theorems to investigate the Kullback-Leibler divergence in flow-based model and give two explanations for the above phenomenon. Based on our theoretical analysis, we propose a new method \\PADmethod\\ to leverage KL divergence and local pixel dependence of representations to perform anomaly detection. Experimental results on prevalent benchmarks demonstrate the effectiveness and robustness of our method. For group anomaly detection, our method achieves 98.1\\% AUROC on average with a small batch size of 5. On the contrary, the baseline typicality test-based method only achieves 64.6\\% AUROC on average due to its failure on challenging problems. Our method also outperforms the state-of-the-art method by 9.1\\% AUROC. For point-wise anomaly detection, our method achieves 90.7\\% AUROC on average and outperforms the baseline by 5.2\\% AUROC. Besides, our method has the least notable failures and is the most robust one. "
+}

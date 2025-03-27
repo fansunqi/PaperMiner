@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Preference based reinforcement learning (PbRL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized linear model",
+    "Algorithm with almost optimal regret guarantee",
+    "Algorithm with near optimal regret guarantee"
+  ],
+  "results": [
+    "Tight regret guarantees for preference based RL problems with trajectory preferences"
+  ],
+  "paper_id": "618b38575244ab9dcb710cf7",
+  "title": "Dueling RL: Reinforcement Learning with Trajectory Preferences",
+  "abstract": "  We consider the problem of preference based reinforcement learning (PbRL), where, unlike traditional reinforcement learning, an agent receives feedback only in terms of a 1 bit (0/1) preference over a trajectory pair instead of absolute rewards for them. The success of the traditional RL framework crucially relies on the underlying agent-reward model, which, however, depends on how accurately a system designer can express an appropriate reward function and often a non-trivial task. The main novelty of our framework is the ability to learn from preference-based trajectory feedback that eliminates the need to hand-craft numeric reward models. This paper sets up a formal framework for the PbRL problem with non-markovian rewards, where the trajectory preferences are encoded by a generalized linear model of dimension $d$. Assuming the transition model is known, we then propose an algorithm with almost optimal regret guarantee of $\\tilde {\\mathcal{O}}\\left( SH d \\log (T / \\delta) \\sqrt{T} \\right)$. We further, extend the above algorithm to the case of unknown transition dynamics, and provide an algorithm with near optimal regret guarantee $\\widetilde{\\mathcal{O}}((\\sqrt{d} + H^2 + |\\mathcal{S}|)\\sqrt{dT} +\\sqrt{|\\mathcal{S}||\\mathcal{A}|TH} )$. To the best of our knowledge, our work is one of the first to give tight regret guarantees for preference based RL problems with trajectory preferences. "
+}

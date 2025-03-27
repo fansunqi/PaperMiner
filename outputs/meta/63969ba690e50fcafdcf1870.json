@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "end-to-end framework",
+    "self-supervised image warping correspondence loss",
+    "weakly-supervised epipolar constraints loss",
+    "directional matching scheme",
+    "cycle consistency",
+    "new loss for robust matching"
+  ],
+  "results": [
+    "more accurate localization",
+    "out-performs traditional methods and state-of-the-art weakly supervised methods"
+  ],
+  "paper_id": "63969ba690e50fcafdcf1870",
+  "title": "DDM-NET: End-to-end learning of keypoint feature Detection, Description\n  and Matching for 3D localization",
+  "abstract": "  In this paper, we propose an end-to-end framework that jointly learns keypoint detection, descriptor representation and cross-frame matching for the task of image-based 3D localization. Prior art has tackled each of these components individually, purportedly aiming to alleviate difficulties in effectively train a holistic network. We design a self-supervised image warping correspondence loss for both feature detection and matching, a weakly-supervised epipolar constraints loss on relative camera pose learning, and a directional matching scheme that detects key-point features in a source image and performs coarse-to-fine correspondence search on the target image. We leverage this framework to enforce cycle consistency in our matching module. In addition, we propose a new loss to robustly handle both definite inlier/outlier matches and less-certain matches. The integration of these learning mechanisms enables end-to-end training of a single network performing all three localization components. Bench-marking our approach on public data-sets, exemplifies how such an end-to-end framework is able to yield more accurate localization that out-performs both traditional methods as well as state-of-the-art weakly supervised methods. "
+}

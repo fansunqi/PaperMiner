@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Category-level 6D object pose estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "3D graph convolution based pipeline",
+    "efficient 3D data augmentation",
+    "orientation-aware autoencoder",
+    "vector-based decoupled rotation representation",
+    "3D deformation mechanism"
+  ],
+  "results": [
+    "state-of-the-art performance on category-level tasks",
+    "proposed rotation representation is more suitable for pose estimation tasks"
+  ],
+  "paper_id": "63969ba690e50fcafdcf191d",
+  "title": "Category-Level 6D Object Pose Estimation with Flexible Vector-Based\n  Rotation Representation",
+  "abstract": "  In this paper, we propose a novel 3D graph convolution based pipeline for category-level 6D pose and size estimation from monocular RGB-D images. The proposed method leverages an efficient 3D data augmentation and a novel vector-based decoupled rotation representation. Specifically, we first design an orientation-aware autoencoder with 3D graph convolution for latent feature learning. The learned latent feature is insensitive to point shift and size thanks to the shift and scale-invariance properties of the 3D graph convolution. Then, to efficiently decode the rotation information from the latent feature, we design a novel flexible vector-based decomposable rotation representation that employs two decoders to complementarily access the rotation information. The proposed rotation representation has two major advantages: 1) decoupled characteristic that makes the rotation estimation easier; 2) flexible length and rotated angle of the vectors allow us to find a more suitable vector representation for specific pose estimation task. Finally, we propose a 3D deformation mechanism to increase the generalization ability of the pipeline. Extensive experiments show that the proposed pipeline achieves state-of-the-art performance on category-level tasks. Further, the experiments demonstrate that the proposed rotation representation is more suitable for the pose estimation tasks than other rotation representations. "
+}

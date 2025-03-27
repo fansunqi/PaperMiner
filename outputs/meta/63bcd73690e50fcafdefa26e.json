@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Combinatorial Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bisimulation Quotienting",
+    "Markov Decision Processes",
+    "attention-based policy network"
+  ],
+  "results": [
+    "new state-of-the-art generalization results for instances with up to 1000 nodes"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa26e",
+  "title": "BQ-NCO: Bisimulation Quotienting for Generalizable Neural Combinatorial\n  Optimization",
+  "abstract": "  Despite the success of Neural Combinatorial Optimization methods for end-to-end heuristic learning, out-of-distribution generalization remains a challenge. In this paper, we present a novel formulation of combinatorial optimization (CO) problems as Markov Decision Processes (MDPs) that effectively leverages symmetries of the CO problems to improve out-of-distribution robustness. Starting from the standard MDP formulation of constructive heuristics, we introduce a generic transformation based on bisimulation quotienting (BQ) in MDPs. This transformation allows to reduce the state space by accounting for the intrinsic symmetries of the CO problem and facilitates the MDP solving. We illustrate our approach on the Traveling Salesman, Capacitated Vehicle Routing and Knapsack Problems. We present a BQ reformulation of these problems and introduce a simple attention-based policy network that we train by imitation of (near) optimal solutions for small instances from a single distribution. We obtain new state-of-the-art generalization results for instances with up to 1000 nodes from synthetic and realistic benchmarks that vary both in size and node distributions. "
+}

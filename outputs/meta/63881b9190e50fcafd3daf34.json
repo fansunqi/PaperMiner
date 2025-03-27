@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse training of deep neural networks"
+  ],
+  "datasets": [
+    "VGG-19 / CIFAR-100",
+    "ResNet-50 / CIFAR-10",
+    "ResNet-50 / CIFAR-100",
+    "ResNet-50 / ImageNet"
+  ],
+  "methods": [
+    "Dynamic sparse training",
+    "Exploitation and exploration acquisition function"
+  ],
+  "results": [
+    "Up to 98% sparsity",
+    "Higher accuracy than dense models on VGG-19 / CIFAR-100",
+    "Up to 8.2% accuracy improvement on ResNet-50 / ImageNet compared to SOTA sparse training methods"
+  ],
+  "paper_id": "63881b9190e50fcafd3daf34",
+  "title": "Dynamic Sparse Training via Balancing the Exploration-Exploitation\n  Trade-off",
+  "abstract": "  Over-parameterization of deep neural networks (DNNs) has shown high prediction accuracy for many applications. Although effective, the large number of parameters hinders its popularity on resource-limited devices and has an outsize environmental impact. Sparse training (using a fixed number of nonzero weights in each iteration) could significantly mitigate the training costs by reducing the model size. However, existing sparse training methods mainly use either random-based or greedy-based drop-and-grow strategies, resulting in local minimal and low accuracy. In this work, we consider the dynamic sparse training as a sparse connectivity search problem and design an exploitation and exploration acquisition function to escape from local optima and saddle points. We further design an acquisition function and provide the theoretical guarantees for the proposed method and clarify its convergence property. Experimental results show that sparse models (up to 98\\% sparsity) obtained by our proposed method outperform the SOTA sparse training methods on a wide variety of deep learning tasks. On VGG-19 / CIFAR-100, ResNet-50 / CIFAR-10, ResNet-50 / CIFAR-100, our method has even higher accuracy than dense models. On ResNet-50 / ImageNet, the proposed method has up to 8.2\\% accuracy improvement compared to SOTA sparse training methods. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis"
+  ],
+  "tasks": [
+    "Point cloud analysis"
+  ],
+  "datasets": [
+    "ModelNet40",
+    "ScanObjectNN",
+    "ShapeNetPart",
+    "S3DIS"
+  ],
+  "methods": [
+    "DualNorm module",
+    "Point Normalization",
+    "Reverse Point Normalization"
+  ],
+  "results": [
+    "Excellent accuracy and efficiency on various point cloud analysis tasks"
+  ],
+  "paper_id": "62cf89ce5aee126c0f5640e2",
+  "title": "PointNorm: Dual Normalization is All You Need for Point Cloud Analysis",
+  "abstract": "  Point cloud analysis is challenging due to the irregularity of the point cloud data structure. Existing works typically employ the ad-hoc sampling-grouping operation of PointNet++, followed by sophisticated local and/or global feature extractors for leveraging the 3D geometry of the point cloud. Unfortunately, the sampling-grouping operations do not address the point cloud's irregularity, whereas the intricate local and/or global feature extractors led to poor computational efficiency. In this paper, we introduce a novel DualNorm module after the sampling-grouping operation to effectively and efficiently address the irregularity issue. The DualNorm module consists of Point Normalization, which normalizes the grouped points to the sampled points, and Reverse Point Normalization, which normalizes the sampled points to the grouped points. The proposed framework, PointNorm, utilizes local mean and global standard deviation to benefit from both local and global features while maintaining a faithful inference speed. Experiments show that we achieved excellent accuracy and efficiency on ModelNet40 classification, ScanObjectNN classification, ShapeNetPart Part Segmentation, and S3DIS Semantic Segmentation. Code is available at https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis. "
+}

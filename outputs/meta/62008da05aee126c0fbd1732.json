@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Functional Data Modelling"
+  ],
+  "datasets": [
+    "Standard and Poor's 500",
+    "UK National grid"
+  ],
+  "methods": [
+    "Energy-Based Models (EBMs)",
+    "Path Measure Tilting",
+    "Gaussian Process"
+  ],
+  "results": [
+    "Model can utilize irregularly sampled training data",
+    "Can output predictions at any resolution",
+    "Effective approach to up-scaling functional data"
+  ],
+  "paper_id": "62008da05aee126c0fbd1732",
+  "title": "Energy-Based Models for Functional Data using Path Measure Tilting",
+  "abstract": "  Energy-Based Models (EBMs) have proven to be a highly effective approach for modelling densities on finite-dimensional spaces. Their ability to incorporate domain-specific choices and constraints into the structure of the model through composition make EBMs an appealing candidate for applications in physics, biology and computer vision and various other fields. Recently, Energy-Based Processes (EBP) for modelling stochastic processes was proposed for \\textit{unconditional} exchangeable data (e.g., point clouds). In this work, we present a novel subclass of EBPs, called $\\mathcal{F}$-EBM for \\textit{conditional} exchangeable data, which is able to learn distributions of functions (such as curves or surfaces) from functional samples evaluated at finitely many points. Two unique challenges arise in the functional context. Firstly, training data is often not evaluated along a fixed set of points. Secondly, steps must be taken to control the behaviour of the model between evaluation points, to mitigate overfitting. The proposed model is an energy based model on function space that is decomposed spectrally, where a Gaussian Process path measure is used to reweight the distribution to capture smoothness properties of the underlying process being modelled. The resulting model has the ability to utilize irregularly sampled training data and can output predictions at any resolution, providing an effective approach to up-scaling functional data. We demonstrate the efficacy of our proposed approach for modelling a range of datasets, including data collected from Standard and Poor's 500 (S\\&P) and UK National grid. "
+}

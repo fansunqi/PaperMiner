@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lifelong Bandit Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LIBO",
+    "F-LIBO"
+  ],
+  "results": [
+    "Guarantees oracle optimal performance",
+    "Yields sublinear lifelong regret",
+    "Does not require direct access to data from each task"
+  ],
+  "paper_id": "635b487090e50fcafd330dfa",
+  "title": "Lifelong Bandit Optimization: No Prior and No Regret",
+  "abstract": "  Machine learning algorithms are often repeatedly applied to problems with similar structure over and over again. We focus on solving a sequence of bandit optimization tasks and develop LIBO, an algorithm which adapts to the environment by learning from past experience and becomes more sample-efficient in the process. We assume a kernelized structure where the kernel is unknown but shared across all tasks. LIBO sequentially meta-learns a kernel that approximates the true kernel and solves the incoming tasks with the latest kernel estimate. Our algorithm can be paired with any kernelized or linear bandit algorithm and guarantees oracle optimal performance, meaning that as more tasks are solved, the regret of LIBO on each task converges to the regret of the bandit algorithm with oracle knowledge of the true kernel. Naturally, if paired with a sublinear bandit algorithm, LIBO yields a sublinear lifelong regret. We also show that direct access to the data from each task is not necessary for attaining sublinear regret. We propose F-LIBO, which solves the lifelong problem in a federated manner. "
+}

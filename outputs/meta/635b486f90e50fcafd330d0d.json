@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spiking Neural Networks (SNN) training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Forward propagation (FP) for exact gradient computation"
+  ],
+  "results": [
+    "Proven existence of well-defined gradients for SNNs",
+    "Parallelizable computation forward in time"
+  ],
+  "paper_id": "635b486f90e50fcafd330d0d",
+  "title": "Exact Gradient Computation for Spiking Neural Networks Through Forward\n  Propagation",
+  "abstract": "  Spiking neural networks (SNN) have recently emerged as alternatives to traditional neural networks, owing to energy efficiency benefits and capacity to better capture biological neuronal mechanisms. However, the classic backpropagation algorithm for training traditional networks has been notoriously difficult to apply to SNN due to the hard-thresholding and discontinuities at spike times. Therefore, a large majority of prior work believes exact gradients for SNN w.r.t. their weights do not exist and has focused on approximation methods to produce surrogate gradients. In this paper, (1) by applying the implicit function theorem to SNN at the discrete spike times, we prove that, albeit being non-differentiable in time, SNNs have well-defined gradients w.r.t. their weights, and (2) we propose a novel training algorithm, called \\emph{forward propagation} (FP), that computes exact gradients for SNN. FP exploits the causality structure between the spikes and allows us to parallelize computation forward in time. It can be used with other algorithms that simulate the forward pass, and it also provides insights on why other related algorithms such as Hebbian learning and also recently-proposed surrogate gradient methods may perform well. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data-free training of normalizing flows on Boltzmann distributions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Normalizing Flows",
+    "Kullback-Leibler divergences",
+    "New loss function"
+  ],
+  "results": [
+    "Imperfect pre-trained models can be further optimized in the absence of training data"
+  ],
+  "paper_id": "63c4c02990e50fcafdae0030",
+  "title": "Designing losses for data-free training of normalizing flows on\n  Boltzmann distributions",
+  "abstract": "  Generating a Boltzmann distribution in high dimension has recently been achieved with Normalizing Flows, which enable fast and exact computation of the generated density, and thus unbiased estimation of expectations. However, current implementations rely on accurate training data, which typically comes from computationally expensive simulations. There is therefore a clear incentive to train models with incomplete or no data by relying solely on the target density, which can be obtained from a physical energy model (up to a constant factor). For that purpose, we analyze the properties of standard losses based on Kullback-Leibler divergences. We showcase their limitations, in particular a strong propensity for mode collapse during optimization on high-dimensional distributions. We then propose strategies to alleviate these issues, most importantly a new loss function well-grounded in theory and with suitable optimization properties. Using as a benchmark the generation of 3D molecular configurations, we show on several tasks that, for the first time, imperfect pre-trained models can be further optimized in the absence of training data. "
+}

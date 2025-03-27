@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/weihaox/dynode_released"
+  ],
+  "tasks": [
+    "Video editing",
+    "Video manipulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural ordinary differential equations (Neural ODEs)",
+    "StyleGAN"
+  ],
+  "results": [
+    "State-of-the-art performance",
+    "Less computation"
+  ],
+  "paper_id": "6306e8c890e50fcafdebd4c5",
+  "title": "Modelling Latent Dynamics of StyleGAN using Neural ODEs",
+  "abstract": "  In this paper, we propose to model the video dynamics by learning the trajectory of independently inverted latent codes from GANs. The entire sequence is seen as discrete-time observations of a continuous trajectory of the initial latent code, by considering each latent code as a moving particle and the latent space as a high-dimensional dynamic system. The latent codes representing different frames are therefore reformulated as state transitions of the initial frame, which can be modeled by neural ordinary differential equations. The learned continuous trajectory allows us to perform infinite frame interpolation and consistent video manipulation. The latter task is reintroduced for video editing with the advantage of requiring the core operations to be applied to the first frame only while maintaining temporal consistency across all frames. Extensive experiments demonstrate that our method achieves state-of-the-art performance but with much less computation. Code is available at https://github.com/weihaox/dynode_released. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Private Matrix Multiplication"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MDS-Coded Storage",
+    "Information-Theoretic Privacy",
+    "PSMM",
+    "FPMM"
+  ],
+  "results": [
+    "Substantial improvements in communication and computation overheads compared to previous PSMM strategy",
+    "Significant reduction in storage overhead for FPMM compared to PIR-based strategy"
+  ],
+  "paper_id": "6271e0e85aee126c0f57486d",
+  "title": "Information-Theoretically Private Matrix Multiplication From MDS-Coded\n  Storage",
+  "abstract": "  We study two problems of private matrix multiplication, over a distributed computing system consisting of a master node, and multiple servers that collectively store a family of public matrices using Maximum-Distance-Separable (MDS) codes. In the first problem of Private and Secure Matrix Multiplication (PSMM) from colluding servers, the master intends to compute the product of its confidential matrix $\\mathbf{A}$ with a target matrix stored on the servers, without revealing any information about $\\mathbf{A}$ and the index of target matrix to some colluding servers. In the second problem of Fully Private Matrix Multiplication (FPMM) from colluding servers, the matrix $\\mathbf{A}$ is also selected from another family of public matrices stored at the servers in MDS form. In this case, the indices of the two target matrices should both be kept private from colluding servers. We develop novel strategies for the two PSMM and FPMM problems, which simultaneously guarantee information-theoretic data/index privacy and computation correctness. We compare the proposed PSMM strategy with a previous PSMM strategy with a weaker privacy guarantee (non-colluding servers), and demonstrate substantial improvements over the previous strategy in terms of communication and computation overheads. Moreover, compared with a baseline FPMM strategy that uses the idea of Private Information Retrieval (PIR) to directly retrieve the desired matrix multiplication, the proposed FPMM strategy significantly reduces storage overhead, but slightly incurs large communication and computation overheads. "
+}

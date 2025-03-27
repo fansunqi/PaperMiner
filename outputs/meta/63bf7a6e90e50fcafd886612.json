@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Memory attacks on IoT Trust Computing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Buffer overflow-based attacks",
+    "MOFlow attack",
+    "Achilles heel vulnerability"
+  ],
+  "results": [
+    "Successfully leaked data of another trusted app",
+    "Exploited security weakness in TrustZone"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886612",
+  "title": "MVAM: Multi-variant Attacks on Memory for IoT Trust Computing",
+  "abstract": "  With the significant development of the Internet of Things and low-cost cloud services, the sensory and data processing requirements of IoT systems are continually going up. TrustZone is a hardware-protected Trusted Execution Environment (TEE) for ARM processors specifically designed for IoT handheld systems. It provides memory isolation techniques to protect trusted application data from being exploited by malicious entities. In this work, we focus on identifying different vulnerabilities of the TrustZone extension of ARM Cortex-M processors. Then design and implement a threat model to execute those attacks. We have found that TrustZone is vulnerable to buffer overflow-based attacks. We have used this to create an attack called MOFlow and successfully leaked the data of another trusted app. This is done by intentionally overflowing the memory of one app to access the encrypted memory of other apps inside the secure world. We have also found that, by not validating the input parameters in the entry function, TrustZone has exposed a security weakness. We call this Achilles heel and present an attack model showing how to exploit this weakness too. Our proposed novel attacks are implemented and successfully tested on two recent ARM Cortex-M processors available on the market (M23 and M33). "
+}

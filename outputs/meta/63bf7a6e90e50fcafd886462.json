@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision-and-Language Navigation in Continuous Environments (VLN-CE)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Environment Representation Graph (ERG)",
+    "GCN",
+    "cross-modal attention navigation framework"
+  ],
+  "results": [
+    "satisfactory performance in terms of success rate on VLN-CE tasks",
+    "better cross-modal matching and strong generalization ability"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886462",
+  "title": "Graph based Environment Representation for Vision-and-Language\n  Navigation in Continuous Environments",
+  "abstract": "  Vision-and-Language Navigation in Continuous Environments (VLN-CE) is a navigation task that requires an agent to follow a language instruction in a realistic environment. The understanding of environments is a crucial part of the VLN-CE task, but existing methods are relatively simple and direct in understanding the environment, without delving into the relationship between language instructions and visual environments. Therefore, we propose a new environment representation in order to solve the above problems. First, we propose an Environment Representation Graph (ERG) through object detection to express the environment in semantic level. This operation enhances the relationship between language and environment. Then, the relational representations of object-object, object-agent in ERG are learned through GCN, so as to obtain a continuous expression about ERG. Sequentially, we combine the ERG expression with object label embeddings to obtain the environment representation. Finally, a new cross-modal attention navigation framework is proposed, incorporating our environment representation and a special loss function dedicated to training ERG. Experimental result shows that our method achieves satisfactory performance in terms of success rate on VLN-CE tasks. Further analysis explains that our method attains better cross-modal matching and strong generalization ability. "
+}

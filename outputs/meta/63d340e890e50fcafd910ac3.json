@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Long-Tailed Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Integrating Local Real Data with Global Gradient Prototypes",
+    "Classifier Re-Balancing",
+    "Extra Classifier for Global Data Distribution Modeling"
+  ],
+  "results": [
+    "Consistently outperforms existing state-of-the-art methods"
+  ],
+  "paper_id": "63d340e890e50fcafd910ac3",
+  "title": "Integrating Local Real Data with Global Gradient Prototypes for\n  Classifier Re-Balancing in Federated Long-Tailed Learning",
+  "abstract": "  Federated Learning (FL) has become a popular distributed learning paradigm that involves multiple clients training a global model collaboratively in a data privacy-preserving manner. However, the data samples usually follow a long-tailed distribution in the real world, and FL on the decentralized and long-tailed data yields a poorly-behaved global model severely biased to the head classes with the majority of the training samples. To alleviate this issue, decoupled training has recently been introduced to FL, considering it has achieved promising results in centralized long-tailed learning by re-balancing the biased classifier after the instance-balanced training. However, the current study restricts the capacity of decoupled training in federated long-tailed learning with a sub-optimal classifier re-trained on a set of pseudo features, due to the unavailability of a global balanced dataset in FL. In this work, in order to re-balance the classifier more effectively, we integrate the local real data with the global gradient prototypes to form the local balanced datasets, and thus re-balance the classifier during the local training. Furthermore, we introduce an extra classifier in the training phase to help model the global data distribution, which addresses the problem of contradictory optimization goals caused by performing classifier re-balancing locally. Extensive experiments show that our method consistently outperforms the existing state-of-the-art methods in various settings. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Privacy-preserving model learning",
+    "Federated learning",
+    "Bayesian learning",
+    "Variational inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differentially private partitioned variational inference"
+  ],
+  "results": [
+    "Minimising the number of communication rounds",
+    "Differential privacy guarantees"
+  ],
+  "paper_id": "6331182c90e50fcafdcbbcaf",
+  "title": "Differentially private partitioned variational inference",
+  "abstract": "  Learning a privacy-preserving model from sensitive data which are distributed across multiple devices is an increasingly important problem. The problem is often formulated in the federated learning context, with the aim of learning a single global model while keeping the data distributed. Moreover, Bayesian learning is a popular approach for modelling, since it naturally supports reliable uncertainty estimates. However, Bayesian learning is generally intractable even with centralised non-private data and so approximation techniques such as variational inference are a necessity. Variational inference has recently been extended to the non-private federated learning setting via the partitioned variational inference algorithm. For privacy protection, the current gold standard is called differential privacy. Differential privacy guarantees privacy in a strong, mathematically clearly defined sense.   In this paper, we present differentially private partitioned variational inference, the first general framework for learning a variational approximation to a Bayesian posterior distribution in the federated learning setting while minimising the number of communication rounds and providing differential privacy guarantees for data subjects.   We propose three alternative implementations in the general framework, one based on perturbing local optimisation runs done by individual parties, and two based on perturbing updates to the global model (one using a version of federated averaging, the second one adding virtual parties to the protocol), and compare their properties both theoretically and empirically. "
+}

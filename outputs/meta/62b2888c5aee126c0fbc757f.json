@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tensor Robust Principal Component Analysis (RPCA)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Scaled Gradient Descent (ScaledGD)",
+    "Tucker decomposition",
+    "Iteration-varying thresholding operation"
+  ],
+  "results": [
+    "Linear convergence to the true low-rank tensor",
+    "Better and more scalable performance than state-of-the-art matrix and tensor RPCA algorithms"
+  ],
+  "paper_id": "62b2888c5aee126c0fbc757f",
+  "title": "Fast and Provable Tensor Robust Principal Component Analysis via Scaled\n  Gradient Descent",
+  "abstract": "  An increasing number of data science and machine learning problems rely on computation with tensors, which better capture the multi-way relationships and interactions of data than matrices. When tapping into this critical advantage, a key challenge is to develop computationally efficient and provably correct algorithms for extracting useful information from tensor data that are simultaneously robust to corruptions and ill-conditioning. This paper tackles tensor robust principal component analysis (RPCA), which aims to recover a low-rank tensor from its observations contaminated by sparse corruptions, under the Tucker decomposition. To minimize the computation and memory footprints, we propose to directly recover the low-dimensional tensor factors -- starting from a tailored spectral initialization -- via scaled gradient descent (ScaledGD), coupled with an iteration-varying thresholding operation to adaptively remove the impact of corruptions. Theoretically, we establish that the proposed algorithm converges linearly to the true low-rank tensor at a constant rate that is independent with its condition number, as long as the level of corruptions is not too large. Empirically, we demonstrate that the proposed algorithm achieves better and more scalable performance than state-of-the-art matrix and tensor RPCA algorithms through synthetic experiments and real-world applications. "
+}

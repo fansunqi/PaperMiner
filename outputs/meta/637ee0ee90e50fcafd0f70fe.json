@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continual Learning"
+  ],
+  "datasets": [
+    "Seq-CIFAR-10",
+    "Seq-TinyImageNet"
+  ],
+  "methods": [
+    "Integral Continual Learning",
+    "tangent vector field of tasks",
+    "specialized datasets",
+    "generalist guide",
+    "memory buffer"
+  ],
+  "results": [
+    "State-of-the-art across various buffer sizes",
+    "18.77% and 28.48% improvement over existing methods",
+    "17.84% error reduction towards paragon performance"
+  ],
+  "paper_id": "637ee0ee90e50fcafd0f70fe",
+  "title": "Integral Continual Learning Along the Tangent Vector Field of Tasks",
+  "abstract": "  We propose a lightweight continual learning method which incorporates information from specialized datasets incrementally, by integrating it along the vector field of \"generalist\" models. The tangent plane to the specialist model acts as a generalist guide and avoids the kind of over-fitting that leads to catastrophic forgetting, while exploiting the convexity of the optimization landscape in the tangent plane. It maintains a small fixed-size memory buffer, as low as 0.4% of the source datasets, which is updated by simple resampling. Our method achieves state-of-the-art across various buffer sizes for different datasets. Specifically, in the class-incremental setting we outperform the existing methods that do not require distillation by an average of 18.77% and 28.48%, for Seq-CIFAR-10 and Seq-TinyImageNet respectively. Our method can easily be combined with existing replay-based continual learning methods. When memory buffer constraints are relaxed to allow storage of metadata such as logits, we attain state-of-the-art accuracy with an error reduction of 17.84% towards the paragon performance on Seq-CIFAR-10. "
+}

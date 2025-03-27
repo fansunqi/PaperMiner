@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning",
+    "Policy Iteration",
+    "Monte Carlo Policy Evaluation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Policy Iteration-Based Reinforcement Learning",
+    "Lookahead",
+    "Function Approximation"
+  ],
+  "results": [
+    "Convergence to optimal policy",
+    "Policy performance close to optimal within function approximation error"
+  ],
+  "paper_id": "63d340de90e50fcafd90f83c",
+  "title": "On The Convergence Of Policy Iteration-Based Reinforcement Learning With\n  Monte Carlo Policy Evaluation",
+  "abstract": "  A common technique in reinforcement learning is to evaluate the value function from Monte Carlo simulations of a given policy, and use the estimated value function to obtain a new policy which is greedy with respect to the estimated value function. A well-known longstanding open problem in this context is to prove the convergence of such a scheme when the value function of a policy is estimated from data collected from a single sample path obtained from implementing the policy (see page 99 of [Sutton and Barto, 2018], page 8 of [Tsitsiklis, 2002]). We present a solution to the open problem by showing that a first-visit version of such a policy iteration scheme indeed converges to the optimal policy provided that the policy improvement step uses lookahead [Silver et al., 2016, Mnih et al., 2016, Silver et al., 2017b] rather than a simple greedy policy improvement. We provide results both for the original open problem in the tabular setting and also present extensions to the function approximation setting, where we show that the policy resulting from the algorithm performs close to the optimal policy within a function approximation error. "
+}

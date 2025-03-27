@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://w3id.org/synthmorph"
+  ],
+  "tasks": [
+    "Medical-image analysis",
+    "Affine image registration",
+    "Brain image registration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SynthMorph",
+    "Deep-learning",
+    "Anatomical-aware",
+    "Acquisition-agnostic",
+    "Affine-deformable registration",
+    "Deformable hypernetwork"
+  ],
+  "results": [
+    "Improved accuracy",
+    "Single complete end-to-end solution"
+  ],
+  "paper_id": "63d3413a90e50fcafd9175cd",
+  "title": "Anatomy-aware and acquisition-agnostic joint registration with\n  SynthMorph",
+  "abstract": "Affine image registration is a cornerstone of medical-image analysis. While\nclassical algorithms can achieve excellent accuracy, they solve a\ntime-consuming optimization for every image pair. Deep-learning (DL) methods\nlearn a function that maps an image pair to an output transform. Evaluating the\nfunction is fast, but capturing large transforms can be challenging, and\nnetworks tend to struggle if a test-image characteristic shifts from the\ntraining domain, such as resolution. Most affine methods are agnostic to\nanatomy, meaning the registration will be inaccurate if algorithms consider all\nstructures in the image.\n  We address these shortcomings with SynthMorph, an easy-to-use DL tool for\njoint affine-deformable registration of any brain image without preprocessing,\nright off the MRI scanner. First, we leverage a strategy to train networks with\nwildly varying images synthesized from label maps, yielding robust performance\nacross acquisition specifics unseen at training. Second, we optimize the\nspatial overlap of select anatomical labels. This enables networks to\ndistinguish anatomy of interest from irrelevant structures, removing the need\nfor preprocessing that excludes content which would impinge on anatomy-specific\nregistration. Third, we combine the affine model with a deformable hypernetwork\nthat lets users choose the optimal deformation-field regularity for their\nspecific data, at registration time, in a fraction of the time required by\nclassical methods.\n  We rigorously analyze how competing architectures learn affine transforms and\ncompare state-of-the-art registration tools across an extremely diverse set of\nneuroimaging data, aiming to truly capture the behavior of methods in the real\nworld. SynthMorph demonstrates consistent and improved accuracy. It is\navailable at https://w3id.org/synthmorph, as a single complete end-to-end\nsolution for registration of brain MRI."
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimizing Gradient Algorithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quadratic Gradient",
+    "Diagonal Matrix",
+    "Hessian Matrix Correction"
+  ],
+  "results": [
+    "Improved convergence rate",
+    "New learning rate formula"
+  ],
+  "paper_id": "63195d8990e50fcafde7e818",
+  "title": "Quadratic Gradient: Combining Gradient Algorithms and Newton's Method as\n  One",
+  "abstract": "  It might be inadequate for the line search technique for Newton's method to use only one floating point number. A column vector of the same size as the gradient might be better than a mere float number to accelerate each of the gradient elements with different rates. Moreover, a square matrix of the same order as the Hessian matrix might be helpful to correct the Hessian matrix. Chiang applied something between a column vector and a square matrix, namely a diagonal matrix, to accelerate the gradient and further proposed a faster gradient variant called quadratic gradient. In this paper, we present a new way to build a new version of the quadratic gradient. This new quadratic gradient doesn't satisfy the convergence conditions of the fixed Hessian Newton's method. However, experimental results show that it sometimes has a better performance than the original one in convergence rate. Also, Chiang speculates that there might be a relation between the Hessian matrix and the learning rate for the first-order gradient descent method. We prove that the floating number $\\frac{1}{\\epsilon + \\max \\{| \\lambda_i | \\}}$ can be a good learning rate of the gradient methods, where $\\epsilon$ is a number to avoid division by zero and $\\lambda_i$ the eigenvalues of the Hessian matrix. "
+}

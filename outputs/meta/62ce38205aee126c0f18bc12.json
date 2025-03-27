@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline reinforcement learning",
+    "Offline equilibrium finding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Model-based framework",
+    "PSRO",
+    "Deep CFR",
+    "JPSRO",
+    "Behavior cloning policy"
+  ],
+  "results": [
+    "Superiority over offline RL algorithms",
+    "The importance of using model-based methods for OEF problems"
+  ],
+  "paper_id": "62ce38205aee126c0f18bc12",
+  "title": "Offline Equilibrium Finding",
+  "abstract": "  Offline reinforcement learning (offline RL) is an emerging field that has recently begun gaining attention across various application domains due to its ability to learn strategies from earlier collected datasets. Offline RL proved very successful, paving a path to solving previously intractable real-world problems, and we aim to generalize this paradigm to a multiplayer-game setting. To this end, we introduce a problem of offline equilibrium finding (OEF) and construct multiple types of datasets across a wide range of games using several established methods. To solve the OEF problem, we design a model-based framework that can directly apply any online equilibrium finding algorithm to the OEF setting while making minimal changes. The three most prominent contemporary online equilibrium finding algorithms are adapted to the context of OEF, creating three model-based variants: OEF-PSRO and OEF-CFR, which generalize the widely-used algorithms PSRO and Deep CFR to compute Nash equilibria (NEs), and OEF-JPSRO, which generalizes the JPSRO to calculate (Coarse) Correlated equilibria ((C)CEs). We also combine the behavior cloning policy with the model-based policy to further improve the performance and provide a theoretical guarantee of the solution quality. Extensive experimental results demonstrate the superiority of our approach over offline RL algorithms and the importance of using model-based methods for OEF problems. We hope our work will contribute to advancing research in large-scale equilibrium finding. "
+}

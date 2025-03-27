@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dimensionality reduction",
+    "Multiview representation learning"
+  ],
+  "datasets": [
+    "Canonical multiview datasets"
+  ],
+  "methods": [
+    "Generalized EigenGame",
+    "Generalized Hebbian Algorithm",
+    "Game-theory inspired approach"
+  ],
+  "results": [
+    "State-of-the-art performance for optimizing Deep CCA"
+  ],
+  "paper_id": "637c3dd190e50fcafd77c847",
+  "title": "A Generalized EigenGame with Extensions to Multiview Representation\n  Learning",
+  "abstract": "  Generalized Eigenvalue Problems (GEPs) encompass a range of interesting dimensionality reduction methods. Development of efficient stochastic approaches to these problems would allow them to scale to larger datasets. Canonical Correlation Analysis (CCA) is one example of a GEP for dimensionality reduction which has found extensive use in problems with two or more views of the data. Deep learning extensions of CCA require large mini-batch sizes, and therefore large memory consumption, in the stochastic setting to achieve good performance and this has limited its application in practice. Inspired by the Generalized Hebbian Algorithm, we develop an approach to solving stochastic GEPs in which all constraints are softly enforced by Lagrange multipliers. Then by considering the integral of this Lagrangian function, its pseudo-utility, and inspired by recent formulations of Principal Components Analysis and GEPs as games with differentiable utilities, we develop a game-theory inspired approach to solving GEPs. We show that our approaches share much of the theoretical grounding of the previous Hebbian and game theoretic approaches for the linear case but our method permits extension to general function approximators like neural networks for certain GEPs for dimensionality reduction including CCA which means our method can be used for deep multiview representation learning. We demonstrate the effectiveness of our method for solving GEPs in the stochastic setting using canonical multiview datasets and demonstrate state-of-the-art performance for optimizing Deep CCA. "
+}

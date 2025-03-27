@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Temporal graph learning",
+    "High-order information learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Temporal propagation-based graph neural network (TPGNN)",
+    "Propagator",
+    "Node-wise encoder",
+    "Transformer architecture"
+  ],
+  "results": [
+    "Superiority over state-of-the-art baselines in efficiency and robustness"
+  ],
+  "paper_id": "633e475990e50fcafde58943",
+  "title": "TPGNN: Learning High-order Information in Dynamic Graphs via Temporal\n  Propagation",
+  "abstract": "  Temporal graph is an abstraction for modeling dynamic systems that consist of evolving interaction elements. In this paper, we aim to solve an important yet neglected problem -- how to learn information from high-order neighbors in temporal graphs? -- to enhance the informativeness and discriminativeness for the learned node representations. We argue that when learning high-order information from temporal graphs, we encounter two challenges, i.e., computational inefficiency and over-smoothing, that cannot be solved by conventional techniques applied on static graphs. To remedy these deficiencies, we propose a temporal propagation-based graph neural network, namely TPGNN. To be specific, the model consists of two distinct components, i.e., propagator and node-wise encoder. The propagator is leveraged to propagate messages from the anchor node to its temporal neighbors within $k$-hop, and then simultaneously update the state of neighborhoods, which enables efficient computation, especially for a deep model. In addition, to prevent over-smoothing, the model compels the messages from $n$-hop neighbors to update the $n$-hop memory vector preserved on the anchor. The node-wise encoder adopts transformer architecture to learn node representations by explicitly learning the importance of memory vectors preserved on the node itself, that is, implicitly modeling the importance of messages from neighbors at different layers, thus mitigating the over-smoothing. Since the encoding process will not query temporal neighbors, we can dramatically save time consumption in inference. Extensive experiments on temporal link prediction and node classification demonstrate the superiority of TPGNN over state-of-the-art baselines in efficiency and robustness. "
+}

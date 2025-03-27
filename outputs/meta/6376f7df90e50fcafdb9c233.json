@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition (ASR)"
+  ],
+  "datasets": [
+    "300-hour Switchboard task"
+  ],
+  "methods": [
+    "LHUC-based adaptation techniques",
+    "LF-MMI",
+    "cross entropy (CE) criterions",
+    "Bayesian LHUC (BLHUC) adaptation",
+    "lattice-based confidence score estimation"
+  ],
+  "results": [
+    "Relative word error rate (WER) reductions up to 10.5% and 14.7% on NIST Hub5'00 and RT03 evaluation sets",
+    "Best WERs of 9.0% and 9.7% on NIST Hub5'00 and RT03 evaluation sets"
+  ],
+  "paper_id": "6376f7df90e50fcafdb9c233",
+  "title": "Unsupervised Model-based speaker adaptation of end-to-end lattice-free\n  MMI model for speech recognition",
+  "abstract": "  Modeling the speaker variability is a key challenge for automatic speech recognition (ASR) systems. In this paper, the learning hidden unit contributions (LHUC) based adaptation techniques with compact speaker dependent (SD) parameters are used to facilitate both speaker adaptive training (SAT) and unsupervised test-time speaker adaptation for end-to-end (E2E) lattice-free MMI (LF-MMI) models. An unsupervised model-based adaptation framework is proposed to estimate the SD parameters in E2E paradigm using LF-MMI and cross entropy (CE) criterions. Various regularization methods of the standard LHUC adaptation, e.g., the Bayesian LHUC (BLHUC) adaptation, are systematically investigated to mitigate the risk of overfitting, on E2E LF-MMI CNN-TDNN and CNN-TDNN-BLSTM models. Lattice-based confidence score estimation is used for adaptation data selection to reduce the supervision label uncertainty. Experiments on the 300-hour Switchboard task suggest that applying BLHUC in the proposed unsupervised E2E adaptation framework to byte pair encoding (BPE) based E2E LF-MMI systems consistently outperformed the baseline systems by relative word error rate (WER) reductions up to 10.5% and 14.7% on the NIST Hub5'00 and RT03 evaluation sets, and achieved the best performance in WERs of 9.0% and 9.7%, respectively. These results are comparable to the results of state-of-the-art adapted LF-MMI hybrid systems and adapted Conformer-based E2E systems. "
+}

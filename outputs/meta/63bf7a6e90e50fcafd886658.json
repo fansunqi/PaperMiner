@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Turbulent minimal Couette flow dynamics modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Data-driven manifold dynamics modeling",
+    "Autoencoder",
+    "Neural network",
+    "Ordinary differential equations"
+  ],
+  "results": [
+    "Low-dimensional models with <20 degrees of freedom",
+    "Outperforms POD-Galerkin models with ~2000 degrees of freedom",
+    "Captures key characteristics of the flow",
+    "Computes unstable periodic orbits"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886658",
+  "title": "Dynamics of a data-driven low-dimensional model of turbulent minimal\n  Couette flow",
+  "abstract": "  Because the Navier-Stokes equations are dissipative, the long-time dynamics of a flow in state space are expected to collapse onto a manifold whose dimension may be much lower than the dimension required for a resolved simulation. On this manifold, the state of the system can be exactly described in a coordinate system parameterizing the manifold. Describing the system in this low-dimensional coordinate system allows for much faster simulations and analysis. We show, for turbulent Couette flow, that this description of the dynamics is possible using a data-driven manifold dynamics modeling method. This approach consists of an autoencoder to find a low-dimensional manifold coordinate system and a set of ordinary differential equations defined by a neural network. Specifically, we apply this method to minimal flow unit turbulent plane Couette flow at $\\textit{Re}=400$, where a fully resolved solutions requires $\\mathcal{O}(10^5)$ degrees of freedom. Using only data from this simulation we build models with fewer than $20$ degrees of freedom that quantitatively capture key characteristics of the flow, including the streak breakdown and regeneration cycle. At short-times, the models track the true trajectory for multiple Lyapunov times, and, at long-times, the models capture the Reynolds stress and the energy balance. For comparison, we show that the models outperform POD-Galerkin models with $\\sim$2000 degrees of freedom. Finally, we compute unstable periodic orbits from the models. Many of these closely resemble previously computed orbits for the full system; additionally, we find nine orbits that correspond to previously unknown solutions in the full system. "
+}

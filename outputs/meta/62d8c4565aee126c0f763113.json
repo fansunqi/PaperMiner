@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/oskarnatan/DeepIPC"
+  ],
+  "tasks": [
+    "Autonomous driving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DeepIPC: Deeply Integrated Perception and Control"
+  ],
+  "results": [
+    "Best drivability and multi-task performance",
+    "Fewer parameters compared to other models"
+  ],
+  "paper_id": "62d8c4565aee126c0f763113",
+  "title": "DeepIPC: Deeply Integrated Perception and Control for an Autonomous\n  Vehicle in Real Environments",
+  "abstract": "  We propose DeepIPC, an end-to-end autonomous driving model that handles both perception and control tasks in driving a vehicle. The model consists of two main parts, perception and controller modules. The perception module takes an RGBD image to perform semantic segmentation and bird's eye view (BEV) semantic mapping along with providing their encoded features. Meanwhile, the controller module processes these features with the measurement of GNSS locations and angular speed to estimate waypoints that come with latent features. Then, two different agents are used to translate waypoints and latent features into a set of navigational controls to drive the vehicle. The model is evaluated by predicting driving records and performing automated driving under various conditions in real environments. The experimental results show that DeepIPC achieves the best drivability and multi-task performance even with fewer parameters compared to the other models. Codes are available at https://github.com/oskarnatan/DeepIPC. "
+}

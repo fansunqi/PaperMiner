@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Longest Increasing Subsequence (LIS) problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Parallel LIS algorithm",
+    "van Emde Boas (vEB) tree"
+  ],
+  "results": [
+    "O(n log k) work",
+    "O(n) space",
+    "Outperforms a highly-optimized sequential algorithm",
+    "Faster than the best existing parallel implementation"
+  ],
+  "paper_id": "6304456a90e50fcafd12fd28",
+  "title": "Parallel Longest Increasing Subsequence and van Emde Boas Trees",
+  "abstract": "  This paper studies parallel algorithms for the longest increasing subsequence (LIS) problem. Let $n$ be the input size and $k$ be the LIS length of the input. Sequentially, LIS is a simple problem that can be solved using dynamic programming (DP) in $O(n\\log n)$ work. However, parallelizing LIS is a long-standing challenge. We are unaware of any parallel LIS algorithm that has optimal $O(n\\log n)$ work and non-trivial parallelism (i.e., $\\tilde{O}(k)$ or $o(n)$ span).   This paper proposes a parallel LIS algorithm that costs $O(n\\log k)$ work, $\\tilde{O}(k)$ span, and $O(n)$ space, and is much simpler than the previous parallel LIS algorithms. We also generalize the algorithm to a weighted version of LIS, which maximizes the weighted sum for all objects in an increasing subsequence. To achieve a better work bound for the weighted LIS algorithm, we designed parallel algorithms for the van Emde Boas (vEB) tree, which has the same structure as the sequential vEB tree, and supports work-efficient parallel batch insertion, deletion, and range queries.   We also implemented our parallel LIS algorithms. Our implementation is light-weighted, efficient, and scalable. On input size $10^9$, our LIS algorithm outperforms a highly-optimized sequential algorithm (with $O(n\\log k)$ cost) on inputs with $k\\le 3\\times 10^5$. Our algorithm is also much faster than the best existing parallel implementation by Shen et al. (2022) on all input instances. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/zju-SWJ/RCFD"
+  ],
+  "tasks": [
+    "Image generation",
+    "Sampling acceleration"
+  ],
+  "datasets": [
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Classifier-based Feature Distillation",
+    "Progressive distillation"
+  ],
+  "results": [
+    "High quality and fast sampling"
+  ],
+  "paper_id": "637d8f5c90e50fcafd6e6eca",
+  "title": "Accelerating Diffusion Sampling with Classifier-based Feature\n  Distillation",
+  "abstract": "  Although diffusion model has shown great potential for generating higher quality images than GANs, slow sampling speed hinders its wide application in practice. Progressive distillation is thus proposed for fast sampling by progressively aligning output images of $N$-step teacher sampler with $N/2$-step student sampler. In this paper, we argue that this distillation-based accelerating method can be further improved, especially for few-step samplers, with our proposed \\textbf{C}lassifier-based \\textbf{F}eature \\textbf{D}istillation (CFD). Instead of aligning output images, we distill teacher's sharpened feature distribution into the student with a dataset-independent classifier, making the student focus on those important features to improve performance. We also introduce a dataset-oriented loss to further optimize the model. Experiments on CIFAR-10 show the superiority of our method in achieving high quality and fast sampling. Code is provided at \\url{https://github.com/zju-SWJ/RCFD}. "
+}

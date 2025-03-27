@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simulation-Based Inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "WALDO",
+    "Wald test statistic",
+    "regression-based machinery",
+    "Neyman inversion",
+    "normalizing flows"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6296d90f5aee126c0f730cfe",
+  "title": "Simulation-Based Inference with Waldo: Confidence Regions by Leveraging\n  Prediction Algorithms or Posterior Estimators for Inverse Problems",
+  "abstract": "  Predictive algorithms, such as deep neural networks (DNNs), are used in many domain sciences to directly estimate internal parameters of interest in simulator-based models, especially in settings where the observations include images or other complex high-dimensional data. In parallel, modern neural density estimators, such as normalizing flows, are becoming increasingly popular for uncertainty quantification, especially when both parameters and observations are high-dimensional. However, parameter inference is an inverse problem and not a prediction task; thus, an open challenge is to construct conditionally valid and precise confidence regions, with a guaranteed probability of covering the true parameters of the data-generating process, no matter what the (unknown) parameter values are, and without relying on large-sample theory. Many simulator-based inference (SBI) methods are indeed known to produce biased or overly confident parameter regions, yielding misleading uncertainty estimates. This paper presents WALDO, a novel method for constructing confidence regions with finite-sample conditional validity by leveraging prediction algorithms or posterior estimators that are currently widely adopted in SBI. WALDO reframes the well-known Wald test statistic, and uses a computationally efficient regression-based machinery for classical Neyman inversion of hypothesis tests. We apply our method to a recent high-energy physics problem, where prediction with DNNs has previously led to estimates with prediction bias. We also illustrate how our approach can correct overly confident posterior regions computed with normalizing flows. "
+}

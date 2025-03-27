@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Segmenting white matter hyperintensities",
+    "Automated WMH segmentation and characterization"
+  ],
+  "datasets": [
+    "Norwegian imaging database",
+    "DDI study",
+    "International collaborator dataset"
+  ],
+  "methods": [
+    "Deep learning tools",
+    "3D nnU-Net",
+    "2.5D model",
+    "SOTA Deep Bayesian network"
+  ],
+  "results": [
+    "3D nnU-Net with dice similarity coefficient score of 0.76 +/- 0.16",
+    "Better performance than in-house developed 2.5D model and SOTA Deep Bayesian network"
+  ],
+  "paper_id": "62d620f65aee126c0fad47ff",
+  "title": "Segmenting white matter hyperintensities on isotropic three-dimensional\n  Fluid Attenuated Inversion Recovery magnetic resonance images: Assessing deep\n  learning tools on norwegian imaging database",
+  "abstract": "  Automated segmentation of white matter hyperintensities (WMHs) is an essential step in neuroimaging analysis of Magnetic Resonance Imaging (MRI). Fluid Attenuated Inversion Recovery (FLAIR-weighted) is an MRI contrast that is particularly useful to visualize and quantify WMHs, a hallmark of cerebral small vessel disease and Alzheimer's disease (AD). Clinical MRI protocols migrate to a three-dimensional (3D) FLAIR-weighted acquisition to enable high spatial resolution in all three voxel dimensions. The current study details the deployment of deep learning tools to enable automated WMH segmentation and characterization from 3D FLAIR-weighted images acquired as part of a national AD imaging initiative.   Among 441 participants (194 male, mean age: (64.91 +/- 9.32) years) from the DDI study, two in-house networks were trained and validated across five national collection sites. Three models were tested on a held-out subset of the internal data from the 441 participants and an external dataset with 29 cases from an international collaborator. These test sets were evaluated independently. Five established WMH performance metrics were used for comparison against ground truth human-in-the-loop segmentation.   Results of the three networks tested, the 3D nnU-Net had the best performance with an average dice similarity coefficient score of 0.76 +/- 0.16, performing better than both the in-house developed 2.5D model and the SOTA Deep Bayesian network.   With the increasing use of 3D FLAIR-weighted images in MRI protocols, our results suggest that WMH segmentation models can be trained on 3D data and yield WMH segmentation performance that is comparable to or better than state-of-the-art without the need for including T1-weighted image series. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Task-Oriented Dialog"
+  ],
+  "datasets": [
+    "MutliWOZ"
+  ],
+  "methods": [
+    "BART based model",
+    "fine-tuning with prompts"
+  ],
+  "results": [
+    "Robust to perturbations to knowledge modality",
+    "Fuses information from structured and unstructured knowledge"
+  ],
+  "paper_id": "634cc7a290e50fcafd162d34",
+  "title": "Joint Reasoning on Hybrid-knowledge sources for Task-Oriented Dialog",
+  "abstract": "  Traditional systems designed for task oriented dialog utilize knowledge present only in structured knowledge sources to generate responses. However, relevant information required to generate responses may also reside in unstructured sources, such as documents. Recent state of the art models such as HyKnow and SeKnow aimed at overcoming these challenges make limiting assumptions about the knowledge sources. For instance, these systems assume that certain types of information, such as a phone number, is always present in a structured knowledge base (KB) while information about aspects such as entrance ticket prices, would always be available in documents.   In this paper, we create a modified version of the MutliWOZ-based dataset prepared by SeKnow to demonstrate how current methods have significant degradation in performance when strict assumptions about the source of information are removed. Then, in line with recent work exploiting pre-trained language models, we fine-tune a BART based model using prompts for the tasks of querying knowledge sources, as well as, for response generation, without making assumptions about the information present in each knowledge source. Through a series of experiments, we demonstrate that our model is robust to perturbations to knowledge modality (source of information), and that it can fuse information from structured as well as unstructured knowledge to generate responses. "
+}

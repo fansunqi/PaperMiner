@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "PointGoal navigation in indoor environment"
+  ],
+  "datasets": [
+    "Gibson dataset"
+  ],
+  "methods": [
+    "Unsupervised visual odometry",
+    "Action integration module (AIM)"
+  ],
+  "results": [
+    "Satisfactory results",
+    "Outperforms partially supervised learning algorithms"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4dce",
+  "title": "Unsupervised Visual Odometry and Action Integration for PointGoal\n  Navigation in Indoor Environment",
+  "abstract": "  PointGoal navigation in indoor environment is a fundamental task for personal robots to navigate to a specified point. Recent studies solved this PointGoal navigation task with near-perfect success rate in photo-realistically simulated environments, under the assumptions with noiseless actuation and most importantly, perfect localization with GPS and compass sensors. However, accurate GPS signalis difficult to be obtained in real indoor environment. To improve the PointGoal navigation accuracy without GPS signal, we use visual odometry (VO) and propose a novel action integration module (AIM) trained in unsupervised manner. Sepecifically, unsupervised VO computes the relative pose of the agent from the re-projection error of two adjacent frames, and then replaces the accurate GPS signal with the path integration. The pseudo position estimated by VO is used to train action integration which assists agent to update their internal perception of location and helps improve the success rate of navigation. The training and inference process only use RGB, depth, collision as well as self-action information. The experiments show that the proposed system achieves satisfactory results and outperforms the partially supervised learning algorithms on the popular Gibson dataset. "
+}

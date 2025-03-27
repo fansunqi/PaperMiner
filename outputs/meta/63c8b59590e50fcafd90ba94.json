@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Regularization in machine learning"
+  ],
+  "datasets": [
+    "MNIST"
+  ],
+  "methods": [
+    "Novel sparse regularizer"
+  ],
+  "results": [
+    "Approximately one order-of-magnitude improvement in the number of nonzero model parameters"
+  ],
+  "paper_id": "63c8b59590e50fcafd90ba94",
+  "title": "A Novel Sparse Regularizer",
+  "abstract": "  $L_p$-norm regularization schemes such as $L_0$, $L_1$, and $L_2$-norm regularization and $L_p$-norm-based regularization techniques such as weight decay, LASSO, and elastic net compute a quantity which depends on model weights considered in isolation from one another. This paper introduces a regularizer based on minimizing a novel measure of entropy applied to the model during optimization. In contrast with $L_p$-norm-based regularization, this regularizer is concerned with the spatial arrangement of weights within a weight matrix. This novel regularizer is an additive term for the loss function and is differentiable, simple and fast to compute, scale-invariant, requires a trivial amount of additional memory, and can easily be parallelized. Empirically this method yields approximately a one order-of-magnitude improvement in the number of nonzero model parameters required to achieve a given level of test accuracy when training LeNet300 on MNIST. "
+}

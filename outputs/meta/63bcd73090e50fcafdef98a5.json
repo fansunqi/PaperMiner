@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/gangweiX/CGI-Stereo"
+  ],
+  "tasks": [
+    "Stereo Matching"
+  ],
+  "datasets": [
+    "KITTI 2012",
+    "KITTI 2015"
+  ],
+  "methods": [
+    "Context and Geometry Fusion (CGF) block",
+    "Attention Feature Volume (AFV)"
+  ],
+  "results": [
+    "Significant improvement in accuracy",
+    "First place on KITTI 2012 and 2015 leaderboards",
+    "Outperforms all other published real-time methods on KITTI benchmarks"
+  ],
+  "paper_id": "63bcd73090e50fcafdef98a5",
+  "title": "CGI-Stereo: Accurate and Real-Time Stereo Matching via Context and\n  Geometry Interaction",
+  "abstract": "  In this paper, we propose CGI-Stereo, a novel neural network architecture that can concurrently achieve real-time performance, competitive accuracy, and strong generalization ability. The core of our CGI-Stereo is a Context and Geometry Fusion (CGF) block which adaptively fuses context and geometry information for more effective cost aggregation and meanwhile provides feedback to feature learning to guide more effective contextual feature extraction. The proposed CGF can be easily embedded into many existing stereo matching networks, such as PSMNet, GwcNet and ACVNet. The resulting networks show a significant improvement in accuracy. Specially, the model which incorporates our CGF with ACVNet ranks $1^{st}$ on the KITTI 2012 and 2015 leaderboards among all the published methods. We further propose an informative and concise cost volume, named Attention Feature Volume (AFV), which exploits a correlation volume as attention weights to filter a feature volume. Based on CGF and AFV, the proposed CGI-Stereo outperforms all other published real-time methods on KITTI benchmarks and shows better generalization ability than other real-time methods. Code is available at https://github.com/gangweiX/CGI-Stereo. "
+}

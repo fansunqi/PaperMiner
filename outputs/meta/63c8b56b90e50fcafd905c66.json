@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-label document classification"
+  ],
+  "datasets": [
+    "Web of Science - 5763",
+    "Web of Science - 11967",
+    "BBC Sports",
+    "BBC News"
+  ],
+  "methods": [
+    "Hydranet-like architecture",
+    "sentence-level embeddings",
+    "Bi-LSTM",
+    "Transformer-based"
+  ],
+  "results": [
+    "Outperforms existing methods by a substantial margin",
+    "Ablation study on attention mechanism and weighted loss functions"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905c66",
+  "title": "Hawk: An Industrial-strength Multi-label Document Classifier",
+  "abstract": "  There are a plethora of methods and algorithms that solve the classical multi-label document classification. However, when it comes to deployment and usage in an industry setting, most, if not all the contemporary approaches fail to address some of the vital aspects or requirements of an ideal solution: i. ability to operate on variable-length texts and rambling documents. ii. catastrophic forgetting problem. iii. modularity when it comes to online learning and updating the model. iv. ability to spotlight relevant text while producing the prediction, i.e. visualizing the predictions. v. ability to operate on imbalanced or skewed datasets. vi. scalability. The paper describes the significance of these problems in detail and proposes a unique neural network architecture that addresses the above problems. The proposed architecture views documents as a sequence of sentences and leverages sentence-level embeddings for input representation. A hydranet-like architecture is designed to have granular control over and improve the modularity, coupled with a weighted loss driving task-specific heads. In particular, two specific mechanisms are compared: Bi-LSTM and Transformer-based. The architecture is benchmarked on some of the popular benchmarking datasets such as Web of Science - 5763, Web of Science - 11967, BBC Sports, and BBC News datasets. The experimental results reveal that the proposed model outperforms the existing methods by a substantial margin. The ablation study includes comparisons of the impact of the attention mechanism and the application of weighted loss functions to train the task-specific heads in the hydranet. "
+}

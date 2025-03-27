@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lexicase selection probability calculation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proof by reduction to SAT",
+    "Reduction of epsilon-lexicase selection to standard lexicase selection"
+  ],
+  "results": [
+    "Lex-prob is NP-Hard",
+    "Practical implications for calculating probabilities under lexicase selection",
+    "Theoretical implications on the relationship between epsilon-lexicase selection, lexicase selection, and other NP-Hard problems"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b666",
+  "title": "Calculating lexicase selection probabilities is NP-Hard",
+  "abstract": "  Calculating the probability of an individual solution being selected under lexicase selection is an important problem in attempts to develop a deeper theoretical understanding of lexicase selection, a state-of-the art parent selection algorithm in evolutionary computation. Discovering a fast solution to this problem would also have implications for efforts to develop practical improvements to lexicase selection. Here, I prove that this problem, which I name lex-prob, is NP-Hard. I achieve this proof by reducing SAT, a well-known NP-Complete problem, to lex-prob in polynomial time. This reduction involves an intermediate step in which a popular variant of lexicase selection, epsilon-lexicase selection, is reduced to standard lexicase selection. This proof has important practical implications for anyone needing a fast way of calculating the probabilities of individual solutions being selected under lexicase selection. Doing so in polynomial time would be incredibly challenging, if not all-together impossible. Thus, finding approximation algorithms or practical optimizations for speeding up the brute-force solution is likely more worthwhile. This result also has deeper theoretical implications about the relationship between epsilon-lexicase selection and lexicase selection and the relationship between lex-prob and other NP-Hard problems. "
+}

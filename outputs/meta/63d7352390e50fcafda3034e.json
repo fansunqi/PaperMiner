@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Impact of Inter-procedural Code Obfuscation on Binary Diffing Techniques"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Khaos: inter-procedural code obfuscation mechanism",
+    "fission and fusion primitives",
+    "LLVM compiler"
+  ],
+  "results": [
+    "Khaos outperforms existing code obfuscations",
+    "Significantly reduces accuracy rates of binary diffing techniques (less than 19%)",
+    "Lower runtime overhead (less than 7%)"
+  ],
+  "paper_id": "63d7352390e50fcafda3034e",
+  "title": "Khaos: The Impact of Inter-procedural Code Obfuscation on Binary Diffing\n  Techniques",
+  "abstract": "  Software obfuscation techniques can prevent binary diffing techniques from locating vulnerable code by obfuscating the third-party code, to achieve the purpose of protecting embedded device software. With the rapid development of binary diffing techniques, they can achieve more and more accurate function matching and identification by extracting the features within the function. This makes existing software obfuscation techniques, which mainly focus on the intra-procedural code obfuscation, no longer effective.   In this paper, we propose a new inter-procedural code obfuscation mechanism Khaos, which moves the code across functions to obfuscate the function by using compilation optimizations. Two obfuscation primitives are proposed to separate and aggregate the function, which are called fission and fusion respectively. A prototype of Khaos is implemented based on the LLVM compiler and evaluated on a large number of real-world programs including SPEC CPU 2006 & 2017, CoreUtils, JavaScript engines, etc. Experimental results show that Khaos outperforms existing code obfuscations and can significantly reduce the accuracy rates of five state-of-the-art binary diffing techniques (less than 19%) with lower runtime overhead (less than 7%). "
+}

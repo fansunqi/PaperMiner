@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computer Vision"
+  ],
+  "datasets": [
+    "ImageNet-1k"
+  ],
+  "methods": [
+    "Vision Transformers (ViTs)",
+    "GrafT"
+  ],
+  "results": [
+    "+3.9%, +1.4%, +1.9% top-1 accuracy improvement to DeiT-T, Swin-T, and MobileViT-XXS"
+  ],
+  "paper_id": "635f3ca190e50fcafd3f5891",
+  "title": "Grafting Vision Transformers",
+  "abstract": "  Vision Transformers (ViTs) have recently become the state-of-the-art across many computer vision tasks. In contrast to convolutional networks (CNNs), ViTs enable global information sharing even within shallow layers of a network, i.e., among high-resolution features. However, this perk was later overlooked with the success of pyramid architectures such as Swin Transformer, which show better performance-complexity trade-offs. In this paper, we present a simple and efficient add-on component (termed GrafT) that considers global dependencies and multi-scale information throughout the network, in both high- and low-resolution features alike. It has the flexibility of branching out at arbitrary depths and shares most of the parameters and computations of the backbone. GrafT shows consistent gains over various well-known models which includes both hybrid and pure Transformer types, both homogeneous and pyramid structures, and various self-attention methods. In particular, it largely benefits mobile-size models by providing high-level semantics. On the ImageNet-1k dataset, GrafT delivers +3.9%, +1.4%, and +1.9% top-1 accuracy improvement to DeiT-T, Swin-T, and MobileViT-XXS, respectively. Our code and models will be made available. "
+}

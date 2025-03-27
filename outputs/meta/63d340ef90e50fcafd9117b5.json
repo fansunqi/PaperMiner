@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Pointcloud Representation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sparse Gaussian Process",
+    "variance-based sampling technique"
+  ],
+  "results": [
+    "70 to 100 times reduction in the communication rate compared to sending the raw pointcloud"
+  ],
+  "paper_id": "63d340ef90e50fcafd9117b5",
+  "title": "Light-Weight Pointcloud Representation with Sparse Gaussian Process",
+  "abstract": "  This paper presents a framework to represent high-fidelity pointcloud sensor observations for efficient communication and storage. The proposed approach exploits Sparse Gaussian Process to encode pointcloud into a compact form. Our approach represents both the free space and the occupied space using only one model (one 2D Sparse Gaussian Process) instead of the existing two-model framework (two 3D Gaussian Mixture Models). We achieve this by proposing a variance-based sampling technique that effectively discriminates between the free and occupied space. The new representation requires less memory footprint and can be transmitted across limitedbandwidth communication channels. The framework is extensively evaluated in simulation and it is also demonstrated using a real mobile robot equipped with a 3D LiDAR. Our method results in a 70 to 100 times reduction in the communication rate compared to sending the raw pointcloud. "
+}

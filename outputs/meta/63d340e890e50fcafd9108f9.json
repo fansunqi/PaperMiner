@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Histopathology image synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Enhanced Sharp-GAN",
+    "nuclei topology and contour regularization"
+  ],
+  "results": [
+    "Outperforms Sharp-GAN in all four image quality metrics",
+    "State-of-the-art segmentation performance on TNBC dataset",
+    "DQ: 0.855, SQ: 0.863, PQ: 0.691, AJI: 0.683"
+  ],
+  "paper_id": "63d340e890e50fcafd9108f9",
+  "title": "Enhanced Sharp-GAN For Histopathology Image Synthesis",
+  "abstract": "  Histopathology image synthesis aims to address the data shortage issue in training deep learning approaches for accurate cancer detection. However, existing methods struggle to produce realistic images that have accurate nuclei boundaries and less artifacts, which limits the application in downstream tasks. To address the challenges, we propose a novel approach that enhances the quality of synthetic images by using nuclei topology and contour regularization. The proposed approach uses the skeleton map of nuclei to integrate nuclei topology and separate touching nuclei. In the loss function, we propose two new contour regularization terms that enhance the contrast between contour and non-contour pixels and increase the similarity between contour pixels. We evaluate the proposed approach on the two datasets using image quality metrics and a downstream task (nuclei segmentation). The proposed approach outperforms Sharp-GAN in all four image quality metrics on two datasets. By integrating 6k synthetic images from the proposed approach into training, a nuclei segmentation model achieves the state-of-the-art segmentation performance on TNBC dataset and its detection quality (DQ), segmentation quality (SQ), panoptic quality (PQ), and aggregated Jaccard index (AJI) is 0.855, 0.863, 0.691, and 0.683, respectively. "
+}

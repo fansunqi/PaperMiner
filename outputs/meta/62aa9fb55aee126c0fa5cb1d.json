@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimal transport (OT) problem",
+    "Sinkhorn fixed-point algorithm"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Data-dependent initializers",
+    "Closed-forms for exact or approximate OT solutions"
+  ],
+  "results": [
+    "Dramatic speed-ups",
+    "No effect on differentiability",
+    "Consistent speed-ups for a wide variety of OT problems"
+  ],
+  "paper_id": "62aa9fb55aee126c0fa5cb1d",
+  "title": "Rethinking Initialization of the Sinkhorn Algorithm",
+  "abstract": "  While the optimal transport (OT) problem was originally formulated as a linear program, the addition of entropic regularization has proven beneficial both computationally and statistically, for many applications. The Sinkhorn fixed-point algorithm is the most popular approach to solve this regularized problem, and, as a result, multiple attempts have been made to reduce its runtime using, e.g., annealing in the regularization parameter, momentum or acceleration. The premise of this work is that initialization of the Sinkhorn algorithm has received comparatively little attention, possibly due to two preconceptions: since the regularized OT problem is convex, it may not be worth crafting a good initialization, since any is guaranteed to work; secondly, because the outputs of the Sinkhorn algorithm are often unrolled in end-to-end pipelines, a data-dependent initialization would bias Jacobian computations. We challenge this conventional wisdom, and show that data-dependent initializers result in dramatic speed-ups, with no effect on differentiability as long as implicit differentiation is used. Our initializations rely on closed-forms for exact or approximate OT solutions that are known in the 1D, Gaussian or GMM settings. They can be used with minimal tuning, and result in consistent speed-ups for a wide variety of OT problems. "
+}

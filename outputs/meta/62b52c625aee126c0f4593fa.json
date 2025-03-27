@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Physical human-robot interaction",
+    "Continuous multimodal intention and attention recognition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Supervised machine learning algorithm",
+    "Feature reduction technique"
+  ],
+  "results": [
+    "F1-score of 86% for intention recognition",
+    "Reduced number of inputs to five",
+    "High degree of task adaptability"
+  ],
+  "paper_id": "62b52c625aee126c0f4593fa",
+  "title": "Vision- and tactile-based continuous multimodal intention and attention\n  recognition for safer physical human-robot interaction",
+  "abstract": "  Employing skin-like tactile sensors on robots enhances both the safety and usability of collaborative robots by adding the capability to detect human contact. Unfortunately, simple binary tactile sensors alone cannot determine the context of the human contact -- whether it is a deliberate interaction or an unintended collision that requires safety manoeuvres. Many published methods classify discrete interactions using more advanced tactile sensors or by analysing joint torques. Instead, we propose to augment the intention recognition capabilities of simple binary tactile sensors by adding a robot-mounted camera for human posture analysis. Different interaction characteristics, including touch location, human pose, and gaze direction, are used to train a supervised machine learning algorithm to classify whether a touch is intentional or not with an F1-score of 86%. We demonstrate that multimodal intention recognition is significantly more accurate than monomodal analyses with the collaborative robot Baxter. Furthermore, our method can also continuously monitor interactions that fluidly change between intentional or unintentional by gauging the user's attention through gaze. If a user stops paying attention mid-task, the proposed intention and attention recognition algorithm can activate safety features to prevent unsafe interactions. We also employ a feature reduction technique that reduces the number of inputs to five to achieve a more generalized low-dimensional classifier. This simplification both reduces the amount of training data required and improves real-world classification accuracy. It also renders the method potentially agnostic to the robot and touch sensor architectures while achieving a high degree of task adaptability. "
+}

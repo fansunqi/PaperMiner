@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/rowedenny/MULTR"
+  ],
+  "tasks": [
+    "Unbiased Learning to Rank"
+  ],
+  "datasets": [
+    "benchmark datasets"
+  ],
+  "methods": [
+    "model-based unbiased learning-to-rank framework",
+    "context-aware user simulator",
+    "inverse propensity weighting with pseudo labels"
+  ],
+  "results": [
+    "consistently outperforms state-of-the-art methods"
+  ],
+  "paper_id": "62df81d35aee126c0f872439",
+  "title": "Model-based Unbiased Learning to Rank",
+  "abstract": "  Unbiased Learning to Rank (ULTR) that learns to rank documents with biased user feedback data is a well-known challenge in information retrieval. Existing methods in unbiased learning to rank typically rely on click modeling or inverse propensity weighting (IPW). Unfortunately, the search engines are faced with severe long-tail query distribution, where neither click modeling nor IPW can handle well. Click modeling suffers from data sparsity problem since the same query-document pair appears limited times on tail queries; IPW suffers from high variance problem since it is highly sensitive to small propensity score values. Therefore, a general debiasing framework that works well under tail queries is in desperate need. To address this problem, we propose a model-based unbiased learning-to-rank framework. Specifically, we develop a general context-aware user simulator to generate pseudo clicks for unobserved ranked lists to train rankers, which addresses the data sparsity problem. In addition, considering the discrepancy between pseudo clicks and actual clicks, we take the observation of a ranked list as the treatment variable and further incorporate inverse propensity weighting with pseudo labels in a doubly robust way. The derived bias and variance indicate that the proposed model-based method is more robust than existing methods. Finally, extensive experiments on benchmark datasets, including simulated datasets and real click logs, demonstrate that the proposed model-based method consistently performs outperforms state-of-the-art methods in various scenarios. The code is available at https://github.com/rowedenny/MULTR. "
+}

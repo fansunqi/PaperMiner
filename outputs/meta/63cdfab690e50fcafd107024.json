@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Recommender systems",
+    "Slate recommendation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reinforcement learning",
+    "Variational auto-encoder",
+    "Generative modeling"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63cdfab690e50fcafd107024",
+  "title": "Generative Slate Recommendation with Reinforcement Learning",
+  "abstract": "  Recent research has employed reinforcement learning (RL) algorithms to optimize long-term user engagement in recommender systems, thereby avoiding common pitfalls such as user boredom and filter bubbles. They capture the sequential and interactive nature of recommendations, and thus offer a principled way to deal with long-term rewards and avoid myopic behaviors. However, RL approaches are intractable in the slate recommendation scenario - where a list of items is recommended at each interaction turn - due to the combinatorial action space. In that setting, an action corresponds to a slate that may contain any combination of items.   While previous work has proposed well-chosen decompositions of actions so as to ensure tractability, these rely on restrictive and sometimes unrealistic assumptions. Instead, in this work we propose to encode slates in a continuous, low-dimensional latent space learned by a variational auto-encoder. Then, the RL agent selects continuous actions in this latent space, which are ultimately decoded into the corresponding slates. By doing so, we are able to (i) relax assumptions required by previous work, and (ii) improve the quality of the action selection by modeling full slates instead of independent items, in particular by enabling diversity. Our experiments performed on a wide array of simulated environments confirm the effectiveness of our generative modeling of slates over baselines in practical scenarios where the restrictive assumptions underlying the baselines are lifted. Our findings suggest that representation learning using generative models is a promising direction towards generalizable RL-based slate recommendation. "
+}

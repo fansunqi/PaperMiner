@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Uncertainty estimation in neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Layer Ensembles",
+    "Optimized inference procedure",
+    "Ranking samples"
+  ],
+  "results": [
+    "Up to 19x speed up",
+    "Reduced memory usage quadratically",
+    "Higher uncertainty quality than Deep Ensembles"
+  ],
+  "paper_id": "6344dee690e50fcafd24e8a4",
+  "title": "Layer Ensembles",
+  "abstract": "  Deep Ensembles, as a type of Bayesian Neural Networks, can be used to estimate uncertainty on the prediction of multiple neural networks by collecting votes from each network and computing the difference in those predictions. In this paper, we introduce a method for uncertainty estimation that considers a set of independent categorical distributions for each layer of the network, giving many more possible samples with overlapped layers than in the regular Deep Ensembles. We further introduce an optimized inference procedure that reuses common layer outputs, achieving up to 19x speed up and reducing memory usage quadratically. We also show that the method can be further improved by ranking samples, resulting in models that require less memory and time to run while achieving higher uncertainty quality than Deep Ensembles. "
+}

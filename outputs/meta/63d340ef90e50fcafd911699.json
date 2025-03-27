@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Diagnosing biases in image classifiers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "bias-to-text (B2T)",
+    "pre-trained captioning model",
+    "pre-trained vision-language joint embedding space (e.g., CLIP)"
+  ],
+  "results": [
+    "Recovered well-known gender and background biases",
+    "Discovered novel biases in real-world datasets",
+    "Comparison of classifiers using different architectures or training methods",
+    "Debiased classifiers obtained using B2T bias keywords and CLIP"
+  ],
+  "paper_id": "63d340ef90e50fcafd911699",
+  "title": "Explaining Visual Biases as Words by Generating Captions",
+  "abstract": "  We aim to diagnose the potential biases in image classifiers. To this end, prior works manually labeled biased attributes or visualized biased features, which need high annotation costs or are often ambiguous to interpret. Instead, we leverage two types (generative and discriminative) of pre-trained vision-language models to describe the visual bias as a word. Specifically, we propose bias-to-text (B2T), which generates captions of the mispredicted images using a pre-trained captioning model to extract the common keywords that may describe visual biases. Then, we categorize the bias type as spurious correlation or majority bias by checking if it is specific or agnostic to the class, based on the similarity of class-wise mispredicted images and the keyword upon a pre-trained vision-language joint embedding space, e.g., CLIP. We demonstrate that the proposed simple and intuitive scheme can recover well-known gender and background biases, and discover novel ones in real-world datasets. Moreover, we utilize B2T to compare the classifiers using different architectures or training methods. Finally, we show that one can obtain debiased classifiers using the B2T bias keywords and CLIP, in both zero-shot and full-shot manners, without using any human annotation on the bias. "
+}

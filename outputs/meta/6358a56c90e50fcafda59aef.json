@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "WAN Traffic Engineering Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Flow-centric GNN",
+    "Multi-agent reinforcement learning (RL)",
+    "ADMM"
+  ],
+  "results": [
+    "Near-optimal flow allocations",
+    "Several orders of magnitude faster than production optimization engine",
+    "Up to 29% more traffic demands",
+    "Up to 109x speedups"
+  ],
+  "paper_id": "6358a56c90e50fcafda59aef",
+  "title": "Teal: Learning-Accelerated Optimization of WAN Traffic Engineering",
+  "abstract": "  The past decade has witnessed a rapid expansion of global cloud wide-area networks (WANs) with the deployment of new network sites and datacenters, making it challenging for commercial optimization engines to solve the network traffic engineering (TE) problem quickly at scale. Current approaches to accelerating TE optimization decompose the task into subproblems that can be solved in parallel using optimization solvers, but they are fundamentally restricted to a few dozen subproblems in order to balance run time and TE performance, achieving limited parallelism and speedup.   Motivated by the ability to readily access thousands of threads on GPUs through modern deep learning frameworks, we propose a learning-based TE algorithm -- Teal, which harnesses the parallel processing power of GPUs to accelerate TE control. First, Teal designs a flow-centric graph neural network (GNN) to capture WAN connectivity and model network flows, learning flow features as inputs to the downstream allocation. Second, to reduce the problem scale and make learning tractable, Teal employs a multi-agent reinforcement learning (RL) algorithm to allocate each traffic demand independently toward optimizing a central TE objective. Finally, Teal fine-tunes the resulting flow allocations using alternating direction method of multipliers (ADMM), a highly parallelizable constrained optimization algorithm for reducing constraint violations (e.g., overused links).   We evaluate Teal on traffic matrices collected from a global cloud provider, and show that on a large WAN topology with over 1,700 nodes, Teal generates near-optimal flow allocations while being several orders of magnitude faster than the production optimization engine. Compared with other TE acceleration schemes, Teal satisfies up to 29% more traffic demands and yields up to 109x speedups. "
+}

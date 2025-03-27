@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/Duanlab123/CurvNLOS"
+  ],
+  "tasks": [
+    "Non-line-of-sight Imaging"
+  ],
+  "datasets": [
+    "synthetic",
+    "real"
+  ],
+  "methods": [
+    "curvature regularization",
+    "ADMM",
+    "backtracking stepsize rule",
+    "GPU implementation"
+  ],
+  "results": [
+    "state-of-the-art performance",
+    "compressed sensing setting"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e5e1",
+  "title": "Curvature regularization for Non-line-of-sight Imaging from\n  Under-sampled Data",
+  "abstract": "  Non-line-of-sight (NLOS) imaging aims to reconstruct the three-dimensional hidden scenes from the data measured in the line-of-sight, which uses photon time-of-flight information encoded in light after multiple diffuse reflections. The under-sampled scanning data can facilitate fast imaging. However, the resulting reconstruction problem becomes a serious ill-posed inverse problem, the solution of which is of high possibility to be degraded due to noises and distortions. In this paper, we propose two novel NLOS reconstruction models based on curvature regularization, i.e., the object-domain curvature regularization model and the dual (i.e., signal and object)-domain curvature regularization model. Fast numerical optimization algorithms are developed relying on the alternating direction method of multipliers (ADMM) with the backtracking stepsize rule, which are further accelerated by GPU implementation. We evaluate the proposed algorithms on both synthetic and real datasets, which achieve state-of-the-art performance, especially in the compressed sensing setting. All our codes and data are available at https://github.com/Duanlab123/CurvNLOS. "
+}

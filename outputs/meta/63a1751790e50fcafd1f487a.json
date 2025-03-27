@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "On-device super-resolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hybrid-precision quantization",
+    "Runtime neural image codec"
+  ],
+  "results": [
+    "Average speedup of 7.9x, 3x, and 1.91x over MobiSR, SplitSR, and XLSR",
+    "Average of 3.2x speedup and 0.39 dB higher PSNR over INT8 NPU designs"
+  ],
+  "paper_id": "63a1751790e50fcafd1f487a",
+  "title": "NAWQ-SR: A Hybrid-Precision NPU Engine for Efficient On-Device\n  Super-Resolution",
+  "abstract": "  In recent years, image and video delivery systems have begun integrating deep learning super-resolution (SR) approaches, leveraging their unprecedented visual enhancement capabilities while reducing reliance on networking conditions. Nevertheless, deploying these solutions on mobile devices still remains an active challenge as SR models are excessively demanding with respect to workload and memory footprint. Despite recent progress on on-device SR frameworks, existing systems either penalize visual quality, lead to excessive energy consumption or make inefficient use of the available resources. This work presents NAWQ-SR, a novel framework for the efficient on-device execution of SR models. Through a novel hybrid-precision quantization technique and a runtime neural image codec, NAWQ-SR exploits the multi-precision capabilities of modern mobile NPUs in order to minimize latency, while meeting user-specified quality constraints. Moreover, NAWQ-SR selectively adapts the arithmetic precision at run time to equip the SR DNN's layers with wider representational power, improving visual quality beyond what was previously possible on NPUs. Altogether, NAWQ-SR achieves an average speedup of 7.9x, 3x and 1.91x over the state-of-the-art on-device SR systems that use heterogeneous processors (MobiSR), CPU (SplitSR) and NPU (XLSR), respectively. Furthermore, NAWQ-SR delivers an average of 3.2x speedup and 0.39 dB higher PSNR over status-quo INT8 NPU designs, but most importantly mitigates the negative effects of quantization on visual quality, setting a new state-of-the-art in the attainable quality of NPU-based SR. "
+}

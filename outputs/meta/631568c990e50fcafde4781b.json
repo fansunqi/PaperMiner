@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Radiance Fields (NeRFs) improvement",
+    "Novel view synthesis",
+    "Dense depth prediction"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "CLONeR",
+    "Multi-Layer Perceptrons (MLPs) for occupancy and color learning",
+    "Differentiable 3D Occupancy Grid Maps (OGM)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art NeRF models on novel view synthesis and dense depth prediction tasks"
+  ],
+  "paper_id": "631568c990e50fcafde4781b",
+  "title": "CLONeR: Camera-Lidar Fusion for Occupancy Grid-aided Neural\n  Representations",
+  "abstract": "  Recent advances in neural radiance fields (NeRFs) achieve state-of-the-art novel view synthesis and facilitate dense estimation of scene properties. However, NeRFs often fail for large, unbounded scenes that are captured under very sparse views with the scene content concentrated far away from the camera, as is typical for field robotics applications. In particular, NeRF-style algorithms perform poorly: (1) when there are insufficient views with little pose diversity, (2) when scenes contain saturation and shadows, and (3) when finely sampling large unbounded scenes with fine structures becomes computationally intensive.   This paper proposes CLONeR, which significantly improves upon NeRF by allowing it to model large outdoor driving scenes that are observed from sparse input sensor views. This is achieved by decoupling occupancy and color learning within the NeRF framework into separate Multi-Layer Perceptrons (MLPs) trained using LiDAR and camera data, respectively. In addition, this paper proposes a novel method to build differentiable 3D Occupancy Grid Maps (OGM) alongside the NeRF model, and leverage this occupancy grid for improved sampling of points along a ray for volumetric rendering in metric space.   Through extensive quantitative and qualitative experiments on scenes from the KITTI dataset, this paper demonstrates that the proposed method outperforms state-of-the-art NeRF models on both novel view synthesis and dense depth prediction tasks when trained on sparse input data. "
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Maximal Independent Set (MIS)",
+    "Maximal Matching (MM)",
+    "Vertex Coloring"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deterministic Massively Parallel Symmetry Breaking",
+    "Fully scalable algorithm",
+    "Linear global memory",
+    "Relaxed global memory"
+  ],
+  "results": [
+    "Improved deterministic round complexity of O(log \u03bb + log log n) for MIS and MM",
+    "Solved in deterministic time O(min(log n, log \u03bb * log log n))",
+    "O(1)-round deterministic algorithm for O(\u03bb)-coloring"
+  ],
+  "paper_id": "63d340ef90e50fcafd91177a",
+  "title": "Deterministic Massively Parallel Symmetry Breaking for Sparse Graphs",
+  "abstract": "  We consider the problem of designing deterministic graph algorithms for the model of Massively Parallel Computation (MPC) that improve with the sparsity of the input graph, as measured by the notion of arboricity. For the problems of maximal independent set (MIS), maximal matching (MM), and vertex coloring, we improve the state of the art as follows. Let $\\lambda$ denote the arboricity of the $n$-node input graph with maximum degree $\\Delta$.   MIS and MM: We develop a deterministic fully-scalable algorithm that reduces the maximum degree to $poly(\\lambda)$ in $O(\\log \\log n)$ rounds, improving and simplifying the randomized $O(\\log \\log n)$-round $poly(\\max(\\lambda, \\log n))$-degree reduction of Ghaffari, Grunau, Jin [DISC'20]. Our approach when combined with the state-of-the-art $O(\\log \\Delta + \\log \\log n)$-round algorithm by Czumaj, Davies, Parter [SPAA'20, TALG'21] leads to an improved deterministic round complexity of $O(\\log \\lambda + \\log \\log n)$ for MIS and MM in low-space MPC.   We also extend above MIS and MM algorithms to work with linear global memory. Specifically, we show that both problems can be solved in deterministic time $O(\\min(\\log n, \\log \\lambda \\cdot \\log \\log n))$, and even in $O(\\log \\log n)$ time for graphs with arboricity at most $\\log^{O(1)} \\log n$. In this setting, only a $O(\\log^2 \\log n)$-running time bound for trees was known due to Latypov and Uitto [ArXiv'21].   Vertex Coloring: We present a $O(1)$-round deterministic algorithm for the problem of $O(\\lambda)$-coloring in linear-memory MPC with relaxed global memory of $n \\cdot poly(\\lambda)$ that solves the problem after just one single graph partitioning step. This matches the state-of-the-art randomized round complexity by Ghaffari and Sayyadi [ICALP'19] and improves upon the deterministic $O(\\lambda^{\\epsilon})$-round algorithm by Barenboim and Khazanov [CSR'18]. "
+}

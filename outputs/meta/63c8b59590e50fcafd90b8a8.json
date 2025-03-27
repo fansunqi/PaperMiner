@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/BU-Cyber-Physical-Systems-Lab/SwaNNFS"
+  ],
+  "tasks": [
+    "Sim-to-real adaptation",
+    "On-the-fly learning",
+    "Quadrotor control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SwaNNFlight",
+    "Multiplicative value composition",
+    "Anchor critics"
+  ],
+  "results": [
+    "Near-50% reduction in power consumption",
+    "Stabilized controller adaptation",
+    "Tackled catastrophic forgetting and controller instability"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b8a8",
+  "title": "The SwaNNFlight System: On-the-Fly Sim-to-Real Adaptation via Anchored\n  Learning",
+  "abstract": "  Reinforcement Learning (RL) agents trained in simulated environments and then deployed in the real world are often sensitive to the differences in dynamics presented, commonly termed the sim-to-real gap. With the goal of minimizing this gap on resource-constrained embedded systems, we train and live-adapt agents on quadrotors built from off-the-shelf hardware. In achieving this we developed three novel contributions. (i) SwaNNFlight, an open-source firmware enabling wireless data capture and transfer of agents' observations. Fine-tuning agents with new data, and receiving and swapping onboard NN controllers -- all while in flight. We also design SwaNNFlight System (SwaNNFS) allowing new research in training and live-adapting learning agents on similar systems. (ii) Multiplicative value composition, a technique for preserving the importance of each policy optimization criterion, improving training performance and variability in learnt behavior. And (iii) anchor critics to help stabilize the fine-tuning of agents during sim-to-real transfer, online learning from real data while retaining behavior optimized in simulation. We train consistently flight-worthy control policies in simulation and deploy them on real quadrotors. We then achieve live controller adaptation via over-the-air updates of the onboard control policy from a ground station. Our results indicate that live adaptation unlocks a near-50\\% reduction in power consumption, attributed to the sim-to-real gap. Finally, we tackle the issues of catastrophic forgetting and controller instability, showing the effectiveness of our novel methods.   Project Website: https://github.com/BU-Cyber-Physical-Systems-Lab/SwaNNFS "
+}

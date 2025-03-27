@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated program repair (APR)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "INVALIDATOR: Automated Patch Correctness Assessment via Semantic and Syntactic Reasoning"
+  ],
+  "results": [
+    "Accuracy: 79%",
+    "F-measure: Improved",
+    "Detects 23% more overfitting patches than the best baseline"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5870",
+  "title": "Invalidator: Automated Patch Correctness Assessment via Semantic and\n  Syntactic Reasoning",
+  "abstract": "  Automated program repair (APR) faces the challenge of test overfitting, where generated patches pass validation tests but fail to generalize. Existing methods for patch assessment involve generating new tests or manual inspection, which can be time-consuming or biased. In this paper, we propose a novel technique, INVALIDATOR, to automatically assess the correctness of APR-generated patches via semantic and syntactic reasoning. INVALIDATOR leverages program invariants to reason about program semantics while also capturing program syntax through language semantics learned from a large code corpus using a pre-trained language model. Given a buggy program and the developer-patched program, INVALIDATOR infers likely invariants on both programs. Then, INVALIDATOR determines that an APR-generated patch overfits if: (1) it violates correct specifications or (2) maintains erroneous behaviors from the original buggy program. In case our approach fails to determine an overfitting patch based on invariants, INVALIDATOR utilizes a trained model from labeled patches to assess patch correctness based on program syntax. The benefit of INVALIDATOR is threefold. First, INVALIDATOR leverages both semantic and syntactic reasoning to enhance its discriminative capability. Second, INVALIDATOR does not require new test cases to be generated, but instead only relies on the current test suite and uses invariant inference to generalize program behaviors. Third, INVALIDATOR is fully automated. Experimental results demonstrate that INVALIDATOR outperforms existing methods in terms of Accuracy and F-measure, correctly identifying 79% of overfitting patches and detecting 23% more overfitting patches than the best baseline. "
+}

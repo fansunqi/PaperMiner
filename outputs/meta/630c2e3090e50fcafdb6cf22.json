@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monocular depth estimation (MDE)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Data-free knowledge distillation (KD)",
+    "Transformation network"
+  ],
+  "results": [
+    "Outperforms baseline KD by a good margin",
+    "Achieves slightly better performance with as few as 1/6 of training images"
+  ],
+  "paper_id": "630c2e3090e50fcafdb6cf22",
+  "title": "Data-free Dense Depth Distillation",
+  "abstract": "  We study data-free knowledge distillation (KD) for monocular depth estimation (MDE), which learns a lightweight model for real-world depth perception tasks by compressing it from a trained teacher model while lacking training data in the target domain. Owing to the essential difference between image classification and dense regression, previous methods of data-free KD are not applicable to MDE. To strengthen its applicability in real-world tasks, in this paper, we propose to apply KD with out-of-distribution simulated images. The major challenges to be resolved are i) lacking prior information about object distribution of real-world training data, and ii) domain shift between simulated and real-world images. To cope with these difficulties, we propose a tailored framework for depth distillation. The framework generates new training samples for maximally covering distributed patterns of objects in the target domain and utilizes a transformation network to efficiently adapt them to the feature statistics preserved in the teacher model. Through extensive experiments on various depth estimation models and two different datasets, we show that our method outperforms the baseline KD by a good margin and even achieves slightly better performance with as few as 1/6 of training images, demonstrating a clear superiority. "
+}

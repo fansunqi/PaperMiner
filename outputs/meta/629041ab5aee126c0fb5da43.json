@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/hellooks/CDNet"
+  ],
+  "tasks": [
+    "Perceptual color difference measurement"
+  ],
+  "datasets": [
+    "Flagship smartphone photographs",
+    "Photoshop-altered images",
+    "Smartphone filter-postprocessed images",
+    "Incorrect color profile reproductions"
+  ],
+  "methods": [
+    "End-to-end learnable CD formula based on a lightweight neural network"
+  ],
+  "results": [
+    "Outperforms 33 existing CD measures",
+    "Reasonable local CD maps without dense supervision",
+    "Good generalization to homogeneous color patch data",
+    "Empirical proper metric in the mathematical sense"
+  ],
+  "paper_id": "629041ab5aee126c0fb5da43",
+  "title": "Measuring Perceptual Color Differences of Smartphone Photographs",
+  "abstract": "  Measuring perceptual color differences (CDs) is of great importance in modern smartphone photography. Despite the long history, most CD measures have been constrained by psychophysical data of homogeneous color patches or a limited number of simplistic natural photographic images. It is thus questionable whether existing CD measures generalize in the age of smartphone photography characterized by greater content complexities and learning-based image signal processors. In this paper, we put together so far the largest image dataset for perceptual CD assessment, in which the photographic images are 1) captured by six flagship smartphones, 2) altered by Photoshop, 3) post-processed by built-in filters of the smartphones, and 4) reproduced with incorrect color profiles. We then conduct a large-scale psychophysical experiment to gather perceptual CDs of 30,000 image pairs in a carefully controlled laboratory environment. Based on the newly established dataset, we make one of the first attempts to construct an end-to-end learnable CD formula based on a lightweight neural network, as a generalization of several previous metrics. Extensive experiments demonstrate that the optimized formula outperforms 33 existing CD measures by a large margin, offers reasonable local CD maps without the use of dense supervision, generalizes well to homogeneous color patch data, and empirically behaves as a proper metric in the mathematical sense. Our dataset and code are publicly available at https://github.com/hellooks/CDNet. "
+}

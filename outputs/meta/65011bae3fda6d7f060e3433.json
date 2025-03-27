@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding spanning trees with chain constraints",
+    "Traveling Salesman Problem (TSP)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic programming approach",
+    "Negatively correlated rounding",
+    "Polyhedral approach"
+  ],
+  "results": [
+    "Quasi-polynomial time algorithm for Minimum Chain-Constrained Spanning Tree Problem",
+    "Essentially optimal guarantee",
+    "Avoiding potential losses in the objective"
+  ],
+  "paper_id": "65011bae3fda6d7f060e3433",
+  "title": "A New Dynamic Programming Approach for Spanning Trees with Chain\n  Constraints and Beyond",
+  "abstract": "  Short spanning trees subject to additional constraints are important building blocks in various approximation algorithms. Especially in the context of the Traveling Salesman Problem (TSP), new techniques for finding spanning trees with well-defined properties have been crucial in recent progress. We consider the problem of finding a spanning tree subject to constraints on the edges in cuts forming a laminar family of small width. Our main contribution is a new dynamic programming approach where the value of a table entry does not only depend on the values of previous table entries, as it is usually the case, but also on a specific representative solution saved together with each table entry. This allows for handling a broad range of constraint types.   In combination with other techniques -- including negatively correlated rounding and a polyhedral approach that, in the problems we consider, allows for avoiding potential losses in the objective through the randomized rounding -- we obtain several new results. We first present a quasi-polynomial time algorithm for the Minimum Chain-Constrained Spanning Tree Problem with an essentially optimal guarantee. More precisely, each chain constraint is violated by a factor of at most $1+\\varepsilon$, and the cost is no larger than that of an optimal solution not violating any chain constraint. The best previous procedure is a bicriteria approximation violating each chain constraint by up to a constant factor and losing another factor in the objective. Moreover, our approach can naturally handle lower bounds on the chain constraints, and it can be extended to constraints on cuts forming a laminar family of constant width.   Furthermore, we show how our approach can also handle parity constraints (or, more precisely, a proxy thereof) as used in the context of (Path) TSP and one of its generalizations, and discuss implications in this context. "
+}

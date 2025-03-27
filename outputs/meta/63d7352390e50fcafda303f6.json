@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "self-built vehicle dataset"
+  ],
+  "methods": [
+    "pre-trained model",
+    "fully connected layers",
+    "embedding vector sharing",
+    "privacy-preserving hybrid method",
+    "noise addition"
+  ],
+  "results": [
+    "improved performance of local model",
+    "effective communication between server and clients",
+    "minimal effect on local model performance with differential privacy"
+  ],
+  "paper_id": "63d7352390e50fcafda303f6",
+  "title": "FedPH: Privacy-enhanced Heterogeneous Federated Learning",
+  "abstract": "  Federated Learning is a distributed machine-learning environment that allows clients to learn collaboratively without sharing private data. This is accomplished by exchanging parameters. However, the differences in data distributions and computing resources among clients make related studies difficult. To address these heterogeneous problems, we propose a novel Federated Learning method. Our method utilizes a pre-trained model as the backbone of the local model, with fully connected layers comprising the head. The backbone extracts features for the head, and the embedding vector of classes is shared between clients to improve the head and enhance the performance of the local model. By sharing the embedding vector of classes instead of gradient-based parameters, clients can better adapt to private data, and communication between the server and clients is more effective. To protect privacy, we propose a privacy-preserving hybrid method that adds noise to the embedding vector of classes. This method has a minimal effect on the performance of the local model when differential privacy is met. We conduct a comprehensive evaluation of our approach on a self-built vehicle dataset, comparing it with other Federated Learning methods under non-independent identically distributed(Non-IID). "
+}

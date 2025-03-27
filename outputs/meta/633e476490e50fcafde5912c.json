@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Long sequence learning in Transformers"
+  ],
+  "datasets": [
+    "Long Range Arena benchmark"
+  ],
+  "methods": [
+    "Wavelet Transformation",
+    "Transformers"
+  ],
+  "results": [
+    "Improved Transformer performance",
+    "Outperforms Fourier-based methods"
+  ],
+  "paper_id": "633e476490e50fcafde5912c",
+  "title": "WISE: Wavelet Transformation for Boosting Transformers' Long Sequence\n  Learning Ability",
+  "abstract": "  Transformer and its variants are fundamental neural architectures in deep learning. Recent works show that learning attention in the Fourier space can improve the long sequence learning capability of Transformers. We argue that wavelet transform shall be a better choice because it captures both position and frequency information with a linear time complexity. Therefore, in this paper, we systematically study the synergy between wavelet transform and Transformers. Specifically, we focus on a new paradigm WISE, which replaces the attention in Transformers by (1) applying forward wavelet transform to project the input sequences to multi-resolution bases, (2) conducting non-linear transformations in the wavelet coefficient space, and (3) reconstructing the representation in input space via backward wavelet transform. Extensive experiments on the Long Range Arena benchmark demonstrate that learning attention in the wavelet space using either fixed or adaptive wavelets can consistently improve Transformer's performance and also significantly outperform Fourier-based methods. "
+}

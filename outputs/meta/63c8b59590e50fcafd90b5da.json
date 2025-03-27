@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural network error reduction"
+  ],
+  "datasets": [
+    "CIFAR10"
+  ],
+  "methods": [
+    "Data-aware customization of activation functions",
+    "seagull activation function"
+  ],
+  "results": [
+    "Order-of-magnitude reduction in error",
+    "Improvement most pronounced when applied to the first layer of exchangeable variables",
+    "Reduction in error even for high-dimensional cases"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b5da",
+  "title": "Data-aware customization of activation functions reduces neural network\n  error",
+  "abstract": "  Activation functions play critical roles in neural networks, yet current off-the-shelf neural networks pay little attention to the specific choice of activation functions used. Here we show that data-aware customization of activation functions can result in striking reductions in neural network error. We first give a simple linear algebraic explanation of the role of activation functions in neural networks; then, through connection with the Diaconis-Shahshahani Approximation Theorem, we propose a set of criteria for good activation functions. As a case study, we consider regression tasks with a partially exchangeable target function, \\emph{i.e.} $f(u,v,w)=f(v,u,w)$ for $u,v\\in \\mathbb{R}^d$ and $w\\in \\mathbb{R}^k$, and prove that for such a target function, using an even activation function in at least one of the layers guarantees that the prediction preserves partial exchangeability for best performance. Since even activation functions are seldom used in practice, we designed the ``seagull'' even activation function $\\log(1+x^2)$ according to our criteria. Empirical testing on over two dozen 9-25 dimensional examples with different local smoothness, curvature, and degree of exchangeability revealed that a simple substitution with the ``seagull'' activation function in an already-refined neural network can lead to an order-of-magnitude reduction in error. This improvement was most pronounced when the activation function substitution was applied to the layer in which the exchangeable variables are connected for the first time. While the improvement is greatest for low-dimensional data, experiments on the CIFAR10 image classification dataset showed that use of ``seagull'' can reduce error even for high-dimensional cases. These results collectively highlight the potential of customizing activation functions as a general approach to improve neural network performance. "
+}

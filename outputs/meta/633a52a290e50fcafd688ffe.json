@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Low-Resource Multilingual Neural Machine Translation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Language-Family Adapters",
+    "mBART-50"
+  ],
+  "results": [
+    "Higher translation scores on average when translating from English to 17 different low-resource languages",
+    "Effective method to translate to languages unseen during pretraining"
+  ],
+  "paper_id": "633a52a290e50fcafd688ffe",
+  "title": "Language-Family Adapters for Low-Resource Multilingual Neural Machine\n  Translation",
+  "abstract": "  Large multilingual models trained with self-supervision achieve state-of-the-art results in a wide range of natural language processing tasks. Self-supervised pretrained models are often fine-tuned on parallel data from one or multiple language pairs for machine translation. Multilingual fine-tuning improves performance on low-resource languages but requires modifying the entire model and can be prohibitively expensive. Training a new adapter on each language pair or training a single adapter on all language pairs without updating the pretrained model has been proposed as a parameter-efficient alternative. However, the former does not permit any sharing between languages, while the latter shares parameters for all languages and is susceptible to negative interference. In this paper, we propose training language-family adapters on top of mBART-50 to facilitate cross-lingual transfer. Our approach outperforms related baselines, yielding higher translation scores on average when translating from English to 17 different low-resource languages. We also show that language-family adapters provide an effective method to translate to languages unseen during pretraining. "
+}

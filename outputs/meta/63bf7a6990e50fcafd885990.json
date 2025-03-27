@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Gas flaring analysis"
+  ],
+  "datasets": [
+    "Landsat 8 imagery",
+    "Visible Infrared Imaging Radiometer Suite (VIIRS)",
+    "North Dakota Industrial Commission (NDIC) data"
+  ],
+  "methods": [
+    "Bayesian learning (MCMC)",
+    "Hierarchical models",
+    "Gaussian processes",
+    "Unsupervised learning",
+    "Negative binomial and GMMs"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885990",
+  "title": "Application of machine learning to gas flaring",
+  "abstract": "  Currently in the petroleum industry, operators often flare the produced gas instead of commodifying it. The flaring magnitudes are large in some states, which constitute problems with energy waste and CO2 emissions. In North Dakota, operators are required to estimate and report the volume flared. The questions are, how good is the quality of this reporting, and what insights can be drawn from it? Apart from the company-reported statistics, which are available from the North Dakota Industrial Commission (NDIC), flared volumes can be estimated via satellite remote sensing, serving as an unbiased benchmark. Since interpretation of the Landsat 8 imagery is hindered by artifacts due to glow, the estimated volumes based on the Visible Infrared Imaging Radiometer Suite (VIIRS) are used. Reverse geocoding is performed for comparing and contrasting the NDIC and VIIRS data at different levels, such as county and oilfield. With all the data gathered and preprocessed, Bayesian learning implemented by MCMC methods is performed to address three problems: county level model development, flaring time series analytics, and distribution estimation. First, there is heterogeneity among the different counties, in the associations between the NDIC and VIIRS volumes. In light of such, models are developed for each county by exploiting hierarchical models. Second, the flaring time series, albeit noisy, contains information regarding trends and patterns, which provide some insights into operator approaches. Gaussian processes are found to be effective in many different pattern recognition scenarios. Third, distributional insights are obtained through unsupervised learning. The negative binomial and GMMs are found to effectively describe the oilfield flare count and flared volume distributions, respectively. Finally, a nearest-neighbor-based approach for operator level monitoring and analytics is introduced. "
+}

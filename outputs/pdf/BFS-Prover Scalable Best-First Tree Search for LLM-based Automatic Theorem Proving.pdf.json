@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Theorem Proving"
+  ],
+  "datasets": [
+    "NuminaMath-CoT",
+    "Mathlib",
+    "Lean-Github",
+    "Lean-Workbook"
+  ],
+  "methods": [
+    "Best-First Search (BFS)",
+    "Direct Preference Optimization (DPO)",
+    "Supervised Fine-Tuning (SFT)",
+    "Length Normalization"
+  ],
+  "results": [
+    "Score: 71.31 on MiniF2F test set",
+    "State-of-the-art performance without critic model or MCTS"
+  ],
+  "title": "BFS-Prover Scalable Best-First Tree Search for LLM-based Automatic Theorem Proving.pdf",
+  "abstract": "Recent advancements in large language models (LLMs) have spurred growing interest in automatic theorem proving using Lean4, where effective tree search methods are crucial for navigating proof search spaces. While the existing approaches primarily rely on value functions and Monte Carlo Tree Search (MCTS), the potential of simpler methods like Best-First Search (BFS) remains underexplored. This paper investigates whether BFS can achieve competitive performance in large-scale theorem proving tasks. We present BFS-Prover, a scalable expert iteration framework, featuring three key innovations. First, we implement strategic data filtering at each expert iteration round, excluding problems solvable via beam search node expansion to focus on harder cases. Second, we improve the sample efficiency of BFS through Direct Preference Optimization (DPO) applied to state-tactic pairs automatically annotated with compiler error feedback, refining the LLM\u2019s policy to prioritize productive expansions. Third, we employ length normalization in BFS to encourage exploration of deeper proof paths. BFS-Prover achieves a score of 71.31 on the MiniF2F test set and therefore challenges the perceived necessity of complex tree search methods, demonstrating that BFS can achieve competitive performance when properly scaled. 1 Introduction Automatic theorem proving (ATP) in formal languages has recently become a critical benchmark for evalu- ating the reasoning capabilities of large language models (LLMs). By encoding mathematical problems into formal systems like Lean4, ATP enables the generation of machine-verified proofs for complex mathemat- ical propositions, ensuring logical correctness [10, 14]. Despite the remarkable success of LLMs in natural language mathematics and reasoning tasks [7,11], theorem proving in formal languages presents unique chal- lenges [24]. Unlike informal reasoning, formal systems require strict adherence to syntax and semantics, as well as the ability to generate valid steps within a highly constrained formal framework. Additionally, the action (tactic) space in ATP is vast, as each proof state can lead to numerous potential tactics, making the search process for valid proofs computationally intensive [13]. \u2217Work done during internship at Seed Foundation Code team. 1 arXiv:2502.03438v1 [cs.AI] 5 Feb 2025"
+}

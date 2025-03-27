@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Robot Task and Motion Planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hypergraph-based planning",
+    "Decomposition of planning space"
+  ],
+  "results": [
+    "Solution times up to three orders of magnitude faster",
+    "Plans for problems with up to twenty objects"
+  ],
+  "paper_id": "6344dede90e50fcafd24d221",
+  "title": "Hypergraph-based Multi-Robot Task and Motion Planning",
+  "abstract": "  We present a multi-robot task and motion planning method that, when applied to the rearrangement of objects by manipulators, results in solution times up to three orders of magnitude faster than existing methods and successfully plans for problems with up to twenty objects, more than three times as many objects as comparable methods. We achieve this improvement by decomposing the planning space to consider manipulators alone, objects, and manipulators holding objects. We represent this decomposition with a hypergraph where vertices are decomposed elements of the planning spaces and hyperarcs are transitions between elements. Existing methods use graph-based representations where vertices are full composite spaces and edges are transitions between these. Using the hypergraph reduces the representation size of the planning space-for multi-manipulator object rearrangement, the number of hypergraph vertices scales linearly with the number of either robots or objects, while the number of hyperarcs scales quadratically with the number of robots and linearly with the number of objects. In contrast, the number of vertices and edges in graph-based representations scales exponentially in the number of robots and objects. We show that similar gains can be achieved for other multi-robot task and motion planning problems. "
+}

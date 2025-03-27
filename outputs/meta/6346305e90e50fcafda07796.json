@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Initialisation of Gaussian processes"
+  ],
+  "datasets": [
+    "Synthetic and real-world data"
+  ],
+  "methods": [
+    "Generalised variogram method (GVM)"
+  ],
+  "results": [
+    "Computationally inexpensive",
+    "Close to ML hyperparameter values",
+    "Accuracy and consistency with ML",
+    "Computational complexity"
+  ],
+  "paper_id": "6346305e90e50fcafda07796",
+  "title": "Computationally-efficient initialisation of GPs: The generalised\n  variogram method",
+  "abstract": "  We present a computationally-efficient strategy to initialise the hyperparameters of a Gaussian process (GP) avoiding the computation of the likelihood function. Our strategy can be used as a pretraining stage to find initial conditions for maximum-likelihood (ML) training, or as a standalone method to compute hyperparameters values to be plugged in directly into the GP model. Motivated by the fact that training a GP via ML is equivalent (on average) to minimising the KL-divergence between the true and learnt model, we set to explore different metrics/divergences among GPs that are computationally inexpensive and provide hyperparameter values that are close to those found via ML. In practice, we identify the GP hyperparameters by projecting the empirical covariance or (Fourier) power spectrum onto a parametric family, thus proposing and studying various measures of discrepancy operating on the temporal and frequency domains. Our contribution extends the variogram method developed by the geostatistics literature and, accordingly, it is referred to as the generalised variogram method (GVM). In addition to the theoretical presentation of GVM, we provide experimental validation in terms of accuracy, consistency with ML and computational complexity for different kernels using synthetic and real-world data. "
+}

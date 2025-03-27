@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D shape representation",
+    "point cloud completion",
+    "point cloud registration"
+  ],
+  "datasets": [
+    "synthetic",
+    "real"
+  ],
+  "methods": [
+    "Spotlights: a novel sampling model"
+  ],
+  "results": [
+    "Competitive accuracy and consistency",
+    "Superior performance on point cloud registration"
+  ],
+  "paper_id": "628ef0495aee126c0f82da4b",
+  "title": "Spotlights: Probing Shapes from Spherical Viewpoints",
+  "abstract": "  Recent years have witnessed the surge of learned representations that directly build upon point clouds. Though becoming increasingly expressive, most existing representations still struggle to generate ordered point sets. Inspired by spherical multi-view scanners, we propose a novel sampling model called Spotlights to represent a 3D shape as a compact 1D array of depth values. It simulates the configuration of cameras evenly distributed on a sphere, where each virtual camera casts light rays from its principal point through sample points on a small concentric spherical cap to probe for the possible intersections with the object surrounded by the sphere. The structured point cloud is hence given implicitly as a function of depths. We provide a detailed geometric analysis of this new sampling scheme and prove its effectiveness in the context of the point cloud completion task. Experimental results on both synthetic and real data demonstrate that our method achieves competitive accuracy and consistency while having a significantly reduced computational cost. Furthermore, we show superior performance on the downstream point cloud registration task over state-of-the-art completion methods. "
+}

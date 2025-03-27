@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training general goal-reaching policies"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ChronoGEM"
+  ],
+  "results": [
+    "Uniform coverage over the manifold of achievable states",
+    "Essential to train a general controller"
+  ],
+  "paper_id": "6369c8ce90e50fcafde88721",
+  "title": "On the importance of data collection for training general goal-reaching\n  policies",
+  "abstract": "  Recent advances in ML suggest that the quantity of data available to a model is one of the primary bottlenecks to high performance. Although for language-based tasks there exist almost unlimited amounts of reasonably coherent data to train from, this is generally not the case for Reinforcement Learning, especially when dealing with a novel environment. In effect, even a relatively trivial continuous environment has an almost limitless number of states, but simply sampling random states and actions will likely not provide transitions that are interesting or useful for any potential downstream task. How should one generate massive amounts of useful data given only an MDP with no indication of downstream tasks? Are the quantity and quality of data truly transformative to the performance of a general controller? We propose to answer both of these questions. First, we introduce a principled unsupervised exploration method, ChronoGEM, which aims to achieve uniform coverage over the manifold of achievable states, which we believe is the most reasonable goal given no prior task information. Secondly, we investigate the effects of both data quantity and data quality on the training of a downstream goal-achievement policy, and show that both large quantities and high-quality of data are essential to train a general controller: a high-precision pose-achievement policy capable of attaining a large number of poses over numerous continuous control embodiments including humanoid. "
+}

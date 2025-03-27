@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimising Event-Driven Spiking Neural Network"
+  ],
+  "datasets": [
+    "CIFAR10/100",
+    "ImageNet",
+    "CIFAR10-DVS",
+    "N-Caltech101",
+    "DVS128 Gesture"
+  ],
+  "methods": [
+    "Regularisation",
+    "Cutoff",
+    "Anytime optimal inference SNNs (AOI-SNNs)"
+  ],
+  "results": [
+    "Superior to the state-of-the-art with respect to accuracy and latency"
+  ],
+  "paper_id": "64c9d4b43fda6d7f06370c07",
+  "title": "Optimising Event-Driven Spiking Neural Network with Regularisation and\n  Cutoff",
+  "abstract": "  Spiking neural networks (SNNs), a variant of artificial neural networks (ANNs) with the benefit of energy efficiency, have achieved the accuracy close to its ANN counterparts, on benchmark datasets such as CIFAR10/100 and ImageNet. However, comparing with frame-based input (e.g., images), event-based inputs from e.g., Dynamic Vision Sensor (DVS) can make a better use of SNNs thanks to the SNNs' asynchronous working mechanism. In this paper, we strengthen the marriage between SNNs and event-based inputs with a proposal to consider anytime optimal inference SNNs, or AOI-SNNs, which can terminate anytime during the inference to achieve optimal inference result. Two novel optimisation techniques are presented to achieve AOI-SNNs: a regularisation and a cutoff. The regularisation enables the training and construction of SNNs with optimised performance, and the cutoff technique optimises the inference of SNNs on event-driven inputs. We conduct an extensive set of experiments on multiple benchmark event-based datasets, including CIFAR10-DVS, N-Caltech101 and DVS128 Gesture. The experimental results demonstrate that our techniques are superior to the state-of-the-art with respect to the accuracy and latency. "
+}

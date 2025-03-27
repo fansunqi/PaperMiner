@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shared autonomy in assistive robot arms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SARI algorithm: Recognizes human tasks, replicates demonstrations, and returns control when unsure"
+  ],
+  "results": [
+    "Error of the approach is uniformly ultimately bounded",
+    "Matches existing approaches for known tasks and outperforms baselines on new tasks"
+  ],
+  "paper_id": "628afb4b5aee126c0f04e289",
+  "title": "SARI: Shared Autonomy across Repeated Interaction",
+  "abstract": "  Assistive robot arms try to help their users perform everyday tasks. One way robots can provide this assistance is shared autonomy. Within shared autonomy, both the human and robot maintain control over the robot's motion: as the robot becomes confident it understands what the human wants, it intervenes to automate the task. But how does the robot know these tasks in the first place? State-of-the-art approaches to shared autonomy often rely on prior knowledge. For instance, the robot may need to know the human's potential goals beforehand. During long-term interaction these methods will inevitable break down -- sooner or later the human will attempt to perform a task that the robot does not expect. Accordingly, in this paper we formulate an alternate approach to shared autonomy that learns assistance from scratch. Our insight is that operators repeat important tasks on a daily basis (e.g., opening the fridge, making coffee). Instead of relying on prior knowledge, we therefore take advantage of these repeated interactions to learn assistive policies. We introduce SARI, an algorithm that recognizes the human's task, replicates similar demonstrations, and returns control when unsure. We then combine learning with control to demonstrate that the error of our approach is uniformly ultimately bounded. We perform simulations to support this error bound, compare our approach to imitation learning baselines, and explore its capacity to assist for an increasing number of tasks. Finally, we conduct three user studies with industry-standard methods and shared autonomy baselines, including a pilot test with a disabled user. Our results indicate that learning shared autonomy across repeated interactions matches existing approaches for known tasks and outperforms baselines on new tasks. See videos of our user studies here: https://youtu.be/3vE4omSvLvc "
+}

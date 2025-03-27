@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Point Cloud Segmentation"
+  ],
+  "datasets": [
+    "3D Datasets"
+  ],
+  "methods": [
+    "Self-supervised pre-training",
+    "Image and Point Cloud Modality Combination"
+  ],
+  "results": [
+    "Comparable performance to multi-scan, point cloud-only methods with single scans"
+  ],
+  "paper_id": "63c8b59590e50fcafd90ba98",
+  "title": "Contrastive Learning for Self-Supervised Pre-Training of Point Cloud\n  Segmentation Networks With Image Data",
+  "abstract": "  Reducing the quantity of annotations required for supervised training is vital when labels are scarce and costly. This reduction is particularly important for semantic segmentation tasks involving 3D datasets, which are often significantly smaller and more challenging to annotate than their image-based counterparts. Self-supervised pre-training on unlabelled data is one way to reduce the amount of manual annotations needed. Previous work has focused on pre-training with point clouds exclusively. While useful, this approach often requires two or more registered views. In the present work, we combine image and point cloud modalities by first learning self-supervised image features and then using these features to train a 3D model. By incorporating image data, which is often included in many 3D datasets, our pre-training method only requires a single scan of a scene and can be applied to cases where localization information is unavailable. We demonstrate that our pre-training approach, despite using single scans, achieves comparable performance to other multi-scan, point cloud-only methods. "
+}

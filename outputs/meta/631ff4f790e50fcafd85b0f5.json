@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/flysoaryun/LF-SLAM"
+  ],
+  "tasks": [
+    "Simultaneous Localization And Mapping (SLAM)",
+    "Large Field-of-View Cameras",
+    "Loop Closure"
+  ],
+  "datasets": [
+    "PALVIO"
+  ],
+  "methods": [
+    "LF-SLAM",
+    "Three-dimensional vector representation",
+    "Outlier rejection method based on unit length representation"
+  ],
+  "results": [
+    "Outperforms state-of-the-art SLAM methods"
+  ],
+  "paper_id": "631ff4f790e50fcafd85b0f5",
+  "title": "LF-SLAM: A SLAM Framework for Large Field-of-View Cameras with Negative\n  Imaging Plane on Mobile Agents",
+  "abstract": "  Simultaneous Localization And Mapping (SLAM) has become a crucial aspect in the fields of autonomous driving and robotics. One crucial component of visual SLAM is the Field-of-View (FoV) of the camera, as a larger FoV allows for a wider range of surrounding elements and features to be perceived. However, when the FoV of the camera reaches the negative half plane, traditional methods for representing image feature points using [u,v,1]^T become ineffective. While the panoramic FoV is advantageous for loop closure, its benefits are not easily realized under large-attitude-angle differences where loop-closure frames cannot be easily matched by existing methods. As loop closure on wide-FoV panoramic data further comes with a large number of outliers, traditional outlier rejection methods are not directly applicable. To address these issues, we propose LF-SLAM, a SLAM framework for cameras with extremely large FoV with loop closure. A three-dimensional vector with unit length is introduced to effectively represent feature points even on the negative half plane. The attitude information of the SLAM system is leveraged to guide the feature point detection of the loop closure. Additionally, a new outlier rejection method based on the unit length representation is integrated into the loop closure module. We collect the PALVIO dataset using a Panoramic Annular Lens (PAL) system with an entire FoV of 360\\deg x(40\\deg-120\\deg) and IMU sensor to address the lack of panoramic SLAM datasets. Experiments on the established PALVIO and public datasets show that the proposed LF-SLAM outperforms state-of-the-art SLAM methods. Our code will be open-sourced at https://github.com/flysoaryun/LF-SLAM. "
+}

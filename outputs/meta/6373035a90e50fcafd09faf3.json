@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision Models Representation",
+    "Image Classification",
+    "Input Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Learning",
+    "Convolutional Image Classification Models",
+    "Autoencoding"
+  ],
+  "results": [
+    "Deeper layers have less accurate representations before training",
+    "Non-unique representation due to non-invertibility of transformations",
+    "Early layers improve representation clarity for classification",
+    "Deep layers transform input to match training data representations"
+  ],
+  "paper_id": "6373035a90e50fcafd09faf3",
+  "title": "Depth and Representation in Vision Models",
+  "abstract": "  Deep learning models develop successive representations of their input in sequential layers, the last of which maps the final representation to the output. Here we investigate the informational content of these representations by observing the ability of convolutional image classification models to autoencode the model's input using embeddings existing in various layers. We find that the deeper the layer, the less accurate that layer's representation of the input is before training. Inaccurate representation results from non-uniqueness in which various distinct inputs give approximately the same embedding. Non-unique representation is a consequence of both exact and approximate non-invertibility of transformations present in the forward pass. Learning to classify natural images leads to an increase in representation clarity for early but not late layers, which instead form abstract images. Rather than simply selecting for features present in the input necessary for classification, deep layer representations are found to transform the input so that it matches representations of the training data such that arbitrary inputs are mapped to manifolds learned during training. This work provides support for the theory that the tasks of image recognition and input generation are inseparable even for models trained exclusively to classify. "
+}

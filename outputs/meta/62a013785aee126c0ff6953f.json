@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/gsimchoni/lmmnn"
+  ],
+  "tasks": [
+    "Supervised learning",
+    "Handling correlated data in DNNs"
+  ],
+  "datasets": [
+    "Simulated datasets",
+    "Real datasets"
+  ],
+  "methods": [
+    "Mixed models framework",
+    "Gaussian negative log-likelihood (NLL) as a loss function",
+    "Stochastic gradient descent (SGD)"
+  ],
+  "results": [
+    "Improved performance over natural competitors",
+    "Focus on regression setting and tabular datasets",
+    "Some results for classification"
+  ],
+  "paper_id": "62a013785aee126c0ff6953f",
+  "title": "Integrating Random Effects in Deep Neural Networks",
+  "abstract": "  Modern approaches to supervised learning like deep neural networks (DNNs) typically implicitly assume that observed responses are statistically independent. In contrast, correlated data are prevalent in real-life large-scale applications, with typical sources of correlation including spatial, temporal and clustering structures. These correlations are either ignored by DNNs, or ad-hoc solutions are developed for specific use cases. We propose to use the mixed models framework to handle correlated data in DNNs. By treating the effects underlying the correlation structure as random effects, mixed models are able to avoid overfitted parameter estimates and ultimately yield better predictive performance. The key to combining mixed models and DNNs is using the Gaussian negative log-likelihood (NLL) as a natural loss function that is minimized with DNN machinery including stochastic gradient descent (SGD). Since NLL does not decompose like standard DNN loss functions, the use of SGD with NLL presents some theoretical and implementation challenges, which we address. Our approach which we call LMMNN is demonstrated to improve performance over natural competitors in various correlation scenarios on diverse simulated and real datasets. Our focus is on a regression setting and tabular datasets, but we also show some results for classification. Our code is available at https://github.com/gsimchoni/lmmnn. "
+}

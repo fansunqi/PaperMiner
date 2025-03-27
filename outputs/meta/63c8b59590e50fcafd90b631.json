@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Inference in Residential ISP Networks",
+    "Quantifying and Managing Impacts of Concept Drifts on IoT Traffic"
+  ],
+  "datasets": [
+    "Network traffic of 24 types of consumer IoT devices from 12 real homes"
+  ],
+  "methods": [
+    "Global inference",
+    "Contextualized inference",
+    "Dynamic model application for managing concept drifts"
+  ],
+  "results": [
+    "Highlighting the challenge of temporal and spatial concept drifts",
+    "Better performance in 20% of scenarios"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b631",
+  "title": "Quantifying and Managing Impacts of Concept Drifts on IoT Traffic\n  Inference in Residential ISP Networks",
+  "abstract": "  Millions of vulnerable consumer IoT devices in home networks are the enabler for cyber crimes putting user privacy and Internet security at risk. Internet service providers (ISPs) are best poised to play key roles in mitigating risks by automatically inferring active IoT devices per household and notifying users of vulnerable ones. Developing a scalable inference method that can perform robustly across thousands of home networks is a non-trivial task. This paper focuses on the challenges of developing and applying data-driven inference models when labeled data of device behaviors is limited and the distribution of data changes (concept drift) across time and space domains. Our contributions are three-fold: (1) We collect and analyze network traffic of 24 types of consumer IoT devices from 12 real homes over six weeks to highlight the challenge of temporal and spatial concept drifts in network behavior of IoT devices; (2) We analyze the performance of two inference strategies, namely \"global inference\" (a model trained on a combined set of all labeled data from training homes) and \"contextualized inference\" (several models each trained on the labeled data from a training home) in the presence of concept drifts; and (3) To manage concept drifts, we develop a method that dynamically applies the ``closest'' model (from a set) to network traffic of unseen homes during the testing phase, yielding better performance in 20% of scenarios. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-supervised medical image segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Anatomical-aware Contrastive Distillation",
+    "Iterative contrastive distillation algorithm",
+    "Anatomical contrast"
+  ],
+  "results": [
+    "ACTION significantly outperforms the current state-of-the-art semi-supervised methods"
+  ],
+  "paper_id": "629ec1f85aee126c0fb6fc9f",
+  "title": "Bootstrapping Semi-supervised Medical Image Segmentation with\n  Anatomical-aware Contrastive Distillation",
+  "abstract": "  Contrastive learning has shown great promise over annotation scarcity problems in the context of medical image segmentation. Existing approaches typically assume a balanced class distribution for both labeled and unlabeled medical images. However, medical image data in reality is commonly imbalanced (i.e., multi-class label imbalance), which naturally yields blurry contours and usually incorrectly labels rare objects. Moreover, it remains unclear whether all negative samples are equally negative. In this work, we present ACTION, an Anatomical-aware ConTrastive dIstillatiON framework, for semi-supervised medical image segmentation. Specifically, we first develop an iterative contrastive distillation algorithm by softly labeling the negatives rather than binary supervision between positive and negative pairs. We also capture more semantically similar features from the randomly chosen negative set compared to the positives to enforce the diversity of the sampled data. Second, we raise a more important question: Can we really handle imbalanced samples to yield better performance? Hence, the key innovation in ACTION is to learn global semantic relationship across the entire dataset and local anatomical features among the neighbouring pixels with minimal additional memory footprint. During the training, we introduce anatomical contrast by actively sampling a sparse set of hard negative pixels, which can generate smoother segmentation boundaries and more accurate predictions. Extensive experiments across two benchmark datasets and different unlabeled settings show that ACTION significantly outperforms the current state-of-the-art semi-supervised methods. "
+}

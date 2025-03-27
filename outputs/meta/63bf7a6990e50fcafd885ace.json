@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving server processor performance"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LLC eviction to idle L2 caches",
+    "Fair resource allocation based on application importance and system load"
+  ],
+  "results": [
+    "System performance improvement by up to 2X",
+    "P99 latency improvement for user-facing tasks by up to 32%",
+    "IPC improvement for background jobs by up to 50%"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885ace",
+  "title": "Harvesting L2 Caches in Server Processors",
+  "abstract": "  We make three observations in modern processors: (1) LLC capacity is getting larger (up to 1GB); (2) core counts are increasing (up to 128 cores), accumulating a more significant amount of private L2 cache capacity on the chip; and (3) overall processor utilization in the cloud remains very low despite many efforts, leaving many large private caches unused. To enable better use of these beefy processors, we propose to open up a logical path for LLC evictions to unused private caches. In other words, instead of writing LLC evictions back to slow and busy main memory, we send some of them that are still alive up to idle L2 caches to avoid unnecessary long and costly main memory. Our scheme takes the importance of applications (user-facing vs. background), and system load into account to provide each application with a fair share of idle resources. Our results show that we can improve system performance by up to 2X (geomean of 10%) for single-application runs. Also, for mixes of user-facing and background jobs, our scheme improves the P99 latency of user-facing tasks by up to 32% (geomean of 15%), and the IPC of background jobs by up to 50% (geomean of 10%). "
+}

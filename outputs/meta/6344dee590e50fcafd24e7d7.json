@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multilingual Language Model Robustness"
+  ],
+  "datasets": [
+    "Noisy datasets covering five languages and four NLP tasks"
+  ],
+  "methods": [
+    "Robust Contrastive Pretraining (RCP)"
+  ],
+  "results": [
+    "+3.2% improvement on sentence-level tasks",
+    "+10 F1-score improvement on sequence-labeling tasks"
+  ],
+  "paper_id": "6344dee590e50fcafd24e7d7",
+  "title": "Robustification of Multilingual Language Models to Real-world Noise in\n  Crosslingual Zero-shot Settings with Robust Contrastive Pretraining",
+  "abstract": "  Advances in neural modeling have achieved state-of-the-art (SOTA) results on public natural language processing (NLP) benchmarks, at times surpassing human performance. However, there is a gap between public benchmarks and real-world applications where noise, such as typographical or grammatical mistakes, is abundant and can result in degraded performance. Unfortunately, works which evaluate the robustness of neural models on noisy data and propose improvements, are limited to the English language. Upon analyzing noise in different languages, we observe that noise types vary greatly across languages. Thus, existing investigations do not generalize trivially to multilingual settings. To benchmark the performance of pretrained multilingual language models, we construct noisy datasets covering five languages and four NLP tasks and observe a clear gap in the performance between clean and noisy data in the zero-shot cross-lingual setting. After investigating several ways to boost the robustness of multilingual models in this setting, we propose Robust Contrastive Pretraining (RCP). RCP combines data augmentation with a contrastive loss term at the pretraining stage and achieves large improvements on noisy (and original test data) across two sentence-level (+3.2%) and two sequence-labeling (+10 F1-score) multilingual classification tasks. "
+}

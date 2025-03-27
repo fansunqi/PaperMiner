@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Imbalanced Data Classification"
+  ],
+  "datasets": [
+    "Imbalanced CIFAR10",
+    "Imbalanced CIFAR100",
+    "ImageNet-LT",
+    "iNaturalist 2018"
+  ],
+  "methods": [
+    "Phased Progressive Learning",
+    "Coupling-regulation-imbalance loss function (combines correction term, Focal loss, and LDAM loss)"
+  ],
+  "results": [
+    "Satisfactory results on several benchmark datasets"
+  ],
+  "paper_id": "628d9e805aee126c0f9798b1",
+  "title": "Phased Progressive Learning with Coupling-Regulation-Imbalance Loss for\n  Imbalanced Data Classification",
+  "abstract": "  Deep convolutional neural networks often perform poorly when faced with datasets that suffer from quantity imbalances and classification difficulties. Despite advances in the field, existing two-stage approaches still exhibit dataset bias or domain shift. To counter this, a phased progressive learning schedule has been proposed that gradually shifts the emphasis from representation learning to training the upper classifier. This approach is particularly beneficial for datasets with larger imbalances or fewer samples. Another new method a coupling-regulation-imbalance loss function is proposed, which combines three parts: a correction term, Focal loss, and LDAM loss. This loss is effective in addressing quantity imbalances and outliers, while regulating the focus of attention on samples with varying classification difficulties. These approaches have yielded satisfactory results on several benchmark datasets, including Imbalanced CIFAR10, Imbalanced CIFAR100, ImageNet-LT, and iNaturalist 2018, and can be easily generalized to other imbalanced classification models. "
+}

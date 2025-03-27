@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian Optimisation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Particle Gradient Flows",
+    "multipoint expected improvement",
+    "convex acquisition function"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "631ff4f590e50fcafd85aa02",
+  "title": "Batch Bayesian Optimization via Particle Gradient Flows",
+  "abstract": "  Bayesian Optimisation (BO) methods seek to find global optima of objective functions which are only available as a black-box or are expensive to evaluate. Such methods construct a surrogate model for the objective function, quantifying the uncertainty in that surrogate through Bayesian inference. Objective evaluations are sequentially determined by maximising an acquisition function at each step. However, this ancilliary optimisation problem can be highly non-trivial to solve, due to the non-convexity of the acquisition function, particularly in the case of batch Bayesian optimisation, where multiple points are selected in every step. In this work we reformulate batch BO as an optimisation problem over the space of probability measures. We construct a new acquisition function based on multipoint expected improvement which is convex over the space of probability measures. Practical schemes for solving this `inner' optimisation problem arise naturally as gradient flows of this objective function. We demonstrate the efficacy of this new method on different benchmark functions and compare with state-of-the-art batch BO methods. "
+}

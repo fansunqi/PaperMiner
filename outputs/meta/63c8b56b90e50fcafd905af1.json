@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Understanding spectral bias of coordinate based MLPs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Tangent Kernel (NTK)",
+    "Fourier analysis",
+    "ReLU MLP training dynamics",
+    "Spatial information analysis"
+  ],
+  "results": [
+    "Improved understanding of spectral bias",
+    "Analysis of positional encoding's effect on overcoming spectral bias"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905af1",
+  "title": "Understanding the Spectral Bias of Coordinate Based MLPs Via Training\n  Dynamics",
+  "abstract": "  Spectral bias is an important observation of neural network training, stating that the network will learn a low frequency representation of the target function before converging to higher frequency components. This property is interesting due to its link to good generalization in over-parameterized networks. However, in applications to scene rendering, where multi-layer perceptrons (MLPs) with ReLU activations utilize dense, low dimensional coordinate based inputs, a severe spectral bias occurs that obstructs convergence to high freqeuncy components entirely. In order to overcome this limitation, one can encode the inputs using high frequency sinusoids. Previous works attempted to explain both spectral bias and its severity in the coordinate based regime using Neural Tangent Kernel (NTK) and Fourier analysis. However, such methods come with various limitations, since NTK does not capture real network dynamics, and Fourier analysis only offers a global perspective on the frequency components of the network. In this paper, we provide a novel approach towards understanding spectral bias by directly studying ReLU MLP training dynamics, in order to gain further insight on the properties that induce this behavior in the real network. Specifically, we focus on the connection between the computations of ReLU networks (activation regions), and the convergence of gradient descent. We study these dynamics in relation to the spatial information of the signal to provide a clearer understanding as to how they influence spectral bias, which has yet to be demonstrated. Additionally, we use this formulation to further study the severity of spectral bias in the coordinate based setting, and why positional encoding overcomes this. "
+}

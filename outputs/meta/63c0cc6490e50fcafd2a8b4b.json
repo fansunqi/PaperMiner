@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Consensus in the Unknown-Participation Message-Adversary Model"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Algorand's mechanism",
+    "Sleepy Model of Pass and Shi",
+    "Authenticated Byzantine Agreement Model"
+  ],
+  "results": [
+    "Consensus is solvable deterministically if the union of all sets $F_r$ is bounded",
+    "Consensus is solvable probabilistically even if both $G_r$ and $F_r$ change without bounds"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8b4b",
+  "title": "Consensus in the Unknown-Participation Message-Adversary Model",
+  "abstract": "  We propose a new model that resembles Algorand's mechanism that selects a committee at each synchronous round to govern the stateless progression of its consensus algorithm. We consider an infinite set of authenticated processors in a synchronous round-by-round model. At each round $r$ an adversary chooses an unknown, finite committee $C_r$. Unlike Algorand, no information is known about the size of the committee. The committee can send messages to the whole universe, while processors outside the committee at the round do not send messages at all. Moreover, the adversary partitions the committee into a set of good processors $G_r$ and a set of processors $F_r$ that it impersonates during round $r$. If we fix $F_r$ to be static, i.e. the same in all rounds, we obtain an idealized version of the Sleepy Model of Pass and Shi. If both $G_r$ and $F_r$ are static and are additionally known to the processors, we obtain the traditional, synchronous Authenticated Byzantine Agreement Model.   Assuming that a majority of the committee is good in each round, we show that consensus is solvable deterministically if the union of all sets $F_r$ is bounded. We also show that consensus is solvable probabilistically even if both $G_r$ and $F_r$ change without bounds. Those are surprising and mathematically pleasing results because, contrary to the traditional, eventually-synchronous model, there is no resiliency gap between the static and non-static cases (in the traditional model, resiliency degrades from half under synchrony to one third under eventual synchrony). Moreover, these results are new even for the special case of the Sleepy Model. "
+}

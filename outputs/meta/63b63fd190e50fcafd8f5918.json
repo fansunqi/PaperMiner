@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Extending Kubernetes Networking",
+    "Supporting large-scale and distributed multi-datacenter scenarios"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SRv6 overlay networking",
+    "Calico CNI plugin",
+    "Calico-VPP",
+    "BGP routing protocol",
+    "Kubernetes control plane"
+  ],
+  "results": [
+    "Comparable performance to existing overlay solutions",
+    "Richer set of features"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5918",
+  "title": "Extending Kubernetes Networking to make use of Segment Routing over IPv6\n  (SRv6)",
+  "abstract": "  Kubernetes is the leading platform for orchestrating containerized applications. In this paper, we extend Kubernetes networking to make use of SRv6, a feature-rich overlay networking mechanism. Integration with SRv6 can be very beneficial when Kubernetes is used in large-scale and distributed multi-datacenter scenarios. We have focused on the Calico CNI plugin, one of the most used Kubernetes networking plugins. In particular, we consider Calico-VPP, a version of the Calico plugin based on the VPP (Vector Packet Processing) data plane, which provides support for SRv6 operations with very high performance. The proposed SRv6 overlay networking solution for Kubernetes offers several advantages compared to a traditional overlay (e.g. IP in IP), in particular the possibility to use Traffic Engineering for the overlay tunnels. In the paper, we provide the architecture and the detailed design of the SRv6 based overlay and describe our open source implementation. We consider the research and technological question on how to extend Kubernetes networking to support large-scale and distributed multi-datacenter scenarios, which is an important goal for Cloud and Network providers. In this respect, we compare two different solutions for the control plane architecture of the SRv6 capable Kubernetes networking plugin, one based on the BGP routing protocol and another one based on extending the Kubernetes control plane. Finally, we report a performance evaluation of the data plane of the proposed SRv6 overlay networking, showing that it has comparable performance to existing overlay solutions (e.g. IP in IP), while offering a richer set of features. "
+}

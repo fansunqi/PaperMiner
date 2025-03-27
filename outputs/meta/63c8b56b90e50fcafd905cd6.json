@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fine-tuning"
+  ],
+  "datasets": [
+    "Tf_flower"
+  ],
+  "methods": [
+    "Block-wise optimization mechanism",
+    "Layer-wise adaptation",
+    "Joint adaptation of top-ranked layers",
+    "Block-based segmentation",
+    "Fixed-length sliding window for layer grouping"
+  ],
+  "results": [
+    "Better performance than baseline methods and layer-wise method"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905cd6",
+  "title": "Improving Reliability of Fine-tuning with Block-wise Optimisation",
+  "abstract": "  Finetuning can be used to tackle domain-specific tasks by transferring knowledge. Previous studies on finetuning focused on adapting only the weights of a task-specific classifier or re-optimizing all layers of the pre-trained model using the new task data. The first type of methods cannot mitigate the mismatch between a pre-trained model and the new task data, and the second type of methods easily cause over-fitting when processing tasks with limited data. To explore the effectiveness of fine-tuning, we propose a novel block-wise optimization mechanism, which adapts the weights of a group of layers of a pre-trained model. In our work, the layer selection can be done in four different ways. The first is layer-wise adaptation, which aims to search for the most salient single layer according to the classification performance. The second way is based on the first one, jointly adapting a small number of top-ranked layers instead of using an individual layer. The third is block based segmentation, where the layers of a deep network is segmented into blocks by non-weighting layers, such as the MaxPooling layer and Activation layer. The last one is to use a fixed-length sliding window to group layers block by block. To identify which group of layers is the most suitable for finetuning, the search starts from the target end and is conducted by freezing other layers excluding the selected layers and the classification layers. The most salient group of layers is determined in terms of classification performance. In our experiments, the proposed approaches are tested on an often-used dataset, Tf_flower, by finetuning five typical pre-trained models, VGG16, MobileNet-v1, MobileNet-v2, MobileNet-v3, and ResNet50v2, respectively. The obtained results show that the use of our proposed block-wise approaches can achieve better performances than the two baseline methods and the layer-wise method. "
+}

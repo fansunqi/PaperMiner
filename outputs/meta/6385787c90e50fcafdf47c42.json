@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Transformers"
+  ],
+  "datasets": [
+    "Something-Something v2",
+    "MOVi-A"
+  ],
+  "methods": [
+    "PatchBlender"
+  ],
+  "results": [
+    "Improves baseline performance",
+    "Lightweight compute-wise (0.005% the GFLOPs of a ViT-B)"
+  ],
+  "paper_id": "6385787c90e50fcafdf47c42",
+  "title": "PatchBlender: A Motion Prior for Video Transformers",
+  "abstract": "  Transformers have become one of the dominant architectures in the field of computer vision. However, there are yet several challenges when applying such architectures to video data. Most notably, these models struggle to model the temporal patterns of video data effectively. Directly targeting this issue, we introduce PatchBlender, a learnable blending function that operates over patch embeddings across the temporal dimension of the latent space. We show that our method is successful at enabling vision transformers to encode the temporal component of video data. On Something-Something v2 and MOVi-A, we show that our method improves the baseline performance of video Transformers. PatchBlender has the advantage of being compatible with almost any Transformer architecture and since it is learnable, the model can adaptively turn on or off the prior. It is also extremely lightweight compute-wise, 0.005% the GFLOPs of a ViT-B. "
+}

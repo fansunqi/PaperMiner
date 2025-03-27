@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speech separation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pretrained Diffusion Model",
+    "Vocoder",
+    "Linear combination in frequency domain"
+  ],
+  "results": [
+    "State-of-the-art results on 2, 3, 5, 10, and 20 speakers",
+    "Surpasses previously considered upper performance bound for two speakers"
+  ],
+  "paper_id": "63d340ef90e50fcafd9114b5",
+  "title": "Separate And Diffuse: Using a Pretrained Diffusion Model for Improving\n  Source Separation",
+  "abstract": "  The problem of speech separation, also known as the cocktail party problem, refers to the task of isolating a single speech signal from a mixture of speech signals. Previous work on source separation derived an upper bound for the source separation task in the domain of human speech. This bound is derived for deterministic models. Recent advancements in generative models challenge this bound. We show how the upper bound can be generalized to the case of random generative models. Applying a diffusion model Vocoder that was pretrained to model single-speaker voices on the output of a deterministic separation model leads to state-of-the-art separation results. It is shown that this requires one to combine the output of the separation model with that of the diffusion model. In our method, a linear combination is performed, in the frequency domain, using weights that are inferred by a learned model. We show state-of-the-art results on 2, 3, 5, 10, and 20 speakers on multiple benchmarks. In particular, for two speakers, our method is able to surpass what was previously considered the upper performance bound. "
+}

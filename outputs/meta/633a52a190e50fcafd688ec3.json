@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Game Level Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Learning at Multiple Sizes",
+    "Recurrent Auto-regressive Generative Flow Networks (GFlowNets)",
+    "Diversity Sampling"
+  ],
+  "results": [
+    "Better controllability and competitive diversity",
+    "9x faster training and level generation compared to controllable reinforcement learning level generators for Sokoban"
+  ],
+  "paper_id": "633a52a190e50fcafd688ec3",
+  "title": "Start Small: Training Controllable Game Level Generators without\n  Training Data by Learning at Multiple Sizes",
+  "abstract": "  A level generator is a tool that generates game levels from noise. Training a generator without a dataset suffers from feedback sparsity, since it is unlikely to generate a playable level via random exploration. A common solution is shaped rewards, which guides the generator to achieve subgoals towards level playability, but they consume effort to design and require game-specific domain knowledge. This paper proposes a novel approach to train generators without datasets or shaped rewards by learning at multiple level sizes starting from small sizes and up to the desired sizes. The denser feedback at small sizes negates the need for shaped rewards. Additionally, the generators learn to build levels at various sizes, including sizes they were not trained for. We apply our approach to train recurrent auto-regressive generative flow networks (GFlowNets) for controllable level generation. We also adapt diversity sampling to be compatible with GFlowNets. The results show that our generators create diverse playable levels at various sizes for Sokoban, Zelda, and Danger Dave. When compared with controllable reinforcement learning level generators for Sokoban, the results show that our generators achieve better controllability and competitive diversity, while being 9x faster at training and level generation. "
+}

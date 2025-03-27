@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/mindslab-ai/phaseaug"
+  ],
+  "tasks": [
+    "Speech Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PhaseAug",
+    "Differentiable Augmentation",
+    "One-to-Many Mapping Simulation"
+  ],
+  "results": [
+    "Outperforms baselines without architecture modification"
+  ],
+  "paper_id": "636c6beb90e50fcafd2d3c7e",
+  "title": "PhaseAug: A Differentiable Augmentation for Speech Synthesis to Simulate\n  One-to-Many Mapping",
+  "abstract": "  Previous generative adversarial network (GAN)-based neural vocoders are trained to reconstruct the exact ground truth waveform from the paired mel-spectrogram and do not consider the one-to-many relationship of speech synthesis. This conventional training causes overfitting for both the discriminators and the generator, leading to the periodicity artifacts in the generated audio signal. In this work, we present PhaseAug, the first differentiable augmentation for speech synthesis that rotates the phase of each frequency bin to simulate one-to-many mapping. With our proposed method, we outperform baselines without any architecture modification. Code and audio samples will be available at https://github.com/mindslab-ai/phaseaug. "
+}

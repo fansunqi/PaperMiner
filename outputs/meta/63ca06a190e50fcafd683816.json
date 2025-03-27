@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Few-shot semantic segmentation"
+  ],
+  "datasets": [
+    "PASCAL-$5^i$",
+    "COCO-$20^i$"
+  ],
+  "methods": [
+    "Feature-Enhanced Context-Aware Network (FECANet)",
+    "feature enhancement module",
+    "correlation reconstruction module"
+  ],
+  "results": [
+    "remarkable improvement compared to previous state-of-the-arts"
+  ],
+  "paper_id": "63ca06a190e50fcafd683816",
+  "title": "FECANet: Boosting Few-Shot Semantic Segmentation with Feature-Enhanced\n  Context-Aware Network",
+  "abstract": "  Few-shot semantic segmentation is the task of learning to locate each pixel of the novel class in the query image with only a few annotated support images. The current correlation-based methods construct pair-wise feature correlations to establish the many-to-many matching because the typical prototype-based approaches cannot learn fine-grained correspondence relations. However, the existing methods still suffer from the noise contained in naive correlations and the lack of context semantic information in correlations. To alleviate these problems mentioned above, we propose a Feature-Enhanced Context-Aware Network (FECANet). Specifically, a feature enhancement module is proposed to suppress the matching noise caused by inter-class local similarity and enhance the intra-class relevance in the naive correlation. In addition, we propose a novel correlation reconstruction module that encodes extra correspondence relations between foreground and background and multi-scale context semantic features, significantly boosting the encoder to capture a reliable matching pattern. Experiments on PASCAL-$5^i$ and COCO-$20^i$ datasets demonstrate that our proposed FECANet leads to remarkable improvement compared to previous state-of-the-arts, demonstrating its effectiveness. "
+}

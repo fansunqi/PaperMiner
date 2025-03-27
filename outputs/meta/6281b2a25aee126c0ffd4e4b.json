@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robotic tasks",
+    "Perceptual understanding of scenes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Object-aware representation learning",
+    "Self-supervised learning",
+    "Policy learning",
+    "Object location prediction"
+  ],
+  "results": [
+    "20 percent increase in performance in low data regimes (1000 trajectories)",
+    "Outperforms state-of-the-art object agnostic techniques",
+    "Outperforms baselines for object localization in multi-object scenes"
+  ],
+  "paper_id": "6281b2a25aee126c0ffd4e4b",
+  "title": "Visuomotor Control in Multi-Object Scenes Using Object-Aware\n  Representations",
+  "abstract": "  Perceptual understanding of the scene and the relationship between its different components is important for successful completion of robotic tasks. Representation learning has been shown to be a powerful technique for this, but most of the current methodologies learn task specific representations that do not necessarily transfer well to other tasks. Furthermore, representations learned by supervised methods require large labeled datasets for each task that are expensive to collect in the real world. Using self-supervised learning to obtain representations from unlabeled data can mitigate this problem. However, current self-supervised representation learning methods are mostly object agnostic, and we demonstrate that the resulting representations are insufficient for general purpose robotics tasks as they fail to capture the complexity of scenes with many components. In this paper, we explore the effectiveness of using object-aware representation learning techniques for robotic tasks. Our self-supervised representations are learned by observing the agent freely interacting with different parts of the environment and is queried in two different settings: (i) policy learning and (ii) object location prediction. We show that our model learns control policies in a sample-efficient manner and outperforms state-of-the-art object agnostic techniques as well as methods trained on raw RGB images. Our results show a 20 percent increase in performance in low data regimes (1000 trajectories) in policy training using implicit behavioral cloning (IBC). Furthermore, our method outperforms the baselines for the task of object localization in multi-object scenes. "
+}

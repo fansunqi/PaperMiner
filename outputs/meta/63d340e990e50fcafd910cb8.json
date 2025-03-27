@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "inference of social graphs",
+    "explaining online user-user interactions"
+  ],
+  "datasets": [
+    "synthetic Twitter dataset",
+    "real-world Twitter dataset"
+  ],
+  "methods": [
+    "CEM-*",
+    "Expectation-Maximization algorithm",
+    "linear optimization updates",
+    "Erdos Renyi (ER) prior",
+    "Stochastic Block Model (SBM) prior"
+  ],
+  "results": [
+    "CEM-* can generate a posterior distribution of graphs that explains the whole trace",
+    "CEM-* outperforms baseline and state-of-the-art methods in terms of feasibility, run-time, and precision",
+    "use of the SBM prior infers and clusters users simultaneously during optimization",
+    "proposed heuristic to adapt the inference to lower feasibility requirements"
+  ],
+  "paper_id": "63d340e990e50fcafd910cb8",
+  "title": "Constrained Expectation-Maximisation for inference of social graphs\n  explaining online user-user interactions",
+  "abstract": "  Current network inference algorithms fail to generate graphs with edges that can explain whole sequences of node interactions in a given dataset or trace. To quantify how well an inferred graph can explain a trace, we introduce feasibility, a novel quality criterion, and suggest that it is linked to the result's accuracy. In addition, we propose CEM-*, a network inference method that guarantees 100% feasibility given online social media traces, which is a non-trivial extension of the Expectation-Maximization algorithm developed by Newman (2018). We propose a set of linear optimization updates that incorporate a set of auxiliary variables and a set of feasibility constraints; the latter takes into consideration all the hidden paths that are possible between users based on their timestamps of interaction and guide the inference toward feasibility. We provide two CEM-* variations, that assume either an Erdos Renyi (ER) or a Stochastic Block Model (SBM) prior for the underlying graph's unknown distribution. Extensive experiments on one synthetic and one real-world Twitter dataset show that for both priors CEM-* can generate a posterior distribution of graphs that explains the whole trace while being closer to the ground truth. As an additional benefit, the use of the SBM prior infers and clusters users simultaneously during optimization. CEM-* outperforms baseline and state-of-the-art methods in terms of feasibility, run-time, and precision of the inferred graph and communities. Finally, we propose a heuristic to adapt the inference to lower feasibility requirements and show how it can affect the precision of the result. "
+}

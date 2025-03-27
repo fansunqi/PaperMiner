@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving QUBO Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Diverse Adaptive Bulk Search (DABS)",
+    "Genetic algorithm-based search algorithm"
+  ],
+  "results": [
+    "Optimal or potentially optimal solutions for three types of QUBO problems"
+  ],
+  "paper_id": "62c816df5aee126c0f57e1a2",
+  "title": "Diverse Adaptive Bulk Search: a Framework for Solving QUBO Problems on\n  Multiple GPUs",
+  "abstract": "  Quadratic Unconstrained Binary Optimization (QUBO) is a combinatorial optimization to find an optimal binary solution vector that minimizes the energy value defined by a quadratic formula of binary variables in the vector. As many NP-hard problems can be reduced to QUBO problems, considerable research has gone into developing QUBO solvers running on various computing platforms such as quantum devices, ASICs, FPGAs, GPUs, and optical fibers. This paper presents a framework called Diverse Adaptive Bulk Search (DABS), which has the potential to find optimal solutions of many types of QUBO problems. Our DABS solver employs a genetic algorithm-based search algorithm featuring three diverse strategies: multiple search algorithms, multiple genetic operations, and multiple solution pools. During the execution of the solver, search algorithms and genetic operations that succeeded in finding good solutions are automatically selected to obtain better solutions. Moreover, search algorithms traverse between different solution pools to find good solutions. We have implemented our DABS solver to run on multiple GPUs. Experimental evaluations using eight NVIDIA A100 GPUs confirm that our DABS solver succeeds in finding optimal or potentially optimal solutions for three types of QUBO problems. "
+}

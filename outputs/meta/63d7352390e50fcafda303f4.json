@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Big portfolio selection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph-based conditional moments method (GRACE)",
+    "Factor-augmented temporal graph convolutional network",
+    "Quantiled conditional moment (QCM) method"
+  ],
+  "results": [
+    "GRACE method performs much better than its competitors",
+    "Better performance with conditional variance, skewness, and kurtosis"
+  ],
+  "paper_id": "63d7352390e50fcafda303f4",
+  "title": "Big portfolio selection by graph-based conditional moments method",
+  "abstract": "  How to do big portfolio selection is very important but challenging for both researchers and practitioners. In this paper, we propose a new graph-based conditional moments (GRACE) method to do portfolio selection based on thousands of stocks or more. The GRACE method first learns the conditional quantiles and mean of stock returns via a factor-augmented temporal graph convolutional network, which guides the learning procedure through a factor-hypergraph built by the set of stock-to-stock relations from the domain knowledge as well as the set of factor-to-stock relations from the asset pricing knowledge. Next, the GRACE method learns the conditional variance, skewness, and kurtosis of stock returns from the learned conditional quantiles by using the quantiled conditional moment (QCM) method. The QCM method is a supervised learning procedure to learn these conditional higher-order moments, so it largely overcomes the computational difficulty from the classical high-dimensional GARCH-type methods. Moreover, the QCM method allows the mis-specification in modeling conditional quantiles to some extent, due to its regression-based nature. Finally, the GRACE method uses the learned conditional mean, variance, skewness, and kurtosis to construct several performance measures, which are criteria to sort the stocks to proceed the portfolio selection in the well-known 10-decile framework. An application to NASDAQ and NYSE stock markets shows that the GRACE method performs much better than its competitors, particularly when the performance measures are comprised of conditional variance, skewness, and kurtosis. "
+}

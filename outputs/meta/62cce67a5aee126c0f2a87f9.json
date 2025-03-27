@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video-Text Retrieval"
+  ],
+  "datasets": [
+    "MSR-VTT",
+    "MSVD",
+    "DiDeMo"
+  ],
+  "methods": [
+    "Latent Translation",
+    "Cycle-Consistency"
+  ],
+  "results": [
+    "Superiority and effectiveness compared with vanilla state-of-the-art methods"
+  ],
+  "paper_id": "62cce67a5aee126c0f2a87f9",
+  "title": "LaT: Latent Translation with Cycle-Consistency for Video-Text Retrieval",
+  "abstract": "  Video-text retrieval is a class of cross-modal representation learning problems, where the goal is to select the video which corresponds to the text query between a given text query and a pool of candidate videos. The contrastive paradigm of vision-language pretraining has shown promising success with large-scale datasets and unified transformer architecture, and demonstrated the power of a joint latent space. Despite this, the intrinsic divergence between the visual domain and textual domain is still far from being eliminated, and projecting different modalities into a joint latent space might result in the distorting of the information inside the single modality. To overcome the above issue, we present a novel mechanism for learning the translation relationship from a source modality space $\\mathcal{S}$ to a target modality space $\\mathcal{T}$ without the need for a joint latent space, which bridges the gap between visual and textual domains. Furthermore, to keep cycle consistency between translations, we adopt a cycle loss involving both forward translations from $\\mathcal{S}$ to the predicted target space $\\mathcal{T'}$, and backward translations from $\\mathcal{T'}$ back to $\\mathcal{S}$. Extensive experiments conducted on MSR-VTT, MSVD, and DiDeMo datasets demonstrate the superiority and effectiveness of our LaT approach compared with vanilla state-of-the-art methods. "
+}

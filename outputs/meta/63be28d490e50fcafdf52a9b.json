@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Consistent Query Answering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Set theoretic semantics for tuples and functional dependencies",
+    "Polynomial algorithms for computing true-false tuples and consistent-inconsistent tuples",
+    "Polynomial algorithms for computing different types of consistent answers for conjunctive and disjunctive queries"
+  ],
+  "results": [
+    "Novel approach to consistent query answering not using table repairs",
+    "Polynomial algorithms for computing sets of tuples",
+    "Polynomial algorithms for computing consistent answers"
+  ],
+  "paper_id": "63be28d490e50fcafdf52a9b",
+  "title": "Consistent Query Answering without Repairs in Tables with Nulls and\n  Functional Dependencies",
+  "abstract": "  In this paper, we study consistent query answering in tables with nulls and functional dependencies. Given such a table T, we consider the set Tuples of all tuples that can be built up from constants appearing in T, and we use set theoretic semantics for tuples and functional dependencies to characterize the tuples of Tuples in two orthogonal ways: first as true or false tuples, and then as consistent or inconsistent tuples. Queries are issued against T and evaluated in Tuples. In this setting, we consider a query Q: select X from T where Condition over T and define its consistent answer to be the set of tuples x in Tuples such that: x is a true and consistent tuple with schema X and there exists a true super-tuple t of x in Tuples satisfying the condition. We show that, depending on the status that the super-tuple t has in Tuples, there are different types of consistent answer to Q. The main contributions of the paper are: (a) a novel approach to consistent query answering not using table repairs; (b) polynomial algorithms for computing the sets of true-false tuples and the sets of consistent-inconsistent tuples of Tuples; (c) polynomial algorithms in the size of T for computing different types of consistent answer for both conjunctive and disjunctive queries; and (d) a detailed discussion of the differences between our approach and the approaches using table repairs. "
+}

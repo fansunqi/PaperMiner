@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Heart and lung sound event detection"
+  ],
+  "datasets": [
+    "2016 Physionet/CinC Challenge",
+    "2022 George Moody Challenge",
+    "HF_V1 lung sound database"
+  ],
+  "methods": [
+    "Semi-supervised training",
+    "Multi-task model"
+  ],
+  "results": [
+    "Multi-class prediction for lung sound events",
+    "Simultaneous detection of heart and lung sound events",
+    "Overall macro F1 score of 39.2%"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905c81",
+  "title": "Training one model to detect heart and lung sound events from single\n  point auscultations",
+  "abstract": "  Objective: This work proposes a semi-supervised training approach for detecting lung and heart sounds simultaneously with only one trained model and in invariance to the auscultation point. Methods: We use open-access data from the 2016 Physionet/CinC Challenge, the 2022 George Moody Challenge, and from the lung sound database HF_V1. We first train specialist single-task models using foreground ground truth (GT) labels from different auscultation databases to identify background sound events in the respective lung and heart auscultation databases. The pseudo-labels generated in this way were combined with the ground truth labels in a new training iteration, such that a new model was subsequently trained to detect foreground and background signals. Benchmark tests ensured that the newly trained model could detect both, lung, and heart sound events in different auscultation sites without regressing on the original task. We also established hand-validated labels for the respective background signal in heart and lung sound auscultations to evaluate the models. Results: In this work, we report for the first time results for i) a multi-class prediction for lung sound events and ii) for simultaneous detection of heart and lung sound events and achieve competitive results using only one model. The combined multi-task model regressed slightly in heart sound detection and gained significantly in lung sound detection accuracy with an overall macro F1 score of 39.2% over six classes, representing a 6.7% improvement over the single-task baseline models. Conclusion/Significance: To the best of our knowledge, this is the first approach developed to date for measuring heart and lung sound events invariant to both, the auscultation site and capturing device. Hence, our model is capable of performing lung and heart sound detection from any auscultation location. "
+}

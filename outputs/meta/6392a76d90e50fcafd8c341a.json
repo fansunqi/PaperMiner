@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Movie Dubbing",
+    "Visual Voice Clone (V2C)"
+  ],
+  "datasets": [
+    "Chem",
+    "V2C benchmark"
+  ],
+  "methods": [
+    "Hierarchical Prosody Models",
+    "Lip movement alignment",
+    "Facial expression to speech energy and pitch",
+    "Emotion booster",
+    "Mel-spectrogram generation",
+    "Vocoder"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6392a76d90e50fcafd8c341a",
+  "title": "Learning to Dub Movies via Hierarchical Prosody Models",
+  "abstract": "  Given a piece of text, a video clip and a reference audio, the movie dubbing (also known as visual voice clone V2C) task aims to generate speeches that match the speaker's emotion presented in the video using the desired speaker voice as reference. V2C is more challenging than conventional text-to-speech tasks as it additionally requires the generated speech to exactly match the varying emotions and speaking speed presented in the video. Unlike previous works, we propose a novel movie dubbing architecture to tackle these problems via hierarchical prosody modelling, which bridges the visual information to corresponding speech prosody from three aspects: lip, face, and scene. Specifically, we align lip movement to the speech duration, and convey facial expression to speech energy and pitch via attention mechanism based on valence and arousal representations inspired by recent psychology findings. Moreover, we design an emotion booster to capture the atmosphere from global video scenes. All these embeddings together are used to generate mel-spectrogram and then convert to speech waves via existing vocoder. Extensive experimental results on the Chem and V2C benchmark datasets demonstrate the favorable performance of the proposed method. The source code and trained models will be released to the public. "
+}

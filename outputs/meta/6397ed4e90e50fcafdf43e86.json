@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object detection post-processing"
+  ],
+  "datasets": [
+    "Synthetic images with multiple 3d objects"
+  ],
+  "methods": [
+    "Detection Selection Algorithm (DSA)",
+    "Occlusion branch for Faster R-CNN",
+    "Decoder for object reconstruction",
+    "Greedy algorithm for likelihood maximization"
+  ],
+  "results": [
+    "DSA with NMS or Soft-NMS achieves better results than NMS or Soft-NMS"
+  ],
+  "paper_id": "6397ed4e90e50fcafdf43e86",
+  "title": "Detection Selection Algorithm: A Likelihood based Optimization Method to\n  Perform Post Processing for Object Detection",
+  "abstract": "  In object detection, post-processing methods like Non-maximum Suppression (NMS) are widely used. NMS can substantially reduce the number of false positive detections but may still keep some detections with low objectness scores. In order to find the exact number of objects and their labels in the image, we propose a post processing method called Detection Selection Algorithm (DSA) which is used after NMS or related methods. DSA greedily selects a subset of detected bounding boxes, together with full object reconstructions that give the interpretation of the whole image with highest likelihood, taking into account object occlusions. The algorithm consists of four components. First, we add an occlusion branch to Faster R-CNN to obtain occlusion relationships between objects. Second, we develop a single reconstruction algorithm which can reconstruct the whole appearance of an object given its visible part, based on the optimization of latent variables of a trained generative network which we call the decoder. Third, we propose a whole reconstruction algorithm which generates the joint reconstruction of all objects in a hypothesized interpretation, taking into account occlusion ordering. Finally we propose a greedy algorithm that incrementally adds or removes detections from a list to maximize the likelihood of the corresponding interpretation. DSA with NMS or Soft-NMS can achieve better results than NMS or Soft-NMS themselves, as is illustrated in our experiments on synthetic images with mutiple 3d objects. "
+}

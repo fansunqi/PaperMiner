@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data-driven modeling of noise time series"
+  ],
+  "datasets": [
+    "Simulated noise time series with known ground-truth parameters"
+  ],
+  "methods": [
+    "Convolutional Generative Adversarial Networks (GANs)",
+    "Deep Convolutional GAN (DCGAN) architecture",
+    "Short-time Fourier transform (STFT) data representation"
+  ],
+  "results": [
+    "GANs capable of learning many noise types",
+    "Struggles with some noise types, e.g., impulsive time-series with extreme outliers",
+    "Insights into capabilities and potential limitations of time-series GANs",
+    "Benchmark for deep generative models for time series"
+  ],
+  "paper_id": "62c3abc75aee126c0fc9a6d9",
+  "title": "Data-Driven Modeling of Noise Time Series with Convolutional Generative\n  Adversarial Networks",
+  "abstract": "  Random noise arising from physical processes is an inherent characteristic of measurements and a limiting factor for most signal processing and data analysis tasks. Given the recent interest in generative adversarial networks (GANs) for data-driven modeling, it is important to determine to what extent GANs can faithfully reproduce noise in target data sets. In this paper, we present an empirical investigation that aims to shed light on this issue for time series. Namely, we assess two general-purpose GANs for time series that are based on the popular deep convolutional GAN (DCGAN) architecture, a direct time-series model and an image-based model that uses a short-time Fourier transform (STFT) data representation. The GAN models are trained and quantitatively evaluated using distributions of simulated noise time series with known ground-truth parameters. Target time series distributions include a broad range of noise types commonly encountered in physical measurements, electronics, and communication systems: band-limited thermal noise, power law noise, shot noise, and impulsive noise. We find that GANs are capable of learning many noise types, although they predictably struggle when the GAN architecture is not well suited to some aspects of the noise, e.g., impulsive time-series with extreme outliers. Our findings provide insights into the capabilities and potential limitations of current approaches to time-series GANs and highlight areas for further research. In addition, our battery of tests provides a useful benchmark to aid the development of deep generative models for time series. "
+}

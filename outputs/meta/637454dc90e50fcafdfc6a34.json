@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mathematical runtime analysis of NSGA-III"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "NSGA-III"
+  ],
+  "results": [
+    "Expected number of iterations: O(n log n)",
+    "Advantage over NSGA-II on 3-objective OneMinMax benchmark"
+  ],
+  "paper_id": "637454dc90e50fcafdfc6a34",
+  "title": "A Mathematical Runtime Analysis of the Non-dominated Sorting Genetic\n  Algorithm III (NSGA-III)",
+  "abstract": "  The Non-dominated Sorting Genetic Algorithm II (NSGA-II) is the most prominent multi-objective evolutionary algorithm for real-world applications. While it performs evidently well on bi-objective optimization problems, empirical studies suggest that it is less effective when applied to problems with more than two objectives. A recent mathematical runtime analysis confirmed this observation by proving the NGSA-II for an exponential number of iterations misses a constant factor of the Pareto front of the simple 3-objective OneMinMax problem.   In this work, we provide the first mathematical runtime analysis of the NSGA-III, a refinement of the NSGA-II aimed at better handling more than two objectives. We prove that the NSGA-III with sufficiently many reference points -- a small constant factor more than the size of the Pareto front, as suggested for this algorithm -- computes the complete Pareto front of the 3-objective OneMinMax benchmark in an expected number of O(n log n) iterations. This result holds for all population sizes (that are at least the size of the Pareto front). It shows a drastic advantage of the NSGA-III over the NSGA-II on this benchmark. The mathematical arguments used here and in previous work on the NSGA-II suggest that similar findings are likely for other benchmarks with three or more objectives. "
+}

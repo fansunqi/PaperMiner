@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "ANN-SNN Conversion"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "CIFAR-100",
+    "ImageNet"
+  ],
+  "methods": [
+    "Dual-Phase Optimization"
+  ],
+  "results": [
+    "Accuracy: 73.20% on CIFAR-100",
+    "Energy Consumption: 15.7x less than ANNs",
+    "Latency: 2 time steps"
+  ],
+  "paper_id": "628304515aee126c0f6f1026",
+  "title": "Towards Lossless ANN-SNN Conversion under Ultra-Low Latency with\n  Dual-Phase Optimization",
+  "abstract": "  Spiking neural network (SNN) operating with asynchronous discrete events shows higher energy efficiency. A popular approach to implementing deep SNNs is ANN-SNN conversion combining both efficient training of ANNs and efficient inference of SNNs. However, due to the intrinsic difference between ANNs and SNNs, the accuracy loss is usually non-negligible, especially under low simulating steps. It restricts the applications of SNN on latency-sensitive edge devices greatly. In this paper, we identify such performance degradation stems from the misrepresentation of the negative or overflow residual membrane potential in SNNs. Inspired by this, we systematically analyze the conversion error between SNNs and ANNs, and then decompose it into three folds: quantization error, clipping error, and residual membrane potential representation error. With such insights, we propose a dual-phase conversion algorithm to minimize those errors separately. Besides, we show each phase achieves significant performance gains in a complementary manner. We evaluate our method on challenging datasets including CIFAR-10, CIFAR-100, and ImageNet datasets. The experimental results show the proposed method achieves the state-of-the-art in terms of both accuracy and latency with promising energy preservation compared to ANNs. For instance, our method achieves an accuracy of 73.20% on CIFAR-100 in only 2 time steps with 15.7$\\times$ less energy consumption. "
+}

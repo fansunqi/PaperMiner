@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust trajectory planning for multirotor systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nonlinear disturbance observer (NDOB)",
+    "Adaptive controller",
+    "Hamilton-Jacobi reachability analysis"
+  ],
+  "results": [
+    "Real-time computation of FRS",
+    "Smaller scale FRS compared to other ellipsoidal over-approximations"
+  ],
+  "paper_id": "6327dda690e50fcafd67e0cf",
+  "title": "Computing Forward Reachable Sets for Nonlinear Adaptive Multirotor\n  Controllers",
+  "abstract": "  In multirotor systems, guaranteeing safety while considering unknown disturbances is essential for robust trajectory planning. The Forward reachable set (FRS), the set of feasible states subject to bounded disturbances, can be utilized to identify robust and collision-free trajectories by checking the intersections with obstacles. However, in many cases, the FRS is not calculated in real time and is too conservative to be used in actual applications. In this paper, we address these issues by introducing a nonlinear disturbance observer (NDOB) and an adaptive controller to the multirotor system. We express the FRS of the closed-loop multirotor system with an adaptive controller in augmented state space using Hamilton-Jacobi reachability analysis. Then, we derive a closed-form expression that over-approximates the FRS as an ellipsoid, allowing for real-time computation. By compensating for disturbances with the adaptive controller, our over-approximated FRS can be smaller than other ellipsoidal over-approximations. Numerical examples validate the computational efficiency and the smaller scale of our proposed FRS. "
+}

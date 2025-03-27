@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Interpretability of Convolutional Neural Network Predictions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Opti-CAM: A method that optimizes saliency maps by maximizing the logit of the masked image for a given class"
+  ],
+  "results": [
+    "Outperforms other CAM-based approaches according to classification metrics",
+    "Localization and classifier interpretability are not necessarily aligned"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b8b6",
+  "title": "Opti-CAM: Optimizing saliency maps for interpretability",
+  "abstract": "  Methods based on class activation maps (CAM) provide a simple mechanism to interpret predictions of convolutional neural networks by using linear combinations of feature maps as saliency maps. By contrast, masking-based methods optimize a saliency map directly in the image space or learn it by training another network on additional data.   In this work we introduce Opti-CAM, combining ideas from CAM-based and masking-based approaches. Our saliency map is a linear combination of feature maps, where weights are optimized per image such that the logit of the masked image for a given class is maximized. We also fix a fundamental flaw in two of the most common evaluation metrics of attribution methods. On several datasets, Opti-CAM largely outperforms other CAM-based approaches according to the most relevant classification metrics. We provide empirical evidence supporting that localization and classifier interpretability are not necessarily aligned. "
+}

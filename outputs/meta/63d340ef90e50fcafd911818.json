@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://snap-research.github.io/unsupervised-volumetric-animation"
+  ],
+  "tasks": [
+    "Unsupervised 3D animation of non-rigid deformable objects"
+  ],
+  "datasets": [
+    "VoxCeleb $256^2$",
+    "TEDXPeople $256^2$",
+    "Cats $256^2$"
+  ],
+  "methods": [
+    "3D autodecoder framework",
+    "differentiable PnP algorithm"
+  ],
+  "results": [
+    "3D segmentation",
+    "3D keypoint estimation",
+    "novel view synthesis",
+    "animation from single or few images"
+  ],
+  "paper_id": "63d340ef90e50fcafd911818",
+  "title": "Unsupervised Volumetric Animation",
+  "abstract": "  We propose a novel approach for unsupervised 3D animation of non-rigid deformable objects. Our method learns the 3D structure and dynamics of objects solely from single-view RGB videos, and can decompose them into semantically meaningful parts that can be tracked and animated. Using a 3D autodecoder framework, paired with a keypoint estimator via a differentiable PnP algorithm, our model learns the underlying object geometry and parts decomposition in an entirely unsupervised manner. This allows it to perform 3D segmentation, 3D keypoint estimation, novel view synthesis, and animation. We primarily evaluate the framework on two video datasets: VoxCeleb $256^2$ and TEDXPeople $256^2$. In addition, on the Cats $256^2$ image dataset, we show it even learns compelling 3D geometry from still images. Finally, we show our model can obtain animatable 3D objects from a single or few images. Code and visual results available on our project website, see https://snap-research.github.io/unsupervised-volumetric-animation . "
+}

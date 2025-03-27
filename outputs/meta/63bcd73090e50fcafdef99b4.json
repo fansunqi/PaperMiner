@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Whole-Slide Segmentation",
+    "Classification in Prostate Cancer"
+  ],
+  "datasets": [
+    "Prostate cancer WSI datasets"
+  ],
+  "methods": [
+    "WholeSIGHT: a weakly-supervised method for segmentation and classification",
+    "tissue-graph representation",
+    "graph classification head",
+    "node classification head",
+    "post-hoc feature attribution"
+  ],
+  "results": [
+    "state-of-the-art weakly-supervised segmentation performance",
+    "better or comparable classification with respect to state-of-the-art weakly-supervised WSI classification methods",
+    "quantified generalization capability in terms of segmentation and classification performance, uncertainty estimation, and model calibration"
+  ],
+  "paper_id": "63bcd73090e50fcafdef99b4",
+  "title": "Weakly Supervised Joint Whole-Slide Segmentation and Classification in\n  Prostate Cancer",
+  "abstract": "  The segmentation and automatic identification of histological regions of diagnostic interest offer a valuable aid to pathologists. However, segmentation methods are hampered by the difficulty of obtaining pixel-level annotations, which are tedious and expensive to obtain for Whole-Slide images (WSI). To remedy this, weakly supervised methods have been developed to exploit the annotations directly available at the image level. However, to our knowledge, none of these techniques is adapted to deal with WSIs. In this paper, we propose WholeSIGHT, a weakly-supervised method, to simultaneously segment and classify WSIs of arbitrary shapes and sizes. Formally, WholeSIGHT first constructs a tissue-graph representation of the WSI, where the nodes and edges depict tissue regions and their interactions, respectively. During training, a graph classification head classifies the WSI and produces node-level pseudo labels via post-hoc feature attribution. These pseudo labels are then used to train a node classification head for WSI segmentation. During testing, both heads simultaneously render class prediction and segmentation for an input WSI. We evaluated WholeSIGHT on three public prostate cancer WSI datasets. Our method achieved state-of-the-art weakly-supervised segmentation performance on all datasets while resulting in better or comparable classification with respect to state-of-the-art weakly-supervised WSI classification methods. Additionally, we quantify the generalization capability of our method in terms of segmentation and classification performance, uncertainty estimation, and model calibration. "
+}

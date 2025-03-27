@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimation of fibre architecture and scar in myocardial tissue using electrograms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep neural network based on a modified U-net architecture",
+    "Wavelet-based surrogate testing analysis"
+  ],
+  "results": [
+    "Jaccard index of 91% for scar location and tissue conductivity estimation",
+    "Significantly smaller RMSE between ground truth and predictions ($p_{val}<0.01$) compared to surrogate samples"
+  ],
+  "paper_id": "6390045290e50fcafd8385aa",
+  "title": "Estimation of fibre architecture and scar in myocardial tissue using\n  electrograms: an in-silico study",
+  "abstract": "  Atrial Fibrillation (AF) is characterized by disorganised electrical activity in the atria and is known to be sustained by the presence of regions of fibrosis (scars) or functional cellular remodeling, both of which may lead to areas of slow conduction. Estimating the effective conductivity of the myocardium and identifying regions of abnormal propagation is therefore crucial for the effective treatment of AF. We hypothesise that the spatial distribution of tissue conductivity can be directly inferred from an array of concurrently acquired contact electrograms (EGMs). We generate a dataset of simulated cardiac AP propagation using randomised scar distributions and a phenomenological cardiac model and calculate contact EGMs at various positions on the field. EGMs are enriched with noise extracted from biological data acquired in the lab. A deep neural network, based on a modified U-net architecture, is trained to estimate the location of the scar and quantify conductivity of the tissue with a Jaccard index of 91%. We adapt a wavelet-based surrogate testing analysis to confirm that the inferred conductivity distribution is an accurate representation of the ground truth input to the model. We find that the root mean square error (RMSE) between the ground truth and our predictions is significantly smaller ($p_{val}<0.01$) than the RMSE between the ground truth and surrogate samples. "
+}

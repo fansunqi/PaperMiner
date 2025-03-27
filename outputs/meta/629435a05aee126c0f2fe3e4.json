@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Membership Inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ridge regularization",
+    "Leave-one-out analysis",
+    "Early stopping"
+  ],
+  "results": [
+    "Privacy-utility trade-off",
+    "Blessing of dimensionality"
+  ],
+  "paper_id": "629435a05aee126c0f2fe3e4",
+  "title": "A Blessing of Dimensionality in Membership Inference through\n  Regularization",
+  "abstract": "  Is overparameterization a privacy liability? In this work, we study the effect that the number of parameters has on a classifier's vulnerability to membership inference attacks. We first demonstrate how the number of parameters of a model can induce a privacy--utility trade-off: increasing the number of parameters generally improves generalization performance at the expense of lower privacy. However, remarkably, we then show that if coupled with proper regularization, increasing the number of parameters of a model can actually simultaneously increase both its privacy and performance, thereby eliminating the privacy--utility trade-off. Theoretically, we demonstrate this curious phenomenon for logistic regression with ridge regularization in a bi-level feature ensemble setting. Pursuant to our theoretical exploration, we develop a novel leave-one-out analysis tool to precisely characterize the vulnerability of a linear classifier to the optimal membership inference attack. We empirically exhibit this \"blessing of dimensionality\" for neural networks on a variety of tasks using early stopping as the regularizer. "
+}

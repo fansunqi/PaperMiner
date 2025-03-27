@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automotive Point Cloud Semantic Segmentation"
+  ],
+  "datasets": [
+    "SemanticKITTI",
+    "nuScenes"
+  ],
+  "methods": [
+    "WaffleIron (using generic MLPs and dense 2D convolutions)"
+  ],
+  "results": [
+    "Competes with the best methods designed specifically for these autonomous driving datasets"
+  ],
+  "paper_id": "63d340e890e50fcafd910849",
+  "title": "Using a Waffle Iron for Automotive Point Cloud Semantic Segmentation",
+  "abstract": "  Semantic segmentation of point clouds in autonomous driving datasets requires techniques that can process large numbers of points over large field of views. Today, most deep networks designed for this task exploit 3D sparse convolutions to reduce memory and computational loads. The best methods then further exploit specificities of rotating lidar sampling patterns to further improve the performance, e.g., cylindrical voxels, or range images (for feature fusion from multiple point cloud representations). In contrast, we show that one can build a well-performing point-based backbone free of these specialized tools. This backbone, WaffleIron, relies heavily on generic MLPs and dense 2D convolutions, making it easy to implement, and contains just a few parameters easy to tune. Despite its simplicity, our experiments on SemanticKITTI and nuScenes show that WaffleIron competes with the best methods designed specifically for these autonomous driving datasets. Hence, WaffleIron is a strong, easy-to-implement, baseline for semantic segmentation of sparse outdoor point clouds. "
+}

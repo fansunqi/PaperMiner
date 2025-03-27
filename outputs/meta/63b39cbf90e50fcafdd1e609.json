@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image classification"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "CIFAR100",
+    "Tiny Imagenet"
+  ],
+  "methods": [
+    "GoogLe2Net",
+    "Residual feature-reutilization inceptions (ResFRI)",
+    "Split residual feature-reutilization inceptions (Split-ResFRI)"
+  ],
+  "results": [
+    "CIFAR10: 97.94%",
+    "CIFAR100: 85.91%",
+    "Tiny Imagenet: 70.54%"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e609",
+  "title": "GoogLe2Net: Going Transverse with Convolutions",
+  "abstract": "  Capturing feature information effectively is of great importance in vision tasks. With the development of convolutional neural networks (CNNs), concepts like residual connection and multiple scales promote continual performance gains on diverse deep learning vision tasks. However, the existing methods do not organically combined advantages of these valid ideas. In this paper, we propose a novel CNN architecture called GoogLe2Net, it consists of residual feature-reutilization inceptions (ResFRI) or split residual feature-reutilization inceptions (Split-ResFRI) which create transverse passages between adjacent groups of convolutional layers to enable features flow to latter processing branches and possess residual connections to better process information. Our GoogLe2Net is able to reutilize information captured by foregoing groups of convolutional layers and express multi-scale features at a fine-grained level, which improves performances in image classification. And the inception we proposed could be embedded into inception-like networks directly without any migration costs. Moreover, in experiments based on popular vision datasets, such as CIFAR10 (97.94%), CIFAR100 (85.91%) and Tiny Imagenet (70.54%), we obtain better results on image classification task compared with other modern models. "
+}

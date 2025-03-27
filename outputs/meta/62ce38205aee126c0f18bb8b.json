@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cluster-based control of transition-independent MDPs",
+    "Control of multi-agent systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Clustered Bellman operator",
+    "Clustered Value Iteration (CVI)",
+    "Iterative greedy cluster splitting algorithm"
+  ],
+  "results": [
+    "CVI converges exponentially faster than standard value iteration (VI)",
+    "Optimal policies found on separable reward function TI-MDPs",
+    "Monotonic submodular improvement in value at each iteration"
+  ],
+  "paper_id": "62ce38205aee126c0f18bb8b",
+  "title": "Cluster-Based Control of Transition-Independent MDPs",
+  "abstract": "  This work studies efficient solution methods for cluster-based control policies of transition-independent Markov decision processes (TI-MDPs). We focus on control of multi-agent systems, whereby a central planner (CP) influences agents to select desirable group behavior. The agents are partitioned into disjoint clusters whereby agents in the same cluster receive the same controls but agents in different clusters may receive different controls. Under mild assumptions, this process can be modeled as a TI-MDP where each factor describes the behavior of one cluster. The action space of the TI-MDP becomes exponential with respect to the number of clusters. To efficiently find a policy in this rapidly scaling space, we propose a clustered Bellman operator that optimizes over the action space for one cluster at any evaluation. We present Clustered Value Iteration (CVI), which uses this operator to iteratively perform \"round robin\" optimization across the clusters. CVI converges exponentially faster than standard value iteration (VI), and can find policies that closely approximate the MDP's true optimal value. A special class of TI-MDPs with separable reward functions are investigated, and it is shown that CVI will find optimal policies on this class of problems. Finally, the optimal clustering assignment problem is explored. The value functions TI-MDPs with submodular reward functions are shown to be submodular functions, so submodular set optimization may be used to find a near optimal clustering assignment. We propose an iterative greedy cluster splitting algorithm, which yields monotonic submodular improvement in value at each iteration. Finally, simulations offer empirical assessment of the proposed methods. "
+}

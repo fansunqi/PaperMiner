@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Trajectory Planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-step algorithm",
+    "RRT* algorithm",
+    "Line-of-Sight (LOS) algorithm",
+    "Constrained quadratic programming"
+  ],
+  "results": [
+    "Real-time trajectory planning",
+    "Reduces computation time"
+  ],
+  "paper_id": "6371b1a790e50fcafdb2e97e",
+  "title": "Two-Step Online Trajectory Planning of a Quadcopter in Indoor\n  Environments with Obstacles",
+  "abstract": "  This paper presents a two-step algorithm for online trajectory planning in indoor environments with unknown obstacles. In the first step, sampling-based path planning techniques such as the optimal Rapidly exploring Random Tree (RRT*) algorithm and the Line-of-Sight (LOS) algorithm are employed to generate a collision-free path consisting of multiple waypoints. Then, in the second step, constrained quadratic programming is utilized to compute a smooth trajectory that passes through all computed waypoints. The main contribution of this work is the development of a flexible trajectory planning framework that can detect changes in the environment, such as new obstacles, and compute alternative trajectories in real time. The proposed algorithm actively considers all changes in the environment and performs the replanning process only on waypoints that are occupied by new obstacles. This helps to reduce the computation time and realize the proposed approach in real time. The feasibility of the proposed algorithm is evaluated using the Intel Aero Ready-to-Fly (RTF) quadcopter in simulation and in a real-world experiment. "
+}

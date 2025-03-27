@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/CRISTAL-3DSAM/InterFormer"
+  ],
+  "tasks": [
+    "Human Reaction Generation"
+  ],
+  "datasets": [
+    "SBU interaction",
+    "K3HI",
+    "DuetDance"
+  ],
+  "methods": [
+    "Interaction Transformer (InterFormer)"
+  ],
+  "results": [
+    "General and effective for complex and long-term interactions"
+  ],
+  "paper_id": "62c4fd9a5aee126c0fad6d77",
+  "title": "Interaction Transformer for Human Reaction Generation",
+  "abstract": "  We address the challenging task of human reaction generation, which aims to generate a corresponding reaction based on an input action. Most of the existing works do not focus on generating and predicting the reaction and cannot generate the motion when only the action is given as input. To address this limitation, we propose a novel interaction Transformer (InterFormer) consisting of a Transformer network with both temporal and spatial attention. Specifically, temporal attention captures the temporal dependencies of the motion of both characters and of their interaction, while spatial attention learns the dependencies between the different body parts of each character and those which are part of the interaction. Moreover, we propose using graphs to increase the performance of spatial attention via an interaction distance module that helps focus on nearby joints from both characters. Extensive experiments on the SBU interaction, K3HI, and DuetDance datasets demonstrate the effectiveness of InterFormer. Our method is general and can be used to generate more complex and long-term interactions. We also provide videos of generated reactions and the code with pre-trained models at https://github.com/CRISTAL-3DSAM/InterFormer "
+}

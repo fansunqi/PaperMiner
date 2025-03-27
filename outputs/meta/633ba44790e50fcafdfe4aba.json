@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bandit algorithms",
+    "Historical data integration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Artificial Replay"
+  ],
+  "results": [
+    "Achieves identical regret for base algorithms",
+    "Practical benefits for base algorithms that do not satisfy IIData"
+  ],
+  "paper_id": "633ba44790e50fcafdfe4aba",
+  "title": "Artificial Replay: A Meta-Algorithm for Harnessing Historical Data in\n  Bandits",
+  "abstract": "  How best to incorporate historical data to \"warm start\" bandit algorithms is an open question: naively initializing reward estimates using all historical samples can suffer from spurious data and imbalanced data coverage, leading to computational and storage issues $\\unicode{x2014}$ particularly salient in continuous action spaces. We propose Artificial Replay, a meta-algorithm for incorporating historical data into any arbitrary base bandit algorithm. Artificial Replay uses only a fraction of the historical data compared to a full warm-start approach, while still achieving identical regret for base algorithms that satisfy independence of irrelevant data (IIData), a novel and broadly applicable property that we introduce. We complement these theoretical results with experiments on $K$-armed and continuous combinatorial bandit algorithms, including a green security domain using real poaching data. We show the practical benefits of Artificial Replay, including for base algorithms that do not satisfy IIData. "
+}

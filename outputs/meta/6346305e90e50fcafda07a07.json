@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving Poisson equation with jump discontinuities on embedded irregular interfaces"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural-network and finite-difference hybrid method",
+    "Supervised learning for function approximation",
+    "Fast direct solver for Poisson equation"
+  ],
+  "results": [
+    "Second-order accuracy for the solution and its derivatives",
+    "Comparable with traditional immersed interface method",
+    "Robustness demonstrated by solving Stokes equations with singular forces"
+  ],
+  "paper_id": "6346305e90e50fcafda07a07",
+  "title": "An efficient neural-network and finite-difference hybrid method for\n  elliptic interface problems with applications",
+  "abstract": "  A new and efficient neural-network and finite-difference hybrid method is developed for solving Poisson equation in a regular domain with jump discontinuities on embedded irregular interfaces. Since the solution has low regularity across the interface, when applying finite difference discretization to this problem, an additional treatment accounting for the jump discontinuities must be employed. Here, we aim to elevate such an extra effort to ease our implementation by machine learning methodology. The key idea is to decompose the solution into singular and regular parts. The neural network learning machinery incorporating the given jump conditions finds the singular solution, while the standard five-point Laplacian discretization is used to obtain the regular solution with associated boundary conditions. Regardless of the interface geometry, these two tasks only require supervised learning for function approximation and a fast direct solver for Poisson equation, making the hybrid method easy to implement and efficient. The two- and three-dimensional numerical results show that the present hybrid method preserves second-order accuracy for the solution and its derivatives, and it is comparable with the traditional immersed interface method in the literature. As an application, we solve the Stokes equations with singular forces to demonstrate the robustness of the present method. "
+}

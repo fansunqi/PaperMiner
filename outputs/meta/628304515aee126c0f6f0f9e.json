@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Matrix computations in scientific computing and engineering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Julia high-performance compute language extension",
+    "Lazy evaluation semantics",
+    "Expression tree rewriting",
+    "Optimizations like exponentiation-by-squaring",
+    "Dynamic simulation for tile size and execution schedule",
+    "Offline profiling for time model construction"
+  ],
+  "results": [
+    "Speedups of up to a factor of 4.11x",
+    "Average 78.36% of the theoretically possible maximum speedup"
+  ],
+  "paper_id": "628304515aee126c0f6f0f9e",
+  "title": "Julia Cloud Matrix Machine: Dynamic Matrix Language Acceleration on\n  Multicore Clusters in the Cloud",
+  "abstract": "  Matrix computations are widely used in increasing sizes and complexity in scientific computing and engineering. But current matrix language implementations lack programmer support to effectively and seamlessly utilize cloud computing resources. We extend the Julia high-performance compute language to automatically parallelize matrix computations for the cloud. Users are shielded from the complexity of explicitly-parallel computations through the provision of a novel matrix data type with lazy evaluation semantics. Delayed evaluation aggregates operations into expression trees that are rewritten on-the-fly to eliminate common subexpressions and apply optimizations such as exponentiation-by-squaring on matching subtrees. Trees are lowered into DAGs for which dynamic simulation selects the optimal tile size and execution schedule for a given cluster of cloud nodes. We employ off-line profiling to construct a time model for the compute and network capacity of the cluster. The experimental evaluation of our framework comprises eleven benchmarks on a cluster of eight nodes (288 vCPUs) in the AWS public cloud and reveals speedups of up to a factor of 4.11x, with an average 78.36% of the theoretically possible maximum speedup. "
+}

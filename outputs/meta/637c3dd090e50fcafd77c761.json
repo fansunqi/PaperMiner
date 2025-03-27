@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/Tangshitao/NeuMap"
+  ],
+  "tasks": [
+    "Camera Localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "NeuMap",
+    "Transformer-based auto-decoder",
+    "Learnable latent codes"
+  ],
+  "results": [
+    "39.1% accuracy in the Aachen night benchmark with only 6MB of data"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c761",
+  "title": "NeuMap: Neural Coordinate Mapping by Auto-Transdecoder for Camera\n  Localization",
+  "abstract": "  This paper presents an end-to-end neural mapping method for camera localization, dubbed NeuMap, encoding a whole scene into a grid of latent codes, with which a Transformer-based auto-decoder regresses 3D coordinates of query pixels. State-of-the-art feature matching methods require each scene to be stored as a 3D point cloud with per-point features, consuming several gigabytes of storage per scene. While compression is possible, performance drops significantly at high compression rates. Conversely, coordinate regression methods achieve high compression by storing scene information in a neural network but suffer from reduced robustness. NeuMap combines the advantages of both approaches by utilizing 1) learnable latent codes for efficient scene representation and 2) a scene-agnostic Transformer-based auto-decoder to infer coordinates for query pixels. This scene-agnostic network design learns robust matching priors from large-scale data and enables rapid optimization of codes for new scenes while keeping the network weights fixed. Extensive evaluations on five benchmarks show that NeuMap significantly outperforms other coordinate regression methods and achieves comparable performance to feature matching methods while requiring a much smaller scene representation size. For example, NeuMap achieves 39.1% accuracy in the Aachen night benchmark with only 6MB of data, whereas alternative methods require 100MB or several gigabytes and fail completely under high compression settings. The codes are available at https://github.com/Tangshitao/NeuMap "
+}

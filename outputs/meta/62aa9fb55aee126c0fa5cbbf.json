@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computational chemistry",
+    "Materials science",
+    "Force fields"
+  ],
+  "datasets": [
+    "rMD17",
+    "3BPA",
+    "AcAc"
+  ],
+  "methods": [
+    "Higher order equivariant message passing neural networks (MPNNs)",
+    "MACE"
+  ],
+  "results": [
+    "Reduced message passing iterations to two",
+    "Improved steepness of learning curves",
+    "State-of-the-art accuracy"
+  ],
+  "paper_id": "62aa9fb55aee126c0fa5cbbf",
+  "title": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast\n  and Accurate Force Fields",
+  "abstract": "  Creating fast and accurate force fields is a long-standing challenge in computational chemistry and materials science. Recently, several equivariant message passing neural networks (MPNNs) have been shown to outperform models built using other approaches in terms of accuracy. However, most MPNNs suffer from high computational cost and poor scalability. We propose that these limitations arise because MPNNs only pass two-body messages leading to a direct relationship between the number of layers and the expressivity of the network. In this work, we introduce MACE, a new equivariant MPNN model that uses higher body order messages. In particular, we show that using four-body messages reduces the required number of message passing iterations to just two, resulting in a fast and highly parallelizable model, reaching or exceeding state-of-the-art accuracy on the rMD17, 3BPA, and AcAc benchmark tasks. We also demonstrate that using higher order messages leads to an improved steepness of the learning curves. "
+}

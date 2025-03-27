@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision-Language Models (VLM) for image captioning or visual question answering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Human interaction-based tuning paradigm",
+    "Pre-trained language models fine-tuning"
+  ],
+  "results": [
+    "Competitive with standard supervised fine-tuning",
+    "Significantly fewer training data",
+    "Minimal feedback required"
+  ],
+  "paper_id": "62fdae3790e50fcafdd63661",
+  "title": "ILLUME: Rationalizing Vision-Language Models through Human Interactions",
+  "abstract": "  Bootstrapping from pre-trained language models has been proven to be an efficient approach for building vision-language models (VLM) for tasks such as image captioning or visual question answering. However, outputs of these models rarely align with user's rationales for specific answers. In order to improve this alignment and reinforce commonsense reasons, we propose a tuning paradigm based on human interactions with machine generated data. Our ILLUME executes the following loop: Given an image-question-answer prompt, the VLM samples multiple candidate rationales, and a human critic provides minimal feedback via preference selection, used for fine-tuning. This loop increases the training data and gradually carves out the VLM's rationalization capabilities that are aligned with human intend. Our exhaustive experiments demonstrate that ILLUME is competitive with standard supervised fine-tuning while using significantly fewer training data and only requiring minimal feedback. "
+}

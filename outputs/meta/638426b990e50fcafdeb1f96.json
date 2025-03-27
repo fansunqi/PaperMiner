@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Skeleton-based Action Recognition"
+  ],
+  "datasets": [
+    "NTU60",
+    "NTU120",
+    "PKUMMD"
+  ],
+  "methods": [
+    "Hierarchical Consistent Contrastive Learning (HiCLR)",
+    "Gradual growing augmentation policy",
+    "Asymmetric loss",
+    "Directional clustering operation"
+  ],
+  "results": [
+    "HiCLR outperforms state-of-the-art methods on NTU60, NTU120, and PKUMMD"
+  ],
+  "paper_id": "638426b990e50fcafdeb1f96",
+  "title": "Hierarchical Consistent Contrastive Learning for Skeleton-Based Action\n  Recognition with Growing Augmentations",
+  "abstract": "  Contrastive learning has been proven beneficial for self-supervised skeleton-based action recognition. Most contrastive learning methods utilize carefully designed augmentations to generate different movement patterns of skeletons for the same semantics. However, it is still a pending issue to apply strong augmentations, which distort the images/skeletons' structures and cause semantic loss, due to their resulting unstable training. In this paper, we investigate the potential of adopting strong augmentations and propose a general hierarchical consistent contrastive learning framework (HiCLR) for skeleton-based action recognition. Specifically, we first design a gradual growing augmentation policy to generate multiple ordered positive pairs, which guide to achieve the consistency of the learned representation from different views. Then, an asymmetric loss is proposed to enforce the hierarchical consistency via a directional clustering operation in the feature space, pulling the representations from strongly augmented views closer to those from weakly augmented views for better generalizability. Meanwhile, we propose and evaluate three kinds of strong augmentations for 3D skeletons to demonstrate the effectiveness of our method. Extensive experiments show that HiCLR outperforms the state-of-the-art methods notably on three large-scale datasets, i.e., NTU60, NTU120, and PKUMMD. "
+}

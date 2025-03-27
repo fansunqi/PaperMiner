@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reliability Degradation and Mitigation in Approximate DNNs under Permanent Faults"
+  ],
+  "datasets": [
+    "MNIST",
+    "Fashion-MNIST",
+    "CIFAR10"
+  ],
+  "methods": [
+    "Fault resilience analysis",
+    "Fault-aware retuning of weights (Fal-reTune)"
+  ],
+  "results": [
+    "Permanent faults exacerbate accuracy loss in AxDNNs",
+    "Fal-reTune improves performance of AxDNNs up to 98% with fault rates up to 50%",
+    "Fault resilience in AxDNNs is orthogonal to their energy efficiency"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bbf1",
+  "title": "Exposing Reliability Degradation and Mitigation in Approximate DNNs\n  under Permanent Faults",
+  "abstract": "  Approximate computing is known for enhancing deep neural network accelerators' energy efficiency by introducing inexactness with a tolerable accuracy loss. However, small accuracy variations may increase the sensitivity of these accelerators towards undesired subtle disturbances, such as permanent faults. The impact of permanent faults in accurate deep neural network (AccDNN) accelerators has been thoroughly investigated in the literature. Conversely, the impact of permanent faults and their mitigation in approximate DNN (AxDNN) accelerators is vastly under-explored. Towards this, we first present an extensive fault resilience analysis of approximate multi-layer perceptrons (MLPs) and convolutional neural networks (CNNs) using the state-of-the-art Evoapprox8b multipliers in GPU and TPU accelerators. Then, we propose a novel fault mitigation method, i.e., fault-aware retuning of weights (Fal-reTune). Fal-reTune retunes the weights using a weight mapping function in the presence of faults for improved classification accuracy. To evaluate the fault resilience and the effectiveness of our proposed mitigation method, we used the most widely used MNIST, Fashion-MNIST, and CIFAR10 datasets. Our results demonstrate that the permanent faults exacerbate the accuracy loss in AxDNNs compared to the AccDNN accelerators. For instance, a permanent fault in AxDNNs can lead to 56\\% accuracy loss, whereas the same faulty bit can lead to only 4\\% accuracy loss in AccDNN accelerators. We empirically show that our proposed Fal-reTune mitigation method improves the performance of AxDNNs up to 98%, even with fault rates of up to 50%. Furthermore, we observe that the fault resilience in AxDNNs is orthogonal to their energy efficiency. "
+}

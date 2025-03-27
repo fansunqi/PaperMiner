@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Identifying reduced order models from physical systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Invariant foliations",
+    "Invariant manifolds",
+    "Autoencoders",
+    "Equation-free models",
+    "Polynomials with compressed tensor coefficients"
+  ],
+  "results": [
+    "Combining an invariant foliation with the corresponding invariant manifold provides an accurate ROM",
+    "Koopman eigenfunctions and autoencoders fail to capture accurate ROMs under the same conditions"
+  ],
+  "paper_id": "62bab8e85aee126c0f6adb54",
+  "title": "Data-driven reduced order models using invariant foliations, manifolds\n  and autoencoders",
+  "abstract": "  This paper explores how to identify a reduced order model (ROM) from a physical system. A ROM captures an invariant subset of the observed dynamics. We find that there are four ways a physical system can be related to a mathematical model: invariant foliations, invariant manifolds, autoencoders and equation-free models. Identification of invariant manifolds and equation-free models require closed-loop manipulation of the system. Invariant foliations and autoencoders can also use off-line data. Only invariant foliations and invariant manifolds can identify ROMs, the rest identify complete models. Therefore, the common case of identifying a ROM from existing data can only be achieved using invariant foliations.   Finding an invariant foliation requires approximating high-dimensional functions. For function approximation, we use polynomials with compressed tensor coefficients, whose complexity increases linearly with increasing dimensions. An invariant manifold can also be found as the fixed leaf of a foliation. This only requires us to resolve the foliation in a small neighbourhood of the invariant manifold, which greatly simplifies the process. Combining an invariant foliation with the corresponding invariant manifold provides an accurate ROM. We analyse the ROM in case of a focus type equilibrium, typical in mechanical systems. The nonlinear coordinate system defined by the invariant foliation or the invariant manifold distorts instantaneous frequencies and damping ratios, which we correct. Through examples we illustrate the calculation of invariant foliations and manifolds, and at the same time show that Koopman eigenfunctions and autoencoders fail to capture accurate ROMs under the same conditions. "
+}

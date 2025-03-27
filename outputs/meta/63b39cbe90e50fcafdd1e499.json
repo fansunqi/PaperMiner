@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-level state machine models",
+    "Low-level models",
+    "Action codes",
+    "Simulation preorder",
+    "Conformance"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Action codes",
+    "Contraction operator",
+    "Refinement operator",
+    "Concretization operator",
+    "Galois connection"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63b39cbe90e50fcafdd1e499",
+  "title": "Action Codes",
+  "abstract": "  We provide a new perspective on the problem how high-level state machine models with abstract actions can be related to low-level models in which these actions are refined by sequences of concrete actions. We describe the connection between high-level and low-level actions using \\emph{action codes}, a variation of the prefix codes known from coding theory. For each action code ${\\mathcal{R}}$, we introduce a \\emph{contraction} operator $\\alpha_{\\mathcal{R}}$ that turns a low-level model $\\mathcal{M}$ into a high-level model, and a \\emph{refinement} operator $\\rho_{\\mathcal{R}}$ that transforms a high-level model $\\mathcal{N}$ into a low-level model. We establish a Galois connection $\\rho_{\\mathcal{R}}(\\mathcal{N}) \\sqsubseteq \\mathcal{M} \\Leftrightarrow \\mathcal{N} \\sqsubseteq \\alpha_{\\mathcal{R}}(\\mathcal{M})$, where $\\sqsubseteq$ is the well-known simulation preorder. For conformance, we typically want to obtain an overapproximation of model $\\mathcal{M}$. To this end, we also introduce a \\emph{concretization} operator $\\gamma_{\\mathcal{R}}$, which behaves like the refinement operator but adds arbitrary behavior at intermediate points, giving us a second Galois connection $\\alpha_{\\mathcal{R}}(\\mathcal{M}) \\sqsubseteq \\mathcal{N} \\Leftrightarrow \\mathcal{M} \\sqsubseteq \\gamma_{\\mathcal{R}}(\\mathcal{N})$. Action codes may be used to construct adaptors that translate between concrete and abstract actions during learning and testing of Mealy machines. If Mealy machine $\\mathcal{M}$ models a black-box system then $\\alpha_{\\mathcal{R}}(\\mathcal{M})$ describes the behavior that can be observed by a learner/tester that interacts with this system via an adaptor derived from code ${\\mathcal{R}}$. Whenever $\\alpha_{\\mathcal{R}}(\\mathcal{M})$ implements (or conforms to) $\\mathcal{N}$, we may conclude that $\\mathcal{M}$ implements (or conforms to) $\\gamma_{{\\mathcal{R}}} (\\mathcal{N})$. "
+}

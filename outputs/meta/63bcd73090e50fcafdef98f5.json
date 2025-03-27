@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/jiamang/DFA"
+  ],
+  "tasks": [
+    "Point cloud classification",
+    "Point cloud segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic feature aggregation (DFA)",
+    "k-nearest neighbors in feature domain",
+    "Relative position encoding",
+    "Semantic feature encoding",
+    "Low-dimensional global features"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63bcd73090e50fcafdef98f5",
+  "title": "Dynamic Local Feature Aggregation for Learning on Point Clouds",
+  "abstract": "  Existing point cloud learning methods aggregate features from neighbouring points relying on constructing graph in the spatial domain, which results in feature update for each point based on spatially-fixed neighbours throughout layers. In this paper, we propose a dynamic feature aggregation (DFA) method that can transfer information by constructing local graphs in the feature domain without spatial constraints. By finding k-nearest neighbors in the feature domain, we perform relative position encoding and semantic feature encoding to explore latent position and feature similarity information, respectively, so that rich local features can be learned. At the same time, we also learn low-dimensional global features from the original point cloud for enhancing feature representation. Between DFA layers, we dynamically update the constructed local graph structure, so that we can learn richer information, which greatly improves adaptability and efficiency. We demonstrate the superiority of our method by conducting extensive experiments on point cloud classification and segmentation tasks. Implementation code is available: https://github.com/jiamang/DFA. "
+}

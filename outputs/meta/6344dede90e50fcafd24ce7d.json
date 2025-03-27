@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fossil segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Model editing",
+    "Mask R-CNN",
+    "Image perturbations"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6344dede90e50fcafd24ce7d",
+  "title": "Improving Data-Efficient Fossil Segmentation via Model Editing",
+  "abstract": "  Most computer vision research focuses on datasets containing thousands of images of commonplace objects. However, many high-impact datasets, such as those in medicine and the geosciences, contain fine-grain objects that require domain-expert knowledge to recognize and are time-consuming to collect and annotate. As a result, these datasets contain few labeled images, and current machine vision models cannot train intensively on them. Originally introduced to correct large-language models, model-editing techniques in machine learning have been shown to improve model performance using only small amounts of data and additional training. Using a Mask R-CNN to segment ancient reef fossils in rock sample images, we present a two-part paradigm to improve fossil segmentation with few labeled images: we first identify model weaknesses using image perturbations and then mitigate those weaknesses using model editing.   Specifically, we apply domain-informed image perturbations to expose the Mask R-CNN's inability to distinguish between different classes of fossils and its inconsistency in segmenting fossils with different textures. To address these shortcomings, we extend an existing model-editing method for correcting systematic mistakes in image classification to image segmentation with no additional labeled data needed and show its effectiveness in decreasing confusion between different kinds of fossils. We also highlight the best settings for model editing in our situation: making a single edit using all relevant pixels in one image (vs. using multiple images, multiple edits, or fewer pixels). Though we focus on fossil segmentation, our approach may be useful in other similar fine-grain segmentation problems where data is limited. "
+}

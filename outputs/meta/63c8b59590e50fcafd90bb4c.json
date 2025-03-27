@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous normalizing flows training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Interpolation of energy functions",
+    "Time-dependent vector field $V_t$ optimization",
+    "PDE between $V_t$ and $f_t$"
+  ],
+  "results": [
+    "Comparison with reverse KL-divergence on Gaussian mixtures",
+    "Boltzmann density of a quantum mechanical particle in a double-well potential"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bb4c",
+  "title": "Learning Deformation Trajectories of Boltzmann Densities",
+  "abstract": "  We introduce a training objective for continuous normalizing flows that can be used in the absence of samples but in the presence of an energy function. Our method relies on either a prescribed or a learnt interpolation $f_t$ of energy functions between the target energy $f_1$ and the energy function of a generalized Gaussian $f_0(x) = ||x/\\sigma||_p^p$. The interpolation of energy functions induces an interpolation of Boltzmann densities $p_t \\propto e^{-f_t}$ and we aim to find a time-dependent vector field $V_t$ that transports samples along the family $p_t$ of densities. The condition of transporting samples along the family $p_t$ can be translated to a PDE between $V_t$ and $f_t$ and we optimize $V_t$ and $f_t$ to satisfy this PDE. We experimentally compare the proposed training objective to the reverse KL-divergence on Gaussian mixtures and on the Boltzmann density of a quantum mechanical particle in a double-well potential. "
+}

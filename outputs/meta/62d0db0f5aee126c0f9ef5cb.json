@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/MASILab/S-EFOV"
+  ],
+  "tasks": [
+    "Body Composition Assessment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semantic Image Extension",
+    "Two-stage method",
+    "Self-supervised model"
+  ],
+  "results": [
+    "Reduces BC assessment error",
+    "Improves intra-subject consistency",
+    "Correlation with anthropometric approximations"
+  ],
+  "paper_id": "62d0db0f5aee126c0f9ef5cb",
+  "title": "Body Composition Assessment with Limited Field-of-view Computed\n  Tomography: A Semantic Image Extension Perspective",
+  "abstract": "  Field-of-view (FOV) tissue truncation beyond the lungs is common in routine lung screening computed tomography (CT). This poses limitations for opportunistic CT- based body composition (BC) assessment as key anatomical structures are missing. Traditionally, extending the FOV of CT is considered as a CT reconstruction problem using limited data. However, this approach relies on the projection domain data which might not be available in application. In this work, we formulate the problem from the semantic image extension perspective which only requires image data as inputs. The proposed two-stage method identifies a new FOV border based on the estimated extent of the complete body and imputes missing tissues in the truncated region. The training samples are simulated using CT slices with complete body in FOV, making the model development self-supervised. We evaluate the validity of the proposed method in automatic BC assessment using lung screening CT with limited FOV. The proposed method effectively restores the missing tissues and reduces BC assessment error introduced by FOV tissue truncation. In the BC assessment for a large-scale lung screening CT dataset, this correction improves both the intra-subject consistency and the correlation with anthropometric approximations. The developed method is available at https://github.com/MASILab/S-EFOV. "
+}

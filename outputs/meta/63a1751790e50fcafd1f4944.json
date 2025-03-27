@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "On-device learning",
+    "Concept drift detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sequential concept drift detection",
+    "On-device sequential learning technique"
+  ],
+  "results": [
+    "Accuracy decrease: 3.8%-4.3% compared to batch-based methods",
+    "Memory size decrease: 88.9%-96.4%",
+    "Execution time decrease: 1.3%-83.8%"
+  ],
+  "paper_id": "63a1751790e50fcafd1f4944",
+  "title": "A Sequential Concept Drift Detection Method for On-Device Learning on\n  Low-End Edge Devices",
+  "abstract": "  A practical issue of edge AI systems is that data distributions of trained dataset and deployed environment may differ due to noise and environmental changes over time. Such a phenomenon is known as a concept drift, and this gap degrades the performance of edge AI systems and may introduce system failures. To address this gap, retraining of neural network models triggered by concept drift detection is a practical approach. However, since available compute resources are strictly limited in edge devices, in this paper we propose a fully sequential concept drift detection method in cooperation with an on-device sequential learning technique of neural networks. In this case, both the neural network retraining and the proposed concept drift detection are done only by sequential computation to reduce computation cost and memory utilization. Evaluation results of the proposed approach shows that while the accuracy is decreased by 3.8%-4.3% compared to existing batch-based detection methods, it decreases the memory size by 88.9%-96.4% and the execution time by 1.3%-83.8%. As a result, the combination of the neural network retraining and the proposed concept drift detection method is demonstrated on Raspberry Pi Pico that has 264kB memory. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dynamic Graph Neural Networks (DGNNs) training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PiPAD: Pipelined and Parallel DGNN training framework"
+  ],
+  "results": [
+    "1.22\times$-$9.57\times$ speedup over the state-of-the-art DGNN frameworks"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e5d1",
+  "title": "PiPAD: Pipelined and Parallel Dynamic GNN Training on GPUs",
+  "abstract": "  Dynamic Graph Neural Networks (DGNNs) have been broadly applied in various real-life applications, such as link prediction and pandemic forecast, to capture both static structural information and temporal characteristics from dynamic graphs. Combining both time-dependent and -independent components, DGNNs manifest substantial parallel computation and data reuse potentials, but suffer from severe memory access inefficiency and data transfer overhead under the canonical one-graph-at-a-time training pattern. To tackle the challenges, we propose PiPAD, a $\\underline{\\textbf{Pi}}pelined$ and $\\underline{\\textbf{PA}}rallel$ $\\underline{\\textbf{D}}GNN$ training framework for the end-to-end performance optimization on GPUs. From both the algorithm and runtime level, PiPAD holistically reconstructs the overall training paradigm from the data organization to computation manner. Capable of processing multiple graph snapshots in parallel, PiPAD eliminates the unnecessary data transmission and alleviates memory access inefficiency to improve the overall performance. Our evaluation across various datasets shows PiPAD achieves $1.22\\times$-$9.57\\times$ speedup over the state-of-the-art DGNN frameworks on three representative models. "
+}

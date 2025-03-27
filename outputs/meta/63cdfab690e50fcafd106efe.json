@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Depth estimation from light field (LF) images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Disparity estimation network (DispNet)",
+    "Occlusion prediction network (OccNet)",
+    "Multi-view feature matching",
+    "Disparity fusion strategy"
+  ],
+  "results": [
+    "Superior performance on both the dense and sparse LF images",
+    "Better generalization ability to the real-world LF images"
+  ],
+  "paper_id": "63cdfab690e50fcafd106efe",
+  "title": "Unsupervised Light Field Depth Estimation via Multi-view Feature\n  Matching with Occlusion Prediction",
+  "abstract": "  Depth estimation from light field (LF) images is a fundamental step for some applications. Recently, learning-based methods have achieved higher accuracy and efficiency than the traditional methods. However, it is costly to obtain sufficient depth labels for supervised training. In this paper, we propose an unsupervised framework to estimate depth from LF images. First, we design a disparity estimation network (DispNet) with a coarse-to-fine structure to predict disparity maps from different view combinations by performing multi-view feature matching to learn the correspondences more effectively. As occlusions may cause the violation of photo-consistency, we design an occlusion prediction network (OccNet) to predict the occlusion maps, which are used as the element-wise weights of photometric loss to solve the occlusion issue and assist the disparity learning. With the disparity maps estimated by multiple input combinations, we propose a disparity fusion strategy based on the estimated errors with effective occlusion handling to obtain the final disparity map. Experimental results demonstrate that our method achieves superior performance on both the dense and sparse LF images, and also has better generalization ability to the real-world LF images. "
+}

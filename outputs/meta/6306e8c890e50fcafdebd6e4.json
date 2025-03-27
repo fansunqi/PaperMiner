@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Question Answering"
+  ],
+  "datasets": [
+    "VQA-v2"
+  ],
+  "methods": [
+    "Unidirectional Split Learning with Contrastive Loss"
+  ],
+  "results": [
+    "Competitive accuracy of 49.89%"
+  ],
+  "paper_id": "6306e8c890e50fcafdebd6e4",
+  "title": "UniCon: Unidirectional Split Learning with Contrastive Loss for Visual\n  Question Answering",
+  "abstract": "  Visual Question Answering (VQA) using multi-modal data facilitates real-life applications, such as home robots and medical diagnoses. However, one significant challenge is to design a robust learning method for various client tasks. One critical aspect is to ensure privacy, as client data sharing is limited due to confidentiality concerns. This work focuses on addressing the issue of confidentiality constraints in multi-client VQA tasks and limited labeled training data of clients. We propose the Unidirectional Split Learning with Contrastive Loss (UniCon) method to overcome these limitations. The proposed method trains a global model on the entire data distribution of different clients, learning refined cross-modal representations through model sharing. Privacy is ensured by utilizing a split learning architecture in which a complete model is partitioned into two components for independent training. Moreover, recent self-supervised learning techniques were found to be highly compatible with split learning. This combination allows for rapid learning of a classification task without labeled data. Furthermore, UniCon integrates knowledge from various local tasks, improving knowledge sharing efficiency. Comprehensive experiments were conducted on the VQA-v2 dataset using five state-of-the-art VQA models, demonstrating the effectiveness of UniCon. The best-performing model achieved a competitive accuracy of 49.89%. UniCon provides a promising solution to tackle VQA tasks in a distributed data silo setting while preserving client privacy. "
+}

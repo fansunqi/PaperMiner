@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human motion generation from textual descriptions"
+  ],
+  "datasets": [
+    "HumanML3D"
+  ],
+  "methods": [
+    "Vector Quantised-Variational AutoEncoder (VQ-VAE)",
+    "Generative Pre-trained Transformer (GPT)"
+  ],
+  "results": [
+    "Comparable performance on HumanML3D (R-Precision)",
+    "FID 0.116 outperforms MotionDiffuse of 0.630"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905c56",
+  "title": "T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete\n  Representations",
+  "abstract": "  In this work, we investigate a simple and must-known conditional generative framework based on Vector Quantised-Variational AutoEncoder (VQ-VAE) and Generative Pre-trained Transformer (GPT) for human motion generation from textural descriptions. We show that a simple CNN-based VQ-VAE with commonly used training recipes (EMA and Code Reset) allows us to obtain high-quality discrete representations. For GPT, we incorporate a simple corruption strategy during the training to alleviate training-testing discrepancy. Despite its simplicity, our T2M-GPT shows better performance than competitive approaches, including recent diffusion-based approaches. For example, on HumanML3D, which is currently the largest dataset, we achieve comparable performance on the consistency between text and generated motion (R-Precision), but with FID 0.116 largely outperforming MotionDiffuse of 0.630. Additionally, we conduct analyses on HumanML3D and observe that the dataset size is a limitation of our approach. Our work suggests that VQ-VAE still remains a competitive approach for human motion generation. "
+}

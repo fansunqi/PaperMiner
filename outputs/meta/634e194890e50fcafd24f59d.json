@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Machine Unlearning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cryptographic definition of verifiable unlearning",
+    "SNARKs",
+    "hash chains",
+    "admissible functions"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "634e194890e50fcafd24f59d",
+  "title": "Verifiable and Provably Secure Machine Unlearning",
+  "abstract": "  Machine unlearning aims to remove points from the training dataset of a machine learning model after training; for example when a user requests their data to be deleted. While many machine unlearning methods have been proposed, none of them enable users to audit the procedure. Furthermore, recent work shows a user is unable to verify if their data was unlearnt from an inspection of the model alone. Rather than reasoning about model parameters, we propose to view verifiable unlearning as a security problem. To this end, we present the first cryptographic definition of verifiable unlearning to formally capture the guarantees of a machine unlearning system. In this framework, the server first computes a proof that the model was trained on a dataset $D$. Given a user data point $d$ requested to be deleted, the server updates the model using an unlearning algorithm. It then provides a proof of the correct execution of unlearning and that $d \\notin D'$, where $D'$ is the new training dataset. Our framework is generally applicable to different unlearning techniques that we abstract as admissible functions. We instantiate the framework, based on cryptographic assumptions, using SNARKs and hash chains. Finally, we implement the protocol for three different unlearning techniques (retraining-based, amnesiac, and optimization-based) to validate its feasibility for linear regression, logistic regression, and neural networks. "
+}

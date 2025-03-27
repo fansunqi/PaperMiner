@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Salient Object Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sharp Eyes network (SENet)",
+    "Target separation (TS) branch",
+    "Object segmentation (OS) branch",
+    "Hierarchical difference aware (HDA) loss"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods",
+    "Improved structural integrity and local details of salient objects"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bb91",
+  "title": "Sharp Eyes: A Salient Object Detector Working The Same Way as Human\n  Visual Characteristics",
+  "abstract": "  Current methods aggregate multi-level features or introduce edge and skeleton to get more refined saliency maps. However, little attention is paid to how to obtain the complete salient object in cluttered background, where the targets are usually similar in color and texture to the background. To handle this complex scene, we propose a sharp eyes network (SENet) that first seperates the object from scene, and then finely segments it, which is in line with human visual characteristics, i.e., to look first and then focus. Different from previous methods which directly integrate edge or skeleton to supplement the defects of objects, the proposed method aims to utilize the expanded objects to guide the network obtain complete prediction. Specifically, SENet mainly consists of target separation (TS) brach and object segmentation (OS) branch trained by minimizing a new hierarchical difference aware (HDA) loss. In the TS branch, we construct a fractal structure to produce saliency features with expanded boundary via the supervision of expanded ground truth, which can enlarge the detail difference between foreground and background. In the OS branch, we first aggregate multi-level features to adaptively select complementary components, and then feed the saliency features with expanded boundary into aggregated features to guide the network obtain complete prediction. Moreover, we propose the HDA loss to further improve the structural integrity and local details of the salient objects, which assigns weight to each pixel according to its distance from the boundary hierarchically. Hard pixels with similar appearance in border region will be given more attention hierarchically to emphasize their importance in completeness prediction. Comprehensive experimental results on five datasets demonstrate that the proposed approach outperforms the state-of-the-art methods both quantitatively and qualitatively. "
+}

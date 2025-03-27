@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Coronary Artery Semantic Labeling"
+  ],
+  "datasets": [
+    "263 ICAs"
+  ],
+  "methods": [
+    "Association Graph-based Graph Matching Network (AGMN)"
+  ],
+  "results": [
+    "Average accuracy: 0.8264",
+    "Average precision: 0.8276",
+    "Average recall: 0.8264",
+    "Average F1-score: 0.8262"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8961",
+  "title": "AGMN: Association Graph-based Graph Matching Network for Coronary Artery\n  Semantic Labeling on Invasive Coronary Angiograms",
+  "abstract": "  Semantic labeling of coronary arterial segments in invasive coronary angiography (ICA) is important for automated assessment and report generation of coronary artery stenosis in the computer-aided diagnosis of coronary artery disease (CAD). Inspired by the training procedure of interventional cardiologists for interpreting the structure of coronary arteries, we propose an association graph-based graph matching network (AGMN) for coronary arterial semantic labeling. We first extract the vascular tree from invasive coronary angiography (ICA) and convert it into multiple individual graphs. Then, an association graph is constructed from two individual graphs where each vertex represents the relationship between two arterial segments. Using the association graph, the AGMN extracts the vertex features by the embedding module, aggregates the features from adjacent vertices and edges by graph convolution network, and decodes the features to generate the semantic mappings between arteries. By learning the mapping of arterial branches between two individual graphs, the unlabeled arterial segments are classified by the labeled segments to achieve semantic labeling. A dataset containing 263 ICAs was employed to train and validate the proposed model, and a five-fold cross-validation scheme was performed. Our AGMN model achieved an average accuracy of 0.8264, an average precision of 0.8276, an average recall of 0.8264, and an average F1-score of 0.8262, which significantly outperformed existing coronary artery semantic labeling methods. In conclusion, we have developed and validated a new algorithm with high accuracy, interpretability, and robustness for coronary artery semantic labeling on ICAs. "
+}

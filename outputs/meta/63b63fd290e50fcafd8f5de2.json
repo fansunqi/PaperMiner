@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph adversarial attacks",
+    "Node classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph Universal Attack (GUAP)",
+    "Adversarial patching",
+    "Graph convolutional network",
+    "Graph attention network"
+  ],
+  "results": [
+    "High attack success rate",
+    "Preserves prediction accuracy",
+    "20x speedup in training with 5% sampling"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5de2",
+  "title": "GUAP: Graph Universal Attack Through Adversarial Patching",
+  "abstract": "  Graph neural networks (GNNs) are a class of effective deep learning models for node classification tasks; yet their predictive capability may be severely compromised under adversarially designed unnoticeable perturbations to the graph structure and/or node data. Most of the current work on graph adversarial attacks aims at lowering the overall prediction accuracy, but we argue that the resulting abnormal model performance may catch attention easily and invite quick counterattack. Moreover, attacks through modification of existing graph data may be hard to conduct if good security protocols are implemented. In this work, we consider an easier attack harder to be noticed, through adversarially patching the graph with new nodes and edges. The attack is universal: it targets a single node each time and flips its connection to the same set of patch nodes. The attack is unnoticeable: it does not modify the predictions of nodes other than the target. We develop an algorithm, named GUAP, that achieves high attack success rate but meanwhile preserves the prediction accuracy. GUAP is fast to train by employing a sampling strategy. We demonstrate that a 5% sampling in each epoch yields 20x speedup in training, with only a slight degradation in attack performance. Additionally, we show that the adversarial patch trained with the graph convolutional network transfers well to other GNNs, such as the graph attention network. "
+}

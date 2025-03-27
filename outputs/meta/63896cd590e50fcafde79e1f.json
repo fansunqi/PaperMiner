@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://shape-guided-diffusion.github.io"
+  ],
+  "tasks": [
+    "Shape-guided editing"
+  ],
+  "datasets": [
+    "MS-COCO"
+  ],
+  "methods": [
+    "Shape-Guided Diffusion",
+    "Inside-Outside Attention"
+  ],
+  "results": [
+    "SOTA results in shape faithfulness",
+    "No degradation in text alignment or image realism"
+  ],
+  "paper_id": "63896cd590e50fcafde79e1f",
+  "title": "Shape-Guided Diffusion with Inside-Outside Attention",
+  "abstract": "  When manipulating an object, existing text-to-image diffusion models often ignore the shape of the object and generate content that is incorrectly scaled, cut off, or replaced with background content. We propose a training-free method, Shape-Guided Diffusion, that modifies pretrained diffusion models to be sensitive to shape input specified by a user or automatically inferred from text. We use a novel Inside-Outside Attention mechanism during the inversion and generation process to apply this shape constraint to the cross- and self-attention maps. Our mechanism designates which spatial region is the object (inside) vs. background (outside) then associates edits specified by text prompts to the correct region. We demonstrate the efficacy of our method on the shape-guided editing task, where the model must replace an object according to a text prompt and object mask. We curate a new ShapePrompts benchmark derived from MS-COCO and achieve SOTA results in shape faithfulness without a degradation in text alignment or image realism according to both automatic metrics and annotator ratings. Our data and code will be made available at https://shape-guided-diffusion.github.io. "
+}

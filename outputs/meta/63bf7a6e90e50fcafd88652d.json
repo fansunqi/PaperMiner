@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Conformational clustering of molecular dynamics simulation data"
+  ],
+  "datasets": [
+    "Wild-type and thermostable mutant of the Trp-cage protein (TC5b and TC10b)",
+    "NTL9",
+    "Protein B"
+  ],
+  "methods": [
+    "cc_analysis",
+    "encodermap",
+    "HDBSCAN"
+  ],
+  "results": [
+    "Maximize the number of assigned frames of a given trajectory",
+    "Find clusters of different densities and structural identity"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88652d",
+  "title": "Fast conformational clustering of extensive molecular dynamics\n  simulation data",
+  "abstract": "  We present an unsupervised data processing workflow that is specifically designed to obtain a fast conformational clustering of long molecular dynamics simulation trajectories. In this approach we combine two dimensionality reduction algorithms (cc\\_analysis and encodermap) with a density-based spatial clustering algorithm (HDBSCAN). The proposed scheme benefits from the strengths of the three algorithms while avoiding most of the drawbacks of the individual methods. Here the cc\\_analysis algorithm is for the first time applied to molecular simulation data. Encodermap complements cc\\_analysis by providing an efficient way to process and assign large amounts of data to clusters. The main goal of the procedure is to maximize the number of assigned frames of a given trajectory, while keeping a clear conformational identity of the clusters that are found. In practice we achieve this by using an iterative clustering approach and a tunable root-mean-square-deviation-based criterion in the final cluster assignment. This allows to find clusters of different densities as well as different degrees of structural identity. With the help of four test systems we illustrate the capability and performance of this clustering workflow: wild-type and thermostable mutant of the Trp-cage protein (TC5b and TC10b), NTL9 and Protein B. Each of these systems poses individual challenges to the scheme, which in total give a nice overview of the advantages, as well as potential difficulties that can arise when using the proposed method. "
+}

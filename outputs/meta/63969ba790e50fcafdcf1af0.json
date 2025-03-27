@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Gaze Redirection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Radiance Fields",
+    "Two-stream architecture",
+    "3D rotation matrix",
+    "Differentiable volume compositing"
+  ],
+  "results": [
+    "Outperforms naively conditioned NeRF baselines",
+    "Outperforms previous state-of-the-art 2D gaze redirection methods"
+  ],
+  "paper_id": "63969ba790e50fcafdcf1af0",
+  "title": "GazeNeRF: 3D-Aware Gaze Redirection with Neural Radiance Fields",
+  "abstract": "  We propose GazeNeRF, a 3D-aware method for the task of gaze redirection. Existing gaze redirection methods operate on 2D images and struggle to generate 3D consistent results. Instead, we build on the intuition that the face region and eyeballs are separate 3D structures that move in a coordinated yet independent fashion. Our method leverages recent advancements in conditional image-based neural radiance fields and proposes a two-stream architecture that predicts volumetric features for the face and eye regions separately. Rigidly transforming the eye features via a 3D rotation matrix provides fine-grained control over the desired gaze angle. The final, redirected image is then attained via differentiable volume compositing. Our experiments show that this architecture outperforms naively conditioned NeRF baselines as well as previous state-of-the-art 2D gaze redirection methods in terms of redirection accuracy and identity preservation. "
+}

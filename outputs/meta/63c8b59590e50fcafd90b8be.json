@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model Reproducibility Study on Left Atrial Fibres"
+  ],
+  "datasets": [
+    "50 CMR datasets"
+  ],
+  "methods": [
+    "Semi-automatic pipeline",
+    "Diffusion tensor MRI human atlas",
+    "LGE-CMR scan",
+    "Simulation of local activation time (LAT) and phase singularity (PS) mapping"
+  ],
+  "results": [
+    "Shape agreement: noticeable differences due to user input",
+    "Fibrosis agreement (0.91/0.99 ICC)",
+    "Fibre orientation agreement (60.63/71.77%)",
+    "LAT maps: median absolute difference of total activation times 2.02ms/1.37ms",
+    "Mean CV difference -4.04mm/s / 2.1mm/s",
+    "PS maps: SSIM 0.648/0.608"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b8be",
+  "title": "Model Reproducibility Study on Left Atrial Fibres",
+  "abstract": "  We present an open-source software pipeline to create patient-specific left atrial (LA) models with fibre orientations and a fibrosis map, suitable for electrophysiology simulations. The semi-automatic pipeline takes as input a contrast enhanced magnetic resonance angiogram, and a late gadolinium enhanced (LGE) contrast magnetic resonance (CMR). Five operators were allocated 20 cases each from a set of 50 CMR datasets to create a total of 100 models to evaluate inter/intra-operator variability. Each output model consisted of (1) a labelled surface mesh open at the pulmonary veins (PV) and mitral valve (MV), (2) fibre orientations mapped from a diffusion tensor MRI human atlas, (3) fibrosis map from the LGE-CMR scan, and (4) simulation of local activation time (LAT) and phase singularity (PS) mapping. We evaluated reproducibility in our pipeline by comparing agreement in shape of the output meshes, fibrosis distribution in the LA body, and fibre orientations; simulations outputs were evaluated comparing total activation times of LAT maps, mean conduction velocity (CV), and structural similarity index measure (SSIM) of PS maps. Our workflow allows a single model to be created in 16.72 +/- 12.25 minutes. Results in this abstract are reported as inter/intra. Shape only differed noticeably with users' selection of the MV and the length of the PV from the ostia to the distal end; fibrosis agreement (0.91/0.99 ICC) and fibre orientation agreement (60.63/71.77 %) were high. LAT maps showed good agreement, the median of the absolute difference of the total activation times was 2.02ms/1.37ms. The average of the mean CV difference was -4.04mm/s / 2.1mm/s. PS maps showed a moderately good agreement with SSIM of 0.648/0.608. Although we found notable differences in the models due to user input, our tests show that operator variability was comparable to that of image resolution or fibre estimation. "
+}

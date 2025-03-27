@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/Steamgjk/Nezha"
+  ],
+  "tasks": [
+    "Consensus Protocol"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nezha",
+    "deadline-ordered multicast (DOM)",
+    "high-accuracy software clock synchronization"
+  ],
+  "results": [
+    "Throughput improvement by median of 5.4x compared to baselines",
+    "Latency improvement by median of 2.3x compared to baselines",
+    "Modest performance reduction for key-value store and fair-access stock exchange applications"
+  ],
+  "paper_id": "62a013785aee126c0ff694c9",
+  "title": "Nezha: Deployable and High-Performance Consensus Using Synchronized\n  Clocks",
+  "abstract": "  This paper presents a high-performance consensus protocol, Nezha, which can be deployed by cloud tenants without any support from their cloud provider. Nezha bridges the gap between protocols such as Multi-Paxos and Raft, which can be readily deployed and protocols such as NOPaxos and Speculative Paxos, that provide better performance, but require access to technologies such as programmable switches and in-network prioritization, which cloud tenants do not have. Nezha uses a new multicast primitive called deadline-ordered multicast (DOM). DOM uses high-accuracy software clock synchronization to synchronize sender and receiver clocks. Senders tag messages with deadlines in synchronized time; receivers process messages in deadline order, on or after their deadline.   We compare Nezha with Multi-Paxos, Fast Paxos, Raft, a NOPaxos version we optimized for the cloud, and 2 recent protocols, Domino and TOQ-EPaxos, that use synchronized clocks. In throughput, Nezha outperforms all baselines by a median of 5.4x (range: 1.9-20.9x). In latency, Nezha outperforms five baselines by a median of 2.3x (range: 1.3-4.0x), with one exception: it sacrifices 33% latency compared with our optimized NOPaxos in one test. We also prototype two applications, a key-value store and a fair-access stock exchange, on top of Nezha to show that Nezha only modestly reduces their performance relative to an unreplicated system. Nezha is available at https://github.com/Steamgjk/Nezha. "
+}

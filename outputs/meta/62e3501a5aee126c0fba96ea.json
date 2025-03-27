@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/ZhangGongjie/SAM-DETR"
+  ],
+  "tasks": [
+    "Object detection"
+  ],
+  "datasets": [
+    "COCO"
+  ],
+  "methods": [
+    "Semantic-Aligned-Matching DETR++",
+    "Plug-and-play module",
+    "Multi-scale feature fusion"
+  ],
+  "results": [
+    "Superior convergence speed",
+    "Competitive detection accuracy",
+    "44.8% AP with 12 training epochs",
+    "49.1% AP with 50 training epochs"
+  ],
+  "paper_id": "62e3501a5aee126c0fba96ea",
+  "title": "Semantic-Aligned Matching for Enhanced DETR Convergence and Multi-Scale\n  Feature Fusion",
+  "abstract": "  The recently proposed DEtection TRansformer (DETR) has established a fully end-to-end paradigm for object detection. However, DETR suffers from slow training convergence, which hinders its applicability to various detection tasks. We observe that DETR's slow convergence is largely attributed to the difficulty in matching object queries to relevant regions due to the unaligned semantics between object queries and encoded image features. With this observation, we design Semantic-Aligned-Matching DETR++ (SAM-DETR++) to accelerate DETR's convergence and improve detection performance. The core of SAM-DETR++ is a plug-and-play module that projects object queries and encoded image features into the same feature embedding space, where each object query can be easily matched to relevant regions with similar semantics. Besides, SAM-DETR++ searches for multiple representative keypoints and exploits their features for semantic-aligned matching with enhanced representation capacity. Furthermore, SAM-DETR++ can effectively fuse multi-scale features in a coarse-to-fine manner on the basis of the designed semantic-aligned matching. Extensive experiments show that the proposed SAM-DETR++ achieves superior convergence speed and competitive detection accuracy. Additionally, as a plug-and-play method, SAM-DETR++ can complement existing DETR convergence solutions with even better performance, achieving 44.8% AP with merely 12 training epochs and 49.1% AP with 50 training epochs on COCO val2017 with ResNet-50. Codes are available at https://github.com/ZhangGongjie/SAM-DETR . "
+}

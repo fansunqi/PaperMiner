@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/beratyenilen/qc-ga"
+  ],
+  "tasks": [
+    "Approximate state preparation on NISQ computers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Genetic algorithm for quantum circuit discovery",
+    "Low-rank state preparation algorithm"
+  ],
+  "results": [
+    "Substantial improvements to the fidelity in preparing Haar random states",
+    "Maximal fidelity for Haar random states achieved by a short approximate state preparation circuit"
+  ],
+  "paper_id": "634781ff90e50fcafd2c2454",
+  "title": "Exploring the optimality of approximate state preparation quantum\n  circuits with a genetic algorithm",
+  "abstract": "  We study the approximate state preparation problem on noisy intermediate-scale quantum (NISQ) computers by applying a genetic algorithm to generate quantum circuits for state preparation. The algorithm can account for the specific characteristics of the physical machine in the evaluation of circuits, such as the native gate set and qubit connectivity. We use our genetic algorithm to optimize the circuits provided by the low-rank state preparation algorithm introduced by Araujo et al., and find substantial improvements to the fidelity in preparing Haar random states with a limited number of CNOT gates. Moreover, we observe that already for a 5-qubit quantum processor with limited qubit connectivity and significant noise levels (IBM Falcon 5T), the maximal fidelity for Haar random states is achieved by a short approximate state preparation circuit instead of the exact preparation circuit. We also present a theoretical analysis of approximate state preparation circuit complexity to motivate our findings. Our genetic algorithm for quantum circuit discovery is freely available at https://github.com/beratyenilen/qc-ga . "
+}

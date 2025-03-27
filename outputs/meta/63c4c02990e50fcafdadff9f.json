@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated medical relation extraction"
+  ],
+  "datasets": [
+    "Three medical relation extraction datasets"
+  ],
+  "methods": [
+    "Major classifier vectors",
+    "Contrasted with Major Classifier vectors (FedCMC)"
+  ],
+  "results": [
+    "FedCMC outperforms the other state-of-the-art FL algorithms"
+  ],
+  "paper_id": "63c4c02990e50fcafdadff9f",
+  "title": "Contrast with Major Classifier Vectors for Federated Medical Relation\n  Extraction with Heterogeneous Label Distribution",
+  "abstract": "  Federated medical relation extraction enables multiple clients to train a deep network collaboratively without sharing their raw medical data. In order to handle the heterogeneous label distribution across clients, most of the existing works only involve enforcing regularization between local and global models during optimization. In this paper, we fully utilize the models of all clients and propose a novel concept of \\textit{major classifier vectors}, where a group of class vectors is obtained in an ensemble rather than the weighted average method on the server. The major classifier vectors are then distributed to all clients and the local training of each client is Contrasted with Major Classifier vectors (FedCMC), so the local model is not prone to overfitting to the local label distribution. FedCMC requires only a small amount of additional transfer of classifier parameters without any leakage of raw data, extracted representations, and label distributions. Our extensive experiments show that FedCMC outperforms the other state-of-the-art FL algorithms on three medical relation extraction datasets. "
+}

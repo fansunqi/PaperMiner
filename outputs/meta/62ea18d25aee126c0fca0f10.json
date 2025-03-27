@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Meta Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stackelberg game",
+    "minimax formulation",
+    "Intermittent Attack",
+    "Persistent Attack"
+  ],
+  "results": [
+    "Minor effort of the attacker can significantly deteriorate the learning performance",
+    "Minimax approach can help robustify meta RL algorithms"
+  ],
+  "paper_id": "62ea18d25aee126c0fca0f10",
+  "title": "Sampling Attacks on Meta Reinforcement Learning: A Minimax Formulation\n  and Complexity Analysis",
+  "abstract": "  Meta reinforcement learning (meta RL), as a combination of meta-learning ideas and reinforcement learning (RL), enables the agent to adapt to different tasks using a few samples. However, this sampling-based adaptation also makes meta RL vulnerable to adversarial attacks. By manipulating the reward feedback from sampling processes in meta RL, an attacker can mislead the agent into building wrong knowledge from training experience, which deteriorates the agent's performance when dealing with different tasks after adaptation. This paper provides a game-theoretical underpinning for understanding this type of security risk. In particular, we formally define the sampling attack model as a Stackelberg game between the attacker and the agent, which yields a minimax formulation. It leads to two online attack schemes: Intermittent Attack and Persistent Attack, which enable the attacker to learn an optimal sampling attack, defined by an $\\epsilon$-first-order stationary point, within $\\mathcal{O}(\\epsilon^{-2})$ iterations. These attack schemes freeride the learning progress concurrently without extra interactions with the environment. By corroborating the convergence results with numerical experiments, we observe that a minor effort of the attacker can significantly deteriorate the learning performance, and the minimax approach can also help robustify the meta RL algorithms. "
+}

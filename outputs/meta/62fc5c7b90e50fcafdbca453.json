@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hypergraph analysis",
+    "Spectral clustering",
+    "p-Laplacians"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Edge-dependent vertex weights (EDVW)",
+    "Submodular splitting functions",
+    "1-Laplacian eigenvector computation"
+  ],
+  "results": [
+    "Higher clustering accuracy than traditional spectral clustering based on the 2-Laplacian",
+    "Effective for all submodular hypergraphs that are graph reducible"
+  ],
+  "paper_id": "62fc5c7b90e50fcafdbca453",
+  "title": "Hypergraphs with Edge-Dependent Vertex Weights: p-Laplacians and\n  Spectral Clustering",
+  "abstract": "  We study p-Laplacians and spectral clustering for a recently proposed hypergraph model that incorporates edge-dependent vertex weights (EDVW). These weights can reflect different importance of vertices within a hyperedge, thus conferring the hypergraph model higher expressivity and flexibility. By constructing submodular EDVW-based splitting functions, we convert hypergraphs with EDVW into submodular hypergraphs for which the spectral theory is better developed. In this way, existing concepts and theorems such as p-Laplacians and Cheeger inequalities proposed under the submodular hypergraph setting can be directly extended to hypergraphs with EDVW. For submodular hypergraphs with EDVW-based splitting functions, we propose an efficient algorithm to compute the eigenvector associated with the second smallest eigenvalue of the hypergraph 1-Laplacian. We then utilize this eigenvector to cluster the vertices, achieving higher clustering accuracy than traditional spectral clustering based on the 2-Laplacian. More broadly, the proposed algorithm works for all submodular hypergraphs that are graph reducible. Numerical experiments using real-world data demonstrate the effectiveness of combining spectral clustering based on the 1-Laplacian and EDVW. "
+}

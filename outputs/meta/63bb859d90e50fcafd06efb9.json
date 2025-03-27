@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Painting Classification"
+  ],
+  "datasets": [
+    "Kaokore dataset"
+  ],
+  "methods": [
+    "Style Transfer",
+    "Data Distillation",
+    "Traditional Data Augmentation",
+    "Domain Adaptation"
+  ],
+  "results": [
+    "Comparable results to SOTA",
+    "Fewer training epochs",
+    "Fewer training parameters"
+  ],
+  "paper_id": "63bb859d90e50fcafd06efb9",
+  "title": "Tackling Data Bias in Painting Classification with Style Transfer",
+  "abstract": "  It is difficult to train classifiers on paintings collections due to model bias from domain gaps and data bias from the uneven distribution of artistic styles. Previous techniques like data distillation, traditional data augmentation and style transfer improve classifier training using task specific training datasets or domain adaptation. We propose a system to handle data bias in small paintings datasets like the Kaokore dataset while simultaneously accounting for domain adaptation in fine-tuning a model trained on real world images. Our system consists of two stages which are style transfer and classification. In the style transfer stage, we generate the stylized training samples per class with uniformly sampled content and style images and train the style transformation network per domain. In the classification stage, we can interpret the effectiveness of the style and content layers at the attention layers when training on the original training dataset and the stylized images. We can tradeoff the model performance and convergence by dynamically varying the proportion of augmented samples in the majority and minority classes. We achieve comparable results to the SOTA with fewer training epochs and a classifier with fewer training parameters. "
+}

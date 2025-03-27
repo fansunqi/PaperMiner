@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stylizing Video Streams",
+    "Temporal-consistency Control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Lite optical-flow network",
+    "Adaptive combination of local and global consistent features"
+  ],
+  "results": [
+    "Interactive consistency-control",
+    "Comparable to state-of-the-art optical-flow network",
+    "Superior to state-of-the-art approaches"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e855",
+  "title": "Interactive Control over Temporal-consistency while Stylizing Video\n  Streams",
+  "abstract": "  With the advent of Neural Style Transfer (NST), stylizing an image has become quite popular. A convenient way for extending stylization techniques to videos is by applying them on a per-frame basis. However, such per-frame application usually lacks temporal-consistency expressed by undesirable flickering artifacts. Most of the existing approaches for enforcing temporal-consistency suffers from one or more of the following drawbacks. They (1) are only suitable for a limited range of stylization techniques, (2) can only be applied in an offline fashion requiring the complete video as input, (3) cannot provide consistency for the task of stylization, or (4) do not provide interactive consistency-control. Note that existing consistent video-filtering approaches aim to completely remove flickering artifacts and thus do not respect any specific consistency-control aspect. For stylization tasks, however, consistency-control is an essential requirement where a certain amount of flickering can add to the artistic look and feel. Moreover, making this control interactive is paramount from a usability perspective. To achieve the above requirements, we propose an approach that can stylize video streams while providing interactive consistency-control. Apart from stylization, our approach also supports various other image processing filters. For achieving interactive performance, we develop a lite optical-flow network that operates at 80 Frames per second (FPS) on desktop systems with sufficient accuracy. We show that the final consistent video-output using our flow network is comparable to that being obtained using state-of-the-art optical-flow network. Further, we employ an adaptive combination of local and global consistent features and enable interactive selection between the two. By objective and subjective evaluation, we show that our method is superior to state-of-the-art approaches. "
+}

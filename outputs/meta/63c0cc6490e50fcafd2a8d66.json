@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Maximal Independent Set (MIS) computation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributed self-stabilizing MIS algorithm",
+    "Random graph process",
+    "Vertex state space extension"
+  ],
+  "results": [
+    "Stabilizes in poly(log n) rounds w.h.p. on G_{n,p} random graphs",
+    "Constant space and constant randomness",
+    "Self-stabilizing"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8d66",
+  "title": "Distributed Self-Stabilizing MIS with Few States and Weak Communication",
+  "abstract": "  We study a simple random process that computes a maximal independent set (MIS) on a general $n$-vertex graph. Each vertex has a binary state, black or white, where black indicates inclusion into the MIS. The vertex states are arbitrary initially, and are updated in parallel: In each round, every vertex whose state is ``inconsistent'' with its neighbors', i.e., it is black and has a black neighbor, or it is white and all neighbors are white, changes its state with probability $1/2$. The process stabilizes with probability 1 on any graph, and the resulting set of black vertices is an MIS. It is also easy to see that the expected stabilization time is $O(\\log n)$ on certain graph families, such as cliques and trees. However, analyzing the process on graphs beyond these simple cases seems challenging.   Our main result is that the process stabilizes in $\\mathrm{poly}(\\log n)$ rounds w.h.p.\\ on $G_{n,p}$ random graphs, for $0\\leq p \\leq \\mathrm{poly}(\\log n)\\cdot n^{-1/2}$ and $p \\geq 1/\\mathrm{poly}(\\log n)$. Further, an extension of this process, with larger but still constant vertex state space, stabilizes in $\\mathrm{poly}(\\log n)$ rounds on $G_{n,p}$ w.h.p., for all $1\\leq p\\leq 1$. We conjecture that this improved bound holds for the original process as well. In fact, we believe that the original process stabilizes in $\\mathrm{poly}(\\log n)$ rounds on any given $n$-vertex graph w.h.p. Both processes readily translate into distributed/parallel MIS algorithms, which are self-stabilizing, use constant space (and constant random bits per round), and assume restricted communication as in the beeping or the synchronous stone age models. To the best of our knowledge, no previously known MIS algorithm is self-stabilizing, uses constant space and constant randomness, and stabilizes in $\\mathrm{poly}(\\log n)$ rounds in general or random graphs. "
+}

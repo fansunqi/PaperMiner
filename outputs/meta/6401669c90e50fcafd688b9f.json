@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hardware-Accelerated RTL Simulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Static bulk-synchronous parallel (BSP) execution model",
+    "Compiler-based resource and communication scheduling"
+  ],
+  "results": [
+    "225-core FPGA implementation running at 475 MHz",
+    "Outperforms state-of-the-art RTL simulator in 8 out of 9 benchmarks"
+  ],
+  "paper_id": "6401669c90e50fcafd688b9f",
+  "title": "Manticore: Hardware-Accelerated RTL Simulation with Static\n  Bulk-Synchronous Parallelism",
+  "abstract": "The demise of Moore's Law and Dennard Scaling has revived interest in\nspecialized computer architectures and accelerators. Verification and testing\nof this hardware depend heavily upon cycle-accurate simulation of\nregister-transfer-level (RTL) designs. The fastest software RTL simulators can\nsimulate designs at 1\u20131000 kHz, i.e., more than three orders of magnitude\nslower than hardware. Improved simulators can increase designers' productivity\nby speeding design iterations and permitting more exhaustive exploration. One\npossibility is to exploit low-level parallelism, as RTL expresses considerable\nfine-grain concurrency. Unfortunately, state-of-the-art RTL simulators often\nperform best on a single core since modern processors cannot effectively\nexploit fine-grain parallelism. This work presents Manticore: a parallel\ncomputer designed to accelerate RTL simulation. Manticore uses a static\nbulk-synchronous parallel (BSP) execution model to eliminate fine-grain\nsynchronization overhead. It relies entirely on a compiler to schedule\nresources and communication, which is feasible since RTL code contains few\ndivergent execution paths. With static scheduling, communication and\nsynchronization no longer incur runtime overhead, making fine-grain parallelism\npractical. Moreover, static scheduling dramatically simplifies processor\nimplementation, significantly increasing the number of cores that fit on a\nchip. Our 225-core FPGA implementation running at 475 MHz outperforms a\nstate-of-the-art RTL simulator running on desktop and server computers in 8 out\nof 9 benchmarks."
+}

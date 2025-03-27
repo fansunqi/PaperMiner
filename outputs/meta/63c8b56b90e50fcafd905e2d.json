@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bounded Model Checking",
+    "Hyperproperties"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Automata-based technique",
+    "Simulation-based algorithms",
+    "SAT queries"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905e2d",
+  "title": "Efficient Loop Conditions for Bounded Model Checking Hyperproperties",
+  "abstract": "  Bounded model checking (BMC) is an effective technique for hunting bugs by incrementally exploring the state space of a system. To reason about infinite traces through a finite structure and to ultimately obtain completeness, BMC incorporates loop conditions that revisit previously observed states. This paper focuses on developing loop conditions for BMC of HyperLTL- a temporal logic for hyperproperties that allows expressing important policies for security and consistency in concurrent systems, etc. Loop conditions for HyperLTL are more complicated than for LTL, as different traces may loop inconsistently in unrelated moments. Existing BMC approaches for HyperLTL only considered linear unrollings without any looping capability, which precludes both finding small infinite traces and obtaining a complete technique. We investigate loop conditions for HyperLTL BMC, where the HyperLTL formula can contain up to one quantifier alternation. We first present a general complete automata-based technique which is based on bounds of maximum unrollings. Then, we introduce alternative simulation-based algorithms that allow exploiting short loops effectively, generating SAT queries whose satisfiability guarantees the outcome of the original model checking problem. We also report empirical evaluation of the prototype implementation of our BMC techniques using Z3py. "
+}

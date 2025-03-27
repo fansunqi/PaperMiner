@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Statistical Inference with Differentially Private Synthetic Data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Noise-aware Bayesian modeling",
+    "Multiple imputation (MI)",
+    "NAPSU-MQ algorithm"
+  ],
+  "results": [
+    "Accurate confidence intervals from DP synthetic data",
+    "Wider intervals with tighter privacy"
+  ],
+  "paper_id": "629587465aee126c0fe14ade",
+  "title": "Noise-Aware Statistical Inference with Differentially Private Synthetic\n  Data",
+  "abstract": "  While generation of synthetic data under differential privacy (DP) has received a lot of attention in the data privacy community, analysis of synthetic data has received much less. Existing work has shown that simply analysing DP synthetic data as if it were real does not produce valid inferences of population-level quantities. For example, confidence intervals become too narrow, which we demonstrate with a simple experiment. We tackle this problem by combining synthetic data analysis techniques from the field of multiple imputation (MI), and synthetic data generation using noise-aware (NA) Bayesian modeling into a pipeline NA+MI that allows computing accurate uncertainty estimates for population-level quantities from DP synthetic data. To implement NA+MI for discrete data generation using the values of marginal queries, we develop a novel noise-aware synthetic data generation algorithm NAPSU-MQ using the principle of maximum entropy. Our experiments demonstrate that the pipeline is able to produce accurate confidence intervals from DP synthetic data. The intervals become wider with tighter privacy to accurately capture the additional uncertainty stemming from DP noise. "
+}

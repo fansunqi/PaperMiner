@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://ivl.cs.brown.edu/#/projects/clip-sculptor"
+  ],
+  "tasks": [
+    "3D shape generation",
+    "shape editing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CLIP-Sculptor",
+    "multi-resolution approach",
+    "discrete latent space",
+    "transformer",
+    "classifier-free guidance"
+  ],
+  "results": [
+    "outperforms state-of-the-art baselines"
+  ],
+  "paper_id": "636482d690e50fcafdcca8da",
+  "title": "CLIP-Sculptor: Zero-Shot Generation of High-Fidelity and Diverse Shapes\n  from Natural Language",
+  "abstract": "  Recent works have demonstrated that natural language can be used to generate and edit 3D shapes. However, these methods generate shapes with limited fidelity and diversity. We introduce CLIP-Sculptor, a method to address these constraints by producing high-fidelity and diverse 3D shapes without the need for (text, shape) pairs during training. CLIP-Sculptor achieves this in a multi-resolution approach that first generates in a low-dimensional latent space and then upscales to a higher resolution for improved shape fidelity. For improved shape diversity, we use a discrete latent space which is modeled using a transformer conditioned on CLIP's image-text embedding space. We also present a novel variant of classifier-free guidance, which improves the accuracy-diversity trade-off. Finally, we perform extensive experiments demonstrating that CLIP-Sculptor outperforms state-of-the-art baselines. The code is available at https://ivl.cs.brown.edu/#/projects/clip-sculptor. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Object Tracking"
+  ],
+  "datasets": [
+    "GOT-10k",
+    "TrackingNet"
+  ],
+  "methods": [
+    "Progressive Context Encoding Transformer Tracker",
+    "context-aware self-attention module",
+    "token pruning technique"
+  ],
+  "results": [
+    "state-of-the-art performance"
+  ],
+  "paper_id": "635b487090e50fcafd330de8",
+  "title": "ProContEXT: Exploring Progressive Context Transformer for Tracking",
+  "abstract": "  Existing Visual Object Tracking (VOT) only takes the target area in the first frame as a template. This causes tracking to inevitably fail in fast-changing and crowded scenes, as it cannot account for changes in object appearance between frames. To this end, we revamped the tracking framework with Progressive Context Encoding Transformer Tracker (ProContEXT), which coherently exploits spatial and temporal contexts to predict object motion trajectories. Specifically, ProContEXT leverages a context-aware self-attention module to encode the spatial and temporal context, refining and updating the multi-scale static and dynamic templates to progressively perform accurately tracking. It explores the complementary between spatial and temporal context, raising a new pathway to multi-context modeling for transformer-based trackers. In addition, ProContEXT revised the token pruning technique to reduce computational complexity. Extensive experiments on popular benchmark datasets such as GOT-10k and TrackingNet demonstrate that the proposed ProContEXT achieves state-of-the-art performance. "
+}

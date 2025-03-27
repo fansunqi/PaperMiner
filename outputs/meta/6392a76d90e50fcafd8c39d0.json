@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/mshukor/VLPCook"
+  ],
+  "tasks": [
+    "Cross-Modal Food Retrieval",
+    "Computational cuisine tasks"
+  ],
+  "datasets": [
+    "Recipe1M",
+    "Recipe1M+",
+    "ROCO"
+  ],
+  "methods": [
+    "Vision-Language Pretraining (VLP)",
+    "Foundation models",
+    "VLPCook model",
+    "Pretrained foundation models (e.g. CLIP)"
+  ],
+  "results": [
+    "+3.3 Recall@1 absolute improvement on Recipe1M dataset",
+    "Generalization to other tasks (i.e, Food Recognition) and domains with structured text"
+  ],
+  "paper_id": "6392a76d90e50fcafd8c39d0",
+  "title": "Vision and Structured-Language Pretraining for Cross-Modal Food\n  Retrieval",
+  "abstract": "  Vision-Language Pretraining (VLP) and Foundation models have been the go-to recipe for achieving SoTA performance on general benchmarks. However, leveraging these powerful techniques for more complex vision-language tasks, such as cooking applications, with more structured input data, is still little investigated. In this work, we propose to leverage these techniques for structured-text based computational cuisine tasks. Our strategy, dubbed VLPCook, first transforms existing image-text pairs to image and structured-text pairs. This allows to pretrain our VLPCook model using VLP objectives adapted to the strutured data of the resulting datasets, then finetuning it on downstream computational cooking tasks. During finetuning, we also enrich the visual encoder, leveraging pretrained foundation models (e.g. CLIP) to provide local and global textual context. VLPCook outperforms current SoTA by a significant margin (+3.3 Recall@1 absolute improvement) on the task of Cross-Modal Food Retrieval on the large Recipe1M dataset. We conduct further experiments on VLP to validate their importance, especially on the Recipe1M+ dataset. Finally, we validate the generalization of the approach to other tasks (i.e, Food Recognition) and domains with structured text such as the Medical domain on the ROCO dataset. The code is available here: https://github.com/mshukor/VLPCook "
+}

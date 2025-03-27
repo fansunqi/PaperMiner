@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Scalable synchronization primitives for disaggregated shared memory"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GCS: Generalized Cache Coherence",
+    "wait queues",
+    "arbitrarily-sized cache lines"
+  ],
+  "results": [
+    "Improves in-memory key-value store performance at scale by 1 - 2 orders of magnitude"
+  ],
+  "paper_id": "63bb859d90e50fcafd06f036",
+  "title": "GCS: Generalized Cache Coherence For Efficient Synchronization",
+  "abstract": "  We explore the design of scalable synchronization primitives for disaggregated shared memory. Porting existing synchronization primitives to disaggregated shared memory results in poor scalability with the number of application threads because they layer synchronization primitives atop cache-coherence substrates, which engenders redundant inter-core communications. Substantially higher cache-coherence latency ($\\mu$s) with substantially lower bandwidths in state-of-the-art disaggregated shared memory designs amplifies the impact of such redundant communications and precludes scalability.   In this work, we argue for a co-design for the cache-coherence and synchronization layers for better performance scaling of multi-threaded applications on disaggregated memory. This is driven by our observation that synchronization primitives are essentially a generalization of cache-coherence protocols in time and space. We present GCS as an implementation of this co-design. GCS employs wait queues and arbitrarily-sized cache lines directly at the cache-coherence protocol layer for temporal and spatial generalization. We evaluate GCS against the layered approach for synchronization primitives: the pthread implementation of reader-writer lock, and show that GCS improves in-memory key-value store performance at scale by 1 - 2 orders of magnitude. "
+}

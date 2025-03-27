@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generic event boundary detection"
+  ],
+  "datasets": [
+    "GEBD benchmark dataset",
+    "TAPOS"
+  ],
+  "methods": [
+    "Pyramid feature maps",
+    "1D convolution operations"
+  ],
+  "results": [
+    "Outperformed state-of-the-art approaches",
+    "Effectiveness demonstrated on TAPOS dataset"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885b71",
+  "title": "Generic Event Boundary Detection in Video with Pyramid Features",
+  "abstract": "  Generic event boundary detection (GEBD) aims to split video into chunks at a broad and diverse set of actions as humans naturally perceive event boundaries. In this study, we present an approach that considers the correlation between neighbor frames with pyramid feature maps in both spatial and temporal dimensions to construct a framework for localizing generic events in video. The features at multiple spatial dimensions of a pre-trained ResNet-50 are exploited with different views in the temporal dimension to form a temporal pyramid feature map. Based on that, the similarity between neighbor frames is calculated and projected to build a temporal pyramid similarity feature vector. A decoder with 1D convolution operations is used to decode these similarities to a new representation that incorporates their temporal relationship for later boundary score estimation. Extensive experiments conducted on the GEBD benchmark dataset show the effectiveness of our system and its variations, in which we outperformed the state-of-the-art approaches. Additional experiments on TAPOS dataset, which contains long-form videos with Olympic sport actions, demonstrated the effectiveness of our study compared to others. "
+}

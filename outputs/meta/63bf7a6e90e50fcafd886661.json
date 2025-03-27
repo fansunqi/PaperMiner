@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neutrino data batch job event reconstruction"
+  ],
+  "datasets": [
+    "ProtoDUNE detector data"
+  ],
+  "methods": [
+    "GPU-accelerated inference server",
+    "DUNE grid job submission tools"
+  ],
+  "results": [
+    "100-GPU cloud-based server meets processing demand",
+    "GPU version of event processing algorithm is two times faster than CPU version"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886661",
+  "title": "Accelerating Machine Learning Inference with GPUs in ProtoDUNE Data\n  Processing",
+  "abstract": "  We study the performance of a cloud-based GPU-accelerated inference server to speed up event reconstruction in neutrino data batch jobs. Using detector data from the ProtoDUNE experiment and employing the standard DUNE grid job submission tools, we attempt to reprocess the data by running several thousand concurrent grid jobs, a rate we expect to be typical of current and future neutrino physics experiments. We process most of the dataset with the GPU version of our processing algorithm and the remainder with the CPU version for timing comparisons. We find that a 100-GPU cloud-based server is able to easily meet the processing demand, and that using the GPU version of the event processing algorithm is two times faster than processing these data with the CPU version when comparing to the newest CPUs in our sample. The amount of data transferred to the inference server during the GPU runs can overwhelm even the highest-bandwidth network switches, however, unless care is taken to observe network facility limits or otherwise distribute the jobs to multiple sites. We discuss the lessons learned from this processing campaign and several avenues for future improvements. "
+}

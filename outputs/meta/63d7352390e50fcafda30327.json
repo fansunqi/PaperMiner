@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Enabling Multi-threading in Heterogeneous Quantum-Classical Programming Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "C++-based parallel constructs",
+    "std::thread",
+    "std::async",
+    "thread-safety",
+    "removing data races"
+  ],
+  "results": [
+    "1.63x improvement in performance for running two Bell kernels in parallel",
+    "1.22x faster for running two Shor's algorithm kernels in parallel",
+    "Better strong scalability for the parallel version"
+  ],
+  "paper_id": "63d7352390e50fcafda30327",
+  "title": "Enabling Multi-threading in Heterogeneous Quantum-Classical Programming\n  Models",
+  "abstract": "  In this paper, we address some of the key limitations to realizing a generic heterogeneous parallel programming model for quantum-classical heterogeneous platforms. We discuss our experience in enabling user-level multi-threading in QCOR as well as challenges that need to be addressed for programming future quantum-classical systems. Specifically, we discuss our design and implementation of introducing C++-based parallel constructs to enable 1) parallel execution of a quantum kernel with std::thread and 2) asynchronous execution with std::async. To do so, we provide a detailed overview of the current implementation of the QCOR programming model and runtime, and discuss how we add 1) thread-safety to some of its user-facing API routines, and 2) increase parallelism in QCOR by removing data races that inhibit multi-threading so as to better utilize available computing resources. We also present preliminary performance results with the Quantum++ back end on a single-node Ryzen9 3900X machine that has 12 physical cores (24 hardware threads) with 128GB of RAM. The results show that running two Bell kernels with 12 threads per kernel in parallel outperforms running the kernels one after the other each with 24 threads (1.63x improvement). In addition, we observe the same trend when running two Shor's algorthm kernels in parallel (1.22x faster than executing the kernels one after the other). Furthermore, the parallel version is better in terms of strong scalability. We believe that our design, implementation, and results will open up an opportunity not only for 1) enabling quicker prototyping of parallel/asynchrony-aware quantum-classical algorithms on quantum circuit simulators in the short-term, but also for 2) realizing a generic heterogeneous parallel programming model for quantum-classical heterogeneous platforms in the long-term. "
+}

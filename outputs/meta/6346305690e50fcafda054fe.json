@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Electromagnetic Scattering Analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Coupled Hybridizable Discontinuous Galerkin (HDG)",
+    "Boundary Integral (BI) Method",
+    "Hybrid Method",
+    "Sparse Direct Matrix Solver",
+    "Multilevel Fast Multipole Algorithm"
+  ],
+  "results": [
+    "Accuracy",
+    "Efficiency",
+    "Applicability"
+  ],
+  "paper_id": "6346305690e50fcafda054fe",
+  "title": "A Coupled Hybridizable Discontinuous Galerkin and Boundary Integral\n  Method for Analyzing Electromagnetic Scattering",
+  "abstract": "  A coupled hybridizable discontinuous Galerkin (HDG) and boundary integral (BI) method is proposed to efficiently analyze electromagnetic scattering from inhomogeneous/composite objects. The coupling between the HDG and the BI equations is realized using the numerical flux operating on the equivalent current and the global unknown of the HDG. This approach yields sparse coupling matrices upon discretization. Inclusion of the BI equation ensures that the only error in enforcing the radiation conditions is the discretization. However, the discretization of this equation yields a dense matrix, which prohibits the use of a direct matrix solver on the overall coupled system as often done with traditional HDG schemes. To overcome this bottleneck, a ``hybrid'' method is developed. This method uses an iterative scheme to solve the overall coupled system but within the matrix-vector multiplication subroutine of the iterations, the inverse of the HDG matrix is efficiently accounted for using a sparse direct matrix solver. The same subroutine also uses the multilevel fast multipole algorithm to accelerate the multiplication of the guess vector with the dense BI matrix. The numerical results demonstrate the accuracy, the efficiency, and the applicability of the proposed HDG-BI solver. "
+}

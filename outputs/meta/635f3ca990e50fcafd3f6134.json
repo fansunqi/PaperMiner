@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speech Translation"
+  ],
+  "datasets": [
+    "MuST-C"
+  ],
+  "methods": [
+    "Perceiver encoder",
+    "Dynamic Latent Access (DLA)"
+  ],
+  "results": [
+    "DLA-trained model matches Transformer baselines",
+    "Flexible deployment with various computational budgets"
+  ],
+  "paper_id": "635f3ca990e50fcafd3f6134",
+  "title": "Efficient Speech Translation with Dynamic Latent Perceivers",
+  "abstract": "  Transformers have been the dominant architecture for Speech Translation in recent years, achieving significant improvements in translation quality. Since speech signals are longer than their textual counterparts, and due to the quadratic complexity of the Transformer, a down-sampling step is essential for its adoption in Speech Translation. Instead, in this research, we propose to ease the complexity by using a Perceiver encoder to map the speech inputs to a fixed-length latent representation. Furthermore, we introduce a novel way of training Perceivers, with Dynamic Latent Access (DLA), unlocking larger latent spaces without any additional computational overhead. Speech-to-Text Perceivers with DLA can match the performance of Transformer baselines across three language pairs in MuST-C. Finally, a DLA-trained model is easily adaptable to DLA at inference, and can be flexibly deployed with various computational budgets, without significant drops in translation quality. "
+}

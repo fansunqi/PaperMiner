@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Facility Location",
+    "Streaming Facility Location",
+    "Euclidean Uniform Facility Location (UFL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Geometric Hashing",
+    "Importance Sampling",
+    "O(1)-approximation",
+    "O(d / log d)-approximation",
+    "O(1 / epsilon)-approximation"
+  ],
+  "results": [
+    "O(1)-approximation using only poly(d*log Delta) space",
+    "O(d / log d)-approximation in one pass",
+    "O(1 / epsilon)-approximation using larger but still sublinear space O(n^epsilon)",
+    "Improved over previous algorithms with space exp(d) or O(d*log^2 Delta)-approximation",
+    "Avoids the O(log Delta) factor in approximation inherent to quadtree decomposition"
+  ],
+  "paper_id": "624d050d5aee126c0f4a77d8",
+  "title": "Streaming Facility Location in High Dimension via Geometric Hashing",
+  "abstract": "  In Euclidean Uniform Facility Location (UFL), the input is a set of clients in $\\mathbb{R}^d$ and the goal is to place facilities to serve them, so as to minimize the total cost of opening facilities plus connecting the clients. We study the setting of dynamic geometric streams, where the clients are presented as a sequence of insertions and deletions of points in the grid $\\{1,\\ldots,\\Delta\\}^d$, and we focus on the \\emph{high-dimensional regime}, where the algorithm must use space polynomial in $d\\cdot\\log\\Delta$.   We present a new algorithmic framework, based on importance sampling, for $O(1)$-approximation of UFL using only $\\mathrm{poly}(d\\cdot\\log\\Delta)$ space. This framework is easy to implement in two passes, one for sampling points and the other for estimating their contribution. Over random-order streams, we can extend this to one pass by using the two halves of the stream separately. Our main result, for arbitrary-order streams, computes $O(d / \\log d)$-approximation in one pass by combining the two passes differently. This improves upon previous algorithms that either need space $\\exp(d)$ or only guarantee $O(d\\cdot\\log^2\\Delta)$-approximation, and therefore our algorithms for high dimension are the first to avoid the $O(\\log\\Delta)$-factor in approximation that is inherent to the widely-used quadtree decomposition. Our improvement is achieved by employing a geometric hashing scheme that maps points in $\\mathbb{R}^d$ into buckets of bounded diameter, with the key property that every point set of small-enough diameter is hashed into few buckets. By applying an alternative bound for this hashing, we also obtain an $O(1 / \\epsilon)$-approximation in one pass, using larger but still sublinear space $O(n^{\\epsilon})$ where $n$ is the number of clients.   We complement our results by showing $1.085$-approximation requires space exponential in $\\mathrm{poly}(d\\cdot\\log\\Delta)$. "
+}

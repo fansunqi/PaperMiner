@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stellar Mergers Simulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HPX",
+    "Kokkos",
+    "GPU Work Aggregation Strategies"
+  ],
+  "results": [
+    "Noticeable speedups on AMD and NVIDIA GPUs"
+  ],
+  "paper_id": "634781ff90e50fcafd2c250e",
+  "title": "From Task-Based GPU Work Aggregation to Stellar Mergers: Turning\n  Fine-Grained CPU Tasks into Portable GPU Kernels",
+  "abstract": "  Meeting both scalability and performance portability requirements is a challenge for any HPC application, especially for adaptively refined ones. In Octo-Tiger, an astrophysics application for the simulation of stellar mergers, we approach this with existing solutions: We employ HPX to obtain fine-grained tasks to easily distribute work and finely overlap communication and computation. For the computations themselves, we use Kokkos to turn these tasks into compute kernels capable of running on hardware ranging from a few CPU cores to powerful accelerators. There is a missing link, however: while the fine-grained parallelism exposed by HPX is useful for scalability, it can hinder GPU performance when the tasks become too small to saturate the device, causing low resource utilization. To bridge this gap, we investigate multiple different GPU work aggregation strategies within Octo-Tiger, adding one new strategy, and evaluate the node-level performance impact on recent AMD and NVIDIA GPUs, achieving noticeable speedups. "
+}

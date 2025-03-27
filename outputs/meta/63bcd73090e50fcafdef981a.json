@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated Speech Recognition (ASR)"
+  ],
+  "datasets": [
+    "LibriSpeech",
+    "in-house voice assistant/search datasets"
+  ],
+  "methods": [
+    "off-policy key-value stores",
+    "text-to-speech methods",
+    "approximate k-nearest-neighbor (KNN) based attentive fusion"
+  ],
+  "results": [
+    "up to 1K GPU-hours reduction in domain adaptation time",
+    "up to 3% WER improvement compared to a fine-tuning baseline"
+  ],
+  "paper_id": "63bcd73090e50fcafdef981a",
+  "title": "Using External Off-Policy Speech-To-Text Mappings in Contextual\n  End-To-End Automated Speech Recognition",
+  "abstract": "  Despite improvements to the generalization performance of automated speech recognition (ASR) models, specializing ASR models for downstream tasks remains a challenging task, primarily due to reduced data availability (necessitating increased data collection), and rapidly shifting data distributions (requiring more frequent model fine-tuning). In this work, we investigate the potential of leveraging external knowledge, particularly through off-policy key-value stores generated with text-to-speech methods, to allow for flexible post-training adaptation to new data distributions. In our approach, audio embeddings captured from text-to-speech, along with semantic text embeddings, are used to bias ASR via an approximate k-nearest-neighbor (KNN) based attentive fusion step. Our experiments on LibiriSpeech and in-house voice assistant/search datasets show that the proposed approach can reduce domain adaptation time by up to 1K GPU-hours while providing up to 3% WER improvement compared to a fine-tuning baseline, suggesting a promising approach for adapting production ASR systems in challenging zero and few-shot scenarios. "
+}

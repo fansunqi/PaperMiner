@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Zero-Touch RAN",
+    "Spectrum Sharing",
+    "Neutral Host Architecture"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimization engine",
+    "Virtualization and slicing techniques",
+    "Micro-services"
+  ],
+  "results": [
+    "Deployment time: 10 seconds",
+    "Cumulative network throughput: 2.18x",
+    "Per-user average throughput: 1.73x"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c5d3",
+  "title": "NeutRAN: An Open RAN Neutral Host Architecture for Zero-Touch RAN and\n  Spectrum Sharing",
+  "abstract": "  Obtaining access to exclusive spectrum, cell sites, Radio Access Network (RAN) equipment, and edge infrastructure requires major capital expenses for mobile network operators. A neutral host infrastructure, where a third-party company provides RAN services to mobile operators through network virtualization and slicing techniques, is seen as a promising solution to decrease these costs. Currently, however, neutral host providers lack automated and virtualized pipelines for onboarding new tenants and to provide elastic and on-demand allocation of resources matching operator's demands. To address this gap, this paper presents NeutRAN, a zero-touch framework based on the O-RAN architecture to support applications on neutral hosts and automatic operator onboarding, that enables multiple tenants to access a shared RAN infrastructure. The NeutRAN architecture builds upon two key components: (i) an optimization engine to guarantee coverage and meet quality of service requirements while accounting for the limited amount of shared spectrum and RAN nodes, and (ii) a fully virtualized and automated infrastructure that converts the output of the optimization engine into deployable micro-services to be executed at RAN nodes and cell sites. NeutRAN was prototyped on an OpenShift cluster and on a programmable testbed with 4 base stations and 10 users from 3 different tenants. We evaluated the benefits of NeutRAN compared to a traditional license-based RAN where each tenant has dedicated physical and spectrum resources. Experimental results show that NeutRAN can deploy a fully operational neutral host-based cellular network in around 10 seconds, and it increases the cumulative network throughput by 2.18x and the per-user average throughput by 1.73x with shared spectrum blocks of 30 MHz. "
+}

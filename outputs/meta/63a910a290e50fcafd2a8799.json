@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Transfer learning",
+    "Neural collapse in transfer learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural collapse",
+    "Pre-training",
+    "Fine-tuning",
+    "Loss design",
+    "Data augmentation",
+    "Projection heads"
+  ],
+  "results": [
+    "Better transferability",
+    "Reduced fine-tuning parameters by at least 70%",
+    "Alleviated overfitting"
+  ],
+  "paper_id": "63a910a290e50fcafd2a8799",
+  "title": "Principled and Efficient Transfer Learning of Deep Models via Neural\n  Collapse",
+  "abstract": "  As model size continues to grow and access to labeled training data remains limited, transfer learning has become a popular approach in many scientific and engineering fields. This study explores the phenomenon of neural collapse (NC) in transfer learning for classification problems, which is characterized by the last-layer features and classifiers of deep networks having zero within-class variability in features and maximally and equally separated between-class feature means. Through the lens of NC, in this work the following findings on transfer learning are discovered: (i) preventing within-class variability collapse to a certain extent during model pre-training on source data leads to better transferability, as it preserves the intrinsic structures of the input data better; (ii) obtaining features with more NC on downstream data during fine-tuning results in better test accuracy. These results provide new insight into commonly used heuristics in model pre-training, such as loss design, data augmentation, and projection heads, and lead to more efficient and principled methods for fine-tuning large pre-trained models. Compared to full model fine-tuning, our proposed fine-tuning methods achieve comparable or even better performance while reducing fine-tuning parameters by at least 70% as well as alleviating overfitting. "
+}

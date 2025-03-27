@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Out-of-Distribution (OOD) detection"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Ensembling multiple detection decisions",
+    "p-value",
+    "multiple hypothesis testing"
+  ],
+  "results": [
+    "Relative performance improvement by 65.40% on CIFAR10",
+    "Relative performance improvement by 26.96% on ImageNet"
+  ],
+  "paper_id": "63aa623990e50fcafd978433",
+  "title": "Boosting Out-of-Distribution Detection with Multiple Pre-trained Models",
+  "abstract": "  Out-of-Distribution (OOD) detection, i.e., identifying whether an input is sampled from a novel distribution other than the training distribution, is a critical task for safely deploying machine learning systems in the open world. Recently, post hoc detection utilizing pre-trained models has shown promising performance and can be scaled to large-scale problems. This advance raises a natural question: Can we leverage the diversity of multiple pre-trained models to improve the performance of post hoc detection methods? In this work, we propose a detection enhancement method by ensembling multiple detection decisions derived from a zoo of pre-trained models. Our approach uses the p-value instead of the commonly used hard threshold and leverages a fundamental framework of multiple hypothesis testing to control the true positive rate of In-Distribution (ID) data. We focus on the usage of model zoos and provide systematic empirical comparisons with current state-of-the-art methods on various OOD detection benchmarks. The proposed ensemble scheme shows consistent improvement compared to single-model detectors and significantly outperforms the current competitive methods. Our method substantially improves the relative performance by 65.40% and 26.96% on the CIFAR10 and ImageNet benchmarks. "
+}

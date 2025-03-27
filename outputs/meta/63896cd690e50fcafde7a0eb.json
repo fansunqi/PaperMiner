@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Satellite object detection"
+  ],
+  "datasets": [
+    "xView"
+  ],
+  "methods": [
+    "Soft labels",
+    "YOLOv5 model"
+  ],
+  "results": [
+    "Soft labels can train a model almost as accurate as a model trained on original data"
+  ],
+  "paper_id": "63896cd690e50fcafde7a0eb",
+  "title": "Soft Labels for Rapid Satellite Object Detection",
+  "abstract": "  Soft labels in image classification are vector representations of an image's true classification. In this paper, we investigate soft labels in the context of satellite object detection. We propose using detections as the basis for a new dataset of soft labels. Much of the effort in creating a high-quality model is gathering and annotating the training data. If we could use a model to generate a dataset for us, we could not only rapidly create datasets, but also supplement existing open-source datasets. Using a subset of the xView dataset, we train a YOLOv5 model to detect cars, planes, and ships. We then use that model to generate soft labels for the second training set which we then train and compare to the original model. We show that soft labels can be used to train a model that is almost as accurate as a model trained on the original data. "
+}

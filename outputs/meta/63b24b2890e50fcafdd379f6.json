@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fluid Dynamics Simulations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Finite Element-Inspired Hypergraph Neural Network (FEIH-GNN)",
+    "Rotation Equivariance"
+  ],
+  "results": [
+    "Stabilized and accurate temporal roll-out predictions within interpolation Reynolds number range",
+    "Extrapolation capability towards higher Reynolds number domain"
+  ],
+  "paper_id": "63b24b2890e50fcafdd379f6",
+  "title": "A Finite Element-Inspired Hypergraph Neural Network: Application to\n  Fluid Dynamics Simulations",
+  "abstract": "  An emerging trend in deep learning research focuses on the applications of graph neural networks (GNNs) for mesh-based continuum mechanics simulations. Most of these learning frameworks operate on graphs wherein each edge connects two nodes. Inspired by the data connectivity in the finite element method, we present a method to construct a hypergraph by connecting the nodes by elements rather than edges. A hypergraph message-passing network is defined on such a node-element hypergraph that mimics the calculation process of local stiffness matrices. We term this method a finite element-inspired hypergraph neural network, in short FEIH($\\phi$)-GNN. We further equip the proposed network with rotation equivariance, and explore its capability for modeling unsteady fluid flow systems. The effectiveness of the network is demonstrated on two common benchmark problems, namely the fluid flow around a circular cylinder and airfoil configurations. Stabilized and accurate temporal roll-out predictions can be obtained using the $\\phi$-GNN framework within the interpolation Reynolds number range. The network is also able to extrapolate moderately towards higher Reynolds number domain out of the training range. "
+}

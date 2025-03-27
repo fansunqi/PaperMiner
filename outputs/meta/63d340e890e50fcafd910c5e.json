@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training End-to-End Speech Enhancement Systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conv-TasNet",
+    "Batching Strategies",
+    "Dynamic Batch Size"
+  ],
+  "results": [
+    "Improved performance with small batch size",
+    "Sorted or bucket batching with dynamic batch size reduces training time and GPU memory usage"
+  ],
+  "paper_id": "63d340e890e50fcafd910c5e",
+  "title": "On Batching Variable Size Inputs for Training End-to-End Speech\n  Enhancement Systems",
+  "abstract": "  The performance of neural network-based speech enhancement systems is primarily influenced by the model architecture, whereas training times and computational resource utilization are primarily affected by training parameters such as the batch size. Since noisy and reverberant speech mixtures can have different duration, a batching strategy is required to handle variable size inputs during training, in particular for state-of-the-art end-to-end systems. Such strategies usually strive for a compromise between zero-padding and data randomization, and can be combined with a dynamic batch size for a more consistent amount of data in each batch. However, the effect of these strategies on resource utilization and more importantly network performance is not well documented. This paper systematically investigates the effect of different batching strategies and batch sizes on the training statistics and speech enhancement performance of a Conv-TasNet, evaluated in both matched and mismatched conditions. We find that using a small batch size during training improves performance in both conditions for all batching strategies. Moreover, using sorted or bucket batching with a dynamic batch size allows for reduced training time and GPU memory usage while achieving similar performance compared to random batching with a fixed batch size. "
+}

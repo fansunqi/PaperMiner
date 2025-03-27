@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cooperative multi-agent reinforcement learning (MARL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformation And Distillation (TAD) framework",
+    "two-stage learning paradigm"
+  ],
+  "results": [
+    "TAD-PPO shows significant outperformance on a large set of cooperative multi-agent tasks"
+  ],
+  "paper_id": "62de09b65aee126c0faa5b89",
+  "title": "Towards Global Optimality in Cooperative MARL with the Transformation\n  And Distillation Framework",
+  "abstract": "  Decentralized execution is one core demand in cooperative multi-agent reinforcement learning (MARL). Recently, most popular MARL algorithms have adopted decentralized policies to enable decentralized execution and use gradient descent as their optimizer. However, there is hardly any theoretical analysis of these algorithms taking the optimization method into consideration, and we find that various popular MARL algorithms with decentralized policies are suboptimal in toy tasks when gradient descent is chosen as their optimization method. In this paper, we theoretically analyze two common classes of algorithms with decentralized policies -- multi-agent policy gradient methods and value-decomposition methods to prove their suboptimality when gradient descent is used. In addition, we propose the Transformation And Distillation (TAD) framework, which reformulates a multi-agent MDP as a special single-agent MDP with a sequential structure and enables decentralized execution by distilling the learned policy on the derived ``single-agent\" MDP. This approach uses a two-stage learning paradigm to address the optimization problem in cooperative MARL, maintaining its performance guarantee. Empirically, we implement TAD-PPO based on PPO, which can theoretically perform optimal policy learning in the finite multi-agent MDPs and shows significant outperformance on a large set of cooperative multi-agent tasks. "
+}

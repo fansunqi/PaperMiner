@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Feature importance inference"
+  ],
+  "datasets": [
+    "Synthetic and real data examples"
+  ],
+  "methods": [
+    "Minipatch ensembles",
+    "Feature subsampling",
+    "Random observation"
+  ],
+  "results": [
+    "Asymptotic coverage for feature importance scores",
+    "Valid confidence intervals for predictions"
+  ],
+  "paper_id": "629ec1f85aee126c0fb6e97e",
+  "title": "Model-Agnostic Confidence Intervals for Feature Importance: A Fast and\n  Powerful Approach Using Minipatch Ensembles",
+  "abstract": "  To promote new scientific discoveries from complex data sets, feature importance inference has been a long-standing statistical problem. Instead of testing for parameters that are only interpretable for specific models, there has been increasing interest in model-agnostic methods, often in the form of feature occlusion or leave-one-covariate-out (LOCO) inference. Existing approaches often make distributional assumptions, which can be difficult to verify in practice, or require model refitting and data splitting, which are computationally intensive and lead to losses in power. In this work, we develop a novel, mostly model-agnostic and distribution-free inference framework for feature importance that is computationally efficient and statistically powerful. Our approach is fast as we avoid model refitting by leveraging a form of random observation and feature subsampling called minipatch ensembles; this approach also improves statistical power by avoiding data splitting. Our framework can be applied on tabular data and with any machine learning algorithm, together with minipatch ensembles, for regression and classification tasks. Despite the dependencies induced by using minipatch ensembles, we show that our approach provides asymptotic coverage for the feature importance score of any model under mild assumptions. Finally, our same procedure can also be leveraged to provide valid confidence intervals for predictions, hence providing fast, simultaneous quantification of the uncertainty of both predictions and feature importance. We validate our intervals on a series of synthetic and real data examples, including non-linear settings, showing that our approach detects the correct important features and exhibits many computational and statistical advantages over existing methods. "
+}

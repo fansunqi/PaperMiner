@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dense prediction in computer vision"
+  ],
+  "datasets": [
+    "nuScenes"
+  ],
+  "methods": [
+    "Dense prediction transformer network",
+    "Radar-Camera fusion"
+  ],
+  "results": [
+    "Improved performance over commonly used fusion strategies",
+    "Outperforms existing convolutional depth estimation models"
+  ],
+  "paper_id": "6368773190e50fcafd674f77",
+  "title": "RCDPT: Radar-Camera fusion Dense Prediction Transformer",
+  "abstract": "  Recently, transformer networks have outperformed traditional deep neural networks in natural language processing and show a large potential in many computer vision tasks compared to convolutional backbones. In the original transformer, readout tokens are used as designated vectors for aggregating information from other tokens. However, the performance of using readout tokens in a vision transformer is limited. Therefore, we propose a novel fusion strategy to integrate radar data into a dense prediction transformer network by reassembling camera representations with radar representations. Instead of using readout tokens, radar representations contribute additional depth information to a monocular depth estimation model and improve performance. We further investigate different fusion approaches that are commonly used for integrating additional modality in a dense prediction transformer network. The experiments are conducted on the nuScenes dataset, which includes camera images, lidar, and radar data. The results show that our proposed method yields better performance than the commonly used fusion strategies and outperforms existing convolutional depth estimation models that fuse camera images and radar. "
+}

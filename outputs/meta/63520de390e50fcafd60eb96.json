@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Dictionary learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SPORADIC"
+  ],
+  "results": [
+    "Recover overcomplete dictionaries with RIP",
+    "Polynomial-time algorithm with near-linear sparsity"
+  ],
+  "paper_id": "63520de390e50fcafd60eb96",
+  "title": "Dictionary Learning for the Almost-Linear Sparsity Regime",
+  "abstract": "  Dictionary learning, the problem of recovering a sparsely used matrix $\\mathbf{D} \\in \\mathbb{R}^{M \\times K}$ and $N$ $s$-sparse vectors $\\mathbf{x}_i \\in \\mathbb{R}^{K}$ from samples of the form $\\mathbf{y}_i = \\mathbf{D}\\mathbf{x}_i$, is of increasing importance to applications in signal processing and data science. When the dictionary is known, recovery of $\\mathbf{x}_i$ is possible even for sparsity linear in dimension $M$, yet to date, the only algorithms which provably succeed in the linear sparsity regime are Riemannian trust-region methods, which are limited to orthogonal dictionaries, and methods based on the sum-of-squares hierarchy, which requires super-polynomial time in order to obtain an error which decays in $M$. In this work, we introduce SPORADIC (SPectral ORAcle DICtionary Learning), an efficient spectral method on family of reweighted covariance matrices. We prove that in high enough dimensions, SPORADIC can recover overcomplete ($K > M$) dictionaries satisfying the well-known restricted isometry property (RIP) even when sparsity is linear in dimension up to logarithmic factors. Moreover, these accuracy guarantees have an ``oracle property\" that the support and signs of the unknown sparse vectors $\\mathbf{x}_i$ can be recovered exactly with high probability, allowing for arbitrarily close estimation of $\\mathbf{D}$ with enough samples in polynomial time. To the author's knowledge, SPORADIC is the first polynomial-time algorithm which provably enjoys such convergence guarantees for overcomplete RIP matrices in the near-linear sparsity regime. "
+}

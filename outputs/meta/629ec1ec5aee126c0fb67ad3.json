@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Generation"
+  ],
+  "datasets": [
+    "QM9",
+    "ZINC"
+  ],
+  "methods": [
+    "Graph Unpooling Layer"
+  ],
+  "results": [
+    "Improvement in graph generation using unpooling layer"
+  ],
+  "paper_id": "629ec1ec5aee126c0fb67ad3",
+  "title": "An Unpooling Layer for Graph Generation",
+  "abstract": "  We propose a novel and trainable graph unpooling layer for effective graph generation. Given a graph with features, the unpooling layer enlarges this graph and learns its desired new structure and features. Since this unpooling layer is trainable, it can be applied to graph generation either in the decoder of a variational autoencoder or in the generator of a generative adversarial network (GAN). We prove that the unpooled graph remains connected and any connected graph can be sequentially unpooled from a 3-nodes graph. We apply the unpooling layer within the GAN generator. Since the most studied instance of graph generation is molecular generation, we test our ideas in this context. Using the QM9 and ZINC datasets, we demonstrate the improvement obtained by using the unpooling layer instead of an adjacency-matrix-based approach. "
+}

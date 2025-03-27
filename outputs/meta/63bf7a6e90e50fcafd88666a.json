@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Novel View Synthesis"
+  ],
+  "datasets": [
+    "CO3D"
+  ],
+  "methods": [
+    "Geometry-biased Transformers",
+    "Dot-product attention mechanism",
+    "3D distances between rays",
+    "Camera-aware embeddings"
+  ],
+  "results": [
+    "Significantly more accurate outputs",
+    "Improves over prior works"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88666a",
+  "title": "Geometry-biased Transformers for Novel View Synthesis",
+  "abstract": "  We tackle the task of synthesizing novel views of an object given a few input images and associated camera viewpoints. Our work is inspired by recent 'geometry-free' approaches where multi-view images are encoded as a (global) set-latent representation, which is then used to predict the color for arbitrary query rays. While this representation yields (coarsely) accurate images corresponding to novel viewpoints, the lack of geometric reasoning limits the quality of these outputs. To overcome this limitation, we propose 'Geometry-biased Transformers' (GBTs) that incorporate geometric inductive biases in the set-latent representation-based inference to encourage multi-view geometric consistency. We induce the geometric bias by augmenting the dot-product attention mechanism to also incorporate 3D distances between rays associated with tokens as a learnable bias. We find that this, along with camera-aware embeddings as input, allows our models to generate significantly more accurate outputs. We validate our approach on the real-world CO3D dataset, where we train our system over 10 categories and evaluate its view-synthesis ability for novel objects as well as unseen categories. We empirically validate the benefits of the proposed geometric biases and show that our approach significantly improves over prior works. "
+}

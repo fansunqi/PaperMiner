@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Privacy Measurement and Control of Data Processing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PAC Security",
+    "Monte-Carlo simulation",
+    "black-box data processing oracle"
+  ],
+  "results": [
+    "PAC security guarantees enjoy simple composition bounds",
+    "Automatic analysis framework can be implemented in an online fashion",
+    "Magnitude of perturbation could be O(1) for many practical data processing tasks"
+  ],
+  "paper_id": "63438d2290e50fcafd4eb20f",
+  "title": "PAC Security: Automatic Privacy Measurement and Control of Data\n  Processing",
+  "abstract": "  We propose and study a new privacy definition, termed Probably Approximately Correct (PAC) Security. PAC security characterizes the information-theoretic hardness to recover sensitive data given arbitrary information disclosure/leakage during/after any processing. Unlike the classic cryptographic definition and Differential Privacy (DP), which consider the adversarial (input-independent) worst case, PAC security is a simulatable metric that quantifies the instance-based impossibility of inference. A fully automatic analysis and proof generation framework is proposed: security parameters can be produced with arbitrarily high confidence via Monte-Carlo simulation for any black-box data processing oracle. This appealing automation property enables analysis of complicated data processing, where the worst-case proof in the classic privacy regime could be loose or even intractable. Moreover, we show that the produced PAC security guarantees enjoy simple composition bounds and the automatic analysis framework can be implemented in an online fashion to analyze the composite PAC security loss even under correlated randomness. On the utility side, the magnitude of (necessary) perturbation required in PAC security is not lower bounded by $\\Theta(\\sqrt{d})$ for a $d$-dimensional release but could be O(1) for many practical data processing tasks, which is in contrast to the input-independent worst-case information-theoretic lower bound. Example applications of PAC security are included with comparisons to existing works. "
+}

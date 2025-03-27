@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/glee4810/EHRSQL"
+  ],
+  "tasks": [
+    "Text-to-SQL for Electronic Health Records"
+  ],
+  "datasets": [
+    "EHRSQL"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c612",
+  "title": "EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records",
+  "abstract": "  We present a new text-to-SQL dataset for electronic health records (EHRs). The utterances were collected from 222 hospital staff, including physicians, nurses, insurance review and health records teams, and more. To construct the QA dataset on structured EHR data, we conducted a poll at a university hospital and templatized the responses to create seed questions. Then, we manually linked them to two open-source EHR databases, MIMIC-III and eICU, and included them with various time expressions and held-out unanswerable questions in the dataset, which were all collected from the poll. Our dataset poses a unique set of challenges: the model needs to 1) generate SQL queries that reflect a wide range of needs in the hospital, including simple retrieval and complex operations such as calculating survival rate, 2) understand various time expressions to answer time-sensitive questions in healthcare, and 3) distinguish whether a given question is answerable or unanswerable based on the prediction confidence. We believe our dataset, EHRSQL, could serve as a practical benchmark to develop and assess QA models on structured EHR data and take one step further towards bridging the gap between text-to-SQL research and its real-life deployment in healthcare. EHRSQL is available at https://github.com/glee4810/EHRSQL. "
+}

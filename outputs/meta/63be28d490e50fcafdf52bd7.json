@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sign language recognition"
+  ],
+  "datasets": [
+    "UWB-SL-Wild",
+    "WLASL100",
+    "ASLLVD"
+  ],
+  "methods": [
+    "Online dictionaries",
+    "Few-shot learning"
+  ],
+  "results": [
+    "Top-1 accuracy of 30.97% on ASLLVD-Skeleton",
+    "Top-1 accuracy of 95.45% on ASLLVD-Skeleton-20"
+  ],
+  "paper_id": "63be28d490e50fcafdf52bd7",
+  "title": "Learning from What is Already Out There: Few-shot Sign Language\n  Recognition with Online Dictionaries",
+  "abstract": "  Today's sign language recognition models require large training corpora of laboratory-like videos, whose collection involves an extensive workforce and financial resources. As a result, only a handful of such systems are publicly available, not to mention their limited localization capabilities for less-populated sign languages. Utilizing online text-to-video dictionaries, which inherently hold annotated data of various attributes and sign languages, and training models in a few-shot fashion hence poses a promising path for the democratization of this technology. In this work, we collect and open-source the UWB-SL-Wild few-shot dataset, the first of its kind training resource consisting of dictionary-scraped videos. This dataset represents the actual distribution and characteristics of available online sign language data. We select glosses that directly overlap with the already existing datasets WLASL100 and ASLLVD and share their class mappings to allow for transfer learning experiments. Apart from providing baseline results on a pose-based architecture, we introduce a novel approach to training sign language recognition models in a few-shot scenario, resulting in state-of-the-art results on ASLLVD-Skeleton and ASLLVD-Skeleton-20 datasets with top-1 accuracy of $30.97~\\%$ and $95.45~\\%$, respectively. "
+}

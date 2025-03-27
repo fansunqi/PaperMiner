@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "TLS Server Deployments Characterization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Active measurement-based methodology",
+    "Empirical optimization strategy",
+    "Client Hellos as scanning probes"
+  ],
+  "results": [
+    "Precision: >99%",
+    "Stable identification of new servers over time"
+  ],
+  "paper_id": "62bab8fa5aee126c0f6afeb2",
+  "title": "Active TLS Stack Fingerprinting: Characterizing TLS Server Deployments\n  at Scale",
+  "abstract": "  Active measurements can be used to collect server characteristics on a large scale. This kind of metadata can help discovering hidden relations and commonalities among server deployments offering new possibilities to cluster and classify them. As an example, identifying a previously-unknown cybercriminal infrastructures can be a valuable source for cyber-threat intelligence. We propose herein an active measurement-based methodology for acquiring Transport Layer Security (TLS) metadata from servers and leverage it for their fingerprinting. Our fingerprints capture the characteristic behavior of the TLS stack primarily caused by the implementation, configuration, and hardware support of the underlying server. Using an empirical optimization strategy that maximizes information gain from every handshake to minimize measurement costs, we generated 10 general-purpose Client Hellos used as scanning probes to create a large database of TLS configurations used for classifying servers. We fingerprinted 28 million servers from the Alexa and Majestic toplists and two Command and Control (C2) blocklists over a period of 30 weeks with weekly snapshots as foundation for two long-term case studies: classification of Content Delivery Network and C2 servers. The proposed methodology shows a precision of more than 99 % and enables a stable identification of new servers over time. This study describes a new opportunity for active measurements to provide valuable insights into the Internet that can be used in security-relevant use cases. "
+}

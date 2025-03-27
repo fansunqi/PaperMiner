@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Explainable AI for Convolutional Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Recipro-CAM"
+  ],
+  "results": [
+    "Average Drop-Coherence-Complexity (ADCC) metric improvement by 1.78% to 3.72%",
+    "Faster than Score-CAM by approximately 148 times"
+  ],
+  "paper_id": "63350ce790e50fcafd351007",
+  "title": "Recipro-CAM: Fast gradient-free visual explanations for convolutional\n  neural networks",
+  "abstract": "  The Convolutional Neural Network (CNN) is a widely used deep learning architecture for computer vision. However, its black box nature makes it difficult to interpret the behavior of the model. To mitigate this issue, AI practitioners have explored explainable AI methods like Class Activation Map (CAM) and Grad-CAM. Although these methods have shown promise, they are limited by architectural constraints or the burden of gradient computing. To overcome this issue, Score-CAM and Ablation-CAM have been proposed as gradient-free methods, but they have longer execution times compared to CAM or Grad-CAM based methods, making them unsuitable for real-world solution though they resolved gradient related issues and enabled inference mode XAI. To address this challenge, we propose a fast gradient-free Reciprocal CAM (Recipro-CAM) method. Our approach involves spatially masking the extracted feature maps to exploit the correlation between activation maps and network predictions for target classes. Our proposed method has yielded promising results, outperforming current state-of-the-art method in the Average Drop-Coherence-Complexity (ADCC) metric by $1.78 \\%$ to $3.72 \\%$, excluding VGG-16 backbone. Moreover, Recipro-CAM generates saliency maps at a similar rate to Grad-CAM and is approximately $148$ times faster than Score-CAM. The source code for Recipro-CAM is available in our data analysis framework. "
+}

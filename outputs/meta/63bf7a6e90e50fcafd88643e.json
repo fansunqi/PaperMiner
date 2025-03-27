@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Kinodynamic Planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Neural Networks",
+    "Constraint Manifold",
+    "Neural Planning"
+  ],
+  "results": [
+    "Planner generates plans satisfying constraints",
+    "Computes plans in constant time",
+    "Validated on simulated tasks and real-world scenario"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88643e",
+  "title": "Fast Kinodynamic Planning on the Constraint Manifold with Deep Neural\n  Networks",
+  "abstract": "  Motion planning is a mature area of research in robotics with many well-established methods based on optimization or sampling the state space, suitable for solving kinematic motion planning. However, when dynamic motions under constraints are needed and computation time is limited, fast kinodynamic planning on the constraint manifold is indispensable. In recent years, learning-based solutions have become alternatives to classical approaches, but they still lack comprehensive handling of complex constraints, such as planning on a lower-dimensional manifold of the task space while considering the robot's dynamics. This paper introduces a novel learning-to-plan framework that exploits the concept of constraint manifold, including dynamics, and neural planning methods. Our approach generates plans satisfying an arbitrary set of constraints and computes them in a short constant time, namely the inference time of a neural network. This allows the robot to plan and replan reactively, making our approach suitable for dynamic environments. We validate our approach on two simulated tasks and in a demanding real-world scenario, where we use a Kuka LBR Iiwa 14 robotic arm to perform the hitting movement in robotic Air Hockey. "
+}

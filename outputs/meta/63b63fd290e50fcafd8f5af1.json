@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Imitation learning",
+    "Dataset aggregation"
+  ],
+  "datasets": [
+    "Car Racing",
+    "Half Cheetah"
+  ],
+  "methods": [
+    "DAgger modification (DADAgger)",
+    "Ensemble of models",
+    "Dropout"
+  ],
+  "results": [
+    "Comparable performance to DAgger",
+    "Reduced expert queries",
+    "Better performance than random sampling baseline",
+    "May build efficient, well-balanced training datasets"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5af1",
+  "title": "DADAgger: Disagreement-Augmented Dataset Aggregation",
+  "abstract": "  DAgger is an imitation algorithm that aggregates its original datasets by querying the expert on all samples encountered during training. In order to reduce the number of samples queried, we propose a modification to DAgger, known as DADAgger, which only queries the expert for state-action pairs that are out of distribution (OOD). OOD states are identified by measuring the variance of the action predictions of an ensemble of models on each state, which we simulate using dropout. Testing on the Car Racing and Half Cheetah environments achieves comparable performance to DAgger but with reduced expert queries, and better performance than a random sampling baseline. We also show that our algorithm may be used to build efficient, well-balanced training datasets by running with no initial data and only querying the expert to resolve uncertainty. "
+}

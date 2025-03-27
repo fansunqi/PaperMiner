@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Control synthesis for uncertain system models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributionally robust chance-constrained program (DRCCP)",
+    "Second-order cone program (SOCP)",
+    "Control barrier function (CBF)",
+    "Control Lyapunov function (CLF)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "633cf5cf90e50fcafd772e81",
+  "title": "Safe and Stable Control Synthesis for Uncertain System Models via\n  Distributionally Robust Optimization",
+  "abstract": "  This paper considers enforcing safety and stability of dynamical systems in the presence of model uncertainty. Safety and stability constraints may be specified using a control barrier function (CBF) and a control Lyapunov function (CLF), respectively. To take model uncertainty into account, robust and chance formulations of the constraints are commonly considered. However, this requires known error bounds or a known distribution for the model uncertainty, and the resulting formulations may suffer from over-conservatism or over-confidence. In this paper, we assume that only a finite set of model parametric uncertainty samples is available and formulate a distributionally robust chance-constrained program (DRCCP) for control synthesis with CBF safety and CLF stability guarantees. To facilitate efficient computation of control inputs during online execution, we present a reformulation of the DRCCP as a second-order cone program (SOCP). Our formulation is evaluated in an adaptive cruise control example in comparison to 1) a baseline CLF-CBF quadratic programming approach, 2) a robust approach that assumes known error bounds of the system uncertainty, and 3) a chance-constrained approach that assumes a known Gaussian Process distribution of the uncertainty. "
+}

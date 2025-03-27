@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model Explanation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ManifoldShap"
+  ],
+  "results": [
+    "More accurate and intuitive explanations",
+    "Robust to off-manifold perturbations"
+  ],
+  "paper_id": "63be28d490e50fcafdf52ea6",
+  "title": "Manifold Restricted Interventional Shapley Values",
+  "abstract": "  Shapley values are model-agnostic methods for explaining model predictions. Many commonly used methods of computing Shapley values, known as off-manifold methods, rely on model evaluations on out-of-distribution input samples. Consequently, explanations obtained are sensitive to model behaviour outside the data distribution, which may be irrelevant for all practical purposes. While on-manifold methods have been proposed which do not suffer from this problem, we show that such methods are overly dependent on the input data distribution, and therefore result in unintuitive and misleading explanations. To circumvent these problems, we propose ManifoldShap, which respects the model's domain of validity by restricting model evaluations to the data manifold. We show, theoretically and empirically, that ManifoldShap is robust to off-manifold perturbations of the model and leads to more accurate and intuitive explanations than existing state-of-the-art Shapley methods. "
+}

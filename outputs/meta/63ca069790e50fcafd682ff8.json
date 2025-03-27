@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated automatic differentiation (FAD)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63ca069790e50fcafd682ff8",
+  "title": "Federated Automatic Differentiation",
+  "abstract": "  Federated learning (FL) is a general framework for learning across heterogeneous clients while preserving data privacy, under the orchestration of a central server. FL methods often compute gradients of loss functions purely locally (ie. entirely at each client, or entirely at the server), typically using automatic differentiation (AD) techniques. We propose a federated automatic differentiation (FAD) framework that 1) enables computing derivatives of functions involving client and server computation as well as communication between them and 2) operates in a manner compatible with existing federated technology. In other words, FAD computes derivatives across communication boundaries. We show, in analogy with traditional AD, that FAD may be implemented using various accumulation modes, which introduce distinct computation-communication trade-offs and systems requirements. Further, we show that a broad class of federated computations is closed under these various modes of FAD, implying in particular that if the original computation can be implemented using privacy-preserving primitives, its derivative may be computed using only these same primitives. We then show how FAD can be used to create algorithms that dynamically learn components of the algorithm itself. In particular, we show that FedAvg-style algorithms can exhibit significantly improved performance by using FAD to adjust the server optimization step automatically, or by using FAD to learn weighting schemes for computing weighted averages across clients. "
+}

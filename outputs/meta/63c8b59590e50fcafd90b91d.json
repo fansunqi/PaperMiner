@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://anonymous.4open.science/r/SegViz-B746"
+  ],
+  "tasks": [
+    "Multi-organ segmentation on heterogeneous data sets with partial annotations"
+  ],
+  "datasets": [
+    "BTCV"
+  ],
+  "methods": [
+    "Federated Learning",
+    "FedBN"
+  ],
+  "results": [
+    "Dice scores: 0.93, 0.83, 0.55, 0.75 for liver, spleen, pancreas, and kidneys",
+    "Significant improvement over baseline models",
+    "Poor performance of central aggregation model"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b91d",
+  "title": "SegViz: A federated-learning based framework for multi-organ\n  segmentation on heterogeneous data sets with partial annotations",
+  "abstract": "  Segmentation is one of the most primary tasks in deep learning for medical imaging, owing to its multiple downstream clinical applications. However, generating manual annotations for medical images is time-consuming, requires high skill, and is an expensive effort, especially for 3D images. One potential solution is to aggregate knowledge from partially annotated datasets from multiple groups to collaboratively train global models using Federated Learning. To this end, we propose SegViz, a federated learning-based framework to train a segmentation model from distributed non-i.i.d datasets with partial annotations. The performance of SegViz was compared against training individual models separately on each dataset as well as centrally aggregating all the datasets in one place and training a single model. The SegViz framework using FedBN as the aggregation strategy demonstrated excellent performance on the external BTCV set with dice scores of 0.93, 0.83, 0.55, and 0.75 for segmentation of liver, spleen, pancreas, and kidneys, respectively, significantly ($p<0.05$) better (except spleen) than the dice scores of 0.87, 0.83, 0.42, and 0.48 for the baseline models. In contrast, the central aggregation model significantly ($p<0.05$) performed poorly on the test dataset with dice scores of 0.65, 0, 0.55, and 0.68. Our results demonstrate the potential of the SegViz framework to train multi-task models from distributed datasets with partial labels. All our implementations are open-source and available at https://anonymous.4open.science/r/SegViz-B746 "
+}

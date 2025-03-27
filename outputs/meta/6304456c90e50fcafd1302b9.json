@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Objective Parameter Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Utility Function Learning",
+    "Preference Learning",
+    "Uncertainty Modeling"
+  ],
+  "results": [
+    "Sample Efficiency and Quality Gains",
+    "Elimination of Repeated Expert Involvement"
+  ],
+  "paper_id": "6304456c90e50fcafd1302b9",
+  "title": "Efficient Utility Function Learning for Multi-Objective Parameter\n  Optimization with Prior Knowledge",
+  "abstract": "  The current state-of-the-art in multi-objective optimization assumes either a given utility function, learns a utility function interactively or tries to determine the complete Pareto front, requiring a post elicitation of the preferred result. However, result elicitation in real world problems is often based on implicit and explicit expert knowledge, making it difficult to define a utility function, whereas interactive learning or post elicitation requires repeated and expensive expert involvement. To mitigate this, we learn a utility function offline, using expert knowledge by means of preference learning. In contrast to other works, we do not only use (pairwise) result preferences, but also coarse information about the utility function space. This enables us to improve the utility function estimate, especially when using very few results. Additionally, we model the occurring uncertainties in the utility function learning task and propagate them through the whole optimization chain. Our method to learn a utility function eliminates the need of repeated expert involvement while still leading to high-quality results. We show the sample efficiency and quality gains of the proposed method in 4 domains, especially in cases where the surrogate utility function is not able to exactly capture the true expert utility function. We also show that to obtain good results, it is important to consider the induced uncertainties and analyze the effect of biased samples, which is a common problem in real world domains. "
+}

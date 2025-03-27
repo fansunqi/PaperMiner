@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian inverse problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "domain-decomposed variational auto-encoder Markov chain Monte Carlo (DD-VAE-MCMC)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905a0c",
+  "title": "A domain-decomposed VAE method for Bayesian inverse problems",
+  "abstract": "  Bayesian inverse problems are often computationally challenging when the forward model is governed by complex partial differential equations (PDEs). This is typically caused by expensive forward model evaluations and high-dimensional parameterization of priors. This paper proposes a domain-decomposed variational auto-encoder Markov chain Monte Carlo (DD-VAE-MCMC) method to tackle these challenges simultaneously. Through partitioning the global physical domain into small subdomains, the proposed method first constructs local deterministic generative models based on local historical data, which provide efficient local prior representations. Gaussian process models with active learning address the domain decomposition interface conditions. Then inversions are conducted on each subdomain independently in parallel and in low-dimensional latent parameter spaces. The local inference solutions are post-processed through the Poisson image blending procedure to result in an efficient global inference result. Numerical examples are provided to demonstrate the performance of the proposed method. "
+}

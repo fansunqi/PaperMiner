@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/Cylumn/daare"
+  ],
+  "tasks": [
+    "Radio Frequency Interference removal from Auroral Kilometric Radiation"
+  ],
+  "datasets": [
+    "Synthetic spectrograms"
+  ],
+  "methods": [
+    "Denoising Autoencoder for Auroral Radio Emissions (DAARE)"
+  ],
+  "results": [
+    "42.2 peak signal-to-noise ratio (PSNR)",
+    "0.981 structural similarity (SSIM)",
+    "Improvement in PSNR by 3.9",
+    "Improvement in SSIM by 0.064"
+  ],
+  "paper_id": "635753cd90e50fcafddddf1e",
+  "title": "Removing Radio Frequency Interference from Auroral Kilometric Radiation\n  with Stacked Autoencoders",
+  "abstract": "  Radio frequency data in astronomy enable scientists to analyze astrophysical phenomena. However, these data can be corrupted by radio frequency interference (RFI) that limits the observation of underlying natural processes. In this study, we extend recent developments in deep learning algorithms to astronomy data. We remove RFI from time-frequency spectrograms containing auroral kilometric radiation (AKR), a coherent radio emission originating from the Earth's auroral zones that is used to study astrophysical plasmas. We propose a Denoising Autoencoder for Auroral Radio Emissions (DAARE) trained with synthetic spectrograms to denoise AKR signals collected at the South Pole Station. DAARE achieves 42.2 peak signal-to-noise ratio (PSNR) and 0.981 structural similarity (SSIM) on synthesized AKR observations, improving PSNR by 3.9 and SSIM by 0.064 compared to state-of-the-art filtering and denoising networks. Qualitative comparisons demonstrate DAARE's capability to effectively remove RFI from real AKR observations, despite being trained completely on a dataset of simulated AKR. The framework for simulating AKR, training DAARE, and employing DAARE can be accessed at github.com/Cylumn/daare. "
+}

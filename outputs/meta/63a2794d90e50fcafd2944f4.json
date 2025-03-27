@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient rollup batch posting strategy"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Operations research"
+  ],
+  "results": [
+    "Improves posting costs by 8% and 29%"
+  ],
+  "paper_id": "63a2794d90e50fcafd2944f4",
+  "title": "Efficient Rollup Batch Posting Strategy on Base Layer",
+  "abstract": "  We design efficient and robust algorithms for the batch posting of rollup chain calldata on the base layer chain, using tools from operations research. We relate the costs of posting and delaying, by converting them to the same units and adding them up. The algorithm that keeps the average and maximum queued number of batches tolerable enough improves the posting costs of the trivial algorithm, which posts batches immediately when they are created, by 8%. On the other hand, the algorithm that only cares moderately about the batch queue length can improve the trivial algorithm posting costs by 29%. Our findings can be used by layer two projects that post data to the base layer at some regular rate. "
+}

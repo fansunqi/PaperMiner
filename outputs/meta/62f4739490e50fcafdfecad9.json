@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Recommender Systems",
+    "Deep Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Model-Agnostic Counterfactual Synthesis (MACS)",
+    "Deep Deterministic Policy Gradient (DDPG)",
+    "Soft Actor Critic (SAC)",
+    "Twin Delayed DDPG"
+  ],
+  "results": [
+    "Improves the performance of RL recommendation agents"
+  ],
+  "paper_id": "62f4739490e50fcafdfecad9",
+  "title": "Plug-and-Play Model-Agnostic Counterfactual Policy Synthesis for Deep\n  Reinforcement Learning based Recommendation",
+  "abstract": "  Recent advances in recommender systems have proved the potential of Reinforcement Learning (RL) to handle the dynamic evolution processes between users and recommender systems. However, learning to train an optimal RL agent is generally impractical with commonly sparse user feedback data in the context of recommender systems. To circumvent the lack of interaction of current RL-based recommender systems, we propose to learn a general Model-Agnostic Counterfactual Synthesis (MACS) Policy for counterfactual user interaction data augmentation. The counterfactual synthesis policy aims to synthesise counterfactual states while preserving significant information in the original state relevant to the user's interests, building upon two different training approaches we designed: learning with expert demonstrations and joint training. As a result, the synthesis of each counterfactual data is based on the current recommendation agent's interaction with the environment to adapt to users' dynamic interests. We integrate the proposed policy Deep Deterministic Policy Gradient (DDPG), Soft Actor Critic (SAC) and Twin Delayed DDPG in an adaptive pipeline with a recommendation agent that can generate counterfactual data to improve the performance of recommendation. The empirical results on both online simulation and offline datasets demonstrate the effectiveness and generalisation of our counterfactual synthesis policy and verify that it improves the performance of RL recommendation agents. "
+}

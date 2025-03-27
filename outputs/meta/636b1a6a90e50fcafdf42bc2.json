@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multiobjective optimization",
+    "Pareto front approximation",
+    "Hessian matrix analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Analytical differentiation",
+    "Newton-Raphson optimization method",
+    "Recursive expression"
+  ],
+  "results": [
+    "Analytical expression for Hessian matrix",
+    "Asymptotically efficient algorithm with time complexity O(n log n)",
+    "Sparsity results"
+  ],
+  "paper_id": "636b1a6a90e50fcafdf42bc2",
+  "title": "The Hypervolume Indicator Hessian Matrix: Analytical Expression,\n  Computational Time Complexity, and Sparsity",
+  "abstract": "  The problem of approximating the Pareto front of a multiobjective optimization problem can be reformulated as the problem of finding a set that maximizes the hypervolume indicator. This paper establishes the analytical expression of the Hessian matrix of the mapping from a (fixed size) collection of $n$ points in the $d$-dimensional decision space (or $m$ dimensional objective space) to the scalar hypervolume indicator value. To define the Hessian matrix, the input set is vectorized, and the matrix is derived by analytical differentiation of the mapping from a vectorized set to the hypervolume indicator. The Hessian matrix plays a crucial role in second-order methods, such as the Newton-Raphson optimization method, and it can be used for the verification of local optimal sets. So far, the full analytical expression was only established and analyzed for the relatively simple bi-objective case. This paper will derive the full expression for arbitrary dimensions ($m\\geq2$ objective functions). For the practically important three-dimensional case, we also provide an asymptotically efficient algorithm with time complexity in $O(n\\log n)$ for the exact computation of the Hessian Matrix' non-zero entries. We establish a sharp bound of $12m-6$ for the number of non-zero entries. Also, for the general $m$-dimensional case, a compact recursive analytical expression is established, and its algorithmic implementation is discussed. Also, for the general case, some sparsity results can be established; these results are implied by the recursive expression. To validate and illustrate the analytically derived algorithms and results, we provide a few numerical examples using Python and Mathematica implementations. Open-source implementations of the algorithms and testing data are made available as a supplement to this paper. "
+}

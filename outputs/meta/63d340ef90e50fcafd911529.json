@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Encryption of superposition states"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantum Permutation Pad (QPP)",
+    "IBM Quantum Computers",
+    "Qiskit development kit"
+  ],
+  "results": [
+    "256 bits of entropy for the QPP algorithm",
+    "Demonstrates QPP scheme applicability for superposition states",
+    "Security discussion"
+  ],
+  "paper_id": "63d340ef90e50fcafd911529",
+  "title": "Quantum Encryption of superposition states with Quantum Permutation Pad\n  in IBM Quantum Computers",
+  "abstract": "  We present an implementation of Kuang and Bettenburg's Quantum Permutation Pad (QPP) used to encrypt superposition states. The project was conducted on currently available IBM quantum systems using the Qiskit development kit. This work extends previously reported implementation of QPP used to encrypt basis states and demonstrates that application of the QPP scheme is not limited to the encryption of basis states. For this implementation, a pad of 56 2-qubit Permutation matrices was used, providing 256 bits of entropy for the QPP algorithm. An image of a cat was used as the plaintext for this experiment. To create corresponding superposition states, we applied a novel operator defined in this paper. These superposition states were then encrypted using QPP, producing superposition ciphertext states. Due to the lack of a quantum channel, we omitted the transmission and executed the decryption procedure on the same IBM quantum system. If a quantum channel existed, the superposition ciphertext states could be transmitted as qubits, and be directly decrypted on a different quantum system. We provide a brief discussion of the security, although the focus of the paper remains on the implementation. Previously we have demonstrated QPP operating in both classical and quantum computers, offering an interesting opportunity to bridge the security gap between classical and quantum systems. This work broadens the applicability of QPP for the encryption of basis states as well as superposition states. "
+}

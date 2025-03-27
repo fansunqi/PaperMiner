@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spatial room acoustic analysis",
+    "Virtual acoustic rendering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized singular value decomposition",
+    "Subspace method"
+  ],
+  "results": [
+    "Lower errors than existing approaches",
+    "Applicability under real-world acoustic conditions"
+  ],
+  "paper_id": "62d8c4565aee126c0f762b41",
+  "title": "Direct and Residual Subspace Decomposition of Spatial Room Impulse\n  Responses",
+  "abstract": "  Psychoacoustic experiments have shown that directional properties of the direct sound, salient reflections, and the late reverberation of an acoustic room response can have a distinct influence on the auditory perception of a given room. Spatial room impulse responses (SRIRs) capture those properties and thus are used for direction-dependent room acoustic analysis and virtual acoustic rendering. This work proposes a subspace method that decomposes SRIRs into a direct part, which comprises the direct sound and the salient reflections, and a residual, to facilitate enhanced analysis and rendering methods by providing individual access to these components. The proposed method is based on the generalized singular value decomposition and interprets the residual as noise that is to be separated from the other components of the reverberation. Large generalized singular values are attributed to the direct part, which is then obtained as a low-rank approximation of the SRIR. By advancing from the end of the SRIR toward the beginning while iteratively updating the residual estimate, the method adapts to spatio-temporal variations of the residual. The method is evaluated using a spatio-spectral error measure and simulated SRIRs of different rooms, microphone arrays, and ratios of direct sound to residual energy. The proposed method creates lower errors than existing approaches in all tested scenarios, including a scenario with two simultaneous reflections. A case study with measured SRIRs shows the applicability of the method under real-world acoustic conditions. A reference implementation is provided. "
+}

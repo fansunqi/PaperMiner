@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Glioma Change Detection"
+  ],
+  "datasets": [
+    "1693 T2-weighted magnetic resonance imaging difference maps created from 183 patients",
+    "BraTS-2015"
+  ],
+  "methods": [
+    "weak labels",
+    "Transfer Learning",
+    "inductive TL",
+    "NLP for label generation",
+    "hyperparameter optimization",
+    "VGG",
+    "ResNeXt"
+  ],
+  "results": [
+    "75% to 82% AUC improvement on VGG classification",
+    "Up to 76% AUC on BraTS-2015 dataset",
+    "3-fold increase in dataset size with weak labels"
+  ],
+  "paper_id": "634f6ae490e50fcafdcb65cc",
+  "title": "Weakly Supervised Learning with Automated Labels from Radiology Reports\n  for Glioma Change Detection",
+  "abstract": "  Gliomas are the most frequent primary brain tumors in adults. Glioma change detection aims at finding the relevant parts of the image that change over time. Although Deep Learning (DL) shows promising performances in similar change detection tasks, the creation of large annotated datasets represents a major bottleneck for supervised DL applications in radiology. To overcome this, we propose a combined use of weak labels (imprecise, but fast-to-create annotations) and Transfer Learning (TL). Specifically, we explore inductive TL, where source and target domains are identical, but tasks are different due to a label shift: our target labels are created manually by three radiologists, whereas our source weak labels are generated automatically from radiology reports via NLP. We frame knowledge transfer as hyperparameter optimization, thus avoiding heuristic choices that are frequent in related works. We investigate the relationship between model size and TL, comparing a low-capacity VGG with a higher-capacity ResNeXt model. We evaluate our models on 1693 T2-weighted magnetic resonance imaging difference maps created from 183 patients, by classifying them into stable or unstable according to tumor evolution. The weak labels extracted from radiology reports allowed us to increase dataset size more than 3-fold, and improve VGG classification results from 75% to 82% AUC. Mixed training from scratch led to higher performance than fine-tuning or feature extraction. To assess generalizability, we ran inference on an open dataset (BraTS-2015: 15 patients, 51 difference maps), reaching up to 76% AUC. Overall, results suggest that medical imaging problems may benefit from smaller models and different TL strategies with respect to computer vision datasets, and that report-generated weak labels are effective in improving model performances. Code, in-house dataset and BraTS labels are released. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Machine Speech Chain"
+  ],
+  "datasets": [
+    "LibriSpeech"
+  ],
+  "methods": [
+    "TTS-to-ASR chain",
+    "multi-GPU batch-level model inference",
+    "multi-dataloader batch generation",
+    "on-the-fly data selection"
+  ],
+  "results": [
+    "Significant improvement in WER in a semi-supervised setting"
+  ],
+  "paper_id": "63bcd73090e50fcafdef99e2",
+  "title": "SpeeChain: A Speech Toolkit for Large-Scale Machine Speech Chain",
+  "abstract": "  This paper introduces SpeeChain, an open-source Pytorch-based toolkit designed to develop the machine speech chain for large-scale use. This first release focuses on the TTS-to-ASR chain, a core component of the machine speech chain, that refers to the TTS data augmentation by unspoken text for ASR. To build an efficient pipeline for the large-scale TTS-to-ASR chain, we implement easy-to-use multi-GPU batch-level model inference, multi-dataloader batch generation, and on-the-fly data selection techniques. In this paper, we first explain the overall procedure of the TTS-to-ASR chain and the difficulties of each step. Then, we present a detailed ablation study on different types of unlabeled data, data filtering thresholds, batch composition, and real-synthetic data ratios. Our experimental results on train_clean_460 of LibriSpeech demonstrate that our TTS-to-ASR chain can significantly improve WER in a semi-supervised setting. "
+}

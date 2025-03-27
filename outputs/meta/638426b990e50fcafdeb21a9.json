@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CNN Inference Offloading in Edge Computing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "AECNN (autoencoder-based CNN architecture)",
+    "Channel attention method",
+    "Entropy encoding",
+    "ResNet-50 architecture"
+  ],
+  "results": [
+    "Data compression by more than 256x with only about 4% accuracy loss",
+    "Outperforms BottleNet++",
+    "Faster inference task completion under poor wireless channel conditions"
+  ],
+  "paper_id": "638426b990e50fcafdeb21a9",
+  "title": "Attention-based Feature Compression for CNN Inference Offloading in Edge\n  Computing",
+  "abstract": "  This paper studies the computational offloading of CNN inference in device-edge co-inference systems. Inspired by the emerging paradigm semantic communication, we propose a novel autoencoder-based CNN architecture (AECNN), for effective feature extraction at end-device. We design a feature compression module based on the channel attention method in CNN, to compress the intermediate data by selecting the most important features. To further reduce communication overhead, we can use entropy encoding to remove the statistical redundancy in the compressed data. At the receiver, we design a lightweight decoder to reconstruct the intermediate data through learning from the received compressed data to improve accuracy. To fasten the convergence, we use a step-by-step approach to train the neural networks obtained based on ResNet-50 architecture. Experimental results show that AECNN can compress the intermediate data by more than 256x with only about 4% accuracy loss, which outperforms the state-of-the-art work, BottleNet++. Compared to offloading inference task directly to edge server, AECNN can complete inference task earlier, in particular, under poor wireless channel condition, which highlights the effectiveness of AECNN in guaranteeing higher accuracy within time constraint. "
+}

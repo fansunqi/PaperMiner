@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph attention networks",
+    "Node classification tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CAR (Causally-guided Regularization of Graph Attention)"
+  ],
+  "results": [
+    "Improves generalizability",
+    "Enhances interpretability of attention weights"
+  ],
+  "paper_id": "63520de390e50fcafd60ec71",
+  "title": "Causally-guided Regularization of Graph Attention Improves\n  Generalizability",
+  "abstract": "  Graph attention networks estimate the relational importance of node neighbors to aggregate relevant information over local neighborhoods for a prediction task. However, the inferred attentions are vulnerable to spurious correlations and connectivity in the training data, hampering the generalizability of the model. We introduce CAR, a general-purpose regularization framework for graph attention networks. Embodying a causal inference approach, CAR aligns the attention mechanism with the causal effects of active interventions on graph connectivity in a scalable manner. CAR is compatible with a variety of graph attention architectures, and we show that it systematically improves generalizability on various node classification tasks. Our ablation studies indicate that CAR hones in on the aspects of graph structure most pertinent to the prediction (e.g., homophily), and does so more effectively than alternative approaches. Finally, we also show that CAR enhances interpretability of attention weights by accentuating node-neighbor relations that point to causal hypotheses. For social media network-sized graphs, a CAR-guided graph rewiring approach could allow us to combine the scalability of graph convolutional methods with the higher performance of graph attention. "
+}

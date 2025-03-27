@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-modal skin lesion diagnosis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Throughout Fusion Transformer (TFormer)",
+    "Transformer",
+    "dual-branch hierarchical multi-modal transformer (HMT) blocks",
+    "multi-modal transformer post-fusion (MTP) block"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "637c3dd690e50fcafd77cc86",
+  "title": "TFormer: A throughout fusion transformer for multi-modal skin lesion\n  diagnosis",
+  "abstract": "  Multi-modal skin lesion diagnosis (MSLD) has achieved remarkable success by modern computer-aided diagnosis (CAD) technology based on deep convolutions. However, the information aggregation across modalities in MSLD remains challenging due to severity unaligned spatial resolution (e.g., dermoscopic image and clinical image) and heterogeneous data (e.g., dermoscopic image and patients' meta-data). Limited by the intrinsic local attention, most recent MSLD pipelines using pure convolutions struggle to capture representative features in shallow layers, thus the fusion across different modalities is usually done at the end of the pipelines, even at the last layer, leading to an insufficient information aggregation. To tackle the issue, we introduce a pure transformer-based method, which we refer to as ``Throughout Fusion Transformer (TFormer)'', for sufficient information integration in MSLD. Different from the existing approaches with convolutions, the proposed network leverages transformer as feature extraction backbone, bringing more representative shallow features. We then carefully design a stack of dual-branch hierarchical multi-modal transformer (HMT) blocks to fuse information across different image modalities in a stage-by-stage way. With the aggregated information of image modalities, a multi-modal transformer post-fusion (MTP) block is designed to integrate features across image and non-image data. Such a strategy that information of the image modalities is firstly fused then the heterogeneous ones enables us to better divide and conquer the two major challenges while ensuring inter-modality dynamics are effectively modeled. "
+}

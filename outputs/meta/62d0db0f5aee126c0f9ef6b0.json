@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Machine learning on milliwatt-scale edge devices",
+    "TinyML",
+    "Model compression",
+    "Image classification",
+    "Keyword spotting",
+    "Visual wake word detection"
+  ],
+  "datasets": [
+    "MLPerf tiny benchmark suite"
+  ],
+  "methods": [
+    "Tiny-Resource Efficient Convolutional neural networks with early-eXit",
+    "Early exit intermediate classifier",
+    "Alleviating network overthinking"
+  ],
+  "results": [
+    "Improves accuracy of baseline network",
+    "31.58% average reduction in FLOPS",
+    "One percent accuracy reduction",
+    "Outperforms popular prior works"
+  ],
+  "paper_id": "62d0db0f5aee126c0f9ef6b0",
+  "title": "T-RECX: Tiny-Resource Efficient Convolutional neural networks with\n  early-eXit",
+  "abstract": "  Deploying Machine learning (ML) on milliwatt-scale edge devices (tinyML) is gaining popularity due to recent breakthroughs in ML and Internet of Things (IoT). Most tinyML research focuses on model compression techniques that trade accuracy (and model capacity) for compact models to fit into the KB-sized tiny-edge devices. In this paper, we show how such models can be enhanced by the addition of an early exit intermediate classifier. If the intermediate classifier exhibits sufficient confidence in its prediction, the network exits early thereby, resulting in considerable savings in time. Although early exit classifiers have been proposed in previous work, these previous proposals focus on large networks, making their techniques suboptimal/impractical for tinyML applications. Our technique is optimized specifically for tiny-CNN sized models. In addition, we present a method to alleviate the effect of network overthinking by leveraging the representations learned by the early exit. We evaluate T-RecX on three CNNs from the MLPerf tiny benchmark suite for image classification, keyword spotting and visual wake word detection tasks. Our results show that T-RecX 1) improves the accuracy of baseline network, 2) achieves 31.58% average reduction in FLOPS in exchange for one percent accuracy across all evaluated models. Furthermore, we show that our methods consistently outperform popular prior works on the tiny-CNNs we evaluate. "
+}

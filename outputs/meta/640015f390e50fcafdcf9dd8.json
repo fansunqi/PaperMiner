@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Scoring in Science Education"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Matching Exemplar as Next Sentence Prediction (MeNSP)"
+  ],
+  "results": [
+    "Machine-human scoring agreements, Cohen's Kappa ranges from 0.30 to 0.57, F1 score ranges from 0.54 to 0.81",
+    "Improved performance with more samples, Cohen's Kappa from 0.30 to 0.38, F1 score from 0.54 to 0.59 for one task",
+    "Randomly selected few-shots perform better than the human expert-crafted approach"
+  ],
+  "paper_id": "640015f390e50fcafdcf9dd8",
+  "title": "Matching Exemplar as Next Sentence Prediction (MeNSP): Zero-shot Prompt\n  Learning for Automatic Scoring in Science Education",
+  "abstract": "  Developing models to automatically score students' written responses to science problems is critical for science education. However, collecting and labeling sufficient student responses for training models is time and cost-consuming. Recent studies suggest that pre-trained language models (PLMs) can be adapted to downstream tasks without fine-tuning with prompts. However, no research has employed such a prompt approach in science education. As student responses are presented with natural language, aligning the scoring procedure as the next sentence prediction task using prompts can skip the costly fine-tuning stage. In this study, we developed a zero-shot approach to automatically score student responses via Matching Exemplars as Next Sentence Prediction (MeNSP). This approach employs no training samples. We first apply MeNSP in scoring three assessment tasks of scientific argumentation and found machine-human scoring agreements, Cohen's Kappa ranges from 0.30 to 0.57, and F1 score ranges from 0.54 to 0.81. To improve the performance, we extend our research to the few-shots setting, either randomly selecting labeled student responses or manually constructing responses to fine-tune the models. We find that one task's performance is improved with more samples, Cohen's Kappa from 0.30 to 0.38, and F1 score from 0.54 to 0.59; for the two others, scoring performance is not improved. We also find that randomly selected few-shots perform better than the human expert-crafted approach. This study suggests that MeNSP can yield referable automatic scoring for student responses while significantly reducing the cost of model training. This method can benefit low-stakes classroom assessment practices in science education. Future research should further explore the applicability of the MeNSP in different types of assessment tasks in science education and improve the model performance. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/xbq1994/Feature-Recovery-Transformer"
+  ],
+  "tasks": [
+    "Person Re-identification"
+  ],
+  "datasets": [
+    "Occluded-Duke",
+    "None"
+  ],
+  "methods": [
+    "Feature Recovery Transformer (FRT)",
+    "Visibility graph matching",
+    "Recovery transformer"
+  ],
+  "results": [
+    "6.2% Rank-1 accuracy improvement",
+    "7.2% mAP score improvement"
+  ],
+  "paper_id": "63bf7a6990e50fcafd88598a",
+  "title": "Learning Feature Recovery Transformer for Occluded Person\n  Re-identification",
+  "abstract": "  One major issue that challenges person re-identification (Re-ID) is the ubiquitous occlusion over the captured persons. There are two main challenges for the occluded person Re-ID problem, i.e., the interference of noise during feature matching and the loss of pedestrian information brought by the occlusions. In this paper, we propose a new approach called Feature Recovery Transformer (FRT) to address the two challenges simultaneously, which mainly consists of visibility graph matching and feature recovery transformer. To reduce the interference of the noise during feature matching, we mainly focus on visible regions that appear in both images and develop a visibility graph to calculate the similarity. In terms of the second challenge, based on the developed graph similarity, for each query image, we propose a recovery transformer that exploits the feature sets of its $k$-nearest neighbors in the gallery to recover the complete features. Extensive experiments across different person Re-ID datasets, including occluded, partial and holistic datasets, demonstrate the effectiveness of FRT. Specifically, FRT significantly outperforms state-of-the-art results by at least 6.2\\% Rank-1 accuracy and 7.2\\% mAP scores on the challenging Occluded-Duke dataset. The code is available at https://github.com/xbq1994/Feature-Recovery-Transformer. "
+}

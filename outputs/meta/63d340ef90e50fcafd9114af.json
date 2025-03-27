@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "De-fencing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Flow-Guided Multi-frame De-fencing",
+    "CNN modules",
+    "Synthetic data"
+  ],
+  "results": [
+    "Real-time performance",
+    "Outperforms more complicated alternatives",
+    "Quantitatively and qualitatively better"
+  ],
+  "paper_id": "63d340ef90e50fcafd9114af",
+  "title": "Efficient Flow-Guided Multi-frame De-fencing",
+  "abstract": "  Taking photographs ''in-the-wild'' is often hindered by fence obstructions that stand between the camera user and the scene of interest, and which are hard or impossible to avoid. De-fencing is the algorithmic process of automatically removing such obstructions from images, revealing the invisible parts of the scene. While this problem can be formulated as a combination of fence segmentation and image inpainting, this often leads to implausible hallucinations of the occluded regions. Existing multi-frame approaches rely on propagating information to a selected keyframe from its temporal neighbors, but they are often inefficient and struggle with alignment of severely obstructed images. In this work we draw inspiration from the video completion literature and develop a simplified framework for multi-frame de-fencing that computes high quality flow maps directly from obstructed frames and uses them to accurately align frames. Our primary focus is efficiency and practicality in a real-world setting: the input to our algorithm is a short image burst (5 frames) - a data modality commonly available in modern smartphones - and the output is a single reconstructed keyframe, with the fence removed. Our approach leverages simple yet effective CNN modules, trained on carefully generated synthetic data, and outperforms more complicated alternatives real bursts, both quantitatively and qualitatively, while running real-time. "
+}

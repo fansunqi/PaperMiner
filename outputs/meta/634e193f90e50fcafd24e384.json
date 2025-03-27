@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Path prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph Isomorphism Networks",
+    "attention module"
+  ],
+  "results": [
+    "Vehicle bird's-eye view domain: 42% and 61% improvement in ADE and FDE",
+    "Pedestrian high-angle view domain: 23% and 22% improvement in ADE and FDE"
+  ],
+  "paper_id": "634e193f90e50fcafd24e384",
+  "title": "Pishgu: Universal Path Prediction Network Architecture for Real-time\n  Cyber-physical Edge Systems",
+  "abstract": "  Path prediction is an essential task for many real-world Cyber-Physical Systems (CPS) applications, from autonomous driving and traffic monitoring/management to pedestrian/worker safety. These real-world CPS applications need a robust, lightweight path prediction that can provide a universal network architecture for multiple subjects (e.g., pedestrians and vehicles) from different perspectives. However, most existing algorithms are tailor-made for a unique subject with a specific camera perspective and scenario. This article presents Pishgu, a universal lightweight network architecture, as a robust and holistic solution for path prediction. Pishgu's architecture can adapt to multiple path prediction domains with different subjects (vehicles, pedestrians), perspectives (bird's-eye, high-angle), and scenes (sidewalk, highway). Our proposed architecture captures the inter-dependencies within the subjects in each frame by taking advantage of Graph Isomorphism Networks and the attention module. We separately train and evaluate the efficacy of our architecture on three different CPS domains across multiple perspectives (vehicle bird's-eye view, pedestrian bird's-eye view, and human high-angle view). Pishgu outperforms state-of-the-art solutions in the vehicle bird's-eye view domain by 42% and 61% and pedestrian high-angle view domain by 23% and 22% in terms of ADE and FDE, respectively. Additionally, we analyze the domain-specific details for various datasets to understand their effect on path prediction and model interpretation. Finally, we report the latency and throughput for all three domains on multiple embedded platforms showcasing the robustness and adaptability of Pishgu for real-world integration into CPS applications. "
+}

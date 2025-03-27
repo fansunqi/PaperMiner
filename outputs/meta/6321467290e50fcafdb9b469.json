@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Annealing",
+    "Estimating Effective Noise"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Embedding Disjoint Random QUBO",
+    "Using Idle Qubits"
+  ],
+  "results": [
+    "Long term trends in solution quality",
+    "Measurement of current level of noise"
+  ],
+  "paper_id": "6321467290e50fcafdb9b469",
+  "title": "Noise Dynamics of Quantum Annealers: Estimating the Effective Noise\n  Using Idle Qubits",
+  "abstract": "  Quantum annealing is a type of analog computation that aims to use quantum mechanical fluctuations in search of optimal solutions of QUBO (quadratic unconstrained binary optimization) or, equivalently, Ising problems. Since NP-hard problems can in general be mapped to Ising and QUBO formulations, the quantum annealing paradigm has the potential to help solve various NP-hard problems. Current quantum annealers, such as those manufactured by D-Wave Systems, Inc., have various practical limitations including the size (number of qubits) of the problem that can be solved, the qubit connectivity, and error due to the environment or system calibration, which can reduce the quality of the solutions. Typically, for an arbitrary problem instance, the corresponding QUBO (or Ising) structure will not natively embed onto the available qubit architecture on the quantum chip. Thus, in these cases, a minor embedding of the problem structure onto the device is necessary. However, minor embeddings on these devices do not always make use of the full sparse chip hardware graph, and a large portion of the available qubits stay unused during quantum annealing. In this work, we embed a disjoint random QUBO on the unused parts of the chip alongside the QUBO to be solved, which acts as an indicator of the solution quality of the device over time. Using experiments on three different D-Wave quantum annealers, we demonstrate that (i) long term trends in solution quality exist on the D-Wave device, and (ii) the unused qubits can be used to measure the current level of noise of the quantum system. "
+}

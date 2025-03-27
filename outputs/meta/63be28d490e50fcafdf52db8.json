@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Smart Contract Fuzzing"
+  ],
+  "datasets": [
+    "12K real-world contracts"
+  ],
+  "methods": [
+    "Generating function invocation sequences with data dependencies",
+    "Branch distance-based measure for test case evolution",
+    "Branch search algorithm for discovering rare and vulnerable branches",
+    "Energy allocation mechanism for exercising crucial branches"
+  ],
+  "results": [
+    "28% higher branch coverage than state-of-the-art fuzzing approaches",
+    "More vulnerabilities detected and 7% increase in average vulnerability detection accuracy over current methods"
+  ],
+  "paper_id": "63be28d490e50fcafdf52db8",
+  "title": "Rethinking Smart Contract Fuzzing: Fuzzing With Invocation Ordering and\n  Important Branch Revisiting",
+  "abstract": "  Blockchain smart contracts have given rise to a variety of interesting and compelling applications and emerged as a revolutionary force for the Internet. Quite a few practitioners have devoted themselves to developing tools for detecting bugs in smart contracts. One line of efforts revolve around static analysis techniques, which heavily suffer from high false-positive rates. Another line of works concentrate on fuzzing techniques. Unfortunately, current fuzzing approaches for smart contracts tend to conduct fuzzing starting from the initial state of the contract, which expends too much energy revolving around the initial state and thus is usually unable to unearth bugs triggered by other states. Moreover, most existing methods treat each branch equally, failing to take care of the branches that are rare or more likely to possess bugs. This might lead to resources wasted on normal branches. In this paper, we try to tackle these challenges from three aspects: (1) In generating function invocation sequences, we explicitly consider data dependencies between functions to facilitate exploring richer states. We further prolong a function invocation sequence S1 by appending a new sequence S2, so that S2 can start fuzzing from states that are different from the initial state. (2) We incorporate a branch distance-based measure to evolve test cases iteratively towards a target branch. (3) We engage a branch search algorithm to discover rare and vulnerable branches, and design an energy allocation mechanism to take care of exercising these crucial branches. We implement IR-Fuzz and extensively evaluate it over 12K real-world contracts. Empirical results show that: (i) IR-Fuzz achieves 28% higher branch coverage than state-of-the-art fuzzing approaches, and (ii) IR-Fuzz detects more vulnerabilities and increases the average accuracy of vulnerability detection by 7% over current methods. "
+}

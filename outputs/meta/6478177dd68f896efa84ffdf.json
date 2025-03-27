@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D MRI Reconstruction"
+  ],
+  "datasets": [
+    "high-resolution (HR) 3D MRI dataset"
+  ],
+  "methods": [
+    "Recon3DMLP: a hybrid of CNN modules with small kernels for low-frequency reconstruction and adaptive MLP (dMLP) modules with large kernels to boost the high-frequency reconstruction"
+  ],
+  "results": [
+    "Recon3DMLP improves HR 3D reconstruction",
+    "outperforms several existing CNN-based models under similar GPU memory consumption"
+  ],
+  "paper_id": "6478177dd68f896efa84ffdf",
+  "title": "Computationally Efficient 3D MRI Reconstruction with Adaptive MLP",
+  "abstract": "  Compared with 2D MRI, 3D MRI provides superior volumetric spatial resolution and signal-to-noise ratio. However, it is more challenging to reconstruct 3D MRI images. Current methods are mainly based on convolutional neural networks (CNN) with small kernels, which are difficult to scale up to have sufficient fitting power for 3D MRI reconstruction due to the large image size and GPU memory constraint. Furthermore, MRI reconstruction is a deconvolution problem, which demands long-distance information that is difficult to capture by CNNs with small convolution kernels. The multi-layer perceptron (MLP) can model such long-distance information, but it requires a fixed input size. In this paper, we proposed Recon3DMLP, a hybrid of CNN modules with small kernels for low-frequency reconstruction and adaptive MLP (dMLP) modules with large kernels to boost the high-frequency reconstruction, for 3D MRI reconstruction. We further utilized the circular shift operation based on MRI physics such that dMLP accepts arbitrary image size and can extract global information from the entire FOV. We also propose a GPU memory efficient data fidelity module that can reduce $>$50$\\%$ memory. We compared Recon3DMLP with other CNN-based models on a high-resolution (HR) 3D MRI dataset. Recon3DMLP improves HR 3D reconstruction and outperforms several existing CNN-based models under similar GPU memory consumption, which demonstrates that Recon3DMLP is a practical solution for HR 3D MRI reconstruction. "
+}

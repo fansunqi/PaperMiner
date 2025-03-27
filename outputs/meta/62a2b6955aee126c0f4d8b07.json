@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/helia95/SAR"
+  ],
+  "tasks": [
+    "Vision Transformers training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Spatial Entropy",
+    "self-supervised task",
+    "Transformer architecture"
+  ],
+  "results": [
+    "Equivalent or better results than other VT proposals",
+    "Boosts VT final accuracy with small-medium training sets"
+  ],
+  "paper_id": "62a2b6955aee126c0f4d8b07",
+  "title": "Spatial Entropy as an Inductive Bias for Vision Transformers",
+  "abstract": "  Recent work on Vision Transformers (VTs) showed that introducing a local inductive bias in the VT architecture helps reducing the number of samples necessary for training. However, the architecture modifications lead to a loss of generality of the Transformer backbone, partially contradicting the push towards the development of uniform architectures, shared, e.g., by both the Computer Vision and the Natural Language Processing areas. In this work, we propose a different and complementary direction, in which a local bias is introduced using an auxiliary self-supervised task, performed jointly with standard supervised training. Specifically, we exploit the observation that the attention maps of VTs, when trained with self-supervision, can contain a semantic segmentation structure which does not spontaneously emerge when training is supervised. Thus, we explicitly encourage the emergence of this spatial clustering as a form of training regularization. In more detail, we exploit the assumption that, in a given image, objects usually correspond to few connected regions, and we propose a spatial formulation of the information entropy to quantify this object-based inductive bias. By minimizing the proposed spatial entropy, we include an additional self-supervised signal during training. Using extensive experiments, we show that the proposed regularization leads to equivalent or better results than other VT proposals which include a local bias by changing the basic Transformer architecture, and it can drastically boost the VT final accuracy when using small-medium training sets. The code is available at https://github.com/helia95/SAR. "
+}

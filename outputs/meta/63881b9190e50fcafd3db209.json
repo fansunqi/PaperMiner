@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "COVID-19 case prediction"
+  ],
+  "datasets": [
+    "8 California counties",
+    "8 countries"
+  ],
+  "methods": [
+    "Autoregressive model (AR)",
+    "Long short-term memory neural networks (LSTM)",
+    "Hybrid model"
+  ],
+  "results": [
+    "4.173% MAPE on average",
+    "Outperforms AR (5.629%) and LSTM (4.934%)",
+    "Outperforms SVM, Gradient Boosting, and Random Forest"
+  ],
+  "paper_id": "63881b9190e50fcafd3db209",
+  "title": "An Interpretable Hybrid Predictive Model of COVID-19 Cases using\n  Autoregressive Model and LSTM",
+  "abstract": "  The Coronavirus Disease 2019 (COVID-19) has a profound impact on global health and economy, making it crucial to build accurate and interpretable data-driven predictive models for COVID-19 cases to improve policy making. The extremely large scale of the pandemic and the intrinsically changing transmission characteristics pose great challenges for effective COVID-19 case prediction. To address this challenge, we propose a novel hybrid model in which the interpretability of the Autoregressive model (AR) and the predictive power of the long short-term memory neural networks (LSTM) join forces. The proposed hybrid model is formalized as a neural network with an architecture that connects two composing model blocks, of which the relative contribution is decided data-adaptively in the training procedure. We demonstrate the favorable performance of the hybrid model over its two component models as well as other popular predictive models through comprehensive numerical studies on two data sources under multiple evaluation metrics. Specifically, in county-level data of 8 California counties, our hybrid model achieves 4.173% MAPE on average, outperforming the composing AR (5.629%) and LSTM (4.934%). In country-level datasets, our hybrid model outperforms the widely-used predictive models - AR, LSTM, SVM, Gradient Boosting, and Random Forest - in predicting COVID-19 cases in 8 countries around the world. In addition, we illustrate the interpretability of our proposed hybrid model, a key feature not shared by most black-box predictive models for COVID-19 cases. Our study provides a new and promising direction for building effective and interpretable data-driven models, which could have significant implications for public health policy making and control of the current and potential future pandemics. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Curve skeleton extraction for low-quality point clouds"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Endpoint-based part-aware curve skeleton extraction (EPCS)",
+    "Random center shift (RCS)",
+    "Multi-vector momentum-driven (MVMD) method",
+    "Interpolation method based on the splitting operator"
+  ],
+  "results": [
+    "Robustness, effectiveness, and efficiency of the proposed method",
+    "Utility of the proposed method highlighted on broken Terracotta point clouds"
+  ],
+  "paper_id": "6376f7e090e50fcafdb9c3b9",
+  "title": "EPCS: Endpoint-based Part-aware Curve Skeleton Extraction for\n  Low-quality Point Clouds",
+  "abstract": "  The curve skeleton is an important shape descriptor that has been utilized in various applications in computer graphics, machine vision, and artificial intelligence. In this study, the endpoint-based part-aware curve skeleton (EPCS) extraction method for low-quality point clouds is proposed. The novel random center shift (RCS) method is first proposed for detecting the endpoints on point clouds. The endpoints are used as the initial seed points for dividing each part into layers, and then the skeletal points are obtained by computing the center points of the oriented bounding box (OBB) of the layers. Subsequently, the skeletal points are connected, thus forming the branches. Furthermore, the multi-vector momentum-driven (MVMD) method is also proposed for locating the junction points that connect the branches. Due to the shape differences between different parts on point clouds, the global topology of the skeleton is finally optimized by removing the redundant junction points, re-connecting some branches using the proposed MVMD method, and applying an interpolation method based on the splitting operator. Consequently, a complete and smooth curve skeleton is achieved. The proposed EPCS method is compared with several state-of-the-art methods, and the experimental results verify its robustness, effectiveness, and efficiency. Furthermore, the skeleton extraction and model segmentation results on the point clouds of broken Terracotta also highlight the utility of the proposed method. "
+}

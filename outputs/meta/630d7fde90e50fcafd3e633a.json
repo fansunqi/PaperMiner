@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/duanzhiihao/lossy-vae"
+  ],
+  "tasks": [
+    "Lossy image compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantized Hierarchical VAEs",
+    "ResNet VAEs",
+    "quantization-aware posterior and prior"
+  ],
+  "results": [
+    "Outperforms previous methods on natural image lossy compression",
+    "Supports parallel encoding and decoding",
+    "Fast execution on GPUs"
+  ],
+  "paper_id": "630d7fde90e50fcafd3e633a",
+  "title": "Lossy Image Compression with Quantized Hierarchical VAEs",
+  "abstract": "  Recent research has shown a strong theoretical connection between variational autoencoders (VAEs) and the rate-distortion theory. Motivated by this, we consider the problem of lossy image compression from the perspective of generative modeling. Starting with ResNet VAEs, which are originally designed for data (image) distribution modeling, we redesign their latent variable model using a quantization-aware posterior and prior, enabling easy quantization and entropy coding at test time. Along with improved neural network architecture, we present a powerful and efficient model that outperforms previous methods on natural image lossy compression. Our model compresses images in a coarse-to-fine fashion and supports parallel encoding and decoding, leading to fast execution on GPUs. Code is available at https://github.com/duanzhiihao/lossy-vae. "
+}

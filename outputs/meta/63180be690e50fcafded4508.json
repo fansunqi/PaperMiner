@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Blind image quality assessment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Rank-and-gradient loss",
+    "Multi-level tolerance loss",
+    "Feedback network"
+  ],
+  "results": [
+    "Alleviate the range effect compared to the state-of-the-art methods"
+  ],
+  "paper_id": "63180be690e50fcafded4508",
+  "title": "REQA: Coarse-to-fine Assessment of Image Quality to Alleviate the Range\n  Effect",
+  "abstract": "  Blind image quality assessment (BIQA) of user generated content (UGC) suffers from the range effect which indicates that on the overall quality range, mean opinion score (MOS) and predicted MOS (pMOS) are well correlated; focusing on a particular range, the correlation is lower. The reason for the range effect is that the predicted deviations both in a wide range and in a narrow range destroy the uniformity between MOS and pMOS. To tackle this problem, a novel method is proposed from coarse-grained metric to fine-grained prediction. Firstly, we design a rank-and-gradient loss for coarse-grained metric. The loss keeps the order and grad consistency between pMOS and MOS, thereby reducing the predicted deviation in a wide range. Secondly, we propose multi-level tolerance loss to make fine-grained prediction. The loss is constrained by a decreasing threshold to limite the predicted deviation in narrower and narrower ranges. Finally, we design a feedback network to conduct the coarse-to-fine assessment. On the one hand, the network adopts feedback blocks to process multi-scale distortion features iteratively and on the other hand, it fuses non-local context feature to the output of each iteration to acquire more quality-aware feature representation. Experimental results demonstrate that the proposed method can alleviate the range effect compared to the state-of-the-art methods effectively. "
+}

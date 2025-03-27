@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/fudan-zvg/SETR"
+  ],
+  "tasks": [
+    "Semantic segmentation",
+    "Dense visual prediction",
+    "Object detection",
+    "Instance segmentation",
+    "Image classification"
+  ],
+  "datasets": [
+    "ADE20K",
+    "Pascal Context",
+    "Cityscapes"
+  ],
+  "methods": [
+    "Vision Transformers (ViTs)",
+    "Hierarchical Local-Global (HLG) Transformers"
+  ],
+  "results": [
+    "50.28% mIoU on ADE20K",
+    "55.83% mIoU on Pascal Context",
+    "Competitive performance on Cityscapes"
+  ],
+  "paper_id": "62d7731a5aee126c0f903f92",
+  "title": "Vision Transformers: From Semantic Segmentation to Dense Prediction",
+  "abstract": "  The emergence of vision transformers (ViTs) in image classification has shifted the methodologies for visual representation learning. In particular, ViTs learn visual representation at full receptive field per layer across all the image patches, in comparison to the increasing receptive fields of CNNs across layers and other alternatives (e.g., large kernels and atrous convolution). In this work, for the first time we explore the global context learning potentials of ViTs for dense visual prediction (e.g., semantic segmentation). Our motivation is that through learning global context at full receptive field layer by layer, ViTs may capture stronger long-range dependency information, critical for dense prediction tasks. We first demonstrate that encoding an image as a sequence of patches, a vanilla ViT without local convolution and resolution reduction can yield stronger visual representation for semantic segmentation. For example, our model, termed as SEgmentation TRansformer (SETR), excels on ADE20K (50.28% mIoU, the first position in the test leaderboard on the day of submission) and Pascal Context (55.83% mIoU), and performs competitively on Cityscapes. For tackling general dense visual prediction tasks in a cost-effective manner, we further formulate a family of Hierarchical Local-Global (HLG) Transformers, characterized by local attention within windows and global-attention across windows in a pyramidal architecture. Extensive experiments show that our methods achieve appealing performance on a variety of dense prediction tasks (e.g., object detection and instance segmentation and semantic segmentation) as well as image classification. Our code and models are available at https://github.com/fudan-zvg/SETR. "
+}

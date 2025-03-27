@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analysis of Over-smoothing in Graph Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Markov chain perspective analysis",
+    "Operator-consistent and operator-inconsistent GNN classification",
+    "Limiting distribution investigation"
+  ],
+  "results": [
+    "Proposed methods can alleviate over-smoothing",
+    "Operator-inconsistent GNNs can avoid over-smoothing under certain conditions",
+    "Experiments verify the effectiveness of the proposed sufficient condition"
+  ],
+  "paper_id": "6373035a90e50fcafd09fb8e",
+  "title": "Comprehensive Analysis of Over-smoothing in Graph Neural Networks from\n  Markov Chains Perspective",
+  "abstract": "  The over-smoothing problem is an obstacle of developing deep graph neural network (GNN). Although many approaches to improve the over-smoothing problem have been proposed, there is still a lack of comprehensive understanding and conclusion of this problem. In this work, we analyze the over-smoothing problem from the Markov chain perspective. We focus on message passing of GNN and first establish a connection between GNNs and Markov chains on the graph. GNNs are divided into two classes of operator-consistent and operator-inconsistent based on whether the corresponding Markov chains are time-homogeneous. Next we attribute the over-smoothing problem to the convergence of an arbitrary initial distribution to a stationary distribution. Based on this, we prove that although the previously proposed methods can alleviate over-smoothing, but these methods cannot avoid the over-smoothing problem. In addition, we give the conclusion of the over-smoothing problem in two types of GNNs in the Markovian sense. On the one hand, operator-consistent GNN cannot avoid over-smoothing at an exponential rate. On the other hand, operator-inconsistent GNN is not always over-smoothing. Further, we investigate the existence of the limiting distribution of the time-inhomogeneous Markov chain, from which we derive a sufficient condition for operator-inconsistent GNN to avoid over-smoothing. Finally, we design experiments to verify our findings. Results show that our proposed sufficient condition can effectively improve over-smoothing problem in operator-inconsistent GNN and enhance the performance of the model. "
+}

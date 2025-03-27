@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding Low-Latency Execution Configurations of BNNs on Heterogeneous Multiprocessor Platforms"
+  ],
+  "datasets": [
+    "Fashion-MNIST",
+    "CIFAR-10"
+  ],
+  "methods": [
+    "HEP-BNN Framework for BNN layer-to-device mappings"
+  ],
+  "results": [
+    "Efficient configuration up to 2x, 2.6x and 11.8x faster on tested hardware"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8df5",
+  "title": "HEP-BNN: A Framework for Finding Low-Latency Execution Configurations of\n  BNNs on Heterogeneous Multiprocessor Platforms",
+  "abstract": "  Binarized Neural Networks (BNNs) significantly reduce the computation and memory demands with binarized weights and activations compared to full-precision NNs. Executing a layer in a BNN on different devices of a heterogeneous multiprocessor platform consisting of CPU and GPU can affect the inference performance, i.e., accuracy and latency. Usually, a heterogeneous HW platform consisting of a CPU and a GPU is available to execute the BNN workloads. However, to use the heterogeneous HW effectively, it is necessary to find an efficient strategy for BNN workload mapping. In this work, we propose a framework that generates efficient BNN layer-to-device mappings (i.e. suitable parallel configuration for each layer of the model) for execution platforms comprised of CPU and CUDA-capable GPU. We evaluate our proposed framework with two BNN architectures using two well-known datasets, Fashion-MNIST and CIFAR-10, on three hardware platforms with different characteristics. The results show that compared to running a fully-parallelized GPU implementation, our framework generates an efficient configuration up to 2x, 2.6x and 11.8x faster on our tested hardware respectively. "
+}

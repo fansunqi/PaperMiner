@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/Myzhao1999/LGN-Net"
+  ],
+  "tasks": [
+    "Video Anomaly Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Local-Global Normality Network (LGN-Net)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6373036090e50fcafd0a06ec",
+  "title": "LGN-Net: Local-Global Normality Network for Video Anomaly Detection",
+  "abstract": "  Video anomaly detection (VAD) has been intensively studied for years because of its potential applications in intelligent video systems. Existing unsupervised VAD methods tend to learn normality from training sets consisting of only normal videos and regard instances deviating from such normality as anomalies. However, they often consider only local or global normality in the temporal dimension. Some of them focus on learning local spatiotemporal representations from consecutive frames to enhance the representation for normal events. But powerful representation allows these methods to represent some anomalies and causes miss detection. In contrast, the other methods are devoted to memorizing prototypical normal patterns of whole training videos to weaken the generalization for anomalies, which also restricts them from representing diverse normal patterns and causes false alarm. To this end, we propose a two-branch model, Local-Global Normality Network (LGN-Net), to simultaneously learn local and global normality. Specifically, one branch learns the evolution regularities of appearance and motion from consecutive frames as local normality utilizing a spatiotemporal prediction network, while the other branch memorizes prototype features of the whole videos as global normality by a memory module. LGN-Net achieves a balance of representing normal and abnormal instances by fusing local and global normality. In addition, the fused normality enables LGN-Net to generalize to various scenes more than exploiting single normality. Experiments demonstrate the effectiveness and superior performance of our method. The code is available online: https://github.com/Myzhao1999/LGN-Net. "
+}

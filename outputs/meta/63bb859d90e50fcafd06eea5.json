@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speech-driven 3D facial animation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Code query task",
+    "Temporal autoregressive model",
+    "Discrete motion prior"
+  ],
+  "results": [
+    "Outperforms current state-of-the-art methods",
+    "Superiority in perceptual quality"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eea5",
+  "title": "CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior",
+  "abstract": "  Speech-driven 3D facial animation has been widely studied, yet there is still a gap to achieving realism and vividness due to the highly ill-posed nature and scarcity of audio-visual data. Existing works typically formulate the cross-modal mapping into a regression task, which suffers from the regression-to-mean problem leading to over-smoothed facial motions. In this paper, we propose to cast speech-driven facial animation as a code query task in a finite proxy space of the learned codebook, which effectively promotes the vividness of the generated motions by reducing the cross-modal mapping uncertainty. The codebook is learned by self-reconstruction over real facial motions and thus embedded with realistic facial motion priors. Over the discrete motion space, a temporal autoregressive model is employed to sequentially synthesize facial motions from the input speech signal, which guarantees lip-sync as well as plausible facial expressions. We demonstrate that our approach outperforms current state-of-the-art methods both qualitatively and quantitatively. Also, a user study further justifies our superiority in perceptual quality. "
+}

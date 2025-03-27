@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Glioma Segmentation",
+    "Uncertainty Quantification"
+  ],
+  "datasets": [
+    "369 glioma patients with MP-MRI scans"
+  ],
+  "methods": [
+    "Spherical Image Projection-based U-Net (SPU-Net)",
+    "Comparison with classic U-Net with TTA, LSU-Net"
+  ],
+  "results": [
+    "SPU-Net achieves low uncertainty for correct segmentation, high uncertainty for incorrect",
+    "Highest uncertainty scores for 3 targets: 0.826/0.848/0.936",
+    "Statistically significantly higher Dice coefficients"
+  ],
+  "paper_id": "6348d36990e50fcafd546289",
+  "title": "Quantifying U-Net Uncertainty in Multi-Parametric MRI-based Glioma\n  Segmentation by Spherical Image Projection",
+  "abstract": "  Purpose: To develop a U-Net segmentation uncertainty quantification method based on spherical image projection of multi-parametric MRI (MP-MRI) in glioma segmentation. Methods: The projection of planar MRI onto a spherical surface retains global anatomical information. By incorporating such image transformation in our proposed spherical projection-based U-Net (SPU-Net) segmentation model design, multiple segmentation predictions can be obtained for a single MRI. The final segmentation is the average of all predictions, and the variation can be shown as an uncertainty map. An uncertainty score was introduced to compare the uncertainty measurements' performance. The SPU-Net model was implemented on 369 glioma patients with MP-MRI scans. Three SPU-Nets were trained to segment enhancing tumor (ET), tumor core (TC), and whole tumor (WT), respectively. The SPU-Net was compared with (1) classic U-Net with test-time augmentation (TTA) and (2) linear scaling-based U-Net (LSU-Net) in both segmentation accuracy (Dice coefficient) and uncertainty (uncertainty map and uncertainty score). Results: The SPU-Net achieved low uncertainty for correct segmentation predictions (e.g., tumor interior or healthy tissue interior) and high uncertainty for incorrect results (e.g., tumor boundaries). This model could allow the identification of missed tumor targets or segmentation errors in U-Net. The SPU-Net achieved the highest uncertainty scores for 3 targets (ET/TC/WT): 0.826/0.848/0.936, compared to 0.784/0.643/0.872 for the U-Net with TTA and 0.743/0.702/0.876 for the LSU-Net. The SPU-Net also achieved statistically significantly higher Dice coefficients. Conclusion: The SPU-Net offers a powerful tool to quantify glioma segmentation uncertainty while improving segmentation accuracy. The proposed method can be generalized to other medical image-related deep-learning applications for uncertainty evaluation. "
+}

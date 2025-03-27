@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-supervised representation learning",
+    "3D object detection for autonomous driving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Masked AutoEncoder for LiDAR point clouds (MAELi)"
+  ],
+  "results": [
+    "Significant performance improvements with a small fraction of labeled frames",
+    "+10.79APH/LEVEL 2 on Waymo Vehicles with ~800 labeled frames"
+  ],
+  "paper_id": "639a906390e50fcafdefe601",
+  "title": "MAELi $\\unicode{x2013}$ Masked Autoencoder for Large-Scale LiDAR Point\n  Clouds",
+  "abstract": "  We demonstrate how the often overlooked inherent properties of large-scale LiDAR point clouds can be effectively utilized for self-supervised representation learning. In pursuit of this goal, we design a highly data-efficient feature pre-training backbone that considerably reduces the need for tedious 3D annotations to train state-of-the-art object detectors. We propose Masked AutoEncoder for LiDAR point clouds (MAELi) that intuitively leverages the sparsity of LiDAR point clouds in both the encoder and decoder during reconstruction. Our approach results in more expressive and useful features, which can be directly applied to downstream perception tasks, such as 3D object detection for autonomous driving. In a novel reconstruction schema, MAELi distinguishes between free and occluded space and employs a new masking strategy that targets the LiDAR's inherent spherical projection. To demonstrate the potential of MAELi, we pre-train one of the most widely-used 3D backbones in an end-to-end manner and show the effectiveness of our unsupervised pre-trained features on various 3D object detection architectures. Our method achieves significant performance improvements when only a small fraction of labeled frames is available for fine-tuning object detectors. For instance, with ~800 labeled frames, MAELi features enhance a SECOND model by +10.79APH/LEVEL 2 on Waymo Vehicles. "
+}

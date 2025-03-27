@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Load balancing",
+    "Non-convex optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural network based approximation",
+    "Kelley's cutting plane method"
+  ],
+  "results": [
+    "Significant improvement in CPU time"
+  ],
+  "paper_id": "63be28d490e50fcafdf52a7b",
+  "title": "Protected load balancing problem: Neural-network based approximation for\n  non-convex optimization",
+  "abstract": "  Nowadays, centralized Path Computation Elements (PCE) integrate control plane algorithms to optimize routing and load-balancing continuously. When a link fails, the traffic load is automatically transferred to the remaining paths according to the configuration of load-balancers. In this context, we propose a load-balancing method that anticipates load transfers to ensure the protection of traffic against any Shared Risk Link Group (SRLG) failure. The main objective of this approach is to make better use of bandwidth compared to existing methods. It consists in reserving a minimum amount of extra bandwidth on links so that the rerouting of traffic is guaranteed. We propose a non-linear non-convex model for the problem of minimizing the bandwidth reservation cost. We introduce a new approximation approach based on a neural network to convexify the problem and apply Kelley's cutting plane method to solve the problem. Finally, we show that our algorithm significantly improves the CPU time against a compact model solved using the SCIP solver. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Object Manipulation Planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Monte Carlo Tree Search (MCTS)",
+    "ADMM-based trajectory optimization",
+    "Goal-conditioned policy-value network"
+  ],
+  "results": [
+    "Efficient for long manipulation sequences",
+    "Significantly improves planning success rate"
+  ],
+  "paper_id": "62b2888c5aee126c0fbc73aa",
+  "title": "Efficient Object Manipulation Planning with Monte Carlo Tree Search",
+  "abstract": "  This paper presents an efficient approach to object manipulation planning using Monte Carlo Tree Search (MCTS) to find contact sequences and an efficient ADMM-based trajectory optimization algorithm to evaluate the dynamic feasibility of candidate contact sequences. To accelerate MCTS, we propose a methodology to learn a goal-conditioned policy-value network to direct the search towards promising nodes. Further, manipulation-specific heuristics enable to drastically reduce the search space. Systematic object manipulation experiments in a physics simulator and on real hardware demonstrate the efficiency of our approach. In particular, our approach scales favorably for long manipulation sequences thanks to the learned policy-value network, significantly improving planning success rate. "
+}

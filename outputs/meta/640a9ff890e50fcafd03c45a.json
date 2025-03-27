@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Captioning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ada-ClustFormer (ACF)",
+    "global-local Transformer",
+    "Self-attention (Self-ATT)",
+    "probabilistic matrix C"
+  ],
+  "results": [
+    "CIDEr: 137.8"
+  ],
+  "paper_id": "640a9ff890e50fcafd03c45a",
+  "title": "Adaptively Clustering Neighbor Elements for Image Captioning",
+  "abstract": "  We design a novel global-local Transformer named \\textbf{Ada-ClustFormer} (\\textbf{ACF}) to generate captions. We use this name since each layer of ACF can adaptively cluster input elements to carry self-attention (Self-ATT) for learning local context. Compared with other global-local Transformers which carry Self-ATT in fixed-size windows, ACF can capture varying graininess, \\eg, an object may cover different numbers of grids or a phrase may contain diverse numbers of words. To build ACF, we insert a probabilistic matrix C into the Self-ATT layer. For an input sequence {{s}_1,...,{s}_N , C_{i,j} softly determines whether the sub-sequence {s_i,...,s_j} should be clustered for carrying Self-ATT. For implementation, {C}_{i,j} is calculated from the contexts of {{s}_i,...,{s}_j}, thus ACF can exploit the input itself to decide which local contexts should be learned. By using ACF to build the vision encoder and language decoder, the captioning model can automatically discover the hidden structures in both vision and language, which encourages the model to learn a unified structural space for transferring more structural commonalities. The experiment results demonstrate the effectiveness of ACF that we achieve CIDEr of 137.8, which outperforms most SOTA captioning models and achieve comparable scores compared with some BERT-based models. The code will be available in the supplementary material. "
+}

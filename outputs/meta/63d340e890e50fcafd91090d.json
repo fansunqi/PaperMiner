@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "MDP model checking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Policy iteration",
+    "Value iteration",
+    "Linear program formulation"
+  ],
+  "results": [
+    "Optimistic value iteration is a sensible default",
+    "Comparison of floating-point and exact-arithmetic implementations"
+  ],
+  "paper_id": "63d340e890e50fcafd91090d",
+  "title": "A Practitioner's Guide to MDP Model Checking Algorithms",
+  "abstract": "  Model checking undiscounted reachability and expected-reward properties on Markov decision processes (MDPs) is key for the verification of systems that act under uncertainty. Popular algorithms are policy iteration and variants of value iteration; in tool competitions, most participants rely on the latter. These algorithms generally need worst-case exponential time. However the problem can equally be formulated as a linear program, solvable in polynomial time. In this paper, we give a detailed overview of today's state-of-the-art algorithms for MDP model checking with a focus on performance and correctness. We highlight their fundamental differences, and describe various optimisations and implementation variants. We experimentally compare floating-point and exact-arithmetic implementations of all algorithms on three benchmark sets using two probabilistic model checkers. Our results show that (optimistic) value iteration is a sensible default, but other algorithms are preferable in specific settings. This paper thereby provides a guide for MDP verification practitioners -- tool builders and users alike. "
+}

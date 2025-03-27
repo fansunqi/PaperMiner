@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computing observables from conditioned dynamics",
+    "Epidemic risk assessment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Metropolis Monte-Carlo procedure",
+    "Variational inference",
+    "Generalized dynamical model",
+    "Gillespie-like sampler"
+  ],
+  "results": [
+    "Efficient computation of observables",
+    "Effective unconditioned distribution",
+    "Comparatively favorable performance against state of the art"
+  ],
+  "paper_id": "6350bc6690e50fcafdeceae6",
+  "title": "Inference in conditioned dynamics through causality restoration",
+  "abstract": "  Computing observables from conditioned dynamics is typically computationally hard, because, although obtaining independent samples efficiently from the unconditioned dynamics is usually feasible, generally most of the samples must be discarded (in a form of importance sampling) because they do not satisfy the imposed conditions. Sampling directly from the conditioned distribution is non-trivial, as conditioning breaks the causal properties of the dynamics which ultimately renders the sampling procedure efficient. One standard way of achieving it is through a Metropolis Monte-Carlo procedure, but this procedure is normally slow and a very large number of Monte-Carlo steps is needed to obtain a small number of statistically independent samples. In this work, we propose an alternative method to produce independent samples from a conditioned distribution. The method learns the parameters of a generalized dynamical model that optimally describe the conditioned distribution in a variational sense. The outcome is an effective, unconditioned, dynamical model, from which one can trivially obtain independent samples, effectively restoring causality of the conditioned distribution. The consequences are twofold: on the one hand, it allows us to efficiently compute observables from the conditioned dynamics by simply averaging over independent samples. On the other hand, the method gives an effective unconditioned distribution which is easier to interpret. The method is flexible and can be applied virtually to any dynamics. We discuss an important application of the method, namely the problem of epidemic risk assessment from (imperfect) clinical tests, for a large family of time-continuous epidemic models endowed with a Gillespie-like sampler. We show that the method compares favorably against the state of the art, including the soft-margin approach and mean-field methods. "
+}

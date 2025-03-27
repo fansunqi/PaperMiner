@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "LTL Reactive Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Automata learning algorithms",
+    "Synthesis algorithm implemented in Acacia-Bonzai"
+  ],
+  "results": [
+    "Completeness result",
+    "Polynomial cost of learning from examples",
+    "Matches worst-case complexity of classical LTL synthesis problem"
+  ],
+  "paper_id": "63d340e890e50fcafd910b87",
+  "title": "LTL Reactive Synthesis with a Few Hints",
+  "abstract": "  We study a variant of the problem of synthesizing Mealy machines that enforce LTL specifications against all possible behaviours of the environment including hostile ones. In the variant studied here, the user provides the high level LTL specification {\\phi} of the system to design, and a set E of examples of executions that the solution must produce. Our synthesis algorithm works in two phases. First, it generalizes the decisions taken along the examples E using tailored extensions of automata learning algorithms. This phase generalizes the user-provided examples in E while preserving realizability of {\\phi}. Second, the algorithm turns the (usually) incomplete Mealy machine obtained by the learning phase into a complete Mealy machine that realizes {\\phi}. The examples are used to guide the synthesis procedure. We provide a completeness result that shows that our procedure can learn any Mealy machine M that realizes {\\phi} with a small (polynomial) set of examples. We also show that our problem, that generalizes the classical LTL synthesis problem (i.e. when E = {\\emptyset}), matches its worst-case complexity. The additional cost of learning from E is even polynomial in the size of E and in the size of a symbolic representation of solutions that realize {\\phi}. This symbolic representation is computed by the synthesis algorithm implemented in Acacia-Bonzai when solving the plain LTL synthesis problem. We illustrate the practical interest of our approach on a set of examples. "
+}

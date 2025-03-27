@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "6D Pose Estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Instance segmentation network",
+    "Depth denoising module"
+  ],
+  "results": [
+    "Uni6Dv2 reliably and robustly eliminates noise",
+    "Outperforms Uni6D without sacrificing too much inference efficiency",
+    "Reduces the need for annotated real data"
+  ],
+  "paper_id": "62fb0ae490e50fcafd5f1573",
+  "title": "Uni6Dv2: Noise Elimination for 6D Pose Estimation",
+  "abstract": "  Uni6D is the first 6D pose estimation approach to employ a unified backbone network to extract features from both RGB and depth images. We discover that the principal reasons of Uni6D performance limitations are Instance-Outside and Instance-Inside noise. Uni6D's simple pipeline design inherently introduces Instance-Outside noise from background pixels in the receptive field, while ignoring Instance-Inside noise in the input depth data. In this paper, we propose a two-step denoising approach for dealing with the aforementioned noise in Uni6D. To reduce noise from non-instance regions, an instance segmentation network is utilized in the first step to crop and mask the instance. A lightweight depth denoising module is proposed in the second step to calibrate the depth feature before feeding it into the pose regression network. Extensive experiments show that our Uni6Dv2 reliably and robustly eliminates noise, outperforming Uni6D without sacrificing too much inference efficiency. It also reduces the need for annotated real data that requires costly labeling. "
+}

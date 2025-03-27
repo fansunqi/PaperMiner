@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Anomaly detection"
+  ],
+  "datasets": [
+    "CMS ADC2021"
+  ],
+  "methods": [
+    "Contrastive learning",
+    "Permutation-invariant Transformer Encoder",
+    "AutoEncoder"
+  ],
+  "results": [
+    "Significant improvements on performance metrics for all signals when compared to the raw data baseline"
+  ],
+  "paper_id": "63c0cc6390e50fcafd2a88db",
+  "title": "Anomalies, Representations, and Self-Supervision",
+  "abstract": "  We develop a self-supervised method for density-based anomaly detection using contrastive learning, and test it using event-level anomaly data from CMS ADC2021. The AnomalyCLR technique is data-driven and uses augmentations of the background data to mimic non-Standard-Model events in a model-agnostic way. It uses a permutation-invariant Transformer Encoder architecture to map the objects measured in a collider event to the representation space, where the data augmentations define a representation space which is sensitive to potential anomalous features. An AutoEncoder trained on background representations then computes anomaly scores for a variety of signals in the representation space. With AnomalyCLR we find significant improvements on performance metrics for all signals when compared to the raw data baseline. "
+}

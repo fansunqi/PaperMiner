@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated learning",
+    "Multi-access Edge Computing (MEC)",
+    "Personalized services",
+    "Heterogeneous Machine Learning (ML) models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated Multi-task Learning (FMTL)",
+    "Knowledge distillation",
+    "Federated Prior Knowledge Distillation (FPKD)",
+    "Local Knowledge Adjustment (LKA)"
+  ],
+  "results": [
+    "Significantly outperforms all compared benchmarks",
+    "Improved accuracy",
+    "Less than 1.2% training communication overhead compared with FedAvg",
+    "No more than 75% training communication round compared with FedGKT"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e5c3",
+  "title": "FedICT: Federated Multi-task Distillation for Multi-access Edge\n  Computing",
+  "abstract": "  The growing interest in intelligent services and privacy protection for mobile devices has given rise to the widespread application of federated learning in Multi-access Edge Computing (MEC). Diverse user behaviors call for personalized services with heterogeneous Machine Learning (ML) models on different devices. Federated Multi-task Learning (FMTL) is proposed to train related but personalized ML models for different devices, whereas previous works suffer from excessive communication overhead during training and neglect the model heterogeneity among devices in MEC. Introducing knowledge distillation into FMTL can simultaneously enable efficient communication and model heterogeneity among clients, whereas existing methods rely on a public dataset, which is impractical in reality. To tackle this dilemma, Federated MultI-task Distillation for Multi-access Edge CompuTing (FedICT) is proposed. FedICT direct local-global knowledge aloof during bi-directional distillation processes between clients and the server, aiming to enable multi-task clients while alleviating client drift derived from divergent optimization directions of client-side local models. Specifically, FedICT includes Federated Prior Knowledge Distillation (FPKD) and Local Knowledge Adjustment (LKA). FPKD is proposed to reinforce the clients' fitting of local data by introducing prior knowledge of local data distributions. Moreover, LKA is proposed to correct the distillation loss of the server, making the transferred local knowledge better match the generalized representation. Experiments on three datasets show that FedICT significantly outperforms all compared benchmarks in various data heterogeneous and model architecture settings, achieving improved accuracy with less than 1.2% training communication overhead compared with FedAvg and no more than 75% training communication round compared with FedGKT. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spectrum occupancy mapping"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural networks",
+    "Aggregation",
+    "Log-likelihood ratios (LLRs)"
+  ],
+  "results": [
+    "Robust to the number of sensors, noise, and threshold",
+    "Operates without knowledge of the number of emitters",
+    "Good performance with very low-resolution sensors"
+  ],
+  "paper_id": "63a2794d90e50fcafd294598",
+  "title": "Deep Multi-Emitter Spectrum Occupancy Mapping that is Robust to the\n  Number of Sensors, Noise and Threshold",
+  "abstract": "  One of the primary goals in spectrum occupancy mapping is to create a system that is robust to assumptions about the number of sensors, occupancy threshold (in dBm), sensor noise, number of emitters and the propagation environment. We show that such a system may be designed with neural networks using a process of aggregation to allow a variable number of sensors during training and testing. This process transforms the variable number of measurements into approximate log-likelihood ratios (LLRs), which are fed as a fixed-resolution image into a neural network. The use of LLR's provides robustness to the effects of noise and occupancy threshold. In other words, a system may be trained for a nominal number of sensors, threshold and noise levels, and still operate well at various other levels without retraining. Our system operates without knowledge of the number of emitters and does not explicitly attempt to estimate their number or power. Receiver operating curves with realistic propagation environments using topographic maps with commercial network design tools show how performance of the neural network varies with the environment. The use of very low-resolution sensors in this system can still yield good performance. "
+}

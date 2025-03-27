@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Brain simulations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fast Multipole Method",
+    "Barnes-Hut approximation"
+  ],
+  "results": [
+    "Faster than previous approximation",
+    "Time complexity: O(n log^2 n)"
+  ],
+  "paper_id": "63d340e890e50fcafd910c1b",
+  "title": "Accelerating Brain Simulations with the Fast Multipole Method",
+  "abstract": "  The brain is probably the most complex organ in the human body. To understand processes such as learning or healing after brain lesions, we need suitable tools for brain simulations. The Model of Structural Plasticity offers a solution to that problem. It provides a way to model the brain bottom-up by specifying the behavior of the neurons and using structural plasticity to form the synapses. However, its original formulation involves a pairwise evaluation of attraction kernels, which drastically limits scalability. While this complexity has recently been decreased to $O(n\\cdot \\log^2 n)$ after reformulating the task as a variant of an n-body problem and solving it using an adapted version of the Barnes-Hut approximation, we propose an even faster approximation based on the fast multipole method (FMM). The fast multipole method was initially introduced to solve pairwise interactions in linear time. Our adaptation achieves this time complexity, and it is also faster in practice than the previous approximation. "
+}

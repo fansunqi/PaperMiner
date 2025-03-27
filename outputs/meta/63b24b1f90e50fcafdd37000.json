@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Explainable deep networks",
+    "Explanation robustness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Explanation ranking thickness",
+    "Surrogate bounds",
+    "Multi-objective approach"
+  ],
+  "results": [
+    "Proposed methods superior to Hessian-based curvature smoothing approaches"
+  ],
+  "paper_id": "63b24b1f90e50fcafdd37000",
+  "title": "Robust Ranking Explanations",
+  "abstract": "  Gradient-based explanation is the cornerstone of explainable deep networks, but it has been shown to be vulnerable to adversarial attacks. However, existing works measure the explanation robustness based on $\\ell_p$-norm, which can be counter-intuitive to humans, who only pay attention to the top few salient features. We propose explanation ranking thickness as a more suitable explanation robustness metric. We then present a new practical adversarial attacking goal for manipulating explanation rankings. To mitigate the ranking-based attacks while maintaining computational feasibility, we derive surrogate bounds of the thickness that involve expensive sampling and integration. We use a multi-objective approach to analyze the convergence of a gradient-based attack to confirm that the explanation robustness can be measured by the thickness metric. We conduct experiments on various network architectures and diverse datasets to prove the superiority of the proposed methods, while the widely accepted Hessian-based curvature smoothing approaches are not as robust as our method. "
+}

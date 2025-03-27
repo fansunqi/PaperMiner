@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/smahdavi4/clrs"
+  ],
+  "tasks": [
+    "Neural algorithmic reasoning tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "2WL-graph neural network (GNN) processor"
+  ],
+  "results": [
+    "Outperforms state-of-the-art model by 3%"
+  ],
+  "paper_id": "6363316890e50fcafd4fb2cc",
+  "title": "Towards Better Out-of-Distribution Generalization of Neural Algorithmic\n  Reasoning Tasks",
+  "abstract": "  In this paper, we study the OOD generalization of neural algorithmic reasoning tasks, where the goal is to learn an algorithm (e.g., sorting, breadth-first search, and depth-first search) from input-output pairs using deep neural networks. First, we argue that OOD generalization in this setting is significantly different than common OOD settings. For example, some phenomena in OOD generalization of image classifications such as \\emph{accuracy on the line} are not observed here, and techniques such as data augmentation methods do not help as assumptions underlying many augmentation techniques are often violated. Second, we analyze the main challenges (e.g., input distribution shift, non-representative data generation, and uninformative validation metrics) of the current leading benchmark, i.e., CLRS \\citep{deepmind2021clrs}, which contains 30 algorithmic reasoning tasks. We propose several solutions, including a simple-yet-effective fix to the input distribution shift and improved data generation. Finally, we propose an attention-based 2WL-graph neural network (GNN) processor which complements message-passing GNNs so their combination outperforms the state-of-the-art model by a 3% margin averaged over all algorithms. Our code is available at: \\url{https://github.com/smahdavi4/clrs}. "
+}

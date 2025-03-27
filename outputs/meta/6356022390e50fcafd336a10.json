@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "large-scale traffic speed estimation"
+  ],
+  "datasets": [
+    "public million-level traffic speed datasets"
+  ],
+  "methods": [
+    "Laplacian enhanced low-rank tensor kriging (LETC)"
+  ],
+  "results": [
+    "state-of-the-art kriging performance",
+    "saves more than half computing time compared with baseline methods"
+  ],
+  "paper_id": "6356022390e50fcafd336a10",
+  "title": "Correlating sparse sensing for large-scale traffic speed estimation: A\n  Laplacian enhanced low-rank tensor kriging approach",
+  "abstract": "  Traffic speed is central to characterizing the fluidity of the road network. Many transportation applications rely on it, such as real-time navigation, dynamic route planning, and congestion management. Rapid advances in sensing and communication techniques make traffic speed detection easier than ever. However, due to sparse deployment of static sensors or low penetration of mobile sensors, speeds detected are incomplete and far from network-wide use. In addition, sensors are prone to error or missing data due to various kinds of reasons, speeds from these sensors can become highly noisy. These drawbacks call for effective techniques to recover credible estimates from the incomplete data. In this work, we first identify the issue as a spatiotemporal kriging problem and propose a Laplacian enhanced low-rank tensor completion (LETC) framework featuring both lowrankness and multi-dimensional correlations for large-scale traffic speed kriging under limited observations. To be specific, three types of speed correlation including temporal continuity, temporal periodicity, and spatial proximity are carefully chosen and simultaneously modeled by three different forms of graph Laplacian, named temporal graph Fourier transform, generalized temporal consistency regularization, and diffusion graph regularization. We then design an efficient solution algorithm via several effective numeric techniques to scale up the proposed model to network-wide kriging. By performing experiments on two public million-level traffic speed datasets, we finally draw the conclusion and find our proposed LETC achieves the state-of-the-art kriging performance even under low observation rates, while at the same time saving more than half computing time compared with baseline methods. Some insights into spatiotemporal traffic data modeling and kriging at the network level are provided as well. "
+}

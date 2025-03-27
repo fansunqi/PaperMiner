@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/ZKZ-Brain/CI-GNN/"
+  ],
+  "tasks": [
+    "Psychiatric Diagnosis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CI-GNN",
+    "Graph Neural Networks",
+    "Graph Variational Autoencoder",
+    "Conditional Mutual Information"
+  ],
+  "results": [
+    "Best performance in a wide range of metrics",
+    "More reliable and concise explanations with clinical evidence"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5d35",
+  "title": "CI-GNN: A Granger Causality-Inspired Graph Neural Network for\n  Interpretable Brain Network-Based Psychiatric Diagnosis",
+  "abstract": "There is a recent trend to leverage the power of graph neural networks (GNNs)\nfor brain-network based psychiatric diagnosis, which,in turn, also motivates an\nurgent need for psychiatrists to fully understand the decision behavior of the\nused GNNs. However, most of the existing GNN explainers are either post-hoc in\nwhich another interpretive model needs to be created to explain a well-trained\nGNN, or do not consider the causal relationship between the extracted\nexplanation and the decision, such that the explanation itself contains\nspurious correlations and suffers from weak faithfulness. In this work, we\npropose a granger causality-inspired graph neural network (CI-GNN), a built-in\ninterpretable model that is able to identify the most influential subgraph\n(i.e., functional connectivity within brain regions) that is causally related\nto the decision (e.g., major depressive disorder patients or healthy controls),\nwithout the training of an auxillary interpretive network. CI-GNN learns\ndisentangled subgraph-level representations \u03b1 and e\u0331\u1e6fa\u0331 that encode,\nrespectively, the causal and noncausal aspects of original graph under a graph\nvariational autoencoder framework, regularized by a conditional mutual\ninformation (CMI) constraint. We theoretically justify the validity of the CMI\nregulation in capturing the causal relationship. We also empirically evaluate\nthe performance of CI-GNN against three baseline GNNs and four state-of-the-art\nGNN explainers on synthetic data and three large-scale brain disease datasets.\nWe observe that CI-GNN achieves the best performance in a wide range of metrics\nand provides more reliable and concise explanations which have clinical\nevidence.The source code and implementation details of CI-GNN are freely\navailable at GitHub repository (https://github.com/ZKZ-Brain/CI-GNN/)."
+}

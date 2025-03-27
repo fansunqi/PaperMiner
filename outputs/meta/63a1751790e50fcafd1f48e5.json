@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image and Video Super-Resolution"
+  ],
+  "datasets": [
+    "CUFED5",
+    "Webly-Referenced SR (WR-SR)"
+  ],
+  "methods": [
+    "C2-Matching",
+    "contrastive correspondence network",
+    "teacher-student correlation distillation",
+    "dynamic aggregation module"
+  ],
+  "results": [
+    "significantly outperforms state of the arts on the standard CUFED5 benchmark",
+    "boosts the performance of video SR"
+  ],
+  "paper_id": "63a1751790e50fcafd1f48e5",
+  "title": "Reference-based Image and Video Super-Resolution via C2-Matching",
+  "abstract": "  Reference-based Super-Resolution (Ref-SR) has recently emerged as a promising paradigm to enhance a low-resolution (LR) input image or video by introducing an additional high-resolution (HR) reference image. Existing Ref-SR methods mostly rely on implicit correspondence matching to borrow HR textures from reference images to compensate for the information loss in input images. However, performing local transfer is difficult because of two gaps between input and reference images: the transformation gap (e.g., scale and rotation) and the resolution gap (e.g., HR and LR). To tackle these challenges, we propose C2-Matching in this work, which performs explicit robust matching crossing transformation and resolution. 1) To bridge the transformation gap, we propose a contrastive correspondence network, which learns transformation-robust correspondences using augmented views of the input image. 2) To address the resolution gap, we adopt teacher-student correlation distillation, which distills knowledge from the easier HR-HR matching to guide the more ambiguous LR-HR matching. 3) Finally, we design a dynamic aggregation module to address the potential misalignment issue between input images and reference images. In addition, to faithfully evaluate the performance of Reference-based Image Super-Resolution under a realistic setting, we contribute the Webly-Referenced SR (WR-SR) dataset, mimicking the practical usage scenario. We also extend C2-Matching to Reference-based Video Super-Resolution task, where an image taken in a similar scene serves as the HR reference image. Extensive experiments demonstrate that our proposed C2-Matching significantly outperforms state of the arts on the standard CUFED5 benchmark and also boosts the performance of video SR by incorporating the C2-Matching component into Video SR pipelines. "
+}

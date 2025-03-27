@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "http://bitly.ws/yvgh"
+  ],
+  "tasks": [
+    "Robustifying deep learning models",
+    "Defending against adversarial attacks"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "CIFAR-100",
+    "Tiny ImageNet"
+  ],
+  "methods": [
+    "Beckman barycenter",
+    "Adversarial training"
+  ],
+  "results": [
+    "10% boost in CIFAR-10",
+    "8.34% boost in CIFAR-100",
+    "11.51% boost in Tiny ImageNet"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5c16",
+  "title": "Beckman Defense",
+  "abstract": "  Optimal transport (OT) based distributional robust optimisation (DRO) has received some traction in the recent past. However, it is at a nascent stage but has a sound potential in robustifying the deep learning models. Interestingly, OT barycenters demonstrate a good robustness against adversarial attacks. Owing to the computationally expensive nature of OT barycenters, they have not been investigated under DRO framework. In this work, we propose a new barycenter, namely Beckman barycenter, which can be computed efficiently and used for training the network to defend against adversarial attacks in conjunction with adversarial training. We propose a novel formulation of Beckman barycenter and analytically obtain the barycenter using the marginals of the input image. We show that the Beckman barycenter can be used to train adversarially trained networks to improve the robustness. Our training is extremely efficient as it requires only a single epoch of training. Elaborate experiments on CIFAR-10, CIFAR-100 and Tiny ImageNet demonstrate that training an adversarially robust network with Beckman barycenter can significantly increase the performance. Under auto attack, we get a a maximum boost of 10\\% in CIFAR-10, 8.34\\% in CIFAR-100 and 11.51\\% in Tiny ImageNet. Our code is available at http://bitly.ws/yvgh. "
+}

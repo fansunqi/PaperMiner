@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "COVID-19 recognition in chest X-ray images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Knowledge distillation (KD)",
+    "VGG19",
+    "ResNet50V2",
+    "MobileNetV2"
+  ],
+  "results": [
+    "Lowering computational costs",
+    "Improved performance compared to previously published methods"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9811",
+  "title": "Designing an Improved Deep Learning-based Model for COVID-19 Recognition\n  in Chest X-ray Images: A Knowledge Distillation Approach",
+  "abstract": "  COVID-19 has adversely affected humans and societies in different aspects. Numerous people have perished due to inaccurate COVID-19 identification and, consequently, a lack of appropriate medical treatment. Numerous solutions based on manual and automatic feature extraction techniques have been investigated to address this issue by researchers worldwide. Typically, automatic feature extraction methods, particularly deep learning models, necessitate a powerful hardware system to perform the necessary computations. Unfortunately, many institutions and societies cannot benefit from these advancements due to the prohibitively high cost of high-quality hardware equipment. As a result, this study focused on two primary goals: first, lowering the computational costs associated with running the proposed model on embedded devices, mobile devices, and conventional computers; and second, improving the model's performance in comparison to previously published methods (at least performs on par with state-of-the-art models) in order to ensure its performance and accuracy for the medical recognition task. This study used two neural networks to improve feature extraction from our dataset: VGG19 and ResNet50V2. Both of these networks are capable of providing semantic features from the nominated dataset. To this end, An alternative network was considered, namely MobileNetV2, which excels at extracting semantic features while requiring minimal computation on mobile and embedded devices. Knowledge distillation (KD) was used to transfer knowledge from the teacher network (concatenated ResNet50V2 and VGG19) to the student network (MobileNetV2) to improve MobileNetV2 performance and to achieve a robust and accurate model for the COVID-19 identification task from chest X-ray images. "
+}

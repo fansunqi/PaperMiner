@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Trajectory similarity learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Contrastive learning-based trajectory modeling (TrajCL)",
+    "Four trajectory augmentation methods",
+    "Dual-feature self-attention-based trajectory backbone encoder"
+  ],
+  "results": [
+    "TrajCL consistently and significantly more accurate than state-of-the-art trajectory similarity measures",
+    "After fine-tuning, TrajCL can outperform state-of-the-art supervised method by up to 56% in accuracy for processing trajectory similarity queries"
+  ],
+  "paper_id": "6346305e90e50fcafda0748c",
+  "title": "Contrastive Trajectory Similarity Learning with Dual-Feature Attention",
+  "abstract": "  Trajectory similarity measures act as query predicates in trajectory databases, making them the key player in determining the query results. They also have a heavy impact on the query efficiency. An ideal measure should have the capability to accurately evaluate the similarity between any two trajectories in a very short amount of time. Towards this aim, we propose a contrastive learning-based trajectory modeling method named TrajCL. We present four trajectory augmentation methods and a novel dual-feature self-attention-based trajectory backbone encoder. The resultant model can jointly learn both the spatial and the structural patterns of trajectories. Our model does not involve any recurrent structures and thus has a high efficiency. Besides, our pre-trained backbone encoder can be fine-tuned towards other computationally expensive measures with minimal supervision data. Experimental results show that TrajCL is consistently and significantly more accurate than the state-of-the-art trajectory similarity measures. After fine-tuning, i.e., to serve as an estimator for heuristic measures, TrajCL can even outperform the state-of-the-art supervised method by up to 56% in the accuracy for processing trajectory similarity queries. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Privacy preservation in Ride-Hailing Services",
+    "Driver Locations Harvesting Attack"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Passive attack",
+    "Google Nearest Road API"
+  ],
+  "results": [
+    "Determining the precise locations of at least 80% of the drivers participating in the enhanced pRide protocol"
+  ],
+  "paper_id": "635753d390e50fcafdddf30a",
+  "title": "Driver Locations Harvesting Attack on pRide",
+  "abstract": "  Privacy preservation in Ride-Hailing Services (RHS) is intended to protect privacy of drivers and riders. pRide, published in IEEE Trans. Vehicular Technology 2021, is a prediction based privacy-preserving RHS protocol to match riders with an optimum driver. In the protocol, the Service Provider (SP) homomorphically computes Euclidean distances between encrypted locations of drivers and rider. Rider selects an optimum driver using decrypted distances augmented by a new-ride-emergence prediction. To improve the effectiveness of driver selection, the paper proposes an enhanced version where each driver gives encrypted distances to each corner of her grid. To thwart a rider from using these distances to launch an inference attack, the SP blinds these distances before sharing them with the rider. In this work, we propose a passive attack where an honest-but-curious adversary rider who makes a single ride request and receives the blinded distances from SP can recover the constants used to blind the distances. Using the unblinded distances, rider to driver distance and Google Nearest Road API, the adversary can obtain the precise locations of responding drivers. We conduct experiments with random on-road driver locations for four different cities. Our experiments show that we can determine the precise locations of at least 80% of the drivers participating in the enhanced pRide protocol. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image segmentation",
+    "Noise removal"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Smoothing-and-thresholding (SaT) segmentation framework",
+    "Maximum posterior (MAP) term",
+    "Weighted difference of anisotropic and isotropic total variation (AITV)",
+    "Alternating direction method of multipliers (ADMM)"
+  ],
+  "results": [
+    "Outperforms a number of segmentation methods, including the original SaT"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa309",
+  "title": "Efficient Image Segmentation Framework with Difference of Anisotropic\n  and Isotropic Total Variation for Blur and Poisson Noise Removal",
+  "abstract": "  In this paper, we aim to segment an image degraded by blur and Poisson noise. We adopt a smoothing-and-thresholding (SaT) segmentation framework that finds a piecewise-smooth solution, followed by $k$-means clustering to segment the image. Specifically for the image smoothing step, we replace the least-squares fidelity for Gaussian noise in the Mumford-Shah model with a maximum posterior (MAP) term to deal with Poisson noise and we incorporate the weighted difference of anisotropic and isotropic total variation (AITV) as a regularization to promote the sparsity of image gradients. For such a nonconvex model, we develop a specific splitting scheme and utilize a proximal operator to apply the alternating direction method of multipliers (ADMM). Convergence analysis is provided to validate the efficacy of the ADMM scheme. Numerical experiments on various segmentation scenarios (grayscale/color and multiphase) showcase that our proposed method outperforms a number of segmentation methods, including the original SaT. "
+}

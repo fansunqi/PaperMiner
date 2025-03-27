@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Conformal Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Follow The Regularized Leader (FTRL)",
+    "ACI Algorithm",
+    "Swap Regret",
+    "Threshold Calibration",
+    "Group Conditional Coverage",
+    "Multivalid Coverage"
+  ],
+  "results": [
+    "GCACI outperforms MVP in terms of convergence rate to the desired coverage",
+    "GCACI achieves group conditional coverage with O(\u221aT) worst-case coverage rate"
+  ],
+  "title": "The Relationship Between No-Regret Learning and Online Conformal Prediction.pdf",
+  "abstract": "Existing algorithms for online conformal prediction\u2014guaranteeing marginal coverage in ad- versarial settings\u2014are variants of online gradient descent (OGD), but their analyses of worst- case coverage do not follow from the regret guarantee of OGD. What is the relationship between no-regret learning and online conformal prediction? We observe that although standard regret guarantees imply marginal coverage in i.i.d. settings, this connection fails as soon as we either move to adversarial environments or ask for group conditional coverage. On the other hand, we show a tight connection between threshold calibrated coverage and swap-regret in adversarial set- tings, which extends to group-conditional (multi-valid) coverage. We also show that algorithms in the follow the perturbed leader family of no regret learning algorithms (which includes online gradient descent) can be used to give group-conditional coverage guarantees in adversarial set- tings for arbitrary grouping functions. Via this connection we analyze and conduct experiments using a multi-group generalization of the ACI algorithm of Gibbs and Candes [2021]. 1 Introduction In prediction problems over a label space Y, a popular method for quantifying uncertainty is to produce prediction sets C(x) \u2286Y that contain subsets of the label space. Given features x, the intended semantics of C(x) is that the true label y will fall into the prediction set (i.e. will be covered by the prediction set) with some specified probability, say 90%. A-priori producing prediction sets is a very high dimensional problem: there are 2|Y| possible prediction sets, which becomes intractable to enumerate over for even moderately large label spaces. But a key insight of the conformal prediction literature (see e.g. Angelopoulos and Bates [2021]) is that given an arbitrary non-conformity score f : X \u00d7 Y \u2192R\u22650, there is a 1-dimensional family of nested prediction sets defined as C\u03c4(x) = {y \u2208Y : f(x, y) \u2264\u03c4} that we can optimize over, and \u2014 simply by adjusting \u03c4, we can obtain marginal coverage at any desired rate q \u2208(0, 1). If there is a data distribution D, marginal coverage at a rate of q corresponds to the guarantee that Pr(x,y)\u223cD[y \u2208C\u03c4(x)] = q. Stronger guarantees of group conditional coverage and (threshold-calibrated) \u201cmultivalid\u201d coverage have also been recently developed Jung et al. [2021], Gupta et al. [2022], Bastani et al. [2022], Jung et al. [2023], Noarov et al. [2023], Gibbs et al. [2023], which ask for coverage to hold conditionally on various events. These methods involve learning a threshold model \u03c4 : X \u2192R, and producing prediction sets of the form C\u03c4(x) = {y : f(x) \u2264\u03c4(x)}. Group conditional coverage starts with 1 arXiv:2502.10947v1 [cs.LG] 16 Feb 2025"
+}

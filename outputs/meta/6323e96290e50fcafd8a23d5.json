@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lossy Image Compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conditional Diffusion Models",
+    "Transform coding paradigm"
+  ],
+  "results": [
+    "Strongest reported FID scores",
+    "Competitive performance with state-of-the-art models in several SIM-based reference metrics"
+  ],
+  "paper_id": "6323e96290e50fcafd8a23d5",
+  "title": "Lossy Image Compression with Conditional Diffusion Models",
+  "abstract": "  This paper outlines an end-to-end optimized lossy image compression framework using diffusion generative models. The approach relies on the transform coding paradigm, where an image is mapped into a latent space for entropy coding and, from there, mapped back to the data space for reconstruction. In contrast to VAE-based neural compression, where the (mean) decoder is a deterministic neural network, our decoder is a conditional diffusion model. Our approach thus introduces an additional ``content'' latent variable on which the reverse diffusion process is conditioned and uses this variable to store information about the image. The remaining ``texture'' latent variables characterizing the diffusion process are synthesized (stochastically or deterministically) at decoding time. We show that the model's performance can be tuned toward perceptual metrics of interest. Our extensive experiments involving five datasets and sixteen image quality assessment metrics show that our approach yields the strongest reported FID scores while also yielding competitive performance with state-of-the-art models in several SIM-based reference metrics. "
+}

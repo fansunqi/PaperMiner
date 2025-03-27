@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "on-device speech-to-speech conversion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "streaming-based approach",
+    "hybrid look-ahead feature stacker",
+    "look-ahead self-attention",
+    "int4 quantization aware training",
+    "int8 post training quantization"
+  ],
+  "results": [
+    "2x faster than real time on the Pixel4 CPU"
+  ],
+  "paper_id": "6358a56c90e50fcafda59af3",
+  "title": "Streaming Parrotron for on-device speech-to-speech conversion",
+  "abstract": "  We present a fully on-device and streaming Speech-To-Speech conversion model that normalizes a given input speech directly to synthesized output speech (a.k.a. Parrotron). Deploying such an end-to-end model locally on mobile devices pose significant challenges in terms of memory footprint and computation requirements. In this paper, we present a streaming-based approach to produce an acceptable delay, with minimal loss in speech conversion quality, when compared to a reference state of the art non-streaming approach. Our method consists of first streaming the encoder in real time while the speaker is speaking. Then, as soon as the speaker stops speaking, we run the spectrogram decoder in streaming mode along the side of a streaming vocoder to generate output speech in real time. To achieve an acceptable delay-quality trade-off, we propose a novel hybrid approach for look-ahead in the encoder which combines a look-ahead feature stacker with a look-ahead self-attention. We also compare the model with int4 quantization aware training and int8 post training quantization and show that our streaming approach is 2x faster than real time on the Pixel4 CPU. "
+}

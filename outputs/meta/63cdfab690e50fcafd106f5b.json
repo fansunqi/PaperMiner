@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Consistent Query Answering under Primary Keys"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Inflationary fixpoint algorithm"
+  ],
+  "results": [
+    "Polynomial time for self-join-free and path queries",
+    "Under-approximation for arbitrary queries"
+  ],
+  "paper_id": "63cdfab690e50fcafd106f5b",
+  "title": "A Simple Algorithm for Consistent Query Answering under Primary Keys",
+  "abstract": "  We consider the dichotomy conjecture for consistent query answering under primary key constraints stating that for every fixed Boolean conjunctive query q, testing whether it is certain over all repairs of a given inconsistent database is either polynomial time or coNP-complete. This conjecture has been verified for self-join-free and path queries. We propose a simple inflationary fixpoint algorithm for consistent query answering which, for a given database, naively computes a set $\\Delta$ of subsets of database repairs with at most $k$ facts, where $k$ is the size of the query $q$. The algorithm runs in polynomial time and can be formally defined as: 1. Initialize $\\Delta$ with all sets $S$ of at most $k$ facts such that $S$ satisfies $q$. 2. Add any set $S$ of at most $k$ facts to $\\Delta$ if there exists a block $B$ (ie, a maximal set of facts sharing the same key) such that for every fact $a$ of $B$ there is a set $S' \\in \\Delta$ contained in $(S \\cup \\{a\\})$. The algorithm answers \"$q$ is certain\" iff $\\Delta$ eventually contains the empty set. The algorithm correctly computes certain answers when the query $q$ falls in the polynomial time cases for self-join-free queries and path queries. For arbitrary queries, the algorithm is an under-approximation: The query is guaranteed to be certain if the algorithm claims so. However, there are polynomial time certain queries (with self-joins) which are not identified as such by the algorithm. "
+}

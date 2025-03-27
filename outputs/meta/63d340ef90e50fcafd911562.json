@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Instance Segmentation in Cell Science"
+  ],
+  "datasets": [
+    "Low-density cell image dataset",
+    "Curated datasets"
+  ],
+  "methods": [
+    "Projection Enhancement Network (PEN)",
+    "Augmentation for cell density"
+  ],
+  "results": [
+    "Improved segmentation performance compared to maximum intensity projection images",
+    "No similar aid in region-based networks like Mask-RCNN",
+    "Segmentation strength against cell density analysis"
+  ],
+  "paper_id": "63d340ef90e50fcafd911562",
+  "title": "The Projection-Enhancement Network (PEN)",
+  "abstract": "  Contemporary approaches to instance segmentation in cell science use 2D or 3D convolutional networks depending on the experiment and data structures. However, limitations in microscopy systems or efforts to prevent phototoxicity commonly require recording sub-optimally sampled data regimes that greatly reduces the utility of such 3D data, especially in crowded environments with significant axial overlap between objects. In such regimes, 2D segmentations are both more reliable for cell morphology and easier to annotate. In this work, we propose the Projection Enhancement Network (PEN), a novel convolutional module which processes the sub-sampled 3D data and produces a 2D RGB semantic compression, and is trained in conjunction with an instance segmentation network of choice to produce 2D segmentations. Our approach combines augmentation to increase cell density using a low-density cell image dataset to train PEN, and curated datasets to evaluate PEN. We show that with PEN, the learned semantic representation in CellPose encodes depth and greatly improves segmentation performance in comparison to maximum intensity projection images as input, but does not similarly aid segmentation in region-based networks like Mask-RCNN. Finally, we dissect the segmentation strength against cell density of PEN with CellPose on disseminated cells from side-by-side spheroids. We present PEN as a data-driven solution to form compressed representations of 3D data that improve 2D segmentations from instance segmentation networks. "
+}

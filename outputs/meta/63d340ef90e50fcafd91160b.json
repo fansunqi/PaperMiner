@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Agent Congestion Cost Minimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-Agent Congestion Cost Minimization (MACCM) algorithm",
+    "Linear function approximations",
+    "Multi-agent extended value iteration (MAEVI) subroutine"
+  ],
+  "results": [
+    "Sub-linear regret",
+    "Average regret close to zero for 2 and 3 agents"
+  ],
+  "paper_id": "63d340ef90e50fcafd91160b",
+  "title": "Multi-Agent Congestion Cost Minimization With Linear Function\n  Approximations",
+  "abstract": "  This work considers multiple agents traversing a network from a source node to the goal node. The cost to an agent for traveling a link has a private as well as a congestion component. The agent's objective is to find a path to the goal node with minimum overall cost in a decentralized way. We model this as a fully decentralized multi-agent reinforcement learning problem and propose a novel multi-agent congestion cost minimization (MACCM) algorithm. Our MACCM algorithm uses linear function approximations of transition probabilities and the global cost function. In the absence of a central controller and to preserve privacy, agents communicate the cost function parameters to their neighbors via a time-varying communication network. Moreover, each agent maintains its estimate of the global state-action value, which is updated via a multi-agent extended value iteration (MAEVI) sub-routine. We show that our MACCM algorithm achieves a sub-linear regret. The proof requires the convergence of cost function parameters, the MAEVI algorithm, and analysis of the regret bounds induced by the MAEVI triggering condition for each agent. We implement our algorithm on a two node network with multiple links to validate it. We first identify the optimal policy, the optimal number of agents going to the goal node in each period. We observe that the average regret is close to zero for 2 and 3 agents. The optimal policy captures the trade-off between the minimum cost of staying at a node and the congestion cost of going to the goal node. Our work is a generalization of learning the stochastic shortest path problem. "
+}

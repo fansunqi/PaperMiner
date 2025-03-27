@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "End-to-end speech recognition"
+  ],
+  "datasets": [
+    "Google's large-scale production data"
+  ],
+  "methods": [
+    "Modular hybrid autoregressive transducer (MHAT)",
+    "Shared acoustic encoder",
+    "Label and blank decoders",
+    "Internal LM loss",
+    "HAT loss"
+  ],
+  "results": [
+    "Relative WER reductions of up to 12.4% without LM fusion",
+    "Relative WER reductions of up to 21.5% with LM fusion"
+  ],
+  "paper_id": "63608e5190e50fcafdee144d",
+  "title": "Modular Hybrid Autoregressive Transducer",
+  "abstract": "  Text-only adaptation of a transducer model remains challenging for end-to-end speech recognition since the transducer has no clearly separated acoustic model (AM), language model (LM) or blank model. In this work, we propose a modular hybrid autoregressive transducer (MHAT) that has structurally separated label and blank decoders to predict label and blank distributions, respectively, along with a shared acoustic encoder. The encoder and label decoder outputs are directly projected to AM and internal LM scores and then added to compute label posteriors. We train MHAT with an internal LM loss and a HAT loss to ensure that its internal LM becomes a standalone neural LM that can be effectively adapted to text. Moreover, text adaptation of MHAT fosters a much better LM fusion than internal LM subtraction-based methods. On Google's large-scale production data, a multi-domain MHAT adapted with 100B sentences achieves relative WER reductions of up to 12.4% without LM fusion and 21.5% with LM fusion from 400K-hour trained HAT. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Joint CTR-CVR Estimation"
+  ],
+  "datasets": [
+    "public e-commerce datasets"
+  ],
+  "methods": [
+    "Adaptive Fine-grained Task Relatedness modeling approach (AdaFTR)",
+    "parameter-sharing MTL architecture",
+    "contrastive learning",
+    "relatedness prediction network"
+  ],
+  "results": [
+    "Both offline evaluation with public e-commerce datasets and online test in a real advertising system at Alibaba have demonstrated the effectiveness of our approach"
+  ],
+  "paper_id": "630d7fdf90e50fcafd3e6597",
+  "title": "Modeling Adaptive Fine-grained Task Relatedness for Joint CTR-CVR\n  Estimation",
+  "abstract": "  In modern advertising and recommender systems, multi-task learning (MTL) paradigm has been widely employed to jointly predict diverse user feedbacks (e.g. click and purchase). While, existing MTL approaches are either rigid to adapt to different scenarios, or only capture coarse-grained task relatedness, thus making it difficult to effectively transfer knowledge across tasks.   To address these issues, in this paper, we propose an Adaptive Fine-grained Task Relatedness modeling approach, AdaFTR, for joint CTR-CVR estimation. Our approach is developed based on a parameter-sharing MTL architecture, and introduces a novel adaptive inter-task representation alignment method based on contrastive learning.Given an instance, the inter-task representations of the same instance are considered as positive, while the representations of another random instance are considered as negative. Furthermore, we explicitly model fine-grained task relatedness as the contrast strength (i.e. the temperature coefficient in InfoNCE loss) at the instance level. For this purpose, we build a relatedness prediction network, so that it can predict the contrast strength for inter-task representations of an instance. In this way, we can adaptively set the temperature for contrastive learning in a fine-grained way (i.e. instance level), so as to better capture task relatedness. Both offline evaluation with public e-commerce datasets and online test in a real advertising system at Alibaba have demonstrated the effectiveness of our approach. "
+}

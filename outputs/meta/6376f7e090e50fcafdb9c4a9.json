@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Skeleton-based action recognition"
+  ],
+  "datasets": [
+    "NTU RGB+D",
+    "NTU RGB+D 120",
+    "Northwestern-UCLA"
+  ],
+  "methods": [
+    "Hypergraph Transformer",
+    "Graph Convolutional networks (GCNs)",
+    "Self-Attention (SA)",
+    "Hypergraph Self-Attention (HyperSA)"
+  ],
+  "results": [
+    "Hyperformer beats state-of-the-art graph models w.r.t. accuracy and efficiency"
+  ],
+  "paper_id": "6376f7e090e50fcafdb9c4a9",
+  "title": "Hypergraph Transformer for Skeleton-based Action Recognition",
+  "abstract": "  Skeleton-based action recognition aims to recognize human actions given human joint coordinates with skeletal interconnections. By defining a graph with joints as vertices and their natural connections as edges, previous works successfully adopted Graph Convolutional networks (GCNs) to model joint co-occurrences and achieved superior performance. More recently, a limitation of GCNs is identified, i.e., the topology is fixed after training. To relax such a restriction, Self-Attention (SA) mechanism has been adopted to make the topology of GCNs adaptive to the input, resulting in the state-of-the-art hybrid models. Concurrently, attempts with plain Transformers have also been made, but they still lag behind state-of-the-art GCN-based methods due to the lack of structural prior. Unlike hybrid models, we propose a more elegant solution to incorporate the bone connectivity into Transformer via a graph distance embedding. Our embedding retains the information of skeletal structure during training, whereas GCNs merely use it for initialization. More importantly, we reveal an underlying issue of graph models in general, i.e., pairwise aggregation essentially ignores the high-order kinematic dependencies between body joints. To fill this gap, we propose a new self-attention (SA) mechanism on hypergraph, termed Hypergraph Self-Attention (HyperSA), to incorporate intrinsic higher-order relations into the model. We name the resulting model Hyperformer, and it beats state-of-the-art graph models w.r.t. accuracy and efficiency on NTU RGB+D, NTU RGB+D 120, and Northwestern-UCLA datasets. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Network analysis",
+    "Community detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Variational inference",
+    "Hard thresholding",
+    "Posterior thresholding"
+  ],
+  "results": [
+    "Improved accuracy in sparse regimes",
+    "Accurate recovery of true community labels"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8a79",
+  "title": "Variational Inference: Posterior Threshold Improves Network Clustering\n  Accuracy in Sparse Regimes",
+  "abstract": "  Variational inference has been widely used in machine learning literature to fit various Bayesian models. In network analysis, this method has been successfully applied to solve the community detection problems. Although these results are promising, their theoretical support is only for relatively dense networks, an assumption that may not hold for real networks. In addition, it has been shown recently that the variational loss surface has many saddle points, which may severely affect its performance, especially when applied to sparse networks. This paper proposes a simple way to improve the variational inference method by hard thresholding the posterior of the community assignment after each iteration. Using a random initialization that correlates with the true community assignment, we show that the proposed method converges and can accurately recover the true community labels, even when the average node degree of the network is bounded. Extensive numerical study further confirms the advantage of the proposed method over the classical variational inference and another state-of-the-art algorithm. "
+}

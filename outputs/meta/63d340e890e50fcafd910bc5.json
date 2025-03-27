@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Ultrasound Imaging"
+  ],
+  "datasets": [
+    "Simulated B-mode US sweeps of the liver",
+    "Acquired US sweeps of a spine phantom"
+  ],
+  "methods": [
+    "Physics-enhanced implicit neural representation (INR)",
+    "Ray-tracing-based neural rendering"
+  ],
+  "results": [
+    "Generates geometrically accurate B-mode images",
+    "Enables consistent volume compounding from previously unseen views",
+    "First to address view-dependent US image synthesis using INR"
+  ],
+  "paper_id": "63d340e890e50fcafd910bc5",
+  "title": "Ultra-NeRF: Neural Radiance Fields for Ultrasound Imaging",
+  "abstract": "  We present a physics-enhanced implicit neural representation (INR) for ultrasound (US) imaging that learns tissue properties from overlapping US sweeps. Our proposed method leverages a ray-tracing-based neural rendering for novel view US synthesis. Recent publications demonstrated that INR models could encode a representation of a three-dimensional scene from a set of two-dimensional US frames. However, these models fail to consider the view-dependent changes in appearance and geometry intrinsic to US imaging. In our work, we discuss direction-dependent changes in the scene and show that a physics-inspired rendering improves the fidelity of US image synthesis. In particular, we demonstrate experimentally that our proposed method generates geometrically accurate B-mode images for regions with ambiguous representation owing to view-dependent differences of the US images. We conduct our experiments using simulated B-mode US sweeps of the liver and acquired US sweeps of a spine phantom tracked with a robotic arm. The experiments corroborate that our method generates US frames that enable consistent volume compounding from previously unseen views. To the best of our knowledge, the presented work is the first to address view-dependent US image synthesis using INR. "
+}

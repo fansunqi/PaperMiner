@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "DNN Inference on Constrained Edge Nodes"
+  ],
+  "datasets": [
+    "MLPerf Tiny benchmark suite"
+  ],
+  "methods": [
+    "Channel-wise Mixed-precision Assignment",
+    "Neural Architecture Search (NAS)"
+  ],
+  "results": [
+    "Memory and energy for inference reduced by up to 63% and 27% respectively compared to a layer-wise approach"
+  ],
+  "paper_id": "62afe54e5aee126c0f66981a",
+  "title": "Channel-wise Mixed-precision Assignment for DNN Inference on Constrained\n  Edge Nodes",
+  "abstract": "  Quantization is widely employed in both cloud and edge systems to reduce the memory occupation, latency, and energy consumption of deep neural networks. In particular, mixed-precision quantization, i.e., the use of different bit-widths for different portions of the network, has been shown to provide excellent efficiency gains with limited accuracy drops, especially with optimized bit-width assignments determined by automated Neural Architecture Search (NAS) tools. State-of-the-art mixed-precision works layer-wise, i.e., it uses different bit-widths for the weights and activations tensors of each network layer. In this work, we widen the search space, proposing a novel NAS that selects the bit-width of each weight tensor channel independently. This gives the tool the additional flexibility of assigning a higher precision only to the weights associated with the most informative features. Testing on the MLPerf Tiny benchmark suite, we obtain a rich collection of Pareto-optimal models in the accuracy vs model size and accuracy vs energy spaces. When deployed on the MPIC RISC-V edge processor, our networks reduce the memory and energy for inference by up to 63% and 27% respectively compared to a layer-wise approach, for the same accuracy. "
+}

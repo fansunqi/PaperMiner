@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "MRI Reconstruction"
+  ],
+  "datasets": [
+    "reference magnitude images"
+  ],
+  "methods": [
+    "deep neural network based regularizer",
+    "classical variational approach",
+    "fast algorithm for joint estimation"
+  ],
+  "results": [
+    "high-quality reconstructions",
+    "stable behavior",
+    "competitive performance",
+    "flexibility with respect to sub-sampling patterns",
+    "allowing for uncertainty quantification"
+  ],
+  "paper_id": "6358a56d90e50fcafda59b79",
+  "title": "Stable Deep MRI Reconstruction using Generative Priors",
+  "abstract": "  Data-driven approaches recently achieved remarkable success in magnetic resonance imaging (MRI) reconstruction, but integration into clinical routine remains challenging due to a lack of generalizability and interpretability. In this paper, we address these challenges in a unified framework based on generative image priors. We propose a novel deep neural network based regularizer which is trained in an unsupervised setting on reference magnitude images only. After training, the regularizer encodes higher-level domain statistics which we demonstrate by synthesizing images without data. Embedding the trained model in a classical variational approach yields high-quality reconstructions irrespective of the sub-sampling pattern. In addition, the model shows stable behavior even if the test data deviate significantly from the training data. Furthermore, a probabilistic interpretation provides a distribution of reconstructions and hence allows uncertainty quantification. To reconstruct parallel MRI, we propose a fast algorithm to jointly estimate the image and the sensitivity maps. The results demonstrate competitive performance, on par with state-of-the-art end-to-end deep learning methods, while preserving the flexibility with respect to sub-sampling patterns and allowing for uncertainty quantification. "
+}

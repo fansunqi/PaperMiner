@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Task allocation for robot swarms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "New discrete general model",
+    "N-site selection",
+    "Virtual pheromones"
+  ],
+  "results": [
+    "Virtual pheromone algorithm faster in sparse to medium task densities",
+    "Site selection algorithm outperforms Levy walk in sparse task densities",
+    "Performance dependent on task density"
+  ],
+  "paper_id": "638d612490e50fcafd14abd5",
+  "title": "A Comparison of New Swarm Task Allocation Algorithms in Unknown\n  Environments with Varying Task Density",
+  "abstract": "  Task allocation is an important problem for robot swarms to solve, allowing agents to reduce task completion time by performing tasks in a distributed fashion. Existing task allocation algorithms often assume prior knowledge of task location and demand or fail to consider the effects of the geometric distribution of tasks on the completion time and communication cost of the algorithms. In this paper, we examine an environment where agents must explore and discover tasks with positive demand and successfully assign themselves to complete all such tasks. We first provide a new discrete general model for modeling swarms. Operating within this theoretical framework, we propose two new task allocation algorithms for initially unknown environments -- one based on N-site selection and the other on virtual pheromones. We analyze each algorithm separately and also evaluate the effectiveness of the two algorithms in dense vs. sparse task distributions. Compared to the Levy walk, which has been theorized to be optimal for foraging, our virtual pheromone inspired algorithm is much faster in sparse to medium task densities but is communication and agent intensive. Our site selection inspired algorithm also outperforms Levy walk in sparse task densities and is a less resource-intensive option than our virtual pheromone algorithm for this case. Because the performance of both algorithms relative to random walk is dependent on task density, our results shed light on how task density is important in choosing a task allocation algorithm in initially unknown environments. "
+}

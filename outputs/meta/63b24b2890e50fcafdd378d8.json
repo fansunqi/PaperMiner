@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/zjukg/MEAformer"
+  ],
+  "tasks": [
+    "Multi-modal Entity Alignment"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MEAformer",
+    "Transformer",
+    "modal-aware hard entity replay strategy"
+  ],
+  "results": [
+    "SOTA performance on multiple training scenarios",
+    "Comparable number of parameters",
+    "Optimistic speed",
+    "Good interpretability"
+  ],
+  "paper_id": "63b24b2890e50fcafdd378d8",
+  "title": "MEAformer: Multi-modal Entity Alignment Transformer for Meta Modality\n  Hybrid",
+  "abstract": "  As an important variant of entity alignment (EA), multi-modal entity alignment (MMEA) aims to discover identical entities across different knowledge graphs (KGs) with relevant images attached. We noticed that current MMEA algorithms all globally adopt the KG-level modality fusion strategies for multi-modal entity representation but ignore the variation in modality preferences for individual entities, hurting the robustness to potential noise involved in modalities (e.g., blurry images and relations). In this paper, we present MEAformer, a multi-modal entity alignment transformer approach for meta modality hybrid, which dynamically predicts the mutual correlation coefficients among modalities for entity-level feature aggregation. A modal-aware hard entity replay strategy is further proposed for addressing vague entity details. Experimental results show that our model not only achieves SOTA performance on multiple training scenarios including supervised, unsupervised, iterative, and low resource, but also has a comparable number of parameters, optimistic speed, and good interpretability. Our code and data are available at https://github.com/zjukg/MEAformer. "
+}

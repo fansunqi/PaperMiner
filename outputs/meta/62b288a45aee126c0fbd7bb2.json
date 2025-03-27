@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D semantic segmentation",
+    "3D object detection"
+  ],
+  "datasets": [
+    "ScanNetv2",
+    "nuScenes"
+  ],
+  "methods": [
+    "spatial-wise partition convolution",
+    "large-kernel 3D CNN network"
+  ],
+  "results": [
+    "73.9% mIoU on ScanNetv2 semantic segmentation",
+    "72.8% NDS nuScenes object detection",
+    "74.2% NDS with multi-modal fusion",
+    "scaled to 17x17x17 kernel size on Waymo 3D object detection"
+  ],
+  "paper_id": "62b288a45aee126c0fbd7bb2",
+  "title": "LargeKernel3D: Scaling up Kernels in 3D Sparse CNNs",
+  "abstract": "  Recent advance in 2D CNNs has revealed that large kernels are important. However, when directly applying large convolutional kernels in 3D CNNs, severe difficulties are met, where those successful module designs in 2D become surprisingly ineffective on 3D networks, including the popular depth-wise convolution. To address this vital challenge, we instead propose the spatial-wise partition convolution and its large-kernel module. As a result, it avoids the optimization and efficiency issues of naive 3D large kernels. Our large-kernel 3D CNN network, LargeKernel3D, yields notable improvement in 3D tasks of semantic segmentation and object detection. It achieves 73.9% mIoU on the ScanNetv2 semantic segmentation and 72.8% NDS nuScenes object detection benchmarks, ranking 1st on the nuScenes LIDAR leaderboard. The performance further boosts to 74.2% NDS with a simple multi-modal fusion. In addition, LargeKernel3D can be scaled to 17x17x17 kernel size on Waymo 3D object detection. For the first time, we show that large kernels are feasible and essential for 3D visual tasks. "
+}

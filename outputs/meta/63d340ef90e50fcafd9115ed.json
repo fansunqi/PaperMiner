@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time machine learning",
+    "Federated edge intelligence",
+    "Federated learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Time-sensitive federated learning (TS-FL)",
+    "TS-FL with synchronous coordination (TS-FL-SC)",
+    "TS-FL with asynchronous coordination (TS-FL-ASC)",
+    "Server dropping-based solution",
+    "Joint optimization algorithm"
+  ],
+  "results": [
+    "Up to 63% reduction in overall model training time for TS-FL-SC",
+    "Up to 28% reduction in overall model training time for TS-FL-ASC"
+  ],
+  "paper_id": "63d340ef90e50fcafd9115ed",
+  "title": "Time-sensitive Learning for Heterogeneous Federated Edge Intelligence",
+  "abstract": "  Real-time machine learning has recently attracted significant interest due to its potential to support instantaneous learning, adaptation, and decision making in a wide range of application domains, including self-driving vehicles, intelligent transportation, and industry automation. We investigate real-time ML in a federated edge intelligence (FEI) system, an edge computing system that implements federated learning (FL) solutions based on data samples collected and uploaded from decentralized data networks. FEI systems often exhibit heterogenous communication and computational resource distribution, as well as non-i.i.d. data samples, resulting in long model training time and inefficient resource utilization. Motivated by this fact, we propose a time-sensitive federated learning (TS-FL) framework to minimize the overall run-time for collaboratively training a shared ML model. Training acceleration solutions for both TS-FL with synchronous coordination (TS-FL-SC) and asynchronous coordination (TS-FL-ASC) are investigated. To address straggler effect in TS-FL-SC, we develop an analytical solution to characterize the impact of selecting different subsets of edge servers on the overall model training time. A server dropping-based solution is proposed to allow slow-performance edge servers to be removed from participating in model training if their impact on the resulting model accuracy is limited. A joint optimization algorithm is proposed to minimize the overall time consumption of model training by selecting participating edge servers, local epoch number. We develop an analytical expression to characterize the impact of staleness effect of asynchronous coordination and straggler effect of FL on the time consumption of TS-FL-ASC. Experimental results show that TS-FL-SC and TS-FL-ASC can provide up to 63% and 28% of reduction, in the overall model training time, respectively. "
+}

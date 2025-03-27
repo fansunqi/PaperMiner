@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep learning generalization",
+    "Loss landscape analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Smooth interpolation",
+    "Double descent curve analysis"
+  ],
+  "results": [
+    "Loss sharpness follows double descent",
+    "Large interpolating models show smooth loss landscape"
+  ],
+  "paper_id": "632bd2a990e50fcafdb7a27d",
+  "title": "Deep Double Descent via Smooth Interpolation",
+  "abstract": "  The ability of overparameterized deep networks to interpolate noisy data, while at the same time showing good generalization performance, has been recently characterized in terms of the double descent curve for the test error. Common intuition from polynomial regression suggests that overparameterized networks are able to sharply interpolate noisy data, without considerably deviating from the ground-truth signal, thus preserving generalization ability. At present, a precise characterization of the relationship between interpolation and generalization for deep networks is missing. In this work, we quantify sharpness of fit of the training data interpolated by neural network functions, by studying the loss landscape w.r.t. to the input variable locally to each training point, over volumes around cleanly- and noisily-labelled training samples, as we systematically increase the number of model parameters and training epochs. Our findings show that loss sharpness in the input space follows both model- and epoch-wise double descent, with worse peaks observed around noisy labels. While small interpolating models sharply fit both clean and noisy data, large interpolating models express a smooth loss landscape, where noisy targets are predicted over large volumes around training data points, in contrast to existing intuition. "
+}

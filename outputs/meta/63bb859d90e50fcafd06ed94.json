@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "Emotion-Cause Pair Extraction"
+  ],
+  "datasets": [
+    "ECPE corpus"
+  ],
+  "methods": [
+    "BERT-based solutions",
+    "Guided-QA model"
+  ],
+  "results": [
+    "Promising results",
+    "Easy to reproduce"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ed94",
+  "title": "Emotion-Cause Pair Extraction as Question Answering",
+  "abstract": "  The task of Emotion-Cause Pair Extraction (ECPE) aims to extract all potential emotion-cause pairs of a document without any annotation of emotion or cause clauses. Previous approaches on ECPE have tried to improve conventional two-step processing schemes by using complex architectures for modeling emotion-cause interaction. In this paper, we cast the ECPE task to the question answering (QA) problem and propose simple yet effective BERT-based solutions to tackle it. Given a document, our Guided-QA model first predicts the best emotion clause using a fixed question. Then the predicted emotion is used as a question to predict the most potential cause for the emotion. We evaluate our model on a standard ECPE corpus. The experimental results show that despite its simplicity, our Guided-QA achieves promising results and is easy to reproduce. The code of Guided-QA is also provided. "
+}

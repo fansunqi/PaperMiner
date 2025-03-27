@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sequential optimization of time-varying objective functions"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Event-triggered algorithm (ET-GP-UCB)",
+    "Gaussian process regression"
+  ],
+  "results": [
+    "Regret bounds for ET-GP-UCB",
+    "Competitive with state-of-the-art algorithms",
+    "Outperforms baselines if the rate of change is misspecified"
+  ],
+  "paper_id": "6305970d90e50fcafd35b42b",
+  "title": "Event-Triggered Time-Varying Bayesian Optimization",
+  "abstract": "  We consider the problem of sequentially optimizing a time-varying objective function using time-varying Bayesian optimization (TVBO). Here, the key challenge is the exploration-exploitation trade-off under time variations. Current approaches to TVBO require prior knowledge of a constant rate of change. However, the rate of change is usually neither known nor constant. We propose an event-triggered algorithm, ET-GP-UCB, that treats the optimization problem as static until it detects changes in the objective function online and then resets the dataset. This allows the algorithm to adapt to realized temporal changes without the need for prior knowledge. The event-trigger is based on probabilistic uniform error bounds used in Gaussian process regression. We provide regret bounds for ET-GP-UCB and show in numerical experiments that it is competitive with state-of-the-art algorithms even though it requires no knowledge about the temporal changes. Further, ET-GP-UCB outperforms these baselines if the rate of change is misspecified, and we demonstrate that it is readily applicable to various settings without tuning hyperparameters. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Breast cancer diagnosis"
+  ],
+  "datasets": [
+    "BreakHis"
+  ],
+  "methods": [
+    "Reduced deep convolutional activation features (R-DeCAF)",
+    "Principal component analysis (PCA)",
+    "Support vector machine (SVM)"
+  ],
+  "results": [
+    "Classification accuracy improvement up to 4.3%",
+    "Best accuracy: 91.13% for 400x data with FVS of 23 and CEV equals to 0.15"
+  ],
+  "paper_id": "64daf8513fda6d7f064af144",
+  "title": "Reduced Deep Convolutional Activation Features (R-DeCAF) in\n  Histopathology Images to Improve the Classification Performance for Breast\n  Cancer Diagnosis",
+  "abstract": "  Breast cancer is the second most common cancer among women worldwide. Diagnosis of breast cancer by the pathologists is a time-consuming procedure and subjective. Computer aided diagnosis frameworks are utilized to relieve pathologist workload by classifying the data automatically, in which deep convolutional neural networks (CNNs) are effective solutions. The features extracted from activation layer of pre-trained CNNs are called deep convolutional activation features (DeCAF). In this paper, we have analyzed that all DeCAF features are not necessarily led to a higher accuracy in the classification task and dimension reduction plays an important role. Therefore, different dimension reduction methods are applied to achieve an effective combination of features by capturing the essence of DeCAF features. To this purpose, we have proposed reduced deep convolutional activation features (R-DeCAF). In this framework, pre-trained CNNs such as AlexNet, VGG-16 and VGG-19 are utilized in transfer learning mode as feature extractors. DeCAF features are extracted from the first fully connected layer of the mentioned CNNs and support vector machine has been used for binary classification. Among linear and nonlinear dimensionality reduction algorithms, linear approaches such as principal component analysis (PCA) represent a better combination among deep features and lead to a higher accuracy in the classification task using small number of features considering specific amount of cumulative explained variance (CEV) of features. The proposed method is validated using experimental BreakHis dataset. Comprehensive results show improvement in the classification accuracy up to 4.3% with less computational time. Best achieved accuracy is 91.13% for 400x data with feature vector size (FVS) of 23 and CEV equals to 0.15 using pre-trained AlexNet as feature extractor and PCA as feature reduction algorithm. "
+}

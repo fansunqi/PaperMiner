@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Novel Object Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Weakly Supervised Detection Transformer",
+    "Multiple Instance Learning (MIL) framework"
+  ],
+  "results": [
+    "Outperforms previous state-of-the-art models on large-scale novel object detection datasets",
+    "Class quantity is more important than image quantity for WSOD pretraining"
+  ],
+  "paper_id": "62ce38205aee126c0f18bb45",
+  "title": "Scaling Novel Object Detection with Weakly Supervised Detection\n  Transformers",
+  "abstract": "  A critical object detection task is finetuning an existing model to detect novel objects, but the standard workflow requires bounding box annotations which are time-consuming and expensive to collect. Weakly supervised object detection (WSOD) offers an appealing alternative, where object detectors can be trained using image-level labels. However, the practical application of current WSOD models is limited, as they only operate at small data scales and require multiple rounds of training and refinement. To address this, we propose the Weakly Supervised Detection Transformer, which enables efficient knowledge transfer from a large-scale pretraining dataset to WSOD finetuning on hundreds of novel objects. Additionally, we leverage pretrained knowledge to improve the multiple instance learning (MIL) framework often used in WSOD methods. Our experiments show that our approach outperforms previous state-of-the-art models on large-scale novel object detection datasets, and our scaling study reveals that class quantity is more important than image quantity for WSOD pretraining. "
+}

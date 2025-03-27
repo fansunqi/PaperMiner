@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hyperspectral Image Denoising"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "3D Quasi-Recurrent Neural Network (QRNN3D)",
+    "Adaptive fusion module",
+    "Removing batch normalization",
+    "Use of extra frequency loss",
+    "Learning rate warm-up"
+  ],
+  "results": [
+    "Substantially improved performance of QRNN3D",
+    "Enhanced effectiveness and superior performance"
+  ],
+  "paper_id": "6385788590e50fcafdf49a58",
+  "title": "Improved Quasi-Recurrent Neural Network for Hyperspectral Image\n  Denoising",
+  "abstract": "  Hyperspectral image is unique and useful for its abundant spectral bands, but it subsequently requires extra elaborated treatments of the spatial-spectral correlation as well as the global correlation along the spectrum for building a robust and powerful HSI restoration algorithm. By considering such HSI characteristics, 3D Quasi-Recurrent Neural Network (QRNN3D) is one of the HSI denoising networks that has been shown to achieve excellent performance and flexibility. In this paper, we show that with a few simple modifications, the performance of QRNN3D could be substantially improved further. Our modifications are based on the finding that through QRNN3D is powerful for modeling spectral correlation, it neglects the proper treatment between features from different sources and its training strategy is suboptimal. We, therefore, introduce an adaptive fusion module to replace its vanilla additive skip connection to better fuse the features of the encoder and decoder. We additionally identify several important techniques to further enhance the performance, which includes removing batch normalization, use of extra frequency loss, and learning rate warm-up. Experimental results on various noise settings demonstrate the effectiveness and superior performance of our method. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/nadeemlab/SeqX2Y"
+  ],
+  "tasks": [
+    "Respiratory motion simulation",
+    "Deformable image registration (DIR) validation",
+    "Patient-specific augmentations"
+  ],
+  "datasets": [
+    "10-phase 4D-CTs of 140 internal patients",
+    "Public DIR challenge dataset"
+  ],
+  "methods": [
+    "3D Seq2Seq deep learning respiratory motion simulator (RMSim)",
+    "Stacked 3D-ConvLSTMs",
+    "Spatial transformer"
+  ],
+  "results": [
+    "Validated with private and public benchmark datasets",
+    "Improved deep learning DIR algorithms"
+  ],
+  "paper_id": "63d7352390e50fcafda30260",
+  "title": "RMSim: Controlled Respiratory Motion Simulation on Static Patient Scans",
+  "abstract": "  This work aims to generate realistic anatomical deformations from static patient scans. Specifically, we present a method to generate these deformations/augmentations via deep learning driven respiratory motion simulation that provides the ground truth for validating deformable image registration (DIR) algorithms and driving more accurate deep learning based DIR. We present a novel 3D Seq2Seq deep learning respiratory motion simulator (RMSim) that learns from 4D-CT images and predicts future breathing phases given a static CT image. The predicted respiratory patterns, represented by time-varying displacement vector fields (DVFs) at different breathing phases, are modulated through auxiliary inputs of 1D breathing traces so that a larger amplitude in the trace results in more significant predicted deformation. Stacked 3D-ConvLSTMs are used to capture the spatial-temporal respiration patterns. Training loss includes a smoothness loss in the DVF and mean-squared error between the predicted and ground truth phase images. A spatial transformer deforms the static CT with the predicted DVF to generate the predicted phase image. 10-phase 4D-CTs of 140 internal patients were used to train and test RMSim. The trained RMSim was then used to augment a public DIR challenge dataset for training VoxelMorph to show the effectiveness of RMSim-generated deformation augmentation. We validated our RMSim output with both private and public benchmark datasets (healthy and cancer patients). The proposed approach can be used for validating DIR algorithms as well as for patient-specific augmentations to improve deep learning DIR algorithms. The code, pretrained models, and augmented DIR validation datasets will be released at https://github.com/nadeemlab/SeqX2Y. "
+}

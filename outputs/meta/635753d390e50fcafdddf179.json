@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph representation learning",
+    "Transformer architecture adaptation for DAGs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformers over directed acyclic graphs",
+    "Attention mechanism",
+    "Positional encoding"
+  ],
+  "results": [
+    "Effective in improving different kinds of baseline transformers",
+    "Competitive to or outperform graph neural networks tailored to DAGs"
+  ],
+  "paper_id": "635753d390e50fcafdddf179",
+  "title": "Transformers over Directed Acyclic Graphs",
+  "abstract": "  Transformer models have recently gained popularity in graph representation learning as they have the potential to learn complex relationships beyond the ones captured by regular graph neural networks. The main research question is how to inject the structural bias of graphs into the transformer architecture, and several proposals have been made for undirected molecular graphs and, recently, also for larger network graphs. In this paper, we study transformers over directed acyclic graphs (DAGs) and propose architecture adaptations tailored to DAGs: (1) An attention mechanism that is more efficient than the regular quadratic complexity of transformers and at the same time faithfully captures the DAG structure, and (2) a positional encoding of the DAG's partial order, complementing the former. We rigorously evaluate our framework in ablation studies and show that it is effective in improving different kinds of baseline transformers over various types of data, in experiments ranging from classifying source code graphs to nodes in self-citation networks. In particular, our proposal makes (graph) transformers competitive to or outperform graph neural networks tailored to DAGs. "
+}

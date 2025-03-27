@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Inverse problems in engineering structures",
+    "Prediction of external loads based on displacement monitoring points"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-informed neural networks (PINNs)",
+    "Multi-task learning with uncertainty weighting",
+    "Transfer learning"
+  ],
+  "results": [
+    "Satisfactory results with noisy gappy data",
+    "Better robustness compared to traditional analysis methods",
+    "Convergence acceleration through layer freezing and multi-task weight inheritance"
+  ],
+  "paper_id": "628304525aee126c0f6f130a",
+  "title": "Transfer learning based physics-informed neural networks for solving\n  inverse problems in engineering structures under different loading scenarios",
+  "abstract": "  Recently, a class of machine learning methods called physics-informed neural networks (PINNs) has been proposed and gained prevalence in solving various scientific computing problems. This approach enables the solution of partial differential equations (PDEs) via embedding physical laws into the loss function. Many inverse problems can be tackled by simply combining the data from real life scenarios with existing PINN algorithms. In this paper, we present a multi-task learning method using uncertainty weighting to improve the training efficiency and accuracy of PINNs for inverse problems in linear elasticity and hyperelasticity. Furthermore, we demonstrate an application of PINNs to a practical inverse problem in structural analysis: prediction of external loads of diverse engineering structures based on limited displacement monitoring points. To this end, we first determine a simplified loading scenario at the offline stage. By setting unknown boundary conditions as learnable parameters, PINNs can predict the external loads with the support of measured data. When it comes to the online stage in real engineering projects, transfer learning is employed to fine-tune the pre-trained model from offline stage. Our results show that, even with noisy gappy data, satisfactory results can still be obtained from the PINN model due to the dual regularization of physics laws and prior knowledge, which exhibits better robustness compared to traditional analysis methods. Our approach is capable of bridging the gap between various structures with geometric scaling and under different loading scenarios, and the convergence of training is also greatly accelerated through not only the layer freezing but also the multi-task weight inheritance from pre-trained models, thus making it possible to be applied as surrogate models in actual engineering projects. "
+}

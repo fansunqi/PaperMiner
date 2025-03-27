@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous-time Q-learning for reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Entropy-regularized, exploratory diffusion process",
+    "q-function",
+    "actor-critic algorithms",
+    "SARSA",
+    "policy gradient"
+  ],
+  "results": [
+    "Comparison of performance with PG-based algorithms in Jia and Zhou (2022b) and time-discretized conventional Q-learning algorithms"
+  ],
+  "paper_id": "62c3abbb5aee126c0fc96f52",
+  "title": "q-Learning in Continuous Time",
+  "abstract": "  We study the continuous-time counterpart of Q-learning for reinforcement learning (RL) under the entropy-regularized, exploratory diffusion process formulation introduced by Wang et al. (2020). As the conventional (big) Q-function collapses in continuous time, we consider its first-order approximation and coin the term ``(little) q-function\". This function is related to the instantaneous advantage rate function as well as the Hamiltonian. We develop a ``q-learning\" theory around the q-function that is independent of time discretization. Given a stochastic policy, we jointly characterize the associated q-function and value function by martingale conditions of certain stochastic processes, in both on-policy and off-policy settings. We then apply the theory to devise different actor-critic algorithms for solving underlying RL problems, depending on whether or not the density function of the Gibbs measure generated from the q-function can be computed explicitly. One of our algorithms interprets the well-known Q-learning algorithm SARSA, and another recovers a policy gradient (PG) based continuous-time algorithm proposed in Jia and Zhou (2022b). Finally, we conduct simulation experiments to compare the performance of our algorithms with those of PG-based algorithms in Jia and Zhou (2022b) and time-discretized conventional Q-learning algorithms. "
+}

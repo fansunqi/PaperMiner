@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text-to-Image Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Positive-Negative Prompt-Tuning"
+  ],
+  "results": [
+    "Superior generation performance over existing methods"
+  ],
+  "paper_id": "637c3dd190e50fcafd77c84c",
+  "title": "DreamArtist: Towards Controllable One-Shot Text-to-Image Generation via\n  Positive-Negative Prompt-Tuning",
+  "abstract": "  Large-scale text-to-image generation models have achieved remarkable progress in synthesizing high-quality, feature-rich images with high resolution guided by texts. However, these models often struggle with novel concepts, eg, new styles, object entities, etc. Although recent attempts have employed fine-tuning or prompt-tuning strategies to teach the pre-trained diffusion model novel concepts from a reference image set,they have the drawback of overfitting to the given reference images, particularly in one-shot applications, which is harmful to generate diverse and high-quality images while maintaining generation controllability.   To tackle this challenge, we present a simple yet effective method called DreamArtist, which employs a positive-negative prompt-tuning learning strategy. Specifically, DreamArtist incorporates both positive and negative embeddings and jointly trains them. The positive embedding aggressively captures the salient characteristics of the reference image to drive diversified generation and the negative embedding rectifies inadequacies from the positive embedding. It learns not only what is correct, but also what can be avoided or improved. We have conducted extensive experiments and evaluated the proposed method from image similarity and diversity, generation controllability, and style cloning. And our DreamArtist has achieved a superior generation performance over existing methods. Besides, our additional evaluation on extended tasks, including concept compositions and prompt-guided image editing, demonstrates its effectiveness for more applications. "
+}

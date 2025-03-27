@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computing maximum weight independent sets in graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "memetic algorithm",
+    "data reduction techniques"
+  ],
+  "results": [
+    "outperform state-of-the-art algorithms",
+    "best results among all competing algorithms for 205 out of 207 instances"
+  ],
+  "paper_id": "630d7fdf90e50fcafd3e66bb",
+  "title": "Finding Near-Optimal Weight Independent Sets at Scale",
+  "abstract": "  Computing maximum weight independent sets in graphs is an important NP-hard optimization problem. The problem is particularly difficult to solve in large graphs for which data reduction techniques do not work well. To be more precise, state-of-the-art branch-and-reduce algorithms can solve many large-scale graphs if reductions are applicable. Otherwise, their performance quickly degrades due to branching requiring exponential time. In this paper, we develop an advanced memetic algorithm to tackle the problem, which incorporates recent data reduction techniques to compute near-optimal weighted independent sets in huge sparse networks. More precisely, we use a memetic approach to recursively choose vertices that are likely to be in a large-weight independent set. We include these vertices into the solution, and further reduce the graph. We show that identifying and removing vertices likely to be in large-weight independent sets opens up the reduction space and speeds up the computation of large-weight independent sets remarkably. Our experimental evaluation indicates that we are able to outperform state-of-the-art algorithms. For example, our two algorithm configurations compute the best results among all competing algorithms for 205 out of 207 instances. Thus can be seen as a useful tool when large-weight independent sets need to be computed in~practice. "
+}

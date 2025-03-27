@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Metastatic lymph node detection"
+  ],
+  "datasets": [
+    "114 intravenous contrast-enhanced Computed Tomography (CT) images of oral squamous cell carcinoma (OSCC) patients"
+  ],
+  "methods": [
+    "Two-stage detection network",
+    "GCN-based structure for modeling LN station relationships",
+    "Feature integration for LN detection"
+  ],
+  "results": [
+    "Outperforms several state-of-the-art methods on mFROC, maxF1, and AUC scores"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa1d6",
+  "title": "Integrating features from lymph node stations for metastatic lymph node\n  detection",
+  "abstract": "  Metastasis on lymph nodes (LNs), the most common way of spread for primary tumor cells, is a sign of increased mortality. However, metastatic LNs are time-consuming and challenging to detect even for professional radiologists due to their small sizes, high sparsity, and ambiguity in appearance. It is desired to leverage recent development in deep learning to automatically detect metastatic LNs. Besides a two-stage detection network, we here introduce an additional branch to leverage information about LN stations, an important reference for radiologists during metastatic LN diagnosis, as supplementary information for metastatic LN detection. The branch targets to solve a closely related task on the LN station level, i.e., classifying whether an LN station contains metastatic LN or not, so as to learn representations for LN stations. Considering that a metastatic LN station is expected to significantly affect the nearby ones, a GCN-based structure is adopted by the branch to model the relationship among different LN stations. At the classification stage of metastatic LN detection, the above learned LN station features, as well as the features reflecting the distance between the LN candidate and the LN stations, are integrated with the LN features. We validate our method on a dataset containing 114 intravenous contrast-enhanced Computed Tomography (CT) images of oral squamous cell carcinoma (OSCC) patients and show that it outperforms several state-of-the-art methods on the mFROC, maxF1, and AUC scores,respectively. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Characterizing interleavings of concurrent objects",
+    "Formal proof methodologies for linearizability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Commutativity quotient",
+    "Regular or context-free languages",
+    "Automated discovery of execution quotients"
+  ],
+  "results": [
+    "Simple abstractions for linearizability proofs",
+    "Automated linearizability proofs for lock-free data structures"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905a67",
+  "title": "The Commutativity Quotients of Concurrent Objects",
+  "abstract": "  Concurrent objects form the foundation of many applications that exploit multicore architectures. Reasoning about the fine-grained complexities (interleavings, invariants, etc.) of those data structures, however, is notoriously difficult. Formal proof methodologies for arguing about the correctness -- i.e.,~linearizability -- of these data structures are still somewhat disconnected from the intuitive correctness arguments. Intuitions are often about a few canonical executions, possibly with few threads, whereas formal proofs would often use generic but complex arguments about arbitrary interleavings over unboundedly many threads.   As a way to bring formal proofs closer to intuitive arguments, we introduce a new methodology for characterizing the interleavings of concurrent objects, based on their \\emph{commutativity quotient}. This quotient represents every interleaving up to reordering of commutative steps and, when chosen carefully, admits simple abstractions in the form of regular or context-free languages that enable simple proofs of linearizability. We demonstrate these facts on a large class of lock-free data structures and the infamously difficult Herlihy-Wing Queue. We automate the discovery of these execution quotients and show it can be automatically done for challenging data-structures such as Treiber's stack, Michael/Scott Queue, and a concurrent Set implemented as a linked list. "
+}

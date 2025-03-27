@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural network model deployment",
+    "TPU compiler development"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MLIR",
+    "Tensor operation (TOP) dialect",
+    "TPU kernel dialect"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "635b486790e50fcafd32f96e",
+  "title": "TPU-MLIR: A Compiler For TPU Using MLIR",
+  "abstract": "  Multi-level intermediate representations (MLIR) show great promise for reducing the cost of building domain-specific compilers by providing a reusable and extensible compiler infrastructure. This work presents TPU-MLIR, an end-to-end compiler based on MLIR that deploys pre-trained neural network (NN) models to a custom ASIC called a Tensor Processing Unit (TPU). TPU-MLIR defines two new dialects to implement its functionality: 1. a Tensor operation (TOP) dialect that encodes the deep learning graph semantics and independent of the deep learning framework and 2. a TPU kernel dialect to provide a standard kernel computation on TPU. A NN model is translated to the TOP dialect and then lowered to the TPU dialect for different TPUs according to the chip's configuration. We demonstrate how to use the MLIR pass pipeline to organize and perform optimization on TPU to generate machine code. The paper also presents a verification procedure to ensure the correctness of each transform stage. "
+}

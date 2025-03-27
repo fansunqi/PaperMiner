@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep Reinforcement Learning"
+  ],
+  "datasets": [
+    "MuJoCo"
+  ],
+  "methods": [
+    "Actor-Director-Critic Framework",
+    "Improved Double Estimator Method"
+  ],
+  "results": [
+    "Faster convergence speed",
+    "Higher total return"
+  ],
+  "paper_id": "63be28d490e50fcafdf52d14",
+  "title": "Actor-Director-Critic: A Novel Deep Reinforcement Learning Framework",
+  "abstract": "  In this paper, we propose actor-director-critic, a new framework for deep reinforcement learning. Compared with the actor-critic framework, the director role is added, and action classification and action evaluation are applied simultaneously to improve the decision-making performance of the agent. Firstly, the actions of the agent are divided into high quality actions and low quality actions according to the rewards returned from the environment. Then, the director network is trained to have the ability to discriminate high and low quality actions and guide the actor network to reduce the repetitive exploration of low quality actions in the early stage of training. In addition, we propose an improved double estimator method to better solve the problem of overestimation in the field of reinforcement learning. For the two critic networks used, we design two target critic networks for each critic network instead of one. In this way, the target value of each critic network can be calculated by taking the average of the outputs of the two target critic networks, which is more stable and accurate than using only one target critic network to obtain the target value. In order to verify the performance of the actor-director-critic framework and the improved double estimator method, we applied them to the TD3 algorithm to improve the TD3 algorithm. Then, we carried out experiments in multiple environments in MuJoCo and compared the experimental data before and after the algorithm improvement. The final experimental results show that the improved algorithm can achieve faster convergence speed and higher total return. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://jianglongye.com/cgf"
+  ],
+  "tasks": [
+    "Learning Continuous Grasping Function"
+  ],
+  "datasets": [
+    "3D human demonstrations"
+  ],
+  "methods": [
+    "Continuous Grasping Function (CGF)",
+    "Conditional Variational Autoencoder",
+    "motion retargeting"
+  ],
+  "results": [
+    "CGF is more efficient",
+    "significant improvement on success rate",
+    "generalization to manipulate multiple objects"
+  ],
+  "paper_id": "62cce67a5aee126c0f2a8a6d",
+  "title": "Learning Continuous Grasping Function with a Dexterous Hand from Human\n  Demonstrations",
+  "abstract": "  We propose to learn to generate grasping motion for manipulation with a dexterous hand using implicit functions. With continuous time inputs, the model can generate a continuous and smooth grasping plan. We name the proposed model Continuous Grasping Function (CGF). CGF is learned via generative modeling with a Conditional Variational Autoencoder using 3D human demonstrations. We will first convert the large-scale human-object interaction trajectories to robot demonstrations via motion retargeting, and then use these demonstrations to train CGF. During inference, we perform sampling with CGF to generate different grasping plans in the simulator and select the successful ones to transfer to the real robot. By training on diverse human data, our CGF allows generalization to manipulate multiple objects. Compared to previous planning algorithms, CGF is more efficient and achieves significant improvement on success rate when transferred to grasping with the real Allegro Hand. Our project page is available at https://jianglongye.com/cgf . "
+}

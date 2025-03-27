@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Compressible Euler equations",
+    "Hyperbolic conservation laws",
+    "Finite difference methods"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "WENO schemes",
+    "Local characteristic decomposition",
+    "Riemann invariants",
+    "Finite difference alternative WENO schemes"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Finite Difference Alternative WENO Schemes with Riemann Invariant-Based Local Characteristic Decompo.pdf",
+  "abstract": "The weighted essentially non-oscillatory (WENO) schemes are widely used for hyperbolic conservation laws due to the ability to resolve discontinuities and maintain high-order accuracy in smooth regions at the same time. For hyperbolic systems, the WENO procedure is usually performed on local characteristic variables that are obtained by local characteristic decompositions to avoid oscillation near shocks. However, such decompositions are often com- putationally expensive. In this paper, we study a Riemann invariant-based local characteristic decomposition for the compressible Euler equations that reduces the cost. We apply the WENO procedure to the local characteristic \ufb01elds of the Riemann invariants, where the eigenmatrix is sparse and thus the computational cost can be reduced. It is di\ufb03cult to obtain the cell averages of Riemann invariants from those of the conserved variables due to the nonlinear relation be- tween them, so we only focus on the \ufb01nite di\ufb00erence alternative WENO versions. The e\ufb03ciency and non-oscillatory property of the proposed schemes are well demonstrated by our numerical results. Mathematics Subject Classi\ufb01cation: 65M06, 76M20 Keywords: hyperbolic conservation laws, compressible \ufb02ow, Riemann invariants, \ufb01nite di\ufb00erence alternative WENO schemes 1 Introduction It is well known that nonlinear hyperbolic conservation laws, e.g. the compressible Euler equations for gas dynamics, can generate sharp discontinuities in \ufb01nite time even with smooth initial conditions. Numerically resolving these discontinuities while maintaining high-order ac- curacy in smooth regions is a challenging task, because spurious oscillations that appear near the discontinuities may mess/blow up the simulation. Inspired by the essentially non-oscillatory (ENO) schemes [9, 20, 21], the weighted ENO (WENO) schemes, originally proposed in [14] and improved to achieve higher order in [12], perform well in this regard. Both \ufb01nite volume and \ufb01nite di\ufb00erence versions of the WENO schemes have been developed and widely used in practice, and many other variants are proposed as well. For simplicity, we only focus on the WENO-JS version [12] in this paper. Besides the classical \ufb01nite di\ufb00erence WENO formulation that is applied to point values of split \ufb02ux functions, there is also one formulation called alter- native WENO (A-WENO) [13] that works on those of conserved variables, which roots back to early studies of the ENO method [20]. For scalar hyperbolic conservation laws, the application of WENO methods is straightfor- ward, and the oscillations are well suppressed. However, the situation is more complicated for systems. The component-wise ENO/WENO schemes often produce oscillatory solutions after discontinuities where multiple shocks interact with each other [9], such as Riemann problems. \u2217Research is supported in part by NSF grant DMS-2309249. \u2020Division of Applied Mathematics, Brown University, Providence, RI 02912, USA (yue wu3@brown.edu). \u2021Division of Applied Mathematics, Brown University, Providence, RI 02912, USA (chi-wang shu@brown.edu). 1"
+}

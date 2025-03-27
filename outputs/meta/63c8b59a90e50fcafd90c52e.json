@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Out-of-Distribution Detection in Dermoscopic Images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-Scale Framework",
+    "Rectified Activation",
+    "One-Class SVM",
+    "Adapted Gram Matrix"
+  ],
+  "results": [
+    "Superior performance compared to other state-of-the-art methods"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c52e",
+  "title": "A Multi-Scale Framework for Out-of-Distribution Detection in Dermoscopic\n  Images",
+  "abstract": "  The automatic detection of skin diseases via dermoscopic images can improve the efficiency in diagnosis and help doctors make more accurate judgments. However, conventional skin disease recognition systems may produce high confidence for out-of-distribution (OOD) data, which may become a major security vulnerability in practical applications. In this paper, we propose a multi-scale detection framework to detect out-of-distribution skin disease image data to ensure the robustness of the system. Our framework extracts features from different layers of the neural network. In the early layers, rectified activation is used to make the output features closer to the well-behaved distribution, and then an one-class SVM is trained to detect OOD data; in the penultimate layer, an adapted Gram matrix is used to calculate the features after rectified activation, and finally the layer with the best performance is chosen to compute a normality score. Experiments show that the proposed framework achieves superior performance when compared with other state-of-the-art methods in the task of skin disease recognition. "
+}

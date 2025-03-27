@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/hku-mars/ImMesh"
+  ],
+  "tasks": [
+    "LiDAR localization and meshing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LiDAR(-inertial) odometry and mapping framework",
+    "hierarchical voxels structure",
+    "dimension reduction",
+    "meshing operation with pull, commit and push steps"
+  ],
+  "results": [
+    "first work in literature to reconstruct online triangle mesh of large-scale scenes on standard CPU"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8e87",
+  "title": "ImMesh: An Immediate LiDAR Localization and Meshing Framework",
+  "abstract": "  In this paper, we propose a novel LiDAR(-inertial) odometry and mapping framework to achieve the goal of simultaneous localization and meshing in real-time. This proposed framework termed ImMesh comprises four tightly-coupled modules: receiver, localization, meshing, and broadcaster. The localization module utilizes the prepossessed sensor data from the receiver, estimates the sensor pose online by registering LiDAR scans to maps, and dynamically grows the map. Then, our meshing module takes the registered LiDAR scan for incrementally reconstructing the triangle mesh on the fly. Finally, the real-time odometry, map, and mesh are published via our broadcaster. The key contribution of this work is the meshing module, which represents a scene by an efficient hierarchical voxels structure, performs fast finding of voxels observed by new scans, and reconstructs triangle facets in each voxel in an incremental manner. This voxel-wise meshing operation is delicately designed for the purpose of efficiency; it first performs a dimension reduction by projecting 3D points to a 2D local plane contained in the voxel, and then executes the meshing operation with pull, commit and push steps for incremental reconstruction of triangle facets. To the best of our knowledge, this is the first work in literature that can reconstruct online the triangle mesh of large-scale scenes, just relying on a standard CPU without GPU acceleration. To share our findings and make contributions to the community, we make our code publicly available on our GitHub: https://github.com/hku-mars/ImMesh. "
+}

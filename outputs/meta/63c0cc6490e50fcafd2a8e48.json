@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Class Incremental Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Re-sampling strategy",
+    "Mixup Knowledge Distillation",
+    "Incremental Influence Balance (IIB)",
+    "Effective Decision Boundary Learning (EDBL)"
+  ],
+  "results": [
+    "State-of-the-art performances on several CIL benchmarks"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8e48",
+  "title": "Effective Decision Boundary Learning for Class Incremental Learning",
+  "abstract": "  Rehearsal approaches in class incremental learning (CIL) suffer from decision boundary overfitting to new classes, which is mainly caused by two factors: insufficiency of old classes data for knowledge distillation and imbalanced data learning between the learned and new classes because of the limited storage memory. In this work, we present a simple but effective approach to tackle these two factors. First, we employ a re-sampling strategy and Mixup K}nowledge D}istillation (Re-MKD) to improve the performances of KD, which would greatly alleviate the overfitting problem. Specifically, we combine mixup and re-sampling strategies to synthesize adequate data used in KD training that are more consistent with the latent distribution between the learned and new classes. Second, we propose a novel incremental influence balance (IIB) method for CIL to tackle the classification of imbalanced data by extending the influence balance method into the CIL setting, which re-weights samples by their influences to create a proper decision boundary. With these two improvements, we present the effective decision boundary learning algorithm (EDBL) which improves the performance of KD and deals with the imbalanced data learning simultaneously. Experiments show that the proposed EDBL achieves state-of-the-art performances on several CIL benchmarks. "
+}

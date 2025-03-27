@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving Seismic Wave Equations"
+  ],
+  "datasets": [
+    "OpenFWI"
+  ],
+  "methods": [
+    "Fourier Neural Operator (FNO)",
+    "Paralleled Fourier Neural Operator (PFNO)"
+  ],
+  "results": [
+    "High accuracy with complicated velocity models",
+    "Cross-dataset generalization",
+    "Robust performance with random noise",
+    "Higher computational efficiency than finite-difference method"
+  ],
+  "paper_id": "633269f890e50fcafd490761",
+  "title": "Solving Seismic Wave Equations on Variable Velocity Models with Fourier\n  Neural Operator",
+  "abstract": "  In the study of subsurface seismic imaging, solving the acoustic wave equation is a pivotal component in existing models. The advancement of deep learning enables solving partial differential equations, including wave equations, by applying neural networks to identify the mapping between the inputs and the solution. This approach can be faster than traditional numerical methods when numerous instances are to be solved. Previous works that concentrate on solving the wave equation by neural networks consider either a single velocity model or multiple simple velocity models, which is restricted in practice. Instead, inspired by the idea of operator learning, this work leverages the Fourier neural operator (FNO) to effectively learn the frequency domain seismic wavefields under the context of variable velocity models. We also propose a new framework paralleled Fourier neural operator (PFNO) for efficiently training the FNO-based solver given multiple source locations and frequencies. Numerical experiments demonstrate the high accuracy of both FNO and PFNO with complicated velocity models in the OpenFWI datasets. Furthermore, the cross-dataset generalization test verifies that PFNO adapts to out-of-distribution velocity models. Moreover, PFNO has robust performance in the presence of random noise in the labels. Finally, PFNO admits higher computational efficiency on large-scale testing datasets than the traditional finite-difference method. The aforementioned advantages endow the FNO-based solver with the potential to build powerful models for research on seismic waves. "
+}

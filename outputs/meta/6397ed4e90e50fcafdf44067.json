@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://jblei.site/proj/rgbd-diffusion"
+  ],
+  "tasks": [
+    "3D scene synthesis from sparse RGBD inputs"
+  ],
+  "datasets": [
+    "ScanNet"
+  ],
+  "methods": [
+    "RGBD diffusion models",
+    "Incremental view inpainting"
+  ],
+  "results": [
+    "Superiority over existing approaches"
+  ],
+  "paper_id": "6397ed4e90e50fcafdf44067",
+  "title": "RGBD2: Generative Scene Synthesis via Incremental View Inpainting using\n  RGBD Diffusion Models",
+  "abstract": "  We address the challenge of recovering an underlying scene geometry and colors from a sparse set of RGBD view observations. In this work, we present a new solution termed RGBD$^2$ that sequentially generates novel RGBD views along a camera trajectory, and the scene geometry is simply the fusion result of these views. More specifically, we maintain an intermediate surface mesh used for rendering new RGBD views, which subsequently becomes complete by an inpainting network; each rendered RGBD view is later back-projected as a partial surface and is supplemented into the intermediate mesh. The use of intermediate mesh and camera projection helps solve the tough problem of multi-view inconsistency. We practically implement the RGBD inpainting network as a versatile RGBD diffusion model, which is previously used for 2D generative modeling; we make a modification to its reverse diffusion process to enable our use. We evaluate our approach on the task of 3D scene synthesis from sparse RGBD inputs; extensive experiments on the ScanNet dataset demonstrate the superiority of our approach over existing ones. Project page: https://jblei.site/proj/rgbd-diffusion. "
+}

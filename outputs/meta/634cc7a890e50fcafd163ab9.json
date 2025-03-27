@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Privacy-preserving and Lossless Distributed Estimation"
+  ],
+  "datasets": [
+    "Distributed heart disease data set"
+  ],
+  "methods": [
+    "Component-wise gradient boosting (CWB)",
+    "Row-wise tensor product"
+  ],
+  "results": [
+    "Equivalent model estimates as CWB on pooled data",
+    "Showcase efficacy on distributed heart disease data set"
+  ],
+  "paper_id": "634cc7a890e50fcafd163ab9",
+  "title": "Privacy-Preserving and Lossless Distributed Estimation of\n  High-Dimensional Generalized Additive Mixed Models",
+  "abstract": "  Various privacy-preserving frameworks that respect the individual's privacy in the analysis of data have been developed in recent years. However, available model classes such as simple statistics or generalized linear models lack the flexibility required for a good approximation of the underlying data-generating process in practice. In this paper, we propose an algorithm for a distributed, privacy-preserving, and lossless estimation of generalized additive mixed models (GAMM) using component-wise gradient boosting (CWB). Making use of CWB allows us to reframe the GAMM estimation as a distributed fitting of base learners using the $L_2$-loss. In order to account for the heterogeneity of different data location sites, we propose a distributed version of a row-wise tensor product that allows the computation of site-specific (smooth) effects. Our adaption of CWB preserves all the important properties of the original algorithm, such as an unbiased feature selection and the feasibility to fit models in high-dimensional feature spaces, and yields equivalent model estimates as CWB on pooled data. Next to a derivation of the equivalence of both algorithms, we also showcase the efficacy of our algorithm on a distributed heart disease data set and compare it with state-of-the-art methods. "
+}

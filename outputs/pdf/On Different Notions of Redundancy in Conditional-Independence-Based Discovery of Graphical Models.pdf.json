@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/PhilippFaller/RedundancyInGraphDiscovery"
+  ],
+  "tasks": [
+    "Graphical Model Discovery",
+    "Causal Discovery"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conditional Independence Testing",
+    "Graphoid Axioms",
+    "Error Correction"
+  ],
+  "results": [
+    "Purely Graphical Redundancy",
+    "Error Detection",
+    "Error Correction"
+  ],
+  "title": "On Different Notions of Redundancy in Conditional-Independence-Based Discovery of Graphical Models.pdf",
+  "abstract": "The goal of conditional-independence-based dis- covery of graphical models is to find a graph that represents the independence structure of variables in a given dataset. To learn such a representation, conditional-independence-based approaches con- duct a set of statistical tests that suffices to identify the graphical representation under some assump- tions on the underlying distribution of the data. In this work, we highlight that due to the concise- ness of the graphical representation, there are often many tests that are not used in the construction of the graph. These redundant tests have the potential to detect or sometimes correct errors in the learned model. We show that not all tests contain this ad- ditional information and that such redundant tests have to be applied with care. Precisely, we argue that particularly those conditional (in)dependence statements are interesting that follow only from graphical assumptions but do not hold for every probability distribution. 1 MOTIVATION Graphical models have become an indispensable tool for understanding complex systems and making informed de- cisions in various scientific disciplines [Lauritzen, 1996]. They provide insights into the structure within the system and under some additional assumption they can also be inter- preted as causal models [Pearl, 2009, Spirtes et al., 2000]. Popular algorithms like PC [Spirtes et al., 2000] or SP [Raskutti and Uhler, 2018] utilise (conditional) independ- ence statements to infer the graphical structure. However, a key challenge arises from the statistical hardness of con- ditional independence (CI) tests. As highlighted by Shah and Peters [2020], CI-tests cannot have valid false posit- ive control and power against arbitrary alternatives at the same time. Additionally, constraint-based algorithms of- ten rely on assumptions like faithfulness, which means that the graphical structure does not only imply independences but also dependences. Uhler et al. [2013] showed that this assumption can be problematic in the finite-sample regime since even faithful distributions can be close enough to un- faithful ones for a CI-test to fail. It is also probably violated in domains where systems evolve to equilibrium states, as in many biological settings [Andersen, 2013]. On the other hand, even a single wrong result of a CI-test can result in arbitrarily large changes in the resulting graphical model (as e.g. in example 10). In the worst case, conditional-independence-based discov- ery of graphical models requires exponentially many CI- tests in the number of nodes [Korhonen et al., 2024, Zhang et al., 2024]. Despite the large number of required tests, the set of possible graphical models can still be small com- pared to the set of possible independence models. While e.g. Shiragur et al. [2024] proposed a method to reduce the number of required test (while sacrificing details of the mod- els), in this paper we will advocate to use additional CI-tests to evaluate the graphs, which has been proposed implicitly or explicitly before [Textor et al., 2016, Eulig et al., 2023, Janzing et al., 2023]. In spirit, this follows Raskutti and Uhler [2018], who have hypothesised that there exists a stat- istical/computational trade-off for causal discovery. We will argue that not all CI-tests carry additional information (and can therefore be used to evaluate a graphical model), but only those tests for which the result follows from graphical restrictions instead of the laws of probability. Example 1 (Non-Generic Collider) Consider a probabil- ity distribution that is Markovian and faithful to the graph X1 \u2192Y \u2190X2 for random variables X1, X2, Y . Suppose we use the PC algorithm to recover the graph. The algorithm will conduct all pairwise marginal independence tests. These tests already identify the given DAG. But clearly, the graph also entails X1 \u0338\u22a5\u22a5X2 | Y under the faithfulness assump- tion. On the other hand, this dependence does not follow for all probability distributions, as we will see by constructing a arXiv:2502.08531v1 [cs.LG] 12 Feb 2025"
+}

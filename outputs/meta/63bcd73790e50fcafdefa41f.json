@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sparse Training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Gradient Correction"
+  ],
+  "results": [
+    "Accuracy improvement up to 5.0% with the same number of training epochs",
+    "Training epochs reduced by up to 52.1% to achieve the same accuracy"
+  ],
+  "paper_id": "63bcd73790e50fcafdefa41f",
+  "title": "Balance is Essence: Accelerating Sparse Training via Adaptive Gradient\n  Correction",
+  "abstract": "  Despite impressive performance on a wide variety of tasks, deep neural networks require significant memory and computation costs, prohibiting their application in resource-constrained scenarios. Sparse training is one of the most common techniques to reduce these costs, however, the sparsity constraints add difficulty to the optimization, resulting in an increase in training time and instability. In this work, we aim to overcome this problem and achieve space-time co-efficiency. To accelerate and stabilize the convergence of sparse training, we analyze the gradient changes and develop an adaptive gradient correction method. Specifically, we approximate the correlation between the current and previous gradients, which is used to balance the two gradients to obtain a corrected gradient. Our method can be used with most popular sparse training pipelines under both standard and adversarial setups. Theoretically, we prove that our method can accelerate the convergence rate of sparse training. Extensive experiments on multiple datasets, model architectures, and sparsities demonstrate that our method outperforms leading sparse training methods by up to \\textbf{5.0\\%} in accuracy given the same number of training epochs, and reduces the number of training epochs by up to \\textbf{52.1\\%} to achieve the same accuracy. "
+}

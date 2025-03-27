@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/mahimanzum/FixEval"
+  ],
+  "tasks": [
+    "Program fixes for Programming Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FixEval",
+    "Transformer language models"
+  ],
+  "results": [
+    "Match-based metrics do not reflect model-generated program fixes accurately",
+    "Execution-based methods evaluate programs through all cases and scenarios"
+  ],
+  "paper_id": "62abf1355aee126c0f475713",
+  "title": "FixEval: Execution-based Evaluation of Program Fixes for Programming\n  Problems",
+  "abstract": "  The complexity of modern software has led to a drastic increase in the time and cost associated with detecting and rectifying software bugs. In response, researchers have explored various methods to automatically generate fixes for buggy code. However, due to the large combinatorial space of possible fixes for any given bug, few tools and datasets are available to evaluate model-generated fixes effectively. To address this issue, we introduce FixEval, a benchmark comprising of buggy code submissions to competitive programming problems and their corresponding fixes. FixEval offers an extensive collection of unit tests to evaluate the correctness of model-generated program fixes and assess further information regarding time, memory constraints, and acceptance based on a verdict. We consider two Transformer language models pretrained on programming languages as our baseline and compare them using match-based and execution-based evaluation metrics. Our experiments show that match-based metrics do not reflect model-generated program fixes accurately. At the same time, execution-based methods evaluate programs through all cases and scenarios designed explicitly for that solution. Therefore, we believe FixEval provides a step towards real-world automatic bug fixing and model-generated code evaluation. The dataset and models are open-sourced at https://github.com/mahimanzum/FixEval. "
+}

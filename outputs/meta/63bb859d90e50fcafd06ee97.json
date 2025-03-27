@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D object detection from multi-view images"
+  ],
+  "datasets": [
+    "nuScenes"
+  ],
+  "methods": [
+    "Multi-View 2D Objects guided 3D Object Detector (MV2D)",
+    "sparse cross attention module"
+  ],
+  "results": [
+    "dynamic object queries and sparse feature aggregation do not harm 3D detection capability",
+    "state-of-the-art performance among existing methods"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ee97",
+  "title": "Object as Query: Equipping Any 2D Object Detector with 3D Detection\n  Ability",
+  "abstract": "  3D object detection from multi-view images has drawn much attention over the past few years. Existing methods mainly establish 3D representations from multi-view images and adopt a dense detection head for object detection, or employ object queries distributed in 3D space to localize objects. In this paper, we design Multi-View 2D Objects guided 3D Object Detector (MV2D), which can be equipped with any 2D object detector to promote multi-view 3D object detection. Since 2D detections can provide valuable priors for object existence, MV2D exploits 2D detector to generate object queries conditioned on the rich image semantics. These dynamically generated queries enable MV2D to detect objects in larger 3D space without increased computational costs and shows a strong capability of localizing 3D objects. For the generated queries, we design a sparse cross attention module to force them to focus on the features of specific objects, which reduces the computational cost and suppresses interference from noises. The evaluation results on the nuScenes dataset demonstrate that dynamic object queries and sparse feature aggregation do not harm 3D detection capability. MV2D also exhibits a state-of-the-art performance among existing methods. We hope MV2D can serve as a new baseline for future research. "
+}

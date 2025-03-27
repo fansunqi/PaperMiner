@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adaptive Resource Allocation for Workflow Containerization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ARAS (Adaptive Resource Allocation Scheme)",
+    "Resource scaling strategy"
+  ],
+  "results": [
+    "Time-saving of 9.8% to 40.92% in the average total duration of all workflows",
+    "Time-saving of 26.4% to 79.86% in the average duration of individual workflow",
+    "Increase of 1% to 16% in CPU and memory resource usage rate"
+  ],
+  "paper_id": "63cdfab690e50fcafd106eb9",
+  "title": "Adaptive Resource Allocation for Workflow Containerization on Kubernetes",
+  "abstract": "  In a cloud-native era, the Kubernetes-based workflow engine enables workflow containerized execution through the inherent abilities of Kubernetes. However, when encountering continuous workflow requests and unexpected resource request spikes, the engine is limited to the current workflow load information for resource allocation, which lacks the agility and predictability of resource allocation, resulting in over and under-provisioning resources. This mechanism seriously hinders workflow execution efficiency and leads to high resource waste. To overcome these drawbacks, we propose an adaptive resource allocation scheme named ARAS for the Kubernetes-based workflow engines. Considering potential future workflow task requests within the current task pod's lifecycle, the ARAS uses a resource scaling strategy to allocate resources in response to high-concurrency workflow scenarios. The ARAS offers resource discovery, resource evaluation, and allocation functionalities and serves as a key component for our tailored workflow engine (KubeAdaptor). By integrating the ARAS into KubeAdaptor for workflow containerized execution, we demonstrate the practical abilities of KubeAdaptor and the advantages of our ARAS. Compared with the baseline algorithm, experimental evaluation under three distinct workflow arrival patterns shows that ARAS gains time-saving of 9.8% to 40.92% in the average total duration of all workflows, time-saving of 26.4% to 79.86% in the average duration of individual workflow, and an increase of 1% to 16% in CPU and memory resource usage rate. "
+}

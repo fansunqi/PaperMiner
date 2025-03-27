@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Physics-Informed Neural Networks (PINNs) training",
+    "Parameterized problem inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fixed-Budget Online Adaptive Learning (FBOAL)",
+    "Local maxima and local minima of PDEs residuals",
+    "Finite element mesh"
+  ],
+  "results": [
+    "Improved accuracy and computational cost of PINNs",
+    "Better predictions for some physical fields",
+    "Enhanced numerical solver in mesh construction"
+  ],
+  "paper_id": "63a51c6190e50fcafde943ae",
+  "title": "Fixed-budget online adaptive learning for physics-informed neural\n  networks. Towards parameterized problem inference",
+  "abstract": "  Physics-Informed Neural Networks (PINNs) have gained much attention in various fields of engineering thanks to their capability of incorporating physical laws into the models. PINNs integrate the physical constraints by minimizing the partial differential equations (PDEs) residuals on a set of collocation points. The distribution of these collocation points appears to have a huge impact on the performance of PINNs and the assessment of the sampling methods for these points is still an active topic. In this paper, we propose a Fixed-Budget Online Adaptive Learning (FBOAL) method, which decomposes the domain into sub-domains, for training collocation points based on local maxima and local minima of the PDEs residuals. The effectiveness of FBOAL is demonstrated for non-parameterized and parameterized problems. The comparison with other adaptive sampling methods is also illustrated. The numerical results demonstrate important gains in terms of the accuracy and computational cost of PINNs with FBOAL over the classical PINNs with non-adaptive collocation points. We also apply FBOAL in a complex industrial application involving coupling between mechanical and thermal fields. We show that FBOAL is able to identify the high-gradient locations and even give better predictions for some physical fields than the classical PINNs with collocation points sampled on a pre-adapted finite element mesh built thanks to numerical expert knowledge. From the present study, it is expected that the use of FBOAL will help to improve the conventional numerical solver in the construction of the mesh. "
+}

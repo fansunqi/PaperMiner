@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/AbyssGaze/AdaMatcher"
+  ],
+  "tasks": [
+    "Feature matching"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "AdaMatcher"
+  ],
+  "results": [
+    "State-of-the-art results on many downstream tasks",
+    "Can be used as a refinement network for other matching methods"
+  ],
+  "paper_id": "62d620f65aee126c0fad477f",
+  "title": "Adaptive Assignment for Geometry Aware Local Feature Matching",
+  "abstract": "  The detector-free feature matching approaches are currently attracting great attention thanks to their excellent performance. However, these methods still struggle at large-scale and viewpoint variations, due to the geometric inconsistency resulting from the application of the mutual nearest neighbour criterion (\\ie, one-to-one assignment) in patch-level matching.Accordingly, we introduce AdaMatcher, which first accomplishes the feature correlation and co-visible area estimation through an elaborate feature interaction module, then performs adaptive assignment on patch-level matching while estimating the scales between images, and finally refines the co-visible matches through scale alignment and sub-pixel regression module.Extensive experiments show that AdaMatcher outperforms solid baselines and achieves state-of-the-art results on many downstream tasks. Additionally, the adaptive assignment and sub-pixel refinement module can be used as a refinement network for other matching methods, such as SuperGlue, to boost their performance further. The code will be publicly available at https://github.com/AbyssGaze/AdaMatcher. "
+}

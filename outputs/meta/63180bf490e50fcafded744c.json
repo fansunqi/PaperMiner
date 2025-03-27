@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Publishing graph statistics with Node Local Differential Privacy"
+  ],
+  "datasets": [
+    "Real-world graphs"
+  ],
+  "methods": [
+    "Crypto-assisted local projection method",
+    "Edge-level parameter selection"
+  ],
+  "results": [
+    "Higher accuracy than Node-level local projection",
+    "Better utility than PureLDP parameter selection, improving by up to 79.8% and 57.2% respectively"
+  ],
+  "paper_id": "63180bf490e50fcafded744c",
+  "title": "A Crypto-Assisted Approach for Publishing Graph Statistics with Node\n  Local Differential Privacy",
+  "abstract": "  Publishing graph statistics under node differential privacy has attracted much attention since it provides a stronger privacy guarantee than edge differential privacy. Existing works related to node differential privacy assume a trusted data curator who holds the whole graph. However, in many applications, a trusted curator is usually not available due to privacy and security issues. In this paper, for the first time, we investigate the problem of publishing the graph degree distribution under Node Local Differential privacy (Node-LDP), which does not rely on a trusted server. We propose an algorithm to publish the degree distribution with Node-LDP by exploring how to select the optimal graph projection parameter and how to execute the local graph projection. Specifically, we propose a Crypto-assisted local projection method that combines LDP and cryptographic primitives, achieving higher accuracy than our baseline PureLDP local projection method. On the other hand, we improve our baseline Node-level parameter selection by proposing an Edge-level parameter selection that preserves more neighboring information and provides better utility. Finally, extensive experiments on real-world graphs show that Edge-level local projection provides higher accuracy than Node-level local projection, and Crypto-assisted parameter selection owns the better utility than PureLDP parameter selection, improving by up to 79.8% and 57.2% respectively. "
+}

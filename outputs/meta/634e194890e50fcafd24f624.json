@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Community detection"
+  ],
+  "datasets": [
+    "Artificial networks",
+    "Over 500 structurally diverse empirical networks"
+  ],
+  "methods": [
+    "Implicit network generative models",
+    "Description length computation"
+  ],
+  "results": [
+    "More expressive methods show superior compression performance",
+    "Undermines 'no free lunch' theorem implications for community detection"
+  ],
+  "paper_id": "634e194890e50fcafd24f624",
+  "title": "Implicit models, latent compression, intrinsic biases, and cheap lunches\n  in community detection",
+  "abstract": "  The task of community detection, which aims to partition a network into clusters of nodes to summarize its large-scale structure, has spawned the development of many competing algorithms with varying objectives. Some community detection methods are inferential, explicitly deriving the clustering objective through a probabilistic generative model, while other methods are descriptive, dividing a network according to an objective motivated by a particular application, making it challenging to compare these methods on the same scale. Here we present a solution to this problem that associates any community detection objective, inferential or descriptive, with its corresponding implicit network generative model. This allows us to compute the description length of a network and its partition under arbitrary objectives, providing a principled measure to compare the performance of different algorithms without the need for \"ground truth\" labels. Our approach also gives access to instances of the community detection problem that are optimal to any given algorithm, and in this way reveals intrinsic biases in popular descriptive methods, explaining their tendency to overfit. Using our framework, we compare a number of community detection methods on artificial networks, and on a corpus of over 500 structurally diverse empirical networks. We find that more expressive community detection methods exhibit consistently superior compression performance on structured data instances, without having degraded performance on a minority of situations where more specialized algorithms perform optimally. Our results undermine the implications of the \"no free lunch\" theorem for community detection, both conceptually and in practice, since it is confined to unstructured data instances, unlike relevant community detection problems which are structured by requirement. "
+}

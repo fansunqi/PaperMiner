@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/yuezijie/STINet-Space-time-Video-Super-resolution"
+  ],
+  "tasks": [
+    "Space-time video super-resolution"
+  ],
+  "datasets": [
+    "Vid4",
+    "Vimeo-90K",
+    "Adobe240"
+  ],
+  "methods": [
+    "spatial-temporal feature interaction network",
+    "spatial-temporal frame interpolation module",
+    "spatial-temporal local and global refinement modules",
+    "motion consistency loss"
+  ],
+  "results": [
+    "improves the state of the art methods by a considerable margin"
+  ],
+  "paper_id": "62d7730e5aee126c0f9007dd",
+  "title": "Enhancing Space-time Video Super-resolution via Spatial-temporal Feature\n  Interaction",
+  "abstract": "  The target of space-time video super-resolution (STVSR) is to increase both the frame rate (also referred to as the temporal resolution) and the spatial resolution of a given video. Recent approaches solve STVSR using end-to-end deep neural networks. A popular solution is to first increase the frame rate of the video; then perform feature refinement among different frame features; and last increase the spatial resolutions of these features. The temporal correlation among features of different frames is carefully exploited in this process. The spatial correlation among features of different (spatial) resolutions, despite being also very important, is however not emphasized. In this paper, we propose a spatial-temporal feature interaction network to enhance STVSR by exploiting both spatial and temporal correlations among features of different frames and spatial resolutions. Specifically, the spatial-temporal frame interpolation module is introduced to interpolate low- and high-resolution intermediate frame features simultaneously and interactively. The spatial-temporal local and global refinement modules are respectively deployed afterwards to exploit the spatial-temporal correlation among different features for their refinement. Finally, a novel motion consistency loss is employed to enhance the motion continuity among reconstructed frames. We conduct experiments on three standard benchmarks, Vid4, Vimeo-90K and Adobe240, and the results demonstrate that our method improves the state of the art methods by a considerable margin. Our codes will be available at https://github.com/yuezijie/STINet-Space-time-Video-Super-resolution. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "On-device session-based recommendation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "tensor-train decomposition",
+    "compositional encoding-based compact item representations",
+    "bidirectional self-supervised knowledge distillation"
+  ],
+  "results": [
+    "8x inference speedup with a large compression ratio",
+    "superior recommendation performance"
+  ],
+  "paper_id": "6333bb7e90e50fcafdb4c47e",
+  "title": "Efficient On-Device Session-Based Recommendation",
+  "abstract": "  On-device session-based recommendation systems have been achieving increasing attention on account of the low energy/resource consumption and privacy protection while providing promising recommendation performance. To fit the powerful neural session-based recommendation models in resource-constrained mobile devices, tensor-train decomposition and its variants have been widely applied to reduce memory footprint by decomposing the embedding table into smaller tensors, showing great potential in compressing recommendation models. However, these model compression techniques significantly increase the local inference time due to the complex process of generating index lists and a series of tensor multiplications to form item embeddings, and the resultant on-device recommender fails to provide real-time response and recommendation. To improve the online recommendation efficiency, we propose to learn compositional encoding-based compact item representations. Specifically, each item is represented by a compositional code that consists of several codewords, and we learn embedding vectors to represent each codeword instead of each item. Then the composition of the codeword embedding vectors from different embedding matrices (i.e., codebooks) forms the item embedding. Since the size of codebooks can be extremely small, the recommender model is thus able to fit in resource-constrained devices and meanwhile can save the codebooks for fast local inference.Besides, to prevent the loss of model capacity caused by compression, we propose a bidirectional self-supervised knowledge distillation framework. Extensive experimental results on two benchmark datasets demonstrate that compared with existing methods, the proposed on-device recommender not only achieves an 8x inference speedup with a large compression ratio but also shows superior recommendation performance. "
+}

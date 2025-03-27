@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Triplet Reconstruction",
+    "Rooted Triplets Consistency",
+    "Triplet Clustering",
+    "Constraint Satisfaction Problems (CSPs) over infinite domains",
+    "Subtree or Supertree Aggregation Problems",
+    "Ordering CSPs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "No better approximation is known for Triplet Reconstruction",
+    "Triplet Reconstruction and every CSP over hierarchies are approximation resistant",
+    "Significant extension of the list of approximation resistant predicates",
+    "Generalization of Guruswami, Hastad, Manokaran, Raghavendra, and Charikar (2011)"
+  ],
+  "paper_id": "63aa623990e50fcafd978483",
+  "title": "Triplet Reconstruction and all other Phylogenetic CSPs are Approximation\n  Resistant",
+  "abstract": "  We study the natural problem of Triplet Reconstruction (also Rooted Triplets Consistency or Triplet Clustering), originally motivated in computational biology and relational databases (Aho, Sagiv, Szymanski, and Ullman, 1981): given $n$ points, we want to embed them onto the $n$ leaves of a rooted binary tree (a hierarchical clustering or ultrametric embedding) such that a given set of $m$ triplet constraints is satisfied. Triplet $ij|k$ indicates that ``$i, j$ are more closely related to each other than to $k$'' and a tree satisfies $ij|k$ if $d(i,j)$ is the smallest among the 3 distances. Aho et al. (1981) gave an elegant efficient algorithm to find a tree respecting all constraints (if it exists) and it is easy to see that a random binary tree is a 1/3-approximation. Unfortunately, despite more than four decades of research, no better approximation is known.   Our main theorem--which captures Triplet Reconstruction as a special case--is a general hardness of approximation result about Constraint Satisfaction Problems (CSPs) over infinite domains (the variables are mapped to any of the $n$ leaves of a tree). Specifically, we prove, under Unique Games (Khot, 2002), that Triplet Reconstruction and more generally, every CSP over hierarchies is approximation resistant (there is no polynomial-time algorithm that does asymptotically better than a biased random assignment). This settles the approximability for many interesting Subtree or Supertree Aggregation Problems. More broadly, our result significantly extends the list of approximation resistant predicates and is a generalization of Guruswami, Hastad, Manokaran, Raghavendra, and Charikar (2011), who showed that ordering CSPs are approximation resistant. The main challenge in our analyses stems from the fact that trees have topology which is what determines whether a given triplet constraint on the leaves is satisfied or not. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reactive synthesis",
+    "Compositional synthesis of distributed systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Remorsefree dominance",
+    "Delay-dominance",
+    "Automaton construction for recognizing delay-dominant strategies"
+  ],
+  "results": [
+    "Composition of dominant strategies is only guaranteed to be dominant for safety properties",
+    "Synthesis of delay-dominant strategies is in 2EXPTIME"
+  ],
+  "paper_id": "633cf5d490e50fcafd77345d",
+  "title": "Synthesizing Dominant Strategies for Liveness (Full Version)",
+  "abstract": "  Reactive synthesis automatically derives a strategy that satisfies a given specification. However, requiring a strategy to meet the specification in every situation is, in many cases, too hard of a requirement. Particularly in compositional synthesis of distributed systems, individual winning strategies for the processes often do not exist. Remorsefree dominance, a weaker notion than winning, accounts for such situations: dominant strategies are only required to be as good as any alternative strategy, i.e., they are allowed to violate the specification if no other strategy would have satisfied it in the same situation. The composition of dominant strategies is only guaranteed to be dominant for safety properties, though; preventing the use of dominance in compositional synthesis for liveness specifications. Yet, safety properties are often not expressive enough. In this paper, we thus introduce a new winning condition for strategies, called delay-dominance, that overcomes this weakness of remorsefree~dominance: we show that it is compositional for many safety and liveness specifications, enabling a compositional synthesis algorithm based on delay-dominance for general specifications. Furthermore, we introduce an automaton construction for recognizing delay-dominant strategies and prove its soundness and completeness. The resulting automaton is of single-exponential size in the squared length of the specification and can immediately be used for safraless synthesis procedures. Thus, synthesis of delay-dominant strategies is, as synthesis of winning strategies, in 2EXPTIME. "
+}

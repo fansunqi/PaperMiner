@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "Synthetic",
+    "MNIST",
+    "CIFAR-10",
+    "Shakespeare"
+  ],
+  "methods": [
+    "Federated Learning Beyond Consensus (FedBC)",
+    "Lagrangian relaxation",
+    "primal-dual method"
+  ],
+  "results": [
+    "Balances global and local model test accuracy metrics",
+    "Competitive performance with state-of-the-art"
+  ],
+  "paper_id": "62b3da1e5aee126c0fb1b468",
+  "title": "FedBC: Calibrating Global and Local Models via Federated Learning Beyond\n  Consensus",
+  "abstract": "  In this work, we quantitatively calibrate the performance of global and local models in federated learning through a multi-criterion optimization-based framework, which we cast as a constrained program. The objective of a device is its local objective, which it seeks to minimize while satisfying nonlinear constraints that quantify the proximity between the local and the global model. By considering the Lagrangian relaxation of this problem, we develop a novel primal-dual method called Federated Learning Beyond Consensus (\\texttt{FedBC}). Theoretically, we establish that \\texttt{FedBC} converges to a first-order stationary point at rates that matches the state of the art, up to an additional error term that depends on a tolerance parameter introduced to scalarize the multi-criterion formulation. Finally, we demonstrate that \\texttt{FedBC} balances the global and local model test accuracy metrics across a suite of datasets (Synthetic, MNIST, CIFAR-10, Shakespeare), achieving competitive performance with state-of-the-art. "
+}

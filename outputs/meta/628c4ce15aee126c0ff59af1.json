@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Translation of Programming Languages"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Code summarization",
+    "Code generation",
+    "Back-translation"
+  ],
+  "results": [
+    "Competitively with state-of-the-art methods"
+  ],
+  "paper_id": "628c4ce15aee126c0ff59af1",
+  "title": "Summarize and Generate to Back-translate: Unsupervised Translation of\n  Programming Languages",
+  "abstract": "  Back-translation is widely known for its effectiveness in neural machine translation when there is little to no parallel data. In this approach, a source-to-target model is coupled with a target-to-source model trained in parallel. The target-to-source model generates noisy sources, while the source-to-target model is trained to reconstruct the targets and vice versa. Recent developments of multilingual pre-trained sequence-to-sequence models for programming languages have been very effective for a broad spectrum of downstream software engineering tasks. Hence, training them to build programming language translation systems via back-translation is compelling. However, these models cannot be further trained via back-translation since they learn to output sequences in the same language as the inputs during pre-training. As an alternative, we propose performing back-translation via code summarization and generation. In code summarization, a model learns to generate natural language (NL) summaries given code snippets. In code generation, the model learns to do the opposite. Therefore, target-to-source generation in back-translation can be viewed as a target-to-NL-to-source generation. We show that our proposed approach performs competitively with state-of-the-art methods. We have made the code publicly available. "
+}

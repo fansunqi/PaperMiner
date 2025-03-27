@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://ventusff.github.io/ReVoLT-website/"
+  ],
+  "tasks": [
+    "Target-driven navigation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Object detection visual front-end",
+    "High-level reasoner (infers semantic sub-goals)",
+    "Intermediate-level planner (computes geometrical positions)",
+    "Low-level controller (executes actions)",
+    "Multi-layer semantic-spatial topological graph",
+    "Unsupervised GraphSAGE, GCN, and GraphRNN-based Region Rollout",
+    "Upper Confidence Bound for Tree (UCT)"
+  ],
+  "results": [
+    "Better performance in target-driven navigation tasks",
+    "80% improvement compared to the existing state-of-the-art method"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eea0",
+  "title": "ReVoLT: Relational Reasoning and Voronoi Local Graph Planning for\n  Target-driven Navigation",
+  "abstract": "  Embodied AI is an inevitable trend that emphasizes the interaction between intelligent entities and the real world, with broad applications in Robotics, especially target-driven navigation. This task requires the robot to find an object of a certain category efficiently in an unknown domestic environment. Recent works focus on exploiting layout relationships by graph neural networks (GNNs). However, most of them obtain robot actions directly from observations in an end-to-end manner via an incomplete relation graph, which is not interpretable and reliable. We decouple this task and propose ReVoLT, a hierarchical framework: (a) an object detection visual front-end, (b) a high-level reasoner (infers semantic sub-goals), (c) an intermediate-level planner (computes geometrical positions), and (d) a low-level controller (executes actions). ReVoLT operates with a multi-layer semantic-spatial topological graph. The reasoner uses multiform structured relations as priors, which are obtained from combinatorial relation extraction networks composed of unsupervised GraphSAGE, GCN, and GraphRNN-based Region Rollout. The reasoner performs with Upper Confidence Bound for Tree (UCT) to infer semantic sub-goals, accounting for trade-offs between exploitation (depth-first searching) and exploration (regretting). The lightweight intermediate-level planner generates instantaneous spatial sub-goal locations via an online constructed Voronoi local graph. The simulation experiments demonstrate that our framework achieves better performance in the target-driven navigation tasks and generalizes well, which has an 80% improvement compared to the existing state-of-the-art method. The code and result video will be released at https://ventusff.github.io/ReVoLT-website/. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Component Segmentation of Engineering Drawings"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph Convolutional Networks",
+    "Vectorization",
+    "Thinning",
+    "Stroke tracing",
+    "Cubic bezier fitting"
+  ],
+  "results": [
+    "Best performance compared to recent image and graph-based segmentation methods"
+  ],
+  "paper_id": "63896cd590e50fcafde79ea7",
+  "title": "Component Segmentation of Engineering Drawings Using Graph Convolutional\n  Networks",
+  "abstract": "  We present a data-driven framework to automate the vectorization and machine interpretation of 2D engineering part drawings. In industrial settings, most manufacturing engineers still rely on manual reads to identify the topological and manufacturing requirements from drawings submitted by designers. The interpretation process is laborious and time-consuming, which severely inhibits the efficiency of part quotation and manufacturing tasks. While recent advances in image-based computer vision methods have demonstrated great potential in interpreting natural images through semantic segmentation approaches, the application of such methods in parsing engineering technical drawings into semantically accurate components remains a significant challenge. The severe pixel sparsity in engineering drawings also restricts the effective featurization of image-based data-driven methods. To overcome these challenges, we propose a deep learning based framework that predicts the semantic type of each vectorized component. Taking a raster image as input, we vectorize all components through thinning, stroke tracing, and cubic bezier fitting. Then a graph of such components is generated based on the connectivity between the components. Finally, a graph convolutional neural network is trained on this graph data to identify the semantic type of each component. We test our framework in the context of semantic segmentation of text, dimension and, contour components in engineering drawings. Results show that our method yields the best performance compared to recent image, and graph-based segmentation methods. "
+}

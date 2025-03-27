@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/ReaFly/SemiMedSeg"
+  ],
+  "tasks": [
+    "Biomedical image segmentation",
+    "Semi-supervised learning"
+  ],
+  "datasets": [
+    "Polyp segmentation",
+    "Skin lesion segmentation",
+    "Fundus optic disc segmentation"
+  ],
+  "methods": [
+    "Coarse-to-fine strategy",
+    "Dual-task network",
+    "Gated feature fusion (GFF) module"
+  ],
+  "results": [
+    "Outstanding performance compared with other semi-supervised approaches"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8bbc",
+  "title": "Self-Supervised Correction Learning for Semi-Supervised Biomedical Image\n  Segmentation",
+  "abstract": "  Biomedical image segmentation plays a significant role in computer-aided diagnosis. However, existing CNN based methods rely heavily on massive manual annotations, which are very expensive and require huge human resources. In this work, we adopt a coarse-to-fine strategy and propose a self-supervised correction learning paradigm for semi-supervised biomedical image segmentation. Specifically, we design a dual-task network, including a shared encoder and two independent decoders for segmentation and lesion region inpainting, respectively. In the first phase, only the segmentation branch is used to obtain a relatively rough segmentation result. In the second step, we mask the detected lesion regions on the original image based on the initial segmentation map, and send it together with the original image into the network again to simultaneously perform inpainting and segmentation separately. For labeled data, this process is supervised by the segmentation annotations, and for unlabeled data, it is guided by the inpainting loss of masked lesion regions. Since the two tasks rely on similar feature information, the unlabeled data effectively enhances the representation of the network to the lesion regions and further improves the segmentation performance. Moreover, a gated feature fusion (GFF) module is designed to incorporate the complementary features from the two tasks. Experiments on three medical image segmentation datasets for different tasks including polyp, skin lesion and fundus optic disc segmentation well demonstrate the outstanding performance of our method compared with other semi-supervised approaches. The code is available at https://github.com/ReaFly/SemiMedSeg. "
+}

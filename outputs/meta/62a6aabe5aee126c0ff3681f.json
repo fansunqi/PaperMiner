@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backdoor attacks in evolving models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fine-tuning",
+    "Theoretical analysis",
+    "Empirical study",
+    "Smart learning rates"
+  ],
+  "results": [
+    "Progressive 'erasure' of backdoors",
+    "Time-varying models 'forget' backdoors quickly",
+    "Novel fine-tuning strategies accelerate backdoor forgetting",
+    "Need for new backdoor defenses for time-varying models"
+  ],
+  "paper_id": "62a6aabe5aee126c0ff3681f",
+  "title": "On the Permanence of Backdoors in Evolving Models",
+  "abstract": "  Existing research on training-time attacks for deep neural networks (DNNs), such as backdoors, largely assume that models are static once trained, and hidden backdoors trained into models remain active indefinitely. In practice, models are rarely static but evolve continuously to address distribution drifts in the underlying data. This paper explores the behavior of backdoor attacks in time-varying models, whose model weights are continually updated via fine-tuning to adapt to data drifts. Our theoretical analysis shows how fine-tuning with fresh data progressively \"erases\" the injected backdoors, and our empirical study illustrates how quickly a time-varying model \"forgets\" backdoors under a variety of training and attack settings. We also show that novel fine-tuning strategies using smart learning rates can significantly accelerate backdoor forgetting. Finally, we discuss the need for new backdoor defenses that target time-varying models specifically. "
+}

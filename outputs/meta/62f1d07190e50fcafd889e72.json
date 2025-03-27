@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Isoform Function Prediction"
+  ],
+  "datasets": [
+    "UniProt Gene Ontology (GO) database",
+    "NCBI RefSeq database",
+    "NCBI SRA database"
+  ],
+  "methods": [
+    "Deep Neural Networks"
+  ],
+  "results": [
+    "ROC AUC",
+    "PR AUC"
+  ],
+  "paper_id": "62f1d07190e50fcafd889e72",
+  "title": "Isoform Function Prediction Using a Deep Neural Network",
+  "abstract": "  Isoforms are mRNAs produced from the same gene site in the phenomenon called Alternative Splicing. Studies have shown that more than 95% of human multi-exon genes have undergone alternative splicing. Although there are few changes in mRNA sequence, They may have a systematic effect on cell function and regulation. It is widely reported that isoforms of a gene have distinct or even contrasting functions. Most studies have shown that alternative splicing plays a significant role in human health and disease. Despite the wide range of gene function studies, there is little information about isoforms' functionalities. Recently, some computational methods based on Multiple Instance Learning have been proposed to predict isoform function using gene function and gene expression profile. However, their performance is not desirable due to the lack of labeled training data. In addition, probabilistic models such as Conditional Random Field (CRF) have been used to model the relation between isoforms. This project uses all the data and valuable information such as isoform sequences, expression profiles, and gene ontology graphs and proposes a comprehensive model based on Deep Neural Networks. The UniProt Gene Ontology (GO) database is used as a standard reference for gene functions. The NCBI RefSeq database is used for extracting gene and isoform sequences, and the NCBI SRA database is used for expression profile data. Metrics such as Receiver Operating Characteristic Area Under the Curve (ROC AUC) and Precision-Recall Under the Curve (PR AUC) are used to measure the prediction accuracy. "
+}

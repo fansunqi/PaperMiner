@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unstained live adherent cell instance segmentation"
+  ],
+  "datasets": [
+    "520 images and 12198 cells"
+  ],
+  "methods": [
+    "Dual-view selective instance segmentation network (DVSISN)",
+    "Dual-view segmentation (DVS)",
+    "Mask selection (MS)"
+  ],
+  "results": [
+    "AP_segm of 0.555",
+    "23.6% improvement over a benchmark"
+  ],
+  "paper_id": "63d7352390e50fcafda302ce",
+  "title": "Dual-View Selective Instance Segmentation Network for Unstained Live\n  Adherent Cells in Differential Interference Contrast Images",
+  "abstract": "  Despite recent advances in data-independent and deep-learning algorithms, unstained live adherent cell instance segmentation remains a long-standing challenge in cell image processing. Adherent cells' inherent visual characteristics, such as low contrast structures, fading edges, and irregular morphology, have made it difficult to distinguish from one another, even by human experts, let alone computational methods. In this study, we developed a novel deep-learning algorithm called dual-view selective instance segmentation network (DVSISN) for segmenting unstained adherent cells in differential interference contrast (DIC) images. First, we used a dual-view segmentation (DVS) method with pairs of original and rotated images to predict the bounding box and its corresponding mask for each cell instance. Second, we used a mask selection (MS) method to filter the cell instances predicted by the DVS to keep masks closest to the ground truth only. The developed algorithm was trained and validated on our dataset containing 520 images and 12198 cells. Experimental results demonstrate that our algorithm achieves an AP_segm of 0.555, which remarkably overtakes a benchmark by a margin of 23.6%. This study's success opens up a new possibility of using rotated images as input for better prediction in cell images. "
+}

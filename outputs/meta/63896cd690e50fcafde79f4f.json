@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning a single occurrence regular expression with interleaving (SOIRE)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Noise-tolerant differentiable learning approach SOIREDL",
+    "Neural network for SOIRE matching",
+    "Faithful encodings"
+  ],
+  "results": [
+    "SOIREDL outperforms the state-of-the-art approaches",
+    "Especially effective on noisy data"
+  ],
+  "paper_id": "63896cd690e50fcafde79f4f",
+  "title": "A Noise-tolerant Differentiable Learning Approach for Single Occurrence\n  Regular Expression with Interleaving",
+  "abstract": "  We study the problem of learning a single occurrence regular expression with interleaving (SOIRE) from a set of text strings possibly with noise. SOIRE fully supports interleaving and covers a large portion of regular expressions used in practice. Learning SOIREs is challenging because it requires heavy computation and text strings usually contain noise in practice. Most of the previous studies only learn restricted SOIREs and are not robust on noisy data. To tackle these issues, we propose a noise-tolerant differentiable learning approach SOIREDL for SOIRE. We design a neural network to simulate SOIRE matching and theoretically prove that certain assignments of the set of parameters learnt by the neural network, called faithful encodings, are one-to-one corresponding to SOIREs for a bounded size. Based on this correspondence, we interpret the target SOIRE from an assignment of the set of parameters of the neural network by exploring the nearest faithful encodings. Experimental results show that SOIREDL outperforms the state-of-the-art approaches, especially on noisy data. "
+}

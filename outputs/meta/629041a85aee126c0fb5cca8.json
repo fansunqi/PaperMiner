@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Encoded Gradient Aggregation (EGA)"
+  ],
+  "results": [
+    "Prevents gradient leakage",
+    "Optimization and communication benefits",
+    "Theoretical analysis of approximation error",
+    "Compatibility with most federated optimization algorithms",
+    "Demonstrated efficacy in real-world settings"
+  ],
+  "paper_id": "629041a85aee126c0fb5cca8",
+  "title": "Encoded Gradients Aggregation against Gradient Leakage in Federated\n  Learning",
+  "abstract": "  Federated learning enables isolated clients to train a shared model collaboratively by aggregating the locally-computed gradient updates. However, privacy information could be leaked from uploaded gradients and be exposed to malicious attackers or an honest-but-curious server. Although the additive homomorphic encryption technique guarantees the security of this process, it brings unacceptable computation and communication burdens to FL participants. To mitigate this cost of secure aggregation and maintain the learning performance, we propose a new framework called Encoded Gradient Aggregation (\\emph{EGA}). In detail, EGA first encodes local gradient updates into an encoded domain with injected noises in each client before the aggregation in the server. Then, the encoded gradients aggregation results can be recovered for the global model update via a decoding function. This scheme could prevent the raw gradients of a single client from exposing on the internet and keep them unknown to the server. EGA could provide optimization and communication benefits under different noise levels and defend against gradient leakage. We further provide a theoretical analysis of the approximation error and its impacts on federated optimization. Moreover, EGA is compatible with the most federated optimization algorithms. We conduct intensive experiments to evaluate EGA in real-world federated settings, and the results have demonstrated its efficacy. "
+}

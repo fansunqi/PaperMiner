@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Discretization"
+  ],
+  "datasets": [
+    "45 machine-learning benchmark datasets"
+  ],
+  "methods": [
+    "Max-Dependency-Min-Divergence (MDmD)",
+    "Max-Relevance-Min-Divergence (MRmD)"
+  ],
+  "results": [
+    "Significantly outperforms all compared methods on most of the datasets"
+  ],
+  "paper_id": "632bd2a990e50fcafdb7a293",
+  "title": "A Max-relevance-min-divergence Criterion for Data Discretization with\n  Applications on Naive Bayes",
+  "abstract": "  In many classification models, data is discretized to better estimate its distribution. Existing discretization methods often target at maximizing the discriminant power of discretized data, while overlooking the fact that the primary target of data discretization in classification is to improve the generalization performance. As a result, the data tend to be over-split into many small bins since the data without discretization retain the maximal discriminant information. Thus, we propose a Max-Dependency-Min-Divergence (MDmD) criterion that maximizes both the discriminant information and generalization ability of the discretized data. More specifically, the Max-Dependency criterion maximizes the statistical dependency between the discretized data and the classification variable while the Min-Divergence criterion explicitly minimizes the JS-divergence between the training data and the validation data for a given discretization scheme. The proposed MDmD criterion is technically appealing, but it is difficult to reliably estimate the high-order joint distributions of attributes and the classification variable. We hence further propose a more practical solution, Max-Relevance-Min-Divergence (MRmD) discretization scheme, where each attribute is discretized separately, by simultaneously maximizing the discriminant information and the generalization ability of the discretized data. The proposed MRmD is compared with the state-of-the-art discretization algorithms under the naive Bayes classification framework on 45 machine-learning benchmark datasets. It significantly outperforms all the compared methods on most of the datasets. "
+}

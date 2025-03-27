@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speech spoofing countermeasure"
+  ],
+  "datasets": [
+    "ASVspoof 2019 logical access training set",
+    "ASVspoof 2021 hidden subsets"
+  ],
+  "methods": [
+    "Neural-network-based vocoders",
+    "Contrastive feature loss"
+  ],
+  "results": [
+    "Competitive performance",
+    "EERs outperformed top-1 challenge submission"
+  ],
+  "paper_id": "6350bc6d90e50fcafdecf212",
+  "title": "Spoofed training data for speech spoofing countermeasure can be\n  efficiently created using neural vocoders",
+  "abstract": "  A good training set for speech spoofing countermeasures requires diverse TTS and VC spoofing attacks, but generating TTS and VC spoofed trials for a target speaker may be technically demanding. Instead of using full-fledged TTS and VC systems, this study uses neural-network-based vocoders to do copy-synthesis on bona fide utterances. The output data can be used as spoofed data. To make better use of pairs of bona fide and spoofed data, this study introduces a contrastive feature loss that can be plugged into the standard training criterion. On the basis of the bona fide trials from the ASVspoof 2019 logical access training set, this study empirically compared a few training sets created in the proposed manner using a few neural non-autoregressive vocoders. Results on multiple test sets suggest good practices such as fine-tuning neural vocoders using bona fide data from the target domain. The results also demonstrated the effectiveness of the contrastive feature loss. Combining the best practices, the trained CM achieved overall competitive performance. Its EERs on the ASVspoof 2021 hidden subsets also outperformed the top-1 challenge submission. "
+}

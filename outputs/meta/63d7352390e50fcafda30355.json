@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Camera Path Estimation for In-Situ Visualization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Information Entropy-based",
+    "Efficient camera path estimation"
+  ],
+  "results": [
+    "Positive evaluations from domain scientists"
+  ],
+  "paper_id": "63d7352390e50fcafda30355",
+  "title": "Information Entropy-based Camera Path Estimation for In-Situ\n  Visualization",
+  "abstract": "  In-situ processing has widely been recognized as an effective approach for the visualization and analysis of large-scale simulation outputs from modern HPC systems. One of the most common approaches for batch-based in-situ visualization is the image- or video-based approach. In this kind of approach, a large number of rendered images are generated from different viewpoints at each time step and has proven useful for detailed analysis of the main simulation results. However, during test runs and model calibration runs before the main simulation run, a quick overview might be sufficient and useful. In this work, we focused on selecting the viewpoints which provide as much information as possible by using information entropy to maximize the subsequent visual analysis task. However, by simply following the selected viewpoints at each of the visualization time steps will probably lead to a rapidly changing video, which can impact the understanding. Therefore, we have also worked on an efficient camera path estimation approach for connecting selected viewpoints, at regular intervals, to generate a smooth video. This resulting video is expected to assist in rapid understanding of the underlying simulation phenomena and can be helpful to narrow down the temporal region of interest to minimize the turnaround time during detailed visual exploration via image- or video-based visual analysis of the main simulation run. We implemented and evaluated the proposed approach using the OpenFOAM CFD application, on an x86-based Server and an ARM A64FX-based supercomputer (Fugaku), and we obtained positive evaluations from domain scientists. "
+}

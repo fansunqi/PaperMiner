@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Occluded Pedestrian Detection"
+  ],
+  "datasets": [
+    "CrowdHuman",
+    "CityPersons"
+  ],
+  "methods": [
+    "Dynamic Instance Noise Filter (DINF)",
+    "IoU-Focal factor (IFF)"
+  ],
+  "results": [
+    "State-of-the-art performance on CrowdHuman and CityPersons"
+  ],
+  "paper_id": "63c4c02990e50fcafdae00b5",
+  "title": "DINF: Dynamic Instance Noise Filter for Occluded Pedestrian Detection",
+  "abstract": "  Occlusion issue is the biggest challenge in pedestrian detection. RCNN-based detectors extract instance features by cropping rectangle regions of interest in the feature maps. However, the visible pixels of the occluded objects are limited, making the rectangle instance feature mixed with a lot of instance-irrelevant noise information. Besides, by counting the number of instances with different degrees of overlap of CrowdHuman dataset, we find that the number of severely overlapping objects and the number of slightly overlapping objects are unbalanced, which may exacerbate the challenges posed by occlusion issues. Regarding to the noise issue, from the perspective of denoising, an iterable dynamic instance noise filter (DINF) is proposed for the RCNN-based pedestrian detectors to improve the signal-noise ratio of the instance feature. Simulating the wavelet denoising process, we use the instance feature vector to generate dynamic convolutional kernels to transform the RoIs features to a domain in which the near-zero values represent the noise information. Then, soft thresholding with channel-wise adaptive thresholds is applied to convert the near-zero values to zero to filter out noise information. For the imbalance issue, we propose an IoU-Focal factor (IFF) to modulate the contributions of the well-regressed boxes and the bad-regressed boxes to the loss in the training process, paying more attention to the minority severely overlapping objects. Extensive experiments conducted on CrowdHuman and CityPersons demonstrate that our methods can help RCNN-based pedestrian detectors achieve state-of-the-art performance. "
+}

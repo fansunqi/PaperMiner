@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/urbanmobility/CSLSL"
+  ],
+  "tasks": [
+    "Human Mobility Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Causal and Spatial-constrained Long and Short-term Learner (CSLSL)",
+    "Multi-task learning",
+    "Spatial-constrained loss function",
+    "Long and Short-term Capturer (LSC) modules"
+  ],
+  "results": [
+    "Promising performance improvements over baselines",
+    "Effectiveness of introducing causality and consistency constraints"
+  ],
+  "paper_id": "62a7fc635aee126c0ff5e068",
+  "title": "Human Mobility Prediction with Causal and Spatial-constrained Multi-task\n  Network",
+  "abstract": "  Modeling human mobility helps to understand how people are accessing resources and physically contacting with each other in cities, and thus contributes to various applications such as urban planning, epidemic control, and location-based advertisement. Next location prediction is one decisive task in individual human mobility modeling and is usually viewed as sequence modeling, solved with Markov or RNN-based methods. However, the existing models paid little attention to the logic of individual travel decisions and the reproducibility of the collective behavior of population. To this end, we propose a Causal and Spatial-constrained Long and Short-term Learner (CSLSL) for next location prediction. CSLSL utilizes a causal structure based on multi-task learning to explicitly model the \"\\textit{when$\\rightarrow$what$\\rightarrow$where}\", a.k.a. \"\\textit{time$\\rightarrow$activity$\\rightarrow$location}\" decision logic. We next propose a spatial-constrained loss function as an auxiliary task, to ensure the consistency between the predicted and actual spatial distribution of travelers' destinations. Moreover, CSLSL adopts modules named Long and Short-term Capturer (LSC) to learn the transition regularities across different time spans. Extensive experiments on three real-world datasets show promising performance improvements of CSLSL over baselines and confirm the effectiveness of introducing the causality and consistency constraints. The implementation is available at https://github.com/urbanmobility/CSLSL. "
+}

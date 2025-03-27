@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/knowledgetechnologyuhh/MELD-FAIR"
+  ],
+  "tasks": [
+    "Emotion recognition in conversations"
+  ],
+  "datasets": [
+    "Multimodal EmotionLines Dataset (MELD)"
+  ],
+  "methods": [
+    "Active speaker detection",
+    "Automatic speech recognition",
+    "Self-supervised voice recognition model"
+  ],
+  "results": [
+    "96.92% facial expression capture",
+    "Outperforms state-of-the-art models for ERC based on vision"
+  ],
+  "paper_id": "6385788690e50fcafdf4a143",
+  "title": "Whose Emotion Matters? Speaking Activity Localisation without Prior\n  Knowledge",
+  "abstract": "  The task of emotion recognition in conversations (ERC) benefits from the availability of multiple modalities, as provided, for example, in the video-based Multimodal EmotionLines Dataset (MELD). However, only a few research approaches use both acoustic and visual information from the MELD videos. There are two reasons for this: First, label-to-video alignments in MELD are noisy, making those videos an unreliable source of emotional speech data. Second, conversations can involve several people in the same scene, which requires the localisation of the utterance source. In this paper, we introduce MELD with Fixed Audiovisual Information via Realignment (MELD-FAIR) by using recent active speaker detection and automatic speech recognition models, we are able to realign the videos of MELD and capture the facial expressions from speakers in 96.92% of the utterances provided in MELD. Experiments with a self-supervised voice recognition model indicate that the realigned MELD-FAIR videos more closely match the transcribed utterances given in the MELD dataset. Finally, we devise a model for emotion recognition in conversations trained on the realigned MELD-FAIR videos, which outperforms state-of-the-art models for ERC based on vision alone. This indicates that localising the source of speaking activities is indeed effective for extracting facial expressions from the uttering speakers and that faces provide more informative visual cues than the visual features state-of-the-art models have been using so far. The MELD-FAIR realignment data, and the code of the realignment procedure and of the emotional recognition, are available at https://github.com/knowledgetechnologyuhh/MELD-FAIR. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Agent Path Finding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Counterexample Guided Abstraction Refinement",
+    "SAT-based solver"
+  ],
+  "results": [
+    "Non-refining yields order-of-magnitude smaller SAT encodings",
+    "Speeds up the overall solving process"
+  ],
+  "paper_id": "63cdfab690e50fcafd107067",
+  "title": "Counterexample Guided Abstraction Refinement with Non-Refined\n  Abstractions for Multi-Agent Path Finding",
+  "abstract": "  Counterexample guided abstraction refinement (CEGAR) represents a powerful symbolic technique for various tasks such as model checking and reachability analysis. Recently, CEGAR combined with Boolean satisfiability (SAT) has been applied for multi-agent path finding (MAPF), a problem where the task is to navigate agents from their start positions to given individual goal positions so that the agents do not collide with each other.   The recent CEGAR approach used the initial abstraction of the MAPF problem where collisions between agents were omitted and were eliminated in subsequent abstraction refinements. We propose in this work a novel CEGAR-style solver for MAPF based on SAT in which some abstractions are deliberately left non-refined. This adds the necessity to post-process the answers obtained from the underlying SAT solver as these answers slightly differ from the correct MAPF solutions. Non-refining however yields order-of-magnitude smaller SAT encodings than those of the previous approach and speeds up the overall solving process making the SAT-based solver for MAPF competitive again in relevant benchmarks. "
+}

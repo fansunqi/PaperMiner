@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "EEG Decoding"
+  ],
+  "datasets": [
+    "public EEG datasets"
+  ],
+  "methods": [
+    "Deep Riemannian Networks (DRNs)",
+    "EEG SPDNet (EE(G)-SPDNet)"
+  ],
+  "results": [
+    "outperforms ConvNets",
+    "uses physiologically plausible frequency regions",
+    "learns more complex filters",
+    "performance benefits from channel specific filtering",
+    "architectural analysis reveals areas for further improvement"
+  ],
+  "paper_id": "63a2794d90e50fcafd294577",
+  "title": "Deep Riemannian Networks for EEG Decoding",
+  "abstract": "  State-of-the-art performance in electroencephalography (EEG) decoding tasks is currently often achieved with either Deep-Learning or Riemannian-Geometry-based decoders. Recently, there is growing interest in Deep Riemannian Networks (DRNs) possibly combining the advantages of both previous classes of methods. However, there are still a range of topics where additional insight is needed to pave the way for a more widespread application of DRNs in EEG. These include architecture design questions such as network size and end-to-end ability as well as model training questions. How these factors affect model performance has not been explored. Additionally, it is not clear how the data within these networks is transformed, and whether this would correlate with traditional EEG decoding. Our study aims to lay the groundwork in the area of these topics through the analysis of DRNs for EEG with a wide range of hyperparameters. Networks were tested on two public EEG datasets and compared with state-of-the-art ConvNets. Here we propose end-to-end EEG SPDNet (EE(G)-SPDNet), and we show that this wide, end-to-end DRN can outperform the ConvNets, and in doing so use physiologically plausible frequency regions. We also show that the end-to-end approach learns more complex filters than traditional band-pass filters targeting the classical alpha, beta, and gamma frequency bands of the EEG, and that performance can benefit from channel specific filtering approaches. Additionally, architectural analysis revealed areas for further improvement due to the possible loss of Riemannian specific information throughout the network. Our study thus shows how to design and train DRNs to infer task-related information from the raw EEG without the need of handcrafted filterbanks and highlights the potential of end-to-end DRNs such as EE(G)-SPDNet for high-performance EEG decoding. "
+}

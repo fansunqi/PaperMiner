@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Camera localization",
+    "Camera pose regression"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "Deep Evidential Regression (DER)",
+    "CMRNet"
+  ],
+  "results": [
+    "Does not compromise original localization performances",
+    "Provides necessary introspection measures"
+  ],
+  "paper_id": "6363316f90e50fcafd4fbdc9",
+  "title": "Uncertainty-Aware DNN for Multi-Modal Camera Localization",
+  "abstract": "  Camera localization, i.e., camera pose regression, represents an important task in computer vision since it has many practical applications such as in the context of intelligent vehicles and their localization. Having reliable estimates of the regression uncertainties is also important, as it would allow us to catch dangerous localization failures. In the literature, uncertainty estimation in Deep Neural Networks (DNNs) is often performed through sampling methods, such as Monte Carlo Dropout (MCD) and Deep Ensemble (DE), at the expense of undesirable execution time or an increase in hardware resources. In this work, we considered an uncertainty estimation approach named Deep Evidential Regression (DER) that avoids any sampling technique, providing direct uncertainty estimates. Our goal is to provide a systematic approach to intercept localization failures of camera localization systems based on DNNs architectures, by analyzing the generated uncertainties. We propose to exploit CMRNet, a DNN approach for multi-modal image to LiDAR map registration, by modifying its internal configuration to allow for extensive experimental activity on the KITTI dataset. The experimental section highlights CMRNet's major flaws and proves that our proposal does not compromise the original localization performances but also provides, at the same time, the necessary introspection measures that would allow end-users to act accordingly. "
+}

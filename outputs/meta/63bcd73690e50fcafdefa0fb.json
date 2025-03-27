@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computational reconstruction",
+    "Imaging"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Global low-rank (GLR) optimization",
+    "Neural-based convolution",
+    "Feature detection",
+    "Patch matching"
+  ],
+  "results": [
+    "Improves patch grouping efficiency by more than one order of magnitude",
+    "Breaks the tradeoff between accuracy and efficiency for large-scale reconstruction tasks"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa0fb",
+  "title": "Large-scale Global Low-rank Optimization for Computational Compressed\n  Imaging",
+  "abstract": "  Computational reconstruction plays a vital role in computer vision and computational photography. Most of the conventional optimization and deep learning techniques explore local information for reconstruction. Recently, nonlocal low-rank (NLR) reconstruction has achieved remarkable success in improving accuracy and generalization. However, the computational cost has inhibited NLR from seeking global structural similarity, which consequentially keeps it trapped in the tradeoff between accuracy and efficiency and prevents it from high-dimensional large-scale tasks. To address this challenge, we report here the global low-rank (GLR) optimization technique, realizing highly-efficient large-scale reconstruction with global self-similarity. Inspired by the self-attention mechanism in deep learning, GLR extracts exemplar image patches by feature detection instead of conventional uniform selection. This directly produces key patches using structural features to avoid burdensome computational redundancy. Further, it performs patch matching across the entire image via neural-based convolution, which produces the global similarity heat map in parallel, rather than conventional sequential block-wise matching. As such, GLR improves patch grouping efficiency by more than one order of magnitude. We experimentally demonstrate GLR's effectiveness on temporal, frequency, and spectral dimensions, including different computational imaging modalities of compressive temporal imaging, magnetic resonance imaging, and multispectral filter array demosaicing. This work presents the superiority of inherent fusion of deep learning strategies and iterative optimization, and breaks the persistent dilemma of the tradeoff between accuracy and efficiency for various large-scale reconstruction tasks. "
+}

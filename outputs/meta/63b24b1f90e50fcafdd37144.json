@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vehicle detection and tracking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hybrid, multi-modal approach",
+    "Event-based bounding box (BB) refinement",
+    "Continuous event-based object detection"
+  ],
+  "results": [
+    "HOTA improvement from 56.6% to 64.1% and 64.9% with event and edge-based mask configurations",
+    "HOTA improvement from 52.5% to 63.1% and from 51.3% to 60.2% at high-temporal-resolution tracking rates",
+    "Significant advantages over frame-based object detectors at 24Hz and up to 500Hz tracking rates"
+  ],
+  "paper_id": "63b24b1f90e50fcafdd37144",
+  "title": "High-temporal-resolution event-based vehicle detection and tracking",
+  "abstract": "  Event-based vision has been rapidly growing in recent years justified by the unique characteristics it presents such as its high temporal resolutions (~1us), high dynamic range (>120dB), and output latency of only a few microseconds. This work further explores a hybrid, multi-modal, approach for object detection and tracking that leverages state-of-the-art frame-based detectors complemented by hand-crafted event-based methods to improve the overall tracking performance with minimal computational overhead. The methods presented include event-based bounding box (BB) refinement that improves the precision of the resulting BBs, as well as a continuous event-based object detection method, to recover missed detections and generate inter-frame detections that enable a high-temporal-resolution tracking output. The advantages of these methods are quantitatively verified by an ablation study using the higher order tracking accuracy (HOTA) metric. Results show significant performance gains resembled by an improvement in the HOTA from 56.6%, using only frames, to 64.1% and 64.9%, for the event and edge-based mask configurations combined with the two methods proposed, at the baseline framerate of 24Hz. Likewise, incorporating these methods with the same configurations has improved HOTA from 52.5% to 63.1%, and from 51.3% to 60.2% at the high-temporal-resolution tracking rate of 384Hz. Finally, a validation experiment is conducted to analyze the real-world single-object tracking performance using high-speed LiDAR. Empirical evidence shows that our approaches provide significant advantages compared to using frame-based object detectors at the baseline framerate of 24Hz and higher tracking rates of up to 500Hz. "
+}

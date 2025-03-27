@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/mindflow-institue/TransCeption"
+  ],
+  "tasks": [
+    "Medical Image Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TransCeption",
+    "ResInception Patch Merging (RIPM)",
+    "Multi-branch transformer (MB transformer)",
+    "Intra-stage Feature Fusion (IFF)",
+    "Dual Transformer Bridge"
+  ],
+  "results": [
+    "Superior performance compared to previous work"
+  ],
+  "paper_id": "63d340ef90e50fcafd911533",
+  "title": "Enhancing Medical Image Segmentation with TransCeption: A Multi-Scale\n  Feature Fusion Approach",
+  "abstract": "  While CNN-based methods have been the cornerstone of medical image segmentation due to their promising performance and robustness, they suffer from limitations in capturing long-range dependencies. Transformer-based approaches are currently prevailing since they enlarge the reception field to model global contextual correlation. To further extract rich representations, some extensions of the U-Net employ multi-scale feature extraction and fusion modules and obtain improved performance. Inspired by this idea, we propose TransCeption for medical image segmentation, a pure transformer-based U-shape network featured by incorporating the inception-like module into the encoder and adopting a contextual bridge for better feature fusion. The design proposed in this work is based on three core principles: (1) The patch merging module in the encoder is redesigned with ResInception Patch Merging (RIPM). Multi-branch transformer (MB transformer) adopts the same number of branches as the outputs of RIPM. Combining the two modules enables the model to capture a multi-scale representation within a single stage. (2) We construct an Intra-stage Feature Fusion (IFF) module following the MB transformer to enhance the aggregation of feature maps from all the branches and particularly focus on the interaction between the different channels of all the scales. (3) In contrast to a bridge that only contains token-wise self-attention, we propose a Dual Transformer Bridge that also includes channel-wise self-attention to exploit correlations between scales at different stages from a dual perspective. Extensive experiments on multi-organ and skin lesion segmentation tasks present the superior performance of TransCeption compared to previous work. The code is publicly available at \\url{https://github.com/mindflow-institue/TransCeption}. "
+}

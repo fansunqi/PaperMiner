@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantifying User Password Exposure to Third-Party CDNs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "Among Alexa top 50K websites, at least 12,451 use CDNs and contain user login entrances",
+    "33% of those websites expose users' passwords to CDNs",
+    "A popular CDN may observe passwords from more than 40% of its customers",
+    "Less than 17% of the websites adopt HTTPS encryption for user passwords"
+  ],
+  "paper_id": "63be28d490e50fcafdf52ae8",
+  "title": "Quantifying User Password Exposure to Third-Party CDNs",
+  "abstract": "  Web services commonly employ Content Distribution Networks (CDNs) for performance and security. As web traffic is becoming 100% HTTPS, more and more websites allow CDNs to terminate their HTTPS connections. This practice may expose a website's user sensitive information such as a user's login password to a third-party CDN. In this paper, we measure and quantify the extent of user password exposure to third-party CDNs. We find that among Alexa top 50K websites, at least 12,451 of them use CDNs and contain user login entrances. Among those websites, 33% of them expose users' passwords to the CDNs, and a popular CDN may observe passwords from more than 40% of its customers. This result suggests that if a CDN infrastructure has a vulnerability or an insider attack, many users' accounts will be at risk. If we assume the attacker is a passive eavesdropper, a website can avoid this vulnerability by encrypting users' passwords in HTTPS connections. Our measurement shows that less than 17% of the websites adopt this countermeasure. "
+}

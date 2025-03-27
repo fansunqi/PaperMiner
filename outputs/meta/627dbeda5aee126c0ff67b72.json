@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multidimensional poverty analysis"
+  ],
+  "datasets": [
+    "Twin births dataset",
+    "Thailand poverty survey dataset"
+  ],
+  "methods": [
+    "Framework for inferring empirical causal graphs from binary data"
+  ],
+  "results": [
+    "Approach performed better than baseline methods",
+    "Correctly found a causal relation in the Twin births dataset",
+    "Found a causal relation between smoking and alcohol drinking issues"
+  ],
+  "paper_id": "627dbeda5aee126c0ff67b72",
+  "title": "Framework for inferring empirical causal graphs from binary data to\n  support multidimensional poverty analysis",
+  "abstract": "  Poverty is one of the fundamental issues that mankind faces. To solve poverty issues, one needs to know how severe the issue is. The Multidimensional Poverty Index (MPI) is a well-known approach that is used to measure a degree of poverty issues in a given area. To compute MPI, it requires information of MPI indicators, which are \\textbf{binary variables} collecting by surveys, that represent different aspects of poverty such as lacking of education, health, living conditions, etc. Inferring impacts of MPI indicators on MPI index can be solved by using traditional regression methods. However, it is not obvious that whether solving one MPI indicator might resolve or cause more issues in other MPI indicators and there is no framework dedicating to infer empirical causal relations among MPI indicators.   In this work, we propose a framework to infer causal relations on binary variables in poverty surveys. Our approach performed better than baseline methods in simulated datasets that we know ground truth as well as correctly found a causal relation in the Twin births dataset. In Thailand poverty survey dataset, the framework found a causal relation between smoking and alcohol drinking issues. We provide R CRAN package `BiCausality' that can be used in any binary variables beyond the poverty analysis context. "
+}

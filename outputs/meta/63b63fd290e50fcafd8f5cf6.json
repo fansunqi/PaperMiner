@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/shannanyinxiang/SPTS"
+  ],
+  "tasks": [
+    "Scene text spotting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SPTS v2",
+    "Instance Assignment Decoder (IAD)",
+    "Parallel Recognition Decoder (PRD)",
+    "auto-regressive Transformer"
+  ],
+  "results": [
+    "Outperforms previous state-of-the-art single-point text spotters",
+    "14x faster inference speed",
+    "Single-point annotation optimal for scene text spotting"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5cf6",
+  "title": "SPTS v2: Single-Point Scene Text Spotting",
+  "abstract": "  End-to-end scene text spotting has made significant progress due to its intrinsic synergy between text detection and recognition. Previous methods commonly regard manual annotations such as horizontal rectangles, rotated rectangles, quadrangles,and polygons as a prerequisite, which are much more expensive than using single-point. For the first time, we demonstrate that training scene text spotting models can be achieved with an extremely low-cost single-point annotation by the proposed framework, termed SPTS v2. SPTS v2 reserves the advantage of the auto-regressive Transformer with an Instance Assignment Decoder (IAD) through sequentially predicting the center points of all text instances inside the same predicting sequence, while with a Parallel Recognition Decoder (PRD) for text recognition in parallel. These two decoders share the same parameters and are interactively connected with a simple but effective information transmission process to pass the gradient and information. Comprehensive experiments on various existing benchmark datasets demonstrate the SPTS v2 can outperform previous state-of-the-art single-point text spotters with fewer parameters while achieving 14x faster inference speed. Most importantly, within the scope of our SPTS v2, extensive experiments further reveal an important phenomenon that single-point serves as the optimal setting for the scene text spotting compared to non-point, rectangular bounding box, and polygonal bounding box. Such an attempt provides a significant opportunity for scene text spotting applications beyond the realms of existing paradigms. Code is available at https://github.com/shannanyinxiang/SPTS. "
+}

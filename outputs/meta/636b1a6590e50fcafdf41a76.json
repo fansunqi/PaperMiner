@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://sites.google.com/view/particlenerf"
+  ],
+  "tasks": [
+    "Neural Radiance Fields for dynamic scenes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Particle-based parametric encoding",
+    "Photometric reconstruction loss",
+    "Velocity vectors",
+    "Lightweight physics system"
+  ],
+  "results": [
+    "First online dynamic NeRF",
+    "Fast adaptability",
+    "Better visual fidelity than brute-force online InstantNGP and other baseline approaches"
+  ],
+  "paper_id": "636b1a6590e50fcafdf41a76",
+  "title": "ParticleNeRF: A Particle-Based Encoding for Online Neural Radiance\n  Fields",
+  "abstract": "  While existing Neural Radiance Fields (NeRFs) for dynamic scenes are offline methods with an emphasis on visual fidelity, our paper addresses the online use case that prioritises real-time adaptability. We present ParticleNeRF, a new approach that dynamically adapts to changes in the scene geometry by learning an up-to-date representation online, every 200ms. ParticleNeRF achieves this using a novel particle-based parametric encoding. We couple features to particles in space and backpropagate the photometric reconstruction loss into the particles' position gradients, which are then interpreted as velocity vectors. Governed by a lightweight physics system to handle collisions, this lets the features move freely with the changing scene geometry. We demonstrate ParticleNeRF on various dynamic scenes containing translating, rotating, articulated, and deformable objects. ParticleNeRF is the first online dynamic NeRF and achieves fast adaptability with better visual fidelity than brute-force online InstantNGP and other baseline approaches on dynamic scenes with online constraints. Videos of our system can be found at our project website https://sites.google.com/view/particlenerf. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/hanyue1648/RefT"
+  ],
+  "tasks": [
+    "Few-Shot Instance Segmentation"
+  ],
+  "datasets": [
+    "COCO"
+  ],
+  "methods": [
+    "Reference Twice (RefT)",
+    "Transformer",
+    "cross-attention",
+    "class-enhanced base knowledge distillation loss"
+  ],
+  "results": [
+    "+8.2/+9.4 performance gain over state-of-the-art methods with 10/30-shots"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f58d4",
+  "title": "Reference Twice: A Simple and Unified Baseline for Few-Shot Instance\n  Segmentation",
+  "abstract": "Few-Shot Instance Segmentation (FSIS) requires detecting and segmenting novel\nclasses with limited support examples. Existing methods based on Region\nProposal Networks (RPNs) face two issues: 1) Overfitting suppresses novel class\nobjects; 2) Dual-branch models require complex spatial correlation strategies\nto prevent spatial information loss when generating class prototypes. We\nintroduce a unified framework, Reference Twice (RefT), to exploit the\nrelationship between support and query features for FSIS and related tasks. Our\nthree main contributions are: 1) A novel transformer-based baseline that avoids\noverfitting, offering a new direction for FSIS; 2) Demonstrating that support\nobject queries encode key factors after base training, allowing query features\nto be enhanced twice at both feature and query levels using simple\ncross-attention, thus avoiding complex spatial correlation interaction; 3)\nIntroducing a class-enhanced base knowledge distillation loss to address the\nissue of DETR-like models struggling with incremental settings due to the input\nprojection layer, enabling easy extension to incremental FSIS. Extensive\nexperimental evaluations on the COCO dataset under three FSIS settings\ndemonstrate that our method performs favorably against existing approaches\nacross different shots, , +8.2/+9.4 performance gain over state-of-the-art\nmethods with 10/30-shots. Source code and models will be available at\nhttps://github.com/hanyue1648/RefT."
+}

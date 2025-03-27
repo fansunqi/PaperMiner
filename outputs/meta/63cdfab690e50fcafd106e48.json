@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep MRI Reconstruction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Recurrent Variational Network (RecurrentVarNet)",
+    "Retrospective k-space Subsampling schemes"
+  ],
+  "results": [
+    "RecurrentVarNets trained on non-rectilinearly subsampled data demonstrated superior performance",
+    "Reconstruction performance on rectilinearly subsampled data improved in multi-scheme setting"
+  ],
+  "paper_id": "63cdfab690e50fcafd106e48",
+  "title": "On Retrospective k-space Subsampling schemes For Deep MRI Reconstruction",
+  "abstract": "  Purpose: Acquiring fully-sampled MRI $k$-space data is time-consuming, and collecting accelerated data can reduce the acquisition time. Employing 2D Cartesian-rectilinear subsampling schemes is a conventional approach for accelerated acquisitions; however, this often results in imprecise reconstructions, even with the use of Deep Learning (DL), especially at high acceleration factors. Non-rectilinear or non-Cartesian trajectories can be implemented in MRI scanners as alternative subsampling options. This work investigates the impact of the $k$-space subsampling scheme on the quality of reconstructed accelerated MRI measurements produced by trained DL models.   Methods: The Recurrent Variational Network (RecurrentVarNet) was used as the DL-based MRI-reconstruction architecture. Cartesian, fully-sampled multi-coil $k$-space measurements from three datasets were retrospectively subsampled with different accelerations using eight distinct subsampling schemes: four Cartesian-rectilinear, two Cartesian non-rectilinear, and two non-Cartesian. Experiments were conducted in two frameworks: scheme-specific, where a distinct model was trained and evaluated for each dataset-subsampling scheme pair, and multi-scheme, where for each dataset a single model was trained on data randomly subsampled by any of the eight schemes and evaluated on data subsampled by all schemes.   Results: In both frameworks, RecurrentVarNets trained and evaluated on non-rectilinearly subsampled data demonstrated superior performance, particularly for high accelerations. In the multi-scheme setting, reconstruction performance on rectilinearly subsampled data improved when compared to the scheme-specific experiments.   Conclusion: Our findings demonstrate the potential for using DL-based methods, trained on non-rectilinearly subsampled measurements, to optimize scan time and image quality. "
+}

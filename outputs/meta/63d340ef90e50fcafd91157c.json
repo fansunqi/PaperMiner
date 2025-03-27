@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Web Tracking Detection and Removal"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ASTrack: uses Abstract Syntax Trees to identify tracking functionality",
+    "Computer vision and manual inspection"
+  ],
+  "results": [
+    "High precision detection of web tracking (98%)",
+    "50k tracking code pieces and 3,400 new tracking URLs detected",
+    "36% reduction in functionality loss compared to filter lists",
+    "97% of websites retain full functionality"
+  ],
+  "paper_id": "63d340ef90e50fcafd91157c",
+  "title": "ASTrack: Automatic Detection and Removal of Web Tracking Code with\n  Minimal Functionality Loss",
+  "abstract": "  Recent advances in web technologies make it more difficult than ever to detect and block web tracking systems. In this work, we propose ASTrack, a novel approach to web tracking detection and removal. ASTrack uses an abstraction of the code structure based on Abstract Syntax Trees to selectively identify web tracking functionality shared across multiple web services. This new methodology allows us to: (i) effectively detect web tracking code even when using evasion techniques (e.g., obfuscation, minification, or webpackaging); and (ii) safely remove those portions of code related to tracking purposes without affecting the legitimate functionality of the website. Our evaluation with the top 10k most popular Internet domains shows that ASTrack can detect web tracking with high precision (98%), while discovering about 50k tracking code pieces and more than 3,400 new tracking URLs not previously recognized by most popular privacy-preserving tools (e.g., uBlock Origin). Moreover, ASTrack achieved a 36% reduction in functionality loss in comparison with the filter lists, one of the safest options available. Using a novel methodology that combines computer vision and manual inspection, we estimate that full functionality is preserved in more than 97% of the websites. "
+}

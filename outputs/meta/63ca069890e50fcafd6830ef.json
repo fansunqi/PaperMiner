@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/diegovalsesia/MMD-DDM"
+  ],
+  "tasks": [
+    "Denoising Diffusion Models (DDM) sampling"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "CelebA",
+    "ImageNet",
+    "LSUN-Church"
+  ],
+  "methods": [
+    "MMD-DDM",
+    "Maximum Mean Discrepancy (MMD) finetuning"
+  ],
+  "results": [
+    "Fast sampling",
+    "Outperforms state-of-the-art techniques for accelerated sampling"
+  ],
+  "paper_id": "63ca069890e50fcafd6830ef",
+  "title": "Fast Inference in Denoising Diffusion Models via MMD Finetuning",
+  "abstract": "  Denoising Diffusion Models (DDMs) have become a popular tool for generating high-quality samples from complex data distributions. These models are able to capture sophisticated patterns and structures in the data, and can generate samples that are highly diverse and representative of the underlying distribution. However, one of the main limitations of diffusion models is the complexity of sample generation, since a large number of inference timesteps is required to faithfully capture the data distribution. In this paper, we present MMD-DDM, a novel method for fast sampling of diffusion models. Our approach is based on the idea of using the Maximum Mean Discrepancy (MMD) to finetune the learned distribution with a given budget of timesteps. This allows the finetuned model to significantly improve the speed-quality trade-off, by substantially increasing fidelity in inference regimes with few steps or, equivalently, by reducing the required number of steps to reach a target fidelity, thus paving the way for a more practical adoption of diffusion models in a wide range of applications. We evaluate our approach on unconditional image generation with extensive experiments across the CIFAR-10, CelebA, ImageNet and LSUN-Church datasets. Our findings show that the proposed method is able to produce high-quality samples in a fraction of the time required by widely-used diffusion models, and outperforms state-of-the-art techniques for accelerated sampling. Code is available at: https://github.com/diegovalsesia/MMD-DDM. "
+}

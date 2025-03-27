@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Property prediction for crystalline materials"
+  ],
+  "datasets": [
+    "800K crystal graph"
+  ],
+  "methods": [
+    "CrysGNN",
+    "Distilling pre-trained knowledge"
+  ],
+  "results": [
+    "All SOTA algorithms outperform their own vanilla version",
+    "Significant improvement over finetuning the pre-trained model"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b1c",
+  "title": "CrysGNN : Distilling pre-trained knowledge to enhance property\n  prediction for crystalline materials",
+  "abstract": "  In recent years, graph neural network (GNN) based approaches have emerged as a powerful technique to encode complex topological structure of crystal materials in an enriched representation space. These models are often supervised in nature and using the property-specific training data, learn relationship between crystal structure and different properties like formation energy, bandgap, bulk modulus, etc. Most of these methods require a huge amount of property-tagged data to train the system which may not be available for different properties. However, there is an availability of a huge amount of crystal data with its chemical composition and structural bonds. To leverage these untapped data, this paper presents CrysGNN, a new pre-trained GNN framework for crystalline materials, which captures both node and graph level structural information of crystal graphs using a huge amount of unlabelled material data. Further, we extract distilled knowledge from CrysGNN and inject into different state of the art property predictors to enhance their property prediction accuracy. We conduct extensive experiments to show that with distilled knowledge from the pre-trained model, all the SOTA algorithms are able to outperform their own vanilla version with good margins. We also observe that the distillation process provides a significant improvement over the conventional approach of finetuning the pre-trained model. We have released the pre-trained model along with the large dataset of 800K crystal graph which we carefully curated; so that the pretrained model can be plugged into any existing and upcoming models to enhance their prediction accuracy. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Linker Code Size Optimization for Native Mobile Applications"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "True linker optimization directly as optimization passes within the linker",
+    "Pre-compiled libraries"
+  ],
+  "results": [
+    "18.4% binary size reduction across three commercial applications",
+    "No user-perceivable performance degradations"
+  ],
+  "paper_id": "634cc7a290e50fcafd162d59",
+  "title": "Linker Code Size Optimization for Native Mobile Applications",
+  "abstract": "  Modern mobile applications have grown rapidly in binary size, which restricts user growth and hinders updates for existing users. Thus, reducing the binary size is important for application developers. Recent studies have shown the possibility of using link-time code size optimizations by re-invoking certain compiler optimizations on the linked intermediate representation of the program. However, such methods often incur significant build time overhead and require intrusive changes to the existing build pipeline.   In this paper, we propose several novel optimization techniques that do not require significant customization to the build pipeline and reduce binary size with low build time overhead. As opposed to re-invoking the compiler during link time, we perform true linker optimization directly as optimization passes within the linker. This enables more optimization opportunities such as pre-compiled libraries that prior work often could not optimize. We evaluate our techniques on several commercial iOS applications including NewsFeedApp, ShortVideoApp, and CollaborationSuiteApp, each with hundreds of millions of daily active users. Our techniques on average achieve 18.4% binary size reduction across the three commercial applications without any user-perceivable performance degradations. "
+}

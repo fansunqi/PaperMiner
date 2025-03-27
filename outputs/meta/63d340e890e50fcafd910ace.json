@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/zjunlp/PromptKG/tree/main/deltaKG"
+  ],
+  "tasks": [
+    "Editing language model-based knowledge graph embeddings"
+  ],
+  "datasets": [
+    "E-FB15k237",
+    "A-FB15k237",
+    "E-WN18RR",
+    "A-WN18RR"
+  ],
+  "methods": [
+    "KGEditor"
+  ],
+  "results": [
+    "KGEditor can perform better when updating specific facts while not affecting the rest with low training resources"
+  ],
+  "paper_id": "63d340e890e50fcafd910ace",
+  "title": "Editing Language Model-based Knowledge Graph Embeddings",
+  "abstract": "  Recently decades have witnessed the empirical success of framing Knowledge Graph (KG) embeddings via language models. However, language model-based KG embeddings are usually deployed as static artifacts, which are challenging to modify without re-training after deployment. To address this issue, we propose a new task of editing language model-based KG embeddings in this paper. The proposed task aims to enable data-efficient and fast updates to KG embeddings without damaging the performance of the rest. We build four new datasets: E-FB15k237, A-FB15k237, E-WN18RR, and A-WN18RR, and evaluate several knowledge editing baselines demonstrating the limited ability of previous models to handle the proposed challenging task. We further propose a simple yet strong baseline dubbed KGEditor, which utilizes additional parametric layers of the hyper network to edit/add facts. Comprehensive experimental results demonstrate that KGEditor can perform better when updating specific facts while not affecting the rest with low training resources. Code and datasets will be available in https://github.com/zjunlp/PromptKG/tree/main/deltaKG. "
+}

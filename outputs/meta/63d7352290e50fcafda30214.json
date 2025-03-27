@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text-Guided Image Inpainting"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Vision-language pre-trained models (VLPM)",
+    "Cross-modal alignment distillation",
+    "In-sample distribution distillation",
+    "Adversarial training"
+  ],
+  "results": [
+    "State-of-the-art performance compared with other strong competitors"
+  ],
+  "paper_id": "63d7352290e50fcafda30214",
+  "title": "Improving Cross-modal Alignment for Text-Guided Image Inpainting",
+  "abstract": "  Text-guided image inpainting (TGII) aims to restore missing regions based on a given text in a damaged image. Existing methods are based on a strong vision encoder and a cross-modal fusion model to integrate cross-modal features. However, these methods allocate most of the computation to visual encoding, while light computation on modeling modality interactions. Moreover, they take cross-modal fusion for depth features, which ignores a fine-grained alignment between text and image. Recently, vision-language pre-trained models (VLPM), encapsulating rich cross-modal alignment knowledge, have advanced in most multimodal tasks. In this work, we propose a novel model for TGII by improving cross-modal alignment (CMA). CMA model consists of a VLPM as a vision-language encoder, an image generator and global-local discriminators. To explore cross-modal alignment knowledge for image restoration, we introduce cross-modal alignment distillation and in-sample distribution distillation. In addition, we employ adversarial training to enhance the model to fill the missing region in complicated structures effectively. Experiments are conducted on two popular vision-language datasets. Results show that our model achieves state-of-the-art performance compared with other strong competitors. "
+}

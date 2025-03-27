@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Target Value Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Robust Bayesian Optimization",
+    "Acquisition Functions"
+  ],
+  "results": [
+    "Outperforms classical Bayesian optimization",
+    "Compatible with certain extensions of Gaussian processes"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886457",
+  "title": "Robust Bayesian Target Value Optimization",
+  "abstract": "  We consider the problem of finding an input to a stochastic black box function such that the scalar output of the black box function is as close as possible to a target value in the sense of the expected squared error. While the optimization of stochastic black boxes is classic in (robust) Bayesian optimization, the current approaches based on Gaussian processes predominantly focus either on i) maximization/minimization rather than target value optimization or ii) on the expectation, but not the variance of the output, ignoring output variations due to stochasticity in uncontrollable environmental variables. In this work, we fill this gap and derive acquisition functions for common criteria such as the expected improvement, the probability of improvement, and the lower confidence bound, assuming that aleatoric effects are Gaussian with known variance. Our experiments illustrate that this setting is compatible with certain extensions of Gaussian processes, and show that the thus derived acquisition functions can outperform classical Bayesian optimization even if the latter assumptions are violated. An industrial use case in billet forging is presented. "
+}

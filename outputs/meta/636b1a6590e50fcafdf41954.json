@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Multi-Object Tracking"
+  ],
+  "datasets": [
+    "nuScenes tracking benchmark"
+  ],
+  "methods": [
+    "Shape and spatio-temporal affinities learning",
+    "Probabilistic matching",
+    "Data association",
+    "Track lifecycle management",
+    "False-positive elimination",
+    "False-negative propagation",
+    "Sequential track confidence refinement"
+  ],
+  "results": [
+    "1st place amongst LiDAR-only trackers using CenterPoint detections",
+    "Decreased number of false-positive and false-negative tracks",
+    "Increased number of true-positive tracks"
+  ],
+  "paper_id": "636b1a6590e50fcafdf41954",
+  "title": "ShaSTA: Modeling Shape and Spatio-Temporal Affinities for 3D\n  Multi-Object Tracking",
+  "abstract": "  Multi-object tracking is a cornerstone capability of any robotic system. The quality of tracking is largely dependent on the quality of the detector used. In many applications, such as autonomous vehicles, it is preferable to over-detect objects to avoid catastrophic outcomes due to missed detections. As a result, current state-of-the-art 3D detectors produce high rates of false-positives to ensure a low number of false-negatives. This can negatively affect tracking by making data association and track lifecycle management more challenging. Additionally, occasional false-negative detections due to difficult scenarios like occlusions can harm tracking performance. To address these issues in a unified framework, we propose to learn shape and spatio-temporal affinities between tracks and detections in consecutive frames. Our affinity provides a probabilistic matching that leads to robust data association, track lifecycle management, false-positive elimination, false-negative propagation, and sequential track confidence refinement. Though past 3D MOT approaches address a subset of components in this problem domain, we offer the first self-contained framework that addresses all these aspects of the 3D MOT problem. We quantitatively evaluate our method on the nuScenes tracking benchmark where we achieve 1st place amongst LiDAR-only trackers using CenterPoint detections. Our method estimates accurate and precise tracks, while decreasing the overall number of false-positive and false-negative tracks and increasing the number of true-positive tracks. We analyze our performance with 5 metrics, giving a comprehensive overview of our approach to indicate how our tracking framework may impact the ultimate goal of an autonomous mobile agent. We also present ablative experiments and qualitative results that demonstrate our framework's capabilities in complex scenarios. "
+}

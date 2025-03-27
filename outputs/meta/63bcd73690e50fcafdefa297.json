@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/alibaba-mmai-research/HyRSMPlusPlus"
+  ],
+  "tasks": [
+    "Few-shot Action Recognition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HyRSM++",
+    "Hybrid Relation Guided Temporal Set Matching",
+    "Bi-MHM"
+  ],
+  "results": [
+    "State-of-the-art performance under various few-shot settings"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa297",
+  "title": "HyRSM++: Hybrid Relation Guided Temporal Set Matching for Few-shot\n  Action Recognition",
+  "abstract": "  Recent attempts mainly focus on learning deep representations for each video individually under the episodic meta-learning regime and then performing temporal alignment to match query and support videos. However, they still suffer from two drawbacks: (i) learning individual features without considering the entire task may result in limited representation capability, and (ii) existing alignment strategies are sensitive to noises and misaligned instances. To handle the two limitations, we propose a novel Hybrid Relation guided temporal Set Matching (HyRSM++) approach for few-shot action recognition. The core idea of HyRSM++ is to integrate all videos within the task to learn discriminative representations and involve a robust matching technique. To be specific, HyRSM++ consists of two key components, a hybrid relation module and a temporal set matching metric. Given the basic representations from the feature extractor, the hybrid relation module is introduced to fully exploit associated relations within and cross videos in an episodic task and thus can learn task-specific embeddings. Subsequently, in the temporal set matching metric, we carry out the distance measure between query and support videos from a set matching perspective and design a Bi-MHM to improve the resilience to misaligned instances. In addition, we explicitly exploit the temporal coherence in videos to regularize the matching process. Furthermore, we extend the proposed HyRSM++ to deal with the more challenging semi-supervised few-shot action recognition and unsupervised few-shot action recognition tasks. Experimental results on multiple benchmarks demonstrate that our method achieves state-of-the-art performance under various few-shot settings. The source code is available at https://github.com/alibaba-mmai-research/HyRSMPlusPlus. "
+}

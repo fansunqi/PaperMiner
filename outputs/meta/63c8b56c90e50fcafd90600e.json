@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/lixiaotong97/DSU"
+  ],
+  "tasks": [
+    "Domain Generalization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Uncertainty Modeling for Domain Shifts (DSU)",
+    "Multivariate Gaussian Distribution",
+    "Instance-wise Adaptation Strategy"
+  ],
+  "results": [
+    "Improves network generalization ability",
+    "No additional trainable parameters or loss constraints"
+  ],
+  "paper_id": "63c8b56c90e50fcafd90600e",
+  "title": "Modeling Uncertain Feature Representation for Domain Generalization",
+  "abstract": "  Though deep neural networks have achieved impressive success on various vision tasks, obvious performance degradation still exists when models are tested in out-of-distribution scenarios. In addressing this limitation, we ponder that the feature statistics (mean and standard deviation), which carry the domain characteristics of the training data, can be properly manipulated to improve the generalization ability of deep learning models. Existing methods commonly consider feature statistics as deterministic values measured from the learned features and do not explicitly model the uncertain statistics discrepancy caused by potential domain shifts during testing. In this paper, we improve the network generalization ability by modeling domain shifts with uncertainty (DSU), i.e., characterizing the feature statistics as uncertain distributions during training. Specifically, we hypothesize that the feature statistic, after considering the potential uncertainties, follows a multivariate Gaussian distribution. During inference, we propose an instance-wise adaptation strategy that can adaptively deal with the unforeseeable shift and further enhance the generalization ability of the trained model with negligible additional cost. We also conduct theoretical analysis on the aspects of generalization error bound and the implicit regularization effect, showing the efficacy of our method. Extensive experiments demonstrate that our method consistently improves the network generalization ability on multiple vision tasks, including image classification, semantic segmentation, instance retrieval, and pose estimation. Our methods are simple yet effective and can be readily integrated into networks without additional trainable parameters or loss constraints. Code will be released in https://github.com/lixiaotong97/DSU. "
+}

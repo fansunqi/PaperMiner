@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Decentralized Mechanism Design",
+    "Transaction Fee Mechanism Design (TFM)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-Party Computation (MPC) Protocol",
+    "Cryptography"
+  ],
+  "results": [
+    "Impossibility results",
+    "Feasibility and infeasibility results for incentive compatibility",
+    "Characterization of the mathematical landscape of TFM"
+  ],
+  "paper_id": "63365e7c90e50fcafd1a2ce0",
+  "title": "What Can Cryptography Do For Decentralized Mechanism Design",
+  "abstract": "  Recent works of Roughgarden (EC'21) and Chung and Shi (SODA'23) initiate the study of a new decentralized mechanism design problem called transaction fee mechanism design (TFM). Unlike the classical mechanism design literature, in the decentralized environment, even the auctioneer (i.e., the miner) can be a strategic player, and it can even collude with a subset of the users facilitated by binding side contracts. Chung and Shi showed two main impossibility results that rule out the existence of a {\\it dream} TFM. First, any TFM that provides incentive compatibility for individual users and miner-user coalitions must always have zero miner revenue, no matter whether the block size is finite or infinite. Second, assuming finite block size, no non-trivial TFM can simultaenously provide incentive compatibility for any individual user, and for any miner-user coalition.   In this work, we explore what new models and meaningful relaxations can allow us to circumvent the impossibility results of Chung and Shi. Besides today's model that does not employ cryptography, we introduce a new MPC-assisted model where the TFM is implemented by a joint multi-party computation (MPC) protocol among the miners. We prove several feasibility and infeasibility results for achieving {\\it strict} and {\\it approximate} incentive compatibility, respectively, in the plain model as well as the MPC-assisted model. We show that while cryptography is not a panacea, it indeed allows us to overcome some impossibility results pertaining to the plain model, leading to non-trivial mechanisms with useful guarantees that are otherwise impossible in the plain model. Our work is also the first to characterize the mathematical landscape of transaction fee mechanism design under approximate incentive compatibility, as well as in a cryptography-assisted model. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantifying uncertainty in physical parameters and model formulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-informed priors",
+    "Hamiltonian Monte Carlo",
+    "Discrepancy function"
+  ],
+  "results": [
+    "Recovery of true parameters in complex reality",
+    "Accurate predictions",
+    "Computational efficiency improvement"
+  ],
+  "paper_id": "61e781675244ab9dcbf9a70e",
+  "title": "Bayesian Calibration of Imperfect Computer Models using Physics-Informed\n  Priors",
+  "abstract": "  We introduce a computational efficient data-driven framework suitable for quantifying the uncertainty in physical parameters and model formulation of computer models, represented by differential equations. We construct physics-informed priors, which are multi-output GP priors that encode the model's structure in the covariance function. This is extended into a fully Bayesian framework that quantifies the uncertainty of physical parameters and model predictions. Since physical models often are imperfect descriptions of the real process, we allow the model to deviate from the observed data by considering a discrepancy function. For inference, Hamiltonian Monte Carlo is used. Further, approximations for big data are developed that reduce the computational complexity from $\\mathcal{O}(N^3)$ to $\\mathcal{O}(N\\cdot m^2),$ where $m \\ll N.$ Our approach is demonstrated in simulation and real data case studies where the physics are described by time-dependent ODEs describe (cardiovascular models) and space-time dependent PDEs (heat equation). In the studies, it is shown that our modelling framework can recover the true parameters of the physical models in cases where 1) the reality is more complex than our modelling choice and 2) the data acquisition process is biased while also producing accurate predictions. Furthermore, it is demonstrated that our approach is computationally faster than traditional Bayesian calibration methods. "
+}

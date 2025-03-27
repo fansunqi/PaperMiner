@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Embedding Clinical Codes and Text"
+  ],
+  "datasets": [
+    "planned surgical procedure text",
+    "MIMIC-III"
+  ],
+  "methods": [
+    "Graph Neural Networks (GNN)",
+    "Bi-LSTM",
+    "Deep Canonical Correlation Analysis (DCCA)"
+  ],
+  "results": [
+    "Outperforms BERT models fine-tuned to clinical data",
+    "Competitive to fine-tuned BERT at a tiny fraction of its computational effort"
+  ],
+  "paper_id": "63d7352390e50fcafda30377",
+  "title": "A Multi-View Joint Learning Framework for Embedding Clinical Codes and\n  Text Using Graph Neural Networks",
+  "abstract": "  Learning to represent free text is a core task in many clinical machine learning (ML) applications, as clinical text contains observations and plans not otherwise available for inference. State-of-the-art methods use large language models developed with immense computational resources and training data; however, applying these models is challenging because of the highly varying syntax and vocabulary in clinical free text. Structured information such as International Classification of Disease (ICD) codes often succinctly abstracts the most important facts of a clinical encounter and yields good performance, but is often not as available as clinical text in real-world scenarios. We propose a \\textbf{multi-view learning framework} that jointly learns from codes and text to combine the availability and forward-looking nature of text and better performance of ICD codes. The learned text embeddings can be used as inputs to predictive algorithms independent of the ICD codes during inference. Our approach uses a Graph Neural Network (GNN) to process ICD codes, and Bi-LSTM to process text. We apply Deep Canonical Correlation Analysis (DCCA) to enforce the two views to learn a similar representation of each patient. In experiments using planned surgical procedure text, our model outperforms BERT models fine-tuned to clinical data, and in experiments using diverse text in MIMIC-III, our model is competitive to a fine-tuned BERT at a tiny fraction of its computational effort. "
+}

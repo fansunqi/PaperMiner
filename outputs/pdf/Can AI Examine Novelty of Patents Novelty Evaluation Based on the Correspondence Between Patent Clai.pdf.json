@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Patent Novelty Evaluation"
+  ],
+  "datasets": [
+    "HUPD",
+    "Google Patent Public Dataset"
+  ],
+  "methods": [
+    "Classification Models",
+    "Generative Models",
+    "LLMs"
+  ],
+  "results": [
+    "Llama3 70B achieved accuracy exceeding human benchmarks with few-shot condition",
+    "Large-parameter models excel at discerning differences between inputs but have difficulties in assessing content similarity"
+  ],
+  "title": "Can AI Examine Novelty of Patents Novelty Evaluation Based on the Correspondence Between Patent Clai.pdf",
+  "abstract": "Assessing the novelty of patent claims is a criti- cal yet challenging task traditionally performed by patent examiners. While advancements in NLP have enabled progress in various patent- related tasks, novelty assessment remains unex- plored. This paper introduces a novel challenge by evaluating the ability of large language mod- els (LLMs) to assess patent novelty by com- paring claims with cited prior art documents, following the process similar to that of patent examiners done. We present the first dataset specifically designed for novelty evaluation, de- rived from real patent examination cases, and analyze the capabilities of LLMs to address this task. Our study reveals that while classi- fication models struggle to effectively assess novelty, generative models make predictions with a reasonable level of accuracy, and their explanations are accurate enough to understand the relationship between the target patent and prior art. These findings demonstrate the po- tential of LLMs to assist in patent evaluation, reducing the workload for both examiners and applicants. Our contributions highlight the lim- itations of current models and provide a foun- dation for improving AI-driven patent analysis through advanced models and refined datasets. 1 Introduction Evaluating the patentability and assessing the nov- elty of an invention are among the most challenging and critical tasks in patent analysis. Traditionally, these tasks have been carried out exclusively by patent examiners, who undergo extensive training and possess deep, specialized knowledge. Mean- while, patents have been explored from various perspectives in the field of NLP research. This has led to the proposal of numerous tasks, includ- ing support tasks, classification, and retrieval tasks (Krestel et al., 2021). However, novelty assessment remains a particularly challenging task, leaving am- ple room for valuable research in this area. Figure 1: An Overview of Patent Examination Process: Examiners compare patent claims with prior art and issue a non-final rejection if grounds for rejection are found. Applicants can amend the claims, and the exam- iner compare them with prior art again. This process repeats until a decision is made to approve or reject the patent. One of the most important and difficult points in the task of evaluating novelty is comparing the invention with prior arts. Figure 1 illustrates the actual examination process. The examiner of the USPTO(United States Patent and Trademark Of- fice) compares the invention to the prior arts to judge whether it satisfies the novelty requirements under patent law1. If examiner finds a single prior art document, which contains all elements of the claimed invention in the submit patent document, the invention is regarded as non-novel. In this case, before making final decision, they send an docu- ments which cites the most similar prior art docu- ment and represents the result of comparison and the reason of rejection. This document is called \"Non-Final Rejection\". The applicants have the opportunity to amend the claim and dispute the rejection. If the every elements of the original or 1In the United States, the following law code defines nov- elty; 35 U.S. Code \u00a7 102 - Conditions for patentability; novelty arXiv:2502.06316v1 [cs.CL] 10 Feb 2025"
+}

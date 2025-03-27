@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predicting Music Skips"
+  ],
+  "datasets": [
+    "Spotify"
+  ],
+  "methods": [
+    "Deep Reinforcement Learning",
+    "SHAP",
+    "ablation analysis"
+  ],
+  "results": [
+    "Outperforms state-of-the-art models",
+    "Temporal data leakage problem identified",
+    "Users' behaviour features most discriminative"
+  ],
+  "paper_id": "63be28d490e50fcafdf52cf0",
+  "title": "Why People Skip Music? On Predicting Music Skips using Deep\n  Reinforcement Learning",
+  "abstract": "  Music recommender systems are an integral part of our daily life. Recent research has seen a significant effort around black-box recommender based approaches such as Deep Reinforcement Learning (DRL). These advances have led, together with the increasing concerns around users' data collection and privacy, to a strong interest in building responsible recommender systems. A key element of a successful music recommender system is modelling how users interact with streamed content. By first understanding these interactions, insights can be drawn to enable the construction of more transparent and responsible systems. An example of these interactions is skipping behaviour, a signal that can measure users' satisfaction, dissatisfaction, or lack of interest. In this paper, we study the utility of users' historical data for the task of sequentially predicting users' skipping behaviour. To this end, we adapt DRL for this classification task, followed by a post-hoc explainability (SHAP) and ablation analysis of the input state representation. Experimental results from a real-world music streaming dataset (Spotify) demonstrate the effectiveness of our approach in this task by outperforming state-of-the-art models. A comprehensive analysis of our approach and of users' historical data reveals a temporal data leakage problem in the dataset. Our findings indicate that, overall, users' behaviour features are the most discriminative in how our proposed DRL model predicts music skips. Content and contextual features have a lesser effect. This suggests that a limited amount of user data should be collected and leveraged to predict skipping behaviour. "
+}

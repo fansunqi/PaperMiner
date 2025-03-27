@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time computer vision applications"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic Vision Transformer Inference",
+    "Convolution layers",
+    "Self-attention layers"
+  ],
+  "results": [
+    "20% reduction in execution time",
+    "30% reduction in energy",
+    "4% drop in accuracy with SegFormer B2",
+    "4.5% drop in accuracy with ResNet-50"
+  ],
+  "paper_id": "6390044c90e50fcafd837d20",
+  "title": "Enabling and Accelerating Dynamic Vision Transformer Inference for\n  Real-Time Applications",
+  "abstract": "  Many state-of-the-art deep learning models for computer vision tasks are based on the transformer architecture. Such models can be computationally expensive and are typically statically set to meet the deployment scenario. However, in real-time applications, the resources available for every inference can vary considerably and be smaller than what state-of-the-art models require. We can use dynamic models to adapt the model execution to meet real-time application resource constraints. While prior dynamic work primarily minimized resource utilization for less complex input images, we adapt vision transformers to meet system dynamic resource constraints, independent of the input image. We find that unlike early transformer models, recent state-of-the-art vision transformers heavily rely on convolution layers. We show that pretrained models are fairly resilient to skipping computation in the convolution and self-attention layers, enabling us to create a low-overhead system for dynamic real-time inference without extra training. Finally, we explore compute organization and memory sizes to find settings to efficiency execute dynamic vision transformers. We find that wider vector sizes produce a better energy-accuracy tradeoff across dynamic configurations despite limiting the granularity of dynamic execution, but scaling accelerator resources for larger models does not significantly improve the latency-area-energy-tradeoffs. Our accelerator saves 20% of execution time and 30% of energy with a 4% drop in accuracy with pretrained SegFormer B2 model in our dynamic inference approach and 57% of execution time for the ResNet-50 backbone with a 4.5% drop in accuracy with the Once-For-All approach. "
+}

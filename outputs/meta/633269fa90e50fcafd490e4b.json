@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Low-rank matrix factorization",
+    "Feature extraction",
+    "Matrix completion for recommender systems"
+  ],
+  "datasets": [
+    "Netflix",
+    "MovieLens"
+  ],
+  "methods": [
+    "Bounded Simplex-Structured Matrix Factorization (BSSMF)"
+  ],
+  "results": [
+    "Unique decomposition up to trivial ambiguities",
+    "Soft clustering of the columns of X",
+    "Entries of each column of WH belong to the same intervals as the columns of W"
+  ],
+  "paper_id": "633269fa90e50fcafd490e4b",
+  "title": "Bounded Simplex-Structured Matrix Factorization: Algorithms,\n  Identifiability and Applications",
+  "abstract": "  In this paper, we propose a new low-rank matrix factorization model dubbed bounded simplex-structured matrix factorization (BSSMF). Given an input matrix $X$ and a factorization rank $r$, BSSMF looks for a matrix $W$ with $r$ columns and a matrix $H$ with $r$ rows such that $X \\approx WH$ where the entries in each column of $W$ are bounded, that is, they belong to given intervals, and the columns of $H$ belong to the probability simplex, that is, $H$ is column stochastic. BSSMF generalizes nonnegative matrix factorization (NMF), and simplex-structured matrix factorization (SSMF). BSSMF is particularly well suited when the entries of the input matrix $X$ belong to a given interval; for example when the rows of $X$ represent images, or $X$ is a rating matrix such as in the Netflix and MovieLens datasets where the entries of $X$ belong to the interval $[1,5]$. The simplex-structured matrix $H$ not only leads to an easily understandable decomposition providing a soft clustering of the columns of $X$, but implies that the entries of each column of $WH$ belong to the same intervals as the columns of $W$. In this paper, we first propose a fast algorithm for BSSMF, even in the presence of missing data in $X$. Then we provide identifiability conditions for BSSMF, that is, we provide conditions under which BSSMF admits a unique decomposition, up to trivial ambiguities. Finally, we illustrate the effectiveness of BSSMF on two applications: extraction of features in a set of images, and the matrix completion problem for recommender systems. "
+}

@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neuromorphic event cameras",
+    "High-speed and high dynamic range applications",
+    "Asynchronous video representation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Asynchronous intensity representation",
+    "Temporal averaging",
+    "Fusion and transcoding of framed and event camera data"
+  ],
+  "results": [
+    "Increased intensity precision",
+    "Reduced number of samples per pixel",
+    "Reduced representational sample rate by more than half",
+    "Drop in VMAF quality score of only 4.5",
+    "Lower latency than the state-of-the-art method",
+    "Maintaining 2000 times the temporal resolution"
+  ],
+  "paper_id": "657a7701939a5f4082e5ba61",
+  "title": "An Asynchronous Intensity Representation for Framed and Event Video\n  Sources",
+  "abstract": "Neuromorphic \"event\" cameras, designed to mimic the human vision system with\nasynchronous sensing, unlock a new realm of high-speed and high dynamic range\napplications. However, researchers often either revert to a framed\nrepresentation of event data for applications, or build bespoke applications\nfor a particular camera's event data type. To usher in the next era of video\nsystems, accommodate new event camera designs, and explore the benefits to\nasynchronous video in classical applications, we argue that there is a need for\nan asynchronous, source-agnostic video representation. In this paper, we\nintroduce a novel, asynchronous intensity representation for both framed and\nnon-framed data sources. We show that our representation can increase intensity\nprecision and greatly reduce the number of samples per pixel compared to\ngrid-based representations. With framed sources, we demonstrate that by\npermitting a small amount of loss through the temporal averaging of similar\npixel values, we can reduce our representational sample rate by more than half,\nwhile incurring a drop in VMAF quality score of only 4.5. We also demonstrate\nlower latency than the state-of-the-art method for fusing and transcoding\nframed and event camera data to an intensity representation, while maintaining\n$2000\\times$ the temporal resolution. We argue that our method provides the\ncomputational efficiency and temporal granularity necessary to build real-time\nintensity-based applications for event cameras."
+}

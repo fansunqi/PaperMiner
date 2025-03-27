@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time 2D-3D non-rigid registration"
+  ],
+  "datasets": [
+    "Lung 4D CT data"
+  ],
+  "methods": [
+    "CNN-based method"
+  ],
+  "results": [
+    "Mean TRE: 2.3 to 5.5 mm"
+  ],
+  "paper_id": "639be1d090e50fcafd578b8f",
+  "title": "CNN-based real-time 2D-3D deformable registration from a single X-ray\n  projection",
+  "abstract": "  Purpose: The purpose of this paper is to present a method for real-time 2D-3D non-rigid registration using a single fluoroscopic image. Such a method can find applications in surgery, interventional radiology and radiotherapy. By estimating a three-dimensional displacement field from a 2D X-ray image, anatomical structures segmented in the preoperative scan can be projected onto the 2D image, thus providing a mixed reality view. Methods: A dataset composed of displacement fields and 2D projections of the anatomy is generated from the preoperative scan. From this dataset, a neural network is trained to recover the unknown 3D displacement field from a single projection image. Results: Our method is validated on lung 4D CT data at different stages of the lung deformation. The training is performed on a 3D CT using random (non domain-specific) diffeomorphic deformations, to which perturbations mimicking the pose uncertainty are added. The model achieves a mean TRE over a series of landmarks ranging from 2.3 to 5.5 mm depending on the amplitude of deformation. Conclusion: In this paper, a CNN-based method for real-time 2D-3D non-rigid registration is presented. This method is able to cope with pose estimation uncertainties, making it applicable to actual clinical scenarios, such as lung surgery, where the C-arm pose is planned before the intervention. "
+}

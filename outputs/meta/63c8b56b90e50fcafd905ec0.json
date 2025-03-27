@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cross-Modal Few-Shot Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multimodal Models",
+    "Cross-modal adaptation",
+    "Linear classifier for vision-language adaptation",
+    "Prefix tuning",
+    "Adapters",
+    "Classifier ensembling",
+    "Audiovisual few-shot benchmark"
+  ],
+  "results": [
+    "SOTA results with a simple linear classifier",
+    "Improved performance of image and audio classification"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905ec0",
+  "title": "Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with\n  Multimodal Models",
+  "abstract": "  The ability to quickly learn a new task with minimal instruction - known as few-shot learning - is a central aspect of intelligent agents. Classical few-shot benchmarks make use of few-shot samples from a single modality, but such samples may not be sufficient to characterize an entire concept class. In contrast, humans use cross-modal information to learn new concepts efficiently. In this work, we demonstrate that one can indeed build a better ${\\bf visual}$ dog classifier by ${\\bf read}$ing about dogs and ${\\bf listen}$ing to them bark. To do so, we exploit the fact that recent multimodal foundation models such as CLIP are inherently cross-modal, mapping different modalities to the same representation space. Specifically, we propose a simple cross-modal adaptation approach that learns from few-shot examples spanning different modalities. By repurposing class names as additional one-shot training samples, we achieve SOTA results with an embarrassingly simple linear classifier for vision-language adaptation. Furthermore, we show that our approach can benefit existing methods such as prefix tuning, adapters, and classifier ensembling. Finally, to explore other modalities beyond vision and language, we construct the first (to our knowledge) audiovisual few-shot benchmark and use cross-modal training to improve the performance of both image and audio classification. "
+}

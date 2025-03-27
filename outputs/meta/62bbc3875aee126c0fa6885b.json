@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Algorithmic computation model foundation",
+    "Arithmetic operations in constant time"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "RAM model definition",
+    "Linear-time preprocessing",
+    "Constant-time computation after preprocessing"
+  ],
+  "results": [
+    "All basic arithmetic operations can be computed in constant time after linear-time preprocessing",
+    "Surprising algorithms for operations on 'polynomial' integers"
+  ],
+  "paper_id": "62bbc3875aee126c0fa6885b",
+  "title": "Which arithmetic operations can be performed in constant time in the RAM\n  model with addition?",
+  "abstract": "  In the literature of algorithms, the specific computation model is often not explicit as it is assumed that the model of computation is the RAM (Random Access Machine) model. However, the RAM model itself is ill-founded in the literature, with disparate definitions and no unified results.   The ambition of this paper is to found the RAM model from scratch by exhibiting a RAM model that enjoys interesting algorithmic properties and the robustness of its complexity classes, notably LIN, the class of linear-time computable problems, or the now well-known CONST-DELAY-lin class of enumeration problems computable with constant delay after linear-time preprocessing,   The computation model that we define is a RAM whose contents and addresses of registers are $O(N)$, where $N$ is the size (number of registers) of the input, and where the time cost of each instruction is 1 (unit cost criterion). The key to the foundation of our RAM model will be to prove that even if addition is the only primitive operation, such a RAM can still compute all the basic arithmetic operations in constant time after a linear-time preprocessing. Moreover, while the RAM handles only $O(N)$ integers in each register, we will show that our RAM can handle $O(N^d)$ integers, for any fixed d, by storing them on $O(d)$ registers and we will have surprising algorithms that computes many operations acting on these \"polynomial\" integers -- addition, subtraction, multiplication, division, exponential, integer logarithm, integer square root (or $c$-th root, for any integer $c$), bitwise logical operations, and, more generally, any operation computable in linear time on a cellular automaton -- in constant time after a linear-time preprocessing. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Verification and Bug Hunting in Quantum Circuits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Tree Automata",
+    "Algebraic Representation of Quantum States"
+  ],
+  "results": [
+    "Scalable verification of large circuits",
+    "Catch bugs in circuits with 320 qubits and 1,758 gates"
+  ],
+  "paper_id": "63ca069790e50fcafd682f99",
+  "title": "An Automata-based Framework for Verification and Bug Hunting in Quantum\n  Circuits (Technical Report)",
+  "abstract": "  We introduce a new paradigm for analysing and finding bugs in quantum circuits. In our approach, the problem is given by a triple $\\{P\\}\\,C\\,\\{Q\\}$ and the question is whether, given a set $P$ of quantum states on the input of a circuit $C$, the set of quantum states on the output is equal to (or included in) a set $Q$. While this is not suitable to specify, e.g., functional correctness of a quantum circuit, it is sufficient to detect many bugs in quantum circuits. We propose a technique based on tree automata to compactly represent sets of quantum states and develop transformers to implement the semantics of quantum gates over this representation. Our technique computes with an algebraic representation of quantum states, avoiding the inaccuracy of working with floating-point numbers. We implemented the proposed approach in a prototype tool and evaluated its performance against various benchmarks from the literature. The evaluation shows that our approach is quite scalable, e.g., we managed to verify a large circuit with 40 qubits and 141,527 gates, or catch bugs injected into a circuit with 320 qubits and 1,758 gates, where all tools we compared with failed. In addition, our work establishes a connection between quantum program verification and automata, opening new possibilities to exploit the richness of automata theory and automata-based verification in the world of quantum computing. "
+}

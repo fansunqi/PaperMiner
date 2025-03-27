@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning to defer to multiple experts"
+  ],
+  "datasets": [
+    "Galaxy",
+    "Skin lesion",
+    "Hate speech classification"
+  ],
+  "methods": [
+    "Consistent surrogate losses",
+    "Confidence calibration",
+    "Conformal ensembles"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63608e5190e50fcafdee13aa",
+  "title": "Learning to Defer to Multiple Experts: Consistent Surrogate Losses,\n  Confidence Calibration, and Conformal Ensembles",
+  "abstract": "  We study the statistical properties of learning to defer (L2D) to multiple experts. In particular, we address the open problems of deriving a consistent surrogate loss, confidence calibration, and principled ensembling of experts. Firstly, we derive two consistent surrogates -- one based on a softmax parameterization, the other on a one-vs-all (OvA) parameterization -- that are analogous to the single expert losses proposed by Mozannar and Sontag (2020) and Verma and Nalisnick (2022), respectively. We then study the frameworks' ability to estimate P( m_j = y | x ), the probability that the jth expert will correctly predict the label for x. Theory shows the softmax-based loss causes mis-calibration to propagate between the estimates while the OvA-based loss does not (though in practice, we find there are trade offs). Lastly, we propose a conformal inference technique that chooses a subset of experts to query when the system defers. We perform empirical validation on tasks for galaxy, skin lesion, and hate speech classification. "
+}

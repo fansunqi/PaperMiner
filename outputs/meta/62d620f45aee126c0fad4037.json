@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Medical Question Answering",
+    "Reasoning about Medical Questions"
+  ],
+  "datasets": [
+    "USMLE",
+    "MedMCQA",
+    "PubMedQA"
+  ],
+  "methods": [
+    "GPT-3.5 (Codex and InstructGPT)",
+    "Chain-of-Thought (CoT)",
+    "zero- and few-shot prompting",
+    "retrieval augmentation"
+  ],
+  "results": [
+    "InstructGPT can often read, reason and recall expert knowledge",
+    "Codex 5-shot CoT achieves human-level performances on the three datasets: USMLE: 60.2%, MedMCQA: 62.7%, PubMedQA: 78.2%"
+  ],
+  "paper_id": "62d620f45aee126c0fad4037",
+  "title": "Can large language models reason about medical questions?",
+  "abstract": "  Although large language models (LLMs) often produce impressive outputs, it remains unclear how they perform in real-world scenarios requiring strong reasoning skills and expert domain knowledge. We set out to investigate whether GPT-3.5 (Codex and InstructGPT) can be applied to answer and reason about difficult real-world-based questions. We utilize two multiple-choice medical exam questions (USMLE and MedMCQA) and a medical reading comprehension dataset (PubMedQA). We investigate multiple prompting scenarios: Chain-of-Thought (CoT, think step-by-step), zero- and few-shot (prepending the question with question-answer exemplars) and retrieval augmentation (injecting Wikipedia passages into the prompt). For a subset of the USMLE questions, a medical expert reviewed and annotated the model's CoT. We found that InstructGPT can often read, reason and recall expert knowledge. Failure are primarily due to lack of knowledge and reasoning errors and trivial guessing heuristics are observed, e.g.\\ too often predicting labels A and D on USMLE. Sampling and combining many completions overcome some of these limitations. Using 100 samples, Codex 5-shot CoT not only gives close to well-calibrated predictive probability but also achieves human-level performances on the three datasets. USMLE: 60.2%, MedMCQA: 62.7% and PubMedQA: 78.2%. "
+}

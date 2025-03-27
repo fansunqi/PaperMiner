@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/gchochla/VAuLT"
+  ],
+  "tasks": [
+    "Sentiment Classification on Social Media"
+  ],
+  "datasets": [
+    "TWITTER-2015",
+    "TWITTER-2017",
+    "MVSA-Single",
+    "MVSA-Multiple"
+  ],
+  "methods": [
+    "Vision-and-Augmented-Language Transformer (VAuLT)",
+    "large language model (LM) like BERT"
+  ],
+  "results": [
+    "Relative improvements up to 20% over ViLT",
+    "State-of-the-art or comparable performance"
+  ],
+  "paper_id": "6302f3ab90e50fcafd5b30ca",
+  "title": "VAuLT: Augmenting the Vision-and-Language Transformer for Sentiment\n  Classification on Social Media",
+  "abstract": "  We propose the Vision-and-Augmented-Language Transformer (VAuLT). VAuLT is an extension of the popular Vision-and-Language Transformer (ViLT), and improves performance on vision-and-language (VL) tasks that involve more complex text inputs than image captions while having minimal impact on training and inference efficiency. ViLT, importantly, enables efficient training and inference in VL tasks, achieved by encoding images using a linear projection of patches instead of an object detector. However, it is pretrained on captioning datasets, where the language input is simple, literal, and descriptive, therefore lacking linguistic diversity. So, when working with multimedia data in the wild, such as multimodal social media data, there is a notable shift from captioning language data, as well as diversity of tasks. We indeed find evidence that the language capacity of ViLT is lacking. The key insight and novelty of VAuLT is to propagate the output representations of a large language model (LM) like BERT to the language input of ViLT. We show that joint training of the LM and ViLT can yield relative improvements up to 20% over ViLT and achieve state-of-the-art or comparable performance on VL tasks involving richer language inputs and affective constructs, such as for Target-Oriented Sentiment Classification in TWITTER-2015 and TWITTER-2017, and Sentiment Classification in MVSA-Single and MVSA-Multiple. Our code is available at https://github.com/gchochla/VAuLT. "
+}

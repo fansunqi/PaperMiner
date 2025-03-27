@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Full-field ultrasonic characterization",
+    "Mechanical properties reconstruction"
+  ],
+  "datasets": [
+    "Synthetic data",
+    "Laboratory test data"
+  ],
+  "methods": [
+    "Direct inversion",
+    "Physics-informed neural networks (PINNs)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eea4",
+  "title": "Deep learning for full-field ultrasonic characterization",
+  "abstract": "  This study takes advantage of recent advances in machine learning to establish a physics-based data analytic platform for distributed reconstruction of mechanical properties in layered components from full waveform data. In this vein, two logics, namely the direct inversion and physics-informed neural networks (PINNs), are explored. The direct inversion entails three steps: (i) spectral denoising and differentiation of the full-field data, (ii) building appropriate neural maps to approximate the profile of unknown physical and regularization parameters on their respective domains, and (iii) simultaneous training of the neural networks by minimizing the Tikhonov-regularized PDE loss using data from (i). PINNs furnish efficient surrogate models of complex systems with predictive capabilities via multitask learning where the field variables are modeled by neural maps endowed with (scaler or distributed) auxiliary parameters such as physical unknowns and loss function weights. PINNs are then trained by minimizing a measure of data misfit subject to the underlying physical laws as constraints. In this study, to facilitate learning from ultrasonic data, the PINNs loss adopts (a) wavenumber-dependent Sobolev norms to compute the data misfit, and (b) non-adaptive weights in a specific scaling framework to naturally balance the loss objectives by leveraging the form of PDEs germane to elastic-wave propagation. Both paradigms are examined via synthetic and laboratory test data. In the latter case, the reconstructions are performed at multiple frequencies and the results are verified by a set of complementary experiments highlighting the importance of verification and validation in data-driven modeling. "
+}

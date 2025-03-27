@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Batch trading systems integration",
+    "Arrow-Debreu exchange market equilibrium computation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CFMM design",
+    "Convex program for equilibrium computation"
+  ],
+  "results": [
+    "Unique method for integrating CFMMs into batch trading schemes",
+    "CFMM design affects asymptotic complexity",
+    "Convex program for Arrow-Debreu exchange market equilibria"
+  ],
+  "paper_id": "6346305690e50fcafda0558c",
+  "title": "Batch Exchanges with Constant Function Market Makers: Axioms,\n  Equilibria, and Computation",
+  "abstract": "  Batch trading systems and constant function market makers (CFMMs) are two distinct market design innovations that have recently come to prominence as ways to address some of the shortcomings of decentralized trading systems. However, different deployments have chosen substantially different methods for integrating the two innovations.   We show here from a minimal set of axioms describing the beneficial properties of each innovation that there is in fact only one, unique method for integrating CFMMs into batch trading schemes that preserves all the beneficial properties of both. Deployment of a batch trading schemes trading many assets simultaneously requires a reliable algorithm for approximating equilibria in Arrow-Debreu exchange markets. We study this problem when batches contain limit orders and CFMMs. Specifically, we find that CFMM design affects the asymptotic complexity of the problem, give an easily-checkable criterion to validate that a user-submitted CFMM is computationally tractable in a batch, and give a convex program that computes equilibria on batches of limit orders and CFMMs. Equivalently, this convex program computes equilibria of Arrow-Debreu exchange markets when every agent's demand response satisfies weak gross substitutability and every agent has utility for only two types of assets. This convex program has rational solutions when run on many (but not all) natural classes of widely-deployed CFMMs. "
+}

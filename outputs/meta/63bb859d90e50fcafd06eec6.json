@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Localization"
+  ],
+  "datasets": [
+    "4seasons"
+  ],
+  "methods": [
+    "Mapping module",
+    "Single-image-based localization pipeline",
+    "Consensus set maximization module",
+    "Robust pose refinement module"
+  ],
+  "results": [
+    "High accuracy and robustness",
+    "Wins the localization challenge of ECCV 2022 workshop on Map-based Localization for Autonomous Driving (MLAD-ECCV2022)"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eec6",
+  "title": "CyberLoc: Towards Accurate Long-term Visual Localization",
+  "abstract": "  This technical report introduces CyberLoc, an image-based visual localization pipeline for robust and accurate long-term pose estimation under challenging conditions. The proposed method comprises four modules connected in a sequence. First, a mapping module is applied to build accurate 3D maps of the scene, one map for each reference sequence if there exist multiple reference sequences under different conditions. Second, a single-image-based localization pipeline (retrieval--matching--PnP) is performed to estimate 6-DoF camera poses for each query image, one for each 3D map. Third, a consensus set maximization module is proposed to filter out outlier 6-DoF camera poses, and outputs one 6-DoF camera pose for a query. Finally, a robust pose refinement module is proposed to optimize 6-DoF query poses, taking candidate global 6-DoF camera poses and their corresponding global 2D-3D matches, sparse 2D-2D feature matches between consecutive query images and SLAM poses of the query sequence as input. Experiments on the 4seasons dataset show that our method achieves high accuracy and robustness. In particular, our approach wins the localization challenge of ECCV 2022 workshop on Map-based Localization for Autonomous Driving (MLAD-ECCV2022). "
+}

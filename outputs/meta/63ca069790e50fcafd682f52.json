@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Medical image style transfer"
+  ],
+  "datasets": [
+    "Breast magnetic resonance images"
+  ],
+  "methods": [
+    "StyleMapper",
+    "Simulated random medical imaging styles"
+  ],
+  "results": [
+    "Effective style transfer",
+    "Alignment of medical images into a unified style dataset"
+  ],
+  "paper_id": "63ca069790e50fcafd682f52",
+  "title": "Deep Learning for Breast MRI Style Transfer with Limited Training Data",
+  "abstract": "  In this work we introduce a novel medical image style transfer method, StyleMapper, that can transfer medical scans to an unseen style with access to limited training data. This is made possible by training our model on unlimited possibilities of simulated random medical imaging styles on the training set, making our work more computationally efficient when compared with other style transfer methods. Moreover, our method enables arbitrary style transfer: transferring images to styles unseen in training. This is useful for medical imaging, where images are acquired using different protocols and different scanner models, resulting in a variety of styles that data may need to be transferred between. Methods: Our model disentangles image content from style and can modify an image's style by simply replacing the style encoding with one extracted from a single image of the target style, with no additional optimization required. This also allows the model to distinguish between different styles of images, including among those that were unseen in training. We propose a formal description of the proposed model. Results: Experimental results on breast magnetic resonance images indicate the effectiveness of our method for style transfer. Conclusion: Our style transfer method allows for the alignment of medical images taken with different scanners into a single unified style dataset, allowing for the training of other downstream tasks on such a dataset for tasks such as classification, object detection and others. "
+}

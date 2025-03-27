@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monocular Depth Estimation"
+  ],
+  "datasets": [
+    "KITTI",
+    "Waymo Open Dataset (WOD)"
+  ],
+  "methods": [
+    "Planar Parallax Network (PPNet)",
+    "Explicit warping of consecutive frames",
+    "Flow pre-training",
+    "Planar Position Embedding"
+  ],
+  "results": [
+    "PPNet dramatically outperforms existing learning-based methods"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa1a9",
+  "title": "Deep Planar Parallax for Monocular Depth Estimation",
+  "abstract": "  Depth estimation is a fundamental problem in the perception system of autonomous driving scenes. Although autonomous driving is challenging, much prior knowledge can still be utilized, by which the sophistication of the problem can be effectively restricted. Some previous works introduce the road plane prior to the depth estimation problem according to the Planar Parallax Geometry. However, we find that their usages are not effective, leaving the network cannot learn the geometric information. To this end, we analyze this problem in detail and reveal that explicit warping of consecutive frames and flow pre-training can effectively bring the geometric prior into learning. Furthermore, we propose Planar Position Embedding to deal with the intrinsic weakness of plane parallax geometry. Comprehensive experimental results on autonomous driving datasets like KITTI and Waymo Open Dataset (WOD) demonstrate that our Planar Parallax Network(PPNet) dramatically outperforms existing learning-based methods. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text adaption of end-to-end speech recognition models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Factorized neural transducer (FNT)",
+    "CTC criterion",
+    "KL divergence loss",
+    "Pre-trained language model",
+    "n-gram language model"
+  ],
+  "results": [
+    "Relative word-error-rate reduction of 9.48% from the standard FNT model",
+    "n-gram interpolation improves adaptation speed with satisfactory performance"
+  ],
+  "paper_id": "638eb2ef90e50fcafd58b231",
+  "title": "Fast and accurate factorized neural transducer for text adaption of\n  end-to-end speech recognition models",
+  "abstract": "  Neural transducer is now the most popular end-to-end model for speech recognition, due to its naturally streaming ability. However, it is challenging to adapt it with text-only data. Factorized neural transducer (FNT) model was proposed to mitigate this problem. The improved adaptation ability of FNT on text-only adaptation data came at the cost of lowered accuracy compared to the standard neural transducer model. We propose several methods to improve the performance of the FNT model. They are: adding CTC criterion during training, adding KL divergence loss during adaptation, using a pre-trained language model to seed the vocabulary predictor, and an efficient adaptation approach by interpolating the vocabulary predictor with the n-gram language model. A combination of these approaches results in a relative word-error-rate reduction of 9.48\\% from the standard FNT model. Furthermore, n-gram interpolation with the vocabulary predictor improves the adaptation speed hugely with satisfactory adaptation performance. "
+}

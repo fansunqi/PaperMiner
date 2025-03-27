@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/MR-BENjie/IDRL"
+  ],
+  "tasks": [
+    "Classifying Ambiguous Identities in Hidden-Role Stochastic Games"
+  ],
+  "datasets": [
+    "Red-10 card-shedding game"
+  ],
+  "methods": [
+    "Identity detection reinforcement learning (IDRL) framework",
+    "Relation network",
+    "Danger network",
+    "Intrinsic reward"
+  ],
+  "results": [
+    "IDRL achieves superior performance over other state-of-the-art MARL methods",
+    "Relation network has par performance to identify agents with top human players",
+    "Danger network avoids risk of imperfect identification"
+  ],
+  "paper_id": "635753cd90e50fcafddddede",
+  "title": "Classifying Ambiguous Identities in Hidden-Role Stochastic Games with\n  Multi-Agent Reinforcement Learning",
+  "abstract": "  Multi-agent reinforcement learning (MARL) is a prevalent learning paradigm for solving stochastic games. In most MARL studies, agents in a game are defined as teammates or enemies beforehand, and the relationships among the agents remain fixed throughout the game. However, in real-world problems, the agent relationships are commonly unknown in advance or dynamically changing. Many multi-party interactions start off by asking: who is on my team? This question arises whether it is the first day at the stock exchange or the kindergarten. Therefore, training policies for such situations in the face of imperfect information and ambiguous identities is an important problem that needs to be addressed. In this work, we develop a novel identity detection reinforcement learning (IDRL) framework that allows an agent to dynamically infer the identities of nearby agents and select an appropriate policy to accomplish the task. In the IDRL framework, a relation network is constructed to deduce the identities of other agents by observing the behaviors of the agents. A danger network is optimized to estimate the risk of false-positive identifications. Beyond that, we propose an intrinsic reward that balances the need to maximize external rewards and accurate identification. After identifying the cooperation-competition pattern among the agents, IDRL applies one of the off-the-shelf MARL methods to learn the policy. To evaluate the proposed method, we conduct experiments on Red-10 card-shedding game, and the results show that IDRL achieves superior performance over other state-of-the-art MARL methods. Impressively, the relation network has the par performance to identify the identities of agents with top human players; the danger network reasonably avoids the risk of imperfect identification. The code to reproduce all the reported results is available online at https://github.com/MR-BENjie/IDRL. "
+}

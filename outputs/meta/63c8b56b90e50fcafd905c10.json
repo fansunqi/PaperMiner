@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Grounding"
+  ],
+  "datasets": [
+    "ActivityNet Captions",
+    "TACoS",
+    "ActivityNet-CG"
+  ],
+  "methods": [
+    "Prompt Caption Network (PCNet)",
+    "Dense video captioning",
+    "Non-Prompt Caption Suppression (NPCS)",
+    "Caption Guided Attention (CGA)",
+    "Asymmetric Cross-modal Contrastive Learning (ACCL)"
+  ],
+  "results": [
+    "Significantly outperforms state-of-the-art methods"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905c10",
+  "title": "Exploiting Prompt Caption for Video Grounding",
+  "abstract": "  Video grounding aims to locate a moment of interest matching the given query sentence from an untrimmed video. Previous works ignore the \\emph{sparsity dilemma} in video annotations, which fails to provide the context information between potential events and query sentences in the dataset. In this paper, we contend that exploiting easily available captions which describe general actions \\ie, prompt captions (PC) defined in our paper, will significantly boost the performance. To this end, we propose a Prompt Caption Network (PCNet) for video grounding. Specifically, we first introduce dense video captioning to generate dense captions and then obtain prompt captions by Non-Prompt Caption Suppression (NPCS). To capture the potential information in prompt captions, we propose Caption Guided Attention (CGA) project the semantic relations between prompt captions and query sentences into temporal space and fuse them into visual representations. Considering the gap between prompt captions and ground truth, we propose Asymmetric Cross-modal Contrastive Learning (ACCL) for constructing more negative pairs to maximize cross-modal mutual information. Without bells and whistles, extensive experiments on three public datasets (\\ie, ActivityNet Captions, TACoS and ActivityNet-CG) demonstrate that our method significantly outperforms state-of-the-art methods. "
+}

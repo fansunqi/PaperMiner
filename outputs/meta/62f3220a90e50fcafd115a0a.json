@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph structure identification",
+    "Causal inference"
+  ],
+  "datasets": [
+    "Synthetic network",
+    "Real-world networks"
+  ],
+  "methods": [
+    "Deep learning",
+    "Convolutional Neural Networks (CNNs)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art counterparts w.r.t. sample-complexity",
+    "Generalizes well over structurally distinct networks",
+    "Generalizes well to real-world networks",
+    "Consistently reconstructs the graph in a pairwise manner"
+  ],
+  "paper_id": "62f3220a90e50fcafd115a0a",
+  "title": "Recovering the Graph Underlying Networked Dynamical Systems under\n  Partial Observability: A Deep Learning Approach",
+  "abstract": "  We study the problem of graph structure identification, i.e., of recovering the graph of dependencies among time series. We model these time series data as components of the state of linear stochastic networked dynamical systems. We assume partial observability, where the state evolution of only a subset of nodes comprising the network is observed. We devise a new feature vector computed from the observed time series and prove that these features are linearly separable, i.e., there exists a hyperplane that separates the cluster of features associated with connected pairs of nodes from those associated with disconnected pairs. This renders the features amenable to train a variety of classifiers to perform causal inference. In particular, we use these features to train Convolutional Neural Networks (CNNs). The resulting causal inference mechanism outperforms state-of-the-art counterparts w.r.t. sample-complexity. The trained CNNs generalize well over structurally distinct networks (dense or sparse) and noise-level profiles. Remarkably, they also generalize well to real-world networks while trained over a synthetic network (realization of a random graph). Finally, the proposed method consistently reconstructs the graph in a pairwise manner, that is, by deciding if an edge or arrow is present or absent in each pair of nodes, from the corresponding time series of each pair. This fits the framework of large-scale systems, where observation or processing of all nodes in the network is prohibitive. "
+}

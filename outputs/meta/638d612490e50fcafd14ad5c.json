@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/lyhkevin/MT-Net"
+  ],
+  "tasks": [
+    "Cross-modality MR image synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-scale Transformer Network (MT-Net)",
+    "Edge-preserving Masked AutoEncoder (Edge-MAE)",
+    "Dual-scale Selective Fusion (DSF) module"
+  ],
+  "results": [
+    "Achieves comparable performance to the competing methods even using 70% of all available paired data"
+  ],
+  "paper_id": "638d612490e50fcafd14ad5c",
+  "title": "Multi-scale Transformer Network with Edge-aware Pre-training for\n  Cross-Modality MR Image Synthesis",
+  "abstract": "  Cross-modality magnetic resonance (MR) image synthesis can be used to generate missing modalities from given ones. Existing (supervised learning) methods often require a large number of paired multi-modal data to train an effective synthesis model. However, it is often challenging to obtain sufficient paired data for supervised training. In reality, we often have a small number of paired data while a large number of unpaired data. To take advantage of both paired and unpaired data, in this paper, we propose a Multi-scale Transformer Network (MT-Net) with edge-aware pre-training for cross-modality MR image synthesis. Specifically, an Edge-preserving Masked AutoEncoder (Edge-MAE) is first pre-trained in a self-supervised manner to simultaneously perform 1) image imputation for randomly masked patches in each image and 2) whole edge map estimation, which effectively learns both contextual and structural information. Besides, a novel patch-wise loss is proposed to enhance the performance of Edge-MAE by treating different masked patches differently according to the difficulties of their respective imputations. Based on this proposed pre-training, in the subsequent fine-tuning stage, a Dual-scale Selective Fusion (DSF) module is designed (in our MT-Net) to synthesize missing-modality images by integrating multi-scale features extracted from the encoder of the pre-trained Edge-MAE. Further, this pre-trained encoder is also employed to extract high-level features from the synthesized image and corresponding ground-truth image, which are required to be similar (consistent) in the training. Experimental results show that our MT-Net achieves comparable performance to the competing methods even using $70\\%$ of all available paired data. Our code will be publicly available at https://github.com/lyhkevin/MT-Net. "
+}

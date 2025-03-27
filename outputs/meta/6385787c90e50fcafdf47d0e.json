@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Neural Networks",
+    "Modeling Homophily and Heterophily"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Variational Relation Vector Graph Neural Network (VR-GNN)"
+  ],
+  "results": [
+    "Consistent and significant improvements under heterophily",
+    "Competitive performance under homophily"
+  ],
+  "paper_id": "6385787c90e50fcafdf47d0e",
+  "title": "VR-GNN: Variational Relation Vector Graph Neural Network for Modeling\n  both Homophily and Heterophily",
+  "abstract": "  Graph Neural Networks (GNNs) have achieved remarkable success in diverse real-world applications. Traditional GNNs are designed based on homophily, which leads to poor performance under heterophily scenarios. Current solutions deal with heterophily mainly by mixing high-order neighbors or passing signed messages. However, mixing high-order neighbors destroys the original graph structure and passing signed messages utilizes an inflexible message-passing mechanism, which is prone to producing unsatisfactory effects. To overcome the above problems, we propose a novel GNN model based on relation vector translation named Variational Relation Vector Graph Neural Network (VR-GNN). VR-GNN models relation generation and graph aggregation into an end-to-end model based on Variational Auto-Encoder. The encoder utilizes the structure, feature and label to generate a proper relation vector. The decoder achieves superior node representation by incorporating the relation translation into the message-passing framework. VR-GNN can fully capture the homophily and heterophily between nodes due to the great flexibility of relation translation in modeling neighbor relationships. We conduct extensive experiments on eight real-world datasets with different homophily-heterophily properties to verify the effectiveness of our model. The experimental results show that VR-GNN gains consistent and significant improvements against state-of-the-art GNN methods under heterophily, and competitive performance under homophily. "
+}

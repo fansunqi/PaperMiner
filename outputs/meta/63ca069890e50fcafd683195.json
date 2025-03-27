@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backpropagating Hessians through ODEs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hand-implemented ODE-backpropagation",
+    "Formal grammar for tracking intermediate quantities"
+  ],
+  "results": [
+    "Improvements to training of `neural ODE'-type deep learning",
+    "Numerical analysis of quantum corrections",
+    "Studying options for adjusting an ODE's initial configuration"
+  ],
+  "paper_id": "63ca069890e50fcafd683195",
+  "title": "On backpropagating Hessians through ODEs",
+  "abstract": "  We discuss the problem of numerically backpropagating Hessians through ordinary differential equations (ODEs) in various contexts and elucidate how different approaches may be favourable in specific situations. We discuss both theoretical and pragmatic aspects such as, respectively, bounds on computational effort and typical impact of framework overhead.   Focusing on the approach of hand-implemented ODE-backpropagation, we develop the computation for the Hessian of orbit-nonclosure for a mechanical system. We also clarify the mathematical framework for extending the backward-ODE-evolution of the costate-equation to Hessians, in its most generic form. Some calculations, such as that of the Hessian for orbit non-closure, are performed in a language, defined in terms of a formal grammar, that we introduce to facilitate the tracking of intermediate quantities.   As pedagogical examples, we discuss the Hessian of orbit-nonclosure for the higher dimensional harmonic oscillator and conceptually related problems in Newtonian gravitational theory. In particular, applying our approach to the figure-8 three-body orbit, we readily rediscover a distorted-figure-8 solution originally described by Sim\\'o.   Possible applications may include: improvements to training of `neural ODE'- type deep learning with second-order methods, numerical analysis of quantum corrections around classical paths, and, more broadly, studying options for adjusting an ODE's initial configuration such that the impact on some given objective function is small. "
+}

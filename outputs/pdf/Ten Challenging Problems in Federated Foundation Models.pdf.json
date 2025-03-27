@@ -1,0 +1,36 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Foundation Models (FedFMs)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated Learning",
+    "Knowledge Distillation",
+    "Model Splitting",
+    "Prompt Compression",
+    "Model Compression",
+    "Quantization",
+    "Parameter Pruning",
+    "Knowledge Distillation",
+    "Low-rank Approximation",
+    "Resource-aware Scheduling",
+    "Framework Optimization",
+    "Communication-efficient Aggregation",
+    "Decentralized Aggregation",
+    "Hybrid Privacy-Preserving Techniques",
+    "Disentangling Tasks",
+    "Model Watermarking",
+    "Adaptive Watermarks",
+    "Self-reinforcing Signatures"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Ten Challenging Problems in Federated Foundation Models.pdf",
+  "abstract": "\u2014Federated Foundation Models (FedFMs) represent a distributed learning paradigm that fuses general competences of foundation models as well as privacy-preserving capabilities of federated learning. This combination allows the large foundation models and the small local domain models at the remote clients to learn from each other in a teacher-student learning setting. This paper provides a comprehensive summary of the ten challenging problems inherent in FedFMs, encompassing foundational theory, utilization of private data, continual learning, unlearning, Non- IID and graph data, bidirectional knowledge transfer, incentive mechanism design, game mechanism design, model watermark- ing, and efficiency. The ten challenging problems manifest in five pivotal aspects: \u201cFoundational Theory,\u201d which aims to establish a coherent and unifying theoretical framework for FedFMs. \u201cData,\u201d addressing the difficulties in leveraging domain-specific knowledge from private data while maintaining privacy; \u201cHetero- geneity,\u201d examining variations in data, model, and computational resources across clients; \u201cSecurity and Privacy,\u201d focusing on Apart from the first and corresponding authors, the remaining authors are listed in alphabetical order by their last names. Tan Fan, Hanlin Gu are with the WeBank, Shenzhen, China (Co-First Author, e-mail: tfanac@cse.ust.hk, allengu@webank.com). Chee Seng Chan, Win Kent Ong, Hong Xi Tae are with the Univer- siti Malaya, Malaysia (e-mail: {cs.chan, winkent.ong}@um.edu.my, tae- hongxi55@gmail.com). Yiqiang Chen, Yang Gu, Qian Chen, Teng Zhang are with the Institute of Computing Technology, Chinese Academy of Sciences, China (e-mail: {yqchen, guyang, chenqian20b, zhangteng19s}@ict.ac.cn). Bing Luo, Jiaxiang Geng, Jiaqi Shao are with the Duke Kunshan University, Kunshan, China (e-mail: {bl291, jg645, js1139}@duke.edu). Shuoling Liu, Jiangpeng Yan are with the Innovation Reseach Center, EFunds, China (e-mail: {liushuoling, yanjiangpeng}@efunds.com.cn). Chao Ren is with the KTH Royal Institute of Technology, Sweden (e-mail: renc0003@e.ntu.edu.sg). Yongxin Tong, Shuyue Wei are with the Beihang University, China (e-mail: {yxtong, weishuyue}@buaa.edu.cn). Fan Wu, Zhenzhe Zheng are with the Shanghai Jiao Tong University, China (e-mail: fwu@cs.sjtu.edu.cn, zhengzhenzhe@sjtu.edu.cn). Wei Xi, He Yang are with the Xi\u2019an Jiaotong University, China (e-mail: xiwei@xjtu.edu.cn, sleepingcat@stu.xjtu.edu.cn). Xin Yang, Xuemei Cao, Yihui Feng, Hao Yu are with the Southwestern University of Finance and Economic, China (e-mail: yangxin@swufe.edu.cn, caoxuemei.qpz@gmail.com, yihuifeng@foxmail.com, yuhao2033@163.com). Han Yu, Chuan Sun, Xiaoli Tang, Yifei Zhang are with the Nanyang Technological University, Singapore (e-mail: {han.yu, chuan.sun, yifei.zhang}@ntu.edu.sg, xiaoli001@e.ntu.edu.sg). Xiaojin Zhang, Mingcong Xu are with the Huazhong University of Science and Technology, China (e-mail: {xiaojinzhang, xumingcong}@hust.edu.cn). Lixin Fan is the Principal Scientist of Artificial Intelligence at WeBank, Shenzhen, China (Co-Corresponding Author, e-mail: lixinfan@webank.com). Qiang Yang is Professor Emeritus at the Department of Computer Sci- ence and Engineering, Hong Kong University of Science and Technology, Hong Kong, and the Chief AI Officer of WeBank, Shenzhen, China (Co- Corresponding Author, e-mail: qyang@cse.ust.hk). defenses against malicious attacks and model theft; and \u201cEf- ficiency,\u201d highlighting the need for improvements in training, communication, and parameter efficiency. For each problem, we offer a clear mathematical definition on the objective function, analyze existing methods, and discuss the key challenges and potential solutions. This in-depth exploration aims to advance the theoretical foundations of FedFMs, guide practical implementa- tions, and inspire future research to overcome these obstacles, thereby enabling the robust, efficient, and privacy-preserving FedFMs in various real-world applications. Index Terms\u2014Federated Foundation Models, Federated learn- ing, Foundation Models. I. INTRODUCTION A. Motivation Foundation Models (FMs) [1] have emerged as a ground- breaking force in the realm of artificial intelligence. Renowned FMs, including GPT-4 and LLaMa, have exhibited an extraor- dinary ability to understand context and nuances, enabling them to skillfully handle a wide range of tasks across diverse fields such as natural language processing (NLP) and computer vision (CV). On the other hand, Domain Models (DMs), often deployed remotely on edge devices, are trained locally using private data that cannot be shared with the FMs. However, DMs also have limitations stemming from their restricted generalization capacities. The dilemma raises a question: How can we effectively harness the power of FMs for domain- specific knowledge while simultaneously ensure that DMs possess adequate generalization capabilities and adhere to privacy protection requirements? One promising solution to integrate capabilities of FMs and DMs is through Federated Foundation Models (FedFMs) [2, 3, 4]. This paper provides a comprehensive summary of defini- tions and challenges in this new machine learning paradigm. Specifically, as depicted in Fig. 1, FedFMs is defined as a distributed learning framework which includes at least one pre- trained FM and a multitude of DMs. Federated learning (FL) [5] methods are adopted in FedFMs to ensure that data privacy are well-respected during the training of FedFMs, especially, for healthcare, finance and IoTs applications. B. Ten Challenging Problems in FedFMs Despite their promising applications, FedFMs face signif- icant challenges for widespread adoption. In this paper, we arXiv:2502.12176v1 [cs.LG] 14 Feb 2025"
+}

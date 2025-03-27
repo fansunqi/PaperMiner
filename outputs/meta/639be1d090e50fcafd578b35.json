@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Physics-Informed Neural Networks (PINNs) training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neuroevolution",
+    "JAX"
+  ],
+  "results": [
+    "Neuroevolution surpasses gradient descent in convergence rates for PINN training",
+    "Orders of magnitude speedup with JAX implementation"
+  ],
+  "paper_id": "639be1d090e50fcafd578b35",
+  "title": "Neuroevolution Surpasses Stochastic Gradient Descent for\n  Physics-Informed Neural Networks",
+  "abstract": "  The potential of learned models for fundamental scientific research and discovery is drawing increasing attention. Physics-informed neural networks (PINNs), where the loss function directly embeds governing equations of scientific phenomena, is one of the key techniques at the forefront of recent advances. These models are typically trained using stochastic gradient descent, akin to their standard deep learning counterparts. However, in this paper, we carry out a simple analysis showing that the loss functions arising in PINNs lead to a high degree of complexity and ruggedness that may not be conducive for gradient-descent and its variants. It is therefore clear that the use of neuro-evolutionary algorithms as alternatives to gradient descent for PINNs may be a better choice. Our claim is strongly supported herein by benchmark problems and baseline results demonstrating that convergence rates achieved by neuroevolution can indeed surpass that of gradient descent for PINN training. Furthermore, implementing neuroevolution with JAX leads to orders of magnitude speedup relative to standard implementations. "
+}

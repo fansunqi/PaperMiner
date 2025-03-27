@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Traffic Signal Control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nash Deep Q-Network (OPNDQN)"
+  ],
+  "results": [
+    "OPNDQN shows dominant superiority over several existing MARL approaches",
+    "Average queue length, episode training reward, and average waiting time improved"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e7b0",
+  "title": "Large-Scale Traffic Signal Control by a Nash Deep Q-network Approach",
+  "abstract": "  Reinforcement Learning (RL) is currently one of the most commonly used techniques for traffic signal control (TSC), which can adaptively adjusted traffic signal phase and duration according to real-time traffic data. However, a fully centralized RL approach is beset with difficulties in a multi-network scenario because of exponential growth in state-action space with increasing intersections. Multi-agent reinforcement learning (MARL) can overcome the high-dimension problem by employing the global control of each local RL agent, but it also brings new challenges, such as the failure of convergence caused by the non-stationary Markov Decision Process (MDP). In this paper, we introduce an off-policy nash deep Q-Network (OPNDQN) algorithm, which mitigates the weakness of both fully centralized and MARL approaches. The OPNDQN algorithm solves the problem that traditional algorithms cannot be used in large state-action space traffic models by utilizing a fictitious game approach at each iteration to find the nash equilibrium among neighboring intersections, from which no intersection has incentive to unilaterally deviate. One of main advantages of OPNDQN is to mitigate the non-stationarity of multi-agent Markov process because it considers the mutual influence among neighboring intersections by sharing their actions. On the other hand, for training a large traffic network, the convergence rate of OPNDQN is higher than that of existing MARL approaches because it does not incorporate all state information of each agent. We conduct an extensive experiments by using Simulation of Urban MObility simulator (SUMO), and show the dominant superiority of OPNDQN over several existing MARL approaches in terms of average queue length, episode training reward and average waiting time. "
+}

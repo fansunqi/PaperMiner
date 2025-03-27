@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Architecture Search",
+    "Temporal Convolutional Networks optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Lightweight NAS for TCNs",
+    "Optimization of dilation, receptive-field and number of features"
+  ],
+  "results": [
+    "15.9-152x fewer parameters compared to seed network",
+    "5.5x and 3.8x latency and energy reduction on edge devices"
+  ],
+  "paper_id": "63d340e890e50fcafd9109cb",
+  "title": "Lightweight Neural Architecture Search for Temporal Convolutional\n  Networks at the Edge",
+  "abstract": "  Neural Architecture Search (NAS) is quickly becoming the go-to approach to optimize the structure of Deep Learning (DL) models for complex tasks such as Image Classification or Object Detection. However, many other relevant applications of DL, especially at the edge, are based on time-series processing and require models with unique features, for which NAS is less explored. This work focuses in particular on Temporal Convolutional Networks (TCNs), a convolutional model for time-series processing that has recently emerged as a promising alternative to more complex recurrent architectures. We propose the first NAS tool that explicitly targets the optimization of the most peculiar architectural parameters of TCNs, namely dilation, receptive-field and number of features in each layer. The proposed approach searches for networks that offer good trade-offs between accuracy and number of parameters/operations, enabling an efficient deployment on embedded platforms. We test the proposed NAS on four real-world, edge-relevant tasks, involving audio and bio-signals. Results show that, starting from a single seed network, our method is capable of obtaining a rich collection of Pareto optimal architectures, among which we obtain models with the same accuracy as the seed, and 15.9-152x fewer parameters. Compared to three state-of-the-art NAS tools, ProxylessNAS, MorphNet and FBNetV2, our method explores a larger search space for TCNs (up to 10^12x) and obtains superior solutions, while requiring low GPU memory and search time. We deploy our NAS outputs on two distinct edge devices, the multicore GreenWaves Technology GAP8 IoT processor and the single-core STMicroelectronics STM32H7 microcontroller. With respect to the state-of-the-art hand-tuned models, we reduce latency and energy of up to 5.5x and 3.8x on the two targets respectively, without any accuracy loss. "
+}

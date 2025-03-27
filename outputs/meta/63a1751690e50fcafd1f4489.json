@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Action Anticipation"
+  ],
+  "datasets": [
+    "egocentric video datasets"
+  ],
+  "methods": [
+    "inductive attention model (IAM)"
+  ],
+  "results": [
+    "IAM consistently outperforms the state-of-the-art anticipation models",
+    "significantly fewer model parameters"
+  ],
+  "paper_id": "63a1751690e50fcafd1f4489",
+  "title": "Inductive Attention for Video Action Anticipation",
+  "abstract": "  Anticipating future actions based on spatiotemporal observations is essential in video understanding and predictive computer vision. Moreover, a model capable of anticipating the future has important applications, it can benefit precautionary systems to react before an event occurs. However, unlike in the action recognition task, future information is inaccessible at observation time -- a model cannot directly map the video frames to the target action to solve the anticipation task. Instead, the temporal inference is required to associate the relevant evidence with possible future actions. Consequently, existing solutions based on the action recognition models are only suboptimal. Recently, researchers proposed extending the observation window to capture longer pre-action profiles from past moments and leveraging attention to retrieve the subtle evidence to improve the anticipation predictions. However, existing attention designs typically use frame inputs as the query which is suboptimal, as a video frame only weakly connects to the future action. To this end, we propose an inductive attention model, dubbed IAM, which leverages the current prediction priors as the query to infer future action and can efficiently process the long video content. Furthermore, our method considers the uncertainty of the future via the many-to-many association in the attention design. As a result, IAM consistently outperforms the state-of-the-art anticipation models on multiple large-scale egocentric video datasets while using significantly fewer model parameters. "
+}

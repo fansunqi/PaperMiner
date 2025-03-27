@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Histopathology Image Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Label-efficient tissue prototype dictionary building pipeline",
+    "Self-supervised contrastive learning",
+    "Pixel-level pseudo tissue masks",
+    "Segmentation network with dense supervision"
+  ],
+  "results": [
+    "Comparable segmentation performance as the fully-supervised baselines",
+    "Outperforms other weakly-supervised methods"
+  ],
+  "paper_id": "6385787c90e50fcafdf47cb5",
+  "title": "Human-machine Interactive Tissue Prototype Learning for Label-efficient\n  Histopathology Image Segmentation",
+  "abstract": "  Recently, deep neural networks have greatly advanced histopathology image segmentation but usually require abundant annotated data. However, due to the gigapixel scale of whole slide images and pathologists' heavy daily workload, obtaining pixel-level labels for supervised learning in clinical practice is often infeasible. Alternatively, weakly-supervised segmentation methods have been explored with less laborious image-level labels, but their performance is unsatisfactory due to the lack of dense supervision. Inspired by the recent success of self-supervised learning methods, we present a label-efficient tissue prototype dictionary building pipeline and propose to use the obtained prototypes to guide histopathology image segmentation. Particularly, taking advantage of self-supervised contrastive learning, an encoder is trained to project the unlabeled histopathology image patches into a discriminative embedding space where these patches are clustered to identify the tissue prototypes by efficient pathologists' visual examination. Then, the encoder is used to map the images into the embedding space and generate pixel-level pseudo tissue masks by querying the tissue prototype dictionary. Finally, the pseudo masks are used to train a segmentation network with dense supervision for better performance. Experiments on two public datasets demonstrate that our human-machine interactive tissue prototype learning method can achieve comparable segmentation performance as the fully-supervised baselines with less annotation burden and outperform other weakly-supervised methods. Codes will be available upon publication. "
+}

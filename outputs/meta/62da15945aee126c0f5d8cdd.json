@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multiple Tensor-Times-Matrix computation",
+    "Tucker tensor decomposition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Communication lower bounds",
+    "Constrained, nonlinear optimization problem",
+    "Parallel algorithm",
+    "Logical grid"
+  ],
+  "results": [
+    "Communication cost of the algorithm attains the lower bounds",
+    "Significantly reduces communication compared to straightforward approach"
+  ],
+  "paper_id": "62da15945aee126c0f5d8cdd",
+  "title": "Communication Lower Bounds and Optimal Algorithms for Multiple\n  Tensor-Times-Matrix Computation",
+  "abstract": "  Multiple Tensor-Times-Matrix (Multi-TTM) is a key computation in algorithms for computing and operating with the Tucker tensor decomposition, which is frequently used in multidimensional data analysis. We establish communication lower bounds that determine how much data movement is required to perform the Multi-TTM computation in parallel. The crux of the proof relies on analytically solving a constrained, nonlinear optimization problem. We also present a parallel algorithm to perform this computation that organizes the processors into a logical grid with twice as many modes as the input tensor. We show that with correct choices of grid dimensions, the communication cost of the algorithm attains the lower bounds and is therefore communication optimal. Finally, we show that our algorithm can significantly reduce communication compared to the straightforward approach of expressing the computation as a sequence of tensor-times-matrix operations. "
+}

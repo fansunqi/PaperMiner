@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial attacks on object detection",
+    "Human pose estimation"
+  ],
+  "datasets": [
+    "PascalVOC",
+    "MS-COCO",
+    "MS-COCO Keypoints"
+  ],
+  "methods": [
+    "Category-wise attack",
+    "Sparse category-wise attack (SCA)",
+    "Dense category-wise attack (DCA)",
+    "DCA-G",
+    "DCA-L",
+    "DCA-S"
+  ],
+  "results": [
+    "State-of-the-art attack performance and transferability"
+  ],
+  "paper_id": "63d7352390e50fcafda3029f",
+  "title": "Attacking Important Pixels for Anchor-free Detectors",
+  "abstract": "  Deep neural networks have been demonstrated to be vulnerable to adversarial attacks: subtle perturbation can completely change the prediction result. Existing adversarial attacks on object detection focus on attacking anchor-based detectors, which may not work well for anchor-free detectors. In this paper, we propose the first adversarial attack dedicated to anchor-free detectors. It is a category-wise attack that attacks important pixels of all instances of a category simultaneously. Our attack manifests in two forms, sparse category-wise attack (SCA) and dense category-wise attack (DCA), that minimize the $L_0$ and $L_\\infty$ norm-based perturbations, respectively. For DCA, we present three variants, DCA-G, DCA-L, and DCA-S, that select a global region, a local region, and a semantic region, respectively, to attack. Our experiments on large-scale benchmark datasets including PascalVOC, MS-COCO, and MS-COCO Keypoints indicate that our proposed methods achieve state-of-the-art attack performance and transferability on both object detection and human pose estimation tasks. "
+}

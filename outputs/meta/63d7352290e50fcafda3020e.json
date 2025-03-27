@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Aerial Transportation Control of Suspended Payloads"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Newton-Euler formalism",
+    "attractive ellipsoid method",
+    "hierarchical control scheme",
+    "quaternion based attitude control"
+  ],
+  "results": [
+    "stability analysis using an energy-like function",
+    "trajectory tracking with bounded errors",
+    "good performance in numerical simulations"
+  ],
+  "paper_id": "63d7352290e50fcafda3020e",
+  "title": "Aerial Transportation Control of Suspended Payloads with Multiple Agents",
+  "abstract": "  In this paper we address the control problem of aerial cable suspended load transportation, using multiple Unmanned Aerial Vehicles (UAVs). First, the dynamical model of the coupled system is obtained using the Newton-Euler formalism, for \"n\" UAVs transporting a load, where the cables are supposed to be rigid and mass-less. The control problem is stated as a trajectory tracking directly on the load. To do so, a hierarchical control scheme is proposed based on the attractive ellipsoid method, where a virtual controller is calculated for tracking the position of the load, with this, the desired position for each vehicle along with their desired cable tensions are estimated, and used to compute the virtual controller for the position of each vehicle. This results in an underdetermined system, where an infinite number of drones' configurations comply with the desired load position, thus additional constrains can be imposed to obtain an unique solution. Furthermore, this information is used to compute the attitude reference for the vehicles, which are feed to a quaternion based attitude control. The stability analysis, using an energy-like function, demonstrated the practical stability of the system, it is that all the error signals are attracted and contained in an invariant set. Hence, the proposed scheme assures that, given well posed initial conditions, the closed-loop system guarantees the trajectory tracking of the desired position on the load with bounded errors. The proposed control strategy was evaluated in numerical simulations for three agents following a smooth desired trajectory on the load, showing good performance. "
+}

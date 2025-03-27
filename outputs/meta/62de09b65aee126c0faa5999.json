@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Distributed DNN Training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "WRHT (Wavelength Reused Hierarchical Tree)"
+  ],
+  "results": [
+    "Communication time of all-reduce by WRHT reduced by 80.81%, 64.36%, and 82.12% compared to traditional algorithms",
+    "Communication time of all-reduce operation reduced by 92.42% and 91.31% compared to existing algorithms"
+  ],
+  "paper_id": "62de09b65aee126c0faa5999",
+  "title": "Efficient All-reduce for Distributed DNN Training in Optical\n  Interconnect System",
+  "abstract": "  Communication efficiency plays an important role in accelerating the distributed training of Deep Neural Networks (DNN). All-reduce is the crucial communication primitive to reduce model parameters in distributed DNN training. Most existing all-reduce algorithms are designed for traditional electrical interconnect systems, which cannot meet the communication requirements for distributed training of large DNNs due to the low data bandwidth of the electrical interconnect systems. One of the promising alternatives for electrical interconnect is optical interconnect, which can provide high bandwidth, low transmission delay, and low power cost. We propose an efficient scheme called WRHT (Wavelength Reused Hierarchical Tree) for implementing all-reduce operation in optical interconnect systems. WRHT can take advantage of WDM (Wavelength Division Multiplexing) to reduce the communication time of distributed data-parallel DNN training. We further derive the required number of wavelengths, the minimum number of communication steps, and the communication time for the all-reduce operation on optical interconnect. The constraint of insertion loss is also considered in our analysis. Simulation results show that the communication time of all-reduce by WRHT is reduced by 80.81%, 64.36%, and 82.12%, respectively, compared with three traditional all-reduce algorithms according to our simulation results of an optical interconnect system. Our results also show that WRHT can reduce the communication time of all-reduce operation by 92.42% and 91.31% compared to two existing all-reduce algorithms running in the electrical interconnect system. "
+}

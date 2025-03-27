@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-Supervised Learning"
+  ],
+  "datasets": [
+    "FSDnoisy18k"
+  ],
+  "methods": [
+    "Angular Contrastive Loss (ACL)"
+  ],
+  "results": [
+    "Supervised learning accuracy: 73.6%",
+    "Self-supervised learning accuracy: 77.1%"
+  ],
+  "paper_id": "636dbe6890e50fcafd79a986",
+  "title": "Self-supervised learning of audio representations using angular\n  contrastive loss",
+  "abstract": "  In Self-Supervised Learning (SSL), various pretext tasks are designed for learning feature representations through contrastive loss. However, previous studies have shown that this loss is less tolerant to semantically similar samples due to the inherent defect of instance discrimination objectives, which may harm the quality of learned feature embeddings used in downstream tasks. To improve the discriminative ability of feature embeddings in SSL, we propose a new loss function called Angular Contrastive Loss (ACL), a linear combination of angular margin and contrastive loss. ACL improves contrastive learning by explicitly adding an angular margin between positive and negative augmented pairs in SSL. Experimental results show that using ACL for both supervised and unsupervised learning significantly improves performance. We validated our new loss function using the FSDnoisy18k dataset, where we achieved 73.6% and 77.1% accuracy in sound event classification using supervised and self-supervised learning, respectively. "
+}

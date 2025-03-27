@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fast detection of specific fragments against a set of sequences"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Alignment-free techniques",
+    "Automaton construction",
+    "Real-time algorithm"
+  ],
+  "results": [
+    "Linear time complexity for automaton construction",
+    "Real-time computation of occurrences"
+  ],
+  "paper_id": "62f1d07190e50fcafd889f47",
+  "title": "Fast detection of specific fragments against a set of sequences",
+  "abstract": "  We design alignment-free techniques for comparing a sequence or word, called a target, against a set of words, called a reference. A target-specific factor of a target $T$ against a reference $R$ is a factor $w$ of a word in $T$ which is not a factor of a word of $R$ and such that any proper factor of $w$ is a factor of a word of $R$. We first address the computation of the set of target-specific factors of a target $T$ against a reference $R$, where $T$ and $R$ are finite sets of sequences. The result is the construction of an automaton accepting the set of all considered target-specific factors. The construction algorithm runs in linear time according to the size of $T\\cup R$. The second result consists of the design of an algorithm to compute all the occurrences in a single sequence $T$ of its target-specific factors against a reference $R$. The algorithm runs in real-time on the target sequence, independently of the number of occurrences of target-specific factors. "
+}

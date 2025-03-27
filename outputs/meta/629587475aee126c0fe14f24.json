@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Missing data imputation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Principal Component Analysis Imputation (PCAI)",
+    "PCA Imputation - Classification (PIC)"
+  ],
+  "results": [
+    "Improves imputation speed significantly",
+    "Achieves competitive mean square error/classification accuracy compared to direct imputation"
+  ],
+  "paper_id": "629587475aee126c0fe14f24",
+  "title": "Principal Component Analysis based frameworks for efficient missing data\n  imputation algorithms",
+  "abstract": "  Missing data is a commonly occurring problem in practice. Many imputation methods have been developed to fill in the missing entries. However, not all of them can scale to high-dimensional data, especially the multiple imputation techniques. Meanwhile, the data nowadays tends toward high-dimensional. Therefore, in this work, we propose Principal Component Analysis Imputation (PCAI), a simple but versatile framework based on Principal Component Analysis (PCA) to speed up the imputation process and alleviate memory issues of many available imputation techniques, without sacrificing the imputation quality in term of MSE. In addition, the frameworks can be used even when some or all of the missing features are categorical, or when the number of missing features is large. Next, we introduce PCA Imputation - Classification (PIC), an application of PCAI for classification problems with some adjustments. We validate our approach by experiments on various scenarios, which shows that PCAI and PIC can work with various imputation algorithms, including the state-of-the-art ones and improve the imputation speed significantly, while achieving competitive mean square error/classification accuracy compared to direct imputation (i.e., impute directly on the missing data). "
+}

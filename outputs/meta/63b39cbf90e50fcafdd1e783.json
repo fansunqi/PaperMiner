@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Flow-level network measurement",
+    "Packet loss detection",
+    "Heavy-hitter detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ChameleMon",
+    "FermatSketch"
+  ],
+  "results": [
+    "Low memory/bandwidth overhead",
+    "Automatic shifting of measurement attention"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e783",
+  "title": "ChameleMon: Shifting Measurement Attention as Network State Changes",
+  "abstract": "  Flow-level network measurement is critical to many network applications. Among various measurement tasks, packet loss detection and heavy-hitter detection are two most important measurement tasks, which we call the two key tasks. In practice, the two key tasks are often required at the same time, but existing works seldom handle both tasks. In this paper, we design ChameleMon to support the two key tasks simultaneously. One key design/novelty of ChameleMon is to shift measurement attention as network state changes, through two dimensions of dynamics: 1) dynamically allocating memory between the two key tasks; 2) dynamically monitoring the flows of importance. To realize the key design, we propose a key technique, leveraging Fermat's little theorem to devise a flexible data structure, namely FermatSketch. FermatSketch is dividable, additive, and subtractive, supporting the two key tasks. We have fully implemented a ChameleMon prototype on a testbed with a Fat-tree topology. We conduct extensive experiments and the results show ChameleMon supports the two key tasks with low memory/bandwidth overhead, and more importantly, it can automatically shift measurement attention as network state changes. "
+}

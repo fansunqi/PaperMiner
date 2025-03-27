@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Liquid animation simulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Combined finite element and finite volume method",
+    "Variational form with new shape functions",
+    "Local grid movement adaptation"
+  ],
+  "results": [
+    "Improved preservation of structural details like sharp edges, thin sheets, and spindles of liquids",
+    "Reduced numerical diffusion"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b6fe",
+  "title": "A Combined Finite Element and Finite Volume Method for Liquid Simulation",
+  "abstract": "  We introduce a new Eulerian simulation framework for liquid animation that leverages both finite element and finite volume methods. In contrast to previous methods where the whole simulation domain is discretized either using the finite volume method or finite element method, our method spatially merges them together using two types of discretization being tightly coupled on its seams while enforcing second order accurate boundary conditions at free surfaces. We achieve our formulation via a variational form using new shape functions specifically designed for this purpose. By enabling a mixture of the two methods, we can take advantage of the best of two worlds. For example, finite volume method (FVM) result in sparse linear systems; however, complexity is encountered when unstructured grids such as tetrahedral or Voronoi elements are used. Finite element method (FEM), on the other hand, result in comparably denser linear systems, but the complexity remains the same even if unstructured elements are chosen; thereby facilitating spatial adaptivity. In this paper, we propose to use FVM for the majority parts to retain the sparsity of linear systems and FEM for parts where the grid elements are allowed to be freely deformed. An example of this application is locally moving grids. We show that by adapting the local grid movement to an underlying nearly rigid motion, numerical diffusion is noticeably reduced; leading to better preservation of structural details such as sharp edges, thin sheets and spindles of liquids. "
+}

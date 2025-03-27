@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Neural Networks Generalization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adversarial Weight Perturbation (AWP)",
+    "Weighted Truncated AWP (WT-AWP)"
+  ],
+  "results": [
+    "Improves generalization",
+    "Regularizing graph neural networks with WT-AWP improves both natural and robust generalization"
+  ],
+  "paper_id": "63969ba790e50fcafdcf1ca9",
+  "title": "Adversarial Weight Perturbation Improves Generalization in Graph Neural\n  Networks",
+  "abstract": "  A lot of theoretical and empirical evidence shows that the flatter local minima tend to improve generalization. Adversarial Weight Perturbation (AWP) is an emerging technique to efficiently and effectively find such minima. In AWP we minimize the loss w.r.t. a bounded worst-case perturbation of the model parameters thereby favoring local minima with a small loss in a neighborhood around them. The benefits of AWP, and more generally the connections between flatness and generalization, have been extensively studied for i.i.d. data such as images. In this paper, we extensively study this phenomenon for graph data. Along the way, we first derive a generalization bound for non-i.i.d. node classification tasks. Then we identify a vanishing-gradient issue with all existing formulations of AWP and we propose a new Weighted Truncated AWP (WT-AWP) to alleviate this issue. We show that regularizing graph neural networks with WT-AWP consistently improves both natural and robust generalization across many different graph learning tasks and models. "
+}

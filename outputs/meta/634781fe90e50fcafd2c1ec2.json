@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differentially private (DP) bootstrap procedure",
+    "Statistical inference under DP"
+  ],
+  "datasets": [
+    "2016 Canada Census data"
+  ],
+  "methods": [
+    "Gaussian-DP (GDP) framework",
+    "deconvolution with DP bootstrap estimates"
+  ],
+  "results": [
+    "Nominal coverage level achieved for private CIs",
+    "First approach to private inference for quantile regression"
+  ],
+  "paper_id": "634781fe90e50fcafd2c1ec2",
+  "title": "Differentially Private Bootstrap: New Privacy Analysis and Inference\n  Strategies",
+  "abstract": "  Differentially private (DP) mechanisms protect individual-level information by introducing randomness into the statistical analysis procedure. Despite the availability of numerous DP tools, there remains a lack of general techniques for conducting statistical inference under DP. We examine a DP bootstrap procedure that releases multiple private bootstrap estimates to infer the sampling distribution and construct confidence intervals (CIs). Our privacy analysis presents new results on the privacy cost of a single DP bootstrap estimate, applicable to any DP mechanisms, and identifies some misapplications of the bootstrap in the existing literature. Using the Gaussian-DP (GDP) framework (Dong et al.,2022), we show that the release of $B$ DP bootstrap estimates from mechanisms satisfying $(\\mu/\\sqrt{(2-2/\\mathrm{e})B})$-GDP asymptotically satisfies $\\mu$-GDP as $B$ goes to infinity. Moreover, we use deconvolution with the DP bootstrap estimates to accurately infer the sampling distribution, which is novel in DP. We derive CIs from our density estimate for tasks such as population mean estimation, logistic regression, and quantile regression, and we compare them to existing methods using simulations and real-world experiments on 2016 Canada Census data. Our private CIs achieve the nominal coverage level and offer the first approach to private inference for quantile regression. "
+}

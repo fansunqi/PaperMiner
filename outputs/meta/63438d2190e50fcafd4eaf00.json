@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Synthetic Dataset Generation for Privacy-Preserving Machine Learning"
+  ],
+  "datasets": [
+    "CIFAR10"
+  ],
+  "methods": [
+    "Optimizing random noises to match layer-wise statistical distribution of the original model"
+  ],
+  "results": [
+    "Synthetic data can be used for training networks from scratch, producing reasonable classification performance"
+  ],
+  "paper_id": "63438d2190e50fcafd4eaf00",
+  "title": "Synthetic Dataset Generation for Privacy-Preserving Machine Learning",
+  "abstract": "  Machine Learning (ML) has achieved enormous success in solving a variety of problems in computer vision, speech recognition, object detection, to name a few. The principal reason for this success is the availability of huge datasets for training deep neural networks (DNNs). However, datasets can not be publicly released if they contain sensitive information such as medical or financial records. In such cases, data privacy becomes a major concern. Encryption methods offer a possible solution to this issue, however their deployment on ML applications is non-trivial, as they seriously impact the classification accuracy and result in substantial computational overhead.Alternatively, obfuscation techniques can be used, but maintaining a good balance between visual privacy and accuracy is challenging. In this work, we propose a method to generate secure synthetic datasets from the original private datasets. In our method, given a network with Batch Normalization (BN) layers pre-trained on the original dataset, we first record the layer-wise BN statistics. Next, using the BN statistics and the pre-trained model, we generate the synthetic dataset by optimizing random noises such that the synthetic data match the layer-wise statistical distribution of the original model. We evaluate our method on image classification dataset (CIFAR10) and show that our synthetic data can be used for training networks from scratch, producing reasonable classification performance. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Human mobility clustering",
+    "Mobility behavior detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Permutation-equivalent operation",
+    "Variational autoencoder architecture",
+    "Multiple learned latent spaces"
+  ],
+  "results": [
+    "Outperformed state-of-the-art methods",
+    "Better accuracy",
+    "More interpretability"
+  ],
+  "paper_id": "63cdfab690e50fcafd106f8e",
+  "title": "Clustering Human Mobility with Multiple Spaces",
+  "abstract": "  Human mobility clustering is an important problem for understanding human mobility behaviors (e.g., work and school commutes). Existing methods typically contain two steps: choosing or learning a mobility representation and applying a clustering algorithm to the representation. However, these methods rely on strict visiting orders in trajectories and cannot take advantage of multiple types of mobility representations. This paper proposes a novel mobility clustering method for mobility behavior detection. First, the proposed method contains a permutation-equivalent operation to handle sub-trajectories that might have different visiting orders but similar impacts on mobility behaviors. Second, the proposed method utilizes a variational autoencoder architecture to simultaneously perform clustering in both latent and original spaces. Also, in order to handle the bias of a single latent space, our clustering assignment prediction considers multiple learned latent spaces at different epochs. This way, the proposed method produces accurate results and can provide reliability estimates of each trajectory's cluster assignment. The experiment shows that the proposed method outperformed state-of-the-art methods in mobility behavior detection from trajectories with better accuracy and more interpretability. "
+}

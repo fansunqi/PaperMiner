@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reasoning"
+  ],
+  "datasets": [
+    "GSM8K",
+    "MATH",
+    "MetaMath"
+  ],
+  "methods": [
+    "ReVISE",
+    "Curriculum Learning",
+    "Preference Learning",
+    "Confidence-Aware Sampling"
+  ],
+  "results": [
+    "Accuracy improved from 27.1% to 31.1% on GSM8K with Llama3 1B",
+    "Accuracy improved from 33.2% to 36.0% on MATH with Llama3 8B"
+  ],
+  "title": "ReVISE Learning to Refine at Test-Time Via Intrinsic Self-Verification.pdf",
+  "abstract": "Self-awareness, i.e., the ability to assess and cor- rect one\u2019s generation, is a fundamental aspect of human intelligence, making its replication in large language models (LLMs) an important yet chal- lenging task. Previous works tackle this by em- ploying extensive reinforcement learning or rely- ing on large external verifiers. In this work, we propose Refine via Intrinsic Self-Verification (Re- VISE), an efficient and effective framework that enables LLMs to self-correct their outputs through self-verification. The core idea of ReVISE is to en- able LLMs to verify their reasoning processes and continually rethink reasoning trajectories based on its verification. To implement this efficiently, we introduce a structured curriculum based on preference learning. Specifically, as ReVISE in- volves two challenging tasks (i.e., self-verification and reasoning correction), we tackle each task sequentially using curriculum learning, collect- ing both failed and successful reasoning paths to construct preference pairs for efficient training. During inference, our approach enjoys natural test-time scaling by integrating self-verification and correction capabilities, further enhanced by our proposed confidence-aware decoding mech- anism. Our experiments on various reasoning tasks demonstrate that ReVISE achieves efficient self-correction and significantly improves the rea- soning performance of LLMs. 1. Introduction Large language models (LLMs) have demonstrated remark- able success across diverse domains, such as coding assis- tants (Zhang et al., 2024b), search engines (Xiong et al., 2024), and personal AI assistants (Sajja et al., 2024), pro- gressively advancing toward human-like logical reasoning capabilities (Amirizaniani et al., 2024). However, tasks requiring rigorous System 2 thinking\u2014such as complex rea- soning (Jaech et al., 2024), iterative trial-and-error (Song *Equal contribution 1KAIST 2Yonsei University. Preprint. Copyright 2025 by the author(s). et al., 2024), and dynamic planning (Xie & Zou, 2024)\u2014re- main highly challenging (Lowe, 2024; Cai et al., 2024). A key difficulty in LLM reasoning is that errors in early steps can accumulate over time, leading to substantial inaccura- cies (LeCun, 2022), while the models\u2019 intrinsic ability to detect and rectify such self-generated errors\u2014often framed as a form of self-awareness\u2014remains insufficient. This is- sue is further exacerbated by the autoregressive nature of LLMs, which constrains their ability to revisit and revise prior steps (Bachmann & Nagarajan, 2024). To tackle this issue, recent approaches have emphasized verification (or correction) of LLM-generated reasoning trajectories as a crucial mechanism (Zhang et al., 2024a; Madaan et al., 2023). For instance, some methods utilize external large-scale verifiers to iteratively validate outputs and trigger regeneration (Luo et al., 2024). However, the reliance on expensive external models introduces computa- tional inefficiencies. Alternatively, reinforcement learning (RL)-based techniques have shown promise in improving reasoning accuracy by optimizing reward signals based on ground-truth correctness, enabling self-correction (Kumar et al., 2024). However, RL is a complex and often unstable procedure (Mnih et al., 2015; Rafailov et al., 2023), and it does not explicitly model the verification of intermedi- ate reasoning steps, making it difficult to assess whether a model is confident in its current trajectory or prone to deviating toward incorrect conclusions, which may limit interpretability and adaptability in complex reasoning tasks. This raises a key question: Can LLMs be equipped with an internal mechanism to explicitly verify their own reasoning and correct potential errors based on their verification? Contribution. We propose Refine Via Intrinsic SElf- Verification (ReVISE), a novel and effective self-correction framework for LLM reasoning using self-verification. The core idea of ReVISE is to enable LLMs to assess their rea- soning process and refine reasoning trajectories based on self-verification. Specifically, we introduce a special token, which outputs whether to stop the generation or revise the reasoning trajectory. To train the model to utilize this token effectively, we design a two-stage curriculum to simplify the learning of two challenging tasks\u2014self-verification and self-correction\u2014by breaking them into separate training stages. Here, both stages employ preference learning, allow- 1 arXiv:2502.14565v1 [cs.LG] 20 Feb 2025"
+}

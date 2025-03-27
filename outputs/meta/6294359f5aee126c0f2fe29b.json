@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Anchors for Text Data Interpretability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Anchors (Ribeiro et al., 2018)",
+    "Theoretical Analysis",
+    "TF-IDF Vectorization",
+    "Neural Networks"
+  ],
+  "results": [
+    "Explicit results on different classes of models",
+    "Words corresponding to highest partial derivatives selected by Anchors"
+  ],
+  "paper_id": "6294359f5aee126c0f2fe29b",
+  "title": "A Sea of Words: An In-Depth Analysis of Anchors for Text Data",
+  "abstract": "  Anchors (Ribeiro et al., 2018) is a post-hoc, rule-based interpretability method. For text data, it proposes to explain a decision by highlighting a small set of words (an anchor) such that the model to explain has similar outputs when they are present in a document. In this paper, we present the first theoretical analysis of Anchors, considering that the search for the best anchor is exhaustive. After formalizing the algorithm for text classification, we present explicit results on different classes of models when the vectorization step is TF-IDF, and words are replaced by a fixed out-of-dictionary token when removed. Our inquiry covers models such as elementary if-then rules and linear classifiers. We then leverage this analysis to gain insights on the behavior of Anchors for any differentiable classifiers. For neural networks, we empirically show that the words corresponding to the highest partial derivatives of the model with respect to the input, reweighted by the inverse document frequencies, are selected by Anchors. "
+}

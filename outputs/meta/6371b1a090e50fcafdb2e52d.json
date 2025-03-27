@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust Skill Learning",
+    "Manipulation Task Acquisition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Active Task Randomization (ATR)",
+    "Graph-based Parameterization",
+    "Task Planner"
+  ],
+  "results": [
+    "Superior success rates in single-step and sequential manipulation tasks"
+  ],
+  "paper_id": "6371b1a090e50fcafdb2e52d",
+  "title": "Active Task Randomization: Learning Robust Skills via Unsupervised\n  Generation of Diverse and Feasible Tasks",
+  "abstract": "  Solving real-world manipulation tasks requires robots to have a repertoire of skills applicable to a wide range of circumstances. When using learning-based methods to acquire such skills, the key challenge is to obtain training data that covers diverse and feasible variations of the task, which often requires non-trivial manual labor and domain knowledge. In this work, we introduce Active Task Randomization (ATR), an approach that learns robust skills through the unsupervised generation of training tasks. ATR selects suitable tasks, which consist of an initial environment state and manipulation goal, for learning robust skills by balancing the diversity and feasibility of the tasks. We propose to predict task diversity and feasibility by jointly learning a compact task representation. The selected tasks are then procedurally generated in simulation using graph-based parameterization. The active selection of these training tasks enables skill policies trained with our framework to robustly handle a diverse range of objects and arrangements at test time. We demonstrate that the learned skills can be composed by a task planner to solve unseen sequential manipulation problems based on visual inputs. Compared to baseline methods, ATR can achieve superior success rates in single-step and sequential manipulation tasks. "
+}

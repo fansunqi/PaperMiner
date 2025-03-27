@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online $k$-Server problem",
+    "Slot-Heterogeneous Paging"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "Optimal deterministic and randomized competitive ratios",
+    "Polynomial and exponential bounds on competitive ratios",
+    "NP-hardness of Offline All-or-One Paging"
+  ],
+  "paper_id": "62a7fc625aee126c0ff5de2a",
+  "title": "Online Paging with Heterogeneous Cache Slots",
+  "abstract": "  It is natural to generalize the online $k$-Server problem by allowing each request to specify not only a point $p$, but also a subset $S$ of servers that may serve it. For uniform metrics, the problem is equivalent to a generalization of Paging in which each request specifies not only a page $p$, but also a subset $S$ of cache slots, and is satisfied by having a copy of $p$ in some slot in $S$. We call this problem Slot-Heterogenous Paging.   We parameterize the problem by specifying a family $\\mathcal S \\subseteq 2^{[k]}$ of requestable slot sets, and we establish bounds on the competitive ratio as a function of the cache size $k$ and family $\\mathcal S$:   - If all request sets are allowed ($\\mathcal S=2^{[k]}\\setminus\\{\\emptyset\\}$), the optimal deterministic and randomized competitive ratios are exponentially worse than for standard \\Paging ($\\mathcal S=\\{[k]\\}$).   - As a function of $|\\mathcal S|$ and $k$, the optimal deterministic ratio is polynomial: at most $O(k^2|\\mathcal S|)$ and at least $\\Omega(\\sqrt{|\\mathcal S|})$.   - For any laminar family $\\mathcal S$ of height $h$, the optimal ratios are $O(hk)$ (deterministic) and $O(h^2\\log k)$ (randomized).   - The special case of laminar $\\mathcal S$ that we call All-or-One Paging extends standard Paging by allowing each request to specify a specific slot to put the requested page in. The optimal deterministic ratio for weighted All-or-One Paging is $\\Theta(k)$. Offline All-or-One Paging is NP-hard.   Some results for the laminar case are shown via a reduction to the generalization of Paging in which each request specifies a set $\\mathcal P of pages, and is satisfied by fetching any page from $\\mathcal P into the cache. The optimal ratios for the latter problem (with laminar family of height $h$) are at most $hk$ (deterministic) and $h\\,H_k$ (randomized). "
+}

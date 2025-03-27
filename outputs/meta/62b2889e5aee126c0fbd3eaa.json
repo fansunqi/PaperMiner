@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural network re-initialization during training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Re-initialization methods",
+    "Data augmentation",
+    "Weight decay",
+    "Learning rate schedules",
+    "Label noise learning"
+  ],
+  "results": [
+    "Re-initialization beneficial for generalization without other regularization",
+    "Little to no added benefit with other regularization techniques",
+    "Optimal generalization less sensitive to learning rate and weight decay",
+    "Re-initialization improves standard training under label noise"
+  ],
+  "paper_id": "62b2889e5aee126c0fbd3eaa",
+  "title": "When Does Re-initialization Work?",
+  "abstract": "  Re-initializing a neural network during training has been observed to improve generalization in recent works. Yet it is neither widely adopted in deep learning practice nor is it often used in state-of-the-art training protocols. This raises the question of when re-initialization works, and whether it should be used together with regularization techniques such as data augmentation, weight decay and learning rate schedules. In this work, we conduct an extensive empirical comparison of standard training with a selection of re-initialization methods to answer this question, training over 15,000 models on a variety of image classification benchmarks. We first establish that such methods are consistently beneficial for generalization in the absence of any other regularization. However, when deployed alongside other carefully tuned regularization techniques, re-initialization methods offer little to no added benefit for generalization, although optimal generalization performance becomes less sensitive to the choice of learning rate and weight decay hyperparameters. To investigate the impact of re-initialization methods on noisy data, we also consider learning under label noise. Surprisingly, in this case, re-initialization significantly improves upon standard training, even in the presence of other carefully tuned regularization techniques. "
+}

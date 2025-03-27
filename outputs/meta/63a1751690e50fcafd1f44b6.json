@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generative models",
+    "Image generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Depth-Aware Guidance",
+    "Denoising Diffusion Probabilistic Models",
+    "label-efficient depth estimation framework",
+    "pseudo-labeling",
+    "depth-domain diffusion prior"
+  ],
+  "results": [
+    "Guiding diffusion models towards the generation of geometrically plausible images"
+  ],
+  "paper_id": "63a1751690e50fcafd1f44b6",
+  "title": "DAG: Depth-Aware Guidance with Denoising Diffusion Probabilistic Models",
+  "abstract": "  Generative models have recently undergone significant advancement due to the diffusion models. The success of these models can be often attributed to their use of guidance techniques, such as classifier or classifier-free guidance, which provide effective mechanisms to trade-off between fidelity and diversity. However, these methods are not capable of guiding a generated image to be aware of its geometric configuration, e.g., depth, which hinders their application to areas that require a certain level of depth awareness. To address this limitation, we propose a novel guidance method for diffusion models that uses estimated depth information derived from the rich intermediate representations of diffusion models. We first present label-efficient depth estimation framework using internal representations of diffusion models. Subsequently, we propose the incorporation of two guidance techniques based on pseudo-labeling and depth-domain diffusion prior during the sampling phase to self-condition the generated image using the estimated depth map. Experiments and comprehensive ablation studies demonstrate the effectiveness of our method in guiding the diffusion models towards the generation of geometrically plausible images. "
+}

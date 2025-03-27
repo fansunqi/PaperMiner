@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Audio-Visual Conditioned Video Prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multimodal motion estimation module",
+    "Context-aware refinement module"
+  ],
+  "results": [
+    "Competitive results on existing benchmarks"
+  ],
+  "paper_id": "63969ba690e50fcafdcf19a4",
+  "title": "Motion and Context-Aware Audio-Visual Conditioned Video Prediction",
+  "abstract": "  Existing state-of-the-art method for audio-visual conditioned video prediction uses the latent codes of the audio-visual frames from a multimodal stochastic network and a frame encoder to predict the next visual frame. However, a direct inference of per-pixel intensity for the next visual frame from the latent codes is extremely challenging because of the high-dimensional image space. To this end, we propose to decouple the audio-visual conditioned video prediction into motion and appearance modeling. The first part is the multimodal motion estimation module that learns motion information as optical flow from the given audio-visual clip. The second part is the context-aware refinement module that uses the predicted optical flow to warp the current visual frame into the next visual frame and refines it base on the given audio-visual context. Experimental results show that our method achieves competitive results on existing benchmarks. "
+}

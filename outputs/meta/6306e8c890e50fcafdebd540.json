@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Code Search"
+  ],
+  "datasets": [
+    "CodeSearchNet"
+  ],
+  "methods": [
+    "Two-stage fusion code search framework (TOSS)",
+    "IR-based and bi-encoder models",
+    "Fine-grained cross-encoders"
+  ],
+  "results": [
+    "State-of-the-art accuracy with an overall mean reciprocal ranking (MRR) score of 0.763",
+    "Compared to the best baseline result on the CodeSearchNet benchmark of 0.713"
+  ],
+  "paper_id": "6306e8c890e50fcafdebd540",
+  "title": "Revisiting Code Search in a Two-Stage Paradigm",
+  "abstract": "  With a good code search engine, developers can reuse existing code snippets and accelerate software development process. Current code search methods can be divided into two categories: traditional information retrieval (IR) based and deep learning (DL) based approaches. DL-based approaches include the cross-encoder paradigm and the bi-encoder paradigm. However, both approaches have certain limitations. The inference of IR-based and bi-encoder models are fast, however, they are not accurate enough; while cross-encoder models can achieve higher search accuracy but consume more time. In this work, we propose TOSS, a two-stage fusion code search framework that can combine the advantages of different code search methods. TOSS first uses IR-based and bi-encoder models to efficiently recall a small number of top-k code candidates, and then uses fine-grained cross-encoders for finer ranking. Furthermore, we conduct extensive experiments on different code candidate volumes and multiple programming languages to verify the effectiveness of TOSS. We also compare TOSS with six data fusion methods. Experimental results show that TOSS is not only efficient, but also achieves state-of-the-art accuracy with an overall mean reciprocal ranking (MRR) score of 0.763, compared to the best baseline result on the CodeSearchNet benchmark of 0.713. "
+}

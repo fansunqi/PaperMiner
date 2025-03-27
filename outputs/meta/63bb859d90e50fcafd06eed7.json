@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Directed detour problem",
+    "Directed long detour problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "O(n^2) algorithm for directed detour",
+    "2^O(k)\u00b7n^4 log n algorithm for directed long detour"
+  ],
+  "results": [
+    "O(n^2) time complexity for directed detour",
+    "2^O(k)\u00b7n^4 log n time complexity for directed long detour"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eed7",
+  "title": "Simpler and faster algorithms for detours in planar digraphs",
+  "abstract": "  In the directed detour problem one is given a digraph $G$ and a pair of vertices $s$ and~$t$, and the task is to decide whether there is a directed simple path from $s$ to $t$ in $G$ whose length is larger than $\\mathsf{dist}_{G}(s,t)$. The more general parameterized variant, directed long detour, asks for a simple $s$-to-$t$ path of length at least $\\mathsf{dist}_{G}(s,t)+k$, for a given parameter $k$. Surprisingly, it is still unknown whether directed detour is polynomial-time solvable on general digraphs. However, for planar digraphs, Wu and Wang~[Networks, '15] proposed an $\\mathcal{O}(n^3)$-time algorithm for directed detour, while Fomin et al.~[STACS 2022] gave a $2^{\\mathcal{O}(k)}\\cdot n^{\\mathcal{O}(1)}$-time fpt algorithm for directed long detour. The algorithm of Wu and Wang relies on a nontrivial analysis of how short detours may look like in a plane embedding, while the algorithm of Fomin et al.~is based on a reduction to the ${\\S}$-disjoint paths problem on planar digraphs. This latter problem is solvable in polynomial time using the algebraic machinery of Schrijver~[SIAM~J.~Comp.,~'94], but the degree of the obtained polynomial factor is huge.   In this paper we propose two simple algorithms: we show how to solve, in planar digraphs, directed detour in time $\\mathcal{O}(n^2)$ and directed long detour in time $2^{\\mathcal{O}(k)}\\cdot n^4 \\log n$. In both cases, the idea is to reduce to the $2$-disjoint paths problem in a planar digraph, and to observe that the obtained instances of this problem have a certain topological structure that makes them amenable to a direct greedy strategy. "
+}

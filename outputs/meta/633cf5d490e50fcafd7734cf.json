@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous Vehicle (AV) planning modules",
+    "Imitation learning (IL)"
+  ],
+  "datasets": [
+    "Lyft Prediction Dataset"
+  ],
+  "methods": [
+    "spline coefficient parameterisation",
+    "offline expert queries",
+    "driver's risk field (DRF)",
+    "multi-agent traffic simulator"
+  ],
+  "results": [
+    "superior performance compared to the previous state-of-the-art"
+  ],
+  "paper_id": "633cf5d490e50fcafd7734cf",
+  "title": "Learning from Demonstrations of Critical Driving Behaviours Using\n  Driver's Risk Field",
+  "abstract": "  In recent years, imitation learning (IL) has been widely used in industry as the core of autonomous vehicle (AV) planning modules. However, previous IL works show sample inefficiency and low generalisation in safety-critical scenarios, on which they are rarely tested. As a result, IL planners can reach a performance plateau where adding more training data ceases to improve the learnt policy. First, our work presents an IL model using the spline coefficient parameterisation and offline expert queries to enhance safety and training efficiency. Then, we expose the weakness of the learnt IL policy by synthetically generating critical scenarios through optimisation of parameters of the driver's risk field (DRF), a parametric human driving behaviour model implemented in a multi-agent traffic simulator based on the Lyft Prediction Dataset. To continuously improve the learnt policy, we retrain the IL model with augmented data. Thanks to the expressivity and interpretability of the DRF, the desired driving behaviours can be encoded and aggregated to the original training data. Our work constitutes a full development cycle that can efficiently and continuously improve the learnt IL policies in closed-loop. Finally, we show that our IL planner developed with less training resource still has superior performance compared to the previous state-of-the-art. "
+}

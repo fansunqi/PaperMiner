@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "TinyML training acceleration",
+    "On-chip linear algebra"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mixed-precision matrix-matrix operation engine (RedMule)",
+    "Parallel Ultra-Low-Power (PULP) cluster",
+    "RISC-V cores"
+  ],
+  "results": [
+    "755 GFLOPS/W and 920 GFLOPS/W efficiency for GEMM",
+    "1.19 TFLOPS/W and 1.67 TFLOPS/W for GEMM-Ops",
+    "58.5 GFLOPS and 117 GFLOPS performance",
+    "99.4% utilization of Computing Elements",
+    "<60 mW average power consumption"
+  ],
+  "paper_id": "63be28d490e50fcafdf52d4f",
+  "title": "RedMule: A Mixed-Precision Matrix-Matrix Operation Engine for Flexible\n  and Energy-Efficient On-Chip Linear Algebra and TinyML Training Acceleration",
+  "abstract": "  The increasing interest in TinyML, i.e., near-sensor machine learning on power budgets of a few tens of mW, is currently pushing toward enabling TinyML-class training as opposed to inference only. Current training algorithms, based on various forms of error and gradient backpropagation, rely on floating-point matrix operations to meet the precision and dynamic range requirements. So far, the energy and power cost of these operations has been considered too high for TinyML scenarios. This paper addresses the open challenge of near-sensor training on a few mW power budget and presents RedMulE - Reduced-Precision Matrix Multiplication Engine, a low-power specialized accelerator conceived for multi-precision floating-point General Matrix-Matrix Operations (GEMM-Ops) acceleration, supporting FP16, as well as hybrid FP8 formats, with {sign, exponent, mantissa}=({1,4,3}, {1,5,2}). We integrate RedMule into a Parallel Ultra-Low-Power (PULP) cluster containing eight energy-efficient RISC-V cores sharing a tightly-coupled data memory and implement the resulting system in a 22 nm technology. At its best efficiency point (@ 470 MHz, 0.65 V), the RedMulE-augmented PULP cluster achieves 755 GFLOPS/W and 920 GFLOPS/W during regular General Matrix-Matrix Multiplication (GEMM), and up to 1.19 TFLOPS/W and 1.67 TFLOPS/W when executing GEMM-Ops, respectively, for FP16 and FP8 input/output tensors. In its best performance point (@ 613 MHz, 0.8 V), RedMulE achieves up to 58.5 GFLOPS and 117 GFLOPS for FP16 and FP8, respectively, with 99.4% utilization of the array of Computing Elements and consuming less than 60 mW on average, thus enabling on-device training of deep learning models in TinyML application scenarios while retaining the flexibility to tackle other classes of common linear algebra problems efficiently. "
+}

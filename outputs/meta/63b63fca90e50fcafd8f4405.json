@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D-aware image synthesis",
+    "Neural Radiance Field (NeRF)"
+  ],
+  "datasets": [
+    "AFHQ",
+    "CelebA",
+    "Cars"
+  ],
+  "methods": [
+    "Class-Continuous Conditional Generative NeRF ($\text{C}^{3}$G-NeRF)"
+  ],
+  "results": [
+    "FID: 7.64",
+    "Class-conditional image synthesis"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f4405",
+  "title": "Class-Continuous Conditional Generative Neural Radiance Field",
+  "abstract": "  The 3D-aware image synthesis focuses on conserving spatial consistency besides generating high-resolution images with fine details. Recently, Neural Radiance Field (NeRF) has been introduced for synthesizing novel views with low computational cost and superior performance. While several works investigate a generative NeRF and show remarkable achievement, they cannot handle conditional and continuous feature manipulation in the generation procedure. In this work, we introduce a novel model, called Class-Continuous Conditional Generative NeRF ($\\text{C}^{3}$G-NeRF), which can synthesize conditionally manipulated photorealistic 3D-consistent images by projecting conditional features to the generator and the discriminator. The proposed $\\text{C}^{3}$G-NeRF is evaluated with three image datasets, AFHQ, CelebA, and Cars. As a result, our model shows strong 3D-consistency with fine details and smooth interpolation in conditional feature manipulation. For instance, $\\text{C}^{3}$G-NeRF exhibits a Fr\\'echet Inception Distance (FID) of 7.64 in 3D-aware face image synthesis with a $\\text{128}^{2}$ resolution. Additionally, we provide FIDs of generated 3D-aware images of each class of the datasets as it is possible to synthesize class-conditional images with $\\text{C}^{3}$G-NeRF. "
+}

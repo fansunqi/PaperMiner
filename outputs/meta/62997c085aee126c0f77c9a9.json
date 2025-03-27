@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fairness in machine learning",
+    "Quantification and mitigation of classifier bias"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fairness Influence Function (FIF)",
+    "Global sensitivity analysis",
+    "FairXplainer"
+  ],
+  "results": [
+    "Captures FIFs of individual feature and intersectional features",
+    "Better approximation of bias based on FIFs",
+    "Higher correlation of FIFs with fairness interventions",
+    "Detects changes in bias due to fairness affirmative/punitive actions"
+  ],
+  "paper_id": "62997c085aee126c0f77c9a9",
+  "title": "How Biased are Your Features?: Computing Fairness Influence Functions\n  with Global Sensitivity Analysis",
+  "abstract": "  Fairness in machine learning has attained significant focus due to the widespread application in high-stake decision-making tasks. Unregulated machine learning classifiers can exhibit bias towards certain demographic groups in data, thus the quantification and mitigation of classifier bias is a central concern in fairness in machine learning. In this paper, we aim to quantify the influence of different features in a dataset on the bias of a classifier. To do this, we introduce the Fairness Influence Function (FIF). This function breaks down bias into its components among individual features and the intersection of multiple features. The key idea is to represent existing group fairness metrics as the difference of the scaled conditional variances in the classifier's prediction and apply a decomposition of variance according to global sensitivity analysis. To estimate FIFs, we instantiate an algorithm FairXplainer that applies variance decomposition of classifier's prediction following local regression. Experiments demonstrate that FairXplainer captures FIFs of individual feature and intersectional features, provides a better approximation of bias based on FIFs, demonstrates higher correlation of FIFs with fairness interventions, and detects changes in bias due to fairness affirmative/punitive actions in the classifier. "
+}

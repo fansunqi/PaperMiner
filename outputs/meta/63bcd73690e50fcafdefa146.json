@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simultaneous Localization and Mapping (SLAM)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Radiance Fields (NeRFs)",
+    "NICE-SLAM",
+    "improved measurement uncertainty handling",
+    "incorporating motion information",
+    "modelling the map as having an explicit foreground and background"
+  ],
+  "results": [
+    "tracking accuracy improved by 85% to 97%",
+    "mapping improved in environments with visual information outside predefined grid"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa146",
+  "title": "Towards Open World NeRF-Based SLAM",
+  "abstract": "  Neural Radiance Fields (NeRFs) offer versatility and robustness in map representations for Simultaneous Localization and Mapping (SLAM) tasks. This paper extends NICE-SLAM, a recent state-of-the-art NeRF-based SLAM algorithm capable of producing high quality NeRF maps. However, depending on the hardware used, the required number of iterations to produce these maps often makes NICE-SLAM run at less than real-time. Additionally, the estimated trajectories fail to be competitive with classical SLAM approaches. Finally, NICE-SLAM requires a grid covering the considered environment to be defined prior to runtime, making it difficult to extend into previously unseen scenes. This paper seeks to make NICE-SLAM more open-world-capable by improving the robustness and tracking accuracy, and generalizing the map representation to handle unconstrained environments. This is done by improving measurement uncertainty handling, incorporating motion information, and modelling the map as having an explicit foreground and background. It is shown that these changes are able to improve tracking accuracy by 85% to 97% depending on the available resources, while also improving mapping in environments with visual information extending outside of the predefined grid. "
+}

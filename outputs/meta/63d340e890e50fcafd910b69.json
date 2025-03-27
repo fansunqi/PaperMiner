@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multilingual Masked Language Models"
+  ],
+  "datasets": [
+    "XNLI",
+    "MLQA",
+    "XQuAD",
+    "TyDiQA",
+    "WikiAnn",
+    "Americas NLI",
+    "MasakhaNER"
+  ],
+  "methods": [
+    "XLM-V"
+  ],
+  "results": [
+    "Outperforms XLM-R on various tasks"
+  ],
+  "paper_id": "63d340e890e50fcafd910b69",
+  "title": "XLM-V: Overcoming the Vocabulary Bottleneck in Multilingual Masked\n  Language Models",
+  "abstract": "  Large multilingual language models typically rely on a single vocabulary shared across 100+ languages. As these models have increased in parameter count and depth, vocabulary size has remained largely unchanged. This vocabulary bottleneck limits the representational capabilities of multilingual models like XLM-R. In this paper, we introduce a new approach for scaling to very large multilingual vocabularies by de-emphasizing token sharing between languages with little lexical overlap and assigning vocabulary capacity to achieve sufficient coverage for each individual language. Tokenizations using our vocabulary are typically more semantically meaningful and shorter compared to XLM-R. Leveraging this improved vocabulary, we train XLM-V, a multilingual language model with a one million token vocabulary. XLM-V outperforms XLM-R on every task we tested on ranging from natural language inference (XNLI), question answering (MLQA, XQuAD, TyDiQA), and named entity recognition (WikiAnn) to low-resource tasks (Americas NLI, MasakhaNER). "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "HRTF modeling",
+    "spatial audio rendering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "neural fields",
+    "HRTF field generative model"
+  ],
+  "results": [
+    "promising performance on HRTF interpolation and generation tasks"
+  ],
+  "paper_id": "635b486f90e50fcafd330bc1",
+  "title": "HRTF Field: Unifying Measured HRTF Magnitude Representation with Neural\n  Fields",
+  "abstract": "  Head-related transfer functions (HRTFs) are a set of functions describing the spatial filtering effect of the outer ear (i.e., torso, head, and pinnae) onto sound sources at different azimuth and elevation angles. They are widely used in spatial audio rendering. While the azimuth and elevation angles are intrinsically continuous, measured HRTFs in existing datasets employ different spatial sampling schemes, making it difficult to model HRTFs across datasets. In this work, we propose to use neural fields, a differentiable representation of functions through neural networks, to model HRTFs with arbitrary spatial sampling schemes. Such representation is unified across datasets with different spatial sampling schemes. HRTFs for arbitrary azimuth and elevation angles can be derived from this representation. We further introduce a generative model named HRTF field to learn the latent space of the HRTF neural fields across subjects. We demonstrate promising performance on HRTF interpolation and generation tasks and point out potential future work. "
+}

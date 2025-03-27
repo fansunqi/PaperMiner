@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Extracting Social Determinants of Health from clinical notes"
+  ],
+  "datasets": [
+    "Social History Annotated Corpus (SHAC)"
+  ],
+  "methods": [
+    "Rules",
+    "Knowledge bases",
+    "n-grams",
+    "Word embeddings",
+    "Pretrained language models (LM)",
+    "Sequence-to-sequence approach"
+  ],
+  "results": [
+    "Top team achieved 0.901 F1 for Subtask A",
+    "0.774 F1 for Subtask B",
+    "0.889 F1 for Subtask C"
+  ],
+  "paper_id": "63c4c02990e50fcafdae00bd",
+  "title": "The 2022 n2c2/UW Shared Task on Extracting Social Determinants of Health",
+  "abstract": "  Objective: The n2c2/UW SDOH Challenge explores the extraction of social determinant of health (SDOH) information from clinical notes. The objectives include the advancement of natural language processing (NLP) information extraction techniques for SDOH and clinical information more broadly. This paper presents the shared task, data, participating teams, performance results, and considerations for future work.   Materials and Methods: The task used the Social History Annotated Corpus (SHAC), which consists of clinical text with detailed event-based annotations for SDOH events such as alcohol, drug, tobacco, employment, and living situation. Each SDOH event is characterized through attributes related to status, extent, and temporality. The task includes three subtasks related to information extraction (Subtask A), generalizability (Subtask B), and learning transfer (Subtask C). In addressing this task, participants utilized a range of techniques, including rules, knowledge bases, n-grams, word embeddings, and pretrained language models (LM).   Results: A total of 15 teams participated, and the top teams utilized pretrained deep learning LM. The top team across all subtasks used a sequence-to-sequence approach achieving 0.901 F1 for Subtask A, 0.774 F1 Subtask B, and 0.889 F1 for Subtask C.   Conclusions: Similar to many NLP tasks and domains, pretrained LM yielded the best performance, including generalizability and learning transfer. An error analysis indicates extraction performance varies by SDOH, with lower performance achieved for conditions, like substance use and homelessness, that increase health risks (risk factors) and higher performance achieved for conditions, like substance abstinence and living with family, that reduce health risks (protective factors). "
+}

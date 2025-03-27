@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Transformer Inference Acceleration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Memoization",
+    "Big Memory System",
+    "Embedding Technique",
+    "Memory Mapping",
+    "Selective Memoization"
+  ],
+  "results": [
+    "22% inference-latency reduction on average",
+    "Up to 68% reduction in inference-latency",
+    "Negligible loss in inference accuracy"
+  ],
+  "paper_id": "643f5c3d36af860e941a8d56",
+  "title": "AttMEMO : Accelerating Transformers with Memoization on Big Memory\n  Systems",
+  "abstract": "  Transformer models gain popularity because of their superior inference accuracy and inference throughput. However, the transformer is computation-intensive, causing a long inference time. The existing works on transformer inference acceleration have limitations caused by either the modification of transformer architectures or the need of specialized hardware. In this paper, we identify the opportunities of using memoization to accelerate the self-attention mechanism in transformers without the above limitations. Built upon a unique observation that there is rich similarity in attention computation across inference sequences, we build a memoization database that leverages the emerging big memory system. We introduce a novel embedding technique to find semantically similar inputs to identify computation similarity. We also introduce a series of techniques such as memory mapping and selective memoization to avoid memory copy and unnecessary overhead. We enable 22% inference-latency reduction on average (up to 68%) with negligible loss in inference accuracy. "
+}

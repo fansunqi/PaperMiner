@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Micro-expression recognition"
+  ],
+  "datasets": [
+    "SMIC",
+    "CASMEII"
+  ],
+  "methods": [
+    "Transformer",
+    "multi-modal multi-scale",
+    "cross-modal contrastive learning"
+  ],
+  "results": [
+    "Accuracy: 78.73% on SMIC",
+    "F1 value: 0.9071 on CASMEII"
+  ],
+  "paper_id": "63bcd73090e50fcafdef99e3",
+  "title": "Multi-scale multi-modal micro-expression recognition algorithm based on\n  transformer",
+  "abstract": "  A micro-expression is a spontaneous unconscious facial muscle movement that can reveal the true emotions people attempt to hide. Although manual methods have made good progress and deep learning is gaining prominence. Due to the short duration of micro-expression and different scales of expressed in facial regions, existing algorithms cannot extract multi-modal multi-scale facial region features while taking into account contextual information to learn underlying features. Therefore, in order to solve the above problems, a multi-modal multi-scale algorithm based on transformer network is proposed in this paper, aiming to fully learn local multi-grained features of micro-expressions through two modal features of micro-expressions - motion features and texture features. To obtain local area features of the face at different scales, we learned patch features at different scales for both modalities, and then fused multi-layer multi-headed attention weights to obtain effective features by weighting the patch features, and combined cross-modal contrastive learning for model optimization. We conducted comprehensive experiments on three spontaneous datasets, and the results show the accuracy of the proposed algorithm in single measurement SMIC database is up to 78.73% and the F1 value on CASMEII of the combined database is up to 0.9071, which is at the leading level. "
+}

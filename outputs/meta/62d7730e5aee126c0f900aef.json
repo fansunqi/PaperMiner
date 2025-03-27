@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/FritzBo/PaMILO"
+  ],
+  "tasks": [
+    "Multi-objective optimization",
+    "Finding non-dominated extreme points"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dual-Benson algorithm",
+    "CPLEX",
+    "Gurobi"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62d7730e5aee126c0f900aef",
+  "title": "PaMILO: A Solver for Multi-Objective Mixed Integer Linear Optimization\n  and Beyond",
+  "abstract": "  In multi-objective optimization, several potentially conflicting objective functions need to be optimized. Instead of one optimal solution, we look for the set of so called non-dominated solutions.   An important subset is the set of non-dominated extreme points. Finding it is a computationally hard problem in general. While solvers for similar problems exist, there are none known for multi-objective mixed integer linear programs (MOMILPs) or multi-objective mixed integer quadratically constrained quadratic programs (MOMIQCQPs). We present PaMILO, the first solver for finding non-dominated extreme points of MOMILPs and MOMIQCQPs. It can be found on github under github.com/FritzBo/PaMILO. PaMILO provides an easy-to-use interface and is implemented in C++17. It solves occurring subproblems employing either CPLEX or Gurobi.   PaMILO adapts the Dual-Benson algorithm for multi-objective linear programming (MOLP). As it was previously only defined for MOLPs, we describe how it can be adapted for MOMILPs, MOMIQCQPs and even more problem classes in the future. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Asteroid Detection in Microlensing Surveys"
+  ],
+  "datasets": [
+    "MOA archival data"
+  ],
+  "methods": [
+    "Deep Learning",
+    "CNN models",
+    "Model ensembling",
+    "YOLOv4 object detector"
+  ],
+  "results": [
+    "Recall: 97.67%",
+    "mAP: 90.97%"
+  ],
+  "paper_id": "6368773090e50fcafd674db1",
+  "title": "Towards Asteroid Detection in Microlensing Surveys with Deep Learning",
+  "abstract": "  Asteroids are an indelible part of most astronomical surveys though only a few surveys are dedicated to their detection. Over the years, high cadence microlensing surveys have amassed several terabytes of data while scanning primarily the Galactic Bulge and Magellanic Clouds for microlensing events and thus provide a treasure trove of opportunities for scientific data mining. In particular, numerous asteroids have been observed by visual inspection of selected images. This paper presents novel deep learning-based solutions for the recovery and discovery of asteroids in the microlensing data gathered by the MOA project. Asteroid tracklets can be clearly seen by combining all the observations on a given night and these tracklets inform the structure of the dataset. Known asteroids were identified within these composite images and used for creating the labelled datasets required for supervised learning. Several custom CNN models were developed to identify images with asteroid tracklets. Model ensembling was then employed to reduce the variance in the predictions as well as to improve the generalisation error, achieving a recall of 97.67%. Furthermore, the YOLOv4 object detector was trained to localize asteroid tracklets, achieving a mean Average Precision (mAP) of 90.97%. These trained networks will be applied to 16 years of MOA archival data to find both known and unknown asteroids that have been observed by the survey over the years. The methodologies developed can be adapted for use by other surveys for asteroid recovery and discovery. "
+}

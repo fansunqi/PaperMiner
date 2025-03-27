@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Classification-based metric learning"
+  ],
+  "datasets": [
+    "Benchmark and real-world datasets"
+  ],
+  "methods": [
+    "Softmax classifier",
+    "Metric learning models",
+    "ProxyDR model",
+    "Convolutional neural networks (CNNs)"
+  ],
+  "results": [
+    "ProxyDR model shows better hierarchical inference performance than NormFace",
+    "Enhanced hierarchy-informed performance measures",
+    "CNNs with random weights correspond better to predefined hierarchies"
+  ],
+  "paper_id": "63d340ef90e50fcafd911668",
+  "title": "Inspecting class hierarchies in classification-based metric learning\n  models",
+  "abstract": "  Most classification models treat all misclassifications equally. However, different classes may be related, and these hierarchical relationships must be considered in some classification problems. These problems can be addressed by using hierarchical information during training. Unfortunately, this information is not available for all datasets. Many classification-based metric learning methods use class representatives in embedding space to represent different classes. The relationships among the learned class representatives can then be used to estimate class hierarchical structures. If we have a predefined class hierarchy, the learned class representatives can be assessed to determine whether the metric learning model learned semantic distances that match our prior knowledge. In this work, we train a softmax classifier and three metric learning models with several training options on benchmark and real-world datasets. In addition to the standard classification accuracy, we evaluate the hierarchical inference performance by inspecting learned class representatives and the hierarchy-informed performance, i.e., the classification performance, and the metric learning performance by considering predefined hierarchical structures. Furthermore, we investigate how the considered measures are affected by various models and training options. When our proposed ProxyDR model is trained without using predefined hierarchical structures, the hierarchical inference performance is significantly better than that of the popular NormFace model. Additionally, our model enhances some hierarchy-informed performance measures under the same training options. We also found that convolutional neural networks (CNNs) with random weights correspond to the predefined hierarchies better than random chance. "
+}

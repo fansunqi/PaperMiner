@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monocular 3D reconstruction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CD$^2$: fine-grained reconstruction method using Chamfer distance twice"
+  ],
+  "results": [
+    "Directly generates a well-structured mesh",
+    "Outperforms others in terms of several quantitative metrics"
+  ],
+  "paper_id": "62982a9b5aee126c0f6f6509",
+  "title": "CD$^2$: Fine-grained 3D Mesh Reconstruction With Twice Chamfer Distance",
+  "abstract": "  Monocular 3D reconstruction is to reconstruct the shape of object and its other information from a single RGB image. In 3D reconstruction, polygon mesh, with detailed surface information and low computational cost, is the most prevalent expression form obtained from deep learning models. However, the state-of-the-art schemes fail to directly generate well-structured meshes, and we identify that most meshes have severe Vertices Clustering (VC) and Illegal Twist (IT) problems. By analyzing the mesh deformation process, we pinpoint that the inappropriate usage of Chamfer Distance (CD) loss is a root cause of VC and IT problems in deep learning model. In this paper, we initially demonstrate these two problems induced by CD loss with visual examples and quantitative analyses. Then, we propose a fine-grained reconstruction method CD$^2$ by employing Chamfer distance twice to perform a plausible and adaptive deformation. Extensive experiments on two 3D datasets and comparisons with five latest schemes demonstrate that our CD$^2$ directly generates a well-structured mesh and outperforms others in terms of several quantitative metrics. "
+}

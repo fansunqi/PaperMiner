@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Explainable AI (XAI)",
+    "Image classification",
+    "Visual Question Answering"
+  ],
+  "datasets": [
+    "Pascal-VOC",
+    "ILSVRC2017",
+    "CLEVR-XAI"
+  ],
+  "methods": [
+    "Model canonization",
+    "Hyperparameter search"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63881b9290e50fcafd3db363",
+  "title": "Optimizing Explanations by Network Canonization and Hyperparameter\n  Search",
+  "abstract": "  Explainable AI (XAI) is slowly becoming a key component for many AI applications. Rule-based and modified backpropagation XAI approaches however often face challenges when being applied to modern model architectures including innovative layer building blocks, which is caused by two reasons. Firstly, the high flexibility of rule-based XAI methods leads to numerous potential parameterizations. Secondly, many XAI methods break the implementation-invariance axiom because they struggle with certain model components, e.g., BatchNorm layers. The latter can be addressed with model canonization, which is the process of re-structuring the model to disregard problematic components without changing the underlying function. While model canonization is straightforward for simple architectures (e.g., VGG, ResNet), it can be challenging for more complex and highly interconnected models (e.g., DenseNet). Moreover, there is only little quantifiable evidence that model canonization is beneficial for XAI. In this work, we propose canonizations for currently relevant model blocks applicable to popular deep neural network architectures,including VGG, ResNet, EfficientNet, DenseNets, as well as Relation Networks. We further suggest a XAI evaluation framework with which we quantify and compare the effect sof model canonization for various XAI methods in image classification tasks on the Pascal-VOC and ILSVRC2017 datasets, as well as for Visual Question Answering using CLEVR-XAI. Moreover, addressing the former issue outlined above, we demonstrate how our evaluation framework can be applied to perform hyperparameter search for XAI methods to optimize the quality of explanations. "
+}

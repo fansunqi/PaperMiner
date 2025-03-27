@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Ballot-polling audits of Instant-Runoff Voting Elections"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dirichlet-tree model",
+    "Bayesian bootstrap",
+    "Risk-limiting audit (RLA)"
+  ],
+  "results": [
+    "Adaptable to perform similarly to a full Bayesian model",
+    "Challenges in creating RLA with this model",
+    "Practical and computationally feasible implementation of Bayesian IRV audit"
+  ],
+  "paper_id": "631aaf0790e50fcafdafb00c",
+  "title": "Ballot-Polling Audits of Instant-Runoff Voting Elections with a\n  Dirichlet-Tree Model",
+  "abstract": "  Instant-runoff voting (IRV) is used in several countries around the world. It requires voters to rank candidates in order of preference, and uses a counting algorithm that is more complex than systems such as first-past-the-post or scoring rules. An even more complex system, the single transferable vote (STV), is used when multiple candidates need to be elected. The complexity of these systems has made it difficult to audit the election outcomes. There is currently no known risk-limiting audit (RLA) method for STV, other than a full manual count of the ballots.   A new approach to auditing these systems was recently proposed, based on a Dirichlet-tree model. We present a detailed analysis of this approach for ballot-polling Bayesian audits of IRV elections. We compared several choices for the prior distribution, including some approaches using a Bayesian bootstrap (equivalent to an improper prior). Our findings include that the bootstrap-based approaches can be adapted to perform similarly to a full Bayesian model in practice, and that an overly informative prior can give counter-intuitive results. Via carefully chosen examples, we show why creating an RLA with this model is challenging, but we also suggest ways to overcome this.   As well as providing a practical and computationally feasible implementation of a Bayesian IRV audit, our work is important in laying the foundation for an RLA for STV elections. "
+}

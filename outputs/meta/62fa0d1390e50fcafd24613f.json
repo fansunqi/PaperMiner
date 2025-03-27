@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tensor Network Regression"
+  ],
+  "datasets": [
+    "MNIST",
+    "Fashion MNIST"
+  ],
+  "methods": [
+    "Interaction Decompositions",
+    "Polynomial Featurization"
+  ],
+  "results": [
+    "Up to 75% of interaction degrees are contributing meaningfully",
+    "New tensor network models match or outperform full models using a fraction of the exponential feature space"
+  ],
+  "paper_id": "62fa0d1390e50fcafd24613f",
+  "title": "Interaction Decompositions for Tensor Network Regression",
+  "abstract": "  It is well known that tensor network regression models operate on an exponentially large feature space, but questions remain as to how effectively they are able to utilize this space. Using a polynomial featurization, we propose the interaction decomposition as a tool that can assess the relative importance of different regressors as a function of their polynomial degree. We apply this decomposition to tensor ring and tree tensor network models trained on the MNIST and Fashion MNIST datasets, and find that up to 75% of interaction degrees are contributing meaningfully to these models. We also introduce a new type of tensor network model that is explicitly trained on only a small subset of interaction degrees, and find that these models are able to match or even outperform the full models using only a fraction of the exponential feature space. This suggests that standard tensor network models utilize their polynomial regressors in an inefficient manner, with the lower degree terms being vastly under-utilized. "
+}

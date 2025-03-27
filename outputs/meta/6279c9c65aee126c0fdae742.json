@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stroke Lesion Segmentation"
+  ],
+  "datasets": [
+    "Anatomical Tracings of Lesions After Stroke (ATLAS) v1.2"
+  ],
+  "methods": [
+    "Self-Adaptive Normalization Network (SAN-Net)",
+    "Masked Adaptive Instance Normalization (MAIN)",
+    "Gradient Reversal Layer",
+    "Symmetry-Inspired Data Augmentation (SIDA)"
+  ],
+  "results": [
+    "Outperforms recently published methods in terms of quantitative metrics and qualitative comparisons under the 'leave-one-site-out' setting"
+  ],
+  "paper_id": "6279c9c65aee126c0fdae742",
+  "title": "SAN-Net: Learning Generalization to Unseen Sites for Stroke Lesion\n  Segmentation with Self-Adaptive Normalization",
+  "abstract": "  There are considerable interests in automatic stroke lesion segmentation on magnetic resonance (MR) images in the medical imaging field, as stroke is an important cerebrovascular disease. Although deep learning-based models have been proposed for this task, generalizing these models to unseen sites is difficult due to not only the large inter-site discrepancy among different scanners, imaging protocols, and populations, but also the variations in stroke lesion shape, size, and location. To tackle this issue, we introduce a self-adaptive normalization network, termed SAN-Net, to achieve adaptive generalization on unseen sites for stroke lesion segmentation. Motivated by traditional z-score normalization and dynamic network, we devise a masked adaptive instance normalization (MAIN) to minimize inter-site discrepancies, which standardizes input MR images from different sites into a site-unrelated style by dynamically learning affine parameters from the input; \\ie, MAIN can affinely transform the intensity values. Then, we leverage a gradient reversal layer to force the U-net encoder to learn site-invariant representation with a site classifier, which further improves the model generalization in conjunction with MAIN. Finally, inspired by the ``pseudosymmetry'' of the human brain, we introduce a simple yet effective data augmentation technique, termed symmetry-inspired data augmentation (SIDA), that can be embedded within SAN-Net to double the sample size while halving memory consumption. Experimental results on the benchmark Anatomical Tracings of Lesions After Stroke (ATLAS) v1.2 dataset, which includes MR images from 9 different sites, demonstrate that under the ``leave-one-site-out'' setting, the proposed SAN-Net outperforms recently published methods in terms of quantitative metrics and qualitative comparisons. "
+}

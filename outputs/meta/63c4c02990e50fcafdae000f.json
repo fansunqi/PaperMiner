@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Depression detection"
+  ],
+  "datasets": [
+    "multimodal Twitter dataset",
+    "multimodal Reddit dataset"
+  ],
+  "methods": [
+    "time-enriched multimodal transformer architecture",
+    "pretrained models for extracting image and text embeddings",
+    "time2vec positional embeddings",
+    "EmoBERTa and CLIP embeddings"
+  ],
+  "results": [
+    "0.931 F1 score on a popular multimodal Twitter dataset",
+    "0.902 F1 score on the only multimodal Reddit dataset"
+  ],
+  "paper_id": "63c4c02990e50fcafdae000f",
+  "title": "It's Just a Matter of Time: Detecting Depression with Time-Enriched\n  Multimodal Transformers",
+  "abstract": "  Depression detection from user-generated content on the internet has been a long-lasting topic of interest in the research community, providing valuable screening tools for psychologists. The ubiquitous use of social media platforms lays out the perfect avenue for exploring mental health manifestations in posts and interactions with other users. Current methods for depression detection from social media mainly focus on text processing, and only a few also utilize images posted by users. In this work, we propose a flexible time-enriched multimodal transformer architecture for detecting depression from social media posts, using pretrained models for extracting image and text embeddings. Our model operates directly at the user-level, and we enrich it with the relative time between posts by using time2vec positional embeddings. Moreover, we propose another model variant, which can operate on randomly sampled and unordered sets of posts to be more robust to dataset noise. We show that our method, using EmoBERTa and CLIP embeddings, surpasses other methods on two multimodal datasets, obtaining state-of-the-art results of 0.931 F1 score on a popular multimodal Twitter dataset, and 0.902 F1 score on the only multimodal Reddit dataset. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning latent representations of 3D volumetric shapes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generative-contrastive neural architecture",
+    "Two encoder branches for voxel grids and multi-view images",
+    "Contrastive loss",
+    "Reconstruction loss",
+    "Switching scheme for cross-training encoders"
+  ],
+  "results": [
+    "Improved reconstruction and classification performance",
+    "Latent representations integrate more useful information from additional input data"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88663c",
+  "title": "Generative-Contrastive Learning for Self-Supervised Latent\n  Representations of 3D Shapes from Multi-Modal Euclidean Input",
+  "abstract": "  We propose a combined generative and contrastive neural architecture for learning latent representations of 3D volumetric shapes. The architecture uses two encoder branches for voxel grids and multi-view images from the same underlying shape. The main idea is to combine a contrastive loss between the resulting latent representations with an additional reconstruction loss. That helps to avoid collapsing the latent representations as a trivial solution for minimizing the contrastive loss. A novel switching scheme is used to cross-train two encoders with a shared decoder. The switching scheme also enables the stop gradient operation on a random branch. Further classification experiments show that the latent representations learned with our self-supervised method integrate more useful information from the additional input data implicitly, thus leading to better reconstruction and classification performance. "
+}

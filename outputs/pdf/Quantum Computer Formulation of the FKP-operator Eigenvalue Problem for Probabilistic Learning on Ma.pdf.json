@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum computing formulation of the FKP-operator eigenvalue problem for probabilistic learning on manifolds"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantum computing",
+    "Fokker-Planck operator",
+    "eigenvalue problem",
+    "second quantization",
+    "probabilistic learning on manifolds",
+    "Gaussian Sobolev space",
+    "polynomial chaos expansion"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Quantum Computer Formulation of the FKP-operator Eigenvalue Problem for Probabilistic Learning on Ma.pdf",
+  "abstract": "We present a quantum computing formulation to address a challenging problem in the development of probabilistic learning on manifolds (PLoM). It involves solving the spectral problem of the high-dimensional Fokker-Planck (FKP) operator, which remains beyond the reach of classical computing. Our ultimate goal is to develop an efficient approach for practical computations on quantum computers. For now, we focus on an adapted formulation tailored to quantum computing. The methodological aspects covered in this work include the construction of the FKP equation, where the invariant probability measure is derived from a training dataset, and the formulation of the eigenvalue problem for the FKP operator. The eigen equation is transformed into a Schr\u00a8odinger equation with a potential V, a non-algebraic function that is neither simple nor a polynomial representation. To address this, we propose a methodology for con- structing a multivariate polynomial approximation of V, leveraging polynomial chaos expansion within the Gaussian Sobolev space. This approach preserves the algebraic properties of the potential and adapts it for quantum algorithms. The quantum computing formulation employs a finite basis representation, incorporating second quantization with creation and annihilation operators. Explicit formulas for the Laplacian and potential are derived and mapped onto qubits using Pauli matrix expressions. Additionally, we outline the design of quantum circuits and the implemen- tation of measurements to construct and observe specific quantum states. Information is extracted through quantum measurements, with eigenstates constructed and overlap measurements evaluated using universal quantum gates. Keywords: Quantum computing formulation, Fokker-Planck operator, eigenvalue problem, second quantization, probabilistic learning on manifolds, PLoM 1. Introduction We present a quantum computing methodology to address a challenging problem recently encountered in the development of probabilistic learning on manifolds [1]. This approach aims to construct statistical surrogate mod- els from small training datasets, which are particularly useful for uncertainty quantification, nonconvex optimization under uncertainty, and statistical inverse problems. The main challenge lies in solving the spectral problem associ- ated with the high-dimensional Fokker-Planck (FKP) operator, a task currently beyond the capabilities of classical computing. In this paper, we explore a quantum computing-based methodology for calculating the eigenfunctions associated with the smallest eigenvalues of the FKP operator. The ultimate goal is to develop an efficient approach that, in the near future, could enable effective computation on a quantum computer. For now, we focus on an adapted formulation tailored to quantum computing. It is worth noting that this problem may also be relevant to frameworks and applications beyond those that motivated the developments presented in this work. \u2217Corresponding author: C. Soize, christian.soize@univ-eiffel.fr Email addresses: christian.soize@univ-eiffel.fr (Christian Soize ), loic.joubert-doriol@univ-eiffel.fr (Lo\u00a8\u0131c Joubert-Doriol), artur.izmaylov@utoronto.ca (Artur F. Izmaylov) Preprint submitted to ArXiv February 21, 2025 arXiv:2502.14580v1 [quant-ph] 20 Feb 2025"
+}

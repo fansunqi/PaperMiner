@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated submodel learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Private set union (PSU)",
+    "Multi-message symmetric private information retrieval (MM-SPIR)",
+    "Random SPIR",
+    "One-time pads"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c60d",
+  "title": "Private Federated Submodel Learning via Private Set Union",
+  "abstract": "  We consider the federated submodel learning (FSL) problem and propose an approach where clients are able to update the central model information theoretically privately. Our approach is based on private set union (PSU), which is further based on multi-message symmetric private information retrieval (MM-SPIR). The server has two non-colluding databases which keep the model in a replicated manner. With our scheme, the server does not get to learn anything further than the subset of submodels updated by the clients: the server does not get to know which client updated which submodel(s), or anything about the local client data. In comparison to the state-of-the-art private FSL schemes of Jia-Jafar and Vithana-Ulukus, our scheme does not require noisy storage of the model at the databases; and in comparison to the secure aggregation scheme of Zhao-Sun, our scheme does not require pre-distribution of client-side common randomness, instead, our scheme creates the required client-side common randomness via random SPIR and one-time pads. The protocol starts with a common randomness generation (CRG) phase where the two databases establish common randomness at the client-side using RSPIR and one-time pads (this phase is called FSL-CRG). Next, the clients utilize the established client-side common randomness to have the server determine privately the union of indices of submodels to be updated collectively by the clients (this phase is called FSL-PSU). Then, the two databases broadcast the current versions of the submodels in the set union to clients. The clients update the submodels based on their local training data. Finally, the clients use a variation of FSL-PSU to write the updates back to the databases privately (this phase is called FSL-write). Our proposed private FSL scheme is robust against client drop-outs, client late-arrivals, and database drop-outs. "
+}

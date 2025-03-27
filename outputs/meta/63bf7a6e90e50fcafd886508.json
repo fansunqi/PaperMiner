@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-definition (HD) map learning for autonomous driving"
+  ],
+  "datasets": [
+    "nuScenes"
+  ],
+  "methods": [
+    "Instance-level graph modeling",
+    "Encoder-decoder architecture",
+    "Attentional graph neural network",
+    "Distance transform maps regression"
+  ],
+  "results": [
+    "13.7 mAP improvement over HDMapNet",
+    "Comparable accuracy with VectorMapNet at 5x faster inference speed"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886508",
+  "title": "InstaGraM: Instance-level Graph Modeling for Vectorized HD Map Learning",
+  "abstract": "  The construction of lightweight High-definition (HD) maps containing geometric and semantic information is of foremost importance for the large-scale deployment of autonomous driving. To automatically generate such type of map from a set of images captured by a vehicle, most works formulate this mapping as a segmentation problem, which implies heavy post-processing to obtain the final vectorized representation. Alternative techniques have the ability to generate an HD map in an end-to-end manner but rely on computationally expensive auto-regressive models. To bring camera-based to an applicable level, we propose InstaGraM, a fast end-to-end network generating a vectorized HD map via instance-level graph modeling of the map elements. Our strategy consists of three main stages: top-view feature extraction, road elements' vertices and edges detection, and conversion to a semantic vector representation. After top-down feature extraction, an encoder-decoder architecture is utilized to predict a set of vertices and edge maps of the road elements. Finally, these vertices along with edge maps are associated through an attentional graph neural network generating a semantic vectorized map. Instead of relying on a common segmentation approach, we propose to regress distance transform maps as they provide strong spatial relations and directional information between vertices. Comprehensive experiments on nuScenes dataset show that our proposed network outperforms HDMapNet by 13.7 mAP and achieves comparable accuracy with VectorMapNet 5x faster inference speed. "
+}

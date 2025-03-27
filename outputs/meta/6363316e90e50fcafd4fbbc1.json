@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Coronary Artery Vessel Segmentation"
+  ],
+  "datasets": [
+    "Clinical Coronary Artery Vessel Dataset"
+  ],
+  "methods": [
+    "Similarity Knowledge Distillation",
+    "Feature-wise Similarity Distillation (FSD)",
+    "Adversarial Similarity Distillation (ASD)"
+  ],
+  "results": [
+    "LightVessel outperforms various knowledge distillation counterparts"
+  ],
+  "paper_id": "6363316e90e50fcafd4fbbc1",
+  "title": "LightVessel: Exploring Lightweight Coronary Artery Vessel Segmentation\n  via Similarity Knowledge Distillation",
+  "abstract": "  In recent years, deep convolution neural networks (DCNNs) have achieved great prospects in coronary artery vessel segmentation. However, it is difficult to deploy complicated models in clinical scenarios since high-performance approaches have excessive parameters and high computation costs. To tackle this problem, we propose \\textbf{LightVessel}, a Similarity Knowledge Distillation Framework, for lightweight coronary artery vessel segmentation. Primarily, we propose a Feature-wise Similarity Distillation (FSD) module for semantic-shift modeling. Specifically, we calculate the feature similarity between the symmetric layers from the encoder and decoder. Then the similarity is transferred as knowledge from a cumbersome teacher network to a non-trained lightweight student network. Meanwhile, for encouraging the student model to learn more pixel-wise semantic information, we introduce the Adversarial Similarity Distillation (ASD) module. Concretely, the ASD module aims to construct the spatial adversarial correlation between the annotation and prediction from the teacher and student models, respectively. Through the ASD module, the student model obtains fined-grained subtle edge segmented results of the coronary artery vessel. Extensive experiments conducted on Clinical Coronary Artery Vessel Dataset demonstrate that LightVessel outperforms various knowledge distillation counterparts. "
+}

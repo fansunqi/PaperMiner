@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Universal domain adaptation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Knowability-based labeling scheme",
+    "Label refinement based on neighborhood consistency",
+    "Auxiliary losses"
+  ],
+  "results": [
+    "Significantly outperforms existing state-of-the-art methods"
+  ],
+  "paper_id": "62d7730e5aee126c0f900c4d",
+  "title": "Exploiting Inter-Sample Affinity for Knowability-Aware Universal Domain\n  Adaptation",
+  "abstract": "  Universal domain adaptation (UDA) aims to transfer the knowledge of common classes from the source domain to the target domain without any prior knowledge on the label set, which requires distinguishing in the target domain the unknown samples from the known ones. Recent methods usually focused on categorizing a target sample into one of the source classes rather than distinguishing known and unknown samples, which ignores the inter-sample affinity between known and unknown samples and may lead to suboptimal performance. Aiming at this issue, we propose a novel UDA framework where such inter-sample affinity is exploited. Specifically, we introduce a knowability-based labeling scheme which can be divided into two steps: 1) Knowability-guided detection of known and unknown samples based on the intrinsic structure of the neighborhoods of samples, where we leverage the first singular vectors of the affinity matrices to obtain the knowability of every target sample. 2) Label refinement based on neighborhood consistency to relabel the target samples, where we refine the labels of each target sample based on its neighborhood consistency of predictions. Then, auxiliary losses based on the two steps are used to reduce the inter-sample affinity between the unknown and the known target samples. Finally, experiments on four public datasets demonstrate that our method significantly outperforms existing state-of-the-art methods. "
+}

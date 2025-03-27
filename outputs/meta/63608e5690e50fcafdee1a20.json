@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analysis of concurrent processes",
+    "Modeling grey failures in actor-based systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Actor model",
+    "Failure model",
+    "Weak barbed bisimulation"
+  ],
+  "results": [
+    "Desirable properties of reliable systems defined",
+    "Reliability properties checked through bisimulation"
+  ],
+  "paper_id": "63608e5690e50fcafdee1a20",
+  "title": "A model of actors and grey failures",
+  "abstract": "  Existing models for the analysis of concurrent processes tend to focus on fail-stop failures, where processes are either working or permanently stopped, and their state (working/stopped) is known. In fact, systems are often affected by grey failures: failures that are latent, possibly transient, and may affect the system in subtle ways that later lead to major issues (such as crashes, limited availability, overload). We introduce a model of actor-based systems with grey failures, based on two interlinked layers: an actor model, given as an asynchronous process calculus with discrete time, and a failure model that represents failure patterns to inject in the system. Our failure model captures not only fail-stop node and link failures, but also grey failures (e.g., partial, transient). We give a behavioural equivalence relation based on weak barbed bisimulation to compare systems on the basis of their ability to recover from failures, and on this basis we define some desirable properties of reliable systems. By doing so, we reduce the problem of checking reliability properties of systems to the problem of checking bisimulation. "
+}

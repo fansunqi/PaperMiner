@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Edge-assisted UAV systems",
+    "Application-aware content and network optimization"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "A$^2$-UAV framework",
+    "Application-Aware Task Planning Problem (A$^2$-TPP)"
+  ],
+  "results": [
+    "38% more accomplished tasks than the state-of-the-art",
+    "400% more accomplished tasks when the number of targets increases significantly"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905f69",
+  "title": "A$^2$-UAV: Application-Aware Content and Network Optimization of\n  Edge-Assisted UAV Systems",
+  "abstract": "  To perform advanced surveillance, Unmanned Aerial Vehicles (UAVs) require the execution of edge-assisted computer vision (CV) tasks. In multi-hop UAV networks, the successful transmission of these tasks to the edge is severely challenged due to severe bandwidth constraints. For this reason, we propose a novel A$^2$-UAV framework to optimize the number of correctly executed tasks at the edge. In stark contrast with existing art, we take an application-aware approach and formulate a novel pplication-Aware Task Planning Problem (A$^2$-TPP) that takes into account (i) the relationship between deep neural network (DNN) accuracy and image compression for the classes of interest based on the available dataset, (ii) the target positions, (iii) the current energy/position of the UAVs to optimize routing, data pre-processing and target assignment for each UAV. We demonstrate A$^2$-TPP is NP-Hard and propose a polynomial-time algorithm to solve it efficiently. We extensively evaluate A$^2$-UAV through real-world experiments with a testbed composed by four DJI Mavic Air 2 UAVs. We consider state-of-the-art image classification tasks with four different DNN models (i.e., DenseNet, ResNet152, ResNet50 and MobileNet-V2) and object detection tasks using YoloV4 trained on the ImageNet dataset. Results show that A$^2$-UAV attains on average around 38% more accomplished tasks than the state-of-the-art, with 400% more accomplished tasks when the number of targets increases significantly. To allow full reproducibility, we pledge to share datasets and code with the research community. "
+}

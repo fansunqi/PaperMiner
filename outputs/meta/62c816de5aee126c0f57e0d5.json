@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimizing Transmitter's Action",
+    "Minimizing Age of Incorrect Information (AoII)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Markov Decision Process",
+    "Policy Improvement Theorem"
+  ],
+  "results": [
+    "Optimal policy initiates transmission when channel is idle and AoII is not zero",
+    "Numerical results highlighting the performance of the optimal policy"
+  ],
+  "paper_id": "62c816de5aee126c0f57e0d5",
+  "title": "Minimizing Age of Incorrect Information in the Presence of Timeout",
+  "abstract": "  We consider a slotted-time system with a transmitter-receiver pair. In the system, a transmitter observes a dynamic source and sends updates to a remote receiver through a communication channel. We assume that the channel is error-free but suffers a random delay. Moreover, when an update has been transmitted for too long, the transmission will be terminated immediately, and the update will be discarded. We assume the maximum transmission time is predetermined and is not controlled by the transmitter. The receiver will maintain estimates of the current state of the dynamic source using the received updates. In this paper, we adopt the Age of Incorrect Information (AoII) as the performance metric and investigate the problem of optimizing the transmitter's action in each time slot to minimize AoII. We first characterize the optimization problem using Markov Decision Process and evaluate the performance of some canonical transmission policies. Then, by leveraging the policy improvement theorem, we prove that, under a simple and easy-to-verify condition, the optimal policy for the transmitter is the one that initiates a transmission whenever the channel is idle and AoII is not zero. Lastly, we take the case where the transmission time is geometrically distributed as an example. For this example, we verify the condition numerically and provide numerical results that highlight the performance of the optimal policy. "
+}

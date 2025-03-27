@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nonblocking transaction composition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "NBTC (nonblocking transaction composition)",
+    "Medley",
+    "nbMontage",
+    "txMontage"
+  ],
+  "results": [
+    "Medley outperforms Lock-Free Transactional Transform (LFTT) by 40--170%",
+    "Marginal overhead of Medley's transactional composition is roughly 2.2x",
+    "txMontage achieves throughput up to two orders of magnitude higher than OneFile persistent STM system"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f576d",
+  "title": "Transactional Composition of Nonblocking Data Structures",
+  "abstract": "  This paper introduces nonblocking transaction composition (NBTC), a new methodology for atomic composition of nonblocking operations on concurrent data structures. Unlike previous software transactional memory (STM) approaches, NBTC leverages the linearizability of existing nonblocking structures, reducing the number of memory accesses that must be executed together, atomically, to only one per operation in most cases (these are typically the linearizing instructions of the constituent operations).   Our obstruction-free implementation of NBTC, which we call Medley, makes it easy to transform most nonblocking data structures into transactional counterparts while preserving their liveness and high concurrency. In our experiments, Medley outperforms Lock-Free Transactional Transform (LFTT), the fastest prior competing methodology, by 40--170%. The marginal overhead of Medley's transactional composition, relative to separate operations performed in succession, is roughly 2.2$\\times$.   For persistent data structures, we observe that failure atomicity for transactions can be achieved \"almost for free\" with epoch-based periodic persistence. Toward that end, we integrate Medley with nbMontage, a general system for periodically persistent data structures. The resulting txMontage provides ACID transactions and achieves throughput up to two orders of magnitude higher than that of the OneFile persistent STM system. "
+}

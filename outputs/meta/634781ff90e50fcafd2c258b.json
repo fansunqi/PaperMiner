@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image generation"
+  ],
+  "datasets": [
+    "Single-label and multi-label image datasets"
+  ],
+  "methods": [
+    "Self-guided diffusion models",
+    "Feature extraction function",
+    "Self-annotation function"
+  ],
+  "results": [
+    "Self-labeled guidance outperforms diffusion models without guidance",
+    "May surpass guidance based on ground-truth labels",
+    "Generates visually diverse yet semantically consistent images without label annotation"
+  ],
+  "paper_id": "634781ff90e50fcafd2c258b",
+  "title": "Self-Guided Diffusion Models",
+  "abstract": "  Diffusion models have demonstrated remarkable progress in image generation quality, especially when guidance is used to control the generative process. However, guidance requires a large amount of image-annotation pairs for training and is thus dependent on their availability, correctness and unbiasedness. In this paper, we eliminate the need for such annotation by instead leveraging the flexibility of self-supervision signals to design a framework for self-guided diffusion models. By leveraging a feature extraction function and a self-annotation function, our method provides guidance signals at various image granularities: from the level of holistic images to object boxes and even segmentation masks. Our experiments on single-label and multi-label image datasets demonstrate that self-labeled guidance always outperforms diffusion models without guidance and may even surpass guidance based on ground-truth labels, especially on unbalanced data. When equipped with self-supervised box or mask proposals, our method further generates visually diverse yet semantically consistent images, without the need for any class, box, or segment label annotation. Self-guided diffusion is simple, flexible and expected to profit from deployment at scale. "
+}

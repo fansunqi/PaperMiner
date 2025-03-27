@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Pseudorandom Generators for Sliding-Window Algorithms"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sliding-Window Branching Programs (SWBPs)",
+    "Pseudorandom Generators (PRGs)"
+  ],
+  "results": [
+    "Two PRG constructions for fooling SWBPs",
+    "Space-efficient language decision for probabilistic cellular automata"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bb44",
+  "title": "Pseudorandom Generators for Sliding-Window Algorithms",
+  "abstract": "  A sliding-window algorithm of window size $t$ is an algorithm whose current operation depends solely on the last $t$ symbols read. We construct pseudorandom generators (PRGs) for low-space randomized sliding-window algorithms that have access to a binary randomness source. More specifically, we lift these algorithms to the non-uniform setting of branching programs and study them as a subclass thereof that we call sliding-window branching programs (SWBPs), accordingly. For general SWBPs, given a base PRG $G_\\mathrm{base}$ with seed length $d_\\mathrm{base}$ that $\\varepsilon_\\mathrm{base}$-fools width-$w$, length-$t$ (general) branching programs, we give two PRG constructions for fooling any same-width SWBP of length $n$ and window size $t$ (where we assume $w \\ge n$). The first uses an additional $d_\\mathrm{base} + O(\\log(n/t) \\log(1/\\varepsilon_\\mathrm{base}))$ random bits, whereas the second has a seed length of $O((d_\\mathrm{base} + \\log\\log(n/t) + \\log(1/\\varepsilon_\\mathrm{base})) \\log(d_\\mathrm{base} + \\log(1/\\varepsilon_\\mathrm{base})))$. Both PRGs incur only a $(n/2t)^{O(1)}$ multiplicative loss in the error parameter.   As an application, we show how to decide the language of a sublinear-time probabilistic cellular automaton using small space. More specifically, these results target the model of PACAs, which are probabilistic cellular automata that accept if and only if all cells are simultaneously accepting. For (sublinear) $T(n) = \\Omega(\\log n)^{1.01}$, we prove that every language accepted by a $T$-time one-sided error PACA (the PACA equivalent of $\\mathsf{RP}$) can be decided using only $O(T)$ space. Meanwhile, forgoing the previous requirement on $T$, we show the same holds for $T$-time two-sided error PACA (the PACA equivalent of $\\mathsf{BPP}$) if we use $\\tilde{O}(T) + O(\\log n)$ space instead (where the $\\tilde{O}$ notation hides only $\\mathsf{polylog}(T)$ factors). "
+}

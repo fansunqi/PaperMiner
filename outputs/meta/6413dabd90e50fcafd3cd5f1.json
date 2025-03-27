@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Vehicle Re-identification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Triplet Contrastive Representation Learning (TCRL)",
+    "Proxy Contrastive Loss (PCL)",
+    "Hybrid Contrastive Loss (HCL)",
+    "Weighted Regularization Cluster Contrastive Loss (WRCCL)"
+  ],
+  "results": [
+    "TCRL outperforms many state-of-the-art unsupervised vehicle re-identification approaches"
+  ],
+  "paper_id": "6413dabd90e50fcafd3cd5f1",
+  "title": "Triplet Contrastive Representation Learning for Unsupervised Vehicle\n  Re-identification",
+  "abstract": "  Part feature learning is critical for fine-grained semantic understanding in vehicle re-identification. However, existing approaches directly model part features and global features, which can easily lead to serious gradient vanishing issues due to their unequal feature information and unreliable pseudo-labels for unsupervised vehicle re-identification. To address this problem, in this paper, we propose a simple Triplet Contrastive Representation Learning (TCRL) framework which leverages cluster features to bridge the part features and global features for unsupervised vehicle re-identification. Specifically, TCRL devises three memory banks to store the instance/cluster features and proposes a Proxy Contrastive Loss (PCL) to make contrastive learning between adjacent memory banks, thus presenting the associations between the part and global features as a transition of the part-cluster and cluster-global associations. Since the cluster memory bank copes with all the vehicle features, it can summarize them into a discriminative feature representation. To deeply exploit the instance/cluster information, TCRL proposes two additional loss functions. For the instance-level feature, a Hybrid Contrastive Loss (HCL) re-defines the sample correlations by approaching the positive instance features and pushing the all negative instance features away. For the cluster-level feature, a Weighted Regularization Cluster Contrastive Loss (WRCCL) refines the pseudo labels by penalizing the mislabeled images according to the instance similarity. Extensive experiments show that TCRL outperforms many state-of-the-art unsupervised vehicle re-identification approaches. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cross-domain Microscopy Cell Counting"
+  ],
+  "datasets": [
+    "Synthetic cells dataset",
+    "Real microscopy cells datasets"
+  ],
+  "methods": [
+    "Disentangled Transfer Learning",
+    "Image synthesis technique"
+  ],
+  "results": [
+    "Good performance compared to state-of-the-art techniques",
+    "Reduced annotation cost"
+  ],
+  "paper_id": "6385788490e50fcafdf498af",
+  "title": "Cross-domain Microscopy Cell Counting by Disentangled Transfer Learning",
+  "abstract": "  Microscopy images from different imaging conditions, organs, and tissues often have numerous cells with various shapes on a range of backgrounds. As a result, designing a deep learning model to count cells in a source domain becomes precarious when transferring them to a new target domain. To address this issue, manual annotation costs are typically the norm when training deep learning-based cell counting models across different domains. In this paper, we propose a cross-domain cell counting approach that requires only weak human annotation efforts. Initially, we implement a cell counting network that disentangles domain-specific knowledge from domain-agnostic knowledge in cell images, where they pertain to the creation of domain style images and cell density maps, respectively. We then devise an image synthesis technique capable of generating massive synthetic images founded on a few target-domain images that have been labeled. Finally, we use a public dataset consisting of synthetic cells as the source domain, where no manual annotation cost is present, to train our cell counting network; subsequently, we transfer only the domain-agnostic knowledge to a new target domain of real cell images. By progressively refining the trained model using synthesized target-domain images and several real annotated ones, our proposed cross-domain cell counting method achieves good performance compared to state-of-the-art techniques that rely on fully annotated training images in the target domain. We evaluated the efficacy of our cross-domain approach on two target domain datasets of actual microscopy cells, demonstrating the feasibility of requiring annotations on only a few images in a new domain. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic Lossy Coding of Markov Sources"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "String matching techniques",
+    "Natural type selection (NTS) mechanism",
+    "Maximum likelihood distribution framework"
+  ],
+  "results": [
+    "Asymptotically optimal performance within a practical framework",
+    "Minimum per letter coding rate while maintaining a specified distortion level"
+  ],
+  "paper_id": "636c6bea90e50fcafd2d3b87",
+  "title": "Asymptotically Optimal Stochastic Lossy Coding of Markov Sources",
+  "abstract": "  An effective 'on-the-fly' mechanism for stochastic lossy coding of Markov sources using string matching techniques is proposed in this paper. Earlier work has shown that the rate-distortion bound can be asymptotically achieved by a 'natural type selection' (NTS) mechanism which iteratively encodes asymptotically long source strings (from an unknown source distribution P) and regenerates the codebook according to a maximum likelihood distribution framework, after observing a set of K codewords to 'd-match' (i.e., satisfy the distortion constraint for) a respective set of K source words. This result was later generalized for sources with memory under the assumption that the source words must contain a sequence of asymptotic-length vectors (or super-symbols) over the source super-alphabet, i.e., the source is considered a vector source. However, the earlier result suffers from a significant practical flaw, more specifically, it requires expanding the super-symbols (and correspondingly the super-alphabet) lengths to infinity in order to achieve the rate-distortion bound, even for finite memory sources, e.g., Markov sources. This implies that the complexity of the NTS iteration will explode beyond any practical capabilities, thus compromising the promise of the NTS algorithm in practical scenarios for sources with memory. This work describes a considerably more efficient and tractable mechanism to achieve asymptotically optimal performance given a prescribed memory constraint, within a practical framework tailored to Markov sources. More specifically, the algorithm finds asymptotically the optimal codebook reproduction distribution, within a constrained set of distributions having Markov property with a prescribed order, that achieves the minimum per letter coding rate while maintaining a specified distortion level. "
+}

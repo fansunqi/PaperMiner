@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formally Verified Samplers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Zar: a formally verified compiler pipeline",
+    "choice-fix trees",
+    "coinductive interaction trees",
+    "random bit model"
+  ],
+  "results": [
+    "correctness of the composed translations establishes the sampling equidistribution theorem",
+    "extracted verified samplers to OCaml and Python",
+    "empirically validated on a number of illustrative examples"
+  ],
+  "paper_id": "6373035a90e50fcafd09fc66",
+  "title": "Formally Verified Samplers From Probabilistic Programs With Loops and\n  Conditioning",
+  "abstract": "  We present Zar: a formally verified compiler pipeline from discrete probabilistic programs with unbounded loops in the conditional probabilistic guarded command language (cpGCL) to proved-correct executable samplers in the random bit model. We exploit the key idea that all discrete probability distributions can be reduced to unbiased coin-flipping schemes. The compiler pipeline first translates a cpGCL program into choice-fix trees, an intermediate representation suitable for reduction of biased probabilistic choices. Choice-fix trees are then translated to coinductive interaction trees for execution within the random bit model. The correctness of the composed translations establishes the sampling equidistribution theorem: compiled samplers are correct wrt. the conditional weakest pre-expectation semantics of cpGCL source programs. Zar is implemented and fully verified in the Coq proof assistant. We extract verified samplers to OCaml and Python and empirically validate them on a number of illustrative examples. "
+}

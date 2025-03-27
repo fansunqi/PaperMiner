@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "Large Language Model Training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Elixir parallel heterogeneous training system",
+    "Hierarchical distributed memory management"
+  ],
+  "results": [
+    "Trains 30B OPT model on A100 with 40GB CUDA memory",
+    "84% efficiency of PyTorch GPU training",
+    "Super-linear scalability",
+    "5.3x faster training for MoE models compared to dense models"
+  ],
+  "paper_id": "6397ed4d90e50fcafdf43c1a",
+  "title": "Elixir: Train a Large Language Model on a Small GPU Cluster",
+  "abstract": "  In recent years, the number of parameters of one deep learning (DL) model has been growing much faster than the growth of GPU memory space. People who are inaccessible to a large number of GPUs resort to heterogeneous training systems for storing model parameters in CPU memory. Existing heterogeneous systems are based on parallelization plans in the scope of the whole model. They apply a consistent parallel training method for all the operators in the computation. Therefore, engineers need to pay a huge effort to incorporate a new type of model parallelism and patch its compatibility with other parallelisms. For example, Mixture-of-Experts (MoE) is still incompatible with ZeRO-3 in Deepspeed. Also, current systems face efficiency problems on small scale, since they are designed and tuned for large-scale training. In this paper, we propose Elixir, a new parallel heterogeneous training system, which is designed for efficiency and flexibility. Elixir utilizes memory resources and computing resources of both GPU and CPU. For flexibility, Elixir generates parallelization plans in the granularity of operators. Any new type of model parallelism can be incorporated by assigning a parallel pattern to the operator. For efficiency, Elixir implements a hierarchical distributed memory management scheme to accelerate inter-GPU communications and CPU-GPU data transmissions. As a result, Elixir can train a 30B OPT model on an A100 with 40GB CUDA memory, meanwhile reaching 84% efficiency of PyTorch GPU training. With its super-linear scalability, the training efficiency becomes the same as Pytorch GPU training on multiple GPUs. Also, large MoE models can be trained 5.3x faster than dense models of the same size. Now Elixir is integrated into ColossalAI and is available on its main branch. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning Gaussian mixture models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Wasserstein-Fisher-Rao gradient flow",
+    "nonparametric maximum likelihood estimator (NPMLE)",
+    "interacting particle system"
+  ],
+  "results": [
+    "Convergence guarantees",
+    "Effectiveness compared to classical benchmarks and simpler geometries"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5e13",
+  "title": "Learning Gaussian Mixtures Using the Wasserstein-Fisher-Rao Gradient\n  Flow",
+  "abstract": "  Gaussian mixture models form a flexible and expressive parametric family of distributions that has found applications in a wide variety of applications. Unfortunately, fitting these models to data is a notoriously hard problem from a computational perspective. Currently, only moment-based methods enjoy theoretical guarantees while likelihood-based methods are dominated by heuristics such as Expectation-Maximization that are known to fail in simple examples. In this work, we propose a new algorithm to compute the nonparametric maximum likelihood estimator (NPMLE) in a Gaussian mixture model. Our method is based on gradient descent over the space of probability measures equipped with the Wasserstein-Fisher-Rao geometry for which we establish convergence guarantees. In practice, it can be approximated using an interacting particle system where the weight and location of particles are updated alternately. We conduct extensive numerical experiments to confirm the effectiveness of the proposed algorithm compared not only to classical benchmarks but also to similar gradient descent algorithms with respect to simpler geometries. In particular, these simulations illustrate the benefit of updating both weight and location of the interacting particles. "
+}

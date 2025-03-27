@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-task Language Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Attribution-based Pruning"
+  ],
+  "results": [
+    "Significantly outperforms baseline pruning methods",
+    "Preserves performance in unseen domain settings"
+  ],
+  "paper_id": "6279c9c65aee126c0fdae43b",
+  "title": "Task-specific Compression for Multi-task Language Models using\n  Attribution-based Pruning",
+  "abstract": "  Multi-task language models show outstanding performance for various natural language understanding tasks with only a single model. However, these language models utilize an unnecessarily large number of model parameters, even when used only for a specific task. This paper proposes a novel training-free compression method for multi-task language models using a pruning method. Specifically, we use an attribution method to determine which neurons are essential for performing a specific task. We task-specifically prune unimportant neurons and leave only task-specific parameters. Furthermore, we extend our method to be applicable in low-resource and unsupervised settings. Since our compression method is training-free, it uses few computing resources and does not destroy the pre-trained knowledge of language models. Experimental results on the six widely-used datasets show that our proposed pruning method significantly outperforms baseline pruning methods. In addition, we demonstrate that our method preserves performance even in an unseen domain setting. "
+}

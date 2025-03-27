@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generating synthetic clinical data"
+  ],
+  "datasets": [
+    "Antiretroviral Therapy for HIV"
+  ],
+  "methods": [
+    "Generative Adversarial Networks (GANs)",
+    "Variational Autoencoder (VAE)",
+    "External memory"
+  ],
+  "results": [
+    "Overcomes mode collapse",
+    "Generates synthetic dataset with accurate severely imbalanced class distributions",
+    "Low patient disclosure risk",
+    "High level of utility from the ground truth dataset"
+  ],
+  "paper_id": "62feff8d90e50fcafd599754",
+  "title": "Generating Synthetic Clinical Data that Capture Class Imbalanced\n  Distributions with Generative Adversarial Networks: Example using\n  Antiretroviral Therapy for HIV",
+  "abstract": "  Clinical data usually cannot be freely distributed due to their highly confidential nature and this hampers the development of machine learning in the healthcare domain. One way to mitigate this problem is by generating realistic synthetic datasets using generative adversarial networks (GANs). However, GANs are known to suffer from mode collapse thus creating outputs of low diversity. This lowers the quality of the synthetic healthcare data, and may cause it to omit patients of minority demographics or neglect less common clinical practices. In this paper, we extend the classic GAN setup with an additional variational autoencoder (VAE) and include an external memory to replay latent features observed from the real samples to the GAN generator. Using antiretroviral therapy for human immunodeficiency virus (ART for HIV) as a case study, we show that our extended setup overcomes mode collapse and generates a synthetic dataset that accurately describes severely imbalanced class distributions commonly found in real-world clinical variables. In addition, we demonstrate that our synthetic dataset is associated with a very low patient disclosure risk, and that it retains a high level of utility from the ground truth dataset to support the development of downstream machine learning algorithms. "
+}

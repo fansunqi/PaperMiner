@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition (ASR)"
+  ],
+  "datasets": [
+    "AISHELL-1",
+    "TEDLIUM2",
+    "AIDATATANG"
+  ],
+  "methods": [
+    "Gated Interlayer Collaboration (GIC)"
+  ],
+  "results": [
+    "Outperforms several strong baselines"
+  ],
+  "paper_id": "628ef0495aee126c0f82d972",
+  "title": "Improving CTC-based ASR Models with Gated Interlayer Collaboration",
+  "abstract": "  The CTC-based automatic speech recognition (ASR) models without the external language model usually lack the capacity to model conditional dependencies and textual interactions. In this paper, we present a Gated Interlayer Collaboration (GIC) mechanism to improve the performance of CTC-based models, which introduces textual information into the model and thus relaxes the conditional independence assumption of CTC-based models. Specifically, we consider the weighted sum of token embeddings as the textual representation for each position, where the position-specific weights are the softmax probability distribution constructed via inter-layer auxiliary CTC losses. The textual representations are then fused with acoustic features by developing a gate unit. Experiments on AISHELL-1, TEDLIUM2, and AIDATATANG corpora show that the proposed method outperforms several strong baselines. "
+}

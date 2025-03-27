@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Complex query answering"
+  ],
+  "datasets": [
+    "WD50K-NFOL"
+  ],
+  "methods": [
+    "Dual-heterogeneous Transformer encoder",
+    "Fuzzy logic theory"
+  ],
+  "results": [
+    "NQE is the state-of-the-art CQA method over HKGs with good generalization capability"
+  ],
+  "paper_id": "638426b990e50fcafdeb1f9f",
+  "title": "NQE: N-ary Query Embedding for Complex Query Answering over\n  Hyper-Relational Knowledge Graphs",
+  "abstract": "  Complex query answering (CQA) is an essential task for multi-hop and logical reasoning on knowledge graphs (KGs). Currently, most approaches are limited to queries among binary relational facts and pay less attention to n-ary facts (n>=2) containing more than two entities, which are more prevalent in the real world. Moreover, previous CQA methods can only make predictions for a few given types of queries and cannot be flexibly extended to more complex logical queries, which significantly limits their applications. To overcome these challenges, in this work, we propose a novel N-ary Query Embedding (NQE) model for CQA over hyper-relational knowledge graphs (HKGs), which include massive n-ary facts. The NQE utilizes a dual-heterogeneous Transformer encoder and fuzzy logic theory to satisfy all n-ary FOL queries, including existential quantifiers, conjunction, disjunction, and negation. We also propose a parallel processing algorithm that can train or predict arbitrary n-ary FOL queries in a single batch, regardless of the kind of each query, with good flexibility and extensibility. In addition, we generate a new CQA dataset WD50K-NFOL, including diverse n-ary FOL queries over WD50K. Experimental results on WD50K-NFOL and other standard CQA datasets show that NQE is the state-of-the-art CQA method over HKGs with good generalization capability. Our code and dataset are publicly available. "
+}

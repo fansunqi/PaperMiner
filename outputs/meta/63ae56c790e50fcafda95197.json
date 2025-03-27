@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Long-term Breast Cancer Risk Assessment"
+  ],
+  "datasets": [
+    "Danish mammography views",
+    "Dutch mammography views"
+  ],
+  "methods": [
+    "Augmentation-based domain adaptation",
+    "Texture model"
+  ],
+  "results": [
+    "AUC: 0.71 for ICs, 0.65 for LTCs in Danish women",
+    "AUC for texture combined with established risk factors: 0.68 for LTCs",
+    "High-risk subgroup accounted for 25.5% of ICs and 24.8% of LTCs"
+  ],
+  "paper_id": "63ae56c790e50fcafda95197",
+  "title": "Robust Cross-vendor Mammographic Texture Models Using Augmentation-based\n  Domain Adaptation for Long-term Breast Cancer Risk",
+  "abstract": "  Purpose: Risk-stratified breast cancer screening might improve early detection and efficiency without comprising quality. However, modern mammography-based risk models do not ensure adaptation across vendor-domains and rely on cancer precursors, associated with short-term risk, which might limit long-term risk assessment. We report a cross-vendor mammographic texture model for long-term risk. Approach: The texture model was robustly trained using two systematically designed case-control datasets. Textural features, indicative of future breast cancer, were learned by excluding samples with diagnosed/potential malignancies from training. An augmentation-based domain adaption technique, based on flavorization of mammographic views, ensured generalization across vendor-domains. The model was validated in 66,607 consecutively screened Danish women with flavorized Siemens views and 25,706 Dutch women with Hologic-processed views. Performances were evaluated for interval cancers (IC) within two years from screening and long-term cancers (LTC) from two years after screening. The texture model was combined with established risk factors to flag 10% of women with the highest risk. Results: In Danish women, the texture model achieved an area under the receiver operating characteristic (AUC) of 0.71 and 0.65 for ICs and LTCs, respectively. In Dutch women with Hologic-processed views, the AUCs were not different from AUCs in Danish women with flavorized views. The AUC for texture combined with established risk factors increased to 0.68 for LTCs. The 10% of women flagged as high-risk accounted for 25.5% of ICs and 24.8% of LTCs. Conclusions: The texture model robustly estimated long-term breast cancer risk while adapting to an unseen processed vendor-domain and identified a clinically relevant high-risk subgroup. "
+}

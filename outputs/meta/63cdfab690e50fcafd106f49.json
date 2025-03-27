@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DyPP game",
+    "Reinforcement learning"
+  ],
+  "results": [
+    "Faster convergence speed",
+    "Enhanced FL model utility with lower payment costs"
+  ],
+  "paper_id": "63cdfab690e50fcafd106f49",
+  "title": "Trade Privacy for Utility: A Learning-Based Privacy Pricing Game in\n  Federated Learning",
+  "abstract": "  To prevent implicit privacy disclosure in sharing gradients among data owners (DOs) under federated learning (FL), differential privacy (DP) and its variants have become a common practice to offer formal privacy guarantees with low overheads. However, individual DOs generally tend to inject larger DP noises for stronger privacy provisions (which entails severe degradation of model utility), while the curator (i.e., aggregation server) aims to minimize the overall effect of added random noises for satisfactory model performance. To address this conflicting goal, we propose a novel dynamic privacy pricing (DyPP) game which allows DOs to sell individual privacy (by lowering the scale of locally added DP noise) for differentiated economic compensations (offered by the curator), thereby enhancing FL model utility. Considering multi-dimensional information asymmetry among players (e.g., DO's data distribution and privacy preference, and curator's maximum affordable payment) as well as their varying private information in distinct FL tasks, it is hard to directly attain the Nash equilibrium of the mixed-strategy DyPP game. Alternatively, we devise a fast reinforcement learning algorithm with two layers to quickly learn the optimal mixed noise-saving strategy of DOs and the optimal mixed pricing strategy of the curator without prior knowledge of players' private information. Experiments on real datasets validate the feasibility and effectiveness of the proposed scheme in terms of faster convergence speed and enhanced FL model utility with lower payment costs. "
+}

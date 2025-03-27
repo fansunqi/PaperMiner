@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph neural networks",
+    "Node classification",
+    "Semi-supervised node classification"
+  ],
+  "datasets": [
+    "Homophilous and heterophilous benchmarks"
+  ],
+  "methods": [
+    "Neighborhood Homophily metric",
+    "Neighborhood Homophily-Guided Graph Convolutional Network (NHGCN)"
+  ],
+  "results": [
+    "State-of-the-art overall performance on semi-supervised node classification"
+  ],
+  "paper_id": "63d340e790e50fcafd910674",
+  "title": "Neighborhood Homophily-Guided Graph Convolutional Network",
+  "abstract": "  Graph neural networks (GNNs) have achieved remarkable advances in graph-oriented tasks. However, many real-world graphs contain heterophily or low homophily, challenging the homophily assumption of classical GNNs and resulting in low performance. Although many studies have emerged to improve the universality of GNNs, they rarely consider the label reuse and the correlation of their proposed metrics and models. In this paper, we first design a new metric, named Neighborhood Homophily (\\textit{NH}), to measure the label complexity or purity in the neighborhood of nodes. Furthermore, we incorporate this metric into the classical graph convolutional network (GCN) architecture and propose \\textbf{N}eighborhood \\textbf{H}omophily-\\textbf{G}uided \\textbf{G}raph \\textbf{C}onvolutional \\textbf{N}etwork (\\textbf{NHGCN}). In this framework, nodes are grouped by estimated \\textit{NH} values to achieve intra-group weight sharing during message propagation and aggregation. Then the generated node predictions are used to estimate and update new \\textit{NH} values. The two processes of metric estimation and model inference are alternately optimized to achieve better node classification. Extensive experiments on both homophilous and heterophilous benchmarks demonstrate that \\textbf{NHGCN} achieves state-of-the-art overall performance on semi-supervised node classification for the universality problem. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computer Vision"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ParCNetV2",
+    "oversized convolutions",
+    "bifurcate gate units",
+    "uniform local-global convolution block"
+  ],
+  "results": [
+    "superiority over other convolutional neural networks and hybrid models"
+  ],
+  "paper_id": "6373035b90e50fcafd09ff20",
+  "title": "ParCNetV2: Oversized Kernel with Enhanced Attention",
+  "abstract": "  Transformers have shown great potential in various computer vision tasks. By borrowing design concepts from transformers, many studies revolutionized CNNs and showed remarkable results. This paper falls in this line of studies. Specifically, we propose a new convolutional neural network, ParCNetV2, that extends position-aware circular convolution (ParCNet) with oversized convolutions and bifurcate gate units to enhance attention. The oversized convolution employs a kernel with twice the input size to model long-range dependencies through a global receptive field. Simultaneously, it achieves implicit positional encoding by removing the shift-invariant property from convolution kernels, i.e., the effective kernels at different spatial locations are different when the kernel size is twice as large as the input size. The bifurcate gate unit implements an attention mechanism similar to self-attention in transformers. It is applied through element-wise multiplication of the two branches, one serves as feature transformation while the other serves as attention weights. Additionally, we introduce a uniform local-global convolution block to unify the design of the early and late stage convolution blocks. Extensive experiments demonstrate the superiority of our method over other convolutional neural networks and hybrid models that combine CNNs and transformers. Code will be released. "
+}

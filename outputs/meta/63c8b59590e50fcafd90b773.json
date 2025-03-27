@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Position prediction using disturbance observer for planar pushing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Disturbance observer design",
+    "Recursive least-square algorithm",
+    "Force plan"
+  ],
+  "results": [
+    "Improved performance in reducing the prediction error compared to a simple correction algorithm"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b773",
+  "title": "Position prediction using disturbance observer for planar pushing",
+  "abstract": "  The position and the orientation of a rigid body object pushed by a robot on a planar surface are extremely difficult to predict. In this paper, the prediction problem is formulated as a disturbance observer design problem. The disturbance observer provides accurate estimation of the total sum of model errors and external disturbances acting on the object. From the estimation results, it is revealed that there is a strong linear relationship between the applied force or torque and the estimated disturbances. The proposed prediction algorithm has two phases: the identification & the prediction. During the identification phase, the linear relationship is identified from the observer output using a recursive least-square algorithm. In the prediction phase, the identified linear relationship is used with a force plan, which would be provided by a mission planner, to predict the position and the orientation of an object. The algorithm is tested for six different push experimental data available from the MIT MCube Lab. The proposed algorithm shows improved performance in reducing the prediction error compared to a simple correction algorithm. "
+}

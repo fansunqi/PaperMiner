@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/wjtan99/BERT_Anomaly_Video_Classification"
+  ],
+  "tasks": [
+    "Weakly Supervised Video Anomaly Detection"
+  ],
+  "datasets": [
+    "XD-Violence"
+  ],
+  "methods": [
+    "BERT",
+    "LSTM",
+    "CNN",
+    "Multiple Instance Learning (MIL)"
+  ],
+  "results": [
+    "mean average precision (mAP) on XD-Violence improved from 78.84% to 82.10%"
+  ],
+  "paper_id": "6348d36a90e50fcafd54639b",
+  "title": "Overlooked Video Classification in Weakly Supervised Video Anomaly\n  Detection",
+  "abstract": "  Current weakly supervised video anomaly detection algorithms mostly use multiple instance learning (MIL) or their varieties. Almost all recent approaches focus on how to select the correct snippets for training to improve the performance. They overlook or do not realize the power of video classification in boosting the performance of anomaly detection. In this paper, we study explicitly the power of video classification supervision using a BERT or LSTM. With this BERT or LSTM, CNN features of all snippets of a video can be aggregated into a single feature which can be used for video classification. This simple yet powerful video classification supervision, combined into the MIL framework, brings extraordinary performance improvement on all three major video anomaly detection datasets. Particularly it improves the mean average precision (mAP) on the XD-Violence from SOTA 78.84\\% to new 82.10\\%. The source code is available at https://github.com/wjtan99/BERT_Anomaly_Video_Classification. "
+}

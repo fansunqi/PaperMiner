@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/ricupa/MTML-learn-how-to-adapt-to-unseen-tasks"
+  ],
+  "tasks": [
+    "Multi-Task Learning",
+    "Meta Learning",
+    "Heterogeneous Tasks"
+  ],
+  "datasets": [
+    "NYU-v2",
+    "taskonomy"
+  ],
+  "methods": [
+    "Multi-Task Meta Learning (MTML)"
+  ],
+  "results": [
+    "State-of-the-art results for three out of four tasks on NYU-v2",
+    "Effective in detecting missing classes in taskonomy"
+  ],
+  "paper_id": "6348d36b90e50fcafd5466e8",
+  "title": "Multi-Task Meta Learning: learn how to adapt to unseen tasks",
+  "abstract": "  This work proposes Multi-task Meta Learning (MTML), integrating two learning paradigms Multi-Task Learning (MTL) and meta learning, to bring together the best of both worlds. In particular, it focuses simultaneous learning of multiple tasks, an element of MTL and promptly adapting to new tasks, a quality of meta learning. It is important to highlight that we focus on heterogeneous tasks, which are of distinct kind, in contrast to typically considered homogeneous tasks (e.g., if all tasks are classification or if all tasks are regression tasks). The fundamental idea is to train a multi-task model, such that when an unseen task is introduced, it can learn in fewer steps whilst offering a performance at least as good as conventional single task learning on the new task or inclusion within the MTL. By conducting various experiments, we demonstrate this paradigm on two datasets and four tasks: NYU-v2 and the taskonomy dataset for which we perform semantic segmentation, depth estimation, surface normal estimation, and edge detection. MTML achieves state-of-the-art results for three out of four tasks for the NYU-v2 dataset and two out of four for the taskonomy dataset. In the taskonomy dataset, it was discovered that many pseudo-labeled segmentation masks lacked classes that were expected to be present in the ground truth; however, our MTML approach was found to be effective in detecting these missing classes, delivering good qualitative results. While, quantitatively its performance was affected due to the presence of incorrect ground truth labels. The the source code for reproducibility can be found at https://github.com/ricupa/MTML-learn-how-to-adapt-to-unseen-tasks. "
+}

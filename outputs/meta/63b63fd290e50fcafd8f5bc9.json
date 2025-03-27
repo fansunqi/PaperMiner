@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/burchim/AVEC"
+  ],
+  "tasks": [
+    "Robust Speech Recognition"
+  ],
+  "datasets": [
+    "Lip Reading Sentences 2 (LRS2)",
+    "Lip Reading Sentences 3 (LRS3)"
+  ],
+  "methods": [
+    "Efficient Conformer",
+    "ResNet-18 visual front-end",
+    "patch attention",
+    "Inter CTC residual modules"
+  ],
+  "results": [
+    "WER of 2.3% on LRS2",
+    "WER of 1.8% on LRS3",
+    "4 times less training steps"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5bc9",
+  "title": "Audio-Visual Efficient Conformer for Robust Speech Recognition",
+  "abstract": "  End-to-end Automatic Speech Recognition (ASR) systems based on neural networks have seen large improvements in recent years. The availability of large scale hand-labeled datasets and sufficient computing resources made it possible to train powerful deep neural networks, reaching very low Word Error Rate (WER) on academic benchmarks. However, despite impressive performance on clean audio samples, a drop of performance is often observed on noisy speech. In this work, we propose to improve the noise robustness of the recently proposed Efficient Conformer Connectionist Temporal Classification (CTC)-based architecture by processing both audio and visual modalities. We improve previous lip reading methods using an Efficient Conformer back-end on top of a ResNet-18 visual front-end and by adding intermediate CTC losses between blocks. We condition intermediate block features on early predictions using Inter CTC residual modules to relax the conditional independence assumption of CTC-based models. We also replace the Efficient Conformer grouped attention by a more efficient and simpler attention mechanism that we call patch attention. We experiment with publicly available Lip Reading Sentences 2 (LRS2) and Lip Reading Sentences 3 (LRS3) datasets. Our experiments show that using audio and visual modalities allows to better recognize speech in the presence of environmental noise and significantly accelerate training, reaching lower WER with 4 times less training steps. Our Audio-Visual Efficient Conformer (AVEC) model achieves state-of-the-art performance, reaching WER of 2.3% and 1.8% on LRS2 and LRS3 test sets. Code and pretrained models are available at https://github.com/burchim/AVEC. "
+}

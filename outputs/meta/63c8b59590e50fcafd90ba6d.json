@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Resource-Efficient Inference"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hardware-software codesign approach",
+    "Tailor"
+  ],
+  "results": [
+    "Resource utilization improvement: 34% for BRAMs, 13% for FFs, 16% for LUTs"
+  ],
+  "paper_id": "63c8b59590e50fcafd90ba6d",
+  "title": "Tailor: Altering Skip Connections for Resource-Efficient Inference",
+  "abstract": "  Deep neural networks use skip connections to improve training convergence. However, these skip connections are costly in hardware, requiring extra buffers and increasing on- and off-chip memory utilization and bandwidth requirements. In this paper, we show that skip connections can be optimized for hardware when tackled with a hardware-software codesign approach. We argue that while a network's skip connections are needed for the network to learn, they can later be removed or shortened to provide a more hardware efficient implementation with minimal to no accuracy loss. We introduce Tailor, a codesign tool whose hardware-aware training algorithm gradually removes or shortens a fully trained network's skip connections to lower their hardware cost. The optimized hardware designs improve resource utilization by up to 34% for BRAMs, 13% for FFs, and 16% for LUTs. "
+}

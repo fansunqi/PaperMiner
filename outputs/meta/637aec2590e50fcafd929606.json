@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Environmental sensor placement",
+    "Monitoring weather conditions",
+    "Climate change impact assessment"
+  ],
+  "datasets": [
+    "Simulated surface air temperature anomaly over Antarctica"
+  ],
+  "methods": [
+    "Convolutional Gaussian neural processes (ConvGNP)"
+  ],
+  "results": [
+    "ConvGNP outperforms a non-stationary GP baseline",
+    "Better prediction of performance boost from new observations",
+    "More informative sensor placements"
+  ],
+  "paper_id": "637aec2590e50fcafd929606",
+  "title": "Environmental Sensor Placement with Convolutional Gaussian Neural\n  Processes",
+  "abstract": "  Environmental sensors are crucial for monitoring weather conditions and the impacts of climate change. However, it is challenging to maximise measurement informativeness and place sensors efficiently, particularly in remote regions like Antarctica. Probabilistic machine learning models can evaluate placement informativeness by predicting the uncertainty reduction provided by a new sensor. Gaussian process (GP) models are widely used for this purpose, but they struggle with capturing complex non-stationary behaviour and scaling to large datasets. This paper proposes using a convolutional Gaussian neural process (ConvGNP) to address these issues. A ConvGNP uses neural networks to parameterise a joint Gaussian distribution at arbitrary target locations, enabling flexibility and scalability. Using simulated surface air temperature anomaly over Antarctica as ground truth, the ConvGNP learns spatial and seasonal non-stationarities, outperforming a non-stationary GP baseline. In a simulated sensor placement experiment, the ConvGNP better predicts the performance boost obtained from new observations than GP baselines, leading to more informative sensor placements. We contrast our approach with physics-based sensor placement methods and propose future work towards an operational sensor placement recommendation system. This system could help to realise environmental digital twins that actively direct measurement sampling to improve the digital representation of reality. "
+}

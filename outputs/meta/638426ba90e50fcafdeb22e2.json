@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum optimization algorithms",
+    "Combinatorial optimization problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Unbalanced penalization function"
+  ],
+  "results": [
+    "Reduced number of resources compared to the slack variables approach"
+  ],
+  "paper_id": "638426ba90e50fcafdeb22e2",
+  "title": "Unbalanced penalization: A new approach to encode inequality constraints\n  of combinatorial problems for quantum optimization algorithms",
+  "abstract": "  Solving combinatorial optimization problems of the kind that can be codified by quadratic unconstrained binary optimization (QUBO) is a promising application of quantum computation. Some problems of this class suitable for practical applications such as the traveling salesman problem (TSP), the bin packing problem (BPP), or the knapsack problem (KP) have inequality constraints that require a particular cost function encoding. The common approach is the use of slack variables to represent the inequality constraints in the cost function. However, the use of slack variables considerably increases the number of qubits and operations required to solve these problems using quantum devices. In this work, we present an alternative method that does not require extra slack variables and consists of using an unbalanced penalization function to represent the inequality constraints in the QUBO. This function is characterized by larger penalization when the inequality constraint is not achieved than when it is. We tested our approach for the TSP, the BPP, and the KP. For all of them, we are able to encode the optimal solution of the original optimization problem in the vicinity of the ground state cost Hamiltonian. This new approach can be used to solve combinatorial problems with inequality constraints with a reduced number of resources compared to the slack variables approach using quantum annealing or variational quantum algorithms. "
+}

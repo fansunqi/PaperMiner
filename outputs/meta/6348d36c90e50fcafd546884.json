@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Convergence rate of Riemannian Hamiltonian Monte Carlo"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Discretized Riemannian Hamiltonian Monte Carlo",
+    "Implicit midpoint method (IMM)",
+    "Generalized Leapfrog method (LM)"
+  ],
+  "results": [
+    "Mixing time of ~O(mn^3) to achieve epsilon total variation distance",
+    "Empirical results show efficient sampling of ill-conditioned, non-smooth and constrained distributions in high dimensions"
+  ],
+  "paper_id": "6348d36c90e50fcafd546884",
+  "title": "Condition-number-independent convergence rate of Riemannian Hamiltonian\n  Monte Carlo with numerical integrators",
+  "abstract": "  We study the convergence rate of discretized Riemannian Hamiltonian Monte Carlo on sampling from distributions in the form of $e^{-f(x)}$ on a convex body $\\mathcal{M}\\subset\\mathbb{R}^{n}$. We show that for distributions in the form of $e^{-\\alpha^{\\top}x}$ on a polytope with $m$ constraints, the convergence rate of a family of commonly-used integrators is independent of $\\left\\Vert \\alpha\\right\\Vert _{2}$ and the geometry of the polytope. In particular, the implicit midpoint method (IMM) and the generalized Leapfrog method (LM) have a mixing time of $\\widetilde{O}\\left(mn^{3}\\right)$ to achieve $\\epsilon$ total variation distance to the target distribution. These guarantees are based on a general bound on the convergence rate for densities of the form $e^{-f(x)}$ in terms of parameters of the manifold and the integrator. Our theoretical guarantee complements the empirical results of [KLSV22], which shows that RHMC with IMM can sample ill-conditioned, non-smooth and constrained distributions in very high dimension efficiently in practice. "
+}

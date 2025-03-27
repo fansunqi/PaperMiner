@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Denoising of PPG Signals"
+  ],
+  "datasets": [
+    "Beth Israel Deaconess Medical Center (BIDMC)"
+  ],
+  "methods": [
+    "Deep Learning",
+    "Fast Wavelet Transform",
+    "Feedforward Neural Network (FFNN)"
+  ],
+  "results": [
+    "Effective denoising of corrupted PPG and video-PPG signal"
+  ],
+  "paper_id": "63c8b59490e50fcafd90b53e",
+  "title": "A Deep Learning & Fast Wavelet Transform-based Hybrid Approach for\n  Denoising of PPG Signals",
+  "abstract": "  This letter presents a novel hybrid method that leverages deep learning to exploit the multi-resolution analysis capability of the wavelets, in order to denoise a photoplethysmography (PPG) signal. Under the proposed method, a noisy PPG sequence of length N is first decomposed into L detailed coefficients using the fast wavelet transform (FWT). Then, the clean PPG sequence is reconstructed as follows. A custom feedforward neural network (FFNN) provides the binary weights for each of the wavelet sub-signals outputted by the inverse-FWT block. This way, all those sub-signals which correspond to noise or artefacts are discarded during reconstruction. The FFNN is trained on the Beth Israel Deaconess Medical Center (BIDMC) dataset under the supervised learning framework, whereby we compute the mean squared-error (MSE) between the denoised sequence and the reference clean PPG signal, and compute the gradient of the MSE for the back-propagation. Numerical results show that the proposed method effectively denoises the corrupted PPG and video-PPG signal. "
+}

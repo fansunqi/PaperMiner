@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Annealing",
+    "Quantum Alternating Operator Ansatz (QAOA)",
+    "Combinatorial optimization problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Quantum Annealing",
+    "Quantum Alternating Operator Ansatz (QAOA)",
+    "Classical simulated annealing",
+    "Digital dynamical decoupling"
+  ],
+  "results": [
+    "QA outperforms QAOA on all problem instances",
+    "Dynamical decoupling enables 2-round QAOA to marginally outperform 1-round QAOA"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e6c7",
+  "title": "Quantum Annealing vs. QAOA: 127 Qubit Higher-Order Ising Problems on\n  NISQ Computers",
+  "abstract": "  Quantum annealing (QA) and Quantum Alternating Operator Ansatz (QAOA) are both heuristic quantum algorithms intended for sampling optimal solutions of combinatorial optimization problems. In this article we implement a rigorous direct comparison between QA on D-Wave hardware and QAOA on IBMQ hardware. These two quantum algorithms are also compared against classical simulated annealing. The studied problems are instances of a class of Ising models, with variable assignments of $+1$ or $-1$, that contain cubic $ZZZ$ interactions (higher order terms) and match both the native connectivity of the Pegasus topology D-Wave chips and the heavy hexagonal lattice of the IBMQ chips. The novel QAOA implementation on the heavy hexagonal lattice has a CNOT depth of $6$ per round and allows for usage of an entire heavy hexagonal lattice. Experimentally, QAOA is executed on an ensemble of randomly generated Ising instances with a grid search over $1$ and $2$ round angles using all 127 programmable superconducting transmon qubits of ibm_washington. The error suppression technique digital dynamical decoupling is also tested on all QAOA circuits. QA is executed on the same Ising instances with the programmable superconducting flux qubit devices D-Wave Advantage_system4.1 and Advantage_system6.1 using modified annealing schedules with pauses. We find that QA outperforms QAOA on all problem instances. We also find that dynamical decoupling enables 2-round QAOA to marginally outperform 1-round QAOA, which is not the case without dynamical decoupling. "
+}

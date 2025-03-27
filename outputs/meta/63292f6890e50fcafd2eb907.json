@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Pulmonary airway segmentation"
+  ],
+  "datasets": [
+    "EXACT'09",
+    "BAS"
+  ],
+  "methods": [
+    "Connectivity-Aware Surrogate (CAS) module",
+    "Local-Sensitive Distance (LSD) module"
+  ],
+  "results": [
+    "Branch detection rate: 82.1%",
+    "Length detection rate: 79.6%",
+    "Branch detection rate: 96.5%",
+    "Length detection rate: 91.5%"
+  ],
+  "paper_id": "63292f6890e50fcafd2eb907",
+  "title": "Towards Connectivity-Aware Pulmonary Airway Segmentation",
+  "abstract": "  Detailed pulmonary airway segmentation is a clinically important task for endobronchial intervention and treatment of peripheral pulmonary lesions. Convolutional Neural Networks (CNNs) are promising for automated analysis of medical imaging, which however performs poorly on airway segmentation. Specifically, breakage of small bronchi distals cannot be effectively eliminated in the prediction results of CNNs, which is detrimental to use as a reference for bronchoscopic-assisted surgery. In this paper, we proposed a connectivity-aware segmentation framework to improve the performance of airway segmentation. A Connectivity-Aware Surrogate (CAS) module is first proposed to balance the training progress within-class distribution. Furthermore, a Local-Sensitive Distance (LSD) module is designed to identify the breakage and minimize the variation of the distance map between the prediction and ground-truth. The proposed method is validated with the publically available reference airway segmentation datasets. The detected rate of branch and length on public EXACT'09 and BAS datasets are 82.1%/79.6% and 96.5%/91.5% respectively, demonstrating the effectiveness of the method in terms of improving the connectedness of the segmentation performance. "
+}

@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "https://github.com/vortexlab-uclouvain/flups"
+  ],
+  "tasks": [
+    "Massively parallel Fourier transforms",
+    "Computational fluid dynamics",
+    "Unbounded Poisson problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributed Fourier transform",
+    "Cell-centered data layout",
+    "Node-centered data layout",
+    "All-to-all communication",
+    "Non-blocking implementations",
+    "Manual packing",
+    "MPI_Datatype"
+  ],
+  "results": [
+    "Fully production-ready and performant distributed FFT library",
+    "Supports all possible types of FFTs",
+    "Flexible in the data-layout"
+  ],
+  "paper_id": "637454d590e50fcafdfc61a2",
+  "title": "FLUPS -- a flexible and performant massively parallel Fourier transform\n  library",
+  "abstract": "  Massively parallel Fourier transforms are widely used in computational sciences, and specifically in computational fluid dynamics which involves unbounded Poisson problems. In practice the latter is usually the most time-consuming operation due to its inescapable all-to-all communication pattern. The original flups library tackles that issue with an implementation of the distributed Fourier transform tailor-made for successive resolutions of unbounded Poisson problems. However the proposed implementation lacks of flexibility as it only supports cell-centered data layout and features a plain communication strategy. This work extends the library along two directions. First, flups implementation is generalized to support a node-centered data layout. Second, three distinct approaches are provided to handle the communications: one all-to-all, and two non-blocking implementations relying on manual packing and MPI_Datatype to communicate over the network. The proposed software is validated against analytical solutions for unbounded, semi-unbounded, and periodic domains. The performance of the approaches is then compared against accFFT, another distributed FFT implementation, using a periodic case. Finally the performance metrics of each implementation are analyzed and detailed on various top-tier European facilities up to 49,152 cores. This work brings flups up to a fully production-ready and performant distributed FFT library, featuring all the possible types of FFTs and with flexibility in the data-layout. The code is available under a BSD-3 license at github.com/vortexlab-uclouvain/flups. "
+}

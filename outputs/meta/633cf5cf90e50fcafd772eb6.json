@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Bandits with Time-Varying Feedback Graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Online mirror descent framework",
+    "Optimistic biased loss estimators",
+    "Pessimistic loss estimators"
+  ],
+  "results": [
+    "Optimal regret bound for general strongly observable graphs",
+    "Improved expected regret bound for weakly observable graphs"
+  ],
+  "paper_id": "633cf5cf90e50fcafd772eb6",
+  "title": "Improved High-Probability Regret for Adversarial Bandits with\n  Time-Varying Feedback Graphs",
+  "abstract": "  We study high-probability regret bounds for adversarial $K$-armed bandits with time-varying feedback graphs over $T$ rounds. For general strongly observable graphs, we develop an algorithm that achieves the optimal regret $\\widetilde{\\mathcal{O}}((\\sum_{t=1}^T\\alpha_t)^{1/2}+\\max_{t\\in[T]}\\alpha_t)$ with high probability, where $\\alpha_t$ is the independence number of the feedback graph at round $t$. Compared to the best existing result [Neu, 2015] which only considers graphs with self-loops for all nodes, our result not only holds more generally, but importantly also removes any $\\text{poly}(K)$ dependence that can be prohibitively large for applications such as contextual bandits. Furthermore, we also develop the first algorithm that achieves the optimal high-probability regret bound for weakly observable graphs, which even improves the best expected regret bound of [Alon et al., 2015] by removing the $\\mathcal{O}(\\sqrt{KT})$ term with a refined analysis. Our algorithms are based on the online mirror descent framework, but importantly with an innovative combination of several techniques. Notably, while earlier works use optimistic biased loss estimators for achieving high-probability bounds, we find it important to use a pessimistic one for nodes without self-loop in a strongly observable graph. "
+}

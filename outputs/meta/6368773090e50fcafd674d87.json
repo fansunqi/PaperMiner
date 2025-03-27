@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Audio research",
+    "Transfer learning in audio domain"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Integrated parameter-efficient tuning (IPET)",
+    "Embedding prompt",
+    "Adapter"
+  ],
+  "results": [
+    "State-of-the-art performances through fine-tuning",
+    "Remarkable performance in four downstream tasks",
+    "Less trainable parameters compared to fine-tuning"
+  ],
+  "paper_id": "6368773090e50fcafd674d87",
+  "title": "Integrated Parameter-Efficient Tuning for General-Purpose Audio Models",
+  "abstract": "  The advent of hyper-scale and general-purpose pre-trained models is shifting the paradigm of building task-specific models for target tasks. In the field of audio research, task-agnostic pre-trained models with high transferability and adaptability have achieved state-of-the-art performances through fine-tuning for downstream tasks. Nevertheless, re-training all the parameters of these massive models entails an enormous amount of time and cost, along with a huge carbon footprint. To overcome these limitations, the present study explores and applies efficient transfer learning methods in the audio domain. We also propose an integrated parameter-efficient tuning (IPET) framework by aggregating the embedding prompt (a prompt-based learning approach), and the adapter (an effective transfer learning method). We demonstrate the efficacy of the proposed framework using two backbone pre-trained audio models with different characteristics: the audio spectrogram transformer and wav2vec 2.0. The proposed IPET framework exhibits remarkable performance compared to fine-tuning method with fewer trainable parameters in four downstream tasks: sound event classification, music genre classification, keyword spotting, and speaker verification. Furthermore, the authors identify and analyze the shortcomings of the IPET framework, providing lessons and research directions for parameter efficient tuning in the audio domain. "
+}

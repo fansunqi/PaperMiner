@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding Nash equilibria"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Learned best-response function",
+    "Ensemble of candidate best responses"
+  ],
+  "results": [
+    "Outperform prior methods"
+  ],
+  "paper_id": "658255db939a5f4082c069db",
+  "title": "Finding Nash equilibria by minimizing approximate exploitability with\n  learned best responses",
+  "abstract": "There has been substantial progress on finding game-theoretic equilibria.\nMost of that work has focused on games with finite, discrete action spaces.\nHowever, many games involving space, time, money, and other fine-grained\nquantities have continuous action spaces (or are best modeled as such). We\nstudy the problem of finding an approximate Nash equilibrium of games with\ncontinuous action sets. The standard measure of closeness to Nash equilibrium\nis exploitability, which measures how much players can benefit from\nunilaterally changing their strategy. We propose two new methods that minimize\nan approximation of the exploitability with respect to the strategy profile.\nThe first method uses a learned best-response function, which takes the current\nstrategy profile as input and returns candidate best responses for each player.\nThe strategy profile and best-response functions are trained simultaneously,\nwith the former trying to minimize exploitability while the latter tries to\nmaximize it. The second method maintains an ensemble of candidate best\nresponses for each player. In each iteration, the best-performing elements of\neach ensemble are used to update the current strategy profile. The strategy\nprofile and best-response ensembles are simultaneously trained to minimize and\nmaximize the approximate exploitability, respectively. We evaluate our methods\non various continuous games, showing that they outperform prior methods."
+}

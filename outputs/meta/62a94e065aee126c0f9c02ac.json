@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://www.dealii.org/"
+  ],
+  "tasks": [
+    "hp-adaptive finite element method implementation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "multi-stage algorithm for DoF enumeration",
+    "weighted load balancing",
+    "variable size data transfer"
+  ],
+  "results": [
+    "MPI processes scalability up to 16,384"
+  ],
+  "paper_id": "62a94e065aee126c0f9c02ac",
+  "title": "Algorithms for Parallel Generic $hp$-adaptive Finite Element Software",
+  "abstract": "  The $hp$-adaptive finite element method (FEM) - where one independently chooses the mesh size ($h$) and polynomial degree ($p$) to be used on each cell - has long been known to have better theoretical convergence properties than either $h$- or $p$-adaptive methods alone. However, it is not widely used, owing at least in parts to the difficulty of the underlying algorithms and the lack of widely usable implementations. This is particularly true when used with continuous finite elements.   Herein, we discuss algorithms that are necessary for a comprehensive and generic implementation of $hp$-adaptive finite element methods on distributed-memory, parallel machines. In particular, we will present a multi-stage algorithm for the unique enumeration of degrees of freedom (DoFs) suitable for continuous finite element spaces, describe considerations for weighted load balancing, and discuss the transfer of variable size data between processes. We illustrate the performance of our algorithms with numerical examples, and demonstrate that they scale reasonably up to at least 16,384 Message Passing Interface (MPI) processes.   We provide a reference implementation of our algorithms as part of the open-source library deal.II. "
+}

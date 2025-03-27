@@ -80,7 +80,8 @@ def extract_paper_info(file_path):
         """
     
         response = client.chat.completions.create(
-            model="glm-4-long",  
+            # model="glm-4-long",
+            model="glm-4-flash",  
             messages=[
                 {"role": "user", "content": message_content}
             ],
@@ -116,6 +117,11 @@ def extract_paper_info(file_path):
                 "results": ["None"],
                 "raw_response": content
             }
+        
+        # 删除文件  
+        _ = client.files.delete(
+            file_id=file_object.id        #支持retrieval、batch、fine-tune、file-extract文件
+        )
             
         return result
     except Exception as e:
@@ -133,25 +139,36 @@ def extract_paper_info(file_path):
 def main():
     # 读取论文数据
     pdf_files = os.listdir(pdf_base_dir)
-    pdf_files = pdf_files[:10]
+    # pdf_files = pdf_files[:10]
     print(f"Total number of papers: {len(pdf_files)}")
 
     # 创建输出目录
     output_dir = "outputs/pdf"
-    os.makedirs(output_dir, exist_ok=True)
+    # os.makedirs(output_dir, exist_ok=True)
 
     # 记录已处理的论文ID
-    processed_files_record = os.path.join(output_dir, "processed_files.txt")
-    processed_files = set()
+    # processed_files_record = os.path.join(output_dir, "processed_files.txt")
+    # processed_files = set()
 
     # 如果存在处理记录，加载它
     # if os.path.exists(processed_files_record):
     #     with open(processed_files_record, "r") as f:
     #         processed_files = set(line.strip() for line in f)
     
+    # 记录已处理的论文ID
+    processed_files = set()
+
+    # 遍历 output_dir 中的文件，提取已处理的论文 ID
+    if os.path.exists(output_dir):
+        for filename in os.listdir(output_dir):
+            if filename.endswith(".json") and filename != "all_results.json":
+                paper_id = filename[:-5]  # 去掉 ".json" 后缀
+                processed_files.add(paper_id)
+    
     for pdf_file in tqdm(pdf_files, desc="Extracting paper information"):
         # 跳过已处理的论文
         if pdf_file in processed_files:
+            print("Skipping paper", pdf_file)
             continue
         
         pdf_path = os.path.join(pdf_base_dir, pdf_file)
@@ -173,14 +190,15 @@ def main():
             json.dump(info, f, indent=2)
             
         # 记录该论文已处理
-        with open(processed_files_record, "a") as f:
-            f.write(f"{pdf_file}\n")
+        # with open(processed_files_record, "a") as f:
+        #     f.write(f"{pdf_file}\n")
+        print("Processed paper", pdf_file)
             
         # 防止API调用过快
         time.sleep(0.5)
     
     # 汇总所有结果
-    aggregate_results(output_dir)
+    # aggregate_results(output_dir)
 
 def aggregate_results(output_dir):
     """汇总所有提取结果到一个文件中"""

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Personalized Federated Learning"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "CIFAR100"
+  ],
+  "methods": [
+    "Multi-branch architecture",
+    "Weighted averaging"
+  ],
+  "results": [
+    "pFedMB performs better than the state-of-the-art PFL methods"
+  ],
+  "paper_id": "637454dc90e50fcafdfc67fa",
+  "title": "Personalized Federated Learning with Multi-branch Architecture",
+  "abstract": "  Federated learning (FL) is a decentralized machine learning technique that enables multiple clients to collaboratively train models without requiring clients to reveal their raw data to each other. Although traditional FL trains a single global model with average performance among clients, statistical data heterogeneity across clients has resulted in the development of personalized FL (PFL), which trains personalized models with good performance on each client's data. A key challenge with PFL is how to facilitate clients with similar data to collaborate more in a situation where each client has data from complex distribution and cannot determine one another's distribution. In this paper, we propose a new PFL method (pFedMB) using multi-branch architecture, which achieves personalization by splitting each layer of a neural network into multiple branches and assigning client-specific weights to each branch. We also design an aggregation method to improve the communication efficiency and the model performance, with which each branch is globally updated with weighted averaging by client-specific weights assigned to the branch. pFedMB is simple but effective in facilitating each client to share knowledge with similar clients by adjusting the weights assigned to each branch. We experimentally show that pFedMB performs better than the state-of-the-art PFL methods using the CIFAR10 and CIFAR100 datasets. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Explainable and Calibrated Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nadaraya-Watson (NW) prediction head",
+    "Clustering for distilled support set",
+    "Support influence function"
+  ],
+  "results": [
+    "Better calibration with comparable accuracy",
+    "Improved inference-time efficiency"
+  ],
+  "paper_id": "6391560290e50fcafd9c4fea",
+  "title": "A Flexible Nadaraya-Watson Head Can Offer Explainable and Calibrated\n  Classification",
+  "abstract": "  In this paper, we empirically analyze a simple, non-learnable, and nonparametric Nadaraya-Watson (NW) prediction head that can be used with any neural network architecture. In the NW head, the prediction is a weighted average of labels from a support set. The weights are computed from distances between the query feature and support features. This is in contrast to the dominant approach of using a learnable classification head (e.g., a fully-connected layer) on the features, which can be challenging to interpret and can yield poorly calibrated predictions. Our empirical results on an array of computer vision tasks demonstrate that the NW head can yield better calibration with comparable accuracy compared to its parametric counterpart, particularly in data-limited settings. To further increase inference-time efficiency, we propose a simple approach that involves a clustering step run on the training set to create a relatively small distilled support set. Furthermore, we explore two means of interpretability/explainability that fall naturally from the NW head. The first is the label weights, and the second is our novel concept of the ``support influence function,'' which is an easy-to-compute metric that quantifies the influence of a support element on the prediction for a given query. As we demonstrate in our experiments, the influence function can allow the user to debug a trained model. We believe that the NW head is a flexible, interpretable, and highly useful building block that can be used in a range of applications. "
+}

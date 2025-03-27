@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning for Non-i.i.d. Data"
+  ],
+  "datasets": [
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Importance Sampling (IS) for local training",
+    "Water-filling method for calculating IS weights",
+    "ISFL algorithms"
+  ],
+  "results": [
+    "Better performance, sampling efficiency, and explainability on non-i.i.d. data",
+    "Theoretical compatibility with neural network models",
+    "Easy migration into other FL frameworks"
+  ],
+  "paper_id": "633e476490e50fcafde591e1",
+  "title": "ISFL: Federated Learning for Non-i.i.d. Data with Local Importance\n  Sampling",
+  "abstract": "  As a promising learning paradigm integrating computation and communication, federated learning (FL) proceeds the local training and the periodic sharing from distributed clients. Due to the non-i.i.d. data distribution on clients, FL model suffers from the gradient diversity, poor performance, bad convergence, etc. In this work, we aim to tackle this key issue by adopting importance sampling (IS) for local training. We propose importance sampling federated learning (ISFL), an explicit framework with theoretical guarantees. Firstly, we derive the convergence theorem of ISFL to involve the effects of local importance sampling. Then, we formulate the problem of selecting optimal IS weights and obtain the theoretical solutions. We also employ a water-filling method to calculate the IS weights and develop the ISFL algorithms. The experimental results on CIFAR-10 fit the proposed theorems well and verify that ISFL reaps better performance, sampling efficiency, as well as explainability on non-i.i.d. data. To the best of our knowledge, ISFL is the first non-i.i.d. FL solution from the local sampling aspect which exhibits theoretical compatibility with neural network models. Furthermore, as a local sampling approach, ISFL can be easily migrated into other emerging FL frameworks. "
+}

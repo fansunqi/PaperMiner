@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "User activity detection",
+    "Channel estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HyGAMP-DCS",
+    "EM-HyGAMP-DCS"
+  ],
+  "results": [
+    "Improved user activity detection accuracy",
+    "Reduced channel estimation error"
+  ],
+  "paper_id": "635753cd90e50fcafddddf77",
+  "title": "Message Passing-Based Joint User Activity Detection and Channel\n  Estimation for Temporally-Correlated Massive Access",
+  "abstract": "  This paper studies the user activity detection and channel estimation problem in a temporally-correlated massive access system where a very large number of users communicate with a base station sporadically and each user once activated can transmit with a large probability over multiple consecutive frames. We formulate the problem as a dynamic compressed sensing (DCS) problem to exploit both the sparsity and the temporal correlation of user activity. By leveraging the hybrid generalized approximate message passing (HyGAMP) framework, we design a computationally efficient algorithm, HyGAMP-DCS, to solve this problem. In contrast to only exploit the historical estimations, the proposed algorithm performs bidirectional message passing between the neighboring frames for activity likelihood update to fully exploit the temporally-correlated user activities. Furthermore, we develop an expectation maximization HyGAMP-DCS (EM-HyGAMP-DCS) algorithm to adaptively learn the hyperparameters during the estimation procedure when the system statistics are unknown. In particular, we propose to utilize the analysis tool of state evolution to find the appropriate hyperparameter initialization of EM-HyGAMP-DCS. Simulation results demonstrate that our proposed algorithms can significantly improve the user activity detection accuracy and reduce the channel estimation error. "
+}

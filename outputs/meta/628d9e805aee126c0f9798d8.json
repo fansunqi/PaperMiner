@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Concurrent Multiscale Damage Analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive assembly free impl-exp (AAF-IE) temporal integration scheme",
+    "Adaptive clustering-based domain decomposition strategy"
+  ],
+  "results": [
+    "Balances efficiency and accuracy for fracture simulations",
+    "Quantifies the significance of spatially varying microscopic porosity on macrostructural softening behavior"
+  ],
+  "paper_id": "628d9e805aee126c0f9798d8",
+  "title": "Adaptive Spatiotemporal Dimension Reduction in Concurrent Multiscale\n  Damage Analysis",
+  "abstract": "  Concurrent multiscale damage models are often used to quantify the impacts of manufacturing-induced micro porosity on the damage response of macroscopic metallic components. However, these models are challenged by major numerical issues including mesh dependency, convergence difficulty, and low accuracy in concentration regions. We make two contributions that collectively aim to address these difficulties. Firstly, we develop a novel adaptive assembly free impl-exp (AAF-IE) temporal integration scheme for nonlinear constitutive models. This scheme prevents the convergence issues that arise when implicit algorithms are employed to model softening. Our AAF-IE scheme autonomously adjusts step sizes to capture intricate history dependent deformations. It also dispenses with reassembling the stiffness matrices amid runtime for elasto-plasticity and damage models which, in turn, dramatically reduces memory footprints. Secondly, we propose an adaptive clustering-based domain decomposition strategy to dramatically reduce the spatial degrees of freedom by agglomerating close-by finite element nodes into a limited number of clusters. Our adaptive clustering scheme has static and dynamic stages that are carried out during offline and online analyses, respectively. The adaptive strategy determines the cluster density based on spatial discontinuity and controls adaptive clusters via field estimations. As demonstrated by numerical experiments the proposed adaptive method strikes a good balance between efficiency and accuracy for fracture simulations. In particular, we use our efficient concurrent multiscale model to quantify the significance of spatially varying microscopic porosity on a macrostructural softening behavior. "
+}

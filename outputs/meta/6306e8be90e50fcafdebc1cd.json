@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tuning QUIC-Based Publish-Subscribe Architectures in IoT"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MQTT-over-QUIC",
+    "pure-HTTP/3 publish-subscribe architecture"
+  ],
+  "results": [
+    "Identified tuning considerations",
+    "HTTP/3 more preferable for reliable time-sensitive applications"
+  ],
+  "paper_id": "6306e8be90e50fcafdebc1cd",
+  "title": "An Experimental Investigation of Tuning QUIC-Based Publish-Subscribe\n  Architectures in IoT",
+  "abstract": "  Because of the constrained nature of devices and networks in the Internet of Things (IoT), secure yet lightweight communication protocols are paramount. QUIC is an emerging contender in this arena and it provides several benefits over TCP. Tuning of TCP has been recently studied for IoT and guidelines are provided in RFC 9006. The same is not true of QUIC -- a much newer protocol with a learning curve. The aim of this paper is to provide empirically based insights into parameterization considerations of QUIC for IoT. To this end, we rigorously tested two modes of MQTT-over-QUIC as well as a pure-HTTP/3 publish-subscribe architecture (of our design) under various conditions. A suite of 8 metrics relating to device and network overhead and performance was employed in addition to root cause analysis on a hardware testbed. We identified a number of tuning considerations and concluded that HTTP/3 was more preferable for reliable time-sensitive applications. "
+}

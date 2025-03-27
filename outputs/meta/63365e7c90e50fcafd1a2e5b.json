@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fairness in machine learning",
+    "Calibration error",
+    "Risk prediction models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proportional multicalibration"
+  ],
+  "results": [
+    "Improved fairness criteria",
+    "No cost in terms of classification performance"
+  ],
+  "paper_id": "63365e7c90e50fcafd1a2e5b",
+  "title": "Proportional Multicalibration",
+  "abstract": "  Multicalibration is a desirable fairness criteria that constrains calibration error among flexibly-defined groups in the data while maintaining overall calibration. However, when outcome probabilities are correlated with group membership, multicalibrated models can exhibit a higher percent calibration error among groups with lower base rates than groups with higher base rates. As a result, it remains possible for a decision-maker to learn to trust or distrust model predictions for specific groups. To alleviate this, we propose \\emph{proportional multicalibration}, a criteria that constrains the percent calibration error among groups and within prediction bins. We prove that satisfying proportional multicalibration bounds a model's multicalibration as well its \\emph{differential calibration}, a stronger fairness criteria inspired by the fairness notion of sufficiency. We provide an efficient algorithm for post-processing risk prediction models for proportional multicalibration and evaluate it empirically. We conduct simulation studies and investigate a real-world application of PMC-postprocessing to prediction of emergency department patient admissions. We observe that proportional multicalibration is a promising criteria for controlling simultaneous measures of calibration fairness of a model over intersectional groups with virtually no cost in terms of classification performance. "
+}

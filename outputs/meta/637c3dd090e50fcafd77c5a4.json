@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D shape generation",
+    "image-guided 3D shape generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Denoising Diffusion Probabilistic Models (DDPMs)",
+    "CISP (Contrastive Image-Shape Pre-training)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art in 3D generation quality and diversity",
+    "Preferred by human evaluators over SoTA single-view 3D reconstruction model",
+    "Ablation studies show importance of CISP for learning structural integrity properties"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c5a4",
+  "title": "IC3D: Image-Conditioned 3D Diffusion for Shape Generation",
+  "abstract": "  In the last years, Denoising Diffusion Probabilistic Models (DDPMs) obtained state-of-the-art results in many generative tasks, outperforming GANs and other classes of generative models. In particular, they reached impressive results in various image generation sub-tasks, among which conditional generation tasks such as text-guided image synthesis. Given the success of DDPMs in 2D generation, they have more recently been applied to 3D shape generation, outperforming previous approaches and reaching state-of-the-art results. However, these existing 3D DDPM works make little or no use of guidance, mainly being unconditional or class-conditional. In this work, we present IC3D, an Image-Conditioned 3D Diffusion model that generates 3D shapes by image guidance. To guide our DDPM, we introduce CISP (Contrastive Image-Shape Pre-training), a model jointly embedding images and shapes by contrastive pre-training, inspired by the literature on text-to-image DDPMs. Our generative diffusion model outperforms the state-of-the-art in 3D generation quality and diversity. Furthermore, despite IC3D generative nature, we show that its generated shapes are preferred by human evaluators to a SoTA single-view 3D reconstruction model in terms of quality and coherence to the query image by running a side-by-side human evaluation. Ablation studies show the importance of CISP for learning structural integrity properties, crucial for realistic generation. Such biases yield a regular embedding space and allow for interpolation and conditioning on out-of-distribution images, while also making IC3D capable of generating coherent but diverse completions of occluded views and enabling its adoption in controlled real-life applications. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Gene data compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer-based context modeling",
+    "fixed-length parallel grouping"
+  ],
+  "results": [
+    "29.7% bit rate saving compared to the state-of-the-art method",
+    "significantly faster decoding speed than all existing learning-based gene compression methods"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f3adb",
+  "title": "GeneFormer: Learned Gene Compression using Transformer-based Context\n  Modeling",
+  "abstract": "  With the development of gene sequencing technology, an explosive growth of gene data has been witnessed. And the storage of gene data has become an important issue. Traditional gene data compression methods rely on general software like G-zip, which fails to utilize the interrelation of nucleotide sequence. Recently, many researchers begin to investigate deep learning based gene data compression method. In this paper, we propose a transformer-based gene compression method named GeneFormer. Specifically, we first introduce a modified transformer structure to fully explore the nucleotide sequence dependency. Then, we propose fixed-length parallel grouping to accelerate the decoding speed of our autoregressive model. Experimental results on real-world datasets show that our method saves 29.7% bit rate compared with the state-of-the-art method, and the decoding speed is significantly faster than all existing learning-based gene compression methods. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/Snowdar/asv-subtools/tree/master/doc/papers/conformer.md"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition (ASR)",
+    "Automatic Speaker Verification (ASV)"
+  ],
+  "datasets": [
+    "VoxCeleb",
+    "CN-Celeb"
+  ],
+  "methods": [
+    "Conformer architecture modification",
+    "Length-Scaled Attention (LSA)",
+    "Sharpness-Aware Minimizationis (SAM)",
+    "parameter transferring"
+  ],
+  "results": [
+    "Competitive performance compared with ECAPA-TDNN",
+    "11% relative improvement in EER on test set of VoxCeleb and CN-Celeb"
+  ],
+  "paper_id": "6373035b90e50fcafd09ff62",
+  "title": "Towards A Unified Conformer Structure: from ASR to ASV Task",
+  "abstract": "  Transformer has achieved extraordinary performance in Natural Language Processing and Computer Vision tasks thanks to its powerful self-attention mechanism, and its variant Conformer has become a state-of-the-art architecture in the field of Automatic Speech Recognition (ASR). However, the main-stream architecture for Automatic Speaker Verification (ASV) is convolutional Neural Networks, and there is still much room for research on the Conformer based ASV. In this paper, firstly, we modify the Conformer architecture from ASR to ASV with very minor changes. Length-Scaled Attention (LSA) method and Sharpness-Aware Minimizationis (SAM) are adopted to improve model generalization. Experiments conducted on VoxCeleb and CN-Celeb show that our Conformer based ASV achieves competitive performance compared with the popular ECAPA-TDNN. Secondly, inspired by the transfer learning strategy, ASV Conformer is natural to be initialized from the pretrained ASR model. Via parameter transferring, self-attention mechanism could better focus on the relationship between sequence features, brings about 11% relative improvement in EER on test set of VoxCeleb and CN-Celeb, which reveals the potential of Conformer to unify ASV and ASR task. Finally, we provide a runtime in ASV-Subtools to evaluate its inference speed in production scenario. Our code is released at https://github.com/Snowdar/asv-subtools/tree/master/doc/papers/conformer.md. "
+}

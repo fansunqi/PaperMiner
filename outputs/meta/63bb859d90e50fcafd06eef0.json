@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image captioning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CNN-GRU encoder decode framework"
+  ],
+  "results": [
+    "Outperforms LSTM-A5 model in time complexity and accuracy"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eef0",
+  "title": "An Image captioning algorithm based on the Hybrid Deep Learning\n  Technique (CNN+GRU)",
+  "abstract": "  Image captioning by the encoder-decoder framework has shown tremendous advancement in the last decade where CNN is mainly used as encoder and LSTM is used as a decoder. Despite such an impressive achievement in terms of accuracy in simple images, it lacks in terms of time complexity and space complexity efficiency. In addition to this, in case of complex images with a lot of information and objects, the performance of this CNN-LSTM pair downgraded exponentially due to the lack of semantic understanding of the scenes presented in the images. Thus, to take these issues into consideration, we present CNN-GRU encoder decode framework for caption-to-image reconstructor to handle the semantic context into consideration as well as the time complexity. By taking the hidden states of the decoder into consideration, the input image and its similar semantic representations is reconstructed and reconstruction scores from a semantic reconstructor are used in conjunction with likelihood during model training to assess the quality of the generated caption. As a result, the decoder receives improved semantic information, enhancing the caption production process. During model testing, combining the reconstruction score and the log-likelihood is also feasible to choose the most appropriate caption. The suggested model outperforms the state-of-the-art LSTM-A5 model for picture captioning in terms of time complexity and accuracy. "
+}

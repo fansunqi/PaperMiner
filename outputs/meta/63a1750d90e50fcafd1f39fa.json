@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/ubc-tea/SADM-Longitudinal-Medical-Image-Generation"
+  ],
+  "tasks": [
+    "Longitudinal medical image generation"
+  ],
+  "datasets": [
+    "3D longitudinal medical images"
+  ],
+  "methods": [
+    "Sequence-aware diffusion model (SADM)",
+    "sequence-aware transformer"
+  ],
+  "results": [
+    "Effective compared with baselines and alternative methods"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f39fa",
+  "title": "SADM: Sequence-Aware Diffusion Model for Longitudinal Medical Image\n  Generation",
+  "abstract": "  Human organs constantly undergo anatomical changes due to a complex mix of short-term (e.g., heartbeat) and long-term (e.g., aging) factors. Evidently, prior knowledge of these factors will be beneficial when modeling their future state, i.e., via image generation. However, most of the medical image generation tasks only rely on the input from a single image, thus ignoring the sequential dependency even when longitudinal data is available. Sequence-aware deep generative models, where model input is a sequence of ordered and timestamped images, are still underexplored in the medical imaging domain that is featured by several unique challenges: 1) Sequences with various lengths; 2) Missing data or frame, and 3) High dimensionality. To this end, we propose a sequence-aware diffusion model (SADM) for the generation of longitudinal medical images. Recently, diffusion models have shown promising results in high-fidelity image generation. Our method extends this new technique by introducing a sequence-aware transformer as the conditional module in a diffusion model. The novel design enables learning longitudinal dependency even with missing data during training and allows autoregressive generation of a sequence of images during inference. Our extensive experiments on 3D longitudinal medical images demonstrate the effectiveness of SADM compared with baselines and alternative methods. The code is available at https://github.com/ubc-tea/SADM-Longitudinal-Medical-Image-Generation. "
+}

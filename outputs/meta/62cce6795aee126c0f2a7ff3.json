@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/tahabelkhouja/SRS"
+  ],
+  "tasks": [
+    "Out-of-Distribution Detection in Time-Series Domain"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Seasonal Ratio Scoring (SRS)"
+  ],
+  "results": [
+    "SRS method is well-suited for time-series OOD detection when compared to baseline methods"
+  ],
+  "paper_id": "62cce6795aee126c0f2a7ff3",
+  "title": "Out-of-Distribution Detection in Time-Series Domain: A Novel Seasonal\n  Ratio Scoring Approach",
+  "abstract": "  Safe deployment of time-series classifiers for real-world applications relies on the ability to detect the data which is not generated from the same distribution as training data. This task is referred to as out-of-distribution (OOD) detection. We consider the novel problem of OOD detection for the time-series domain. We discuss the unique challenges posed by time-series data and explain why prior methods from the image domain will perform poorly. Motivated by these challenges, this paper proposes a novel {\\em Seasonal Ratio Scoring (SRS)} approach. SRS consists of three key algorithmic steps. First, each input is decomposed into class-wise semantic component and remainder. Second, this decomposition is employed to estimate the class-wise conditional likelihoods of the input and remainder using deep generative models. The seasonal ratio score is computed from these estimates. Third, a threshold interval is identified from the in-distribution data to detect OOD examples. Experiments on diverse real-world benchmarks demonstrate that the SRS method is well-suited for time-series OOD detection when compared to baseline methods. Open-source code for SRS method is provided at https://github.com/tahabelkhouja/SRS "
+}

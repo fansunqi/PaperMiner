@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Language Modeling"
+  ],
+  "datasets": [
+    "DSTC9 spoken dialogue corpus"
+  ],
+  "methods": [
+    "SUREALM",
+    "embedding retriever",
+    "suffix retrieval"
+  ],
+  "results": [
+    "word perplexity reduction"
+  ],
+  "paper_id": "6369c8cd90e50fcafde87efc",
+  "title": "Suffix Retrieval-Augmented Language Modeling",
+  "abstract": "  Causal language modeling (LM) uses word history to predict the next word. BERT, on the other hand, makes use of bi-directional word information in a sentence to predict words at masked positions. While BERT is effective in sequence encoding, it is non-causal by nature and is not designed for sequence generation. In this paper, we propose a novel language model, SUffix REtrieval-Augmented LM (SUREALM), that simulates a bi-directional contextual effect in an autoregressive manner. SUREALM employs an embedding retriever to search for training sentences in a data store that share similar word history during sequence generation. In particular, the suffix portions of the retrieved sentences mimick the \"future\" context. We evaluated our proposed model on the DSTC9 spoken dialogue corpus and showed promising word perplexity reduction on the validation and test set compared to competitive baselines. "
+}

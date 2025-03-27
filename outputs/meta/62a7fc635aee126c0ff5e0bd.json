@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Embodied Vision Navigation"
+  ],
+  "datasets": [
+    "Habitat"
+  ],
+  "methods": [
+    "Reward UAP",
+    "Trajectory UAP",
+    "Markov Decision Process (MDP)",
+    "disturbed Q function"
+  ],
+  "results": [
+    "Significant drop in performance in PointGoal task",
+    "Potential risks for real-world application"
+  ],
+  "paper_id": "62a7fc635aee126c0ff5e0bd",
+  "title": "Consistent Attack: Universal Adversarial Perturbation on Embodied Vision\n  Navigation",
+  "abstract": "  Embodied agents in vision navigation coupled with deep neural networks have attracted increasing attention. However, deep neural networks have been shown vulnerable to malicious adversarial noises, which may potentially cause catastrophic failures in Embodied Vision Navigation. Among different adversarial noises, universal adversarial perturbations (UAP), i.e., a constant image-agnostic perturbation applied on every input frame of the agent, play a critical role in Embodied Vision Navigation since they are computation-efficient and application-practical during the attack. However, existing UAP methods ignore the system dynamics of Embodied Vision Navigation and might be sub-optimal. In order to extend UAP to the sequential decision setting, we formulate the disturbed environment under the universal noise $\\delta$, as a $\\delta$-disturbed Markov Decision Process ($\\delta$-MDP). Based on the formulation, we analyze the properties of $\\delta$-MDP and propose two novel Consistent Attack methods, named Reward UAP and Trajectory UAP, for attacking Embodied agents, which consider the dynamic of the MDP and calculate universal noises by estimating the disturbed distribution and the disturbed Q function. For various victim models, our Consistent Attack can cause a significant drop in their performance in the PointGoal task in Habitat with different datasets and different scenes. Extensive experimental results indicate that there exist serious potential risks for applying Embodied Vision Navigation methods to the real world. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust Channel Estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gaussian Mixture Model (GMM)",
+    "Expectation-Maximization (EM) algorithm"
+  ],
+  "results": [
+    "Performs close to perfect CSI training",
+    "Higher robustness against imperfections in training data"
+  ],
+  "paper_id": "63c8b56c90e50fcafd906052",
+  "title": "Learning a Gaussian Mixture Model from Imperfect Training Data for\n  Robust Channel Estimation",
+  "abstract": "  In this letter, we propose a Gaussian mixture model (GMM)-based channel estimator which is learned on imperfect training data, i.e., the training data are solely comprised of noisy and sparsely allocated pilot observations. In a practical application, recent pilot observations at the base station (BS) can be utilized for training. This is in sharp contrast to state-of-theart machine learning (ML) techniques where a training dataset consisting of perfect channel state information (CSI) samples is a prerequisite, which is generally unaffordable. In particular, we propose an adapted training procedure for fitting the GMM which is a generative model that represents the distribution of all potential channels associated with a specific BS cell. To this end, the necessary modifications of the underlying expectation-maximization (EM) algorithm are derived. Numerical results show that the proposed estimator performs close to the case where perfect CSI is available for the training and exhibits a higher robustness against imperfections in the training data as compared to state-of-the-art ML techniques. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning of Non-Markovian Behavior"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Knowledge Representation (KR)",
+    "Automata over state-action history",
+    "End-to-end algorithm"
+  ],
+  "results": [
+    "Significantly fewer environment samples than state-of-the-art RL on simple non-Markovian domains"
+  ],
+  "paper_id": "63bcd73090e50fcafdef99d5",
+  "title": "Learning Symbolic Representations for Reinforcement Learning of\n  Non-Markovian Behavior",
+  "abstract": "  Many real-world reinforcement learning (RL) problems necessitate learning complex, temporally extended behavior that may only receive reward signal when the behavior is completed. If the reward-worthy behavior is known, it can be specified in terms of a non-Markovian reward function - a function that depends on aspects of the state-action history, rather than just the current state and action. Such reward functions yield sparse rewards, necessitating an inordinate number of experiences to find a policy that captures the reward-worthy pattern of behavior. Recent work has leveraged Knowledge Representation (KR) to provide a symbolic abstraction of aspects of the state that summarize reward-relevant properties of the state-action history and support learning a Markovian decomposition of the problem in terms of an automaton over the KR. Providing such a decomposition has been shown to vastly improve learning rates, especially when coupled with algorithms that exploit automaton structure. Nevertheless, such techniques rely on a priori knowledge of the KR. In this work, we explore how to automatically discover useful state abstractions that support learning automata over the state-action history. The result is an end-to-end algorithm that can learn optimal policies with significantly fewer environment samples than state-of-the-art RL on simple non-Markovian domains. "
+}

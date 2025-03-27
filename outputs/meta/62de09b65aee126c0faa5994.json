@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://kingteeloki-ran.github.io/NeurAR/"
+  ],
+  "tasks": [
+    "Autonomous 3D Reconstruction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Implicit Neural Representations",
+    "Neural Uncertainty"
+  ],
+  "results": [
+    "Significant improvements on rendered image quality and geometry quality of reconstructed 3D models"
+  ],
+  "paper_id": "62de09b65aee126c0faa5994",
+  "title": "NeurAR: Neural Uncertainty for Autonomous 3D Reconstruction with\n  Implicit Neural Representations",
+  "abstract": "  Implicit neural representations have shown compelling results in offline 3D reconstruction and also recently demonstrated the potential for online SLAM systems. However, applying them to autonomous 3D reconstruction, where a robot is required to explore a scene and plan a view path for the reconstruction, has not been studied. In this paper, we explore for the first time the possibility of using implicit neural representations for autonomous 3D scene reconstruction by addressing two key challenges: 1) seeking a criterion to measure the quality of the candidate viewpoints for the view planning based on the new representations, and 2) learning the criterion from data that can generalize to different scenes instead of a hand-crafting one. To solve the challenges, firstly, a proxy of Peak Signal-to-Noise Ratio (PSNR) is proposed to quantify a viewpoint quality; secondly, the proxy is optimized jointly with the parameters of an implicit neural network for the scene. With the proposed view quality criterion from neural networks (termed as Neural Uncertainty), we can then apply implicit representations to autonomous 3D reconstruction. Our method demonstrates significant improvements on various metrics for the rendered image quality and the geometry quality of the reconstructed 3D models when compared with variants using TSDF or reconstruction without view planning. Project webpage https://kingteeloki-ran.github.io/NeurAR/ "
+}

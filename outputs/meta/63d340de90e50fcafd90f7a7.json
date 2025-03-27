@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Chest X-ray registration"
+  ],
+  "datasets": [
+    "National Institutes of Health (NIH)"
+  ],
+  "methods": [
+    "Anatomically penalized convolutional multi-stage solution",
+    "Sequential instance memory segmentation with hole dropout",
+    "Weak labeling",
+    "Coarse-to-fine refinement",
+    "Gaussian mixture model histogram matching"
+  ],
+  "results": [
+    "Limiting the folding percentage of the warp field to 1/6 of the state of the art",
+    "Increasing the overlap of ribs by more than 25%",
+    "Difference images showing pathological changes overlooked by other methods"
+  ],
+  "paper_id": "63d340de90e50fcafd90f7a7",
+  "title": "Employing similarity to highlight differences: On the impact of\n  anatomical assumptions in chest X-ray registration methods",
+  "abstract": "  To facilitate both the detection and the interpretation of findings in chest X-rays, comparison with a previous image of the same patient is very valuable to radiologists. Today, the most common approach for deep learning methods to automatically inspect chest X-rays disregards the patient history and classifies only single images as normal or abnormal. Nevertheless, several methods for assisting in the task of comparison through image registration have been proposed in the past. However, as we illustrate, they tend to miss specific types of pathological changes like cardiomegaly and effusion. Due to assumptions on fixed anatomical structures or their measurements of registration quality, they produce unnaturally deformed warp fields impacting visualization of differences between moving and fixed images. We aim to overcome these limitations, through a new paradigm based on individual rib pair segmentation for anatomy penalized registration. Our method proves to be a natural way to limit the folding percentage of the warp field to 1/6 of the state of the art while increasing the overlap of ribs by more than 25%, implying difference images showing pathological changes overlooked by other methods. We develop an anatomically penalized convolutional multi-stage solution on the National Institutes of Health (NIH) data set, starting from less than 25 fully and 50 partly labeled training images, employing sequential instance memory segmentation with hole dropout, weak labeling, coarse-to-fine refinement and Gaussian mixture model histogram matching. We statistically evaluate the benefits of our method and highlight the limits of currently used metrics for registration of chest X-rays. "
+}

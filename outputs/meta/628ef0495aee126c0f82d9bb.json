@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/gicheonkang/gst-visdial"
+  ],
+  "tasks": [
+    "Visual dialog"
+  ],
+  "datasets": [
+    "VisDial v1.0",
+    "VisDial v0.9"
+  ],
+  "methods": [
+    "Generative Self-Training (GST)",
+    "multimodal conditional text generation",
+    "perplexity-based data selection",
+    "multimodal consistency regularization"
+  ],
+  "results": [
+    "new state-of-the-art results on both datasets",
+    "robustness against visual and textual adversarial attacks",
+    "strong performance gains in the low-data regime"
+  ],
+  "paper_id": "628ef0495aee126c0f82d9bb",
+  "title": "The Dialog Must Go On: Improving Visual Dialog via Generative\n  Self-Training",
+  "abstract": "  Visual dialog (VisDial) is a task of answering a sequence of questions grounded in an image, using the dialog history as context. Prior work has trained the dialog agents solely on VisDial data via supervised learning or leveraged pre-training on related vision-and-language datasets. This paper presents a semi-supervised learning approach for visually-grounded dialog, called Generative Self-Training (GST), to leverage unlabeled images on the Web. Specifically, GST first retrieves in-domain images through out-of-distribution detection and generates synthetic dialogs regarding the images via multimodal conditional text generation. GST then trains a dialog agent on the synthetic and the original VisDial data. As a result, GST scales the amount of training data up to an order of magnitude that of VisDial (1.2M to 12.9M QA data). For robust training of the synthetic dialogs, we also propose perplexity-based data selection and multimodal consistency regularization. Evaluation on VisDial v1.0 and v0.9 datasets shows that GST achieves new state-of-the-art results on both datasets. We further observe the robustness of GST against both visual and textual adversarial attacks. Finally, GST yields strong performance gains in the low-data regime. Code is available at https://github.com/gicheonkang/gst-visdial. "
+}

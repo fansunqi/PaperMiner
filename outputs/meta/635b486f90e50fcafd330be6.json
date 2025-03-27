@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "self-supervised ASR domain adaptation"
+  ],
+  "datasets": [
+    "Spanish RTVE2022",
+    "CommonVoice"
+  ],
+  "methods": [
+    "iterative pseudo-forced alignment",
+    "Connectionist Temporal Classification (CTC) loss"
+  ],
+  "results": [
+    "highly accurate audio-text alignments",
+    "domain adaptation",
+    "semi-supervised training of end-to-end ASR"
+  ],
+  "paper_id": "635b486f90e50fcafd330be6",
+  "title": "Iterative pseudo-forced alignment by acoustic CTC loss for\n  self-supervised ASR domain adaptation",
+  "abstract": "  High-quality data labeling from specific domains is costly and human time-consuming. In this work, we propose a self-supervised domain adaptation method, based upon an iterative pseudo-forced alignment algorithm. The produced alignments are employed to customize an end-to-end Automatic Speech Recognition (ASR) and iteratively refined. The algorithm is fed with frame-wise character posteriors produced by a seed ASR, trained with out-of-domain data, and optimized throughout a Connectionist Temporal Classification (CTC) loss. The alignments are computed iteratively upon a corpus of broadcast TV. The process is repeated by reducing the quantity of text to be aligned or expanding the alignment window until finding the best possible audio-text alignment. The starting timestamps, or temporal anchors, are produced uniquely based on the confidence score of the last aligned utterance. This score is computed with the paths of the CTC-alignment matrix. With this methodology, no human-revised text references are required. Alignments from long audio files with low-quality transcriptions, like TV captions, are filtered out by confidence score and ready for further ASR adaptation. The obtained results, on both the Spanish RTVE2022 and CommonVoice databases, underpin the feasibility of using CTC-based systems to perform: highly accurate audio-text alignments, domain adaptation and semi-supervised training of end-to-end ASR. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bilevel Planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Symbolic operator learning",
+    "Neural samplers",
+    "Operator learning for abstract planning"
+  ],
+  "results": [
+    "Operators lead to efficient planning across 10 different hybrid robotics domains",
+    "Generalization to novel initial states, goals, and objects"
+  ],
+  "paper_id": "62fc5c7b90e50fcafdbca792",
+  "title": "Overcoming the Pitfalls of Prediction Error in Operator Learning for\n  Bilevel Planning",
+  "abstract": "  Bilevel planning, in which a high-level search over an abstraction of an environment is used to guide low-level decision-making, is an effective approach to solving long-horizon tasks in continuous state and action spaces. Recent work has shown how to enable such bilevel planning by learning action and transition model abstractions in the form of symbolic operators and neural samplers. In this work, we show that existing symbolic operator learning approaches fall short in many natural environments where agent actions tend to cause a large number of irrelevant propositions to change. This is primarily because they attempt to learn operators that optimize the prediction error with respect to observed changes in the propositions. To overcome this issue, we propose to learn operators that only model changes necessary for abstract planning to achieve the specified goal. Experimentally, we show that our approach learns operators that lead to efficient planning across 10 different hybrid robotics domains, including 4 from the challenging BEHAVIOR-100 benchmark, with generalization to novel initial states, goals, and objects. "
+}

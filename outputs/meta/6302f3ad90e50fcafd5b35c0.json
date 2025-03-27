@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Communication Size Reduction of Federated Learning"
+  ],
+  "datasets": [
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Neural ODE",
+    "ResNet"
+  ],
+  "results": [
+    "Communication size reduced by up to 92.4% compared to ResNet"
+  ],
+  "paper_id": "6302f3ad90e50fcafd5b35c0",
+  "title": "Communication Size Reduction of Federated Learning using Neural ODE\n  Models",
+  "abstract": "  Federated learning is a machine learning approach in which data is not aggregated on a server, but is trained at clients locally, in consideration of security and privacy. ResNet is a classic but representative neural network that succeeds in deepening the neural network by learning a residual function that adds the inputs and outputs together. In federated learning, communication is performed between the server and clients to exchange weight parameters. Since ResNet has deep layers and a large number of parameters, the communication size becomes large. In this paper, we use Neural ODE as a lightweight model of ResNet to reduce communication size in federated learning. In addition, we newly introduce a flexible federated learning using Neural ODE models with different number of iterations, which correspond to ResNet models with different depths. Evaluation results using CIFAR-10 dataset show that the use of Neural ODE reduces communication size by up to 92.4% compared to ResNet. We also show that the proposed flexible federated learning can merge models with different iteration counts or depths. "
+}

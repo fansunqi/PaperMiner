@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nearest-Neighbor (NN) classification",
+    "Few-shot learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Prior-driven discrete data calibration",
+    "Discrete data calibration operation"
+  ],
+  "results": [
+    "Outperforms or at least comparable to SOTA methods"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e844",
+  "title": "P3DC-Shot: Prior-Driven Discrete Data Calibration for Nearest-Neighbor\n  Few-Shot Classification",
+  "abstract": "  Nearest-Neighbor (NN) classification has been proven as a simple and effective approach for few-shot learning. The query data can be classified efficiently by finding the nearest support class based on features extracted by pretrained deep models. However, NN-based methods are sensitive to the data distribution and may produce false prediction if the samples in the support set happen to lie around the distribution boundary of different classes. To solve this issue, we present P3DC-Shot, an improved nearest-neighbor based few-shot classification method empowered by prior-driven data calibration. Inspired by the distribution calibration technique which utilizes the distribution or statistics of the base classes to calibrate the data for few-shot tasks, we propose a novel discrete data calibration operation which is more suitable for NN-based few-shot classification. Specifically, we treat the prototypes representing each base class as priors and calibrate each support data based on its similarity to different base prototypes. Then, we perform NN classification using these discretely calibrated support data. Results from extensive experiments on various datasets show our efficient non-learning based method can outperform or at least comparable to SOTA methods which need additional learning steps. "
+}

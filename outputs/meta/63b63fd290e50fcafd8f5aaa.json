@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep Learning Compilation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "oneDNN Graph Compiler",
+    "Hybrid Approach",
+    "Compiler Optimization",
+    "Expert-tuned Kernels",
+    "Low-precision Computation",
+    "Aggressive Fusion",
+    "Static Tensor Shapes and Memory Layout Optimization",
+    "Constant Weight Optimization",
+    "Memory Buffer Reuse"
+  ],
+  "results": [
+    "Up to 2x performance gains over primitives-based optimization"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5aaa",
+  "title": "oneDNN Graph Compiler: A Hybrid Approach for High-Performance Deep\n  Learning Compilation",
+  "abstract": "  With the rapid development of deep learning models and hardware support for dense computing, the deep learning (DL) workload characteristics changed significantly from a few hot spots on compute-intensive operations to a broad range of operations scattered across the models. Accelerating a few compute-intensive operations using the expert-tuned implementation of primitives does not fully exploit the performance potential of AI hardware. Various efforts are made to compile a full deep neural network (DNN) graph. One of the biggest challenges is to achieve end-to-end compilation by generating expert-level performance code for the dense compute-intensive operations and applying compilation optimization at the scope of DNN computation graph across multiple compute-intensive operations. We present oneDNN Graph Compiler, a tensor compiler that employs a hybrid approach of using techniques from both compiler optimization and expert-tuned kernels for high-performance code generation of the deep neural network graph. oneDNN Graph Compiler addresses unique optimization challenges in the deep learning domain, such as low-precision computation, aggressive fusion, optimization for static tensor shapes and memory layout, constant weight optimization, and memory buffer reuse. Experimental results demonstrate up to 2x performance gains over primitives-based optimization for performance-critical DNN computation graph patterns on Intel Xeon Scalable Processors. "
+}

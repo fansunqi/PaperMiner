@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-site MR Image Harmonization"
+  ],
+  "datasets": [
+    "Diverse MR datasets acquired from 21 sites"
+  ],
+  "methods": [
+    "Harmonization with Attention-based Contrast, Anatomy, and Artifact Awareness (HACA3)"
+  ],
+  "results": [
+    "State-of-the-art performance under multiple image quality metrics",
+    "Applicability and versatility demonstrated on downstream tasks including white matter lesion segmentation and longitudinal volumetric analyses"
+  ],
+  "paper_id": "6397ed4e90e50fcafdf440c7",
+  "title": "HACA3: A Unified Approach for Multi-site MR Image Harmonization",
+  "abstract": "  The lack of standardization is a prominent issue in magnetic resonance (MR) imaging. This often causes undesired contrast variations in the acquired images due to differences in hardware and acquisition parameters. In recent years, image synthesis-based MR harmonization with disentanglement has been proposed to compensate for the undesired contrast variations. Despite the success of existing methods, we argue that three major improvements can be made. First, most existing methods are built upon the assumption that multi-contrast MR images of the same subject share the same anatomy. This assumption is questionable, since different MR contrasts are specialized to highlight different anatomical features. Second, these methods often require a fixed set of MR contrasts for training (e.g., both T1-weighted and T2-weighted images), limiting their applicability. Lastly, existing methods are generally sensitive to imaging artifacts. In this paper, we present Harmonization with Attention-based Contrast, Anatomy, and Artifact Awareness (HACA3), a novel approach to address these three issues. HACA3 incorporates an anatomy fusion module that accounts for the inherent anatomical differences between MR contrasts. Furthermore, HACA3 is also robust to imaging artifacts and can be trained and applied to any set of MR contrasts. HACA3 is developed and evaluated on diverse MR datasets acquired from 21 sites with varying field strengths, scanner platforms, and acquisition protocols. Experiments show that HACA3 achieves state-of-the-art performance under multiple image quality metrics. We also demonstrate the applicability and versatility of HACA3 on downstream tasks including white matter lesion segmentation and longitudinal volumetric analyses. "
+}

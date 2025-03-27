@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Snow removal"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Laplace Mask Query Transformer (LMQFormer)",
+    "Laplace-VQVAE",
+    "Mask Query Transformer (MQFormer)",
+    "Duplicated Mask Query Attention (DMQA)"
+  ],
+  "results": [
+    "State-of-the-art snow removal quality",
+    "Significantly reduced parameters",
+    "Lowest running time"
+  ],
+  "paper_id": "6344dee590e50fcafd24e7ea",
+  "title": "LMQFormer: A Laplace-Prior-Guided Mask Query Transformer for Lightweight\n  Snow Removal",
+  "abstract": "  Snow removal aims to locate snow areas and recover clean images without repairing traces. Unlike the regularity and semitransparency of rain, snow with various patterns and degradations seriously occludes the background. As a result, the state-of-the-art snow removal methods usually retains a large parameter size. In this paper, we propose a lightweight but high-efficient snow removal network called Laplace Mask Query Transformer (LMQFormer). Firstly, we present a Laplace-VQVAE to generate a coarse mask as prior knowledge of snow. Instead of using the mask in dataset, we aim at reducing both the information entropy of snow and the computational cost of recovery. Secondly, we design a Mask Query Transformer (MQFormer) to remove snow with the coarse mask, where we use two parallel encoders and a hybrid decoder to learn extensive snow features under lightweight requirements. Thirdly, we develop a Duplicated Mask Query Attention (DMQA) that converts the coarse mask into a specific number of queries, which constraint the attention areas of MQFormer with reduced parameters. Experimental results in popular datasets have demonstrated the efficiency of our proposed model, which achieves the state-of-the-art snow removal quality with significantly reduced parameters and the lowest running time. "
+}

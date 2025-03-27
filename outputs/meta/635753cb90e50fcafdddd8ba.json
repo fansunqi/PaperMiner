@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Modality COVID-19 Medical Images Segmentation"
+  ],
+  "datasets": [
+    "ISIC 2018",
+    "BAA"
+  ],
+  "methods": [
+    "MS-DCANet",
+    "Tokenized MLP block",
+    "shift-window mechanism",
+    "Transformer-like attention",
+    "Dual Channel blocks",
+    "Res-ASPP block"
+  ],
+  "results": [
+    "State-of-the-art performance on multi-modality COVID-19 tasks",
+    "Strong generalization ability on other tasks"
+  ],
+  "paper_id": "635753cb90e50fcafdddd8ba",
+  "title": "MS-DCANet: A Novel Segmentation Network For Multi-Modality COVID-19\n  Medical Images",
+  "abstract": "  The Coronavirus Disease 2019 (COVID-19) pandemic has increased the public health burden and brought profound disaster to humans. For the particularity of the COVID-19 medical images with blurred boundaries, low contrast and different sizes of infection sites, some researchers have improved the segmentation accuracy by adding model complexity. However, this approach has severe limitations. Increasing the computational complexity and the number of parameters is unfavorable for model transfer from laboratory to clinic. Meanwhile, the current COVID-19 infections segmentation DCNN-based methods only apply to a single modality. To solve the above issues, this paper proposes a symmetric Encoder-Decoder segmentation framework named MS-DCANet. We introduce Tokenized MLP block, a novel attention scheme that uses a shift-window mechanism similar to the Transformer to acquire self-attention and achieve local-to-global semantic dependency. MS-DCANet also uses several Dual Channel blocks and a Res-ASPP block to expand the receptive field and extract multi-scale features. On multi-modality COVID-19 tasks, MS-DCANet achieved state-of-the-art performance compared with other U-shape models. It can well trade off the accuracy and complexity. To prove the strong generalization ability of our proposed model, we apply it to other tasks (ISIC 2018 and BAA) and achieve satisfactory results. "
+}

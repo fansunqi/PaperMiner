@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/yhlleo/MJP"
+  ],
+  "tasks": [
+    "Vision Transformers (ViTs) performance improvement",
+    "Privacy preservation in vision tasks"
+  ],
+  "datasets": [
+    "ImageNet-1K",
+    "ImageNet-C",
+    "ImageNet-A/O"
+  ],
+  "methods": [
+    "Masked Jigsaw Puzzle (MJP) position embedding",
+    "block-wise random jigsaw puzzle shuffle algorithm",
+    "dense absolute localization regressor"
+  ],
+  "results": [
+    "PEs explicitly encode 2D spatial relationships and lead to privacy leakage",
+    "Training with shuffled patches alleviates privacy leakage but harms accuracy",
+    "MJP improves performance and robustness on large-scale datasets",
+    "MJP improves privacy preservation under gradient attacks"
+  ],
+  "paper_id": "628ef0495aee126c0f82da1f",
+  "title": "Masked Jigsaw Puzzle: A Versatile Position Embedding for Vision\n  Transformers",
+  "abstract": "  Position Embeddings (PEs), an arguably indispensable component in Vision Transformers (ViTs), have been shown to improve the performance of ViTs on many vision tasks. However, PEs have a potentially high risk of privacy leakage since the spatial information of the input patches is exposed. This caveat naturally raises a series of interesting questions about the impact of PEs on the accuracy, privacy, prediction consistency, etc. To tackle these issues, we propose a Masked Jigsaw Puzzle (MJP) position embedding method. In particular, MJP first shuffles the selected patches via our block-wise random jigsaw puzzle shuffle algorithm, and their corresponding PEs are occluded. Meanwhile, for the non-occluded patches, the PEs remain the original ones but their spatial relation is strengthened via our dense absolute localization regressor. The experimental results reveal that 1) PEs explicitly encode the 2D spatial relationship and lead to severe privacy leakage problems under gradient inversion attack; 2) Training ViTs with the naively shuffled patches can alleviate the problem, but it harms the accuracy; 3) Under a certain shuffle ratio, the proposed MJP not only boosts the performance and robustness on large-scale datasets (i.e., ImageNet-1K and ImageNet-C, -A/O) but also improves the privacy preservation ability under typical gradient attacks by a large margin. The source code and trained models are available at~\\url{https://github.com/yhlleo/MJP}. "
+}

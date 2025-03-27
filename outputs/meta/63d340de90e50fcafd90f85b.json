@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/janghyuncho/ECM-Loss"
+  ],
+  "tasks": [
+    "Long-tail Detection"
+  ],
+  "datasets": [
+    "LVIS v1"
+  ],
+  "methods": [
+    "Effective Class-Margin Loss (ECM)"
+  ],
+  "results": [
+    "Outperforms other heuristic counterparts on LVIS v1 benchmark"
+  ],
+  "paper_id": "63d340de90e50fcafd90f85b",
+  "title": "Long-tail Detection with Effective Class-Margins",
+  "abstract": "  Large-scale object detection and instance segmentation face a severe data imbalance. The finer-grained object classes become, the less frequent they appear in our datasets. However, at test-time, we expect a detector that performs well for all classes and not just the most frequent ones. In this paper, we provide a theoretical understanding of the long-trail detection problem. We show how the commonly used mean average precision evaluation metric on an unknown test set is bound by a margin-based binary classification error on a long-tailed object detection training set. We optimize margin-based binary classification error with a novel surrogate objective called \\textbf{Effective Class-Margin Loss} (ECM). The ECM loss is simple, theoretically well-motivated, and outperforms other heuristic counterparts on LVIS v1 benchmark over a wide range of architecture and detectors. Code is available at \\url{https://github.com/janghyuncho/ECM-Loss}. "
+}

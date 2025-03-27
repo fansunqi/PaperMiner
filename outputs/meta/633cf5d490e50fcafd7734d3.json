@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "sampling-based kinodynamic planners"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bang-Bang Boosting of RRTs",
+    "time-optimal trajectory",
+    "vector of synchronized double integrators",
+    "two-point boundary-value problems",
+    "Voronoi bias",
+    "iterative time-optimization"
+  ],
+  "results": [
+    "improved computed trajectories",
+    "orders of magnitude computation time improvements"
+  ],
+  "paper_id": "633cf5d490e50fcafd7734d3",
+  "title": "Bang-Bang Boosting of RRTs",
+  "abstract": "  This paper presents methods for dramatically improving the performance of sampling-based kinodynamic planners. The key component is the first-known complete, exact steering method that produces a time-optimal trajectory between any states for a vector of synchronized double integrators. This method is applied in three ways: 1) to generate RRT edges that quickly solve the two-point boundary-value problems, 2) to produce a (quasi)metric for more accurate Voronoi bias in RRTs, and 3) to iteratively time-optimize a given collision-free trajectory. Experiments are performed for state spaces with up to 2000 dimensions, resulting in improved computed trajectories and orders of magnitude computation time improvements over using ordinary metrics and constant controls. "
+}

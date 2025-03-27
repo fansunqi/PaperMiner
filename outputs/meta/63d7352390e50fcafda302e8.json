@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "NVM-based systems checkpointing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Flexible checkpointing system",
+    "Adaptive system to minimize write amplification"
+  ],
+  "results": [
+    "Reduces write amplification by 2.3-96% compared to the nearest competing work"
+  ],
+  "paper_id": "63d7352390e50fcafda302e8",
+  "title": "JASS: A Flexible Checkpointing System for NVM-based Systems",
+  "abstract": "  NVM-based systems are naturally fit candidates for incorporating periodic checkpointing (or snapshotting). This increases the reliability of the system, makes it more immune to power failures, and reduces wasted work in especially an HPC setup. The traditional line of thinking is to design a system that is conceptually similar to transactional memory, where we log updates all the time, and minimize the wasted work or alternatively the MTTR (mean time to recovery). Such ``instant recovery'' systems allow the system to recover from a point that is quite close to the point of failure. The penalty that we pay is the prohibitive number of additional writes to the NVM.   We propose a paradigmatically different approach in this paper, where we argue that in most practical settings such as regular HPC workloads or neural network training, there is no need for such instant recovery. This means that we can afford to lose some work, take periodic software-initiated checkpoints and still meet the goals of the application. The key benefit of our scheme is that we reduce write amplification substantially; this extends the life of NVMs by roughly the same factor. We go a step further and design an adaptive system that can minimize the WA given a target checkpoint latency, and show that our control algorithm almost always performs near-optimally. Our scheme reduces the WA by 2.3-96\\% as compared to the nearest competing work. "
+}

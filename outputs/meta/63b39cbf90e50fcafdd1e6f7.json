@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning with Noisy Labels"
+  ],
+  "datasets": [
+    "Benchmark datasets",
+    "Real-world noisy datasets"
+  ],
+  "methods": [
+    "Scalable Penalized Regression (SPR)",
+    "Knockoff filters",
+    "Split algorithm"
+  ],
+  "results": [
+    "Effectiveness of the framework",
+    "Theoretical results of Knockoffs-SPR"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e6f7",
+  "title": "Knockoffs-SPR: Clean Sample Selection in Learning with Noisy Labels",
+  "abstract": "  A noisy training set usually leads to the degradation of the generalization and robustness of neural networks. In this paper, we propose a novel theoretically guaranteed clean sample selection framework for learning with noisy labels. Specifically, we first present a Scalable Penalized Regression (SPR) method, to model the linear relation between network features and one-hot labels. In SPR, the clean data are identified by the zero mean-shift parameters solved in the regression model. We theoretically show that SPR can recover clean data under some conditions. Under general scenarios, the conditions may be no longer satisfied; and some noisy data are falsely selected as clean data. To solve this problem, we propose a data-adaptive method for Scalable Penalized Regression with Knockoff filters (Knockoffs-SPR), which is provable to control the False-Selection-Rate (FSR) in the selected clean data. To improve the efficiency, we further present a split algorithm that divides the whole training set into small pieces that can be solved in parallel to make the framework scalable to large datasets. While Knockoffs-SPR can be regarded as a sample selection module for a standard supervised training pipeline, we further combine it with a semi-supervised algorithm to exploit the support of noisy data as unlabeled data. Experimental results on several benchmark datasets and real-world noisy datasets show the effectiveness of our framework and validate the theoretical results of Knockoffs-SPR. Our code and pre-trained models will be released. "
+}

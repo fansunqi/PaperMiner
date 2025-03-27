@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/Genentech/sVAE"
+  ],
+  "tasks": [
+    "Single-cell genomics data analysis",
+    "Learning disentangled representations"
+  ],
+  "datasets": [
+    "Simulated single-cell data",
+    "Real-world large-scale gene perturbation data sets"
+  ],
+  "methods": [
+    "Deep generative model",
+    "Sparse mechanism shift modeling"
+  ],
+  "results": [
+    "Superior performance on transfer learning task"
+  ],
+  "paper_id": "6369c8ce90e50fcafde88743",
+  "title": "Learning Causal Representations of Single Cells via Sparse Mechanism\n  Shift Modeling",
+  "abstract": "  Latent variable models such as the Variational Auto-Encoder (VAE) have become a go-to tool for analyzing biological data, especially in the field of single-cell genomics. One remaining challenge is the interpretability of latent variables as biological processes that define a cell's identity. Outside of biological applications, this problem is commonly referred to as learning disentangled representations. Although several disentanglement-promoting variants of the VAE were introduced, and applied to single-cell genomics data, this task has been shown to be infeasible from independent and identically distributed measurements, without additional structure. Instead, recent methods propose to leverage non-stationary data, as well as the sparse mechanism shift assumption in order to learn disentangled representations with a causal semantic. Here, we extend the application of these methodological advances to the analysis of single-cell genomics data with genetic or chemical perturbations. More precisely, we propose a deep generative model of single-cell gene expression data for which each perturbation is treated as a stochastic intervention targeting an unknown, but sparse, subset of latent variables. We benchmark these methods on simulated single-cell data to evaluate their performance at latent units recovery, causal target identification and out-of-domain generalization. Finally, we apply those approaches to two real-world large-scale gene perturbation data sets and find that models that exploit the sparse mechanism shift hypothesis surpass contemporary methods on a transfer learning task. We implement our new model and benchmarks using the scvi-tools library, and release it as open-source software at https://github.com/Genentech/sVAE. "
+}

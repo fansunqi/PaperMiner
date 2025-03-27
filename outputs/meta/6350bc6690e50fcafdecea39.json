@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Persistent Memory (PM) technologies",
+    "Near-data processing (NDP) architectures"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "NearPM",
+    "Partitioned Persist Ordering (PPO)",
+    "logging",
+    "checkpointing",
+    "shadow-paging"
+  ],
+  "results": [
+    "4.3-9.8X speedup in NDP-offloaded operations",
+    "1.22-1.35X speedup in end-to-end execution"
+  ],
+  "paper_id": "6350bc6690e50fcafdecea39",
+  "title": "NearPM: A Near-Data Processing System for Storage-Class Applications",
+  "abstract": "  Persistent Memory (PM) technologies enable program recovery to a consistent state in a case of failure. To ensure this crash-consistent behavior, programs need to enforce persist ordering by employing mechanisms, such as logging and checkpointing, which introduce additional data movement. The emerging near-data processing (NDP) architec-tures can effectively reduce this data movement overhead. In this work we propose NearPM, a near data processor that supports accelerable primitives in crash consistent programs. Using these primitives NearPM accelerate commonly used crash consistency mechanisms logging, checkpointing, and shadow-paging. NearPM further reduces the synchronization overheads between the NDP and the CPU to guarantee persistent ordering by moving ordering handling near memory. We ensures a correct persist ordering between CPU and NDP devices, as well as among multiple NDP devices with Partitioned Persist Ordering (PPO). We prototype NearPM on an FPGA platform.1 NearPM executes data-intensive operations in crash consistency mechanisms with correct ordering guarantees while the rest of the program runs on the CPU. We evaluate nine PM workloads, where each work load supports three crash consistency mechanisms -logging, checkpointing, and shadow paging. Overall, NearPM achieves 4.3-9.8X speedup in the NDP-offloaded operations and 1.22-1.35X speedup in end-to-end execution. "
+}

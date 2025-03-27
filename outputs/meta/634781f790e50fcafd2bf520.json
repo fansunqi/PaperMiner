@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Contrastive introspection (ConSpec)"
+  ],
+  "results": [
+    "Improves learning in tasks with explicit and implicit critical steps"
+  ],
+  "paper_id": "634781f790e50fcafd2bf520",
+  "title": "Contrastive introspection to identify critical steps in reinforcement\n  learning",
+  "abstract": "  In real life, success is often contingent upon multiple critical steps that are distant in time from each other and from the final reward. These critical steps can be challenging to identify with traditional reinforcement learning (RL) methods that rely on the Bellman equation for credit assignment. Here, we present a new RL algorithm that uses offline contrastive learning to identify critical steps in any task. This algorithm, which we call contrastive introspection (ConSpec ), can be added to any existing RL algorithm. ConSpec learns a set of prototypes for the critical steps in a task and delivers an intrinsic reward when the current state matches one of these prototypes. The prototypes in ConSpec provide two key benefits for credit assignment: (1) They enable rapid identification of all the critical steps. (2) They do so in a readily interpretable manner, enabling out-of-distribution generalization when sensory features are altered. We show that ConSpec improves learning in both tasks with explicit critical steps (e.g. when a key must be collected to open a door) and tasks with no immediately obvious critical steps (e.g. continuous control tasks). In summary, ConSpec is a modular component that can be added to any existing RL algorithm to improve performance. "
+}

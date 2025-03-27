@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Network Pruning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Network Pruning",
+    "Geometry Analysis",
+    "Linear Region Bound"
+  ],
+  "results": [
+    "Accuracy drop with increased sparsity",
+    "Improved accuracy with selective sparsity"
+  ],
+  "paper_id": "63ca069890e50fcafd6830e6",
+  "title": "Getting Away with More Network Pruning: From Sparsity to Geometry and\n  Linear Regions",
+  "abstract": "  One surprising trait of neural networks is the extent to which their connections can be pruned with little to no effect on accuracy. But when we cross a critical level of parameter sparsity, pruning any further leads to a sudden drop in accuracy. This drop plausibly reflects a loss in model complexity, which we aim to avoid. In this work, we explore how sparsity also affects the geometry of the linear regions defined by a neural network, and consequently reduces the expected maximum number of linear regions based on the architecture. We observe that pruning affects accuracy similarly to how sparsity affects the number of linear regions and our proposed bound for the maximum number. Conversely, we find out that selecting the sparsity across layers to maximize our bound very often improves accuracy in comparison to pruning as much with the same sparsity in all layers, thereby providing us guidance on where to prune. "
+}

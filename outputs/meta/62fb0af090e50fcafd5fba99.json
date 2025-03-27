@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Program verification",
+    "Heap-manipulating programs",
+    "Bug-finding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Exact separation logic (ESL)",
+    "Incorrectness separation logic",
+    "Symbolic execution (Pulse, Pulse-X)"
+  ],
+  "results": [
+    "Fully-verified function specifications compatible with OX and UX",
+    "Function compositionality for UX logic",
+    "Expressivity of ESL",
+    "Role of abstraction in UX reasoning"
+  ],
+  "paper_id": "62fb0af090e50fcafd5fba99",
+  "title": "Exact Separation Logic",
+  "abstract": "  Over-approximating (OX) program logics, such as separation logic (SL), are used for verifying properties of heap-manipulating programs: all terminating behaviour is characterised, but established results and errors need not be reachable. OX function specifications are thus incompatible with true bug-finding supported by symbolic execution tools such as Pulse and Pulse-X. In contrast, under-approximating (UX) program logics, such as incorrectness separation logic, are used to find true results and bugs: established results and errors are reachable, but there is no mechanism for understanding if all terminating behaviour has been characterised.   We introduce exact separation logic (ESL), which provides fully-verified function specifications compatible with both OX verification and UX true bug-funding: all terminating behaviour is characterised, and all established results and errors are reachable. We prove soundness for ESL with mutually recursive functions, demonstrating, for the first time, function compositionality for a UX logic. We show that UX program logics require subtle definitions of internal and external function specifications compared with the familiar definitions of OX logics. We investigate the expressivity of ESL and, for the first time, explore the role of abstraction in UX reasoning by verifying abstract ESL specifications of various data-structure algorithms. In doing so, we highlight the difference between abstraction (hiding information) and over-approximation (losing information). Our findings demonstrate that, expectedly, abstraction cannot be used as freely in UX logics as in OX logics, but also that it should be feasible to use ESL to provide tractable function specifications for self-contained, critical code, which would then be used for both verification and true bug-finding. "
+}

@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sentiment detection in software engineering",
+    "Cross-platform settings performance comparison"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep learning (DL) tools (SEntiMoji, BERT4SEntiSE, RNN4SentiSE)",
+    "Shallow learning tools (Senti4SD, SentiCR)",
+    "Rule-based tool (SentistrengthSE)"
+  ],
+  "results": [
+    "BERT4SentiSE outperforms other supervised tools in cross-platform settings",
+    "BERT4SentiSE outperforms SentistrengthSE in within-platform settings",
+    "BERT4SentiSE narrowly outperformed by SentiStrengthSE in some cross-platform settings",
+    "Varying performance drop across datasets for the best-performing deep learning tools",
+    "Inconsistency due to 'subjectivity in annotation'"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b605",
+  "title": "An Empirical Study of Deep Learning Sentiment Detection Tools for\n  Software Engineering in Cross-Platform Settings",
+  "abstract": "  Sentiment detection in software engineering (SE) has shown promise to support diverse development activities. However, given the diversity of SE platforms, SE-specific sentiment detection tools may suffer in performance in cross-platform settings. Recently deep learning (DL)-based SE-specific sentiment detection tools are found to offer superior performance than shallow machine learning (ML) based/rule-based tools. However, it is not known how the DL tools perform in cross-platform settings. In this paper, we study whether SE-specific DL sentiment detectors are more effective than shallow ML-based/rule-based sentiment detectors in cross-platform settings. In three datasets, we study three DL tools (SEntiMoji, BERT4SEntiSE, RNN4SentiSE) and compare those against three baselines: two shallow learning tools (Senti4SD, SentiCR) and one rule-based tool (SentistrengthSE). We find that (1) The deep learning SD tools for SE, BERT4SentiSE outperform other supervised tools in cross-platform settings in most cases, but then the tool is outperformed by the rule-based tool SentistrengthSE in most cases. (2) BERT4SentiSE outperforms SentistrengthSE by large margin in within-platform settings across the three datasets and is only narrowly outperformed by SentiStrengthSE in four out of the six cross-platform settings. This finding offers hope for the feasibility to further improve a pre-trained transformer model like BERT4SentiSE in cross-platform settings. (3) The two best-performing deep learning tools (BERT4SentiSE and SentiMoji) show varying level performance drop across the three datasets. We find that this inconsistency is mainly due to the \"subjectivity in annotation\" and performance improvement for the studied supervised tools in cross-platform settings may require the fixing of the datasets. "
+}

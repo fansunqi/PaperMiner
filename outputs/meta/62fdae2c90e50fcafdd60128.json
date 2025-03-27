@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FOLD-SE",
+    "Stratified normal logic program",
+    "Prefix sum",
+    "Literal selection heuristics based on Gini Impurity"
+  ],
+  "results": [
+    "Competitive with XGBoost and MLP in accuracy",
+    "Order of magnitude faster than XGBoost and MLP in execution speed",
+    "Outperforms FOLD-R++ and RIPPER in efficiency, performance, and scalability"
+  ],
+  "paper_id": "62fdae2c90e50fcafdd60128",
+  "title": "FOLD-SE: An Efficient Rule-based Machine Learning Algorithm with\n  Scalable Explainability",
+  "abstract": "  We present FOLD-SE, an efficient, explainable machine learning algorithm for classification tasks given tabular data containing numerical and categorical values. FOLD-SE generates a set of default rules-essentially a stratified normal logic program-as an (explainable) trained model. Explainability provided by FOLD-SE is scalable, meaning that regardless of the size of the dataset, the number of learned rules and learned literals stay quite small while good accuracy in classification is maintained. A model with smaller number of rules and literals is easier to understand for human beings. FOLD-SE is competitive with state-of-the-art machine learning algorithms such as XGBoost and Multi-Layer Perceptrons (MLP) wrt accuracy of prediction. However, unlike XGBoost and MLP, the FOLD-SE algorithm is explainable. The FOLD-SE algorithm builds upon our earlier work on developing the explainable FOLD-R++ machine learning algorithm for binary classification and inherits all of its positive features. Thus, pre-processing of the dataset, using techniques such as one-hot encoding, is not needed. Like FOLD-R++, FOLD-SE uses prefix sum to speed up computations resulting in FOLD-SE being an order of magnitude faster than XGBoost and MLP in execution speed. The FOLD-SE algorithm outperforms FOLD-R++ as well as other rule-learning algorithms such as RIPPER in efficiency, performance and scalability, especially for large datasets. A major reason for scalable explainability of FOLD-SE is the use of a literal selection heuristics based on Gini Impurity, as opposed to Information Gain used in FOLD-R++. A multi-category classification version of FOLD-SE is also presented. "
+}

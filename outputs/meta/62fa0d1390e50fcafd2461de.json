@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-throughput condensed-phase hybrid density functional theory for large-scale finite-gap systems"
+  ],
+  "datasets": [
+    "(H$_2$O)$_{64}$ configurations",
+    "(H$_2$O)$_{512}$ configurations"
+  ],
+  "methods": [
+    "SeA (SCDM+exx+ACE)",
+    "Deep neural network (DNN) potential for ambient liquid water"
+  ],
+  "results": [
+    "One to two order-of-magnitude speedup in time-to-solution compared to PWSCF(ACE)",
+    "High fidelity energies, ionic forces, and other properties",
+    "SeA-trained potential confirmed accurate with out-of-sample (H$_2$O)$_{512}$ configurations"
+  ],
+  "paper_id": "62fa0d1390e50fcafd2461de",
+  "title": "High-Throughput Condensed-Phase Hybrid Density Functional Theory for\n  Large-Scale Finite-Gap Systems: The SeA Approach",
+  "abstract": "  High-throughput DFT calculations are key to screening existing/novel materials, sampling potential energy surfaces, and generating quantum mechanical data for machine learning. By including a fraction of exact exchange (EXX), hybrid functionals reduce the self-interaction error in semi-local DFT and furnish a more accurate description of the underlying electronic structure, albeit at a high computational cost that often prohibits such high-throughput applications. To address this challenge, we have constructed SeA (SeA=SCDM+exx+ACE), a robust, accurate, and efficient framework for high-throughput condensed-phase hybrid DFT in the PWSCF module of Quantum ESPRESSO (QE) by combining: (1) the non-iterative selected columns of the density matrix (SCDM) orbital localization scheme, (2) a black-box and linear-scaling EXX algorithm (exx), and (3) adaptively compressed exchange (ACE). Across a diverse set of non-equilibrium (H$_2$O)$_{64}$ configurations (with densities spanning 0.4 g/cm$^3$$-$1.7 g/cm$^3$), SeA yields a one$-$two order-of-magnitude speedup (~8X$-$26X) in the overall time-to-solution compared to PWSCF(ACE) in QE (~78X$-$247X speedup compared to the conventional EXX implementation) and yields energies, ionic forces, and other properties with high fidelity. As a proof-of-principle high-throughput application, we trained a deep neural network (DNN) potential for ambient liquid water at the hybrid DFT level using SeA via an actively learned data set with ~8,700 (H$_2$O)$_{64}$ configurations. Using an out-of-sample set of (H$_2$O)$_{512}$ configurations (at non-ambient conditions), we confirmed the accuracy of this SeA-trained potential and showcased the capabilities of SeA by computing the ground-truth ionic forces in this challenging system containing > 1,500 atoms. "
+}

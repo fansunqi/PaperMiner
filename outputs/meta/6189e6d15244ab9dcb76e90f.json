@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Designing succinct data structure for path graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Heavy path decomposition by Sleator and Tarjan",
+    "Orthogonal range search data structure using wavelet trees"
+  ],
+  "results": [
+    "Adjacency query in O(log n) time",
+    "Neighborhood query in O(d log n) time",
+    "Degree query in min{O(log^2 n), O(d log n)} time",
+    "Adjacency and degree queries in O(1) time",
+    "Neighborhood query in O(d) time"
+  ],
+  "paper_id": "6189e6d15244ab9dcb76e90f",
+  "title": "Succinct Data Structure for Path Graphs",
+  "abstract": "  We consider the problem of designing a succinct data structure for {\\it path graphs} (which are a proper subclass of chordal graphs and a proper superclass of interval graphs) on $n$ vertices while supporting degree, adjacency, and neighborhood queries efficiently. We provide the following two solutions for this problem:   - an $n \\log n+o(n \\log n)$-bit succinct data structure that supports adjacency query in $O(\\log n)$ time, neighborhood query in $O(d \\log n)$ time and finally, degree query in $\\min\\{O(\\log^2 n), O(d \\log n)\\}$ where $d$ is the degree of the queried vertex.   - an $O(n \\log^2 n)$-bit space-efficient data structure that supports adjacency and degree queries in $O(1)$ time, and the neighborhood query in $O(d)$ time where $d$ is the degree of the queried vertex.   Central to our data structures is the usage of the classical heavy path decomposition by Sleator and Tarjan~\\cite{ST}, followed by a careful bookkeeping using an orthogonal range search data structure using wavelet trees~\\cite{Makinen2007} among others, which maybe of independent interest for designing succinct data structures for other graph classes. "
+}

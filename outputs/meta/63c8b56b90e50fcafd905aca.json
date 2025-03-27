@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated learning",
+    "Supervised Contrastive Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Supervised Contrastive Federated Learning",
+    "Shared feature spaces",
+    "Supervised-contrastive learning loss"
+  ],
+  "results": [
+    "Outperforms state-of-the-art regularization terms"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905aca",
+  "title": "FedSSC: Shared Supervised-Contrastive Federated Learning",
+  "abstract": "  Federated learning is widely used to perform decentralized training of a global model on multiple devices while preserving the data privacy of each device. However, it suffers from heterogeneous local data on each training device which increases the difficulty to reach the same level of accuracy as the centralized training. Supervised Contrastive Learning which outperform cross-entropy tries to minimizes the difference between feature space of points belongs to the same class and pushes away points from different classes. We propose Supervised Contrastive Federated Learning in which devices can share the learned class-wise feature spaces with each other and add the supervised-contrastive learning loss as a regularization term to foster the feature space learning. The loss tries to minimize the cosine similarity distance between the feature map and the averaged feature map from another device in the same class and maximizes the distance between the feature map and that in a different class. This new regularization term when added on top of the moon regularization term is found to outperform the other state-of-the-art regularization terms in solving the heterogeneous data distribution problem. "
+}

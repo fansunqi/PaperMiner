@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Material Property Modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph neural network (GNN)-based force field",
+    "OpenMM package"
+  ],
+  "results": [
+    "Model can accurately capture the behavior of the solid phase only when the configurations from the solid phase are included in the training dataset"
+  ],
+  "paper_id": "63be28d490e50fcafdf52b39",
+  "title": "Evaluating the Transferability of Machine-Learned Force Fields for\n  Material Property Modeling",
+  "abstract": "  Machine-learned force fields have generated significant interest in recent years as a tool for molecular dynamics (MD) simulations, with the aim of developing accurate and efficient models that can replace classical interatomic potentials. However, before these models can be confidently applied to materials simulations, they must be thoroughly tested and validated. The existing tests on the radial distribution function and mean-squared displacements are insufficient in assessing the transferability of these models. Here we present a more comprehensive set of benchmarking tests for evaluating the transferability of machine-learned force fields. We use a graph neural network (GNN)-based force field coupled with the OpenMM package to carry out MD simulations for Argon as a test case. Our tests include computational X-ray photon correlation spectroscopy (XPCS) signals, which capture the density fluctuation at various length scales in the liquid phase, as well as phonon density-of-state in the solid phase and the liquid-solid phase transition behavior. Our results show that the model can accurately capture the behavior of the solid phase only when the configurations from the solid phase are included in the training dataset. This underscores the importance of appropriately selecting the training data set when developing machine-learned force fields. The tests presented in this work provide a necessary foundation for the development and application of machine-learned force fields for materials simulations. "
+}

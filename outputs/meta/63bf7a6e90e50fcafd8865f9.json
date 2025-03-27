@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Language Model Computation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer",
+    "External Memory",
+    "Universal Turing Machine Simulation"
+  ],
+  "results": [
+    "Flan-U-PaLM 540B combined with associative read-write memory simulates a universal Turing machine"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8865f9",
+  "title": "Memory Augmented Large Language Models are Computationally Universal",
+  "abstract": "  We show that transformer-based large language models are computationally universal when augmented with an external memory. Any deterministic language model that conditions on strings of bounded length is equivalent to a finite automaton, hence computationally limited. However, augmenting such models with a read-write memory creates the possibility of processing arbitrarily large inputs and, potentially, simulating any algorithm. We establish that an existing large language model, Flan-U-PaLM 540B, can be combined with an associative read-write memory to exactly simulate the execution of a universal Turing machine, $U_{15,2}$. A key aspect of the finding is that it does not require any modification of the language model weights. Instead, the construction relies solely on designing a form of stored instruction computer that can subsequently be programmed with a specific set of prompts. "
+}

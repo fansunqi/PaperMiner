@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formal analysis of chain-of-thought in language models"
+  ],
+  "datasets": [
+    "PrOntoQA"
+  ],
+  "methods": [
+    "Synthetic world model in first-order logic",
+    "Chain-of-thought analysis"
+  ],
+  "results": [
+    "LLMs capable of correct individual deduction steps",
+    "Difficulty with proof planning"
+  ],
+  "paper_id": "633cf5cf90e50fcafd772ddc",
+  "title": "Language Models Are Greedy Reasoners: A Systematic Formal Analysis of\n  Chain-of-Thought",
+  "abstract": "  Large language models (LLMs) have shown remarkable reasoning capabilities given chain-of-thought prompts (examples with intermediate reasoning steps). Existing benchmarks measure reasoning ability indirectly, by evaluating accuracy on downstream tasks such as mathematical reasoning. However, it is unclear how these models obtain the answers and whether they rely on simple heuristics rather than the generated chain-of-thought. To enable systematic exploration of the reasoning ability of LLMs, we present a new synthetic question-answering dataset called PrOntoQA, where each example is generated from a synthetic world model represented in first-order logic. This allows us to parse the generated chain-of-thought into symbolic proofs for formal analysis. Our analysis on InstructGPT and GPT-3 shows that LLMs are quite capable of making correct individual deduction steps, and so are generally capable of reasoning, even in fictional contexts. However, they have difficulty with proof planning: When multiple valid deduction steps are available, they are not able to systematically explore the different options. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "Poisson equation solver"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Convolution theorem",
+    "Discrete Fourier transforms",
+    "Parallel processing architectures"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f58bf",
+  "title": "SailFFish: A Lightweight, Parallelised Fast Poisson Solver Library",
+  "abstract": "  A solver for the Poisson equation for 1D, 2D and 3D regular grids is presented. The solver applies the convolution theorem in order to efficiently solve the Poisson equation in spectral space over a rectangular computational domain. Conversion to and from the spectral space is achieved through the use of discrete Fourier transforms, allowing for the application of highly optimised O(NlogN) algorithms. The data structure is configured to be modular such that the underlying interface for operations to, from and within the spectral space may be interchanged. For computationally demanding tasks, the library is optimised by making use of parallel processing architectures. A range of boundary conditions can be applied to the domain including periodic, Dirichlet, Neumann and fully unbounded. In the case of Neumann and Dirichlet boundary conditions, arbitrary inhomogeneous boundary conditions may be specified. The desired solution may be found either on regular (cell-boundary) or staggered (cell-centre) grid configurations. For problems with periodic, Dirichlet or Neumann boundary conditions either a pseudo-spectral or a second-order finite difference operator may be applied. For unbounded boundary conditions a range of Green's functions are available. In addition to this, a range of differential operators may be applied in the spectral space in order to treat different forms of the Poisson equation or to extract highly accurate gradients of the input fields. The underlying framework of the solver is first detailed, followed by a range of validations for each of the available boundary condition types. Finally, the performance of the library is investigated. The code is free and publicly available under a GNU v3.0 license. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Uncertainty-Aware Blob Detection",
+    "Stellar Population Modelling"
+  ],
+  "datasets": [
+    "M54 star cluster data"
+  ],
+  "methods": [
+    "Uncertainty-aware Laplacian-of-Gaussians (ULoG) method",
+    "Truncated Singular Value Decomposition (SVD-MCMC)"
+  ],
+  "results": [
+    "SVD-MCMC inferences match those from standard MCMC but are 5-10 times faster",
+    "Identified 2 or 3 significant, distinct stellar populations in M54"
+  ],
+  "paper_id": "62f5c4fe90e50fcafde9c7f2",
+  "title": "Uncertainty-Aware Blob Detection with an Application to Integrated-Light\n  Stellar Population Recoveries",
+  "abstract": "  Context. Blob detection is a common problem in astronomy. One example is in stellar population modelling, where the distribution of stellar ages and metallicities in a galaxy is inferred from observations. In this context, blobs may correspond to stars born in-situ versus those accreted from satellites, and the task of blob detection is to disentangle these components. A difficulty arises when the distributions come with significant uncertainties, as is the case for stellar population recoveries inferred from modelling spectra of unresolved stellar systems. There is currently no satisfactory method for blob detection with uncertainties. Aims. We introduce a method for uncertainty-aware blob detection developed in the context of stellar population modelling of integrated-light spectra of stellar systems. Methods. We develop theory and computational tools for an uncertainty-aware version of the classic Laplacian-of-Gaussians method for blob detection, which we call ULoG. This identifies significant blobs considering a variety of scales. As a prerequisite to apply ULoG to stellar population modelling, we introduce a method for efficient computation of uncertainties for spectral modelling. This method is based on the truncated Singular Value Decomposition and Markov Chain Monte Carlo sampling (SVD-MCMC). Results. We apply the methods to data of the star cluster M54. We show that the SVD-MCMC inferences match those from standard MCMC, but are a factor 5-10 faster to compute. We apply ULoG to the inferred M54 age/metallicity distributions, identifying between 2 or 3 significant, distinct populations amongst its stars. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/zysxmu/LTS"
+  ],
+  "tasks": [
+    "Quantization-aware training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Lottery ticket scratcher (LTS)"
+  ],
+  "results": [
+    "50%-70% weight updating eliminated",
+    "25%-35% FLOPs of the backward pass eliminated",
+    "2-bit MobileNetV2 improved by 5.05%"
+  ],
+  "paper_id": "6375a67090e50fcafd3e1837",
+  "title": "Exploiting the Partly Scratch-off Lottery Ticket for Quantization-Aware\n  Training",
+  "abstract": "  Quantization-aware training (QAT) receives extensive popularity as it well retains the performance of quantized networks. In QAT, the contemporary experience is that all quantized weights are updated for an entire training process. In this paper, this experience is challenged based on an interesting phenomenon we observed. Specifically, a large portion of quantized weights reaches the optimal quantization level after a few training epochs, which we refer to as the partly scratch-off lottery ticket. This straightforward-yet-valuable observation naturally inspires us to zero out gradient calculations of these weights in the remaining training period to avoid meaningless updating. To effectively find the ticket, we develop a heuristic method, dubbed lottery ticket scratcher (LTS), which freezes a weight once the distance between the full-precision one and its quantization level is smaller than a controllable threshold. Surprisingly, the proposed LTS typically eliminates 50%-70% weight updating and 25%-35% FLOPs of the backward pass, while still resulting on par with or even better performance than the compared baseline. For example, compared with the baseline, LTS improves 2-bit MobileNetV2 by 5.05%, eliminating 46% weight updating and 23% FLOPs of the backward pass. Code is at url{https://github.com/zysxmu/LTS}. "
+}

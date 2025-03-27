@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mixed-integer programming solver performance"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distance-based measures",
+    "Analytic centers",
+    "Multiregression"
+  ],
+  "results": [
+    "Reduction in the number of branch-and-bound nodes",
+    "Improved performance of individual methods"
+  ],
+  "paper_id": "639a906390e50fcafdefe648",
+  "title": "Cutting Plane Selection with Analytic Centers and Multiregression",
+  "abstract": "  Cutting planes are a crucial component of state-of-the-art mixed-integer programming solvers, with the choice of which subset of cuts to add being vital for solver performance. We propose new distance-based measures to qualify the value of a cut by quantifying the extent to which it separates relevant parts of the relaxed feasible set. For this purpose, we use the analytic centers of the relaxation polytope or of its optimal face, as well as alternative optimal solutions of the linear programming relaxation. We assess the impact of the choice of distance measure on root node performance and throughout the whole branch-and-bound tree, comparing our measures against those prevalent in the literature. Finally, by a multi-output regression, we predict the relative performance of each measure, using static features readily available before the separation process. Our results indicate that analytic center-based methods help to significantly reduce the number of branch-and-bound nodes needed to explore the search space and that our multiregression approach can further improve on any individual method. "
+}

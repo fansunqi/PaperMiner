@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Decentralized optimization",
+    "Gradient tracking",
+    "Network-level variance reduction"
+  ],
+  "datasets": [
+    "Synthetic",
+    "Real-world"
+  ],
+  "methods": [
+    "Gradient tracking",
+    "Network-level variance reduction"
+  ],
+  "results": [
+    "Linear convergence"
+  ],
+  "paper_id": "62a2b6915aee126c0f4d64ff",
+  "title": "Push--Pull with Device Sampling",
+  "abstract": "  We consider decentralized optimization problems in which a number of agents collaborate to minimize the average of their local functions by exchanging over an underlying communication graph. Specifically, we place ourselves in an asynchronous model where only a random portion of nodes perform computation at each iteration, while the information exchange can be conducted between all the nodes and in an asymmetric fashion. For this setting, we propose an algorithm that combines gradient tracking with a network-level variance reduction (in contrast to variance reduction within each node). This enables each node to track the average of the gradients of the objective functions. Our theoretical analysis shows that the algorithm converges linearly, when the local objective functions are strongly convex, under mild connectivity conditions on the expected mixing matrices. In particular, our result does not require the mixing matrices to be doubly stochastic. In the experiments, we investigate a broadcast mechanism that transmits information from computing nodes to their neighbors, and confirm the linear convergence of our method on both synthetic and real-world datasets. "
+}

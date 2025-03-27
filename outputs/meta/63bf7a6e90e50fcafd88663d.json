@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time simulation of viscoelastic tissue behavior"
+  ],
+  "datasets": [
+    "FEM datasets generated from a commercially available state-of-the-art numerical neurosurgery simulator"
+  ],
+  "methods": [
+    "Deep learning model based on convolutional (CNN) and recurrent layers (LSTM)",
+    "Physics-guided loss function"
+  ],
+  "results": [
+    "Better generalization in the prediction of deformations in unseen simulation cases",
+    "Improved accuracy over conventional CNN models (improvements from 8% to 30% depending on the magnitude of external forces)"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88663d",
+  "title": "Real-time simulation of viscoelastic tissue behavior with physics-guided\n  deep learning",
+  "abstract": "  Finite element methods (FEM) are popular approaches for simulation of soft tissues with elastic or viscoelastic behavior. However, their usage in real-time applications, such as in virtual reality surgical training, is limited by computational cost. In this application scenario, which typically involves transportable simulators, the computing hardware severely constrains the size or the level of details of the simulated scene. To address this limitation, data-driven approaches have been suggested to simulate mechanical deformations by learning the mapping rules from FEM generated datasets. Herein, we propose a deep learning method for predicting displacement fields of soft tissues with viscoelastic properties. The main contribution of this work is the use of a physics-guided loss function for the optimization of the deep learning model parameters. The proposed deep learning model is based on convolutional (CNN) and recurrent layers (LSTM) to predict spatiotemporal variations. It is augmented with a mass conservation law in the lost function to prevent the generation of physically inconsistent results. The deep learning model is trained on a set of FEM datasets that are generated from a commercially available state-of-the-art numerical neurosurgery simulator. The use of the physics-guided loss function in a deep learning model has led to a better generalization in the prediction of deformations in unseen simulation cases. Moreover, the proposed method achieves a better accuracy over the conventional CNN models, where improvements were observed in unseen tissue from 8% to 30% depending on the magnitude of external forces. It is hoped that the present investigation will help in filling the gap in applying deep learning in virtual reality simulators, hence improving their computational performance (compared to FEM simulations) and ultimately their usefulness. "
+}

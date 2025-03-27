@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Segmentation"
+  ],
+  "datasets": [
+    "CamVid"
+  ],
+  "methods": [
+    "Post-Train Adaptive (PTA) approach",
+    "U-Net+PTA neural network"
+  ],
+  "results": [
+    "Improved Dice score on the CamVid dataset",
+    "Better quality than the original U-Net (No PTA) model",
+    "6 PTA configurations available at runtime"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905f64",
+  "title": "Post-Train Adaptive U-Net for Image Segmentation",
+  "abstract": "  Typical neural network architectures used for image segmentation cannot be changed without further training. This is quite limiting as the network might not only be executed on a powerful server, but also on a mobile or edge device. Adaptive neural networks offer a solution to the problem by allowing certain adaptivity after the training process is complete. In this work for the first time, we apply Post-Train Adaptive (PTA) approach to the task of image segmentation. We introduce U-Net+PTA neural network, which can be trained once, and then adapted to different device performance categories. The two key components of the approach are PTA blocks and PTA-sampling training strategy. The post-train configuration can be done at runtime on any inference device including mobile. Also, the PTA approach has allowed to improve image segmentation Dice score on the CamVid dataset. The final trained model can be switched at runtime between 6 PTA configurations, which differ by inference time and quality. Importantly, all of the configurations have better quality than the original U-Net (No PTA) model. "
+}

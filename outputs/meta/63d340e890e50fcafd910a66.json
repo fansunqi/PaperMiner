@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/shohinm/parallel_search"
+  ],
+  "tasks": [
+    "Parallel search algorithms",
+    "Robotics domains"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GePA*SE: Generalized Edge-Based Parallel A* for Slow Evaluations"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63d340e890e50fcafd910a66",
+  "title": "GePA*SE: Generalized Edge-Based Parallel A* for Slow Evaluations",
+  "abstract": "  Parallel search algorithms have been shown to improve planning speed by harnessing the multithreading capability of modern processors. One such algorithm PA*SE achieves this by parallelizing state expansions, whereas another algorithm ePA*SE achieves this by effectively parallelizing edge evaluations. ePA*SE targets domains in which the action space comprises actions with expensive but similar evaluation times. However, in a number of robotics domains, the action space is heterogenous in the computational effort required to evaluate the cost of an action and its outcome. Motivated by this, we introduce GePA*SE: Generalized Edge-based Parallel A* for Slow Evaluations, which generalizes the key ideas of PA*SE and ePA*SE i.e. parallelization of state expansions and edge evaluations respectively. This extends its applicability to domains that have actions requiring varying computational effort to evaluate them. The open-source code for GePA*SE along with the baselines is available here: https://github.com/shohinm/parallel_search "
+}

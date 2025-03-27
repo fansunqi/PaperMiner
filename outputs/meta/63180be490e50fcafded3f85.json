@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unmanned aerial vehicles (UAVs) trajectory planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep-PANTHER",
+    "Imitation learning",
+    "Multimodal optimization"
+  ],
+  "results": [
+    "Replanning times two orders of magnitude faster than the optimization-based expert",
+    "Similar cost to the optimization-based expert",
+    "MSE loss up to 18 times smaller than state-of-the-art (Relaxed) Winner-Takes-All approaches",
+    "Good generalization to obstacle trajectories different from training"
+  ],
+  "paper_id": "63180be490e50fcafded3f85",
+  "title": "Deep-PANTHER: Learning-Based Perception-Aware Trajectory Planner in\n  Dynamic Environments",
+  "abstract": "  This paper presents Deep-PANTHER, a learning-based perception-aware trajectory planner for unmanned aerial vehicles (UAVs) in dynamic environments. Given the current state of the UAV, and the predicted trajectory and size of the obstacle, Deep-PANTHER generates multiple trajectories to avoid a dynamic obstacle while simultaneously maximizing its presence in the field of view (FOV) of the onboard camera. To obtain a computationally tractable real-time solution, imitation learning is leveraged to train a Deep-PANTHER policy using demonstrations provided by a multimodal optimization-based expert. Extensive simulations show replanning times that are two orders of magnitude faster than the optimization-based expert, while achieving a similar cost. By ensuring that each expert trajectory is assigned to one distinct student trajectory in the loss function, Deep-PANTHER can also capture the multimodality of the problem and achieve a mean squared error (MSE) loss with respect to the expert that is up to 18 times smaller than state-of-the-art (Relaxed) Winner-Takes-All approaches. Deep-PANTHER is also shown to generalize well to obstacle trajectories that differ from the ones used in training. "
+}

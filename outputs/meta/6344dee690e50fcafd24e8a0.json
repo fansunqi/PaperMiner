@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic Parsing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TPOL: Translates input sentences monotonically and then reorders them"
+  ],
+  "results": [
+    "Improves compositional generalization over conventional seq2seq models and other alignment-based approaches"
+  ],
+  "paper_id": "6344dee690e50fcafd24e8a0",
+  "title": "Translate First Reorder Later: Leveraging Monotonicity in Semantic\n  Parsing",
+  "abstract": "  Prior work in semantic parsing has shown that conventional seq2seq models fail at compositional generalization tasks. This limitation led to a resurgence of methods that model alignments between sentences and their corresponding meaning representations, either implicitly through latent variables or explicitly by taking advantage of alignment annotations. We take the second direction and propose TPOL, a two-step approach that first translates input sentences monotonically and then reorders them to obtain the correct output. This is achieved with a modular framework comprising a Translator and a Reorderer component. We test our approach on two popular semantic parsing datasets. Our experiments show that by means of the monotonic translations, TPOL can learn reliable lexico-logical patterns from aligned data, significantly improving compositional generalization both over conventional seq2seq models, as well as over other approaches that exploit gold alignments. "
+}

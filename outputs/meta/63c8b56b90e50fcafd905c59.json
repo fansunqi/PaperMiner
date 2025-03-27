@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spoken Content Retrieval"
+  ],
+  "datasets": [
+    "How2"
+  ],
+  "methods": [
+    "Semi-supervised ASR",
+    "N-best ASR transcripts",
+    "BERT-based ranking models"
+  ],
+  "results": [
+    "MRR improvement: 2-5.5% with semi-supervised ASR",
+    "MRR improvement: 3-4% with N-best early fusion",
+    "MRR gap reduction: 50% from 14.32% to 6.58%"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905c59",
+  "title": "Improving Noise Robustness for Spoken Content Retrieval using\n  Semi-supervised ASR and N-best Transcripts for BERT-based Ranking Models",
+  "abstract": "  BERT-based re-ranking and dense retrieval (DR) systems have been shown to improve search effectiveness for spoken content retrieval (SCR). However, both methods can still show a reduction in effectiveness when using ASR transcripts in comparison to accurate manual transcripts. We find that a known-item search task on the How2 dataset of spoken instruction videos shows a reduction in mean reciprocal rank (MRR) scores of 10-14%. As a potential method to reduce this disparity, we investigate the use of semi-supervised ASR transcripts and N-best ASR transcripts to mitigate ASR errors for spoken search using BERT-based ranking. Semi-supervised ASR transcripts brought 2-5.5% MRR improvements over standard ASR transcripts and our N-best early fusion methods for BERT DR systems improved MRR by 3-4%. Combining semi-supervised transcripts with N-best early fusion for BERT DR reduced the MRR gap in search effectiveness between manual and ASR transcripts by more than 50% from 14.32% to 6.58%. "
+}

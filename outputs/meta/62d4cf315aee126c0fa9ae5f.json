@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Selective Classification with Out-of-Distribution Data"
+  ],
+  "datasets": [
+    "ImageNet-scale datasets"
+  ],
+  "methods": [
+    "Softmax Information Retaining Combination (SIRC)"
+  ],
+  "results": [
+    "SIRC able to consistently match or outperform the baseline for SCOD"
+  ],
+  "paper_id": "62d4cf315aee126c0fa9ae5f",
+  "title": "Augmenting Softmax Information for Selective Classification with\n  Out-of-Distribution Data",
+  "abstract": "  Detecting out-of-distribution (OOD) data is a task that is receiving an increasing amount of research attention in the domain of deep learning for computer vision. However, the performance of detection methods is generally evaluated on the task in isolation, rather than also considering potential downstream tasks in tandem. In this work, we examine selective classification in the presence of OOD data (SCOD). That is to say, the motivation for detecting OOD samples is to reject them so their impact on the quality of predictions is reduced. We show under this task specification, that existing post-hoc methods perform quite differently compared to when evaluated only on OOD detection. This is because it is no longer an issue to conflate in-distribution (ID) data with OOD data if the ID data is going to be misclassified. However, the conflation within ID data of correct and incorrect predictions becomes undesirable. We also propose a novel method for SCOD, Softmax Information Retaining Combination (SIRC), that augments softmax-based confidence scores with feature-agnostic information such that their ability to identify OOD samples is improved without sacrificing separation between correct and incorrect ID predictions. Experiments on a wide variety of ImageNet-scale datasets and convolutional neural network architectures show that SIRC is able to consistently match or outperform the baseline for SCOD, whilst existing OOD detection methods fail to do so. "
+}

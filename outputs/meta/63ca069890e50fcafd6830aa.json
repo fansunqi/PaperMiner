@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nonlinear Dynamical Systems Verification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Interval analysis",
+    "Mixed monotone theory",
+    "Neural network controllers",
+    "Verification algorithm",
+    "Partitioning strategies"
+  ],
+  "results": [
+    "Scalable approach for safety analysis",
+    "Efficient computation of reachable sets",
+    "Matches performance of state-of-the-art verification algorithm for linear discretized systems"
+  ],
+  "paper_id": "63ca069890e50fcafd6830aa",
+  "title": "Interval Reachability of Nonlinear Dynamical Systems with Neural Network\n  Controllers",
+  "abstract": "  This paper proposes a computationally efficient framework, based on interval analysis, for rigorous verification of nonlinear continuous-time dynamical systems with neural network controllers. Given a neural network, we use an existing verification algorithm to construct inclusion functions for its input-output behavior. Inspired by mixed monotone theory, we embed the closed-loop dynamics into a larger system using an inclusion function of the neural network and a decomposition function of the open-loop system. This embedding provides a scalable approach for safety analysis of the neural control loop while preserving the nonlinear structure of the system.   We show that one can efficiently compute hyper-rectangular over-approximations of the reachable sets using a single trajectory of the embedding system. We design an algorithm to leverage this computational advantage through partitioning strategies, improving our reachable set estimates while balancing its runtime with tunable parameters. We demonstrate the performance of this algorithm through two case studies. First, we demonstrate this method's strength in complex nonlinear environments. Then, we show that our approach matches the performance of the state-of-the art verification algorithm for linear discretized systems. "
+}

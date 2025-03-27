@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "Segmenting epithelial layer of tubules in histopathological images of testicular tissue"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "encoder-decoder fully connected convolutional neural network (F-CNN) with ResNet-34 modules and squeeze & excitation (SE) attention block"
+  ],
+  "results": [
+    "f-score: 0.85, IoU: 0.92"
+  ],
+  "paper_id": "63d340e890e50fcafd9106ac",
+  "title": "Deep learning-based method for segmenting epithelial layer of tubules in\n  histopathological images of testicular tissue",
+  "abstract": "  There is growing concern that male reproduction is affected by environmental chemicals. One way to determine the adverse effect of environmental pollutants is to use wild animals as monitors and evaluate testicular toxicity using histopathology. Automated methods are necessary tools in the quantitative assessment of histopathology to overcome the subjectivity of manual evaluation and accelerate the process. We propose an automated method to process histology images of testicular tissue. Segmenting the epithelial layer of the seminiferous tubule is a prerequisite for developing automated methods to detect abnormalities in tissue. We suggest an encoder-decoder fully connected convolutional neural network (F-CNN) model to segment the epithelial layer of the seminiferous tubules in histological images. Using ResNet-34 modules in the encoder adds a shortcut mechanism to avoid the gradient vanishing and accelerate the network convergence. The squeeze & excitation (SE) attention block is integrated into the encoding module improving the segmentation and localization of epithelium. We applied the proposed method for the 2-class problem where the epithelial layer of the tubule is the target class. The f-score and IoU of the proposed method are 0.85 and 0.92. Although the proposed method is trained on a limited training set, it performs well on an independent dataset and outperforms other state-of-the-art methods. The pretrained ResNet-34 in the encoder and attention block suggested in the decoder result in better segmentation and generalization. The proposed method can be applied to testicular tissue images from any mammalian species and can be used as the first part of a fully automated testicular tissue processing pipeline. The dataset and codes are publicly available on GitHub. "
+}

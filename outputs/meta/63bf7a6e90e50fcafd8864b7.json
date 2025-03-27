@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "statistical modelling of biomedical shape and appearance"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "alignment and scaling of input data",
+    "creation of SSAM based on covariance across the population"
+  ],
+  "results": [
+    "parameterisation and quantification of shape change across a population",
+    "use in medical image segmentation"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8864b7",
+  "title": "pyssam -- a Python library for statistical modelling of biomedical shape\n  and appearance",
+  "abstract": "  pyssam is a Python library for creating statistical shape and appearance models (SSAMs) for biological (and other) shapes such as bones, lungs or other organs. A point cloud best describing the anatomical 'landmarks' of the organ are required from each sample in a small population as an input. Additional information such as landmark gray-value can be included to incorporate joint correlations of shape and 'appearance' into the model. Our library performs alignment and scaling of the input data and creates a SSAM based on covariance across the population. The output SSAM can be used to parameterise and quantify shape change across a population. pyssam is a small and low dependency codebase with examples included as Jupyter notebooks for several common SSAM computations. The given examples can easily be extended to alternative datasets, and also alternative tasks such as medical image segmentation by incorporating a SSAM as a constraint for segmented organs. "
+}

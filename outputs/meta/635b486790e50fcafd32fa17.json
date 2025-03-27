@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/hritam-98/IDEAL-ICASSP23"
+  ],
+  "tasks": [
+    "Medical Image Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dense (dis)similarity learning",
+    "Convolutional projection head",
+    "Contrastive loss",
+    "Bidirectional consistency regularization"
+  ],
+  "results": [
+    "Outperforms SoTA methods on cardiac MRI segmentation"
+  ],
+  "paper_id": "635b486790e50fcafd32fa17",
+  "title": "IDEAL: Improved DEnse locAL Contrastive Learning for Semi-Supervised\n  Medical Image Segmentation",
+  "abstract": "  Due to the scarcity of labeled data, Contrastive Self-Supervised Learning (SSL) frameworks have lately shown great potential in several medical image analysis tasks. However, the existing contrastive mechanisms are sub-optimal for dense pixel-level segmentation tasks due to their inability to mine local features. To this end, we extend the concept of metric learning to the segmentation task, using a dense (dis)similarity learning for pre-training a deep encoder network, and employing a semi-supervised paradigm to fine-tune for the downstream task. Specifically, we propose a simple convolutional projection head for obtaining dense pixel-level features, and a new contrastive loss to utilize these dense projections thereby improving the local representations. A bidirectional consistency regularization mechanism involving two-stream model training is devised for the downstream task. Upon comparison, our IDEAL method outperforms the SoTA methods by fair margins on cardiac MRI segmentation. Code available: https://github.com/hritam-98/IDEAL-ICASSP23 "
+}

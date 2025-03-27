@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-supervised learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pseudo label based semi-supervised learning"
+  ],
+  "results": [
+    "Generalization error analysis",
+    "Linear convergence rate",
+    "Lower bound on sampling complexity"
+  ],
+  "paper_id": "637aec2190e50fcafd928c2f",
+  "title": "Why the pseudo label based semi-supervised learning algorithm is\n  effective?",
+  "abstract": "  Recently, pseudo label based semi-supervised learning has achieved great success in many fields. The core idea of the pseudo label based semi-supervised learning algorithm is to use the model trained on the labeled data to generate pseudo labels on the unlabeled data, and then train a model to fit the previously generated pseudo labels. We give a theory analysis for why pseudo label based semi-supervised learning is effective in this paper. We mainly compare the generalization error of the model trained under two settings: (1) There are N labeled data. (2) There are N unlabeled data and a suitable initial model. Our analysis shows that, firstly, when the amount of unlabeled data tends to infinity, the pseudo label based semi-supervised learning algorithm can obtain model which have the same generalization error upper bound as model obtained by normally training in the condition of the amount of labeled data tends to infinity. More importantly, we prove that when the amount of unlabeled data is large enough, the generalization error upper bound of the model obtained by pseudo label based semi-supervised learning algorithm can converge to the optimal upper bound with linear convergence rate. We also give the lower bound on sampling complexity to achieve linear convergence rate. Our analysis contributes to understanding the empirical successes of pseudo label-based semi-supervised learning. "
+}

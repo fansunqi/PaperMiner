@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Accelerating Dynamic Sparse Deep Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sparse-Dense Transformation",
+    "Spider system",
+    "Permutation invariant"
+  ],
+  "results": [
+    "Up to 9.4x speedup over state-of-art solutions"
+  ],
+  "paper_id": "63d340ef90e50fcafd9115b6",
+  "title": "SparDA: Accelerating Dynamic Sparse Deep Neural Networks via\n  Sparse-Dense Transformation",
+  "abstract": "  Due to its high cost-effectiveness, sparsity has become the most important approach for building efficient deep-learning models. However, commodity accelerators are built mainly for efficient dense computation, creating a huge gap for general sparse computation to leverage. Existing solutions have to use time-consuming compiling to improve the efficiency of sparse kernels in an ahead-of-time manner and thus are limited to static sparsity. A wide range of dynamic sparsity opportunities is missed because their sparsity patterns are only known at runtime. This limits the future of building more biological brain-like neural networks that should be dynamically and sparsely activated.   In this paper, we bridge the gap between sparse computation and commodity accelerators by proposing a system, called Spider, for efficiently executing deep learning models with dynamic sparsity. We identify an important property called permutation invariant that applies to most deep-learning computations. The property enables Spider (1) to extract dynamic sparsity patterns of tensors that are only known at runtime with little overhead; and (2) to transform the dynamic sparse computation into an equivalent dense computation which has been extremely optimized on commodity accelerators. Extensive evaluation on diverse models shows Spider can extract and transform dynamic sparsity with negligible overhead but brings up to 9.4x speedup over state-of-art solutions. "
+}

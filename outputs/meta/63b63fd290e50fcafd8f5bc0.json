@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "github.com/wrslab/tubedet"
+  ],
+  "tasks": [
+    "Object detection",
+    "Training data preparation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Robotic in-hand observation",
+    "Data synthesis",
+    "YOLOv5x detectors"
+  ],
+  "results": [
+    "Comparable performance to manual data preparation",
+    "Optimized data configurations and parameter settings"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5bc0",
+  "title": "Automatically Prepare Training Data for YOLO Using Robotic In-Hand\n  Observation and Synthesis",
+  "abstract": "  Deep learning methods have recently exhibited impressive performance in object detection. However, such methods needed much training data to achieve high recognition accuracy, which was time-consuming and required considerable manual work like labeling images. In this paper, we automatically prepare training data using robots. Considering the low efficiency and high energy consumption in robot motion, we proposed combining robotic in-hand observation and data synthesis to enlarge the limited data set collected by the robot. We first used a robot with a depth sensor to collect images of objects held in the robot's hands and segment the object pictures. Then, we used a copy-paste method to synthesize the segmented objects with rack backgrounds. The collected and synthetic images are combined to train a deep detection neural network. We conducted experiments to compare YOLOv5x detectors trained with images collected using the proposed method and several other methods. The results showed that combined observation and synthetic images led to comparable performance to manual data preparation. They provided a good guide on optimizing data configurations and parameter settings for training detectors. The proposed method required only a single process and was a low-cost way to produce the combined data. Interested readers may find the data sets and trained models from the following GitHub repository: github.com/wrslab/tubedet "
+}

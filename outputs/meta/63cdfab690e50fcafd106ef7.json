@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Defending SDN against packet injection attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph Convolutional Neural Network models",
+    "distributed Ryu controllers"
+  ],
+  "results": [
+    "Detection accuracy: above 99% on various types of injection attacks",
+    "Mitigation solution maintains continuous functions of non-compromised nodes"
+  ],
+  "paper_id": "63cdfab690e50fcafd106ef7",
+  "title": "Defending SDN against packet injection attacks using deep learning",
+  "abstract": "  The (logically) centralised architecture of the software-defined networks makes them an easy target for packet injection attacks. In these attacks, the attacker injects malicious packets into the SDN network to affect the services and performance of the SDN controller and overflow the capacity of the SDN switches. Such attacks have been shown to ultimately stop the network functioning in real-time, leading to network breakdowns. There have been significant works on detecting and defending against similar DoS attacks in non-SDN networks, but detection and protection techniques for SDN against packet injection attacks are still in their infancy. Furthermore, many of the proposed solutions have been shown to be easily by-passed by simple modifications to the attacking packets or by altering the attacking profile. In this paper, we develop novel Graph Convolutional Neural Network models and algorithms for grouping network nodes/users into security classes by learning from network data. We start with two simple classes - nodes that engage in suspicious packet injection attacks and nodes that are not. From these classes, we then partition the network into separate segments with different security policies using distributed Ryu controllers in an SDN network. We show in experiments on an emulated SDN that our detection solution outperforms alternative approaches with above 99\\% detection accuracy on various types (both old and new) of injection attacks. More importantly, our mitigation solution maintains continuous functions of non-compromised nodes while isolating compromised/suspicious nodes in real-time. All code and data are publicly available for reproducibility of our results. "
+}

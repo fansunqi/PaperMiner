@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Uncertainty estimation in histopathological image classification"
+  ],
+  "datasets": [
+    "Camelyon17 breast cancer dataset"
+  ],
+  "methods": [
+    "Stochastic Variational Inference",
+    "Monte-Carlo Dropout",
+    "Deep Ensembles",
+    "Test-Time Data Augmentation"
+  ],
+  "results": [
+    "Higher accuracies and better calibration with ensembles",
+    "Significant increase in classification accuracy with rejection of uncertain tiles",
+    "Robustness against label noise in border regions"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5802",
+  "title": "Benchmarking common uncertainty estimation methods with\n  histopathological images under domain shift and label noise",
+  "abstract": "  In the past years, deep learning has seen an increase of usage in the domain of histopathological applications. However, while these approaches have shown great potential, in high-risk environments deep learning models need to be able to judge their own uncertainty and be able to reject inputs when there is a significant chance of misclassification. In this work, we conduct a rigorous evaluation of the most commonly used uncertainty and robustness methods for the classification of Whole-Slide-Images under domain shift using the H\\&E stained Camelyon17 breast cancer dataset. Although it is known that histopathological data can be subject to strong domain shift and label noise, to our knowledge this is the first work that compares the most common methods for uncertainty estimation under these aspects. In our experiments, we compare Stochastic Variational Inference, Monte-Carlo Dropout, Deep Ensembles, Test-Time Data Augmentation as well as combinations thereof. We observe that ensembles of methods generally lead to higher accuracies and better calibration and that Test-Time Data Augmentation can be a promising alternative when choosing an appropriate set of augmentations. Across methods, a rejection of the most uncertain tiles leads to a significant increase in classification accuracy on both in-distribution as well as out-of-distribution data. Furthermore, we conduct experiments comparing these methods under varying conditions of label noise. We observe that the border regions of the Camelyon17 dataset are subject to label noise and evaluate the robustness of the included methods against different noise levels. Lastly, we publish our code framework to facilitate further research on uncertainty estimation on histopathological data. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Obtaining conditional nonlinear optimal perturbations (CNOPs)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sampling algorithm based on state-of-the-art statistical machine learning techniques"
+  ],
+  "results": [
+    "CNOPs' spatial structures, objective values, and nonlinear error growth is nearly consistent",
+    "Computation time using the sampling approach with fewer samples is extremely shorter"
+  ],
+  "paper_id": "62ea18e05aee126c0fca2bb2",
+  "title": "An Adjoint-Free Algorithm for CNOPs via Sampling",
+  "abstract": "  In this paper, we propose a sampling algorithm based on state-of-the-art statistical machine learning techniques to obtain conditional nonlinear optimal perturbations (CNOPs), which is different from traditional (deterministic) optimization methods. Specifically, the traditional approach requires numerically computing the gradient (first-order information). However, the sampling approach directly reduces the expensive gradient (first-order information) by the objective value (zeroth-order information), which also avoids using the adjoint technique that requires large amounts of storage and is unusable for many atmosphere and ocean models. We present an intuitive analysis for the sampling algorithm and a rigorous Chernoff-type concentration inequality to probabilistically approximate the exact gradient. The experiments are implemented to obtain the CNOPs for two numerical models, the Burgers equation with small viscosity and the Lorenz-96 model. We demonstrate the CNOPs obtained with their spatial structures, objective values, computation times and nonlinear error growth. Compared with the performance of the three approaches, the CNOPs' spatial structures, objective values, and nonlinear error growth is nearly consistent, while the computation time using the sampling approach with fewer samples is extremely shorter. In other words, the new sampling approach from state-of-the-art statistical machine learning techniques shortens the computation time to the utmost at the cost of losing little accuracy. "
+}

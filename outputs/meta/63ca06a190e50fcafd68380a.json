@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Colonoscopy Endorobots",
+    "Monocular Depth Estimation",
+    "Lumen Segmentation"
+  ],
+  "datasets": [
+    "Synthetic dataset",
+    "Colon training model",
+    "Real colonoscopy videos"
+  ],
+  "methods": [
+    "Multi-task model",
+    "Self-supervised training",
+    "View synthesis",
+    "Ensemble of deep networks"
+  ],
+  "results": [
+    "Accurate scale-invariant depth maps",
+    "Lumen segmentation",
+    "Near real-time predictions"
+  ],
+  "paper_id": "63ca06a190e50fcafd68380a",
+  "title": "SoftEnNet: Symbiotic Monocular Depth Estimation and Lumen Segmentation\n  for Colonoscopy Endorobots",
+  "abstract": "  Colorectal cancer is the third most common cause of cancer death worldwide. Optical colonoscopy is the gold standard for detecting colorectal cancer; however, about 25 percent of polyps are missed during the procedure. A vision-based autonomous endorobot can improve colonoscopy procedures significantly through systematic, complete screening of the colonic mucosa. The reliable robot navigation needed requires a three-dimensional understanding of the environment and lumen tracking to support autonomous tasks. We propose a novel multi-task model that simultaneously predicts dense depth and lumen segmentation with an ensemble of deep networks. The depth estimation sub-network is trained in a self-supervised fashion guided by view synthesis; the lumen segmentation sub-network is supervised. The two sub-networks are interconnected with pathways that enable information exchange and thereby mutual learning. As the lumen is in the image's deepest visual space, lumen segmentation helps with the depth estimation at the farthest location. In turn, the estimated depth guides the lumen segmentation network as the lumen location defines the farthest scene location. Unlike other environments, view synthesis often fails in the colon because of the deformable wall, textureless surface, specularities, and wide field of view image distortions, all challenges that our pipeline addresses. We conducted qualitative analysis on a synthetic dataset and quantitative analysis on a colon training model and real colonoscopy videos. The experiments show that our model predicts accurate scale-invariant depth maps and lumen segmentation from colonoscopy images in near real-time. "
+}

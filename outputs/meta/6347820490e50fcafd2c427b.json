@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Input-based Adaptation of Frozen Vision Transformers"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Prompt Generation Network (PGN)",
+    "prompt inversion trick"
+  ],
+  "results": [
+    "Surpasses previous methods by a large margin on 12/12 datasets",
+    "Even outperforms full-finetuning on 5/12, while requiring 100x less parameters"
+  ],
+  "paper_id": "6347820490e50fcafd2c427b",
+  "title": "Prompt Generation Networks for Input-based Adaptation of Frozen Vision\n  Transformers",
+  "abstract": "  With the introduction of the transformer architecture in computer vision, increasing model scale has been demonstrated as a clear path to achieving performance and robustness gains. However, with model parameter counts reaching the billions, classical finetuning approaches are becoming increasingly limiting and even unfeasible when models become hosted as inference APIs, as in NLP. To this end, visual prompt learning, whereby a model is adapted by learning additional inputs, has emerged as a potential solution for adapting frozen and cloud-hosted models: During inference, this neither requires access to the internals of models' forward pass function, nor requires any post-processing. In this work, we propose the Prompt Generation Network (PGN) that generates high performing, input-dependent prompts by sampling from an end-to-end learned library of tokens. We further introduce the \"prompt inversion\" trick, with which PGNs can be efficiently trained in a latent space but deployed as strictly input-only prompts for inference. We show the PGN is effective in adapting pre-trained models to various new datasets: It surpasses previous methods by a large margin on 12/12 datasets and even outperforms full-finetuning on 5/12, while requiring 100x less parameters. "
+}

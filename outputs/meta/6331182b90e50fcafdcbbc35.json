@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Kinematic obstacle avoidance"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Control Barrier Functions (CBFs)",
+    "Collision cone approach"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6331182b90e50fcafdcbbc35",
+  "title": "Control Barrier Functions in UGVs for Kinematic Obstacle Avoidance: A\n  Collision Cone Approach",
+  "abstract": "  In this paper, we propose a new class of Control Barrier Functions (CBFs) for Unmanned Ground Vehicles (UGVs) that help avoid collisions with kinematic (non-zero velocity) obstacles. While the current forms of CBFs have been successful in guaranteeing safety/collision avoidance with static obstacles, extensions for the dynamic case with torque/acceleration-controlled unicycle and bicycle models have seen limited success. Moreover, with these nonholonomic UGV models, applications of existing CBFs have been conservative in terms of control, i.e., steering/thrust control has not been possible under certain common scenarios. Drawing inspiration from the classical use of collision cones for obstacle avoidance in path planning, we introduce its novel CBF formulation with theoretical guarantees on safety for both the unicycle and bicycle models. The main idea is to ensure that the velocity of the obstacle w.r.t. the vehicle is always pointing away from the vehicle. Accordingly, we construct a constraint that ensures that the velocity vector always avoids a cone of vectors pointing at the vehicle. The efficacy of this new control methodology is experimentally verified on the Copernicus mobile robot. We further extend it to the bicycle model and demonstrate collision avoidance under various scenarios in the CARLA simulator. "
+}

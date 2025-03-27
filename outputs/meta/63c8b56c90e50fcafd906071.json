@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://www.youtube.com/watch?v=KneELRT8GzU&list=PLouWbAcP4zIvPgaARrV223lf2eiSR-eSS"
+  ],
+  "tasks": [
+    "Autonomous navigation through crowded dynamic scenes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DRL-VO",
+    "Reinforcement learning",
+    "Velocity obstacles"
+  ],
+  "results": [
+    "Better balance between collision avoidance and speed",
+    "Higher success rate and faster average speed",
+    "Generalization to different crowd sizes and unseen environments",
+    "Direct operation in real-world environments with zero retraining",
+    "Operation in highly constrained static environments without additional training"
+  ],
+  "paper_id": "63c8b56c90e50fcafd906071",
+  "title": "DRL-VO: Learning to Navigate Through Crowded Dynamic Scenes Using\n  Velocity Obstacles",
+  "abstract": "  This paper proposes a novel learning-based control policy with strong generalizability to new environments that enables a mobile robot to navigate autonomously through spaces filled with both static obstacles and dense crowds of pedestrians. The policy uses a unique combination of input data to generate the desired steering angle and forward velocity: a short history of lidar data, kinematic data about nearby pedestrians, and a sub-goal point. The policy is trained in a reinforcement learning setting using a reward function that contains a novel term based on velocity obstacles to guide the robot to actively avoid pedestrians and move towards the goal. Through a series of 3D simulated experiments with up to 55 pedestrians, this control policy is able to achieve a better balance between collision avoidance and speed (i.e., higher success rate and faster average speed) than state-of-the-art model-based and learning-based policies, and it also generalizes better to different crowd sizes and unseen environments. An extensive series of hardware experiments demonstrate the ability of this policy to directly work in different real-world environments with different crowd sizes with zero retraining. Furthermore, a series of simulated and hardware experiments show that the control policy also works in highly constrained static environments on a different robot platform without any additional training. Lastly, several important lessons that can be applied to other robot learning systems are summarized. Multimedia demonstrations are available at https://www.youtube.com/watch?v=KneELRT8GzU&list=PLouWbAcP4zIvPgaARrV223lf2eiSR-eSS. "
+}

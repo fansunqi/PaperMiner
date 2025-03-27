@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Colonic Polyp Segmentation"
+  ],
+  "datasets": [
+    "ETIS-LaribPolypDB"
+  ],
+  "methods": [
+    "Fusion-Transformer-HardNetMSEG (Fu-TransHNet)",
+    "Multi-view collaborative learning",
+    "Global-Local Feature Fusion (GLFF)",
+    "Dense Fusion of Multi-scale features (DFM)"
+  ],
+  "results": [
+    "mDice: 12.4% and 6.2% higher than HardNet-MSEG and TransFuse-s",
+    "Superior to existing methods on five benchmark datasets"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b762",
+  "title": "Cooperation Learning Enhanced Colonic Polyp Segmentation Based on\n  Transformer-CNN Fusion",
+  "abstract": "  Traditional segmentation methods for colonic polyps are mainly designed based on low-level features. They could not accurately extract the location of small colonic polyps. Although the existing deep learning methods can improve the segmentation accuracy, their effects are still unsatisfied. To meet the above challenges, we propose a hybrid network called Fusion-Transformer-HardNetMSEG (i.e., Fu-TransHNet) in this study. Fu-TransHNet uses deep learning of different mechanisms to fuse each other and is enhanced with multi-view collaborative learning techniques. Firstly, the Fu-TransHNet utilizes the Transformer branch and the CNN branch to realize the global feature learning and local feature learning, respectively. Secondly, a fusion module is designed to integrate the features from two branches. The fusion module consists of two parts: 1) the Global-Local Feature Fusion (GLFF) part and 2) the Dense Fusion of Multi-scale features (DFM) part. The former is built to compensate the feature information mission from two branches at the same scale; the latter is constructed to enhance the feature representation. Thirdly, the above two branches and fusion modules utilize multi-view cooperative learning techniques to obtain their respective weights that denote their importance and then make a final decision comprehensively. Experimental results showed that the Fu-TransHNet network was superior to the existing methods on five widely used benchmark datasets. In particular, on the ETIS-LaribPolypDB dataset containing many small-target colonic polyps, the mDice obtained by Fu-TransHNet were 12.4% and 6.2% higher than the state-of-the-art methods HardNet-MSEG and TransFuse-s, respectively. "
+}

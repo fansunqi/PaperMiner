@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/ltzovo/DAMamba"
+  ],
+  "tasks": [
+    "Image classification",
+    "Object detection",
+    "Instance segmentation",
+    "Semantic segmentation"
+  ],
+  "datasets": [
+    "ImageNet-1K",
+    "COCO2017",
+    "ADE20K"
+  ],
+  "methods": [
+    "Dynamic Adaptive Scan (DAS)",
+    "Mamba model",
+    "Convolutional positional encoding (Convpos)",
+    "ConvFFN"
+  ],
+  "results": [
+    "DAMamba-B achieves an accuracy of 85.2% on ImageNet-1K",
+    "DAMamba-T/S/B achieves object detection mAPs of 48.5/49.8/50.6 on COCO2017",
+    "DAMamba-T/S/B achieves instance segmentation mAPs of 50.3/51.2/51.9 on ADE20K"
+  ],
+  "title": "DAMamba Vision State Space Model with Dynamic Adaptive Scan.pdf",
+  "abstract": "State space models (SSMs) have recently gar- nered significant attention in computer vision. However, due to the unique characteristics of image data, adapting SSMs from natural lan- guage processing to computer vision has not out- performed the state-of-the-art convolutional neu- ral networks (CNNs) and Vision Transformers (ViTs). Existing vision SSMs primarily lever- age manually designed scans to flatten image patches into sequences locally or globally. This approach disrupts the original semantic spatial adjacency of the image and lacks flexibility, mak- ing it difficult to capture complex image struc- tures. To address this limitation, we propose Dynamic Adaptive Scan (DAS), a data-driven method that adaptively allocates scanning orders and regions. This enables more flexible model- ing capabilities while maintaining linear compu- tational complexity and global modeling capacity. Based on DAS, we further propose the vision backbone DAMamba, which significantly outper- forms current state-of-the-art vision Mamba mod- els in vision tasks such as image classification, object detection, instance segmentation, and se- mantic segmentation. Notably, it surpasses some of the latest state-of-the-art CNNs and ViTs. Code will be available at https://github.com/ ltzovo/DAMamba. 1. Introduction In recent years, to tackle the limitations of traditional con- volutional neural networks (CNNs) (LeCun et al., 1998) in modeling long-range dependencies, Transformer (Vaswani *Equal contribution \u2020Corresponding author 1Key Laboratory of Multimedia Trusted Perception and Effcient Computing, Min- istry of Education of China, Xiamen University, China. 2School of Informatics, Xiamen University, China. 3School of Engineer- ing Science, University of Chinese Academy of Sciences, China. 4School of Artificial Intelligence, Beihang University, China. Cor- respondence to: Taisong Jin <jintaisong@xmu.edu.cn>. Figure 1. The trade-off between ImageNet-1K top-1 accuracy and inference throughput. All the models are trained under the DeiT training hyperparameters. The inference throughput is measured on an NVIDIA RTX 3090 GPU with a batch size 128. It can be seen that under the same inference throughput or accuracy, the accuracy or inference throughput of the proposed DAMamba significantly outperforms the SSMs, ViTs and CNNs, indicating that the proposed DAMamba achieves state-of-the-art performance and efficiency. et al., 2017) have been introduced into computer vision, achieving state-of-the-art performance in image classifica- tion task. However, the self-attention mechanism within Transformer, due to its quadratic computational complex- ity, faces limitations when applied to high-resolution vision downstream tasks such as object detection and image seg- mentation. To address this issue, researchers have proposed various sparse attention mechanisms (Wang et al., 2021; 2022; Xia et al., 2022; Dong et al., 2022; Zhu et al., 2023; Jiao et al., 2023; Zhang et al., 2024; Shi, 2024). These mechanisms reduce complexity by introducing sparsity into attention computations, but this usually comes at the ex- pense of the model\u2019s global modeling capability, limiting their performance in real applications. State space models (SSMs) (Gu et al., 2021), represented by Mamba (Gu & Dao, 2023), have recently garnered sig- nificant attention from researchers. The core module, the S6 block, selectively retains or discards information based on the relevance of each element in a sequence. By incor- 1 arXiv:2502.12627v1 [cs.CV] 18 Feb 2025"
+}

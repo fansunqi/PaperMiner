@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Point cloud downsampling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "AS-PD: A novel task-aware sampling framework",
+    "Point-wise multi-layer perceptrons (MLPs)",
+    "Density encoding",
+    "Proper training scheme"
+  ],
+  "results": [
+    "Surpasses the state-of-the-art method in terms of downstream performance",
+    "Better generality to unseen task models"
+  ],
+  "paper_id": "6363316e90e50fcafd4fbd0a",
+  "title": "AS-PD: An Arbitrary-Size Downsampling Framework for Point Clouds",
+  "abstract": "  Point cloud downsampling is a crucial pre-processing operation to downsample points in order to unify data size and reduce computational cost, to name a few. Recent research on point cloud downsampling has achieved great success which concentrates on learning to sample in a task-aware way. However, existing learnable samplers can not directly perform arbitrary-size downsampling, and assume the input size is fixed. In this paper, we introduce the AS-PD, a novel task-aware sampling framework that directly downsamples point clouds to any smaller size based on a sample-to-refine strategy. Given an input point cloud of arbitrary size, we first perform a task-agnostic pre-sampling on the input point cloud to a specified sample size. Then, we obtain the sampled set by refining the pre-sampled set to make it task-aware, driven by downstream task losses. The refinement is realized by adding each pre-sampled point with a small offset predicted by point-wise multi-layer perceptrons (MLPs). With the density encoding and proper training scheme, the framework can learn to adaptively downsample point clouds of different input sizes to arbitrary sample sizes. We evaluate sampled results for classification and registration tasks, respectively. The proposed AS-PD surpasses the state-of-the-art method in terms of downstream performance. Further experiments also show that our AS-PD exhibits better generality to unseen task models, implying that the proposed sampler is optimized to the task rather than a specified task model. "
+}

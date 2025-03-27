@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Contextual Model Selection"
+  ],
+  "datasets": [
+    "CIFAR10"
+  ],
+  "methods": [
+    "Contextual Active Model Selection (CAMS)"
+  ],
+  "results": [
+    "CAMS incurs less than 10% of the label cost compared to the best online model selection baselines"
+  ],
+  "paper_id": "62cf89cd5aee126c0f563a30",
+  "title": "Cost-Effective Online Contextual Model Selection",
+  "abstract": "  How can we collect the most useful labels to learn a model selection policy, when presented with arbitrary heterogeneous data streams? In this paper, we formulate this task as an online contextual active model selection problem, where at each round the learner receives an unlabeled data point along with a context. The goal is to output the best model for any given context without obtaining an excessive amount of labels. In particular, we focus on the task of selecting pre-trained classifiers, and propose a contextual active model selection algorithm (CAMS), which relies on a novel uncertainty sampling query criterion defined on a given policy class for adaptive model selection. In comparison to prior art, our algorithm does not assume a globally optimal model. We provide rigorous theoretical analysis for the regret and query complexity under both adversarial and stochastic settings. Our experiments on several benchmark classification datasets demonstrate the algorithm's effectiveness in terms of both regret and query complexity. Notably, to achieve the same accuracy, CAMS incurs less than 10% of the label cost when compared to the best online model selection baselines on CIFAR10. "
+}

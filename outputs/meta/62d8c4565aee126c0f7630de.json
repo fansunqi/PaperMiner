@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fault-Tolerant Distributed Directories"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hierarchical partition of graph",
+    "Spanning trees",
+    "Directory path maintenance"
+  ],
+  "results": [
+    "Edge failures impact functionality and performance",
+    "Directory path dilated by factor f",
+    "Message complexity affected by factor f",
+    "Move operation complexity increases by factor f"
+  ],
+  "paper_id": "62d8c4565aee126c0f7630de",
+  "title": "Fault-Tolerant Distributed Directories",
+  "abstract": "  A distributed directory is an overlay data structure on a graph $G$ that helps to access a shared token $t$. The directory supports three operations: publish, to announce the token, lookup, to read the contents of the token, and move, to get exclusive update access to the token. The directory is built upon a hierarchical partition of the graph using either weak or strong clusters. The main mechanism is the maintenance of a directory path that starts at the root node in the hierarchy and points to the current owner of the token. In the literature, there are known directory algorithms based on hierarchical graph structures, but none of them have considered failures. Given a hierarchical partition, we consider the impact of $f$ edge failures on the functionality and performance of the distributed directory. The edge failures may result in the splitting of clusters into up to $f+1$ connected components and an increase in the number of levels in the hierarchy. To recover the hierarchical partition after failures, we maintain spanning trees in the clusters and their connected components. If $G$ remains connected, we show that each level of the directory path is dilated by only a factor $f$. We also show that the performance of the publish and lookup operations is affected in the worst case by a factor $f$ with respect to the message complexity. The message complexity of the move operation increases by an $f$ factor and the number of additional layers in the hierarchy. "
+}

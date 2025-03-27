@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://goattack.far.ai/"
+  ],
+  "tasks": [
+    "Go-playing AI"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adversarial Policies",
+    "Modified KataGo Implementation"
+  ],
+  "results": [
+    ">99% win rate without tree search",
+    ">97% win rate with superhuman search",
+    "Adversaries trick KataGo into making blunders",
+    "Transferable to other superhuman Go-playing AIs",
+    "Interpretable by human experts"
+  ],
+  "paper_id": "6361dfe590e50fcafd898fda",
+  "title": "Adversarial Policies Beat Superhuman Go AIs",
+  "abstract": "  We attack the state-of-the-art Go-playing AI system KataGo by training adversarial policies that play against frozen KataGo victims. Our attack achieves a >99% win rate when KataGo uses no tree search, and a >97% win rate when KataGo uses enough search to be superhuman. We train our adversaries with a modified KataGo implementation, using less than 14% of the compute used to train the original KataGo. Notably, our adversaries do not win by learning to play Go better than KataGo -- in fact, our adversaries are easily beaten by human amateurs. Instead, our adversaries win by tricking KataGo into making serious blunders. Our attack transfers zero-shot to other superhuman Go-playing AIs, and is interpretable to the extent that human experts can successfully implement it, without algorithmic assistance, to consistently beat superhuman AIs. Our results demonstrate that even superhuman AI systems may harbor surprising failure modes. Example games are available at https://goattack.far.ai/. "
+}

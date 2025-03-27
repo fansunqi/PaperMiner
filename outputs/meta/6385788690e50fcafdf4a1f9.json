@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-Time Object Detection"
+  ],
+  "datasets": [
+    "COCO"
+  ],
+  "methods": [
+    "Neural Architecture Search (NAS)",
+    "Reparameterized Generalized-FPN (RepGFPN)",
+    "AlignedOTA label assignment",
+    "distillation enhancement",
+    "MAE-NAS",
+    "efficient layer aggregation networks (ELAN)",
+    "spatial pyramid pooling",
+    "focus modules",
+    "large neck, small head",
+    "Generalized-FPN with accelerated queen-fusion"
+  ],
+  "results": [
+    "DAMO-YOLO outperforms the state-of-the-art YOLO series",
+    "DAMO-YOLO-T/S/M/L achieves 43.6/47.7/50.2/51.9 mAPs on COCO with respective latencies of 2.78/3.83/5.62/7.95 ms on T4 GPUs",
+    "DAMO-YOLO-Ns/Nm/Nl achieves 32.3/38.2/40.5 mAPs on COCO with respective latencies of 4.08/5.05/6.69 ms on X86-CPU"
+  ],
+  "paper_id": "6385788690e50fcafdf4a1f9",
+  "title": "DAMO-YOLO : A Report on Real-Time Object Detection Design",
+  "abstract": "  In this report, we present a fast and accurate object detection method dubbed DAMO-YOLO, which achieves higher performance than the state-of-the-art YOLO series. DAMO-YOLO is extended from YOLO with some new technologies, including Neural Architecture Search (NAS), efficient Reparameterized Generalized-FPN (RepGFPN), a lightweight head with AlignedOTA label assignment, and distillation enhancement. In particular, we use MAE-NAS, a method guided by the principle of maximum entropy, to search our detection backbone under the constraints of low latency and high performance, producing ResNet/CSP-like structures with spatial pyramid pooling and focus modules. In the design of necks and heads, we follow the rule of ``large neck, small head''.We import Generalized-FPN with accelerated queen-fusion to build the detector neck and upgrade its CSPNet with efficient layer aggregation networks (ELAN) and reparameterization. Then we investigate how detector head size affects detection performance and find that a heavy neck with only one task projection layer would yield better results.In addition, AlignedOTA is proposed to solve the misalignment problem in label assignment. And a distillation schema is introduced to improve performance to a higher level. Based on these new techs, we build a suite of models at various scales to meet the needs of different scenarios. For general industry requirements, we propose DAMO-YOLO-T/S/M/L. They can achieve 43.6/47.7/50.2/51.9 mAPs on COCO with the latency of 2.78/3.83/5.62/7.95 ms on T4 GPUs respectively. Additionally, for edge devices with limited computing power, we have also proposed DAMO-YOLO-Ns/Nm/Nl lightweight models. They can achieve 32.3/38.2/40.5 mAPs on COCO with the latency of 4.08/5.05/6.69 ms on X86-CPU. Our proposed general and lightweight models have outperformed other YOLO series models in their respective application scenarios. "
+}

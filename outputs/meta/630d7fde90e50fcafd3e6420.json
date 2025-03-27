@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Head and Neck Lymph Node Level Delineation"
+  ],
+  "datasets": [
+    "35 planning CTs"
+  ],
+  "methods": [
+    "nnU-net 3D-fullres/2D-ensemble model"
+  ],
+  "results": [
+    "Expert-level accuracy",
+    "DL segmentations with CT slice plane adjustment were rated significantly better",
+    "Geometric accuracy of DL segmentations was not different from intraobserver variability"
+  ],
+  "paper_id": "630d7fde90e50fcafd3e6420",
+  "title": "Deep learning for automatic head and neck lymph node level delineation\n  provides expert-level accuracy",
+  "abstract": "  Background: Deep learning (DL)-based head and neck lymph node level (HN_LNL) autodelineation is of high relevance to radiotherapy research and clinical treatment planning but still underinvestigated in academic literature. Methods: An expert-delineated cohort of 35 planning CTs was used for training of an nnU-net 3D-fullres/2D-ensemble model for autosegmentation of 20 different HN_LNL. A second cohort acquired at the same institution later in time served as the test set (n=20). In a completely blinded evaluation, 3 clinical experts rated the quality of DL autosegmentations in a head-to-head comparison with expert-created contours. For a subgroup of 10 cases, intraobserver variability was compared to the average DL autosegmentation accuracy on the original and recontoured set of expert segmentations. A postprocessing step to adjust craniocaudal boundaries of level autosegmentations to the CT slice plane was introduced and the effect on geometric accuracy and expert rating was investigated. Results: Blinded expert ratings for DL segmentations and expert-created contours were not significantly different. DL segmentations with slice plane adjustment were rated numerically higher (mean, 81.0 vs. 79.6,p=0.185) and DL segmentations without slice plane adjustment were rated numerically lower (77.2 vs. 79.6,p=0.167) than manually drawn contours. DL segmentations with CT slice plane adjustment were rated significantly better than DL contours without slice plane adjustment (81.0 vs. 77.2,p=0.004). Geometric accuracy of DL segmentations was not different from intraobserver variability (mean, 0.76 vs. 0.77, p=0.307). Conclusions: We show that a nnU-net 3D-fullres/2D-ensemble model can be used for highly accurate autodelineation of HN_LNL using only a limited training dataset that is ideally suited for large-scale standardized autodelineation of HN_LNL in the research setting. "
+}

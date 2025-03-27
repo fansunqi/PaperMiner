@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robotic Symmetrical Paper Folding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Force Manifolds",
+    "Sim2Real Framework",
+    "Scaling Analysis",
+    "Path Planning",
+    "Closed-loop Model-predictive Control"
+  ],
+  "results": [
+    "15\u00d7 faster offline trajectory generation",
+    "Improved robotic manipulation performance compared to state-of-the-art folding strategies"
+  ],
+  "paper_id": "64ae25593fda6d7f0658cfa6",
+  "title": "Learning Neural Force Manifolds for Sim2Real Robotic Symmetrical Paper\n  Folding",
+  "abstract": "Robotic manipulation of slender objects is challenging, especially when the\ninduced deformations are large and nonlinear. Traditionally, learning-based\ncontrol approaches, such as imitation learning, have been used to address\ndeformable material manipulation. These approaches lack generality and often\nsuffer critical failure from a simple switch of material, geometric, and/or\nenvironmental (e.g., friction) properties. This article tackles a fundamental\nbut difficult deformable manipulation task: forming a predefined fold in paper\nwith only a single manipulator. A sim2real framework combining\nphysically-accurate simulation and machine learning is used to train a deep\nneural network capable of predicting the external forces induced on the\nmanipulated paper given a grasp position. We frame the problem using scaling\nanalysis, resulting in a control framework robust against material and\ngeometric changes. Path planning is then carried out over the generated\n\u201cneural force manifold\u201d to produce robot manipulation trajectories optimized\nto prevent sliding, with offline trajectory generation finishing 15\u00d7\nfaster than previous physics-based folding methods. The inference speed of the\ntrained model enables the incorporation of real-time visual feedback to achieve\nclosed-loop model-predictive control. Real-world experiments demonstrate that\nour framework can greatly improve robotic manipulation performance compared to\nstate-of-the-art folding strategies, even when manipulating paper objects of\nvarious materials and shapes."
+}

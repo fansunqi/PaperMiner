@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/ayumiymk/DiG"
+  ],
+  "tasks": [
+    "Text Recognition"
+  ],
+  "datasets": [
+    "Irregular scene text recognition datasets",
+    "11 benchmarks"
+  ],
+  "methods": [
+    "Contrastive learning",
+    "Masked image modeling"
+  ],
+  "results": [
+    "Outperforms previous self-supervised text recognition methods by 10.2%-20.2%",
+    "Exceeds previous state-of-the-art text recognition methods by averagely 5.3%"
+  ],
+  "paper_id": "62c2a9595aee126c0fcf0b4d",
+  "title": "Reading and Writing: Discriminative and Generative Modeling for\n  Self-Supervised Text Recognition",
+  "abstract": "  Existing text recognition methods usually need large-scale training data. Most of them rely on synthetic training data due to the lack of annotated real images. However, there is a domain gap between the synthetic data and real data, which limits the performance of the text recognition models. Recent self-supervised text recognition methods attempted to utilize unlabeled real images by introducing contrastive learning, which mainly learns the discrimination of the text images. Inspired by the observation that humans learn to recognize the texts through both reading and writing, we propose to learn discrimination and generation by integrating contrastive learning and masked image modeling in our self-supervised method. The contrastive learning branch is adopted to learn the discrimination of text images, which imitates the reading behavior of humans. Meanwhile, masked image modeling is firstly introduced for text recognition to learn the context generation of the text images, which is similar to the writing behavior. The experimental results show that our method outperforms previous self-supervised text recognition methods by 10.2%-20.2% on irregular scene text recognition datasets. Moreover, our proposed text recognizer exceeds previous state-of-the-art text recognition methods by averagely 5.3% on 11 benchmarks, with similar model size. We also demonstrate that our pre-trained model can be easily applied to other text-related tasks with obvious performance gain. The code is available at https://github.com/ayumiymk/DiG. "
+}

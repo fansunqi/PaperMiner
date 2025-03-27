@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hypergraph modeling",
+    "Hypercore decomposition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "($k$, $t$)-hypercore",
+    "Real-world hypergraphs analysis"
+  ],
+  "results": [
+    "Linear time complexity for ($k$, $t$)-hypercore computation",
+    "Similar ($k$, $t$)-hypercore structures in real-world hypergraphs",
+    "Applications in identifying influential nodes, dense substructures, and vulnerability"
+  ],
+  "paper_id": "63cdfab690e50fcafd106f0e",
+  "title": "Hypercore Decomposition for Non-Fragile Hyperedges: Concepts,\n  Algorithms, Observations, and Applications",
+  "abstract": "  Hypergraphs are a powerful abstraction for modeling high-order relations, which are ubiquitous in many fields. A hypergraph consists of nodes and hyperedges (i.e., subsets of nodes); and there have been a number of attempts to extend the notion of $k$-cores, which proved useful with numerous applications for pairwise graphs, to hypergraphs. However, the previous extensions are based on an unrealistic assumption that hyperedges are fragile, i.e., a high-order relation becomes obsolete as soon as a single member leaves it.   In this work, we propose a new substructure model, called ($k$, $t$)-hypercore, based on the assumption that high-order relations remain as long as at least $t$ fraction of the members remain. Specifically, it is defined as the maximal subhypergraph where (1) every node has degree at least $k$ in it and (2) at least $t$ fraction of the nodes remain in every hyperedge. We first prove that, given $t$ (or $k$), finding the ($k$, $t$)-hypercore for every possible $k$ (or $t$) can be computed in time linear w.r.t the sum of the sizes of hyperedges. Then, we demonstrate that real-world hypergraphs from the same domain share similar ($k$, $t$)-hypercore structures, which capture different perspectives depending on $t$. Lastly, we show the successful applications of our model in identifying influential nodes, dense substructures, and vulnerability in hypergraphs. "
+}

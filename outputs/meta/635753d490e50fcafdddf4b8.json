@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Few-shot learning",
+    "Finetuning performance"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Forgetful Causal Masking (FCM)",
+    "T-FCM"
+  ],
+  "results": [
+    "Significant improvement in few-shot and finetuning performance of PaLM",
+    "Further improvement in finetuning performance with T-FCM"
+  ],
+  "paper_id": "635753d490e50fcafdddf4b8",
+  "title": "Towards Better Few-Shot and Finetuning Performance with Forgetful Causal\n  Language Models",
+  "abstract": "  Large language models (LLM) trained using the next-token-prediction objective, such as GPT3 and PaLM, have revolutionized natural language processing in recent years by showing impressive zero-shot and few-shot capabilities across a wide range of tasks. In this work, we propose a simple technique that significantly boosts the performance of LLMs without adding computational cost. Our key observation is that, by performing the next token prediction task with randomly selected past tokens masked out, we can improve the quality of the learned representations for downstream language understanding tasks. We hypothesize that randomly masking past tokens prevents over-attending to recent tokens and encourages attention to tokens in the distant past. We find that our method, Forgetful Causal Masking (FCM), significantly improves both few-shot and finetuning performance of PaLM. We further consider a simple extension, T-FCM, which introduces bidirectional context to causal language model without altering the sequence order, and further improves finetuning performance. "
+}

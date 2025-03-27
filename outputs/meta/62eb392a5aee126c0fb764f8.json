@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://www.generecommender.com?utm_source=DeepProphet2_paper&utm_medium=pdf"
+  ],
+  "tasks": [
+    "Gene Recommendation"
+  ],
+  "datasets": [
+    "PubMed"
+  ],
+  "methods": [
+    "Transformer-based model"
+  ],
+  "results": [
+    "Best bias-variance trade-off",
+    "Discovered sets of genes implicated in diseases and pathways"
+  ],
+  "paper_id": "62eb392a5aee126c0fb764f8",
+  "title": "DeepProphet2 -- A Deep Learning Gene Recommendation Engine",
+  "abstract": "  New powerful tools for tackling life science problems have been created by recent advances in machine learning. The purpose of the paper is to discuss the potential advantages of gene recommendation performed by artificial intelligence (AI). Indeed, gene recommendation engines try to solve this problem: if the user is interested in a set of genes, which other genes are likely to be related to the starting set and should be investigated? This task was solved with a custom deep learning recommendation engine, DeepProphet2 (DP2), which is freely available to researchers worldwide via https://www.generecommender.com?utm_source=DeepProphet2_paper&utm_medium=pdf. Hereafter, insights behind the algorithm and its practical applications are illustrated.   The gene recommendation problem can be addressed by mapping the genes to a metric space where a distance can be defined to represent the real semantic distance between them. To achieve this objective a transformer-based model has been trained on a well-curated freely available paper corpus, PubMed. The paper describes multiple optimization procedures that were employed to obtain the best bias-variance trade-off, focusing on embedding size and network depth. In this context, the model's ability to discover sets of genes implicated in diseases and pathways was assessed through cross-validation. A simple assumption guided the procedure: the network had no direct knowledge of pathways and diseases but learned genes' similarities and the interactions among them. Moreover, to further investigate the space where the neural network represents genes, the dimensionality of the embedding was reduced, and the results were projected onto a human-comprehensible space. In conclusion, a set of use cases illustrates the algorithm's potential applications in a real word setting. "
+}

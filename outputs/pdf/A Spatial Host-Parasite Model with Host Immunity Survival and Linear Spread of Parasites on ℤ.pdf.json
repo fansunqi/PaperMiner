@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spatial host-parasite model",
+    "Survival and linear spread of parasites"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Spatially structured immobile host population",
+    "Symmetric random walks",
+    "Host immunity",
+    "Renewal structure"
+  ],
+  "results": [
+    "Parasite survival probability depends on offspring and immunity",
+    "Parasite population invades host population at linear speed"
+  ],
+  "title": "A Spatial Host-Parasite Model with Host Immunity Survival and Linear Spread of Parasites on \u2124.pdf",
+  "abstract": "We introduce a generalized version of the frog model to describe the invasion of a parasite population in a spatially structured immobile host population with host immunity on the integer line. Parasites move according to simple symmetric random walks and try to infect any host they meet. Hosts, however, own an immunity against the parasites that protects them from infection for a random number of attacks. Once a host gets infected, it and the infecting parasite die, and a random number of offspring parasites is generated. We show that the positivity of the survival probability of parasites only depends on the mean offspring and mean height of immunity. Furthermore, we prove through the construction of a renewal structure that given survival of the parasite population parasites invade the host population at linear speed under relatively mild assumptions on the host immunity distribution. 1 Introduction We are interested in the spread of a parasite population in a spatially distributed host population with host immunity. We model this scenario by placing susceptible (immobile) hosts on the vertices of a graph G. (In the following we will analyze the model mainly on Z, that is, for G = (V, E) with vertex set V = Z and edge set E = {{x, y} : \u2225x \u2212y\u22251 = 1}). Parasites infect hosts and move on the graph according to symmetric nearest neighbor random walks in continuous time. As hosts often have an immune response against infections, we assume that whenever a parasite tries to infect a host, parasite reproduction might be prevented (with some probability that might depend on the number of previous infection attemps), and the parasite gets killed. To be precise, we assume that there is some sequence (pm)m\u2208N \u2282[0, 1] such that for each host, if the host is attacked for the m-th time by a parasite then this host prevents the infection, independent of everything else, with probability 1\u2212pm and kills the parasite. In the case of a successful infection, which happens with probability pm, the parasite kills the host and sets free a (possibly random) number of offspring. For simplicity we assume that hosts do not reproduce. We can view this model as an extension of the frog model that has been introduced by Telcs and Wormland (1999, [TW99]). The classical frog model is an interacting particle system on some graph G = (V, E), which evolves under the following dynamics. There are two types of particles, which are usually called active frogs and sleeping frogs, and each site v \u2208V can host a finite number of frogs of the same type. Active frogs, independently of everything else, perform nearest neighbor random walks on G, and sleeping frogs do not move at all. Whenever an active frog jumps onto a vertex v \u2208V , all sleeping frogs on v immediately transform into active frogs and start performing their own simple nearest neighbor random walk, starting at v. The model can be formulated both in continuous and discrete time; however, we focus on the continuous case here. Interpreting active frogs as parasites and sleeping frogs as the offspring produced at an infection, 1 arXiv:2502.08475v1 [math.PR] 12 Feb 2025"
+}

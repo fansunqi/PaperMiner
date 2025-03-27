@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Program synthesis",
+    "Software development",
+    "Testing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Metamorphic testing",
+    "Genetic programming"
+  ],
+  "results": [
+    "Higher generalization rate with metamorphic testing and labeled training cases"
+  ],
+  "paper_id": "63cdfab690e50fcafd107051",
+  "title": "MTGP: Combining Metamorphic Testing and Genetic Programming",
+  "abstract": "  Genetic programming is an evolutionary approach known for its performance in program synthesis. However, it is not yet mature enough for a practical use in real-world software development, since usually many training cases are required to generate programs that generalize to unseen test cases. As in practice, the training cases have to be expensively hand-labeled by the user, we need an approach to check the program behavior with a lower number of training cases. Metamorphic testing needs no labeled input/output examples. Instead, the program is executed multiple times, first on a given (randomly generated) input, followed by related inputs to check whether certain user-defined relations between the observed outputs hold. In this work, we suggest MTGP, which combines metamorphic testing and genetic programming and study its performance and the generalizability of the generated programs. Further, we analyze how the generalizability depends on the number of given labeled training cases. We find that using metamorphic testing combined with labeled training cases leads to a higher generalization rate than the use of labeled training cases alone in almost all studied configurations. Consequently, we recommend researchers to use metamorphic testing in their systems if the labeling of the training data is expensive. "
+}

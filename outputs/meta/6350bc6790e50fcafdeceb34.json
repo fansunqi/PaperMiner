@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lane marking detection"
+  ],
+  "datasets": [
+    "DSDLDE"
+  ],
+  "methods": [
+    "Comprehensive intensity threshold range (CITR)",
+    "Angle and length-based geometric constraint (ALGC)",
+    "Hough Transform",
+    "Lane tracking technique"
+  ],
+  "results": [
+    "Average detection rate: 97.36%",
+    "Average detection time: 29.06msec per frame"
+  ],
+  "paper_id": "6350bc6790e50fcafdeceb34",
+  "title": "Vision-Based Lane Detection and Tracking under Different Challenging\n  Environmental Conditions",
+  "abstract": "  Lane marking detection is fundamental for both advanced driving assistance systems and traffic surveillance systems. However, detecting lane is highly challenging when the visibility of a road lane marking is low, obscured or often invisible due to real-life challenging environment and adverse weather. Most of the lane detection methods suffer from four types of challenges: (i) light effects i.e. shadow, glare of light, reflection etc. created by different light sources like streetlamp, tunnel-light, sun, wet road etc.; (ii) Obscured visibility of eroded, blurred, dashed, colored and cracked lane caused by natural disasters and adverse weather; (iii) lane marking occlusion by different objects from surroundings; and (iv) presence of confusing lines e.g., guardrails, pavement marking, road divider etc. In this paper, we proposed a simple, real-time, and robust lane detection and tracking method to detect and track lane marking. Here, we introduced three key technologies. First, we introduce a comprehensive intensity threshold range (CITR) to improve the performance of the canny operator in detecting lane edges of different intensity. Second, we propose a robust lane verification technique, the angle and length-based geometric constraint (ALGC) followed by Hough Transform, to verify the characteristics of lane marking and to prevent incorrect lane detection. Finally, we propose a novel lane tracking technique, to predict the lane position of next frame by defining a range of horizontal lane position which will be updating with respect to the lane position of previous frame. To evaluate the performance of the proposed method we used the DSDLDE [1] dataset with 1080x1920 resolutions at 24 frames/sec. Experimental results show that the average detection rate is 97.36%, and the average detection time is 29.06msec per frame, which outperformed the state-of-the-art method. "
+}

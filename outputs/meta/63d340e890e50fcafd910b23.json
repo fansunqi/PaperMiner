@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-kernel Polar Codes Decoding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Combinational architecture",
+    "Successive cancellation decoding algorithm",
+    "Python-based polar compiler"
+  ],
+  "results": [
+    "Code throughput of 1664.5 Mbps for N=81",
+    "HDL files generation in less than 0.4 seconds"
+  ],
+  "paper_id": "63d340e890e50fcafd910b23",
+  "title": "High-Throughput Rate-Flexible Combinational Decoders for Multi-Kernel\n  Polar Codes",
+  "abstract": "  Polar codes have received growing attention in the past decade and have been selected as the coding scheme for the control channel in the fifth generation (5G) wireless communication systems. However, the conventional polar codes have only been constructed by binary (2x2) kernel which poses block length limitation to powers of 2. To attain more flexible block lengths, multi-kernel polar codes are proposed. In this paper, a combinational architecture for multi-kernel polar codes with high throughput is proposed based on successive cancellation decoding algorithm. The proposed scheme can decode pure-binary, pure-ternary (3x3), and binary-ternary mixed polar codes. The decoder's architecture is rate-flexible meaning that a new code rate can be assigned to the decoder at every clock cycle. The proposed architecture is validated by FPGA implementation and the results reveal that a code of size N=81 gains the coded throughput of 1664.5 Mbps. A novel Python-based polar compiler is also proposed to automatically generate the HDL modules for target decoders. A designer can input the target block length and kernel ordering of a polar code, and get the required VHDL files automatically. Based on our simulations, the majority of the required HDL files can be generated in less than 0.4 seconds. "
+}

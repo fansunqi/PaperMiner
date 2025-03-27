@@ -1,0 +1,37 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph representation learning"
+  ],
+  "datasets": [
+    "Cora",
+    "CiteSeer",
+    "PubMed",
+    "Collab",
+    "PPA",
+    "DDI",
+    "density",
+    "cut ratio",
+    "coreness",
+    "component",
+    "ppi-bp",
+    "em-user",
+    "hpo-metab",
+    "hpo-neuro",
+    "zinc",
+    "zinc-full",
+    "ogbg-molhiv"
+  ],
+  "methods": [
+    "Equivariant Noise GNN (ENGNN)"
+  ],
+  "results": [
+    "ENGNN outperforms all baselines on most datasets",
+    "Improves expressivity and generalization",
+    "Achieves comparable performance to models designed for specific tasks"
+  ],
+  "title": "Using Random Noise Equivariantly to Boost Graph Neural Networks Universally.pdf",
+  "abstract": "Recent advances in Graph Neural Networks (GNNs) have explored the potential of random noise as an input feature to enhance expressivity across diverse tasks. However, naively incorporat- ing noise can degrade performance, while archi- tectures tailored to exploit noise for specific tasks excel yet lack broad applicability. This paper tackles these issues by laying down a theoretical framework that elucidates the increased sample complexity when introducing random noise into GNNs without careful design. We further pro- pose Equivariant Noise GNN (ENGNN), a novel architecture that harnesses the symmetrical prop- erties of noise to mitigate sample complexity and bolster generalization. Our experiments demon- strate that using noise equivariantly significantly enhances performance on node-level, link-level, subgraph, and graph-level tasks and achieves com- parable performance to models designed for spe- cific tasks, thereby offering a general method to boost expressivity across various graph tasks. 1. Introduction Graph Neural Networks (GNNs) have emerged as powerful tools for graph representation learning, delivering state-of- the-art performance in applications such as natural language processing (Yao et al., 2019), bioinformatics (Fout et al., 2017), and social network analysis (Chen et al., 2018). How- ever, even the most popular GNN architectures, including Message Passing Neural Networks (MPNNs) (Gilmer et al., 2017), face limitations in expressivity when tackling com- plex node-, link-, and graph-level tasks (Dwivedi et al., 2022b; Li et al., 2018; Alon & Yahav, 2021; Zhang & Chen, 2018; Zhang et al., 2021). These limitations hinder their ability to fully capture intricate graph structures. Efforts to improve the expressivity of GNNs generally fall into two categories. The first focuses on enhancing GNN 1Institute for Artificial Intelligence, Peking University. Cor- respondence to: Muhan Zhang <wangxiyuan@pku.edu.cn, muhan@pku.edu.cn>. under review \ud835\udc36channels Figure 1. Example of GNNs with noise as auxiliary input. Each node has C channel noise. architectures. This includes improving message aggregation methods (Xu et al., 2019; Corso et al., 2020; Wang & Zhang, 2022b), leveraging high-order tensors to capture complex structures (Wang & Zhang, 2023; Maron et al., 2019a;b; Zhang & Li, 2021; Huang et al., 2023b; Bevilacqua et al., 2022; Qian et al., 2022; Frasca et al., 2022; Zhao et al., 2022; Zhang et al., 2023), and incorporating transformers to boost global information capacity (Mialon et al., 2021; Kreuzer et al., 2021; Wu et al., 2021; Dwivedi & Bresson, 2020; Ying et al., 2021; Shirzad et al., 2023; Ramp\u00b4asek et al., 2022; Kim et al., 2021; Wang et al., 2024a; Dwivedi & Bresson, 2020). The second category introduces auxiliary input features for GNNs, such as hand-crafted positional and structural encod- ings for graph-level tasks (Dwivedi et al., 2022a; Li et al., 2020; Wang et al., 2022; Lim et al., 2023; Huang et al., 2023a; Ma et al., 2023; Li et al., 2020), pairwise neigh- borhood overlap features for link prediction (Wang et al., 2024b; Chamberlain et al., 2023a; Yun et al., 2021b), and random noise for various tasks (Sato et al., 2021; Abboud et al., 2021b; Dong et al., 2023; Azizi et al., 2024). Among these approaches, random noise-based methods are particularly appealing. As illustrated in Figure 1, these methods assign each node a multi-channel random vector as an additional input feature. This avoids the complexity of intricate architectures while remaining compatible with various architectural improvements. Furthermore, unlike other auxiliary features, random noise is task-agnostic and can provably increase GNN expressivity (Sato et al., 2021). Despite these advantages\u2014strong expressivity, low com- plexity, and compatibility with other designs\u2014random noise is not widely used in graph tasks. One reason is that directly feeding noise to GNN leads to poor generalization. Early works that directly incorporated noise (Sato et al., 2021; Ab- boud et al., 2021b) primarily focused on synthetic datasets, where expressivity dominates performance and generaliza- 1 arXiv:2502.02479v1 [cs.LG] 4 Feb 2025"
+}

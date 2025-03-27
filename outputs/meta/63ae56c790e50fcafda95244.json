@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "UW-OCTA Diabetic Retinopathy Grade Assessment"
+  ],
+  "datasets": [
+    "UW-OCTA DR grade assessment dataset"
+  ],
+  "methods": [
+    "MAE algorithm",
+    "cross-algorithm ensemble DR tissue segmentation algorithm (MCS-DRNet)"
+  ],
+  "results": [
+    "mean dice similarity coefficient: 0.5161 and 0.5544",
+    "quadratic weighted kappa: 0.7559"
+  ],
+  "paper_id": "63ae56c790e50fcafda95244",
+  "title": "Semi-Supervised Semantic Segmentation Methods for UW-OCTA Diabetic\n  Retinopathy Grade Assessment",
+  "abstract": "  People with diabetes are more likely to develop diabetic retinopathy (DR) than healthy people. However, DR is the leading cause of blindness. At present, the diagnosis of diabetic retinopathy mainly relies on the experienced clinician to recognize the fine features in color fundus images. This is a time-consuming task. Therefore, in this paper, to promote the development of UW-OCTA DR automatic detection, we propose a novel semi-supervised semantic segmentation method for UW-OCTA DR image grade assessment. This method, first, uses the MAE algorithm to perform semi-supervised pre-training on the UW-OCTA DR grade assessment dataset to mine the supervised information in the UW-OCTA images, thereby alleviating the need for labeled data. Secondly, to more fully mine the lesion features of each region in the UW-OCTA image, this paper constructs a cross-algorithm ensemble DR tissue segmentation algorithm by deploying three algorithms with different visual feature processing strategies. The algorithm contains three sub-algorithms, namely pre-trained MAE, ConvNeXt, and SegFormer. Based on the initials of these three sub-algorithms, the algorithm can be named MCS-DRNet. Finally, we use the MCS-DRNet algorithm as an inspector to check and revise the results of the preliminary evaluation of the DR grade evaluation algorithm. The experimental results show that the mean dice similarity coefficient of MCS-DRNet v1 and v2 are 0.5161 and 0.5544, respectively. The quadratic weighted kappa of the DR grading evaluation is 0.7559. Our code will be released soon. "
+}

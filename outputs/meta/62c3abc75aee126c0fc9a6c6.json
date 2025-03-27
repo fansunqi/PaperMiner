@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Successive-cancellation list decoding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph neural network-based iterative message-passing (IMP) algorithm",
+    "Polar-code-construction message-passing (PCCMP) graph"
+  ],
+  "results": [
+    "IMP-based polar-code constructions outperform classical constructions under CA-SCL decoding",
+    "Comparable performance to 5G polar codes when applied to different code rates and blocklengths"
+  ],
+  "paper_id": "62c3abc75aee126c0fc9a6c6",
+  "title": "Scalable Polar Code Construction for Successive Cancellation List\n  Decoding: A Graph Neural Network-Based Approach",
+  "abstract": "  While constructing polar codes for successive-cancellation decoding can be implemented efficiently by sorting the bit-channels, finding optimal polar codes for cyclic-redundancy-check-aided successive-cancellation list (CA-SCL) decoding in an efficient and scalable manner still awaits investigation. This paper first maps a polar code to a unique heterogeneous graph called the polar-code-construction message-passing (PCCMP) graph. Next, a heterogeneous graph-neural-network-based iterative message-passing (IMP) algorithm is proposed which aims to find a PCCMP graph that corresponds to the polar code with minimum frame error rate under CA-SCL decoding. This new IMP algorithm's major advantage lies in its scalability power. That is, the model complexity is independent of the blocklength and code rate, and a trained IMP model over a short polar code can be readily applied to a long polar code's construction. Numerical experiments show that IMP-based polar-code constructions outperform classical constructions under CA-SCL decoding. In addition, when an IMP model trained on a length-128 polar code directly applies to the construction of polar codes with different code rates and blocklengths, simulations show that these polar code constructions deliver comparable performance to the 5G polar codes. "
+}

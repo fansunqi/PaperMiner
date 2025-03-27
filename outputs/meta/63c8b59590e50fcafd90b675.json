@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Context bias in Unified Streaming and Non-streaming Transducer"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two Stage Contextual Word Filtering",
+    "Conformer-Transducer (C-T) model"
+  ],
+  "results": [
+    "Over 20% relative character error rate reduction (CERR)",
+    "RTF of our system can be stabilized within 0.15 when the size of the contextual word list grows over 6,000"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b675",
+  "title": "Two Stage Contextual Word Filtering for Context bias in Unified\n  Streaming and Non-streaming Transducer",
+  "abstract": "  It is difficult for an end-to-end (E2E) ASR system to recognize words such as named entities appearing infrequently in the training data. A widely used method to mitigate this issue is feeding contextual information into the acoustic model. A contextual word list is necessary, which lists all possible contextual word candidates. Previous works have proven that the size and quality of the list are crucial. A compact and accurate list can boost the performance significantly. In this paper, we propose an efficient approach to obtain a high quality contextual word list for a unified streaming and non-streaming based Conformer-Transducer (C-T) model. Specifically, we make use of the phone-level streaming output to first filter the predefined contextual word list. During the subsequent non-streaming inference, the words in the filtered list are regarded as contextual information fused into non-casual encoder and decoder to generate the final recognition results. Our approach can take advantage of streaming recognition hypothesis, improve the accuracy of the contextual ASR system and speed up the inference process as well. Experiments on two datasets demonstrates over 20% relative character error rate reduction (CERR) comparing to the baseline system. Meanwile, the RTF of our system can be stabilized within 0.15 when the size of the contextual word list grows over 6,000. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Interatomic potential models development"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Symbolic regression"
+  ],
+  "results": [
+    "Improved generalizability for chemically similar elements",
+    "Better performance than Sutton-Chen models",
+    "Similar to embedded atom form on trained properties",
+    "On average more accurate on other properties",
+    "Genetic programming models outperform other models 50% of the time"
+  ],
+  "paper_id": "635b486890e50fcafd32faaa",
+  "title": "Generalizability of Functional Forms for Interatomic Potential Models\n  Discovered by Symbolic Regression",
+  "abstract": "  In recent years there has been great progress in the use of machine learning algorithms to develop interatomic potential models. Machine-learned potential models are typically orders of magnitude faster than density functional theory but also orders of magnitude slower than physics-derived models such as the embedded atom method. In our previous work, we used symbolic regression to develop fast, accurate and transferrable interatomic potential models for copper with novel functional forms that resemble those of the embedded atom method. To determine the extent to which the success of these forms was specific to copper, here we explore the generalizability of these models to other face-centered cubic transition metals and analyze their out-of-sample performance on several material properties. We found that these forms work particularly well on elements that are chemically similar to copper. When compared to optimized Sutton-Chen models, which have similar complexity, the functional forms discovered using symbolic regression perform better across all elements considered except gold where they have a similar performance. They perform similarly to a moderately more complex embedded atom form on properties on which they were trained, and they are more accurate on average on other properties. We attribute this improved generalized accuracy to the relative simplicity of the models discovered using symbolic regression. The genetic programming models are found to outperform other models from the literature about 50% of the time in a variety of property predictions, with about 1/10th the model complexity on average. We discuss the implications of these results to the broader application of symbolic regression to the development of new potentials and highlight how models discovered for one element can be used to seed new searches for different elements. "
+}

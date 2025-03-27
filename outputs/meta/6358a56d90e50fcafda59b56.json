@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Natural Language Generation (NLG)"
+  ],
+  "datasets": [
+    "CommonGEN",
+    "RocStories",
+    "AdGen"
+  ],
+  "methods": [
+    "Information Filter upon Diversity-Improved Decoding (IFDID)",
+    "Enhance-Filter framework"
+  ],
+  "results": [
+    "1.24 higher ROUGE score",
+    "62.5% higher diversity upon Dist-2"
+  ],
+  "paper_id": "6358a56d90e50fcafda59b56",
+  "title": "Information Filter upon Diversity-Improved Decoding for\n  Diversity-Faithfulness Tradeoff in NLG",
+  "abstract": "  Some Natural Language Generation (NLG) tasks require both faithfulness and diversity. The decoding strategy is intensively related to the quality of the generated text. Strategies such as beam search, greedy search, etc., perform with low diversity and high repetition. On the other hand, guided decoding, the solution towards diversity, may generate unfaithful expressions. To this end, this paper presents Information Filter upon Diversity-Improved Decoding (IFDID) to obtain the tradeoff between diversity and faithfulness. IFDID is a two-stage decoding strategy leveraging the proposed Enhance-Filter framework, which achieves the tradeoff by increasing the probabilities of some typical tokens being selected and subsequently filtering them by their information amount. To verify the effectiveness, we compare our method with other baselines on related CommonGEN, RocStories and AdGen benchmarks, which cover Chinese and English datasets. Our numerical experimental results and human evaluation outcomes verify the effectiveness of the proposed approach, as our approach achieves a 1.24 higher ROUGE score describing faithfulness as well as higher diversity represented by 62.5% higher upon Dist-2 than traditional approaches, demonstrating that IFDID is a novel SOTA decoding strategy for the tradeoff between diversity and faithfulness. "
+}

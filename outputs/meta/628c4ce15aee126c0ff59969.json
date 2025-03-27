@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/zjunlp/Relphormer"
+  ],
+  "tasks": [
+    "Knowledge Graph Representations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Relphormer",
+    "Triple2Seq",
+    "Structure-enhanced self-attention",
+    "Masked knowledge modeling"
+  ],
+  "results": [
+    "Better performance compared with baselines"
+  ],
+  "paper_id": "628c4ce15aee126c0ff59969",
+  "title": "Relphormer: Relational Graph Transformer for Knowledge Graph\n  Representations",
+  "abstract": "  Transformers have achieved remarkable performance in widespread fields, including natural language processing, computer vision and graph mining. However, vanilla Transformer architectures have not yielded promising improvements in the Knowledge Graph (KG) representations, where the translational distance paradigm dominates this area. Note that vanilla Transformer architectures struggle to capture the intrinsically heterogeneous structural and semantic information of knowledge graphs. To this end, we propose a new variant of Transformer for knowledge graph representations dubbed Relphormer. Specifically, we introduce Triple2Seq which can dynamically sample contextualized sub-graph sequences as the input to alleviate the heterogeneity issue. We propose a novel structure-enhanced self-attention mechanism to encode the relational information and keep the semantic information within entities and relations. Moreover, we utilize masked knowledge modeling for general knowledge graph representation learning, which can be applied to various KG-based tasks including knowledge graph completion, question answering, and recommendation. Experimental results on six datasets show that Relphormer can obtain better performance compared with baselines. Code is available in https://github.com/zjunlp/Relphormer. "
+}

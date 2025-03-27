@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Medical Decision Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Relative Sparsity",
+    "Trust Region Policy Optimization (TRPO)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63881b8a90e50fcafd3d97d9",
+  "title": "Relative Sparsity for Medical Decision Problems",
+  "abstract": "  Existing statistical methods can estimate a policy, or a mapping from covariates to decisions, which can then instruct decision makers (e.g., whether to administer hypotension treatment based on covariates blood pressure and heart rate). There is great interest in using such data-driven policies in healthcare. However, it is often important to explain to the healthcare provider, and to the patient, how a new policy differs from the current standard of care. This end is facilitated if one can pinpoint the aspects of the policy (i.e., the parameters for blood pressure and heart rate) that change when moving from the standard of care to the new, suggested policy. To this end, we adapt ideas from Trust Region Policy Optimization (TRPO). In our work, however, unlike in TRPO, the difference between the suggested policy and standard of care is required to be sparse, aiding with interpretability. This yields ``relative sparsity,\" where, as a function of a tuning parameter, $\\lambda$, we can approximately control the number of parameters in our suggested policy that differ from their counterparts in the standard of care (e.g., heart rate only). We propose a criterion for selecting $\\lambda$, perform simulations, and illustrate our method with a real, observational healthcare dataset, deriving a policy that is easy to explain in the context of the current standard of care. Our work promotes the adoption of data-driven decision aids, which have great potential to improve health outcomes. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Side-channel attack analysis on in-memory computing architectures"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Side-channel attack methodology",
+    "Simulation framework for emulating dynamic power traces",
+    "Side-channel leakage analysis"
+  ],
+  "results": [
+    "Extract model architectural information from power trace measurements",
+    "Reconstruct full networks without knowledge of the neural network",
+    "Discuss potential countermeasures for resistance to model extraction attacks"
+  ],
+  "paper_id": "63195d8090e50fcafde7d421",
+  "title": "Side-channel attack analysis on in-memory computing architectures",
+  "abstract": "  In-memory computing (IMC) systems have great potential for accelerating data-intensive tasks such as deep neural networks (DNNs). As DNN models are generally highly proprietary, the neural network architectures become valuable targets for attacks. In IMC systems, since the whole model is mapped on chip and weight memory read can be restricted, the pre-mapped DNN model acts as a ``black box'' for users. However, the localized and stationary weight and data patterns may subject IMC systems to other attacks. In this paper, we propose a side-channel attack methodology on IMC architectures. We show that it is possible to extract model architectural information from power trace measurements without any prior knowledge of the neural network. We first developed a simulation framework that can emulate the dynamic power traces of the IMC macros. We then performed side-channel leakage analysis to reverse engineer model information such as the stored layer type, layer sequence, output channel/feature size and convolution kernel size from power traces of the IMC macros. Based on the extracted information, full networks can potentially be reconstructed without any knowledge of the neural network. Finally, we discuss potential countermeasures for building IMC systems that offer resistance to these model extraction attack. "
+}

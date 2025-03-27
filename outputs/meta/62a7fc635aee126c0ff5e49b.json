@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/JuliaOpt/DiffOpt.jl"
+  ],
+  "tasks": [
+    "Optimization problems differentiation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DiffOpt.jl",
+    "MathOptInterface",
+    "JuMP"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62a7fc635aee126c0ff5e49b",
+  "title": "Flexible Differentiable Optimization via Model Transformations",
+  "abstract": "  We introduce DiffOpt.jl, a Julia library to differentiate through the solution of optimization problems with respect to arbitrary parameters present in the objective and/or constraints. The library builds upon MathOptInterface, thus leveraging the rich ecosystem of solvers and composing well with modeling languages like JuMP. DiffOpt offers both forward and reverse differentiation modes, enabling multiple use cases from hyperparameter optimization to backpropagation and sensitivity analysis, bridging constrained optimization with end-to-end differentiable programming. DiffOpt is built on two known rules for differentiating quadratic programming and conic programming standard forms. However, thanks ability to differentiate through model transformation, the user is not limited to these forms and can differentiate with respect to the parameters of any model that can be reformulated into these standard forms. This notably includes programs mixing affine conic constraints and convex quadratic constraints or objective function. "
+}

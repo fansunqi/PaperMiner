@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Zero-knowledge Proofs for Data Streams"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Streaming interactive proofs (SIPs)",
+    "Sumcheck and polynomial evaluation protocols",
+    "Algebraic streaming commitment protocol",
+    "Temporal commitment protocol"
+  ],
+  "results": [
+    "Space complexity: polylog(n)",
+    "Communication complexity: n^{o(1)} after non-interactive setup"
+  ],
+  "paper_id": "63bb859d90e50fcafd06ed8d",
+  "title": "Streaming Zero-Knowledge Proofs",
+  "abstract": "  We initiate the study of zero-knowledge proofs for data streams. Streaming interactive proofs (SIPs) are well-studied protocols whereby a space-bounded algorithm with one-pass access to a massive stream of data communicates with a powerful but untrusted prover to verify a computation that requires large space.   We define the notion of zero-knowledge in the streaming setting and construct zero-knowledge SIPs for the two main building blocks in the streaming interactive proofs literature: the sumcheck and polynomial evaluation protocols. To the best of our knowledge all known streaming interactive proofs are based on either of these tools, and indeed, this allows us to obtain zero-knowledge SIPs for central streaming problems such as index, frequency moments, and inner product. Our protocols are efficient in terms of time and space, as well as communication: the space complexity is $\\mathrm{polylog}(n)$ and, after a non-interactive setup that uses a random string of near-linear length, the remaining parameters are $n^{o(1)}$.   En route, we develop a toolkit for designing zero-knowledge data stream protocols, consisting of an algebraic streaming commitment protocol and a temporal commitment protocol. The analysis of our protocols relies on delicate algebraic and information-theoretic arguments and reductions from average-case communication complexity. "
+}

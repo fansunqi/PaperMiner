@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cycle enumeration in graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Scalable parallelisation of state-of-the-art sequential algorithms",
+    "Fine-grained parallel algorithms by Johnson",
+    "Fine-grained parallel algorithms by Read and Tarjan",
+    "Coarse-grained parallel algorithms"
+  ],
+  "results": [
+    "Near-linear scalability of fine-grained parallel algorithms",
+    "One order of magnitude speedup compared to coarse-grained parallel versions",
+    "Performance gap increases with more CPU cores"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5820",
+  "title": "Fast Parallel Algorithms for Enumeration of Simple, Temporal, and\n  Hop-Constrained Cycles",
+  "abstract": "  Cycles are one of the fundamental subgraph patterns and being able to enumerate them in graphs enables important applications in a wide variety of fields, including finance, biology, chemistry, and network science. However, to enable cycle enumeration in real-world applications, efficient parallel algorithms are required. In this work, we propose scalable parallelisation of state-of-the-art sequential algorithms for enumerating simple, temporal, and hop-constrained cycles. First, we focus on the simple cycle enumeration problem and parallelise the algorithms by Johnson and by Read and Tarjan in a fine-grained manner. We theoretically show that our resulting fine-grained parallel algorithms are scalable, with the fine-grained parallel Read-Tarjan algorithm being strongly scalable. In contrast, we show that straightforward coarse-grained parallel versions of these simple cycle enumeration algorithms that exploit edge- or vertex-level parallelism are not scalable. Next, we adapt our fine-grained approach to enable the enumeration of cycles under time-window, temporal, and hop constraints. Our evaluation on a cluster with 256 CPU cores that can execute up to 1024 simultaneous threads demonstrates a near-linear scalability of our fine-grained parallel algorithms when enumerating cycles under the aforementioned constraints. On the same cluster, our fine-grained parallel algorithms achieve, on average, one order of magnitude speedup compared to the respective coarse-grained parallel versions of the state-of-the-art algorithms for cycle enumeration. The performance gap between the fine-grained and the coarse-grained parallel algorithms increases as we use more CPU cores. "
+}

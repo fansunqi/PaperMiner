@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "EGFR Mutation Prediction",
+    "Lung Cancer Histological Subtyping",
+    "Tumor Detection"
+  ],
+  "datasets": [
+    "TCGA",
+    "India private dataset"
+  ],
+  "methods": [
+    "Customized deep learning pipelines with weak supervision"
+  ],
+  "results": [
+    "Average AUC of 0.964 for tumor detection",
+    "Average AUC of 0.942 for histological subtyping",
+    "Average AUC of 0.864 for EGFR detection",
+    "Average AUC of 0.783 for EGFR detection"
+  ],
+  "paper_id": "630c2e3190e50fcafdb6cf7d",
+  "title": "EGFR Mutation Prediction of Lung Biopsy Images using Deep Learning",
+  "abstract": "  The standard diagnostic procedures for targeted therapies in lung cancer treatment involve histological subtyping and subsequent detection of key driver mutations, such as EGFR. Even though molecular profiling can uncover the driver mutation, the process is often expensive and time-consuming. Deep learning-oriented image analysis offers a more economical alternative for discovering driver mutations directly from whole slide images (WSIs). In this work, we used customized deep learning pipelines with weak supervision to identify the morphological correlates of EGFR mutation from hematoxylin and eosin-stained WSIs, in addition to detecting tumor and histologically subtyping it. We demonstrate the effectiveness of our pipeline by conducting rigorous experiments and ablation studies on two lung cancer datasets - TCGA and a private dataset from India. With our pipeline, we achieved an average area under the curve (AUC) of 0.964 for tumor detection, and 0.942 for histological subtyping between adenocarcinoma and squamous cell carcinoma on the TCGA dataset. For EGFR detection, we achieved an average AUC of 0.864 on the TCGA dataset and 0.783 on the dataset from India. Our key learning points include the following. Firstly, there is no particular advantage of using a feature extractor layers trained on histology, if one is going to fine-tune the feature extractor on the target dataset. Secondly, selecting patches with high cellularity, presumably capturing tumor regions, is not always helpful, as the sign of a disease class may be present in the tumor-adjacent stroma. "
+}

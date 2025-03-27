@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D human pose estimation"
+  ],
+  "datasets": [
+    "3DPW"
+  ],
+  "methods": [
+    "weakly-supervised framework",
+    "refinement network module with confidence-guided loss"
+  ],
+  "results": [
+    "improves cross-scenario datasets",
+    "outperforms baseline method by 3mm on 3DPW"
+  ],
+  "paper_id": "63bcd73090e50fcafdef99f1",
+  "title": "CameraPose: Weakly-Supervised Monocular 3D Human Pose Estimation by\n  Leveraging In-the-wild 2D Annotations",
+  "abstract": "  To improve the generalization of 3D human pose estimators, many existing deep learning based models focus on adding different augmentations to training poses. However, data augmentation techniques are limited to the \"seen\" pose combinations and hard to infer poses with rare \"unseen\" joint positions. To address this problem, we present CameraPose, a weakly-supervised framework for 3D human pose estimation from a single image, which can not only be applied on 2D-3D pose pairs but also on 2D alone annotations. By adding a camera parameter branch, any in-the-wild 2D annotations can be fed into our pipeline to boost the training diversity and the 3D poses can be implicitly learned by reprojecting back to 2D. Moreover, CameraPose introduces a refinement network module with confidence-guided loss to further improve the quality of noisy 2D keypoints extracted by 2D pose estimators. Experimental results demonstrate that the CameraPose brings in clear improvements on cross-scenario datasets. Notably, it outperforms the baseline method by 3mm on the most challenging dataset 3DPW. In addition, by combining our proposed refinement network module with existing 3D pose estimators, their performance can be improved in cross-scenario evaluation. "
+}

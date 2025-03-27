@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep Graph Convolutional Network Acceleration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SGCN: A fast and energy-efficient GCN accelerator",
+    "GCN-friendly feature compression format",
+    "microarchitectures for compressed feature format",
+    "sparsity-aware cooperation"
+  ],
+  "results": [
+    "1.71x speedup",
+    "43.9% higher energy efficiency"
+  ],
+  "paper_id": "63d340e890e50fcafd910ab1",
+  "title": "SGCN: Exploiting Compressed-Sparse Features in Deep Graph Convolutional\n  Network Accelerators",
+  "abstract": "  Graph convolutional networks (GCNs) are becoming increasingly popular as they overcome the limited applicability of prior neural networks. A GCN takes as input an arbitrarily structured graph and executes a series of layers which exploit the graph's structure to calculate their output features. One recent trend in GCNs is the use of deep network architectures. As opposed to the traditional GCNs which only span around two to five layers deep, modern GCNs now incorporate tens to hundreds of layers with the help of residual connections. From such deep GCNs, we find an important characteristic that they exhibit very high intermediate feature sparsity. We observe that with deep layers and residual connections, the number of zeros in the intermediate features sharply increases. This reveals a new opportunity for accelerators to exploit in GCN executions that was previously not present.   In this paper, we propose SGCN, a fast and energy-efficient GCN accelerator which fully exploits the sparse intermediate features of modern GCNs. SGCN suggests several techniques to achieve significantly higher performance and energy efficiency than the existing accelerators. First, SGCN employs a GCN-friendly feature compression format. We focus on reducing the off-chip memory traffic, which often is the bottleneck for GCN executions. Second, we propose microarchitectures for seamlessly handling the compressed feature format. Third, to better handle locality in the existence of the varying sparsity, SGCN employs sparsity-aware cooperation. Sparsity-aware cooperation creates a pattern that exhibits multiple reuse windows, such that the cache can capture diverse sizes of working sets and therefore adapt to the varying level of sparsity. We show that SGCN achieves 1.71x speedup and 43.9% higher energy efficiency compared to the existing accelerators. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Constrained multiagent reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Primal-Dual Algorithms",
+    "probabilistic constraints",
+    "C-MAA2C algorithm"
+  ],
+  "results": [
+    "Improved value estimation procedure",
+    "Accelerates convergence to a safe joint policy"
+  ],
+  "paper_id": "6386c9e690e50fcafdfa0f86",
+  "title": "Interpreting Primal-Dual Algorithms for Constrained Multiagent\n  Reinforcement Learning",
+  "abstract": "  Constrained multiagent reinforcement learning (C-MARL) is gaining importance as MARL algorithms find new applications in real-world systems ranging from energy systems to drone swarms. Most C-MARL algorithms use a primal-dual approach to enforce constraints through a penalty function added to the reward. In this paper, we study the structural effects of this penalty term on the MARL problem. First, we show that the standard practice of using the constraint function as the penalty leads to a weak notion of safety. However, by making simple modifications to the penalty term, we can enforce meaningful probabilistic (chance and conditional value at risk) constraints. Second, we quantify the effect of the penalty term on the value function, uncovering an improved value estimation procedure. We use these insights to propose a constrained multiagent advantage actor critic (C-MAA2C) algorithm. Simulations in a simple constrained multiagent environment affirm that our reinterpretation of the primal-dual method in terms of probabilistic constraints is effective, and that our proposed value estimate accelerates convergence to a safe joint policy. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nonlinear Model Predictive Control of Legged Robots"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimization-Based Reference Generator",
+    "Linear Inverted Pendulum (LIP) model",
+    "Nonlinear MPC"
+  ],
+  "results": [
+    "Guarantees on the response time to reach a goal",
+    "Corrected footholds using optimized reference"
+  ],
+  "paper_id": "62da15945aee126c0f5d89ca",
+  "title": "Optimization-Based Reference Generator for Nonlinear Model Predictive\n  Control of Legged Robots",
+  "abstract": "  Model Predictive Control (MPC) approaches are widely used in robotics, since they guarantee feasibility and allow the computation of updated trajectories while the robot is moving. They generally require heuristic references for the tracking terms and proper tuning of the parameters of the cost function in order to obtain good performance. For instance, when a legged robot has to react to disturbances from the environment (e.g., recover after a push) or track a specific goal with statically unstable gaits, the effectiveness of the algorithm can degrade. In this work, we propose a novel optimization-based Reference Generator which exploits a Linear Inverted Pendulum (LIP) model to compute reference trajectories for the Center of Mass while taking into account the possible under-actuation of a gait (e.g., in a trot). The obtained trajectories are used as references for the cost function of the Nonlinear MPC presented in our previous work. We also present a formulation that ensures guarantees on the response time to reach a goal without the need to tune the weights of the cost terms. In addition, footholds are corrected using the optimized reference to drive the robot towards the goal. We demonstrate the effectiveness of our approach both in simulations and experiments in different scenarios with the Aliengo robot. "
+}

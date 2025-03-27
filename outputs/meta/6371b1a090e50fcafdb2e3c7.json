@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-speed last mile of data center networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Lamda receiver cache processing system"
+  ],
+  "results": [
+    "Improves network throughput by 4.7% with zero memory bandwidth consumption",
+    "Improves network throughput by up to 17% and 45% for large block size and small size under memory bandwidth pressure",
+    "Reduces communication latency by 35.1% for latency-sensitive HPC applications"
+  ],
+  "paper_id": "6371b1a090e50fcafdb2e3c7",
+  "title": "From RDMA to RDCA: Toward High-Speed Last Mile of Data Center Networks\n  Using Remote Direct Cache Access",
+  "abstract": "  In this paper, we conduct systematic measurement studies to show that the high memory bandwidth consumption of modern distributed applications can lead to a significant drop of network throughput and a large increase of tail latency in high-speed RDMA networks.We identify its root cause as the high contention of memory bandwidth between application processes and network processes. This contention leads to frequent packet drops at the NIC of receiving hosts, which triggers the congestion control mechanism of the network and eventually results in network performance degradation.   To tackle this problem, we make a key observation that given the distributed storage service, the vast majority of data it receives from the network will be eventually written to high-speed storage media (e.g., SSD) by CPU. As such, we propose to bypass host memory when processing received data to completely circumvent this performance bottleneck. In particular, we design Lamda, a novel receiver cache processing system that consumes a small amount of CPU cache to process received data from the network at line rate. We implement a prototype of Lamda and evaluate its performance extensively in a Clos-based testbed. Results show that for distributed storage applications, Lamda improves network throughput by 4.7% with zero memory bandwidth consumption on storage nodes, and improves network throughput by up 17% and 45% for large block size and small size under the memory bandwidth pressure, respectively. Lamda can also be applied to latency-sensitive HPC applications, which reduces their communication latency by 35.1%. "
+}

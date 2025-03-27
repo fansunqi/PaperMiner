@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Object Detection in Autonomous Driving"
+  ],
+  "datasets": [
+    "nuScenes",
+    "in-house simulation dataset"
+  ],
+  "methods": [
+    "Safety-aware loss function",
+    "Intersection-over-Ground-Truth (IoGT) measure",
+    "Distance ratio"
+  ],
+  "results": [
+    "Significant reduction in unsafe predictions",
+    "Maintaining good stability in the learning process"
+  ],
+  "paper_id": "632bd2aa90e50fcafdb7a507",
+  "title": "Improving the Safety of 3D Object Detectors in Autonomous Driving using\n  IoGT and Distance Measures",
+  "abstract": "  State-of-the-art object detectors are commonly evaluated based on accuracy metrics such as mean Average Precision (mAP). In this paper, inspired by the fact that mAP is not a direct safety indicator, we propose a straightforward safety metric, especially for 3D object detectors in Autonomous Driving contexts, by combining the Intersection-over-Ground-Truth (IoGT) measure and a distance ratio. Subsequently, we formulate a safety-aware loss function by amending IoGT to commonly used accuracy-oriented loss functions. Our experiments using models from the MMDetection3D library, the nuScenes dataset, and an in-house simulation dataset demonstrate that the object detector trained with our loss function significantly reduces unsafe predictions while staying performant on accuracy and maintaining good stability in the learning process. "
+}

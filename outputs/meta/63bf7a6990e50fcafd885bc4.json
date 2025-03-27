@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Exploit Detection"
+  ],
+  "datasets": [
+    "Common Weakness Enumeration (CWE)",
+    "Common Vulnerabilities and Exposures (CVE)"
+  ],
+  "methods": [
+    "ML-FEED",
+    "Automated vulnerability pattern extraction",
+    "State table for exploit tracking",
+    "Feature engineering with word embeddings, frequency vectors, and one-hot encoding"
+  ],
+  "results": [
+    "72.9x and 75,828.9x faster than LSTM and transformer models",
+    "98.2% precision, 97.4% recall, and 97.8% F1 score"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885bc4",
+  "title": "ML-FEED: Machine Learning Framework for Efficient Exploit Detection",
+  "abstract": "  Machine learning (ML)-based methods have recently become attractive for detecting security vulnerability exploits. Unfortunately, state-of-the-art ML models like long short-term memories (LSTMs) and transformers incur significant computation overheads. This overhead makes it infeasible to deploy them in real-time environments. We propose a novel ML-based exploit detection model, ML-FEED, that enables highly efficient inference without sacrificing performance. We develop a novel automated technique to extract vulnerability patterns from the Common Weakness Enumeration (CWE) and Common Vulnerabilities and Exposures (CVE) databases. This feature enables ML-FEED to be aware of the latest cyber weaknesses. Second, it is not based on the traditional approach of classifying sequences of application programming interface (API) calls into exploit categories. Such traditional methods that process entire sequences incur huge computational overheads. Instead, ML-FEED operates at a finer granularity and predicts the exploits triggered by every API call of the program trace. Then, it uses a state table to update the states of these potential exploits and track the progress of potential exploit chains. ML-FEED also employs a feature engineering approach that uses natural language processing-based word embeddings, frequency vectors, and one-hot encoding to detect semantically-similar instruction calls. Then, it updates the states of the predicted exploit categories and triggers an alarm when a vulnerability fingerprint executes. Our experiments show that ML-FEED is 72.9x and 75,828.9x faster than state-of-the-art lightweight LSTM and transformer models, respectively. We trained and tested ML-FEED on 79 real-world exploit categories. It predicts categories of exploit in real-time with 98.2% precision, 97.4% recall, and 97.8% F1 score. These results also outperform the LSTM and transformer baselines. "
+}

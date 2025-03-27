@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/csiro-robotics/SpectralGV"
+  ],
+  "tasks": [
+    "Metric Localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SpectralGV"
+  ],
+  "results": [
+    "Outperforms other state-of-the-art re-ranking methods",
+    "Improves recall and pose estimation",
+    "Negligible effect on runtime"
+  ],
+  "paper_id": "6344dede90e50fcafd24d2ee",
+  "title": "Spectral Geometric Verification: Re-Ranking Point Cloud Retrieval for\n  Metric Localization",
+  "abstract": "  In large-scale metric localization, an incorrect result during retrieval will lead to an incorrect pose estimate or loop closure. Re-ranking methods propose to take into account all the top retrieval candidates and re-order them to increase the likelihood of the top candidate being correct. However, state-of-the-art re-ranking methods are inefficient when re-ranking many potential candidates due to their need for resource intensive point cloud registration between the query and each candidate. In this work, we propose an efficient spectral method for geometric verification (named SpectralGV) that does not require registration. We demonstrate how the optimal inter-cluster score of the correspondence compatibility graph of two point clouds represents a robust fitness score measuring their spatial consistency. This score takes into account the subtle geometric differences between structurally similar point clouds and therefore can be used to identify the correct candidate among potential matches retrieved by global similarity search. SpectralGV is deterministic, robust to outlier correspondences, and can be computed in parallel for all potential candidates. We conduct extensive experiments on 5 large-scale datasets to demonstrate that SpectralGV outperforms other state-of-the-art re-ranking methods and show that it consistently improves the recall and pose estimation of 3 state-of-the-art metric localization architectures while having a negligible effect on their runtime. The open-source implementation and trained models are available at: https://github.com/csiro-robotics/SpectralGV. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning",
+    "Personalized Federated Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer Personalization",
+    "Federated Averaging",
+    "Learn-to-Personalize Mechanism"
+  ],
+  "results": [
+    "State-of-the-art performance in non-IID scenarios"
+  ],
+  "paper_id": "636482d790e50fcafdccaaee",
+  "title": "FedTP: Federated Learning by Transformer Personalization",
+  "abstract": "  Federated learning is an emerging learning paradigm where multiple clients collaboratively train a machine learning model in a privacy-preserving manner. Personalized federated learning extends this paradigm to overcome heterogeneity across clients by learning personalized models. Recently, there have been some initial attempts to apply Transformers to federated learning. However, the impacts of federated learning algorithms on self-attention have not yet been studied. This paper investigates this relationship and reveals that federated averaging algorithms actually have a negative impact on self-attention where there is data heterogeneity. These impacts limit the capabilities of the Transformer model in federated learning settings. Based on this, we propose FedTP, a novel Transformer-based federated learning framework that learns personalized self-attention for each client while aggregating the other parameters among the clients. Instead of using a vanilla personalization mechanism that maintains personalized self-attention layers of each client locally, we develop a learn-to-personalize mechanism to further encourage the cooperation among clients and to increase the scablability and generalization of FedTP. Specifically, the learn-to-personalize is realized by learning a hypernetwork on the server that outputs the personalized projection matrices of self-attention layers to generate client-wise queries, keys and values. Furthermore, we present the generalization bound for FedTP with the learn-to-personalize mechanism. Notably, FedTP offers a convenient environment for performing a range of image and language tasks using the same federated network architecture - all of which benefit from Transformer personalization. Extensive experiments verify that FedTP with the learn-to-personalize mechanism yields state-of-the-art performance in non-IID scenarios. Our code is available online. "
+}

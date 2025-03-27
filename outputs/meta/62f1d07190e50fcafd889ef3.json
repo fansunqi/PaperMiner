@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Intracranial Hemorrhage detection on CT"
+  ],
+  "datasets": [
+    "RSNA Intracranial Hemorrhage (ICH) dataset"
+  ],
+  "methods": [
+    "Slice-level classifiers based on adjacent slice descriptors",
+    "Convolutional neural networks (CNNs)"
+  ],
+  "results": [
+    "Top 4% best-performing solutions of the RSNA ICH challenge",
+    "Significantly outperforms baseline model on CQ500"
+  ],
+  "paper_id": "62f1d07190e50fcafd889ef3",
+  "title": "Slice-level Detection of Intracranial Hemorrhage on CT Using Deep\n  Descriptors of Adjacent Slices",
+  "abstract": "  The rapid development in representation learning techniques such as deep neural networks and the availability of large-scale, well-annotated medical imaging datasets have to a rapid increase in the use of supervised machine learning in the 3D medical image analysis and diagnosis. In particular, deep convolutional neural networks (D-CNNs) have been key players and were adopted by the medical imaging community to assist clinicians and medical experts in disease diagnosis and treatment. However, training and inferencing deep neural networks such as D-CNN on high-resolution 3D volumes of Computed Tomography (CT) scans for diagnostic tasks pose formidable computational challenges. This challenge raises the need of developing deep learning-based approaches that are robust in learning representations in 2D images, instead 3D scans. In this work, we propose for the first time a new strategy to train \\emph{slice-level} classifiers on CT scans based on the descriptors of the adjacent slices along the axis. In particular, each of which is extracted through a convolutional neural network (CNN). This method is applicable to CT datasets with per-slice labels such as the RSNA Intracranial Hemorrhage (ICH) dataset, which aims to predict the presence of ICH and classify it into 5 different sub-types. We obtain a single model in the top 4% best-performing solutions of the RSNA ICH challenge, where model ensembles are allowed. Experiments also show that the proposed method significantly outperforms the baseline model on CQ500. The proposed method is general and can be applied to other 3D medical diagnosis tasks such as MRI imaging. To encourage new advances in the field, we will make our codes and pre-trained model available upon acceptance of the paper. "
+}

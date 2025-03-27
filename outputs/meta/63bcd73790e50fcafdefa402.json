@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning debugging"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FedDebug",
+    "record and replay techniques",
+    "differential testing",
+    "neurons activations"
+  ],
+  "results": [
+    "100% accuracy in finding a single client",
+    "90.3% accuracy in finding multiple faulty clients",
+    "1.2% overhead during training",
+    "2.1% of a round's training time for localizing a faulty client"
+  ],
+  "paper_id": "63bcd73790e50fcafdefa402",
+  "title": "FedDebug: Systematic Debugging for Federated Learning Applications",
+  "abstract": "  In Federated Learning (FL), clients train a model locally and share it with a central aggregator to build a global model. Impermissibility to access client's data and collaborative training makes FL appealing for applications with data-privacy concerns such as medical imaging. However, these FL characteristics pose unprecedented challenges for debugging. When a global model's performance deteriorates, finding the round and the clients responsible is a major pain point. Developers resort to trial-and-error debugging with subsets of clients, hoping to increase the accuracy or let future FL rounds retune the model, which are time-consuming and costly.   We design a systematic fault localization framework, FedDebug, that advances the FL debugging on two novel fronts. First, FedDebug enables interactive debugging of realtime collaborative training in FL by leveraging record and replay techniques to construct a simulation that mirrors live FL. FedDebug's {\\em breakpoint} can help inspect an FL state (round, client, and global model) and seamlessly move between rounds and clients' models, enabling a fine-grained step-by-step inspection. Second, FedDebug automatically identifies the client responsible for lowering global model's performance without any testing data and labels--both are essential for existing debugging techniques. FedDebug's strengths come from adapting differential testing in conjunction with neurons activations to determine the precise client deviating from normal behavior. FedDebug achieves 100\\% to find a single client and 90.3\\% accuracy to find multiple faulty clients. FedDebug's interactive debugging incurs 1.2\\% overhead during training, while it localizes a faulty client in only 2.1\\% of a round's training time. With FedDebug, we bring effective debugging practices to federated learning, improving the quality and productivity of FL application developers. "
+}

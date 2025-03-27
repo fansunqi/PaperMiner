@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multiquery Planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Effort Informed Roadmaps (EIRM*)",
+    "asymmetric bidirectional search"
+  ],
+  "results": [
+    "Order-of-magnitude faster than state-of-the-art planning algorithms"
+  ],
+  "paper_id": "628464665aee126c0facb26c",
+  "title": "Effort Informed Roadmaps (EIRM*): Efficient Asymptotically Optimal\n  Multiquery Planning by Actively Reusing Validation Effort",
+  "abstract": "  Multiquery planning algorithms find paths between various different starts and goals in a single search space. They are designed to do so efficiently by reusing information across planning queries. This information may be computed before or during the search and often includes knowledge of valid paths. Using known valid paths to solve an individual planning query takes less computational effort than finding a completely new solution. This allows multiquery algorithms, such as PRM*, to outperform single-query algorithms, such as RRT*, on many problems but their relative performance depends on how much information is reused. Despite this, few multiquery planners explicitly seek to maximize path reuse and, as a result, many do not consistently outperform single-query alternatives. This paper presents Effort Informed Roadmaps (EIRM*), an almost-surely asymptotically optimal multiquery planning algorithm that explicitly prioritizes reusing computational effort. EIRM* uses an asymmetric bidirectional search to identify existing paths that may help solve an individual planning query and then uses this information to order its search and reduce computational effort. This allows it to find initial solutions up to an order-of-magnitude faster than state-of-the-art planning algorithms on the tested abstract and robotic multiquery planning problems. "
+}

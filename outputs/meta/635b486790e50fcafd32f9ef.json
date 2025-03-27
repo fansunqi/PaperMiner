@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Open Surfaces Reconstruction"
+  ],
+  "datasets": [
+    "synthetic and real-world public datasets"
+  ],
+  "methods": [
+    "IPVNet, learning-based implicit model"
+  ],
+  "results": [
+    "outperforms the state of the art",
+    "producing far fewer outliers in the reconstruction"
+  ],
+  "paper_id": "635b486790e50fcafd32f9ef",
+  "title": "Automated Reconstruction of 3D Open Surfaces from Sparse Point Clouds",
+  "abstract": "  Real-world 3D data may contain intricate details defined by salient surface gaps. Automated reconstruction of these open surfaces (e.g., non-watertight meshes) is a challenging problem for environment synthesis in mixed reality applications. Current learning-based implicit techniques can achieve high fidelity on closed-surface reconstruction. However, their dependence on the distinction between the inside and outside of a surface makes them incapable of reconstructing open surfaces. Recently, a new class of implicit functions have shown promise in reconstructing open surfaces by regressing an unsigned distance field. Yet, these methods rely on a discretized representation of the raw data, which loses important surface details and can lead to outliers in the reconstruction. We propose IPVNet, a learning-based implicit model that predicts the unsigned distance between a surface and a query point in 3D space by leveraging both raw point cloud data and its discretized voxel counterpart. Experiments on synthetic and real-world public datasets demonstrates that IPVNet outperforms the state of the art while producing far fewer outliers in the reconstruction. "
+}

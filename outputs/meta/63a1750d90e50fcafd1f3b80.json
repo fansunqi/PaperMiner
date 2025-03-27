@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic segmentation for extracting buildings and roads"
+  ],
+  "datasets": [
+    "private dataset of remote sensing images taken by UAV",
+    "LoveDA dataset",
+    "CITY-OSM dataset"
+  ],
+  "methods": [
+    "encoder-decoder architecture",
+    "Lightweight Densely Connected Network (LDCNet)",
+    "Atrous Spatial Pyramid Pooling module (ASPP)",
+    "Object Attention Module (OAM)",
+    "Feature Pyramid Network (FPN)"
+  ],
+  "results": [
+    "mean intersection-over-union ratio (mIoU) of 71.12% on private dataset",
+    "mIoU of 65.27% on LoveDA dataset",
+    "mIoU of 74.39% on CITY-OSM dataset"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f3b80",
+  "title": "LOANet: A Lightweight Network Using Object Attention for Extracting\n  Buildings and Roads from UAV Aerial Remote Sensing Images",
+  "abstract": "  Semantic segmentation for extracting buildings and roads, from unmanned aerial vehicle (UAV) remote sensing images by deep learning becomes a more efficient and convenient method than traditional manual segmentation in surveying and mapping field. In order to make the model lightweight and improve the model accuracy, A Lightweight Network Using Object Attention (LOANet) for Buildings and Roads from UAV Aerial Remote Sensing Images is proposed. The proposed network adopts an encoder-decoder architecture in which a Lightweight Densely Connected Network (LDCNet) is developed as the encoder. In the decoder part, the dual multi-scale context modules which consist of the Atrous Spatial Pyramid Pooling module (ASPP) and the Object Attention Module (OAM) are designed to capture more context information from feature maps of UAV remote sensing images. Between ASPP and OAM, a Feature Pyramid Network (FPN) module is used to and fuse multi-scale features extracting from ASPP. A private dataset of remote sensing images taken by UAV which contains 2431 training sets, 945 validation sets, and 475 test sets is constructed. The proposed model performs well on this dataset, with only 1.4M parameters and 5.48G floating-point operations (FLOPs), achieving a mean intersection-over-union ratio (mIoU) of 71.12%. More extensive experiments on the public LoveDA dataset and CITY-OSM dataset to further verify the effectiveness of the proposed model with excellent results on mIoU of 65.27% and 74.39%, respectively. "
+}

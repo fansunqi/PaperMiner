@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/GCYZSL/CVLMN"
+  ],
+  "tasks": [
+    "Image Captioning"
+  ],
+  "datasets": [
+    "MS-COCO"
+  ],
+  "methods": [
+    "Learning to Collocate Visual-Linguistic Neural Modules (CVLNM)",
+    "distinguishable module design",
+    "self-attention based module controller",
+    "part-of-speech based syntax loss"
+  ],
+  "results": [
+    "new state-of-the-art 129.5 CIDEr-D",
+    "more robust",
+    "less likely to overfit to dataset bias",
+    "less suffering when fewer training samples are available"
+  ],
+  "paper_id": "633cf5cf90e50fcafd772e6c",
+  "title": "Learning to Collocate Visual-Linguistic Neural Modules for Image\n  Captioning",
+  "abstract": "  Humans tend to decompose a sentence into different parts like \\textsc{sth do sth at someplace} and then fill each part with certain content. Inspired by this, we follow the \\textit{principle of modular design} to propose a novel image captioner: learning to Collocate Visual-Linguistic Neural Modules (CVLNM). Unlike the \\re{widely used} neural module networks in VQA, where the language (\\ie, question) is fully observable, \\re{the task of collocating visual-linguistic modules is more challenging.} This is because the language is only partially observable, for which we need to dynamically collocate the modules during the process of image captioning. To sum up, we make the following technical contributions to design and train our CVLNM: 1) \\textit{distinguishable module design} -- \\re{four modules in the encoder} including one linguistic module for function words and three visual modules for different content words (\\ie, noun, adjective, and verb) and another linguistic one in the decoder for commonsense reasoning, 2) a self-attention based \\textit{module controller} for robustifying the visual reasoning, 3) a part-of-speech based \\textit{syntax loss} imposed on the module controller for further regularizing the training of our CVLNM. Extensive experiments on the MS-COCO dataset show that our CVLNM is more effective, \\eg, achieving a new state-of-the-art 129.5 CIDEr-D, and more robust, \\eg, being less likely to overfit to dataset bias and suffering less when fewer training samples are available. Codes are available at \\url{https://github.com/GCYZSL/CVLMN} "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differentially private empirical risk minimization"
+  ],
+  "datasets": [
+    "Synthetic",
+    "Real"
+  ],
+  "methods": [
+    "Differentially private greedy coordinate descent (DP-GCD)"
+  ],
+  "results": [
+    "Logarithmic dependence on the dimension",
+    "Exploits structural properties (quasi-sparse solutions)"
+  ],
+  "paper_id": "62c3abc85aee126c0fc9aa75",
+  "title": "High-Dimensional Private Empirical Risk Minimization by Greedy\n  Coordinate Descent",
+  "abstract": "  In this paper, we study differentially private empirical risk minimization (DP-ERM). It has been shown that the worst-case utility of DP-ERM reduces polynomially as the dimension increases. This is a major obstacle to privately learning large machine learning models. In high dimension, it is common for some model's parameters to carry more information than others. To exploit this, we propose a differentially private greedy coordinate descent (DP-GCD) algorithm. At each iteration, DP-GCD privately performs a coordinate-wise gradient step along the gradients' (approximately) greatest entry. We show theoretically that DP-GCD can achieve a logarithmic dependence on the dimension for a wide range of problems by naturally exploiting their structural properties (such as quasi-sparse solutions). We illustrate this behavior numerically, both on synthetic and real datasets. "
+}

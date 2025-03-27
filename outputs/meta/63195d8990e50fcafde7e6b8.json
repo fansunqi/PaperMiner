@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Variational lower bound (ELBO)"
+  ],
+  "results": [
+    "ELBO is equal to a sum of entropies at all stationary points of learning",
+    "Applicable to a large class of generative models including Sigmoid Belief Networks, probabilistic PCA, and mixture models"
+  ],
+  "paper_id": "63195d8990e50fcafde7e6b8",
+  "title": "On the Convergence of the ELBO to Entropy Sums",
+  "abstract": "  The variational lower bound (a.k.a. ELBO or free energy) is the central objective for many established as well as many novel algorithms for unsupervised learning. Learning algorithms change model parameters such that the variational lower bound increases. Learning usually proceeds until parameters have converged to values close to a stationary point of the learning dynamics. In this purely theoretical contribution, we show that (for a very large class of generative models) the variational lower bound is at all stationary points of learning equal to a sum of entropies. For standard machine learning models with one set of latents and one set observed variables, the sum consists of three entropies: (A) the (average) entropy of the variational distributions, (B) the negative entropy of the model's prior distribution, and (C) the (expected) negative entropy of the observable distributions. The obtained result applies under realistic conditions including: finite numbers of data points, at any stationary points (including saddle points) and for any family of (well behaved) variational distributions. The class of generative models for which we show the equality to entropy sums contains many well-known generative models. As concrete examples we discuss Sigmoid Belief Networks, probabilistic PCA and (Gaussian and non-Gaussian) mixture models. The results also apply for standard (Gaussian) variational autoencoders, which has been shown in parallel (Damm et al., 2023). The prerequisites we use to show equality to entropy sums are relatively mild. Concretely, the distributions of a given generative model have to be of the exponential family (with constant base measure), and the model has to satisfy a parameterization criterion (which is usually fulfilled). Proving the equality of the ELBO to entropy sums at stationary points (under the stated conditions) is the main contribution of this work. "
+}

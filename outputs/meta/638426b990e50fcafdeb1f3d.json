@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Origin Inference in Machine Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "embedded-space multiple instance classification",
+    "shadow training"
+  ],
+  "results": [
+    "inference accuracy achieves 98.96% in the language use case",
+    "statistical analysis of different kinds of data origin"
+  ],
+  "paper_id": "638426b990e50fcafdeb1f3d",
+  "title": "Data Origin Inference in Machine Learning",
+  "abstract": "  It is a growing direction to utilize unintended memorization in ML models to benefit real-world applications, with recent efforts like user auditing, dataset ownership inference and forgotten data measurement. Standing on the point of ML model development, we introduce a process named data origin inference, to assist ML developers in locating missed or faulty data origin in training set without maintaining strenuous metadata. We formally define the data origin and the data origin inference task in the development of the ML model (mainly neural networks). Then we propose a novel inference strategy combining embedded-space multiple instance classification and shadow training. Diverse use cases cover language, visual and structured data, with various kinds of data origin (e.g. business, county, movie, mobile user, text author). A comprehensive performance analysis of our proposed strategy contains referenced target model layers, available testing data for each origin, and in shadow training, the implementations of feature extraction as well as shadow models. Our best inference accuracy achieves 98.96% in the language use case when the target model is a transformer-based deep neural network. Furthermore, we give a statistical analysis of different kinds of data origin to investigate what kind of origin is probably to be inferred correctly. "
+}

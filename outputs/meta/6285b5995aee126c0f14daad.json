@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Risk Control in Online Learning"
+  ],
+  "datasets": [
+    "tabular time-series data sets"
+  ],
+  "methods": [
+    "uncertainty sets construction",
+    "conformal prediction",
+    "online learning algorithms"
+  ],
+  "results": [
+    "rigorous risk control",
+    "handles data distribution shifts",
+    "valid intervals construction"
+  ],
+  "paper_id": "6285b5995aee126c0f14daad",
+  "title": "Achieving Risk Control in Online Learning Settings",
+  "abstract": "  To provide rigorous uncertainty quantification for online learning models, we develop a framework for constructing uncertainty sets that provably control risk -- such as coverage of confidence intervals, false negative rate, or F1 score -- in the online setting. This extends conformal prediction to apply to a larger class of online learning problems. Our method guarantees risk control at any user-specified level even when the underlying data distribution shifts drastically, even adversarially, over time in an unknown fashion. The technique we propose is highly flexible as it can be applied with any base online learning algorithm (e.g., a deep neural network trained online), requiring minimal implementation effort and essentially zero additional computational cost. We further extend our approach to control multiple risks simultaneously, so the prediction sets we generate are valid for all given risks. To demonstrate the utility of our method, we conduct experiments on real-world tabular time-series data sets showing that the proposed method rigorously controls various natural risks. Furthermore, we show how to construct valid intervals for an online image-depth estimation problem that previous sequential calibration schemes cannot handle. "
+}

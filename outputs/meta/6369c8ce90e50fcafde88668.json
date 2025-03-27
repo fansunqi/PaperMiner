@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous sign language recognition (CSLR)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Temporal superimposed crossover module (TSCM)",
+    "2D convolution",
+    "Improved ResBlockT network",
+    "Random gradient stop",
+    "Multi-level CTC loss"
+  ],
+  "results": [
+    "Improved real-time and deploy-ability",
+    "Highly competitive results on large-scale datasets"
+  ],
+  "paper_id": "6369c8ce90e50fcafde88668",
+  "title": "Temporal superimposed crossover module for effective continuous sign\n  language",
+  "abstract": "  The ultimate goal of continuous sign language recognition(CSLR) is to facilitate the communication between special people and normal people, which requires a certain degree of real-time and deploy-ability of the model. However, in the previous research on CSLR, little attention has been paid to the real-time and deploy-ability. In order to improve the real-time and deploy-ability of the model, this paper proposes a zero parameter, zero computation temporal superposition crossover module(TSCM), and combines it with 2D convolution to form a \"TSCM+2D convolution\" hybrid convolution, which enables 2D convolution to have strong spatial-temporal modelling capability with zero parameter increase and lower deployment cost compared with other spatial-temporal convolutions. The overall CSLR model based on TSCM is built on the improved ResBlockT network in this paper. The hybrid convolution of \"TSCM+2D convolution\" is applied to the ResBlock of the ResNet network to form the new ResBlockT, and random gradient stop and multi-level CTC loss are introduced to train the model, which reduces the final recognition WER while reducing the training memory usage, and extends the ResNet network from image classification task to video recognition task. In addition, this study is the first in CSLR to use only 2D convolution extraction of sign language video temporal-spatial features for end-to-end learning for recognition. Experiments on two large-scale continuous sign language datasets demonstrate the effectiveness of the proposed method and achieve highly competitive results. "
+}

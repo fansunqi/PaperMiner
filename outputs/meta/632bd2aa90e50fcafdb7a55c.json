@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "https://aucoroboticsmu.github.io/GP-net/"
+  ],
+  "tasks": [
+    "Grasping Proposal"
+  ],
+  "datasets": [
+    "Synthetically generated dataset containing depth-images and ground-truth grasp information"
+  ],
+  "methods": [
+    "Convolutional Neural Network model (GP-net)"
+  ],
+  "results": [
+    "Grasp success of 51.8% compared to 51.1% for VGN and 33.6% for GPD"
+  ],
+  "paper_id": "632bd2aa90e50fcafdb7a55c",
+  "title": "GP-net: Flexible Viewpoint Grasp Proposal",
+  "abstract": "  We present the Grasp Proposal Network (GP-net), a Convolutional Neural Network model which can generate 6-DOF grasps from flexible viewpoints, e.g. as experienced by mobile manipulators. To train GP-net, we synthetically generate a dataset containing depth-images and ground-truth grasp information. In real-world experiments we use the EGAD! grasping benchmark to evaluate GP-net against two commonly used algorithms, the Volumetric Grasping Network (VGN) and the Grasp Pose Detection package (GPD), on a PAL TIAGo mobile manipulator. In contrast to the state-of-the-art methods in robotic grasping, GP-net can be used for grasping objects from flexible, unknown viewpoints without the need to define the workspace and achieves a grasp success of 51.8% compared to 51.1% for VGN and 33.6% for GPD. We provide a ROS package along with our code and pre-trained models at https://aucoroboticsmu.github.io/GP-net/. "
+}

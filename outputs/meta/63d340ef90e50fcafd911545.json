@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "DNN Processing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Flexagon: A Multi-Dataflow Sparse-Sparse Matrix Multiplication Accelerator",
+    "Merger-Reduction Network (MRN)",
+    "3-tier memory hierarchy"
+  ],
+  "results": [
+    "Average performance benefits of 4.59x, 1.71x, and 1.35x with respect to the state-of-the-art accelerators"
+  ],
+  "paper_id": "63d340ef90e50fcafd911545",
+  "title": "Flexagon: A Multi-Dataflow Sparse-Sparse Matrix Multiplication\n  Accelerator for Efficient DNN Processing",
+  "abstract": "  Sparsity is a growing trend in modern DNN models. Existing Sparse-Sparse Matrix Multiplication (SpMSpM) accelerators are tailored to a particular SpMSpM dataflow (i.e., Inner Product, Outer Product or Gustavsons), that determines their overall efficiency. We demonstrate that this static decision inherently results in a suboptimal dynamic solution. This is because different SpMSpM kernels show varying features (i.e., dimensions, sparsity pattern, sparsity degree), which makes each dataflow better suited to different data sets. In this work we present Flexagon, the first SpMSpM reconfigurable accelerator that is capable of performing SpMSpM computation by using the particular dataflow that best matches each case. Flexagon accelerator is based on a novel Merger-Reduction Network (MRN) that unifies the concept of reducing and merging in the same substrate, increasing efficiency. Additionally, Flexagon also includes a 3-tier memory hierarchy, specifically tailored to the different access characteristics of the input and output compressed matrices. Using detailed cycle-level simulation of contemporary DNN models from a variety of application domains, we show that Flexagon achieves average performance benefits of 4.59x, 1.71x, and 1.35x with respect to the state-of-the-art SIGMA-like, Sparch-like and GAMMA-like accelerators (265% , 67% and 18%, respectively, in terms of average performance/area efficiency). "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning control policies with large discrete action spaces"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-Action Networks (MAN) Learning",
+    "factorizing the N-dimension action space into N 1-dimensional components",
+    "Value Neural Network for each sub-action",
+    "temporal-difference learning"
+  ],
+  "results": [
+    "MAN learns faster than both Deep Q-Learning and Double Deep Q-Learning"
+  ],
+  "paper_id": "632a810e90e50fcafd081abb",
+  "title": "MAN: Multi-Action Networks Learning",
+  "abstract": "  Learning control policies with large discrete action spaces is a challenging problem in the field of reinforcement learning due to present inefficiencies in exploration. With high dimensional action spaces, there are a large number of potential actions in each individual dimension over which policies would be learned. In this work, we introduce a Deep Reinforcement Learning (DRL) algorithm call Multi-Action Networks (MAN) Learning that addresses the challenge of high-dimensional large discrete action spaces. We propose factorizing the N-dimension action space into N 1-dimensional components, known as sub-actions, creating a Value Neural Network for each sub-action. Then, MAN uses temporal-difference learning to train the networks synchronously, which is simpler than training a single network with a large action output directly. To evaluate the proposed method, we test MAN on three scenarios: an n-dimension maze task, a block stacking task, and then extend MAN to handle 12 games from the Atari Arcade Learning environment with 18 action spaces. Our results indicate that MAN learns faster than both Deep Q-Learning and Double Deep Q-Learning, implying our method is a better performing synchronous temporal difference algorithm than those currently available for large discrete action spaces. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shuffle Synthesis on the NVIDIA PTX Code"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Symbolic Emulator",
+    "CUDA and OpenACC directives",
+    "Warp-level shuffle instructions"
+  ],
+  "results": [
+    "Detailed study on the benefits of shuffle instructions across four generations of GPU architectures"
+  ],
+  "paper_id": "63d7352390e50fcafda30242",
+  "title": "A Symbolic Emulator for Shuffle Synthesis on the NVIDIA PTX Code",
+  "abstract": "  Various kinds of applications take advantage of GPUs through automation tools that attempt to automatically exploit the available performance of the GPU's parallel architecture. Directive-based programming models, such as OpenACC, are one such method that easily enables parallel computing by just adhering code annotations to code loops. Such abstract models, however, often prevent programmers from making additional low-level optimizations to take advantage of the advanced architectural features of GPUs because the actual generated computation is hidden from the application developer.   This paper describes and implements a novel flexible optimization technique that operates by inserting a code emulator phase to the tail-end of the compilation pipeline. Our tool emulates the generated code using symbolic analysis by substituting dynamic information and thus allowing for further low-level code optimizations to be applied. We implement our tool to support both CUDA and OpenACC directives as the frontend of the compilation pipeline, thus enabling low-level GPU optimizations for OpenACC that were not previously possible. We demonstrate the capabilities of our tool by automating warp-level shuffle instructions that are difficult to use by even advanced GPU programmers. Lastly, evaluating our tool with a benchmark suite and complex application code, we provide a detailed study to assess the benefits of shuffle instructions across four generations of GPU architectures. "
+}

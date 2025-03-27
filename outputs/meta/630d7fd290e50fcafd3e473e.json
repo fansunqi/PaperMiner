@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial attacks on Graph Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Surrogate model with multi-level propagation",
+    "Batch normalization",
+    "Innovative attack loss"
+  ],
+  "results": [
+    "Significant improvement with proposed approach",
+    "Balanced attack effectiveness and imperceptibility"
+  ],
+  "paper_id": "630d7fd290e50fcafd3e473e",
+  "title": "What Does the Gradient Tell When Attacking the Graph Structure",
+  "abstract": "  Recent research has revealed that Graph Neural Networks (GNNs) are susceptible to adversarial attacks targeting the graph structure. A malicious attacker can manipulate a limited number of edges, given the training labels, to impair the victim model's performance. Previous empirical studies indicate that gradient-based attackers tend to add edges rather than remove them. In this paper, we present a theoretical demonstration revealing that attackers tend to increase inter-class edges due to the message passing mechanism of GNNs, which explains some previous empirical observations. By connecting dissimilar nodes, attackers can more effectively corrupt node features, making such attacks more advantageous. However, we demonstrate that the inherent smoothness of GNN's message passing tends to blur node dissimilarity in the feature space, leading to the loss of crucial information during the forward process. To address this issue, we propose a novel surrogate model with multi-level propagation that preserves the node dissimilarity information. This model parallelizes the propagation of unaggregated raw features and multi-hop aggregated features, while introducing batch normalization to enhance the dissimilarity in node representations and counteract the smoothness resulting from topological aggregation. Our experiments show significant improvement with our approach.Furthermore, both theoretical and experimental evidence suggest that adding inter-class edges constitutes an easily observable attack pattern. We propose an innovative attack loss that balances attack effectiveness and imperceptibility, sacrificing some attack effectiveness to attain greater imperceptibility. We also provide experiments to validate the compromise performance achieved through this attack loss. "
+}

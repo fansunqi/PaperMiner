@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient Inference in Large-Scale Generative Language Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LUT-GEMM",
+    "Weight-only quantization",
+    "Non-uniform or uniform quantization techniques"
+  ],
+  "results": [
+    "2.1x acceleration in generating each token compared to OPTQ",
+    "Inference of OPT-175B model on a single GPU without noticeable degradation in accuracy or performance"
+  ],
+  "paper_id": "62b2889d5aee126c0fbd337f",
+  "title": "LUT-GEMM: Quantized Matrix Multiplication based on LUTs for Efficient\n  Inference in Large-Scale Generative Language Models",
+  "abstract": "  The recent advancements in self-supervised learning, combined with the Transformer architecture, have enabled natural language processing (NLP) to achieve remarkably low perplexity. However, powerful NLP models necessitate increasing model size, leading to substantial computational and memory requirements. In this paper, we introduce an efficient inference framework tailored for large-scale generative language models. To reduce the model size, we employ a weight-only quantization strategy while preserving full precision for activations. As a result, we attain sub-4-bit quantization for each weight through non-uniform or uniform quantization techniques. Our proposed kernel, called LUT-GEMM, then accelerates quantized matrix multiplications, offering a flexible balance between compression ratio and accuracy. Unlike earlier matrix multiplication kernels that accommodated weight-only quantization, LUT-GEMM efficiently eliminates the resource-demanding dequantization process for both uniform and non-uniform quantization methods. By reducing the latency of individual GPUs and the overall inference process for large-scale language models, LUT-GEMM provides significant performance improvements in inference. The impact of LUT-GEMM is facilitated by implementing high compression ratios through low-bit quantization and efficient LUT-based operations, which decreases the number of required GPUs. For the OPT-175B model with 3-bit quantization, we show that LUT-GEMM accelerates the latency for generating each token by 2.1x compared to OPTQ, which requires costly dequantization. Consequently, LUT-GEMM enables inference of the OPT-175B model on a single GPU without noticeable degradation in accuracy or performance, while the non-quantized OPT-175B model requires a minimum of 8 GPUs. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shadow removal"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Structure-informed shadow removal network (StructNet)",
+    "Mask-guided shadow-free extraction (MSFE) module",
+    "Multi-scale feature & residual aggregation (MFRA) module",
+    "Multi-level structure information (MStructNet)"
+  ],
+  "results": [
+    "Outperforms existing shadow removal methods",
+    "StructNet can be integrated with existing methods to boost their performances further"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa1ba",
+  "title": "Structure-Informed Shadow Removal Networks",
+  "abstract": "  Shadow removal is a fundamental task in computer vision. Despite the success, existing deep learning-based shadow removal methods still produce images with shadow remnants. These shadow remnants typically exist in homogeneous regions with low intensity values, making them untraceable in the existing image-to-image mapping paradigm. We observe from our experiments that shadows mainly degrade object colors at the image structure level (in which humans perceive object outlines filled with continuous colors). Hence, in this paper, we propose to remove shadows at the image structure level. Based on this idea, we propose a novel structure-informed shadow removal network (StructNet) to leverage the image structure information to address the shadow remnant problem. Specifically, StructNet first reconstructs the structure information of the input image without shadows and then uses the restored shadow-free structure prior to guiding the image-level shadow removal. StructNet contains two main novel modules: (1) a mask-guided shadow-free extraction (MSFE) module to extract image structural features in a non-shadow to shadow directional manner, and (2) a multi-scale feature & residual aggregation (MFRA) module to leverage the shadow-free structure information to regularize feature consistency. In addition, we also propose to extend StructNet to exploit multi-level structure information (MStructNet), to further boost the shadow removal performance with minimum computational overheads. Extensive experiments on three shadow removal benchmarks demonstrate that our method outperforms existing shadow removal methods, and our StructNet can be integrated with existing methods to boost their performances further. "
+}

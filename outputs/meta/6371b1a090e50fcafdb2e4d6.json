@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image classification",
+    "Downstream tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Token Transformer (TT)",
+    "CLS Attention",
+    "Feature Inheritance Module (FIM)",
+    "Spatial-Channel Feedforward Network (SCFFN)"
+  ],
+  "results": [
+    "Competitive results with low parameters"
+  ],
+  "paper_id": "6371b1a090e50fcafdb2e4d6",
+  "title": "Token Transformer: Can class token help window-based transformer build\n  better long-range interactions?",
+  "abstract": "  Compared with the vanilla transformer, the window-based transformer offers a better trade-off between accuracy and efficiency. Although the window-based transformer has made great progress, its long-range modeling capabilities are limited due to the size of the local window and the window connection scheme. To address this problem, we propose a novel Token Transformer (TT). The core mechanism of TT is the addition of a Class (CLS) token for summarizing window information in each local window. We refer to this type of token interaction as CLS Attention. These CLS tokens will interact spatially with the tokens in each window to enable long-range modeling. In order to preserve the hierarchical design of the window-based transformer, we designed Feature Inheritance Module (FIM) in each phase of TT to deliver the local window information from the previous phase to the CLS token in the next phase. In addition, we have designed a Spatial-Channel Feedforward Network (SCFFN) in TT, which can mix CLS tokens and embedded tokens on the spatial domain and channel domain without additional parameters. Extensive experiments have shown that our TT achieves competitive results with low parameters in image classification and downstream tasks. "
+}

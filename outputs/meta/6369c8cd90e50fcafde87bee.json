@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Few-shot class incremental learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Improved contrasting loss",
+    "Nearest class mean classification strategy"
+  ],
+  "results": [
+    "Embedding space remains intact after training with new classes",
+    "Outperforms existing state-of-the-art algorithms in terms of accuracy across different sessions"
+  ],
+  "paper_id": "6369c8cd90e50fcafde87bee",
+  "title": "Prototypical quadruplet for few-shot class incremental learning",
+  "abstract": "  Scarcity of data and incremental learning of new tasks pose two major bottlenecks for many modern computer vision algorithms. The phenomenon of catastrophic forgetting, i.e., the model's inability to classify previously learned data after training with new batches of data, is a major challenge. Conventional methods address catastrophic forgetting while compromising the current session's training. Generative replay-based approaches, such as generative adversarial networks (GANs), have been proposed to mitigate catastrophic forgetting, but training GANs with few samples may lead to instability. To address these challenges, we propose a novel method that improves classification robustness by identifying a better embedding space using an improved contrasting loss. Our approach retains previously acquired knowledge in the embedding space, even when trained with new classes, by updating previous session class prototypes to represent the true class mean, which is crucial for our nearest class mean classification strategy. We demonstrate the effectiveness of our method by showing that the embedding space remains intact after training the model with new classes and outperforms existing state-of-the-art algorithms in terms of accuracy across different sessions. "
+}

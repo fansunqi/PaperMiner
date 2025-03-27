@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "6D Pose Estimation for Robotic Grasping"
+  ],
+  "datasets": [
+    "Synthetic RGBD image datasets with 6D pose annotations",
+    "Annotated RGBD dataset of five household objects"
+  ],
+  "methods": [
+    "Data generation pipeline using Blender",
+    "YOLO-V4 object detector",
+    "PVN3D 6D pose estimation algorithm",
+    "Domain randomization techniques",
+    "Inference pipeline optimization"
+  ],
+  "results": [
+    "87% grasping success rate",
+    "Photo-realistic RGBD images generation",
+    "Transfer of trained inference model to robotic grasping experiments"
+  ],
+  "paper_id": "630ed16690e50fcafd793a2e",
+  "title": "6IMPOSE: Bridging the Reality Gap in 6D Pose Estimation for Robotic\n  Grasping",
+  "abstract": "  6D pose recognition has been a crucial factor in the success of robotic grasping, and recent deep learning based approaches have achieved remarkable results on benchmarks. However, their generalization capabilities in real-world applications remain unclear. To overcome this gap, we introduce 6IMPOSE, a novel framework for sim-to-real data generation and 6D pose estimation. 6IMPOSE consists of four modules: First, a data generation pipeline that employs the 3D software suite Blender to create synthetic RGBD image datasets with 6D pose annotations. Second, an annotated RGBD dataset of five household objects generated using the proposed pipeline. Third, a real-time two-stage 6D pose estimation approach that integrates the object detector YOLO-V4 and a streamlined, real-time version of the 6D pose estimation algorithm PVN3D optimized for time-sensitive robotics applications. Fourth, a codebase designed to facilitate the integration of the vision system into a robotic grasping experiment. Our approach demonstrates the efficient generation of large amounts of photo-realistic RGBD images and the successful transfer of the trained inference model to robotic grasping experiments, achieving an overall success rate of 87% in grasping five different household objects from cluttered backgrounds under varying lighting conditions. This is made possible by the fine-tuning of data generation and domain randomization techniques, and the optimization of the inference pipeline, overcoming the generalization and performance shortcomings of the original PVN3D algorithm. Finally, we make the code, synthetic dataset, and all the pretrained models available on Github. "
+}

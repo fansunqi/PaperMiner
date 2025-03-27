@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Denoising"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-scale refined optical flow-guided video denoising",
+    "Denoising-oriented flow refinement (DFR) module",
+    "Flow-guided mutual denoising propagation (FMDP) module"
+  ],
+  "results": [
+    "State-of-the-art performance on both synthetic Gaussian denoising and real video denoising"
+  ],
+  "paper_id": "630839ef90e50fcafd6ab577",
+  "title": "Learning Task-Oriented Flows to Mutually Guide Feature Alignment in\n  Synthesized and Real Video Denoising",
+  "abstract": "  Video denoising aims at removing noise from videos to recover clean ones. Some existing works show that optical flow can help the denoising by exploiting the additional spatial-temporal clues from nearby frames. However, the flow estimation itself is also sensitive to noise, and can be unusable under large noise levels. To this end, we propose a new multi-scale refined optical flow-guided video denoising method, which is more robust to different noise levels. Our method mainly consists of a denoising-oriented flow refinement (DFR) module and a flow-guided mutual denoising propagation (FMDP) module. Unlike previous works that directly use off-the-shelf flow solutions, DFR first learns robust multi-scale optical flows, and FMDP makes use of the flow guidance by progressively introducing and refining more flow information from low resolution to high resolution. Together with real noise degradation synthesis, the proposed multi-scale flow-guided denoising network achieves state-of-the-art performance on both synthetic Gaussian denoising and real video denoising. The codes will be made publicly available. "
+}

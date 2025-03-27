@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Axiomatic Reasoning for PSO"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "View-Based Axiomatic Reasoning",
+    "Proof calculi",
+    "Thread views"
+  ],
+  "results": [
+    "View-based semantics for PSO",
+    "Proofs without message-passing (MP) axiom are transferable to PSO",
+    "Correctness of a litmus test employing a fence"
+  ],
+  "paper_id": "63ca069890e50fcafd6830ed",
+  "title": "View-Based Axiomatic Reasoning for PSO (Extended Version)",
+  "abstract": "  Weak memory models describe the semantics of concurrent programs on modern multi-core architectures. Reasoning techniques for concurrent programs, like Owicki-Gries-style proof calculi, have to be based on such a semantics, and hence need to be freshly developed for every new memory model. Recently, a more uniform approach to reasoning has been proposed which builds correctness proofs on the basis of a number of core axioms. This allows to prove program correctness independent of memory models, and transfers proofs to specific memory models by showing these to instantiate all axioms required in a proof. The axiomatisation is built on the notion of thread views as first class elements in the semantics. In this paper, we investigate the applicability of this form of axiomatic reasoning to the Partial Store Order (PSO) memory model. As the standard semantics for PSO is not based on views, we first of all provide a view-based semantics for PSO and prove it to coincide with the standard semantics. We then show the new view-based semantics to satisfy all but one axiom. The missing axiom refers to message-passing (MP) abilities of memory models, which PSO does not guarantee. As a consequence, only proofs without usage of the MP axiom are transferable to PSO. We illustrate the reasoning technique by proving correctness of a litmus test employing a fence to ensure message passing. "
+}

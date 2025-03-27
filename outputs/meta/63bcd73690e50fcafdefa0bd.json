@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://sites.google.com/view/foldsformer"
+  ],
+  "tasks": [
+    "Sequential multi-step cloth manipulation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Foldformer",
+    "space-time attention mechanism"
+  ],
+  "results": [
+    "Significantly outperforms state-of-the-art approaches in simulation",
+    "Can complete multi-step cloth manipulation tasks with varying cloth configurations",
+    "Can be transferred from simulation to the real world without additional training",
+    "Can generalize to unseen cloth shapes"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa0bd",
+  "title": "Foldsformer: Learning Sequential Multi-Step Cloth Manipulation With\n  Space-Time Attention",
+  "abstract": "  Sequential multi-step cloth manipulation is a challenging problem in robotic manipulation, requiring a robot to perceive the cloth state and plan a sequence of chained actions leading to the desired state. Most previous works address this problem in a goal-conditioned way, and goal observation must be given for each specific task and cloth configuration, which is not practical and efficient. Thus, we present a novel multi-step cloth manipulation planning framework named Foldformer. Foldformer can complete similar tasks with only a general demonstration and utilize a space-time attention mechanism to capture the instruction information behind this demonstration. We experimentally evaluate Foldsformer on four representative sequential multi-step manipulation tasks and show that Foldsformer significantly outperforms state-of-the-art approaches in simulation. Foldformer can complete multi-step cloth manipulation tasks even when configurations of the cloth (e.g., size and pose) vary from configurations in the general demonstrations. Furthermore, our approach can be transferred from simulation to the real world without additional training or domain randomization. Despite training on rectangular clothes, we also show that our approach can generalize to unseen cloth shapes (T-shirts and shorts). Videos and source code are available at: https://sites.google.com/view/foldsformer. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/PRBonn/ir-mcl"
+  ],
+  "tasks": [
+    "Robot localization"
+  ],
+  "datasets": [
+    "self-recorded datasets",
+    "three publicly available ones"
+  ],
+  "methods": [
+    "neural occupancy field",
+    "volume rendering",
+    "particle filter-based localization"
+  ],
+  "results": [
+    "accurate and efficient localization",
+    "improved observation model",
+    "surpassing the localization performance of state-of-the-art methods"
+  ],
+  "paper_id": "633f98d790e50fcafd78e2af",
+  "title": "IR-MCL: Implicit Representation-Based Online Global Localization",
+  "abstract": "  Determining the state of a mobile robot is an essential building block of robot navigation systems. In this paper, we address the problem of estimating the robots pose in an indoor environment using 2D LiDAR data and investigate how modern environment models can improve gold standard Monte-Carlo localization (MCL) systems. We propose a neural occupancy field to implicitly represent the scene using a neural network. With the pretrained network, we can synthesize 2D LiDAR scans for an arbitrary robot pose through volume rendering. Based on the implicit representation, we can obtain the similarity between a synthesized and actual scan as an observation model and integrate it into an MCL system to perform accurate localization. We evaluate our approach on self-recorded datasets and three publicly available ones. We show that we can accurately and efficiently localize a robot using our approach surpassing the localization performance of state-of-the-art methods. The experiments suggest that the presented implicit representation is able to predict more accurate 2D LiDAR scans leading to an improved observation model for our particle filter-based localization. The code of our approach will be available at: https://github.com/PRBonn/ir-mcl. "
+}

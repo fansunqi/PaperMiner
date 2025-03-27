@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/pprp/CVPR2022-NAS-competition-Track1-3th-solution"
+  ],
+  "tasks": [
+    "Neural architecture search (NAS)"
+  ],
+  "datasets": [
+    "NAS-Bench-201",
+    "ResNet-based search space"
+  ],
+  "methods": [
+    "RD-NAS",
+    "Ranking Distillation",
+    "margin subnet sampler",
+    "margin ranking loss"
+  ],
+  "results": [
+    "10.7% improvement in ranking ability on NAS-Bench-201",
+    "9.65% improvement in ranking ability on ResNet-based search space"
+  ],
+  "paper_id": "63d340e790e50fcafd910679",
+  "title": "RD-NAS: Enhancing One-shot Supernet Ranking Ability via Ranking\n  Distillation from Zero-cost Proxies",
+  "abstract": "  Neural architecture search (NAS) has made tremendous progress in the automatic design of effective neural network structures but suffers from a heavy computational burden. One-shot NAS significantly alleviates the burden through weight sharing and improves computational efficiency. Zero-shot NAS further reduces the cost by predicting the performance of the network from its initial state, which conducts no training. Both methods aim to distinguish between \"good\" and \"bad\" architectures, i.e., ranking consistency of predicted and true performance. In this paper, we propose Ranking Distillation one-shot NAS (RD-NAS) to enhance ranking consistency, which utilizes zero-cost proxies as the cheap teacher and adopts the margin ranking loss to distill the ranking knowledge. Specifically, we propose a margin subnet sampler to distill the ranking knowledge from zero-shot NAS to one-shot NAS by introducing Group distance as margin. Our evaluation of the NAS-Bench-201 and ResNet-based search space demonstrates that RD-NAS achieve 10.7\\% and 9.65\\% improvements in ranking ability, respectively. Our codes are available at https://github.com/pprp/CVPR2022-NAS-competition-Track1-3th-solution "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backdoor attacks on NLP systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "BITE: Textual Backdoor Attack with Iterative Trigger Injection",
+    "DeBITE: Defense method based on potential trigger word removal"
+  ],
+  "results": [
+    "BITE is significantly more effective than baselines while maintaining decent stealthiness",
+    "DeBITE outperforms existing methods on defending BITE"
+  ],
+  "paper_id": "628ef0495aee126c0f82db31",
+  "title": "BITE: Textual Backdoor Attacks with Iterative Trigger Injection",
+  "abstract": "  Backdoor attacks have become an emerging threat to NLP systems. By providing poisoned training data, the adversary can embed a ``backdoor'' into the victim model, which allows input instances satisfying certain textual patterns (e.g., containing a keyword) to be predicted as a target label of the adversary's choice. In this paper, we demonstrate that it's possible to design a backdoor attack that is both stealthy (i.e., hard to notice) and effective (i.e., has a high attack success rate). We propose BITE, a backdoor attack that poisons the training data to establish strong correlations between the target label and some ``trigger words'', by iteratively injecting them into target-label instances through natural word-level perturbations. The poisoned training data instruct the victim model to predict the target label on inputs containing trigger words, forming the backdoor. Experiments on four medium-sized text classification datasets show that BITE is significantly more effective than baselines while maintaining decent stealthiness, raising alarm on the usage of untrusted training data. We further propose a defense method named DeBITE based on potential trigger word removal, which outperforms existing methods on defending BITE and generalizes well to defending other backdoor attacks. "
+}

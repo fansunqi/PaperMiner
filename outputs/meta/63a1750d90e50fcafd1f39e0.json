@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/HakamShams/LOAN"
+  ],
+  "tasks": [
+    "Wildfire Danger Forecasting"
+  ],
+  "datasets": [
+    "FireCube"
+  ],
+  "methods": [
+    "2D/3D two-branch convolutional neural network (CNN) with a Location-aware Adaptive Normalization layer (LOAN)",
+    "sinusoidal-based encoding of the day of the year"
+  ],
+  "results": [
+    "Better performance than other baselines on the FireCube dataset"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f39e0",
+  "title": "Location-aware Adaptive Normalization: A Deep Learning Approach For\n  Wildfire Danger Forecasting",
+  "abstract": "  Climate change is expected to intensify and increase extreme events in the weather cycle. Since this has a significant impact on various sectors of our life, recent works are concerned with identifying and predicting such extreme events from Earth observations. With respect to wildfire danger forecasting, previous deep learning approaches duplicate static variables along the time dimension and neglect the intrinsic differences between static and dynamic variables. Furthermore, most existing multi-branch architectures lose the interconnections between the branches during the feature learning stage. To address these issues, this paper proposes a 2D/3D two-branch convolutional neural network (CNN) with a Location-aware Adaptive Normalization layer (LOAN). Using LOAN as a building block, we can modulate the dynamic features conditional on their geographical locations. Thus, our approach considers feature properties as a unified yet compound 2D/3D model. Besides, we propose using the sinusoidal-based encoding of the day of the year to provide the model with explicit temporal information about the target day within the year. Our experimental results show a better performance of our approach than other baselines on the challenging FireCube dataset. The results show that location-aware adaptive feature normalization is a promising technique to learn the relation between dynamic variables and their geographic locations, which is highly relevant for areas where remote sensing data builds the basis for analysis. The source code is available at https://github.com/HakamShams/LOAN. "
+}

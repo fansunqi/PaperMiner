@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data Redaction from Pre-trained GANs"
+  ],
+  "datasets": [
+    "real-world image datasets"
+  ],
+  "methods": [
+    "Generative Adversarial Networks (GANs)",
+    "three different algorithms for data redaction"
+  ],
+  "results": [
+    "out-perform data deletion baselines",
+    "retaining high generation quality at a fraction of the cost of full re-training"
+  ],
+  "paper_id": "62bd156e5aee126c0f624a04",
+  "title": "Data Redaction from Pre-trained GANs",
+  "abstract": "  Large pre-trained generative models are known to occasionally output undesirable samples, which undermines their trustworthiness. The common way to mitigate this is to re-train them differently from scratch using different data or different regularization -- which uses a lot of computational resources and does not always fully address the problem.   In this work, we take a different, more compute-friendly approach and investigate how to post-edit a model after training so that it ''redacts'', or refrains from outputting certain kinds of samples. We show that redaction is a fundamentally different task from data deletion, and data deletion may not always lead to redaction. We then consider Generative Adversarial Networks (GANs), and provide three different algorithms for data redaction that differ on how the samples to be redacted are described. Extensive evaluations on real-world image datasets show that our algorithms out-perform data deletion baselines, and are capable of redacting data while retaining high generation quality at a fraction of the cost of full re-training. "
+}

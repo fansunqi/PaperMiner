@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Text retrieval",
+    "Open-domain question answering"
+  ],
+  "datasets": [
+    "BEIR",
+    "ODQA"
+  ],
+  "methods": [
+    "Query extraction",
+    "Transferred query generation"
+  ],
+  "results": [
+    "Comparably well (or better) to multiple strong baselines",
+    "State-of-the-art performance on BEIR and ODQA datasets"
+  ],
+  "paper_id": "63a1751690e50fcafd1f448e",
+  "title": "AugTriever: Unsupervised Dense Retrieval by Scalable Data Augmentation",
+  "abstract": "  Dense retrievers have made significant strides in text retrieval and open-domain question answering, even though most achievements were made possible only with large amounts of human supervision. In this work, we aim to develop unsupervised methods by proposing two methods that create pseudo query-document pairs and train dense retrieval models in an annotation-free and scalable manner: query extraction and transferred query generation. The former method produces pseudo queries by selecting salient spans from the original document. The latter utilizes generation models trained for other NLP tasks (e.g., summarization) to produce pseudo queries. Extensive experiments show that models trained with the proposed augmentation methods can perform comparably well (or better) to multiple strong baselines. Combining those strategies leads to further improvements, achieving the state-of-the-art performance of unsupervised dense retrieval on both BEIR and ODQA datasets. "
+}

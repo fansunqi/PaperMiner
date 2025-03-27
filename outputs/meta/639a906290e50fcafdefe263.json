@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "https://github.com/atonderski/lidarclip"
+  ],
+  "tasks": [
+    "Mapping automotive point clouds to CLIP embedding space",
+    "Lidar-based retrieval",
+    "Zero-shot classification",
+    "Point cloud captioning",
+    "Lidar-to-image generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "LidarCLIP",
+    "Point cloud encoder",
+    "Image-lidar pairs",
+    "CLIP embeddings"
+  ],
+  "results": [
+    "Lidar-based retrieval on par with image-based retrieval",
+    "Improved upon single-modality methods",
+    "Outperforms existing CLIP for point clouds",
+    "No additional training required for applications"
+  ],
+  "paper_id": "639a906290e50fcafdefe263",
+  "title": "LidarCLIP or: How I Learned to Talk to Point Clouds",
+  "abstract": "  Research connecting text and images has recently seen several breakthroughs, with models like CLIP, DALL-E 2, and Stable Diffusion. However, the connection between text and other visual modalities, such as lidar data, has received less attention, prohibited by the lack of text-lidar datasets. In this work, we propose LidarCLIP, a mapping from automotive point clouds to a pre-existing CLIP embedding space. Using image-lidar pairs, we supervise a point cloud encoder with the image CLIP embeddings, effectively relating text and lidar data with the image domain as an intermediary. We show the effectiveness of LidarCLIP by demonstrating that lidar-based retrieval is generally on par with image-based retrieval, but with complementary strengths and weaknesses. By combining image and lidar features, we improve upon both single-modality methods and enable a targeted search for challenging detection scenarios under adverse sensor conditions. We also explore zero-shot classification and show that LidarCLIP outperforms existing attempts to use CLIP for point clouds by a large margin. Finally, we leverage our compatibility with CLIP to explore a range of applications, such as point cloud captioning and lidar-to-image generation, without any additional training. Code and pre-trained models are available at https://github.com/atonderski/lidarclip. "
+}

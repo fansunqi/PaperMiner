@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimal Collection of Information"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hamilton-Jacobi PDE",
+    "Method of Lines (MOL)",
+    "Hybrid Approach"
+  ],
+  "results": [
+    "Minimizing estimation error",
+    "Fisher Information Matrix (FIM) as a metric"
+  ],
+  "paper_id": "63bb859d90e50fcafd06f0dd",
+  "title": "Trajectories for the Optimal Collection of Information",
+  "abstract": "  We study a scenario where an aircraft has multiple heterogeneous sensors collecting measurements to track a target vehicle of unknown location. The measurements are sampled along the flight path and our goals to optimize sensor placement to minimize estimation error. We select as a metric the Fisher Information Matrix (FIM), as \"minimizing\" the inverse of the FIM is required to achieve small estimation error. We propose to generate the optimal path from the Hamilton-Jacobi (HJ) partial differential equation (PDE) as it is the necessary and sufficient condition for optimality. A traditional method of lines (MOL) approach, based on a spatial grid, lends itself well to the highly non-linear and non-convex structure of the problem induced by the FIM matrix. However, the sensor placement problem results in a state space dimension that renders a naive MOL approach intractable. We present a new hybrid approach, whereby we decompose the state space into two parts: a smaller subspace that still uses a grid and takes advantage of the robustness to non-linearities and non-convexities, and the remaining state space that can by found efficiently from a system of ODEs, avoiding formation of a spatial grid. "
+}

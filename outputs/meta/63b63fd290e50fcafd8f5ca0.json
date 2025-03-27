@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "self-supervised representation learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "decorrelating regularizers",
+    "fast Fourier transform"
+  ],
+  "results": [
+    "comparable accuracy to existing models",
+    "less memory and faster training when d is large"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5ca0",
+  "title": "Learning Decorrelated Representations Efficiently Using Fast Fourier\n  Transform",
+  "abstract": "  Barlow Twins and VICReg are self-supervised representation learning models that use regularizers to decorrelate features. Although they work as well as conventional representation learning models, their training can be computationally demanding if the dimension of projected representations is high; as these regularizers are defined in terms of individual elements of a cross-correlation or covariance matrix, computing the loss for $d$-dimensional projected representations of $n$ samples takes $O(n d^2)$ time. In this paper, we propose a relaxed version of decorrelating regularizers that can be computed in $O(n d\\log d)$ time by the fast Fourier transform. We also propose an inexpensive trick to mitigate the undesirable local minima that develop with the relaxation. Models learning representations using the proposed regularizers show comparable accuracy to existing models in downstream tasks, whereas the training requires less memory and is faster when $d$ is large. "
+}

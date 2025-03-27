@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Geometry coarsening"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized Spectral Coarsening"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62c3abc75aee126c0fc9a71a",
+  "title": "Generalized Spectral Coarsening",
+  "abstract": "  Many computational algorithms applied to geometry operate on discrete representations of shape. It is sometimes necessary to first simplify, or coarsen, representations found in modern datasets for practicable or expedited processing. The utility of a coarsening algorithm depends on both, the choice of representation as well as the specific processing algorithm or operator. e.g. simulation using the Finite Element Method, calculating Betti numbers, etc. We propose a novel method that can coarsen triangle meshes, tetrahedral meshes and simplicial complexes. Our method allows controllable preservation of salient features from the high-resolution geometry and can therefore be customized to different applications.   Salient properties are typically captured by local shape descriptors via linear differential operators -- variants of Laplacians. Eigenvectors of their discretized matrices yield a useful spectral domain for geometry processing (akin to the famous Fourier spectrum which uses eigenfunctions of the derivative operator). Existing methods for spectrum-preserving coarsening use zero-dimensional discretizations of Laplacian operators (defined on vertices). We propose a generalized spectral coarsening method that considers multiple Laplacian operators defined in different dimensionalities in tandem. Our simple algorithm greedily decides the order of contractions of simplices based on a quality function per simplex. The quality function quantifies the error due to removal of that simplex on a chosen band within the spectrum of the coarsened geometry. "
+}

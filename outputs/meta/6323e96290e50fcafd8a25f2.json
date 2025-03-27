@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Foreground extraction",
+    "Vessel segmentation",
+    "X-ray coronary angiography image sequence analysis"
+  ],
+  "datasets": [
+    "Clinical XCA image sequences",
+    "Third-party dataset"
+  ],
+  "methods": [
+    "Tensor nuclear norm (TNN) minimization",
+    "Tensor robust principal component analysis (TRPCA)",
+    "Total variation (TV) regularized spatial-temporal constraint",
+    "Two-stage region growing (TSRG)",
+    "Global threshold method",
+    "Radon-Like features (RLF) filter"
+  ],
+  "results": [
+    "Improved performance of vessel segmentation algorithms",
+    "Superiority over existing state-of-the-art approaches"
+  ],
+  "paper_id": "6323e96290e50fcafd8a25f2",
+  "title": "Robust Implementation of Foreground Extraction and Vessel Segmentation\n  for X-ray Coronary Angiography Image Sequence",
+  "abstract": "  The extraction of contrast-filled vessels from X-ray coronary angiography (XCA) image sequence has important clinical significance for intuitively diagnosis and therapy. In this study, the XCA image sequence is regarded as a 3D tensor input, the vessel layer is regarded as a sparse tensor, and the background layer is regarded as a low-rank tensor. Using tensor nuclear norm (TNN) minimization, a novel method for vessel layer extraction based on tensor robust principal component analysis (TRPCA) is proposed. Furthermore, considering the irregular movement of vessels and the low-frequency dynamic disturbance of surrounding irrelevant tissues, the total variation (TV) regularized spatial-temporal constraint is introduced to smooth the foreground layer. Subsequently, for vessel layer images with uneven contrast distribution, a two-stage region growing (TSRG) method is utilized for vessel enhancement and segmentation. A global threshold method is used as the preprocessing to obtain main branches, and the Radon-Like features (RLF) filter is used to enhance and connect broken minor segments, the final binary vessel mask is constructed by combining the two intermediate results. The visibility of TV-TRPCA algorithm for foreground extraction is evaluated on clinical XCA image sequences and third-party dataset, which can effectively improve the performance of commonly used vessel segmentation algorithms. Based on TV-TRPCA, the accuracy of TSRG algorithm for vessel segmentation is further evaluated. Both qualitative and quantitative results validate the superiority of the proposed method over existing state-of-the-art approaches. "
+}

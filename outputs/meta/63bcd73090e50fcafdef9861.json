@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient placement of a disaggregated and distributed RAN Intelligent Controller"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "RIC Orchestrator (RIC-O)",
+    "dynamic clustering of radio nodes",
+    "extended Kubernetes deployment"
+  ],
+  "results": [
+    "Performance-critical components of Near-RT RIC and certain xApps should run at the edge while other components can run on the cloud",
+    "End-to-end control loop latencies as low as 10ms"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9861",
+  "title": "RIC-O: Efficient placement of a disaggregated and distributed RAN\n  Intelligent Controller with dynamic clustering of radio nodes",
+  "abstract": "  The Radio Access Network (RAN) is the segment of cellular networks that provides wireless connectivity to end-users. O-RAN Alliance has been transforming the RAN industry by proposing open RAN specifications and the programmable Non-Real-Time and Near-Real-Time RAN Intelligent Controllers (Non-RT RIC and Near-RT RIC). Both RICs provide platforms for running applications called rApps and xApps, respectively, to optimize the behavior of the RAN. We investigate a disaggregation strategy of the Near-RT RIC so that its components meet stringent latency requirements while presenting a cost-effective solution. We propose the novel RIC Orchestrator (RIC-O) that optimizes the deployment of the Near-RT RIC components across the cloud-edge continuum. Edge computing nodes often present limited resources and are expensive compared to cloud computing. For example, in the O-RAN Signalling Storm Protection, Near-RT RIC is expected to support end-to-end control loop latencies as low as 10ms. Therefore, performance-critical components of Near-RT RIC and certain xApps should run at the edge while other components can run on the cloud. Furthermore, RIC-O employs an efficient strategy to react to sudden changes and re-deploy components dynamically. We evaluate our proposal through analytical modeling and real-world experiments in an extended Kubernetes deployment implementing RIC-O and disaggregated Near-RT RIC. "
+}

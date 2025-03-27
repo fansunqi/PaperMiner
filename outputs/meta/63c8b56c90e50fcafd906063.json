@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating distance-based metrics on very large graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PROPAGATE framework (PROPAGATE-P and PROPAGATE-s algorithms)"
+  ],
+  "results": [
+    "Improved accuracy and speed over the current state of the art",
+    "Efficient for solving the All Pair Shortest Path problem in very large graphs"
+  ],
+  "paper_id": "63c8b56c90e50fcafd906063",
+  "title": "Computing Distance-based metrics on Very Large Graphs",
+  "abstract": "  We propose PROPAGATE, a fast approximation framework to estimate distance-based metrics on very large graphs such as the (effective) diameter, the (effective) radius, or the average distance within a small error. The framework assigns seeds to nodes and propagates them in a BFS-like fashion, computing the neighbors set until we obtain either the whole vertex set (the diameter) or a given percentage (the effective diameter). At each iteration, we derive compressed Boolean representations of the neighborhood sets discovered so far. The PROPAGATE framework yields two algorithms: PROPAGATE-P, which propagates all the $s$ seeds in parallel, and PROPAGATE-s which propagates the seeds sequentially. For each node, the compressed representation of the PROPAGATE-P algorithm requires $s$ bits while that of PROPAGATE-S only $1$ bit. Both algorithms compute the average distance, the effective diameter, the diameter, and the connectivity rate within a small error with high probability: for any $\\varepsilon>0$ and using $s=\\Theta\\left(\\frac{\\log n}{\\varepsilon^2}\\right)$ sample nodes, the error for the average distance is bounded by $\\xi = \\frac{\\varepsilon \\Delta}{\\alpha}$, the error for the effective diameter and the diameter are bounded by $\\xi = \\frac{\\varepsilon}{\\alpha}$, and the error for the connectivity rate is bounded by $\\varepsilon$ where $\\Delta$ is the diameter and $\\alpha$ is a measure of connectivity of the graph. The time complexity is $\\mathcal{O}\\left(m\\Delta \\frac{\\log n}{\\varepsilon^2}\\right)$, where $m$ is the number of edges of the graph. The experimental results show that the PROPAGATE framework improves the current state of the art both in accuracy and speed. Moreover, we experimentally show that PROPAGATE-S is also very efficient for solving the All Pair Shortest Path problem in very large graphs. "
+}

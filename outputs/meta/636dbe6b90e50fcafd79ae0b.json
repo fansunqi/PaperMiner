@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Brain age prediction"
+  ],
+  "datasets": [
+    "UK Biobank"
+  ],
+  "methods": [
+    "2D CNNs on 2D projections"
+  ],
+  "results": [
+    "20-50 seconds per epoch on a single GPU",
+    "Two orders of magnitude faster than a small 3D CNN"
+  ],
+  "paper_id": "636dbe6b90e50fcafd79ae0b",
+  "title": "Efficient brain age prediction from 3D MRI volumes using 2D projections",
+  "abstract": "  Using 3D CNNs on high resolution medical volumes is very computationally demanding, especially for large datasets like the UK Biobank which aims to scan 100,000 subjects. Here we demonstrate that using 2D CNNs on a few 2D projections (representing mean and standard deviation across axial, sagittal and coronal slices) of the 3D volumes leads to reasonable test accuracy when predicting the age from brain volumes. Using our approach, one training epoch with 20,324 subjects takes 20 - 50 seconds using a single GPU, which two orders of magnitude faster compared to a small 3D CNN. These results are important for researchers who do not have access to expensive GPU hardware for 3D CNNs. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Point Cloud Instance Segmentation"
+  ],
+  "datasets": [
+    "ScanNetV2",
+    "S3DIS"
+  ],
+  "methods": [
+    "PBNet",
+    "binary clustering",
+    "neighbor voting method",
+    "weight mask"
+  ],
+  "results": [
+    "PBNet ranks first on the ScanNetV2 official benchmark challenge",
+    "highest mAP"
+  ],
+  "paper_id": "62de09be5aee126c0faa83cb",
+  "title": "Divide and Conquer: 3D Point Cloud Instance Segmentation With Point-Wise\n  Binarization",
+  "abstract": "  Instance segmentation on point clouds is crucially important for 3D scene understanding. Most SOTAs adopt distance clustering, which is typically effective but does not perform well in segmenting adjacent objects with the same semantic label (especially when they share neighboring points). Due to the uneven distribution of offset points, these existing methods can hardly cluster all instance points. To this end, we design a novel divide-and-conquer strategy named PBNet that binarizes each point and clusters them separately to segment instances. Our binary clustering divides offset instance points into two categories: high and low density points (HPs vs. LPs). Adjacent objects can be clearly separated by removing LPs, and then be completed and refined by assigning LPs via a neighbor voting method. To suppress potential over-segmentation, we propose to construct local scenes with the weight mask for each instance. As a plug-in, the proposed binary clustering can replace the traditional distance clustering and lead to consistent performance gains on many mainstream baselines. A series of experiments on ScanNetV2 and S3DIS datasets indicate the superiority of our model. In particular, PBNet ranks first on the ScanNetV2 official benchmark challenge, achieving the highest mAP. "
+}

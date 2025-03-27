@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding the cutwidth of a graph"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semidefinite relaxation",
+    "3-dicycle equations",
+    "Triangle inequalities",
+    "Squared linear ordering polytope",
+    "Lifting the linear ordering polytope"
+  ],
+  "results": [
+    "High quality bounds for graphs of medium size",
+    "Reasonable time for bounds",
+    "Out of reach for dense instances using integer linear programming techniques"
+  ],
+  "paper_id": "63be28d490e50fcafdf52d4d",
+  "title": "Strong SDP based bounds on the cutwidth of a graph",
+  "abstract": "  Given a linear ordering of the vertices of a graph, the cutwidth of a vertex $v$ with respect to this ordering is the number of edges from any vertex before $v$ (including $v$) to any vertex after $v$ in this ordering. The cutwidth of an ordering is the maximum cutwidth of any vertex with respect to this ordering. We are interested in finding the cutwidth of a graph, that is, the minimum cutwidth over all orderings, which is an NP-hard problem. In order to approximate the cutwidth of a given graph, we present a semidefinite relaxation. We identify several classes of valid inequalities and equalities that we use to strengthen the semidefinite relaxation. These classes are on the one hand the well-known 3-dicycle equations and the triangle inequalities and on the other hand we obtain inequalities from the squared linear ordering polytope and via lifting the linear ordering polytope. The solution of the semidefinite program serves to obtain a lower bound and also to construct a feasible solution and thereby having an upper bound on the cutwidth.   In order to evaluate the quality of our bounds, we perform numerical experiments on graphs of different sizes and densities. It turns out that we produce high quality bounds for graphs of medium size independent of their density in reasonable time. Compared to that, obtaining bounds for dense instances of the same quality is out of reach for solvers using integer linear programming techniques. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Measuring Deep Neural Networks Global Robustness"
+  ],
+  "datasets": [
+    "CIFAR10"
+  ],
+  "methods": [
+    "gRoMA: a statistical approach for measuring global categorial robustness"
+  ],
+  "results": [
+    "Significant gaps in the robustness of the different output categories"
+  ],
+  "paper_id": "63bb859d90e50fcafd06edcc",
+  "title": "gRoMA: a Tool for Measuring Deep Neural Networks Global Robustness",
+  "abstract": "  Deep neural networks (DNNs) are a state-of-the-art technology, capable of outstanding performance in many key tasks. However, it is challenging to integrate DNNs into safety-critical systems, such as those in the aerospace or automotive domains, due to the risk of adversarial inputs: slightly perturbed inputs that can cause the DNN to make grievous mistakes. Adversarial inputs have been shown to plague even modern DNNs; and so the risks they pose must be measured and mitigated to allow the safe deployment of DNNs in safety-critical systems. Here, we present a novel and scalable tool called gRoMA, which uses a statistical approach for formally measuring the global categorial robustness of a DNN - i.e., the probability of randomly encountering an adversarial input for a specific output category. Our tool operates on pre-trained, black-box classification DNNs. It randomly generates input samples that belong to an output category of interest, measures the DNN's susceptibility to adversarial inputs around these inputs, and then aggregates the results to infer the overall global robustness of the DNN up to some small bounded error. For evaluation purposes, we used gRoMA to measure the global robustness of the widespread Densenet DNN model over the CIFAR10 dataset and our results exposed significant gaps in the robustness of the different output categories. This experiment demonstrates the scalability of the new approach and showcases its potential for allowing DNNs to be deployed within critical systems of interest. "
+}

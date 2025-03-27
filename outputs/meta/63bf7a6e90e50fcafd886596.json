@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Biomedical Vision-Language Processing"
+  ],
+  "datasets": [
+    "MS-CXR-T"
+  ],
+  "methods": [
+    "CNN-Transformer hybrid multi-image encoder"
+  ],
+  "results": [
+    "State-of-the-art performance on progression classification, phrase grounding, and report generation",
+    "Consistent improvements on disease classification and sentence-similarity tasks"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886596",
+  "title": "Learning to Exploit Temporal Structure for Biomedical Vision-Language\n  Processing",
+  "abstract": "Self-supervised learning in vision-language processing exploits semantic\nalignment between imaging and text modalities. Prior work in biomedical VLP has\nmostly relied on the alignment of single image and report pairs even though\nclinical notes commonly refer to prior images. This does not only introduce\npoor alignment between the modalities but also a missed opportunity to exploit\nrich self-supervision through existing temporal content in the data. In this\nwork, we explicitly account for prior images and reports when available during\nboth training and fine-tuning. Our approach, named BioViL-T, uses a\nCNN-Transformer hybrid multi-image encoder trained jointly with a text model.\nIt is designed to be versatile to arising challenges such as pose variations\nand missing input images across time. The resulting model excels on downstream\ntasks both in single- and multi-image setups, achieving state-of-the-art\nperformance on (I) progression classification, (II) phrase grounding, and (III)\nreport generation, whilst offering consistent improvements on disease\nclassification and sentence-similarity tasks. We release a novel multi-modal\ntemporal benchmark dataset, MS-CXR-T, to quantify the quality of\nvision-language representations in terms of temporal semantics. Our\nexperimental results show the advantages of incorporating prior images and\nreports to make most use of the data."
+}

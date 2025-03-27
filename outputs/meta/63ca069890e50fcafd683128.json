@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Non-convex multi-player game analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conjugate transformation",
+    "Variational inequality",
+    "Continuous pseudo-gradient mapping",
+    "ODE",
+    "Discretized algorithm"
+  ],
+  "results": [
+    "Existence condition of global NE",
+    "Exponential convergence rate",
+    "Step-size setting for convergence rates"
+  ],
+  "paper_id": "63ca069890e50fcafd683128",
+  "title": "Global Nash Equilibrium in Non-convex Multi-player Game: Theory and\n  Algorithms",
+  "abstract": "  Wide machine learning tasks can be formulated as non-convex multi-player games, where Nash equilibrium (NE) is an acceptable solution to all players, since no one can benefit from changing its strategy unilaterally. Attributed to the non-convexity, obtaining the existence condition of global NE is challenging, let alone designing theoretically guaranteed realization algorithms. This paper takes conjugate transformation to the formulation of non-convex multi-player games, and casts the complementary problem into a variational inequality (VI) problem with a continuous pseudo-gradient mapping. We then prove the existence condition of global NE: the solution to the VI problem satisfies a duality relation. Based on this VI formulation, we design a conjugate-based ordinary differential equation (ODE) to approach global NE, which is proved to have an exponential convergence rate. To make the dynamics more implementable, we further derive a discretized algorithm. We apply our algorithm to two typical scenarios: multi-player generalized monotone game and multi-player potential game. In the two settings, we prove that the step-size setting is required to be $\\mathcal{O}(1/k)$ and $\\mathcal{O}(1/\\sqrt k)$ to yield the convergence rates of $\\mathcal{O}(1/ k)$ and $\\mathcal{O}(1/\\sqrt k)$, respectively. Extensive experiments in robust neural network training and sensor localization are in full agreement with our theory. "
+}

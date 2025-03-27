@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/cv516Buaa/ST-DASegNet"
+  ],
+  "tasks": [
+    "Cross-Domain Remote Sensing Image Semantic Segmentation"
+  ],
+  "datasets": [
+    "benchmark RS datasets"
+  ],
+  "methods": [
+    "self-training guided disentangled adaptation network (ST-DASegNet)",
+    "source student backbone",
+    "target student backbone",
+    "adversarial learning",
+    "domain disentangled module",
+    "exponential moving average (EMA) based cross-domain separated self-training mechanism"
+  ],
+  "results": [
+    "ST-DASegNet outperforms previous methods",
+    "state-of-the-art (SOTA) results"
+  ],
+  "paper_id": "63c4c02990e50fcafdae0086",
+  "title": "Self-Training Guided Disentangled Adaptation for Cross-Domain Remote\n  Sensing Image Semantic Segmentation",
+  "abstract": "  Deep convolutional neural networks (DCNNs) based remote sensing (RS) image semantic segmentation technology has achieved great success used in many real-world applications such as geographic element analysis. However, strong dependency on annotated data of specific scene makes it hard for DCNNs to fit different RS scenes. To solve this problem, recent works gradually focus on cross-domain RS image semantic segmentation task. In this task, different ground sampling distance, remote sensing sensor variation and different geographical landscapes are three main factors causing dramatic domain shift between source and target images. To decrease the negative influence of domain shift, we propose a self-training guided disentangled adaptation network (ST-DASegNet). We first propose source student backbone and target student backbone to respectively extract the source-style and target-style feature for both source and target images. Towards the intermediate output feature maps of each backbone, we adopt adversarial learning for alignment. Then, we propose a domain disentangled module to extract the universal feature and purify the distinct feature of source-style and target-style features. Finally, these two features are fused and served as input of source student decoder and target student decoder to generate final predictions. Based on our proposed domain disentangled module, we further propose exponential moving average (EMA) based cross-domain separated self-training mechanism to ease the instability and disadvantageous effect during adversarial optimization. Extensive experiments and analysis on benchmark RS datasets show that ST-DASegNet outperforms previous methods on cross-domain RS image semantic segmentation task and achieves state-of-the-art (SOTA) results. Our code is available at https://github.com/cv516Buaa/ST-DASegNet. "
+}

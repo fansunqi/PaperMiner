@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Whole Slide Image Classification"
+  ],
+  "datasets": [
+    "Camelyon16",
+    "TCGA-RCC",
+    "TCGA-NSCLC",
+    "IMGC"
+  ],
+  "methods": [
+    "Transformer",
+    "Integrated Attention Transformer",
+    "Hierarchical Attention-Guided Multiple Instance Learning"
+  ],
+  "results": [
+    "State-of-the-art performances on multiple datasets"
+  ],
+  "paper_id": "63ca069890e50fcafd6831cf",
+  "title": "Diagnose Like a Pathologist: Transformer-Enabled Hierarchical\n  Attention-Guided Multiple Instance Learning for Whole Slide Image\n  Classification",
+  "abstract": "  Multiple Instance Learning (MIL) and transformers are increasingly popular in histopathology Whole Slide Image (WSI) classification. However, unlike human pathologists who selectively observe specific regions of histopathology tissues under different magnifications, most methods do not incorporate multiple resolutions of the WSIs, hierarchically and attentively, thereby leading to a loss of focus on the WSIs and information from other resolutions. To resolve this issue, we propose the Hierarchical Attention-Guided Multiple Instance Learning framework to fully exploit the WSIs, which can dynamically and attentively discover the discriminative regions across multiple resolutions of the WSIs. Within this framework, to further enhance the performance of the transformer and obtain a more holistic WSI (bag) representation, we propose an Integrated Attention Transformer, consisting of multiple Integrated Attention Modules, which is the combination of a transformer layer and an aggregation module that produces a bag representation based on every instance representation in that bag. The results of the experiments show that our method achieved state-of-the-art performances on multiple datasets, including Camelyon16, TCGA-RCC, TCGA-NSCLC, and our in-house IMGC dataset. "
+}

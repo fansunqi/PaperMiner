@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reconfigurable datacenter network performance improvement"
+  ],
+  "datasets": [
+    "176 synthetic traces",
+    "39 real-world traces"
+  ],
+  "methods": [
+    "Dynamic algorithms for link scheduling",
+    "Temporal locality of traffic patterns"
+  ],
+  "results": [
+    "Significant improvement in running time",
+    "Reduction in the number of configuration changes",
+    "Retention of matching weight"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905a6c",
+  "title": "Dynamic Demand-Aware Link Scheduling for Reconfigurable Datacenters",
+  "abstract": "  Emerging reconfigurable datacenters allow to dynamically adjust the network topology in a demand-aware manner. These datacenters rely on optical switches which can be reconfigured to provide direct connectivity between racks, in the form of edge-disjoint matchings. While state-of-the-art optical switches in principle support microsecond reconfigurations, the demand-aware topology optimization constitutes a bottleneck.   This paper proposes a dynamic algorithms approach to improve the performance of reconfigurable datacenter networks, by supporting faster reactions to changes in the traffic demand. This approach leverages the temporal locality of traffic patterns in order to update the interconnecting matchings incrementally, rather than recomputing them from scratch. In particular, we present six (batch-)dynamic algorithms and compare them to static ones. We conduct an extensive empirical evaluation on 176 synthetic and 39 real-world traces, and find that dynamic algorithms can both significantly improve the running time and reduce the number of changes to the configuration, especially in networks with high temporal locality, while retaining matching weight. "
+}

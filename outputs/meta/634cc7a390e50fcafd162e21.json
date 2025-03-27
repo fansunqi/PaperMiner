@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neuroimaging-based prediction of neurocognitive measures"
+  ],
+  "datasets": [
+    "Adolescent Brain Cognitive Development (ABCD) Study"
+  ],
+  "methods": [
+    "TractoSCR",
+    "Supervised contrastive learning",
+    "Permutation feature importance method"
+  ],
+  "results": [
+    "Improved accuracy of neurocognitive score prediction",
+    "Predictive fiber clusters located in superficial white matter and projection tracts"
+  ],
+  "paper_id": "634cc7a390e50fcafd162e21",
+  "title": "TractoSCR: A Novel Supervised Contrastive Regression Framework for\n  Prediction of Neurocognitive Measures Using Multi-Site Harmonized Diffusion\n  MRI Tractography",
+  "abstract": "  Neuroimaging-based prediction of neurocognitive measures is valuable for studying how the brain's structure relates to cognitive function. However, the accuracy of prediction using popular linear regression models is relatively low. We propose a novel deep regression method, namely TractoSCR, that allows full supervision for contrastive learning in regression tasks using diffusion MRI tractography. TractoSCR performs supervised contrastive learning by using the absolute difference between continuous regression labels (i.e. neurocognitive scores) to determine positive and negative pairs. We apply TractoSCR to analyze a large-scale dataset including multi-site harmonized diffusion MRI and neurocognitive data from 8735 participants in the Adolescent Brain Cognitive Development (ABCD) Study. We extract white matter microstructural measures using a fine parcellation of white matter tractography into fiber clusters. Using these measures, we predict three scores related to domains of higher-order cognition (general cognitive ability, executive function, and learning/memory). To identify important fiber clusters for prediction of these neurocognitive scores, we propose a permutation feature importance method for high-dimensional data. We find that TractoSCR improves the accuracy of neurocognitive score prediction compared to other state-of-the-art methods. We find that the most predictive fiber clusters are predominantly located within the superficial white matter and projection tracts, particularly the superficial frontal white matter and striato-frontal connections. Overall, our results demonstrate the utility of contrastive representation learning methods for regression, and in particular for improving neuroimaging-based prediction of higher-order cognitive abilities. "
+}

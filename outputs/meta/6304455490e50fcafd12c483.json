@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Security testing",
+    "Web system security"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Metamorphic Security Testing for Web-interactions (MST-wi)",
+    "mutational fuzzing",
+    "domain-specific language",
+    "Eclipse editor",
+    "Java code generation",
+    "76 system-agnostic MRs"
+  ],
+  "results": [
+    "Automates security testing",
+    "Covers 39% of OWASP security testing activities",
+    "Discovers 102 different types of vulnerabilities",
+    "45% of vulnerabilities due to security design principle violations"
+  ],
+  "paper_id": "6304455490e50fcafd12c483",
+  "title": "Metamorphic Testing for Web System Security",
+  "abstract": "  Security testing aims at verifying that the software meets its security properties. In modern Web systems, however, this often entails the verification of the outputs generated when exercising the system with a very large set of inputs. Full automation is thus required to lower costs and increase the effectiveness of security testing. Unfortunately, to achieve such automation, in addition to strategies for automatically deriving test inputs, we need to address the oracle problem, which refers to the challenge, given an input for a system, of distinguishing correct from incorrect behavior. In this paper, we propose Metamorphic Security Testing for Web-interactions (MST-wi), a metamorphic testing approach that integrates test input generation strategies inspired by mutational fuzzing and alleviates the oracle problem in security testing. It enables engineers to specify metamorphic relations (MRs) that capture many security properties of Web systems. To facilitate the specification of such MRs, we provide a domain-specific language accompanied by an Eclipse editor. MST-wi automatically collects the input data and transforms the MRs into executable Java code to automatically perform security testing. It automatically tests Web systems to detect vulnerabilities based on the relations and collected data. We provide a catalog of 76 system-agnostic MRs to automate security testing in Web systems. It covers 39% of the OWASP security testing activities not automated by state-of-the-art techniques; further, our MRs can automatically discover 102 different types of vulnerabilities, which correspond to 45% of the vulnerabilities due to violations of security design principles according to the MITRE CWE database. We also define guidelines that enable test engineers to improve the testability of the system under test with respect to our approach. "
+}

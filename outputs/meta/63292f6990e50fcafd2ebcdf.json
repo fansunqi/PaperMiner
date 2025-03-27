@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-implicit Integration",
+    "Data-Driven Model Order Reduction",
+    "Structural Dynamics with Hysteresis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Semi-implicit integration approach",
+    "Reduced order models construction"
+  ],
+  "results": [
+    "Good convergence for lower damping and smoother hysteresis loops",
+    "Convergence roughly linear on average for less smooth hysteresis loops and/or higher damping",
+    "Significant reduction in the number of hysteretic states"
+  ],
+  "paper_id": "63292f6990e50fcafd2ebcdf",
+  "title": "Semi-implicit Integration and Data-Driven Model Order Reduction in\n  Structural Dynamics with Hysteresis",
+  "abstract": "  Structural damping is known to be approximately rate-independent in many cases. Popular models for rate-independent dissipation are hysteresis models; and a highly popular hysteresis model is the Bouc-Wen model. If such hysteretic dissipation is incorporated in a refined finite element model, then the mathematical model includes the usual structural dynamics equations along with nonlinear nonsmooth ordinary differential equations for a large number of internal hysteretic states at Gauss points, to be used within the virtual work calculation for dissipation. For such systems, numerical integration becomes difficult due to both the distributed non-analytic nonlinearity of hysteresis as well as the very high natural frequencies in the finite element model. Here we offer two contributions. First, we present a simple semi-implicit integration approach where the structural part is handled implicitly based on the work of Pich\\'e, and where the hysteretic part is handled explicitly. A cantilever beam example is solved in detail using high mesh refinement. Convergence is good for lower damping and a smoother hysteresis loop. For a less smooth hysteresis loop and/or higher damping, convergence is observed to be roughly linear on average. Encouragingly, the time step needed for stability is much larger than the time period of the highest natural frequency of the structural model. Subsequently, data from several simulations conducted using the above semi-implicit method are used to construct reduced order models of the system, where the structural dynamics is projected onto a small number of modes and the number of hysteretic states is reduced significantly as well. Convergence studies of error against the number of retained hysteretic states show very good results. "
+}

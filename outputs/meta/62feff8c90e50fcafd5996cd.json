@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph representation learning",
+    "Causal inference"
+  ],
+  "datasets": [
+    "Synthetic dataset",
+    "Multiple benchmark datasets"
+  ],
+  "methods": [
+    "Robust Causal Graph Representation Learning (RCGRL)",
+    "Active approach for instrumental variables generation"
+  ],
+  "results": [
+    "Better prediction performance and generalization ability compared to state-of-the-art methods"
+  ],
+  "paper_id": "62feff8c90e50fcafd5996cd",
+  "title": "Robust Causal Graph Representation Learning against Confounding Effects",
+  "abstract": "  The prevailing graph neural network models have achieved significant progress in graph representation learning. However, in this paper, we uncover an ever-overlooked phenomenon: the pre-trained graph representation learning model tested with full graphs underperforms the model tested with well-pruned graphs. This observation reveals that there exist confounders in graphs, which may interfere with the model learning semantic information, and current graph representation learning methods have not eliminated their influence. To tackle this issue, we propose Robust Causal Graph Representation Learning (RCGRL) to learn robust graph representations against confounding effects. RCGRL introduces an active approach to generate instrumental variables under unconditional moment restrictions, which empowers the graph representation learning model to eliminate confounders, thereby capturing discriminative information that is causally related to downstream predictions. We offer theorems and proofs to guarantee the theoretical effectiveness of the proposed approach. Empirically, we conduct extensive experiments on a synthetic dataset and multiple benchmark datasets. The results demonstrate that compared with state-of-the-art methods, RCGRL achieves better prediction performance and generalization ability. "
+}

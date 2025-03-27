@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/Helmholtz-AI-Energy/propulate"
+  ],
+  "tasks": [
+    "Global optimization",
+    "Hyperparameter search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Propulate (evolutionary optimization algorithm)",
+    "MPI-based implementation",
+    "Selection, mutation, crossover, migration"
+  ],
+  "results": [
+    "Up to three orders of magnitude faster without sacrificing solution accuracy"
+  ],
+  "paper_id": "63cdfab690e50fcafd10708c",
+  "title": "Massively Parallel Genetic Optimization through Asynchronous Propagation\n  of Populations",
+  "abstract": "  We present Propulate, an evolutionary optimization algorithm and software package for global optimization and in particular hyperparameter search. For efficient use of HPC resources, Propulate omits the synchronization after each generation as done in conventional genetic algorithms. Instead, it steers the search with the complete population present at time of breeding new individuals. We provide an MPI-based implementation of our algorithm, which features variants of selection, mutation, crossover, and migration and is easy to extend with custom functionality. We compare Propulate to the established optimization tool Optuna. We find that Propulate is up to three orders of magnitude faster without sacrificing solution accuracy, demonstrating the efficiency and efficacy of our lazy synchronization approach. Code and documentation are available at https://github.com/Helmholtz-AI-Energy/propulate "
+}

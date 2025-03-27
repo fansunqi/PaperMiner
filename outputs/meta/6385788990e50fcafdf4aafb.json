@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Knowledge Transfer in Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Inapplicable Actions Learning",
+    "partial action model encapsulating the precondition of an action",
+    "standardized knowledge specification"
+  ],
+  "results": [
+    "Improves sample efficiency of RL algorithms",
+    "Knowledge transferability across tasks and domains"
+  ],
+  "paper_id": "6385788990e50fcafdf4aafb",
+  "title": "Inapplicable Actions Learning for Knowledge Transfer in Reinforcement\n  Learning",
+  "abstract": "  Reinforcement Learning (RL) algorithms are known to scale poorly to environments with many available actions, requiring numerous samples to learn an optimal policy. The traditional approach of considering the same fixed action space in every possible state implies that the agent must understand, while also learning to maximize its reward, to ignore irrelevant actions such as $\\textit{inapplicable actions}$ (i.e. actions that have no effect on the environment when performed in a given state). Knowing this information can help reduce the sample complexity of RL algorithms by masking the inapplicable actions from the policy distribution to only explore actions relevant to finding an optimal policy. While this technique has been formalized for quite some time within the Automated Planning community with the concept of precondition in the STRIPS language, RL algorithms have never formally taken advantage of this information to prune the search space to explore. This is typically done in an ad-hoc manner with hand-crafted domain logic added to the RL algorithm. In this paper, we propose a more systematic approach to introduce this knowledge into the algorithm. We (i) standardize the way knowledge can be manually specified to the agent; and (ii) present a new framework to autonomously learn the partial action model encapsulating the precondition of an action jointly with the policy. We show experimentally that learning inapplicable actions greatly improves the sample efficiency of the algorithm by providing a reliable signal to mask out irrelevant actions. Moreover, we demonstrate that thanks to the transferability of the knowledge acquired, it can be reused in other tasks and domains to make the learning process more efficient. "
+}

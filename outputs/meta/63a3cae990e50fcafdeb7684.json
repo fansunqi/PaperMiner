@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lifelong learning",
+    "Lifelong reinforcement learning (LRL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Modulating masks",
+    "PPO",
+    "IMPALA agents"
+  ],
+  "results": [
+    "Superior performance in discrete and continuous RL tasks",
+    "Faster learning",
+    "Solves tasks with extremely sparse rewards"
+  ],
+  "paper_id": "63a3cae990e50fcafdeb7684",
+  "title": "Lifelong Reinforcement Learning with Modulating Masks",
+  "abstract": "  Lifelong learning aims to create AI systems that continuously and incrementally learn during a lifetime, similar to biological learning. Attempts so far have met problems, including catastrophic forgetting, interference among tasks, and the inability to exploit previous knowledge. While considerable research has focused on learning multiple input distributions, typically in classification, lifelong reinforcement learning (LRL) must also deal with variations in the state and transition distributions, and in the reward functions. Modulating masks, recently developed for classification, are particularly suitable to deal with such a large spectrum of task variations. In this paper, we adapted modulating masks to work with deep LRL, specifically PPO and IMPALA agents. The comparison with LRL baselines in both discrete and continuous RL tasks shows superior performance. We further investigated the use of a linear combination of previously learned masks to exploit previous knowledge when learning new tasks: not only is learning faster, the algorithm solves tasks that we could not otherwise solve from scratch due to extremely sparse rewards. The results suggest that RL with modulating masks is a promising approach to lifelong learning, to the composition of knowledge to learn increasingly complex tasks, and to knowledge reuse for efficient and faster learning. "
+}

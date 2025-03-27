@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous driving"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differentiable integrated prediction-planning framework (DIPP)",
+    "Differentiable nonlinear optimizer",
+    "Neural network for trajectory prediction"
+  ],
+  "results": [
+    "Outperforms baseline methods across various metrics",
+    "Joint training of planning and prediction modules achieves better performance",
+    "Ablation study indicates the importance of learnable components"
+  ],
+  "paper_id": "62da15945aee126c0f5d8ca2",
+  "title": "Differentiable Integrated Motion Prediction and Planning with Learnable\n  Cost Function for Autonomous Driving",
+  "abstract": "  Predicting the future states of surrounding traffic participants and planning a safe, smooth, and socially compliant trajectory accordingly is crucial for autonomous vehicles. There are two major issues with the current autonomous driving system: the prediction module is often separated from the planning module and the cost function for planning is hard to specify and tune. To tackle these issues, we propose a differentiable integrated prediction-planning framework (DIPP) that can also learn the cost function from data. Specifically, our framework uses a differentiable nonlinear optimizer as the motion planner, which takes as input the predicted trajectories of surrounding agents given by the neural network and optimizes the trajectory for the autonomous vehicle, enabling all operations to be differentiable, including the cost function weights. The proposed framework is trained on a large-scale real-world driving dataset to imitate human driving trajectories in the entire driving scene and validated in both open-loop and closed-loop manners. The open-loop testing results reveal that the proposed method outperforms the baseline methods across a variety of metrics and delivers planning-centric prediction results, allowing the planning module to output trajectories close to those of human drivers. In closed-loop testing, the proposed method outperforms various baseline methods, showing the ability to handle complex urban driving scenarios and robustness against the distributional shift. Importantly, we find that joint training of planning and prediction modules achieves better performance than planning with a separate trained prediction module in both open-loop and closed-loop tests. Moreover, the ablation study indicates that the learnable components in the framework are essential to ensure planning stability and performance. "
+}

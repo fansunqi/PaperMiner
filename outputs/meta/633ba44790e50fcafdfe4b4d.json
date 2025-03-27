@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated training of dual encoding models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Distributed Cross Correlation Optimization (DCCO)"
+  ],
+  "results": [
+    "Outperforms federated variants of existing approaches by a large margin"
+  ],
+  "paper_id": "633ba44790e50fcafdfe4b4d",
+  "title": "Federated Training of Dual Encoding Models on Small Non-IID Client\n  Datasets",
+  "abstract": "  Dual encoding models that encode a pair of inputs are widely used for representation learning. Many approaches train dual encoding models by maximizing agreement between pairs of encodings on centralized training data. However, in many scenarios, datasets are inherently decentralized across many clients (user devices or organizations) due to privacy concerns, motivating federated learning. In this work, we focus on federated training of dual encoding models on decentralized data composed of many small, non-IID (independent and identically distributed) client datasets. We show that existing approaches that work well in centralized settings perform poorly when naively adapted to this setting using federated averaging. We observe that, we can simulate large-batch loss computation on individual clients for loss functions that are based on encoding statistics. Based on this insight, we propose a novel federated training approach, Distributed Cross Correlation Optimization (DCCO), which trains dual encoding models using encoding statistics aggregated across clients, without sharing individual data samples. Our experimental results on two datasets demonstrate that the proposed DCCO approach outperforms federated variants of existing approaches by a large margin. "
+}

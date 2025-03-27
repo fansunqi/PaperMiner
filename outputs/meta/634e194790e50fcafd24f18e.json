@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Transfer Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Near-data computation",
+    "Storage-side batch adaptation"
+  ],
+  "results": [
+    "Up to 11x improvement in application runtime",
+    "Up to 8.3x reduction in data transferred"
+  ],
+  "paper_id": "634e194790e50fcafd24f18e",
+  "title": "Accelerating Transfer Learning with Near-Data Computation on Cloud\n  Object Stores",
+  "abstract": "  Near-data computation techniques have been successfully deployed to mitigate the cloud network bottleneck between the storage and compute tiers. At Huawei, we are currently looking to get more value from these techniques by broadening their applicability. Machine learning (ML) applications are an appealing and timely target. This paper describes our experience applying near-data computation techniques to transfer learning (TL), a widely popular ML technique, in the context of disaggregated cloud object stores. Our techniques benefit both cloud providers and users. They improve our operational efficiency while providing users the performance improvements they demand from us. The main practical challenge to consider is that the storage-side computational resources are limited. Our approach is to split the TL deep neural network (DNN) during the feature extraction phase, before the training phase. This reduces the network transfers to the compute tier and further decouples the batch size of feature extraction from the training batch size. This facilitates our second technique, storage-side batch adaptation, which enables increased concurrency in the storage tier while avoiding out-of-memory errors. Guided by these insights, we present HAPI, our processing system for TL that spans the compute and storage tiers while remaining transparent to the user. Our evaluation with several state-of-the-art DNNs, such as ResNet, VGG, and Transformer, shows up to 11x improvement in application runtime and up to 8.3x reduction in the data transferred from the storage to the compute tier compared to running the computation entirely in the compute tier. "
+}

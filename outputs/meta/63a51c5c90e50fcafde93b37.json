@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Computational Storage"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Skytether",
+    "MSG Express",
+    "decomposable queries"
+  ],
+  "results": [
+    "Unexpected slowdown of ~15x compared to consumer-grade client CPU"
+  ],
+  "paper_id": "63a51c5c90e50fcafde93b37",
+  "title": "A Moveable Beast: Partitioning Data and Compute for Computational\n  Storage",
+  "abstract": "  Over the years, hardware trends have introduced various heterogeneous compute units while also bringing network and storage bandwidths within an order of magnitude of memory subsystems. In response, developers have used increasingly exotic solutions to extract more performance from hardware; typically relying on static, design-time partitioning of their programs which cannot keep pace with storage systems that are layering compute units throughout deepening hierarchies of storage devices.   We argue that dynamic, just-in-time partitioning of computation offers a solution for emerging data-intensive systems to overcome ever-growing data sizes in the face of stalled CPU performance and memory bandwidth. In this paper, we describe our prototype computational storage system (CSS), Skytether, that adopts a database perspective to utilize computational storage drives (CSDs). We also present MSG Express, a data management system for single-cell gene expression data that sits on top of Skytether. We discuss four design principles that guide the design of our CSS: support scientific applications; maximize utilization of storage, network, and memory bandwidth; minimize data movement; and enable flexible program execution on autonomous CSDs. Skytether is designed for the extra layer of indirection that CSDs introduce to a storage system, using decomposable queries to take a new approach to computational storage that has been imagined but not yet explored.   In this paper, we evaluate: partition strategies, the overhead of function execution, and the performance of selection and projection. We expected ~3-4x performance slowdown on the CSDs compared to a consumer-grade client CPU but we observe an unexpected slowdown of ~15x, however, our evaluation results help us set anchor points in the design space for developing a cost model for decomposable queries and partitioning data across many CSDs. "
+}

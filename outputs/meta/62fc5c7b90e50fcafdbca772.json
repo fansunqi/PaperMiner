@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Rain removal from light field images"
+  ],
+  "datasets": [
+    "Virtual-world rainy LFIs",
+    "Real-world rainy LFIs"
+  ],
+  "methods": [
+    "4D convolution",
+    "Multi-scale Self-guided Gaussian Process (MSGP)",
+    "Depth Estimation Residual Network (DERNet)",
+    "Adversarial recurrent neural network"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62fc5c7b90e50fcafdbca772",
+  "title": "Rain Removal from Light Field Images with 4D Convolution and Multi-scale\n  Gaussian Process",
+  "abstract": "  Existing deraining methods focus mainly on a single input image. However, with just a single input image, it is extremely difficult to accurately detect and remove rain streaks, in order to restore a rain-free image. In contrast, a light field image (LFI) embeds abundant 3D structure and texture information of the target scene by recording the direction and position of each incident ray via a plenoptic camera. LFIs are becoming popular in the computer vision and graphics communities. However, making full use of the abundant information available from LFIs, such as 2D array of sub-views and the disparity map of each sub-view, for effective rain removal is still a challenging problem. In this paper, we propose a novel method, 4D-MGP-SRRNet, for rain streak removal from LFIs. Our method takes as input all sub-views of a rainy LFI. To make full use of the LFI, it adopts 4D convolutional layers to simultaneously process all sub-views of the LFI. In the pipeline, the rain detection network, MGPDNet, with a novel Multi-scale Self-guided Gaussian Process (MSGP) module is proposed to detect high-resolution rain streaks from all sub-views of the input LFI at multi-scales. Semi-supervised learning is introduced for MSGP to accurately detect rain streaks by training on both virtual-world rainy LFIs and real-world rainy LFIs at multi-scales via computing pseudo ground truths for real-world rain streaks. We then feed all sub-views subtracting the predicted rain streaks into a 4D convolution-based Depth Estimation Residual Network (DERNet) to estimate the depth maps, which are later converted into fog maps. Finally, all sub-views concatenated with the corresponding rain streaks and fog maps are fed into a powerful rainy LFI restoring model based on the adversarial recurrent neural network to progressively eliminate rain streaks and recover the rain-free LFI. "
+}

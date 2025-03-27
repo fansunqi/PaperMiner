@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shadow removal from images"
+  ],
+  "datasets": [
+    "SRD",
+    "AISTD",
+    "LRSS",
+    "USR",
+    "UIUC"
+  ],
+  "methods": [
+    "ViT similarity",
+    "color convergence loss"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods",
+    "20% RMSE improvement on SRD dataset"
+  ],
+  "paper_id": "637454dc90e50fcafdfc6912",
+  "title": "DeS3: Attention-driven Self and Soft Shadow Removal using ViT Similarity\n  and Color Convergence",
+  "abstract": "  Removing soft and self shadows that lack clear boundaries from a single image is still challenging. Self shadows are shadows that are cast on the object itself. Most existing methods rely on binary shadow masks, without considering the ambiguous boundaries of soft and self shadows. In this paper, we present DeS3, a method that removes hard, soft and self shadows based on the self-tuned ViT feature similarity and color convergence. Our novel ViT similarity loss utilizes features extracted from a pre-trained Vision Transformer. This loss helps guide the reverse diffusion process towards recovering scene structures. We also introduce a color convergence loss to constrain the surface colors in the reverse inference process to avoid any color shifts. Our DeS3 is able to differentiate shadow regions from the underlying objects, as well as shadow regions from the object casting the shadow. This capability enables DeS3 to better recover the structures of objects even when they are partially occluded by shadows. Different from existing methods that rely on constraints during the training phase, we incorporate the ViT similarity and color convergence loss during the sampling stage. This enables our DeS3 model to effectively integrate its strong modeling capabilities with input-specific knowledge in a self-tuned manner. Our method outperforms state-of-the-art methods on the SRD, AISTD, LRSS, USR and UIUC datasets, removing hard, soft, and self shadows robustly. Specifically, our method outperforms the SOTA method by 20% of the RMSE of the whole image on the SRD dataset. "
+}

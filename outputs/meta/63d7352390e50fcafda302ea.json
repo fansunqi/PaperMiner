@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Operators generalization properties analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Operators (NOs)",
+    "sNO+\u03b5",
+    "kernel integral operator",
+    "stochastic depth",
+    "Dudley theorem",
+    "Rademacher complexity"
+  ],
+  "results": [
+    "Significantly improved performance across datasets and initializations",
+    "Qualitative changes in the visualization of the loss landscape",
+    "Better minima found by optimization algorithm",
+    "Improved generalization performance",
+    "Generalization capabilities under data distribution perturbations"
+  ],
+  "paper_id": "63d7352390e50fcafda302ea",
+  "title": "Fine-tuning Neural-Operator architectures for training and\n  generalization",
+  "abstract": "  This work provides a comprehensive analysis of the generalization properties of Neural Operators (NOs) and their derived architectures. Through empirical evaluation of the test loss, analysis of the complexity-based generalization bounds, and qualitative assessments of the visualization of the loss landscape, we investigate modifications aimed at enhancing the generalization capabilities of NOs. Inspired by the success of Transformers, we propose ${\\textit{s}}{\\text{NO}}+\\varepsilon$, which introduces a kernel integral operator in lieu of self-Attention. Our results reveal significantly improved performance across datasets and initializations, accompanied by qualitative changes in the visualization of the loss landscape. We conjecture that the layout of Transformers enables the optimization algorithm to find better minima, and stochastic depth, improve the generalization performance. As a rigorous analysis of training dynamics is one of the most prominent unsolved problems in deep learning, our exclusive focus is on the analysis of the complexity-based generalization of the architectures. Building on statistical theory, and in particular Dudley theorem, we derive upper bounds on the Rademacher complexity of NOs, and ${\\textit{s}}{\\text{NO}}+\\varepsilon$. For the latter, our bounds do not rely on norm control of parameters. This makes it applicable to networks of any depth, as long as the random variables in the architecture follow a decay law, which connects stochastic depth with generalization, as we have conjectured. In contrast, the bounds in NOs, solely rely on norm control of the parameters, and exhibit an exponential dependence on depth. Furthermore, our experiments also demonstrate that our proposed network exhibits remarkable generalization capabilities when subjected to perturbations in the data distribution. In contrast, NO perform poorly in out-of-distribution scenarios. "
+}

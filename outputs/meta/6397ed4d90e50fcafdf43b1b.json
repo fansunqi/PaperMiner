@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Knowledge Graph Expansion"
+  ],
+  "datasets": [
+    "Pinterest Knowledge Graph"
+  ],
+  "methods": [
+    "Predicting 'parents' of new concepts for verification"
+  ],
+  "results": [
+    "Reduced knowledge graph expansion time by ~400% compared to manual expansion",
+    "Increased ad revenue by 20%"
+  ],
+  "paper_id": "6397ed4d90e50fcafdf43b1b",
+  "title": "Expanding Knowledge Graphs with Humans in the Loop",
+  "abstract": "  Curated knowledge graphs encode domain expertise and improve the performance of recommendation, segmentation, ad targeting, and other machine learning systems in several domains. As new concepts emerge in a domain, knowledge graphs must be expanded to preserve machine learning performance. Manually expanding knowledge graphs, however, is infeasible at scale. In this work, we propose a method for knowledge graph expansion with humans-in-the-loop. Concretely, given a knowledge graph, our method predicts the \"parents\" of new concepts to be added to this graph for further verification by human experts. We show that our method is both accurate and provably \"human-friendly\". Specifically, we prove that our method predicts parents that are \"near\" concepts' true parents in the knowledge graph, even when the predictions are incorrect. We then show, with a controlled experiment, that satisfying this property increases both the speed and the accuracy of the human-algorithm collaboration. We further evaluate our method on a knowledge graph from Pinterest and show that it outperforms competing methods on both accuracy and human-friendliness. Upon deployment in production at Pinterest, our method reduced the time needed for knowledge graph expansion by ~400% (compared to manual expansion), and contributed to a subsequent increase in ad revenue of 20%. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adapting to Open World Novelty"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "WorldCloner",
+    "neuro-symbolic world model",
+    "imagination-based adaptation"
+  ],
+  "results": [
+    "Symbolic world model helps neural policy adapt more efficiently"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905ee5",
+  "title": "Neuro-Symbolic World Models for Adapting to Open World Novelty",
+  "abstract": "  Open-world novelty--a sudden change in the mechanics or properties of an environment--is a common occurrence in the real world. Novelty adaptation is an agent's ability to improve its policy performance post-novelty. Most reinforcement learning (RL) methods assume that the world is a closed, fixed process. Consequentially, RL policies adapt inefficiently to novelties. To address this, we introduce WorldCloner, an end-to-end trainable neuro-symbolic world model for rapid novelty adaptation. WorldCloner learns an efficient symbolic representation of the pre-novelty environment transitions, and uses this transition model to detect novelty and efficiently adapt to novelty in a single-shot fashion. Additionally, WorldCloner augments the policy learning process using imagination-based adaptation, where the world model simulates transitions of the post-novelty environment to help the policy adapt. By blending ''imagined'' transitions with interactions in the post-novelty environment, performance can be recovered with fewer total environment interactions. Using environments designed for studying novelty in sequential decision-making problems, we show that the symbolic world model helps its neural policy adapt more efficiently than model-based and model-based neural-only reinforcement learning methods. "
+}

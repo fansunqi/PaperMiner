@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Finding Non-Exploitable Strategies in Two-Player Atari Games"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nash-DQN",
+    "Nash-DQN-Exploiter"
+  ],
+  "results": [
+    "Policies found by existing methods prone to exploitation",
+    "Output policies of proposed algorithms robust to exploitation"
+  ],
+  "paper_id": "62d7730d5aee126c0f9006db",
+  "title": "A Deep Reinforcement Learning Approach for Finding Non-Exploitable\n  Strategies in Two-Player Atari Games",
+  "abstract": "  This paper proposes new, end-to-end deep reinforcement learning algorithms for learning two-player zero-sum Markov games. Different from prior efforts on training agents to beat a fixed set of opponents, our objective is to find the Nash equilibrium policies that are free from exploitation by even the adversarial opponents. We propose (a) Nash-DQN algorithm, which integrates the deep learning techniques from single DQN into the classic Nash Q-learning algorithm for solving tabular Markov games; (b) Nash-DQN-Exploiter algorithm, which additionally adopts an exploiter to guide the exploration of the main agent. We conduct experimental evaluation on tabular examples as well as various two-player Atari games. Our empirical results demonstrate that (i) the policies found by many existing methods including Neural Fictitious Self Play and Policy Space Response Oracle can be prone to exploitation by adversarial opponents; (ii) the output policies of our algorithms are robust to exploitation, and thus outperform existing methods. "
+}

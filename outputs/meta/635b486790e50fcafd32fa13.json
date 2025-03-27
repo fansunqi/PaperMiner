@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Convolutional Neural Networks",
+    "Neural Architecture Search"
+  ],
+  "datasets": [
+    "GTZAN"
+  ],
+  "methods": [
+    "Hierarchical architecture representations",
+    "Unitary ansatz",
+    "Data encoding"
+  ],
+  "results": [
+    "Alternating architecture has a greater impact on model performance",
+    "Framework provides a way to improve model performance without increasing complexity"
+  ],
+  "paper_id": "635b486790e50fcafd32fa13",
+  "title": "Hierarchical architecture representations for quantum convolutional\n  neural networks",
+  "abstract": "  The Quantum Convolutional Neural Network (QCNN) is a quantum circuit model inspired by the architecture of Convolutional Neural Networks (CNNs). CNNs are successful because they do not need manual feature design and can learn high-level features from raw data. Neural Architecture Search (NAS) builds on this success by learning network architecture and achieves state-of-the-art performance. However, NAS requires the design of a search space, which is currently not possible for QCNNs as no formal framework exists to capture its design elements. In this work, we provide such a framework by using techniques from NAS to create a hierarchical representation for QCNN architectures. Using this framework, we generate a family of popular QCNNs, those resembling reverse binary trees. We then evaluate this family of models on a music genre classification dataset, GTZAN, showing that alternating architecture has a greater impact on model performance than other modelling components, such as the choice of unitary ansatz and data encoding. Our framework provides a way to improve model performance without increasing complexity and to jump around the cost landscape to avoid barren plateaus. Finally, we implement the framework as an open-source Python package to enable dynamic QCNN creation and facilitate QCNN search space design for NAS. "
+}

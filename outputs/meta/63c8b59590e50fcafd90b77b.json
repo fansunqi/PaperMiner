@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lane Detection"
+  ],
+  "datasets": [
+    "Tusimple",
+    "CULane",
+    "LLAMAS"
+  ],
+  "methods": [
+    "BSNet",
+    "B-spline curve fitting",
+    "New curve distance"
+  ],
+  "results": [
+    "State-of-the-art performance",
+    "Accuracy improvement",
+    "Real-time performance (197FPS)"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b77b",
+  "title": "BSNet: Lane Detection via Draw B-spline Curves Nearby",
+  "abstract": "  Curve-based methods are one of the classic lane detection methods. They learn the holistic representation of lane lines, which is intuitive and concise. However, their performance lags behind the recent state-of-the-art methods due to the limitation of their lane representation and optimization. In this paper, we revisit the curve-based lane detection methods from the perspectives of the lane representations' globality and locality. The globality of lane representation is the ability to complete invisible parts of lanes with visible parts. The locality of lane representation is the ability to modify lanes locally which can simplify parameter optimization. Specifically, we first propose to exploit the b-spline curve to fit lane lines since it meets the locality and globality. Second, we design a simple yet efficient network BSNet to ensure the acquisition of global and local features. Third, we propose a new curve distance to make the lane detection optimization objective more reasonable and alleviate ill-conditioned problems. The proposed methods achieve state-of-the-art performance on the Tusimple, CULane, and LLAMAS datasets, which dramatically improved the accuracy of curve-based methods in the lane detection task while running far beyond real-time (197FPS). "
+}

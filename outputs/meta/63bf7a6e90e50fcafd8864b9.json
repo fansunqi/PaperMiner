@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Enhancing Comprehension and Navigation in Jupyter Notebooks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HeaderGen",
+    "call graph analysis in PyCG",
+    "pattern matching on code syntax"
+  ],
+  "results": [
+    "HeaderGen's underlying call graph analysis yields high accuracy (96.4% precision and 95.9% recall)",
+    "HeaderGen's header generation has a precision of 82.2% and a recall rate of 96.8%",
+    "HeaderGen helps participants finish comprehension and navigation tasks faster"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8864b9",
+  "title": "Enhancing Comprehension and Navigation in Jupyter Notebooks with Static\n  Analysis",
+  "abstract": "  Jupyter notebooks enable developers to interleave code snippets with rich-text and in-line visualizations. Data scientists use Jupyter notebook as the de-facto standard for creating and sharing machine-learning based solutions, primarily written in Python. Recent studies have demonstrated, however, that a large portion of Jupyter notebooks available on public platforms are undocumented and lacks a narrative structure. This reduces the readability of these notebooks. To address this shortcoming, this paper presents HeaderGen, a novel tool-based approach that automatically annotates code cells with categorical markdown headers based on a taxonomy of machine-learning operations, and classifies and displays function calls according to this taxonomy. For this functionality to be realized, HeaderGen enhances an existing call graph analysis in PyCG. To improve precision, HeaderGen extends PyCG's analysis with support for handling external library code and flow-sensitivity. The former is realized by facilitating the resolution of function return-types. Furthermore, HeaderGen uses type information to perform pattern matching on code syntax to annotate code cells.   The evaluation on 15 real-world Jupyter notebooks from Kaggle shows that HeaderGen's underlying call graph analysis yields high accuracy (96.4% precision and 95.9% recall). This is because HeaderGen can resolve return-types of external libraries where existing type inference tools such as pytype (by Google), pyright (by Microsoft), and Jedi fall short. The header generation has a precision of 82.2% and a recall rate of 96.8% with regard to headers created manually by experts. In a user study, HeaderGen helps participants finish comprehension and navigation tasks faster. All participants clearly perceive HeaderGen as useful to their task. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/feiyanhu/tinyHD"
+  ],
+  "tasks": [
+    "Video Saliency Prediction"
+  ],
+  "datasets": [
+    "DFH1K",
+    "UCF-Sports",
+    "Hollywood2"
+  ],
+  "methods": [
+    "Hierarchical Maps Distillation",
+    "Multi-output Saliency Prediction",
+    "Unlabeled Auxiliary Datasets",
+    "Channel Reduction with Teacher Assistant Supervision"
+  ],
+  "results": [
+    "Accuracy on par or better than state-of-the-art methods",
+    "Enhanced model efficiency"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd886645",
+  "title": "TinyHD: Efficient Video Saliency Prediction with Heterogeneous Decoders\n  using Hierarchical Maps Distillation",
+  "abstract": "  Video saliency prediction has recently attracted attention of the research community, as it is an upstream task for several practical applications. However, current solutions are particularly computationally demanding, especially due to the wide usage of spatio-temporal 3D convolutions. We observe that, while different model architectures achieve similar performance on benchmarks, visual variations between predicted saliency maps are still significant. Inspired by this intuition, we propose a lightweight model that employs multiple simple heterogeneous decoders and adopts several practical approaches to improve accuracy while keeping computational costs low, such as hierarchical multi-map knowledge distillation, multi-output saliency prediction, unlabeled auxiliary datasets and channel reduction with teacher assistant supervision. Our approach achieves saliency prediction accuracy on par or better than state-of-the-art methods on DFH1K, UCF-Sports and Hollywood2 benchmarks, while enhancing significantly the efficiency of the model. Code is on https://github.com/feiyanhu/tinyHD "
+}

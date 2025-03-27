@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Security"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Abstract Interpretation",
+    "Symbolic Execution",
+    "RedSoundRSE"
+  ],
+  "results": [
+    "RedSoundRSE provides both semantically sound results and the ability to derive counterexample pairs of traces up to a bound",
+    "Formalizes RedSoundRSE and proves its soundness as well as its relative precision up to a bound"
+  ],
+  "paper_id": "63ca069790e50fcafd682fd9",
+  "title": "Sound Symbolic Execution via Abstract Interpretation and its Application\n  to Security",
+  "abstract": "  Symbolic execution is a program analysis technique commonly utilized to determine whether programs violate properties and, in case violations are found, to generate inputs that can trigger them. Used in the context of security properties such as noninterference, symbolic execution is precise when looking for counterexample pairs of traces when insecure information flows are found, however it is sound only up to a bound thus it does not allow to prove the correctness of programs with executions beyond the given bound. By contrast, abstract interpretation-based static analysis guarantees soundness but generally lacks the ability to provide counterexample pairs of traces. In this paper, we propose to weave both to obtain the best of two worlds. We demonstrate this with a series of static analyses, including a static analysis called RedSoundRSE aimed at verifying noninterference. RedSoundRSE provides both semantically sound results and the ability to derive counterexample pairs of traces up to a bound. It relies on a combination of symbolic execution and abstract domains inspired by the well known notion of reduced product. We formalize RedSoundRSE and prove its soundness as well as its relative precision up to a bound. We also provide a prototype implementation of RedSoundRSE and evaluate it on a sample of challenging examples. "
+}

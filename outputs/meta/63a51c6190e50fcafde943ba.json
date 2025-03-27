@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time Localization and Mapping"
+  ],
+  "datasets": [
+    "Simulations of distinct indoor environments",
+    "Real datasets captured over several construction sites and office environments",
+    "Real public dataset of indoor office environments"
+  ],
+  "methods": [
+    "S-Graphs+",
+    "Room and floor segmentation algorithms"
+  ],
+  "results": [
+    "S-Graphs+ outperforms relevant baselines in the majority of the datasets",
+    "Extends the robot situational awareness by a four-layered scene model"
+  ],
+  "paper_id": "63a51c6190e50fcafde943ba",
+  "title": "S-Graphs+: Real-time Localization and Mapping leveraging Hierarchical\n  Representations",
+  "abstract": "  In this paper, we present an evolved version of the Situational Graphs, which jointly models in a single optimizable factor graph, a SLAM graph, as a set of robot keyframes, containing its associated measurements and robot poses, and a 3D scene graph, as a high-level representation of the environment that encodes its different geometric elements with semantic attributes and the relational information between those elements. Our proposed S-Graphs+ is a novel four-layered factor graph that includes: (1) a keyframes layer with robot pose estimates, (2) a walls layer representing wall surfaces, (3) a rooms layer encompassing sets of wall planes, and (4) a floors layer gathering the rooms within a given floor level. The above graph is optimized in real-time to obtain a robust and accurate estimate of the robot's pose and its map, simultaneously constructing and leveraging the high-level information of the environment. To extract such high-level information, we present novel room and floor segmentation algorithms utilizing the mapped wall planes and free-space clusters. We tested S-Graphs+ on multiple datasets including, simulations of distinct indoor environments, on real datasets captured over several construction sites and office environments, and on a real public dataset of indoor office environments. S-Graphs+ outperforms relevant baselines in the majority of the datasets while extending the robot situational awareness by a four-layered scene model. Moreover, we make the algorithm available as a docker file. "
+}

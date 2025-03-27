@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Decision-making under uncertainty",
+    "Optimization of safety-critical systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "ARTEO algorithm",
+    "Multi-armed bandits",
+    "Gaussian processes"
+  ],
+  "results": [
+    "Less cumulative regret",
+    "Accurate and safe decisions"
+  ],
+  "paper_id": "636dbe6890e50fcafd79a9e1",
+  "title": "Safe and Adaptive Decision-Making for Optimization of Safety-Critical\n  Systems: The ARTEO Algorithm",
+  "abstract": "  We consider the problem of decision-making under uncertainty in an environment with safety constraints. Many business and industrial applications rely on real-time optimization to improve key performance indicators. In the case of unknown characteristics, real-time optimization becomes challenging, particularly because of the satisfaction of safety constraints. We propose the ARTEO algorithm, where we cast multi-armed bandits as a mathematical programming problem subject to safety constraints and learn the unknown characteristics through exploration while optimizing the targets. We quantify the uncertainty in unknown characteristics by using Gaussian processes and incorporate it into the cost function as a contribution which drives exploration. We adaptively control the size of this contribution in accordance with the requirements of the environment. We guarantee the safety of our algorithm with a high probability through confidence bounds constructed under the regularity assumptions of Gaussian processes. We demonstrate the safety and efficiency of our approach with two case studies: optimization of electric motor current and real-time bidding problems. We further evaluate the performance of ARTEO compared to a safe variant of upper confidence bound based algorithms. ARTEO achieves less cumulative regret with accurate and safe decisions. "
+}

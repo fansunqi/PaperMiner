@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision-Language Model Adaptation"
+  ],
+  "datasets": [
+    "11 datasets for base-to-new generalization",
+    "4 datasets for domain generalization"
+  ],
+  "methods": [
+    "MetaPrompt",
+    "Dual-modality prompt tuning network",
+    "Asymmetric contrastive loss",
+    "Meta-learning-based prompt tuning algorithm"
+  ],
+  "results": [
+    "Consistently and significantly outperforms existing methods"
+  ],
+  "paper_id": "6392a76d90e50fcafd8c378d",
+  "title": "Learning Domain Invariant Prompt for Vision-Language Models",
+  "abstract": "  Prompt learning is one of the most effective and trending ways to adapt powerful vision-language foundation models like CLIP to downstream datasets by tuning learnable prompt vectors with very few samples. However, although prompt learning achieves excellent performance over in-domain data, it still faces the major challenge of generalizing to unseen classes and domains. Some existing prompt learning methods tackle this issue by adaptively generating different prompts for different tokens or domains but neglecting the ability of learned prompts to generalize to unseen domains. In this paper, we propose a novel prompt learning paradigm that directly generates \\emph{domain invariant} prompt that can be generalized to unseen domains, called MetaPrompt. Specifically, a dual-modality prompt tuning network is proposed to generate prompts for input from both image and text modalities. With a novel asymmetric contrastive loss, the representation from the original pre-trained vision-language model acts as supervision to enhance the generalization ability of the learned prompt. More importantly, we propose a meta-learning-based prompt tuning algorithm that explicitly constrains the task-specific prompt tuned for one domain or class to also achieve good performance in another domain or class. Extensive experiments on 11 datasets for base-to-new generalization and 4 datasets for domain generalization demonstrate that our method consistently and significantly outperforms existing methods. "
+}

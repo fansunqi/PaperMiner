@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fine-tuning Pre-trained Language Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Knowledge Distillation",
+    "Label Regularization",
+    "Label-smoothing"
+  ],
+  "results": [
+    "KD and other label regularization techniques do not play any meaningful role over regular fine-tuning",
+    "Pre-training itself acts as a kind of regularization, and additional label regularization is unnecessary"
+  ],
+  "paper_id": "628ef0495aee126c0f82d94c",
+  "title": "Do we need Label Regularization to Fine-tune Pre-trained Language\n  Models?",
+  "abstract": "  Knowledge Distillation (KD) is a prominent neural model compression technique that heavily relies on teacher network predictions to guide the training of a student model. Considering the ever-growing size of pre-trained language models (PLMs), KD is often adopted in many NLP tasks involving PLMs. However, it is evident that in KD, deploying the teacher network during training adds to the memory and computational requirements of training. In the computer vision literature, the necessity of the teacher network is put under scrutiny by showing that KD is a label regularization technique that can be replaced with lighter teacher-free variants such as the label-smoothing technique. However, to the best of our knowledge, this issue is not investigated in NLP. Therefore, this work concerns studying different label regularization techniques and whether we actually need them to improve the fine-tuning of smaller PLM networks on downstream tasks. In this regard, we did a comprehensive set of experiments on different PLMs such as BERT, RoBERTa, and GPT with more than 600 distinct trials and ran each configuration five times. This investigation led to a surprising observation that KD and other label regularization techniques do not play any meaningful role over regular fine-tuning when the student model is pre-trained. We further explore this phenomenon in different settings of NLP and computer vision tasks and demonstrate that pre-training itself acts as a kind of regularization, and additional label regularization is unnecessary. "
+}

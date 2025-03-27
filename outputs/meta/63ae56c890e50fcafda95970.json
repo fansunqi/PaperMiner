@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lung tissue segmentation in 3D CT scans"
+  ],
+  "datasets": [
+    "LUNA16",
+    "VESSEL12",
+    "CRPF"
+  ],
+  "methods": [
+    "2.5-dimensional image representation",
+    "U-Net architecture with pre-trained InceptionV3 blocks"
+  ],
+  "results": [
+    "Dice coefficients of 99.7, 99.1, and 98.8 over LUNA16, VESSEL12, and CRPF datasets"
+  ],
+  "paper_id": "63ae56c890e50fcafda95970",
+  "title": "CT-LungNet: A Deep Learning Framework for Precise Lung Tissue\n  Segmentation in 3D Thoracic CT Scans",
+  "abstract": "  Segmentation of lung tissue in computed tomography (CT) images is a precursor to most pulmonary image analysis applications. Semantic segmentation methods using deep learning have exhibited top-tier performance in recent years, however designing accurate and robust segmentation models for lung tissue is challenging due to the variations in shape, size, and orientation. Additionally, medical image artifacts and noise can affect lung tissue segmentation and degrade the accuracy of downstream analysis. The practicality of current deep learning methods for lung tissue segmentation is limited as they require significant computational resources and may not be easily deployable in clinical settings. This paper presents a fully automatic method that identifies the lungs in three-dimensional (3D) pulmonary CT images using deep networks and transfer learning. We introduce (1) a novel 2.5-dimensional image representation from consecutive CT slices that succinctly represents volumetric information and (2) a U-Net architecture equipped with pre-trained InceptionV3 blocks to segment 3D CT scans while maintaining the number of learnable parameters as low as possible. Our method was quantitatively assessed using one public dataset, LUNA16, for training and testing and two public datasets, namely, VESSEL12 and CRPF, only for testing. Due to the low number of learnable parameters, our method achieved high generalizability to the unseen VESSEL12 and CRPF datasets while obtaining superior performance over Luna16 compared to existing methods (Dice coefficients of 99.7, 99.1, and 98.8 over LUNA16, VESSEL12, and CRPF datasets, respectively). We made our method publicly accessible via a graphical user interface at medvispy.ee.kntu.ac.ir. "
+}

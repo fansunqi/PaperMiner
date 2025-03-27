@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic alignment in higher-order probabilistic programming languages"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Static analysis technique",
+    "Sequential Monte Carlo (SMC)",
+    "Markov chain Monte Carlo (MCMC)",
+    "aligned SMC",
+    "aligned lightweight MCMC"
+  ],
+  "results": [
+    "Significantly improve inference execution time and accuracy compared to standard PPL versions of SMC and MCMC"
+  ],
+  "paper_id": "63d7352390e50fcafda303bc",
+  "title": "Automatic Alignment in Higher-Order Probabilistic Programming Languages",
+  "abstract": "  Probabilistic Programming Languages (PPLs) allow users to encode statistical inference problems and automatically apply an inference algorithm to solve them. Popular inference algorithms for PPLs, such as sequential Monte Carlo (SMC) and Markov chain Monte Carlo (MCMC), are built around checkpoints -- relevant events for the inference algorithm during the execution of a probabilistic program. Deciding the location of checkpoints is, in current PPLs, not done optimally. To solve this problem, we present a static analysis technique that automatically determines checkpoints in programs, relieving PPL users of this task. The analysis identifies a set of checkpoints that execute in the same order in every program run -- they are aligned. We formalize alignment, prove the correctness of the analysis, and implement the analysis as part of the higher-order functional PPL Miking CorePPL. By utilizing the alignment analysis, we design two novel inference algorithm variants: aligned SMC and aligned lightweight MCMC. We show, through real-world experiments, that they significantly improve inference execution time and accuracy compared to standard PPL versions of SMC and MCMC. "
+}

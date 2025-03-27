@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "Semi-supervised k-clustering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pairwise-Confidence-Constraints-Clustering (PCCC)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art approaches on instances with all hard constraints or all soft constraints",
+    "Scalable to large-scale instances with up to 60,000 objects, 100 clusters, and millions of cannot-link constraints"
+  ],
+  "paper_id": "63b24b2890e50fcafdd378c1",
+  "title": "PCCC: The Pairwise-Confidence-Constraints-Clustering Algorithm",
+  "abstract": "  We consider a semi-supervised $k$-clustering problem where information is available on whether pairs of objects are in the same or in different clusters. This information is either available with certainty or with a limited level of confidence. We introduce the PCCC algorithm, which iteratively assigns objects to clusters while accounting for the information provided on the pairs of objects. Our algorithm can include relationships as hard constraints that are guaranteed to be satisfied or as soft constraints that can be violated subject to a penalty. This flexibility distinguishes our algorithm from the state-of-the-art in which all pairwise constraints are either considered hard, or all are considered soft. Unlike existing algorithms, our algorithm scales to large-scale instances with up to 60,000 objects, 100 clusters, and millions of cannot-link constraints (which are the most challenging constraints to incorporate). We compare the PCCC algorithm with state-of-the-art approaches in an extensive computational study. Even though the PCCC algorithm is more general than the state-of-the-art approaches in its applicability, it outperforms the state-of-the-art approaches on instances with all hard constraints or all soft constraints both in terms of running time and various metrics of solution quality. The source code of the PCCC algorithm is publicly available on GitHub. "
+}

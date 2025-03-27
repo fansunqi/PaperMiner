@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/fyshelab/QA-ZRE"
+  ],
+  "tasks": [
+    "Zero-Shot Relation Extraction"
+  ],
+  "datasets": [
+    "RE-QA",
+    "FewRel",
+    "WikiZSL"
+  ],
+  "methods": [
+    "Question Answering (QA) models"
+  ],
+  "results": [
+    "16 F1 points improvement over previous state-of-the-art",
+    "0.7 F1 points from a system using gold question templates"
+  ],
+  "paper_id": "63d340de90e50fcafd90f7c8",
+  "title": "Weakly-Supervised Questions for Zero-Shot Relation Extraction",
+  "abstract": "  Zero-Shot Relation Extraction (ZRE) is the task of Relation Extraction where the training and test sets have no shared relation types. This very challenging domain is a good test of a model's ability to generalize. Previous approaches to ZRE reframed relation extraction as Question Answering (QA), allowing for the use of pre-trained QA models. However, this method required manually creating gold question templates for each new relation. Here, we do away with these gold templates and instead learn a model that can generate questions for unseen relations. Our technique can successfully translate relation descriptions into relevant questions, which are then leveraged to generate the correct tail entity. On tail entity extraction, we outperform the previous state-of-the-art by more than 16 F1 points without using gold question templates. On the RE-QA dataset where no previous baseline for relation extraction exists, our proposed algorithm comes within 0.7 F1 points of a system that uses gold question templates. Our model also outperforms the state-of-the-art ZRE baselines on the FewRel and WikiZSL datasets, showing that QA models no longer need template questions to match the performance of models specifically tailored to the ZRE task. Our implementation is available at https://github.com/fyshelab/QA-ZRE. "
+}

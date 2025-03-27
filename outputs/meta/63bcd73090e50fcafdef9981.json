@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "System Call Flow Protection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "SFP: a two-step linking approach, dynamic CFI instrumentation, new CFI checking policy, FIPAC"
+  ],
+  "results": [
+    "Average runtime overhead of 1.9% and 20.6%, increase of 1.8% over plain control-flow protection"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9981",
+  "title": "SFP: Providing System Call Flow Protection against Software and Fault\n  Attacks",
+  "abstract": "  With the improvements in computing technologies, edge devices in the Internet-of-Things have become more complex. The enabler technology for these complex systems are powerful application core processors with operating system support, such as Linux. While the isolation of applications through the operating system increases the security, the interface to the kernel poses a new threat. Different attack vectors, including fault attacks and memory vulnerabilities, exploit the kernel interface to escalate privileges and take over the system.   In this work, we present SFP, a mechanism to protect the execution of system calls against software and fault attacks providing integrity to user-kernel transitions. SFP provides system call flow integrity by a two-step linking approach, which links the system call and its origin to the state of control-flow integrity. A second linking step within the kernel ensures that the right system call is executed in the kernel. Combining both linking steps ensures that only the correct system call is executed at the right location in the program and cannot be skipped. Furthermore, SFP provides dynamic CFI instrumentation and a new CFI checking policy at the edge of the kernel to verify the control-flow state of user programs before entering the kernel. We integrated SFP into FIPAC, a CFI protection scheme exploiting ARM pointer authentication. Our prototype is based on a custom LLVM-based toolchain with an instrumented runtime library combined with a custom Linux kernel to protect system calls. The evaluation of micro- and macrobenchmarks based on SPEC 2017 show an average runtime overhead of 1.9 % and 20.6 %, which is only an increase of 1.8 % over plain control-flow protection. This small impact on the performance shows the efficiency of SFP for protecting all system calls and providing integrity for the user-kernel transitions. "
+}

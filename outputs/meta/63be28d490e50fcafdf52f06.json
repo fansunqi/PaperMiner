@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formal Disproof of the Hirsch Conjecture"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Algorithm for computing vertex-edge graphs of polytopes",
+    "Proof assistant in Coq"
+  ],
+  "results": [
+    "Tradeoff between simplicity and efficiency",
+    "Formal verification of counterexamples",
+    "Computing vertices or diameter of polytopes"
+  ],
+  "paper_id": "63be28d490e50fcafdf52f06",
+  "title": "A Formal Disproof of the Hirsch Conjecture",
+  "abstract": "  The purpose of this paper is the formal verification of a counterexample of Santos et al. to the so-called Hirsch Conjecture on the diameter of polytopes (bounded convex polyhedra). In contrast with the pen-and-paper proof, our approach is entirely computational: we implement in Coq and prove correct an algorithm that explicitly computes, within the proof assistant, vertex-edge graphs of polytopes as well as their diameter. The originality of this certificate-based algorithm is to achieve a tradeoff between simplicity and efficiency.   Simplicity is crucial in obtaining the proof of correctness of the algorithm. This proof splits into the correctness of an abstract algorithm stated over proof-oriented data types and the correspondence with a low-level implementation over computation-oriented data types. A special effort has been made to reduce the algorithm to a small sequence of elementary operations (e.g., matrix multiplications, basic routines on sets and graphs), in order to make the derivation of the correctness of the low-level implementation more transparent.   Efficiency allows us to scale up to polytopes with a challenging combinatorics. For instance, we formally check the two counterexamples of Matschke, Santos and Weibel to the Hirsch conjecture, respectively 20- and 23-dimensional polytopes with 36 425 and 73 224 vertices involving rational coefficients with up to 40 digits in their numerator and denominator. We also illustrate the performance of the method by computing the list of vertices or the diameter of well-known classes of polytopes, such as (polars of) cyclic polytopes involved in McMullen's Upper Bound Theorem. "
+}

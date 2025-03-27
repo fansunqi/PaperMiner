@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Rare Disease Identification from Clinical Notes"
+  ],
+  "datasets": [
+    "MIMIC-III discharge summaries",
+    "MIMIC-III radiology reports",
+    "NHS Tayside brain imaging reports"
+  ],
+  "methods": [
+    "Ontology-based framework",
+    "Weak supervision",
+    "Bi-directional Transformers (e.g. BERT)",
+    "Named Entity Recognition and Linking (NER+L) tool, SemEHR"
+  ],
+  "results": [
+    "Improvements in precision by over 30% to 50% absolute score for Text-to-UMLS linking",
+    "Almost no loss of recall compared to the existing NER+L tool, SemEHR"
+  ],
+  "paper_id": "627c6cff5aee126c0f832322",
+  "title": "Ontology-Driven and Weakly Supervised Rare Disease Identification from\n  Clinical Notes",
+  "abstract": "  Computational text phenotyping is the practice of identifying patients with certain disorders and traits from clinical notes. Rare diseases are challenging to be identified due to few cases available for machine learning and the need for data annotation from domain experts. We propose a method using ontologies and weak supervision, with recent pre-trained contextual representations from Bi-directional Transformers (e.g. BERT). The ontology-based framework includes two steps: (i) Text-to-UMLS, extracting phenotypes by contextually linking mentions to concepts in Unified Medical Language System (UMLS), with a Named Entity Recognition and Linking (NER+L) tool, SemEHR, and weak supervision with customised rules and contextual mention representation; (ii) UMLS-to-ORDO, matching UMLS concepts to rare diseases in Orphanet Rare Disease Ontology (ORDO). The weakly supervised approach is proposed to learn a phenotype confirmation model to improve Text-to-UMLS linking, without annotated data from domain experts. We evaluated the approach on three clinical datasets, MIMIC-III discharge summaries, MIMIC-III radiology reports, and NHS Tayside brain imaging reports from two institutions in the US and the UK, with annotations. The improvements in the precision were pronounced (by over 30% to 50% absolute score for Text-to-UMLS linking), with almost no loss of recall compared to the existing NER+L tool, SemEHR. Results on radiology reports from MIMIC-III and NHS Tayside were consistent with the discharge summaries. The overall pipeline processing clinical notes can extract rare disease cases, mostly uncaptured in structured data (manually assigned ICD codes). We discuss the usefulness of the weak supervision approach and propose directions for future studies. "
+}

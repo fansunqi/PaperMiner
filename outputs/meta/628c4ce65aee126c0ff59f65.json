@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Globally Coordinated Threat Detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Federated Learning",
+    "Active Learning",
+    "DTrust"
+  ],
+  "results": [
+    "Precision-Recall AUC: 3x increase compared to local model",
+    "Detected 42 malicious URLs and 20 malicious domains in one day"
+  ],
+  "paper_id": "628c4ce65aee126c0ff59f65",
+  "title": "CELEST: Federated Learning for Globally Coordinated Threat Detection",
+  "abstract": "  The cyber-threat landscape has evolved tremendously in recent years, with new threat variants emerging daily, and large-scale coordinated campaigns becoming more prevalent. In this study, we propose CELEST (CollaborativE LEarning for Scalable Threat detection, a federated machine learning framework for global threat detection over HTTP, which is one of the most commonly used protocols for malware dissemination and communication. CELEST leverages federated learning in order to collaboratively train a global model across multiple clients who keep their data locally, thus providing increased privacy and confidentiality assurances. Through a novel active learning component integrated with the federated learning technique, our system continuously discovers and learns the behavior of new, evolving, and globally-coordinated cyber threats. We show that CELEST is able to expose attacks that are largely invisible to individual organizations. For instance, in one challenging attack scenario with data exfiltration malware, the global model achieves a three-fold increase in Precision-Recall AUC compared to the local model. We also design a poisoning detection and mitigation method, DTrust, specifically designed for federated learning in the collaborative threat detection domain. DTrust successfully detects poisoning clients using the feedback from participating clients to investigate and remove them from the training process. We deploy CELEST on two university networks and show that it is able to detect the malicious HTTP communication with high precision and low false positive rates. Furthermore, during its deployment, CELEST detected a set of previously unknown 42 malicious URLs and 20 malicious domains in one day, which were confirmed to be malicious by VirusTotal. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Detecting TCP Packet Reordering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Efficient algorithms for identifying IP prefixes with heavy packet reordering under memory restrictions"
+  ],
+  "results": [
+    "Correctly identify 80% of the prefixes with heavy packet reordering using moderate memory resources"
+  ],
+  "paper_id": "63b39cbe90e50fcafdd1e3be",
+  "title": "Detecting TCP Packet Reordering in the Data Plane",
+  "abstract": "  Network administrators want to detect TCP-level packet reordering to diagnose performance problems and attacks. However, reordering is expensive to measure, because each packet must be processed relative to the TCP sequence number of its predecessor in the same flow. Due to the volume of traffic, detection should take place in the data plane as the packets fly by. However, restrictions on the memory size and the number of memory accesses per packet make it impossible to design an efficient algorithm for pinpointing flows with heavy packet reordering. In practice, packet reordering is typically a property of a network path, due to a congested or flaky link. Flows traversing the same path are correlated in their out-of-orderness, and aggregating out-of-order statistics at the IP prefix level provides useful diagnostic information. In this paper, we present efficient algorithms for identifying IP prefixes with heavy packet reordering under memory restrictions. First, we sample as many flows as possible, regardless of their sizes, but only for a short period at a time. Next, we separately monitor the large flows over long periods, in addition to the flow sampling. In both algorithms, we measure at the flow level, and aggregate statistics and allocate memory at the prefix level. Our simulation experiments, using packet traces from campus and backbone networks, and our P4 prototype show that our algorithms correctly identify $80\\%$ of the prefixes with heavy packet reordering using moderate memory resources. "
+}

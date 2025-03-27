@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Goodness of Pronunciation (GoP) computation",
+    "OOV problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Vocab/Lexicon expansion techniques",
+    "Online, Offline, Hybrid pipelines",
+    "Phoneme to posterior mappings",
+    "Word boundaries"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "631aaf0690e50fcafdafa400",
+  "title": "Goodness of Pronunciation Pipelines for OOV Problem",
+  "abstract": "  In the following report we propose pipelines for Goodness of Pronunciation (GoP) computation solving OOV problem at testing time using Vocab/Lexicon expansion techniques. The pipeline uses different components of ASR system to quantify accent and automatically evaluate them as scores. We use the posteriors of an ASR model trained on native English speech, along with the phone level boundaries to obtain phone level pronunciation scores. We used this as a baseline pipeline and implemented methods to remove UNK and SPN phonemes in the GoP output by building three pipelines. The Online, Offline and Hybrid pipeline which returns the scores but also can prevent unknown words in the final output. The Online method is based per utterance, Offline method pre-incorporates a set of OOV words for a given data set and the Hybrid method combines the above two ideas to expand the lexicon as well work per utterance. We further provide utilities such as the Phoneme to posterior mappings, GoP scores of each utterance as a vector, and Word boundaries used in the GoP pipeline for use in future research. "
+}

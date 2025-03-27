@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bayesian Weapon System Reliability Modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cox-Weibull Neural Network",
+    "DeepSurv",
+    "Bayesian Model",
+    "dropout methods",
+    "interval-censored log-likelihood",
+    "Monte-Carlo Markov Chain (MCMC)"
+  ],
+  "results": [
+    "Model outperforms traditional models like XGBoost and conditional Weibull",
+    "Comparison metrics: ROC AUC, PR AUC, F scores"
+  ],
+  "paper_id": "63bcd72f90e50fcafdef962a",
+  "title": "Bayesian Weapon System Reliability Modeling with Cox-Weibull Neural\n  Network",
+  "abstract": "  We propose to integrate weapon system features (such as weapon system manufacturer, deployment time and location, storage time and location, etc.) into a parameterized Cox-Weibull [1] reliability model via a neural network, like DeepSurv [2], to improve predictive maintenance. In parallel, we develop an alternative Bayesian model by parameterizing the Weibull parameters with a neural network and employing dropout methods such as Monte-Carlo (MC)-dropout for comparative purposes. Due to data collection procedures in weapon system testing we employ a novel interval-censored log-likelihood which incorporates Monte-Carlo Markov Chain (MCMC) [3] sampling of the Weibull parameters during gradient descent optimization. We compare classification metrics such as receiver operator curve (ROC) area under the curve (AUC), precision-recall (PR) AUC, and F scores to show our model generally outperforms traditional powerful models such as XGBoost and the current standard conditional Weibull probability density estimation model. "
+}

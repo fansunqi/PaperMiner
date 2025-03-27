@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Trajectory Optimisation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differential Dynamic Programming with Escape Network (DDPEN)",
+    "Deep model for future direction generation"
+  ],
+  "results": [
+    "Avoids local minima in trajectory optimization",
+    "Executed a 278 m long trajectory with various obstacles"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bb8d",
+  "title": "DDPEN: Trajectory Optimisation With Sub Goal Generation Model",
+  "abstract": "  Differential dynamic programming (DDP) is a widely used and powerful trajectory optimization technique, however, due to its internal structure, it is not exempt from local minima. In this paper, we present Differential Dynamic Programming with Escape Network (DDPEN) - a novel approach to avoid DDP local minima by utilising an additional term used in the optimization criteria pointing towards the direction where robot should move in order to escape local minima. In order to produce the aforementioned directions, we propose to utilize a deep model that takes as an input the map of the environment in the form of a costmap together with the desired goal position. The Model produces possible future directions that will lead to the goal, avoiding local minima which is possible to run in real time conditions. The model is trained on a synthetic dataset and overall the system is evaluated at the Gazebo simulator. In this work we show that our proposed method allows avoiding local minima of trajectory optimization algorithm and successfully execute a trajectory 278 m long with various convex and nonconvex obstacles. "
+}

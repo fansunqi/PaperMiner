@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/Sandy-Zeng/PCL"
+  ],
+  "tasks": [
+    "Image manipulation detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Proposal Contrastive Learning (PCL)",
+    "Two-stream architecture",
+    "Proxy proposal contrastive learning"
+  ],
+  "results": [
+    "Consistent improvement on several standard datasets"
+  ],
+  "paper_id": "634e194190e50fcafd24e729",
+  "title": "Towards Effective Image Manipulation Detection with Proposal Contrastive\n  Learning",
+  "abstract": "  Deep models have been widely and successfully used in image manipulation detection, which aims to classify tampered images and localize tampered regions. Most existing methods mainly focus on extracting global features from tampered images, while neglecting the relationships of local features between tampered and authentic regions within a single tampered image. To exploit such spatial relationships, we propose Proposal Contrastive Learning (PCL) for effective image manipulation detection. Our PCL consists of a two-stream architecture by extracting two types of global features from RGB and noise views respectively. To further improve the discriminative power, we exploit the relationships of local features through a proxy proposal contrastive learning task by attracting/repelling proposal-based positive/negative sample pairs. Moreover, we show that our PCL can be easily adapted to unlabeled data in practice, which can reduce manual labeling costs and promote more generalizable features. Extensive experiments among several standard datasets demonstrate that our PCL can be a general module to obtain consistent improvement. The code is available at https://github.com/Sandy-Zeng/PCL. "
+}

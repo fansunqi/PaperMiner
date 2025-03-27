@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://rover-xingyu.github.io/L2G-NeRF/"
+  ],
+  "tasks": [
+    "Neural Radiance Fields registration"
+  ],
+  "datasets": [
+    "synthetic and real-world data"
+  ],
+  "methods": [
+    "L2G-NeRF: Local-to-Global registration method"
+  ],
+  "results": [
+    "high-fidelity reconstruction",
+    "resolving large camera pose misalignment"
+  ],
+  "paper_id": "637c3dd690e50fcafd77cd2c",
+  "title": "Local-to-Global Registration for Bundle-Adjusting Neural Radiance Fields",
+  "abstract": "  Neural Radiance Fields (NeRF) have achieved photorealistic novel views synthesis; however, the requirement of accurate camera poses limits its application. Despite analysis-by-synthesis extensions for jointly learning neural 3D representations and registering camera frames exist, they are susceptible to suboptimal solutions if poorly initialized. We propose L2G-NeRF, a Local-to-Global registration method for bundle-adjusting Neural Radiance Fields: first, a pixel-wise flexible alignment, followed by a frame-wise constrained parametric alignment. Pixel-wise local alignment is learned in an unsupervised way via a deep network which optimizes photometric reconstruction errors. Frame-wise global alignment is performed using differentiable parameter estimation solvers on the pixel-wise correspondences to find a global transformation. Experiments on synthetic and real-world data show that our method outperforms the current state-of-the-art in terms of high-fidelity reconstruction and resolving large camera pose misalignment. Our module is an easy-to-use plugin that can be applied to NeRF variants and other neural field applications. The Code and supplementary materials are available at https://rover-xingyu.github.io/L2G-NeRF/. "
+}

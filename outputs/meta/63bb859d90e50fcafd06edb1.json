@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous optimization",
+    "First-order methods"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Restart scheme based on approximate sharpness"
+  ],
+  "results": [
+    "Maintains the same convergence rate as when assuming knowledge of the constants",
+    "Rates of convergence match or improve on previously established rates"
+  ],
+  "paper_id": "63bb859d90e50fcafd06edb1",
+  "title": "Restarts subject to approximate sharpness: A parameter-free and optimal\n  scheme for first-order methods",
+  "abstract": "  Sharpness is an almost generic assumption in continuous optimization that bounds the distance from minima by objective function suboptimality. It leads to the acceleration of first-order methods via restarts. However, sharpness involves problem-specific constants that are typically unknown, and previous restart schemes reduce convergence rates. Moreover, such schemes are challenging to apply in the presence of noise or approximate model classes (e.g., in compressive imaging or learning problems), and typically assume that the first-order method used produces feasible iterates. We consider the assumption of approximate sharpness, a generalization of sharpness that incorporates an unknown constant perturbation to the objective function error. This constant offers greater robustness (e.g., with respect to noise or relaxation of model classes) for finding approximate minimizers. By employing a new type of search over the unknown constants, we design a restart scheme that applies to general first-order methods and does not require the first-order method to produce feasible iterates. Our scheme maintains the same convergence rate as when assuming knowledge of the constants. The rates of convergence we obtain for various first-order methods either match the optimal rates or improve on previously established rates for a wide range of problems. We showcase our restart scheme on several examples and point to future applications and developments of our framework and theory. "
+}

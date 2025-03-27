@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Error correction codes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Chip Guard ECC"
+  ],
+  "results": [
+    "Supports whole-chip correction",
+    "Less than 1 in 10^12 chance of failing to correct unbounded faults",
+    "Less than 1 in 10^12 chance of failure to detect an uncorrected fault"
+  ],
+  "paper_id": "63c8b59590e50fcafd90ba82",
+  "title": "Chip Guard ECC: An Efficient, Low Latency Method",
+  "abstract": "  Chip Guard is a new approach to symbol-correcting error correction codes. It can be scaled to various data burst sizes and reliability levels. A specific version for DDR5 is described. It uses the usual DDR5 configuration of 8 data chips, plus 2 chips for ECC and metadata, with 64-bit bursts per chip, to support whole-chip correction reliably and with high probity (reporting of uncorrectable faults). Various numbers of metadata bits may be supported with defined tradeoffs for reliability and probity. The method should correct all bounded faults of a single chip, with less than 1 in 10^12 chance of failing to correct unbounded faults in one chip, or less than 1 in 10^12 chance of failure to detect an uncorrected fault which affects multiple chips. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Contrastive Audio-Text Retrieval"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Negative Sampling",
+    "Within-modality and cross-modality relevance scores"
+  ],
+  "results": [
+    "Improved retrieval performance with semi-hard negatives",
+    "Feature collapse with hard negatives"
+  ],
+  "paper_id": "636b1a6590e50fcafdf41ab2",
+  "title": "On Negative Sampling for Contrastive Audio-Text Retrieval",
+  "abstract": "  This paper investigates negative sampling for contrastive learning in the context of audio-text retrieval. The strategy for negative sampling refers to selecting negatives (either audio clips or textual descriptions) from a pool of candidates for a positive audio-text pair. We explore sampling strategies via model-estimated within-modality and cross-modality relevance scores for audio and text samples. With a constant training setting on the retrieval system from [1], we study eight sampling strategies, including hard and semi-hard negative sampling. Experimental results show that retrieval performance varies dramatically among different strategies. Particularly, by selecting semi-hard negatives with cross-modality scores, the retrieval system gains improved performance in both text-to-audio and audio-to-text retrieval. Besides, we show that feature collapse occurs while sampling hard negatives with cross-modality scores. "
+}

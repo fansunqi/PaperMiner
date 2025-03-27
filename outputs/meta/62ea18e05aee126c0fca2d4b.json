@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Complex Matrix Inversion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Frobenius Inversion"
+  ],
+  "results": [
+    "Frobenius inversion is optimal with the least number of real matrix multiplications and inversions",
+    "Frobenius inversion runs faster than LU decomposition if the ratio of real matrix inversion to real matrix multiplication is greater than 5/4",
+    "Frobenius inversion is more efficient than LU decomposition with nearly no loss in accuracy for matrix sign function, solving Sylvester equation, and computing polar decomposition"
+  ],
+  "paper_id": "62ea18e05aee126c0fca2d4b",
+  "title": "Inverting a complex matrix",
+  "abstract": "  We analyze a complex matrix inversion algorithm first proposed by Frobenius, but largely forgotten: $(A + iB)^{-1} = (A + BA^{-1}B)^{-1} - i A^{-1}B(A+BA^{-1} B)^{-1}$ when $A$ is invertible and $(A + iB)^{-1} = B^{-1}A(AB^{-1}A + B)^{-1} - i (AB^{-1}A + B)^{-1}$ when $B$ is invertible. This may be viewed as an inversion analogue of the aforementioned Gauss multiplication. We proved that Frobenius inversion is optimal -- it uses the least number of real matrix multiplications and inversions among all complex matrix inversion algorithms. We also showed that Frobenius inversion runs faster than the standard method based on LU decomposition if and only if the ratio of the running time for real matrix inversion to that for real matrix multiplication is greater than $5/4$. We corroborate this theoretical result with extensive numerical experiments, applying Frobenius inversion to evaluate matrix sign function, solve Sylvester equation, and compute polar decomposition, concluding that for these problems, Frobenius inversion is more efficient than LU decomposition with nearly no loss in accuracy. "
+}

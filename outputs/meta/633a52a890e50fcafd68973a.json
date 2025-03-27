@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum computing control system design",
+    "SoC-based control system performance evaluation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "High-speed on-chip communication mechanisms",
+    "DMA",
+    "Gate sequencer core"
+  ],
+  "results": [
+    "Data transfer latency and throughput of on-chip mechanisms",
+    "Bandwidth up to 19.2 GB/s",
+    "Reconfiguration of qubit gates in less than 2\u03bcs"
+  ],
+  "paper_id": "633a52a890e50fcafd68973a",
+  "title": "Design and analysis of digital communication within an SoC-based control\n  system for trapped-ion quantum computing",
+  "abstract": "  Electronic control systems used for quantum computing have become increasingly complex as multiple qubit technologies employ larger numbers of qubits with higher fidelity targets. Whereas the control systems for different technologies share some similarities, parameters like pulse duration, throughput, real-time feedback, and latency requirements vary widely depending on the qubit type. In this paper, we evaluate the performance of modern System-on-Chip (SoC) architectures in meeting the control demands associated with performing quantum gates on trapped-ion qubits, particularly focusing on communication within the SoC. A principal focus of this paper is the data transfer latency and throughput of several high-speed on-chip mechanisms on Xilinx multi-processor SoCs, including those that utilize direct memory access (DMA). They are measured and evaluated to determine an upper bound on the time required to reconfigure a gate parameter. Worst-case and average-case bandwidth requirements for a custom gate sequencer core are compared with the experimental results. The lowest-variability, highest-throughput data-transfer mechanism is DMA between the real-time processing unit (RPU) and the PL, where bandwidths up to 19.2 GB/s are possible. For context, this enables reconfiguration of qubit gates in less than 2$\\mu$s, comparable to the fastest gate time. Though this paper focuses on trapped-ion control systems, the gate abstraction scheme and measured communication rates are applicable to a broad range of quantum computing technologies. "
+}

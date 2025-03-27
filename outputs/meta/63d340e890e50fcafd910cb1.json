@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/jbrea/MLPGradientFlow.jl"
+  ],
+  "tasks": [
+    "Optimization of multi-layer perceptrons"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MLPGradientFlow",
+    "Runge-Kutta schemes",
+    "Newton's method",
+    "BFGS approximations"
+  ],
+  "results": [
+    "Improved accuracy and convergence speed",
+    "Faster gradient and Hessian computation",
+    "Bias-free two-layer networks"
+  ],
+  "paper_id": "63d340e890e50fcafd910cb1",
+  "title": "MLPGradientFlow: going with the flow of multilayer perceptrons (and\n  finding minima fast and accurately)",
+  "abstract": "  MLPGradientFlow is a software package to solve numerically the gradient flow differential equation $\\dot \\theta = -\\nabla \\mathcal L(\\theta; \\mathcal D)$, where $\\theta$ are the parameters of a multi-layer perceptron, $\\mathcal D$ is some data set, and $\\nabla \\mathcal L$ is the gradient of a loss function. We show numerically that adaptive first- or higher-order integration methods based on Runge-Kutta schemes have better accuracy and convergence speed than gradient descent with the Adam optimizer. However, we find Newton's method and approximations like BFGS preferable to find fixed points (local and global minima of $\\mathcal L$) efficiently and accurately. For small networks and data sets, gradients are usually computed faster than in pytorch and Hessian are computed at least $5\\times$ faster. Additionally, the package features an integrator for a teacher-student setup with bias-free, two-layer networks trained with standard Gaussian input in the limit of infinite data. The code is accessible at https://github.com/jbrea/MLPGradientFlow.jl. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Social bias detection in NLP models",
+    "Social commonsense question-answering"
+  ],
+  "datasets": [
+    "Social IQa"
+  ],
+  "methods": [
+    "Modified instance generation",
+    "Masked language model",
+    "Social commonsense model scoring"
+  ],
+  "results": [
+    "Uncovering stereotypic associations",
+    "Testing on debiased models",
+    "Limitations of debiasing algorithms"
+  ],
+  "paper_id": "634cc7a290e50fcafd162cfd",
+  "title": "SODAPOP: Open-Ended Discovery of Social Biases in Social Commonsense\n  Reasoning Models",
+  "abstract": "  A common limitation of diagnostic tests for detecting social biases in NLP models is that they may only detect stereotypic associations that are pre-specified by the designer of the test. Since enumerating all possible problematic associations is infeasible, it is likely these tests fail to detect biases that are present in a model but not pre-specified by the designer. To address this limitation, we propose SODAPOP (SOcial bias Discovery from Answers about PeOPle) in social commonsense question-answering. Our pipeline generates modified instances from the Social IQa dataset (Sap et al., 2019) by (1) substituting names associated with different demographic groups, and (2) generating many distractor answers from a masked language model. By using a social commonsense model to score the generated distractors, we are able to uncover the model's stereotypic associations between demographic groups and an open set of words. We also test SODAPOP on debiased models and show the limitations of multiple state-of-the-art debiasing algorithms. "
+}

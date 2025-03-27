@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://gitlab.com/viper-purdue/OCIL-real-world-food-image-classification"
+  ],
+  "tasks": [
+    "Real-world Food Image Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Online Class Incremental Learning (OCIL)",
+    "Dynamic Model Update (DMU)",
+    "Experience Replay (ER)"
+  ],
+  "results": [
+    "Significant enhancements compared to established ER methods"
+  ],
+  "paper_id": "63c4c02990e50fcafdadfede",
+  "title": "Online Class-Incremental Learning For Real-World Food Image\n  Classification",
+  "abstract": "Food image classification is essential for monitoring health and tracking\ndietary in image-based dietary assessment methods. However, conventional\nsystems often rely on static datasets with fixed classes and uniform\ndistribution. In contrast, real-world food consumption patterns, shaped by\ncultural, economic, and personal influences, involve dynamic and evolving data.\nThus, require the classification system to cope with continuously evolving\ndata. Online Class Incremental Learning (OCIL) addresses the challenge of\nlearning continuously from a single-pass data stream while adapting to the new\nknowledge and reducing catastrophic forgetting. Experience Replay (ER) based\nOCIL methods store a small portion of previous data and have shown encouraging\nperformance. However, most existing OCIL works assume that the distribution of\nencountered data is perfectly balanced, which rarely happens in real-world\nscenarios. In this work, we explore OCIL for real-world food image\nclassification by first introducing a probabilistic framework to simulate\nrealistic food consumption scenarios. Subsequently, we present an attachable\nDynamic Model Update (DMU) module designed for existing ER methods, which\nenables the selection of relevant images for model training, addressing\nchallenges arising from data repetition and imbalanced sample occurrences\ninherent in realistic food consumption patterns within the OCIL framework. Our\nperformance evaluation demonstrates significant enhancements compared to\nestablished ER methods, showing great potential for lifelong learning in\nreal-world food image classification scenarios. The code of our method is\npublicly accessible at\nhttps://gitlab.com/viper-purdue/OCIL-real-world-food-image-classification"
+}

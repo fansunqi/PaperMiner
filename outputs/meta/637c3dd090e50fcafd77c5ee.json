@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Point Cloud Compression"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Window-constrained multi-group coding strategy",
+    "Dual transformer architecture",
+    "Random-masking pre-train method"
+  ],
+  "results": [
+    "State-of-the-art performance for both lossy and lossless point cloud compression",
+    "98% decoding time savings compared with previous octree-based compression method"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c5ee",
+  "title": "ECM-OPCC: Efficient Context Model for Octree-based Point Cloud\n  Compression",
+  "abstract": "  Recently, deep learning methods have shown promising results in point cloud compression. For octree-based point cloud compression, previous works show that the information of ancestor nodes and sibling nodes are equally important for predicting current node. However, those works either adopt insufficient context or bring intolerable decoding complexity (e.g. >600s). To address this problem, we propose a sufficient yet efficient context model and design an efficient deep learning codec for point clouds. Specifically, we first propose a window-constrained multi-group coding strategy to exploit the autoregressive context while maintaining decoding efficiency. Then, we propose a dual transformer architecture to utilize the dependency of current node on its ancestors and siblings. We also propose a random-masking pre-train method to enhance our model. Experimental results show that our approach achieves state-of-the-art performance for both lossy and lossless point cloud compression. Moreover, our multi-group coding strategy saves 98% decoding time compared with previous octree-based compression method. "
+}

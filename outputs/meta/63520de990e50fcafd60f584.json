@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "https://github.com/LightnessOfBeing/MixMask"
+  ],
+  "tasks": [
+    "Masked Image Modeling",
+    "Siamese Networks",
+    "Object Detection",
+    "Segmentation"
+  ],
+  "datasets": [
+    "CIFAR-100",
+    "Tiny-ImageNet",
+    "ImageNet-1K"
+  ],
+  "methods": [
+    "MixMask",
+    "Flexible loss function design"
+  ],
+  "results": [
+    "Superior accuracy on linear probing, semi-supervised, and supervised finetuning",
+    "Outperforms state-of-the-art MSCN",
+    "Superior performance in object detection and segmentation"
+  ],
+  "paper_id": "63520de990e50fcafd60f584",
+  "title": "MixMask: Revisiting Masking Strategy for Siamese ConvNets",
+  "abstract": "  Recent advances in self-supervised learning have integrated Masked Image Modeling (MIM) and Siamese Networks into a unified framework that leverages the benefits of both techniques. However, several issues remain unaddressed when applying conventional erase-based masking with Siamese ConvNets. These include (I) the inability to drop uninformative masked regions in ConvNets as they process data continuously, resulting in low training efficiency compared to ViT models; and (II) the mismatch between erase-based masking and the contrastive-based objective in Siamese ConvNets, which differs from the MIM approach. In this paper, we propose a filling-based masking strategy called MixMask to prevent information incompleteness caused by the randomly erased regions in an image in the vanilla masking method. Furthermore, we introduce a flexible loss function design that considers the semantic distance change between two different mixed views to adapt the integrated architecture and prevent mismatches between the transformed input and objective in Masked Siamese ConvNets (MSCN). We conducted extensive experiments on various datasets, including CIFAR-100, Tiny-ImageNet, and ImageNet-1K. The results demonstrate that our proposed framework achieves superior accuracy on linear probing, semi-supervised, and supervised finetuning, outperforming the state-of-the-art MSCN by a significant margin. Additionally, we demonstrate the superiority of our approach in object detection and segmentation tasks. Our source code is available at https://github.com/LightnessOfBeing/MixMask. "
+}

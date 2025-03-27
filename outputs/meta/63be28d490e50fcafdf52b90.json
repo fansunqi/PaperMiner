@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Tensor Denoising"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Tensor Amplification",
+    "Stable Slice Rank",
+    "Stable X-rank"
+  ],
+  "results": [
+    "Tensor-based amplification provides comparable denoising performance in high SNR settings",
+    "Stable X-rank method achieves superior denoising performance on physiological signal data"
+  ],
+  "paper_id": "63be28d490e50fcafdf52b90",
+  "title": "Tensor Denoising via Amplification and Stable Rank Methods",
+  "abstract": "  Tensors in the form of multilinear arrays are ubiquitous in data science applications. Captured real-world data, including video, hyperspectral images, and discretized physical systems, naturally occur as tensors and often come with attendant noise. Under the additive noise model and with the assumption that the underlying clean tensor has low rank, many denoising methods have been created that utilize tensor decomposition to effect denoising through low rank tensor approximation. However, all such decomposition methods require estimating the tensor rank, or related measures such as the tensor spectral and nuclear norms, all of which are NP-hard problems.   In this work we leverage our previously developed framework of $\\textit{tensor amplification}$, which provides good approximations of the spectral and nuclear tensor norms, to denoising synthetic tensors of various sizes, ranks, and noise levels, along with real-world tensors derived from physiological signals. We also introduce two new notions of tensor rank -- $\\textit{stable slice rank}$ and $\\textit{stable }$$X$$\\textit{-rank}$ -- and new denoising methods based on their estimation. The experimental results show that in the low rank context, tensor-based amplification provides comparable denoising performance in high signal-to-noise ratio (SNR) settings and superior performance in noisy (i.e., low SNR) settings, while the stable $X$-rank method achieves superior denoising performance on the physiological signal data. "
+}

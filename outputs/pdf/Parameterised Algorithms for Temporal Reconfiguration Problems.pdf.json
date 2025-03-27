@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parameterized algorithms for temporal reconfiguration problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fixed-parameter tractable algorithms",
+    "Temporal graphs",
+    "Token sliding model",
+    "Circulation problem",
+    "Tree decompositions",
+    "Monadic second order logic"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Parameterised Algorithms for Temporal Reconfiguration Problems.pdf",
+  "abstract": "Given a static vertex-selection problem (e.g. independent set, dominating set) on a graph, we can define a corresponding temporal reconfiguration problem on a temporal graph which asks for a sequence of solutions to the vertex-selection problem at each time such that we can reconfigure from one solution to the next. We can think of each solution in the sequence as a set of vertices with tokens placed on them; our reconfiguration model allows us to slide tokens along active edges of a temporal graph. We show that it is possible to efficiently check whether one solution can be reconfigured to an- other, and show that approximation results on the static vertex-selection problem can be adapted with a lifetime factor to the reconfiguration version. Our main contributions are fixed-parameter tractable algorithms with respect to: enumeration time of the related static problem; the combina- tion of temporal neighbourhood diversity and lifetime of the input graph; and the combination of lifetime and treewidth of the footprint graph. 2012 ACM Subject Classification Mathematics of computing \u2192Graph algorithms; Theory of com- putation \u2192Parameterized complexity and exact algorithms Keywords and phrases parameterised algorithms, temporal graphs, reconfiguration Funding Tom Davot: Supported by EPSRC grant EP/T004878/1. Work completed at University of Glasgow. Jessica Enright: Supported by EPSRC grant EP/T004878/1. Acknowledgements For the purpose of open access, the author(s) has applied a Creative Com- mons Attribution (CC BY) licence to any Author Accepted Manuscript version arising from this submission. 1 Introduction In many classical graph problems in static settings, the aim is to select a subset of vertices respecting some specified property, while minimizing or maximizing the number of selected vertices (e.g. maximum independent set, minimum dominating set, maximum clique). Re- cently, reconfiguration versions of classical vertex-selection problems have been studied in static graphs, where the goal is typically to determine whether one valid solution can be transformed into another through a sequence of small modifications [10,28]. Formally, reconfiguration versions of vertex-selection problems in static graphs can be defined as follows. Let \u03a0 be a vertex-selection problem such as Independent Set or Dominating Set. Reconfiguration problems in static graphs are often defined with a starting and end solution S and T respectively. The aim is to determine if there is a sequence of vertex sets starting with S and ending with T such that each is a solution for \u03a0 and consecutive sets are adjacent in the space of solutions. The definition of solution adjacency varies according to model. In the token sliding model, a solution can be seen arXiv:2502.11961v1 [cs.DS] 17 Feb 2025"
+}

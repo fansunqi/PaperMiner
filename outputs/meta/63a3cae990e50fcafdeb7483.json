@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Indoor human presence detection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Bifold Teacher-Student (BTS) learning approach",
+    "primal-dual teacher-student network",
+    "enhanced penalized loss function"
+  ],
+  "results": [
+    "Asymptotic accuracy after retraining with unlabeled data",
+    "Label-free BTS outperforms existing SSL-based models in detection accuracy"
+  ],
+  "paper_id": "63a3cae990e50fcafdeb7483",
+  "title": "BTS: Bifold Teacher-Student in Semi-Supervised Learning for Indoor\n  Two-Room Presence Detection Under Time-Varying CSI",
+  "abstract": "  In recent years, indoor human presence detection based on supervised learning (SL) and channel state information (CSI) has attracted much attention. However, the existing studies that rely on spatial information of CSI are susceptible to environmental changes, such as object movement, atmospheric factors, and machine rebooting, which degrade prediction accuracy. Moreover, SL-based methods require time-consuming labeling for retraining models. Therefore, it is imperative to design a continuously monitored model life-cycle using a semi-supervised learning (SSL) based scheme. In this paper, we conceive a bifold teacher-student (BTS) learning approach for presence detection systems that combines SSL by utilizing partially labeled and unlabeled datasets. The proposed primal-dual teacher-student network intelligently learns spatial and temporal features from labeled and unlabeled CSI. Additionally, the enhanced penalized loss function leverages entropy and distance measures to distinguish drifted data, i.e., features of new datasets affected by time-varying effects and altered from the original distribution. The experimental results demonstrate that the proposed BTS system sustains asymptotic accuracy after retraining the model with unlabeled data. Furthermore, the label-free BTS outperforms existing SSL-based models in terms of the highest detection accuracy while achieving the asymptotic performance of SL-based methods. "
+}

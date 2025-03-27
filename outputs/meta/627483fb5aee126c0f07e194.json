@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Recipe Editing"
+  ],
+  "datasets": [
+    "Recipe1M"
+  ],
+  "methods": [
+    "Hierarchical denoising auto-encoder",
+    "Unsupervised critiquing module"
+  ],
+  "results": [
+    "More effective recipe editing",
+    "Recipes satisfying user constraints",
+    "Recipes more correct, serendipitous, coherent, and relevant"
+  ],
+  "paper_id": "627483fb5aee126c0f07e194",
+  "title": "Assistive Recipe Editing through Critiquing",
+  "abstract": "  There has recently been growing interest in the automatic generation of cooking recipes that satisfy some form of dietary restrictions, thanks in part to the availability of online recipe data. Prior studies have used pre-trained language models, or relied on small paired recipe data (e.g., a recipe paired with a similar one that satisfies a dietary constraint). However, pre-trained language models generate inconsistent or incoherent recipes, and paired datasets are not available at scale. We address these deficiencies with RecipeCrit, a hierarchical denoising auto-encoder that edits recipes given ingredient-level critiques. The model is trained for recipe completion to learn semantic relationships within recipes. Our work's main innovation is our unsupervised critiquing module that allows users to edit recipes by interacting with the predicted ingredients; the system iteratively rewrites recipes to satisfy users' feedback. Experiments on the Recipe1M recipe dataset show that our model can more effectively edit recipes compared to strong language-modeling baselines, creating recipes that satisfy user constraints and are more correct, serendipitous, coherent, and relevant as measured by human judges. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-world Image Super-Resolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dynamic Channel Splitting scheme",
+    "light degradation prediction network",
+    "learnable octave convolution block",
+    "Non-local regularization"
+  ],
+  "results": [
+    "Best trade-off between computation/parameter and PSNR/SSIM metric",
+    "Effective handling of real-world images with different degradation levels"
+  ],
+  "paper_id": "639be1d090e50fcafd578b16",
+  "title": "DCS-RISR: Dynamic Channel Splitting for Efficient Real-world Image\n  Super-Resolution",
+  "abstract": "  Real-world image super-resolution (RISR) has received increased focus for improving the quality of SR images under unknown complex degradation. Existing methods rely on the heavy SR models to enhance low-resolution (LR) images of different degradation levels, which significantly restricts their practical deployments on resource-limited devices. In this paper, we propose a novel Dynamic Channel Splitting scheme for efficient Real-world Image Super-Resolution, termed DCS-RISR. Specifically, we first introduce the light degradation prediction network to regress the degradation vector to simulate the real-world degradations, upon which the channel splitting vector is generated as the input for an efficient SR model. Then, a learnable octave convolution block is proposed to adaptively decide the channel splitting scale for low- and high-frequency features at each block, reducing computation overhead and memory cost by offering the large scale to low-frequency features and the small scale to the high ones. To further improve the RISR performance, Non-local regularization is employed to supplement the knowledge of patches from LR and HR subspace with free-computation inference. Extensive experiments demonstrate the effectiveness of DCS-RISR on different benchmark datasets. Our DCS-RISR not only achieves the best trade-off between computation/parameter and PSNR/SSIM metric, and also effectively handles real-world images with different degradation levels. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient neural network backbone for edge applications"
+  ],
+  "datasets": [
+    "ImageNet"
+  ],
+  "methods": [
+    "Double-Condensing Attention Condensers",
+    "AttendNeXt backbone architecture"
+  ],
+  "results": [
+    ">10x faster than FB-Net C at higher accuracy and speed",
+    ">10x faster than MobileOne-S1 at smaller size",
+    ">1.37x smaller than MobileNetv3-L at higher accuracy and speed",
+    "1.1% higher top-1 accuracy than MobileViT XS on ImageNet at higher speed"
+  ],
+  "paper_id": "62fb0af090e50fcafd5fa81e",
+  "title": "Faster Attention Is What You Need: A Fast Self-Attention Neural Network\n  Backbone Architecture for the Edge via Double-Condensing Attention Condensers",
+  "abstract": "  With the growing adoption of deep learning for on-device TinyML applications, there has been an ever-increasing demand for efficient neural network backbones optimized for the edge. Recently, the introduction of attention condenser networks have resulted in low-footprint, highly-efficient, self-attention neural networks that strike a strong balance between accuracy and speed. In this study, we introduce a faster attention condenser design called double-condensing attention condensers that allow for highly condensed feature embeddings. We further employ a machine-driven design exploration strategy that imposes design constraints based on best practices for greater efficiency and robustness to produce the macro-micro architecture constructs of the backbone. The resulting backbone (which we name AttendNeXt) achieves significantly higher inference throughput on an embedded ARM processor when compared to several other state-of-the-art efficient backbones (>10x faster than FB-Net C at higher accuracy and speed and >10x faster than MobileOne-S1 at smaller size) while having a small model size (>1.37x smaller than MobileNetv3-L at higher accuracy and speed) and strong accuracy (1.1% higher top-1 accuracy than MobileViT XS on ImageNet at higher speed). These promising results demonstrate that exploring different efficient architecture designs and self-attention mechanisms can lead to interesting new building blocks for TinyML applications. "
+}

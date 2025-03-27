@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Nighttime driving-scene segmentation"
+  ],
+  "datasets": [
+    "ACDC_Night",
+    "NightCity",
+    "Dark Zurich",
+    "Nighttime Driving testbeds"
+  ],
+  "methods": [
+    "Dual image-adaptive learnable filters (DIAL-Filters)",
+    "Image-adaptive processing module (IAPM)",
+    "Learnable guided filter (LGF)"
+  ],
+  "results": [
+    "Significant improvement in supervised segmentation performance on ACDC_Night and NightCity datasets",
+    "State-of-the-art performance on unsupervised nighttime semantic segmentation on Dark Zurich and Nighttime Driving testbeds"
+  ],
+  "paper_id": "62c3abc75aee126c0fc9a8b7",
+  "title": "Improving Nighttime Driving-Scene Segmentation via Dual Image-adaptive\n  Learnable Filters",
+  "abstract": "  Semantic segmentation on driving-scene images is vital for autonomous driving. Although encouraging performance has been achieved on daytime images, the performance on nighttime images are less satisfactory due to the insufficient exposure and the lack of labeled data. To address these issues, we present an add-on module called dual image-adaptive learnable filters (DIAL-Filters) to improve the semantic segmentation in nighttime driving conditions, aiming at exploiting the intrinsic features of driving-scene images under different illuminations. DIAL-Filters consist of two parts, including an image-adaptive processing module (IAPM) and a learnable guided filter (LGF). With DIAL-Filters, we design both unsupervised and supervised frameworks for nighttime driving-scene segmentation, which can be trained in an end-to-end manner. Specifically, the IAPM module consists of a small convolutional neural network with a set of differentiable image filters, where each image can be adaptively enhanced for better segmentation with respect to the different illuminations. The LGF is employed to enhance the output of segmentation network to get the final segmentation result. The DIAL-Filters are light-weight and efficient and they can be readily applied for both daytime and nighttime images. Our experiments show that DAIL-Filters can significantly improve the supervised segmentation performance on ACDC_Night and NightCity datasets, while it demonstrates the state-of-the-art performance on unsupervised nighttime semantic segmentation on Dark Zurich and Nighttime Driving testbeds. "
+}

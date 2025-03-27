@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Certifiable 3D Object Pose Estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "C-3PO",
+    "certificates of observable correctness",
+    "certificates of non-degeneracy",
+    "keypoint corrector",
+    "self-supervised training"
+  ],
+  "results": [
+    "C-3PO outperforms all baselines",
+    "Certificates able to discern correct pose estimates"
+  ],
+  "paper_id": "62b3da1f5aee126c0fb1ba28",
+  "title": "Certifiable 3D Object Pose Estimation: Foundations, Learning Models, and\n  Self-Training",
+  "abstract": "  We consider a certifiable object pose estimation problem, where -- given a partial point cloud of an object -- the goal is to not only estimate the object pose, but also to provide a certificate of correctness for the resulting estimate. Our first contribution is a general theory of certification for end-to-end perception models. In particular, we introduce the notion of $\\zeta$-correctness, which bounds the distance between an estimate and the ground truth. We show that $\\zeta$-correctness can be assessed by implementing two certificates: (i) a certificate of observable correctness, that asserts if the model output is consistent with the input data and prior information, (ii) a certificate of non-degeneracy, that asserts whether the input data is sufficient to compute a unique estimate. Our second contribution is to apply this theory and design a new learning-based certifiable pose estimator. We propose C-3PO, a semantic-keypoint-based pose estimation model, augmented with the two certificates, to solve the certifiable pose estimation problem. C-3PO also includes a keypoint corrector, implemented as a differentiable optimization layer, that can correct large detection errors (e.g. due to the sim-to-real gap). Our third contribution is a novel self-supervised training approach that uses our certificate of observable correctness to provide the supervisory signal to C-3PO during training. In it, the model trains only on the observably correct input-output pairs, in each training iteration. As training progresses, we see that the observably correct input-output pairs grow, eventually reaching near 100% in many cases. Our experiments show that (i) standard semantic-keypoint-based methods outperform more recent alternatives, (ii) C-3PO further improves performance and significantly outperforms all the baselines, and (iii) C-3PO's certificates are able to discern correct pose estimates. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Singularly Perturbed Convection-Diffusion-Reaction Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Curriculum Learning",
+    "Physics-Informed Neural Networks (PINNs)"
+  ],
+  "results": [
+    "Mitigates the failure modes of PINNs",
+    "Can produce accurate results for very sharp boundary and interior layers"
+  ],
+  "paper_id": "635753cc90e50fcafddddd43",
+  "title": "Less Emphasis on Difficult Layer Regions: Curriculum Learning for\n  Singularly Perturbed Convection-Diffusion-Reaction Problems",
+  "abstract": "  Although Physics-Informed Neural Networks (PINNs) have been successfully applied in a wide variety of science and engineering fields, they can fail to accurately predict the underlying solution in slightly challenging convection-diffusion-reaction problems. In this paper, we investigate the reason of this failure from a domain distribution perspective, and identify that learning multi-scale fields simultaneously makes the network unable to advance its training and easily get stuck in poor local minima. We show that the widespread experience of sampling more collocation points in high-loss layer regions hardly help optimize and may even worsen the results. These findings motivate the development of a novel curriculum learning method that encourages neural networks to prioritize learning on easier non-layer regions while downplaying learning on harder layer regions. The proposed method helps PINNs automatically adjust the learning emphasis and thereby facilitate the optimization procedure. Numerical results on typical benchmark equations show that the proposed curriculum learning approach mitigates the failure modes of PINNs and can produce accurate results for very sharp boundary and interior layers. Our work reveals that for equations whose solutions have large scale differences, paying less attention to high-loss regions can be an effective strategy for learning them accurately. "
+}

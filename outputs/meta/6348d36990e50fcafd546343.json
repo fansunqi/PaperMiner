@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://metadriverse.github.io/trafficgen"
+  ],
+  "tasks": [
+    "Autonomous driving system evaluation",
+    "Traffic scenario generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Autoregressive generative model",
+    "Encoder-decoder architecture",
+    "Attention mechanism"
+  ],
+  "results": [
+    "Substantial improvements over baselines",
+    "Improves performance and safety of driving policy"
+  ],
+  "paper_id": "6348d36990e50fcafd546343",
+  "title": "TrafficGen: Learning to Generate Diverse and Realistic Traffic Scenarios",
+  "abstract": "  Diverse and realistic traffic scenarios are crucial for evaluating the AI safety of autonomous driving systems in simulation. This work introduces a data-driven method called TrafficGen for traffic scenario generation. It learns from the fragmented human driving data collected in the real world and then can generate realistic traffic scenarios. TrafficGen is an autoregressive generative model with an encoder-decoder architecture. In each autoregressive iteration, it first encodes the current traffic context with the attention mechanism and then decodes a vehicle's initial state followed by generating its long trajectory. We evaluate the trained model in terms of vehicle placement and trajectories and show substantial improvements over baselines. TrafficGen can be also used to augment existing traffic scenarios, by adding new vehicles and extending the fragmented trajectories. We further demonstrate that importing the generated scenarios into a simulator as interactive training environments improves the performance and the safety of driving policy learned from reinforcement learning. More project resource is available at https://metadriverse.github.io/trafficgen "
+}

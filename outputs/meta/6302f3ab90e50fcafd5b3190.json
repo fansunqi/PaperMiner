@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sign Language Production (SLP)",
+    "Text-to-Sign Pose Sequences Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Vector Quantized Diffusion Model",
+    "CodeUnet",
+    "Sequential k-nearest-neighbours method"
+  ],
+  "results": [
+    "Faster sampling speed",
+    "Significantly better results",
+    "State-of-the-art results on the SLP evaluation benchmark"
+  ],
+  "paper_id": "6302f3ab90e50fcafd5b3190",
+  "title": "Vector Quantized Diffusion Model with CodeUnet for Text-to-Sign Pose\n  Sequences Generation",
+  "abstract": "  Sign Language Production (SLP) aims to translate spoken languages into sign sequences automatically. The core process of SLP is to transform sign gloss sequences into their corresponding sign pose sequences (G2P). Most existing G2P models usually perform this conditional long-range generation in an autoregressive manner, which inevitably leads to an accumulation of errors. To address this issue, we propose a vector quantized diffusion method for conditional pose sequences generation, called PoseVQ-Diffusion, which is an iterative non-autoregressive method. Specifically, we first introduce a vector quantized variational autoencoder (Pose-VQVAE) model to represent a pose sequence as a sequence of latent codes. Then we model the latent discrete space by an extension of the recently developed diffusion architecture. To better leverage the spatial-temporal information, we introduce a novel architecture, namely CodeUnet, to generate higher quality pose sequence in the discrete space. Moreover, taking advantage of the learned codes, we develop a novel sequential k-nearest-neighbours method to predict the variable lengths of pose sequences for corresponding gloss sequences. Consequently, compared with the autoregressive G2P models, our model has a faster sampling speed and produces significantly better results. Compared with previous non-autoregressive G2P methods, PoseVQ-Diffusion improves the predicted results with iterative refinements, thus achieving state-of-the-art results on the SLP evaluation benchmark. "
+}

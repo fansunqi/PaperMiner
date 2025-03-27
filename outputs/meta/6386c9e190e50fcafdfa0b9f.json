@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Linear elasticity problems in parallel message passing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GFEM$^{gl}$ global-local approach",
+    "MPI (Message Passing Interface)",
+    "specific scheduling strategy",
+    "reference solution",
+    "matrix-based implementation"
+  ],
+  "results": [
+    "Comparison of scalability and elapsed time with other parallel solvers",
+    "Numerical examples on linear elastic problems"
+  ],
+  "paper_id": "6386c9e190e50fcafdfa0b9f",
+  "title": "A two-scale solver for linear elasticity problems in the context of\n  parallel message passing",
+  "abstract": "  This paper pushes further the intrinsic capabilities of the GFEM$^{gl}$ global-local approach introduced initially in [1]. We develop a distributed computing approach using MPI (Message Passing Interface) both for the global and local problems. Regarding local problems, a specific scheduling strategy is introduced. Then, to measure correctly the convergence of the iterative process, we introduce a reference solution that revisits the product of classical and enriched functions. As a consequence, we are able to propose a purely matrix-based implementation of the global-local problem. The distributed approach is then compared to other parallel solvers either direct or iterative with domain decomposition. The comparison addresses the scalability as well as the elapsed time. Numerical examples deal with linear elastic problems: a polynomial exact solution problem, a complex micro-structure, and, finally, a pull-out test (with different crack extent).   1: C. A. Duarte, D.-J. Kim, and I. Babu\\v{s}ka. A global-local approach for the construction of enrichment functions for the generalized fem and its application to three-dimensional cracks. In Advances in Meshfree Techniques, Dordrecht, 2007. Springer "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-adjusting networks",
+    "Network topology adaptation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ladder demand graph",
+    "Online self-adjusting network",
+    "Oracle-based algorithm"
+  ],
+  "results": [
+    "$12$-competitive in terms of request cost",
+    "Asymptotically optimal algorithm for cycle demand graph",
+    "Constant overhead for arbitrary demand graph"
+  ],
+  "paper_id": "62cb94af5aee126c0ff81b82",
+  "title": "Self-Adjusting Linear Networks with Ladder Demand Graph",
+  "abstract": "  Self-adjusting networks (SANs) have the ability to adapt to communication demand by dynamically adjusting the workload (or demand) embedding, i.e., the mapping of communication requests into the network topology. SANs can thus reduce routing costs for frequently communicating node pairs by paying a cost for adjusting the embedding. This is particularly beneficial when the demand has structure, which the network can adapt to. Demand can be represented in the form of a demand graph, which is defined by the set of network nodes (vertices) and the set of pairwise communication requests (edges). Thus, adapting to the demand can be interpreted by embedding the demand graph to the network topology. This can be challenging both when the demand graph is known in advance (offline) and when it revealed edge-by-edge (online). The difficulty also depends on whether we aim at constructing a static topology or a dynamic (self-adjusting) one that improves the embedding as more parts of the demand graph are revealed. Yet very little is known about these self-adjusting embeddings.   In this paper, the network topology is restricted to a line and the demand graph to a ladder graph, i.e., a $2^n$ grid, including all possible subgraphs of the ladder. We present an online self-adjusting network that matches the known lower bound asymptotically and is $12$-competitive in terms of request cost. As a warm up result, we present an asymptotically optimal algorithm for the cycle demand graph. We also present an oracle-based algorithm for an arbitrary demand graph that has a constant overhead. "
+}

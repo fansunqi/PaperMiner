@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/"
+  ],
+  "tasks": [
+    "Automatic bounding of Taylor remainder series",
+    "Majorization-minimization optimization algorithms",
+    "Verified global optimization",
+    "Numerical integration",
+    "Proving sharper versions of Jensen's inequality"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Interval arithmetic variant of Taylor-mode automatic differentiation",
+    "Machine learning hardware accelerators",
+    "Open source implementation in JAX"
+  ],
+  "results": [
+    "Efficient use of machine learning hardware accelerators",
+    "Hyperparameter-free optimizers outperform tuned versions of gradient descent, Adam, and AdaGrad",
+    "Automatically-derived bounds for verified global optimization and numerical integration",
+    "Sharper versions of Jensen's inequality"
+  ],
+  "paper_id": "63a51c5c90e50fcafde93b01",
+  "title": "Automatically Bounding the Taylor Remainder Series: Tighter Bounds and\n  New Applications",
+  "abstract": "  We present a new algorithm for automatically bounding the Taylor remainder series. In the special case of a scalar function $f: \\mathbb{R} \\to \\mathbb{R}$, our algorithm takes as input a reference point $x_0$, trust region $[a, b]$, and integer $k \\ge 1$, and returns an interval $I$ such that $f(x) - \\sum_{i=0}^{k-1} \\frac {1} {i!} f^{(i)}(x_0) (x - x_0)^i \\in I (x - x_0)^k$ for all $x \\in [a, b]$. As in automatic differentiation, the function $f$ is provided to the algorithm in symbolic form, and must be composed of known atomic functions.   At a high level, our algorithm has two steps. First, for a variety of commonly-used elementary functions (e.g., $\\exp$, $\\log$), we derive sharp polynomial upper and lower bounds on the Taylor remainder series. We then recursively combine the bounds for the elementary functions using an interval arithmetic variant of Taylor-mode automatic differentiation. Our algorithm can make efficient use of machine learning hardware accelerators, and we provide an open source implementation in JAX.   We then turn our attention to applications. Most notably, we use our new machinery to create the first universal majorization-minimization optimization algorithms: algorithms that iteratively minimize an arbitrary loss using a majorizer that is derived automatically, rather than by hand. Applied to machine learning, this leads to architecture-specific optimizers for training deep networks that converge from any starting point, without hyperparameter tuning. Our experiments show that for some optimization problems, these hyperparameter-free optimizers outperform tuned versions of gradient descent, Adam, and AdaGrad. We also show that our automatically-derived bounds can be used for verified global optimization and numerical integration, and to prove sharper versions of Jensen's inequality. "
+}

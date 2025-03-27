@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Curvilinear structure segmentation"
+  ],
+  "datasets": [
+    "Multi-class ultrasound scan segmentation dataset",
+    "Retinal imaging dataset"
+  ],
+  "methods": [
+    "DTU-Net",
+    "Two sequential, lightweight U-Nets",
+    "Triplet loss"
+  ],
+  "results": [
+    "Outperforms existing approaches in pixel-wise segmentation accuracy",
+    "Outperforms existing approaches in topological continuity"
+  ],
+  "paper_id": "628c4ce15aee126c0ff59aef",
+  "title": "DTU-Net: Learning Topological Similarity for Curvilinear Structure\n  Segmentation",
+  "abstract": "  Curvilinear structure segmentation is important in medical imaging, quantifying structures such as vessels, airways, neurons, or organ boundaries in 2D slices. Segmentation via pixel-wise classification often fails to capture the small and low-contrast curvilinear structures. Prior topological information is typically used to address this problem, often at an expensive computational cost, and sometimes requiring prior knowledge of the expected topology.   We present DTU-Net, a data-driven approach to topology-preserving curvilinear structure segmentation. DTU-Net consists of two sequential, lightweight U-Nets, dedicated to texture and topology, respectively. While the texture net makes a coarse prediction using image texture information, the topology net learns topological information from the coarse prediction by employing a triplet loss trained to recognize false and missed splits in the structure. We conduct experiments on a challenging multi-class ultrasound scan segmentation dataset as well as a well-known retinal imaging dataset. Results show that our model outperforms existing approaches in both pixel-wise segmentation accuracy and topological continuity, with no need for prior topological knowledge. "
+}

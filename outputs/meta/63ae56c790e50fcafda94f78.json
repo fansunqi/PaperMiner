@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous agent task solving"
+  ],
+  "datasets": [
+    "BASALT MineRL-dataset"
+  ],
+  "methods": [
+    "Imitation learning",
+    "Proximity search in Video PreTraining latent space"
+  ],
+  "results": [
+    "Recovered meaningful demonstration trajectories",
+    "Showed human-like behavior in Minecraft environment"
+  ],
+  "paper_id": "63ae56c790e50fcafda94f78",
+  "title": "Behavioral Cloning via Search in Video PreTraining Latent Space",
+  "abstract": "  Our aim is to build autonomous agents that can solve tasks in environments like Minecraft. To do so, we used an imitation learning-based approach. We formulate our control problem as a search problem over a dataset of experts' demonstrations, where the agent copies actions from a similar demonstration trajectory of image-action pairs. We perform a proximity search over the BASALT MineRL-dataset in the latent representation of a Video PreTraining model. The agent copies the actions from the expert trajectory as long as the distance between the state representations of the agent and the selected expert trajectory from the dataset do not diverge. Then the proximity search is repeated. Our approach can effectively recover meaningful demonstration trajectories and show human-like behavior of an agent in the Minecraft environment. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visualization Code Generation"
+  ],
+  "datasets": [
+    "MatPlotBench",
+    "Qwen-Agent Code Interpreter Benchmark"
+  ],
+  "methods": [
+    "Multi-Path Reasoning",
+    "Feedback-Driven Optimization",
+    "Chain-of-Thought (CoT) Prompting",
+    "Vision-Language Model (VLM) Feedback"
+  ],
+  "results": [
+    "Average improvement of 17% over SOTA methods",
+    "Increased accuracy and robustness against underspecified queries",
+    "Enhanced adaptability to diverse user intents"
+  ],
+  "title": "VisPath Automated Visualization Code Synthesis Via Multi-Path Reasoning and Feedback-Driven Optimiza.pdf",
+  "abstract": "Unprecedented breakthroughs in Large Lan- guage Models (LLMs) has amplified its pen- etration into application of automated visual- ization code generation. Few-shot prompting and query expansion techniques have notably enhanced data visualization performance, how- ever, still fail to overcome ambiguity and com- plexity of natural language queries - imposing an inherent burden for manual human interven- tion. To mitigate such limitations, we propose a holistic framework VisPath : A Multi-Path Reasoning and Feedback-Driven Optimization Framework for Visualization Code Genera- tion, which systematically enhances code qual- ity through structured reasoning and refinement. VisPath is a multi-stage framework, specially designed to handle underspecified queries. To generate a robust final visualization code, it first utilizes initial query to generate diverse refor- mulated queries via Chain-of-Thought (CoT) prompting, each representing a distinct reason- ing path. Refined queries are used to produce candidate visualization scripts, consequently executed to generate multiple images. Com- prehensively assessing correctness and qual- ity of outputs, VisPath generates feedback for each image, which are then fed to aggregation module to generate optimal result. Extensive experiments on benchmarks including MatPlot- Bench and the Qwen-Agent Code Interpreter Benchmark show that VisPath significantly out- performs state-of-the-art (SOTA) methods, in- creased up to average 17%, offering a more re- liable solution for AI-driven visualization code generation. 1 Introduction Data visualization has long been an essential tool in data analysis and scientific research, enabling users to uncover patterns and relationships in com- plex datasets (Vondrick et al., 2013; Demiralp *Equal contribution. \u2020Corresponding author. Figure 1: Overview of different approaches for visu- alization code generation. Comparing two baseline methods, namely Chat2VIS (Maddigan and Susnjak, 2023) and MatPlotAgent (Yang et al., 2024), with our proposed VisPath framework. et al., 2017; Unwin, 2020; Li et al., 2024a). Tra- ditionally, creating visualizations requires manu- ally writing code using libraries such as Matplotlib, Seaborn, or D3.js (Barrett et al., 2005; Bisong and Bisong, 2019; Zhu, 2013). This approach demands programming expertise and significant effort to craft effective visual representations, which can be a barrier for many users (Bresciani and Eppler, 2015; Saket et al., 2018; Sharif et al., 2024). As datasets continue to grow in size and complexity, researchers have explored ways to automate visu- alization generation, aiming to make the process more efficient and accessible (Wang et al., 2015; Dibia and Demiralp, 2019; Qian et al., 2021). In response to this challenge, Large Language Models (LLMs) have emerged as a promising solu- tion for simplifying visualization creation (Wang et al., 2023a; Han et al., 2023; Xie et al., 2024). By translating natural language instructions into executable code, LLM-based systems eliminate 1 arXiv:2502.11140v1 [cs.SE] 16 Feb 2025"
+}

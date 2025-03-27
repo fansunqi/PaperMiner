@@ -1,0 +1,21 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Multi-Agent Reinforcement Learning",
+    "Offline Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fitted Q-Iteration (FQI)",
+    "SCAlable Multi-agent FQI (SCAM-FQI)",
+    "Information-sharing Graph"
+  ],
+  "results": [
+    "Convergence to \u03f5-optimal policies",
+    "Balanced between scalability and policy performance"
+  ],
+  "title": "Scalable Multi-Agent Offline Reinforcement Learning and the Role of Information.pdf",
+  "abstract": "Offline Reinforcement Learning (RL) focuses on learning policies solely from a batch of previously collected data. of- fering the potential to leverage such datasets effectively without the need for costly or risky active exploration. While recent advances in Offline Multi-Agent RL (MARL) have shown promise, most existing methods either rely on large datasets jointly collected by all agents or agent-specific datasets collected independently. The former approach ensures strong performance but raises scalability concerns, while the latter emphasizes scalability at the expense of performance guarantees. In this work, we propose a novel scalable routine for both dataset collection and offline learning. Agents first collect diverse datasets coherently with a pre-specified information-sharing network and subsequently learn coherent lo- calized policies without requiring either full observability or falling back to complete decentralization. We theoretically demonstrate that this structured approach allows a multi-agent extension of the seminal Fitted Q-Iteration (FQI) algo- rithm [7] to globally converge, in high probability, to \u03f5-optimal policies. The convergence is subject to error terms that depend on the informativeness of the shared information. Furthermore, we show how this approach allows to bound the inherent error of the supervised-learning phase of FQI with the mutual information between shared and unshared information. Our algorithm, SCAlable Multi-agent FQI (SCAM-FQI), is then evaluated on a distributed decision-making problem. The empirical results align with our theoretical findings, supporting the effectiveness of SCAM-FQI in achiev- ing a balance between scalability and policy performance. Keywords: Scalable Multi-Agent Reinforcement Learning, Offline Reinforce- ment Learning, Fitted Q-Iteration arXiv:2502.11260v1 [cs.LG] 16 Feb 2025"
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://yanjieze.com/3d4rl/"
+  ],
+  "tasks": [
+    "Visual Reinforcement Learning",
+    "Motor control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Self-supervised 3D representation learning",
+    "Deep voxel-based 3D autoencoder",
+    "Pretraining phase",
+    "Finetuning phase"
+  ],
+  "results": [
+    "Improved sample efficiency in simulated manipulation tasks",
+    "Zero-shot transfer to real robot setup",
+    "Solve motor control tasks with grasping and lifting from a single RGB camera"
+  ],
+  "paper_id": "6348d36d90e50fcafd5469b3",
+  "title": "Visual Reinforcement Learning with Self-Supervised 3D Representations",
+  "abstract": "  A prominent approach to visual Reinforcement Learning (RL) is to learn an internal state representation using self-supervised methods, which has the potential benefit of improved sample-efficiency and generalization through additional learning signal and inductive biases. However, while the real world is inherently 3D, prior efforts have largely been focused on leveraging 2D computer vision techniques as auxiliary self-supervision. In this work, we present a unified framework for self-supervised learning of 3D representations for motor control. Our proposed framework consists of two phases: a pretraining phase where a deep voxel-based 3D autoencoder is pretrained on a large object-centric dataset, and a finetuning phase where the representation is jointly finetuned together with RL on in-domain data. We empirically show that our method enjoys improved sample efficiency in simulated manipulation tasks compared to 2D representation learning methods. Additionally, our learned policies transfer zero-shot to a real robot setup with only approximate geometric correspondence, and successfully solve motor control tasks that involve grasping and lifting from a single, uncalibrated RGB camera. Code and videos are available at https://yanjieze.com/3d4rl/ . "
+}

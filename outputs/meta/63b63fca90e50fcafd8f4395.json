@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Driver Assistance"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Safe Reinforcement Learning",
+    "Exponential Control Barrier Function (ECBF)",
+    "Maximum a Posteriori Policy Optimization (MPO)"
+  ],
+  "results": [
+    "Avoids collision during training and evaluation",
+    "Improves fuel economy for the driver assistance system"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f4395",
+  "title": "Safe Reinforcement Learning for an Energy-Efficient Driver Assistance\n  System",
+  "abstract": "  Reinforcement learning (RL)-based driver assistance systems seek to improve fuel consumption via continual improvement of powertrain control actions considering experiential data from the field. However, the need to explore diverse experiences in order to learn optimal policies often limits the application of RL techniques in safety-critical systems like vehicle control. In this paper, an exponential control barrier function (ECBF) is derived and utilized to filter unsafe actions proposed by an RL-based driver assistance system. The RL agent freely explores and optimizes the performance objectives while unsafe actions are projected to the closest actions in the safe domain. The reward is structured so that driver's acceleration requests are met in a manner that boosts fuel economy and doesn't compromise comfort. The optimal gear and traction torque control actions that maximize the cumulative reward are computed via the Maximum a Posteriori Policy Optimization (MPO) algorithm configured for a hybrid action space. The proposed safe-RL scheme is trained and evaluated in car following scenarios where it is shown that it effectively avoids collision both during training and evaluation while delivering on the expected fuel economy improvements for the driver assistance system. "
+}

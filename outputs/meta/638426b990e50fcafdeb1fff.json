@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D Object Detection"
+  ],
+  "datasets": [
+    "KITTI",
+    "nuScenes"
+  ],
+  "methods": [
+    "3D Dual-Fusion",
+    "deformable attention",
+    "transformer fusion encoder",
+    "dual query-based deformable attention",
+    "3D local self-attention"
+  ],
+  "results": [
+    "Competitive performance on KITTI and nuScenes datasets",
+    "State-of-the-art performances in some 3D object detection benchmarks categories"
+  ],
+  "paper_id": "638426b990e50fcafdeb1fff",
+  "title": "3D Dual-Fusion: Dual-Domain Dual-Query Camera-LiDAR Fusion for 3D Object\n  Detection",
+  "abstract": "  Fusing data from cameras and LiDAR sensors is an essential technique to achieve robust 3D object detection. One key challenge in camera-LiDAR fusion involves mitigating the large domain gap between the two sensors in terms of coordinates and data distribution when fusing their features. In this paper, we propose a novel camera-LiDAR fusion architecture called, 3D Dual-Fusion, which is designed to mitigate the gap between the feature representations of camera and LiDAR data. The proposed method fuses the features of the camera-view and 3D voxel-view domain and models their interactions through deformable attention. We redesign the transformer fusion encoder to aggregate the information from the two domains. Two major changes include 1) dual query-based deformable attention to fuse the dual-domain features interactively and 2) 3D local self-attention to encode the voxel-domain queries prior to dual-query decoding. The results of an experimental evaluation show that the proposed camera-LiDAR fusion architecture achieved competitive performance on the KITTI and nuScenes datasets, with state-of-the-art performances in some 3D object detection benchmarks categories. "
+}

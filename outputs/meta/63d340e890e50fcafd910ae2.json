@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backdoor Sample Detection for Language Models"
+  ],
+  "datasets": [
+    "IMDB",
+    "Yelp",
+    "AG news",
+    "SST-2",
+    "Hate-speech"
+  ],
+  "methods": [
+    "Deep model mutation testing"
+  ],
+  "results": [
+    "Our approach can detect backdoor samples more efficiently and accurately than the three state-of-the-art defense approaches"
+  ],
+  "paper_id": "63d340e890e50fcafd910ae2",
+  "title": "BDMMT: Backdoor Sample Detection for Language Models through Model\n  Mutation Testing",
+  "abstract": "  Deep neural networks (DNNs) and natural language processing (NLP) systems have developed rapidly and have been widely used in various real-world fields. However, they have been shown to be vulnerable to backdoor attacks. Specifically, the adversary injects a backdoor into the model during the training phase, so that input samples with backdoor triggers are classified as the target class. Some attacks have achieved high attack success rates on the pre-trained language models (LMs), but there have yet to be effective defense methods. In this work, we propose a defense method based on deep model mutation testing. Our main justification is that backdoor samples are much more robust than clean samples if we impose random mutations on the LMs and that backdoors are generalizable. We first confirm the effectiveness of model mutation testing in detecting backdoor samples and select the most appropriate mutation operators. We then systematically defend against three extensively studied backdoor attack levels (i.e., char-level, word-level, and sentence-level) by detecting backdoor samples. We also make the first attempt to defend against the latest style-level backdoor attacks. We evaluate our approach on three benchmark datasets (i.e., IMDB, Yelp, and AG news) and three style transfer datasets (i.e., SST-2, Hate-speech, and AG news). The extensive experimental results demonstrate that our approach can detect backdoor samples more efficiently and accurately than the three state-of-the-art defense approaches. "
+}

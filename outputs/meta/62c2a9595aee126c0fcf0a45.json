@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semi-Supervised LiDAR Semantic Segmentation"
+  ],
+  "datasets": [
+    "nuScenes",
+    "SemanticKITTI",
+    "ScribbleKITTI"
+  ],
+  "methods": [
+    "LaserMix"
+  ],
+  "results": [
+    "Competitive results over fully-supervised counterparts with 2x to 5x fewer labels",
+    "Improves supervised-only baseline significantly by 10.8% on average"
+  ],
+  "paper_id": "62c2a9595aee126c0fcf0a45",
+  "title": "LaserMix for Semi-Supervised LiDAR Semantic Segmentation",
+  "abstract": "  Densely annotating LiDAR point clouds is costly, which restrains the scalability of fully-supervised learning methods. In this work, we study the underexplored semi-supervised learning (SSL) in LiDAR segmentation. Our core idea is to leverage the strong spatial cues of LiDAR point clouds to better exploit unlabeled data. We propose LaserMix to mix laser beams from different LiDAR scans, and then encourage the model to make consistent and confident predictions before and after mixing. Our framework has three appealing properties: 1) Generic: LaserMix is agnostic to LiDAR representations (e.g., range view and voxel), and hence our SSL framework can be universally applied. 2) Statistically grounded: We provide a detailed analysis to theoretically explain the applicability of the proposed framework. 3) Effective: Comprehensive experimental analysis on popular LiDAR segmentation datasets (nuScenes, SemanticKITTI, and ScribbleKITTI) demonstrates our effectiveness and superiority. Notably, we achieve competitive results over fully-supervised counterparts with 2x to 5x fewer labels and improve the supervised-only baseline significantly by 10.8% on average. We hope this concise yet high-performing framework could facilitate future research in semi-supervised LiDAR segmentation. Code is publicly available. "
+}

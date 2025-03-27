@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Fair representation learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MMD-B-Fair",
+    "kernel two-sample testing"
+  ],
+  "results": [
+    "Ability to 'hide' information about sensitive attributes",
+    "Effectiveness in downstream transfer tasks"
+  ],
+  "paper_id": "637454dc90e50fcafdfc67c8",
+  "title": "MMD-B-Fair: Learning Fair Representations with Statistical Testing",
+  "abstract": "  We introduce a method, MMD-B-Fair, to learn fair representations of data via kernel two-sample testing. We find neural features of our data where a maximum mean discrepancy (MMD) test cannot distinguish between representations of different sensitive groups, while preserving information about the target attributes. Minimizing the power of an MMD test is more difficult than maximizing it (as done in previous work), because the test threshold's complex behavior cannot be simply ignored. Our method exploits the simple asymptotics of block testing schemes to efficiently find fair representations without requiring complex adversarial optimization or generative modelling schemes widely used by existing work on fair representation learning. We evaluate our approach on various datasets, showing its ability to ``hide'' information about sensitive attributes, and its effectiveness in downstream transfer tasks. "
+}

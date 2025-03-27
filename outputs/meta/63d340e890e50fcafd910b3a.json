@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Coding"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Rate-Perception Optimized Preprocessing (RPP)",
+    "Adaptive Discrete Cosine Transform loss function",
+    "High-order degradation model",
+    "Efficient lightweight network design",
+    "Image Quality Assessment model"
+  ],
+  "results": [
+    "16.27% bitrate saving",
+    "87% user satisfaction in visual quality",
+    "12% average bitrate saving"
+  ],
+  "paper_id": "63d340e890e50fcafd910b3a",
+  "title": "Rate-Perception Optimized Preprocessing for Video Coding",
+  "abstract": "  In the past decades, lots of progress have been done in the video compression field including traditional video codec and learning-based video codec. However, few studies focus on using preprocessing techniques to improve the rate-distortion performance. In this paper, we propose a rate-perception optimized preprocessing (RPP) method. We first introduce an adaptive Discrete Cosine Transform loss function which can save the bitrate and keep essential high frequency components as well. Furthermore, we also combine several state-of-the-art techniques from low-level vision fields into our approach, such as the high-order degradation model, efficient lightweight network design, and Image Quality Assessment model. By jointly using these powerful techniques, our RPP approach can achieve on average, 16.27% bitrate saving with different video encoders like AVC, HEVC, and VVC under multiple quality metrics. In the deployment stage, our RPP method is very simple and efficient which is not required any changes in the setting of video encoding, streaming, and decoding. Each input frame only needs to make a single pass through RPP before sending into video encoders. In addition, in our subjective visual quality test, 87% of users think videos with RPP are better or equal to videos by only using the codec to compress, while these videos with RPP save about 12% bitrate on average. Our RPP framework has been integrated into the production environment of our video transcoding services which serve millions of users every day. "
+}

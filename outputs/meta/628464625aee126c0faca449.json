@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Parameter Estimation in Statistical Models"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Exponential step size gradient descent (EGD)"
+  ],
+  "results": [
+    "EGD iterates reach the final statistical radius within the true parameter after a logarithmic number of iterations",
+    "Total computational complexity of the EGD algorithm is optimal and exponentially cheaper than that of the GD for solving parameter estimation in non-regular statistical models"
+  ],
+  "paper_id": "628464625aee126c0faca449",
+  "title": "An Exponentially Increasing Step-size for Parameter Estimation in\n  Statistical Models",
+  "abstract": "  Using gradient descent (GD) with fixed or decaying step-size is a standard practice in unconstrained optimization problems. However, when the loss function is only locally convex, such a step-size schedule artificially slows GD down as it cannot explore the flat curvature of the loss function. To overcome that issue, we propose to exponentially increase the step-size of the GD algorithm. Under homogeneous assumptions on the loss function, we demonstrate that the iterates of the proposed \\emph{exponential step size gradient descent} (EGD) algorithm converge linearly to the optimal solution. Leveraging that optimization insight, we then consider using the EGD algorithm for solving parameter estimation under both regular and non-regular statistical models whose loss function becomes locally convex when the sample size goes to infinity. We demonstrate that the EGD iterates reach the final statistical radius within the true parameter after a logarithmic number of iterations, which is in stark contrast to a \\emph{polynomial} number of iterations of the GD algorithm in non-regular statistical models. Therefore, the total computational complexity of the EGD algorithm is \\emph{optimal} and exponentially cheaper than that of the GD for solving parameter estimation in non-regular statistical models while being comparable to that of the GD in regular statistical settings. To the best of our knowledge, it resolves a long-standing gap between statistical and algorithmic computational complexities of parameter estimation in non-regular statistical models. Finally, we provide targeted applications of the general theory to several classes of statistical models, including generalized linear models with polynomial link functions and location Gaussian mixture models. "
+}

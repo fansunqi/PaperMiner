@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Deep Learning Compiler Fuzzing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HirGen"
+  ],
+  "results": [
+    "Detected 21 bugs",
+    "17 bugs confirmed and 12 fixed",
+    "10 crashes and inconsistencies detected in 48 hours"
+  ],
+  "paper_id": "62eb39475aee126c0fb7b185",
+  "title": "Fuzzing Deep Learning Compilers with HirGen",
+  "abstract": "  Deep Learning (DL) compilers are widely adopted to optimize advanced DL models for efficient deployment on diverse hardware. Their quality has profound effect on the quality of compiled DL models. A recent bug study shows that the optimization of high-level intermediate representation (IR) is the most error-prone compilation stage. Bugs in this stage are accountable for 44.92% of the whole collected ones. However, existing testing techniques do not consider high-level optimization related features (e.g. high-level IR), and are therefore weak in exposing bugs at this stage. To bridge this gap, we propose HirGen, an automated testing technique that aims to effectively expose coding mistakes in the optimization of high-level IR. The design of HirGen includes 1) three coverage criteria to generate diverse and valid computational graphs; 2) full use of high-level IRs language features to generate diverse IRs; 3) three test oracles inspired from both differential testing and metamorphic testing. HirGen has successfully detected 21 bugs that occur at TVM, with 17 bugs confirmed and 12 fixed. Further, we construct four baselines using the state-of-the-art DL compiler fuzzers that can cover the high-level optimization stage. Our experiment results show that HirGen can detect 10 crashes and inconsistencies that cannot be detected by the baselines in 48 hours. We further validate the usefulness of our proposed coverage criteria and test oracles in evaluation. "
+}

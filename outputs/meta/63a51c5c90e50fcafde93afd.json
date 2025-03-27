@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Recommender Systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Local Policy Improvement",
+    "Policy Optimization",
+    "Importance Sampling Correction"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63a51c5c90e50fcafde93afd",
+  "title": "Local Policy Improvement for Recommender Systems",
+  "abstract": "  Recommender systems predict what items a user will interact with next, based on their past interactions. The problem is often approached through supervised learning, but recent advancements have shifted towards policy optimization of rewards (e.g., user engagement). One challenge with the latter is policy mismatch: we are only able to train a new policy given data collected from a previously-deployed policy. The conventional way to address this problem is through importance sampling correction, but this comes with practical limitations. We suggest an alternative approach of local policy improvement without off-policy correction. Our method computes and optimizes a lower bound of expected reward of the target policy, which is easy to estimate from data and does not involve density ratios (such as those appearing in importance sampling correction). This local policy improvement paradigm is ideal for recommender systems, as previous policies are typically of decent quality and policies are updated frequently. We provide empirical evidence and practical recipes for applying our technique in a sequential recommendation setting. "
+}

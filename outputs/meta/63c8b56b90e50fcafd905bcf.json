@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Science-intensive data profiling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Desbordante",
+    "C++ implementation",
+    "Containerization",
+    "Replication of containers",
+    "Python bindings"
+  ],
+  "results": [
+    "High performance",
+    "Resilient to crashes",
+    "Scalable",
+    "Supports pipelines",
+    "Works with tabular, graph, and transactional data"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905bcf",
+  "title": "Desbordante: from benchmarking suite to high-performance\n  science-intensive data profiler (preprint)",
+  "abstract": "  Pioneering data profiling systems such as Metanome and OpenClean brought public attention to science-intensive data profiling. This type of profiling aims to extract complex patterns (primitives) such as functional dependencies, data constraints, association rules, and others. However, these tools are research prototypes rather than production-ready systems.   The following work presents Desbordante - a high-performance science-intensive data profiler with open source code. Unlike similar systems, it is built with emphasis on industrial application in a multi-user environment. It is efficient, resilient to crashes, and scalable. Its efficiency is ensured by implementing discovery algorithms in C++, resilience is achieved by extensive use of containerization, and scalability is based on replication of containers.   Desbordante aims to open industrial-grade primitive discovery to a broader public, focusing on domain experts who are not IT professionals. Aside from the discovery of various primitives, Desbordante offers primitive validation, which not only reports whether a given instance of primitive holds or not, but also points out what prevents it from holding via the use of special screens. Next, Desbordante supports pipelines - ready-to-use functionality implemented using the discovered primitives, for example, typo detection. We provide built-in pipelines, and the users can construct their own via provided Python bindings. Unlike other profilers, Desbordante works not only with tabular data, but with graph and transactional data as well.   In this paper, we present Desbordante, the vision behind it and its use-cases. To provide a more in-depth perspective, we discuss its current state, architecture, and design decisions it is built on. Additionally, we outline our future plans. "
+}

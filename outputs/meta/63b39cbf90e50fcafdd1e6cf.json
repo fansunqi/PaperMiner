@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Reinforcement Learning",
+    "Policy Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Stability Certification (ASC)",
+    "Adaptive Lyapunov-based Actor-Critic (ALAC)"
+  ],
+  "results": [
+    "Lower accumulated cost",
+    "Fewer stability constraint violations"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e6cf",
+  "title": "A RL-based Policy Optimization Method Guided by Adaptive Stability\n  Certification",
+  "abstract": "  In contrast to the control-theoretic methods, the lack of stability guarantee remains a significant problem for model-free reinforcement learning (RL) methods. Jointly learning a policy and a Lyapunov function has recently become a promising approach to ensuring the whole system with a stability guarantee. However, the classical Lyapunov constraints researchers introduced cannot stabilize the system during the sampling-based optimization. Therefore, we propose the Adaptive Stability Certification (ASC), making the system reach sampling-based stability. Because the ASC condition can search for the optimal policy heuristically, we design the Adaptive Lyapunov-based Actor-Critic (ALAC) algorithm based on the ASC condition. Meanwhile, our algorithm avoids the optimization problem that a variety of constraints are coupled into the objective in current approaches. When evaluated on ten robotic tasks, our method achieves lower accumulated cost and fewer stability constraint violations than previous studies. "
+}

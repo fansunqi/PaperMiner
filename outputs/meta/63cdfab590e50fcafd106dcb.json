@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Forecasting subcritical cylinder wakes"
+  ],
+  "datasets": [
+    "Particle image velocimetry measurements depicting cylinder wakes"
+  ],
+  "methods": [
+    "Fourier neural operators (FNOs)"
+  ],
+  "results": [
+    "L2 norm error < 0.1",
+    "Potential for real-time predictive flow control"
+  ],
+  "paper_id": "63cdfab590e50fcafd106dcb",
+  "title": "Forecasting subcritical cylinder wakes with Fourier Neural Operators",
+  "abstract": "  We apply Fourier neural operators (FNOs), a state-of-the-art operator learning technique, to forecast the temporal evolution of experimentally measured velocity fields. FNOs are a recently developed machine learning method capable of approximating solution operators to systems of partial differential equations through data alone. The learned FNO solution operator can be evaluated in milliseconds, potentially enabling faster-than-real-time modeling for predictive flow control in physical systems. Here we use FNOs to predict how physical fluid flows evolve in time, training with particle image velocimetry measurements depicting cylinder wakes in the subcritical vortex shedding regime. We train separate FNOs at Reynolds numbers ranging from Re = 240 to Re = 3060 and study how increasingly turbulent flow phenomena impact prediction accuracy. We focus here on a short prediction horizon of ten non-dimensionalized time-steps, as would be relevant for problems of predictive flow control. We find that FNOs are capable of accurately predicting the evolution of experimental velocity fields throughout the range of Reynolds numbers tested (L2 norm error < 0.1) despite being provided with limited and imperfect flow observations. Given these results, we conclude that this method holds significant potential for real-time predictive flow control of physical systems. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monocular 3D Object Detection"
+  ],
+  "datasets": [
+    "KITTI"
+  ],
+  "methods": [
+    "Instance Depth",
+    "Multi-scale Perception Module",
+    "Dilated Convolution"
+  ],
+  "results": [
+    "AP40 in the car category improves by 5.27% compared to the baseline"
+  ],
+  "paper_id": "638eb2eb90e50fcafd58a83c",
+  "title": "IDMS: Instance Depth for Multi-scale Monocular 3D Object Detection",
+  "abstract": "  Due to the lack of depth information of images and poor detection accuracy in monocular 3D object detection, we proposed the instance depth for multi-scale monocular 3D object detection method. Firstly, to enhance the model's processing ability for different scale targets, a multi-scale perception module based on dilated convolution is designed, and the depth features containing multi-scale information are re-refined from both spatial and channel directions considering the inconsistency between feature maps of different scales. Firstly, we designed a multi-scale perception module based on dilated convolution to enhance the model's processing ability for different scale targets. The depth features containing multi-scale information are re-refined from spatial and channel directions considering the inconsistency between feature maps of different scales. Secondly, so as to make the model obtain better 3D perception, this paper proposed to use the instance depth information as an auxiliary learning task to enhance the spatial depth feature of the 3D target and use the sparse instance depth to supervise the auxiliary task. Finally, by verifying the proposed algorithm on the KITTI test set and evaluation set, the experimental results show that compared with the baseline method, the proposed method improves by 5.27\\% in AP40 in the car category, effectively improving the detection performance of the monocular 3D object detection algorithm. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Vision-Based Automated Vehicles"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MTUNet",
+    "CILQR",
+    "VPC"
+  ],
+  "results": [
+    "MTUNet operates at 40 FPS",
+    "VPC-CILQR controller maintains speed and lateral offset",
+    "No high-definition maps required"
+  ],
+  "paper_id": "6323e96290e50fcafd8a2474",
+  "title": "Efficient Perception, Planning, and Control Algorithms for Vision-Based\n  Automated Vehicles",
+  "abstract": "  Autonomous vehicles have limited computational resources; hence, their control systems must be efficient. The cost and size of sensors have limited the development of self-driving cars. To overcome these restrictions, this study proposes an efficient framework for the operation of vision-based automatic vehicles; the framework requires only a monocular camera and a few inexpensive radars. The proposed algorithm comprises a multi-task UNet (MTUNet) network for extracting image features and constrained iterative linear quadratic regulator (CILQR) and vision predictive control (VPC) modules for rapid motion planning and control. MTUNet is designed to simultaneously solve lane line segmentation, the ego vehicle's heading angle regression, road type classification, and traffic object detection tasks at approximately 40 FPS (frames per second) for 228 x 228 pixel RGB input images. The CILQR controllers then use the MTUNet outputs and radar data as inputs to produce driving commands for lateral and longitudinal vehicle guidance within only 1 ms. In particular, the VPC algorithm is included to reduce steering command latency to below actuator latency to prevent vehicle understeer during tight turns. The VPC algorithm uses road curvature data from MTUNet to estimate the correction of the current steering angle at a look-ahead point to adjust the turning amount. Including the VPC algorithm in a VPC-CILQR controller leads to higher performance than CILQR alone; this controller can minimize the influence of command lag, maintaining the ego car's speed and lateral offset at 76 km/h and within 0.52 m, respectively, on a simulated road with a curvature of 0.03 1/m. Our experiments demonstrate that the proposed autonomous driving system, which does not require high-definition maps, could be applied in current autonomous vehicles. "
+}

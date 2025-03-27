@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Single-cell RNA sequencing integration",
+    "Cell type decomposition"
+  ],
+  "datasets": [
+    "Brain tissue",
+    "Developing heart",
+    "Breast cancer samples"
+  ],
+  "methods": [
+    "Optimal Transport theory",
+    "Scale-invariant distance functions",
+    "Frank-Wolfe algorithm"
+  ],
+  "results": [
+    "Enhanced resolution and gene coverage",
+    "Correct assignment of cell types",
+    "Estimation of missing gene expression"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5d92",
+  "title": "DOT: Fast Cell Type Decomposition of Spatial Omics by Optimal Transport",
+  "abstract": "  Single-cell RNA sequencing (scRNA-seq) and spatially-resolved imaging/sequencing technologies have revolutionized biomedical research. On one hand, scRNA-seq data provides for individual cells information about a large portion of the transcriptome, but does not include the spatial context of the cells. On the other hand, spatially resolved measurements come with a trade-off between resolution, throughput and gene coverage. Combining data from these two modalities can provide a spatially resolved picture with enhances resolution and gene coverage. Several methods have been recently developed to integrate these modalities, but they use only the expression of genes available in both modalities. They don't incorporate other relevant and available features, especially the spatial context. We propose DOT, a novel optimization framework for assigning cell types to tissue locations. Our model (i) incorporates ideas from Optimal Transport theory to leverage not only joint but also distinct features, such as the spatial context, (ii) introduces scale-invariant distance functions to account for differences in the sensitivity of different measurement technologies, and (iii) provides control over the abundance of cells of different types in the tissue. We present a fast implementation based on the Frank-Wolfe algorithm and we demonstrate the effectiveness of DOT on correctly assigning cell types or estimating the expression of missing genes in spatial data coming from two areas of the brain, the developing heart, and breast cancer samples. "
+}

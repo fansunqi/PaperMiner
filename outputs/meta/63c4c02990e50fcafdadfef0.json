@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Attack Defense",
+    "Energy-Efficient Neural Networks"
+  ],
+  "datasets": [
+    "static MNIST",
+    "neuromorphic DVS128 Gesture"
+  ],
+  "methods": [
+    "precision scaling",
+    "approximate quantization-aware filtering (AQF)"
+  ],
+  "results": [
+    "AxSNNs are more prone to adversarial attacks than AccSNNs",
+    "72% accuracy loss vs. 17% accuracy loss with precision scaling",
+    "77% accuracy loss vs. 2% accuracy loss with AQF"
+  ],
+  "paper_id": "63c4c02990e50fcafdadfef0",
+  "title": "Security-Aware Approximate Spiking Neural Networks",
+  "abstract": "  Deep Neural Networks (DNNs) and Spiking Neural Networks (SNNs) are both known for their susceptibility to adversarial attacks. Therefore, researchers in the recent past have extensively studied the robustness and defense of DNNs and SNNs under adversarial attacks. Compared to accurate SNNs (AccSNN), approximate SNNs (AxSNNs) are known to be up to 4X more energy-efficient for ultra-low power applications. Unfortunately, the robustness of AxSNNs under adversarial attacks is yet unexplored. In this paper, we first extensively analyze the robustness of AxSNNs with different structural parameters and approximation levels under two gradient-based and two neuromorphic attacks. Then, we propose two novel defense methods, i.e., precision scaling and approximate quantization-aware filtering (AQF), for securing AxSNNs. We evaluated the effectiveness of these two defense methods using both static and neuromorphic datasets. Our results demonstrate that AxSNNs are more prone to adversarial attacks than AccSNNs, but precision scaling and AQF significantly improve the robustness of AxSNNs. For instance, a PGD attack on AxSNN results in a 72\\% accuracy loss compared to AccSNN without any attack, whereas the same attack on the precision-scaled AxSNN leads to only a 17\\% accuracy loss in the static MNIST dataset (4X robustness improvement). Similarly, a Sparse Attack on AxSNN leads to a 77\\% accuracy loss when compared to AccSNN without any attack, whereas the same attack on an AxSNN with AQF leads to only a 2\\% accuracy loss in the neuromorphic DVS128 Gesture dataset (38X robustness improvement). "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Zero-shot quantization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Post-training quantization",
+    "Genie framework"
+  ],
+  "results": [
+    "High-quality quantized networks within a few hours",
+    "Comparable to few-shot quantization",
+    "Significant improvement in quantization performance"
+  ],
+  "paper_id": "63969ba790e50fcafdcf1a93",
+  "title": "Genie: Show Me the Data for Quantization",
+  "abstract": "  Zero-shot quantization is a promising approach for developing lightweight deep neural networks when data is inaccessible owing to various reasons, including cost and issues related to privacy. By exploiting the learned parameters ($\\mu$ and $\\sigma$) of batch normalization layers in an FP32-pre-trained model, zero-shot quantization schemes focus on generating synthetic data. Subsequently, they distill knowledge from the pre-trained model (teacher) to the quantized model (student) such that the quantized model can be optimized with the synthetic dataset. However, thus far, zero-shot quantization has primarily been discussed in the context of quantization-aware training methods, which require task-specific losses and long-term optimization as much as retraining. We thus introduce a post-training quantization scheme for zero-shot quantization that produces high-quality quantized networks within a few hours. Furthermore, we propose a framework called \\genie~that generates data suited for quantization. With the data synthesized by Genie, we can produce robust quantized models without real datasets, which is comparable to few-shot quantization. We also propose a post-training quantization algorithm to enhance the performance of quantized models. By combining them, we can bridge the gap between zero-shot and few-shot quantization while significantly improving the quantization performance compared to that of existing approaches. In other words, we can obtain a unique state-of-the-art zero-shot quantization approach. "
+}

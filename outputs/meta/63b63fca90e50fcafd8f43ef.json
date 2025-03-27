@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Brain Image Segmentation"
+  ],
+  "datasets": [
+    "Brain matter",
+    "Brain tumor",
+    "White matter hyperintensities segmentation"
+  ],
+  "methods": [
+    "Prior knowledge guided and transferability based framework",
+    "Modality analysis",
+    "RoI analysis",
+    "Transferability estimation",
+    "Structural Similarity index"
+  ],
+  "results": [
+    "Transferring from different tasks under the same modality is often more successful",
+    "Transferring from the source task with stronger RoI shape similarity improves transfer performance"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f43ef",
+  "title": "Finding the Most Transferable Tasks for Brain Image Segmentation",
+  "abstract": "  Although many studies have successfully applied transfer learning to medical image segmentation, very few of them have investigated the selection strategy when multiple source tasks are available for transfer. In this paper, we propose a prior knowledge guided and transferability based framework to select the best source tasks among a collection of brain image segmentation tasks, to improve the transfer learning performance on the given target task. The framework consists of modality analysis, RoI (region of interest) analysis, and transferability estimation, such that the source task selection can be refined step by step. Specifically, we adapt the state-of-the-art analytical transferability estimation metrics to medical image segmentation tasks and further show that their performance can be significantly boosted by filtering candidate source tasks based on modality and RoI characteristics. Our experiments on brain matter, brain tumor, and white matter hyperintensities segmentation datasets reveal that transferring from different tasks under the same modality is often more successful than transferring from the same task under different modalities. Furthermore, within the same modality, transferring from the source task that has stronger RoI shape similarity with the target task can significantly improve the final transfer performance. And such similarity can be captured using the Structural Similarity index in the label space. "
+}

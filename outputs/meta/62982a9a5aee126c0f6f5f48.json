@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Error Mitigation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pauli Check Sandwiching",
+    "extended flag gadgets",
+    "noiseless state recovery",
+    "Clifford gates",
+    "non-Clifford single-qubit rotations"
+  ],
+  "results": [
+    "Average improvements in fidelity of 34 percentage points with six layers of checks"
+  ],
+  "paper_id": "62982a9a5aee126c0f6f5f48",
+  "title": "Quantum Error Mitigation by Pauli Check Sandwiching",
+  "abstract": "  We describe and analyze an error mitigation technique that uses multiple pairs of parity checks to detect the presence of errors. Each pair of checks uses one ancilla qubit to detect a component of the error operator and represents one layer of the technique. We build on the results on extended flag gadgets and put it on a firm theoretical foundation. We prove that this technique can recover the noiseless state under the assumption of noise not affecting the checks. The method does not incur any encoding overhead and instead chooses the checks based on the input circuit. We provide an algorithm for obtaining such checks for an arbitrary target circuit. Since the method applies to any circuit and input state, it can be easily combined with other error mitigation techniques. We evaluate the performance of the proposed methods using extensive numerical simulations on 1,850 random input circuits composed of Clifford gates and non-Clifford single-qubit rotations, a class of circuits encompassing most commonly considered variational algorithm circuits. We observe average improvements in fidelity of 34 percentage points with six layers of checks. "
+}

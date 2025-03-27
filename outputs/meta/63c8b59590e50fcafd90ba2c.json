@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formality-aware Japanese sentence representation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sequence-to-sequence method",
+    "Formality representation learning",
+    "Procedural formality classification adaptation"
+  ],
+  "results": [
+    "Improved preservation of input sentence semantics"
+  ],
+  "paper_id": "63c8b59590e50fcafd90ba2c",
+  "title": "Learning a Formality-Aware Japanese Sentence Representation",
+  "abstract": "  While the way intermediate representations are generated in encoder-decoder sequence-to-sequence models typically allow them to preserve the semantics of the input sentence, input features such as formality might be left out. On the other hand, downstream tasks such as translation would benefit from working with a sentence representation that preserves formality in addition to semantics, so as to generate sentences with the appropriate level of social formality -- the difference between speaking to a friend versus speaking with a supervisor. We propose a sequence-to-sequence method for learning a formality-aware representation for Japanese sentences, where sentence generation is conditioned on both the original representation of the input sentence, and a side constraint which guides the sentence representation towards preserving formality information. Additionally, we propose augmenting the sentence representation with a learned representation of formality which facilitates the extraction of formality in downstream tasks. We address the lack of formality-annotated parallel data by adapting previous works on procedural formality classification of Japanese sentences. Experimental results suggest that our techniques not only helps the decoder recover the formality of the input sentence, but also slightly improves the preservation of input sentence semantics. "
+}

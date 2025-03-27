@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Attacks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adapting Step-size",
+    "FGSM",
+    "I-FGSM",
+    "MI-FGSM",
+    "AdaI-FGM",
+    "AdaMI-FGM"
+  ],
+  "results": [
+    "AdaI-FGM consistently outperforms I-FGSM",
+    "AdaMI-FGM remains competitive with MI-FGSM"
+  ],
+  "paper_id": "63d7352390e50fcafda30316",
+  "title": "Adapting Step-size: A Unified Perspective to Analyze and Improve\n  Gradient-based Methods for Adversarial Attacks",
+  "abstract": "  Learning adversarial examples can be formulated as an optimization problem of maximizing the loss function with some box-constraints. However, for solving this induced optimization problem, the state-of-the-art gradient-based methods such as FGSM, I-FGSM and MI-FGSM look different from their original methods especially in updating the direction, which makes it difficult to understand them and then leaves some theoretical issues to be addressed in viewpoint of optimization. In this paper, from the perspective of adapting step-size, we provide a unified theoretical interpretation of these gradient-based adversarial learning methods. We show that each of these algorithms is in fact a specific reformulation of their original gradient methods but using the step-size rules with only current gradient information. Motivated by such analysis, we present a broad class of adaptive gradient-based algorithms based on the regular gradient methods, in which the step-size strategy utilizing information of the accumulated gradients is integrated. Such adaptive step-size strategies directly normalize the scale of the gradients rather than use some empirical operations. The important benefit is that convergence for the iterative algorithms is guaranteed and then the whole optimization process can be stabilized. The experiments demonstrate that our AdaI-FGM consistently outperforms I-FGSM and AdaMI-FGM remains competitive with MI-FGSM for black-box attacks. "
+}

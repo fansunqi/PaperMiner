@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Black-box optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "BOX-QUBO",
+    "QUBO matrix",
+    "classification between 'good' and 'bad' solutions",
+    "white-box optimization"
+  ],
+  "results": [
+    "Better results on four domains",
+    "Significant improvement for MAX-k-SAT"
+  ],
+  "paper_id": "62bab8e95aee126c0f6add4d",
+  "title": "Black Box Optimization Using QUBO and the Cross Entropy Method",
+  "abstract": "  Black-box optimization (BBO) can be used to optimize functions whose analytic form is unknown. A common approach to realising BBO is to learn a surrogate model which approximates the target black-box function which can then be solved via white-box optimization methods. In this paper, we present our approach BOX-QUBO, where the surrogate model is a QUBO matrix. However, unlike in previous state-of-the-art approaches, this matrix is not trained entirely by regression, but mostly by classification between 'good' and 'bad' solutions. This better accounts for the low capacity of the QUBO matrix, resulting in significantly better solutions overall. We tested our approach against the state-of-the-art on four domains and in all of them BOX-QUBO showed better results. A second contribution of this paper is the idea to also solve white-box problems, i.e. problems which could be directly formulated as QUBO, by means of black-box optimization in order to reduce the size of the QUBOs to the information-theoretic minimum. Experiments show that this significantly improves the results for MAX-k-SAT. "
+}

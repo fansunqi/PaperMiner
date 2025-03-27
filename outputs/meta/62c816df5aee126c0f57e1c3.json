@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Network Inference",
+    "Dynamical Network Analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Backpropagation through Time (BPTT)",
+    "Neural Network Approximation of Local Node Dynamics"
+  ],
+  "results": [
+    "Identified connectivity structure for coupled networks",
+    "Comparable freerun prediction performance to true system"
+  ],
+  "paper_id": "62c816df5aee126c0f57e1c3",
+  "title": "Backpropagation on Dynamical Networks",
+  "abstract": "  Dynamical networks are versatile models that can describe a variety of behaviours such as synchronisation and feedback. However, applying these models in real world contexts is difficult as prior information pertaining to the connectivity structure or local dynamics is often unknown and must be inferred from time series observations of network states. Additionally, the influence of coupling interactions between nodes further complicates the isolation of local node dynamics. Given the architectural similarities between dynamical networks and recurrent neural networks (RNN), we propose a network inference method based on the backpropagation through time (BPTT) algorithm commonly used to train recurrent neural networks. This method aims to simultaneously infer both the connectivity structure and local node dynamics purely from observation of node states. An approximation of local node dynamics is first constructed using a neural network. This is alternated with an adapted BPTT algorithm to regress corresponding network weights by minimising prediction errors of the dynamical network based on the previously constructed local models until convergence is achieved. This method was found to be succesful in identifying the connectivity structure for coupled networks of Lorenz, Chua and FitzHugh-Nagumo oscillators. Freerun prediction performance with the resulting local models and weights was found to be comparable to the true system with noisy initial conditions. The method is also extended to non-conventional network couplings such as asymmetric negative coupling. "
+}

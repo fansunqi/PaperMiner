@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Asynchronous wait-free runtime verification of linearizability"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Interactive model for distributed runtime verification",
+    "Strong verification using only read/write base objects",
+    "Transformation to linearizable counterparts using read/write objects"
+  ],
+  "results": [
+    "First distributed runtime verification algorithm for fully asynchronous and fault-tolerant correctness conditions",
+    "Self-enforced linearizable implementations with certificates",
+    "Generalizations to set-linearizability and interval-linearizability"
+  ],
+  "paper_id": "63bb859d90e50fcafd06f0d7",
+  "title": "Asynchronous Wait-Free Runtime Verification and Enforcement of\n  Linearizability",
+  "abstract": "  This paper studies the problem of asynchronous wait-free runtime verification of linearizability for concurrent shared memory implementations, where one seeks for an asynchronous wait-free concurrent shared memory algorithm for verifying at runtime that the current execution of a given concurrent implementation is linearizable. It proposes an interactive model for distributed runtime verification of correctness conditions, and shows that it is impossible to runtime verify linearizability for some common sequential objects such as queues, stacks, sets, priority queues, counters and the consensus problem, regardless of the consensus power of base objects. Then, the paper argues that actually a stronger version of the problem can be solved, if linearizability is indirectly verified. Namely, it shows that (1) linearizability of a class of concurrent implementations can be distributed runtime strongly verified using only read/write base objects (i.e. without the need of consensus), and (2) any implementation can be transformed to its counterpart in the class using only read/write objects too. As far as we know, this is the first distributed runtime verification algorithm for any correctness condition that is fully asynchronous and fault-tolerant. As a by-product, a simple and generic methodology for the design of self-enforced linearizable implementations is obtained. This type implementations produce outputs that are guaranteed linearizable, and are able to produce a certificate of it, which allows the design of concurrent systems in a modular manner with accountable and forensic guarantees. We are not aware of prior concurrent implementations in the literature with such properties. These results hold not only for linearizability but for a correctness condition that includes generalizations of it such as set-linearizability and interval-linearizability. "
+}

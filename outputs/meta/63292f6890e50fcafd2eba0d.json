@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Sequential Recommendation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dual Contrastive Network (DCN)",
+    "Dual representation contrastive learning",
+    "Next user prediction",
+    "Dual interest contrastive learning"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63292f6890e50fcafd2eba0d",
+  "title": "Dual Contrastive Network for Sequential Recommendation with User and\n  Item-Centric Perspectives",
+  "abstract": "  With the outbreak of today's streaming data, the sequential recommendation is a promising solution to achieve time-aware personalized modeling. It aims to infer the next interacted item of a given user based on the history item sequence. Some recent works tend to improve the sequential recommendation via random masking on the history item so as to generate self-supervised signals. But such approaches will indeed result in sparser item sequence and unreliable signals. Besides, the existing sequential recommendation models are only user-centric, i.e., based on the historical items by chronological order to predict the probability of candidate items, which ignores whether the items from a provider can be successfully recommended. Such user-centric recommendation will make it impossible for the provider to expose their new items and result in popular bias.   In this paper, we propose a novel Dual Contrastive Network (DCN) to generate ground-truth self-supervised signals for sequential recommendation by auxiliary user-sequence from an item-centric perspective. Specifically, we propose dual representation contrastive learning to refine the representation learning by minimizing the Euclidean distance between the representations of a given user/item and history items/users of them. Before the second contrastive learning module, we perform the next user prediction to capture the trends of items preferred by certain types of users and provide personalized exploration opportunities for item providers. Finally, we further propose dual interest contrastive learning to self-supervise the dynamic interest from the next item/user prediction and static interest of matching probability. Experiments on four benchmark datasets verify the effectiveness of our proposed method. Further ablation study also illustrates the boosting effect of the proposed components upon different sequential models. "
+}

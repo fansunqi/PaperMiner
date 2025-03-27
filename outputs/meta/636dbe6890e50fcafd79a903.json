@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Entropy estimation of Linear Additive Markov Processes"
+  ],
+  "datasets": [
+    "LastFM",
+    "BrightKite",
+    "Wikispeedia",
+    "Reuters-21578"
+  ],
+  "methods": [
+    "Linear Additive Markov Processes (LAMP)"
+  ],
+  "results": [
+    "LAMP entropy rates are lower than those of the alternatives",
+    "LAMP model is better at accommodating structural dependencies in the processes"
+  ],
+  "paper_id": "636dbe6890e50fcafd79a903",
+  "title": "The entropy rate of Linear Additive Markov Processes",
+  "abstract": "  This work derives a theoretical value for the entropy of a Linear Additive Markov Process (LAMP), an expressive model able to generate sequences with a given autocorrelation structure. While a first-order Markov Chain model generates new values by conditioning on the current state, the LAMP model takes the transition state from the sequence's history according to some distribution which does not have to be bounded. The LAMP model captures complex relationships and long-range dependencies in data with similar expressibility to a higher-order Markov process. While a higher-order Markov process has a polynomial parameter space, a LAMP model is characterised only by a probability distribution and the transition matrix of an underlying first-order Markov Chain. We prove that the theoretical entropy rate of a LAMP is equivalent to the theoretical entropy rate of the underlying first-order Markov Chain. This surprising result is explained by the randomness introduced by the random process which selects the LAMP transitioning state, and provides a tool to model complex dependencies in data while retaining useful theoretical results. We use the LAMP model to estimate the entropy rate of the LastFM, BrightKite, Wikispeedia and Reuters-21578 datasets. We compare estimates calculated using frequency probability estimates, a first-order Markov model and the LAMP model, and consider two approaches to ensuring the transition matrix is irreducible. In most cases the LAMP entropy rates are lower than those of the alternatives, suggesting that LAMP model is better at accommodating structural dependencies in the processes. "
+}

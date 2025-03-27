@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Open Domain Question Answering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-stage closed-book QA framework",
+    "Coarse-to-fine approach",
+    "Pretrained language model prompting",
+    "Context generation",
+    "Marginalization over generated contexts"
+  ],
+  "results": [
+    "Significant outperformance compared to previous closed-book QA methods",
+    "On par with open-book methods",
+    "Better exploitation of stored knowledge in pretrained LMs"
+  ],
+  "paper_id": "634781ff90e50fcafd2c2372",
+  "title": "Context Generation Improves Open Domain Question Answering",
+  "abstract": "  Closed-book question answering (QA) requires a model to directly answer an open-domain question without access to any external knowledge. Prior work on closed-book QA either directly finetunes or prompts a pretrained language model (LM) to leverage the stored knowledge. However, they do not fully exploit the parameterized knowledge. To address this issue, we propose a two-stage, closed-book QA framework which employs a coarse-to-fine approach to extract relevant knowledge and answer a question. Our approach first generates a related context for a given question by prompting a pretrained LM. We then prompt the same LM for answer prediction using the generated context and the question. Additionally, to eliminate failure caused by context uncertainty, we marginalize over generated contexts. Experimental results on three QA benchmarks show that our method significantly outperforms previous closed-book QA methods (e.g. exact matching 68.6% vs. 55.3%), and is on par with open-book methods that exploit external knowledge sources (e.g. 68.6% vs. 68.0%). Our method is able to better exploit the stored knowledge in pretrained LMs without adding extra learnable parameters or needing finetuning, and paves the way for hybrid models that integrate pretrained LMs with external knowledge. "
+}

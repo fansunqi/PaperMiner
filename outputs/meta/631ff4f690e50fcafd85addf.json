@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/osu-cvl/learning-idk"
+  ],
+  "tasks": [
+    "Uncertainty Identification and Removal"
+  ],
+  "datasets": [
+    "2-D points",
+    "imagery",
+    "text classification datasets"
+  ],
+  "methods": [
+    "Reject Option Classification",
+    "validation set to learn per-class softmax thresholds"
+  ],
+  "results": [
+    "Maximizes accuracy of selected examples",
+    "Natural randomness allowance on rejected examples"
+  ],
+  "paper_id": "631ff4f690e50fcafd85addf",
+  "title": "Learning When to Say \"I Don't Know\"",
+  "abstract": "  We propose a new Reject Option Classification technique to identify and remove regions of uncertainty in the decision space for a given neural classifier and dataset. Such existing formulations employ a learned rejection (remove)/selection (keep) function and require either a known cost for rejecting examples or strong constraints on the accuracy or coverage of the selected examples. We consider an alternative formulation by instead analyzing the complementary reject region and employing a validation set to learn per-class softmax thresholds. The goal is to maximize the accuracy of the selected examples subject to a natural randomness allowance on the rejected examples (rejecting more incorrect than correct predictions). We provide results showing the benefits of the proposed method over na\\\"ively thresholding calibrated/uncalibrated softmax scores with 2-D points, imagery, and text classification datasets using state-of-the-art pretrained models. Source code is available at https://github.com/osu-cvl/learning-idk. "
+}

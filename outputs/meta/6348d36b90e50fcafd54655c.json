@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural network training",
+    "Stochastic heavy ball method analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mean-field analysis",
+    "Partial differential equation",
+    "Momentum-based SGD"
+  ],
+  "results": [
+    "Convergence to global optimum",
+    "Quantitative bound between mean-field limit and SHB dynamics",
+    "Dropout-stability",
+    "Connectivity along low-loss path"
+  ],
+  "paper_id": "6348d36b90e50fcafd54655c",
+  "title": "Mean-field analysis for heavy ball methods: Dropout-stability,\n  connectivity, and global convergence",
+  "abstract": "  The stochastic heavy ball method (SHB), also known as stochastic gradient descent (SGD) with Polyak's momentum, is widely used in training neural networks. However, despite the remarkable success of such algorithm in practice, its theoretical characterization remains limited. In this paper, we focus on neural networks with two and three layers and provide a rigorous understanding of the properties of the solutions found by SHB: \\emph{(i)} stability after dropping out part of the neurons, \\emph{(ii)} connectivity along a low-loss path, and \\emph{(iii)} convergence to the global optimum. To achieve this goal, we take a mean-field view and relate the SHB dynamics to a certain partial differential equation in the limit of large network widths. This mean-field perspective has inspired a recent line of work focusing on SGD while, in contrast, our paper considers an algorithm with momentum. More specifically, after proving existence and uniqueness of the limit differential equations, we show convergence to the global optimum and give a quantitative bound between the mean-field limit and the SHB dynamics of a finite-width network. Armed with this last bound, we are able to establish the dropout-stability and connectivity of SHB solutions. "
+}

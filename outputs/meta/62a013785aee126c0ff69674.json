@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/yaoyx689/AMM_NRR"
+  ],
+  "tasks": [
+    "Non-rigid 3D registration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Majorization-Minimization algorithm",
+    "Accelerated convergence with Anderson acceleration"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods in registration accuracy and computational speed"
+  ],
+  "paper_id": "62a013785aee126c0ff69674",
+  "title": "Fast and Robust Non-Rigid Registration Using Accelerated\n  Majorization-Minimization",
+  "abstract": "  Non-rigid 3D registration, which deforms a source 3D shape in a non-rigid way to align with a target 3D shape, is a classical problem in computer vision. Such problems can be challenging because of imperfect data (noise, outliers and partial overlap) and high degrees of freedom. Existing methods typically adopt the $\\ell_p$ type robust norm to measure the alignment error and regularize the smoothness of deformation, and use a proximal algorithm to solve the resulting non-smooth optimization problem. However, the slow convergence of such algorithms limits their wide applications. In this paper, we propose a formulation for robust non-rigid registration based on a globally smooth robust norm for alignment and regularization, which can effectively handle outliers and partial overlaps. The problem is solved using the majorization-minimization algorithm, which reduces each iteration to a convex quadratic problem with a closed-form solution. We further apply Anderson acceleration to speed up the convergence of the solver, enabling the solver to run efficiently on devices with limited compute capability. Extensive experiments demonstrate the effectiveness of our method for non-rigid alignment between two shapes with outliers and partial overlaps, with quantitative evaluation showing that it outperforms state-of-the-art methods in terms of registration accuracy and computational speed. The source code is available at https://github.com/yaoyx689/AMM_NRR. "
+}

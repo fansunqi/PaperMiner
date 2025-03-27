@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Robustness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Visual Prompting",
+    "Class-wise Adversarial Visual Prompting (C-AVP)"
+  ],
+  "results": [
+    "2.1X standard accuracy gain",
+    "2X robust accuracy gain",
+    "42X inference time speedup"
+  ],
+  "paper_id": "634781ff90e50fcafd2c223d",
+  "title": "Visual Prompting for Adversarial Robustness",
+  "abstract": "  In this work, we leverage visual prompting (VP) to improve adversarial robustness of a fixed, pre-trained model at testing time. Compared to conventional adversarial defenses, VP allows us to design universal (i.e., data-agnostic) input prompting templates, which have plug-and-play capabilities at testing time to achieve desired model performance without introducing much computation overhead. Although VP has been successfully applied to improving model generalization, it remains elusive whether and how it can be used to defend against adversarial attacks. We investigate this problem and show that the vanilla VP approach is not effective in adversarial defense since a universal input prompt lacks the capacity for robust learning against sample-specific adversarial perturbations. To circumvent it, we propose a new VP method, termed Class-wise Adversarial Visual Prompting (C-AVP), to generate class-wise visual prompts so as to not only leverage the strengths of ensemble prompts but also optimize their interrelations to improve model robustness. Our experiments show that C-AVP outperforms the conventional VP method, with 2.1X standard accuracy gain and 2X robust accuracy gain. Compared to classical test-time defenses, C-AVP also yields a 42X inference time speedup. "
+}

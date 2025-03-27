@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Musculoskeletal Modelling from Inertial Motion Capture Data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Machine Learning",
+    "Neural Networks (FFNNs, RNNs, LSTM, GRU)"
+  ],
+  "results": [
+    "Comparable performance for FFNN & RNN models",
+    "High degree of agreement with OMC-driven MSK estimates"
+  ],
+  "paper_id": "63365e7c90e50fcafd1a2cc3",
+  "title": "Machine Learning for Optical Motion Capture-driven Musculoskeletal\n  Modelling from Inertial Motion Capture Data",
+  "abstract": "  Marker-based Optical Motion Capture (OMC) systems and associated musculoskeletal (MSK) modelling predictions offer non-invasively obtainable insights into in vivo joint and muscle loading, aiding clinical decision-making. However, an OMC system is lab-based, expensive, and requires a line of sight. Inertial Motion Capture (IMC) systems are widely-used alternatives, which are portable, user-friendly, and relatively low-cost, although with lesser accuracy. Irrespective of the choice of motion capture technique, one needs to use an MSK model to obtain the kinematic and kinetic outputs, which is a computationally expensive tool increasingly well approximated by machine learning (ML) methods. Here, we present an ML approach to map experimentally recorded IMC data to the human upper-extremity MSK model outputs computed from ('gold standard') OMC input data. Essentially, we aim to predict higher-quality MSK outputs from the much easier-to-obtain IMC data. We use OMC and IMC data simultaneously collected for the same subjects to train different ML architectures that predict OMC-driven MSK outputs from IMC measurements. In particular, we employed various neural network (NN) architectures, such as Feed-Forward Neural Networks (FFNNs) and Recurrent Neural Networks (RNNs) (vanilla, Long Short-Term Memory, and Gated Recurrent Unit) and searched for the best-fit model through an exhaustive search in the hyperparameters space in both subject-exposed (SE) & subject-naive (SN) settings. We observed a comparable performance for both FFNN & RNN models, which have a high degree of agreement (ravg, SE, FFNN = 0.90+/-0.19, ravg, SE, RNN = 0.89+/-0.17, ravg, SN, FFNN = 0.84+/-0.23, & ravg, SN, RNN = 0.78+/-0.23) with the desired OMC-driven MSK estimates for held-out test data. Mapping IMC inputs to OMC-driven MSK outputs using ML models could be instrumental in transitioning MSK modelling from 'lab to field'. "
+}

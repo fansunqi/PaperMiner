@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Distribution System State Estimation"
+  ],
+  "datasets": [
+    "IEEE 14-bus",
+    "70-bus",
+    "179-bus networks"
+  ],
+  "methods": [
+    "Deep Statistical Solver (DSS$^2$)",
+    "Graph Neural Networks (GNNs)",
+    "Hypergraphs",
+    "Weakly supervised learning",
+    "Weighted Least Squares loss"
+  ],
+  "results": [
+    "Outperforms conventional Weighted Least Squares algorithm in accuracy, convergence, and computational time",
+    "More robust to noisy, erroneous, and missing measurements",
+    "Competing, yet lower, performance compared with supervised models"
+  ],
+  "paper_id": "6449e7d0582c1376bbfbe912",
+  "title": "Deep Statistical Solver for Distribution System State Estimation",
+  "abstract": "  Implementing accurate Distribution System State Estimation (DSSE) faces several challenges, among which the lack of observability and the high density of the distribution system. While data-driven alternatives based on Machine Learning models could be a choice, they suffer in DSSE because of the lack of labeled data. In fact, measurements in the distribution system are often noisy, corrupted, and unavailable. To address these issues, we propose the Deep Statistical Solver for Distribution System State Estimation (DSS$^2$), a deep learning model based on graph neural networks (GNNs) that accounts for the network structure of the distribution system and for the physical governing power flow equations. DSS$^2$ leverages hypergraphs to represent the heterogeneous components of the distribution systems and updates their latent representations via a node-centric message-passing scheme. A weakly supervised learning approach is put forth to train the DSS$^2$ in a learning-to-optimize fashion w.r.t. the Weighted Least Squares loss with noisy measurements and pseudomeasurements. By enforcing the GNN output into the power flow equations and the latter into the loss function, we force the DSS$^2$ to respect the physics of the distribution system. This strategy enables learning from noisy measurements, acting as an implicit denoiser, and alleviating the need for ideal labeled data. Extensive experiments with case studies on the IEEE 14-bus, 70-bus, and 179-bus networks showed the DSS$^2$ outperforms by a margin the conventional Weighted Least Squares algorithm in accuracy, convergence, and computational time, while being more robust to noisy, erroneous, and missing measurements. The DSS$^2$ achieves a competing, yet lower, performance compared with the supervised models that rely on the unrealistic assumption of having all the true labels. "
+}

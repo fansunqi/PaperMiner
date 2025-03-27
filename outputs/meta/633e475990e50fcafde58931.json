@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous-time control synthesis",
+    "Target-driven navigation",
+    "Satisfying complex high-level tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep reinforcement learning (DRL)",
+    "Sampling-based path planning algorithm",
+    "Modular DRL architecture",
+    "Path planners for reward design"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "633e475990e50fcafde58931",
+  "title": "Learning Minimally-Violating Continuous Control for Infeasible Linear\n  Temporal Logic Specifications",
+  "abstract": "  This paper explores continuous-time control synthesis for target-driven navigation to satisfy complex high-level tasks expressed as linear temporal logic (LTL). We propose a model-free framework using deep reinforcement learning (DRL) where the underlying dynamic system is unknown (an opaque box). Unlike prior work, this paper considers scenarios where the given LTL specification might be infeasible and therefore cannot be accomplished globally. Instead of modifying the given LTL formula, we provide a general DRL-based approach to satisfy it with minimal violation. To do this, we transform a previously multi-objective DRL problem, which requires simultaneous automata satisfaction and minimum violation cost, into a single objective. By guiding the DRL agent with a sampling-based path planning algorithm for the potentially infeasible LTL task, the proposed approach mitigates the myopic tendencies of DRL, which are often an issue when learning general LTL tasks that can have long or infinite horizons. This is achieved by decomposing an infeasible LTL formula into several reach-avoid sub-tasks with shorter horizons, which can be trained in a modular DRL architecture. Furthermore, we overcome the challenge of the exploration process for DRL in complex and cluttered environments by using path planners to design rewards that are dense in the configuration space. The benefits of the presented approach are demonstrated through testing on various complex nonlinear systems and compared with state-of-the-art baselines. The Video demonstration can be found here:https://youtu.be/jBhx6Nv224E. "
+}

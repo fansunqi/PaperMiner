@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Machine Translation Metrics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "UNITE (Unified Translation Evaluation)",
+    "Pseudo-labeled data pre-training",
+    "Data cropping",
+    "Ranking-based score normalization",
+    "Direct Assessment (DA)",
+    "Multidimensional Quality Metrics (MQM)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "634f6ae490e50fcafdcb65a1",
+  "title": "Alibaba-Translate China's Submission for WMT 2022 Metrics Shared Task",
+  "abstract": "  In this report, we present our submission to the WMT 2022 Metrics Shared Task. We build our system based on the core idea of UNITE (Unified Translation Evaluation), which unifies source-only, reference-only, and source-reference-combined evaluation scenarios into one single model. Specifically, during the model pre-training phase, we first apply the pseudo-labeled data examples to continuously pre-train UNITE. Notably, to reduce the gap between pre-training and fine-tuning, we use data cropping and a ranking-based score normalization strategy. During the fine-tuning phase, we use both Direct Assessment (DA) and Multidimensional Quality Metrics (MQM) data from past years' WMT competitions. Specially, we collect the results from models with different pre-trained language model backbones, and use different ensembling strategies for involved translation directions. "
+}

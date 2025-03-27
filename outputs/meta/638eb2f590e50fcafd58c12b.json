@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://astra-vision.github.io/SceneRF"
+  ],
+  "tasks": [
+    "3D scene reconstruction"
+  ],
+  "datasets": [
+    "indoor BundleFusion",
+    "outdoor SemanticKITTI"
+  ],
+  "methods": [
+    "self-supervised monocular scene reconstruction",
+    "neural radiance fields (NeRF)",
+    "probabilistic sampling strategy"
+  ],
+  "results": [
+    "outperforms all recent baselines for novel depth views synthesis and scene reconstruction"
+  ],
+  "paper_id": "638eb2f590e50fcafd58c12b",
+  "title": "SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance\n  Fields",
+  "abstract": "  3D reconstruction from 2D image was extensively studied, training with depth supervision. To relax the dependence to costly-acquired datasets, we propose SceneRF, a self-supervised monocular scene reconstruction method using only posed image sequences for training. Fueled by the recent progress in neural radiance fields (NeRF) we optimize a radiance field though with explicit depth optimization and a novel probabilistic sampling strategy to efficiently handle large scenes. At inference, a single input image suffices to hallucinate novel depth views which are fused together to obtain 3D scene reconstruction. Thorough experiments demonstrate that we outperform all recent baselines for novel depth views synthesis and scene reconstruction, on indoor BundleFusion and outdoor SemanticKITTI. Our code is available at https://astra-vision.github.io/SceneRF. "
+}

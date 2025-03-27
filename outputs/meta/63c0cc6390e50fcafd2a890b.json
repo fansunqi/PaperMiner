@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning Continuous Mesh Representation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Spherical Implicit Surface (SIS)"
+  ],
+  "results": [
+    "Comparable with state-of-the-art methods for fixed resolution",
+    "Significantly outperforms methods for arbitrary resolutions"
+  ],
+  "paper_id": "63c0cc6390e50fcafd2a890b",
+  "title": "Learning Continuous Mesh Representation with Spherical Implicit Surface",
+  "abstract": "  As the most common representation for 3D shapes, mesh is often stored discretely with arrays of vertices and faces. However, 3D shapes in the real world are presented continuously. In this paper, we propose to learn a continuous representation for meshes with fixed topology, a common and practical setting in many faces-, hand-, and body-related applications. First, we split the template into multiple closed manifold genus-0 meshes so that each genus-0 mesh can be parameterized onto the unit sphere. Then we learn spherical implicit surface (SIS), which takes a spherical coordinate and a global feature or a set of local features around the coordinate as inputs, predicting the vertex corresponding to the coordinate as an output. Since the spherical coordinates are continuous, SIS can depict a mesh in an arbitrary resolution. SIS representation builds a bridge between discrete and continuous representation in 3D shapes. Specifically, we train SIS networks in a self-supervised manner for two tasks: a reconstruction task and a super-resolution task. Experiments show that our SIS representation is comparable with state-of-the-art methods that are specifically designed for meshes with a fixed resolution and significantly outperforms methods that work in arbitrary resolutions. "
+}

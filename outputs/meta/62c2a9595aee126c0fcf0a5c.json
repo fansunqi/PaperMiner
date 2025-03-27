@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Performative Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Performative Reinforcement Learning",
+    "Dual perspective of the reinforcement learning problem",
+    "Gradient ascent steps",
+    "Access to a finite number of trajectories"
+  ],
+  "results": [
+    "Convergence to a performatively stable policy",
+    "Convergence to a stable solution",
+    "Dependence of convergence on various parameters"
+  ],
+  "paper_id": "62c2a9595aee126c0fcf0a5c",
+  "title": "Performative Reinforcement Learning",
+  "abstract": "  We introduce the framework of performative reinforcement learning where the policy chosen by the learner affects the underlying reward and transition dynamics of the environment. Following the recent literature on performative prediction~\\cite{Perdomo et. al., 2020}, we introduce the concept of performatively stable policy. We then consider a regularized version of the reinforcement learning problem and show that repeatedly optimizing this objective converges to a performatively stable policy under reasonable assumptions on the transition dynamics. Our proof utilizes the dual perspective of the reinforcement learning problem and may be of independent interest in analyzing the convergence of other algorithms with decision-dependent environments. We then extend our results for the setting where the learner just performs gradient ascent steps instead of fully optimizing the objective, and for the setting where the learner has access to a finite number of trajectories from the changed environment. For both settings, we leverage the dual formulation of performative reinforcement learning and establish convergence to a stable solution. Finally, through extensive experiments on a grid-world environment, we demonstrate the dependence of convergence on various parameters e.g. regularization, smoothness, and the number of samples. "
+}

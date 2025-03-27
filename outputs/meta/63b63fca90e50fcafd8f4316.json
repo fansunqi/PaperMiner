@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Timeline Summarization"
+  ],
+  "datasets": [
+    "Chinese large-scale timeline summarization dataset",
+    "English timeline dataset",
+    "Timeline 17 dataset"
+  ],
+  "methods": [
+    "Unified Timeline Summarizer (UTS)",
+    "Graph-based event encoder",
+    "Event-level attention"
+  ],
+  "results": [
+    "State-of-the-art performance in automatic and human evaluations"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f4316",
+  "title": "Follow the Timeline! Generating Abstractive and Extractive Timeline\n  Summary in Chronological Order",
+  "abstract": "  Nowadays, time-stamped web documents related to a general news query floods spread throughout the Internet, and timeline summarization targets concisely summarizing the evolution trajectory of events along the timeline. Unlike traditional document summarization, timeline summarization needs to model the time series information of the input events and summarize important events in chronological order. To tackle this challenge, in this paper, we propose a Unified Timeline Summarizer (UTS) that can generate abstractive and extractive timeline summaries in time order. Concretely, in the encoder part, we propose a graph-based event encoder that relates multiple events according to their content dependency and learns a global representation of each event. In the decoder part, to ensure the chronological order of the abstractive summary, we propose to extract the feature of event-level attention in its generation process with sequential information remained and use it to simulate the evolutionary attention of the ground truth summary. The event-level attention can also be used to assist in extracting summary, where the extracted summary also comes in time sequence. We augment the previous Chinese large-scale timeline summarization dataset and collect a new English timeline dataset. Extensive experiments conducted on these datasets and on the out-of-domain Timeline 17 dataset show that UTS achieves state-of-the-art performance in terms of both automatic and human evaluations. "
+}

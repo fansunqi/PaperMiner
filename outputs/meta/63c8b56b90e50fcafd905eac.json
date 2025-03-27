@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph mining tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph attention networks (GAT)",
+    "Residual connections",
+    "Adaptive depth"
+  ],
+  "results": [
+    "Oversquashing phenomenon mitigation",
+    "Improved GAT model performance",
+    "ADGAT model effectiveness"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905eac",
+  "title": "Adaptive Depth Graph Attention Networks",
+  "abstract": "  As one of the most popular GNN architectures, the graph attention networks (GAT) is considered the most advanced learning architecture for graph representation and has been widely used in various graph mining tasks with impressive results. However, since GAT was proposed, none of the existing studies have provided systematic insight into the relationship between the performance of GAT and the number of layers, which is a critical issue in guiding model performance improvement. In this paper, we perform a systematic experimental evaluation and based on the experimental results, we find two important facts: (1) the main factor limiting the accuracy of the GAT model as the number of layers increases is the oversquashing phenomenon; (2) among the previous improvements applied to the GNN model, only the residual connection can significantly improve the GAT model performance. We combine these two important findings to provide a theoretical explanation that it is the residual connection that mitigates the loss of original feature information due to oversquashing and thus improves the deep GAT model performance. This provides empirical insights and guidelines for researchers to design the GAT variant model with appropriate depth and well performance. To demonstrate the effectiveness of our proposed guidelines, we propose a GAT variant model-ADGAT that adaptively selects the number of layers based on the sparsity of the graph, and experimentally demonstrate that the effectiveness of our model is significantly improved over the original GAT. "
+}

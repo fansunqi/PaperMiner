@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video Text Retrieval"
+  ],
+  "datasets": [
+    "MSR-VTT",
+    "MSVD",
+    "LSMDC",
+    "DiDemo",
+    "ActivityNet"
+  ],
+  "methods": [
+    "Multimodal Video Adapter (MV-Adapter)",
+    "Temporal Adaptation Module",
+    "Cross-Modal Interaction Module"
+  ],
+  "results": [
+    "On five widely used VTR benchmarks, MV-Adapter consistently outperforms various competing methods with large margins"
+  ],
+  "paper_id": "63ca069890e50fcafd683058",
+  "title": "Multimodal Video Adapter for Parameter Efficient Video Text Retrieval",
+  "abstract": "  State-of-the-art video-text retrieval (VTR) methods usually fully fine-tune the pre-trained model (e.g. CLIP) on specific datasets, which may suffer from substantial storage costs in practical applications since a separate model per task needs to be stored. To overcome this issue, we present the premier work on performing parameter-efficient VTR from the pre-trained model, i.e., only a small number of parameters are tunable while freezing the backbone. Towards this goal, we propose a new method dubbed Multimodal Video Adapter (MV-Adapter) for efficiently transferring the knowledge in the pre-trained CLIP from image-text to video-text. Specifically, MV-Adapter adopts bottleneck structures in both video and text branches and introduces two novel components. The first is a Temporal Adaptation Module employed in the video branch to inject global and local temporal contexts. We also learn weights calibrations to adapt to the dynamic variations across frames. The second is a Cross-Modal Interaction Module that generates weights for video/text branches through a shared parameter space, for better aligning between modalities. Thanks to above innovations, MV-Adapter can achieve on-par or better performance than standard fine-tuning with negligible parameters overhead. Notably, on five widely used VTR benchmarks (MSR-VTT, MSVD, LSMDC, DiDemo, and ActivityNet), MV-Adapter consistently outperforms various competing methods in V2T/T2V tasks with large margins. Codes will be released. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "View synchronisation in Byzantine Fault Tolerant State Machine Replication (SMR)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Fever: a new view synchronisation protocol"
+  ],
+  "results": [
+    "Asymptotically optimal quadratic worst-case word complexity",
+    "Linear message complexity and responsiveness",
+    "Resilience of t",
+    "Worst-case word complexity O(fn+n)",
+    "Worst-case latency O(\u0394f + \u03b4)"
+  ],
+  "paper_id": "63d340e890e50fcafd9106a0",
+  "title": "Fever: Optimal Responsive View Synchronisation",
+  "abstract": "  View synchronisation is an important component of many modern Byzantine Fault Tolerant State Machine Replication (SMR) systems in the partial synchrony model. Roughly, the efficiency of view synchronisation is measured as the word complexity and latency required for moving from being synchronised in a view of one correct leader to being synchronised in the view of the next correct leader.   The efficiency of view synchronisation has emerged as a major bottleneck in the efficiency of SMR systems as a whole. A key question remained open: Do there exist view synchronisation protocols with asymptotically optimal quadratic worst-case word complexity that also obtain linear message complexity and responsiveness when moving between consecutive correct leaders?   We answer this question affirmatively with a new view synchronisation protocol for partial synchrony assuming minimal clock synchronisation, called \\emph{Fever}. If $n$ is the number of processors and $t$ is the largest integer $<n/3$, then Fever has resilience $t$, and in all executions with at most $0\\leq f\\leq t$ Byzantine parties and network delays of at most $\\delta \\leq \\Delta$ after $GST$ (where $f$ and $\\delta$ are unknown), Fever has worst-case word complexity $O(fn+n)$ and worst-case latency $O(\\Delta f + \\delta)$. "
+}

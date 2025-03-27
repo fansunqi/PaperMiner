@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition (ASR) performance evaluation"
+  ],
+  "datasets": [
+    "SUBAK.KO",
+    "BanSpeech"
+  ],
+  "methods": [
+    "Deep convolutional neural network (CNN)",
+    "Layer normalization",
+    "Connectionist Temporal Classification (CTC) loss criterion"
+  ],
+  "results": [
+    "ASR model struggles with spontaneous speech domains",
+    "Better performance in read speech domains",
+    "BanSpeech provides a challenging evaluation benchmark"
+  ],
+  "paper_id": "635753cd90e50fcafddddf1a",
+  "title": "Investigating the effect of domain selection on automatic speech\n  recognition performance: a case study on Bangladeshi Bangla",
+  "abstract": "  The performance of data-driven natural language processing systems is contingent upon the quality of corpora. However, principal corpus design criteria are often not identified and examined adequately, particularly in the speech processing discipline. Speech corpora development requires additional attention with regard to clean/noisy, read/spontaneous, multi-talker speech, accents/dialects, etc. Domain selection is also a crucial decision point in speech corpus development. In this study, we demonstrate the significance of domain selection by assessing a state-of-the-art Bangla automatic speech recognition (ASR) model on a novel multi-domain Bangladeshi Bangla ASR evaluation benchmark - BanSpeech, which contains 7.2 hours of speech and 9802 utterances from 19 distinct domains. The ASR model has been trained with deep convolutional neural network (CNN), layer normalization technique, and Connectionist Temporal Classification (CTC) loss criterion on SUBAK.KO, a mostly read speech corpus for the low-resource and morphologically rich language Bangla. Experimental evaluation reveals the ASR model on SUBAK.KO faces difficulty recognizing speech from domains with mostly spontaneous speech and has a high number of out-of-vocabulary (OOV) words. The same ASR model, on the other hand, performs better in read speech domains and contains fewer OOV words. In addition, we report the outcomes of our experiments with layer normalization, input feature extraction, number of convolutional layers, etc., and set a baseline on SUBAK.KO. The BanSpeech will be publicly available to meet the need for a challenging evaluation benchmark for Bangla ASR. "
+}

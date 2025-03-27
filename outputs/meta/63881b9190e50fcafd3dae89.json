@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Learning Sequence to Sequence Information"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transfer Entropy Bottleneck (TEB)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63881b9190e50fcafd3dae89",
+  "title": "Transfer Entropy Bottleneck: Learning Sequence to Sequence Information\n  Transfer",
+  "abstract": "  When presented with a data stream of two statistically dependent variables, predicting the future of one of the variables (the target stream) can benefit from information about both its history and the history of the other variable (the source stream). For example, fluctuations in temperature at a weather station can be predicted using both temperatures and barometric readings. However, a challenge when modelling such data is that it is easy for a neural network to rely on the greatest joint correlations within the target stream, which may ignore a crucial but small information transfer from the source to the target stream. As well, there are often situations where the target stream may have previously been modelled independently and it would be useful to use that model to inform a new joint model. Here, we develop an information bottleneck approach for conditional learning on two dependent streams of data. Our method, which we call Transfer Entropy Bottleneck (TEB), allows one to learn a model that bottlenecks the directed information transferred from the source variable to the target variable, while quantifying this information transfer within the model. As such, TEB provides a useful new information bottleneck approach for modelling two statistically dependent streams of data in order to make predictions about one of them. "
+}

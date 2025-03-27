@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Planar Object Tracking"
+  ],
+  "datasets": [
+    "POT-210",
+    "POIC"
+  ],
+  "methods": [
+    "Weighted Optical Flow Tracker (WOFT)"
+  ],
+  "results": [
+    "State-of-the-art performance on POT-210 and POIC"
+  ],
+  "paper_id": "63d340e890e50fcafd9107fb",
+  "title": "Planar Object Tracking via Weighted Optical Flow",
+  "abstract": "  We propose WOFT -- a novel method for planar object tracking that estimates a full 8 degrees-of-freedom pose, i.e. the homography w.r.t. a reference view. The method uses a novel module that leverages dense optical flow and assigns a weight to each optical flow correspondence, estimating a homography by weighted least squares in a fully differentiable manner. The trained module assigns zero weights to incorrect correspondences (outliers) in most cases, making the method robust and eliminating the need of the typically used non-differentiable robust estimators like RANSAC. The proposed weighted optical flow tracker (WOFT) achieves state-of-the-art performance on two benchmarks, POT-210 and POIC, tracking consistently well across a wide range of scenarios. "
+}

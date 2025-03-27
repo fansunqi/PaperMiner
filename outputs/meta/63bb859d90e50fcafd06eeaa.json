@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Continuous Control Tasks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CCEP (Centralized Cooperative Exploration Policy)"
+  ],
+  "results": [
+    "Higher exploration capacity",
+    "Outperforms state-of-the-art methods"
+  ],
+  "paper_id": "63bb859d90e50fcafd06eeaa",
+  "title": "Centralized Cooperative Exploration Policy for Continuous Control Tasks",
+  "abstract": "  The deep reinforcement learning (DRL) algorithm works brilliantly on solving various complex control tasks. This phenomenal success can be partly attributed to DRL encouraging intelligent agents to sufficiently explore the environment and collect diverse experiences during the agent training process. Therefore, exploration plays a significant role in accessing an optimal policy for DRL. Despite recent works making great progress in continuous control tasks, exploration in these tasks has remained insufficiently investigated. To explicitly encourage exploration in continuous control tasks, we propose CCEP (Centralized Cooperative Exploration Policy), which utilizes underestimation and overestimation of value functions to maintain the capacity of exploration. CCEP first keeps two value functions initialized with different parameters, and generates diverse policies with multiple exploration styles from a pair of value functions. In addition, a centralized policy framework ensures that CCEP achieves message delivery between multiple policies, furthermore contributing to exploring the environment cooperatively. Extensive experimental results demonstrate that CCEP achieves higher exploration capacity. Empirical analysis shows diverse exploration styles in the learned policies by CCEP, reaping benefits in more exploration regions. And this exploration capacity of CCEP ensures it outperforms the current state-of-the-art methods across multiple continuous control tasks shown in experiments. "
+}

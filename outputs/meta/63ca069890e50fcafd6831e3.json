@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D reconstruction",
+    "disparity estimation"
+  ],
+  "datasets": [
+    "stereoscopic images",
+    "disparity maps",
+    "structured light projections on medical phantoms and ex vivo tissue",
+    "virtual scenes"
+  ],
+  "methods": [
+    "multi task learning (MTL)",
+    "structured light reconstruction"
+  ],
+  "results": [
+    "MTL with structured light improves disparity training without increasing the number of model parameters",
+    "MTL setup outperformed STL network in every validation test",
+    "STL error was 1.4 times worse than the best MTL performance when training data is limited"
+  ],
+  "paper_id": "63ca069890e50fcafd6831e3",
+  "title": "Regularising disparity estimation via multi task learning with\n  structured light reconstruction",
+  "abstract": "  3D reconstruction is a useful tool for surgical planning and guidance. However, the lack of available medical data stunts research and development in this field, as supervised deep learning methods for accurate disparity estimation rely heavily on large datasets containing ground truth information. Alternative approaches to supervision have been explored, such as self-supervision, which can reduce or remove entirely the need for ground truth. However, no proposed alternatives have demonstrated performance capabilities close to what would be expected from a supervised setup. This work aims to alleviate this issue. In this paper, we investigate the learning of structured light projections to enhance the development of direct disparity estimation networks. We show for the first time that it is possible to accurately learn the projection of structured light on a scene, implicitly learning disparity. Secondly, we \\textcolor{black}{explore the use of a multi task learning (MTL) framework for the joint training of structured light and disparity. We present results which show that MTL with structured light improves disparity training; without increasing the number of model parameters. Our MTL setup outperformed the single task learning (STL) network in every validation test. Notably, in the medical generalisation test, the STL error was 1.4 times worse than that of the best MTL performance. The benefit of using MTL is emphasised when the training data is limited.} A dataset containing stereoscopic images, disparity maps and structured light projections on medical phantoms and ex vivo tissue was created for evaluation together with virtual scenes. This dataset will be made publicly available in the future. "
+}

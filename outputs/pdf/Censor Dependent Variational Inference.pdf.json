@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "https://github.com/ChuanhuiLiu/CDVI"
+  ],
+  "tasks": [
+    "Survival analysis",
+    "Latent variable survival models"
+  ],
+  "datasets": [
+    "SUPPORT",
+    "FLCHAIN",
+    "NWTCO",
+    "METABRIC",
+    "WHAS",
+    "GBSG",
+    "PBC"
+  ],
+  "methods": [
+    "Censor-dependent variational inference",
+    "CD-CVAE",
+    "Importance sampling",
+    "Delta methods"
+  ],
+  "results": [
+    "C-index",
+    "Brier score",
+    "Time-dependent C-index"
+  ],
+  "title": "Censor Dependent Variational Inference.pdf",
+  "abstract": "This paper provides a comprehensive analysis of variational inference in latent variable models for survival analysis, emphasizing the distinctive challenges associated with applying variational methods to survival data. We identify a critical weakness in the existing methodology, demon- strating how a poorly designed variational distri- bution may hinder the objective of survival anal- ysis tasks\u2014modeling time-to-event distributions. We prove that the optimal variational distribu- tion, which perfectly bounds the log-likelihood, may depend on the censoring mechanism. To address this issue, we propose censor-dependent variational inference (CDVI), tailored for latent variable models in survival analysis. More prac- tically, we introduce CD-CVAE, a V-structure Variational Autoencoder (VAE) designed for the scalable implementation of CDVI. Further dis- cussion extends some existing theories and train- ing techniques to survival analysis. Extensive ex- periments validate our analysis and demonstrate signi\ufb01cant improvements in the estimation of in- dividual survival distributions. Codes can be found at https://github.com/ChuanhuiLiu/CDVI. 1. Introduction Survival analysis, a fundamental topic in statistics, \ufb01nds wide-ranging applications across healthcare, insurance, quality management, and \ufb01nance. It focuses on modeling the relationship between time-to-event outcomes and indi- vidual demographic covariates, where the event of interest could be death, disease progression, or similar occurrences. A key challenge in survival analysis arises from censored observations, which provide only partial information about the survival time, necessitating specialized methods to han- dle such data effectively. Deep learning has emerged as a powerful paradigm to ad- vance survival analysis (Wiegrebe et al., 2024). Recent studies focus on modeling time-to-event distributions via 1Department of Statistics, Purdue University, USA. Correspon- dence to: Xiao Wang <wangxiao@purdue.edu>. latent variable survival models (LVSMs), applying various probabilistic assumptions and inference techniques. For ex- ample, Ranganath et al. (2016) assumed that the prior of Z belongs to the class of deep exponential family distri- butions (Brown, 1986). Instead, deep survival machine (Nagpal et al., 2021a) considered the \ufb01nite discrete latent space, and the time-to-event distribution is one of the \ufb01- nite Gumbel or normal distributions. For discrete time- to-event, (Xiu et al., 2020) modeled a softmax-activated neural network incorporating the Nelson-Aalen estimator (Aalen, 1978), while Apell\u00b4aniz et al. (2024) followed a similar setup, developing variational autoencoders (VAEs) (Kingma & Welling, 2014; Rezende et al., 2014) for con- tinuous time-to-event. These new advances of LVSM have demonstrated superior performance across various metrics, including the time-dependent Concordance Index (Antolini et al., 2005), compared to Accelerated Failure Time (AFT) (Miller, 1976) and Cox Proportional Hazard (CoxPH) (Cox, 1972) models. The exacted latent informa- tion also enables various downstream tasks based on the extracted latent representation (Manduchi et al., 2022). A unique aspect of LVSM optimization is its reliance on variational methods to maintain computational ef\ufb01ciency, due to the intractability of the objective function. There- fore, the variational inference (VI) framework in LVSM is critical to LVSM performance and must be tailored the core task of survival analysis\u2014modeling the time-to-event dis- tribution. Despite extensive research on the optimality of Variational Inference (VI), its applicability and bene\ufb01ts for time-to- event modeling remain unclear due to the challenges posed by censored data. Furthermore, many aspects of the vari- ational method in existing applications of LVSM remain unclear, including theoretical insights into the inference op- timality of LVSM and domain-speci\ufb01c rationales for prac- tical design choices. This paper provides a comprehensive theoretical analysis of VI optimality and proposes a novel and insightful method- ology of LVSM. The paper is organized as follows: Section 2 provides a comprehensive review of LVSM. Section 3 identi\ufb01es the limitations of variational methods in existing approaches and introduces censor-dependent variational in- ference (CDVI). Section 4 discusses the implementation of 1"
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Discrete Langevin Sampler"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Wasserstein Gradient Flow",
+    "Discrete Langevin Monte Carlo (DLMC)"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62be661f5aee126c0f07ca68",
+  "title": "Discrete Langevin Sampler via Wasserstein Gradient Flow",
+  "abstract": "  It is known that gradient-based MCMC samplers for continuous spaces, such as Langevin Monte Carlo (LMC), can be derived as particle versions of a gradient flow that minimizes KL divergence on a Wasserstein manifold. The superior efficiency of such samplers has motivated several recent attempts to generalize LMC to discrete spaces. However, a fully principled extension of Langevin dynamics to discrete spaces has yet to be achieved, due to the lack of well-defined gradients in the sample space. In this work, we show how the Wasserstein gradient flow can be generalized naturally to discrete spaces. Given the proposed formulation, we demonstrate how a discrete analogue of Langevin dynamics can subsequently be developed. With this new understanding, we reveal how recent gradient-based samplers in discrete spaces can be obtained as special cases by choosing particular discretizations. More importantly, the framework also allows for the derivation of novel algorithms, one of which, \\textit{Discrete Langevin Monte Carlo} (DLMC), is obtained by a factorized estimate of the transition matrix. The DLMC method admits a convenient parallel implementation and time-uniform sampling that achieves larger jump distances. We demonstrate the advantages of DLMC on various binary and categorical distributions. "
+}

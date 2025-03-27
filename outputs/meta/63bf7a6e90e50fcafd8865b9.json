@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "ASR"
+  ],
+  "datasets": [
+    "Switchboard",
+    "Hub5'00",
+    "Hub5'01",
+    "SWB 300h"
+  ],
+  "methods": [
+    "DNN model",
+    "conformer based hybrid HMM ASR system",
+    "Weighted-Simple-Add integration method",
+    "newbob learning rate schedule",
+    "one cycle learning schedule"
+  ],
+  "results": [
+    "x-vector and c-vector reaching on par performance with i-vectors",
+    "~3% relative WER reduction on Switchboard",
+    "17% reduction in overall training time",
+    "~3% relative WER improvement on Hub5'00",
+    "9.0% WER on Hub5'00 and Hub5'01 with training on SWB 300h"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8865b9",
+  "title": "Improving And Analyzing Neural Speaker Embeddings for ASR",
+  "abstract": "  Neural speaker embeddings encode the speaker's speech characteristics through a DNN model and are prevalent for speaker verification tasks. However, few studies have investigated the usage of neural speaker embeddings for an ASR system. In this work, we present our efforts w.r.t integrating neural speaker embeddings into a conformer based hybrid HMM ASR system. For ASR, our improved embedding extraction pipeline in combination with the Weighted-Simple-Add integration method results in x-vector and c-vector reaching on par performance with i-vectors. We further compare and analyze different speaker embeddings. We present our acoustic model improvements obtained by switching from newbob learning rate schedule to one cycle learning schedule resulting in a ~3% relative WER reduction on Switchboard, additionally reducing the overall training time by 17%. By further adding neural speaker embeddings, we gain additional ~3% relative WER improvement on Hub5'00. Our best Conformer-based hybrid ASR system with speaker embeddings achieves 9.0% WER on Hub5'00 and Hub5'01 with training on SWB 300h. "
+}

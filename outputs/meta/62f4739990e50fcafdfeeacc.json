@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/apusmog/apusmog/"
+  ],
+  "tasks": [
+    "Point cloud upsampling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Transformer",
+    "Spherical Mixture of Gaussians"
+  ],
+  "results": [
+    "Outperforms state-of-the-art fixed-ratio methods",
+    "Enables upsampling with any scaling factor, including non-integer values"
+  ],
+  "paper_id": "62f4739990e50fcafdfeeacc",
+  "title": "Arbitrary Point Cloud Upsampling with Spherical Mixture of Gaussians",
+  "abstract": "  Generating dense point clouds from sparse raw data benefits downstream 3D understanding tasks, but existing models are limited to a fixed upsampling ratio or to a short range of integer values. In this paper, we present APU-SMOG, a Transformer-based model for Arbitrary Point cloud Upsampling (APU). The sparse input is firstly mapped to a Spherical Mixture of Gaussians (SMOG) distribution, from which an arbitrary number of points can be sampled. Then, these samples are fed as queries to the Transformer decoder, which maps them back to the target surface. Extensive qualitative and quantitative evaluations show that APU-SMOG outperforms state-of-the-art fixed-ratio methods, while effectively enabling upsampling with any scaling factor, including non-integer values, with a single trained model. The code is available at https://github.com/apusmog/apusmog/ "
+}

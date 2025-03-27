@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time Person-independent Neural Re-rendering for High-quality Human Performance Capture"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Two-branch network",
+    "Feature blending"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods at producing high-fidelity images on unseen people"
+  ],
+  "paper_id": "61baae6a5244ab9dcb6441b4",
+  "title": "LookinGood^{\\pi}: Real-time Person-independent Neural Re-rendering for\n  High-quality Human Performance Capture",
+  "abstract": "  We propose LookinGood^{\\pi}, a novel neural re-rendering approach that is aimed to (1) improve the rendering quality of the low-quality reconstructed results from human performance capture system in real-time; (2) improve the generalization ability of the neural rendering network on unseen people. Our key idea is to utilize the rendered image of reconstructed geometry as the guidance to assist the prediction of person-specific details from few reference images, thus enhancing the re-rendered result. In light of this, we design a two-branch network. A coarse branch is designed to fix some artifacts (i.e. holes, noise) and obtain a coarse version of the rendered input, while a detail branch is designed to predict \"correct\" details from the warped references. The guidance of the rendered image is realized by blending features from two branches effectively in the training of the detail branch, which improves both the warping accuracy and the details' fidelity. We demonstrate that our method outperforms state-of-the-art methods at producing high-fidelity images on unseen people. "
+}

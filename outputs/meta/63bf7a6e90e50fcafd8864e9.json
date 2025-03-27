@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Online Multi-Agent Path Finding Problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sustainable Replan algorithm (SR)",
+    "Sustainable Conflict-Based Search algorithm (SCBS)",
+    "Sustainable Reverse Safe Interval Path Planning algorithm (SRSIPP)"
+  ],
+  "results": [
+    "Significant improvement in computational efficiency",
+    "1.48 times faster than SOTA on average under different agent number settings"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8864e9",
+  "title": "An Efficient Approach to the Online Multi-Agent Path Finding Problem by\n  Using Sustainable Information",
+  "abstract": "  Multi-agent path finding (MAPF) is the problem of moving agents to the goal vertex without collision. In the online MAPF problem, new agents may be added to the environment at any time, and the current agents have no information about future agents. The inability of existing online methods to reuse previous planning contexts results in redundant computation and reduces algorithm efficiency. Hence, we propose a three-level approach to solve online MAPF utilizing sustainable information, which can decrease its redundant calculations. The high-level solver, the Sustainable Replan algorithm (SR), manages the planning context and simulates the environment. The middle-level solver, the Sustainable Conflict-Based Search algorithm (SCBS), builds a conflict tree and maintains the planning context. The low-level solver, the Sustainable Reverse Safe Interval Path Planning algorithm (SRSIPP), is an efficient single-agent solver that uses previous planning context to reduce duplicate calculations. Experiments show that our proposed method has significant improvement in terms of computational efficiency. In one of the test scenarios, our algorithm can be 1.48 times faster than SOTA on average under different agent number settings. "
+}

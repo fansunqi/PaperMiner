@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Community Detection"
+  ],
+  "datasets": [
+    "11 real-world networks",
+    "several synthetic networks with noise"
+  ],
+  "methods": [
+    "High-order node proximity Spectral Clustering on Ratios-of-Eigenvectors (SCOREH+)",
+    "Radial Basis Functions (RBFs)",
+    "Katz index",
+    "K-means algorithm"
+  ],
+  "results": [
+    "SCOREH+ outperforms SC, SCORE, and SCORE+ on most of these networks",
+    "State-of-the-art community structures on all real-world networks and even on noisy synthetic networks"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9948",
+  "title": "SCOREH+: A High-Order Node Proximity Spectral Clustering on\n  Ratios-of-Eigenvectors Algorithm for Community Detection",
+  "abstract": "  Complex network analysis has brought significant advances in uncovering network mesoscopic properties. Community detection is one of the significant features of understanding real-world complex systems. In this paper, we propose a High-order node proximity Spectral Clustering on Ratios-of-Eigenvectors (SCOREH+) algorithm for finding communities in complex networks. This algorithm preserves high-order transitivity information of the network affinity matrix. First, we construct the high-order proximity matrix from the original affinity matrix using the Radial Basis Functions (RBFs) and Katz index. Furthermore, we obtain the normalized Laplacian matrix and the normalized leading eigenvectors. The ratios of the leading eigenvectors aid in mitigating the effect of degree heterogeneity. Moreover, we implement a procedure that joins an additional eigenvector (the $(K+1)^{th}$ leading eigenvector) to the spectrum domain for clustering if the network is considered to be a ``weak signal\" graph. Finally, we apply the K-means algorithm to the spectrum domain for acquiring the node labels. We compare our SCOREH+ algorithm with spectral clustering (SC), Spectral Clustering on Ratios-of-Eigenvectors (SCORE), and SCORE+. To demonstrate the high effectiveness of our algorithm, we conducted comparison experiments on $11$ real-world networks and several synthetic networks with noise. The experimental results demonstrate that our SCOREH+ outperforms SC, SCORE, and SCORE+ on most of these networks. In addition, we find that by tuning the RBFs and their shaping parameters, we can obtain state-of-the-art community structures on all real-world networks and even on noisy synthetic networks. "
+}

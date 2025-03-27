@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://yunqing-me.github.io/Born-Again-FS/"
+  ],
+  "tasks": [
+    "Domain Generalization Few-Shot Classification"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Born-Again Network (BAN) episodic training",
+    "Few-Shot BAN (FS-BAN)",
+    "Mutual Regularization",
+    "Mismatched Teacher",
+    "Meta-Control Temperature"
+  ],
+  "results": [
+    "Improves generalization performance of baseline models",
+    "Achieves state-of-the-art accuracy for DG-FSC"
+  ],
+  "paper_id": "6305970d90e50fcafd35b571",
+  "title": "FS-BAN: Born-Again Networks for Domain Generalization Few-Shot\n  Classification",
+  "abstract": "  Conventional Few-shot classification (FSC) aims to recognize samples from novel classes given limited labeled data. Recently, domain generalization FSC (DG-FSC) has been proposed with the goal to recognize novel class samples from unseen domains. DG-FSC poses considerable challenges to many models due to the domain shift between base classes (used in training) and novel classes (encountered in evaluation). In this work, we make two novel contributions to tackle DG-FSC. Our first contribution is to propose Born-Again Network (BAN) episodic training and comprehensively investigate its effectiveness for DG-FSC. As a specific form of knowledge distillation, BAN has been shown to achieve improved generalization in conventional supervised classification with a closed-set setup. This improved generalization motivates us to study BAN for DG-FSC, and we show that BAN is promising to address the domain shift encountered in DG-FSC. Building on the encouraging findings, our second (major) contribution is to propose Few-Shot BAN (FS-BAN), a novel BAN approach for DG-FSC. Our proposed FS-BAN includes novel multi-task learning objectives: Mutual Regularization, Mismatched Teacher, and Meta-Control Temperature, each of these is specifically designed to overcome central and unique challenges in DG-FSC, namely overfitting and domain discrepancy. We analyze different design choices of these techniques. We conduct comprehensive quantitative and qualitative analysis and evaluation over six datasets and three baseline models. The results suggest that our proposed FS-BAN consistently improves the generalization performance of baseline models and achieves state-of-the-art accuracy for DG-FSC. Project Page: https://yunqing-me.github.io/Born-Again-FS/. "
+}

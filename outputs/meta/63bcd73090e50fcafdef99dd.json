@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Entity resolution"
+  ],
+  "datasets": [
+    "Private and nonprivate data sets",
+    "Household survey data"
+  ],
+  "methods": [
+    "Bayesian graphical approach",
+    "Exchangeable random partition priors",
+    "Distortion model for categorical/discrete record attributes",
+    "Hyperpriors",
+    "Partially collapsed Gibbs sampler"
+  ],
+  "results": [
+    "Highest entity resolution accuracy (F1 score)",
+    "More consistent performance across scenarios"
+  ],
+  "paper_id": "63bcd73090e50fcafdef99dd",
+  "title": "Bayesian Graphical Entity Resolution Using Exchangeable Random Partition\n  Priors",
+  "abstract": "  Entity resolution (record linkage or deduplication) is the process of identifying and linking duplicate records in databases. In this paper, we propose a Bayesian graphical approach for entity resolution that links records to latent entities, where the prior representation on the linkage structure is exchangeable. First, we adopt a flexible and tractable set of priors for the linkage structure, which corresponds to a special class of random partition models. Second, we propose a more realistic distortion model for categorical/discrete record attributes, which corrects a logical inconsistency with the standard hit-miss model. Third, we incorporate hyperpriors to improve flexibility. Fourth, we employ a partially collapsed Gibbs sampler for inferential speedups. Using a selection of private and nonprivate data sets, we investigate the impact of our modeling contributions and compare our model with two alternative Bayesian models. In addition, we conduct a simulation study for household survey data, where we vary distortion, duplication rates and data set size. We find that our model performs more consistently than the alternatives across a variety of scenarios and typically achieves the highest entity resolution accuracy (F1 score). Open source software is available for our proposed methodology, and we provide a discussion regarding our work and future directions. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CVR estimation",
+    "Recommender systems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Entire space counterfactual multi-task model (ESCM$^2$)"
+  ],
+  "results": [
+    "Alleviates intrinsic IEB and PIP issues",
+    "Outperforms baseline models"
+  ],
+  "paper_id": "63520de390e50fcafd60ed0e",
+  "title": "Entire Space Counterfactual Learning: Tuning, Analytical Properties and\n  Industrial Applications",
+  "abstract": "  As a basic research problem for building effective recommender systems, post-click conversion rate (CVR) estimation has long been plagued by sample selection bias and data sparsity issues. To address the data sparsity issue, prevalent methods based on entire space multi-task model leverage the sequential pattern of user actions, i.e. exposure $\\rightarrow$ click $\\rightarrow$ conversion to construct auxiliary learning tasks. However, they still fall short of guaranteeing the unbiasedness of CVR estimates. This paper theoretically demonstrates two defects of these entire space multi-task models: (1) inherent estimation bias (IEB) for CVR estimation, where the CVR estimate is inherently higher than the ground truth; (2) potential independence priority (PIP) for CTCVR estimation, where the causality from click to conversion might be overlooked. This paper further proposes a principled method named entire space counterfactual multi-task model (ESCM$^2$), which employs a counterfactual risk minimizer to handle both IEB and PIP issues at once. To demonstrate the effectiveness of the proposed method, this paper explores its parameter tuning in practice, derives its analytic properties, and showcases its effectiveness in industrial CVR estimation, where ESCM$^2$ can effectively alleviate the intrinsic IEB and PIP issues and outperform baseline models. "
+}

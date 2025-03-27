@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generative data-free quantization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Attention center position-condition generator",
+    "Adversarial loss",
+    "Consistency penalty"
+  ],
+  "results": [
+    "4-bit quantization of Resnet18: 67.55% accuracy",
+    "4-bit quantization of Resnet50: 72.23% accuracy"
+  ],
+  "paper_id": "63c8b59590e50fcafd90ba86",
+  "title": "ACQ: Improving Generative Data-free Quantization Via Attention\n  Correction",
+  "abstract": "  Data-free quantization aims to achieve model quantization without accessing any authentic sample. It is significant in an application-oriented context involving data privacy. Converting noise vectors into synthetic samples through a generator is a popular data-free quantization method, which is called generative data-free quantization. However, there is a difference in attention between synthetic samples and authentic samples. This is always ignored and restricts the quantization performance. First, since synthetic samples of the same class are prone to have homogenous attention, the quantized network can only learn limited modes of attention. Second, synthetic samples in eval mode and training mode exhibit different attention. Hence, the batch-normalization statistics matching tends to be inaccurate. ACQ is proposed in this paper to fix the attention of synthetic samples. An attention center position-condition generator is established regarding the homogenization of intra-class attention. Restricted by the attention center matching loss, the attention center position is treated as the generator's condition input to guide synthetic samples in obtaining diverse attention. Moreover, we design adversarial loss of paired synthetic samples under the same condition to prevent the generator from paying overmuch attention to the condition, which may result in mode collapse. To improve the attention similarity of synthetic samples in different network modes, we introduce a consistency penalty to guarantee accurate BN statistics matching. The experimental results demonstrate that ACQ effectively improves the attention problems of synthetic samples. Under various training settings, ACQ achieves the best quantization performance. For the 4-bit quantization of Resnet18 and Resnet50, ACQ reaches 67.55% and 72.23% accuracy, respectively. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Quantum Annealing",
+    "Combinatorial Optimization Problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "4-clique minor embedding",
+    "Pegasus graph connectivity"
+  ],
+  "results": [
+    "4-clique minor embeddings can use weak chain strengths",
+    "Non standard minor embedding methods could be useful"
+  ],
+  "paper_id": "63d340de90e50fcafd90f771",
+  "title": "4-clique Network Minor Embedding for Quantum Annealers",
+  "abstract": "Quantum annealing is a proposed algorithm for computing solutions to\ncombinatorial optimization problems. Current quantum annealing hardware is\nrelatively sparse and therefore requires graph minor embedding in order to map\nan arbitrarily structured problem onto the sparse, and relatively small,\nquantum annealing processor. This paper proposes a new minor embedding method\ncalled 4-clique minor embedding. This is in contrast to the standard minor\nembedding technique of using a path of linearly connected qubits in order to\nrepresent a logical variable state. The 4-clique minor embedding is possible\nbecause of Pegasus graph connectivity, which is the native hardware graph for\nsome of the current D-Wave quantum annealers. The Pegasus hardware graph has\nmany 4-cliques, and it is possible to form a graph composed entirely of paths\nof connected 4-cliques, on which a problem can be minor embedded. The 4-clique\nchains come at the cost of additional qubit usage on the hardware graph, but\nthey allow for stronger coupling within each chain thereby increasing chain\nintegrity and reducing chain breaks. This 4-clique minor embedding technique is\ndescribed in detail, and is compared against the standard linear path minor\nembedding with some experiments on two D-Wave quantum annealing processors with\nPegasus hardware graphs. 4-clique minor embeddings can use weak chain strengths\nwhile successfully carrying out the computation of minimizing random all-to-all\nspin glass problem instances, in contrast to the linear path minor embeddings\nwhich have high chain break frequencies for weak chain strengths. This work\nshows that non standard minor embedding methods could be useful. For future\nquantum annealing architectures, distributing minor embeddings over more\ndensely connected regions of hardware instead of linear paths may provide more\nrobust computations for minor embedding problems."
+}

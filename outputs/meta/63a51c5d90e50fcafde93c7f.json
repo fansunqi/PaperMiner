@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/piddnad/DDColor"
+  ],
+  "tasks": [
+    "Image colorization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Dual Decoders",
+    "Multi-scale image decoder",
+    "Transformer-based color decoder",
+    "Cross-attention",
+    "Adaptive color queries",
+    "Colorfulness loss"
+  ],
+  "results": [
+    "Significantly superior performance to existing state-of-the-art works"
+  ],
+  "paper_id": "63a51c5d90e50fcafde93c7f",
+  "title": "DDColor: Towards Photo-Realistic and Semantic-Aware Image Colorization\n  via Dual Decoders",
+  "abstract": "  Automatic image colorization is a challenging problem. Due to the high illness and multi-modal uncertainty, directly training a deep neural network usually leads to incorrect semantic colors and low color richness. Recent transformer-based methods can deliver better results, but they often rely on manually designed priors, which are hard to implement and suffer from poor generalization ability. Moreover, they tend to introduce serious color bleeding effects since color attention is performed on single-scale features, thus fail to exploit sufficient semantic information. To address these issues, we propose DDColor, a new end-to-end method with dual decoders for image colorization. Our approach includes a multi-scale image decoder and a transformer-based color decoder. The former restores the spatial resolution of the image, while the latter establishes the correlation between color and semantic representations via cross-attention. Rather than using additional priors, our two decoders work together to leverage multi-scale image features to guide optimization of adaptive color queries, significantly alleviating color bleeding effects. In addition, a simple yet effective colorfulness loss is introduced to further enhance the color richness of generated results. Our extensive experiments demonstrate that DDColor achieves significantly superior performance to existing state-of-the-art works both quantitatively and qualitatively. Codes will be made publicly available at https://github.com/piddnad/DDColor. "
+}

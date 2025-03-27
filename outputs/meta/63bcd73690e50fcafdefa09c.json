@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Local feature matching"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Transformer-based network",
+    "Slimming Transformer (SlimFormer)",
+    "Feature Transition Module (FTM)",
+    "Fine Matches Module"
+  ],
+  "results": [
+    "Significantly outperforms the state-of-the-art methods on several benchmarks"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa09c",
+  "title": "DeepMatcher: A Deep Transformer-based Network for Robust and Accurate\n  Local Feature Matching",
+  "abstract": "  Local feature matching between images remains a challenging task, especially in the presence of significant appearance variations, e.g., extreme viewpoint changes. In this work, we propose DeepMatcher, a deep Transformer-based network built upon our investigation of local feature matching in detector-free methods. The key insight is that local feature matcher with deep layers can capture more human-intuitive and simpler-to-match features. Based on this, we propose a Slimming Transformer (SlimFormer) dedicated for DeepMatcher, which leverages vector-based attention to model relevance among all keypoints and achieves long-range context aggregation in an efficient and effective manner. A relative position encoding is applied to each SlimFormer so as to explicitly disclose relative distance information, further improving the representation of keypoints. A layer-scale strategy is also employed in each SlimFormer to enable the network to assimilate message exchange from the residual block adaptively, thus allowing it to simulate the human behaviour that humans can acquire different matching cues each time they scan an image pair. To facilitate a better adaption of the SlimFormer, we introduce a Feature Transition Module (FTM) to ensure a smooth transition in feature scopes with different receptive fields. By interleaving the self- and cross-SlimFormer multiple times, DeepMatcher can easily establish pixel-wise dense matches at coarse level. Finally, we perceive the match refinement as a combination of classification and regression problems and design Fine Matches Module to predict confidence and offset concurrently, thereby generating robust and accurate matches. Experimentally, we show that DeepMatcher significantly outperforms the state-of-the-art methods on several benchmarks, demonstrating the superior matching capability of DeepMatcher. "
+}

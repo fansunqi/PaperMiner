@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous car path tracking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reinforcement Learning (RL)",
+    "Q-Learning",
+    "CARLA simulation environment"
+  ],
+  "results": [
+    "Low tracking errors",
+    "Adapts to different reference trajectories",
+    "Realistic system with ROS bridge"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa2d2",
+  "title": "Tuning Path Tracking Controllers for Autonomous Cars Using Reinforcement\n  Learning",
+  "abstract": "  This paper proposes an adaptable path tracking control system based on Reinforcement Learning (RL) for autonomous cars. A four-parameter controller shapes the behavior of the vehicle to navigate on lane changes and roundabouts. The tuning of the tracker uses an educated Q-Learning algorithm to minimize the lateral and steering trajectory errors. The CARLA simulation environment was used both for training and testing. The results show the vehicle is able to adapt its behavior to the different types of reference trajectories, navigating safely with low tracking errors. The use of a ROS bridge between the CARLA and the tracker results (i) in a realistic system, and (ii) simplifies the replacement of the CARLA by a real vehicle. An argument on the dependability of the overall architecture based on stability results of non-smooth systems is presented at the end of the paper. "
+}

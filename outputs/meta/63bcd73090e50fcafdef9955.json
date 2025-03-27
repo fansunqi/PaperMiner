@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Differentially Private k-Means Clustering"
+  ],
+  "datasets": [
+    "Wine",
+    "Breast_Cancer"
+  ],
+  "methods": [
+    "k-Means SubClustering",
+    "Exponential DP mechanism"
+  ],
+  "results": [
+    "Improved clustering quality by 4.13 and 2.83 times compared to baseline"
+  ],
+  "paper_id": "63bcd73090e50fcafdef9955",
+  "title": "k-Means SubClustering: A Differentially Private Algorithm with Improved\n  Clustering Quality",
+  "abstract": "  In today's data-driven world, the sensitivity of information has been a significant concern. With this data and additional information on the person's background, one can easily infer an individual's private data. Many differentially private iterative algorithms have been proposed in interactive settings to protect an individual's privacy from these inference attacks. The existing approaches adapt the method to compute differentially private(DP) centroids by iterative Llyod's algorithm and perturbing the centroid with various DP mechanisms. These DP mechanisms do not guarantee convergence of differentially private iterative algorithms and degrade the quality of the cluster. Thus, in this work, we further extend the previous work on 'Differentially Private k-Means Clustering With Convergence Guarantee' by taking it as our baseline. The novelty of our approach is to sub-cluster the clusters and then select the centroid which has a higher probability of moving in the direction of the future centroid. At every Lloyd's step, the centroids are injected with the noise using the exponential DP mechanism. The results of the experiments indicate that our approach outperforms the current state-of-the-art method, i.e., the baseline algorithm, in terms of clustering quality while maintaining the same differential privacy requirements. The clustering quality significantly improved by 4.13 and 2.83 times than baseline for the Wine and Breast_Cancer dataset, respectively. "
+}

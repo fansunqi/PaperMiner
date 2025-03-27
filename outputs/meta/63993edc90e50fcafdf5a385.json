@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://scanents3d.github.io/"
+  ],
+  "tasks": [
+    "Visio-Linguistic Models in 3D Scenes"
+  ],
+  "datasets": [
+    "ScanRefer",
+    "ReferIt3D",
+    "ScanEnts3D"
+  ],
+  "methods": [
+    "Phrase-to-3D-Object Correspondences",
+    "intuitive losses"
+  ],
+  "results": [
+    "Improving SoTA in Nr3D and ScanRefer benchmarks by 4.3% and 5.0% respectively",
+    "Improving SoTA by 13.2 CIDEr points on the Nr3D benchmark"
+  ],
+  "paper_id": "63993edc90e50fcafdf5a385",
+  "title": "ScanEnts3D: Exploiting Phrase-to-3D-Object Correspondences for Improved\n  Visio-Linguistic Models in 3D Scenes",
+  "abstract": "  The two popular datasets ScanRefer [16] and ReferIt3D [3] connect natural language to real-world 3D data. In this paper, we curate a large-scale and complementary dataset extending both the aforementioned ones by associating all objects mentioned in a referential sentence to their underlying instances inside a 3D scene. Specifically, our Scan Entities in 3D (ScanEnts3D) dataset provides explicit correspondences between 369k objects across 84k natural referential sentences, covering 705 real-world scenes. Crucially, we show that by incorporating intuitive losses that enable learning from this novel dataset, we can significantly improve the performance of several recently introduced neural listening architectures, including improving the SoTA in both the Nr3D and ScanRefer benchmarks by 4.3% and 5.0%, respectively. Moreover, we experiment with competitive baselines and recent methods for the task of language generation and show that, as with neural listeners, 3D neural speakers can also noticeably benefit by training with ScanEnts3D, including improving the SoTA by 13.2 CIDEr points on the Nr3D benchmark. Overall, our carefully conducted experimental studies strongly support the conclusion that, by learning on ScanEnts3D, commonly used visio-linguistic 3D architectures can become more efficient and interpretable in their generalization without needing to provide these newly collected annotations at test time. The project's webpage is https://scanents3d.github.io/ . "
+}

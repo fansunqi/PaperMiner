@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Single Image Super-Resolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Feature-domain Adaptive Contrastive Distillation"
+  ],
+  "results": [
+    "PSNR performance improvement",
+    "Subjective image quality improvement"
+  ],
+  "paper_id": "6386c9e090e50fcafdfa0b50",
+  "title": "Feature-domain Adaptive Contrastive Distillation for Efficient Single\n  Image Super-Resolution",
+  "abstract": "  Recently, CNN-based SISR has numerous parameters and high computational cost to achieve better performance, limiting its applicability to resource-constrained devices such as mobile. As one of the methods to make the network efficient, Knowledge Distillation (KD), which transfers teacher's useful knowledge to student, is currently being studied. More recently, KD for SISR utilizes Feature Distillation (FD) to minimize the Euclidean distance loss of feature maps between teacher and student networks, but it does not sufficiently consider how to effectively and meaningfully deliver knowledge from teacher to improve the student performance at given network capacity constraints. In this paper, we propose a feature-domain adaptive contrastive distillation (FACD) method for efficiently training lightweight student SISR networks. We show the limitations of the existing FD methods using Euclidean distance loss, and propose a feature-domain contrastive loss that makes a student network learn richer information from the teacher's representation in the feature domain. In addition, we propose an adaptive distillation that selectively applies distillation depending on the conditions of the training patches. The experimental results show that the student EDSR and RCAN networks with the proposed FACD scheme improves not only the PSNR performance of the entire benchmark datasets and scales, but also the subjective image quality compared to the conventional FD approaches. "
+}

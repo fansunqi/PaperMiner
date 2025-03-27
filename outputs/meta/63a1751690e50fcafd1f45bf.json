@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/zcc861007/CourseProject"
+  ],
+  "tasks": [
+    "Mining Structured Data from Text"
+  ],
+  "datasets": [
+    "Annotated text dataset from medical publications regarding thrombectomy"
+  ],
+  "methods": [
+    "Text2Struct: text annotation scheme, training data processing, machine learning implementation"
+  ],
+  "results": [
+    "Dice coefficient of 0.82 on the test dataset",
+    "Predicted relations well matched to ground-truth annotations"
+  ],
+  "paper_id": "63a1751690e50fcafd1f45bf",
+  "title": "Text2Struct: A Machine Learning Pipeline for Mining Structured Data from\n  Text",
+  "abstract": "  Many analysis and prediction tasks require the extraction of structured data from unstructured texts. However, an annotation scheme and a training dataset have not been available for training machine learning models to mine structured data from text without special templates and patterns. To solve it, this paper presents an end-to-end machine learning pipeline, Text2Struct, including a text annotation scheme, training data processing, and machine learning implementation. We formulated the mining problem as the extraction of metrics and units associated with numerals in the text. Text2Struct was trained and evaluated using an annotated text dataset collected from abstracts of medical publications regarding thrombectomy. In terms of prediction performance, a dice coefficient of 0.82 was achieved on the test dataset. By random sampling, most predicted relations between numerals and entities were well matched to the ground-truth annotations. These results show that Text2Struct is viable for the mining of structured data from text without special templates or patterns. It is anticipated to further improve the pipeline by expanding the dataset and investigating other machine learning models. A code demonstration can be found at: https://github.com/zcc861007/CourseProject "
+}

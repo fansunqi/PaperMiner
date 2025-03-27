@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Memory isolation for constrained devices"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adapting Pip kernel to MPU"
+  ],
+  "results": [
+    "16% overhead on performance and energy consumption",
+    "Attack surface reduced from 100% to 2%",
+    "Privileged operations reduced by 99%",
+    "Pip-MPU takes less than 10 kB of Flash and 550 B of RAM"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88657f",
+  "title": "From MMU to MPU: adaptation of the Pip kernel to constrained devices",
+  "abstract": "  This article presents a hardware-based memory isolation solution for constrained devices. Existing solutions target high-end embedded systems (typically ARM Cortex-A with a Memory Management Unit, MMU) such as seL4 or Pip (formally verified kernels) or target low-end devices such as ACES, MINION, TrustLite, EwoK but with limited flexibility by proposing a single level of isolation. Our approach consists in adapting Pip to inherit its flexibility (multiple levels of isolation) but using the Memory Protection Unit (MPU) instead of the MMU since the MPU is commonly available on constrained embedded systems (typically ARMv7 Cortex-M4 or ARMv8 Cortex-M33 and similar devices). This paper describes our design of Pip-MPU (Pip's variant based on the MPU) and the rationale behind our choices. We validate our proposal with an implementation on an nRF52840 development kit and we perform various evaluations such as memory footprint, CPU cycles and energy consumption. We demonstrate that although our prototyped Pip-MPU causes a 16% overhead on both performance and energy consumption, it can reduce the attack surface of the accessible application memory from 100% down to 2% and the privileged operations by 99%. Pip-MPU takes less than 10 kB of Flash (6 kB for its core components) and 550 B of RAM. "
+}

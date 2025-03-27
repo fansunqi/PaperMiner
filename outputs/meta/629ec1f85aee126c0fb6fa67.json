@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Secure Bidirectional IoT Micro-payments"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Threshold Cryptography",
+    "Lightning Network",
+    "Off-chain Payments"
+  ],
+  "results": [
+    "Fast",
+    "No extra cost overhead",
+    "Scalable",
+    "Negligible energy consumption overhead"
+  ],
+  "paper_id": "629ec1f85aee126c0fb6fa67",
+  "title": "LNGate$^2$: Secure Bidirectional IoT Micro-payments using Bitcoin's\n  Lightning Network and Threshold Cryptography",
+  "abstract": "  Bitcoin has emerged as a revolutionary payment system with its decentralized ledger concept; however it has significant problems such as high transaction fees and low throughput. Lightning Network (LN), which was introduced much later, solves most of these problems with an innovative concept called off-chain payments. With this advancement, Bitcoin has become an attractive venue to perform micro-payments which can also be adopted in many IoT applications (e.g., toll payments). Nevertheless, it is not feasible to host LN and Bitcoin on IoT devices due to the storage, memory, and processing restrictions. Therefore, in this paper, we propose a secure and efficient protocol that enables an IoT device to use LN's functions through an untrusted gateway node. Through this gateway which hosts the LN and Bitcoin nodes, the IoT device can open & close LN channels and send & receive LN payments. This delegation approach is powered by a threshold cryptography based scheme that requires the IoT device and the LN gateway to jointly perform all LN operations. Specifically, we propose thresholdizing LN's Bitcoin public and private keys as well as its public and private keys for the new channel states (i.e., commitment points). We prove with a game theoretical security analysis that the IoT device is secure against collusion attacks. We implemented the proposed protocol by changing LN's source code and thoroughly evaluated its performance using several Raspberry Pis. Our evaluation results show that the protocol; is fast, does not bring extra cost overhead, can be run on low data rate wireless networks, is scalable and has negligible energy consumption overhead. To the best of our knowledge, this is the first work that implemented threshold cryptography in LN. "
+}

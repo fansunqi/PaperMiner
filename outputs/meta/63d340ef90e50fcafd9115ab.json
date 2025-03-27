@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Building Change Detection (BCD)"
+  ],
+  "datasets": [
+    "BANDON"
+  ],
+  "methods": [
+    "Multi-task guided change detection network (MTGCD-Net)",
+    "Pixel-wise classification",
+    "Roof-to-footprint offsets learning",
+    "Identical roof matching flow learning",
+    "Multi-modal distillation module"
+  ],
+  "results": [
+    "Superior performance over previous state-of-the-art competitors"
+  ],
+  "paper_id": "63d340ef90e50fcafd9115ab",
+  "title": "Detecting Building Changes with Off-Nadir Aerial Images",
+  "abstract": "  The tilted viewing nature of the off-nadir aerial images brings severe challenges to the building change detection (BCD) problem: the mismatch of the nearby buildings and the semantic ambiguity of the building facades. To tackle these challenges, we present a multi-task guided change detection network model, named as MTGCD-Net. The proposed model approaches the specific BCD problem by designing three auxiliary tasks, including: (1) a pixel-wise classification task to predict the roofs and facades of buildings; (2) an auxiliary task for learning the roof-to-footprint offsets of each building to account for the misalignment between building roof instances; and (3) an auxiliary task for learning the identical roof matching flow between bi-temporal aerial images to tackle the building roof mismatch problem. These auxiliary tasks provide indispensable and complementary building parsing and matching information. The predictions of the auxiliary tasks are finally fused to the main building change detection branch with a multi-modal distillation module. To train and test models for the BCD problem with off-nadir aerial images, we create a new benchmark dataset, named BANDON. Extensive experiments demonstrate that our model achieves superior performance over the previous state-of-the-art competitors. "
+}

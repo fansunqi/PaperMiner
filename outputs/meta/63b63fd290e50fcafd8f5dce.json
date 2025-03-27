@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Real-time rendering of 3D surfaces"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Radiance textures",
+    "Fragment shader",
+    "Matrix of radiance buckets"
+  ],
+  "results": [
+    "Visual fidelity of complex (off-line) ray-traced render",
+    "Simple diffuse-only graphics computational footprint",
+    "Storage memory footprint balance with variable compression ratio"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5dce",
+  "title": "Radiance Textures for Rasterizing Ray-Traced Data",
+  "abstract": "  Presenting real-time rendering of 3D surfaces using radiance textures for fast synthesis of complex incidence-variable effects and environment interactions. This includes iridescence, parallax occlusion and interior mapping, (specular, regular, diffuse, total-internal) reflections with many bounces, refraction, subsurface scattering, transparency, and possibly more. This method divides textures into a matrix of radiance buckets, where each bucket represent some data at various incidence angles. Data can show final pixel color, or deferred rendering ambient occlusion, reflections, shadow map, etc. Resolution of the final synthesized output is the radiance bucket matrix size. Technique can be implemented with a simple fragment shader. The computational footprint of this technique is of simple diffuse-only graphics, but with visual fidelity of complex (off-line) ray-traced render at the cost of storage memory footprint. Balance between computational footprint and storage memory footprint can be easily achieved with variable compression ratio of repetitive radiance scene textures. "
+}

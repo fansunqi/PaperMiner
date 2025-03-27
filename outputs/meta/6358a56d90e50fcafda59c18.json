@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robot Localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Mesh ICP Localization (MICP-L)",
+    "Simulative Projective Correspondences (SPC)",
+    "NVIDIA RTX hardware acceleration"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6358a56d90e50fcafda59c18",
+  "title": "MICP-L: Mesh ICP for Robot Localization using Hardware-Accelerated Ray\n  Tracing",
+  "abstract": "  Triangle mesh maps have proven to be an efficient 3D environment representation, allowing robots to navigate, indoors as well as in challenging outdoor environments with tunnels, hills and varying slopes. However, any robot navigating autonomously necessarily requires reliable, accurate, and continuous localization in such a mesh map where it plans its paths and missions. We present Mesh ICP Localization (MICP-L), a novel and computationally lightweight method for registering one or more range sensors to a triangle mesh map to continuously localize a robot in 6D even in GPS-denied environments. Simulative Projective Correspondences (SPC) between a range sensor and mesh map are found through simulations accelerated with latest NVIDIA RTX hardware. The optimization of initially guessed poses is performed in parallel even with combined data coming from different range sensors attached to the robot. With this work, we aim to significantly advance the developments in mesh-based localization for autonomous robotic applications. MICP-L is open source and fully integrated with ROS and tf. "
+}

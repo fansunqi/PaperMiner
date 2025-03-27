@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving forward and inverse problems involving hyperbolic PDEs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Characteristics-Informed Neural Networks (CINN)"
+  ],
+  "results": [
+    "CINN improves accuracy over baseline PINN",
+    "Faster training and avoids non-physical solutions"
+  ],
+  "paper_id": "63ae56ca90e50fcafda968a6",
+  "title": "Characteristics-Informed Neural Networks for Forward and Inverse\n  Hyperbolic Problems",
+  "abstract": "  We propose characteristics-informed neural networks (CINN), a simple and efficient machine learning approach for solving forward and inverse problems involving hyperbolic PDEs. Like physics-informed neural networks (PINN), CINN is a meshless machine learning solver with universal approximation capabilities. Unlike PINN, which enforces a PDE softly via a multi-part loss function, CINN encodes the characteristics of the PDE in a general-purpose deep neural network by adding a characteristic layer. This neural network is trained with the usual MSE data-fitting regression loss and does not require residual losses on collocation points. This leads to faster training and can avoid well-known pathologies of gradient descent optimization of multi-part PINN loss functions. This paper focuses on linear transport phenomena, in which case it is shown that, if the characteristic ODEs can be solved exactly, then the output of a CINN is an exact solution of the PDE, even at initialization, preventing the occurrence of non-physical solutions. In addition, a CINN can also be trained with soft penalty constraints that enforce, for example, periodic or Neumman boundary conditions, without losing the property that the output satisfies the PDE automatically. We also propose an architecture that extends the CINN approach to linear hyperbolic systems of PDEs. All CINN architectures proposed here can be trained end-to-end from sample data using standard deep learning software. Experiments with the simple advection equation, a stiff periodic advection equation, and an acoustics problem where data from one field is used to predict the other, unseen field, indicate that CINN is able to improve on the accuracy of the baseline PINN, in some cases by a considerable margin, while also being significantly faster to train and avoiding non-physical solutions. An extension to nonlinear PDEs is also briefly discussed. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural network pruning",
+    "Generalization of neural networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Pruning-at-initialization",
+    "Gradient descent dynamics analysis"
+  ],
+  "results": [
+    "Pruning can improve generalization",
+    "Generalization bound improves with pruning fraction",
+    "Negative pruning fraction affects generalization"
+  ],
+  "paper_id": "63b39cbe90e50fcafdd1e573",
+  "title": "Pruning Before Training May Improve Generalization, Provably",
+  "abstract": "  It has been observed in practice that applying pruning-at-initialization methods to neural networks and training the sparsified networks can not only retain the testing performance of the original dense models, but also sometimes even slightly boost the generalization performance. Theoretical understanding for such experimental observations are yet to be developed. This work makes the first attempt to study how different pruning fractions affect the model's gradient descent dynamics and generalization. Specifically, this work considers a classification task for overparameterized two-layer neural networks, where the network is randomly pruned according to different rates at the initialization. It is shown that as long as the pruning fraction is below a certain threshold, gradient descent can drive the training loss toward zero and the network exhibits good generalization performance. More surprisingly, the generalization bound gets better as the pruning fraction gets larger. To complement this positive result, this work further shows a negative result: there exists a large pruning fraction such that while gradient descent is still able to drive the training loss toward zero (by memorizing noise), the generalization performance is no better than random guessing. This further suggests that pruning can change the feature learning process, which leads to the performance drop of the pruned neural network. "
+}

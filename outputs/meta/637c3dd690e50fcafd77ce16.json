@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/lyclyc52/NeRF_RPN"
+  ],
+  "tasks": [
+    "Object detection in NeRFs"
+  ],
+  "datasets": [
+    "Synthetic and real-world data"
+  ],
+  "methods": [
+    "NeRF-RPN",
+    "Voxel representation",
+    "Multi-scale 3D neural volumetric features"
+  ],
+  "results": [
+    "End-to-end training for 3D bounding boxes",
+    "No class labels required"
+  ],
+  "paper_id": "637c3dd690e50fcafd77ce16",
+  "title": "NeRF-RPN: A general framework for object detection in NeRFs",
+  "abstract": "  This paper presents the first significant object detection framework, NeRF-RPN, which directly operates on NeRF. Given a pre-trained NeRF model, NeRF-RPN aims to detect all bounding boxes of objects in a scene. By exploiting a novel voxel representation that incorporates multi-scale 3D neural volumetric features, we demonstrate it is possible to regress the 3D bounding boxes of objects in NeRF directly without rendering the NeRF at any viewpoint. NeRF-RPN is a general framework and can be applied to detect objects without class labels. We experimented NeRF-RPN with various backbone architectures, RPN head designs and loss functions. All of them can be trained in an end-to-end manner to estimate high quality 3D bounding boxes. To facilitate future research in object detection for NeRF, we built a new benchmark dataset which consists of both synthetic and real-world data with careful labeling and clean up. Code and dataset are available at https://github.com/lyclyc52/NeRF_RPN. "
+}

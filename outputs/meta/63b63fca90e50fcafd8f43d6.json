@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Approximate Dynamic Programming"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Freezing Slow States",
+    "Value Iteration",
+    "Function Approximation"
+  ],
+  "results": [
+    "Effective policies with a fraction of the computational cost",
+    "Not omitting slow states as a viable heuristic"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f43d6",
+  "title": "Faster Approximate Dynamic Programming by Freezing Slow States",
+  "abstract": "  We consider infinite horizon Markov decision processes (MDPs) with fast-slow structure, meaning that certain parts of the state space move \"fast\" (and in a sense, are more influential) while other parts transition more \"slowly.\" Such structure is common in real-world problems where sequential decisions need to be made at high frequencies, yet information that varies at a slower timescale also influences the optimal policy. Examples include: (1) service allocation for a multi-class queue with (slowly varying) stochastic costs, (2) a restless multi-armed bandit with an environmental state, and (3) energy demand response, where both day-ahead and real-time prices play a role in the firm's revenue. Models that fully capture these problems often result in MDPs with large state spaces and large effective time horizons (due to frequent decisions), rendering them computationally intractable. We propose an approximate dynamic programming algorithmic framework based on the idea of \"freezing\" the slow states, solving a set of simpler finite-horizon MDPs (the lower-level MDPs), and applying value iteration (VI) to an auxiliary MDP that transitions on a slower timescale (the upper-level MDP). We also extend the technique to a function approximation setting, where a feature-based linear architecture is used. On the theoretical side, we analyze the regret incurred by each variant of our frozen-state approach. Finally, we give empirical evidence that the frozen-state approach generates effective policies using just a fraction of the computational cost, while illustrating that simply omitting slow states from the decision modeling is often not a viable heuristic. "
+}

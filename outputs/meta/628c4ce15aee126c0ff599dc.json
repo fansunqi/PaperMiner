@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Federated Learning",
+    "Personalization"
+  ],
+  "datasets": [
+    "CIFAR10",
+    "ImageNet"
+  ],
+  "methods": [
+    "Federated Test-time Head Ensemble plus tuning (FedTHE+)"
+  ],
+  "results": [
+    "Robustness under evolving local test set",
+    "Benchmark for assessing performance and robustness"
+  ],
+  "paper_id": "628c4ce15aee126c0ff599dc",
+  "title": "Test-Time Robust Personalization for Federated Learning",
+  "abstract": "  Federated Learning (FL) is a machine learning paradigm where many clients collaboratively learn a shared global model with decentralized training data. Personalization on FL model additionally adapts the global model to different clients, achieving promising results on consistent local training & test distributions. However, for real-world personalized FL applications, it is crucial to go one step further: robustifying FL models under evolving local test set during deployment, where various types of distribution shifts can arise. In this work, we identify the pitfalls of existing works under test-time distribution shifts and propose a novel test-time robust personalization method, namely Federated Test-time Head Ensemble plus tuning (FedTHE+). We illustrate the advancement of FedTHE+ (and its degraded computationally efficient variant FedTHE) over strong competitors, for training various neural architectures (CNN, ResNet, and Transformer) on CIFAR10 and ImageNet and evaluating on diverse test distributions. Along with this, we build a benchmark for assessing performance and robustness of personalized FL methods during deployment. "
+}

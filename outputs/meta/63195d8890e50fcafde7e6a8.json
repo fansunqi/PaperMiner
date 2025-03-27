@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Masked Image Modeling",
+    "Self-supervised Learning"
+  ],
+  "datasets": [
+    "Imagenet-1K"
+  ],
+  "methods": [
+    "MimCo",
+    "Contrastive Learning",
+    "Two-stage Pre-training"
+  ],
+  "results": [
+    "Top-1 finetuning accuracy on Imagenet-1K: 82.53%"
+  ],
+  "paper_id": "63195d8890e50fcafde7e6a8",
+  "title": "MimCo: Masked Image Modeling Pre-training with Contrastive Teacher",
+  "abstract": "  Recent masked image modeling (MIM) has received much attention in self-supervised learning (SSL), which requires the target model to recover the masked part of the input image. Although MIM-based pre-training methods achieve new state-of-the-art performance when transferred to many downstream tasks, the visualizations show that the learned representations are less separable, especially compared to those based on contrastive learning pre-training. This inspires us to think whether the linear separability of MIM pre-trained representation can be further improved, thereby improving the pre-training performance. Since MIM and contrastive learning tend to utilize different data augmentations and training strategies, combining these two pretext tasks is not trivial. In this work, we propose a novel and flexible pre-training framework, named MimCo, which combines MIM and contrastive learning through two-stage pre-training. Specifically, MimCo takes a pre-trained contrastive learning model as the teacher model and is pre-trained with two types of learning targets: patch-level and image-level reconstruction losses.   Extensive transfer experiments on downstream tasks demonstrate the superior performance of our MimCo pre-training framework. Taking ViT-S as an example, when using the pre-trained MoCov3-ViT-S as the teacher model, MimCo only needs 100 epochs of pre-training to achieve 82.53% top-1 finetuning accuracy on Imagenet-1K, which outperforms the state-of-the-art self-supervised learning counterparts. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Weakly-supervised object localization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Causal knowledge distillation",
+    "KD-CI-CAM",
+    "Class Activation Mapping (CAM)",
+    "multi-teacher causal distillation framework"
+  ],
+  "results": [
+    "Learning clear object boundaries",
+    "Addressing the dilemma problem between classification and localization performance"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f5812",
+  "title": "Further Improving Weakly-supervised Object Localization via Causal\n  Knowledge Distillation",
+  "abstract": "  Weakly-supervised object localization aims to indicate the category as well as the scope of an object in an image given only the image-level labels. Most of the existing works are based on Class Activation Mapping (CAM) and endeavor to enlarge the discriminative area inside the activation map to perceive the whole object, yet ignore the co-occurrence confounder of the object and context (e.g., fish and water), which makes the model inspection hard to distinguish object boundaries. Besides, the use of CAM also brings a dilemma problem that the classification and localization always suffer from a performance gap and can not reach their highest accuracy simultaneously. In this paper, we propose a casual knowledge distillation method, dubbed KD-CI-CAM, to address these two under-explored issues in one go. More specifically, we tackle the co-occurrence context confounder problem via causal intervention (CI), which explores the causalities among image features, contexts, and categories to eliminate the biased object-context entanglement in the class activation maps. Based on the de-biased object feature, we additionally propose a multi-teacher causal distillation framework to balance the absorption of classification knowledge and localization knowledge during model training. Extensive experiments on several benchmarks demonstrate the effectiveness of KD-CI-CAM in learning clear object boundaries from confounding contexts and addressing the dilemma problem between classification and localization performance. "
+}

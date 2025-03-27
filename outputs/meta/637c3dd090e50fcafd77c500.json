@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Semantic segmentation"
+  ],
+  "datasets": [
+    "DDD-17",
+    "MVSEC",
+    "DSEC-Semantic"
+  ],
+  "methods": [
+    "HALSIE",
+    "Spiking Neural Network (SNN)",
+    "Artificial Neural Network (ANN)",
+    "Dual-encoders"
+  ],
+  "results": [
+    "State-of-the-art performance",
+    "Parameter efficiency: up to ~33x",
+    "Inference cost: 17.9mJ per cycle"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c500",
+  "title": "HALSIE: Hybrid Approach to Learning Segmentation by Simultaneously\n  Exploiting Image and Event Modalities",
+  "abstract": "  We present HALSIE, a novel hybrid approach for semantic segmentation by simultaneously leveraging image and event modalities. Event cameras are vision sensors that detect changes in per-pixel intensity to generate asynchronous 'event streams'. They offer significant advantages over standard frame-based cameras due to their higher dynamic range, higher temporal resolution, and lack of motion blur. However, events only measure the varying component of the visual signal, which limits their ability to encode scene context. To augment the missing contextual information, we postulate that fusing spatially dense frames with temporally dense events can generate semantic maps with fine-grained predictions. Prior work in event-based vision has achieved outstanding performance but with substantial inference cost, typically beyond 50 mJ per cycle. By redesigning the end-to-end learning framework, we reduce inference cost by up to $\\sim 20\\times$ while retaining similar performance. To achieve this, our method efficiently extracts and fuses the complementary features, exploiting the best of both modalities. In particular, HALSIE comprises dual-encoders with a Spiking Neural Network (SNN) branch to provide rich temporal cues from asynchronous events, and a standard Artificial Neural Network (ANN) branch for extracting spatial information from regular frame data to enable cross-domain learning. Our hybrid network reaches state-of-the-art performance on real-world DDD-17, MVSEC and DSEC-Semantic datasets with up to $\\sim 33\\times$ higher parameter efficiency and favorable inference cost (17.9mJ per cycle), making it suitable for resource-constrained edge applications. Further, the effectiveness of design choices in our approach is evidenced by our thorough ablation study. "
+}

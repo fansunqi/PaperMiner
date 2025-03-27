@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monaural speech enhancement"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Complex-valued deep neural networks (DNNs)",
+    "Gated convolutional recurrent network (GCRN)",
+    "Deep complex convolutional recurrent network (DCCRN)",
+    "Deep complex U-Net (DCUNET)"
+  ],
+  "results": [
+    "Complex-valued DNNs do not provide a performance gain over their real-valued counterparts",
+    "Higher computational costs for complex-valued operations"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885bc7",
+  "title": "Rethinking complex-valued deep neural networks for monaural speech\n  enhancement",
+  "abstract": "  Despite multiple efforts made towards adopting complex-valued deep neural networks (DNNs), it remains an open question whether complex-valued DNNs are generally more effective than real-valued DNNs for monaural speech enhancement. This work is devoted to presenting a critical assessment by systematically examining complex-valued DNNs against their real-valued counterparts. Specifically, we investigate complex-valued DNN atomic units, including linear layers, convolutional layers, long short-term memory (LSTM), and gated linear units. By comparing complex- and real-valued versions of fundamental building blocks in the recently developed gated convolutional recurrent network (GCRN), we show how different mechanisms for basic blocks affect the performance. We also find that the use of complex-valued operations hinders the model capacity when the model size is small. In addition, we examine two recent complex-valued DNNs, i.e. deep complex convolutional recurrent network (DCCRN) and deep complex U-Net (DCUNET). Evaluation results show that both DNNs produce identical performance to their real-valued counterparts while requiring much more computation. Based on these comprehensive comparisons, we conclude that complex-valued DNNs do not provide a performance gain over their real-valued counterparts for monaural speech enhancement, and thus are less desirable due to their higher computational costs. "
+}

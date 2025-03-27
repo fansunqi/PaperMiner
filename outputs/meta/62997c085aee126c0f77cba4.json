@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph similarity computation"
+  ],
+  "datasets": [
+    "Benchmark graph datasets"
+  ],
+  "methods": [
+    "Multi-scale Path-pattern Graph kernel (MPG)"
+  ],
+  "results": [
+    "State-of-the-art performance"
+  ],
+  "paper_id": "62997c085aee126c0f77cba4",
+  "title": "Graph Kernels Based on Multi-scale Graph Embeddings",
+  "abstract": "  Graph kernels are conventional methods for computing graph similarities. However, most of the R-convolution graph kernels face two challenges: 1) They cannot compare graphs at multiple different scales, and 2) they do not consider the distributions of substructures when computing the kernel matrix. These two challenges limit their performances. To mitigate the two challenges, we propose a novel graph kernel called the Multi-scale Path-pattern Graph kernel (MPG), at the heart of which is the multi-scale path-pattern node feature map. Each element of the path-pattern node feature map is the number of occurrences of a path-pattern around a node. A path-pattern is constructed by the concatenation of all the node labels in a path of a truncated BFS tree rooted at each node. Since the path-pattern node feature map can only compare graphs at local scales, we incorporate into it the multiple different scales of the graph structure, which are captured by the truncated BFS trees of different depth. We use the Wasserstein distance to compute the similarity between the multi-scale path-pattern node feature maps of two graphs, considering the distributions of path-patterns. We empirically validate MPG on various benchmark graph datasets and demonstrate that it achieves state-of-the-art performance. "
+}

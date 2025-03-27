@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimization of smooth and geodesically-convex functions in Hadamard manifolds"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Accelerated Riemannian inexact proximal point algorithm"
+  ],
+  "results": [
+    "Achieves convergence rates similar to Nesterov's accelerated gradient descent",
+    "Enforces method to stay within a compact set",
+    "Unknown result even with exact access to the proximal operator"
+  ],
+  "paper_id": "6385788490e50fcafdf498be",
+  "title": "Accelerated Riemannian Optimization: Handling Constraints with a Prox to\n  Bound Geometric Penalties",
+  "abstract": "  We propose a globally-accelerated, first-order method for the optimization of smooth and (strongly or not) geodesically-convex functions in a wide class of Hadamard manifolds. We achieve the same convergence rates as Nesterov's accelerated gradient descent, up to a multiplicative geometric penalty and log factors.   Crucially, we can enforce our method to stay within a compact set we define. Prior fully accelerated works \\emph{resort to assuming} that the iterates of their algorithms stay in some pre-specified compact set, except for two previous methods of limited applicability. For our manifolds, this solves the open question in [KY22] about obtaining global general acceleration without iterates assumptively staying in the feasible set.   In our solution, we design an accelerated Riemannian inexact proximal point algorithm, which is a result that was unknown even with exact access to the proximal operator, and is of independent interest. For smooth functions, we show we can implement the prox step inexactly with first-order methods in Riemannian balls of certain diameter that is enough for global accelerated optimization. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automated Program Repair (APR)",
+    "Patch-Correctness Checking (PCC)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PraPR APR tool"
+  ],
+  "results": [
+    "Extensive PCC dataset (largest manually labeled PCC dataset)",
+    "Surprising findings and guidelines for future PCC research"
+  ],
+  "paper_id": "62d0db0f5aee126c0f9ef658",
+  "title": "Attention: Not Just Another Dataset for Patch-Correctness Checking",
+  "abstract": "  Automated Program Repair (APR) techniques have drawn wide attention from both academia and industry. Meanwhile, one main limitation with the current state-of-the-art APR tools is that patches passing all the original tests are not necessarily the correct ones wanted by developers, i.e., the plausible patch problem. To date, various Patch-Correctness Checking (PCC) techniques have been proposed to address this important issue. However, they are only evaluated on very limited datasets as the APR tools used for generating such patches can only explore a small subset of the search space of possible patches, posing serious threats to external validity to existing PCC studies. In this paper, we construct an extensive PCC dataset (the largest manually labeled PCC dataset to our knowledge) to revisit all state-of-the-art PCC techniques. More specifically, our PCC dataset includes 1,988 patches generated from the recent PraPR APR tool, which leverages highly-optimized bytecode-level patch executions and can exhaustively explore all possible plausible patches within its large predefined search space (including well-known fixing patterns from various prior APR tools). Our extensive study of representative PCC techniques on the new dataset has revealed various surprising findings and provided guidelines for future PCC research. "
+}

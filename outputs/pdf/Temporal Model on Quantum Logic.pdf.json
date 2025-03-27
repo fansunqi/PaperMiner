@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Temporal memory dynamics modeling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Temporal logic",
+    "Memory decay models",
+    "Hierarchical contexts",
+    "Linear and branching temporal models",
+    "Exponential decay",
+    "Bayesian updating",
+    "Directed acyclic graphs"
+  ],
+  "results": [
+    "None"
+  ],
+  "title": "Temporal Model on Quantum Logic.pdf",
+  "abstract": "This paper introduces a uni\ufb01ed theoretical framework for modeling temporal memory dynam- ics, combining concepts from temporal logic, memory decay models, and hierarchical contexts. The framework formalizes the evolution of propositions over time using linear and branching temporal models, incorporating exponential decay (Ebbinghaus forgetting curve) and reactivation mechanisms via Bayesian updating. The hierarchical organization of memory is represented using directed acyclic graphs to model recall dependencies and interference. Novel insights include feedback dynamics, re- cursive in\ufb02uences in memory chains, and the integration of entropy-based recall e\ufb03ciency. This approach provides a foundation for understanding memory processes across cognitive and computa- tional domains. 1 Temporal Logic Extensions: Preliminaries and Linear Time Models 1.1 Preliminaries De\ufb01nition 1. Let t \u2208R represent a temporal parameter. A proposition P \u2208S at time t is denoted P(t). De\ufb01nition 2. The temporal state space of a proposition P is de\ufb01ned as: T (P) = {P(t) | t \u2208R}. De\ufb01nition 3. A temporal transition function f : T (P) \u00d7 R \u2192T (P) governs the evolution of P(t). Formally: P(t + \u2206t) = f(P(t), \u2206t). De\ufb01nition 4. A proposition P is said to evolve in linear time if t progresses along a single deterministic timeline: t1 < t2 =\u21d2P(t1) precedes P(t2). De\ufb01nition 5. A branching time model introduces B(t), a branching set of states: B(t) = {Pb(t) | b \u2208B, B is the set of branches.} Proposition 1 (Deterministic Evolution). If P evolves in linear time, P(t) is unique for all t \u2208R: \u2200t1, t2 \u2208R, t1 \u0338= t2 =\u21d2P(t1) \u0338= P(t2). Proof. Linear time implies a single deterministic timeline. Thus, the mapping t 7\u2192P(t) is injective, ensuring P(t) is unique for each t. 1.2 Linear Temporal Logic De\ufb01nition 6. Temporal operators are de\ufb01ned as: \u2022 Always: \u25a1P holds if P(t) is true for all t \u2208R. \u2022 Eventually: \u2666P holds if P(t) is true for some t \u2208R. \u2022 Next: \u20ddP holds if P(t + \u2206t) is true for a speci\ufb01c \u2206t > 0. 1"
+}

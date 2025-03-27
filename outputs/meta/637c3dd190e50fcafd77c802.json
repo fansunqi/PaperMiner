@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/liren2515/DrapeNet"
+  ],
+  "tasks": [
+    "Garment Generation",
+    "Self-Supervised Draping"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generative Network",
+    "Unsigned Distance Fields",
+    "3D Deformation Field Prediction"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "637c3dd190e50fcafd77c802",
+  "title": "DrapeNet: Garment Generation and Self-Supervised Draping",
+  "abstract": "  Recent approaches to drape garments quickly over arbitrary human bodies leverage self-supervision to eliminate the need for large training sets. However, they are designed to train one network per clothing item, which severely limits their generalization abilities. In our work, we rely on self-supervision to train a single network to drape multiple garments. This is achieved by predicting a 3D deformation field conditioned on the latent codes of a generative network, which models garments as unsigned distance fields. Our pipeline can generate and drape previously unseen garments of any topology, whose shape can be edited by manipulating their latent codes. Being fully differentiable, our formulation makes it possible to recover accurate 3D models of garments from partial observations -- images or 3D scans -- via gradient descent. Our code is publicly available at https://github.com/liren2515/DrapeNet . "
+}

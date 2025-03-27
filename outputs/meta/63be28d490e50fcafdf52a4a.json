@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://sites.google.com/illinois.edu/saber-vae"
+  ],
+  "tasks": [
+    "Highway Vehicle Anomaly Detection"
+  ],
+  "datasets": [
+    "MAAD highway dataset"
+  ],
+  "methods": [
+    "Structural Attention-Based Recurrent VAE (SABeR-VAE)",
+    "vehicle self-attention module",
+    "lane-vehicle attention module",
+    "stochastic Koopman operator-propagated latent space"
+  ],
+  "results": [
+    "improve abnormal AUPR by 18% and 25% respectively on the simulated MAAD highway dataset over STGAE-KDE"
+  ],
+  "paper_id": "63be28d490e50fcafdf52a4a",
+  "title": "Structural Attention-Based Recurrent Variational Autoencoder for Highway\n  Vehicle Anomaly Detection",
+  "abstract": "  In autonomous driving, detection of abnormal driving behaviors is essential to ensure the safety of vehicle controllers. Prior works in vehicle anomaly detection have shown that modeling interactions between agents improves detection accuracy, but certain abnormal behaviors where structured road information is paramount are poorly identified, such as wrong-way and off-road driving. We propose a novel unsupervised framework for highway anomaly detection named Structural Attention-Based Recurrent VAE (SABeR-VAE), which explicitly uses the structure of the environment to aid anomaly identification. Specifically, we use a vehicle self-attention module to learn the relations among vehicles on a road, and a separate lane-vehicle attention module to model the importance of permissible lanes to aid in trajectory prediction. Conditioned on the attention modules' outputs, a recurrent encoder-decoder architecture with a stochastic Koopman operator-propagated latent space predicts the next states of vehicles. Our model is trained end-to-end to minimize prediction loss on normal vehicle behaviors, and is deployed to detect anomalies in (ab)normal scenarios. By combining the heterogeneous vehicle and lane information, SABeR-VAE and its deterministic variant, SABeR-AE, improve abnormal AUPR by 18% and 25% respectively on the simulated MAAD highway dataset over STGAE-KDE. Furthermore, we show that the learned Koopman operator in SABeR-VAE enforces interpretable structure in the variational latent space. The results of our method indeed show that modeling environmental factors is essential to detecting a diverse set of anomalies in deployment. For code implementation, please visit https://sites.google.com/illinois.edu/saber-vae. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speech phase prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Parallel estimation architecture",
+    "Anti-wrapping losses",
+    "Residual convolutional network"
+  ],
+  "results": [
+    "Outperforms iterative Griffin-Lim algorithm",
+    "Improved reconstructed speech quality and generation speed"
+  ],
+  "paper_id": "6386c9e090e50fcafdfa0b75",
+  "title": "Neural Speech Phase Prediction based on Parallel Estimation Architecture\n  and Anti-Wrapping Losses",
+  "abstract": "  This paper presents a novel speech phase prediction model which predicts wrapped phase spectra directly from amplitude spectra by neural networks. The proposed model is a cascade of a residual convolutional network and a parallel estimation architecture. The parallel estimation architecture is composed of two parallel linear convolutional layers and a phase calculation formula, imitating the process of calculating the phase spectra from the real and imaginary parts of complex spectra and strictly restricting the predicted phase values to the principal value interval. To avoid the error expansion issue caused by phase wrapping, we design anti-wrapping training losses defined between the predicted wrapped phase spectra and natural ones by activating the instantaneous phase error, group delay error and instantaneous angular frequency error using an anti-wrapping function. Experimental results show that our proposed neural speech phase prediction model outperforms the iterative Griffin-Lim algorithm and other neural network-based method, in terms of both reconstructed speech quality and generation speed. "
+}

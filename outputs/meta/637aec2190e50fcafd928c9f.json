@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/theophil-trippe/HDC_TUBerlin_version_1"
+  ],
+  "tasks": [
+    "Image deblurring",
+    "Text image deblurring"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep learning",
+    "Augmentation",
+    "Pre-training with synthetic data",
+    "Data-driven estimation of the physical forward model",
+    "U-Net architecture"
+  ],
+  "results": [
+    "Over 70% character recognition accuracy"
+  ],
+  "paper_id": "637aec2190e50fcafd928c9f",
+  "title": "Let's Enhance: A Deep Learning Approach to Extreme Deblurring of Text\n  Images",
+  "abstract": "  This work presents a novel deep-learning-based pipeline for the inverse problem of image deblurring, leveraging augmentation and pre-training with synthetic data. Our results build on our winning submission to the recent Helsinki Deblur Challenge 2021, whose goal was to explore the limits of state-of-the-art deblurring algorithms in a real-world data setting. The task of the challenge was to deblur out-of-focus images of random text, thereby in a downstream task, maximizing an optical-character-recognition-based score function. A key step of our solution is the data-driven estimation of the physical forward model describing the blur process. This enables a stream of synthetic data, generating pairs of ground-truth and blurry images on-the-fly, which is used for an extensive augmentation of the small amount of challenge data provided. The actual deblurring pipeline consists of an approximate inversion of the radial lens distortion (determined by the estimated forward model) and a U-Net architecture, which is trained end-to-end. Our algorithm was the only one passing the hardest challenge level, achieving over $70\\%$ character recognition accuracy. Our findings are well in line with the paradigm of data-centric machine learning, and we demonstrate its effectiveness in the context of inverse problems. Apart from a detailed presentation of our methodology, we also analyze the importance of several design choices in a series of ablation studies. The code of our challenge submission is available under https://github.com/theophil-trippe/HDC_TUBerlin_version_1. "
+}

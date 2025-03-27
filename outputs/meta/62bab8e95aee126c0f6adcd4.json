@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Long-tail visual recognition of animal species in camera-trap images"
+  ],
+  "datasets": [
+    "Camera-trap datasets with different characteristics"
+  ],
+  "methods": [
+    "Square-Root Sampling Branch (SSB)",
+    "square-root sampling",
+    "class-balanced focal loss",
+    "balanced group softmax",
+    "ResNet",
+    "MobileNetV3",
+    "EfficientNetV2",
+    "Swin Transformer"
+  ],
+  "results": [
+    "Square-root sampling improved performance for minority classes by around 15%",
+    "SSB achieved the best or the second-best results for most of the cases for the tail classes",
+    "Minimal loss in performance of head classes compared to square-root sampling"
+  ],
+  "paper_id": "62bab8e95aee126c0f6adcd4",
+  "title": "Bag of Tricks for Long-Tail Visual Recognition of Animal Species in\n  Camera-Trap Images",
+  "abstract": "  Camera traps are a method for monitoring wildlife and they collect a large number of pictures. The number of images collected of each species usually follows a long-tail distribution, i.e., a few classes have a large number of instances, while a lot of species have just a small percentage. Although in most cases these rare species are the ones of interest to ecologists, they are often neglected when using deep-learning models because these models require a large number of images for the training. In this work, a simple and effective framework called Square-Root Sampling Branch (SSB) is proposed, which combines two classification branches that are trained using square-root sampling and instance sampling to improve long-tail visual recognition, and this is compared to state-of-the-art methods for handling this task: square-root sampling, class-balanced focal loss, and balanced group softmax. To achieve a more general conclusion, the methods for handling long-tail visual recognition were systematically evaluated in four families of computer vision models (ResNet, MobileNetV3, EfficientNetV2, and Swin Transformer) and four camera-trap datasets with different characteristics. Initially, a robust baseline with the most recent training tricks was prepared and, then, the methods for improving long-tail recognition were applied. Our experiments show that square-root sampling was the method that most improved the performance for minority classes by around 15%; however, this was at the cost of reducing the majority classes' accuracy by at least 3%. Our proposed framework (SSB) demonstrated itself to be competitive with the other methods and achieved the best or the second-best results for most of the cases for the tail classes; but, unlike the square-root sampling, the loss in the performance of the head classes was minimal, thus achieving the best trade-off among all the evaluated methods. "
+}

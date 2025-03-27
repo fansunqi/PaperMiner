@@ -69,7 +69,7 @@ def extract_paper_info(title, abstract):
     
     try:
         response = client.chat.completions.create(
-            model="glm-4-plus",
+            model="glm-4-flash",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.1,  # 低温度，减少创造性，增加确定性
         )
@@ -125,17 +125,27 @@ def main():
     print(f"Total number of papers: {len(papers)}")
     
     # 创建输出目录
-    output_dir = "outputs/paper_extractions"
-    os.makedirs(output_dir, exist_ok=True)
+    output_dir = "outputs/meta"
+    # os.makedirs(output_dir, exist_ok=True)
     
     # 记录已处理的论文ID
-    processed_ids_file = os.path.join(output_dir, "processed_ids.txt")
-    processed_ids = set()
+    # processed_ids_file = os.path.join(output_dir, "processed_ids.txt")
+    # processed_ids = set()
     
-    # 如果存在处理记录，加载它
-    if os.path.exists(processed_ids_file):
-        with open(processed_ids_file, "r") as f:
-            processed_ids = set(line.strip() for line in f)
+    # # 如果存在处理记录，加载它
+    # if os.path.exists(processed_ids_file):
+    #     with open(processed_ids_file, "r") as f:
+    #         processed_ids = set(line.strip() for line in f)
+    
+    # 记录已处理的论文ID
+    processed_ids = set()
+
+    # 遍历 output_dir 中的文件，提取已处理的论文 ID
+    if os.path.exists(output_dir):
+        for filename in os.listdir(output_dir):
+            if filename.endswith(".json") and filename != "all_results.json":
+                paper_id = filename[:-5]  # 去掉 ".json" 后缀
+                processed_ids.add(paper_id)
     
     # 处理每篇论文
     for paper in tqdm(papers, desc="Extracting paper information"):
@@ -143,6 +153,7 @@ def main():
         
         # 跳过已处理的论文
         if paper_id in processed_ids:
+            print("Skipping paper", paper_id)
             continue
         
         title = paper.get("title", "")
@@ -167,14 +178,15 @@ def main():
             json.dump(info, f, indent=2)
             
         # 记录该论文已处理
-        with open(processed_ids_file, "a") as f:
-            f.write(f"{paper_id}\n")
+        # with open(processed_ids_file, "a") as f:
+        #     f.write(f"{paper_id}\n")
+        print("Processed paper", paper_id)
             
         # 防止API调用过快
         time.sleep(0.5)
     
     # 汇总所有结果
-    aggregate_results(output_dir)
+    # aggregate_results(output_dir)
 
 def aggregate_results(output_dir):
     """汇总所有提取结果到一个文件中"""

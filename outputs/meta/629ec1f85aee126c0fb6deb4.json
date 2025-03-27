@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Training Deep Networks",
+    "Optimization Dynamics Analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Numerical Analysis of PDEs",
+    "Gradient Descent PDE of CNNs"
+  ],
+  "results": [
+    "Numerical instabilities in SGD",
+    "Test accuracy variance due to instabilities",
+    "Edge of Stability (EoS) phenomena",
+    "Role of regularization and network complexity"
+  ],
+  "paper_id": "629ec1f85aee126c0fb6deb4",
+  "title": "Surprising Instabilities in Training Deep Networks and a Theoretical\n  Analysis",
+  "abstract": "  We discover restrained numerical instabilities in current training practices of deep networks with stochastic gradient descent (SGD). We show numerical error (on the order of the smallest floating point bit) induced from floating point arithmetic in training deep nets can be amplified significantly and result in significant test accuracy variance, comparable to the test accuracy variance due to stochasticity in SGD. We show how this is likely traced to instabilities of the optimization dynamics that are restrained, i.e., localized over iterations and regions of the weight tensor space. We do this by presenting a theoretical framework using numerical analysis of partial differential equations (PDE), and analyzing the gradient descent PDE of convolutional neural networks (CNNs). We show that it is stable only under certain conditions on the learning rate and weight decay. We show that rather than blowing up when the conditions are violated, the instability can be restrained. We show this is a consequence of the non-linear PDE associated with the gradient descent of the CNN, whose local linearization changes when over-driving the step size of the discretization, resulting in a stabilizing effect. We link restrained instabilities to the recently discovered Edge of Stability (EoS) phenomena, in which the stable step size predicted by classical theory is exceeded while continuing to optimize the loss and still converging. Because restrained instabilities occur at the EoS, our theory provides new predictions about the EoS, in particular, the role of regularization and the dependence on the network complexity. "
+}

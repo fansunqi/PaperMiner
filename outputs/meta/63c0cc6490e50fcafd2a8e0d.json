@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analyzing Resource Utilization in an HPC System"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Resource usage and application behavior analysis"
+  ],
+  "results": [
+    "CPUs are commonly not fully utilized, especially for GPU-enabled jobs",
+    "Around 64% of both CPU and GPU-enabled jobs used 50% or less of the available host memory capacity",
+    "About 50% of GPU-enabled jobs used up to 25% of the GPU memory",
+    "Memory capacity was not fully utilized in some ways for all jobs"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8e0d",
+  "title": "Analyzing Resource Utilization in an HPC System: A Case Study of NERSC\n  Perlmutter",
+  "abstract": "  Resource demands of HPC applications vary significantly. However, it is common for HPC systems to primarily assign resources on a per-node basis to prevent interference from co-located workloads. This gap between the coarse-grained resource allocation and the varying resource demands can lead to HPC resources being not fully utilized. In this study, we analyze the resource usage and application behavior of NERSC's Perlmutter, a state-of-the-art open-science HPC system with both CPU-only and GPU-accelerated nodes. Our one-month usage analysis reveals that CPUs are commonly not fully utilized, especially for GPU-enabled jobs. Also, around 64% of both CPU and GPU-enabled jobs used 50% or less of the available host memory capacity. Additionally, about 50% of GPU-enabled jobs used up to 25% of the GPU memory, and the memory capacity was not fully utilized in some ways for all jobs. While our study comes early in Perlmutter's lifetime thus policies and application workload may change, it provides valuable insights on performance characterization, application behavior, and motivates systems with more fine-grain resource allocation. "
+}

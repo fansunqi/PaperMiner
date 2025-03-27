@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Face Recognition"
+  ],
+  "datasets": [
+    "XQLFW",
+    "LFW"
+  ],
+  "methods": [
+    "Octuplet Loss"
+  ],
+  "results": [
+    "95.12% face verification accuracy on XQLFW",
+    "99.73% on LFW"
+  ],
+  "paper_id": "62d0db105aee126c0f9ef7ef",
+  "title": "Octuplet Loss: Make Face Recognition Robust to Image Resolution",
+  "abstract": "  Image resolution, or in general, image quality, plays an essential role in the performance of today's face recognition systems. To address this problem, we propose a novel combination of the popular triplet loss to improve robustness against image resolution via fine-tuning of existing face recognition models. With octuplet loss, we leverage the relationship between high-resolution images and their synthetically down-sampled variants jointly with their identity labels. Fine-tuning several state-of-the-art approaches with our method proves that we can significantly boost performance for cross-resolution (high-to-low resolution) face verification on various datasets without meaningfully exacerbating the performance on high-to-high resolution images. Our method applied on the FaceTransformer network achieves 95.12% face verification accuracy on the challenging XQLFW dataset while reaching 99.73% on the LFW database. Moreover, the low-to-low face verification accuracy benefits from our method. We release our code to allow seamless integration of the octuplet loss into existing frameworks. "
+}

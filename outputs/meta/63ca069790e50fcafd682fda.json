@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-objective reinforcement learning (MORL)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Generalized Policy Improvement (GPI)",
+    "active-learning strategies",
+    "novel Dyna-style MORL method"
+  ],
+  "results": [
+    "Guaranteed convergence to optimal solution",
+    "Monotonically improves partial solutions quality",
+    "Outperforms state-of-the-art MORL algorithms"
+  ],
+  "paper_id": "63ca069790e50fcafd682fda",
+  "title": "Sample-Efficient Multi-Objective Learning via Generalized Policy\n  Improvement Prioritization",
+  "abstract": "  Multi-objective reinforcement learning (MORL) algorithms tackle sequential decision problems where agents may have different preferences over (possibly conflicting) reward functions. Such algorithms often learn a set of policies (each optimized for a particular agent preference) that can later be used to solve problems with novel preferences. We introduce a novel algorithm that uses Generalized Policy Improvement (GPI) to define principled, formally-derived prioritization schemes that improve sample-efficient learning. They implement active-learning strategies by which the agent can (i) identify the most promising preferences/objectives to train on at each moment, to more rapidly solve a given MORL problem; and (ii) identify which previous experiences are most relevant when learning a policy for a particular agent preference, via a novel Dyna-style MORL method. We prove our algorithm is guaranteed to always converge to an optimal solution in a finite number of steps, or an $\\epsilon$-optimal solution (for a bounded $\\epsilon$) if the agent is limited and can only identify possibly sub-optimal policies. We also prove that our method monotonically improves the quality of its partial solutions while learning. Finally, we introduce a bound that characterizes the maximum utility loss (with respect to the optimal solution) incurred by the partial solutions computed by our method throughout learning. We empirically show that our method outperforms state-of-the-art MORL algorithms in challenging multi-objective tasks, both with discrete and continuous state and action spaces. "
+}

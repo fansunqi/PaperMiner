@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Robust object recognition",
+    "Shape perception",
+    "Visual processing"
+  ],
+  "datasets": [
+    "MNIST-C"
+  ],
+  "methods": [
+    "Iterative encoder-decoder network",
+    "Reconstruction-based attentional feedback"
+  ],
+  "results": [
+    "Strong generalization performance against various image perturbations",
+    "Outperforms all other models including feedforward CNNs and adversarially trained networks",
+    "Robust to blur, noise, and occlusion corruptions",
+    "Two complementary roles of spatial and feature-based attention",
+    "Model sometimes hallucinates non-existing patterns"
+  ],
+  "paper_id": "63365e7c90e50fcafd1a2b14",
+  "title": "Reconstruction-guided attention improves the robustness and shape\n  processing of neural networks",
+  "abstract": "  Many visual phenomena suggest that humans use top-down generative or reconstructive processes to create visual percepts (e.g., imagery, object completion, pareidolia), but little is known about the role reconstruction plays in robust object recognition. We built an iterative encoder-decoder network that generates an object reconstruction and used it as top-down attentional feedback to route the most relevant spatial and feature information to feed-forward object recognition processes. We tested this model using the challenging out-of-distribution digit recognition dataset, MNIST-C, where 15 different types of transformation and corruption are applied to handwritten digit images. Our model showed strong generalization performance against various image perturbations, on average outperforming all other models including feedforward CNNs and adversarially trained networks. Our model is particularly robust to blur, noise, and occlusion corruptions, where shape perception plays an important role. Ablation studies further reveal two complementary roles of spatial and feature-based attention in robust object recognition, with the former largely consistent with spatial masking benefits in the attention literature (the reconstruction serves as a mask) and the latter mainly contributing to the model's inference speed (i.e., number of time steps to reach a certain confidence threshold) by reducing the space of possible object hypotheses. We also observed that the model sometimes hallucinates a non-existing pattern out of noise, leading to highly interpretable human-like errors. Our study shows that modeling reconstruction-based feedback endows AI systems with a powerful attention mechanism, which can help us understand the role of generating perception in human visual processing. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Community detection in large networks"
+  ],
+  "datasets": [
+    "Benchmark networks",
+    "Empirical networks"
+  ],
+  "methods": [
+    "Label propagation algorithm (LPA)",
+    "Fast label propagation algorithm (FLPA)"
+  ],
+  "results": [
+    "FLPA runs up to 700 times faster than LPA",
+    "Each node is guaranteed to have most links to its assigned community in FLPA partitions"
+  ],
+  "paper_id": "6333bb7890e50fcafdb4c141",
+  "title": "Large network community detection by fast label propagation",
+  "abstract": "  Many networks exhibit some community structure. There exists a wide variety of approaches to detect communities in networks, each offering different interpretations and associated algorithms. For large networks, there is the additional requirement of speed. In this context, the so-called label propagation algorithm (LPA) was proposed, which runs in near-linear time. In partitions uncovered by LPA, each node is ensured to have most links to its assigned community. We here propose a fast variant of LPA (FLPA) that is based on processing a queue of nodes whose neighbourhood recently changed. We test FLPA exhaustively on benchmark networks and empirical networks, finding that it can run up to 700 times faster than LPA. In partitions found by FLPA, we prove that each node is again guaranteed to have most links to its assigned community. Our results show that FLPA is generally preferable to LPA. "
+}

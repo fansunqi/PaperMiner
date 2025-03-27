@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/Fa-ti-ma/NN-proxy-in-optimization"
+  ],
+  "tasks": [
+    "Physics-based optimization problems",
+    "Neural network approximations in optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural network approximations (NN-proxies)",
+    "Particle swarm optimization",
+    "Genetic algorithm"
+  ],
+  "results": [
+    "NN-proxies can lead to erroneous results",
+    "Error is sensitive to the choice of sampling scheme",
+    "Hard to train for higher dimensional functions"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b947",
+  "title": "On Using Deep Learning Proxies as Forward Models in Deep Learning\n  Problems",
+  "abstract": "  Physics-based optimization problems are generally very time-consuming, especially due to the computational complexity associated with the forward model. Recent works have demonstrated that physics-modelling can be approximated with neural networks. However, there is always a certain degree of error associated with this learning, and we study this aspect in this paper. We demonstrate through experiments on popular mathematical benchmarks, that neural network approximations (NN-proxies) of such functions when plugged into the optimization framework, can lead to erroneous results. In particular, we study the behavior of particle swarm optimization and genetic algorithm methods and analyze their stability when coupled with NN-proxies. The correctness of the approximate model depends on the extent of sampling conducted in the parameter space, and through numerical experiments, we demonstrate that caution needs to be taken when constructing this landscape with neural networks. Further, the NN-proxies are hard to train for higher dimensional functions, and we present our insights for 4D and 10D problems. The error is higher for such cases, and we demonstrate that it is sensitive to the choice of the sampling scheme used to build the NN-proxy. The code is available at https://github.com/Fa-ti-ma/NN-proxy-in-optimization. "
+}

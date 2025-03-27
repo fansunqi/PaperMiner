@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Trajectory Generation",
+    "Tracking Control",
+    "Aggressive Tail-Sitter Flights"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Optimization-based trajectory planner",
+    "Global, singularity-free, and minimally-parameterized on-manifold MPC"
+  ],
+  "results": [
+    "Agile SE(3) flight",
+    "Typical tail-sitter maneuvers",
+    "Aggressive aerobatic maneuvers"
+  ],
+  "paper_id": "63a51c5d90e50fcafde93bfc",
+  "title": "Trajectory Generation and Tracking Control for Aggressive Tail-Sitter\n  Flights",
+  "abstract": "  We address the theoretical and practical problems related to the trajectory generation and tracking control of tail-sitter UAVs. Theoretically, we focus on the differential flatness property with full exploitation of actual UAV aerodynamic models, which lays a foundation for generating dynamically feasible trajectory and achieving high-performance tracking control. We have found that a tail-sitter is differentially flat with accurate aerodynamic models within the entire flight envelope, by specifying coordinate flight condition and choosing the vehicle position as the flat output. This fundamental property allows us to fully exploit the high-fidelity aerodynamic models in the trajectory planning and tracking control to achieve accurate tail-sitter flights. Particularly, an optimization-based trajectory planner for tail-sitters is proposed to design high-quality, smooth trajectories with consideration of kinodynamic constraints, singularity-free constraints and actuator saturation. The planned trajectory of flat output is transformed to state trajectory in real-time with consideration of wind in environments. To track the state trajectory, a global, singularity-free, and minimally-parameterized on-manifold MPC is developed, which fully leverages the accurate aerodynamic model to achieve high-accuracy trajectory tracking within the whole flight envelope. The effectiveness of the proposed framework is demonstrated through extensive real-world experiments in both indoor and outdoor field tests, including agile SE(3) flight through consecutive narrow windows requiring specific attitude and with speed up to 10m/s, typical tail-sitter maneuvers (transition, level flight and loiter) with speed up to 20m/s, and extremely aggressive aerobatic maneuvers (Wingover, Loop, Vertical Eight and Cuban Eight) with acceleration up to 2.5g. "
+}

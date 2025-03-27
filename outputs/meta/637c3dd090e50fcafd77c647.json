@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "EEG decoding using multiple BCI tasks"
+  ],
+  "datasets": [
+    "NeurIPS 2021 BEETL competition BCI task"
+  ],
+  "methods": [
+    "Federated deep transfer learning",
+    "Multi-dataset Federated Separate-Common-Separate Network (MF-SCSN)"
+  ],
+  "results": [
+    "Outperformed baseline decoder by 3%",
+    "Protected privacy of brain data from different data centers"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c647",
+  "title": "Federated deep transfer learning for EEG decoding using multiple BCI\n  tasks",
+  "abstract": "  Deep learning has been successful in BCI decoding. However, it is very data-hungry and requires pooling data from multiple sources. EEG data from various sources decrease the decoding performance due to negative transfer. Recently, transfer learning for EEG decoding has been suggested as a remedy and become subject to recent BCI competitions (e.g. BEETL), but there are two complications in combining data from many subjects. First, privacy is not protected as highly personal brain data needs to be shared (and copied across increasingly tight information governance boundaries). Moreover, BCI data are collected from different sources and are often based on different BCI tasks, which has been thought to limit their reusability. Here, we demonstrate a federated deep transfer learning technique, the Multi-dataset Federated Separate-Common-Separate Network (MF-SCSN) based on our previous work of SCSN, which integrates privacy-preserving properties into deep transfer learning to utilise data sets with different tasks. This framework trains a BCI decoder using different source data sets obtained from different imagery tasks (e.g. some data sets with hands and feet, vs others with single hands and tongue, etc). Therefore, by introducing privacy-preserving transfer learning techniques, we unlock the reusability and scalability of existing BCI data sets. We evaluated our federated transfer learning method on the NeurIPS 2021 BEETL competition BCI task. The proposed architecture outperformed the baseline decoder by 3%. Moreover, compared with the baseline and other transfer learning algorithms, our method protects the privacy of the brain data from different data centres. "
+}

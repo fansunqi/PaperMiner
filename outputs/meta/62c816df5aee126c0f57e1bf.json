@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Non-modular function maximization",
+    "Online optimization",
+    "Movie recommendations",
+    "Classification task selection"
+  ],
+  "datasets": [
+    "MovieLens"
+  ],
+  "methods": [
+    "UCB-style algorithms",
+    "Nystrom sampling",
+    "Submodular and supermodular functions",
+    "Almost submodular functions"
+  ],
+  "results": [
+    "Sublinear \u03b1-regret guarantees",
+    "Application in movie recommendation and classification task selection"
+  ],
+  "paper_id": "62c816df5aee126c0f57e1bf",
+  "title": "Online SuBmodular + SuPermodular (BP) Maximization with Bandit Feedback",
+  "abstract": "  We investigate non-modular function maximization in an online setting with $m$ users. The optimizer maintains a set $S_q$ for each user $q \\in \\{1, \\ldots, m\\}$. At round $i$, a user with unknown utility $h_q$ arrives; the optimizer selects a new item to add to $S_q$, and receives a noisy marginal gain. The goal is to minimize regret compared to an $\\alpha$-approximation to the optimal full-knowledge selection (i.e., $\\alpha$-regret). Prior works study this problem under a submodularity assumption for all $h_q$. However, this is not ideally amenable to applications, e.g., movie recommendations, that involve complementarity between items, where e.g., watching the first movie in a series enhances the impression of watching the sequels. Hence, we consider objectives $h_q$, called \\textit{BP functions}, that decompose into the sum of monotone submodular $f_q$ and supermodular $g_q$; here, $g_q$ naturally models complementarity. Under different feedback assumptions, we develop UCB-style algorithms that use Nystrom sampling for computational efficiency. For these, we provide sublinear $\\alpha$-regret guarantees for $\\alpha = 1/\\kappa_{f} [1 - e^{-(1 - \\kappa^g) \\kappa_{f}} ]$, and $\\alpha = \\min\\{1 - \\kappa_f/e, 1 - \\kappa^g\\}$; here, $\\kappa_f, \\kappa^g$ are submodular and supermodular curvatures. Furthermore, we provide similar $\\alpha$-regret guarantees for functions that are almost submodular where $\\alpha$ is parameterized by the submodularity ratio of the objective functions. We numerically validate our algorithms for movie recommendation on the MovieLens dataset and selection of training subsets for classification tasks. "
+}

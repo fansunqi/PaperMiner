@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Analysis of (sub-)Riemannian PDE-G-CNNs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PDE-G-CNNs",
+    "approximative morphological kernels",
+    "sub-Riemannian approximations"
+  ],
+  "results": [
+    "improvement with the new approximative kernels",
+    "considerable reduction of network complexity",
+    "comparable or better performance than G-CNNs and CNNs",
+    "better geometric interpretability over G-CNNs"
+  ],
+  "paper_id": "633ba44990e50fcafdfe510b",
+  "title": "Analysis of (sub-)Riemannian PDE-G-CNNs",
+  "abstract": "  Group equivariant convolutional neural networks (G-CNNs) have been successfully applied in geometric deep learning. Typically, G-CNNs have the advantage over CNNs that they do not waste network capacity on training symmetries that should have been hard-coded in the network. The recently introduced framework of PDE-based G-CNNs (PDE-G-CNNs) generalises G-CNNs. PDE-G-CNNs have the core advantages that they simultaneously 1) reduce network complexity, 2) increase classification performance, and 3) provide geometric interpretability. Their implementations primarily consist of linear and morphological convolutions with kernels.   In this paper we show that the previously suggested approximative morphological kernels do not always accurately approximate the exact kernels accurately. More specifically, depending on the spatial anisotropy of the Riemannian metric, we argue that one must resort to sub-Riemannian approximations. We solve this problem by providing a new approximative kernel that works regardless of the anisotropy. We provide new theorems with better error estimates of the approximative kernels, and prove that they all carry the same reflectional symmetries as the exact ones.   We test the effectiveness of multiple approximative kernels within the PDE-G-CNN framework on two datasets, and observe an improvement with the new approximative kernels. We report that the PDE-G-CNNs again allow for a considerable reduction of network complexity while having comparable or better performance than G-CNNs and CNNs on the two datasets. Moreover, PDE-G-CNNs have the advantage of better geometric interpretability over G-CNNs, as the morphological kernels are related to association fields from neurogeometry. "
+}

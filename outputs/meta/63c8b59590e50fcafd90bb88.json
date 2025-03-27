@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous Slalom Maneuver"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Convolutional Neural Network (CNN)",
+    "Adaptive PD Controller"
+  ],
+  "results": [
+    "R2-squared of 0.83",
+    "Avoided all traffic cones",
+    " smoother maneuver compared to expert drivers"
+  ],
+  "paper_id": "63c8b59590e50fcafd90bb88",
+  "title": "Autonomous Slalom Maneuver Based on Expert Drivers' Behavior Using\n  Convolutional Neural Network",
+  "abstract": "  Lane changing and obstacle avoidance are one of the most important tasks in automated cars. To date, many algorithms have been suggested that are generally based on path trajectory or reinforcement learning approaches. Although these methods have been efficient, they are not able to accurately imitate a smooth path traveled by an expert driver. In this paper, a method is presented to mimic drivers' behavior using a convolutional neural network (CNN). First, seven features are extracted from a dataset gathered from four expert drivers in a driving simulator. Then, these features are converted from 1D arrays to 2D arrays and injected into a CNN. The CNN model computes the desired steering wheel angle and sends it to an adaptive PD controller. Finally, the control unit applies proper torque to the steering wheel. Results show that the CNN model can mimic the drivers' behavior with an R2-squared of 0.83. Also, the performance of the presented method was evaluated in the driving simulator for 17 trials, which avoided all traffic cones successfully. In some trials, the presented method performed a smoother maneuver compared to the expert drivers. "
+}

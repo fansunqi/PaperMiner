@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Secret Leader Election for PoS Blockchains"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Homomorphic Sortition",
+    "Threshold Fully Homomorphic Encryption (ThFHE)"
+  ],
+  "results": [
+    "First asynchronous SSLE protocol with non-expiring registration",
+    "Compatible with partially-synchronous leader-based consensus protocols",
+    "Highly parallelizable and off-chain operation",
+    "Solves the problem of non-repeating leaders in a sequence of rounds"
+  ],
+  "paper_id": "62b52c625aee126c0f459723",
+  "title": "Homomorphic Sortition -- Secret Leader Election for PoS Blockchains",
+  "abstract": "  In a single secret leader election protocol (SSLE), one of the system participants is chosen and, unless it decides to reveal itself, no other participant can identify it. SSLE has a great potential in protecting blockchain consensus protocols against denial of service (DoS) attacks. However, all existing solutions either make strong synchrony assumptions or have expiring registration, meaning that they require elected processes to re-register themselves before they can be re-elected again. This, in turn, prohibits the use of these SSLE protocols to elect leaders in partially-synchronous consensus protocols as there may be long periods of network instability when no new blocks are decided and, thus, no new registrations (or re-registrations) are possible. In this paper, we propose Homomorphic Sortition -- the first asynchronous SSLE protocol with non-expiring registration, making it the first solution compatible with partially-synchronous leader-based consensus protocols.   Homomorphic Sortition relies on Threshold Fully Homomorphic Encryption (ThFHE) and is tailored to proof-of-stake (PoS) blockchains, with several important optimizations with respect to prior proposals. In particular, unlike most existing SSLE protocols, it works with arbitrary stake distributions and does not require a user with multiple coins to be registered multiple times. Our protocol is highly parallelizable and can be run completely off-chain after setup.   Some blockchains require a sequence of rounds to have non-repeating leaders. We define a generalization of SSLE, called Secret Leader Permutation (SLP) in which the application can choose how many non-repeating leaders should be output in a sequence of rounds and we show how Homomorphic Sortition also solves this problem. "
+}

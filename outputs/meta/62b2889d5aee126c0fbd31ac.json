@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video frame interpolation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural network for VFI",
+    "Metric for scene motion complexity"
+  ],
+  "results": [
+    "Improved motion reconstruction",
+    "HDR frame reconstruction",
+    "Outperforms existing solutions"
+  ],
+  "paper_id": "62b2889d5aee126c0fbd31ac",
+  "title": "Video frame interpolation for high dynamic range sequences captured with\n  dual-exposure sensors",
+  "abstract": "  Video frame interpolation (VFI) enables many important applications that might involve the temporal domain, such as slow motion playback, or the spatial domain, such as stop motion sequences. We are focusing on the former task, where one of the key challenges is handling high dynamic range (HDR) scenes in the presence of complex motion. To this end, we explore possible advantages of dual-exposure sensors that readily provide sharp short and blurry long exposures that are spatially registered and whose ends are temporally aligned. This way, motion blur registers temporally continuous information on the scene motion that, combined with the sharp reference, enables more precise motion sampling within a single camera shot. We demonstrate that this facilitates a more complex motion reconstruction in the VFI task, as well as HDR frame reconstruction that so far has been considered only for the originally captured frames, not in-between interpolated frames. We design a neural network trained in these tasks that clearly outperforms existing solutions. We also propose a metric for scene motion complexity that provides important insights into the performance of VFI methods at the test time. "
+}

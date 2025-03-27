@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Crypto-misuses in the Wild"
+  ],
+  "datasets": [
+    "936 open-source Java applications"
+  ],
+  "methods": [
+    "Manual analysis",
+    "Vulnerability model for cryptographic API misuses"
+  ],
+  "results": [
+    "88.10% of the analyzed applications fail to use cryptographic APIs securely",
+    "Nearly half of the misuses are of high severity"
+  ],
+  "paper_id": "632d240290e50fcafd91b1d3",
+  "title": "To Fix or Not to Fix: A Critical Study of Crypto-misuses in the Wild",
+  "abstract": "  Recent studies have revealed that 87 % to 96 % of the Android apps using cryptographic APIs have a misuse which may cause security vulnerabilities. As previous studies did not conduct a qualitative examination of the validity and severity of the findings, our objective was to understand the findings in more depth. We analyzed a set of 936 open-source Java applications for cryptographic misuses. Our study reveals that 88.10 % of the analyzed applications fail to use cryptographic APIs securely. Through our manual analysis of a random sample, we gained new insights into effective false positives. For example, every fourth misuse of the frequently misused JCA class MessageDigest is an effective false positive due to its occurrence in a non-security context. As we wanted to gain deeper insights into the security implications of these misuses, we created an extensive vulnerability model for cryptographic API misuses. Our model includes previously undiscussed attacks in the context of cryptographic APIs such as DoS attacks. This model reveals that nearly half of the misuses are of high severity, e.g., hard-coded credentials and potential Man-in-the-Middle attacks. "
+}

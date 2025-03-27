@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image editing"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Spatially Sparse Inference (SSI)",
+    "Sparse Incremental Generative Engine (SIGE)"
+  ],
+  "results": [
+    "Reduces computation of DDPM by 7.5x",
+    "Stable Diffusion by 8.2x",
+    "GauGAN by 18x",
+    "Accelerates inference time of DDPM by 3.0x on NVIDIA RTX 3090 and 6.6x on Apple M1 Pro CPU",
+    "Stable Diffusion by 7.2x on 3090",
+    "GauGAN by 5.6x on 3090 and 14x on M1 Pro CPU"
+  ],
+  "paper_id": "636482d890e50fcafdccb18a",
+  "title": "Efficient Spatially Sparse Inference for Conditional GANs and Diffusion\n  Models",
+  "abstract": "  During image editing, existing deep generative models tend to re-synthesize the entire output from scratch, including the unedited regions. This leads to a significant waste of computation, especially for minor editing operations. In this work, we present Spatially Sparse Inference (SSI), a general-purpose technique that selectively performs computation for edited regions and accelerates various generative models, including both conditional GANs and diffusion models. Our key observation is that users tend to gradually change the input image. This motivates us to cache and reuse the feature maps of the original image. Given an edited image, we sparsely apply the convolutional filters to the edited regions while reusing the cached features for the unedited areas. Based on our algorithm, we further propose Sparse Incremental Generative Engine (SIGE) to convert the computation reduction to latency reduction on off-the-shelf hardware. With about $1\\%$-area edits, our method reduces the computation of DDPM by $7.5\\times$, Stable Diffusion by $8.2\\times$, and GauGAN by $18\\times$ while preserving the visual fidelity. With SIGE, we accelerate the inference time of DDPM by $3.0\\times$ on NVIDIA RTX 3090 and $6.6\\times$ on Apple M1 Pro CPU, Stable Diffusion by $7.2\\times$ on 3090, and GauGAN by $5.6\\times$ on 3090 and $14\\times$ on M1 Pro CPU. "
+}

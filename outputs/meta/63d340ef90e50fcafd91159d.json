@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Policy Gradient Methods",
+    "Value Estimation"
+  ],
+  "datasets": [
+    "MuJoCo",
+    "\u03bcRTS"
+  ],
+  "methods": [
+    "Partial advantage estimator",
+    "Truncated GAE"
+  ],
+  "results": [
+    "Better empirical results in both environments"
+  ],
+  "paper_id": "63d340ef90e50fcafd91159d",
+  "title": "Partial advantage estimator for proximal policy optimization",
+  "abstract": "  Estimation of value in policy gradient methods is a fundamental problem. Generalized Advantage Estimation (GAE) is an exponentially-weighted estimator of an advantage function similar to $\\lambda$-return. It substantially reduces the variance of policy gradient estimates at the expense of bias. In practical applications, a truncated GAE is used due to the incompleteness of the trajectory, which results in a large bias during estimation. To address this challenge, instead of using the entire truncated GAE, we propose to take a part of it when calculating updates, which significantly reduces the bias resulting from the incomplete trajectory. We perform experiments in MuJoCo and $\\mu$RTS to investigate the effect of different partial coefficient and sampling lengths. We show that our partial GAE approach yields better empirical results in both environments. "
+}

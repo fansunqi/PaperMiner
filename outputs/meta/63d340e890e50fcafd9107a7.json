@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Deep Homography and Optical Flow Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GyroFlow+ (fuses gyroscope into homography and optical flow learning, self-guided fusion module, homography decoder module)"
+  ],
+  "results": [
+    "Outperforms state-of-the-art methods in both regular and challenging scenes"
+  ],
+  "paper_id": "63d340e890e50fcafd9107a7",
+  "title": "GyroFlow+: Gyroscope-Guided Unsupervised Deep Homography and Optical\n  Flow Learning",
+  "abstract": "  Existing homography and optical flow methods are erroneous in challenging scenes, such as fog, rain, night, and snow because the basic assumptions such as brightness and gradient constancy are broken. To address this issue, we present an unsupervised learning approach that fuses gyroscope into homography and optical flow learning. Specifically, we first convert gyroscope readings into motion fields named gyro field. Second, we design a self-guided fusion module (SGF) to fuse the background motion extracted from the gyro field with the optical flow and guide the network to focus on motion details. Meanwhile, we propose a homography decoder module (HD) to combine gyro field and intermediate results of SGF to produce the homography. To the best of our knowledge, this is the first deep learning framework that fuses gyroscope data and image content for both deep homography and optical flow learning. To validate our method, we propose a new dataset that covers regular and challenging scenes. Experiments show that our method outperforms the state-of-the-art methods in both regular and challenging scenes. "
+}

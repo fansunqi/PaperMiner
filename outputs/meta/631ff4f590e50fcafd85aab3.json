@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Graph Neural Networks sparsification"
+  ],
+  "datasets": [
+    "ia-email",
+    "wiki-talk",
+    "stackoverflow",
+    "brain"
+  ],
+  "methods": [
+    "train and prune",
+    "sparse training"
+  ],
+  "results": [
+    "Sparse training achieves comparable accuracy with train and prune on link prediction",
+    "Sparse training uses less than 1/7 FLOPs of train and prune and preserves better accuracy on node classification"
+  ],
+  "paper_id": "631ff4f590e50fcafd85aab3",
+  "title": "Towards Sparsification of Graph Neural Networks",
+  "abstract": "  As real-world graphs expand in size, larger GNN models with billions of parameters are deployed. High parameter count in such models makes training and inference on graphs expensive and challenging. To reduce the computational and memory costs of GNNs, optimization methods such as pruning the redundant nodes and edges in input graphs have been commonly adopted. However, model compression, which directly targets the sparsification of model layers, has been mostly limited to traditional Deep Neural Networks (DNNs) used for tasks such as image classification and object detection. In this paper, we utilize two state-of-the-art model compression methods (1) train and prune and (2) sparse training for the sparsification of weight layers in GNNs. We evaluate and compare the efficiency of both methods in terms of accuracy, training sparsity, and training FLOPs on real-world graphs. Our experimental results show that on the ia-email, wiki-talk, and stackoverflow datasets for link prediction, sparse training with much lower training FLOPs achieves a comparable accuracy with the train and prune method. On the brain dataset for node classification, sparse training uses a lower number FLOPs (less than 1/7 FLOPs of train and prune method) and preserves a much better accuracy performance under extreme model sparsity. "
+}

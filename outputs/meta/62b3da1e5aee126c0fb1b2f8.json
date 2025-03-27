@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "High-Dimensional Parametric Derivative Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Derivative-Informed Neural Operators (DINOs)"
+  ],
+  "results": [
+    "Significantly higher accuracy than neural operators trained without derivative information",
+    "Reduced costs of data generation and training for large classes of problems"
+  ],
+  "paper_id": "62b3da1e5aee126c0fb1b2f8",
+  "title": "Derivative-Informed Neural Operator: An Efficient Framework for\n  High-Dimensional Parametric Derivative Learning",
+  "abstract": "  We propose derivative-informed neural operators (DINOs), a general family of neural networks to approximate operators as infinite-dimensional mappings from input function spaces to output function spaces or quantities of interest. After discretizations both inputs and outputs are high-dimensional. We aim to approximate not only the operators with improved accuracy but also their derivatives (Jacobians) with respect to the input function-valued parameter to empower derivative-based algorithms in many applications, e.g., Bayesian inverse problems, optimization under parameter uncertainty, and optimal experimental design. The major difficulties include the computational cost of generating derivative training data and the high dimensionality of the problem leading to large training cost. To address these challenges, we exploit the intrinsic low-dimensionality of the derivatives and develop algorithms for compressing derivative information and efficiently imposing it in neural operator training yielding derivative-informed neural operators. We demonstrate that these advances can significantly reduce the costs of both data generation and training for large classes of problems (e.g., nonlinear steady state parametric PDE maps), making the costs marginal or comparable to the costs without using derivatives, and in particular independent of the discretization dimension of the input and output functions. Moreover, we show that the proposed DINO achieves significantly higher accuracy than neural operators trained without derivative information, for both function approximation and derivative approximation (e.g., Gauss-Newton Hessian), especially when the training data are limited. "
+}

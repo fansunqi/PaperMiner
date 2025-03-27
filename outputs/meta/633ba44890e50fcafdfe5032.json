@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Obstacle Avoidance for Robotic Manipulators"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Improved Proximal Policy Optimization (PPO)",
+    "Action ensembles",
+    "Geometry-based state representation",
+    "Sim-to-Sim method"
+  ],
+  "results": [
+    "Outperformed selected baselines in different reaching task scenarios"
+  ],
+  "paper_id": "633ba44890e50fcafdfe5032",
+  "title": "IPPO: Obstacle Avoidance for Robotic Manipulators in Joint Space via\n  Improved Proximal Policy Optimization",
+  "abstract": "  Reaching tasks with random targets and obstacles is a challenging task for robotic manipulators. In this study, we propose a novel model-free reinforcement learning approach based on proximal policy optimization (PPO) for training a deep policy to map the task space to the joint space of a 6-DoF manipulator. To facilitate the training process in a large workspace, we develop an efficient representation of environmental inputs and outputs. The calculation of the distance between obstacles and manipulator links is incorporated into the state representation using a geometry-based method. Additionally, to enhance the performance of the model in reaching tasks, we introduce the action ensembles method and design the policy to directly participate in value function updates in PPO. To overcome the challenges associated with training in real-robot environments, we develop a simulation environment in Gazebo to train the model as it produces a smaller Sim-to-Real gap compared to other simulators. However, training in Gazebo is time-intensive. To address this issue, we propose a Sim-to-Sim method to significantly reduce the training time. The trained model is then directly applied in a real-robot setup without fine-tuning. To evaluate the performance of the proposed approach, we perform several rounds of experiments in both simulated and real robots. We also compare the performance of the proposed approach with six baselines. The experimental results demonstrate the effectiveness of the proposed method in performing reaching tasks with and without obstacles. our method outperformed the selected baselines by a large margin in different reaching task scenarios. A video of these experiments has been attached to the paper as supplementary material. "
+}

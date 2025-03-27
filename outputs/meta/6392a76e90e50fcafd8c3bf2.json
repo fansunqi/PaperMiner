@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic Speech Recognition"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Lattice-Free Sequence Discriminative Training"
+  ],
+  "results": [
+    "6.5% relative improvement in word error rate",
+    "40% - 70% relative training time speedup"
+  ],
+  "paper_id": "6392a76e90e50fcafd8c3bf2",
+  "title": "Lattice-Free Sequence Discriminative Training for Phoneme-Based Neural\n  Transducers",
+  "abstract": "  Recently, RNN-Transducers have achieved remarkable results on various automatic speech recognition tasks. However, lattice-free sequence discriminative training methods, which obtain superior performance in hybrid modes, are rarely investigated in RNN-Transducers. In this work, we propose three lattice-free training objectives, namely lattice-free maximum mutual information, lattice-free segment-level minimum Bayes risk, and lattice-free minimum Bayes risk, which are used for the final posterior output of the phoneme-based neural transducer with a limited context dependency. Compared to criteria using N-best lists, lattice-free methods eliminate the decoding step for hypotheses generation during training, which leads to more efficient training. Experimental results show that lattice-free methods gain up to 6.5% relative improvement in word error rate compared to a sequence-level cross-entropy trained model. Compared to the N-best-list based minimum Bayes risk objectives, lattice-free methods gain 40% - 70% relative training time speedup with a small degradation in performance. "
+}

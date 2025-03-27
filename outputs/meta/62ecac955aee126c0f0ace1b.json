@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Electromagnetic scattering analysis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "TD-EFVIE solver",
+    "Schaubert-Wilton-Glisson (SWG) discretization",
+    "predictor-corrector method",
+    "Pade approximant",
+    "marching-on-in-time (MOT) scheme"
+  ],
+  "results": [
+    "More accurate than finite-difference time-domain method"
+  ],
+  "paper_id": "62ecac955aee126c0f0ace1b",
+  "title": "A Time Domain Volume Integral Equation Solver to Analyze Electromagnetic\n  Scattering from Nonlinear Dielectric Objects",
+  "abstract": "  A time domain electric field volume integral equation (TD-EFVIE) solver is proposed for analyzing electromagnetic scattering from dielectric objects with Kerr nonlinearity. The nonlinear constitutive relation that relates electric flux and electric field induced in the scatterer is used as an auxiliary equation that complements TD-EFVIE. The ordinary differential equation system that arises from TD-EFVIE's Schaubert-Wilton-Glisson (SWG)-based discretization is integrated in time using a predictor-corrector method for the unknown expansion coefficients of the electric field. Matrix systems that arise from the SWG-based discretization of the nonlinear constitutive relation and its inverse obtained using the Pade approximant are used to carry out explicit updates of the electric field and the electric flux expansion coefficients at the predictor and the corrector stages of the time integration method. The resulting explicit marching-on-in-time (MOT) scheme does not call for any Newton-like nonlinear solver and only requires solution of sparse and well-conditioned Gram matrix systems at every step. Numerical results show that the proposed explicit MOT-based TD-EFVIE solver is more accurate than the finite-difference time-domain method that is traditionally used for analyzing transient electromagnetic scattering from nonlinear objects. "
+}

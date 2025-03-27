@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/khalil-research/PyEPO"
+  ],
+  "tasks": [
+    "Predict-then-optimize for linear and integer programming"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PyEPO",
+    "Convex surrogate loss function",
+    "Differentiable black-box solver",
+    "Differentiable perturbation-based methods"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "62bd156e5aee126c0f6247ad",
+  "title": "PyEPO: A PyTorch-based End-to-End Predict-then-Optimize Library for\n  Linear and Integer Programming",
+  "abstract": "  In deterministic optimization, it is typically assumed that all problem parameters are fixed and known. In practice, however, some parameters may be a priori unknown but can be estimated from historical data. A typical predict-then-optimize approach separates predictions and optimization into two stages. Recently, end-to-end predict-then-optimize has become an attractive alternative. In this work, we present the PyEPO package, a PyTorchbased end-to-end predict-then-optimize library in Python. To the best of our knowledge, PyEPO (pronounced like pineapple with a silent \"n\") is the first such generic tool for linear and integer programming with predicted objective function coefficients. It provides four base algorithms: a convex surrogate loss function from the seminal work of Elmachtoub and Grigas [16], a differentiable black-box solver approach of Pogancic et al. [35], and two differentiable perturbation-based methods from Berthet et al. [6]. PyEPO provides a simple interface for the definition of new optimization problems, the implementation of state-of-the-art predict-then-optimize training algorithms, the use of custom neural network architectures, and the comparison of end-to-end approaches with the two-stage approach. PyEPO enables us to conduct a comprehensive set of experiments comparing a number of end-to-end and two-stage approaches along axes such as prediction accuracy, decision quality, and running time on problems such as Shortest Path, Multiple Knapsack, and the Traveling Salesperson Problem. We discuss some empirical insights from these experiments, which could guide future research. PyEPO and its documentation are available at https://github.com/khalil-research/PyEPO. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "multiphase flow simulations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "adaptive octree-based meshing framework",
+    "PETSc's linear algebra solvers"
+  ],
+  "results": [
+    "Scaling up to 114,688 processes",
+    "64 times larger than the current state-of-the-art simulations",
+    "Unprecedented insights into flow physics problem"
+  ],
+  "paper_id": "633269f690e50fcafd48ff10",
+  "title": "Scalable adaptive algorithms for next-generation multiphase flow\n  simulations",
+  "abstract": "  High-fidelity flow simulations are indispensable when analyzing systems exhibiting multiphase flow phenomena. The accuracy of multiphase flow simulations is strongly contingent upon the finest mesh resolution used to represent the fluid-fluid interfaces. However, the increased resolution comes at a higher computational cost. In this work, we propose algorithmic advances that aim to reduce the computational cost without compromising on the physics by selectively detecting key regions of interest (droplets/filaments) that require significantly higher resolution. The framework uses an adaptive octree-based meshing framework that is integrated with PETSc's linear algebra solvers. We demonstrate scaling of the framework up to 114,688 processes on TACC's Frontera. Finally, we deploy the framework to simulate one of the most resolved simulations of primary jet atomization. This simulation -- equivalent to 35 trillion grid points on a uniform grid -- is 64 times larger than the current state-of-the-art simulations and provides unprecedented insights into an important flow physics problem with a diverse array of engineering applications. "
+}

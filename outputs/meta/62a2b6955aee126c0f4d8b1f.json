@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving the Fokker-Planck equation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Probability flow equation",
+    "Deep neural network for score modeling",
+    "Stochastic differential equation integration"
+  ],
+  "results": [
+    "Accurate matching of analytical solutions",
+    "Effective capture of non-equilibrium steady-state probability currents",
+    "Improved predictions for global entropy production rate"
+  ],
+  "paper_id": "62a2b6955aee126c0f4d8b1f",
+  "title": "Probability flow solution of the Fokker-Planck equation",
+  "abstract": "  The method of choice for integrating the time-dependent Fokker-Planck equation in high-dimension is to generate samples from the solution via integration of the associated stochastic differential equation. Here, we study an alternative scheme based on integrating an ordinary differential equation that describes the flow of probability. Acting as a transport map, this equation deterministically pushes samples from the initial density onto samples from the solution at any later time. Unlike integration of the stochastic dynamics, the method has the advantage of giving direct access to quantities that are challenging to estimate from trajectories alone, such as the probability current, the density itself, and its entropy. The probability flow equation depends on the gradient of the logarithm of the solution (its \"score\"), and so is a-priori unknown. To resolve this dependence, we model the score with a deep neural network that is learned on-the-fly by propagating a set of samples according to the instantaneous probability current. We show theoretically that the proposed approach controls the KL divergence from the learned solution to the target, while learning on external samples from the stochastic differential equation does not control either direction of the KL divergence. Empirically, we consider several high-dimensional Fokker-Planck equations from the physics of interacting particle systems. We find that the method accurately matches analytical solutions when they are available as well as moments computed via Monte-Carlo when they are not. Moreover, the method offers compelling predictions for the global entropy production rate that out-perform those obtained from learning on stochastic trajectories, and can effectively capture non-equilibrium steady-state probability currents over long time intervals. "
+}

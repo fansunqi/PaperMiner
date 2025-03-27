@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Blockchain Architecture",
+    "Front-Running Protection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Threshold Cryptography",
+    "Symmetric Key Encryption",
+    "Decentralized Secret-Management Committee"
+  ],
+  "results": [
+    "0.05% transaction latency overhead with a secret-management committee of 128 members"
+  ],
+  "paper_id": "628464665aee126c0facb30d",
+  "title": "F3B: A Low-Overhead Blockchain Architecture with Per-Transaction\n  Front-Running Protection",
+  "abstract": "  Front-running attacks, which benefit from advanced knowledge of pending transactions, have proliferated in the blockchain space, since the emergence of decentralized finance. Front-running causes devastating losses to honest participants and continues to endanger the fairness of the ecosystem. We present Flash Freezing Flash Boys (F3B), a blockchain architecture that addresses front-running attacks by using threshold cryptography. In F3B, a user generates a symmetric key to encrypt their transaction, and once the underlying consensus layer has committed the transaction, a decentralized secret-management committee reveals this key. F3B mitigates front-running attacks because, before the consensus group commits it, an adversary can no longer read the content of a transaction, thus preventing the adversary from benefiting from advanced knowledge of pending transactions. Unlike other threshold-based approaches, where users encrypt their transactions with a key derived from a future block, F3B enables users to generate a unique key for each transaction. This feature ensures that all uncommitted transactions remain private, even if they are delayed. Furthermore, F3B addresses front-running at the execution layer; thus, our solution is agnostic to the underlying consensus algorithm and compatible with existing smart contracts. We evaluated F3B based on Ethereum, demonstrating a 0.05% transaction latency overhead with a secret-management committee of 128 members, thus indicating our solution is practical at a low cost. "
+}

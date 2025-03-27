@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Meta-learning"
+  ],
+  "datasets": [
+    "Meta-VQA"
+  ],
+  "methods": [
+    "Classifier(-free) Diffusion Guidance",
+    "HyperCLIP-based classifier guidance",
+    "Conditional Hypernetwork Latent Diffusion Model (HyperLDM)"
+  ],
+  "results": [
+    "Outperforms existing multi-task and meta-learning methods in zero-shot learning experiments"
+  ],
+  "paper_id": "634e194890e50fcafd24f41f",
+  "title": "Meta-Learning via Classifier(-free) Diffusion Guidance",
+  "abstract": "  We introduce meta-learning algorithms that perform zero-shot weight-space adaptation of neural network models to unseen tasks. Our methods repurpose the popular generative image synthesis techniques of natural language guidance and diffusion models to generate neural network weights adapted for tasks. We first train an unconditional generative hypernetwork model to produce neural network weights; then we train a second \"guidance\" model that, given a natural language task description, traverses the hypernetwork latent space to find high-performance task-adapted weights in a zero-shot manner. We explore two alternative approaches for latent space guidance: \"HyperCLIP\"-based classifier guidance and a conditional Hypernetwork Latent Diffusion Model (\"HyperLDM\"), which we show to benefit from the classifier-free guidance technique common in image generation. Finally, we demonstrate that our approaches outperform existing multi-task and meta-learning methods in a series of zero-shot learning experiments on our Meta-VQA dataset. "
+}

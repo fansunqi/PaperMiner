@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Hyperparameter Tuning",
+    "Privacy-Preserving Machine Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differential Privacy",
+    "Hyperparameter Tuning Framework"
+  ],
+  "results": [
+    "Privacy loss bound upper-bounded by the squared root of the gained utility",
+    "Additional privacy loss bound scales like a squared root of the logarithm of the utility term"
+  ],
+  "paper_id": "636482d790e50fcafdccaf26",
+  "title": "Revisiting Hyperparameter Tuning with Differential Privacy",
+  "abstract": "  Hyperparameter tuning is a common practice in the application of machine learning but is a typically ignored aspect in the literature on privacy-preserving machine learning due to its negative effect on the overall privacy parameter. In this paper, we aim to tackle this fundamental yet challenging problem by providing an effective hyperparameter tuning framework with differential privacy. The proposed method allows us to adopt a broader hyperparameter search space and even to perform a grid search over the whole space, since its privacy loss parameter is independent of the number of hyperparameter candidates. Interestingly, it instead correlates with the utility gained from hyperparameter searching, revealing an explicit and mandatory trade-off between privacy and utility. Theoretically, we show that its additional privacy loss bound incurred by hyperparameter tuning is upper-bounded by the squared root of the gained utility. However, we note that the additional privacy loss bound would empirically scale like a squared root of the logarithm of the utility term, benefiting from the design of doubling step. "
+}

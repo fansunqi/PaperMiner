@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Egocentric Action Detection"
+  ],
+  "datasets": [
+    "Ego4D",
+    "EPIC-Kitchens-100"
+  ],
+  "methods": [
+    "Masked autoencoder for temporal segmentation",
+    "Off-the-shelf temporal action localization"
+  ],
+  "results": [
+    "On Ego4D: on-par with exocentric pretraining methods",
+    "On EPIC-Kitchens-100: outperforms exocentric pretraining (by 2.1% on verbs and by 1.8% on nouns)"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5b42",
+  "title": "Ego-Only: Egocentric Action Detection without Exocentric Pretraining",
+  "abstract": "  We present Ego-Only, the first training pipeline that enables state-of-the-art action detection on egocentric (first-person) videos without any form of exocentric (third-person) pretraining. Previous approaches found that egocentric models cannot be trained effectively from scratch and that exocentric representations transfer well to first-person videos. In this paper we revisit these two observations. Motivated by the large content and appearance gap separating the two domains, we propose a strategy that enables effective training of egocentric models without exocentric pretraining. Our Ego-Only pipeline is simple. It trains the video representation with a masked autoencoder finetuned for temporal segmentation. The learned features are then fed to an off-the-shelf temporal action localization method to detect actions. We evaluate our approach on two established egocentric video datasets: Ego4D and EPIC-Kitchens-100. On Ego4D, our Ego-Only is on-par with exocentric pretraining methods that use an order of magnitude more labels. On EPIC-Kitchens-100, our Ego-Only even outperforms exocentric pretraining (by 2.1% on verbs and by 1.8% on nouns), setting a new state-of-the-art. "
+}

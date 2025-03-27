@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/pvnieo/NCP"
+  ],
+  "tasks": [
+    "Unsupervised Shape Matching"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Correspondence Prior (NCP)"
+  ],
+  "results": [
+    "State-of-the-art results on many tasks",
+    "Data-efficient and fast"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b0c",
+  "title": "NCP: Neural Correspondence Prior for Effective Unsupervised Shape\n  Matching",
+  "abstract": "  We present Neural Correspondence Prior (NCP), a new paradigm for computing correspondences between 3D shapes. Our approach is fully unsupervised and can lead to high-quality correspondences even in challenging cases such as sparse point clouds or non-isometric meshes, where current methods fail. Our first key observation is that, in line with neural priors observed in other domains, recent network architectures on 3D data, even without training, tend to produce pointwise features that induce plausible maps between rigid or non-rigid shapes. Secondly, we show that given a noisy map as input, training a feature extraction network with the input map as supervision tends to remove artifacts from the input and can act as a powerful correspondence denoising mechanism, both between individual pairs and within a collection. With these observations in hand, we propose a two-stage unsupervised paradigm for shape matching by (i) performing unsupervised training by adapting an existing approach to obtain an initial set of noisy matches, and (ii) using these matches to train a network in a supervised manner. We demonstrate that this approach significantly improves the accuracy of the maps, especially when trained within a collection. We show that NCP is data-efficient, fast, and achieves state-of-the-art results on many tasks. Our code can be found online: https://github.com/pvnieo/NCP. "
+}

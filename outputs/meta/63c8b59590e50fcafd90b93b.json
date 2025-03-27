@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/dennlinger/summaries"
+  ],
+  "tasks": [
+    "German (Abstractive) Text Summarization"
+  ],
+  "datasets": [
+    "MLSUM"
+  ],
+  "methods": [
+    "None"
+  ],
+  "results": [
+    "Over 50% of the training set is unsuitable for abstractive summarization purposes",
+    "A reduction of more than 20 ROUGE-1 points during evaluation"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b93b",
+  "title": "On the State of German (Abstractive) Text Summarization",
+  "abstract": "  With recent advancements in the area of Natural Language Processing, the focus is slowly shifting from a purely English-centric view towards more language-specific solutions, including German. Especially practical for businesses to analyze their growing amount of textual data are text summarization systems, which transform long input documents into compressed and more digestible summary texts. In this work, we assess the particular landscape of German abstractive text summarization and investigate the reasons why practically useful solutions for abstractive text summarization are still absent in industry. Our focus is two-fold, analyzing a) training resources, and b) publicly available summarization systems. We are able to show that popular existing datasets exhibit crucial flaws in their assumptions about the original sources, which frequently leads to detrimental effects on system generalization and evaluation biases. We confirm that for the most popular training dataset, MLSUM, over 50% of the training set is unsuitable for abstractive summarization purposes. Furthermore, available systems frequently fail to compare to simple baselines, and ignore more effective and efficient extractive summarization approaches. We attribute poor evaluation quality to a variety of different factors, which are investigated in more detail in this work: A lack of qualitative (and diverse) gold data considered for training, understudied (and untreated) positional biases in some of the existing datasets, and the lack of easily accessible and streamlined pre-processing strategies or analysis tools. We provide a comprehensive assessment of available models on the cleaned datasets, and find that this can lead to a reduction of more than 20 ROUGE-1 points during evaluation. The code for dataset filtering and reproducing results can be found online at https://github.com/dennlinger/summaries "
+}

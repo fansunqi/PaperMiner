@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "https://github.com/franktpmvu/NeighborTrack"
+  ],
+  "tasks": [
+    "Single Object Tracking"
+  ],
+  "datasets": [
+    "VOT challenge dataset",
+    "LaSOT",
+    "GOT-10K"
+  ],
+  "methods": [
+    "NeighborTrack: post-processor",
+    "Siamese network"
+  ],
+  "results": [
+    "Average improvement of 1.92% EAO and 2.11% robustness on VOT challenge dataset",
+    "State-of-the-art 72.25% AUC on LaSOT",
+    "75.7% AO on GOT-10K"
+  ],
+  "paper_id": "6373035a90e50fcafd09fc01",
+  "title": "NeighborTrack: Improving Single Object Tracking by Bipartite Matching\n  with Neighbor Tracklets",
+  "abstract": "  We propose a post-processor, called NeighborTrack, that leverages neighbor information of the tracking target to validate and improve single-object tracking (SOT) results. It requires no additional data or retraining. Instead, it uses the confidence score predicted by the backbone SOT network to automatically derive neighbor information and then uses this information to improve the tracking results. When tracking an occluded target, its appearance features are untrustworthy. However, a general siamese network often cannot tell whether the tracked object is occluded by reading the confidence score alone, because it could be misled by neighbors with high confidence scores. Our proposed NeighborTrack takes advantage of unoccluded neighbors' information to reconfirm the tracking target and reduces false tracking when the target is occluded. It not only reduces the impact caused by occlusion, but also fixes tracking problems caused by object appearance changes. NeighborTrack is agnostic to SOT networks and post-processing methods. For the VOT challenge dataset commonly used in short-term object tracking, we improve three famous SOT networks, Ocean, TransT, and OSTrack, by an average of ${1.92\\%}$ EAO and ${2.11\\%}$ robustness. For the mid- and long-term tracking experiments based on OSTrack, we achieve state-of-the-art ${72.25\\%}$ AUC on LaSOT and ${75.7\\%}$ AO on GOT-10K. Code duplication can be found in https://github.com/franktpmvu/NeighborTrack. "
+}

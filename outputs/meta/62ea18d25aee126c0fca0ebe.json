@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Indicator Extraction Tools Accuracy Comparison"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "GoodFATR",
+    "Majority vote methodology"
+  ],
+  "results": [
+    "Extracted 978,151 indicators",
+    "Identified 618,217 IOCs",
+    "Compared 7 open-source tools"
+  ],
+  "paper_id": "62ea18d25aee126c0fca0ebe",
+  "title": "The Rise of GoodFATR: A Novel Accuracy Comparison Methodology for\n  Indicator Extraction Tools",
+  "abstract": "  To adapt to a constantly evolving landscape of cyber threats, organizations actively need to collect Indicators of Compromise (IOCs), i.e., forensic artifacts that signal that a host or network might have been compromised. IOCs can be collected through open-source and commercial structured IOC feeds. But, they can also be extracted from a myriad of unstructured threat reports written in natural language and distributed using a wide array of sources such as blogs and social media. There exist multiple indicator extraction tools that can identify IOCs in natural language reports. But, it is hard to compare their accuracy due to the difficulty of building large ground truth datasets. This work presents a novel majority vote methodology for comparing the accuracy of indicator extraction tools, which does not require a manually-built ground truth. We implement our methodology into GoodFATR, an automated platform for collecting threat reports from a wealth of sources, extracting IOCs from the collected reports using multiple tools, and comparing their accuracy.   GoodFATR supports 6 threat report sources: RSS, Twitter, Telegram, Malpedia, APTnotes, and ChainSmith. GoodFATR continuously monitors the sources, downloads new threat reports, extracts 41 indicator types from the collected reports, and filters non-malicious indicators to output the IOCs. We run GoodFATR over 15 months to collect 472,891 reports from the 6 sources; extract 978,151 indicators from the reports; and identify 618,217 IOCs. We analyze the collected data to identify the top IOC contributors and the IOC class distribution. We apply GoodFATR to compare the IOC extraction accuracy of 7 popular open-source tools with GoodFATR's own indicator extraction module. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving non-smooth strongly convex-strongly concave saddle-point problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "C-RDPSG",
+    "C-DPSVRG"
+  ],
+  "results": [
+    "Competitive performance of the proposed algorithms"
+  ],
+  "paper_id": "629587465aee126c0fe14ab5",
+  "title": "Stochastic Gradient Methods with Compressed Communication for\n  Decentralized Saddle Point Problems",
+  "abstract": "  We develop two compression based stochastic gradient algorithms to solve a class of non-smooth strongly convex-strongly concave saddle-point problems in a decentralized setting (without a central server). Our first algorithm is a Restart-based Decentralized Proximal Stochastic Gradient method with Compression (C-RDPSG) for general stochastic settings. We provide rigorous theoretical guarantees of C-RDPSG with gradient computation complexity and communication complexity of order $\\mathcal{O}( (1+\\delta)^4 \\frac{1}{L^2}{\\kappa_f^2}\\kappa_g^2 \\frac{1}{\\epsilon} )$, to achieve an $\\epsilon$-accurate saddle-point solution, where $\\delta$ denotes the compression factor, $\\kappa_f$ and $\\kappa_g$ denote respectively the condition numbers of objective function and communication graph, and $L$ denotes the smoothness parameter of the smooth part of the objective function. Next, we present a Decentralized Proximal Stochastic Variance Reduced Gradient algorithm with Compression (C-DPSVRG) for finite sum setting which exhibits gradient computation complexity and communication complexity of order $\\mathcal{O} \\left((1+\\delta) \\max \\{\\kappa_f^2, \\sqrt{\\delta}\\kappa^2_f\\kappa_g,\\kappa_g \\} \\log\\left(\\frac{1}{\\epsilon}\\right) \\right)$. Extensive numerical experiments show competitive performance of the proposed algorithms and provide support to the theoretical results obtained. "
+}

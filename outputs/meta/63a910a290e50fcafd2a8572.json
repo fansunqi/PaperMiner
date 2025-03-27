@@ -1,0 +1,29 @@
+{
+  "code_links": [
+    "https://github.com/cvlab-stonybrook/PLM_SSL"
+  ],
+  "tasks": [
+    "Dense prediction tasks",
+    "Segmentation",
+    "Detection of pathological entities"
+  ],
+  "datasets": [
+    "TCGA-BRCA",
+    "NCT-CRC-HE",
+    "GlaS",
+    "CRAG",
+    "BCSS"
+  ],
+  "methods": [
+    "Precise location-based matching mechanism"
+  ],
+  "results": [
+    "Up to 7.2% improvement in average precision for detection",
+    "Up to 5.6% improvement in average precision for instance segmentation",
+    "Average precision improvement in detection: 0.7% to 5.2%",
+    "Average precision improvement in segmentation: 0.7% to 4.0%"
+  ],
+  "paper_id": "63a910a290e50fcafd2a8572",
+  "title": "Precise Location Matching Improves Dense Contrastive Learning in Digital\n  Pathology",
+  "abstract": "  Dense prediction tasks such as segmentation and detection of pathological entities hold crucial clinical value in computational pathology workflows. However, obtaining dense annotations on large cohorts is usually tedious and expensive. Contrastive learning (CL) is thus often employed to leverage large volumes of unlabeled data to pre-train the backbone network. To boost CL for dense prediction, some studies have proposed variations of dense matching objectives in pre-training. However, our analysis shows that employing existing dense matching strategies on histopathology images enforces invariance among incorrect pairs of dense features and, thus, is imprecise. To address this, we propose a precise location-based matching mechanism that utilizes the overlapping information between geometric transformations to precisely match regions in two augmentations. Extensive experiments on two pretraining datasets (TCGA-BRCA, NCT-CRC-HE) and three downstream datasets (GlaS, CRAG, BCSS) highlight the superiority of our method in semantic and instance segmentation tasks. Our method outperforms previous dense matching methods by up to 7.2% in average precision for detection and 5.6% in average precision for instance segmentation tasks. Additionally, by using our matching mechanism in the three popular contrastive learning frameworks, MoCo-v2, VICRegL, and ConCL, the average precision in detection is improved by 0.7% to 5.2%, and the average precision in segmentation is improved by 0.7% to 4.0%, demonstrating generalizability. Our code is available at https://github.com/cvlab-stonybrook/PLM_SSL. "
+}

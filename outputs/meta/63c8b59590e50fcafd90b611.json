@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Approximate nearest neighbor search"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Custom 8-bit floating point value format"
+  ],
+  "results": [
+    "Better performance without significant recall loss compared to FP32 and FP16"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b611",
+  "title": "Custom 8-bit floating point value format for reducing shared memory bank\n  conflict in approximate nearest neighbor search",
+  "abstract": "  The k-nearest neighbor search is used in various applications such as machine learning, computer vision, database search, and information retrieval. While the computational cost of the exact nearest neighbor search is enormous, an approximate nearest neighbor search (ANNS) has been attracting much attention. IVFPQ is one of the ANNS methods. Although we can leverage the high bandwidth and low latency of shared memory to compute the search phase of the IVFPQ on NVIDIA GPUs, the throughput can degrade due to shared memory bank conflict. To reduce the bank conflict and improve the search throughput, we propose a custom 8-bit floating point value format. This format doesn't have a sign bit and can be converted from/to FP32 with a few instructions. We use this format for IVFPQ on GPUs and achieved better performance without significant recall loss compared to FP32 and FP16. "
+}

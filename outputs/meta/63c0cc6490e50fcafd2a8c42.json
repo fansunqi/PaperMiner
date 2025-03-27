@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Byzantine consensus problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Universal Byzantine consensus algorithm"
+  ],
+  "results": [
+    "All solvable validity properties are trivial (there exists an always-admissible decision) if n <= 3t",
+    "With any non-trivial (and solvable) validity property, consensus requires Omega(t^2) messages",
+    "Universal algorithm incurs O(n^2) message complexity",
+    "The message complexity of all (non-trivial) consensus variants is Theta(n^2) with t in Omega(n)"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8c42",
+  "title": "On the Validity of Consensus",
+  "abstract": "  The Byzantine consensus problem involves $n$ processes, out of which t < n could be faulty and behave arbitrarily. Three properties characterize consensus: (1) termination, requiring correct (non-faulty) processes to eventually reach a decision, (2) agreement, preventing them from deciding different values, and (3) validity, precluding ``unreasonable'' decisions. But, what is a reasonable decision? Strong validity, a classical property, stipulates that, if all correct processes propose the same value, only that value can be decided. Weak validity, another established property, stipulates that, if all processes are correct and they propose the same value, that value must be decided. The space of possible validity properties is vast. However, their impact on consensus remains unclear.   This paper addresses the question of which validity properties allow Byzantine consensus to be solvable with partial synchrony, and at what cost. First, we determine necessary and sufficient conditions for a validity property to make the consensus problem solvable; we say that such validity properties are solvable. Notably, we prove that, if n <= 3t, all solvable validity properties are trivial (there exists an always-admissible decision). Furthermore, we show that, with any non-trivial (and solvable) validity property, consensus requires Omega(t^2) messages. This extends the seminal Dolev-Reischuk bound, originally proven for strong validity, to all non-trivial validity properties. Lastly, we give a general Byzantine consensus algorithm, we call Universal, for any solvable (and non-trivial) validity property. Importantly, Universal incurs O(n^2) message complexity. Thus, together with our lower bound, Universal implies a fundamental result in partial synchrony: with t \\in Omega(n), the message complexity of all (non-trivial) consensus variants is Theta(n^2). "
+}

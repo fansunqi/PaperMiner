@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Video event-relation prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Structural symbolic representation (SSR)",
+    "Event-Sequence Model",
+    "external visual commonsense knowledge bases"
+  ],
+  "results": [
+    "25% Macro-accuracy performance boost"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa31e",
+  "title": "In Defense of Structural Symbolic Representation for Video\n  Event-Relation Prediction",
+  "abstract": "  Understanding event relationships in videos requires a model to understand the underlying structures of events (i.e. the event type, the associated argument roles, and corresponding entities) and factual knowledge for reasoning. Structural symbolic representation (SSR) based methods directly take event types and associated argument roles/entities as inputs to perform reasoning. However, the state-of-the-art video event-relation prediction system shows the necessity of using continuous feature vectors from input videos; existing methods based solely on SSR inputs fail completely, even when given oracle event types and argument roles. In this paper, we conduct an extensive empirical analysis to answer the following questions: 1) why SSR-based method failed; 2) how to understand the evaluation setting of video event relation prediction properly; 3) how to uncover the potential of SSR-based methods. We first identify suboptimal training settings as causing the failure of previous SSR-based video event prediction models. Then through qualitative and quantitative analysis, we show how evaluation that takes only video as inputs is currently unfeasible, as well as the reliance on oracle event information to obtain an accurate evaluation. Based on these findings, we propose to further contextualize the SSR-based model to an Event-Sequence Model and equip it with more factual knowledge through a simple yet effective way of reformulating external visual commonsense knowledge bases into an event-relation prediction pretraining dataset. The resultant new state-of-the-art model eventually establishes a 25% Macro-accuracy performance boost. "
+}

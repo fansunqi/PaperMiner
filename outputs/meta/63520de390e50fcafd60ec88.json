@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/YijinHuang/SSiT"
+  ],
+  "tasks": [
+    "Diabetic Retinopathy Grading"
+  ],
+  "datasets": [
+    "fundus image datasets"
+  ],
+  "methods": [
+    "Saliency-guided Self-Supervised image Transformer (SSiT)",
+    "saliency maps",
+    "momentum contrast",
+    "contrastive learning",
+    "saliency segmentation"
+  ],
+  "results": [
+    "significantly outperforms other representative state-of-the-art SSL methods"
+  ],
+  "paper_id": "63520de390e50fcafd60ec88",
+  "title": "SSiT: Saliency-guided Self-supervised Image Transformer for Diabetic\n  Retinopathy Grading",
+  "abstract": "  Self-supervised learning (SSL) has been widely applied to learn image representations through exploiting unlabeled images. However, it has not been fully explored in the medical image analysis field. In this work, we propose Saliency-guided Self-Supervised image Transformer (SSiT) for diabetic retinopathy (DR) grading from fundus images. We novelly introduce saliency maps into SSL, with a goal of guiding self-supervised pre-training with domain-specific prior knowledge. Specifically, two saliency-guided learning tasks are employed in SSiT: (1) We conduct saliency-guided contrastive learning based on the momentum contrast, wherein we utilize fundus images' saliency maps to remove trivial patches from the input sequences of the momentum-updated key encoder. And thus, the key encoder is constrained to provide target representations focusing on salient regions, guiding the query encoder to capture salient features. (2) We train the query encoder to predict the saliency segmentation, encouraging preservation of fine-grained information in the learned representations. Extensive experiments are conducted on four publicly-accessible fundus image datasets. The proposed SSiT significantly outperforms other representative state-of-the-art SSL methods on all datasets and under various evaluation settings, establishing the effectiveness of the learned representations from SSiT. The source code is available at https://github.com/YijinHuang/SSiT. "
+}

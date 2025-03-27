@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Chest X-ray based fine-grained Tuberculosis-consistent lesion segmentation"
+  ],
+  "datasets": [
+    "Shenzhen CXR dataset"
+  ],
+  "methods": [
+    "Inception-V3 UNet model",
+    "model snapshots",
+    "segmentation threshold optimization",
+    "test-time augmentation (TTA)",
+    "averaging snapshot predictions"
+  ],
+  "results": [
+    "Higher image resolutions are not always necessary",
+    "Identifying the optimal image resolution is critical to achieving superior performance"
+  ],
+  "paper_id": "63be28d490e50fcafdf52e8c",
+  "title": "Does image resolution impact chest X-ray based fine-grained\n  Tuberculosis-consistent lesion segmentation?",
+  "abstract": "  Deep learning (DL) models are state-of-the-art in segmenting anatomical and disease regions of interest (ROIs) in medical images. Particularly, a large number of DL-based techniques have been reported using chest X-rays (CXRs). However, these models are reportedly trained on reduced image resolutions for reasons related to the lack of computational resources. Literature is sparse in discussing the optimal image resolution to train these models for segmenting the Tuberculosis (TB)-consistent lesions in CXRs. In this study, we investigated the performance variations using an Inception-V3 UNet model using various image resolutions with/without lung ROI cropping and aspect ratio adjustments, and (ii) identified the optimal image resolution through extensive empirical evaluations to improve TB-consistent lesion segmentation performance. We used the Shenzhen CXR dataset for the study which includes 326 normal patients and 336 TB patients. We proposed a combinatorial approach consisting of storing model snapshots, optimizing segmentation threshold and test-time augmentation (TTA), and averaging the snapshot predictions, to further improve performance with the optimal resolution. Our experimental results demonstrate that higher image resolutions are not always necessary, however, identifying the optimal image resolution is critical to achieving superior performance. "
+}

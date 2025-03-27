@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cross-Architectural Software Reverse Engineering"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Hierarchical Graph Neural Network (GNN)",
+    "Graph-of-Graph (GoG) representation",
+    "Siamese network-based supervised learning architecture"
+  ],
+  "results": [
+    "Predicts function names with 24.54% improvement over state-of-the-art",
+    "Achieves 51.84% better performance with more training data",
+    "Outperforms state-of-the-art for all CPU architectures",
+    "Can generalize to binaries from unseen CPU architectures",
+    "Used as a Ghidra plugin for resolving DARPA AMP challenges"
+  ],
+  "paper_id": "63bcd73090e50fcafdef97fe",
+  "title": "CFG2VEC: Hierarchical Graph Neural Network for Cross-Architectural\n  Software Reverse Engineering",
+  "abstract": "  Mission-critical embedded software is critical to our society's infrastructure but can be subject to new security vulnerabilities as technology advances. When security issues arise, Reverse Engineers (REs) use Software Reverse Engineering (SRE) tools to analyze vulnerable binaries. However, existing tools have limited support, and REs undergo a time-consuming, costly, and error-prone process that requires experience and expertise to understand the behaviors of software and vulnerabilities. To improve these tools, we propose $\\textit{cfg2vec}$, a Hierarchical Graph Neural Network (GNN) based approach. To represent binary, we propose a novel Graph-of-Graph (GoG) representation, combining the information of control-flow and function-call graphs. Our $\\textit{cfg2vec}$ learns how to represent each binary function compiled from various CPU architectures, utilizing hierarchical GNN and the siamese network-based supervised learning architecture. We evaluate $\\textit{cfg2vec}$'s capability of predicting function names from stripped binaries. Our results show that $\\textit{cfg2vec}$ outperforms the state-of-the-art by $24.54\\%$ in predicting function names and can even achieve $51.84\\%$ better given more training data. Additionally, $\\textit{cfg2vec}$ consistently outperforms the state-of-the-art for all CPU architectures, while the baseline requires multiple training to achieve similar performance. More importantly, our results demonstrate that our $\\textit{cfg2vec}$ could tackle binaries built from unseen CPU architectures, thus indicating that our approach can generalize the learned knowledge. Lastly, we demonstrate its practicability by implementing it as a Ghidra plugin used during resolving DARPA Assured MicroPatching (AMP) challenges. "
+}

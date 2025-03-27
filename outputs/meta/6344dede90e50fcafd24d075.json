@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image Stylization",
+    "One-shot Image Stylization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "MultiStyleGAN",
+    "Style Transformation Network"
+  ],
+  "results": [
+    "Multistyle space",
+    "Up to 120 image stylizations at once",
+    "8x to 60x improvement in training time"
+  ],
+  "paper_id": "6344dede90e50fcafd24d075",
+  "title": "MultiStyleGAN: Multiple One-shot Image Stylizations using a Single GAN",
+  "abstract": "  Image stylization aims at applying a reference style to arbitrary input images. A common scenario is one-shot stylization, where only one example is available for each reference style. Recent approaches for one-shot stylization such as JoJoGAN fine-tune a pre-trained StyleGAN2 generator on a single style reference image. However, such methods cannot generate multiple stylizations without fine-tuning a new model for each style separately. In this work, we present a MultiStyleGAN method that is capable of producing multiple different stylizations at once by fine-tuning a single generator. The key component of our method is a learnable transformation module called Style Transformation Network. It takes latent codes as input, and learns linear mappings to different regions of the latent space to produce distinct codes for each style, resulting in a multistyle space. Our model inherently mitigates overfitting since it is trained on multiple styles, hence improving the quality of stylizations. Our method can learn upwards of $120$ image stylizations at once, bringing $8\\times$ to $60\\times$ improvement in training time over recent competing methods. We support our results through user studies and quantitative results that indicate meaningful improvements over existing methods. "
+}

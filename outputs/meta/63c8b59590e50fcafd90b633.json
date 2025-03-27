@@ -1,0 +1,32 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Generating Diverse Gestures from Audio"
+  ],
+  "datasets": [
+    "3D motion datasets",
+    "2D motion datasets"
+  ],
+  "methods": [
+    "VAE with shared and motion-specific latent codes",
+    "Relaxed motion loss",
+    "Bicycle constraint",
+    "Diversity loss",
+    "DCT modeling",
+    "RNN",
+    "Transformer",
+    "Structured losses/metrics (e.g., STFT)",
+    "Point-wise losses (e.g., PCK)"
+  ],
+  "results": [
+    "Generates more realistic and diverse motions than previous state-of-the-art methods",
+    "Compatible with discrete cosine transformation (DCT) modeling and other popular backbones",
+    "Better motion dynamics and more nuanced motion details",
+    "Can generate motion sequences with user-specified motion clips on the timeline"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b633",
+  "title": "Audio2Gestures: Generating Diverse Gestures from Audio",
+  "abstract": "  People may perform diverse gestures affected by various mental and physical factors when speaking the same sentences. This inherent one-to-many relationship makes co-speech gesture generation from audio particularly challenging. Conventional CNNs/RNNs assume one-to-one mapping, and thus tend to predict the average of all possible target motions, easily resulting in plain/boring motions during inference. So we propose to explicitly model the one-to-many audio-to-motion mapping by splitting the cross-modal latent code into shared code and motion-specific code. The shared code is expected to be responsible for the motion component that is more correlated to the audio while the motion-specific code is expected to capture diverse motion information that is more independent of the audio. However, splitting the latent code into two parts poses extra training difficulties. Several crucial training losses/strategies, including relaxed motion loss, bicycle constraint, and diversity loss, are designed to better train the VAE.   Experiments on both 3D and 2D motion datasets verify that our method generates more realistic and diverse motions than previous state-of-the-art methods, quantitatively and qualitatively. Besides, our formulation is compatible with discrete cosine transformation (DCT) modeling and other popular backbones (\\textit{i.e.} RNN, Transformer). As for motion losses and quantitative motion evaluation, we find structured losses/metrics (\\textit{e.g.} STFT) that consider temporal and/or spatial context complement the most commonly used point-wise losses (\\textit{e.g.} PCK), resulting in better motion dynamics and more nuanced motion details. Finally, we demonstrate that our method can be readily used to generate motion sequences with user-specified motion clips on the timeline. "
+}

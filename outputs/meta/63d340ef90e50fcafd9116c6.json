@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Recovery of planted vector in random sparse vector problem"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Statistical Query (SQ) lower bound, Lattice basis reduction algorithm"
+  ],
+  "results": [
+    "Super-polynomial number of VSTAT queries needed for statistical testing problem when n << \u03c1^2 d^2 and \u03c1 >> 1/\u221ad"
+  ],
+  "paper_id": "63d340ef90e50fcafd9116c6",
+  "title": "SQ Lower Bounds for Random Sparse Planted Vector Problem",
+  "abstract": "  Consider the setting where a $\\rho$-sparse Rademacher vector is planted in a random $d$-dimensional subspace of $R^n$. A classical question is how to recover this planted vector given a random basis in this subspace. A recent result by [ZSWB21] showed that the Lattice basis reduction algorithm can recover the planted vector when $n\\geq d+1$. Although the algorithm is not expected to tolerate inverse polynomial amount of noise, it is surprising because it was previously shown that recovery cannot be achieved by low degree polynomials when $n\\ll \\rho^2 d^{2}$ [MW21]. A natural question is whether we can derive an Statistical Query (SQ) lower bound matching the previous low degree lower bound in [MW21]. This will   - imply that the SQ lower bound can be surpassed by lattice based algorithms;   - predict the computational hardness when the planted vector is perturbed by inverse polynomial amount of noise. In this paper, we prove such an SQ lower bound. In particular, we show that super-polynomial number of VSTAT queries is needed to solve the easier statistical testing problem when $n\\ll \\rho^2 d^{2}$ and $\\rho\\gg \\frac{1}{\\sqrt{d}}$. The most notable technique we used to derive the SQ lower bound is the almost equivalence relationship between SQ lower bound and low degree lower bound [BBH+20, MW21]. "
+}

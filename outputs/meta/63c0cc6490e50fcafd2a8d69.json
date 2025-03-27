@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Clock Synchronization in Distributed Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Gradient TRIX",
+    "Self-stabilizing GCS algorithm"
+  ],
+  "results": [
+    "Asymptotically optimal local skew of \u0398(log D)",
+    "Robustness to increase the size of reliable synchronously clocked SoCs"
+  ],
+  "paper_id": "63c0cc6490e50fcafd2a8d69",
+  "title": "Gradient TRIX",
+  "abstract": "  Gradient clock synchronization (GCS) algorithms minimize the worst-case clock offset between the nodes in a distributed network of diameter $D$ and size $n$. They achieve optimal offsets of $\\Theta(\\log D)$ locally, i.e. between adjacent nodes as shown by Lenzen et al., and $\\Theta(D)$ globally as shown by Biaz and Welch. As demonstrated in the work of Bund et al., this is a highly promising approach for improved clocking schemes for large-scale synchronous Systems-on-Chip (SoC). Unfortunately, in large systems, faults hinder their practical use. State of the art fault-tolerant, as presented by Bund et al., has a drawback that is fatal in this setting: It relies on node and edge replication. For $f=1$, this translates to at least $16$-fold edge replication and high degree nodes, far from the optimum of $2f+1=3$ for tolerating up to $f$ faulty neighbors.   In this work, we present a self-stabilizing GCS algorithm for a grid-like directed graph with optimal node in- and out-degrees of $3$ that tolerates $1$ faulty in-neighbor. If nodes fail with independent probability $p\\in o(n^{-1/2})$, it achieves asymptotically optimal local skew of $\\Theta(\\log D)$ with probability $1-o(1)$; this holds under general worst-case assumptions on link delay and clock speed variations, provided they change slowly relative to the speed of the system. The failure probability is the largest possible ensuring that with probabity $1-o(1)$ for each node at most one in-neighbor fails. As modern hardware is clocked at gigahertz speeds and the algorithm can simultaneously sustain a constant number of arbitrary changes due to faults in each clock cycle, this results in sufficient robustness to dramatically increase the size of reliable synchronously clocked SoCs. "
+}

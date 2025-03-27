@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Depth estimation from light field"
+  ],
+  "datasets": [
+    "Synthetic and real data"
+  ],
+  "methods": [
+    "Matching entropy based disparity estimation",
+    "Two-step adaptive matching algorithm"
+  ],
+  "results": [
+    "Improved accuracy in occlusion and smooth regions",
+    "High precision depth estimation from 4D light field data"
+  ],
+  "paper_id": "635f3ca190e50fcafd3f589a",
+  "title": "Matching entropy based disparity estimation from light field",
+  "abstract": "  A major challenge for matching-based depth estimation is to prevent mismatches in occlusion and smooth regions. An effective matching window satisfying three characteristics: texture richness, disparity consistency and anti-occlusion should be able to prevent mismatches to some extent. According to these characteristics, we propose matching entropy in the spatial domain of light field to measure the amount of correct information in a matching window, which provides the criterion for matching window selection. Based on matching entropy regularization, we establish an optimization model for depth estimation with a matching cost fidelity term. To find the optimum, we propose a two-step adaptive matching algorithm. First, the region type is adaptively determined to identify occluding, occluded, smooth and textured regions. Then, the matching entropy criterion is used to adaptively select the size and shape of matching windows, as well as the visible viewpoints. The two-step process can reduce mismatches and redundant calculations by selecting effective matching windows. The experimental results on synthetic and real data show that the proposed method can effectively improve the accuracy of depth estimation in occlusion and smooth regions and has strong robustness for different noise levels. Therefore, high-precision depth estimation from 4D light field data is achieved. "
+}

@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Property Testing of the Binary Rank"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "One-sided adaptive and non-adaptive testers for (0,1)-matrices of s-binary rank at most d (and exactly d)"
+  ],
+  "results": [
+    "Query complexity improvement by a factor of ~\u0398(2^d) compared to Parnas et al. (2021)"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd8864aa",
+  "title": "A Note on Property Testing of the Binary Rank",
+  "abstract": "  Let $M$ be a $n\\times m$ $(0,1)$-matrix. We define the $s$-binary rank, $br_s(M)$, of $M$ to be the minimal integer $d$ such that there are $d$ monochromatic rectangles that cover all the $1$-entries in the matrix, and each $1$-entry is covered by at most $s$ rectangles. When $s=1$, this is the binary rank,~$br(M)$, known from the literature. Let $R(M)$ and $C(M)$ be the set of rows and columns of~$M$, respectively. We use the result of Sgall (Comb. 1999) to prove that if $M$ has $s$-binary rank at most~$d$, then $|R(M)|\\cdot |C(M)|\\le {d\\choose \\le s}2^{d}$ where ${d\\choose \\le s}=\\sum_{i=0}^s{d\\choose i}$. This bound is tight; that is, there exists a matrix $M'$ of $s$-binary rank $d$ such that $|R(M')|\\cdot |C(M')|= {d\\choose \\le s}2^{d}$. Using this result, we give a new one-sided adaptive and non-adaptive testers for $(0,1)$-matrices of $s$-binary rank at most $d$ (and exactly $d$) that makes $\\tilde O\\left({d\\choose \\le s}2^d/\\epsilon\\right)$ and $\\tilde O\\left({d\\choose \\le s}2^d/\\epsilon^2\\right)$ queries, respectively. For a fixed $s$, this improves the query complexity of the tester of Parnas et al. (Theory Comput. Syst. 2021) by a factor of $\\tilde \\Theta (2^d)$. "
+}

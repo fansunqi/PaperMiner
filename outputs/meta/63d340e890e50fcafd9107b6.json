@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Non-linear partial differential equations solver"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Koopman neural operator (KNO)"
+  ],
+  "results": [
+    "Notable advantages in breaking the tradeoff between accuracy and efficiency"
+  ],
+  "paper_id": "63d340e890e50fcafd9107b6",
+  "title": "Koopman neural operator as a mesh-free solver of non-linear partial\n  differential equations",
+  "abstract": "  The lacking of analytic solutions of diverse partial differential equations (PDEs) gives birth to series of computational techniques for numerical solutions. In machine learning, numerous latest advances of solver designs are accomplished in developing neural operators, a kind of mesh-free approximators of the infinite-dimensional operators that map between different parameterization spaces of equation solutions. Although neural operators exhibit generalization capacities for learning an entire PDE family simultaneously, they become less accurate and explainable while learning long-term behaviours of non-linear PDE families. In this paper, we propose Koopman neural operator (KNO), a new neural operator, to overcome these challenges. With the same objective of learning an infinite-dimensional mapping between Banach spaces that serves as the solution operator of target PDE family, our approach differs from existing models by formulating a non-linear dynamic system of equation solution. By approximating the Koopman operator, an infinite-dimensional linear operator governing all possible observations of the dynamic system, to act on the flow mapping of dynamic system, we can equivalently learn the solution of an entire non-linear PDE family by solving simple linear prediction problems. In zero-shot prediction and long-term prediction experiments on representative PDEs (e.g., the Navier-Stokes equation), KNO exhibits notable advantages in breaking the tradeoff between accuracy and efficiency (e.g., model size) while previous state-of-the-art models are limited. These results suggest that more efficient PDE solvers can be developed by the joint efforts from physics and machine learning. "
+}

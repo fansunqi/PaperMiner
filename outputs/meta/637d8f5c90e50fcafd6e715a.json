@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://pages.cs.huji.ac.il/adiyoss-lab/aero"
+  ],
+  "tasks": [
+    "Audio Super Resolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Encoder-decoder architecture with U-Net like skip connections",
+    "Time and frequency domain loss functions",
+    "Reconstruction losses and perceptual losses",
+    "Complex-valued spectrogram processing"
+  ],
+  "results": [
+    "High performance across a wide range of sample rates",
+    "Outperforms evaluated baselines considering Log-Spectral Distance, ViSQOL, and subjective MUSHRA test"
+  ],
+  "paper_id": "637d8f5c90e50fcafd6e715a",
+  "title": "AERO: Audio Super Resolution in the Spectral Domain",
+  "abstract": "  We present AERO, a audio super-resolution model that processes speech and music signals in the spectral domain. AERO is based on an encoder-decoder architecture with U-Net like skip connections. We optimize the model using both time and frequency domain loss functions. Specifically, we consider a set of reconstruction losses together with perceptual ones in the form of adversarial and feature discriminator loss functions. To better handle phase information the proposed method operates over the complex-valued spectrogram using two separate channels. Unlike prior work which mainly considers low and high frequency concatenation for audio super-resolution, the proposed method directly predicts the full frequency range. We demonstrate high performance across a wide range of sample rates considering both speech and music. AERO outperforms the evaluated baselines considering Log-Spectral Distance, ViSQOL, and the subjective MUSHRA test. Audio samples and code are available at https://pages.cs.huji.ac.il/adiyoss-lab/aero "
+}

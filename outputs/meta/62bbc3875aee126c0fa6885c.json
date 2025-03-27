@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimizing data processing cluster configurations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Crispy: job profiling runs with small samples, extrapolation of memory usage"
+  ],
+  "results": [
+    "56% reduction in job execution costs",
+    "Average profiling time of less than ten minutes"
+  ],
+  "paper_id": "62bbc3875aee126c0fa6885c",
+  "title": "Get Your Memory Right: The Crispy Resource Allocation Assistant for\n  Large-Scale Data Processing",
+  "abstract": "  Distributed dataflow systems like Apache Spark and Apache Hadoop enable data-parallel processing of large datasets on clusters. Yet, selecting appropriate computational resources for dataflow jobs -- that neither lead to bottlenecks nor to low resource utilization -- is often challenging, even for expert users such as data engineers. Further, existing automated approaches to resource selection rely on the assumption that a job is recurring to learn from previous runs or to warrant the cost of full test runs to learn from. However, this assumption often does not hold since many jobs are too unique.   Therefore, we present Crispy, a method for optimizing data processing cluster configurations based on job profiling runs with small samples of the dataset on just a single machine. Crispy attempts to extrapolate the memory usage for the full dataset to then choose a cluster configuration with enough total memory. In our evaluation on a dataset with 1031 Spark and Hadoop jobs, we see a reduction of job execution costs by 56% compared to the baseline, while on average spending less than ten minutes on profiling runs per job on a consumer-grade laptop. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving the Discretised Neutron Diffusion Equations"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Networks",
+    "Finite Volume Method",
+    "Finite Element Method",
+    "U-Net architecture",
+    "Jacobi method",
+    "Multigrid solver"
+  ],
+  "results": [
+    "Solution identical to standard codes",
+    "Optimised for different computer architectures"
+  ],
+  "paper_id": "63d340e890e50fcafd9106f9",
+  "title": "Solving the Discretised Neutron Diffusion Equations using Neural\n  Networks",
+  "abstract": "  This paper presents a new approach which uses the tools within Artificial Intelligence (AI) software libraries as an alternative way of solving partial differential equations (PDEs) that have been discretised using standard numerical methods. In particular, we describe how to represent numerical discretisations arising from the finite volume and finite element methods by pre-determining the weights of convolutional layers within a neural network. As the weights are defined by the discretisation scheme, no training of the network is required and the solutions obtained are identical (accounting for solver tolerances) to those obtained with standard codes often written in Fortran or C++. We also explain how to implement the Jacobi method and a multigrid solver using the functions available in AI libraries. For the latter, we use a U-Net architecture which is able to represent a sawtooth multigrid method. A benefit of using AI libraries in this way is that one can exploit their power and their built-in technologies. For example, their executions are already optimised for different computer architectures, whether it be CPUs, GPUs or new-generation AI processors. In this article, we apply the proposed approach to eigenvalue problems in reactor physics where neutron transport is described by diffusion theory. For a fuel assembly benchmark, we demonstrate that the solution obtained from our new approach is the same (accounting for solver tolerances) as that obtained from the same discretisation coded in a standard way using Fortran. We then proceed to solve a reactor core benchmark using the new approach. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/lumoe/dlkinematics.git"
+  ],
+  "tasks": [
+    "Robotic systems forward kinematics calculation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Differentiable forward kinematics library compatible with ROS-URDF",
+    "TensorFlow 2",
+    "Auto-differentiable"
+  ],
+  "results": [
+    "Performance improvement on GPU compared to sequential CPU-based calculation"
+  ],
+  "paper_id": "63d340e890e50fcafd91071e",
+  "title": "Differentiable Forward Kinematics for TensorFlow 2",
+  "abstract": "  Robotic systems are often complex and depend on the integration of a large number of software components. One important component in robotic systems provides the calculation of forward kinematics, which is required by both motion-planning and perception related components. End-to-end learning systems based on deep learning require passing gradients across component boundaries.Typical software implementations of forward kinematics are not differentiable, and thus prevent the construction of gradient-based, end-to-end learning systems. In this paper we present a library compatible with ROS-URDF that computes forward kinematics while simultaneously giving access to the gradients w.r.t. joint configurations and model parameters, allowing gradient-based learning and model identification. Our Python library is based on Tensorflow~2 and is auto-differentiable. It supports calculating a large number of kinematic configurations on the GPU in parallel, yielding a considerable performance improvement compared to sequential CPU-based calculation. https://github.com/lumoe/dlkinematics.git "
+}

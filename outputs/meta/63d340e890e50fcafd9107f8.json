@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Attribute Inference Attacks against Synthetic Data"
+  ],
+  "datasets": [
+    "Synthetic datasets ranging from 10^3 to 10^6 records"
+  ],
+  "methods": [
+    "Linear reconstruction attacks"
+  ],
+  "results": [
+    "Synthetic data is subject to privacy-utility tradeoffs"
+  ],
+  "paper_id": "63d340e890e50fcafd9107f8",
+  "title": "A Linear Reconstruction Approach for Attribute Inference Attacks against\n  Synthetic Data",
+  "abstract": "  Personal data collected at scale from surveys or digital devices offers important insights for statistical analysis and scientific research. Safely sharing such data while protecting privacy is however challenging. Anonymization allows data to be shared while minimizing privacy risks, but traditional anonymization techniques have been repeatedly shown to provide limited protection against re-identification attacks in practice. Among modern anonymization techniques, synthetic data generation (SDG) has emerged as a potential solution to find a good tradeoff between privacy and statistical utility. Synthetic data is typically generated using algorithms that learn the statistical distribution of the original records, to then generate \"artificial\" records that are structurally and statistically similar to the original ones. Yet, the fact that synthetic records are \"artificial\" does not, per se, guarantee that privacy is protected. In this work, we systematically evaluate the tradeoffs between protecting privacy and preserving statistical utility for a wide range of synthetic data generation algorithms. Modeling privacy as protection against attribute inference attacks (AIAs), we extend and adapt linear reconstruction attacks, which have not been previously studied in the context of synthetic data. While prior work suggests that AIAs may be effective only on few outlier records, we show they can be very effective even on randomly selected records. We evaluate attacks on synthetic datasets ranging from 10^3 to 10^6 records, showing that even for the same generative model, the attack effectiveness can drastically increase when a larger number of synthetic records is generated. Overall, our findings prove that synthetic data is subject to privacy-utility tradeoffs just like other anonymization techniques: when good utility is preserved, attribute inference can be a risk for many data subjects. "
+}

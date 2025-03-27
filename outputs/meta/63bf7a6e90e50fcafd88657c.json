@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Molecular dynamics data coarse-graining",
+    "Fracture modeling"
+  ],
+  "datasets": [
+    "MD simulated material fracture datasets"
+  ],
+  "methods": [
+    "Coarse-graining method",
+    "Weighted Essentially Non-Oscillatory scheme",
+    "Two-phase optimization-based learning approach",
+    "Peridynamics surrogate model"
+  ],
+  "results": [
+    "Substantial reductions in computational cost compared with MD",
+    "Robust and generalizable model for fracture modeling"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88657c",
+  "title": "Towards a unified nonlocal, peridynamics framework for the\n  coarse-graining of molecular dynamics data with fractures",
+  "abstract": "  Molecular dynamics (MD) has served as a powerful tool for designing materials with reduced reliance on laboratory testing. However, the use of MD directly to treat the deformation and failure of materials at the mesoscale is still largely beyond reach. Herein, we propose a learning framework to extract a peridynamic model as a mesoscale continuum surrogate from MD simulated material fracture datasets. Firstly, we develop a novel coarse-graining method, to automatically handle the material fracture and its corresponding discontinuities in MD displacement dataset. Inspired by the Weighted Essentially Non-Oscillatory scheme, the key idea lies at an adaptive procedure to automatically choose the locally smoothest stencil, then reconstruct the coarse-grained material displacement field as piecewise smooth solutions containing discontinuities. Then, based on the coarse-grained MD data, a two-phase optimization-based learning approach is proposed to infer the optimal peridynamics model with damage criterion. In the first phase, we identify the optimal nonlocal kernel function from datasets without material damage, to capture the material stiffness properties. Then, in the second phase, the material damage criterion is learnt as a smoothed step function from the data with fractures. As a result, a peridynamics surrogate is obtained. Our peridynamics surrogate model can be employed in further prediction tasks with different grid resolutions from training, and hence allows for substantial reductions in computational cost compared with MD. We illustrate the efficacy of the proposed approach with several numerical tests for single layer graphene. Our tests show that the proposed data-driven model is robust and generalizable: it is capable in modeling the initialization and growth of fractures under discretization and loading settings that are different from the ones used during training. "
+}

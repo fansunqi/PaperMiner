@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Histopathology Image Segmentation"
+  ],
+  "datasets": [
+    "high resolution microscopy datasets"
+  ],
+  "methods": [
+    "Patch-based Contrastive Learning",
+    "Fully Convolutional Neural Network (FCNN)"
+  ],
+  "results": [
+    "Comparable performance with relevant self-supervised and supervised methods"
+  ],
+  "paper_id": "6305970d90e50fcafd35b425",
+  "title": "Efficient Self-Supervision using Patch-based Contrastive Learning for\n  Histopathology Image Segmentation",
+  "abstract": "  Learning discriminative representations of unlabelled data is a challenging task. Contrastive self-supervised learning provides a framework to learn meaningful representations using learned notions of similarity measures from simple pretext tasks. In this work, we propose a simple and efficient framework for self-supervised image segmentation using contrastive learning on image patches, without using explicit pretext tasks or any further labeled fine-tuning. A fully convolutional neural network (FCNN) is trained in a self-supervised manner to discern features in the input images and obtain confidence maps which capture the network's belief about the objects belonging to the same class. Positive- and negative- patches are sampled based on the average entropy in the confidence maps for contrastive learning. Convergence is assumed when the information separation between the positive patches is small, and the positive-negative pairs is large. The proposed model only consists of a simple FCNN with 10.8k parameters and requires about 5 minutes to converge on the high resolution microscopy datasets, which is orders of magnitude smaller than the relevant self-supervised methods to attain similar performance. We evaluate the proposed method for the task of segmenting nuclei from two histopathology datasets, and show comparable performance with relevant self-supervised and supervised methods. "
+}

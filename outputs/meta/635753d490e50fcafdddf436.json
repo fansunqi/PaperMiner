@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Traffic signal control"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reinforcement learning with augmented data (ADLight)",
+    "Movement shuffle data augmentation"
+  ],
+  "results": [
+    "5% loss of average waiting time compared to single environment training",
+    "More than 80% reduction in training time"
+  ],
+  "paper_id": "635753d490e50fcafdddf436",
+  "title": "ADLight: A Universal Approach of Traffic Signal Control with Augmented\n  Data Using Reinforcement Learning",
+  "abstract": "  Traffic signal control has the potential to reduce congestion in dynamic networks. Recent studies show that traffic signal control with reinforcement learning (RL) methods can significantly reduce the average waiting time. However, a shortcoming of existing methods is that they require model retraining for new intersections with different structures. In this paper, we propose a novel reinforcement learning approach with augmented data (ADLight) to train a universal model for intersections with different structures. We propose a new agent design incorporating features on movements and actions with set current phase duration to allow the generalized model to have the same structure for different intersections. A new data augmentation method named \\textit{movement shuffle} is developed to improve the generalization performance. We also test the universal model with new intersections in Simulation of Urban MObility (SUMO). The results show that the performance of our approach is close to the models trained in a single environment directly (only a 5% loss of average waiting time), and we can reduce more than 80% of training time, which saves a lot of computational resources in scalable operations of traffic lights. "
+}

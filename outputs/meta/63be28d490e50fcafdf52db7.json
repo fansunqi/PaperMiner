@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Autonomous Driving Systems Validation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Simulation-based Validation",
+    "Scenario Generator",
+    "Monitor",
+    "Semantic Model",
+    "Metric Graph",
+    "First-order Linear Temporal Logic"
+  ],
+  "results": [
+    "Systematic exploration of risky situations",
+    "Uncovered flaws in the real simulator"
+  ],
+  "paper_id": "63be28d490e50fcafdf52db7",
+  "title": "Simulation-based Validation for Autonomous Driving Systems",
+  "abstract": "  Simulation is essential to validate autonomous driving systems. However, a simple simulation, even for an extremely high number of simulated miles or hours, is not sufficient. We need well-founded criteria showing that simulation does indeed cover a large fraction of the relevant real-world situations. In addition, the validation must concern not only incidents, but also the detection of any type of potentially dangerous situation, such as traffic violations.   We investigate a rigorous simulation and testing-based validation method for autonomous driving systems that integrates an existing industrial simulator and a formally defined testing environment. The environment includes a scenario generator that drives the simulation process and a monitor that checks at runtime the observed behavior of the system against a set of system properties to be validated. The validation method consists in extracting from the simulator a semantic model of the simulated system including a metric graph, which is a mathematical model of the environment in which the vehicles of the system evolve. The monitor can verify properties formalized in a first-order linear temporal logic and provide diagnostics explaining their non satisfaction. Instead of exploring the system behavior randomly as many simulators do, we propose a method to systematically generate sets of scenarios that cover potentially risky situations, especially for different types of junctions where specific traffic rules must be respected. We show that the systematic exploration of risky situations has uncovered many flaws in the real simulator that would have been very difficult to discover by a random exploration process. "
+}

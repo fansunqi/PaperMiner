@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Solving the 2D Burgers Equation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Physics-Informed Neural Network (PINN)"
+  ],
+  "results": [
+    "Improvement in the overall observance of the underlying physics",
+    "May provide a way to improve the overall performance of the model without relying on additional data"
+  ],
+  "paper_id": "63ca069790e50fcafd683018",
+  "title": "Augmenting a Physics-Informed Neural Network for the 2D Burgers Equation\n  by Addition of Solution Data Points",
+  "abstract": "  We implement a Physics-Informed Neural Network (PINN) for solving the two-dimensional Burgers equations. This type of model can be trained with no previous knowledge of the solution; instead, it relies on evaluating the governing equations of the system in points of the physical domain. It is also possible to use points with a known solution during training. In this paper, we compare PINNs trained with different amounts of governing equation evaluation points and known solution points. Comparing models that were trained purely with known solution points to those that have also used the governing equations, we observe an improvement in the overall observance of the underlying physics in the latter. We also investigate how changing the number of each type of point affects the resulting models differently. Finally, we argue that the addition of the governing equations during training may provide a way to improve the overall performance of the model without relying on additional data, which is especially important for situations where the number of known solution points is limited. "
+}

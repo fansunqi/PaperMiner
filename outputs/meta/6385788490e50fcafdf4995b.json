@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Recognition of biomedical microscopy images"
+  ],
+  "datasets": [
+    "Public datasets of biomedical microscopy images"
+  ],
+  "methods": [
+    "Knowledge-based learning framework (TOWER)",
+    "Contrastive learning",
+    "Generative learning",
+    "Sample Space Diversification",
+    "Informative noise-contrastive estimation loss",
+    "Correlated Optimization"
+  ],
+  "results": [
+    "Dice improvement of 1.38 percentage points over SimCLR",
+    "Label-efficient semi-supervised learning",
+    "Reducing annotation cost by up to 99% in pathological classification"
+  ],
+  "paper_id": "6385788490e50fcafdf4995b",
+  "title": "A Knowledge-based Learning Framework for Self-supervised Pre-training\n  Towards Enhanced Recognition of Biomedical Microscopy Images",
+  "abstract": "  Self-supervised pre-training has become the priory choice to establish reliable neural networks for automated recognition of massive biomedical microscopy images, which are routinely annotation-free, without semantics, and without guarantee of quality. Note that this paradigm is still at its infancy and limited by closely related open issues: 1) how to learn robust representations in an unsupervised manner from unlabelled biomedical microscopy images of low diversity in samples? and 2) how to obtain the most significant representations demanded by a high-quality segmentation? Aiming at these issues, this study proposes a knowledge-based learning framework (TOWER) towards enhanced recognition of biomedical microscopy images, which works in three phases by synergizing contrastive learning and generative learning methods: 1) Sample Space Diversification: Reconstructive proxy tasks have been enabled to embed a priori knowledge with context highlighted to diversify the expanded sample space; 2) Enhanced Representation Learning: Informative noise-contrastive estimation loss regularizes the encoder to enhance representation learning of annotation-free images; 3) Correlated Optimization: Optimization operations in pre-training the encoder and the decoder have been correlated via image restoration from proxy tasks, targeting the need for semantic segmentation. Experiments have been conducted on public datasets of biomedical microscopy images against the state-of-the-art counterparts (e.g., SimCLR and BYOL), and results demonstrate that: TOWER statistically excels in all self-supervised methods, achieving a Dice improvement of 1.38 percentage points over SimCLR. TOWER also has potential in multi-modality medical image analysis and enables label-efficient semi-supervised learning, e.g., reducing the annotation cost by up to 99% in pathological classification. "
+}

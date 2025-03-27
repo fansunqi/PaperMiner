@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Training",
+    "Robustness against Adversarial Policies"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Population Based Training"
+  ],
+  "results": [
+    "Increases robustness against adversaries",
+    "Robustness correlated with the size of the opponent population"
+  ],
+  "paper_id": "62f4739390e50fcafdfeca26",
+  "title": "Reducing Exploitability with Population Based Training",
+  "abstract": "  Self-play reinforcement learning has achieved state-of-the-art, and often superhuman, performance in a variety of zero-sum games. Yet prior work has found that policies that are highly capable against regular opponents can fail catastrophically against adversarial policies: an opponent trained explicitly against the victim. Prior defenses using adversarial training were able to make the victim robust to a specific adversary, but the victim remained vulnerable to new ones. We conjecture this limitation was due to insufficient diversity of adversaries seen during training. We analyze a defense using population based training to pit the victim against a diverse set of opponents. We evaluate this defense's robustness against new adversaries in two low-dimensional environments. This defense increases robustness against adversaries, as measured by the number of attacker training timesteps to exploit the victim. Furthermore, we show that robustness is correlated with the size of the opponent population. "
+}

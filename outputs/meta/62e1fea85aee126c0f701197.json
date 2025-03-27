@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/liyuntong9/rknn"
+  ],
+  "tasks": [
+    "Knowledge Distillation",
+    "Privacy-Preserving Machine Learning"
+  ],
+  "datasets": [
+    "CIFAR-10",
+    "MNIST",
+    "SVHN"
+  ],
+  "methods": [
+    "Reverse $k$-NN labeling method",
+    "Differential Privacy"
+  ],
+  "results": [
+    "State-of-the-art accuracy with lower privacy loss",
+    "CIFAR-10: 82.1% test accuracy with budget 1.0",
+    "MNIST: 99.1% accuracy with budget 0.1",
+    "SVHN: 95.6% accuracy with budget 0.1"
+  ],
+  "paper_id": "62e1fea85aee126c0f701197",
+  "title": "Fine-grained Private Knowledge Distillation",
+  "abstract": "  Knowledge distillation has emerged as a scalable and effective way for privacy-preserving machine learning. One remaining drawback is that it consumes privacy in a model-level (i.e., client-level) manner, every distillation query incurs privacy loss of one client's all records. In order to attain fine-grained privacy accountant and improve utility, this work proposes a model-free reverse $k$-NN labeling method towards record-level private knowledge distillation, where each record is employed for labeling at most $k$ queries. Theoretically, we provide bounds of labeling error rate under the centralized/local/shuffle model of differential privacy (w.r.t. the number of records per query, privacy budgets). Experimentally, we demonstrate that it achieves new state-of-the-art accuracy with one order of magnitude lower of privacy loss. Specifically, on the CIFAR-$10$ dataset, it reaches $82.1\\%$ test accuracy with centralized privacy budget $1.0$; on the MNIST/SVHN dataset, it reaches $99.1\\%$/$95.6\\%$ accuracy respectively with budget $0.1$. It is the first time deep learning with differential privacy achieve comparable accuracy with reasonable data privacy protection (i.e., $\\exp(\\epsilon)\\leq 1.5$). Our code is available at https://github.com/liyuntong9/rknn. "
+}

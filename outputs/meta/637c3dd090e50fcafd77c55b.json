@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/truongvu2000nd/AFS"
+  ],
+  "tasks": [
+    "Face Swapping"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Arithmetic Face Swapping (AFS)",
+    "Identity-style disentanglement",
+    "Neural network mapping latent codes"
+  ],
+  "results": [
+    "High-fidelity face swapping",
+    "Advantage over state-of-the-art methods",
+    "Quality of swapped faces"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c55b",
+  "title": "Face Swapping as A Simple Arithmetic Operation",
+  "abstract": "  We propose a novel high-fidelity face swapping method called \"Arithmetic Face Swapping\" (AFS) that explicitly disentangles the intermediate latent space W+ of a pretrained StyleGAN into the \"identity\" and \"style\" subspaces so that a latent code in W+ is the sum of an \"identity\" code and a \"style\" code in the corresponding subspaces. Via our disentanglement, face swapping (FS) can be regarded as a simple arithmetic operation in W+, i.e., the summation of a source \"identity\" code and a target \"style\" code. This makes AFS more intuitive and elegant than other FS methods. In addition, our method can generalize over the standard face swapping to support other interesting operations, e.g., combining the identity of one source with styles of multiple targets and vice versa. We implement our identity-style disentanglement by learning a neural network that maps a latent code to a \"style\" code. We provide a condition for this network which theoretically guarantees identity preservation of the source face even after a sequence of face swapping operations. Extensive experiments demonstrate the advantage of our method over state-of-the-art FS methods in producing high-quality swapped faces. Our source code was made public at https://github.com/truongvu2000nd/AFS "
+}

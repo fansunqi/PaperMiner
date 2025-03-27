@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Mutation testing"
+  ],
+  "datasets": [
+    "689 faulty program versions"
+  ],
+  "methods": [
+    "Pre-trained generative language models (CodeBERT)",
+    "Mutation testing technique (\u03bcBERT)"
+  ],
+  "results": [
+    "Fault revelation ability of \u03bcBERT higher than state-of-the-art mutation testing (PiTest)",
+    "Up to 17% higher fault detection potential than PiTest",
+    "\u03bcBERT complements PiTest, detecting 47 bugs missed by PiTest",
+    "PiTest finds 13 bugs missed by \u03bcBERT"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa3f6",
+  "title": "Efficient Mutation Testing via Pre-Trained Language Models",
+  "abstract": "  Mutation testing is an established fault-based testing technique. It operates by seeding faults into the programs under test and asking developers to write tests that reveal these faults. These tests have the potential to reveal a large number of faults -- those that couple with the seeded ones -- and thus are deemed important. To this end, mutation testing should seed faults that are both \"natural\" in a sense easily understood by developers and strong (have high chances to reveal faults). To achieve this we propose using pre-trained generative language models (i.e. CodeBERT) that have the ability to produce developer-like code that operates similarly, but not exactly, as the target code. This means that the models have the ability to seed natural faults, thereby offering opportunities to perform mutation testing. We realise this idea by implementing $\\mu$BERT, a mutation testing technique that performs mutation testing using CodeBert and empirically evaluated it using 689 faulty program versions. Our results show that the fault revelation ability of $\\mu$BERT is higher than that of a state-of-the-art mutation testing (PiTest), yielding tests that have up to 17% higher fault detection potential than that of PiTest. Moreover, we observe that $\\mu$BERT can complement PiTest, being able to detect 47 bugs missed by PiTest, while at the same time, PiTest can find 13 bugs missed by $\\mu$BERT. "
+}

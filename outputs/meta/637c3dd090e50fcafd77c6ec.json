@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Normalizing Flows",
+    "conservative action encoder",
+    "policy model in latent space"
+  ],
+  "results": [
+    "outperforms recently proposed algorithms with generative action models"
+  ],
+  "paper_id": "637c3dd090e50fcafd77c6ec",
+  "title": "Let Offline RL Flow: Training Conservative Agents in the Latent Space of\n  Normalizing Flows",
+  "abstract": "  Offline reinforcement learning aims to train a policy on a pre-recorded and fixed dataset without any additional environment interactions. There are two major challenges in this setting: (1) extrapolation error caused by approximating the value of state-action pairs not well-covered by the training data and (2) distributional shift between behavior and inference policies. One way to tackle these problems is to induce conservatism - i.e., keeping the learned policies closer to the behavioral ones. To achieve this, we build upon recent works on learning policies in latent action spaces and use a special form of Normalizing Flows for constructing a generative model, which we use as a conservative action encoder. This Normalizing Flows action encoder is pre-trained in a supervised manner on the offline dataset, and then an additional policy model - controller in the latent space - is trained via reinforcement learning. This approach avoids querying actions outside of the training dataset and therefore does not require additional regularization for out-of-dataset actions. We evaluate our method on various locomotion and navigation tasks, demonstrating that our approach outperforms recently proposed algorithms with generative action models on a large portion of datasets. "
+}

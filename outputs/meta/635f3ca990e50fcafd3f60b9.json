@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Stochastic gradient MCMC (SGMCMC)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Preferential Subsampling",
+    "Adaptive subsample size adjustment"
+  ],
+  "results": [
+    "Maintains accuracy",
+    "Reduces average subsample size"
+  ],
+  "paper_id": "635f3ca990e50fcafd3f60b9",
+  "title": "Preferential Subsampling for Stochastic Gradient Langevin Dynamics",
+  "abstract": "  Stochastic gradient MCMC (SGMCMC) offers a scalable alternative to traditional MCMC, by constructing an unbiased estimate of the gradient of the log-posterior with a small, uniformly-weighted subsample of the data. While efficient to compute, the resulting gradient estimator may exhibit a high variance and impact sampler performance. The problem of variance control has been traditionally addressed by constructing a better stochastic gradient estimator, often using control variates. We propose to use a discrete, non-uniform probability distribution to preferentially subsample data points that have a greater impact on the stochastic gradient. In addition, we present a method of adaptively adjusting the subsample size at each iteration of the algorithm, so that we increase the subsample size in areas of the sample space where the gradient is harder to estimate. We demonstrate that such an approach can maintain the same level of accuracy while substantially reducing the average subsample size that is used. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Neural Radiance Field robustness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural Radiance Field (NeRF)",
+    "feature encoder",
+    "data augmentation techniques"
+  ],
+  "results": [
+    "NeRF-based models are significantly degraded in the presence of corruption",
+    "sensitive to a different set of corruptions than image recognition models",
+    "feature encoder contributes marginally to robustness",
+    "standard data augmentation techniques do not help the robustness of NeRF-based models"
+  ],
+  "paper_id": "63be28d490e50fcafdf52f1d",
+  "title": "Benchmarking Robustness in Neural Radiance Fields",
+  "abstract": "  Neural Radiance Field (NeRF) has demonstrated excellent quality in novel view synthesis, thanks to its ability to model 3D object geometries in a concise formulation. However, current approaches to NeRF-based models rely on clean images with accurate camera calibration, which can be difficult to obtain in the real world, where data is often subject to corruption and distortion. In this work, we provide the first comprehensive analysis of the robustness of NeRF-based novel view synthesis algorithms in the presence of different types of corruptions.   We find that NeRF-based models are significantly degraded in the presence of corruption, and are more sensitive to a different set of corruptions than image recognition models. Furthermore, we analyze the robustness of the feature encoder in generalizable methods, which synthesize images using neural features extracted via convolutional neural networks or transformers, and find that it only contributes marginally to robustness. Finally, we reveal that standard data augmentation techniques, which can significantly improve the robustness of recognition models, do not help the robustness of NeRF-based models. We hope that our findings will attract more researchers to study the robustness of NeRF-based approaches and help to improve their performance in the real world. "
+}

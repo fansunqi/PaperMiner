@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/aleksispi/airloc"
+  ],
+  "tasks": [
+    "Aerial View Localization",
+    "Search-and-Rescue"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Reinforcement Learning (RL)",
+    "AiRLoc"
+  ],
+  "results": [
+    "AiRLoc outperforms heuristic search methods and alternative learnable approaches",
+    "Generalizes across datasets",
+    "Outperforms humans on average"
+  ],
+  "paper_id": "631aaf0690e50fcafdafa2f0",
+  "title": "Aerial View Localization with Reinforcement Learning: Towards Emulating\n  Search-and-Rescue",
+  "abstract": "  Climate-induced disasters are and will continue to be on the rise, and thus search-and-rescue (SAR) operations, where the task is to localize and assist one or several people who are missing, become increasingly relevant. In many cases the rough location may be known and a UAV can be deployed to explore a given, confined area to precisely localize the missing people. Due to time and battery constraints it is often critical that localization is performed as efficiently as possible. In this work we approach this type of problem by abstracting it as an aerial view goal localization task in a framework that emulates a SAR-like setup without requiring access to actual UAVs. In this framework, an agent operates on top of an aerial image (proxy for a search area) and is tasked with localizing a goal that is described in terms of visual cues. To further mimic the situation on an actual UAV, the agent is not able to observe the search area in its entirety, not even at low resolution, and thus it has to operate solely based on partial glimpses when navigating towards the goal. To tackle this task, we propose AiRLoc, a reinforcement learning (RL)-based model that decouples exploration (searching for distant goals) and exploitation (localizing nearby goals). Extensive evaluations show that AiRLoc outperforms heuristic search methods as well as alternative learnable approaches, and that it generalizes across datasets, e.g. to disaster-hit areas without seeing a single disaster scenario during training. We also conduct a proof-of-concept study which indicates that the learnable methods outperform humans on average. Code and models have been made publicly available at https://github.com/aleksispi/airloc. "
+}

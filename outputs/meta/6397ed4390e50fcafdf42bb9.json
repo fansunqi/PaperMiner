@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimization of sparse matrix operations",
+    "Reverse mode automatic differentiation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CSR-based sparse matrix wrapper",
+    "CUDA acceleration",
+    "Automatic differentiability"
+  ],
+  "results": [
+    "Performance measurements versus dense counterparts"
+  ],
+  "paper_id": "6397ed4390e50fcafdf42bb9",
+  "title": "Optimized Sparse Matrix Operations for Reverse Mode Automatic\n  Differentiation",
+  "abstract": "  Sparse matrix representations are ubiquitous in computational science and machine learning, leading to significant reductions in compute time, in comparison to dense representation, for problems that have local connectivity. The adoption of sparse representation in leading ML frameworks such as PyTorch is incomplete, however, with support for both automatic differentiation and GPU acceleration missing. In this work, we present an implementation of a CSR-based sparse matrix wrapper for PyTorch with CUDA acceleration for basic matrix operations, as well as automatic differentiability. We also present several applications of the resulting sparse kernels to optimization problems, demonstrating ease of implementation and performance measurements versus their dense counterparts. "
+}

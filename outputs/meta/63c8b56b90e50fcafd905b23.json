@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/Justlovesmile/EARL"
+  ],
+  "tasks": [
+    "Oriented Object Detection in Remote Sensing Images"
+  ],
+  "datasets": [
+    "DOTA",
+    "HRSC2016"
+  ],
+  "methods": [
+    "Elliptical Distribution aided Adaptive Rotation Label Assignment (EARL)",
+    "Adaptive Scale Sampling (ADS)",
+    "Dynamic Elliptical Distribution (DED)",
+    "Spatial Distance Weighting (SDW)"
+  ],
+  "results": [
+    "72.87 mAP on DOTA dataset",
+    "Outperforms current state-of-the-art anchor-free detectors",
+    "Comparable performance as anchor-based methods"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905b23",
+  "title": "EARL: An Elliptical Distribution aided Adaptive Rotation Label\n  Assignment for Oriented Object Detection in Remote Sensing Images",
+  "abstract": "  Label assignment is often employed in recent convolutional neural network (CNN) based detectors to determine positive or negative samples during training process. However, we note that current label assignment strategies barely consider the characteristics of targets in remote sensing images thoroughly, such as large variations in orientations, aspect ratios and scales, which lead to insufficient sampling. In this paper, an Elliptical Distribution aided Adaptive Rotation Label Assignment (EARL) is proposed to select positive samples with higher quality in orientation detectors, and yields better performance. Concretely, to avoid inadequate sampling of targets with extreme scales, an adaptive scale sampling (ADS) strategy is proposed to dynamically select samples on different feature levels according to the scales of targets. To enhance ADS, positive samples are selected following a dynamic elliptical distribution (DED), which can further exploit the orientation and shape properties of targets. Moreover, a spatial distance weighting (SDW) module is introduced to mitigate the influence from low-quality samples on detection performance. Extensive experiments on popular remote sensing datasets, such as DOTA and HRSC2016, demonstrate the effectiveness and the superiority of our proposed EARL, where without bells and whistles, it achieves 72.87 of mAP on DOTA dataset by being integrated with simple structure, which outperforms current state-of-the-art anchor-free detectors and provides comparable performance as anchor-based methods. The source code will be available at https://github.com/Justlovesmile/EARL "
+}

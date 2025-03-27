@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Efficient Decoding of Reed-Muller Subcodes"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Recursive projection-aggregation (RPA) decoding algorithm",
+    "subRPA",
+    "soft-subRPA",
+    "Machine Learning model for projection pruning"
+  ],
+  "results": [
+    "Significantly smaller number of projections with close to full-projection decoding performance",
+    "Negligible performance degradation compared to full-projection case"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905e95",
+  "title": "Machine Learning-Aided Efficient Decoding of Reed-Muller Subcodes",
+  "abstract": "  Reed-Muller (RM) codes achieve the capacity of general binary-input memoryless symmetric channels and have a comparable performance to that of random codes in terms of scaling laws. However, they lack efficient decoders with performance close to that of a maximum-likelihood decoder for general code parameters. Also, they only admit limited sets of rates. In this paper, we focus on subcodes of RM codes with flexible rates. We first extend the recently-introduced recursive projection-aggregation (RPA) decoding algorithm to RM subcodes. To lower the complexity of our decoding algorithm, referred to as subRPA, we investigate different approaches to prune the projections. Next, we derive the soft-decision based version of our algorithm, called soft-subRPA, that not only improves upon the performance of subRPA but also enables a differentiable decoding algorithm. Building upon the soft-subRPA algorithm, we then provide a framework for training a machine learning (ML) model to search for \\textit{good} sets of projections that minimize the decoding error rate. Training our ML model enables achieving very close to the performance of full-projection decoding with a significantly smaller number of projections. We also show that the choice of the projections in decoding RM subcodes matters significantly, and our ML-aided projection pruning scheme is able to find a \\textit{good} selection, i.e., with negligible performance degradation compared to the full-projection case, given a reasonable number of projections. "
+}

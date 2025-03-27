@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Temporal Difference Learning",
+    "Reinforcement Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Compressed Updates",
+    "Error-Feedback Mechanism",
+    "Lyapunov Function"
+  ],
+  "results": [
+    "Non-asymptotic theoretical guarantees",
+    "Linear convergence speedups in the number of agents",
+    "Finite-time results"
+  ],
+  "paper_id": "63b63fca90e50fcafd8f4402",
+  "title": "Temporal Difference Learning with Compressed Updates: Error-Feedback\n  meets Reinforcement Learning",
+  "abstract": "  In large-scale machine learning, recent works have studied the effects of compressing gradients in stochastic optimization in order to alleviate the communication bottleneck. These works have collectively revealed that stochastic gradient descent (SGD) is robust to structured perturbations such as quantization, sparsification, and delays. Perhaps surprisingly, despite the surge of interest in large-scale, multi-agent reinforcement learning, almost nothing is known about the analogous question: Are common reinforcement learning (RL) algorithms also robust to similar perturbations? In this paper, we investigate this question by studying a variant of the classical temporal difference (TD) learning algorithm with a perturbed update direction, where a general compression operator is used to model the perturbation. Our main technical contribution is to show that compressed TD algorithms, coupled with an error-feedback mechanism used widely in optimization, exhibit the same non-asymptotic theoretical guarantees as their SGD counterparts. We then extend our results significantly to nonlinear stochastic approximation algorithms and multi-agent settings. In particular, we prove that for multi-agent TD learning, one can achieve linear convergence speedups in the number of agents while communicating just $\\tilde{O}(1)$ bits per agent at each time step. Our work is the first to provide finite-time results in RL that account for general compression operators and error-feedback in tandem with linear function approximation and Markovian sampling. Our analysis hinges on studying the drift of a novel Lyapunov function that captures the dynamics of a memory variable introduced by error feedback. "
+}

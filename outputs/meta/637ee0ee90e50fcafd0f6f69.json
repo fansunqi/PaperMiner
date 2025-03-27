@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/Sense-X/Co-DETR"
+  ],
+  "tasks": [
+    "Object Detection"
+  ],
+  "datasets": [
+    "MS COCO"
+  ],
+  "methods": [
+    "Co-DETR",
+    "ATSS",
+    "FCOS",
+    "Faster RCNN",
+    "one-to-many label assignments"
+  ],
+  "results": [
+    "5.8% improvement in Deformable-DETR",
+    "3.2% improvement in Deformable-DETR",
+    "59.5% mAP on DINO-Deformable-DETR with Swin-L",
+    "64.5% mAP on MS COCO test-dev with MixMIM-g backbone"
+  ],
+  "paper_id": "637ee0ee90e50fcafd0f6f69",
+  "title": "DETRs with Collaborative Hybrid Assignments Training",
+  "abstract": "  In this paper, we provide the observation that too few queries assigned as positive samples in DETR with one-to-one set matching leads to sparse supervisions on the encoder's output which considerably hurt the discriminative feature learning of the encoder and vice visa for attention learning in the decoder. To alleviate this, we present a novel collaborative hybrid assignments training scheme, namely Co-DETR, to learn more efficient and effective DETR-based detectors from versatile label assignment manners. This new training scheme can easily enhance the encoder's learning ability in end-to-end detectors by training the multiple parallel auxiliary heads supervised by one-to-many label assignments such as ATSS, FCOS, and Faster RCNN. In addition, we conduct extra customized positive queries by extracting the positive coordinates from these auxiliary heads to improve the training efficiency of positive samples in the decoder. In inference, these auxiliary heads are discarded and thus our method introduces no additional parameters and computational cost to the original detector while requiring no hand-crafted non-maximum suppression (NMS). We conduct extensive experiments to evaluate the effectiveness of the proposed approach on DETR variants, including DAB-DETR, Deformable-DETR, and DINO-Deformable-DETR. Specifically, we improve the basic Deformable-DETR by 5.8% in 12-epoch training and 3.2% in 36-epoch training. The state-of-the-art DINO-Deformable-DETR with Swin-L can still be improved from 58.5% to 59.5%. Surprisingly, incorporated with the large-scale backbone MixMIM-g with 1-Billion parameters, we achieve the 64.5% mAP on MS COCO test-dev, achieving superior performance with much fewer extra data sizes. Codes will be available at https://github.com/Sense-X/Co-DETR. "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/FreeformRobotics/Progressive-Self-Distillation-for-Ground-to-Aerial-Perception-Knowledge-Transfer"
+  ],
+  "tasks": [
+    "Ground-to-aerial perception knowledge transfer"
+  ],
+  "datasets": [
+    "Synthesized dataset",
+    "Real-world dataset"
+  ],
+  "methods": [
+    "Progressive semi-supervised learning framework",
+    "Dense viewpoint sampling",
+    "Nearest neighbor pseudo-labeling",
+    "MixView",
+    "Progressive distillation"
+  ],
+  "results": [
+    "22.2% accuracy improvement for the synthesized dataset",
+    "16.9% accuracy improvement for the real-world dataset"
+  ],
+  "paper_id": "630d7fde90e50fcafd3e6554",
+  "title": "Progressive Self-Distillation for Ground-to-Aerial Perception Knowledge\n  Transfer",
+  "abstract": "  We study a practical yet hasn't been explored problem: how a drone can perceive in an environment from different flight heights. Unlike autonomous driving, where the perception is always conducted from a ground viewpoint, a flying drone may flexibly change its flight height due to specific tasks, requiring the capability for viewpoint invariant perception. Tackling the such problem with supervised learning will incur tremendous costs for data annotation of different flying heights. On the other hand, current semi-supervised learning methods are not effective under viewpoint differences. In this paper, we introduce the ground-to-aerial perception knowledge transfer and propose a progressive semi-supervised learning framework that enables drone perception using only labeled data of ground viewpoint and unlabeled data of flying viewpoints. Our framework has four core components: i) a dense viewpoint sampling strategy that splits the range of vertical flight height into a set of small pieces with evenly-distributed intervals, ii) nearest neighbor pseudo-labeling that infers labels of the nearest neighbor viewpoint with a model learned on the preceding viewpoint, iii) MixView that generates augmented images among different viewpoints to alleviate viewpoint differences, and iv) a progressive distillation strategy to gradually learn until reaching the maximum flying height. We collect a synthesized and a real-world dataset, and we perform extensive experimental analyses to show that our method yields 22.2% and 16.9% accuracy improvement for the synthesized dataset and the real world. Code and datasets are available on https://github.com/FreeformRobotics/Progressive-Self-Distillation-for-Ground-to-Aerial-Perception-Knowledge-Transfer. "
+}

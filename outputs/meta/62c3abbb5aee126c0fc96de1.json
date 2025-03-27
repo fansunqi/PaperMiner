@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Asynchronous Structural Evolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Time-aware Dynamic Graph Embedding",
+    "Transformer"
+  ],
+  "results": [
+    "Outperforms state-of-the-art in graph mining tasks",
+    "Efficient and scalable for embedding large-scale dynamic graphs"
+  ],
+  "paper_id": "62c3abbb5aee126c0fc96de1",
+  "title": "Time-aware Dynamic Graph Embedding for Asynchronous Structural Evolution",
+  "abstract": "  Dynamic graphs refer to graphs whose structure dynamically changes over time. Despite the benefits of learning vertex representations (i.e., embeddings) for dynamic graphs, existing works merely view a dynamic graph as a sequence of changes within the vertex connections, neglecting the crucial asynchronous nature of such dynamics where the evolution of each local structure starts at different times and lasts for various durations. To maintain asynchronous structural evolutions within the graph, we innovatively formulate dynamic graphs as temporal edge sequences associated with joining time of vertices (ToV) and timespan of edges (ToE). Then, a time-aware Transformer is proposed to embed vertices' dynamic connections and ToEs into the learned vertex representations. Meanwhile, we treat each edge sequence as a whole and embed its ToV of the first vertex to further encode the time-sensitive information. Extensive evaluations on several datasets show that our approach outperforms the state-of-the-art in a wide range of graph mining tasks. At the same time, it is very efficient and scalable for embedding large-scale dynamic graphs. "
+}

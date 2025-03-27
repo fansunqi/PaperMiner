@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Breast cancer detection"
+  ],
+  "datasets": [
+    "Reference acquisition center dataset"
+  ],
+  "methods": [
+    "Patch-based algorithm with convolutional neural network",
+    "Transfer learning"
+  ],
+  "results": [
+    "Patch level: Accuracy 92.1%, Recall 95%, Precision 73.9% on reference dataset; Accuracy 96.3%, Recall 87.8%, Precision 70.6% on target dataset",
+    "Slide level: Accuracy 97.6%, Recall 90.9%, Precision 100% on test set 1; Accuracy 92.0%, Recall 100%, Precision 70.8% on test set 2"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b6ce",
+  "title": "Multicenter automatic detection of invasive carcinoma on breast whole\n  slide images",
+  "abstract": "  Breast cancer is one of the most prevalent cancers worldwide and pathologists are closely involved in establishing a diagnosis. Tools to assist in making a diagnosis are required to manage the increasing workload. In this context, artificial intelligence (AI) and deep-learning based tools may be used in daily pathology practice. However, it is challenging to develop fast and reliable algorithms that can be trusted by practitioners, whatever the medical center. We describe a patch-based algorithm that incorporates a convolutional neural network to detect and locate invasive carcinoma on breast whole-slide images. The network was trained on a dataset extracted from a reference acquisition center. We then performed a calibration step based on transfer learning to maintain the performance when translating on a new target acquisition center by using a limited amount of additional training data. Performance was evaluated using classical binary measures (accuracy, recall, precision) for both centers (referred to as test reference dataset and test target dataset) and at two levels: patch and slide level. At patch level, accuracy, recall, and precision of the model on the reference and target test sets were 92.1\\% and 96.3\\%, 95\\% and 87.8\\%, and 73.9\\% and 70.6\\%, respectively. At slide level, accuracy, recall, and precision were 97.6\\% and 92.0\\%, 90.9\\% and 100\\%, and 100\\% and 70.8\\% for test sets 1 and 2, respectively. The high performance of the algorithm at both centers shows that the calibration process is efficient. This is performed using limited training data from the new target acquisition center and requires that the model is trained beforehand on a large database from a reference center. This methodology allows the implementation of AI diagnostic tools to help in routine pathology practice. "
+}

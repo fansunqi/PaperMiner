@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Perspective deformation correction in X-ray transmission imaging"
+  ],
+  "datasets": [
+    "Numerical bead phantom data",
+    "Patients' chest and head data",
+    "Real cadaver CBCT projection data"
+  ],
+  "methods": [
+    "Pix2pixGAN",
+    "TransU-Net"
+  ],
+  "results": [
+    "Advantage of complementary views over orthogonal views or a single view",
+    "Pix2pixGAN achieves better performance in polar space than Cartesian space",
+    "TransU-Net achieves comparable performance in Cartesian space to polar space",
+    "Model has tolerance to geometric inaccuracy within calibration accuracy",
+    "Promising aspects for future real applications"
+  ],
+  "paper_id": "620b19c35aee126c0f7e669e",
+  "title": "Learning Perspective Deformation in X-Ray Transmission Imaging",
+  "abstract": "  In cone-beam X-ray transmission imaging, perspective deformation causes difficulty in direct, accurate geometric assessments of anatomical structures. In this work, the perspective deformation correction problem is formulated and addressed in a framework using two complementary (180{\\deg}) views. The complementary view setting provides a practical way to identify perspectively deformed structures by assessing the deviation between the two views. It also provides bounding information and reduces uncertainty for learning perspective deformation. Two representative networks Pix2pixGAN and TransU-Net for correcting perspective deformation are investigated. Experiments on numerical bead phantom data demonstrate the advantage of complementary views over orthogonal views or a single view. They show that Pix2pixGAN as a fully convolutional network achieves better performance in polar space than Cartesian space, while TransU-Net as a transformer-based hybrid network achieves comparable performance in Cartesian space to polar space. Further study demonstrates that the trained model has certain tolerance to geometric inaccuracy within calibration accuracy. The efficacy of the proposed framework on synthetic projection images from patients' chest and head data as well as real cadaver CBCT projection data and its robustness in the presence of bulky metal implants and surgical screws indicate the promising aspects of future real applications. "
+}

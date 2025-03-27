@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D-aware Image Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "BallGAN: 3D-aware GAN framework with spherical background approximation"
+  ],
+  "results": [
+    "More reasonable 3D geometry",
+    "Better photometric consistency and fidelity",
+    "Stable training"
+  ],
+  "paper_id": "64e6d5613fda6d7f06523c4a",
+  "title": "BallGAN: 3D-aware Image Synthesis with a Spherical Background",
+  "abstract": "  3D-aware GANs aim to synthesize realistic 3D scenes such that they can be rendered in arbitrary perspectives to produce images. Although previous methods produce realistic images, they suffer from unstable training or degenerate solutions where the 3D geometry is unnatural. We hypothesize that the 3D geometry is underdetermined due to the insufficient constraint, i.e., being classified as real image to the discriminator is not enough. To solve this problem, we propose to approximate the background as a spherical surface and represent a scene as a union of the foreground placed in the sphere and the thin spherical background. It reduces the degree of freedom in the background field. Accordingly, we modify the volume rendering equation and incorporate dedicated constraints to design a novel 3D-aware GAN framework named BallGAN. BallGAN has multiple advantages as follows. 1) It produces more reasonable 3D geometry; the images of a scene across different viewpoints have better photometric consistency and fidelity than the state-of-the-art methods. 2) The training becomes much more stable. 3) The foreground can be separately rendered on top of different arbitrary backgrounds. "
+}

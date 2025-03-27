@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Whispered speech conversion"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Vector-quantized variational autoencoders (VQ-VAEs)",
+    "MelGANs"
+  ],
+  "results": [
+    "Mel cepstral distortion (MCD) improvement by at least 25% relative to DiscoGAN",
+    "Significant improvement in naturalness, intelligibility, and voicing"
+  ],
+  "paper_id": "638eb2ed90e50fcafd58add2",
+  "title": "Generative Models for Improved Naturalness, Intelligibility, and Voicing\n  of Whispered Speech",
+  "abstract": "  This work adapts two recent architectures of generative models and evaluates their effectiveness for the conversion of whispered speech to normal speech. We incorporate the normal target speech into the training criterion of vector-quantized variational autoencoders (VQ-VAEs) and MelGANs, thereby conditioning the systems to recover voiced speech from whispered inputs. Objective and subjective quality measures indicate that both VQ-VAEs and MelGANs can be modified to perform the conversion task. We find that the proposed approaches significantly improve the Mel cepstral distortion (MCD) metric by at least 25% relative to a DiscoGAN baseline. Subjective listening tests suggest that the MelGAN-based system significantly improves naturalness, intelligibility, and voicing compared to the whispered input speech. A novel evaluation measure based on differences between latent speech representations also indicates that our MelGAN-based approach yields improvements relative to the baseline. "
+}

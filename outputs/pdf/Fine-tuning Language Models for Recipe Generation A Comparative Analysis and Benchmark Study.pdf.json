@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Recipe Generation",
+    "Allergen Substitution"
+  ],
+  "datasets": [
+    "Food.com Dataset"
+  ],
+  "methods": [
+    "Fine-tuning",
+    "Custom Evaluation Metrics",
+    "Prompt Based Allergen Substitution",
+    "RAG based Allergen Substitution System"
+  ],
+  "results": [
+    "SmolLM-360M and SmolLM-1.7B demonstrate comparable performance",
+    "Phi-2 shows limitations in recipe generation",
+    "BLEU, ROUGE, Perplexity",
+    "Ingredient Coverage, Step Complexity, Recipe Coherence, Temperature/Time Specification Checks"
+  ],
+  "title": "Fine-tuning Language Models for Recipe Generation A Comparative Analysis and Benchmark Study.pdf",
+  "abstract": "This research presents an exploration and study of the recipe generation task by fine-tuning var- ious very small language models, with a fo- cus on developing robust evaluation metrics and comparing across different language mod- els the open-ended task of recipe generation. This study presents extensive experiments with multiple model architectures, ranging from T5- small (Raffel et al., 2023) and SmolLM-135M (Allal et al., 2024) to Phi-2 (Research, 2023), implementing both traditional NLP metrics and custom domain-specific evaluation metrics. Our novel evaluation framework incorporates recipe-specific metrics for assessing content quality and introduces an approach to allergen substitution. The results indicate that, while larger models generally perform better on stan- dard metrics, the relationship between model size and recipe quality is more nuanced when considering domain-specific metrics. We find that SmolLM-360M and SmolLM-1.7B demon- strate comparable performance despite their size difference, while Phi-2 shows limitations in recipe generation despite its larger parameter count. Our comprehensive evaluation frame- work and allergen substitution system provide valuable insights for future work in recipe gen- eration and broader NLG tasks that require do- main expertise and safety considerations. 1 Introduction The generation of safe and high-quality recipes presents unique challenges in natural language generation. Beyond generating coherent and cre- ative recipes, recipe generation requires high-level knowledge of culinary techniques, nutritional prin- ciples, and awareness of dietary restrictions to en- sure user safety. This necessitates approaches that balance linguistic fluency with domain-specific ex- pertise, particularly in the domain of allergen sub- stitution. *Authors contributed equally. Our research focuses on addressing these chal- lenges by experimenting with different model archi- tectures for recipe generation and allergen substi- tution through controlled fine-tuning and compre- hensive evaluation metrics. We have focused our research on answering the following three research questions: 1. Given the scope of our research, which models will achieve the best results after fine tuning for recipe generation? 2. How should we evaluate the generated recipes to ensure that they are coherent and safe for users with dietary restrictions? 3. How should we implement allergen substi- tution into our model to achieve best perfor- mance? To answer these questions, we make the following contributions: \u2022 Comprehensive comparison of model architec- tures across scales including smaller models like GPT-2 (Radford et al., 2019) and T5 (Raf- fel et al., 2020) and bigger models like Phi-2 (Research, 2023) and SmolLM-1.7(Allal et al., 2024) \u2022 Multi-dimensional evaluation framework combining novel recipe-specific evaluation metrics, traditional metrics, and LLM-based assessment \u2022 Development of RAG and prompt based ap- proach for allergen substitution Our work represents a step forward in adapting NLG systems for practical applications in the culi- nary domain, emphasizing safety, personalization, and quality. 1 arXiv:2502.02028v1 [cs.CL] 4 Feb 2025"
+}

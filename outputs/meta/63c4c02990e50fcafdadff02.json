@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Improving Reliability of Spiking Neural Networks"
+  ],
+  "datasets": [
+    "MNIST",
+    "N-MNIST",
+    "DVS Gesture"
+  ],
+  "methods": [
+    "Fault Aware Threshold Voltage Optimization (FalVolt)"
+  ],
+  "results": [
+    "FalVolt improves performance at fault rates up to 60% with negligible accuracy drop",
+    "2x faster than other state-of-the-art techniques"
+  ],
+  "paper_id": "63c4c02990e50fcafdadff02",
+  "title": "Improving Reliability of Spiking Neural Networks through Fault Aware\n  Threshold Voltage Optimization",
+  "abstract": "  Spiking neural networks have made breakthroughs in computer vision by lending themselves to neuromorphic hardware. However, the neuromorphic hardware lacks parallelism and hence, limits the throughput and hardware acceleration of SNNs on edge devices. To address this problem, many systolic-array SNN accelerators (systolicSNNs) have been proposed recently, but their reliability is still a major concern. In this paper, we first extensively analyze the impact of permanent faults on the SystolicSNNs. Then, we present a novel fault mitigation method, i.e., fault-aware threshold voltage optimization in retraining (FalVolt). FalVolt optimizes the threshold voltage for each layer in retraining to achieve the classification accuracy close to the baseline in the presence of faults. To demonstrate the effectiveness of our proposed mitigation, we classify both static (i.e., MNIST) and neuromorphic datasets (i.e., N-MNIST and DVS Gesture) on a 256x256 systolicSNN with stuck-at faults. We empirically show that the classification accuracy of a systolicSNN drops significantly even at extremely low fault rates (as low as 0.012\\%). Our proposed FalVolt mitigation method improves the performance of systolicSNNs by enabling them to operate at fault rates of up to 60\\%, with a negligible drop in classification accuracy (as low as 0.1\\%). Our results show that FalVolt is 2x faster compared to other state-of-the-art techniques common in artificial neural networks (ANNs), such as fault-aware pruning and retraining without threshold voltage optimization. "
+}

@@ -1,0 +1,28 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Optimal control",
+    "Model predictive control",
+    "Legged robots"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Nullspace parametrization",
+    "Merit function",
+    "Condensed formulation of inverse dynamics",
+    "Perceptive locomotion framework"
+  ],
+  "results": [
+    "State-of-the-art dynamic climbing on the ANYmal robot",
+    "Agile and complex maneuvers",
+    "Computational reduction up to 47.3%",
+    "High convergence rate up to 10 Hz of discretization"
+  ],
+  "paper_id": "631ff4f890e50fcafd85b303",
+  "title": "Inverse-Dynamics MPC via Nullspace Resolution",
+  "abstract": "  Optimal control (OC) using inverse dynamics provides numerical benefits such as coarse optimization, cheaper computation of derivatives, and a high convergence rate. However, to take advantage of these benefits in model predictive control (MPC) for legged robots, it is crucial to handle efficiently its large number of equality constraints. To accomplish this, we first (i) propose a novel approach to handle equality constraints based on nullspace parametrization. Our approach balances optimality, and both dynamics and equality-constraint feasibility appropriately, which increases the basin of attraction to high-quality local minima. To do so, we (ii) modify our feasibility-driven search by incorporating a merit function. Furthermore, we introduce (iii) a condensed formulation of inverse dynamics that considers arbitrary actuator models. We also propose (iv) a novel MPC based on inverse dynamics within a perceptive locomotion framework. Finally, we present (v) a theoretical comparison of optimal control with forward and inverse dynamics and evaluate both numerically. Our approach enables the first application of inverse-dynamics MPC on hardware, resulting in state-of-the-art dynamic climbing on the ANYmal robot. We benchmark it over a wide range of robotics problems and generate agile and complex maneuvers. We show the computational reduction of our nullspace resolution and condensed formulation (up to 47.3%). We provide evidence of the benefits of our approach by solving coarse optimization problems with a high convergence rate (up to 10 Hz of discretization). Our algorithm is publicly available inside CROCODDYL. "
+}

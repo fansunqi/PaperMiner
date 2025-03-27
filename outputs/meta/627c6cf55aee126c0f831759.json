@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cardiac electrophysiology model numerical solution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "High-order Spectral Element Method (SEM)",
+    "Vectorization",
+    "Sum-factorization",
+    "Matrix-free Geometric Multigrid preconditioner"
+  ],
+  "results": [
+    "Up to 45x speed-up compared to conventional matrix-based solver",
+    "Comparable results in terms of accuracy and efficiency between SEM and SEM with Numerical Integration (SEM-NI)",
+    "Increasing polynomial degree $p$ leads to better numerical results and smaller computational times than reducing mesh size $h$"
+  ],
+  "paper_id": "627c6cf55aee126c0f831759",
+  "title": "A matrix-free high-order solver for the numerical solution of cardiac\n  electrophysiology",
+  "abstract": "  We propose a matrix-free solver for the numerical solution of the cardiac electrophysiology model consisting of the monodomain nonlinear reaction-diffusion equation coupled with a system of ordinary differential equations for the ionic species. Our numerical approximation is based on the high-order Spectral Element Method (SEM) to achieve accurate numerical discretization while employing a much smaller number of Degrees of Freedom than first-order Finite Elements. We combine vectorization with sum-factorization, thus allowing for a very efficient use of high-order polynomials in a high performance computing framework. We validate the effectiveness of our matrix-free solver in a variety of applications and perform different electrophysiological simulations ranging from a simple slab of cardiac tissue to a realistic four-chamber heart geometry. We compare SEM to SEM with Numerical Integration (SEM-NI), showing that they provide comparable results in terms of accuracy and efficiency. In both cases, increasing the local polynomial degree $p$ leads to better numerical results and smaller computational times than reducing the mesh size $h$. We also implement a matrix-free Geometric Multigrid preconditioner that results in a comparable number of linear solver iterations with respect to a state-of-the-art matrix-based Algebraic Multigrid preconditioner. As a matter of fact, the matrix-free solver proposed here yields up to 45$\\times$ speed-up with respect to a conventional matrix-based solver. "
+}

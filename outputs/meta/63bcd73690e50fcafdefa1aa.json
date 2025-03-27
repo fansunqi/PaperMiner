@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Monocular depth estimation"
+  ],
+  "datasets": [
+    "KITTI datasets",
+    "synthetic texture-shifted datasets",
+    "real-world driving datasets"
+  ],
+  "methods": [
+    "CNN",
+    "Transformer models"
+  ],
+  "results": [
+    "Transformers exhibit a strong shape-bias",
+    "CNNs have a strong texture-bias",
+    "Texture-biased models exhibit worse generalization performance",
+    "Intrinsic locality of CNNs",
+    "Self-attention of Transformers"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa1aa",
+  "title": "A Study on the Generality of Neural Network Structures for Monocular\n  Depth Estimation",
+  "abstract": "  Monocular depth estimation has been widely studied, and significant improvements in performance have been recently reported. However, most previous works are evaluated on a few benchmark datasets, such as KITTI datasets, and none of the works provide an in-depth analysis of the generalization performance of monocular depth estimation. In this paper, we deeply investigate the various backbone networks (e.g.CNN and Transformer models) toward the generalization of monocular depth estimation. First, we evaluate state-of-the-art models on both in-distribution and out-of-distribution datasets, which have never been seen during network training. Then, we investigate the internal properties of the representations from the intermediate layers of CNN-/Transformer-based models using synthetic texture-shifted datasets. Through extensive experiments, we observe that the Transformers exhibit a strong shape-bias rather than CNNs, which have a strong texture-bias. We also discover that texture-biased models exhibit worse generalization performance for monocular depth estimation than shape-biased models. We demonstrate that similar aspects are observed in real-world driving datasets captured under diverse environments. Lastly, we conduct a dense ablation study with various backbone networks which are utilized in modern strategies. The experiments demonstrate that the intrinsic locality of the CNNs and the self-attention of the Transformers induce texture-bias and shape-bias, respectively. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Portrait Synthesis from Monocular Image"
+  ],
+  "datasets": [
+    "in-the-wild 2D images"
+  ],
+  "methods": [
+    "3D-aware GAN (Generative Radiance Manifolds, GRAM)",
+    "detail manifolds reconstructor"
+  ],
+  "results": [
+    "high-fidelity and 3D-consistent portrait synthesis",
+    "largely outperforming the prior art"
+  ],
+  "paper_id": "638426ba90e50fcafdeb22d6",
+  "title": "Learning Detailed Radiance Manifolds for High-Fidelity and 3D-Consistent\n  Portrait Synthesis from Monocular Image",
+  "abstract": "  A key challenge for novel view synthesis of monocular portrait images is 3D consistency under continuous pose variations. Most existing methods rely on 2D generative models which often leads to obvious 3D inconsistency artifacts. We present a 3D-consistent novel view synthesis approach for monocular portrait images based on a recent proposed 3D-aware GAN, namely Generative Radiance Manifolds (GRAM), which has shown strong 3D consistency at multiview image generation of virtual subjects via the radiance manifolds representation. However, simply learning an encoder to map a real image into the latent space of GRAM can only reconstruct coarse radiance manifolds without faithful fine details, while improving the reconstruction fidelity via instance-specific optimization is time-consuming. We introduce a novel detail manifolds reconstructor to learn 3D-consistent fine details on the radiance manifolds from monocular images, and combine them with the coarse radiance manifolds for high-fidelity reconstruction. The 3D priors derived from the coarse radiance manifolds are used to regulate the learned details to ensure reasonable synthesized results at novel views. Trained on in-the-wild 2D images, our method achieves high-fidelity and 3D-consistent portrait synthesis largely outperforming the prior art. "
+}

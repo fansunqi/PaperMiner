@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image segmentation"
+  ],
+  "datasets": [
+    "ADE20K",
+    "COCO"
+  ],
+  "methods": [
+    "Hierarchical clustering",
+    "HCFormer"
+  ],
+  "results": [
+    "Semantic segmentation (55.5 mIoU on ADE20K)",
+    "Instance segmentation (47.1 AP on COCO)",
+    "Panoptic segmentation (55.7 PQ on COCO)"
+  ],
+  "paper_id": "628afb4c5aee126c0f04e377",
+  "title": "HCFormer: Unified Image Segmentation with Hierarchical Clustering",
+  "abstract": "  Hierarchical clustering is an effective and efficient approach widely used for classical image segmentation methods. However, many existing methods using neural networks generate segmentation masks directly from per-pixel features, complicating the architecture design and degrading the interpretability. In this work, we propose a simpler, more interpretable architecture, called HCFormer. HCFormer accomplishes image segmentation by bottom-up hierarchical clustering and allows us to interpret, visualize, and evaluate the intermediate results as hierarchical clustering results. HCFormer can address semantic, instance, and panoptic segmentation with the same architecture because the pixel clustering is a common approach for various image segmentation tasks. In experiments, HCFormer achieves comparable or superior segmentation accuracy compared to baseline methods on semantic segmentation (55.5 mIoU on ADE20K), instance segmentation (47.1 AP on COCO), and panoptic segmentation (55.7 PQ on COCO). "
+}

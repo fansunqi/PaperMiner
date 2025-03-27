@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data assimilation",
+    "Parameter estimation",
+    "Inverse problems"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "CKLEMAP",
+    "Gaussian process regression",
+    "Conditional Karhunen-Lo\u00e8ve models"
+  ],
+  "results": [
+    "Improved scalability compared to the standard MAP method",
+    "Execution time scales nearly linearly as N^1.33",
+    "Improved execution time without sacrificing accuracy"
+  ],
+  "paper_id": "63d340ef90e50fcafd9117df",
+  "title": "Gaussian process regression and conditional Karhunen-Lo\\'{e}ve models\n  for data assimilation in inverse problems",
+  "abstract": "  We present a model inversion algorithm, CKLEMAP, for data assimilation and parameter estimation in partial differential equation models of physical systems with spatially heterogeneous parameter fields. These fields are approximated using low-dimensional conditional Karhunen-Lo\\'{e}ve expansions, which are constructed using Gaussian process regression models of these fields trained on the parameters' measurements. We then assimilate measurements of the state of the system and compute the maximum a posteriori estimate of the CKLE coefficients by solving a nonlinear least-squares problem. When solving this optimization problem, we efficiently compute the Jacobian of the vector objective by exploiting the sparsity structure of the linear system of equations associated with the forward solution of the physics problem. The CKLEMAP method provides better scalability compared to the standard MAP method. In the MAP method, the number of unknowns to be estimated is equal to the number of elements in the numerical forward model. On the other hand, in CKLEMAP, the number of unknowns (CKLE coefficients) is controlled by the smoothness of the parameter field and the number of measurements, and is in general much smaller than the number of discretization nodes, which leads to a significant reduction of computational cost with respect to the standard MAP method. To show its advantage in scalability, we apply CKLEMAP to estimate the transmissivity field in a two-dimensional steady-state subsurface flow model of the Hanford Site by assimilating synthetic measurements of transmissivity and hydraulic head. We find that the execution time of CKLEMAP scales nearly linearly as $N^{1.33}$, where $N$ is the number of discretization nodes, while the execution time of standard MAP scales as $N^{2.91}$. The CKLEMAP method improved execution time without sacrificing accuracy when compared to the standard MAP. "
+}

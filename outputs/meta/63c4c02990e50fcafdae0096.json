@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Faulting and Bricking Server CPUs through Management Interfaces"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PMFault: Using BMC software weaknesses for hardware-based fault injection attacks"
+  ],
+  "results": [
+    "Undervolting breaks SGX enclaves integrity",
+    "Overvolting can permanently damage Intel Xeon CPUs",
+    "No vulnerability in 12th generation Supermicro motherboards"
+  ],
+  "paper_id": "63c4c02990e50fcafdae0096",
+  "title": "PMFault: Faulting and Bricking Server CPUs through Management Interfaces",
+  "abstract": "  Apart from the actual CPU, modern server motherboards contain other auxiliary components, for example voltage regulators for power management. Those are connected to the CPU and the separate Baseboard Management Controller (BMC) via the I2C-based PMBus.   In this paper, using the case study of the widely used Supermicro X11SSL motherboard, we show how remotely exploitable software weaknesses in the BMC (or other processors with PMBus access) can be used to access the PMBus and then perform hardware-based fault injection attacks on the main CPU. The underlying weaknesses include insecure firmware encryption and signing mechanisms, a lack of authentication for the firmware upgrade process and the IPMI KCS control interface, as well as the motherboard design (with the PMBus connected to the BMC and SMBus by default).   First, we show that undervolting through the PMBus allows breaking the integrity guarantees of SGX enclaves, bypassing Intel's countermeasures against previous undervolting attacks like Plundervolt/V0ltPwn. Second, we experimentally show that overvolting outside the specified range has the potential of permanently damaging Intel Xeon CPUs, rendering the server inoperable. We assess the impact of our findings on other server motherboards made by Supermicro and ASRock.   Our attacks, dubbed PMFault, can be carried out by a privileged software adversary and do not require physical access to the server motherboard or knowledge of the BMC login credentials.   We responsibly disclosed the issues reported in this paper to Supermicro and discuss possible countermeasures at different levels. To the best of our knowledge, the 12th generation of Supermicro motherboards, which was designed before we reported PMFault to Supermicro, is not vulnerable. "
+}

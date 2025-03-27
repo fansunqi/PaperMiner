@@ -1,0 +1,20 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Gradient Boosting Machines (GBMs) performance and generality"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Trust-region Boosting (TRBoost)"
+  ],
+  "results": [
+    "TRBoost is as general as first-order GBMs and yields competitive results compared to second-order GBMs"
+  ],
+  "paper_id": "63350ce690e50fcafd350bcd",
+  "title": "TRBoost: A Generic Gradient Boosting Machine based on Trust-region\n  Method",
+  "abstract": "  Gradient Boosting Machines (GBMs) have demonstrated remarkable success in solving diverse problems by utilizing Taylor expansions in functional space. However, achieving a balance between performance and generality has posed a challenge for GBMs. In particular, gradient descent-based GBMs employ the first-order Taylor expansion to ensure applicability to all loss functions, while Newton's method-based GBMs use positive Hessian information to achieve superior performance at the expense of generality. To address this issue, this study proposes a new generic Gradient Boosting Machine called Trust-region Boosting (TRBoost). In each iteration, TRBoost uses a constrained quadratic model to approximate the objective and applies the Trust-region algorithm to solve it and obtain a new learner. Unlike Newton's method-based GBMs, TRBoost does not require the Hessian to be positive definite, thereby allowing it to be applied to arbitrary loss functions while still maintaining competitive performance similar to second-order algorithms. The convergence analysis and numerical experiments conducted in this study confirm that TRBoost is as general as first-order GBMs and yields competitive results compared to second-order GBMs. Overall, TRBoost is a promising approach that balances performance and generality, making it a valuable addition to the toolkit of machine learning practitioners. "
+}

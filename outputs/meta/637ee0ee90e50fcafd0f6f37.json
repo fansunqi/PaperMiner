@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Visual Reasoning",
+    "Context Reasoning"
+  ],
+  "datasets": [
+    "Object Priming dataset (HOP)"
+  ],
+  "methods": [
+    "Self-supervised learning (SSL)",
+    "SeCo (Self-supervised method with external memories for Context Reasoning)"
+  ],
+  "results": [
+    "SeCo outperforms all state-of-the-art (SOTA) SSL methods",
+    "Human benchmark in Object Priming dataset (HOP)"
+  ],
+  "paper_id": "637ee0ee90e50fcafd0f6f37",
+  "title": "Reason from Context with Self-supervised Learning",
+  "abstract": "  Self-supervised learning (SSL) learns to capture discriminative visual features useful for knowledge transfers. To better accommodate the object-centric nature of current downstream tasks such as object recognition and detection, various methods have been proposed to suppress contextual biases or disentangle objects from contexts. Nevertheless, these methods may prove inadequate in situations where object identity needs to be reasoned from associated context, such as recognizing or inferring tiny or obscured objects. As an initial effort in the SSL literature, we investigate whether and how contextual associations can be enhanced for visual reasoning within SSL regimes, by (a) proposing a new Self-supervised method with external memories for Context Reasoning (SeCo), and (b) introducing two new downstream tasks, lift-the-flap and object priming, addressing the problems of \"what\" and \"where\" in context reasoning. In both tasks, SeCo outperformed all state-of-the-art (SOTA) SSL methods by a significant margin. Our network analysis revealed that the proposed external memory in SeCo learns to store prior contextual knowledge, facilitating target identity inference in the lift-the-flap task. Moreover, we conducted psychophysics experiments and introduced a Human benchmark in Object Priming dataset (HOP). Our results demonstrate that SeCo exhibits human-like behaviors. "
+}

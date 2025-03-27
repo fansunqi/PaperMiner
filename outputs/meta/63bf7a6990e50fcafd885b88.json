@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Constructing Linear-size Suffix Trie"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Online algorithms for constructing LSTs"
+  ],
+  "results": [
+    "Both algorithms work in O(n log \u03c3) time and O(n) space",
+    "Input text string does not need to be stored"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885b88",
+  "title": "Linear Time Online Algorithms for Constructing Linear-size Suffix Trie",
+  "abstract": "  The suffix trees are fundamental data structures for various kinds of string processing. The suffix tree of a text string $T$ of length $n$ has $O(n)$ nodes and edges, and the string label of each edge is encoded by a pair of positions in $T$. Thus, even after the tree is built, the input string $T$ needs to be kept stored and random access to $T$ is still needed. The \\emph{linear-size suffix tries} (\\emph{LSTs}), proposed by Crochemore et al. [Linear-size suffix tries, TCS 638:171-178, 2016], are a \"stand-alone\" alternative to the suffix trees. Namely, the LST of an input text string $T$ of length $n$ occupies $O(n)$ total space, and supports pattern matching and other tasks with the same efficiency as the suffix tree without the need to store the input text string $T$. Crochemore et al. proposed an \\emph{offline} algorithm which transforms the suffix tree of $T$ into the LST of $T$ in $O(n \\log \\sigma)$ time and $O(n)$ space, where $\\sigma$ is the alphabet size. In this paper, we present two types of \\emph{online} algorithms which \"directly\" construct the LST, from right to left, and from left to right, without constructing the suffix tree as an intermediate structure. Both algorithms construct the LST incrementally when a new symbol is read, and do not access the previously read symbols. Both of the right-to-left construction algorithm and the left-to-right construction algorithm work in $O(n \\log \\sigma)$ time and $O(n)$ space. The main feature of our algorithms is that the input text string does not need to be stored. "
+}

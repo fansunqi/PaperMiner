@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Approximate sorting for big data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "External metric",
+    "External Spearmans footrule metric",
+    "Errors metric",
+    "k-pass external approximate sorting algorithm (EASORT)"
+  ],
+  "results": [
+    "Lower bound of metrics on external approximate sorting problem",
+    "Asymptotically optimal EASORT",
+    "Index for approximate sorting results",
+    "Single and range query on approximate sorted result",
+    "Sort-merge join on approximate sorted relations"
+  ],
+  "paper_id": "6304456c90e50fcafd1302ab",
+  "title": "Approximate sorting and its application in I/O model",
+  "abstract": "  The approximate sorting for big data is considered in this paper. The goal of approximate sorting for big data is to generate an approximate sorted result, but using less CPU and I/O cost. For big data, we consider the approximate sorting in I/O model. The existing metrics on permutation space are not available for external approximate sorting algorithms. Thus, we propose a new kind of metric named External metric, which ignores the errors and dislocation that happened in each I/O block.The External Spearmans footrule metric is an example of external metric for Spearmans footrule metric. Furthermore, to facilitate a better evaluation of the approximate sorted result, we propose a new metric, named as errors, which directly states the number of dislocation of the elements. Its external metric external errors is also considered in this paper. Then, according to the rate-distortion relationship endowed by these two metrics, the lower bound of these two metrics on external approximate sorting problem with t I/O operations is proved. We propose a k-pass external approximate sorting algorithm, named as EASORT, and prove that EASORT is asymptotically optimal. Finally, we consider the applications on approximate sorting results. An index for the result of our approximate sorting is proposed and analyze the single and range query on approximate sorted result using this index. Further, the sort-merge join on two relations, where one of the relations is approximate sorted or both relations are approximate sorted, are all discussed in this paper. "
+}

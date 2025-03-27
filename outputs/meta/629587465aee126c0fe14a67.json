@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Simulation of pandemic spread in a city"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Deep Learning-based emulator using Dilated Convolutional Neural Networks",
+    "Divide-and-conquer approach for parallel emulation"
+  ],
+  "results": [
+    "Significant gains in simulation speed",
+    "Quicker calibration to observations",
+    "More extensive scenario analysis",
+    "Spatially explicit simulation of infected individual locations",
+    "Significant improvement in emulator time complexity compared to the original simulator"
+  ],
+  "paper_id": "629587465aee126c0fe14a67",
+  "title": "Deep Learning-based Spatially Explicit Emulation of an Agent-Based\n  Simulator for Pandemic in a City",
+  "abstract": "  Agent-Based Models are very useful for simulation of physical or social processes, such as the spreading of a pandemic in a city. Such models proceed by specifying the behavior of individuals (agents) and their interactions, and parameterizing the process of infection based on such interactions based on the geography and demography of the city. However, such models are computationally very expensive, and the complexity is often linear in the total number of agents. This seriously limits the usage of such models for simulations, which often have to be run hundreds of times for policy planning and even model parameter estimation. An alternative is to develop an emulator, a surrogate model that can predict the Agent-Based Simulator's output based on its initial conditions and parameters. In this paper, we discuss a Deep Learning model based on Dilated Convolutional Neural Network that can emulate such an agent based model with high accuracy. We show that use of this model instead of the original Agent-Based Model provides us major gains in the speed of simulations, allowing much quicker calibration to observations, and more extensive scenario analysis. The models we consider are spatially explicit, as the locations of the infected individuals are simulated instead of the gross counts. Another aspect of our emulation framework is its divide-and-conquer approach that divides the city into several small overlapping blocks and carries out the emulation in them parallelly, after which these results are merged together. This ensures that the same emulator can work for a city of any size, and also provides significant improvement of time complexity of the emulator, compared to the original simulator. "
+}

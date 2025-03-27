@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/YuSheng-Zhou/UNAEN"
+  ],
+  "tasks": [
+    "Unsupervised Motion Artifact Reduction in MRI"
+  ],
+  "datasets": [
+    "publicly available MRI datasets"
+  ],
+  "methods": [
+    "UNsupervised Abnormality Extraction Network (UNAEN)"
+  ],
+  "results": [
+    "superiority over alternative MAR methods",
+    "fewer residual artifacts",
+    "enhance diagnostic accuracy",
+    "facilitate image-guided therapies"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5dd0",
+  "title": "Explicit Abnormality Extraction for Unsupervised Motion Artifact Reduction in Magnetic Resonance Imaging",
+  "abstract": "Motion artifacts compromise the quality of magnetic resonance imaging (MRI) and pose challenges to achieving diagnostic outcomes and image-guided therapies. In recent years, supervised deep learning approaches have emerged as successful solutions for motion artifact reduction (MAR). One disadvantage of these methods is their dependency on acquiring paired sets of motion artifact-corrupted (MA-corrupted) and motion artifact-free (MA-free) MR images for training purposes. Obtaining such image pairs is difficult and therefore limits the application of supervised training. In this paper, we propose a novel UNsupervised Abnormality Extraction Network (UNAEN) to alleviate this problem. Our network is capable of working with unpaired MA-corrupted and MA-free images. It converts the MA-corrupted images to MA-reduced images by extracting abnormalities from the MA-corrupted images using a proposed artifact extractor, which intercepts the residual artifact maps from the MA-corrupted MR images explicitly, and a reconstructor to restore the original input from the MA-reduced images. The performance of UNAEN was assessed by experimenting with various publicly available MRI datasets and comparing them with state-of-the-art methods. The quantitative evaluation demonstrates the superiority of UNAEN over alternative MAR methods and visually exhibits fewer residual artifacts. Our results substantiate the potential of UNAEN as a promising solution applicable in real-world clinical environments, with the capability to enhance diagnostic accuracy and facilitate image-guided therapies. Our codes are publicly available at https://github.com/YuSheng-Zhou/UNAEN."
+}

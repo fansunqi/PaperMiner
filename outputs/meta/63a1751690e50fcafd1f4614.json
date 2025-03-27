@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Face Parsing"
+  ],
+  "datasets": [
+    "FaceOccMask-HQ",
+    "CelebAMaskOcc-HQ"
+  ],
+  "methods": [
+    "Mask-FPAN",
+    "de-occlusion module",
+    "3D morphable face model",
+    "UV GAN"
+  ],
+  "results": [
+    "MIOU from 0.7353 to 0.9013"
+  ],
+  "paper_id": "63a1751690e50fcafd1f4614",
+  "title": "Mask-FPAN: Semi-Supervised Face Parsing in the Wild With De-Occlusion\n  and UV GAN",
+  "abstract": "  Fine-grained semantic segmentation of a person's face and head, including facial parts and head components, has progressed a great deal in recent years. However, it remains a challenging task, whereby considering ambiguous occlusions and large pose variations are particularly difficult. To overcome these difficulties, we propose a novel framework termed Mask-FPAN. It uses a de-occlusion module that learns to parse occluded faces in a semi-supervised way. In particular, face landmark localization, face occlusionstimations, and detected head poses are taken into account. A 3D morphable face model combined with the UV GAN improves the robustness of 2D face parsing. In addition, we introduce two new datasets named FaceOccMask-HQ and CelebAMaskOcc-HQ for face paring work. The proposed Mask-FPAN framework addresses the face parsing problem in the wild and shows significant performance improvements with MIOU from 0.7353 to 0.9013 compared to the state-of-the-art on challenging face datasets. "
+}

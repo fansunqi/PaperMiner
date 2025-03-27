@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Bias in Neural Networks"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stochastic Gradient Descent (SGD)",
+    "Weight Decay"
+  ],
+  "results": [
+    "Bias towards rank minimization",
+    "Marginal effect on generalization"
+  ],
+  "paper_id": "62a7fc635aee126c0ff5e137",
+  "title": "SGD and Weight Decay Provably Induce a Low-Rank Bias in Neural Networks",
+  "abstract": "  In this paper, we study the bias of Stochastic Gradient Descent (SGD) to learn low-rank weight matrices when training deep ReLU neural networks. Our results show that training neural networks with mini-batch SGD and weight decay causes a bias towards rank minimization over the weight matrices. Specifically, we show, both theoretically and empirically, that this bias is more pronounced when using smaller batch sizes, higher learning rates, or increased weight decay. Additionally, we predict and observe empirically that weight decay is necessary to achieve this bias. Finally, we empirically investigate the connection between this bias and generalization, finding that it has a marginal effect on generalization. Our analysis is based on a minimal set of assumptions and applies to neural networks of any width or depth, including those with residual connections and convolutional layers. "
+}

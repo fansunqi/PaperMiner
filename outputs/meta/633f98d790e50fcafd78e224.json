@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Code Classification"
+  ],
+  "datasets": [
+    "JAVA250",
+    "Python800",
+    "CodRep1",
+    "Refactory"
+  ],
+  "methods": [
+    "Mixup-Based Data Augmentation"
+  ],
+  "results": [
+    "Accuracy improvement up to 6.24%",
+    "Robustness improvement up to 26.06%"
+  ],
+  "paper_id": "633f98d790e50fcafd78e224",
+  "title": "MIXCODE: Enhancing Code Classification by Mixup-Based Data Augmentation",
+  "abstract": "  Inspired by the great success of Deep Neural Networks (DNNs) in natural language processing (NLP), DNNs have been increasingly applied in source code analysis and attracted significant attention from the software engineering community. Due to its data-driven nature, a DNN model requires massive and high-quality labeled training data to achieve expert-level performance. Collecting such data is often not hard, but the labeling process is notoriously laborious. The task of DNN-based code analysis even worsens the situation because source code labeling also demands sophisticated expertise. Data augmentation has been a popular approach to supplement training data in domains such as computer vision and NLP. However, existing data augmentation approaches in code analysis adopt simple methods, such as data transformation and adversarial example generation, thus bringing limited performance superiority. In this paper, we propose a data augmentation approach MIXCODE that aims to effectively supplement valid training data, inspired by the recent advance named Mixup in computer vision. Specifically, we first utilize multiple code refactoring methods to generate transformed code that holds consistent labels with the original data. Then, we adapt the Mixup technique to mix the original code with the transformed code to augment the training data. We evaluate MIXCODE on two programming languages (Java and Python), two code tasks (problem classification and bug detection), four benchmark datasets (JAVA250, Python800, CodRep1, and Refactory), and seven model architectures (including two pre-trained models CodeBERT and GraphCodeBERT). Experimental results demonstrate that MIXCODE outperforms the baseline data augmentation approach by up to 6.24% in accuracy and 26.06% in robustness. "
+}

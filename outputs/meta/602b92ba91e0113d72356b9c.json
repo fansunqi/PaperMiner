@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/csccsccsccsc/cpp-net"
+  ],
+  "tasks": [
+    "Nucleus Segmentation"
+  ],
+  "datasets": [
+    "DSB2018",
+    "BBBC06",
+    "PanNuke"
+  ],
+  "methods": [
+    "Context-aware Polygon Proposal Network (CPP-Net)",
+    "Confidence-based Weighting Module",
+    "Shape-Aware Perceptual (SAP) loss"
+  ],
+  "results": [
+    "State-of-the-art performance on DSB2018, BBBC06, and PanNuke"
+  ],
+  "paper_id": "602b92ba91e0113d72356b9c",
+  "title": "CPP-Net: Context-aware Polygon Proposal Network for Nucleus Segmentation",
+  "abstract": "  Nucleus segmentation is a challenging task due to the crowded distribution and blurry boundaries of nuclei. Recent approaches represent nuclei by means of polygons to differentiate between touching and overlapping nuclei and have accordingly achieved promising performance. Each polygon is represented by a set of centroid-to-boundary distances, which are in turn predicted by features of the centroid pixel for a single nucleus. However, using the centroid pixel alone does not provide sufficient contextual information for robust prediction and thus degrades the segmentation accuracy. To handle this problem, we propose a Context-aware Polygon Proposal Network (CPP-Net) for nucleus segmentation. First, we sample a point set rather than one single pixel within each cell for distance prediction. This strategy substantially enhances contextual information and thereby improves the robustness of the prediction. Second, we propose a Confidence-based Weighting Module, which adaptively fuses the predictions from the sampled point set. Third, we introduce a novel Shape-Aware Perceptual (SAP) loss that constrains the shape of the predicted polygons. Here, the SAP loss is based on an additional network that is pre-trained by means of mapping the centroid probability map and the pixel-to-boundary distance maps to a different nucleus representation. Extensive experiments justify the effectiveness of each component in the proposed CPP-Net. Finally, CPP-Net is found to achieve state-of-the-art performance on three publicly available databases, namely DSB2018, BBBC06, and PanNuke. Code of this paper is available at \\url{https://github.com/csccsccsccsc/cpp-net "
+}

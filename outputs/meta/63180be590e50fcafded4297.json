@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Evacuation planning"
+  ],
+  "datasets": [
+    "Harris County road network and population data"
+  ],
+  "methods": [
+    "MIP-LNS",
+    "MIP-LNS-SIM"
+  ],
+  "results": [
+    "Better solutions in terms of average evacuation time, evacuation completion time and optimality guarantee",
+    "Efficient evacuation plans with small percent error in evacuation completion time estimation"
+  ],
+  "paper_id": "63180be590e50fcafded4297",
+  "title": "Towards Optimal and Scalable Evacuation Planning Using Data-driven Agent\n  Based Models",
+  "abstract": "  Evacuation planning is a crucial part of disaster management where the goal is to relocate people to safety and minimize casualties. Every evacuation plan has two essential components: routing and scheduling. However, joint optimization of these two components with objectives such as minimizing average evacuation time or evacuation completion time, is a computationally hard problem. To approach it, we present MIP-LNS, a scalable optimization method that utilizes heuristic search with mathematical optimization and can optimize a variety of objective functions. We also present the method MIP-LNS-SIM, where we further combine an agent-based model together with MIP-LNS to more accurately estimate the delay on roads due to congestion. We use real-world road network and population data from Harris County in Houston, Texas, and apply our methods to find evacuation routes and schedule for the area. We show that, within a given time limit, MIP-LNS finds better solutions than existing methods in terms of average evacuation time, evacuation completion time and optimality guarantee of the solutions. We also perform experiments with MIP-LNS-SIM to show its efficacy in estimating delays in the road network due to congestion by using an agent based model. Our results show that MIP-LNS-SIM can find efficient evacuation plans, and at the same time provide an estimate of the evacuation completion time for the given plan with a small percent error. "
+}

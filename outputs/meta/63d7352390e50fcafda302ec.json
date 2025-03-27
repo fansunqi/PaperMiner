@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Formal specification and verification of hyperproperties",
+    "Security objectives such as confidentiality, non-interference, privacy, and anonymity"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "HyperCTL^* logic",
+    "Stack-aware hyperproperties"
+  ],
+  "results": [
+    "Decidability for restricted classes of hyperproperties",
+    "Decision procedure for establishing and refuting security objectives",
+    "Exact verification if call stack size is observable"
+  ],
+  "paper_id": "63d7352390e50fcafda302ec",
+  "title": "Stack-Aware Hyperproperties",
+  "abstract": "  A hyperproperty relates executions of a program and is used to formalize security objectives such as confidentiality, non-interference, privacy, and anonymity. Formally, a hyperproperty is a collection of allowable sets of executions. A program violates a hyperproperty if the set of its executions is not in the collection specified by the hyperproperty. The logic HyperCTL^* has been proposed in the literature to formally specify and verify hyperproperties. The problem of checking whether a finite-state program satisfies a HyperCTL^* formula is known to be decidable. However, the problem turns out to be undecidable for procedural (recursive) programs. Surprisingly, we show that decidability can be restored if we consider restricted classes of hyperproperties, namely those that relate only those executions of a program which have the same call-stack access pattern. We call such hyperproperties, \\emph{stack-aware hyperproperties.} Our decision procedure can be used as a proof method for establishing security objectives such as noninference for recursive programs, and also for refuting security objectives such as observational determinism. Further, if the call stack size is observable to the attacker, the decision procedure provides exact verification. "
+}

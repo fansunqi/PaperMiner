@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Incremental quantum circuit simulation"
+  ],
+  "datasets": [
+    "QASMBench benchmarks"
+  ],
+  "methods": [
+    "Task-parallel decomposition strategy"
+  ],
+  "results": [
+    "qTask is 1.46x and 1.71x faster for full simulation compared to Qulacs and Qiskit",
+    "qTask is 5.77x and 9.76x faster for incremental simulation compared to Qulacs and Qiskit"
+  ],
+  "paper_id": "633ba44c90e50fcafdfe57a8",
+  "title": "qTask: Task-parallel Quantum Circuit Simulation with Incrementality",
+  "abstract": "  Incremental quantum circuit simulation has emerged as an important tool for simulation-driven quantum applications, such as circuit synthesis, verification, and analysis. When a small portion of the circuit is modified, the simulator must incrementally update state amplitudes for reasonable turnaround time and productivity. However, this type of incrementality has been largely ignored by existing research. To fill this gap, we introduce a new incremental quantum circuit simulator called qTask. qTask leverages a task-parallel decomposition strategy to explore both inter- and intra-gate operation parallelisms from partitioned data blocks. Our partitioning strategy effectively narrows down incremental update to a small set of partitions affected by circuit modifiers. We have demonstrated the promising performance of qTask on QASMBench benchmarks. Compared to two state-of-the-art simulators, Qulacs and Qiskit, qTask is respectively 1.46x and 1.71x faster for full simulation and 5.77x and 9.76x faster for incremental simulation. "
+}

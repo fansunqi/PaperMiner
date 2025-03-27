@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Safe Linear Bandits"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Doubly-Optimistic Play",
+    "DOSLB"
+  ],
+  "results": [
+    "O(log^2 T) bounds on efficacy regret and net safety violations",
+    "Large efficacy gains at a small safety cost"
+  ],
+  "paper_id": "63350ce690e50fcafd350a95",
+  "title": "Doubly-Optimistic Play for Safe Linear Bandits",
+  "abstract": "  The safe linear bandit problem (SLB) is an online approach to linear programming with unknown objective and unknown round-wise constraints, under stochastic bandit feedback of rewards and safety risks of actions. We study aggressive \\emph{doubly-optimistic play} in SLBs, and their role in avoiding the strong assumptions and poor efficacy associated with extant pessimistic-optimistic solutions.   We first elucidate an inherent hardness in SLBs due the lack of knowledge of constraints: there exist `easy' instances, for which suboptimal extreme points have large `gaps', but on which SLB methods must still incur $\\Omega(\\sqrt{T})$ regret and safety violations due to an inability to refine the location of optimal actions to arbitrary precision. In a positive direction, we propose and analyse a doubly-optimistic confidence-bound based strategy for the safe linear bandit problem, DOSLB, which exploits supreme optimism by using optimistic estimates of both reward and safety risks to select actions. Using a novel dual analysis, we show that despite the lack of knowledge of constraints, DOSLB rarely takes overly risky actions, and obtains tight instance-dependent $O(\\log^2 T)$ bounds on both efficacy regret and net safety violations up to any finite precision, thus yielding large efficacy gains at a small safety cost and without strong assumptions. Concretely, we argue that algorithm activates noisy versions of an `optimal' set of constraints at each round, and activation of suboptimal sets of constraints is limited by the larger of a safety and efficacy gap we define. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Estimating maximum matching in dynamic graphs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Simulating two-pass streaming matching algorithms",
+    "Sublinear-time matching algorithm of Behnezhad"
+  ],
+  "results": [
+    "Better-than-2 approximation ratio",
+    "Polylogarithmic update time"
+  ],
+  "paper_id": "62d4cf315aee126c0fa9adea",
+  "title": "Dynamic Matching with Better-than-2 Approximation in Polylogarithmic\n  Update Time",
+  "abstract": "  We present dynamic algorithms with polylogarithmic update time for estimating the size of the maximum matching of a graph undergoing edge insertions and deletions with approximation ratio strictly better than $2$. Specifically, we obtain a $1+\\frac{1}{\\sqrt{2}}+\\epsilon\\approx 1.707+\\epsilon$ approximation in bipartite graphs and a $1.973+\\epsilon$ approximation in general graphs. We thus answer in the affirmative the major open question first posed in the influential work of Onak and Rubinfeld (STOC'10) and repeatedly asked in the dynamic graph algorithms literature. Our randomized algorithms also work against an adaptive adversary and guarantee worst-case polylog update time, both w.h.p.   Our algorithms are based on simulating new two-pass streaming matching algorithms in the dynamic setting. Our key new idea is to invoke the recent sublinear-time matching algorithm of Behnezhad (FOCS'21) in a white-box manner to efficiently simulate the second pass of our streaming algorithms, while bypassing the well-known vertex-update barrier. "
+}

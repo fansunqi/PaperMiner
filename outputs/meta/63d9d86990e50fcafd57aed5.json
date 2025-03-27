@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Full-system simulation of computer systems",
+    "Modeling the network subsystem",
+    "Kernel bypass networking stack on gem5"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "gem5 NIC hardware model extension",
+    "Device driver extension",
+    "DPDK framework",
+    "Network load generator hardware model"
+  ],
+  "results": [
+    "DPDK's simulated network bandwidth scales with the number of cores and NIC ports",
+    "Analysis of network performance sensitivity to microarchitectural parameters",
+    "Analysis of direct cache access (DCA) technology to DPDK burst size"
+  ],
+  "paper_id": "63d9d86990e50fcafd57aed5",
+  "title": "Enabling Kernel Bypass Networking on gem5",
+  "abstract": "  Full-system simulation of computer systems is critical to capture the complex interplay between various hardware and software components in future systems. Modeling the network subsystem is indispensable to the fidelity of the full-system simulation due to the increasing importance of scale-out systems. The network software stack has undergone major changes over the last decade, and kernel-bypass networking stacks and data-plane networks are rapidly replacing the conventional kernel network stack. Nevertheless, the current state-of-the-art architectural simulators still use kernel networking which precludes realistic network application scenarios. In this work, we enable kernel bypass networking stack on gem5, the state-of-the-art full-system architectural simulator. We extend gem5's NIC hardware model and device driver to enable the support for userspace device drivers to run the DPDK framework. We also implement a network load generator hardware model in gem5 to generate various traffic patterns and perform per-packet timestamp and latency measurements without introducing packet loss. Our experimental results show that DPDK's simulated network bandwidth scales with the number of cores and NIC ports. As two use cases, we analyze the sensitivity of (1) network performance to several microarchitectural parameters, and (2) direct cache access (DCA) technology to DPDK burst size. "
+}

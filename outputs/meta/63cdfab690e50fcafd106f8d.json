@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Smart contract security",
+    "Side contract attacks",
+    "Blockchain security"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Game-theoretic analysis",
+    "Meta-game analysis",
+    "Side contract deployment"
+  ],
+  "results": [
+    "Side contract resilience demonstration",
+    "First-price auction attack",
+    "EIP-1559 attack analysis"
+  ],
+  "paper_id": "63cdfab690e50fcafd106f8d",
+  "title": "Side Contract Commitment Attacks on Blockchains",
+  "abstract": "  We identify a subtle security issue that impacts the design of smart contracts, because agents may themselves deploy smart contracts (side contracts). Typically, equilibria of games are analyzed in vitro, under the assumption that players cannot arbitrarily commit to strategies. However, equilibria thus obtained do not hold in general in vivo, when games are deployed on a blockchain. Being able to deploy side contracts changes fundamental game-theoretic assumptions by inducing a meta-game wherein agents strategize to deploy the best contracts. Not taking side contracts into account thus fails to capture an important aspect of deploying smart contracts in practice. A game that remains secure when the players can deploy side contracts is said to be side contract resilient. We demonstrate the non-triviality of side contract resilience by analyzing two smart contracts for decentralized commerce. These contracts have the same intended functionality, but we show that only one is side contract resilient. We then demonstrate a side contract attack on first-price auctions, which are the transaction mechanisms used by most major blockchains. We show that an agent may deploy a contract ensuring their transaction is included in the next block at almost zero cost while forcing most other agents to enter into a lottery for the remaining block space. This benefits all the users, but is detrimental to the miners. This might be cause for re-evaluation of the use of auctions in transaction fee mechanisms. We show that the attack works under certain conditions that hold with high probability from natural distributions. The attack also works against the transaction mechanism EIP-1559. Our work highlights an issue that is necessary to address to ensure the secure deployment of smart contracts and suggests that other contracts already deployed on major blockchains may be susceptible to these attacks. "
+}

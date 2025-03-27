@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Unsupervised Object Detection",
+    "Instance Segmentation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Cut-and-LEaRn (CutLER)",
+    "MaskCut",
+    "robust loss function",
+    "self-training"
+  ],
+  "results": [
+    "Improves detection performance AP50 by over 2.7 times on 11 benchmarks",
+    "Finetuning as a low-shot detector surpassing MoCo-v2 by 7.3% APbox and 6.6% APmask on COCO with 5% labels"
+  ],
+  "paper_id": "63d340ef90e50fcafd911810",
+  "title": "Cut and Learn for Unsupervised Object Detection and Instance\n  Segmentation",
+  "abstract": "  We propose Cut-and-LEaRn (CutLER), a simple approach for training unsupervised object detection and segmentation models. We leverage the property of self-supervised models to 'discover' objects without supervision and amplify it to train a state-of-the-art localization model without any human labels. CutLER first uses our proposed MaskCut approach to generate coarse masks for multiple objects in an image and then learns a detector on these masks using our robust loss function. We further improve the performance by self-training the model on its predictions. Compared to prior work, CutLER is simpler, compatible with different detection architectures, and detects multiple objects. CutLER is also a zero-shot unsupervised detector and improves detection performance AP50 by over 2.7 times on 11 benchmarks across domains like video frames, paintings, sketches, etc. With finetuning, CutLER serves as a low-shot detector surpassing MoCo-v2 by 7.3% APbox and 6.6% APmask on COCO when training with 5% labels. "
+}

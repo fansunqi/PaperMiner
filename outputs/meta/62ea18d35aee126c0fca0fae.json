@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Amplitude filtering",
+    "Probability filtering",
+    "Non-linearity estimation of Boolean functions",
+    "k-distinctness"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Log-space algorithms",
+    "Amplitude amplification",
+    "True amplitude estimation",
+    "Parallel amplitude estimation"
+  ],
+  "results": [
+    "Improved space complexity of previously known algorithms",
+    "Improved upper bounds on the space-bounded query complexity"
+  ],
+  "paper_id": "62ea18d35aee126c0fca0fae",
+  "title": "Few Quantum Algorithms on Amplitude Distribution",
+  "abstract": "  Amplitude filtering is concerned with identifying basis-states in a superposition whose amplitudes are greater than a specified threshold; probability filtering is defined analogously for probabilities. Given the scarcity of qubits, the focus of this work is to design log-space algorithms for them. Both algorithms follow a similar pattern of estimating the amplitude (or, probability for the latter problem) of each state, in superposition, then comparing each estimate against the threshold for setting up a flag qubit upon success, finally followed by amplitude amplification of states in which the flag is set. We show how to implement each step using very few qubits by designing three subroutines. Our first algorithm performs amplitude amplification even when the \"good state'' operator has a small probability of being incorrect -- here we improve upon the space complexity of the previously known algorithms. Our second algorithm performs \"true amplitude estimation'' in roughly the same complexity as that of \"amplitude estimation'', which actually estimates a probability instead of an amplitude. Our third algorithm is for performing amplitude estimation in parallel (superposition) which is difficult when each estimation branch involves different oracles. As an immediate reward, we observed that the above algorithms for the filtering problems directly improved the upper bounds on the space-bounded query complexity of problems such as non-linearity estimation of Boolean functions and $k$-distinctness. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "COVID-19 detection from chest X-Ray images"
+  ],
+  "datasets": [
+    "public COVID-19 CXR datasets"
+  ],
+  "methods": [
+    "self-supervised learning-based pretraining",
+    "batch knowledge ensembling-based fine-tuning"
+  ],
+  "results": [
+    "promising COVID-19 detection performance",
+    "high detection accuracy with reduced training images",
+    "insensitivity to hyperparameter changes"
+  ],
+  "paper_id": "63a1751690e50fcafd1f4731",
+  "title": "Boosting Automatic COVID-19 Detection Performance with Self-Supervised\n  Learning and Batch Knowledge Ensembling",
+  "abstract": "  Problem: Detecting COVID-19 from chest X-Ray (CXR) images has become one of the fastest and easiest methods for detecting COVID-19. However, the existing methods usually use supervised transfer learning from natural images as a pretraining process. These methods do not consider the unique features of COVID-19 and the similar features between COVID-19 and other pneumonia. Aim: In this paper, we want to design a novel high-accuracy COVID-19 detection method that uses CXR images, which can consider the unique features of COVID-19 and the similar features between COVID-19 and other pneumonia. Methods: Our method consists of two phases. One is self-supervised learning-based pertaining; the other is batch knowledge ensembling-based fine-tuning. Self-supervised learning-based pretraining can learn distinguished representations from CXR images without manually annotated labels. On the other hand, batch knowledge ensembling-based fine-tuning can utilize category knowledge of images in a batch according to their visual feature similarities to improve detection performance. Unlike our previous implementation, we introduce batch knowledge ensembling into the fine-tuning phase, reducing the memory used in self-supervised learning and improving COVID-19 detection accuracy. Results: On two public COVID-19 CXR datasets, namely, a large dataset and an unbalanced dataset, our method exhibited promising COVID-19 detection performance. Our method maintains high detection accuracy even when annotated CXR training images are reduced significantly (e.g., using only 10% of the original dataset). In addition, our method is insensitive to changes in hyperparameters. "
+}

@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Domain Generalization"
+  ],
+  "datasets": [
+    "DomainBed"
+  ],
+  "methods": [
+    "Hypernetwork-based Mixture of Experts (MoE)"
+  ],
+  "results": [
+    "Competitive performance",
+    "SOTA results in some cases"
+  ],
+  "paper_id": "637454dc90e50fcafdfc6a72",
+  "title": "HMOE: Hypernetwork-based Mixture of Experts for Domain Generalization",
+  "abstract": "  Due to domain shift, machine learning systems typically fail to generalize well to domains different from those of training data, which is what domain generalization (DG) aims to address. Although various DG methods have been developed, most of them lack interpretability and require domain labels that are not available in many real-world scenarios. This paper presents a novel DG method, called HMOE: Hypernetwork-based Mixture of Experts (MoE), which does not rely on domain labels and is more interpretable. MoE proves effective in identifying heterogeneous patterns in data. For the DG problem, heterogeneity arises exactly from domain shift. HMOE uses hypernetworks taking vectors as input to generate experts' weights, which allows experts to share useful meta-knowledge and enables exploring experts' similarities in a low-dimensional vector space. We compare HMOE with other DG algorithms under a fair and unified benchmark-DomainBed. Our extensive experiments show that HMOE can divide mixed-domain data into distinct clusters that are surprisingly more consistent with human intuition than original domain labels. Compared to other DG methods, HMOE shows competitive performance and achieves SOTA results in some cases. "
+}

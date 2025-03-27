@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Constrained generation using a pre-trained language model generator oracle and a process verifier"
+  ],
+  "datasets": [
+    "Dyck grammar",
+    "CodeLlama"
+  ],
+  "methods": [
+    "Tokenwise rejection sampling with backtracking",
+    "Rejection sampling",
+    "Nucleus sampling",
+    "Temperature scaling",
+    "Block best-of-n",
+    "Process reward modeling"
+  ],
+  "results": [
+    "Tokenwise rejection sampling with backtracking achieves higher accuracy and query efficiency",
+    "Tokenwise rejection sampling with backtracking maintains diversity",
+    "Tokenwise rejection sampling with backtracking reduces completion errors on unseen out-of-distribution (OOD) prefixes"
+  ],
+  "title": "On the Query Complexity of Verifier-Assisted Language Generation.pdf",
+  "abstract": "Recently, a plethora of works have proposed inference-time algorithms (e.g. best-of-n), which incor- porate verifiers to assist the generation process. Their quality-efficiency trade-offs have been empirically benchmarked on a variety of constrained generation tasks, but the algorithmic design landscape is still largely poorly understood. In this paper, we develop a mathematical framework for reasoning about con- strained generation using a pre-trained language model generator oracle and a process verifier\u2014which can decide whether a prefix can be extended to a string which satisfies the constraints of choice. We show that even in very simple settings, access to a verifier can render an intractable problem (information- theoretically or computationally) to a tractable one. In fact, we show even simple algorithms, like tokenwise rejection sampling, can enjoy significant benefits from access to a verifier. Empirically, we show that a natural modification of tokenwise rejection sampling, in which the sampler is allowed to \u201cbacktrack\u201d (i.e., erase the final few generated tokens) has robust and substantive benefits over natu- ral baselines (e.g. (blockwise) rejection sampling, nucleus sampling)\u2014both in terms of computational efficiency, accuracy and diversity. 1 Introduction The fast-evolving area of inference-time algorithms concerns itself with leveraging the already-impressive capabilities of language models (Raffel et al., 2020; Brown et al., 2020; Touvron et al., 2023), together with a verifier which can score generations of the language model. In the simplest form, called best-of-N, the language model generates N candidate responses, which are then scored by the verifier, and the highest- scored candidate response is chosen as the output of the inference process (Cobbe et al., 2021; Nakano et al., 2022). If the verifier can score partial generations (sometimes called process reward), the space for inference-time algorithms gets much richer: e.g., the final answer can be generated incrementally, using the verifier to guide the process (e.g., by incremental (blockwise) best-of-N, or more complicated strategies like Monte-Carlo-Tree-Search (Browne et al., 2012; Hao et al., 2023)). Importantly, though a flurry of recent papers consider \u201cscaling laws\u201d of natural strategies, the algorithm design space of verifier-aided inference- time algorithms is still opaque. In particular, the value of a verifier\u2014and the relationship it needs to have to the generator is not well understood. In this paper, we show that a good verifier can substantially (both in theory and in practice) decrease the computational cost of natural generation tasks, using a pre-trained language model as an oracle. In particular, we show that: \u2022 Even simple constrained generation tasks\u2014where we are trying to generate a string in the support of a language oracle, subject to some structural constraint (e.g. describable as a simple formal language, like a regular language)\u2014can be computationally intractable in the absence of a verifier. \u2022 Conversely, access to a good process verifier, one that can decide whether a prefix can be completed to a constraint-satisfying string, can remove these intractabilities. Moreover, even simple algorithms like \u2217Equal contribution. Correspond to: Yuchen Li yuchenl4@cs.cmu.edu and Andrej Risteski aristesk@andrew.cmu.edu 1 arXiv:2502.12123v1 [cs.CL] 17 Feb 2025"
+}

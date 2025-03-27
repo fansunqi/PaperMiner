@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "droplet tracking in microfluidics"
+  ],
+  "datasets": [
+    "microfluidic experimental videos"
+  ],
+  "methods": [
+    "YOLOv5",
+    "YOLOv7",
+    "DeepSORT"
+  ],
+  "results": [
+    "YOLOv7 is 10% faster",
+    "Real-time tracking achieved by lighter YOLO models on RTX 3070 Ti GPU"
+  ],
+  "paper_id": "63ca06a190e50fcafd68383e",
+  "title": "Benchmarking YOLOv5 and YOLOv7 models with DeepSORT for droplet tracking\n  applications",
+  "abstract": "  Tracking droplets in microfluidics is a challenging task. The difficulty arises in choosing a tool to analyze general microfluidic videos to infer physical quantities. The state-of-the-art object detector algorithm You Only Look Once (YOLO) and the object tracking algorithm Simple Online and Realtime Tracking with a Deep Association Metric (DeepSORT) are customizable for droplet identification and tracking. The customization includes training YOLO and DeepSORT networks to identify and track the objects of interest. We trained several YOLOv5 and YOLOv7 models and the DeepSORT network for droplet identification and tracking from microfluidic experimental videos. We compare the performance of the droplet tracking applications with YOLOv5 and YOLOv7 in terms of training time and time to analyze a given video across various hardware configurations. Despite the latest YOLOv7 being 10% faster, the real-time tracking is only achieved by lighter YOLO models on RTX 3070 Ti GPU machine due to additional significant droplet tracking costs arising from the DeepSORT algorithm. This work is a benchmark study for the YOLOv5 and YOLOv7 networks with DeepSORT in terms of the training time and inference time for a custom dataset of microfluidic droplets. "
+}

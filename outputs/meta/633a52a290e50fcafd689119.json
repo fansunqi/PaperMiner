@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "https://github.com/MercuryBench/ensemble-based-gradient.git"
+  ],
+  "tasks": [
+    "Optimization",
+    "Sampling"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Ensemble-based gradient inference (EGI)",
+    "Consensus-based optimization",
+    "Langevin-based samplers"
+  ],
+  "results": [
+    "Augmented algorithms superior to gradient-free variants",
+    "Improved ensemble escape from initial domain",
+    "Enhanced exploration of multimodal, non-Gaussian settings",
+    "Speeded up collapse at the end of optimization dynamics"
+  ],
+  "paper_id": "633a52a290e50fcafd689119",
+  "title": "Ensemble-based gradient inference for particle methods in optimization\n  and sampling",
+  "abstract": "  We propose an approach based on function evaluations and Bayesian inference to extract higher-order differential information of objective functions {from a given ensemble of particles}. Pointwise evaluation $\\{V(x^i)\\}_i$ of some potential $V$ in an ensemble $\\{x^i\\}_i$ contains implicit information about first or higher order derivatives, which can be made explicit with little computational effort (ensemble-based gradient inference -- EGI). We suggest to use this information for the improvement of established ensemble-based numerical methods for optimization and sampling such as Consensus-based optimization and Langevin-based samplers. Numerical studies indicate that the augmented algorithms are often superior to their gradient-free variants, in particular the augmented methods help the ensembles to escape their initial domain, to explore multimodal, non-Gaussian settings and to speed up the collapse at the end of optimization dynamics.}   The code for the numerical examples in this manuscript can be found in the paper's Github repository (https://github.com/MercuryBench/ensemble-based-gradient.git). "
+}

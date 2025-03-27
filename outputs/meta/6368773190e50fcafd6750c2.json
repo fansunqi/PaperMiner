@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/aiaudit-org/raw2logit"
+  ],
+  "tasks": [
+    "Dataset drift controls in machine learning with images"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Combining traditional machine learning with physical optics",
+    "Data models for dataset drift control"
+  ],
+  "results": [
+    "Drift synthesis for controlled generation of drift test cases",
+    "Gradient connection for precise tolerancing of task model sensitivity",
+    "Drift optimization for data generating process optimization"
+  ],
+  "paper_id": "6368773190e50fcafd6750c2",
+  "title": "Data Models for Dataset Drift Controls in Machine Learning With Images",
+  "abstract": "  Camera images are ubiquitous in machine learning research. They also play a central role in the delivery of important services spanning medicine and environmental surveying. However, the application of machine learning models in these domains has been limited because of robustness concerns. A primary failure mode are performance drops due to differences between the training and deployment data. While there are methods to prospectively validate the robustness of machine learning models to such dataset drifts, existing approaches do not account for explicit models of the primary object of interest: the data. This limits our ability to study and understand the relationship between data generation and downstream machine learning model performance in a physically accurate manner. In this study, we demonstrate how to overcome this limitation by pairing traditional machine learning with physical optics to obtain explicit and differentiable data models. We demonstrate how such data models can be constructed for image data and used to control downstream machine learning model performance related to dataset drift. The findings are distilled into three applications. First, drift synthesis enables the controlled generation of physically faithful drift test cases to power model selection and targeted generalization. Second, the gradient connection between machine learning task model and data model allows advanced, precise tolerancing of task model sensitivity to changes in the data generation. These drift forensics can be used to precisely specify the acceptable data environments in which a task model may be run. Third, drift optimization opens up the possibility to create drifts that can help the task model learn better faster, effectively optimizing the data generating process itself. A guide to access the open code and datasets is available at https://github.com/aiaudit-org/raw2logit. "
+}

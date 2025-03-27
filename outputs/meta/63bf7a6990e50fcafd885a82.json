@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Performance verification",
+    "Resource allocation heuristics"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Virelay framework"
+  ],
+  "results": [
+    "Bounds on the performance of classical algorithms",
+    "Identification of two bugs in the Linux CFS load balancer"
+  ],
+  "paper_id": "63bf7a6990e50fcafd885a82",
+  "title": "A Performance Verification Methodology for Resource Allocation\n  Heuristics",
+  "abstract": "Performance verification is a nascent but promising tool for understanding\nthe performance and limitations of heuristics under realistic assumptions.\nBespoke performance verification tools have already demonstrated their value in\nsettings like congestion control and packet scheduling. In this paper, we aim\nto emphasize the broad applicability and utility of performance verification.\nTo that end, we highlight the design principles of performance verification.\nThen, we leverage that understanding to develop a set of easy-to-follow\nguidelines that are applicable to a wide range of resource allocation\nheuristics. In particular, we introduce Virelay, a framework that enables\nheuristic designers to express the behavior of their algorithms and their\nassumptions about the system in an environment that resembles a discrete-event\nsimulator. We demonstrate the utility and ease-of-use of Virelay by applying it\nto six diverse case studies. We produce bounds on the performance of classical\nalgorithms, work stealing and SRPT scheduling, under practical assumptions. We\ndemonstrate Virelay's expressiveness by capturing existing models for\ncongestion control and packet scheduling, and we verify the observation that\nTCP unfairness can cause some ML training workloads to spontaneously converge\nto a state of high network utilization. Finally, we use Virelay to identify two\nbugs in the Linux CFS load balancer."
+}

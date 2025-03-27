@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Shortest path queries in graphs",
+    "Bidirectional BFS"
+  ],
+  "datasets": [
+    "Real-world networks"
+  ],
+  "methods": [
+    "Deterministic performance analysis"
+  ],
+  "results": [
+    "Sublinear running time for bidirectional BFS",
+    "Parameters capture practical running time well"
+  ],
+  "paper_id": "633a52a290e50fcafd689065",
+  "title": "Deterministic Performance Guarantees for Bidirectional BFS on Real-World\n  Networks",
+  "abstract": "  A common technique to speed up shortest path queries in graphs is to use a bidirectional search, i.e., performing a forward search from the start and a backward search from the destination until a common vertex on a shortest path is found. In practice, this has a tremendous impact on the performance on some real-world networks, while it only seems to save a constant factor on other types of networks. Even though finding shortest paths is a ubiquitous problem, there are only few studies attempting to understand the apparently asymptotic speedups on some networks, using average case analysis on certain models for real-world networks.   In this paper we give a new perspective on this, by analyzing deterministic properties that permit theoretical analysis and that can easily be checked on any particular instance. We prove that these parameters imply sublinear running time for the bidirectional breadth-first search in several regimes, some of which are tight. Moreover, we perform experiments on a large set of real-world networks showing that our parameters capture the concept of practical running time well. "
+}

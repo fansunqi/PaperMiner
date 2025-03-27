@@ -1,0 +1,20 @@
+{
+  "code_links": "None",
+  "tasks": [
+    "Efficient document search"
+  ],
+  "datasets": [
+    "MS MARCO",
+    "BEIR"
+  ],
+  "methods": [
+    "CluSD (Cluster-based Selective Dense Retrieval)"
+  ],
+  "results": [
+    "Outperforms all other methods in relevance and latency",
+    "Significantly faster than on-disk ANN methods",
+    "Up to 12.1x faster than graph navigation approaches"
+  ],
+  "title": "LSTM-based Selective Dense Text Retrieval Guided by Sparse Lexical Retrieval.pdf",
+  "abstract": ". This paper studies fast fusion of dense retrieval and sparse lexical retrieval, and proposes a cluster-based selective dense retrieval method called CluSD guided by sparse lexical retrieval. CluSD takes a lightweight cluster-based approach and exploits the overlap of sparse re- trieval results and embedding clusters in a two-stage selection process with an LSTM model to quickly identify relevant clusters while incur- ring limited extra memory space overhead. CluSD triggers partial dense retrieval and performs cluster-based block disk I/O if needed. This pa- per evaluates CluSD and compares it with several baselines for searching in-memory and on-disk MS MARCO and BEIR datasets. Keywords: Partial dense retrieval, selective fusion with sparse retrieval, efficient document search 1 Introduction and Related Work Dense and sparse retrievers are two main categories of retrieval techniques for text document search. As shown in previous literature [21, 24, 25], combin- ing sparse and dense retrieval scores with linear interpolation can boost search relevance. It is important to optimize for efficiency when combining the above two retrieval approaches on a low-cost CPU-only platform. This is desirable in a large-scale search system which employs a multi-stage search architecture, and runs partitioned first-stage retrieval in parallel on a massive number of inexpen- sive CPU-only machines. It is also critical for search on personal devices such as phones with limited computing/memory resources or battery use constraints. Dense retrieval can be accelerated with approximate nearest neighbor (ANN) search using partial IVF cluster search [18, 23] or proximity-graph-based navi- gation (e.g. HNSW) [29]. However, there is a significant relevance tradeoff for a reduced search cost in these efforts. For example, RetroMAE [41], a state- of-the-art dense retriever, is slow on CPU without compression, the use of 5% IVF cluster search reduces CPU time substantially, but there is a 7.5% drop in MRR@10. The use of OPQ quantization [13], implemented in FAISS [18], further arXiv:2502.10639v1 [cs.IR] 15 Feb 2025"
+}

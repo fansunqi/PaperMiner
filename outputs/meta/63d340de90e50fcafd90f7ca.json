@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Performance prediction",
+    "Leave-one-problem-out (LOPO)"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "RF+clust",
+    "Cosine similarity"
+  ],
+  "results": [
+    "Improved performance prediction",
+    "Dependent on similarity threshold and feature portfolio"
+  ],
+  "paper_id": "63d340de90e50fcafd90f7ca",
+  "title": "RF+clust for Leave-One-Problem-Out Performance Prediction",
+  "abstract": "  Per-instance automated algorithm configuration and selection are gaining significant moments in evolutionary computation in recent years. Two crucial, sometimes implicit, ingredients for these automated machine learning (AutoML) methods are 1) feature-based representations of the problem instances and 2) performance prediction methods that take the features as input to estimate how well a specific algorithm instance will perform on a given problem instance. Non-surprisingly, common machine learning models fail to make predictions for instances whose feature-based representation is underrepresented or not covered in the training data, resulting in poor generalization ability of the models for problems not seen during training.In this work, we study leave-one-problem-out (LOPO) performance prediction. We analyze whether standard random forest (RF) model predictions can be improved by calibrating them with a weighted average of performance values obtained by the algorithm on problem instances that are sufficiently close to the problem for which a performance prediction is sought, measured by cosine similarity in feature space. While our RF+clust approach obtains more accurate performance prediction for several problems, its predictive power crucially depends on the chosen similarity threshold as well as on the feature portfolio for which the cosine similarity is measured, thereby opening a new angle for feature selection in a zero-shot learning setting, as LOPO is termed in machine learning. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Software Configuration Tuning"
+  ],
+  "datasets": [
+    "14 real-world requirements datasets"
+  ],
+  "methods": [
+    "Pareto optimizers",
+    "empirical study"
+  ],
+  "results": [
+    "Realism of aspirations is key factor",
+    "Patterns and position of aspirations matter for improvement",
+    "Tuning budget influences choice for unrealistic aspirations"
+  ],
+  "paper_id": "63bcd73690e50fcafdefa254",
+  "title": "Do Performance Aspirations Matter for Guiding Software Configuration\n  Tuning?",
+  "abstract": "  Configurable software systems can be tuned for better performance. Leveraging on some Pareto optimizers, recent work has shifted from tuning for a single, time-related performance objective to two intrinsically different objectives that assess distinct performance aspects of the system, each with varying aspirations. Before we design better optimizers, a crucial engineering decision to make therein is how to handle the performance requirements with clear aspirations in the tuning process. For this, the community takes two alternative optimization models: either quantifying and incorporating the aspirations into the search objectives that guide the tuning, or not considering the aspirations during the search but purely using them in the later decision-making process only. However, despite being a crucial decision that determines how an optimizer can be designed and tailored, there is a rather limited understanding of which optimization model should be chosen under what particular circumstance, and why.   In this paper, we seek to close this gap. Firstly, we do that through a review of over 426 papers in the literature and 14 real-world requirements datasets. Drawing on these, we then conduct a comprehensive empirical study that covers 15 combinations of the state-of-the-art performance requirement patterns, four types of aspiration space, three Pareto optimizers, and eight real-world systems/environments, leading to 1,296 cases of investigation. We found that (1) the realism of aspirations is the key factor that determines whether they should be used to guide the tuning; (2) the given patterns and the position of the realistic aspirations in the objective landscape are less important for the choice, but they do matter to the extents of improvement; (3) the available tuning budget can also influence the choice for unrealistic aspirations but it is insignificant under realistic ones. "
+}

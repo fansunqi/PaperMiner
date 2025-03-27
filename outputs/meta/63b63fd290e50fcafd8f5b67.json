@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Noisy Label Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multinomial Mixture Models",
+    "Expectation-Maximisation algorithm"
+  ],
+  "results": [
+    "Identifiability issue resolved with at least 2C - 1 noisy labels per instance",
+    "Competitive performance with state-of-the-art methods"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5b67",
+  "title": "Towards the Identifiability in Noisy Label Learning: A Multinomial\n  Mixture Approach",
+  "abstract": "  Learning from noisy labels (LNL) plays a crucial role in deep learning. The most promising LNL methods rely on identifying clean-label samples from a dataset with noisy annotations. Such an identification is challenging because the conventional LNL problem, which assumes a single noisy label per instance, is non-identifiable, i.e., clean labels cannot be estimated theoretically without additional heuristics. In this paper, we aim to formally investigate this identifiability issue using multinomial mixture models to determine the constraints that make the problem identifiable. Specifically, we discover that the LNL problem becomes identifiable if there are at least $2C - 1$ noisy labels per instance, where $C$ is the number of classes. To meet this requirement without relying on additional $2C - 2$ manual annotations per instance, we propose a method that automatically generates additional noisy labels by estimating the noisy label distribution based on nearest neighbours. These additional noisy labels enable us to apply the Expectation-Maximisation algorithm to estimate the posterior probabilities of clean labels, which are then used to train the model of interest. We empirically demonstrate that our proposed method is capable of estimating clean labels without any heuristics in several label noise benchmarks, including synthetic, web-controlled, and real-world label noises. Furthermore, our method performs competitively with many state-of-the-art methods. "
+}

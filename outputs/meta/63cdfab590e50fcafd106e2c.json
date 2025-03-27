@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CTR prediction in recommender systems and Ads ranking"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Sparsely-Gated Mixture-of-Experts (SparseMoE) architecture",
+    "dynamic early exiting mechanism"
+  ],
+  "results": [
+    "AdaEnsemble demonstrates efficiency and effectiveness over state-of-the-art models"
+  ],
+  "paper_id": "63cdfab590e50fcafd106e2c",
+  "title": "AdaEnsemble: Learning Adaptively Sparse Structured Ensemble Network for\n  Click-Through Rate Prediction",
+  "abstract": "  Learning feature interactions is crucial to success for large-scale CTR prediction in recommender systems and Ads ranking. Researchers and practitioners extensively proposed various neural network architectures for searching and modeling feature interactions. However, we observe that different datasets favor different neural network architectures and feature interaction types, suggesting that different feature interaction learning methods may have their own unique advantages. Inspired by this observation, we propose AdaEnsemble: a Sparsely-Gated Mixture-of-Experts (SparseMoE) architecture that can leverage the strengths of heterogeneous feature interaction experts and adaptively learns the routing to a sparse combination of experts for each example, allowing us to build a dynamic hierarchy of the feature interactions of different types and orders. To further improve the prediction accuracy and inference efficiency, we incorporate the dynamic early exiting mechanism for feature interaction depth selection. The AdaEnsemble can adaptively choose the feature interaction depth and find the corresponding SparseMoE stacking layer to exit and compute prediction from. Therefore, our proposed architecture inherits the advantages of the exponential combinations of sparsely gated experts within SparseMoE layers and further dynamically selects the optimal feature interaction depth without executing deeper layers. We implement the proposed AdaEnsemble and evaluate its performance on real-world datasets. Extensive experiment results demonstrate the efficiency and effectiveness of AdaEnsemble over state-of-the-art models. "
+}

@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://zzw922cn.github.io/wesinger2"
+  ],
+  "tasks": [
+    "Singing Voice Synthesis"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-Singer Conditional Adversarial Training",
+    "Random area conditional discriminators",
+    "Neural vocoder",
+    "Multi-scale distance functions"
+  ],
+  "results": [
+    "High-quality singing voices efficiently",
+    "Fine-tuning different singing datasets"
+  ],
+  "paper_id": "62c4fd9a5aee126c0fad6f44",
+  "title": "WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer\n  Conditional Adversarial Training",
+  "abstract": "  This paper aims to introduce a robust singing voice synthesis (SVS) system to produce very natural and realistic singing voices efficiently by leveraging the adversarial training strategy. On one hand, we designed simple but generic random area conditional discriminators to help supervise the acoustic model, which can effectively avoid the over-smoothed spectrogram prediction and improve the expressiveness of SVS. On the other hand, we subtly combined the spectrogram with the frame-level linearly-interpolated F0 sequence as the input for the neural vocoder, which is then optimized with the help of multiple adversarial conditional discriminators in the waveform domain and multi-scale distance functions in the frequency domain. The experimental results and ablation studies concluded that, compared with our previous auto-regressive work, our new system can produce high-quality singing voices efficiently by fine-tuning different singing datasets covering from several minutes to a few hours. A large number of synthesized songs with different timbres are available online https://zzw922cn.github.io/wesinger2 and we highly recommend readers to listen to them. "
+}

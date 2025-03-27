@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-agent reinforcement learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "PAC",
+    "Counterfactual Predictions",
+    "Variational inference",
+    "Maximum-entropy MARL framework"
+  ],
+  "results": [
+    "Improved results over state-of-the-art value-based and policy-based multi-agent reinforcement learning algorithms"
+  ],
+  "paper_id": "62b52c625aee126c0f459507",
+  "title": "PAC: Assisted Value Factorisation with Counterfactual Predictions in\n  Multi-Agent Reinforcement Learning",
+  "abstract": "  Multi-agent reinforcement learning (MARL) has witnessed significant progress with the development of value function factorization methods. It allows optimizing a joint action-value function through the maximization of factorized per-agent utilities due to monotonicity. In this paper, we show that in partially observable MARL problems, an agent's ordering over its own actions could impose concurrent constraints (across different states) on the representable function class, causing significant estimation error during training. We tackle this limitation and propose PAC, a new framework leveraging Assistive information generated from Counterfactual Predictions of optimal joint action selection, which enable explicit assistance to value function factorization through a novel counterfactual loss. A variational inference-based information encoding method is developed to collect and encode the counterfactual predictions from an estimated baseline. To enable decentralized execution, we also derive factorized per-agent policies inspired by a maximum-entropy MARL framework. We evaluate the proposed PAC on multi-agent predator-prey and a set of StarCraft II micromanagement tasks. Empirical results demonstrate improved results of PAC over state-of-the-art value-based and policy-based multi-agent reinforcement learning algorithms on all benchmarks. "
+}

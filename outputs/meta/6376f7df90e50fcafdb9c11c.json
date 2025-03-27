@@ -1,0 +1,31 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Anomaly Detection"
+  ],
+  "datasets": [
+    "NASA",
+    "Yahoo",
+    "Numenta",
+    "Amazon",
+    "Twitter",
+    "SWaT",
+    "elderly home residences"
+  ],
+  "methods": [
+    "Hyperbolic uncertainty for Anomaly Detection (HypAD)",
+    "LSTM",
+    "GAN critics",
+    "hyperbolic neural network"
+  ],
+  "results": [
+    "HypAD outperforms the current state-of-the-art for univariate anomaly detection",
+    "state-of-the-art performance on a multivariate dataset",
+    "lowest false alarms at the best performance rate"
+  ],
+  "paper_id": "6376f7df90e50fcafdb9c11c",
+  "title": "Are we certain it's anomalous?",
+  "abstract": "  The progress in modelling time series and, more generally, sequences of structured data has recently revamped research in anomaly detection. The task stands for identifying abnormal behaviors in financial series, IT systems, aerospace measurements, and the medical domain, where anomaly detection may aid in isolating cases of depression and attend the elderly. Anomaly detection in time series is a complex task since anomalies are rare due to highly non-linear temporal correlations and since the definition of anomalous is sometimes subjective. Here we propose the novel use of Hyperbolic uncertainty for Anomaly Detection (HypAD). HypAD learns self-supervisedly to reconstruct the input signal. We adopt best practices from the state-of-the-art to encode the sequence by an LSTM, jointly learned with a decoder to reconstruct the signal, with the aid of GAN critics. Uncertainty is estimated end-to-end by means of a hyperbolic neural network. By using uncertainty, HypAD may assess whether it is certain about the input signal but it fails to reconstruct it because this is anomalous; or whether the reconstruction error does not necessarily imply anomaly, as the model is uncertain, e.g. a complex but regular input signal. The novel key idea is that a detectable anomaly is one where the model is certain but it predicts wrongly. HypAD outperforms the current state-of-the-art for univariate anomaly detection on established benchmarks based on data from NASA, Yahoo, Numenta, Amazon, and Twitter. It also yields state-of-the-art performance on a multivariate dataset of anomaly activities in elderly home residences, and it outperforms the baseline on SWaT. Overall, HypAD yields the lowest false alarms at the best performance rate, thanks to successfully identifying detectable anomalies. "
+}

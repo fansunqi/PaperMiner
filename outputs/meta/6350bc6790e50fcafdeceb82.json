@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Backdoor poisoning in DNN classifiers",
+    "Image classification tasks"
+  ],
+  "datasets": [
+    "CIFAR-10"
+  ],
+  "methods": [
+    "Self-supervised representation learning",
+    "Sample filtering and re-labeling"
+  ],
+  "results": [
+    "State-of-the-art performance in mitigating backdoor attacks"
+  ],
+  "paper_id": "6350bc6790e50fcafdeceb82",
+  "title": "Training set cleansing of backdoor poisoning by self-supervised\n  representation learning",
+  "abstract": "  A backdoor or Trojan attack is an important type of data poisoning attack against deep neural network (DNN) classifiers, wherein the training dataset is poisoned with a small number of samples that each possess the backdoor pattern (usually a pattern that is either imperceptible or innocuous) and which are mislabeled to the attacker's target class. When trained on a backdoor-poisoned dataset, a DNN behaves normally on most benign test samples but makes incorrect predictions to the target class when the test sample has the backdoor pattern incorporated (i.e., contains a backdoor trigger). Here we focus on image classification tasks and show that supervised training may build stronger association between the backdoor pattern and the associated target class than that between normal features and the true class of origin. By contrast, self-supervised representation learning ignores the labels of samples and learns a feature embedding based on images' semantic content. %We thus propose to use unsupervised representation learning to avoid emphasising backdoor-poisoned training samples and learn a similar feature embedding for samples of the same class. Using a feature embedding found by self-supervised representation learning, a data cleansing method, which combines sample filtering and re-labeling, is developed. Experiments on CIFAR-10 benchmark datasets show that our method achieves state-of-the-art performance in mitigating backdoor attacks. "
+}

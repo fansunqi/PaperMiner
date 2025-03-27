@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Music playing by robots"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "DREAM (Dynamic Resource Allocation based on a Spatio-temporal Multi-task Assignment problem)"
+  ],
+  "results": [
+    "Computes the required number of robots and assigns tasks in at most two steps",
+    "Collision-free trajectories provided for robots operating in a convex region"
+  ],
+  "paper_id": "634cc7a390e50fcafd16303e",
+  "title": "A Non-iterative Spatio-temporal Multi-task Assignments based\n  Collision-free Trajectories for Music Playing Robots",
+  "abstract": "  In this paper, a non-iterative spatio-temporal multi-task assignment approach is used for playing piano music by a team of robots. This paper considers the piano playing problem, in which an algorithm needs to compute the trajectories for a dynamically sized team of robots who will play the musical notes by traveling through the specific locations associated with musical notes at their respective specific times. A two-step dynamic resource allocation based on a spatio-temporal multi-task assignment problem (DREAM), has been implemented to assign robots for playing the musical tune. The algorithm computes the required number of robots to play the music in the first step. In the second step, optimal assignments are computed for the updated team of robots, which minimizes the total distance traveled by the team. Even for the individual feasible trajectories, the multi-robot execution may fail if robots encounter a collision. As some time will be utilized for this conflict resolution, robots may not be able to reach the desired location on time. This paper analyses and proves that, if robots are operating in a convex region, the solution of the DREAM approach provides collision-free trajectories. The working of the DREAM approach has been illustrated with the help of the high fidelity simulations in Gazebo operated using ROS2. The result clearly shows that the DREAM approach computes the required number of robots and assigns multiple tasks to robots in at most two steps. The simulation of the robots playing music, using computed assignments, is demonstrated in the attached video. video link: \\url{https://youtu.be/XToicNm-CO8} "
+}

@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Lidar-level localization",
+    "radar odometry"
+  ],
+  "datasets": [
+    "Oxford benchmark"
+  ],
+  "methods": [
+    "CFEAR",
+    "motion compensation",
+    "one-to-many scan registration",
+    "robust loss function"
+  ],
+  "results": [
+    "Improves state-of-the-art by 38%",
+    "1.09% error at 5Hz",
+    "1.79% error at 160Hz"
+  ],
+  "paper_id": "6368773190e50fcafd674fa5",
+  "title": "Lidar-level localization with radar? The CFEAR approach to accurate,\n  fast and robust large-scale radar odometry in diverse environments",
+  "abstract": "  This paper presents an accurate, highly efficient, and learning-free method for large-scale odometry estimation using spinning radar, empirically found to generalize well across very diverse environments -- outdoors, from urban to woodland, and indoors in warehouses and mines - without changing parameters. Our method integrates motion compensation within a sweep with one-to-many scan registration that minimizes distances between nearby oriented surface points and mitigates outliers with a robust loss function. Extending our previous approach CFEAR, we present an in-depth investigation on a wider range of data sets, quantifying the importance of filtering, resolution, registration cost and loss functions, keyframe history, and motion compensation. We present a new solving strategy and configuration that overcomes previous issues with sparsity and bias, and improves our state-of-the-art by 38%, thus, surprisingly, outperforming radar SLAM and approaching lidar SLAM. The most accurate configuration achieves 1.09% error at 5Hz on the Oxford benchmark, and the fastest achieves 1.79% error at 160Hz. "
+}

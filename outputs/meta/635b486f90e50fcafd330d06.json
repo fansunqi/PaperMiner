@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Model order selection"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Variational autoencoder (VAE)"
+  ],
+  "results": [
+    "Outperforms classical methods",
+    "Reaches or beats supervised approach depending on snapshots"
+  ],
+  "paper_id": "635b486f90e50fcafd330d06",
+  "title": "Model Order Selection with Variational Autoencoding",
+  "abstract": "  Classical methods for model order selection often fail in scenarios with low SNR or few snapshots. Deep learning based methods are promising alternatives for such challenging situations as they compensate lack of information in the available observations with training on large datasets. This manuscript proposes an approach that uses a variational autoencoder (VAE) for model order selection. The idea is to learn a parameterized conditional covariance matrix at the VAE decoder that approximates the true signal covariance matrix. The method itself is unsupervised and only requires a small representative dataset for calibration purposes after training of the VAE. Numerical simulations show that the proposed method clearly outperforms classical methods and even reaches or beats a supervised approach depending on the considered snapshots. "
+}

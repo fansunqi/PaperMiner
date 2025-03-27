@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Speaker Verification"
+  ],
+  "datasets": [
+    "VoxCeleb",
+    "CN-Celeb"
+  ],
+  "methods": [
+    "Weight Quantization"
+  ],
+  "results": [
+    "Model size reduced multiple times with no noticeable performance decline",
+    "ResNet achieves more robust results than ECAPA-TDNN",
+    "Quantized models preserve most of the learned speaker-relevant knowledge"
+  ],
+  "paper_id": "63608e5690e50fcafdee1928",
+  "title": "Model Compression for DNN-Based Text-Independent Speaker Verification\n  Using Weight Quantization",
+  "abstract": "  DNN-based models achieve significant performance in the speaker verification (SV) task with substantial computation costs. Model compression can be applied to reduce the model size for lower resource consumption. The present study exploits weight quantization to compress two widely-used SV models, ECAPA-TDNN and ResNet. The experiments on VoxCeleb indicate that quantization is effective for compressing SV models, where the model size can be reduced by multiple times with no noticeable performance decline. ResNet achieves more robust results than ECAPA-TDNN using lower-bitwidth quantization. The analysis of layer weights shows that the smooth distribution of ResNet may contribute to its robust results. The additional experiments on CN-Celeb validate the quantized model's generalization ability in the language mismatch scenario. Furthermore, information probing results demonstrate that the quantized models can preserve most of the learned speaker-relevant knowledge compared to the original models. "
+}

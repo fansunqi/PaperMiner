@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Seizure-type classification"
+  ],
+  "datasets": [
+    "Temple University Hospital EEG Seizure Corpus",
+    "TUSZ v1.5.2"
+  ],
+  "methods": [
+    "MP-SeizNet: A multi-path CNN Bi-LSTM network with an attention mechanism"
+  ],
+  "results": [
+    "F1 scores of 87.6% and 98.1% across different patient data and seizure data",
+    "Joint learning from wavelet-based features and raw EEG signals"
+  ],
+  "paper_id": "636c6beb90e50fcafd2d3c8f",
+  "title": "MP-SeizNet: A Multi-Path CNN Bi-LSTM Network for Seizure-Type\n  Classification Using EEG",
+  "abstract": "  Seizure type identification is essential for the treatment and management of epileptic patients. However, it is a difficult process known to be time consuming and labor intensive. Automated diagnosis systems, with the advancement of machine learning algorithms, have the potential to accelerate the classification process, alert patients, and support physicians in making quick and accurate decisions. In this paper, we present a novel multi-path seizure-type classification deep learning network (MP-SeizNet), consisting of a convolutional neural network (CNN) and a bidirectional long short-term memory neural network (Bi-LSTM) with an attention mechanism. The objective of this study was to classify specific types of seizures, including complex partial, simple partial, absence, tonic, and tonic-clonic seizures, using only electroencephalogram (EEG) data. The EEG data is fed to our proposed model in two different representations. The CNN was fed with wavelet-based features extracted from the EEG signals, while the Bi-LSTM was fed with raw EEG signals to let our MP-SeizNet jointly learns from different representations of seizure data for more accurate information learning. The proposed MP-SeizNet was evaluated using the largest available EEG epilepsy database, the Temple University Hospital EEG Seizure Corpus, TUSZ v1.5.2. We evaluated our proposed model across different patient data using three-fold cross-validation and across seizure data using five-fold cross-validation, achieving F1 scores of 87.6% and 98.1%, respectively. "
+}

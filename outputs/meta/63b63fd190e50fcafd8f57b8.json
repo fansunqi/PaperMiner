@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Automatic vectorization of unstructured static kernels"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph transformations",
+    "SIMD capability exploitation",
+    "Intel AVX-512",
+    "ARM SVE"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63b63fd190e50fcafd8f57b8",
+  "title": "Autovesk: Automatic vectorization of unstructured static kernels by\n  graph transformations",
+  "abstract": "  Leveraging the SIMD capability of modern CPU architectures is mandatory to take full benefit of their increasing performance. To exploit this feature, binary executables must be explicitly vectorized by the developers or an automatic vectorization tool. This why the compilation research community has created several strategies to transform a scalar code into a vectorized implementation. However, the majority of the approaches focus on regular algorithms, such as affine loops, that can be vectorized with few data transformations. In this paper, we present a new approach that allow automatically vectorizing scalar codes with chaotic data accesses as long as their operations can be statically inferred. We describe how our method transforms a graph of scalar instructions into a vectorized one using different heuristics with the aim of reducing the number or cost of the instructions. Finally, we demonstrate the interest of our approach on various computational kernels using Intel AVX-512 and ARM SVE. "
+}

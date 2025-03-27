@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Name resolution at scale"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Stack graphs",
+    "syntactic analysis",
+    "declarative graph construction language"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "6363316f90e50fcafd4fbdb8",
+  "title": "Stack graphs: Name resolution at scale",
+  "abstract": "  We present stack graphs, an extension of Visser et al.'s scope graphs framework. Stack graphs power Precise Code Navigation at GitHub, allowing users to navigate name binding references both within and across repositories. Like scope graphs, stack graphs encode the name binding information about a program in a graph structure, in which paths represent valid name bindings. Resolving a reference to its definition is then implemented with a simple path-finding search.   GitHub hosts millions of repositories, containing petabytes of total code, implemented in hundreds of different programming languages, and receiving thousands of pushes per minute. To support this scale, we ensure that the graph construction and path-finding judgments are file-incremental: for each source file, we create an isolated subgraph without any knowledge of, or visibility into, any other file in the program. This lets us eliminate the storage and compute costs of reanalyzing file versions that we have already seen. Since most commits change a small fraction of the files in a repository, this greatly amortizes the operational costs of indexing large, frequently changed repositories over time. To handle type-directed name lookups (which require \"pausing\" the current lookup to resolve another name), our name resolution algorithm maintains a stack of the currently paused (but still pending) lookups. Stack graphs can be constructed via a purely syntactic analysis of the program's source code, using a new declarative graph construction language. This means that we can extract name binding information for every repository without any per-package configuration, and without having to invoke an arbitrary, untrusted, package-specific build process. "
+}

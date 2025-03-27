@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Low-quality fundus image quality enhancement"
+  ],
+  "datasets": [
+    "EyeQ",
+    "Messidor"
+  ],
+  "methods": [
+    "Self-supervised domain adaptation",
+    "Patch-wise domains",
+    "Quality assessment network",
+    "Style clustering"
+  ],
+  "results": [
+    "New state-of-the-art performance on low-quality images"
+  ],
+  "paper_id": "63c8b59590e50fcafd90b7ab",
+  "title": "Self-supervised Domain Adaptation for Breaking the Limits of Low-quality\n  Fundus Image Quality Enhancement",
+  "abstract": "  Retinal fundus images have been applied for the diagnosis and screening of eye diseases, such as Diabetic Retinopathy (DR) or Diabetic Macular Edema (DME). However, both low-quality fundus images and style inconsistency potentially increase uncertainty in the diagnosis of fundus disease and even lead to misdiagnosis by ophthalmologists. Most of the existing image enhancement methods mainly focus on improving the image quality by leveraging the guidance of high-quality images, which is difficult to be collected in medical applications. In this paper, we tackle image quality enhancement in a fully unsupervised setting, i.e., neither paired images nor high-quality images. To this end, we explore the potential of the self-supervised task for improving the quality of fundus images without the requirement of high-quality reference images. Specifically, we construct multiple patch-wise domains via an auxiliary pre-trained quality assessment network and a style clustering. To achieve robust low-quality image enhancement and address style inconsistency, we formulate two self-supervised domain adaptation tasks to disentangle the features of image content, low-quality factor and style information by exploring intrinsic supervision signals within the low-quality images. Extensive experiments are conducted on EyeQ and Messidor datasets, and results show that our DASQE method achieves new state-of-the-art performance when only low-quality images are available. "
+}

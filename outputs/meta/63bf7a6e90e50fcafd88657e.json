@@ -1,0 +1,30 @@
+{
+  "code_links": [
+    "https://github.com/yuxumin/PoinTr"
+  ],
+  "tasks": [
+    "Point Cloud Completion"
+  ],
+  "datasets": [
+    "PCN",
+    "ShapeNet-55",
+    "KITTI"
+  ],
+  "methods": [
+    "Transformer encoder-decoder architecture",
+    "Geometry-aware block",
+    "Adaptive query generation mechanism",
+    "Denoising task"
+  ],
+  "results": [
+    "6.53 CD on PCN",
+    "0.81 CD on ShapeNet-55",
+    "0.392 MMD on KITTI",
+    "15x reduction in training time",
+    "20% improvement in completion performance",
+    "Higher throughputs and fewer FLOPs compared to previous methods"
+  ],
+  "paper_id": "63bf7a6e90e50fcafd88657e",
+  "title": "AdaPoinTr: Diverse Point Cloud Completion with Adaptive Geometry-Aware\n  Transformers",
+  "abstract": "  In this paper, we present a new method that reformulates point cloud completion as a set-to-set translation problem and design a new model, called PoinTr, which adopts a Transformer encoder-decoder architecture for point cloud completion. By representing the point cloud as a set of unordered groups of points with position embeddings, we convert the input data to a sequence of point proxies and employ the Transformers for generation. To facilitate Transformers to better leverage the inductive bias about 3D geometric structures of point clouds, we further devise a geometry-aware block that models the local geometric relationships explicitly. The migration of Transformers enables our model to better learn structural knowledge and preserve detailed information for point cloud completion. Taking a step towards more complicated and diverse situations, we further propose AdaPoinTr by developing an adaptive query generation mechanism and designing a novel denoising task during completing a point cloud. Coupling these two techniques enables us to train the model efficiently and effectively: we reduce training time (by 15x or more) and improve completion performance (over 20%). We also show our method can be extended to the scene-level point cloud completion scenario by designing a new geometry-enhanced semantic scene completion framework. Extensive experiments on the existing and newly-proposed datasets demonstrate the effectiveness of our method, which attains 6.53 CD on PCN, 0.81 CD on ShapeNet-55 and 0.392 MMD on real-world KITTI, surpassing other work by a large margin and establishing new state-of-the-arts on various benchmarks. Most notably, AdaPoinTr can achieve such promising performance with higher throughputs and fewer FLOPs compared with the previous best methods in practice. The code and datasets are available at https://github.com/yuxumin/PoinTr "
+}

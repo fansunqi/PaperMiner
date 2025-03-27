@@ -1,0 +1,27 @@
+{
+  "code_links": [
+    "https://github.com/antifen/mitosis-nuclei-detection"
+  ],
+  "tasks": [
+    "Mitosis detection"
+  ],
+  "datasets": [
+    "ICPR 2012",
+    "GZMH"
+  ],
+  "methods": [
+    "FoCasNet",
+    "M_det",
+    "M_class",
+    "attention mechanism",
+    "normalization method",
+    "hybrid anchor branch classification subnet"
+  ],
+  "results": [
+    "F1-score: 0.888 on ICPR 2012",
+    "F1-score: 0.563 on GZMH"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c5b9",
+  "title": "A novel dataset and a two-stage mitosis nuclei detection method based on\n  hybrid anchor branch",
+  "abstract": "  Mitosis detection is one of the challenging problems in computational pathology, and mitotic count is an important index of cancer grading for pathologists. However, current counts of mitotic nuclei rely on pathologists looking microscopically at the number of mitotic nuclei in hot spots, which is subjective and time-consuming. In this paper, we propose a two-stage cascaded network, named FoCasNet, for mitosis detection. In the first stage, a detection network named M_det is proposed to detect as many mitoses as possible. In the second stage, a classification network M_class is proposed to refine the results of the first stage. In addition, the attention mechanism, normalization method, and hybrid anchor branch classification subnet are introduced to improve the overall detection performance. Our method achieves the current highest F1-score of 0.888 on the public dataset ICPR 2012. We also evaluated our method on the GZMH dataset released by our research team for the first time and reached the highest F1-score of 0.563, which is also better than multiple classic detection networks widely used at present. It confirmed the effectiveness and generalization of our method. The code will be available at: https://github.com/antifen/mitosis-nuclei-detection. "
+}

@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Anomaly Detection in Skewed Data"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Kernelized autoencoder",
+    "Mahalanobis distance",
+    "Mutual information"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "63b39cbf90e50fcafdd1e644",
+  "title": "A Latent Space Correlation-Aware Autoencoder for Anomaly Detection in\n  Skewed Data",
+  "abstract": "Unsupervised learning-based anomaly detection in latent space has gained\nimportance since discriminating anomalies from normal data becomes difficult in\nhigh-dimensional space. Both density estimation and distance-based methods to\ndetect anomalies in latent space have been explored in the past. These methods\nprove that retaining valuable properties of input data in latent space helps in\nthe better reconstruction of test data. Moreover, real-world sensor data is\nskewed and non-Gaussian in nature, making mean-based estimators unreliable for\nskewed data. Again, anomaly detection methods based on reconstruction error\nrely on Euclidean distance, which does not consider useful correlation\ninformation in the feature space and also fails to accurately reconstruct the\ndata when it deviates from the training distribution. In this work, we address\nthe limitations of reconstruction error-based autoencoders and propose a\nkernelized autoencoder that leverages a robust form of Mahalanobis distance\n(MD) to measure latent dimension correlation to effectively detect both near\nand far anomalies. This hybrid loss is aided by the principle of maximizing the\nmutual information gain between the latent dimension and the high-dimensional\nprior data space by maximizing the entropy of the latent space while preserving\nuseful correlation information of the original data in the low-dimensional\nlatent space. The multi-objective function has two goals \u2013 it measures\ncorrelation information in the latent feature space in the form of robust MD\ndistance and simultaneously tries to preserve useful correlation information\nfrom the original data space in the latent space by maximizing mutual\ninformation between the prior and latent space."
+}

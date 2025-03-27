@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Adversarial Example Attack on DNN"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "FACM model (Feature Analysis and Conditional Matching Prediction Distribution)"
+  ],
+  "results": [
+    "Enhanced robustness of the classifier",
+    "Reduction of adversarial subspace"
+  ],
+  "paper_id": "62997c085aee126c0f77cb63",
+  "title": "FACM: Intermediate Layer Still Retain Effective Features against\n  Adversarial Examples",
+  "abstract": "  In strong adversarial attacks against deep neural networks (DNN), the generated adversarial example will mislead the DNN-implemented classifier by destroying the output features of the last layer. To enhance the robustness of the classifier, in our paper, a \\textbf{F}eature \\textbf{A}nalysis and \\textbf{C}onditional \\textbf{M}atching prediction distribution (FACM) model is proposed to utilize the features of intermediate layers to correct the classification. Specifically, we first prove that the intermediate layers of the classifier can still retain effective features for the original category, which is defined as the correction property in our paper. According to this, we propose the FACM model consisting of \\textbf{F}eature \\textbf{A}nalysis (FA) correction module, \\textbf{C}onditional \\textbf{M}atching \\textbf{P}rediction \\textbf{D}istribution (CMPD) correction module and decision module. The FA correction module is the fully connected layers constructed with the output of the intermediate layers as the input to correct the classification of the classifier. The CMPD correction module is a conditional auto-encoder, which can not only use the output of intermediate layers as the condition to accelerate convergence but also mitigate the negative effect of adversarial example training with the Kullback-Leibler loss to match prediction distribution. Through the empirically verified diversity property, the correction modules can be implemented synergistically to reduce the adversarial subspace. Hence, the decision module is proposed to integrate the correction modules to enhance the DNN classifier's robustness. Specially, our model can be achieved by fine-tuning and can be combined with other model-specific defenses. "
+}

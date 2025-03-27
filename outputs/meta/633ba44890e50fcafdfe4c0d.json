@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "https://github.com/hanruihua/RDA_planner"
+  ],
+  "tasks": [
+    "Autonomous motion planning",
+    "Collision-free motion planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Regularized dual alternating direction method of multipliers (RDADMM)"
+  ],
+  "results": [
+    "Smooth collision-free trajectories",
+    "Less computation time compared with other benchmarks",
+    "Robust performance in cluttered environments"
+  ],
+  "paper_id": "633ba44890e50fcafdfe4c0d",
+  "title": "RDA: An Accelerated Collision Free Motion Planner for Autonomous\n  Navigation in Cluttered Environments",
+  "abstract": "  Autonomous motion planning is challenging in multi-obstacle environments due to nonconvex collision avoidance constraints. Directly applying numerical solvers to these nonconvex formulations fails to exploit the constraint structures, resulting in excessive computation time. In this paper, we present an accelerated collision-free motion planner, namely regularized dual alternating direction method of multipliers (RDADMM or RDA for short), for the model predictive control (MPC) based motion planning problem. The proposed RDA addresses nonconvex motion planning via solving a smooth biconvex reformulation via duality and allows the collision avoidance constraints to be computed in parallel for each obstacle to reduce computation time significantly. We validate the performance of the RDA planner through path-tracking experiments with car-like robots in both simulation and real-world settings. Experimental results show that the proposed method generates smooth collision-free trajectories with less computation time compared with other benchmarks and performs robustly in cluttered environments. The source code is available at https://github.com/hanruihua/RDA_planner. "
+}

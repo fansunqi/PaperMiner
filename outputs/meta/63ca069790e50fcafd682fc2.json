@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "https://github.com/vincekurtz/ltl_gcs"
+  ],
+  "tasks": [
+    "Temporal logic motion planning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Convex optimization via Graphs of Convex Sets",
+    "Bezier curves",
+    "Polynomial computational complexity"
+  ],
+  "results": [
+    "Global optimality certification",
+    "Soundness and completeness",
+    "Scalability to complex specifications and high-dimensional systems"
+  ],
+  "paper_id": "63ca069790e50fcafd682fc2",
+  "title": "Temporal Logic Motion Planning with Convex Optimization via Graphs of\n  Convex Sets",
+  "abstract": "  Temporal logic is a concise way of specifying complex tasks. But motion planning to achieve temporal logic specifications is difficult, and existing methods struggle to scale to complex specifications and high-dimensional system dynamics. In this paper, we cast Linear Temporal Logic (LTL) motion planning as a shortest path problem in a Graph of Convex Sets (GCS) and solve it with convex optimization. This approach brings together the best of modern optimization-based temporal logic planners and older automata-theoretic methods, addressing the limitations of each: paths are represented with continuous Bezier curves, avoiding clipping and pass-through; computational complexity is polynomial (not exponential) in the number of sample points; global optimality can be certified; soundness and completeness are guaranteed under mild assumptions; and most importantly, the method scales to complex specifications and high-dimensional systems, including a 30-DoF humanoid. Open-source code is available at https://github.com/vincekurtz/ltl_gcs. "
+}

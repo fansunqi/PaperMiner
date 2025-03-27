@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cardiac segmentation"
+  ],
+  "datasets": [
+    "MICCAI2019 MSCMR Challenge"
+  ],
+  "methods": [
+    "Unsupervised framework",
+    "Non-convex energy function",
+    "U-Net",
+    "Image-to-image translation",
+    "Shape supervision",
+    "Augmentation invariance"
+  ],
+  "results": [
+    "Dice scores: Myo 0.5737, LV 0.7796, RV 0.6287"
+  ],
+  "paper_id": "63c8b56b90e50fcafd905c46",
+  "title": "Unsupervised Cardiac Segmentation Utilizing Synthesized Images from\n  Anatomical Labels",
+  "abstract": "  Cardiac segmentation is in great demand for clinical practice. Due to the enormous labor of manual delineation, unsupervised segmentation is desired. The ill-posed optimization problem of this task is inherently challenging, requiring well-designed constraints. In this work, we propose an unsupervised framework for multi-class segmentation with both intensity and shape constraints. Firstly, we extend a conventional non-convex energy function as an intensity constraint and implement it with U-Net. For shape constraint, synthetic images are generated from anatomical labels via image-to-image translation, as shape supervision for the segmentation network. Moreover, augmentation invariance is applied to facilitate the segmentation network to learn the latent features in terms of shape. We evaluated the proposed framework using the public datasets from MICCAI2019 MSCMR Challenge and achieved promising results on cardiac MRIs with Dice scores of 0.5737, 0.7796, and 0.6287 in Myo, LV, and RV, respectively. "
+}

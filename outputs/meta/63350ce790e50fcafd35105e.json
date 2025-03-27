@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Segmentation of U-net sheet metal engineering drawing"
+  ],
+  "datasets": [
+    "Welding engineering drawing dataset"
+  ],
+  "methods": [
+    "U-net jump structure model with attention mechanism",
+    "Dual pooling convolution fusion"
+  ],
+  "results": [
+    "IoU: 84.72%",
+    "mAP: 86.84%",
+    "Accu: 99.42%"
+  ],
+  "paper_id": "63350ce790e50fcafd35105e",
+  "title": "Segmentation method of U-net sheet metal engineering drawing based on\n  CBAM attention mechanism",
+  "abstract": "  In the manufacturing process of heavy industrial equipment, the specific unit in the welding diagram is first manually redrawn and then the corresponding sheet metal parts are cut, which is inefficient. To this end, this paper proposes a U-net-based method for the segmentation and extraction of specific units in welding engineering drawings. This method enables the cutting device to automatically segment specific graphic units according to visual information and automatically cut out sheet metal parts of corresponding shapes according to the segmentation results. This process is more efficient than traditional human-assisted cutting. Two weaknesses in the U-net network will lead to a decrease in segmentation performance: first, the focus on global semantic feature information is weak, and second, there is a large dimensional difference between shallow encoder features and deep decoder features. Based on the CBAM (Convolutional Block Attention Module) attention mechanism, this paper proposes a U-net jump structure model with an attention mechanism to improve the network's global semantic feature extraction ability. In addition, a U-net attention mechanism model with dual pooling convolution fusion is designed, the deep encoder's maximum pooling + convolution features and the shallow encoder's average pooling + convolution features are fused vertically to reduce the dimension difference between the shallow encoder and deep decoder. The dual-pool convolutional attention jump structure replaces the traditional U-net jump structure, which can effectively improve the specific unit segmentation performance of the welding engineering drawing. Using vgg16 as the backbone network, experiments have verified that the IoU, mAP, and Accu of our model in the welding engineering drawing dataset segmentation task are 84.72%, 86.84%, and 99.42%, respectively. "
+}

@@ -1,0 +1,23 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cost Inference for Feedback Dynamic Games"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "inverse feedback game loss function",
+    "efficient gradient approximator",
+    "first-order optimization"
+  ],
+  "results": [
+    "algorithm converges reliably",
+    "better robustness and generalization performance than open-loop baseline method"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5b5c",
+  "title": "Cost Inference for Feedback Dynamic Games from Noisy Partial State\n  Observations and Incomplete Trajectories",
+  "abstract": "  In multi-agent dynamic games, the Nash equilibrium state trajectory of each agent is determined by its cost function and the information pattern of the game. However, the cost and trajectory of each agent may be unavailable to the other agents. Prior work on using partial observations to infer the costs in dynamic games assumes an open-loop information pattern. In this work, we demonstrate that the feedback Nash equilibrium concept is more expressive and encodes more complex behavior. It is desirable to develop specific tools for inferring players' objectives in feedback games. Therefore, we consider the dynamic game cost inference problem under the feedback information pattern, using only partial state observations and incomplete trajectory data. To this end, we first propose an inverse feedback game loss function, whose minimizer yields a feedback Nash equilibrium state trajectory closest to the observation data. We characterize the landscape and differentiability of the loss function. Given the difficulty of obtaining the exact gradient, our main contribution is an efficient gradient approximator, which enables a novel inverse feedback game solver that minimizes the loss using first-order optimization. In thorough empirical evaluations, we demonstrate that our algorithm converges reliably and has better robustness and generalization performance than the open-loop baseline method when the observation data reflects a group of players acting in a feedback Nash game. "
+}

@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image classification",
+    "Semi-supervised training"
+  ],
+  "datasets": [
+    "STL10",
+    "CIFAR-100"
+  ],
+  "methods": [
+    "CNN",
+    "Variational AutoEncoder (VAE)",
+    "Data augmentation"
+  ],
+  "results": [
+    "Improved accuracy and robustness",
+    "Diversification of training data"
+  ],
+  "paper_id": "63292f6790e50fcafd2eb6be",
+  "title": "Confidence-Guided Data Augmentation for Improved Semi-Supervised\n  Training",
+  "abstract": "  We propose a new strategy to improve the accuracy and robustness of image classification. First, we train a baseline CNN model. Then, we identify challenging regions in the feature space by identifying all misclassified samples, and correctly classified samples with low confidence values. These samples are then used to train a Variational AutoEncoder (VAE). Next, the VAE is used to generate synthetic images. Finally, the generated synthetic images are used in conjunction with the original labeled images to train a new model in a semi-supervised fashion. Empirical results on benchmark datasets such as STL10 and CIFAR-100 show that the synthetically generated samples can further diversify the training data, leading to improvement in image classification in comparison with the fully supervised baseline approaches using only the available data. "
+}

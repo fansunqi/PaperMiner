@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Post-training quantization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Activation Rounding",
+    "AQuant framework"
+  ],
+  "results": [
+    "Noticeable improvements compared with state-of-the-art works",
+    "Accuracy of ResNet-18 up to 60.31% under 2-bit weight and activation post-training quantization"
+  ],
+  "paper_id": "630839ef90e50fcafd6ab8a9",
+  "title": "Efficient Adaptive Activation Rounding for Post-Training Quantization",
+  "abstract": "  Post-training quantization (PTQ) attracts increasing attention due to its convenience in deploying quantized neural networks. Rounding is the primary source of quantization error, for which previous works adopt the rounding-to-nearest scheme with a constant border of 0.5. This work demonstrates that optimizing rounding schemes can improve model accuracy. By replacing the constant border with a simple border function, we can obtain the minimal error for multiplying two numbers and eliminate the bias of its expected value, which further benefits model accuracy. Based on this insight, we approximate the border function to make the incurred overhead negligible. We also jointly optimize propagated errors and global errors. We finally propose our AQuant framework, which can learn the border function automatically. Extensive experiments show that AQuant achieves noticeable improvements compared with state-of-the-art works and pushes the accuracy of ResNet-18 up to 60.31% under the 2-bit weight and activation post-training quantization. "
+}

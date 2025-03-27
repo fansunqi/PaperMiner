@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "CLIP-style medical vision models"
+  ],
+  "datasets": [
+    "CheXpert",
+    "Padchest"
+  ],
+  "methods": [
+    "Text-Image Entropy Regularization"
+  ],
+  "results": [
+    "State of the art (SOTA) average zero-shot performance"
+  ],
+  "paper_id": "63993edd90e50fcafdf5a655",
+  "title": "TIER: Text-Image Entropy Regularization for CLIP-style models",
+  "abstract": "  In this paper, we introduce a novel regularization scheme on contrastive language-image pre-trained (CLIP) medical vision models. Our approach is based on the observation that on many medical imaging tasks text tokens should only describe a small number of image regions and, likewise, each image region should correspond to only a few text tokens. In CLIP-style models, this implies that text-token embeddings should have high similarity to only a small number of image-patch embeddings for a given image-text pair. We formalize this observation using a novel regularization scheme that penalizes the entropy of the text-token to image-patch similarity scores. We qualitatively and quantitatively demonstrate that the proposed regularization scheme shrinks most of the pairwise text-token and image-patch similarity scores towards zero, thus achieving the desired effect. We demonstrate the promise of our approach in an important medical context, chest x-rays, where this underlying sparsity hypothesis naturally arises. Using our proposed approach, we achieve state of the art (SOTA) average zero-shot performance on the CheXpert and Padchest chest x-ray datasets, outperforming an unregularized version of the model and several recently published self-supervised models. "
+}

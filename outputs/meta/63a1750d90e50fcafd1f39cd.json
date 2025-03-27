@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Data-driven optimization problem",
+    "Hierarchical learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Multi-resolution Online Deterministic Annealing",
+    "Progressive partitioning",
+    "Two-timescale stochastic approximation algorithms"
+  ],
+  "results": [
+    "Asymptotic convergence analysis",
+    "Supervised and unsupervised learning problems"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f39cd",
+  "title": "Multi-Resolution Online Deterministic Annealing: A Hierarchical and\n  Progressive Learning Architecture",
+  "abstract": "  Hierarchical learning algorithms that gradually approximate a solution to a data-driven optimization problem are essential to decision-making systems, especially under limitations on time and computational resources. In this study, we introduce a general-purpose hierarchical learning architecture that is based on the progressive partitioning of a possibly multi-resolution data space. The optimal partition is gradually approximated by solving a sequence of optimization sub-problems that yield a sequence of partitions with increasing number of subsets. We show that the solution of each optimization problem can be estimated online using gradient-free stochastic approximation updates. As a consequence, a function approximation problem can be defined within each subset of the partition and solved using the theory of two-timescale stochastic approximation algorithms. This simulates an annealing process and defines a robust and interpretable heuristic method to gradually increase the complexity of the learning architecture in a task-agnostic manner, giving emphasis to regions of the data space that are considered more important according to a predefined criterion. Finally, by imposing a tree structure in the progression of the partitions, we provide a means to incorporate potential multi-resolution structure of the data space into this approach, significantly reducing its complexity, while introducing hierarchical variable-rate feature extraction properties similar to certain classes of deep learning architectures. Asymptotic convergence analysis and experimental results are provided for supervised and unsupervised learning problems. "
+}

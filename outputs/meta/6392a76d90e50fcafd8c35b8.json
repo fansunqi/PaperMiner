@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Image restoration"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Degradation Relationship Index (DRI)",
+    "adaptive Degradation Proportion Determination (DPD)"
+  ],
+  "results": [
+    "The degradation combination proportion is crucial to the image restoration performance",
+    "A positive DRI always predicts the performance improvement of image restoration"
+  ],
+  "paper_id": "6392a76d90e50fcafd8c35b8",
+  "title": "Relationship Quantification of Image Degradations",
+  "abstract": "  In this paper, we study two challenging but less-touched problems in image restoration, namely, i) how to quantify the relationship between different image degradations and ii) how to improve the performance on a specific degradation using the quantified relationship. To tackle the first challenge, Degradation Relationship Index (DRI) is proposed to measure the degradation relationship, which is defined as the mean drop rate difference in the validation loss between two models, i.e., one is trained using the anchor degradation only and another is trained based on both the anchor and the auxiliary degradations. Through quantifying the relationship between different degradations using DRI, we empirically observe that i) the degradation combination proportion is crucial to the image restoration performance. In other words, the combinations with only appropriate degradation proportions could improve the performance of the anchor restoration; ii) a positive DRI always predicts the performance improvement of image restoration. Based on the observations, we propose an adaptive Degradation Proportion Determination strategy (DPD) which could improve the performance on the anchor degradation with the assist of another auxiliary degradation. Extensive experimental results verify the effective of our method by taking haze as the anchor degradation and noise, rain streak, and snow as the auxiliary degradations. The code will be released after acceptance. "
+}

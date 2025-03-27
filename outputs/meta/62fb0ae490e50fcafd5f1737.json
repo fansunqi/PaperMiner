@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "https://github.com/sail-sg/Adan"
+  ],
+  "tasks": [
+    "Deep learning model training"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Adaptive Nesterov Momentum (Adan)"
+  ],
+  "results": [
+    "Improves model training speed",
+    "Achieves higher or comparable performance with half the training cost",
+    "Tolerant to a large range of minibatch sizes"
+  ],
+  "paper_id": "62fb0ae490e50fcafd5f1737",
+  "title": "Adan: Adaptive Nesterov Momentum Algorithm for Faster Optimizing Deep\n  Models",
+  "abstract": "  In deep learning, different kinds of deep networks typically need different optimizers, which have to be chosen after multiple trials, making the training process inefficient. To relieve this issue and consistently improve the model training speed across deep networks, we propose the ADAptive Nesterov momentum algorithm, Adan for short. Adan first reformulates the vanilla Nesterov acceleration to develop a new Nesterov momentum estimation (NME) method, which avoids the extra overhead of computing gradient at the extrapolation point. Then Adan adopts NME to estimate the gradient's first- and second-order moments in adaptive gradient algorithms for convergence acceleration. Besides, we prove that Adan finds an $\\epsilon$-approximate first-order stationary point within $O(\\epsilon^{-3.5})$ stochastic gradient complexity on the non-convex stochastic problems (e.g., deep learning problems), matching the best-known lower bound. Extensive experimental results show that Adan consistently surpasses the corresponding SoTA optimizers on vision, language, and RL tasks and sets new SoTAs for many popular networks and frameworks, e.g., ResNet, ConvNext, ViT, Swin, MAE, DETR, GPT-2, Transformer-XL, and BERT. More surprisingly, Adan can use half of the training cost (epochs) of SoTA optimizers to achieve higher or comparable performance on ViT, GPT-2, MAE, e.t.c., and also shows great tolerance to a large range of minibatch size, e.g., from 1k to 32k. Code is released at https://github.com/sail-sg/Adan, and has been used in multiple popular deep learning frameworks or projects. "
+}

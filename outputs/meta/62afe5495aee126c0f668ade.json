@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Texture Generation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Graph Generative Adversarial Network (GGAN)",
+    "Differentiable Rendering"
+  ],
+  "results": [
+    "GGAN obtains significantly better texture generation quality (according to Frechet inception distance)"
+  ],
+  "paper_id": "62afe5495aee126c0f668ade",
+  "title": "Texture Generation Using A Graph Generative Adversarial Network And\n  Differentiable Rendering",
+  "abstract": "  Novel photo-realistic texture synthesis is an important task for generating novel scenes, including asset generation for 3D simulations. However, to date, these methods predominantly generate textured objects in 2D space. If we rely on 2D object generation, then we need to make a computationally expensive forward pass each time we change the camera viewpoint or lighting. Recent work that can generate textures in 3D requires 3D component segmentation that is expensive to acquire. In this work, we present a novel conditional generative architecture that we call a graph generative adversarial network (GGAN) that can generate textures in 3D by learning object component information in an unsupervised way. In this framework, we do not need an expensive forward pass whenever the camera viewpoint or lighting changes, and we do not need expensive 3D part information for training, yet the model can generalize to unseen 3D meshes and generate appropriate novel 3D textures. We compare this approach against state-of-the-art texture generation methods and demonstrate that the GGAN obtains significantly better texture generation quality (according to Frechet inception distance). We release our model source code as open source. "
+}

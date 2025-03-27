@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "3D reconstruction",
+    "novel view synthesis",
+    "geometry deformation",
+    "lighting estimation"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Neural radiance fields (NeRFs)",
+    "hybrid neural SDF representation",
+    "point cloud and neural implicit representations",
+    "shadow mapping technique"
+  ],
+  "results": [
+    "None"
+  ],
+  "paper_id": "634e194090e50fcafd24e60c",
+  "title": "SPIDR: SDF-based Neural Point Fields for Illumination and Deformation",
+  "abstract": "  Neural radiance fields (NeRFs) have recently emerged as a promising approach for 3D reconstruction and novel view synthesis. However, NeRF-based methods encode shape, reflectance, and illumination implicitly and this makes it challenging for users to manipulate these properties in the rendered images explicitly. Existing approaches only enable limited editing of the scene and deformation of the geometry. Furthermore, no existing work enables accurate scene illumination after object deformation. In this work, we introduce SPIDR, a new hybrid neural SDF representation. SPIDR combines point cloud and neural implicit representations to enable the reconstruction of higher quality object surfaces for geometry deformation and lighting estimation. meshes and surfaces for object deformation and lighting estimation. To more accurately capture environment illumination for scene relighting, we propose a novel neural implicit model to learn environment light. To enable more accurate illumination updates after deformation, we use the shadow mapping technique to approximate the light visibility updates caused by geometry editing. We demonstrate the effectiveness of SPIDR in enabling high quality geometry editing with more accurate updates to the illumination of the scene. "
+}

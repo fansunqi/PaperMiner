@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Spike deconvolution"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Preconditioned variants of gradient descent (GD)",
+    "Adaptive preconditioner design"
+  ],
+  "results": [
+    "Linear rate of convergence when initialized close to the ground truth",
+    "Accelerated convergence rate independent of the dynamic range"
+  ],
+  "paper_id": "6304456b90e50fcafd12ffc2",
+  "title": "Local Geometry of Nonconvex Spike Deconvolution from Low-Pass\n  Measurements",
+  "abstract": "  Spike deconvolution is the problem of recovering the point sources from their convolution with a known point spread function, which plays a fundamental role in many sensing and imaging applications. In this paper, we investigate the local geometry of recovering the parameters of point sources$\\unicode{x2014}$including both amplitudes and locations$\\unicode{x2014}$by minimizing a natural nonconvex least-squares loss function measuring the observation residuals. We propose preconditioned variants of gradient descent (GD), where the search direction is scaled via some carefully designed preconditioning matrices. We begin with a simple fixed preconditioner design, which adjusts the learning rates of the locations at a different scale from those of the amplitudes, and show it achieves a linear rate of convergence$\\unicode{x2014}$in terms of entrywise errors$\\unicode{x2014}$when initialized close to the ground truth, as long as the separation between the true spikes is sufficiently large. However, the convergence rate slows down significantly when the dynamic range of the source amplitudes is large. To bridge this issue, we introduce an adaptive preconditioner design, which compensates for the learning rates of different sources in an iteration-varying manner based on the current estimate. The adaptive design provably leads to an accelerated convergence rate that is independent of the dynamic range, highlighting the benefit of adaptive preconditioning in nonconvex spike deconvolution. Numerical experiments are provided to corroborate the theoretical findings. "
+}

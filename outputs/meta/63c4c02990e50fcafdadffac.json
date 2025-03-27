@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Multi-Target Landmark Detection"
+  ],
+  "datasets": [
+    "body dual-energy X-ray absorptiometry (DXA)",
+    "cardiac MRI",
+    "head CT"
+  ],
+  "methods": [
+    "Reinforcement Learning",
+    "Shape Prior"
+  ],
+  "results": [
+    "80% missing proportion with incomplete training images",
+    "average distance error 2.29 cm on body DXA",
+    "average distance error 6.84 mm on 3D half-head CT"
+  ],
+  "paper_id": "63c4c02990e50fcafdadffac",
+  "title": "Multi-Target Landmark Detection with Incomplete Images via Reinforcement\n  Learning and Shape Prior",
+  "abstract": "  Medical images are generally acquired with limited field-of-view (FOV), which could lead to incomplete regions of interest (ROI), and thus impose a great challenge on medical image analysis. This is particularly evident for the learning-based multi-target landmark detection, where algorithms could be misleading to learn primarily the variation of background due to the varying FOV, failing the detection of targets. Based on learning a navigation policy, instead of predicting targets directly, reinforcement learning (RL)-based methods have the potential totackle this challenge in an efficient manner. Inspired by this, in this work we propose a multi-agent RL framework for simultaneous multi-target landmark detection. This framework is aimed to learn from incomplete or (and) complete images to form an implicit knowledge of global structure, which is consolidated during the training stage for the detection of targets from either complete or incomplete test images. To further explicitly exploit the global structural information from incomplete images, we propose to embed a shape model into the RL process. With this prior knowledge, the proposed RL model can not only localize dozens of targetssimultaneously, but also work effectively and robustly in the presence of incomplete images. We validated the applicability and efficacy of the proposed method on various multi-target detection tasks with incomplete images from practical clinics, using body dual-energy X-ray absorptiometry (DXA), cardiac MRI and head CT datasets. Results showed that our method could predict whole set of landmarks with incomplete training images up to 80% missing proportion (average distance error 2.29 cm on body DXA), and could detect unseen landmarks in regions with missing image information outside FOV of target images (average distance error 6.84 mm on 3D half-head CT). "
+}

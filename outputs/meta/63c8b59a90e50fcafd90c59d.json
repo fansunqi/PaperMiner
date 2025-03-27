@@ -1,0 +1,25 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Task-based preemptive scheduling on FPGAs"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "High-Level Synthesis",
+    "Dynamic Partial Reconfiguration",
+    "synchronisation mechanisms",
+    "preemptive scheduling",
+    "priority queues"
+  ],
+  "results": [
+    "10% overhead in the worst case",
+    "24% performance improvement over traditional full reconfiguration"
+  ],
+  "paper_id": "63c8b59a90e50fcafd90c59d",
+  "title": "Task-based preemptive scheduling on FPGAs leveraging partial\n  reconfiguration",
+  "abstract": "  FPGAs are an attractive type of accelerator for all-purpose HPC computing systems due to the possibility of deploying tailored hardware on demand. However, the common tools for programming and operating FPGAs are still complex to use, especially in scenarios where diverse types of tasks should be dynamically executed. In this work we present a programming abstraction with a simple interface that internally leverages High-Level Synthesis, Dynamic Partial Reconfiguration and synchronisation mechanisms to use an FPGA as a multi-tasking server with preemptive scheduling and priority queues. This leads to an improved use of the FPGA resources, allowing the execution of several different kernels concurrently and deploying the most urgent ones as fast as possible.   The results of our experimental study show that our approach incurs only a 10% overhead in the worst case when using two reconfigurable regions, whilst providing a significant performance improvement of at least 24% over the traditional full reconfiguration approach. "
+}

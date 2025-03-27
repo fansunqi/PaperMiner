@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Self-supervised speech models fine-tuning"
+  ],
+  "datasets": [
+    "SLUE",
+    "Libri-light"
+  ],
+  "methods": [
+    "Context-aware fine-tuning",
+    "Context module",
+    "Auxiliary loss"
+  ],
+  "results": [
+    "Outperforms standard fine-tuning baseline",
+    "Rivals strong context injection baseline"
+  ],
+  "paper_id": "63a1750d90e50fcafd1f3bc5",
+  "title": "Context-aware Fine-tuning of Self-supervised Speech Models",
+  "abstract": "  Self-supervised pre-trained transformers have improved the state of the art on a variety of speech tasks. Due to the quadratic time and space complexity of self-attention, they usually operate at the level of relatively short (e.g., utterance) segments. In this paper, we study the use of context, i.e., surrounding segments, during fine-tuning and propose a new approach called context-aware fine-tuning. We attach a context module on top of the last layer of a pre-trained model to encode the whole segment into a context embedding vector which is then used as an additional feature for the final prediction. During the fine-tuning stage, we introduce an auxiliary loss that encourages this context embedding vector to be similar to context vectors of surrounding segments. This allows the model to make predictions without access to these surrounding segments at inference time and requires only a tiny overhead compared to standard fine-tuned models. We evaluate the proposed approach using the SLUE and Libri-light benchmarks for several downstream tasks: Automatic speech recognition (ASR), named entity recognition (NER), and sentiment analysis (SA). The results show that context-aware fine-tuning not only outperforms a standard fine-tuning baseline but also rivals a strong context injection baseline that uses neighboring speech segments during inference. "
+}

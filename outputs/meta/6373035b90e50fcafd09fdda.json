@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Keyword Spotting"
+  ],
+  "datasets": [
+    "Speech Commands V1-12"
+  ],
+  "methods": [
+    "BiFSMNv2",
+    "Dual-scale Thinnable 1-bit-Architecture",
+    "Frequency Independent Distillation",
+    "Learning Propagation Binarizer",
+    "Fast Bitwise Computation Kernel"
+  ],
+  "results": [
+    "Outperforms existing binary networks for KWS",
+    "Achieves comparable accuracy with full-precision networks (only a tiny 1.51% drop on Speech Commands V1-12)",
+    "25.1x speedup and 20.2x storage-saving on edge hardware"
+  ],
+  "paper_id": "6373035b90e50fcafd09fdda",
+  "title": "BiFSMNv2: Pushing Binary Neural Networks for Keyword Spotting to\n  Real-Network Performance",
+  "abstract": "  Deep neural networks, such as the Deep-FSMN, have been widely studied for keyword spotting (KWS) applications while suffering expensive computation and storage. Therefore, network compression technologies like binarization are studied to deploy KWS models on edge. In this paper, we present a strong yet efficient binary neural network for KWS, namely BiFSMNv2, pushing it to the real-network accuracy performance. First, we present a Dual-scale Thinnable 1-bit-Architecture to recover the representation capability of the binarized computation units by dual-scale activation binarization and liberate the speedup potential from an overall architecture perspective. Second, we also construct a Frequency Independent Distillation scheme for KWS binarization-aware training, which distills the high and low-frequency components independently to mitigate the information mismatch between full-precision and binarized representations. Moreover, we propose the Learning Propagation Binarizer, a general and efficient binarizer that enables the forward and backward propagation of binary KWS networks to be continuously improved through learning. We implement and deploy the BiFSMNv2 on ARMv8 real-world hardware with a novel Fast Bitwise Computation Kernel, which is proposed to fully utilize registers and increase instruction throughput. Comprehensive experiments show our BiFSMNv2 outperforms existing binary networks for KWS by convincing margins across different datasets and achieves comparable accuracy with the full-precision networks (only a tiny 1.51% drop on Speech Commands V1-12). We highlight that benefiting from the compact architecture and optimized hardware kernel, BiFSMNv2 can achieve an impressive 25.1x speedup and 20.2x storage-saving on edge hardware. "
+}

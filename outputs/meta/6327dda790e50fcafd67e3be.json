@@ -1,0 +1,26 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cost Minimization",
+    "Optimal Stopping Theory",
+    "Mechanism Design",
+    "Online Optimization"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Prophet Inequalities",
+    "Hazard Rate Analysis"
+  ],
+  "results": [
+    "Achieves a constant-factor approximation to the prophet's cost",
+    "For MHR distributions, the constant is at most 2",
+    "Single-threshold strategies achieve a O(polylog(n))-factor approximation"
+  ],
+  "paper_id": "6327dda790e50fcafd67e3be",
+  "title": "Prophet Inequalities for Cost Minimization",
+  "abstract": "  Prophet inequalities for rewards maximization are fundamental to optimal stopping theory with extensive applications to mechanism design and online optimization. We study the \\emph{cost minimization} counterpart of the classical prophet inequality: a decision maker is facing a sequence of costs $X_1, X_2, \\dots, X_n$ drawn from known distributions in an online manner and \\emph{must} ``stop'' at some point and take the last cost seen. The goal is to compete with a ``prophet'' who can see the realizations of all $X_i$'s upfront and always select the minimum, obtaining a cost of $\\mathbb{E}[\\min_i X_i]$.   If the $X_i$'s are not identically distributed, no strategy can achieve a bounded approximation, even for random arrival order and $n = 2$. This leads us to consider the case where the $X_i$'s are independent and identically distributed (I.I.D.). For the I.I.D. case, we show that if the distribution satisfies a mild condition, the optimal stopping strategy achieves a (distribution-dependent) constant-factor approximation to the prophet's cost. Moreover, for MHR distributions, this constant is at most $2$. All our results are tight. We also demonstrate an example distribution that does not satisfy the condition and for which the competitive ratio of any algorithm is infinite.   Turning our attention to single-threshold strategies, we design a threshold that achieves a $O\\left(polylog{n}\\right)$-factor approximation, where the exponent in the logarithmic factor is a distribution-dependent constant, and we show a matching lower bound. Finally, we note that our results can be used to design approximately optimal posted price-style mechanisms for procurement auctions which may be of independent interest.   Our techniques utilize the \\emph{hazard rate} of the distribution in a novel way, allowing for a fine-grained analysis which could find further applications in prophet inequalities. "
+}

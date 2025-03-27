@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Offline Preference-Based Reward Learning"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Offline dataset-based active learning",
+    "Reward function distribution learning",
+    "Offline RL"
+  ],
+  "results": [
+    "Combining offline RL with learned human preferences enables learning novel tasks"
+  ],
+  "paper_id": "63b63fd290e50fcafd8f5b4a",
+  "title": "Benchmarks and Algorithms for Offline Preference-Based Reward Learning",
+  "abstract": "  Learning a reward function from human preferences is challenging as it typically requires having a high-fidelity simulator or using expensive and potentially unsafe actual physical rollouts in the environment. However, in many tasks the agent might have access to offline data from related tasks in the same target environment. While offline data is increasingly being used to aid policy optimization via offline RL, our observation is that it can be a surprisingly rich source of information for preference learning as well. We propose an approach that uses an offline dataset to craft preference queries via pool-based active learning, learns a distribution over reward functions, and optimizes a corresponding policy via offline RL. Crucially, our proposed approach does not require actual physical rollouts or an accurate simulator for either the reward learning or policy optimization steps. To test our approach, we first evaluate existing offline RL benchmarks for their suitability for offline reward learning. Surprisingly, for many offline RL domains, we find that simply using a trivial reward function results good policy performance, making these domains ill-suited for evaluating learned rewards. To address this, we identify a subset of existing offline RL benchmarks that are well suited for offline reward learning and also propose new offline apprenticeship learning benchmarks which allow for more open-ended behaviors. When evaluated on this curated set of domains, our empirical results suggest that combining offline RL with learned human preferences can enable an agent to learn to perform novel tasks that were not explicitly shown in the offline data. "
+}

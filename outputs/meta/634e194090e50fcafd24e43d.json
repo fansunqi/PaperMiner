@@ -1,0 +1,21 @@
+{
+  "code_links": [
+    "https://github.com/mingzi151/SpokenVocab"
+  ],
+  "tasks": [
+    "Speech Translation"
+  ],
+  "datasets": [
+    "Must-C"
+  ],
+  "methods": [
+    "SpokenVocab"
+  ],
+  "results": [
+    "1.83 BLEU scores improvement",
+    "equally well as TTS-generated speech"
+  ],
+  "paper_id": "634e194090e50fcafd24e43d",
+  "title": "Generating Synthetic Speech from SpokenVocab for Speech Translation",
+  "abstract": "  Training end-to-end speech translation (ST) systems requires sufficiently large-scale data, which is unavailable for most language pairs and domains. One practical solution to the data scarcity issue is to convert machine translation data (MT) to ST data via text-to-speech (TTS) systems. Yet, using TTS systems can be tedious and slow, as the conversion needs to be done for each MT dataset. In this work, we propose a simple, scalable and effective data augmentation technique, i.e., SpokenVocab, to convert MT data to ST data on-the-fly. The idea is to retrieve and stitch audio snippets from a SpokenVocab bank according to words in an MT sequence. Our experiments on multiple language pairs from Must-C show that this method outperforms strong baselines by an average of 1.83 BLEU scores, and it performs equally well as TTS-generated speech. We also showcase how SpokenVocab can be applied in code-switching ST for which often no TTS systems exit. Our code is available at https://github.com/mingzi151/SpokenVocab "
+}

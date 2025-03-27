@@ -1,0 +1,22 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Cross-lingual task transfer"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Scheduled unfreezing"
+  ],
+  "results": [
+    "State-of-the-art transfer performance",
+    "Average 2 points improvement over four datasets",
+    "Heuristic unfreezing schedule implicitly maximizing Fisher Information"
+  ],
+  "paper_id": "63c4c02990e50fcafdae004c",
+  "title": "Improving Generalization of Adapter-Based Cross-lingual Transfer with\n  Scheduled Unfreezing",
+  "abstract": "  Standard fine-tuning of language models typically performs well on in-distribution data, but suffers with generalization to distribution shifts. In this work, we aim to improve generalization of adapter-based cross-lingual task transfer where such cross-language distribution shifts are imminent. We investigate scheduled unfreezing algorithms -- originally proposed to mitigate catastrophic forgetting in transfer learning -- for fine-tuning task adapters in cross-lingual transfer. Our experiments show that scheduled unfreezing methods close the gap to full fine-tuning and achieve state-of-the-art transfer performance, suggesting that these methods can go beyond just mitigating catastrophic forgetting. Next, aiming to delve deeper into those empirical findings, we investigate the learning dynamics of scheduled unfreezing using Fisher Information. Our in-depth experiments reveal that scheduled unfreezing induces different learning dynamics compared to standard fine-tuning, and provide evidence that the dynamics of Fisher Information during training correlate with cross-lingual generalization performance. We additionally propose a general scheduled unfreezing algorithm that achieves an average of 2 points improvement over four datasets compared to standard fine-tuning and provides strong empirical evidence for a theory-based justification of the heuristic unfreezing schedule (i.e., the heuristic schedule is implicitly maximizing Fisher Information). Our code will be publicly available. "
+}

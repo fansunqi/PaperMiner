@@ -1,0 +1,24 @@
+{
+  "code_links": [
+    "None"
+  ],
+  "tasks": [
+    "Predictive runtime verification",
+    "STL (Signal Temporal Logic) specification violation prediction"
+  ],
+  "datasets": [
+    "None"
+  ],
+  "methods": [
+    "Conformal prediction",
+    "Predictive runtime verification algorithms"
+  ],
+  "results": [
+    "Formal guarantees for predictive runtime verification",
+    "Computationally simple and distribution-free",
+    "Applicable to trajectory predictors like RNNs and LSTMs"
+  ],
+  "paper_id": "636482d790e50fcafdccaa86",
+  "title": "Conformal Prediction for STL Runtime Verification",
+  "abstract": "  We are interested in predicting failures of cyber-physical systems during their operation. Particularly, we consider stochastic systems and signal temporal logic specifications, and we want to calculate the probability that the current system trajectory violates the specification. The paper presents two predictive runtime verification algorithms that predict future system states from the current observed system trajectory. As these predictions may not be accurate, we construct prediction regions that quantify prediction uncertainty by using conformal prediction, a statistical tool for uncertainty quantification. Our first algorithm directly constructs a prediction region for the satisfaction measure of the specification so that we can predict specification violations with a desired confidence. The second algorithm constructs prediction regions for future system states first, and uses these to obtain a prediction region for the satisfaction measure. To the best of our knowledge, these are the first formal guarantees for a predictive runtime verification algorithm that applies to widely used trajectory predictors such as RNNs and LSTMs, while being computationally simple and making no assumptions on the underlying distribution. We present numerical experiments of an F-16 aircraft and a self-driving car. "
+}
