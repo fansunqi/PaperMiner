@@ -27,7 +27,7 @@ GLM_API_KEY = os.getenv("GLM_API_KEY")
 
 # 加载 JSON 数据
 OUTPUT_META_DATA_PATH = "../outputs/meta"
-OUTPUT_PDF_PATH = "../outputs/pdf_old"
+OUTPUT_PDF_PATH = "../outputs/pdf"
 
 def load_data(directory):
     data_list = []
